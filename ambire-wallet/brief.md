@@ -64,8 +64,8 @@ The protocol comprises 2 functional families. Contracts are linked by 1 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| WALLETToken | token | ethereum | n/a | [`0x888000...2794ae`](./contracts/ethereum-1/0x88800092ff476844f74dc2fc427974bbee2794ae/) | ⚠️ Unaudited |
-| StakingPool | core_logic | ethereum | n/a | [`0x47cd7e...c12935`](./contracts/ethereum-1/0x47cd7e91c3cbaaf266369fe8518345fc4fc12935/) | ⚠️ Unaudited |
+| WALLETToken | token | ethereum | n/a | [`0x88800092ff476844f74dc2fc427974bbee2794ae`](./contracts/ethereum-1/0x88800092ff476844f74dc2fc427974bbee2794ae/) | ⚠️ Unaudited |
+| StakingPool | core_logic | ethereum | n/a | [`0x47cd7e91c3cbaaf266369fe8518345fc4fc12935`](./contracts/ethereum-1/0x47cd7e91c3cbaaf266369fe8518345fc4fc12935/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -85,14 +85,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x0604f2...ceaee7` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x0e3c4f...f4bf3f` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x1955db...f6440b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x1bba61...b1b2dc` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x1f6a77...1c8dcc` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xa69b80...24aaff` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xde0ed7...7b9159` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xf2dd37...4b110b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x0604f2b0dc1d8eac3b7b15fa74fcab7d2bceaee7` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x0e3c4f37994d0a0188d3f82b046fe42d5ff4bf3f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x1955db3abe37faf6c1e063b7d42e0b2124f6440b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x1bba61ba1f728e11bf2212a60bd4c0e70bb1b2dc` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x1f6a778972ed514d59277df44e50b8beb81c8dcc` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xa69b8074ce03a33b13057b1e9d37dcde0024aaff` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xde0ed71c49a5c9482cf8b8de222537adbf7b9159` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf2dd37a4ccc9641b22eb47c7fa6e2e02c14b110b` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -117,8 +117,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x888000...2794ae`](./contracts/ethereum-1/0x88800092ff476844f74dc2fc427974bbee2794ae/) | WALLETToken | token | $8,796,446.28 | Verified native implementation with $8,796,446.28 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x47cd7e...c12935`](./contracts/ethereum-1/0x47cd7e91c3cbaaf266369fe8518345fc4fc12935/) | StakingPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x88800092ff476844f74dc2fc427974bbee2794ae`](./contracts/ethereum-1/0x88800092ff476844f74dc2fc427974bbee2794ae/) | WALLETToken | token | $8,796,446.28 | Verified native implementation with $8,796,446.28 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x47cd7e91c3cbaaf266369fe8518345fc4fc12935`](./contracts/ethereum-1/0x47cd7e91c3cbaaf266369fe8518345fc4fc12935/) | StakingPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

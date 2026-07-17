@@ -57,8 +57,8 @@ The pinned logic-topography run contains 2 contract row(s) across ethereum, opti
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- Brokerbot Registry (`0xcb3e48...c5ae98`, chain 1)
-- Brokerbot Registry (`0x2c9b9b...927093`, chain 10)
+- Brokerbot Registry (`0xcb3e482df38d62e73a7ae0e15a2605cadcc5ae98`, chain 1)
+- Brokerbot Registry (`0x2c9b9b9143a9ef5051a299ef3cc8039b06927093`, chain 10)
 
 ## Contract Surface Quality
 
@@ -104,8 +104,8 @@ The pinned logic-topography run contains 2 contract row(s) across ethereum, opti
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Brokerbot Registry | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378652 | `0xcb3e48...c5ae98` | ⚠️ Unaudited |
-| Brokerbot Registry | unknown | project_anchor | own_supporting | 0 | optimism | unit-378653 | `0x2c9b9b...927093` | ⚠️ Unaudited |
+| Brokerbot Registry | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378652 | `0xcb3e482df38d62e73a7ae0e15a2605cadcc5ae98` | ⚠️ Unaudited |
+| Brokerbot Registry | unknown | project_anchor | own_supporting | 0 | optimism | unit-378653 | `0x2c9b9b9143a9ef5051a299ef3cc8039b06927093` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

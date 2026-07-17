@@ -107,18 +107,18 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | merlin | unit-152048 | `0x1ee5ed...e7fef6` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | merlin | n/a | 2 deployments: merlin `0x261507...4c0467`; merlin `0xbd40c7...430bba` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | merlin | unit-152049 | `0x29b662...5360cd` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | merlin | unit-152050 | `0x64c2f1...0d8c5e` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | merlin | unit-152051 | `0x706a11...73d1bd` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | merlin | unit-152052 | `0x817ec8...85f4a2` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | merlin | unit-152053 | `0x95c5f1...c2d247` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | merlin | unit-152054 | `0xa9754f...e6f4d3` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | merlin | unit-152055 | `0xaf931d...e09678` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | merlin | unit-152056 | `0xc6c7c2...58ce08` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | merlin | unit-152057 | `0xed9b4e...98e995` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | merlin | unit-152058 | `0xf6ffe4...43ddfd` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | merlin | unit-152048 | `0x1ee5edc5fe498a2dd82862746d674db2a5e7fef6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | merlin | n/a | 2 deployments: merlin `0x261507940678bf22d8ee96c31df4a642294c0467`; merlin `0xbd40c74cb5cf9f9252b3298230cb916d80430bba` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | merlin | unit-152049 | `0x29b66280f0ea5f5dfbd7c94d560fc060575360cd` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | merlin | unit-152050 | `0x64c2f1306b4ed3183e7b345158fd01c19c0d8c5e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | merlin | unit-152051 | `0x706a11af5bb5c2a50ab9802503ddbff69373d1bd` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | merlin | unit-152052 | `0x817ec83fb6906ba0777e89110d5089313385f4a2` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | merlin | unit-152053 | `0x95c5f14106ab4d1dc0cfc9326225287c18c2d247` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | merlin | unit-152054 | `0xa9754f0d9055d14eb0d2d196e4c51d8b2ee6f4d3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | merlin | unit-152055 | `0xaf931d7aab9643d1e63ed2e1fb17911c65e09678` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | merlin | unit-152056 | `0xc6c7c2edf70a3245ad6051e93809162b9758ce08` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | merlin | unit-152057 | `0xed9b4e3ed8fe7e820b950f28f939af848f98e995` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | merlin | unit-152058 | `0xf6ffe4f3fdc8bbb7f70ffd48e61f17d1e343ddfd` | ❓ Unverified |
 
 ## Audit Inventory
 

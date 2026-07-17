@@ -58,13 +58,13 @@ The protocol forms a single structural family (Core Logic) of 2 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| RiveraAutoCompoundingVaultV2Public | core_logic | polygon | n/a | 2 deployments: polygon [`0x67e07b...499197`](./contracts/polygon-137/0x67e07bffce318adba7b08618cbf4b8e271499197/); arbitrum `0x8e99b6...ac0cd9` | ✅ Audited |
+| RiveraAutoCompoundingVaultV2Public | core_logic | polygon | n/a | 2 deployments: polygon [`0x67e07bffce318adba7b08618cbf4b8e271499197`](./contracts/polygon-137/0x67e07bffce318adba7b08618cbf4b8e271499197/); arbitrum `0x8e99b66de170b53b39d9b54f189a12d7c6ac0cd9` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| RiveraConcNoStaking | unknown | manta | n/a | 4 deployments: manta [`0x4778ca...cde707`](./contracts/manta-169/0x4778caaa0e52f0b58eaf5e947ae81a0a10cde707/); manta `0x67e07b...499197`; manta `0x705278...22c860`; manta `0xa0dd02...a0ebc4` | ⚠️ Unaudited |
+| RiveraConcNoStaking | unknown | manta | n/a | 4 deployments: manta [`0x4778caaa0e52f0b58eaf5e947ae81a0a10cde707`](./contracts/manta-169/0x4778caaa0e52f0b58eaf5e947ae81a0a10cde707/); manta `0x67e07bffce318adba7b08618cbf4b8e271499197`; manta `0x70527810cb658fadbe16845485fc79ec7722c860`; manta `0xa0dd02ef78570a4d93b7ee334ea9c593f7a0ebc4` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -84,12 +84,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | manta | n/a | `0x0db2ba...d158aa` | ❓ Unverified |
-| UnnamedContract | unknown | manta | n/a | `0x241d09...e88626` | ❓ Unverified |
-| UnnamedContract | unknown | manta | n/a | `0x45c3bb...4e7714` | ❓ Unverified |
-| UnnamedContract | unknown | manta | n/a | `0x5f247b...9decda` | ❓ Unverified |
-| UnnamedContract | unknown | manta | n/a | `0x713c13...f05a3e` | ❓ Unverified |
-| UnnamedContract | unknown | manta | n/a | `0xdc6317...ae93bf` | ❓ Unverified |
+| UnnamedContract | unknown | manta | n/a | `0x0db2ba00bccf4f5e20b950bf954cadf768d158aa` | ❓ Unverified |
+| UnnamedContract | unknown | manta | n/a | `0x241d09ec72809c4c390bc81b81def4d1e0e88626` | ❓ Unverified |
+| UnnamedContract | unknown | manta | n/a | `0x45c3bb1a0f0827bf03c089842334b861474e7714` | ❓ Unverified |
+| UnnamedContract | unknown | manta | n/a | `0x5f247b216e46fd86a09dfab377d9dbe62e9decda` | ❓ Unverified |
+| UnnamedContract | unknown | manta | n/a | `0x713c1300f82009162cc908dc9d82304a51f05a3e` | ❓ Unverified |
+| UnnamedContract | unknown | manta | n/a | `0xdc63179cc57783493dd8a4ffd7367df489ae93bf` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -103,7 +103,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| manta | [`0x4778ca...cde707`](./contracts/manta-169/0x4778caaa0e52f0b58eaf5e947ae81a0a10cde707/) | RiveraConcNoStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| manta | [`0x4778caaa0e52f0b58eaf5e947ae81a0a10cde707`](./contracts/manta-169/0x4778caaa0e52f0b58eaf5e947ae81a0a10cde707/) | RiveraConcNoStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

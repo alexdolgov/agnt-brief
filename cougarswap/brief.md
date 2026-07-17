@@ -61,7 +61,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CougarToken | token | bsc | n/a | [`0x26d88b...cef00b`](./contracts/bsc-56/0x26d88b1e61e22da3f1a1ba95a1ba278f6fcef00b/) | ⚠️ Unaudited |
+| CougarToken | token | bsc | n/a | [`0x26d88b1e61e22da3f1a1ba95a1ba278f6fcef00b`](./contracts/bsc-56/0x26d88b1e61e22da3f1a1ba95a1ba278f6fcef00b/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,7 +93,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x26d88b...cef00b`](./contracts/bsc-56/0x26d88b1e61e22da3f1a1ba95a1ba278f6fcef00b/) | CougarToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x26d88b1e61e22da3f1a1ba95a1ba278f6fcef00b`](./contracts/bsc-56/0x26d88b1e61e22da3f1a1ba95a1ba278f6fcef00b/) | CougarToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

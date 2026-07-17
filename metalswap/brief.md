@@ -70,63 +70,63 @@ Total inherited audits: 15. Inherited coverage reflects forked/shared code audit
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| NameWrapper | unknown | linea | n/a | [`0xa53cca...13c223`](./contracts/linea-59144/0xa53cca02f98d590819141aa85c891e2af713c223/) | ✅ Audited |
-| OwnedResolver | unknown | linea | n/a | [`0x9453dc...f4c06f`](./contracts/linea-59144/0x9453dc2dddf2a19951e708b4ff8d5f5e38f4c06f/) | ✅ Audited |
-| PublicResolver | unknown | linea | n/a | [`0x86c5ae...733126`](./contracts/linea-59144/0x86c5aed9f27837074612288610fb98ccc1733126/) | ✅ Audited |
+| NameWrapper | unknown | linea | n/a | [`0xa53cca02f98d590819141aa85c891e2af713c223`](./contracts/linea-59144/0xa53cca02f98d590819141aa85c891e2af713c223/) | ✅ Audited |
+| OwnedResolver | unknown | linea | n/a | [`0x9453dc2dddf2a19951e708b4ff8d5f5e38f4c06f`](./contracts/linea-59144/0x9453dc2dddf2a19951e708b4ff8d5f5e38f4c06f/) | ✅ Audited |
+| PublicResolver | unknown | linea | n/a | [`0x86c5aed9f27837074612288610fb98ccc1733126`](./contracts/linea-59144/0x86c5aed9f27837074612288610fb98ccc1733126/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (49)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AdminUpgradeabilityProxy | unknown | ethereum | n/a | [`0x458048...cbaf78`](./contracts/ethereum-1/0x45804880de22913dafe09f4980848ece6ecbaf78/) | ⚠️ Unaudited |
-| AnycallExecutor | unknown | bsc | n/a | [`0xae4ff8...54179e`](./contracts/bsc-56/0xae4ff8ef7dcc87b10a07e8e13eb78cc07d54179e/) | ⚠️ Unaudited |
-| AnyswapV5ERC20 | unknown | bsc | n/a | [`0x582c12...1f9d91`](./contracts/bsc-56/0x582c12b30f85162fa393e5dbe2573f9f601f9d91/) | ⚠️ Unaudited |
-| BABTAdaptor | unknown | bsc | n/a | [`0x43f043...4969f9`](./contracts/bsc-56/0x43f04360894aef83d02d7a5cdd91ad64144969f9/) | ⚠️ Unaudited |
-| BaseRegistrarImplementation | unknown | linea | n/a | [`0x6e8439...b95704`](./contracts/linea-59144/0x6e84390dcc5195414ec91a8c56a5c91021b95704/) | ⚠️ Unaudited |
-| BatchTransfer | unknown | bsc | n/a | [`0xa9d79d...28db1c`](./contracts/bsc-56/0xa9d79d8741510dd0fb2df7b741c899334b28db1c/) | ⚠️ Unaudited |
-| ENSRegistry | unknown | linea | n/a | [`0x50130b...121267`](./contracts/linea-59144/0x50130b669b28c339991d8676fa73cf122a121267/) | ⚠️ Unaudited |
-| ERC1155GatewayFactory | unknown | bsc | n/a | [`0xc3d240...fc94c3`](./contracts/bsc-56/0xc3d2405f43adab0a921a129eacae9051e3fc94c3/) | ⚠️ Unaudited |
-| ERC20GatewayFactory | unknown | bsc | n/a | [`0x31e9c5...fc9c8d`](./contracts/bsc-56/0x31e9c5f7cebaeb2970eaf39bedeb4f31bbfc9c8d/) | ⚠️ Unaudited |
-| ERC677GatewayFactory | unknown | bsc | n/a | [`0xb16e4a...11cdda`](./contracts/bsc-56/0xb16e4aa530d050b07ba98be418d2b732c011cdda/) | ⚠️ Unaudited |
-| ERC721GatewayFactory | unknown | bsc | n/a | [`0x543b2a...fa259e`](./contracts/bsc-56/0x543b2a89e759696fd3dc46743da5de2439fa259e/) | ⚠️ Unaudited |
-| ETHRegistrarController | unknown | linea | n/a | [`0xdb75db...d18295`](./contracts/linea-59144/0xdb75db974b1f2bd3b5916d503036208064d18295/) | ⚠️ Unaudited |
-| FactoryPortal | unknown | bsc | n/a | [`0xff9c94...d604e3`](./contracts/bsc-56/0xff9c94f5f5a3e3d65d2375215188140e23d604e3/) | ⚠️ Unaudited |
-| FiatTokenProxy | unknown | linea | n/a | [`0x176211...1ee1ff`](./contracts/linea-59144/0x176211869ca2b568f2a7d4ee941e073a821ee1ff/) | ⚠️ Unaudited |
-| FiatTokenV1 | unknown | linea | n/a | [`0x0e57c8...5c2dc8`](./contracts/linea-59144/0x0e57c8d26671e267c3c971824b93343bb75c2dc8/) | ⚠️ Unaudited |
-| IDCard_V2_Controller | unknown | bsc | n/a | [`0x29c0c6...de4e1a`](./contracts/bsc-56/0x29c0c69c028c5be41a487814aa29ff43f5de4e1a/) | ⚠️ Unaudited |
-| L2MessageService | unknown | linea | n/a | [`0x05d437...b960fd`](./contracts/linea-59144/0x05d43713b7e333d2d54be65ce3b5f3698ab960fd/) | ⚠️ Unaudited |
-| L2USDCBridge | unknown | linea | n/a | [`0x199810...5a5521`](./contracts/linea-59144/0x1998108fa7993ea67a8b1a99d392a3288c5a5521/) | ⚠️ Unaudited |
-| LineaSurgeXP | unknown | linea | n/a | [`0x96b3a1...124b82`](./contracts/linea-59144/0x96b3a15257c4983a6fe9073d8c91763433124b82/) | ⚠️ Unaudited |
-| LineaVoyageXP | unknown | linea | n/a | [`0xd83af4...cf599a`](./contracts/linea-59144/0xd83af4fbd77f3ab65c3b1dc4b38d7e67aecf599a/) | ⚠️ Unaudited |
-| LineaXP | unknown | linea | n/a | [`0xc24e7b...9cfc13`](./contracts/linea-59144/0xc24e7b826b3c1e8918843baf7abd2e51399cfc13/) | ⚠️ Unaudited |
-| MetalSwap | unknown | ethereum | n/a | [`0x3e5d9d...90721e`](./contracts/ethereum-1/0x3e5d9d8a63cc8a88748f229999cf59487e90721e/) | ⚠️ Unaudited |
-| MetalSwapIronStakingPool | unknown | ethereum | n/a | [`0xaf9101...d44466`](./contracts/ethereum-1/0xaf9101314b14d8e243e1d519c0dd4e69dfd44466/) | ⚠️ Unaudited |
-| MonthlyBounty | unknown | bsc | n/a | [`0x27ed96...e18642`](./contracts/bsc-56/0x27ed9675b109e725067bdcbb2c5a1fd069e18642/) | ⚠️ Unaudited |
-| MultiHonor_Multichain | unknown | bsc | n/a | [`0x055008...99967b`](./contracts/bsc-56/0x0550082c40c6a04096b62116f227d110a699967b/) | ⚠️ Unaudited |
-| NFTFactory | unknown | bsc | n/a | [`0x2c19b3...7b0879`](./contracts/bsc-56/0x2c19b304afc2cd7ff8606ac212418d55d07b0879/) | ⚠️ Unaudited |
-| NFTRouter | unknown | bsc | n/a | [`0xf2d0fa...4fbb56`](./contracts/bsc-56/0xf2d0fa5d973edf443d43719c444ddb28a74fbb56/) | ⚠️ Unaudited |
-| PremiumHolder | unknown | bsc | n/a | [`0x31c459...3730fd`](./contracts/bsc-56/0x31c459baead0be6951c1e9697af07c25113730fd/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | linea | n/a | [`0x1e1f6f...39774e`](./contracts/linea-59144/0x1e1f6f22f97b4a7522d8b62e983953639239774e/) | ⚠️ Unaudited |
-| ReverseRegistrar | unknown | linea | n/a | [`0x08d3ff...2b67d5`](./contracts/linea-59144/0x08d3ff6e65f680844fd2465393ff6f0d742b67d5/) | ⚠️ Unaudited |
-| RewardDistributor | unknown | bsc | n/a | [`0x103f7d...be426e`](./contracts/bsc-56/0x103f7d014f46c6bcb9f86217c36368a08abe426e/) | ⚠️ Unaudited |
-| RewardHandler_Factory_SlowRelease | unknown | bsc | n/a | [`0x18c792...7d752e`](./contracts/bsc-56/0x18c792978ccf5f81a2c1dfb44737fc14597d752e/) | ⚠️ Unaudited |
-| RewardMasterChef | unknown | bsc | n/a | [`0x411f3e...dfad2d`](./contracts/bsc-56/0x411f3e09c66b30e7facfec45cd823b2e19dfad2d/) | ⚠️ Unaudited |
-| RewardPortal | unknown | bsc | n/a | [`0x03e72e...7b24f3`](./contracts/bsc-56/0x03e72e3f327a731af63a931cc06c84e2627b24f3/) | ⚠️ Unaudited |
-| RewardShare | unknown | bsc | n/a | [`0x13ee72...be2a26`](./contracts/bsc-56/0x13ee726d95742d437ebb664bf0d3feff8dbe2a26/) | ⚠️ Unaudited |
-| Root | unknown | linea | n/a | [`0xfbf795...151e7d`](./contracts/linea-59144/0xfbf795ead640e261868eb200ed2850eb9c151e7d/) | ⚠️ Unaudited |
-| RouterConfig | unknown | bsc | n/a | [`0x0aa626...3079fa`](./contracts/bsc-56/0x0aa6262af21b85cbe396caf68d59aad8db3079fa/) | ⚠️ Unaudited |
-| StaticMetadataService | unknown | linea | n/a | [`0x18703d...866e4c`](./contracts/linea-59144/0x18703d0117121f6a7476221e2afc57faf9866e4c/) | ⚠️ Unaudited |
-| TokenBridge | unknown | linea | n/a | [`0x0ffcbe...03444e`](./contracts/linea-59144/0x0ffcbe98041b77bd87c38e2d0a6b473e7703444e/) | ⚠️ Unaudited |
-| TokenPriceConfig | unknown | bsc | n/a | [`0x7f9778...7c3b64`](./contracts/bsc-56/0x7f97784d4856e92aa2cd9654be03bf74ad7c3b64/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | bsc | n/a | [`0x060bad...d76f69`](./contracts/bsc-56/0x060bad68e5d9b0c0dbcef7963925eca257d76f69/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | bsc | n/a | [`0x83151a...3d1b81`](./contracts/bsc-56/0x83151af121458611530b49ba1e78f5f27e3d1b81/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | linea | n/a | [`0x05f519...e8aef7`](./contracts/linea-59144/0x05f5198b1d4a37e07ac510fc7a207e1499e8aef7/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | linea | n/a | [`0x0ece76...2203f0`](./contracts/linea-59144/0x0ece76334fb560f2b1a49a60e38cf726b02203f0/) | ⚠️ Unaudited |
-| UniversalResolver | unknown | linea | n/a | [`0x3aa974...3a6965`](./contracts/linea-59144/0x3aa974fb3f8c1e02796048bdcded79e9d53a6965/) | ⚠️ Unaudited |
-| UpgradeableBeacon | unknown | linea | n/a | [`0xe79869...4c02c0`](./contracts/linea-59144/0xe798695d2e78f7caeb5bbf3385433959324c02c0/) | ⚠️ Unaudited |
-| ve_query | unknown | bsc | n/a | [`0x4d2e8b...230345`](./contracts/bsc-56/0x4d2e8b5fa1bb62c2e9bba2b2b23902bf06230345/) | ⚠️ Unaudited |
-| VEPowerOracleSender | unknown | bsc | n/a | [`0x26a3fc...4090b6`](./contracts/bsc-56/0x26a3fc82f50fcaaf9a47faf4eaaa11054c4090b6/) | ⚠️ Unaudited |
-| VEShareNFT | unknown | bsc | n/a | [`0x55f8d8...fceefd`](./contracts/bsc-56/0x55f8d898760240e6eff3c2cc23974ae8c8fceefd/) | ⚠️ Unaudited |
+| AdminUpgradeabilityProxy | unknown | ethereum | n/a | [`0x45804880de22913dafe09f4980848ece6ecbaf78`](./contracts/ethereum-1/0x45804880de22913dafe09f4980848ece6ecbaf78/) | ⚠️ Unaudited |
+| AnycallExecutor | unknown | bsc | n/a | [`0xae4ff8ef7dcc87b10a07e8e13eb78cc07d54179e`](./contracts/bsc-56/0xae4ff8ef7dcc87b10a07e8e13eb78cc07d54179e/) | ⚠️ Unaudited |
+| AnyswapV5ERC20 | unknown | bsc | n/a | [`0x582c12b30f85162fa393e5dbe2573f9f601f9d91`](./contracts/bsc-56/0x582c12b30f85162fa393e5dbe2573f9f601f9d91/) | ⚠️ Unaudited |
+| BABTAdaptor | unknown | bsc | n/a | [`0x43f04360894aef83d02d7a5cdd91ad64144969f9`](./contracts/bsc-56/0x43f04360894aef83d02d7a5cdd91ad64144969f9/) | ⚠️ Unaudited |
+| BaseRegistrarImplementation | unknown | linea | n/a | [`0x6e84390dcc5195414ec91a8c56a5c91021b95704`](./contracts/linea-59144/0x6e84390dcc5195414ec91a8c56a5c91021b95704/) | ⚠️ Unaudited |
+| BatchTransfer | unknown | bsc | n/a | [`0xa9d79d8741510dd0fb2df7b741c899334b28db1c`](./contracts/bsc-56/0xa9d79d8741510dd0fb2df7b741c899334b28db1c/) | ⚠️ Unaudited |
+| ENSRegistry | unknown | linea | n/a | [`0x50130b669b28c339991d8676fa73cf122a121267`](./contracts/linea-59144/0x50130b669b28c339991d8676fa73cf122a121267/) | ⚠️ Unaudited |
+| ERC1155GatewayFactory | unknown | bsc | n/a | [`0xc3d2405f43adab0a921a129eacae9051e3fc94c3`](./contracts/bsc-56/0xc3d2405f43adab0a921a129eacae9051e3fc94c3/) | ⚠️ Unaudited |
+| ERC20GatewayFactory | unknown | bsc | n/a | [`0x31e9c5f7cebaeb2970eaf39bedeb4f31bbfc9c8d`](./contracts/bsc-56/0x31e9c5f7cebaeb2970eaf39bedeb4f31bbfc9c8d/) | ⚠️ Unaudited |
+| ERC677GatewayFactory | unknown | bsc | n/a | [`0xb16e4aa530d050b07ba98be418d2b732c011cdda`](./contracts/bsc-56/0xb16e4aa530d050b07ba98be418d2b732c011cdda/) | ⚠️ Unaudited |
+| ERC721GatewayFactory | unknown | bsc | n/a | [`0x543b2a89e759696fd3dc46743da5de2439fa259e`](./contracts/bsc-56/0x543b2a89e759696fd3dc46743da5de2439fa259e/) | ⚠️ Unaudited |
+| ETHRegistrarController | unknown | linea | n/a | [`0xdb75db974b1f2bd3b5916d503036208064d18295`](./contracts/linea-59144/0xdb75db974b1f2bd3b5916d503036208064d18295/) | ⚠️ Unaudited |
+| FactoryPortal | unknown | bsc | n/a | [`0xff9c94f5f5a3e3d65d2375215188140e23d604e3`](./contracts/bsc-56/0xff9c94f5f5a3e3d65d2375215188140e23d604e3/) | ⚠️ Unaudited |
+| FiatTokenProxy | unknown | linea | n/a | [`0x176211869ca2b568f2a7d4ee941e073a821ee1ff`](./contracts/linea-59144/0x176211869ca2b568f2a7d4ee941e073a821ee1ff/) | ⚠️ Unaudited |
+| FiatTokenV1 | unknown | linea | n/a | [`0x0e57c8d26671e267c3c971824b93343bb75c2dc8`](./contracts/linea-59144/0x0e57c8d26671e267c3c971824b93343bb75c2dc8/) | ⚠️ Unaudited |
+| IDCard_V2_Controller | unknown | bsc | n/a | [`0x29c0c69c028c5be41a487814aa29ff43f5de4e1a`](./contracts/bsc-56/0x29c0c69c028c5be41a487814aa29ff43f5de4e1a/) | ⚠️ Unaudited |
+| L2MessageService | unknown | linea | n/a | [`0x05d43713b7e333d2d54be65ce3b5f3698ab960fd`](./contracts/linea-59144/0x05d43713b7e333d2d54be65ce3b5f3698ab960fd/) | ⚠️ Unaudited |
+| L2USDCBridge | unknown | linea | n/a | [`0x1998108fa7993ea67a8b1a99d392a3288c5a5521`](./contracts/linea-59144/0x1998108fa7993ea67a8b1a99d392a3288c5a5521/) | ⚠️ Unaudited |
+| LineaSurgeXP | unknown | linea | n/a | [`0x96b3a15257c4983a6fe9073d8c91763433124b82`](./contracts/linea-59144/0x96b3a15257c4983a6fe9073d8c91763433124b82/) | ⚠️ Unaudited |
+| LineaVoyageXP | unknown | linea | n/a | [`0xd83af4fbd77f3ab65c3b1dc4b38d7e67aecf599a`](./contracts/linea-59144/0xd83af4fbd77f3ab65c3b1dc4b38d7e67aecf599a/) | ⚠️ Unaudited |
+| LineaXP | unknown | linea | n/a | [`0xc24e7b826b3c1e8918843baf7abd2e51399cfc13`](./contracts/linea-59144/0xc24e7b826b3c1e8918843baf7abd2e51399cfc13/) | ⚠️ Unaudited |
+| MetalSwap | unknown | ethereum | n/a | [`0x3e5d9d8a63cc8a88748f229999cf59487e90721e`](./contracts/ethereum-1/0x3e5d9d8a63cc8a88748f229999cf59487e90721e/) | ⚠️ Unaudited |
+| MetalSwapIronStakingPool | unknown | ethereum | n/a | [`0xaf9101314b14d8e243e1d519c0dd4e69dfd44466`](./contracts/ethereum-1/0xaf9101314b14d8e243e1d519c0dd4e69dfd44466/) | ⚠️ Unaudited |
+| MonthlyBounty | unknown | bsc | n/a | [`0x27ed9675b109e725067bdcbb2c5a1fd069e18642`](./contracts/bsc-56/0x27ed9675b109e725067bdcbb2c5a1fd069e18642/) | ⚠️ Unaudited |
+| MultiHonor_Multichain | unknown | bsc | n/a | [`0x0550082c40c6a04096b62116f227d110a699967b`](./contracts/bsc-56/0x0550082c40c6a04096b62116f227d110a699967b/) | ⚠️ Unaudited |
+| NFTFactory | unknown | bsc | n/a | [`0x2c19b304afc2cd7ff8606ac212418d55d07b0879`](./contracts/bsc-56/0x2c19b304afc2cd7ff8606ac212418d55d07b0879/) | ⚠️ Unaudited |
+| NFTRouter | unknown | bsc | n/a | [`0xf2d0fa5d973edf443d43719c444ddb28a74fbb56`](./contracts/bsc-56/0xf2d0fa5d973edf443d43719c444ddb28a74fbb56/) | ⚠️ Unaudited |
+| PremiumHolder | unknown | bsc | n/a | [`0x31c459baead0be6951c1e9697af07c25113730fd`](./contracts/bsc-56/0x31c459baead0be6951c1e9697af07c25113730fd/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | linea | n/a | [`0x1e1f6f22f97b4a7522d8b62e983953639239774e`](./contracts/linea-59144/0x1e1f6f22f97b4a7522d8b62e983953639239774e/) | ⚠️ Unaudited |
+| ReverseRegistrar | unknown | linea | n/a | [`0x08d3ff6e65f680844fd2465393ff6f0d742b67d5`](./contracts/linea-59144/0x08d3ff6e65f680844fd2465393ff6f0d742b67d5/) | ⚠️ Unaudited |
+| RewardDistributor | unknown | bsc | n/a | [`0x103f7d014f46c6bcb9f86217c36368a08abe426e`](./contracts/bsc-56/0x103f7d014f46c6bcb9f86217c36368a08abe426e/) | ⚠️ Unaudited |
+| RewardHandler_Factory_SlowRelease | unknown | bsc | n/a | [`0x18c792978ccf5f81a2c1dfb44737fc14597d752e`](./contracts/bsc-56/0x18c792978ccf5f81a2c1dfb44737fc14597d752e/) | ⚠️ Unaudited |
+| RewardMasterChef | unknown | bsc | n/a | [`0x411f3e09c66b30e7facfec45cd823b2e19dfad2d`](./contracts/bsc-56/0x411f3e09c66b30e7facfec45cd823b2e19dfad2d/) | ⚠️ Unaudited |
+| RewardPortal | unknown | bsc | n/a | [`0x03e72e3f327a731af63a931cc06c84e2627b24f3`](./contracts/bsc-56/0x03e72e3f327a731af63a931cc06c84e2627b24f3/) | ⚠️ Unaudited |
+| RewardShare | unknown | bsc | n/a | [`0x13ee726d95742d437ebb664bf0d3feff8dbe2a26`](./contracts/bsc-56/0x13ee726d95742d437ebb664bf0d3feff8dbe2a26/) | ⚠️ Unaudited |
+| Root | unknown | linea | n/a | [`0xfbf795ead640e261868eb200ed2850eb9c151e7d`](./contracts/linea-59144/0xfbf795ead640e261868eb200ed2850eb9c151e7d/) | ⚠️ Unaudited |
+| RouterConfig | unknown | bsc | n/a | [`0x0aa6262af21b85cbe396caf68d59aad8db3079fa`](./contracts/bsc-56/0x0aa6262af21b85cbe396caf68d59aad8db3079fa/) | ⚠️ Unaudited |
+| StaticMetadataService | unknown | linea | n/a | [`0x18703d0117121f6a7476221e2afc57faf9866e4c`](./contracts/linea-59144/0x18703d0117121f6a7476221e2afc57faf9866e4c/) | ⚠️ Unaudited |
+| TokenBridge | unknown | linea | n/a | [`0x0ffcbe98041b77bd87c38e2d0a6b473e7703444e`](./contracts/linea-59144/0x0ffcbe98041b77bd87c38e2d0a6b473e7703444e/) | ⚠️ Unaudited |
+| TokenPriceConfig | unknown | bsc | n/a | [`0x7f97784d4856e92aa2cd9654be03bf74ad7c3b64`](./contracts/bsc-56/0x7f97784d4856e92aa2cd9654be03bf74ad7c3b64/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | bsc | n/a | [`0x060bad68e5d9b0c0dbcef7963925eca257d76f69`](./contracts/bsc-56/0x060bad68e5d9b0c0dbcef7963925eca257d76f69/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | bsc | n/a | [`0x83151af121458611530b49ba1e78f5f27e3d1b81`](./contracts/bsc-56/0x83151af121458611530b49ba1e78f5f27e3d1b81/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | linea | n/a | [`0x05f5198b1d4a37e07ac510fc7a207e1499e8aef7`](./contracts/linea-59144/0x05f5198b1d4a37e07ac510fc7a207e1499e8aef7/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | linea | n/a | [`0x0ece76334fb560f2b1a49a60e38cf726b02203f0`](./contracts/linea-59144/0x0ece76334fb560f2b1a49a60e38cf726b02203f0/) | ⚠️ Unaudited |
+| UniversalResolver | unknown | linea | n/a | [`0x3aa974fb3f8c1e02796048bdcded79e9d53a6965`](./contracts/linea-59144/0x3aa974fb3f8c1e02796048bdcded79e9d53a6965/) | ⚠️ Unaudited |
+| UpgradeableBeacon | unknown | linea | n/a | [`0xe798695d2e78f7caeb5bbf3385433959324c02c0`](./contracts/linea-59144/0xe798695d2e78f7caeb5bbf3385433959324c02c0/) | ⚠️ Unaudited |
+| ve_query | unknown | bsc | n/a | [`0x4d2e8b5fa1bb62c2e9bba2b2b23902bf06230345`](./contracts/bsc-56/0x4d2e8b5fa1bb62c2e9bba2b2b23902bf06230345/) | ⚠️ Unaudited |
+| VEPowerOracleSender | unknown | bsc | n/a | [`0x26a3fc82f50fcaaf9a47faf4eaaa11054c4090b6`](./contracts/bsc-56/0x26a3fc82f50fcaaf9a47faf4eaaa11054c4090b6/) | ⚠️ Unaudited |
+| VEShareNFT | unknown | bsc | n/a | [`0x55f8d898760240e6eff3c2cc23974ae8c8fceefd`](./contracts/bsc-56/0x55f8d898760240e6eff3c2cc23974ae8c8fceefd/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -173,47 +173,47 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0xae4ff8...54179e`](./contracts/bsc-56/0xae4ff8ef7dcc87b10a07e8e13eb78cc07d54179e/) | AnycallExecutor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x43f043...4969f9`](./contracts/bsc-56/0x43f04360894aef83d02d7a5cdd91ad64144969f9/) | BABTAdaptor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0x6e8439...b95704`](./contracts/linea-59144/0x6e84390dcc5195414ec91a8c56a5c91021b95704/) | BaseRegistrarImplementation | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xa9d79d...28db1c`](./contracts/bsc-56/0xa9d79d8741510dd0fb2df7b741c899334b28db1c/) | BatchTransfer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0x50130b...121267`](./contracts/linea-59144/0x50130b669b28c339991d8676fa73cf122a121267/) | ENSRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xc3d240...fc94c3`](./contracts/bsc-56/0xc3d2405f43adab0a921a129eacae9051e3fc94c3/) | ERC1155GatewayFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x31e9c5...fc9c8d`](./contracts/bsc-56/0x31e9c5f7cebaeb2970eaf39bedeb4f31bbfc9c8d/) | ERC20GatewayFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xb16e4a...11cdda`](./contracts/bsc-56/0xb16e4aa530d050b07ba98be418d2b732c011cdda/) | ERC677GatewayFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x543b2a...fa259e`](./contracts/bsc-56/0x543b2a89e759696fd3dc46743da5de2439fa259e/) | ERC721GatewayFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0xdb75db...d18295`](./contracts/linea-59144/0xdb75db974b1f2bd3b5916d503036208064d18295/) | ETHRegistrarController | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xff9c94...d604e3`](./contracts/bsc-56/0xff9c94f5f5a3e3d65d2375215188140e23d604e3/) | FactoryPortal | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0x176211...1ee1ff`](./contracts/linea-59144/0x176211869ca2b568f2a7d4ee941e073a821ee1ff/) | FiatTokenProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0x0e57c8...5c2dc8`](./contracts/linea-59144/0x0e57c8d26671e267c3c971824b93343bb75c2dc8/) | FiatTokenV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x29c0c6...de4e1a`](./contracts/bsc-56/0x29c0c69c028c5be41a487814aa29ff43f5de4e1a/) | IDCard_V2_Controller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0x05d437...b960fd`](./contracts/linea-59144/0x05d43713b7e333d2d54be65ce3b5f3698ab960fd/) | L2MessageService | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0x199810...5a5521`](./contracts/linea-59144/0x1998108fa7993ea67a8b1a99d392a3288c5a5521/) | L2USDCBridge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0x96b3a1...124b82`](./contracts/linea-59144/0x96b3a15257c4983a6fe9073d8c91763433124b82/) | LineaSurgeXP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0xd83af4...cf599a`](./contracts/linea-59144/0xd83af4fbd77f3ab65c3b1dc4b38d7e67aecf599a/) | LineaVoyageXP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0xc24e7b...9cfc13`](./contracts/linea-59144/0xc24e7b826b3c1e8918843baf7abd2e51399cfc13/) | LineaXP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x3e5d9d...90721e`](./contracts/ethereum-1/0x3e5d9d8a63cc8a88748f229999cf59487e90721e/) | MetalSwap | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xaf9101...d44466`](./contracts/ethereum-1/0xaf9101314b14d8e243e1d519c0dd4e69dfd44466/) | MetalSwapIronStakingPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x27ed96...e18642`](./contracts/bsc-56/0x27ed9675b109e725067bdcbb2c5a1fd069e18642/) | MonthlyBounty | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x055008...99967b`](./contracts/bsc-56/0x0550082c40c6a04096b62116f227d110a699967b/) | MultiHonor_Multichain | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x2c19b3...7b0879`](./contracts/bsc-56/0x2c19b304afc2cd7ff8606ac212418d55d07b0879/) | NFTFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xf2d0fa...4fbb56`](./contracts/bsc-56/0xf2d0fa5d973edf443d43719c444ddb28a74fbb56/) | NFTRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x31c459...3730fd`](./contracts/bsc-56/0x31c459baead0be6951c1e9697af07c25113730fd/) | PremiumHolder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0x08d3ff...2b67d5`](./contracts/linea-59144/0x08d3ff6e65f680844fd2465393ff6f0d742b67d5/) | ReverseRegistrar | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x103f7d...be426e`](./contracts/bsc-56/0x103f7d014f46c6bcb9f86217c36368a08abe426e/) | RewardDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x18c792...7d752e`](./contracts/bsc-56/0x18c792978ccf5f81a2c1dfb44737fc14597d752e/) | RewardHandler_Factory_SlowRelease | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x411f3e...dfad2d`](./contracts/bsc-56/0x411f3e09c66b30e7facfec45cd823b2e19dfad2d/) | RewardMasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x03e72e...7b24f3`](./contracts/bsc-56/0x03e72e3f327a731af63a931cc06c84e2627b24f3/) | RewardPortal | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x13ee72...be2a26`](./contracts/bsc-56/0x13ee726d95742d437ebb664bf0d3feff8dbe2a26/) | RewardShare | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0xfbf795...151e7d`](./contracts/linea-59144/0xfbf795ead640e261868eb200ed2850eb9c151e7d/) | Root | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x0aa626...3079fa`](./contracts/bsc-56/0x0aa6262af21b85cbe396caf68d59aad8db3079fa/) | RouterConfig | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0x18703d...866e4c`](./contracts/linea-59144/0x18703d0117121f6a7476221e2afc57faf9866e4c/) | StaticMetadataService | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0x0ffcbe...03444e`](./contracts/linea-59144/0x0ffcbe98041b77bd87c38e2d0a6b473e7703444e/) | TokenBridge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x7f9778...7c3b64`](./contracts/bsc-56/0x7f97784d4856e92aa2cd9654be03bf74ad7c3b64/) | TokenPriceConfig | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0x3aa974...3a6965`](./contracts/linea-59144/0x3aa974fb3f8c1e02796048bdcded79e9d53a6965/) | UniversalResolver | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x4d2e8b...230345`](./contracts/bsc-56/0x4d2e8b5fa1bb62c2e9bba2b2b23902bf06230345/) | ve_query | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x26a3fc...4090b6`](./contracts/bsc-56/0x26a3fc82f50fcaaf9a47faf4eaaa11054c4090b6/) | VEPowerOracleSender | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x55f8d8...fceefd`](./contracts/bsc-56/0x55f8d898760240e6eff3c2cc23974ae8c8fceefd/) | VEShareNFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xae4ff8ef7dcc87b10a07e8e13eb78cc07d54179e`](./contracts/bsc-56/0xae4ff8ef7dcc87b10a07e8e13eb78cc07d54179e/) | AnycallExecutor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x43f04360894aef83d02d7a5cdd91ad64144969f9`](./contracts/bsc-56/0x43f04360894aef83d02d7a5cdd91ad64144969f9/) | BABTAdaptor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x6e84390dcc5195414ec91a8c56a5c91021b95704`](./contracts/linea-59144/0x6e84390dcc5195414ec91a8c56a5c91021b95704/) | BaseRegistrarImplementation | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xa9d79d8741510dd0fb2df7b741c899334b28db1c`](./contracts/bsc-56/0xa9d79d8741510dd0fb2df7b741c899334b28db1c/) | BatchTransfer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x50130b669b28c339991d8676fa73cf122a121267`](./contracts/linea-59144/0x50130b669b28c339991d8676fa73cf122a121267/) | ENSRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xc3d2405f43adab0a921a129eacae9051e3fc94c3`](./contracts/bsc-56/0xc3d2405f43adab0a921a129eacae9051e3fc94c3/) | ERC1155GatewayFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x31e9c5f7cebaeb2970eaf39bedeb4f31bbfc9c8d`](./contracts/bsc-56/0x31e9c5f7cebaeb2970eaf39bedeb4f31bbfc9c8d/) | ERC20GatewayFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xb16e4aa530d050b07ba98be418d2b732c011cdda`](./contracts/bsc-56/0xb16e4aa530d050b07ba98be418d2b732c011cdda/) | ERC677GatewayFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x543b2a89e759696fd3dc46743da5de2439fa259e`](./contracts/bsc-56/0x543b2a89e759696fd3dc46743da5de2439fa259e/) | ERC721GatewayFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0xdb75db974b1f2bd3b5916d503036208064d18295`](./contracts/linea-59144/0xdb75db974b1f2bd3b5916d503036208064d18295/) | ETHRegistrarController | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xff9c94f5f5a3e3d65d2375215188140e23d604e3`](./contracts/bsc-56/0xff9c94f5f5a3e3d65d2375215188140e23d604e3/) | FactoryPortal | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x176211869ca2b568f2a7d4ee941e073a821ee1ff`](./contracts/linea-59144/0x176211869ca2b568f2a7d4ee941e073a821ee1ff/) | FiatTokenProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x0e57c8d26671e267c3c971824b93343bb75c2dc8`](./contracts/linea-59144/0x0e57c8d26671e267c3c971824b93343bb75c2dc8/) | FiatTokenV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x29c0c69c028c5be41a487814aa29ff43f5de4e1a`](./contracts/bsc-56/0x29c0c69c028c5be41a487814aa29ff43f5de4e1a/) | IDCard_V2_Controller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x05d43713b7e333d2d54be65ce3b5f3698ab960fd`](./contracts/linea-59144/0x05d43713b7e333d2d54be65ce3b5f3698ab960fd/) | L2MessageService | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x1998108fa7993ea67a8b1a99d392a3288c5a5521`](./contracts/linea-59144/0x1998108fa7993ea67a8b1a99d392a3288c5a5521/) | L2USDCBridge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x96b3a15257c4983a6fe9073d8c91763433124b82`](./contracts/linea-59144/0x96b3a15257c4983a6fe9073d8c91763433124b82/) | LineaSurgeXP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0xd83af4fbd77f3ab65c3b1dc4b38d7e67aecf599a`](./contracts/linea-59144/0xd83af4fbd77f3ab65c3b1dc4b38d7e67aecf599a/) | LineaVoyageXP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0xc24e7b826b3c1e8918843baf7abd2e51399cfc13`](./contracts/linea-59144/0xc24e7b826b3c1e8918843baf7abd2e51399cfc13/) | LineaXP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x3e5d9d8a63cc8a88748f229999cf59487e90721e`](./contracts/ethereum-1/0x3e5d9d8a63cc8a88748f229999cf59487e90721e/) | MetalSwap | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xaf9101314b14d8e243e1d519c0dd4e69dfd44466`](./contracts/ethereum-1/0xaf9101314b14d8e243e1d519c0dd4e69dfd44466/) | MetalSwapIronStakingPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x27ed9675b109e725067bdcbb2c5a1fd069e18642`](./contracts/bsc-56/0x27ed9675b109e725067bdcbb2c5a1fd069e18642/) | MonthlyBounty | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x0550082c40c6a04096b62116f227d110a699967b`](./contracts/bsc-56/0x0550082c40c6a04096b62116f227d110a699967b/) | MultiHonor_Multichain | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x2c19b304afc2cd7ff8606ac212418d55d07b0879`](./contracts/bsc-56/0x2c19b304afc2cd7ff8606ac212418d55d07b0879/) | NFTFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xf2d0fa5d973edf443d43719c444ddb28a74fbb56`](./contracts/bsc-56/0xf2d0fa5d973edf443d43719c444ddb28a74fbb56/) | NFTRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x31c459baead0be6951c1e9697af07c25113730fd`](./contracts/bsc-56/0x31c459baead0be6951c1e9697af07c25113730fd/) | PremiumHolder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x08d3ff6e65f680844fd2465393ff6f0d742b67d5`](./contracts/linea-59144/0x08d3ff6e65f680844fd2465393ff6f0d742b67d5/) | ReverseRegistrar | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x103f7d014f46c6bcb9f86217c36368a08abe426e`](./contracts/bsc-56/0x103f7d014f46c6bcb9f86217c36368a08abe426e/) | RewardDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x18c792978ccf5f81a2c1dfb44737fc14597d752e`](./contracts/bsc-56/0x18c792978ccf5f81a2c1dfb44737fc14597d752e/) | RewardHandler_Factory_SlowRelease | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x411f3e09c66b30e7facfec45cd823b2e19dfad2d`](./contracts/bsc-56/0x411f3e09c66b30e7facfec45cd823b2e19dfad2d/) | RewardMasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x03e72e3f327a731af63a931cc06c84e2627b24f3`](./contracts/bsc-56/0x03e72e3f327a731af63a931cc06c84e2627b24f3/) | RewardPortal | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x13ee726d95742d437ebb664bf0d3feff8dbe2a26`](./contracts/bsc-56/0x13ee726d95742d437ebb664bf0d3feff8dbe2a26/) | RewardShare | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0xfbf795ead640e261868eb200ed2850eb9c151e7d`](./contracts/linea-59144/0xfbf795ead640e261868eb200ed2850eb9c151e7d/) | Root | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x0aa6262af21b85cbe396caf68d59aad8db3079fa`](./contracts/bsc-56/0x0aa6262af21b85cbe396caf68d59aad8db3079fa/) | RouterConfig | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x18703d0117121f6a7476221e2afc57faf9866e4c`](./contracts/linea-59144/0x18703d0117121f6a7476221e2afc57faf9866e4c/) | StaticMetadataService | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x0ffcbe98041b77bd87c38e2d0a6b473e7703444e`](./contracts/linea-59144/0x0ffcbe98041b77bd87c38e2d0a6b473e7703444e/) | TokenBridge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x7f97784d4856e92aa2cd9654be03bf74ad7c3b64`](./contracts/bsc-56/0x7f97784d4856e92aa2cd9654be03bf74ad7c3b64/) | TokenPriceConfig | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x3aa974fb3f8c1e02796048bdcded79e9d53a6965`](./contracts/linea-59144/0x3aa974fb3f8c1e02796048bdcded79e9d53a6965/) | UniversalResolver | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x4d2e8b5fa1bb62c2e9bba2b2b23902bf06230345`](./contracts/bsc-56/0x4d2e8b5fa1bb62c2e9bba2b2b23902bf06230345/) | ve_query | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x26a3fc82f50fcaaf9a47faf4eaaa11054c4090b6`](./contracts/bsc-56/0x26a3fc82f50fcaaf9a47faf4eaaa11054c4090b6/) | VEPowerOracleSender | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x55f8d898760240e6eff3c2cc23974ae8c8fceefd`](./contracts/bsc-56/0x55f8d898760240e6eff3c2cc23974ae8c8fceefd/) | VEShareNFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

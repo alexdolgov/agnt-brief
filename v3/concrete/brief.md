@@ -57,8 +57,8 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xacce65...b73788`, chain 1)
-- UnnamedContract (`0xf72bd5...0aa1c4`, chain 1)
+- UnnamedContract (`0xacce65b9db4810125addea9797baaaaad2b73788`, chain 1)
+- UnnamedContract (`0xf72bd5a56de97840f1fdd3641b556126c10aa1c4`, chain 1)
 
 ## Contract Surface Quality
 
@@ -104,8 +104,8 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ConcreteMultiStrategyVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x15ce9b...ea5fac` | ⚠️ Unaudited |
-| ConcreteStandardVaultImpl | core_logic | non_address_book | non_address_book_inventory (excluded) | 2 | ethereum | n/a | 2 deployments: ethereum `0x5854c7...e0e5fd`; ethereum `0xb04e16...55a08f` | ⚠️ Unaudited |
+| ConcreteMultiStrategyVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x15ce9be6609db102b70d68ca75a39c555bea5fac` | ⚠️ Unaudited |
+| ConcreteStandardVaultImpl | core_logic | non_address_book | non_address_book_inventory (excluded) | 2 | ethereum | n/a | 2 deployments: ethereum `0x5854c7693459c6e316a96565776b72d94ee0e5fd`; ethereum `0xb04e166fd5d7078bb7b3412406609fd92855a08f` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -125,9 +125,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x38f20a...40db53` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381820 | `0xacce65...b73788` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381821 | `0xf72bd5...0aa1c4` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x38f20ad5a233c1b2c91ce987853ff3201540db53` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381820 | `0xacce65b9db4810125addea9797baaaaad2b73788` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381821 | `0xf72bd5a56de97840f1fdd3641b556126c10aa1c4` | ❓ Unverified |
 
 ## Audit Inventory
 

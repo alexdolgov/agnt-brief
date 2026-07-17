@@ -62,30 +62,30 @@ The protocol comprises 5 functional families. Its contracts share 3 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Equity | unknown | ethereum | n/a | [`0x1ba267...e341b2`](./contracts/ethereum-1/0x1ba26788dfde592fec8bcb0eaff472a42be341b2/) | ✅ Audited |
-| FPSWrapper | unknown | ethereum | n/a | 2 deployments: ethereum [`0x5052d3...80b182`](./contracts/ethereum-1/0x5052d3cc819f53116641e89b96ff4cd1ee80b182/); ethereum `0x54e556...e0fa16` | ✅ Audited |
-| Frankencoin | unknown | ethereum | n/a | 3 deployments: ethereum [`0x422d17...86bf4e`](./contracts/ethereum-1/0x422d17ccc1442501d039595ffcaaa71b4686bf4e/); ethereum `0x7a7870...09b0d8`; ethereum `0xb58e61...0921cb` | ✅ Audited |
-| MintingHub | unknown | ethereum | n/a | 4 deployments: ethereum [`0x0e5dfe...fcb9ea`](./contracts/ethereum-1/0x0e5dfe570e5637f7b6b43f515b30dd08fbfcb9ea/); ethereum `0x4539b0...0a4e7a`; ethereum `0x754676...265219`; ethereum `0xde12b6...653557` | ✅ Audited |
-| Position | unknown | ethereum | n/a | [`0x44bfc2...3467b9`](./contracts/ethereum-1/0x44bfc2a260f091f8365ba8b240cd9491903467b9/) | ✅ Audited |
-| PositionRoller | unknown | ethereum | n/a | [`0xad0107...9ea6b6`](./contracts/ethereum-1/0xad0107d3da540fd54b1931735b65110c909ea6b6/) | ✅ Audited |
-| Savings | unknown | ethereum | n/a | 2 deployments: ethereum [`0x27d9ad...a17b38`](./contracts/ethereum-1/0x27d9ad987bde08a0d083ef7e0e4043c857a17b38/); ethereum `0x3bf301...dfb2ae` | ✅ Audited |
-| StablecoinBridge | operational_periphery | ethereum | n/a | 5 deployments: ethereum [`0x3b71ba...340403`](./contracts/ethereum-1/0x3b71ba73299f925a837836160c3e1fec74340403/); ethereum `0x3e445f...64f6c1`; ethereum `0x4125cd...d8402b`; ethereum `0x7bbe8f...e346df`; ethereum `0x8d8b5d...0fa020` | ✅ Audited |
+| Equity | unknown | ethereum | n/a | [`0x1ba26788dfde592fec8bcb0eaff472a42be341b2`](./contracts/ethereum-1/0x1ba26788dfde592fec8bcb0eaff472a42be341b2/) | ✅ Audited |
+| FPSWrapper | unknown | ethereum | n/a | 2 deployments: ethereum [`0x5052d3cc819f53116641e89b96ff4cd1ee80b182`](./contracts/ethereum-1/0x5052d3cc819f53116641e89b96ff4cd1ee80b182/); ethereum `0x54e55618ce94738689914036b98fac8b10e0fa16` | ✅ Audited |
+| Frankencoin | unknown | ethereum | n/a | 3 deployments: ethereum [`0x422d17ccc1442501d039595ffcaaa71b4686bf4e`](./contracts/ethereum-1/0x422d17ccc1442501d039595ffcaaa71b4686bf4e/); ethereum `0x7a787023f6e18f979b143c79885323a24709b0d8`; ethereum `0xb58e61c3098d85632df34eecfb899a1ed80921cb` | ✅ Audited |
+| MintingHub | unknown | ethereum | n/a | 4 deployments: ethereum [`0x0e5dfe570e5637f7b6b43f515b30dd08fbfcb9ea`](./contracts/ethereum-1/0x0e5dfe570e5637f7b6b43f515b30dd08fbfcb9ea/); ethereum `0x4539b08a1f2f9efc8c3f66876eb8d8c1920a4e7a`; ethereum `0x7546762fdb1a6d9146b33960545c3f6394265219`; ethereum `0xde12b620a8a714476a97efd14e6f7180ca653557` | ✅ Audited |
+| Position | unknown | ethereum | n/a | [`0x44bfc2a260f091f8365ba8b240cd9491903467b9`](./contracts/ethereum-1/0x44bfc2a260f091f8365ba8b240cd9491903467b9/) | ✅ Audited |
+| PositionRoller | unknown | ethereum | n/a | [`0xad0107d3da540fd54b1931735b65110c909ea6b6`](./contracts/ethereum-1/0xad0107d3da540fd54b1931735b65110c909ea6b6/) | ✅ Audited |
+| Savings | unknown | ethereum | n/a | 2 deployments: ethereum [`0x27d9ad987bde08a0d083ef7e0e4043c857a17b38`](./contracts/ethereum-1/0x27d9ad987bde08a0d083ef7e0e4043c857a17b38/); ethereum `0x3bf301b0e2003e75a3e86ab82bd1eff6a9dfb2ae` | ✅ Audited |
+| StablecoinBridge | operational_periphery | ethereum | n/a | 5 deployments: ethereum [`0x3b71ba73299f925a837836160c3e1fec74340403`](./contracts/ethereum-1/0x3b71ba73299f925a837836160c3e1fec74340403/); ethereum `0x3e445ff4dddf0ff8ae7458c9746ed80bd664f6c1`; ethereum `0x4125cd1f826099a4dead6b7746f7f28b30d8402b`; ethereum `0x7bbe8f18040af0032f4c2435e7a76db6f1e346df`; ethereum `0x8d8b5d8bd3fb93327747148edd036265be0fa020` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (11)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Autobidder | unknown | ethereum | n/a | 2 deployments: ethereum [`0x761ebe...50a168`](./contracts/ethereum-1/0x761ebe1a53d65dcd629965cd89c2d5218250a168/); ethereum `0x795075...17b39a` | ⚠️ Unaudited |
-| BurnMintTokenPool | unknown | ethereum | n/a | [`0x9359cd...be4b79`](./contracts/ethereum-1/0x9359cd75549dae00cdd8d22297bc9b13fbbe4b79/) | ⚠️ Unaudited |
-| CCIPAdmin | unknown | ethereum | n/a | [`0x2527ec...5dfef8`](./contracts/ethereum-1/0x2527ec458c863073a303cf0a362bf78add5dfef8/) | ⚠️ Unaudited |
-| CloneHelper | periphery | ethereum | n/a | [`0x55cd28...5f8bee`](./contracts/ethereum-1/0x55cd2820735db56ca0965be224d71994265f8bee/) | ⚠️ Unaudited |
-| Folio | unknown | ethereum | n/a | [`0xe4a109...db1f94`](./contracts/ethereum-1/0xe4a10951f962e6cb93cb843a4ef05d2f99db1f94/) | ⚠️ Unaudited |
-| GovernanceSender | unknown | ethereum | n/a | [`0xfd2327...f876eb`](./contracts/ethereum-1/0xfd23272dfcb13dc3fabd8db851fcd4827af876eb/) | ⚠️ Unaudited |
-| LeadrateSender | unknown | ethereum | n/a | [`0x4d4337...8ef28d`](./contracts/ethereum-1/0x4d433780a16d425c5db1f725a6d104233a8ef28d/) | ⚠️ Unaudited |
-| PositionFactory | unknown | ethereum | n/a | 4 deployments: ethereum [`0x0cde50...486392`](./contracts/ethereum-1/0x0cde500e6940931ed190ded77bb48640c9486392/); ethereum `0x63cf7c...706b7e`; ethereum `0x728310...8472ba`; ethereum `0xcfa9b5...be2080` | ⚠️ Unaudited |
-| SavingsVaultZCHF_2 | core_logic | ethereum | n/a | [`0xe5f130...abf6b0`](./contracts/ethereum-1/0xe5f130253ff137f9917c0107659a4c5262abf6b0/) | ⚠️ Unaudited |
-| TransferReference | unknown | ethereum | n/a | [`0xf98c22...8a1916`](./contracts/ethereum-1/0xf98c221661f51578f5e5236b189a493e2a8a1916/) | ⚠️ Unaudited |
-| UniswapV3Pool | core_logic | ethereum | n/a | [`0x8e4318...c78cef`](./contracts/ethereum-1/0x8e4318e2cb1ae291254b187001a59a1f8ac78cef/) | ⚠️ Unaudited |
+| Autobidder | unknown | ethereum | n/a | 2 deployments: ethereum [`0x761ebe1a53d65dcd629965cd89c2d5218250a168`](./contracts/ethereum-1/0x761ebe1a53d65dcd629965cd89c2d5218250a168/); ethereum `0x79507527b2b48fbe0df98d70d0102a054e17b39a` | ⚠️ Unaudited |
+| BurnMintTokenPool | unknown | ethereum | n/a | [`0x9359cd75549dae00cdd8d22297bc9b13fbbe4b79`](./contracts/ethereum-1/0x9359cd75549dae00cdd8d22297bc9b13fbbe4b79/) | ⚠️ Unaudited |
+| CCIPAdmin | unknown | ethereum | n/a | [`0x2527ec458c863073a303cf0a362bf78add5dfef8`](./contracts/ethereum-1/0x2527ec458c863073a303cf0a362bf78add5dfef8/) | ⚠️ Unaudited |
+| CloneHelper | periphery | ethereum | n/a | [`0x55cd2820735db56ca0965be224d71994265f8bee`](./contracts/ethereum-1/0x55cd2820735db56ca0965be224d71994265f8bee/) | ⚠️ Unaudited |
+| Folio | unknown | ethereum | n/a | [`0xe4a10951f962e6cb93cb843a4ef05d2f99db1f94`](./contracts/ethereum-1/0xe4a10951f962e6cb93cb843a4ef05d2f99db1f94/) | ⚠️ Unaudited |
+| GovernanceSender | unknown | ethereum | n/a | [`0xfd23272dfcb13dc3fabd8db851fcd4827af876eb`](./contracts/ethereum-1/0xfd23272dfcb13dc3fabd8db851fcd4827af876eb/) | ⚠️ Unaudited |
+| LeadrateSender | unknown | ethereum | n/a | [`0x4d433780a16d425c5db1f725a6d104233a8ef28d`](./contracts/ethereum-1/0x4d433780a16d425c5db1f725a6d104233a8ef28d/) | ⚠️ Unaudited |
+| PositionFactory | unknown | ethereum | n/a | 4 deployments: ethereum [`0x0cde500e6940931ed190ded77bb48640c9486392`](./contracts/ethereum-1/0x0cde500e6940931ed190ded77bb48640c9486392/); ethereum `0x63cf7c82460c5d84d10be2219d80f746d8706b7e`; ethereum `0x728310feaca72dc46cd5bf7d739556d5668472ba`; ethereum `0xcfa9b55ed2b0d97ac4f04f168b6670dd1bbe2080` | ⚠️ Unaudited |
+| SavingsVaultZCHF_2 | core_logic | ethereum | n/a | [`0xe5f130253ff137f9917c0107659a4c5262abf6b0`](./contracts/ethereum-1/0xe5f130253ff137f9917c0107659a4c5262abf6b0/) | ⚠️ Unaudited |
+| TransferReference | unknown | ethereum | n/a | [`0xf98c221661f51578f5e5236b189a493e2a8a1916`](./contracts/ethereum-1/0xf98c221661f51578f5e5236b189a493e2a8a1916/) | ⚠️ Unaudited |
+| UniswapV3Pool | core_logic | ethereum | n/a | [`0x8e4318e2cb1ae291254b187001a59a1f8ac78cef`](./contracts/ethereum-1/0x8e4318e2cb1ae291254b187001a59a1f8ac78cef/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -105,10 +105,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x56d22e...074615` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xb2ca8b...ebed57` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xe3c0dc...a026e5` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xecaea1...db11da` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x56d22ed3dcef5b4fe0f3d3c3baae61d9e8074615` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb2ca8b8eb931430abc01233e01b5dfd320ebed57` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe3c0dc8a04d6797aec30e30d686d7adefca026e5` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xecaea1bc7a4a5a4228dd55c244329f7468db11da` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -132,16 +132,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x761ebe...50a168`](./contracts/ethereum-1/0x761ebe1a53d65dcd629965cd89c2d5218250a168/) | Autobidder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x9359cd...be4b79`](./contracts/ethereum-1/0x9359cd75549dae00cdd8d22297bc9b13fbbe4b79/) | BurnMintTokenPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2527ec...5dfef8`](./contracts/ethereum-1/0x2527ec458c863073a303cf0a362bf78add5dfef8/) | CCIPAdmin | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x55cd28...5f8bee`](./contracts/ethereum-1/0x55cd2820735db56ca0965be224d71994265f8bee/) | CloneHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xe4a109...db1f94`](./contracts/ethereum-1/0xe4a10951f962e6cb93cb843a4ef05d2f99db1f94/) | Folio | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xfd2327...f876eb`](./contracts/ethereum-1/0xfd23272dfcb13dc3fabd8db851fcd4827af876eb/) | GovernanceSender | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x4d4337...8ef28d`](./contracts/ethereum-1/0x4d433780a16d425c5db1f725a6d104233a8ef28d/) | LeadrateSender | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0cde50...486392`](./contracts/ethereum-1/0x0cde500e6940931ed190ded77bb48640c9486392/) | PositionFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xe5f130...abf6b0`](./contracts/ethereum-1/0xe5f130253ff137f9917c0107659a4c5262abf6b0/) | SavingsVaultZCHF_2 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xf98c22...8a1916`](./contracts/ethereum-1/0xf98c221661f51578f5e5236b189a493e2a8a1916/) | TransferReference | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x761ebe1a53d65dcd629965cd89c2d5218250a168`](./contracts/ethereum-1/0x761ebe1a53d65dcd629965cd89c2d5218250a168/) | Autobidder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x9359cd75549dae00cdd8d22297bc9b13fbbe4b79`](./contracts/ethereum-1/0x9359cd75549dae00cdd8d22297bc9b13fbbe4b79/) | BurnMintTokenPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x2527ec458c863073a303cf0a362bf78add5dfef8`](./contracts/ethereum-1/0x2527ec458c863073a303cf0a362bf78add5dfef8/) | CCIPAdmin | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x55cd2820735db56ca0965be224d71994265f8bee`](./contracts/ethereum-1/0x55cd2820735db56ca0965be224d71994265f8bee/) | CloneHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe4a10951f962e6cb93cb843a4ef05d2f99db1f94`](./contracts/ethereum-1/0xe4a10951f962e6cb93cb843a4ef05d2f99db1f94/) | Folio | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xfd23272dfcb13dc3fabd8db851fcd4827af876eb`](./contracts/ethereum-1/0xfd23272dfcb13dc3fabd8db851fcd4827af876eb/) | GovernanceSender | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4d433780a16d425c5db1f725a6d104233a8ef28d`](./contracts/ethereum-1/0x4d433780a16d425c5db1f725a6d104233a8ef28d/) | LeadrateSender | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0cde500e6940931ed190ded77bb48640c9486392`](./contracts/ethereum-1/0x0cde500e6940931ed190ded77bb48640c9486392/) | PositionFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe5f130253ff137f9917c0107659a4c5262abf6b0`](./contracts/ethereum-1/0xe5f130253ff137f9917c0107659a4c5262abf6b0/) | SavingsVaultZCHF_2 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xf98c221661f51578f5e5236b189a493e2a8a1916`](./contracts/ethereum-1/0xf98c221661f51578f5e5236b189a493e2a8a1916/) | TransferReference | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

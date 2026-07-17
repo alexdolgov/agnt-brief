@@ -59,24 +59,24 @@ The protocol comprises 3 functional families. Its contracts share 11 common proj
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AmirX | unknown | polygon | n/a | [`0x4eb4a3...6b8d5a`](./contracts/polygon-137/0x4eb4a35257458c1a87a4124ce02b3329ed6b8d5a/) | ⚠️ Unaudited |
-| Batcher | unknown | polygon | n/a | [`0x25686c...62f3df`](./contracts/polygon-137/0x25686cd3f579096551f3883e8b5f31063662f3df/) | ⚠️ Unaudited |
-| ChildERC1155 | unknown | polygon | n/a | [`0xd841b4...95e039`](./contracts/polygon-137/0xd841b4a74867a4e92c1627c8f99a717d0795e039/) | ⚠️ Unaudited |
-| ChildERC721 | unknown | polygon | n/a | [`0x0119fd...d06dd5`](./contracts/polygon-137/0x0119fd9592d7acea88c9b0d04b794a82bed06dd5/) | ⚠️ Unaudited |
-| ChildMintableERC1155 | unknown | polygon | n/a | [`0xbda641...3fdbb6`](./contracts/polygon-137/0xbda6415502b0ddab9eda1d09f4f16286273fdbb6/) | ⚠️ Unaudited |
-| ChildMintableERC20 | unknown | polygon | n/a | [`0x07280d...3952ea`](./contracts/polygon-137/0x07280d3143311b012ad268a74f2aa791713952ea/) | ⚠️ Unaudited |
-| FeeBuyback | unknown | polygon | n/a | [`0x360ede...4e7d45`](./contracts/polygon-137/0x360ede11c8672ba8ff98c1e8ac5f3ff1d24e7d45/) | ⚠️ Unaudited |
-| HelloWorld | unknown | polygon | n/a | [`0x04de5e...7d1f98`](./contracts/polygon-137/0x04de5e721ae1ecc1d637d29c2562c9700d7d1f98/) | ⚠️ Unaudited |
-| MaticTransmitter | unknown | polygon | n/a | [`0xa64373...fef1cf`](./contracts/polygon-137/0xa64373ffb5a6ee637693b124a6ccfe3390fef1cf/) | ⚠️ Unaudited |
-| StakingDualRewards | unknown | polygon | n/a | [`0x09315f...67c2df`](./contracts/polygon-137/0x09315f2577c2bccee0119790f706eb70dd67c2df/) | ⚠️ Unaudited |
-| StakingRewards | unknown | polygon | n/a | [`0x02b32d...9ea16e`](./contracts/polygon-137/0x02b32dd42b73c76e8a5bd672d550f3ab149ea16e/) | ⚠️ Unaudited |
-| TransactionBatcher | unknown | polygon | n/a | [`0x6d51cc...64642b`](./contracts/polygon-137/0x6d51cca8b5afd8b39ed237df0bc74c7b5464642b/) | ⚠️ Unaudited |
-| Transfer | unknown | polygon | n/a | [`0xfa38b8...e50698`](./contracts/polygon-137/0xfa38b8632153b2d083a94590e577298c0ae50698/) | ⚠️ Unaudited |
-| UChildERC20 | unknown | polygon | n/a | [`0x002e97...5d8dbb`](./contracts/polygon-137/0x002e97b041e42697def62afab53c99c1dd5d8dbb/) | ⚠️ Unaudited |
-| UChildERC20Proxy | unknown | polygon | n/a | [`0x000de6...6ec08c`](./contracts/polygon-137/0x000de668684839f97d4845f32a43e913366ec08c/) | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | polygon | n/a | [`0xfc2fc9...18c750`](./contracts/polygon-137/0xfc2fc983a411c4b1e238f7eb949308cf0218c750/) | ⚠️ Unaudited |
-| WeightedPool | unknown | polygon | n/a | [`0x39cd55...ab895b`](./contracts/polygon-137/0x39cd55ff7e7d7c66d7d2736f1d5d4791cdab895b/) | ⚠️ Unaudited |
-| WeightedPool2Tokens | unknown | polygon | n/a | [`0x5c6ee3...db8f56`](./contracts/polygon-137/0x5c6ee304399dbdb9c8ef030ab642b10820db8f56/) | ⚠️ Unaudited |
+| AmirX | unknown | polygon | n/a | [`0x4eb4a35257458c1a87a4124ce02b3329ed6b8d5a`](./contracts/polygon-137/0x4eb4a35257458c1a87a4124ce02b3329ed6b8d5a/) | ⚠️ Unaudited |
+| Batcher | unknown | polygon | n/a | [`0x25686cd3f579096551f3883e8b5f31063662f3df`](./contracts/polygon-137/0x25686cd3f579096551f3883e8b5f31063662f3df/) | ⚠️ Unaudited |
+| ChildERC1155 | unknown | polygon | n/a | [`0xd841b4a74867a4e92c1627c8f99a717d0795e039`](./contracts/polygon-137/0xd841b4a74867a4e92c1627c8f99a717d0795e039/) | ⚠️ Unaudited |
+| ChildERC721 | unknown | polygon | n/a | [`0x0119fd9592d7acea88c9b0d04b794a82bed06dd5`](./contracts/polygon-137/0x0119fd9592d7acea88c9b0d04b794a82bed06dd5/) | ⚠️ Unaudited |
+| ChildMintableERC1155 | unknown | polygon | n/a | [`0xbda6415502b0ddab9eda1d09f4f16286273fdbb6`](./contracts/polygon-137/0xbda6415502b0ddab9eda1d09f4f16286273fdbb6/) | ⚠️ Unaudited |
+| ChildMintableERC20 | unknown | polygon | n/a | [`0x07280d3143311b012ad268a74f2aa791713952ea`](./contracts/polygon-137/0x07280d3143311b012ad268a74f2aa791713952ea/) | ⚠️ Unaudited |
+| FeeBuyback | unknown | polygon | n/a | [`0x360ede11c8672ba8ff98c1e8ac5f3ff1d24e7d45`](./contracts/polygon-137/0x360ede11c8672ba8ff98c1e8ac5f3ff1d24e7d45/) | ⚠️ Unaudited |
+| HelloWorld | unknown | polygon | n/a | [`0x04de5e721ae1ecc1d637d29c2562c9700d7d1f98`](./contracts/polygon-137/0x04de5e721ae1ecc1d637d29c2562c9700d7d1f98/) | ⚠️ Unaudited |
+| MaticTransmitter | unknown | polygon | n/a | [`0xa64373ffb5a6ee637693b124a6ccfe3390fef1cf`](./contracts/polygon-137/0xa64373ffb5a6ee637693b124a6ccfe3390fef1cf/) | ⚠️ Unaudited |
+| StakingDualRewards | unknown | polygon | n/a | [`0x09315f2577c2bccee0119790f706eb70dd67c2df`](./contracts/polygon-137/0x09315f2577c2bccee0119790f706eb70dd67c2df/) | ⚠️ Unaudited |
+| StakingRewards | unknown | polygon | n/a | [`0x02b32dd42b73c76e8a5bd672d550f3ab149ea16e`](./contracts/polygon-137/0x02b32dd42b73c76e8a5bd672d550f3ab149ea16e/) | ⚠️ Unaudited |
+| TransactionBatcher | unknown | polygon | n/a | [`0x6d51cca8b5afd8b39ed237df0bc74c7b5464642b`](./contracts/polygon-137/0x6d51cca8b5afd8b39ed237df0bc74c7b5464642b/) | ⚠️ Unaudited |
+| Transfer | unknown | polygon | n/a | [`0xfa38b8632153b2d083a94590e577298c0ae50698`](./contracts/polygon-137/0xfa38b8632153b2d083a94590e577298c0ae50698/) | ⚠️ Unaudited |
+| UChildERC20 | unknown | polygon | n/a | [`0x002e97b041e42697def62afab53c99c1dd5d8dbb`](./contracts/polygon-137/0x002e97b041e42697def62afab53c99c1dd5d8dbb/) | ⚠️ Unaudited |
+| UChildERC20Proxy | unknown | polygon | n/a | [`0x000de668684839f97d4845f32a43e913366ec08c`](./contracts/polygon-137/0x000de668684839f97d4845f32a43e913366ec08c/) | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | polygon | n/a | [`0xfc2fc983a411c4b1e238f7eb949308cf0218c750`](./contracts/polygon-137/0xfc2fc983a411c4b1e238f7eb949308cf0218c750/) | ⚠️ Unaudited |
+| WeightedPool | unknown | polygon | n/a | [`0x39cd55ff7e7d7c66d7d2736f1d5d4791cdab895b`](./contracts/polygon-137/0x39cd55ff7e7d7c66d7d2736f1d5d4791cdab895b/) | ⚠️ Unaudited |
+| WeightedPool2Tokens | unknown | polygon | n/a | [`0x5c6ee304399dbdb9c8ef030ab642b10820db8f56`](./contracts/polygon-137/0x5c6ee304399dbdb9c8ef030ab642b10820db8f56/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -107,23 +107,23 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| polygon | [`0x4eb4a3...6b8d5a`](./contracts/polygon-137/0x4eb4a35257458c1a87a4124ce02b3329ed6b8d5a/) | AmirX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x25686c...62f3df`](./contracts/polygon-137/0x25686cd3f579096551f3883e8b5f31063662f3df/) | Batcher | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0xd841b4...95e039`](./contracts/polygon-137/0xd841b4a74867a4e92c1627c8f99a717d0795e039/) | ChildERC1155 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x0119fd...d06dd5`](./contracts/polygon-137/0x0119fd9592d7acea88c9b0d04b794a82bed06dd5/) | ChildERC721 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0xbda641...3fdbb6`](./contracts/polygon-137/0xbda6415502b0ddab9eda1d09f4f16286273fdbb6/) | ChildMintableERC1155 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x07280d...3952ea`](./contracts/polygon-137/0x07280d3143311b012ad268a74f2aa791713952ea/) | ChildMintableERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x360ede...4e7d45`](./contracts/polygon-137/0x360ede11c8672ba8ff98c1e8ac5f3ff1d24e7d45/) | FeeBuyback | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x04de5e...7d1f98`](./contracts/polygon-137/0x04de5e721ae1ecc1d637d29c2562c9700d7d1f98/) | HelloWorld | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0xa64373...fef1cf`](./contracts/polygon-137/0xa64373ffb5a6ee637693b124a6ccfe3390fef1cf/) | MaticTransmitter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x09315f...67c2df`](./contracts/polygon-137/0x09315f2577c2bccee0119790f706eb70dd67c2df/) | StakingDualRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x02b32d...9ea16e`](./contracts/polygon-137/0x02b32dd42b73c76e8a5bd672d550f3ab149ea16e/) | StakingRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x6d51cc...64642b`](./contracts/polygon-137/0x6d51cca8b5afd8b39ed237df0bc74c7b5464642b/) | TransactionBatcher | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0xfa38b8...e50698`](./contracts/polygon-137/0xfa38b8632153b2d083a94590e577298c0ae50698/) | Transfer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x002e97...5d8dbb`](./contracts/polygon-137/0x002e97b041e42697def62afab53c99c1dd5d8dbb/) | UChildERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x000de6...6ec08c`](./contracts/polygon-137/0x000de668684839f97d4845f32a43e913366ec08c/) | UChildERC20Proxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x39cd55...ab895b`](./contracts/polygon-137/0x39cd55ff7e7d7c66d7d2736f1d5d4791cdab895b/) | WeightedPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x5c6ee3...db8f56`](./contracts/polygon-137/0x5c6ee304399dbdb9c8ef030ab642b10820db8f56/) | WeightedPool2Tokens | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x4eb4a35257458c1a87a4124ce02b3329ed6b8d5a`](./contracts/polygon-137/0x4eb4a35257458c1a87a4124ce02b3329ed6b8d5a/) | AmirX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x25686cd3f579096551f3883e8b5f31063662f3df`](./contracts/polygon-137/0x25686cd3f579096551f3883e8b5f31063662f3df/) | Batcher | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xd841b4a74867a4e92c1627c8f99a717d0795e039`](./contracts/polygon-137/0xd841b4a74867a4e92c1627c8f99a717d0795e039/) | ChildERC1155 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x0119fd9592d7acea88c9b0d04b794a82bed06dd5`](./contracts/polygon-137/0x0119fd9592d7acea88c9b0d04b794a82bed06dd5/) | ChildERC721 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xbda6415502b0ddab9eda1d09f4f16286273fdbb6`](./contracts/polygon-137/0xbda6415502b0ddab9eda1d09f4f16286273fdbb6/) | ChildMintableERC1155 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x07280d3143311b012ad268a74f2aa791713952ea`](./contracts/polygon-137/0x07280d3143311b012ad268a74f2aa791713952ea/) | ChildMintableERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x360ede11c8672ba8ff98c1e8ac5f3ff1d24e7d45`](./contracts/polygon-137/0x360ede11c8672ba8ff98c1e8ac5f3ff1d24e7d45/) | FeeBuyback | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x04de5e721ae1ecc1d637d29c2562c9700d7d1f98`](./contracts/polygon-137/0x04de5e721ae1ecc1d637d29c2562c9700d7d1f98/) | HelloWorld | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xa64373ffb5a6ee637693b124a6ccfe3390fef1cf`](./contracts/polygon-137/0xa64373ffb5a6ee637693b124a6ccfe3390fef1cf/) | MaticTransmitter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x09315f2577c2bccee0119790f706eb70dd67c2df`](./contracts/polygon-137/0x09315f2577c2bccee0119790f706eb70dd67c2df/) | StakingDualRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x02b32dd42b73c76e8a5bd672d550f3ab149ea16e`](./contracts/polygon-137/0x02b32dd42b73c76e8a5bd672d550f3ab149ea16e/) | StakingRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x6d51cca8b5afd8b39ed237df0bc74c7b5464642b`](./contracts/polygon-137/0x6d51cca8b5afd8b39ed237df0bc74c7b5464642b/) | TransactionBatcher | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xfa38b8632153b2d083a94590e577298c0ae50698`](./contracts/polygon-137/0xfa38b8632153b2d083a94590e577298c0ae50698/) | Transfer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x002e97b041e42697def62afab53c99c1dd5d8dbb`](./contracts/polygon-137/0x002e97b041e42697def62afab53c99c1dd5d8dbb/) | UChildERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x000de668684839f97d4845f32a43e913366ec08c`](./contracts/polygon-137/0x000de668684839f97d4845f32a43e913366ec08c/) | UChildERC20Proxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x39cd55ff7e7d7c66d7d2736f1d5d4791cdab895b`](./contracts/polygon-137/0x39cd55ff7e7d7c66d7d2736f1d5d4791cdab895b/) | WeightedPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x5c6ee304399dbdb9c8ef030ab642b10820db8f56`](./contracts/polygon-137/0x5c6ee304399dbdb9c8ef030ab642b10820db8f56/) | WeightedPool2Tokens | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

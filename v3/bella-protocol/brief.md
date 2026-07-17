@@ -54,11 +54,11 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum, mant
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x2c9bfc...2d7c0f`, chain 169)
-- UnnamedContract (`0x9fb6ca...d2803c`, chain 324)
-- UnnamedContract (`0xb83cfb...ae92d9`, chain 324)
-- UnnamedContract (`0x339010...f63798`, chain 5000)
-- UnnamedContract (`0xbf2b95...23980c`, chain 5000)
+- UnnamedContract (`0x2c9bfca337bac7cbda3b80d1b2d10ed6482d7c0f`, chain 169)
+- UnnamedContract (`0x9fb6ca27d20e569e5c8fec359c9d33d468d2803c`, chain 324)
+- UnnamedContract (`0xb83cfb285fc8d936e8647fa9b1cc641dbaae92d9`, chain 324)
+- UnnamedContract (`0x3390108e913824b8ead638444cc52b9abdf63798`, chain 5000)
+- UnnamedContract (`0xbf2b951ae6af066a03dbfa52b1329704d923980c`, chain 5000)
 
 ## Contract Surface Quality
 
@@ -105,22 +105,22 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum, mant
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| bVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 6 deployments: ethereum `0x2c2327...568ea6`; ethereum `0x378388...a35153`; ethereum `0x3fb6b0...15a2cc`; ethereum `0x750d30...7996d0`; ethereum `0x801690...85dc0e`; ethereum `0x8d9a39...ec6108` | ⚠️ Unaudited |
-| StrategyArpa | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa3063c...63095e` | ⚠️ Unaudited |
-| Bella | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa91ac6...a07e14` | ⚠️ Unaudited |
-| BellaStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6cb6ff...04649d` | ⚠️ Unaudited |
-| Controller | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd8c534...504d2a` | ⚠️ Unaudited |
-| MantaMintableERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | 16 deployments: manta-pacific `0x01d275...dbc02a`; manta-pacific `0x078f71...90604b`; manta-pacific `0x091745...627442`; manta-pacific `0x0f52a5...3ccbb4`; manta-pacific `0x207d76...8a2181`; manta-pacific `0x4220e9...e8c8ff`; manta-pacific `0x6025f8...06cfb0`; manta-pacific `0x8d7090...ab566a`; manta-pacific `0x90e957...eb6917`; manta-pacific `0x916476...295f9a`; manta-pacific `0x975896...85eadd`; manta-pacific `0xab8653...fa5605`; manta-pacific `0xb01e11...7c5aa9`; manta-pacific `0xbab1c5...59d154`; manta-pacific `0xd21237...0bc46d`; manta-pacific `0xe22e3d...7f0020` | ⚠️ Unaudited |
-| MantaMintableERC20 | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-229303 | `0xb385e5...88e1ce` | ⚠️ Unaudited |
-| MantaMintableERC20WithBridgeFlag | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0xbdad40...61fb07` | ⚠️ Unaudited |
-| StrategyBusd | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcbc00c...a362d5` | ⚠️ Unaudited |
-| StrategyHbtc | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf7f9c7...c68c0b` | ⚠️ Unaudited |
-| StrategyUsdc | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9db02f...cbad5a` | ⚠️ Unaudited |
-| StrategyUsdt | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x15e926...ecd695` | ⚠️ Unaudited |
-| StrategyWbtc | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x964a64...72bc36` | ⚠️ Unaudited |
-| TokenPool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc93528...793d84` | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9f624b...980808` | ⚠️ Unaudited |
-| WhiteList | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x19f35c...8e493e` | ⚠️ Unaudited |
+| bVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 6 deployments: ethereum `0x2c23276107b45e64c8c59482f4a24f4f2e568ea6`; ethereum `0x378388aa69f3032fa46150221210c7fa70a35153`; ethereum `0x3fb6b07d77dace1ba6b5f6ab1d8668643d15a2cc`; ethereum `0x750d30a8259e63ed72a075f5b6630f08ce7996d0`; ethereum `0x8016907d54ed8bcf5da100c4d0eb434c0185dc0e`; ethereum `0x8d9a39706d3b66446a298f1ae735730257ec6108` | ⚠️ Unaudited |
+| StrategyArpa | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa3063cf3a934068cbe8f55212577a1ffbe63095e` | ⚠️ Unaudited |
+| Bella | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa91ac63d040deb1b7a5e4d4134ad23eb0ba07e14` | ⚠️ Unaudited |
+| BellaStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6cb6ff550ea4473ed462f8bda38ae3226c04649d` | ⚠️ Unaudited |
+| Controller | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd8c5344e331d5f4161f03726870ce9da8b504d2a` | ⚠️ Unaudited |
+| MantaMintableERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | 16 deployments: manta-pacific `0x01d27580c464d5b3b26f78bee12e684901dbc02a`; manta-pacific `0x078f712f038a95beea94f036cadb49188a90604b`; manta-pacific `0x0917459e8ca2c01e49b1a83ae8acc6bd6f627442`; manta-pacific `0x0f52a51287f9b3894d73df05164d0ee2533ccbb4`; manta-pacific `0x207d76b287a566aba975700f103017fd568a2181`; manta-pacific `0x4220e94f507dc9e14169cfa0f2912463ace8c8ff`; manta-pacific `0x6025f893f192ccf4073665fc288ae5256e06cfb0`; manta-pacific `0x8d7090ddda057f48fdbbb2abcea22d1113ab566a`; manta-pacific `0x90e95735378a31bfad2dcd87128fbb80ffeb6917`; manta-pacific `0x91647632245cabf3d66121f86c387ae0ad295f9a`; manta-pacific `0x9758962a46ffbe3ae02dc5a850b0e5a3a985eadd`; manta-pacific `0xab8653fe4eaab3bcbab35ea84ecd600d5efa5605`; manta-pacific `0xb01e11b28a88ded4e5f467364455a757a47c5aa9`; manta-pacific `0xbab1c57ec0bb0ae81d948503e51d90166459d154`; manta-pacific `0xd212377f71f15a1b962c9265dc44fbceaf0bc46d`; manta-pacific `0xe22e3d44ea9fb0a87ea3f7a8f41d869c677f0020` | ⚠️ Unaudited |
+| MantaMintableERC20 | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-229303 | `0xb385e52903c802b3bdca7c4d0c78460a8988e1ce` | ⚠️ Unaudited |
+| MantaMintableERC20WithBridgeFlag | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0xbdad407f77f44f7da6684b416b1951eca461fb07` | ⚠️ Unaudited |
+| StrategyBusd | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcbc00cccbce9d798c412f568436901ff46a362d5` | ⚠️ Unaudited |
+| StrategyHbtc | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf7f9c789852025862cc160f464d42ca18fc68c0b` | ⚠️ Unaudited |
+| StrategyUsdc | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9db02f1d70ac934faca6bdef78a0fa080fcbad5a` | ⚠️ Unaudited |
+| StrategyUsdt | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x15e926954b0013ae37d4241fc6e7bcb1e0ecd695` | ⚠️ Unaudited |
+| StrategyWbtc | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x964a640e90fa759c1de9951ebddba730c872bc36` | ⚠️ Unaudited |
+| TokenPool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc935285b0d88069305431dace0c3c01d7e793d84` | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9f624b25991b99d7b14d6740a9d581dd77980808` | ⚠️ Unaudited |
+| WhiteList | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x19f35ce3c3875c120ab602386c8d6a59e88e493e` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -140,22 +140,22 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-229302 | `0x2c9bfc...2d7c0f` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0x6731a6...dfde2a` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0x994be2...96f5a7` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0x9e98de...91ca35` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0xa91ac6...a07e14` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0xbe138a...966cc3` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0xbf2b95...23980c` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0xc865dd...8c1df9` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0xf0d110...edf61a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-229305 | `0x9fb6ca...d2803c` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | zksync-era | n/a | `0xa91ac6...a07e14` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-229306 | `0xb83cfb...ae92d9` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | mantle | unit-229308 | `0x339010...f63798` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x3bd7a1...b74d94` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x9fb6ca...d2803c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | mantle | unit-229309 | `0xbf2b95...23980c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-229302 | `0x2c9bfca337bac7cbda3b80d1b2d10ed6482d7c0f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0x6731a6a2586a0d555dcff7eb4d8fb7444bdfde2a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0x994be2994471d5ef93c600cf78c2752c5e96f5a7` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0x9e98deac1a416c9ce3c892bd8eef586f1291ca35` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0xa91ac63d040deb1b7a5e4d4134ad23eb0ba07e14` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0xbe138ad5d41fdc392ae0b61b09421987c1966cc3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0xbf2b951ae6af066a03dbfa52b1329704d923980c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0xc865dd3421a6dd706688955fe727c802a98c1df9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0xf0d1109e723cb06e400e2e57d0b6c7c32bedf61a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-229305 | `0x9fb6ca27d20e569e5c8fec359c9d33d468d2803c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | zksync-era | n/a | `0xa91ac63d040deb1b7a5e4d4134ad23eb0ba07e14` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-229306 | `0xb83cfb285fc8d936e8647fa9b1cc641dbaae92d9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | mantle | unit-229308 | `0x3390108e913824b8ead638444cc52b9abdf63798` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x3bd7a1d8c760d8be1bc57a3205cbffbadfb74d94` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x9fb6ca27d20e569e5c8fec359c9d33d468d2803c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | mantle | unit-229309 | `0xbf2b951ae6af066a03dbfa52b1329704d923980c` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -184,7 +184,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| manta-pacific | `0xb385e5...88e1ce` | MantaMintableERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| manta-pacific | `0xb385e52903c802b3bdca7c4d0c78460a8988e1ce` | MantaMintableERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

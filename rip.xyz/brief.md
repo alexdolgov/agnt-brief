@@ -59,16 +59,16 @@ The protocol comprises 3 functional families. Its contracts share 3 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| rHYPURR | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x0df4f6...94667b`](./contracts/hyperliquid-999/0x0df4f69cf9417b1817ab9579bf099537a694667b/); hyperliquid `0x533811...79bee7` | ✅ Audited |
+| rHYPURR | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x0df4f69cf9417b1817ab9579bf099537a694667b`](./contracts/hyperliquid-999/0x0df4f69cf9417b1817ab9579bf099537a694667b/); hyperliquid `0x533811ca630cba23aedd9a0b044a0f904b79bee7` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (4)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Nft | token | hyperliquid | n/a | 2 deployments: hyperliquid [`0x3c7fd3...83b123`](./contracts/hyperliquid-999/0x3c7fd353d32344476d964deda8ea112a9d83b123/); hyperliquid `0x9125e2...bac685` | ⚠️ Unaudited |
-| RelayApprovalProxyV3 | unknown | hyperliquid | n/a | [`0xccc88a...c315be`](./contracts/hyperliquid-999/0xccc88a9d1b4ed6b0eaba998850414b24f1c315be/) | ⚠️ Unaudited |
-| Seaport | unknown | hyperliquid | n/a | [`0x000000...3eb395`](./contracts/hyperliquid-999/0x0000000000000068f116a894984e2db1123eb395/) | ⚠️ Unaudited |
-| UniswapV3Pool | core_logic | hyperliquid | n/a | [`0x1f6b7b...e34420`](./contracts/hyperliquid-999/0x1f6b7b53623b3039720a186b31ef7f50f0e34420/) | ⚠️ Unaudited |
+| Nft | token | hyperliquid | n/a | 2 deployments: hyperliquid [`0x3c7fd353d32344476d964deda8ea112a9d83b123`](./contracts/hyperliquid-999/0x3c7fd353d32344476d964deda8ea112a9d83b123/); hyperliquid `0x9125e2d6827a00b0f8330d6ef7bef07730bac685` | ⚠️ Unaudited |
+| RelayApprovalProxyV3 | unknown | hyperliquid | n/a | [`0xccc88a9d1b4ed6b0eaba998850414b24f1c315be`](./contracts/hyperliquid-999/0xccc88a9d1b4ed6b0eaba998850414b24f1c315be/) | ⚠️ Unaudited |
+| Seaport | unknown | hyperliquid | n/a | [`0x0000000000000068f116a894984e2db1123eb395`](./contracts/hyperliquid-999/0x0000000000000068f116a894984e2db1123eb395/) | ⚠️ Unaudited |
+| UniswapV3Pool | core_logic | hyperliquid | n/a | [`0x1f6b7b53623b3039720a186b31ef7f50f0e34420`](./contracts/hyperliquid-999/0x1f6b7b53623b3039720a186b31ef7f50f0e34420/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -88,10 +88,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | hyperliquid | n/a | `0x6e5f66...a1bf77` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0xaa2674...68791c` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0xb12827...8cb154` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0xc19430...6e1645` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x6e5f663887826612240e52148d646489d8a1bf77` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0xaa2674954dd6d71bec7a953689c80cd3d168791c` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0xb128271210351cc4d80740f1bf6a65682e8cb154` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0xc1943026b4238c21e28437abc0089a6f776e1645` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -105,9 +105,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| hyperliquid | [`0x3c7fd3...83b123`](./contracts/hyperliquid-999/0x3c7fd353d32344476d964deda8ea112a9d83b123/) | Nft | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0xccc88a...c315be`](./contracts/hyperliquid-999/0xccc88a9d1b4ed6b0eaba998850414b24f1c315be/) | RelayApprovalProxyV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x000000...3eb395`](./contracts/hyperliquid-999/0x0000000000000068f116a894984e2db1123eb395/) | Seaport | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x3c7fd353d32344476d964deda8ea112a9d83b123`](./contracts/hyperliquid-999/0x3c7fd353d32344476d964deda8ea112a9d83b123/) | Nft | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0xccc88a9d1b4ed6b0eaba998850414b24f1c315be`](./contracts/hyperliquid-999/0xccc88a9d1b4ed6b0eaba998850414b24f1c315be/) | RelayApprovalProxyV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x0000000000000068f116a894984e2db1123eb395`](./contracts/hyperliquid-999/0x0000000000000068f116a894984e2db1123eb395/) | Seaport | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

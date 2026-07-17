@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- ZamaERC20 (`0xa12cc1...49f4f3`, chain 1)
+- ZamaERC20 (`0xa12cc123ba206d4031d1c7f6223d1c2ec249f4f3`, chain 1)
 
 ## Contract Surface Quality
 
@@ -103,7 +103,7 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ZamaERC20 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-263621 | `0xa12cc1...49f4f3` | ⚠️ Unaudited |
+| ZamaERC20 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-263621 | `0xa12cc123ba206d4031d1c7f6223d1c2ec249f4f3` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -179,7 +179,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0xa12cc1...49f4f3` | ZamaERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xa12cc123ba206d4031d1c7f6223d1c2ec249f4f3` | ZamaERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

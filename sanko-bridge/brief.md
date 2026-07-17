@@ -62,8 +62,8 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| DMT | unknown | arbitrum | n/a | [`0x0be47c...85ecb0`](./contracts/arbitrum-42161/0x0be47c0355306aff6166a62b023ae0b2bb85ecb0/) | ⚠️ Unaudited |
-| DMTStake | unknown | arbitrum | n/a | [`0x2d7a09...fd5f80`](./contracts/arbitrum-42161/0x2d7a092036cc1e39ac37a4c4c7f6f9aadcfd5f80/) | ⚠️ Unaudited |
+| DMT | unknown | arbitrum | n/a | [`0x0be47c0355306aff6166a62b023ae0b2bb85ecb0`](./contracts/arbitrum-42161/0x0be47c0355306aff6166a62b023ae0b2bb85ecb0/) | ⚠️ Unaudited |
+| DMTStake | unknown | arbitrum | n/a | [`0x2d7a092036cc1e39ac37a4c4c7f6f9aadcfd5f80`](./contracts/arbitrum-42161/0x2d7a092036cc1e39ac37a4c4c7f6f9aadcfd5f80/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -94,8 +94,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | [`0x0be47c...85ecb0`](./contracts/arbitrum-42161/0x0be47c0355306aff6166a62b023ae0b2bb85ecb0/) | DMT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x2d7a09...fd5f80`](./contracts/arbitrum-42161/0x2d7a092036cc1e39ac37a4c4c7f6f9aadcfd5f80/) | DMTStake | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x0be47c0355306aff6166a62b023ae0b2bb85ecb0`](./contracts/arbitrum-42161/0x0be47c0355306aff6166a62b023ae0b2bb85ecb0/) | DMT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x2d7a092036cc1e39ac37a4c4c7f6f9aadcfd5f80`](./contracts/arbitrum-42161/0x2d7a092036cc1e39ac37a4c4c7f6f9aadcfd5f80/) | DMTStake | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

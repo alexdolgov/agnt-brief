@@ -59,12 +59,12 @@ The protocol forms a single structural family (Core Logic) of 6 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AutoMiner | unknown | base | n/a | [`0x313584...72de89`](./contracts/base-8453/0x31358496900d600b2f523d6edc4933e78f72de89/) | ⚠️ Unaudited |
-| Bean | unknown | base | n/a | [`0x5c7299...4a5a5d`](./contracts/base-8453/0x5c72992b83e74c4d5200a8e8920fb946214a5a5d/) | ⚠️ Unaudited |
-| GridMining | unknown | base | n/a | [`0x963249...1da4f0`](./contracts/base-8453/0x9632495bdb93fd6b0740ab69cc6c71c9c01da4f0/) | ⚠️ Unaudited |
-| Staking | unknown | base | n/a | [`0xfe1771...8ff9c2`](./contracts/base-8453/0xfe177128df8d336caf99f787b72183d1e68ff9c2/) | ⚠️ Unaudited |
-| StrategyVault | unknown | base | n/a | [`0x2c7a77...0fcf0a`](./contracts/base-8453/0x2c7a77a84276d63eb200970a9cc1c4a6f80fcf0a/) | ⚠️ Unaudited |
-| Treasury | unknown | base | n/a | [`0x38f6e7...e3aeb3`](./contracts/base-8453/0x38f6e74148d6904286131e190d879a699fe3aeb3/) | ⚠️ Unaudited |
+| AutoMiner | unknown | base | n/a | [`0x31358496900d600b2f523d6edc4933e78f72de89`](./contracts/base-8453/0x31358496900d600b2f523d6edc4933e78f72de89/) | ⚠️ Unaudited |
+| Bean | unknown | base | n/a | [`0x5c72992b83e74c4d5200a8e8920fb946214a5a5d`](./contracts/base-8453/0x5c72992b83e74c4d5200a8e8920fb946214a5a5d/) | ⚠️ Unaudited |
+| GridMining | unknown | base | n/a | [`0x9632495bdb93fd6b0740ab69cc6c71c9c01da4f0`](./contracts/base-8453/0x9632495bdb93fd6b0740ab69cc6c71c9c01da4f0/) | ⚠️ Unaudited |
+| Staking | unknown | base | n/a | [`0xfe177128df8d336caf99f787b72183d1e68ff9c2`](./contracts/base-8453/0xfe177128df8d336caf99f787b72183d1e68ff9c2/) | ⚠️ Unaudited |
+| StrategyVault | unknown | base | n/a | [`0x2c7a77a84276d63eb200970a9cc1c4a6f80fcf0a`](./contracts/base-8453/0x2c7a77a84276d63eb200970a9cc1c4a6f80fcf0a/) | ⚠️ Unaudited |
+| Treasury | unknown | base | n/a | [`0x38f6e74148d6904286131e190d879a699fe3aeb3`](./contracts/base-8453/0x38f6e74148d6904286131e190d879a699fe3aeb3/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,12 +95,12 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x313584...72de89`](./contracts/base-8453/0x31358496900d600b2f523d6edc4933e78f72de89/) | AutoMiner | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x5c7299...4a5a5d`](./contracts/base-8453/0x5c72992b83e74c4d5200a8e8920fb946214a5a5d/) | Bean | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x963249...1da4f0`](./contracts/base-8453/0x9632495bdb93fd6b0740ab69cc6c71c9c01da4f0/) | GridMining | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xfe1771...8ff9c2`](./contracts/base-8453/0xfe177128df8d336caf99f787b72183d1e68ff9c2/) | Staking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x2c7a77...0fcf0a`](./contracts/base-8453/0x2c7a77a84276d63eb200970a9cc1c4a6f80fcf0a/) | StrategyVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x38f6e7...e3aeb3`](./contracts/base-8453/0x38f6e74148d6904286131e190d879a699fe3aeb3/) | Treasury | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x31358496900d600b2f523d6edc4933e78f72de89`](./contracts/base-8453/0x31358496900d600b2f523d6edc4933e78f72de89/) | AutoMiner | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x5c72992b83e74c4d5200a8e8920fb946214a5a5d`](./contracts/base-8453/0x5c72992b83e74c4d5200a8e8920fb946214a5a5d/) | Bean | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x9632495bdb93fd6b0740ab69cc6c71c9c01da4f0`](./contracts/base-8453/0x9632495bdb93fd6b0740ab69cc6c71c9c01da4f0/) | GridMining | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xfe177128df8d336caf99f787b72183d1e68ff9c2`](./contracts/base-8453/0xfe177128df8d336caf99f787b72183d1e68ff9c2/) | Staking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x2c7a77a84276d63eb200970a9cc1c4a6f80fcf0a`](./contracts/base-8453/0x2c7a77a84276d63eb200970a9cc1c4a6f80fcf0a/) | StrategyVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x38f6e74148d6904286131e190d879a699fe3aeb3`](./contracts/base-8453/0x38f6e74148d6904286131e190d879a699fe3aeb3/) | Treasury | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -56,8 +56,8 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x52850c...cfcec2`, chain 1)
-- UnnamedContract (`0x162b21...d2a8db`, chain 137)
+- UnnamedContract (`0x52850c7f5fe3a7f1ef3b7a65ee09055203cfcec2`, chain 1)
+- UnnamedContract (`0x162b21ba1a90dd9384c615192fa4053217d2a8db`, chain 137)
 
 ## Contract Surface Quality
 
@@ -103,9 +103,9 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| MoolaStakingRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xb45094...b439b8` | ⚠️ Unaudited |
-| Swap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x23c956...30bc3e` | ⚠️ Unaudited |
-| Vyper_contract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x0a125d...09222a` | ⚠️ Unaudited |
+| MoolaStakingRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xb450940c5297e9b5e7167fac5903fd1e90b439b8` | ⚠️ Unaudited |
+| Swap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x23c95678862a229fac088bd9705622d78130bc3e` | ⚠️ Unaudited |
+| Vyper_contract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x0a125d473cd3b1968e728ddf7d424c928c09222a` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -125,9 +125,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-247647 | `0x52850c...cfcec2` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-247648 | `0x162b21...d2a8db` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x1e02cd...4521b9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-247647 | `0x52850c7f5fe3a7f1ef3b7a65ee09055203cfcec2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-247648 | `0x162b21ba1a90dd9384c615192fa4053217d2a8db` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x1e02cdbba6729b6470de81ad4d2cca4c514521b9` | ❓ Unverified |
 
 ## Audit Inventory
 

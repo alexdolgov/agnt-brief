@@ -59,15 +59,15 @@ The protocol comprises 2 functional families. Its contracts share 5 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| PoolStakes | unknown | ethereum | n/a | [`0x4a4fc4...1b0a76`](./contracts/ethereum-1/0x4a4fc40d2475f493eca3ec436b924237aa1b0a76/) | ⚠️ Unaudited |
-| RewardMaster | unknown | ethereum | n/a | [`0x347a58...7f60fc`](./contracts/ethereum-1/0x347a58878d04951588741d4d16d54b742c7f60fc/) | ⚠️ Unaudited |
-| RewardPool | unknown | ethereum | n/a | [`0xcf4637...3f10e5`](./contracts/ethereum-1/0xcf463713521af5ce31ad18f6914f3706493f10e5/) | ⚠️ Unaudited |
-| StakeRewardAdviser | unknown | ethereum | n/a | [`0x5df8ec...64b050`](./contracts/ethereum-1/0x5df8ec95d8b96ada2b4041d639ab66361564b050/) | ⚠️ Unaudited |
-| StakeRewardController2 | unknown | ethereum | n/a | [`0x1b3166...c0086b`](./contracts/ethereum-1/0x1b316635a9ed279995c78e5a630e13aad7c0086b/) | ⚠️ Unaudited |
-| Staking | unknown | ethereum | n/a | [`0xf4d06d...11f899`](./contracts/ethereum-1/0xf4d06d72dacdd8393fa4ea72fdcc10049711f899/) | ⚠️ Unaudited |
-| VestingPools | unknown | ethereum | n/a | [`0xb47610...dcf14b`](./contracts/ethereum-1/0xb476104aa9d1f30180a01987fb09b1e96ddcf14b/) | ⚠️ Unaudited |
-| VotingPowerInformer | unknown | ethereum | n/a | [`0x3813ac...ba0264`](./contracts/ethereum-1/0x3813acf0fb19ff90e62b0c7ada20c9c67cba0264/) | ⚠️ Unaudited |
-| ZKPToken | unknown | ethereum | n/a | [`0x909e34...6fa173`](./contracts/ethereum-1/0x909e34d3f6124c324ac83dcca84b74398a6fa173/) | ⚠️ Unaudited |
+| PoolStakes | unknown | ethereum | n/a | [`0x4a4fc40d2475f493eca3ec436b924237aa1b0a76`](./contracts/ethereum-1/0x4a4fc40d2475f493eca3ec436b924237aa1b0a76/) | ⚠️ Unaudited |
+| RewardMaster | unknown | ethereum | n/a | [`0x347a58878d04951588741d4d16d54b742c7f60fc`](./contracts/ethereum-1/0x347a58878d04951588741d4d16d54b742c7f60fc/) | ⚠️ Unaudited |
+| RewardPool | unknown | ethereum | n/a | [`0xcf463713521af5ce31ad18f6914f3706493f10e5`](./contracts/ethereum-1/0xcf463713521af5ce31ad18f6914f3706493f10e5/) | ⚠️ Unaudited |
+| StakeRewardAdviser | unknown | ethereum | n/a | [`0x5df8ec95d8b96ada2b4041d639ab66361564b050`](./contracts/ethereum-1/0x5df8ec95d8b96ada2b4041d639ab66361564b050/) | ⚠️ Unaudited |
+| StakeRewardController2 | unknown | ethereum | n/a | [`0x1b316635a9ed279995c78e5a630e13aad7c0086b`](./contracts/ethereum-1/0x1b316635a9ed279995c78e5a630e13aad7c0086b/) | ⚠️ Unaudited |
+| Staking | unknown | ethereum | n/a | [`0xf4d06d72dacdd8393fa4ea72fdcc10049711f899`](./contracts/ethereum-1/0xf4d06d72dacdd8393fa4ea72fdcc10049711f899/) | ⚠️ Unaudited |
+| VestingPools | unknown | ethereum | n/a | [`0xb476104aa9d1f30180a01987fb09b1e96ddcf14b`](./contracts/ethereum-1/0xb476104aa9d1f30180a01987fb09b1e96ddcf14b/) | ⚠️ Unaudited |
+| VotingPowerInformer | unknown | ethereum | n/a | [`0x3813acf0fb19ff90e62b0c7ada20c9c67cba0264`](./contracts/ethereum-1/0x3813acf0fb19ff90e62b0c7ada20c9c67cba0264/) | ⚠️ Unaudited |
+| ZKPToken | unknown | ethereum | n/a | [`0x909e34d3f6124c324ac83dcca84b74398a6fa173`](./contracts/ethereum-1/0x909e34d3f6124c324ac83dcca84b74398a6fa173/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -98,15 +98,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x4a4fc4...1b0a76`](./contracts/ethereum-1/0x4a4fc40d2475f493eca3ec436b924237aa1b0a76/) | PoolStakes | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x347a58...7f60fc`](./contracts/ethereum-1/0x347a58878d04951588741d4d16d54b742c7f60fc/) | RewardMaster | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xcf4637...3f10e5`](./contracts/ethereum-1/0xcf463713521af5ce31ad18f6914f3706493f10e5/) | RewardPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x5df8ec...64b050`](./contracts/ethereum-1/0x5df8ec95d8b96ada2b4041d639ab66361564b050/) | StakeRewardAdviser | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1b3166...c0086b`](./contracts/ethereum-1/0x1b316635a9ed279995c78e5a630e13aad7c0086b/) | StakeRewardController2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xf4d06d...11f899`](./contracts/ethereum-1/0xf4d06d72dacdd8393fa4ea72fdcc10049711f899/) | Staking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xb47610...dcf14b`](./contracts/ethereum-1/0xb476104aa9d1f30180a01987fb09b1e96ddcf14b/) | VestingPools | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x3813ac...ba0264`](./contracts/ethereum-1/0x3813acf0fb19ff90e62b0c7ada20c9c67cba0264/) | VotingPowerInformer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x909e34...6fa173`](./contracts/ethereum-1/0x909e34d3f6124c324ac83dcca84b74398a6fa173/) | ZKPToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4a4fc40d2475f493eca3ec436b924237aa1b0a76`](./contracts/ethereum-1/0x4a4fc40d2475f493eca3ec436b924237aa1b0a76/) | PoolStakes | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x347a58878d04951588741d4d16d54b742c7f60fc`](./contracts/ethereum-1/0x347a58878d04951588741d4d16d54b742c7f60fc/) | RewardMaster | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xcf463713521af5ce31ad18f6914f3706493f10e5`](./contracts/ethereum-1/0xcf463713521af5ce31ad18f6914f3706493f10e5/) | RewardPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5df8ec95d8b96ada2b4041d639ab66361564b050`](./contracts/ethereum-1/0x5df8ec95d8b96ada2b4041d639ab66361564b050/) | StakeRewardAdviser | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1b316635a9ed279995c78e5a630e13aad7c0086b`](./contracts/ethereum-1/0x1b316635a9ed279995c78e5a630e13aad7c0086b/) | StakeRewardController2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xf4d06d72dacdd8393fa4ea72fdcc10049711f899`](./contracts/ethereum-1/0xf4d06d72dacdd8393fa4ea72fdcc10049711f899/) | Staking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb476104aa9d1f30180a01987fb09b1e96ddcf14b`](./contracts/ethereum-1/0xb476104aa9d1f30180a01987fb09b1e96ddcf14b/) | VestingPools | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x3813acf0fb19ff90e62b0c7ada20c9c67cba0264`](./contracts/ethereum-1/0x3813acf0fb19ff90e62b0c7ada20c9c67cba0264/) | VotingPowerInformer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x909e34d3f6124c324ac83dcca84b74398a6fa173`](./contracts/ethereum-1/0x909e34d3f6124c324ac83dcca84b74398a6fa173/) | ZKPToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

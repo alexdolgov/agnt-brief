@@ -52,21 +52,21 @@ The pinned logic-topography run contains 14 contract row(s) across ethereum. Str
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- IMF (`0x05be1d...829a60`, chain 1)
-- IMF Liquidity Manager (`0x2c17b8...d4316a`, chain 1)
-- IMF Morpho Migrator (`0xccb681...34ba22`, chain 1)
-- IMF SuperLoop (`0xbe71f3...844037`, chain 1)
-- IMF SuperLoop V2 (`0xa9e1fb...465514`, chain 1)
-- IMF Uniswap V4 Fee Hook (`0xed81cb...0ed0cc`, chain 1)
-- IMF USDS Vault (`0xdef1fc...83d43d`, chain 1)
-- IMF V4 Factory (`0xa626a4...d0e384`, chain 1)
-- IMF V4 Launcher Migrator (`0x1a0f6e...764273`, chain 1)
-- IMFMoneyMarkets (`0x30f758...bd1eeb`, chain 1)
-- Money (`0xb162ca...ee6b8f`, chain 1)
-- PEPE/MONEY Oracle (`0xb97b91...68035d`, chain 1)
-- ProxyIrm (`0xec39c6...116ecb`, chain 1)
-- ProxyOracle (`0x66099a...1fde1c`, chain 1)
-- sbIMF (`0x3215c3...5e14e4`, chain 1)
+- IMF (`0x05be1d4c307c19450a6fd7ce7307ce72a3829a60`, chain 1)
+- IMF Liquidity Manager (`0x2c17b87180ea16eab0c67920f876ace502d4316a`, chain 1)
+- IMF Morpho Migrator (`0xccb68162badb2afc5185dd8416d5452fe934ba22`, chain 1)
+- IMF SuperLoop (`0xbe71f3a575c68a78f66242dc47d51e7579844037`, chain 1)
+- IMF SuperLoop V2 (`0xa9e1fb534d6df94ca2c66f872a2f7c0090465514`, chain 1)
+- IMF Uniswap V4 Fee Hook (`0xed81cb1977c550ae23c434520901eb36f40ed0cc`, chain 1)
+- IMF USDS Vault (`0xdef1fce2df6270fdf7e1214343bebbab8583d43d`, chain 1)
+- IMF V4 Factory (`0xa626a451837ff5c83b9a6126e8cb773caed0e384`, chain 1)
+- IMF V4 Launcher Migrator (`0x1a0f6ea49bee93fd0fe59dc08e37108059764273`, chain 1)
+- IMFMoneyMarkets (`0x30f75834cb406b7093208fda7f689938acbd1eeb`, chain 1)
+- Money (`0xb162caa6b63de33edc5d0a14b901fb6a54ee6b8f`, chain 1)
+- PEPE/MONEY Oracle (`0xb97b916436e4a3b0aea6c6be2419c636d368035d`, chain 1)
+- ProxyIrm (`0xec39c6df7947f2a4923d317b2805e41ed9116ecb`, chain 1)
+- ProxyOracle (`0x66099a17c21a8df6d949a704f484d544b81fde1c`, chain 1)
+- sbIMF (`0x3215c358b7a70c09e0a98827f744d107095e14e4`, chain 1)
 
 ## Contract Surface Quality
 
@@ -110,32 +110,32 @@ The pinned logic-topography run contains 14 contract row(s) across ethereum. Str
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| IMF | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387599 | `0x05be1d...829a60` | ✅ Audited |
-| IMFMoneyMarkets | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387604 | `0x30f758...bd1eeb` | ✅ Audited |
-| Money | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387610 | `0xb162ca...ee6b8f` | ✅ Audited |
-| sbIMF | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387605 | `0x3215c3...5e14e4` | ✅ Audited |
+| IMF | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387599 | `0x05be1d4c307c19450a6fd7ce7307ce72a3829a60` | ✅ Audited |
+| IMFMoneyMarkets | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387604 | `0x30f75834cb406b7093208fda7f689938acbd1eeb` | ✅ Audited |
+| Money | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387610 | `0xb162caa6b63de33edc5d0a14b901fb6a54ee6b8f` | ✅ Audited |
+| sbIMF | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387605 | `0x3215c358b7a70c09e0a98827f744d107095e14e4` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (17)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ChainlinkUsdMoneyConstantOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcd2b01...38829e` | ⚠️ Unaudited |
-| IMF Liquidity Manager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387603 | `0x2c17b8...d4316a` | ⚠️ Unaudited |
-| IMF Morpho Migrator | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387614 | `0xccb681...34ba22` | ⚠️ Unaudited |
-| IMF SuperLoop | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387613 | `0xbe71f3...844037` | ⚠️ Unaudited |
-| IMF Uniswap V4 Fee Hook | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387618 | `0xed81cb...0ed0cc` | ⚠️ Unaudited |
-| IMF USDS Vault | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387615 | `0xdef1fc...83d43d` | ⚠️ Unaudited |
-| IMF V4 Factory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387608 | `0xa626a4...d0e384` | ⚠️ Unaudited |
-| IMF V4 Launcher Migrator | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387600 | `0x1a0f6e...764273` | ⚠️ Unaudited |
-| Irm69 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe22779...bae2cd` | ⚠️ Unaudited |
-| IrmFixed | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb600a9...2c74d9` | ⚠️ Unaudited |
-| LiquidationBot | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x321a36...1ce213` | ⚠️ Unaudited |
-| MoneyFixedSwap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7207da...2ce452` | ⚠️ Unaudited |
-| PEPE/MONEY Oracle | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387611 | `0xb97b91...68035d` | ⚠️ Unaudited |
-| ProxyIrm | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387617 | `0xec39c6...116ecb` | ⚠️ Unaudited |
-| ProxyOracle | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387606 | `0x66099a...1fde1c` | ⚠️ Unaudited |
-| TwoHopOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x443880...90a920` | ⚠️ Unaudited |
-| UniV3Oracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7c12a3...eb342b` | ⚠️ Unaudited |
+| ChainlinkUsdMoneyConstantOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcd2b014f74e776e0ef787f42905f27fef138829e` | ⚠️ Unaudited |
+| IMF Liquidity Manager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387603 | `0x2c17b87180ea16eab0c67920f876ace502d4316a` | ⚠️ Unaudited |
+| IMF Morpho Migrator | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387614 | `0xccb68162badb2afc5185dd8416d5452fe934ba22` | ⚠️ Unaudited |
+| IMF SuperLoop | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387613 | `0xbe71f3a575c68a78f66242dc47d51e7579844037` | ⚠️ Unaudited |
+| IMF Uniswap V4 Fee Hook | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387618 | `0xed81cb1977c550ae23c434520901eb36f40ed0cc` | ⚠️ Unaudited |
+| IMF USDS Vault | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387615 | `0xdef1fce2df6270fdf7e1214343bebbab8583d43d` | ⚠️ Unaudited |
+| IMF V4 Factory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387608 | `0xa626a451837ff5c83b9a6126e8cb773caed0e384` | ⚠️ Unaudited |
+| IMF V4 Launcher Migrator | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387600 | `0x1a0f6ea49bee93fd0fe59dc08e37108059764273` | ⚠️ Unaudited |
+| Irm69 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe22779eea87b043d26c4bf1c85d5b9bdf8bae2cd` | ⚠️ Unaudited |
+| IrmFixed | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb600a995e13824bdb1ca6ad1e12eed3dbf2c74d9` | ⚠️ Unaudited |
+| LiquidationBot | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x321a36255fd952c8c9801eb53c23a12e3e1ce213` | ⚠️ Unaudited |
+| MoneyFixedSwap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7207da4d2c296f16568c7f128cf2685a5d2ce452` | ⚠️ Unaudited |
+| PEPE/MONEY Oracle | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387611 | `0xb97b916436e4a3b0aea6c6be2419c636d368035d` | ⚠️ Unaudited |
+| ProxyIrm | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387617 | `0xec39c6df7947f2a4923d317b2805e41ed9116ecb` | ⚠️ Unaudited |
+| ProxyOracle | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387606 | `0x66099a17c21a8df6d949a704f484d544b81fde1c` | ⚠️ Unaudited |
+| TwoHopOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4438808061ba3fadba1b3daf564e54028b90a920` | ⚠️ Unaudited |
+| UniV3Oracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7c12a3aaaddc30a4c75effcdb7a52ddf39eb342b` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -155,12 +155,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| IMF SuperLoop V2 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387609 | `0xa9e1fb...465514` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-387601 | `0x210264...7f30dd` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-387602 | `0x2625bf...93c466` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-387607 | `0x870ac1...ba00bc` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-387612 | `0xbbbbbb...eeffcb` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-387616 | `0xe139cb...668ec2` | ❓ Unverified |
+| IMF SuperLoop V2 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387609 | `0xa9e1fb534d6df94ca2c66f872a2f7c0090465514` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-387601 | `0x210264fbcf553aa2e74a2c97e38aa1da237f30dd` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-387602 | `0x2625bfb6ad9840c2c0abb48f150eb9158393c466` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-387607 | `0x870ac11d48b15db9a138cf899d20f13f79ba00bc` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-387612 | `0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-387616 | `0xe139cb8643897e28ad9dccf488151b6b55668ec2` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -180,12 +180,12 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| IMF-Smart-Contract-Audit-Report-Public-Final-Report-V1.pdf | IMF | own contract | IMF (selected) `0x05be1d...829a60` — deployed 2024-05-28 14:00:11+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| IMF-Smart-Contract-Audit-Report-Public-Final-Report-V1.pdf | IMFMoneyMarkets | own contract | IMFMoneyMarkets (selected) `0x30f758...bd1eeb` — deployed 2024-07-10 16:07:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| IMF-Smart-Contract-Audit-Report-Public-Final-Report-V1.pdf | IMF | own contract | IMF (selected) `0x05be1d4c307c19450a6fd7ce7307ce72a3829a60` — deployed 2024-05-28 14:00:11+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| IMF-Smart-Contract-Audit-Report-Public-Final-Report-V1.pdf | IMFMoneyMarkets | own contract | IMFMoneyMarkets (selected) `0x30f75834cb406b7093208fda7f689938acbd1eeb` — deployed 2024-07-10 16:07:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | IMF-Smart-Contract-Audit-Report-Public-Final-Report-V1.pdf | PepeMoneyOracle | unmatched — not counted | — | listed in scope table | no |
-| IMF-Smart-Contract-Audit-Report-Public-Final-Report-V1.pdf | sbIMF | own contract | sbIMF (selected) `0x3215c3...5e14e4` — deployed 2024-07-10 15:41:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| IMF-Smart-Contract-Audit-Report-Public-Final-Report-V1.pdf | sbIMF | own contract | sbIMF (selected) `0x3215c358b7a70c09e0a98827f744d107095e14e4` — deployed 2024-07-10 15:41:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | IMF-Smart-Contract-Audit-Report-Public-Final-Report-V1.pdf | Irm69 | unmatched — not counted | — | listed in scope table | no |
-| IMF-Smart-Contract-Audit-Report-Public-Final-Report-V1.pdf | Money | own contract | Money (selected) `0xb162ca...ee6b8f` — deployed 2024-07-10 15:36:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| IMF-Smart-Contract-Audit-Report-Public-Final-Report-V1.pdf | Money | own contract | Money (selected) `0xb162caa6b63de33edc5d0a14b901fb6a54ee6b8f` — deployed 2024-07-10 15:36:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | IMF-Smart-Contract-Audit-Report-Public-Final-Report-V1.pdf | Univ3Oracle | unmatched — not counted | — | listed in scope table | no |
 
 ## Coverage Gaps
@@ -194,8 +194,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0xec39c6...116ecb` | ProxyIrm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x66099a...1fde1c` | ProxyOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xec39c6df7947f2a4923d317b2805e41ed9116ecb` | ProxyIrm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x66099a17c21a8df6d949a704f484d544b81fde1c` | ProxyOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

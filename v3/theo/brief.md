@@ -52,24 +52,24 @@ The pinned logic-topography run contains 18 contract row(s) across arbitrum, bas
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- sthUSD (`0xa808bc...770326`, chain 1)
-- sthUSD OFT (`0xd1db20...32d540`, chain 56)
-- sthUSD OFT (`0xd1db20...32d540`, chain 5000)
-- sthUSD OFT (`0xd1db20...32d540`, chain 42161)
-- sthUSD OFT Adapter (`0xd1db20...32d540`, chain 1)
-- thBILL (`0x5fa487...91da0b`, chain 1)
-- thBILL OFT (`0xfdd22c...f55a5a`, chain 8453)
-- thBILL OFT (`0xfdd22c...f55a5a`, chain 42161)
-- ThBillOFT (`0xfdd22c...f55a5a`, chain 999)
-- ThBillOFTAdapter (`0xfdd22c...f55a5a`, chain 1)
-- thUSD (`0xa3fe5c...e485b3`, chain 1)
-- thUSD Minter (`0x2d99ac...e8696e`, chain 1)
-- thUSD OFT (`0x9aa9aa...14b065`, chain 56)
-- thUSD OFT (`0x9aa9aa...14b065`, chain 5000)
-- ThUSDOFT (`0x9aa9aa...14b065`, chain 42161)
-- ThUSDOFTAdapter (`0x9aa9aa...14b065`, chain 1)
-- TimelockController (`0x46a9ca...ef8bc2`, chain 1)
-- TTokenRouterV2 (`0x8a2c30...505eb1`, chain 1)
+- sthUSD (`0xa808bc9775cb41c52c7842f8b50427fe7a770326`, chain 1)
+- sthUSD OFT (`0xd1db209087516883ec705cfeb99e80bb6032d540`, chain 56)
+- sthUSD OFT (`0xd1db209087516883ec705cfeb99e80bb6032d540`, chain 5000)
+- sthUSD OFT (`0xd1db209087516883ec705cfeb99e80bb6032d540`, chain 42161)
+- sthUSD OFT Adapter (`0xd1db209087516883ec705cfeb99e80bb6032d540`, chain 1)
+- thBILL (`0x5fa487bca6158c64046b2813623e20755091da0b`, chain 1)
+- thBILL OFT (`0xfdd22ce6d1f66bc0ec89b20bf16ccb6670f55a5a`, chain 8453)
+- thBILL OFT (`0xfdd22ce6d1f66bc0ec89b20bf16ccb6670f55a5a`, chain 42161)
+- ThBillOFT (`0xfdd22ce6d1f66bc0ec89b20bf16ccb6670f55a5a`, chain 999)
+- ThBillOFTAdapter (`0xfdd22ce6d1f66bc0ec89b20bf16ccb6670f55a5a`, chain 1)
+- thUSD (`0xa3fe5c7596024e6811e14f029937d5bd8ae485b3`, chain 1)
+- thUSD Minter (`0x2d99ac801dc0edadd53f5688fef2317932e8696e`, chain 1)
+- thUSD OFT (`0x9aa9aa0530a6af70ee7bc47cf1240100f514b065`, chain 56)
+- thUSD OFT (`0x9aa9aa0530a6af70ee7bc47cf1240100f514b065`, chain 5000)
+- ThUSDOFT (`0x9aa9aa0530a6af70ee7bc47cf1240100f514b065`, chain 42161)
+- ThUSDOFTAdapter (`0x9aa9aa0530a6af70ee7bc47cf1240100f514b065`, chain 1)
+- TimelockController (`0x46a9ca32d5c7c866336e75765b099b669fef8bc2`, chain 1)
+- TTokenRouterV2 (`0x8a2c307d1462ff4fa98c9c119d3a3457ad505eb1`, chain 1)
 
 ## Contract Surface Quality
 
@@ -113,57 +113,57 @@ The pinned logic-topography run contains 18 contract row(s) across arbitrum, bas
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| sthUSD | unknown | project_anchor | own_supporting | 0 | ethereum | unit-266759 | `0xa808bc...770326` | ✅ Audited |
-| thUSD | unknown | project_anchor | own_supporting | 0 | ethereum | unit-266758 | `0xa3fe5c...e485b3` | ✅ Audited |
+| sthUSD | unknown | project_anchor | own_supporting | 0 | ethereum | unit-266759 | `0xa808bc9775cb41c52c7842f8b50427fe7a770326` | ✅ Audited |
+| thUSD | unknown | project_anchor | own_supporting | 0 | ethereum | unit-266758 | `0xa3fe5c7596024e6811e14f029937d5bd8ae485b3` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (44)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Delta | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x060d85...6d0e9c` | ⚠️ Unaudited |
-| DeltaManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x145420...f3e859` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x9e31aa...5301dc` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xa6ab7b...6cb25f` | ⚠️ Unaudited |
-| InitializableImmutableAdminUpgradeabilityProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x98c23e...e16f5c` | ⚠️ Unaudited |
-| IToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x325478...9ba519` | ⚠️ Unaudited |
-| KYC | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x39ade9...8ce028` | ⚠️ Unaudited |
-| KYCUltra | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x17b7bf...fa11f2` | ⚠️ Unaudited |
-| MintCoordinator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8a095d...85f1eb` | ⚠️ Unaudited |
-| PredepositClaim | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x10456b...996650` | ⚠️ Unaudited |
-| SafeProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x948776...601295` | ⚠️ Unaudited |
-| SthUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x342487...5a7dc3` | ⚠️ Unaudited |
-| sthUSD OFT | unknown | project_anchor | own_supporting | 0 | bsc | unit-266777 | `0xd1db20...32d540` | ⚠️ Unaudited |
-| sthUSD OFT | unknown | project_anchor | own_supporting | 0 | mantle | unit-266772 | `0xd1db20...32d540` | ⚠️ Unaudited |
-| sthUSD OFT | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-266764 | `0xd1db20...32d540` | ⚠️ Unaudited |
-| sthUSD OFT Adapter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-266760 | `0xd1db20...32d540` | ⚠️ Unaudited |
-| SthUSDRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4775a4...c4c9e8` | ⚠️ Unaudited |
-| StUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x1bd515...8d8628` | ⚠️ Unaudited |
-| thBILL | unknown | project_anchor | own_supporting | 0 | ethereum | unit-266755 | `0x5fa487...91da0b` | ⚠️ Unaudited |
-| thBILL OFT | unknown | project_anchor | own_supporting | 0 | base | unit-266779 | `0xfdd22c...f55a5a` | ⚠️ Unaudited |
-| thBILL OFT | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-266768 | `0xfdd22c...f55a5a` | ⚠️ Unaudited |
-| ThBillHyperliquidComposer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0xabb13a...cc3923` | ⚠️ Unaudited |
-| ThBillOFT | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-266780 | `0xfdd22c...f55a5a` | ⚠️ Unaudited |
-| ThBillOFTAdapter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-266762 | `0xfdd22c...f55a5a` | ⚠️ Unaudited |
-| TheoTUltraOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2fb6f0...42f9ce` | ⚠️ Unaudited |
-| TheoWhitelist | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x14d38a...11f388` | ⚠️ Unaudited |
-| ThUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x2332e0...359e2c` | ⚠️ Unaudited |
-| thUSD Minter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-266753 | `0x2d99ac...e8696e` | ⚠️ Unaudited |
-| thUSD OFT | unknown | project_anchor | own_supporting | 0 | bsc | unit-266774 | `0x9aa9aa...14b065` | ⚠️ Unaudited |
-| thUSD OFT | unknown | project_anchor | own_supporting | 0 | mantle | unit-266770 | `0x9aa9aa...14b065` | ⚠️ Unaudited |
-| ThUSDMinter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2c2347...972f64` | ⚠️ Unaudited |
-| ThUSDOFT | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-266763 | `0x9aa9aa...14b065` | ⚠️ Unaudited |
-| ThUSDOFTAdapter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-266757 | `0x9aa9aa...14b065` | ⚠️ Unaudited |
-| TimelockController | unknown | project_anchor | own_supporting | 0 | ethereum | unit-266754 | `0x46a9ca...ef8bc2` | ⚠️ Unaudited |
-| TTokenRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x11ae0d...7b9076` | ⚠️ Unaudited |
-| TTokenRouterV2 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-266756 | `0x8a2c30...505eb1` | ⚠️ Unaudited |
-| TTokenRouterV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9e7a82...2df621` | ⚠️ Unaudited |
-| TTokenV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa6844c...d8f083` | ⚠️ Unaudited |
-| TTokenV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x1aa000...a0fdda` | ⚠️ Unaudited |
-| TULTRAV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x985b60...ea1b54` | ⚠️ Unaudited |
-| TULTRAV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4d0fce...3e5248` | ⚠️ Unaudited |
-| Ultra | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x145420...f3e859` | ⚠️ Unaudited |
-| UltraManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x0f37ee...ab5ac6` | ⚠️ Unaudited |
-| UltraManagerFiat | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x060d85...6d0e9c` | ⚠️ Unaudited |
+| Delta | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x060d8503a9a552a4600abbc5e741b8bed06d0e9c` | ⚠️ Unaudited |
+| DeltaManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x14542032f6a696231b3cf868e1811898c6f3e859` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x9e31aa691cfeb47276727793ccb29984625301dc` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xa6ab7ba3ea0c0016de31826682789371bc6cb25f` | ⚠️ Unaudited |
+| InitializableImmutableAdminUpgradeabilityProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c` | ⚠️ Unaudited |
+| IToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x325478a069b0dbbdfbee909fa3741f84259ba519` | ⚠️ Unaudited |
+| KYC | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x39ade913407b5da446c7d1e1e6a7421b7c8ce028` | ⚠️ Unaudited |
+| KYCUltra | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x17b7bf7cf11f879a97f2790baaad698a50fa11f2` | ⚠️ Unaudited |
+| MintCoordinator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8a095d7ecba36d19c4d9a8389d9d7da0ee85f1eb` | ⚠️ Unaudited |
+| PredepositClaim | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x10456b3b0fb9f5f8141d38edf180ad9342996650` | ⚠️ Unaudited |
+| SafeProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x94877640dd9e6f1e3cb56bf7b5665b7152601295` | ⚠️ Unaudited |
+| SthUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x342487f9fe31d199dda8c89a1c34cc647c5a7dc3` | ⚠️ Unaudited |
+| sthUSD OFT | unknown | project_anchor | own_supporting | 0 | bsc | unit-266777 | `0xd1db209087516883ec705cfeb99e80bb6032d540` | ⚠️ Unaudited |
+| sthUSD OFT | unknown | project_anchor | own_supporting | 0 | mantle | unit-266772 | `0xd1db209087516883ec705cfeb99e80bb6032d540` | ⚠️ Unaudited |
+| sthUSD OFT | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-266764 | `0xd1db209087516883ec705cfeb99e80bb6032d540` | ⚠️ Unaudited |
+| sthUSD OFT Adapter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-266760 | `0xd1db209087516883ec705cfeb99e80bb6032d540` | ⚠️ Unaudited |
+| SthUSDRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4775a42121f251f41790257983b9d0234bc4c9e8` | ⚠️ Unaudited |
+| StUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x1bd5154221ac5f57c1b8f4bbadb6d46f9a8d8628` | ⚠️ Unaudited |
+| thBILL | unknown | project_anchor | own_supporting | 0 | ethereum | unit-266755 | `0x5fa487bca6158c64046b2813623e20755091da0b` | ⚠️ Unaudited |
+| thBILL OFT | unknown | project_anchor | own_supporting | 0 | base | unit-266779 | `0xfdd22ce6d1f66bc0ec89b20bf16ccb6670f55a5a` | ⚠️ Unaudited |
+| thBILL OFT | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-266768 | `0xfdd22ce6d1f66bc0ec89b20bf16ccb6670f55a5a` | ⚠️ Unaudited |
+| ThBillHyperliquidComposer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0xabb13ab90f90aa195af77a50b3f4b25a74cc3923` | ⚠️ Unaudited |
+| ThBillOFT | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-266780 | `0xfdd22ce6d1f66bc0ec89b20bf16ccb6670f55a5a` | ⚠️ Unaudited |
+| ThBillOFTAdapter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-266762 | `0xfdd22ce6d1f66bc0ec89b20bf16ccb6670f55a5a` | ⚠️ Unaudited |
+| TheoTUltraOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2fb6f063c1950100db45492f1c359d809d42f9ce` | ⚠️ Unaudited |
+| TheoWhitelist | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x14d38a3ed85ebddb3e22ff022e38e645a311f388` | ⚠️ Unaudited |
+| ThUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x2332e0df18ad299847b71ed6b8ebd74341359e2c` | ⚠️ Unaudited |
+| thUSD Minter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-266753 | `0x2d99ac801dc0edadd53f5688fef2317932e8696e` | ⚠️ Unaudited |
+| thUSD OFT | unknown | project_anchor | own_supporting | 0 | bsc | unit-266774 | `0x9aa9aa0530a6af70ee7bc47cf1240100f514b065` | ⚠️ Unaudited |
+| thUSD OFT | unknown | project_anchor | own_supporting | 0 | mantle | unit-266770 | `0x9aa9aa0530a6af70ee7bc47cf1240100f514b065` | ⚠️ Unaudited |
+| ThUSDMinter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2c2347f3cf2275bda88a7a222f08f888e0972f64` | ⚠️ Unaudited |
+| ThUSDOFT | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-266763 | `0x9aa9aa0530a6af70ee7bc47cf1240100f514b065` | ⚠️ Unaudited |
+| ThUSDOFTAdapter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-266757 | `0x9aa9aa0530a6af70ee7bc47cf1240100f514b065` | ⚠️ Unaudited |
+| TimelockController | unknown | project_anchor | own_supporting | 0 | ethereum | unit-266754 | `0x46a9ca32d5c7c866336e75765b099b669fef8bc2` | ⚠️ Unaudited |
+| TTokenRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x11ae0ddca63e7a6ed11e575cf497fa69f27b9076` | ⚠️ Unaudited |
+| TTokenRouterV2 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-266756 | `0x8a2c307d1462ff4fa98c9c119d3a3457ad505eb1` | ⚠️ Unaudited |
+| TTokenRouterV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9e7a82cb1705bc5cb3c5500d96d166123e2df621` | ⚠️ Unaudited |
+| TTokenV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa6844c9030f2717955f77801edbfb3480ad8f083` | ⚠️ Unaudited |
+| TTokenV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x1aa000527eb3ec9cff8168d8ff96513469a0fdda` | ⚠️ Unaudited |
+| TULTRAV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x985b600c534f7a8599b1df1b9e23bfc94aea1b54` | ⚠️ Unaudited |
+| TULTRAV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4d0fcefff18dbdfe8ada61b51f0caed4b33e5248` | ⚠️ Unaudited |
+| Ultra | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x14542032f6a696231b3cf868e1811898c6f3e859` | ⚠️ Unaudited |
+| UltraManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x0f37eedfe1f6e010254135bdfed0255f79ab5ac6` | ⚠️ Unaudited |
+| UltraManagerFiat | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x060d8503a9a552a4600abbc5e741b8bed06d0e9c` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -211,8 +211,8 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| ThUSD - Zellic Audit Report.pdf | ThUSD | own contract | thUSD (selected) `0xa3fe5c...e485b3` — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| ThUSD - Zellic Audit Report.pdf | SthUSD | own contract | sthUSD (selected) `0xa808bc...770326` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ThUSD - Zellic Audit Report.pdf | ThUSD | own contract | thUSD (selected) `0xa3fe5c7596024e6811e14f029937d5bd8ae485b3` — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ThUSD - Zellic Audit Report.pdf | SthUSD | own contract | sthUSD (selected) `0xa808bc9775cb41c52c7842f8b50427fe7a770326` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ThUSD - Zellic Audit Report.pdf | SthUSDRewards | unmatched — not counted | — | listed in scope table | no |
 | ThUSD - Zellic Audit Report.pdf | ThUSDMinter | unmatched — not counted | — | listed in scope table | no |
 | Theo Tokenized Staking Vault - Zenith Audit Report.pdf | StUSD | unmatched — not counted | — | listed in scope section | no |
@@ -224,9 +224,9 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Theo - Zenith Audit Report.pdf | TTokenEscrow | unmatched — not counted | — | listed in scope | no |
 | Theo - Zenith Audit Report.pdf | TTokenRouter | unmatched — not counted | — | listed in scope | no |
 | Theo - Zenith Audit Report.pdf | ERC4626UpgradeableMultiAsset | unmatched — not counted | — | mentioned in findings as target | no |
-| spaces/C2o2dJlijOInJR8UAhrX/uploads/p1lutmFVHrdK8qIa7Cwu/ThUSD - Zellic Audit Report.pdf | ThUSD.sol | own contract | thUSD (selected) `0xa3fe5c...e485b3` — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/C2o2dJlijOInJR8UAhrX/uploads/p1lutmFVHrdK8qIa7Cwu/ThUSD - Zellic Audit Report.pdf | ThUSD.sol | own contract | thUSD (selected) `0xa3fe5c7596024e6811e14f029937d5bd8ae485b3` — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/C2o2dJlijOInJR8UAhrX/uploads/p1lutmFVHrdK8qIa7Cwu/ThUSD - Zellic Audit Report.pdf | ThUSDMinter.sol | unmatched — not counted | — | listed in scope table | no |
-| spaces/C2o2dJlijOInJR8UAhrX/uploads/p1lutmFVHrdK8qIa7Cwu/ThUSD - Zellic Audit Report.pdf | SthUSD.sol | own contract | sthUSD (selected) `0xa808bc...770326` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/C2o2dJlijOInJR8UAhrX/uploads/p1lutmFVHrdK8qIa7Cwu/ThUSD - Zellic Audit Report.pdf | SthUSD.sol | own contract | sthUSD (selected) `0xa808bc9775cb41c52c7842f8b50427fe7a770326` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/C2o2dJlijOInJR8UAhrX/uploads/p1lutmFVHrdK8qIa7Cwu/ThUSD - Zellic Audit Report.pdf | SthUSDRewards.sol | unmatched — not counted | — | listed in scope table | no |
 | Theo-security-review_2026-03-19.md | ThUSDMinter | unmatched — not counted | — | listed in scope | no |
 
@@ -236,11 +236,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| hyperliquid | `0xfdd22c...f55a5a` | ThBillOFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xfdd22c...f55a5a` | ThBillOFTAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | `0x9aa9aa...14b065` | ThUSDOFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x9aa9aa...14b065` | ThUSDOFTAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x8a2c30...505eb1` | TTokenRouterV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | `0xfdd22ce6d1f66bc0ec89b20bf16ccb6670f55a5a` | ThBillOFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xfdd22ce6d1f66bc0ec89b20bf16ccb6670f55a5a` | ThBillOFTAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0x9aa9aa0530a6af70ee7bc47cf1240100f514b065` | ThUSDOFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x9aa9aa0530a6af70ee7bc47cf1240100f514b065` | ThUSDOFTAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x8a2c307d1462ff4fa98c9c119d3a3457ad505eb1` | TTokenRouterV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -52,10 +52,10 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x086a6d...4eec14`, chain 1)
-- UnnamedContract (`0x29a5f0...63d574`, chain 1)
-- UnnamedContract (`0x51b2f8...b61c92`, chain 1)
-- UnnamedContract (`0x8b7819...27eadc`, chain 1)
+- UnnamedContract (`0x086a6d9fd61758096cf4f394ae7c1f9b6b4eec14`, chain 1)
+- UnnamedContract (`0x29a5f08a38c79a2dd1df055792822eb1e163d574`, chain 1)
+- UnnamedContract (`0x51b2f83aac13adb9ed826c4cdb593c88e6b61c92`, chain 1)
+- UnnamedContract (`0x8b7819135fe97abfdc0c88596509c00fa727eadc`, chain 1)
 
 ## Contract Surface Quality
 
@@ -101,16 +101,16 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AdminUpgradeabilityProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x03b93c...c4f03b` | ⚠️ Unaudited |
-| Farm | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x32c2ca...1d3ac8` | ⚠️ Unaudited |
-| HordCongress | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x604fab...82517f` | ⚠️ Unaudited |
-| HordCongressMembersRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfb3be9...1312ef` | ⚠️ Unaudited |
-| HordTicketFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0b063c...487007` | ⚠️ Unaudited |
-| HordTicketManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x3083f8...754f04` | ⚠️ Unaudited |
-| HordToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x43a969...a43448` | ⚠️ Unaudited |
-| MaintainersRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8aedfb...bfc31c` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8b3558...082125` | ⚠️ Unaudited |
-| TokensFarm | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x53c8e7...883373` | ⚠️ Unaudited |
+| AdminUpgradeabilityProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x03b93c3bcbc5422a3d9deadad764ce55a7c4f03b` | ⚠️ Unaudited |
+| Farm | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x32c2cae23209e8b75e76d6aeac995a596a1d3ac8` | ⚠️ Unaudited |
+| HordCongress | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x604fab7ce497059eb87c86399ed7467d1a82517f` | ⚠️ Unaudited |
+| HordCongressMembersRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfb3be996a28fc3ba9f7fd21a40f66d225e1312ef` | ⚠️ Unaudited |
+| HordTicketFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0b063cef5906259b0bd494c56e3db8c18a487007` | ⚠️ Unaudited |
+| HordTicketManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x3083f888a3b9fd334dbe230c9aee5555da754f04` | ⚠️ Unaudited |
+| HordToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x43a96962254855f16b925556f9e97be436a43448` | ⚠️ Unaudited |
+| MaintainersRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8aedfb4ff4817ba52e77e9682f028a34f6bfc31c` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8b3558b725e941dad8f587a40e86721cb3082125` | ⚠️ Unaudited |
+| TokensFarm | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x53c8e7f26692d374afc63474dd69411a7d883373` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -130,10 +130,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-241982 | `0x086a6d...4eec14` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-241983 | `0x29a5f0...63d574` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-241984 | `0x51b2f8...b61c92` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-241985 | `0x8b7819...27eadc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-241982 | `0x086a6d9fd61758096cf4f394ae7c1f9b6b4eec14` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-241983 | `0x29a5f08a38c79a2dd1df055792822eb1e163d574` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-241984 | `0x51b2f83aac13adb9ed826c4cdb593c88e6b61c92` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-241985 | `0x8b7819135fe97abfdc0c88596509c00fa727eadc` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -161,7 +161,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | [Zokyo]() 22.2.2023 | HordETHStakingManager | unmatched — not counted | — | listed in scope | no |
 | [Diligence Audit]() 23.2.2023 | HETH | unmatched — not counted | — | listed in 'Contracts Audited' section | no |
 | [Diligence Audit]() 23.2.2023 | HordETHStakingManager | unmatched — not counted | — | listed in 'Contracts Audited' section | no |
-| [Zokyo]() 19.9.2023 | StakingConfiguration | own contract | 0x51b2f8… (selected) `0x51b2f8...b61c92` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [Zokyo]() 19.9.2023 | StakingConfiguration | own contract | 0x51b2f8… (selected) `0x51b2f83aac13adb9ed826c4cdb593c88e6b61c92` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | [Zokyo]() 19.9.2023 | HordETHStakingManager | unmatched — not counted | — | listed in scope | no |
 | [Zokyo]() 19.9.2023 | HordETHStakingWithdrawalManager | unmatched — not counted | — | listed in scope | no |
 

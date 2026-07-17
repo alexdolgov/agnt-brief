@@ -60,16 +60,16 @@ The protocol forms a single structural family (Core Logic) of 10 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AdminUpgradeabilityProxy | unknown | ethereum | n/a | [`0x03b93c...c4f03b`](./contracts/ethereum-1/0x03b93c3bcbc5422a3d9deadad764ce55a7c4f03b/) | ⚠️ Unaudited |
-| Farm | unknown | ethereum | n/a | [`0x32c2ca...1d3ac8`](./contracts/ethereum-1/0x32c2cae23209e8b75e76d6aeac995a596a1d3ac8/) | ⚠️ Unaudited |
-| HordCongress | unknown | ethereum | n/a | [`0x604fab...82517f`](./contracts/ethereum-1/0x604fab7ce497059eb87c86399ed7467d1a82517f/) | ⚠️ Unaudited |
-| HordCongressMembersRegistry | unknown | ethereum | n/a | [`0xfb3be9...1312ef`](./contracts/ethereum-1/0xfb3be996a28fc3ba9f7fd21a40f66d225e1312ef/) | ⚠️ Unaudited |
-| HordTicketFactory | unknown | ethereum | n/a | [`0x0b063c...487007`](./contracts/ethereum-1/0x0b063cef5906259b0bd494c56e3db8c18a487007/) | ⚠️ Unaudited |
-| HordTicketManager | unknown | ethereum | n/a | [`0x3083f8...754f04`](./contracts/ethereum-1/0x3083f888a3b9fd334dbe230c9aee5555da754f04/) | ⚠️ Unaudited |
-| HordToken | unknown | ethereum | n/a | [`0x43a969...a43448`](./contracts/ethereum-1/0x43a96962254855f16b925556f9e97be436a43448/) | ⚠️ Unaudited |
-| MaintainersRegistry | unknown | ethereum | n/a | [`0x8aedfb...bfc31c`](./contracts/ethereum-1/0x8aedfb4ff4817ba52e77e9682f028a34f6bfc31c/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | ethereum | n/a | [`0x8b3558...082125`](./contracts/ethereum-1/0x8b3558b725e941dad8f587a40e86721cb3082125/) | ⚠️ Unaudited |
-| TokensFarm | unknown | ethereum | n/a | [`0x53c8e7...883373`](./contracts/ethereum-1/0x53c8e7f26692d374afc63474dd69411a7d883373/) | ⚠️ Unaudited |
+| AdminUpgradeabilityProxy | unknown | ethereum | n/a | [`0x03b93c3bcbc5422a3d9deadad764ce55a7c4f03b`](./contracts/ethereum-1/0x03b93c3bcbc5422a3d9deadad764ce55a7c4f03b/) | ⚠️ Unaudited |
+| Farm | unknown | ethereum | n/a | [`0x32c2cae23209e8b75e76d6aeac995a596a1d3ac8`](./contracts/ethereum-1/0x32c2cae23209e8b75e76d6aeac995a596a1d3ac8/) | ⚠️ Unaudited |
+| HordCongress | unknown | ethereum | n/a | [`0x604fab7ce497059eb87c86399ed7467d1a82517f`](./contracts/ethereum-1/0x604fab7ce497059eb87c86399ed7467d1a82517f/) | ⚠️ Unaudited |
+| HordCongressMembersRegistry | unknown | ethereum | n/a | [`0xfb3be996a28fc3ba9f7fd21a40f66d225e1312ef`](./contracts/ethereum-1/0xfb3be996a28fc3ba9f7fd21a40f66d225e1312ef/) | ⚠️ Unaudited |
+| HordTicketFactory | unknown | ethereum | n/a | [`0x0b063cef5906259b0bd494c56e3db8c18a487007`](./contracts/ethereum-1/0x0b063cef5906259b0bd494c56e3db8c18a487007/) | ⚠️ Unaudited |
+| HordTicketManager | unknown | ethereum | n/a | [`0x3083f888a3b9fd334dbe230c9aee5555da754f04`](./contracts/ethereum-1/0x3083f888a3b9fd334dbe230c9aee5555da754f04/) | ⚠️ Unaudited |
+| HordToken | unknown | ethereum | n/a | [`0x43a96962254855f16b925556f9e97be436a43448`](./contracts/ethereum-1/0x43a96962254855f16b925556f9e97be436a43448/) | ⚠️ Unaudited |
+| MaintainersRegistry | unknown | ethereum | n/a | [`0x8aedfb4ff4817ba52e77e9682f028a34f6bfc31c`](./contracts/ethereum-1/0x8aedfb4ff4817ba52e77e9682f028a34f6bfc31c/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | ethereum | n/a | [`0x8b3558b725e941dad8f587a40e86721cb3082125`](./contracts/ethereum-1/0x8b3558b725e941dad8f587a40e86721cb3082125/) | ⚠️ Unaudited |
+| TokensFarm | unknown | ethereum | n/a | [`0x53c8e7f26692d374afc63474dd69411a7d883373`](./contracts/ethereum-1/0x53c8e7f26692d374afc63474dd69411a7d883373/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -102,14 +102,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x32c2ca...1d3ac8`](./contracts/ethereum-1/0x32c2cae23209e8b75e76d6aeac995a596a1d3ac8/) | Farm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x604fab...82517f`](./contracts/ethereum-1/0x604fab7ce497059eb87c86399ed7467d1a82517f/) | HordCongress | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xfb3be9...1312ef`](./contracts/ethereum-1/0xfb3be996a28fc3ba9f7fd21a40f66d225e1312ef/) | HordCongressMembersRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0b063c...487007`](./contracts/ethereum-1/0x0b063cef5906259b0bd494c56e3db8c18a487007/) | HordTicketFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x3083f8...754f04`](./contracts/ethereum-1/0x3083f888a3b9fd334dbe230c9aee5555da754f04/) | HordTicketManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x43a969...a43448`](./contracts/ethereum-1/0x43a96962254855f16b925556f9e97be436a43448/) | HordToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x8aedfb...bfc31c`](./contracts/ethereum-1/0x8aedfb4ff4817ba52e77e9682f028a34f6bfc31c/) | MaintainersRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x53c8e7...883373`](./contracts/ethereum-1/0x53c8e7f26692d374afc63474dd69411a7d883373/) | TokensFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x32c2cae23209e8b75e76d6aeac995a596a1d3ac8`](./contracts/ethereum-1/0x32c2cae23209e8b75e76d6aeac995a596a1d3ac8/) | Farm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x604fab7ce497059eb87c86399ed7467d1a82517f`](./contracts/ethereum-1/0x604fab7ce497059eb87c86399ed7467d1a82517f/) | HordCongress | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xfb3be996a28fc3ba9f7fd21a40f66d225e1312ef`](./contracts/ethereum-1/0xfb3be996a28fc3ba9f7fd21a40f66d225e1312ef/) | HordCongressMembersRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0b063cef5906259b0bd494c56e3db8c18a487007`](./contracts/ethereum-1/0x0b063cef5906259b0bd494c56e3db8c18a487007/) | HordTicketFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x3083f888a3b9fd334dbe230c9aee5555da754f04`](./contracts/ethereum-1/0x3083f888a3b9fd334dbe230c9aee5555da754f04/) | HordTicketManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x43a96962254855f16b925556f9e97be436a43448`](./contracts/ethereum-1/0x43a96962254855f16b925556f9e97be436a43448/) | HordToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8aedfb4ff4817ba52e77e9682f028a34f6bfc31c`](./contracts/ethereum-1/0x8aedfb4ff4817ba52e77e9682f028a34f6bfc31c/) | MaintainersRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x53c8e7f26692d374afc63474dd69411a7d883373`](./contracts/ethereum-1/0x53c8e7f26692d374afc63474dd69411a7d883373/) | TokensFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

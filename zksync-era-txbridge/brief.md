@@ -61,8 +61,8 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0xbed1eb...1111f6`](./contracts/ethereum-1/0xbed1eb542f9a5aa6419ff3deb921a372681111f6/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0xd7f9f5...8cb2cb`](./contracts/ethereum-1/0xd7f9f54194c633f36ccd5f3da84ad4a1c38cb2cb/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0xbed1eb542f9a5aa6419ff3deb921a372681111f6`](./contracts/ethereum-1/0xbed1eb542f9a5aa6419ff3deb921a372681111f6/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0xd7f9f54194c633f36ccd5f3da84ad4a1c38cb2cb`](./contracts/ethereum-1/0xd7f9f54194c633f36ccd5f3da84ad4a1c38cb2cb/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

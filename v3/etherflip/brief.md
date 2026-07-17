@@ -52,8 +52,8 @@ The pinned logic-topography run contains 2 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xc997d0...66c3e5`, chain 1)
-- UnnamedContract (`0xe5a04d...3039df`, chain 1)
+- UnnamedContract (`0xc997d07b0bc607b6d1bcb6fb9d4a5579c466c3e5`, chain 1)
+- UnnamedContract (`0xe5a04d98538231b0fab9aba60cd73ce4ff3039df`, chain 1)
 
 ## Contract Surface Quality
 
@@ -99,8 +99,8 @@ The pinned logic-topography run contains 2 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | token | project_anchor | own_supporting | 0 | ethereum | unit-385028 | `0xc997d0...66c3e5` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-385029 | `0xe5a04d...3039df` | ⚠️ Unaudited |
+| UnnamedContract | token | project_anchor | own_supporting | 0 | ethereum | unit-385028 | `0xc997d07b0bc607b6d1bcb6fb9d4a5579c466c3e5` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-385029 | `0xe5a04d98538231b0fab9aba60cd73ce4ff3039df` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -120,7 +120,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-385027 | `0x37f014...e42584` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-385027 | `0x37f014c64d186eaf879c0033846b51924ce42584` | ❓ Unverified |
 
 ## Audit Inventory
 

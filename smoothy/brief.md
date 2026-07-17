@@ -59,17 +59,17 @@ The protocol comprises 2 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| SmoothyMasterV1 | unknown | ethereum | n/a | [`0x77e6d3...1f06c2`](./contracts/ethereum-1/0x77e6d30246aad90ed1a12e38ebc6188d5a1f06c2/) | ✅ Audited |
-| SMTYToken | unknown | ethereum | n/a | [`0xbf776e...003283`](./contracts/ethereum-1/0xbf776e4fca664d791c4ee3a71e2722990e003283/) | ✅ Audited |
-| UpgradeableOwnableProxy | unknown | bsc | n/a | [`0x59c5ef...a8b9d3`](./contracts/bsc-56/0x59c5ef73636cc6f01526923e5e9894d5fda8b9d3/) | ✅ Audited |
-| VotingEscrow | unknown | ethereum | n/a | [`0x59c5ef...a8b9d3`](./contracts/ethereum-1/0x59c5ef73636cc6f01526923e5e9894d5fda8b9d3/) | ✅ Audited |
+| SmoothyMasterV1 | unknown | ethereum | n/a | [`0x77e6d30246aad90ed1a12e38ebc6188d5a1f06c2`](./contracts/ethereum-1/0x77e6d30246aad90ed1a12e38ebc6188d5a1f06c2/) | ✅ Audited |
+| SMTYToken | unknown | ethereum | n/a | [`0xbf776e4fca664d791c4ee3a71e2722990e003283`](./contracts/ethereum-1/0xbf776e4fca664d791c4ee3a71e2722990e003283/) | ✅ Audited |
+| UpgradeableOwnableProxy | unknown | bsc | n/a | [`0x59c5ef73636cc6f01526923e5e9894d5fda8b9d3`](./contracts/bsc-56/0x59c5ef73636cc6f01526923e5e9894d5fda8b9d3/) | ✅ Audited |
+| VotingEscrow | unknown | ethereum | n/a | [`0x59c5ef73636cc6f01526923e5e9894d5fda8b9d3`](./contracts/ethereum-1/0x59c5ef73636cc6f01526923e5e9894d5fda8b9d3/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| MerkleDistributor | unknown | ethereum | n/a | [`0x3ff708...0359f9`](./contracts/ethereum-1/0x3ff708bc7707fb63184ea8d3fcc78355de0359f9/) | ⚠️ Unaudited |
-| MerkleVestor | unknown | ethereum | n/a | [`0x4b5c2f...d04286`](./contracts/ethereum-1/0x4b5c2f31f068ed79e3ae8a7e8ff9207807d04286/) | ⚠️ Unaudited |
+| MerkleDistributor | unknown | ethereum | n/a | [`0x3ff708bc7707fb63184ea8d3fcc78355de0359f9`](./contracts/ethereum-1/0x3ff708bc7707fb63184ea8d3fcc78355de0359f9/) | ⚠️ Unaudited |
+| MerkleVestor | unknown | ethereum | n/a | [`0x4b5c2f31f068ed79e3ae8a7e8ff9207807d04286`](./contracts/ethereum-1/0x4b5c2f31f068ed79e3ae8a7e8ff9207807d04286/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -102,8 +102,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x3ff708...0359f9`](./contracts/ethereum-1/0x3ff708bc7707fb63184ea8d3fcc78355de0359f9/) | MerkleDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x4b5c2f...d04286`](./contracts/ethereum-1/0x4b5c2f31f068ed79e3ae8a7e8ff9207807d04286/) | MerkleVestor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x3ff708bc7707fb63184ea8d3fcc78355de0359f9`](./contracts/ethereum-1/0x3ff708bc7707fb63184ea8d3fcc78355de0359f9/) | MerkleDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4b5c2f31f068ed79e3ae8a7e8ff9207807d04286`](./contracts/ethereum-1/0x4b5c2f31f068ed79e3ae8a7e8ff9207807d04286/) | MerkleVestor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

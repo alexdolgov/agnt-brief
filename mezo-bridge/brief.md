@@ -73,28 +73,28 @@ Total inherited audits: 16. Inherited coverage reflects forked/shared code audit
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| NttManager | governance | ethereum | n/a | [`0x13916d...40686a`](./contracts/ethereum-1/0x13916d0dab357dcbaa1600b594d62c641840686a/) | ✅ Audited |
-| NttManager | governance | ethereum | n/a | [`0x529315...f4477e`](./contracts/ethereum-1/0x5293158bf7a81ed05418da497a80f7e6dbf4477e/) | ✅ Audited |
-| Portal | unknown | ethereum | n/a | [`0xab13b8...5b8a39`](./contracts/ethereum-1/0xab13b8eecf5aa2460841d75da5d5d861fd5b8a39/) | ✅ Audited |
+| NttManager | governance | ethereum | n/a | [`0x13916d0dab357dcbaa1600b594d62c641840686a`](./contracts/ethereum-1/0x13916d0dab357dcbaa1600b594d62c641840686a/) | ✅ Audited |
+| NttManager | governance | ethereum | n/a | [`0x5293158bf7a81ed05418da497a80f7e6dbf4477e`](./contracts/ethereum-1/0x5293158bf7a81ed05418da497a80f7e6dbf4477e/) | ✅ Audited |
+| Portal | unknown | ethereum | n/a | [`0xab13b8eecf5aa2460841d75da5d5d861fd5b8a39`](./contracts/ethereum-1/0xab13b8eecf5aa2460841d75da5d5d861fd5b8a39/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (14)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BAMM | unknown | ethereum | n/a | 2 deployments: ethereum [`0x1f4907...8b4dc5`](./contracts/ethereum-1/0x1f490764473eb1013461d6079f827db95d8b4dc5/); ethereum `0x920623...834675` | ⚠️ Unaudited |
-| BLens | unknown | ethereum | n/a | 2 deployments: ethereum [`0x65222d...11a50c`](./contracts/ethereum-1/0x65222d72f13860913fef03f088c385cbfc11a50c/); ethereum `0xf21acb...55ae28` | ⚠️ Unaudited |
-| BorrowerOperations | unknown | ethereum | n/a | 2 deployments: ethereum [`0x874a8e...66caa9`](./contracts/ethereum-1/0x874a8ee5b4cc0b9973c7c002fa891fc28666caa9/); ethereum `0xf5e4ff...3c1d0a` | ⚠️ Unaudited |
-| GnosisSafe | governance | ethereum | n/a | [`0x98d889...397c7a`](./contracts/ethereum-1/0x98d8899c3030741925be630c710a98b57f397c7a/) | ⚠️ Unaudited |
-| MultiTroveGetter | unknown | ethereum | n/a | 2 deployments: ethereum [`0x8836b6...05b36c`](./contracts/ethereum-1/0x8836b66727bbde25974110442bb46b7a4805b36c/); ethereum `0xd74dff...c735d0` | ⚠️ Unaudited |
-| PCV | unknown | ethereum | n/a | 2 deployments: ethereum [`0x097f1e...dd06cb`](./contracts/ethereum-1/0x097f1ee62e63acfc3bf64c1a61d96b3771dd06cb/); ethereum `0x1a4739...7dd872` | ⚠️ Unaudited |
-| ProxyAdmin | governance | ethereum | n/a | 3 deployments: ethereum [`0x260ca2...681734`](./contracts/ethereum-1/0x260ca2abef5d38181e2562f00fa92ad1dc681734/); ethereum `0x66ce24...8f1267`; ethereum `0xef619b...c096a2` | ⚠️ Unaudited |
-| SolvBTCYieldTokenV3_1 | token | ethereum | n/a | [`0xd9d920...159def`](./contracts/ethereum-1/0xd9d920aa40f578ab794426f5c90f6c731d159def/) | ⚠️ Unaudited |
-| SortedTroves | unknown | ethereum | n/a | 2 deployments: ethereum [`0xa5626c...986711`](./contracts/ethereum-1/0xa5626cba9a4448019e73ce59784bd22736986711/); ethereum `0xe5ada0...094e17` | ⚠️ Unaudited |
-| StabilityPool | unknown | ethereum | n/a | 2 deployments: ethereum [`0xa18ab4...475a9f`](./contracts/ethereum-1/0xa18ab4fa9a44a72c58e64bfb33d425ec48475a9f/); ethereum `0xf6374a...d06f29` | ⚠️ Unaudited |
-| T | unknown | ethereum | n/a | [`0xcdf702...94bee5`](./contracts/ethereum-1/0xcdf7028ceab81fa0c6971208e83fa7872994bee5/) | ⚠️ Unaudited |
-| TroveManager | unknown | ethereum | n/a | 2 deployments: ethereum [`0x27d7d0...3abb8c`](./contracts/ethereum-1/0x27d7d02aed6c4f95ada2faf02dccb9666d3abb8c/); ethereum `0xfc7d41...f6f893` | ⚠️ Unaudited |
-| WormholeTransceiver | unknown | ethereum | n/a | [`0x76ddb3...d18d3e`](./contracts/ethereum-1/0x76ddb3f1dde02391ef0a28664499b74c29d18d3e/) | ⚠️ Unaudited |
-| WormholeTransceiver | unknown | ethereum | n/a | [`0x920871...9283b1`](./contracts/ethereum-1/0x920871af2d4106e76d204fea7122fa129c9283b1/) | ⚠️ Unaudited |
+| BAMM | unknown | ethereum | n/a | 2 deployments: ethereum [`0x1f490764473eb1013461d6079f827db95d8b4dc5`](./contracts/ethereum-1/0x1f490764473eb1013461d6079f827db95d8b4dc5/); ethereum `0x920623acba785ed9a70d33acab53631e1e834675` | ⚠️ Unaudited |
+| BLens | unknown | ethereum | n/a | 2 deployments: ethereum [`0x65222d72f13860913fef03f088c385cbfc11a50c`](./contracts/ethereum-1/0x65222d72f13860913fef03f088c385cbfc11a50c/); ethereum `0xf21acb3c2e8418fc5466bc794f9970df7255ae28` | ⚠️ Unaudited |
+| BorrowerOperations | unknown | ethereum | n/a | 2 deployments: ethereum [`0x874a8ee5b4cc0b9973c7c002fa891fc28666caa9`](./contracts/ethereum-1/0x874a8ee5b4cc0b9973c7c002fa891fc28666caa9/); ethereum `0xf5e4ffeb7d2183b61753aa4074d72e51873c1d0a` | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | n/a | [`0x98d8899c3030741925be630c710a98b57f397c7a`](./contracts/ethereum-1/0x98d8899c3030741925be630c710a98b57f397c7a/) | ⚠️ Unaudited |
+| MultiTroveGetter | unknown | ethereum | n/a | 2 deployments: ethereum [`0x8836b66727bbde25974110442bb46b7a4805b36c`](./contracts/ethereum-1/0x8836b66727bbde25974110442bb46b7a4805b36c/); ethereum `0xd74dffdc614b84610329af4707d8dcc484c735d0` | ⚠️ Unaudited |
+| PCV | unknown | ethereum | n/a | 2 deployments: ethereum [`0x097f1ee62e63acfc3bf64c1a61d96b3771dd06cb`](./contracts/ethereum-1/0x097f1ee62e63acfc3bf64c1a61d96b3771dd06cb/); ethereum `0x1a4739509f50e683927472b03e251e36d07dd872` | ⚠️ Unaudited |
+| ProxyAdmin | governance | ethereum | n/a | 3 deployments: ethereum [`0x260ca2abef5d38181e2562f00fa92ad1dc681734`](./contracts/ethereum-1/0x260ca2abef5d38181e2562f00fa92ad1dc681734/); ethereum `0x66ce24b68d9feb092bc8e6c47c0fa318e48f1267`; ethereum `0xef619b73f424506b8ada0e05c2935ab36ec096a2` | ⚠️ Unaudited |
+| SolvBTCYieldTokenV3_1 | token | ethereum | n/a | [`0xd9d920aa40f578ab794426f5c90f6c731d159def`](./contracts/ethereum-1/0xd9d920aa40f578ab794426f5c90f6c731d159def/) | ⚠️ Unaudited |
+| SortedTroves | unknown | ethereum | n/a | 2 deployments: ethereum [`0xa5626cba9a4448019e73ce59784bd22736986711`](./contracts/ethereum-1/0xa5626cba9a4448019e73ce59784bd22736986711/); ethereum `0xe5ada07ace9412a623b0a282cd67d16a3a094e17` | ⚠️ Unaudited |
+| StabilityPool | unknown | ethereum | n/a | 2 deployments: ethereum [`0xa18ab4fa9a44a72c58e64bfb33d425ec48475a9f`](./contracts/ethereum-1/0xa18ab4fa9a44a72c58e64bfb33d425ec48475a9f/); ethereum `0xf6374aefb1e69a21ee516ea4b803b2ea96d06f29` | ⚠️ Unaudited |
+| T | unknown | ethereum | n/a | [`0xcdf7028ceab81fa0c6971208e83fa7872994bee5`](./contracts/ethereum-1/0xcdf7028ceab81fa0c6971208e83fa7872994bee5/) | ⚠️ Unaudited |
+| TroveManager | unknown | ethereum | n/a | 2 deployments: ethereum [`0x27d7d02aed6c4f95ada2faf02dccb9666d3abb8c`](./contracts/ethereum-1/0x27d7d02aed6c4f95ada2faf02dccb9666d3abb8c/); ethereum `0xfc7d41a684b7db7c817a9ddd028f9a31c2f6f893` | ⚠️ Unaudited |
+| WormholeTransceiver | unknown | ethereum | n/a | [`0x76ddb3f1dde02391ef0a28664499b74c29d18d3e`](./contracts/ethereum-1/0x76ddb3f1dde02391ef0a28664499b74c29d18d3e/) | ⚠️ Unaudited |
+| WormholeTransceiver | unknown | ethereum | n/a | [`0x920871af2d4106e76d204fea7122fa129c9283b1`](./contracts/ethereum-1/0x920871af2d4106e76d204fea7122fa129c9283b1/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -141,16 +141,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x1f4907...8b4dc5`](./contracts/ethereum-1/0x1f490764473eb1013461d6079f827db95d8b4dc5/) | BAMM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x65222d...11a50c`](./contracts/ethereum-1/0x65222d72f13860913fef03f088c385cbfc11a50c/) | BLens | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x874a8e...66caa9`](./contracts/ethereum-1/0x874a8ee5b4cc0b9973c7c002fa891fc28666caa9/) | BorrowerOperations | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x8836b6...05b36c`](./contracts/ethereum-1/0x8836b66727bbde25974110442bb46b7a4805b36c/) | MultiTroveGetter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x097f1e...dd06cb`](./contracts/ethereum-1/0x097f1ee62e63acfc3bf64c1a61d96b3771dd06cb/) | PCV | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xd9d920...159def`](./contracts/ethereum-1/0xd9d920aa40f578ab794426f5c90f6c731d159def/) | SolvBTCYieldTokenV3_1 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa5626c...986711`](./contracts/ethereum-1/0xa5626cba9a4448019e73ce59784bd22736986711/) | SortedTroves | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa18ab4...475a9f`](./contracts/ethereum-1/0xa18ab4fa9a44a72c58e64bfb33d425ec48475a9f/) | StabilityPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xcdf702...94bee5`](./contracts/ethereum-1/0xcdf7028ceab81fa0c6971208e83fa7872994bee5/) | T | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x27d7d0...3abb8c`](./contracts/ethereum-1/0x27d7d02aed6c4f95ada2faf02dccb9666d3abb8c/) | TroveManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1f490764473eb1013461d6079f827db95d8b4dc5`](./contracts/ethereum-1/0x1f490764473eb1013461d6079f827db95d8b4dc5/) | BAMM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x65222d72f13860913fef03f088c385cbfc11a50c`](./contracts/ethereum-1/0x65222d72f13860913fef03f088c385cbfc11a50c/) | BLens | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x874a8ee5b4cc0b9973c7c002fa891fc28666caa9`](./contracts/ethereum-1/0x874a8ee5b4cc0b9973c7c002fa891fc28666caa9/) | BorrowerOperations | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8836b66727bbde25974110442bb46b7a4805b36c`](./contracts/ethereum-1/0x8836b66727bbde25974110442bb46b7a4805b36c/) | MultiTroveGetter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x097f1ee62e63acfc3bf64c1a61d96b3771dd06cb`](./contracts/ethereum-1/0x097f1ee62e63acfc3bf64c1a61d96b3771dd06cb/) | PCV | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xd9d920aa40f578ab794426f5c90f6c731d159def`](./contracts/ethereum-1/0xd9d920aa40f578ab794426f5c90f6c731d159def/) | SolvBTCYieldTokenV3_1 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa5626cba9a4448019e73ce59784bd22736986711`](./contracts/ethereum-1/0xa5626cba9a4448019e73ce59784bd22736986711/) | SortedTroves | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa18ab4fa9a44a72c58e64bfb33d425ec48475a9f`](./contracts/ethereum-1/0xa18ab4fa9a44a72c58e64bfb33d425ec48475a9f/) | StabilityPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xcdf7028ceab81fa0c6971208e83fa7872994bee5`](./contracts/ethereum-1/0xcdf7028ceab81fa0c6971208e83fa7872994bee5/) | T | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x27d7d02aed6c4f95ada2faf02dccb9666d3abb8c`](./contracts/ethereum-1/0x27d7d02aed6c4f95ada2faf02dccb9666d3abb8c/) | TroveManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

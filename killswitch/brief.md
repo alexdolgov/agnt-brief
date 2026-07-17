@@ -61,18 +61,18 @@ The protocol forms a single structural family (Core Logic) of 12 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BridgeBurner | unknown | bsc | n/a | [`0x6caa59...988353`](./contracts/bsc-56/0x6caa59a946feeed92bc923aa15a19539b8988353/) | ⚠️ Unaudited |
-| BridgeBurnerV2 | unknown | bsc | n/a | [`0x0f07e9...fe6e20`](./contracts/bsc-56/0x0f07e909826e5dbb18eba3a995a642e0bbfe6e20/) | ⚠️ Unaudited |
-| BridgeEther | unknown | bsc | n/a | [`0xa4e3a7...f64963`](./contracts/bsc-56/0xa4e3a7de03d4138620eec38766c06d175df64963/) | ⚠️ Unaudited |
-| BridgeLocker | unknown | bsc | n/a | [`0x144f00...dfbac6`](./contracts/bsc-56/0x144f00ef491bb058ea8a56f2b9bfa598a3dfbac6/) | ⚠️ Unaudited |
-| FeeFixed | unknown | bsc | n/a | [`0x72a425...e3f2c3`](./contracts/bsc-56/0x72a42526878bff41519cb3d071a5fbc9b0e3f2c3/) | ⚠️ Unaudited |
-| FeeV2 | unknown | bsc | n/a | [`0x482d4b...58fada`](./contracts/bsc-56/0x482d4b1d2328dfca42903f43d07ec0fd7b58fada/) | ⚠️ Unaudited |
-| KillSwitchToken | unknown | bsc | n/a | [`0x270178...aa7c86`](./contracts/bsc-56/0x270178366a592ba598c2e9d2971da65f7baa7c86/) | ⚠️ Unaudited |
-| kMATIC | unknown | bsc | n/a | [`0x032574...5747d3`](./contracts/bsc-56/0x032574b64bf6fa42951f836cc8c5099d1c5747d3/) | ⚠️ Unaudited |
-| kTUK | unknown | bsc | n/a | [`0xfaa6c1...778c53`](./contracts/bsc-56/0xfaa6c12cdeb3a63085fd78644756566c69778c53/) | ⚠️ Unaudited |
-| KUB | unknown | bsc | n/a | [`0x65270a...c848b1`](./contracts/bsc-56/0x65270ad4d7d33d797ea8d2d4ab7f3427e4c848b1/) | ⚠️ Unaudited |
-| kUSDC | unknown | bsc | n/a | [`0xa72a60...3655ae`](./contracts/bsc-56/0xa72a60a908e6cfd89feec670e332422e3f3655ae/) | ⚠️ Unaudited |
-| LimiterDaily | unknown | bsc | n/a | [`0x7c187d...435c72`](./contracts/bsc-56/0x7c187d0a9107e6845ee064ca66fed07810435c72/) | ⚠️ Unaudited |
+| BridgeBurner | unknown | bsc | n/a | [`0x6caa59a946feeed92bc923aa15a19539b8988353`](./contracts/bsc-56/0x6caa59a946feeed92bc923aa15a19539b8988353/) | ⚠️ Unaudited |
+| BridgeBurnerV2 | unknown | bsc | n/a | [`0x0f07e909826e5dbb18eba3a995a642e0bbfe6e20`](./contracts/bsc-56/0x0f07e909826e5dbb18eba3a995a642e0bbfe6e20/) | ⚠️ Unaudited |
+| BridgeEther | unknown | bsc | n/a | [`0xa4e3a7de03d4138620eec38766c06d175df64963`](./contracts/bsc-56/0xa4e3a7de03d4138620eec38766c06d175df64963/) | ⚠️ Unaudited |
+| BridgeLocker | unknown | bsc | n/a | [`0x144f00ef491bb058ea8a56f2b9bfa598a3dfbac6`](./contracts/bsc-56/0x144f00ef491bb058ea8a56f2b9bfa598a3dfbac6/) | ⚠️ Unaudited |
+| FeeFixed | unknown | bsc | n/a | [`0x72a42526878bff41519cb3d071a5fbc9b0e3f2c3`](./contracts/bsc-56/0x72a42526878bff41519cb3d071a5fbc9b0e3f2c3/) | ⚠️ Unaudited |
+| FeeV2 | unknown | bsc | n/a | [`0x482d4b1d2328dfca42903f43d07ec0fd7b58fada`](./contracts/bsc-56/0x482d4b1d2328dfca42903f43d07ec0fd7b58fada/) | ⚠️ Unaudited |
+| KillSwitchToken | unknown | bsc | n/a | [`0x270178366a592ba598c2e9d2971da65f7baa7c86`](./contracts/bsc-56/0x270178366a592ba598c2e9d2971da65f7baa7c86/) | ⚠️ Unaudited |
+| kMATIC | unknown | bsc | n/a | [`0x032574b64bf6fa42951f836cc8c5099d1c5747d3`](./contracts/bsc-56/0x032574b64bf6fa42951f836cc8c5099d1c5747d3/) | ⚠️ Unaudited |
+| kTUK | unknown | bsc | n/a | [`0xfaa6c12cdeb3a63085fd78644756566c69778c53`](./contracts/bsc-56/0xfaa6c12cdeb3a63085fd78644756566c69778c53/) | ⚠️ Unaudited |
+| KUB | unknown | bsc | n/a | [`0x65270ad4d7d33d797ea8d2d4ab7f3427e4c848b1`](./contracts/bsc-56/0x65270ad4d7d33d797ea8d2d4ab7f3427e4c848b1/) | ⚠️ Unaudited |
+| kUSDC | unknown | bsc | n/a | [`0xa72a60a908e6cfd89feec670e332422e3f3655ae`](./contracts/bsc-56/0xa72a60a908e6cfd89feec670e332422e3f3655ae/) | ⚠️ Unaudited |
+| LimiterDaily | unknown | bsc | n/a | [`0x7c187d0a9107e6845ee064ca66fed07810435c72`](./contracts/bsc-56/0x7c187d0a9107e6845ee064ca66fed07810435c72/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -106,18 +106,18 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x6caa59...988353`](./contracts/bsc-56/0x6caa59a946feeed92bc923aa15a19539b8988353/) | BridgeBurner | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x0f07e9...fe6e20`](./contracts/bsc-56/0x0f07e909826e5dbb18eba3a995a642e0bbfe6e20/) | BridgeBurnerV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xa4e3a7...f64963`](./contracts/bsc-56/0xa4e3a7de03d4138620eec38766c06d175df64963/) | BridgeEther | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x144f00...dfbac6`](./contracts/bsc-56/0x144f00ef491bb058ea8a56f2b9bfa598a3dfbac6/) | BridgeLocker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x72a425...e3f2c3`](./contracts/bsc-56/0x72a42526878bff41519cb3d071a5fbc9b0e3f2c3/) | FeeFixed | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x482d4b...58fada`](./contracts/bsc-56/0x482d4b1d2328dfca42903f43d07ec0fd7b58fada/) | FeeV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x270178...aa7c86`](./contracts/bsc-56/0x270178366a592ba598c2e9d2971da65f7baa7c86/) | KillSwitchToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x032574...5747d3`](./contracts/bsc-56/0x032574b64bf6fa42951f836cc8c5099d1c5747d3/) | kMATIC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xfaa6c1...778c53`](./contracts/bsc-56/0xfaa6c12cdeb3a63085fd78644756566c69778c53/) | kTUK | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x65270a...c848b1`](./contracts/bsc-56/0x65270ad4d7d33d797ea8d2d4ab7f3427e4c848b1/) | KUB | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xa72a60...3655ae`](./contracts/bsc-56/0xa72a60a908e6cfd89feec670e332422e3f3655ae/) | kUSDC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x7c187d...435c72`](./contracts/bsc-56/0x7c187d0a9107e6845ee064ca66fed07810435c72/) | LimiterDaily | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x6caa59a946feeed92bc923aa15a19539b8988353`](./contracts/bsc-56/0x6caa59a946feeed92bc923aa15a19539b8988353/) | BridgeBurner | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x0f07e909826e5dbb18eba3a995a642e0bbfe6e20`](./contracts/bsc-56/0x0f07e909826e5dbb18eba3a995a642e0bbfe6e20/) | BridgeBurnerV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xa4e3a7de03d4138620eec38766c06d175df64963`](./contracts/bsc-56/0xa4e3a7de03d4138620eec38766c06d175df64963/) | BridgeEther | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x144f00ef491bb058ea8a56f2b9bfa598a3dfbac6`](./contracts/bsc-56/0x144f00ef491bb058ea8a56f2b9bfa598a3dfbac6/) | BridgeLocker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x72a42526878bff41519cb3d071a5fbc9b0e3f2c3`](./contracts/bsc-56/0x72a42526878bff41519cb3d071a5fbc9b0e3f2c3/) | FeeFixed | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x482d4b1d2328dfca42903f43d07ec0fd7b58fada`](./contracts/bsc-56/0x482d4b1d2328dfca42903f43d07ec0fd7b58fada/) | FeeV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x270178366a592ba598c2e9d2971da65f7baa7c86`](./contracts/bsc-56/0x270178366a592ba598c2e9d2971da65f7baa7c86/) | KillSwitchToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x032574b64bf6fa42951f836cc8c5099d1c5747d3`](./contracts/bsc-56/0x032574b64bf6fa42951f836cc8c5099d1c5747d3/) | kMATIC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xfaa6c12cdeb3a63085fd78644756566c69778c53`](./contracts/bsc-56/0xfaa6c12cdeb3a63085fd78644756566c69778c53/) | kTUK | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x65270ad4d7d33d797ea8d2d4ab7f3427e4c848b1`](./contracts/bsc-56/0x65270ad4d7d33d797ea8d2d4ab7f3427e4c848b1/) | KUB | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xa72a60a908e6cfd89feec670e332422e3f3655ae`](./contracts/bsc-56/0xa72a60a908e6cfd89feec670e332422e3f3655ae/) | kUSDC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x7c187d0a9107e6845ee064ca66fed07810435c72`](./contracts/bsc-56/0x7c187d0a9107e6845ee064ca66fed07810435c72/) | LimiterDaily | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

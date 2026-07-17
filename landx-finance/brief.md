@@ -59,20 +59,20 @@ The protocol comprises 5 functional families. Contracts are linked by 7 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CToken | token | ethereum | n/a | [`0x44c7ac...473ac9`](./contracts/ethereum-1/0x44c7aca9c406ded532748194da0d691808473ac9/) | ✅ Audited |
-| OraclePrices | operational_periphery | ethereum | n/a | [`0xf49a08...da8784`](./contracts/ethereum-1/0xf49a0863d532e6036d693fbacfd2417aebda8784/) | ✅ Audited |
+| CToken | token | ethereum | n/a | [`0x44c7aca9c406ded532748194da0d691808473ac9`](./contracts/ethereum-1/0x44c7aca9c406ded532748194da0d691808473ac9/) | ✅ Audited |
+| OraclePrices | operational_periphery | ethereum | n/a | [`0xf49a0863d532e6036d693fbacfd2417aebda8784`](./contracts/ethereum-1/0xf49a0863d532e6036d693fbacfd2417aebda8784/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (7)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| KeyProtocolVariables | unknown | ethereum | n/a | [`0xa6c319...0a8b53`](./contracts/ethereum-1/0xa6c319a1c3d4ed22d4ee1e6b53d3342cc70a8b53/) | ⚠️ Unaudited |
-| LNDX | unknown | ethereum | n/a | [`0x08a1c3...742539`](./contracts/ethereum-1/0x08a1c30bbb26425c1031ee9e43fa0b9960742539/) | ⚠️ Unaudited |
-| TWAP | unknown | ethereum | n/a | [`0x5eb612...e96e5c`](./contracts/ethereum-1/0x5eb612f924dad205eab02911b198520effe96e5c/) | ⚠️ Unaudited |
-| UniswapV3Pool | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x8c0023...84f1d6`](./contracts/ethereum-1/0x8c00238b17397a194c4dd5a623b1fcdff684f1d6/); ethereum `0xe81901...1001dc` | ⚠️ Unaudited |
-| xBasket | unknown | ethereum | n/a | [`0x6fc27f...5232d3`](./contracts/ethereum-1/0x6fc27f5cc0aafec8e2b8bc4e6393ac89e45232d3/) | ⚠️ Unaudited |
-| XToken | token | ethereum | n/a | 3 deployments: ethereum [`0x1b2b0f...e8362e`](./contracts/ethereum-1/0x1b2b0fa9283595f5036c007dd99ed0aa6de8362e/); ethereum `0x335632...7ffab5`; ethereum `0x5074c4...39e859` | ⚠️ Unaudited |
-| xTokenRouter | adapter | ethereum | n/a | [`0x189ca2...7076a8`](./contracts/ethereum-1/0x189ca29981b6ad3ab01c2959b90eafca637076a8/) | ⚠️ Unaudited |
+| KeyProtocolVariables | unknown | ethereum | n/a | [`0xa6c319a1c3d4ed22d4ee1e6b53d3342cc70a8b53`](./contracts/ethereum-1/0xa6c319a1c3d4ed22d4ee1e6b53d3342cc70a8b53/) | ⚠️ Unaudited |
+| LNDX | unknown | ethereum | n/a | [`0x08a1c30bbb26425c1031ee9e43fa0b9960742539`](./contracts/ethereum-1/0x08a1c30bbb26425c1031ee9e43fa0b9960742539/) | ⚠️ Unaudited |
+| TWAP | unknown | ethereum | n/a | [`0x5eb612f924dad205eab02911b198520effe96e5c`](./contracts/ethereum-1/0x5eb612f924dad205eab02911b198520effe96e5c/) | ⚠️ Unaudited |
+| UniswapV3Pool | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x8c00238b17397a194c4dd5a623b1fcdff684f1d6`](./contracts/ethereum-1/0x8c00238b17397a194c4dd5a623b1fcdff684f1d6/); ethereum `0xe819013997b4186e1813590c51837edb491001dc` | ⚠️ Unaudited |
+| xBasket | unknown | ethereum | n/a | [`0x6fc27f5cc0aafec8e2b8bc4e6393ac89e45232d3`](./contracts/ethereum-1/0x6fc27f5cc0aafec8e2b8bc4e6393ac89e45232d3/) | ⚠️ Unaudited |
+| XToken | token | ethereum | n/a | 3 deployments: ethereum [`0x1b2b0fa9283595f5036c007dd99ed0aa6de8362e`](./contracts/ethereum-1/0x1b2b0fa9283595f5036c007dd99ed0aa6de8362e/); ethereum `0x3356328a3ca51d2664620757bd1c475ca77ffab5`; ethereum `0x5074c4fa383d63d62d5f531d1cf92125fb39e859` | ⚠️ Unaudited |
+| xTokenRouter | adapter | ethereum | n/a | [`0x189ca29981b6ad3ab01c2959b90eafca637076a8`](./contracts/ethereum-1/0x189ca29981b6ad3ab01c2959b90eafca637076a8/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -104,12 +104,12 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xa6c319...0a8b53`](./contracts/ethereum-1/0xa6c319a1c3d4ed22d4ee1e6b53d3342cc70a8b53/) | KeyProtocolVariables | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x08a1c3...742539`](./contracts/ethereum-1/0x08a1c30bbb26425c1031ee9e43fa0b9960742539/) | LNDX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x5eb612...e96e5c`](./contracts/ethereum-1/0x5eb612f924dad205eab02911b198520effe96e5c/) | TWAP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6fc27f...5232d3`](./contracts/ethereum-1/0x6fc27f5cc0aafec8e2b8bc4e6393ac89e45232d3/) | xBasket | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1b2b0f...e8362e`](./contracts/ethereum-1/0x1b2b0fa9283595f5036c007dd99ed0aa6de8362e/) | XToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x189ca2...7076a8`](./contracts/ethereum-1/0x189ca29981b6ad3ab01c2959b90eafca637076a8/) | xTokenRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa6c319a1c3d4ed22d4ee1e6b53d3342cc70a8b53`](./contracts/ethereum-1/0xa6c319a1c3d4ed22d4ee1e6b53d3342cc70a8b53/) | KeyProtocolVariables | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x08a1c30bbb26425c1031ee9e43fa0b9960742539`](./contracts/ethereum-1/0x08a1c30bbb26425c1031ee9e43fa0b9960742539/) | LNDX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5eb612f924dad205eab02911b198520effe96e5c`](./contracts/ethereum-1/0x5eb612f924dad205eab02911b198520effe96e5c/) | TWAP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6fc27f5cc0aafec8e2b8bc4e6393ac89e45232d3`](./contracts/ethereum-1/0x6fc27f5cc0aafec8e2b8bc4e6393ac89e45232d3/) | xBasket | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1b2b0fa9283595f5036c007dd99ed0aa6de8362e`](./contracts/ethereum-1/0x1b2b0fa9283595f5036c007dd99ed0aa6de8362e/) | XToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x189ca29981b6ad3ab01c2959b90eafca637076a8`](./contracts/ethereum-1/0x189ca29981b6ad3ab01c2959b90eafca637076a8/) | xTokenRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

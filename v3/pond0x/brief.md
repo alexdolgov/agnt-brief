@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- PondCoin (`0x423f4e...631eea`, chain 1)
+- PondCoin (`0x423f4e6138e475d85cf7ea071ac92097ed631eea`, chain 1)
 
 ## Contract Surface Quality
 
@@ -103,16 +103,16 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| MiningRigV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x2d50ef...31c00a`; ethereum `0x6de46a...be628f` | ⚠️ Unaudited |
-| MiningRigV4 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x86d27a...7e1edf` | ⚠️ Unaudited |
-| PondClaims | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe7f012...423c28` | ⚠️ Unaudited |
-| PondCoin | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391142 | `0x423f4e...631eea` | ⚠️ Unaudited |
-| PondWater | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xed96e6...a1b470` | ⚠️ Unaudited |
-| ProtoClaim | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x76cc94...8d803f`; ethereum `0x8a3cfc...3fc3c6`; ethereum `0xc4258e...84e072` | ⚠️ Unaudited |
-| SablierV2LockupLinear | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xafb979...e5dcc9` | ⚠️ Unaudited |
-| SpawnManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x06c795...8b19fe`; ethereum `0x4c0da5...4aec36` | ⚠️ Unaudited |
-| SpawnManagerV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x08939a...3393ca`; ethereum `0xab7b98...5dd3c5`; ethereum `0xcc57c9...9e946c` | ⚠️ Unaudited |
-| TadpoleClaimer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x314a8e...ad3796` | ⚠️ Unaudited |
+| MiningRigV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x2d50efbc3690b6d0ea0b179c18f016ae9031c00a`; ethereum `0x6de46a8007246406a7f6cbecd3b2276ed6be628f` | ⚠️ Unaudited |
+| MiningRigV4 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x86d27a2c844c1bc559599ce68aa15d54f57e1edf` | ⚠️ Unaudited |
+| PondClaims | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe7f01261ef9792095e22abbf7f6f7b881d423c28` | ⚠️ Unaudited |
+| PondCoin | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391142 | `0x423f4e6138e475d85cf7ea071ac92097ed631eea` | ⚠️ Unaudited |
+| PondWater | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xed96e69d54609d9f2cff8aacd66ccf83c8a1b470` | ⚠️ Unaudited |
+| ProtoClaim | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x76cc942ae5c68fba5dcbb67f07b77f35438d803f`; ethereum `0x8a3cfc6498b21b642410552a78ca2a1fa83fc3c6`; ethereum `0xc4258e60f851b1b6aa399d4cb6f67ddc7184e072` | ⚠️ Unaudited |
+| SablierV2LockupLinear | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xafb979d9afad1ad27c5eff4e27226e3ab9e5dcc9` | ⚠️ Unaudited |
+| SpawnManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x06c79523ad3b4e285b2c0572d230ab81428b19fe`; ethereum `0x4c0da551bc56c55139c87abdf00cf9bc754aec36` | ⚠️ Unaudited |
+| SpawnManagerV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x08939a9a6aefbd4bf9c0e128ed027591913393ca`; ethereum `0xab7b985c3add7e1495ca1cab72b998c8cf5dd3c5`; ethereum `0xcc57c9f7ae5419cfb6fe24fbd126b00c979e946c` | ⚠️ Unaudited |
+| TadpoleClaimer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x314a8e2ea148c272ce379dee7580656159ad3796` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -132,11 +132,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0bda79...30a72c` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x38b10a...42d288` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4e810a...a225f8` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x81ce23...b86437` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe9f234...93bf03` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0bda79aaf89e7a4b4f408bd97fbb2e749f30a72c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x38b10adde802701ae96384e2de74011f2642d288` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4e810ad33733bef360b12eb59c98c1d5d3a225f8` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x81ce2389b80ed3d24c84f3f9e9ae6044d9b86437` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe9f2349a3e93efc2282418a1cbc2a4e5cb93bf03` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -155,7 +155,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x423f4e...631eea` | PondCoin | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x423f4e6138e475d85cf7ea071ac92097ed631eea` | PondCoin | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

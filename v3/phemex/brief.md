@@ -89,8 +89,8 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| PhemexToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbbb32f...de6e6c` | ⚠️ Unaudited |
-| TokenLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x54f3dc...93e260` | ⚠️ Unaudited |
+| PhemexToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbbb32f99e6f2cb29337eebaa43c5069386de6e6c` | ⚠️ Unaudited |
+| TokenLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x54f3dc0c007e3c191871f3981afe26faff93e260` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

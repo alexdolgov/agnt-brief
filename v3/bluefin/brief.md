@@ -90,8 +90,8 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-127231 | `0x2b4b5e...00fc53` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | unit-127232 | `0x01a4ac...6090f6` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-127231 | `0x2b4b5e5dffcde417ead8253cf6a117836a00fc53` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | unit-127232 | `0x01a4acf737ea3b786cb8ace16ca95e1bef6090f6` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

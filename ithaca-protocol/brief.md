@@ -59,20 +59,20 @@ The protocol comprises 4 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AaveV3Strategy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x9f4940...a6fc57`](./contracts/arbitrum-42161/0x9f494058e0501498f09fd0173d5024e1d3a6fc57/); arbitrum `0xe91c9f...358a75` | ✅ Audited |
-| AccessController | unknown | arbitrum | n/a | [`0x31f409...525342`](./contracts/arbitrum-42161/0x31f40912d81ed3407b4e1238826e923601525342/) | ✅ Audited |
-| Fundlock | unknown | arbitrum | n/a | 5 deployments: arbitrum [`0x62185e...1fa1bc`](./contracts/arbitrum-42161/0x62185e9fc1777f56425aee6f95128ed36d1fa1bc/); arbitrum `0x9139a5...86417b`; arbitrum `0xb55173...211632`; arbitrum `0xba1fa5...375f77`; arbitrum `0xc07fab...9cc9bc` | ✅ Audited |
-| Ledger | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x2ba85e...ff36c4`](./contracts/arbitrum-42161/0x2ba85ed7ed154d90fe578a95c030edcadaff36c4/); arbitrum `0xc74354...5b2836` | ✅ Audited |
-| Registry | unknown | arbitrum | n/a | [`0x3b555e...2557d9`](./contracts/arbitrum-42161/0x3b555e087099d05cdb850fac9e22b29d702557d9/) | ✅ Audited |
-| Registry | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x4f6bdb...c19691`](./contracts/arbitrum-42161/0x4f6bdb9f750eb3681553b8af7523363ef7c19691/); arbitrum `0x64fe92...57a24a` | ✅ Audited |
-| TokenValidator | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x73475f...7b7342`](./contracts/arbitrum-42161/0x73475f6c26ea814e2d247d57c6fc1ab8107b7342/); arbitrum `0xa6daea...f35c46` | ✅ Audited |
+| AaveV3Strategy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x9f494058e0501498f09fd0173d5024e1d3a6fc57`](./contracts/arbitrum-42161/0x9f494058e0501498f09fd0173d5024e1d3a6fc57/); arbitrum `0xe91c9f22d3ec3bb0770cf78f641f3e0c4f358a75` | ✅ Audited |
+| AccessController | unknown | arbitrum | n/a | [`0x31f40912d81ed3407b4e1238826e923601525342`](./contracts/arbitrum-42161/0x31f40912d81ed3407b4e1238826e923601525342/) | ✅ Audited |
+| Fundlock | unknown | arbitrum | n/a | 5 deployments: arbitrum [`0x62185e9fc1777f56425aee6f95128ed36d1fa1bc`](./contracts/arbitrum-42161/0x62185e9fc1777f56425aee6f95128ed36d1fa1bc/); arbitrum `0x9139a54195c75816057a132a32f43d18de86417b`; arbitrum `0xb55173b9b9e7f51030fbaf2a0cc796318e211632`; arbitrum `0xba1fa561adf1c496d7436fecac25de2e25375f77`; arbitrum `0xc07fab09bf0707d383f1033db9790edfee9cc9bc` | ✅ Audited |
+| Ledger | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x2ba85ed7ed154d90fe578a95c030edcadaff36c4`](./contracts/arbitrum-42161/0x2ba85ed7ed154d90fe578a95c030edcadaff36c4/); arbitrum `0xc7435425a254fa023e95f0fb0dca2e78615b2836` | ✅ Audited |
+| Registry | unknown | arbitrum | n/a | [`0x3b555e087099d05cdb850fac9e22b29d702557d9`](./contracts/arbitrum-42161/0x3b555e087099d05cdb850fac9e22b29d702557d9/) | ✅ Audited |
+| Registry | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x4f6bdb9f750eb3681553b8af7523363ef7c19691`](./contracts/arbitrum-42161/0x4f6bdb9f750eb3681553b8af7523363ef7c19691/); arbitrum `0x64fe921c2017000deb1094dfc076c188b057a24a` | ✅ Audited |
+| TokenValidator | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x73475f6c26ea814e2d247d57c6fc1ab8107b7342`](./contracts/arbitrum-42161/0x73475f6c26ea814e2d247d57c6fc1ab8107b7342/); arbitrum `0xa6daea22cfc4f4d179396c4174f3a5fc31f35c46` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ERC1967Proxy | proxy | arbitrum | n/a | 2 deployments: arbitrum [`0xba0412...4ea1db`](./contracts/arbitrum-42161/0xba041237bb5ae8202f0d5135c5f7fc71b64ea1db/); arbitrum `0xf43028...8286d2` | ⚠️ Unaudited |
-| ITHACA | unknown | bsc | n/a | [`0x49f1d4...c007ca`](./contracts/bsc-56/0x49f1d4db3ea1a64390e990c6debeac88eac007ca/) | ⚠️ Unaudited |
+| ERC1967Proxy | proxy | arbitrum | n/a | 2 deployments: arbitrum [`0xba041237bb5ae8202f0d5135c5f7fc71b64ea1db`](./contracts/arbitrum-42161/0xba041237bb5ae8202f0d5135c5f7fc71b64ea1db/); arbitrum `0xf43028f58041979ac2656de3486a2362f48286d2` | ⚠️ Unaudited |
+| ITHACA | unknown | bsc | n/a | [`0x49f1d4db3ea1a64390e990c6debeac88eac007ca`](./contracts/bsc-56/0x49f1d4db3ea1a64390e990c6debeac88eac007ca/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -92,12 +92,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0x550c55...0803f7` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x058fc3...da1bb9` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x1a5250...64c2a1` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x691b14...cac6f7` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x8ec12c...0b1e9b` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xc7b473...3d5cf0` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x550c55fd3ebec902ceb0de1a41c73867d00803f7` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x058fc3f09e001cc12eb3565f1a06b52567da1bb9` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x1a5250487dd67a20005acf5b414120d8a664c2a1` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x691b14a7665d1c621e894c8145e35da0a0cac6f7` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x8ec12c611848d06ad742374b6b2893bba00b1e9b` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xc7b4736db2d76f985228a86c6e435c77583d5cf0` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -113,7 +113,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x49f1d4...c007ca`](./contracts/bsc-56/0x49f1d4db3ea1a64390e990c6debeac88eac007ca/) | ITHACA | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x49f1d4db3ea1a64390e990c6debeac88eac007ca`](./contracts/bsc-56/0x49f1d4db3ea1a64390e990c6debeac88eac007ca/) | ITHACA | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

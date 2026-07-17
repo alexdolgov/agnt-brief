@@ -60,16 +60,16 @@ The protocol comprises 6 functional families. Its contracts share 7 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AlgebraFactory | unknown | base | n/a | [`0x496381...ed101b`](./contracts/base-8453/0x4963818c35d5793d771bf8091c750b5a71ed101b/) | ✅ Audited |
-| BasePluginV1Factory | unknown | base | n/a | [`0x07bc9a...e24356`](./contracts/base-8453/0x07bc9a408b385c7aa8de2783795759512fe24356/) | ✅ Audited |
-| FarmingCenter | unknown | base | n/a | [`0x73d4bb...1cbef8`](./contracts/base-8453/0x73d4bb35c538a120f428c25693ae471b6e1cbef8/) | ✅ Audited |
+| AlgebraFactory | unknown | base | n/a | [`0x4963818c35d5793d771bf8091c750b5a71ed101b`](./contracts/base-8453/0x4963818c35d5793d771bf8091c750b5a71ed101b/) | ✅ Audited |
+| BasePluginV1Factory | unknown | base | n/a | [`0x07bc9a408b385c7aa8de2783795759512fe24356`](./contracts/base-8453/0x07bc9a408b385c7aa8de2783795759512fe24356/) | ✅ Audited |
+| FarmingCenter | unknown | base | n/a | [`0x73d4bb35c538a120f428c25693ae471b6e1cbef8`](./contracts/base-8453/0x73d4bb35c538a120f428c25693ae471b6e1cbef8/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AlgebraCommunityVault | unknown | base | n/a | [`0xe52d07...67de53`](./contracts/base-8453/0xe52d07be37867ebf2e81b015ae867b355667de53/) | ⚠️ Unaudited |
-| HENAIToken | unknown | base | n/a | [`0x42b08e...8d3509`](./contracts/base-8453/0x42b08e7a9211482d3643a126a7df1895448d3509/) | ⚠️ Unaudited |
+| AlgebraCommunityVault | unknown | base | n/a | [`0xe52d07be37867ebf2e81b015ae867b355667de53`](./contracts/base-8453/0xe52d07be37867ebf2e81b015ae867b355667de53/) | ⚠️ Unaudited |
+| HENAIToken | unknown | base | n/a | [`0x42b08e7a9211482d3643a126a7df1895448d3509`](./contracts/base-8453/0x42b08e7a9211482d3643a126a7df1895448d3509/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -89,10 +89,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | base | n/a | `0x0d855a...9efda9` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x6ced7b...f87f4b` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x9df686...554029` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xedfd8d...a2c54c` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x0d855a6d4821236d6feffaa3bd15c83c979efda9` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x6ced7bff05d439002ab1af64550cf9a5daf87f4b` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x9df686db15ab57203d57a9fb11fc4c05c8554029` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xedfd8da716b9bbdde02ade011cf55cffd2a2c54c` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -107,8 +107,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0xe52d07...67de53`](./contracts/base-8453/0xe52d07be37867ebf2e81b015ae867b355667de53/) | AlgebraCommunityVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x42b08e...8d3509`](./contracts/base-8453/0x42b08e7a9211482d3643a126a7df1895448d3509/) | HENAIToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xe52d07be37867ebf2e81b015ae867b355667de53`](./contracts/base-8453/0xe52d07be37867ebf2e81b015ae867b355667de53/) | AlgebraCommunityVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x42b08e7a9211482d3643a126a7df1895448d3509`](./contracts/base-8453/0x42b08e7a9211482d3643a126a7df1895448d3509/) | HENAIToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -61,30 +61,30 @@ The protocol comprises 10 functional families. Its contracts share 22 common pro
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BimaVault | core_logic | ethereum | n/a | [`0xc4bbfb...126799`](./contracts/ethereum-1/0xc4bbfb26a2285b3d5e7406f383a676e78b126799/) | ✅ Audited |
-| DebtToken | token | ethereum | n/a | 2 deployments: ethereum [`0x6bede1...fdb68c`](./contracts/ethereum-1/0x6bede1c6009a78c222d9bdb7974bb67847fdb68c/); bsc [`0x6bede1...fdb68c`](./contracts/bsc-56/0x6bede1c6009a78c222d9bdb7974bb67847fdb68c/) | ✅ Audited |
-| Factory | registry | ethereum | n/a | 3 deployments: ethereum [`0xc57901...759376`](./contracts/ethereum-1/0xc5790164d3ccb6533b241eee3fd7f56862759376/); bsc [`0xc57901...759376`](./contracts/bsc-56/0xc5790164d3ccb6533b241eee3fd7f56862759376/); sonic [`0xc57901...759376`](./contracts/sonic-146/0xc5790164d3ccb6533b241eee3fd7f56862759376/) | ✅ Audited |
-| PriceFeed | operational_periphery | ethereum | n/a | [`0x4b248f...9cbff2`](./contracts/ethereum-1/0x4b248f3646755f5b71a66bae8c55c568809cbff2/) | ✅ Audited |
-| TroveManager | governance | ethereum | n/a | 4 deployments: ethereum [`0x5066dc...d36b97`](./contracts/ethereum-1/0x5066dc39248e6696c0f2606a744a4482a3d36b97/); ethereum `0xa20c3d...800ff2`; bsc `0xa20c3d...800ff2`; sonic `0xa20c3d...800ff2` | ✅ Audited |
+| BimaVault | core_logic | ethereum | n/a | [`0xc4bbfb26a2285b3d5e7406f383a676e78b126799`](./contracts/ethereum-1/0xc4bbfb26a2285b3d5e7406f383a676e78b126799/) | ✅ Audited |
+| DebtToken | token | ethereum | n/a | 2 deployments: ethereum [`0x6bede1c6009a78c222d9bdb7974bb67847fdb68c`](./contracts/ethereum-1/0x6bede1c6009a78c222d9bdb7974bb67847fdb68c/); bsc [`0x6bede1c6009a78c222d9bdb7974bb67847fdb68c`](./contracts/bsc-56/0x6bede1c6009a78c222d9bdb7974bb67847fdb68c/) | ✅ Audited |
+| Factory | registry | ethereum | n/a | 3 deployments: ethereum [`0xc5790164d3ccb6533b241eee3fd7f56862759376`](./contracts/ethereum-1/0xc5790164d3ccb6533b241eee3fd7f56862759376/); bsc [`0xc5790164d3ccb6533b241eee3fd7f56862759376`](./contracts/bsc-56/0xc5790164d3ccb6533b241eee3fd7f56862759376/); sonic [`0xc5790164d3ccb6533b241eee3fd7f56862759376`](./contracts/sonic-146/0xc5790164d3ccb6533b241eee3fd7f56862759376/) | ✅ Audited |
+| PriceFeed | operational_periphery | ethereum | n/a | [`0x4b248f3646755f5b71a66bae8c55c568809cbff2`](./contracts/ethereum-1/0x4b248f3646755f5b71a66bae8c55c568809cbff2/) | ✅ Audited |
+| TroveManager | governance | ethereum | n/a | 4 deployments: ethereum [`0x5066dc39248e6696c0f2606a744a4482a3d36b97`](./contracts/ethereum-1/0x5066dc39248e6696c0f2606a744a4482a3d36b97/); ethereum `0xa20c3dc27c8c1a1adc92e3b443607914ed800ff2`; bsc `0xa20c3dc27c8c1a1adc92e3b443607914ed800ff2`; sonic `0xa20c3dc27c8c1a1adc92e3b443607914ed800ff2` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (14)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Bfbtc | unknown | ethereum | n/a | [`0x4ca67a...6069f0`](./contracts/ethereum-1/0x4ca67a794051e036eefb5aa4b34fe2bd836069f0/) | ⚠️ Unaudited |
-| Bfbtc | unknown | ethereum | n/a | 2 deployments: ethereum [`0x623f27...79d9df`](./contracts/ethereum-1/0x623f2774d9f27b59bc6b954544487532ce79d9df/); ethereum `0xcdfb58...c7fb15` | ⚠️ Unaudited |
-| BimaPSM | unknown | ethereum | n/a | 4 deployments: ethereum [`0x42ad68...523d67`](./contracts/ethereum-1/0x42ad6834a6599a0b7a7812f01f8092b580523d67/); ethereum `0x705fd2...4792d4`; ethereum `0x97bb31...6009e9`; ethereum `0xea811c...a888fe` | ⚠️ Unaudited |
-| BimaWrappedCollateral | unknown | ethereum | n/a | 3 deployments: ethereum [`0x59063f...2018e1`](./contracts/ethereum-1/0x59063fbe70d3b0f9312e5c89acdc476f5d2018e1/); ethereum `0x856db2...232ce0`; ethereum `0xdc0cca...655197` | ⚠️ Unaudited |
-| BimaWrappedCollateralFactory | registry | ethereum | n/a | 3 deployments: ethereum [`0x76de9b...129dbf`](./contracts/ethereum-1/0x76de9b5df6dcaa70f88e4e0949e17367c4129dbf/); bsc [`0x76de9b...129dbf`](./contracts/bsc-56/0x76de9b5df6dcaa70f88e4e0949e17367c4129dbf/); sonic [`0x76de9b...129dbf`](./contracts/sonic-146/0x76de9b5df6dcaa70f88e4e0949e17367c4129dbf/) | ⚠️ Unaudited |
-| BitFiStablecoinManager | governance | ethereum | n/a | [`0xb69865...d21f06`](./contracts/ethereum-1/0xb69865f8fa4bfc67ab4ad233e36ac593a5d21f06/) | ⚠️ Unaudited |
-| BitFiStablecoinZap | adapter | ethereum | n/a | [`0x140b55...4b66cb`](./contracts/ethereum-1/0x140b5517df7e33878eb0a494d6882cfac54b66cb/) | ⚠️ Unaudited |
-| EnzoBTC | unknown | ethereum | n/a | [`0x6a9a65...fbce4a`](./contracts/ethereum-1/0x6a9a65b84843f5fd4ac9a0471c4fc11afffbce4a/) | ⚠️ Unaudited |
-| EnzoNetwork | unknown | ethereum | n/a | 2 deployments: ethereum [`0x7efb35...c5c567`](./contracts/ethereum-1/0x7efb3515d9ec4537fafca635a1de7da7a5c5c567/); ethereum `0xdc2156...950068` | ⚠️ Unaudited |
-| LBTC | unknown | sonic | n/a | [`0xecac9c...5c11c1`](./contracts/sonic-146/0xecac9c5f704e954931349da37f60e39f515c11c1/) | ⚠️ Unaudited |
-| MintSecurity | unknown | ethereum | n/a | 2 deployments: ethereum [`0x316c1b...2ab302`](./contracts/ethereum-1/0x316c1b6b0c7051a10073abf0d06f9cc5ae2ab302/); ethereum `0x47c4ac...620a1c` | ⚠️ Unaudited |
-| MintStrategy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x81d7da...6b2c59`](./contracts/ethereum-1/0x81d7dab8b95085034d9ce90958038251726b2c59/); ethereum `0xb3cf78...3d02ab` | ⚠️ Unaudited |
-| ProxyMock | unknown | ethereum | n/a | [`0xecac9c...5c11c1`](./contracts/ethereum-1/0xecac9c5f704e954931349da37f60e39f515c11c1/) | ⚠️ Unaudited |
-| StakedBitFiStablecoin | token | ethereum | n/a | 2 deployments: ethereum [`0x688745...a871c5`](./contracts/ethereum-1/0x688745d56f93924dbda1c2caa613adcbcea871c5/); ethereum `0xd32224...951734` | ⚠️ Unaudited |
+| Bfbtc | unknown | ethereum | n/a | [`0x4ca67a794051e036eefb5aa4b34fe2bd836069f0`](./contracts/ethereum-1/0x4ca67a794051e036eefb5aa4b34fe2bd836069f0/) | ⚠️ Unaudited |
+| Bfbtc | unknown | ethereum | n/a | 2 deployments: ethereum [`0x623f2774d9f27b59bc6b954544487532ce79d9df`](./contracts/ethereum-1/0x623f2774d9f27b59bc6b954544487532ce79d9df/); ethereum `0xcdfb58c8c859cb3f62ebe9cf2767f9e036c7fb15` | ⚠️ Unaudited |
+| BimaPSM | unknown | ethereum | n/a | 4 deployments: ethereum [`0x42ad6834a6599a0b7a7812f01f8092b580523d67`](./contracts/ethereum-1/0x42ad6834a6599a0b7a7812f01f8092b580523d67/); ethereum `0x705fd2306bf6e4dec47bf8aaab378b04024792d4`; ethereum `0x97bb3167a88fe34b1ec6d7f02560c4f0aa6009e9`; ethereum `0xea811c2c400ee846e352d45c849657d920a888fe` | ⚠️ Unaudited |
+| BimaWrappedCollateral | unknown | ethereum | n/a | 3 deployments: ethereum [`0x59063fbe70d3b0f9312e5c89acdc476f5d2018e1`](./contracts/ethereum-1/0x59063fbe70d3b0f9312e5c89acdc476f5d2018e1/); ethereum `0x856db20b0c326afee3bf64770f7d8d39bf232ce0`; ethereum `0xdc0ccad18ca645a03870676c78a81524b4655197` | ⚠️ Unaudited |
+| BimaWrappedCollateralFactory | registry | ethereum | n/a | 3 deployments: ethereum [`0x76de9b5df6dcaa70f88e4e0949e17367c4129dbf`](./contracts/ethereum-1/0x76de9b5df6dcaa70f88e4e0949e17367c4129dbf/); bsc [`0x76de9b5df6dcaa70f88e4e0949e17367c4129dbf`](./contracts/bsc-56/0x76de9b5df6dcaa70f88e4e0949e17367c4129dbf/); sonic [`0x76de9b5df6dcaa70f88e4e0949e17367c4129dbf`](./contracts/sonic-146/0x76de9b5df6dcaa70f88e4e0949e17367c4129dbf/) | ⚠️ Unaudited |
+| BitFiStablecoinManager | governance | ethereum | n/a | [`0xb69865f8fa4bfc67ab4ad233e36ac593a5d21f06`](./contracts/ethereum-1/0xb69865f8fa4bfc67ab4ad233e36ac593a5d21f06/) | ⚠️ Unaudited |
+| BitFiStablecoinZap | adapter | ethereum | n/a | [`0x140b5517df7e33878eb0a494d6882cfac54b66cb`](./contracts/ethereum-1/0x140b5517df7e33878eb0a494d6882cfac54b66cb/) | ⚠️ Unaudited |
+| EnzoBTC | unknown | ethereum | n/a | [`0x6a9a65b84843f5fd4ac9a0471c4fc11afffbce4a`](./contracts/ethereum-1/0x6a9a65b84843f5fd4ac9a0471c4fc11afffbce4a/) | ⚠️ Unaudited |
+| EnzoNetwork | unknown | ethereum | n/a | 2 deployments: ethereum [`0x7efb3515d9ec4537fafca635a1de7da7a5c5c567`](./contracts/ethereum-1/0x7efb3515d9ec4537fafca635a1de7da7a5c5c567/); ethereum `0xdc2156498144f172746c4e6d4baab54d87950068` | ⚠️ Unaudited |
+| LBTC | unknown | sonic | n/a | [`0xecac9c5f704e954931349da37f60e39f515c11c1`](./contracts/sonic-146/0xecac9c5f704e954931349da37f60e39f515c11c1/) | ⚠️ Unaudited |
+| MintSecurity | unknown | ethereum | n/a | 2 deployments: ethereum [`0x316c1b6b0c7051a10073abf0d06f9cc5ae2ab302`](./contracts/ethereum-1/0x316c1b6b0c7051a10073abf0d06f9cc5ae2ab302/); ethereum `0x47c4ac7d1d0ff9594de5f3d2d07ff67253620a1c` | ⚠️ Unaudited |
+| MintStrategy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x81d7dab8b95085034d9ce90958038251726b2c59`](./contracts/ethereum-1/0x81d7dab8b95085034d9ce90958038251726b2c59/); ethereum `0xb3cf78f3e483b63280cfe19d52c9c1bdd03d02ab` | ⚠️ Unaudited |
+| ProxyMock | unknown | ethereum | n/a | [`0xecac9c5f704e954931349da37f60e39f515c11c1`](./contracts/ethereum-1/0xecac9c5f704e954931349da37f60e39f515c11c1/) | ⚠️ Unaudited |
+| StakedBitFiStablecoin | token | ethereum | n/a | 2 deployments: ethereum [`0x688745d56f93924dbda1c2caa613adcbcea871c5`](./contracts/ethereum-1/0x688745d56f93924dbda1c2caa613adcbcea871c5/); ethereum `0xd32224533b63ddeb63409010fe6c841350951734` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (1)
 
@@ -92,7 +92,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BorrowerOperations | core_logic | ethereum | n/a | 3 deployments: ethereum [`0x87fed3...cdfaec`](./contracts/ethereum-1/0x87fed36c032ee7289a1d2f3c48798e4c7fcdfaec/); bsc [`0x87fed3...cdfaec`](./contracts/bsc-56/0x87fed36c032ee7289a1d2f3c48798e4c7fcdfaec/); sonic [`0x87fed3...cdfaec`](./contracts/sonic-146/0x87fed36c032ee7289a1d2f3c48798e4c7fcdfaec/) | ✅ Audited (bytecode match) |
+| BorrowerOperations | core_logic | ethereum | n/a | 3 deployments: ethereum [`0x87fed36c032ee7289a1d2f3c48798e4c7fcdfaec`](./contracts/ethereum-1/0x87fed36c032ee7289a1d2f3c48798e4c7fcdfaec/); bsc [`0x87fed36c032ee7289a1d2f3c48798e4c7fcdfaec`](./contracts/bsc-56/0x87fed36c032ee7289a1d2f3c48798e4c7fcdfaec/); sonic [`0x87fed36c032ee7289a1d2f3c48798e4c7fcdfaec`](./contracts/sonic-146/0x87fed36c032ee7289a1d2f3c48798e4c7fcdfaec/) | ✅ Audited (bytecode match) |
 
 ### ⚠️ Verified by Bytecode + Unaudited (0)
 
@@ -106,14 +106,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x128eb2...d55f1b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x3bbd33...458a92` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x536394...c78395` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x5f339e...a7ff47` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x6a6298...3dd490` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0x49ce2e...faef15` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0x6a6298...3dd490` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0x6bede1...fdb68c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x128eb2baca6ac5416bed268d41c202fc41d55f1b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x3bbd33135621ce0d2faa023adec2faf5a7458a92` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x5363949018262d778a6ff7b4a16c82b4e5c78395` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x5f339e8811941271e9037a5d899766e3f5a7ff47` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x6a62989d451c4f359a30bfcece51da8a313dd490` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x49ce2eabdeaf65864a9d6542b2de9d384dfaef15` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x6a62989d451c4f359a30bfcece51da8a313dd490` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x6bede1c6009a78c222d9bdb7974bb67847fdb68c` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -129,18 +129,18 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x4ca67a...6069f0`](./contracts/ethereum-1/0x4ca67a794051e036eefb5aa4b34fe2bd836069f0/) | Bfbtc | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x623f27...79d9df`](./contracts/ethereum-1/0x623f2774d9f27b59bc6b954544487532ce79d9df/) | Bfbtc | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x42ad68...523d67`](./contracts/ethereum-1/0x42ad6834a6599a0b7a7812f01f8092b580523d67/) | BimaPSM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x59063f...2018e1`](./contracts/ethereum-1/0x59063fbe70d3b0f9312e5c89acdc476f5d2018e1/) | BimaWrappedCollateral | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x76de9b...129dbf`](./contracts/ethereum-1/0x76de9b5df6dcaa70f88e4e0949e17367c4129dbf/) | BimaWrappedCollateralFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xb69865...d21f06`](./contracts/ethereum-1/0xb69865f8fa4bfc67ab4ad233e36ac593a5d21f06/) | BitFiStablecoinManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x140b55...4b66cb`](./contracts/ethereum-1/0x140b5517df7e33878eb0a494d6882cfac54b66cb/) | BitFiStablecoinZap | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6a9a65...fbce4a`](./contracts/ethereum-1/0x6a9a65b84843f5fd4ac9a0471c4fc11afffbce4a/) | EnzoBTC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x7efb35...c5c567`](./contracts/ethereum-1/0x7efb3515d9ec4537fafca635a1de7da7a5c5c567/) | EnzoNetwork | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x316c1b...2ab302`](./contracts/ethereum-1/0x316c1b6b0c7051a10073abf0d06f9cc5ae2ab302/) | MintSecurity | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x81d7da...6b2c59`](./contracts/ethereum-1/0x81d7dab8b95085034d9ce90958038251726b2c59/) | MintStrategy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x688745...a871c5`](./contracts/ethereum-1/0x688745d56f93924dbda1c2caa613adcbcea871c5/) | StakedBitFiStablecoin | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4ca67a794051e036eefb5aa4b34fe2bd836069f0`](./contracts/ethereum-1/0x4ca67a794051e036eefb5aa4b34fe2bd836069f0/) | Bfbtc | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x623f2774d9f27b59bc6b954544487532ce79d9df`](./contracts/ethereum-1/0x623f2774d9f27b59bc6b954544487532ce79d9df/) | Bfbtc | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x42ad6834a6599a0b7a7812f01f8092b580523d67`](./contracts/ethereum-1/0x42ad6834a6599a0b7a7812f01f8092b580523d67/) | BimaPSM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x59063fbe70d3b0f9312e5c89acdc476f5d2018e1`](./contracts/ethereum-1/0x59063fbe70d3b0f9312e5c89acdc476f5d2018e1/) | BimaWrappedCollateral | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x76de9b5df6dcaa70f88e4e0949e17367c4129dbf`](./contracts/ethereum-1/0x76de9b5df6dcaa70f88e4e0949e17367c4129dbf/) | BimaWrappedCollateralFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb69865f8fa4bfc67ab4ad233e36ac593a5d21f06`](./contracts/ethereum-1/0xb69865f8fa4bfc67ab4ad233e36ac593a5d21f06/) | BitFiStablecoinManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x140b5517df7e33878eb0a494d6882cfac54b66cb`](./contracts/ethereum-1/0x140b5517df7e33878eb0a494d6882cfac54b66cb/) | BitFiStablecoinZap | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6a9a65b84843f5fd4ac9a0471c4fc11afffbce4a`](./contracts/ethereum-1/0x6a9a65b84843f5fd4ac9a0471c4fc11afffbce4a/) | EnzoBTC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x7efb3515d9ec4537fafca635a1de7da7a5c5c567`](./contracts/ethereum-1/0x7efb3515d9ec4537fafca635a1de7da7a5c5c567/) | EnzoNetwork | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x316c1b6b0c7051a10073abf0d06f9cc5ae2ab302`](./contracts/ethereum-1/0x316c1b6b0c7051a10073abf0d06f9cc5ae2ab302/) | MintSecurity | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x81d7dab8b95085034d9ce90958038251726b2c59`](./contracts/ethereum-1/0x81d7dab8b95085034d9ce90958038251726b2c59/) | MintStrategy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x688745d56f93924dbda1c2caa613adcbcea871c5`](./contracts/ethereum-1/0x688745d56f93924dbda1c2caa613adcbcea871c5/) | StakedBitFiStablecoin | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -60,12 +60,12 @@ The protocol comprises 3 functional families. Its contracts share 2 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ETHTimeBondDepository | unknown | avalanche | n/a | [`0x472c18...bfee9c`](./contracts/avalanche-43114/0x472c18c4079ecb68629f4fba1141172404bfee9c/) | ⚠️ Unaudited |
-| JoePair | unknown | avalanche | n/a | 4 deployments: avalanche [`0x425c45...4404d8`](./contracts/avalanche-43114/0x425c45adfb53861e5db8f17d9b072ab60d4404d8/); avalanche `0x53942d...3f59a2`; avalanche `0x781655...fd755d`; avalanche `0xa3d2cf...417d6d` | ⚠️ Unaudited |
-| SnowbankFinalRedistribution | unknown | avalanche | n/a | [`0xafe654...476887`](./contracts/avalanche-43114/0xafe654c1b34e9f702bf8007bccd6481b90476887/) | ⚠️ Unaudited |
-| StakingWarmup | unknown | avalanche | n/a | [`0xb99639...2ca625`](./contracts/avalanche-43114/0xb996392302721270609b41f004357c0c4e2ca625/) | ⚠️ Unaudited |
-| TimeERC20Token | token | avalanche | n/a | [`0x7d1232...a8942f`](./contracts/avalanche-43114/0x7d1232b90d3f809a54eeaeebc639c62df8a8942f/) | ⚠️ Unaudited |
-| TimeStaking | unknown | avalanche | n/a | [`0x85784d...2d99ad`](./contracts/avalanche-43114/0x85784d5e2ccae89bcb39ebf0ac6cdc93d42d99ad/) | ⚠️ Unaudited |
+| ETHTimeBondDepository | unknown | avalanche | n/a | [`0x472c18c4079ecb68629f4fba1141172404bfee9c`](./contracts/avalanche-43114/0x472c18c4079ecb68629f4fba1141172404bfee9c/) | ⚠️ Unaudited |
+| JoePair | unknown | avalanche | n/a | 4 deployments: avalanche [`0x425c45adfb53861e5db8f17d9b072ab60d4404d8`](./contracts/avalanche-43114/0x425c45adfb53861e5db8f17d9b072ab60d4404d8/); avalanche `0x53942dcce5087f56cf1d68f4e017ca3a793f59a2`; avalanche `0x781655d802670bba3c89aebaaea59d3182fd755d`; avalanche `0xa3d2cfe49df9d1ea0dc589b69252e1eddc417d6d` | ⚠️ Unaudited |
+| SnowbankFinalRedistribution | unknown | avalanche | n/a | [`0xafe654c1b34e9f702bf8007bccd6481b90476887`](./contracts/avalanche-43114/0xafe654c1b34e9f702bf8007bccd6481b90476887/) | ⚠️ Unaudited |
+| StakingWarmup | unknown | avalanche | n/a | [`0xb996392302721270609b41f004357c0c4e2ca625`](./contracts/avalanche-43114/0xb996392302721270609b41f004357c0c4e2ca625/) | ⚠️ Unaudited |
+| TimeERC20Token | token | avalanche | n/a | [`0x7d1232b90d3f809a54eeaeebc639c62df8a8942f`](./contracts/avalanche-43114/0x7d1232b90d3f809a54eeaeebc639c62df8a8942f/) | ⚠️ Unaudited |
+| TimeStaking | unknown | avalanche | n/a | [`0x85784d5e2ccae89bcb39ebf0ac6cdc93d42d99ad`](./contracts/avalanche-43114/0x85784d5e2ccae89bcb39ebf0ac6cdc93d42d99ad/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -85,7 +85,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | avalanche | n/a | `0xfc3625...073f5e` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xfc3625cd7a5c9d40bfe6ee075a73867b32073f5e` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -98,12 +98,12 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| avalanche | [`0x472c18...bfee9c`](./contracts/avalanche-43114/0x472c18c4079ecb68629f4fba1141172404bfee9c/) | ETHTimeBondDepository | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x425c45...4404d8`](./contracts/avalanche-43114/0x425c45adfb53861e5db8f17d9b072ab60d4404d8/) | JoePair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0xafe654...476887`](./contracts/avalanche-43114/0xafe654c1b34e9f702bf8007bccd6481b90476887/) | SnowbankFinalRedistribution | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0xb99639...2ca625`](./contracts/avalanche-43114/0xb996392302721270609b41f004357c0c4e2ca625/) | StakingWarmup | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x7d1232...a8942f`](./contracts/avalanche-43114/0x7d1232b90d3f809a54eeaeebc639c62df8a8942f/) | TimeERC20Token | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x85784d...2d99ad`](./contracts/avalanche-43114/0x85784d5e2ccae89bcb39ebf0ac6cdc93d42d99ad/) | TimeStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0x472c18c4079ecb68629f4fba1141172404bfee9c`](./contracts/avalanche-43114/0x472c18c4079ecb68629f4fba1141172404bfee9c/) | ETHTimeBondDepository | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0x425c45adfb53861e5db8f17d9b072ab60d4404d8`](./contracts/avalanche-43114/0x425c45adfb53861e5db8f17d9b072ab60d4404d8/) | JoePair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0xafe654c1b34e9f702bf8007bccd6481b90476887`](./contracts/avalanche-43114/0xafe654c1b34e9f702bf8007bccd6481b90476887/) | SnowbankFinalRedistribution | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0xb996392302721270609b41f004357c0c4e2ca625`](./contracts/avalanche-43114/0xb996392302721270609b41f004357c0c4e2ca625/) | StakingWarmup | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0x7d1232b90d3f809a54eeaeebc639c62df8a8942f`](./contracts/avalanche-43114/0x7d1232b90d3f809a54eeaeebc639c62df8a8942f/) | TimeERC20Token | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0x85784d5e2ccae89bcb39ebf0ac6cdc93d42d99ad`](./contracts/avalanche-43114/0x85784d5e2ccae89bcb39ebf0ac6cdc93d42d99ad/) | TimeStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

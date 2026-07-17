@@ -61,9 +61,9 @@ The protocol comprises 3 functional families. Its contracts share 2 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| GnosisSafe | governance | ethereum | n/a | [`0x617c8d...38f582`](./contracts/ethereum-1/0x617c8de5bde54ffbb8d92716cc947858ca38f582/) | ⚠️ Unaudited |
-| MevEth | unknown | ethereum | n/a | 2 deployments: ethereum [`0x24ae2d...e4f27e`](./contracts/ethereum-1/0x24ae2da0f361aa4be46b48eb19c91e02c5e4f27e/); ethereum `0x9d7981...8160cd` | ⚠️ Unaudited |
-| MevEthRouter | adapter | ethereum | n/a | [`0xb60598...7b4a93`](./contracts/ethereum-1/0xb60598cd27fb881b92a34afce93aa1ee647b4a93/) | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | n/a | [`0x617c8de5bde54ffbb8d92716cc947858ca38f582`](./contracts/ethereum-1/0x617c8de5bde54ffbb8d92716cc947858ca38f582/) | ⚠️ Unaudited |
+| MevEth | unknown | ethereum | n/a | 2 deployments: ethereum [`0x24ae2da0f361aa4be46b48eb19c91e02c5e4f27e`](./contracts/ethereum-1/0x24ae2da0f361aa4be46b48eb19c91e02c5e4f27e/); ethereum `0x9d7981c066a3f84ed88dd13c190f5f7c8d8160cd` | ⚠️ Unaudited |
+| MevEthRouter | adapter | ethereum | n/a | [`0xb60598cd27fb881b92a34afce93aa1ee647b4a93`](./contracts/ethereum-1/0xb60598cd27fb881b92a34afce93aa1ee647b4a93/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -96,8 +96,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x24ae2d...e4f27e`](./contracts/ethereum-1/0x24ae2da0f361aa4be46b48eb19c91e02c5e4f27e/) | MevEth | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xb60598...7b4a93`](./contracts/ethereum-1/0xb60598cd27fb881b92a34afce93aa1ee647b4a93/) | MevEthRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x24ae2da0f361aa4be46b48eb19c91e02c5e4f27e`](./contracts/ethereum-1/0x24ae2da0f361aa4be46b48eb19c91e02c5e4f27e/) | MevEth | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb60598cd27fb881b92a34afce93aa1ee647b4a93`](./contracts/ethereum-1/0xb60598cd27fb881b92a34afce93aa1ee647b4a93/) | MevEthRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

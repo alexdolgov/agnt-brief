@@ -90,11 +90,11 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ATokenV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sei | unit-129362 | `0x093066...e32819` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-129359 | `0xe7cd86...0fc82d` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | optimism | unit-129361 | `0x01bff4...bc1071` | ⚠️ Unaudited |
-| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-129358 | `0xf97f14...6c7d0c` | ⚠️ Unaudited |
-| VaultV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-129360 | `0x39166b...a5e94c` | ⚠️ Unaudited |
+| ATokenV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sei | unit-129362 | `0x093066736e6762210de13f92b39cf862eee32819` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-129359 | `0xe7cd86e13ac4309349f30b3435a9d337750fc82d` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | optimism | unit-129361 | `0x01bff41798a0bcf287b996046ca68b395dbc1071` | ⚠️ Unaudited |
+| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-129358 | `0xf97f14eb571eb749390ef5a067edbbbc646c7d0c` | ⚠️ Unaudited |
+| VaultV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-129360 | `0x39166b36a25a4a98d6b7c21d429f4740c6a5e94c` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

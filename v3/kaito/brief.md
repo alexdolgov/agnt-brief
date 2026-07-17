@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across base. Structur
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- Kaito (`0x98d0ba...537553`, chain 8453)
+- Kaito (`0x98d0baa52b2d063e780de12f615f963fe8537553`, chain 8453)
 
 ## Contract Surface Quality
 
@@ -103,9 +103,9 @@ The pinned logic-topography run contains 1 contract row(s) across base. Structur
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Kaito | unknown | project_anchor | own_supporting | 0 | base | unit-387898 | `0x98d0ba...537553` | ⚠️ Unaudited |
-| SafeL2 | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | base | n/a | `0x049a02...bb8e0d` | ⚠️ Unaudited |
-| StakedKAITO | token | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x548d3b...cd1ef7` | ⚠️ Unaudited |
+| Kaito | unknown | project_anchor | own_supporting | 0 | base | unit-387898 | `0x98d0baa52b2d063e780de12f615f963fe8537553` | ⚠️ Unaudited |
+| SafeL2 | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | base | n/a | `0x049a022d95c02c3f552d54eb2e94743e5abb8e0d` | ⚠️ Unaudited |
+| StakedKAITO | token | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x548d3b444da39686d1a6f1544781d154e7cd1ef7` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -125,7 +125,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x4674ef...2a5659` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x4674efa71d1029f9cd1ca0fe186be0131a2a5659` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -144,7 +144,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | `0x98d0ba...537553` | Kaito | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x98d0baa52b2d063e780de12f615f963fe8537553` | Kaito | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

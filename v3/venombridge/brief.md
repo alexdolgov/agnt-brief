@@ -90,10 +90,10 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Diamond | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x4ab740...512525` | ⚠️ Unaudited |
-| Diamond | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0x4ab740...512525` | ⚠️ Unaudited |
-| Diamond | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | polygon | n/a | `0x4ab740...512525` | ⚠️ Unaudited |
-| MultiVaultToken | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x46f84d...8d87c9` | ⚠️ Unaudited |
+| Diamond | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x4ab740157721105ae503fbad756a578171512525` | ⚠️ Unaudited |
+| Diamond | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0x4ab740157721105ae503fbad756a578171512525` | ⚠️ Unaudited |
+| Diamond | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | polygon | n/a | `0x4ab740157721105ae503fbad756a578171512525` | ⚠️ Unaudited |
+| MultiVaultToken | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x46f84dc6564cdd93922f7bfb88b03d35308d87c9` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -113,7 +113,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Proxy (impl: 0x0bc8c8212c0c74773671c4badb18999c2b07f3c6) | proxy | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | `0x4ab740...512525` | ❓ Unverified |
+| Proxy (impl: 0x0bc8c8212c0c74773671c4badb18999c2b07f3c6) | proxy | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | `0x4ab740157721105ae503fbad756a578171512525` | ❓ Unverified |
 
 ## Audit Inventory
 

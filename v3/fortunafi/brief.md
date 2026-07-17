@@ -52,22 +52,22 @@ The pinned logic-topography run contains 16 contract row(s) across arbitrum, bla
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- BlastPoints (`0x45bafa...20589b`, chain 81457)
-- Coinbase Stock fCOIN (`0x2378ac...0f5108`, chain 1)
-- Coinbase Stock ifCOIN (`0xa6d0f5...160994`, chain 1)
-- Hilbert Version 1 fHV1 (`0xd71412...e393e4`, chain 1)
-- Hilbert Version 1 ifHV1 (`0xe7638c...ec50ed`, chain 1)
-- Robinhood Stock fHOOD (`0x62c5e5...64f846`, chain 1)
-- Robinhood Stock ifHOOD (`0x7fc6b3...26e95e`, chain 1)
-- Treasury Bills fBILL (`0x108ec6...2e3f03`, chain 1)
-- Treasury Bills fBILL (`0x79ecce...90ec08`, chain 7700)
-- Treasury Bills fBILL (`0x79ecce...90ec08`, chain 42161)
-- Treasury Bills fBILL (`0x79ecce...90ec08`, chain 81457)
-- Treasury Bills ifBILL (`0x4b57e1...f6a2a5`, chain 1)
-- Treasury Bills ifBILL (`0x45bafa...20589b`, chain 7700)
-- Treasury Bills ifBILL (`0x45bafa...20589b`, chain 42161)
-- US Equity Index fSPQQQ (`0x3010e9...836657`, chain 1)
-- US Equity Index ifSPQQQ (`0x6d3411...1ea6f4`, chain 1)
+- BlastPoints (`0x45bafad5a6a531bc18cf6ce5b02c58ea4d20589b`, chain 81457)
+- Coinbase Stock fCOIN (`0x2378ac4eeaae44695e1e3d0fcaeed6ba8b0f5108`, chain 1)
+- Coinbase Stock ifCOIN (`0xa6d0f5bb034312f9a4fc565e916b84c264160994`, chain 1)
+- Hilbert Version 1 fHV1 (`0xd71412e045825d52b38355f8ade1230dd2e393e4`, chain 1)
+- Hilbert Version 1 ifHV1 (`0xe7638cb7ad2384d635d2c49aebe76cfbccec50ed`, chain 1)
+- Robinhood Stock fHOOD (`0x62c5e58001f91e65c420c4dc4c2f2faa2264f846`, chain 1)
+- Robinhood Stock ifHOOD (`0x7fc6b348368c34013aac4a7888883b886226e95e`, chain 1)
+- Treasury Bills fBILL (`0x108ec61bd5a91f5596f824832524c6b6002e3f03`, chain 1)
+- Treasury Bills fBILL (`0x79ecce8e2d17603877ff15bc29804cbcb590ec08`, chain 7700)
+- Treasury Bills fBILL (`0x79ecce8e2d17603877ff15bc29804cbcb590ec08`, chain 42161)
+- Treasury Bills fBILL (`0x79ecce8e2d17603877ff15bc29804cbcb590ec08`, chain 81457)
+- Treasury Bills ifBILL (`0x4b57e1e3fd684d3bb82a0652c77fd7412df6a2a5`, chain 1)
+- Treasury Bills ifBILL (`0x45bafad5a6a531bc18cf6ce5b02c58ea4d20589b`, chain 7700)
+- Treasury Bills ifBILL (`0x45bafad5a6a531bc18cf6ce5b02c58ea4d20589b`, chain 42161)
+- US Equity Index fSPQQQ (`0x3010e93c37092991e9c1cc7f7eeed44148836657`, chain 1)
+- US Equity Index ifSPQQQ (`0x6d34113f41d5c3b327b6417fc17ea449c71ea6f4`, chain 1)
 
 ## Contract Surface Quality
 
@@ -113,23 +113,23 @@ The pinned logic-topography run contains 16 contract row(s) across arbitrum, bla
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BlastPoints | unknown | project_anchor | own_supporting | 0 | blast | unit-386706 | `0x45bafa...20589b` | ⚠️ Unaudited |
-| Coinbase Stock fCOIN | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386693 | `0x2378ac...0f5108` | ⚠️ Unaudited |
-| Coinbase Stock ifCOIN | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386699 | `0xa6d0f5...160994` | ⚠️ Unaudited |
-| Hilbert Version 1 fHV1 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386700 | `0xd71412...e393e4` | ⚠️ Unaudited |
-| Hilbert Version 1 ifHV1 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386701 | `0xe7638c...ec50ed` | ⚠️ Unaudited |
-| OffchainFund | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x010869...e9beb2` | ⚠️ Unaudited |
-| Robinhood Stock fHOOD | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386696 | `0x62c5e5...64f846` | ⚠️ Unaudited |
-| Robinhood Stock ifHOOD | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386698 | `0x7fc6b3...26e95e` | ⚠️ Unaudited |
-| Treasury Bills fBILL | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386692 | `0x108ec6...2e3f03` | ⚠️ Unaudited |
-| Treasury Bills fBILL | unknown | project_anchor | own_supporting | 0 | canto | unit-386705 | `0x79ecce...90ec08` | ⚠️ Unaudited |
-| Treasury Bills fBILL | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-386703 | `0x79ecce...90ec08` | ⚠️ Unaudited |
-| Treasury Bills fBILL | unknown | project_anchor | own_supporting | 0 | blast | unit-386707 | `0x79ecce...90ec08` | ⚠️ Unaudited |
-| Treasury Bills ifBILL | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386695 | `0x4b57e1...f6a2a5` | ⚠️ Unaudited |
-| Treasury Bills ifBILL | unknown | project_anchor | own_supporting | 0 | canto | unit-386704 | `0x45bafa...20589b` | ⚠️ Unaudited |
-| Treasury Bills ifBILL | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-386702 | `0x45bafa...20589b` | ⚠️ Unaudited |
-| US Equity Index fSPQQQ | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386694 | `0x3010e9...836657` | ⚠️ Unaudited |
-| US Equity Index ifSPQQQ | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386697 | `0x6d3411...1ea6f4` | ⚠️ Unaudited |
+| BlastPoints | unknown | project_anchor | own_supporting | 0 | blast | unit-386706 | `0x45bafad5a6a531bc18cf6ce5b02c58ea4d20589b` | ⚠️ Unaudited |
+| Coinbase Stock fCOIN | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386693 | `0x2378ac4eeaae44695e1e3d0fcaeed6ba8b0f5108` | ⚠️ Unaudited |
+| Coinbase Stock ifCOIN | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386699 | `0xa6d0f5bb034312f9a4fc565e916b84c264160994` | ⚠️ Unaudited |
+| Hilbert Version 1 fHV1 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386700 | `0xd71412e045825d52b38355f8ade1230dd2e393e4` | ⚠️ Unaudited |
+| Hilbert Version 1 ifHV1 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386701 | `0xe7638cb7ad2384d635d2c49aebe76cfbccec50ed` | ⚠️ Unaudited |
+| OffchainFund | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x010869d79f5f3e4b6d18783ac1acc4e01be9beb2` | ⚠️ Unaudited |
+| Robinhood Stock fHOOD | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386696 | `0x62c5e58001f91e65c420c4dc4c2f2faa2264f846` | ⚠️ Unaudited |
+| Robinhood Stock ifHOOD | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386698 | `0x7fc6b348368c34013aac4a7888883b886226e95e` | ⚠️ Unaudited |
+| Treasury Bills fBILL | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386692 | `0x108ec61bd5a91f5596f824832524c6b6002e3f03` | ⚠️ Unaudited |
+| Treasury Bills fBILL | unknown | project_anchor | own_supporting | 0 | canto | unit-386705 | `0x79ecce8e2d17603877ff15bc29804cbcb590ec08` | ⚠️ Unaudited |
+| Treasury Bills fBILL | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-386703 | `0x79ecce8e2d17603877ff15bc29804cbcb590ec08` | ⚠️ Unaudited |
+| Treasury Bills fBILL | unknown | project_anchor | own_supporting | 0 | blast | unit-386707 | `0x79ecce8e2d17603877ff15bc29804cbcb590ec08` | ⚠️ Unaudited |
+| Treasury Bills ifBILL | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386695 | `0x4b57e1e3fd684d3bb82a0652c77fd7412df6a2a5` | ⚠️ Unaudited |
+| Treasury Bills ifBILL | unknown | project_anchor | own_supporting | 0 | canto | unit-386704 | `0x45bafad5a6a531bc18cf6ce5b02c58ea4d20589b` | ⚠️ Unaudited |
+| Treasury Bills ifBILL | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-386702 | `0x45bafad5a6a531bc18cf6ce5b02c58ea4d20589b` | ⚠️ Unaudited |
+| US Equity Index fSPQQQ | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386694 | `0x3010e93c37092991e9c1cc7f7eeed44148836657` | ⚠️ Unaudited |
+| US Equity Index ifSPQQQ | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386697 | `0x6d34113f41d5c3b327b6417fc17ea449c71ea6f4` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

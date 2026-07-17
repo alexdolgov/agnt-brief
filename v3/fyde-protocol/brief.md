@@ -52,13 +52,13 @@ The pinned logic-topography run contains 12 contract row(s) across ethereum. Str
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xb3c25a...39f7f8`, chain 1)
-- Fyde (`0x87cc45...7df2ee`, chain 1)
-- GnosisSafeProxy (`0x24b3b5...eba999`, chain 1)
-- RelayerV2 (`0x6830c6...f32078`, chain 1)
-- sTRSY (`0xe11df8...1566b9`, chain 1)
-- YieldStrategy (`0x569871...1cf59c`, chain 1)
-- YieldStrategy (`0xa11d02...6de055`, chain 1)
+- UnnamedContract (`0xb3c25a305885681e1105d563b22188121b39f7f8`, chain 1)
+- Fyde (`0x87cc45fff5c0933bb6af6bae7fc013b7ec7df2ee`, chain 1)
+- GnosisSafeProxy (`0x24b3b50c1b87b549374876d31f919e5e6eeba999`, chain 1)
+- RelayerV2 (`0x6830c61df103946b63c786e63222c59677f32078`, chain 1)
+- sTRSY (`0xe11df8c0e9b5697bd31515d0fc5f4c9bd71566b9`, chain 1)
+- YieldStrategy (`0x569871ae260d85c5981374bba2b2353a3e1cf59c`, chain 1)
+- YieldStrategy (`0xa11d02c5ac034786deb0a7ad1dfcfacc0e6de055`, chain 1)
 
 ## Contract Surface Quality
 
@@ -103,42 +103,42 @@ The pinned logic-topography run contains 12 contract row(s) across ethereum. Str
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Fyde | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240582 | `0x87cc45...7df2ee` | ✅ Audited |
-| OracleModule | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240579 | `0x051983...bd2aee` | ✅ Audited |
-| RelayerV2 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240581 | `0x6830c6...f32078` | ✅ Audited |
-| sTRSY | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240585 | `0xe11df8...1566b9` | ✅ Audited |
-| TaxModule | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240586 | `0xf6bcf9...f1eb40` | ✅ Audited |
-| UserProxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-240588 | 2 deployments: ethereum `0x68bb55...51c5a7`; ethereum `0xc6f509...8239e1` | ✅ Audited |
+| Fyde | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240582 | `0x87cc45fff5c0933bb6af6bae7fc013b7ec7df2ee` | ✅ Audited |
+| OracleModule | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240579 | `0x05198327206123e89c24abd9a482316449bd2aee` | ✅ Audited |
+| RelayerV2 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240581 | `0x6830c61df103946b63c786e63222c59677f32078` | ✅ Audited |
+| sTRSY | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240585 | `0xe11df8c0e9b5697bd31515d0fc5f4c9bd71566b9` | ✅ Audited |
+| TaxModule | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240586 | `0xf6bcf96f5bace0241303ee0819e2e009a7f1eb40` | ✅ Audited |
+| UserProxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-240588 | 2 deployments: ethereum `0x68bb55f0bc0b9a37cd4afb5ec4794fc61651c5a7`; ethereum `0xc6f50903a058f3807111619bd4b24ca64b8239e1` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (25)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| DCAVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb5432d...4091a8` | ⚠️ Unaudited |
-| DepositEscrow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x63ec95...910470` | ⚠️ Unaudited |
-| FeeDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x41b911...a0f543` | ⚠️ Unaudited |
-| Fyde | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdde736...de6711` | ⚠️ Unaudited |
-| FydeOFTAdapter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x72527f...bcb519` | ⚠️ Unaudited |
-| FydeToken | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x8a462e...98de30`; ethereum `0xa736cd...6b0cd8` | ⚠️ Unaudited |
-| GnosisSafe | governance | project_anchor | own_supporting | 1 | ethereum | unit-240589 | `0x24b3b5...eba999` | ⚠️ Unaudited |
-| OracleModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x9b1223...ab6c5a`; ethereum `0xa44adf...4234ca`; ethereum `0xd7cb5e...1bcdf6`; ethereum `0xde0d6b...a6f83d`; ethereum `0xe8e40f...33b736` | ⚠️ Unaudited |
-| PendlePrincipalToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1c0851...7f93b1` | ⚠️ Unaudited |
-| PooledDepositEscrow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0x647741...08219c`; ethereum `0x9da792...8debfc`; ethereum `0xcdeb11...362abf`; ethereum `0xddc55e...e070e1` | ⚠️ Unaudited |
-| Relayer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x94194d...81d9be` | ⚠️ Unaudited |
-| RewardDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x996288...3c71a6` | ⚠️ Unaudited |
-| RewardsDistributor | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240580 | `0x19d9d8...5adf6a` | ⚠️ Unaudited |
-| RewardsDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0xce1414...d15d90`; ethereum `0xd346b2...e8b3dc` | ⚠️ Unaudited |
-| StakingETH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x38abe8...3aabda`; ethereum `0x3f69f6...b05341`; ethereum `0xb01cc1...c4c7bc` | ⚠️ Unaudited |
-| StakingTRSY | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6c7441...5c32f7` | ⚠️ Unaudited |
-| sTRSY | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x16f483...f55460` | ⚠️ Unaudited |
-| TaxModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x35afe5...0a70d3`; ethereum `0x9edd8e...f53322` | ⚠️ Unaudited |
-| TrsyFeeDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4e48b2...eb9687` | ⚠️ Unaudited |
-| VestingDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x320407...418045` | ⚠️ Unaudited |
-| VoteEscrow | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x6fa0b2...93c9ed`; ethereum `0x9b3692...94dbde` | ⚠️ Unaudited |
-| WithdrawETH | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x14fba2...341fb3` | ⚠️ Unaudited |
-| YieldStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x53be80...bf9efb`; ethereum `0xc1bbad...c7f8cc` | ⚠️ Unaudited |
-| YieldStrategy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-240587 | 2 deployments: ethereum `0x569871...1cf59c`; ethereum `0xb615a7...ccc3ba` | ⚠️ Unaudited |
-| YieldStrategy | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240583 | `0xa11d02...6de055` | ⚠️ Unaudited |
+| DCAVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb5432d8ab42ba82e1aab329e7ca730334f4091a8` | ⚠️ Unaudited |
+| DepositEscrow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x63ec950633eb85797477166084ad0a7121910470` | ⚠️ Unaudited |
+| FeeDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x41b911286e63c508345ba581d75928ece4a0f543` | ⚠️ Unaudited |
+| Fyde | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdde736837c7c275a952a52ee11face88adde6711` | ⚠️ Unaudited |
+| FydeOFTAdapter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x72527fec7d84764c405f28bd7e00e2693bbcb519` | ⚠️ Unaudited |
+| FydeToken | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x8a462e6a0051d006e33152fbeadfb9a14198de30`; ethereum `0xa736cd2b05f3e343027a05330595606b8a6b0cd8` | ⚠️ Unaudited |
+| GnosisSafe | governance | project_anchor | own_supporting | 1 | ethereum | unit-240589 | `0x24b3b50c1b87b549374876d31f919e5e6eeba999` | ⚠️ Unaudited |
+| OracleModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x9b122361e8708be33b785e44fce4d6ca86ab6c5a`; ethereum `0xa44adf41a308a1d63786e6abaed9ac64f24234ca`; ethereum `0xd7cb5e50775d8583e8edb8993619227af81bcdf6`; ethereum `0xde0d6b162d7751fa09453debfd4df96a72a6f83d`; ethereum `0xe8e40fd4ddab26b44b1fb2d6d73833cb0a33b736` | ⚠️ Unaudited |
+| PendlePrincipalToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1c085195437738d73d75dc64bc5a3e098b7f93b1` | ⚠️ Unaudited |
+| PooledDepositEscrow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0x647741808e7c57ae06edbfbc81e4a22c4808219c`; ethereum `0x9da7923224ed433c8f1047eb8eca80cce98debfc`; ethereum `0xcdeb119b9b312434322fe8e5b75a93b35f362abf`; ethereum `0xddc55e390841021b0e99179322f66d3a17e070e1` | ⚠️ Unaudited |
+| Relayer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x94194de310b99d3c8a5b8c0768cfce7aef81d9be` | ⚠️ Unaudited |
+| RewardDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x99628825156746fbabc2819d202ee30ecb3c71a6` | ⚠️ Unaudited |
+| RewardsDistributor | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240580 | `0x19d9d821f6a2ed80a0a9ae06e5b12edbdd5adf6a` | ⚠️ Unaudited |
+| RewardsDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0xce1414ae7040ba65611533df0c23db0bacd15d90`; ethereum `0xd346b2454e7f957fe779efcca6af4d54f1e8b3dc` | ⚠️ Unaudited |
+| StakingETH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x38abe896c350f9dedef4f676071bdd69893aabda`; ethereum `0x3f69f62e25441cf72e362508f4d6711d53b05341`; ethereum `0xb01cc1446b50b1175063356c150bede798c4c7bc` | ⚠️ Unaudited |
+| StakingTRSY | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6c7441c76d85d7ab43eacd076d37b0775f5c32f7` | ⚠️ Unaudited |
+| sTRSY | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x16f483d7a46d8d74eb176cf43687dc9dc5f55460` | ⚠️ Unaudited |
+| TaxModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x35afe52bddedbc9bbe53af119568264da00a70d3`; ethereum `0x9edd8ea842be2284b755e78c43245cd2ecf53322` | ⚠️ Unaudited |
+| TrsyFeeDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4e48b226b49797e50892bfb0feafb9c503eb9687` | ⚠️ Unaudited |
+| VestingDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3204074ad7555cf6149bc21441313611b6418045` | ⚠️ Unaudited |
+| VoteEscrow | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x6fa0b27ba2f951a68fa7a097f6c6ccecad93c9ed`; ethereum `0x9b369202ff147b54ea7092bc94425c781094dbde` | ⚠️ Unaudited |
+| WithdrawETH | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x14fba2a6c5a4d9ceb73956ac0a4a18ca8f341fb3` | ⚠️ Unaudited |
+| YieldStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x53be800570860c7fbeb438cacabd1de8fabf9efb`; ethereum `0xc1bbad6d9eb5092b896158af62375dabedc7f8cc` | ⚠️ Unaudited |
+| YieldStrategy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-240587 | 2 deployments: ethereum `0x569871ae260d85c5981374bba2b2353a3e1cf59c`; ethereum `0xb615a7e4d1ed426470ac2df14f3153fa2dccc3ba` | ⚠️ Unaudited |
+| YieldStrategy | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240583 | `0xa11d02c5ac034786deb0a7ad1dfcfacc0e6de055` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -158,9 +158,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9fd02f...1d6fa6` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb2bf59...eab295` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240584 | `0xb3c25a...39f7f8` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9fd02fa9641fa2d2d5acd9e1c9b6b3343d1d6fa6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb2bf5935f16ea7352888bff2ed8eb935b3eab295` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240584 | `0xb3c25a305885681e1105d563b22188121b39f7f8` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -182,9 +182,9 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| spaces/bQllaeunfO4BPaZU1ABc/uploads/DrOUIAG2nAdc0Lf0RxD8/Fyde_Core_Smart_Contract_Security_Assessment_Report_Halborn_Final.pdf | Fyde | own contract | Fyde (selected) `0x87cc45...7df2ee` — deployed 2023-11-27 16:46:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/bQllaeunfO4BPaZU1ABc/uploads/DrOUIAG2nAdc0Lf0RxD8/Fyde_Core_Smart_Contract_Security_Assessment_Report_Halborn_Final.pdf | Fyde | own contract | Fyde (selected) `0x87cc45fff5c0933bb6af6bae7fc013b7ec7df2ee` — deployed 2023-11-27 16:46:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/bQllaeunfO4BPaZU1ABc/uploads/DrOUIAG2nAdc0Lf0RxD8/Fyde_Core_Smart_Contract_Security_Assessment_Report_Halborn_Final.pdf | PooledDepositEscrow | unmatched — not counted | — | listed in scope | no |
-| spaces/bQllaeunfO4BPaZU1ABc/uploads/DrOUIAG2nAdc0Lf0RxD8/Fyde_Core_Smart_Contract_Security_Assessment_Report_Halborn_Final.pdf | Relayer | own contract | RelayerV2 (selected) `0x6830c6...f32078` — deployed 2024-04-03 10:49:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/bQllaeunfO4BPaZU1ABc/uploads/DrOUIAG2nAdc0Lf0RxD8/Fyde_Core_Smart_Contract_Security_Assessment_Report_Halborn_Final.pdf | Relayer | own contract | RelayerV2 (selected) `0x6830c61df103946b63c786e63222c59677f32078` — deployed 2024-04-03 10:49:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/bQllaeunfO4BPaZU1ABc/uploads/DrOUIAG2nAdc0Lf0RxD8/Fyde_Core_Smart_Contract_Security_Assessment_Report_Halborn_Final.pdf | AccessControl | unmatched — not counted | — | listed in scope | no |
 | spaces/bQllaeunfO4BPaZU1ABc/uploads/DrOUIAG2nAdc0Lf0RxD8/Fyde_Core_Smart_Contract_Security_Assessment_Report_Halborn_Final.pdf | AddressRegistry | unmatched — not counted | — | listed in scope | no |
 | spaces/bQllaeunfO4BPaZU1ABc/uploads/DrOUIAG2nAdc0Lf0RxD8/Fyde_Core_Smart_Contract_Security_Assessment_Report_Halborn_Final.pdf | AssetRegistry | unmatched — not counted | — | listed in scope | no |
@@ -195,20 +195,20 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | spaces/bQllaeunfO4BPaZU1ABc/uploads/DrOUIAG2nAdc0Lf0RxD8/Fyde_Core_Smart_Contract_Security_Assessment_Report_Halborn_Final.pdf | Tax | unmatched — not counted | — | listed in scope | no |
 | spaces/bQllaeunfO4BPaZU1ABc/uploads/DrOUIAG2nAdc0Lf0RxD8/Fyde_Core_Smart_Contract_Security_Assessment_Report_Halborn_Final.pdf | TRSY | unmatched — not counted | — | listed in scope | no |
 | spaces/bQllaeunfO4BPaZU1ABc/uploads/DrOUIAG2nAdc0Lf0RxD8/Fyde_Core_Smart_Contract_Security_Assessment_Report_Halborn_Final.pdf | CloneFactory | unmatched — not counted | — | listed in scope | no |
-| spaces/bQllaeunfO4BPaZU1ABc/uploads/DrOUIAG2nAdc0Lf0RxD8/Fyde_Core_Smart_Contract_Security_Assessment_Report_Halborn_Final.pdf | GovernanceModule | own proxy deployment | GovernanceModule (proxy) (selected) `0xc6f509...8239e1` — deployed 2023-11-27 16:45:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/bQllaeunfO4BPaZU1ABc/uploads/DrOUIAG2nAdc0Lf0RxD8/Fyde_Core_Smart_Contract_Security_Assessment_Report_Halborn_Final.pdf | GovernanceModule | own proxy deployment | GovernanceModule (proxy) (selected) `0xc6f50903a058f3807111619bd4b24ca64b8239e1` — deployed 2023-11-27 16:45:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/bQllaeunfO4BPaZU1ABc/uploads/DrOUIAG2nAdc0Lf0RxD8/Fyde_Core_Smart_Contract_Security_Assessment_Report_Halborn_Final.pdf | ProxyRouter | unmatched — not counted | — | listed in scope | no |
-| spaces/bQllaeunfO4BPaZU1ABc/uploads/DrOUIAG2nAdc0Lf0RxD8/Fyde_Core_Smart_Contract_Security_Assessment_Report_Halborn_Final.pdf | sTRSY | own contract | sTRSY (selected) `0xe11df8...1566b9` — deployed 2024-06-10 15:19:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| spaces/bQllaeunfO4BPaZU1ABc/uploads/DrOUIAG2nAdc0Lf0RxD8/Fyde_Core_Smart_Contract_Security_Assessment_Report_Halborn_Final.pdf | UserProxy | own proxy deployment | GovernanceModule (proxy) (selected) `0xc6f509...8239e1` — deployed 2023-11-27 16:45:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| spaces/bQllaeunfO4BPaZU1ABc/uploads/DrOUIAG2nAdc0Lf0RxD8/Fyde_Core_Smart_Contract_Security_Assessment_Report_Halborn_Final.pdf | OracleModule | own contract | OracleModule (selected) `0x051983...bd2aee` — deployed 2024-06-10 15:19:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/bQllaeunfO4BPaZU1ABc/uploads/DrOUIAG2nAdc0Lf0RxD8/Fyde_Core_Smart_Contract_Security_Assessment_Report_Halborn_Final.pdf | sTRSY | own contract | sTRSY (selected) `0xe11df8c0e9b5697bd31515d0fc5f4c9bd71566b9` — deployed 2024-06-10 15:19:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/bQllaeunfO4BPaZU1ABc/uploads/DrOUIAG2nAdc0Lf0RxD8/Fyde_Core_Smart_Contract_Security_Assessment_Report_Halborn_Final.pdf | UserProxy | own proxy deployment | GovernanceModule (proxy) (selected) `0xc6f50903a058f3807111619bd4b24ca64b8239e1` — deployed 2023-11-27 16:45:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/bQllaeunfO4BPaZU1ABc/uploads/DrOUIAG2nAdc0Lf0RxD8/Fyde_Core_Smart_Contract_Security_Assessment_Report_Halborn_Final.pdf | OracleModule | own contract | OracleModule (selected) `0x05198327206123e89c24abd9a482316449bd2aee` — deployed 2024-06-10 15:19:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/bQllaeunfO4BPaZU1ABc/uploads/DrOUIAG2nAdc0Lf0RxD8/Fyde_Core_Smart_Contract_Security_Assessment_Report_Halborn_Final.pdf | ChainlinkAdapter | unmatched — not counted | — | listed in scope | no |
 | spaces/bQllaeunfO4BPaZU1ABc/uploads/DrOUIAG2nAdc0Lf0RxD8/Fyde_Core_Smart_Contract_Security_Assessment_Report_Halborn_Final.pdf | UniswapAdapter | unmatched — not counted | — | listed in scope | no |
 | spaces/bQllaeunfO4BPaZU1ABc/uploads/DrOUIAG2nAdc0Lf0RxD8/Fyde_Core_Smart_Contract_Security_Assessment_Report_Halborn_Final.pdf | BaseChecker | unmatched — not counted | — | listed in scope | no |
 | spaces/bQllaeunfO4BPaZU1ABc/uploads/DrOUIAG2nAdc0Lf0RxD8/Fyde_Core_Smart_Contract_Security_Assessment_Report_Halborn_Final.pdf | MathUtil | unmatched — not counted | — | listed in scope | no |
 | spaces/bQllaeunfO4BPaZU1ABc/uploads/DrOUIAG2nAdc0Lf0RxD8/Fyde_Core_Smart_Contract_Security_Assessment_Report_Halborn_Final.pdf | Ownable | unmatched — not counted | — | listed in scope | no |
 | spaces/bQllaeunfO4BPaZU1ABc/uploads/DrOUIAG2nAdc0Lf0RxD8/Fyde_Core_Smart_Contract_Security_Assessment_Report_Halborn_Final.pdf | PercentageMath | unmatched — not counted | — | listed in scope | no |
-| spaces/bQllaeunfO4BPaZU1ABc/uploads/KXNIVvRuIB6ImuEIo7dt/Fyde-security-review.pdf | RelayerV2 | own contract | RelayerV2 (selected) `0x6830c6...f32078` — deployed 2024-04-03 10:49:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| spaces/bQllaeunfO4BPaZU1ABc/uploads/KXNIVvRuIB6ImuEIo7dt/Fyde-security-review.pdf | TaxModule | own contract | TaxModule (selected) `0xf6bcf9...f1eb40` — deployed 2024-06-10 12:51:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| spaces/bQllaeunfO4BPaZU1ABc/uploads/KXNIVvRuIB6ImuEIo7dt/Fyde-security-review.pdf | OracleModule | own contract | OracleModule (selected) `0x051983...bd2aee` — deployed 2024-06-10 15:19:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/bQllaeunfO4BPaZU1ABc/uploads/KXNIVvRuIB6ImuEIo7dt/Fyde-security-review.pdf | RelayerV2 | own contract | RelayerV2 (selected) `0x6830c61df103946b63c786e63222c59677f32078` — deployed 2024-04-03 10:49:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/bQllaeunfO4BPaZU1ABc/uploads/KXNIVvRuIB6ImuEIo7dt/Fyde-security-review.pdf | TaxModule | own contract | TaxModule (selected) `0xf6bcf96f5bace0241303ee0819e2e009a7f1eb40` — deployed 2024-06-10 12:51:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/bQllaeunfO4BPaZU1ABc/uploads/KXNIVvRuIB6ImuEIo7dt/Fyde-security-review.pdf | OracleModule | own contract | OracleModule (selected) `0x05198327206123e89c24abd9a482316449bd2aee` — deployed 2024-06-10 15:19:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/bQllaeunfO4BPaZU1ABc/uploads/KXNIVvRuIB6ImuEIo7dt/Fyde-security-review.pdf | QuarantineList | unmatched — not counted | — | listed in scope | no |
 | spaces/bQllaeunfO4BPaZU1ABc/uploads/KXNIVvRuIB6ImuEIo7dt/Fyde-security-review.pdf | UniswapAdapter | unmatched — not counted | — | listed in scope | no |
 | spaces/bQllaeunfO4BPaZU1ABc/uploads/KXNIVvRuIB6ImuEIo7dt/Fyde-security-review.pdf | ChainlinkAdapter | unmatched — not counted | — | listed in scope | no |
@@ -221,9 +221,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x19d9d8...5adf6a` | RewardsDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x569871...1cf59c` | YieldStrategy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xa11d02...6de055` | YieldStrategy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x19d9d821f6a2ed80a0a9ae06e5b12edbdd5adf6a` | RewardsDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x569871ae260d85c5981374bba2b2353a3e1cf59c` | YieldStrategy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xa11d02c5ac034786deb0a7ad1dfcfacc0e6de055` | YieldStrategy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

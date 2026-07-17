@@ -52,12 +52,12 @@ The pinned logic-topography run contains 9 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- Migrator (`0x72cfed...6c811c`, chain 1)
-- Timelock (`0x8b4f16...ea3ec5`, chain 1)
-- UniswapV2Pair (`0x0f82e5...cb239c`, chain 1)
-- YAMDelegate3 (`0x0aacfb...0d8521`, chain 1)
-- YAMRebaser2 (`0xd93f40...5a1d55`, chain 1)
-- YAMReserves2 (`0x97990b...7dea17`, chain 1)
+- Migrator (`0x72cfed9293cbfb2bfc7515c413048c697c6c811c`, chain 1)
+- Timelock (`0x8b4f1616751117c38a0f84f9a146cca191ea3ec5`, chain 1)
+- UniswapV2Pair (`0x0f82e57804d0b1f6fab2370a43dcfad3c7cb239c`, chain 1)
+- YAMDelegate3 (`0x0aacfbec6a24756c20d41914f2caba817c0d8521`, chain 1)
+- YAMRebaser2 (`0xd93f403b432d39aa0f736c2021be6051d85a1d55`, chain 1)
+- YAMReserves2 (`0x97990b693835da58a281636296d2bf02787dea17`, chain 1)
 
 ## Contract Surface Quality
 
@@ -103,33 +103,33 @@ The pinned logic-topography run contains 9 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| DualGovernorAlpha | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x45f95c...dc9cc7` | ⚠️ Unaudited |
-| GovernorAlpha | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x627023...ae0908` | ⚠️ Unaudited |
-| IndexStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x465a5b...b4642d` | ⚠️ Unaudited |
-| Migrator | unknown | project_anchor | own_supporting | 0 | ethereum | unit-262586 | `0x72cfed...6c811c` | ⚠️ Unaudited |
-| OTC | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x92ab5c...ecb74c` | ⚠️ Unaudited |
-| Timelock | unknown | project_anchor | own_supporting | 0 | ethereum | unit-262588 | `0x8b4f16...ea3ec5` | ⚠️ Unaudited |
-| UmbrellaMetaPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc92ec8...a35379` | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | project_anchor | own_supporting | 0 | ethereum | unit-262584 | `0x0f82e5...cb239c` | ⚠️ Unaudited |
-| YAMAMPLPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9ebb67...90e663` | ⚠️ Unaudited |
-| YAMCOMPPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8538e5...048c9e` | ⚠️ Unaudited |
-| YAMDelegate | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 1 | ethereum | unit-262594 | `0x0e2298...55da16` | ⚠️ Unaudited |
-| YAMDelegate2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x209ddd...2b2526` | ⚠️ Unaudited |
-| YAMDelegate3 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-262593 | `0x0aacfb...0d8521` | ⚠️ Unaudited |
-| YAMETHPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x587a07...eb06f5` | ⚠️ Unaudited |
-| YAMIncentivizer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5b0501...32a0ed` | ⚠️ Unaudited |
-| YAMIncentivizerWithVoting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6ebf85...942ead` | ⚠️ Unaudited |
-| YAMLENDPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6009a3...9be5fd` | ⚠️ Unaudited |
-| YAMLINKPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf32f72...fd4e34` | ⚠️ Unaudited |
-| YAMMKRPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9a0846...7e4119` | ⚠️ Unaudited |
-| YAMRebaser | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1fb361...9a7b00` | ⚠️ Unaudited |
-| YAMRebaser2 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-262592 | `0xd93f40...5a1d55` | ⚠️ Unaudited |
-| YAMReserves | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-262591 | `0xcf27ca...362087` | ⚠️ Unaudited |
-| YAMReserves2 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-262589 | `0x97990b...7dea17` | ⚠️ Unaudited |
-| YAMSNXPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6c3fc1...7f132d` | ⚠️ Unaudited |
-| YAMv2 | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-262590 | `0xaba8ca...f6ad8a` | ⚠️ Unaudited |
-| YAMv2Migration | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf1d7c9...ffb1c1` | ⚠️ Unaudited |
-| YAMYFIPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x86ad8c...371275` | ⚠️ Unaudited |
+| DualGovernorAlpha | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x45f95ceb85e22877cf0285059405c205ebdc9cc7` | ⚠️ Unaudited |
+| GovernorAlpha | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x62702387c2a26c903985e9d078d18c45acae0908` | ⚠️ Unaudited |
+| IndexStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x465a5ba960173386a08505d178b8ca3e24b4642d` | ⚠️ Unaudited |
+| Migrator | unknown | project_anchor | own_supporting | 0 | ethereum | unit-262586 | `0x72cfed9293cbfb2bfc7515c413048c697c6c811c` | ⚠️ Unaudited |
+| OTC | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x92ab5cce7af1605da2681458ae52a0bec4ecb74c` | ⚠️ Unaudited |
+| Timelock | unknown | project_anchor | own_supporting | 0 | ethereum | unit-262588 | `0x8b4f1616751117c38a0f84f9a146cca191ea3ec5` | ⚠️ Unaudited |
+| UmbrellaMetaPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc92ec84423db017ee76354b786ac9c60bea35379` | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | project_anchor | own_supporting | 0 | ethereum | unit-262584 | `0x0f82e57804d0b1f6fab2370a43dcfad3c7cb239c` | ⚠️ Unaudited |
+| YAMAMPLPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9ebb67687fee2d265d7b824714df13622d90e663` | ⚠️ Unaudited |
+| YAMCOMPPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8538e5910c6f80419cd3170c26073ff238048c9e` | ⚠️ Unaudited |
+| YAMDelegate | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 1 | ethereum | unit-262594 | `0x0e2298e3b3390e3b945a5456fbf59ecc3f55da16` | ⚠️ Unaudited |
+| YAMDelegate2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x209ddd6b50f748b6eaa25a2793341566492b2526` | ⚠️ Unaudited |
+| YAMDelegate3 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-262593 | `0x0aacfbec6a24756c20d41914f2caba817c0d8521` | ⚠️ Unaudited |
+| YAMETHPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x587a07ce5c265a38dd6d42def1566ba73eeb06f5` | ⚠️ Unaudited |
+| YAMIncentivizer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5b0501f7041120d36bc8c6dc3faea0b74b32a0ed` | ⚠️ Unaudited |
+| YAMIncentivizerWithVoting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6ebf85f830e7d5b3d01eb64e34a1003223942ead` | ⚠️ Unaudited |
+| YAMLENDPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6009a344c7f993b16eba2c673fefd2e07f9be5fd` | ⚠️ Unaudited |
+| YAMLINKPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf32f72ac09cb6c002d0954318bb548321ffd4e34` | ⚠️ Unaudited |
+| YAMMKRPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9a0846911e2c6edb06bea20e6fef9bbbf37e4119` | ⚠️ Unaudited |
+| YAMRebaser | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1fb361f274f316d383b94d761832ab68099a7b00` | ⚠️ Unaudited |
+| YAMRebaser2 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-262592 | `0xd93f403b432d39aa0f736c2021be6051d85a1d55` | ⚠️ Unaudited |
+| YAMReserves | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-262591 | `0xcf27ca116dd5c7b4201c75b46489d1c075362087` | ⚠️ Unaudited |
+| YAMReserves2 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-262589 | `0x97990b693835da58a281636296d2bf02787dea17` | ⚠️ Unaudited |
+| YAMSNXPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6c3fc1ffdb14d92394f40eec91d9ce8b807f132d` | ⚠️ Unaudited |
+| YAMv2 | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-262590 | `0xaba8cac6866b83ae4eec97dd07ed254282f6ad8a` | ⚠️ Unaudited |
+| YAMv2Migration | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf1d7c9e4c57a5c1902f4a4ae2630d2da78ffb1c1` | ⚠️ Unaudited |
+| YAMYFIPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x86ad8caa66c407d7485b05584b9ac9a7e2371275` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -166,11 +166,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x72cfed...6c811c` | Migrator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x8b4f16...ea3ec5` | Timelock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x0aacfb...0d8521` | YAMDelegate3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xd93f40...5a1d55` | YAMRebaser2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x97990b...7dea17` | YAMReserves2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x72cfed9293cbfb2bfc7515c413048c697c6c811c` | Migrator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x8b4f1616751117c38a0f84f9a146cca191ea3ec5` | Timelock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x0aacfbec6a24756c20d41914f2caba817c0d8521` | YAMDelegate3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xd93f403b432d39aa0f736c2021be6051d85a1d55` | YAMRebaser2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x97990b693835da58a281636296d2bf02787dea17` | YAMReserves2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

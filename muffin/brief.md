@@ -61,15 +61,15 @@ The protocol comprises 2 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Lens | unknown | ethereum | n/a | [`0xaa7d5b...7de935`](./contracts/ethereum-1/0xaa7d5bdf76f6143f200f6f2d831bb049a37de935/) | ✅ Audited |
-| Manager | unknown | ethereum | n/a | [`0xa9a03f...f35077`](./contracts/ethereum-1/0xa9a03ff1bac0f600cbb4e1e788fd924a43f35077/) | ✅ Audited |
-| MuffinHubPositions | unknown | ethereum | n/a | [`0x5dd244...32a858`](./contracts/ethereum-1/0x5dd2444a17edc079210077924906d5bdf432a858/) | ✅ Audited |
+| Lens | unknown | ethereum | n/a | [`0xaa7d5bdf76f6143f200f6f2d831bb049a37de935`](./contracts/ethereum-1/0xaa7d5bdf76f6143f200f6f2d831bb049a37de935/) | ✅ Audited |
+| Manager | unknown | ethereum | n/a | [`0xa9a03ff1bac0f600cbb4e1e788fd924a43f35077`](./contracts/ethereum-1/0xa9a03ff1bac0f600cbb4e1e788fd924a43f35077/) | ✅ Audited |
+| MuffinHubPositions | unknown | ethereum | n/a | [`0x5dd2444a17edc079210077924906d5bdf432a858`](./contracts/ethereum-1/0x5dd2444a17edc079210077924906d5bdf432a858/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| MuffinMigrator | unknown | ethereum | n/a | [`0xa74cc5...cee785`](./contracts/ethereum-1/0xa74cc5c431531bf2601250c52825dc7b3dcee785/) | ⚠️ Unaudited |
+| MuffinMigrator | unknown | ethereum | n/a | [`0xa74cc5c431531bf2601250c52825dc7b3dcee785`](./contracts/ethereum-1/0xa74cc5c431531bf2601250c52825dc7b3dcee785/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -104,7 +104,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xa74cc5...cee785`](./contracts/ethereum-1/0xa74cc5c431531bf2601250c52825dc7b3dcee785/) | MuffinMigrator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa74cc5c431531bf2601250c52825dc7b3dcee785`](./contracts/ethereum-1/0xa74cc5c431531bf2601250c52825dc7b3dcee785/) | MuffinMigrator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

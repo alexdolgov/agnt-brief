@@ -52,20 +52,20 @@ The pinned logic-topography run contains 17 contract row(s) across base. Structu
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x25f11f...e186c1`, chain 8453)
-- EpochStakingDistributor (`0x781a80...a6588a`, chain 8453)
-- GnosisSafeProxy (`0x1039cb...739d37`, chain 8453)
-- iAEROAutoUSDCVault (`0xfe5c92...59c774`, chain 8453)
-- iAEROToken (`0x81034f...46a1dc`, chain 8453)
-- LIQLinearVester (`0xf1d25f...f319db`, chain 8453)
-- LIQStakingDistributor (`0xb81efc...0cdda4`, chain 8453)
-- LIQToken (`0x7ee896...93e6a8`, chain 8453)
-- PermalockVault_V5 (`0x180dab...c37909`, chain 8453)
-- RewardsHarvesterV2 (`0x77f90d...b8bfe5`, chain 8453)
-- RewardsSugar (`0xd4ad2e...defe3e`, chain 8453)
-- StiAERO (`0x72c135...4d683d`, chain 8453)
-- TreasuryDistributor (`0xd36b84...76c8e0`, chain 8453)
-- VotingManagerOptimised (`0xa0ebbd...fed0b8`, chain 8453)
+- UnnamedContract (`0x25f11f947309df89bf4d36da5d9a9fb5f1e186c1`, chain 8453)
+- EpochStakingDistributor (`0x781a80fa817b5a146c440f03ef8643f4aca6588a`, chain 8453)
+- GnosisSafeProxy (`0x1039cb48254a3150fc604d4b9ea08f66f4739d37`, chain 8453)
+- iAEROAutoUSDCVault (`0xfe5c929677d97723dc822c86c93c7e2d1b59c774`, chain 8453)
+- iAEROToken (`0x81034fb34009115f215f5d5f564aac9ffa46a1dc`, chain 8453)
+- LIQLinearVester (`0xf1d25f4ee64988afad0f1612cc3d540725f319db`, chain 8453)
+- LIQStakingDistributor (`0xb81efc6be6622bf4086566210a6ad134cd0cdda4`, chain 8453)
+- LIQToken (`0x7ee8964160126081cebc443a42482e95e393e6a8`, chain 8453)
+- PermalockVault_V5 (`0x180dab53968e599dd43cf431e27cb01aa5c37909`, chain 8453)
+- RewardsHarvesterV2 (`0x77f90d2ddb15ffe28fa322ada351d11da3b8bfe5`, chain 8453)
+- RewardsSugar (`0xd4ad2eeeb3314d54212a92f4cbbe684195defe3e`, chain 8453)
+- StiAERO (`0x72c135b8eebc57a3823f0920233e1a90ff4d683d`, chain 8453)
+- TreasuryDistributor (`0xd36b84eefd1f481a737595c8212c43a9cd76c8e0`, chain 8453)
+- VotingManagerOptimised (`0xa0ebbded0e201a9c37f4bffbb831cb8db9fed0b8`, chain 8453)
 
 ## Contract Surface Quality
 
@@ -109,46 +109,46 @@ The pinned logic-topography run contains 17 contract row(s) across base. Structu
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| EpochStakingDistributor | operational_periphery | project_anchor | own_supporting | 0 | base | unit-242312 | `0x781a80...a6588a` | ✅ Audited |
-| iAEROToken | token | project_anchor | own_supporting | 0 | base | unit-242314 | `0x81034f...46a1dc` | ✅ Audited |
-| LIQToken | token | project_anchor | own_supporting | 0 | base | unit-242313 | `0x7ee896...93e6a8` | ✅ Audited |
-| RewardsHarvesterV2 | operational_periphery | project_anchor | own_supporting | 0 | base | unit-242311 | `0x77f90d...b8bfe5` | ✅ Audited |
-| StiAERO | token | project_anchor | own_supporting | 0 | base | unit-242310 | `0x72c135...4d683d` | ✅ Audited |
-| VotingManagerOptimised | governance | project_anchor | own_supporting | 0 | base | unit-242316 | `0xa0ebbd...fed0b8` | ✅ Audited |
+| EpochStakingDistributor | operational_periphery | project_anchor | own_supporting | 0 | base | unit-242312 | `0x781a80fa817b5a146c440f03ef8643f4aca6588a` | ✅ Audited |
+| iAEROToken | token | project_anchor | own_supporting | 0 | base | unit-242314 | `0x81034fb34009115f215f5d5f564aac9ffa46a1dc` | ✅ Audited |
+| LIQToken | token | project_anchor | own_supporting | 0 | base | unit-242313 | `0x7ee8964160126081cebc443a42482e95e393e6a8` | ✅ Audited |
+| RewardsHarvesterV2 | operational_periphery | project_anchor | own_supporting | 0 | base | unit-242311 | `0x77f90d2ddb15ffe28fa322ada351d11da3b8bfe5` | ✅ Audited |
+| StiAERO | token | project_anchor | own_supporting | 0 | base | unit-242310 | `0x72c135b8eebc57a3823f0920233e1a90ff4d683d` | ✅ Audited |
+| VotingManagerOptimised | governance | project_anchor | own_supporting | 0 | base | unit-242316 | `0xa0ebbded0e201a9c37f4bffbb831cb8db9fed0b8` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (29)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Aero | token | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-242315 | `0x940181...d98631` | ⚠️ Unaudited |
-| FiatTokenV2_2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x833589...a02913` | ⚠️ Unaudited |
-| GaugeFactory | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x35f35c...5bbcb5` | ⚠️ Unaudited |
-| GnosisSafeL2 | governance | project_anchor | own_supporting | 1 | base | unit-242324 | `0x1039cb...739d37` | ⚠️ Unaudited |
-| iAEROAutoUSDCVault | core_logic | project_anchor | own_supporting | 0 | base | unit-242323 | `0xfe5c92...59c774` | ⚠️ Unaudited |
-| iAEROToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb2d632...f8f4c9` | ⚠️ Unaudited |
-| LIQLinearVester | operational_periphery | project_anchor | own_supporting | 0 | base | unit-242322 | `0xf1d25f...f319db` | ⚠️ Unaudited |
-| LIQStakingDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x4b591f...05be16`; base `0xe84945...9f8e47` | ⚠️ Unaudited |
-| LIQStakingDistributor | operational_periphery | project_anchor | own_supporting | 0 | base | unit-242317 | `0xb81efc...0cdda4` | ⚠️ Unaudited |
-| LIQToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x76d17a...ad37d6` | ⚠️ Unaudited |
-| Minter | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xeb0183...a33fe5` | ⚠️ Unaudited |
-| PermalockVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 4 deployments: base `0x38cc79...f59c70`; base `0x430c3d...fb7ca0`; base `0x55816b...0f339c`; base `0x6584a3...552c61` | ⚠️ Unaudited |
-| PermalockVault_V5 | core_logic | project_anchor | own_supporting | 0 | base | unit-242308 | `0x180dab...c37909` | ⚠️ Unaudited |
-| PermalockVault_V5 | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x877398...953957`; base `0x9322a2...8e3248` | ⚠️ Unaudited |
-| Pool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x08d49d...38affd` | ⚠️ Unaudited |
-| RewardsDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x227f65...964c7d` | ⚠️ Unaudited |
-| RewardsHarvester | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 4 deployments: base `0x1dcdcc...4769ff`; base `0x1f935e...44acfa`; base `0xa520f8...80750a`; base `0xe9fd07...9459c4` | ⚠️ Unaudited |
-| RewardsSugar | unknown | project_anchor | own_supporting | 0 | base | unit-242320 | `0xd4ad2e...defe3e` | ⚠️ Unaudited |
-| RewardTokenRegistry | registry | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xd3e32b...ca072c` | ⚠️ Unaudited |
-| Router | adapter | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-242318 | `0xcf77a3...874e43` | ⚠️ Unaudited |
-| StakingDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x5ae349...9fc7e1` | ⚠️ Unaudited |
-| StakingDistributorV2 | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2c2b15...bd4dbf` | ⚠️ Unaudited |
-| TreasuryDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: base `0x0ab24c...e65ee8`; base `0x4306e5...5b1bdc`; base `0x7098c0...e541f9` | ⚠️ Unaudited |
-| TreasuryDistributor | operational_periphery | project_anchor | own_supporting | 0 | base | unit-242319 | `0xd36b84...76c8e0` | ⚠️ Unaudited |
-| VeArtProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xe99924...54643e` | ⚠️ Unaudited |
-| Voter | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-242307 | `0x166135...c480a5` | ⚠️ Unaudited |
-| VotingEscrow | operational_periphery | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-242321 | `0xebf418...67e6b4` | ⚠️ Unaudited |
-| VotingManager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 4 deployments: base `0x06026f...0565a4`; base `0xc9c7bf...a26498`; base `0xde7785...328c7f`; base `0xdf5ebf...61cebf` | ⚠️ Unaudited |
-| VotingManagerOptimised | governance | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x1702dd...8e6fbb`; base `0xe7082a...5589b0` | ⚠️ Unaudited |
+| Aero | token | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-242315 | `0x940181a94a35a4569e4529a3cdfb74e38fd98631` | ⚠️ Unaudited |
+| FiatTokenV2_2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x833589fcd6edb6e08f4c7c32d4f71b54bda02913` | ⚠️ Unaudited |
+| GaugeFactory | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x35f35ca5b132cadf2916bab57639128eac5bbcb5` | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | project_anchor | own_supporting | 1 | base | unit-242324 | `0x1039cb48254a3150fc604d4b9ea08f66f4739d37` | ⚠️ Unaudited |
+| iAEROAutoUSDCVault | core_logic | project_anchor | own_supporting | 0 | base | unit-242323 | `0xfe5c929677d97723dc822c86c93c7e2d1b59c774` | ⚠️ Unaudited |
+| iAEROToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb2d6326eaec90ccbc9ce9b5d4a9367b307f8f4c9` | ⚠️ Unaudited |
+| LIQLinearVester | operational_periphery | project_anchor | own_supporting | 0 | base | unit-242322 | `0xf1d25f4ee64988afad0f1612cc3d540725f319db` | ⚠️ Unaudited |
+| LIQStakingDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x4b591f40c9e2a8e11495837386e1c03c8605be16`; base `0xe84945285b92e0afc6e61acb1f2c45d0699f8e47` | ⚠️ Unaudited |
+| LIQStakingDistributor | operational_periphery | project_anchor | own_supporting | 0 | base | unit-242317 | `0xb81efc6be6622bf4086566210a6ad134cd0cdda4` | ⚠️ Unaudited |
+| LIQToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x76d17a9bb85b272421e0fa46cc8ebf669fad37d6` | ⚠️ Unaudited |
+| Minter | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xeb018363f0a9af8f91f06fee6613a751b2a33fe5` | ⚠️ Unaudited |
+| PermalockVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 4 deployments: base `0x38cc7923d5190a0e0fbdb8e51bce8ae8cef59c70`; base `0x430c3dc3cbf7b166d4ad3a7d1255ac4762fb7ca0`; base `0x55816b387d4077e26bbf51ad90ba3ed7fe0f339c`; base `0x6584a3cff5a9edc564fc5e75ec33898340552c61` | ⚠️ Unaudited |
+| PermalockVault_V5 | core_logic | project_anchor | own_supporting | 0 | base | unit-242308 | `0x180dab53968e599dd43cf431e27cb01aa5c37909` | ⚠️ Unaudited |
+| PermalockVault_V5 | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x877398aea8b5ccb0d482705c2d88df768c953957`; base `0x9322a2155815cd636a16e66bef717b1b848e3248` | ⚠️ Unaudited |
+| Pool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x08d49da370ecffbc4c6fdd2ae82b2d6ae238affd` | ⚠️ Unaudited |
+| RewardsDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x227f65131a261548b057215bb1d5ab2997964c7d` | ⚠️ Unaudited |
+| RewardsHarvester | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 4 deployments: base `0x1dcdcc16167520256c3b13e18266615d504769ff`; base `0x1f935ebfeed8d68b901c154338223a33d044acfa`; base `0xa520f8d85d2fcebecd44b657f909aa3cc980750a`; base `0xe9fd07f2161d3fe49939acb379f157c4839459c4` | ⚠️ Unaudited |
+| RewardsSugar | unknown | project_anchor | own_supporting | 0 | base | unit-242320 | `0xd4ad2eeeb3314d54212a92f4cbbe684195defe3e` | ⚠️ Unaudited |
+| RewardTokenRegistry | registry | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xd3e32b22da6bf601a5917ecd344a7ec46bca072c` | ⚠️ Unaudited |
+| Router | adapter | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-242318 | `0xcf77a3ba9a5ca399b7c97c74d54e5b1beb874e43` | ⚠️ Unaudited |
+| StakingDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x5ae34974387dfe5b141770274adc7ef5749fc7e1` | ⚠️ Unaudited |
+| StakingDistributorV2 | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2c2b15113ad031ae12e154ee83f16a17dcbd4dbf` | ⚠️ Unaudited |
+| TreasuryDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: base `0x0ab24cdd6e23040e37fc24b19e1d43fbe9e65ee8`; base `0x4306e56213e985276b99fd5f5c5ae097fa5b1bdc`; base `0x7098c065578577926b3b34f4dd6f8172a8e541f9` | ⚠️ Unaudited |
+| TreasuryDistributor | operational_periphery | project_anchor | own_supporting | 0 | base | unit-242319 | `0xd36b84eefd1f481a737595c8212c43a9cd76c8e0` | ⚠️ Unaudited |
+| VeArtProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xe9992487b2ee03b7a91241695a58e0ef3654643e` | ⚠️ Unaudited |
+| Voter | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-242307 | `0x16613524e02ad97edfef371bc883f2f5d6c480a5` | ⚠️ Unaudited |
+| VotingEscrow | operational_periphery | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-242321 | `0xebf418fe2512e7e6bd9b87a8f0f294acdc67e6b4` | ⚠️ Unaudited |
+| VotingManager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 4 deployments: base `0x06026fe30ce9e9a613a21a87af210022c80565a4`; base `0xc9c7bf2157163f859da851655ea02e14a3a26498`; base `0xde7785264cf9aceaf00e535bfb1067cd8d328c7f`; base `0xdf5ebfba1e39e206f1dcdbf93231ee5b7061cebf` | ⚠️ Unaudited |
+| VotingManagerOptimised | governance | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x1702ddf00e4ff3ed892e569a26e0f1f6858e6fbb`; base `0xe7082a6ecd7218ad6c8af732acb2305b5e5589b0` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -168,8 +168,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-242309 | `0x25f11f...e186c1` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x75f57f...aa765a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-242309 | `0x25f11f947309df89bf4d36da5d9a9fb5f1e186c1` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x75f57faf06f0191a1422a665bfc297bcb6aa765a` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -198,12 +198,12 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
 | - [Audit PermaLock Vault]() | PermalockVault_V5 | unmatched — not counted | — | Contract address and name mentioned in audit report title and throughout | no |
-| - [Audit Voting Manager Optimised]() | VotingManagerOptimised | own contract | VotingManagerOptimised (selected) `0xa0ebbd...fed0b8` — deployed 2025-10-10 00:59:03+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| - [Audit iAero & LIQ]() | iAEROToken | own contract | iAEROToken (selected) `0x81034f...46a1dc` — deployed 2025-08-26 01:42:15+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| - [Audit iAero & LIQ]() | LIQToken | own contract | LIQToken (selected) `0x7ee896...93e6a8` — deployed 2025-08-26 01:47:15+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| - [Audit Rewards Harvester]() | RewardsHarvester | own contract | RewardsHarvesterV2 (selected) `0x77f90d...b8bfe5` — deployed 2025-10-10 01:44:33+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| - [Audits Epoch Staking Distributor & stiAERO]() | EpochStakingDistributor | own contract | EpochStakingDistributor (selected) `0x781a80...a6588a` — deployed 2025-09-06 03:41:17+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| - [Audits Epoch Staking Distributor & stiAERO]() | StiAERO | own contract | StiAERO (selected) `0x72c135...4d683d` — deployed 2025-09-06 03:41:17+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| - [Audit Voting Manager Optimised]() | VotingManagerOptimised | own contract | VotingManagerOptimised (selected) `0xa0ebbded0e201a9c37f4bffbb831cb8db9fed0b8` — deployed 2025-10-10 00:59:03+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| - [Audit iAero & LIQ]() | iAEROToken | own contract | iAEROToken (selected) `0x81034fb34009115f215f5d5f564aac9ffa46a1dc` — deployed 2025-08-26 01:42:15+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| - [Audit iAero & LIQ]() | LIQToken | own contract | LIQToken (selected) `0x7ee8964160126081cebc443a42482e95e393e6a8` — deployed 2025-08-26 01:47:15+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| - [Audit Rewards Harvester]() | RewardsHarvester | own contract | RewardsHarvesterV2 (selected) `0x77f90d2ddb15ffe28fa322ada351d11da3b8bfe5` — deployed 2025-10-10 01:44:33+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| - [Audits Epoch Staking Distributor & stiAERO]() | EpochStakingDistributor | own contract | EpochStakingDistributor (selected) `0x781a80fa817b5a146c440f03ef8643f4aca6588a` — deployed 2025-09-06 03:41:17+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| - [Audits Epoch Staking Distributor & stiAERO]() | StiAERO | own contract | StiAERO (selected) `0x72c135b8eebc57a3823f0920233e1a90ff4d683d` — deployed 2025-09-06 03:41:17+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 
 ## Coverage Gaps
 
@@ -211,12 +211,12 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | `0xfe5c92...59c774` | iAEROAutoUSDCVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xf1d25f...f319db` | LIQLinearVester | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xb81efc...0cdda4` | LIQStakingDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x180dab...c37909` | PermalockVault_V5 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xd4ad2e...defe3e` | RewardsSugar | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xd36b84...76c8e0` | TreasuryDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xfe5c929677d97723dc822c86c93c7e2d1b59c774` | iAEROAutoUSDCVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xf1d25f4ee64988afad0f1612cc3d540725f319db` | LIQLinearVester | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xb81efc6be6622bf4086566210a6ad134cd0cdda4` | LIQStakingDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x180dab53968e599dd43cf431e27cb01aa5c37909` | PermalockVault_V5 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xd4ad2eeeb3314d54212a92f4cbbe684195defe3e` | RewardsSugar | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xd36b84eefd1f481a737595c8212c43a9cd76c8e0` | TreasuryDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

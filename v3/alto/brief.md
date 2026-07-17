@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- ERC1967Proxy (`0x133cf0...c46788`, chain 1)
+- ERC1967Proxy (`0x133cf03d2a7a87b9239b1a3a8dd62f3f27c46788`, chain 1)
 
 ## Contract Surface Quality
 
@@ -103,22 +103,22 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AddressChange | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8cf6f8...0c0bb2` | ⚠️ Unaudited |
-| AltoAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x241aa0...f59c0c` | ⚠️ Unaudited |
-| AltoLeverage | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0e64cc...f98a33` | ⚠️ Unaudited |
-| AltoLeverageSwapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0e635f...101941` | ⚠️ Unaudited |
-| AltoMintMarket | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x195b11...3e866e` | ⚠️ Unaudited |
-| AltoReferralWhitelistAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x766d36...39513d` | ⚠️ Unaudited |
-| AltoTimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb9f06f...8bb6dd` | ⚠️ Unaudited |
-| AltoTimelockControllerMintMarketFee | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5f80c1...90fa96` | ⚠️ Unaudited |
-| Bundler3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xac8038...d6823d` | ⚠️ Unaudited |
-| DlbDcfPriorityLiquidationEngine | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2a3fb5...09f45b` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-266808 | `0x133cf0...c46788` | ⚠️ Unaudited |
-| FixedRateIrm | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0e4065...f83896` | ⚠️ Unaudited |
-| MarketRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbd45d5...ed2257` | ⚠️ Unaudited |
-| UsmRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xad5620...548e5e` | ⚠️ Unaudited |
-| UsmSellAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xaac86f...90af24` | ⚠️ Unaudited |
-| VaultRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x696e7b...f17a47` | ⚠️ Unaudited |
+| AddressChange | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8cf6f8d0201f38fa3e6f21c1f4803f4eb40c0bb2` | ⚠️ Unaudited |
+| AltoAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x241aa0ac561a5c210a86fecc82f45d2713f59c0c` | ⚠️ Unaudited |
+| AltoLeverage | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0e64cc242fa7a7a294efc29b0ca08daa6bf98a33` | ⚠️ Unaudited |
+| AltoLeverageSwapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0e635f6529d37ecad98b5d709beb479cdc101941` | ⚠️ Unaudited |
+| AltoMintMarket | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x195b11839e371bd25346f14158f6c51f733e866e` | ⚠️ Unaudited |
+| AltoReferralWhitelistAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x766d36c3e140a29bd47390958939ed7f7239513d` | ⚠️ Unaudited |
+| AltoTimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb9f06fefc4c53ded77a90cb798ed08dc068bb6dd` | ⚠️ Unaudited |
+| AltoTimelockControllerMintMarketFee | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5f80c18b6b73b1c4f06fa5233de32778ec90fa96` | ⚠️ Unaudited |
+| Bundler3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xac80387009231b4d55b85df27924b85f2ed6823d` | ⚠️ Unaudited |
+| DlbDcfPriorityLiquidationEngine | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2a3fb51184183405c975bd8b355d4dc43209f45b` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-266808 | `0x133cf03d2a7a87b9239b1a3a8dd62f3f27c46788` | ⚠️ Unaudited |
+| FixedRateIrm | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0e4065c4db1802d3f24d538c8f685571c7f83896` | ⚠️ Unaudited |
+| MarketRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbd45d50611c38e35dd1d1119077de1e988ed2257` | ⚠️ Unaudited |
+| UsmRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xad5620e10c33918e2c6a2e8e53325bf98c548e5e` | ⚠️ Unaudited |
+| UsmSellAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xaac86f77eb51fa1d565b743c43dece2cef90af24` | ⚠️ Unaudited |
+| VaultRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x696e7b1d5d11e2cf7f7b970acf54cf1491f17a47` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

@@ -64,10 +64,10 @@ The protocol comprises 6 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BendToken | token | ethereum | n/a | 2 deployments: ethereum [`0x02863c...1e9153`](./contracts/ethereum-1/0x02863c14603c3b157379999f567ddece151e9153/); ethereum `0x0d0275...f56218` | ⚠️ Unaudited |
-| BendUpgradeableProxy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x607d11...6ca80f`](./contracts/ethereum-1/0x607d113a67f456292939c636becccfb3656ca80f/); ethereum `0xf0dfc1...f159a0` | ⚠️ Unaudited |
-| MerkleDistributor | operational_periphery | ethereum | n/a | [`0x1b5d29...a5bc27`](./contracts/ethereum-1/0x1b5d2904be3e4711a848be09b17dee89e6a5bc27/) | ⚠️ Unaudited |
-| ProxyAdmin | governance | ethereum | n/a | [`0x859f6e...98cf66`](./contracts/ethereum-1/0x859f6e05410893fe64bc84d92bda773ff798cf66/) | ⚠️ Unaudited |
+| BendToken | token | ethereum | n/a | 2 deployments: ethereum [`0x02863c14603c3b157379999f567ddece151e9153`](./contracts/ethereum-1/0x02863c14603c3b157379999f567ddece151e9153/); ethereum `0x0d02755a5700414b26ff040e1de35d337df56218` | ⚠️ Unaudited |
+| BendUpgradeableProxy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x607d113a67f456292939c636becccfb3656ca80f`](./contracts/ethereum-1/0x607d113a67f456292939c636becccfb3656ca80f/); ethereum `0xf0dfc149feab7bc2380f8d53b6353c6743f159a0` | ⚠️ Unaudited |
+| MerkleDistributor | operational_periphery | ethereum | n/a | [`0x1b5d2904be3e4711a848be09b17dee89e6a5bc27`](./contracts/ethereum-1/0x1b5d2904be3e4711a848be09b17dee89e6a5bc27/) | ⚠️ Unaudited |
+| ProxyAdmin | governance | ethereum | n/a | [`0x859f6e05410893fe64bc84d92bda773ff798cf66`](./contracts/ethereum-1/0x859f6e05410893fe64bc84d92bda773ff798cf66/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -87,7 +87,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x5e0785...1c0171` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x5e0785d84e60f4c94f970ac8a7a8561d761c0171` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -101,7 +101,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x02863c...1e9153`](./contracts/ethereum-1/0x02863c14603c3b157379999f567ddece151e9153/) | BendToken | token | $246,324.55 | Verified native implementation with $246,324.55 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x02863c14603c3b157379999f567ddece151e9153`](./contracts/ethereum-1/0x02863c14603c3b157379999f567ddece151e9153/) | BendToken | token | $246,324.55 | Verified native implementation with $246,324.55 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

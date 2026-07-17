@@ -61,21 +61,21 @@ The protocol comprises 5 functional families. Its contracts share 3 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Airdrop | operational_periphery | arbitrum | n/a | [`0xf6e8fe...7e6b99`](./contracts/arbitrum-42161/0xf6e8fef3e5e0a7664caedbcc3e655e188a7e6b99/) | ✅ Audited |
-| BasicIssuanceModule | unknown | arbitrum | n/a | 2 deployments: polygon `0x6f0790...4cb8ed`; arbitrum [`0x018afb...925e82`](./contracts/arbitrum-42161/0x018afbf49356138d7ccf465f3f3420e233925e82/) | ✅ Audited |
-| ExchangeIssuanceZeroEx | unknown | polygon | n/a | 4 deployments: polygon [`0x44ace3...a408c4`](./contracts/polygon-137/0x44ace3accfb7ec2150a9b5a0ca747e65f2a408c4/); polygon `0xdbf320...79f058`; arbitrum `0x7eea52...b86c79`; arbitrum `0x8ca32f...65a585` | ✅ Audited |
-| IndexStaking | unknown | arbitrum | n/a | [`0x8087cb...f4312d`](./contracts/arbitrum-42161/0x8087cb6c02b7a3c35e8c88cdbbd5eeb3fcf4312d/) | ✅ Audited |
-| LockonVesting | operational_periphery | arbitrum | n/a | [`0x555962...91f2a0`](./contracts/arbitrum-42161/0x555962ce3093b15fac8d37c2a49935c96991f2a0/) | ✅ Audited |
-| LockStaking | unknown | arbitrum | n/a | [`0x36f6dd...11423a`](./contracts/arbitrum-42161/0x36f6ddf9ee7c6dbec3e799c81d03a7986411423a/) | ✅ Audited |
-| LockToken | token | arbitrum | n/a | [`0x992c20...d6ef74`](./contracts/arbitrum-42161/0x992c20c4e2f10f6b2c81ee686a200569fbd6ef74/) | ✅ Audited |
-| PositionUnitAdjusterModule | unknown | polygon | n/a | 4 deployments: polygon [`0x8c2e03...95f06b`](./contracts/polygon-137/0x8c2e0399291d6225517a873de04ab92c2c95f06b/); polygon `0xb9bf07...642282`; arbitrum `0x99871a...b17278`; arbitrum `0xe1093e...05b7eb` | ✅ Audited |
-| TradeModule | unknown | arbitrum | n/a | 3 deployments: polygon `0x6cc11e...1c3b01`; arbitrum [`0x495113...a026a6`](./contracts/arbitrum-42161/0x4951133b9429ac86ea894b428ff6409b08a026a6/); arbitrum `0xebe11a...56bcd3` | ✅ Audited |
+| Airdrop | operational_periphery | arbitrum | n/a | [`0xf6e8fef3e5e0a7664caedbcc3e655e188a7e6b99`](./contracts/arbitrum-42161/0xf6e8fef3e5e0a7664caedbcc3e655e188a7e6b99/) | ✅ Audited |
+| BasicIssuanceModule | unknown | arbitrum | n/a | 2 deployments: polygon `0x6f0790c97379d30cd02e8b3688ca6655a14cb8ed`; arbitrum [`0x018afbf49356138d7ccf465f3f3420e233925e82`](./contracts/arbitrum-42161/0x018afbf49356138d7ccf465f3f3420e233925e82/) | ✅ Audited |
+| ExchangeIssuanceZeroEx | unknown | polygon | n/a | 4 deployments: polygon [`0x44ace3accfb7ec2150a9b5a0ca747e65f2a408c4`](./contracts/polygon-137/0x44ace3accfb7ec2150a9b5a0ca747e65f2a408c4/); polygon `0xdbf3204ecf63c26c06685140edffb2172079f058`; arbitrum `0x7eea5246d5fc47d97d04ce9fa23640d821b86c79`; arbitrum `0x8ca32fe0c266ef97d000db0ec3758e7f9665a585` | ✅ Audited |
+| IndexStaking | unknown | arbitrum | n/a | [`0x8087cb6c02b7a3c35e8c88cdbbd5eeb3fcf4312d`](./contracts/arbitrum-42161/0x8087cb6c02b7a3c35e8c88cdbbd5eeb3fcf4312d/) | ✅ Audited |
+| LockonVesting | operational_periphery | arbitrum | n/a | [`0x555962ce3093b15fac8d37c2a49935c96991f2a0`](./contracts/arbitrum-42161/0x555962ce3093b15fac8d37c2a49935c96991f2a0/) | ✅ Audited |
+| LockStaking | unknown | arbitrum | n/a | [`0x36f6ddf9ee7c6dbec3e799c81d03a7986411423a`](./contracts/arbitrum-42161/0x36f6ddf9ee7c6dbec3e799c81d03a7986411423a/) | ✅ Audited |
+| LockToken | token | arbitrum | n/a | [`0x992c20c4e2f10f6b2c81ee686a200569fbd6ef74`](./contracts/arbitrum-42161/0x992c20c4e2f10f6b2c81ee686a200569fbd6ef74/) | ✅ Audited |
+| PositionUnitAdjusterModule | unknown | polygon | n/a | 4 deployments: polygon [`0x8c2e0399291d6225517a873de04ab92c2c95f06b`](./contracts/polygon-137/0x8c2e0399291d6225517a873de04ab92c2c95f06b/); polygon `0xb9bf0710d606b39d2f71acf328d5cd277b642282`; arbitrum `0x99871ad98beb57c0a9e304bf298aab17b3b17278`; arbitrum `0xe1093e1a3f09170fda78c7011b82eacb6b05b7eb` | ✅ Audited |
+| TradeModule | unknown | arbitrum | n/a | 3 deployments: polygon `0x6cc11e2de10f7539bfd38b49549957a9081c3b01`; arbitrum [`0x4951133b9429ac86ea894b428ff6409b08a026a6`](./contracts/arbitrum-42161/0x4951133b9429ac86ea894b428ff6409b08a026a6/); arbitrum `0xebe11a8cef9f0502797c6a5781ccfbca8c56bcd3` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| SetToken | token | polygon | n/a | 3 deployments: polygon [`0xadb6d6...437252`](./contracts/polygon-137/0xadb6d62e142a2f911fb3c9ca1c1d0fe5d9437252/); polygon `0xbe9a09...e30f63`; polygon `0xd32dfe...80662f` | ⚠️ Unaudited |
+| SetToken | token | polygon | n/a | 3 deployments: polygon [`0xadb6d62e142a2f911fb3c9ca1c1d0fe5d9437252`](./contracts/polygon-137/0xadb6d62e142a2f911fb3c9ca1c1d0fe5d9437252/); polygon `0xbe9a09dff5aef8d7411d799bbbaee2e471e30f63`; polygon `0xd32dfefd9d00f772db460a3b542f0a736d80662f` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,13 +95,13 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | polygon | n/a | `0x9c50ce...a3520f` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x175024...3290d0` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x24b803...596c8a` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x3d0b47...72c300` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x9e877c...0ec079` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xb4106f...833468` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xdd4850...ff3fac` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x9c50cea1d41ad171d4e0992130e9504953a3520f` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x175024128546022923641dd116ec8521d53290d0` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x24b803ae0992bda7183bab6ed2df0acd1e596c8a` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x3d0b47738073ac8c3d343f149e56a6c28872c300` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x9e877c64616a256bdcb599268ca8002df00ec079` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xb4106ff9e881063bb62d261f9205cac00d833468` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xdd4850e856ddb373f723f34e7fe26901a3ff3fac` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -122,7 +122,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| polygon | [`0xadb6d6...437252`](./contracts/polygon-137/0xadb6d62e142a2f911fb3c9ca1c1d0fe5d9437252/) | SetToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xadb6d62e142a2f911fb3c9ca1c1d0fe5d9437252`](./contracts/polygon-137/0xadb6d62e142a2f911fb3c9ca1c1d0fe5d9437252/) | SetToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

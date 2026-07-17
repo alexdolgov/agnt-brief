@@ -59,12 +59,12 @@ The protocol comprises 2 functional families. Contracts are linked by 2 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| IN_Staking | unknown | bsc | n/a | [`0xc8e6c1...0cdadc`](./contracts/bsc-56/0xc8e6c14ccebed218a64df570025c5a1eeb0cdadc/) | ⚠️ Unaudited |
-| IN_Token | unknown | ethereum | n/a | [`0x3fe162...e83dbe`](./contracts/ethereum-1/0x3fe162dd973df944c43c8b7642e4e433dfe83dbe/) | ⚠️ Unaudited |
-| IN_Unstaking | unknown | bsc | n/a | [`0x1f2c1e...1e7953`](./contracts/bsc-56/0x1f2c1ecc4d4aa2d7b4877a85ed1776f9ca1e7953/) | ⚠️ Unaudited |
-| Lens | unknown | bsc | n/a | [`0x601b57...c0fca3`](./contracts/bsc-56/0x601b5729f6312039dcbc17c9cb2935cd92c0fca3/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | ethereum | n/a | [`0x6fa56f...756717`](./contracts/ethereum-1/0x6fa56f0c01ed6898b9447ff0351e0b70c8756717/) | ⚠️ Unaudited |
-| StakingRewarder | unknown | bsc | n/a | [`0x3ed8e1...f9a87c`](./contracts/bsc-56/0x3ed8e11d84e94f1dfd2f034ceb25d14cd5f9a87c/) | ⚠️ Unaudited |
+| IN_Staking | unknown | bsc | n/a | [`0xc8e6c14ccebed218a64df570025c5a1eeb0cdadc`](./contracts/bsc-56/0xc8e6c14ccebed218a64df570025c5a1eeb0cdadc/) | ⚠️ Unaudited |
+| IN_Token | unknown | ethereum | n/a | [`0x3fe162dd973df944c43c8b7642e4e433dfe83dbe`](./contracts/ethereum-1/0x3fe162dd973df944c43c8b7642e4e433dfe83dbe/) | ⚠️ Unaudited |
+| IN_Unstaking | unknown | bsc | n/a | [`0x1f2c1ecc4d4aa2d7b4877a85ed1776f9ca1e7953`](./contracts/bsc-56/0x1f2c1ecc4d4aa2d7b4877a85ed1776f9ca1e7953/) | ⚠️ Unaudited |
+| Lens | unknown | bsc | n/a | [`0x601b5729f6312039dcbc17c9cb2935cd92c0fca3`](./contracts/bsc-56/0x601b5729f6312039dcbc17c9cb2935cd92c0fca3/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | ethereum | n/a | [`0x6fa56f0c01ed6898b9447ff0351e0b70c8756717`](./contracts/ethereum-1/0x6fa56f0c01ed6898b9447ff0351e0b70c8756717/) | ⚠️ Unaudited |
+| StakingRewarder | unknown | bsc | n/a | [`0x3ed8e11d84e94f1dfd2f034ceb25d14cd5f9a87c`](./contracts/bsc-56/0x3ed8e11d84e94f1dfd2f034ceb25d14cd5f9a87c/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,11 +95,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0xc8e6c1...0cdadc`](./contracts/bsc-56/0xc8e6c14ccebed218a64df570025c5a1eeb0cdadc/) | IN_Staking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x3fe162...e83dbe`](./contracts/ethereum-1/0x3fe162dd973df944c43c8b7642e4e433dfe83dbe/) | IN_Token | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x1f2c1e...1e7953`](./contracts/bsc-56/0x1f2c1ecc4d4aa2d7b4877a85ed1776f9ca1e7953/) | IN_Unstaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x601b57...c0fca3`](./contracts/bsc-56/0x601b5729f6312039dcbc17c9cb2935cd92c0fca3/) | Lens | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x3ed8e1...f9a87c`](./contracts/bsc-56/0x3ed8e11d84e94f1dfd2f034ceb25d14cd5f9a87c/) | StakingRewarder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xc8e6c14ccebed218a64df570025c5a1eeb0cdadc`](./contracts/bsc-56/0xc8e6c14ccebed218a64df570025c5a1eeb0cdadc/) | IN_Staking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x3fe162dd973df944c43c8b7642e4e433dfe83dbe`](./contracts/ethereum-1/0x3fe162dd973df944c43c8b7642e4e433dfe83dbe/) | IN_Token | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x1f2c1ecc4d4aa2d7b4877a85ed1776f9ca1e7953`](./contracts/bsc-56/0x1f2c1ecc4d4aa2d7b4877a85ed1776f9ca1e7953/) | IN_Unstaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x601b5729f6312039dcbc17c9cb2935cd92c0fca3`](./contracts/bsc-56/0x601b5729f6312039dcbc17c9cb2935cd92c0fca3/) | Lens | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x3ed8e11d84e94f1dfd2f034ceb25d14cd5f9a87c`](./contracts/bsc-56/0x3ed8e11d84e94f1dfd2f034ceb25d14cd5f9a87c/) | StakingRewarder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

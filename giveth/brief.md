@@ -62,9 +62,9 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| GIV | unknown | ethereum | n/a | [`0x900db9...230da0`](./contracts/ethereum-1/0x900db999074d9277c5da2a43f252d74366230da0/) | ⚠️ Unaudited |
-| PermittableToken | token | gnosis | n/a | [`0x4f4f9b...d59e75`](./contracts/gnosis-100/0x4f4f9b8d5b4d0dc10506e5551b0513b61fd59e75/) | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | gnosis | n/a | 3 deployments: ethereum `0xbeba16...461eeb`; gnosis [`0x08ea9f...2ae10e`](./contracts/gnosis-100/0x08ea9f608656a4a775ef73f5b187a2f1ae2ae10e/); gnosis `0xb7189a...d5fa57` | ⚠️ Unaudited |
+| GIV | unknown | ethereum | n/a | [`0x900db999074d9277c5da2a43f252d74366230da0`](./contracts/ethereum-1/0x900db999074d9277c5da2a43f252d74366230da0/) | ⚠️ Unaudited |
+| PermittableToken | token | gnosis | n/a | [`0x4f4f9b8d5b4d0dc10506e5551b0513b61fd59e75`](./contracts/gnosis-100/0x4f4f9b8d5b4d0dc10506e5551b0513b61fd59e75/) | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | gnosis | n/a | 3 deployments: ethereum `0xbeba1666c62c65e58770376de332891b09461eeb`; gnosis [`0x08ea9f608656a4a775ef73f5b187a2f1ae2ae10e`](./contracts/gnosis-100/0x08ea9f608656a4a775ef73f5b187a2f1ae2ae10e/); gnosis `0xb7189a7ea38fa31210a79fe282aec5736ad5fa57` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -96,8 +96,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x900db9...230da0`](./contracts/ethereum-1/0x900db999074d9277c5da2a43f252d74366230da0/) | GIV | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| gnosis | [`0x4f4f9b...d59e75`](./contracts/gnosis-100/0x4f4f9b8d5b4d0dc10506e5551b0513b61fd59e75/) | PermittableToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x900db999074d9277c5da2a43f252d74366230da0`](./contracts/ethereum-1/0x900db999074d9277c5da2a43f252d74366230da0/) | GIV | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| gnosis | [`0x4f4f9b8d5b4d0dc10506e5551b0513b61fd59e75`](./contracts/gnosis-100/0x4f4f9b8d5b4d0dc10506e5551b0513b61fd59e75/) | PermittableToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

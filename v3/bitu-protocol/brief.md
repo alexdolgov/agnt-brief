@@ -57,9 +57,9 @@ The pinned logic-topography run contains 3 contract row(s) across bsc. Structura
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- BITU (`0x654a32...88e6bd`, chain 56)
-- BitUMinting (`0xa581b5...116f18`, chain 56)
-- BitUStaking (`0x61183a...fd76d4`, chain 56)
+- BITU (`0x654a32542a84bea7d2c2c1a1ed1aaaf26888e6bd`, chain 56)
+- BitUMinting (`0xa581b5b3d007dab450943749e29a677a0d116f18`, chain 56)
+- BitUStaking (`0x61183a27ab5fdacc4d46f5af9eb9e6a93afd76d4`, chain 56)
 
 ## Contract Surface Quality
 
@@ -104,16 +104,16 @@ The pinned logic-topography run contains 3 contract row(s) across bsc. Structura
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BITU | unknown | project_anchor | own_supporting | 0 | bsc | unit-380627 | `0x654a32...88e6bd` | ✅ Audited |
-| BitUMinting | unknown | project_anchor | own_supporting | 0 | bsc | unit-380628 | `0xa581b5...116f18` | ✅ Audited |
-| BitUStaking | unknown | project_anchor | own_supporting | 0 | bsc | unit-380626 | `0x61183a...fd76d4` | ✅ Audited |
+| BITU | unknown | project_anchor | own_supporting | 0 | bsc | unit-380627 | `0x654a32542a84bea7d2c2c1a1ed1aaaf26888e6bd` | ✅ Audited |
+| BitUMinting | unknown | project_anchor | own_supporting | 0 | bsc | unit-380628 | `0xa581b5b3d007dab450943749e29a677a0d116f18` | ✅ Audited |
+| BitUStaking | unknown | project_anchor | own_supporting | 0 | bsc | unit-380626 | `0x61183a27ab5fdacc4d46f5af9eb9e6a93afd76d4` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BEP20LINK | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xf8a0bf...1a51bd` | ⚠️ Unaudited |
-| BEP20USDT | token | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x55d398...197955` | ⚠️ Unaudited |
+| BEP20LINK | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xf8a0bf9cf54bb92f17374d9e9a321e6a111a51bd` | ⚠️ Unaudited |
+| BEP20USDT | token | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x55d398326f99059ff775485246999027b3197955` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -153,18 +153,18 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| spaces/j4FiwL05RDG9vbiK6wKb/uploads/5zJ9iSaosjkSWbY1Alkz/SlowMist Audit Report - BitU527.pdf | BITU | own contract | BITU (selected) `0x654a32...88e6bd` — deployed 2024-05-25 09:36:22+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/j4FiwL05RDG9vbiK6wKb/uploads/5zJ9iSaosjkSWbY1Alkz/SlowMist Audit Report - BitU527.pdf | BITU | own contract | BITU (selected) `0x654a32542a84bea7d2c2c1a1ed1aaaf26888e6bd` — deployed 2024-05-25 09:36:22+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/j4FiwL05RDG9vbiK6wKb/uploads/5zJ9iSaosjkSWbY1Alkz/SlowMist Audit Report - BitU527.pdf | BITUVault | unmatched — not counted | — | — | no |
-| spaces/j4FiwL05RDG9vbiK6wKb/uploads/5zJ9iSaosjkSWbY1Alkz/SlowMist Audit Report - BitU527.pdf | BitUMinting | own contract | BitUMinting (selected) `0xa581b5...116f18` — deployed 2024-05-25 10:00:44+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| spaces/j4FiwL05RDG9vbiK6wKb/uploads/5zJ9iSaosjkSWbY1Alkz/SlowMist Audit Report - BitU527.pdf | BitUStaking | own contract | BitUStaking (selected) `0x61183a...fd76d4` — deployed 2024-05-25 10:04:29+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/j4FiwL05RDG9vbiK6wKb/uploads/5zJ9iSaosjkSWbY1Alkz/SlowMist Audit Report - BitU527.pdf | BitUMinting | own contract | BitUMinting (selected) `0xa581b5b3d007dab450943749e29a677a0d116f18` — deployed 2024-05-25 10:00:44+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/j4FiwL05RDG9vbiK6wKb/uploads/5zJ9iSaosjkSWbY1Alkz/SlowMist Audit Report - BitU527.pdf | BitUStaking | own contract | BitUStaking (selected) `0x61183a27ab5fdacc4d46f5af9eb9e6a93afd76d4` — deployed 2024-05-25 10:04:29+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/j4FiwL05RDG9vbiK6wKb/uploads/5zJ9iSaosjkSWbY1Alkz/SlowMist Audit Report - BitU527.pdf | IBITU | unmatched — not counted | — | — | no |
 | spaces/j4FiwL05RDG9vbiK6wKb/uploads/5zJ9iSaosjkSWbY1Alkz/SlowMist Audit Report - BitU527.pdf | IStakedBITUCooldown | unmatched — not counted | — | — | no |
 | spaces/j4FiwL05RDG9vbiK6wKb/uploads/5zJ9iSaosjkSWbY1Alkz/SlowMist Audit Report - BitU527.pdf | SingleAdminAccessControl | unmatched — not counted | — | — | no |
 | spaces/j4FiwL05RDG9vbiK6wKb/uploads/5zJ9iSaosjkSWbY1Alkz/SlowMist Audit Report - BitU527.pdf | StakedBITU | unmatched — not counted | — | — | no |
-| spaces/j4FiwL05RDG9vbiK6wKb/uploads/x0qHqp82jMYKIQkLrwRp/BitU_audit_report_2024-05-27.pdf | BITU.sol | own contract | BITU (selected) `0x654a32...88e6bd` — deployed 2024-05-25 09:36:22+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/j4FiwL05RDG9vbiK6wKb/uploads/x0qHqp82jMYKIQkLrwRp/BitU_audit_report_2024-05-27.pdf | BITU.sol | own contract | BITU (selected) `0x654a32542a84bea7d2c2c1a1ed1aaaf26888e6bd` — deployed 2024-05-25 09:36:22+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/j4FiwL05RDG9vbiK6wKb/uploads/x0qHqp82jMYKIQkLrwRp/BitU_audit_report_2024-05-27.pdf | BITUVault.sol | unmatched — not counted | — | — | no |
-| spaces/j4FiwL05RDG9vbiK6wKb/uploads/x0qHqp82jMYKIQkLrwRp/BitU_audit_report_2024-05-27.pdf | BitUMinting.sol | own contract | BitUMinting (selected) `0xa581b5...116f18` — deployed 2024-05-25 10:00:44+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| spaces/j4FiwL05RDG9vbiK6wKb/uploads/x0qHqp82jMYKIQkLrwRp/BitU_audit_report_2024-05-27.pdf | BitUStaking.sol | own contract | BitUStaking (selected) `0x61183a...fd76d4` — deployed 2024-05-25 10:04:29+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/j4FiwL05RDG9vbiK6wKb/uploads/x0qHqp82jMYKIQkLrwRp/BitU_audit_report_2024-05-27.pdf | BitUMinting.sol | own contract | BitUMinting (selected) `0xa581b5b3d007dab450943749e29a677a0d116f18` — deployed 2024-05-25 10:00:44+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/j4FiwL05RDG9vbiK6wKb/uploads/x0qHqp82jMYKIQkLrwRp/BitU_audit_report_2024-05-27.pdf | BitUStaking.sol | own contract | BitUStaking (selected) `0x61183a27ab5fdacc4d46f5af9eb9e6a93afd76d4` — deployed 2024-05-25 10:04:29+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/j4FiwL05RDG9vbiK6wKb/uploads/x0qHqp82jMYKIQkLrwRp/BitU_audit_report_2024-05-27.pdf | SingleAdminAccessControl.sol | unmatched — not counted | — | — | no |
 | spaces/j4FiwL05RDG9vbiK6wKb/uploads/x0qHqp82jMYKIQkLrwRp/BitU_audit_report_2024-05-27.pdf | StakedBITU.sol | unmatched — not counted | — | — | no |
 

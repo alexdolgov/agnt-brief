@@ -89,13 +89,13 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| DelayProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x358f9f...334542`; ethereum `0x78ac58...0f2cf4`; ethereum `0xdf2410...f96d24` | ⚠️ Unaudited |
-| OptinProxyFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x245d1c...cfc69d` | ⚠️ Unaudited |
-| OptinProxyFactory | registry | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x8d6f54...60f9b1` | ⚠️ Unaudited |
-| ProtocolRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x6fc0f2...112b51`; ethereum `0x8def66...3826b3`; ethereum `0xc81dd5...8674d9` | ⚠️ Unaudited |
-| PTOraclePriceAdapterFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x70efd8...001d05` | ⚠️ Unaudited |
-| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe50554...d3dedf` | ⚠️ Unaudited |
-| Vault_v0_5_0 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x23fbda...d397cb`; ethereum `0xc1d5f0...293cf8` | ⚠️ Unaudited |
+| DelayProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x358f9ff9eee76bb6fade2a6f5d495e649b334542`; ethereum `0x78ac58ed54018f5ccd5f5de2d7c0ae40800f2cf4`; ethereum `0xdf2410949af333d8707749a955849daedcf96d24` | ⚠️ Unaudited |
+| OptinProxyFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x245d1c095a0ffa6f1af0f7df81818defc9cfc69d` | ⚠️ Unaudited |
+| OptinProxyFactory | registry | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x8d6f5479b14348186fae9bc7e636e947c260f9b1` | ⚠️ Unaudited |
+| ProtocolRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x6fc0f2320483fa03fbfdf626ddbae2cc4b112b51`; ethereum `0x8def66acf9c53e99611a9ea167d0d5019c3826b3`; ethereum `0xc81dd51239119db80d5a6e1b7347f3c3bc8674d9` | ⚠️ Unaudited |
+| PTOraclePriceAdapterFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x70efd899dd4934e25b6042d0a06412e4ea001d05` | ⚠️ Unaudited |
+| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe50554ec802375c9c3f9c087a8a7bb8c26d3dedf` | ⚠️ Unaudited |
+| Vault_v0_5_0 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x23fbda54849e8904154c8f8436a59b95b1d397cb`; ethereum `0xc1d5f01a6491b97b94f3670aed4becb897293cf8` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -115,7 +115,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf42bde...01e5a6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf42bde02ebd0861a9c27c9ec4b193fdffe01e5a6` | ❓ Unverified |
 
 ## Audit Inventory
 

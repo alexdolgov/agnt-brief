@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum, poly
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- DepositWalletFactory (`0xc8a3a6...cba43b`, chain 42161)
+- DepositWalletFactory (`0xc8a3a6d43e8aa43187d7b7a1faef21e65acba43b`, chain 42161)
 
 ## Contract Surface Quality
 
@@ -103,7 +103,7 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum, poly
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| DepositWalletFactory | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-389472 | `0xc8a3a6...cba43b` | ⚠️ Unaudited |
+| DepositWalletFactory | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-389472 | `0xc8a3a6d43e8aa43187d7b7a1faef21e65acba43b` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -123,9 +123,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | polygon | unit-389469 | `0x763ecd...7ee5a0` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-389470 | `0x16bedb...0c03c6` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-389471 | `0x763ecd...7ee5a0` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | polygon | unit-389469 | `0x763ecd00eea0cdaecbdf97d88c3e0fd5457ee5a0` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-389470 | `0x16bedb2ab2aef9023ff2cbf0c78135ca120c03c6` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-389471 | `0x763ecd00eea0cdaecbdf97d88c3e0fd5457ee5a0` | ❓ Unverified |
 
 ## Audit Inventory
 

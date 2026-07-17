@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- NexoToken (`0xb62132...815206`, chain 1)
+- NexoToken (`0xb62132e35a6c13ee1ee0f84dc5d40bad8d815206`, chain 1)
 
 ## Contract Surface Quality
 
@@ -103,7 +103,7 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| NexoToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389856 | `0xb62132...815206` | ⚠️ Unaudited |
+| NexoToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389856 | `0xb62132e35a6c13ee1ee0f84dc5d40bad8d815206` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -140,7 +140,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0xb62132...815206` | NexoToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xb62132e35a6c13ee1ee0f84dc5d40bad8d815206` | NexoToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

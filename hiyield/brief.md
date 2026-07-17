@@ -80,9 +80,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0xaf5baa...cfeac2` | ❓ Unverified |
-| UnnamedContract | unknown | canto | n/a | `0x0e4289...4c3f72` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x847550...307b3e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xaf5baa225765b2ef3eb446aeab87e02dfbcfeac2` | ❓ Unverified |
+| UnnamedContract | unknown | canto | n/a | `0x0e4289a95207ca653b60b0eb0b5848f29f4c3f72` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x8475509d391e6ee5a8b7133221ce17019d307b3e` | ❓ Unverified |
 
 ## Audit Inventory
 

@@ -60,8 +60,8 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BaseV2TokenInterface | token | ethereum | n/a | [`0x777172...a60990`](./contracts/ethereum-1/0x777172d858dc1599914a1c4c6c9fc48c99a60990/) | ✅ Audited |
-| VeV2Interface | unknown | ethereum | n/a | [`0x77730e...eaaf73`](./contracts/ethereum-1/0x77730ed992d286c53f3a0838232c3957daeaaf73/) | ✅ Audited |
+| BaseV2TokenInterface | token | ethereum | n/a | [`0x777172d858dc1599914a1c4c6c9fc48c99a60990`](./contracts/ethereum-1/0x777172d858dc1599914a1c4c6c9fc48c99a60990/) | ✅ Audited |
+| VeV2Interface | unknown | ethereum | n/a | [`0x77730ed992d286c53f3a0838232c3957daeaaf73`](./contracts/ethereum-1/0x77730ed992d286c53f3a0838232c3957daeaaf73/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 

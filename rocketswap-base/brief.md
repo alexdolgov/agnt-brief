@@ -59,19 +59,19 @@ The protocol forms a single structural family (Core Logic) of 8 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| RocketSwapToken | unknown | base | n/a | [`0x6653dd...2eec09`](./contracts/base-8453/0x6653dd4b92a0e5bf8ae570a98906d9d6fd2eec09/) | ✅ Audited |
-| UniswapV2Factory | unknown | base | n/a | [`0x1b8128...ff99fc`](./contracts/base-8453/0x1b8128c3a1b7d20053d10763ff02466ca7ff99fc/) | ✅ Audited |
-| UniswapV2Router02 | unknown | base | n/a | [`0x4cf760...1b306e`](./contracts/base-8453/0x4cf76043b3f97ba06917cbd90f9e3a2aac1b306e/) | ✅ Audited |
+| RocketSwapToken | unknown | base | n/a | [`0x6653dd4b92a0e5bf8ae570a98906d9d6fd2eec09`](./contracts/base-8453/0x6653dd4b92a0e5bf8ae570a98906d9d6fd2eec09/) | ✅ Audited |
+| UniswapV2Factory | unknown | base | n/a | [`0x1b8128c3a1b7d20053d10763ff02466ca7ff99fc`](./contracts/base-8453/0x1b8128c3a1b7d20053d10763ff02466ca7ff99fc/) | ✅ Audited |
+| UniswapV2Router02 | unknown | base | n/a | [`0x4cf76043b3f97ba06917cbd90f9e3a2aac1b306e`](./contracts/base-8453/0x4cf76043b3f97ba06917cbd90f9e3a2aac1b306e/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Multicall2 | unknown | base | n/a | [`0x85dde5...3abc0e`](./contracts/base-8453/0x85dde545bbb76a4ed954c9525426cb2a283abc0e/) | ⚠️ Unaudited |
-| Multicall3 | unknown | base | n/a | [`0x74f477...98e099`](./contracts/base-8453/0x74f477c907730eedea4274f5ed26b5ad7f98e099/) | ⚠️ Unaudited |
-| RcktLocker | unknown | base | n/a | [`0x234ccb...633a96`](./contracts/base-8453/0x234ccb5c64fdb3958c47e8efbe122b2d54633a96/) | ⚠️ Unaudited |
-| RcktMasterChef | unknown | base | n/a | [`0x304063...f6eaff`](./contracts/base-8453/0x304063953727b53048500dfd877a17d1c4f6eaff/) | ⚠️ Unaudited |
-| RcktVault | unknown | base | n/a | [`0x2ec62d...458a3c`](./contracts/base-8453/0x2ec62d08277ffc42eb5af71c7595c1a9f9458a3c/) | ⚠️ Unaudited |
+| Multicall2 | unknown | base | n/a | [`0x85dde545bbb76a4ed954c9525426cb2a283abc0e`](./contracts/base-8453/0x85dde545bbb76a4ed954c9525426cb2a283abc0e/) | ⚠️ Unaudited |
+| Multicall3 | unknown | base | n/a | [`0x74f477c907730eedea4274f5ed26b5ad7f98e099`](./contracts/base-8453/0x74f477c907730eedea4274f5ed26b5ad7f98e099/) | ⚠️ Unaudited |
+| RcktLocker | unknown | base | n/a | [`0x234ccb5c64fdb3958c47e8efbe122b2d54633a96`](./contracts/base-8453/0x234ccb5c64fdb3958c47e8efbe122b2d54633a96/) | ⚠️ Unaudited |
+| RcktMasterChef | unknown | base | n/a | [`0x304063953727b53048500dfd877a17d1c4f6eaff`](./contracts/base-8453/0x304063953727b53048500dfd877a17d1c4f6eaff/) | ⚠️ Unaudited |
+| RcktVault | unknown | base | n/a | [`0x2ec62d08277ffc42eb5af71c7595c1a9f9458a3c`](./contracts/base-8453/0x2ec62d08277ffc42eb5af71c7595c1a9f9458a3c/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -103,9 +103,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x234ccb...633a96`](./contracts/base-8453/0x234ccb5c64fdb3958c47e8efbe122b2d54633a96/) | RcktLocker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x304063...f6eaff`](./contracts/base-8453/0x304063953727b53048500dfd877a17d1c4f6eaff/) | RcktMasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x2ec62d...458a3c`](./contracts/base-8453/0x2ec62d08277ffc42eb5af71c7595c1a9f9458a3c/) | RcktVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x234ccb5c64fdb3958c47e8efbe122b2d54633a96`](./contracts/base-8453/0x234ccb5c64fdb3958c47e8efbe122b2d54633a96/) | RcktLocker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x304063953727b53048500dfd877a17d1c4f6eaff`](./contracts/base-8453/0x304063953727b53048500dfd877a17d1c4f6eaff/) | RcktMasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x2ec62d08277ffc42eb5af71c7595c1a9f9458a3c`](./contracts/base-8453/0x2ec62d08277ffc42eb5af71c7595c1a9f9458a3c/) | RcktVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

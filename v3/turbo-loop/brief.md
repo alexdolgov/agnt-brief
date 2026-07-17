@@ -56,7 +56,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- TURBOLOOP (`0xc90e57...41a76d`, chain 56)
+- TURBOLOOP (`0xc90e5785632daab9cb61f5050da393090541a76d`, chain 56)
 
 ## Contract Surface Quality
 
@@ -102,7 +102,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| TURBOLOOP | unknown | project_anchor | own_supporting | 0 | bsc | unit-394910 | `0xc90e57...41a76d` | ⚠️ Unaudited |
+| TURBOLOOP | unknown | project_anchor | own_supporting | 0 | bsc | unit-394910 | `0xc90e5785632daab9cb61f5050da393090541a76d` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

@@ -61,10 +61,10 @@ The protocol comprises 3 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BeaconProxy | unknown | ethereum | n/a | [`0x53afe3...259419`](./contracts/ethereum-1/0x53afe3343f322c4189ab69e0d048efd154259419/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | ethereum | n/a | [`0x139450...40c9fd`](./contracts/ethereum-1/0x139450c2dcef827c9a2a0bb1cb5506260940c9fd/) | ⚠️ Unaudited |
-| MetaMorphoV1_1 | unknown | arbitrum | n/a | [`0x250cf7...a1f9ca`](./contracts/arbitrum-42161/0x250cf7c82bac7cb6cf899b6052979d4b5ba1f9ca/) | ⚠️ Unaudited |
-| SSuperusdZapTeller | unknown | ethereum | n/a | [`0xff3341...9cf50e`](./contracts/ethereum-1/0xff33415469cf7e594d349780e4f39bd6ce9cf50e/) | ⚠️ Unaudited |
+| BeaconProxy | unknown | ethereum | n/a | [`0x53afe3343f322c4189ab69e0d048efd154259419`](./contracts/ethereum-1/0x53afe3343f322c4189ab69e0d048efd154259419/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | ethereum | n/a | [`0x139450c2dcef827c9a2a0bb1cb5506260940c9fd`](./contracts/ethereum-1/0x139450c2dcef827c9a2a0bb1cb5506260940c9fd/) | ⚠️ Unaudited |
+| MetaMorphoV1_1 | unknown | arbitrum | n/a | [`0x250cf7c82bac7cb6cf899b6052979d4b5ba1f9ca`](./contracts/arbitrum-42161/0x250cf7c82bac7cb6cf899b6052979d4b5ba1f9ca/) | ⚠️ Unaudited |
+| SSuperusdZapTeller | unknown | ethereum | n/a | [`0xff33415469cf7e594d349780e4f39bd6ce9cf50e`](./contracts/ethereum-1/0xff33415469cf7e594d349780e4f39bd6ce9cf50e/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -100,7 +100,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xff3341...9cf50e`](./contracts/ethereum-1/0xff33415469cf7e594d349780e4f39bd6ce9cf50e/) | SSuperusdZapTeller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xff33415469cf7e594d349780e4f39bd6ce9cf50e`](./contracts/ethereum-1/0xff33415469cf7e594d349780e4f39bd6ce9cf50e/) | SSuperusdZapTeller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- LazyUSDVault (`0xd53b68...763805`, chain 1)
+- LazyUSDVault (`0xd53b68fb4eb907c3c1e348cd7d7bede34f763805`, chain 1)
 
 ## Contract Surface Quality
 
@@ -103,8 +103,8 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| LazyUSDVault | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388456 | `0xd53b68...763805` | ⚠️ Unaudited |
-| RoleManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x02f883...d12c7d` | ⚠️ Unaudited |
+| LazyUSDVault | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388456 | `0xd53b68fb4eb907c3c1e348cd7d7bede34f763805` | ⚠️ Unaudited |
+| RoleManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x02f8836bbf41e579ae66b981f538bc015cd12c7d` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -141,7 +141,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0xd53b68...763805` | LazyUSDVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xd53b68fb4eb907c3c1e348cd7d7bede34f763805` | LazyUSDVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

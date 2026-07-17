@@ -62,7 +62,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Eclipse | unknown | ethereum | n/a | [`0x6055dc...8430de`](./contracts/ethereum-1/0x6055dc6ff1077eebe5e6d2ba1a1f53d7ef8430de/) | ⚠️ Unaudited |
+| Eclipse | unknown | ethereum | n/a | [`0x6055dc6ff1077eebe5e6d2ba1a1f53d7ef8430de`](./contracts/ethereum-1/0x6055dc6ff1077eebe5e6d2ba1a1f53d7ef8430de/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -98,7 +98,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x6055dc...8430de`](./contracts/ethereum-1/0x6055dc6ff1077eebe5e6d2ba1a1f53d7ef8430de/) | Eclipse | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6055dc6ff1077eebe5e6d2ba1a1f53d7ef8430de`](./contracts/ethereum-1/0x6055dc6ff1077eebe5e6d2ba1a1f53d7ef8430de/) | Eclipse | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

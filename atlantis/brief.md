@@ -62,20 +62,20 @@ The protocol comprises 7 functional families. Its contracts share 7 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AQUAToken | token | sonic | n/a | [`0x9138a8...7599d9`](./contracts/sonic-146/0x9138a8733dce2e877f430b7500e3c229ad7599d9/) | ✅ Audited |
-| AtlantisStaking | unknown | sonic | n/a | [`0x601993...39e63b`](./contracts/sonic-146/0x601993f292db6eceb6bc29becf928d874639e63b/) | ✅ Audited |
-| xAQUAToken | token | sonic | n/a | [`0x4e0bd8...9c4e84`](./contracts/sonic-146/0x4e0bd8bd175bd3ba4d20e068a56ea213289c4e84/) | ✅ Audited |
+| AQUAToken | token | sonic | n/a | [`0x9138a8733dce2e877f430b7500e3c229ad7599d9`](./contracts/sonic-146/0x9138a8733dce2e877f430b7500e3c229ad7599d9/) | ✅ Audited |
+| AtlantisStaking | unknown | sonic | n/a | [`0x601993f292db6eceb6bc29becf928d874639e63b`](./contracts/sonic-146/0x601993f292db6eceb6bc29becf928d874639e63b/) | ✅ Audited |
+| xAQUAToken | token | sonic | n/a | [`0x4e0bd8bd175bd3ba4d20e068a56ea213289c4e84`](./contracts/sonic-146/0x4e0bd8bd175bd3ba4d20e068a56ea213289c4e84/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (6)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AlgebraCommunityVault | unknown | sonic | n/a | 2 deployments: sonic [`0x3799d0...220ddd`](./contracts/sonic-146/0x3799d0bf541266b23c22b70d23f74bf886220ddd/); sonic `0x88284d...595150` | ⚠️ Unaudited |
-| AlgebraFactory | unknown | sonic | n/a | 2 deployments: sonic [`0x30f37e...bde73a`](./contracts/sonic-146/0x30f37e24105c25752aec8508fb4a0f0e9bbde73a/); sonic `0x7c8396...2f1a1b` | ⚠️ Unaudited |
-| DividendsV2 | unknown | sonic | n/a | [`0x46b6d5...a8164b`](./contracts/sonic-146/0x46b6d5732d1b86f4fac7572efb675afbaba8164b/) | ⚠️ Unaudited |
-| Faucet | unknown | sonic | n/a | [`0x7aabe8...069a11`](./contracts/sonic-146/0x7aabe848f8feb04dcfb410bcb88c129e6a069a11/) | ⚠️ Unaudited |
-| QuoterV2 | periphery | sonic | n/a | [`0xd817f4...08b60d`](./contracts/sonic-146/0xd817f470bcf8f5489f801c3b79969b090508b60d/) | ⚠️ Unaudited |
-| SwapRouter | adapter | sonic | n/a | [`0xc8a68b...ef808d`](./contracts/sonic-146/0xc8a68bbc6f1b2ff03837f5a98b94be0066ef808d/) | ⚠️ Unaudited |
+| AlgebraCommunityVault | unknown | sonic | n/a | 2 deployments: sonic [`0x3799d0bf541266b23c22b70d23f74bf886220ddd`](./contracts/sonic-146/0x3799d0bf541266b23c22b70d23f74bf886220ddd/); sonic `0x88284d053f30673598688c544294457e19595150` | ⚠️ Unaudited |
+| AlgebraFactory | unknown | sonic | n/a | 2 deployments: sonic [`0x30f37e24105c25752aec8508fb4a0f0e9bbde73a`](./contracts/sonic-146/0x30f37e24105c25752aec8508fb4a0f0e9bbde73a/); sonic `0x7c839669a12fae0bfbe2f6a16516dd2adc2f1a1b` | ⚠️ Unaudited |
+| DividendsV2 | unknown | sonic | n/a | [`0x46b6d5732d1b86f4fac7572efb675afbaba8164b`](./contracts/sonic-146/0x46b6d5732d1b86f4fac7572efb675afbaba8164b/) | ⚠️ Unaudited |
+| Faucet | unknown | sonic | n/a | [`0x7aabe848f8feb04dcfb410bcb88c129e6a069a11`](./contracts/sonic-146/0x7aabe848f8feb04dcfb410bcb88c129e6a069a11/) | ⚠️ Unaudited |
+| QuoterV2 | periphery | sonic | n/a | [`0xd817f470bcf8f5489f801c3b79969b090508b60d`](./contracts/sonic-146/0xd817f470bcf8f5489f801c3b79969b090508b60d/) | ⚠️ Unaudited |
+| SwapRouter | adapter | sonic | n/a | [`0xc8a68bbc6f1b2ff03837f5a98b94be0066ef808d`](./contracts/sonic-146/0xc8a68bbc6f1b2ff03837f5a98b94be0066ef808d/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,14 +95,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | sonic | n/a | `0x23a40b...dfe36d` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0x2eb4fc...c7ea7f` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0x41ecf1...e38526` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0x45f9e1...79511b` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0x937826...36197b` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0xa384b0...a03d4f` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0xeac93d...a01728` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0xed4ee1...68b8f3` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x23a40baffe74b1b5043826baf3cfd792e9dfe36d` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x2eb4fc31d91b49c36234d80208a97568a7c7ea7f` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x41ecf1f0bb4ec8a057090c8abd92b2e2f0e38526` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x45f9e10f6f46671fbbf72067eb9bde244b79511b` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x937826c63cb088891dbd44cdac397574ac36197b` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xa384b0f5782d0c46d311c964a1bd637f55a03d4f` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xeac93d2889e79c765fed2a427914922d35a01728` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xed4ee1b5cf4f9e7efc5a215d3fb4c216c868b8f3` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -116,10 +116,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| sonic | [`0x3799d0...220ddd`](./contracts/sonic-146/0x3799d0bf541266b23c22b70d23f74bf886220ddd/) | AlgebraCommunityVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0x30f37e...bde73a`](./contracts/sonic-146/0x30f37e24105c25752aec8508fb4a0f0e9bbde73a/) | AlgebraFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0x46b6d5...a8164b`](./contracts/sonic-146/0x46b6d5732d1b86f4fac7572efb675afbaba8164b/) | DividendsV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0x7aabe8...069a11`](./contracts/sonic-146/0x7aabe848f8feb04dcfb410bcb88c129e6a069a11/) | Faucet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x3799d0bf541266b23c22b70d23f74bf886220ddd`](./contracts/sonic-146/0x3799d0bf541266b23c22b70d23f74bf886220ddd/) | AlgebraCommunityVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x30f37e24105c25752aec8508fb4a0f0e9bbde73a`](./contracts/sonic-146/0x30f37e24105c25752aec8508fb4a0f0e9bbde73a/) | AlgebraFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x46b6d5732d1b86f4fac7572efb675afbaba8164b`](./contracts/sonic-146/0x46b6d5732d1b86f4fac7572efb675afbaba8164b/) | DividendsV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x7aabe848f8feb04dcfb410bcb88c129e6a069a11`](./contracts/sonic-146/0x7aabe848f8feb04dcfb410bcb88c129e6a069a11/) | Faucet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

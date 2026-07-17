@@ -90,44 +90,44 @@ The pinned logic-topography run contains 5 contract row(s) across base, ethereum
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| DexLens | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x0b7e78...a4e17c` | ⚠️ Unaudited |
-| DexLens | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-254377 | `0x236db7...b28abb` | ⚠️ Unaudited |
-| DexLens | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | base | unit-254387 | `0x0ff91b...5a96d1` | ⚠️ Unaudited |
-| Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x70b52d...6a713e` | ⚠️ Unaudited |
-| Factory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-254380 | `0x96559a...70698f` | ⚠️ Unaudited |
-| Factory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-254396 | `0xcf0685...8c05cb` | ⚠️ Unaudited |
-| JoeDexLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2d5246...81bf3a` | ⚠️ Unaudited |
-| JoeV21LegacyDexLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x69298f...42206b` | ⚠️ Unaudited |
-| LBFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-254381 | `0x98501d...75224a` | ⚠️ Unaudited |
-| LBFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-254383 | `0x9d8688...cd2c57` | ⚠️ Unaudited |
-| LBFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x1bbbbc...f0497d` | ⚠️ Unaudited |
-| LBFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-254390 | `0x217da3...c0aa70` | ⚠️ Unaudited |
-| LBFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-254391 | `0x3357f0...b952b5` | ⚠️ Unaudited |
-| LBPair | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-254379 | `0x585e52...a50a43` | ⚠️ Unaudited |
-| LBPair | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-254384 | `0xca3fe4...bdb7f1` | ⚠️ Unaudited |
-| LBPair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x25b320...1588bb` | ⚠️ Unaudited |
-| LBPair | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-254392 | `0x37d11f...ed1dd9` | ⚠️ Unaudited |
-| LBPair | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-254399 | `0xf879e5...3649db` | ⚠️ Unaudited |
-| LBQuoter | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-254385 | `0xe839a4...b8109b` | ⚠️ Unaudited |
-| LBQuoter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x04682d...45ed40` | ⚠️ Unaudited |
-| LBQuoter | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-254388 | `0x15c7ef...ef4b14` | ⚠️ Unaudited |
-| LBRouter | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-254376 | `0x035a4a...80ae7d` | ⚠️ Unaudited |
-| LBRouter | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-254382 | `0x9adb4b...96c26a` | ⚠️ Unaudited |
-| LBRouter | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-254394 | `0x87ac1e...b5cfec` | ⚠️ Unaudited |
-| LBRouter | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-254397 | `0xd4f937...422843` | ⚠️ Unaudited |
-| LBSwaplineQuoter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xe3b015...475742` | ⚠️ Unaudited |
-| LiquidityAmountsContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-254393 | `0x3cf9c2...b1a2c0` | ⚠️ Unaudited |
-| LiquidityHelperContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-254389 | `0x17e6bf...6773a8` | ⚠️ Unaudited |
-| OracleRewardVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0e4f2f...bc8f6c` | ⚠️ Unaudited |
-| OracleVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x221789...ebafdc` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x00879e...aeb16b` | ⚠️ Unaudited |
-| Router | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-254398 | `0xddf902...284c38` | ⚠️ Unaudited |
-| SimpleVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x4baa24...3ed6ef` | ⚠️ Unaudited |
-| Strategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2807f5...616c6f` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | base | n/a | `0x6e6577...deb09e` | ⚠️ Unaudited |
-| VaultFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-254378 | `0x2a1960...d0e322` | ⚠️ Unaudited |
-| VaultFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x057fd3...165f92` | ⚠️ Unaudited |
-| VaultFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | base | unit-254395 | `0x8f04ff...f71ba6` | ⚠️ Unaudited |
+| DexLens | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x0b7e780982be01fcb55a1e56cee1842ec0a4e17c` | ⚠️ Unaudited |
+| DexLens | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-254377 | `0x236db792935ab03ac8bd29df5e769c7ed0b28abb` | ⚠️ Unaudited |
+| DexLens | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | base | unit-254387 | `0x0ff91ba6928f5bb700662d72b8290fea7a5a96d1` | ⚠️ Unaudited |
+| Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x70b52dbf8794cdc2026da5bfea31647a4e6a713e` | ⚠️ Unaudited |
+| Factory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-254380 | `0x96559af835e5a3e9bb68c17eba8520295370698f` | ⚠️ Unaudited |
+| Factory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-254396 | `0xcf0685f37a139de56afc4a89aa343849358c05cb` | ⚠️ Unaudited |
+| JoeDexLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2d52467d074b3590760831af816046471a81bf3a` | ⚠️ Unaudited |
+| JoeV21LegacyDexLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x69298ffe05627268d32dd32762e364bfeb42206b` | ⚠️ Unaudited |
+| LBFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-254381 | `0x98501d0bb98d92a3234bae0f2a42befb5075224a` | ⚠️ Unaudited |
+| LBFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-254383 | `0x9d8688043150c2b2a4cdce2ed03eb40b6ccd2c57` | ⚠️ Unaudited |
+| LBFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x1bbbbcc3bc3f8c6beb174e772930e64ba7f0497d` | ⚠️ Unaudited |
+| LBFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-254390 | `0x217da3e53f221d1f36e8b09bc7d55d4012c0aa70` | ⚠️ Unaudited |
+| LBFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-254391 | `0x3357f02fb3aa78fc86d3bccdc5edf039d4b952b5` | ⚠️ Unaudited |
+| LBPair | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-254379 | `0x585e52b2b4fb0ccbd433751791eb60d8e3a50a43` | ⚠️ Unaudited |
+| LBPair | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-254384 | `0xca3fe461f0041662826697916c33c8af5cbdb7f1` | ⚠️ Unaudited |
+| LBPair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x25b320a7c69e66515d7f6c044ec9af49fa1588bb` | ⚠️ Unaudited |
+| LBPair | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-254392 | `0x37d11ffc23f4b87ae65a7ffd4951b331bded1dd9` | ⚠️ Unaudited |
+| LBPair | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-254399 | `0xf879e534a9c7a099dcb532fd931eb93e653649db` | ⚠️ Unaudited |
+| LBQuoter | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-254385 | `0xe839a439809edc00e004c3c58aa141ff4cb8109b` | ⚠️ Unaudited |
+| LBQuoter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x04682d6c443c48245a0eb52a0a015f9bfe45ed40` | ⚠️ Unaudited |
+| LBQuoter | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-254388 | `0x15c7efc1837e3867d10dda89b32cd05a46ef4b14` | ⚠️ Unaudited |
+| LBRouter | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-254376 | `0x035a4a069f8949845eef57fcd697d0196a80ae7d` | ⚠️ Unaudited |
+| LBRouter | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-254382 | `0x9adb4beaeecf04313619dbec923f71323d96c26a` | ⚠️ Unaudited |
+| LBRouter | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-254394 | `0x87ac1eb5596d47f6fd7d0d17bee233783db5cfec` | ⚠️ Unaudited |
+| LBRouter | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-254397 | `0xd4f937581650a2d6e416dd9ef5372c1672422843` | ⚠️ Unaudited |
+| LBSwaplineQuoter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xe3b015e2f379019d42ed7427825acaa0a0475742` | ⚠️ Unaudited |
+| LiquidityAmountsContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-254393 | `0x3cf9c2eedf007cf428b67219dcfb2fd700b1a2c0` | ⚠️ Unaudited |
+| LiquidityHelperContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-254389 | `0x17e6bfd8b8f8ac6981c9c786137d2d592c6773a8` | ⚠️ Unaudited |
+| OracleRewardVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0e4f2fa76a308d80ff0aba8857ef83555fbc8f6c` | ⚠️ Unaudited |
+| OracleVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x22178951866a9b9768ea3d563c061bff19ebafdc` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x00879e6b688c7d317301b461258895be5baeb16b` | ⚠️ Unaudited |
+| Router | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-254398 | `0xddf9025cf1fc3a7945ea54a53d856c81b9284c38` | ⚠️ Unaudited |
+| SimpleVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x4baa24c3d50108cdf8d85fda023eda1d933ed6ef` | ⚠️ Unaudited |
+| Strategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2807f5fd3f8fb2810a351bfe0255527103616c6f` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | base | n/a | `0x6e6577ae563d28c6fd0b5d1f2f32361339deb09e` | ⚠️ Unaudited |
+| VaultFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-254378 | `0x2a1960451c99947a9c14f0fa7911df5fa0d0e322` | ⚠️ Unaudited |
+| VaultFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x057fd3822cf566ccdc021a910b47b4656f165f92` | ⚠️ Unaudited |
+| VaultFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | base | unit-254395 | `0x8f04ff2198550dfdf5169892d1d47573b4f71ba6` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -147,7 +147,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-254386 | `0xf5e5ea...812667` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-254386 | `0xf5e5eae03c5ccde623a19117c8b7f788c8812667` | ❓ Unverified |
 
 ## Audit Inventory
 

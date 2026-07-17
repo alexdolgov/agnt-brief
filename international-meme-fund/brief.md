@@ -59,24 +59,24 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| IMF | unknown | ethereum | n/a | [`0x05be1d...829a60`](./contracts/ethereum-1/0x05be1d4c307c19450a6fd7ce7307ce72a3829a60/) | ✅ Audited |
-| IMFMoneyMarkets | unknown | ethereum | n/a | [`0x30f758...bd1eeb`](./contracts/ethereum-1/0x30f75834cb406b7093208fda7f689938acbd1eeb/) | ✅ Audited |
-| Irm69 | unknown | ethereum | n/a | [`0xe22779...bae2cd`](./contracts/ethereum-1/0xe22779eea87b043d26c4bf1c85d5b9bdf8bae2cd/) | ✅ Audited |
-| Money | unknown | ethereum | n/a | [`0xb162ca...ee6b8f`](./contracts/ethereum-1/0xb162caa6b63de33edc5d0a14b901fb6a54ee6b8f/) | ✅ Audited |
-| sbIMF | unknown | ethereum | n/a | [`0x3215c3...5e14e4`](./contracts/ethereum-1/0x3215c358b7a70c09e0a98827f744d107095e14e4/) | ✅ Audited |
-| UniV3Oracle | unknown | ethereum | n/a | [`0x7c12a3...eb342b`](./contracts/ethereum-1/0x7c12a3aaaddc30a4c75effcdb7a52ddf39eb342b/) | ✅ Audited |
+| IMF | unknown | ethereum | n/a | [`0x05be1d4c307c19450a6fd7ce7307ce72a3829a60`](./contracts/ethereum-1/0x05be1d4c307c19450a6fd7ce7307ce72a3829a60/) | ✅ Audited |
+| IMFMoneyMarkets | unknown | ethereum | n/a | [`0x30f75834cb406b7093208fda7f689938acbd1eeb`](./contracts/ethereum-1/0x30f75834cb406b7093208fda7f689938acbd1eeb/) | ✅ Audited |
+| Irm69 | unknown | ethereum | n/a | [`0xe22779eea87b043d26c4bf1c85d5b9bdf8bae2cd`](./contracts/ethereum-1/0xe22779eea87b043d26c4bf1c85d5b9bdf8bae2cd/) | ✅ Audited |
+| Money | unknown | ethereum | n/a | [`0xb162caa6b63de33edc5d0a14b901fb6a54ee6b8f`](./contracts/ethereum-1/0xb162caa6b63de33edc5d0a14b901fb6a54ee6b8f/) | ✅ Audited |
+| sbIMF | unknown | ethereum | n/a | [`0x3215c358b7a70c09e0a98827f744d107095e14e4`](./contracts/ethereum-1/0x3215c358b7a70c09e0a98827f744d107095e14e4/) | ✅ Audited |
+| UniV3Oracle | unknown | ethereum | n/a | [`0x7c12a3aaaddc30a4c75effcdb7a52ddf39eb342b`](./contracts/ethereum-1/0x7c12a3aaaddc30a4c75effcdb7a52ddf39eb342b/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (7)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ChainlinkUsdMoneyConstantOracle | unknown | ethereum | n/a | [`0xcd2b01...38829e`](./contracts/ethereum-1/0xcd2b014f74e776e0ef787f42905f27fef138829e/) | ⚠️ Unaudited |
-| IrmFixed | unknown | ethereum | n/a | [`0xb600a9...2c74d9`](./contracts/ethereum-1/0xb600a995e13824bdb1ca6ad1e12eed3dbf2c74d9/) | ⚠️ Unaudited |
-| LiquidationBot | unknown | ethereum | n/a | [`0x321a36...1ce213`](./contracts/ethereum-1/0x321a36255fd952c8c9801eb53c23a12e3e1ce213/) | ⚠️ Unaudited |
-| MoneyFixedSwap | unknown | ethereum | n/a | [`0x7207da...2ce452`](./contracts/ethereum-1/0x7207da4d2c296f16568c7f128cf2685a5d2ce452/) | ⚠️ Unaudited |
-| ProxyIrm | unknown | ethereum | n/a | [`0xec39c6...116ecb`](./contracts/ethereum-1/0xec39c6df7947f2a4923d317b2805e41ed9116ecb/) | ⚠️ Unaudited |
-| ProxyOracle | unknown | ethereum | n/a | [`0x66099a...1fde1c`](./contracts/ethereum-1/0x66099a17c21a8df6d949a704f484d544b81fde1c/) | ⚠️ Unaudited |
-| TwoHopOracle | unknown | ethereum | n/a | [`0x443880...90a920`](./contracts/ethereum-1/0x4438808061ba3fadba1b3daf564e54028b90a920/) | ⚠️ Unaudited |
+| ChainlinkUsdMoneyConstantOracle | unknown | ethereum | n/a | [`0xcd2b014f74e776e0ef787f42905f27fef138829e`](./contracts/ethereum-1/0xcd2b014f74e776e0ef787f42905f27fef138829e/) | ⚠️ Unaudited |
+| IrmFixed | unknown | ethereum | n/a | [`0xb600a995e13824bdb1ca6ad1e12eed3dbf2c74d9`](./contracts/ethereum-1/0xb600a995e13824bdb1ca6ad1e12eed3dbf2c74d9/) | ⚠️ Unaudited |
+| LiquidationBot | unknown | ethereum | n/a | [`0x321a36255fd952c8c9801eb53c23a12e3e1ce213`](./contracts/ethereum-1/0x321a36255fd952c8c9801eb53c23a12e3e1ce213/) | ⚠️ Unaudited |
+| MoneyFixedSwap | unknown | ethereum | n/a | [`0x7207da4d2c296f16568c7f128cf2685a5d2ce452`](./contracts/ethereum-1/0x7207da4d2c296f16568c7f128cf2685a5d2ce452/) | ⚠️ Unaudited |
+| ProxyIrm | unknown | ethereum | n/a | [`0xec39c6df7947f2a4923d317b2805e41ed9116ecb`](./contracts/ethereum-1/0xec39c6df7947f2a4923d317b2805e41ed9116ecb/) | ⚠️ Unaudited |
+| ProxyOracle | unknown | ethereum | n/a | [`0x66099a17c21a8df6d949a704f484d544b81fde1c`](./contracts/ethereum-1/0x66099a17c21a8df6d949a704f484d544b81fde1c/) | ⚠️ Unaudited |
+| TwoHopOracle | unknown | ethereum | n/a | [`0x4438808061ba3fadba1b3daf564e54028b90a920`](./contracts/ethereum-1/0x4438808061ba3fadba1b3daf564e54028b90a920/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -109,12 +109,12 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xb600a9...2c74d9`](./contracts/ethereum-1/0xb600a995e13824bdb1ca6ad1e12eed3dbf2c74d9/) | IrmFixed | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x321a36...1ce213`](./contracts/ethereum-1/0x321a36255fd952c8c9801eb53c23a12e3e1ce213/) | LiquidationBot | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x7207da...2ce452`](./contracts/ethereum-1/0x7207da4d2c296f16568c7f128cf2685a5d2ce452/) | MoneyFixedSwap | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xec39c6...116ecb`](./contracts/ethereum-1/0xec39c6df7947f2a4923d317b2805e41ed9116ecb/) | ProxyIrm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x66099a...1fde1c`](./contracts/ethereum-1/0x66099a17c21a8df6d949a704f484d544b81fde1c/) | ProxyOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x443880...90a920`](./contracts/ethereum-1/0x4438808061ba3fadba1b3daf564e54028b90a920/) | TwoHopOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb600a995e13824bdb1ca6ad1e12eed3dbf2c74d9`](./contracts/ethereum-1/0xb600a995e13824bdb1ca6ad1e12eed3dbf2c74d9/) | IrmFixed | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x321a36255fd952c8c9801eb53c23a12e3e1ce213`](./contracts/ethereum-1/0x321a36255fd952c8c9801eb53c23a12e3e1ce213/) | LiquidationBot | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x7207da4d2c296f16568c7f128cf2685a5d2ce452`](./contracts/ethereum-1/0x7207da4d2c296f16568c7f128cf2685a5d2ce452/) | MoneyFixedSwap | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xec39c6df7947f2a4923d317b2805e41ed9116ecb`](./contracts/ethereum-1/0xec39c6df7947f2a4923d317b2805e41ed9116ecb/) | ProxyIrm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x66099a17c21a8df6d949a704f484d544b81fde1c`](./contracts/ethereum-1/0x66099a17c21a8df6d949a704f484d544b81fde1c/) | ProxyOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4438808061ba3fadba1b3daf564e54028b90a920`](./contracts/ethereum-1/0x4438808061ba3fadba1b3daf564e54028b90a920/) | TwoHopOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

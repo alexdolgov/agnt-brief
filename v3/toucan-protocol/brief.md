@@ -52,21 +52,21 @@ The pinned logic-topography run contains 5 contract row(s) across base, celo, po
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x320d86...04c108`, chain 8453)
-- UnnamedContract (`0x5bcb07...9ca401`, chain 8453)
-- UnnamedContract (`0x6bcad5...42c9a0`, chain 8453)
-- UnnamedContract (`0x7bc01a...695ec4`, chain 8453)
-- UnnamedContract (`0x9ad2aa...6659da`, chain 8453)
-- UnnamedContract (`0xb8178d...7d0de1`, chain 8453)
-- UnnamedContract (`0xd096b0...fd71d1`, chain 8453)
-- UnnamedContract (`0xdc2187...6397cc`, chain 8453)
-- UnnamedContract (`0xf22929...b6b1ef`, chain 8453)
-- UnnamedContract (`0xf49f89...5eca83`, chain 8453)
-- Biochar (`0x20b048...9f5055`, chain 8453)
-- FeeCalculator (`0x6a4549...490da5`, chain 8453)
-- RetirementCertificates (`0x09da61...2cb186`, chain 8453)
-- ToucanCarbonOffsetsFactory (`0x20b00a...f11ca0`, chain 8453)
-- UpgradeableBeacon (`0x3476bf...5e78ec`, chain 8453)
+- UnnamedContract (`0x320d86e14a9c54e11d05e1e0d88e2c824504c108`, chain 8453)
+- UnnamedContract (`0x5bcb07db6d3f55eef03ffdd14a571da35a9ca401`, chain 8453)
+- UnnamedContract (`0x6bcad56fe6621d57c4254b70a6d057942842c9a0`, chain 8453)
+- UnnamedContract (`0x7bc01aff86e64949f39de616c950a1f094695ec4`, chain 8453)
+- UnnamedContract (`0x9ad2aa3c4a50c35d62b35718cd391c172d6659da`, chain 8453)
+- UnnamedContract (`0xb8178d44a945a42644782d20cce59477897d0de1`, chain 8453)
+- UnnamedContract (`0xd096b0271064dffcb7cde699b25850dddbfd71d1`, chain 8453)
+- UnnamedContract (`0xdc2187ef2832a450bc06778cfc01028afb6397cc`, chain 8453)
+- UnnamedContract (`0xf22929a43bff92e2303a55b2a88e3fcbc7b6b1ef`, chain 8453)
+- UnnamedContract (`0xf49f899d70db6518e3d65eaf1c5d742c205eca83`, chain 8453)
+- Biochar (`0x20b048fa035d5763685d695e66adf62c5d9f5055`, chain 8453)
+- FeeCalculator (`0x6a4549759c475d845d4ae074b3656dc257490da5`, chain 8453)
+- RetirementCertificates (`0x09da61144b05c4a80b2d3c67bd72d740922cb186`, chain 8453)
+- ToucanCarbonOffsetsFactory (`0x20b00ac9c365b33b4d5ba5e7c075f2f94df11ca0`, chain 8453)
+- UpgradeableBeacon (`0x3476bfb58a03cafb6f7b7b02c21fc6597e5e78ec`, chain 8453)
 
 ## Contract Surface Quality
 
@@ -112,26 +112,26 @@ The pinned logic-topography run contains 5 contract row(s) across base, celo, po
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Biochar | unknown | project_anchor | own_supporting | 1 | base | unit-394152 | `0x20b048...9f5055` | ⚠️ Unaudited |
-| BiocharFilter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x218669...3884b9` | ⚠️ Unaudited |
-| CarbonOffsetBatches | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x66b1b5...869717` | ⚠️ Unaudited |
-| CarbonProjectVintages | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x09d147...f5d345` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | polygon | n/a | `0x0fead3...056ea1` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | celo | n/a | `0x02de47...0a7e92` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | celo | n/a | `0x0ccb00...0873fe` | ⚠️ Unaudited |
-| FeeCalculator | unknown | project_anchor | own_supporting | 0 | base | unit-394143 | `0x6a4549...490da5` | ⚠️ Unaudited |
-| FxHashNFTCarbonExtension | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x1d1cd7...e6b083` | ⚠️ Unaudited |
-| OffsetHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x424282...8c37d1` | ⚠️ Unaudited |
-| PuroToucanCarbonOffsets | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x05de01...7de399` | ⚠️ Unaudited |
-| RetirementCertificates | unknown | project_anchor | own_supporting | 1 | base | unit-394154 | `0x09da61...2cb186` | ⚠️ Unaudited |
-| ToucanCarbonOffsets | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x1671a1...229f44` | ⚠️ Unaudited |
-| ToucanCarbonOffsetsEscrow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x027553...42792a` | ⚠️ Unaudited |
-| ToucanCarbonOffsetsFactory | unknown | project_anchor | own_supporting | 1 | base | unit-394153 | `0x20b00a...f11ca0` | ⚠️ Unaudited |
-| ToucanContractRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x04a3f2...85e59e` | ⚠️ Unaudited |
-| ToucanCrosschainMessenger | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x882ade...c38654` | ⚠️ Unaudited |
-| ToucanRegenBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x35d742...924056` | ⚠️ Unaudited |
-| UpgradeableBeacon | unknown | project_anchor | own_supporting | 0 | base | unit-394141 | `0x3476bf...5e78ec` | ⚠️ Unaudited |
-| UUPSProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | polygon | n/a | `0x599a97...0dc07d` | ⚠️ Unaudited |
+| Biochar | unknown | project_anchor | own_supporting | 1 | base | unit-394152 | `0x20b048fa035d5763685d695e66adf62c5d9f5055` | ⚠️ Unaudited |
+| BiocharFilter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x21866905ae7da3769b96dcdd3506013a733884b9` | ⚠️ Unaudited |
+| CarbonOffsetBatches | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x66b1b59f9d59413ddc1539122d7d5f6b70869717` | ⚠️ Unaudited |
+| CarbonProjectVintages | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x09d14737300a3dcaaa3c6e9aeb4e666122f5d345` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | polygon | n/a | `0x0fead3f81b35e133f9d78f9029950cf1f6056ea1` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | celo | n/a | `0x02de4766c272abc10bc88c220d214a26960a7e92` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | celo | n/a | `0x0ccb0071e8b8b716a2a5998ab4d97b83790873fe` | ⚠️ Unaudited |
+| FeeCalculator | unknown | project_anchor | own_supporting | 0 | base | unit-394143 | `0x6a4549759c475d845d4ae074b3656dc257490da5` | ⚠️ Unaudited |
+| FxHashNFTCarbonExtension | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x1d1cd730fcb1e89b387d67dbe48f5d5bbae6b083` | ⚠️ Unaudited |
+| OffsetHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x4242829d15434fea6606cf995f1bed68a18c37d1` | ⚠️ Unaudited |
+| PuroToucanCarbonOffsets | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x05de010c6187a8bb3232176674f7492b5a7de399` | ⚠️ Unaudited |
+| RetirementCertificates | unknown | project_anchor | own_supporting | 1 | base | unit-394154 | `0x09da61144b05c4a80b2d3c67bd72d740922cb186` | ⚠️ Unaudited |
+| ToucanCarbonOffsets | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x1671a112fd50870b45d1d44f5aaff8de50229f44` | ⚠️ Unaudited |
+| ToucanCarbonOffsetsEscrow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x027553435c2373f49e9cdfe3b50a25326242792a` | ⚠️ Unaudited |
+| ToucanCarbonOffsetsFactory | unknown | project_anchor | own_supporting | 1 | base | unit-394153 | `0x20b00ac9c365b33b4d5ba5e7c075f2f94df11ca0` | ⚠️ Unaudited |
+| ToucanContractRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x04a3f298e88e54d3672a94136886ff9cd285e59e` | ⚠️ Unaudited |
+| ToucanCrosschainMessenger | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x882adea1a3b875fc776cac94541ccb1275c38654` | ⚠️ Unaudited |
+| ToucanRegenBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x35d7426fb9069b99bb36bad30eb804e8fd924056` | ⚠️ Unaudited |
+| UpgradeableBeacon | unknown | project_anchor | own_supporting | 0 | base | unit-394141 | `0x3476bfb58a03cafb6f7b7b02c21fc6597e5e78ec` | ⚠️ Unaudited |
+| UUPSProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | polygon | n/a | `0x599a978c43f5cea1b26a399d28869ad4690dc07d` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -151,16 +151,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-394140 | `0x320d86...04c108` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-394142 | `0x5bcb07...9ca401` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-394144 | `0x6bcad5...42c9a0` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-394145 | `0x7bc01a...695ec4` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-394146 | `0x9ad2aa...6659da` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-394147 | `0xb8178d...7d0de1` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-394148 | `0xd096b0...fd71d1` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-394149 | `0xdc2187...6397cc` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-394150 | `0xf22929...b6b1ef` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-394151 | `0xf49f89...5eca83` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-394140 | `0x320d86e14a9c54e11d05e1e0d88e2c824504c108` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-394142 | `0x5bcb07db6d3f55eef03ffdd14a571da35a9ca401` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-394144 | `0x6bcad56fe6621d57c4254b70a6d057942842c9a0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-394145 | `0x7bc01aff86e64949f39de616c950a1f094695ec4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-394146 | `0x9ad2aa3c4a50c35d62b35718cd391c172d6659da` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-394147 | `0xb8178d44a945a42644782d20cce59477897d0de1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-394148 | `0xd096b0271064dffcb7cde699b25850dddbfd71d1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-394149 | `0xdc2187ef2832a450bc06778cfc01028afb6397cc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-394150 | `0xf22929a43bff92e2303a55b2a88e3fcbc7b6b1ef` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-394151 | `0xf49f899d70db6518e3d65eaf1c5d742c205eca83` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -191,10 +191,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | `0x20b048...9f5055` | Biochar | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x6a4549...490da5` | FeeCalculator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x09da61...2cb186` | RetirementCertificates | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x20b00a...f11ca0` | ToucanCarbonOffsetsFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x20b048fa035d5763685d695e66adf62c5d9f5055` | Biochar | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x6a4549759c475d845d4ae074b3656dc257490da5` | FeeCalculator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x09da61144b05c4a80b2d3c67bd72d740922cb186` | RetirementCertificates | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x20b00ac9c365b33b4d5ba5e7c075f2f94df11ca0` | ToucanCarbonOffsetsFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

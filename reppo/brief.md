@@ -61,7 +61,7 @@ The protocol comprises 4 functional families. Its contracts share 4 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AgentTokenV2 | token | base | n/a | 2 deployments: base [`0x7bab5d...8ae2db`](./contracts/base-8453/0x7bab5d2e3ebde7293888b3f4c022aaaad88ae2db/); base `0xff8104...8583d6` | ⚠️ Unaudited |
+| AgentTokenV2 | token | base | n/a | 2 deployments: base [`0x7bab5d2e3ebde7293888b3f4c022aaaad88ae2db`](./contracts/base-8453/0x7bab5d2e3ebde7293888b3f4c022aaaad88ae2db/); base `0xff8104251e7761163fac3211ef5583fb3f8583d6` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -81,15 +81,15 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | base | n/a | `0x13ee19...069950` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x2fb747...a06ccf` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x33f812...e736af` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x365075...e25481` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x45c60a...574654` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x6a5138...5ba0fe` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x6e1c28...907641` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x70b0a7...4630be` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xa31713...5603d8` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x13ee19f627d657db7965c7be02334057ff069950` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x2fb74722d53dac5290515c477950f4292da06ccf` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x33f8120a17d504609e49c8eed4a0480f09e736af` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x3650752d4dde21c6ed7df6d4840e15de48e25481` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x45c60adf130f21d54381be129bbe2abd0c574654` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x6a5138c121bff6ac0aef60f3492e0243595ba0fe` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x6e1c28791d9e9ef8b0d1821bb74fc5b5a3907641` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x70b0a7224ef45e2e3aa03743eca86159644630be` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xa317137595ae79a31c36fae0012022e12d5603d8` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -105,7 +105,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x7bab5d...8ae2db`](./contracts/base-8453/0x7bab5d2e3ebde7293888b3f4c022aaaad88ae2db/) | AgentTokenV2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x7bab5d2e3ebde7293888b3f4c022aaaad88ae2db`](./contracts/base-8453/0x7bab5d2e3ebde7293888b3f4c022aaaad88ae2db/) | AgentTokenV2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

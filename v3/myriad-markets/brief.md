@@ -52,13 +52,13 @@ The pinned logic-topography run contains 8 contract row(s) across bsc, celo, lin
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x39e66e...bef340`, chain 59144)
-- UnnamedContract (`0x503c9f...2b8d04`, chain 59144)
-- BEP20USDT (`0x55d398...197955`, chain 56)
-- FiatTokenProxy (`0x176211...1ee1ff`, chain 59144)
-- PredictionMarketV3_4 (`0x39e66e...bef340`, chain 56)
-- PredictionMarketV3Querier (`0xdefb36...e03bad`, chain 56)
-- StablecoinV2 (`0x8d0d00...f08b0d`, chain 56)
+- UnnamedContract (`0x39e66ee6b2ddaf4defded3038e0162180dbef340`, chain 59144)
+- UnnamedContract (`0x503c9f98398dc3433aba819bf3ec0b97e02b8d04`, chain 59144)
+- BEP20USDT (`0x55d398326f99059ff775485246999027b3197955`, chain 56)
+- FiatTokenProxy (`0x176211869ca2b568f2a7d4ee941e073a821ee1ff`, chain 59144)
+- PredictionMarketV3_4 (`0x39e66ee6b2ddaf4defded3038e0162180dbef340`, chain 56)
+- PredictionMarketV3Querier (`0xdefb36c47754d2e37d44b8b8c647d4d643e03bad`, chain 56)
+- StablecoinV2 (`0x8d0d000ee44948fc98c9b98a4fa4921476f08b0d`, chain 56)
 
 ## Contract Surface Quality
 
@@ -102,50 +102,50 @@ The pinned logic-topography run contains 8 contract row(s) across bsc, celo, lin
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| PredictionMarketV3_4 | unknown | project_anchor | own_supporting | 1 | bsc | unit-248491 | `0x39e66e...bef340` | ✅ Audited |
+| PredictionMarketV3_4 | unknown | project_anchor | own_supporting | 1 | bsc | unit-248491 | `0x39e66ee6b2ddaf4defded3038e0162180dbef340` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (38)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AdminRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xcaadcd...a4f653` | ⚠️ Unaudited |
-| BaseRegistrarImplementation | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x6e8439...b95704` | ⚠️ Unaudited |
-| BEP20LINK | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xf8a0bf...1a51bd` | ⚠️ Unaudited |
-| BEP20USDT | unknown | project_anchor | own_supporting | 0 | bsc | unit-248477 | `0x55d398...197955` | ⚠️ Unaudited |
-| ConditionalTokens | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-248478 | `0x641373...2654dc` | ⚠️ Unaudited |
-| CryptoCREOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xd6a00f...11f2e5` | ⚠️ Unaudited |
-| ENSRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x50130b...121267` | ⚠️ Unaudited |
-| ETHRegistrarController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xdb75db...d18295` | ⚠️ Unaudited |
-| ExecutorsGuard | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xfdffc9...e85189` | ⚠️ Unaudited |
-| FeeModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x423abc...03a7e7` | ⚠️ Unaudited |
-| FiatTokenProxy | unknown | project_anchor | own_supporting | 1 | linea | unit-248493 | `0x176211...1ee1ff` | ⚠️ Unaudited |
-| FiatTokenV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x0e57c8...5c2dc8` | ⚠️ Unaudited |
-| L2MessageService | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x05d437...b960fd` | ⚠️ Unaudited |
-| L2USDCBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x199810...5a5521` | ⚠️ Unaudited |
-| LineaSurgeXP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x96b3a1...124b82` | ⚠️ Unaudited |
-| LineaVoyageXP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xd83af4...cf599a` | ⚠️ Unaudited |
-| LineaXP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xc24e7b...9cfc13` | ⚠️ Unaudited |
-| MyriadCTFExchange | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3f5c62...3a3364` | ⚠️ Unaudited |
-| NameWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xa53cca...13c223` | ⚠️ Unaudited |
-| NegRiskAdapter | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-248484 | `0xd96f26...93d53a` | ⚠️ Unaudited |
-| OwnedResolver | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x9453dc...f4c06f` | ⚠️ Unaudited |
-| PredictionMarketV3Manager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xdefb36...e03bad` | ⚠️ Unaudited |
-| PredictionMarketV3ManagerCLOB | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x9ab121...d37f2b` | ⚠️ Unaudited |
-| PredictionMarketV3Querier | unknown | project_anchor | own_supporting | 0 | bsc | unit-248485 | `0xdefb36...e03bad` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x1e1f6f...39774e` | ⚠️ Unaudited |
-| PublicResolver | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x86c5ae...733126` | ⚠️ Unaudited |
-| ReverseRegistrar | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x08d3ff...2b67d5` | ⚠️ Unaudited |
-| Root | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xfbf795...151e7d` | ⚠️ Unaudited |
-| SportsCREOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe5d08a...7a1065` | ⚠️ Unaudited |
-| Stablecoin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x339838...8a6616` | ⚠️ Unaudited |
-| StablecoinV2 | unknown | project_anchor | own_supporting | 1 | bsc | unit-248492 | `0x8d0d00...f08b0d` | ⚠️ Unaudited |
-| StaticMetadataService | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x18703d...866e4c` | ⚠️ Unaudited |
-| TokenBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x0ffcbe...03444e` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | linea | n/a | `0x05f519...e8aef7` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | linea | n/a | `0x0ece76...2203f0` | ⚠️ Unaudited |
-| UniversalResolver | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x3aa974...3a6965` | ⚠️ Unaudited |
-| UpgradeableBeacon | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xe79869...4c02c0` | ⚠️ Unaudited |
-| WrappedCollateral | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-248479 | `0x9f124c...067acc` | ⚠️ Unaudited |
+| AdminRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xcaadcdf80a88e0024642fe9cbeff4011b7a4f653` | ⚠️ Unaudited |
+| BaseRegistrarImplementation | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x6e84390dcc5195414ec91a8c56a5c91021b95704` | ⚠️ Unaudited |
+| BEP20LINK | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xf8a0bf9cf54bb92f17374d9e9a321e6a111a51bd` | ⚠️ Unaudited |
+| BEP20USDT | unknown | project_anchor | own_supporting | 0 | bsc | unit-248477 | `0x55d398326f99059ff775485246999027b3197955` | ⚠️ Unaudited |
+| ConditionalTokens | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-248478 | `0x6413734f92248d4b29ae35883290bd93212654dc` | ⚠️ Unaudited |
+| CryptoCREOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xd6a00f56955ac5aa9901b2a98e504a6d6811f2e5` | ⚠️ Unaudited |
+| ENSRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x50130b669b28c339991d8676fa73cf122a121267` | ⚠️ Unaudited |
+| ETHRegistrarController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xdb75db974b1f2bd3b5916d503036208064d18295` | ⚠️ Unaudited |
+| ExecutorsGuard | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xfdffc9616d7939523ed07abe8d76e8afa0e85189` | ⚠️ Unaudited |
+| FeeModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x423abc7b68dd11c3756f59fb2c155d27f003a7e7` | ⚠️ Unaudited |
+| FiatTokenProxy | unknown | project_anchor | own_supporting | 1 | linea | unit-248493 | `0x176211869ca2b568f2a7d4ee941e073a821ee1ff` | ⚠️ Unaudited |
+| FiatTokenV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x0e57c8d26671e267c3c971824b93343bb75c2dc8` | ⚠️ Unaudited |
+| L2MessageService | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x05d43713b7e333d2d54be65ce3b5f3698ab960fd` | ⚠️ Unaudited |
+| L2USDCBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x1998108fa7993ea67a8b1a99d392a3288c5a5521` | ⚠️ Unaudited |
+| LineaSurgeXP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x96b3a15257c4983a6fe9073d8c91763433124b82` | ⚠️ Unaudited |
+| LineaVoyageXP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xd83af4fbd77f3ab65c3b1dc4b38d7e67aecf599a` | ⚠️ Unaudited |
+| LineaXP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xc24e7b826b3c1e8918843baf7abd2e51399cfc13` | ⚠️ Unaudited |
+| MyriadCTFExchange | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3f5c62b07a38bce116fb5fcc61cbc262b43a3364` | ⚠️ Unaudited |
+| NameWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xa53cca02f98d590819141aa85c891e2af713c223` | ⚠️ Unaudited |
+| NegRiskAdapter | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-248484 | `0xd96f26703ddbf7d1cb6858640eca34cf1893d53a` | ⚠️ Unaudited |
+| OwnedResolver | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x9453dc2dddf2a19951e708b4ff8d5f5e38f4c06f` | ⚠️ Unaudited |
+| PredictionMarketV3Manager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xdefb36c47754d2e37d44b8b8c647d4d643e03bad` | ⚠️ Unaudited |
+| PredictionMarketV3ManagerCLOB | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x9ab1213d360bea3eda75d88d81d7fbfc9fd37f2b` | ⚠️ Unaudited |
+| PredictionMarketV3Querier | unknown | project_anchor | own_supporting | 0 | bsc | unit-248485 | `0xdefb36c47754d2e37d44b8b8c647d4d643e03bad` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x1e1f6f22f97b4a7522d8b62e983953639239774e` | ⚠️ Unaudited |
+| PublicResolver | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x86c5aed9f27837074612288610fb98ccc1733126` | ⚠️ Unaudited |
+| ReverseRegistrar | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x08d3ff6e65f680844fd2465393ff6f0d742b67d5` | ⚠️ Unaudited |
+| Root | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xfbf795ead640e261868eb200ed2850eb9c151e7d` | ⚠️ Unaudited |
+| SportsCREOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe5d08a4797c0bd67e1b6b0acb4730c12be7a1065` | ⚠️ Unaudited |
+| Stablecoin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3398385c205c060ef54744ee817c1487e28a6616` | ⚠️ Unaudited |
+| StablecoinV2 | unknown | project_anchor | own_supporting | 1 | bsc | unit-248492 | `0x8d0d000ee44948fc98c9b98a4fa4921476f08b0d` | ⚠️ Unaudited |
+| StaticMetadataService | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x18703d0117121f6a7476221e2afc57faf9866e4c` | ⚠️ Unaudited |
+| TokenBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x0ffcbe98041b77bd87c38e2d0a6b473e7703444e` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | linea | n/a | `0x05f5198b1d4a37e07ac510fc7a207e1499e8aef7` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | linea | n/a | `0x0ece76334fb560f2b1a49a60e38cf726b02203f0` | ⚠️ Unaudited |
+| UniversalResolver | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x3aa974fb3f8c1e02796048bdcded79e9d53a6965` | ⚠️ Unaudited |
+| UpgradeableBeacon | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xe798695d2e78f7caeb5bbf3385433959324c02c0` | ⚠️ Unaudited |
+| WrappedCollateral | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-248479 | `0x9f124ce59d8de0274574949400640a2677067acc` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -165,11 +165,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-248480 | `0xa0b6f8...f0f16a` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-248481 | `0xab5591...5ea3db` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-248483 | `0xc1bb36...3bbc0c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-248486 | `0x39e66e...bef340` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-248487 | `0x503c9f...2b8d04` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-248480 | `0xa0b6f8ef8edb64f395018d1933f2273ce9f0f16a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-248481 | `0xab5591e280ff9bf368db60c3b775b5c7ba5ea3db` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-248483 | `0xc1bb36bb0ba236603b95544e809f2ab1893bbc0c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-248486 | `0x39e66ee6b2ddaf4defded3038e0162180dbef340` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-248487 | `0x503c9f98398dc3433aba819bf3ec0b97e02b8d04` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -215,7 +215,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | 2026-04-08-cyfrin-myriad-realitio-oracle-v2.0.pdf | RealitioOracle | unmatched — not counted | — | listed in scope section: // new contracts contracts/oracles/RealitioOracle.sol | no |
 | 2026-04-08-cyfrin-myriad-realitio-oracle-v2.0.pdf | MyriadCTFExchange | unmatched — not counted | — | listed in scope section: // added matchMultipleOrdersWithFees contracts/MyriadCTFExchange.sol | no |
 | 2026-04-07-cyfrin-myriad-pr145-v2.0.pdf | MyriadCTFExchange | unmatched — not counted | — | Protocol Summary mentions MyriadCTFExchange.sol as the contract containing _settleMintMatch and _settleMergeMatch; Audit Scope mentions these functions are in scope. | no |
-| 2025-07-25-cyfrin-myriad-v2.0.pdf | PredictionMarketV3_4 | own proxy deployment | PredictionMarketV3_4 (proxy) (selected) `0x39e66e...bef340` — deployed 2025-10-21 03:36:08+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2025-07-25-cyfrin-myriad-v2.0.pdf | PredictionMarketV3_4 | own proxy deployment | PredictionMarketV3_4 (proxy) (selected) `0x39e66ee6b2ddaf4defded3038e0162180dbef340` — deployed 2025-10-21 03:36:08+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2025-07-25-cyfrin-myriad-v2.0.pdf | LandFactory | unmatched — not counted | — | listed in scope section | no |
 | 2025-07-25-cyfrin-myriad-v2.0.pdf | PredictionMarketV3Manager | unmatched — not counted | — | listed in scope section | no |
 | 2025-07-25-cyfrin-myriad-v2.0.pdf | FantasyERC20 | unmatched — not counted | — | mentioned as key component in protocol summary | no |
@@ -226,10 +226,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | `0x55d398...197955` | BEP20USDT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | `0x176211...1ee1ff` | FiatTokenProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0xdefb36...e03bad` | PredictionMarketV3Querier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x8d0d00...f08b0d` | StablecoinV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x55d398326f99059ff775485246999027b3197955` | BEP20USDT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | `0x176211869ca2b568f2a7d4ee941e073a821ee1ff` | FiatTokenProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xdefb36c47754d2e37d44b8b8c647d4d643e03bad` | PredictionMarketV3Querier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x8d0d000ee44948fc98c9b98a4fa4921476f08b0d` | StablecoinV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

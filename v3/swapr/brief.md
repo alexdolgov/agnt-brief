@@ -90,16 +90,16 @@ The pinned logic-topography run contains 2 contract row(s) across arbitrum, gnos
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| DXdaoERC20StakingRewardsDistributionFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x4e6a2e...b01402` | ⚠️ Unaudited |
-| DXswapDeployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x01f1b4...902518` | ⚠️ Unaudited |
-| DXswapFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x047f32...c1998d` | ⚠️ Unaudited |
-| DXswapFeeReceiver | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-257588 | `0x1d7c7c...24a1ae` | ⚠️ Unaudited |
-| DXswapFeeSetter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x34d924...d60f9d` | ⚠️ Unaudited |
-| DXswapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x1dc945...3af36e` | ⚠️ Unaudited |
-| ERC20StakingRewardsDistribution | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xd28629...f37ba2` | ⚠️ Unaudited |
-| KPITokensFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0xe9c1c9...3ceacb` | ⚠️ Unaudited |
-| StandardArbERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0xde903e...65ac30` | ⚠️ Unaudited |
-| SWPRConverter | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-257589 | `0x2b058a...daddfd` | ⚠️ Unaudited |
+| DXdaoERC20StakingRewardsDistributionFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x4e6a2ef2b0b7e405e0bdfeb56c3e09e3aeb01402` | ⚠️ Unaudited |
+| DXswapDeployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x01f1b4a2a48d5739dcc80d9de0f38bcc24902518` | ⚠️ Unaudited |
+| DXswapFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x047f32f04c6a36bc28fe2d9fe407b49ad5c1998d` | ⚠️ Unaudited |
+| DXswapFeeReceiver | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-257588 | `0x1d7c7cb66fb2d75123351fd0d6779e8d7724a1ae` | ⚠️ Unaudited |
+| DXswapFeeSetter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x34d924f95313ee0faad03dac6cf60090a8d60f9d` | ⚠️ Unaudited |
+| DXswapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x1dc9455b013a854f5c25981a2963d6f53b3af36e` | ⚠️ Unaudited |
+| ERC20StakingRewardsDistribution | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xd28629981518e2b2cd2d5125b371f9810bf37ba2` | ⚠️ Unaudited |
+| KPITokensFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0xe9c1c9722bbe9e36489e16c095641b9c803ceacb` | ⚠️ Unaudited |
+| StandardArbERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0xde903e2712288a1da82942dddf2c20529565ac30` | ⚠️ Unaudited |
+| SWPRConverter | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-257589 | `0x2b058af96175a847bf3e5457b3a702f807daddfd` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

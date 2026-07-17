@@ -58,21 +58,21 @@ The protocol comprises 2 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| DXswapDeployer | unknown | gnosis | n/a | [`0x01f1b4...902518`](./contracts/gnosis-100/0x01f1b4a2a48d5739dcc80d9de0f38bcc24902518/) | ✅ Audited |
-| DXswapFactory | unknown | gnosis | n/a | [`0x047f32...c1998d`](./contracts/gnosis-100/0x047f32f04c6a36bc28fe2d9fe407b49ad5c1998d/) | ✅ Audited |
-| DXswapRouter | unknown | gnosis | n/a | [`0x1dc945...3af36e`](./contracts/gnosis-100/0x1dc9455b013a854f5c25981a2963d6f53b3af36e/) | ✅ Audited |
+| DXswapDeployer | unknown | gnosis | n/a | [`0x01f1b4a2a48d5739dcc80d9de0f38bcc24902518`](./contracts/gnosis-100/0x01f1b4a2a48d5739dcc80d9de0f38bcc24902518/) | ✅ Audited |
+| DXswapFactory | unknown | gnosis | n/a | [`0x047f32f04c6a36bc28fe2d9fe407b49ad5c1998d`](./contracts/gnosis-100/0x047f32f04c6a36bc28fe2d9fe407b49ad5c1998d/) | ✅ Audited |
+| DXswapRouter | unknown | gnosis | n/a | [`0x1dc9455b013a854f5c25981a2963d6f53b3af36e`](./contracts/gnosis-100/0x1dc9455b013a854f5c25981a2963d6f53b3af36e/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (7)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| DXdaoERC20StakingRewardsDistributionFactory | unknown | gnosis | n/a | [`0x4e6a2e...b01402`](./contracts/gnosis-100/0x4e6a2ef2b0b7e405e0bdfeb56c3e09e3aeb01402/) | ⚠️ Unaudited |
-| DXswapFeeReceiver | unknown | arbitrum | n/a | [`0x1d7c7c...24a1ae`](./contracts/arbitrum-42161/0x1d7c7cb66fb2d75123351fd0d6779e8d7724a1ae/) | ⚠️ Unaudited |
-| DXswapFeeSetter | unknown | gnosis | n/a | [`0x34d924...d60f9d`](./contracts/gnosis-100/0x34d924f95313ee0faad03dac6cf60090a8d60f9d/) | ⚠️ Unaudited |
-| ERC20StakingRewardsDistribution | unknown | arbitrum | n/a | [`0xd28629...f37ba2`](./contracts/arbitrum-42161/0xd28629981518e2b2cd2d5125b371f9810bf37ba2/) | ⚠️ Unaudited |
-| KPITokensFactory | unknown | gnosis | n/a | [`0xe9c1c9...3ceacb`](./contracts/gnosis-100/0xe9c1c9722bbe9e36489e16c095641b9c803ceacb/) | ⚠️ Unaudited |
-| StandardArbERC20 | unknown | arbitrum | n/a | [`0xde903e...65ac30`](./contracts/arbitrum-42161/0xde903e2712288a1da82942dddf2c20529565ac30/) | ⚠️ Unaudited |
-| SWPRConverter | unknown | arbitrum | n/a | [`0x2b058a...daddfd`](./contracts/arbitrum-42161/0x2b058af96175a847bf3e5457b3a702f807daddfd/) | ⚠️ Unaudited |
+| DXdaoERC20StakingRewardsDistributionFactory | unknown | gnosis | n/a | [`0x4e6a2ef2b0b7e405e0bdfeb56c3e09e3aeb01402`](./contracts/gnosis-100/0x4e6a2ef2b0b7e405e0bdfeb56c3e09e3aeb01402/) | ⚠️ Unaudited |
+| DXswapFeeReceiver | unknown | arbitrum | n/a | [`0x1d7c7cb66fb2d75123351fd0d6779e8d7724a1ae`](./contracts/arbitrum-42161/0x1d7c7cb66fb2d75123351fd0d6779e8d7724a1ae/) | ⚠️ Unaudited |
+| DXswapFeeSetter | unknown | gnosis | n/a | [`0x34d924f95313ee0faad03dac6cf60090a8d60f9d`](./contracts/gnosis-100/0x34d924f95313ee0faad03dac6cf60090a8d60f9d/) | ⚠️ Unaudited |
+| ERC20StakingRewardsDistribution | unknown | arbitrum | n/a | [`0xd28629981518e2b2cd2d5125b371f9810bf37ba2`](./contracts/arbitrum-42161/0xd28629981518e2b2cd2d5125b371f9810bf37ba2/) | ⚠️ Unaudited |
+| KPITokensFactory | unknown | gnosis | n/a | [`0xe9c1c9722bbe9e36489e16c095641b9c803ceacb`](./contracts/gnosis-100/0xe9c1c9722bbe9e36489e16c095641b9c803ceacb/) | ⚠️ Unaudited |
+| StandardArbERC20 | unknown | arbitrum | n/a | [`0xde903e2712288a1da82942dddf2c20529565ac30`](./contracts/arbitrum-42161/0xde903e2712288a1da82942dddf2c20529565ac30/) | ⚠️ Unaudited |
+| SWPRConverter | unknown | arbitrum | n/a | [`0x2b058af96175a847bf3e5457b3a702f807daddfd`](./contracts/arbitrum-42161/0x2b058af96175a847bf3e5457b3a702f807daddfd/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -104,13 +104,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| gnosis | [`0x4e6a2e...b01402`](./contracts/gnosis-100/0x4e6a2ef2b0b7e405e0bdfeb56c3e09e3aeb01402/) | DXdaoERC20StakingRewardsDistributionFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x1d7c7c...24a1ae`](./contracts/arbitrum-42161/0x1d7c7cb66fb2d75123351fd0d6779e8d7724a1ae/) | DXswapFeeReceiver | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| gnosis | [`0x34d924...d60f9d`](./contracts/gnosis-100/0x34d924f95313ee0faad03dac6cf60090a8d60f9d/) | DXswapFeeSetter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xd28629...f37ba2`](./contracts/arbitrum-42161/0xd28629981518e2b2cd2d5125b371f9810bf37ba2/) | ERC20StakingRewardsDistribution | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| gnosis | [`0xe9c1c9...3ceacb`](./contracts/gnosis-100/0xe9c1c9722bbe9e36489e16c095641b9c803ceacb/) | KPITokensFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xde903e...65ac30`](./contracts/arbitrum-42161/0xde903e2712288a1da82942dddf2c20529565ac30/) | StandardArbERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x2b058a...daddfd`](./contracts/arbitrum-42161/0x2b058af96175a847bf3e5457b3a702f807daddfd/) | SWPRConverter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| gnosis | [`0x4e6a2ef2b0b7e405e0bdfeb56c3e09e3aeb01402`](./contracts/gnosis-100/0x4e6a2ef2b0b7e405e0bdfeb56c3e09e3aeb01402/) | DXdaoERC20StakingRewardsDistributionFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x1d7c7cb66fb2d75123351fd0d6779e8d7724a1ae`](./contracts/arbitrum-42161/0x1d7c7cb66fb2d75123351fd0d6779e8d7724a1ae/) | DXswapFeeReceiver | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| gnosis | [`0x34d924f95313ee0faad03dac6cf60090a8d60f9d`](./contracts/gnosis-100/0x34d924f95313ee0faad03dac6cf60090a8d60f9d/) | DXswapFeeSetter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xd28629981518e2b2cd2d5125b371f9810bf37ba2`](./contracts/arbitrum-42161/0xd28629981518e2b2cd2d5125b371f9810bf37ba2/) | ERC20StakingRewardsDistribution | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| gnosis | [`0xe9c1c9722bbe9e36489e16c095641b9c803ceacb`](./contracts/gnosis-100/0xe9c1c9722bbe9e36489e16c095641b9c803ceacb/) | KPITokensFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xde903e2712288a1da82942dddf2c20529565ac30`](./contracts/arbitrum-42161/0xde903e2712288a1da82942dddf2c20529565ac30/) | StandardArbERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x2b058af96175a847bf3e5457b3a702f807daddfd`](./contracts/arbitrum-42161/0x2b058af96175a847bf3e5457b3a702f807daddfd/) | SWPRConverter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

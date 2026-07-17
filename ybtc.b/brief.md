@@ -62,7 +62,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BridgedYBTCB | operational_periphery | ethereum | n/a | [`0xf053a5...15a308`](./contracts/ethereum-1/0xf053a558e551276a36d9036670f6130e5415a308/) | ⚠️ Unaudited |
+| BridgedYBTCB | operational_periphery | ethereum | n/a | [`0xf053a558e551276a36d9036670f6130e5415a308`](./contracts/ethereum-1/0xf053a558e551276a36d9036670f6130e5415a308/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -103,7 +103,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xf053a5...15a308`](./contracts/ethereum-1/0xf053a558e551276a36d9036670f6130e5415a308/) | BridgedYBTCB | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xf053a558e551276a36d9036670f6130e5415a308`](./contracts/ethereum-1/0xf053a558e551276a36d9036670f6130e5415a308/) | BridgedYBTCB | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

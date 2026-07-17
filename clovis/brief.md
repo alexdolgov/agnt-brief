@@ -60,16 +60,16 @@ The protocol comprises 3 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Vault | unknown | ethereum | n/a | [`0xf97f14...6c7d0c`](./contracts/ethereum-1/0xf97f14eb571eb749390ef5a067edbbbc646c7d0c/) | ✅ Audited |
+| Vault | unknown | ethereum | n/a | [`0xf97f14eb571eb749390ef5a067edbbbc646c7d0c`](./contracts/ethereum-1/0xf97f14eb571eb749390ef5a067edbbbc646c7d0c/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (4)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ATokenV3 | unknown | sei | n/a | [`0x093066...e32819`](./contracts/sei-1329/0x093066736e6762210de13f92b39cf862eee32819/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | optimism | n/a | [`0xe7cd86...0fc82d`](./contracts/optimism-10/0xe7cd86e13ac4309349f30b3435a9d337750fc82d/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | optimism | n/a | [`0x01bff4...bc1071`](./contracts/optimism-10/0x01bff41798a0bcf287b996046ca68b395dbc1071/) | ⚠️ Unaudited |
-| VaultV2 | unknown | ethereum | n/a | [`0x39166b...a5e94c`](./contracts/ethereum-1/0x39166b36a25a4a98d6b7c21d429f4740c6a5e94c/) | ⚠️ Unaudited |
+| ATokenV3 | unknown | sei | n/a | [`0x093066736e6762210de13f92b39cf862eee32819`](./contracts/sei-1329/0x093066736e6762210de13f92b39cf862eee32819/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | optimism | n/a | [`0xe7cd86e13ac4309349f30b3435a9d337750fc82d`](./contracts/optimism-10/0xe7cd86e13ac4309349f30b3435a9d337750fc82d/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | optimism | n/a | [`0x01bff41798a0bcf287b996046ca68b395dbc1071`](./contracts/optimism-10/0x01bff41798a0bcf287b996046ca68b395dbc1071/) | ⚠️ Unaudited |
+| VaultV2 | unknown | ethereum | n/a | [`0x39166b36a25a4a98d6b7c21d429f4740c6a5e94c`](./contracts/ethereum-1/0x39166b36a25a4a98d6b7c21d429f4740c6a5e94c/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -103,8 +103,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| sei | [`0x093066...e32819`](./contracts/sei-1329/0x093066736e6762210de13f92b39cf862eee32819/) | ATokenV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x39166b...a5e94c`](./contracts/ethereum-1/0x39166b36a25a4a98d6b7c21d429f4740c6a5e94c/) | VaultV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sei | [`0x093066736e6762210de13f92b39cf862eee32819`](./contracts/sei-1329/0x093066736e6762210de13f92b39cf862eee32819/) | ATokenV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x39166b36a25a4a98d6b7c21d429f4740c6a5e94c`](./contracts/ethereum-1/0x39166b36a25a4a98d6b7c21d429f4740c6a5e94c/) | VaultV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

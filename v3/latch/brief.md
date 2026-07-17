@@ -52,9 +52,9 @@ The pinned logic-topography run contains 3 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- GnosisSafeProxy (`0x774388...4562e7`, chain 1)
-- StakingPool (`0x29403b...119b95`, chain 1)
-- StakingPool (`0x899f88...d3245b`, chain 1)
+- GnosisSafeProxy (`0x774388454c92fe33e781ab535a5e9d186a4562e7`, chain 1)
+- StakingPool (`0x29403b1ac2b745c806e4d4988e4c1b6f4c119b95`, chain 1)
+- StakingPool (`0x899f88b7c34a01ed0eea2bdb0952bd271ad3245b`, chain 1)
 
 ## Contract Surface Quality
 
@@ -100,10 +100,10 @@ The pinned logic-topography run contains 3 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| DepositPool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x7cc08f...b8f90c`; ethereum `0xfe606e...31a023` | ⚠️ Unaudited |
-| GnosisSafe | governance | project_anchor | own_supporting | 1 | ethereum | unit-244518 | `0x774388...4562e7` | ⚠️ Unaudited |
-| StakingPool | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-244516 | `0x29403b...119b95` | ⚠️ Unaudited |
-| StakingPool | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-244517 | `0x899f88...d3245b` | ⚠️ Unaudited |
+| DepositPool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x7cc08f23a6e8222c86a62fce3d4d252dd1b8f90c`; ethereum `0xfe606eec8eb8e6ad8e8654968a15650f5331a023` | ⚠️ Unaudited |
+| GnosisSafe | governance | project_anchor | own_supporting | 1 | ethereum | unit-244518 | `0x774388454c92fe33e781ab535a5e9d186a4562e7` | ⚠️ Unaudited |
+| StakingPool | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-244516 | `0x29403b1ac2b745c806e4d4988e4c1b6f4c119b95` | ⚠️ Unaudited |
+| StakingPool | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-244517 | `0x899f88b7c34a01ed0eea2bdb0952bd271ad3245b` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -123,8 +123,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc314b8...748bad` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc4af68...97f58d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc314b8637b05a294ae9d9c29300d5f667c748bad` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc4af68dd5b96f0a544c4417407773fefdc97f58d` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -161,7 +161,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Latch - SmartSavings - SlowMist Audit Report.pdf | LSDToken | unmatched — not counted | — | listed in scope | no |
 | Latch - SmartSavings - SlowMist Audit Report.pdf | message-lib | unmatched — not counted | — | listed in scope | no |
 | Latch - SmartSavings - SlowMist Audit Report.pdf | AfterDepositHook | unmatched — not counted | — | listed in scope and findings | no |
-| Latch - StakingPool - SlowMist Audit Report.pdf | StakingPool | ambiguous — not counted | StakingPool (alternative) `0x29403b...119b95` — deployed 2024-12-19 11:01:47+03 — liveness: live (current_address_book_code)<br>StakingPool (alternative) `0x899f88...d3245b` — deployed 2024-12-19 11:01:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Latch - StakingPool - SlowMist Audit Report.pdf | StakingPool | ambiguous — not counted | StakingPool (alternative) `0x29403b1ac2b745c806e4d4988e4c1b6f4c119b95` — deployed 2024-12-19 11:01:47+03 — liveness: live (current_address_book_code)<br>StakingPool (alternative) `0x899f88b7c34a01ed0eea2bdb0952bd271ad3245b` — deployed 2024-12-19 11:01:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | Latch - StakingPool - SlowMist Audit Report.pdf | StakingExecutorEETH | unmatched — not counted | — | listed in scope and described in contracts description | no |
 | Latch - StakingPool - SlowMist Audit Report.pdf | StakingExecutorSUSDE | unmatched — not counted | — | listed in scope and described in contracts description | no |
 | Latch - StakingPool - SlowMist Audit Report.pdf | SUSDEWithdrawer | unmatched — not counted | — | listed in scope and described in contracts description | no |
@@ -174,8 +174,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x29403b...119b95` | StakingPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x899f88...d3245b` | StakingPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x29403b1ac2b745c806e4d4988e4c1b6f4c119b95` | StakingPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x899f88b7c34a01ed0eea2bdb0952bd271ad3245b` | StakingPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

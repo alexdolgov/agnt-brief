@@ -52,14 +52,14 @@ The pinned logic-topography run contains 3 contract row(s) across arbitrum, base
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x054ed4...d88d0a`, chain 177)
-- UnnamedContract (`0x4b3495...3ed1fd`, chain 177)
-- UnnamedContract (`0x5d54f1...3ef22c`, chain 177)
-- UnnamedContract (`0xdd73ea...d89d56`, chain 177)
-- UnnamedContract (`0x4b3495...3ed1fd`, chain 42161)
-- UnnamedContract (`0x5d54f1...3ef22c`, chain 42161)
-- UnnamedContract (`0xdd73ea...d89d56`, chain 42161)
-- FiatTokenProxy (`0xaf88d0...8e5831`, chain 42161)
+- UnnamedContract (`0x054ed45810dbbab8b27668922d110669c9d88d0a`, chain 177)
+- UnnamedContract (`0x4b3495391ebb170af31185aed7bb4dfa903ed1fd`, chain 177)
+- UnnamedContract (`0x5d54f1092fd1750a3ab96972dc1867c5b23ef22c`, chain 177)
+- UnnamedContract (`0xdd73ea766b80417c0607a3f08e34a0c415d89d56`, chain 177)
+- UnnamedContract (`0x4b3495391ebb170af31185aed7bb4dfa903ed1fd`, chain 42161)
+- UnnamedContract (`0x5d54f1092fd1750a3ab96972dc1867c5b23ef22c`, chain 42161)
+- UnnamedContract (`0xdd73ea766b80417c0607a3f08e34a0c415d89d56`, chain 42161)
+- FiatTokenProxy (`0xaf88d065e77c8cc2239327c5edb3a432268e5831`, chain 42161)
 
 ## Contract Surface Quality
 
@@ -105,11 +105,11 @@ The pinned logic-topography run contains 3 contract row(s) across arbitrum, base
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| FiatTokenProxy | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-251576 | `0xaf88d0...8e5831` | ⚠️ Unaudited |
-| FiatTokenV2_1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0f4fb9...b6e04a` | ⚠️ Unaudited |
-| MasterMinter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x8aff09...eeab36` | ⚠️ Unaudited |
-| PicWe_USD | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-251575 | `0xdd73ea...d89d56` | ⚠️ Unaudited |
-| WeUSDMintRedeem | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-251574 | `0x5d54f1...3ef22c` | ⚠️ Unaudited |
+| FiatTokenProxy | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-251576 | `0xaf88d065e77c8cc2239327c5edb3a432268e5831` | ⚠️ Unaudited |
+| FiatTokenV2_1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0f4fb9474303d10905ab86aa8d5a65fe44b6e04a` | ⚠️ Unaudited |
+| MasterMinter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x8aff09e2259cacbf4fc4e3e53f3bf799efeeab36` | ⚠️ Unaudited |
+| PicWe_USD | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-251575 | `0xdd73ea766b80417c0607a3f08e34a0c415d89d56` | ⚠️ Unaudited |
+| WeUSDMintRedeem | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-251574 | `0x5d54f1092fd1750a3ab96972dc1867c5b23ef22c` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -129,14 +129,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hashkey | unit-251562 | `0x054ed4...d88d0a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hashkey | unit-251563 | `0x4b3495...3ed1fd` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hashkey | unit-251565 | `0x5d54f1...3ef22c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hashkey | unit-251568 | `0xdd73ea...d89d56` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-251573 | `0x4b3495...3ed1fd` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-251569 | `0x4b3495...3ed1fd` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-251570 | `0x5d54f1...3ef22c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-251571 | `0xdd73ea...d89d56` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hashkey | unit-251562 | `0x054ed45810dbbab8b27668922d110669c9d88d0a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hashkey | unit-251563 | `0x4b3495391ebb170af31185aed7bb4dfa903ed1fd` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hashkey | unit-251565 | `0x5d54f1092fd1750a3ab96972dc1867c5b23ef22c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hashkey | unit-251568 | `0xdd73ea766b80417c0607a3f08e34a0c415d89d56` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-251573 | `0x4b3495391ebb170af31185aed7bb4dfa903ed1fd` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-251569 | `0x4b3495391ebb170af31185aed7bb4dfa903ed1fd` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-251570 | `0x5d54f1092fd1750a3ab96972dc1867c5b23ef22c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-251571 | `0xdd73ea766b80417c0607a3f08e34a0c415d89d56` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -158,7 +158,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 |---|---|---|---|---|---|
 | drive.google.com/file/d/12APmNFf_dy2HBnDof_u0mM03_5vKSPWN/view | IMainContract | unmatched — not counted | — | listed in scope table | no |
 | drive.google.com/file/d/12APmNFf_dy2HBnDof_u0mM03_5vKSPWN/view | IPicweUSD | unmatched — not counted | — | listed in scope table | no |
-| drive.google.com/file/d/12APmNFf_dy2HBnDof_u0mM03_5vKSPWN/view | weusd | ambiguous — not counted | 0xdd73ea… (alternative) `0xdd73ea...d89d56` — liveness: live (current_address_book_code)<br>0xdd73ea… (alternative) `0xdd73ea...d89d56` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| drive.google.com/file/d/12APmNFf_dy2HBnDof_u0mM03_5vKSPWN/view | weusd | ambiguous — not counted | 0xdd73ea… (alternative) `0xdd73ea766b80417c0607a3f08e34a0c415d89d56` — liveness: live (current_address_book_code)<br>0xdd73ea… (alternative) `0xdd73ea766b80417c0607a3f08e34a0c415d89d56` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | drive.google.com/file/d/12APmNFf_dy2HBnDof_u0mM03_5vKSPWN/view | manageusd | unmatched — not counted | — | listed in scope table | no |
 | drive.google.com/file/d/12APmNFf_dy2HBnDof_u0mM03_5vKSPWN/view | IClientStructsEvents | unmatched — not counted | — | listed in scope table | no |
 | drive.google.com/file/d/12APmNFf_dy2HBnDof_u0mM03_5vKSPWN/view | client | unmatched — not counted | — | listed in scope table | no |
@@ -180,7 +180,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | `0xaf88d0...8e5831` | FiatTokenProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0xaf88d065e77c8cc2239327c5edb3a432268e5831` | FiatTokenProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -90,14 +90,14 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BBOFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-127661 | `0xd459ec...1073a3` | ⚠️ Unaudited |
-| BBTC | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-127659 | `0x8b8d92...9d6863` | ⚠️ Unaudited |
-| BBUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-127660 | `0xbc8570...da6eb1` | ⚠️ Unaudited |
-| CefiTokenWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-127656 | `0x403f10...757475` | ⚠️ Unaudited |
-| CefiTrove | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-127658 | `0x69b706...e40116` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-127655 | `0x13b037...4707b2` | ⚠️ Unaudited |
-| TokenVestingWallet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-127657 | `0x4756c4...cb580e` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | ethereum | unit-127662 | `0x035d73...316467` | ⚠️ Unaudited |
+| BBOFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-127661 | `0xd459eceddafcc1d876a3be7290a2e16e801073a3` | ⚠️ Unaudited |
+| BBTC | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-127659 | `0x8b8d92bb45ec8225558096f99d6d75c2b49d6863` | ⚠️ Unaudited |
+| BBUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-127660 | `0xbc8570ae1dae11d8b439fa1845753bef2eda6eb1` | ⚠️ Unaudited |
+| CefiTokenWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-127656 | `0x403f10c86b4d6f33b0d5163073784f6d9e757475` | ⚠️ Unaudited |
+| CefiTrove | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-127658 | `0x69b706f1c78a42404f9f2a2d982fe33fc4e40116` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-127655 | `0x13b037ab4b9056132cff7bd080b00bcae54707b2` | ⚠️ Unaudited |
+| TokenVestingWallet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-127657 | `0x4756c41be6212a8ebf1ee0fa951f47bd91cb580e` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | ethereum | unit-127662 | `0x035d73d9a563334bf35e08bfb49ea39ed4316467` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

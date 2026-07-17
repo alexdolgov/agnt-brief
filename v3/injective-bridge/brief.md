@@ -57,8 +57,8 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xf955c5...bad6f3`, chain 1)
-- InjectiveToken (`0xe28b3b...ceca30`, chain 1)
+- UnnamedContract (`0xf955c57f9ea9dc8781965feae0b6a2ace2bad6f3`, chain 1)
+- InjectiveToken (`0xe28b3b32b6c345a34ff64674606124dd5aceca30`, chain 1)
 
 ## Contract Surface Quality
 
@@ -104,7 +104,7 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| InjectiveToken | token | project_anchor | own_supporting | 0 | ethereum | unit-387419 | `0xe28b3b...ceca30` | ⚠️ Unaudited |
+| InjectiveToken | token | project_anchor | own_supporting | 0 | ethereum | unit-387419 | `0xe28b3b32b6c345a34ff64674606124dd5aceca30` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -124,7 +124,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387420 | `0xf955c5...bad6f3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387420 | `0xf955c57f9ea9dc8781965feae0b6a2ace2bad6f3` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -150,7 +150,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0xe28b3b...ceca30` | InjectiveToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xe28b3b32b6c345a34ff64674606124dd5aceca30` | InjectiveToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

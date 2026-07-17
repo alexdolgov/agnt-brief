@@ -56,9 +56,9 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- ProxyAdmin (`0xd570ac...c22a86`, chain 42161)
-- TransparentUpgradeableProxy (`0x09e922...351eee`, chain 42161)
-- TransparentUpgradeableProxy (`0x5288c5...84f933`, chain 42161)
+- ProxyAdmin (`0xd570ace65c43af47101fc6250fd6fc63d1c22a86`, chain 42161)
+- TransparentUpgradeableProxy (`0x09e9222e96e7b4ae2a407b98d48e330053351eee`, chain 42161)
+- TransparentUpgradeableProxy (`0x5288c571fd7ad117bea99bf60fe0846c4e84f933`, chain 42161)
 
 ## Contract Surface Quality
 
@@ -104,9 +104,9 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| L2ERC20Gateway | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-381900 | `0x09e922...351eee` | ⚠️ Unaudited |
-| L2GatewayRouter | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-381902 | `0x5288c5...84f933` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381897 | `0xd570ac...c22a86` | ⚠️ Unaudited |
+| L2ERC20Gateway | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-381900 | `0x09e9222e96e7b4ae2a407b98d48e330053351eee` | ⚠️ Unaudited |
+| L2GatewayRouter | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-381902 | `0x5288c571fd7ad117bea99bf60fe0846c4e84f933` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381897 | `0xd570ace65c43af47101fc6250fd6fc63d1c22a86` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

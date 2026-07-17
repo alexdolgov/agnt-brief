@@ -52,20 +52,20 @@ The pinned logic-topography run contains 6 contract row(s) across ethereum, hype
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x387167...e44aba`, chain 1)
-- UnnamedContract (`0x6dff69...a35d12`, chain 1)
-- UnnamedContract (`0xb2429b...69f851`, chain 1)
-- UnnamedContract (`0x484be0...d4e73f`, chain 143)
-- UnnamedContract (`0xb37476...0b0984`, chain 143)
-- UnnamedContract (`0xc9ea90...80a7da`, chain 143)
-- UnnamedContract (`0x34c07f...f112e4`, chain 999)
-- UnnamedContract (`0x8cbafe...8dcc51`, chain 999)
-- UnnamedContract (`0xf72ce3...8da72f`, chain 999)
-- UnnamedContract (`0x54df79...828934`, chain 1672)
-- UnnamedContract (`0x0cddd7...1859e8`, chain 9745)
-- UnnamedContract (`0x57b269...bac5e5`, chain 9745)
-- UnnamedContract (`0x9dcb0d...373858`, chain 9745)
-- StakedYuzuUSDV2 (`0xa39825...e5e9c8`, chain 9745)
+- UnnamedContract (`0x387167e5c088468906bcd67c06746409a8e44aba`, chain 1)
+- UnnamedContract (`0x6dff69eb720986e98bb3e8b26cb9e02ec1a35d12`, chain 1)
+- UnnamedContract (`0xb2429ba2cfa6387c9a336da127d34480c069f851`, chain 1)
+- UnnamedContract (`0x484be0540ad49f351eaa04eeb35df0f937d4e73f`, chain 143)
+- UnnamedContract (`0xb37476cb1f6111cc682b107b747b8652f90b0984`, chain 143)
+- UnnamedContract (`0xc9ea90692757831d98ac629f2a0140e02b80a7da`, chain 143)
+- UnnamedContract (`0x34c07f50c4f55b322e85deeb265d278e6af112e4`, chain 999)
+- UnnamedContract (`0x8cbafe7847606ff9ac5eb5e8dd54e5459e8dcc51`, chain 999)
+- UnnamedContract (`0xf72ce39998d2075f6661cf4214cffe3cf38da72f`, chain 999)
+- UnnamedContract (`0x54df79d8edf36d15cd83fbedbdd90807fc828934`, chain 1672)
+- UnnamedContract (`0x0cddd7515586550f16dec1732e0386109e1859e8`, chain 9745)
+- UnnamedContract (`0x57b2690bdee4740bcf40a9b52e7e5b8877bac5e5`, chain 9745)
+- UnnamedContract (`0x9dcb0d17edde04d27f387c89fecb78654c373858`, chain 9745)
+- StakedYuzuUSDV2 (`0xa3982582016375a0b25cb7d572379d3d49e5e9c8`, chain 9745)
 
 ## Contract Surface Quality
 
@@ -110,22 +110,22 @@ The pinned logic-topography run contains 6 contract row(s) across ethereum, hype
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| StakedYuzuUSDV2 | unknown | project_anchor | own_supporting | 1 | plasma | unit-398369 | 2 deployments: plasma `0xa39825...e5e9c8`; plasma `0xc8a8df...0a1bf6` | ✅ Audited |
-| YuzuILPV2 | unknown | project_anchor | own_supporting | 1 | plasma | unit-398367 | 2 deployments: plasma `0x326839...9309bc`; plasma `0xebfc8c...b50dca` | ✅ Audited |
-| YuzuUSDV2 | unknown | project_anchor | own_supporting | 1 | plasma | unit-398368 | 2 deployments: plasma `0x32d7d5...bf5cfe`; plasma `0x6695c0...7926dc` | ✅ Audited |
+| StakedYuzuUSDV2 | unknown | project_anchor | own_supporting | 1 | plasma | unit-398369 | 2 deployments: plasma `0xa3982582016375a0b25cb7d572379d3d49e5e9c8`; plasma `0xc8a8df9b210243c55d31c73090f06787ad0a1bf6` | ✅ Audited |
+| YuzuILPV2 | unknown | project_anchor | own_supporting | 1 | plasma | unit-398367 | 2 deployments: plasma `0x326839f792ba2ccf98a3ac28bb7de551539309bc`; plasma `0xebfc8c2fe73c431ef2a371aea9132110aab50dca` | ✅ Audited |
+| YuzuUSDV2 | unknown | project_anchor | own_supporting | 1 | plasma | unit-398368 | 2 deployments: plasma `0x32d7d5bf842d6ae28c9dd4fac4c6662cf9bf5cfe`; plasma `0x6695c0f8706c5ace3bdf8995073179cca47926dc` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (8)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0x44f6e9...fb7e71` | ⚠️ Unaudited |
-| PSM | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | plasma | n/a | 2 deployments: plasma `0x2aa939...199dea`; plasma `0x933069...c863b2` | ⚠️ Unaudited |
-| PSM | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0x7000b8...957544` | ⚠️ Unaudited |
-| StakedYuzuUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | plasma | n/a | 2 deployments: plasma `0x3fdd8e...d9e589`; plasma `0xb14e7d...32160f` | ⚠️ Unaudited |
-| StakedYuzuUSDV2 | token | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0x926b29...130ec8` | ⚠️ Unaudited |
-| TokenizedVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | plasma | n/a | `0x517677...1e3eec` | ⚠️ Unaudited |
-| YuzuILP | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | plasma | n/a | 2 deployments: plasma `0x7e8bc5...249281`; plasma `0xa5913f...b51531` | ⚠️ Unaudited |
-| YuzuUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | plasma | n/a | 2 deployments: plasma `0x8e6026...9cc340`; plasma `0x90b1bc...674d85` | ⚠️ Unaudited |
+| ProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0x44f6e9b5c0fef82158dc98282078068b9bfb7e71` | ⚠️ Unaudited |
+| PSM | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | plasma | n/a | 2 deployments: plasma `0x2aa939b5c9cef10c170ad38c4b05a45f27199dea`; plasma `0x933069e8fc9502762fcceb3a28804a28b4c863b2` | ⚠️ Unaudited |
+| PSM | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0x7000b862257566245d8b28e905ae53cfb7957544` | ⚠️ Unaudited |
+| StakedYuzuUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | plasma | n/a | 2 deployments: plasma `0x3fdd8e2d2e9170a00f5406089720dae39cd9e589`; plasma `0xb14e7d488371d22d39aff1b0c0f07ed2b532160f` | ⚠️ Unaudited |
+| StakedYuzuUSDV2 | token | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0x926b292f3b0fa2af6e6561c2bca28f0625130ec8` | ⚠️ Unaudited |
+| TokenizedVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | plasma | n/a | `0x517677a19d8ae6ff600fb86c3c7bfccd651e3eec` | ⚠️ Unaudited |
+| YuzuILP | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | plasma | n/a | 2 deployments: plasma `0x7e8bc59b4126415c86c9bf1f8cb277b9d9249281`; plasma `0xa5913fc4828f2750d24856e6b7bea3c16bb51531` | ⚠️ Unaudited |
+| YuzuUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | plasma | n/a | 2 deployments: plasma `0x8e6026ac788415d03f38a46008a2a75d7c9cc340`; plasma `0x90b1bc26e1ac873fc5043a9f658443daab674d85` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -145,19 +145,19 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398354 | `0x387167...e44aba` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398355 | `0x6dff69...a35d12` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398356 | `0xb2429b...69f851` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-398357 | `0x484be0...d4e73f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-398358 | `0xb37476...0b0984` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-398359 | `0xc9ea90...80a7da` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-398364 | `0x34c07f...f112e4` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-398365 | `0x8cbafe...8dcc51` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-398366 | `0xf72ce3...8da72f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | pharos | unit-398360 | `0x54df79...828934` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-398361 | `0x0cddd7...1859e8` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-398362 | `0x57b269...bac5e5` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-398363 | `0x9dcb0d...373858` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398354 | `0x387167e5c088468906bcd67c06746409a8e44aba` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398355 | `0x6dff69eb720986e98bb3e8b26cb9e02ec1a35d12` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398356 | `0xb2429ba2cfa6387c9a336da127d34480c069f851` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-398357 | `0x484be0540ad49f351eaa04eeb35df0f937d4e73f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-398358 | `0xb37476cb1f6111cc682b107b747b8652f90b0984` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-398359 | `0xc9ea90692757831d98ac629f2a0140e02b80a7da` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-398364 | `0x34c07f50c4f55b322e85deeb265d278e6af112e4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-398365 | `0x8cbafe7847606ff9ac5eb5e8dd54e5459e8dcc51` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-398366 | `0xf72ce39998d2075f6661cf4214cffe3cf38da72f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | pharos | unit-398360 | `0x54df79d8edf36d15cd83fbedbdd90807fc828934` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-398361 | `0x0cddd7515586550f16dec1732e0386109e1859e8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-398362 | `0x57b2690bdee4740bcf40a9b52e7e5b8877bac5e5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-398363 | `0x9dcb0d17edde04d27f387c89fecb78654c373858` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -218,15 +218,15 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | YuzuUSD-security-review_2026-01-14.pdf | YuzuProtoV2 | unmatched — not counted | — | listed in scope | no |
 | YuzuUSD-security-review_2026-01-14.pdf | PSM | unmatched — not counted | — | listed in scope | no |
 | YuzuUSD-security-review_2026-01-14.pdf | StakedYuzuUSD | unmatched — not counted | — | listed in scope | no |
-| YuzuUSD-security-review_2026-01-14.pdf | StakedYuzuUSDV2 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xc8a8df...0a1bf6` — deployed 2025-10-10 16:10:10+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| YuzuUSD-security-review_2026-01-14.pdf | StakedYuzuUSDV2 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xc8a8df9b210243c55d31c73090f06787ad0a1bf6` — deployed 2025-10-10 16:10:10+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | YuzuUSD-security-review_2026-01-14.pdf | YuzuILP | unmatched — not counted | — | listed in scope | no |
-| YuzuUSD-security-review_2026-01-14.pdf | YuzuILPV2 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xebfc8c...b50dca` — deployed 2025-10-10 16:10:08+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| YuzuUSD-security-review_2026-01-14.pdf | YuzuUSDV2 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6695c0...7926dc` — deployed 2025-10-10 16:10:05+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| YuzuUSD-security-review_2026-01-14.pdf | YuzuILPV2 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xebfc8c2fe73c431ef2a371aea9132110aab50dca` — deployed 2025-10-10 16:10:08+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| YuzuUSD-security-review_2026-01-14.pdf | YuzuUSDV2 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6695c0f8706c5ace3bdf8995073179cca47926dc` — deployed 2025-10-10 16:10:05+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | dedaub.com/audits/yuzu-money/yuzuusd-psm-february-09-2026 | YuzuProtoV2 | unmatched — not counted | — | mentioned in L1 finding | no |
 | dedaub.com/audits/yuzu-money/yuzuusd-psm-february-09-2026 | PSM | unmatched — not counted | — | mentioned in L1 finding and centralization note | no |
 | dedaub.com/audits/yuzu-money/yuzuusd-psm-february-09-2026 | StakedYuzuUSD | unmatched — not counted | — | mentioned in L2 finding | no |
-| dedaub.com/audits/yuzu-money/yuzuusd-psm-february-09-2026 | StakedYuzuUSDV2 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xc8a8df...0a1bf6` — deployed 2025-10-10 16:10:10+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| dedaub.com/audits/yuzu-money/yuzuusd-psm-february-09-2026 | YuzuUSDV2 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6695c0...7926dc` — deployed 2025-10-10 16:10:05+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| dedaub.com/audits/yuzu-money/yuzuusd-psm-february-09-2026 | StakedYuzuUSDV2 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xc8a8df9b210243c55d31c73090f06787ad0a1bf6` — deployed 2025-10-10 16:10:10+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| dedaub.com/audits/yuzu-money/yuzuusd-psm-february-09-2026 | YuzuUSDV2 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6695c0f8706c5ace3bdf8995073179cca47926dc` — deployed 2025-10-10 16:10:05+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | dedaub.com/audits/yuzu-money/yuzuusd-psm-february-09-2026 | IStakedYuzuUSDV2Definitions | unmatched — not counted | — | mentioned in L2 finding | no |
 | YuzuUSD-security-review_2025-08-28.md | YuzuUSD | unmatched — not counted | — | listed in scope | no |
 | YuzuUSD-security-review_2025-08-28.md | YuzuILP | unmatched — not counted | — | listed in scope | no |
@@ -254,10 +254,10 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | YuzuUSD-security-review_2026-01-14.md | YuzuProtoV2 | unmatched — not counted | — | listed in scope | no |
 | YuzuUSD-security-review_2026-01-14.md | PSM | unmatched — not counted | — | listed in scope | no |
 | YuzuUSD-security-review_2026-01-14.md | StakedYuzuUSD | unmatched — not counted | — | listed in scope | no |
-| YuzuUSD-security-review_2026-01-14.md | StakedYuzuUSDV2 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xc8a8df...0a1bf6` — deployed 2025-10-10 16:10:10+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| YuzuUSD-security-review_2026-01-14.md | StakedYuzuUSDV2 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xc8a8df9b210243c55d31c73090f06787ad0a1bf6` — deployed 2025-10-10 16:10:10+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | YuzuUSD-security-review_2026-01-14.md | YuzuILP | unmatched — not counted | — | listed in scope | no |
-| YuzuUSD-security-review_2026-01-14.md | YuzuILPV2 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xebfc8c...b50dca` — deployed 2025-10-10 16:10:08+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| YuzuUSD-security-review_2026-01-14.md | YuzuUSDV2 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6695c0...7926dc` — deployed 2025-10-10 16:10:05+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| YuzuUSD-security-review_2026-01-14.md | YuzuILPV2 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xebfc8c2fe73c431ef2a371aea9132110aab50dca` — deployed 2025-10-10 16:10:08+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| YuzuUSD-security-review_2026-01-14.md | YuzuUSDV2 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6695c0f8706c5ace3bdf8995073179cca47926dc` — deployed 2025-10-10 16:10:05+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 
 ## Coverage Gaps
 

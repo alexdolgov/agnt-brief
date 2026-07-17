@@ -59,14 +59,14 @@ The protocol comprises 4 functional families. Its contracts share 10 common proj
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| LATTE | unknown | bsc | n/a | [`0x8d78c2...91c81a`](./contracts/bsc-56/0x8d78c2ff1fb4fba08c7691dfeac7bb425a91c81a/) | ✅ Audited |
-| LATTEV2 | unknown | bsc | n/a | [`0xa269a9...f2b6cb`](./contracts/bsc-56/0xa269a9942086f5f87930499dc8317ccc9df2b6cb/) | ✅ Audited |
+| LATTE | unknown | bsc | n/a | [`0x8d78c2ff1fb4fba08c7691dfeac7bb425a91c81a`](./contracts/bsc-56/0x8d78c2ff1fb4fba08c7691dfeac7bb425a91c81a/) | ✅ Audited |
+| LATTEV2 | unknown | bsc | n/a | [`0xa269a9942086f5f87930499dc8317ccc9df2b6cb`](./contracts/bsc-56/0xa269a9942086f5f87930499dc8317ccc9df2b6cb/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| LatteSwapRouter | adapter | bsc | n/a | [`0x4ec82e...bf071d`](./contracts/bsc-56/0x4ec82ecd19529ff50a467f522029f69459bf071d/) | ⚠️ Unaudited |
+| LatteSwapRouter | adapter | bsc | n/a | [`0x4ec82ecd19529ff50a467f522029f69459bf071d`](./contracts/bsc-56/0x4ec82ecd19529ff50a467f522029f69459bf071d/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -86,7 +86,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0x5f7a11...6fa609` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x5f7a114d4941e7649261d3564ecd64af9a6fa609` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -101,7 +101,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x4ec82e...bf071d`](./contracts/bsc-56/0x4ec82ecd19529ff50a467f522029f69459bf071d/) | LatteSwapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x4ec82ecd19529ff50a467f522029f69459bf071d`](./contracts/bsc-56/0x4ec82ecd19529ff50a467f522029f69459bf071d/) | LatteSwapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

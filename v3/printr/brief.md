@@ -90,7 +90,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| PrintrProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | mantle | n/a | `0xb77726...243172` | ⚠️ Unaudited |
+| PrintrProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | mantle | n/a | `0xb77726291b125515d0a7affeea2b04f2ff243172` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -110,7 +110,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-251830 | `0xb77726...243172` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-251830 | `0xb77726291b125515d0a7affeea2b04f2ff243172` | ❓ Unverified |
 
 ## Audit Inventory
 

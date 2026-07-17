@@ -59,18 +59,18 @@ The protocol comprises 3 functional families. Contracts are linked by 1 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ProxyAdmin | unknown | polygon | n/a | [`0x4a3f7d...7d31a9`](./contracts/polygon-137/0x4a3f7dd63077cde8d7eff3c958eb69a3dd7d31a9/) | ✅ Audited |
+| ProxyAdmin | unknown | polygon | n/a | [`0x4a3f7dd63077cde8d7eff3c958eb69a3dd7d31a9`](./contracts/polygon-137/0x4a3f7dd63077cde8d7eff3c958eb69a3dd7d31a9/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (6)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Hook | unknown | polygon | n/a | 2 deployments: polygon [`0x48b38b...cf6bff`](./contracts/polygon-137/0x48b38b467ece159c9e149153fce4a53685cf6bff/); polygon `0xfa171a...6a5036` | ⚠️ Unaudited |
-| ModuleFactory | unknown | polygon | n/a | [`0x4dcc7a...6ba4c2`](./contracts/polygon-137/0x4dcc7a839ce7e952cd90d03d65c70b9ccd6ba4c2/) | ⚠️ Unaudited |
-| ValuationModule | unknown | polygon | n/a | [`0x10761d...5d72d9`](./contracts/polygon-137/0x10761dbefafe3aac2feaac2a0d0c6148fb5d72d9/) | ⚠️ Unaudited |
-| Vault | core_logic | polygon | n/a | 5 deployments: polygon [`0x02c25a...b38a48`](./contracts/polygon-137/0x02c25ac43ae068d5808b726af720f47b87b38a48/); polygon `0x3f48e0...553e32`; polygon `0xf532b7...3d4c0d`; arbitrum `0x4a3f7d...7d31a9`; celo `0x2a68c9...51343f` | ⚠️ Unaudited |
-| VaultFactory | unknown | polygon | n/a | 2 deployments: polygon [`0x256288...6be45b`](./contracts/polygon-137/0x2562883f006d04ccc2907635e38089fbfc6be45b/); polygon `0x49421f...00d627` | ⚠️ Unaudited |
-| WithdrawModule | operational_periphery | polygon | n/a | [`0xa40173...8393a5`](./contracts/polygon-137/0xa40173bfd57178e748b41ff0d18080b8c18393a5/) | ⚠️ Unaudited |
+| Hook | unknown | polygon | n/a | 2 deployments: polygon [`0x48b38b467ece159c9e149153fce4a53685cf6bff`](./contracts/polygon-137/0x48b38b467ece159c9e149153fce4a53685cf6bff/); polygon `0xfa171ad7d5e88f6afdbcb9a52118285d8c6a5036` | ⚠️ Unaudited |
+| ModuleFactory | unknown | polygon | n/a | [`0x4dcc7a839ce7e952cd90d03d65c70b9ccd6ba4c2`](./contracts/polygon-137/0x4dcc7a839ce7e952cd90d03d65c70b9ccd6ba4c2/) | ⚠️ Unaudited |
+| ValuationModule | unknown | polygon | n/a | [`0x10761dbefafe3aac2feaac2a0d0c6148fb5d72d9`](./contracts/polygon-137/0x10761dbefafe3aac2feaac2a0d0c6148fb5d72d9/) | ⚠️ Unaudited |
+| Vault | core_logic | polygon | n/a | 5 deployments: polygon [`0x02c25ac43ae068d5808b726af720f47b87b38a48`](./contracts/polygon-137/0x02c25ac43ae068d5808b726af720f47b87b38a48/); polygon `0x3f48e00cfeba3e713db8bc3e28d634578c553e32`; polygon `0xf532b78ec895183120aa18e5f6679e13493d4c0d`; arbitrum `0x4a3f7dd63077cde8d7eff3c958eb69a3dd7d31a9`; celo `0x2a68c98bd43aa24331396f29166aef2bfd51343f` | ⚠️ Unaudited |
+| VaultFactory | unknown | polygon | n/a | 2 deployments: polygon [`0x2562883f006d04ccc2907635e38089fbfc6be45b`](./contracts/polygon-137/0x2562883f006d04ccc2907635e38089fbfc6be45b/); polygon `0x49421fea2e34ffe728299e5a297474dfda00d627` | ⚠️ Unaudited |
+| WithdrawModule | operational_periphery | polygon | n/a | [`0xa40173bfd57178e748b41ff0d18080b8c18393a5`](./contracts/polygon-137/0xa40173bfd57178e748b41ff0d18080b8c18393a5/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -90,14 +90,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | polygon | n/a | `0x04d5b4...0636fc` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x08ce5e...73604f` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x0ef0f6...b920f7` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x2d4500...20cd3f` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x4eda56...baf02f` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x8a805e...320a6b` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x95b304...16cf4b` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xd216cb...a58850` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x04d5b47d7a59443d7240f505e74e44037a0636fc` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x08ce5e200b3986dd29b23ad0597e439adc73604f` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x0ef0f605d93ea31bb1bf54fd150e7b6f16b920f7` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x2d45009c012c71e0d9dea249be9b4ae28320cd3f` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x4eda5660c74b7a6e754983e805882d80e0baf02f` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x8a805e6f06523bc905d49580129ff04052320a6b` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x95b3047d17313307bfbf5ef6701450eadf16cf4b` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xd216cb113259c1d5ddccf001e6bfbdd1c8a58850` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -113,12 +113,12 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| polygon | [`0x48b38b...cf6bff`](./contracts/polygon-137/0x48b38b467ece159c9e149153fce4a53685cf6bff/) | Hook | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x4dcc7a...6ba4c2`](./contracts/polygon-137/0x4dcc7a839ce7e952cd90d03d65c70b9ccd6ba4c2/) | ModuleFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x10761d...5d72d9`](./contracts/polygon-137/0x10761dbefafe3aac2feaac2a0d0c6148fb5d72d9/) | ValuationModule | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x02c25a...b38a48`](./contracts/polygon-137/0x02c25ac43ae068d5808b726af720f47b87b38a48/) | Vault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x256288...6be45b`](./contracts/polygon-137/0x2562883f006d04ccc2907635e38089fbfc6be45b/) | VaultFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0xa40173...8393a5`](./contracts/polygon-137/0xa40173bfd57178e748b41ff0d18080b8c18393a5/) | WithdrawModule | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x48b38b467ece159c9e149153fce4a53685cf6bff`](./contracts/polygon-137/0x48b38b467ece159c9e149153fce4a53685cf6bff/) | Hook | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x4dcc7a839ce7e952cd90d03d65c70b9ccd6ba4c2`](./contracts/polygon-137/0x4dcc7a839ce7e952cd90d03d65c70b9ccd6ba4c2/) | ModuleFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x10761dbefafe3aac2feaac2a0d0c6148fb5d72d9`](./contracts/polygon-137/0x10761dbefafe3aac2feaac2a0d0c6148fb5d72d9/) | ValuationModule | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x02c25ac43ae068d5808b726af720f47b87b38a48`](./contracts/polygon-137/0x02c25ac43ae068d5808b726af720f47b87b38a48/) | Vault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x2562883f006d04ccc2907635e38089fbfc6be45b`](./contracts/polygon-137/0x2562883f006d04ccc2907635e38089fbfc6be45b/) | VaultFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xa40173bfd57178e748b41ff0d18080b8c18393a5`](./contracts/polygon-137/0xa40173bfd57178e748b41ff0d18080b8c18393a5/) | WithdrawModule | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

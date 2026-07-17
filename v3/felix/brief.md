@@ -52,51 +52,51 @@ The pinned logic-topography run contains 46 contract row(s) across ethereum, hyp
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- Collateral Registry (`0x9de1e5...e4711b`, chain 999)
-- feUBTC decimals wrapper (`0xefbd9c...a9ad6f`, chain 999)
-- feUSD (`0x02c6a2...f26c70`, chain 999)
-- Hint Helpers (`0xa32e89...f864d4`, chain 999)
-- HYPE Lending Vault (`0x2900ab...c06a76`, chain 999)
-- kHYPE Active Pool (`0xbfd0b1...411a5a`, chain 999)
-- kHYPE Address Registry (`0x382d2f...ca589f`, chain 999)
-- kHYPE Borrower Operations (`0x3a2a18...adc397`, chain 999)
-- kHYPE Collateral Surplus Pool (`0x246ace...96f7b0`, chain 999)
-- kHYPE Default Pool (`0xee6d18...fc195f`, chain 999)
-- kHYPE Gas Pool (`0xea5d5a...7a9f8e`, chain 999)
-- kHYPE Price Feed (`0x0a04e6...73265c`, chain 999)
-- kHYPE Sorted Troves (`0x6bc814...68f86f`, chain 999)
-- kHYPE Stability Pool (`0x56a346...0779ab`, chain 999)
-- kHYPE Trove Manager (`0x7c07bb...957e4a`, chain 999)
-- kHYPE Trove NFT (`0x9d0878...bf6036`, chain 999)
-- MetaMorphoV1_1 (`0x207cca...d2201c`, chain 999)
-- UBTC Active Pool (`0x8d9957...7a5939`, chain 999)
-- UBTC Address Registry (`0xfc4e20...882407`, chain 999)
-- UBTC Borrower Operations (`0x36b7bd...36672e`, chain 999)
-- UBTC Collateral Surplus Pool (`0xe7aba8...aafe38`, chain 999)
-- UBTC Default Pool (`0x50743a...83df1c`, chain 999)
-- UBTC Gas Pool (`0x8b71c9...f0a137`, chain 999)
-- UBTC Price Feed (`0xf59f33...5358ab`, chain 999)
-- UBTC Sorted Troves (`0x642d97...6e2fa9`, chain 999)
-- UBTC Stability Pool (`0xabf036...168924`, chain 999)
-- UBTC Trove Manager (`0xbbe5f2...214885`, chain 999)
-- UBTC Trove NFT (`0xad8a43...d5846b`, chain 999)
-- USDe Lending Vault (`0x835feb...6938ab`, chain 999)
-- USDhl Frontier Lending Vault (`0x66c712...68fdb6`, chain 999)
-- USDhl Lending Vault (`0x9c59a9...e2275e`, chain 999)
-- USDT0 Frontier Lending Vault (`0x9896a8...806bb3`, chain 999)
-- USDT0 Lending Vault (`0xfc5126...7d151e`, chain 999)
-- WHYPE Active Pool (`0x39ebba...34cc9e`, chain 999)
-- WHYPE Address Registry (`0x7201fb...73815d`, chain 999)
-- WHYPE Borrower Operations (`0x5b271d...17f0a3`, chain 999)
-- WHYPE Collateral Surplus Pool (`0x9182e3...c122ca`, chain 999)
-- WHYPE Default Pool (`0xa1e95e...07c605`, chain 999)
-- WHYPE Gas Pool (`0x756005...4e9935`, chain 999)
-- WHYPE Price Feed (`0x12a186...873a51`, chain 999)
-- WHYPE Sorted Troves (`0xd1caa4...3f2ef6`, chain 999)
-- WHYPE Stability Pool (`0x576c9c...5efd6b`, chain 999)
-- WHYPE Trove Manager (`0x3100f4...1bbe62`, chain 999)
-- WHYPE Trove NFT (`0x5ad151...a03aa7`, chain 999)
-- WHYPE Zapper (`0x999876...991f49`, chain 999)
+- Collateral Registry (`0x9de1e57049c475736289cb006212f3e1dce4711b`, chain 999)
+- feUBTC decimals wrapper (`0xefbd9cfe88235f0e648aefb52c8e8dc152a9ad6f`, chain 999)
+- feUSD (`0x02c6a2fa58cc01a18b8d9e00ea48d65e4df26c70`, chain 999)
+- Hint Helpers (`0xa32e89c658f7fdcc0bdb2717f253bacd99f864d4`, chain 999)
+- HYPE Lending Vault (`0x2900abd73631b2f60747e687095537b673c06a76`, chain 999)
+- kHYPE Active Pool (`0xbfd0b103a49faf426f36864d19f5d871bf411a5a`, chain 999)
+- kHYPE Address Registry (`0x382d2fe4eed8e35a5855321e62fd45ad60ca589f`, chain 999)
+- kHYPE Borrower Operations (`0x3a2a181ab6e4ffb77c87ee201041a0806dadc397`, chain 999)
+- kHYPE Collateral Surplus Pool (`0x246aceb6b121fe2cb7ec76fcf8e667fb8096f7b0`, chain 999)
+- kHYPE Default Pool (`0xee6d1804feb4817d6db77f6f31b86673d7fc195f`, chain 999)
+- kHYPE Gas Pool (`0xea5d5a859be7c96aa0481ed35170af8e277a9f8e`, chain 999)
+- kHYPE Price Feed (`0x0a04e685f12e47b22b03c3763add63f1dd73265c`, chain 999)
+- kHYPE Sorted Troves (`0x6bc81472c10ec526c14c8b0e8faa282f9368f86f`, chain 999)
+- kHYPE Stability Pool (`0x56a346e0730cb209a93964c41cd36098030779ab`, chain 999)
+- kHYPE Trove Manager (`0x7c07bb77b1cf9a5b40d92f805c10d90c90957e4a`, chain 999)
+- kHYPE Trove NFT (`0x9d08780deec2270b8296f520b3fb28346abf6036`, chain 999)
+- MetaMorphoV1_1 (`0x207ccae51ad2e1c240c4ab4c94b670d438d2201c`, chain 999)
+- UBTC Active Pool (`0x8d99575ebbbda038a626ca769561c16fdd7a5939`, chain 999)
+- UBTC Address Registry (`0xfc4e20bd9f0e4f8782bea92a7bd8002367882407`, chain 999)
+- UBTC Borrower Operations (`0x36b7bd65276eda7cdc5f730da5cdb7ee7736672e`, chain 999)
+- UBTC Collateral Surplus Pool (`0xe7aba857f8e2c95462e69b93c7ea78ac19aafe38`, chain 999)
+- UBTC Default Pool (`0x50743a84c68a9d14d93364ed31afa4012183df1c`, chain 999)
+- UBTC Gas Pool (`0x8b71c92edf02dff693042e4e808d0568ccf0a137`, chain 999)
+- UBTC Price Feed (`0xf59f338424062dd1d44a9b4dd2721128a45358ab`, chain 999)
+- UBTC Sorted Troves (`0x642d979341eaac9c10623f5a58283aa72f6e2fa9`, chain 999)
+- UBTC Stability Pool (`0xabf0369530205ae56dd4c49629474c65d1168924`, chain 999)
+- UBTC Trove Manager (`0xbbe5f227275f24b64bd290a91f55723a00214885`, chain 999)
+- UBTC Trove NFT (`0xad8a43ac8da98990efa4d5ec7b91135965d5846b`, chain 999)
+- USDe Lending Vault (`0x835febf893c6dddee5cf762b0f8e31c5b06938ab`, chain 999)
+- USDhl Frontier Lending Vault (`0x66c71204b70ae27be6dc3eb41f9af5868e68fdb6`, chain 999)
+- USDhl Lending Vault (`0x9c59a9389d8f72de2cdaf1126f36ea4790e2275e`, chain 999)
+- USDT0 Frontier Lending Vault (`0x9896a8605763106e57a51aa0a97fe8099e806bb3`, chain 999)
+- USDT0 Lending Vault (`0xfc5126377f0efc0041c0969ef9ba903ce67d151e`, chain 999)
+- WHYPE Active Pool (`0x39ebba742b6917d49d4a9ac7cf5c70f84d34cc9e`, chain 999)
+- WHYPE Address Registry (`0x7201fb5c3ba06f10a858819f62221ae2f473815d`, chain 999)
+- WHYPE Borrower Operations (`0x5b271dc20ba7beb8eee276eb4f1644b6a217f0a3`, chain 999)
+- WHYPE Collateral Surplus Pool (`0x9182e36bd7cceb71812c766c4464208ad9c122ca`, chain 999)
+- WHYPE Default Pool (`0xa1e95e74d07fec324a82cd2ef19ebcb33907c605`, chain 999)
+- WHYPE Gas Pool (`0x7560059081ede2ff6c6b980fd1ee9a53df4e9935`, chain 999)
+- WHYPE Price Feed (`0x12a1868b89789900e413a6241ca9032dd1873a51`, chain 999)
+- WHYPE Sorted Troves (`0xd1caa4218808eb94d36e1df7247f7406f43f2ef6`, chain 999)
+- WHYPE Stability Pool (`0x576c9c501473e01ae23748de28415a74425efd6b`, chain 999)
+- WHYPE Trove Manager (`0x3100f4e7bda2ed2452d9a57eb30260ab071bbe62`, chain 999)
+- WHYPE Trove NFT (`0x5ad1512e7006fdbd0f3ebb8aa35c5e9234a03aa7`, chain 999)
+- WHYPE Zapper (`0x999876bc29bc2251539c900a1bcfc6c934991f49`, chain 999)
 
 ## Contract Surface Quality
 
@@ -142,52 +142,52 @@ The pinned logic-topography run contains 46 contract row(s) across ethereum, hyp
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Collateral Registry | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386556 | `0x9de1e5...e4711b` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-386577 | `0x36f586...3c2ece` | ⚠️ Unaudited |
-| feUSD | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386502 | `0x02c6a2...f26c70` | ⚠️ Unaudited |
-| Hint Helpers | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386559 | `0xa32e89...f864d4` | ⚠️ Unaudited |
-| HYPE Lending Vault | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386509 | `0x2900ab...c06a76` | ⚠️ Unaudited |
-| kHYPE Active Pool | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386566 | `0xbfd0b1...411a5a` | ⚠️ Unaudited |
-| kHYPE Address Registry | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386514 | `0x382d2f...ca589f` | ⚠️ Unaudited |
-| kHYPE Borrower Operations | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386517 | `0x3a2a18...adc397` | ⚠️ Unaudited |
-| kHYPE Collateral Surplus Pool | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386508 | `0x246ace...96f7b0` | ⚠️ Unaudited |
-| kHYPE Default Pool | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386571 | `0xee6d18...fc195f` | ⚠️ Unaudited |
-| kHYPE Gas Pool | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386570 | `0xea5d5a...7a9f8e` | ⚠️ Unaudited |
-| kHYPE Price Feed | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386504 | `0x0a04e6...73265c` | ⚠️ Unaudited |
-| kHYPE Sorted Troves | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386535 | `0x6bc814...68f86f` | ⚠️ Unaudited |
-| kHYPE Stability Pool | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386521 | `0x56a346...0779ab` | ⚠️ Unaudited |
-| kHYPE Trove Manager | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386543 | `0x7c07bb...957e4a` | ⚠️ Unaudited |
-| kHYPE Trove NFT | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386555 | `0x9d0878...bf6036` | ⚠️ Unaudited |
-| MetaMorphoV1_1 | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386507 | `0x207cca...d2201c` | ⚠️ Unaudited |
-| MToken | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-386500 | `0x866a2b...36be1b` | ⚠️ Unaudited |
-| UBTC Active Pool | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386549 | `0x8d9957...7a5939` | ⚠️ Unaudited |
-| UBTC Address Registry | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386574 | `0xfc4e20...882407` | ⚠️ Unaudited |
-| UBTC Borrower Operations | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386512 | `0x36b7bd...36672e` | ⚠️ Unaudited |
-| UBTC Collateral Surplus Pool | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386569 | `0xe7aba8...aafe38` | ⚠️ Unaudited |
-| UBTC Default Pool | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386518 | `0x50743a...83df1c` | ⚠️ Unaudited |
-| UBTC Gas Pool | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386548 | `0x8b71c9...f0a137` | ⚠️ Unaudited |
-| UBTC Price Feed | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386573 | `0xf59f33...5358ab` | ⚠️ Unaudited |
-| UBTC Sorted Troves | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386529 | `0x642d97...6e2fa9` | ⚠️ Unaudited |
-| UBTC Stability Pool | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386561 | `0xabf036...168924` | ⚠️ Unaudited |
-| UBTC Trove Manager | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386565 | `0xbbe5f2...214885` | ⚠️ Unaudited |
-| UBTC Trove NFT | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386562 | `0xad8a43...d5846b` | ⚠️ Unaudited |
-| USDe Lending Vault | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386547 | `0x835feb...6938ab` | ⚠️ Unaudited |
-| USDhl Frontier Lending Vault | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386531 | `0x66c712...68fdb6` | ⚠️ Unaudited |
-| USDhl Lending Vault | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386554 | `0x9c59a9...e2275e` | ⚠️ Unaudited |
-| USDT0 Frontier Lending Vault | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386552 | `0x9896a8...806bb3` | ⚠️ Unaudited |
-| USDT0 Lending Vault | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386575 | `0xfc5126...7d151e` | ⚠️ Unaudited |
-| WHYPE Active Pool | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386516 | `0x39ebba...34cc9e` | ⚠️ Unaudited |
-| WHYPE Address Registry | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386537 | `0x7201fb...73815d` | ⚠️ Unaudited |
-| WHYPE Borrower Operations | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386525 | `0x5b271d...17f0a3` | ⚠️ Unaudited |
-| WHYPE Collateral Surplus Pool | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386550 | `0x9182e3...c122ca` | ⚠️ Unaudited |
-| WHYPE Default Pool | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386558 | `0xa1e95e...07c605` | ⚠️ Unaudited |
-| WHYPE Gas Pool | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386539 | `0x756005...4e9935` | ⚠️ Unaudited |
-| WHYPE Price Feed | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386505 | `0x12a186...873a51` | ⚠️ Unaudited |
-| WHYPE Sorted Troves | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386567 | `0xd1caa4...3f2ef6` | ⚠️ Unaudited |
-| WHYPE Stability Pool | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386522 | `0x576c9c...5efd6b` | ⚠️ Unaudited |
-| WHYPE Trove Manager | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386510 | `0x3100f4...1bbe62` | ⚠️ Unaudited |
-| WHYPE Trove NFT | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386524 | `0x5ad151...a03aa7` | ⚠️ Unaudited |
-| WHYPE Zapper | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386553 | `0x999876...991f49` | ⚠️ Unaudited |
+| Collateral Registry | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386556 | `0x9de1e57049c475736289cb006212f3e1dce4711b` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-386577 | `0x36f586a30502ae3afb555b8aa4dcc05d233c2ece` | ⚠️ Unaudited |
+| feUSD | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386502 | `0x02c6a2fa58cc01a18b8d9e00ea48d65e4df26c70` | ⚠️ Unaudited |
+| Hint Helpers | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386559 | `0xa32e89c658f7fdcc0bdb2717f253bacd99f864d4` | ⚠️ Unaudited |
+| HYPE Lending Vault | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386509 | `0x2900abd73631b2f60747e687095537b673c06a76` | ⚠️ Unaudited |
+| kHYPE Active Pool | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386566 | `0xbfd0b103a49faf426f36864d19f5d871bf411a5a` | ⚠️ Unaudited |
+| kHYPE Address Registry | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386514 | `0x382d2fe4eed8e35a5855321e62fd45ad60ca589f` | ⚠️ Unaudited |
+| kHYPE Borrower Operations | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386517 | `0x3a2a181ab6e4ffb77c87ee201041a0806dadc397` | ⚠️ Unaudited |
+| kHYPE Collateral Surplus Pool | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386508 | `0x246aceb6b121fe2cb7ec76fcf8e667fb8096f7b0` | ⚠️ Unaudited |
+| kHYPE Default Pool | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386571 | `0xee6d1804feb4817d6db77f6f31b86673d7fc195f` | ⚠️ Unaudited |
+| kHYPE Gas Pool | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386570 | `0xea5d5a859be7c96aa0481ed35170af8e277a9f8e` | ⚠️ Unaudited |
+| kHYPE Price Feed | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386504 | `0x0a04e685f12e47b22b03c3763add63f1dd73265c` | ⚠️ Unaudited |
+| kHYPE Sorted Troves | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386535 | `0x6bc81472c10ec526c14c8b0e8faa282f9368f86f` | ⚠️ Unaudited |
+| kHYPE Stability Pool | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386521 | `0x56a346e0730cb209a93964c41cd36098030779ab` | ⚠️ Unaudited |
+| kHYPE Trove Manager | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386543 | `0x7c07bb77b1cf9a5b40d92f805c10d90c90957e4a` | ⚠️ Unaudited |
+| kHYPE Trove NFT | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386555 | `0x9d08780deec2270b8296f520b3fb28346abf6036` | ⚠️ Unaudited |
+| MetaMorphoV1_1 | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386507 | `0x207ccae51ad2e1c240c4ab4c94b670d438d2201c` | ⚠️ Unaudited |
+| MToken | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-386500 | `0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b` | ⚠️ Unaudited |
+| UBTC Active Pool | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386549 | `0x8d99575ebbbda038a626ca769561c16fdd7a5939` | ⚠️ Unaudited |
+| UBTC Address Registry | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386574 | `0xfc4e20bd9f0e4f8782bea92a7bd8002367882407` | ⚠️ Unaudited |
+| UBTC Borrower Operations | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386512 | `0x36b7bd65276eda7cdc5f730da5cdb7ee7736672e` | ⚠️ Unaudited |
+| UBTC Collateral Surplus Pool | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386569 | `0xe7aba857f8e2c95462e69b93c7ea78ac19aafe38` | ⚠️ Unaudited |
+| UBTC Default Pool | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386518 | `0x50743a84c68a9d14d93364ed31afa4012183df1c` | ⚠️ Unaudited |
+| UBTC Gas Pool | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386548 | `0x8b71c92edf02dff693042e4e808d0568ccf0a137` | ⚠️ Unaudited |
+| UBTC Price Feed | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386573 | `0xf59f338424062dd1d44a9b4dd2721128a45358ab` | ⚠️ Unaudited |
+| UBTC Sorted Troves | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386529 | `0x642d979341eaac9c10623f5a58283aa72f6e2fa9` | ⚠️ Unaudited |
+| UBTC Stability Pool | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386561 | `0xabf0369530205ae56dd4c49629474c65d1168924` | ⚠️ Unaudited |
+| UBTC Trove Manager | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386565 | `0xbbe5f227275f24b64bd290a91f55723a00214885` | ⚠️ Unaudited |
+| UBTC Trove NFT | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386562 | `0xad8a43ac8da98990efa4d5ec7b91135965d5846b` | ⚠️ Unaudited |
+| USDe Lending Vault | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386547 | `0x835febf893c6dddee5cf762b0f8e31c5b06938ab` | ⚠️ Unaudited |
+| USDhl Frontier Lending Vault | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386531 | `0x66c71204b70ae27be6dc3eb41f9af5868e68fdb6` | ⚠️ Unaudited |
+| USDhl Lending Vault | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386554 | `0x9c59a9389d8f72de2cdaf1126f36ea4790e2275e` | ⚠️ Unaudited |
+| USDT0 Frontier Lending Vault | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386552 | `0x9896a8605763106e57a51aa0a97fe8099e806bb3` | ⚠️ Unaudited |
+| USDT0 Lending Vault | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386575 | `0xfc5126377f0efc0041c0969ef9ba903ce67d151e` | ⚠️ Unaudited |
+| WHYPE Active Pool | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386516 | `0x39ebba742b6917d49d4a9ac7cf5c70f84d34cc9e` | ⚠️ Unaudited |
+| WHYPE Address Registry | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386537 | `0x7201fb5c3ba06f10a858819f62221ae2f473815d` | ⚠️ Unaudited |
+| WHYPE Borrower Operations | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386525 | `0x5b271dc20ba7beb8eee276eb4f1644b6a217f0a3` | ⚠️ Unaudited |
+| WHYPE Collateral Surplus Pool | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386550 | `0x9182e36bd7cceb71812c766c4464208ad9c122ca` | ⚠️ Unaudited |
+| WHYPE Default Pool | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386558 | `0xa1e95e74d07fec324a82cd2ef19ebcb33907c605` | ⚠️ Unaudited |
+| WHYPE Gas Pool | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386539 | `0x7560059081ede2ff6c6b980fd1ee9a53df4e9935` | ⚠️ Unaudited |
+| WHYPE Price Feed | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386505 | `0x12a1868b89789900e413a6241ca9032dd1873a51` | ⚠️ Unaudited |
+| WHYPE Sorted Troves | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386567 | `0xd1caa4218808eb94d36e1df7247f7406f43f2ef6` | ⚠️ Unaudited |
+| WHYPE Stability Pool | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386522 | `0x576c9c501473e01ae23748de28415a74425efd6b` | ⚠️ Unaudited |
+| WHYPE Trove Manager | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386510 | `0x3100f4e7bda2ed2452d9a57eb30260ab071bbe62` | ⚠️ Unaudited |
+| WHYPE Trove NFT | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386524 | `0x5ad1512e7006fdbd0f3ebb8aa35c5e9234a03aa7` | ⚠️ Unaudited |
+| WHYPE Zapper | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386553 | `0x999876bc29bc2251539c900a1bcfc6c934991f49` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -207,28 +207,28 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| feUBTC decimals wrapper | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386572 | `0xefbd9c...a9ad6f` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-386499 | `0x437cc3...98b291` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-386501 | `0x970a77...b79288` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-386503 | `0x067e69...f169a2` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-386511 | `0x339d10...6f0f32` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-386513 | `0x36f586...3c2ece` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-386515 | `0x389c03...2fe83e` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-386519 | `0x535a9f...eb7bd1` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | hyperliquid | unit-386520 | `0x555555...555555` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-386523 | `0x58446c...97c001` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-386527 | `0x5db69b...97fce0` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | hyperliquid | unit-386532 | `0x68e37d...0c57cd` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-386534 | `0x6a1ce0...dc2740` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-386541 | `0x7abca4...9425ff` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-386545 | `0x7d2951...e437e4` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | hyperliquid | unit-386551 | `0x94e839...e1cf38` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | hyperliquid | unit-386557 | `0x9fdbda...993463` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-386560 | `0xa82c32...2008a1` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-386563 | `0xadfba6...eedc8b` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-386564 | `0xb50a96...c52bd5` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-386568 | `0xd389c6...2a6c8c` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | hyperliquid | unit-386576 | `0xfd739d...7c296d` | ❓ Unverified |
+| feUBTC decimals wrapper | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386572 | `0xefbd9cfe88235f0e648aefb52c8e8dc152a9ad6f` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-386499 | `0x437cc33344a0b27a429f795ff6b469c72698b291` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-386501 | `0x970a7749ecaa4394c8b2bf5f2471f41fd6b79288` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-386503 | `0x067e69ad6bdb8ee95cac31b34626f48eb6f169a2` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-386511 | `0x339d10ba20f3575ec9b44275f978dd38386f0f32` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-386513 | `0x36f586a30502ae3afb555b8aa4dcc05d233c2ece` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-386515 | `0x389c03c1f77981d158fbe286e7cafac2bb2fe83e` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-386519 | `0x535a9ff6bfd0d9f1b64fe03f185b0af8ddeb7bd1` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | hyperliquid | unit-386520 | `0x5555555555555555555555555555555555555555` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-386523 | `0x58446c58caa8a6f6cc8be343f812ebf0b997c001` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-386527 | `0x5db69b925c35b85905255f0b9443bfefda97fce0` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | hyperliquid | unit-386532 | `0x68e37de8d93d3496ae143f2e900490f6280c57cd` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-386534 | `0x6a1ce00901c3deb2683a6c63fcd158cc3adc2740` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-386541 | `0x7abca40474d6b5f000f801d7fe7e0df4c89425ff` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-386545 | `0x7d29515fc4eaef2a01c46218b4cb8d2d8ae437e4` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | hyperliquid | unit-386551 | `0x94e8396e0869c9f2200760af0621afd240e1cf38` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | hyperliquid | unit-386557 | `0x9fdbda0a5e284c32744d2f17ee5c74b284993463` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-386560 | `0xa82c325553baee63bd97604e10a7cc40482008a1` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-386563 | `0xadfba621a75beced7dd1727b2067047b7eeedc8b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-386564 | `0xb50a96253abdf803d85efcdce07ad8becbc52bd5` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-386568 | `0xd389c600b302c05e619a25112b27ea07c62a6c8c` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | hyperliquid | unit-386576 | `0xfd739d4e423301ce9385c1fb8850539d657c296d` | ❓ Unverified |
 
 ## Audit Inventory
 

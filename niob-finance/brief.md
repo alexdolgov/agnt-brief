@@ -60,7 +60,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| NiobToken | unknown | bsc | n/a | [`0x5ac5e6...608d9b`](./contracts/bsc-56/0x5ac5e6af46ef285b3536833e65d245c49b608d9b/) | ⚠️ Unaudited |
+| NiobToken | unknown | bsc | n/a | [`0x5ac5e6af46ef285b3536833e65d245c49b608d9b`](./contracts/bsc-56/0x5ac5e6af46ef285b3536833e65d245c49b608d9b/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -91,7 +91,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x5ac5e6...608d9b`](./contracts/bsc-56/0x5ac5e6af46ef285b3536833e65d245c49b608d9b/) | NiobToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x5ac5e6af46ef285b3536833e65d245c49b608d9b`](./contracts/bsc-56/0x5ac5e6af46ef285b3536833e65d245c49b608d9b/) | NiobToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

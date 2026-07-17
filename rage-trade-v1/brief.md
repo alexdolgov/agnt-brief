@@ -59,21 +59,21 @@ The protocol comprises 3 functional families. Its contracts share 3 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CurveYieldStrategy | core_logic | arbitrum | n/a | [`0x1d4278...30a068`](./contracts/arbitrum-42161/0x1d42783e7eeacae12ebc315d1d2d0e3c6230a068/) | ✅ Audited |
-| DnGmxJuniorVault | core_logic | arbitrum | n/a | [`0x8478ab...5f041e`](./contracts/arbitrum-42161/0x8478ab5064ebac770ddce77e7d31d969205f041e/) | ✅ Audited |
+| CurveYieldStrategy | core_logic | arbitrum | n/a | [`0x1d42783e7eeacae12ebc315d1d2d0e3c6230a068`](./contracts/arbitrum-42161/0x1d42783e7eeacae12ebc315d1d2d0e3c6230a068/) | ✅ Audited |
+| DnGmxJuniorVault | core_logic | arbitrum | n/a | [`0x8478ab5064ebac770ddce77e7d31d969205f041e`](./contracts/arbitrum-42161/0x8478ab5064ebac770ddce77e7d31d969205f041e/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (8)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| DnGmxBatchingManager | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x519eb0...cef63d`](./contracts/arbitrum-42161/0x519eb01fa6ed3d72e96e40770a45b13531cef63d/); arbitrum `0xf2bb80...700913` | ⚠️ Unaudited |
-| DnGmxBatchingManagerGlp | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x56ab0c...7832a0`](./contracts/arbitrum-42161/0x56ab0c7038fa586c37ae8f539075c876d07832a0/); arbitrum `0x7bcc45...b3749e` | ⚠️ Unaudited |
-| DnGmxRouter | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x29860c...2ed2d9`](./contracts/arbitrum-42161/0x29860c65c6155a7a46d9acb9fd15dd9bbc2ed2d9/); arbitrum `0x96ca30...175d5b` | ⚠️ Unaudited |
-| DnGmxSeniorVault | unknown | arbitrum | n/a | [`0xf93050...c2cf36`](./contracts/arbitrum-42161/0xf9305009fba7e381b3337b5fa157936d73c2cf36/) | ⚠️ Unaudited |
-| DnGmxTraderHedgeStrategy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x39dfa1...7d07b9`](./contracts/arbitrum-42161/0x39dfa1568e3c9eef6794a328d59dae4a127d07b9/); arbitrum `0x5c2a61...d6b1be` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | arbitrum | n/a | [`0x90066f...bc28de`](./contracts/arbitrum-42161/0x90066f5eeabd197433411e8dec935a2d28bc28de/) | ⚠️ Unaudited |
-| RageTradeFactory | unknown | arbitrum | n/a | [`0x14fcc6...052c12`](./contracts/arbitrum-42161/0x14fcc60f9be14087fac729df48ff33f2b3052c12/) | ⚠️ Unaudited |
-| SettlementTokenOracle | unknown | arbitrum | n/a | [`0x426087...5b3a6d`](./contracts/arbitrum-42161/0x426087ce9911c1e009a6abbce7a86789ae5b3a6d/) | ⚠️ Unaudited |
+| DnGmxBatchingManager | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x519eb01fa6ed3d72e96e40770a45b13531cef63d`](./contracts/arbitrum-42161/0x519eb01fa6ed3d72e96e40770a45b13531cef63d/); arbitrum `0xf2bb80cc2ca1a1d78ae29ec336da2bcbe4700913` | ⚠️ Unaudited |
+| DnGmxBatchingManagerGlp | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x56ab0c7038fa586c37ae8f539075c876d07832a0`](./contracts/arbitrum-42161/0x56ab0c7038fa586c37ae8f539075c876d07832a0/); arbitrum `0x7bcc456ea89716913d4f6139a09b5eb051b3749e` | ⚠️ Unaudited |
+| DnGmxRouter | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x29860c65c6155a7a46d9acb9fd15dd9bbc2ed2d9`](./contracts/arbitrum-42161/0x29860c65c6155a7a46d9acb9fd15dd9bbc2ed2d9/); arbitrum `0x96ca304a7cd4afd6121f8917d2cdeb8da1175d5b` | ⚠️ Unaudited |
+| DnGmxSeniorVault | unknown | arbitrum | n/a | [`0xf9305009fba7e381b3337b5fa157936d73c2cf36`](./contracts/arbitrum-42161/0xf9305009fba7e381b3337b5fa157936d73c2cf36/) | ⚠️ Unaudited |
+| DnGmxTraderHedgeStrategy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x39dfa1568e3c9eef6794a328d59dae4a127d07b9`](./contracts/arbitrum-42161/0x39dfa1568e3c9eef6794a328d59dae4a127d07b9/); arbitrum `0x5c2a6114205a426d98ca3f5fec7fdc1988d6b1be` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | arbitrum | n/a | [`0x90066f5eeabd197433411e8dec935a2d28bc28de`](./contracts/arbitrum-42161/0x90066f5eeabd197433411e8dec935a2d28bc28de/) | ⚠️ Unaudited |
+| RageTradeFactory | unknown | arbitrum | n/a | [`0x14fcc60f9be14087fac729df48ff33f2b3052c12`](./contracts/arbitrum-42161/0x14fcc60f9be14087fac729df48ff33f2b3052c12/) | ⚠️ Unaudited |
+| SettlementTokenOracle | unknown | arbitrum | n/a | [`0x426087ce9911c1e009a6abbce7a86789ae5b3a6d`](./contracts/arbitrum-42161/0x426087ce9911c1e009a6abbce7a86789ae5b3a6d/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,9 +93,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | arbitrum | n/a | `0x6ff1a2...ac535d` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xb8490a...36a226` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xf01d13...5fa4cc` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x6ff1a29e2b9890a1cedd189c8923d64287ac535d` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xb8490a9c458e6ffd62728590835d93fab036a226` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xf01d13368f0d0bd1c8e47d06473dfa6a5a5fa4cc` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -111,13 +111,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | [`0x519eb0...cef63d`](./contracts/arbitrum-42161/0x519eb01fa6ed3d72e96e40770a45b13531cef63d/) | DnGmxBatchingManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x56ab0c...7832a0`](./contracts/arbitrum-42161/0x56ab0c7038fa586c37ae8f539075c876d07832a0/) | DnGmxBatchingManagerGlp | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x29860c...2ed2d9`](./contracts/arbitrum-42161/0x29860c65c6155a7a46d9acb9fd15dd9bbc2ed2d9/) | DnGmxRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xf93050...c2cf36`](./contracts/arbitrum-42161/0xf9305009fba7e381b3337b5fa157936d73c2cf36/) | DnGmxSeniorVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x39dfa1...7d07b9`](./contracts/arbitrum-42161/0x39dfa1568e3c9eef6794a328d59dae4a127d07b9/) | DnGmxTraderHedgeStrategy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x14fcc6...052c12`](./contracts/arbitrum-42161/0x14fcc60f9be14087fac729df48ff33f2b3052c12/) | RageTradeFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x426087...5b3a6d`](./contracts/arbitrum-42161/0x426087ce9911c1e009a6abbce7a86789ae5b3a6d/) | SettlementTokenOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x519eb01fa6ed3d72e96e40770a45b13531cef63d`](./contracts/arbitrum-42161/0x519eb01fa6ed3d72e96e40770a45b13531cef63d/) | DnGmxBatchingManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x56ab0c7038fa586c37ae8f539075c876d07832a0`](./contracts/arbitrum-42161/0x56ab0c7038fa586c37ae8f539075c876d07832a0/) | DnGmxBatchingManagerGlp | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x29860c65c6155a7a46d9acb9fd15dd9bbc2ed2d9`](./contracts/arbitrum-42161/0x29860c65c6155a7a46d9acb9fd15dd9bbc2ed2d9/) | DnGmxRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xf9305009fba7e381b3337b5fa157936d73c2cf36`](./contracts/arbitrum-42161/0xf9305009fba7e381b3337b5fa157936d73c2cf36/) | DnGmxSeniorVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x39dfa1568e3c9eef6794a328d59dae4a127d07b9`](./contracts/arbitrum-42161/0x39dfa1568e3c9eef6794a328d59dae4a127d07b9/) | DnGmxTraderHedgeStrategy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x14fcc60f9be14087fac729df48ff33f2b3052c12`](./contracts/arbitrum-42161/0x14fcc60f9be14087fac729df48ff33f2b3052c12/) | RageTradeFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x426087ce9911c1e009a6abbce7a86789ae5b3a6d`](./contracts/arbitrum-42161/0x426087ce9911c1e009a6abbce7a86789ae5b3a6d/) | SettlementTokenOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

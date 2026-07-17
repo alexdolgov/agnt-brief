@@ -52,27 +52,27 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x00d2dc...bdf8d7`, chain 1)
-- UnnamedContract (`0x0a4c31...93e249`, chain 1)
-- UnnamedContract (`0x0f6f65...50c31d`, chain 1)
-- UnnamedContract (`0x12c809...c56141`, chain 1)
-- UnnamedContract (`0x192575...437a56`, chain 1)
-- UnnamedContract (`0x1c571c...f027ae`, chain 1)
-- UnnamedContract (`0x2848d4...12dccf`, chain 1)
-- UnnamedContract (`0x3a0de7...65b128`, chain 1)
-- UnnamedContract (`0x3bb8eb...159255`, chain 1)
-- UnnamedContract (`0x44bfeb...9ff072`, chain 1)
-- UnnamedContract (`0x456e00...b1a718`, chain 1)
-- UnnamedContract (`0x53d076...013677`, chain 1)
-- UnnamedContract (`0x57c357...83b7ae`, chain 1)
-- UnnamedContract (`0x635dbb...6c9d77`, chain 1)
-- UnnamedContract (`0x6a79dc...5d07df`, chain 1)
-- UnnamedContract (`0x78fa70...18d5fd`, chain 1)
-- UnnamedContract (`0x794cf5...036d52`, chain 1)
-- UnnamedContract (`0xa8f5be...86626a`, chain 1)
-- UnnamedContract (`0xb59cb4...300f7f`, chain 1)
-- UnnamedContract (`0xe7c5c4...40fda7`, chain 1)
-- MaseerOne (`0x01995a...b8350b`, chain 1)
+- UnnamedContract (`0x00d2dc03b8207b2d261bda5d149dd7fcf3bdf8d7`, chain 1)
+- UnnamedContract (`0x0a4c31ce6fcca5948f4abe6a7df350a88993e249`, chain 1)
+- UnnamedContract (`0x0f6f65fd822d3713c20e146ff66e4d83b050c31d`, chain 1)
+- UnnamedContract (`0x12c8091a719125bf08875635c3ed738510c56141`, chain 1)
+- UnnamedContract (`0x192575eeb42644a8014eb545c69f5125e2437a56`, chain 1)
+- UnnamedContract (`0x1c571c63d256cdc225bffdc1d6602f3554f027ae`, chain 1)
+- UnnamedContract (`0x2848d47ae98bc9d862caab91c1f236cef112dccf`, chain 1)
+- UnnamedContract (`0x3a0de7a4678ca9341a63ffe78041385eda65b128`, chain 1)
+- UnnamedContract (`0x3bb8ebb11816e1c20c3db57e2e7e5b421b159255`, chain 1)
+- UnnamedContract (`0x44bfeb1110ba6091034dbaab450ef1e7469ff072`, chain 1)
+- UnnamedContract (`0x456e0074853cd23a3cdea3a1bb85575ed9b1a718`, chain 1)
+- UnnamedContract (`0x53d076226cfcc9f2d18af7e69dca138145013677`, chain 1)
+- UnnamedContract (`0x57c3571f10767e49c9d7b60feb6c67804783b7ae`, chain 1)
+- UnnamedContract (`0x635dbb7841c27c74b6bdbf1bed548aae2c6c9d77`, chain 1)
+- UnnamedContract (`0x6a79dce61a12aa4b75449e0b03746260765d07df`, chain 1)
+- UnnamedContract (`0x78fa7018cc9c48ad732e49a491032ef47018d5fd`, chain 1)
+- UnnamedContract (`0x794cf5948444b14105587455ebe96caace036d52`, chain 1)
+- UnnamedContract (`0xa8f5be8457d6ed5c659647fa8d107c3f2086626a`, chain 1)
+- UnnamedContract (`0xb59cb4d3075a8ce5013c78e8bd7ada3fd1300f7f`, chain 1)
+- UnnamedContract (`0xe7c5c484a61cc93a638f67906a9900d94b40fda7`, chain 1)
+- MaseerOne (`0x01995a697752266d8e748738aaa3f06464b8350b`, chain 1)
 
 ## Contract Surface Quality
 
@@ -118,8 +118,8 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| MaseerOne | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381533 | `0x01995a...b8350b` | ⚠️ Unaudited |
-| Safe | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xb56f41...133f66` | ⚠️ Unaudited |
+| MaseerOne | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381533 | `0x01995a697752266d8e748738aaa3f06464b8350b` | ⚠️ Unaudited |
+| Safe | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xb56f413dbce352cfd71f221029cfc84580133f66` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -139,26 +139,26 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381532 | `0x00d2dc...bdf8d7` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381534 | `0x0a4c31...93e249` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381535 | `0x0f6f65...50c31d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381536 | `0x12c809...c56141` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381537 | `0x192575...437a56` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381538 | `0x1c571c...f027ae` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381539 | `0x2848d4...12dccf` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381540 | `0x3a0de7...65b128` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381541 | `0x3bb8eb...159255` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381542 | `0x44bfeb...9ff072` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381543 | `0x456e00...b1a718` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381544 | `0x53d076...013677` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381545 | `0x57c357...83b7ae` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381546 | `0x635dbb...6c9d77` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381547 | `0x6a79dc...5d07df` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381548 | `0x78fa70...18d5fd` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381549 | `0x794cf5...036d52` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381550 | `0xa8f5be...86626a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381551 | `0xb59cb4...300f7f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381553 | `0xe7c5c4...40fda7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381532 | `0x00d2dc03b8207b2d261bda5d149dd7fcf3bdf8d7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381534 | `0x0a4c31ce6fcca5948f4abe6a7df350a88993e249` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381535 | `0x0f6f65fd822d3713c20e146ff66e4d83b050c31d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381536 | `0x12c8091a719125bf08875635c3ed738510c56141` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381537 | `0x192575eeb42644a8014eb545c69f5125e2437a56` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381538 | `0x1c571c63d256cdc225bffdc1d6602f3554f027ae` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381539 | `0x2848d47ae98bc9d862caab91c1f236cef112dccf` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381540 | `0x3a0de7a4678ca9341a63ffe78041385eda65b128` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381541 | `0x3bb8ebb11816e1c20c3db57e2e7e5b421b159255` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381542 | `0x44bfeb1110ba6091034dbaab450ef1e7469ff072` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381543 | `0x456e0074853cd23a3cdea3a1bb85575ed9b1a718` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381544 | `0x53d076226cfcc9f2d18af7e69dca138145013677` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381545 | `0x57c3571f10767e49c9d7b60feb6c67804783b7ae` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381546 | `0x635dbb7841c27c74b6bdbf1bed548aae2c6c9d77` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381547 | `0x6a79dce61a12aa4b75449e0b03746260765d07df` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381548 | `0x78fa7018cc9c48ad732e49a491032ef47018d5fd` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381549 | `0x794cf5948444b14105587455ebe96caace036d52` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381550 | `0xa8f5be8457d6ed5c659647fa8d107c3f2086626a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381551 | `0xb59cb4d3075a8ce5013c78e8bd7ada3fd1300f7f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381553 | `0xe7c5c484a61cc93a638f67906a9900d94b40fda7` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -181,10 +181,10 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
 | Prototech Labs - Maseer Security Report.pdf | MaseerGate | unmatched — not counted | — | Listed in scope and findings reference MaseerGate.sol | no |
-| Prototech Labs - Maseer Security Report.pdf | MaseerOne | ambiguous — not counted | 0x57c357… (alternative) `0x57c357...83b7ae` — liveness: live (current_address_book_code)<br>MaseerOne (alternative) `0x01995a...b8350b` — deployed 2025-06-20 22:48:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Prototech Labs - Maseer Security Report.pdf | MaseerOne | ambiguous — not counted | 0x57c357… (alternative) `0x57c3571f10767e49c9d7b60feb6c67804783b7ae` — liveness: live (current_address_book_code)<br>MaseerOne (alternative) `0x01995a697752266d8e748738aaa3f06464b8350b` — deployed 2025-06-20 22:48:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | Prototech Labs - Maseer Security Report.pdf | MaseerPrice | unmatched — not counted | — | Listed in scope and findings reference MaseerPrice.sol | no |
 | Prototech Labs - Maseer Security Report.pdf | MaseerToken | unmatched — not counted | — | Listed in scope and findings reference MaseerToken.sol | no |
-| Prototech Labs - Maseer Security Report.pdf | MaseerPrecommit | own contract | 0x0f6f65… (selected) `0x0f6f65...50c31d` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Prototech Labs - Maseer Security Report.pdf | MaseerPrecommit | own contract | 0x0f6f65… (selected) `0x0f6f65fd822d3713c20e146ff66e4d83b050c31d` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Prototech Labs - Maseer Security Report.pdf | MaseerConduit | unmatched — not counted | — | Listed in scope and findings reference MaseerConduit.sol | no |
 | Prototech Labs - Maseer Security Report.pdf | MaseerGuard | unmatched — not counted | — | Listed in scope and findings reference MaseerGuard.sol | no |
 | Prototech Labs - Maseer Security Report.pdf | MaseerTreasury | unmatched — not counted | — | Listed in scope as upgradeable contract | no |
@@ -196,7 +196,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x01995a...b8350b` | MaseerOne | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x01995a697752266d8e748738aaa3f06464b8350b` | MaseerOne | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

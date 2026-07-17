@@ -59,22 +59,22 @@ The protocol comprises 2 functional families. Its contracts share 2 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ChainportCongressMembersRegistry | unknown | bsc | n/a | [`0x1dee7b...50abca`](./contracts/bsc-56/0x1dee7be5415f6fdcc8515ca06ae8d9afb550abca/) | ✅ Audited |
-| ChainportMainBridge | unknown | ethereum | n/a | [`0x93307c...c7ddff`](./contracts/ethereum-1/0x93307c7de0f1b54814135f06321639a9f5c7ddff/) | ✅ Audited |
-| ChainportSideBridge | unknown | polygon | n/a | [`0xb19881...47de1a`](./contracts/polygon-137/0xb198814fc92a50017701485dc554bd08d047de1a/) | ✅ Audited |
-| Validator | unknown | bsc | n/a | [`0x451b0d...f36769`](./contracts/bsc-56/0x451b0d1022edecffce8a4c6b97c0de3a46f36769/) | ✅ Audited |
+| ChainportCongressMembersRegistry | unknown | bsc | n/a | [`0x1dee7be5415f6fdcc8515ca06ae8d9afb550abca`](./contracts/bsc-56/0x1dee7be5415f6fdcc8515ca06ae8d9afb550abca/) | ✅ Audited |
+| ChainportMainBridge | unknown | ethereum | n/a | [`0x93307c7de0f1b54814135f06321639a9f5c7ddff`](./contracts/ethereum-1/0x93307c7de0f1b54814135f06321639a9f5c7ddff/) | ✅ Audited |
+| ChainportSideBridge | unknown | polygon | n/a | [`0xb198814fc92a50017701485dc554bd08d047de1a`](./contracts/polygon-137/0xb198814fc92a50017701485dc554bd08d047de1a/) | ✅ Audited |
+| Validator | unknown | bsc | n/a | [`0x451b0d1022edecffce8a4c6b97c0de3a46f36769`](./contracts/bsc-56/0x451b0d1022edecffce8a4c6b97c0de3a46f36769/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (7)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BridgeMintableTokenV2 | unknown | bsc | n/a | [`0x104f31...6566ac`](./contracts/bsc-56/0x104f3152d8ebfc3f679392977356962ff36566ac/) | ⚠️ Unaudited |
-| ChainportBridgeBsc | unknown | bsc | n/a | [`0x71b4ea...c48aa0`](./contracts/bsc-56/0x71b4ea7af852bbbdce96348974c7ea1f34c48aa0/) | ⚠️ Unaudited |
-| ChainportCongress | unknown | polygon | n/a | [`0x71d57e...949621`](./contracts/polygon-137/0x71d57ee5471b720642a129621ea694da8f949621/) | ⚠️ Unaudited |
-| ChainportToken | unknown | ethereum | n/a | [`0x241663...0a5df5`](./contracts/ethereum-1/0x241663b6ae912f2a5dffdcb7a3550bf60c0a5df5/) | ⚠️ Unaudited |
-| MaintainersRegistry | unknown | bsc | n/a | [`0x33e6a5...6eeb13`](./contracts/bsc-56/0x33e6a5fb807bb361c4ff3b539b9fbb019a6eeb13/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | polygon | n/a | [`0x2861f4...9fc35c`](./contracts/polygon-137/0x2861f4fcadeb5be5ca47d306d139ec97439fc35c/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x104f31...6566ac`](./contracts/ethereum-1/0x104f3152d8ebfc3f679392977356962ff36566ac/) | ⚠️ Unaudited |
+| BridgeMintableTokenV2 | unknown | bsc | n/a | [`0x104f3152d8ebfc3f679392977356962ff36566ac`](./contracts/bsc-56/0x104f3152d8ebfc3f679392977356962ff36566ac/) | ⚠️ Unaudited |
+| ChainportBridgeBsc | unknown | bsc | n/a | [`0x71b4ea7af852bbbdce96348974c7ea1f34c48aa0`](./contracts/bsc-56/0x71b4ea7af852bbbdce96348974c7ea1f34c48aa0/) | ⚠️ Unaudited |
+| ChainportCongress | unknown | polygon | n/a | [`0x71d57ee5471b720642a129621ea694da8f949621`](./contracts/polygon-137/0x71d57ee5471b720642a129621ea694da8f949621/) | ⚠️ Unaudited |
+| ChainportToken | unknown | ethereum | n/a | [`0x241663b6ae912f2a5dffdcb7a3550bf60c0a5df5`](./contracts/ethereum-1/0x241663b6ae912f2a5dffdcb7a3550bf60c0a5df5/) | ⚠️ Unaudited |
+| MaintainersRegistry | unknown | bsc | n/a | [`0x33e6a5fb807bb361c4ff3b539b9fbb019a6eeb13`](./contracts/bsc-56/0x33e6a5fb807bb361c4ff3b539b9fbb019a6eeb13/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | polygon | n/a | [`0x2861f4fcadeb5be5ca47d306d139ec97439fc35c`](./contracts/polygon-137/0x2861f4fcadeb5be5ca47d306d139ec97439fc35c/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x104f3152d8ebfc3f679392977356962ff36566ac`](./contracts/ethereum-1/0x104f3152d8ebfc3f679392977356962ff36566ac/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -109,11 +109,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x104f31...6566ac`](./contracts/bsc-56/0x104f3152d8ebfc3f679392977356962ff36566ac/) | BridgeMintableTokenV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x71b4ea...c48aa0`](./contracts/bsc-56/0x71b4ea7af852bbbdce96348974c7ea1f34c48aa0/) | ChainportBridgeBsc | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x71d57e...949621`](./contracts/polygon-137/0x71d57ee5471b720642a129621ea694da8f949621/) | ChainportCongress | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x241663...0a5df5`](./contracts/ethereum-1/0x241663b6ae912f2a5dffdcb7a3550bf60c0a5df5/) | ChainportToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x33e6a5...6eeb13`](./contracts/bsc-56/0x33e6a5fb807bb361c4ff3b539b9fbb019a6eeb13/) | MaintainersRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x104f3152d8ebfc3f679392977356962ff36566ac`](./contracts/bsc-56/0x104f3152d8ebfc3f679392977356962ff36566ac/) | BridgeMintableTokenV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x71b4ea7af852bbbdce96348974c7ea1f34c48aa0`](./contracts/bsc-56/0x71b4ea7af852bbbdce96348974c7ea1f34c48aa0/) | ChainportBridgeBsc | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x71d57ee5471b720642a129621ea694da8f949621`](./contracts/polygon-137/0x71d57ee5471b720642a129621ea694da8f949621/) | ChainportCongress | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x241663b6ae912f2a5dffdcb7a3550bf60c0a5df5`](./contracts/ethereum-1/0x241663b6ae912f2a5dffdcb7a3550bf60c0a5df5/) | ChainportToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x33e6a5fb807bb361c4ff3b539b9fbb019a6eeb13`](./contracts/bsc-56/0x33e6a5fb807bb361c4ff3b539b9fbb019a6eeb13/) | MaintainersRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

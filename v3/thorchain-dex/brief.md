@@ -52,16 +52,16 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- AvaxRouter (`0x8f66c4...127549`, chain 43114)
-- AvaxRouter (`0xd6a6c0...209db6`, chain 43114)
-- THORChain_Router (`0x00dc61...91f1d4`, chain 1)
-- THORChain_Router (`0x0dc610...693117`, chain 1)
-- THORChain_Router (`0xb11a17...d0cac5`, chain 1)
-- THORChain_Router (`0xd37bbe...ad7146`, chain 1)
-- THORChain_Router (`0x00335d...7b9e22`, chain 56)
-- THORChain_Router (`0xb30ec5...a5f56b`, chain 56)
-- THORChain_Router (`0x68208d...e35681`, chain 8453)
-- THORChain_Router (`0xe36dcb...39bdc5`, chain 8453)
+- AvaxRouter (`0x8f66c4ae756bebc49ec8b81966dd8bba9f127549`, chain 43114)
+- AvaxRouter (`0xd6a6c0b3bb4150a98a379811934e440989209db6`, chain 43114)
+- THORChain_Router (`0x00dc6100103bc402d490aee3f9a5560cbd91f1d4`, chain 1)
+- THORChain_Router (`0x0dc6108c9225ce93da589b4ce83c104b34693117`, chain 1)
+- THORChain_Router (`0xb11a1735c2e3bcc5fc8c1d147fb64629d3d0cac5`, chain 1)
+- THORChain_Router (`0xd37bbe5744d730a1d98d8dc97c42f0ca46ad7146`, chain 1)
+- THORChain_Router (`0x00335da4078f696b98ff619616f1c558e57b9e22`, chain 56)
+- THORChain_Router (`0xb30ec53f98ff5947ede720d32ac2da7e52a5f56b`, chain 56)
+- THORChain_Router (`0x68208d99746b805a1ae41421950a47b711e35681`, chain 8453)
+- THORChain_Router (`0xe36dcbf3c0284f756935811d9b9e80829d39bdc5`, chain 8453)
 
 ## Contract Surface Quality
 
@@ -107,16 +107,16 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AvaxRouter | unknown | project_anchor | own_supporting | 0 | avalanche | unit-394027 | `0x8f66c4...127549` | ⚠️ Unaudited |
-| AvaxRouter | unknown | project_anchor | own_supporting | 0 | avalanche | unit-394028 | `0xd6a6c0...209db6` | ⚠️ Unaudited |
-| THORChain_Router | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394023 | `0x00dc61...91f1d4` | ⚠️ Unaudited |
-| THORChain_Router | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394024 | `0x0dc610...693117` | ⚠️ Unaudited |
-| THORChain_Router | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394025 | `0xb11a17...d0cac5` | ⚠️ Unaudited |
-| THORChain_Router | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394026 | `0xd37bbe...ad7146` | ⚠️ Unaudited |
-| THORChain_Router | unknown | project_anchor | own_supporting | 0 | bsc | unit-394029 | `0x00335d...7b9e22` | ⚠️ Unaudited |
-| THORChain_Router | unknown | project_anchor | own_supporting | 0 | bsc | unit-394030 | `0xb30ec5...a5f56b` | ⚠️ Unaudited |
-| THORChain_Router | unknown | project_anchor | own_supporting | 0 | base | unit-394031 | `0x68208d...e35681` | ⚠️ Unaudited |
-| THORChain_Router | unknown | project_anchor | own_supporting | 0 | base | unit-394032 | `0xe36dcb...39bdc5` | ⚠️ Unaudited |
+| AvaxRouter | unknown | project_anchor | own_supporting | 0 | avalanche | unit-394027 | `0x8f66c4ae756bebc49ec8b81966dd8bba9f127549` | ⚠️ Unaudited |
+| AvaxRouter | unknown | project_anchor | own_supporting | 0 | avalanche | unit-394028 | `0xd6a6c0b3bb4150a98a379811934e440989209db6` | ⚠️ Unaudited |
+| THORChain_Router | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394023 | `0x00dc6100103bc402d490aee3f9a5560cbd91f1d4` | ⚠️ Unaudited |
+| THORChain_Router | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394024 | `0x0dc6108c9225ce93da589b4ce83c104b34693117` | ⚠️ Unaudited |
+| THORChain_Router | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394025 | `0xb11a1735c2e3bcc5fc8c1d147fb64629d3d0cac5` | ⚠️ Unaudited |
+| THORChain_Router | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394026 | `0xd37bbe5744d730a1d98d8dc97c42f0ca46ad7146` | ⚠️ Unaudited |
+| THORChain_Router | unknown | project_anchor | own_supporting | 0 | bsc | unit-394029 | `0x00335da4078f696b98ff619616f1c558e57b9e22` | ⚠️ Unaudited |
+| THORChain_Router | unknown | project_anchor | own_supporting | 0 | bsc | unit-394030 | `0xb30ec53f98ff5947ede720d32ac2da7e52a5f56b` | ⚠️ Unaudited |
+| THORChain_Router | unknown | project_anchor | own_supporting | 0 | base | unit-394031 | `0x68208d99746b805a1ae41421950a47b711e35681` | ⚠️ Unaudited |
+| THORChain_Router | unknown | project_anchor | own_supporting | 0 | base | unit-394032 | `0xe36dcbf3c0284f756935811d9b9e80829d39bdc5` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

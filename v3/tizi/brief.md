@@ -90,7 +90,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| TiziDollar | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x469bbd...2c27e6` | ⚠️ Unaudited |
+| TiziDollar | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x469bbd88eea8a2d9a5c6c82d9890cf60962c27e6` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

@@ -61,11 +61,11 @@ The protocol comprises 4 functional families. Its contracts share 8 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ERC20Token | token | base | n/a | 2 deployments: base [`0x4a7c37...e53746`](./contracts/base-8453/0x4a7c3792995c9f6e0a3fb8d01ecd633c53e53746/); base `0x9f3f9a...ce0711` | ⚠️ Unaudited |
-| Periphery | periphery | base | n/a | 2 deployments: base [`0x24d242...4ad082`](./contracts/base-8453/0x24d242e7e7c8bf7f022204d94aaf49c76a4ad082/); base `0x6e7c44...d39488` | ⚠️ Unaudited |
-| PeripheryV2 | periphery | base | n/a | [`0x35e137...f1ecff`](./contracts/base-8453/0x35e1371b87b742a99ab863d3cecf04e73ef1ecff/) | ⚠️ Unaudited |
-| PeripheryV3 | unknown | base | n/a | 2 deployments: base [`0x592286...7019f9`](./contracts/base-8453/0x5922866c7258bc5a74a03276e9a86d37167019f9/); base `0xadf046...62d11c` | ⚠️ Unaudited |
-| Pool | core_logic | base | n/a | [`0xed236d...024cf0`](./contracts/base-8453/0xed236d2f99346a17555f4161b2b099be80024cf0/) | ⚠️ Unaudited |
+| ERC20Token | token | base | n/a | 2 deployments: base [`0x4a7c3792995c9f6e0a3fb8d01ecd633c53e53746`](./contracts/base-8453/0x4a7c3792995c9f6e0a3fb8d01ecd633c53e53746/); base `0x9f3f9a5d166e06363cd18b647f2feded4ece0711` | ⚠️ Unaudited |
+| Periphery | periphery | base | n/a | 2 deployments: base [`0x24d242e7e7c8bf7f022204d94aaf49c76a4ad082`](./contracts/base-8453/0x24d242e7e7c8bf7f022204d94aaf49c76a4ad082/); base `0x6e7c449df74d3bf55bec96587017273bb3d39488` | ⚠️ Unaudited |
+| PeripheryV2 | periphery | base | n/a | [`0x35e1371b87b742a99ab863d3cecf04e73ef1ecff`](./contracts/base-8453/0x35e1371b87b742a99ab863d3cecf04e73ef1ecff/) | ⚠️ Unaudited |
+| PeripheryV3 | unknown | base | n/a | 2 deployments: base [`0x5922866c7258bc5a74a03276e9a86d37167019f9`](./contracts/base-8453/0x5922866c7258bc5a74a03276e9a86d37167019f9/); base `0xadf046abce361f30354286f14ff88a610562d11c` | ⚠️ Unaudited |
+| Pool | core_logic | base | n/a | [`0xed236d2f99346a17555f4161b2b099be80024cf0`](./contracts/base-8453/0xed236d2f99346a17555f4161b2b099be80024cf0/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -101,11 +101,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x4a7c37...e53746`](./contracts/base-8453/0x4a7c3792995c9f6e0a3fb8d01ecd633c53e53746/) | ERC20Token | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x24d242...4ad082`](./contracts/base-8453/0x24d242e7e7c8bf7f022204d94aaf49c76a4ad082/) | Periphery | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x35e137...f1ecff`](./contracts/base-8453/0x35e1371b87b742a99ab863d3cecf04e73ef1ecff/) | PeripheryV2 | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x592286...7019f9`](./contracts/base-8453/0x5922866c7258bc5a74a03276e9a86d37167019f9/) | PeripheryV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xed236d...024cf0`](./contracts/base-8453/0xed236d2f99346a17555f4161b2b099be80024cf0/) | Pool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x4a7c3792995c9f6e0a3fb8d01ecd633c53e53746`](./contracts/base-8453/0x4a7c3792995c9f6e0a3fb8d01ecd633c53e53746/) | ERC20Token | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x24d242e7e7c8bf7f022204d94aaf49c76a4ad082`](./contracts/base-8453/0x24d242e7e7c8bf7f022204d94aaf49c76a4ad082/) | Periphery | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x35e1371b87b742a99ab863d3cecf04e73ef1ecff`](./contracts/base-8453/0x35e1371b87b742a99ab863d3cecf04e73ef1ecff/) | PeripheryV2 | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x5922866c7258bc5a74a03276e9a86d37167019f9`](./contracts/base-8453/0x5922866c7258bc5a74a03276e9a86d37167019f9/) | PeripheryV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xed236d2f99346a17555f4161b2b099be80024cf0`](./contracts/base-8453/0xed236d2f99346a17555f4161b2b099be80024cf0/) | Pool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

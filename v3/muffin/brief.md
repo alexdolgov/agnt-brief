@@ -57,8 +57,8 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x669038...3fcdd8`, chain 1)
-- UnnamedContract (`0xded07e...67907e`, chain 1)
+- UnnamedContract (`0x6690384822aff0b65fe0c21a809f187f5c3fcdd8`, chain 1)
+- UnnamedContract (`0xded07e2da859714f69d93f9794344606ed67907e`, chain 1)
 
 ## Contract Surface Quality
 
@@ -104,10 +104,10 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Lens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xaa7d5b...7de935` | ⚠️ Unaudited |
-| Manager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa9a03f...f35077` | ⚠️ Unaudited |
-| MuffinHubPositions | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5dd244...32a858` | ⚠️ Unaudited |
-| MuffinMigrator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa74cc5...cee785` | ⚠️ Unaudited |
+| Lens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xaa7d5bdf76f6143f200f6f2d831bb049a37de935` | ⚠️ Unaudited |
+| Manager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa9a03ff1bac0f600cbb4e1e788fd924a43f35077` | ⚠️ Unaudited |
+| MuffinHubPositions | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5dd2444a17edc079210077924906d5bdf432a858` | ⚠️ Unaudited |
+| MuffinMigrator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa74cc5c431531bf2601250c52825dc7b3dcee785` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -127,15 +127,15 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x42789c...1ce9e5` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5e090c...4d0579` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389473 | `0x669038...3fcdd8` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389474 | `0xded07e...67907e` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xed6165...9b1e2d` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | ethereum | unit-389475 | `0xf3defa...07f68b` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-389476 | `0x1a5540...97ca96` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-389477 | `0x951863...dd80dd` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-389478 | `0xa06c45...99308d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x42789c4d6c5cc9334fef4da662a57d78771ce9e5` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5e090c58e71b86b94fb544b0143363c3414d0579` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389473 | `0x6690384822aff0b65fe0c21a809f187f5c3fcdd8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389474 | `0xded07e2da859714f69d93f9794344606ed67907e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xed6165a870f48ea4244d6d2cdf4e19737c9b1e2d` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | ethereum | unit-389475 | `0xf3defa1cd3c0ee826f32cff252c7d6c79f07f68b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-389476 | `0x1a55404cf1e3666bb612b78c8f18af730997ca96` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-389477 | `0x95186358c4f2f64ae33264494e4a7c6cd5dd80dd` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-389478 | `0xa06c455d19704e4871c547211504e17e2199308d` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -190,7 +190,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | ABDK (Core contracts) | TickMaps | unmatched — not counted | — | listed in scope | no |
 | ABDK (Core contracts) | Ticks | unmatched — not counted | — | listed in scope | no |
 | ABDK (Core contracts) | Tiers | unmatched — not counted | — | listed in scope | no |
-| ABDK (Core contracts) | MuffinHub | own contract | 0x669038… (selected) `0x669038...3fcdd8` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ABDK (Core contracts) | MuffinHub | own contract | 0x669038… (selected) `0x6690384822aff0b65fe0c21a809f187f5c3fcdd8` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ABDK (Core contracts) | MuffinHubBase | unmatched — not counted | — | listed in scope | no |
 | ABDK (Core contracts) | MuffinHubPositions | unmatched — not counted | — | listed in scope | no |
 | ABDK (Periphery contracts) | ERC721 | unmatched — not counted | — | listed in scope | no |
@@ -198,12 +198,12 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | ABDK (Periphery contracts) | ManagerBase | unmatched — not counted | — | listed in scope | no |
 | ABDK (Periphery contracts) | Multicall | unmatched — not counted | — | listed in scope | no |
 | ABDK (Periphery contracts) | SelfPermit | unmatched — not counted | — | listed in scope | no |
-| ABDK (Periphery contracts) | Manager | own contract | 0xded07e… (selected) `0xded07e...67907e` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ABDK (Periphery contracts) | Manager | own contract | 0xded07e… (selected) `0xded07e2da859714f69d93f9794344606ed67907e` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ABDK (Periphery contracts) | PositionManager | unmatched — not counted | — | listed in scope | no |
 | ABDK (Periphery contracts) | SwapManager | unmatched — not counted | — | listed in scope | no |
 | Dedaub (Core + periphery contracts) | MuffinHubBase | unmatched — not counted | — | listed in scope | no |
 | Dedaub (Core + periphery contracts) | MuffinHubPositions | unmatched — not counted | — | listed in scope | no |
-| Dedaub (Core + periphery contracts) | MuffinHub | own contract | 0x669038… (selected) `0x669038...3fcdd8` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Dedaub (Core + periphery contracts) | MuffinHub | own contract | 0x669038… (selected) `0x6690384822aff0b65fe0c21a809f187f5c3fcdd8` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Dedaub (Core + periphery contracts) | Constants | unmatched — not counted | — | listed in scope | no |
 | Dedaub (Core + periphery contracts) | Pools | unmatched — not counted | — | listed in scope | no |
 | Dedaub (Core + periphery contracts) | Positions | unmatched — not counted | — | listed in scope | no |
@@ -211,7 +211,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Dedaub (Core + periphery contracts) | TickMaps | unmatched — not counted | — | listed in scope | no |
 | Dedaub (Core + periphery contracts) | Ticks | unmatched — not counted | — | listed in scope | no |
 | Dedaub (Core + periphery contracts) | Tiers | unmatched — not counted | — | listed in scope | no |
-| Dedaub (Core + periphery contracts) | Manager | own contract | 0xded07e… (selected) `0xded07e...67907e` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Dedaub (Core + periphery contracts) | Manager | own contract | 0xded07e… (selected) `0xded07e2da859714f69d93f9794344606ed67907e` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Dedaub (Core + periphery contracts) | EMAMath | unmatched — not counted | — | listed in scope | no |
 | Dedaub (Core + periphery contracts) | FullMath | unmatched — not counted | — | listed in scope | no |
 | Dedaub (Core + periphery contracts) | Math | unmatched — not counted | — | listed in scope | no |
@@ -228,7 +228,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Dedaub (Core + periphery contracts) | SelfPermit | unmatched — not counted | — | listed in scope | no |
 | Dedaub (Core + periphery contracts) | SwapManager | unmatched — not counted | — | listed in scope | no |
 | PeckShield (Core + periphery contracts) | MuffinHubPositions | unmatched — not counted | — | mentioned in finding PVE-004 target | no |
-| PeckShield (Core + periphery contracts) | MuffinHub | own contract | 0x669038… (selected) `0x669038...3fcdd8` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| PeckShield (Core + periphery contracts) | MuffinHub | own contract | 0x669038… (selected) `0x6690384822aff0b65fe0c21a809f187f5c3fcdd8` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | PeckShield (Core + periphery contracts) | Pools | unmatched — not counted | — | mentioned in findings PVE-001, PVE-003, PVE-005 targets | no |
 | PeckShield (Core + periphery contracts) | ERC721Extended | unmatched — not counted | — | mentioned in finding PVE-002 target | no |
 

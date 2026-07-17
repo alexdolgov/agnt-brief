@@ -61,11 +61,11 @@ The protocol forms a single structural family (Core Logic) of 5 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Authorizer | unknown | linea | n/a | [`0x7adcda...64a1a1`](./contracts/linea-59144/0x7adcda7bbe51376b190814d76a423de6df64a1a1/) | ⚠️ Unaudited |
-| ComposableStablePoolFactory | unknown | linea | n/a | [`0x55813e...773524`](./contracts/linea-59144/0x55813edb4b83a3286bb69c826cb81bf8c7773524/) | ⚠️ Unaudited |
-| ProtocolFeePercentagesProvider | unknown | linea | n/a | [`0xd69300...57e5c9`](./contracts/linea-59144/0xd69300d71133cedba6b317d16a67aa794d57e5c9/) | ⚠️ Unaudited |
-| Vault | unknown | linea | n/a | [`0x286381...729695`](./contracts/linea-59144/0x286381aedd20e51f642fe4a200b5cb2fe3729695/) | ⚠️ Unaudited |
-| WeightedPoolFactory | unknown | linea | n/a | [`0x0a5064...e14b30`](./contracts/linea-59144/0x0a5064b28df6d028b8e04299ddb972d03be14b30/) | ⚠️ Unaudited |
+| Authorizer | unknown | linea | n/a | [`0x7adcda7bbe51376b190814d76a423de6df64a1a1`](./contracts/linea-59144/0x7adcda7bbe51376b190814d76a423de6df64a1a1/) | ⚠️ Unaudited |
+| ComposableStablePoolFactory | unknown | linea | n/a | [`0x55813edb4b83a3286bb69c826cb81bf8c7773524`](./contracts/linea-59144/0x55813edb4b83a3286bb69c826cb81bf8c7773524/) | ⚠️ Unaudited |
+| ProtocolFeePercentagesProvider | unknown | linea | n/a | [`0xd69300d71133cedba6b317d16a67aa794d57e5c9`](./contracts/linea-59144/0xd69300d71133cedba6b317d16a67aa794d57e5c9/) | ⚠️ Unaudited |
+| Vault | unknown | linea | n/a | [`0x286381aedd20e51f642fe4a200b5cb2fe3729695`](./contracts/linea-59144/0x286381aedd20e51f642fe4a200b5cb2fe3729695/) | ⚠️ Unaudited |
+| WeightedPoolFactory | unknown | linea | n/a | [`0x0a5064b28df6d028b8e04299ddb972d03be14b30`](./contracts/linea-59144/0x0a5064b28df6d028b8e04299ddb972d03be14b30/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -96,11 +96,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| linea | [`0x7adcda...64a1a1`](./contracts/linea-59144/0x7adcda7bbe51376b190814d76a423de6df64a1a1/) | Authorizer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0x55813e...773524`](./contracts/linea-59144/0x55813edb4b83a3286bb69c826cb81bf8c7773524/) | ComposableStablePoolFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0xd69300...57e5c9`](./contracts/linea-59144/0xd69300d71133cedba6b317d16a67aa794d57e5c9/) | ProtocolFeePercentagesProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0x286381...729695`](./contracts/linea-59144/0x286381aedd20e51f642fe4a200b5cb2fe3729695/) | Vault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0x0a5064...e14b30`](./contracts/linea-59144/0x0a5064b28df6d028b8e04299ddb972d03be14b30/) | WeightedPoolFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x7adcda7bbe51376b190814d76a423de6df64a1a1`](./contracts/linea-59144/0x7adcda7bbe51376b190814d76a423de6df64a1a1/) | Authorizer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x55813edb4b83a3286bb69c826cb81bf8c7773524`](./contracts/linea-59144/0x55813edb4b83a3286bb69c826cb81bf8c7773524/) | ComposableStablePoolFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0xd69300d71133cedba6b317d16a67aa794d57e5c9`](./contracts/linea-59144/0xd69300d71133cedba6b317d16a67aa794d57e5c9/) | ProtocolFeePercentagesProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x286381aedd20e51f642fe4a200b5cb2fe3729695`](./contracts/linea-59144/0x286381aedd20e51f642fe4a200b5cb2fe3729695/) | Vault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x0a5064b28df6d028b8e04299ddb972d03be14b30`](./contracts/linea-59144/0x0a5064b28df6d028b8e04299ddb972d03be14b30/) | WeightedPoolFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

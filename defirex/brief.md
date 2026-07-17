@@ -61,9 +61,9 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CErc20Delegate | token | ethereum | n/a | [`0x5d3a53...8e3643`](./contracts/ethereum-1/0x5d3a536e4d6dbd6114cc1ead35777bab948e3643/) | ⚠️ Unaudited |
-| CEther | unknown | ethereum | n/a | [`0x4ddc2d...270ed5`](./contracts/ethereum-1/0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5/) | ⚠️ Unaudited |
-| PermittableToken | token | bsc | n/a | [`0x74b3ab...b2aacf`](./contracts/bsc-56/0x74b3abb94e9e1ecc25bd77d6872949b4a9b2aacf/) | ⚠️ Unaudited |
+| CErc20Delegate | token | ethereum | n/a | [`0x5d3a536e4d6dbd6114cc1ead35777bab948e3643`](./contracts/ethereum-1/0x5d3a536e4d6dbd6114cc1ead35777bab948e3643/) | ⚠️ Unaudited |
+| CEther | unknown | ethereum | n/a | [`0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5`](./contracts/ethereum-1/0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5/) | ⚠️ Unaudited |
+| PermittableToken | token | bsc | n/a | [`0x74b3abb94e9e1ecc25bd77d6872949b4a9b2aacf`](./contracts/bsc-56/0x74b3abb94e9e1ecc25bd77d6872949b4a9b2aacf/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,9 +95,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x5d3a53...8e3643`](./contracts/ethereum-1/0x5d3a536e4d6dbd6114cc1ead35777bab948e3643/) | CErc20Delegate | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x4ddc2d...270ed5`](./contracts/ethereum-1/0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5/) | CEther | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x74b3ab...b2aacf`](./contracts/bsc-56/0x74b3abb94e9e1ecc25bd77d6872949b4a9b2aacf/) | PermittableToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5d3a536e4d6dbd6114cc1ead35777bab948e3643`](./contracts/ethereum-1/0x5d3a536e4d6dbd6114cc1ead35777bab948e3643/) | CErc20Delegate | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5`](./contracts/ethereum-1/0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5/) | CEther | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x74b3abb94e9e1ecc25bd77d6872949b4a9b2aacf`](./contracts/bsc-56/0x74b3abb94e9e1ecc25bd77d6872949b4a9b2aacf/) | PermittableToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

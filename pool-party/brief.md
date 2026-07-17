@@ -62,8 +62,8 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| SendLockbox | unknown | base | n/a | [`0x60e544...95f615`](./contracts/base-8453/0x60e5445edc1a469cfc0181861c88bd4b6895f615/) | ⚠️ Unaudited |
-| SendToken | unknown | base | n/a | [`0xeab491...638956`](./contracts/base-8453/0xeab49138ba2ea6dd776220fe26b7b8e446638956/) | ⚠️ Unaudited |
+| SendLockbox | unknown | base | n/a | [`0x60e5445edc1a469cfc0181861c88bd4b6895f615`](./contracts/base-8453/0x60e5445edc1a469cfc0181861c88bd4b6895f615/) | ⚠️ Unaudited |
+| SendToken | unknown | base | n/a | [`0xeab49138ba2ea6dd776220fe26b7b8e446638956`](./contracts/base-8453/0xeab49138ba2ea6dd776220fe26b7b8e446638956/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -94,8 +94,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x60e544...95f615`](./contracts/base-8453/0x60e5445edc1a469cfc0181861c88bd4b6895f615/) | SendLockbox | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xeab491...638956`](./contracts/base-8453/0xeab49138ba2ea6dd776220fe26b7b8e446638956/) | SendToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x60e5445edc1a469cfc0181861c88bd4b6895f615`](./contracts/base-8453/0x60e5445edc1a469cfc0181861c88bd4b6895f615/) | SendLockbox | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xeab49138ba2ea6dd776220fe26b7b8e446638956`](./contracts/base-8453/0xeab49138ba2ea6dd776220fe26b7b8e446638956/) | SendToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

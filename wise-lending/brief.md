@@ -58,20 +58,20 @@ The protocol comprises 5 functional families. Its contracts share 14 common proj
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| FeeManager | governance | arbitrum | n/a | [`0x90a022...4e8ec6`](./contracts/arbitrum-42161/0x90a022796798f9dba1da0f8645234b284d4e8ec6/) | ✅ Audited |
-| PositionNFTs | unknown | ethereum | n/a | 3 deployments: ethereum [`0x2d210d...f84aee`](./contracts/ethereum-1/0x2d210dc61103fbd9c5cf9c9b0cd7f264bcf84aee/); ethereum `0xbec57d...999529`; arbitrum `0x6cd8c8...3298f9` | ✅ Audited |
-| WiseLending | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x78190e...5160ca`](./contracts/ethereum-1/0x78190e4c7c7b2c2c3b0562f1f155a1fc2f5160ca/); arbitrum `0x9034a4...c87ebf` | ✅ Audited |
-| WiseOracleHub | operational_periphery | ethereum | n/a | [`0x896fc8...05f2d3`](./contracts/ethereum-1/0x896fc8ffc11cda80cf40c373afa9a22d6e05f2d3/) | ✅ Audited |
+| FeeManager | governance | arbitrum | n/a | [`0x90a022796798f9dba1da0f8645234b284d4e8ec6`](./contracts/arbitrum-42161/0x90a022796798f9dba1da0f8645234b284d4e8ec6/) | ✅ Audited |
+| PositionNFTs | unknown | ethereum | n/a | 3 deployments: ethereum [`0x2d210dc61103fbd9c5cf9c9b0cd7f264bcf84aee`](./contracts/ethereum-1/0x2d210dc61103fbd9c5cf9c9b0cd7f264bcf84aee/); ethereum `0xbec57d7ba1fef3f2352cd529c3b40cf2c4999529`; arbitrum `0x6cd8c86f5253f49c06fe913182e14dad313298f9` | ✅ Audited |
+| WiseLending | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x78190e4c7c7b2c2c3b0562f1f155a1fc2f5160ca`](./contracts/ethereum-1/0x78190e4c7c7b2c2c3b0562f1f155a1fc2f5160ca/); arbitrum `0x9034a49587bd2c1af27598e0f04f30db66c87ebf` | ✅ Audited |
+| WiseOracleHub | operational_periphery | ethereum | n/a | [`0x896fc8ffc11cda80cf40c373afa9a22d6e05f2d3`](./contracts/ethereum-1/0x896fc8ffc11cda80cf40c373afa9a22d6e05f2d3/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BulkDepositWrapper | unknown | ethereum | n/a | 6 deployments: ethereum [`0x229420...87249b`](./contracts/ethereum-1/0x2294202709021d82d1e1623620372103c387249b/); ethereum `0x2f2591...1e2aa9`; ethereum `0x6d87b7...cd0913`; ethereum `0x7276a5...131dd4`; ethereum `0xc4f43c...cc2879`; ethereum `0xce8069...3aa023` | ⚠️ Unaudited |
-| LiquidityMaker | unknown | ethereum | n/a | [`0x7d3cad...fdedcc`](./contracts/ethereum-1/0x7d3cad2ef18689625231fc793ac11c1676fdedcc/) | ⚠️ Unaudited |
-| LiquidityManager | governance | ethereum | n/a | [`0x7970ed...9cdc80`](./contracts/ethereum-1/0x7970ede037856c14354baaf30b5f882c169cdc80/) | ⚠️ Unaudited |
-| WiseRewards | unknown | ethereum | n/a | [`0xc6cbfd...6ee28c`](./contracts/ethereum-1/0xc6cbfd25390aa9ae331fced429482ac4b76ee28c/) | ⚠️ Unaudited |
-| WiseSecurity | unknown | arbitrum | n/a | 3 deployments: ethereum `0x8eb1b6...b9a59d`; arbitrum [`0x0c8774...ad9dbf`](./contracts/arbitrum-42161/0x0c8774d7c6705901b717d0a6458b647833ad9dbf/); arbitrum `0x67dae1...adbe2a` | ⚠️ Unaudited |
+| BulkDepositWrapper | unknown | ethereum | n/a | 6 deployments: ethereum [`0x2294202709021d82d1e1623620372103c387249b`](./contracts/ethereum-1/0x2294202709021d82d1e1623620372103c387249b/); ethereum `0x2f259106d39b3e9a8aa0106e172a9c5b501e2aa9`; ethereum `0x6d87b70511db4a984167aebbbcbbff85f6cd0913`; ethereum `0x7276a55ae1a8602e9ed817d98a4e82358f131dd4`; ethereum `0xc4f43c1fc257df3e8b717b6de37d48b45ccc2879`; ethereum `0xce8069c599d9069d04b85a0d7c5fa1ee733aa023` | ⚠️ Unaudited |
+| LiquidityMaker | unknown | ethereum | n/a | [`0x7d3cad2ef18689625231fc793ac11c1676fdedcc`](./contracts/ethereum-1/0x7d3cad2ef18689625231fc793ac11c1676fdedcc/) | ⚠️ Unaudited |
+| LiquidityManager | governance | ethereum | n/a | [`0x7970ede037856c14354baaf30b5f882c169cdc80`](./contracts/ethereum-1/0x7970ede037856c14354baaf30b5f882c169cdc80/) | ⚠️ Unaudited |
+| WiseRewards | unknown | ethereum | n/a | [`0xc6cbfd25390aa9ae331fced429482ac4b76ee28c`](./contracts/ethereum-1/0xc6cbfd25390aa9ae331fced429482ac4b76ee28c/) | ⚠️ Unaudited |
+| WiseSecurity | unknown | arbitrum | n/a | 3 deployments: ethereum `0x8eb1b69fb74c6019c16f43ae93f0fad7ccb9a59d`; arbitrum [`0x0c8774d7c6705901b717d0a6458b647833ad9dbf`](./contracts/arbitrum-42161/0x0c8774d7c6705901b717d0a6458b647833ad9dbf/); arbitrum `0x67dae107ecf474f0d5b7d8ad45490608a5adbe2a` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -91,16 +91,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x0428c3...fafbb6` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x0ab424...5840b9` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x1b6667...3c756a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x5ce863...f00438` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x911d1e...ce168e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x930d49...e9ae73` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xa0e00a...d53493` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x6918dc...482b06` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xaa71b7...aff2e1` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xd63253...d201b8` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x0428c3aa1c3da57a4d0f1c2f681b14fd67fafbb6` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x0ab424d57b29d14a261fb2811e745ee4fb5840b9` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x1b66671260509026e0d19237b7f32f54f13c756a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x5ce8639ba09f31931e2cbefeab49fdbd5af00438` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x911d1e107a9599c491ddbdfa9736d11f85ce168e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x930d494f7c7c1556ba0030f5979bf60af2e9ae73` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xa0e00a742b405aaddebd13389748856bd5d53493` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x6918dcb2950be9bc48ede9224a72b12cd8482b06` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xaa71b7513c142eb7d2a5f2fb4a48647e52aff2e1` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xd632538c1ca9069082dceb51fcd66589a7d201b8` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -116,11 +116,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x229420...87249b`](./contracts/ethereum-1/0x2294202709021d82d1e1623620372103c387249b/) | BulkDepositWrapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x7d3cad...fdedcc`](./contracts/ethereum-1/0x7d3cad2ef18689625231fc793ac11c1676fdedcc/) | LiquidityMaker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x7970ed...9cdc80`](./contracts/ethereum-1/0x7970ede037856c14354baaf30b5f882c169cdc80/) | LiquidityManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc6cbfd...6ee28c`](./contracts/ethereum-1/0xc6cbfd25390aa9ae331fced429482ac4b76ee28c/) | WiseRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x0c8774...ad9dbf`](./contracts/arbitrum-42161/0x0c8774d7c6705901b717d0a6458b647833ad9dbf/) | WiseSecurity | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x2294202709021d82d1e1623620372103c387249b`](./contracts/ethereum-1/0x2294202709021d82d1e1623620372103c387249b/) | BulkDepositWrapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x7d3cad2ef18689625231fc793ac11c1676fdedcc`](./contracts/ethereum-1/0x7d3cad2ef18689625231fc793ac11c1676fdedcc/) | LiquidityMaker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x7970ede037856c14354baaf30b5f882c169cdc80`](./contracts/ethereum-1/0x7970ede037856c14354baaf30b5f882c169cdc80/) | LiquidityManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc6cbfd25390aa9ae331fced429482ac4b76ee28c`](./contracts/ethereum-1/0xc6cbfd25390aa9ae331fced429482ac4b76ee28c/) | WiseRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x0c8774d7c6705901b717d0a6458b647833ad9dbf`](./contracts/arbitrum-42161/0x0c8774d7c6705901b717d0a6458b647833ad9dbf/) | WiseSecurity | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

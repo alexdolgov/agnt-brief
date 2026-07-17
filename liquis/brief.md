@@ -59,23 +59,23 @@ The protocol comprises 4 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BaseRewardPool | core_logic | ethereum | n/a | [`0x7ea693...5acb23`](./contracts/ethereum-1/0x7ea6930a9487ce8d039f7cc89432435e6d5acb23/) | ✅ Audited |
-| BoosterHelper | core_logic | ethereum | n/a | [`0x4ea2ef...d171f4`](./contracts/ethereum-1/0x4ea2efb759591eec7f916f89547d339a69d171f4/) | ✅ Audited |
-| LiqLocker | unknown | ethereum | n/a | [`0x748a0f...03e1cb`](./contracts/ethereum-1/0x748a0f458b9e71061ca0ac543b984473f203e1cb/) | ✅ Audited |
-| LiquisClaimZap | adapter | ethereum | n/a | [`0xad161b...70431b`](./contracts/ethereum-1/0xad161b8beb5bf2af9cda30e3988b13f62e70431b/) | ✅ Audited |
-| LitDepositorHelper | unknown | ethereum | n/a | 2 deployments: ethereum [`0x4512c8...d373b5`](./contracts/ethereum-1/0x4512c81c2a88ea83539b535988cbe2f454d373b5/); ethereum `0x97a258...0af08c` | ✅ Audited |
+| BaseRewardPool | core_logic | ethereum | n/a | [`0x7ea6930a9487ce8d039f7cc89432435e6d5acb23`](./contracts/ethereum-1/0x7ea6930a9487ce8d039f7cc89432435e6d5acb23/) | ✅ Audited |
+| BoosterHelper | core_logic | ethereum | n/a | [`0x4ea2efb759591eec7f916f89547d339a69d171f4`](./contracts/ethereum-1/0x4ea2efb759591eec7f916f89547d339a69d171f4/) | ✅ Audited |
+| LiqLocker | unknown | ethereum | n/a | [`0x748a0f458b9e71061ca0ac543b984473f203e1cb`](./contracts/ethereum-1/0x748a0f458b9e71061ca0ac543b984473f203e1cb/) | ✅ Audited |
+| LiquisClaimZap | adapter | ethereum | n/a | [`0xad161b8beb5bf2af9cda30e3988b13f62e70431b`](./contracts/ethereum-1/0xad161b8beb5bf2af9cda30e3988b13f62e70431b/) | ✅ Audited |
+| LitDepositorHelper | unknown | ethereum | n/a | 2 deployments: ethereum [`0x4512c81c2a88ea83539b535988cbe2f454d373b5`](./contracts/ethereum-1/0x4512c81c2a88ea83539b535988cbe2f454d373b5/); ethereum `0x97a2585ddb121db8e9a3b6575e302f9c610af08c` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (7)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BoosterOwner | unknown | ethereum | n/a | [`0x948a60...c0a6cb`](./contracts/ethereum-1/0x948a608ff2198a4546abdbfadf43039a99c0a6cb/) | ⚠️ Unaudited |
-| LiqToken | token | ethereum | n/a | [`0xd82fd4...4aa408`](./contracts/ethereum-1/0xd82fd4d6d62f89a1e50b1db69ad19932314aa408/) | ⚠️ Unaudited |
-| LiquisViewHelpers | unknown | ethereum | n/a | [`0xd58dd6...9b9fe4`](./contracts/ethereum-1/0xd58dd6def2d0e8e16ffc537c7f269719e19b9fe4/) | ⚠️ Unaudited |
-| PoolManager | unknown | ethereum | n/a | [`0x61e69c...39ccb5`](./contracts/ethereum-1/0x61e69c64e8cdf804cf3e0be287969d272939ccb5/) | ⚠️ Unaudited |
-| RewardFactory | unknown | ethereum | n/a | [`0x368dda...0f9a48`](./contracts/ethereum-1/0x368dda6c8cce7283f4ee2577b8cbe454f40f9a48/) | ⚠️ Unaudited |
-| Vyper_contract | unknown | ethereum | n/a | [`0xf17d23...e09660`](./contracts/ethereum-1/0xf17d23136b4fead139f54fb766c8795faae09660/) | ⚠️ Unaudited |
-| WeightedPool2Tokens | core_logic | ethereum | n/a | [`0x9232a5...93675c`](./contracts/ethereum-1/0x9232a548dd9e81bac65500b5e0d918f8ba93675c/) | ⚠️ Unaudited |
+| BoosterOwner | unknown | ethereum | n/a | [`0x948a608ff2198a4546abdbfadf43039a99c0a6cb`](./contracts/ethereum-1/0x948a608ff2198a4546abdbfadf43039a99c0a6cb/) | ⚠️ Unaudited |
+| LiqToken | token | ethereum | n/a | [`0xd82fd4d6d62f89a1e50b1db69ad19932314aa408`](./contracts/ethereum-1/0xd82fd4d6d62f89a1e50b1db69ad19932314aa408/) | ⚠️ Unaudited |
+| LiquisViewHelpers | unknown | ethereum | n/a | [`0xd58dd6def2d0e8e16ffc537c7f269719e19b9fe4`](./contracts/ethereum-1/0xd58dd6def2d0e8e16ffc537c7f269719e19b9fe4/) | ⚠️ Unaudited |
+| PoolManager | unknown | ethereum | n/a | [`0x61e69c64e8cdf804cf3e0be287969d272939ccb5`](./contracts/ethereum-1/0x61e69c64e8cdf804cf3e0be287969d272939ccb5/) | ⚠️ Unaudited |
+| RewardFactory | unknown | ethereum | n/a | [`0x368dda6c8cce7283f4ee2577b8cbe454f40f9a48`](./contracts/ethereum-1/0x368dda6c8cce7283f4ee2577b8cbe454f40f9a48/) | ⚠️ Unaudited |
+| Vyper_contract | unknown | ethereum | n/a | [`0xf17d23136b4fead139f54fb766c8795faae09660`](./contracts/ethereum-1/0xf17d23136b4fead139f54fb766c8795faae09660/) | ⚠️ Unaudited |
+| WeightedPool2Tokens | core_logic | ethereum | n/a | [`0x9232a548dd9e81bac65500b5e0d918f8ba93675c`](./contracts/ethereum-1/0x9232a548dd9e81bac65500b5e0d918f8ba93675c/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -109,13 +109,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x948a60...c0a6cb`](./contracts/ethereum-1/0x948a608ff2198a4546abdbfadf43039a99c0a6cb/) | BoosterOwner | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xd82fd4...4aa408`](./contracts/ethereum-1/0xd82fd4d6d62f89a1e50b1db69ad19932314aa408/) | LiqToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xd58dd6...9b9fe4`](./contracts/ethereum-1/0xd58dd6def2d0e8e16ffc537c7f269719e19b9fe4/) | LiquisViewHelpers | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x61e69c...39ccb5`](./contracts/ethereum-1/0x61e69c64e8cdf804cf3e0be287969d272939ccb5/) | PoolManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x368dda...0f9a48`](./contracts/ethereum-1/0x368dda6c8cce7283f4ee2577b8cbe454f40f9a48/) | RewardFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xf17d23...e09660`](./contracts/ethereum-1/0xf17d23136b4fead139f54fb766c8795faae09660/) | Vyper_contract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x9232a5...93675c`](./contracts/ethereum-1/0x9232a548dd9e81bac65500b5e0d918f8ba93675c/) | WeightedPool2Tokens | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x948a608ff2198a4546abdbfadf43039a99c0a6cb`](./contracts/ethereum-1/0x948a608ff2198a4546abdbfadf43039a99c0a6cb/) | BoosterOwner | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xd82fd4d6d62f89a1e50b1db69ad19932314aa408`](./contracts/ethereum-1/0xd82fd4d6d62f89a1e50b1db69ad19932314aa408/) | LiqToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xd58dd6def2d0e8e16ffc537c7f269719e19b9fe4`](./contracts/ethereum-1/0xd58dd6def2d0e8e16ffc537c7f269719e19b9fe4/) | LiquisViewHelpers | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x61e69c64e8cdf804cf3e0be287969d272939ccb5`](./contracts/ethereum-1/0x61e69c64e8cdf804cf3e0be287969d272939ccb5/) | PoolManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x368dda6c8cce7283f4ee2577b8cbe454f40f9a48`](./contracts/ethereum-1/0x368dda6c8cce7283f4ee2577b8cbe454f40f9a48/) | RewardFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xf17d23136b4fead139f54fb766c8795faae09660`](./contracts/ethereum-1/0xf17d23136b4fead139f54fb766c8795faae09660/) | Vyper_contract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x9232a548dd9e81bac65500b5e0d918f8ba93675c`](./contracts/ethereum-1/0x9232a548dd9e81bac65500b5e0d918f8ba93675c/) | WeightedPool2Tokens | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

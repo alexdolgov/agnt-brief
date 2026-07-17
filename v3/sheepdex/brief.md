@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across bsc. Structura
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- SPCToken (`0x6a428f...06af90`, chain 56)
+- SPCToken (`0x6a428ff9bfec2c8f676b8c905d49146c6106af90`, chain 56)
 
 ## Contract Surface Quality
 
@@ -101,27 +101,27 @@ The pinned logic-topography run contains 1 contract row(s) across bsc. Structura
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| SPCToken | unknown | project_anchor | own_supporting | 0 | bsc | unit-392401 | `0x6a428f...06af90` | ✅ Audited |
+| SPCToken | unknown | project_anchor | own_supporting | 0 | bsc | unit-392401 | `0x6a428ff9bfec2c8f676b8c905d49146c6106af90` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (15)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| FactoryTest | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x41d534...8f4201` | ⚠️ Unaudited |
-| MigrationToken2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x102dde...0947f9` | ⚠️ Unaudited |
-| NFTPositionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x199ddb...b1ca8b` | ⚠️ Unaudited |
-| Operatable | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3e0dbd...3eceaa` | ⚠️ Unaudited |
-| PositionReward | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x542bb4...84b7da` | ⚠️ Unaudited |
-| PositionView | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc0052a...d56cde` | ⚠️ Unaudited |
-| Quoter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x265d79...f17d51` | ⚠️ Unaudited |
-| SpcDAO | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x17fa4d...851bed` | ⚠️ Unaudited |
-| SPCTimeLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2a3a8d...a989ff` | ⚠️ Unaudited |
-| SpeFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x571521...a3cbdf` | ⚠️ Unaudited |
-| SwapDirector | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x82c0c5...0941e5` | ⚠️ Unaudited |
-| SwapMining | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x58469a...1ee019` | ⚠️ Unaudited |
-| SwapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x48886f...dad319` | ⚠️ Unaudited |
-| TestCall | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0235d8...5e7ea6` | ⚠️ Unaudited |
-| vSpcToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x6d52d5...950c3f` | ⚠️ Unaudited |
+| FactoryTest | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x41d534cc6c03a05b539e0fefca5b31846b8f4201` | ⚠️ Unaudited |
+| MigrationToken2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x102ddeb4cfa109b88cc7794e3299da49fe0947f9` | ⚠️ Unaudited |
+| NFTPositionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x199ddb7b7b85f57832fdc081604405a0f3b1ca8b` | ⚠️ Unaudited |
+| Operatable | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3e0dbd3bd77559db7b7b6c8a4da5411a6d3eceaa` | ⚠️ Unaudited |
+| PositionReward | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x542bb4c30059dec4a9dff9533e901ef6cd84b7da` | ⚠️ Unaudited |
+| PositionView | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc0052afdcf83e66ffcde46b96ebd56163ed56cde` | ⚠️ Unaudited |
+| Quoter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x265d79926f406b97887bb3edc59db66e07f17d51` | ⚠️ Unaudited |
+| SpcDAO | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x17fa4d6c9e34d4a5c9e331b7925bd49980851bed` | ⚠️ Unaudited |
+| SPCTimeLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2a3a8df6bf63a505fada1bca5710e20325a989ff` | ⚠️ Unaudited |
+| SpeFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x571521f8c16f3c4ed5f2490f19187ba7a5a3cbdf` | ⚠️ Unaudited |
+| SwapDirector | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x82c0c5c2722d511205d1a290490ebaf9940941e5` | ⚠️ Unaudited |
+| SwapMining | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x58469aee3436a000698d0a8e648f5d14f31ee019` | ⚠️ Unaudited |
+| SwapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x48886f3cfa0c7bca0672bbfa4bee5d6d63dad319` | ⚠️ Unaudited |
+| TestCall | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0235d8b9f6e5c4f85ed93ba6a09512ad9a5e7ea6` | ⚠️ Unaudited |
+| vSpcToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x6d52d502a1526ecd49744610f9461b4c69950c3f` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -165,7 +165,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | PeckShield-Audit-Report-SheepDEX-v1.0.pdf | PositionReward | unmatched — not counted | — | Listed in scope description and findings (PVE-001, PVE-004, PVE-005, PVE-007) | no |
 | PeckShield-Audit-Report-SheepDEX-v1.0.pdf | TokenReward | unmatched — not counted | — | Listed in scope description and findings (PVE-001, PVE-006, PVE-007) | no |
 | PeckShield-Audit-Report-SheepDEX-v1.0.pdf | SPCTimeLock | unmatched — not counted | — | Listed in findings (PVE-002, PVE-007) | no |
-| PeckShield-Audit-Report-SheepDEX-v1.0.pdf | SPCToken | own contract | SPCToken (selected) `0x6a428f...06af90` — deployed 2021-12-23 11:36:56+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| PeckShield-Audit-Report-SheepDEX-v1.0.pdf | SPCToken | own contract | SPCToken (selected) `0x6a428ff9bfec2c8f676b8c905d49146c6106af90` — deployed 2021-12-23 11:36:56+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | PeckShield-Audit-Report-SheepDEX-v1.0.pdf | SwapRouter | unmatched — not counted | — | Listed in findings (PVE-007) | no |
 | skynet.certik.com/projects/sheepdex | DelegateERC20 | unmatched — not counted | — | listed in Audited Files section | no |
 | skynet.certik.com/projects/sheepdex | SpcDAO | unmatched — not counted | — | listed in Audited Files section | no |

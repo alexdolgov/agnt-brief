@@ -52,14 +52,14 @@ The pinned logic-topography run contains 8 contract row(s) across bsc. Structura
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- ARTToken (`0x0b3f46...c67424`, chain 56)
-- ARTToken (`0xb8a1ed...feaae1`, chain 56)
-- ARTVault (`0x79d28c...aff6ef`, chain 56)
-- GFDistributor (`0x92558b...154079`, chain 56)
-- GFPriceOracle (`0x2c1bd6...03b4f4`, chain 56)
-- GFRegistry (`0xd1ab3b...f17a9a`, chain 56)
-- GFStaking (`0x93639c...867e1e`, chain 56)
-- GFToken (`0x6db461...c004e0`, chain 56)
+- ARTToken (`0x0b3f46fcc5f3ac3ac1b28bed8336060679c67424`, chain 56)
+- ARTToken (`0xb8a1ed561c914f22bd69b0bb4558ad5a89feaae1`, chain 56)
+- ARTVault (`0x79d28c0b71dd6b0d58d50810a8da2aedefaff6ef`, chain 56)
+- GFDistributor (`0x92558bda86a95cdbff7bdebfe5c2ba7723154079`, chain 56)
+- GFPriceOracle (`0x2c1bd629a23322bd54d403c9139743795903b4f4`, chain 56)
+- GFRegistry (`0xd1ab3ba1882e7f2a1de63849048ed20a97f17a9a`, chain 56)
+- GFStaking (`0x93639cc0b46b1f640a10efb6be1d634c7c867e1e`, chain 56)
+- GFToken (`0x6db461da03b8ad06319ff2af985e1c8dfcc004e0`, chain 56)
 
 ## Contract Surface Quality
 
@@ -104,23 +104,23 @@ The pinned logic-topography run contains 8 contract row(s) across bsc. Structura
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ARTToken | token | project_anchor | own_supporting | 0 | bsc | unit-266825 | `0x0b3f46...c67424` | ✅ Audited |
-| ARTVault | unknown | project_anchor | own_supporting | 0 | bsc | unit-266828 | `0x79d28c...aff6ef` | ✅ Audited |
-| GFDistributor | operational_periphery | project_anchor | own_supporting | 0 | bsc | unit-266829 | `0x92558b...154079` | ✅ Audited |
-| GFPriceOracle | operational_periphery | project_anchor | own_supporting | 0 | bsc | unit-266826 | `0x2c1bd6...03b4f4` | ✅ Audited |
-| GFRegistry | registry | project_anchor | own_supporting | 0 | bsc | unit-266832 | `0xd1ab3b...f17a9a` | ✅ Audited |
-| GFStaking | unknown | project_anchor | own_supporting | 0 | bsc | unit-266830 | `0x93639c...867e1e` | ✅ Audited |
-| GFToken | unknown | project_anchor | own_supporting | 0 | bsc | unit-266827 | `0x6db461...c004e0` | ✅ Audited |
+| ARTToken | token | project_anchor | own_supporting | 0 | bsc | unit-266825 | `0x0b3f46fcc5f3ac3ac1b28bed8336060679c67424` | ✅ Audited |
+| ARTVault | unknown | project_anchor | own_supporting | 0 | bsc | unit-266828 | `0x79d28c0b71dd6b0d58d50810a8da2aedefaff6ef` | ✅ Audited |
+| GFDistributor | operational_periphery | project_anchor | own_supporting | 0 | bsc | unit-266829 | `0x92558bda86a95cdbff7bdebfe5c2ba7723154079` | ✅ Audited |
+| GFPriceOracle | operational_periphery | project_anchor | own_supporting | 0 | bsc | unit-266826 | `0x2c1bd629a23322bd54d403c9139743795903b4f4` | ✅ Audited |
+| GFRegistry | registry | project_anchor | own_supporting | 0 | bsc | unit-266832 | `0xd1ab3ba1882e7f2a1de63849048ed20a97f17a9a` | ✅ Audited |
+| GFStaking | unknown | project_anchor | own_supporting | 0 | bsc | unit-266830 | `0x93639cc0b46b1f640a10efb6be1d634c7c867e1e` | ✅ Audited |
+| GFToken | unknown | project_anchor | own_supporting | 0 | bsc | unit-266827 | `0x6db461da03b8ad06319ff2af985e1c8dfcc004e0` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ARTToken | token | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | bsc | unit-266831 | `0xb8a1ed...feaae1` | ⚠️ Unaudited |
-| ARTVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xaa8cd8...234643` | ⚠️ Unaudited |
-| GFDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 3 deployments: bsc `0xcee77c...d8572b`; bsc `0xeae164...18e32c`; bsc `0xf9e11e...efaa62` | ⚠️ Unaudited |
-| GFStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 3 deployments: bsc `0x65e580...c7ddb6`; bsc `0x96e451...1a77f8`; bsc `0xb04782...22e87d` | ⚠️ Unaudited |
-| GFToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 3 deployments: bsc `0xbad711...c7792b`; bsc `0xdb399e...551dcc`; bsc `0xdb3fb4...dd77a3` | ⚠️ Unaudited |
+| ARTToken | token | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | bsc | unit-266831 | `0xb8a1ed561c914f22bd69b0bb4558ad5a89feaae1` | ⚠️ Unaudited |
+| ARTVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xaa8cd8244843bf3e34dc5a978c29854f6c234643` | ⚠️ Unaudited |
+| GFDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 3 deployments: bsc `0xcee77c30cce9bbcd35c0e2b05a414d4941d8572b`; bsc `0xeae164782f775a30451080a21a968a8b2618e32c`; bsc `0xf9e11ea441bc7eccf57f0ac3193d6b1799efaa62` | ⚠️ Unaudited |
+| GFStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 3 deployments: bsc `0x65e580a52a91cb8519b0e9cd8029da6612c7ddb6`; bsc `0x96e4519b0c0cfc3edac80bcef5c5d0361b1a77f8`; bsc `0xb047828fd90d0807759604de833d46c56622e87d` | ⚠️ Unaudited |
+| GFToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 3 deployments: bsc `0xbad7118c5b445d44dee72e186d594d315ac7792b`; bsc `0xdb399e1d142d82dfcb8a583a4f904dc733551dcc`; bsc `0xdb3fb41167dd5318af04da5aae43e56d6ddd77a3` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -140,7 +140,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2232a5...06859a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2232a55e13cfba87e29dabe684aff292ad06859a` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -177,26 +177,26 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
 | goldfinger-zerodrift-report.pdf | CheckIn | unmatched — not counted | — | listed in scope | no |
-| app.solidproof.io/projects/goldfinger | GFDistributor | own contract | GFDistributor (selected) `0x92558b...154079` — deployed 2026-03-04 09:54:00+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| app.solidproof.io/projects/goldfinger | GFStaking | own contract | GFStaking (selected) `0x93639c...867e1e` — deployed 2026-03-05 10:49:43+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| app.solidproof.io/projects/goldfinger | GFToken | own contract | GFToken (selected) `0x6db461...c004e0` — deployed 2025-11-22 06:28:59+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| app.solidproof.io/projects/goldfinger | ARTVault | own contract | ARTVault (selected) `0x79d28c...aff6ef` — deployed 2025-11-22 06:32:30+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| app.solidproof.io/projects/goldfinger | ARTToken | own contract | ARTToken (selected) `0x0b3f46...c67424` — deployed 2025-11-03 06:56:39+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| app.solidproof.io/projects/goldfinger | ARTToken | own contract | ARTToken (selected) `0x0b3f46...c67424` — deployed 2025-11-03 06:56:39+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| app.solidproof.io/projects/goldfinger | ARTVault | own contract | ARTVault (selected) `0x79d28c...aff6ef` — deployed 2025-11-22 06:32:30+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| app.solidproof.io/projects/goldfinger | GFDistributor | own contract | GFDistributor (selected) `0x92558b...154079` — deployed 2026-03-04 09:54:00+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| app.solidproof.io/projects/goldfinger | GFPriceOracle | own contract | GFPriceOracle (selected) `0x2c1bd6...03b4f4` — deployed 2025-11-03 07:27:56+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| app.solidproof.io/projects/goldfinger | GFRegistry | own contract | GFRegistry (selected) `0xd1ab3b...f17a9a` — deployed 2025-11-03 07:30:34+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| app.solidproof.io/projects/goldfinger | GFStaking | own contract | GFStaking (selected) `0x93639c...867e1e` — deployed 2026-03-05 10:49:43+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| app.solidproof.io/projects/goldfinger | GFToken | own contract | GFToken (selected) `0x6db461...c004e0` — deployed 2025-11-22 06:28:59+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| app.solidproof.io/projects/goldfinger | ARTToken | own contract | ARTToken (selected) `0x0b3f46...c67424` — deployed 2025-11-03 06:56:39+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| app.solidproof.io/projects/goldfinger | ARTVault | own contract | ARTVault (selected) `0x79d28c...aff6ef` — deployed 2025-11-22 06:32:30+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| app.solidproof.io/projects/goldfinger | GFDistributor | own contract | GFDistributor (selected) `0x92558b...154079` — deployed 2026-03-04 09:54:00+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| app.solidproof.io/projects/goldfinger | GFPriceOracle | own contract | GFPriceOracle (selected) `0x2c1bd6...03b4f4` — deployed 2025-11-03 07:27:56+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| app.solidproof.io/projects/goldfinger | GFRegistry | own contract | GFRegistry (selected) `0xd1ab3b...f17a9a` — deployed 2025-11-03 07:30:34+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| app.solidproof.io/projects/goldfinger | GFStaking | own contract | GFStaking (selected) `0x93639c...867e1e` — deployed 2026-03-05 10:49:43+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| app.solidproof.io/projects/goldfinger | GFToken | own contract | GFToken (selected) `0x6db461...c004e0` — deployed 2025-11-22 06:28:59+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| app.solidproof.io/projects/goldfinger | GFDistributor | own contract | GFDistributor (selected) `0x92558b...154079` — deployed 2026-03-04 09:54:00+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| app.solidproof.io/projects/goldfinger | GFDistributor | own contract | GFDistributor (selected) `0x92558bda86a95cdbff7bdebfe5c2ba7723154079` — deployed 2026-03-04 09:54:00+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| app.solidproof.io/projects/goldfinger | GFStaking | own contract | GFStaking (selected) `0x93639cc0b46b1f640a10efb6be1d634c7c867e1e` — deployed 2026-03-05 10:49:43+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| app.solidproof.io/projects/goldfinger | GFToken | own contract | GFToken (selected) `0x6db461da03b8ad06319ff2af985e1c8dfcc004e0` — deployed 2025-11-22 06:28:59+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| app.solidproof.io/projects/goldfinger | ARTVault | own contract | ARTVault (selected) `0x79d28c0b71dd6b0d58d50810a8da2aedefaff6ef` — deployed 2025-11-22 06:32:30+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| app.solidproof.io/projects/goldfinger | ARTToken | own contract | ARTToken (selected) `0x0b3f46fcc5f3ac3ac1b28bed8336060679c67424` — deployed 2025-11-03 06:56:39+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| app.solidproof.io/projects/goldfinger | ARTToken | own contract | ARTToken (selected) `0x0b3f46fcc5f3ac3ac1b28bed8336060679c67424` — deployed 2025-11-03 06:56:39+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| app.solidproof.io/projects/goldfinger | ARTVault | own contract | ARTVault (selected) `0x79d28c0b71dd6b0d58d50810a8da2aedefaff6ef` — deployed 2025-11-22 06:32:30+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| app.solidproof.io/projects/goldfinger | GFDistributor | own contract | GFDistributor (selected) `0x92558bda86a95cdbff7bdebfe5c2ba7723154079` — deployed 2026-03-04 09:54:00+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| app.solidproof.io/projects/goldfinger | GFPriceOracle | own contract | GFPriceOracle (selected) `0x2c1bd629a23322bd54d403c9139743795903b4f4` — deployed 2025-11-03 07:27:56+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| app.solidproof.io/projects/goldfinger | GFRegistry | own contract | GFRegistry (selected) `0xd1ab3ba1882e7f2a1de63849048ed20a97f17a9a` — deployed 2025-11-03 07:30:34+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| app.solidproof.io/projects/goldfinger | GFStaking | own contract | GFStaking (selected) `0x93639cc0b46b1f640a10efb6be1d634c7c867e1e` — deployed 2026-03-05 10:49:43+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| app.solidproof.io/projects/goldfinger | GFToken | own contract | GFToken (selected) `0x6db461da03b8ad06319ff2af985e1c8dfcc004e0` — deployed 2025-11-22 06:28:59+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| app.solidproof.io/projects/goldfinger | ARTToken | own contract | ARTToken (selected) `0x0b3f46fcc5f3ac3ac1b28bed8336060679c67424` — deployed 2025-11-03 06:56:39+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| app.solidproof.io/projects/goldfinger | ARTVault | own contract | ARTVault (selected) `0x79d28c0b71dd6b0d58d50810a8da2aedefaff6ef` — deployed 2025-11-22 06:32:30+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| app.solidproof.io/projects/goldfinger | GFDistributor | own contract | GFDistributor (selected) `0x92558bda86a95cdbff7bdebfe5c2ba7723154079` — deployed 2026-03-04 09:54:00+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| app.solidproof.io/projects/goldfinger | GFPriceOracle | own contract | GFPriceOracle (selected) `0x2c1bd629a23322bd54d403c9139743795903b4f4` — deployed 2025-11-03 07:27:56+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| app.solidproof.io/projects/goldfinger | GFRegistry | own contract | GFRegistry (selected) `0xd1ab3ba1882e7f2a1de63849048ed20a97f17a9a` — deployed 2025-11-03 07:30:34+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| app.solidproof.io/projects/goldfinger | GFStaking | own contract | GFStaking (selected) `0x93639cc0b46b1f640a10efb6be1d634c7c867e1e` — deployed 2026-03-05 10:49:43+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| app.solidproof.io/projects/goldfinger | GFToken | own contract | GFToken (selected) `0x6db461da03b8ad06319ff2af985e1c8dfcc004e0` — deployed 2025-11-22 06:28:59+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| app.solidproof.io/projects/goldfinger | GFDistributor | own contract | GFDistributor (selected) `0x92558bda86a95cdbff7bdebfe5c2ba7723154079` — deployed 2026-03-04 09:54:00+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 
 ## Coverage Gaps
 

@@ -60,13 +60,13 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| PolsStake | unknown | ethereum | n/a | 2 deployments: ethereum [`0xc24a36...79d8d7`](./contracts/ethereum-1/0xc24a365a870821eb83fd216c9596edd89479d8d7/); bsc `0xd55867...63de3a` | ✅ Audited |
+| PolsStake | unknown | ethereum | n/a | 2 deployments: ethereum [`0xc24a365a870821eb83fd216c9596edd89479d8d7`](./contracts/ethereum-1/0xc24a365a870821eb83fd216c9596edd89479d8d7/); bsc `0xd558675a8c8e1fd45002010bac970b115163de3a` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| PolkastarterToken | token | ethereum | n/a | [`0x83e6f1...c3d5aa`](./contracts/ethereum-1/0x83e6f1e41cdd28eaceb20cb649155049fac3d5aa/) | ⚠️ Unaudited |
+| PolkastarterToken | token | ethereum | n/a | [`0x83e6f1e41cdd28eaceb20cb649155049fac3d5aa`](./contracts/ethereum-1/0x83e6f1e41cdd28eaceb20cb649155049fac3d5aa/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -86,7 +86,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0xc24a36...79d8d7` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xc24a365a870821eb83fd216c9596edd89479d8d7` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -102,7 +102,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x83e6f1...c3d5aa`](./contracts/ethereum-1/0x83e6f1e41cdd28eaceb20cb649155049fac3d5aa/) | PolkastarterToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x83e6f1e41cdd28eaceb20cb649155049fac3d5aa`](./contracts/ethereum-1/0x83e6f1e41cdd28eaceb20cb649155049fac3d5aa/) | PolkastarterToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

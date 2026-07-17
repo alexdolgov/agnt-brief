@@ -59,12 +59,12 @@ The protocol forms a single structural family (Core Logic) of 6 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AdminUpgradeabilityProxy | unknown | ethereum | n/a | [`0x0198b6...649e11`](./contracts/ethereum-1/0x0198b65cd2c12eae4fb7ea1996b8470b6c649e11/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | ethereum | n/a | [`0x898da6...0e6a79`](./contracts/ethereum-1/0x898da6b2e015c64c060025cc5ebcf588290e6a79/) | ⚠️ Unaudited |
-| SmartSwap | unknown | ethereum | n/a | [`0x03089e...6fb943`](./contracts/ethereum-1/0x03089ee8f8505ed44cb567836bbc04b3426fb943/) | ⚠️ Unaudited |
-| SwapSmartLock | unknown | ethereum | n/a | [`0x06d0cc...384c70`](./contracts/ethereum-1/0x06d0ccbfa6f1eec7ca61288f8545efd977384c70/) | ⚠️ Unaudited |
-| SwapStakingContract | unknown | ethereum | n/a | [`0x454a18...bbd8a8`](./contracts/ethereum-1/0x454a18cef2792e683648b6863d88da47b0bbd8a8/) | ⚠️ Unaudited |
-| SwapToken | unknown | ethereum | n/a | [`0x907c6d...56eebe`](./contracts/ethereum-1/0x907c6d5bf04dc6f2cc34ceb649adb18bf356eebe/) | ⚠️ Unaudited |
+| AdminUpgradeabilityProxy | unknown | ethereum | n/a | [`0x0198b65cd2c12eae4fb7ea1996b8470b6c649e11`](./contracts/ethereum-1/0x0198b65cd2c12eae4fb7ea1996b8470b6c649e11/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | ethereum | n/a | [`0x898da6b2e015c64c060025cc5ebcf588290e6a79`](./contracts/ethereum-1/0x898da6b2e015c64c060025cc5ebcf588290e6a79/) | ⚠️ Unaudited |
+| SmartSwap | unknown | ethereum | n/a | [`0x03089ee8f8505ed44cb567836bbc04b3426fb943`](./contracts/ethereum-1/0x03089ee8f8505ed44cb567836bbc04b3426fb943/) | ⚠️ Unaudited |
+| SwapSmartLock | unknown | ethereum | n/a | [`0x06d0ccbfa6f1eec7ca61288f8545efd977384c70`](./contracts/ethereum-1/0x06d0ccbfa6f1eec7ca61288f8545efd977384c70/) | ⚠️ Unaudited |
+| SwapStakingContract | unknown | ethereum | n/a | [`0x454a18cef2792e683648b6863d88da47b0bbd8a8`](./contracts/ethereum-1/0x454a18cef2792e683648b6863d88da47b0bbd8a8/) | ⚠️ Unaudited |
+| SwapToken | unknown | ethereum | n/a | [`0x907c6d5bf04dc6f2cc34ceb649adb18bf356eebe`](./contracts/ethereum-1/0x907c6d5bf04dc6f2cc34ceb649adb18bf356eebe/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,10 +95,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x03089e...6fb943`](./contracts/ethereum-1/0x03089ee8f8505ed44cb567836bbc04b3426fb943/) | SmartSwap | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x06d0cc...384c70`](./contracts/ethereum-1/0x06d0ccbfa6f1eec7ca61288f8545efd977384c70/) | SwapSmartLock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x454a18...bbd8a8`](./contracts/ethereum-1/0x454a18cef2792e683648b6863d88da47b0bbd8a8/) | SwapStakingContract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x907c6d...56eebe`](./contracts/ethereum-1/0x907c6d5bf04dc6f2cc34ceb649adb18bf356eebe/) | SwapToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x03089ee8f8505ed44cb567836bbc04b3426fb943`](./contracts/ethereum-1/0x03089ee8f8505ed44cb567836bbc04b3426fb943/) | SmartSwap | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x06d0ccbfa6f1eec7ca61288f8545efd977384c70`](./contracts/ethereum-1/0x06d0ccbfa6f1eec7ca61288f8545efd977384c70/) | SwapSmartLock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x454a18cef2792e683648b6863d88da47b0bbd8a8`](./contracts/ethereum-1/0x454a18cef2792e683648b6863d88da47b0bbd8a8/) | SwapStakingContract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x907c6d5bf04dc6f2cc34ceb649adb18bf356eebe`](./contracts/ethereum-1/0x907c6d5bf04dc6f2cc34ceb649adb18bf356eebe/) | SwapToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

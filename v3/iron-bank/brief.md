@@ -52,54 +52,54 @@ The pinned logic-topography run contains 48 contract row(s) across avalanche, av
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- CCollateralCapErc20Delegate (`0x23be15...301bf7`, chain 10)
-- CCollateralCapErc20Delegate (`0xcdb9b4...85d14d`, chain 43114)
-- CompoundLens (`0xc640a7...a8f78e`, chain 10)
-- CompoundLens (`0x5b4058...9e32a1`, chain 43114)
-- Comptroller / Unitroller (`0xe0b57f...6715bf`, chain 10)
-- Comptroller / Unitroller (`0x2ee806...5cd7cc`, chain 43114)
-- Comptroller_Implementation (`0xd0b628...731e5a`, chain 10)
-- Comptroller_Implementation (`0x294cb0...c88811`, chain 43114)
-- crDAI.E (`0x085682...60e99b`, chain 43114)
-- CRenameDelegate (`0x0a008c...1c83f0`, chain 43114)
-- crLINK.E (`0x189317...90d4b1`, chain 43114)
-- crMIM (`0xbf1430...587b29`, chain 43114)
-- crUSDC (`0xec5aa1...f21cd7`, chain 43114)
-- crUSDC.E (`0xe28965...05e832`, chain 43114)
-- crUSDT.E (`0xceb1ce...f46fd3`, chain 43114)
-- crWAVAX (`0xb3c68d...3edf56`, chain 43114)
-- crWBTC.E (`0xb09b75...7661fc`, chain 43114)
-- crWETH.E (`0x338eee...221f1d`, chain 43114)
-- CTokenAdmin (`0xf7564e...66d2a8`, chain 10)
-- CTokenAdmin (`0xf976c9...bc5c8a`, chain 43114)
-- CWrappedNativeDelegate (`0xc0e1a4...16fbbe`, chain 10)
-- CWrappedNativeDelegate (`0x049e04...750283`, chain 43114)
-- FlashloanLender (`0xea4b8d...a75539`, chain 43114)
-- GovIRM (`0xedaaba...0e8941`, chain 10)
-- GovIRM (`0x20d5d3...d6ad0a`, chain 43114)
-- iALPHA.E (`0x02c913...404efb`, chain 43114)
-- iDAI (`0x049e04...750283`, chain 10)
-- iOP (`0x4645e0...e1c412`, chain 10)
-- iUSDC (`0x1d073c...89173a`, chain 10)
-- iUSDT (`0x874c01...d5a742`, chain 10)
-- iUST (`0x9be7b5...01aa64`, chain 43114)
-- iUST(Wormhole) (`0xb1f656...b465ad`, chain 43114)
-- iWBTC (`0xcdb9b4...85d14d`, chain 10)
-- iWETH (`0x17533a...b25c7d`, chain 10)
-- LiquidityMining (`0x8cfbe2...02226f`, chain 10)
-- LiquidityMiningProxy (`0x9c8264...3cadab`, chain 10)
-- MajorIRM (`0xf91783...677ee5`, chain 10)
-- MajorIRM (`0x7ef18d...27f716`, chain 43114)
-- Maximillion (`0x2ac637...dc1702`, chain 10)
-- PriceOracleProxyUSD (`0x2424c3...dbed7d`, chain 10)
-- PriceOracleProxyUSD (`0x0980f2...5303f7`, chain 43114)
-- PriceOracleV1 (`0x61e38f...eefab5`, chain 10)
-- PriceOracleV1 (`0xe7db46...9786be`, chain 43114)
-- StableIRM (`0x20a7f6...aca786`, chain 10)
-- StableIRM (`0x5dc3a3...17072a`, chain 43114)
-- StableIRM2 (`0x3596b7...c00b8c`, chain 10)
-- StakingRewardsFactory (`0x35f70c...4a1ea8`, chain 10)
-- StakingRewardsHelper (`0x970d6b...099bc0`, chain 10)
+- CCollateralCapErc20Delegate (`0x23be15c4972279fe56dac4460be0b60cc8301bf7`, chain 10)
+- CCollateralCapErc20Delegate (`0xcdb9b4db65c913ab000b40204248c8a53185d14d`, chain 43114)
+- CompoundLens (`0xc640a79205706062bf0277a466821a6130a8f78e`, chain 10)
+- CompoundLens (`0x5b4058a9000e86fe136ac896352c4dfd539e32a1`, chain 43114)
+- Comptroller / Unitroller (`0xe0b57feed45e7d908f2d0dacd26f113cf26715bf`, chain 10)
+- Comptroller / Unitroller (`0x2ee80614ccbc5e28654324a66a396458fa5cd7cc`, chain 43114)
+- Comptroller_Implementation (`0xd0b628cb062bcb34331482391c2110cd7a731e5a`, chain 10)
+- Comptroller_Implementation (`0x294cb010ef33f8e7b47b7e19fdb0a88d1dc88811`, chain 43114)
+- crDAI.E (`0x085682716f61a72bf8c573fbaf88cca68c60e99b`, chain 43114)
+- CRenameDelegate (`0x0a008ccae9a2e48852177a6b55bf0e6fa91c83f0`, chain 43114)
+- crLINK.E (`0x18931772adb90e7f214b6cbc78ddd6e0f090d4b1`, chain 43114)
+- crMIM (`0xbf1430d9ec170b7e97223c7f321782471c587b29`, chain 43114)
+- crUSDC (`0xec5aa19566aa442c8c50f3c6734b6bb23ff21cd7`, chain 43114)
+- crUSDC.E (`0xe28965073c49a02923882b8329d3e8c1d805e832`, chain 43114)
+- crUSDT.E (`0xceb1ce674f38398432d20bc8f90345e91ef46fd3`, chain 43114)
+- crWAVAX (`0xb3c68d69e95b095ab4b33b4cb67dbc0fbf3edf56`, chain 43114)
+- crWBTC.E (`0xb09b75916c5f4097c8b5812e63e216fef97661fc`, chain 43114)
+- crWETH.E (`0x338eee1f7b89ce6272f302bdc4b952c13b221f1d`, chain 43114)
+- CTokenAdmin (`0xf7564e21a2439cca399779580db97e85a766d2a8`, chain 10)
+- CTokenAdmin (`0xf976c9bc0e16b250e0b1523cffaa9e4c07bc5c8a`, chain 43114)
+- CWrappedNativeDelegate (`0xc0e1a46cfea33e598cf0102ef4e06421ed16fbbe`, chain 10)
+- CWrappedNativeDelegate (`0x049e04bee77cffb055f733a138a2f204d3750283`, chain 43114)
+- FlashloanLender (`0xea4b8ddb3ae257224dfd8c6afc035204eea75539`, chain 43114)
+- GovIRM (`0xedaaba6db46bb1a7967e7490a024f07abe0e8941`, chain 10)
+- GovIRM (`0x20d5d319c2964ecb52e1b006a4c059b7f6d6ad0a`, chain 43114)
+- iALPHA.E (`0x02c9133627a14214879175a7a222d0a7f7404efb`, chain 43114)
+- iDAI (`0x049e04bee77cffb055f733a138a2f204d3750283`, chain 10)
+- iOP (`0x4645e0952678e9566fb529d9313f5730e4e1c412`, chain 10)
+- iUSDC (`0x1d073cf59ae0c169cbc58b6fdd518822ae89173a`, chain 10)
+- iUSDT (`0x874c01c2d1767efa01fa54b2ac16be96fad5a742`, chain 10)
+- iUST (`0x9be7b5b7e219461f164863dad045a35d1101aa64`, chain 43114)
+- iUST(Wormhole) (`0xb1f656b82507cd07dabd71f966294e2262b465ad`, chain 43114)
+- iWBTC (`0xcdb9b4db65c913ab000b40204248c8a53185d14d`, chain 10)
+- iWETH (`0x17533a1bde957979e3977ebbfbc31e6deeb25c7d`, chain 10)
+- LiquidityMining (`0x8cfbe29030260b8931ae499edf5ce3f3cb02226f`, chain 10)
+- LiquidityMiningProxy (`0x9c8264cb356377bb1d263f6e0ee03e977b3cadab`, chain 10)
+- MajorIRM (`0xf917832969f60c4019fee163d7fd7688eb677ee5`, chain 10)
+- MajorIRM (`0x7ef18d0a9c3fb1a716ff6c3ed0edf52a2427f716`, chain 43114)
+- Maximillion (`0x2ac63723a576f89b628d514ff671300801dc1702`, chain 10)
+- PriceOracleProxyUSD (`0x2424c30e589caea191c06f41d1f5b90348dbed7d`, chain 10)
+- PriceOracleProxyUSD (`0x0980f2f0d2af35ef2c4521b2342d59db575303f7`, chain 43114)
+- PriceOracleV1 (`0x61e38fa2a349b5d4ead78458afbcc1e4adeefab5`, chain 10)
+- PriceOracleV1 (`0xe7db46742c51a7bd64b8d83b8201239d759786be`, chain 43114)
+- StableIRM (`0x20a7f63125d24a7b7aaa1f214df452d8a1aca786`, chain 10)
+- StableIRM (`0x5dc3a30d8c5937f1529c3c93507c16d86a17072a`, chain 43114)
+- StableIRM2 (`0x3596b7e6b0c31d02b7cdd687d303a9c4dfc00b8c`, chain 10)
+- StakingRewardsFactory (`0x35f70ce60f049a8c21721c53a1dfccb5bf4a1ea8`, chain 10)
+- StakingRewardsHelper (`0x970d6b8c1479ec2bfe5a82dc69cafe4003099bc0`, chain 10)
 
 ## Contract Surface Quality
 
@@ -145,54 +145,54 @@ The pinned logic-topography run contains 48 contract row(s) across avalanche, av
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| CCollateralCapErc20Delegate | unknown | project_anchor | own_supporting | 0 | optimism | unit-387746 | `0x23be15...301bf7` | ⚠️ Unaudited |
-| CCollateralCapErc20Delegate | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387797 | `0xcdb9b4...85d14d` | ⚠️ Unaudited |
-| CompoundLens | unknown | project_anchor | own_supporting | 0 | optimism | unit-387759 | `0xc640a7...a8f78e` | ⚠️ Unaudited |
-| CompoundLens | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387789 | `0x5b4058...9e32a1` | ⚠️ Unaudited |
-| Comptroller / Unitroller | unknown | project_anchor | own_supporting | 0 | optimism | unit-387762 | `0xe0b57f...6715bf` | ⚠️ Unaudited |
-| Comptroller / Unitroller | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387787 | `0x2ee806...5cd7cc` | ⚠️ Unaudited |
-| Comptroller_Implementation | unknown | project_anchor | own_supporting | 0 | optimism | unit-387761 | `0xd0b628...731e5a` | ⚠️ Unaudited |
-| Comptroller_Implementation | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387786 | `0x294cb0...c88811` | ⚠️ Unaudited |
-| crDAI.E | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387781 | `0x085682...60e99b` | ⚠️ Unaudited |
-| CRenameDelegate | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387783 | `0x0a008c...1c83f0` | ⚠️ Unaudited |
-| crLINK.E | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387784 | `0x189317...90d4b1` | ⚠️ Unaudited |
-| crMIM | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387796 | `0xbf1430...587b29` | ⚠️ Unaudited |
-| crUSDC | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387802 | `0xec5aa1...f21cd7` | ⚠️ Unaudited |
-| crUSDC.E | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387799 | `0xe28965...05e832` | ⚠️ Unaudited |
-| crUSDT.E | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387798 | `0xceb1ce...f46fd3` | ⚠️ Unaudited |
-| crWAVAX | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387795 | `0xb3c68d...3edf56` | ⚠️ Unaudited |
-| crWBTC.E | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387793 | `0xb09b75...7661fc` | ⚠️ Unaudited |
-| crWETH.E | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387788 | `0x338eee...221f1d` | ⚠️ Unaudited |
-| CTokenAdmin | unknown | project_anchor | own_supporting | 0 | optimism | unit-387764 | `0xf7564e...66d2a8` | ⚠️ Unaudited |
-| CTokenAdmin | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387803 | `0xf976c9...bc5c8a` | ⚠️ Unaudited |
-| CWrappedNativeDelegate | unknown | project_anchor | own_supporting | 0 | optimism | unit-387758 | `0xc0e1a4...16fbbe` | ⚠️ Unaudited |
-| CWrappedNativeDelegate | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387780 | `0x049e04...750283` | ⚠️ Unaudited |
-| FlashloanLender | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387801 | `0xea4b8d...a75539` | ⚠️ Unaudited |
-| GovIRM | unknown | project_anchor | own_supporting | 0 | optimism | unit-387763 | `0xedaaba...0e8941` | ⚠️ Unaudited |
-| GovIRM | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387785 | `0x20d5d3...d6ad0a` | ⚠️ Unaudited |
-| iALPHA.E | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387779 | `0x02c913...404efb` | ⚠️ Unaudited |
-| iDAI | unknown | project_anchor | own_supporting | 0 | optimism | unit-387742 | `0x049e04...750283` | ⚠️ Unaudited |
-| iOP | unknown | project_anchor | own_supporting | 0 | optimism | unit-387751 | `0x4645e0...e1c412` | ⚠️ Unaudited |
-| iUSDC | unknown | project_anchor | own_supporting | 0 | optimism | unit-387744 | `0x1d073c...89173a` | ⚠️ Unaudited |
-| iUSDT | unknown | project_anchor | own_supporting | 0 | optimism | unit-387754 | `0x874c01...d5a742` | ⚠️ Unaudited |
-| iUST | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387792 | `0x9be7b5...01aa64` | ⚠️ Unaudited |
-| iUST(Wormhole) | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387794 | `0xb1f656...b465ad` | ⚠️ Unaudited |
-| iWBTC | unknown | project_anchor | own_supporting | 0 | optimism | unit-387760 | `0xcdb9b4...85d14d` | ⚠️ Unaudited |
-| iWETH | unknown | project_anchor | own_supporting | 0 | optimism | unit-387743 | `0x17533a...b25c7d` | ⚠️ Unaudited |
-| LiquidityMining | unknown | project_anchor | own_supporting | 0 | optimism | unit-387755 | `0x8cfbe2...02226f` | ⚠️ Unaudited |
-| LiquidityMiningProxy | unknown | project_anchor | own_supporting | 0 | optimism | unit-387757 | `0x9c8264...3cadab` | ⚠️ Unaudited |
-| MajorIRM | unknown | project_anchor | own_supporting | 0 | optimism | unit-387765 | `0xf91783...677ee5` | ⚠️ Unaudited |
-| MajorIRM | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387791 | `0x7ef18d...27f716` | ⚠️ Unaudited |
-| Maximillion | unknown | project_anchor | own_supporting | 0 | optimism | unit-387748 | `0x2ac637...dc1702` | ⚠️ Unaudited |
-| PriceOracleProxyUSD | unknown | project_anchor | own_supporting | 0 | optimism | unit-387747 | `0x2424c3...dbed7d` | ⚠️ Unaudited |
-| PriceOracleProxyUSD | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387782 | `0x0980f2...5303f7` | ⚠️ Unaudited |
-| PriceOracleV1 | unknown | project_anchor | own_supporting | 0 | optimism | unit-387752 | `0x61e38f...eefab5` | ⚠️ Unaudited |
-| PriceOracleV1 | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387800 | `0xe7db46...9786be` | ⚠️ Unaudited |
-| StableIRM | unknown | project_anchor | own_supporting | 0 | optimism | unit-387745 | `0x20a7f6...aca786` | ⚠️ Unaudited |
-| StableIRM | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387790 | `0x5dc3a3...17072a` | ⚠️ Unaudited |
-| StableIRM2 | unknown | project_anchor | own_supporting | 0 | optimism | unit-387749 | `0x3596b7...c00b8c` | ⚠️ Unaudited |
-| StakingRewardsFactory | unknown | project_anchor | own_supporting | 0 | optimism | unit-387750 | `0x35f70c...4a1ea8` | ⚠️ Unaudited |
-| StakingRewardsHelper | unknown | project_anchor | own_supporting | 0 | optimism | unit-387756 | `0x970d6b...099bc0` | ⚠️ Unaudited |
+| CCollateralCapErc20Delegate | unknown | project_anchor | own_supporting | 0 | optimism | unit-387746 | `0x23be15c4972279fe56dac4460be0b60cc8301bf7` | ⚠️ Unaudited |
+| CCollateralCapErc20Delegate | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387797 | `0xcdb9b4db65c913ab000b40204248c8a53185d14d` | ⚠️ Unaudited |
+| CompoundLens | unknown | project_anchor | own_supporting | 0 | optimism | unit-387759 | `0xc640a79205706062bf0277a466821a6130a8f78e` | ⚠️ Unaudited |
+| CompoundLens | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387789 | `0x5b4058a9000e86fe136ac896352c4dfd539e32a1` | ⚠️ Unaudited |
+| Comptroller / Unitroller | unknown | project_anchor | own_supporting | 0 | optimism | unit-387762 | `0xe0b57feed45e7d908f2d0dacd26f113cf26715bf` | ⚠️ Unaudited |
+| Comptroller / Unitroller | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387787 | `0x2ee80614ccbc5e28654324a66a396458fa5cd7cc` | ⚠️ Unaudited |
+| Comptroller_Implementation | unknown | project_anchor | own_supporting | 0 | optimism | unit-387761 | `0xd0b628cb062bcb34331482391c2110cd7a731e5a` | ⚠️ Unaudited |
+| Comptroller_Implementation | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387786 | `0x294cb010ef33f8e7b47b7e19fdb0a88d1dc88811` | ⚠️ Unaudited |
+| crDAI.E | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387781 | `0x085682716f61a72bf8c573fbaf88cca68c60e99b` | ⚠️ Unaudited |
+| CRenameDelegate | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387783 | `0x0a008ccae9a2e48852177a6b55bf0e6fa91c83f0` | ⚠️ Unaudited |
+| crLINK.E | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387784 | `0x18931772adb90e7f214b6cbc78ddd6e0f090d4b1` | ⚠️ Unaudited |
+| crMIM | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387796 | `0xbf1430d9ec170b7e97223c7f321782471c587b29` | ⚠️ Unaudited |
+| crUSDC | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387802 | `0xec5aa19566aa442c8c50f3c6734b6bb23ff21cd7` | ⚠️ Unaudited |
+| crUSDC.E | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387799 | `0xe28965073c49a02923882b8329d3e8c1d805e832` | ⚠️ Unaudited |
+| crUSDT.E | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387798 | `0xceb1ce674f38398432d20bc8f90345e91ef46fd3` | ⚠️ Unaudited |
+| crWAVAX | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387795 | `0xb3c68d69e95b095ab4b33b4cb67dbc0fbf3edf56` | ⚠️ Unaudited |
+| crWBTC.E | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387793 | `0xb09b75916c5f4097c8b5812e63e216fef97661fc` | ⚠️ Unaudited |
+| crWETH.E | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387788 | `0x338eee1f7b89ce6272f302bdc4b952c13b221f1d` | ⚠️ Unaudited |
+| CTokenAdmin | unknown | project_anchor | own_supporting | 0 | optimism | unit-387764 | `0xf7564e21a2439cca399779580db97e85a766d2a8` | ⚠️ Unaudited |
+| CTokenAdmin | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387803 | `0xf976c9bc0e16b250e0b1523cffaa9e4c07bc5c8a` | ⚠️ Unaudited |
+| CWrappedNativeDelegate | unknown | project_anchor | own_supporting | 0 | optimism | unit-387758 | `0xc0e1a46cfea33e598cf0102ef4e06421ed16fbbe` | ⚠️ Unaudited |
+| CWrappedNativeDelegate | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387780 | `0x049e04bee77cffb055f733a138a2f204d3750283` | ⚠️ Unaudited |
+| FlashloanLender | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387801 | `0xea4b8ddb3ae257224dfd8c6afc035204eea75539` | ⚠️ Unaudited |
+| GovIRM | unknown | project_anchor | own_supporting | 0 | optimism | unit-387763 | `0xedaaba6db46bb1a7967e7490a024f07abe0e8941` | ⚠️ Unaudited |
+| GovIRM | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387785 | `0x20d5d319c2964ecb52e1b006a4c059b7f6d6ad0a` | ⚠️ Unaudited |
+| iALPHA.E | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387779 | `0x02c9133627a14214879175a7a222d0a7f7404efb` | ⚠️ Unaudited |
+| iDAI | unknown | project_anchor | own_supporting | 0 | optimism | unit-387742 | `0x049e04bee77cffb055f733a138a2f204d3750283` | ⚠️ Unaudited |
+| iOP | unknown | project_anchor | own_supporting | 0 | optimism | unit-387751 | `0x4645e0952678e9566fb529d9313f5730e4e1c412` | ⚠️ Unaudited |
+| iUSDC | unknown | project_anchor | own_supporting | 0 | optimism | unit-387744 | `0x1d073cf59ae0c169cbc58b6fdd518822ae89173a` | ⚠️ Unaudited |
+| iUSDT | unknown | project_anchor | own_supporting | 0 | optimism | unit-387754 | `0x874c01c2d1767efa01fa54b2ac16be96fad5a742` | ⚠️ Unaudited |
+| iUST | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387792 | `0x9be7b5b7e219461f164863dad045a35d1101aa64` | ⚠️ Unaudited |
+| iUST(Wormhole) | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387794 | `0xb1f656b82507cd07dabd71f966294e2262b465ad` | ⚠️ Unaudited |
+| iWBTC | unknown | project_anchor | own_supporting | 0 | optimism | unit-387760 | `0xcdb9b4db65c913ab000b40204248c8a53185d14d` | ⚠️ Unaudited |
+| iWETH | unknown | project_anchor | own_supporting | 0 | optimism | unit-387743 | `0x17533a1bde957979e3977ebbfbc31e6deeb25c7d` | ⚠️ Unaudited |
+| LiquidityMining | unknown | project_anchor | own_supporting | 0 | optimism | unit-387755 | `0x8cfbe29030260b8931ae499edf5ce3f3cb02226f` | ⚠️ Unaudited |
+| LiquidityMiningProxy | unknown | project_anchor | own_supporting | 0 | optimism | unit-387757 | `0x9c8264cb356377bb1d263f6e0ee03e977b3cadab` | ⚠️ Unaudited |
+| MajorIRM | unknown | project_anchor | own_supporting | 0 | optimism | unit-387765 | `0xf917832969f60c4019fee163d7fd7688eb677ee5` | ⚠️ Unaudited |
+| MajorIRM | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387791 | `0x7ef18d0a9c3fb1a716ff6c3ed0edf52a2427f716` | ⚠️ Unaudited |
+| Maximillion | unknown | project_anchor | own_supporting | 0 | optimism | unit-387748 | `0x2ac63723a576f89b628d514ff671300801dc1702` | ⚠️ Unaudited |
+| PriceOracleProxyUSD | unknown | project_anchor | own_supporting | 0 | optimism | unit-387747 | `0x2424c30e589caea191c06f41d1f5b90348dbed7d` | ⚠️ Unaudited |
+| PriceOracleProxyUSD | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387782 | `0x0980f2f0d2af35ef2c4521b2342d59db575303f7` | ⚠️ Unaudited |
+| PriceOracleV1 | unknown | project_anchor | own_supporting | 0 | optimism | unit-387752 | `0x61e38fa2a349b5d4ead78458afbcc1e4adeefab5` | ⚠️ Unaudited |
+| PriceOracleV1 | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387800 | `0xe7db46742c51a7bd64b8d83b8201239d759786be` | ⚠️ Unaudited |
+| StableIRM | unknown | project_anchor | own_supporting | 0 | optimism | unit-387745 | `0x20a7f63125d24a7b7aaa1f214df452d8a1aca786` | ⚠️ Unaudited |
+| StableIRM | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387790 | `0x5dc3a30d8c5937f1529c3c93507c16d86a17072a` | ⚠️ Unaudited |
+| StableIRM2 | unknown | project_anchor | own_supporting | 0 | optimism | unit-387749 | `0x3596b7e6b0c31d02b7cdd687d303a9c4dfc00b8c` | ⚠️ Unaudited |
+| StakingRewardsFactory | unknown | project_anchor | own_supporting | 0 | optimism | unit-387750 | `0x35f70ce60f049a8c21721c53a1dfccb5bf4a1ea8` | ⚠️ Unaudited |
+| StakingRewardsHelper | unknown | project_anchor | own_supporting | 0 | optimism | unit-387756 | `0x970d6b8c1479ec2bfe5a82dc69cafe4003099bc0` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -212,21 +212,21 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | optimism | unit-387753 | `0x6e6eb8...989d22` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fantom | n/a | `0x00a35f...870dfb` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | unit-387766 | `0x654b9c...e8e97c` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | unit-387767 | `0x6a1302...dc26a3` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | unit-387768 | `0x6c395d...212053` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | unit-387769 | `0x7b3c6c...1ab21c` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | unit-387770 | `0x7d2657...3f8ea9` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | unit-387771 | `0x7ea717...75d381` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | unit-387772 | `0x965473...3ffe28` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | unit-387773 | `0x977507...31be67` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | unit-387774 | `0x98182b...d0eb7a` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | unit-387775 | `0x9b21eb...8cb971` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | unit-387776 | `0xaec7cf...f8cb30` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | unit-387777 | `0xd4409b...9b9ffa` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | unit-387778 | `0xe4e9f6...6fdc4b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | optimism | unit-387753 | `0x6e6eb84716c032f2fe9ef9bf1965cb0e76989d22` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fantom | n/a | `0x00a35fd824c717879bf370e70ac6868b95870dfb` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | unit-387766 | `0x654b9cb203b9a220ddc14f38b1bddf55c8e8e97c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | unit-387767 | `0x6a1302ed64ea19bdc0a08882ce8aca669ddc26a3` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | unit-387768 | `0x6c395dfdac7114df5a6db8f5628d5f9a8f212053` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | unit-387769 | `0x7b3c6c6fe3d8767049b514dc7f7c80d8721ab21c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | unit-387770 | `0x7d26577903f3986d3f3c554b2e229d36fa3f8ea9` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | unit-387771 | `0x7ea7174dd0cb4ab84f42177f01e9a8a79475d381` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | unit-387772 | `0x9654737a8e38f6460ef8b8c51682f5bb7d3ffe28` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | unit-387773 | `0x977507e3b4a63bce87a777e7602949480631be67` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | unit-387774 | `0x98182bf525a4252c436ac349a4b79c7e6cd0eb7a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | unit-387775 | `0x9b21eb2e30d8320c3c1b8d8465284d78e58cb971` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | unit-387776 | `0xaec7cf7f691e0d9e394668280a9a6d86e9f8cb30` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | unit-387777 | `0xd4409b8d17d5d49a7ed9ae734b0e8edba29b9ffa` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | unit-387778 | `0xe4e9f6cfe8ac8c75a3dbef809dbe4fc40e6fdc4b` | ❓ Unverified |
 
 ## Audit Inventory
 

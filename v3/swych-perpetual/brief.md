@@ -90,8 +90,8 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ERC1967Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | unit-171063 | `0x00e0a3...86b756` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | unit-171064 | `0x9334e3...ee52a3` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | unit-171063 | `0x00e0a3f755f88c7ac755949742bd0d1c0286b756` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | unit-171064 | `0x9334e37fad7c41cd6c9565bff3a97ce31cee52a3` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

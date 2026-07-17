@@ -60,16 +60,16 @@ The protocol comprises 2 functional families. Its contracts share 2 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| LikwidLendPosition | unknown | bsc | n/a | [`0xce91db...06618e`](./contracts/bsc-56/0xce91db5947228bba595c3cac49eb24053a06618e/) | ✅ Audited |
-| LikwidMarginPosition | unknown | bsc | n/a | [`0x6bec0c...d7abe8`](./contracts/bsc-56/0x6bec0c1dc4898484b7f094566ddf8bc82ed7abe8/) | ✅ Audited |
-| LikwidPairPosition | unknown | bsc | n/a | [`0xb397fe...e07bcd`](./contracts/bsc-56/0xb397fe16be79b082f17f1cd96e6489df19e07bcd/) | ✅ Audited |
-| LikwidVault | core_logic | bsc | n/a | [`0x065d44...30e4ba`](./contracts/bsc-56/0x065d449ec9d139740343990b7e1cf05fa830e4ba/) | ✅ Audited |
+| LikwidLendPosition | unknown | bsc | n/a | [`0xce91db5947228bba595c3cac49eb24053a06618e`](./contracts/bsc-56/0xce91db5947228bba595c3cac49eb24053a06618e/) | ✅ Audited |
+| LikwidMarginPosition | unknown | bsc | n/a | [`0x6bec0c1dc4898484b7f094566ddf8bc82ed7abe8`](./contracts/bsc-56/0x6bec0c1dc4898484b7f094566ddf8bc82ed7abe8/) | ✅ Audited |
+| LikwidPairPosition | unknown | bsc | n/a | [`0xb397fe16be79b082f17f1cd96e6489df19e07bcd`](./contracts/bsc-56/0xb397fe16be79b082f17f1cd96e6489df19e07bcd/) | ✅ Audited |
+| LikwidVault | core_logic | bsc | n/a | [`0x065d449ec9d139740343990b7e1cf05fa830e4ba`](./contracts/bsc-56/0x065d449ec9d139740343990b7e1cf05fa830e4ba/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| LikwidHelper | periphery | bsc | n/a | [`0x16a963...38d510`](./contracts/bsc-56/0x16a9633f8a777ca733073ea2526705cd8338d510/) | ⚠️ Unaudited |
+| LikwidHelper | periphery | bsc | n/a | [`0x16a9633f8a777ca733073ea2526705cd8338d510`](./contracts/bsc-56/0x16a9633f8a777ca733073ea2526705cd8338d510/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -102,7 +102,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x16a963...38d510`](./contracts/bsc-56/0x16a9633f8a777ca733073ea2526705cd8338d510/) | LikwidHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x16a9633f8a777ca733073ea2526705cd8338d510`](./contracts/bsc-56/0x16a9633f8a777ca733073ea2526705cd8338d510/) | LikwidHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -52,33 +52,33 @@ The pinned logic-topography run contains 5 contract row(s) across ethereum, goat
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x02f294...c360c4`, chain 2345)
-- UnnamedContract (`0x17e5da...64a31f`, chain 2345)
-- UnnamedContract (`0x3a45af...657157`, chain 2345)
-- UnnamedContract (`0x4daa75...d9dca4`, chain 2345)
-- UnnamedContract (`0x5f0d03...93b88f`, chain 2345)
-- UnnamedContract (`0x941508...5a94c3`, chain 2345)
-- UnnamedContract (`0x9a5f06...77c785`, chain 2345)
-- UnnamedContract (`0xa30279...126f34`, chain 2345)
-- UnnamedContract (`0xb2d167...4264c8`, chain 2345)
-- UnnamedContract (`0xd78ff6...8c73b1`, chain 2345)
-- UnnamedContract (`0xe4cbfd...f3567e`, chain 2345)
-- UnnamedContract (`0xe5474a...b47287`, chain 2345)
-- UnnamedContract (`0xed4dcc...9e1cf2`, chain 2345)
-- EACAggregatorProxy (`0xd4a5bb...fdfa6d`, chain 1088)
-- MerkleDistributorFactory (`0xb2d167...4264c8`, chain 1088)
-- ProxyAdmin (`0x479603...9e218d`, chain 1088)
-- TransparentUpgradeableProxy (`0x014e82...321f5d`, chain 1)
-- TransparentUpgradeableProxy (`0x0cf6ab...80e139`, chain 1088)
-- TransparentUpgradeableProxy (`0x13e029...1beb94`, chain 1088)
-- TransparentUpgradeableProxy (`0x22fc5a...ce4455`, chain 1088)
-- TransparentUpgradeableProxy (`0x2583a2...b4821d`, chain 1088)
-- TransparentUpgradeableProxy (`0x357f55...25e849`, chain 1088)
-- TransparentUpgradeableProxy (`0x4d32c8...0c26bf`, chain 1088)
-- TransparentUpgradeableProxy (`0x500d5e...84d3d6`, chain 1088)
-- TransparentUpgradeableProxy (`0x70f619...7e72b9`, chain 1088)
-- TransparentUpgradeableProxy (`0x96c4a4...19ad8e`, chain 1088)
-- UpgradeableBeacon (`0x2350ea...709913`, chain 1088)
+- UnnamedContract (`0x02f294cc9ceb2c80fba3fd779e17fe191cc360c4`, chain 2345)
+- UnnamedContract (`0x17e5da1affacdc2eb228a74ad574f59cc064a31f`, chain 2345)
+- UnnamedContract (`0x3a45af4c00f47a62ed2e60fa21f3186e31657157`, chain 2345)
+- UnnamedContract (`0x4daa7575c42a338694e29717a3f622cb85d9dca4`, chain 2345)
+- UnnamedContract (`0x5f0d03e20bb2973fdbfe271c84603de48d93b88f`, chain 2345)
+- UnnamedContract (`0x941508f0b823f1bc40a9beefce5e544e525a94c3`, chain 2345)
+- UnnamedContract (`0x9a5f06cf2e8ecce58bb239689978ee2f2977c785`, chain 2345)
+- UnnamedContract (`0xa3027972e2bf168d3df12a1533f073b330126f34`, chain 2345)
+- UnnamedContract (`0xb2d167eb1fff17ebd727b0a21e7f5f50424264c8`, chain 2345)
+- UnnamedContract (`0xd78ff6690384cc609e1fee15fd7bf3a8cf8c73b1`, chain 2345)
+- UnnamedContract (`0xe4cbfda9f6038194b150dbf857f7a8afb2f3567e`, chain 2345)
+- UnnamedContract (`0xe5474aee9ff3221c4621a151b0f090f208b47287`, chain 2345)
+- UnnamedContract (`0xed4dccc6889bb99e6c13821b324b531ad89e1cf2`, chain 2345)
+- EACAggregatorProxy (`0xd4a5bb03b5d66d9bf81507379302ac2c2dfdfa6d`, chain 1088)
+- MerkleDistributorFactory (`0xb2d167eb1fff17ebd727b0a21e7f5f50424264c8`, chain 1088)
+- ProxyAdmin (`0x479603de0a8b6d2f4d4eaa1058eea0d7ac9e218d`, chain 1088)
+- TransparentUpgradeableProxy (`0x014e8248d3b681d4ed703de60885052ff4321f5d`, chain 1)
+- TransparentUpgradeableProxy (`0x0cf6ab3c169b0169e35ad58d350cbacdaf80e139`, chain 1088)
+- TransparentUpgradeableProxy (`0x13e029b6631c0540126c2cdf1675316c971beb94`, chain 1088)
+- TransparentUpgradeableProxy (`0x22fc5a29bd3d6cce19a06f844019fd506fce4455`, chain 1088)
+- TransparentUpgradeableProxy (`0x2583a2538272f31e9a15dd12a432b8c96ab4821d`, chain 1088)
+- TransparentUpgradeableProxy (`0x357f55b46821a6c6e476cc32ebb2674cd125e849`, chain 1088)
+- TransparentUpgradeableProxy (`0x4d32c8ff2facc771ec7efc70d6a8468bc30c26bf`, chain 1088)
+- TransparentUpgradeableProxy (`0x500d5e0d9d7337963ed6449e81cb52928184d3d6`, chain 1088)
+- TransparentUpgradeableProxy (`0x70f61901658aafb7ae57da0c30695ce4417e72b9`, chain 1088)
+- TransparentUpgradeableProxy (`0x96c4a48abdf781e9c931cfa92ec0167ba219ad8e`, chain 1088)
+- UpgradeableBeacon (`0x2350ea954113b1a1eebaaccc47f3a4985f709913`, chain 1088)
 
 ## Contract Surface Quality
 
@@ -122,40 +122,40 @@ The pinned logic-topography run contains 5 contract row(s) across ethereum, goat
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| MerkleDistributorFactory | unknown | project_anchor | own_supporting | 0 | metis | unit-379733 | `0xb2d167...4264c8` | ✅ Audited |
+| MerkleDistributorFactory | unknown | project_anchor | own_supporting | 0 | metis | unit-379733 | `0xb2d167eb1fff17ebd727b0a21e7f5f50424264c8` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (28)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AccessControlledOffchainAggregator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x06f582...94b5ed` | ⚠️ Unaudited |
-| AMTConfig | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x646279...f1e6e3` | ⚠️ Unaudited |
-| AMTDepositPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x507fdb...466ced` | ⚠️ Unaudited |
-| AMTRewardPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xad2995...53421c` | ⚠️ Unaudited |
-| AMTWithdrawalManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x06c499...f663ce` | ⚠️ Unaudited |
-| ArtMetis | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x920873...56a3b8` | ⚠️ Unaudited |
-| ConfirmedTransactionModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xed2b73...417839` | ⚠️ Unaudited |
-| EACAggregatorProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x01da51...805bce` | ⚠️ Unaudited |
-| EACAggregatorProxy | unknown | project_anchor | own_supporting | 0 | metis | unit-379734 | `0xd4a5bb...fdfa6d` | ⚠️ Unaudited |
-| Flags | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x42b087...46b04a` | ⚠️ Unaudited |
-| LinkToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x79892e...7ec046` | ⚠️ Unaudited |
-| MerkleDistributorV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x741620...c4fecc` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | project_anchor | own_supporting | 0 | metis | unit-379723 | `0x479603...9e218d` | ⚠️ Unaudited |
-| SequencerNodeManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xbb1f6c...0f8569` | ⚠️ Unaudited |
-| SimpleWriteAccessController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x345a89...845404` | ⚠️ Unaudited |
-| TimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x135c4d...ee9a16` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-379752 | `0x014e82...321f5d` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 0 | metis | unit-379715 | `0x0cf6ab...80e139` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 0 | metis | unit-379716 | `0x13e029...1beb94` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 0 | metis | unit-379718 | `0x22fc5a...ce4455` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 0 | metis | unit-379720 | `0x2583a2...b4821d` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 0 | metis | unit-379721 | `0x357f55...25e849` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 0 | metis | unit-379724 | `0x4d32c8...0c26bf` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 0 | metis | unit-379726 | `0x500d5e...84d3d6` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 0 | metis | unit-379728 | `0x70f619...7e72b9` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 0 | metis | unit-379730 | `0x96c4a4...19ad8e` | ⚠️ Unaudited |
-| UpgradeableBeacon | unknown | project_anchor | own_supporting | 0 | metis | unit-379719 | `0x2350ea...709913` | ⚠️ Unaudited |
-| Vester | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x1679fe...46723b` | ⚠️ Unaudited |
+| AccessControlledOffchainAggregator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x06f58206aed15bdfc10e93082fbb399e4c94b5ed` | ⚠️ Unaudited |
+| AMTConfig | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x64627901dadb46ed7f275fd4fc87d086cff1e6e3` | ⚠️ Unaudited |
+| AMTDepositPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x507fdbebdb11c71e7c7565177d0942a6fd466ced` | ⚠️ Unaudited |
+| AMTRewardPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xad29951cda3dcd0e570e65a6ee34aa455c53421c` | ⚠️ Unaudited |
+| AMTWithdrawalManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x06c49988c2111d01a745deeccc757e6f6df663ce` | ⚠️ Unaudited |
+| ArtMetis | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x920873e5b302a619c54c908adfb77a1c4256a3b8` | ⚠️ Unaudited |
+| ConfirmedTransactionModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xed2b73c77887ad41001a6367d11e7ddea2417839` | ⚠️ Unaudited |
+| EACAggregatorProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x01da515c46209ffca4c96625fe8a1b278c805bce` | ⚠️ Unaudited |
+| EACAggregatorProxy | unknown | project_anchor | own_supporting | 0 | metis | unit-379734 | `0xd4a5bb03b5d66d9bf81507379302ac2c2dfdfa6d` | ⚠️ Unaudited |
+| Flags | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x42b087a1f07faf3067c460182c9ebe2fb346b04a` | ⚠️ Unaudited |
+| LinkToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x79892e8a3aea66c8f6893fa49ec6208ef07ec046` | ⚠️ Unaudited |
+| MerkleDistributorV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x741620136cf08a782c1df1fc9e3caa760cc4fecc` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | project_anchor | own_supporting | 0 | metis | unit-379723 | `0x479603de0a8b6d2f4d4eaa1058eea0d7ac9e218d` | ⚠️ Unaudited |
+| SequencerNodeManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xbb1f6cff4d92073a7890b80c1245606c520f8569` | ⚠️ Unaudited |
+| SimpleWriteAccessController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x345a8935ed569ba5e7abf447f3b64be8b9845404` | ⚠️ Unaudited |
+| TimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x135c4de9238352681efc42575eafe47d50ee9a16` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-379752 | `0x014e8248d3b681d4ed703de60885052ff4321f5d` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 0 | metis | unit-379715 | `0x0cf6ab3c169b0169e35ad58d350cbacdaf80e139` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 0 | metis | unit-379716 | `0x13e029b6631c0540126c2cdf1675316c971beb94` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 0 | metis | unit-379718 | `0x22fc5a29bd3d6cce19a06f844019fd506fce4455` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 0 | metis | unit-379720 | `0x2583a2538272f31e9a15dd12a432b8c96ab4821d` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 0 | metis | unit-379721 | `0x357f55b46821a6c6e476cc32ebb2674cd125e849` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 0 | metis | unit-379724 | `0x4d32c8ff2facc771ec7efc70d6a8468bc30c26bf` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 0 | metis | unit-379726 | `0x500d5e0d9d7337963ed6449e81cb52928184d3d6` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 0 | metis | unit-379728 | `0x70f61901658aafb7ae57da0c30695ce4417e72b9` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 0 | metis | unit-379730 | `0x96c4a48abdf781e9c931cfa92ec0167ba219ad8e` | ⚠️ Unaudited |
+| UpgradeableBeacon | unknown | project_anchor | own_supporting | 0 | metis | unit-379719 | `0x2350ea954113b1a1eebaaccc47f3a4985f709913` | ⚠️ Unaudited |
+| Vester | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x1679fe95b11959c694af8627e5360267e146723b` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -175,19 +175,19 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | goat | unit-379739 | `0x02f294...c360c4` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | goat | unit-379740 | `0x17e5da...64a31f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | goat | unit-379741 | `0x3a45af...657157` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | goat | unit-379742 | `0x4daa75...d9dca4` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | goat | unit-379743 | `0x5f0d03...93b88f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | goat | unit-379744 | `0x941508...5a94c3` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | goat | unit-379745 | `0x9a5f06...77c785` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | goat | unit-379746 | `0xa30279...126f34` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | goat | unit-379747 | `0xb2d167...4264c8` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | goat | unit-379748 | `0xd78ff6...8c73b1` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | goat | unit-379749 | `0xe4cbfd...f3567e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | goat | unit-379750 | `0xe5474a...b47287` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | goat | unit-379751 | `0xed4dcc...9e1cf2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | goat | unit-379739 | `0x02f294cc9ceb2c80fba3fd779e17fe191cc360c4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | goat | unit-379740 | `0x17e5da1affacdc2eb228a74ad574f59cc064a31f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | goat | unit-379741 | `0x3a45af4c00f47a62ed2e60fa21f3186e31657157` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | goat | unit-379742 | `0x4daa7575c42a338694e29717a3f622cb85d9dca4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | goat | unit-379743 | `0x5f0d03e20bb2973fdbfe271c84603de48d93b88f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | goat | unit-379744 | `0x941508f0b823f1bc40a9beefce5e544e525a94c3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | goat | unit-379745 | `0x9a5f06cf2e8ecce58bb239689978ee2f2977c785` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | goat | unit-379746 | `0xa3027972e2bf168d3df12a1533f073b330126f34` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | goat | unit-379747 | `0xb2d167eb1fff17ebd727b0a21e7f5f50424264c8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | goat | unit-379748 | `0xd78ff6690384cc609e1fee15fd7bf3a8cf8c73b1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | goat | unit-379749 | `0xe4cbfda9f6038194b150dbf857f7a8afb2f3567e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | goat | unit-379750 | `0xe5474aee9ff3221c4621a151b0f090f208b47287` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | goat | unit-379751 | `0xed4dccc6889bb99e6c13821b324b531ad89e1cf2` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -226,7 +226,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Artemis_GOAT_Audit_Report_by_WatchPug.pdf | DepositPool | unmatched — not counted | — | mentioned in findings and scope | no |
 | Artemis_GOAT_Audit_Report_by_WatchPug.pdf | RewardPool | unmatched — not counted | — | mentioned in findings | no |
 | Artemis_GOAT_Audit_Report_by_WatchPug.pdf | WithdrawalManager | unmatched — not counted | — | mentioned in findings | no |
-| Artemis_GOAT_Audit_Report_by_WatchPug.pdf | SequencerPoolManager | own contract | MerkleDistributorFactory (selected) `0xb2d167...4264c8` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Artemis_GOAT_Audit_Report_by_WatchPug.pdf | SequencerPoolManager | own contract | MerkleDistributorFactory (selected) `0xb2d167eb1fff17ebd727b0a21e7f5f50424264c8` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Artemis_GOAT_Audit_Report_by_WatchPug.pdf | TransferHelper | unmatched — not counted | — | mentioned in WP-H2 | no |
 | Artemis_GOAT_Audit_Report_by_WatchPug.pdf | ISequencerPool | unmatched — not counted | — | mentioned in WP-C1 | no |
 | Artemis_GOAT_Audit_Report_by_WatchPug.pdf | IERC20MintBurn | unmatched — not counted | — | mentioned in WP-C1 | no |
@@ -237,7 +237,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Artemis___Migrate_Locking_Audit_Report_by_WatchPug.pdf | LockingDelegator | unmatched — not counted | — | mentioned in findings as contract | no |
 | Artemis___Migrate_Locking_Audit_Report_by_WatchPug.pdf | Locking | unmatched — not counted | — | mentioned in findings as contract | no |
 | Artemis___Migrate_Locking_Audit_Report_by_WatchPug.pdf | IncentivePool | unmatched — not counted | — | mentioned in findings as contract | no |
-| Artemis___Migrate_Locking_Audit_Report_by_WatchPug.pdf | SequencerPoolManager | own contract | MerkleDistributorFactory (selected) `0xb2d167...4264c8` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Artemis___Migrate_Locking_Audit_Report_by_WatchPug.pdf | SequencerPoolManager | own contract | MerkleDistributorFactory (selected) `0xb2d167eb1fff17ebd727b0a21e7f5f50424264c8` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 
 ## Coverage Gaps
 

@@ -61,10 +61,10 @@ The protocol comprises 4 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| EthVaultImpl | unknown | ethereum | n/a | [`0x1bf68a...cb489a`](./contracts/ethereum-1/0x1bf68a9d1eaee7826b3593c20a0ca93293cb489a/) | ⚠️ Unaudited |
-| EthVaultImpl | core_logic | ethereum | n/a | [`0x4f16a2...9ff81e`](./contracts/ethereum-1/0x4f16a20450d36bfb3e3926df357f1405d79ff81e/) | ⚠️ Unaudited |
-| ORCToken | token | ethereum | n/a | [`0x662b67...ef2f51`](./contracts/ethereum-1/0x662b67d00a13faf93254714dd601f5ed49ef2f51/) | ⚠️ Unaudited |
-| Vault | core_logic | bsc | n/a | [`0x89c527...beb780`](./contracts/bsc-56/0x89c527764f03bcb7dc469707b23b79c1d7beb780/) | ⚠️ Unaudited |
+| EthVaultImpl | unknown | ethereum | n/a | [`0x1bf68a9d1eaee7826b3593c20a0ca93293cb489a`](./contracts/ethereum-1/0x1bf68a9d1eaee7826b3593c20a0ca93293cb489a/) | ⚠️ Unaudited |
+| EthVaultImpl | core_logic | ethereum | n/a | [`0x4f16a20450d36bfb3e3926df357f1405d79ff81e`](./contracts/ethereum-1/0x4f16a20450d36bfb3e3926df357f1405d79ff81e/) | ⚠️ Unaudited |
+| ORCToken | token | ethereum | n/a | [`0x662b67d00a13faf93254714dd601f5ed49ef2f51`](./contracts/ethereum-1/0x662b67d00a13faf93254714dd601f5ed49ef2f51/) | ⚠️ Unaudited |
+| Vault | core_logic | bsc | n/a | [`0x89c527764f03bcb7dc469707b23b79c1d7beb780`](./contracts/bsc-56/0x89c527764f03bcb7dc469707b23b79c1d7beb780/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -84,21 +84,21 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x0207ec...cab30b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x093333...25d0cf` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x123d6d...0f79d8` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x2127ed...24b79f` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x4ff16c...95fbe8` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x54ad07...34a4d4` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x6c943d...0463c6` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x7f1014...d8a1f4` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xd23c23...8721b0` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xd8c163...9b8ac4` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xff3eb6...a912a7` | ❓ Unverified |
-| UnnamedContract | unknown | heco | n/a | 2 deployments: heco `0x38c92a...4d279f`; klaytn `0x9abc3f...3f648d` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x6aeec0...dbaee8` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x98d729...a708b1` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x9fad26...c4ee25` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x0207ec378b0403f023b2b029c4b3940eb2cab30b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x0933333c22406a9ac9b0ed5577ae0e4dfe25d0cf` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x123d6df4d756b6a4af07f35535887fbb0d0f79d8` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x2127ed36df1b446866bab65dd84a589e2b24b79f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4ff16c8ee6f5fed268cf764689451bf67795fbe8` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x54ad072acb9d0139a73612f9b2d8ecf0b434a4d4` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x6c943dc29e22be4ed8c1461e5eea3f344d0463c6` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x7f1014c42c8946e8f881482af7ef938e1ad8a1f4` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd23c2361d2296444f3f5a93005b146624c8721b0` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd8c163ec3fd1610a81b86c914fbc25ec259b8ac4` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xff3eb6a703773e73100397a692b8013427a912a7` | ❓ Unverified |
+| UnnamedContract | unknown | heco | n/a | 2 deployments: heco `0x38c92a7c2b358e2f2b91723e5c4fc7aa8b4d279f`; klaytn `0x9abc3f6c11dbd83234d6e6b2c373dfc1893f648d` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x6aeec0e4ecc86013fc3a4ae3552bc189f2dbaee8` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x98d729f9bd84aac94639700e71b7916018a708b1` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x9fad2646562cbadd9a06424c161b1f9045c4ee25` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -112,10 +112,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x1bf68a...cb489a`](./contracts/ethereum-1/0x1bf68a9d1eaee7826b3593c20a0ca93293cb489a/) | EthVaultImpl | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x4f16a2...9ff81e`](./contracts/ethereum-1/0x4f16a20450d36bfb3e3926df357f1405d79ff81e/) | EthVaultImpl | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x662b67...ef2f51`](./contracts/ethereum-1/0x662b67d00a13faf93254714dd601f5ed49ef2f51/) | ORCToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x89c527...beb780`](./contracts/bsc-56/0x89c527764f03bcb7dc469707b23b79c1d7beb780/) | Vault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1bf68a9d1eaee7826b3593c20a0ca93293cb489a`](./contracts/ethereum-1/0x1bf68a9d1eaee7826b3593c20a0ca93293cb489a/) | EthVaultImpl | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4f16a20450d36bfb3e3926df357f1405d79ff81e`](./contracts/ethereum-1/0x4f16a20450d36bfb3e3926df357f1405d79ff81e/) | EthVaultImpl | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x662b67d00a13faf93254714dd601f5ed49ef2f51`](./contracts/ethereum-1/0x662b67d00a13faf93254714dd601f5ed49ef2f51/) | ORCToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x89c527764f03bcb7dc469707b23b79c1d7beb780`](./contracts/bsc-56/0x89c527764f03bcb7dc469707b23b79c1d7beb780/) | Vault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

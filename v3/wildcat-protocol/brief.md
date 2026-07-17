@@ -52,25 +52,25 @@ The pinned logic-topography run contains 7 contract row(s) across ethereum, plas
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x437e05...08cd1a`, chain 1)
-- UnnamedContract (`0x4c62b4...cecec7`, chain 1)
-- UnnamedContract (`0x7e49ca...6dfc36`, chain 1)
-- UnnamedContract (`0xdd7dd3...6207be`, chain 1)
-- UnnamedContract (`0xfda5c5...e5afe7`, chain 1)
-- UnnamedContract (`0xfeb516...945ee4`, chain 1)
-- UnnamedContract (`0x40217f...a0c798`, chain 9745)
-- UnnamedContract (`0x437e05...08cd1a`, chain 9745)
-- UnnamedContract (`0x59010b...a73018`, chain 9745)
-- UnnamedContract (`0x792f13...2629b4`, chain 9745)
-- UnnamedContract (`0x7e5d6d...7c81c5`, chain 9745)
-- UnnamedContract (`0x931fe4...3f1061`, chain 9745)
-- ChainalysisProxy (`0x38056f...5f3f46`, chain 9745)
-- HooksFactory (`0xb46bae...42e517`, chain 9745)
-- Wildcat4626WrapperFactory (`0xea6de1...bb148a`, chain 1)
-- WildcatArchController (`0xdb2e0d...f348ae`, chain 9745)
-- WildcatCopyOfChainalysisList (`0xfeb516...945ee4`, chain 9745)
-- WildcatFeeRecipient (`0x35a5d1...708554`, chain 1)
-- WildcatSanctionsSentinel (`0x370648...903f5b`, chain 9745)
+- UnnamedContract (`0x437e0551892c2c9b06d3ffd248fe60572e08cd1a`, chain 1)
+- UnnamedContract (`0x4c62b4844c8371f321541e8d564a4b3896cecec7`, chain 1)
+- UnnamedContract (`0x7e49caba6fb53cdc70cd98829731a2b8d76dfc36`, chain 1)
+- UnnamedContract (`0xdd7dd3b5076cf89440d05585ff56d246386207be`, chain 1)
+- UnnamedContract (`0xfda5c5b96bb198d2fca1a01d759620b64ae5afe7`, chain 1)
+- UnnamedContract (`0xfeb516d9d946dd487a9346f6fee11f40c6945ee4`, chain 1)
+- UnnamedContract (`0x40217f6e5891c8f1524744c0747e07d316a0c798`, chain 9745)
+- UnnamedContract (`0x437e0551892c2c9b06d3ffd248fe60572e08cd1a`, chain 9745)
+- UnnamedContract (`0x59010b706959c15977304c2553f3f4c697a73018`, chain 9745)
+- UnnamedContract (`0x792f1368f8b8f450c14875eb6ff0028dfc2629b4`, chain 9745)
+- UnnamedContract (`0x7e5d6d9f9a2091dd781118514f5397a8107c81c5`, chain 9745)
+- UnnamedContract (`0x931fe4a88e1c1f1a7402df6a40988f38503f1061`, chain 9745)
+- ChainalysisProxy (`0x38056f7fe6396417b191bf7dc6a3aa04235f3f46`, chain 9745)
+- HooksFactory (`0xb46bae25ac6d23148531ed1853a8881fd842e517`, chain 9745)
+- Wildcat4626WrapperFactory (`0xea6de11f8f3f83c79bd9d8db5517fcfdf2bb148a`, chain 1)
+- WildcatArchController (`0xdb2e0de97d6d96aa56754635704a4273e0f348ae`, chain 9745)
+- WildcatCopyOfChainalysisList (`0xfeb516d9d946dd487a9346f6fee11f40c6945ee4`, chain 9745)
+- WildcatFeeRecipient (`0x35a5d1bd68f3139971027b92c1ee9384a0708554`, chain 1)
+- WildcatSanctionsSentinel (`0x37064895ba2c1e269eaf7ff32564818d08903f5b`, chain 9745)
 
 ## Contract Surface Quality
 
@@ -115,23 +115,23 @@ The pinned logic-topography run contains 7 contract row(s) across ethereum, plas
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| HooksFactory | unknown | project_anchor | own_supporting | 0 | plasma | unit-396674 | `0xb46bae...42e517` | ✅ Audited |
-| WildcatArchController | unknown | project_anchor | own_supporting | 0 | plasma | unit-396675 | `0xdb2e0d...f348ae` | ✅ Audited |
-| WildcatSanctionsSentinel | unknown | project_anchor | own_supporting | 0 | plasma | unit-396666 | `0x370648...903f5b` | ✅ Audited |
+| HooksFactory | unknown | project_anchor | own_supporting | 0 | plasma | unit-396674 | `0xb46bae25ac6d23148531ed1853a8881fd842e517` | ✅ Audited |
+| WildcatArchController | unknown | project_anchor | own_supporting | 0 | plasma | unit-396675 | `0xdb2e0de97d6d96aa56754635704a4273e0f348ae` | ✅ Audited |
+| WildcatSanctionsSentinel | unknown | project_anchor | own_supporting | 0 | plasma | unit-396666 | `0x37064895ba2c1e269eaf7ff32564818d08903f5b` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (9)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ChainalysisProxy | unknown | project_anchor | own_supporting | 0 | plasma | unit-396667 | `0x38056f...5f3f46` | ⚠️ Unaudited |
-| MarketLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3556d0...586862` | ⚠️ Unaudited |
-| OpenAccessRoleProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x562055...373101` | ⚠️ Unaudited |
-| SphereXEngine | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4f90c0...a1766a` | ⚠️ Unaudited |
-| Wildcat4626WrapperFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396648 | `0xea6de1...bb148a` | ⚠️ Unaudited |
-| WildcatCopyOfChainalysisList | unknown | project_anchor | own_supporting | 0 | plasma | unit-396676 | `0xfeb516...945ee4` | ⚠️ Unaudited |
-| WildcatFeeRecipient | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396623 | `0x35a5d1...708554` | ⚠️ Unaudited |
-| WildcatMarketCollateralFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbbf84a...403e7c` | ⚠️ Unaudited |
-| WildcatMarketControllerFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa1a18e...d6aa4f` | ⚠️ Unaudited |
+| ChainalysisProxy | unknown | project_anchor | own_supporting | 0 | plasma | unit-396667 | `0x38056f7fe6396417b191bf7dc6a3aa04235f3f46` | ⚠️ Unaudited |
+| MarketLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3556d0497180afb37e6eaebd5d17309159586862` | ⚠️ Unaudited |
+| OpenAccessRoleProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5620553d8881335f74ad19259daacd1d9b373101` | ⚠️ Unaudited |
+| SphereXEngine | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4f90c0a26cc2ad22ee98398dcc02bbe314a1766a` | ⚠️ Unaudited |
+| Wildcat4626WrapperFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396648 | `0xea6de11f8f3f83c79bd9d8db5517fcfdf2bb148a` | ⚠️ Unaudited |
+| WildcatCopyOfChainalysisList | unknown | project_anchor | own_supporting | 0 | plasma | unit-396676 | `0xfeb516d9d946dd487a9346f6fee11f40c6945ee4` | ⚠️ Unaudited |
+| WildcatFeeRecipient | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396623 | `0x35a5d1bd68f3139971027b92c1ee9384a0708554` | ⚠️ Unaudited |
+| WildcatMarketCollateralFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbbf84ab8b232a467511772af4ab8a4190f403e7c` | ⚠️ Unaudited |
+| WildcatMarketControllerFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa1a18eea2a9e81bf84c131282a4b99867dd6aa4f` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -151,32 +151,32 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396630 | `0x437e05...08cd1a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396631 | `0x4c62b4...cecec7` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396637 | `0x7e49ca...6dfc36` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396647 | `0xdd7dd3...6207be` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-396650 | `0xf1d516...237847` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-396652 | `0xfd3100...6bfd13` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396653 | `0xfda5c5...e5afe7` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396654 | `0xfeb516...945ee4` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-396668 | `0x40217f...a0c798` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-396669 | `0x437e05...08cd1a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-396670 | `0x59010b...a73018` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0x74b253...b57261` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-396671 | `0x792f13...2629b4` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-396672 | `0x7e5d6d...7c81c5` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-396673 | `0x931fe4...3f1061` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-396655 | `0x0566fe...3bf843` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-396656 | `0x428939...dfe751` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-396657 | `0x54a310...90c96e` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-396658 | `0x6cb351...8bd600` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-396659 | `0x9d1060...c7f8d9` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-396660 | `0xa47692...e2ea78` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-396661 | `0xb3925b...ea8a72` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-396662 | `0xb666c1...e30dd1` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-396663 | `0xc003f2...26408f` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-396664 | `0xeb97c8...99b864` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-396665 | `0xfbce26...53316b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396630 | `0x437e0551892c2c9b06d3ffd248fe60572e08cd1a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396631 | `0x4c62b4844c8371f321541e8d564a4b3896cecec7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396637 | `0x7e49caba6fb53cdc70cd98829731a2b8d76dfc36` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396647 | `0xdd7dd3b5076cf89440d05585ff56d246386207be` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-396650 | `0xf1d516954f96c1363f8b0ae48d79c8dde6237847` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-396652 | `0xfd31007613c9f671df6a8d4234901324986bfd13` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396653 | `0xfda5c5b96bb198d2fca1a01d759620b64ae5afe7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396654 | `0xfeb516d9d946dd487a9346f6fee11f40c6945ee4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-396668 | `0x40217f6e5891c8f1524744c0747e07d316a0c798` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-396669 | `0x437e0551892c2c9b06d3ffd248fe60572e08cd1a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-396670 | `0x59010b706959c15977304c2553f3f4c697a73018` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0x74b253041be30b7698b5f69239c271ea8db57261` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-396671 | `0x792f1368f8b8f450c14875eb6ff0028dfc2629b4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-396672 | `0x7e5d6d9f9a2091dd781118514f5397a8107c81c5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-396673 | `0x931fe4a88e1c1f1a7402df6a40988f38503f1061` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-396655 | `0x0566fe57682164af689f1440cb3bceedee3bf843` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-396656 | `0x42893972c752e731c3457d0d541a2bc6fadfe751` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-396657 | `0x54a3103904977dcb3c2fb782059f5431db90c96e` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-396658 | `0x6cb3512b541733d340aa520b63105586588bd600` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-396659 | `0x9d1060f8dee8cbcf5ec772c51ec671f70cc7f8d9` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-396660 | `0xa476920af80b587f696734430227869795e2ea78` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-396661 | `0xb3925b31a8aedce8cfc885e0d5daa057a1ea8a72` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-396662 | `0xb666c1c67a20814e3eee15a06780e0821ae30dd1` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-396663 | `0xc003f20f2642c76b81e5e1620c6d8cdee826408f` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-396664 | `0xeb97c8e52d7fdf978a64a538f28271fd8499b864` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-396665 | `0xfbce262ec835be5e6a458ce1722eece0e453316b` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -200,10 +200,10 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| 4naly3er-report.md | HooksFactory | own contract | HooksFactory (selected) `0xb46bae...42e517` — deployed 2025-09-26 23:33:39+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 4naly3er-report.md | WildcatArchController | own contract | WildcatArchController (selected) `0xdb2e0d...f348ae` — deployed 2025-09-26 23:33:18+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 4naly3er-report.md | HooksFactory | own contract | HooksFactory (selected) `0xb46bae25ac6d23148531ed1853a8881fd842e517` — deployed 2025-09-26 23:33:39+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 4naly3er-report.md | WildcatArchController | own contract | WildcatArchController (selected) `0xdb2e0de97d6d96aa56754635704a4273e0f348ae` — deployed 2025-09-26 23:33:18+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 4naly3er-report.md | WildcatSanctionsEscrow | unmatched — not counted | — | listed in scope | no |
-| 4naly3er-report.md | WildcatSanctionsSentinel | own contract | WildcatSanctionsSentinel (selected) `0x370648...903f5b` — deployed 2025-09-26 23:33:22+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 4naly3er-report.md | WildcatSanctionsSentinel | own contract | WildcatSanctionsSentinel (selected) `0x37064895ba2c1e269eaf7ff32564818d08903f5b` — deployed 2025-09-26 23:33:22+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 4naly3er-report.md | AccessControlHooks | unmatched — not counted | — | listed in scope | no |
 | 4naly3er-report.md | FixedTermLoanHooks | unmatched — not counted | — | listed in scope | no |
 | 4naly3er-report.md | MarketConstraintHooks | unmatched — not counted | — | listed in scope | no |
@@ -226,9 +226,9 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | code4rena.com/reports/2024-08-wildcat | WildcatMarketToken | unmatched — not counted | — | mentioned in findings | no |
 | code4rena.com/reports/2024-08-wildcat | WildcatMarketBase | unmatched — not counted | — | mentioned in findings | no |
 | code4rena.com/reports/2024-08-wildcat | WildcatSanctionsEscrow | unmatched — not counted | — | mentioned in findings | no |
-| code4rena.com/reports/2024-08-wildcat | WildcatSanctionsSentinel | own contract | WildcatSanctionsSentinel (selected) `0x370648...903f5b` — deployed 2025-09-26 23:33:22+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| code4rena.com/reports/2024-08-wildcat | WildcatArchController | own contract | WildcatArchController (selected) `0xdb2e0d...f348ae` — deployed 2025-09-26 23:33:18+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| code4rena.com/reports/2024-08-wildcat | HooksFactory | own contract | HooksFactory (selected) `0xb46bae...42e517` — deployed 2025-09-26 23:33:39+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| code4rena.com/reports/2024-08-wildcat | WildcatSanctionsSentinel | own contract | WildcatSanctionsSentinel (selected) `0x37064895ba2c1e269eaf7ff32564818d08903f5b` — deployed 2025-09-26 23:33:22+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| code4rena.com/reports/2024-08-wildcat | WildcatArchController | own contract | WildcatArchController (selected) `0xdb2e0de97d6d96aa56754635704a4273e0f348ae` — deployed 2025-09-26 23:33:18+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| code4rena.com/reports/2024-08-wildcat | HooksFactory | own contract | HooksFactory (selected) `0xb46bae25ac6d23148531ed1853a8881fd842e517` — deployed 2025-09-26 23:33:39+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | code4rena.com/reports/2024-08-wildcat | MarketConstraintHooks | unmatched — not counted | — | mentioned in findings | no |
 | code4rena.com/reports/2024-08-wildcat | FeeMath | unmatched — not counted | — | mentioned in findings | no |
 | code4rena.com/reports/2024-08-wildcat | MathUtils | unmatched — not counted | — | mentioned in findings | no |
@@ -249,10 +249,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| plasma | `0x38056f...5f3f46` | ChainalysisProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xea6de1...bb148a` | Wildcat4626WrapperFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| plasma | `0xfeb516...945ee4` | WildcatCopyOfChainalysisList | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x35a5d1...708554` | WildcatFeeRecipient | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| plasma | `0x38056f7fe6396417b191bf7dc6a3aa04235f3f46` | ChainalysisProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xea6de11f8f3f83c79bd9d8db5517fcfdf2bb148a` | Wildcat4626WrapperFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| plasma | `0xfeb516d9d946dd487a9346f6fee11f40c6945ee4` | WildcatCopyOfChainalysisList | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x35a5d1bd68f3139971027b92c1ee9384a0708554` | WildcatFeeRecipient | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

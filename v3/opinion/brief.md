@@ -52,10 +52,10 @@ The pinned logic-topography run contains 3 contract row(s) across bsc, ethereum.
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x38869b...43b526`, chain 56)
-- ConditionalTokens (`0xad1a38...10d774`, chain 56)
-- CTFExchangeFeeManager (`0xc9063d...5d7c36`, chain 56)
-- MultiSend (`0x998739...8f9eda`, chain 56)
+- UnnamedContract (`0x38869bf66a61cf6bdb996a6ae40d5853fd43b526`, chain 56)
+- ConditionalTokens (`0xad1a38cec043e70e83a3ec30443db285ed10d774`, chain 56)
+- CTFExchangeFeeManager (`0xc9063dc52deefb518e5b6634a6b8d624bc5d7c36`, chain 56)
+- MultiSend (`0x998739bfdaadde7c933b942a68053933098f9eda`, chain 56)
 
 ## Contract Surface Quality
 
@@ -100,19 +100,19 @@ The pinned logic-topography run contains 3 contract row(s) across bsc, ethereum.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ConditionalTokens | token | project_anchor | own_supporting | 0 | bsc | unit-390225 | `0xad1a38...10d774` | ✅ Audited |
-| CTFExchangeFeeManager | governance | project_anchor | own_supporting | 0 | bsc | unit-390226 | `0xc9063d...5d7c36` | ✅ Audited |
+| ConditionalTokens | token | project_anchor | own_supporting | 0 | bsc | unit-390225 | `0xad1a38cec043e70e83a3ec30443db285ed10d774` | ✅ Audited |
+| CTFExchangeFeeManager | governance | project_anchor | own_supporting | 0 | bsc | unit-390226 | `0xc9063dc52deefb518e5b6634a6b8d624bc5d7c36` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (6)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ConditionalTokens | token | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x51d1a6...c6eb54` | ⚠️ Unaudited |
-| CTFExchangeFeeManager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 8 deployments: bsc `0x1b4922...b25236`; bsc `0x2b1493...70068c`; bsc `0x32b770...428293`; bsc `0x33d2c9...86afa4`; bsc `0x3bb81f...c17cbc`; bsc `0x3c13ce...ab25a8`; bsc `0x6ae1a7...c9e695`; bsc `0xe9ced7...81ca85` | ⚠️ Unaudited |
-| CTFExecutionEngine | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 8 deployments: bsc `0x5f4534...7a7246`; bsc `0x76527e...2b6b12`; bsc `0x7aeef4...223d1d`; bsc `0x932a47...7398d3`; bsc `0x95665d...e20585`; bsc `0xa26fbc...9cf9b0`; bsc `0xd6e1c9...3cf2c3`; bsc `0xe682cc...24789a` | ⚠️ Unaudited |
-| MultiSend | unknown | project_anchor | own_supporting | 0 | bsc | unit-390224 | `0x998739...8f9eda` | ⚠️ Unaudited |
-| OpinionToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7977bf...0b06e0` | ⚠️ Unaudited |
-| SafeL2 | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0xe76e76...8cbb4b` | ⚠️ Unaudited |
+| ConditionalTokens | token | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x51d1a62d41e93b983ef29aec04f30ded66c6eb54` | ⚠️ Unaudited |
+| CTFExchangeFeeManager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 8 deployments: bsc `0x1b4922496994f2840e2886cf600c70eb66b25236`; bsc `0x2b14933915a93275df3b54a83a79d9328c70068c`; bsc `0x32b770e46e3d79193f96d92fdf73375bd5428293`; bsc `0x33d2c9a9a68006d33867053d78bce54b3586afa4`; bsc `0x3bb81f65b0e05e0690bddd74f04254ebf2c17cbc`; bsc `0x3c13ce89d9a1e5fddde4a7e1b8a01ea39bab25a8`; bsc `0x6ae1a74303197571db5ac1aa311936049fc9e695`; bsc `0xe9ced7421917665559de4138b001cdeca481ca85` | ⚠️ Unaudited |
+| CTFExecutionEngine | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 8 deployments: bsc `0x5f45344126d6488025b0b84a3a8189f2487a7246`; bsc `0x76527e8b494f6853212474c5fc18f98f8d2b6b12`; bsc `0x7aeef402cf76b2007ed842ed883f60465b223d1d`; bsc `0x932a47f289a30b0a2ab84d5aadc6ba72127398d3`; bsc `0x95665d44be0f3ad1bbe3b05cd96512d89ce20585`; bsc `0xa26fbc2271703cb59738ad8f0fb38777779cf9b0`; bsc `0xd6e1c91559b87a8f07a8377855833f016f3cf2c3`; bsc `0xe682cc8ccb6d0a151b88e073d321dfa45624789a` | ⚠️ Unaudited |
+| MultiSend | unknown | project_anchor | own_supporting | 0 | bsc | unit-390224 | `0x998739bfdaadde7c933b942a68053933098f9eda` | ⚠️ Unaudited |
+| OpinionToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7977bf3e7e0c954d12cdca3e013adaf57e0b06e0` | ⚠️ Unaudited |
+| SafeL2 | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0xe76e763c5e57823ee5c7ed8e8d86d4e4938cbb4b` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -132,10 +132,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x000000...000000` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-390223 | `0x38869b...43b526` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x5948c9...1879b9` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xd8ac33...bfce2a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0000000000000000000000000000000000000000` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-390223 | `0x38869bf66a61cf6bdb996a6ae40d5853fd43b526` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x5948c95a1d5ea58188fde88ff989c473ac1879b9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xd8ac33f4f7cdd48c2bed68d53bf1d4a5bebfce2a` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -169,7 +169,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | opinion-v1-scalebit.pdf | BaseExchange | unmatched — not counted | — | — | no |
 | opinion-v1-scalebit.pdf | CTFExchange | unmatched — not counted | — | — | no |
 | opinion-v1-scalebit.pdf | CalculatorHelper | unmatched — not counted | — | — | no |
-| opinion-v1-scalebit.pdf | ConditionalTokens | own contract | ConditionalTokens (selected) `0xad1a38...10d774` — deployed 2025-10-15 19:04:13+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| opinion-v1-scalebit.pdf | ConditionalTokens | own contract | ConditionalTokens (selected) `0xad1a38cec043e70e83a3ec30443db285ed10d774` — deployed 2025-10-15 19:04:13+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | opinion-v1-scalebit.pdf | Fees | unmatched — not counted | — | — | no |
 | opinion-v1-scalebit.pdf | Hashing | unmatched — not counted | — | — | no |
 | opinion-v1-scalebit.pdf | NonceManager | unmatched — not counted | — | — | no |
@@ -192,7 +192,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | opinion-v2-scalebit.pdf | AssetOperations | unmatched — not counted | — | — | no |
 | opinion-v2-scalebit.pdf | Assets | unmatched — not counted | — | — | no |
 | opinion-v2-scalebit.pdf | Auth | unmatched — not counted | — | — | no |
-| opinion-v2-scalebit.pdf | CTFExchangeFeeManager | own contract | CTFExchangeFeeManager (selected) `0xc9063d...5d7c36` — deployed 2025-11-13 02:55:15+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| opinion-v2-scalebit.pdf | CTFExchangeFeeManager | own contract | CTFExchangeFeeManager (selected) `0xc9063dc52deefb518e5b6634a6b8d624bc5d7c36` — deployed 2025-11-13 02:55:15+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | opinion-v2-scalebit.pdf | CTFExchangeGateway | unmatched — not counted | — | — | no |
 | opinion-v2-scalebit.pdf | CTFExecutionEngine | unmatched — not counted | — | — | no |
 | opinion-v2-scalebit.pdf | CalculatorHelper | unmatched — not counted | — | — | no |

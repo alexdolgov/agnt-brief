@@ -61,7 +61,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CosmosERC20 | unknown | ethereum | n/a | [`0xc0a4df...eeddac`](./contracts/ethereum-1/0xc0a4df35568f116c370e6a6a6022ceb908eeddac/) | ⚠️ Unaudited |
+| CosmosERC20 | unknown | ethereum | n/a | [`0xc0a4df35568f116c370e6a6a6022ceb908eeddac`](./contracts/ethereum-1/0xc0a4df35568f116c370e6a6a6022ceb908eeddac/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -92,7 +92,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xc0a4df...eeddac`](./contracts/ethereum-1/0xc0a4df35568f116c370e6a6a6022ceb908eeddac/) | CosmosERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc0a4df35568f116c370e6a6a6022ceb908eeddac`](./contracts/ethereum-1/0xc0a4df35568f116c370e6a6a6022ceb908eeddac/) | CosmosERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

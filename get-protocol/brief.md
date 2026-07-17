@@ -59,13 +59,13 @@ The protocol forms a single structural family (Tokens) of 2 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| GetToken | token | ethereum | n/a | [`0x8a8542...0c6a1b`](./contracts/ethereum-1/0x8a854288a5976036a725879164ca3e91d30c6a1b/) | ✅ Audited |
+| GetToken | token | ethereum | n/a | [`0x8a854288a5976036a725879164ca3e91d30c6a1b`](./contracts/ethereum-1/0x8a854288a5976036a725879164ca3e91d30c6a1b/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| GovernanceLockedRevenueDistributionToken | token | ethereum | n/a | [`0x3e49e9...9f1a04`](./contracts/ethereum-1/0x3e49e9c890cd5b015a18ed76e7a4093f569f1a04/) | ⚠️ Unaudited |
+| GovernanceLockedRevenueDistributionToken | token | ethereum | n/a | [`0x3e49e9c890cd5b015a18ed76e7a4093f569f1a04`](./contracts/ethereum-1/0x3e49e9c890cd5b015a18ed76e7a4093f569f1a04/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -85,8 +85,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0xbd9fb5...8724e1` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xf72aae...d5c932` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xbd9fb53b9491790c2f7157151f10017a958724e1` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf72aae2efd626c48b849cc4128c3b855d3d5c932` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -101,7 +101,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x3e49e9...9f1a04`](./contracts/ethereum-1/0x3e49e9c890cd5b015a18ed76e7a4093f569f1a04/) | GovernanceLockedRevenueDistributionToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x3e49e9c890cd5b015a18ed76e7a4093f569f1a04`](./contracts/ethereum-1/0x3e49e9c890cd5b015a18ed76e7a4093f569f1a04/) | GovernanceLockedRevenueDistributionToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

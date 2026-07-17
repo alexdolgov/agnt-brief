@@ -59,18 +59,18 @@ The protocol comprises 4 functional families. Its contracts share 2 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Minter | operational_periphery | sonic | n/a | [`0x466795...0803a7`](./contracts/sonic-146/0x466795c0eae3c44a6dcbb6db0534f7019e0803a7/) | ✅ Audited |
-| SimpleOracleStrategy | unknown | sonic | n/a | 2 deployments: sonic [`0xdd30f8...95554f`](./contracts/sonic-146/0xdd30f831beb51fbf33e3d579e5529d3b1495554f/); sonic `0xe4fd3f...a6e854` | ✅ Audited |
+| Minter | operational_periphery | sonic | n/a | [`0x466795c0eae3c44a6dcbb6db0534f7019e0803a7`](./contracts/sonic-146/0x466795c0eae3c44a6dcbb6db0534f7019e0803a7/) | ✅ Audited |
+| SimpleOracleStrategy | unknown | sonic | n/a | 2 deployments: sonic [`0xdd30f831beb51fbf33e3d579e5529d3b1495554f`](./contracts/sonic-146/0xdd30f831beb51fbf33e3d579e5529d3b1495554f/); sonic `0xe4fd3f36b832dc67dd758fe1d58fd1194fa6e854` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Book | unknown | sonic | n/a | [`0x548992...eed9d4`](./contracts/sonic-146/0x5489922f8312c812fbb7184ebf70b9dbfaeed9d4/) | ⚠️ Unaudited |
-| BookManager | governance | sonic | n/a | [`0xd4ad5e...17c636`](./contracts/sonic-146/0xd4ad5ed9e1436904624b6db8b1be31f36317c636/) | ⚠️ Unaudited |
-| Controller | governance | sonic | n/a | [`0xca6c15...2eadd1`](./contracts/sonic-146/0xca6c15b7b03ca69087b85b8ea690ed44a92eadd1/) | ⚠️ Unaudited |
-| LiquidityVault | unknown | sonic | n/a | 2 deployments: sonic [`0x9bb7d5...d52e1d`](./contracts/sonic-146/0x9bb7d556a4eb463b213135df3184303cbdd52e1d/); sonic `0xad4515...632815` | ⚠️ Unaudited |
-| SonicMarketGem | unknown | sonic | n/a | [`0x3bed0d...4ed952`](./contracts/sonic-146/0x3bed0daf59a0a6fc8d2aefff015600641c4ed952/) | ⚠️ Unaudited |
+| Book | unknown | sonic | n/a | [`0x5489922f8312c812fbb7184ebf70b9dbfaeed9d4`](./contracts/sonic-146/0x5489922f8312c812fbb7184ebf70b9dbfaeed9d4/) | ⚠️ Unaudited |
+| BookManager | governance | sonic | n/a | [`0xd4ad5ed9e1436904624b6db8b1be31f36317c636`](./contracts/sonic-146/0xd4ad5ed9e1436904624b6db8b1be31f36317c636/) | ⚠️ Unaudited |
+| Controller | governance | sonic | n/a | [`0xca6c15b7b03ca69087b85b8ea690ed44a92eadd1`](./contracts/sonic-146/0xca6c15b7b03ca69087b85b8ea690ed44a92eadd1/) | ⚠️ Unaudited |
+| LiquidityVault | unknown | sonic | n/a | 2 deployments: sonic [`0x9bb7d556a4eb463b213135df3184303cbdd52e1d`](./contracts/sonic-146/0x9bb7d556a4eb463b213135df3184303cbdd52e1d/); sonic `0xad4515a7443f063263c6bb507670e5dc27632815` | ⚠️ Unaudited |
+| SonicMarketGem | unknown | sonic | n/a | [`0x3bed0daf59a0a6fc8d2aefff015600641c4ed952`](./contracts/sonic-146/0x3bed0daf59a0a6fc8d2aefff015600641c4ed952/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -90,35 +90,35 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Proxy (impl: 0x4abb86f499f53e2b1f52302b2ba7bbb0a90a49a8) | unknown | sonic | n/a | 2 deployments: sonic `0x067311...3ae03b`; sonic `0x4abb86...0a49a8` | ❓ Unverified |
-| Proxy (impl: 0x6bab446256cdbd4749db8bbd1302c40286f3fbf5) | unknown | sonic | n/a | 2 deployments: sonic `0x243e60...4adc6b`; sonic `0x6bab44...f3fbf5` | ❓ Unverified |
-| Proxy (impl: 0x8dda5d9df107a38fb809b72bf8d65653ed3fce65) | unknown | sonic | n/a | 2 deployments: sonic `0x399844...27e3a3`; sonic `0x8dda5d...3fce65` | ❓ Unverified |
-| Proxy (impl: 0xc89049b10e0ab1829484f7a53b84ce842ac771a8) | unknown | sonic | n/a | 2 deployments: sonic `0x1286ff...9c36fb`; sonic `0xc89049...c771a8` | ❓ Unverified |
-| Proxy (impl: 0xce0275ddaae25494cf1e4d9255b2acb3e689afcd) | unknown | sonic | n/a | 2 deployments: sonic `0x7b5156...815069`; sonic `0xce0275...89afcd` | ❓ Unverified |
-| Proxy (impl: 0xfef34c64d5ec13e04b0797d3d2e536137a0c44e1) | unknown | sonic | n/a | 2 deployments: sonic `0x2277e5...8ec101`; sonic `0xfef34c...0c44e1` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0x014780...a794f5` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0x090883...922ac8` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | 2 deployments: sonic `0x15f919...2fc637`; sonic `0xc6e3f4...512aee` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0x268f44...acd4d1` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0x28e331...1d909f` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0x31d458...6225b6` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | 2 deployments: sonic `0x4240d1...d408eb`; sonic `0xf98fd3...58d82d` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | 2 deployments: sonic `0x4d1353...8f57c5`; sonic `0xd15056...eaec85` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0x4dfa49...6fe645` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0x4efa42...e5cdd6` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0x567acf...fcf051` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0x6489f0...690edb` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0x7a07d1...7af153` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0xa9f925...1ee8eb` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0xbee97a...bb5c8b` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0xc175dc...557ef2` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0xc1a69a...7185f3` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0xc47e4f...0d09e6` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0xded58e...75d1e4` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0xe1ac9b...8c8e4d` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0xf74538...29a003` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0xfceb0b...c8be4f` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0xff87f3...0678c9` | ❓ Unverified |
+| Proxy (impl: 0x4abb86f499f53e2b1f52302b2ba7bbb0a90a49a8) | unknown | sonic | n/a | 2 deployments: sonic `0x06731177b4fa6df2b14a714736828e373e3ae03b`; sonic `0x4abb86f499f53e2b1f52302b2ba7bbb0a90a49a8` | ❓ Unverified |
+| Proxy (impl: 0x6bab446256cdbd4749db8bbd1302c40286f3fbf5) | unknown | sonic | n/a | 2 deployments: sonic `0x243e60870f63fd0eba2ad940408ac5c9f04adc6b`; sonic `0x6bab446256cdbd4749db8bbd1302c40286f3fbf5` | ❓ Unverified |
+| Proxy (impl: 0x8dda5d9df107a38fb809b72bf8d65653ed3fce65) | unknown | sonic | n/a | 2 deployments: sonic `0x3998441b4fe48fabfccd0de33db340909227e3a3`; sonic `0x8dda5d9df107a38fb809b72bf8d65653ed3fce65` | ❓ Unverified |
+| Proxy (impl: 0xc89049b10e0ab1829484f7a53b84ce842ac771a8) | unknown | sonic | n/a | 2 deployments: sonic `0x1286ffab44ced25e96465f6a094684756f9c36fb`; sonic `0xc89049b10e0ab1829484f7a53b84ce842ac771a8` | ❓ Unverified |
+| Proxy (impl: 0xce0275ddaae25494cf1e4d9255b2acb3e689afcd) | unknown | sonic | n/a | 2 deployments: sonic `0x7b5156e67697fff104de1bb07f6c4d342d815069`; sonic `0xce0275ddaae25494cf1e4d9255b2acb3e689afcd` | ❓ Unverified |
+| Proxy (impl: 0xfef34c64d5ec13e04b0797d3d2e536137a0c44e1) | unknown | sonic | n/a | 2 deployments: sonic `0x2277e5cafa9fa3dc56c3c9bd0b2c91af7e8ec101`; sonic `0xfef34c64d5ec13e04b0797d3d2e536137a0c44e1` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x014780652ee8cb9a8d227757307aae4656a794f5` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x090883fca5b1ce812c13c7966c03479a39922ac8` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | 2 deployments: sonic `0x15f9199a421c19b9e69e77af0a319458352fc637`; sonic `0xc6e3f46f441a1f32892279aeca19827431512aee` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x268f44b3153dd276e65b6f0bcd3c050449acd4d1` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x28e33115e346a63525e6d96405d5ba8ca41d909f` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x31d45803f3752566de6a49334eeda922356225b6` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | 2 deployments: sonic `0x4240d18640932bcff44b213297b88d6328d408eb`; sonic `0xf98fd34483b0e7b0211301309222bb212658d82d` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | 2 deployments: sonic `0x4d1353beeef4a6a3d14f41b949ab7a58958f57c5`; sonic `0xd1505639bd6722ab79b0311e7a0ebe9ebbeaec85` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x4dfa49b9a519c626e265fdc181d6d4d4fd6fe645` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x4efa42048465b2e4ce7407f4ae808bf79ae5cdd6` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x567acfd331b20e718daa6e068a3683683ffcf051` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x6489f0f4d479d4b4afb503be5eb35cd3ff690edb` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x7a07d16324722595e940cbf173990103257af153` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xa9f92548491997ee0de26a03311535a4961ee8eb` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xbee97af61e9f6272b01ac864b6a05056d4bb5c8b` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xc175dc39cef1ba945bcc5111a9b89c00b0557ef2` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xc1a69abb54a969e3f9a75644363d00e08d7185f3` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xc47e4f2d113a51abf0dacef6687fe0dba70d09e6` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xded58e263087f5b45d878bd9cf599b7a1a75d1e4` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xe1ac9b5ae1dc4345c12972dba6fd73a7a38c8e4d` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xf7453828cc272d7ba255e9d455e80a4bf529a003` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xfceb0b391bda5f4a54e855ccf0ccb6bcf4c8be4f` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xff87f321bf3b575742718b38892877e0ea0678c9` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -133,11 +133,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| sonic | [`0x548992...eed9d4`](./contracts/sonic-146/0x5489922f8312c812fbb7184ebf70b9dbfaeed9d4/) | Book | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0xd4ad5e...17c636`](./contracts/sonic-146/0xd4ad5ed9e1436904624b6db8b1be31f36317c636/) | BookManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0xca6c15...2eadd1`](./contracts/sonic-146/0xca6c15b7b03ca69087b85b8ea690ed44a92eadd1/) | Controller | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0x9bb7d5...d52e1d`](./contracts/sonic-146/0x9bb7d556a4eb463b213135df3184303cbdd52e1d/) | LiquidityVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0x3bed0d...4ed952`](./contracts/sonic-146/0x3bed0daf59a0a6fc8d2aefff015600641c4ed952/) | SonicMarketGem | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x5489922f8312c812fbb7184ebf70b9dbfaeed9d4`](./contracts/sonic-146/0x5489922f8312c812fbb7184ebf70b9dbfaeed9d4/) | Book | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0xd4ad5ed9e1436904624b6db8b1be31f36317c636`](./contracts/sonic-146/0xd4ad5ed9e1436904624b6db8b1be31f36317c636/) | BookManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0xca6c15b7b03ca69087b85b8ea690ed44a92eadd1`](./contracts/sonic-146/0xca6c15b7b03ca69087b85b8ea690ed44a92eadd1/) | Controller | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x9bb7d556a4eb463b213135df3184303cbdd52e1d`](./contracts/sonic-146/0x9bb7d556a4eb463b213135df3184303cbdd52e1d/) | LiquidityVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x3bed0daf59a0a6fc8d2aefff015600641c4ed952`](./contracts/sonic-146/0x3bed0daf59a0a6fc8d2aefff015600641c4ed952/) | SonicMarketGem | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -80,7 +80,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | merlin | n/a | 2 deployments: merlin `0x261507...4c0467`; merlin `0xbd40c7...430bba` | ❓ Unverified |
+| UnnamedContract | unknown | merlin | n/a | 2 deployments: merlin `0x261507940678bf22d8ee96c31df4a642294c0467`; merlin `0xbd40c74cb5cf9f9252b3298230cb916d80430bba` | ❓ Unverified |
 
 ## Audit Inventory
 

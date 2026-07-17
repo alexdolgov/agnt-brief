@@ -62,26 +62,26 @@ The protocol comprises 4 functional families. Its contracts share 13 common proj
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CrocSwapDex | unknown | scroll | n/a | [`0xaaaaaa...a74106`](./contracts/scroll-534352/0xaaaaaaaacb71bf2c8cae522ea5fa455571a74106/) | ✅ Audited |
+| CrocSwapDex | unknown | scroll | n/a | [`0xaaaaaaaacb71bf2c8cae522ea5fa455571a74106`](./contracts/scroll-534352/0xaaaaaaaacb71bf2c8cae522ea5fa455571a74106/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (14)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ColdPath | unknown | blast | n/a | 2 deployments: blast [`0x70b161...e9dc4f`](./contracts/blast-81457/0x70b161f2f0a18bd1865021f25f9e895021e9dc4f/); blast `0x852c3a...0e9915` | ⚠️ Unaudited |
-| CrocImpact | unknown | blast | n/a | [`0x6a699a...5efdb9`](./contracts/blast-81457/0x6a699ab45adce02891e6115b81dfb46caa5efdb9/) | ⚠️ Unaudited |
-| CrocPolicy | unknown | blast | n/a | [`0x503e3d...8c162c`](./contracts/blast-81457/0x503e3dfddd22d1c4a9787d2dac8643afc58c162c/) | ⚠️ Unaudited |
-| CrocQuery | unknown | blast | n/a | [`0xa3bd3b...36a8a7`](./contracts/blast-81457/0xa3bd3be19012de72190c885fb270beb93e36a8a7/) | ⚠️ Unaudited |
-| CrocSwapRouter | adapter | scroll | n/a | [`0xfb5f26...5fd1fc`](./contracts/scroll-534352/0xfb5f26851e03449a0403ca945ebb4201415fd1fc/) | ⚠️ Unaudited |
-| GnosisSafeL2 | governance | blast | n/a | [`0xc73c8c...1e36ed`](./contracts/blast-81457/0xc73c8c60ea7d7f4338f9a8542927f4f1471e36ed/) | ⚠️ Unaudited |
-| HotProxy | unknown | blast | n/a | [`0x6050cf...d5bb86`](./contracts/blast-81457/0x6050cf4b9125c81dbccb5d662131d4de04d5bb86/) | ⚠️ Unaudited |
-| HotProxy | unknown | blast | n/a | 2 deployments: blast [`0x79cf6e...7ef6e9`](./contracts/blast-81457/0x79cf6e6af136b04c145f330509ad547b0d7ef6e9/); blast `0xaaaaaa...1fb958` | ⚠️ Unaudited |
-| KnockoutFlagPath | unknown | blast | n/a | [`0xd54874...1dcdc1`](./contracts/blast-81457/0xd54874d2a5715d9d4ccd32e1c6151ac8d51dcdc1/) | ⚠️ Unaudited |
-| KnockoutLiqPath | unknown | blast | n/a | [`0x6e2625...03132f`](./contracts/blast-81457/0x6e26253238becf5e7099cbe2e74cbf378d03132f/) | ⚠️ Unaudited |
-| LongPath | unknown | blast | n/a | 2 deployments: blast [`0x07ec4a...65cfdd`](./contracts/blast-81457/0x07ec4ad8478d667e5cad4e4601879cd5ae65cfdd/); blast `0x646929...d93fa9` | ⚠️ Unaudited |
-| MicroPaths | unknown | blast | n/a | 2 deployments: blast [`0x8296b2...1d1534`](./contracts/blast-81457/0x8296b24386b85471af51ee4bfe6166df1f1d1534/); blast `0xc58f7a...220066` | ⚠️ Unaudited |
-| WarmPath | unknown | ethereum | n/a | [`0xaaaaaa...34f688`](./contracts/ethereum-1/0xaaaaaaaaa24eeeb8d57d431224f73832bc34f688/) | ⚠️ Unaudited |
-| WarmPath | unknown | blast | n/a | 2 deployments: blast [`0x62223e...0d6ddf`](./contracts/blast-81457/0x62223e90605845cf5cc6dae6e0de4cda130d6ddf/); blast `0x99f213...796ca5` | ⚠️ Unaudited |
+| ColdPath | unknown | blast | n/a | 2 deployments: blast [`0x70b161f2f0a18bd1865021f25f9e895021e9dc4f`](./contracts/blast-81457/0x70b161f2f0a18bd1865021f25f9e895021e9dc4f/); blast `0x852c3a00162efdbce7e5bee4dfe065116d0e9915` | ⚠️ Unaudited |
+| CrocImpact | unknown | blast | n/a | [`0x6a699ab45adce02891e6115b81dfb46caa5efdb9`](./contracts/blast-81457/0x6a699ab45adce02891e6115b81dfb46caa5efdb9/) | ⚠️ Unaudited |
+| CrocPolicy | unknown | blast | n/a | [`0x503e3dfddd22d1c4a9787d2dac8643afc58c162c`](./contracts/blast-81457/0x503e3dfddd22d1c4a9787d2dac8643afc58c162c/) | ⚠️ Unaudited |
+| CrocQuery | unknown | blast | n/a | [`0xa3bd3be19012de72190c885fb270beb93e36a8a7`](./contracts/blast-81457/0xa3bd3be19012de72190c885fb270beb93e36a8a7/) | ⚠️ Unaudited |
+| CrocSwapRouter | adapter | scroll | n/a | [`0xfb5f26851e03449a0403ca945ebb4201415fd1fc`](./contracts/scroll-534352/0xfb5f26851e03449a0403ca945ebb4201415fd1fc/) | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | blast | n/a | [`0xc73c8c60ea7d7f4338f9a8542927f4f1471e36ed`](./contracts/blast-81457/0xc73c8c60ea7d7f4338f9a8542927f4f1471e36ed/) | ⚠️ Unaudited |
+| HotProxy | unknown | blast | n/a | [`0x6050cf4b9125c81dbccb5d662131d4de04d5bb86`](./contracts/blast-81457/0x6050cf4b9125c81dbccb5d662131d4de04d5bb86/) | ⚠️ Unaudited |
+| HotProxy | unknown | blast | n/a | 2 deployments: blast [`0x79cf6e6af136b04c145f330509ad547b0d7ef6e9`](./contracts/blast-81457/0x79cf6e6af136b04c145f330509ad547b0d7ef6e9/); blast `0xaaaaaaaaffe404ee9433eef0094b6382d81fb958` | ⚠️ Unaudited |
+| KnockoutFlagPath | unknown | blast | n/a | [`0xd54874d2a5715d9d4ccd32e1c6151ac8d51dcdc1`](./contracts/blast-81457/0xd54874d2a5715d9d4ccd32e1c6151ac8d51dcdc1/) | ⚠️ Unaudited |
+| KnockoutLiqPath | unknown | blast | n/a | [`0x6e26253238becf5e7099cbe2e74cbf378d03132f`](./contracts/blast-81457/0x6e26253238becf5e7099cbe2e74cbf378d03132f/) | ⚠️ Unaudited |
+| LongPath | unknown | blast | n/a | 2 deployments: blast [`0x07ec4ad8478d667e5cad4e4601879cd5ae65cfdd`](./contracts/blast-81457/0x07ec4ad8478d667e5cad4e4601879cd5ae65cfdd/); blast `0x646929453e753565467f330110850885ead93fa9` | ⚠️ Unaudited |
+| MicroPaths | unknown | blast | n/a | 2 deployments: blast [`0x8296b24386b85471af51ee4bfe6166df1f1d1534`](./contracts/blast-81457/0x8296b24386b85471af51ee4bfe6166df1f1d1534/); blast `0xc58f7a96a3a8e82da0747a6e1411c3a531220066` | ⚠️ Unaudited |
+| WarmPath | unknown | ethereum | n/a | [`0xaaaaaaaaa24eeeb8d57d431224f73832bc34f688`](./contracts/ethereum-1/0xaaaaaaaaa24eeeb8d57d431224f73832bc34f688/) | ⚠️ Unaudited |
+| WarmPath | unknown | blast | n/a | 2 deployments: blast [`0x62223e90605845cf5cc6dae6e0de4cda130d6ddf`](./contracts/blast-81457/0x62223e90605845cf5cc6dae6e0de4cda130d6ddf/); blast `0x99f213608941b6116e8f1fab1908ddb33d796ca5` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -101,10 +101,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | swellchain | n/a | 7 deployments: swellchain `0x79cf6e...7ef6e9`; swellchain `0x983a06...eb1038`; swellchain `0xaaaaaa...237d85`; swellchain `0xaaaaaa...3bf24d`; swellchain `0xaab174...3f6194`; swellchain `0xd83ef4...7e0362`; canto `0x9290c8...793618` | ❓ Unverified |
-| UnnamedContract | unknown | blast | n/a | `0x754eef...928285` | ❓ Unverified |
-| UnnamedContract | unknown | blast | n/a | `0xaab174...3f6194` | ❓ Unverified |
-| UnnamedContract | unknown | blast | n/a | `0xd83ef4...7e0362` | ❓ Unverified |
+| UnnamedContract | unknown | swellchain | n/a | 7 deployments: swellchain `0x79cf6e6af136b04c145f330509ad547b0d7ef6e9`; swellchain `0x983a06261ae018fefa16e1e95c7fda13a2eb1038`; swellchain `0xaaaaaaaa81a99d2a05ee428ec7a1d8a3c2237d85`; swellchain `0xaaaaaaaa82812f0a1f274016514ba2ca933bf24d`; swellchain `0xaab17419f062bb28cdbe82f9fc05e7c47c3f6194`; swellchain `0xd83ef4d0e968a96329ac297bbf049cddac7e0362`; canto `0x9290c893ce949fe13ef3355660d07de0fb793618` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0x754eef5862082607184e7a3ab08cea76ef928285` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0xaab17419f062bb28cdbe82f9fc05e7c47c3f6194` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0xd83ef4d0e968a96329ac297bbf049cddac7e0362` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -120,19 +120,19 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| blast | [`0x70b161...e9dc4f`](./contracts/blast-81457/0x70b161f2f0a18bd1865021f25f9e895021e9dc4f/) | ColdPath | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0x6a699a...5efdb9`](./contracts/blast-81457/0x6a699ab45adce02891e6115b81dfb46caa5efdb9/) | CrocImpact | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0x503e3d...8c162c`](./contracts/blast-81457/0x503e3dfddd22d1c4a9787d2dac8643afc58c162c/) | CrocPolicy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0xa3bd3b...36a8a7`](./contracts/blast-81457/0xa3bd3be19012de72190c885fb270beb93e36a8a7/) | CrocQuery | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| scroll | [`0xfb5f26...5fd1fc`](./contracts/scroll-534352/0xfb5f26851e03449a0403ca945ebb4201415fd1fc/) | CrocSwapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0x6050cf...d5bb86`](./contracts/blast-81457/0x6050cf4b9125c81dbccb5d662131d4de04d5bb86/) | HotProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0x79cf6e...7ef6e9`](./contracts/blast-81457/0x79cf6e6af136b04c145f330509ad547b0d7ef6e9/) | HotProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0xd54874...1dcdc1`](./contracts/blast-81457/0xd54874d2a5715d9d4ccd32e1c6151ac8d51dcdc1/) | KnockoutFlagPath | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0x6e2625...03132f`](./contracts/blast-81457/0x6e26253238becf5e7099cbe2e74cbf378d03132f/) | KnockoutLiqPath | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0x07ec4a...65cfdd`](./contracts/blast-81457/0x07ec4ad8478d667e5cad4e4601879cd5ae65cfdd/) | LongPath | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0x8296b2...1d1534`](./contracts/blast-81457/0x8296b24386b85471af51ee4bfe6166df1f1d1534/) | MicroPaths | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xaaaaaa...34f688`](./contracts/ethereum-1/0xaaaaaaaaa24eeeb8d57d431224f73832bc34f688/) | WarmPath | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0x62223e...0d6ddf`](./contracts/blast-81457/0x62223e90605845cf5cc6dae6e0de4cda130d6ddf/) | WarmPath | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x70b161f2f0a18bd1865021f25f9e895021e9dc4f`](./contracts/blast-81457/0x70b161f2f0a18bd1865021f25f9e895021e9dc4f/) | ColdPath | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x6a699ab45adce02891e6115b81dfb46caa5efdb9`](./contracts/blast-81457/0x6a699ab45adce02891e6115b81dfb46caa5efdb9/) | CrocImpact | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x503e3dfddd22d1c4a9787d2dac8643afc58c162c`](./contracts/blast-81457/0x503e3dfddd22d1c4a9787d2dac8643afc58c162c/) | CrocPolicy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0xa3bd3be19012de72190c885fb270beb93e36a8a7`](./contracts/blast-81457/0xa3bd3be19012de72190c885fb270beb93e36a8a7/) | CrocQuery | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| scroll | [`0xfb5f26851e03449a0403ca945ebb4201415fd1fc`](./contracts/scroll-534352/0xfb5f26851e03449a0403ca945ebb4201415fd1fc/) | CrocSwapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x6050cf4b9125c81dbccb5d662131d4de04d5bb86`](./contracts/blast-81457/0x6050cf4b9125c81dbccb5d662131d4de04d5bb86/) | HotProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x79cf6e6af136b04c145f330509ad547b0d7ef6e9`](./contracts/blast-81457/0x79cf6e6af136b04c145f330509ad547b0d7ef6e9/) | HotProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0xd54874d2a5715d9d4ccd32e1c6151ac8d51dcdc1`](./contracts/blast-81457/0xd54874d2a5715d9d4ccd32e1c6151ac8d51dcdc1/) | KnockoutFlagPath | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x6e26253238becf5e7099cbe2e74cbf378d03132f`](./contracts/blast-81457/0x6e26253238becf5e7099cbe2e74cbf378d03132f/) | KnockoutLiqPath | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x07ec4ad8478d667e5cad4e4601879cd5ae65cfdd`](./contracts/blast-81457/0x07ec4ad8478d667e5cad4e4601879cd5ae65cfdd/) | LongPath | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x8296b24386b85471af51ee4bfe6166df1f1d1534`](./contracts/blast-81457/0x8296b24386b85471af51ee4bfe6166df1f1d1534/) | MicroPaths | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xaaaaaaaaa24eeeb8d57d431224f73832bc34f688`](./contracts/ethereum-1/0xaaaaaaaaa24eeeb8d57d431224f73832bc34f688/) | WarmPath | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x62223e90605845cf5cc6dae6e0de4cda130d6ddf`](./contracts/blast-81457/0x62223e90605845cf5cc6dae6e0de4cda130d6ddf/) | WarmPath | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

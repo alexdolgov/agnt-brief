@@ -90,11 +90,11 @@ The pinned logic-topography run contains 1 contract row(s) across avalanche, eth
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Bridge | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-242084 | `0xa92902...1e490c` | ⚠️ Unaudited |
-| BridgeLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9a91ab...f129b8` | ⚠️ Unaudited |
-| BridgeStorage | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x47343b...d0ae2f` | ⚠️ Unaudited |
-| GnosisSafeProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | polygon | n/a | `0x2177c7...688726` | ⚠️ Unaudited |
-| GnosisSafeProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x8b6a35...4a44d5` | ⚠️ Unaudited |
+| Bridge | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-242084 | `0xa929022c9107643515f5c777ce9a910f0d1e490c` | ⚠️ Unaudited |
+| BridgeLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9a91ab68ebffd2e527d8144f54e9fe8250f129b8` | ⚠️ Unaudited |
+| BridgeStorage | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x47343b0046908c1607cbb4cef5764296fcd0ae2f` | ⚠️ Unaudited |
+| GnosisSafeProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | polygon | n/a | `0x2177c77a1f3c4900de7668662706633db4688726` | ⚠️ Unaudited |
+| GnosisSafeProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x8b6a3587676719a4fecbb24b503a3634c44a44d5` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

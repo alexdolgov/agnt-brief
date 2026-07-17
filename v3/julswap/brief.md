@@ -52,12 +52,12 @@ The pinned logic-topography run contains 2 contract row(s) across avalanche, bsc
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x95ae3f...56ec95`, chain 10)
-- UnnamedContract (`0x65244a...456257`, chain 56)
-- UnnamedContract (`0x441f29...979847`, chain 137)
-- UnnamedContract (`0x9f5be7...319d5e`, chain 43114)
-- BSCswapRouter (`0xbd67d1...c788b2`, chain 56)
-- OptimizedTransparentUpgradeableProxy (`0x16a7b3...a8a864`, chain 1)
+- UnnamedContract (`0x95ae3f1cd52cc49a12f27c1815ea4e372256ec95`, chain 10)
+- UnnamedContract (`0x65244aba8975487cc515cbf5600155c8c8456257`, chain 56)
+- UnnamedContract (`0x441f29d66aff1fb52f48279818b689b8e3979847`, chain 137)
+- UnnamedContract (`0x9f5be776024660576b17159b2bb4fee2ee319d5e`, chain 43114)
+- BSCswapRouter (`0xbd67d157502a23309db761c41965600c2ec788b2`, chain 56)
+- OptimizedTransparentUpgradeableProxy (`0x16a7b34353de766ae3e1a8ad0d6a415b4da8a864`, chain 1)
 
 ## Contract Surface Quality
 
@@ -101,19 +101,19 @@ The pinned logic-topography run contains 2 contract row(s) across avalanche, bsc
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BSCswapRouter | unknown | project_anchor | own_supporting | 0 | bsc | unit-243516 | `0xbd67d1...c788b2` | ✅ Audited |
+| BSCswapRouter | unknown | project_anchor | own_supporting | 0 | bsc | unit-243516 | `0xbd67d157502a23309db761c41965600c2ec788b2` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (7)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BSCswapPair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x57108b...88b0ea` | ⚠️ Unaudited |
-| JulProtocolV3_BSC | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x4edfbd...a08037` | ⚠️ Unaudited |
-| JulSwap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x5a41f6...6577ea` | ⚠️ Unaudited |
-| JulSwapCrossChainNode | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x16a7b3...a8a864` | ⚠️ Unaudited |
-| MultiCall | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x0e6dd9...d7d83e` | ⚠️ Unaudited |
-| OptimizedTransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-243517 | `0x16a7b3...a8a864` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x5dffc9...95a63c` | ⚠️ Unaudited |
+| BSCswapPair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x57108ba5a6ce93da2e5503f531ca9bfd1288b0ea` | ⚠️ Unaudited |
+| JulProtocolV3_BSC | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x4edfbdcc6b7bc3596f625137be4f211ea5a08037` | ⚠️ Unaudited |
+| JulSwap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x5a41f637c3f7553dba6ddc2d3ca92641096577ea` | ⚠️ Unaudited |
+| JulSwapCrossChainNode | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x16a7b34353de766ae3e1a8ad0d6a415b4da8a864` | ⚠️ Unaudited |
+| MultiCall | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x0e6dd9603f4bc56296ee3b9ab33122fecbd7d83e` | ⚠️ Unaudited |
+| OptimizedTransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-243517 | `0x16a7b34353de766ae3e1a8ad0d6a415b4da8a864` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x5dffc99f807963954c83cc3dff9de610ad95a63c` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -133,14 +133,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-243512 | `0x95ae3f...56ec95` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x16a7b3...a8a864` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x441f29...979847` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-243515 | `0x65244a...456257` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x95ae3f...56ec95` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x9f5be7...319d5e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-243513 | `0x441f29...979847` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-243514 | `0x9f5be7...319d5e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-243512 | `0x95ae3f1cd52cc49a12f27c1815ea4e372256ec95` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x16a7b34353de766ae3e1a8ad0d6a415b4da8a864` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x441f29d66aff1fb52f48279818b689b8e3979847` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-243515 | `0x65244aba8975487cc515cbf5600155c8c8456257` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x95ae3f1cd52cc49a12f27c1815ea4e372256ec95` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x9f5be776024660576b17159b2bb4fee2ee319d5e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-243513 | `0x441f29d66aff1fb52f48279818b689b8e3979847` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-243514 | `0x9f5be776024660576b17159b2bb4fee2ee319d5e` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -194,7 +194,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | 25022021 JULSWAP_SC_Audit_Report.pdf | BSCswapBEP20 | unmatched — not counted | — | listed in scope | no |
 | 25022021 JULSWAP_SC_Audit_Report.pdf | BSCswapFactory | unmatched — not counted | — | listed in scope | no |
 | 25022021 JULSWAP_SC_Audit_Report.pdf | BSCswapPair | unmatched — not counted | — | listed in scope | no |
-| 25022021 JULSWAP_SC_Audit_Report.pdf | BSCswapRouter | own contract | BSCswapRouter (selected) `0xbd67d1...c788b2` — deployed 2020-09-25 12:07:31+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 25022021 JULSWAP_SC_Audit_Report.pdf | BSCswapRouter | own contract | BSCswapRouter (selected) `0xbd67d157502a23309db761c41965600c2ec788b2` — deployed 2020-09-25 12:07:31+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 
 ## Coverage Gaps
 
@@ -202,7 +202,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x16a7b3...a8a864` | OptimizedTransparentUpgradeableProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x16a7b34353de766ae3e1a8ad0d6a415b4da8a864` | OptimizedTransparentUpgradeableProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

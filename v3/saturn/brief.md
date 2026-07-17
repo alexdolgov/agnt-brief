@@ -52,16 +52,16 @@ The pinned logic-topography run contains 2 contract row(s) across bsc, ethereum.
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x4bc9fe...923d2e`, chain 1)
-- UnnamedContract (`0x5f7ecd...a871bf`, chain 1)
-- UnnamedContract (`0x6206ca...529a7a`, chain 1)
-- UnnamedContract (`0xb68071...6f6278`, chain 1)
-- UnnamedContract (`0xf4d0cf...6896d7`, chain 1)
-- UnnamedContract (`0xf4d207...218d23`, chain 1)
-- UnnamedContract (`0xf3396a...4e0e81`, chain 56)
-- UnnamedContract (`0xf80ab3...d70aa9`, chain 56)
-- ERC1967Proxy (`0xd16633...bd2df7`, chain 1)
-- USDat (`0x23238f...5aaa71`, chain 1)
+- UnnamedContract (`0x4bc9fec04f0f95e9b42a3ef18f3c96fb57923d2e`, chain 1)
+- UnnamedContract (`0x5f7ecd0d045c393da6cb6c933c671ac305a871bf`, chain 1)
+- UnnamedContract (`0x6206ca315c2fcdd2a857b47efb285aa12c529a7a`, chain 1)
+- UnnamedContract (`0xb6807116b3b1b321a390594e31ecd6e0076f6278`, chain 1)
+- UnnamedContract (`0xf4d0cf32908b2c7f1021339c43df0f77f06896d7`, chain 1)
+- UnnamedContract (`0xf4d2076277fff631efc4385ab36b1f7734218d23`, chain 1)
+- UnnamedContract (`0xf3396a9a79257d89f98143d8ab73da1dff4e0e81`, chain 56)
+- UnnamedContract (`0xf80ab3cc041d8ccc1c51acc295afdba26ad70aa9`, chain 56)
+- ERC1967Proxy (`0xd166337499e176bbc38a1fbd113ab144e5bd2df7`, chain 1)
+- USDat (`0x23238f20b894f29041f48d88ee91131c395aaa71`, chain 1)
 
 ## Contract Surface Quality
 
@@ -106,14 +106,14 @@ The pinned logic-topography run contains 2 contract row(s) across bsc, ethereum.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| USDat | unknown | project_anchor | own_supporting | 1 | ethereum | unit-392049 | `0x23238f...5aaa71` | ✅ Audited |
+| USDat | unknown | project_anchor | own_supporting | 1 | ethereum | unit-392049 | `0x23238f20b894f29041f48d88ee91131c395aaa71` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-392050 | `0xd16633...bd2df7` | ⚠️ Unaudited |
-| MToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x866a2b...36be1b` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-392050 | `0xd166337499e176bbc38a1fbd113ab144e5bd2df7` | ⚠️ Unaudited |
+| MToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -133,14 +133,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392039 | `0x4bc9fe...923d2e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392040 | `0x5f7ecd...a871bf` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392042 | `0x6206ca...529a7a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392044 | `0xb68071...6f6278` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392045 | `0xf4d0cf...6896d7` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392046 | `0xf4d207...218d23` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-392047 | `0xf3396a...4e0e81` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-392048 | `0xf80ab3...d70aa9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392039 | `0x4bc9fec04f0f95e9b42a3ef18f3c96fb57923d2e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392040 | `0x5f7ecd0d045c393da6cb6c933c671ac305a871bf` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392042 | `0x6206ca315c2fcdd2a857b47efb285aa12c529a7a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392044 | `0xb6807116b3b1b321a390594e31ecd6e0076f6278` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392045 | `0xf4d0cf32908b2c7f1021339c43df0f77f06896d7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392046 | `0xf4d2076277fff631efc4385ab36b1f7734218d23` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-392047 | `0xf3396a9a79257d89f98143d8ab73da1dff4e0e81` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-392048 | `0xf80ab3cc041d8ccc1c51acc295afdba26ad70aa9` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -166,21 +166,21 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| spaces/aoxN2WzhSM74tsJUct0C/uploads/M1TsQVTqUghMuZSes4wu/Certora - Formal Verification.pdf | USDat | own proxy deployment | USDat (proxy) (selected) `0x23238f...5aaa71` — deployed 2026-03-10 23:24:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/aoxN2WzhSM74tsJUct0C/uploads/M1TsQVTqUghMuZSes4wu/Certora - Formal Verification.pdf | USDat | own proxy deployment | USDat (proxy) (selected) `0x23238f20b894f29041f48d88ee91131c395aaa71` — deployed 2026-03-10 23:24:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/aoxN2WzhSM74tsJUct0C/uploads/M1TsQVTqUghMuZSes4wu/Certora - Formal Verification.pdf | StakedUSDat | unmatched — not counted | — | listed in scope and detailed findings | no |
 | spaces/aoxN2WzhSM74tsJUct0C/uploads/M1TsQVTqUghMuZSes4wu/Certora - Formal Verification.pdf | WithdrawalQueueERC721 | unmatched — not counted | — | listed in scope and detailed findings | no |
 | spaces/aoxN2WzhSM74tsJUct0C/uploads/M1TsQVTqUghMuZSes4wu/Certora - Formal Verification.pdf | StrcPriceOracle | unmatched — not counted | — | mentioned in scope and threat model | no |
-| spaces/aoxN2WzhSM74tsJUct0C/uploads/jP4Ej0FXvClHiADGwKLd/Certora - Audit #3.pdf | USDat | own proxy deployment | USDat (proxy) (selected) `0x23238f...5aaa71` — deployed 2026-03-10 23:24:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/aoxN2WzhSM74tsJUct0C/uploads/jP4Ej0FXvClHiADGwKLd/Certora - Audit #3.pdf | USDat | own proxy deployment | USDat (proxy) (selected) `0x23238f20b894f29041f48d88ee91131c395aaa71` — deployed 2026-03-10 23:24:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/aoxN2WzhSM74tsJUct0C/uploads/jP4Ej0FXvClHiADGwKLd/Certora - Audit #3.pdf | StakedUSDat | unmatched — not counted | — | listed in scope and findings | no |
 | spaces/aoxN2WzhSM74tsJUct0C/uploads/jP4Ej0FXvClHiADGwKLd/Certora - Audit #3.pdf | WithdrawalQueueERC721 | unmatched — not counted | — | listed in scope and findings | no |
 | spaces/aoxN2WzhSM74tsJUct0C/uploads/jP4Ej0FXvClHiADGwKLd/Certora - Audit #3.pdf | StrcPriceOracle | unmatched — not counted | — | mentioned in scope description | no |
-| spaces/aoxN2WzhSM74tsJUct0C/uploads/KNrnqGyTv1VPM2rbBIp0/Certora - Audit #2.pdf | USDat | own proxy deployment | USDat (proxy) (selected) `0x23238f...5aaa71` — deployed 2026-03-10 23:24:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/aoxN2WzhSM74tsJUct0C/uploads/KNrnqGyTv1VPM2rbBIp0/Certora - Audit #2.pdf | USDat | own proxy deployment | USDat (proxy) (selected) `0x23238f20b894f29041f48d88ee91131c395aaa71` — deployed 2026-03-10 23:24:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/aoxN2WzhSM74tsJUct0C/uploads/KNrnqGyTv1VPM2rbBIp0/Certora - Audit #2.pdf | sUSDat | unmatched — not counted | — | mentioned as yield-bearing vault token in protocol overview | no |
 | spaces/aoxN2WzhSM74tsJUct0C/uploads/KNrnqGyTv1VPM2rbBIp0/Certora - Audit #2.pdf | StakedUSDat | unmatched — not counted | — | listed in scope via src/* pattern and mentioned in findings | no |
 | spaces/aoxN2WzhSM74tsJUct0C/uploads/KNrnqGyTv1VPM2rbBIp0/Certora - Audit #2.pdf | WithdrawalQueueERC721 | unmatched — not counted | — | listed in scope via src/* pattern and mentioned in findings | no |
 | spaces/aoxN2WzhSM74tsJUct0C/uploads/KNrnqGyTv1VPM2rbBIp0/Certora - Audit #2.pdf | TokenizedSTRC | unmatched — not counted | — | mentioned in protocol overview and findings (I-01) | no |
 | spaces/aoxN2WzhSM74tsJUct0C/uploads/KNrnqGyTv1VPM2rbBIp0/Certora - Audit #2.pdf | IWithdrawalQueueERC721 | unmatched — not counted | — | mentioned in finding I-03 | no |
-| spaces/aoxN2WzhSM74tsJUct0C/uploads/PKsYColQZJy0e2AlTX7K/Three Sigma - Audit #1.pdf | USDat | own proxy deployment | USDat (proxy) (selected) `0x23238f...5aaa71` — deployed 2026-03-10 23:24:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/aoxN2WzhSM74tsJUct0C/uploads/PKsYColQZJy0e2AlTX7K/Three Sigma - Audit #1.pdf | USDat | own proxy deployment | USDat (proxy) (selected) `0x23238f20b894f29041f48d88ee91131c395aaa71` — deployed 2026-03-10 23:24:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/aoxN2WzhSM74tsJUct0C/uploads/PKsYColQZJy0e2AlTX7K/Three Sigma - Audit #1.pdf | StakedUSDat | unmatched — not counted | — | listed in scope table | no |
 | spaces/aoxN2WzhSM74tsJUct0C/uploads/PKsYColQZJy0e2AlTX7K/Three Sigma - Audit #1.pdf | WithdrawalQueue | unmatched — not counted | — | listed in scope table | no |
 | spaces/aoxN2WzhSM74tsJUct0C/uploads/PKsYColQZJy0e2AlTX7K/Three Sigma - Audit #1.pdf | TokenizedSTRC | unmatched — not counted | — | listed in scope table | no |

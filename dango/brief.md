@@ -62,9 +62,9 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| HypERC20Collateral | unknown | ethereum | n/a | 2 deployments: ethereum [`0xd05909...c0f36c`](./contracts/ethereum-1/0xd05909852ae07118857f9d071781671d12c0f36c/); ethereum `0xe07165...fc84f9` | ⚠️ Unaudited |
-| HypNative | unknown | ethereum | n/a | 2 deployments: ethereum [`0x9d0ea3...cf73d4`](./contracts/ethereum-1/0x9d0ea335355da17ee89e50df43ab823416cf73d4/); ethereum `0x9d259a...3154cb` | ⚠️ Unaudited |
-| ProxyAdmin | governance | ethereum | n/a | 2 deployments: ethereum [`0x613942...09e601`](./contracts/ethereum-1/0x613942eff27c6886bb2a33a172cdaf03a009e601/); ethereum `0x947303...361fe6` | ⚠️ Unaudited |
+| HypERC20Collateral | unknown | ethereum | n/a | 2 deployments: ethereum [`0xd05909852ae07118857f9d071781671d12c0f36c`](./contracts/ethereum-1/0xd05909852ae07118857f9d071781671d12c0f36c/); ethereum `0xe071653043828c9923c79b04b077358d94fc84f9` | ⚠️ Unaudited |
+| HypNative | unknown | ethereum | n/a | 2 deployments: ethereum [`0x9d0ea335355da17ee89e50df43ab823416cf73d4`](./contracts/ethereum-1/0x9d0ea335355da17ee89e50df43ab823416cf73d4/); ethereum `0x9d259aa1ec7324c7433b89d2935b08c30f3154cb` | ⚠️ Unaudited |
+| ProxyAdmin | governance | ethereum | n/a | 2 deployments: ethereum [`0x613942eff27c6886bb2a33a172cdaf03a009e601`](./contracts/ethereum-1/0x613942eff27c6886bb2a33a172cdaf03a009e601/); ethereum `0x947303e34c1a2b97fb00c68c1cc4ca97b3361fe6` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -97,8 +97,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xd05909...c0f36c`](./contracts/ethereum-1/0xd05909852ae07118857f9d071781671d12c0f36c/) | HypERC20Collateral | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x9d0ea3...cf73d4`](./contracts/ethereum-1/0x9d0ea335355da17ee89e50df43ab823416cf73d4/) | HypNative | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xd05909852ae07118857f9d071781671d12c0f36c`](./contracts/ethereum-1/0xd05909852ae07118857f9d071781671d12c0f36c/) | HypERC20Collateral | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x9d0ea335355da17ee89e50df43ab823416cf73d4`](./contracts/ethereum-1/0x9d0ea335355da17ee89e50df43ab823416cf73d4/) | HypNative | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

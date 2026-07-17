@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum, ethe
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- Usual (`0x2b65f9...6a9c2f`, chain 1)
+- Usual (`0x2b65f9d2e4b84a2df6ff0525741b75d1276a9c2f`, chain 1)
 
 ## Contract Surface Quality
 
@@ -102,22 +102,22 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum, ethe
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Usual | unknown | project_anchor | own_supporting | 0 | ethereum | unit-400491 | `0x2b65f9...6a9c2f` | ✅ Audited |
+| Usual | unknown | project_anchor | own_supporting | 0 | ethereum | unit-400491 | `0x2b65f9d2e4b84a2df6ff0525741b75d1276a9c2f` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (10)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AirdropDistribution | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x89e813...0896ed` | ⚠️ Unaudited |
-| DaoCollateral | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0eec86...22af4e` | ⚠️ Unaudited |
-| DistributionModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x373114...adb24b` | ⚠️ Unaudited |
-| SwapperEngine | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf65b0c...6e57d3` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x06b964...4d4b8e` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x094b36...677b89` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xa6cd24...2a4c01` | ⚠️ Unaudited |
-| Usd0 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xae12f6...fc821e` | ⚠️ Unaudited |
-| Usd0PP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe7859a...dc96a8` | ⚠️ Unaudited |
-| UsualSP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x24a246...272f65` | ⚠️ Unaudited |
+| AirdropDistribution | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x89e813661628a277714c76d80c7fcb192a0896ed` | ⚠️ Unaudited |
+| DaoCollateral | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0eec861d49f15f585d6bb4301fc4f89bce22af4e` | ⚠️ Unaudited |
+| DistributionModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x373114587ca96deb35a73ace1995dbed36adb24b` | ⚠️ Unaudited |
+| SwapperEngine | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf65b0c88f65d620ea325ffb1ad46a5ba8a6e57d3` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x06b964d96f5dcf7eae9d7c559b09edce244d4b8e` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x094b360ae512a65584d4f5be33d68b2e08677b89` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xa6cd248943f3d3415458b264e2c890ff422a4c01` | ⚠️ Unaudited |
+| Usd0 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xae12f6f805842e6dafe71a6d2b41b28ba5fc821e` | ⚠️ Unaudited |
+| Usd0PP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe7859a49e6fe8422add6aabd26a3231030dc96a8` | ⚠️ Unaudited |
+| UsualSP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x24a2461f3e67e82930c2df2ab032e9272a272f65` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -137,12 +137,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-400492 | `0x35d894...c69bc0` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-400493 | `0x73a15f...90acf5` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-400494 | `0x75cc0c...11e36a` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-400495 | `0x82dca2...8acfe9` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-400496 | `0xc4441c...0de38e` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | unit-400497 | `0x2b65f9...6a9c2f` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-400492 | `0x35d8949372d46b7a3d5a56006ae77b215fc69bc0` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-400493 | `0x73a15fed60bf67631dc6cd7bc5b6e8da8190acf5` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-400494 | `0x75cc0c0ddd2ccafe6ec415be686267588011e36a` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-400495 | `0x82dca22b48b14de38ccf83b03330120c4b8acfe9` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-400496 | `0xc4441c2be5d8fa8126822b9929ca0b81ea0de38e` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | unit-400497 | `0x2b65f9d2e4b84a2df6ff0525741b75d1276a9c2f` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -273,7 +273,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Rendered PDF capture | RewardAccrualBase | unmatched — not counted | — | mentioned in finding H-1 | no |
 | Rendered PDF capture | UsualX | unmatched — not counted | — | mentioned in finding H-2 | no |
 | L2 Tokens & Adapter Audit | L2Usd0Proxy | unmatched — not counted | — | listed in scope with address | no |
-| L2 Tokens & Adapter Audit | L2Usd0PPProxy | own contract | Usual (selected) `0x2b65f9...6a9c2f` — deployed 2024-11-13 13:08:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| L2 Tokens & Adapter Audit | L2Usd0PPProxy | own contract | Usual (selected) `0x2b65f9d2e4b84a2df6ff0525741b75d1276a9c2f` — deployed 2024-11-13 13:08:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Blackthorn Audit Report - WrappedM.pdf | Core | unmatched — not counted | — | listed in scope | no |
 | Blackthorn Audit Report - WrappedM.pdf | PositionLibrary | unmatched — not counted | — | listed in scope | no |
 | Blackthorn Audit Report - WrappedM.pdf | PositionValue | unmatched — not counted | — | listed in scope | no |
@@ -372,7 +372,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Sherlock - Usual Labs Public Audit Contest.pdf | SwapperEngine | unmatched — not counted | — | listed in scope | no |
 | Sherlock - Usual Labs Public Audit Contest.pdf | Usd0 | unmatched — not counted | — | listed in scope | no |
 | Sherlock - Usual Labs Public Audit Contest.pdf | Usd0PP | unmatched — not counted | — | listed in scope | no |
-| Sherlock - Usual Labs Public Audit Contest.pdf | Usual | own contract | Usual (selected) `0x2b65f9...6a9c2f` — deployed 2024-11-13 13:08:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Sherlock - Usual Labs Public Audit Contest.pdf | Usual | own contract | Usual (selected) `0x2b65f9d2e4b84a2df6ff0525741b75d1276a9c2f` — deployed 2024-11-13 13:08:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Sherlock - Usual Labs Public Audit Contest.pdf | UsualS | unmatched — not counted | — | listed in scope | no |
 | Sherlock - Usual Labs Public Audit Contest.pdf | UsualSP | unmatched — not counted | — | listed in scope | no |
 | Sherlock - Usual Labs Public Audit Contest.pdf | CheckAccessControl | unmatched — not counted | — | listed in scope | no |

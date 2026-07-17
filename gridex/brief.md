@@ -58,16 +58,16 @@ The protocol comprises 3 functional families. Its contracts share 3 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| GridFactory | unknown | base | n/a | [`0x32d1f0...efa19c`](./contracts/base-8453/0x32d1f0dce675902f89d72251db4ab1d728efa19c/) | ✅ Audited |
+| GridFactory | unknown | base | n/a | [`0x32d1f0dce675902f89d72251db4ab1d728efa19c`](./contracts/base-8453/0x32d1f0dce675902f89d72251db4ab1d728efa19c/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (4)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AggregateMulticall | unknown | base | n/a | [`0xdb3698...306595`](./contracts/base-8453/0xdb36980c07ba859613c786caa69ceba2b5306595/) | ⚠️ Unaudited |
-| GDX | unknown | arbitrum | n/a | [`0x2f2711...a6975d`](./contracts/arbitrum-42161/0x2f27118e3d2332afb7d165140cf1bb127ea6975d/) | ⚠️ Unaudited |
-| Quoter | unknown | base | n/a | [`0x320c95...6e69a3`](./contracts/base-8453/0x320c95b7e5728dae3e3ead997494c029d16e69a3/) | ⚠️ Unaudited |
-| SwapRouterHub | adapter | base | n/a | [`0x426b75...757733`](./contracts/base-8453/0x426b751aba5f49914bfbd4a1e45aee099d757733/) | ⚠️ Unaudited |
+| AggregateMulticall | unknown | base | n/a | [`0xdb36980c07ba859613c786caa69ceba2b5306595`](./contracts/base-8453/0xdb36980c07ba859613c786caa69ceba2b5306595/) | ⚠️ Unaudited |
+| GDX | unknown | arbitrum | n/a | [`0x2f27118e3d2332afb7d165140cf1bb127ea6975d`](./contracts/arbitrum-42161/0x2f27118e3d2332afb7d165140cf1bb127ea6975d/) | ⚠️ Unaudited |
+| Quoter | unknown | base | n/a | [`0x320c95b7e5728dae3e3ead997494c029d16e69a3`](./contracts/base-8453/0x320c95b7e5728dae3e3ead997494c029d16e69a3/) | ⚠️ Unaudited |
+| SwapRouterHub | adapter | base | n/a | [`0x426b751aba5f49914bfbd4a1e45aee099d757733`](./contracts/base-8453/0x426b751aba5f49914bfbd4a1e45aee099d757733/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -99,10 +99,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0xdb3698...306595`](./contracts/base-8453/0xdb36980c07ba859613c786caa69ceba2b5306595/) | AggregateMulticall | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x2f2711...a6975d`](./contracts/arbitrum-42161/0x2f27118e3d2332afb7d165140cf1bb127ea6975d/) | GDX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x320c95...6e69a3`](./contracts/base-8453/0x320c95b7e5728dae3e3ead997494c029d16e69a3/) | Quoter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x426b75...757733`](./contracts/base-8453/0x426b751aba5f49914bfbd4a1e45aee099d757733/) | SwapRouterHub | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xdb36980c07ba859613c786caa69ceba2b5306595`](./contracts/base-8453/0xdb36980c07ba859613c786caa69ceba2b5306595/) | AggregateMulticall | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x2f27118e3d2332afb7d165140cf1bb127ea6975d`](./contracts/arbitrum-42161/0x2f27118e3d2332afb7d165140cf1bb127ea6975d/) | GDX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x320c95b7e5728dae3e3ead997494c029d16e69a3`](./contracts/base-8453/0x320c95b7e5728dae3e3ead997494c029d16e69a3/) | Quoter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x426b751aba5f49914bfbd4a1e45aee099d757733`](./contracts/base-8453/0x426b751aba5f49914bfbd4a1e45aee099d757733/) | SwapRouterHub | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

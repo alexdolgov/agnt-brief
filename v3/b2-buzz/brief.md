@@ -52,17 +52,17 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x066466...bd2468`, chain 223)
-- UnnamedContract (`0x420000...000006`, chain 223)
-- UnnamedContract (`0x681202...c9dd62`, chain 223)
-- UnnamedContract (`0x7537c1...4f1462`, chain 223)
-- UnnamedContract (`0x7ebfce...f4bc00`, chain 223)
-- UnnamedContract (`0xa0f447...6a477e`, chain 223)
-- UnnamedContract (`0xc2fe4f...a525d5`, chain 223)
-- UnnamedContract (`0xc3ee2d...4a0d5c`, chain 223)
-- UnnamedContract (`0xd1b76c...3a848e`, chain 223)
-- UnnamedContract (`0xd48d3a...cb2a5a`, chain 223)
-- UnnamedContract (`0xe544e8...74b9e5`, chain 223)
+- UnnamedContract (`0x066466d7eaa56b60aaf0436dbda6f92db7bd2468`, chain 223)
+- UnnamedContract (`0x4200000000000000000000000000000000000006`, chain 223)
+- UnnamedContract (`0x681202351a488040fa4fdcc24188afb582c9dd62`, chain 223)
+- UnnamedContract (`0x7537c1f80c9e157ed7afd93a494be3e1f04f1462`, chain 223)
+- UnnamedContract (`0x7ebfce05e418c380a2b6eb0f65995ca04ef4bc00`, chain 223)
+- UnnamedContract (`0xa0f4470b714677aeece0d20074c540b3cf6a477e`, chain 223)
+- UnnamedContract (`0xc2fe4f673455ef92299770a09cdb5e8756a525d5`, chain 223)
+- UnnamedContract (`0xc3ee2df14b1bc526c24ed802f1873d49664a0d5c`, chain 223)
+- UnnamedContract (`0xd1b76c0f58c6d65e396f98caea94cd717c3a848e`, chain 223)
+- UnnamedContract (`0xd48d3a551757ac47655fce25bde1b0b6b1cb2a5a`, chain 223)
+- UnnamedContract (`0xe544e8a38add9b1abf21922090445ba93f74b9e5`, chain 223)
 
 ## Contract Surface Quality
 
@@ -108,9 +108,9 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| B2Token | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x783c3f...6ee2a2` | ⚠️ Unaudited |
-| GnosisSafe | unknown | external_dependency_or_infra | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xeea3a0...13c42c` | ⚠️ Unaudited |
-| GnosisSafeProxy | unknown | external_dependency_or_infra | standard_proxy_or_library (excluded) | 1 | polygon | n/a | `0x01ce88...cd184a` | ⚠️ Unaudited |
+| B2Token | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x783c3f003f172c6ac5ac700218a357d2d66ee2a2` | ⚠️ Unaudited |
+| GnosisSafe | unknown | external_dependency_or_infra | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xeea3a032f381ab1e415e82fe08ebeb20f513c42c` | ⚠️ Unaudited |
+| GnosisSafeProxy | unknown | external_dependency_or_infra | standard_proxy_or_library (excluded) | 1 | polygon | n/a | `0x01ce88498ed095d386e09834d32fd8f1fecd184a` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -130,17 +130,17 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | b2 | unit-380278 | `0x066466...bd2468` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | b2 | unit-380279 | `0x420000...000006` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | b2 | unit-380280 | `0x681202...c9dd62` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | b2 | unit-380281 | `0x7537c1...4f1462` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | b2 | unit-380282 | `0x7ebfce...f4bc00` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | b2 | unit-380283 | `0xa0f447...6a477e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | b2 | unit-380284 | `0xc2fe4f...a525d5` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | b2 | unit-380285 | `0xc3ee2d...4a0d5c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | b2 | unit-380286 | `0xd1b76c...3a848e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | b2 | unit-380287 | `0xd48d3a...cb2a5a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | b2 | unit-380288 | `0xe544e8...74b9e5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | b2 | unit-380278 | `0x066466d7eaa56b60aaf0436dbda6f92db7bd2468` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | b2 | unit-380279 | `0x4200000000000000000000000000000000000006` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | b2 | unit-380280 | `0x681202351a488040fa4fdcc24188afb582c9dd62` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | b2 | unit-380281 | `0x7537c1f80c9e157ed7afd93a494be3e1f04f1462` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | b2 | unit-380282 | `0x7ebfce05e418c380a2b6eb0f65995ca04ef4bc00` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | b2 | unit-380283 | `0xa0f4470b714677aeece0d20074c540b3cf6a477e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | b2 | unit-380284 | `0xc2fe4f673455ef92299770a09cdb5e8756a525d5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | b2 | unit-380285 | `0xc3ee2df14b1bc526c24ed802f1873d49664a0d5c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | b2 | unit-380286 | `0xd1b76c0f58c6d65e396f98caea94cd717c3a848e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | b2 | unit-380287 | `0xd48d3a551757ac47655fce25bde1b0b6b1cb2a5a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | b2 | unit-380288 | `0xe544e8a38add9b1abf21922090445ba93f74b9e5` | ❓ Unverified |
 
 ## Audit Inventory
 

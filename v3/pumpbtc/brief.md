@@ -56,9 +56,9 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x429230...5922de`, chain 1)
-- UnnamedContract (`0x6f5ec7...7d7d90`, chain 1)
-- UnnamedContract (`0xea659b...9aeea0`, chain 1)
+- UnnamedContract (`0x42923035de476c2b1eb12addd04ddb4d445922de`, chain 1)
+- UnnamedContract (`0x6f5ec7c65c2744a963064f6d49df0f4eea7d7d90`, chain 1)
+- UnnamedContract (`0xea659b615b48ec6e2d55cd82fcbe5f43d79aeea0`, chain 1)
 
 ## Contract Surface Quality
 
@@ -122,11 +122,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251970 | `0x429230...5922de` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-251971 | `0x6ce4ef...2c915f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251972 | `0x6f5ec7...7d7d90` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-251973 | `0x85c4f8...bfe97d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251974 | `0xea659b...9aeea0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251970 | `0x42923035de476c2b1eb12addd04ddb4d445922de` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-251971 | `0x6ce4ef3689f26edd40ed3ccbe3cc29dab62c915f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251972 | `0x6f5ec7c65c2744a963064f6d49df0f4eea7d7d90` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-251973 | `0x85c4f855bc0609d2584405819edaea3adabfe97d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251974 | `0xea659b615b48ec6e2d55cd82fcbe5f43d79aeea0` | ❓ Unverified |
 
 ## Audit Inventory
 

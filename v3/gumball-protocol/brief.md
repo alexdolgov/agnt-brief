@@ -90,13 +90,13 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| CollectionContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0031de...18894b` | ⚠️ Unaudited |
-| GBTFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x040f6b...f24d93` | ⚠️ Unaudited |
-| GNFTFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x07b4aa...014e9a` | ⚠️ Unaudited |
-| GumBallFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x039dda...ada011` | ⚠️ Unaudited |
-| Multicall | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | n/a | `0x09dc9d...097c1c` | ⚠️ Unaudited |
-| XGBTFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x00df73...c4ff3a` | ⚠️ Unaudited |
-| Zapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x19c921...ee9ca1` | ⚠️ Unaudited |
+| CollectionContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0031def3a612141ed025a3233366df86b518894b` | ⚠️ Unaudited |
+| GBTFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x040f6b1b3d80c470daf2e28237b332e22bf24d93` | ⚠️ Unaudited |
+| GNFTFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x07b4aa89f1ca11175dd1cd0898d8fa5a53014e9a` | ⚠️ Unaudited |
+| GumBallFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x039dda37bed29cd05a02c31f5961056f60ada011` | ⚠️ Unaudited |
+| Multicall | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | n/a | `0x09dc9d209964417018fc302038eaf5ef30097c1c` | ⚠️ Unaudited |
+| XGBTFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x00df73be2643e2f57cb81ceb5ca11837c3c4ff3a` | ⚠️ Unaudited |
+| Zapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x19c921e19fb2ebb479dfccc80eb33745c9ee9ca1` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

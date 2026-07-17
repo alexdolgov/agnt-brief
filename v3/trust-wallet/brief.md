@@ -52,15 +52,15 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x0b9504...52e1e0`, chain 1)
-- UnnamedContract (`0x2e7f1d...64728d`, chain 1)
-- UnnamedContract (`0x3143e1...e34daa`, chain 1)
-- UnnamedContract (`0x729c31...83272a`, chain 1)
-- UnnamedContract (`0xafcb70...4f2c33`, chain 1)
-- UnnamedContract (`0xcbe266...5521a8`, chain 1)
-- UnnamedContract (`0xce36b8...84ac7c`, chain 1)
-- UnnamedContract (`0xee1af8...fd33e6`, chain 1)
-- UnnamedContract (`0xfde532...728332`, chain 1)
+- UnnamedContract (`0x0b9504140771c3688ff041917192277d2f52e1e0`, chain 1)
+- UnnamedContract (`0x2e7f1dae1f3799d20f5c31befdc7a620f664728d`, chain 1)
+- UnnamedContract (`0x3143e1c0af0cdc153423863923cf4e3818e34daa`, chain 1)
+- UnnamedContract (`0x729c310186a57833f622630a16d13f710b83272a`, chain 1)
+- UnnamedContract (`0xafcb70e6e9514e2a15b23a01d2a9b9f7a34f2c33`, chain 1)
+- UnnamedContract (`0xcbe266adbfd7cb32988128e7f37b7c8b3c5521a8`, chain 1)
+- UnnamedContract (`0xce36b85d12d81cd619c745c7717f3396e184ac7c`, chain 1)
+- UnnamedContract (`0xee1af8e967ec04c84711842796a5e714d2fd33e6`, chain 1)
+- UnnamedContract (`0xfde53272dcd7938d16e031a6989753c321728332`, chain 1)
 
 ## Contract Surface Quality
 
@@ -106,19 +106,19 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AgTokenSideChainMultiBridgeNameable | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe91698...0ec84c` | ⚠️ Unaudited |
-| bscSUNDOG | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xdc419c...1936a7` | ⚠️ Unaudited |
-| DistributionCreator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 3 deployments: bsc `0x46a9e9...c57829`; bsc `0x99fe85...924012`; bsc `0xc42b7a...3229d5` | ⚠️ Unaudited |
-| Distributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 4 deployments: bsc `0x04a7d1...65c199`; bsc `0x4195fa...a6a9a7`; bsc `0x44e3d3...628819`; bsc `0xa0e088...f53de4` | ⚠️ Unaudited |
-| ERC1967Proxy | proxy | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0x147f41...54c52d`; bsc `0xedbebe...8c24ba` | ⚠️ Unaudited |
-| PointToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x1276d6...7932db` | ⚠️ Unaudited |
-| PullTokenWrapperAllow | token | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc9dfd5...e0c45b` | ⚠️ Unaudited |
-| RadiantMerklTokenWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | 2 deployments: bsc `0x1c6f6e...914442`; bsc `0x954ec7...7e1895` | ⚠️ Unaudited |
-| RadiantMerklTokenWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0xc3ef7e...eb5c5c`; bsc `0xe04db2...f5fd21` | ⚠️ Unaudited |
-| SavingsNameable | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xb5ecaa...d706bf` | ⚠️ Unaudited |
-| Token | token | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x799a29...7a872b` | ⚠️ Unaudited |
-| TokenLocker | token | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 4 deployments: bsc `0x0e7dd5...002c25`; bsc `0x3bffd2...0146b9`; bsc `0x5029f4...bfc2ed`; bsc `0x63dc02...cd740b` | ⚠️ Unaudited |
-| TrustWalletToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x4b0f18...508003` | ⚠️ Unaudited |
+| AgTokenSideChainMultiBridgeNameable | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe9169817edbfe5fcf629ed8b3c2a34e2a50ec84c` | ⚠️ Unaudited |
+| bscSUNDOG | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xdc419cfe5454bf58001f131e98cf2065e11936a7` | ⚠️ Unaudited |
+| DistributionCreator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 3 deployments: bsc `0x46a9e9434dac9baa1f95a5129f04aef6c8c57829`; bsc `0x99fe8557a8f322525262720c52b7d57c56924012`; bsc `0xc42b7a34cb37ee450cc8059b10d839e4753229d5` | ⚠️ Unaudited |
+| Distributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 4 deployments: bsc `0x04a7d169c5b14d2e29a3ba8b5071dda5e365c199`; bsc `0x4195faaba1cbad584fe2fec711d788cdb9a6a9a7`; bsc `0x44e3d3bba34e16a67c633daf86114284fc628819`; bsc `0xa0e088fb02a8d5a71d337b88b7629b0413f53de4` | ⚠️ Unaudited |
+| ERC1967Proxy | proxy | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0x147f4163756db2eee9092bb848603a9e7054c52d`; bsc `0xedbebe204ef070b6880e07a28b55edc7748c24ba` | ⚠️ Unaudited |
+| PointToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x1276d63baef24d316383be594b8f978a507932db` | ⚠️ Unaudited |
+| PullTokenWrapperAllow | token | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc9dfd5c18f12a3ba6293001700810602efe0c45b` | ⚠️ Unaudited |
+| RadiantMerklTokenWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | 2 deployments: bsc `0x1c6f6e2b226d99af2c34d875a03e055492914442`; bsc `0x954ec713a3915b504a6f288563e5218f597e1895` | ⚠️ Unaudited |
+| RadiantMerklTokenWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0xc3ef7ed4f97450ae8da2473068375788bdeb5c5c`; bsc `0xe04db2ba949a9e65b4bf52b11a0f9f221cf5fd21` | ⚠️ Unaudited |
+| SavingsNameable | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xb5ecaa1a867feccd6d87604bc16a2b6b53d706bf` | ⚠️ Unaudited |
+| Token | token | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x799a290f9cc4085a0ce5b42b5f2c30193a7a872b` | ⚠️ Unaudited |
+| TokenLocker | token | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 4 deployments: bsc `0x0e7dd56f7d2cadc066b992cec58253190f002c25`; bsc `0x3bffd2ee930c506e91453b74e7c0214da60146b9`; bsc `0x5029f49585d57ed770d2194841b5a0be06bfc2ed`; bsc `0x63dc02bb25e7bf7eaa0e42e71d785a388acd740b` | ⚠️ Unaudited |
+| TrustWalletToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x4b0f1812e5df2a09796481ff14017e6005508003` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -138,17 +138,17 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394353 | `0x0b9504...52e1e0` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394356 | `0x2e7f1d...64728d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394358 | `0x3143e1...e34daa` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394360 | `0x729c31...83272a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394361 | `0xafcb70...4f2c33` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394362 | `0xcbe266...5521a8` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394363 | `0xce36b8...84ac7c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394365 | `0xee1af8...fd33e6` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394367 | `0xfde532...728332` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x22b0ac...c47f5e` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe0e2a2...0a32e3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394353 | `0x0b9504140771c3688ff041917192277d2f52e1e0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394356 | `0x2e7f1dae1f3799d20f5c31befdc7a620f664728d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394358 | `0x3143e1c0af0cdc153423863923cf4e3818e34daa` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394360 | `0x729c310186a57833f622630a16d13f710b83272a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394361 | `0xafcb70e6e9514e2a15b23a01d2a9b9f7a34f2c33` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394362 | `0xcbe266adbfd7cb32988128e7f37b7c8b3c5521a8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394363 | `0xce36b85d12d81cd619c745c7717f3396e184ac7c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394365 | `0xee1af8e967ec04c84711842796a5e714d2fd33e6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394367 | `0xfde53272dcd7938d16e031a6989753c321728332` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x22b0ac22d5d58f05873e470bca5db7ceb5c47f5e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe0e2a29b69e6600e37000d1bdbccbe523f0a32e3` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -190,12 +190,12 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Kudelski_Trust_Wallet_Audit_efeddfb567.pdf | starknet-curve | unmatched — not counted | — | listed in scope table | no |
 | Kudelski_Trust_Wallet_Audit_efeddfb567.pdf | starknet-ff | unmatched — not counted | — | listed in scope table | no |
 | Kudelski_Trust_Wallet_Audit_efeddfb567.pdf | key_pairs.rs | unmatched — not counted | — | listed in scope table | no |
-| Certik_Trustwallet_barz_Audit_ec38067a76.pdf | DiamondCutFacet | own contract | 0x0b9504… (selected) `0x0b9504...52e1e0` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Certik_Trustwallet_barz_Audit_ec38067a76.pdf | DiamondCutFacet | own contract | 0x0b9504… (selected) `0x0b9504140771c3688ff041917192277d2f52e1e0` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | LibDiamond | unmatched — not counted | — | listed in scope table | no |
-| Certik_Trustwallet_barz_Audit_ec38067a76.pdf | DiamondLoupeFacet | own contract | 0xce36b8… (selected) `0xce36b8...84ac7c` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Certik_Trustwallet_barz_Audit_ec38067a76.pdf | DiamondLoupeFacet | own contract | 0xce36b8… (selected) `0xce36b85d12d81cd619c745c7717f3396e184ac7c` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | Secp256k1VerificationFacet | unmatched — not counted | — | listed in scope table | no |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | LibSecp256r1 | unmatched — not counted | — | listed in scope table | no |
-| Certik_Trustwallet_barz_Audit_ec38067a76.pdf | AccountFacet | own contract | 0xfde532… (selected) `0xfde532...728332` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Certik_Trustwallet_barz_Audit_ec38067a76.pdf | AccountFacet | own contract | 0xfde532… (selected) `0xfde53272dcd7938d16e031a6989753c321728332` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | AccountRecoveryFacet | unmatched — not counted | — | listed in scope table | no |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | GuardianFacet | unmatched — not counted | — | listed in scope table | no |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | LockFacet | unmatched — not counted | — | listed in scope table | no |
@@ -213,14 +213,14 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | ISignatureMigrationFacet | unmatched — not counted | — | listed in scope table | no |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | IVerificationFacet | unmatched — not counted | — | listed in scope table | no |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | Base64 | unmatched — not counted | — | listed in scope table | no |
-| Certik_Trustwallet_barz_Audit_ec38067a76.pdf | Secp256r1VerificationFacet | own contract | 0xee1af8… (selected) `0xee1af8...fd33e6` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Certik_Trustwallet_barz_Audit_ec38067a76.pdf | Secp256r1VerificationFacet | own contract | 0xee1af8… (selected) `0xee1af8e967ec04c84711842796a5e714d2fd33e6` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | Modifiers | unmatched — not counted | — | listed in scope table | no |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | IFacetRegistry | unmatched — not counted | — | listed in scope table | no |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | IGuardianStorage | unmatched — not counted | — | listed in scope table | no |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | ISecurityManager | unmatched — not counted | — | listed in scope table | no |
-| Certik_Trustwallet_barz_Audit_ec38067a76.pdf | FacetRegistry | own contract | 0xafcb70… (selected) `0xafcb70...4f2c33` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Certik_Trustwallet_barz_Audit_ec38067a76.pdf | FacetRegistry | own contract | 0xafcb70… (selected) `0xafcb70e6e9514e2a15b23a01d2a9b9f7a34f2c33` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | RemoteStorage | unmatched — not counted | — | listed in scope table | no |
-| Certik_Trustwallet_barz_Audit_ec38067a76.pdf | SecurityManager | own contract | 0xcbe266… (selected) `0xcbe266...5521a8` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Certik_Trustwallet_barz_Audit_ec38067a76.pdf | SecurityManager | own contract | 0xcbe266… (selected) `0xcbe266adbfd7cb32988128e7f37b7c8b3c5521a8` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | WhitelistStorage | unmatched — not counted | — | listed in scope table | no |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | IERC1155 | unmatched — not counted | — | listed in scope table | no |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | IERC20 | unmatched — not counted | — | listed in scope table | no |
@@ -235,29 +235,29 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | WhitelistRestriction | unmatched — not counted | — | listed in scope table | no |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | DiamondInit | unmatched — not counted | — | listed in scope table | no |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | Barz | unmatched — not counted | — | listed in scope table | no |
-| Certik_Trustwallet_barz_Audit_ec38067a76.pdf | BarzFactory | own contract | 0x729c31… (selected) `0x729c31...83272a` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Certik_Trustwallet_barz_Audit_ec38067a76.pdf | TokenReceiverFacet | own contract | 0x3143e1… (selected) `0x3143e1...e34daa` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Halborn_Trustwallet_barz_Audit_1ef8a1f069.pdf | AccountFacet | own contract | 0xfde532… (selected) `0xfde532...728332` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Certik_Trustwallet_barz_Audit_ec38067a76.pdf | BarzFactory | own contract | 0x729c31… (selected) `0x729c310186a57833f622630a16d13f710b83272a` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Certik_Trustwallet_barz_Audit_ec38067a76.pdf | TokenReceiverFacet | own contract | 0x3143e1… (selected) `0x3143e1c0af0cdc153423863923cf4e3818e34daa` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Halborn_Trustwallet_barz_Audit_1ef8a1f069.pdf | AccountFacet | own contract | 0xfde532… (selected) `0xfde53272dcd7938d16e031a6989753c321728332` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Halborn_Trustwallet_barz_Audit_1ef8a1f069.pdf | AccountRecoveryFacet | unmatched — not counted | — | listed in scope | no |
 | Halborn_Trustwallet_barz_Audit_1ef8a1f069.pdf | GuardianFacet | unmatched — not counted | — | listed in scope | no |
 | Halborn_Trustwallet_barz_Audit_1ef8a1f069.pdf | LockFacet | unmatched — not counted | — | listed in scope | no |
 | Halborn_Trustwallet_barz_Audit_1ef8a1f069.pdf | RestrictionsFacet | unmatched — not counted | — | listed in scope | no |
 | Halborn_Trustwallet_barz_Audit_1ef8a1f069.pdf | SignatureMigrationFacet | unmatched — not counted | — | listed in scope | no |
 | Halborn_Trustwallet_barz_Audit_1ef8a1f069.pdf | Barz | unmatched — not counted | — | listed in scope | no |
-| Halborn_Trustwallet_barz_Audit_1ef8a1f069.pdf | BarzFactory | own contract | 0x729c31… (selected) `0x729c31...83272a` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Halborn_Trustwallet_barz_Audit_1ef8a1f069.pdf | BarzFactory | own contract | 0x729c31… (selected) `0x729c310186a57833f622630a16d13f710b83272a` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Halborn_Trustwallet_barz_Audit_1ef8a1f069.pdf | LibAppStorage | unmatched — not counted | — | listed in scope | no |
 | Halborn_Trustwallet_barz_Audit_1ef8a1f069.pdf | LibDiamond | unmatched — not counted | — | listed in scope | no |
 | Halborn_Trustwallet_barz_Audit_1ef8a1f069.pdf | LibFacetStorage | unmatched — not counted | — | listed in scope | no |
 | Halborn_Trustwallet_barz_Audit_1ef8a1f069.pdf | LibRecoverSpender | unmatched — not counted | — | listed in scope | no |
-| Halborn_Trustwallet_barz_Audit_1ef8a1f069.pdf | TokenReceiverFacet | own contract | 0x3143e1… (selected) `0x3143e1...e34daa` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Halborn_Trustwallet_barz_Audit_1ef8a1f069.pdf | TokenReceiverFacet | own contract | 0x3143e1… (selected) `0x3143e1c0af0cdc153423863923cf4e3818e34daa` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Trust_Wallet_Amber_Halborn_Executive_Summary_af658170eb.pdf | AmberGateway | unmatched — not counted | — | listed in scope | no |
 | Trust_Wallet_Amber_Halborn_Executive_Summary_af658170eb.pdf | StargateReceiver | unmatched — not counted | — | listed in scope | no |
 | Trust_Wallet_Amber_Halborn_Executive_Summary_af658170eb.pdf | LibDiamond | unmatched — not counted | — | listed in scope | no |
 | Trust_Wallet_Amber_Halborn_Executive_Summary_af658170eb.pdf | Core | unmatched — not counted | — | listed in scope | no |
 | Trust_Wallet_Amber_Halborn_Executive_Summary_af658170eb.pdf | ReentrancyGuardian | unmatched — not counted | — | listed in scope | no |
 | Trust_Wallet_Amber_Halborn_Executive_Summary_af658170eb.pdf | AssetManagerFacet | unmatched — not counted | — | listed in scope | no |
-| Trust_Wallet_Amber_Halborn_Executive_Summary_af658170eb.pdf | DiamondCutFacet | own contract | 0x0b9504… (selected) `0x0b9504...52e1e0` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Trust_Wallet_Amber_Halborn_Executive_Summary_af658170eb.pdf | DiamondLoupeFacet | own contract | 0xce36b8… (selected) `0xce36b8...84ac7c` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Trust_Wallet_Amber_Halborn_Executive_Summary_af658170eb.pdf | DiamondCutFacet | own contract | 0x0b9504… (selected) `0x0b9504140771c3688ff041917192277d2f52e1e0` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Trust_Wallet_Amber_Halborn_Executive_Summary_af658170eb.pdf | DiamondLoupeFacet | own contract | 0xce36b8… (selected) `0xce36b85d12d81cd619c745c7717f3396e184ac7c` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Trust_Wallet_Amber_Halborn_Executive_Summary_af658170eb.pdf | OwnershipFacet | unmatched — not counted | — | listed in scope | no |
 | Trust_Wallet_Amber_Halborn_Executive_Summary_af658170eb.pdf | BaseDex | unmatched — not counted | — | listed in scope | no |
 | Trust_Wallet_Amber_Halborn_Executive_Summary_af658170eb.pdf | KyberSwapFacet | unmatched — not counted | — | listed in scope | no |

@@ -61,14 +61,14 @@ The protocol comprises 4 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| GnosisSafe | governance | ethereum | n/a | [`0xc5bf7a...23a54f`](./contracts/ethereum-1/0xc5bf7a684a0dfca02a1e603b1d27af0af523a54f/) | ⚠️ Unaudited |
-| Kromatika | unknown | ethereum | n/a | [`0x3af33b...a4d789`](./contracts/ethereum-1/0x3af33bef05c2dcb3c7288b77fe1c8d2aeba4d789/) | ⚠️ Unaudited |
-| KromatikaSwapRouter | adapter | arbitrum | n/a | 2 deployments: arbitrum [`0x7054d0...5bb034`](./contracts/arbitrum-42161/0x7054d002db18a10c31683ec1a8515589c65bb034/); arbitrum `0xa3e49d...dbe70a` | ⚠️ Unaudited |
-| L2StandardERC20 | token | optimism | n/a | [`0xf98dcd...590b07`](./contracts/optimism-10/0xf98dcd95217e15e05d8638da4c91125e59590b07/) | ⚠️ Unaudited |
-| ProxyAdmin | governance | arbitrum | n/a | 2 deployments: polygon `0xe32e81...6e5a78`; arbitrum [`0x506013...b0cea2`](./contracts/arbitrum-42161/0x50601357a041ab311ccf57d4bf2ed978b2b0cea2/) | ⚠️ Unaudited |
-| StandardArbERC20 | token | arbitrum | n/a | [`0x55ff62...a4bf70`](./contracts/arbitrum-42161/0x55ff62567f09906a85183b866df84bf599a4bf70/) | ⚠️ Unaudited |
-| UChildERC20 | token | polygon | n/a | [`0x14af1f...63b83c`](./contracts/polygon-137/0x14af1f2f02dccb1e43402339099a05a5e363b83c/) | ⚠️ Unaudited |
-| UniswapUtils | unknown | arbitrum | n/a | [`0xfe6386...c4551d`](./contracts/arbitrum-42161/0xfe63860c1edd297256863a393a6a0ec512c4551d/) | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | n/a | [`0xc5bf7a684a0dfca02a1e603b1d27af0af523a54f`](./contracts/ethereum-1/0xc5bf7a684a0dfca02a1e603b1d27af0af523a54f/) | ⚠️ Unaudited |
+| Kromatika | unknown | ethereum | n/a | [`0x3af33bef05c2dcb3c7288b77fe1c8d2aeba4d789`](./contracts/ethereum-1/0x3af33bef05c2dcb3c7288b77fe1c8d2aeba4d789/) | ⚠️ Unaudited |
+| KromatikaSwapRouter | adapter | arbitrum | n/a | 2 deployments: arbitrum [`0x7054d002db18a10c31683ec1a8515589c65bb034`](./contracts/arbitrum-42161/0x7054d002db18a10c31683ec1a8515589c65bb034/); arbitrum `0xa3e49d899dd5ebcbc1ae6f2093b0de1db5dbe70a` | ⚠️ Unaudited |
+| L2StandardERC20 | token | optimism | n/a | [`0xf98dcd95217e15e05d8638da4c91125e59590b07`](./contracts/optimism-10/0xf98dcd95217e15e05d8638da4c91125e59590b07/) | ⚠️ Unaudited |
+| ProxyAdmin | governance | arbitrum | n/a | 2 deployments: polygon `0xe32e817b23b0ff21ac4e6be13e624d53e66e5a78`; arbitrum [`0x50601357a041ab311ccf57d4bf2ed978b2b0cea2`](./contracts/arbitrum-42161/0x50601357a041ab311ccf57d4bf2ed978b2b0cea2/) | ⚠️ Unaudited |
+| StandardArbERC20 | token | arbitrum | n/a | [`0x55ff62567f09906a85183b866df84bf599a4bf70`](./contracts/arbitrum-42161/0x55ff62567f09906a85183b866df84bf599a4bf70/) | ⚠️ Unaudited |
+| UChildERC20 | token | polygon | n/a | [`0x14af1f2f02dccb1e43402339099a05a5e363b83c`](./contracts/polygon-137/0x14af1f2f02dccb1e43402339099a05a5e363b83c/) | ⚠️ Unaudited |
+| UniswapUtils | unknown | arbitrum | n/a | [`0xfe63860c1edd297256863a393a6a0ec512c4551d`](./contracts/arbitrum-42161/0xfe63860c1edd297256863a393a6a0ec512c4551d/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -88,45 +88,45 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | polygon | n/a | `0x026d63...b89ec4` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x03f490...d42ae1` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x044d57...9cf92c` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x05bf32...c4f877` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x0b9d3e...619216` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x113e3d...787573` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x1d732c...c0e153` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x1ee02e...31d403` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x212b2e...e4072b` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x2618bb...e7c0c2` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x396c3b...7f345e` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x3bd1ba...09e96c` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x461d09...f98216` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x47f374...487289` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x7c1bc6...2fca68` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x836c40...0b0770` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x89c756...1cf93d` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x8b28ff...5bd492` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x90c9c1...43c5d6` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x91d44f...c6a436` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x951e4a...8b684a` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x9c75f6...aaac17` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xa08f44...0983c8` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xa1a527...346688` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xa7bf78...c6db2b` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xa891e5...afd68a` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xc64a76...522826` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xe17537...634d9a` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xecbf2e...0211a8` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xf86a27...da0140` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xf9a270...bc16fb` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xfc2e6d...8ccd68` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xfe5bc8...280627` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x02c282...5fc6f0` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x37bb03...5ceccf` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x79ba1c...71ea39` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x90ae03...a2dad4` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xe2cd12...be58bf` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xf337b9...f455df` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x026d63a16a5c1c28e49539780aef7fb47eb89ec4` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x03f490ae5b59e428e6692059d0dca1b87ed42ae1` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x044d57daa8f8a2d9e654eb57e392b942659cf92c` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x05bf32991047018b820ab523a67bfa1ff3c4f877` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x0b9d3e0bbb8c7c0770b2a8c973c0efdc54619216` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x113e3d66fc1dca711a96442b8dc92784df787573` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x1d732cf8e4670b630350cfbe207f0f408dc0e153` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x1ee02ed1fc6e4b032eaa75970f5ed3059831d403` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x212b2e9559832bbcc42966290863bbfdbce4072b` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x2618bb612eb29fefb6f680fc89cd7df2d0e7c0c2` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x396c3bbcefb7f02c32bba676f704e02a367f345e` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x3bd1ba9a36b00abdd7112aa5045cc11e0309e96c` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x461d097b57a52481a58900dd9ba5be1238f98216` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x47f374c754ac822a63dda425792e99c741487289` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x7c1bc6451d978b1564c0f76dfeed01146c2fca68` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x836c40a54378863d1638ab1cf05be4589f0b0770` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x89c75638f6e51e06bf8e0b725a2e089a951cf93d` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x8b28ffb5d552fab33f25829bf7471a93995bd492` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x90c9c12a5dea6d823f45aee812eff88bbf43c5d6` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x91d44fa5595f7e54cc0aeaa3516455e606c6a436` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x951e4a39939d9180c05c0601a4022fcbf28b684a` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x9c75f64f2c7f145a927d773518a8fe55e7aaac17` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xa08f44348c09f83d8c7654915d87f08b590983c8` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xa1a527624990d9822e082ac0464bb1aba5346688` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xa7bf78dbb550ba5536d02923622aab314ac6db2b` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xa891e597daa2fef67e91cd0c1ce59a93f4afd68a` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xc64a76e4fb73f2f8279d1a83c78fcfb7f7522826` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xe1753789536d3b2c784753b81121852aa3634d9a` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xecbf2ef782cca926e112b44105a3dfda430211a8` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xf86a271ae1086289d182a2ea53423518f5da0140` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xf9a2703cf2103cd3ad26ddbbbabe4c0ca1bc16fb` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xfc2e6df85dffc4a0549e9db86246deea2d8ccd68` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xfe5bc845ad6f96328c46a0a65c3d5db750280627` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x02c282f60fb2f3299458c2b85eb7e303b25fc6f0` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x37bb03a0c5464da8886d40f733e1d383d75ceccf` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x79ba1cff3998d7ce3df452c3fd6fcf817971ea39` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x90ae03f8a0f9942ba02ab6c45cf7e0b905a2dad4` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xe2cd1207bcdd157e8466f9fe15dba8f678be58bf` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xf337b98a20e765d02a8b7e809440877749f455df` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -141,11 +141,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x3af33b...a4d789`](./contracts/ethereum-1/0x3af33bef05c2dcb3c7288b77fe1c8d2aeba4d789/) | Kromatika | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x7054d0...5bb034`](./contracts/arbitrum-42161/0x7054d002db18a10c31683ec1a8515589c65bb034/) | KromatikaSwapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0xf98dcd...590b07`](./contracts/optimism-10/0xf98dcd95217e15e05d8638da4c91125e59590b07/) | L2StandardERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x55ff62...a4bf70`](./contracts/arbitrum-42161/0x55ff62567f09906a85183b866df84bf599a4bf70/) | StandardArbERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x14af1f...63b83c`](./contracts/polygon-137/0x14af1f2f02dccb1e43402339099a05a5e363b83c/) | UChildERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x3af33bef05c2dcb3c7288b77fe1c8d2aeba4d789`](./contracts/ethereum-1/0x3af33bef05c2dcb3c7288b77fe1c8d2aeba4d789/) | Kromatika | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x7054d002db18a10c31683ec1a8515589c65bb034`](./contracts/arbitrum-42161/0x7054d002db18a10c31683ec1a8515589c65bb034/) | KromatikaSwapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | [`0xf98dcd95217e15e05d8638da4c91125e59590b07`](./contracts/optimism-10/0xf98dcd95217e15e05d8638da4c91125e59590b07/) | L2StandardERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x55ff62567f09906a85183b866df84bf599a4bf70`](./contracts/arbitrum-42161/0x55ff62567f09906a85183b866df84bf599a4bf70/) | StandardArbERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x14af1f2f02dccb1e43402339099a05a5e363b83c`](./contracts/polygon-137/0x14af1f2f02dccb1e43402339099a05a5e363b83c/) | UChildERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

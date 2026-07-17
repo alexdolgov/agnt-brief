@@ -62,8 +62,8 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| RewardSupplier | unknown | ethereum | n/a | [`0xca1406...be9ff5`](./contracts/ethereum-1/0xca1406d57ed09947e68de121316c87113fbe9ff5/) | ⚠️ Unaudited |
-| StarkNetToken | token | ethereum | n/a | [`0xca1400...d42766`](./contracts/ethereum-1/0xca14007eff0db1f8135f4c25b34de49ab0d42766/) | ⚠️ Unaudited |
+| RewardSupplier | unknown | ethereum | n/a | [`0xca1406d57ed09947e68de121316c87113fbe9ff5`](./contracts/ethereum-1/0xca1406d57ed09947e68de121316c87113fbe9ff5/) | ⚠️ Unaudited |
+| StarkNetToken | token | ethereum | n/a | [`0xca14007eff0db1f8135f4c25b34de49ab0d42766`](./contracts/ethereum-1/0xca14007eff0db1f8135f4c25b34de49ab0d42766/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -96,8 +96,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xca1406...be9ff5`](./contracts/ethereum-1/0xca1406d57ed09947e68de121316c87113fbe9ff5/) | RewardSupplier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xca1400...d42766`](./contracts/ethereum-1/0xca14007eff0db1f8135f4c25b34de49ab0d42766/) | StarkNetToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xca1406d57ed09947e68de121316c87113fbe9ff5`](./contracts/ethereum-1/0xca1406d57ed09947e68de121316c87113fbe9ff5/) | RewardSupplier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xca14007eff0db1f8135f4c25b34de49ab0d42766`](./contracts/ethereum-1/0xca14007eff0db1f8135f4c25b34de49ab0d42766/) | StarkNetToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

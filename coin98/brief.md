@@ -65,32 +65,32 @@ Total inherited audits: 5. Inherited coverage reflects forked/shared code audite
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Coin98 | unknown | bsc | n/a | [`0x0ece57...f1d743`](./contracts/bsc-56/0x0ece57a677d5e72d1ad45774239e23463cf1d743/) | ✅ Audited |
-| Coin98Vault | unknown | bsc | n/a | [`0x7d0e48...e2062e`](./contracts/bsc-56/0x7d0e482df667780a1d75072acb720078dbe2062e/) | ✅ Audited |
-| Coin98VaultFactory | unknown | bsc | n/a | [`0x2b9b7d...d04e84`](./contracts/bsc-56/0x2b9b7dd36e8754debf2e37cdda64f3d080d04e84/) | ✅ Audited |
+| Coin98 | unknown | bsc | n/a | [`0x0ece57a677d5e72d1ad45774239e23463cf1d743`](./contracts/bsc-56/0x0ece57a677d5e72d1ad45774239e23463cf1d743/) | ✅ Audited |
+| Coin98Vault | unknown | bsc | n/a | [`0x7d0e482df667780a1d75072acb720078dbe2062e`](./contracts/bsc-56/0x7d0e482df667780a1d75072acb720078dbe2062e/) | ✅ Audited |
+| Coin98VaultFactory | unknown | bsc | n/a | [`0x2b9b7dd36e8754debf2e37cdda64f3d080d04e84`](./contracts/bsc-56/0x2b9b7dd36e8754debf2e37cdda64f3d080d04e84/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (18)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Address | unknown | bsc | n/a | [`0x8f2beb...c338d1`](./contracts/bsc-56/0x8f2bebc9298aed2a9ba51b46458f97c483c338d1/) | ⚠️ Unaudited |
-| BaryonFire | unknown | bsc | n/a | [`0x19c3f7...9a41b1`](./contracts/bsc-56/0x19c3f76f054e9147d448a39aa1b49a8ddd9a41b1/) | ⚠️ Unaudited |
-| BaryonMasterFactory | unknown | bsc | n/a | [`0xabd8dd...381899`](./contracts/bsc-56/0xabd8ddb9c60f9ad25387c0f70fff1ed63b381899/) | ⚠️ Unaudited |
-| BaryonProfile | unknown | bsc | n/a | [`0x6be246...302d72`](./contracts/bsc-56/0x6be246ca87949b279689a2207e184ac4cf302d72/) | ⚠️ Unaudited |
-| BaryonRouter | unknown | bsc | n/a | [`0x2e0be1...1f21a1`](./contracts/bsc-56/0x2e0be10d0207db3132e583c9332b153f861f21a1/) | ⚠️ Unaudited |
-| BaryToken | unknown | bsc | n/a | [`0x0555dd...dab113`](./contracts/bsc-56/0x0555ddc9f4d7829f9e00203547190fcc08dab113/) | ⚠️ Unaudited |
-| BatchTransferWallet | unknown | bsc | n/a | [`0xf7eee3...53cfe8`](./contracts/bsc-56/0xf7eee3a8363731c611a24cddfcbcade9c153cfe8/) | ⚠️ Unaudited |
-| C98MSiGFactory | unknown | bsc | n/a | [`0x82c3da...725a63`](./contracts/bsc-56/0x82c3da62b7db06e93c67ba90330ccedeef725a63/) | ⚠️ Unaudited |
-| C98MultiSend | unknown | bsc | n/a | [`0x2e1d30...4b7498`](./contracts/bsc-56/0x2e1d30460265bfebedacf5bb6f9a80f0e74b7498/) | ⚠️ Unaudited |
-| Coin98DollarMintBurn | unknown | bsc | n/a | [`0x8c6f4b...cd1a83`](./contracts/bsc-56/0x8c6f4b8c604f512c9a2f3260d9a695a5ffcd1a83/) | ⚠️ Unaudited |
-| Coin98KYC | unknown | bsc | n/a | [`0x229775...40d602`](./contracts/bsc-56/0x229775e8c94562fc49c49eb3c13a25293040d602/) | ⚠️ Unaudited |
-| Coin98MultisigFactory | unknown | bsc | n/a | [`0x836bf4...bd44e3`](./contracts/bsc-56/0x836bf46520c373fdc4dc7e5a3bae735d13bd44e3/) | ⚠️ Unaudited |
-| Coin98Stake | unknown | bsc | n/a | [`0x08ac9c...b94385`](./contracts/bsc-56/0x08ac9c38ce078b9b81e5ab5bf8aafc3d2db94385/) | ⚠️ Unaudited |
-| CUSD | unknown | bsc | n/a | [`0x2e8fe8...2955e7`](./contracts/bsc-56/0x2e8fe80f664e2525c7e88c59acc28ef0f42955e7/) | ⚠️ Unaudited |
-| DagoraMinter | unknown | bsc | n/a | [`0x366660...641956`](./contracts/bsc-56/0x366660dca241afee67c1f3da9cb93aa465641956/) | ⚠️ Unaudited |
-| INS | unknown | bsc | n/a | [`0x5c93f4...06fdad`](./contracts/bsc-56/0x5c93f4b35d3dd97ef481881aa33d00f76806fdad/) | ⚠️ Unaudited |
-| MultiSigWallet | unknown | bsc | n/a | [`0x89f5fd...9aa0c7`](./contracts/bsc-56/0x89f5fd4ee9d032ce65ec998db0f9bd34f19aa0c7/) | ⚠️ Unaudited |
-| SmartBaryFactory | unknown | bsc | n/a | [`0x1f2260...96131d`](./contracts/bsc-56/0x1f2260863f3bb14c84c676d83636abe43c96131d/) | ⚠️ Unaudited |
+| Address | unknown | bsc | n/a | [`0x8f2bebc9298aed2a9ba51b46458f97c483c338d1`](./contracts/bsc-56/0x8f2bebc9298aed2a9ba51b46458f97c483c338d1/) | ⚠️ Unaudited |
+| BaryonFire | unknown | bsc | n/a | [`0x19c3f76f054e9147d448a39aa1b49a8ddd9a41b1`](./contracts/bsc-56/0x19c3f76f054e9147d448a39aa1b49a8ddd9a41b1/) | ⚠️ Unaudited |
+| BaryonMasterFactory | unknown | bsc | n/a | [`0xabd8ddb9c60f9ad25387c0f70fff1ed63b381899`](./contracts/bsc-56/0xabd8ddb9c60f9ad25387c0f70fff1ed63b381899/) | ⚠️ Unaudited |
+| BaryonProfile | unknown | bsc | n/a | [`0x6be246ca87949b279689a2207e184ac4cf302d72`](./contracts/bsc-56/0x6be246ca87949b279689a2207e184ac4cf302d72/) | ⚠️ Unaudited |
+| BaryonRouter | unknown | bsc | n/a | [`0x2e0be10d0207db3132e583c9332b153f861f21a1`](./contracts/bsc-56/0x2e0be10d0207db3132e583c9332b153f861f21a1/) | ⚠️ Unaudited |
+| BaryToken | unknown | bsc | n/a | [`0x0555ddc9f4d7829f9e00203547190fcc08dab113`](./contracts/bsc-56/0x0555ddc9f4d7829f9e00203547190fcc08dab113/) | ⚠️ Unaudited |
+| BatchTransferWallet | unknown | bsc | n/a | [`0xf7eee3a8363731c611a24cddfcbcade9c153cfe8`](./contracts/bsc-56/0xf7eee3a8363731c611a24cddfcbcade9c153cfe8/) | ⚠️ Unaudited |
+| C98MSiGFactory | unknown | bsc | n/a | [`0x82c3da62b7db06e93c67ba90330ccedeef725a63`](./contracts/bsc-56/0x82c3da62b7db06e93c67ba90330ccedeef725a63/) | ⚠️ Unaudited |
+| C98MultiSend | unknown | bsc | n/a | [`0x2e1d30460265bfebedacf5bb6f9a80f0e74b7498`](./contracts/bsc-56/0x2e1d30460265bfebedacf5bb6f9a80f0e74b7498/) | ⚠️ Unaudited |
+| Coin98DollarMintBurn | unknown | bsc | n/a | [`0x8c6f4b8c604f512c9a2f3260d9a695a5ffcd1a83`](./contracts/bsc-56/0x8c6f4b8c604f512c9a2f3260d9a695a5ffcd1a83/) | ⚠️ Unaudited |
+| Coin98KYC | unknown | bsc | n/a | [`0x229775e8c94562fc49c49eb3c13a25293040d602`](./contracts/bsc-56/0x229775e8c94562fc49c49eb3c13a25293040d602/) | ⚠️ Unaudited |
+| Coin98MultisigFactory | unknown | bsc | n/a | [`0x836bf46520c373fdc4dc7e5a3bae735d13bd44e3`](./contracts/bsc-56/0x836bf46520c373fdc4dc7e5a3bae735d13bd44e3/) | ⚠️ Unaudited |
+| Coin98Stake | unknown | bsc | n/a | [`0x08ac9c38ce078b9b81e5ab5bf8aafc3d2db94385`](./contracts/bsc-56/0x08ac9c38ce078b9b81e5ab5bf8aafc3d2db94385/) | ⚠️ Unaudited |
+| CUSD | unknown | bsc | n/a | [`0x2e8fe80f664e2525c7e88c59acc28ef0f42955e7`](./contracts/bsc-56/0x2e8fe80f664e2525c7e88c59acc28ef0f42955e7/) | ⚠️ Unaudited |
+| DagoraMinter | unknown | bsc | n/a | [`0x366660dca241afee67c1f3da9cb93aa465641956`](./contracts/bsc-56/0x366660dca241afee67c1f3da9cb93aa465641956/) | ⚠️ Unaudited |
+| INS | unknown | bsc | n/a | [`0x5c93f4b35d3dd97ef481881aa33d00f76806fdad`](./contracts/bsc-56/0x5c93f4b35d3dd97ef481881aa33d00f76806fdad/) | ⚠️ Unaudited |
+| MultiSigWallet | unknown | bsc | n/a | [`0x89f5fd4ee9d032ce65ec998db0f9bd34f19aa0c7`](./contracts/bsc-56/0x89f5fd4ee9d032ce65ec998db0f9bd34f19aa0c7/) | ⚠️ Unaudited |
+| SmartBaryFactory | unknown | bsc | n/a | [`0x1f2260863f3bb14c84c676d83636abe43c96131d`](./contracts/bsc-56/0x1f2260863f3bb14c84c676d83636abe43c96131d/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -131,24 +131,24 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x8f2beb...c338d1`](./contracts/bsc-56/0x8f2bebc9298aed2a9ba51b46458f97c483c338d1/) | Address | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x19c3f7...9a41b1`](./contracts/bsc-56/0x19c3f76f054e9147d448a39aa1b49a8ddd9a41b1/) | BaryonFire | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xabd8dd...381899`](./contracts/bsc-56/0xabd8ddb9c60f9ad25387c0f70fff1ed63b381899/) | BaryonMasterFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x6be246...302d72`](./contracts/bsc-56/0x6be246ca87949b279689a2207e184ac4cf302d72/) | BaryonProfile | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x2e0be1...1f21a1`](./contracts/bsc-56/0x2e0be10d0207db3132e583c9332b153f861f21a1/) | BaryonRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x0555dd...dab113`](./contracts/bsc-56/0x0555ddc9f4d7829f9e00203547190fcc08dab113/) | BaryToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xf7eee3...53cfe8`](./contracts/bsc-56/0xf7eee3a8363731c611a24cddfcbcade9c153cfe8/) | BatchTransferWallet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x82c3da...725a63`](./contracts/bsc-56/0x82c3da62b7db06e93c67ba90330ccedeef725a63/) | C98MSiGFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x2e1d30...4b7498`](./contracts/bsc-56/0x2e1d30460265bfebedacf5bb6f9a80f0e74b7498/) | C98MultiSend | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x8c6f4b...cd1a83`](./contracts/bsc-56/0x8c6f4b8c604f512c9a2f3260d9a695a5ffcd1a83/) | Coin98DollarMintBurn | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x229775...40d602`](./contracts/bsc-56/0x229775e8c94562fc49c49eb3c13a25293040d602/) | Coin98KYC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x836bf4...bd44e3`](./contracts/bsc-56/0x836bf46520c373fdc4dc7e5a3bae735d13bd44e3/) | Coin98MultisigFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x08ac9c...b94385`](./contracts/bsc-56/0x08ac9c38ce078b9b81e5ab5bf8aafc3d2db94385/) | Coin98Stake | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x2e8fe8...2955e7`](./contracts/bsc-56/0x2e8fe80f664e2525c7e88c59acc28ef0f42955e7/) | CUSD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x366660...641956`](./contracts/bsc-56/0x366660dca241afee67c1f3da9cb93aa465641956/) | DagoraMinter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x5c93f4...06fdad`](./contracts/bsc-56/0x5c93f4b35d3dd97ef481881aa33d00f76806fdad/) | INS | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x89f5fd...9aa0c7`](./contracts/bsc-56/0x89f5fd4ee9d032ce65ec998db0f9bd34f19aa0c7/) | MultiSigWallet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x1f2260...96131d`](./contracts/bsc-56/0x1f2260863f3bb14c84c676d83636abe43c96131d/) | SmartBaryFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x8f2bebc9298aed2a9ba51b46458f97c483c338d1`](./contracts/bsc-56/0x8f2bebc9298aed2a9ba51b46458f97c483c338d1/) | Address | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x19c3f76f054e9147d448a39aa1b49a8ddd9a41b1`](./contracts/bsc-56/0x19c3f76f054e9147d448a39aa1b49a8ddd9a41b1/) | BaryonFire | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xabd8ddb9c60f9ad25387c0f70fff1ed63b381899`](./contracts/bsc-56/0xabd8ddb9c60f9ad25387c0f70fff1ed63b381899/) | BaryonMasterFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x6be246ca87949b279689a2207e184ac4cf302d72`](./contracts/bsc-56/0x6be246ca87949b279689a2207e184ac4cf302d72/) | BaryonProfile | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x2e0be10d0207db3132e583c9332b153f861f21a1`](./contracts/bsc-56/0x2e0be10d0207db3132e583c9332b153f861f21a1/) | BaryonRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x0555ddc9f4d7829f9e00203547190fcc08dab113`](./contracts/bsc-56/0x0555ddc9f4d7829f9e00203547190fcc08dab113/) | BaryToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xf7eee3a8363731c611a24cddfcbcade9c153cfe8`](./contracts/bsc-56/0xf7eee3a8363731c611a24cddfcbcade9c153cfe8/) | BatchTransferWallet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x82c3da62b7db06e93c67ba90330ccedeef725a63`](./contracts/bsc-56/0x82c3da62b7db06e93c67ba90330ccedeef725a63/) | C98MSiGFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x2e1d30460265bfebedacf5bb6f9a80f0e74b7498`](./contracts/bsc-56/0x2e1d30460265bfebedacf5bb6f9a80f0e74b7498/) | C98MultiSend | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x8c6f4b8c604f512c9a2f3260d9a695a5ffcd1a83`](./contracts/bsc-56/0x8c6f4b8c604f512c9a2f3260d9a695a5ffcd1a83/) | Coin98DollarMintBurn | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x229775e8c94562fc49c49eb3c13a25293040d602`](./contracts/bsc-56/0x229775e8c94562fc49c49eb3c13a25293040d602/) | Coin98KYC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x836bf46520c373fdc4dc7e5a3bae735d13bd44e3`](./contracts/bsc-56/0x836bf46520c373fdc4dc7e5a3bae735d13bd44e3/) | Coin98MultisigFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x08ac9c38ce078b9b81e5ab5bf8aafc3d2db94385`](./contracts/bsc-56/0x08ac9c38ce078b9b81e5ab5bf8aafc3d2db94385/) | Coin98Stake | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x2e8fe80f664e2525c7e88c59acc28ef0f42955e7`](./contracts/bsc-56/0x2e8fe80f664e2525c7e88c59acc28ef0f42955e7/) | CUSD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x366660dca241afee67c1f3da9cb93aa465641956`](./contracts/bsc-56/0x366660dca241afee67c1f3da9cb93aa465641956/) | DagoraMinter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x5c93f4b35d3dd97ef481881aa33d00f76806fdad`](./contracts/bsc-56/0x5c93f4b35d3dd97ef481881aa33d00f76806fdad/) | INS | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x89f5fd4ee9d032ce65ec998db0f9bd34f19aa0c7`](./contracts/bsc-56/0x89f5fd4ee9d032ce65ec998db0f9bd34f19aa0c7/) | MultiSigWallet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x1f2260863f3bb14c84c676d83636abe43c96131d`](./contracts/bsc-56/0x1f2260863f3bb14c84c676d83636abe43c96131d/) | SmartBaryFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

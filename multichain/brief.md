@@ -60,18 +60,18 @@ The protocol comprises 3 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AnyswapV5ERC20 | token | ethereum | n/a | [`0x9fb9a3...8764e3`](./contracts/ethereum-1/0x9fb9a33956351cf4fa040f65a13b835a3c8764e3/) | ✅ Audited |
-| AnyswapV6ERC20 | token | ethereum | n/a | [`0x0615db...6748b1`](./contracts/ethereum-1/0x0615dbba33fe61a31c7ed131bda6655ed76748b1/) | ✅ Audited |
-| AnyswapV6Router | adapter | ethereum | n/a | [`0xba8da9...910705`](./contracts/ethereum-1/0xba8da9dcf11b50b03fd5284f164ef5cdef910705/) | ✅ Audited |
-| MultichainToken | token | ethereum | n/a | [`0x65ef70...492df4`](./contracts/ethereum-1/0x65ef703f5594d2573eb71aaf55bc0cb548492df4/) | ✅ Audited |
-| MultiDao | unknown | ethereum | n/a | [`0x172280...90d558`](./contracts/ethereum-1/0x1722800c0f1bfdf916ef948ef7790a861e90d558/) | ✅ Audited |
+| AnyswapV5ERC20 | token | ethereum | n/a | [`0x9fb9a33956351cf4fa040f65a13b835a3c8764e3`](./contracts/ethereum-1/0x9fb9a33956351cf4fa040f65a13b835a3c8764e3/) | ✅ Audited |
+| AnyswapV6ERC20 | token | ethereum | n/a | [`0x0615dbba33fe61a31c7ed131bda6655ed76748b1`](./contracts/ethereum-1/0x0615dbba33fe61a31c7ed131bda6655ed76748b1/) | ✅ Audited |
+| AnyswapV6Router | adapter | ethereum | n/a | [`0xba8da9dcf11b50b03fd5284f164ef5cdef910705`](./contracts/ethereum-1/0xba8da9dcf11b50b03fd5284f164ef5cdef910705/) | ✅ Audited |
+| MultichainToken | token | ethereum | n/a | [`0x65ef703f5594d2573eb71aaf55bc0cb548492df4`](./contracts/ethereum-1/0x65ef703f5594d2573eb71aaf55bc0cb548492df4/) | ✅ Audited |
+| MultiDao | unknown | ethereum | n/a | [`0x1722800c0f1bfdf916ef948ef7790a861e90d558`](./contracts/ethereum-1/0x1722800c0f1bfdf916ef948ef7790a861e90d558/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AnyCallProxy | unknown | ethereum | n/a | [`0x37414a...490a89`](./contracts/ethereum-1/0x37414a8662bc1d25be3ee51fb27c2686e2490a89/) | ⚠️ Unaudited |
-| AnyswapV4Router | adapter | ethereum | n/a | 2 deployments: ethereum [`0x6b7a87...e71522`](./contracts/ethereum-1/0x6b7a87899490ece95443e979ca9485cbe7e71522/); ethereum `0x765277...b39c61` | ⚠️ Unaudited |
+| AnyCallProxy | unknown | ethereum | n/a | [`0x37414a8662bc1d25be3ee51fb27c2686e2490a89`](./contracts/ethereum-1/0x37414a8662bc1d25be3ee51fb27c2686e2490a89/) | ⚠️ Unaudited |
+| AnyswapV4Router | adapter | ethereum | n/a | 2 deployments: ethereum [`0x6b7a87899490ece95443e979ca9485cbe7e71522`](./contracts/ethereum-1/0x6b7a87899490ece95443e979ca9485cbe7e71522/); ethereum `0x765277eebeca2e31912c9946eae1021199b39c61` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -118,8 +118,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x37414a...490a89`](./contracts/ethereum-1/0x37414a8662bc1d25be3ee51fb27c2686e2490a89/) | AnyCallProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6b7a87...e71522`](./contracts/ethereum-1/0x6b7a87899490ece95443e979ca9485cbe7e71522/) | AnyswapV4Router | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x37414a8662bc1d25be3ee51fb27c2686e2490a89`](./contracts/ethereum-1/0x37414a8662bc1d25be3ee51fb27c2686e2490a89/) | AnyCallProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6b7a87899490ece95443e979ca9485cbe7e71522`](./contracts/ethereum-1/0x6b7a87899490ece95443e979ca9485cbe7e71522/) | AnyswapV4Router | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

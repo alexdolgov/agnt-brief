@@ -56,8 +56,8 @@ The pinned logic-topography run contains 3 contract row(s) across ethereum, poly
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xf33687...7165a2`, chain 137)
-- TransparentUpgradeableProxy (`0xa43a7c...8987ed`, chain 1)
+- UnnamedContract (`0xf33687811f3ad0cd6b48dd4b39f9f977bd7165a2`, chain 137)
+- TransparentUpgradeableProxy (`0xa43a7c62d56df036c187e1966c03e2799d8987ed`, chain 1)
 
 ## Contract Surface Quality
 
@@ -103,21 +103,21 @@ The pinned logic-topography run contains 3 contract row(s) across ethereum, poly
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| TruStakeMATICv2 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-394277 | `0xa43a7c...8987ed` | ✅ Audited |
-| TruStakePOL | unknown | project_anchor | own_supporting | 1 | ethereum | unit-394278 | 2 deployments: ethereum `0xbe63b2...17f8db`; ethereum `0xc10214...c8e5e8` | ✅ Audited |
+| TruStakeMATICv2 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-394277 | `0xa43a7c62d56df036c187e1966c03e2799d8987ed` | ✅ Audited |
+| TruStakePOL | unknown | project_anchor | own_supporting | 1 | ethereum | unit-394278 | 2 deployments: ethereum `0xbe63b28453eeb284ae9413949accf41ed817f8db`; ethereum `0xc10214cde5d6754ec1e2220362f2120142c8e5e8` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (8)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| MasterWhitelist | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x570177...439937`; ethereum `0x948ddf...6b14d8` | ⚠️ Unaudited |
-| MasterWhitelist | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xb78610...3f0334`; ethereum `0xc90a7c...87757c` | ⚠️ Unaudited |
-| MasterWhitelist | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf9bd69...c0c39e` | ⚠️ Unaudited |
-| PausableModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x65c3d9...7e990c`; ethereum `0xe6dcd7...84c246` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x022420...155158`; ethereum `0x567676...791131`; ethereum `0xf7a2a6...b5430a` | ⚠️ Unaudited |
-| Staker | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x1608b6...96a603`; ethereum `0xcfab85...89006d` | ⚠️ Unaudited |
-| TruStakeMATICv2 | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | ethereum | n/a | 3 deployments: ethereum `0x0ee0f1...3863a4`; ethereum `0x6ba703...de5ad9`; ethereum `0xe0579d...6ceb71` | ⚠️ Unaudited |
-| TruStakeMATICv2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x2a9fd3...9faeae`; ethereum `0x8d991f...c59052`; ethereum `0xa51022...c4ea45`; ethereum `0xbf3b3b...4d1b31`; ethereum `0xe3f8d0...91bbad` | ⚠️ Unaudited |
+| MasterWhitelist | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x5701773567a4a903ef1de459d0b542adb2439937`; ethereum `0x948ddfecd6ec588beab5a5aaa210504d2f6b14d8` | ⚠️ Unaudited |
+| MasterWhitelist | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xb78610ade922b1aa0df2b0981f0dec17733f0334`; ethereum `0xc90a7cb712e5ac2dd377602866051ac61487757c` | ⚠️ Unaudited |
+| MasterWhitelist | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf9bd6943e1ba66dc5cec6f67359bfc63d3c0c39e` | ⚠️ Unaudited |
+| PausableModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x65c3d968bf51d60e13982b8511f2e1ed4f7e990c`; ethereum `0xe6dcd72cc14e1b1a6c4d8a3c4b7d9f3bcf84c246` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x022420797d9491b455c345375c48b62a21155158`; ethereum `0x567676ddb095b582b49ed21538fc45c9ce791131`; ethereum `0xf7a2a6bd2117a7b907c461d357f0cd4c86b5430a` | ⚠️ Unaudited |
+| Staker | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x1608b68d47c8752dbbfe748fdc902e401f96a603`; ethereum `0xcfab8530ccf1f9936daede537d6ebbc75289006d` | ⚠️ Unaudited |
+| TruStakeMATICv2 | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | ethereum | n/a | 3 deployments: ethereum `0x0ee0f1e438e4f0d8e3aa8d1f35592aa5303863a4`; ethereum `0x6ba703406bc530d7e160f2b25a253e21d1de5ad9`; ethereum `0xe0579d3d0471720e9e9b76e3fb73dff06e6ceb71` | ⚠️ Unaudited |
+| TruStakeMATICv2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x2a9fd373ed3ce392bb5ad8ee146cfab66c9faeae`; ethereum `0x8d991fad08b57bf3541d1911df82b3ee12c59052`; ethereum `0xa5102295ae0f287538c6a045e63e9b3605c4ea45`; ethereum `0xbf3b3b9368262ed9bd06b621149ca947984d1b31`; ethereum `0xe3f8d0f869a1829bfb302e5da207fcd29d91bbad` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -137,8 +137,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x66d552...6ef9b5` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-394276 | `0xf33687...7165a2` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x66d55290f20d0984f1a1ede2e9f324b5a86ef9b5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-394276 | `0xf33687811f3ad0cd6b48dd4b39f9f977bd7165a2` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -184,7 +184,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 |---|---|---|---|---|---|
 | TruYields-audit-report-Solana-TruRLP-vaults.pdf | raydium-vault | unmatched — not counted | — | listed in scope | no |
 | TruPOL-Nethermind-audit-september-2025.pdf | TruStakePOLStorage | unmatched — not counted | — | listed in Audited Files table | no |
-| TruPOL-Nethermind-audit-september-2025.pdf | TruStakePOL | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xc10214...c8e5e8` — deployed 2025-09-26 14:17:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| TruPOL-Nethermind-audit-september-2025.pdf | TruStakePOL | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xc10214cde5d6754ec1e2220362f2120142c8e5e8` — deployed 2025-09-26 14:17:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | TruPOL-Nethermind-audit-september-2025.pdf | Types | unmatched — not counted | — | listed in Audited Files table | no |
 | TruFin_Solana_Staker_Solana_Program_Security_Assessment_Report_Halborn_Final.pdf | AddAgent | unmatched — not counted | — | listed in scope and finding 7.1 | no |
 | TruFin_Solana_Staker_Solana_Program_Security_Assessment_Report_Halborn_Final.pdf | RemoveAgent | unmatched — not counted | — | listed in scope and finding 7.1 | no |
@@ -217,7 +217,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | TruMATIC-Nethermind-Dec23.pdf | MaliciousValidator_Deposit | unmatched — not counted | — | — | no |
 | TruMATIC-Nethermind-Dec23.pdf | MaliciousValidator_Withdraw | unmatched — not counted | — | — | no |
 | TruMATIC-Nethermind-Dec23.pdf | MasterWhitelist | unmatched — not counted | — | — | no |
-| TruMATIC-Nethermind-Dec23.pdf | TruStakeMATICv2 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xa43a7c...8987ed` — deployed 2023-06-14 17:06:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| TruMATIC-Nethermind-Dec23.pdf | TruStakeMATICv2 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xa43a7c62d56df036c187e1966c03e2799d8987ed` — deployed 2023-06-14 17:06:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | TruMATIC-Nethermind-Dec23.pdf | TruStakeMATICv2Storage | unmatched — not counted | — | — | no |
 | TruMATIC-Nethermind-Dec23.pdf | Types | unmatched — not counted | — | — | no |
 | TruMATIC-OpenZeppelin-Audit-Report.pdf | IMasterWhitelist | unmatched — not counted | — | — | no |
@@ -225,18 +225,18 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | TruMATIC-OpenZeppelin-Audit-Report.pdf | ITruStakeMATICv2 | unmatched — not counted | — | — | no |
 | TruMATIC-OpenZeppelin-Audit-Report.pdf | IValidatorShare | unmatched — not counted | — | — | no |
 | TruMATIC-OpenZeppelin-Audit-Report.pdf | MasterWhitelist | unmatched — not counted | — | — | no |
-| TruMATIC-OpenZeppelin-Audit-Report.pdf | TruStakeMATICv2 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xa43a7c...8987ed` — deployed 2023-06-14 17:06:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| TruMATIC-OpenZeppelin-Audit-Report.pdf | TruStakeMATICv2 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xa43a7c62d56df036c187e1966c03e2799d8987ed` — deployed 2023-06-14 17:06:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | TruMATIC-OpenZeppelin-Audit-Report.pdf | TruStakeMATICv2Storage | unmatched — not counted | — | — | no |
 | TruMATIC-OpenZeppelin-Audit-Report.pdf | Types | unmatched — not counted | — | — | no |
 | TruMATIC-Nethermind-Jun23.pdf | IMasterWhitelist | unmatched — not counted | — | — | no |
 | TruMATIC-Nethermind-Jun23.pdf | IStakeManager | unmatched — not counted | — | — | no |
 | TruMATIC-Nethermind-Jun23.pdf | IValidatorShare | unmatched — not counted | — | — | no |
 | TruMATIC-Nethermind-Jun23.pdf | MasterWhitelist | unmatched — not counted | — | — | no |
-| TruMATIC-Nethermind-Jun23.pdf | TruStakeMATICv2 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xa43a7c...8987ed` — deployed 2023-06-14 17:06:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| TruMATIC-Nethermind-Jun23.pdf | TruStakeMATICv2 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xa43a7c62d56df036c187e1966c03e2799d8987ed` — deployed 2023-06-14 17:06:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | TruMATIC-Nethermind-Jun23.pdf | TruStakeMATICv2Storage | unmatched — not counted | — | — | no |
 | TruMATIC-ZokyoAudit-May23.pdf | Staker.sol | unmatched — not counted | — | — | no |
 | TruMATIC-ZokyoAudit-May23.pdf | StakerStorage.sol | unmatched — not counted | — | — | no |
-| TruMATIC-ZokyoAudit-May23.pdf | TruStakeMATICv2.sol | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xa43a7c...8987ed` — deployed 2023-06-14 17:06:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| TruMATIC-ZokyoAudit-May23.pdf | TruStakeMATICv2.sol | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xa43a7c62d56df036c187e1966c03e2799d8987ed` — deployed 2023-06-14 17:06:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | TruMATIC-ZokyoAudit-May23.pdf | TruStakeMATICv2Storage.sol | unmatched — not counted | — | — | no |
 | Trufin-audit-report-20230309.pdf | StakerStorage | unmatched — not counted | — | listed in scope | no |
 | Trufin-audit-report-20230309.pdf | Staker | unmatched — not counted | — | listed in scope | no |

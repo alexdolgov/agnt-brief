@@ -60,13 +60,13 @@ The protocol comprises 2 functional families. Contracts are linked by 2 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ButtonswapFactory | unknown | base | n/a | [`0x75a92d...9ba64a`](./contracts/base-8453/0x75a92dfb38c3506dce3bbb5eb32a10852f9ba64a/) | ✅ Audited |
+| ButtonswapFactory | unknown | base | n/a | [`0x75a92dfb38c3506dce3bbb5eb32a10852f9ba64a`](./contracts/base-8453/0x75a92dfb38c3506dce3bbb5eb32a10852f9ba64a/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| GenericButtonswapRouter | adapter | base | n/a | [`0xa6c9d0...ed2e2f`](./contracts/base-8453/0xa6c9d0cb8fff7a47db726ab8b31206dd69ed2e2f/) | ⚠️ Unaudited |
+| GenericButtonswapRouter | adapter | base | n/a | [`0xa6c9d0cb8fff7a47db726ab8b31206dd69ed2e2f`](./contracts/base-8453/0xa6c9d0cb8fff7a47db726ab8b31206dd69ed2e2f/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -99,7 +99,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0xa6c9d0...ed2e2f`](./contracts/base-8453/0xa6c9d0cb8fff7a47db726ab8b31206dd69ed2e2f/) | GenericButtonswapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xa6c9d0cb8fff7a47db726ab8b31206dd69ed2e2f`](./contracts/base-8453/0xa6c9d0cb8fff7a47db726ab8b31206dd69ed2e2f/) | GenericButtonswapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

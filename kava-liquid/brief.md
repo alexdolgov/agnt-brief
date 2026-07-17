@@ -80,7 +80,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | kava | n/a | `0xa8e48f...49fc1f` | ❓ Unverified |
+| UnnamedContract | unknown | kava | n/a | `0xa8e48fa04881dfacfc8d0ab84bc9ba57a449fc1f` | ❓ Unverified |
 
 ## Audit Inventory
 

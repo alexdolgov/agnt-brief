@@ -90,15 +90,15 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AirDrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-159369 | `0xf50adb...c1ba60` | ⚠️ Unaudited |
-| FeeDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | unit-159371 | `0x49a6fd...ba3075` | ⚠️ Unaudited |
-| MultiSigWallet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-159365 | `0x55dd24...161743` | ⚠️ Unaudited |
-| ParaProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | unit-159370 | `0x633fa7...32b4b4` | ⚠️ Unaudited |
-| ParaRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-159364 | `0x48bb5f...389797` | ⚠️ Unaudited |
-| ParaRouterPeriphery | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-159366 | `0x7958b0...db886b` | ⚠️ Unaudited |
-| ParaToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-159363 | `0x43feac...b91726` | ⚠️ Unaudited |
-| proxyTo | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-159368 | `0xe1d3b7...2bcaed` | ⚠️ Unaudited |
-| Timelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-159367 | `0xc19eca...98969f` | ⚠️ Unaudited |
+| AirDrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-159369 | `0xf50adb06c8a479cbad42ed115dbc06976ac1ba60` | ⚠️ Unaudited |
+| FeeDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | unit-159371 | `0x49a6fd247022e073acd740225304270274ba3075` | ⚠️ Unaudited |
+| MultiSigWallet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-159365 | `0x55dd249e2cf23adc885e19248d711ccba4161743` | ⚠️ Unaudited |
+| ParaProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | unit-159370 | `0x633fa755a83b015cccdc451f82c57ea0bd32b4b4` | ⚠️ Unaudited |
+| ParaRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-159364 | `0x48bb5f07e78f32ac7039366533d620c72c389797` | ⚠️ Unaudited |
+| ParaRouterPeriphery | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-159366 | `0x7958b0ee6a42b6ad8be40b3db6aa4dc72edb886b` | ⚠️ Unaudited |
+| ParaToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-159363 | `0x43feaca246392c23ee5a0db618fcd81a74b91726` | ⚠️ Unaudited |
+| proxyTo | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-159368 | `0xe1d3b7ecf15bb20bc2a40e7a402f67eb9f2bcaed` | ⚠️ Unaudited |
+| Timelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-159367 | `0xc19ecae6348b07014fdba912fa53f23f4798969f` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

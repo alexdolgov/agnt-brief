@@ -62,8 +62,8 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| PhemexToken | unknown | ethereum | n/a | [`0xbbb32f...de6e6c`](./contracts/ethereum-1/0xbbb32f99e6f2cb29337eebaa43c5069386de6e6c/) | ⚠️ Unaudited |
-| TokenLock | unknown | ethereum | n/a | [`0x54f3dc...93e260`](./contracts/ethereum-1/0x54f3dc0c007e3c191871f3981afe26faff93e260/) | ⚠️ Unaudited |
+| PhemexToken | unknown | ethereum | n/a | [`0xbbb32f99e6f2cb29337eebaa43c5069386de6e6c`](./contracts/ethereum-1/0xbbb32f99e6f2cb29337eebaa43c5069386de6e6c/) | ⚠️ Unaudited |
+| TokenLock | unknown | ethereum | n/a | [`0x54f3dc0c007e3c191871f3981afe26faff93e260`](./contracts/ethereum-1/0x54f3dc0c007e3c191871f3981afe26faff93e260/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -94,8 +94,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xbbb32f...de6e6c`](./contracts/ethereum-1/0xbbb32f99e6f2cb29337eebaa43c5069386de6e6c/) | PhemexToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x54f3dc...93e260`](./contracts/ethereum-1/0x54f3dc0c007e3c191871f3981afe26faff93e260/) | TokenLock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xbbb32f99e6f2cb29337eebaa43c5069386de6e6c`](./contracts/ethereum-1/0xbbb32f99e6f2cb29337eebaa43c5069386de6e6c/) | PhemexToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x54f3dc0c007e3c191871f3981afe26faff93e260`](./contracts/ethereum-1/0x54f3dc0c007e3c191871f3981afe26faff93e260/) | TokenLock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

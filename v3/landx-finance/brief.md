@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- LNDX (`0x08a1c3...742539`, chain 1)
+- LNDX (`0x08a1c30bbb26425c1031ee9e43fa0b9960742539`, chain 1)
 
 ## Contract Surface Quality
 
@@ -101,20 +101,20 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| LNDX | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388376 | `0x08a1c3...742539` | ✅ Audited |
+| LNDX | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388376 | `0x08a1c30bbb26425c1031ee9e43fa0b9960742539` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (8)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| CToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x44c7ac...473ac9` | ⚠️ Unaudited |
-| KeyProtocolVariables | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa6c319...0a8b53` | ⚠️ Unaudited |
-| OraclePrices | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf49a08...da8784` | ⚠️ Unaudited |
-| TWAP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5eb612...e96e5c` | ⚠️ Unaudited |
-| UniswapV3Pool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x8c0023...84f1d6`; ethereum `0xe81901...1001dc` | ⚠️ Unaudited |
-| xBasket | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6fc27f...5232d3` | ⚠️ Unaudited |
-| XToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x1b2b0f...e8362e`; ethereum `0x335632...7ffab5`; ethereum `0x5074c4...39e859` | ⚠️ Unaudited |
-| xTokenRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x189ca2...7076a8` | ⚠️ Unaudited |
+| CToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x44c7aca9c406ded532748194da0d691808473ac9` | ⚠️ Unaudited |
+| KeyProtocolVariables | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa6c319a1c3d4ed22d4ee1e6b53d3342cc70a8b53` | ⚠️ Unaudited |
+| OraclePrices | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf49a0863d532e6036d693fbacfd2417aebda8784` | ⚠️ Unaudited |
+| TWAP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5eb612f924dad205eab02911b198520effe96e5c` | ⚠️ Unaudited |
+| UniswapV3Pool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x8c00238b17397a194c4dd5a623b1fcdff684f1d6`; ethereum `0xe819013997b4186e1813590c51837edb491001dc` | ⚠️ Unaudited |
+| xBasket | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6fc27f5cc0aafec8e2b8bc4e6393ac89e45232d3` | ⚠️ Unaudited |
+| XToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x1b2b0fa9283595f5036c007dd99ed0aa6de8362e`; ethereum `0x3356328a3ca51d2664620757bd1c475ca77ffab5`; ethereum `0x5074c4fa383d63d62d5f531d1cf92125fb39e859` | ⚠️ Unaudited |
+| xTokenRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x189ca29981b6ad3ab01c2959b90eafca637076a8` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -153,7 +153,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
 | land-x-finance.pdf | KeyProtocolVariables | unmatched — not counted | — | — | no |
-| land-x-finance.pdf | LNDX | own contract | LNDX (selected) `0x08a1c3...742539` — deployed 2023-12-03 19:27:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| land-x-finance.pdf | LNDX | own contract | LNDX (selected) `0x08a1c30bbb26425c1031ee9e43fa0b9960742539` — deployed 2023-12-03 19:27:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | land-x-finance.pdf | LNDXGovernor | unmatched — not counted | — | — | no |
 | land-x-finance.pdf | LandXNFT | unmatched — not counted | — | — | no |
 | land-x-finance.pdf | OracleMulti | unmatched — not counted | — | — | no |

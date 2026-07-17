@@ -61,10 +61,10 @@ The protocol comprises 3 functional families. Contracts are linked by 1 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| LiquityHandler | unknown | ethereum | n/a | [`0xef3cf0...b41532`](./contracts/ethereum-1/0xef3cf0ede2ca738a8bd0c38fd5d43dc639b41532/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | ethereum | n/a | [`0x032339...c28171`](./contracts/ethereum-1/0x032339825d20793694da0c65f9e987e384c28171/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x4cdb2f...b0b642`](./contracts/ethereum-1/0x4cdb2fde85da92dbe9b568dda2cc22d426b0b642/) | ⚠️ Unaudited |
-| TroveManager | unknown | ethereum | n/a | [`0xa39739...cf4bb2`](./contracts/ethereum-1/0xa39739ef8b0231dbfa0dcda07d7e29faabcf4bb2/) | ⚠️ Unaudited |
+| LiquityHandler | unknown | ethereum | n/a | [`0xef3cf0ede2ca738a8bd0c38fd5d43dc639b41532`](./contracts/ethereum-1/0xef3cf0ede2ca738a8bd0c38fd5d43dc639b41532/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | ethereum | n/a | [`0x032339825d20793694da0c65f9e987e384c28171`](./contracts/ethereum-1/0x032339825d20793694da0c65f9e987e384c28171/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x4cdb2fde85da92dbe9b568dda2cc22d426b0b642`](./contracts/ethereum-1/0x4cdb2fde85da92dbe9b568dda2cc22d426b0b642/) | ⚠️ Unaudited |
+| TroveManager | unknown | ethereum | n/a | [`0xa39739ef8b0231dbfa0dcda07d7e29faabcf4bb2`](./contracts/ethereum-1/0xa39739ef8b0231dbfa0dcda07d7e29faabcf4bb2/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -96,8 +96,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xef3cf0...b41532`](./contracts/ethereum-1/0xef3cf0ede2ca738a8bd0c38fd5d43dc639b41532/) | LiquityHandler | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa39739...cf4bb2`](./contracts/ethereum-1/0xa39739ef8b0231dbfa0dcda07d7e29faabcf4bb2/) | TroveManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xef3cf0ede2ca738a8bd0c38fd5d43dc639b41532`](./contracts/ethereum-1/0xef3cf0ede2ca738a8bd0c38fd5d43dc639b41532/) | LiquityHandler | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa39739ef8b0231dbfa0dcda07d7e29faabcf4bb2`](./contracts/ethereum-1/0xa39739ef8b0231dbfa0dcda07d7e29faabcf4bb2/) | TroveManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

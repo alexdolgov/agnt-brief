@@ -61,23 +61,23 @@ The protocol comprises 3 functional families. Its contracts share 4 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CeloOFTExtension | unknown | celo | n/a | [`0x207059...fd7e4c`](./contracts/celo-42220/0x207059273474e6226a2e68085439015ad5fd7e4c/) | ⚠️ Unaudited |
-| DaoModule | unknown | ethereum | n/a | [`0x3de7a4...8a398a`](./contracts/ethereum-1/0x3de7a43ec8716126c819c6e4020c9f0a9b8a398a/) | ⚠️ Unaudited |
-| DVFInterface2 | unknown | ethereum | n/a | [`0xbc6197...b684d5`](./contracts/ethereum-1/0xbc619735fdf48bba5e2bb403e42a5d457db684d5/) | ⚠️ Unaudited |
-| DVFInterface3 | unknown | ethereum | n/a | [`0xa297ec...319212`](./contracts/ethereum-1/0xa297ec52ac188f98a5b293bca3ff405643319212/) | ⚠️ Unaudited |
-| DVFInterface4 | unknown | ethereum | n/a | [`0x7de1f0...645a15`](./contracts/ethereum-1/0x7de1f04204ef29229d84e7c0c2d1216c28645a15/) | ⚠️ Unaudited |
-| FeeCurrencyWrapper | unknown | celo | n/a | [`0x0357ee...1880c4`](./contracts/celo-42220/0x0357ee22278c922e1d36cfe6b899269b161880c4/) | ⚠️ Unaudited |
-| NectarController | unknown | ethereum | n/a | [`0x1fae7b...b851b7`](./contracts/ethereum-1/0x1fae7beed65b3d98ad8f1d5276387b20c6b851b7/) | ⚠️ Unaudited |
-| OUpgradeable | unknown | plasma | n/a | [`0x0200c2...8470c1`](./contracts/plasma-9745/0x0200c29006150606b650577bbe7b6248f58470c1/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | celo | n/a | [`0x01bff4...bc1071`](./contracts/celo-42220/0x01bff41798a0bcf287b996046ca68b395dbc1071/) | ⚠️ Unaudited |
-| RevokableVester | unknown | ethereum | n/a | [`0x0b31b2...1f61e5`](./contracts/ethereum-1/0x0b31b28103754a272d7905240301ec7b2a1f61e5/) | ⚠️ Unaudited |
-| SignatureChecker | unknown | avalanche | n/a | [`0x6d2053...432c35`](./contracts/avalanche-43114/0x6d205337f45d6850c3c3006e28d5b52c8a432c35/) | ⚠️ Unaudited |
-| SupporterVester | unknown | ethereum | n/a | [`0x0302f7...7b63b2`](./contracts/ethereum-1/0x0302f75047aa0935052275e77d15c40bee7b63b2/) | ⚠️ Unaudited |
-| TetherToken | unknown | ethereum | n/a | [`0x354f86...d9ba87`](./contracts/ethereum-1/0x354f861227fc9b7abf55389e0038163047d9ba87/) | ⚠️ Unaudited |
-| TetherTokenEURTV2 | unknown | ethereum | n/a | [`0xde706e...bd5c7d`](./contracts/ethereum-1/0xde706e90f07ffa15b1783379edab3c21fbbd5c7d/) | ⚠️ Unaudited |
-| TetherTokenOFTExtension | unknown | celo | n/a | [`0x07cfc1...e42e1f`](./contracts/celo-42220/0x07cfc1de16f7ba1eb921fe570fc61a791be42e1f/) | ⚠️ Unaudited |
-| TokenVesting | unknown | ethereum | n/a | [`0x05e364...4c9a27`](./contracts/ethereum-1/0x05e36403584e1f3f004dc516b5375a1e884c9a27/) | ⚠️ Unaudited |
-| TreasuryVester | unknown | ethereum | n/a | [`0x65d57b...4c0ce9`](./contracts/ethereum-1/0x65d57b1e6570f5c636b8dd64c186ac304a4c0ce9/) | ⚠️ Unaudited |
+| CeloOFTExtension | unknown | celo | n/a | [`0x207059273474e6226a2e68085439015ad5fd7e4c`](./contracts/celo-42220/0x207059273474e6226a2e68085439015ad5fd7e4c/) | ⚠️ Unaudited |
+| DaoModule | unknown | ethereum | n/a | [`0x3de7a43ec8716126c819c6e4020c9f0a9b8a398a`](./contracts/ethereum-1/0x3de7a43ec8716126c819c6e4020c9f0a9b8a398a/) | ⚠️ Unaudited |
+| DVFInterface2 | unknown | ethereum | n/a | [`0xbc619735fdf48bba5e2bb403e42a5d457db684d5`](./contracts/ethereum-1/0xbc619735fdf48bba5e2bb403e42a5d457db684d5/) | ⚠️ Unaudited |
+| DVFInterface3 | unknown | ethereum | n/a | [`0xa297ec52ac188f98a5b293bca3ff405643319212`](./contracts/ethereum-1/0xa297ec52ac188f98a5b293bca3ff405643319212/) | ⚠️ Unaudited |
+| DVFInterface4 | unknown | ethereum | n/a | [`0x7de1f04204ef29229d84e7c0c2d1216c28645a15`](./contracts/ethereum-1/0x7de1f04204ef29229d84e7c0c2d1216c28645a15/) | ⚠️ Unaudited |
+| FeeCurrencyWrapper | unknown | celo | n/a | [`0x0357ee22278c922e1d36cfe6b899269b161880c4`](./contracts/celo-42220/0x0357ee22278c922e1d36cfe6b899269b161880c4/) | ⚠️ Unaudited |
+| NectarController | unknown | ethereum | n/a | [`0x1fae7beed65b3d98ad8f1d5276387b20c6b851b7`](./contracts/ethereum-1/0x1fae7beed65b3d98ad8f1d5276387b20c6b851b7/) | ⚠️ Unaudited |
+| OUpgradeable | unknown | plasma | n/a | [`0x0200c29006150606b650577bbe7b6248f58470c1`](./contracts/plasma-9745/0x0200c29006150606b650577bbe7b6248f58470c1/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | celo | n/a | [`0x01bff41798a0bcf287b996046ca68b395dbc1071`](./contracts/celo-42220/0x01bff41798a0bcf287b996046ca68b395dbc1071/) | ⚠️ Unaudited |
+| RevokableVester | unknown | ethereum | n/a | [`0x0b31b28103754a272d7905240301ec7b2a1f61e5`](./contracts/ethereum-1/0x0b31b28103754a272d7905240301ec7b2a1f61e5/) | ⚠️ Unaudited |
+| SignatureChecker | unknown | avalanche | n/a | [`0x6d205337f45d6850c3c3006e28d5b52c8a432c35`](./contracts/avalanche-43114/0x6d205337f45d6850c3c3006e28d5b52c8a432c35/) | ⚠️ Unaudited |
+| SupporterVester | unknown | ethereum | n/a | [`0x0302f75047aa0935052275e77d15c40bee7b63b2`](./contracts/ethereum-1/0x0302f75047aa0935052275e77d15c40bee7b63b2/) | ⚠️ Unaudited |
+| TetherToken | unknown | ethereum | n/a | [`0x354f861227fc9b7abf55389e0038163047d9ba87`](./contracts/ethereum-1/0x354f861227fc9b7abf55389e0038163047d9ba87/) | ⚠️ Unaudited |
+| TetherTokenEURTV2 | unknown | ethereum | n/a | [`0xde706e90f07ffa15b1783379edab3c21fbbd5c7d`](./contracts/ethereum-1/0xde706e90f07ffa15b1783379edab3c21fbbd5c7d/) | ⚠️ Unaudited |
+| TetherTokenOFTExtension | unknown | celo | n/a | [`0x07cfc1de16f7ba1eb921fe570fc61a791be42e1f`](./contracts/celo-42220/0x07cfc1de16f7ba1eb921fe570fc61a791be42e1f/) | ⚠️ Unaudited |
+| TokenVesting | unknown | ethereum | n/a | [`0x05e36403584e1f3f004dc516b5375a1e884c9a27`](./contracts/ethereum-1/0x05e36403584e1f3f004dc516b5375a1e884c9a27/) | ⚠️ Unaudited |
+| TreasuryVester | unknown | ethereum | n/a | [`0x65d57b1e6570f5c636b8dd64c186ac304a4c0ce9`](./contracts/ethereum-1/0x65d57b1e6570f5c636b8dd64c186ac304a4c0ce9/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -108,22 +108,22 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| celo | [`0x207059...fd7e4c`](./contracts/celo-42220/0x207059273474e6226a2e68085439015ad5fd7e4c/) | CeloOFTExtension | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x3de7a4...8a398a`](./contracts/ethereum-1/0x3de7a43ec8716126c819c6e4020c9f0a9b8a398a/) | DaoModule | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xbc6197...b684d5`](./contracts/ethereum-1/0xbc619735fdf48bba5e2bb403e42a5d457db684d5/) | DVFInterface2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa297ec...319212`](./contracts/ethereum-1/0xa297ec52ac188f98a5b293bca3ff405643319212/) | DVFInterface3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x7de1f0...645a15`](./contracts/ethereum-1/0x7de1f04204ef29229d84e7c0c2d1216c28645a15/) | DVFInterface4 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x0357ee...1880c4`](./contracts/celo-42220/0x0357ee22278c922e1d36cfe6b899269b161880c4/) | FeeCurrencyWrapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1fae7b...b851b7`](./contracts/ethereum-1/0x1fae7beed65b3d98ad8f1d5276387b20c6b851b7/) | NectarController | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| plasma | [`0x0200c2...8470c1`](./contracts/plasma-9745/0x0200c29006150606b650577bbe7b6248f58470c1/) | OUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0b31b2...1f61e5`](./contracts/ethereum-1/0x0b31b28103754a272d7905240301ec7b2a1f61e5/) | RevokableVester | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x6d2053...432c35`](./contracts/avalanche-43114/0x6d205337f45d6850c3c3006e28d5b52c8a432c35/) | SignatureChecker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0302f7...7b63b2`](./contracts/ethereum-1/0x0302f75047aa0935052275e77d15c40bee7b63b2/) | SupporterVester | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x354f86...d9ba87`](./contracts/ethereum-1/0x354f861227fc9b7abf55389e0038163047d9ba87/) | TetherToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xde706e...bd5c7d`](./contracts/ethereum-1/0xde706e90f07ffa15b1783379edab3c21fbbd5c7d/) | TetherTokenEURTV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x07cfc1...e42e1f`](./contracts/celo-42220/0x07cfc1de16f7ba1eb921fe570fc61a791be42e1f/) | TetherTokenOFTExtension | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x05e364...4c9a27`](./contracts/ethereum-1/0x05e36403584e1f3f004dc516b5375a1e884c9a27/) | TokenVesting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x65d57b...4c0ce9`](./contracts/ethereum-1/0x65d57b1e6570f5c636b8dd64c186ac304a4c0ce9/) | TreasuryVester | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | [`0x207059273474e6226a2e68085439015ad5fd7e4c`](./contracts/celo-42220/0x207059273474e6226a2e68085439015ad5fd7e4c/) | CeloOFTExtension | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x3de7a43ec8716126c819c6e4020c9f0a9b8a398a`](./contracts/ethereum-1/0x3de7a43ec8716126c819c6e4020c9f0a9b8a398a/) | DaoModule | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xbc619735fdf48bba5e2bb403e42a5d457db684d5`](./contracts/ethereum-1/0xbc619735fdf48bba5e2bb403e42a5d457db684d5/) | DVFInterface2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa297ec52ac188f98a5b293bca3ff405643319212`](./contracts/ethereum-1/0xa297ec52ac188f98a5b293bca3ff405643319212/) | DVFInterface3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x7de1f04204ef29229d84e7c0c2d1216c28645a15`](./contracts/ethereum-1/0x7de1f04204ef29229d84e7c0c2d1216c28645a15/) | DVFInterface4 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | [`0x0357ee22278c922e1d36cfe6b899269b161880c4`](./contracts/celo-42220/0x0357ee22278c922e1d36cfe6b899269b161880c4/) | FeeCurrencyWrapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1fae7beed65b3d98ad8f1d5276387b20c6b851b7`](./contracts/ethereum-1/0x1fae7beed65b3d98ad8f1d5276387b20c6b851b7/) | NectarController | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| plasma | [`0x0200c29006150606b650577bbe7b6248f58470c1`](./contracts/plasma-9745/0x0200c29006150606b650577bbe7b6248f58470c1/) | OUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0b31b28103754a272d7905240301ec7b2a1f61e5`](./contracts/ethereum-1/0x0b31b28103754a272d7905240301ec7b2a1f61e5/) | RevokableVester | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0x6d205337f45d6850c3c3006e28d5b52c8a432c35`](./contracts/avalanche-43114/0x6d205337f45d6850c3c3006e28d5b52c8a432c35/) | SignatureChecker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0302f75047aa0935052275e77d15c40bee7b63b2`](./contracts/ethereum-1/0x0302f75047aa0935052275e77d15c40bee7b63b2/) | SupporterVester | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x354f861227fc9b7abf55389e0038163047d9ba87`](./contracts/ethereum-1/0x354f861227fc9b7abf55389e0038163047d9ba87/) | TetherToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xde706e90f07ffa15b1783379edab3c21fbbd5c7d`](./contracts/ethereum-1/0xde706e90f07ffa15b1783379edab3c21fbbd5c7d/) | TetherTokenEURTV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | [`0x07cfc1de16f7ba1eb921fe570fc61a791be42e1f`](./contracts/celo-42220/0x07cfc1de16f7ba1eb921fe570fc61a791be42e1f/) | TetherTokenOFTExtension | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x05e36403584e1f3f004dc516b5375a1e884c9a27`](./contracts/ethereum-1/0x05e36403584e1f3f004dc516b5375a1e884c9a27/) | TokenVesting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x65d57b1e6570f5c636b8dd64c186ac304a4c0ce9`](./contracts/ethereum-1/0x65d57b1e6570f5c636b8dd64c186ac304a4c0ce9/) | TreasuryVester | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -62,7 +62,7 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| FXDX | unknown | base | n/a | [`0x30b593...5bb55d`](./contracts/base-8453/0x30b593f8c3ab37615359b4e0e6df2e06d55bb55d/) | ⚠️ Unaudited |
+| FXDX | unknown | base | n/a | [`0x30b593f8c3ab37615359b4e0e6df2e06d55bb55d`](./contracts/base-8453/0x30b593f8c3ab37615359b4e0e6df2e06d55bb55d/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -82,8 +82,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | optimism | n/a | `0x30b593...5bb55d` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x102359...5a1d0c` | ❓ Unverified |
+| UnnamedContract | unknown | optimism | n/a | `0x30b593f8c3ab37615359b4e0e6df2e06d55bb55d` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x10235996c4dabce8430a71cbc06571bd475a1d0c` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -97,7 +97,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x30b593...5bb55d`](./contracts/base-8453/0x30b593f8c3ab37615359b4e0e6df2e06d55bb55d/) | FXDX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x30b593f8c3ab37615359b4e0e6df2e06d55bb55d`](./contracts/base-8453/0x30b593f8c3ab37615359b4e0e6df2e06d55bb55d/) | FXDX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

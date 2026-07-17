@@ -59,15 +59,15 @@ The protocol comprises 3 functional families. Its contracts share 16 common proj
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| chUSD | unknown | plasma | n/a | 2 deployments: hyperliquid `0x222222...abea02`; plasma [`0x222222...f5fdc1`](./contracts/plasma-9745/0x22222215d4edc5510d23d0886133e7ece7f5fdc1/) | ✅ Audited |
+| chUSD | unknown | plasma | n/a | 2 deployments: hyperliquid `0x2222227d90046f1483b3fb37990dea31fcabea02`; plasma [`0x22222215d4edc5510d23d0886133e7ece7f5fdc1`](./contracts/plasma-9745/0x22222215d4edc5510d23d0886133e7ece7f5fdc1/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| EndpointV2 | operational_periphery | plasma | n/a | [`0x6f4756...48dd5b`](./contracts/plasma-9745/0x6f475642a6e85809b1c36fa62763669b1b48dd5b/) | ⚠️ Unaudited |
-| StakedchUSDOFT | token | hyperliquid | n/a | [`0x888888...b93aa8`](./contracts/hyperliquid-999/0x888888facb316879129e1eee2451260e44b93aa8/) | ⚠️ Unaudited |
-| StakedchUSDV2 | token | plasma | n/a | [`0x888888...ce874d`](./contracts/plasma-9745/0x888888bab58a7bd3068110749bc7b63b62ce874d/) | ⚠️ Unaudited |
+| EndpointV2 | operational_periphery | plasma | n/a | [`0x6f475642a6e85809b1c36fa62763669b1b48dd5b`](./contracts/plasma-9745/0x6f475642a6e85809b1c36fa62763669b1b48dd5b/) | ⚠️ Unaudited |
+| StakedchUSDOFT | token | hyperliquid | n/a | [`0x888888facb316879129e1eee2451260e44b93aa8`](./contracts/hyperliquid-999/0x888888facb316879129e1eee2451260e44b93aa8/) | ⚠️ Unaudited |
+| StakedchUSDV2 | token | plasma | n/a | [`0x888888bab58a7bd3068110749bc7b63b62ce874d`](./contracts/plasma-9745/0x888888bab58a7bd3068110749bc7b63b62ce874d/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -87,33 +87,33 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | plasma | n/a | `0x14e445...525658` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | n/a | `0x15e517...1451b3` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | n/a | `0x199859...e7a9c6` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | n/a | `0x1a327a...032e58` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | n/a | `0x1dcdac...203795` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | n/a | `0x236732...f58312` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | n/a | `0x2d61dc...529aaa` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | n/a | `0x37aaaf...5c2a02` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | n/a | `0x38de71...491251` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | n/a | `0x3a7303...4a9aa9` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | n/a | `0x4514fc...315f25` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | n/a | `0x4ee2f9...235245` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | n/a | `0x5b19bd...a18c1c` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | n/a | `0x66a71d...5cd675` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | n/a | `0x8bc1e3...2f5a4e` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | n/a | `0x9740ff...3ed9e4` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | n/a | `0x980205...3ec981` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | n/a | `0x9c061c...7f4bdd` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | n/a | `0xa20db4...41058e` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | n/a | `0xc097ab...3b526f` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | n/a | `0xc1b15d...dacb36` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | n/a | `0xc1b621...c09821` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | n/a | `0xce8358...d65887` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | n/a | `0xea6709...cd7296` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | n/a | `0xf36d3f...49411a` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | n/a | `0xfd76d9...b1e3ca` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | n/a | `0xfe7c30...d3a098` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0x14e445182c2e281cf839eb0e9a12359653525658` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0x15e51701f245f6d5bd0fee87bcaf55b0841451b3` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0x1998594e4f1007b685bc4fafa87e21c859e7a9c6` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0x1a327a4de4c70c37b91835c3b1b3f0564b032e58` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0x1dcdacadb4cb5e9846ca1b667398acdca0203795` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0x2367325334447c5e1e0f1b3a6fb947b262f58312` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0x2d61dcdd36f10b22176e0433b86f74567d529aaa` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0x37aaaf95887624a363effb7762d489e3c05c2a02` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0x38de71124f7a447a01d67945a51edce9ff491251` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0x3a73033c0b1407574c76bdbac67f126f6b4a9aa9` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0x4514fc667a944752ee8a29f544c1b20b1a315f25` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0x4ee2f9b7cf3a68966c370f3eb2c16613d3235245` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0x5b19bd330a84c049b62d5b0fc2ba120217a18c1c` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0x66a71dcef29a0ffbdbe3c6a460a3b5bc225cd675` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0x8bc1e36f015b9902b54b1387a4d733cebc2f5a4e` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0x9740ff91f1985d8d2b71494ae1a2f723bb3ed9e4` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0x980205d352f198748b626f6f7c38a8a5663ec981` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0x9c061c9a4782294eef65ef28cb88233a987f4bdd` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0xa20db4ffe74a31d17fc24bd32a7dd7555441058e` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0xc097ab8cd7b053326dfe9fb3e3a31a0cce3b526f` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0xc1b15d3b262beec0e3565c11c9e0f6134bdacb36` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0xc1b621b18187f74c8f6d52a6f709dd2780c09821` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0xce8358bc28dd8296ce8caf1cd2b44787abd65887` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0xea6709c29d4d4b5162d8c55d0c28c5ced6cd7296` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0xf36d3fcde3271530637959ab5e3811824e49411a` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0xfd76d9cb0bac839725ab79127e7411fe71b1e3ca` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0xfe7c30860d01e28371d40434806f4a8fcdd3a098` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -127,9 +127,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| plasma | [`0x6f4756...48dd5b`](./contracts/plasma-9745/0x6f475642a6e85809b1c36fa62763669b1b48dd5b/) | EndpointV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x888888...b93aa8`](./contracts/hyperliquid-999/0x888888facb316879129e1eee2451260e44b93aa8/) | StakedchUSDOFT | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| plasma | [`0x888888...ce874d`](./contracts/plasma-9745/0x888888bab58a7bd3068110749bc7b63b62ce874d/) | StakedchUSDV2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| plasma | [`0x6f475642a6e85809b1c36fa62763669b1b48dd5b`](./contracts/plasma-9745/0x6f475642a6e85809b1c36fa62763669b1b48dd5b/) | EndpointV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x888888facb316879129e1eee2451260e44b93aa8`](./contracts/hyperliquid-999/0x888888facb316879129e1eee2451260e44b93aa8/) | StakedchUSDOFT | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| plasma | [`0x888888bab58a7bd3068110749bc7b63b62ce874d`](./contracts/plasma-9745/0x888888bab58a7bd3068110749bc7b63b62ce874d/) | StakedchUSDV2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -57,7 +57,7 @@ The pinned logic-topography run contains 2 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xc02aaa...756cc2`, chain 1)
+- UnnamedContract (`0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2`, chain 1)
 
 ## Contract Surface Quality
 
@@ -101,16 +101,16 @@ The pinned logic-topography run contains 2 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| SuiBridge | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393289 | 2 deployments: ethereum `0xa60f29...bb036c`; ethereum `0xda3bd1...8a92fd` | ✅ Audited |
+| SuiBridge | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393289 | 2 deployments: ethereum `0xa60f29201aeae592d9ab95747ae1cf425dbb036c`; ethereum `0xda3bd1fe1973470312db04551b65f401bc8a92fd` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (4)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BridgeCommittee | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xa470ca...23b63b`; ethereum `0xee2d52...5b416f` | ⚠️ Unaudited |
-| BridgeConfig | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x72d34f...6a1540`; ethereum `0xb083c4...fec50c` | ⚠️ Unaudited |
-| BridgeLimiter | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x12183b...736767`; ethereum `0xd754e5...887340` | ⚠️ Unaudited |
-| BridgeVault | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x312e67...f80b53` | ⚠️ Unaudited |
+| BridgeCommittee | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xa470ca92126bd6b6f6e98f3010c7e384f223b63b`; ethereum `0xee2d52477a7c1a7be0b0347dbe7e3b15185b416f` | ⚠️ Unaudited |
+| BridgeConfig | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x72d34fe82c71bf8120647518e5128e53106a1540`; ethereum `0xb083c462fa5b04899d87204a4566b3db90fec50c` | ⚠️ Unaudited |
+| BridgeLimiter | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x12183b0796bbc4678999100e8c6c5715d5736767`; ethereum `0xd754e54261e300ff9653567f03f74bfdef887340` | ⚠️ Unaudited |
+| BridgeVault | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x312e67b47a2a29ae200184949093d92369f80b53` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -130,7 +130,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-393288 | `0xc02aaa...756cc2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-393288 | `0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -153,7 +153,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
 | Sui_bridge_v1_OtterSec.pdf | suiBridgeV1 | unmatched — not counted | — | listed in scope section as the program name | no |
-| Sui_Bridge_v1_Zellic.pdf | SuiBridge | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xda3bd1...8a92fd` — deployed 2024-09-23 08:38:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Sui_Bridge_v1_Zellic.pdf | SuiBridge | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xda3bd1fe1973470312db04551b65f401bc8a92fd` — deployed 2024-09-23 08:38:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Sui_Bridge_v1_Zellic.pdf | BridgeVault | unmatched — not counted | — | described in threat model | no |
 | Sui_Bridge_v1_Zellic.pdf | BridgeLimiter | unmatched — not counted | — | described in threat model | no |
 | Sui_Bridge_v1_Zellic.pdf | BridgeConfig | unmatched — not counted | — | described in threat model | no |

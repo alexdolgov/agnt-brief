@@ -90,26 +90,26 @@ The pinned logic-topography run contains 5 contract row(s) across arbitrum, arbi
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ArbEgg | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x3dd7d0...5e9b6d` | ⚠️ Unaudited |
-| ArbsProxyOFT | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-226960 | `0x406822...3d844a` | ⚠️ Unaudited |
-| ArbswapAirdrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x3ceefa...13d3c3` | ⚠️ Unaudited |
-| ArbswapSmartRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x4aef9d...88f2e9` | ⚠️ Unaudited |
-| ArbswapStableSwapFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-226959 | `0x3a52e9...2c099d` | ⚠️ Unaudited |
-| ArbswapStableSwapLPFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x5bbebd...3718f1` | ⚠️ Unaudited |
-| ArbswapStableSwapThreePoolDeployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xc1b418...125e67` | ⚠️ Unaudited |
-| ArbswapStableSwapTwoPoolDeployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x6b23bb...69507c` | ⚠️ Unaudited |
-| ArbswapStableSwapTwoPoolInfo | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xaa50d3...770d7f` | ⚠️ Unaudited |
-| ArbswapStableSwapWBNBHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x318080...5283ab` | ⚠️ Unaudited |
-| ArbswapStableSwapWETHHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x8bf212...b71029` | ⚠️ Unaudited |
-| ArbswapToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xd5f09e...29a099` | ⚠️ Unaudited |
-| IFODeployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x85855c...148a6f` | ⚠️ Unaudited |
-| MasterChefV3 | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-226961 | `0x41210a...7eb0b0` | ⚠️ Unaudited |
-| MirrorARBS | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-226962 | `0xa04c34...089d36` | ⚠️ Unaudited |
-| MockNovaFarm | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x278235...c2531b` | ⚠️ Unaudited |
-| RealArbsian | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x700794...272932` | ⚠️ Unaudited |
-| TestVM | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x7de026...0eafa4` | ⚠️ Unaudited |
-| VestingMaster | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-226958 | `0x2b84f4...f06735` | ⚠️ Unaudited |
-| XARBSPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x6d6e38...f6a222` | ⚠️ Unaudited |
+| ArbEgg | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x3dd7d034198357bf0d54c1e377f3d2ce2a5e9b6d` | ⚠️ Unaudited |
+| ArbsProxyOFT | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-226960 | `0x4068224e09d400bf2ff3dd3035bfa5671e3d844a` | ⚠️ Unaudited |
+| ArbswapAirdrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x3ceefa452a8d7522786abd2f644367464f13d3c3` | ⚠️ Unaudited |
+| ArbswapSmartRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x4aef9d850a71d0f0051e8c69bf865ae34188f2e9` | ⚠️ Unaudited |
+| ArbswapStableSwapFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-226959 | `0x3a52e9200ed7403d9d21664fdee540c2d02c099d` | ⚠️ Unaudited |
+| ArbswapStableSwapLPFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x5bbebd93777dfa334f6346271fbc6a56ed3718f1` | ⚠️ Unaudited |
+| ArbswapStableSwapThreePoolDeployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xc1b418879750fc785b2112a77d73498eaa125e67` | ⚠️ Unaudited |
+| ArbswapStableSwapTwoPoolDeployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x6b23bbdddbbef5f999b9cb7e9b579231ac69507c` | ⚠️ Unaudited |
+| ArbswapStableSwapTwoPoolInfo | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xaa50d30612a58f2e7935c4482fa426b0aa770d7f` | ⚠️ Unaudited |
+| ArbswapStableSwapWBNBHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x318080b1590e06db79d55ce7a348765c3d5283ab` | ⚠️ Unaudited |
+| ArbswapStableSwapWETHHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x8bf212f02d557f9dd4b75dd69bf1e6bf1bb71029` | ⚠️ Unaudited |
+| ArbswapToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xd5f09e5307ed5a26ac762a6ba5573c22d729a099` | ⚠️ Unaudited |
+| IFODeployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x85855cada5f92206fa0ee01d0d792849ea148a6f` | ⚠️ Unaudited |
+| MasterChefV3 | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-226961 | `0x41210a7c9853da7a65cad516c32c25fa5c7eb0b0` | ⚠️ Unaudited |
+| MirrorARBS | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-226962 | `0xa04c348246efb67e5376da989d70175145089d36` | ⚠️ Unaudited |
+| MockNovaFarm | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x278235c801e9a5d6cef1f687e59fc65470c2531b` | ⚠️ Unaudited |
+| RealArbsian | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x700794d18dee51eb308eed0dc0aacadc5d272932` | ⚠️ Unaudited |
+| TestVM | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x7de026ce716319d8e01c901f366719230f0eafa4` | ⚠️ Unaudited |
+| VestingMaster | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-226958 | `0x2b84f485c18daeb87b1ebdba4b2bc5b945f06735` | ⚠️ Unaudited |
+| XARBSPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x6d6e388064eb7e3256539e9c3e9f16a829f6a222` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -129,25 +129,25 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | n/a | `0x6947a4...d07d62` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | n/a | `0xd01319...b3e551` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | n/a | `0xd394e9...850f1b` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | n/a | `0xf50874...38458f` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-nova | n/a | `0x11f620...706f18` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-nova | n/a | `0x5175be...320b86` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-nova | n/a | `0x67844f...e4655e` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-nova | n/a | `0x7a8f5a...46e2da` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-nova | n/a | `0x898531...367dfa` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-nova | n/a | `0xd8eae1...25823a` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-nova | n/a | `0xee01c0...06f36f` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-nova | n/a | `0xf62394...4242fd` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-421613 | n/a | `0x3e9c5b...a40ec0` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-421613 | n/a | `0x7b2cde...c1854e` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-421613 | n/a | `0x7df7d7...662a48` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-421613 | n/a | `0x81cd91...51d18c` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-421613 | n/a | `0x8cbe91...063c44` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-421613 | n/a | `0xac53fd...448d90` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-421613 | n/a | `0xbe737d...025bf2` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | n/a | `0x6947a425453d04305520e612f0cb2952e4d07d62` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | n/a | `0xd01319f4b65b79124549de409d36f25e04b3e551` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | n/a | `0xd394e9cc20f43d2651293756f8d320668e850f1b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | n/a | `0xf50874f8246776ca4b89eef471e718f70f38458f` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-nova | n/a | `0x11f6206aef570ae946c0117c8f4b298b0a706f18` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-nova | n/a | `0x5175bea6f39f973dc5cfdcd38bcf9c98e4320b86` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-nova | n/a | `0x67844f0f0dd3d770ff29b0ace50e35a853e4655e` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-nova | n/a | `0x7a8f5a10ba5bfc189e5ed43fab3ff6c50346e2da` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-nova | n/a | `0x898531b625d5f2cf57de991e690dd23bb4367dfa` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-nova | n/a | `0xd8eae158cad24eb72d8c7d5c66c0767ba725823a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-nova | n/a | `0xee01c0cd76354c383b8c7b4e65ea88d00b06f36f` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-nova | n/a | `0xf6239423fcf1c19ed2791d9648a90836074242fd` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-421613 | n/a | `0x3e9c5b977fcb97ac68370af032f13bd954a40ec0` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-421613 | n/a | `0x7b2cde10ebd24d0c5399359ffc708b44bbc1854e` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-421613 | n/a | `0x7df7d7fd1365a72c10206247667db0ebdd662a48` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-421613 | n/a | `0x81cd91b6bd7d275a7aeebba15929ae0f0751d18c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-421613 | n/a | `0x8cbe91aad6ec3c0f2ad7e608ae07083940063c44` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-421613 | n/a | `0xac53fd1fe1a6ed82ab8c0b2216b56dd1bd448d90` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-421613 | n/a | `0xbe737d08fb505ad45e08a89ac7fda9791f025bf2` | ❓ Unverified |
 
 ## Audit Inventory
 

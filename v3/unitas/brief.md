@@ -57,8 +57,8 @@ The pinned logic-topography run contains 2 contract row(s) across bsc. Structura
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- StakedUSDuV2 (`0x385c27...52ec71`, chain 56)
-- USDu (`0xea953e...db5882`, chain 56)
+- StakedUSDuV2 (`0x385c279445581a186a4182a5503094ebb652ec71`, chain 56)
+- USDu (`0xea953ea6634d55dac6697c436b1e81a679db5882`, chain 56)
 
 ## Contract Surface Quality
 
@@ -103,22 +103,22 @@ The pinned logic-topography run contains 2 contract row(s) across bsc. Structura
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| StakedUSDuV2 | token | project_anchor | own_supporting | 0 | bsc | unit-395312 | `0x385c27...52ec71` | ✅ Audited |
-| USDu | unknown | project_anchor | own_supporting | 0 | bsc | unit-395313 | `0xea953e...db5882` | ✅ Audited |
+| StakedUSDuV2 | token | project_anchor | own_supporting | 0 | bsc | unit-395312 | `0x385c279445581a186a4182a5503094ebb652ec71` | ✅ Audited |
+| USDu | unknown | project_anchor | own_supporting | 0 | bsc | unit-395313 | `0xea953ea6634d55dac6697c436b1e81a679db5882` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (9)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| PancakeV3Pool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x8aab55...852120` | ⚠️ Unaudited |
-| SafeProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xb464c9...0ed3a9` | ⚠️ Unaudited |
-| UnitasMintingV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xbb984c...4ea82a` | ⚠️ Unaudited |
-| XGLDExchangeRate | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x7bbe7f...3e46e7` | ⚠️ Unaudited |
-| XGLDMinting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2a9e3e...5b5865` | ⚠️ Unaudited |
-| XGLDRateUpdaterWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0e2058...c63bdd` | ⚠️ Unaudited |
-| XGLDRedeemer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2ac5ab...53003c` | ⚠️ Unaudited |
-| XGLDTimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x99997b...f87228` | ⚠️ Unaudited |
-| XGLDToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe60106...50ac91` | ⚠️ Unaudited |
+| PancakeV3Pool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x8aab5522d601bbb85501d703b55a272e47852120` | ⚠️ Unaudited |
+| SafeProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xb464c9890604926bd5fa7b66bf15d26bcd0ed3a9` | ⚠️ Unaudited |
+| UnitasMintingV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xbb984ce670100aa855f6152f88b26ee57f4ea82a` | ⚠️ Unaudited |
+| XGLDExchangeRate | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x7bbe7fdcd6bdffd7f767a9531b6210b87b3e46e7` | ⚠️ Unaudited |
+| XGLDMinting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2a9e3ea72575e05337a7703c8fad65a82a5b5865` | ⚠️ Unaudited |
+| XGLDRateUpdaterWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0e20582d0b490039020bc0a6e9d7bd7963c63bdd` | ⚠️ Unaudited |
+| XGLDRedeemer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2ac5abd45fea3d72afc1c68500ba4a677153003c` | ⚠️ Unaudited |
+| XGLDTimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x99997b18733ff4a9d8e0b9c7d9dec59625f87228` | ⚠️ Unaudited |
+| XGLDToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe60106a5cab7e7c64830919d36ab20caaf50ac91` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -138,12 +138,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3b5f4a...5fbb4c` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x643c75...a6e4b4` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x6e705a...2c0c0e` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x82a7cc...95c361` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xa1e952...31c89d` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xcfff99...39eb38` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3b5f4ac56dab45f43dbad9b41c6a57f0f85fbb4c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x643c75cb6eb5218e7cb39f563dd606bf62a6e4b4` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x6e705a2e978a30dc92df69b428a333f6b82c0c0e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x82a7cc65dc43a9cd5b105581b954ef082595c361` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xa1e9526cb6ac47403a7a820e75d7bb0c2831c89d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xcfff99c2ac4c0cbc03dc4a8fa55baefe1139eb38` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -174,15 +174,15 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Unipay Audit Report-2026-1-9.pdf | UnitasProxy | unmatched — not counted | — | listed in scope table (ID UPR1) | no |
 | Unitas Audit Audit Report-2025-9-12.pdf | SingleAdminAccessControl | unmatched — not counted | — | — | no |
 | Unitas Audit Audit Report-2025-9-12.pdf | StakedUSDu | unmatched — not counted | — | — | no |
-| Unitas Audit Audit Report-2025-9-12.pdf | StakedUSDuV2 | own contract | StakedUSDuV2 (selected) `0x385c27...52ec71` — deployed 2025-11-22 10:13:01+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Unitas Audit Audit Report-2025-9-12.pdf | USDu | own contract | USDu (selected) `0xea953e...db5882` — deployed 2025-11-22 10:12:25+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Unitas Audit Audit Report-2025-9-12.pdf | StakedUSDuV2 | own contract | StakedUSDuV2 (selected) `0x385c279445581a186a4182a5503094ebb652ec71` — deployed 2025-11-22 10:13:01+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Unitas Audit Audit Report-2025-9-12.pdf | USDu | own contract | USDu (selected) `0xea953ea6634d55dac6697c436b1e81a679db5882` — deployed 2025-11-22 10:12:25+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Unitas Audit Audit Report-2025-9-12.pdf | USDuSilo | unmatched — not counted | — | — | no |
 | Unitas Audit Audit Report-2025-9-12.pdf | UnitasMinting | unmatched — not counted | — | — | no |
 | Unitas Audit Audit Report-2025-9-12.pdf | UnitasMintingV2 | unmatched — not counted | — | — | no |
 | Unitas Contracts - SlowMist Audit Report.pdf | SingleAdminAccessControl | unmatched — not counted | — | — | no |
 | Unitas Contracts - SlowMist Audit Report.pdf | StakedUSDu | unmatched — not counted | — | — | no |
-| Unitas Contracts - SlowMist Audit Report.pdf | StakedUSDuV2 | own contract | StakedUSDuV2 (selected) `0x385c27...52ec71` — deployed 2025-11-22 10:13:01+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Unitas Contracts - SlowMist Audit Report.pdf | USDu | own contract | USDu (selected) `0xea953e...db5882` — deployed 2025-11-22 10:12:25+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Unitas Contracts - SlowMist Audit Report.pdf | StakedUSDuV2 | own contract | StakedUSDuV2 (selected) `0x385c279445581a186a4182a5503094ebb652ec71` — deployed 2025-11-22 10:13:01+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Unitas Contracts - SlowMist Audit Report.pdf | USDu | own contract | USDu (selected) `0xea953ea6634d55dac6697c436b1e81a679db5882` — deployed 2025-11-22 10:12:25+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Unitas Contracts - SlowMist Audit Report.pdf | USDuSilo | unmatched — not counted | — | — | no |
 | Unitas Contracts - SlowMist Audit Report.pdf | UnitasMinting | unmatched — not counted | — | — | no |
 | Unitas Contracts - SlowMist Audit Report.pdf | UnitasMintingV2 | unmatched — not counted | — | — | no |
@@ -190,9 +190,9 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | 2025-04-04 Audit Report - Unipay.pdf | BlacklistState | unmatched — not counted | — | — | no |
 | 2025-04-04 Audit Report - Unipay.pdf | Cooldown | unmatched — not counted | — | — | no |
 | 2025-04-04 Audit Report - Unipay.pdf | SUSDU | unmatched — not counted | — | — | no |
-| 2025-04-04 Audit Report - Unipay.pdf | USDU | own contract | USDu (selected) `0xea953e...db5882` — deployed 2025-11-22 10:12:25+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2025-04-04 Audit Report - Unipay.pdf | USDU | own contract | USDu (selected) `0xea953ea6634d55dac6697c436b1e81a679db5882` — deployed 2025-11-22 10:12:25+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2025-04-04 Audit Report - Unipay.pdf | VaultConfig | unmatched — not counted | — | — | no |
-| 20250326-Unipay-Final-Audit-Report.pdf | USDU | own contract | USDu (selected) `0xea953e...db5882` — deployed 2025-11-22 10:12:25+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 20250326-Unipay-Final-Audit-Report.pdf | USDU | own contract | USDu (selected) `0xea953ea6634d55dac6697c436b1e81a679db5882` — deployed 2025-11-22 10:12:25+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 20250326-Unipay-Final-Audit-Report.pdf | SUSDU | unmatched — not counted | — | Files in scope include programs/susdu/src/state/config.rs, state/mod.rs, instructions/admin/init_config.rs, instructions/admin/mod.rs, instructions/mod.rs | no |
 | 20250326-Unipay-Final-Audit-Report.pdf | Vault | unmatched — not counted | — | Files in scope include programs/vault/src/utils/token.rs, math/rounding.rs, math/error.rs, state/cooldown.rs, instructions/admin/init_vault.rs, instructions/susdu/mod.rs, instructions/mod.rs, instructions/usdu/mod.rs | no |
 | 20250326-Unipay-Final-Audit-Report.pdf | Guardian | unmatched — not counted | — | Files in scope include programs/guardian/src/constants.rs, events.rs, state/mod.rs, instructions/admin/mod.rs, instructions/admin/init_access_registry.rs, instructions/mod.rs | no |

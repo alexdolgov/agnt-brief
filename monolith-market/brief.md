@@ -63,15 +63,15 @@ The protocol forms a single structural family (Core Logic) of 4 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Factory | unknown | ethereum | n/a | [`0x2c13d0...618d83`](./contracts/ethereum-1/0x2c13d0f087c42644fcdeeb0f4d0a272c50618d83/) | ✅ Audited |
-| Lens | unknown | ethereum | n/a | [`0x8aab59...01e60d`](./contracts/ethereum-1/0x8aab59675e123ceefe5e05b0bc1be8fe6101e60d/) | ✅ Audited |
+| Factory | unknown | ethereum | n/a | [`0x2c13d0f087c42644fcdeeb0f4d0a272c50618d83`](./contracts/ethereum-1/0x2c13d0f087c42644fcdeeb0f4d0a272c50618d83/) | ✅ Audited |
+| Lens | unknown | ethereum | n/a | [`0x8aab59675e123ceefe5e05b0bc1be8fe6101e60d`](./contracts/ethereum-1/0x8aab59675e123ceefe5e05b0bc1be8fe6101e60d/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Metadata | unknown | ethereum | n/a | [`0x2afb12...8f581a`](./contracts/ethereum-1/0x2afb125bb848049b54d0903a1fd365e7518f581a/) | ⚠️ Unaudited |
-| Timelock | unknown | ethereum | n/a | [`0x926df1...659d5b`](./contracts/ethereum-1/0x926df14a23be491164dcf93f4c468a50ef659d5b/) | ⚠️ Unaudited |
+| Metadata | unknown | ethereum | n/a | [`0x2afb125bb848049b54d0903a1fd365e7518f581a`](./contracts/ethereum-1/0x2afb125bb848049b54d0903a1fd365e7518f581a/) | ⚠️ Unaudited |
+| Timelock | unknown | ethereum | n/a | [`0x926df14a23be491164dcf93f4c468a50ef659d5b`](./contracts/ethereum-1/0x926df14a23be491164dcf93f4c468a50ef659d5b/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -110,8 +110,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x2afb12...8f581a`](./contracts/ethereum-1/0x2afb125bb848049b54d0903a1fd365e7518f581a/) | Metadata | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x926df1...659d5b`](./contracts/ethereum-1/0x926df14a23be491164dcf93f4c468a50ef659d5b/) | Timelock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x2afb125bb848049b54d0903a1fd365e7518f581a`](./contracts/ethereum-1/0x2afb125bb848049b54d0903a1fd365e7518f581a/) | Metadata | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x926df14a23be491164dcf93f4c468a50ef659d5b`](./contracts/ethereum-1/0x926df14a23be491164dcf93f4c468a50ef659d5b/) | Timelock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

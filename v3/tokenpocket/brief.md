@@ -56,7 +56,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xacba4c...70e758`, chain 1)
+- UnnamedContract (`0xacba4cfe7f30e64da787c6dc7dc34f623570e758`, chain 1)
 
 ## Contract Surface Quality
 
@@ -102,16 +102,16 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BKSToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x121ca6...3fdf7c` | ⚠️ Unaudited |
-| BMRToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc6df04...8b0e92` | ⚠️ Unaudited |
-| ContractChecker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xde858e...8b8e2d` | ⚠️ Unaudited |
-| ERC20TokenFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb9b688...82a763` | ⚠️ Unaudited |
-| EWSToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf77373...c42f90` | ⚠️ Unaudited |
-| KTToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x335a76...46e617` | ⚠️ Unaudited |
-| KWToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x270d32...0ebbe9` | ⚠️ Unaudited |
-| RSPToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfc79e5...b6fed3` | ⚠️ Unaudited |
-| TPToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x416172...a9fae1` | ⚠️ Unaudited |
-| UWSToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe96959...fded05` | ⚠️ Unaudited |
+| BKSToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x121ca6a8079179678aef599d63449c6a9f3fdf7c` | ⚠️ Unaudited |
+| BMRToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc6df049c9471730e20a90f621db4df2b168b0e92` | ⚠️ Unaudited |
+| ContractChecker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xde858e297969f9981e65ae3c73e65f87ad8b8e2d` | ⚠️ Unaudited |
+| ERC20TokenFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb9b6885d0af9914d432871dcbeb20daa8282a763` | ⚠️ Unaudited |
+| EWSToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf7737361b538841a7157cafe5e932b27eac42f90` | ⚠️ Unaudited |
+| KTToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x335a763df5bbcabd501303a9d8201cba0746e617` | ⚠️ Unaudited |
+| KWToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x270d32dc8b6ac374ffef0da958a16fe48e0ebbe9` | ⚠️ Unaudited |
+| RSPToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfc79e5ecbfb64cb292c71267731d4ef8f9b6fed3` | ⚠️ Unaudited |
+| TPToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4161725d019690a3e0de50f6be67b07a86a9fae1` | ⚠️ Unaudited |
+| UWSToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe96959522effd18da0238fbbe1bc97aff2fded05` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -131,7 +131,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394090 | `0xacba4c...70e758` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394090 | `0xacba4cfe7f30e64da787c6dc7dc34f623570e758` | ❓ Unverified |
 
 ## Audit Inventory
 

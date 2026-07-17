@@ -60,7 +60,7 @@ The protocol forms a single structural family (Core Logic) of 1 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| T2MultiverseSoulShares | unknown | base | n/a | [`0xe173a2...a895ec`](./contracts/base-8453/0xe173a25c522385bb117b3044c79f534cd0a895ec/) | ⚠️ Unaudited |
+| T2MultiverseSoulShares | unknown | base | n/a | [`0xe173a25c522385bb117b3044c79f534cd0a895ec`](./contracts/base-8453/0xe173a25c522385bb117b3044c79f534cd0a895ec/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -80,22 +80,22 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | base | n/a | `0x030ca0...7c3c00` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x099cf2...aa9d96` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x24a42c...5ef162` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x322eb2...0f7d00` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x38c4c6...9bc422` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x5781df...a196ce` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x73e594...b58223` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xa39b6d...268bbc` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xa3bbf7...4bf4af` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xade44a...9cc7fb` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xc433d5...f9cec6` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xc5ef91...3c6ae6` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xd15b5e...ed48ec` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xe02cda...a3eb14` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xec3df7...b51eb7` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xf5633d...c87b8e` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x030ca0c5226ce6ced8e1546df30bfbfa3b7c3c00` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x099cf2682bdc86c59405a1eb8d699aff7daa9d96` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x24a42c3e882b325ae6b45e126ffdbd0aea5ef162` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x322eb2629234be6622d41d79a24141632a0f7d00` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x38c4c6299c7e8acae3b7396d98641dba919bc422` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x5781df1d9eb716146e494f60a41c2ffb7aa196ce` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x73e59409947336dc48b5924e257815e9e3b58223` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xa39b6d446f558d744c3f498419ae2a1309268bbc` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xa3bbf777df43fd3f190e07374bb4b0987c4bf4af` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xade44a1fed752f6124fe5b34cbe8547aa79cc7fb` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xc433d513bac8b683a90b84e1d5d970985af9cec6` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xc5ef91d8c49159a3484c5ef466d6c5d8743c6ae6` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xd15b5e128b2cf2a8ecabdeb670ab1f76b8ed48ec` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xe02cdaa892a76d1159bccc0dbfbecb18e0a3eb14` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xec3df73e710d1265a8979eec4bf5a86576b51eb7` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf5633d5c3151c6038764d64a80e0d58cfec87b8e` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -109,7 +109,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0xe173a2...a895ec`](./contracts/base-8453/0xe173a25c522385bb117b3044c79f534cd0a895ec/) | T2MultiverseSoulShares | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xe173a25c522385bb117b3044c79f534cd0a895ec`](./contracts/base-8453/0xe173a25c522385bb117b3044c79f534cd0a895ec/) | T2MultiverseSoulShares | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

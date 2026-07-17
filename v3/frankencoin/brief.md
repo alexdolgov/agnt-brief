@@ -53,8 +53,8 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 ### Forked Contracts
 
-**Frankencoin** (`0xb58e61...0921cb`, chain 1)
-Origin: decentralized-euro (`0xb58e61...0921cb`)
+**Frankencoin** (`0xb58e61c3098d85632df34eecfb899a1ed80921cb`, chain 1)
+Origin: decentralized-euro (`0xb58e61c3098d85632df34eecfb899a1ed80921cb`)
 Containment: 100.0% - 16 functions inherited
 Centroid audit status: pending_validation
 
@@ -110,53 +110,53 @@ Removals (removed from original): none
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Frankencoin | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240440 | `0xb58e61...0921cb` | ✅ Audited |
+| Frankencoin | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240440 | `0xb58e61c3098d85632df34eecfb899a1ed80921cb` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (41)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AuthorizationProcessor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x387416...47466e` | ⚠️ Unaudited |
-| AuthorizePositionV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x64335c...5f3032`; ethereum `0xc2fe10...efd930`; ethereum `0xe5487b...3e33be` | ⚠️ Unaudited |
-| Autobidder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x761ebe...50a168`; ethereum `0x795075...17b39a`; ethereum `0xa05bfd...72c4c4` | ⚠️ Unaudited |
-| BridgeAccounting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x88fd2e...8adb16` | ⚠️ Unaudited |
-| BurnMintTokenPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9359cd...be4b79` | ⚠️ Unaudited |
-| CCIPAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2527ec...5dfef8` | ⚠️ Unaudited |
-| CloneHelper | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x55cd28...5f8bee` | ⚠️ Unaudited |
-| Equity | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1ba267...e341b2` | ⚠️ Unaudited |
-| FlashloanFrankencoin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3d60db...ec96a1` | ⚠️ Unaudited |
-| Folio | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xe4a109...db1f94` | ⚠️ Unaudited |
-| FPSWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x5052d3...80b182`; ethereum `0x54e556...e0fa16` | ⚠️ Unaudited |
-| Frankencoin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x422d17...86bf4e`; ethereum `0x7a7870...09b0d8` | ⚠️ Unaudited |
-| GovernanceSender | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfd2327...f876eb` | ⚠️ Unaudited |
-| IFALCSUSDFProxyPriceAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x50fae3...794a1c` | ⚠️ Unaudited |
-| IFALCUSDCProxyPriceAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x8ef854...60f52e`; ethereum `0x998d0c...16f8fd` | ⚠️ Unaudited |
-| LeadrateSender | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4d4337...8ef28d` | ⚠️ Unaudited |
-| LeverageRealUnit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xaf285c...7eda8c` | ⚠️ Unaudited |
-| MintingHub | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0x0e5dfe...fcb9ea`; ethereum `0x4539b0...0a4e7a`; ethereum `0x754676...265219`; ethereum `0xde12b6...653557` | ⚠️ Unaudited |
-| MockFlashloanRecipient | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x83aec9...0005b8` | ⚠️ Unaudited |
-| Position | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x44bfc2...3467b9` | ⚠️ Unaudited |
-| PositionFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0x0cde50...486392`; ethereum `0x63cf7c...706b7e`; ethereum `0x728310...8472ba`; ethereum `0xcfa9b5...be2080` | ⚠️ Unaudited |
-| PositionRoller | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xad0107...9ea6b6` | ⚠️ Unaudited |
-| PositionV2Streamer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x38426f...9976d5` | ⚠️ Unaudited |
-| ReferenceTransfer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x46eadd...d80437`; ethereum `0x6a9ffb...79ab7e` | ⚠️ Unaudited |
-| RewardRouterV0 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfa6d71...269339` | ⚠️ Unaudited |
-| RewardsV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1209e4...b78283` | ⚠️ Unaudited |
-| RollerPositionV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x77350f...a72786` | ⚠️ Unaudited |
-| Savings | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x27d9ad...a17b38`; ethereum `0x3bf301...dfb2ae` | ⚠️ Unaudited |
-| SavingsToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x00e632...e28139` | ⚠️ Unaudited |
-| SavingsVaultZCHF | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x637f00...fef8bc` | ⚠️ Unaudited |
-| SavingsVaultZCHF_2 | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe5f130...abf6b0` | ⚠️ Unaudited |
-| StablecoinBridge | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x3b71ba...340403`; ethereum `0x3e445f...64f6c1`; ethereum `0x4125cd...d8402b`; ethereum `0x7bbe8f...e346df`; ethereum `0x8d8b5d...0fa020` | ⚠️ Unaudited |
-| SUSDFUSDFProxyPriceAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbabad4...610bef` | ⚠️ Unaudited |
-| SyStUSDStrategyPriceProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x45f389...deeca6` | ⚠️ Unaudited |
-| SZCHFZCHFProxyPriceAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd4bbb9...e7b971` | ⚠️ Unaudited |
-| TransferReference | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf98c22...8a1916` | ⚠️ Unaudited |
-| UniswapV3Pool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8e4318...c78cef` | ⚠️ Unaudited |
-| VaultAdapterRecoverV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x397fb4...e2e50b`; ethereum `0x5febef...6c4bd7`; ethereum `0x8f36bb...fdf221` | ⚠️ Unaudited |
-| VaultDeployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x745211...1e25d5` | ⚠️ Unaudited |
-| XCVXUSDPriceAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x19a5d0...8628cb` | ⚠️ Unaudited |
-| XETHUSDPriceAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x616594...374fe9`; ethereum `0x8c1589...5202fb` | ⚠️ Unaudited |
+| AuthorizationProcessor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3874161854d0d5f13b4de2cb5061d9cff547466e` | ⚠️ Unaudited |
+| AuthorizePositionV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x64335c4fea9108c07e72609c7f97be6f505f3032`; ethereum `0xc2fe1047ac94b490eeea26db39bef64671efd930`; ethereum `0xe5487b933e7b27555523afe7d3a2afaf843e33be` | ⚠️ Unaudited |
+| Autobidder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x761ebe1a53d65dcd629965cd89c2d5218250a168`; ethereum `0x79507527b2b48fbe0df98d70d0102a054e17b39a`; ethereum `0xa05bfd161ed9b9e7bacd5c03635cb8073e72c4c4` | ⚠️ Unaudited |
+| BridgeAccounting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x88fd2ecd0b9250f203e99e80eb78b0c32b8adb16` | ⚠️ Unaudited |
+| BurnMintTokenPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9359cd75549dae00cdd8d22297bc9b13fbbe4b79` | ⚠️ Unaudited |
+| CCIPAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2527ec458c863073a303cf0a362bf78add5dfef8` | ⚠️ Unaudited |
+| CloneHelper | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x55cd2820735db56ca0965be224d71994265f8bee` | ⚠️ Unaudited |
+| Equity | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1ba26788dfde592fec8bcb0eaff472a42be341b2` | ⚠️ Unaudited |
+| FlashloanFrankencoin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3d60dbd18b930b1710b76b88461e33dcadec96a1` | ⚠️ Unaudited |
+| Folio | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xe4a10951f962e6cb93cb843a4ef05d2f99db1f94` | ⚠️ Unaudited |
+| FPSWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x5052d3cc819f53116641e89b96ff4cd1ee80b182`; ethereum `0x54e55618ce94738689914036b98fac8b10e0fa16` | ⚠️ Unaudited |
+| Frankencoin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x422d17ccc1442501d039595ffcaaa71b4686bf4e`; ethereum `0x7a787023f6e18f979b143c79885323a24709b0d8` | ⚠️ Unaudited |
+| GovernanceSender | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfd23272dfcb13dc3fabd8db851fcd4827af876eb` | ⚠️ Unaudited |
+| IFALCSUSDFProxyPriceAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x50fae3c51a00a46bc2bbceb7390c28caa6794a1c` | ⚠️ Unaudited |
+| IFALCUSDCProxyPriceAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x8ef854f54df588785e5d16ede9785760d760f52e`; ethereum `0x998d0c734bae49b8757157c7fe3847e2e416f8fd` | ⚠️ Unaudited |
+| LeadrateSender | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4d433780a16d425c5db1f725a6d104233a8ef28d` | ⚠️ Unaudited |
+| LeverageRealUnit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xaf285ce08541908ba3e2b449656f4763a37eda8c` | ⚠️ Unaudited |
+| MintingHub | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0x0e5dfe570e5637f7b6b43f515b30dd08fbfcb9ea`; ethereum `0x4539b08a1f2f9efc8c3f66876eb8d8c1920a4e7a`; ethereum `0x7546762fdb1a6d9146b33960545c3f6394265219`; ethereum `0xde12b620a8a714476a97efd14e6f7180ca653557` | ⚠️ Unaudited |
+| MockFlashloanRecipient | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x83aec9c352c9095d19821b0e2272d691860005b8` | ⚠️ Unaudited |
+| Position | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x44bfc2a260f091f8365ba8b240cd9491903467b9` | ⚠️ Unaudited |
+| PositionFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0x0cde500e6940931ed190ded77bb48640c9486392`; ethereum `0x63cf7c82460c5d84d10be2219d80f746d8706b7e`; ethereum `0x728310feaca72dc46cd5bf7d739556d5668472ba`; ethereum `0xcfa9b55ed2b0d97ac4f04f168b6670dd1bbe2080` | ⚠️ Unaudited |
+| PositionRoller | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xad0107d3da540fd54b1931735b65110c909ea6b6` | ⚠️ Unaudited |
+| PositionV2Streamer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x38426f0d45f1a6af367be9daa1ebc272879976d5` | ⚠️ Unaudited |
+| ReferenceTransfer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x46eadde3d63612251a2fc962973caa0f0bd80437`; ethereum `0x6a9ffb6727dfd8811b7e67a578e2e576f779ab7e` | ⚠️ Unaudited |
+| RewardRouterV0 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfa6d71ed122a7b3b494116317c2ac3b4e5269339` | ⚠️ Unaudited |
+| RewardsV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1209e42096a0183c14fd26b6faf5707461b78283` | ⚠️ Unaudited |
+| RollerPositionV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x77350f85c1570393be6fda586cf978608ba72786` | ⚠️ Unaudited |
+| Savings | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x27d9ad987bde08a0d083ef7e0e4043c857a17b38`; ethereum `0x3bf301b0e2003e75a3e86ab82bd1eff6a9dfb2ae` | ⚠️ Unaudited |
+| SavingsToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x00e632728d5ab91fe8319760ffdd2d7362e28139` | ⚠️ Unaudited |
+| SavingsVaultZCHF | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x637f00cab9665cb07d91bfb9c6f3fa8fabfef8bc` | ⚠️ Unaudited |
+| SavingsVaultZCHF_2 | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe5f130253ff137f9917c0107659a4c5262abf6b0` | ⚠️ Unaudited |
+| StablecoinBridge | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x3b71ba73299f925a837836160c3e1fec74340403`; ethereum `0x3e445ff4dddf0ff8ae7458c9746ed80bd664f6c1`; ethereum `0x4125cd1f826099a4dead6b7746f7f28b30d8402b`; ethereum `0x7bbe8f18040af0032f4c2435e7a76db6f1e346df`; ethereum `0x8d8b5d8bd3fb93327747148edd036265be0fa020` | ⚠️ Unaudited |
+| SUSDFUSDFProxyPriceAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbabad428f76d05cba8a3e81035c41579cb610bef` | ⚠️ Unaudited |
+| SyStUSDStrategyPriceProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x45f3898dacb80b9adeac54269e1aa32547deeca6` | ⚠️ Unaudited |
+| SZCHFZCHFProxyPriceAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd4bbb9cadae5d31d083456827e2dfd94eae7b971` | ⚠️ Unaudited |
+| TransferReference | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf98c221661f51578f5e5236b189a493e2a8a1916` | ⚠️ Unaudited |
+| UniswapV3Pool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8e4318e2cb1ae291254b187001a59a1f8ac78cef` | ⚠️ Unaudited |
+| VaultAdapterRecoverV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x397fb4a34757ac180c0841b26131f25040e2e50b`; ethereum `0x5febefd5aecfefb3352c5edd49d634b1456c4bd7`; ethereum `0x8f36bbee57acb4857cb97898020b529969fdf221` | ⚠️ Unaudited |
+| VaultDeployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x745211a1e1a58b2b11b932855b30d411c31e25d5` | ⚠️ Unaudited |
+| XCVXUSDPriceAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x19a5d0bb1200948adbb6c991494e7292dd8628cb` | ⚠️ Unaudited |
+| XETHUSDPriceAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x6165946250dd04740ab1409217e95a4f38374fe9`; ethereum `0x8c158972bead1819c804559e4e664a3d875202fb` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -176,11 +176,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x56d22e...074615` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb2ca8b...ebed57` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdac17f...831ec7` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe3c0dc...a026e5` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xecaea1...db11da` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x56d22ed3dcef5b4fe0f3d3c3baae61d9e8074615` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb2ca8b8eb931430abc01233e01b5dfd320ebed57` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdac17f958d2ee523a2206206994597c13d831ec7` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe3c0dc8a04d6797aec30e30d686d7adefca026e5` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xecaea1bc7a4a5a4228dd55c244329f7468db11da` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -222,7 +222,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 |---|---|---|---|---|---|
 | code4rena.com/reports/2023-04-frankencoin | ERC20 | unmatched — not counted | — | — | no |
 | code4rena.com/reports/2023-04-frankencoin | Equity | unmatched — not counted | — | — | no |
-| code4rena.com/reports/2023-04-frankencoin | Frankencoin | own contract | Frankencoin (selected) `0xb58e61...0921cb` — deployed 2023-10-29 00:57:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| code4rena.com/reports/2023-04-frankencoin | Frankencoin | own contract | Frankencoin (selected) `0xb58e61c3098d85632df34eecfb899a1ed80921cb` — deployed 2023-10-29 00:57:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | code4rena.com/reports/2023-04-frankencoin | MintingHub | unmatched — not counted | — | — | no |
 | code4rena.com/reports/2023-04-frankencoin | Position | unmatched — not counted | — | — | no |
 | code4rena.com/reports/2023-04-frankencoin | PositionFactory | unmatched — not counted | — | — | no |
@@ -230,7 +230,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | ChainSecurity-audit.pdf | ERC20 | unmatched — not counted | — | — | no |
 | ChainSecurity-audit.pdf | ERC20PermitLight | unmatched — not counted | — | — | no |
 | ChainSecurity-audit.pdf | Equity | unmatched — not counted | — | — | no |
-| ChainSecurity-audit.pdf | Frankencoin | own contract | Frankencoin (selected) `0xb58e61...0921cb` — deployed 2023-10-29 00:57:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity-audit.pdf | Frankencoin | own contract | Frankencoin (selected) `0xb58e61c3098d85632df34eecfb899a1ed80921cb` — deployed 2023-10-29 00:57:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ChainSecurity-audit.pdf | MathUtil | unmatched — not counted | — | — | no |
 | ChainSecurity-audit.pdf | MintingHub | unmatched — not counted | — | — | no |
 | ChainSecurity-audit.pdf | Ownable | unmatched — not counted | — | — | no |
@@ -239,11 +239,11 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | ChainSecurity-audit.pdf | StablecoinBridge | unmatched — not counted | — | — | no |
 | blockbite-audit.pdf | ERC20PermitLight | unmatched — not counted | — | — | no |
 | blockbite-audit.pdf | Equity | unmatched — not counted | — | — | no |
-| blockbite-audit.pdf | Frankencoin | own contract | Frankencoin (selected) `0xb58e61...0921cb` — deployed 2023-10-29 00:57:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| blockbite-audit.pdf | Frankencoin | own contract | Frankencoin (selected) `0xb58e61c3098d85632df34eecfb899a1ed80921cb` — deployed 2023-10-29 00:57:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | blockbite-audit.pdf | MintingHub | unmatched — not counted | — | — | no |
 | blockbite-audit.pdf | StablecoinBridge | unmatched — not counted | — | — | no |
 | ChainSecurity_Frankencoin_Frankencoin_v2024.pdf | FPSWrapper | unmatched — not counted | — | — | no |
-| ChainSecurity_Frankencoin_Frankencoin_v2024.pdf | Frankencoin | own contract | Frankencoin (selected) `0xb58e61...0921cb` — deployed 2023-10-29 00:57:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_Frankencoin_Frankencoin_v2024.pdf | Frankencoin | own contract | Frankencoin (selected) `0xb58e61c3098d85632df34eecfb899a1ed80921cb` — deployed 2023-10-29 00:57:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ChainSecurity_Frankencoin_Frankencoin_v2024.pdf | Leadrate | unmatched — not counted | — | — | no |
 | ChainSecurity_Frankencoin_Frankencoin_v2024.pdf | MintingHub | unmatched — not counted | — | — | no |
 | ChainSecurity_Frankencoin_Frankencoin_v2024.pdf | Position | unmatched — not counted | — | — | no |
@@ -257,15 +257,15 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | frankencoin-audit-report-2024-1.1.pdf | PositionRoller | unmatched — not counted | — | listed in scope | no |
 | frankencoin-audit-report-2024-1.1.pdf | Savings | unmatched — not counted | — | listed in scope | no |
 | blockbite-audit.md | StablecoinBridge | unmatched — not counted | — | — | no |
-| www.chainsecurity.com/security-audit/frankencoin-smart-contracts | Frankencoin | own contract | Frankencoin (selected) `0xb58e61...0921cb` — deployed 2023-10-29 00:57:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| www.chainsecurity.com/security-audit/frankencoin-v2024 | Frankencoin | own contract | Frankencoin (selected) `0xb58e61...0921cb` — deployed 2023-10-29 00:57:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| www.chainsecurity.com/security-audit/frankencoin-smart-contracts | Frankencoin | own contract | Frankencoin (selected) `0xb58e61c3098d85632df34eecfb899a1ed80921cb` — deployed 2023-10-29 00:57:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| www.chainsecurity.com/security-audit/frankencoin-v2024 | Frankencoin | own contract | Frankencoin (selected) `0xb58e61c3098d85632df34eecfb899a1ed80921cb` — deployed 2023-10-29 00:57:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | www.chainsecurity.com/security-audit/frankencoin-v2024 | MintingHub | unmatched — not counted | — | — | no |
 | www.chainsecurity.com/security-audit/frankencoin-v2024 | PositionRoller | unmatched — not counted | — | — | no |
 | www.chainsecurity.com/security-audit/frankencoin-v2024 | Savings | unmatched — not counted | — | — | no |
 | www.chainsecurity.com/security-audit/frankencoin-ccip-bridge | Frankencoin CCIP Bridge | unmatched — not counted | — | listed in scope | no |
 | AuditReport-Frankencoin.pdf | ERC20PermitLight | unmatched — not counted | — | — | no |
 | AuditReport-Frankencoin.pdf | Equity | unmatched — not counted | — | — | no |
-| AuditReport-Frankencoin.pdf | Frankencoin | own contract | Frankencoin (selected) `0xb58e61...0921cb` — deployed 2023-10-29 00:57:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| AuditReport-Frankencoin.pdf | Frankencoin | own contract | Frankencoin (selected) `0xb58e61c3098d85632df34eecfb899a1ed80921cb` — deployed 2023-10-29 00:57:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | AuditReport-Frankencoin.pdf | MintingHub | unmatched — not counted | — | — | no |
 | AuditReport-Frankencoin.pdf | Position | unmatched — not counted | — | — | no |
 | AuditReport-Frankencoin.pdf | StablecoinBridge | unmatched — not counted | — | — | no |

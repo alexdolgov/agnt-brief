@@ -52,64 +52,64 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xaa3010...944a8f`, chain 196)
-- UnnamedContract (`0xee0319...1bd69a`, chain 196)
-- UnnamedContract (`0xff031c...9900a5`, chain 196)
-- UnnamedContract (`0x58a64d...28bbf5`, chain 324)
-- UnnamedContract (`0xac74fe...f15861`, chain 324)
-- UnnamedContract (`0xbd8df7...f112a9`, chain 324)
-- UnnamedContract (`0xaa3010...944a8f`, chain 2649)
-- UnnamedContract (`0xee030e...655b86`, chain 2649)
-- UnnamedContract (`0xaa3010...944a8f`, chain 4200)
-- UnnamedContract (`0xee030e...655b86`, chain 4200)
-- UnnamedContract (`0xff031c...9900a5`, chain 4200)
-- UnnamedContract (`0xaa3010...944a8f`, chain 8217)
-- UnnamedContract (`0xee030e...655b86`, chain 8217)
-- UnnamedContract (`0xee0319...1bd69a`, chain 8217)
-- UnnamedContract (`0xff031c...9900a5`, chain 8217)
-- UnnamedContract (`0xff031c...9900a5`, chain 534352)
-- ButterRouterV3 (`0xee030e...655b86`, chain 1)
-- ButterRouterV3 (`0xee030e...655b86`, chain 10)
-- ButterRouterV3 (`0xee030e...655b86`, chain 56)
-- ButterRouterV3 (`0xee030e...655b86`, chain 137)
-- ButterRouterV3 (`0xee030e...655b86`, chain 5000)
-- ButterRouterV3 (`0xee030e...655b86`, chain 8453)
-- ButterRouterV3 (`0xee030e...655b86`, chain 42161)
-- ButterRouterV3 (`0xee030e...655b86`, chain 59144)
-- ButterRouterV3 (`0xee030e...655b86`, chain 81457)
-- ButterRouterV3 (`0xee030e...655b86`, chain 534352)
-- ButterRouterV31 (`0xee0319...1bd69a`, chain 1)
-- ButterRouterV31 (`0xee0319...1bd69a`, chain 10)
-- ButterRouterV31 (`0xee0319...1bd69a`, chain 56)
-- ButterRouterV31 (`0xee0319...1bd69a`, chain 130)
-- ButterRouterV31 (`0xee0319...1bd69a`, chain 137)
-- ButterRouterV31 (`0xee0319...1bd69a`, chain 8453)
-- ButterRouterV31 (`0xee0319...1bd69a`, chain 42161)
-- ButterRouterV31 (`0xee0319...1bd69a`, chain 43114)
-- ButterRouterV31 (`0xee0319...1bd69a`, chain 59144)
-- Receiver (`0xff031c...9900a5`, chain 1)
-- Receiver (`0xff031c...9900a5`, chain 10)
-- Receiver (`0xff031c...9900a5`, chain 56)
-- Receiver (`0xff031c...9900a5`, chain 130)
-- Receiver (`0xff031c...9900a5`, chain 137)
-- Receiver (`0xff031c...9900a5`, chain 5000)
-- Receiver (`0xff031c...9900a5`, chain 8453)
-- Receiver (`0xff031c...9900a5`, chain 42161)
-- Receiver (`0xff031c...9900a5`, chain 43114)
-- Receiver (`0xff031c...9900a5`, chain 59144)
-- Receiver (`0xff031c...9900a5`, chain 81457)
-- SwapAdapter (`0xaa3010...944a8f`, chain 1)
-- SwapAdapter (`0xaa3010...944a8f`, chain 10)
-- SwapAdapter (`0xaa3010...944a8f`, chain 56)
-- SwapAdapter (`0xaa3010...944a8f`, chain 130)
-- SwapAdapter (`0xaa3010...944a8f`, chain 137)
-- SwapAdapter (`0xaa3010...944a8f`, chain 5000)
-- SwapAdapter (`0xaa3010...944a8f`, chain 8453)
-- SwapAdapter (`0xaa3010...944a8f`, chain 42161)
-- SwapAdapter (`0xaa3010...944a8f`, chain 43114)
-- SwapAdapter (`0xaa3010...944a8f`, chain 59144)
-- SwapAdapter (`0xaa3010...944a8f`, chain 81457)
-- SwapAdapter (`0xaa3010...944a8f`, chain 534352)
+- UnnamedContract (`0xaa301070448385cfaac5913a67b16c4392944a8f`, chain 196)
+- UnnamedContract (`0xee0319cf0bca5d09333f9f6277743e8de31bd69a`, chain 196)
+- UnnamedContract (`0xff031cc2563988bc4afa29e2cd7bcc2d389900a5`, chain 196)
+- UnnamedContract (`0x58a64d2bf0032ac05216ddc9cadd0f9db828bbf5`, chain 324)
+- UnnamedContract (`0xac74fe3b317023fa1bb2beab1771406bf6f15861`, chain 324)
+- UnnamedContract (`0xbd8df7558baff8f4ccaaa6eeca0252ff8bf112a9`, chain 324)
+- UnnamedContract (`0xaa301070448385cfaac5913a67b16c4392944a8f`, chain 2649)
+- UnnamedContract (`0xee030ec6f4307411607e55acd08e628ae6655b86`, chain 2649)
+- UnnamedContract (`0xaa301070448385cfaac5913a67b16c4392944a8f`, chain 4200)
+- UnnamedContract (`0xee030ec6f4307411607e55acd08e628ae6655b86`, chain 4200)
+- UnnamedContract (`0xff031cc2563988bc4afa29e2cd7bcc2d389900a5`, chain 4200)
+- UnnamedContract (`0xaa301070448385cfaac5913a67b16c4392944a8f`, chain 8217)
+- UnnamedContract (`0xee030ec6f4307411607e55acd08e628ae6655b86`, chain 8217)
+- UnnamedContract (`0xee0319cf0bca5d09333f9f6277743e8de31bd69a`, chain 8217)
+- UnnamedContract (`0xff031cc2563988bc4afa29e2cd7bcc2d389900a5`, chain 8217)
+- UnnamedContract (`0xff031cc2563988bc4afa29e2cd7bcc2d389900a5`, chain 534352)
+- ButterRouterV3 (`0xee030ec6f4307411607e55acd08e628ae6655b86`, chain 1)
+- ButterRouterV3 (`0xee030ec6f4307411607e55acd08e628ae6655b86`, chain 10)
+- ButterRouterV3 (`0xee030ec6f4307411607e55acd08e628ae6655b86`, chain 56)
+- ButterRouterV3 (`0xee030ec6f4307411607e55acd08e628ae6655b86`, chain 137)
+- ButterRouterV3 (`0xee030ec6f4307411607e55acd08e628ae6655b86`, chain 5000)
+- ButterRouterV3 (`0xee030ec6f4307411607e55acd08e628ae6655b86`, chain 8453)
+- ButterRouterV3 (`0xee030ec6f4307411607e55acd08e628ae6655b86`, chain 42161)
+- ButterRouterV3 (`0xee030ec6f4307411607e55acd08e628ae6655b86`, chain 59144)
+- ButterRouterV3 (`0xee030ec6f4307411607e55acd08e628ae6655b86`, chain 81457)
+- ButterRouterV3 (`0xee030ec6f4307411607e55acd08e628ae6655b86`, chain 534352)
+- ButterRouterV31 (`0xee0319cf0bca5d09333f9f6277743e8de31bd69a`, chain 1)
+- ButterRouterV31 (`0xee0319cf0bca5d09333f9f6277743e8de31bd69a`, chain 10)
+- ButterRouterV31 (`0xee0319cf0bca5d09333f9f6277743e8de31bd69a`, chain 56)
+- ButterRouterV31 (`0xee0319cf0bca5d09333f9f6277743e8de31bd69a`, chain 130)
+- ButterRouterV31 (`0xee0319cf0bca5d09333f9f6277743e8de31bd69a`, chain 137)
+- ButterRouterV31 (`0xee0319cf0bca5d09333f9f6277743e8de31bd69a`, chain 8453)
+- ButterRouterV31 (`0xee0319cf0bca5d09333f9f6277743e8de31bd69a`, chain 42161)
+- ButterRouterV31 (`0xee0319cf0bca5d09333f9f6277743e8de31bd69a`, chain 43114)
+- ButterRouterV31 (`0xee0319cf0bca5d09333f9f6277743e8de31bd69a`, chain 59144)
+- Receiver (`0xff031cc2563988bc4afa29e2cd7bcc2d389900a5`, chain 1)
+- Receiver (`0xff031cc2563988bc4afa29e2cd7bcc2d389900a5`, chain 10)
+- Receiver (`0xff031cc2563988bc4afa29e2cd7bcc2d389900a5`, chain 56)
+- Receiver (`0xff031cc2563988bc4afa29e2cd7bcc2d389900a5`, chain 130)
+- Receiver (`0xff031cc2563988bc4afa29e2cd7bcc2d389900a5`, chain 137)
+- Receiver (`0xff031cc2563988bc4afa29e2cd7bcc2d389900a5`, chain 5000)
+- Receiver (`0xff031cc2563988bc4afa29e2cd7bcc2d389900a5`, chain 8453)
+- Receiver (`0xff031cc2563988bc4afa29e2cd7bcc2d389900a5`, chain 42161)
+- Receiver (`0xff031cc2563988bc4afa29e2cd7bcc2d389900a5`, chain 43114)
+- Receiver (`0xff031cc2563988bc4afa29e2cd7bcc2d389900a5`, chain 59144)
+- Receiver (`0xff031cc2563988bc4afa29e2cd7bcc2d389900a5`, chain 81457)
+- SwapAdapter (`0xaa301070448385cfaac5913a67b16c4392944a8f`, chain 1)
+- SwapAdapter (`0xaa301070448385cfaac5913a67b16c4392944a8f`, chain 10)
+- SwapAdapter (`0xaa301070448385cfaac5913a67b16c4392944a8f`, chain 56)
+- SwapAdapter (`0xaa301070448385cfaac5913a67b16c4392944a8f`, chain 130)
+- SwapAdapter (`0xaa301070448385cfaac5913a67b16c4392944a8f`, chain 137)
+- SwapAdapter (`0xaa301070448385cfaac5913a67b16c4392944a8f`, chain 5000)
+- SwapAdapter (`0xaa301070448385cfaac5913a67b16c4392944a8f`, chain 8453)
+- SwapAdapter (`0xaa301070448385cfaac5913a67b16c4392944a8f`, chain 42161)
+- SwapAdapter (`0xaa301070448385cfaac5913a67b16c4392944a8f`, chain 43114)
+- SwapAdapter (`0xaa301070448385cfaac5913a67b16c4392944a8f`, chain 59144)
+- SwapAdapter (`0xaa301070448385cfaac5913a67b16c4392944a8f`, chain 81457)
+- SwapAdapter (`0xaa301070448385cfaac5913a67b16c4392944a8f`, chain 534352)
 
 ## Contract Surface Quality
 
@@ -155,56 +155,56 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Bridge | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0x000031...8f6a56` | ⚠️ Unaudited |
-| Bridge | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | polygon | n/a | `0x000031...8f6a56` | ⚠️ Unaudited |
-| Bridge | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | mantle | n/a | `0x000031...8f6a56` | ⚠️ Unaudited |
-| Bridge | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x000031...8f6a56` | ⚠️ Unaudited |
-| Bridge | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x000031...8f6a56` | ⚠️ Unaudited |
-| Bridge | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | linea | n/a | `0x000031...8f6a56` | ⚠️ Unaudited |
-| Bridge | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | blast | n/a | `0x000031...8f6a56` | ⚠️ Unaudited |
-| ButterRouterV3 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381823 | `0xee030e...655b86` | ⚠️ Unaudited |
-| ButterRouterV3 | unknown | project_anchor | own_supporting | 0 | optimism | unit-381827 | `0xee030e...655b86` | ⚠️ Unaudited |
-| ButterRouterV3 | unknown | project_anchor | own_supporting | 0 | bsc | unit-381868 | `0xee030e...655b86` | ⚠️ Unaudited |
-| ButterRouterV3 | unknown | project_anchor | own_supporting | 0 | polygon | unit-381834 | `0xee030e...655b86` | ⚠️ Unaudited |
-| ButterRouterV3 | unknown | project_anchor | own_supporting | 0 | mantle | unit-381862 | `0xee030e...655b86` | ⚠️ Unaudited |
-| ButterRouterV3 | unknown | project_anchor | own_supporting | 0 | base | unit-381896 | `0xee030e...655b86` | ⚠️ Unaudited |
-| ButterRouterV3 | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381854 | `0xee030e...655b86` | ⚠️ Unaudited |
-| ButterRouterV3 | unknown | project_anchor | own_supporting | 0 | linea | unit-381873 | `0xee030e...655b86` | ⚠️ Unaudited |
-| ButterRouterV3 | unknown | project_anchor | own_supporting | 0 | blast | unit-381881 | `0xee030e...655b86` | ⚠️ Unaudited |
-| ButterRouterV3 | unknown | project_anchor | own_supporting | 0 | scroll | unit-381865 | `0xee030e...655b86` | ⚠️ Unaudited |
-| ButterRouterV31 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381824 | `0xee0319...1bd69a` | ⚠️ Unaudited |
-| ButterRouterV31 | unknown | project_anchor | own_supporting | 0 | optimism | unit-381828 | `0xee0319...1bd69a` | ⚠️ Unaudited |
-| ButterRouterV31 | unknown | project_anchor | own_supporting | 0 | bsc | unit-381869 | `0xee0319...1bd69a` | ⚠️ Unaudited |
-| ButterRouterV31 | unknown | project_anchor | own_supporting | 0 | unichain | unit-381831 | `0xee0319...1bd69a` | ⚠️ Unaudited |
-| ButterRouterV31 | unknown | project_anchor | own_supporting | 0 | polygon | unit-381835 | `0xee0319...1bd69a` | ⚠️ Unaudited |
-| ButterRouterV31 | unknown | project_anchor | own_supporting | 0 | base | unit-381898 | `0xee0319...1bd69a` | ⚠️ Unaudited |
-| ButterRouterV31 | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381855 | `0xee0319...1bd69a` | ⚠️ Unaudited |
-| ButterRouterV31 | unknown | project_anchor | own_supporting | 0 | avalanche | unit-381858 | `0xee0319...1bd69a` | ⚠️ Unaudited |
-| ButterRouterV31 | unknown | project_anchor | own_supporting | 0 | linea | unit-381875 | `0xee0319...1bd69a` | ⚠️ Unaudited |
-| OmniServiceProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | scroll | n/a | `0x000031...8f6a56` | ⚠️ Unaudited |
-| Receiver | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381825 | `0xff031c...9900a5` | ⚠️ Unaudited |
-| Receiver | unknown | project_anchor | own_supporting | 0 | optimism | unit-381829 | `0xff031c...9900a5` | ⚠️ Unaudited |
-| Receiver | unknown | project_anchor | own_supporting | 0 | bsc | unit-381870 | `0xff031c...9900a5` | ⚠️ Unaudited |
-| Receiver | unknown | project_anchor | own_supporting | 0 | unichain | unit-381832 | `0xff031c...9900a5` | ⚠️ Unaudited |
-| Receiver | unknown | project_anchor | own_supporting | 0 | polygon | unit-381836 | `0xff031c...9900a5` | ⚠️ Unaudited |
-| Receiver | unknown | project_anchor | own_supporting | 0 | mantle | unit-381863 | `0xff031c...9900a5` | ⚠️ Unaudited |
-| Receiver | unknown | project_anchor | own_supporting | 0 | base | unit-381901 | `0xff031c...9900a5` | ⚠️ Unaudited |
-| Receiver | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381856 | `0xff031c...9900a5` | ⚠️ Unaudited |
-| Receiver | unknown | project_anchor | own_supporting | 0 | avalanche | unit-381859 | `0xff031c...9900a5` | ⚠️ Unaudited |
-| Receiver | unknown | project_anchor | own_supporting | 0 | linea | unit-381877 | `0xff031c...9900a5` | ⚠️ Unaudited |
-| Receiver | unknown | project_anchor | own_supporting | 0 | blast | unit-381883 | `0xff031c...9900a5` | ⚠️ Unaudited |
-| SwapAdapter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381822 | `0xaa3010...944a8f` | ⚠️ Unaudited |
-| SwapAdapter | unknown | project_anchor | own_supporting | 0 | optimism | unit-381826 | `0xaa3010...944a8f` | ⚠️ Unaudited |
-| SwapAdapter | unknown | project_anchor | own_supporting | 0 | bsc | unit-381867 | `0xaa3010...944a8f` | ⚠️ Unaudited |
-| SwapAdapter | unknown | project_anchor | own_supporting | 0 | unichain | unit-381830 | `0xaa3010...944a8f` | ⚠️ Unaudited |
-| SwapAdapter | unknown | project_anchor | own_supporting | 0 | polygon | unit-381833 | `0xaa3010...944a8f` | ⚠️ Unaudited |
-| SwapAdapter | unknown | project_anchor | own_supporting | 0 | mantle | unit-381861 | `0xaa3010...944a8f` | ⚠️ Unaudited |
-| SwapAdapter | unknown | project_anchor | own_supporting | 0 | base | unit-381894 | `0xaa3010...944a8f` | ⚠️ Unaudited |
-| SwapAdapter | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381853 | `0xaa3010...944a8f` | ⚠️ Unaudited |
-| SwapAdapter | unknown | project_anchor | own_supporting | 0 | avalanche | unit-381857 | `0xaa3010...944a8f` | ⚠️ Unaudited |
-| SwapAdapter | unknown | project_anchor | own_supporting | 0 | linea | unit-381871 | `0xaa3010...944a8f` | ⚠️ Unaudited |
-| SwapAdapter | unknown | project_anchor | own_supporting | 0 | blast | unit-381879 | `0xaa3010...944a8f` | ⚠️ Unaudited |
-| SwapAdapter | unknown | project_anchor | own_supporting | 0 | scroll | unit-381864 | `0xaa3010...944a8f` | ⚠️ Unaudited |
+| Bridge | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0x0000317bec33af037b5fab2028f52d14658f6a56` | ⚠️ Unaudited |
+| Bridge | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | polygon | n/a | `0x0000317bec33af037b5fab2028f52d14658f6a56` | ⚠️ Unaudited |
+| Bridge | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | mantle | n/a | `0x0000317bec33af037b5fab2028f52d14658f6a56` | ⚠️ Unaudited |
+| Bridge | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x0000317bec33af037b5fab2028f52d14658f6a56` | ⚠️ Unaudited |
+| Bridge | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x0000317bec33af037b5fab2028f52d14658f6a56` | ⚠️ Unaudited |
+| Bridge | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | linea | n/a | `0x0000317bec33af037b5fab2028f52d14658f6a56` | ⚠️ Unaudited |
+| Bridge | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | blast | n/a | `0x0000317bec33af037b5fab2028f52d14658f6a56` | ⚠️ Unaudited |
+| ButterRouterV3 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381823 | `0xee030ec6f4307411607e55acd08e628ae6655b86` | ⚠️ Unaudited |
+| ButterRouterV3 | unknown | project_anchor | own_supporting | 0 | optimism | unit-381827 | `0xee030ec6f4307411607e55acd08e628ae6655b86` | ⚠️ Unaudited |
+| ButterRouterV3 | unknown | project_anchor | own_supporting | 0 | bsc | unit-381868 | `0xee030ec6f4307411607e55acd08e628ae6655b86` | ⚠️ Unaudited |
+| ButterRouterV3 | unknown | project_anchor | own_supporting | 0 | polygon | unit-381834 | `0xee030ec6f4307411607e55acd08e628ae6655b86` | ⚠️ Unaudited |
+| ButterRouterV3 | unknown | project_anchor | own_supporting | 0 | mantle | unit-381862 | `0xee030ec6f4307411607e55acd08e628ae6655b86` | ⚠️ Unaudited |
+| ButterRouterV3 | unknown | project_anchor | own_supporting | 0 | base | unit-381896 | `0xee030ec6f4307411607e55acd08e628ae6655b86` | ⚠️ Unaudited |
+| ButterRouterV3 | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381854 | `0xee030ec6f4307411607e55acd08e628ae6655b86` | ⚠️ Unaudited |
+| ButterRouterV3 | unknown | project_anchor | own_supporting | 0 | linea | unit-381873 | `0xee030ec6f4307411607e55acd08e628ae6655b86` | ⚠️ Unaudited |
+| ButterRouterV3 | unknown | project_anchor | own_supporting | 0 | blast | unit-381881 | `0xee030ec6f4307411607e55acd08e628ae6655b86` | ⚠️ Unaudited |
+| ButterRouterV3 | unknown | project_anchor | own_supporting | 0 | scroll | unit-381865 | `0xee030ec6f4307411607e55acd08e628ae6655b86` | ⚠️ Unaudited |
+| ButterRouterV31 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381824 | `0xee0319cf0bca5d09333f9f6277743e8de31bd69a` | ⚠️ Unaudited |
+| ButterRouterV31 | unknown | project_anchor | own_supporting | 0 | optimism | unit-381828 | `0xee0319cf0bca5d09333f9f6277743e8de31bd69a` | ⚠️ Unaudited |
+| ButterRouterV31 | unknown | project_anchor | own_supporting | 0 | bsc | unit-381869 | `0xee0319cf0bca5d09333f9f6277743e8de31bd69a` | ⚠️ Unaudited |
+| ButterRouterV31 | unknown | project_anchor | own_supporting | 0 | unichain | unit-381831 | `0xee0319cf0bca5d09333f9f6277743e8de31bd69a` | ⚠️ Unaudited |
+| ButterRouterV31 | unknown | project_anchor | own_supporting | 0 | polygon | unit-381835 | `0xee0319cf0bca5d09333f9f6277743e8de31bd69a` | ⚠️ Unaudited |
+| ButterRouterV31 | unknown | project_anchor | own_supporting | 0 | base | unit-381898 | `0xee0319cf0bca5d09333f9f6277743e8de31bd69a` | ⚠️ Unaudited |
+| ButterRouterV31 | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381855 | `0xee0319cf0bca5d09333f9f6277743e8de31bd69a` | ⚠️ Unaudited |
+| ButterRouterV31 | unknown | project_anchor | own_supporting | 0 | avalanche | unit-381858 | `0xee0319cf0bca5d09333f9f6277743e8de31bd69a` | ⚠️ Unaudited |
+| ButterRouterV31 | unknown | project_anchor | own_supporting | 0 | linea | unit-381875 | `0xee0319cf0bca5d09333f9f6277743e8de31bd69a` | ⚠️ Unaudited |
+| OmniServiceProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | scroll | n/a | `0x0000317bec33af037b5fab2028f52d14658f6a56` | ⚠️ Unaudited |
+| Receiver | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381825 | `0xff031cc2563988bc4afa29e2cd7bcc2d389900a5` | ⚠️ Unaudited |
+| Receiver | unknown | project_anchor | own_supporting | 0 | optimism | unit-381829 | `0xff031cc2563988bc4afa29e2cd7bcc2d389900a5` | ⚠️ Unaudited |
+| Receiver | unknown | project_anchor | own_supporting | 0 | bsc | unit-381870 | `0xff031cc2563988bc4afa29e2cd7bcc2d389900a5` | ⚠️ Unaudited |
+| Receiver | unknown | project_anchor | own_supporting | 0 | unichain | unit-381832 | `0xff031cc2563988bc4afa29e2cd7bcc2d389900a5` | ⚠️ Unaudited |
+| Receiver | unknown | project_anchor | own_supporting | 0 | polygon | unit-381836 | `0xff031cc2563988bc4afa29e2cd7bcc2d389900a5` | ⚠️ Unaudited |
+| Receiver | unknown | project_anchor | own_supporting | 0 | mantle | unit-381863 | `0xff031cc2563988bc4afa29e2cd7bcc2d389900a5` | ⚠️ Unaudited |
+| Receiver | unknown | project_anchor | own_supporting | 0 | base | unit-381901 | `0xff031cc2563988bc4afa29e2cd7bcc2d389900a5` | ⚠️ Unaudited |
+| Receiver | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381856 | `0xff031cc2563988bc4afa29e2cd7bcc2d389900a5` | ⚠️ Unaudited |
+| Receiver | unknown | project_anchor | own_supporting | 0 | avalanche | unit-381859 | `0xff031cc2563988bc4afa29e2cd7bcc2d389900a5` | ⚠️ Unaudited |
+| Receiver | unknown | project_anchor | own_supporting | 0 | linea | unit-381877 | `0xff031cc2563988bc4afa29e2cd7bcc2d389900a5` | ⚠️ Unaudited |
+| Receiver | unknown | project_anchor | own_supporting | 0 | blast | unit-381883 | `0xff031cc2563988bc4afa29e2cd7bcc2d389900a5` | ⚠️ Unaudited |
+| SwapAdapter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381822 | `0xaa301070448385cfaac5913a67b16c4392944a8f` | ⚠️ Unaudited |
+| SwapAdapter | unknown | project_anchor | own_supporting | 0 | optimism | unit-381826 | `0xaa301070448385cfaac5913a67b16c4392944a8f` | ⚠️ Unaudited |
+| SwapAdapter | unknown | project_anchor | own_supporting | 0 | bsc | unit-381867 | `0xaa301070448385cfaac5913a67b16c4392944a8f` | ⚠️ Unaudited |
+| SwapAdapter | unknown | project_anchor | own_supporting | 0 | unichain | unit-381830 | `0xaa301070448385cfaac5913a67b16c4392944a8f` | ⚠️ Unaudited |
+| SwapAdapter | unknown | project_anchor | own_supporting | 0 | polygon | unit-381833 | `0xaa301070448385cfaac5913a67b16c4392944a8f` | ⚠️ Unaudited |
+| SwapAdapter | unknown | project_anchor | own_supporting | 0 | mantle | unit-381861 | `0xaa301070448385cfaac5913a67b16c4392944a8f` | ⚠️ Unaudited |
+| SwapAdapter | unknown | project_anchor | own_supporting | 0 | base | unit-381894 | `0xaa301070448385cfaac5913a67b16c4392944a8f` | ⚠️ Unaudited |
+| SwapAdapter | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381853 | `0xaa301070448385cfaac5913a67b16c4392944a8f` | ⚠️ Unaudited |
+| SwapAdapter | unknown | project_anchor | own_supporting | 0 | avalanche | unit-381857 | `0xaa301070448385cfaac5913a67b16c4392944a8f` | ⚠️ Unaudited |
+| SwapAdapter | unknown | project_anchor | own_supporting | 0 | linea | unit-381871 | `0xaa301070448385cfaac5913a67b16c4392944a8f` | ⚠️ Unaudited |
+| SwapAdapter | unknown | project_anchor | own_supporting | 0 | blast | unit-381879 | `0xaa301070448385cfaac5913a67b16c4392944a8f` | ⚠️ Unaudited |
+| SwapAdapter | unknown | project_anchor | own_supporting | 0 | scroll | unit-381864 | `0xaa301070448385cfaac5913a67b16c4392944a8f` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -224,27 +224,27 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | x-layer | unit-381837 | `0xaa3010...944a8f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | x-layer | unit-381839 | `0xee0319...1bd69a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | x-layer | unit-381840 | `0xff031c...9900a5` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | zksync-era | unit-381844 | `0x3f2c5b...09fd19` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-381845 | `0x58a64d...28bbf5` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | zksync-era | unit-381846 | `0x73e0d6...10492e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-381847 | `0xac74fe...f15861` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-381848 | `0xbd8df7...f112a9` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | zksync-era | n/a | `0xdef84c...02fa3d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ailayer | unit-381841 | `0xaa3010...944a8f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ailayer | unit-381842 | `0xee030e...655b86` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | merlin | n/a | 4 deployments: merlin `0x000031...8f6a56`; merlin `0x41d903...fb0f71`; kaia `0x000031...8f6a56`; kaia `0xd077a4...3e4fdb` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | merlin | unit-381850 | `0xaa3010...944a8f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | merlin | unit-381851 | `0xee030e...655b86` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | merlin | unit-381852 | `0xff031c...9900a5` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | mantle | unit-381860 | `0x34ce8c...d8541b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | kaia | unit-381885 | `0xaa3010...944a8f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | kaia | unit-381888 | `0xee030e...655b86` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | kaia | unit-381890 | `0xee0319...1bd69a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | kaia | unit-381892 | `0xff031c...9900a5` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-381866 | `0xff031c...9900a5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | x-layer | unit-381837 | `0xaa301070448385cfaac5913a67b16c4392944a8f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | x-layer | unit-381839 | `0xee0319cf0bca5d09333f9f6277743e8de31bd69a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | x-layer | unit-381840 | `0xff031cc2563988bc4afa29e2cd7bcc2d389900a5` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | zksync-era | unit-381844 | `0x3f2c5b3f2a071ad6f471393c57cb5d3db009fd19` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-381845 | `0x58a64d2bf0032ac05216ddc9cadd0f9db828bbf5` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | zksync-era | unit-381846 | `0x73e0d6e696fc38dac6bf68b4a0b06d35df10492e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-381847 | `0xac74fe3b317023fa1bb2beab1771406bf6f15861` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-381848 | `0xbd8df7558baff8f4ccaaa6eeca0252ff8bf112a9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | zksync-era | n/a | `0xdef84c4b412361e3a98a5277c108d7f0df02fa3d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ailayer | unit-381841 | `0xaa301070448385cfaac5913a67b16c4392944a8f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ailayer | unit-381842 | `0xee030ec6f4307411607e55acd08e628ae6655b86` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | merlin | n/a | 4 deployments: merlin `0x0000317bec33af037b5fab2028f52d14658f6a56`; merlin `0x41d9036454be47d3745a823c4aacd0e29cfb0f71`; kaia `0x0000317bec33af037b5fab2028f52d14658f6a56`; kaia `0xd077a400968890eacc75cdc901f0356c943e4fdb` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | merlin | unit-381850 | `0xaa301070448385cfaac5913a67b16c4392944a8f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | merlin | unit-381851 | `0xee030ec6f4307411607e55acd08e628ae6655b86` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | merlin | unit-381852 | `0xff031cc2563988bc4afa29e2cd7bcc2d389900a5` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | mantle | unit-381860 | `0x34ce8cd2820f8186209bcc73cb36410c9bd8541b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | kaia | unit-381885 | `0xaa301070448385cfaac5913a67b16c4392944a8f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | kaia | unit-381888 | `0xee030ec6f4307411607e55acd08e628ae6655b86` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | kaia | unit-381890 | `0xee0319cf0bca5d09333f9f6277743e8de31bd69a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | kaia | unit-381892 | `0xff031cc2563988bc4afa29e2cd7bcc2d389900a5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-381866 | `0xff031cc2563988bc4afa29e2cd7bcc2d389900a5` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -282,7 +282,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | ButterSwap.pdf | Router | unmatched — not counted | — | listed in audit scope table | no |
 | ButterSwap.pdf | FeeReceiver | unmatched — not counted | — | listed in audit scope table | no |
 | ButterSwap.pdf | ButterRouterV2 | unmatched — not counted | — | listed in audit scope table | no |
-| ButterSwap.pdf | SwapAdapter | ambiguous — not counted | SwapAdapter (alternative) `0xaa3010...944a8f` — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa3010...944a8f` — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa3010...944a8f` — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa3010...944a8f` — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa3010...944a8f` — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa3010...944a8f` — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa3010...944a8f` — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa3010...944a8f` — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa3010...944a8f` — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa3010...944a8f` — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa3010...944a8f` — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa3010...944a8f` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| ButterSwap.pdf | SwapAdapter | ambiguous — not counted | SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | Butter Network TON.pdf | ton_router | unmatched — not counted | — | listed in scope table with SHA256 checksum | no |
 
 ## Coverage Gaps

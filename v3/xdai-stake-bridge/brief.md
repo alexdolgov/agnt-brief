@@ -52,17 +52,17 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x4aa421...045016`, chain 1)
-- UnnamedContract (`0x6b1754...271d0f`, chain 1)
-- UnnamedContract (`0x7301cf...eb0aa6`, chain 1)
-- UnnamedContract (`0x83f20f...42beea`, chain 1)
-- UnnamedContract (`0x9a8736...66a0b0`, chain 1)
-- UnnamedContract (`0xe1579d...ea201e`, chain 1)
-- UnnamedContract (`0x5c183c...7ff8c9`, chain 100)
-- UnnamedContract (`0x670dae...059088`, chain 100)
-- UnnamedContract (`0xaf2047...483701`, chain 100)
-- UnnamedContract (`0xd499b5...591a94`, chain 100)
-- UnnamedContract (`0xe91d15...63a97d`, chain 100)
+- UnnamedContract (`0x4aa42145aa6ebf72e164c9bbc74fbd3788045016`, chain 1)
+- UnnamedContract (`0x6b175474e89094c44da98b954eedeac495271d0f`, chain 1)
+- UnnamedContract (`0x7301cfa0e1756b71869e93d4e4dca5c7d0eb0aa6`, chain 1)
+- UnnamedContract (`0x83f20f44975d03b1b09e64809b757c47f942beea`, chain 1)
+- UnnamedContract (`0x9a873656c19efecbfb4f9fab5b7acdeab466a0b0`, chain 1)
+- UnnamedContract (`0xe1579debdd2df16ebdb9db8694391fa74eea201e`, chain 1)
+- UnnamedContract (`0x5c183c8a49aba6e31049997a56d75600e27ff8c9`, chain 100)
+- UnnamedContract (`0x670daeaf0f1a5e336090504c68179670b5059088`, chain 100)
+- UnnamedContract (`0xaf204776c7245bf4147c2612bf6e5972ee483701`, chain 100)
+- UnnamedContract (`0xd499b51fcfc66bd31248ef4b28d656d67e591a94`, chain 100)
+- UnnamedContract (`0xe91d153e0b41518a2ce8dd3d7944fa863463a97d`, chain 100)
 
 ## Contract Surface Quality
 
@@ -108,9 +108,9 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Distribution | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5d020e...366555` | ⚠️ Unaudited |
-| ERC677MultiBridgeToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0ae055...f195e6` | ⚠️ Unaudited |
-| MultipleDistribution | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0218b7...aea918` | ⚠️ Unaudited |
+| Distribution | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5d020eb50fce62320a6730e6c18659a28b366555` | ⚠️ Unaudited |
+| ERC677MultiBridgeToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0ae055097c6d159879521c384f1d2123d1f195e6` | ⚠️ Unaudited |
+| MultipleDistribution | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0218b706898d234b85d2494df21eb0677eaea918` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -130,24 +130,24 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-262194 | `0x4aa421...045016` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-262197 | `0x6b1754...271d0f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-262198 | `0x7301cf...eb0aa6` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-262199 | `0x83f20f...42beea` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-262200 | `0x9a8736...66a0b0` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-262204 | `0xe1579d...ea201e` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-262216 | `0x11fe4b...b5d844` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-262217 | `0x3ea1a9...9ffe59` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-262218 | `0xd81342...029d8c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-262206 | `0x5c183c...7ff8c9` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-262207 | `0x670dae...059088` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-262208 | `0xaf2047...483701` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-262209 | `0xd499b5...591a94` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-262210 | `0xe91d15...63a97d` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-262211 | `0x138190...c673b2` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-262212 | `0x180ff9...fad0a2` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-262213 | `0x3ea1a9...9ffe59` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-262215 | `0xcca0dc...6406f0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-262194 | `0x4aa42145aa6ebf72e164c9bbc74fbd3788045016` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-262197 | `0x6b175474e89094c44da98b954eedeac495271d0f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-262198 | `0x7301cfa0e1756b71869e93d4e4dca5c7d0eb0aa6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-262199 | `0x83f20f44975d03b1b09e64809b757c47f942beea` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-262200 | `0x9a873656c19efecbfb4f9fab5b7acdeab466a0b0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-262204 | `0xe1579debdd2df16ebdb9db8694391fa74eea201e` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-262216 | `0x11fe4b6ae13d2a6055c8d9cf65c55bac32b5d844` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-262217 | `0x3ea1a9f92a99bc8e820541e7bed5d1f2419ffe59` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-262218 | `0xd8134205b0328f5676aaefb3b2a0dc15f4029d8c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-262206 | `0x5c183c8a49aba6e31049997a56d75600e27ff8c9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-262207 | `0x670daeaf0f1a5e336090504c68179670b5059088` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-262208 | `0xaf204776c7245bf4147c2612bf6e5972ee483701` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-262209 | `0xd499b51fcfc66bd31248ef4b28d656d67e591a94` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-262210 | `0xe91d153e0b41518a2ce8dd3d7944fa863463a97d` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-262211 | `0x138190e157d7604b8f89637aa10508abd4c673b2` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-262212 | `0x180ff98e734415ecd35fac3d32940e1b45fad0a2` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-262213 | `0x3ea1a9f92a99bc8e820541e7bed5d1f2419ffe59` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-262215 | `0xcca0dc2a058884e62082312f09541cc7566406f0` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -216,13 +216,13 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | 202510-Gnosis-Bridge-USDS-Upgrade.pdf | XDaiBridgePeripheralForUsdsPreUsdsUpgrade | unmatched — not counted | — | mentioned in findings section | no |
 | 202510-Gnosis-Bridge-USDS-Upgrade.pdf | XDaiBridgePeripheralForDaiPreUsdsUpgrade | unmatched — not counted | — | mentioned in findings section | no |
 | bridge-USDS-upgrade3.pdf | BridgeRouter | unmatched — not counted | — | listed in scope as new bridge router implementation contract | no |
-| bridge-USDS-upgrade3.pdf | TransparentUpgradeableProxy | own contract | 0x9a8736… (selected) `0x9a8736...66a0b0` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| bridge-USDS-upgrade3.pdf | TransparentUpgradeableProxy | own contract | 0x9a8736… (selected) `0x9a873656c19efecbfb4f9fab5b7acdeab466a0b0` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | bridge-USDS-upgrade3.pdf | ProxyAdmin | unmatched — not counted | — | listed in scope as proxy admin for the bridge proxy | no |
 | bridge-USDS-upgrade3.pdf | XDaiForeignBridge | unmatched — not counted | — | listed in scope as new bridge implementation contract | no |
 | bridge-USDS-upgrade3.pdf | XDaiBridgePeripheral | unmatched — not counted | — | listed in scope with bridge router's address as constructor arguments | no |
 | bridge-USDS-upgrade3.pdf | XDaiBridgePeripheralForDaiPreUsdsUpgrade | unmatched — not counted | — | listed in scope with bridge router's address as constructor arguments | no |
 | bridge-USDS-upgrade3.pdf | XDaiBridgePeripheralForUsdsPreUsdsUpgrade | unmatched — not counted | — | listed in scope with bridge router's address as constructor arguments | no |
-| bridge-USDS-upgrade3.pdf | USDSDepositContract | own contract | 0x5c183c… (selected) `0x5c183c...7ff8c9` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| bridge-USDS-upgrade3.pdf | USDSDepositContract | own contract | 0x5c183c… (selected) `0x5c183c8a49aba6e31049997a56d75600e27ff8c9` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | bridge-USDS-upgrade3.pdf | HomeBridgeErcToNative | unmatched — not counted | — | listed in scope as new home bridge implementation on Gnosis chain | no |
 | Omega-Gnosis-Hashi Final Report-32f8a8ccc11c91ddf6adc49a6584f768.pdf | Hashi | unmatched — not counted | — | listed in scope | no |
 | Omega-Gnosis-Hashi Final Report-32f8a8ccc11c91ddf6adc49a6584f768.pdf | Yaho | unmatched — not counted | — | listed in scope | no |

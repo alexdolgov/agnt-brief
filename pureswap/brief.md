@@ -58,12 +58,12 @@ The protocol forms a single structural family (Core Logic) of 6 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| PureChef | unknown | bsc | n/a | [`0xb8692d...09adb8`](./contracts/bsc-56/0xb8692d7768cc70c8309b669c1f5a3d856909adb8/) | ✅ Audited |
-| PureMaker | unknown | bsc | n/a | [`0xa7d7c0...082698`](./contracts/bsc-56/0xa7d7c06928a6a255a8e7083433f3fcea08082698/) | ✅ Audited |
-| PureSwapFactory | unknown | bsc | n/a | [`0x208382...395958`](./contracts/bsc-56/0x208382f44c3042a4d788fd185133a76154395958/) | ✅ Audited |
-| PureSwapRouter | unknown | bsc | n/a | [`0x3e8743...87f305`](./contracts/bsc-56/0x3e8743b5453a348606111ab0a4dee7f70a87f305/) | ✅ Audited |
-| PureToken | unknown | bsc | n/a | [`0x481f05...ad89bc`](./contracts/bsc-56/0x481f0557fb3bb5ee461fd47f287b1ca944ad89bc/) | ✅ Audited |
-| SingleChef | unknown | bsc | n/a | [`0x63621a...47b0f4`](./contracts/bsc-56/0x63621a878f6eae37dc5bdedb2b828d9e3747b0f4/) | ✅ Audited |
+| PureChef | unknown | bsc | n/a | [`0xb8692d7768cc70c8309b669c1f5a3d856909adb8`](./contracts/bsc-56/0xb8692d7768cc70c8309b669c1f5a3d856909adb8/) | ✅ Audited |
+| PureMaker | unknown | bsc | n/a | [`0xa7d7c06928a6a255a8e7083433f3fcea08082698`](./contracts/bsc-56/0xa7d7c06928a6a255a8e7083433f3fcea08082698/) | ✅ Audited |
+| PureSwapFactory | unknown | bsc | n/a | [`0x208382f44c3042a4d788fd185133a76154395958`](./contracts/bsc-56/0x208382f44c3042a4d788fd185133a76154395958/) | ✅ Audited |
+| PureSwapRouter | unknown | bsc | n/a | [`0x3e8743b5453a348606111ab0a4dee7f70a87f305`](./contracts/bsc-56/0x3e8743b5453a348606111ab0a4dee7f70a87f305/) | ✅ Audited |
+| PureToken | unknown | bsc | n/a | [`0x481f0557fb3bb5ee461fd47f287b1ca944ad89bc`](./contracts/bsc-56/0x481f0557fb3bb5ee461fd47f287b1ca944ad89bc/) | ✅ Audited |
+| SingleChef | unknown | bsc | n/a | [`0x63621a878f6eae37dc5bdedb2b828d9e3747b0f4`](./contracts/bsc-56/0x63621a878f6eae37dc5bdedb2b828d9e3747b0f4/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 

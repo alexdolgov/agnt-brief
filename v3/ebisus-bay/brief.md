@@ -52,19 +52,19 @@ The pinned logic-topography run contains 5 contract row(s) across cronos. Struct
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- Fortune Teller (`0x04636c...11d566`, chain 25)
-- Founding Member (`0x8d9232...eb25f5`, chain 25)
-- FRTN (`0xaf02d7...9aff21`, chain 25)
-- Mitama (`0x0a060a...fedef9`, chain 25)
-- Ryoshi Halloween (`0x54e61e...f7e6d3`, chain 25)
-- Ryoshi Lands (`0xcf7c77...3fb0e3`, chain 25)
-- Ryoshi Playing Cards (`0xd87838...a98d24`, chain 25)
-- Ryoshi Resources (`0xce3f4e...884b3d`, chain 25)
-- Ryoshi Tales (`0x562e3e...150e04`, chain 25)
-- Ryoshi VIP (`0xe49709...07664c`, chain 25)
-- Ryoshi with Knife (`0x055c51...7fd49c`, chain 25)
-- Ryoshi Xmas (`0xe3ef45...17b11c`, chain 25)
-- Teller Guards (`0x013f83...66af88`, chain 25)
+- Fortune Teller (`0x04636c536537a8b7f05edba2cebe1fadd711d566`, chain 25)
+- Founding Member (`0x8d9232ebc4f06b7b8005ccff0ca401675ceb25f5`, chain 25)
+- FRTN (`0xaf02d78f39c0002d14b95a3be272da02379aff21`, chain 25)
+- Mitama (`0x0a060a9355b785e52c96b611965f87cefffedef9`, chain 25)
+- Ryoshi Halloween (`0x54e61e2043f894475d17d344250f1983f7f7e6d3`, chain 25)
+- Ryoshi Lands (`0xcf7c77967fad74d0b5104edd476db2c6913fb0e3`, chain 25)
+- Ryoshi Playing Cards (`0xd87838a982a401510255ec27e603b0f5fea98d24`, chain 25)
+- Ryoshi Resources (`0xce3f4e59834b5b52b301e075c5b3d427b6884b3d`, chain 25)
+- Ryoshi Tales (`0x562e3e2d3f69c53d5a5728e8d7f977f3de150e04`, chain 25)
+- Ryoshi VIP (`0xe49709a3b59d708f50aa3712f2e5a84b7707664c`, chain 25)
+- Ryoshi with Knife (`0x055c517654d72a45b0d64dc8733f8a38e27fd49c`, chain 25)
+- Ryoshi Xmas (`0xe3ef45955b507895779a6a8911bbc48e0e17b11c`, chain 25)
+- Teller Guards (`0x013f83434356c0a20698605ebab337aab966af88`, chain 25)
 
 ## Contract Surface Quality
 
@@ -110,11 +110,11 @@ The pinned logic-topography run contains 5 contract row(s) across cronos. Struct
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Fortune Teller | unknown | project_anchor | own_supporting | 0 | cronos | unit-384137 | `0x04636c...11d566` | ⚠️ Unaudited |
-| FRTN | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | cronos | unit-384143 | `0xaf02d7...9aff21` | ⚠️ Unaudited |
-| Mitama | unknown | project_anchor | own_supporting | 0 | cronos | unit-384139 | `0x0a060a...fedef9` | ⚠️ Unaudited |
-| Ryoshi Lands | unknown | project_anchor | own_supporting | 0 | cronos | unit-384146 | `0xcf7c77...3fb0e3` | ⚠️ Unaudited |
-| Teller Guards | unknown | project_anchor | own_supporting | 0 | cronos | unit-384136 | `0x013f83...66af88` | ⚠️ Unaudited |
+| Fortune Teller | unknown | project_anchor | own_supporting | 0 | cronos | unit-384137 | `0x04636c536537a8b7f05edba2cebe1fadd711d566` | ⚠️ Unaudited |
+| FRTN | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | cronos | unit-384143 | `0xaf02d78f39c0002d14b95a3be272da02379aff21` | ⚠️ Unaudited |
+| Mitama | unknown | project_anchor | own_supporting | 0 | cronos | unit-384139 | `0x0a060a9355b785e52c96b611965f87cefffedef9` | ⚠️ Unaudited |
+| Ryoshi Lands | unknown | project_anchor | own_supporting | 0 | cronos | unit-384146 | `0xcf7c77967fad74d0b5104edd476db2c6913fb0e3` | ⚠️ Unaudited |
+| Teller Guards | unknown | project_anchor | own_supporting | 0 | cronos | unit-384136 | `0x013f83434356c0a20698605ebab337aab966af88` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -134,15 +134,15 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Founding Member | unknown | project_anchor | own_supporting | 0 | cronos | unit-384142 | `0x8d9232...eb25f5` | ❓ Unverified |
-| Ryoshi Halloween | unknown | project_anchor | own_supporting | 0 | cronos | unit-384140 | `0x54e61e...f7e6d3` | ❓ Unverified |
-| Ryoshi Playing Cards | unknown | project_anchor | own_supporting | 0 | cronos | unit-384147 | `0xd87838...a98d24` | ❓ Unverified |
-| Ryoshi Resources | unknown | project_anchor | own_supporting | 0 | cronos | unit-384145 | `0xce3f4e...884b3d` | ❓ Unverified |
-| Ryoshi Tales | unknown | project_anchor | own_supporting | 0 | cronos | unit-384141 | `0x562e3e...150e04` | ❓ Unverified |
-| Ryoshi VIP | unknown | project_anchor | own_supporting | 0 | cronos | unit-384149 | `0xe49709...07664c` | ❓ Unverified |
-| Ryoshi with Knife | unknown | project_anchor | own_supporting | 0 | cronos | unit-384138 | `0x055c51...7fd49c` | ❓ Unverified |
-| Ryoshi Xmas | unknown | project_anchor | own_supporting | 0 | cronos | unit-384148 | `0xe3ef45...17b11c` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | cronos | unit-384144 | `0xb2925f...a83b9f` | ❓ Unverified |
+| Founding Member | unknown | project_anchor | own_supporting | 0 | cronos | unit-384142 | `0x8d9232ebc4f06b7b8005ccff0ca401675ceb25f5` | ❓ Unverified |
+| Ryoshi Halloween | unknown | project_anchor | own_supporting | 0 | cronos | unit-384140 | `0x54e61e2043f894475d17d344250f1983f7f7e6d3` | ❓ Unverified |
+| Ryoshi Playing Cards | unknown | project_anchor | own_supporting | 0 | cronos | unit-384147 | `0xd87838a982a401510255ec27e603b0f5fea98d24` | ❓ Unverified |
+| Ryoshi Resources | unknown | project_anchor | own_supporting | 0 | cronos | unit-384145 | `0xce3f4e59834b5b52b301e075c5b3d427b6884b3d` | ❓ Unverified |
+| Ryoshi Tales | unknown | project_anchor | own_supporting | 0 | cronos | unit-384141 | `0x562e3e2d3f69c53d5a5728e8d7f977f3de150e04` | ❓ Unverified |
+| Ryoshi VIP | unknown | project_anchor | own_supporting | 0 | cronos | unit-384149 | `0xe49709a3b59d708f50aa3712f2e5a84b7707664c` | ❓ Unverified |
+| Ryoshi with Knife | unknown | project_anchor | own_supporting | 0 | cronos | unit-384138 | `0x055c517654d72a45b0d64dc8733f8a38e27fd49c` | ❓ Unverified |
+| Ryoshi Xmas | unknown | project_anchor | own_supporting | 0 | cronos | unit-384148 | `0xe3ef45955b507895779a6a8911bbc48e0e17b11c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | cronos | unit-384144 | `0xb2925ffc01907170493f94c1efb2fac107a83b9f` | ❓ Unverified |
 
 ## Audit Inventory
 

@@ -59,27 +59,27 @@ The protocol comprises 3 functional families. Its contracts share 7 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AmmDataProvider | unknown | polygon | n/a | [`0x249094...37d8b8`](./contracts/polygon-137/0x249094de3ad806dcefcd7a36c95d3d007337d8b8/) | ✅ Audited |
-| AmmFactory | unknown | polygon | n/a | [`0x024b82...f7118b`](./contracts/polygon-137/0x024b823643382be2a71a4e62f60c81e26af7118b/) | ✅ Audited |
-| MinterAmm | unknown | polygon | n/a | [`0x1695d5...1e332a`](./contracts/polygon-137/0x1695d5ef25fd29582ec296ebd7a510ddd71e332a/) | ✅ Audited |
+| AmmDataProvider | unknown | polygon | n/a | [`0x249094de3ad806dcefcd7a36c95d3d007337d8b8`](./contracts/polygon-137/0x249094de3ad806dcefcd7a36c95d3d007337d8b8/) | ✅ Audited |
+| AmmFactory | unknown | polygon | n/a | [`0x024b823643382be2a71a4e62f60c81e26af7118b`](./contracts/polygon-137/0x024b823643382be2a71a4e62f60c81e26af7118b/) | ✅ Audited |
+| MinterAmm | unknown | polygon | n/a | [`0x1695d5ef25fd29582ec296ebd7a510ddd71e332a`](./contracts/polygon-137/0x1695d5ef25fd29582ec296ebd7a510ddd71e332a/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (13)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ERC1155Controller | unknown | polygon | n/a | [`0x01d025...2a84f2`](./contracts/polygon-137/0x01d02501a2b7734b50a70d2e358a593bd52a84f2/) | ⚠️ Unaudited |
-| HedgedPool | unknown | arbitrum | n/a | [`0x07835d...1885dc`](./contracts/arbitrum-42161/0x07835de4f96164758fe68283a5466e066c1885dc/) | ⚠️ Unaudited |
-| Market | unknown | ethereum | n/a | [`0x7b63ec...aaa469`](./contracts/ethereum-1/0x7b63ecbc78402553a2d7f01ea3d10079c3aaa469/) | ⚠️ Unaudited |
-| MarketsRegistry | unknown | ethereum | n/a | [`0x58dd75...def4e1`](./contracts/ethereum-1/0x58dd75e6560f4636130bba5c9a03af3a21def4e1/) | ⚠️ Unaudited |
-| PriceOracle | unknown | polygon | n/a | [`0x112dfe...a598a0`](./contracts/polygon-137/0x112dfee006b8e84fc630aad89ad2858d78a598a0/) | ⚠️ Unaudited |
-| Proxy | unknown | polygon | n/a | [`0x0ad92b...322cae`](./contracts/polygon-137/0x0ad92b6f500affbe07ed65f9abb6fac90d322cae/) | ⚠️ Unaudited |
-| Proxy | unknown | polygon | n/a | [`0x716c54...1fed48`](./contracts/polygon-137/0x716c543b39a85aac0240ba7ed07e79f06e1fed48/) | ⚠️ Unaudited |
-| SeriesVault | unknown | polygon | n/a | [`0x602de8...c15077`](./contracts/polygon-137/0x602de81711fa86fd97520cbd5ff023469bc15077/) | ⚠️ Unaudited |
-| SimpleToken | unknown | ethereum | n/a | [`0x122bf9...3ab84a`](./contracts/ethereum-1/0x122bf95a3f9b2e593a2ed8dcdc22f5aded3ab84a/) | ⚠️ Unaudited |
-| SirenAccessKey | unknown | arbitrum | n/a | [`0xe8f834...c2d100`](./contracts/arbitrum-42161/0xe8f8347b33f5bbb691277ede23f55ac5d5c2d100/) | ⚠️ Unaudited |
-| SirenToken | unknown | ethereum | n/a | [`0xd23ac2...5093de`](./contracts/ethereum-1/0xd23ac27148af6a2f339bd82d0e3cff380b5093de/) | ⚠️ Unaudited |
-| SirenUtils | unknown | arbitrum | n/a | [`0xb80e32...b837ef`](./contracts/arbitrum-42161/0xb80e321fa8ecf53e354e72a254438ec6cab837ef/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | [`0x39e3a2...6e45a7`](./contracts/arbitrum-42161/0x39e3a206cc8b236265dac96090b20c286c6e45a7/) | ⚠️ Unaudited |
+| ERC1155Controller | unknown | polygon | n/a | [`0x01d02501a2b7734b50a70d2e358a593bd52a84f2`](./contracts/polygon-137/0x01d02501a2b7734b50a70d2e358a593bd52a84f2/) | ⚠️ Unaudited |
+| HedgedPool | unknown | arbitrum | n/a | [`0x07835de4f96164758fe68283a5466e066c1885dc`](./contracts/arbitrum-42161/0x07835de4f96164758fe68283a5466e066c1885dc/) | ⚠️ Unaudited |
+| Market | unknown | ethereum | n/a | [`0x7b63ecbc78402553a2d7f01ea3d10079c3aaa469`](./contracts/ethereum-1/0x7b63ecbc78402553a2d7f01ea3d10079c3aaa469/) | ⚠️ Unaudited |
+| MarketsRegistry | unknown | ethereum | n/a | [`0x58dd75e6560f4636130bba5c9a03af3a21def4e1`](./contracts/ethereum-1/0x58dd75e6560f4636130bba5c9a03af3a21def4e1/) | ⚠️ Unaudited |
+| PriceOracle | unknown | polygon | n/a | [`0x112dfee006b8e84fc630aad89ad2858d78a598a0`](./contracts/polygon-137/0x112dfee006b8e84fc630aad89ad2858d78a598a0/) | ⚠️ Unaudited |
+| Proxy | unknown | polygon | n/a | [`0x0ad92b6f500affbe07ed65f9abb6fac90d322cae`](./contracts/polygon-137/0x0ad92b6f500affbe07ed65f9abb6fac90d322cae/) | ⚠️ Unaudited |
+| Proxy | unknown | polygon | n/a | [`0x716c543b39a85aac0240ba7ed07e79f06e1fed48`](./contracts/polygon-137/0x716c543b39a85aac0240ba7ed07e79f06e1fed48/) | ⚠️ Unaudited |
+| SeriesVault | unknown | polygon | n/a | [`0x602de81711fa86fd97520cbd5ff023469bc15077`](./contracts/polygon-137/0x602de81711fa86fd97520cbd5ff023469bc15077/) | ⚠️ Unaudited |
+| SimpleToken | unknown | ethereum | n/a | [`0x122bf95a3f9b2e593a2ed8dcdc22f5aded3ab84a`](./contracts/ethereum-1/0x122bf95a3f9b2e593a2ed8dcdc22f5aded3ab84a/) | ⚠️ Unaudited |
+| SirenAccessKey | unknown | arbitrum | n/a | [`0xe8f8347b33f5bbb691277ede23f55ac5d5c2d100`](./contracts/arbitrum-42161/0xe8f8347b33f5bbb691277ede23f55ac5d5c2d100/) | ⚠️ Unaudited |
+| SirenToken | unknown | ethereum | n/a | [`0xd23ac27148af6a2f339bd82d0e3cff380b5093de`](./contracts/ethereum-1/0xd23ac27148af6a2f339bd82d0e3cff380b5093de/) | ⚠️ Unaudited |
+| SirenUtils | unknown | arbitrum | n/a | [`0xb80e321fa8ecf53e354e72a254438ec6cab837ef`](./contracts/arbitrum-42161/0xb80e321fa8ecf53e354e72a254438ec6cab837ef/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | [`0x39e3a206cc8b236265dac96090b20c286c6e45a7`](./contracts/arbitrum-42161/0x39e3a206cc8b236265dac96090b20c286c6e45a7/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -111,16 +111,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| polygon | [`0x01d025...2a84f2`](./contracts/polygon-137/0x01d02501a2b7734b50a70d2e358a593bd52a84f2/) | ERC1155Controller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x07835d...1885dc`](./contracts/arbitrum-42161/0x07835de4f96164758fe68283a5466e066c1885dc/) | HedgedPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x7b63ec...aaa469`](./contracts/ethereum-1/0x7b63ecbc78402553a2d7f01ea3d10079c3aaa469/) | Market | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x58dd75...def4e1`](./contracts/ethereum-1/0x58dd75e6560f4636130bba5c9a03af3a21def4e1/) | MarketsRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x112dfe...a598a0`](./contracts/polygon-137/0x112dfee006b8e84fc630aad89ad2858d78a598a0/) | PriceOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x602de8...c15077`](./contracts/polygon-137/0x602de81711fa86fd97520cbd5ff023469bc15077/) | SeriesVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x122bf9...3ab84a`](./contracts/ethereum-1/0x122bf95a3f9b2e593a2ed8dcdc22f5aded3ab84a/) | SimpleToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xe8f834...c2d100`](./contracts/arbitrum-42161/0xe8f8347b33f5bbb691277ede23f55ac5d5c2d100/) | SirenAccessKey | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xd23ac2...5093de`](./contracts/ethereum-1/0xd23ac27148af6a2f339bd82d0e3cff380b5093de/) | SirenToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xb80e32...b837ef`](./contracts/arbitrum-42161/0xb80e321fa8ecf53e354e72a254438ec6cab837ef/) | SirenUtils | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x01d02501a2b7734b50a70d2e358a593bd52a84f2`](./contracts/polygon-137/0x01d02501a2b7734b50a70d2e358a593bd52a84f2/) | ERC1155Controller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x07835de4f96164758fe68283a5466e066c1885dc`](./contracts/arbitrum-42161/0x07835de4f96164758fe68283a5466e066c1885dc/) | HedgedPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x7b63ecbc78402553a2d7f01ea3d10079c3aaa469`](./contracts/ethereum-1/0x7b63ecbc78402553a2d7f01ea3d10079c3aaa469/) | Market | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x58dd75e6560f4636130bba5c9a03af3a21def4e1`](./contracts/ethereum-1/0x58dd75e6560f4636130bba5c9a03af3a21def4e1/) | MarketsRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x112dfee006b8e84fc630aad89ad2858d78a598a0`](./contracts/polygon-137/0x112dfee006b8e84fc630aad89ad2858d78a598a0/) | PriceOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x602de81711fa86fd97520cbd5ff023469bc15077`](./contracts/polygon-137/0x602de81711fa86fd97520cbd5ff023469bc15077/) | SeriesVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x122bf95a3f9b2e593a2ed8dcdc22f5aded3ab84a`](./contracts/ethereum-1/0x122bf95a3f9b2e593a2ed8dcdc22f5aded3ab84a/) | SimpleToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xe8f8347b33f5bbb691277ede23f55ac5d5c2d100`](./contracts/arbitrum-42161/0xe8f8347b33f5bbb691277ede23f55ac5d5c2d100/) | SirenAccessKey | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xd23ac27148af6a2f339bd82d0e3cff380b5093de`](./contracts/ethereum-1/0xd23ac27148af6a2f339bd82d0e3cff380b5093de/) | SirenToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xb80e321fa8ecf53e354e72a254438ec6cab837ef`](./contracts/arbitrum-42161/0xb80e321fa8ecf53e354e72a254438ec6cab837ef/) | SirenUtils | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

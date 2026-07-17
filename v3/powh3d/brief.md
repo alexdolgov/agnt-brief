@@ -90,7 +90,7 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Hourglass | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-251775 | `0xb3775f...91efbe` | ⚠️ Unaudited |
+| Hourglass | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-251775 | `0xb3775fb83f7d12a36e0475abdd1fca35c091efbe` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

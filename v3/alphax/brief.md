@@ -90,8 +90,8 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| DEXVaultV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | 2 deployments: bsc `0x6302e7...86cc92`; bsc `0x8259f6...534ca6` | ⚠️ Unaudited |
-| BatchCallAndSponsor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x068b23...298052` | ⚠️ Unaudited |
+| DEXVaultV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | 2 deployments: bsc `0x6302e7948736baf985804f0dc6132baf6d86cc92`; bsc `0x8259f6010a030bcd54335503ba91bba70a534ca6` | ⚠️ Unaudited |
+| BatchCallAndSponsor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x068b239c0b0e62c950b7af2d4f4dc79fca298052` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

@@ -61,10 +61,10 @@ The protocol comprises 5 functional families. Its contracts share 7 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BAMMFactory | registry | fraxtal | n/a | [`0x199281...7db0ba`](./contracts/fraxtal-252/0x19928170d739139bfbbb6614007f8eeed17db0ba/) | ⚠️ Unaudited |
-| FraxswapFactory | registry | fraxtal | n/a | [`0xe30521...a667e6`](./contracts/fraxtal-252/0xe30521fe7f3beb6ad556887b50739d6c7ca667e6/) | ⚠️ Unaudited |
-| IQERC20 | token | ethereum | n/a | [`0x579cea...29b0c9`](./contracts/ethereum-1/0x579cea1889991f68acc35ff5c3dd0621ff29b0c9/) | ⚠️ Unaudited |
-| Vyper_contract | unknown | ethereum | n/a | [`0x1bf545...4e16ba`](./contracts/ethereum-1/0x1bf5457ecaa14ff63cc89efd560e251e814e16ba/) | ⚠️ Unaudited |
+| BAMMFactory | registry | fraxtal | n/a | [`0x19928170d739139bfbbb6614007f8eeed17db0ba`](./contracts/fraxtal-252/0x19928170d739139bfbbb6614007f8eeed17db0ba/) | ⚠️ Unaudited |
+| FraxswapFactory | registry | fraxtal | n/a | [`0xe30521fe7f3beb6ad556887b50739d6c7ca667e6`](./contracts/fraxtal-252/0xe30521fe7f3beb6ad556887b50739d6c7ca667e6/) | ⚠️ Unaudited |
+| IQERC20 | token | ethereum | n/a | [`0x579cea1889991f68acc35ff5c3dd0621ff29b0c9`](./contracts/ethereum-1/0x579cea1889991f68acc35ff5c3dd0621ff29b0c9/) | ⚠️ Unaudited |
+| Vyper_contract | unknown | ethereum | n/a | [`0x1bf5457ecaa14ff63cc89efd560e251e814e16ba`](./contracts/ethereum-1/0x1bf5457ecaa14ff63cc89efd560e251e814e16ba/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -84,24 +84,24 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | fraxtal | n/a | `0x0d9346...94185c` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | n/a | `0x18348d...707a13` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | n/a | `0x5854f4...d69909` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | n/a | `0x6bd868...b2e4cb` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | n/a | `0x8bf7af...1546f0` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | n/a | `0x954f18...478114` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | n/a | `0x9937ab...a8624a` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | n/a | `0x9fab6a...6896c5` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | n/a | `0xad84da...4f071f` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | n/a | `0xbb18f2...e85fc2` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | n/a | `0xc4af86...d289dd` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | n/a | `0xd5be3c...a28723` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | n/a | `0xdbb6da...00f892` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | n/a | `0xdcf13a...257508` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | n/a | `0xdf567e...782427` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | n/a | `0xe510cc...57704e` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | n/a | `0xeec806...c7026a` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | n/a | `0xffd3a9...60550d` | ❓ Unverified |
+| UnnamedContract | unknown | fraxtal | n/a | `0x0d9346964791878bb54c02294e72106d8794185c` | ❓ Unverified |
+| UnnamedContract | unknown | fraxtal | n/a | `0x18348ddbf9c512081d444bdee9b25e53ef707a13` | ❓ Unverified |
+| UnnamedContract | unknown | fraxtal | n/a | `0x5854f44bbabada5d55d765b576fd390962d69909` | ❓ Unverified |
+| UnnamedContract | unknown | fraxtal | n/a | `0x6bd8680eacdbc6513a5e40b711926d357ab2e4cb` | ❓ Unverified |
+| UnnamedContract | unknown | fraxtal | n/a | `0x8bf7af56bb721bc3d015111508593fcb301546f0` | ❓ Unverified |
+| UnnamedContract | unknown | fraxtal | n/a | `0x954f18a500ec24c9c3be4b973bd0631776478114` | ❓ Unverified |
+| UnnamedContract | unknown | fraxtal | n/a | `0x9937ab3f353836256d82ac77c28c2c66b9a8624a` | ❓ Unverified |
+| UnnamedContract | unknown | fraxtal | n/a | `0x9fab6a6b9a78515d9d95d224b75371d1006896c5` | ❓ Unverified |
+| UnnamedContract | unknown | fraxtal | n/a | `0xad84dac1c249ec3999242bdd89bb82adf74f071f` | ❓ Unverified |
+| UnnamedContract | unknown | fraxtal | n/a | `0xbb18f2d4e1f9ce0055b13351725e09897ee85fc2` | ❓ Unverified |
+| UnnamedContract | unknown | fraxtal | n/a | `0xc4af86d01420598a8746361576c98f5d46d289dd` | ❓ Unverified |
+| UnnamedContract | unknown | fraxtal | n/a | `0xd5be3c020f66b1fdf416fd9a551bad2460a28723` | ❓ Unverified |
+| UnnamedContract | unknown | fraxtal | n/a | `0xdbb6da2c103397fa502eca74afb5a274a900f892` | ❓ Unverified |
+| UnnamedContract | unknown | fraxtal | n/a | `0xdcf13ad4b4b3d7cba5894f5d3addff6fe8257508` | ❓ Unverified |
+| UnnamedContract | unknown | fraxtal | n/a | `0xdf567ef9ce0475254b057113e702a02d6e782427` | ❓ Unverified |
+| UnnamedContract | unknown | fraxtal | n/a | `0xe510cc8d19da2aefdb94082359825e507f57704e` | ❓ Unverified |
+| UnnamedContract | unknown | fraxtal | n/a | `0xeec80691c5c470691246b883f2a50b9a9ac7026a` | ❓ Unverified |
+| UnnamedContract | unknown | fraxtal | n/a | `0xffd3a9a6c28eda12869eb54b7284bc306d60550d` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -114,9 +114,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| fraxtal | [`0x199281...7db0ba`](./contracts/fraxtal-252/0x19928170d739139bfbbb6614007f8eeed17db0ba/) | BAMMFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x579cea...29b0c9`](./contracts/ethereum-1/0x579cea1889991f68acc35ff5c3dd0621ff29b0c9/) | IQERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1bf545...4e16ba`](./contracts/ethereum-1/0x1bf5457ecaa14ff63cc89efd560e251e814e16ba/) | Vyper_contract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| fraxtal | [`0x19928170d739139bfbbb6614007f8eeed17db0ba`](./contracts/fraxtal-252/0x19928170d739139bfbbb6614007f8eeed17db0ba/) | BAMMFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x579cea1889991f68acc35ff5c3dd0621ff29b0c9`](./contracts/ethereum-1/0x579cea1889991f68acc35ff5c3dd0621ff29b0c9/) | IQERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1bf5457ecaa14ff63cc89efd560e251e814e16ba`](./contracts/ethereum-1/0x1bf5457ecaa14ff63cc89efd560e251e814e16ba/) | Vyper_contract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

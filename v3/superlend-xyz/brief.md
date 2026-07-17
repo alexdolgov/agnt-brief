@@ -51,43 +51,43 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x008ae2...29106b`, chain 42793)
-- UnnamedContract (`0x1504d0...efef58`, chain 42793)
-- UnnamedContract (`0x187b7b...8a2d72`, chain 42793)
-- UnnamedContract (`0x1dc383...d3f5f4`, chain 42793)
-- UnnamedContract (`0x1f80dd...a60868`, chain 42793)
-- UnnamedContract (`0x2bc84b...97a493`, chain 42793)
-- UnnamedContract (`0x2befed...641ece`, chain 42793)
-- UnnamedContract (`0x301bea...61969c`, chain 42793)
-- UnnamedContract (`0x30f688...aae060`, chain 42793)
-- UnnamedContract (`0x3bd16d...ef114d`, chain 42793)
-- UnnamedContract (`0x42a399...aadfe5`, chain 42793)
-- UnnamedContract (`0x5ad926...70bb88`, chain 42793)
-- UnnamedContract (`0x5ba9f2...f9b9b0`, chain 42793)
-- UnnamedContract (`0x5ccf60...9f4fec`, chain 42793)
-- UnnamedContract (`0x65142d...1c8c9b`, chain 42793)
-- UnnamedContract (`0x65fe92...2851f5`, chain 42793)
-- UnnamedContract (`0x660ade...26ffeb`, chain 42793)
-- UnnamedContract (`0x669bd3...dd005f`, chain 42793)
-- UnnamedContract (`0x83ffe3...b94eaf`, chain 42793)
-- UnnamedContract (`0x87c4d4...de31fb`, chain 42793)
-- UnnamedContract (`0x895dbd...86d594`, chain 42793)
-- UnnamedContract (`0x8c10b9...31de49`, chain 42793)
-- UnnamedContract (`0x904a51...53f625`, chain 42793)
-- UnnamedContract (`0x983988...a6f67c`, chain 42793)
-- UnnamedContract (`0x998098...76861f`, chain 42793)
-- UnnamedContract (`0x9f9384...da0ef9`, chain 42793)
-- UnnamedContract (`0xae160c...750cc7`, chain 42793)
-- UnnamedContract (`0xae7938...ad68f3`, chain 42793)
-- UnnamedContract (`0xbd24c5...93a694`, chain 42793)
-- UnnamedContract (`0xc0e751...ea068b`, chain 42793)
-- UnnamedContract (`0xc71081...90e97d`, chain 42793)
-- UnnamedContract (`0xcc4252...9bdf30`, chain 42793)
-- UnnamedContract (`0xd03bfd...06a9fb`, chain 42793)
-- UnnamedContract (`0xd1bef6...c02c50`, chain 42793)
-- UnnamedContract (`0xecf313...d62525`, chain 42793)
-- UnnamedContract (`0xf92794...204460`, chain 42793)
-- UnnamedContract (`0xfca080...4b23ea`, chain 42793)
+- UnnamedContract (`0x008ae222661b6a42e3a097bd7aac15412829106b`, chain 42793)
+- UnnamedContract (`0x1504d006b80b1616d2651e8d15d5d25a88efef58`, chain 42793)
+- UnnamedContract (`0x187b7b83e8cab442ad0bfeae38067f3eb38a2d72`, chain 42793)
+- UnnamedContract (`0x1dc383ea6530f8b6e66a3e0ce895cfacd9d3f5f4`, chain 42793)
+- UnnamedContract (`0x1f80dd878ca7bf13bc47e25978026a7906a60868`, chain 42793)
+- UnnamedContract (`0x2bc84b1f1e1b89521de08c966be1ca498f97a493`, chain 42793)
+- UnnamedContract (`0x2befed5ea1b9b4fc100e419c0e8432a0d9641ece`, chain 42793)
+- UnnamedContract (`0x301bea8b7c0ef6722c937c07da4d53931f61969c`, chain 42793)
+- UnnamedContract (`0x30f6880bb1cf780a49eb4ef64e64585780aae060`, chain 42793)
+- UnnamedContract (`0x3bd16d195786fb2f509f2e2d7f69920262ef114d`, chain 42793)
+- UnnamedContract (`0x42a399b096b1daf2c0dfc308f548c29b72aadfe5`, chain 42793)
+- UnnamedContract (`0x5ad92605f1d84c9da5e20e64bb3aa7ab5e70bb88`, chain 42793)
+- UnnamedContract (`0x5ba9f20e35a7a9804c03a03ff5b8f84d04f9b9b0`, chain 42793)
+- UnnamedContract (`0x5ccf60c7e10547c5389e9cbff543e5d0db9f4fec`, chain 42793)
+- UnnamedContract (`0x65142dec2969f1a3083ad31541ef4b73871c8c9b`, chain 42793)
+- UnnamedContract (`0x65fe928c5d04a2da42347ba9d4d1c3f4952851f5`, chain 42793)
+- UnnamedContract (`0x660adef5993167acdb490df287f4db6cc226ffeb`, chain 42793)
+- UnnamedContract (`0x669bd328f6c494949ed9fb2dc8021557a6dd005f`, chain 42793)
+- UnnamedContract (`0x83ffe3e00ad1dec2350e33c562f5b6559cb94eaf`, chain 42793)
+- UnnamedContract (`0x87c4d41c0982f335e8eb6be30fd2ae91a6de31fb`, chain 42793)
+- UnnamedContract (`0x895dbdafe151cac3548133fc5c6389a1e386d594`, chain 42793)
+- UnnamedContract (`0x8c10b9c228cb2356bc57ec453d6746c7d531de49`, chain 42793)
+- UnnamedContract (`0x904a51d7b418d8d5f3739e421a6ed532d653f625`, chain 42793)
+- UnnamedContract (`0x9839880aaa63fcdec824bf98606226e350a6f67c`, chain 42793)
+- UnnamedContract (`0x998098a1b2e95e2b8f15360676428edfd976861f`, chain 42793)
+- UnnamedContract (`0x9f9384ef6a1a76ae1a95df483be4b0214fda0ef9`, chain 42793)
+- UnnamedContract (`0xae160c7fb1a3d73681ae9204f8844097e8750cc7`, chain 42793)
+- UnnamedContract (`0xae7938a84d763bf50cf0049ec9d5242becad68f3`, chain 42793)
+- UnnamedContract (`0xbd24c5241ab8f3e39da7e6309afa5f33a493a694`, chain 42793)
+- UnnamedContract (`0xc0e7519bd8f4e82c886b7e1be866afa1b6ea068b`, chain 42793)
+- UnnamedContract (`0xc71081f13b214c4459193de5f75ae08c4b90e97d`, chain 42793)
+- UnnamedContract (`0xcc42524a51e3999e87a4cc3c6871cacfab9bdf30`, chain 42793)
+- UnnamedContract (`0xd03bfdf9b26db1e6764724d914d7c3d18106a9fb`, chain 42793)
+- UnnamedContract (`0xd1bef6403087259c97cd0459f772d05032c02c50`, chain 42793)
+- UnnamedContract (`0xecf313de38aa85ef618d06d1a602baa917d62525`, chain 42793)
+- UnnamedContract (`0xf9279419830016c87be66617e6c5ea42a7204460`, chain 42793)
+- UnnamedContract (`0xfca0802cb10b3b134a91e07f03965f63ef4b23ea`, chain 42793)
 
 ## Contract Surface Quality
 
@@ -151,43 +151,43 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393509 | `0x008ae2...29106b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393510 | `0x1504d0...efef58` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393511 | `0x187b7b...8a2d72` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393512 | `0x1dc383...d3f5f4` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393513 | `0x1f80dd...a60868` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393514 | `0x2bc84b...97a493` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393515 | `0x2befed...641ece` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393516 | `0x301bea...61969c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393517 | `0x30f688...aae060` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393518 | `0x3bd16d...ef114d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393519 | `0x42a399...aadfe5` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393520 | `0x5ad926...70bb88` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393521 | `0x5ba9f2...f9b9b0` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393522 | `0x5ccf60...9f4fec` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393523 | `0x65142d...1c8c9b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393524 | `0x65fe92...2851f5` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393525 | `0x660ade...26ffeb` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393526 | `0x669bd3...dd005f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393527 | `0x83ffe3...b94eaf` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393528 | `0x87c4d4...de31fb` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393529 | `0x895dbd...86d594` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393530 | `0x8c10b9...31de49` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393531 | `0x904a51...53f625` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393532 | `0x983988...a6f67c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393533 | `0x998098...76861f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393534 | `0x9f9384...da0ef9` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393535 | `0xae160c...750cc7` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393536 | `0xae7938...ad68f3` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393537 | `0xbd24c5...93a694` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393538 | `0xc0e751...ea068b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393539 | `0xc71081...90e97d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393540 | `0xcc4252...9bdf30` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393541 | `0xd03bfd...06a9fb` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393542 | `0xd1bef6...c02c50` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393543 | `0xecf313...d62525` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393544 | `0xf92794...204460` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393545 | `0xfca080...4b23ea` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393509 | `0x008ae222661b6a42e3a097bd7aac15412829106b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393510 | `0x1504d006b80b1616d2651e8d15d5d25a88efef58` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393511 | `0x187b7b83e8cab442ad0bfeae38067f3eb38a2d72` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393512 | `0x1dc383ea6530f8b6e66a3e0ce895cfacd9d3f5f4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393513 | `0x1f80dd878ca7bf13bc47e25978026a7906a60868` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393514 | `0x2bc84b1f1e1b89521de08c966be1ca498f97a493` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393515 | `0x2befed5ea1b9b4fc100e419c0e8432a0d9641ece` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393516 | `0x301bea8b7c0ef6722c937c07da4d53931f61969c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393517 | `0x30f6880bb1cf780a49eb4ef64e64585780aae060` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393518 | `0x3bd16d195786fb2f509f2e2d7f69920262ef114d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393519 | `0x42a399b096b1daf2c0dfc308f548c29b72aadfe5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393520 | `0x5ad92605f1d84c9da5e20e64bb3aa7ab5e70bb88` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393521 | `0x5ba9f20e35a7a9804c03a03ff5b8f84d04f9b9b0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393522 | `0x5ccf60c7e10547c5389e9cbff543e5d0db9f4fec` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393523 | `0x65142dec2969f1a3083ad31541ef4b73871c8c9b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393524 | `0x65fe928c5d04a2da42347ba9d4d1c3f4952851f5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393525 | `0x660adef5993167acdb490df287f4db6cc226ffeb` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393526 | `0x669bd328f6c494949ed9fb2dc8021557a6dd005f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393527 | `0x83ffe3e00ad1dec2350e33c562f5b6559cb94eaf` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393528 | `0x87c4d41c0982f335e8eb6be30fd2ae91a6de31fb` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393529 | `0x895dbdafe151cac3548133fc5c6389a1e386d594` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393530 | `0x8c10b9c228cb2356bc57ec453d6746c7d531de49` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393531 | `0x904a51d7b418d8d5f3739e421a6ed532d653f625` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393532 | `0x9839880aaa63fcdec824bf98606226e350a6f67c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393533 | `0x998098a1b2e95e2b8f15360676428edfd976861f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393534 | `0x9f9384ef6a1a76ae1a95df483be4b0214fda0ef9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393535 | `0xae160c7fb1a3d73681ae9204f8844097e8750cc7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393536 | `0xae7938a84d763bf50cf0049ec9d5242becad68f3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393537 | `0xbd24c5241ab8f3e39da7e6309afa5f33a493a694` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393538 | `0xc0e7519bd8f4e82c886b7e1be866afa1b6ea068b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393539 | `0xc71081f13b214c4459193de5f75ae08c4b90e97d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393540 | `0xcc42524a51e3999e87a4cc3c6871cacfab9bdf30` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393541 | `0xd03bfdf9b26db1e6764724d914d7c3d18106a9fb` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393542 | `0xd1bef6403087259c97cd0459f772d05032c02c50` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393543 | `0xecf313de38aa85ef618d06d1a602baa917d62525` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393544 | `0xf9279419830016c87be66617e6c5ea42a7204460` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393545 | `0xfca0802cb10b3b134a91e07f03965f63ef4b23ea` | ❓ Unverified |
 
 ## Audit Inventory
 

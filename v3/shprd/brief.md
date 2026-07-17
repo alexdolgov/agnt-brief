@@ -52,18 +52,18 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum, bsc,
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x36ce89...78fa68`, chain 56)
-- UnnamedContract (`0x59e6d8...3e1f22`, chain 56)
-- UnnamedContract (`0x939818...a04c3a`, chain 56)
-- UnnamedContract (`0xb7fcce...eb9f6d`, chain 56)
-- UnnamedContract (`0xf0ee0b...2e4ffa`, chain 56)
-- UnnamedContract (`0x04ee48...02495d`, chain 42161)
-- UnnamedContract (`0x36ce89...78fa68`, chain 42161)
-- UnnamedContract (`0x59e6d8...3e1f22`, chain 42161)
-- UnnamedContract (`0x939818...a04c3a`, chain 42161)
-- UnnamedContract (`0xb7fcce...eb9f6d`, chain 42161)
-- UnnamedContract (`0xf0ee0b...2e4ffa`, chain 42161)
-- ERC1967Proxy (`0x04ee48...02495d`, chain 56)
+- UnnamedContract (`0x36ce89c9ed0ec401305cf34b590dc2a24978fa68`, chain 56)
+- UnnamedContract (`0x59e6d8eb72235fc964534e0e6283d93cd73e1f22`, chain 56)
+- UnnamedContract (`0x939818efe9c0ddc6f9e4fadcea46fe0670a04c3a`, chain 56)
+- UnnamedContract (`0xb7fcced2aae943f478ccf570c3c10872f4eb9f6d`, chain 56)
+- UnnamedContract (`0xf0ee0b31aae29f0bea8ff806c101377fc92e4ffa`, chain 56)
+- UnnamedContract (`0x04ee4821beea5073c519d443d2afc69a0202495d`, chain 42161)
+- UnnamedContract (`0x36ce89c9ed0ec401305cf34b590dc2a24978fa68`, chain 42161)
+- UnnamedContract (`0x59e6d8eb72235fc964534e0e6283d93cd73e1f22`, chain 42161)
+- UnnamedContract (`0x939818efe9c0ddc6f9e4fadcea46fe0670a04c3a`, chain 42161)
+- UnnamedContract (`0xb7fcced2aae943f478ccf570c3c10872f4eb9f6d`, chain 42161)
+- UnnamedContract (`0xf0ee0b31aae29f0bea8ff806c101377fc92e4ffa`, chain 42161)
+- ERC1967Proxy (`0x04ee4821beea5073c519d443d2afc69a0202495d`, chain 56)
 
 ## Contract Surface Quality
 
@@ -109,9 +109,9 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum, bsc,
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | bsc | unit-392540 | `0x04ee48...02495d` | ⚠️ Unaudited |
-| ParseParaswap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x59e6d8...3e1f22` | ⚠️ Unaudited |
-| UpgradeableBeacon | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x551a3a...ce1bc7` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | bsc | unit-392540 | `0x04ee4821beea5073c519d443d2afc69a0202495d` | ⚠️ Unaudited |
+| ParseParaswap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x59e6d8eb72235fc964534e0e6283d93cd73e1f22` | ⚠️ Unaudited |
+| UpgradeableBeacon | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x551a3a68026c4ac28e69f12377ee079494ce1bc7` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -131,17 +131,17 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-392535 | `0x36ce89...78fa68` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-392536 | `0x59e6d8...3e1f22` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-392537 | `0x939818...a04c3a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-392538 | `0xb7fcce...eb9f6d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-392539 | `0xf0ee0b...2e4ffa` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392529 | `0x04ee48...02495d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392530 | `0x36ce89...78fa68` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392531 | `0x59e6d8...3e1f22` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392532 | `0x939818...a04c3a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392533 | `0xb7fcce...eb9f6d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392534 | `0xf0ee0b...2e4ffa` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-392535 | `0x36ce89c9ed0ec401305cf34b590dc2a24978fa68` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-392536 | `0x59e6d8eb72235fc964534e0e6283d93cd73e1f22` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-392537 | `0x939818efe9c0ddc6f9e4fadcea46fe0670a04c3a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-392538 | `0xb7fcced2aae943f478ccf570c3c10872f4eb9f6d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-392539 | `0xf0ee0b31aae29f0bea8ff806c101377fc92e4ffa` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392529 | `0x04ee4821beea5073c519d443d2afc69a0202495d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392530 | `0x36ce89c9ed0ec401305cf34b590dc2a24978fa68` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392531 | `0x59e6d8eb72235fc964534e0e6283d93cd73e1f22` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392532 | `0x939818efe9c0ddc6f9e4fadcea46fe0670a04c3a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392533 | `0xb7fcced2aae943f478ccf570c3c10872f4eb9f6d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392534 | `0xf0ee0b31aae29f0bea8ff806c101377fc92e4ffa` | ❓ Unverified |
 
 ## Audit Inventory
 

@@ -59,26 +59,26 @@ The protocol comprises 3 functional families. Its contracts share 8 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| NonfungiblePositionManager | unknown | hyperliquid | n/a | [`0x11f1ab...cf2c69`](./contracts/hyperliquid-999/0x11f1ab4b3b60743762f8280a028cc6935acf2c69/) | ✅ Audited |
-| SwapRouter | unknown | hyperliquid | n/a | [`0x0837dd...b6eb2b`](./contracts/hyperliquid-999/0x0837dd08b036d31425593fa58e98b693b9b6eb2b/) | ✅ Audited |
-| UpheavalV3Factory | unknown | hyperliquid | n/a | [`0x256616...548030`](./contracts/hyperliquid-999/0x2566163ea012c9e67c1c7080e0a073f20b548030/) | ✅ Audited |
-| UpheavalV3PoolDeployer | unknown | hyperliquid | n/a | [`0x1a20d3...5dc681`](./contracts/hyperliquid-999/0x1a20d37351f39116d2c14abd88ec55aaf85dc681/) | ✅ Audited |
+| NonfungiblePositionManager | unknown | hyperliquid | n/a | [`0x11f1ab4b3b60743762f8280a028cc6935acf2c69`](./contracts/hyperliquid-999/0x11f1ab4b3b60743762f8280a028cc6935acf2c69/) | ✅ Audited |
+| SwapRouter | unknown | hyperliquid | n/a | [`0x0837dd08b036d31425593fa58e98b693b9b6eb2b`](./contracts/hyperliquid-999/0x0837dd08b036d31425593fa58e98b693b9b6eb2b/) | ✅ Audited |
+| UpheavalV3Factory | unknown | hyperliquid | n/a | [`0x2566163ea012c9e67c1c7080e0a073f20b548030`](./contracts/hyperliquid-999/0x2566163ea012c9e67c1c7080e0a073f20b548030/) | ✅ Audited |
+| UpheavalV3PoolDeployer | unknown | hyperliquid | n/a | [`0x1a20d37351f39116d2c14abd88ec55aaf85dc681`](./contracts/hyperliquid-999/0x1a20d37351f39116d2c14abd88ec55aaf85dc681/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (11)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| HuskeyInterfaceMulticall | unknown | hyperliquid | n/a | [`0x2aa27d...499310`](./contracts/hyperliquid-999/0x2aa27d8ad0ec2bf129b2543ea8707d1cea499310/) | ⚠️ Unaudited |
-| LinearVesting | unknown | hyperliquid | n/a | [`0xf9d6ab...f7dacb`](./contracts/hyperliquid-999/0xf9d6ab1d33e5ba1e1600ce499b684584b4f7dacb/) | ⚠️ Unaudited |
-| MixedRouteQuoterV1 | unknown | hyperliquid | n/a | [`0xaf7fd5...02cb59`](./contracts/hyperliquid-999/0xaf7fd5bb87e52b4631232b3460fc1f032202cb59/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | hyperliquid | n/a | [`0xfbfdb8...becbd7`](./contracts/hyperliquid-999/0xfbfdb83b5ddf3951261f3d75ca5c3a4dfdbecbd7/) | ⚠️ Unaudited |
-| QuoterV2 | unknown | hyperliquid | n/a | [`0x08443b...cf77e1`](./contracts/hyperliquid-999/0x08443ba2bc5ab1dd5ba0d65f622ebb470ecf77e1/) | ⚠️ Unaudited |
-| SmartRouter | unknown | hyperliquid | n/a | [`0xd4ad13...3f9fb0`](./contracts/hyperliquid-999/0xd4ad13fd4f42d3f2e0945faa7a18dd043b3f9fb0/) | ⚠️ Unaudited |
-| TickLens | unknown | hyperliquid | n/a | [`0x100f7d...35ef93`](./contracts/hyperliquid-999/0x100f7dd3c3cff22108299193f8b937900f35ef93/) | ⚠️ Unaudited |
-| TokenValidator | unknown | hyperliquid | n/a | [`0xb6bfe8...dce552`](./contracts/hyperliquid-999/0xb6bfe8ee4dcd579e760439140ad05d20f5dce552/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | [`0x1dfdc0...723fd1`](./contracts/hyperliquid-999/0x1dfdc0da670a25d62e651278edef66ee16723fd1/) | ⚠️ Unaudited |
-| UpheavalV3LmPoolDeployer | unknown | hyperliquid | n/a | [`0x6e3c4d...1067ca`](./contracts/hyperliquid-999/0x6e3c4dd13a506aac276e531e9406c74ecf1067ca/) | ⚠️ Unaudited |
-| V3Migrator | unknown | hyperliquid | n/a | [`0x30816d...15c4fb`](./contracts/hyperliquid-999/0x30816d58bd24e7abd7022d9c7cb996f20f15c4fb/) | ⚠️ Unaudited |
+| HuskeyInterfaceMulticall | unknown | hyperliquid | n/a | [`0x2aa27d8ad0ec2bf129b2543ea8707d1cea499310`](./contracts/hyperliquid-999/0x2aa27d8ad0ec2bf129b2543ea8707d1cea499310/) | ⚠️ Unaudited |
+| LinearVesting | unknown | hyperliquid | n/a | [`0xf9d6ab1d33e5ba1e1600ce499b684584b4f7dacb`](./contracts/hyperliquid-999/0xf9d6ab1d33e5ba1e1600ce499b684584b4f7dacb/) | ⚠️ Unaudited |
+| MixedRouteQuoterV1 | unknown | hyperliquid | n/a | [`0xaf7fd5bb87e52b4631232b3460fc1f032202cb59`](./contracts/hyperliquid-999/0xaf7fd5bb87e52b4631232b3460fc1f032202cb59/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | hyperliquid | n/a | [`0xfbfdb83b5ddf3951261f3d75ca5c3a4dfdbecbd7`](./contracts/hyperliquid-999/0xfbfdb83b5ddf3951261f3d75ca5c3a4dfdbecbd7/) | ⚠️ Unaudited |
+| QuoterV2 | unknown | hyperliquid | n/a | [`0x08443ba2bc5ab1dd5ba0d65f622ebb470ecf77e1`](./contracts/hyperliquid-999/0x08443ba2bc5ab1dd5ba0d65f622ebb470ecf77e1/) | ⚠️ Unaudited |
+| SmartRouter | unknown | hyperliquid | n/a | [`0xd4ad13fd4f42d3f2e0945faa7a18dd043b3f9fb0`](./contracts/hyperliquid-999/0xd4ad13fd4f42d3f2e0945faa7a18dd043b3f9fb0/) | ⚠️ Unaudited |
+| TickLens | unknown | hyperliquid | n/a | [`0x100f7dd3c3cff22108299193f8b937900f35ef93`](./contracts/hyperliquid-999/0x100f7dd3c3cff22108299193f8b937900f35ef93/) | ⚠️ Unaudited |
+| TokenValidator | unknown | hyperliquid | n/a | [`0xb6bfe8ee4dcd579e760439140ad05d20f5dce552`](./contracts/hyperliquid-999/0xb6bfe8ee4dcd579e760439140ad05d20f5dce552/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | [`0x1dfdc0da670a25d62e651278edef66ee16723fd1`](./contracts/hyperliquid-999/0x1dfdc0da670a25d62e651278edef66ee16723fd1/) | ⚠️ Unaudited |
+| UpheavalV3LmPoolDeployer | unknown | hyperliquid | n/a | [`0x6e3c4dd13a506aac276e531e9406c74ecf1067ca`](./contracts/hyperliquid-999/0x6e3c4dd13a506aac276e531e9406c74ecf1067ca/) | ⚠️ Unaudited |
+| V3Migrator | unknown | hyperliquid | n/a | [`0x30816d58bd24e7abd7022d9c7cb996f20f15c4fb`](./contracts/hyperliquid-999/0x30816d58bd24e7abd7022d9c7cb996f20f15c4fb/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -110,15 +110,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| hyperliquid | [`0x2aa27d...499310`](./contracts/hyperliquid-999/0x2aa27d8ad0ec2bf129b2543ea8707d1cea499310/) | HuskeyInterfaceMulticall | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0xf9d6ab...f7dacb`](./contracts/hyperliquid-999/0xf9d6ab1d33e5ba1e1600ce499b684584b4f7dacb/) | LinearVesting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0xaf7fd5...02cb59`](./contracts/hyperliquid-999/0xaf7fd5bb87e52b4631232b3460fc1f032202cb59/) | MixedRouteQuoterV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x08443b...cf77e1`](./contracts/hyperliquid-999/0x08443ba2bc5ab1dd5ba0d65f622ebb470ecf77e1/) | QuoterV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0xd4ad13...3f9fb0`](./contracts/hyperliquid-999/0xd4ad13fd4f42d3f2e0945faa7a18dd043b3f9fb0/) | SmartRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x100f7d...35ef93`](./contracts/hyperliquid-999/0x100f7dd3c3cff22108299193f8b937900f35ef93/) | TickLens | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0xb6bfe8...dce552`](./contracts/hyperliquid-999/0xb6bfe8ee4dcd579e760439140ad05d20f5dce552/) | TokenValidator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x6e3c4d...1067ca`](./contracts/hyperliquid-999/0x6e3c4dd13a506aac276e531e9406c74ecf1067ca/) | UpheavalV3LmPoolDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x30816d...15c4fb`](./contracts/hyperliquid-999/0x30816d58bd24e7abd7022d9c7cb996f20f15c4fb/) | V3Migrator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x2aa27d8ad0ec2bf129b2543ea8707d1cea499310`](./contracts/hyperliquid-999/0x2aa27d8ad0ec2bf129b2543ea8707d1cea499310/) | HuskeyInterfaceMulticall | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0xf9d6ab1d33e5ba1e1600ce499b684584b4f7dacb`](./contracts/hyperliquid-999/0xf9d6ab1d33e5ba1e1600ce499b684584b4f7dacb/) | LinearVesting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0xaf7fd5bb87e52b4631232b3460fc1f032202cb59`](./contracts/hyperliquid-999/0xaf7fd5bb87e52b4631232b3460fc1f032202cb59/) | MixedRouteQuoterV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x08443ba2bc5ab1dd5ba0d65f622ebb470ecf77e1`](./contracts/hyperliquid-999/0x08443ba2bc5ab1dd5ba0d65f622ebb470ecf77e1/) | QuoterV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0xd4ad13fd4f42d3f2e0945faa7a18dd043b3f9fb0`](./contracts/hyperliquid-999/0xd4ad13fd4f42d3f2e0945faa7a18dd043b3f9fb0/) | SmartRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x100f7dd3c3cff22108299193f8b937900f35ef93`](./contracts/hyperliquid-999/0x100f7dd3c3cff22108299193f8b937900f35ef93/) | TickLens | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0xb6bfe8ee4dcd579e760439140ad05d20f5dce552`](./contracts/hyperliquid-999/0xb6bfe8ee4dcd579e760439140ad05d20f5dce552/) | TokenValidator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x6e3c4dd13a506aac276e531e9406c74ecf1067ca`](./contracts/hyperliquid-999/0x6e3c4dd13a506aac276e531e9406c74ecf1067ca/) | UpheavalV3LmPoolDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x30816d58bd24e7abd7022d9c7cb996f20f15c4fb`](./contracts/hyperliquid-999/0x30816d58bd24e7abd7022d9c7cb996f20f15c4fb/) | V3Migrator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

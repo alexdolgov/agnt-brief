@@ -61,45 +61,45 @@ The protocol comprises 3 functional families. Its contracts share 20 common proj
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| IToken | unknown | ethereum | n/a | [`0x325478...9ba519`](./contracts/ethereum-1/0x325478a069b0dbbdfbee909fa3741f84259ba519/) | ✅ Audited |
-| SthUSD | unknown | ethereum | n/a | [`0x342487...5a7dc3`](./contracts/ethereum-1/0x342487f9fe31d199dda8c89a1c34cc647c5a7dc3/) | ✅ Audited |
-| SthUSDRewards | unknown | ethereum | n/a | [`0x4775a4...c4c9e8`](./contracts/ethereum-1/0x4775a42121f251f41790257983b9d0234bc4c9e8/) | ✅ Audited |
-| StUSD | unknown | ethereum | n/a | [`0x1bd515...8d8628`](./contracts/ethereum-1/0x1bd5154221ac5f57c1b8f4bbadb6d46f9a8d8628/) | ✅ Audited |
-| TheoWhitelist | unknown | ethereum | n/a | [`0x14d38a...11f388`](./contracts/ethereum-1/0x14d38a3ed85ebddb3e22ff022e38e645a311f388/) | ✅ Audited |
-| ThUSD | unknown | ethereum | n/a | [`0x2332e0...359e2c`](./contracts/ethereum-1/0x2332e0df18ad299847b71ed6b8ebd74341359e2c/) | ✅ Audited |
-| ThUSDMinter | unknown | ethereum | n/a | [`0x2c2347...972f64`](./contracts/ethereum-1/0x2c2347f3cf2275bda88a7a222f08f888e0972f64/) | ✅ Audited |
-| TTokenRouter | unknown | ethereum | n/a | [`0x11ae0d...7b9076`](./contracts/ethereum-1/0x11ae0ddca63e7a6ed11e575cf497fa69f27b9076/) | ✅ Audited |
+| IToken | unknown | ethereum | n/a | [`0x325478a069b0dbbdfbee909fa3741f84259ba519`](./contracts/ethereum-1/0x325478a069b0dbbdfbee909fa3741f84259ba519/) | ✅ Audited |
+| SthUSD | unknown | ethereum | n/a | [`0x342487f9fe31d199dda8c89a1c34cc647c5a7dc3`](./contracts/ethereum-1/0x342487f9fe31d199dda8c89a1c34cc647c5a7dc3/) | ✅ Audited |
+| SthUSDRewards | unknown | ethereum | n/a | [`0x4775a42121f251f41790257983b9d0234bc4c9e8`](./contracts/ethereum-1/0x4775a42121f251f41790257983b9d0234bc4c9e8/) | ✅ Audited |
+| StUSD | unknown | ethereum | n/a | [`0x1bd5154221ac5f57c1b8f4bbadb6d46f9a8d8628`](./contracts/ethereum-1/0x1bd5154221ac5f57c1b8f4bbadb6d46f9a8d8628/) | ✅ Audited |
+| TheoWhitelist | unknown | ethereum | n/a | [`0x14d38a3ed85ebddb3e22ff022e38e645a311f388`](./contracts/ethereum-1/0x14d38a3ed85ebddb3e22ff022e38e645a311f388/) | ✅ Audited |
+| ThUSD | unknown | ethereum | n/a | [`0x2332e0df18ad299847b71ed6b8ebd74341359e2c`](./contracts/ethereum-1/0x2332e0df18ad299847b71ed6b8ebd74341359e2c/) | ✅ Audited |
+| ThUSDMinter | unknown | ethereum | n/a | [`0x2c2347f3cf2275bda88a7a222f08f888e0972f64`](./contracts/ethereum-1/0x2c2347f3cf2275bda88a7a222f08f888e0972f64/) | ✅ Audited |
+| TTokenRouter | unknown | ethereum | n/a | [`0x11ae0ddca63e7a6ed11e575cf497fa69f27b9076`](./contracts/ethereum-1/0x11ae0ddca63e7a6ed11e575cf497fa69f27b9076/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (26)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Delta | unknown | ethereum | n/a | [`0x060d85...6d0e9c`](./contracts/ethereum-1/0x060d8503a9a552a4600abbc5e741b8bed06d0e9c/) | ⚠️ Unaudited |
-| DeltaManager | unknown | ethereum | n/a | [`0x145420...f3e859`](./contracts/ethereum-1/0x14542032f6a696231b3cf868e1811898c6f3e859/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | ethereum | n/a | [`0x9e31aa...5301dc`](./contracts/ethereum-1/0x9e31aa691cfeb47276727793ccb29984625301dc/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | ethereum | n/a | [`0xa6ab7b...6cb25f`](./contracts/ethereum-1/0xa6ab7ba3ea0c0016de31826682789371bc6cb25f/) | ⚠️ Unaudited |
-| InitializableImmutableAdminUpgradeabilityProxy | unknown | ethereum | n/a | [`0x98c23e...e16f5c`](./contracts/ethereum-1/0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c/) | ⚠️ Unaudited |
-| KYC | unknown | ethereum | n/a | [`0x39ade9...8ce028`](./contracts/ethereum-1/0x39ade913407b5da446c7d1e1e6a7421b7c8ce028/) | ⚠️ Unaudited |
-| KYCUltra | unknown | arbitrum | n/a | [`0x17b7bf...fa11f2`](./contracts/arbitrum-42161/0x17b7bf7cf11f879a97f2790baaad698a50fa11f2/) | ⚠️ Unaudited |
-| MintCoordinator | unknown | ethereum | n/a | [`0x8a095d...85f1eb`](./contracts/ethereum-1/0x8a095d7ecba36d19c4d9a8389d9d7da0ee85f1eb/) | ⚠️ Unaudited |
-| PredepositClaim | unknown | ethereum | n/a | [`0x10456b...996650`](./contracts/ethereum-1/0x10456b3b0fb9f5f8141d38edf180ad9342996650/) | ⚠️ Unaudited |
-| SafeProxy | unknown | ethereum | n/a | [`0x948776...601295`](./contracts/ethereum-1/0x94877640dd9e6f1e3cb56bf7b5665b7152601295/) | ⚠️ Unaudited |
-| ThBillHyperliquidComposer | unknown | hyperliquid | n/a | [`0xabb13a...cc3923`](./contracts/hyperliquid-999/0xabb13ab90f90aa195af77a50b3f4b25a74cc3923/) | ⚠️ Unaudited |
-| ThBillOFT | unknown | hyperliquid | n/a | [`0xfdd22c...f55a5a`](./contracts/hyperliquid-999/0xfdd22ce6d1f66bc0ec89b20bf16ccb6670f55a5a/) | ⚠️ Unaudited |
-| ThBillOFTAdapter | unknown | ethereum | n/a | [`0xfdd22c...f55a5a`](./contracts/ethereum-1/0xfdd22ce6d1f66bc0ec89b20bf16ccb6670f55a5a/) | ⚠️ Unaudited |
-| TheoTUltraOracle | unknown | ethereum | n/a | [`0x2fb6f0...42f9ce`](./contracts/ethereum-1/0x2fb6f063c1950100db45492f1c359d809d42f9ce/) | ⚠️ Unaudited |
-| ThUSDOFT | unknown | arbitrum | n/a | [`0x9aa9aa...14b065`](./contracts/arbitrum-42161/0x9aa9aa0530a6af70ee7bc47cf1240100f514b065/) | ⚠️ Unaudited |
-| ThUSDOFTAdapter | unknown | ethereum | n/a | [`0x9aa9aa...14b065`](./contracts/ethereum-1/0x9aa9aa0530a6af70ee7bc47cf1240100f514b065/) | ⚠️ Unaudited |
-| TimelockController | unknown | ethereum | n/a | [`0x46a9ca...ef8bc2`](./contracts/ethereum-1/0x46a9ca32d5c7c866336e75765b099b669fef8bc2/) | ⚠️ Unaudited |
-| TTokenRouterV2 | unknown | ethereum | n/a | [`0x8a2c30...505eb1`](./contracts/ethereum-1/0x8a2c307d1462ff4fa98c9c119d3a3457ad505eb1/) | ⚠️ Unaudited |
-| TTokenRouterV3 | unknown | ethereum | n/a | [`0x9e7a82...2df621`](./contracts/ethereum-1/0x9e7a82cb1705bc5cb3c5500d96d166123e2df621/) | ⚠️ Unaudited |
-| TTokenV2 | unknown | ethereum | n/a | [`0xa6844c...d8f083`](./contracts/ethereum-1/0xa6844c9030f2717955f77801edbfb3480ad8f083/) | ⚠️ Unaudited |
-| TTokenV3 | unknown | ethereum | n/a | [`0x1aa000...a0fdda`](./contracts/ethereum-1/0x1aa000527eb3ec9cff8168d8ff96513469a0fdda/) | ⚠️ Unaudited |
-| TULTRAV2 | unknown | ethereum | n/a | [`0x985b60...ea1b54`](./contracts/ethereum-1/0x985b600c534f7a8599b1df1b9e23bfc94aea1b54/) | ⚠️ Unaudited |
-| TULTRAV3 | unknown | ethereum | n/a | [`0x4d0fce...3e5248`](./contracts/ethereum-1/0x4d0fcefff18dbdfe8ada61b51f0caed4b33e5248/) | ⚠️ Unaudited |
-| Ultra | unknown | arbitrum | n/a | [`0x145420...f3e859`](./contracts/arbitrum-42161/0x14542032f6a696231b3cf868e1811898c6f3e859/) | ⚠️ Unaudited |
-| UltraManager | unknown | ethereum | n/a | [`0x0f37ee...ab5ac6`](./contracts/ethereum-1/0x0f37eedfe1f6e010254135bdfed0255f79ab5ac6/) | ⚠️ Unaudited |
-| UltraManagerFiat | unknown | arbitrum | n/a | [`0x060d85...6d0e9c`](./contracts/arbitrum-42161/0x060d8503a9a552a4600abbc5e741b8bed06d0e9c/) | ⚠️ Unaudited |
+| Delta | unknown | ethereum | n/a | [`0x060d8503a9a552a4600abbc5e741b8bed06d0e9c`](./contracts/ethereum-1/0x060d8503a9a552a4600abbc5e741b8bed06d0e9c/) | ⚠️ Unaudited |
+| DeltaManager | unknown | ethereum | n/a | [`0x14542032f6a696231b3cf868e1811898c6f3e859`](./contracts/ethereum-1/0x14542032f6a696231b3cf868e1811898c6f3e859/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | ethereum | n/a | [`0x9e31aa691cfeb47276727793ccb29984625301dc`](./contracts/ethereum-1/0x9e31aa691cfeb47276727793ccb29984625301dc/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | ethereum | n/a | [`0xa6ab7ba3ea0c0016de31826682789371bc6cb25f`](./contracts/ethereum-1/0xa6ab7ba3ea0c0016de31826682789371bc6cb25f/) | ⚠️ Unaudited |
+| InitializableImmutableAdminUpgradeabilityProxy | unknown | ethereum | n/a | [`0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c`](./contracts/ethereum-1/0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c/) | ⚠️ Unaudited |
+| KYC | unknown | ethereum | n/a | [`0x39ade913407b5da446c7d1e1e6a7421b7c8ce028`](./contracts/ethereum-1/0x39ade913407b5da446c7d1e1e6a7421b7c8ce028/) | ⚠️ Unaudited |
+| KYCUltra | unknown | arbitrum | n/a | [`0x17b7bf7cf11f879a97f2790baaad698a50fa11f2`](./contracts/arbitrum-42161/0x17b7bf7cf11f879a97f2790baaad698a50fa11f2/) | ⚠️ Unaudited |
+| MintCoordinator | unknown | ethereum | n/a | [`0x8a095d7ecba36d19c4d9a8389d9d7da0ee85f1eb`](./contracts/ethereum-1/0x8a095d7ecba36d19c4d9a8389d9d7da0ee85f1eb/) | ⚠️ Unaudited |
+| PredepositClaim | unknown | ethereum | n/a | [`0x10456b3b0fb9f5f8141d38edf180ad9342996650`](./contracts/ethereum-1/0x10456b3b0fb9f5f8141d38edf180ad9342996650/) | ⚠️ Unaudited |
+| SafeProxy | unknown | ethereum | n/a | [`0x94877640dd9e6f1e3cb56bf7b5665b7152601295`](./contracts/ethereum-1/0x94877640dd9e6f1e3cb56bf7b5665b7152601295/) | ⚠️ Unaudited |
+| ThBillHyperliquidComposer | unknown | hyperliquid | n/a | [`0xabb13ab90f90aa195af77a50b3f4b25a74cc3923`](./contracts/hyperliquid-999/0xabb13ab90f90aa195af77a50b3f4b25a74cc3923/) | ⚠️ Unaudited |
+| ThBillOFT | unknown | hyperliquid | n/a | [`0xfdd22ce6d1f66bc0ec89b20bf16ccb6670f55a5a`](./contracts/hyperliquid-999/0xfdd22ce6d1f66bc0ec89b20bf16ccb6670f55a5a/) | ⚠️ Unaudited |
+| ThBillOFTAdapter | unknown | ethereum | n/a | [`0xfdd22ce6d1f66bc0ec89b20bf16ccb6670f55a5a`](./contracts/ethereum-1/0xfdd22ce6d1f66bc0ec89b20bf16ccb6670f55a5a/) | ⚠️ Unaudited |
+| TheoTUltraOracle | unknown | ethereum | n/a | [`0x2fb6f063c1950100db45492f1c359d809d42f9ce`](./contracts/ethereum-1/0x2fb6f063c1950100db45492f1c359d809d42f9ce/) | ⚠️ Unaudited |
+| ThUSDOFT | unknown | arbitrum | n/a | [`0x9aa9aa0530a6af70ee7bc47cf1240100f514b065`](./contracts/arbitrum-42161/0x9aa9aa0530a6af70ee7bc47cf1240100f514b065/) | ⚠️ Unaudited |
+| ThUSDOFTAdapter | unknown | ethereum | n/a | [`0x9aa9aa0530a6af70ee7bc47cf1240100f514b065`](./contracts/ethereum-1/0x9aa9aa0530a6af70ee7bc47cf1240100f514b065/) | ⚠️ Unaudited |
+| TimelockController | unknown | ethereum | n/a | [`0x46a9ca32d5c7c866336e75765b099b669fef8bc2`](./contracts/ethereum-1/0x46a9ca32d5c7c866336e75765b099b669fef8bc2/) | ⚠️ Unaudited |
+| TTokenRouterV2 | unknown | ethereum | n/a | [`0x8a2c307d1462ff4fa98c9c119d3a3457ad505eb1`](./contracts/ethereum-1/0x8a2c307d1462ff4fa98c9c119d3a3457ad505eb1/) | ⚠️ Unaudited |
+| TTokenRouterV3 | unknown | ethereum | n/a | [`0x9e7a82cb1705bc5cb3c5500d96d166123e2df621`](./contracts/ethereum-1/0x9e7a82cb1705bc5cb3c5500d96d166123e2df621/) | ⚠️ Unaudited |
+| TTokenV2 | unknown | ethereum | n/a | [`0xa6844c9030f2717955f77801edbfb3480ad8f083`](./contracts/ethereum-1/0xa6844c9030f2717955f77801edbfb3480ad8f083/) | ⚠️ Unaudited |
+| TTokenV3 | unknown | ethereum | n/a | [`0x1aa000527eb3ec9cff8168d8ff96513469a0fdda`](./contracts/ethereum-1/0x1aa000527eb3ec9cff8168d8ff96513469a0fdda/) | ⚠️ Unaudited |
+| TULTRAV2 | unknown | ethereum | n/a | [`0x985b600c534f7a8599b1df1b9e23bfc94aea1b54`](./contracts/ethereum-1/0x985b600c534f7a8599b1df1b9e23bfc94aea1b54/) | ⚠️ Unaudited |
+| TULTRAV3 | unknown | ethereum | n/a | [`0x4d0fcefff18dbdfe8ada61b51f0caed4b33e5248`](./contracts/ethereum-1/0x4d0fcefff18dbdfe8ada61b51f0caed4b33e5248/) | ⚠️ Unaudited |
+| Ultra | unknown | arbitrum | n/a | [`0x14542032f6a696231b3cf868e1811898c6f3e859`](./contracts/arbitrum-42161/0x14542032f6a696231b3cf868e1811898c6f3e859/) | ⚠️ Unaudited |
+| UltraManager | unknown | ethereum | n/a | [`0x0f37eedfe1f6e010254135bdfed0255f79ab5ac6`](./contracts/ethereum-1/0x0f37eedfe1f6e010254135bdfed0255f79ab5ac6/) | ⚠️ Unaudited |
+| UltraManagerFiat | unknown | arbitrum | n/a | [`0x060d8503a9a552a4600abbc5e741b8bed06d0e9c`](./contracts/arbitrum-42161/0x060d8503a9a552a4600abbc5e741b8bed06d0e9c/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -136,27 +136,27 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x060d85...6d0e9c`](./contracts/ethereum-1/0x060d8503a9a552a4600abbc5e741b8bed06d0e9c/) | Delta | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x145420...f3e859`](./contracts/ethereum-1/0x14542032f6a696231b3cf868e1811898c6f3e859/) | DeltaManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x39ade9...8ce028`](./contracts/ethereum-1/0x39ade913407b5da446c7d1e1e6a7421b7c8ce028/) | KYC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x17b7bf...fa11f2`](./contracts/arbitrum-42161/0x17b7bf7cf11f879a97f2790baaad698a50fa11f2/) | KYCUltra | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x8a095d...85f1eb`](./contracts/ethereum-1/0x8a095d7ecba36d19c4d9a8389d9d7da0ee85f1eb/) | MintCoordinator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x10456b...996650`](./contracts/ethereum-1/0x10456b3b0fb9f5f8141d38edf180ad9342996650/) | PredepositClaim | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0xabb13a...cc3923`](./contracts/hyperliquid-999/0xabb13ab90f90aa195af77a50b3f4b25a74cc3923/) | ThBillHyperliquidComposer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0xfdd22c...f55a5a`](./contracts/hyperliquid-999/0xfdd22ce6d1f66bc0ec89b20bf16ccb6670f55a5a/) | ThBillOFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xfdd22c...f55a5a`](./contracts/ethereum-1/0xfdd22ce6d1f66bc0ec89b20bf16ccb6670f55a5a/) | ThBillOFTAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2fb6f0...42f9ce`](./contracts/ethereum-1/0x2fb6f063c1950100db45492f1c359d809d42f9ce/) | TheoTUltraOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x9aa9aa...14b065`](./contracts/arbitrum-42161/0x9aa9aa0530a6af70ee7bc47cf1240100f514b065/) | ThUSDOFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x9aa9aa...14b065`](./contracts/ethereum-1/0x9aa9aa0530a6af70ee7bc47cf1240100f514b065/) | ThUSDOFTAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x8a2c30...505eb1`](./contracts/ethereum-1/0x8a2c307d1462ff4fa98c9c119d3a3457ad505eb1/) | TTokenRouterV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x9e7a82...2df621`](./contracts/ethereum-1/0x9e7a82cb1705bc5cb3c5500d96d166123e2df621/) | TTokenRouterV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa6844c...d8f083`](./contracts/ethereum-1/0xa6844c9030f2717955f77801edbfb3480ad8f083/) | TTokenV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1aa000...a0fdda`](./contracts/ethereum-1/0x1aa000527eb3ec9cff8168d8ff96513469a0fdda/) | TTokenV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x985b60...ea1b54`](./contracts/ethereum-1/0x985b600c534f7a8599b1df1b9e23bfc94aea1b54/) | TULTRAV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x4d0fce...3e5248`](./contracts/ethereum-1/0x4d0fcefff18dbdfe8ada61b51f0caed4b33e5248/) | TULTRAV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x145420...f3e859`](./contracts/arbitrum-42161/0x14542032f6a696231b3cf868e1811898c6f3e859/) | Ultra | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0f37ee...ab5ac6`](./contracts/ethereum-1/0x0f37eedfe1f6e010254135bdfed0255f79ab5ac6/) | UltraManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x060d85...6d0e9c`](./contracts/arbitrum-42161/0x060d8503a9a552a4600abbc5e741b8bed06d0e9c/) | UltraManagerFiat | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x060d8503a9a552a4600abbc5e741b8bed06d0e9c`](./contracts/ethereum-1/0x060d8503a9a552a4600abbc5e741b8bed06d0e9c/) | Delta | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x14542032f6a696231b3cf868e1811898c6f3e859`](./contracts/ethereum-1/0x14542032f6a696231b3cf868e1811898c6f3e859/) | DeltaManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x39ade913407b5da446c7d1e1e6a7421b7c8ce028`](./contracts/ethereum-1/0x39ade913407b5da446c7d1e1e6a7421b7c8ce028/) | KYC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x17b7bf7cf11f879a97f2790baaad698a50fa11f2`](./contracts/arbitrum-42161/0x17b7bf7cf11f879a97f2790baaad698a50fa11f2/) | KYCUltra | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8a095d7ecba36d19c4d9a8389d9d7da0ee85f1eb`](./contracts/ethereum-1/0x8a095d7ecba36d19c4d9a8389d9d7da0ee85f1eb/) | MintCoordinator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x10456b3b0fb9f5f8141d38edf180ad9342996650`](./contracts/ethereum-1/0x10456b3b0fb9f5f8141d38edf180ad9342996650/) | PredepositClaim | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0xabb13ab90f90aa195af77a50b3f4b25a74cc3923`](./contracts/hyperliquid-999/0xabb13ab90f90aa195af77a50b3f4b25a74cc3923/) | ThBillHyperliquidComposer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0xfdd22ce6d1f66bc0ec89b20bf16ccb6670f55a5a`](./contracts/hyperliquid-999/0xfdd22ce6d1f66bc0ec89b20bf16ccb6670f55a5a/) | ThBillOFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xfdd22ce6d1f66bc0ec89b20bf16ccb6670f55a5a`](./contracts/ethereum-1/0xfdd22ce6d1f66bc0ec89b20bf16ccb6670f55a5a/) | ThBillOFTAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x2fb6f063c1950100db45492f1c359d809d42f9ce`](./contracts/ethereum-1/0x2fb6f063c1950100db45492f1c359d809d42f9ce/) | TheoTUltraOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x9aa9aa0530a6af70ee7bc47cf1240100f514b065`](./contracts/arbitrum-42161/0x9aa9aa0530a6af70ee7bc47cf1240100f514b065/) | ThUSDOFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x9aa9aa0530a6af70ee7bc47cf1240100f514b065`](./contracts/ethereum-1/0x9aa9aa0530a6af70ee7bc47cf1240100f514b065/) | ThUSDOFTAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8a2c307d1462ff4fa98c9c119d3a3457ad505eb1`](./contracts/ethereum-1/0x8a2c307d1462ff4fa98c9c119d3a3457ad505eb1/) | TTokenRouterV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x9e7a82cb1705bc5cb3c5500d96d166123e2df621`](./contracts/ethereum-1/0x9e7a82cb1705bc5cb3c5500d96d166123e2df621/) | TTokenRouterV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa6844c9030f2717955f77801edbfb3480ad8f083`](./contracts/ethereum-1/0xa6844c9030f2717955f77801edbfb3480ad8f083/) | TTokenV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1aa000527eb3ec9cff8168d8ff96513469a0fdda`](./contracts/ethereum-1/0x1aa000527eb3ec9cff8168d8ff96513469a0fdda/) | TTokenV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x985b600c534f7a8599b1df1b9e23bfc94aea1b54`](./contracts/ethereum-1/0x985b600c534f7a8599b1df1b9e23bfc94aea1b54/) | TULTRAV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4d0fcefff18dbdfe8ada61b51f0caed4b33e5248`](./contracts/ethereum-1/0x4d0fcefff18dbdfe8ada61b51f0caed4b33e5248/) | TULTRAV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x14542032f6a696231b3cf868e1811898c6f3e859`](./contracts/arbitrum-42161/0x14542032f6a696231b3cf868e1811898c6f3e859/) | Ultra | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0f37eedfe1f6e010254135bdfed0255f79ab5ac6`](./contracts/ethereum-1/0x0f37eedfe1f6e010254135bdfed0255f79ab5ac6/) | UltraManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x060d8503a9a552a4600abbc5e741b8bed06d0e9c`](./contracts/arbitrum-42161/0x060d8503a9a552a4600abbc5e741b8bed06d0e9c/) | UltraManagerFiat | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

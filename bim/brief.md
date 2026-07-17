@@ -59,22 +59,22 @@ The protocol comprises 2 functional families. Contracts are linked by 2 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BIM | unknown | base | n/a | [`0x555fff...2e8379`](./contracts/base-8453/0x555fff48549c1a25a723bd8e7ed10870d82e8379/) | ✅ Audited |
+| BIM | unknown | base | n/a | [`0x555fff48549c1a25a723bd8e7ed10870d82e8379`](./contracts/base-8453/0x555fff48549c1a25a723bd8e7ed10870d82e8379/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (10)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BimOracle | unknown | base | n/a | [`0x62ff2b...da76d2`](./contracts/base-8453/0x62ff2b90a14c2e312c8b1c4c08f61af710da76d2/) | ⚠️ Unaudited |
-| BimSwapper | unknown | base | n/a | [`0xb32a52...e067ef`](./contracts/base-8453/0xb32a5263eb60c56610bb44b566f6d44b6ae067ef/) | ⚠️ Unaudited |
-| BimVaultV7 | unknown | base | n/a | [`0xee9550...31304b`](./contracts/base-8453/0xee95508e0f52dbea2aaa507462735a3de731304b/) | ⚠️ Unaudited |
-| BimZapRouter | unknown | base | n/a | [`0xa8c850...42a856`](./contracts/base-8453/0xa8c8504bf1dc659d93ca5a05dc77d7104142a856/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | base | n/a | [`0xccf8a7...a36263`](./contracts/base-8453/0xccf8a786c25b3b4a0ed498bfcb670cc3e8a36263/) | ⚠️ Unaudited |
-| StrategyFactory | unknown | base | n/a | [`0x3f44a3...560948`](./contracts/base-8453/0x3f44a33091f5b18a5ea411f927c6106f5d560948/) | ⚠️ Unaudited |
-| StrategyVelodromeFactory | unknown | base | n/a | [`0x19fd67...4a6216`](./contracts/base-8453/0x19fd67135a6c101d1a72f4ed315f2f546a4a6216/) | ⚠️ Unaudited |
-| StrategyVelodromeGaugeV2 | unknown | base | n/a | [`0xdba417...cffe3f`](./contracts/base-8453/0xdba417c3a34c03ef2b360a9a2d5dc70bfccffe3f/) | ⚠️ Unaudited |
-| TimelockController | unknown | base | n/a | [`0x20ee7c...84163b`](./contracts/base-8453/0x20ee7cc55345db9296d32b4a86bb72939284163b/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | base | n/a | [`0x270b04...a9dd29`](./contracts/base-8453/0x270b04518596851d67de4074845f37dcdea9dd29/) | ⚠️ Unaudited |
+| BimOracle | unknown | base | n/a | [`0x62ff2b90a14c2e312c8b1c4c08f61af710da76d2`](./contracts/base-8453/0x62ff2b90a14c2e312c8b1c4c08f61af710da76d2/) | ⚠️ Unaudited |
+| BimSwapper | unknown | base | n/a | [`0xb32a5263eb60c56610bb44b566f6d44b6ae067ef`](./contracts/base-8453/0xb32a5263eb60c56610bb44b566f6d44b6ae067ef/) | ⚠️ Unaudited |
+| BimVaultV7 | unknown | base | n/a | [`0xee95508e0f52dbea2aaa507462735a3de731304b`](./contracts/base-8453/0xee95508e0f52dbea2aaa507462735a3de731304b/) | ⚠️ Unaudited |
+| BimZapRouter | unknown | base | n/a | [`0xa8c8504bf1dc659d93ca5a05dc77d7104142a856`](./contracts/base-8453/0xa8c8504bf1dc659d93ca5a05dc77d7104142a856/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | base | n/a | [`0xccf8a786c25b3b4a0ed498bfcb670cc3e8a36263`](./contracts/base-8453/0xccf8a786c25b3b4a0ed498bfcb670cc3e8a36263/) | ⚠️ Unaudited |
+| StrategyFactory | unknown | base | n/a | [`0x3f44a33091f5b18a5ea411f927c6106f5d560948`](./contracts/base-8453/0x3f44a33091f5b18a5ea411f927c6106f5d560948/) | ⚠️ Unaudited |
+| StrategyVelodromeFactory | unknown | base | n/a | [`0x19fd67135a6c101d1a72f4ed315f2f546a4a6216`](./contracts/base-8453/0x19fd67135a6c101d1a72f4ed315f2f546a4a6216/) | ⚠️ Unaudited |
+| StrategyVelodromeGaugeV2 | unknown | base | n/a | [`0xdba417c3a34c03ef2b360a9a2d5dc70bfccffe3f`](./contracts/base-8453/0xdba417c3a34c03ef2b360a9a2d5dc70bfccffe3f/) | ⚠️ Unaudited |
+| TimelockController | unknown | base | n/a | [`0x20ee7cc55345db9296d32b4a86bb72939284163b`](./contracts/base-8453/0x20ee7cc55345db9296d32b4a86bb72939284163b/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | base | n/a | [`0x270b04518596851d67de4074845f37dcdea9dd29`](./contracts/base-8453/0x270b04518596851d67de4074845f37dcdea9dd29/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -127,13 +127,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x62ff2b...da76d2`](./contracts/base-8453/0x62ff2b90a14c2e312c8b1c4c08f61af710da76d2/) | BimOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xb32a52...e067ef`](./contracts/base-8453/0xb32a5263eb60c56610bb44b566f6d44b6ae067ef/) | BimSwapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xee9550...31304b`](./contracts/base-8453/0xee95508e0f52dbea2aaa507462735a3de731304b/) | BimVaultV7 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xa8c850...42a856`](./contracts/base-8453/0xa8c8504bf1dc659d93ca5a05dc77d7104142a856/) | BimZapRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x3f44a3...560948`](./contracts/base-8453/0x3f44a33091f5b18a5ea411f927c6106f5d560948/) | StrategyFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x19fd67...4a6216`](./contracts/base-8453/0x19fd67135a6c101d1a72f4ed315f2f546a4a6216/) | StrategyVelodromeFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xdba417...cffe3f`](./contracts/base-8453/0xdba417c3a34c03ef2b360a9a2d5dc70bfccffe3f/) | StrategyVelodromeGaugeV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x62ff2b90a14c2e312c8b1c4c08f61af710da76d2`](./contracts/base-8453/0x62ff2b90a14c2e312c8b1c4c08f61af710da76d2/) | BimOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xb32a5263eb60c56610bb44b566f6d44b6ae067ef`](./contracts/base-8453/0xb32a5263eb60c56610bb44b566f6d44b6ae067ef/) | BimSwapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xee95508e0f52dbea2aaa507462735a3de731304b`](./contracts/base-8453/0xee95508e0f52dbea2aaa507462735a3de731304b/) | BimVaultV7 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xa8c8504bf1dc659d93ca5a05dc77d7104142a856`](./contracts/base-8453/0xa8c8504bf1dc659d93ca5a05dc77d7104142a856/) | BimZapRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x3f44a33091f5b18a5ea411f927c6106f5d560948`](./contracts/base-8453/0x3f44a33091f5b18a5ea411f927c6106f5d560948/) | StrategyFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x19fd67135a6c101d1a72f4ed315f2f546a4a6216`](./contracts/base-8453/0x19fd67135a6c101d1a72f4ed315f2f546a4a6216/) | StrategyVelodromeFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xdba417c3a34c03ef2b360a9a2d5dc70bfccffe3f`](./contracts/base-8453/0xdba417c3a34c03ef2b360a9a2d5dc70bfccffe3f/) | StrategyVelodromeGaugeV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -60,30 +60,30 @@ The protocol comprises 3 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AccountFacet | unknown | blast | n/a | [`0x464873...c688f0`](./contracts/blast-81457/0x464873026877c9d947e2778a1b4cb4a3cbc688f0/) | ⚠️ Unaudited |
-| AdvisorVestingCoreUpgradeable | unknown | blast | n/a | [`0x0ada38...612716`](./contracts/blast-81457/0x0ada381229ffa9e12cd5ccea0e1d07c10d612716/) | ⚠️ Unaudited |
-| BatchSetForceCloseGapRatio | unknown | blast | n/a | [`0x71ac77...844220`](./contracts/blast-81457/0x71ac772b2d89985a7b0dac0fc42b1230ca844220/) | ⚠️ Unaudited |
-| BridgeFacet | unknown | blast | n/a | [`0x0e35fa...3f39ac`](./contracts/blast-81457/0x0e35fa030fd3bbed41993bc288b7378cc43f39ac/) | ⚠️ Unaudited |
-| ControlFacet | unknown | blast | n/a | [`0x2ecc7d...0838b5`](./contracts/blast-81457/0x2ecc7da3cc98d341f987c85c3d9fc198570838b5/) | ⚠️ Unaudited |
-| CoreEmissionsKeeper | unknown | blast | n/a | [`0x172276...9a09a7`](./contracts/blast-81457/0x1722762ee861288cb0cf0705a69b03dd4e9a09a7/) | ⚠️ Unaudited |
-| CoreEmissionsKeeperV2 | unknown | blast | n/a | [`0x2ed2e3...084199`](./contracts/blast-81457/0x2ed2e32970c2ae27f51d6ad1809d2917fe084199/) | ⚠️ Unaudited |
-| CoreFeeCollector | unknown | blast | n/a | [`0x1a5d81...3ca610`](./contracts/blast-81457/0x1a5d813aff409a0245f86165552709d70a3ca610/) | ⚠️ Unaudited |
-| CoreMultiRewarder | unknown | blast | n/a | [`0x302664...8ea6d6`](./contracts/blast-81457/0x3026643eca499c196bd9aba91b6f9f02cd8ea6d6/) | ⚠️ Unaudited |
-| DiamondLoupeFacet | unknown | blast | n/a | [`0xb74629...a4c395`](./contracts/blast-81457/0xb74629900981f2977cd7a8e37052fee0d7a4c395/) | ⚠️ Unaudited |
-| FundingRateFacet | unknown | blast | n/a | [`0x9d4c16...dffb05`](./contracts/blast-81457/0x9d4c169703bb0116751a6965952a5e4adfdffb05/) | ⚠️ Unaudited |
-| LiquidationFacet | unknown | blast | n/a | [`0x0b6014...61d50a`](./contracts/blast-81457/0x0b60140dcc98a6a9e9985ab165dc54903861d50a/) | ⚠️ Unaudited |
-| PartyAFacet | unknown | blast | n/a | [`0x6ae148...e32403`](./contracts/blast-81457/0x6ae14800c45ae9383db2c3f2ee6019ebe1e32403/) | ⚠️ Unaudited |
-| PartyBFacet | unknown | blast | n/a | [`0x50154e...b8b1c6`](./contracts/blast-81457/0x50154e11edf5d7d528cbc7ec0d507ddb70b8b1c6/) | ⚠️ Unaudited |
-| RasaOffChainSymmioDepositor | unknown | blast | n/a | [`0x0cbf07...dacd95`](./contracts/blast-81457/0x0cbf07176e67671c99222bebdb166efc58dacd95/) | ⚠️ Unaudited |
-| RasaOnChainSymmioDepositor | unknown | blast | n/a | [`0xc818f5...8f853e`](./contracts/blast-81457/0xc818f52e267609a4c377ed1a0691425cde8f853e/) | ⚠️ Unaudited |
-| SeedVestingCoreUpgradeable | unknown | blast | n/a | [`0x0b145a...11829c`](./contracts/blast-81457/0x0b145a57443c3cc2e8e359caf80085019811829c/) | ⚠️ Unaudited |
-| SignatureStore | unknown | blast | n/a | [`0xc2a1fc...f045b6`](./contracts/blast-81457/0xc2a1fcd1e6d6c3c806fac707b28126b072f045b6/) | ⚠️ Unaudited |
-| SymmioDepositorLpToken | unknown | blast | n/a | [`0x30e54c...765915`](./contracts/blast-81457/0x30e54c1ae25e7c948668afd091c5b0bae0765915/) | ⚠️ Unaudited |
-| SymmioPartyB | unknown | blast | n/a | [`0x3adc81...ae6cde`](./contracts/blast-81457/0x3adc81cc43d9e1636de9cbac764afcb1f3ae6cde/) | ⚠️ Unaudited |
-| TeamVestingCoreUpgradeable | unknown | blast | n/a | [`0x8fb840...5ddbb6`](./contracts/blast-81457/0x8fb840c274fc6ce9320cbcf1074184693a5ddbb6/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | blast | n/a | [`0x083267...d99015`](./contracts/blast-81457/0x083267d20dbe6c2b0a83bd0e601dc2299ed99015/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | blast | n/a | [`0x27ba11...b23229`](./contracts/blast-81457/0x27ba1168a6df3681dd2f74c8f6dae165aab23229/) | ⚠️ Unaudited |
-| ViewFacet | unknown | blast | n/a | [`0x5e0663...069934`](./contracts/blast-81457/0x5e0663deb8683b70e0ff36e6e6e0dfa0f0069934/) | ⚠️ Unaudited |
+| AccountFacet | unknown | blast | n/a | [`0x464873026877c9d947e2778a1b4cb4a3cbc688f0`](./contracts/blast-81457/0x464873026877c9d947e2778a1b4cb4a3cbc688f0/) | ⚠️ Unaudited |
+| AdvisorVestingCoreUpgradeable | unknown | blast | n/a | [`0x0ada381229ffa9e12cd5ccea0e1d07c10d612716`](./contracts/blast-81457/0x0ada381229ffa9e12cd5ccea0e1d07c10d612716/) | ⚠️ Unaudited |
+| BatchSetForceCloseGapRatio | unknown | blast | n/a | [`0x71ac772b2d89985a7b0dac0fc42b1230ca844220`](./contracts/blast-81457/0x71ac772b2d89985a7b0dac0fc42b1230ca844220/) | ⚠️ Unaudited |
+| BridgeFacet | unknown | blast | n/a | [`0x0e35fa030fd3bbed41993bc288b7378cc43f39ac`](./contracts/blast-81457/0x0e35fa030fd3bbed41993bc288b7378cc43f39ac/) | ⚠️ Unaudited |
+| ControlFacet | unknown | blast | n/a | [`0x2ecc7da3cc98d341f987c85c3d9fc198570838b5`](./contracts/blast-81457/0x2ecc7da3cc98d341f987c85c3d9fc198570838b5/) | ⚠️ Unaudited |
+| CoreEmissionsKeeper | unknown | blast | n/a | [`0x1722762ee861288cb0cf0705a69b03dd4e9a09a7`](./contracts/blast-81457/0x1722762ee861288cb0cf0705a69b03dd4e9a09a7/) | ⚠️ Unaudited |
+| CoreEmissionsKeeperV2 | unknown | blast | n/a | [`0x2ed2e32970c2ae27f51d6ad1809d2917fe084199`](./contracts/blast-81457/0x2ed2e32970c2ae27f51d6ad1809d2917fe084199/) | ⚠️ Unaudited |
+| CoreFeeCollector | unknown | blast | n/a | [`0x1a5d813aff409a0245f86165552709d70a3ca610`](./contracts/blast-81457/0x1a5d813aff409a0245f86165552709d70a3ca610/) | ⚠️ Unaudited |
+| CoreMultiRewarder | unknown | blast | n/a | [`0x3026643eca499c196bd9aba91b6f9f02cd8ea6d6`](./contracts/blast-81457/0x3026643eca499c196bd9aba91b6f9f02cd8ea6d6/) | ⚠️ Unaudited |
+| DiamondLoupeFacet | unknown | blast | n/a | [`0xb74629900981f2977cd7a8e37052fee0d7a4c395`](./contracts/blast-81457/0xb74629900981f2977cd7a8e37052fee0d7a4c395/) | ⚠️ Unaudited |
+| FundingRateFacet | unknown | blast | n/a | [`0x9d4c169703bb0116751a6965952a5e4adfdffb05`](./contracts/blast-81457/0x9d4c169703bb0116751a6965952a5e4adfdffb05/) | ⚠️ Unaudited |
+| LiquidationFacet | unknown | blast | n/a | [`0x0b60140dcc98a6a9e9985ab165dc54903861d50a`](./contracts/blast-81457/0x0b60140dcc98a6a9e9985ab165dc54903861d50a/) | ⚠️ Unaudited |
+| PartyAFacet | unknown | blast | n/a | [`0x6ae14800c45ae9383db2c3f2ee6019ebe1e32403`](./contracts/blast-81457/0x6ae14800c45ae9383db2c3f2ee6019ebe1e32403/) | ⚠️ Unaudited |
+| PartyBFacet | unknown | blast | n/a | [`0x50154e11edf5d7d528cbc7ec0d507ddb70b8b1c6`](./contracts/blast-81457/0x50154e11edf5d7d528cbc7ec0d507ddb70b8b1c6/) | ⚠️ Unaudited |
+| RasaOffChainSymmioDepositor | unknown | blast | n/a | [`0x0cbf07176e67671c99222bebdb166efc58dacd95`](./contracts/blast-81457/0x0cbf07176e67671c99222bebdb166efc58dacd95/) | ⚠️ Unaudited |
+| RasaOnChainSymmioDepositor | unknown | blast | n/a | [`0xc818f52e267609a4c377ed1a0691425cde8f853e`](./contracts/blast-81457/0xc818f52e267609a4c377ed1a0691425cde8f853e/) | ⚠️ Unaudited |
+| SeedVestingCoreUpgradeable | unknown | blast | n/a | [`0x0b145a57443c3cc2e8e359caf80085019811829c`](./contracts/blast-81457/0x0b145a57443c3cc2e8e359caf80085019811829c/) | ⚠️ Unaudited |
+| SignatureStore | unknown | blast | n/a | [`0xc2a1fcd1e6d6c3c806fac707b28126b072f045b6`](./contracts/blast-81457/0xc2a1fcd1e6d6c3c806fac707b28126b072f045b6/) | ⚠️ Unaudited |
+| SymmioDepositorLpToken | unknown | blast | n/a | [`0x30e54c1ae25e7c948668afd091c5b0bae0765915`](./contracts/blast-81457/0x30e54c1ae25e7c948668afd091c5b0bae0765915/) | ⚠️ Unaudited |
+| SymmioPartyB | unknown | blast | n/a | [`0x3adc81cc43d9e1636de9cbac764afcb1f3ae6cde`](./contracts/blast-81457/0x3adc81cc43d9e1636de9cbac764afcb1f3ae6cde/) | ⚠️ Unaudited |
+| TeamVestingCoreUpgradeable | unknown | blast | n/a | [`0x8fb840c274fc6ce9320cbcf1074184693a5ddbb6`](./contracts/blast-81457/0x8fb840c274fc6ce9320cbcf1074184693a5ddbb6/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | blast | n/a | [`0x083267d20dbe6c2b0a83bd0e601dc2299ed99015`](./contracts/blast-81457/0x083267d20dbe6c2b0a83bd0e601dc2299ed99015/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | blast | n/a | [`0x27ba1168a6df3681dd2f74c8f6dae165aab23229`](./contracts/blast-81457/0x27ba1168a6df3681dd2f74c8f6dae165aab23229/) | ⚠️ Unaudited |
+| ViewFacet | unknown | blast | n/a | [`0x5e0663deb8683b70e0ff36e6e6e0dfa0f0069934`](./contracts/blast-81457/0x5e0663deb8683b70e0ff36e6e6e0dfa0f0069934/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -114,28 +114,28 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| blast | [`0x464873...c688f0`](./contracts/blast-81457/0x464873026877c9d947e2778a1b4cb4a3cbc688f0/) | AccountFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0x0ada38...612716`](./contracts/blast-81457/0x0ada381229ffa9e12cd5ccea0e1d07c10d612716/) | AdvisorVestingCoreUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0x71ac77...844220`](./contracts/blast-81457/0x71ac772b2d89985a7b0dac0fc42b1230ca844220/) | BatchSetForceCloseGapRatio | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0x0e35fa...3f39ac`](./contracts/blast-81457/0x0e35fa030fd3bbed41993bc288b7378cc43f39ac/) | BridgeFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0x2ecc7d...0838b5`](./contracts/blast-81457/0x2ecc7da3cc98d341f987c85c3d9fc198570838b5/) | ControlFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0x172276...9a09a7`](./contracts/blast-81457/0x1722762ee861288cb0cf0705a69b03dd4e9a09a7/) | CoreEmissionsKeeper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0x2ed2e3...084199`](./contracts/blast-81457/0x2ed2e32970c2ae27f51d6ad1809d2917fe084199/) | CoreEmissionsKeeperV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0x1a5d81...3ca610`](./contracts/blast-81457/0x1a5d813aff409a0245f86165552709d70a3ca610/) | CoreFeeCollector | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0x302664...8ea6d6`](./contracts/blast-81457/0x3026643eca499c196bd9aba91b6f9f02cd8ea6d6/) | CoreMultiRewarder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0xb74629...a4c395`](./contracts/blast-81457/0xb74629900981f2977cd7a8e37052fee0d7a4c395/) | DiamondLoupeFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0x9d4c16...dffb05`](./contracts/blast-81457/0x9d4c169703bb0116751a6965952a5e4adfdffb05/) | FundingRateFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0x0b6014...61d50a`](./contracts/blast-81457/0x0b60140dcc98a6a9e9985ab165dc54903861d50a/) | LiquidationFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0x6ae148...e32403`](./contracts/blast-81457/0x6ae14800c45ae9383db2c3f2ee6019ebe1e32403/) | PartyAFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0x50154e...b8b1c6`](./contracts/blast-81457/0x50154e11edf5d7d528cbc7ec0d507ddb70b8b1c6/) | PartyBFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0x0cbf07...dacd95`](./contracts/blast-81457/0x0cbf07176e67671c99222bebdb166efc58dacd95/) | RasaOffChainSymmioDepositor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0xc818f5...8f853e`](./contracts/blast-81457/0xc818f52e267609a4c377ed1a0691425cde8f853e/) | RasaOnChainSymmioDepositor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0x0b145a...11829c`](./contracts/blast-81457/0x0b145a57443c3cc2e8e359caf80085019811829c/) | SeedVestingCoreUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0xc2a1fc...f045b6`](./contracts/blast-81457/0xc2a1fcd1e6d6c3c806fac707b28126b072f045b6/) | SignatureStore | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0x30e54c...765915`](./contracts/blast-81457/0x30e54c1ae25e7c948668afd091c5b0bae0765915/) | SymmioDepositorLpToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0x3adc81...ae6cde`](./contracts/blast-81457/0x3adc81cc43d9e1636de9cbac764afcb1f3ae6cde/) | SymmioPartyB | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0x8fb840...5ddbb6`](./contracts/blast-81457/0x8fb840c274fc6ce9320cbcf1074184693a5ddbb6/) | TeamVestingCoreUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0x5e0663...069934`](./contracts/blast-81457/0x5e0663deb8683b70e0ff36e6e6e0dfa0f0069934/) | ViewFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x464873026877c9d947e2778a1b4cb4a3cbc688f0`](./contracts/blast-81457/0x464873026877c9d947e2778a1b4cb4a3cbc688f0/) | AccountFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x0ada381229ffa9e12cd5ccea0e1d07c10d612716`](./contracts/blast-81457/0x0ada381229ffa9e12cd5ccea0e1d07c10d612716/) | AdvisorVestingCoreUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x71ac772b2d89985a7b0dac0fc42b1230ca844220`](./contracts/blast-81457/0x71ac772b2d89985a7b0dac0fc42b1230ca844220/) | BatchSetForceCloseGapRatio | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x0e35fa030fd3bbed41993bc288b7378cc43f39ac`](./contracts/blast-81457/0x0e35fa030fd3bbed41993bc288b7378cc43f39ac/) | BridgeFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x2ecc7da3cc98d341f987c85c3d9fc198570838b5`](./contracts/blast-81457/0x2ecc7da3cc98d341f987c85c3d9fc198570838b5/) | ControlFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x1722762ee861288cb0cf0705a69b03dd4e9a09a7`](./contracts/blast-81457/0x1722762ee861288cb0cf0705a69b03dd4e9a09a7/) | CoreEmissionsKeeper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x2ed2e32970c2ae27f51d6ad1809d2917fe084199`](./contracts/blast-81457/0x2ed2e32970c2ae27f51d6ad1809d2917fe084199/) | CoreEmissionsKeeperV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x1a5d813aff409a0245f86165552709d70a3ca610`](./contracts/blast-81457/0x1a5d813aff409a0245f86165552709d70a3ca610/) | CoreFeeCollector | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x3026643eca499c196bd9aba91b6f9f02cd8ea6d6`](./contracts/blast-81457/0x3026643eca499c196bd9aba91b6f9f02cd8ea6d6/) | CoreMultiRewarder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0xb74629900981f2977cd7a8e37052fee0d7a4c395`](./contracts/blast-81457/0xb74629900981f2977cd7a8e37052fee0d7a4c395/) | DiamondLoupeFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x9d4c169703bb0116751a6965952a5e4adfdffb05`](./contracts/blast-81457/0x9d4c169703bb0116751a6965952a5e4adfdffb05/) | FundingRateFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x0b60140dcc98a6a9e9985ab165dc54903861d50a`](./contracts/blast-81457/0x0b60140dcc98a6a9e9985ab165dc54903861d50a/) | LiquidationFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x6ae14800c45ae9383db2c3f2ee6019ebe1e32403`](./contracts/blast-81457/0x6ae14800c45ae9383db2c3f2ee6019ebe1e32403/) | PartyAFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x50154e11edf5d7d528cbc7ec0d507ddb70b8b1c6`](./contracts/blast-81457/0x50154e11edf5d7d528cbc7ec0d507ddb70b8b1c6/) | PartyBFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x0cbf07176e67671c99222bebdb166efc58dacd95`](./contracts/blast-81457/0x0cbf07176e67671c99222bebdb166efc58dacd95/) | RasaOffChainSymmioDepositor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0xc818f52e267609a4c377ed1a0691425cde8f853e`](./contracts/blast-81457/0xc818f52e267609a4c377ed1a0691425cde8f853e/) | RasaOnChainSymmioDepositor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x0b145a57443c3cc2e8e359caf80085019811829c`](./contracts/blast-81457/0x0b145a57443c3cc2e8e359caf80085019811829c/) | SeedVestingCoreUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0xc2a1fcd1e6d6c3c806fac707b28126b072f045b6`](./contracts/blast-81457/0xc2a1fcd1e6d6c3c806fac707b28126b072f045b6/) | SignatureStore | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x30e54c1ae25e7c948668afd091c5b0bae0765915`](./contracts/blast-81457/0x30e54c1ae25e7c948668afd091c5b0bae0765915/) | SymmioDepositorLpToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x3adc81cc43d9e1636de9cbac764afcb1f3ae6cde`](./contracts/blast-81457/0x3adc81cc43d9e1636de9cbac764afcb1f3ae6cde/) | SymmioPartyB | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x8fb840c274fc6ce9320cbcf1074184693a5ddbb6`](./contracts/blast-81457/0x8fb840c274fc6ce9320cbcf1074184693a5ddbb6/) | TeamVestingCoreUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x5e0663deb8683b70e0ff36e6e6e0dfa0f0069934`](./contracts/blast-81457/0x5e0663deb8683b70e0ff36e6e6e0dfa0f0069934/) | ViewFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

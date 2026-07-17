@@ -60,9 +60,9 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| DevvE | unknown | ethereum | n/a | [`0x824827...37cc09`](./contracts/ethereum-1/0x8248270620aa532e4d64316017be5e873e37cc09/) | ⚠️ Unaudited |
-| DevvE_V2 | unknown | ethereum | n/a | [`0x318e54...f68044`](./contracts/ethereum-1/0x318e541ff6a20a8e899c8eef82381df36ef68044/) | ⚠️ Unaudited |
-| Devvestaking2 | unknown | ethereum | n/a | [`0xa0dab5...322b70`](./contracts/ethereum-1/0xa0dab5d6907a9cffd023e0160210eab464322b70/) | ⚠️ Unaudited |
+| DevvE | unknown | ethereum | n/a | [`0x8248270620aa532e4d64316017be5e873e37cc09`](./contracts/ethereum-1/0x8248270620aa532e4d64316017be5e873e37cc09/) | ⚠️ Unaudited |
+| DevvE_V2 | unknown | ethereum | n/a | [`0x318e541ff6a20a8e899c8eef82381df36ef68044`](./contracts/ethereum-1/0x318e541ff6a20a8e899c8eef82381df36ef68044/) | ⚠️ Unaudited |
+| Devvestaking2 | unknown | ethereum | n/a | [`0xa0dab5d6907a9cffd023e0160210eab464322b70`](./contracts/ethereum-1/0xa0dab5d6907a9cffd023e0160210eab464322b70/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,9 +93,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x824827...37cc09`](./contracts/ethereum-1/0x8248270620aa532e4d64316017be5e873e37cc09/) | DevvE | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x318e54...f68044`](./contracts/ethereum-1/0x318e541ff6a20a8e899c8eef82381df36ef68044/) | DevvE_V2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa0dab5...322b70`](./contracts/ethereum-1/0xa0dab5d6907a9cffd023e0160210eab464322b70/) | Devvestaking2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8248270620aa532e4d64316017be5e873e37cc09`](./contracts/ethereum-1/0x8248270620aa532e4d64316017be5e873e37cc09/) | DevvE | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x318e541ff6a20a8e899c8eef82381df36ef68044`](./contracts/ethereum-1/0x318e541ff6a20a8e899c8eef82381df36ef68044/) | DevvE_V2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa0dab5d6907a9cffd023e0160210eab464322b70`](./contracts/ethereum-1/0xa0dab5d6907a9cffd023e0160210eab464322b70/) | Devvestaking2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -61,10 +61,10 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| DevSrcBridge | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x032aca...e55ca8`](./contracts/arbitrum-42161/0x032aca08c1be8fa4d4902cf8db011769d9e55ca8/); arbitrum `0x0b3b31...495e14` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | arbitrum | n/a | 2 deployments: bsc `0xca0d26...be71cb`; arbitrum [`0x705aaf...6fa7f9`](./contracts/arbitrum-42161/0x705aaffeccb370883531f09c64133d3abb6fa7f9/) | ⚠️ Unaudited |
-| SrcBridge | unknown | bsc | n/a | 2 deployments: bsc [`0xe54e95...38a974`](./contracts/bsc-56/0xe54e9592c8292cb7d82cb8d3e4d0edc22e38a974/); bsc `0xef14da...372c41` | ⚠️ Unaudited |
-| SrcBridge | operational_periphery | arbitrum | n/a | [`0x80c526...0eda00`](./contracts/arbitrum-42161/0x80c526d1c2fddadb3cd39810cd7a79e07b0eda00/) | ⚠️ Unaudited |
+| DevSrcBridge | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x032aca08c1be8fa4d4902cf8db011769d9e55ca8`](./contracts/arbitrum-42161/0x032aca08c1be8fa4d4902cf8db011769d9e55ca8/); arbitrum `0x0b3b31da21ca84068be498394c64ad8447495e14` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | arbitrum | n/a | 2 deployments: bsc `0xca0d26a9c82d0b6133e624ce26f7d7d50ebe71cb`; arbitrum [`0x705aaffeccb370883531f09c64133d3abb6fa7f9`](./contracts/arbitrum-42161/0x705aaffeccb370883531f09c64133d3abb6fa7f9/) | ⚠️ Unaudited |
+| SrcBridge | unknown | bsc | n/a | 2 deployments: bsc [`0xe54e9592c8292cb7d82cb8d3e4d0edc22e38a974`](./contracts/bsc-56/0xe54e9592c8292cb7d82cb8d3e4d0edc22e38a974/); bsc `0xef14da66876476c1a75dc057343b97b6bd372c41` | ⚠️ Unaudited |
+| SrcBridge | operational_periphery | arbitrum | n/a | [`0x80c526d1c2fddadb3cd39810cd7a79e07b0eda00`](./contracts/arbitrum-42161/0x80c526d1c2fddadb3cd39810cd7a79e07b0eda00/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -84,7 +84,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | zksync-era | n/a | `0xf0bcf4...fda56b` | ❓ Unverified |
+| UnnamedContract | unknown | zksync-era | n/a | `0xf0bcf4ede69e5cb0eb1c9e35b4d408a5e7fda56b` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -98,9 +98,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | [`0x032aca...e55ca8`](./contracts/arbitrum-42161/0x032aca08c1be8fa4d4902cf8db011769d9e55ca8/) | DevSrcBridge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xe54e95...38a974`](./contracts/bsc-56/0xe54e9592c8292cb7d82cb8d3e4d0edc22e38a974/) | SrcBridge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x80c526...0eda00`](./contracts/arbitrum-42161/0x80c526d1c2fddadb3cd39810cd7a79e07b0eda00/) | SrcBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x032aca08c1be8fa4d4902cf8db011769d9e55ca8`](./contracts/arbitrum-42161/0x032aca08c1be8fa4d4902cf8db011769d9e55ca8/) | DevSrcBridge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xe54e9592c8292cb7d82cb8d3e4d0edc22e38a974`](./contracts/bsc-56/0xe54e9592c8292cb7d82cb8d3e4d0edc22e38a974/) | SrcBridge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x80c526d1c2fddadb3cd39810cd7a79e07b0eda00`](./contracts/arbitrum-42161/0x80c526d1c2fddadb3cd39810cd7a79e07b0eda00/) | SrcBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

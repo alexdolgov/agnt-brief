@@ -89,9 +89,9 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AlmanakToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-121384 | `0xdefa1d...7cc3a3` | ⚠️ Unaudited |
-| AlmanakTokenL2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | unit-121385 | `0xdefa1d...7cc3a3` | ⚠️ Unaudited |
-| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-121386 | `0x5a97b0...b12ee3` | ⚠️ Unaudited |
+| AlmanakToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-121384 | `0xdefa1d21c5f1cbeac00eeb54b44c7d86467cc3a3` | ⚠️ Unaudited |
+| AlmanakTokenL2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | unit-121385 | `0xdefa1d21c5f1cbeac00eeb54b44c7d86467cc3a3` | ⚠️ Unaudited |
+| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-121386 | `0x5a97b0b97197299456af841f8605543b13b12ee3` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

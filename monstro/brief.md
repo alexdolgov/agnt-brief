@@ -61,19 +61,19 @@ The protocol comprises 4 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AlgebraPool | core_logic | base | n/a | [`0x174b09...154575`](./contracts/base-8453/0x174b0950f7359f6197e92d8b274f0d6b27154575/) | ⚠️ Unaudited |
-| BasedLoansLendingLedger | core_logic | base | n/a | [`0x278cfe...c5141f`](./contracts/base-8453/0x278cfeadeaacbe88f24692ef199247cf17c5141f/) | ⚠️ Unaudited |
-| MonstroDataTracker | unknown | base | n/a | [`0x813303...21f53f`](./contracts/base-8453/0x813303b6f253c74d997020518227f87ff721f53f/) | ⚠️ Unaudited |
-| MonstroNFT | token | base | n/a | [`0x553fa1...373cf0`](./contracts/base-8453/0x553fa1d5e0bc4b1b98fc39c4e01f4b25d8373cf0/) | ⚠️ Unaudited |
-| MonstroNFTFeatures | token | base | n/a | [`0x0d949b...28041d`](./contracts/base-8453/0x0d949bbe56bffe8d2bc333a6f830e1a8de28041d/) | ⚠️ Unaudited |
-| MonstroNFTProps | token | base | n/a | [`0xbb0c01...4b3452`](./contracts/base-8453/0xbb0c01c090bbf77440119f1e2e83443fb04b3452/) | ⚠️ Unaudited |
-| MonstroNFTSale | token | base | n/a | 4 deployments: base [`0x53f3f5...f1ec7c`](./contracts/base-8453/0x53f3f548f30639d4d0bd6020db7e789ee8f1ec7c/); base `0xcc0bec...29cec1`; base `0xcd6cda...76c76d`; base `0xf6509e...4ddcd4` | ⚠️ Unaudited |
-| MonstroPayUSDC | unknown | base | n/a | [`0x37db84...ecbf6c`](./contracts/base-8453/0x37db84b897c6db3e509d74bc009efb9210ecbf6c/) | ⚠️ Unaudited |
-| MonstroStaking | unknown | base | n/a | [`0x997417...f4742b`](./contracts/base-8453/0x99741758a3bcd7a95b80845e124c5c499df4742b/) | ⚠️ Unaudited |
-| MonstroToken | token | base | n/a | [`0x1d3be1...e708f7`](./contracts/base-8453/0x1d3be1cc80ca89ddbabe5b5c254af63200e708f7/) | ⚠️ Unaudited |
-| MonstroUSDC | unknown | base | n/a | [`0xfa68ac...6b0397`](./contracts/base-8453/0xfa68ac5ca298ab4b96bce6542ec74bb9516b0397/) | ⚠️ Unaudited |
-| RatioDerivedAdapter | adapter | base | n/a | [`0xb5391e...f88b52`](./contracts/base-8453/0xb5391e137cd3bb9dda02c164b599c95af0f88b52/) | ⚠️ Unaudited |
-| SafeProxy | unknown | base | n/a | 5 deployments: base [`0x4713b3...5a8dd0`](./contracts/base-8453/0x4713b3ab36c9759043694757e6cb8123915a8dd0/); base `0xa67356...14085c`; base `0xa6cd98...5404dc`; base `0xcb7c19...9f4391`; base `0xce45b2...6f6b4a` | ⚠️ Unaudited |
+| AlgebraPool | core_logic | base | n/a | [`0x174b0950f7359f6197e92d8b274f0d6b27154575`](./contracts/base-8453/0x174b0950f7359f6197e92d8b274f0d6b27154575/) | ⚠️ Unaudited |
+| BasedLoansLendingLedger | core_logic | base | n/a | [`0x278cfeadeaacbe88f24692ef199247cf17c5141f`](./contracts/base-8453/0x278cfeadeaacbe88f24692ef199247cf17c5141f/) | ⚠️ Unaudited |
+| MonstroDataTracker | unknown | base | n/a | [`0x813303b6f253c74d997020518227f87ff721f53f`](./contracts/base-8453/0x813303b6f253c74d997020518227f87ff721f53f/) | ⚠️ Unaudited |
+| MonstroNFT | token | base | n/a | [`0x553fa1d5e0bc4b1b98fc39c4e01f4b25d8373cf0`](./contracts/base-8453/0x553fa1d5e0bc4b1b98fc39c4e01f4b25d8373cf0/) | ⚠️ Unaudited |
+| MonstroNFTFeatures | token | base | n/a | [`0x0d949bbe56bffe8d2bc333a6f830e1a8de28041d`](./contracts/base-8453/0x0d949bbe56bffe8d2bc333a6f830e1a8de28041d/) | ⚠️ Unaudited |
+| MonstroNFTProps | token | base | n/a | [`0xbb0c01c090bbf77440119f1e2e83443fb04b3452`](./contracts/base-8453/0xbb0c01c090bbf77440119f1e2e83443fb04b3452/) | ⚠️ Unaudited |
+| MonstroNFTSale | token | base | n/a | 4 deployments: base [`0x53f3f548f30639d4d0bd6020db7e789ee8f1ec7c`](./contracts/base-8453/0x53f3f548f30639d4d0bd6020db7e789ee8f1ec7c/); base `0xcc0bec85bdaeeea0f41622921441761af929cec1`; base `0xcd6cdae2f0f9c31de9a682b11b80968a4376c76d`; base `0xf6509eb1730e18d90f0e024dcacaa722574ddcd4` | ⚠️ Unaudited |
+| MonstroPayUSDC | unknown | base | n/a | [`0x37db84b897c6db3e509d74bc009efb9210ecbf6c`](./contracts/base-8453/0x37db84b897c6db3e509d74bc009efb9210ecbf6c/) | ⚠️ Unaudited |
+| MonstroStaking | unknown | base | n/a | [`0x99741758a3bcd7a95b80845e124c5c499df4742b`](./contracts/base-8453/0x99741758a3bcd7a95b80845e124c5c499df4742b/) | ⚠️ Unaudited |
+| MonstroToken | token | base | n/a | [`0x1d3be1cc80ca89ddbabe5b5c254af63200e708f7`](./contracts/base-8453/0x1d3be1cc80ca89ddbabe5b5c254af63200e708f7/) | ⚠️ Unaudited |
+| MonstroUSDC | unknown | base | n/a | [`0xfa68ac5ca298ab4b96bce6542ec74bb9516b0397`](./contracts/base-8453/0xfa68ac5ca298ab4b96bce6542ec74bb9516b0397/) | ⚠️ Unaudited |
+| RatioDerivedAdapter | adapter | base | n/a | [`0xb5391e137cd3bb9dda02c164b599c95af0f88b52`](./contracts/base-8453/0xb5391e137cd3bb9dda02c164b599c95af0f88b52/) | ⚠️ Unaudited |
+| SafeProxy | unknown | base | n/a | 5 deployments: base [`0x4713b3ab36c9759043694757e6cb8123915a8dd0`](./contracts/base-8453/0x4713b3ab36c9759043694757e6cb8123915a8dd0/); base `0xa673566a818e3525e57292b22311ad0be114085c`; base `0xa6cd9800eff0994b3f64c330de4e55925d5404dc`; base `0xcb7c195de077b9cadbc5c086ba7932149b9f4391`; base `0xce45b2ae92c9dc7e39ebb9d9db6920897a6f6b4a` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -104,18 +104,18 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x174b09...154575`](./contracts/base-8453/0x174b0950f7359f6197e92d8b274f0d6b27154575/) | AlgebraPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x278cfe...c5141f`](./contracts/base-8453/0x278cfeadeaacbe88f24692ef199247cf17c5141f/) | BasedLoansLendingLedger | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x813303...21f53f`](./contracts/base-8453/0x813303b6f253c74d997020518227f87ff721f53f/) | MonstroDataTracker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x553fa1...373cf0`](./contracts/base-8453/0x553fa1d5e0bc4b1b98fc39c4e01f4b25d8373cf0/) | MonstroNFT | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x0d949b...28041d`](./contracts/base-8453/0x0d949bbe56bffe8d2bc333a6f830e1a8de28041d/) | MonstroNFTFeatures | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xbb0c01...4b3452`](./contracts/base-8453/0xbb0c01c090bbf77440119f1e2e83443fb04b3452/) | MonstroNFTProps | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x53f3f5...f1ec7c`](./contracts/base-8453/0x53f3f548f30639d4d0bd6020db7e789ee8f1ec7c/) | MonstroNFTSale | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x37db84...ecbf6c`](./contracts/base-8453/0x37db84b897c6db3e509d74bc009efb9210ecbf6c/) | MonstroPayUSDC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x997417...f4742b`](./contracts/base-8453/0x99741758a3bcd7a95b80845e124c5c499df4742b/) | MonstroStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x1d3be1...e708f7`](./contracts/base-8453/0x1d3be1cc80ca89ddbabe5b5c254af63200e708f7/) | MonstroToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xfa68ac...6b0397`](./contracts/base-8453/0xfa68ac5ca298ab4b96bce6542ec74bb9516b0397/) | MonstroUSDC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xb5391e...f88b52`](./contracts/base-8453/0xb5391e137cd3bb9dda02c164b599c95af0f88b52/) | RatioDerivedAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x174b0950f7359f6197e92d8b274f0d6b27154575`](./contracts/base-8453/0x174b0950f7359f6197e92d8b274f0d6b27154575/) | AlgebraPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x278cfeadeaacbe88f24692ef199247cf17c5141f`](./contracts/base-8453/0x278cfeadeaacbe88f24692ef199247cf17c5141f/) | BasedLoansLendingLedger | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x813303b6f253c74d997020518227f87ff721f53f`](./contracts/base-8453/0x813303b6f253c74d997020518227f87ff721f53f/) | MonstroDataTracker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x553fa1d5e0bc4b1b98fc39c4e01f4b25d8373cf0`](./contracts/base-8453/0x553fa1d5e0bc4b1b98fc39c4e01f4b25d8373cf0/) | MonstroNFT | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x0d949bbe56bffe8d2bc333a6f830e1a8de28041d`](./contracts/base-8453/0x0d949bbe56bffe8d2bc333a6f830e1a8de28041d/) | MonstroNFTFeatures | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xbb0c01c090bbf77440119f1e2e83443fb04b3452`](./contracts/base-8453/0xbb0c01c090bbf77440119f1e2e83443fb04b3452/) | MonstroNFTProps | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x53f3f548f30639d4d0bd6020db7e789ee8f1ec7c`](./contracts/base-8453/0x53f3f548f30639d4d0bd6020db7e789ee8f1ec7c/) | MonstroNFTSale | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x37db84b897c6db3e509d74bc009efb9210ecbf6c`](./contracts/base-8453/0x37db84b897c6db3e509d74bc009efb9210ecbf6c/) | MonstroPayUSDC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x99741758a3bcd7a95b80845e124c5c499df4742b`](./contracts/base-8453/0x99741758a3bcd7a95b80845e124c5c499df4742b/) | MonstroStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x1d3be1cc80ca89ddbabe5b5c254af63200e708f7`](./contracts/base-8453/0x1d3be1cc80ca89ddbabe5b5c254af63200e708f7/) | MonstroToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xfa68ac5ca298ab4b96bce6542ec74bb9516b0397`](./contracts/base-8453/0xfa68ac5ca298ab4b96bce6542ec74bb9516b0397/) | MonstroUSDC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xb5391e137cd3bb9dda02c164b599c95af0f88b52`](./contracts/base-8453/0xb5391e137cd3bb9dda02c164b599c95af0f88b52/) | RatioDerivedAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

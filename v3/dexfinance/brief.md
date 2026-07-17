@@ -106,10 +106,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | manta-pacific | unit-235262 | `0x6da9eb...80c0af` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-235264 | `0x2bd888...94de01` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-235265 | `0x53cb59...28a44d` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | unit-235263 | `0x4117ec...b7c34b` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | manta-pacific | unit-235262 | `0x6da9ebd271a0676f39c088a2b5fd849d5080c0af` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-235264 | `0x2bd8880e7424dfb94597429de7253de73694de01` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-235265 | `0x53cb59d32a8d08fc6d3f81454f150946a028a44d` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | unit-235263 | `0x4117ec0a779448872d3820f37ba2060ae0b7c34b` | ❓ Unverified |
 
 ## Audit Inventory
 

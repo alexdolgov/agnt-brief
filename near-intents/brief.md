@@ -62,8 +62,8 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| FiatTokenV2_2 | token | gnosis | n/a | [`0x2a22f9...8f76f0`](./contracts/gnosis-100/0x2a22f9c3b484c3629090feed35f17ff8f88f76f0/) | ⚠️ Unaudited |
-| PermittableToken | token | gnosis | n/a | [`0x177127...973d3c`](./contracts/gnosis-100/0x177127622c4a00f3d409b75571e12cb3c8973d3c/) | ⚠️ Unaudited |
+| FiatTokenV2_2 | token | gnosis | n/a | [`0x2a22f9c3b484c3629090feed35f17ff8f88f76f0`](./contracts/gnosis-100/0x2a22f9c3b484c3629090feed35f17ff8f88f76f0/) | ⚠️ Unaudited |
+| PermittableToken | token | gnosis | n/a | [`0x177127622c4a00f3d409b75571e12cb3c8973d3c`](./contracts/gnosis-100/0x177127622c4a00f3d409b75571e12cb3c8973d3c/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -98,8 +98,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| gnosis | [`0x2a22f9...8f76f0`](./contracts/gnosis-100/0x2a22f9c3b484c3629090feed35f17ff8f88f76f0/) | FiatTokenV2_2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| gnosis | [`0x177127...973d3c`](./contracts/gnosis-100/0x177127622c4a00f3d409b75571e12cb3c8973d3c/) | PermittableToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| gnosis | [`0x2a22f9c3b484c3629090feed35f17ff8f88f76f0`](./contracts/gnosis-100/0x2a22f9c3b484c3629090feed35f17ff8f88f76f0/) | FiatTokenV2_2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| gnosis | [`0x177127622c4a00f3d409b75571e12cb3c8973d3c`](./contracts/gnosis-100/0x177127622c4a00f3d409b75571e12cb3c8973d3c/) | PermittableToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -60,31 +60,31 @@ The protocol comprises 3 functional families. Its contracts share 7 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| TSAggregatorGeneric | unknown | ethereum | n/a | 5 deployments: ethereum [`0x0ccd5d...f63c3c`](./contracts/ethereum-1/0x0ccd5dd5bcf1af77dc358d1e2f06ee880ef63c3c/); ethereum `0x5727d8...7cd2ab`; ethereum `0x77cdf2...7abd95`; ethereum `0x97fce4...26cffc`; ethereum `0xd31f7e...c49fd2` | ✅ Audited |
-| TSAggregatorTokenTransferProxy | token | base | n/a | 4 deployments: ethereum `0xf892fe...33abe8`; base [`0x5505be...f9bf5a`](./contracts/base-8453/0x5505be604dfa8a1ad402a71f8a357fba47f9bf5a/); arbitrum `0x5786ef...bef9ce`; arbitrum `0x8baf33...c5d5f7` | ✅ Audited |
-| vTHOR | unknown | ethereum | n/a | [`0x815c23...c24d8d`](./contracts/ethereum-1/0x815c23eca83261b6ec689b60cc4a58b54bc24d8d/) | ✅ Audited |
+| TSAggregatorGeneric | unknown | ethereum | n/a | 5 deployments: ethereum [`0x0ccd5dd5bcf1af77dc358d1e2f06ee880ef63c3c`](./contracts/ethereum-1/0x0ccd5dd5bcf1af77dc358d1e2f06ee880ef63c3c/); ethereum `0x5727d8982723310f907483f9806221ecac7cd2ab`; ethereum `0x77cdf20e2442cd38c0a704e370fe8a75107abd95`; ethereum `0x97fce421db341038d599097493362346ce26cffc`; ethereum `0xd31f7e39afecec4855fecc51b693f9a0cec49fd2` | ✅ Audited |
+| TSAggregatorTokenTransferProxy | token | base | n/a | 4 deployments: ethereum `0xf892fef9da200d9e84c9b0647ecff0f34633abe8`; base [`0x5505be604dfa8a1ad402a71f8a357fba47f9bf5a`](./contracts/base-8453/0x5505be604dfa8a1ad402a71f8a357fba47f9bf5a/); arbitrum `0x5786efdb788466456a59d3bd7abef0ec42bef9ce`; arbitrum `0x8baf33e755ee29e5e37f370a11a0a889dac5d5f7` | ✅ Audited |
+| vTHOR | unknown | ethereum | n/a | [`0x815c23eca83261b6ec689b60cc4a58b54bc24d8d`](./contracts/ethereum-1/0x815c23eca83261b6ec689b60cc4a58b54bc24d8d/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (17)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| SingleStaking | unknown | ethereum | n/a | 2 deployments: ethereum [`0x675563...b34922`](./contracts/ethereum-1/0x6755630c583f12ffbd10568eb633c0319db34922/); ethereum `0xae1fc3...88bc24` | ⚠️ Unaudited |
-| SKChainflipHyperLiquid_V1 | unknown | arbitrum | n/a | 3 deployments: arbitrum [`0x00503a...cf4cd5`](./contracts/arbitrum-42161/0x00503ae0caefdec6d4ff54e4746f8e7543cf4cd5/); arbitrum `0x199dab...a90d40`; arbitrum `0x78fd32...39d799` | ⚠️ Unaudited |
-| ThorToken | token | ethereum | n/a | [`0xa5f221...468044`](./contracts/ethereum-1/0xa5f2211b9b8170f694421f2046281775e8468044/) | ⚠️ Unaudited |
-| TokenVesting | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0x0c3c9e...da2223`](./contracts/ethereum-1/0x0c3c9e5d9b08131dbd82a8648a23592b4dda2223/); ethereum `0xb54147...c0d25f` | ⚠️ Unaudited |
-| TSAggregatorChainflip_V1 | unknown | ethereum | n/a | 2 deployments: ethereum [`0x029c7a...8b05ed`](./contracts/ethereum-1/0x029c7a9098d6efa723df308d3278211cd68b05ed/); ethereum `0xd917c3...06f1f1` | ⚠️ Unaudited |
-| TSAggregatorChainflip_V2 | unknown | ethereum | n/a | [`0xe797be...99ecdc`](./contracts/ethereum-1/0xe797be356f833972fcc631b86ce30951e499ecdc/) | ⚠️ Unaudited |
-| TSAggregatorChainflip_V3 | unknown | ethereum | n/a | [`0x104715...bfd1f5`](./contracts/ethereum-1/0x1047156a1a152672e287e7dfc9487c3566bfd1f5/) | ⚠️ Unaudited |
-| TSAggregatorGeneric_V1 | unknown | arbitrum | n/a | 4 deployments: base `0xaa68cf...ea9e9f`; base `0xb1970f...7aaeed`; arbitrum [`0x6e5add...1b17ac`](./contracts/arbitrum-42161/0x6e5add41c751e89432cda5763156a3f41f1b17ac/); arbitrum `0xfa3f33...d01e9a` | ⚠️ Unaudited |
-| TSAggregatorUniswapV3_V1 | unknown | arbitrum | n/a | [`0x50cbe1...d78012`](./contracts/arbitrum-42161/0x50cbe1330100df9086f6fbc994a300b75dd78012/) | ⚠️ Unaudited |
-| TSAggregatorWoofi | unknown | base | n/a | 3 deployments: base [`0x30912b...9aec2e`](./contracts/base-8453/0x30912b38618d3d37de3191a4ffe982c65a9aec2e/); arbitrum `0xcd6f8b...626ceb`; avalanche `0x5505be...f9bf5a` | ⚠️ Unaudited |
-| TSAirdrop | operational_periphery | ethereum | n/a | [`0x5505be...f9bf5a`](./contracts/ethereum-1/0x5505be604dfa8a1ad402a71f8a357fba47f9bf5a/) | ⚠️ Unaudited |
-| TSFeeDistributor_V3 | operational_periphery | ethereum | n/a | [`0x546e7b...e04ba7`](./contracts/ethereum-1/0x546e7b1f4b4df6cdb19fbddff325133ebfe04ba7/) | ⚠️ Unaudited |
-| TSSwapGeneric | unknown | ethereum | n/a | 2 deployments: ethereum [`0x213255...5906e2`](./contracts/ethereum-1/0x213255345a740324cbce0242e32076ab735906e2/); ethereum `0x8ca20a...5601ed` | ⚠️ Unaudited |
-| TSWrapperLedger_V1 | unknown | ethereum | n/a | 2 deployments: ethereum [`0x5e0068...78fb40`](./contracts/ethereum-1/0x5e006856aa4ee2e0158a1fe2158df5b37378fb40/); ethereum `0xe4e831...44d3d6` | ⚠️ Unaudited |
-| TSWrapperTCRouterV4_V1 | unknown | ethereum | n/a | 5 deployments: ethereum [`0x84fda6...6003a2`](./contracts/ethereum-1/0x84fda63c0769b2478865074a0479d28f1a6003a2/); ethereum `0x94b7f2...941ae7`; ethereum `0xa701ec...ffa454`; ethereum `0xc4a1d2...fa0653`; ethereum `0xdd40f1...5fa5a3` | ⚠️ Unaudited |
-| uTHOR | unknown | ethereum | n/a | [`0x34deff...e03588`](./contracts/ethereum-1/0x34deff97889f3a6a483e3b9255cafcb9a6e03588/) | ⚠️ Unaudited |
-| yTHOR | unknown | ethereum | n/a | [`0x8793cd...764775`](./contracts/ethereum-1/0x8793cd69895c45b2d2474236b3cb28fc5c764775/) | ⚠️ Unaudited |
+| SingleStaking | unknown | ethereum | n/a | 2 deployments: ethereum [`0x6755630c583f12ffbd10568eb633c0319db34922`](./contracts/ethereum-1/0x6755630c583f12ffbd10568eb633c0319db34922/); ethereum `0xae1fc3947ee83aeb3b7fec237bcc1d194c88bc24` | ⚠️ Unaudited |
+| SKChainflipHyperLiquid_V1 | unknown | arbitrum | n/a | 3 deployments: arbitrum [`0x00503ae0caefdec6d4ff54e4746f8e7543cf4cd5`](./contracts/arbitrum-42161/0x00503ae0caefdec6d4ff54e4746f8e7543cf4cd5/); arbitrum `0x199dab33f5d39f186f26a4aa30892e37c9a90d40`; arbitrum `0x78fd322bb51407849c7acc789be5e6e86639d799` | ⚠️ Unaudited |
+| ThorToken | token | ethereum | n/a | [`0xa5f2211b9b8170f694421f2046281775e8468044`](./contracts/ethereum-1/0xa5f2211b9b8170f694421f2046281775e8468044/) | ⚠️ Unaudited |
+| TokenVesting | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0x0c3c9e5d9b08131dbd82a8648a23592b4dda2223`](./contracts/ethereum-1/0x0c3c9e5d9b08131dbd82a8648a23592b4dda2223/); ethereum `0xb54147e6031086ed015602248e0cc34e64c0d25f` | ⚠️ Unaudited |
+| TSAggregatorChainflip_V1 | unknown | ethereum | n/a | 2 deployments: ethereum [`0x029c7a9098d6efa723df308d3278211cd68b05ed`](./contracts/ethereum-1/0x029c7a9098d6efa723df308d3278211cd68b05ed/); ethereum `0xd917c32cfa50b0fca692a208118afe4d1d06f1f1` | ⚠️ Unaudited |
+| TSAggregatorChainflip_V2 | unknown | ethereum | n/a | [`0xe797be356f833972fcc631b86ce30951e499ecdc`](./contracts/ethereum-1/0xe797be356f833972fcc631b86ce30951e499ecdc/) | ⚠️ Unaudited |
+| TSAggregatorChainflip_V3 | unknown | ethereum | n/a | [`0x1047156a1a152672e287e7dfc9487c3566bfd1f5`](./contracts/ethereum-1/0x1047156a1a152672e287e7dfc9487c3566bfd1f5/) | ⚠️ Unaudited |
+| TSAggregatorGeneric_V1 | unknown | arbitrum | n/a | 4 deployments: base `0xaa68cf21b8040a2cc0ef78443997448fe4ea9e9f`; base `0xb1970f2157a1b24d40f98b252f4f60b45c7aaeed`; arbitrum [`0x6e5add41c751e89432cda5763156a3f41f1b17ac`](./contracts/arbitrum-42161/0x6e5add41c751e89432cda5763156a3f41f1b17ac/); arbitrum `0xfa3f3348a2765ec19d1598ad446e2ab463d01e9a` | ⚠️ Unaudited |
+| TSAggregatorUniswapV3_V1 | unknown | arbitrum | n/a | [`0x50cbe1330100df9086f6fbc994a300b75dd78012`](./contracts/arbitrum-42161/0x50cbe1330100df9086f6fbc994a300b75dd78012/) | ⚠️ Unaudited |
+| TSAggregatorWoofi | unknown | base | n/a | 3 deployments: base [`0x30912b38618d3d37de3191a4ffe982c65a9aec2e`](./contracts/base-8453/0x30912b38618d3d37de3191a4ffe982c65a9aec2e/); arbitrum `0xcd6f8b17d19077f7f5a8fa30c9b645b689626ceb`; avalanche `0x5505be604dfa8a1ad402a71f8a357fba47f9bf5a` | ⚠️ Unaudited |
+| TSAirdrop | operational_periphery | ethereum | n/a | [`0x5505be604dfa8a1ad402a71f8a357fba47f9bf5a`](./contracts/ethereum-1/0x5505be604dfa8a1ad402a71f8a357fba47f9bf5a/) | ⚠️ Unaudited |
+| TSFeeDistributor_V3 | operational_periphery | ethereum | n/a | [`0x546e7b1f4b4df6cdb19fbddff325133ebfe04ba7`](./contracts/ethereum-1/0x546e7b1f4b4df6cdb19fbddff325133ebfe04ba7/) | ⚠️ Unaudited |
+| TSSwapGeneric | unknown | ethereum | n/a | 2 deployments: ethereum [`0x213255345a740324cbce0242e32076ab735906e2`](./contracts/ethereum-1/0x213255345a740324cbce0242e32076ab735906e2/); ethereum `0x8ca20a36989b6d6738b466e526272c8bfd5601ed` | ⚠️ Unaudited |
+| TSWrapperLedger_V1 | unknown | ethereum | n/a | 2 deployments: ethereum [`0x5e006856aa4ee2e0158a1fe2158df5b37378fb40`](./contracts/ethereum-1/0x5e006856aa4ee2e0158a1fe2158df5b37378fb40/); ethereum `0xe4e8313abbadc8e18543ec9528f67fde2e44d3d6` | ⚠️ Unaudited |
+| TSWrapperTCRouterV4_V1 | unknown | ethereum | n/a | 5 deployments: ethereum [`0x84fda63c0769b2478865074a0479d28f1a6003a2`](./contracts/ethereum-1/0x84fda63c0769b2478865074a0479d28f1a6003a2/); ethereum `0x94b7f2145c328dab2ec56ab982cab95f00941ae7`; ethereum `0xa701ec1ca9fdcfb4ded00cba3071f7329bffa454`; ethereum `0xc4a1d21313fc0e78cf0a8cdcc46bda5ae9fa0653`; ethereum `0xdd40f17b848ce3a30b4f71652535e744f45fa5a3` | ⚠️ Unaudited |
+| uTHOR | unknown | ethereum | n/a | [`0x34deff97889f3a6a483e3b9255cafcb9a6e03588`](./contracts/ethereum-1/0x34deff97889f3a6a483e3b9255cafcb9a6e03588/) | ⚠️ Unaudited |
+| yTHOR | unknown | ethereum | n/a | [`0x8793cd69895c45b2d2474236b3cb28fc5c764775`](./contracts/ethereum-1/0x8793cd69895c45b2d2474236b3cb28fc5c764775/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -104,34 +104,34 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x32459c...2b6e66` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x3f0274...b52310` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x8235a7...c65078` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x8526ce...01b46e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xa2ae03...774311` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xb60edc...870fca` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xb73b8e...8df0c3` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc2b279...2fd0d4` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xd10929...17c256` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xec8bb7...9df06c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xfb4db2...4bf6d5` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x082f52...b61850` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x17e7e5...da7d10` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x30912b...9aec2e` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x3b08b8...783d42` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x5505be...f9bf5a` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x55cf4d...db25b2` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x80d86b...0d2dbd` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xaa68cf...ea9e9f` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xd46ee2...dc48ef` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xdc0189...d28c8e` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xebc5e9...be4654` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xf02f7a...10b0af` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x17e7e5...da7d10` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x55cf4d...db25b2` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x8772b3...0e9606` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xcbd658...795bfc` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xf02f7a...10b0af` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x32459c0efbc3645df0614e3287714e36b02b6e66` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x3f02745badeae8738104931cfd864d33fdb52310` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x8235a713b64c4278a2ab2d81f88536e16ec65078` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x8526cec1d97a68c0e69420488d04dec5f101b46e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xa2ae034488275a9fa83be1e35c4e70dc42774311` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb60edcaf0b5da43f0a2e16fdb65cead8fa870fca` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb73b8e66196f2af0762833304e3f15db2e8df0c3` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc2b2793314d317c14dd58b80468db9eb162fd0d4` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd1092980cec8c464a62d0f6ff3293deaf817c256` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xec8bb792c7620ee16c8e37cea94badeaf29df06c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xfb4db2fd17bee53f1b491292423c7dc7274bf6d5` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x082f52eeac890248f00a24b4ddec6efb55b61850` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x17e7e5016ac1d4527f211bebf5b11fe36bda7d10` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x30912b38618d3d37de3191a4ffe982c65a9aec2e` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x3b08b8abbb2a59c19e680628f5aa7024ca783d42` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x5505be604dfa8a1ad402a71f8a357fba47f9bf5a` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x55cf4d1e35221f0a7ef3f5d1ce5a07e3ecdb25b2` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x80d86b9c920c0c23501a4e81d4cf5dbf230d2dbd` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xaa68cf21b8040a2cc0ef78443997448fe4ea9e9f` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xd46ee26b56f28e8a4a83ed853c47b51935dc48ef` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xdc01894a2559417f08edaf5f3b3adfaa89d28c8e` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xebc5e938d3f53d61c286a40e4042957c96be4654` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xf02f7a22ed0e9a1469c81f2d8419508a5910b0af` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x17e7e5016ac1d4527f211bebf5b11fe36bda7d10` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x55cf4d1e35221f0a7ef3f5d1ce5a07e3ecdb25b2` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x8772b3a6c87dc23bf6ab93c5f04e3f87da0e9606` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xcbd658862518ec05fb99e8e993fdb502cd795bfc` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xf02f7a22ed0e9a1469c81f2d8419508a5910b0af` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -146,23 +146,23 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x675563...b34922`](./contracts/ethereum-1/0x6755630c583f12ffbd10568eb633c0319db34922/) | SingleStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x00503a...cf4cd5`](./contracts/arbitrum-42161/0x00503ae0caefdec6d4ff54e4746f8e7543cf4cd5/) | SKChainflipHyperLiquid_V1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa5f221...468044`](./contracts/ethereum-1/0xa5f2211b9b8170f694421f2046281775e8468044/) | ThorToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0c3c9e...da2223`](./contracts/ethereum-1/0x0c3c9e5d9b08131dbd82a8648a23592b4dda2223/) | TokenVesting | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x029c7a...8b05ed`](./contracts/ethereum-1/0x029c7a9098d6efa723df308d3278211cd68b05ed/) | TSAggregatorChainflip_V1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xe797be...99ecdc`](./contracts/ethereum-1/0xe797be356f833972fcc631b86ce30951e499ecdc/) | TSAggregatorChainflip_V2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x104715...bfd1f5`](./contracts/ethereum-1/0x1047156a1a152672e287e7dfc9487c3566bfd1f5/) | TSAggregatorChainflip_V3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x6e5add...1b17ac`](./contracts/arbitrum-42161/0x6e5add41c751e89432cda5763156a3f41f1b17ac/) | TSAggregatorGeneric_V1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x50cbe1...d78012`](./contracts/arbitrum-42161/0x50cbe1330100df9086f6fbc994a300b75dd78012/) | TSAggregatorUniswapV3_V1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x30912b...9aec2e`](./contracts/base-8453/0x30912b38618d3d37de3191a4ffe982c65a9aec2e/) | TSAggregatorWoofi | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x5505be...f9bf5a`](./contracts/ethereum-1/0x5505be604dfa8a1ad402a71f8a357fba47f9bf5a/) | TSAirdrop | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x546e7b...e04ba7`](./contracts/ethereum-1/0x546e7b1f4b4df6cdb19fbddff325133ebfe04ba7/) | TSFeeDistributor_V3 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x213255...5906e2`](./contracts/ethereum-1/0x213255345a740324cbce0242e32076ab735906e2/) | TSSwapGeneric | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x5e0068...78fb40`](./contracts/ethereum-1/0x5e006856aa4ee2e0158a1fe2158df5b37378fb40/) | TSWrapperLedger_V1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x84fda6...6003a2`](./contracts/ethereum-1/0x84fda63c0769b2478865074a0479d28f1a6003a2/) | TSWrapperTCRouterV4_V1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x34deff...e03588`](./contracts/ethereum-1/0x34deff97889f3a6a483e3b9255cafcb9a6e03588/) | uTHOR | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x8793cd...764775`](./contracts/ethereum-1/0x8793cd69895c45b2d2474236b3cb28fc5c764775/) | yTHOR | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6755630c583f12ffbd10568eb633c0319db34922`](./contracts/ethereum-1/0x6755630c583f12ffbd10568eb633c0319db34922/) | SingleStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x00503ae0caefdec6d4ff54e4746f8e7543cf4cd5`](./contracts/arbitrum-42161/0x00503ae0caefdec6d4ff54e4746f8e7543cf4cd5/) | SKChainflipHyperLiquid_V1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa5f2211b9b8170f694421f2046281775e8468044`](./contracts/ethereum-1/0xa5f2211b9b8170f694421f2046281775e8468044/) | ThorToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0c3c9e5d9b08131dbd82a8648a23592b4dda2223`](./contracts/ethereum-1/0x0c3c9e5d9b08131dbd82a8648a23592b4dda2223/) | TokenVesting | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x029c7a9098d6efa723df308d3278211cd68b05ed`](./contracts/ethereum-1/0x029c7a9098d6efa723df308d3278211cd68b05ed/) | TSAggregatorChainflip_V1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe797be356f833972fcc631b86ce30951e499ecdc`](./contracts/ethereum-1/0xe797be356f833972fcc631b86ce30951e499ecdc/) | TSAggregatorChainflip_V2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1047156a1a152672e287e7dfc9487c3566bfd1f5`](./contracts/ethereum-1/0x1047156a1a152672e287e7dfc9487c3566bfd1f5/) | TSAggregatorChainflip_V3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x6e5add41c751e89432cda5763156a3f41f1b17ac`](./contracts/arbitrum-42161/0x6e5add41c751e89432cda5763156a3f41f1b17ac/) | TSAggregatorGeneric_V1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x50cbe1330100df9086f6fbc994a300b75dd78012`](./contracts/arbitrum-42161/0x50cbe1330100df9086f6fbc994a300b75dd78012/) | TSAggregatorUniswapV3_V1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x30912b38618d3d37de3191a4ffe982c65a9aec2e`](./contracts/base-8453/0x30912b38618d3d37de3191a4ffe982c65a9aec2e/) | TSAggregatorWoofi | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5505be604dfa8a1ad402a71f8a357fba47f9bf5a`](./contracts/ethereum-1/0x5505be604dfa8a1ad402a71f8a357fba47f9bf5a/) | TSAirdrop | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x546e7b1f4b4df6cdb19fbddff325133ebfe04ba7`](./contracts/ethereum-1/0x546e7b1f4b4df6cdb19fbddff325133ebfe04ba7/) | TSFeeDistributor_V3 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x213255345a740324cbce0242e32076ab735906e2`](./contracts/ethereum-1/0x213255345a740324cbce0242e32076ab735906e2/) | TSSwapGeneric | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5e006856aa4ee2e0158a1fe2158df5b37378fb40`](./contracts/ethereum-1/0x5e006856aa4ee2e0158a1fe2158df5b37378fb40/) | TSWrapperLedger_V1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x84fda63c0769b2478865074a0479d28f1a6003a2`](./contracts/ethereum-1/0x84fda63c0769b2478865074a0479d28f1a6003a2/) | TSWrapperTCRouterV4_V1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x34deff97889f3a6a483e3b9255cafcb9a6e03588`](./contracts/ethereum-1/0x34deff97889f3a6a483e3b9255cafcb9a6e03588/) | uTHOR | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8793cd69895c45b2d2474236b3cb28fc5c764775`](./contracts/ethereum-1/0x8793cd69895c45b2d2474236b3cb28fc5c764775/) | yTHOR | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -60,7 +60,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| SPADEToken | token | polygon | n/a | [`0xf5ea62...6eff19`](./contracts/polygon-137/0xf5ea626334037a2cf0155d49ea6462fddc6eff19/) | ✅ Audited |
+| SPADEToken | token | polygon | n/a | [`0xf5ea626334037a2cf0155d49ea6462fddc6eff19`](./contracts/polygon-137/0xf5ea626334037a2cf0155d49ea6462fddc6eff19/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 

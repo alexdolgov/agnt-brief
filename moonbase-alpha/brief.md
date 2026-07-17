@@ -61,7 +61,7 @@ The protocol comprises 3 functional families. Its contracts share 5 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| MoonbaseAlphaV1Router02 | adapter | arbitrum | n/a | [`0x88fcf7...984805`](./contracts/arbitrum-42161/0x88fcf70243b4bcc0325060805b7be9b3da984805/) | ⚠️ Unaudited |
+| MoonbaseAlphaV1Router02 | adapter | arbitrum | n/a | [`0x88fcf70243b4bcc0325060805b7be9b3da984805`](./contracts/arbitrum-42161/0x88fcf70243b4bcc0325060805b7be9b3da984805/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -81,10 +81,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | arbitrum | n/a | `0x0f3d62...91916a` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x4002a0...921926` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x8c2610...65014e` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xbbf4ce...fb2e6b` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x0f3d62c6fe0a71b3e7493ba9f21b0b85df91916a` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x4002a0037917fad03f229d6154e7ed55a0921926` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x8c2610d4b52323d033b262317789766e5b65014e` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xbbf4ce01b3ae012ac2707e48af44bda42bfb2e6b` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -98,7 +98,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | [`0x88fcf7...984805`](./contracts/arbitrum-42161/0x88fcf70243b4bcc0325060805b7be9b3da984805/) | MoonbaseAlphaV1Router02 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x88fcf70243b4bcc0325060805b7be9b3da984805`](./contracts/arbitrum-42161/0x88fcf70243b4bcc0325060805b7be9b3da984805/) | MoonbaseAlphaV1Router02 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

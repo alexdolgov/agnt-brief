@@ -59,14 +59,14 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| StakingRewardsLP | unknown | polygon | n/a | [`0x5dc4ff...d577bc`](./contracts/polygon-137/0x5dc4ffc0f9c2261dcaae7f69e1a8837afbd577bc/) | ✅ Audited |
+| StakingRewardsLP | unknown | polygon | n/a | [`0x5dc4ffc0f9c2261dcaae7f69e1a8837afbd577bc`](./contracts/polygon-137/0x5dc4ffc0f9c2261dcaae7f69e1a8837afbd577bc/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| GoGoToken | token | polygon | n/a | [`0xdd2af2...3313d6`](./contracts/polygon-137/0xdd2af2e723547088d3846841fbdcc6a8093313d6/) | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | polygon | n/a | [`0xe33dd0...9c169d`](./contracts/polygon-137/0xe33dd0c0534189b66b9872425189399e2b9c169d/) | ⚠️ Unaudited |
+| GoGoToken | token | polygon | n/a | [`0xdd2af2e723547088d3846841fbdcc6a8093313d6`](./contracts/polygon-137/0xdd2af2e723547088d3846841fbdcc6a8093313d6/) | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | polygon | n/a | [`0xe33dd0c0534189b66b9872425189399e2b9c169d`](./contracts/polygon-137/0xe33dd0c0534189b66b9872425189399e2b9c169d/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -98,7 +98,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| polygon | [`0xdd2af2...3313d6`](./contracts/polygon-137/0xdd2af2e723547088d3846841fbdcc6a8093313d6/) | GoGoToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xdd2af2e723547088d3846841fbdcc6a8093313d6`](./contracts/polygon-137/0xdd2af2e723547088d3846841fbdcc6a8093313d6/) | GoGoToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

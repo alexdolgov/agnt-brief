@@ -61,13 +61,13 @@ The protocol comprises 7 functional families. Its contracts share 6 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AlgebraCommunityVault | core_logic | sonic | n/a | [`0x5be5f7...5870f7`](./contracts/sonic-146/0x5be5f71bc89a2e5fdbbb2d9aeff1f4a38d5870f7/) | ⚠️ Unaudited |
-| AlgebraEternalFarming | unknown | sonic | n/a | [`0xf5d228...4c0c08`](./contracts/sonic-146/0xf5d228fd454e99384bfaa4e695b70a8cdd4c0c08/) | ⚠️ Unaudited |
-| AlgebraFactory | registry | sonic | n/a | [`0xb86020...4cda76`](./contracts/sonic-146/0xb860200bd68dc39ceafd6ebb82883f189f4cda76/) | ⚠️ Unaudited |
-| FarmingCenter | unknown | sonic | n/a | [`0x967f26...7e51d6`](./contracts/sonic-146/0x967f26d3a2714a55bdd1bd9c6e6ed148527e51d6/) | ⚠️ Unaudited |
-| NonfungiblePositionManager | governance | sonic | n/a | [`0x5084e9...572bb4`](./contracts/sonic-146/0x5084e9fdf9264489a14e77c011073d757e572bb4/) | ⚠️ Unaudited |
-| Quoter | periphery | sonic | n/a | [`0xe11813...a09404`](./contracts/sonic-146/0xe1181313a39d850d3a20f11ff1a6a94a29a09404/) | ⚠️ Unaudited |
-| SwapRouter | adapter | sonic | n/a | 2 deployments: sonic [`0x2e6b9c...0f5438`](./contracts/sonic-146/0x2e6b9c8d4a0972f87f21437a3ac7e4a1810f5438/); sonic `0x488219...5acd6b` | ⚠️ Unaudited |
+| AlgebraCommunityVault | core_logic | sonic | n/a | [`0x5be5f71bc89a2e5fdbbb2d9aeff1f4a38d5870f7`](./contracts/sonic-146/0x5be5f71bc89a2e5fdbbb2d9aeff1f4a38d5870f7/) | ⚠️ Unaudited |
+| AlgebraEternalFarming | unknown | sonic | n/a | [`0xf5d228fd454e99384bfaa4e695b70a8cdd4c0c08`](./contracts/sonic-146/0xf5d228fd454e99384bfaa4e695b70a8cdd4c0c08/) | ⚠️ Unaudited |
+| AlgebraFactory | registry | sonic | n/a | [`0xb860200bd68dc39ceafd6ebb82883f189f4cda76`](./contracts/sonic-146/0xb860200bd68dc39ceafd6ebb82883f189f4cda76/) | ⚠️ Unaudited |
+| FarmingCenter | unknown | sonic | n/a | [`0x967f26d3a2714a55bdd1bd9c6e6ed148527e51d6`](./contracts/sonic-146/0x967f26d3a2714a55bdd1bd9c6e6ed148527e51d6/) | ⚠️ Unaudited |
+| NonfungiblePositionManager | governance | sonic | n/a | [`0x5084e9fdf9264489a14e77c011073d757e572bb4`](./contracts/sonic-146/0x5084e9fdf9264489a14e77c011073d757e572bb4/) | ⚠️ Unaudited |
+| Quoter | periphery | sonic | n/a | [`0xe1181313a39d850d3a20f11ff1a6a94a29a09404`](./contracts/sonic-146/0xe1181313a39d850d3a20f11ff1a6a94a29a09404/) | ⚠️ Unaudited |
+| SwapRouter | adapter | sonic | n/a | 2 deployments: sonic [`0x2e6b9c8d4a0972f87f21437a3ac7e4a1810f5438`](./contracts/sonic-146/0x2e6b9c8d4a0972f87f21437a3ac7e4a1810f5438/); sonic `0x4882198dd2064d1e35b24735e6b9e5e3b45acd6b` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -87,13 +87,13 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | sonic | n/a | `0x085b00...f831ea` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0x0b1019...e9fee0` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0x271b8e...bc8243` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0x62fa59...763e5a` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0x6f161b...af7382` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0xe57c42...c66ddb` | ❓ Unverified |
-| UnnamedContract | unknown | fantom | n/a | 5 deployments: fantom `0x2fbff4...acdc08`; fantom `0x5b2af7...34685e`; fantom `0x5cc61a...78e59b`; fantom `0x9d3591...2c6b9c`; fantom `0xef45d1...4950b0` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x085b00de2b00fc6529e881399ece936e22f831ea` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x0b1019859c10fc7018081f29580724455fe9fee0` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x271b8ea9de9f2a27341524d4ad8a0d3ea1bc8243` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x62fa59126b12736f31e96c35fc86493450763e5a` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x6f161bd48ae6ae015b03b22d24037ebcbdaf7382` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xe57c42af3c5e19ef833f045a00801ad107c66ddb` | ❓ Unverified |
+| UnnamedContract | unknown | fantom | n/a | 5 deployments: fantom `0x2fbff41a9efaeae77538bd63f1ea489494acdc08`; fantom `0x5b2af7fd27e2ea14945c82dd254c79d3ed34685e`; fantom `0x5cc61a78f164885776aa610fb0fe1257df78e59b`; fantom `0x9d3591719038752db0c8beee2040ffcc3b2c6b9c`; fantom `0xef45d134b73241eda7703fa787148d9c9f4950b0` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -111,13 +111,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| sonic | [`0x5be5f7...5870f7`](./contracts/sonic-146/0x5be5f71bc89a2e5fdbbb2d9aeff1f4a38d5870f7/) | AlgebraCommunityVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0xf5d228...4c0c08`](./contracts/sonic-146/0xf5d228fd454e99384bfaa4e695b70a8cdd4c0c08/) | AlgebraEternalFarming | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0xb86020...4cda76`](./contracts/sonic-146/0xb860200bd68dc39ceafd6ebb82883f189f4cda76/) | AlgebraFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0x967f26...7e51d6`](./contracts/sonic-146/0x967f26d3a2714a55bdd1bd9c6e6ed148527e51d6/) | FarmingCenter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0x5084e9...572bb4`](./contracts/sonic-146/0x5084e9fdf9264489a14e77c011073d757e572bb4/) | NonfungiblePositionManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0xe11813...a09404`](./contracts/sonic-146/0xe1181313a39d850d3a20f11ff1a6a94a29a09404/) | Quoter | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0x2e6b9c...0f5438`](./contracts/sonic-146/0x2e6b9c8d4a0972f87f21437a3ac7e4a1810f5438/) | SwapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x5be5f71bc89a2e5fdbbb2d9aeff1f4a38d5870f7`](./contracts/sonic-146/0x5be5f71bc89a2e5fdbbb2d9aeff1f4a38d5870f7/) | AlgebraCommunityVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0xf5d228fd454e99384bfaa4e695b70a8cdd4c0c08`](./contracts/sonic-146/0xf5d228fd454e99384bfaa4e695b70a8cdd4c0c08/) | AlgebraEternalFarming | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0xb860200bd68dc39ceafd6ebb82883f189f4cda76`](./contracts/sonic-146/0xb860200bd68dc39ceafd6ebb82883f189f4cda76/) | AlgebraFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x967f26d3a2714a55bdd1bd9c6e6ed148527e51d6`](./contracts/sonic-146/0x967f26d3a2714a55bdd1bd9c6e6ed148527e51d6/) | FarmingCenter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x5084e9fdf9264489a14e77c011073d757e572bb4`](./contracts/sonic-146/0x5084e9fdf9264489a14e77c011073d757e572bb4/) | NonfungiblePositionManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0xe1181313a39d850d3a20f11ff1a6a94a29a09404`](./contracts/sonic-146/0xe1181313a39d850d3a20f11ff1a6a94a29a09404/) | Quoter | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x2e6b9c8d4a0972f87f21437a3ac7e4a1810f5438`](./contracts/sonic-146/0x2e6b9c8d4a0972f87f21437a3ac7e4a1810f5438/) | SwapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

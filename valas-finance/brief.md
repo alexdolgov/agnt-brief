@@ -59,16 +59,16 @@ The protocol comprises 4 functional families. Its contracts share 4 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ChefIncentivesController | governance | bsc | n/a | [`0xb7c1d9...e7ecbf`](./contracts/bsc-56/0xb7c1d99069a4eb582fc04e7e1124794000e7ecbf/) | ✅ Audited |
-| MultiFeeDistribution | unknown | bsc | n/a | [`0x685d3b...15a3b3`](./contracts/bsc-56/0x685d3b02b9b0f044a3c01dbb95408fc2eb15a3b3/) | ✅ Audited |
-| ValasToken | token | bsc | n/a | [`0xb1ebdd...42ea6f`](./contracts/bsc-56/0xb1ebdd56729940089ecc3ad0bbeeb12b6842ea6f/) | ✅ Audited |
+| ChefIncentivesController | governance | bsc | n/a | [`0xb7c1d99069a4eb582fc04e7e1124794000e7ecbf`](./contracts/bsc-56/0xb7c1d99069a4eb582fc04e7e1124794000e7ecbf/) | ✅ Audited |
+| MultiFeeDistribution | unknown | bsc | n/a | [`0x685d3b02b9b0f044a3c01dbb95408fc2eb15a3b3`](./contracts/bsc-56/0x685d3b02b9b0f044a3c01dbb95408fc2eb15a3b3/) | ✅ Audited |
+| ValasToken | token | bsc | n/a | [`0xb1ebdd56729940089ecc3ad0bbeeb12b6842ea6f`](./contracts/bsc-56/0xb1ebdd56729940089ecc3ad0bbeeb12b6842ea6f/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| IncentiveEarner | unknown | bsc | n/a | 2 deployments: bsc [`0x45db28...c304a7`](./contracts/bsc-56/0x45db28f16c21d441006069a269c0442e4cc304a7/); bsc `0xa6e85e...dd09d2` | ⚠️ Unaudited |
-| WETHGateway | token | bsc | n/a | [`0x3025d9...c28a29`](./contracts/bsc-56/0x3025d9f822d399fd7fb6275b5164bbde6dc28a29/) | ⚠️ Unaudited |
+| IncentiveEarner | unknown | bsc | n/a | 2 deployments: bsc [`0x45db28f16c21d441006069a269c0442e4cc304a7`](./contracts/bsc-56/0x45db28f16c21d441006069a269c0442e4cc304a7/); bsc `0xa6e85ecb91f300c8eb1c92f87a26248133dd09d2` | ⚠️ Unaudited |
+| WETHGateway | token | bsc | n/a | [`0x3025d9f822d399fd7fb6275b5164bbde6dc28a29`](./contracts/bsc-56/0x3025d9f822d399fd7fb6275b5164bbde6dc28a29/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -88,9 +88,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0x1dbb30...42694c` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xec4aaa...18d1df` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xf1670e...9cb067` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x1dbb3063cacdb8cab3cfa93486c5851ed042694c` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xec4aaa80e9c7bd617c0acc6e2ab132d84818d1df` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xf1670e915c513864c483242a199c29938c9cb067` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -104,8 +104,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x45db28...c304a7`](./contracts/bsc-56/0x45db28f16c21d441006069a269c0442e4cc304a7/) | IncentiveEarner | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x3025d9...c28a29`](./contracts/bsc-56/0x3025d9f822d399fd7fb6275b5164bbde6dc28a29/) | WETHGateway | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x45db28f16c21d441006069a269c0442e4cc304a7`](./contracts/bsc-56/0x45db28f16c21d441006069a269c0442e4cc304a7/) | IncentiveEarner | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x3025d9f822d399fd7fb6275b5164bbde6dc28a29`](./contracts/bsc-56/0x3025d9f822d399fd7fb6275b5164bbde6dc28a29/) | WETHGateway | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

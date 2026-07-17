@@ -52,16 +52,16 @@ The pinned logic-topography run contains 25 contract row(s) across bsc. Structur
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x57e561...f73dc9`, chain 56)
-- UnnamedContract (`0xa0d4e2...ecccb0`, chain 56)
-- SableRewarder (`0x23d253...a1bdeb`, chain 56)
-- SableStakingV2 (`0xfbc81a...25b16c`, chain 56)
-- SABLEToken (`0x1ee098...5a878d`, chain 56)
-- USDSToken (`0x0c6ed1...240fa0`, chain 56)
-- VestingWallet (`0x781285...7872b7`, chain 56)
-- VestingWallet (`0xb46e91...73c480`, chain 56)
-- VestingWallet (`0xd85341...70f6dd`, chain 56)
-- VestingWallet (`0xfef652...bb1fcb`, chain 56)
+- UnnamedContract (`0x57e56130b9ca6653f390239fd31f1cdff7f73dc9`, chain 56)
+- UnnamedContract (`0xa0d4e270d9eb4e41f7ab02337c21692d7eecccb0`, chain 56)
+- SableRewarder (`0x23d253f1ab38a1ec8c05103232b4efafb6a1bdeb`, chain 56)
+- SableStakingV2 (`0xfbc81aeb7e5c11d4a60a0690db9f36f93e25b16c`, chain 56)
+- SABLEToken (`0x1ee098cbaf1f846d5df1993f7e2d10afb35a878d`, chain 56)
+- USDSToken (`0x0c6ed1e73ba73b8441868538e210ebd5dd240fa0`, chain 56)
+- VestingWallet (`0x781285cf9c4d767f8ecdd6f48ce26958487872b7`, chain 56)
+- VestingWallet (`0xb46e915cf6c6cfcaab3ac606c56d24ce4273c480`, chain 56)
+- VestingWallet (`0xd853418ca8239bb8352a9b9095cfbe7e0970f6dd`, chain 56)
+- VestingWallet (`0xfef652b9862f8cce28f2bcb4340d9d67e4bb1fcb`, chain 56)
 
 ## Contract Surface Quality
 
@@ -105,40 +105,40 @@ The pinned logic-topography run contains 25 contract row(s) across bsc. Structur
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BorrowerOperations | unknown | project_anchor | own_supporting | 0 | bsc | unit-391913 | `0xa49bec...c0602f` | ✅ Audited |
-| CommunityIssuance | unknown | project_anchor | own_supporting | 0 | bsc | unit-391905 | `0x7fd517...dc9c9e` | ✅ Audited |
-| OracleRateCalculation | unknown | project_anchor | own_supporting | 0 | bsc | unit-391901 | `0x76dcd4...1e6632` | ✅ Audited |
-| PriceFeed | unknown | project_anchor | own_supporting | 0 | bsc | unit-391915 | `0xa5220f...bcdcb3` | ✅ Audited |
-| SableRewarder | unknown | project_anchor | own_supporting | 0 | bsc | unit-391887 | `0x23d253...a1bdeb` | ✅ Audited |
-| SableStakingV2 | unknown | project_anchor | own_supporting | 0 | bsc | unit-391929 | `0xfbc81a...25b16c` | ✅ Audited |
-| StabilityPool | unknown | project_anchor | own_supporting | 0 | bsc | unit-391893 | `0x598913...073f18` | ✅ Audited |
-| SystemState | unknown | project_anchor | own_supporting | 0 | bsc | unit-391899 | `0x698ad7...5ec0ad` | ✅ Audited |
-| TimeLock | unknown | project_anchor | own_supporting | 0 | bsc | unit-391895 | `0x638675...9a258a` | ✅ Audited |
-| TroveHelper | unknown | project_anchor | own_supporting | 0 | bsc | unit-391922 | `0xd1bf4d...3d80f8` | ✅ Audited |
-| TroveManager | unknown | project_anchor | own_supporting | 0 | bsc | unit-391927 | `0xec0350...483b85` | ✅ Audited |
+| BorrowerOperations | unknown | project_anchor | own_supporting | 0 | bsc | unit-391913 | `0xa49bec2146fbeea7314cdbe0fd222419b0c0602f` | ✅ Audited |
+| CommunityIssuance | unknown | project_anchor | own_supporting | 0 | bsc | unit-391905 | `0x7fd517b06b898f1a6081e0891265516f83dc9c9e` | ✅ Audited |
+| OracleRateCalculation | unknown | project_anchor | own_supporting | 0 | bsc | unit-391901 | `0x76dcd40843c1de96839bf83790257a36011e6632` | ✅ Audited |
+| PriceFeed | unknown | project_anchor | own_supporting | 0 | bsc | unit-391915 | `0xa5220fd82c098b7f1c711e2f1c1d599ccfbcdcb3` | ✅ Audited |
+| SableRewarder | unknown | project_anchor | own_supporting | 0 | bsc | unit-391887 | `0x23d253f1ab38a1ec8c05103232b4efafb6a1bdeb` | ✅ Audited |
+| SableStakingV2 | unknown | project_anchor | own_supporting | 0 | bsc | unit-391929 | `0xfbc81aeb7e5c11d4a60a0690db9f36f93e25b16c` | ✅ Audited |
+| StabilityPool | unknown | project_anchor | own_supporting | 0 | bsc | unit-391893 | `0x598913568093ab9f3d549236eb98388271073f18` | ✅ Audited |
+| SystemState | unknown | project_anchor | own_supporting | 0 | bsc | unit-391899 | `0x698ad77e62679c8e6acfafea03547c38fc5ec0ad` | ✅ Audited |
+| TimeLock | unknown | project_anchor | own_supporting | 0 | bsc | unit-391895 | `0x638675b7c2e056917567571307c6f6a7d69a258a` | ✅ Audited |
+| TroveHelper | unknown | project_anchor | own_supporting | 0 | bsc | unit-391922 | `0xd1bf4d208028cbfe65c6b4d68c12e68f5f3d80f8` | ✅ Audited |
+| TroveManager | unknown | project_anchor | own_supporting | 0 | bsc | unit-391927 | `0xec035081376ce975ba9eaf28dfec7c7a4c483b85` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (18)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ActivePool | unknown | project_anchor | own_supporting | 0 | bsc | unit-391883 | `0x0ccb12...edd72c` | ⚠️ Unaudited |
-| CollSurplusPool | unknown | project_anchor | own_supporting | 0 | bsc | unit-391920 | `0xbe4006...d93cd0` | ⚠️ Unaudited |
-| DefaultPool | unknown | project_anchor | own_supporting | 0 | bsc | unit-391897 | `0x654ed8...121088` | ⚠️ Unaudited |
-| GasPool | unknown | project_anchor | own_supporting | 0 | bsc | unit-391925 | `0xe9bc9a...088d01` | ⚠️ Unaudited |
-| HintHelpers | unknown | project_anchor | own_supporting | 0 | bsc | unit-391879 | `0x08e260...5405e8` | ⚠️ Unaudited |
-| LPPoolTVLChecker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc8ffef...dc77af` | ⚠️ Unaudited |
-| MultiTroveGetter | unknown | project_anchor | own_supporting | 0 | bsc | unit-391910 | `0x97c984...2804e9` | ⚠️ Unaudited |
-| RewardsChecker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xf75180...0b58f4` | ⚠️ Unaudited |
-| SableRedemption | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x41fa54...6a0483` | ⚠️ Unaudited |
-| SABLEToken | token | project_anchor | own_supporting | 0 | bsc | unit-391885 | `0x1ee098...5a878d` | ⚠️ Unaudited |
-| SortedTroves | unknown | project_anchor | own_supporting | 0 | bsc | unit-391907 | `0x97c131...9dc87c` | ⚠️ Unaudited |
-| StakedLPTVLChecker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xb45fc0...f63331` | ⚠️ Unaudited |
-| USDSToken | token | project_anchor | own_supporting | 0 | bsc | unit-391881 | `0x0c6ed1...240fa0` | ⚠️ Unaudited |
-| VestingWallet | unknown | project_anchor | own_supporting | 0 | bsc | unit-391889 | `0x38c948...bd2ed0` | ⚠️ Unaudited |
-| VestingWallet | unknown | project_anchor | own_supporting | 0 | bsc | unit-391903 | `0x781285...7872b7` | ⚠️ Unaudited |
-| VestingWallet | unknown | project_anchor | own_supporting | 0 | bsc | unit-391917 | `0xb46e91...73c480` | ⚠️ Unaudited |
-| VestingWallet | unknown | project_anchor | own_supporting | 0 | bsc | unit-391923 | `0xd85341...70f6dd` | ⚠️ Unaudited |
-| VestingWallet | unknown | project_anchor | own_supporting | 0 | bsc | unit-391931 | `0xfef652...bb1fcb` | ⚠️ Unaudited |
+| ActivePool | unknown | project_anchor | own_supporting | 0 | bsc | unit-391883 | `0x0ccb12c9fb1e1252e60d29ac5c4fdc0640edd72c` | ⚠️ Unaudited |
+| CollSurplusPool | unknown | project_anchor | own_supporting | 0 | bsc | unit-391920 | `0xbe40060aef1a2acb4425823c82978f976fd93cd0` | ⚠️ Unaudited |
+| DefaultPool | unknown | project_anchor | own_supporting | 0 | bsc | unit-391897 | `0x654ed83ab231550001fc1d2281b78fcd84121088` | ⚠️ Unaudited |
+| GasPool | unknown | project_anchor | own_supporting | 0 | bsc | unit-391925 | `0xe9bc9adbdf67343b5a66d73cf2e521bb3f088d01` | ⚠️ Unaudited |
+| HintHelpers | unknown | project_anchor | own_supporting | 0 | bsc | unit-391879 | `0x08e260d3e5ea4fb09ffa264dd4129593fd5405e8` | ⚠️ Unaudited |
+| LPPoolTVLChecker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc8ffef524f7154eb13b9f9993e9826cf92dc77af` | ⚠️ Unaudited |
+| MultiTroveGetter | unknown | project_anchor | own_supporting | 0 | bsc | unit-391910 | `0x97c984497b81fa38baaf684e7afd2685052804e9` | ⚠️ Unaudited |
+| RewardsChecker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xf7518065729c5a7e5a5b3ce11939f7fdd50b58f4` | ⚠️ Unaudited |
+| SableRedemption | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x41fa545df5caee0c9618f487e0cb6d6fb16a0483` | ⚠️ Unaudited |
+| SABLEToken | token | project_anchor | own_supporting | 0 | bsc | unit-391885 | `0x1ee098cbaf1f846d5df1993f7e2d10afb35a878d` | ⚠️ Unaudited |
+| SortedTroves | unknown | project_anchor | own_supporting | 0 | bsc | unit-391907 | `0x97c131c309a04bfa1aae82856d64b696b89dc87c` | ⚠️ Unaudited |
+| StakedLPTVLChecker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xb45fc002ccf1bed4add10e0e95d40d7d7af63331` | ⚠️ Unaudited |
+| USDSToken | token | project_anchor | own_supporting | 0 | bsc | unit-391881 | `0x0c6ed1e73ba73b8441868538e210ebd5dd240fa0` | ⚠️ Unaudited |
+| VestingWallet | unknown | project_anchor | own_supporting | 0 | bsc | unit-391889 | `0x38c948f27c3f50a1c3b3857b28a6dd1e6cbd2ed0` | ⚠️ Unaudited |
+| VestingWallet | unknown | project_anchor | own_supporting | 0 | bsc | unit-391903 | `0x781285cf9c4d767f8ecdd6f48ce26958487872b7` | ⚠️ Unaudited |
+| VestingWallet | unknown | project_anchor | own_supporting | 0 | bsc | unit-391917 | `0xb46e915cf6c6cfcaab3ac606c56d24ce4273c480` | ⚠️ Unaudited |
+| VestingWallet | unknown | project_anchor | own_supporting | 0 | bsc | unit-391923 | `0xd853418ca8239bb8352a9b9095cfbe7e0970f6dd` | ⚠️ Unaudited |
+| VestingWallet | unknown | project_anchor | own_supporting | 0 | bsc | unit-391931 | `0xfef652b9862f8cce28f2bcb4340d9d67e4bb1fcb` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -158,10 +158,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x43a146...6d652a` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x466333...10696f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391891 | `0x57e561...f73dc9` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391912 | `0xa0d4e2...ecccb0` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x43a1460610643e28e1e1a0a246647277596d652a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x4663338379942e3a868bc4776e0d694ede10696f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391891 | `0x57e56130b9ca6653f390239fd31f1cdff7f73dc9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391912 | `0xa0d4e270d9eb4e41f7ab02337c21692d7eecccb0` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -181,17 +181,17 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| Mainnet_SlowMist Audit Report - Sable Finance.pdf | BorrowerOperations | own contract | BorrowerOperations (selected) `0xa49bec...c0602f` — deployed 2023-07-04 09:53:58+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Mainnet_SlowMist Audit Report - Sable Finance.pdf | CommunityIssuance | own contract | CommunityIssuance (selected) `0x7fd517...dc9c9e` — deployed 2023-07-04 09:54:34+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Mainnet_SlowMist Audit Report - Sable Finance.pdf | OracleRateCalculation | own contract | OracleRateCalculation (selected) `0x76dcd4...1e6632` — deployed 2023-07-04 09:56:13+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Mainnet_SlowMist Audit Report - Sable Finance.pdf | PriceFeed | own contract | PriceFeed (selected) `0xa5220f...bcdcb3` — deployed 2023-07-04 09:55:28+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Mainnet_SlowMist Audit Report - Sable Finance.pdf | SableRewarder | own contract | SableRewarder (selected) `0x23d253...a1bdeb` — deployed 2023-07-04 09:55:07+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Mainnet_SlowMist Audit Report - Sable Finance.pdf | SableStakingV2 | own contract | SableStakingV2 (selected) `0xfbc81a...25b16c` — deployed 2023-07-04 09:55:19+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Mainnet_SlowMist Audit Report - Sable Finance.pdf | StabilityPool | own contract | StabilityPool (selected) `0x598913...073f18` — deployed 2023-07-04 09:55:49+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Mainnet_SlowMist Audit Report - Sable Finance.pdf | SystemState | own contract | SystemState (selected) `0x698ad7...5ec0ad` — deployed 2023-07-04 09:56:01+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Mainnet_SlowMist Audit Report - Sable Finance.pdf | TimeLock | own contract | TimeLock (selected) `0x638675...9a258a` — deployed 2023-07-04 09:53:49+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Mainnet_SlowMist Audit Report - Sable Finance.pdf | TroveHelper | own contract | TroveHelper (selected) `0xd1bf4d...3d80f8` — deployed 2023-07-04 09:56:19+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Mainnet_SlowMist Audit Report - Sable Finance.pdf | TroveManager | own contract | TroveManager (selected) `0xec0350...483b85` — deployed 2023-07-04 09:54:13+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Mainnet_SlowMist Audit Report - Sable Finance.pdf | BorrowerOperations | own contract | BorrowerOperations (selected) `0xa49bec2146fbeea7314cdbe0fd222419b0c0602f` — deployed 2023-07-04 09:53:58+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Mainnet_SlowMist Audit Report - Sable Finance.pdf | CommunityIssuance | own contract | CommunityIssuance (selected) `0x7fd517b06b898f1a6081e0891265516f83dc9c9e` — deployed 2023-07-04 09:54:34+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Mainnet_SlowMist Audit Report - Sable Finance.pdf | OracleRateCalculation | own contract | OracleRateCalculation (selected) `0x76dcd40843c1de96839bf83790257a36011e6632` — deployed 2023-07-04 09:56:13+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Mainnet_SlowMist Audit Report - Sable Finance.pdf | PriceFeed | own contract | PriceFeed (selected) `0xa5220fd82c098b7f1c711e2f1c1d599ccfbcdcb3` — deployed 2023-07-04 09:55:28+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Mainnet_SlowMist Audit Report - Sable Finance.pdf | SableRewarder | own contract | SableRewarder (selected) `0x23d253f1ab38a1ec8c05103232b4efafb6a1bdeb` — deployed 2023-07-04 09:55:07+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Mainnet_SlowMist Audit Report - Sable Finance.pdf | SableStakingV2 | own contract | SableStakingV2 (selected) `0xfbc81aeb7e5c11d4a60a0690db9f36f93e25b16c` — deployed 2023-07-04 09:55:19+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Mainnet_SlowMist Audit Report - Sable Finance.pdf | StabilityPool | own contract | StabilityPool (selected) `0x598913568093ab9f3d549236eb98388271073f18` — deployed 2023-07-04 09:55:49+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Mainnet_SlowMist Audit Report - Sable Finance.pdf | SystemState | own contract | SystemState (selected) `0x698ad77e62679c8e6acfafea03547c38fc5ec0ad` — deployed 2023-07-04 09:56:01+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Mainnet_SlowMist Audit Report - Sable Finance.pdf | TimeLock | own contract | TimeLock (selected) `0x638675b7c2e056917567571307c6f6a7d69a258a` — deployed 2023-07-04 09:53:49+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Mainnet_SlowMist Audit Report - Sable Finance.pdf | TroveHelper | own contract | TroveHelper (selected) `0xd1bf4d208028cbfe65c6b4d68c12e68f5f3d80f8` — deployed 2023-07-04 09:56:19+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Mainnet_SlowMist Audit Report - Sable Finance.pdf | TroveManager | own contract | TroveManager (selected) `0xec035081376ce975ba9eaf28dfec7c7a4c483b85` — deployed 2023-07-04 09:54:13+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 
 ## Coverage Gaps
 
@@ -199,20 +199,20 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | `0x0ccb12...edd72c` | ActivePool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0xbe4006...d93cd0` | CollSurplusPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x654ed8...121088` | DefaultPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0xe9bc9a...088d01` | GasPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x08e260...5405e8` | HintHelpers | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x97c984...2804e9` | MultiTroveGetter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x1ee098...5a878d` | SABLEToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x97c131...9dc87c` | SortedTroves | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x0c6ed1...240fa0` | USDSToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x38c948...bd2ed0` | VestingWallet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x781285...7872b7` | VestingWallet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0xb46e91...73c480` | VestingWallet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0xd85341...70f6dd` | VestingWallet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0xfef652...bb1fcb` | VestingWallet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x0ccb12c9fb1e1252e60d29ac5c4fdc0640edd72c` | ActivePool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xbe40060aef1a2acb4425823c82978f976fd93cd0` | CollSurplusPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x654ed83ab231550001fc1d2281b78fcd84121088` | DefaultPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xe9bc9adbdf67343b5a66d73cf2e521bb3f088d01` | GasPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x08e260d3e5ea4fb09ffa264dd4129593fd5405e8` | HintHelpers | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x97c984497b81fa38baaf684e7afd2685052804e9` | MultiTroveGetter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x1ee098cbaf1f846d5df1993f7e2d10afb35a878d` | SABLEToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x97c131c309a04bfa1aae82856d64b696b89dc87c` | SortedTroves | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x0c6ed1e73ba73b8441868538e210ebd5dd240fa0` | USDSToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x38c948f27c3f50a1c3b3857b28a6dd1e6cbd2ed0` | VestingWallet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x781285cf9c4d767f8ecdd6f48ce26958487872b7` | VestingWallet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xb46e915cf6c6cfcaab3ac606c56d24ce4273c480` | VestingWallet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xd853418ca8239bb8352a9b9095cfbe7e0970f6dd` | VestingWallet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xfef652b9862f8cce28f2bcb4340d9d67e4bb1fcb` | VestingWallet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

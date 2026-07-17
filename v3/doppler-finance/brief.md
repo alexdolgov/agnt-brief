@@ -57,7 +57,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xfd5366...906717`, chain 1)
+- UnnamedContract (`0xfd5366c739d08018286dd0c6c0f547ec72906717`, chain 1)
 
 ## Contract Surface Quality
 
@@ -103,9 +103,9 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| MultiSign | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1073d5...6ede78` | ⚠️ Unaudited |
-| StablecoinProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x8292bb...6317ed` | ⚠️ Unaudited |
-| StablecoinUpgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcfd748...f7f2ec` | ⚠️ Unaudited |
+| MultiSign | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1073d55dfb892ed86151015402db8b1cdb6ede78` | ⚠️ Unaudited |
+| StablecoinProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x8292bb45bf1ee4d140127049757c2e0ff06317ed` | ⚠️ Unaudited |
+| StablecoinUpgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcfd748b9de538c9f5b1805e8db9e1d4671f7f2ec` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -125,7 +125,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-384061 | `0xfd5366...906717` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-384061 | `0xfd5366c739d08018286dd0c6c0f547ec72906717` | ❓ Unverified |
 
 ## Audit Inventory
 

@@ -51,76 +51,76 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x0b4ed3...3e505e`, chain 957)
-- UnnamedContract (`0x12ab02...7262af`, chain 957)
-- UnnamedContract (`0x210465...dc62e8`, chain 957)
-- UnnamedContract (`0x36b5c1...8a890e`, chain 957)
-- UnnamedContract (`0x513dc0...db5739`, chain 957)
-- UnnamedContract (`0x5bbef9...6b2794`, chain 957)
-- UnnamedContract (`0x5fc48a...003971`, chain 957)
-- UnnamedContract (`0x7b35b4...6a68a2`, chain 957)
-- UnnamedContract (`0xb82d12...2216eb`, chain 957)
-- UnnamedContract (`0xbcab1f...e92dd4`, chain 957)
-- UnnamedContract (`0xc41995...79d8c8`, chain 957)
-- UnnamedContract (`0xc47e2e...715db7`, chain 957)
-- UnnamedContract (`0xd35bb8...63ecbf`, chain 957)
-- UnnamedContract (`0xe48cdb...516d1a`, chain 957)
-- UnnamedContract (`0xec6892...79f521`, chain 957)
-- UnnamedContract (`0x85afa7...a74e21`, chain 8453)
-- UnnamedContract (`0x98f1ae...7159bc`, chain 8453)
-- UnnamedContract (`0xa0b0b5...99fc55`, chain 8453)
-- UnnamedContract (`0xa2be75...84d568`, chain 8453)
-- UnnamedContract (`0xc7ee36...c583b5`, chain 8453)
-- UnnamedContract (`0xd46417...4bf125`, chain 8453)
-- UnnamedContract (`0xde45e2...822641`, chain 8453)
-- UnnamedContract (`0x50d46c...61c853`, chain 34443)
-- UnnamedContract (`0x727ad6...9bf6d5`, chain 34443)
-- UnnamedContract (`0x96e47f...caea73`, chain 34443)
-- UnnamedContract (`0xc7ee36...c583b5`, chain 34443)
-- ClonableBeaconProxy (`0x357510...cf4dbe`, chain 42161)
-- RSETH_OFT (`0x4186bf...56b41f`, chain 42161)
-- StakedUSDeOFT (`0x211cc4...5fe5d2`, chain 10)
-- StakedUSDeOFT (`0x211cc4...5fe5d2`, chain 8453)
-- StakedUSDeOFT (`0x211cc4...5fe5d2`, chain 34443)
-- StakedUSDeOFT (`0x211cc4...5fe5d2`, chain 42161)
-- StakedUSDeOFT (`0x211cc4...5fe5d2`, chain 81457)
-- StakedUSDeV2 (`0x9d39a5...7a3497`, chain 1)
-- SuperToken (`0x1d080c...dfc2ad`, chain 1)
-- SuperToken (`0x32390a...d4b4c2`, chain 1)
-- SuperToken (`0x367711...d3d50b`, chain 1)
-- SuperToken (`0x5a2776...d3f341`, chain 1)
-- SuperToken (`0x91e348...fd2bfa`, chain 1)
-- SuperToken (`0xc7ee36...c583b5`, chain 1)
-- SuperToken (`0xcae44c...0a907b`, chain 1)
-- SuperToken (`0xdfd366...7ff991`, chain 1)
-- SuperToken (`0xe9a12f...32b3d7`, chain 1)
-- SuperToken (`0xf90b95...58362b`, chain 1)
-- SuperToken (`0xb054a6...1f010c`, chain 10)
-- SuperToken (`0xcfe8bc...e7cdee`, chain 10)
-- SuperToken (`0xbd2823...79ae23`, chain 34443)
-- SuperToken (`0x1cbbc1...0bef20`, chain 42161)
-- SuperToken (`0x254691...083820`, chain 42161)
-- SuperToken (`0x81494d...7f232b`, chain 42161)
-- SuperToken (`0x8f5d8a...f7591b`, chain 42161)
-- SuperToken (`0xb7f56c...947dbd`, chain 42161)
-- SuperToken (`0xc7ee36...c583b5`, chain 42161)
-- SuperToken (`0x0bdceb...962868`, chain 81457)
-- SuperToken (`0x50d46c...61c853`, chain 81457)
-- SuperToken (`0x791a57...e2f948`, chain 81457)
-- SuperToken (`0xbe9dbd...84a6ff`, chain 81457)
-- SuperToken (`0xc7ee36...c583b5`, chain 81457)
-- TransparentUpgradeableProxy (`0x8236a8...634494`, chain 1)
-- TransparentUpgradeableProxy (`0xa1290d...99e5a7`, chain 1)
-- TransparentUpgradeableProxy (`0xfae103...afa6c0`, chain 1)
-- TransparentUpgradeableProxy (`0x87eee9...9d61b1`, chain 10)
-- TransparentUpgradeableProxy (`0x04c059...6c150a`, chain 8453)
-- TransparentUpgradeableProxy (`0xecac9c...5c11c1`, chain 8453)
-- TransparentUpgradeableProxy (`0xedfa23...76bea0`, chain 8453)
-- TransparentUpgradeableProxy (`0x04c059...6c150a`, chain 34443)
-- TransparentUpgradeableProxy (`0xe7903b...2cb3cd`, chain 34443)
-- TransparentUpgradeableProxy (`0x04c059...6c150a`, chain 81457)
-- TransparentUpgradeableProxy (`0xe7903b...2cb3cd`, chain 81457)
-- UUPSProxy (`0xcd5fe2...59b7ee`, chain 1)
+- UnnamedContract (`0x0b4ed379da8ef4fcf06f697c5782ca7b4c3e505e`, chain 957)
+- UnnamedContract (`0x12ab0242b3e8d4502febced6c2d52fd23f7262af`, chain 957)
+- UnnamedContract (`0x2104654d6da663961a86ac3cf1751981c5dc62e8`, chain 957)
+- UnnamedContract (`0x36b5c126a3d7b25f6032653a0d18823ee48a890e`, chain 957)
+- UnnamedContract (`0x513dc0e3407ca3a6e073a2f2d43fd61498db5739`, chain 957)
+- UnnamedContract (`0x5bbef94dcee8f087d5146d2815bc4955c76b2794`, chain 957)
+- UnnamedContract (`0x5fc48a32437ff4bbab2a22646c3c9344ba003971`, chain 957)
+- UnnamedContract (`0x7b35b4c05a90ea5f311aec815be4148b446a68a2`, chain 957)
+- UnnamedContract (`0xb82d12742c3728a14eaa43ebe1c0d32bb62216eb`, chain 957)
+- UnnamedContract (`0xbcab1f8bba323bc55ea8cfac34edacf8dbe92dd4`, chain 957)
+- UnnamedContract (`0xc419959850d49166c2d5250ee89ff9910679d8c8`, chain 957)
+- UnnamedContract (`0xc47e2e800a9184cfbd274ac1eecccdf942715db7`, chain 957)
+- UnnamedContract (`0xd35bb8582809b4bda4f8bcce1bde48559f63ecbf`, chain 957)
+- UnnamedContract (`0xe48cdbe3a233ea577c9ee6959801e7730e516d1a`, chain 957)
+- UnnamedContract (`0xec68928bd83b2e52ff5a8e8c215b6ea72879f521`, chain 957)
+- UnnamedContract (`0x85afa764a366d70d241513e3cbdadd97a9a74e21`, chain 8453)
+- UnnamedContract (`0x98f1aed814443d6ddd0a724b0f40098f517159bc`, chain 8453)
+- UnnamedContract (`0xa0b0b5ff5a45d054e2517cb1903c1713e199fc55`, chain 8453)
+- UnnamedContract (`0xa2be759b86cea53372c3e9a882047cdc3884d568`, chain 8453)
+- UnnamedContract (`0xc7ee36e027272f11135792fade64d9365cc583b5`, chain 8453)
+- UnnamedContract (`0xd464170afe0ee2a4865b2ca6dbcc6dfb8f4bf125`, chain 8453)
+- UnnamedContract (`0xde45e2bccb99e0ed1a2876cfc51a71ca5e822641`, chain 8453)
+- UnnamedContract (`0x50d46c3bb529276ade59a6678c14302d6b61c853`, chain 34443)
+- UnnamedContract (`0x727ad65db6ae99db5dbee8f202846dd6009bf6d5`, chain 34443)
+- UnnamedContract (`0x96e47fc9c701e8eef22fa53e62dc3ebbdccaea73`, chain 34443)
+- UnnamedContract (`0xc7ee36e027272f11135792fade64d9365cc583b5`, chain 34443)
+- ClonableBeaconProxy (`0x35751007a407ca6feffe80b3cb397736d2cf4dbe`, chain 42161)
+- RSETH_OFT (`0x4186bfc76e2e237523cbc30fd220fe055156b41f`, chain 42161)
+- StakedUSDeOFT (`0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2`, chain 10)
+- StakedUSDeOFT (`0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2`, chain 8453)
+- StakedUSDeOFT (`0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2`, chain 34443)
+- StakedUSDeOFT (`0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2`, chain 42161)
+- StakedUSDeOFT (`0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2`, chain 81457)
+- StakedUSDeV2 (`0x9d39a5de30e57443bff2a8307a4256c8797a3497`, chain 1)
+- SuperToken (`0x1d080c689b930f9dea69cb3b4bc6b8c213dfc2ad`, chain 1)
+- SuperToken (`0x32390ad170c9604fa97a894c353a4511c0d4b4c2`, chain 1)
+- SuperToken (`0x367711f0377867b51fe53e30f5125a9a31d3d50b`, chain 1)
+- SuperToken (`0x5a27765dbe2476240b1265a305c2e3554fd3f341`, chain 1)
+- SuperToken (`0x91e3489da66ed36ebe0be1013d87449447fd2bfa`, chain 1)
+- SuperToken (`0xc7ee36e027272f11135792fade64d9365cc583b5`, chain 1)
+- SuperToken (`0xcae44c93f7b3b519fc28f9d4f7ae22de770a907b`, chain 1)
+- SuperToken (`0xdfd366d941a51e1f53fbddb19fb4ee3af17ff991`, chain 1)
+- SuperToken (`0xe9a12fb15cc00b59867e4e2f0acbdcebfd32b3d7`, chain 1)
+- SuperToken (`0xf90b959ae8dfba2dd793ad05176209835658362b`, chain 1)
+- SuperToken (`0xb054a628027b974cd1289eb0f73f47bd0a1f010c`, chain 10)
+- SuperToken (`0xcfe8bc6297e693cbb58ad93a361e64a6d0e7cdee`, chain 10)
+- SuperToken (`0xbd282333710b9c7e33e8a37d027885a7c079ae23`, chain 34443)
+- SuperToken (`0x1cbbc18cb128aa470733ed29938ab4878b0bef20`, chain 42161)
+- SuperToken (`0x254691c06da387c1050c726cf498efda89083820`, chain 42161)
+- SuperToken (`0x81494d722ddcedba31ac40f28dafa66b207f232b`, chain 42161)
+- SuperToken (`0x8f5d8a65d98925e10ba83b5c1c5c3be100f7591b`, chain 42161)
+- SuperToken (`0xb7f56c1a952d3ae664a83971bffa5c1706947dbd`, chain 42161)
+- SuperToken (`0xc7ee36e027272f11135792fade64d9365cc583b5`, chain 42161)
+- SuperToken (`0x0bdceb979d84c49bdf53aeac9377d52cf1962868`, chain 81457)
+- SuperToken (`0x50d46c3bb529276ade59a6678c14302d6b61c853`, chain 81457)
+- SuperToken (`0x791a570f5785fbdb02ea5c7a794c43111ae2f948`, chain 81457)
+- SuperToken (`0xbe9dbda519e15a1c0d238cea0b3dad47a484a6ff`, chain 81457)
+- SuperToken (`0xc7ee36e027272f11135792fade64d9365cc583b5`, chain 81457)
+- TransparentUpgradeableProxy (`0x8236a87084f8b84306f72007f36f2618a5634494`, chain 1)
+- TransparentUpgradeableProxy (`0xa1290d69c65a6fe4df752f95823fae25cb99e5a7`, chain 1)
+- TransparentUpgradeableProxy (`0xfae103dc9cf190ed75350761e95403b7b8afa6c0`, chain 1)
+- TransparentUpgradeableProxy (`0x87eee96d50fb761ad85b1c982d28a042169d61b1`, chain 10)
+- TransparentUpgradeableProxy (`0x04c0599ae5a44757c0af6f9ec3b93da8976c150a`, chain 8453)
+- TransparentUpgradeableProxy (`0xecac9c5f704e954931349da37f60e39f515c11c1`, chain 8453)
+- TransparentUpgradeableProxy (`0xedfa23602d0ec14714057867a78d01e94176bea0`, chain 8453)
+- TransparentUpgradeableProxy (`0x04c0599ae5a44757c0af6f9ec3b93da8976c150a`, chain 34443)
+- TransparentUpgradeableProxy (`0xe7903b1f75c534dd8159b313d92cdcfbc62cb3cd`, chain 34443)
+- TransparentUpgradeableProxy (`0x04c0599ae5a44757c0af6f9ec3b93da8976c150a`, chain 81457)
+- TransparentUpgradeableProxy (`0xe7903b1f75c534dd8159b313d92cdcfbc62cb3cd`, chain 81457)
+- UUPSProxy (`0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee`, chain 1)
 
 ## Contract Surface Quality
 
@@ -166,50 +166,50 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| EtherfiOFTUpgradeable | unknown | project_anchor | own_supporting | 1 | base | unit-388850 | `0x04c059...6c150a` | ⚠️ Unaudited |
-| EtherfiOFTUpgradeable | unknown | project_anchor | own_supporting | 1 | blast | unit-388847 | `0x04c059...6c150a` | ⚠️ Unaudited |
-| LBTC | unknown | project_anchor | own_supporting | 1 | base | unit-388849 | `0xecac9c...5c11c1` | ⚠️ Unaudited |
-| RSETH | unknown | project_anchor | own_supporting | 1 | ethereum | unit-388843 | `0xa1290d...99e5a7` | ⚠️ Unaudited |
-| RSETH_OFT | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388806 | `0x4186bf...56b41f` | ⚠️ Unaudited |
-| RsETHTokenWrapper | unknown | project_anchor | own_supporting | 1 | optimism | unit-388844 | `0x87eee9...9d61b1` | ⚠️ Unaudited |
-| RsETHTokenWrapper | unknown | project_anchor | own_supporting | 1 | base | unit-388848 | `0xedfa23...76bea0` | ⚠️ Unaudited |
-| RsETHTokenWrapper | unknown | project_anchor | own_supporting | 1 | blast | unit-388846 | `0xe7903b...2cb3cd` | ⚠️ Unaudited |
-| RswETH | unknown | project_anchor | own_supporting | 1 | ethereum | unit-388842 | `0xfae103...afa6c0` | ⚠️ Unaudited |
-| StakedLBTC | unknown | project_anchor | own_supporting | 1 | ethereum | unit-388840 | `0x8236a8...634494` | ⚠️ Unaudited |
-| StakedUSDeOFT | unknown | project_anchor | own_supporting | 0 | optimism | unit-388792 | `0x211cc4...5fe5d2` | ⚠️ Unaudited |
-| StakedUSDeOFT | unknown | project_anchor | own_supporting | 0 | base | unit-388817 | `0x211cc4...5fe5d2` | ⚠️ Unaudited |
-| StakedUSDeOFT | unknown | project_anchor | own_supporting | 0 | mode | unit-388796 | `0x211cc4...5fe5d2` | ⚠️ Unaudited |
-| StakedUSDeOFT | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388804 | `0x211cc4...5fe5d2` | ⚠️ Unaudited |
-| StakedUSDeOFT | unknown | project_anchor | own_supporting | 0 | blast | unit-388812 | `0x211cc4...5fe5d2` | ⚠️ Unaudited |
-| StakedUSDeV2 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388786 | `0x9d39a5...7a3497` | ⚠️ Unaudited |
-| StandardArbERC20 | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-388845 | `0x357510...cf4dbe` | ⚠️ Unaudited |
-| SuperToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388781 | `0x1d080c...dfc2ad` | ⚠️ Unaudited |
-| SuperToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388782 | `0x32390a...d4b4c2` | ⚠️ Unaudited |
-| SuperToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388783 | `0x367711...d3d50b` | ⚠️ Unaudited |
-| SuperToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388784 | `0x5a2776...d3f341` | ⚠️ Unaudited |
-| SuperToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388785 | `0x91e348...fd2bfa` | ⚠️ Unaudited |
-| SuperToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388787 | `0xc7ee36...c583b5` | ⚠️ Unaudited |
-| SuperToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388788 | `0xcae44c...0a907b` | ⚠️ Unaudited |
-| SuperToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388789 | `0xdfd366...7ff991` | ⚠️ Unaudited |
-| SuperToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388790 | `0xe9a12f...32b3d7` | ⚠️ Unaudited |
-| SuperToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388791 | `0xf90b95...58362b` | ⚠️ Unaudited |
-| SuperToken | unknown | project_anchor | own_supporting | 0 | optimism | unit-388793 | `0xb054a6...1f010c` | ⚠️ Unaudited |
-| SuperToken | unknown | project_anchor | own_supporting | 0 | optimism | unit-388794 | `0xcfe8bc...e7cdee` | ⚠️ Unaudited |
-| SuperToken | unknown | project_anchor | own_supporting | 0 | mode | unit-388800 | `0xbd2823...79ae23` | ⚠️ Unaudited |
-| SuperToken | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388803 | `0x1cbbc1...0bef20` | ⚠️ Unaudited |
-| SuperToken | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388805 | `0x254691...083820` | ⚠️ Unaudited |
-| SuperToken | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388807 | `0x81494d...7f232b` | ⚠️ Unaudited |
-| SuperToken | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388808 | `0x8f5d8a...f7591b` | ⚠️ Unaudited |
-| SuperToken | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388809 | `0xb7f56c...947dbd` | ⚠️ Unaudited |
-| SuperToken | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388810 | `0xc7ee36...c583b5` | ⚠️ Unaudited |
-| SuperToken | unknown | project_anchor | own_supporting | 0 | blast | unit-388811 | `0x0bdceb...962868` | ⚠️ Unaudited |
-| SuperToken | unknown | project_anchor | own_supporting | 0 | blast | unit-388813 | `0x50d46c...61c853` | ⚠️ Unaudited |
-| SuperToken | unknown | project_anchor | own_supporting | 0 | blast | unit-388814 | `0x791a57...e2f948` | ⚠️ Unaudited |
-| SuperToken | unknown | project_anchor | own_supporting | 0 | blast | unit-388815 | `0xbe9dbd...84a6ff` | ⚠️ Unaudited |
-| SuperToken | unknown | project_anchor | own_supporting | 0 | blast | unit-388816 | `0xc7ee36...c583b5` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 0 | mode | unit-388795 | `0x04c059...6c150a` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 0 | mode | unit-388802 | `0xe7903b...2cb3cd` | ⚠️ Unaudited |
-| WeETH | unknown | project_anchor | own_supporting | 1 | ethereum | unit-388841 | `0xcd5fe2...59b7ee` | ⚠️ Unaudited |
+| EtherfiOFTUpgradeable | unknown | project_anchor | own_supporting | 1 | base | unit-388850 | `0x04c0599ae5a44757c0af6f9ec3b93da8976c150a` | ⚠️ Unaudited |
+| EtherfiOFTUpgradeable | unknown | project_anchor | own_supporting | 1 | blast | unit-388847 | `0x04c0599ae5a44757c0af6f9ec3b93da8976c150a` | ⚠️ Unaudited |
+| LBTC | unknown | project_anchor | own_supporting | 1 | base | unit-388849 | `0xecac9c5f704e954931349da37f60e39f515c11c1` | ⚠️ Unaudited |
+| RSETH | unknown | project_anchor | own_supporting | 1 | ethereum | unit-388843 | `0xa1290d69c65a6fe4df752f95823fae25cb99e5a7` | ⚠️ Unaudited |
+| RSETH_OFT | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388806 | `0x4186bfc76e2e237523cbc30fd220fe055156b41f` | ⚠️ Unaudited |
+| RsETHTokenWrapper | unknown | project_anchor | own_supporting | 1 | optimism | unit-388844 | `0x87eee96d50fb761ad85b1c982d28a042169d61b1` | ⚠️ Unaudited |
+| RsETHTokenWrapper | unknown | project_anchor | own_supporting | 1 | base | unit-388848 | `0xedfa23602d0ec14714057867a78d01e94176bea0` | ⚠️ Unaudited |
+| RsETHTokenWrapper | unknown | project_anchor | own_supporting | 1 | blast | unit-388846 | `0xe7903b1f75c534dd8159b313d92cdcfbc62cb3cd` | ⚠️ Unaudited |
+| RswETH | unknown | project_anchor | own_supporting | 1 | ethereum | unit-388842 | `0xfae103dc9cf190ed75350761e95403b7b8afa6c0` | ⚠️ Unaudited |
+| StakedLBTC | unknown | project_anchor | own_supporting | 1 | ethereum | unit-388840 | `0x8236a87084f8b84306f72007f36f2618a5634494` | ⚠️ Unaudited |
+| StakedUSDeOFT | unknown | project_anchor | own_supporting | 0 | optimism | unit-388792 | `0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2` | ⚠️ Unaudited |
+| StakedUSDeOFT | unknown | project_anchor | own_supporting | 0 | base | unit-388817 | `0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2` | ⚠️ Unaudited |
+| StakedUSDeOFT | unknown | project_anchor | own_supporting | 0 | mode | unit-388796 | `0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2` | ⚠️ Unaudited |
+| StakedUSDeOFT | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388804 | `0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2` | ⚠️ Unaudited |
+| StakedUSDeOFT | unknown | project_anchor | own_supporting | 0 | blast | unit-388812 | `0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2` | ⚠️ Unaudited |
+| StakedUSDeV2 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388786 | `0x9d39a5de30e57443bff2a8307a4256c8797a3497` | ⚠️ Unaudited |
+| StandardArbERC20 | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-388845 | `0x35751007a407ca6feffe80b3cb397736d2cf4dbe` | ⚠️ Unaudited |
+| SuperToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388781 | `0x1d080c689b930f9dea69cb3b4bc6b8c213dfc2ad` | ⚠️ Unaudited |
+| SuperToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388782 | `0x32390ad170c9604fa97a894c353a4511c0d4b4c2` | ⚠️ Unaudited |
+| SuperToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388783 | `0x367711f0377867b51fe53e30f5125a9a31d3d50b` | ⚠️ Unaudited |
+| SuperToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388784 | `0x5a27765dbe2476240b1265a305c2e3554fd3f341` | ⚠️ Unaudited |
+| SuperToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388785 | `0x91e3489da66ed36ebe0be1013d87449447fd2bfa` | ⚠️ Unaudited |
+| SuperToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388787 | `0xc7ee36e027272f11135792fade64d9365cc583b5` | ⚠️ Unaudited |
+| SuperToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388788 | `0xcae44c93f7b3b519fc28f9d4f7ae22de770a907b` | ⚠️ Unaudited |
+| SuperToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388789 | `0xdfd366d941a51e1f53fbddb19fb4ee3af17ff991` | ⚠️ Unaudited |
+| SuperToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388790 | `0xe9a12fb15cc00b59867e4e2f0acbdcebfd32b3d7` | ⚠️ Unaudited |
+| SuperToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388791 | `0xf90b959ae8dfba2dd793ad05176209835658362b` | ⚠️ Unaudited |
+| SuperToken | unknown | project_anchor | own_supporting | 0 | optimism | unit-388793 | `0xb054a628027b974cd1289eb0f73f47bd0a1f010c` | ⚠️ Unaudited |
+| SuperToken | unknown | project_anchor | own_supporting | 0 | optimism | unit-388794 | `0xcfe8bc6297e693cbb58ad93a361e64a6d0e7cdee` | ⚠️ Unaudited |
+| SuperToken | unknown | project_anchor | own_supporting | 0 | mode | unit-388800 | `0xbd282333710b9c7e33e8a37d027885a7c079ae23` | ⚠️ Unaudited |
+| SuperToken | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388803 | `0x1cbbc18cb128aa470733ed29938ab4878b0bef20` | ⚠️ Unaudited |
+| SuperToken | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388805 | `0x254691c06da387c1050c726cf498efda89083820` | ⚠️ Unaudited |
+| SuperToken | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388807 | `0x81494d722ddcedba31ac40f28dafa66b207f232b` | ⚠️ Unaudited |
+| SuperToken | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388808 | `0x8f5d8a65d98925e10ba83b5c1c5c3be100f7591b` | ⚠️ Unaudited |
+| SuperToken | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388809 | `0xb7f56c1a952d3ae664a83971bffa5c1706947dbd` | ⚠️ Unaudited |
+| SuperToken | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388810 | `0xc7ee36e027272f11135792fade64d9365cc583b5` | ⚠️ Unaudited |
+| SuperToken | unknown | project_anchor | own_supporting | 0 | blast | unit-388811 | `0x0bdceb979d84c49bdf53aeac9377d52cf1962868` | ⚠️ Unaudited |
+| SuperToken | unknown | project_anchor | own_supporting | 0 | blast | unit-388813 | `0x50d46c3bb529276ade59a6678c14302d6b61c853` | ⚠️ Unaudited |
+| SuperToken | unknown | project_anchor | own_supporting | 0 | blast | unit-388814 | `0x791a570f5785fbdb02ea5c7a794c43111ae2f948` | ⚠️ Unaudited |
+| SuperToken | unknown | project_anchor | own_supporting | 0 | blast | unit-388815 | `0xbe9dbda519e15a1c0d238cea0b3dad47a484a6ff` | ⚠️ Unaudited |
+| SuperToken | unknown | project_anchor | own_supporting | 0 | blast | unit-388816 | `0xc7ee36e027272f11135792fade64d9365cc583b5` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 0 | mode | unit-388795 | `0x04c0599ae5a44757c0af6f9ec3b93da8976c150a` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 0 | mode | unit-388802 | `0xe7903b1f75c534dd8159b313d92cdcfbc62cb3cd` | ⚠️ Unaudited |
+| WeETH | unknown | project_anchor | own_supporting | 1 | ethereum | unit-388841 | `0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -229,32 +229,32 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | derive | unit-388825 | `0x0b4ed3...3e505e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | derive | unit-388826 | `0x12ab02...7262af` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | derive | unit-388827 | `0x210465...dc62e8` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | derive | unit-388828 | `0x36b5c1...8a890e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | derive | unit-388829 | `0x513dc0...db5739` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | derive | unit-388830 | `0x5bbef9...6b2794` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | derive | unit-388831 | `0x5fc48a...003971` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | derive | unit-388832 | `0x7b35b4...6a68a2` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | derive | unit-388833 | `0xb82d12...2216eb` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | derive | unit-388834 | `0xbcab1f...e92dd4` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | derive | unit-388835 | `0xc41995...79d8c8` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | derive | unit-388836 | `0xc47e2e...715db7` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | derive | unit-388837 | `0xd35bb8...63ecbf` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | derive | unit-388838 | `0xe48cdb...516d1a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | derive | unit-388839 | `0xec6892...79f521` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-388818 | `0x85afa7...a74e21` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-388819 | `0x98f1ae...7159bc` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-388820 | `0xa0b0b5...99fc55` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-388821 | `0xa2be75...84d568` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-388822 | `0xc7ee36...c583b5` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-388823 | `0xd46417...4bf125` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-388824 | `0xde45e2...822641` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | mode | unit-388797 | `0x50d46c...61c853` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | mode | unit-388798 | `0x727ad6...9bf6d5` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | mode | unit-388799 | `0x96e47f...caea73` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | mode | unit-388801 | `0xc7ee36...c583b5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | derive | unit-388825 | `0x0b4ed379da8ef4fcf06f697c5782ca7b4c3e505e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | derive | unit-388826 | `0x12ab0242b3e8d4502febced6c2d52fd23f7262af` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | derive | unit-388827 | `0x2104654d6da663961a86ac3cf1751981c5dc62e8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | derive | unit-388828 | `0x36b5c126a3d7b25f6032653a0d18823ee48a890e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | derive | unit-388829 | `0x513dc0e3407ca3a6e073a2f2d43fd61498db5739` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | derive | unit-388830 | `0x5bbef94dcee8f087d5146d2815bc4955c76b2794` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | derive | unit-388831 | `0x5fc48a32437ff4bbab2a22646c3c9344ba003971` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | derive | unit-388832 | `0x7b35b4c05a90ea5f311aec815be4148b446a68a2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | derive | unit-388833 | `0xb82d12742c3728a14eaa43ebe1c0d32bb62216eb` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | derive | unit-388834 | `0xbcab1f8bba323bc55ea8cfac34edacf8dbe92dd4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | derive | unit-388835 | `0xc419959850d49166c2d5250ee89ff9910679d8c8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | derive | unit-388836 | `0xc47e2e800a9184cfbd274ac1eecccdf942715db7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | derive | unit-388837 | `0xd35bb8582809b4bda4f8bcce1bde48559f63ecbf` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | derive | unit-388838 | `0xe48cdbe3a233ea577c9ee6959801e7730e516d1a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | derive | unit-388839 | `0xec68928bd83b2e52ff5a8e8c215b6ea72879f521` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-388818 | `0x85afa764a366d70d241513e3cbdadd97a9a74e21` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-388819 | `0x98f1aed814443d6ddd0a724b0f40098f517159bc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-388820 | `0xa0b0b5ff5a45d054e2517cb1903c1713e199fc55` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-388821 | `0xa2be759b86cea53372c3e9a882047cdc3884d568` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-388822 | `0xc7ee36e027272f11135792fade64d9365cc583b5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-388823 | `0xd464170afe0ee2a4865b2ca6dbcc6dfb8f4bf125` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-388824 | `0xde45e2bccb99e0ed1a2876cfc51a71ca5e822641` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | mode | unit-388797 | `0x50d46c3bb529276ade59a6678c14302d6b61c853` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | mode | unit-388798 | `0x727ad65db6ae99db5dbee8f202846dd6009bf6d5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | mode | unit-388799 | `0x96e47fc9c701e8eef22fa53e62dc3ebbdccaea73` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | mode | unit-388801 | `0xc7ee36e027272f11135792fade64d9365cc583b5` | ❓ Unverified |
 
 ## Audit Inventory
 

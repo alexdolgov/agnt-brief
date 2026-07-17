@@ -57,9 +57,9 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xe18b03...6fba5f`, chain 1)
-- UnnamedContract (`0xea9c5a...7d99a7`, chain 1)
-- PoolTokenV3 (`0x75ce0e...2a8970`, chain 1)
+- UnnamedContract (`0xe18b0365d5d09f394f84ee56ed29dd2d8d6fba5f`, chain 1)
+- UnnamedContract (`0xea9c5a2717d5ab75afaac340151e73a7e37d99a7`, chain 1)
+- PoolTokenV3 (`0x75ce0e501e2e6776fcaaa514f394a88a772a8970`, chain 1)
 
 ## Contract Surface Quality
 
@@ -105,11 +105,11 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| APYGovernanceToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x561af1...240b62` | ⚠️ Unaudited |
-| APYPoolToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x21347b...4bce75` | ⚠️ Unaudited |
-| GovernanceTokenV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x95a449...446611` | ⚠️ Unaudited |
-| PoolTokenV3 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-379100 | `0x75ce0e...2a8970` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3dea1f...e973d9` | ⚠️ Unaudited |
+| APYGovernanceToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x561af1ec26491a89e3907fb11eed479843240b62` | ⚠️ Unaudited |
+| APYPoolToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x21347bf816051ffa9a6456536fcdd2cea44bce75` | ⚠️ Unaudited |
+| GovernanceTokenV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x95a4492f028aa1fd432ea71146b433e7b4446611` | ⚠️ Unaudited |
+| PoolTokenV3 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-379100 | `0x75ce0e501e2e6776fcaaa514f394a88a772a8970` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3dea1f053ab24b0c5b0c663b1c07b6b702e973d9` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -129,11 +129,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x80073e...18e4d8` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa13829...eca092` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379098 | `0xe18b03...6fba5f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379099 | `0xea9c5a...7d99a7` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf587ec...96fea1` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x80073eef3c57ba05dc25e5cd5b78c5f9fb18e4d8` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa138299a1bb17e90f2edcc2d567358c4beeca092` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379098 | `0xe18b0365d5d09f394f84ee56ed29dd2d8d6fba5f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379099 | `0xea9c5a2717d5ab75afaac340151e73a7e37d99a7` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf587ec50e2e6518f7f016d5a78561109ab96fea1` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -170,7 +170,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x75ce0e...2a8970` | PoolTokenV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x75ce0e501e2e6776fcaaa514f394a88a772a8970` | PoolTokenV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

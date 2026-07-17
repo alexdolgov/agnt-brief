@@ -59,19 +59,19 @@ The protocol comprises 3 functional families. Its contracts share 3 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| GULL | unknown | manta | n/a | [`0x9582b5...504205`](./contracts/manta-169/0x9582b518d28dc65945f8151c25e44a4e80504205/) | ✅ Audited |
+| GULL | unknown | manta | n/a | [`0x9582b518d28dc65945f8151c25e44a4e80504205`](./contracts/manta-169/0x9582b518d28dc65945f8151c25e44a4e80504205/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (7)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ERC1967Proxy | unknown | manta | n/a | [`0x0aa43a...cd3e4a`](./contracts/manta-169/0x0aa43a13c09bc0faef6aeb3ba002bc32bacd3e4a/) | ⚠️ Unaudited |
-| GullOFTAdapter | unknown | manta | n/a | [`0x617f15...6d2e95`](./contracts/manta-169/0x617f1536dafd893994b9f51381f78875c86d2e95/) | ⚠️ Unaudited |
-| GullStakingFactory | unknown | manta | n/a | [`0xfc6387...9744de`](./contracts/manta-169/0xfc6387f581d2a827f183a9ea68f07063f99744de/) | ⚠️ Unaudited |
-| GullV2Factory | unknown | manta | n/a | [`0x31a788...906db3`](./contracts/manta-169/0x31a78894a2b5de2c4244cd41595cd0050a906db3/) | ⚠️ Unaudited |
-| GullV2Router02 | unknown | manta | n/a | [`0x0c5d91...1ec462`](./contracts/manta-169/0x0c5d91e097a22e1454987652d7ccdb825f1ec462/) | ⚠️ Unaudited |
-| GullVIP | unknown | manta | n/a | [`0xc7faab...551f77`](./contracts/manta-169/0xc7faab6408346dc5928e60556681f2359a551f77/) | ⚠️ Unaudited |
-| MantaGull | unknown | manta | n/a | [`0xccdb7b...74f360`](./contracts/manta-169/0xccdb7b8e012d282a86a2a8e94e9351472774f360/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | manta | n/a | [`0x0aa43a13c09bc0faef6aeb3ba002bc32bacd3e4a`](./contracts/manta-169/0x0aa43a13c09bc0faef6aeb3ba002bc32bacd3e4a/) | ⚠️ Unaudited |
+| GullOFTAdapter | unknown | manta | n/a | [`0x617f1536dafd893994b9f51381f78875c86d2e95`](./contracts/manta-169/0x617f1536dafd893994b9f51381f78875c86d2e95/) | ⚠️ Unaudited |
+| GullStakingFactory | unknown | manta | n/a | [`0xfc6387f581d2a827f183a9ea68f07063f99744de`](./contracts/manta-169/0xfc6387f581d2a827f183a9ea68f07063f99744de/) | ⚠️ Unaudited |
+| GullV2Factory | unknown | manta | n/a | [`0x31a78894a2b5de2c4244cd41595cd0050a906db3`](./contracts/manta-169/0x31a78894a2b5de2c4244cd41595cd0050a906db3/) | ⚠️ Unaudited |
+| GullV2Router02 | unknown | manta | n/a | [`0x0c5d91e097a22e1454987652d7ccdb825f1ec462`](./contracts/manta-169/0x0c5d91e097a22e1454987652d7ccdb825f1ec462/) | ⚠️ Unaudited |
+| GullVIP | unknown | manta | n/a | [`0xc7faab6408346dc5928e60556681f2359a551f77`](./contracts/manta-169/0xc7faab6408346dc5928e60556681f2359a551f77/) | ⚠️ Unaudited |
+| MantaGull | unknown | manta | n/a | [`0xccdb7b8e012d282a86a2a8e94e9351472774f360`](./contracts/manta-169/0xccdb7b8e012d282a86a2a8e94e9351472774f360/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -104,12 +104,12 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| manta | [`0x617f15...6d2e95`](./contracts/manta-169/0x617f1536dafd893994b9f51381f78875c86d2e95/) | GullOFTAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0xfc6387...9744de`](./contracts/manta-169/0xfc6387f581d2a827f183a9ea68f07063f99744de/) | GullStakingFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0x31a788...906db3`](./contracts/manta-169/0x31a78894a2b5de2c4244cd41595cd0050a906db3/) | GullV2Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0x0c5d91...1ec462`](./contracts/manta-169/0x0c5d91e097a22e1454987652d7ccdb825f1ec462/) | GullV2Router02 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0xc7faab...551f77`](./contracts/manta-169/0xc7faab6408346dc5928e60556681f2359a551f77/) | GullVIP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0xccdb7b...74f360`](./contracts/manta-169/0xccdb7b8e012d282a86a2a8e94e9351472774f360/) | MantaGull | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| manta | [`0x617f1536dafd893994b9f51381f78875c86d2e95`](./contracts/manta-169/0x617f1536dafd893994b9f51381f78875c86d2e95/) | GullOFTAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| manta | [`0xfc6387f581d2a827f183a9ea68f07063f99744de`](./contracts/manta-169/0xfc6387f581d2a827f183a9ea68f07063f99744de/) | GullStakingFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| manta | [`0x31a78894a2b5de2c4244cd41595cd0050a906db3`](./contracts/manta-169/0x31a78894a2b5de2c4244cd41595cd0050a906db3/) | GullV2Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| manta | [`0x0c5d91e097a22e1454987652d7ccdb825f1ec462`](./contracts/manta-169/0x0c5d91e097a22e1454987652d7ccdb825f1ec462/) | GullV2Router02 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| manta | [`0xc7faab6408346dc5928e60556681f2359a551f77`](./contracts/manta-169/0xc7faab6408346dc5928e60556681f2359a551f77/) | GullVIP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| manta | [`0xccdb7b8e012d282a86a2a8e94e9351472774f360`](./contracts/manta-169/0xccdb7b8e012d282a86a2a8e94e9351472774f360/) | MantaGull | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

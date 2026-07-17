@@ -82,12 +82,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Proxy (impl: 0x267d6c0eddd8639eeb4d8f2ae3e694884626e546) | proxy | base | n/a | `0x7c9460...c79c0c` | ❓ Unverified |
-| Proxy (impl: 0x2ae8095205570d089e6bcaee9d29ce718201f1fe) | proxy | arbitrum | n/a | `0x7c9460...c79c0c` | ❓ Unverified |
-| Proxy (impl: 0xb265e9785d0cf2c2d88581d841e49338387da51f) | proxy | bsc | n/a | `0xa0a61c...0d929f` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x183514...35801d` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x1de70f...7fb677` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xa614ae...407f1d` | ❓ Unverified |
+| Proxy (impl: 0x267d6c0eddd8639eeb4d8f2ae3e694884626e546) | proxy | base | n/a | `0x7c94606f2240e61e242d14ed984aa38fa4c79c0c` | ❓ Unverified |
+| Proxy (impl: 0x2ae8095205570d089e6bcaee9d29ce718201f1fe) | proxy | arbitrum | n/a | `0x7c94606f2240e61e242d14ed984aa38fa4c79c0c` | ❓ Unverified |
+| Proxy (impl: 0xb265e9785d0cf2c2d88581d841e49338387da51f) | proxy | bsc | n/a | `0xa0a61cfa5798976b0064fbbffc73dc81080d929f` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x18351419ae86f3dd3128943ec01b873b4f35801d` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x1de70f3e971b62a0707da18100392af14f7fb677` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xa614aebf7924a3eb4d066adca5595e4980407f1d` | ❓ Unverified |
 
 ## Audit Inventory
 

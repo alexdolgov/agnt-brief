@@ -52,8 +52,8 @@ The pinned logic-topography run contains 2 contract row(s) across gnosis. Struct
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xb18d4f...ef7c53`, chain 100)
-- UniswapV2Factory (`0x965769...2975a5`, chain 100)
+- UnnamedContract (`0xb18d4f69627f8320619a696202ad2c430cef7c53`, chain 100)
+- UniswapV2Factory (`0x965769c9cea8a7667246058504dcdcdb1e2975a5`, chain 100)
 
 ## Contract Surface Quality
 
@@ -99,17 +99,17 @@ The pinned logic-topography run contains 2 contract row(s) across gnosis. Struct
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| EternalStorageProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x17e649...809034` | ⚠️ Unaudited |
-| ForeignAMBErc677ToErc677 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x0d0385...046fba` | ⚠️ Unaudited |
-| LevinBar | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x6a5f3d...4f6bb3` | ⚠️ Unaudited |
-| LevinMaker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x6d81dd...018e49` | ⚠️ Unaudited |
-| LevinTimelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x061cc9...1304f2` | ⚠️ Unaudited |
-| LevinToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x1698cd...9e42aa` | ⚠️ Unaudited |
-| MasterChefLVN | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x37a714...f4a072` | ⚠️ Unaudited |
-| MasterLevin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x0f2b0e...15eca1` | ⚠️ Unaudited |
-| Moloch | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x78f967...e98cff` | ⚠️ Unaudited |
-| UniswapV2Factory | unknown | project_anchor | own_supporting | 0 | gnosis | unit-388479 | `0x965769...2975a5` | ⚠️ Unaudited |
-| UnnamedContract | periphery | project_anchor | own_supporting | 0 | gnosis | unit-388480 | `0xb18d4f...ef7c53` | ⚠️ Unaudited |
+| EternalStorageProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x17e64926d5f92251822f66736ebd405e03809034` | ⚠️ Unaudited |
+| ForeignAMBErc677ToErc677 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x0d03852adf8877574f2537663760bd2174046fba` | ⚠️ Unaudited |
+| LevinBar | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x6a5f3d605613bd3b6515d803f8f7dc617f4f6bb3` | ⚠️ Unaudited |
+| LevinMaker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x6d81dda24b7ff5b4a65039ff15d06a076e018e49` | ⚠️ Unaudited |
+| LevinTimelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x061cc9d4bda1805eac1dc27979e58dc4c01304f2` | ⚠️ Unaudited |
+| LevinToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x1698cd22278ef6e7c0df45a8dea72edbea9e42aa` | ⚠️ Unaudited |
+| MasterChefLVN | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x37a714661820927b6d1a6bdbb7dfd2bc23f4a072` | ⚠️ Unaudited |
+| MasterLevin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x0f2b0e9db46c6b538e9276d2cf0c6ce8d515eca1` | ⚠️ Unaudited |
+| Moloch | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x78f96767012ae634c9a9554e7b46bcd29ae98cff` | ⚠️ Unaudited |
+| UniswapV2Factory | unknown | project_anchor | own_supporting | 0 | gnosis | unit-388479 | `0x965769c9cea8a7667246058504dcdcdb1e2975a5` | ⚠️ Unaudited |
+| UnnamedContract | periphery | project_anchor | own_supporting | 0 | gnosis | unit-388480 | `0xb18d4f69627f8320619a696202ad2c430cef7c53` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

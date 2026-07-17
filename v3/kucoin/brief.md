@@ -89,10 +89,10 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ERC1967Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | unit-149129 | `0x175ce6...69c9cc` | ⚠️ Unaudited |
-| GnosisSafe | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149127 | `0x9fa3e9...4d26ba` | ⚠️ Unaudited |
-| GnosisSafeProxyFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149126 | `0x689fab...317ccf` | ⚠️ Unaudited |
-| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | unit-149128 | `0x17a303...cfc4a8` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | unit-149129 | `0x175ce6204bfda2a509c7e9c786b74407f569c9cc` | ⚠️ Unaudited |
+| GnosisSafe | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149127 | `0x9fa3e93531c85d61fd76e80020d4565b134d26ba` | ⚠️ Unaudited |
+| GnosisSafeProxyFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149126 | `0x689fab0352b442f9d3cce68afbb348fcfa317ccf` | ⚠️ Unaudited |
+| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | unit-149128 | `0x17a30350771d02409046a683b18fe1c13ccfc4a8` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

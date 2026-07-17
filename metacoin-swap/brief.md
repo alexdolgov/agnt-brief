@@ -60,7 +60,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Exchange | unknown | bsc | n/a | [`0x1dd223...9c0820`](./contracts/bsc-56/0x1dd2235091c82862bcc7e9c25017ba9c409c0820/) | ✅ Audited |
+| Exchange | unknown | bsc | n/a | [`0x1dd2235091c82862bcc7e9c25017ba9c409c0820`](./contracts/bsc-56/0x1dd2235091c82862bcc7e9c25017ba9c409c0820/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 

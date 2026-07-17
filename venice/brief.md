@@ -59,12 +59,12 @@ The protocol comprises 3 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ERC1967Proxy | unknown | base | n/a | [`0x2bc7b8...a7930a`](./contracts/base-8453/0x2bc7b83536a5a3616772a0c93d04d7fd9aa7930a/) | ⚠️ Unaudited |
-| Mike | unknown | base | n/a | [`0xa1168c...26bbef`](./contracts/base-8453/0xa1168c27daf7f21fe6c1d94272a65e6acc26bbef/) | ⚠️ Unaudited |
-| Oracle | unknown | base | n/a | [`0x1a7105...153c59`](./contracts/base-8453/0x1a7105a38b016bce1ceee42af129757f5e153c59/) | ⚠️ Unaudited |
-| Staking | unknown | base | n/a | [`0x14f4ae...c71070`](./contracts/base-8453/0x14f4ae4e4c5f017c0026fec7edc98e0bd7c71070/) | ⚠️ Unaudited |
-| StakingV2 | unknown | base | n/a | [`0x321b7f...f340ff`](./contracts/base-8453/0x321b7ff75154472b18edb199033ff4d116f340ff/) | ⚠️ Unaudited |
-| Venice | unknown | base | n/a | [`0x603458...38c108`](./contracts/base-8453/0x603458e5bfb26bafc5647e71deef60a47d38c108/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | base | n/a | [`0x2bc7b83536a5a3616772a0c93d04d7fd9aa7930a`](./contracts/base-8453/0x2bc7b83536a5a3616772a0c93d04d7fd9aa7930a/) | ⚠️ Unaudited |
+| Mike | unknown | base | n/a | [`0xa1168c27daf7f21fe6c1d94272a65e6acc26bbef`](./contracts/base-8453/0xa1168c27daf7f21fe6c1d94272a65e6acc26bbef/) | ⚠️ Unaudited |
+| Oracle | unknown | base | n/a | [`0x1a7105a38b016bce1ceee42af129757f5e153c59`](./contracts/base-8453/0x1a7105a38b016bce1ceee42af129757f5e153c59/) | ⚠️ Unaudited |
+| Staking | unknown | base | n/a | [`0x14f4ae4e4c5f017c0026fec7edc98e0bd7c71070`](./contracts/base-8453/0x14f4ae4e4c5f017c0026fec7edc98e0bd7c71070/) | ⚠️ Unaudited |
+| StakingV2 | unknown | base | n/a | [`0x321b7ff75154472b18edb199033ff4d116f340ff`](./contracts/base-8453/0x321b7ff75154472b18edb199033ff4d116f340ff/) | ⚠️ Unaudited |
+| Venice | unknown | base | n/a | [`0x603458e5bfb26bafc5647e71deef60a47d38c108`](./contracts/base-8453/0x603458e5bfb26bafc5647e71deef60a47d38c108/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,11 +95,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0xa1168c...26bbef`](./contracts/base-8453/0xa1168c27daf7f21fe6c1d94272a65e6acc26bbef/) | Mike | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x1a7105...153c59`](./contracts/base-8453/0x1a7105a38b016bce1ceee42af129757f5e153c59/) | Oracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x14f4ae...c71070`](./contracts/base-8453/0x14f4ae4e4c5f017c0026fec7edc98e0bd7c71070/) | Staking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x321b7f...f340ff`](./contracts/base-8453/0x321b7ff75154472b18edb199033ff4d116f340ff/) | StakingV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x603458...38c108`](./contracts/base-8453/0x603458e5bfb26bafc5647e71deef60a47d38c108/) | Venice | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xa1168c27daf7f21fe6c1d94272a65e6acc26bbef`](./contracts/base-8453/0xa1168c27daf7f21fe6c1d94272a65e6acc26bbef/) | Mike | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x1a7105a38b016bce1ceee42af129757f5e153c59`](./contracts/base-8453/0x1a7105a38b016bce1ceee42af129757f5e153c59/) | Oracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x14f4ae4e4c5f017c0026fec7edc98e0bd7c71070`](./contracts/base-8453/0x14f4ae4e4c5f017c0026fec7edc98e0bd7c71070/) | Staking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x321b7ff75154472b18edb199033ff4d116f340ff`](./contracts/base-8453/0x321b7ff75154472b18edb199033ff4d116f340ff/) | StakingV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x603458e5bfb26bafc5647e71deef60a47d38c108`](./contracts/base-8453/0x603458e5bfb26bafc5647e71deef60a47d38c108/) | Venice | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -52,14 +52,14 @@ The pinned logic-topography run contains 9 contract row(s) across ethereum, goer
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x800e48...ad83cb`, chain 1)
-- UnnamedContract (`0xaa2e72...e8e778`, chain 1)
-- ERC1967Proxy (`0x6bd281...57adc6`, chain 1)
-- EscrowedIlluvium2 (`0x7e77dc...f1b068`, chain 1)
-- IlluviumERC20 (`0x767fe9...d7ca0e`, chain 1)
-- ILVPool (`0xdb0a2a...f20cb3`, chain 1)
-- PoolFactory (`0x53aff3...56d6e1`, chain 1)
-- Vesting (`0xc01e7d...08bfdb`, chain 1)
+- UnnamedContract (`0x800e48366b3dc4d93114246d52b98adb48ad83cb`, chain 1)
+- UnnamedContract (`0xaa2e727ba59b4fea24d0db4e49a392fdc3e8e778`, chain 1)
+- ERC1967Proxy (`0x6bd2814426f9a6abaa427d2ad3fc898d2a57adc6`, chain 1)
+- EscrowedIlluvium2 (`0x7e77dcb127f99ece88230a64db8d595f31f1b068`, chain 1)
+- IlluviumERC20 (`0x767fe9edc9e0df98e07454847909b5e959d7ca0e`, chain 1)
+- ILVPool (`0xdb0a2a38f30a3f43fbfae98c85b132702df20cb3`, chain 1)
+- PoolFactory (`0x53aff3b5059a48e4ee37e63c03e3ad563756d6e1`, chain 1)
+- Vesting (`0xc01e7dcc6cca1af57a5099f1dcab90084408bfdb`, chain 1)
 
 ## Contract Surface Quality
 
@@ -105,25 +105,25 @@ The pinned logic-topography run contains 9 contract row(s) across ethereum, goer
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BurnableVesting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4ee666...eb1cff` | ⚠️ Unaudited |
-| EscrowedIlluvium2 | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-387336 | `0x7e77dc...f1b068` | ⚠️ Unaudited |
-| IlluvinatiCouncil | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xaebd9b...52dc69` | ⚠️ Unaudited |
-| IlluviumCorePool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x25121e...4e2a36`; ethereum `0x8b4d84...843f72` | ⚠️ Unaudited |
-| IlluviumERC20 | token | project_anchor | own_supporting | 0 | ethereum | unit-387335 | `0x767fe9...d7ca0e` | ⚠️ Unaudited |
-| IlluviumIDOCollection | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4222b2...161e52` | ⚠️ Unaudited |
-| IlluviumNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x384aa0...af9fdf`; ethereum `0xb90161...cbf8b9` | ⚠️ Unaudited |
-| ILVPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6b7220...e201c6` | ⚠️ Unaudited |
-| ILVPool | unknown | project_anchor | own_supporting | 1 | ethereum | unit-387356 | 2 deployments: ethereum `0x7f5f85...34291d`; ethereum `0xdb0a2a...f20cb3` | ⚠️ Unaudited |
-| MerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa904f2...a8c79a` | ⚠️ Unaudited |
-| MockedPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa1b1c0...e5a8c6` | ⚠️ Unaudited |
-| NFTClaimManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3fa9f4...aa9c4c` | ⚠️ Unaudited |
-| NFTDisperser | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf5df4f...b3233c` | ⚠️ Unaudited |
-| PoolFactory | unknown | project_anchor | own_supporting | 1 | ethereum | unit-387352 | 2 deployments: ethereum `0x53aff3...56d6e1`; ethereum `0x9dca38...94597c` | ⚠️ Unaudited |
-| PreIlluvium | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0xabdef6...78f11f`; ethereum `0xc657f5...536d36` | ⚠️ Unaudited |
-| SushiLPPool | unknown | project_anchor | own_supporting | 1 | ethereum | unit-387350 | `0xe98477...571cc2` | ⚠️ Unaudited |
-| UniswapV2Router02 | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd9e1ce...378b9f` | ⚠️ Unaudited |
-| Vesting | operational_periphery | project_anchor | own_supporting | 1 | ethereum | unit-387354 | 2 deployments: ethereum `0x6bd281...57adc6`; ethereum `0xc01e7d...08bfdb` | ⚠️ Unaudited |
-| VotingIlluvium | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 9 deployments: ethereum `0x035dc7...b08207`; ethereum `0x04da3f...21392c`; ethereum `0x19ac50...413945`; ethereum `0x2e15ea...14b71b`; ethereum `0x487e58...173032`; ethereum `0x5f04ca...436418`; ethereum `0x98c7c1...ca0c76`; ethereum `0xbf9a92...8ce17e`; ethereum `0xe8d3c5...73fb00` | ⚠️ Unaudited |
+| BurnableVesting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4ee6667d18f161a915a7267abca886f995eb1cff` | ⚠️ Unaudited |
+| EscrowedIlluvium2 | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-387336 | `0x7e77dcb127f99ece88230a64db8d595f31f1b068` | ⚠️ Unaudited |
+| IlluvinatiCouncil | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xaebd9bd588f044cbdec8f3cf1e80277a7a52dc69` | ⚠️ Unaudited |
+| IlluviumCorePool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x25121eddf746c884dde4619b573a7b10714e2a36`; ethereum `0x8b4d8443a0229349a9892d4f7cbe89ef5f843f72` | ⚠️ Unaudited |
+| IlluviumERC20 | token | project_anchor | own_supporting | 0 | ethereum | unit-387335 | `0x767fe9edc9e0df98e07454847909b5e959d7ca0e` | ⚠️ Unaudited |
+| IlluviumIDOCollection | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4222b2a98daa443c6a0a761300d7d6bfd9161e52` | ⚠️ Unaudited |
+| IlluviumNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x384aa03d8b7cc6a818e7cb7a037ba0cd81af9fdf`; ethereum `0xb901614d588ef8db45045ffbb2145e1c36cbf8b9` | ⚠️ Unaudited |
+| ILVPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6b72209b2514940606910dd9ad309ee1e5e201c6` | ⚠️ Unaudited |
+| ILVPool | unknown | project_anchor | own_supporting | 1 | ethereum | unit-387356 | 2 deployments: ethereum `0x7f5f854ffb6b7701540a00c69c4ab2de2b34291d`; ethereum `0xdb0a2a38f30a3f43fbfae98c85b132702df20cb3` | ⚠️ Unaudited |
+| MerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa904f27b1de7e82ba587677ee1f5af0ad0a8c79a` | ⚠️ Unaudited |
+| MockedPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa1b1c05b3d00e5803c1c502d9175f3e39fe5a8c6` | ⚠️ Unaudited |
+| NFTClaimManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3fa9f416955fb4a27f6f2bf617ecbe609baa9c4c` | ⚠️ Unaudited |
+| NFTDisperser | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf5df4f4bb2cc79949b37a0a7ea7ce09248b3233c` | ⚠️ Unaudited |
+| PoolFactory | unknown | project_anchor | own_supporting | 1 | ethereum | unit-387352 | 2 deployments: ethereum `0x53aff3b5059a48e4ee37e63c03e3ad563756d6e1`; ethereum `0x9dca38d109c6c69790fb70bcfdeaf27c4394597c` | ⚠️ Unaudited |
+| PreIlluvium | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0xabdef64e297a6dd56e0efa3005972da47d78f11f`; ethereum `0xc657f5697a952b33cd0598828847fdc5be536d36` | ⚠️ Unaudited |
+| SushiLPPool | unknown | project_anchor | own_supporting | 1 | ethereum | unit-387350 | `0xe98477bdc16126bb0877c6e3882e3edd72571cc2` | ⚠️ Unaudited |
+| UniswapV2Router02 | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd9e1ce17f2641f24ae83637ab66a2cca9c378b9f` | ⚠️ Unaudited |
+| Vesting | operational_periphery | project_anchor | own_supporting | 1 | ethereum | unit-387354 | 2 deployments: ethereum `0x6bd2814426f9a6abaa427d2ad3fc898d2a57adc6`; ethereum `0xc01e7dcc6cca1af57a5099f1dcab90084408bfdb` | ⚠️ Unaudited |
+| VotingIlluvium | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 9 deployments: ethereum `0x035dc7dd0e90de650bc8b94196a5419e33b08207`; ethereum `0x04da3f7e8289685d88ab0c73f9ea2de75421392c`; ethereum `0x19ac5036e66dee56c0afa73a7e50e87fc4413945`; ethereum `0x2e15eae33cb3e569638746e0cd3525a5c214b71b`; ethereum `0x487e58fe51af1e6fcb1c95aefdac68394a173032`; ethereum `0x5f04cae38f09c044101b95456fda38ba2c436418`; ethereum `0x98c7c18e1b1379fd9135ec82593c902891ca0c76`; ethereum `0xbf9a925c860367eca4e024683d078ad81c8ce17e`; ethereum `0xe8d3c555d4f984a81bf9ab43cbd4e71acd73fb00` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -143,18 +143,18 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x088823...cae7b8` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387337 | `0x800e48...ad83cb` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa305cd...a3dc70` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387338 | `0xaa2e72...e8e778` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-387339 | `0x0434d7...a332d6` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-387340 | `0x0dd04f...0b3c7b` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-387341 | `0x2192f2...fd61dc` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-387342 | `0x5afa29...d524b8` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-387343 | `0xc8eb43...694615` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-387344 | `0xde9a2e...a302c5` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-387346 | `0xe71ddc...38fc7a` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-387348 | `0xf444a3...ed499f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x088823fa2c0ceb120198d9e1006bf2596bcae7b8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387337 | `0x800e48366b3dc4d93114246d52b98adb48ad83cb` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa305cd856e06905a5543dff5dc0c3ad0a9a3dc70` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387338 | `0xaa2e727ba59b4fea24d0db4e49a392fdc3e8e778` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-387339 | `0x0434d7084d98124092f994222823ef4ca0a332d6` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-387340 | `0x0dd04f85a078e0c89b8406e9e6aa0c51640b3c7b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-387341 | `0x2192f21559a5c93c9468fadd93b61ecb1dfd61dc` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-387342 | `0x5afa292d1661a43202f3e59f7f09b5759ed524b8` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-387343 | `0xc8eb436fafe1989a0fa73240569e4b14bf694615` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-387344 | `0xde9a2e15925955fb98c31ea2384e3e2686a302c5` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-387346 | `0xe71ddccb77ae32b98c19165da8715c73dc38fc7a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-387348 | `0xf444a3355e4624f7b2c532557420e9c01ced499f` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -182,11 +182,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x7e77dc...f1b068` | EscrowedIlluvium2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x767fe9...d7ca0e` | IlluviumERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x7f5f85...34291d` | ILVPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x53aff3...56d6e1` | PoolFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x6bd281...57adc6` | Vesting | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x7e77dcb127f99ece88230a64db8d595f31f1b068` | EscrowedIlluvium2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x767fe9edc9e0df98e07454847909b5e959d7ca0e` | IlluviumERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x7f5f854ffb6b7701540a00c69c4ab2de2b34291d` | ILVPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x53aff3b5059a48e4ee37e63c03e3ad563756d6e1` | PoolFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x6bd2814426f9a6abaa427d2ad3fc898d2a57adc6` | Vesting | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

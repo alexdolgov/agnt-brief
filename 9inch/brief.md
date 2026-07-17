@@ -59,29 +59,29 @@ The protocol comprises 2 functional families. Contracts are linked by 7 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CakeFlexiblePool | unknown | ethereum | n/a | [`0xdf598b...e4432f`](./contracts/ethereum-1/0xdf598bfe7b8eb5abd217871317e31a48d9e4432f/) | ✅ Audited |
-| CakePool | unknown | ethereum | n/a | [`0x91c58c...69c24e`](./contracts/ethereum-1/0x91c58cf141abbeb6ab8d83976103bca70b69c24e/) | ✅ Audited |
-| TokenFlexiblePool | unknown | ethereum | n/a | [`0x0022e0...7538f2`](./contracts/ethereum-1/0x0022e0c25bba451b08942367b98e4b4a617538f2/) | ✅ Audited |
-| TokenPool | unknown | ethereum | n/a | [`0x664e78...251059`](./contracts/ethereum-1/0x664e78c17d64234440a26ca72a6946a270251059/) | ✅ Audited |
+| CakeFlexiblePool | unknown | ethereum | n/a | [`0xdf598bfe7b8eb5abd217871317e31a48d9e4432f`](./contracts/ethereum-1/0xdf598bfe7b8eb5abd217871317e31a48d9e4432f/) | ✅ Audited |
+| CakePool | unknown | ethereum | n/a | [`0x91c58cf141abbeb6ab8d83976103bca70b69c24e`](./contracts/ethereum-1/0x91c58cf141abbeb6ab8d83976103bca70b69c24e/) | ✅ Audited |
+| TokenFlexiblePool | unknown | ethereum | n/a | [`0x0022e0c25bba451b08942367b98e4b4a617538f2`](./contracts/ethereum-1/0x0022e0c25bba451b08942367b98e4b4a617538f2/) | ✅ Audited |
+| TokenPool | unknown | ethereum | n/a | [`0x664e78c17d64234440a26ca72a6946a270251059`](./contracts/ethereum-1/0x664e78c17d64234440a26ca72a6946a270251059/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (14)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BBC | unknown | ethereum | n/a | [`0x015628...a32436`](./contracts/ethereum-1/0x015628ce9150db1bce2fbb717a09e846f8a32436/) | ⚠️ Unaudited |
-| BulkTransfer | unknown | ethereum | n/a | [`0xea2a60...91b55c`](./contracts/ethereum-1/0xea2a600269f18e2de6d4ba1cc81080729091b55c/) | ⚠️ Unaudited |
-| MasterChefV2 | unknown | ethereum | n/a | [`0x3fefd0...50561f`](./contracts/ethereum-1/0x3fefd06828689252a69207718985b9a78350561f/) | ⚠️ Unaudited |
-| NineInch | unknown | ethereum | n/a | [`0xfd8b9b...4937a2`](./contracts/ethereum-1/0xfd8b9ba4845fb38c779317ec134b298c064937a2/) | ⚠️ Unaudited |
-| NineInchBuyAndBurnUpgradeable | unknown | ethereum | n/a | [`0xfd4443...ca7ced`](./contracts/ethereum-1/0xfd444341198e5381d72eb212600ffce299ca7ced/) | ⚠️ Unaudited |
-| NineInchBuyAndBurnUpgradeableV2 | unknown | ethereum | n/a | [`0x88eed3...647197`](./contracts/ethereum-1/0x88eed3bbca38b020aaed5dcc563f26d708647197/) | ⚠️ Unaudited |
-| NineInchFactory | unknown | ethereum | n/a | [`0xcbae5c...dd56d8`](./contracts/ethereum-1/0xcbae5c3f8259181eb7e2309bc4c72fdf02dd56d8/) | ⚠️ Unaudited |
-| NineInchRouter | unknown | ethereum | n/a | [`0xa79882...8264eb`](./contracts/ethereum-1/0xa79882a5bcd455c6e582dad43f3f3f2c9c8264eb/) | ⚠️ Unaudited |
-| NineInchSpotLimit | unknown | ethereum | n/a | [`0x545792...02ab21`](./contracts/ethereum-1/0x54579290a535d8731598f74eabe9c8020902ab21/) | ⚠️ Unaudited |
-| NineInchSpotLimitV2 | unknown | ethereum | n/a | [`0xc5b17d...6aaa8e`](./contracts/ethereum-1/0xc5b17ddacf4dc0bdbebe3043b95bf8fd8e6aaa8e/) | ⚠️ Unaudited |
-| PoorPleb | unknown | ethereum | n/a | [`0x9565c2...7bcfd0`](./contracts/ethereum-1/0x9565c2036963697786705120fc59310f747bcfd0/) | ⚠️ Unaudited |
-| Pulsedoge | unknown | ethereum | n/a | [`0x52ada2...3919a8`](./contracts/ethereum-1/0x52ada28f70bc8ebe5dd4381120d3cd76863919a8/) | ⚠️ Unaudited |
-| VotePower | unknown | ethereum | n/a | [`0x28bda9...410099`](./contracts/ethereum-1/0x28bda90b016b66df1991cd99bc18d11807410099/) | ⚠️ Unaudited |
-| WhereDidTheETHGo | unknown | ethereum | n/a | [`0xde0220...3a6be4`](./contracts/ethereum-1/0xde0220b69ce3e855a0124433a8e8d093f53a6be4/) | ⚠️ Unaudited |
+| BBC | unknown | ethereum | n/a | [`0x015628ce9150db1bce2fbb717a09e846f8a32436`](./contracts/ethereum-1/0x015628ce9150db1bce2fbb717a09e846f8a32436/) | ⚠️ Unaudited |
+| BulkTransfer | unknown | ethereum | n/a | [`0xea2a600269f18e2de6d4ba1cc81080729091b55c`](./contracts/ethereum-1/0xea2a600269f18e2de6d4ba1cc81080729091b55c/) | ⚠️ Unaudited |
+| MasterChefV2 | unknown | ethereum | n/a | [`0x3fefd06828689252a69207718985b9a78350561f`](./contracts/ethereum-1/0x3fefd06828689252a69207718985b9a78350561f/) | ⚠️ Unaudited |
+| NineInch | unknown | ethereum | n/a | [`0xfd8b9ba4845fb38c779317ec134b298c064937a2`](./contracts/ethereum-1/0xfd8b9ba4845fb38c779317ec134b298c064937a2/) | ⚠️ Unaudited |
+| NineInchBuyAndBurnUpgradeable | unknown | ethereum | n/a | [`0xfd444341198e5381d72eb212600ffce299ca7ced`](./contracts/ethereum-1/0xfd444341198e5381d72eb212600ffce299ca7ced/) | ⚠️ Unaudited |
+| NineInchBuyAndBurnUpgradeableV2 | unknown | ethereum | n/a | [`0x88eed3bbca38b020aaed5dcc563f26d708647197`](./contracts/ethereum-1/0x88eed3bbca38b020aaed5dcc563f26d708647197/) | ⚠️ Unaudited |
+| NineInchFactory | unknown | ethereum | n/a | [`0xcbae5c3f8259181eb7e2309bc4c72fdf02dd56d8`](./contracts/ethereum-1/0xcbae5c3f8259181eb7e2309bc4c72fdf02dd56d8/) | ⚠️ Unaudited |
+| NineInchRouter | unknown | ethereum | n/a | [`0xa79882a5bcd455c6e582dad43f3f3f2c9c8264eb`](./contracts/ethereum-1/0xa79882a5bcd455c6e582dad43f3f3f2c9c8264eb/) | ⚠️ Unaudited |
+| NineInchSpotLimit | unknown | ethereum | n/a | [`0x54579290a535d8731598f74eabe9c8020902ab21`](./contracts/ethereum-1/0x54579290a535d8731598f74eabe9c8020902ab21/) | ⚠️ Unaudited |
+| NineInchSpotLimitV2 | unknown | ethereum | n/a | [`0xc5b17ddacf4dc0bdbebe3043b95bf8fd8e6aaa8e`](./contracts/ethereum-1/0xc5b17ddacf4dc0bdbebe3043b95bf8fd8e6aaa8e/) | ⚠️ Unaudited |
+| PoorPleb | unknown | ethereum | n/a | [`0x9565c2036963697786705120fc59310f747bcfd0`](./contracts/ethereum-1/0x9565c2036963697786705120fc59310f747bcfd0/) | ⚠️ Unaudited |
+| Pulsedoge | unknown | ethereum | n/a | [`0x52ada28f70bc8ebe5dd4381120d3cd76863919a8`](./contracts/ethereum-1/0x52ada28f70bc8ebe5dd4381120d3cd76863919a8/) | ⚠️ Unaudited |
+| VotePower | unknown | ethereum | n/a | [`0x28bda90b016b66df1991cd99bc18d11807410099`](./contracts/ethereum-1/0x28bda90b016b66df1991cd99bc18d11807410099/) | ⚠️ Unaudited |
+| WhereDidTheETHGo | unknown | ethereum | n/a | [`0xde0220b69ce3e855a0124433a8e8d093f53a6be4`](./contracts/ethereum-1/0xde0220b69ce3e855a0124433a8e8d093f53a6be4/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -114,20 +114,20 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x015628...a32436`](./contracts/ethereum-1/0x015628ce9150db1bce2fbb717a09e846f8a32436/) | BBC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xea2a60...91b55c`](./contracts/ethereum-1/0xea2a600269f18e2de6d4ba1cc81080729091b55c/) | BulkTransfer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x3fefd0...50561f`](./contracts/ethereum-1/0x3fefd06828689252a69207718985b9a78350561f/) | MasterChefV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xfd8b9b...4937a2`](./contracts/ethereum-1/0xfd8b9ba4845fb38c779317ec134b298c064937a2/) | NineInch | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xfd4443...ca7ced`](./contracts/ethereum-1/0xfd444341198e5381d72eb212600ffce299ca7ced/) | NineInchBuyAndBurnUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x88eed3...647197`](./contracts/ethereum-1/0x88eed3bbca38b020aaed5dcc563f26d708647197/) | NineInchBuyAndBurnUpgradeableV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xcbae5c...dd56d8`](./contracts/ethereum-1/0xcbae5c3f8259181eb7e2309bc4c72fdf02dd56d8/) | NineInchFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa79882...8264eb`](./contracts/ethereum-1/0xa79882a5bcd455c6e582dad43f3f3f2c9c8264eb/) | NineInchRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x545792...02ab21`](./contracts/ethereum-1/0x54579290a535d8731598f74eabe9c8020902ab21/) | NineInchSpotLimit | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc5b17d...6aaa8e`](./contracts/ethereum-1/0xc5b17ddacf4dc0bdbebe3043b95bf8fd8e6aaa8e/) | NineInchSpotLimitV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x9565c2...7bcfd0`](./contracts/ethereum-1/0x9565c2036963697786705120fc59310f747bcfd0/) | PoorPleb | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x52ada2...3919a8`](./contracts/ethereum-1/0x52ada28f70bc8ebe5dd4381120d3cd76863919a8/) | Pulsedoge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x28bda9...410099`](./contracts/ethereum-1/0x28bda90b016b66df1991cd99bc18d11807410099/) | VotePower | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xde0220...3a6be4`](./contracts/ethereum-1/0xde0220b69ce3e855a0124433a8e8d093f53a6be4/) | WhereDidTheETHGo | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x015628ce9150db1bce2fbb717a09e846f8a32436`](./contracts/ethereum-1/0x015628ce9150db1bce2fbb717a09e846f8a32436/) | BBC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xea2a600269f18e2de6d4ba1cc81080729091b55c`](./contracts/ethereum-1/0xea2a600269f18e2de6d4ba1cc81080729091b55c/) | BulkTransfer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x3fefd06828689252a69207718985b9a78350561f`](./contracts/ethereum-1/0x3fefd06828689252a69207718985b9a78350561f/) | MasterChefV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xfd8b9ba4845fb38c779317ec134b298c064937a2`](./contracts/ethereum-1/0xfd8b9ba4845fb38c779317ec134b298c064937a2/) | NineInch | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xfd444341198e5381d72eb212600ffce299ca7ced`](./contracts/ethereum-1/0xfd444341198e5381d72eb212600ffce299ca7ced/) | NineInchBuyAndBurnUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x88eed3bbca38b020aaed5dcc563f26d708647197`](./contracts/ethereum-1/0x88eed3bbca38b020aaed5dcc563f26d708647197/) | NineInchBuyAndBurnUpgradeableV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xcbae5c3f8259181eb7e2309bc4c72fdf02dd56d8`](./contracts/ethereum-1/0xcbae5c3f8259181eb7e2309bc4c72fdf02dd56d8/) | NineInchFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa79882a5bcd455c6e582dad43f3f3f2c9c8264eb`](./contracts/ethereum-1/0xa79882a5bcd455c6e582dad43f3f3f2c9c8264eb/) | NineInchRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x54579290a535d8731598f74eabe9c8020902ab21`](./contracts/ethereum-1/0x54579290a535d8731598f74eabe9c8020902ab21/) | NineInchSpotLimit | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc5b17ddacf4dc0bdbebe3043b95bf8fd8e6aaa8e`](./contracts/ethereum-1/0xc5b17ddacf4dc0bdbebe3043b95bf8fd8e6aaa8e/) | NineInchSpotLimitV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x9565c2036963697786705120fc59310f747bcfd0`](./contracts/ethereum-1/0x9565c2036963697786705120fc59310f747bcfd0/) | PoorPleb | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x52ada28f70bc8ebe5dd4381120d3cd76863919a8`](./contracts/ethereum-1/0x52ada28f70bc8ebe5dd4381120d3cd76863919a8/) | Pulsedoge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x28bda90b016b66df1991cd99bc18d11807410099`](./contracts/ethereum-1/0x28bda90b016b66df1991cd99bc18d11807410099/) | VotePower | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xde0220b69ce3e855a0124433a8e8d093f53a6be4`](./contracts/ethereum-1/0xde0220b69ce3e855a0124433a8e8d093f53a6be4/) | WhereDidTheETHGo | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

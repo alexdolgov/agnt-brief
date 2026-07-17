@@ -61,9 +61,9 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| MoolaStakingRewards | unknown | celo | n/a | [`0xb45094...b439b8`](./contracts/celo-42220/0xb450940c5297e9b5e7167fac5903fd1e90b439b8/) | ⚠️ Unaudited |
-| Swap | unknown | celo | n/a | [`0x23c956...30bc3e`](./contracts/celo-42220/0x23c95678862a229fac088bd9705622d78130bc3e/) | ⚠️ Unaudited |
-| Vyper_contract | unknown | celo | n/a | [`0x0a125d...09222a`](./contracts/celo-42220/0x0a125d473cd3b1968e728ddf7d424c928c09222a/) | ⚠️ Unaudited |
+| MoolaStakingRewards | unknown | celo | n/a | [`0xb450940c5297e9b5e7167fac5903fd1e90b439b8`](./contracts/celo-42220/0xb450940c5297e9b5e7167fac5903fd1e90b439b8/) | ⚠️ Unaudited |
+| Swap | unknown | celo | n/a | [`0x23c95678862a229fac088bd9705622d78130bc3e`](./contracts/celo-42220/0x23c95678862a229fac088bd9705622d78130bc3e/) | ⚠️ Unaudited |
+| Vyper_contract | unknown | celo | n/a | [`0x0a125d473cd3b1968e728ddf7d424c928c09222a`](./contracts/celo-42220/0x0a125d473cd3b1968e728ddf7d424c928c09222a/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -94,9 +94,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| celo | [`0xb45094...b439b8`](./contracts/celo-42220/0xb450940c5297e9b5e7167fac5903fd1e90b439b8/) | MoolaStakingRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x23c956...30bc3e`](./contracts/celo-42220/0x23c95678862a229fac088bd9705622d78130bc3e/) | Swap | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x0a125d...09222a`](./contracts/celo-42220/0x0a125d473cd3b1968e728ddf7d424c928c09222a/) | Vyper_contract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | [`0xb450940c5297e9b5e7167fac5903fd1e90b439b8`](./contracts/celo-42220/0xb450940c5297e9b5e7167fac5903fd1e90b439b8/) | MoolaStakingRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | [`0x23c95678862a229fac088bd9705622d78130bc3e`](./contracts/celo-42220/0x23c95678862a229fac088bd9705622d78130bc3e/) | Swap | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | [`0x0a125d473cd3b1968e728ddf7d424c928c09222a`](./contracts/celo-42220/0x0a125d473cd3b1968e728ddf7d424c928c09222a/) | Vyper_contract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

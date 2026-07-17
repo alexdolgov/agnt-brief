@@ -52,9 +52,9 @@ The pinned logic-topography run contains 2 contract row(s) across arbitrum, base
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xcd89ab...21dc8f`, chain 8453)
-- mortgagefipoolusdtwbtc (`0x2f5aac...520a91`, chain 42161)
-- mortgagefiusdccbbtcupgraded (`0xe93131...b62dc7`, chain 8453)
+- UnnamedContract (`0xcd89abe6ec3eedef07713e1b89d698c0c421dc8f`, chain 8453)
+- mortgagefipoolusdtwbtc (`0x2f5aac46575f68fe600e99096ca38301a4520a91`, chain 42161)
+- mortgagefiusdccbbtcupgraded (`0xe93131620945a1273b48f57f453983d270b62dc7`, chain 8453)
 
 ## Contract Surface Quality
 
@@ -100,13 +100,13 @@ The pinned logic-topography run contains 2 contract row(s) across arbitrum, base
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| mortgagecontracts | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 3 deployments: arbitrum `0xa702f6...059109`; arbitrum `0xcb83d4...b2c87b`; arbitrum `0xede6f5...92bfe1` | ⚠️ Unaudited |
-| mortgageconversionvault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 3 deployments: arbitrum `0x61d268...33fbed`; arbitrum `0x76d804...141b59`; arbitrum `0xa468d9...9f8988` | ⚠️ Unaudited |
-| mortgagefipoolusdcweth | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x1be87d...de9eea` | ⚠️ Unaudited |
-| mortgagefipoolusdtwbtc | core_logic | project_anchor | own_supporting | 0 | arbitrum | unit-389466 | `0x2f5aac...520a91` | ⚠️ Unaudited |
-| mortgagefipoolusdtwbtc | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: arbitrum `0x9be2cf...22a33f`; arbitrum `0xc355f7...d8ea72` | ⚠️ Unaudited |
-| mortgagefiusdccbbtcupgraded | unknown | project_anchor | own_supporting | 1 | base | unit-389468 | `0xe93131...b62dc7` | ⚠️ Unaudited |
-| mortgagetickets | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 3 deployments: arbitrum `0x5c72d7...b61932`; arbitrum `0x7ce0dc...8dede3`; arbitrum `0x8b712a...c63375` | ⚠️ Unaudited |
+| mortgagecontracts | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 3 deployments: arbitrum `0xa702f61b6e055be8d394754f59814254f7059109`; arbitrum `0xcb83d438943cad3dc11d5c83a97d14872cb2c87b`; arbitrum `0xede6f5f8a9d6b90b1392dcc9e7fd8a5b0192bfe1` | ⚠️ Unaudited |
+| mortgageconversionvault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 3 deployments: arbitrum `0x61d2688121676ed8123ad62e71994c66ee33fbed`; arbitrum `0x76d80459a85e795ccff36f34dc8a4cfa08141b59`; arbitrum `0xa468d9260a96fd7db044a35047010e91869f8988` | ⚠️ Unaudited |
+| mortgagefipoolusdcweth | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x1be87d273d47c3832ab7853812e9a995a4de9eea` | ⚠️ Unaudited |
+| mortgagefipoolusdtwbtc | core_logic | project_anchor | own_supporting | 0 | arbitrum | unit-389466 | `0x2f5aac46575f68fe600e99096ca38301a4520a91` | ⚠️ Unaudited |
+| mortgagefipoolusdtwbtc | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: arbitrum `0x9be2cf73e62dd3b5df4334d9a36888394822a33f`; arbitrum `0xc355f70f5f37f773e76e16d0e046c5f868d8ea72` | ⚠️ Unaudited |
+| mortgagefiusdccbbtcupgraded | unknown | project_anchor | own_supporting | 1 | base | unit-389468 | `0xe93131620945a1273b48f57f453983d270b62dc7` | ⚠️ Unaudited |
+| mortgagetickets | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 3 deployments: arbitrum `0x5c72d7be838415a663dda5f1213c0d72b4b61932`; arbitrum `0x7ce0dcbf0b72bc06fc82361848e74024388dede3`; arbitrum `0x8b712a8afd5163460cc121deef6d233011c63375` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -126,23 +126,23 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0aea2d...2f71b6` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x32ff6c...2bd0a9` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x392574...5d0e5b` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x45306c...bf1f75` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x646a9d...f58c12` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xa49204...05ea10` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xafcf31...533817` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb5a79b...9b3152` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbbd3e8...c0b002` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-389467 | `0xcd89ab...21dc8f` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xd5f28c...f8c766` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xe0dc45...16f2f3` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xfd7457...7648d8` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x2fe514...b37cda` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x3bccf0...c72051` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x59f888...ca5bf9` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x9dd3f2...6d6db8` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0aea2ddf5e255a9b73f1dd8557be4dc19b2f71b6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x32ff6cda1fddfbcb01980fb00543b95db42bd0a9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x392574f6f3dfd576514fba8e53304c3a815d0e5b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x45306c3927e81a9a3dd9152cb7af064afcbf1f75` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x646a9d3148c7443b7b644adc465f2ac1baf58c12` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xa49204110778ff1e333f71067aef92e34c05ea10` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xafcf31294fcc627217c8c5334af20258bf533817` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb5a79b21045c4a36e73bc723804c2ed7859b3152` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbbd3e8fc6ee1e441c841baaaa8cde330d1c0b002` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-389467 | `0xcd89abe6ec3eedef07713e1b89d698c0c421dc8f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xd5f28ca9b4d5580e79b4561e424fca88fbf8c766` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xe0dc45a7141db52a1452ec99140458870816f2f3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xfd7457e714b4b218fa95dea40d0665f7e47648d8` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x2fe51499d328009ab7b8abed6b27dabd58b37cda` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x3bccf0b30e9081c586496c827587e27652c72051` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x59f8881d28772f8e23a1b282fb9d5fc2e7ca5bf9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x9dd3f2b92fd5708a44e6df95cd57b59e896d6db8` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -182,8 +182,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | `0x2f5aac...520a91` | mortgagefipoolusdtwbtc | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xe93131...b62dc7` | mortgagefiusdccbbtcupgraded | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0x2f5aac46575f68fe600e99096ca38301a4520a91` | mortgagefipoolusdtwbtc | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xe93131620945a1273b48f57f453983d270b62dc7` | mortgagefiusdccbbtcupgraded | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -57,8 +57,8 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x1ecdb3...0c6603`, chain 1)
-- UnnamedContract (`0x7a5602...d8bf7a`, chain 169)
+- UnnamedContract (`0x1ecdb32e59e948c010a189a0798c674a2d0c6603`, chain 1)
+- UnnamedContract (`0x7a560269480ef38b885526c8bbecdc4686d8bf7a`, chain 169)
 
 ## Contract Surface Quality
 
@@ -104,18 +104,18 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x193aaa...2aecbf` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0x1311d5...cf9d4d` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | arbitrum | n/a | `0x47d7c1...fdc9bf` | ⚠️ Unaudited |
-| MappingLog | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xf9a286...78810a` | ⚠️ Unaudited |
-| PreMarket | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0e57ff...2ac3da` | ⚠️ Unaudited |
-| PreMarketMigration | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x31847b...136290` | ⚠️ Unaudited |
-| PreMarketMode | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0xed66db...09e79c` | ⚠️ Unaudited |
-| PremarketOFTFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x20c453...968940` | ⚠️ Unaudited |
-| PreMarketV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0e57ff...2ac3da` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x1ecdb3...0c6603` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x12617f...28d43b` | ⚠️ Unaudited |
-| VCDeal | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0b416a...c5b25c` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x193aaa7e9f358b7e52c978bf560f28f2b62aecbf` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0x1311d574598b516b3b050e77ab9e424867cf9d4d` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | arbitrum | n/a | `0x47d7c164834ccae520be78f9cb032d6d03fdc9bf` | ⚠️ Unaudited |
+| MappingLog | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xf9a286c70830f2b35b1bc530e62769393c78810a` | ⚠️ Unaudited |
+| PreMarket | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0e57fff83ae53b22c5b656745168b21a9d2ac3da` | ⚠️ Unaudited |
+| PreMarketMigration | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x31847b4f5cce05fa29038e914f5fdd952f136290` | ⚠️ Unaudited |
+| PreMarketMode | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0xed66dbd66ecbd215827eea1eea896ccc2e09e79c` | ⚠️ Unaudited |
+| PremarketOFTFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x20c453e643badb04072ca2a94eef965a58968940` | ⚠️ Unaudited |
+| PreMarketV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0e57fff83ae53b22c5b656745168b21a9d2ac3da` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x1ecdb32e59e948c010a189a0798c674a2d0c6603` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x12617f31a29dccff3790e4767239a7b00928d43b` | ⚠️ Unaudited |
+| VCDeal | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0b416aa811bd8396f516be8833b9683524c5b25c` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -135,8 +135,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396625 | `0x1ecdb3...0c6603` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-396627 | `0x7a5602...d8bf7a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396625 | `0x1ecdb32e59e948c010a189a0798c674a2d0c6603` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-396627 | `0x7a560269480ef38b885526c8bbecdc4686d8bf7a` | ❓ Unverified |
 
 ## Audit Inventory
 

@@ -57,8 +57,8 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x230b44...1e1f66`, chain 56)
-- UnnamedContract (`0x230b44...1e1f66`, chain 8453)
+- UnnamedContract (`0x230b442c0802fe83daf3d2656aadfd16ca1e1f66`, chain 56)
+- UnnamedContract (`0x230b442c0802fe83daf3d2656aadfd16ca1e1f66`, chain 8453)
 
 ## Contract Surface Quality
 
@@ -103,13 +103,13 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| EmptyContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd7e240...4f8a27` | ⚠️ Unaudited |
-| PauserRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x52537f...a98bf1` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0x0584f8...d61390` | ⚠️ Unaudited |
-| Slasher | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x13066c...4f37b4` | ⚠️ Unaudited |
-| StrategyBaseTVLLimits | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x13c5f3...5eac5c` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | external_dependency_or_infra | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x00b67e...681bc1` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | external_dependency_or_infra | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x230b44...1e1f66` | ⚠️ Unaudited |
+| EmptyContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd7e240bde89eae9166a126a7fb7a68ebe64f8a27` | ⚠️ Unaudited |
+| PauserRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x52537f1a015ab9785dd48a9e553f593157a98bf1` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0x0584f8a92af95e9e441142f9e2f0b5999bd61390` | ⚠️ Unaudited |
+| Slasher | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x13066c68dc4f5e8e10a75adf6dd53e87904f37b4` | ⚠️ Unaudited |
+| StrategyBaseTVLLimits | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x13c5f34471a14bc466d4ed1e6c7a840fa45eac5c` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | external_dependency_or_infra | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x00b67e4805138325ce871d5e27dc15f994681bc1` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | external_dependency_or_infra | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x230b442c0802fe83daf3d2656aadfd16ca1e1f66` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -129,14 +129,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0584f8...d61390` | ❓ Unverified |
-| UnnamedContract | unknown | unclassified_address_book | needs_review (excluded) | 0 | bsc | unit-390710 | `0x230b44...1e1f66` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xb2d728...c4c2e3` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xd7e240...4f8a27` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0584f8...d61390` | ❓ Unverified |
-| UnnamedContract | unknown | unclassified_address_book | needs_review (excluded) | 0 | base | unit-390711 | `0x230b44...1e1f66` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb2d728...c4c2e3` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xd7e240...4f8a27` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0584f8a92af95e9e441142f9e2f0b5999bd61390` | ❓ Unverified |
+| UnnamedContract | unknown | unclassified_address_book | needs_review (excluded) | 0 | bsc | unit-390710 | `0x230b442c0802fe83daf3d2656aadfd16ca1e1f66` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xb2d72888e96ed3027a4bed955f4dd144fcc4c2e3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xd7e240bde89eae9166a126a7fb7a68ebe64f8a27` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0584f8a92af95e9e441142f9e2f0b5999bd61390` | ❓ Unverified |
+| UnnamedContract | unknown | unclassified_address_book | needs_review (excluded) | 0 | base | unit-390711 | `0x230b442c0802fe83daf3d2656aadfd16ca1e1f66` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb2d72888e96ed3027a4bed955f4dd144fcc4c2e3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xd7e240bde89eae9166a126a7fb7a68ebe64f8a27` | ❓ Unverified |
 
 ## Audit Inventory
 

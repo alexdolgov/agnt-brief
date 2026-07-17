@@ -59,11 +59,11 @@ The protocol comprises 2 functional families. Contracts are linked by 1 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Bfbtc | unknown | bsc | n/a | [`0x128eb2...d55f1b`](./contracts/bsc-56/0x128eb2baca6ac5416bed268d41c202fc41d55f1b/) | ✅ Audited |
-| BfbtcOracle | unknown | base | n/a | [`0x3f8c84...ab5f5b`](./contracts/base-8453/0x3f8c84fe47486156b81e74f08c4d9be3c3ab5f5b/) | ✅ Audited |
-| BitFiStablecoinManager | unknown | ethereum | n/a | [`0xb69865...d21f06`](./contracts/ethereum-1/0xb69865f8fa4bfc67ab4ad233e36ac593a5d21f06/) | ✅ Audited |
-| BitFiStablecoinZap | unknown | ethereum | n/a | [`0x140b55...4b66cb`](./contracts/ethereum-1/0x140b5517df7e33878eb0a494d6882cfac54b66cb/) | ✅ Audited |
-| StakedBitFiStablecoin | unknown | ethereum | n/a | [`0x688745...a871c5`](./contracts/ethereum-1/0x688745d56f93924dbda1c2caa613adcbcea871c5/) | ✅ Audited |
+| Bfbtc | unknown | bsc | n/a | [`0x128eb2baca6ac5416bed268d41c202fc41d55f1b`](./contracts/bsc-56/0x128eb2baca6ac5416bed268d41c202fc41d55f1b/) | ✅ Audited |
+| BfbtcOracle | unknown | base | n/a | [`0x3f8c84fe47486156b81e74f08c4d9be3c3ab5f5b`](./contracts/base-8453/0x3f8c84fe47486156b81e74f08c4d9be3c3ab5f5b/) | ✅ Audited |
+| BitFiStablecoinManager | unknown | ethereum | n/a | [`0xb69865f8fa4bfc67ab4ad233e36ac593a5d21f06`](./contracts/ethereum-1/0xb69865f8fa4bfc67ab4ad233e36ac593a5d21f06/) | ✅ Audited |
+| BitFiStablecoinZap | unknown | ethereum | n/a | [`0x140b5517df7e33878eb0a494d6882cfac54b66cb`](./contracts/ethereum-1/0x140b5517df7e33878eb0a494d6882cfac54b66cb/) | ✅ Audited |
+| StakedBitFiStablecoin | unknown | ethereum | n/a | [`0x688745d56f93924dbda1c2caa613adcbcea871c5`](./contracts/ethereum-1/0x688745d56f93924dbda1c2caa613adcbcea871c5/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 

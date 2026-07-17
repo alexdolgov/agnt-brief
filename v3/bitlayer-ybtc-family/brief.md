@@ -52,15 +52,15 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x000000...00f000`, chain 200901)
-- UnnamedContract (`0x0e4cf4...d020bf`, chain 200901)
-- UnnamedContract (`0x4e59b4...b4956c`, chain 200901)
-- UnnamedContract (`0x53cdc1...76c0ae`, chain 200901)
-- UnnamedContract (`0x5b256f...529474`, chain 200901)
-- UnnamedContract (`0x69cb4d...5a1a21`, chain 200901)
-- UnnamedContract (`0xc8818a...7a6234`, chain 200901)
-- UnnamedContract (`0xddf655...282d4a`, chain 200901)
-- UnnamedContract (`0xff204e...e4fc5f`, chain 200901)
+- UnnamedContract (`0x000000000000000000000000000000000000f000`, chain 200901)
+- UnnamedContract (`0x0e4cf4affdb72b39ea91fa726d291781cbd020bf`, chain 200901)
+- UnnamedContract (`0x4e59b44847b379578588920ca78fbf26c0b4956c`, chain 200901)
+- UnnamedContract (`0x53cdc1876d82a095d9669192cdf0614fbb76c0ae`, chain 200901)
+- UnnamedContract (`0x5b256fe9e993902ece49d138a5b1162cbb529474`, chain 200901)
+- UnnamedContract (`0x69cb4d2511c81a52fc8d6f8e7ef6a650645a1a21`, chain 200901)
+- UnnamedContract (`0xc8818aaeabf0df9f3f3fff54ab185705177a6234`, chain 200901)
+- UnnamedContract (`0xddf655d9afd934b4851873ba55a678dc82282d4a`, chain 200901)
+- UnnamedContract (`0xff204e2681a6fa0e2c3fade68a1b28fb90e4fc5f`, chain 200901)
 
 ## Contract Surface Quality
 
@@ -124,15 +124,15 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bitlayer | unit-380629 | `0x000000...00f000` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bitlayer | unit-380630 | `0x0e4cf4...d020bf` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bitlayer | unit-380631 | `0x4e59b4...b4956c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bitlayer | unit-380632 | `0x53cdc1...76c0ae` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bitlayer | unit-380633 | `0x5b256f...529474` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bitlayer | unit-380634 | `0x69cb4d...5a1a21` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bitlayer | unit-380635 | `0xc8818a...7a6234` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bitlayer | unit-380636 | `0xddf655...282d4a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bitlayer | unit-380637 | `0xff204e...e4fc5f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bitlayer | unit-380629 | `0x000000000000000000000000000000000000f000` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bitlayer | unit-380630 | `0x0e4cf4affdb72b39ea91fa726d291781cbd020bf` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bitlayer | unit-380631 | `0x4e59b44847b379578588920ca78fbf26c0b4956c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bitlayer | unit-380632 | `0x53cdc1876d82a095d9669192cdf0614fbb76c0ae` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bitlayer | unit-380633 | `0x5b256fe9e993902ece49d138a5b1162cbb529474` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bitlayer | unit-380634 | `0x69cb4d2511c81a52fc8d6f8e7ef6a650645a1a21` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bitlayer | unit-380635 | `0xc8818aaeabf0df9f3f3fff54ab185705177a6234` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bitlayer | unit-380636 | `0xddf655d9afd934b4851873ba55a678dc82282d4a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bitlayer | unit-380637 | `0xff204e2681a6fa0e2c3fade68a1b28fb90e4fc5f` | ❓ Unverified |
 
 ## Audit Inventory
 

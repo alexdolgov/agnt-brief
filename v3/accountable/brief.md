@@ -90,24 +90,24 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AccountableFixedTerm | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-120141 | `0x00e8fe...890e4c` | ⚠️ Unaudited |
-| AccountableOpenTerm | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-120149 | `0x616eca...2dd3b6` | ⚠️ Unaudited |
-| AccountableYield | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-120143 | `0x1e05be...a689da` | ⚠️ Unaudited |
-| AsyncVaultFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-120151 | `0x859a15...115dc4` | ⚠️ Unaudited |
-| AtomicBatcher | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-120146 | `0x35c717...c08777` | ⚠️ Unaudited |
-| DVNPublisherFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-120158 | `0x0a2a9e...0d9f86` | ⚠️ Unaudited |
-| DVNPublisherFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-120144 | `0x24c27e...607c42` | ⚠️ Unaudited |
-| EarlyExitModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-120155 | `0xc778f3...e9b1f9` | ⚠️ Unaudited |
-| EarlyExitOpenTerm | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-120150 | `0x66d6c3...8e819c` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | ethereum | unit-120156 | `0x59b0b8...cc1725` | ⚠️ Unaudited |
-| FeeManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-120142 | `0x0d2c8f...fc225b` | ⚠️ Unaudited |
-| FixedTermFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-120145 | `0x2a7f22...1fc69a` | ⚠️ Unaudited |
-| GlobalRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-120157 | `0x6436e1...c617af` | ⚠️ Unaudited |
-| HelloAccountable | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-120152 | `0x9e224e...d7b3b9` | ⚠️ Unaudited |
-| HypernativePauseModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-120148 | `0x4e22a9...2dcc07` | ⚠️ Unaudited |
-| OpenTermFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-120147 | `0x4927ce...9ea181` | ⚠️ Unaudited |
-| RewardsFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-120154 | `0xa0ae7e...a031ef` | ⚠️ Unaudited |
-| YieldStrategyFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-120153 | `0x9f1eb2...769518` | ⚠️ Unaudited |
+| AccountableFixedTerm | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-120141 | `0x00e8fe8dc7e96dbc021b843ee8411f95c0890e4c` | ⚠️ Unaudited |
+| AccountableOpenTerm | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-120149 | `0x616eca2310eb1a0bd620afbf916314f3702dd3b6` | ⚠️ Unaudited |
+| AccountableYield | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-120143 | `0x1e05bedb3ea09a145bae551ec93b49385ba689da` | ⚠️ Unaudited |
+| AsyncVaultFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-120151 | `0x859a15b7c2b4fd0641424342130f2b073a115dc4` | ⚠️ Unaudited |
+| AtomicBatcher | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-120146 | `0x35c7171db2bd8164a36c3ae93ef9d4fb4cc08777` | ⚠️ Unaudited |
+| DVNPublisherFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-120158 | `0x0a2a9ecf70e6fec00a53d3ec000ac97f260d9f86` | ⚠️ Unaudited |
+| DVNPublisherFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-120144 | `0x24c27ea8965c70670857e9ec9f18e9eab7607c42` | ⚠️ Unaudited |
+| EarlyExitModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-120155 | `0xc778f3a8bcdf9f8daee9d0e8508af83e90e9b1f9` | ⚠️ Unaudited |
+| EarlyExitOpenTerm | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-120150 | `0x66d6c3f32676a31f1b2e14f6bf6da9fc8d8e819c` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | ethereum | unit-120156 | `0x59b0b84371bb3261fad538c512efffc414cc1725` | ⚠️ Unaudited |
+| FeeManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-120142 | `0x0d2c8f073c354e5b1306be1a31c36158bbfc225b` | ⚠️ Unaudited |
+| FixedTermFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-120145 | `0x2a7f22f81a3d301b8f0eaf4f09a78558c91fc69a` | ⚠️ Unaudited |
+| GlobalRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-120157 | `0x6436e1f2edc981b69a3b0f396924cec01dc617af` | ⚠️ Unaudited |
+| HelloAccountable | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-120152 | `0x9e224e411ee0d7f30d3643d2cc8bf05198d7b3b9` | ⚠️ Unaudited |
+| HypernativePauseModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-120148 | `0x4e22a922002494e0f016e96289e946b9f32dcc07` | ⚠️ Unaudited |
+| OpenTermFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-120147 | `0x4927ce3402035b801a1beddc498b7fb2fe9ea181` | ⚠️ Unaudited |
+| RewardsFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-120154 | `0xa0ae7ec6f93e55160f3f79840068549e8ca031ef` | ⚠️ Unaudited |
+| YieldStrategyFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-120153 | `0x9f1eb2be7b6a7e611c270bbdb0a3358786769518` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

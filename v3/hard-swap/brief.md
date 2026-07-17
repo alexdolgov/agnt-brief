@@ -52,10 +52,10 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- HARD Swap NON_FUNGIBLE_POSITION_MANAGER (`0x055ef0...c1ac47`, chain 2222)
-- HARD Swap UNI_FACTORY (`0xd6e417...c90076`, chain 2222)
-- HARD Swap UNI_QUOTER (`0x9d0979...d8070e`, chain 2222)
-- HARD Swap UNI_ROUTER (`0x51c73c...586afd`, chain 2222)
+- HARD Swap NON_FUNGIBLE_POSITION_MANAGER (`0x055ef0ddc6bac1926af3405cf84e722fc9c1ac47`, chain 2222)
+- HARD Swap UNI_FACTORY (`0xd6e4170c9097a5b5c85e8a39111bf37e47c90076`, chain 2222)
+- HARD Swap UNI_QUOTER (`0x9d097985c4ee2c9414b7d069897ddc3010d8070e`, chain 2222)
+- HARD Swap UNI_ROUTER (`0x51c73ceaf73d03f9b26d93736cd021f795586afd`, chain 2222)
 
 ## Contract Surface Quality
 
@@ -119,10 +119,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| HARD Swap NON_FUNGIBLE_POSITION_MANAGER | unknown | project_anchor | own_supporting | 0 | kava | unit-387320 | `0x055ef0...c1ac47` | ❓ Unverified |
-| HARD Swap UNI_FACTORY | unknown | project_anchor | own_supporting | 0 | kava | unit-387323 | `0xd6e417...c90076` | ❓ Unverified |
-| HARD Swap UNI_QUOTER | unknown | project_anchor | own_supporting | 0 | kava | unit-387322 | `0x9d0979...d8070e` | ❓ Unverified |
-| HARD Swap UNI_ROUTER | unknown | project_anchor | own_supporting | 0 | kava | unit-387321 | `0x51c73c...586afd` | ❓ Unverified |
+| HARD Swap NON_FUNGIBLE_POSITION_MANAGER | unknown | project_anchor | own_supporting | 0 | kava | unit-387320 | `0x055ef0ddc6bac1926af3405cf84e722fc9c1ac47` | ❓ Unverified |
+| HARD Swap UNI_FACTORY | unknown | project_anchor | own_supporting | 0 | kava | unit-387323 | `0xd6e4170c9097a5b5c85e8a39111bf37e47c90076` | ❓ Unverified |
+| HARD Swap UNI_QUOTER | unknown | project_anchor | own_supporting | 0 | kava | unit-387322 | `0x9d097985c4ee2c9414b7d069897ddc3010d8070e` | ❓ Unverified |
+| HARD Swap UNI_ROUTER | unknown | project_anchor | own_supporting | 0 | kava | unit-387321 | `0x51c73ceaf73d03f9b26d93736cd021f795586afd` | ❓ Unverified |
 
 ## Audit Inventory
 

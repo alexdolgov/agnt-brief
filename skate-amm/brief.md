@@ -60,13 +60,13 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ClaimAndStakeHandlerHook | unknown | ethereum | n/a | [`0x802be7...5de652`](./contracts/ethereum-1/0x802be72795617acec443321504150951f85de652/) | ✅ Audited |
+| ClaimAndStakeHandlerHook | unknown | ethereum | n/a | [`0x802be72795617acec443321504150951f85de652`](./contracts/ethereum-1/0x802be72795617acec443321504150951f85de652/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ERC1967Proxy | unknown | ethereum | n/a | [`0x6863b6...a7ac8d`](./contracts/ethereum-1/0x6863b6f2e4e0e212cc43a460e6a9b49579a7ac8d/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | ethereum | n/a | [`0x6863b6f2e4e0e212cc43a460e6a9b49579a7ac8d`](./contracts/ethereum-1/0x6863b6f2e4e0e212cc43a460e6a9b49579a7ac8d/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

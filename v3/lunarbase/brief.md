@@ -52,15 +52,15 @@ The pinned logic-topography run contains 1 contract row(s) across base. Structur
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x0000ef...d01b99`, chain 8453)
-- UnnamedContract (`0x1980d0...56c66b`, chain 8453)
-- UnnamedContract (`0x19cef8...55f9fe`, chain 8453)
-- UnnamedContract (`0x26e932...41be28`, chain 8453)
-- UnnamedContract (`0x421f5a...4ecc21`, chain 8453)
-- UnnamedContract (`0x66bc37...2d1d99`, chain 8453)
-- UnnamedContract (`0x758fb9...babb88`, chain 8453)
-- UnnamedContract (`0xc0b5b8...25b60f`, chain 8453)
-- UnnamedContract (`0xf56e3e...352a21`, chain 8453)
+- UnnamedContract (`0x0000efc4ec03a7c47d3a38a9be7ff1d52dd01b99`, chain 8453)
+- UnnamedContract (`0x1980d075dc98ae2ffc0e15be56a850931856c66b`, chain 8453)
+- UnnamedContract (`0x19cef85d1248006e2dfb5a30ad7e5db39155f9fe`, chain 8453)
+- UnnamedContract (`0x26e9329b3d59f1e84fe347d77a2e229c0f41be28`, chain 8453)
+- UnnamedContract (`0x421f5a5ec2daa42efe4142a4da0e87e9fa4ecc21`, chain 8453)
+- UnnamedContract (`0x66bc378323a93a9c86fa4c18ce6f720ecb2d1d99`, chain 8453)
+- UnnamedContract (`0x758fb98d015402607484eb676c76fdae1bbabb88`, chain 8453)
+- UnnamedContract (`0xc0b5b8d26d29f32b4b609cd273fa05d14e25b60f`, chain 8453)
+- UnnamedContract (`0xf56e3eef846eca39c8fa1364483d4ae36a352a21`, chain 8453)
 
 ## Contract Surface Quality
 
@@ -106,7 +106,7 @@ The pinned logic-topography run contains 1 contract row(s) across base. Structur
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | base | unit-388616 | `0x1980d0...56c66b` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | base | unit-388616 | `0x1980d075dc98ae2ffc0e15be56a850931856c66b` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -126,14 +126,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | base | unit-388615 | `0x0000ef...d01b99` | ❓ Unverified |
-| UnnamedContract | periphery | project_anchor | own_supporting | 0 | base | unit-388617 | `0x19cef8...55f9fe` | ❓ Unverified |
-| UnnamedContract | periphery | project_anchor | own_supporting | 0 | base | unit-388618 | `0x26e932...41be28` | ❓ Unverified |
-| UnnamedContract | periphery | project_anchor | own_supporting | 0 | base | unit-388619 | `0x421f5a...4ecc21` | ❓ Unverified |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | base | unit-388620 | `0x66bc37...2d1d99` | ❓ Unverified |
-| UnnamedContract | periphery | project_anchor | own_supporting | 0 | base | unit-388621 | `0x758fb9...babb88` | ❓ Unverified |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | base | unit-388623 | `0xc0b5b8...25b60f` | ❓ Unverified |
-| UnnamedContract | registry | project_anchor | own_supporting | 0 | base | unit-388624 | `0xf56e3e...352a21` | ❓ Unverified |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | base | unit-388615 | `0x0000efc4ec03a7c47d3a38a9be7ff1d52dd01b99` | ❓ Unverified |
+| UnnamedContract | periphery | project_anchor | own_supporting | 0 | base | unit-388617 | `0x19cef85d1248006e2dfb5a30ad7e5db39155f9fe` | ❓ Unverified |
+| UnnamedContract | periphery | project_anchor | own_supporting | 0 | base | unit-388618 | `0x26e9329b3d59f1e84fe347d77a2e229c0f41be28` | ❓ Unverified |
+| UnnamedContract | periphery | project_anchor | own_supporting | 0 | base | unit-388619 | `0x421f5a5ec2daa42efe4142a4da0e87e9fa4ecc21` | ❓ Unverified |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | base | unit-388620 | `0x66bc378323a93a9c86fa4c18ce6f720ecb2d1d99` | ❓ Unverified |
+| UnnamedContract | periphery | project_anchor | own_supporting | 0 | base | unit-388621 | `0x758fb98d015402607484eb676c76fdae1bbabb88` | ❓ Unverified |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | base | unit-388623 | `0xc0b5b8d26d29f32b4b609cd273fa05d14e25b60f` | ❓ Unverified |
+| UnnamedContract | registry | project_anchor | own_supporting | 0 | base | unit-388624 | `0xf56e3eef846eca39c8fa1364483d4ae36a352a21` | ❓ Unverified |
 
 ## Audit Inventory
 

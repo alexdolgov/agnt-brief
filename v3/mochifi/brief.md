@@ -52,18 +52,18 @@ The pinned logic-topography run contains 4 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x09e9ef...c5963e`, chain 1)
-- UnnamedContract (`0x5d2784...8d175f`, chain 1)
-- UnnamedContract (`0x62a1c6...264c14`, chain 1)
-- UnnamedContract (`0xa6046b...8e896b`, chain 1)
-- UnnamedContract (`0xa8347e...cb28c8`, chain 1)
-- UnnamedContract (`0xa8dad4...a91a3f`, chain 1)
-- UnnamedContract (`0xc944b2...bc4932`, chain 1)
-- UnnamedContract (`0xe9f9f3...d81752`, chain 1)
-- MochiCSSRv0 (`0x766f7f...dad836`, chain 1)
-- MochiEngine (`0x860e47...55be2f`, chain 1)
-- MochiVaultFactory (`0x960760...0367ef`, chain 1)
-- USDM (`0x31d4eb...6f0ba9`, chain 1)
+- UnnamedContract (`0x09e9efd406bb2c3fc7d06f31c74174cd09c5963e`, chain 1)
+- UnnamedContract (`0x5d278481af7c543c1cd565a2506b5951048d175f`, chain 1)
+- UnnamedContract (`0x62a1c67eeb86543b9c704eaf876789deb6264c14`, chain 1)
+- UnnamedContract (`0xa6046bf666dbb1493e4a6a5fa1906f109d8e896b`, chain 1)
+- UnnamedContract (`0xa8347e1266efc18bd0d79ff16aa2262f77cb28c8`, chain 1)
+- UnnamedContract (`0xa8dad48b9e59b670524a755c95a9a2cfbea91a3f`, chain 1)
+- UnnamedContract (`0xc944b238b8aa4cd696e0bdebb2055c3024bc4932`, chain 1)
+- UnnamedContract (`0xe9f9f3f04e778f955259b28e1a70d94ca7d81752`, chain 1)
+- MochiCSSRv0 (`0x766f7f7e249dbd0003916f52b2efe1ac44dad836`, chain 1)
+- MochiEngine (`0x860e47e6d6f4a6bcaaddfc7f17f772d2ab55be2f`, chain 1)
+- MochiVaultFactory (`0x96076026ae262f1d6a9b88be49bba0e8a80367ef`, chain 1)
+- USDM (`0x31d4eb09a216e181ec8a43ce79226a487d6f0ba9`, chain 1)
 
 ## Contract Surface Quality
 
@@ -109,32 +109,32 @@ The pinned logic-topography run contains 4 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| DutchAuctionLiquidator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x39ad80...617ff6` | ⚠️ Unaudited |
-| FixedPriceAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0e0f43...3081f3` | ⚠️ Unaudited |
-| gCRV | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x06f05a...6c9ad6` | ⚠️ Unaudited |
-| MinterV0 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x595df7...85ebda` | ⚠️ Unaudited |
-| MinterV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9cadb2...7dd6b4` | ⚠️ Unaudited |
-| MochiCSSRv0 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-247666 | `0x766f7f...dad836` | ⚠️ Unaudited |
-| MochiEngine | unknown | project_anchor | own_supporting | 0 | ethereum | unit-247667 | `0x860e47...55be2f` | ⚠️ Unaudited |
-| MochiInu | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x60ef10...605fe5` | ⚠️ Unaudited |
-| MochiNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x734b12...39ee69` | ⚠️ Unaudited |
-| MochiNFTEngine | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x091a84...d24115` | ⚠️ Unaudited |
-| MochiNFTVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xaaf613...068774` | ⚠️ Unaudited |
-| MochiNFTVaultFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9cc1f0...a656f0` | ⚠️ Unaudited |
-| MochiPositionNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6f90fe...cc35c3` | ⚠️ Unaudited |
-| MochiProfileV0 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x083c0c...2f457c` | ⚠️ Unaudited |
-| MochiStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0722ac...4526f2` | ⚠️ Unaudited |
-| MochiVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3e9950...4b6f8d` | ⚠️ Unaudited |
-| MochiVaultFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-247668 | `0x960760...0367ef` | ⚠️ Unaudited |
-| NoDiscountProfile | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5005bd...5dcb34` | ⚠️ Unaudited |
-| NoMochiFeePool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5721cb...298bfe` | ⚠️ Unaudited |
-| NoMochiReferralFeePool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x727f41...486546` | ⚠️ Unaudited |
-| Pauser | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5f362c...a02cf8` | ⚠️ Unaudited |
-| PegRecoveryModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3084ba...0976da` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9aeb81...4c3d47` | ⚠️ Unaudited |
-| TimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9be3e3...ca5dce` | ⚠️ Unaudited |
-| USDM | unknown | project_anchor | own_supporting | 0 | ethereum | unit-247663 | `0x31d4eb...6f0ba9` | ⚠️ Unaudited |
-| wsOHMAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7d3d4c...05f81a` | ⚠️ Unaudited |
+| DutchAuctionLiquidator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x39ad803d61ecabc64f32edaae97c2fffb0617ff6` | ⚠️ Unaudited |
+| FixedPriceAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0e0f438482ce5ee70d859d1f463c9b4d323081f3` | ⚠️ Unaudited |
+| gCRV | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x06f05a658b88d6d324d84a5da13d549ea06c9ad6` | ⚠️ Unaudited |
+| MinterV0 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x595df7d8f414f485303c4913947686117185ebda` | ⚠️ Unaudited |
+| MinterV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9cadb2c8735a120c4d3292dca2b7f03d5f7dd6b4` | ⚠️ Unaudited |
+| MochiCSSRv0 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-247666 | `0x766f7f7e249dbd0003916f52b2efe1ac44dad836` | ⚠️ Unaudited |
+| MochiEngine | unknown | project_anchor | own_supporting | 0 | ethereum | unit-247667 | `0x860e47e6d6f4a6bcaaddfc7f17f772d2ab55be2f` | ⚠️ Unaudited |
+| MochiInu | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x60ef10edff6d600cd91caeca04caed2a2e605fe5` | ⚠️ Unaudited |
+| MochiNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x734b12847980580037b6cca8ee0a6c5da339ee69` | ⚠️ Unaudited |
+| MochiNFTEngine | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x091a8460e20761bb3ced9bc3a0de62aab3d24115` | ⚠️ Unaudited |
+| MochiNFTVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xaaf6138073e93c18a190295916f38b6197068774` | ⚠️ Unaudited |
+| MochiNFTVaultFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9cc1f0b9c4ce1b72a2581fd4ea3b71a9a2a656f0` | ⚠️ Unaudited |
+| MochiPositionNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6f90fea999b0b823bacfc57bbf47477638cc35c3` | ⚠️ Unaudited |
+| MochiProfileV0 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x083c0c100426ab4758435180c836ca11be2f457c` | ⚠️ Unaudited |
+| MochiStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0722aca64623633924b35b96ce6d8548fe4526f2` | ⚠️ Unaudited |
+| MochiVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3e99506fa2643368943065aac0495437834b6f8d` | ⚠️ Unaudited |
+| MochiVaultFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-247668 | `0x96076026ae262f1d6a9b88be49bba0e8a80367ef` | ⚠️ Unaudited |
+| NoDiscountProfile | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5005bd0fe21d2ed57df4dbbbc159a6734d5dcb34` | ⚠️ Unaudited |
+| NoMochiFeePool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5721cbae26de32c2fe9b729f32762c6ef4298bfe` | ⚠️ Unaudited |
+| NoMochiReferralFeePool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x727f413331c6841458ba27c4a27c74bc40486546` | ⚠️ Unaudited |
+| Pauser | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5f362c05ef7f631d99e81e72cec917e86ca02cf8` | ⚠️ Unaudited |
+| PegRecoveryModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3084ba03b49a912b40fa0ec8e20b777a430976da` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9aeb811b63a58e85e7b88d52013726bab04c3d47` | ⚠️ Unaudited |
+| TimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9be3e334582466d378f3268f60689c26c3ca5dce` | ⚠️ Unaudited |
+| USDM | unknown | project_anchor | own_supporting | 0 | ethereum | unit-247663 | `0x31d4eb09a216e181ec8a43ce79226a487d6f0ba9` | ⚠️ Unaudited |
+| wsOHMAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7d3d4c0dac3ce8d41b909b13919638f89505f81a` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -154,14 +154,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-247662 | `0x09e9ef...c5963e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-247664 | `0x5d2784...8d175f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-247665 | `0x62a1c6...264c14` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-247669 | `0xa6046b...8e896b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-247670 | `0xa8347e...cb28c8` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-247671 | `0xa8dad4...a91a3f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-247672 | `0xc944b2...bc4932` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-247673 | `0xe9f9f3...d81752` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-247662 | `0x09e9efd406bb2c3fc7d06f31c74174cd09c5963e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-247664 | `0x5d278481af7c543c1cd565a2506b5951048d175f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-247665 | `0x62a1c67eeb86543b9c704eaf876789deb6264c14` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-247669 | `0xa6046bf666dbb1493e4a6a5fa1906f109d8e896b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-247670 | `0xa8347e1266efc18bd0d79ff16aa2262f77cb28c8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-247671 | `0xa8dad48b9e59b670524a755c95a9a2cfbea91a3f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-247672 | `0xc944b238b8aa4cd696e0bdebb2055c3024bc4932` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-247673 | `0xe9f9f3f04e778f955259b28e1a70d94ca7d81752` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -209,10 +209,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x766f7f...dad836` | MochiCSSRv0 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x860e47...55be2f` | MochiEngine | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x960760...0367ef` | MochiVaultFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x31d4eb...6f0ba9` | USDM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x766f7f7e249dbd0003916f52b2efe1ac44dad836` | MochiCSSRv0 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x860e47e6d6f4a6bcaaddfc7f17f772d2ab55be2f` | MochiEngine | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x96076026ae262f1d6a9b88be49bba0e8a80367ef` | MochiVaultFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x31d4eb09a216e181ec8a43ce79226a487d6f0ba9` | USDM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

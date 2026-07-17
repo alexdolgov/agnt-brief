@@ -93,17 +93,17 @@ The pinned logic-topography run contains 3 contract row(s) across berachain. Str
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| TOKEN | token | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x7838ce...c74174` | ⚠️ Unaudited |
-| TOKENFees | token | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x06030c...eba5d3` | ⚠️ Unaudited |
-| BerachainPlugin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xac5922...500171` | ⚠️ Unaudited |
-| Bribe | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x5dba62...659edd` | ⚠️ Unaudited |
-| Gauge | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x229fdf...4dcc38` | ⚠️ Unaudited |
-| GnosisSafeProxy | governance | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xab53af...58e09c` | ⚠️ Unaudited |
-| KodiakIslandWithRouter | adapter | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | berachain | unit-230135 | 3 deployments: berachain `0x63b0ed...8ce225`; berachain `0xbfbefc...742eb0`; berachain `0xe5a2ab...09aff9` | ⚠️ Unaudited |
-| RewardVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x63233e...fc09f0` | ⚠️ Unaudited |
-| Voter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xd7ea36...e4ad47` | ⚠️ Unaudited |
-| VTOKEN | token | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x7f0976...fa2b69` | ⚠️ Unaudited |
-| VTOKENRewarder | token | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x8a5547...94865e` | ⚠️ Unaudited |
+| TOKEN | token | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x7838cec5b11298ff6a9513fa385621b765c74174` | ⚠️ Unaudited |
+| TOKENFees | token | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x06030c39b241f5e7f3a2af25e0d10ca1f8eba5d3` | ⚠️ Unaudited |
+| BerachainPlugin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xac5922bccb16a0213684427f0412fcf8f9500171` | ⚠️ Unaudited |
+| Bribe | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x5dba62ae28e2efbd1f42ac372910f8df78659edd` | ⚠️ Unaudited |
+| Gauge | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x229fdff961392cebb08e93d630e7a6a5614dcc38` | ⚠️ Unaudited |
+| GnosisSafeProxy | governance | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xab53afb5c63e2552e7bd986c0a38e8a8dc58e09c` | ⚠️ Unaudited |
+| KodiakIslandWithRouter | adapter | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | berachain | unit-230135 | 3 deployments: berachain `0x63b0edc427664d4330f72eec890a86b3f98ce225`; berachain `0xbfbefcfae7a58c14292b53c2ccd95bf2c5742eb0`; berachain `0xe5a2ab5d2fb268e5ff43a5564e44c3309609aff9` | ⚠️ Unaudited |
+| RewardVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x63233e055847ed2526d9275a6cd1d01caafc09f0` | ⚠️ Unaudited |
+| Voter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xd7ea36eca1ca3e73bc262a6d05db01e60ae4ad47` | ⚠️ Unaudited |
+| VTOKEN | token | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x7f0976b52f6c1ddcd4d6f639537c97de22fa2b69` | ⚠️ Unaudited |
+| VTOKENRewarder | token | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x8a5547dbdba815036ae67d36835db687fd94865e` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

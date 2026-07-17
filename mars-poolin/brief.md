@@ -61,23 +61,23 @@ The protocol comprises 2 functional families. Its contracts share 3 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BACMARSLPTOKENPool | unknown | ethereum | n/a | [`0x8360b0...1644b1`](./contracts/ethereum-1/0x8360b0d0d01e938441902569dfff66af701644b1/) | ⚠️ Unaudited |
-| BTCParamV2 | unknown | ethereum | n/a | [`0x260f6b...94b897`](./contracts/ethereum-1/0x260f6bab7680019d2447bf62e9dbbc80dd94b897/) | ⚠️ Unaudited |
-| ETHParamV2 | unknown | ethereum | n/a | [`0x2472ef...c200ff`](./contracts/ethereum-1/0x2472effdc3e4379074e808f475a7266357c200ff/) | ⚠️ Unaudited |
-| LpStaking | unknown | ethereum | n/a | [`0x95cb68...d080de`](./contracts/ethereum-1/0x95cb6853e35f8a8bd1da907c7d1c967a0ad080de/) | ⚠️ Unaudited |
-| MarsLpStakingController | unknown | ethereum | n/a | [`0xa91706...a60142`](./contracts/ethereum-1/0xa91706451e7f547233b13b3ce245186a2fa60142/) | ⚠️ Unaudited |
-| MarsStakingRewards | unknown | ethereum | n/a | [`0x395f12...202e3c`](./contracts/ethereum-1/0x395f12c3af52a3b2ee3b63dcef8be2130a202e3c/) | ⚠️ Unaudited |
-| MarsToken | unknown | ethereum | n/a | [`0x66c0dd...4d70b7`](./contracts/ethereum-1/0x66c0dded8433c9ea86c8cf91237b14e10b4d70b7/) | ⚠️ Unaudited |
-| Oracle | unknown | ethereum | n/a | [`0x97386b...9a1c1a`](./contracts/ethereum-1/0x97386b57e15c7fd09e36f04018f0b442b99a1c1a/) | ⚠️ Unaudited |
-| POWToken | unknown | ethereum | n/a | [`0x14b939...158ce6`](./contracts/ethereum-1/0x14b939e7eb0cb290fadccd0816e8975069158ce6/) | ⚠️ Unaudited |
-| POWTokenProxy | unknown | ethereum | n/a | [`0x16a60d...3d4fc8`](./contracts/ethereum-1/0x16a60d78fe6f92d25ebddaff6b1efc9d193d4fc8/) | ⚠️ Unaudited |
-| Staking | unknown | ethereum | n/a | [`0x033666...88ce00`](./contracts/ethereum-1/0x033666a848d68c9854b038ebb3958097f688ce00/) | ⚠️ Unaudited |
-| StakingRewardsFactory | unknown | ethereum | n/a | [`0xe3a8f8...d6106c`](./contracts/ethereum-1/0xe3a8f85ab99e5e90d9d0dda0adf2139389d6106c/) | ⚠️ Unaudited |
-| StakingRewardsWbtc | unknown | ethereum | n/a | [`0x51a710...e18e11`](./contracts/ethereum-1/0x51a710218ec2ba2ac459ee28ec37c6df7fe18e11/) | ⚠️ Unaudited |
-| TokenDistribute | unknown | ethereum | n/a | [`0x52fe73...07e7b7`](./contracts/ethereum-1/0x52fe73fa78d4b85437a33a7dcbda16aada07e7b7/) | ⚠️ Unaudited |
-| TreasuryVester | unknown | ethereum | n/a | [`0x577114...4d45f2`](./contracts/ethereum-1/0x5771144334826d79c07ffa544e935921904d45f2/) | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | ethereum | n/a | [`0x64b91b...50d089`](./contracts/ethereum-1/0x64b91b92240bc1901855dd55ae632addb650d089/) | ⚠️ Unaudited |
-| USDTMARSLPTOKENPool | unknown | ethereum | n/a | [`0x9b9c2d...a809dd`](./contracts/ethereum-1/0x9b9c2d202f9a0ed9be9daf9df50cc0e327a809dd/) | ⚠️ Unaudited |
+| BACMARSLPTOKENPool | unknown | ethereum | n/a | [`0x8360b0d0d01e938441902569dfff66af701644b1`](./contracts/ethereum-1/0x8360b0d0d01e938441902569dfff66af701644b1/) | ⚠️ Unaudited |
+| BTCParamV2 | unknown | ethereum | n/a | [`0x260f6bab7680019d2447bf62e9dbbc80dd94b897`](./contracts/ethereum-1/0x260f6bab7680019d2447bf62e9dbbc80dd94b897/) | ⚠️ Unaudited |
+| ETHParamV2 | unknown | ethereum | n/a | [`0x2472effdc3e4379074e808f475a7266357c200ff`](./contracts/ethereum-1/0x2472effdc3e4379074e808f475a7266357c200ff/) | ⚠️ Unaudited |
+| LpStaking | unknown | ethereum | n/a | [`0x95cb6853e35f8a8bd1da907c7d1c967a0ad080de`](./contracts/ethereum-1/0x95cb6853e35f8a8bd1da907c7d1c967a0ad080de/) | ⚠️ Unaudited |
+| MarsLpStakingController | unknown | ethereum | n/a | [`0xa91706451e7f547233b13b3ce245186a2fa60142`](./contracts/ethereum-1/0xa91706451e7f547233b13b3ce245186a2fa60142/) | ⚠️ Unaudited |
+| MarsStakingRewards | unknown | ethereum | n/a | [`0x395f12c3af52a3b2ee3b63dcef8be2130a202e3c`](./contracts/ethereum-1/0x395f12c3af52a3b2ee3b63dcef8be2130a202e3c/) | ⚠️ Unaudited |
+| MarsToken | unknown | ethereum | n/a | [`0x66c0dded8433c9ea86c8cf91237b14e10b4d70b7`](./contracts/ethereum-1/0x66c0dded8433c9ea86c8cf91237b14e10b4d70b7/) | ⚠️ Unaudited |
+| Oracle | unknown | ethereum | n/a | [`0x97386b57e15c7fd09e36f04018f0b442b99a1c1a`](./contracts/ethereum-1/0x97386b57e15c7fd09e36f04018f0b442b99a1c1a/) | ⚠️ Unaudited |
+| POWToken | unknown | ethereum | n/a | [`0x14b939e7eb0cb290fadccd0816e8975069158ce6`](./contracts/ethereum-1/0x14b939e7eb0cb290fadccd0816e8975069158ce6/) | ⚠️ Unaudited |
+| POWTokenProxy | unknown | ethereum | n/a | [`0x16a60d78fe6f92d25ebddaff6b1efc9d193d4fc8`](./contracts/ethereum-1/0x16a60d78fe6f92d25ebddaff6b1efc9d193d4fc8/) | ⚠️ Unaudited |
+| Staking | unknown | ethereum | n/a | [`0x033666a848d68c9854b038ebb3958097f688ce00`](./contracts/ethereum-1/0x033666a848d68c9854b038ebb3958097f688ce00/) | ⚠️ Unaudited |
+| StakingRewardsFactory | unknown | ethereum | n/a | [`0xe3a8f85ab99e5e90d9d0dda0adf2139389d6106c`](./contracts/ethereum-1/0xe3a8f85ab99e5e90d9d0dda0adf2139389d6106c/) | ⚠️ Unaudited |
+| StakingRewardsWbtc | unknown | ethereum | n/a | [`0x51a710218ec2ba2ac459ee28ec37c6df7fe18e11`](./contracts/ethereum-1/0x51a710218ec2ba2ac459ee28ec37c6df7fe18e11/) | ⚠️ Unaudited |
+| TokenDistribute | unknown | ethereum | n/a | [`0x52fe73fa78d4b85437a33a7dcbda16aada07e7b7`](./contracts/ethereum-1/0x52fe73fa78d4b85437a33a7dcbda16aada07e7b7/) | ⚠️ Unaudited |
+| TreasuryVester | unknown | ethereum | n/a | [`0x5771144334826d79c07ffa544e935921904d45f2`](./contracts/ethereum-1/0x5771144334826d79c07ffa544e935921904d45f2/) | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | ethereum | n/a | [`0x64b91b92240bc1901855dd55ae632addb650d089`](./contracts/ethereum-1/0x64b91b92240bc1901855dd55ae632addb650d089/) | ⚠️ Unaudited |
+| USDTMARSLPTOKENPool | unknown | ethereum | n/a | [`0x9b9c2d202f9a0ed9be9daf9df50cc0e327a809dd`](./contracts/ethereum-1/0x9b9c2d202f9a0ed9be9daf9df50cc0e327a809dd/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -108,22 +108,22 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x8360b0...1644b1`](./contracts/ethereum-1/0x8360b0d0d01e938441902569dfff66af701644b1/) | BACMARSLPTOKENPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x260f6b...94b897`](./contracts/ethereum-1/0x260f6bab7680019d2447bf62e9dbbc80dd94b897/) | BTCParamV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2472ef...c200ff`](./contracts/ethereum-1/0x2472effdc3e4379074e808f475a7266357c200ff/) | ETHParamV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x95cb68...d080de`](./contracts/ethereum-1/0x95cb6853e35f8a8bd1da907c7d1c967a0ad080de/) | LpStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa91706...a60142`](./contracts/ethereum-1/0xa91706451e7f547233b13b3ce245186a2fa60142/) | MarsLpStakingController | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x395f12...202e3c`](./contracts/ethereum-1/0x395f12c3af52a3b2ee3b63dcef8be2130a202e3c/) | MarsStakingRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x66c0dd...4d70b7`](./contracts/ethereum-1/0x66c0dded8433c9ea86c8cf91237b14e10b4d70b7/) | MarsToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x97386b...9a1c1a`](./contracts/ethereum-1/0x97386b57e15c7fd09e36f04018f0b442b99a1c1a/) | Oracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x14b939...158ce6`](./contracts/ethereum-1/0x14b939e7eb0cb290fadccd0816e8975069158ce6/) | POWToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x16a60d...3d4fc8`](./contracts/ethereum-1/0x16a60d78fe6f92d25ebddaff6b1efc9d193d4fc8/) | POWTokenProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x033666...88ce00`](./contracts/ethereum-1/0x033666a848d68c9854b038ebb3958097f688ce00/) | Staking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xe3a8f8...d6106c`](./contracts/ethereum-1/0xe3a8f85ab99e5e90d9d0dda0adf2139389d6106c/) | StakingRewardsFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x51a710...e18e11`](./contracts/ethereum-1/0x51a710218ec2ba2ac459ee28ec37c6df7fe18e11/) | StakingRewardsWbtc | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x52fe73...07e7b7`](./contracts/ethereum-1/0x52fe73fa78d4b85437a33a7dcbda16aada07e7b7/) | TokenDistribute | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x577114...4d45f2`](./contracts/ethereum-1/0x5771144334826d79c07ffa544e935921904d45f2/) | TreasuryVester | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x9b9c2d...a809dd`](./contracts/ethereum-1/0x9b9c2d202f9a0ed9be9daf9df50cc0e327a809dd/) | USDTMARSLPTOKENPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8360b0d0d01e938441902569dfff66af701644b1`](./contracts/ethereum-1/0x8360b0d0d01e938441902569dfff66af701644b1/) | BACMARSLPTOKENPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x260f6bab7680019d2447bf62e9dbbc80dd94b897`](./contracts/ethereum-1/0x260f6bab7680019d2447bf62e9dbbc80dd94b897/) | BTCParamV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x2472effdc3e4379074e808f475a7266357c200ff`](./contracts/ethereum-1/0x2472effdc3e4379074e808f475a7266357c200ff/) | ETHParamV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x95cb6853e35f8a8bd1da907c7d1c967a0ad080de`](./contracts/ethereum-1/0x95cb6853e35f8a8bd1da907c7d1c967a0ad080de/) | LpStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa91706451e7f547233b13b3ce245186a2fa60142`](./contracts/ethereum-1/0xa91706451e7f547233b13b3ce245186a2fa60142/) | MarsLpStakingController | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x395f12c3af52a3b2ee3b63dcef8be2130a202e3c`](./contracts/ethereum-1/0x395f12c3af52a3b2ee3b63dcef8be2130a202e3c/) | MarsStakingRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x66c0dded8433c9ea86c8cf91237b14e10b4d70b7`](./contracts/ethereum-1/0x66c0dded8433c9ea86c8cf91237b14e10b4d70b7/) | MarsToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x97386b57e15c7fd09e36f04018f0b442b99a1c1a`](./contracts/ethereum-1/0x97386b57e15c7fd09e36f04018f0b442b99a1c1a/) | Oracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x14b939e7eb0cb290fadccd0816e8975069158ce6`](./contracts/ethereum-1/0x14b939e7eb0cb290fadccd0816e8975069158ce6/) | POWToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x16a60d78fe6f92d25ebddaff6b1efc9d193d4fc8`](./contracts/ethereum-1/0x16a60d78fe6f92d25ebddaff6b1efc9d193d4fc8/) | POWTokenProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x033666a848d68c9854b038ebb3958097f688ce00`](./contracts/ethereum-1/0x033666a848d68c9854b038ebb3958097f688ce00/) | Staking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe3a8f85ab99e5e90d9d0dda0adf2139389d6106c`](./contracts/ethereum-1/0xe3a8f85ab99e5e90d9d0dda0adf2139389d6106c/) | StakingRewardsFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x51a710218ec2ba2ac459ee28ec37c6df7fe18e11`](./contracts/ethereum-1/0x51a710218ec2ba2ac459ee28ec37c6df7fe18e11/) | StakingRewardsWbtc | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x52fe73fa78d4b85437a33a7dcbda16aada07e7b7`](./contracts/ethereum-1/0x52fe73fa78d4b85437a33a7dcbda16aada07e7b7/) | TokenDistribute | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5771144334826d79c07ffa544e935921904d45f2`](./contracts/ethereum-1/0x5771144334826d79c07ffa544e935921904d45f2/) | TreasuryVester | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x9b9c2d202f9a0ed9be9daf9df50cc0e327a809dd`](./contracts/ethereum-1/0x9b9c2d202f9a0ed9be9daf9df50cc0e327a809dd/) | USDTMARSLPTOKENPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

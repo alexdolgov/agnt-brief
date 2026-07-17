@@ -61,7 +61,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| SuperToken | unknown | arbitrum | n/a | [`0x6ba19e...fedb58`](./contracts/arbitrum-42161/0x6ba19ee69d5dde3ab70185c801fa404f66fedb58/) | ⚠️ Unaudited |
+| SuperToken | unknown | arbitrum | n/a | [`0x6ba19ee69d5dde3ab70185c801fa404f66fedb58`](./contracts/arbitrum-42161/0x6ba19ee69d5dde3ab70185c801fa404f66fedb58/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -103,7 +103,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | [`0x6ba19e...fedb58`](./contracts/arbitrum-42161/0x6ba19ee69d5dde3ab70185c801fa404f66fedb58/) | SuperToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x6ba19ee69d5dde3ab70185c801fa404f66fedb58`](./contracts/arbitrum-42161/0x6ba19ee69d5dde3ab70185c801fa404f66fedb58/) | SuperToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

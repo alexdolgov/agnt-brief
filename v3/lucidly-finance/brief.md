@@ -48,8 +48,8 @@ The pinned logic-topography run contains 10 contract row(s) across ethereum. Str
 
 ### Forked Contracts
 
-**LayerZeroTeller** (`0xaefc11...423825`, chain 1)
-Origin: veda (`0x31a5a9...18f5b8`)
+**LayerZeroTeller** (`0xaefc11908ff97c335d16bdf9f2bf720817423825`, chain 1)
+Origin: veda (`0x31a5a9f60dc3d62fa5168352caf0ee05aa18f5b8`)
 Containment: 100.0% - 27 functions inherited
 Centroid audit status: pending_validation
 
@@ -59,15 +59,15 @@ Removals (removed from original): none
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- AccountantWithRateProviders (`0x03d9a9...de8da6`, chain 1)
-- ArcticArchitectureLens (`0x074f54...dd80d9`, chain 1)
-- BoringOnChainQueue (`0xf632c1...a1040b`, chain 1)
-- BoringSolver (`0x1d82e9...536805`, chain 1)
-- BoringVault (`0x279cad...a2c589`, chain 1)
-- ManagerWithMerkleVerification (`0x9b3e56...940ce8`, chain 1)
-- Pauser (`0x31b923...fb0f2d`, chain 1)
-- RolesAuthority (`0xf7f3ac...d36fdf`, chain 1)
-- TimelockController (`0xf27ccf...13ab13`, chain 1)
+- AccountantWithRateProviders (`0x03d9a9ce13d16c7cfce564f41bd7e85e5cde8da6`, chain 1)
+- ArcticArchitectureLens (`0x074f543e7daa7c67f77bfd8c41c79127c4dd80d9`, chain 1)
+- BoringOnChainQueue (`0xf632c10b19f2a0451cd4a653fc9ca0c15ea1040b`, chain 1)
+- BoringSolver (`0x1d82e9bcc8f325cabbca6e6a3b287fe586536805`, chain 1)
+- BoringVault (`0x279cad277447965af3d24a78197aad1b02a2c589`, chain 1)
+- ManagerWithMerkleVerification (`0x9b3e565ffc70c4b72516bc2dbec4b3c790940ce8`, chain 1)
+- Pauser (`0x31b9236a58f6ef7e0431811dabba8c706afb0f2d`, chain 1)
+- RolesAuthority (`0xf7f3ace7f6ca2cb1e7ccbe3bf2da13d001d36fdf`, chain 1)
+- TimelockController (`0xf27ccf60b6e10a80b333c5f14031712bfe13ab13`, chain 1)
 
 ## Contract Surface Quality
 
@@ -113,16 +113,16 @@ Removals (removed from original): none
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AccountantWithRateProviders | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388586 | `0x03d9a9...de8da6` | ⚠️ Unaudited |
-| ArcticArchitectureLens | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388587 | `0x074f54...dd80d9` | ⚠️ Unaudited |
-| BoringOnChainQueue | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388594 | `0xf632c1...a1040b` | ⚠️ Unaudited |
-| BoringSolver | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388588 | `0x1d82e9...536805` | ⚠️ Unaudited |
-| BoringVault | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388589 | `0x279cad...a2c589` | ⚠️ Unaudited |
-| LayerZeroTeller | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388592 | `0xaefc11...423825` | ⚠️ Unaudited |
-| ManagerWithMerkleVerification | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388591 | `0x9b3e56...940ce8` | ⚠️ Unaudited |
-| Pauser | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388590 | `0x31b923...fb0f2d` | ⚠️ Unaudited |
-| RolesAuthority | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388595 | `0xf7f3ac...d36fdf` | ⚠️ Unaudited |
-| TimelockController | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388593 | `0xf27ccf...13ab13` | ⚠️ Unaudited |
+| AccountantWithRateProviders | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388586 | `0x03d9a9ce13d16c7cfce564f41bd7e85e5cde8da6` | ⚠️ Unaudited |
+| ArcticArchitectureLens | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388587 | `0x074f543e7daa7c67f77bfd8c41c79127c4dd80d9` | ⚠️ Unaudited |
+| BoringOnChainQueue | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388594 | `0xf632c10b19f2a0451cd4a653fc9ca0c15ea1040b` | ⚠️ Unaudited |
+| BoringSolver | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388588 | `0x1d82e9bcc8f325cabbca6e6a3b287fe586536805` | ⚠️ Unaudited |
+| BoringVault | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388589 | `0x279cad277447965af3d24a78197aad1b02a2c589` | ⚠️ Unaudited |
+| LayerZeroTeller | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388592 | `0xaefc11908ff97c335d16bdf9f2bf720817423825` | ⚠️ Unaudited |
+| ManagerWithMerkleVerification | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388591 | `0x9b3e565ffc70c4b72516bc2dbec4b3c790940ce8` | ⚠️ Unaudited |
+| Pauser | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388590 | `0x31b9236a58f6ef7e0431811dabba8c706afb0f2d` | ⚠️ Unaudited |
+| RolesAuthority | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388595 | `0xf7f3ace7f6ca2cb1e7ccbe3bf2da13d001d36fdf` | ⚠️ Unaudited |
+| TimelockController | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388593 | `0xf27ccf60b6e10a80b333c5f14031712bfe13ab13` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -174,14 +174,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x03d9a9...de8da6` | AccountantWithRateProviders | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x074f54...dd80d9` | ArcticArchitectureLens | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xf632c1...a1040b` | BoringOnChainQueue | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x1d82e9...536805` | BoringSolver | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x279cad...a2c589` | BoringVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x9b3e56...940ce8` | ManagerWithMerkleVerification | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x31b923...fb0f2d` | Pauser | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xf7f3ac...d36fdf` | RolesAuthority | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x03d9a9ce13d16c7cfce564f41bd7e85e5cde8da6` | AccountantWithRateProviders | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x074f543e7daa7c67f77bfd8c41c79127c4dd80d9` | ArcticArchitectureLens | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xf632c10b19f2a0451cd4a653fc9ca0c15ea1040b` | BoringOnChainQueue | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x1d82e9bcc8f325cabbca6e6a3b287fe586536805` | BoringSolver | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x279cad277447965af3d24a78197aad1b02a2c589` | BoringVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x9b3e565ffc70c4b72516bc2dbec4b3c790940ce8` | ManagerWithMerkleVerification | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x31b9236a58f6ef7e0431811dabba8c706afb0f2d` | Pauser | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xf7f3ace7f6ca2cb1e7ccbe3bf2da13d001d36fdf` | RolesAuthority | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

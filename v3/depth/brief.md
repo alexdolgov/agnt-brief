@@ -52,10 +52,10 @@ The pinned logic-topography run contains 4 contract row(s) across abstract, bsc,
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x5e2d57...322ce2`, chain 2741)
-- UnnamedContract (`0x7c0bab...ae4cb2`, chain 2741)
-- UnnamedContract (`0xd9f34c...ed0694`, chain 2741)
-- UnnamedContract (`0xf3d2e7...663175`, chain 2741)
+- UnnamedContract (`0x5e2d57b022f0905d4981f0803560e23cde322ce2`, chain 2741)
+- UnnamedContract (`0x7c0bab11b67ac041c2ff870ef2f7807428ae4cb2`, chain 2741)
+- UnnamedContract (`0xd9f34cda3667e0b5be4b6fba55d854cfb2ed0694`, chain 2741)
+- UnnamedContract (`0xf3d2e788c24497e395197329c82117bb8d663175`, chain 2741)
 
 ## Contract Surface Quality
 
@@ -101,18 +101,18 @@ The pinned logic-topography run contains 4 contract row(s) across abstract, bsc,
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BDepMining | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 4 deployments: bsc `0x65256c...41f11a`; bsc `0x8b89fa...7217cf`; bsc `0xb43299...1e11db`; bsc `0xbb1eda...ef6c5f` | ⚠️ Unaudited |
-| BDepToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0x16f995...b1d325`; bsc `0x185e73...de24c3` | ⚠️ Unaudited |
-| dCowVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 3 deployments: bsc `0x0b28a5...ccefc0`; bsc `0x9f4198...d901af`; bsc `0xcd8ef3...b60b1a` | ⚠️ Unaudited |
-| dDepAlphaVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 3 deployments: bsc `0x024f05...1fb69d`; bsc `0xaf996b...0ccebc`; bsc `0xcb08da...ffbd76` | ⚠️ Unaudited |
-| dDepVenusVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0x2e128e...88e1a6`; bsc `0x325304...82c8a2` | ⚠️ Unaudited |
-| FundingManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 3 deployments: bsc `0x0c5770...50ffef`; bsc `0x810c79...689c17`; bsc `0xb9902f...68e7f4` | ⚠️ Unaudited |
-| reduceToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x776771...6d4183` | ⚠️ Unaudited |
-| UnnamedContract | proxy | project_anchor | own_supporting | 0 | abstract | unit-384155 | `0x5e2d57...322ce2` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | abstract | unit-384157 | `0x7c0bab...ae4cb2` | ⚠️ Unaudited |
-| UnnamedContract | proxy | project_anchor | own_supporting | 0 | abstract | unit-384159 | `0xd9f34c...ed0694` | ⚠️ Unaudited |
-| UnnamedContract | token | project_anchor | own_supporting | 0 | abstract | unit-384161 | `0xf3d2e7...663175` | ⚠️ Unaudited |
-| Vyper_contract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 5 deployments: bsc `0x40eded...1fcc9a`; bsc `0xc57220...632b57`; bsc `0xc63b2a...962b5a`; bsc `0xf89f86...3f107f`; bsc `0xfb42ea...f51670` | ⚠️ Unaudited |
+| BDepMining | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 4 deployments: bsc `0x65256c5125bc5c802bac37dc37769fc7e041f11a`; bsc `0x8b89fa9b1cb1aaad496f597964f1c83fed7217cf`; bsc `0xb4329919f74d841e4a552b6cb0487b5c451e11db`; bsc `0xbb1edaa1c11b18f2122e8268b71d670556ef6c5f` | ⚠️ Unaudited |
+| BDepToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0x16f99577b259b069a2d1d166e70d349b11b1d325`; bsc `0x185e734a600165d8501a7a35add07ef13ede24c3` | ⚠️ Unaudited |
+| dCowVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 3 deployments: bsc `0x0b28a55dbbd6c5ddd4d1d7157361e9d6d0ccefc0`; bsc `0x9f4198c4a73c103bc9b1c34d1f680d4e43d901af`; bsc `0xcd8ef3e3a7b25741ce5b8c728f582cf748b60b1a` | ⚠️ Unaudited |
+| dDepAlphaVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 3 deployments: bsc `0x024f05c70f203fb77f27b00422534cc33e1fb69d`; bsc `0xaf996b5e33007ed5eb33eaae817ad8e1310ccebc`; bsc `0xcb08da2339d562b66b314d2bbfb580cb87ffbd76` | ⚠️ Unaudited |
+| dDepVenusVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0x2e128eb2ee787428307a7b246d02c1801788e1a6`; bsc `0x3253041f27416c975ffb0100b08734187f82c8a2` | ⚠️ Unaudited |
+| FundingManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 3 deployments: bsc `0x0c5770a0c98a8488e0f23d6e63142d6c2a50ffef`; bsc `0x810c7945895a63d63f79e0c0c95bb9f773689c17`; bsc `0xb9902fe39e95ff1d724672393c220e927568e7f4` | ⚠️ Unaudited |
+| reduceToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x77677168f8759ef464d53e5d8a7752a51a6d4183` | ⚠️ Unaudited |
+| UnnamedContract | proxy | project_anchor | own_supporting | 0 | abstract | unit-384155 | `0x5e2d57b022f0905d4981f0803560e23cde322ce2` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | abstract | unit-384157 | `0x7c0bab11b67ac041c2ff870ef2f7807428ae4cb2` | ⚠️ Unaudited |
+| UnnamedContract | proxy | project_anchor | own_supporting | 0 | abstract | unit-384159 | `0xd9f34cda3667e0b5be4b6fba55d854cfb2ed0694` | ⚠️ Unaudited |
+| UnnamedContract | token | project_anchor | own_supporting | 0 | abstract | unit-384161 | `0xf3d2e788c24497e395197329c82117bb8d663175` | ⚠️ Unaudited |
+| Vyper_contract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 5 deployments: bsc `0x40eded89bb6c94bdb2ededbfb194b2e29c1fcc9a`; bsc `0xc57220b65dd9200562aa73b850c06be7bd632b57`; bsc `0xc63b2a40ff8180023534b676647a9915f9962b5a`; bsc `0xf89f86ed7c8eca694ba85e94a9b89ee1583f107f`; bsc `0xfb42eaf5e623e83013d5aa33033966a62ff51670` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -132,10 +132,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x179e1f...95b7b2` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | heco | n/a | `0x48c859...895c27` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | abstract | unit-384151 | `0x31aa82...e7757a` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | abstract | unit-384153 | `0x4221a2...f88969` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x179e1f2a75ab37f297aa825e0b05187fa195b7b2` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | heco | n/a | `0x48c859531254f25e57d1c1a8e030ef0b1c895c27` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | abstract | unit-384151 | `0x31aa824a1bbb60d0e1789268ba521b68c6e7757a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | abstract | unit-384153 | `0x4221a226e6c6a3afb8312722d146e04e55f88969` | ❓ Unverified |
 
 ## Audit Inventory
 

@@ -90,11 +90,11 @@ The pinned logic-topography run contains 4 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| CommitmentVerifier | periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xa45aca...565ec6` | ⚠️ Unaudited |
-| Entrypoint | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xdd8aa0...fbd4c1` | ⚠️ Unaudited |
-| PrivacyPoolComplex | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1a604e...b61633` | ⚠️ Unaudited |
-| PrivacyPoolSimple | core_logic | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xf241d5...a9c9fb` | ⚠️ Unaudited |
-| WithdrawalVerifier | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x022891...897d6d` | ⚠️ Unaudited |
+| CommitmentVerifier | periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xa45aca8604a73d80c551faad6355a5c3a5565ec6` | ⚠️ Unaudited |
+| Entrypoint | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xdd8aa0560a08e39c0b3a84bba356bc025afbd4c1` | ⚠️ Unaudited |
+| PrivacyPoolComplex | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1a604e9dfa0efdc7ffda378af16cb81243b61633` | ⚠️ Unaudited |
+| PrivacyPoolSimple | core_logic | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xf241d57c6debae225c0f2e6ea1529373c9a9c9fb` | ⚠️ Unaudited |
+| WithdrawalVerifier | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x022891f938ae7fdc8ab9ead0fbf50aba8c897d6d` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

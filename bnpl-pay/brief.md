@@ -63,7 +63,7 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BNPLToken | token | ethereum | n/a | [`0x84d821...7d7a53`](./contracts/ethereum-1/0x84d821f7fbdd595c4c4a50842913e6b1e07d7a53/) | ✅ Audited |
+| BNPLToken | token | ethereum | n/a | [`0x84d821f7fbdd595c4c4a50842913e6b1e07d7a53`](./contracts/ethereum-1/0x84d821f7fbdd595c4c4a50842913e6b1e07d7a53/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 
@@ -87,8 +87,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0xe28fa5...52be73` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xe5446b...183906` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe28fa529b79e9cb2a75d39fd0104fbc19352be73` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe5446b21fc5a8f970ed29040028f78a281183906` | ❓ Unverified |
 
 ## Audit Inventory
 

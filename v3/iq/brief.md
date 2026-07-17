@@ -52,12 +52,12 @@ The pinned logic-topography run contains 2 contract row(s) across base, bsc, eth
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x0e37d7...5464e3`, chain 56)
-- UnnamedContract (`0xb96382...34a578`, chain 137)
-- UnnamedContract (`0x6efb84...712101`, chain 252)
-- UnnamedContract (`0xe59b07...8f7734`, chain 8453)
-- IQERC20 (`0x579cea...29b0c9`, chain 1)
-- Vyper_contract (`0x1bf545...4e16ba`, chain 1)
+- UnnamedContract (`0x0e37d70b51ffa2b98b4d34a5712c5291115464e3`, chain 56)
+- UnnamedContract (`0xb9638272ad6998708de56bbc0a290a1de534a578`, chain 137)
+- UnnamedContract (`0x6efb84bda519726fa1c65558e520b92b51712101`, chain 252)
+- UnnamedContract (`0xe59b07c6fea12e83e68d2fe2c3d6b56af68f7734`, chain 8453)
+- IQERC20 (`0x579cea1889991f68acc35ff5c3dd0621ff29b0c9`, chain 1)
+- Vyper_contract (`0x1bf5457ecaa14ff63cc89efd560e251e814e16ba`, chain 1)
 
 ## Contract Surface Quality
 
@@ -103,40 +103,40 @@ The pinned logic-topography run contains 2 contract row(s) across base, bsc, eth
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BAMMFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0x199281...7db0ba` | ⚠️ Unaudited |
-| BAMMUIHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xb16f68...a0885a` | ⚠️ Unaudited |
-| ExponentialPriceOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | 4 deployments: fraxtal `0x01480a...e0f358`; fraxtal `0x1a60b4...6d77d7`; fraxtal `0x5c845c...aa4b3e`; fraxtal `0x92e606...3ec0f3` | ⚠️ Unaudited |
-| EzEthEthOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0x6fd11e...d36681` | ⚠️ Unaudited |
-| EzEthOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0x1174b7...e16041` | ⚠️ Unaudited |
-| FLETwammGauge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | 2 deployments: fraxtal `0x7a6be1...9de91b`; fraxtal `0xce7063...8003d4` | ⚠️ Unaudited |
-| FpiOracleAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xcacc09...90c60d` | ⚠️ Unaudited |
-| FPISLocker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | 4 deployments: fraxtal `0x36b406...b09840`; fraxtal `0xb4fdd7...02da35`; fraxtal `0xbbb3a1...126850`; fraxtal `0xe91488...e61c01` | ⚠️ Unaudited |
-| FPISLockerUtils | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | 3 deployments: fraxtal `0x858afb...027aea`; fraxtal `0x8a3399...2da974`; fraxtal `0xf82385...732414` | ⚠️ Unaudited |
-| FraxswapFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xe30521...a667e6` | ⚠️ Unaudited |
-| FrxEthDualOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0x4b0ca6...91a527` | ⚠️ Unaudited |
-| FxsDualOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xb99c9d...01c6d2` | ⚠️ Unaudited |
-| IQERC20 | token | project_anchor | own_supporting | 0 | ethereum | unit-387719 | `0x579cea...29b0c9` | ⚠️ Unaudited |
-| L1VeFXSTotalSupplyOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | 5 deployments: fraxtal `0x04d435...9f091d`; fraxtal `0x5185e8...8a1922`; fraxtal `0x602ccf...9e578e`; fraxtal `0xa938b8...8caff0`; fraxtal `0xc42e3c...7dbd72` | ⚠️ Unaudited |
-| MerkleProofPriceSource | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | 2 deployments: fraxtal `0x190ef4...6d5ee5`; fraxtal `0x9990eb...51114c` | ⚠️ Unaudited |
-| MerkleProofPriceSourceEzEth | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xa87174...03abc5` | ⚠️ Unaudited |
-| MerkleProofPriceSourceFpiOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0x8fc742...8e9c37` | ⚠️ Unaudited |
-| MerkleProofPriceSourceRsEth | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0x5bac02...0c8dac` | ⚠️ Unaudited |
-| MerkleProofPriceSourceSdai | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | 2 deployments: fraxtal `0x816cf9...36974e`; fraxtal `0xf3e3e2...95417a` | ⚠️ Unaudited |
-| MerkleProofPriceSourceSfrxEth | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | 2 deployments: fraxtal `0xa560e0...27ce32`; fraxtal `0xabca0b...1b44db` | ⚠️ Unaudited |
-| MerkleProofPriceSourceSUSDe | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xc2b984...8955e9` | ⚠️ Unaudited |
-| MerkleProofPriceSourceWstEth | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xef583c...dce8a2` | ⚠️ Unaudited |
-| Permit2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xa37fe0...ca243b` | ⚠️ Unaudited |
-| SfrxEthDualOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | 2 deployments: fraxtal `0xa36a19...f7e7f2`; fraxtal `0xfbcdf4...fd0164` | ⚠️ Unaudited |
-| SfrxUsd2OracleImplementation | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | fraxtal | n/a | 2 deployments: fraxtal `0x1b680f...d3f1ff`; fraxtal `0xf75063...07fc60` | ⚠️ Unaudited |
-| StateRootOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | 2 deployments: fraxtal `0x28fb35...acb383`; fraxtal `0xed403d...cf9512` | ⚠️ Unaudited |
-| TimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | 2 deployments: fraxtal `0x72d7b8...362588`; fraxtal `0xc16068...a4f0b2` | ⚠️ Unaudited |
-| VariableInterestRate | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | 3 deployments: fraxtal `0x3fda3e...878c1f`; fraxtal `0x3fdb6b...08c3b2`; fraxtal `0xfa7207...7a1652` | ⚠️ Unaudited |
-| VeFXSAggregator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | 5 deployments: fraxtal `0x481073...886f26`; fraxtal `0x6a546c...6a57ae`; fraxtal `0x840f20...f39d3d`; fraxtal `0x8b7b81...ef31c1`; fraxtal `0x90eb2f...eb0d6b` | ⚠️ Unaudited |
-| VeFXSYieldDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | 8 deployments: fraxtal `0x12915b...04fed7`; fraxtal `0x2816ab...5d0437`; fraxtal `0x5fa025...f21a6d`; fraxtal `0x691d1a...42ed93`; fraxtal `0x90d52c...5e8a60`; fraxtal `0xa7ea2c...9b78e9`; fraxtal `0xb075ab...893a7d`; fraxtal `0xcadb17...f666f2` | ⚠️ Unaudited |
-| VestedFXS | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0x54bd5c...24ee5c` | ⚠️ Unaudited |
-| VestedFXSUtils | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xc540f0...a55030` | ⚠️ Unaudited |
-| Vyper_contract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387718 | `0x1bf545...4e16ba` | ⚠️ Unaudited |
-| YieldDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xe901af...de527b` | ⚠️ Unaudited |
+| BAMMFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0x19928170d739139bfbbb6614007f8eeed17db0ba` | ⚠️ Unaudited |
+| BAMMUIHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xb16f68c7351bbf8491824e7971efa14d2fa0885a` | ⚠️ Unaudited |
+| ExponentialPriceOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | 4 deployments: fraxtal `0x01480a0c134cecc309015a564c7e292ba6e0f358`; fraxtal `0x1a60b40601bb5aa192389b05f80a7beade6d77d7`; fraxtal `0x5c845cab3f05958b965a88139c0cc885aaaa4b3e`; fraxtal `0x92e606fd8b99f99928f690a5beb20f6f6e3ec0f3` | ⚠️ Unaudited |
+| EzEthEthOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0x6fd11e0e14314853988e1bbdabdd1c07d0d36681` | ⚠️ Unaudited |
+| EzEthOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0x1174b74acb27cb20f2acd12a324ded7a1ce16041` | ⚠️ Unaudited |
+| FLETwammGauge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | 2 deployments: fraxtal `0x7a6be195f9931341c1f4c4230fc48f8b9b9de91b`; fraxtal `0xce70630b4b2e889adc558b58b2980437f58003d4` | ⚠️ Unaudited |
+| FpiOracleAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xcacc0928f84d6a7ed55de1a5c4e3a7379190c60d` | ⚠️ Unaudited |
+| FPISLocker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | 4 deployments: fraxtal `0x36b406a00997e4bd5b9bb3618d832fb88fb09840`; fraxtal `0xb4fdd7444e1d86b2035c97124c46b1528802da35`; fraxtal `0xbbb3a133936d080da9120b5fab83610975126850`; fraxtal `0xe91488002186029221efc2449c19addf79e61c01` | ⚠️ Unaudited |
+| FPISLockerUtils | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | 3 deployments: fraxtal `0x858afbe668f4f562900bae3e2daed65d88027aea`; fraxtal `0x8a3399c9d97b88af969ee9d90da9c7df462da974`; fraxtal `0xf823853d09ffa596a6fcfbbcd1018e8590732414` | ⚠️ Unaudited |
+| FraxswapFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xe30521fe7f3beb6ad556887b50739d6c7ca667e6` | ⚠️ Unaudited |
+| FrxEthDualOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0x4b0ca693e29e5fd2aa39332a0387bbcd0f91a527` | ⚠️ Unaudited |
+| FxsDualOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xb99c9d329bd69ddf8af57110e011f5d81801c6d2` | ⚠️ Unaudited |
+| IQERC20 | token | project_anchor | own_supporting | 0 | ethereum | unit-387719 | `0x579cea1889991f68acc35ff5c3dd0621ff29b0c9` | ⚠️ Unaudited |
+| L1VeFXSTotalSupplyOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | 5 deployments: fraxtal `0x04d43544fc601d6fd15fb2a2cbd5ed4e139f091d`; fraxtal `0x5185e82339f825ae8dab987c5331e9b6f28a1922`; fraxtal `0x602ccfee6b4ba8eb5e35cf26e05fdede379e578e`; fraxtal `0xa938b8dc2b55a119b3618287c95427f9998caff0`; fraxtal `0xc42e3c654a36661fad19b32f484395a69a7dbd72` | ⚠️ Unaudited |
+| MerkleProofPriceSource | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | 2 deployments: fraxtal `0x190ef482a3c8f45b9bd8575ecfa65954bd6d5ee5`; fraxtal `0x9990eb28e58380122aa3adf64ea6f874df51114c` | ⚠️ Unaudited |
+| MerkleProofPriceSourceEzEth | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xa871745d853b941af700f1aa24b58f7a6903abc5` | ⚠️ Unaudited |
+| MerkleProofPriceSourceFpiOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0x8fc7425cd36d7e4605650198099e4539238e9c37` | ⚠️ Unaudited |
+| MerkleProofPriceSourceRsEth | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0x5bac02527bbaa82453c0f93b8e3deab8ad0c8dac` | ⚠️ Unaudited |
+| MerkleProofPriceSourceSdai | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | 2 deployments: fraxtal `0x816cf9dcf8fce6fa7a2249d56cb203ddbf36974e`; fraxtal `0xf3e3e2a376939bff87e9cac84e0e5a35e495417a` | ⚠️ Unaudited |
+| MerkleProofPriceSourceSfrxEth | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | 2 deployments: fraxtal `0xa560e014501f96752726f65c27e96c3e9127ce32`; fraxtal `0xabca0b314d15b3e28f24ac0ee84a63001d1b44db` | ⚠️ Unaudited |
+| MerkleProofPriceSourceSUSDe | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xc2b984e37d1caf5eef82d9d892287361058955e9` | ⚠️ Unaudited |
+| MerkleProofPriceSourceWstEth | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xef583ccb0bed4c9473178ebb228689a63bdce8a2` | ⚠️ Unaudited |
+| Permit2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xa37fe075d792894c32fe444aaa67f3e027ca243b` | ⚠️ Unaudited |
+| SfrxEthDualOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | 2 deployments: fraxtal `0xa36a19e0ae3a91d886fc9d0914fc88a6cbf7e7f2`; fraxtal `0xfbcdf41cc692ed529b9a8cc1a5867b9524fd0164` | ⚠️ Unaudited |
+| SfrxUsd2OracleImplementation | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | fraxtal | n/a | 2 deployments: fraxtal `0x1b680f4385f24420d264d78cab7c58365ed3f1ff`; fraxtal `0xf750636e1df115e3b334ed06e5b45c375107fc60` | ⚠️ Unaudited |
+| StateRootOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | 2 deployments: fraxtal `0x28fb3520426d90eb03711bee041b9c3213acb383`; fraxtal `0xed403d48e2bc946438b5686aa1ad65056ccf9512` | ⚠️ Unaudited |
+| TimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | 2 deployments: fraxtal `0x72d7b869ba1af7d7ee9010dd98180e9231362588`; fraxtal `0xc16068d1ca7e24e20e56bb70af4d00d92aa4f0b2` | ⚠️ Unaudited |
+| VariableInterestRate | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | 3 deployments: fraxtal `0x3fda3e9e78eacd7381f1ed2cf145b93537878c1f`; fraxtal `0x3fdb6bc356dad0d7260e9619efa125409a08c3b2`; fraxtal `0xfa7207f02ba29cd122a9d49ce96f6ca7707a1652` | ⚠️ Unaudited |
+| VeFXSAggregator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | 5 deployments: fraxtal `0x481073f0c82cd600c1c54dc5cae0a5dda6886f26`; fraxtal `0x6a546c9f49c0abca3b9a30f45e726f89b86a57ae`; fraxtal `0x840f20ffed887c61435e81fd1231cb923df39d3d`; fraxtal `0x8b7b8196072286ebfa68fec7e0a6f18053ef31c1`; fraxtal `0x90eb2f13acf1bc35c2c40c0ebaff2de4d2eb0d6b` | ⚠️ Unaudited |
+| VeFXSYieldDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | 8 deployments: fraxtal `0x12915be9ee3222f272bec01859c267c99104fed7`; fraxtal `0x2816ab1f4db656602b6b0041c006652a4f5d0437`; fraxtal `0x5fa02554432eb3c8a5397306d0b30e707bf21a6d`; fraxtal `0x691d1aafb550c35b24e09bb991aec9612342ed93`; fraxtal `0x90d52cdc60b7ff7994095aa184694225035e8a60`; fraxtal `0xa7ea2c8c166328c5a7c7ea8e5649724a2c9b78e9`; fraxtal `0xb075ab368e84e8652452eb2cc91965c7e3893a7d`; fraxtal `0xcadb1747d43c14d755d87f90af1d5ad4e7f666f2` | ⚠️ Unaudited |
+| VestedFXS | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0x54bd5c72645fed784c117ca83533e0584b24ee5c` | ⚠️ Unaudited |
+| VestedFXSUtils | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xc540f05bf5a09336078634d65e46242dfba55030` | ⚠️ Unaudited |
+| Vyper_contract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387718 | `0x1bf5457ecaa14ff63cc89efd560e251e814e16ba` | ⚠️ Unaudited |
+| YieldDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xe901afd3c37024b780d95985ace581f679de527b` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -156,28 +156,28 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-387722 | `0x0e37d7...5464e3` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-387720 | `0xb96382...34a578` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0x0d9346...94185c` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0x18348d...707a13` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0x5854f4...d69909` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0x6bd868...b2e4cb` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-387721 | `0x6efb84...712101` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0x8bf7af...1546f0` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0x954f18...478114` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0x9937ab...a8624a` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0x9fab6a...6896c5` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xad84da...4f071f` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xbb18f2...e85fc2` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xc4af86...d289dd` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xd5be3c...a28723` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xdbb6da...00f892` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xdcf13a...257508` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xdf567e...782427` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xe510cc...57704e` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xeec806...c7026a` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xffd3a9...60550d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-387723 | `0xe59b07...8f7734` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-387722 | `0x0e37d70b51ffa2b98b4d34a5712c5291115464e3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-387720 | `0xb9638272ad6998708de56bbc0a290a1de534a578` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0x0d9346964791878bb54c02294e72106d8794185c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0x18348ddbf9c512081d444bdee9b25e53ef707a13` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0x5854f44bbabada5d55d765b576fd390962d69909` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0x6bd8680eacdbc6513a5e40b711926d357ab2e4cb` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-387721 | `0x6efb84bda519726fa1c65558e520b92b51712101` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0x8bf7af56bb721bc3d015111508593fcb301546f0` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0x954f18a500ec24c9c3be4b973bd0631776478114` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0x9937ab3f353836256d82ac77c28c2c66b9a8624a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0x9fab6a6b9a78515d9d95d224b75371d1006896c5` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xad84dac1c249ec3999242bdd89bb82adf74f071f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xbb18f2d4e1f9ce0055b13351725e09897ee85fc2` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xc4af86d01420598a8746361576c98f5d46d289dd` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xd5be3c020f66b1fdf416fd9a551bad2460a28723` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xdbb6da2c103397fa502eca74afb5a274a900f892` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xdcf13ad4b4b3d7cba5894f5d3addff6fe8257508` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xdf567ef9ce0475254b057113e702a02d6e782427` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xe510cc8d19da2aefdb94082359825e507f57704e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xeec80691c5c470691246b883f2a50b9a9ac7026a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xffd3a9a6c28eda12869eb54b7284bc306d60550d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-387723 | `0xe59b07c6fea12e83e68d2fe2c3d6b56af68f7734` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -196,8 +196,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x579cea...29b0c9` | IQERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x1bf545...4e16ba` | Vyper_contract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x579cea1889991f68acc35ff5c3dd0621ff29b0c9` | IQERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x1bf5457ecaa14ff63cc89efd560e251e814e16ba` | Vyper_contract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

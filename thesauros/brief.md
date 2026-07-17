@@ -61,16 +61,16 @@ The protocol comprises 4 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AaveV3Provider | unknown | base | n/a | 2 deployments: base [`0x034a62...da7f12`](./contracts/base-8453/0x034a62f9617e8a1770f7c7eba04e2dab2fda7f12/); arbitrum `0xbeedb8...f16e39` | ⚠️ Unaudited |
-| CompoundV3Provider | unknown | arbitrum | n/a | 2 deployments: base `0xffac48...e77406`; arbitrum [`0xabd932...d62fa3`](./contracts/arbitrum-42161/0xabd932e0fff6417a4af16431d8d86a4e62d62fa3/) | ⚠️ Unaudited |
-| CustomDolomiteGetter | unknown | arbitrum | n/a | [`0x7b1ffb...1e78a3`](./contracts/arbitrum-42161/0x7b1ffbf8e633bc52d356601ef3323efeef1e78a3/) | ⚠️ Unaudited |
-| DolomiteProvider | unknown | arbitrum | n/a | [`0x3d036b...d0e9ae`](./contracts/arbitrum-42161/0x3d036b97482cc6c42753da51917b3302d5d0e9ae/) | ⚠️ Unaudited |
-| MorphoProvider | unknown | arbitrum | n/a | 8 deployments: base `0x0ef8ce...6193a1`; base `0x34c164...2289e9`; base `0x4516f8...05c062`; base `0x642e31...2d89e3`; arbitrum [`0x00651b...3aa6c3`](./contracts/arbitrum-42161/0x00651b3e70873afc852d9068da4d359c473aa6c3/); arbitrum `0x54e5ff...f3c23d`; arbitrum `0x7b77ca...542413`; arbitrum `0xffd8b1...ca53e7` | ⚠️ Unaudited |
-| ProviderManager | governance | base | n/a | 2 deployments: base [`0x75bad1...816dd1`](./contracts/base-8453/0x75bad13288603842bd8083eed7b97c8c5e816dd1/); base `0xffd8b1...ca53e7` | ⚠️ Unaudited |
-| Rebalancer | adapter | base | n/a | [`0xca6029...f579b8`](./contracts/base-8453/0xca6029f2d5f5d36da047206ae7a254fa80f579b8/) | ⚠️ Unaudited |
-| Rebalancer | adapter | arbitrum | n/a | 3 deployments: base `0x6c7013...af6148`; arbitrum [`0x57c10b...9d7d70`](./contracts/arbitrum-42161/0x57c10bd3fdb2849384dde954f63d37dfad9d7d70/); arbitrum `0xcd7211...294a30` | ⚠️ Unaudited |
-| Timelock | governance | base | n/a | 2 deployments: base [`0x9b9a07...c679b2`](./contracts/base-8453/0x9b9a07b79557e109d454913314e5ef41e1c679b2/); base `0xed495c...2ad2c1` | ⚠️ Unaudited |
-| VaultManager | core_logic | base | n/a | [`0x839e57...6f7383`](./contracts/base-8453/0x839e57080c18195d8d343a02c2f623b5916f7383/) | ⚠️ Unaudited |
+| AaveV3Provider | unknown | base | n/a | 2 deployments: base [`0x034a62f9617e8a1770f7c7eba04e2dab2fda7f12`](./contracts/base-8453/0x034a62f9617e8a1770f7c7eba04e2dab2fda7f12/); arbitrum `0xbeedb89dc47cab2678ebb796cfc8131062f16e39` | ⚠️ Unaudited |
+| CompoundV3Provider | unknown | arbitrum | n/a | 2 deployments: base `0xffac48125fa4bd8bc03cdca725459563aae77406`; arbitrum [`0xabd932e0fff6417a4af16431d8d86a4e62d62fa3`](./contracts/arbitrum-42161/0xabd932e0fff6417a4af16431d8d86a4e62d62fa3/) | ⚠️ Unaudited |
+| CustomDolomiteGetter | unknown | arbitrum | n/a | [`0x7b1ffbf8e633bc52d356601ef3323efeef1e78a3`](./contracts/arbitrum-42161/0x7b1ffbf8e633bc52d356601ef3323efeef1e78a3/) | ⚠️ Unaudited |
+| DolomiteProvider | unknown | arbitrum | n/a | [`0x3d036b97482cc6c42753da51917b3302d5d0e9ae`](./contracts/arbitrum-42161/0x3d036b97482cc6c42753da51917b3302d5d0e9ae/) | ⚠️ Unaudited |
+| MorphoProvider | unknown | arbitrum | n/a | 8 deployments: base `0x0ef8ced75e5877c69ac8619145219b67d76193a1`; base `0x34c164e7021e38921ae20a723234d2b1b52289e9`; base `0x4516f8324bfacc71e5099fabfc51e97e4905c062`; base `0x642e31be2ff6d3eba38dc16760f3a146092d89e3`; arbitrum [`0x00651b3e70873afc852d9068da4d359c473aa6c3`](./contracts/arbitrum-42161/0x00651b3e70873afc852d9068da4d359c473aa6c3/); arbitrum `0x54e5ff7ff115e2b01332d81f7effb02adef3c23d`; arbitrum `0x7b77cafe29d62c984e569793ad1c1dc9ed542413`; arbitrum `0xffd8b1a9b97787c169154a485925512c79ca53e7` | ⚠️ Unaudited |
+| ProviderManager | governance | base | n/a | 2 deployments: base [`0x75bad13288603842bd8083eed7b97c8c5e816dd1`](./contracts/base-8453/0x75bad13288603842bd8083eed7b97c8c5e816dd1/); base `0xffd8b1a9b97787c169154a485925512c79ca53e7` | ⚠️ Unaudited |
+| Rebalancer | adapter | base | n/a | [`0xca6029f2d5f5d36da047206ae7a254fa80f579b8`](./contracts/base-8453/0xca6029f2d5f5d36da047206ae7a254fa80f579b8/) | ⚠️ Unaudited |
+| Rebalancer | adapter | arbitrum | n/a | 3 deployments: base `0x6c7013b3596623d146781c90b4ee182331af6148`; arbitrum [`0x57c10bd3fdb2849384dde954f63d37dfad9d7d70`](./contracts/arbitrum-42161/0x57c10bd3fdb2849384dde954f63d37dfad9d7d70/); arbitrum `0xcd72118c0707d315fa13350a63596dcd9b294a30` | ⚠️ Unaudited |
+| Timelock | governance | base | n/a | 2 deployments: base [`0x9b9a07b79557e109d454913314e5ef41e1c679b2`](./contracts/base-8453/0x9b9a07b79557e109d454913314e5ef41e1c679b2/); base `0xed495c426f361a05572b48e4b546d307812ad2c1` | ⚠️ Unaudited |
+| VaultManager | core_logic | base | n/a | [`0x839e57080c18195d8d343a02c2f623b5916f7383`](./contracts/base-8453/0x839e57080c18195d8d343a02c2f623b5916f7383/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -90,21 +90,21 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | base | n/a | `0x76092b...cb3d76` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x852f69...4c1fd9` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x8ea1e9...cf455d` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x9ea0e9...4ed10d` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xa2cc6a...65889e` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x0ef8ce...6193a1` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x2aed91...ce0d7e` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x34c164...2289e9` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x44b17c...df024f` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x4516f8...05c062` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x6730f4...2af71a` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x6c7013...af6148` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x74bce2...f342ca` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x839e57...6f7383` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x9b9a07...c679b2` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x76092be46056ec705c0c2aeb27e06f2a1acb3d76` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x852f69cb1c535426eedfad8dcd8ecc6fa14c1fd9` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x8ea1e9dc0b5f8327d0c8006ad31a2a962acf455d` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x9ea0e934bf1f37913ea580b25127f36ab04ed10d` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xa2cc6ab9e1caa52bb8012672a47412725265889e` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x0ef8ced75e5877c69ac8619145219b67d76193a1` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x2aed916134b2a470c8d3ffd4f1fb06e75ace0d7e` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x34c164e7021e38921ae20a723234d2b1b52289e9` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x44b17cd46822715727a59114d7fd10688adf024f` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x4516f8324bfacc71e5099fabfc51e97e4905c062` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x6730f490edbcdb4ab7abe2de71131ee55d2af71a` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x6c7013b3596623d146781c90b4ee182331af6148` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x74bce2a3bcec4dfd1d7ecd530e743e268af342ca` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x839e57080c18195d8d343a02c2f623b5916f7383` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x9b9a07b79557e109d454913314e5ef41e1c679b2` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -118,13 +118,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | [`0x7b1ffb...1e78a3`](./contracts/arbitrum-42161/0x7b1ffbf8e633bc52d356601ef3323efeef1e78a3/) | CustomDolomiteGetter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x3d036b...d0e9ae`](./contracts/arbitrum-42161/0x3d036b97482cc6c42753da51917b3302d5d0e9ae/) | DolomiteProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x75bad1...816dd1`](./contracts/base-8453/0x75bad13288603842bd8083eed7b97c8c5e816dd1/) | ProviderManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xca6029...f579b8`](./contracts/base-8453/0xca6029f2d5f5d36da047206ae7a254fa80f579b8/) | Rebalancer | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x57c10b...9d7d70`](./contracts/arbitrum-42161/0x57c10bd3fdb2849384dde954f63d37dfad9d7d70/) | Rebalancer | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x9b9a07...c679b2`](./contracts/base-8453/0x9b9a07b79557e109d454913314e5ef41e1c679b2/) | Timelock | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x839e57...6f7383`](./contracts/base-8453/0x839e57080c18195d8d343a02c2f623b5916f7383/) | VaultManager | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x7b1ffbf8e633bc52d356601ef3323efeef1e78a3`](./contracts/arbitrum-42161/0x7b1ffbf8e633bc52d356601ef3323efeef1e78a3/) | CustomDolomiteGetter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x3d036b97482cc6c42753da51917b3302d5d0e9ae`](./contracts/arbitrum-42161/0x3d036b97482cc6c42753da51917b3302d5d0e9ae/) | DolomiteProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x75bad13288603842bd8083eed7b97c8c5e816dd1`](./contracts/base-8453/0x75bad13288603842bd8083eed7b97c8c5e816dd1/) | ProviderManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xca6029f2d5f5d36da047206ae7a254fa80f579b8`](./contracts/base-8453/0xca6029f2d5f5d36da047206ae7a254fa80f579b8/) | Rebalancer | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x57c10bd3fdb2849384dde954f63d37dfad9d7d70`](./contracts/arbitrum-42161/0x57c10bd3fdb2849384dde954f63d37dfad9d7d70/) | Rebalancer | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x9b9a07b79557e109d454913314e5ef41e1c679b2`](./contracts/base-8453/0x9b9a07b79557e109d454913314e5ef41e1c679b2/) | Timelock | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x839e57080c18195d8d343a02c2f623b5916f7383`](./contracts/base-8453/0x839e57080c18195d8d343a02c2f623b5916f7383/) | VaultManager | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

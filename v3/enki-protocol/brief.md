@@ -52,13 +52,13 @@ The pinned logic-topography run contains 3 contract row(s) across ethereum, meti
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x282549...f63ea5`, chain 1088)
-- UnnamedContract (`0x79f352...eb81e8`, chain 1088)
-- UnnamedContract (`0x810ef8...cc32af`, chain 1088)
-- UnnamedContract (`0xcf8a7b...841c2a`, chain 1088)
-- EMetis (`0x97a2de...564661`, chain 1088)
-- ENKI (`0x096a84...9736f1`, chain 1088)
-- TransparentUpgradeableProxy (`0x13c0cc...4c8cd7`, chain 1088)
+- UnnamedContract (`0x28254967e34db48eb548ec078288cd69b5f63ea5`, chain 1088)
+- UnnamedContract (`0x79f3522a1b56f22a6549e42f9cfa92ef5feb81e8`, chain 1088)
+- UnnamedContract (`0x810ef8aa1326fb1c5ce57cd79d549cf9b2cc32af`, chain 1088)
+- UnnamedContract (`0xcf8a7b8ce925133892ec641cd75b6074b6841c2a`, chain 1088)
+- EMetis (`0x97a2de3a09f4a4229369ee82c7f76be1a5564661`, chain 1088)
+- ENKI (`0x096a84536ab84e68ee210561ffd3a038e79736f1`, chain 1088)
+- TransparentUpgradeableProxy (`0x13c0ccc4c21a1aa082ab92ca515fe36f514c8cd7`, chain 1088)
 
 ## Contract Surface Quality
 
@@ -104,20 +104,20 @@ The pinned logic-topography run contains 3 contract row(s) across ethereum, meti
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Config | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x217368...420513` | ⚠️ Unaudited |
-| Dealer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x159a9f...650a2e` | ⚠️ Unaudited |
-| EMetis | unknown | project_anchor | own_supporting | 0 | metis | unit-237212 | `0x97a2de...564661` | ⚠️ Unaudited |
-| EMetisMinter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x6a58f4...51538d` | ⚠️ Unaudited |
-| ENKI | unknown | project_anchor | own_supporting | 0 | metis | unit-237207 | `0x096a84...9736f1` | ⚠️ Unaudited |
-| ENKITreasury | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x93b171...b56d96` | ⚠️ Unaudited |
-| InviterNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x153694...07d76e` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x1d9c0d...6564c0` | ⚠️ Unaudited |
-| RedemptionQueue | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x5f31e5...9b5960` | ⚠️ Unaudited |
-| RewardDispatcher | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x06d510...329e89` | ⚠️ Unaudited |
-| SeMetis | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x9efb05...420a91` | ⚠️ Unaudited |
-| SequencerAgent | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7ad986...78f4b4` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 0 | metis | unit-237208 | `0x13c0cc...4c8cd7` | ⚠️ Unaudited |
-| Vesting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x724054...8273dd` | ⚠️ Unaudited |
+| Config | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x217368262b094cfc15ef7202f76ac4faad420513` | ⚠️ Unaudited |
+| Dealer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x159a9fa80516f3779d29c0ec05521bee26650a2e` | ⚠️ Unaudited |
+| EMetis | unknown | project_anchor | own_supporting | 0 | metis | unit-237212 | `0x97a2de3a09f4a4229369ee82c7f76be1a5564661` | ⚠️ Unaudited |
+| EMetisMinter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x6a58f4b127ccc522c5ad6eff2b67d1dd8c51538d` | ⚠️ Unaudited |
+| ENKI | unknown | project_anchor | own_supporting | 0 | metis | unit-237207 | `0x096a84536ab84e68ee210561ffd3a038e79736f1` | ⚠️ Unaudited |
+| ENKITreasury | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x93b171deae9c5ea23335ca0c59639c2330b56d96` | ⚠️ Unaudited |
+| InviterNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x153694e11768a59c7af7d00a960f70cc6307d76e` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x1d9c0db3937ad9346ae6b921638bc090736564c0` | ⚠️ Unaudited |
+| RedemptionQueue | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x5f31e5f22729d58c66147e57f6013315509b5960` | ⚠️ Unaudited |
+| RewardDispatcher | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x06d51063df7842295ea9131432db77285c329e89` | ⚠️ Unaudited |
+| SeMetis | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x9efb0501019e536c70c77c22170f2eb07c420a91` | ⚠️ Unaudited |
+| SequencerAgent | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7ad9864d900b0ec7b7d0d2bda55cce091778f4b4` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 0 | metis | unit-237208 | `0x13c0ccc4c21a1aa082ab92ca515fe36f514c8cd7` | ⚠️ Unaudited |
+| Vesting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x72405496730fc3d38fca77dc67f3c7ecc18273dd` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -137,12 +137,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | metis | unit-237209 | `0x282549...f63ea5` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | metis | unit-237210 | `0x79f352...eb81e8` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | metis | unit-237211 | `0x810ef8...cc32af` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | metis | unit-237213 | `0xcf8a7b...841c2a` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xeed9de...0aad65` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xf1a376...cd610d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | metis | unit-237209 | `0x28254967e34db48eb548ec078288cd69b5f63ea5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | metis | unit-237210 | `0x79f3522a1b56f22a6549e42f9cfa92ef5feb81e8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | metis | unit-237211 | `0x810ef8aa1326fb1c5ce57cd79d549cf9b2cc32af` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | metis | unit-237213 | `0xcf8a7b8ce925133892ec641cd75b6074b6841c2a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xeed9de312f438692570b103b580a59bea80aad65` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xf1a376a969532337912d9e3d9b16ef9650cd610d` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -168,8 +168,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| metis | `0x97a2de...564661` | EMetis | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| metis | `0x096a84...9736f1` | ENKI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| metis | `0x97a2de3a09f4a4229369ee82c7f76be1a5564661` | EMetis | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| metis | `0x096a84536ab84e68ee210561ffd3a038e79736f1` | ENKI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

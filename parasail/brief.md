@@ -61,7 +61,7 @@ The protocol comprises 3 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| InterchainToken | token | arbitrum | n/a | [`0xc87b37...9d056c`](./contracts/arbitrum-42161/0xc87b37a581ec3257b734886d9d3a581f5a9d056c/) | ⚠️ Unaudited |
+| InterchainToken | token | arbitrum | n/a | [`0xc87b37a581ec3257b734886d9d3a581f5a9d056c`](./contracts/arbitrum-42161/0xc87b37a581ec3257b734886d9d3a581f5a9d056c/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -81,40 +81,40 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Proxy (impl: 0xaa5d9edfd680297533a14e121b70ae9fadd77831) | unknown | arbitrum | n/a | 2 deployments: arbitrum `0x0ec4dc...010caa`; arbitrum `0xaa5d9e...d77831` | ❓ Unverified |
-| Proxy (impl: 0xc4f869b9040ce060d3f3204abd579b00461a4e45) | unknown | arbitrum | n/a | 2 deployments: arbitrum `0x369d4b...5df44e`; arbitrum `0xc4f869...1a4e45` | ❓ Unverified |
-| Proxy (impl: 0xcbe7efd39be37699e2377ddab28b627aa321d209) | unknown | arbitrum | n/a | 2 deployments: arbitrum `0x19eb5d...81ee02`; arbitrum `0xcbe7ef...21d209` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x0fafc1...1bbbfb` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x12b785...71855a` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x16e7d8...fe0362` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x174fcc...574818` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x1e8895...beca03` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x22dbba...fc032a` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x277aeb...40bce0` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x28a141...3d2582` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x2ab36b...852b25` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x304ece...d181ff` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x3d7dde...963dfe` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x43ba49...9272df` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x445895...662909` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x4e7088...c18e39` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x618d55...0f31dd` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x7c588e...158127` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | 2 deployments: arbitrum `0x885266...10085e`; arbitrum `0xc7a6aa...5a5fa3` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x8eebfa...786ef3` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x901a72...5b336e` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x906be3...270319` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x92a159...1fb2fe` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xaa82e4...64c86f` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xc537e6...75f398` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xce0a65...888969` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xd6e02f...35efc6` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xd76ac8...bd66b9` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xd9694e...59f7e7` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xd99ab1...203dad` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | 2 deployments: arbitrum `0xd9a340...47e74c`; arbitrum `0xe87792...39b2a4` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xeae9f8...2f689c` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xf5b42a...301f47` | ❓ Unverified |
+| Proxy (impl: 0xaa5d9edfd680297533a14e121b70ae9fadd77831) | unknown | arbitrum | n/a | 2 deployments: arbitrum `0x0ec4dc1e46a4cc0b53ec764ab37b6e5b6e010caa`; arbitrum `0xaa5d9edfd680297533a14e121b70ae9fadd77831` | ❓ Unverified |
+| Proxy (impl: 0xc4f869b9040ce060d3f3204abd579b00461a4e45) | unknown | arbitrum | n/a | 2 deployments: arbitrum `0x369d4b1c105471189b5ef66134a0a9a98f5df44e`; arbitrum `0xc4f869b9040ce060d3f3204abd579b00461a4e45` | ❓ Unverified |
+| Proxy (impl: 0xcbe7efd39be37699e2377ddab28b627aa321d209) | unknown | arbitrum | n/a | 2 deployments: arbitrum `0x19eb5d91c095bfe5bcfacf0af4e0c6d19f81ee02`; arbitrum `0xcbe7efd39be37699e2377ddab28b627aa321d209` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x0fafc110aff61ec33afb3554b22ad20b471bbbfb` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x12b7859bf6faa171361393cf71dd7c0f5171855a` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x16e7d81a28dae1ad70e7c35029b9be4907fe0362` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x174fccbfce4d760418facfe530e29da009574818` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x1e88959531ef6c2680c78b4de20f11c2c5beca03` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x22dbbae7da90dd33d333c6827a4b54cdebfc032a` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x277aebb81f19a2c4dc0436857724e5363f40bce0` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x28a141f3e701637aaecf801c6cc08a3c7a3d2582` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x2ab36b6677eb46c34bd72f0dac54c38600852b25` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x304ecea262847f902be52c2ca9e621dd54d181ff` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x3d7ddee9e28b0a05bec16f9a49bbca0129963dfe` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x43ba49638c9bef0c4da5c1d9dec3fea7949272df` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x445895350908b6241e2294222e68b0b173662909` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x4e7088e69eb8aaf8b199c795ecc1be6a68c18e39` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x618d55566ca6a7c642a853687edc6873e50f31dd` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x7c588e0fe57760b965f7a3b886848b28c4158127` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | 2 deployments: arbitrum `0x885266b5ab2fea41dd51ce7beeed1d743410085e`; arbitrum `0xc7a6aa7e8cc52b5523ff38e963d26e43295a5fa3` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x8eebfa31b90f1cb92da3f33b1e2106e434786ef3` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x901a724d2f4caefbedf50b4c781c7058415b336e` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x906be35e3162f1c8e4b6eb86ffba111e0f270319` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x92a1597348b41f05d7280ae3d7835d11a81fb2fe` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xaa82e43422e2d8ccc1769f2b05a855a54764c86f` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xc537e67eb192b3f0b6b183ff52060ee92475f398` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xce0a6563ca05c7937ff51dd2f52eaac71b888969` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xd6e02fd8d1191204d37f9c2f8394a1887a35efc6` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xd76ac8f4fb699a2f03658d77789f1571b9bd66b9` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xd9694e94857fcd8c88396d79ab8dd719e459f7e7` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xd99ab1eb7c36fe42b3462dd5d8c2269af0203dad` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | 2 deployments: arbitrum `0xd9a340357f76e756217c8b7bafe018e04347e74c`; arbitrum `0xe877923c6163ccedb2b1da73997dff4afe39b2a4` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xeae9f8eeda6cc009614853793f9b94eed32f689c` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xf5b42af32e8b843c172e5e8599880ebd14301f47` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -127,7 +127,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | [`0xc87b37...9d056c`](./contracts/arbitrum-42161/0xc87b37a581ec3257b734886d9d3a581f5a9d056c/) | InterchainToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xc87b37a581ec3257b734886d9d3a581f5a9d056c`](./contracts/arbitrum-42161/0xc87b37a581ec3257b734886d9d3a581f5a9d056c/) | InterchainToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

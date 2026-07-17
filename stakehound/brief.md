@@ -59,21 +59,21 @@ The protocol forms a single structural family (Core Logic) of 3 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| StakedToken | unknown | ethereum | n/a | 2 deployments: ethereum [`0x0c63ca...1ebec8`](./contracts/ethereum-1/0x0c63cae5fcc2ca3dde60a35e50362220651ebec8/); ethereum `0xcee51e...87e998` | ✅ Audited |
-| StakedToken | unknown | ethereum | n/a | 2 deployments: ethereum [`0x160b1e...ceed7e`](./contracts/ethereum-1/0x160b1e5aabfd70b2fc40af815014925d71ceed7e/); ethereum `0x98ce98...147d9b` | ✅ Audited |
-| StakedToken | unknown | ethereum | n/a | 3 deployments: ethereum [`0x19ffa8...abc644`](./contracts/ethereum-1/0x19ffa8fc52df8982cea39b492e56abb2f8abc644/); ethereum `0x507e11...a642e4`; ethereum `0xd79311...5778f4` | ✅ Audited |
-| StakedToken | unknown | ethereum | n/a | 2 deployments: ethereum [`0x31b595...7e3865`](./contracts/ethereum-1/0x31b595e7cfdb624d10a3e7a562ed98c3567e3865/); ethereum `0x4cc881...31a111` | ✅ Audited |
-| StakedToken | unknown | ethereum | n/a | 2 deployments: ethereum [`0x3c47ff...0b5394`](./contracts/ethereum-1/0x3c47ff4108b12ca539e6c0bf1cc8bd63f90b5394/); ethereum `0x78474f...3569e8` | ✅ Audited |
-| StakedToken | unknown | ethereum | n/a | 3 deployments: ethereum [`0x6a104a...9c0a61`](./contracts/ethereum-1/0x6a104ad073aee76c03bf3d9fc77db21c649c0a61/); ethereum `0xef8bf5...6eca1d`; ethereum `0xfd330e...2bf62e` | ✅ Audited |
-| StakedToken | unknown | ethereum | n/a | 2 deployments: ethereum [`0x794e63...f29d5e`](./contracts/ethereum-1/0x794e630c1f27017e66d3ee34c8d9156773f29d5e/); ethereum `0x8f5e78...abe408` | ✅ Audited |
-| StakedToken | unknown | ethereum | n/a | 2 deployments: ethereum [`0x7defd4...7bd216`](./contracts/ethereum-1/0x7defd41888692cdd14820266f70506990d7bd216/); ethereum `0xec1b21...3c7bde` | ✅ Audited |
-| StakedTokenV2 | unknown | ethereum | n/a | 2 deployments: ethereum [`0x312ca0...a91b87`](./contracts/ethereum-1/0x312ca0592a39a5fa5c87bb4f1da7b77544a91b87/); ethereum `0xdfe66b...f0281d` | ✅ Audited |
+| StakedToken | unknown | ethereum | n/a | 2 deployments: ethereum [`0x0c63cae5fcc2ca3dde60a35e50362220651ebec8`](./contracts/ethereum-1/0x0c63cae5fcc2ca3dde60a35e50362220651ebec8/); ethereum `0xcee51e6147317d5ce39168c57a3507476f87e998` | ✅ Audited |
+| StakedToken | unknown | ethereum | n/a | 2 deployments: ethereum [`0x160b1e5aabfd70b2fc40af815014925d71ceed7e`](./contracts/ethereum-1/0x160b1e5aabfd70b2fc40af815014925d71ceed7e/); ethereum `0x98ce989b9976498e7203bfb2c879b09af6147d9b` | ✅ Audited |
+| StakedToken | unknown | ethereum | n/a | 3 deployments: ethereum [`0x19ffa8fc52df8982cea39b492e56abb2f8abc644`](./contracts/ethereum-1/0x19ffa8fc52df8982cea39b492e56abb2f8abc644/); ethereum `0x507e11d64fea7601f717ee86154b854239a642e4`; ethereum `0xd79311eb6c74c408e678b8364b69b4744a5778f4` | ✅ Audited |
+| StakedToken | unknown | ethereum | n/a | 2 deployments: ethereum [`0x31b595e7cfdb624d10a3e7a562ed98c3567e3865`](./contracts/ethereum-1/0x31b595e7cfdb624d10a3e7a562ed98c3567e3865/); ethereum `0x4cc8816805c277fd18134c3a1ba76aa86531a111` | ✅ Audited |
+| StakedToken | unknown | ethereum | n/a | 2 deployments: ethereum [`0x3c47ff4108b12ca539e6c0bf1cc8bd63f90b5394`](./contracts/ethereum-1/0x3c47ff4108b12ca539e6c0bf1cc8bd63f90b5394/); ethereum `0x78474f29af6d4eb0cfb3168eff1c117cf13569e8` | ✅ Audited |
+| StakedToken | unknown | ethereum | n/a | 3 deployments: ethereum [`0x6a104ad073aee76c03bf3d9fc77db21c649c0a61`](./contracts/ethereum-1/0x6a104ad073aee76c03bf3d9fc77db21c649c0a61/); ethereum `0xef8bf5f935d0a3e342df62bd9bc0fe0e0b6eca1d`; ethereum `0xfd330ec969e2194649305e617c0cf434642bf62e` | ✅ Audited |
+| StakedToken | unknown | ethereum | n/a | 2 deployments: ethereum [`0x794e630c1f27017e66d3ee34c8d9156773f29d5e`](./contracts/ethereum-1/0x794e630c1f27017e66d3ee34c8d9156773f29d5e/); ethereum `0x8f5e78888f8933ed676a62bb6b58a4b279abe408` | ✅ Audited |
+| StakedToken | unknown | ethereum | n/a | 2 deployments: ethereum [`0x7defd41888692cdd14820266f70506990d7bd216`](./contracts/ethereum-1/0x7defd41888692cdd14820266f70506990d7bd216/); ethereum `0xec1b213a3577f8d74e1d3970b8643d50c33c7bde` | ✅ Audited |
+| StakedTokenV2 | unknown | ethereum | n/a | 2 deployments: ethereum [`0x312ca0592a39a5fa5c87bb4f1da7b77544a91b87`](./contracts/ethereum-1/0x312ca0592a39a5fa5c87bb4f1da7b77544a91b87/); ethereum `0xdfe66b14d37c77f4e9b180ceb433d1b164f0281d` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ProxyAdmin | unknown | ethereum | n/a | 4 deployments: ethereum [`0x034feb...628647`](./contracts/ethereum-1/0x034feb638833588873c487a458060e3e34628647/); ethereum `0x905ef1...c80a03`; ethereum `0xddc0a5...0c9878`; ethereum `0xece69c...38cdc5` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | ethereum | n/a | 4 deployments: ethereum [`0x034feb638833588873c487a458060e3e34628647`](./contracts/ethereum-1/0x034feb638833588873c487a458060e3e34628647/); ethereum `0x905ef18fefc1377b9b900466eb46db45eec80a03`; ethereum `0xddc0a5006cb3554c59ffc1dd55ee4b5d7e0c9878`; ethereum `0xece69c071e08e7abcf4c8b312028279dfa38cdc5` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

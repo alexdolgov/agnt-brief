@@ -60,7 +60,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| MILK | unknown | base | n/a | [`0x6e0090...468c54`](./contracts/base-8453/0x6e0090dbecf3b4f0f9429637756cadd8fc468c54/) | ⚠️ Unaudited |
+| MILK | unknown | base | n/a | [`0x6e0090dbecf3b4f0f9429637756cadd8fc468c54`](./contracts/base-8453/0x6e0090dbecf3b4f0f9429637756cadd8fc468c54/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -91,7 +91,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x6e0090...468c54`](./contracts/base-8453/0x6e0090dbecf3b4f0f9429637756cadd8fc468c54/) | MILK | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x6e0090dbecf3b4f0f9429637756cadd8fc468c54`](./contracts/base-8453/0x6e0090dbecf3b4f0f9429637756cadd8fc468c54/) | MILK | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

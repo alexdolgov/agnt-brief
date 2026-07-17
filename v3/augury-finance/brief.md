@@ -52,12 +52,12 @@ The pinned logic-topography run contains 3 contract row(s) across polygon. Struc
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x33c383...d11b26`, chain 137)
-- UnnamedContract (`0x9e8ee4...15bb0e`, chain 137)
-- UnnamedContract (`0xf6380d...3048e3`, chain 137)
-- AuguryStateBasedDividendsV1 (`0x070aef...b2a238`, chain 137)
-- MasterAugur (`0x6ad706...1a132e`, chain 137)
-- OmenToken (`0x76e63a...e89a7e`, chain 137)
+- UnnamedContract (`0x33c3834262903d6bcecb0ba936fc65caa4d11b26`, chain 137)
+- UnnamedContract (`0x9e8ee4f17f17371d53e2fb19bdde7a084215bb0e`, chain 137)
+- UnnamedContract (`0xf6380d9b4cc3a0a180d5f1d78e3b7a33ec3048e3`, chain 137)
+- AuguryStateBasedDividendsV1 (`0x070aef7a90bd7b4b3b43355c81c56011d5b2a238`, chain 137)
+- MasterAugur (`0x6ad70613d14c34aa69e1604af91c39e0591a132e`, chain 137)
+- OmenToken (`0x76e63a3e7ba1e2e61d3da86a87479f983de89a7e`, chain 137)
 
 ## Contract Surface Quality
 
@@ -103,28 +103,28 @@ The pinned logic-topography run contains 3 contract row(s) across polygon. Struc
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AirmailV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x3c1a89...604197` | ⚠️ Unaudited |
-| AugurDividendsV1_CollectFromBug | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x3d78d1...61017e` | ⚠️ Unaudited |
-| AugurDividendsV1a | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x17aa08...3a6744` | ⚠️ Unaudited |
-| AugurStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x014944...b5cfab` | ⚠️ Unaudited |
-| AuguryStateBasedDividendsV1 | unknown | project_anchor | own_supporting | 0 | polygon | unit-379823 | `0x070aef...b2a238` | ⚠️ Unaudited |
-| AuguryStateRepositoryV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x870927...88a2f6` | ⚠️ Unaudited |
-| AuguryV1IFO | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xa21610...b294fe` | ⚠️ Unaudited |
-| ComponentExtractor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x1ae7a3...951dec` | ⚠️ Unaudited |
-| DividendPeriod | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x4e89d4...05dfad` | ⚠️ Unaudited |
-| DividendsV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xc389bf...3602ab` | ⚠️ Unaudited |
-| GameNftV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x663229...204b26` | ⚠️ Unaudited |
-| GeneralStore | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x444bdc...a2144e` | ⚠️ Unaudited |
-| GloryERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x83553e...35c750` | ⚠️ Unaudited |
-| MasterAugur | unknown | project_anchor | own_supporting | 0 | polygon | unit-379827 | `0x6ad706...1a132e` | ⚠️ Unaudited |
-| Math | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x8442d4...853977` | ⚠️ Unaudited |
-| OmenStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x307f3e...6a3319` | ⚠️ Unaudited |
-| OmenToken | unknown | project_anchor | own_supporting | 0 | polygon | unit-379828 | `0x76e63a...e89a7e` | ⚠️ Unaudited |
-| Treasury | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xd1d3df...f9d80c` | ⚠️ Unaudited |
-| UnlimitedCauldron | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x019c7a...fe113a` | ⚠️ Unaudited |
-| UnlimitedCauldronState | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x8d9b75...877e26` | ⚠️ Unaudited |
-| VaultChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x48f459...7553e3` | ⚠️ Unaudited |
-| Watt | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x725a93...66c45b` | ⚠️ Unaudited |
+| AirmailV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x3c1a89729207a5d5ffe8cbfacce1826f92604197` | ⚠️ Unaudited |
+| AugurDividendsV1_CollectFromBug | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x3d78d17cd6199f86c0efd93f8f7e4fb88961017e` | ⚠️ Unaudited |
+| AugurDividendsV1a | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x17aa087a86e9c3881af3f1e0a517421f5d3a6744` | ⚠️ Unaudited |
+| AugurStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x0149444a018d30edffc19960dc4eae2b6eb5cfab` | ⚠️ Unaudited |
+| AuguryStateBasedDividendsV1 | unknown | project_anchor | own_supporting | 0 | polygon | unit-379823 | `0x070aef7a90bd7b4b3b43355c81c56011d5b2a238` | ⚠️ Unaudited |
+| AuguryStateRepositoryV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x8709278f89d6fb589f1188f6b415d3edee88a2f6` | ⚠️ Unaudited |
+| AuguryV1IFO | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xa2161090455ad57d9c96975dee2288011bb294fe` | ⚠️ Unaudited |
+| ComponentExtractor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x1ae7a358506d32c6a51d5e30acf7dd693c951dec` | ⚠️ Unaudited |
+| DividendPeriod | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x4e89d422c6a4fb7066fe91232fa9873d1705dfad` | ⚠️ Unaudited |
+| DividendsV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xc389bf59f74dade9a59084657edf6d6fb83602ab` | ⚠️ Unaudited |
+| GameNftV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x6632294fad327c5d2b0fed494a5d79c96b204b26` | ⚠️ Unaudited |
+| GeneralStore | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x444bdc7541eb55d641a54860ddecf6a71da2144e` | ⚠️ Unaudited |
+| GloryERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x83553e4fa239c2f0b6622eb9f893bd872e35c750` | ⚠️ Unaudited |
+| MasterAugur | unknown | project_anchor | own_supporting | 0 | polygon | unit-379827 | `0x6ad70613d14c34aa69e1604af91c39e0591a132e` | ⚠️ Unaudited |
+| Math | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x8442d4beabb47e99518c706b1a554f318d853977` | ⚠️ Unaudited |
+| OmenStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x307f3e279ee518bc0363e3cf382954ed516a3319` | ⚠️ Unaudited |
+| OmenToken | unknown | project_anchor | own_supporting | 0 | polygon | unit-379828 | `0x76e63a3e7ba1e2e61d3da86a87479f983de89a7e` | ⚠️ Unaudited |
+| Treasury | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xd1d3dfbc2df52668ba2c5e09044743f5a5f9d80c` | ⚠️ Unaudited |
+| UnlimitedCauldron | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x019c7a610d980d94e7f8ece79c0ed2ac43fe113a` | ⚠️ Unaudited |
+| UnlimitedCauldronState | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x8d9b75f7a0abc679154bac9b2054f65c45877e26` | ⚠️ Unaudited |
+| VaultChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x48f4598095394b8ee9233eba42d2595d067553e3` | ⚠️ Unaudited |
+| Watt | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x725a937a7b80d615719f66e79a245f3c7766c45b` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -144,9 +144,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-379825 | `0x33c383...d11b26` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-379829 | `0x9e8ee4...15bb0e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-379831 | `0xf6380d...3048e3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-379825 | `0x33c3834262903d6bcecb0ba936fc65caa4d11b26` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-379829 | `0x9e8ee4f17f17371d53e2fb19bdde7a084215bb0e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-379831 | `0xf6380d9b4cc3a0a180d5f1d78e3b7a33ec3048e3` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -172,9 +172,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| polygon | `0x070aef...b2a238` | AuguryStateBasedDividendsV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | `0x6ad706...1a132e` | MasterAugur | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | `0x76e63a...e89a7e` | OmenToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0x070aef7a90bd7b4b3b43355c81c56011d5b2a238` | AuguryStateBasedDividendsV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0x6ad70613d14c34aa69e1604af91c39e0591a132e` | MasterAugur | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0x76e63a3e7ba1e2e61d3da86a87479f983de89a7e` | OmenToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

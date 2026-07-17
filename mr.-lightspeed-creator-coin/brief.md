@@ -61,9 +61,9 @@ The protocol comprises 2 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CreatorCoin | unknown | base | n/a | [`0xf0cb96...10f87a`](./contracts/base-8453/0xf0cb96a4011a0a6f73d100c7080bf8020d10f87a/) | ⚠️ Unaudited |
-| ZoraFactoryImpl | registry | base | n/a | [`0x777777...45baf3`](./contracts/base-8453/0x777777751622c0d3258f214f9df38e35bf45baf3/) | ⚠️ Unaudited |
-| ZoraHookRegistry | registry | base | n/a | [`0x777777...fc18d7`](./contracts/base-8453/0x777777c4c14b133858c3982d41dbf02509fc18d7/) | ⚠️ Unaudited |
+| CreatorCoin | unknown | base | n/a | [`0xf0cb96a4011a0a6f73d100c7080bf8020d10f87a`](./contracts/base-8453/0xf0cb96a4011a0a6f73d100c7080bf8020d10f87a/) | ⚠️ Unaudited |
+| ZoraFactoryImpl | registry | base | n/a | [`0x777777751622c0d3258f214f9df38e35bf45baf3`](./contracts/base-8453/0x777777751622c0d3258f214f9df38e35bf45baf3/) | ⚠️ Unaudited |
+| ZoraHookRegistry | registry | base | n/a | [`0x777777c4c14b133858c3982d41dbf02509fc18d7`](./contracts/base-8453/0x777777c4c14b133858c3982d41dbf02509fc18d7/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -83,7 +83,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | zora | n/a | 3 deployments: zora `0x111111...0afc69`; zora `0x777777...45baf3`; zora `0x777777...fc18d7` | ❓ Unverified |
+| UnnamedContract | unknown | zora | n/a | 3 deployments: zora `0x1111111111166b7fe7bd91427724b487980afc69`; zora `0x777777751622c0d3258f214f9df38e35bf45baf3`; zora `0x777777c4c14b133858c3982d41dbf02509fc18d7` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -97,9 +97,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0xf0cb96...10f87a`](./contracts/base-8453/0xf0cb96a4011a0a6f73d100c7080bf8020d10f87a/) | CreatorCoin | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x777777...45baf3`](./contracts/base-8453/0x777777751622c0d3258f214f9df38e35bf45baf3/) | ZoraFactoryImpl | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x777777...fc18d7`](./contracts/base-8453/0x777777c4c14b133858c3982d41dbf02509fc18d7/) | ZoraHookRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xf0cb96a4011a0a6f73d100c7080bf8020d10f87a`](./contracts/base-8453/0xf0cb96a4011a0a6f73d100c7080bf8020d10f87a/) | CreatorCoin | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x777777751622c0d3258f214f9df38e35bf45baf3`](./contracts/base-8453/0x777777751622c0d3258f214f9df38e35bf45baf3/) | ZoraFactoryImpl | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x777777c4c14b133858c3982d41dbf02509fc18d7`](./contracts/base-8453/0x777777c4c14b133858c3982d41dbf02509fc18d7/) | ZoraHookRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

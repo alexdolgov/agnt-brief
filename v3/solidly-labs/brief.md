@@ -52,32 +52,32 @@ The pinned logic-topography run contains 26 contract row(s) across arbitrum, bas
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- factory (`0x70fe4a...f0f687`, chain 1)
-- factory (`0x70fe4a...f0f687`, chain 10)
-- factory (`0x777fac...a8f630`, chain 146)
-- factory (`0x70fe4a...f0f687`, chain 250)
-- factory (`0x70fe4a...f0f687`, chain 8453)
-- factory (`0x70fe4a...f0f687`, chain 42161)
-- pool (`0x831bf4...f0801b`, chain 1)
-- pool (`0x3d9752...455781`, chain 250)
-- rewarder (`0x620780...989ae7`, chain 1)
-- rewarder (`0x777dfb...72cfe4`, chain 10)
-- rewarder (`0x777dfb...72cfe4`, chain 146)
-- rewarder (`0x777dfb...72cfe4`, chain 250)
-- rewarder (`0x777dfb...72cfe4`, chain 8453)
-- rewarder (`0x777dfb...72cfe4`, chain 42161)
-- SolidlyProxy (`0x77730e...eaaf73`, chain 1)
-- veSOLID / NFTBridge (`0x777b2c...4a6bf5`, chain 10)
-- veSOLID / NFTBridge (`0x777b2c...4a6bf5`, chain 146)
-- veSOLID / NFTBridge (`0x777b2c...4a6bf5`, chain 250)
-- veSOLID / NFTBridge (`0x777b2c...4a6bf5`, chain 8453)
-- veSOLID / NFTBridge (`0x777b2c...4a6bf5`, chain 42161)
-- voter (`0x777034...deae0a`, chain 1)
-- voter (`0x777bfc...e9a927`, chain 10)
-- voter (`0x777bfc...e9a927`, chain 146)
-- voter (`0x777bfc...e9a927`, chain 250)
-- voter (`0x777bfc...e9a927`, chain 8453)
-- voter (`0x777bfc...e9a927`, chain 42161)
+- factory (`0x70fe4a44ea505cfa3a57b95cf2862d4fd5f0f687`, chain 1)
+- factory (`0x70fe4a44ea505cfa3a57b95cf2862d4fd5f0f687`, chain 10)
+- factory (`0x777faca731b17e8847ebf175c94dbe9d81a8f630`, chain 146)
+- factory (`0x70fe4a44ea505cfa3a57b95cf2862d4fd5f0f687`, chain 250)
+- factory (`0x70fe4a44ea505cfa3a57b95cf2862d4fd5f0f687`, chain 8453)
+- factory (`0x70fe4a44ea505cfa3a57b95cf2862d4fd5f0f687`, chain 42161)
+- pool (`0x831bf48183b999fde45294b14b55199072f0801b`, chain 1)
+- pool (`0x3d9752beb3125ae6cd778e10e99deec6c8455781`, chain 250)
+- rewarder (`0x6207801cf58ec8ff24d59dbb8fc25e4a20989ae7`, chain 1)
+- rewarder (`0x777dfb70eb952a081d0d11ff828715f79572cfe4`, chain 10)
+- rewarder (`0x777dfb70eb952a081d0d11ff828715f79572cfe4`, chain 146)
+- rewarder (`0x777dfb70eb952a081d0d11ff828715f79572cfe4`, chain 250)
+- rewarder (`0x777dfb70eb952a081d0d11ff828715f79572cfe4`, chain 8453)
+- rewarder (`0x777dfb70eb952a081d0d11ff828715f79572cfe4`, chain 42161)
+- SolidlyProxy (`0x77730ed992d286c53f3a0838232c3957daeaaf73`, chain 1)
+- veSOLID / NFTBridge (`0x777b2cc540e5e6824a5ceafb04c5a383874a6bf5`, chain 10)
+- veSOLID / NFTBridge (`0x777b2cc540e5e6824a5ceafb04c5a383874a6bf5`, chain 146)
+- veSOLID / NFTBridge (`0x777b2cc540e5e6824a5ceafb04c5a383874a6bf5`, chain 250)
+- veSOLID / NFTBridge (`0x777b2cc540e5e6824a5ceafb04c5a383874a6bf5`, chain 8453)
+- veSOLID / NFTBridge (`0x777b2cc540e5e6824a5ceafb04c5a383874a6bf5`, chain 42161)
+- voter (`0x777034fef3ccbed74536ea1002faec9620deae0a`, chain 1)
+- voter (`0x777bfcbde82256064742220463c7764954e9a927`, chain 10)
+- voter (`0x777bfcbde82256064742220463c7764954e9a927`, chain 146)
+- voter (`0x777bfcbde82256064742220463c7764954e9a927`, chain 250)
+- voter (`0x777bfcbde82256064742220463c7764954e9a927`, chain 8453)
+- voter (`0x777bfcbde82256064742220463c7764954e9a927`, chain 42161)
 
 ## Contract Surface Quality
 
@@ -121,37 +121,37 @@ The pinned logic-topography run contains 26 contract row(s) across arbitrum, bas
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| VeV2Interface | unknown | project_anchor | own_supporting | 1 | ethereum | unit-392750 | `0x77730e...eaaf73` | ✅ Audited |
+| VeV2Interface | unknown | project_anchor | own_supporting | 1 | ethereum | unit-392750 | `0x77730ed992d286c53f3a0838232c3957daeaaf73` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (25)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BaseV2TokenInterface | token | external_dependency_or_infra | third_party_dependency (excluded) | 1 | ethereum | unit-392748 | `0x777172...a60990` | ⚠️ Unaudited |
-| factory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392686 | `0x70fe4a...f0f687` | ⚠️ Unaudited |
-| factory | unknown | project_anchor | own_supporting | 0 | optimism | unit-392690 | `0x70fe4a...f0f687` | ⚠️ Unaudited |
-| factory | unknown | project_anchor | own_supporting | 0 | sonic | unit-392699 | `0x777fac...a8f630` | ⚠️ Unaudited |
-| factory | unknown | project_anchor | own_supporting | 0 | base | unit-392738 | `0x70fe4a...f0f687` | ⚠️ Unaudited |
-| factory | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392721 | `0x70fe4a...f0f687` | ⚠️ Unaudited |
-| pool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392688 | `0x831bf4...f0801b` | ⚠️ Unaudited |
-| rewarder | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392685 | `0x620780...989ae7` | ⚠️ Unaudited |
-| rewarder | unknown | project_anchor | own_supporting | 0 | optimism | unit-392694 | `0x777dfb...72cfe4` | ⚠️ Unaudited |
-| rewarder | unknown | project_anchor | own_supporting | 0 | sonic | unit-392698 | `0x777dfb...72cfe4` | ⚠️ Unaudited |
-| rewarder | unknown | project_anchor | own_supporting | 0 | base | unit-392747 | `0x777dfb...72cfe4` | ⚠️ Unaudited |
-| rewarder | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392729 | `0x777dfb...72cfe4` | ⚠️ Unaudited |
-| SOLID | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-392693 | `0x777cf5...c0f9dd` | ⚠️ Unaudited |
-| SOLID | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | sonic | unit-392697 | `0x777cf5...c0f9dd` | ⚠️ Unaudited |
-| SOLID | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-392745 | `0x777cf5...c0f9dd` | ⚠️ Unaudited |
-| SOLID | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | unit-392727 | `0x777cf5...c0f9dd` | ⚠️ Unaudited |
-| veSOLID / NFTBridge | unknown | project_anchor | own_supporting | 0 | optimism | unit-392691 | `0x777b2c...4a6bf5` | ⚠️ Unaudited |
-| veSOLID / NFTBridge | unknown | project_anchor | own_supporting | 0 | sonic | unit-392695 | `0x777b2c...4a6bf5` | ⚠️ Unaudited |
-| veSOLID / NFTBridge | unknown | project_anchor | own_supporting | 0 | base | unit-392740 | `0x777b2c...4a6bf5` | ⚠️ Unaudited |
-| veSOLID / NFTBridge | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392723 | `0x777b2c...4a6bf5` | ⚠️ Unaudited |
-| voter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392687 | `0x777034...deae0a` | ⚠️ Unaudited |
-| voter | unknown | project_anchor | own_supporting | 0 | optimism | unit-392692 | `0x777bfc...e9a927` | ⚠️ Unaudited |
-| voter | unknown | project_anchor | own_supporting | 0 | sonic | unit-392696 | `0x777bfc...e9a927` | ⚠️ Unaudited |
-| voter | unknown | project_anchor | own_supporting | 0 | base | unit-392743 | `0x777bfc...e9a927` | ⚠️ Unaudited |
-| voter | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392725 | `0x777bfc...e9a927` | ⚠️ Unaudited |
+| BaseV2TokenInterface | token | external_dependency_or_infra | third_party_dependency (excluded) | 1 | ethereum | unit-392748 | `0x777172d858dc1599914a1c4c6c9fc48c99a60990` | ⚠️ Unaudited |
+| factory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392686 | `0x70fe4a44ea505cfa3a57b95cf2862d4fd5f0f687` | ⚠️ Unaudited |
+| factory | unknown | project_anchor | own_supporting | 0 | optimism | unit-392690 | `0x70fe4a44ea505cfa3a57b95cf2862d4fd5f0f687` | ⚠️ Unaudited |
+| factory | unknown | project_anchor | own_supporting | 0 | sonic | unit-392699 | `0x777faca731b17e8847ebf175c94dbe9d81a8f630` | ⚠️ Unaudited |
+| factory | unknown | project_anchor | own_supporting | 0 | base | unit-392738 | `0x70fe4a44ea505cfa3a57b95cf2862d4fd5f0f687` | ⚠️ Unaudited |
+| factory | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392721 | `0x70fe4a44ea505cfa3a57b95cf2862d4fd5f0f687` | ⚠️ Unaudited |
+| pool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392688 | `0x831bf48183b999fde45294b14b55199072f0801b` | ⚠️ Unaudited |
+| rewarder | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392685 | `0x6207801cf58ec8ff24d59dbb8fc25e4a20989ae7` | ⚠️ Unaudited |
+| rewarder | unknown | project_anchor | own_supporting | 0 | optimism | unit-392694 | `0x777dfb70eb952a081d0d11ff828715f79572cfe4` | ⚠️ Unaudited |
+| rewarder | unknown | project_anchor | own_supporting | 0 | sonic | unit-392698 | `0x777dfb70eb952a081d0d11ff828715f79572cfe4` | ⚠️ Unaudited |
+| rewarder | unknown | project_anchor | own_supporting | 0 | base | unit-392747 | `0x777dfb70eb952a081d0d11ff828715f79572cfe4` | ⚠️ Unaudited |
+| rewarder | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392729 | `0x777dfb70eb952a081d0d11ff828715f79572cfe4` | ⚠️ Unaudited |
+| SOLID | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-392693 | `0x777cf5ba9c291a1a8f57ff14836f6f9dc5c0f9dd` | ⚠️ Unaudited |
+| SOLID | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | sonic | unit-392697 | `0x777cf5ba9c291a1a8f57ff14836f6f9dc5c0f9dd` | ⚠️ Unaudited |
+| SOLID | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-392745 | `0x777cf5ba9c291a1a8f57ff14836f6f9dc5c0f9dd` | ⚠️ Unaudited |
+| SOLID | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | unit-392727 | `0x777cf5ba9c291a1a8f57ff14836f6f9dc5c0f9dd` | ⚠️ Unaudited |
+| veSOLID / NFTBridge | unknown | project_anchor | own_supporting | 0 | optimism | unit-392691 | `0x777b2cc540e5e6824a5ceafb04c5a383874a6bf5` | ⚠️ Unaudited |
+| veSOLID / NFTBridge | unknown | project_anchor | own_supporting | 0 | sonic | unit-392695 | `0x777b2cc540e5e6824a5ceafb04c5a383874a6bf5` | ⚠️ Unaudited |
+| veSOLID / NFTBridge | unknown | project_anchor | own_supporting | 0 | base | unit-392740 | `0x777b2cc540e5e6824a5ceafb04c5a383874a6bf5` | ⚠️ Unaudited |
+| veSOLID / NFTBridge | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392723 | `0x777b2cc540e5e6824a5ceafb04c5a383874a6bf5` | ⚠️ Unaudited |
+| voter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392687 | `0x777034fef3ccbed74536ea1002faec9620deae0a` | ⚠️ Unaudited |
+| voter | unknown | project_anchor | own_supporting | 0 | optimism | unit-392692 | `0x777bfcbde82256064742220463c7764954e9a927` | ⚠️ Unaudited |
+| voter | unknown | project_anchor | own_supporting | 0 | sonic | unit-392696 | `0x777bfcbde82256064742220463c7764954e9a927` | ⚠️ Unaudited |
+| voter | unknown | project_anchor | own_supporting | 0 | base | unit-392743 | `0x777bfcbde82256064742220463c7764954e9a927` | ⚠️ Unaudited |
+| voter | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392725 | `0x777bfcbde82256064742220463c7764954e9a927` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -171,21 +171,21 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| factory | unknown | project_anchor | own_supporting | 0 | fantom | unit-392701 | `0x70fe4a...f0f687` | ❓ Unverified |
-| pool | unknown | project_anchor | own_supporting | 0 | fantom | unit-392700 | `0x3d9752...455781` | ❓ Unverified |
-| rewarder | unknown | project_anchor | own_supporting | 0 | fantom | unit-392707 | `0x777dfb...72cfe4` | ❓ Unverified |
-| SOLID | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | fantom | unit-392705 | `0x777cf5...c0f9dd` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-392731 | `0x0e629b...8c2f48` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-392733 | `0x316353...271470` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-392734 | `0xa4f7ba...d08d4b` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-4002 | unit-392709 | `0x356ed0...037583` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-4002 | unit-392710 | `0x54eb4a...921d4a` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-4002 | unit-392712 | `0x9336dd...6072df` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-4002 | unit-392714 | `0xab045e...38d260` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-4002 | unit-392716 | `0xcb8d90...c50bb3` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | chain-4002 | unit-392717 | `0xfa4bd0...4f6ee1` | ❓ Unverified |
-| veSOLID / NFTBridge | unknown | project_anchor | own_supporting | 0 | fantom | unit-392702 | `0x777b2c...4a6bf5` | ❓ Unverified |
-| voter | unknown | project_anchor | own_supporting | 0 | fantom | unit-392703 | `0x777bfc...e9a927` | ❓ Unverified |
+| factory | unknown | project_anchor | own_supporting | 0 | fantom | unit-392701 | `0x70fe4a44ea505cfa3a57b95cf2862d4fd5f0f687` | ❓ Unverified |
+| pool | unknown | project_anchor | own_supporting | 0 | fantom | unit-392700 | `0x3d9752beb3125ae6cd778e10e99deec6c8455781` | ❓ Unverified |
+| rewarder | unknown | project_anchor | own_supporting | 0 | fantom | unit-392707 | `0x777dfb70eb952a081d0d11ff828715f79572cfe4` | ❓ Unverified |
+| SOLID | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | fantom | unit-392705 | `0x777cf5ba9c291a1a8f57ff14836f6f9dc5c0f9dd` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-392731 | `0x0e629bdff2cc7c6b99c7e35bd8a35d204f8c2f48` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-392733 | `0x31635381bca17b8eb7731f7cef98c6489d271470` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-392734 | `0xa4f7baab9394d1a3366958f65a86c40ed4d08d4b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-4002 | unit-392709 | `0x356ed0875519bbcc725c4cd1be6de21627037583` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-4002 | unit-392710 | `0x54eb4adbff3e25a0ef047a5a9434e51c4b921d4a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-4002 | unit-392712 | `0x9336dd038cb5af549160e7a6299c3a6ede6072df` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-4002 | unit-392714 | `0xab045ea417fda2a2839785f3449311729f38d260` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-4002 | unit-392716 | `0xcb8d9002254bf4aacc8f1e179740b233fac50bb3` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | chain-4002 | unit-392717 | `0xfa4bd0d4052bddfd2705b85324a5b0a1944f6ee1` | ❓ Unverified |
+| veSOLID / NFTBridge | unknown | project_anchor | own_supporting | 0 | fantom | unit-392702 | `0x777b2cc540e5e6824a5ceafb04c5a383874a6bf5` | ❓ Unverified |
+| voter | unknown | project_anchor | own_supporting | 0 | fantom | unit-392703 | `0x777bfcbde82256064742220463c7764954e9a927` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -233,7 +233,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | audit_solidly.pdf | SolidlyFactory | unmatched — not counted | — | — | no |
 | audit_solidly.pdf | SolidlyImplementation | unmatched — not counted | — | — | no |
 | audit_solidly.pdf | SolidlyLens | unmatched — not counted | — | — | no |
-| audit_solidly.pdf | SolidlyProxy | own proxy deployment | SolidlyProxy (proxy) (selected) `0x77730e...eaaf73` — deployed 2022-12-31 12:56:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| audit_solidly.pdf | SolidlyProxy | own proxy deployment | SolidlyProxy (proxy) (selected) `0x77730ed992d286c53f3a0838232c3957daeaaf73` — deployed 2022-12-31 12:56:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | audit_solidly.pdf | solidly_library | unmatched — not counted | — | — | no |
 | audit_solidly.pdf | veV2 | unmatched — not counted | — | — | no |
 | audit_solidly.pdf | ve_distV2 | unmatched — not counted | — | — | no |

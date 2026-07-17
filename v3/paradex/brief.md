@@ -52,10 +52,10 @@ The pinned logic-topography run contains 4 contract row(s) across ethereum, sepo
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- DIME token (`0xb32e10...7e0fa7`, chain 1)
-- Paradex ETH L1 bridge (`0x45b796...9f1b8d`, chain 1)
-- Paradex L1 core contract (`0xf338ca...c23640`, chain 1)
-- Paradex USDC/DIME L1 bridge (`0xe3cbe3...e53db3`, chain 1)
+- DIME token (`0xb32e10022ffbedfe10bc818a1c7e67d9d87e0fa7`, chain 1)
+- Paradex ETH L1 bridge (`0x45b79622c095ab834b9c8dc71013ed13b39f1b8d`, chain 1)
+- Paradex L1 core contract (`0xf338cad020d506e8e3d9b4854986e0ece6c23640`, chain 1)
+- Paradex USDC/DIME L1 bridge (`0xe3cbe3a636ab6a754e9e41b12b09d09ce9e53db3`, chain 1)
 
 ## Contract Surface Quality
 
@@ -101,10 +101,10 @@ The pinned logic-topography run contains 4 contract row(s) across ethereum, sepo
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| DIME token | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390677 | `0xb32e10...7e0fa7` | ⚠️ Unaudited |
-| Paradex ETH L1 bridge | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390675 | `0x45b796...9f1b8d` | ⚠️ Unaudited |
-| Paradex L1 core contract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390681 | `0xf338ca...c23640` | ⚠️ Unaudited |
-| Paradex USDC/DIME L1 bridge | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390680 | `0xe3cbe3...e53db3` | ⚠️ Unaudited |
+| DIME token | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390677 | `0xb32e10022ffbedfe10bc818a1c7e67d9d87e0fa7` | ⚠️ Unaudited |
+| Paradex ETH L1 bridge | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390675 | `0x45b79622c095ab834b9c8dc71013ed13b39f1b8d` | ⚠️ Unaudited |
+| Paradex L1 core contract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390681 | `0xf338cad020d506e8e3d9b4854986e0ece6c23640` | ⚠️ Unaudited |
+| Paradex USDC/DIME L1 bridge | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390680 | `0xe3cbe3a636ab6a754e9e41b12b09d09ce9e53db3` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -124,12 +124,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-390676 | `0xa0b869...06eb48` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-390683 | `0x29a873...70c666` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-390684 | `0x582cc5...5833af` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-390685 | `0x7984c0...ff994a` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-390686 | `0x7a0450...7a2888` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-390687 | `0x8586e0...813b4c` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-390676 | `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-390683 | `0x29a873159d5e14acbd63913d4a7e2df04570c666` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-390684 | `0x582cc5d9b509391232cd544cdf9da036e55833af` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-390685 | `0x7984c02fbeab952d4a7605c0924b9508a1ff994a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-390686 | `0x7a04507df78e1b1d3d30a82f5681cb0c947a2888` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-390687 | `0x8586e05adc0c35aa11609023d4ae6075cb813b4c` | ❓ Unverified |
 
 ## Audit Inventory
 

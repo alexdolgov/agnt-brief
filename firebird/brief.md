@@ -58,31 +58,31 @@ The protocol comprises 6 functional families. Its contracts share 6 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| FireBirdRouter | adapter | polygon | n/a | [`0xf6fa9e...20bfac`](./contracts/polygon-137/0xf6fa9ea1f64f1bbfa8d71f7f43faf6d45520bfac/) | ✅ Audited |
-| FireBirdZap | unknown | polygon | n/a | 2 deployments: polygon [`0x43659c...ff3dfc`](./contracts/polygon-137/0x43659cd896e93620aecc5e74a4e3b76f98ff3dfc/); polygon `0xa3dd48...14d6bf` | ✅ Audited |
+| FireBirdRouter | adapter | polygon | n/a | [`0xf6fa9ea1f64f1bbfa8d71f7f43faf6d45520bfac`](./contracts/polygon-137/0xf6fa9ea1f64f1bbfa8d71f7f43faf6d45520bfac/) | ✅ Audited |
+| FireBirdZap | unknown | polygon | n/a | 2 deployments: polygon [`0x43659cd896e93620aecc5e74a4e3b76f98ff3dfc`](./contracts/polygon-137/0x43659cd896e93620aecc5e74a4e3b76f98ff3dfc/); polygon `0xa3dd483d6955ca2f3a8172be5a1bf64ea414d6bf` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (18)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| FirebirdReserveFund | unknown | polygon | n/a | 2 deployments: polygon [`0x5d53c9...6618e4`](./contracts/polygon-137/0x5d53c9f5017198333c625840306d7544516618e4/); polygon `0xd01224...0a1211` | ⚠️ Unaudited |
-| FirebirdReserveFund | unknown | polygon | n/a | [`0xa632fa...665038`](./contracts/polygon-137/0xa632fa6fa83790ff843c48fab013f0fbc5665038/) | ⚠️ Unaudited |
-| HopeReferral | unknown | polygon | n/a | 2 deployments: polygon [`0x3150cc...f63961`](./contracts/polygon-137/0x3150cc5bf0168098440794d1a8ec2eff1ff63961/); polygon `0xe5c46e...0c28d8` | ⚠️ Unaudited |
-| mHopeStakingPool | unknown | polygon | n/a | 2 deployments: polygon [`0x0c80da...5abb04`](./contracts/polygon-137/0x0c80da180f82b82c85939198d7f64bc4dc5abb04/); polygon `0x3f8136...1d65ec` | ⚠️ Unaudited |
-| mHopeStakingPool | core_logic | polygon | n/a | [`0xd57e13...e00797`](./contracts/polygon-137/0xd57e13058eb5d9a017a0d3c3b222c5f339e00797/) | ⚠️ Unaudited |
-| MHopeStakingPoolV2 | unknown | polygon | n/a | [`0xb829b0...b4ea5f`](./contracts/polygon-137/0xb829b0aafe8c42ed40050051e49221d191b4ea5f/) | ⚠️ Unaudited |
-| ProtocolFeeRemover | unknown | polygon | n/a | [`0xef7e34...59cd7b`](./contracts/polygon-137/0xef7e3401f70ae2e49e3d2af0a30d2978a059cd7b/) | ⚠️ Unaudited |
-| StableSwapRouter | unknown | polygon | n/a | [`0x26ffd8...67d300`](./contracts/polygon-137/0x26ffd8cf4492b468d5412ddca9e1dd089b67d300/) | ⚠️ Unaudited |
-| StakePoolController | core_logic | polygon | n/a | 2 deployments: polygon [`0xe13910...128e87`](./contracts/polygon-137/0xe13910c475edfc99e66236772ee29b4dfd128e87/); polygon `0xeaf08f...2c3047` | ⚠️ Unaudited |
-| StakePoolCreator | unknown | polygon | n/a | 2 deployments: polygon [`0x998055...44b3a7`](./contracts/polygon-137/0x998055f2ae6003addd804b3aaf088932d244b3a7/); polygon `0xf95b43...261093` | ⚠️ Unaudited |
-| StakePoolEpochRewardCreator | unknown | polygon | n/a | [`0x96f33c...38d696`](./contracts/polygon-137/0x96f33c5dfd4bf6f2f379e98e2fc640ca0538d696/) | ⚠️ Unaudited |
-| Timelock | governance | polygon | n/a | [`0xe59511...2328e1`](./contracts/polygon-137/0xe59511c0ef42fb3c419ac2651406b7b8822328e1/) | ⚠️ Unaudited |
-| UChildERC20Proxy | unknown | polygon | n/a | 2 deployments: polygon [`0x0e70c0...7cef06`](./contracts/polygon-137/0x0e70c03dd6ee9da67d4174ba31ae64722a7cef06/); polygon `0xd78c47...c1e660` | ⚠️ Unaudited |
-| UpgradableProxy | unknown | polygon | n/a | [`0xe9a8b6...dd21d4`](./contracts/polygon-137/0xe9a8b6ea3e7431e6befca51258cb472df2dd21d4/) | ⚠️ Unaudited |
-| ValueToHopeLocker | unknown | polygon | n/a | 2 deployments: polygon [`0x5bae9d...c81f8b`](./contracts/polygon-137/0x5bae9d51214a531c2ff1787b5594e65468c81f8b/); polygon `0x828be2...548a25` | ⚠️ Unaudited |
-| ValueToHopeLocker | unknown | polygon | n/a | [`0xf6abab...4979e0`](./contracts/polygon-137/0xf6ababcca97d40d0a61560f57f383e36714979e0/) | ⚠️ Unaudited |
-| VotingEscrowToken | unknown | polygon | n/a | 2 deployments: polygon [`0x12bdad...947af3`](./contracts/polygon-137/0x12bdad0abfccb9d88e9cc047f1e4cfab94947af3/); polygon `0x2dcbab...da42fd` | ⚠️ Unaudited |
-| VotingEscrowToken | operational_periphery | polygon | n/a | [`0xd53f4e...31dee4`](./contracts/polygon-137/0xd53f4e2fd7dce0381282af7d2b06bd7b5031dee4/) | ⚠️ Unaudited |
+| FirebirdReserveFund | unknown | polygon | n/a | 2 deployments: polygon [`0x5d53c9f5017198333c625840306d7544516618e4`](./contracts/polygon-137/0x5d53c9f5017198333c625840306d7544516618e4/); polygon `0xd01224268a0f2ff5659a14af96051701070a1211` | ⚠️ Unaudited |
+| FirebirdReserveFund | unknown | polygon | n/a | [`0xa632fa6fa83790ff843c48fab013f0fbc5665038`](./contracts/polygon-137/0xa632fa6fa83790ff843c48fab013f0fbc5665038/) | ⚠️ Unaudited |
+| HopeReferral | unknown | polygon | n/a | 2 deployments: polygon [`0x3150cc5bf0168098440794d1a8ec2eff1ff63961`](./contracts/polygon-137/0x3150cc5bf0168098440794d1a8ec2eff1ff63961/); polygon `0xe5c46e43c912bad18e2afed1c1668257280c28d8` | ⚠️ Unaudited |
+| mHopeStakingPool | unknown | polygon | n/a | 2 deployments: polygon [`0x0c80da180f82b82c85939198d7f64bc4dc5abb04`](./contracts/polygon-137/0x0c80da180f82b82c85939198d7f64bc4dc5abb04/); polygon `0x3f81369ef9e0eea8d80b89ae085665dd411d65ec` | ⚠️ Unaudited |
+| mHopeStakingPool | core_logic | polygon | n/a | [`0xd57e13058eb5d9a017a0d3c3b222c5f339e00797`](./contracts/polygon-137/0xd57e13058eb5d9a017a0d3c3b222c5f339e00797/) | ⚠️ Unaudited |
+| MHopeStakingPoolV2 | unknown | polygon | n/a | [`0xb829b0aafe8c42ed40050051e49221d191b4ea5f`](./contracts/polygon-137/0xb829b0aafe8c42ed40050051e49221d191b4ea5f/) | ⚠️ Unaudited |
+| ProtocolFeeRemover | unknown | polygon | n/a | [`0xef7e3401f70ae2e49e3d2af0a30d2978a059cd7b`](./contracts/polygon-137/0xef7e3401f70ae2e49e3d2af0a30d2978a059cd7b/) | ⚠️ Unaudited |
+| StableSwapRouter | unknown | polygon | n/a | [`0x26ffd8cf4492b468d5412ddca9e1dd089b67d300`](./contracts/polygon-137/0x26ffd8cf4492b468d5412ddca9e1dd089b67d300/) | ⚠️ Unaudited |
+| StakePoolController | core_logic | polygon | n/a | 2 deployments: polygon [`0xe13910c475edfc99e66236772ee29b4dfd128e87`](./contracts/polygon-137/0xe13910c475edfc99e66236772ee29b4dfd128e87/); polygon `0xeaf08f001e10b038f23996f58477fcba5e2c3047` | ⚠️ Unaudited |
+| StakePoolCreator | unknown | polygon | n/a | 2 deployments: polygon [`0x998055f2ae6003addd804b3aaf088932d244b3a7`](./contracts/polygon-137/0x998055f2ae6003addd804b3aaf088932d244b3a7/); polygon `0xf95b4316076042b669e87bf265d2296156261093` | ⚠️ Unaudited |
+| StakePoolEpochRewardCreator | unknown | polygon | n/a | [`0x96f33c5dfd4bf6f2f379e98e2fc640ca0538d696`](./contracts/polygon-137/0x96f33c5dfd4bf6f2f379e98e2fc640ca0538d696/) | ⚠️ Unaudited |
+| Timelock | governance | polygon | n/a | [`0xe59511c0ef42fb3c419ac2651406b7b8822328e1`](./contracts/polygon-137/0xe59511c0ef42fb3c419ac2651406b7b8822328e1/) | ⚠️ Unaudited |
+| UChildERC20Proxy | unknown | polygon | n/a | 2 deployments: polygon [`0x0e70c03dd6ee9da67d4174ba31ae64722a7cef06`](./contracts/polygon-137/0x0e70c03dd6ee9da67d4174ba31ae64722a7cef06/); polygon `0xd78c475133731cd54dadcb430f7aae4f03c1e660` | ⚠️ Unaudited |
+| UpgradableProxy | unknown | polygon | n/a | [`0xe9a8b6ea3e7431e6befca51258cb472df2dd21d4`](./contracts/polygon-137/0xe9a8b6ea3e7431e6befca51258cb472df2dd21d4/) | ⚠️ Unaudited |
+| ValueToHopeLocker | unknown | polygon | n/a | 2 deployments: polygon [`0x5bae9d51214a531c2ff1787b5594e65468c81f8b`](./contracts/polygon-137/0x5bae9d51214a531c2ff1787b5594e65468c81f8b/); polygon `0x828be226a7b684ff7115785f8f95cd40e0548a25` | ⚠️ Unaudited |
+| ValueToHopeLocker | unknown | polygon | n/a | [`0xf6ababcca97d40d0a61560f57f383e36714979e0`](./contracts/polygon-137/0xf6ababcca97d40d0a61560f57f383e36714979e0/) | ⚠️ Unaudited |
+| VotingEscrowToken | unknown | polygon | n/a | 2 deployments: polygon [`0x12bdad0abfccb9d88e9cc047f1e4cfab94947af3`](./contracts/polygon-137/0x12bdad0abfccb9d88e9cc047f1e4cfab94947af3/); polygon `0x2dcbaba8d0db21677dad2b5beccb9db6cada42fd` | ⚠️ Unaudited |
+| VotingEscrowToken | operational_periphery | polygon | n/a | [`0xd53f4e2fd7dce0381282af7d2b06bd7b5031dee4`](./contracts/polygon-137/0xd53f4e2fd7dce0381282af7d2b06bd7b5031dee4/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -102,10 +102,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | polygon | n/a | `0x012497...2d35d2` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x224e95...afe397` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x4bfbf7...c5e365` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xc3ceb9...e2bc18` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x012497f8888bc7c46edf039e80b29b34982d35d2` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x224e953a4a4010ed00f3d74b45dfe7816bafe397` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x4bfbf7fcc9776ce8285b059fb77e7bb2a5c5e365` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xc3ceb9e3c01ebd664fddafc67ccf3b71aae2bc18` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -119,24 +119,24 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| polygon | [`0x5d53c9...6618e4`](./contracts/polygon-137/0x5d53c9f5017198333c625840306d7544516618e4/) | FirebirdReserveFund | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0xa632fa...665038`](./contracts/polygon-137/0xa632fa6fa83790ff843c48fab013f0fbc5665038/) | FirebirdReserveFund | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x3150cc...f63961`](./contracts/polygon-137/0x3150cc5bf0168098440794d1a8ec2eff1ff63961/) | HopeReferral | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x0c80da...5abb04`](./contracts/polygon-137/0x0c80da180f82b82c85939198d7f64bc4dc5abb04/) | mHopeStakingPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0xd57e13...e00797`](./contracts/polygon-137/0xd57e13058eb5d9a017a0d3c3b222c5f339e00797/) | mHopeStakingPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0xb829b0...b4ea5f`](./contracts/polygon-137/0xb829b0aafe8c42ed40050051e49221d191b4ea5f/) | MHopeStakingPoolV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0xef7e34...59cd7b`](./contracts/polygon-137/0xef7e3401f70ae2e49e3d2af0a30d2978a059cd7b/) | ProtocolFeeRemover | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x26ffd8...67d300`](./contracts/polygon-137/0x26ffd8cf4492b468d5412ddca9e1dd089b67d300/) | StableSwapRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0xe13910...128e87`](./contracts/polygon-137/0xe13910c475edfc99e66236772ee29b4dfd128e87/) | StakePoolController | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x998055...44b3a7`](./contracts/polygon-137/0x998055f2ae6003addd804b3aaf088932d244b3a7/) | StakePoolCreator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x96f33c...38d696`](./contracts/polygon-137/0x96f33c5dfd4bf6f2f379e98e2fc640ca0538d696/) | StakePoolEpochRewardCreator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0xe59511...2328e1`](./contracts/polygon-137/0xe59511c0ef42fb3c419ac2651406b7b8822328e1/) | Timelock | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x0e70c0...7cef06`](./contracts/polygon-137/0x0e70c03dd6ee9da67d4174ba31ae64722a7cef06/) | UChildERC20Proxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0xe9a8b6...dd21d4`](./contracts/polygon-137/0xe9a8b6ea3e7431e6befca51258cb472df2dd21d4/) | UpgradableProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x5bae9d...c81f8b`](./contracts/polygon-137/0x5bae9d51214a531c2ff1787b5594e65468c81f8b/) | ValueToHopeLocker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0xf6abab...4979e0`](./contracts/polygon-137/0xf6ababcca97d40d0a61560f57f383e36714979e0/) | ValueToHopeLocker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x12bdad...947af3`](./contracts/polygon-137/0x12bdad0abfccb9d88e9cc047f1e4cfab94947af3/) | VotingEscrowToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0xd53f4e...31dee4`](./contracts/polygon-137/0xd53f4e2fd7dce0381282af7d2b06bd7b5031dee4/) | VotingEscrowToken | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x5d53c9f5017198333c625840306d7544516618e4`](./contracts/polygon-137/0x5d53c9f5017198333c625840306d7544516618e4/) | FirebirdReserveFund | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xa632fa6fa83790ff843c48fab013f0fbc5665038`](./contracts/polygon-137/0xa632fa6fa83790ff843c48fab013f0fbc5665038/) | FirebirdReserveFund | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x3150cc5bf0168098440794d1a8ec2eff1ff63961`](./contracts/polygon-137/0x3150cc5bf0168098440794d1a8ec2eff1ff63961/) | HopeReferral | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x0c80da180f82b82c85939198d7f64bc4dc5abb04`](./contracts/polygon-137/0x0c80da180f82b82c85939198d7f64bc4dc5abb04/) | mHopeStakingPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xd57e13058eb5d9a017a0d3c3b222c5f339e00797`](./contracts/polygon-137/0xd57e13058eb5d9a017a0d3c3b222c5f339e00797/) | mHopeStakingPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xb829b0aafe8c42ed40050051e49221d191b4ea5f`](./contracts/polygon-137/0xb829b0aafe8c42ed40050051e49221d191b4ea5f/) | MHopeStakingPoolV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xef7e3401f70ae2e49e3d2af0a30d2978a059cd7b`](./contracts/polygon-137/0xef7e3401f70ae2e49e3d2af0a30d2978a059cd7b/) | ProtocolFeeRemover | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x26ffd8cf4492b468d5412ddca9e1dd089b67d300`](./contracts/polygon-137/0x26ffd8cf4492b468d5412ddca9e1dd089b67d300/) | StableSwapRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xe13910c475edfc99e66236772ee29b4dfd128e87`](./contracts/polygon-137/0xe13910c475edfc99e66236772ee29b4dfd128e87/) | StakePoolController | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x998055f2ae6003addd804b3aaf088932d244b3a7`](./contracts/polygon-137/0x998055f2ae6003addd804b3aaf088932d244b3a7/) | StakePoolCreator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x96f33c5dfd4bf6f2f379e98e2fc640ca0538d696`](./contracts/polygon-137/0x96f33c5dfd4bf6f2f379e98e2fc640ca0538d696/) | StakePoolEpochRewardCreator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xe59511c0ef42fb3c419ac2651406b7b8822328e1`](./contracts/polygon-137/0xe59511c0ef42fb3c419ac2651406b7b8822328e1/) | Timelock | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x0e70c03dd6ee9da67d4174ba31ae64722a7cef06`](./contracts/polygon-137/0x0e70c03dd6ee9da67d4174ba31ae64722a7cef06/) | UChildERC20Proxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xe9a8b6ea3e7431e6befca51258cb472df2dd21d4`](./contracts/polygon-137/0xe9a8b6ea3e7431e6befca51258cb472df2dd21d4/) | UpgradableProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x5bae9d51214a531c2ff1787b5594e65468c81f8b`](./contracts/polygon-137/0x5bae9d51214a531c2ff1787b5594e65468c81f8b/) | ValueToHopeLocker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xf6ababcca97d40d0a61560f57f383e36714979e0`](./contracts/polygon-137/0xf6ababcca97d40d0a61560f57f383e36714979e0/) | ValueToHopeLocker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x12bdad0abfccb9d88e9cc047f1e4cfab94947af3`](./contracts/polygon-137/0x12bdad0abfccb9d88e9cc047f1e4cfab94947af3/) | VotingEscrowToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xd53f4e2fd7dce0381282af7d2b06bd7b5031dee4`](./contracts/polygon-137/0xd53f4e2fd7dce0381282af7d2b06bd7b5031dee4/) | VotingEscrowToken | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

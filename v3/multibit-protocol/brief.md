@@ -52,22 +52,22 @@ The pinned logic-topography run contains 2 contract row(s) across base, bsc, eth
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xaea5fa...143a28`, chain 1)
-- UnnamedContract (`0x38e382...51de93`, chain 56)
-- UnnamedContract (`0x861e3c...3a6700`, chain 56)
-- UnnamedContract (`0xaea5fa...143a28`, chain 56)
-- UnnamedContract (`0x6f474c...4931a9`, chain 137)
-- UnnamedContract (`0xaea5fa...143a28`, chain 137)
-- UnnamedContract (`0xb1a910...8ad256`, chain 137)
-- UnnamedContract (`0x38e382...51de93`, chain 146)
-- UnnamedContract (`0x861e3c...3a6700`, chain 146)
-- UnnamedContract (`0x38e382...51de93`, chain 250)
-- UnnamedContract (`0x861e3c...3a6700`, chain 250)
-- UnnamedContract (`0xaea5fa...143a28`, chain 250)
-- UnnamedContract (`0x38e382...51de93`, chain 8453)
-- UnnamedContract (`0x861e3c...3a6700`, chain 8453)
-- BRC20 (`0x38e382...51de93`, chain 1)
-- BRC20Factory (`0x861e3c...3a6700`, chain 1)
+- UnnamedContract (`0xaea5fa28cf2b56dea9d1dea2ac8e76e799143a28`, chain 1)
+- UnnamedContract (`0x38e382f74dfb84608f3c1f10187f6bef5951de93`, chain 56)
+- UnnamedContract (`0x861e3c82bc2753ea64ae5f962d993df6853a6700`, chain 56)
+- UnnamedContract (`0xaea5fa28cf2b56dea9d1dea2ac8e76e799143a28`, chain 56)
+- UnnamedContract (`0x6f474cf5b1e348e361d81617a4f977607a4931a9`, chain 137)
+- UnnamedContract (`0xaea5fa28cf2b56dea9d1dea2ac8e76e799143a28`, chain 137)
+- UnnamedContract (`0xb1a91036e4a3c144efed953e0b6cc5f6b98ad256`, chain 137)
+- UnnamedContract (`0x38e382f74dfb84608f3c1f10187f6bef5951de93`, chain 146)
+- UnnamedContract (`0x861e3c82bc2753ea64ae5f962d993df6853a6700`, chain 146)
+- UnnamedContract (`0x38e382f74dfb84608f3c1f10187f6bef5951de93`, chain 250)
+- UnnamedContract (`0x861e3c82bc2753ea64ae5f962d993df6853a6700`, chain 250)
+- UnnamedContract (`0xaea5fa28cf2b56dea9d1dea2ac8e76e799143a28`, chain 250)
+- UnnamedContract (`0x38e382f74dfb84608f3c1f10187f6bef5951de93`, chain 8453)
+- UnnamedContract (`0x861e3c82bc2753ea64ae5f962d993df6853a6700`, chain 8453)
+- BRC20 (`0x38e382f74dfb84608f3c1f10187f6bef5951de93`, chain 1)
+- BRC20Factory (`0x861e3c82bc2753ea64ae5f962d993df6853a6700`, chain 1)
 
 ## Contract Surface Quality
 
@@ -111,14 +111,14 @@ The pinned logic-topography run contains 2 contract row(s) across base, bsc, eth
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BRC20 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389638 | `0x38e382...51de93` | ✅ Audited |
-| BRC20Factory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389639 | `0x861e3c...3a6700` | ✅ Audited |
+| BRC20 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389638 | `0x38e382f74dfb84608f3c1f10187f6bef5951de93` | ✅ Audited |
+| BRC20Factory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389639 | `0x861e3c82bc2753ea64ae5f962d993df6853a6700` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ERC1967Proxy | unknown | external_dependency_or_infra | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x2af598...9b3052` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | external_dependency_or_infra | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x2af5988998b07ca2de3e465641f369564d9b3052` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -138,20 +138,20 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389640 | `0xaea5fa...143a28` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-389650 | `0x38e382...51de93` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-389651 | `0x861e3c...3a6700` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-389652 | `0xaea5fa...143a28` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-389641 | `0x6f474c...4931a9` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-389642 | `0xaea5fa...143a28` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-389643 | `0xb1a910...8ad256` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-389644 | `0x38e382...51de93` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-389645 | `0x861e3c...3a6700` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-389647 | `0x38e382...51de93` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-389648 | `0x861e3c...3a6700` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-389649 | `0xaea5fa...143a28` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-389654 | `0x38e382...51de93` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-389655 | `0x861e3c...3a6700` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389640 | `0xaea5fa28cf2b56dea9d1dea2ac8e76e799143a28` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-389650 | `0x38e382f74dfb84608f3c1f10187f6bef5951de93` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-389651 | `0x861e3c82bc2753ea64ae5f962d993df6853a6700` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-389652 | `0xaea5fa28cf2b56dea9d1dea2ac8e76e799143a28` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-389641 | `0x6f474cf5b1e348e361d81617a4f977607a4931a9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-389642 | `0xaea5fa28cf2b56dea9d1dea2ac8e76e799143a28` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-389643 | `0xb1a91036e4a3c144efed953e0b6cc5f6b98ad256` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-389644 | `0x38e382f74dfb84608f3c1f10187f6bef5951de93` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-389645 | `0x861e3c82bc2753ea64ae5f962d993df6853a6700` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-389647 | `0x38e382f74dfb84608f3c1f10187f6bef5951de93` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-389648 | `0x861e3c82bc2753ea64ae5f962d993df6853a6700` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-389649 | `0xaea5fa28cf2b56dea9d1dea2ac8e76e799143a28` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-389654 | `0x38e382f74dfb84608f3c1f10187f6bef5951de93` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-389655 | `0x861e3c82bc2753ea64ae5f962d993df6853a6700` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -171,11 +171,11 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| salus.pdf | BRC20 | own contract | BRC20 (selected) `0x38e382...51de93` — deployed 2023-11-07 13:52:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| salus.pdf | BRC20 | own contract | BRC20 (selected) `0x38e382f74dfb84608f3c1f10187f6bef5951de93` — deployed 2023-11-07 13:52:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | salus.pdf | IBRC20 | unmatched — not counted | — | listed in Appendix 1 - Files in Scope | no |
 | salus.pdf | IBRC20Factory | unmatched — not counted | — | listed in Appendix 1 - Files in Scope | no |
 | salus.pdf | MultiBitToken | unmatched — not counted | — | listed in Appendix 1 - Files in Scope | no |
-| salus.pdf | BRC20Factory | own contract | BRC20Factory (selected) `0x861e3c...3a6700` — deployed 2023-05-26 12:10:11+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| salus.pdf | BRC20Factory | own contract | BRC20Factory (selected) `0x861e3c82bc2753ea64ae5f962d993df6853a6700` — deployed 2023-05-26 12:10:11+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 
 ## Coverage Gaps
 

@@ -62,21 +62,21 @@ The protocol comprises 5 functional families. Its contracts share 2 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| FarmDeployer20FixEnd | unknown | bsc | n/a | [`0x103def...f31b9d`](./contracts/bsc-56/0x103def784e1d0aaad0de95936610fd836bf31b9d/) | ✅ Audited |
-| FarmDeployer721 | unknown | bsc | n/a | 8 deployments: bsc [`0x0579db...778644`](./contracts/bsc-56/0x0579db6324274c07a6b6e13024a3747b97778644/); bsc `0x2003e0...7f0196`; bsc `0x559a1b...291425`; bsc `0x65f9d9...509a15`; bsc `0xa04fb9...247d44`; bsc `0xb15429...49300c`; bsc `0xb9e324...03698a`; bsc `0xda907b...158f52` | ✅ Audited |
+| FarmDeployer20FixEnd | unknown | bsc | n/a | [`0x103def784e1d0aaad0de95936610fd836bf31b9d`](./contracts/bsc-56/0x103def784e1d0aaad0de95936610fd836bf31b9d/) | ✅ Audited |
+| FarmDeployer721 | unknown | bsc | n/a | 8 deployments: bsc [`0x0579db6324274c07a6b6e13024a3747b97778644`](./contracts/bsc-56/0x0579db6324274c07a6b6e13024a3747b97778644/); bsc `0x2003e0fe6795861b9fa8afaf45aa8329dd7f0196`; bsc `0x559a1b05a83611e118f9a4ba95f245a722291425`; bsc `0x65f9d91288370278bf5d81a4bea3ea2612509a15`; bsc `0xa04fb9ff61bf63ffd0f60011b7190b8a8f247d44`; bsc `0xb1542934de54a8b692b7788b78b505f37949300c`; bsc `0xb9e324fbb58baba3ba5efe703137f4cdf603698a`; bsc `0xda907b358055de483a5f60c1688232f841158f52` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (8)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CoinToken | token | bsc | n/a | [`0xc74867...02e8de`](./contracts/bsc-56/0xc748673057861a797275cd8a068abb95a902e8de/) | ⚠️ Unaudited |
-| BabyDogeFactory | unknown | bsc | n/a | 2 deployments: bsc [`0x3cda75...501d68`](./contracts/bsc-56/0x3cda751aa61609064551fc9cdb49b667af501d68/); bsc `0x4693b6...f43137` | ⚠️ Unaudited |
-| BabyDogeLocker | unknown | bsc | n/a | [`0x36b343...4541be`](./contracts/bsc-56/0x36b34364e17373c05300bc3e827bf7cac34541be/) | ⚠️ Unaudited |
-| BabyDogePair | unknown | bsc | n/a | [`0x6e0d52...10652d`](./contracts/bsc-56/0x6e0d5230637d50dbe58e674e746614fc8210652d/) | ⚠️ Unaudited |
-| BabyDogeRouter | adapter | bsc | n/a | [`0xc9a0f6...af3c47`](./contracts/bsc-56/0xc9a0f685f39d05d835c369036251ee3aeaaf3c47/) | ⚠️ Unaudited |
-| BbdNftStaking | token | ethereum | n/a | [`0xee1f84...75c9f8`](./contracts/ethereum-1/0xee1f8496e48ac25061bdc6f4512faa443475c9f8/) | ⚠️ Unaudited |
-| BurnPortal | unknown | bsc | n/a | [`0xbb667d...4e0396`](./contracts/bsc-56/0xbb667d8f8a1fd68ded52c616a314a294294e0396/) | ⚠️ Unaudited |
-| FarmDeployer | unknown | bsc | n/a | [`0x210dbf...49d5b2`](./contracts/bsc-56/0x210dbf538ef70750e0eb6149005bf2d40d49d5b2/) | ⚠️ Unaudited |
+| CoinToken | token | bsc | n/a | [`0xc748673057861a797275cd8a068abb95a902e8de`](./contracts/bsc-56/0xc748673057861a797275cd8a068abb95a902e8de/) | ⚠️ Unaudited |
+| BabyDogeFactory | unknown | bsc | n/a | 2 deployments: bsc [`0x3cda751aa61609064551fc9cdb49b667af501d68`](./contracts/bsc-56/0x3cda751aa61609064551fc9cdb49b667af501d68/); bsc `0x4693b62e5fc9c0a45f89d62e6300a03c85f43137` | ⚠️ Unaudited |
+| BabyDogeLocker | unknown | bsc | n/a | [`0x36b34364e17373c05300bc3e827bf7cac34541be`](./contracts/bsc-56/0x36b34364e17373c05300bc3e827bf7cac34541be/) | ⚠️ Unaudited |
+| BabyDogePair | unknown | bsc | n/a | [`0x6e0d5230637d50dbe58e674e746614fc8210652d`](./contracts/bsc-56/0x6e0d5230637d50dbe58e674e746614fc8210652d/) | ⚠️ Unaudited |
+| BabyDogeRouter | adapter | bsc | n/a | [`0xc9a0f685f39d05d835c369036251ee3aeaaf3c47`](./contracts/bsc-56/0xc9a0f685f39d05d835c369036251ee3aeaaf3c47/) | ⚠️ Unaudited |
+| BbdNftStaking | token | ethereum | n/a | [`0xee1f8496e48ac25061bdc6f4512faa443475c9f8`](./contracts/ethereum-1/0xee1f8496e48ac25061bdc6f4512faa443475c9f8/) | ⚠️ Unaudited |
+| BurnPortal | unknown | bsc | n/a | [`0xbb667d8f8a1fd68ded52c616a314a294294e0396`](./contracts/bsc-56/0xbb667d8f8a1fd68ded52c616a314a294294e0396/) | ⚠️ Unaudited |
+| FarmDeployer | unknown | bsc | n/a | [`0x210dbf538ef70750e0eb6149005bf2d40d49d5b2`](./contracts/bsc-56/0x210dbf538ef70750e0eb6149005bf2d40d49d5b2/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -96,17 +96,17 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x4a0c81...636f06` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x06d972...1579bb` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x0b6997...a900eb` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x22b75c...e45d71` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x2bc67f...085ae5` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x4a0c81...636f06` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x4fc9d5...1c7608` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x89d3af...22fb4f` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xa1c14e...b700c2` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xe1b202...603572` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xe6616d...da1ca9` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4a0c815745e6152070ddd81baedd52f46b636f06` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x06d97221979d487f33f40152d3e9943fd81579bb` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x0b69970e23634188ce4f97ffe9015fb8aba900eb` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x22b75c73569646a9eb424663c0d8c91199e45d71` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x2bc67fcf839c840f561fd8ce41bfb2acf2085ae5` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x4a0c815745e6152070ddd81baedd52f46b636f06` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x4fc9d52977bc3000d233771197fa64d9df1c7608` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x89d3af2fabe0c56724932615f1f6c8291122fb4f` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xa1c14e5a8c2fd0fd7acad2b364e522781fb700c2` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xe1b202ca285eee7b50be4f1fa651f9da15603572` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xe6616d8bd4bcc6f4d31027a71b0c1e9a0ada1ca9` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -120,14 +120,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0xc74867...02e8de`](./contracts/bsc-56/0xc748673057861a797275cd8a068abb95a902e8de/) | CoinToken | token | $121,443,880.55 | Verified native implementation with $121,443,880.55 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x3cda75...501d68`](./contracts/bsc-56/0x3cda751aa61609064551fc9cdb49b667af501d68/) | BabyDogeFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x36b343...4541be`](./contracts/bsc-56/0x36b34364e17373c05300bc3e827bf7cac34541be/) | BabyDogeLocker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x6e0d52...10652d`](./contracts/bsc-56/0x6e0d5230637d50dbe58e674e746614fc8210652d/) | BabyDogePair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xc9a0f6...af3c47`](./contracts/bsc-56/0xc9a0f685f39d05d835c369036251ee3aeaaf3c47/) | BabyDogeRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xee1f84...75c9f8`](./contracts/ethereum-1/0xee1f8496e48ac25061bdc6f4512faa443475c9f8/) | BbdNftStaking | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xbb667d...4e0396`](./contracts/bsc-56/0xbb667d8f8a1fd68ded52c616a314a294294e0396/) | BurnPortal | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x210dbf...49d5b2`](./contracts/bsc-56/0x210dbf538ef70750e0eb6149005bf2d40d49d5b2/) | FarmDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xc748673057861a797275cd8a068abb95a902e8de`](./contracts/bsc-56/0xc748673057861a797275cd8a068abb95a902e8de/) | CoinToken | token | $121,443,880.55 | Verified native implementation with $121,443,880.55 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x3cda751aa61609064551fc9cdb49b667af501d68`](./contracts/bsc-56/0x3cda751aa61609064551fc9cdb49b667af501d68/) | BabyDogeFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x36b34364e17373c05300bc3e827bf7cac34541be`](./contracts/bsc-56/0x36b34364e17373c05300bc3e827bf7cac34541be/) | BabyDogeLocker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x6e0d5230637d50dbe58e674e746614fc8210652d`](./contracts/bsc-56/0x6e0d5230637d50dbe58e674e746614fc8210652d/) | BabyDogePair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xc9a0f685f39d05d835c369036251ee3aeaaf3c47`](./contracts/bsc-56/0xc9a0f685f39d05d835c369036251ee3aeaaf3c47/) | BabyDogeRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xee1f8496e48ac25061bdc6f4512faa443475c9f8`](./contracts/ethereum-1/0xee1f8496e48ac25061bdc6f4512faa443475c9f8/) | BbdNftStaking | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xbb667d8f8a1fd68ded52c616a314a294294e0396`](./contracts/bsc-56/0xbb667d8f8a1fd68ded52c616a314a294294e0396/) | BurnPortal | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x210dbf538ef70750e0eb6149005bf2d40d49d5b2`](./contracts/bsc-56/0x210dbf538ef70750e0eb6149005bf2d40d49d5b2/) | FarmDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

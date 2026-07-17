@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across bsc, ethereum.
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- DSGToken (`0x9a7864...4abd35`, chain 56)
+- DSGToken (`0x9a78649501bbaac285ea4187299471b7ad4abd35`, chain 56)
 
 ## Contract Surface Quality
 
@@ -103,27 +103,27 @@ The pinned logic-topography run contains 1 contract row(s) across bsc, ethereum.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| DODOAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xf49eab...d42f9e` | ⚠️ Unaudited |
-| DsgNftFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2b0e39...823d74` | ⚠️ Unaudited |
-| DsgProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0x18f314...25d657` | ⚠️ Unaudited |
-| DSGToken | unknown | project_anchor | own_supporting | 0 | bsc | unit-383996 | `0x9a7864...4abd35` | ⚠️ Unaudited |
-| Erc20EarnNftPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x984e2c...0dd080` | ⚠️ Unaudited |
-| FragmentToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x129776...428741` | ⚠️ Unaudited |
-| LiquidityPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x4747ee...109bf7` | ⚠️ Unaudited |
-| Meta | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x6da591...2f6a40` | ⚠️ Unaudited |
-| MysteryBox | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x47953a...9019b3` | ⚠️ Unaudited |
-| NftEarnErc20Pool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xb3fbfe...90b838` | ⚠️ Unaudited |
-| NFTMarket | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x30a519...55e6f7` | ⚠️ Unaudited |
-| Oracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xd22ac2...270279` | ⚠️ Unaudited |
-| SwapFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x73d9f9...859d10` | ⚠️ Unaudited |
-| SwapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe9c765...99c071` | ⚠️ Unaudited |
-| Time | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc7184a...36487f` | ⚠️ Unaudited |
-| Timelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x32b03c...9798b7` | ⚠️ Unaudited |
-| TradingPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x14a495...7f2681` | ⚠️ Unaudited |
-| Treasury | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xcb6263...aa31f5` | ⚠️ Unaudited |
-| UniAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x7d873f...037f02` | ⚠️ Unaudited |
-| vDSGToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x718da2...521154` | ⚠️ Unaudited |
-| vDsgTreasury | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xccf1c8...40d472` | ⚠️ Unaudited |
+| DODOAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xf49eab292f38f840dc52f5bafbf3067352d42f9e` | ⚠️ Unaudited |
+| DsgNftFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2b0e390ff8f8ee5424de0b6556f475f512823d74` | ⚠️ Unaudited |
+| DsgProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0x18f3146b75538f7982cf59486d74a6875a25d657` | ⚠️ Unaudited |
+| DSGToken | unknown | project_anchor | own_supporting | 0 | bsc | unit-383996 | `0x9a78649501bbaac285ea4187299471b7ad4abd35` | ⚠️ Unaudited |
+| Erc20EarnNftPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x984e2cbcdc4a818c3f523010b43fe0259a0dd080` | ⚠️ Unaudited |
+| FragmentToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x129776b15dd8b102d2a131df32038782e0428741` | ⚠️ Unaudited |
+| LiquidityPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x4747eeeeb4fc60630403d775264fdd4848109bf7` | ⚠️ Unaudited |
+| Meta | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x6da59176fbc92f227853e17202b62d79b82f6a40` | ⚠️ Unaudited |
+| MysteryBox | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x47953a414c7f61a5dfa29ef7df713adb699019b3` | ⚠️ Unaudited |
+| NftEarnErc20Pool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xb3fbfef698799ce355887ae74c3f83c6e390b838` | ⚠️ Unaudited |
+| NFTMarket | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x30a5190d1a212a42383970a1faa207000555e6f7` | ⚠️ Unaudited |
+| Oracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xd22ac2a29a483e2a1385c248974a9535f3270279` | ⚠️ Unaudited |
+| SwapFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x73d9f93d53505cb8c4c7f952ae42450d9e859d10` | ⚠️ Unaudited |
+| SwapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe9c7650b97712c0ec958ff270fbf4189fb99c071` | ⚠️ Unaudited |
+| Time | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc7184a87d9443a52f6e578e3c0a611468536487f` | ⚠️ Unaudited |
+| Timelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x32b03c76d8b3301981777ea5ecf7f8478b9798b7` | ⚠️ Unaudited |
+| TradingPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x14a495b23a6fe7938ae5da73cfa153b5e67f2681` | ⚠️ Unaudited |
+| Treasury | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xcb62632cecaa0ba91370dd0be6acc5d067aa31f5` | ⚠️ Unaudited |
+| UniAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x7d873fdb5d2eb852d376d14be18c3ac034037f02` | ⚠️ Unaudited |
+| vDSGToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x718da2e74fff28b0a0d62aeb4f2afa8f7b521154` | ⚠️ Unaudited |
+| vDsgTreasury | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xccf1c8fa4598689236541faa82522691cf40d472` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -170,7 +170,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | `0x9a7864...4abd35` | DSGToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x9a78649501bbaac285ea4187299471b7ad4abd35` | DSGToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

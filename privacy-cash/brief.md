@@ -61,9 +61,9 @@ The protocol comprises 3 functional families. Contracts are linked by 1 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ERCPool | unknown | base | n/a | 2 deployments: ethereum `0x803db1...583958`; base [`0x6b5365...447c9a`](./contracts/base-8453/0x6b5365cf6118bceabe41b5acff0b20e8f4447c9a/) | ⚠️ Unaudited |
-| EtherPool | unknown | base | n/a | 3 deployments: ethereum `0xec5266...f3b738`; base [`0xa9cefe...99ecdd`](./contracts/base-8453/0xa9cefead8d2f343b2c8c561e903378ede899ecdd/); base `0xfee24c...c832a1` | ⚠️ Unaudited |
-| Verifier2 | periphery | base | n/a | 6 deployments: ethereum `0x9926a4...d56313`; ethereum `0xbcffce...982c98`; ethereum `0xfee24c...c832a1`; base [`0x41187a...ff7c6f`](./contracts/base-8453/0x41187a79c57e9143b1f6c4aa7e16bf0e07ff7c6f/); base `0x870755...6dabd0`; base `0xe24f4c...225b7c` | ⚠️ Unaudited |
+| ERCPool | unknown | base | n/a | 2 deployments: ethereum `0x803db1b37e3bb94d65e42f3dc886614587583958`; base [`0x6b5365cf6118bceabe41b5acff0b20e8f4447c9a`](./contracts/base-8453/0x6b5365cf6118bceabe41b5acff0b20e8f4447c9a/) | ⚠️ Unaudited |
+| EtherPool | unknown | base | n/a | 3 deployments: ethereum `0xec5266c9e44631e1ba22fd6377c38130c1f3b738`; base [`0xa9cefead8d2f343b2c8c561e903378ede899ecdd`](./contracts/base-8453/0xa9cefead8d2f343b2c8c561e903378ede899ecdd/); base `0xfee24cf58d2f74fa9b01d715e342d8462ac832a1` | ⚠️ Unaudited |
+| Verifier2 | periphery | base | n/a | 6 deployments: ethereum `0x9926a40b0879b36f9586c4285f0fae597bd56313`; ethereum `0xbcffce41652093264d0807e2e834aff255982c98`; ethereum `0xfee24cf58d2f74fa9b01d715e342d8462ac832a1`; base [`0x41187a79c57e9143b1f6c4aa7e16bf0e07ff7c6f`](./contracts/base-8453/0x41187a79c57e9143b1f6c4aa7e16bf0e07ff7c6f/); base `0x8707551c52f390a262ad796fab8d2477d56dabd0`; base `0xe24f4c1ae704bd968fb59d470d73f6066d225b7c` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -83,11 +83,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x1d4fe6...d3106d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x22d850...391f77` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x045596...88d2e3` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xbb0c7f...c9013f` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xf48b36...24e9ac` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x1d4fe6c99e9637460c8f9fde052165c9e5d3106d` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x22d8509e7af58b1eafb311f8f76e81dc3a391f77` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x04559676cbdfea9f849f6207f9a7947c3288d2e3` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xbb0c7f576b7bdaa8f2a119cb295076acd0c9013f` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf48b36221e4be8b385617fb24a0842068524e9ac` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -110,9 +110,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x6b5365...447c9a`](./contracts/base-8453/0x6b5365cf6118bceabe41b5acff0b20e8f4447c9a/) | ERCPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xa9cefe...99ecdd`](./contracts/base-8453/0xa9cefead8d2f343b2c8c561e903378ede899ecdd/) | EtherPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x41187a...ff7c6f`](./contracts/base-8453/0x41187a79c57e9143b1f6c4aa7e16bf0e07ff7c6f/) | Verifier2 | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x6b5365cf6118bceabe41b5acff0b20e8f4447c9a`](./contracts/base-8453/0x6b5365cf6118bceabe41b5acff0b20e8f4447c9a/) | ERCPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xa9cefead8d2f343b2c8c561e903378ede899ecdd`](./contracts/base-8453/0xa9cefead8d2f343b2c8c561e903378ede899ecdd/) | EtherPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x41187a79c57e9143b1f6c4aa7e16bf0e07ff7c6f`](./contracts/base-8453/0x41187a79c57e9143b1f6c4aa7e16bf0e07ff7c6f/) | Verifier2 | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

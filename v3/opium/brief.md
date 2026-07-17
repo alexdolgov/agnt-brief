@@ -57,9 +57,9 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xdbc2f7...379df1`, chain 1)
-- UnnamedContract (`0x964c04...ed360d`, chain 137)
-- UnnamedContract (`0xc9162e...fbe49b`, chain 42161)
+- UnnamedContract (`0xdbc2f7f3bccccf54f1bda43c57e8ab526e379df1`, chain 1)
+- UnnamedContract (`0x964c04b87d14df4aa74169874c4b15a87eed360d`, chain 137)
+- UnnamedContract (`0xc9162e9e8a6c47e7346a3fe6dda9fab54dfbe49b`, chain 42161)
 
 ## Contract Surface Quality
 
@@ -105,7 +105,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| OpiumToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x888888...65ec11` | ⚠️ Unaudited |
+| OpiumToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x888888888889c00c67689029d7856aac1065ec11` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -125,9 +125,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390375 | `0xdbc2f7...379df1` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-390377 | `0x964c04...ed360d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-390379 | `0xc9162e...fbe49b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390375 | `0xdbc2f7f3bccccf54f1bda43c57e8ab526e379df1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-390377 | `0x964c04b87d14df4aa74169874c4b15a87eed360d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-390379 | `0xc9162e9e8a6c47e7346a3fe6dda9fab54dfbe49b` | ❓ Unverified |
 
 ## Audit Inventory
 

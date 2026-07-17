@@ -90,12 +90,12 @@ The pinned logic-topography run contains 5 contract row(s) across arbitrum, ethe
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Hundred | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-242214 | `0x100100...d47ed3` | ⚠️ Unaudited |
-| Hundred | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-242216 | `0x100100...d47ed3` | ⚠️ Unaudited |
-| Hundred | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | gnosis | unit-242218 | `0x100100...d47ed3` | ⚠️ Unaudited |
-| Hundred | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x100100...d47ed3` | ⚠️ Unaudited |
-| Hundred | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | moonriver | unit-242220 | `0x100100...d47ed3` | ⚠️ Unaudited |
-| Hundred | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | unit-242223 | `0x100100...d47ed3` | ⚠️ Unaudited |
+| Hundred | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-242214 | `0x10010078a54396f62c96df8532dc2b4847d47ed3` | ⚠️ Unaudited |
+| Hundred | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-242216 | `0x10010078a54396f62c96df8532dc2b4847d47ed3` | ⚠️ Unaudited |
+| Hundred | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | gnosis | unit-242218 | `0x10010078a54396f62c96df8532dc2b4847d47ed3` | ⚠️ Unaudited |
+| Hundred | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x10010078a54396f62c96df8532dc2b4847d47ed3` | ⚠️ Unaudited |
+| Hundred | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | moonriver | unit-242220 | `0x10010078a54396f62c96df8532dc2b4847d47ed3` | ⚠️ Unaudited |
+| Hundred | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | unit-242223 | `0x10010078a54396f62c96df8532dc2b4847d47ed3` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -115,34 +115,34 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x000000...000000` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0x100100...073c73` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | n/a | `0xb426c1...c7df13` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | n/a | `0xe8f12f...6c93bd` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | n/a | `0x100100...073c73` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | gnosis | n/a | `0x36208a...8ac35d` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | fantom | n/a | `0x100100...073c73` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | fantom | unit-242222 | `0x100100...d47ed3` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | n/a | `0x090a00...f394fe` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | moonriver | n/a | `0x100100...073c73` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | n/a | `0x29ddb4...4425b0` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | n/a | `0x30a026...66beb8` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | n/a | `0x42b458...e1f559` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | n/a | `0x5b9451...f7bb22` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | n/a | `0x607312...6e69d0` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | n/a | `0x89db3b...78ef02` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | n/a | `0x8e15a2...ff0235` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | n/a | `0xb1c442...d1f5a8` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | n/a | `0xb426c1...c7df13` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | n/a | `0xb4300e...b5f2bc` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | n/a | `0xbb93c7...a55807` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | n/a | `0xe4e438...ab7fcc` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | n/a | `0xe8f12f...6c93bd` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | n/a | `0x000000...000000` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | n/a | `0x100100...073c73` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | harmony | n/a | `0x000000...000000` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | harmony | n/a | `0x100100...073c73` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | harmony | unit-242221 | `0x100100...d47ed3` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x0000000000000000000000000000000000000000` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0x10010069de6bd5408a6ded075cf6ae2498073c73` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | n/a | `0xb426c1b7fabea9ea6a273e8427040568a8c7df13` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | n/a | `0xe8f12f5492ec28609d2932519456b7436d6c93bd` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | n/a | `0x10010069de6bd5408a6ded075cf6ae2498073c73` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | gnosis | n/a | `0x36208a6d429b056be6be5fa81cdf4092748ac35d` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | fantom | n/a | `0x10010069de6bd5408a6ded075cf6ae2498073c73` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | fantom | unit-242222 | `0x10010078a54396f62c96df8532dc2b4847d47ed3` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | n/a | `0x090a00a2de0ea83def700b5e216f87a5d4f394fe` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | moonriver | n/a | `0x10010069de6bd5408a6ded075cf6ae2498073c73` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | n/a | `0x29ddb4c4f9baae366dbd40eff79d364e004425b0` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | n/a | `0x30a026ae9e2a1363e96a5e5ab12786a46066beb8` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | n/a | `0x42b458056f887fd665ed6f160a59afe932e1f559` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | n/a | `0x5b9451b1bfae2a74d7b9d0d45bdd0e9a27f7bb22` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | n/a | `0x607312a5c671d0c511998171e634de32156e69d0` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | n/a | `0x89db3b59381bc06fe9bf74532afd777e5f78ef02` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | n/a | `0x8e15a22853a0a60a0fbb0d875055a8e66cff0235` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | n/a | `0xb1c4426c86082d91a6c097fc588e5d5d8dd1f5a8` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | n/a | `0xb426c1b7fabea9ea6a273e8427040568a8c7df13` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | n/a | `0xb4300e088a3ae4e624ee5c71bc1822f68bb5f2bc` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | n/a | `0xbb93c7f378b9b531216f9ad7b5748be189a55807` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | n/a | `0xe4e43864ea18d5e5211352a4b810383460ab7fcc` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | n/a | `0xe8f12f5492ec28609d2932519456b7436d6c93bd` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | n/a | `0x0000000000000000000000000000000000000000` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | n/a | `0x10010069de6bd5408a6ded075cf6ae2498073c73` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | harmony | n/a | `0x0000000000000000000000000000000000000000` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | harmony | n/a | `0x10010069de6bd5408a6ded075cf6ae2498073c73` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | harmony | unit-242221 | `0x10010078a54396f62c96df8532dc2b4847d47ed3` | ❓ Unverified |
 
 ## Audit Inventory
 

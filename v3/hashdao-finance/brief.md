@@ -90,46 +90,46 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AdminUpgradeabilityProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | 2 deployments: optimism `0x2c7505...7701c4`; optimism `0xbc19ee...a7da6c` | ⚠️ Unaudited |
-| AdminUpgradeabilityProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 7 deployments: optimism `0x40adcc...534021`; optimism `0x54b00b...98b566`; optimism `0x6736e1...5fb861`; optimism `0x99fe96...a22540`; optimism `0xed5061...8fd60a`; optimism `0xf96aad...fb795d`; arbitrum `0x92aee2...e6a39d` | ⚠️ Unaudited |
-| AdminUpgradeabilityProxy | proxy | non_address_book | non_address_book_inventory (excluded) | 2 | optimism | n/a | 2 deployments: optimism `0x5556af...771bce`; optimism `0x584a4f...07fca8` | ⚠️ Unaudited |
-| AdminUpgradeabilityProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | 2 deployments: optimism `0x60d755...ed3cbe`; optimism `0xeab4c6...51299d` | ⚠️ Unaudited |
-| AdminUpgradeabilityProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | 2 deployments: optimism `0x9d66c3...25aaa5`; optimism `0xd6c52a...c2345b` | ⚠️ Unaudited |
-| AdminUpgradeabilityProxy | proxy | non_address_book | non_address_book_inventory (excluded) | 2 | arbitrum | n/a | 2 deployments: arbitrum `0x019622...e3a61f`; arbitrum `0xcd7a1b...32dbc4` | ⚠️ Unaudited |
-| AdminUpgradeabilityProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x0f48ac...d28ee5`; arbitrum `0x958882...815006` | ⚠️ Unaudited |
-| AdminUpgradeabilityProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x278fe1...d1f398`; arbitrum `0x90d11b...b1bf82` | ⚠️ Unaudited |
-| AdminUpgradeabilityProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x5905e0...141c76`; arbitrum `0xb557c0...b696f1` | ⚠️ Unaudited |
-| AdminUpgradeabilityProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | arbitrum | n/a | `0x99fe96...a22540` | ⚠️ Unaudited |
-| Bridge | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x09f12b...babaf4`; arbitrum `0xa03cae...6fcf18` | ⚠️ Unaudited |
-| Bridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x94ecc8...f35096` | ⚠️ Unaudited |
-| EACAggregatorProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: arbitrum `0x563b9e...9513da`; arbitrum `0x8bd820...3eec92` | ⚠️ Unaudited |
-| EsToken | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | 2 deployments: optimism `0xb7047f...9aef47`; optimism `0xda4f46...54ff87` | ⚠️ Unaudited |
-| EsToken | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x20cc0f...011fb7`; arbitrum `0xa01729...750f11` | ⚠️ Unaudited |
-| EsToken | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x375729...d33700`; arbitrum `0x5c9834...62abc8` | ⚠️ Unaudited |
-| ETHUnwrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 2 deployments: optimism `0xcec45b...f9c5d8`; arbitrum `0xec59fb...734fb7` | ⚠️ Unaudited |
-| FeeVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 5 deployments: optimism `0x2bd9da...1a2d74`; optimism `0x31241a...785003`; optimism `0xb557c0...b696f1`; arbitrum `0x1295fd...cfc32a`; arbitrum `0x133bec...2485d6` | ⚠️ Unaudited |
-| FeeVault | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x426d93...db7e73`; arbitrum `0x9d66c3...25aaa5` | ⚠️ Unaudited |
-| GnosisSafeL2 | governance | non_address_book | standard_proxy_or_library (excluded) | 1 | arbitrum | n/a | `0xaa1919...e4ff03` | ⚠️ Unaudited |
-| LiqLocker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x703b99...f1ebf8` | ⚠️ Unaudited |
-| LPToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 6 deployments: optimism `0x048e77...1775a2`; optimism `0x52d709...fd63f2`; optimism `0x5dad2e...d46125`; optimism `0xfc4535...d4d881`; arbitrum `0x7d5332...cf021f`; arbitrum `0x947af1...e551cd` | ⚠️ Unaudited |
-| MasterChefV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 6 deployments: optimism `0x958882...815006`; arbitrum `0x0517a0...4beade`; arbitrum `0x72f19d...436ab1`; arbitrum `0x824321...42f4d6`; arbitrum `0x882105...c42f85`; arbitrum `0xcec45b...f9c5d8` | ⚠️ Unaudited |
-| Oracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 3 deployments: optimism `0x172ef9...2a3002`; arbitrum `0x7e7df8...be14f3`; arbitrum `0xb4e0e4...1ea39a` | ⚠️ Unaudited |
-| OrderManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | 2 deployments: optimism `0x955bd6...f7776b`; optimism `0xce4e6c...9872d5` | ⚠️ Unaudited |
-| OrderManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 4 deployments: arbitrum `0x43c103...5daf16`; arbitrum `0x4f405d...90f27d`; arbitrum `0x901c3f...003279`; arbitrum `0xa18be6...51561b` | ⚠️ Unaudited |
-| Pool | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | 2 deployments: optimism `0x3a436d...d7a853`; optimism `0xd5826b...66f006` | ⚠️ Unaudited |
-| Pool | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | 2 deployments: optimism `0x605589...87f5c3`; optimism `0xf82408...434200` | ⚠️ Unaudited |
-| Pool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 5 deployments: optimism `0x5476f8...ad6c51`; optimism `0xc61793...5f42f2`; optimism `0xd59a8f...47a530`; arbitrum `0x318b38...17b451`; arbitrum `0xcc7913...c12a0d` | ⚠️ Unaudited |
-| PoolHook | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | 2 deployments: optimism `0x25e842...bb0765`; optimism `0x87566d...dbb844` | ⚠️ Unaudited |
-| PoolHook | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0xb81316...a341b5`; arbitrum `0xed5061...8fd60a` | ⚠️ Unaudited |
-| PriceReporter | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | 2 deployments: optimism `0xcc7913...c12a0d`; optimism `0xcd7a1b...32dbc4` | ⚠️ Unaudited |
-| PriceReporter | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x26180d...d40232`; arbitrum `0x6ce6fe...193db4` | ⚠️ Unaudited |
-| PriceReporter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: arbitrum `0xe407c5...566f53`; arbitrum `0xe631aa...7acf4c` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: optimism `0xa01729...750f11`; arbitrum `0x7c9d49...b7c9db` | ⚠️ Unaudited |
-| Timelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 2 deployments: optimism `0x20cc0f...011fb7`; arbitrum `0x84b7a2...8fe103` | ⚠️ Unaudited |
-| Token | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 2 deployments: optimism `0x2e8025...61b93f`; arbitrum `0x2e8025...61b93f` | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x8dc6ef...190703` | ⚠️ Unaudited |
-| VeToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 2 deployments: optimism `0x133bec...2485d6`; arbitrum `0x8b5264...1c73a5` | ⚠️ Unaudited |
-| VeToken | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0xb7047f...9aef47`; arbitrum `0xda4f46...54ff87` | ⚠️ Unaudited |
+| AdminUpgradeabilityProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | 2 deployments: optimism `0x2c75050d7d380f07e3a9bd77bb43d304e77701c4`; optimism `0xbc19ee05cb03e7837c9ac2412fa4a36671a7da6c` | ⚠️ Unaudited |
+| AdminUpgradeabilityProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 7 deployments: optimism `0x40adcc831587eb463d14707fd42438ea9e534021`; optimism `0x54b00b742b4edc775ef929b669bd65e7a198b566`; optimism `0x6736e1f034db01abd42c88800ad079c86b5fb861`; optimism `0x99fe96b9eea24b4e71ac1a56f2c1886bbca22540`; optimism `0xed5061c44bdbde4a16825756570774cad68fd60a`; optimism `0xf96aad4942d8a0394158fd960003397690fb795d`; arbitrum `0x92aee27dcc5373423d13028b1b2bf4ef61e6a39d` | ⚠️ Unaudited |
+| AdminUpgradeabilityProxy | proxy | non_address_book | non_address_book_inventory (excluded) | 2 | optimism | n/a | 2 deployments: optimism `0x5556af10c1966ebf0b131295a2af13deec771bce`; optimism `0x584a4fc89f8bba3e836ad14a205fb022de07fca8` | ⚠️ Unaudited |
+| AdminUpgradeabilityProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | 2 deployments: optimism `0x60d755ba869552662fe2c2c47b917605e6ed3cbe`; optimism `0xeab4c6c26a1f296e8e0033ffb817d5311c51299d` | ⚠️ Unaudited |
+| AdminUpgradeabilityProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | 2 deployments: optimism `0x9d66c32e137e618bee9669ae096fd59ba925aaa5`; optimism `0xd6c52a5b720d81ed9bab0df34f1e00f7d2c2345b` | ⚠️ Unaudited |
+| AdminUpgradeabilityProxy | proxy | non_address_book | non_address_book_inventory (excluded) | 2 | arbitrum | n/a | 2 deployments: arbitrum `0x019622fb05dd0c80751798949e795ff5d5e3a61f`; arbitrum `0xcd7a1b22d239a4395dd8ab8f5dbcdcee2132dbc4` | ⚠️ Unaudited |
+| AdminUpgradeabilityProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x0f48ac8272edd41e5f21a85ffea0285ff0d28ee5`; arbitrum `0x958882fda110febd41536e45034bebff2a815006` | ⚠️ Unaudited |
+| AdminUpgradeabilityProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x278fe1be6202fa12a4c18062a69bcfb42ad1f398`; arbitrum `0x90d11b8de2b30a84cb7e6cf6188581ec08b1bf82` | ⚠️ Unaudited |
+| AdminUpgradeabilityProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x5905e0eca5f93d8359621feb7c2932d384141c76`; arbitrum `0xb557c071bae7dc3aa2366cd0fc0477b45eb696f1` | ⚠️ Unaudited |
+| AdminUpgradeabilityProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | arbitrum | n/a | `0x99fe96b9eea24b4e71ac1a56f2c1886bbca22540` | ⚠️ Unaudited |
+| Bridge | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x09f12be3b88587faf2d3d951a9366ab2a7babaf4`; arbitrum `0xa03cae4dc6222690a14fdaa80efeb02d4d6fcf18` | ⚠️ Unaudited |
+| Bridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x94ecc84a42af7e8c05b0ac6a4cecbc278ef35096` | ⚠️ Unaudited |
+| EACAggregatorProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: arbitrum `0x563b9e4556f9057d7ff1a049e28b236f389513da`; arbitrum `0x8bd82036769d7033a703b675e9476167e63eec92` | ⚠️ Unaudited |
+| EsToken | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | 2 deployments: optimism `0xb7047f8ce977b074434e6379384f6226ac9aef47`; optimism `0xda4f463f4f449a62601f3247e4cd10568054ff87` | ⚠️ Unaudited |
+| EsToken | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x20cc0f5701af17effe10cdcc8265abcd5e011fb7`; arbitrum `0xa0172947b886eedc8d8b2177d6213083fd750f11` | ⚠️ Unaudited |
+| EsToken | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x375729535a9c4d6d16e36f0466d1a27d05d33700`; arbitrum `0x5c9834b648fa4dbbc2de0438bf6224af0b62abc8` | ⚠️ Unaudited |
+| ETHUnwrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 2 deployments: optimism `0xcec45b47f809f7ae4c47fbcd4df37a71a8f9c5d8`; arbitrum `0xec59fb45ed758ef81c638a6f658688e363734fb7` | ⚠️ Unaudited |
+| FeeVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 5 deployments: optimism `0x2bd9da075cb1a897bd16d20f7c5f19a2741a2d74`; optimism `0x31241aeedb49eba408bcf7b276059ce367785003`; optimism `0xb557c071bae7dc3aa2366cd0fc0477b45eb696f1`; arbitrum `0x1295fdc7615ad94acb8eed07ffed19113acfc32a`; arbitrum `0x133bec4ac9ccbcc479aa9b9cb7a1c916a72485d6` | ⚠️ Unaudited |
+| FeeVault | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x426d9385a70859c815d84d3ad2d8937518db7e73`; arbitrum `0x9d66c32e137e618bee9669ae096fd59ba925aaa5` | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | non_address_book | standard_proxy_or_library (excluded) | 1 | arbitrum | n/a | `0xaa1919fd3b6f6e11e2c7f22147c48af2b0e4ff03` | ⚠️ Unaudited |
+| LiqLocker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x703b9994c47ba7521b432b8fac0a954cf6f1ebf8` | ⚠️ Unaudited |
+| LPToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 6 deployments: optimism `0x048e77257df92787cc1af4015b6e9a7d521775a2`; optimism `0x52d7096812b8d37d351e424e541b9a5424fd63f2`; optimism `0x5dad2ee9e3896172554516e5d7841184eed46125`; optimism `0xfc453553a9bdfe5cefd880aebcc026fd1ed4d881`; arbitrum `0x7d5332df67aec9cb1df73ba8115e6a9211cf021f`; arbitrum `0x947af1d7926de7edf3bd5411ce5f79bd09e551cd` | ⚠️ Unaudited |
+| MasterChefV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 6 deployments: optimism `0x958882fda110febd41536e45034bebff2a815006`; arbitrum `0x0517a00f1dbb2ec4adbe422255633d5b0a4beade`; arbitrum `0x72f19de0076573c658651a6b63da510c19436ab1`; arbitrum `0x824321ef6a7e7ce3dc78f6a00b68587e1142f4d6`; arbitrum `0x882105478f2193001f8fed8399af93f31cc42f85`; arbitrum `0xcec45b47f809f7ae4c47fbcd4df37a71a8f9c5d8` | ⚠️ Unaudited |
+| Oracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 3 deployments: optimism `0x172ef9fa593a55f01353366462523550762a3002`; arbitrum `0x7e7df88e6d6b65eaeaffb777c453a2d9d2be14f3`; arbitrum `0xb4e0e46cc733106f8f5b9845e2011b128a1ea39a` | ⚠️ Unaudited |
+| OrderManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | 2 deployments: optimism `0x955bd6d763973d2461f10e12b6ecc4ba7af7776b`; optimism `0xce4e6cf9d565234769d04b20354fd0e7f89872d5` | ⚠️ Unaudited |
+| OrderManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 4 deployments: arbitrum `0x43c10395f89e49347207f3aa0edf21e2da5daf16`; arbitrum `0x4f405dc6210c8a4b0f26ec5c7b2b8e80a990f27d`; arbitrum `0x901c3faa2dc9b5a50a3480fb7283e63214003279`; arbitrum `0xa18be61f04b56d9234603ffa7056f174c951561b` | ⚠️ Unaudited |
+| Pool | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | 2 deployments: optimism `0x3a436d99cb3a72578b2e91bb8a24c32eedd7a853`; optimism `0xd5826be6b7999cf38de403dafd96fff3ec66f006` | ⚠️ Unaudited |
+| Pool | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | 2 deployments: optimism `0x6055896622859f91399b5e69ee45e90cd087f5c3`; optimism `0xf82408058e68941b3088cc22a86785af95434200` | ⚠️ Unaudited |
+| Pool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 5 deployments: optimism `0x5476f8424f362c53029ee159b7d9fccb60ad6c51`; optimism `0xc61793892220c76813d08f1574440447225f42f2`; optimism `0xd59a8fff4efc7fc7aef9b1b0ff3e293a0447a530`; arbitrum `0x318b38b9f7b354b1c77e0ea5abe4cbcba517b451`; arbitrum `0xcc79139b99053078119ab7094bbd4e08efc12a0d` | ⚠️ Unaudited |
+| PoolHook | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | 2 deployments: optimism `0x25e842e8d7dbe6124961e05fd0efe9ce7abb0765`; optimism `0x87566d86e3caea5b8a06d73c4f8ee282f1dbb844` | ⚠️ Unaudited |
+| PoolHook | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0xb81316233de35fc8d7d3f63452bbade863a341b5`; arbitrum `0xed5061c44bdbde4a16825756570774cad68fd60a` | ⚠️ Unaudited |
+| PriceReporter | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | 2 deployments: optimism `0xcc79139b99053078119ab7094bbd4e08efc12a0d`; optimism `0xcd7a1b22d239a4395dd8ab8f5dbcdcee2132dbc4` | ⚠️ Unaudited |
+| PriceReporter | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x26180d4fa111dbb122d5756323b3aa4bfdd40232`; arbitrum `0x6ce6fe900d1a0117c74871028666e28742193db4` | ⚠️ Unaudited |
+| PriceReporter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: arbitrum `0xe407c59db7ce2f69738c13cc6b008992f2566f53`; arbitrum `0xe631aa51bf90e9b828f96ea80cd3d868787acf4c` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: optimism `0xa0172947b886eedc8d8b2177d6213083fd750f11`; arbitrum `0x7c9d49af6be557f2ae30f907cd111b42eab7c9db` | ⚠️ Unaudited |
+| Timelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 2 deployments: optimism `0x20cc0f5701af17effe10cdcc8265abcd5e011fb7`; arbitrum `0x84b7a2a5d7b2028e82ed8f60a48453d70a8fe103` | ⚠️ Unaudited |
+| Token | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 2 deployments: optimism `0x2e80259c9071b6176205ff5f5eb6f7ec8361b93f`; arbitrum `0x2e80259c9071b6176205ff5f5eb6f7ec8361b93f` | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x8dc6efd57a13b7ba3ff7824c9708db24d3190703` | ⚠️ Unaudited |
+| VeToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 2 deployments: optimism `0x133bec4ac9ccbcc479aa9b9cb7a1c916a72485d6`; arbitrum `0x8b5264f0d38ca099a97fec2d3cf493a8311c73a5` | ⚠️ Unaudited |
+| VeToken | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0xb7047f8ce977b074434e6379384f6226ac9aef47`; arbitrum `0xda4f463f4f449a62601f3247e4cd10568054ff87` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -149,33 +149,33 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Proxy (impl: 0x989cc0e3726feae27bbea934bb040214ea953476) | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x597f5a...a818f2`; arbitrum `0x989cc0...953476` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x2b9c8b...becd19` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x303cc9...8cf6d6` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x375729...d33700` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x52d510...5048e1` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x722b76...0984e1` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x92aee2...e6a39d` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x95e924...aec878` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x963a0a...1be81f` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x98293e...bd4972` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xa18be6...51561b` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xcd00be...3a9b2e` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xdf40b7...c2a2b2` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x172ef9...2a3002` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x286fa4...fd8b87` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x349c06...76c6dc` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x5556af...771bce` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x7c8210...b64f84` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x8f5be3...1b0330` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x97d4b0...273d95` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xa0a60e...070e18` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xb37c07...7e1a3a` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xb6a06d...bd917f` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xe80cdc...f1ed51` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xec161c...beacc6` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xfdacc1...54e7a0` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xff0ebb...3a0fe8` | ❓ Unverified |
+| Proxy (impl: 0x989cc0e3726feae27bbea934bb040214ea953476) | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x597f5aa40d380acecc4906778180748ebba818f2`; arbitrum `0x989cc0e3726feae27bbea934bb040214ea953476` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x2b9c8b76176957a0448279da9b8cdebe94becd19` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x303cc96d589df4d4343cd2391d10174ff58cf6d6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x375729535a9c4d6d16e36f0466d1a27d05d33700` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x52d510b6c66b10eed524b2ff81732412a55048e1` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x722b763b2e4f73b62d84a37edad4a16a950984e1` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x92aee27dcc5373423d13028b1b2bf4ef61e6a39d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x95e92446d1339c1eb8f1de672cc40d3b6faec878` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x963a0a97726ab86091a3f189e2ab07e2661be81f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x98293ef4b96c513b939786e9e7f6686a63bd4972` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xa18be61f04b56d9234603ffa7056f174c951561b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xcd00becadbb0fa418e5858314a289bf20f3a9b2e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xdf40b7f0caf2210279e94033e7cb2da5fdc2a2b2` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x172ef9fa593a55f01353366462523550762a3002` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x286fa4f931b46fe6c404614d3eabae5455fd8b87` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x349c06e74dc19dc5d8e20a32449d59363a76c6dc` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x5556af10c1966ebf0b131295a2af13deec771bce` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x7c8210d95a07ff4e7799b7f4fa089bb7a2b64f84` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x8f5be32d7e97242d3c0cda9f7c26d447c21b0330` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x97d4b001bd708a0da6d85e747795b59475273d95` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xa0a60ee81ca507ccb0acb200d4ab65b36d070e18` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xb37c07087769186970e7c52386d7aea7927e1a3a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xb6a06dfee703a146d42f7fd8a0dfc70338bd917f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xe80cdce96bf4825b32f08e9360a0187e71f1ed51` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xec161cab9fd373afa422e44cbc9e5e038abeacc6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xfdacc1aab258dfc598a7859b09b4fa29d354e7a0` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xff0ebb477ef20f3feb921b4513d4dc37b73a0fe8` | ❓ Unverified |
 
 ## Audit Inventory
 

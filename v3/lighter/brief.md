@@ -57,8 +57,8 @@ The pinned logic-topography run contains 2 contract row(s) across arbitrum, ethe
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- Lighter (`0x232ce3...784ee2`, chain 1)
-- ZkLighterContract (`0x3b4d79...cf5ca7`, chain 1)
+- Lighter (`0x232ce3bd40fcd6f80f3d55a522d03f25df784ee2`, chain 1)
+- ZkLighterContract (`0x3b4d794a66304f130a4db8f2551b0070dfcf5ca7`, chain 1)
 
 ## Contract Surface Quality
 
@@ -104,16 +104,16 @@ The pinned logic-topography run contains 2 contract row(s) across arbitrum, ethe
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x13022f...ce5182` | ⚠️ Unaudited |
-| Lighter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388507 | `0x232ce3...784ee2` | ⚠️ Unaudited |
-| LinkedListLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x43ccc6...5af8b3` | ⚠️ Unaudited |
-| MaxLinkedListLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0f3949...99ea3c` | ⚠️ Unaudited |
-| MinLinkedListLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x8dd063...962c60` | ⚠️ Unaudited |
-| OrderBookDeployerLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x7882f8...0b1877` | ⚠️ Unaudited |
-| OrderBookHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xa1e787...ffee97` | ⚠️ Unaudited |
-| Router | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x033c00...b81d57` | ⚠️ Unaudited |
-| TimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x2b2489...3e7a1c` | ⚠️ Unaudited |
-| ZkLighterContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388508 | `0x3b4d79...cf5ca7` | ⚠️ Unaudited |
+| Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x13022f85d87d18c8e2b50de6c7c809698dce5182` | ⚠️ Unaudited |
+| Lighter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388507 | `0x232ce3bd40fcd6f80f3d55a522d03f25df784ee2` | ⚠️ Unaudited |
+| LinkedListLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x43ccc6d2a517a9a0955fba24c73f2202da5af8b3` | ⚠️ Unaudited |
+| MaxLinkedListLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0f39497a76f33efebb88c903bd3d5a175499ea3c` | ⚠️ Unaudited |
+| MinLinkedListLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x8dd0635fef368ee7caa7d8f2d6de4792f5962c60` | ⚠️ Unaudited |
+| OrderBookDeployerLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x7882f88895666781e472f8e1b6cd8b84440b1877` | ⚠️ Unaudited |
+| OrderBookHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xa1e78740217910ba0bb65eeee875cfcf8bffee97` | ⚠️ Unaudited |
+| Router | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x033c00fd922af40b6683fe5371380831a5b81d57` | ⚠️ Unaudited |
+| TimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x2b24894c03391e95846e74abca605231ee3e7a1c` | ⚠️ Unaudited |
+| ZkLighterContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388508 | `0x3b4d794a66304f130a4db8f2551b0070dfcf5ca7` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -133,7 +133,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-388510 | `0xa0b869...06eb48` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-388510 | `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -164,7 +164,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x232ce3...784ee2` | Lighter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x232ce3bd40fcd6f80f3d55a522d03f25df784ee2` | Lighter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -52,10 +52,10 @@ The pinned logic-topography run contains 4 contract row(s) across bsc, heco. Str
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- BSCPool (`0xc48fe2...728a50`, chain 56)
-- MdxToken (`0x9c65ab...e3a739`, chain 56)
-- Repurchase (`0x1308af...27110f`, chain 56)
-- SwapMining (`0x782395...b44c11`, chain 56)
+- BSCPool (`0xc48fe252aa631017df253578b1405ea399728a50`, chain 56)
+- MdxToken (`0x9c65ab58d8d978db963e63f2bfb7121627e3a739`, chain 56)
+- Repurchase (`0x1308af6853b449d7604c7544cb2170248527110f`, chain 56)
+- SwapMining (`0x782395303692abed877d2737aa7982345eb44c11`, chain 56)
 
 ## Contract Surface Quality
 
@@ -101,19 +101,19 @@ The pinned logic-topography run contains 4 contract row(s) across bsc, heco. Str
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| MdxToken | token | project_anchor | own_supporting | 0 | bsc | unit-388998 | `0x9c65ab...e3a739` | ✅ Audited |
-| Repurchase | unknown | project_anchor | own_supporting | 0 | bsc | unit-388996 | `0x1308af...27110f` | ✅ Audited |
-| SwapMining | unknown | project_anchor | own_supporting | 0 | bsc | unit-388997 | `0x782395...b44c11` | ✅ Audited |
+| MdxToken | token | project_anchor | own_supporting | 0 | bsc | unit-388998 | `0x9c65ab58d8d978db963e63f2bfb7121627e3a739` | ✅ Audited |
+| Repurchase | unknown | project_anchor | own_supporting | 0 | bsc | unit-388996 | `0x1308af6853b449d7604c7544cb2170248527110f` | ✅ Audited |
+| SwapMining | unknown | project_anchor | own_supporting | 0 | bsc | unit-388997 | `0x782395303692abed877d2737aa7982345eb44c11` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BlackHole | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x6f3dee...4cd3d1` | ⚠️ Unaudited |
-| BSCPool | core_logic | project_anchor | own_supporting | 0 | bsc | unit-388999 | `0xc48fe2...728a50` | ⚠️ Unaudited |
-| MdexFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3cd1c4...8062b8` | ⚠️ Unaudited |
-| MdexRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 4 deployments: bsc `0x0384e9...bc4333`; bsc `0x518a6e...cf1a3c`; bsc `0x62c1a0...b87059`; bsc `0x7dae51...af1ba8` | ⚠️ Unaudited |
-| repurchase | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 8 deployments: bsc `0x187cc3...68b2bd`; bsc `0x626533...60bb22`; bsc `0x84e087...036f44`; bsc `0x98b54b...387f59`; bsc `0xbef2db...5a61ec`; bsc `0xc151cb...c11251`; bsc `0xd6a50d...21b3a6`; bsc `0xf082f6...56453e` | ⚠️ Unaudited |
+| BlackHole | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x6f3dee41f6f216d1e78670b7e53002ba0c4cd3d1` | ⚠️ Unaudited |
+| BSCPool | core_logic | project_anchor | own_supporting | 0 | bsc | unit-388999 | `0xc48fe252aa631017df253578b1405ea399728a50` | ⚠️ Unaudited |
+| MdexFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3cd1c46068daea5ebb0d3f55f6915b10648062b8` | ⚠️ Unaudited |
+| MdexRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 4 deployments: bsc `0x0384e9ad329396c3a6a401243ca71633b2bc4333`; bsc `0x518a6e9fb2832ada41415775e5c45de6efcf1a3c`; bsc `0x62c1a0d92b09d0912f7bb9c96c5ecdc7f2b87059`; bsc `0x7dae51bd3e3376b8c7c4900e9107f12be3af1ba8` | ⚠️ Unaudited |
+| repurchase | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 8 deployments: bsc `0x187cc392e12a9427a5d7719dc7372f69f068b2bd`; bsc `0x6265334dff2d2e8d950de9d8dbb2ea881560bb22`; bsc `0x84e087d4be5928c219b9dea8e087b8b737036f44`; bsc `0x98b54b1405329cbc1cbe0f1e386b1abe6a387f59`; bsc `0xbef2db33f018be9247c726106b0ea2fce25a61ec`; bsc `0xc151cb380dcb3266383edb3f0b001b871dc11251`; bsc `0xd6a50d5384c90567f47955c133f07500e421b3a6`; bsc `0xf082f6f8180207b6252d9930312c825e9c56453e` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -133,23 +133,23 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x9458f7...abef8e` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xba6f7d...3392d6` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xbd21cd...570f5e` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xd6cd59...158047` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xfa2eeb...21214f` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | heco | unit-388984 | `0x25d2e8...be033c` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | heco | unit-388985 | `0x465d24...7746b0` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | heco | unit-388986 | `0x46900c...87910c` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | heco | unit-388987 | `0x5fef5c...ba5e77` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | heco | unit-388988 | `0x7373c4...18422e` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | heco | unit-388989 | `0x9197d7...2f8695` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | heco | unit-388990 | `0xa3fd97...3c9b79` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | heco | unit-388991 | `0xa6fe65...059569` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | heco | unit-388992 | `0xb0b670...22d941` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | heco | unit-388993 | `0xed7d5f...06c300` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | heco | unit-388994 | `0xf9852c...e03a25` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | heco | unit-388995 | `0xfb03e1...f5e909` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x9458f7d8e2dc56fbcc71628aa3811d44bfabef8e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xba6f7d77eaeeed5ed9f6cb385022702a8f3392d6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xbd21cd7dd5aa12561a608821cb1de7b2f5570f5e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xd6cd5963be717dc1afa5100c7e29be8ac4158047` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xfa2eeb85dd47ff9497b340cc2c5474453821214f` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | heco | unit-388984 | `0x25d2e80cb6b86881fd7e07dd263fb79f4abe033c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | heco | unit-388985 | `0x465d246233ba20e7cfc95743b5d073be8a7746b0` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | heco | unit-388986 | `0x46900c0c18ace98baab81561b9906dc93287910c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | heco | unit-388987 | `0x5fef5cc8ae1e42c5299aae05a2effa1634ba5e77` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | heco | unit-388988 | `0x7373c42502874c88954bdd6d50b53061f018422e` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | heco | unit-388989 | `0x9197d717a4f45b672acacab4cc0c6e09222f8695` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | heco | unit-388990 | `0xa3fd9758323c8a86292b55702f631c81283c9b79` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | heco | unit-388991 | `0xa6fe654241140469d1757a5bb8ee844325059569` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | heco | unit-388992 | `0xb0b670fc1f7724119963018db0bfa86adb22d941` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | heco | unit-388993 | `0xed7d5f38c79115ca12fe6c0041abb22f0a06c300` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | heco | unit-388994 | `0xf9852c6588b70ad3c26dae47120f174527e03a25` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | heco | unit-388995 | `0xfb03e11d93632d97a8981158a632dd5986f5e909` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -190,14 +190,14 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | slowmist_bsc.pdf | MdexOracleLibrary | unmatched — not counted | — | — | no |
 | slowmist_bsc.pdf | MdexPair | unmatched — not counted | — | — | no |
 | slowmist_bsc.pdf | MdexRouter | unmatched — not counted | — | — | no |
-| slowmist_bsc.pdf | MdxToken | own contract | MdxToken (selected) `0x9c65ab...e3a739` — deployed 2021-04-07 22:06:54+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| slowmist_bsc.pdf | MdxToken | own contract | MdxToken (selected) `0x9c65ab58d8d978db963e63f2bfb7121627e3a739` — deployed 2021-04-07 22:06:54+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | slowmist_bsc.pdf | MdxTokenHeco | unmatched — not counted | — | — | no |
 | slowmist_bsc.pdf | Migrations | unmatched — not counted | — | — | no |
 | slowmist_bsc.pdf | Oracle | unmatched — not counted | — | — | no |
-| slowmist_bsc.pdf | Repurchase | own contract | Repurchase (selected) `0x1308af...27110f` — deployed 2021-04-21 17:15:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| slowmist_bsc.pdf | Repurchase | own contract | Repurchase (selected) `0x1308af6853b449d7604c7544cb2170248527110f` — deployed 2021-04-21 17:15:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | slowmist_bsc.pdf | Router | unmatched — not counted | — | — | no |
 | slowmist_bsc.pdf | SafeMath | unmatched — not counted | — | — | no |
-| slowmist_bsc.pdf | SwapMining | own contract | SwapMining (selected) `0x782395...b44c11` — deployed 2021-04-07 22:15:21+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| slowmist_bsc.pdf | SwapMining | own contract | SwapMining (selected) `0x782395303692abed877d2737aa7982345eb44c11` — deployed 2021-04-07 22:15:21+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | slowmist_bsc.pdf | TeamTimeLock | unmatched — not counted | — | — | no |
 | slowmist_bsc.pdf | Timelock | unmatched — not counted | — | — | no |
 | slowmist_bsc.pdf | TransferHelper | unmatched — not counted | — | — | no |
@@ -206,12 +206,12 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | fairyproof_bsc.pdf | boardRoom | unmatched — not counted | — | — | no |
 | fairyproof_bsc.pdf | boardRoomMDX | unmatched — not counted | — | — | no |
 | fairyproof_bsc.pdf | factory | unmatched — not counted | — | — | no |
-| fairyproof_bsc.pdf | mdxToken | own contract | MdxToken (selected) `0x9c65ab...e3a739` — deployed 2021-04-07 22:06:54+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| fairyproof_bsc.pdf | mdxToken | own contract | MdxToken (selected) `0x9c65ab58d8d978db963e63f2bfb7121627e3a739` — deployed 2021-04-07 22:06:54+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | fairyproof_bsc.pdf | oracle | unmatched — not counted | — | — | no |
 | fairyproof_bsc.pdf | pool | unmatched — not counted | — | — | no |
-| fairyproof_bsc.pdf | repurchase | own contract | Repurchase (selected) `0x1308af...27110f` — deployed 2021-04-21 17:15:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| fairyproof_bsc.pdf | repurchase | own contract | Repurchase (selected) `0x1308af6853b449d7604c7544cb2170248527110f` — deployed 2021-04-21 17:15:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | fairyproof_bsc.pdf | router | unmatched — not counted | — | — | no |
-| fairyproof_bsc.pdf | swapMining | own contract | SwapMining (selected) `0x782395...b44c11` — deployed 2021-04-07 22:15:21+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| fairyproof_bsc.pdf | swapMining | own contract | SwapMining (selected) `0x782395303692abed877d2737aa7982345eb44c11` — deployed 2021-04-07 22:15:21+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | certik_bsc.pdf | Airdrop | unmatched — not counted | — | — | no |
 | certik_bsc.pdf | AirdropMDX | unmatched — not counted | — | — | no |
 | certik_bsc.pdf | BlackHole | unmatched — not counted | — | — | no |
@@ -222,12 +222,12 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | certik_bsc.pdf | MdexERC20 | unmatched — not counted | — | — | no |
 | certik_bsc.pdf | MdexFactory | unmatched — not counted | — | — | no |
 | certik_bsc.pdf | MdexPair | unmatched — not counted | — | — | no |
-| certik_bsc.pdf | MdxToken | own contract | MdxToken (selected) `0x9c65ab...e3a739` — deployed 2021-04-07 22:06:54+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| certik_bsc.pdf | MdxToken | own contract | MdxToken (selected) `0x9c65ab58d8d978db963e63f2bfb7121627e3a739` — deployed 2021-04-07 22:06:54+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | certik_bsc.pdf | MdxTokenHeco | unmatched — not counted | — | — | no |
 | certik_bsc.pdf | Oracle | unmatched — not counted | — | — | no |
-| certik_bsc.pdf | Repurchase | own contract | Repurchase (selected) `0x1308af...27110f` — deployed 2021-04-21 17:15:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| certik_bsc.pdf | Repurchase | own contract | Repurchase (selected) `0x1308af6853b449d7604c7544cb2170248527110f` — deployed 2021-04-21 17:15:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | certik_bsc.pdf | Router | unmatched — not counted | — | — | no |
-| certik_bsc.pdf | SwapMining | own contract | SwapMining (selected) `0x782395...b44c11` — deployed 2021-04-07 22:15:21+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| certik_bsc.pdf | SwapMining | own contract | SwapMining (selected) `0x782395303692abed877d2737aa7982345eb44c11` — deployed 2021-04-07 22:15:21+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | certik_bsc.pdf | TeamTimeLock | unmatched — not counted | — | — | no |
 | certik_bsc.pdf | Timelock | unmatched — not counted | — | — | no |
 
@@ -237,7 +237,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | `0xc48fe2...728a50` | BSCPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xc48fe252aa631017df253578b1405ea399728a50` | BSCPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

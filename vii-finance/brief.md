@@ -59,7 +59,7 @@ The protocol forms a single structural family (Registries) of 1 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UniswapV4WrapperFactory | registry | ethereum | n/a | 2 deployments: ethereum [`0x77774a...93f777`](./contracts/ethereum-1/0x77774abb84eeabae05ce00d8a1b83dfc6e93f777/); unichain `0x777765...ce2777` | ✅ Audited |
+| UniswapV4WrapperFactory | registry | ethereum | n/a | 2 deployments: ethereum [`0x77774abb84eeabae05ce00d8a1b83dfc6e93f777`](./contracts/ethereum-1/0x77774abb84eeabae05ce00d8a1b83dfc6e93f777/); unichain `0x7777655b9474d2f3f27ee44f3fd1343e33ce2777` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 
@@ -83,7 +83,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x12e74f...8bb394` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x12e74f3c61f6b4d17a9c3fdb3f42e8f18a8bb394` | ❓ Unverified |
 
 ## Audit Inventory
 

@@ -60,13 +60,13 @@ The protocol forms a single structural family (Core Logic) of 7 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| MasterChef | unknown | bsc | n/a | [`0xe98167...80c595`](./contracts/bsc-56/0xe981676633dcf0256aa512f4923a7e8da180c595/) | ⚠️ Unaudited |
-| PinkSwapAirdrop | unknown | bsc | n/a | [`0x726d61...255c54`](./contracts/bsc-56/0x726d61af7c4a9a2b5dcd6a0a1f676fa582255c54/) | ⚠️ Unaudited |
-| PinkswapFactory | unknown | bsc | n/a | [`0x4fd09a...590daf`](./contracts/bsc-56/0x4fd09a7086aa26ec4a18f9c5192edbd578590daf/) | ⚠️ Unaudited |
-| PinkswapLocker | unknown | bsc | n/a | [`0xd9a679...36c7ce`](./contracts/bsc-56/0xd9a6797bbdab3ddda9722fa124b4aa758836c7ce/) | ⚠️ Unaudited |
-| PinkswapRouter | unknown | bsc | n/a | [`0x319ef6...0fa3ac`](./contracts/bsc-56/0x319ef69a98c8e8aab36aea561daba0bf3d0fa3ac/) | ⚠️ Unaudited |
-| PinkSwapToken | unknown | bsc | n/a | [`0x702b3f...21125d`](./contracts/bsc-56/0x702b3f41772e321aaccdea91e1fcef682d21125d/) | ⚠️ Unaudited |
-| Timelock | unknown | bsc | n/a | [`0xa85794...068863`](./contracts/bsc-56/0xa857941ae810e384185135cf5966abfe5f068863/) | ⚠️ Unaudited |
+| MasterChef | unknown | bsc | n/a | [`0xe981676633dcf0256aa512f4923a7e8da180c595`](./contracts/bsc-56/0xe981676633dcf0256aa512f4923a7e8da180c595/) | ⚠️ Unaudited |
+| PinkSwapAirdrop | unknown | bsc | n/a | [`0x726d61af7c4a9a2b5dcd6a0a1f676fa582255c54`](./contracts/bsc-56/0x726d61af7c4a9a2b5dcd6a0a1f676fa582255c54/) | ⚠️ Unaudited |
+| PinkswapFactory | unknown | bsc | n/a | [`0x4fd09a7086aa26ec4a18f9c5192edbd578590daf`](./contracts/bsc-56/0x4fd09a7086aa26ec4a18f9c5192edbd578590daf/) | ⚠️ Unaudited |
+| PinkswapLocker | unknown | bsc | n/a | [`0xd9a6797bbdab3ddda9722fa124b4aa758836c7ce`](./contracts/bsc-56/0xd9a6797bbdab3ddda9722fa124b4aa758836c7ce/) | ⚠️ Unaudited |
+| PinkswapRouter | unknown | bsc | n/a | [`0x319ef69a98c8e8aab36aea561daba0bf3d0fa3ac`](./contracts/bsc-56/0x319ef69a98c8e8aab36aea561daba0bf3d0fa3ac/) | ⚠️ Unaudited |
+| PinkSwapToken | unknown | bsc | n/a | [`0x702b3f41772e321aaccdea91e1fcef682d21125d`](./contracts/bsc-56/0x702b3f41772e321aaccdea91e1fcef682d21125d/) | ⚠️ Unaudited |
+| Timelock | unknown | bsc | n/a | [`0xa857941ae810e384185135cf5966abfe5f068863`](./contracts/bsc-56/0xa857941ae810e384185135cf5966abfe5f068863/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -97,13 +97,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0xe98167...80c595`](./contracts/bsc-56/0xe981676633dcf0256aa512f4923a7e8da180c595/) | MasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x726d61...255c54`](./contracts/bsc-56/0x726d61af7c4a9a2b5dcd6a0a1f676fa582255c54/) | PinkSwapAirdrop | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x4fd09a...590daf`](./contracts/bsc-56/0x4fd09a7086aa26ec4a18f9c5192edbd578590daf/) | PinkswapFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xd9a679...36c7ce`](./contracts/bsc-56/0xd9a6797bbdab3ddda9722fa124b4aa758836c7ce/) | PinkswapLocker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x319ef6...0fa3ac`](./contracts/bsc-56/0x319ef69a98c8e8aab36aea561daba0bf3d0fa3ac/) | PinkswapRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x702b3f...21125d`](./contracts/bsc-56/0x702b3f41772e321aaccdea91e1fcef682d21125d/) | PinkSwapToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xa85794...068863`](./contracts/bsc-56/0xa857941ae810e384185135cf5966abfe5f068863/) | Timelock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xe981676633dcf0256aa512f4923a7e8da180c595`](./contracts/bsc-56/0xe981676633dcf0256aa512f4923a7e8da180c595/) | MasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x726d61af7c4a9a2b5dcd6a0a1f676fa582255c54`](./contracts/bsc-56/0x726d61af7c4a9a2b5dcd6a0a1f676fa582255c54/) | PinkSwapAirdrop | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x4fd09a7086aa26ec4a18f9c5192edbd578590daf`](./contracts/bsc-56/0x4fd09a7086aa26ec4a18f9c5192edbd578590daf/) | PinkswapFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xd9a6797bbdab3ddda9722fa124b4aa758836c7ce`](./contracts/bsc-56/0xd9a6797bbdab3ddda9722fa124b4aa758836c7ce/) | PinkswapLocker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x319ef69a98c8e8aab36aea561daba0bf3d0fa3ac`](./contracts/bsc-56/0x319ef69a98c8e8aab36aea561daba0bf3d0fa3ac/) | PinkswapRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x702b3f41772e321aaccdea91e1fcef682d21125d`](./contracts/bsc-56/0x702b3f41772e321aaccdea91e1fcef682d21125d/) | PinkSwapToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xa857941ae810e384185135cf5966abfe5f068863`](./contracts/bsc-56/0xa857941ae810e384185135cf5966abfe5f068863/) | Timelock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

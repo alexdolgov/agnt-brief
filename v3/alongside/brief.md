@@ -52,10 +52,10 @@ The pinned logic-topography run contains 2 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x6e593d...9ed015`, chain 1)
-- UnnamedContract (`0xf17a3f...9cae8d`, chain 1)
-- Controller (`0x0d44f8...ca4857`, chain 1)
-- Members (`0xc89ded...c16367`, chain 1)
+- UnnamedContract (`0x6e593dd211e10bc8bbfbb8b1a0f48dfaa09ed015`, chain 1)
+- UnnamedContract (`0xf17a3fe536f8f7847f1385ec1bc967b2ca9cae8d`, chain 1)
+- Controller (`0x0d44f856e1a7c70e35c54261c3f07dbfbdca4857`, chain 1)
+- Members (`0xc89ded85ce03ecc435bdef6f8851c1001ec16367`, chain 1)
 
 ## Contract Surface Quality
 
@@ -100,26 +100,26 @@ The pinned logic-topography run contains 2 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Controller | unknown | project_anchor | own_supporting | 1 | ethereum | unit-378708 | `0x0d44f8...ca4857` | ✅ Audited |
-| Members | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378706 | `0xc89ded...c16367` | ✅ Audited |
+| Controller | unknown | project_anchor | own_supporting | 1 | ethereum | unit-378708 | `0x0d44f856e1a7c70e35c54261c3f07dbfbdca4857` | ✅ Audited |
+| Members | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378706 | `0xc89ded85ce03ecc435bdef6f8851c1001ec16367` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (13)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ActiveBounty | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0daf7e...abc562` | ⚠️ Unaudited |
-| AlongsideGovernor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x774045...2fb45e` | ⚠️ Unaudited |
-| AstETH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x27c2b9...1257c2` | ⚠️ Unaudited |
-| Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x22c6b4...4007ff` | ⚠️ Unaudited |
-| Fulfiller | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6c72b7...abaabe` | ⚠️ Unaudited |
-| IndexToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x775715...dc9e8f` | ⚠️ Unaudited |
-| InvokeableBounty | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x366a64...da6884` | ⚠️ Unaudited |
-| Issuance | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x58ad9d...5f5198` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0x998930...45ab9b` | ⚠️ Unaudited |
-| Quoter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe3be63...eb227c` | ⚠️ Unaudited |
-| TimelockController | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0x4c362f...c1d478` | ⚠️ Unaudited |
-| UserRedemption | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x505606...0bbaca` | ⚠️ Unaudited |
-| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd62a80...af55ac` | ⚠️ Unaudited |
+| ActiveBounty | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0daf7e851f6054085432229150c1706988abc562` | ⚠️ Unaudited |
+| AlongsideGovernor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x774045b30e6fc5dfe73bf386e8845ca1472fb45e` | ⚠️ Unaudited |
+| AstETH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x27c2b9fd547ead2c05c305bee2399a55811257c2` | ⚠️ Unaudited |
+| Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x22c6b4b20f65ed6c619a571015926170674007ff` | ⚠️ Unaudited |
+| Fulfiller | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6c72b70f9bd342f0ddb66e147ae7412cd7abaabe` | ⚠️ Unaudited |
+| IndexToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x775715d96cd3b3586728b7420a13ec74f5dc9e8f` | ⚠️ Unaudited |
+| InvokeableBounty | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x366a647de921608bee3987025d23f12263da6884` | ⚠️ Unaudited |
+| Issuance | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x58ad9d36afac51206672f855bf7e76037c5f5198` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0x998930c351ecb4918a5c5238b62d5277fe45ab9b` | ⚠️ Unaudited |
+| Quoter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe3be63e1b959c152212ce1dd45d0d2f749eb227c` | ⚠️ Unaudited |
+| TimelockController | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0x4c362fab50bc81f0f58ef2da6b6e10b55fc1d478` | ⚠️ Unaudited |
+| UserRedemption | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5056063cad88e36b4de019752280f395640bbaca` | ⚠️ Unaudited |
+| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd62a80368adf5919f70193d15dcbd5c77eaf55ac` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -139,8 +139,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378705 | `0x6e593d...9ed015` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378707 | `0xf17a3f...9cae8d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378705 | `0x6e593dd211e10bc8bbfbb8b1a0f48dfaa09ed015` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378707 | `0xf17a3fe536f8f7847f1385ec1bc967b2ca9cae8d` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -191,19 +191,19 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | SigmaPrime_Sept_28.pdf | OTC | unmatched — not counted | — | mentioned in findings and test suite | no |
 | SigmaPrime_Sept_28.pdf | Factory | unmatched — not counted | — | mentioned in findings and test suite | no |
 | SigmaPrime_Sept_28.pdf | IndexToken | unmatched — not counted | — | mentioned in findings and test suite | no |
-| SigmaPrime_Sept_28.pdf | Members | own contract | Members (selected) `0xc89ded...c16367` — deployed 2022-10-14 00:53:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| SigmaPrime_Sept_28.pdf | Members | own contract | Members (selected) `0xc89ded85ce03ecc435bdef6f8851c1001ec16367` — deployed 2022-10-14 00:53:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | SigmaPrime_Sept_28.pdf | IndexedMapping | unmatched — not counted | — | mentioned in finding AMKT-12 | no |
-| SigmaPrime_Sept_28.pdf | Controller | own proxy deployment | Controller (proxy) (selected) `0x0d44f8...ca4857` — deployed 2022-10-14 00:53:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| SigmaPrime_Sept_28.pdf | Controller | own proxy deployment | Controller (proxy) (selected) `0x0d44f856e1a7c70e35c54261c3f07dbfbdca4857` — deployed 2022-10-14 00:53:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | SigmaPrime_Sept_28.pdf | DeployAMKT | unmatched — not counted | — | mentioned in findings | no |
 | SigmaPrime_Sept_28.pdf | DeployAMKTPartTwo | unmatched — not counted | — | mentioned in findings | no |
 | SigmaPrime_Sept_28.pdf | ProposableOwnable | unmatched — not counted | — | mentioned in findings | no |
 | SigmaPrime_Sept_28.pdf | ProposableOwnableUpgradeable | unmatched — not counted | — | mentioned in findings | no |
-| Solidified_April_22.pdf | Controller | own proxy deployment | Controller (proxy) (selected) `0x0d44f8...ca4857` — deployed 2022-10-14 00:53:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Solidified_April_22.pdf | Controller | own proxy deployment | Controller (proxy) (selected) `0x0d44f856e1a7c70e35c54261c3f07dbfbdca4857` — deployed 2022-10-14 00:53:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Solidified_April_22.pdf | ControllerInterface | unmatched — not counted | — | listed in audited file list | no |
 | Solidified_April_22.pdf | Factory | unmatched — not counted | — | listed in audited file list | no |
 | Solidified_April_22.pdf | FactoryInterface | unmatched — not counted | — | listed in audited file list | no |
 | Solidified_April_22.pdf | FactoryV2 | unmatched — not counted | — | listed in audited file list | no |
-| Solidified_April_22.pdf | Members | own contract | Members (selected) `0xc89ded...c16367` — deployed 2022-10-14 00:53:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Solidified_April_22.pdf | Members | own contract | Members (selected) `0xc89ded85ce03ecc435bdef6f8851c1001ec16367` — deployed 2022-10-14 00:53:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Solidified_April_22.pdf | MembersInterface | unmatched — not counted | — | listed in audited file list | no |
 | Solidified_April_22.pdf | IndexToken | unmatched — not counted | — | listed in audited file list | no |
 | Solidified_April_22.pdf | IndexedMapping | unmatched — not counted | — | listed in audited file list | no |

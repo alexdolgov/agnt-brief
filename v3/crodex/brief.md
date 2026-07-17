@@ -52,10 +52,10 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x6f522a...b3fd3a`, chain 25)
-- UnnamedContract (`0xe243cc...b7f689`, chain 25)
-- UnnamedContract (`0xe9c29c...80058f`, chain 25)
-- UnnamedContract (`0xec0a7a...43c7be`, chain 25)
+- UnnamedContract (`0x6f522a3982e8f9a50a2edc9e46ed1a3ae2b3fd3a`, chain 25)
+- UnnamedContract (`0xe243ccab9e66e6cf1215376980811ddf1eb7f689`, chain 25)
+- UnnamedContract (`0xe9c29cb475c0ade80be0319b74ad112f1e80058f`, chain 25)
+- UnnamedContract (`0xec0a7a0c2439e8cb67b992b12ecd020ea943c7be`, chain 25)
 
 ## Contract Surface Quality
 
@@ -119,11 +119,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | cronos | unit-383687 | `0x5c7f8a...e1ae23` | ❓ Unverified |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | cronos | unit-383688 | `0x6f522a...b3fd3a` | ❓ Unverified |
-| UnnamedContract | token | project_anchor | own_supporting | 0 | cronos | unit-383689 | `0xe243cc...b7f689` | ❓ Unverified |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | cronos | unit-383690 | `0xe9c29c...80058f` | ❓ Unverified |
-| UnnamedContract | periphery | project_anchor | own_supporting | 0 | cronos | unit-383691 | `0xec0a7a...43c7be` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | cronos | unit-383687 | `0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23` | ❓ Unverified |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | cronos | unit-383688 | `0x6f522a3982e8f9a50a2edc9e46ed1a3ae2b3fd3a` | ❓ Unverified |
+| UnnamedContract | token | project_anchor | own_supporting | 0 | cronos | unit-383689 | `0xe243ccab9e66e6cf1215376980811ddf1eb7f689` | ❓ Unverified |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | cronos | unit-383690 | `0xe9c29cb475c0ade80be0319b74ad112f1e80058f` | ❓ Unverified |
+| UnnamedContract | periphery | project_anchor | own_supporting | 0 | cronos | unit-383691 | `0xec0a7a0c2439e8cb67b992b12ecd020ea943c7be` | ❓ Unverified |
 
 ## Audit Inventory
 

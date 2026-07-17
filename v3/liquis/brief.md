@@ -90,33 +90,33 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BaseRewardPool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7ea693...5acb23` | ⚠️ Unaudited |
-| Booster | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x631e58...1ddcf2` | ⚠️ Unaudited |
-| BoosterHelper | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4ea2ef...d171f4` | ⚠️ Unaudited |
-| BoosterOwner | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x948a60...c0a6cb` | ⚠️ Unaudited |
-| CrvDepositor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb96bce...97856a` | ⚠️ Unaudited |
-| cvxCrvToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x03c6f0...1c4ad8` | ⚠️ Unaudited |
-| EthInvestor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x81a663...dd2b48` | ⚠️ Unaudited |
-| ExtraRewardStashV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x441745...35aaf2` | ⚠️ Unaudited |
-| FlashOptionsExerciser | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x036c45...e95d40` | ⚠️ Unaudited |
-| LiqLocker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x748a0f...03e1cb` | ⚠️ Unaudited |
-| LiqMinter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2e8617...2b805e` | ⚠️ Unaudited |
-| LiqToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd82fd4...4aa408` | ⚠️ Unaudited |
-| LiquisClaimZap | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xad161b...70431b` | ⚠️ Unaudited |
-| LiquisViewHelpers | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd58dd6...9b9fe4` | ⚠️ Unaudited |
-| LiqVestedEscrow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 7 deployments: ethereum `0x2f48cb...c69693`; ethereum `0x4c715f...031f70`; ethereum `0x545210...234670`; ethereum `0x5ecaed...f7617e`; ethereum `0x9bc6dc...646172`; ethereum `0xae566f...e5cf9d`; ethereum `0xf97964...8b718f` | ⚠️ Unaudited |
-| LitDepositorHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x4512c8...d373b5`; ethereum `0x97a258...0af08c` | ⚠️ Unaudited |
-| PooledOptionsExerciser | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x57956b...a042f0` | ⚠️ Unaudited |
-| PoolManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x61e69c...39ccb5` | ⚠️ Unaudited |
-| PoolManagerProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4335aa...4c0b0d` | ⚠️ Unaudited |
-| PrelaunchRewardsPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5c988c...2612fc` | ⚠️ Unaudited |
-| ProxyFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfa6c12...8f2f52` | ⚠️ Unaudited |
-| RewardFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x368dda...0f9a48` | ⚠️ Unaudited |
-| StashFactoryV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xba6909...43ce2d` | ⚠️ Unaudited |
-| TokenFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe9c04b...2072b6` | ⚠️ Unaudited |
-| VoterProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x37aeb3...e9278b` | ⚠️ Unaudited |
-| Vyper_contract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf17d23...e09660` | ⚠️ Unaudited |
-| WeightedPool2Tokens | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9232a5...93675c` | ⚠️ Unaudited |
+| BaseRewardPool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7ea6930a9487ce8d039f7cc89432435e6d5acb23` | ⚠️ Unaudited |
+| Booster | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x631e58246a88c3957763e1469cb52f93bc1ddcf2` | ⚠️ Unaudited |
+| BoosterHelper | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4ea2efb759591eec7f916f89547d339a69d171f4` | ⚠️ Unaudited |
+| BoosterOwner | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x948a608ff2198a4546abdbfadf43039a99c0a6cb` | ⚠️ Unaudited |
+| CrvDepositor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb96bce10480d2a8eb2995ee4f04a70d48997856a` | ⚠️ Unaudited |
+| cvxCrvToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x03c6f0ca0363652398abfb08d154f114e61c4ad8` | ⚠️ Unaudited |
+| EthInvestor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x81a663c4bdd4b5cb395e4025e464049470dd2b48` | ⚠️ Unaudited |
+| ExtraRewardStashV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x441745aec50db58a5bde1fef916d84771235aaf2` | ⚠️ Unaudited |
+| FlashOptionsExerciser | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x036c4567db47cd840de37e7e8658b0bb3ae95d40` | ⚠️ Unaudited |
+| LiqLocker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x748a0f458b9e71061ca0ac543b984473f203e1cb` | ⚠️ Unaudited |
+| LiqMinter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2e8617079e97ac78fce7a2a2ec7c4a84492b805e` | ⚠️ Unaudited |
+| LiqToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd82fd4d6d62f89a1e50b1db69ad19932314aa408` | ⚠️ Unaudited |
+| LiquisClaimZap | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xad161b8beb5bf2af9cda30e3988b13f62e70431b` | ⚠️ Unaudited |
+| LiquisViewHelpers | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd58dd6def2d0e8e16ffc537c7f269719e19b9fe4` | ⚠️ Unaudited |
+| LiqVestedEscrow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 7 deployments: ethereum `0x2f48cb0da01ba75e321c870fa77f19f285c69693`; ethereum `0x4c715f7ce87f4c09c438edabf357657623031f70`; ethereum `0x545210fac9ce6c9104fbfbf2ed429cc222234670`; ethereum `0x5ecaed31db3e1a20529b503de75b917e44f7617e`; ethereum `0x9bc6dcc2497f1feb7bc7d68ce658c2984c646172`; ethereum `0xae566f666617f7c788cc47ac51ccc3e43ae5cf9d`; ethereum `0xf97964749b52c55d64e971571e1370b2618b718f` | ⚠️ Unaudited |
+| LitDepositorHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x4512c81c2a88ea83539b535988cbe2f454d373b5`; ethereum `0x97a2585ddb121db8e9a3b6575e302f9c610af08c` | ⚠️ Unaudited |
+| PooledOptionsExerciser | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x57956b5ec3e7592f8785a96ba25763a6f2a042f0` | ⚠️ Unaudited |
+| PoolManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x61e69c64e8cdf804cf3e0be287969d272939ccb5` | ⚠️ Unaudited |
+| PoolManagerProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4335aa6fc488c474b02bf5302a7295740f4c0b0d` | ⚠️ Unaudited |
+| PrelaunchRewardsPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5c988c4e1f3cf1ca871a54af3a1dcb5fef2612fc` | ⚠️ Unaudited |
+| ProxyFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfa6c12e26c632b8aab52ce2bacaeb288f88f2f52` | ⚠️ Unaudited |
+| RewardFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x368dda6c8cce7283f4ee2577b8cbe454f40f9a48` | ⚠️ Unaudited |
+| StashFactoryV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xba6909be1df994cc158abda432db7fc25343ce2d` | ⚠️ Unaudited |
+| TokenFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe9c04b9a73a7c63b91de4051bc761bc3062072b6` | ⚠️ Unaudited |
+| VoterProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x37aeb332d6e57112f1bfe36923a7ee670ee9278b` | ⚠️ Unaudited |
+| Vyper_contract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf17d23136b4fead139f54fb766c8795faae09660` | ⚠️ Unaudited |
+| WeightedPool2Tokens | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9232a548dd9e81bac65500b5e0d918f8ba93675c` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

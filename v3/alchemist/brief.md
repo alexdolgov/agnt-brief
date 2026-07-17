@@ -90,20 +90,20 @@ The pinned logic-topography run contains 5 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Alchemist | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-226133 | `0x88acdd...ebb7ab` | ⚠️ Unaudited |
-| Aludel | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf0d415...6cb24d` | ⚠️ Unaudited |
-| Crucible | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-226131 | `0x18cc48...3a110f` | ⚠️ Unaudited |
-| CrucibleFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x54e039...273d56` | ⚠️ Unaudited |
-| EtherTulip | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd5fbd8...8ecc57` | ⚠️ Unaudited |
-| MerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x30642c...92f1ff` | ⚠️ Unaudited |
-| PowerSwitchFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-226134 | `0x89d2d9...64fc24` | ⚠️ Unaudited |
-| RewardPoolFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-226135 | `0xf016fa...d27ccf` | ⚠️ Unaudited |
-| StreamETH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe58a21...375c36` | ⚠️ Unaudited |
-| StreamV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x353420...8463ca` | ⚠️ Unaudited |
-| TokenManager | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-226132 | `0x1c428a...6d3562` | ⚠️ Unaudited |
-| TransmuterV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb772ce...ce456a` | ⚠️ Unaudited |
-| TulipBidding | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc11dbb...eb6e7c` | ⚠️ Unaudited |
-| TulipFloorBidding | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x40ab33...959eb6` | ⚠️ Unaudited |
+| Alchemist | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-226133 | `0x88acdd2a6425c3faae4bc9650fd7e27e0bebb7ab` | ⚠️ Unaudited |
+| Aludel | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf0d415189949d913264a454f57f4279ad66cb24d` | ⚠️ Unaudited |
+| Crucible | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-226131 | `0x18cc48140cfec90cef0035761d56d2d0ff3a110f` | ⚠️ Unaudited |
+| CrucibleFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x54e0395cfb4f39bef66dbcd5bd93cca4e9273d56` | ⚠️ Unaudited |
+| EtherTulip | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd5fbd81cef9aba7464c5f17e529444918a8ecc57` | ⚠️ Unaudited |
+| MerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x30642caaf2a2b3f7ef3e7e891d9132340a92f1ff` | ⚠️ Unaudited |
+| PowerSwitchFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-226134 | `0x89d2d92eace71977dd0b159062f8ec90ea64fc24` | ⚠️ Unaudited |
+| RewardPoolFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-226135 | `0xf016fa84d5f3a252409a63b5cb89b555a0d27ccf` | ⚠️ Unaudited |
+| StreamETH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe58a2119ac17610718430774db0182bd6b375c36` | ⚠️ Unaudited |
+| StreamV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x35342016abce65720024aaaa61b4f7a0dd8463ca` | ⚠️ Unaudited |
+| TokenManager | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-226132 | `0x1c428a75181bc25509af3a5b7faee97b4b6d3562` | ⚠️ Unaudited |
+| TransmuterV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb772ce9f14fc7c7db0d4525adb9349fbd7ce456a` | ⚠️ Unaudited |
+| TulipBidding | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc11dbb4dbc2913650000e2eab4a3db44d2eb6e7c` | ⚠️ Unaudited |
+| TulipFloorBidding | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x40ab332dd48f35ebd227708ef381c946c4959eb6` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

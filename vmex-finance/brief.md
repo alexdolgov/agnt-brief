@@ -61,7 +61,7 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| VMEXToken | token | optimism | n/a | [`0x6d2e5b...b93312`](./contracts/optimism-10/0x6d2e5b8841a6aa5f0f973436357f75d3eeb93312/) | ⚠️ Unaudited |
+| VMEXToken | token | optimism | n/a | [`0x6d2e5b8841a6aa5f0f973436357f75d3eeb93312`](./contracts/optimism-10/0x6d2e5b8841a6aa5f0f973436357f75d3eeb93312/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -81,8 +81,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | optimism | n/a | `0xaa1df2...dbca47` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0xb00fa0...0bb3d8` | ❓ Unverified |
+| UnnamedContract | unknown | optimism | n/a | `0xaa1df23be6c980b21a5570824191d18ccedbca47` | ❓ Unverified |
+| UnnamedContract | unknown | optimism | n/a | `0xb00fa0c62175f20b49d67f995c255b7bf40bb3d8` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -96,7 +96,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| optimism | [`0x6d2e5b...b93312`](./contracts/optimism-10/0x6d2e5b8841a6aa5f0f973436357f75d3eeb93312/) | VMEXToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | [`0x6d2e5b8841a6aa5f0f973436357f75d3eeb93312`](./contracts/optimism-10/0x6d2e5b8841a6aa5f0f973436357f75d3eeb93312/) | VMEXToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

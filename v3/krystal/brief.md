@@ -57,7 +57,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xed2bd1...8cd9cc`, chain 1)
+- UnnamedContract (`0xed2bd1832f9d2de4c0a675bf1d6671ada88cd9cc`, chain 1)
 
 ## Contract Surface Quality
 
@@ -103,17 +103,17 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| NFTDescriptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x42b24a...0a48ec` | ⚠️ Unaudited |
-| NonfungiblePositionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xc36442...11fe88` | ⚠️ Unaudited |
-| NonfungibleTokenPositionDescriptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x91ae84...9294f3` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0xb75354...e90cf2` | ⚠️ Unaudited |
-| Quoter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb27308...ce5ab6` | ⚠️ Unaudited |
-| QuoterV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x61ffe0...30b21e` | ⚠️ Unaudited |
-| SwapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xe59242...861564` | ⚠️ Unaudited |
-| SwapRouter02 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x075b36...aa8a60` | ⚠️ Unaudited |
-| TickLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbfd813...47f573` | ⚠️ Unaudited |
-| V3Migrator | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xa5644e...f92b34` | ⚠️ Unaudited |
-| VaultFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3a35f9...922cf3` | ⚠️ Unaudited |
+| NFTDescriptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x42b24a95702b9986e82d421cc3568932790a48ec` | ⚠️ Unaudited |
+| NonfungiblePositionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xc36442b4a4522e871399cd717abdd847ab11fe88` | ⚠️ Unaudited |
+| NonfungibleTokenPositionDescriptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x91ae842a5ffd8d12023116943e72a606179294f3` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0xb753548f6e010e7e680ba186f9ca1bdab2e90cf2` | ⚠️ Unaudited |
+| Quoter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb27308f9f90d607463bb33ea1bebb41c27ce5ab6` | ⚠️ Unaudited |
+| QuoterV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x61ffe014ba17989e743c5f6cb21bf9697530b21e` | ⚠️ Unaudited |
+| SwapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xe592427a0aece92de3edee1f18e0157c05861564` | ⚠️ Unaudited |
+| SwapRouter02 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x075b36de1bd11cb361c5b3b1e80a9ab0e7aa8a60` | ⚠️ Unaudited |
+| TickLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbfd8137f7d1516d3ea5ca83523914859ec47f573` | ⚠️ Unaudited |
+| V3Migrator | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xa5644e29708357803b5a882d272c41cc0df92b34` | ⚠️ Unaudited |
+| VaultFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3a35f9fef2ba83702b6e20d79fff96f77c922cf3` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -133,7 +133,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-244430 | `0xed2bd1...8cd9cc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-244430 | `0xed2bd1832f9d2de4c0a675bf1d6671ada88cd9cc` | ❓ Unverified |
 
 ## Audit Inventory
 

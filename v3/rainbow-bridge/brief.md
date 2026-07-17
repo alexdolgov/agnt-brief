@@ -52,11 +52,11 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xe00c62...4c85b9`, chain 1)
-- UnnamedContract (`0x073c8a...7f5720`, chain 56)
-- UnnamedContract (`0xd025b3...00d989`, chain 137)
-- UnnamedContract (`0xd025b3...00d989`, chain 8453)
-- UnnamedContract (`0xd025b3...00d989`, chain 42161)
+- UnnamedContract (`0xe00c629afaccb0510995a2b95560e446a24c85b9`, chain 1)
+- UnnamedContract (`0x073c8a225c8cf9d3f9157f5c1a1dbe02407f5720`, chain 56)
+- UnnamedContract (`0xd025b38762b4a4e36f0cde483b86cb13ea00d989`, chain 137)
+- UnnamedContract (`0xd025b38762b4a4e36f0cde483b86cb13ea00d989`, chain 8453)
+- UnnamedContract (`0xd025b38762b4a4e36f0cde483b86cb13ea00d989`, chain 42161)
 
 ## Contract Surface Quality
 
@@ -102,10 +102,10 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| eNear | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x85f17c...b9f6a4` | ⚠️ Unaudited |
-| ERC20Locker | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x23ddd3...9e127f` | ⚠️ Unaudited |
-| EthCustodian | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6bfad4...89fa52` | ⚠️ Unaudited |
-| NearBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x015156...efc362` | ⚠️ Unaudited |
+| eNear | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x85f17cf997934a597031b2e18a9ab6ebd4b9f6a4` | ⚠️ Unaudited |
+| ERC20Locker | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x23ddd3e3692d1861ed57ede224608875809e127f` | ⚠️ Unaudited |
+| EthCustodian | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6bfad42cfc4efc96f529d786d643ff4a8b89fa52` | ⚠️ Unaudited |
+| NearBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0151568af92125fb289f1dd81d9d8f7484efc362` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -125,15 +125,15 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391277 | `0xe00c62...4c85b9` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391285 | `0x073c8a...7f5720` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-391283 | `0xd025b3...00d989` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-391287 | `0xd025b3...00d989` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-391284 | `0xd025b3...00d989` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-amoy | unit-391286 | `0xec81af...0b283a` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-391278 | `0x0c9813...f33ffa` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-391279 | `0x3701b9...ddf2c8` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-391280 | `0x68a86e...fe4401` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391277 | `0xe00c629afaccb0510995a2b95560e446a24c85b9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391285 | `0x073c8a225c8cf9d3f9157f5c1a1dbe02407f5720` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-391283 | `0xd025b38762b4a4e36f0cde483b86cb13ea00d989` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-391287 | `0xd025b38762b4a4e36f0cde483b86cb13ea00d989` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-391284 | `0xd025b38762b4a4e36f0cde483b86cb13ea00d989` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-amoy | unit-391286 | `0xec81afc3485a425347ac03316675e58a680b283a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-391278 | `0x0c981337ffe39a555d3a40dbb32f21ad0ef33ffa` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-391279 | `0x3701b9859dbb9a4333a3dd933ab18e9011ddf2c8` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-391280 | `0x68a86e0ea5b1d39f385c1326e4d493526dfe4401` | ❓ Unverified |
 
 ## Audit Inventory
 

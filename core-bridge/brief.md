@@ -61,7 +61,7 @@ The protocol comprises 2 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| OriginalTokenBridge | operational_periphery | arbitrum | n/a | 4 deployments: ethereum `0x52e75d...55b233`; polygon `0x52e75d...55b233`; base `0x84fb20...507879`; arbitrum [`0x29d096...04031a`](./contracts/arbitrum-42161/0x29d096cd18c0da7500295f082da73316d704031a/) | ⚠️ Unaudited |
+| OriginalTokenBridge | operational_periphery | arbitrum | n/a | 4 deployments: ethereum `0x52e75d318cfb31f9a2edfa2dfee26b161255b233`; polygon `0x52e75d318cfb31f9a2edfa2dfee26b161255b233`; base `0x84fb2086fed7b3c9b3a4bc559f60ffaa91507879`; arbitrum [`0x29d096cd18c0da7500295f082da73316d704031a`](./contracts/arbitrum-42161/0x29d096cd18c0da7500295f082da73316d704031a/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -81,8 +81,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | optimism | n/a | `0x29d096...04031a` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x29d096...04031a` | ❓ Unverified |
+| UnnamedContract | unknown | optimism | n/a | `0x29d096cd18c0da7500295f082da73316d704031a` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x29d096cd18c0da7500295f082da73316d704031a` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -95,7 +95,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | [`0x29d096...04031a`](./contracts/arbitrum-42161/0x29d096cd18c0da7500295f082da73316d704031a/) | OriginalTokenBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x29d096cd18c0da7500295f082da73316d704031a`](./contracts/arbitrum-42161/0x29d096cd18c0da7500295f082da73316d704031a/) | OriginalTokenBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

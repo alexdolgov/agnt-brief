@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xa0d0d9...eab54b`, chain 42161)
+- UnnamedContract (`0xa0d0d9780771ff59c0b2df6e6e7247bb3feab54b`, chain 42161)
 
 ## Contract Surface Quality
 
@@ -103,7 +103,7 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | token | project_anchor | own_supporting | 0 | arbitrum | unit-381742 | `0xa0d0d9...eab54b` | ⚠️ Unaudited |
+| UnnamedContract | token | project_anchor | own_supporting | 0 | arbitrum | unit-381742 | `0xa0d0d9780771ff59c0b2df6e6e7247bb3feab54b` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

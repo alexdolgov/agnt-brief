@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- LiquidityPool (`0x2506cb...cf4d81`, chain 1)
+- LiquidityPool (`0x2506cb864df6336d93a87c4af2b644fd61cf4d81`, chain 1)
 
 ## Contract Surface Quality
 
@@ -103,7 +103,7 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| LiquidityPool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392382 | `0x2506cb...cf4d81` | ⚠️ Unaudited |
+| LiquidityPool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392382 | `0x2506cb864df6336d93a87c4af2b644fd61cf4d81` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -140,7 +140,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x2506cb...cf4d81` | LiquidityPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x2506cb864df6336d93a87c4af2b644fd61cf4d81` | LiquidityPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

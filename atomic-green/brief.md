@@ -60,8 +60,8 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ProxyAdmin | unknown | arbitrum | n/a | [`0x2e89b1...570f04`](./contracts/arbitrum-42161/0x2e89b1b811feced5f3ad7bf39c9f7cd7b2570f04/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | [`0x1947eb...37ee3e`](./contracts/arbitrum-42161/0x1947eb44875219c8e1b0d269a1893e086737ee3e/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | arbitrum | n/a | [`0x2e89b1b811feced5f3ad7bf39c9f7cd7b2570f04`](./contracts/arbitrum-42161/0x2e89b1b811feced5f3ad7bf39c9f7cd7b2570f04/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | [`0x1947eb44875219c8e1b0d269a1893e086737ee3e`](./contracts/arbitrum-42161/0x1947eb44875219c8e1b0d269a1893e086737ee3e/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

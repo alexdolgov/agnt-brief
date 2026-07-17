@@ -58,15 +58,15 @@ The protocol forms a single structural family (Core Logic) of 7 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| DexillaExchangeV4 | unknown | optimism | n/a | 2 deployments: optimism [`0x44f1c3...25ce84`](./contracts/optimism-10/0x44f1c33ed3bf77a5883cbece1c1b34e71425ce84/); optimism `0xb0be48...57e959` | ✅ Audited |
+| DexillaExchangeV4 | unknown | optimism | n/a | 2 deployments: optimism [`0x44f1c33ed3bf77a5883cbece1c1b34e71425ce84`](./contracts/optimism-10/0x44f1c33ed3bf77a5883cbece1c1b34e71425ce84/); optimism `0xb0be48f722a8ad727b99064ee18b715e9757e959` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| DexillaExchangeV3 | unknown | optimism | n/a | 2 deployments: optimism [`0x68d054...ff2bd9`](./contracts/optimism-10/0x68d05405472c4f0c254a47922dba9dbc4cff2bd9/); optimism `0x8f1f67...3e6e50` | ⚠️ Unaudited |
-| DexillaExchangeV5 | unknown | optimism | n/a | 2 deployments: optimism [`0x6f1d07...86884a`](./contracts/optimism-10/0x6f1d074bf170fcdde7712bb8da4c70c5be86884a/); arbitrum `0xb56f90...2d6600` | ⚠️ Unaudited |
-| FeeCollector | unknown | optimism | n/a | 3 deployments: optimism [`0x50f3ba...d3ca6e`](./contracts/optimism-10/0x50f3ba8a9e0306e545b04186a60b722516d3ca6e/); optimism `0x6a5d7c...aa35e2`; optimism `0x982d56...45dce3` | ⚠️ Unaudited |
+| DexillaExchangeV3 | unknown | optimism | n/a | 2 deployments: optimism [`0x68d05405472c4f0c254a47922dba9dbc4cff2bd9`](./contracts/optimism-10/0x68d05405472c4f0c254a47922dba9dbc4cff2bd9/); optimism `0x8f1f6751236855391bbbedbf4bf5ad7e383e6e50` | ⚠️ Unaudited |
+| DexillaExchangeV5 | unknown | optimism | n/a | 2 deployments: optimism [`0x6f1d074bf170fcdde7712bb8da4c70c5be86884a`](./contracts/optimism-10/0x6f1d074bf170fcdde7712bb8da4c70c5be86884a/); arbitrum `0xb56f90d3038aad5b5e8de9be3008c7ccea2d6600` | ⚠️ Unaudited |
+| FeeCollector | unknown | optimism | n/a | 3 deployments: optimism [`0x50f3ba8a9e0306e545b04186a60b722516d3ca6e`](./contracts/optimism-10/0x50f3ba8a9e0306e545b04186a60b722516d3ca6e/); optimism `0x6a5d7cca028798c224c570fc481b161230aa35e2`; optimism `0x982d56d551517175a8031f5399c8a56ff345dce3` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -86,8 +86,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | optimism | n/a | `0x231757...40ceef` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0xe9e8aa...9cbd07` | ❓ Unverified |
+| UnnamedContract | unknown | optimism | n/a | `0x231757c3325156cdadf659cda2ca9f86d740ceef` | ❓ Unverified |
+| UnnamedContract | unknown | optimism | n/a | `0xe9e8aa9715072a102d118230b53cbc06659cbd07` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -101,9 +101,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| optimism | [`0x68d054...ff2bd9`](./contracts/optimism-10/0x68d05405472c4f0c254a47922dba9dbc4cff2bd9/) | DexillaExchangeV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x6f1d07...86884a`](./contracts/optimism-10/0x6f1d074bf170fcdde7712bb8da4c70c5be86884a/) | DexillaExchangeV5 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x50f3ba...d3ca6e`](./contracts/optimism-10/0x50f3ba8a9e0306e545b04186a60b722516d3ca6e/) | FeeCollector | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | [`0x68d05405472c4f0c254a47922dba9dbc4cff2bd9`](./contracts/optimism-10/0x68d05405472c4f0c254a47922dba9dbc4cff2bd9/) | DexillaExchangeV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | [`0x6f1d074bf170fcdde7712bb8da4c70c5be86884a`](./contracts/optimism-10/0x6f1d074bf170fcdde7712bb8da4c70c5be86884a/) | DexillaExchangeV5 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | [`0x50f3ba8a9e0306e545b04186a60b722516d3ca6e`](./contracts/optimism-10/0x50f3ba8a9e0306e545b04186a60b722516d3ca6e/) | FeeCollector | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

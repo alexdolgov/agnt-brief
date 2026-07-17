@@ -60,9 +60,9 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| basedAI | unknown | ethereum | n/a | [`0x44971a...8b9185`](./contracts/ethereum-1/0x44971abf0251958492fee97da3e5c5ada88b9185/) | ⚠️ Unaudited |
-| basedAIFarm | unknown | ethereum | n/a | [`0xa6b816...422e14`](./contracts/ethereum-1/0xa6b816010ab51e088c4f19c71aba87e54b422e14/) | ⚠️ Unaudited |
-| pepeCoin | unknown | ethereum | n/a | [`0xa9e8ac...a9489a`](./contracts/ethereum-1/0xa9e8acf069c58aec8825542845fd754e41a9489a/) | ⚠️ Unaudited |
+| basedAI | unknown | ethereum | n/a | [`0x44971abf0251958492fee97da3e5c5ada88b9185`](./contracts/ethereum-1/0x44971abf0251958492fee97da3e5c5ada88b9185/) | ⚠️ Unaudited |
+| basedAIFarm | unknown | ethereum | n/a | [`0xa6b816010ab51e088c4f19c71aba87e54b422e14`](./contracts/ethereum-1/0xa6b816010ab51e088c4f19c71aba87e54b422e14/) | ⚠️ Unaudited |
+| pepeCoin | unknown | ethereum | n/a | [`0xa9e8acf069c58aec8825542845fd754e41a9489a`](./contracts/ethereum-1/0xa9e8acf069c58aec8825542845fd754e41a9489a/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,9 +93,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x44971a...8b9185`](./contracts/ethereum-1/0x44971abf0251958492fee97da3e5c5ada88b9185/) | basedAI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa6b816...422e14`](./contracts/ethereum-1/0xa6b816010ab51e088c4f19c71aba87e54b422e14/) | basedAIFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa9e8ac...a9489a`](./contracts/ethereum-1/0xa9e8acf069c58aec8825542845fd754e41a9489a/) | pepeCoin | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x44971abf0251958492fee97da3e5c5ada88b9185`](./contracts/ethereum-1/0x44971abf0251958492fee97da3e5c5ada88b9185/) | basedAI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa6b816010ab51e088c4f19c71aba87e54b422e14`](./contracts/ethereum-1/0xa6b816010ab51e088c4f19c71aba87e54b422e14/) | basedAIFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa9e8acf069c58aec8825542845fd754e41a9489a`](./contracts/ethereum-1/0xa9e8acf069c58aec8825542845fd754e41a9489a/) | pepeCoin | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

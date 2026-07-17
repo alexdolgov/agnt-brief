@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xe50365...1bcddf`, chain 1)
+- UnnamedContract (`0xe50365f5d679cb98a1dd62d6f6e58e59321bcddf`, chain 1)
 
 ## Contract Surface Quality
 
@@ -103,7 +103,7 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | token | project_anchor | own_supporting | 0 | ethereum | unit-388377 | `0xe50365...1bcddf` | ⚠️ Unaudited |
+| UnnamedContract | token | project_anchor | own_supporting | 0 | ethereum | unit-388377 | `0xe50365f5d679cb98a1dd62d6f6e58e59321bcddf` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

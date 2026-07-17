@@ -58,15 +58,15 @@ The protocol comprises 2 functional families. Its contracts share 5 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| SettingsManager | unknown | arbitrum | n/a | [`0xa666f1...a5a9ae`](./contracts/arbitrum-42161/0xa666f14d3cd15f6c9bebfd875bb90498aea5a9ae/) | ✅ Audited |
-| Vault | unknown | arbitrum | n/a | [`0x19a85b...83bf25`](./contracts/arbitrum-42161/0x19a85b30bdcba70ba331504dfe3c7ca12b83bf25/) | ✅ Audited |
+| SettingsManager | unknown | arbitrum | n/a | [`0xa666f14d3cd15f6c9bebfd875bb90498aea5a9ae`](./contracts/arbitrum-42161/0xa666f14d3cd15f6c9bebfd875bb90498aea5a9ae/) | ✅ Audited |
+| Vault | unknown | arbitrum | n/a | [`0x19a85b30bdcba70ba331504dfe3c7ca12b83bf25`](./contracts/arbitrum-42161/0x19a85b30bdcba70ba331504dfe3c7ca12b83bf25/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ROSX | unknown | arbitrum | n/a | [`0xdc8184...3b4179`](./contracts/arbitrum-42161/0xdc8184ba488e949815d4aafb35b3c56ad03b4179/) | ⚠️ Unaudited |
-| StakingDualTokenV2 | token | arbitrum | n/a | [`0x42fa47...3dd49a`](./contracts/arbitrum-42161/0x42fa477a24d5471a24b798d5b4d9ec3a2c3dd49a/) | ⚠️ Unaudited |
+| ROSX | unknown | arbitrum | n/a | [`0xdc8184ba488e949815d4aafb35b3c56ad03b4179`](./contracts/arbitrum-42161/0xdc8184ba488e949815d4aafb35b3c56ad03b4179/) | ⚠️ Unaudited |
+| StakingDualTokenV2 | token | arbitrum | n/a | [`0x42fa477a24d5471a24b798d5b4d9ec3a2c3dd49a`](./contracts/arbitrum-42161/0x42fa477a24d5471a24b798d5b4d9ec3a2c3dd49a/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -98,8 +98,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | [`0xdc8184...3b4179`](./contracts/arbitrum-42161/0xdc8184ba488e949815d4aafb35b3c56ad03b4179/) | ROSX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x42fa47...3dd49a`](./contracts/arbitrum-42161/0x42fa477a24d5471a24b798d5b4d9ec3a2c3dd49a/) | StakingDualTokenV2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xdc8184ba488e949815d4aafb35b3c56ad03b4179`](./contracts/arbitrum-42161/0xdc8184ba488e949815d4aafb35b3c56ad03b4179/) | ROSX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x42fa477a24d5471a24b798d5b4d9ec3a2c3dd49a`](./contracts/arbitrum-42161/0x42fa477a24d5471a24b798d5b4d9ec3a2c3dd49a/) | StakingDualTokenV2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

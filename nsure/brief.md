@@ -60,20 +60,20 @@ The protocol forms a single structural family (Core Logic) of 9 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Buy | unknown | ethereum | n/a | [`0x702aff...7b4477`](./contracts/ethereum-1/0x702aff99b08e8891fc70811174701fb7407b4477/) | ✅ Audited |
-| CapitalConverter | unknown | ethereum | n/a | [`0xa6b658...cafb84`](./contracts/ethereum-1/0xa6b658ce4b1cdb4e7d8f97dffb549b8688cafb84/) | ✅ Audited |
-| CapitalStake | unknown | ethereum | n/a | [`0xb98ed9...eff6a6`](./contracts/ethereum-1/0xb98ed9800fcd2982d26cf0e4a6b53c96bbeff6a6/) | ✅ Audited |
-| ClaimPurchaseMint | unknown | ethereum | n/a | [`0x200db9...995b26`](./contracts/ethereum-1/0x200db99fe5c0f39688853d4c4d8651648d995b26/) | ✅ Audited |
-| Product | unknown | ethereum | n/a | [`0x06e76c...3141a8`](./contracts/ethereum-1/0x06e76c5c53775681f0626600d6266901a03141a8/) | ✅ Audited |
-| Surplus | unknown | ethereum | n/a | [`0x80e711...25593c`](./contracts/ethereum-1/0x80e711b29e46d430ff1553eb2ada670e2a25593c/) | ✅ Audited |
-| Treasury | unknown | ethereum | n/a | [`0xfd0d28...969440`](./contracts/ethereum-1/0xfd0d28539aed12477dcba1575eb40fca53969440/) | ✅ Audited |
+| Buy | unknown | ethereum | n/a | [`0x702aff99b08e8891fc70811174701fb7407b4477`](./contracts/ethereum-1/0x702aff99b08e8891fc70811174701fb7407b4477/) | ✅ Audited |
+| CapitalConverter | unknown | ethereum | n/a | [`0xa6b658ce4b1cdb4e7d8f97dffb549b8688cafb84`](./contracts/ethereum-1/0xa6b658ce4b1cdb4e7d8f97dffb549b8688cafb84/) | ✅ Audited |
+| CapitalStake | unknown | ethereum | n/a | [`0xb98ed9800fcd2982d26cf0e4a6b53c96bbeff6a6`](./contracts/ethereum-1/0xb98ed9800fcd2982d26cf0e4a6b53c96bbeff6a6/) | ✅ Audited |
+| ClaimPurchaseMint | unknown | ethereum | n/a | [`0x200db99fe5c0f39688853d4c4d8651648d995b26`](./contracts/ethereum-1/0x200db99fe5c0f39688853d4c4d8651648d995b26/) | ✅ Audited |
+| Product | unknown | ethereum | n/a | [`0x06e76c5c53775681f0626600d6266901a03141a8`](./contracts/ethereum-1/0x06e76c5c53775681f0626600d6266901a03141a8/) | ✅ Audited |
+| Surplus | unknown | ethereum | n/a | [`0x80e711b29e46d430ff1553eb2ada670e2a25593c`](./contracts/ethereum-1/0x80e711b29e46d430ff1553eb2ada670e2a25593c/) | ✅ Audited |
+| Treasury | unknown | ethereum | n/a | [`0xfd0d28539aed12477dcba1575eb40fca53969440`](./contracts/ethereum-1/0xfd0d28539aed12477dcba1575eb40fca53969440/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Nsure | unknown | ethereum | n/a | [`0x20945c...cd2114`](./contracts/ethereum-1/0x20945ca1df56d237fd40036d47e866c7dccd2114/) | ⚠️ Unaudited |
-| Underwriting | unknown | ethereum | n/a | [`0x1a66f0...e9c966`](./contracts/ethereum-1/0x1a66f065303299d78693f122c800ab3debe9c966/) | ⚠️ Unaudited |
+| Nsure | unknown | ethereum | n/a | [`0x20945ca1df56d237fd40036d47e866c7dccd2114`](./contracts/ethereum-1/0x20945ca1df56d237fd40036d47e866c7dccd2114/) | ⚠️ Unaudited |
+| Underwriting | unknown | ethereum | n/a | [`0x1a66f065303299d78693f122c800ab3debe9c966`](./contracts/ethereum-1/0x1a66f065303299d78693f122c800ab3debe9c966/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -106,8 +106,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x20945c...cd2114`](./contracts/ethereum-1/0x20945ca1df56d237fd40036d47e866c7dccd2114/) | Nsure | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1a66f0...e9c966`](./contracts/ethereum-1/0x1a66f065303299d78693f122c800ab3debe9c966/) | Underwriting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x20945ca1df56d237fd40036d47e866c7dccd2114`](./contracts/ethereum-1/0x20945ca1df56d237fd40036d47e866c7dccd2114/) | Nsure | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1a66f065303299d78693f122c800ab3debe9c966`](./contracts/ethereum-1/0x1a66f065303299d78693f122c800ab3debe9c966/) | Underwriting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

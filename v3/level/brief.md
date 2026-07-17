@@ -52,33 +52,33 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- AaveV3YieldManager (`0x9df568...60c96c`, chain 1)
-- BoringVault (`0x834d9c...9a0446`, chain 1)
-- EigenlayerReserveManager (`0x7b2c2c...aa6f14`, chain 1)
-- ERC1967Proxy (`0x297599...e2cbad`, chain 1)
-- ERC1967Proxy (`0x5f4324...074e25`, chain 1)
-- ERC1967Proxy (`0x9136ab...6d09e1`, chain 1)
-- ERC1967Proxy (`0xbd05b8...45e0da`, chain 1)
-- GnosisSafeProxy (`0x343acc...6e91dc`, chain 1)
-- KarakReserveManager (`0x329f91...2d3151`, chain 1)
-- LevelMinting (`0x8e7046...68a41f`, chain 1)
-- LevelReserveLensMorphoOracle (`0x625bb4...387903`, chain 1)
-- LevelStakingPool (`0x7fda20...d61497`, chain 1)
-- LevelUsdPointsFarm (`0x80b73e...59c00f`, chain 1)
-- lvlUSD (`0x7c1156...5aaf37`, chain 1)
-- MyOFT (`0x2d175c...5c66e8`, chain 8453)
-- MyOFT (`0xa8cf99...48adde`, chain 8453)
-- MyOFTAdapter (`0x180fcf...902fcd`, chain 1)
-- MyOFTAdapter (`0x2f12d0...f0cbfa`, chain 1)
-- PauserGuard (`0x9f3328...c0b6f9`, chain 1)
-- SafeProxy (`0xcea14c...0f7a21`, chain 1)
-- SafeProxy (`0xdf95bb...6e181e`, chain 1)
-- StakedlvlUSD (`0x4737d9...4067ae`, chain 1)
-- StrictRolesAuthority (`0xc8425a...40098a`, chain 1)
-- SymbioticReserveManager (`0x21c937...68932d`, chain 1)
-- TimelockController (`0x079888...19d086`, chain 1)
-- WrappedRebasingERC20 (`0x78c6b2...1f5e33`, chain 1)
-- WrappedRebasingERC20 (`0xb72337...75a5f2`, chain 1)
+- AaveV3YieldManager (`0x9df5680d8dc866ad154dc07a7dc1c418dc60c96c`, chain 1)
+- BoringVault (`0x834d9c7688ca1c10479931de906bcc44879a0446`, chain 1)
+- EigenlayerReserveManager (`0x7b2c2c905184cef1fabe920d4cbea525acaa6f14`, chain 1)
+- ERC1967Proxy (`0x29759944834e08ace755dcea71491413f7e2cbad`, chain 1)
+- ERC1967Proxy (`0x5f432430c515964c299bb4f277cdab0fcc074e25`, chain 1)
+- ERC1967Proxy (`0x9136ab0294986267b71beed86a75eeb3336d09e1`, chain 1)
+- ERC1967Proxy (`0xbd05b8b22fe4ccf093a6206c63cc39f02345e0da`, chain 1)
+- GnosisSafeProxy (`0x343acce723339d5a417411d8ff57fde8886e91dc`, chain 1)
+- KarakReserveManager (`0x329f91fe82c1799c3e089fabe9d3a7efdc2d3151`, chain 1)
+- LevelMinting (`0x8e7046e27d14d09bdacde9260ff7c8c2be68a41f`, chain 1)
+- LevelReserveLensMorphoOracle (`0x625bb4f5133ff9f6d43e21f15add35be46387903`, chain 1)
+- LevelStakingPool (`0x7fda203f6f77545548e984133be62693bcd61497`, chain 1)
+- LevelUsdPointsFarm (`0x80b73ef4534fe245300017a5197451973559c00f`, chain 1)
+- lvlUSD (`0x7c1156e515aa1a2e851674120074968c905aaf37`, chain 1)
+- MyOFT (`0x2d175c43c58e57cceb38b9bd204ee73db25c66e8`, chain 8453)
+- MyOFT (`0xa8cf99f2572500a9df5cd794c0e24f132448adde`, chain 8453)
+- MyOFTAdapter (`0x180fcf9c9f5ecb75de90395d54cd7c69b3902fcd`, chain 1)
+- MyOFTAdapter (`0x2f12d09333a6be8cc7c2d3e11a83def02cf0cbfa`, chain 1)
+- PauserGuard (`0x9f3328e60cb9418dbde038b54d588dfea2c0b6f9`, chain 1)
+- SafeProxy (`0xcea14c3e9afc5822d44ade8d006fcfbab60f7a21`, chain 1)
+- SafeProxy (`0xdf95bb71581b224bd42eb19ceaff5e92816e181e`, chain 1)
+- StakedlvlUSD (`0x4737d9b4592b40d51e110b94c9c043c6654067ae`, chain 1)
+- StrictRolesAuthority (`0xc8425ace617aca1ddcb09cb7784b67403440098a`, chain 1)
+- SymbioticReserveManager (`0x21c937d436f2d86859ce60311290a8072368932d`, chain 1)
+- TimelockController (`0x0798880e772009ddf6ef062f2ef32c738119d086`, chain 1)
+- WrappedRebasingERC20 (`0x78c6b27be6db520d332b1b44323f94bc831f5e33`, chain 1)
+- WrappedRebasingERC20 (`0xb723377679b807370ae8615ae3e76f6d1e75a5f2`, chain 1)
 
 ## Contract Surface Quality
 
@@ -124,32 +124,32 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AaveV3YieldManager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388495 | `0x9df568...60c96c` | ⚠️ Unaudited |
-| BoringVault | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388493 | `0x834d9c...9a0446` | ⚠️ Unaudited |
-| EigenlayerReserveManager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388489 | `0x7b2c2c...aa6f14` | ⚠️ Unaudited |
-| GnosisSafe | unknown | project_anchor | own_supporting | 1 | ethereum | unit-388505 | `0x343acc...6e91dc` | ⚠️ Unaudited |
-| KarakReserveManager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388485 | `0x329f91...2d3151` | ⚠️ Unaudited |
-| LevelMinting | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388494 | `0x8e7046...68a41f` | ⚠️ Unaudited |
-| LevelMintingV2 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-388503 | `0x9136ab...6d09e1` | ⚠️ Unaudited |
-| LevelReserveLens | unknown | project_anchor | own_supporting | 1 | ethereum | unit-388506 | `0x297599...e2cbad` | ⚠️ Unaudited |
-| LevelReserveLensMorphoOracle | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388487 | `0x625bb4...387903` | ⚠️ Unaudited |
-| LevelStakingPool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388491 | `0x7fda20...d61497` | ⚠️ Unaudited |
-| LevelUsdPointsFarm | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388492 | `0x80b73e...59c00f` | ⚠️ Unaudited |
-| lvlUSD | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388490 | `0x7c1156...5aaf37` | ⚠️ Unaudited |
-| MyOFT | unknown | project_anchor | own_supporting | 0 | base | unit-388499 | `0x2d175c...5c66e8` | ⚠️ Unaudited |
-| MyOFT | unknown | project_anchor | own_supporting | 0 | base | unit-388500 | `0xa8cf99...48adde` | ⚠️ Unaudited |
-| MyOFTAdapter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388482 | `0x180fcf...902fcd` | ⚠️ Unaudited |
-| MyOFTAdapter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388484 | `0x2f12d0...f0cbfa` | ⚠️ Unaudited |
-| PauserGuard | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388496 | `0x9f3328...c0b6f9` | ⚠️ Unaudited |
-| RewardsManager | unknown | project_anchor | own_supporting | 1 | ethereum | unit-388502 | `0xbd05b8...45e0da` | ⚠️ Unaudited |
-| Safe | unknown | project_anchor | own_supporting | 2 | ethereum | unit-388501 (2 proxies) | 2 deployments: ethereum `0xcea14c...0f7a21`; ethereum `0xdf95bb...6e181e` | ⚠️ Unaudited |
-| StakedlvlUSD | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388486 | `0x4737d9...4067ae` | ⚠️ Unaudited |
-| StrictRolesAuthority | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388498 | `0xc8425a...40098a` | ⚠️ Unaudited |
-| SymbioticReserveManager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388483 | `0x21c937...68932d` | ⚠️ Unaudited |
-| TimelockController | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388481 | `0x079888...19d086` | ⚠️ Unaudited |
-| VaultManager | unknown | project_anchor | own_supporting | 1 | ethereum | unit-388504 | `0x5f4324...074e25` | ⚠️ Unaudited |
-| WrappedRebasingERC20 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388488 | `0x78c6b2...1f5e33` | ⚠️ Unaudited |
-| WrappedRebasingERC20 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388497 | `0xb72337...75a5f2` | ⚠️ Unaudited |
+| AaveV3YieldManager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388495 | `0x9df5680d8dc866ad154dc07a7dc1c418dc60c96c` | ⚠️ Unaudited |
+| BoringVault | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388493 | `0x834d9c7688ca1c10479931de906bcc44879a0446` | ⚠️ Unaudited |
+| EigenlayerReserveManager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388489 | `0x7b2c2c905184cef1fabe920d4cbea525acaa6f14` | ⚠️ Unaudited |
+| GnosisSafe | unknown | project_anchor | own_supporting | 1 | ethereum | unit-388505 | `0x343acce723339d5a417411d8ff57fde8886e91dc` | ⚠️ Unaudited |
+| KarakReserveManager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388485 | `0x329f91fe82c1799c3e089fabe9d3a7efdc2d3151` | ⚠️ Unaudited |
+| LevelMinting | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388494 | `0x8e7046e27d14d09bdacde9260ff7c8c2be68a41f` | ⚠️ Unaudited |
+| LevelMintingV2 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-388503 | `0x9136ab0294986267b71beed86a75eeb3336d09e1` | ⚠️ Unaudited |
+| LevelReserveLens | unknown | project_anchor | own_supporting | 1 | ethereum | unit-388506 | `0x29759944834e08ace755dcea71491413f7e2cbad` | ⚠️ Unaudited |
+| LevelReserveLensMorphoOracle | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388487 | `0x625bb4f5133ff9f6d43e21f15add35be46387903` | ⚠️ Unaudited |
+| LevelStakingPool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388491 | `0x7fda203f6f77545548e984133be62693bcd61497` | ⚠️ Unaudited |
+| LevelUsdPointsFarm | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388492 | `0x80b73ef4534fe245300017a5197451973559c00f` | ⚠️ Unaudited |
+| lvlUSD | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388490 | `0x7c1156e515aa1a2e851674120074968c905aaf37` | ⚠️ Unaudited |
+| MyOFT | unknown | project_anchor | own_supporting | 0 | base | unit-388499 | `0x2d175c43c58e57cceb38b9bd204ee73db25c66e8` | ⚠️ Unaudited |
+| MyOFT | unknown | project_anchor | own_supporting | 0 | base | unit-388500 | `0xa8cf99f2572500a9df5cd794c0e24f132448adde` | ⚠️ Unaudited |
+| MyOFTAdapter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388482 | `0x180fcf9c9f5ecb75de90395d54cd7c69b3902fcd` | ⚠️ Unaudited |
+| MyOFTAdapter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388484 | `0x2f12d09333a6be8cc7c2d3e11a83def02cf0cbfa` | ⚠️ Unaudited |
+| PauserGuard | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388496 | `0x9f3328e60cb9418dbde038b54d588dfea2c0b6f9` | ⚠️ Unaudited |
+| RewardsManager | unknown | project_anchor | own_supporting | 1 | ethereum | unit-388502 | `0xbd05b8b22fe4ccf093a6206c63cc39f02345e0da` | ⚠️ Unaudited |
+| Safe | unknown | project_anchor | own_supporting | 2 | ethereum | unit-388501 (2 proxies) | 2 deployments: ethereum `0xcea14c3e9afc5822d44ade8d006fcfbab60f7a21`; ethereum `0xdf95bb71581b224bd42eb19ceaff5e92816e181e` | ⚠️ Unaudited |
+| StakedlvlUSD | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388486 | `0x4737d9b4592b40d51e110b94c9c043c6654067ae` | ⚠️ Unaudited |
+| StrictRolesAuthority | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388498 | `0xc8425ace617aca1ddcb09cb7784b67403440098a` | ⚠️ Unaudited |
+| SymbioticReserveManager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388483 | `0x21c937d436f2d86859ce60311290a8072368932d` | ⚠️ Unaudited |
+| TimelockController | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388481 | `0x0798880e772009ddf6ef062f2ef32c738119d086` | ⚠️ Unaudited |
+| VaultManager | unknown | project_anchor | own_supporting | 1 | ethereum | unit-388504 | `0x5f432430c515964c299bb4f277cdab0fcc074e25` | ⚠️ Unaudited |
+| WrappedRebasingERC20 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388488 | `0x78c6b27be6db520d332b1b44323f94bc831f5e33` | ⚠️ Unaudited |
+| WrappedRebasingERC20 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388497 | `0xb723377679b807370ae8615ae3e76f6d1e75a5f2` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

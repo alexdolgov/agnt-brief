@@ -90,7 +90,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ERC20_Bridged | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x6e9070...3b74a9`; base `0xe4b209...804dd4` | ⚠️ Unaudited |
+| ERC20_Bridged | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x6e9070b8a8dbbc6cad6b6d029a5c6f6a653b74a9`; base `0xe4b20925d9e9a62f1e492e15a81dc0de62804dd4` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -110,16 +110,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Proxy (impl: 0x5d964ec530f989de6128efa22837cfb26095cbfd) | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x4f7ab5...e5e08b`; base `0x5d964e...95cbfd` | ❓ Unverified |
-| Proxy (impl: 0x98e266bdb0eedd38bf45232b9316959ad0aad90c) | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x4c7a44...105239`; base `0x98e266...aad90c` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x26fce5...8dddbe` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x55506b...735060` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x872b34...f3a48c`; base `0xf549e4...527429` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x9ce202...ebd2f1`; base `0xae172d...c9bf3e` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xaa4ad5...db4200` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xac1552...b46ddd` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xacf310...45eef5` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xeedab4...852326` | ❓ Unverified |
+| Proxy (impl: 0x5d964ec530f989de6128efa22837cfb26095cbfd) | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x4f7ab59b5ac112970f5dd66d8a7ac505c8e5e08b`; base `0x5d964ec530f989de6128efa22837cfb26095cbfd` | ❓ Unverified |
+| Proxy (impl: 0x98e266bdb0eedd38bf45232b9316959ad0aad90c) | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x4c7a44f3fb37a53f33d3fe3ccde97a444f105239`; base `0x98e266bdb0eedd38bf45232b9316959ad0aad90c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x26fce52a077b4f1dbd7c920b6f23a1d9d18dddbe` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x55506bcc5fa9b2e702848aa110b5a6987a735060` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x872b347cd764d46c127ffefbcab605fff3f3a48c`; base `0xf549e4b5b4cb7fd4e83b8aa047c742c06d527429` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x9ce202ebf6de9dfa728df770cbfba91e27ebd2f1`; base `0xae172d8c5e428d4b7c70f9e593b207f9dac9bf3e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xaa4ad5acf2d6dcf42e4b5bf606efff714fdb4200` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xac1552e30857a814a225baa81145bcb071b46ddd` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xacf3102b3e125fbd79087dab5d1199ebcd45eef5` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xeedab47dfbc7564cd8eb314bda33405ac9852326` | ❓ Unverified |
 
 ## Audit Inventory
 

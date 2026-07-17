@@ -59,18 +59,18 @@ The protocol comprises 3 functional families. Its contracts share 4 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AToken | unknown | celo | n/a | 2 deployments: celo [`0x55bfce...1141e6`](./contracts/celo-42220/0x55bfced2451b2154e06604d4269c9349f31141e6/); celo `0xf44e15...c97a2a` | ✅ Audited |
-| DefaultReserveInterestRateStrategy | unknown | celo | n/a | [`0xb3072f...ea0018`](./contracts/celo-42220/0xb3072f5f0d5e8b9036aec29f37bab70e86ea0018/) | ✅ Audited |
-| LendingPool | unknown | celo | n/a | 4 deployments: celo [`0x29b492...0cdb7a`](./contracts/celo-42220/0x29b4923d64b3196afd81d5f91185d693330cdb7a/); celo `0x97256c...ae92fc`; celo `0xb9f812...cf1a59`; celo `0xbecd34...97711f` | ✅ Audited |
-| LendingPoolAddressesProvider | unknown | celo | n/a | [`0xd10880...88b332`](./contracts/celo-42220/0xd1088091a174d33412a968fa34cb67131188b332/) | ✅ Audited |
-| LendingPoolConfigurator | unknown | celo | n/a | [`0x2cca74...1b1f1c`](./contracts/celo-42220/0x2cca742585b39e0538f7cc01ab8ffa005f1b1f1c/) | ✅ Audited |
+| AToken | unknown | celo | n/a | 2 deployments: celo [`0x55bfced2451b2154e06604d4269c9349f31141e6`](./contracts/celo-42220/0x55bfced2451b2154e06604d4269c9349f31141e6/); celo `0xf44e15badbc9a2c5d71a569d6dfb584a8cc97a2a` | ✅ Audited |
+| DefaultReserveInterestRateStrategy | unknown | celo | n/a | [`0xb3072f5f0d5e8b9036aec29f37bab70e86ea0018`](./contracts/celo-42220/0xb3072f5f0d5e8b9036aec29f37bab70e86ea0018/) | ✅ Audited |
+| LendingPool | unknown | celo | n/a | 4 deployments: celo [`0x29b4923d64b3196afd81d5f91185d693330cdb7a`](./contracts/celo-42220/0x29b4923d64b3196afd81d5f91185d693330cdb7a/); celo `0x97256c89a0f1bc88cbf66fd780eca5f396ae92fc`; celo `0xb9f812003ae906d381945e6010614c114ecf1a59`; celo `0xbecd348aa5cc976be8e82ca6f13bc3b53197711f` | ✅ Audited |
+| LendingPoolAddressesProvider | unknown | celo | n/a | [`0xd1088091a174d33412a968fa34cb67131188b332`](./contracts/celo-42220/0xd1088091a174d33412a968fa34cb67131188b332/) | ✅ Audited |
+| LendingPoolConfigurator | unknown | celo | n/a | [`0x2cca742585b39e0538f7cc01ab8ffa005f1b1f1c`](./contracts/celo-42220/0x2cca742585b39e0538f7cc01ab8ffa005f1b1f1c/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| MoolaStakingRewards | unknown | celo | n/a | 3 deployments: celo [`0x1df0a9...d10fad`](./contracts/celo-42220/0x1df0a9c8313a005793501bac2150dfb895d10fad/); celo `0x2ca169...4fb01c`; celo `0xe76525...5051f6` | ⚠️ Unaudited |
-| MooToken | token | celo | n/a | [`0x177002...8c131e`](./contracts/celo-42220/0x17700282592d6917f6a73d0bf8accf4d578c131e/) | ⚠️ Unaudited |
+| MoolaStakingRewards | unknown | celo | n/a | 3 deployments: celo [`0x1df0a9c8313a005793501bac2150dfb895d10fad`](./contracts/celo-42220/0x1df0a9c8313a005793501bac2150dfb895d10fad/); celo `0x2ca16986bea18d562d26354b4ff4c504f14fb01c`; celo `0xe76525610652ffc3af751ab0dcc3448b345051f6` | ⚠️ Unaudited |
+| MooToken | token | celo | n/a | [`0x17700282592d6917f6a73d0bf8accf4d578c131e`](./contracts/celo-42220/0x17700282592d6917f6a73d0bf8accf4d578c131e/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -90,24 +90,24 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | celo | n/a | `0x1b00fd...96b09b` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x2eba86...291a2c` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x3abdfb...a2e104` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x3c06fb...7d04b8` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x3dc0fc...cfe781` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x5e160a...00e72a` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x71b7ec...a5353c` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x7e7d2f...5a9f29` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x801443...ece2df` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x866fb3...36bac7` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x8b47a1...a18933` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x923182...28d3c3` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0xa4659c...2c0e3f` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0xb65b6a...699687` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0xc79410...d0b454` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0xd42586...3df89d` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0xd7f771...7b25ed` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0xe50b13...12ed5a` | ❓ Unverified |
+| UnnamedContract | unknown | celo | n/a | `0x1b00fd5693d065518630ea22efafc59e5596b09b` | ❓ Unverified |
+| UnnamedContract | unknown | celo | n/a | `0x2eba86df50a8c5e78897ace75ff24bf1b8291a2c` | ❓ Unverified |
+| UnnamedContract | unknown | celo | n/a | `0x3abdfb1b91b25c58f80ef6df88d6d6043ea2e104` | ❓ Unverified |
+| UnnamedContract | unknown | celo | n/a | `0x3c06fb2f5ab65b0e35f91073d88afe2b017d04b8` | ❓ Unverified |
+| UnnamedContract | unknown | celo | n/a | `0x3dc0fcd3aa6ca66a434086180e2604b9a9cfe781` | ❓ Unverified |
+| UnnamedContract | unknown | celo | n/a | `0x5e160ad1fd536e613d49787d25e2d6d06a00e72a` | ❓ Unverified |
+| UnnamedContract | unknown | celo | n/a | `0x71b7eccab9b239a33ba428b096a8c33011a5353c` | ❓ Unverified |
+| UnnamedContract | unknown | celo | n/a | `0x7e7d2f9ef635ec83df06838ea4dc8053055a9f29` | ❓ Unverified |
+| UnnamedContract | unknown | celo | n/a | `0x801443470c119f2eac65f13886d9e293cdece2df` | ❓ Unverified |
+| UnnamedContract | unknown | celo | n/a | `0x866fb3a7fb11d0defe3d0828417b5b948d36bac7` | ❓ Unverified |
+| UnnamedContract | unknown | celo | n/a | `0x8b47a13c675f936493ebaf6a7422e8539ca18933` | ❓ Unverified |
+| UnnamedContract | unknown | celo | n/a | `0x923182024d0fa5dee59e3c3db5e2eed23728d3c3` | ❓ Unverified |
+| UnnamedContract | unknown | celo | n/a | `0xa4659c76ee0567242ce09f906bab7c83e92c0e3f` | ❓ Unverified |
+| UnnamedContract | unknown | celo | n/a | `0xb65b6a6a6f78e4daabf259c756567ae346699687` | ❓ Unverified |
+| UnnamedContract | unknown | celo | n/a | `0xc794105e26ae955829be2f10d76eb13630d0b454` | ❓ Unverified |
+| UnnamedContract | unknown | celo | n/a | `0xd425865dba7c7a9cb618f7b9c077bf0c2f3df89d` | ❓ Unverified |
+| UnnamedContract | unknown | celo | n/a | `0xd7f77169d5e6a32c5044052f9a49eb94697b25ed` | ❓ Unverified |
+| UnnamedContract | unknown | celo | n/a | `0xe50b13fecdbee8937580b5628050340c6212ed5a` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -123,8 +123,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| celo | [`0x1df0a9...d10fad`](./contracts/celo-42220/0x1df0a9c8313a005793501bac2150dfb895d10fad/) | MoolaStakingRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x177002...8c131e`](./contracts/celo-42220/0x17700282592d6917f6a73d0bf8accf4d578c131e/) | MooToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | [`0x1df0a9c8313a005793501bac2150dfb895d10fad`](./contracts/celo-42220/0x1df0a9c8313a005793501bac2150dfb895d10fad/) | MoolaStakingRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | [`0x17700282592d6917f6a73d0bf8accf4d578c131e`](./contracts/celo-42220/0x17700282592d6917f6a73d0bf8accf4d578c131e/) | MooToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

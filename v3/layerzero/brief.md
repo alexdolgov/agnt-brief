@@ -52,14 +52,14 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum, base
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x72faeb...3ea294`, chain 1)
-- UnnamedContract (`0xacddac...9c05f1`, chain 1)
-- UnnamedContract (`0x5528cf...12bde3`, chain 10)
-- UnnamedContract (`0xfbea79...1c7b03`, chain 10)
-- UnnamedContract (`0x7e07a9...95ff1f`, chain 8453)
-- UnnamedContract (`0x8eca03...dcb4f8`, chain 8453)
-- UnnamedContract (`0x8e60b7...19286e`, chain 42161)
-- TransferDelegate (`0x60fccb...609de4`, chain 42161)
+- UnnamedContract (`0x72faebf58a62e33c044c37d8d973a961633ea294`, chain 1)
+- UnnamedContract (`0xacddac6c77318b615f7f6fb9bb67c6833e9c05f1`, chain 1)
+- UnnamedContract (`0x5528cf58feb8fbfce94f43b33240fffb1312bde3`, chain 10)
+- UnnamedContract (`0xfbea79d13e6f795a0e1e4b99090f1165a01c7b03`, chain 10)
+- UnnamedContract (`0x7e07a9148e9149e430c6412b79a675028595ff1f`, chain 8453)
+- UnnamedContract (`0x8eca03175fd5ac62fb6f4ecbb9a95d13dcdcb4f8`, chain 8453)
+- UnnamedContract (`0x8e60b7b64b63cd56b18ebcecadcb79b04919286e`, chain 42161)
+- TransferDelegate (`0x60fccb9b58d5e806ca5cb8bfce721c2274609de4`, chain 42161)
 
 ## Contract Surface Quality
 
@@ -105,9 +105,9 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum, base
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| LayerZeroToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x698588...3271cd` | ⚠️ Unaudited |
-| LZMultiCall | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5528cf...12bde3` | ⚠️ Unaudited |
-| TransferDelegate | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-244540 | `0x60fccb...609de4` | ⚠️ Unaudited |
+| LayerZeroToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6985884c4392d348587b19cb9eaaf157f13271cd` | ⚠️ Unaudited |
+| LZMultiCall | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5528cf58feb8fbfce94f43b33240fffb1312bde3` | ⚠️ Unaudited |
+| TransferDelegate | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-244540 | `0x60fccb9b58d5e806ca5cb8bfce721c2274609de4` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -127,13 +127,13 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-244536 | `0x72faeb...3ea294` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-244537 | `0xacddac...9c05f1` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-244538 | `0x5528cf...12bde3` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-244539 | `0xfbea79...1c7b03` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-244542 | `0x7e07a9...95ff1f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-244543 | `0x8eca03...dcb4f8` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-244541 | `0x8e60b7...19286e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-244536 | `0x72faebf58a62e33c044c37d8d973a961633ea294` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-244537 | `0xacddac6c77318b615f7f6fb9bb67c6833e9c05f1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-244538 | `0x5528cf58feb8fbfce94f43b33240fffb1312bde3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-244539 | `0xfbea79d13e6f795a0e1e4b99090f1165a01c7b03` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-244542 | `0x7e07a9148e9149e430c6412b79a675028595ff1f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-244543 | `0x8eca03175fd5ac62fb6f4ecbb9a95d13dcdcb4f8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-244541 | `0x8e60b7b64b63cd56b18ebcecadcb79b04919286e` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -999,11 +999,11 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | LZ-HyperLiquid-Fee-Activation_Paladin_13-Nov-2025.pdf | IPreFundedFeeAbstraction | unmatched — not counted | — | listed in Contracts Assessed section | no |
 | LZ-Multicall_OtterSec_Dec-30th-2025.pdf | LZMulticall | unmatched — not counted | — | Scope section: 'LZMulticall Account abstraction contract that enables gasless transactions through EIP-712 signatures and multicall functionality.' | no |
 | LZ-Multicall_Paladin_Jan-16th-2026.pdf | LZMultiCall | unmatched — not counted | — | listed in Contracts Assessed section | no |
-| LZ-Multicall_Paladin_Jan-16th-2026.pdf | TransferDelegate | ambiguous — not counted | 0xfbea79… (alternative) `0xfbea79...1c7b03` — liveness: live (current_address_book_code)<br>0x8eca03… (alternative) `0x8eca03...dcb4f8` — liveness: live (current_address_book_code)<br>0x72faeb… (alternative) `0x72faeb...3ea294` — liveness: live (current_address_book_code)<br>TransferDelegate (alternative) `0x60fccb...609de4` — deployed 2026-01-22 22:40:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| LZ-Multicall_Paladin_Jan-16th-2026.pdf | TransferDelegate | ambiguous — not counted | 0xfbea79… (alternative) `0xfbea79d13e6f795a0e1e4b99090f1165a01c7b03` — liveness: live (current_address_book_code)<br>0x8eca03… (alternative) `0x8eca03175fd5ac62fb6f4ecbb9a95d13dcdcb4f8` — liveness: live (current_address_book_code)<br>0x72faeb… (alternative) `0x72faebf58a62e33c044c37d8d973a961633ea294` — liveness: live (current_address_book_code)<br>TransferDelegate (alternative) `0x60fccb9b58d5e806ca5cb8bfce721c2274609de4` — deployed 2026-01-22 22:40:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | LZ-Multicall_UNH-IOL_Jan-13th-2026.pdf | ILZMultiCall | unmatched — not counted | — | listed in scope | no |
 | LZ-Multicall_UNH-IOL_Jan-13th-2026.pdf | ITransferDelegate | unmatched — not counted | — | listed in scope | no |
 | LZ-Multicall_UNH-IOL_Jan-13th-2026.pdf | LZMultiCall | unmatched — not counted | — | listed in scope | no |
-| LZ-Multicall_UNH-IOL_Jan-13th-2026.pdf | TransferDelegate | ambiguous — not counted | 0xfbea79… (alternative) `0xfbea79...1c7b03` — liveness: live (current_address_book_code)<br>0x8eca03… (alternative) `0x8eca03...dcb4f8` — liveness: live (current_address_book_code)<br>0x72faeb… (alternative) `0x72faeb...3ea294` — liveness: live (current_address_book_code)<br>TransferDelegate (alternative) `0x60fccb...609de4` — deployed 2026-01-22 22:40:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| LZ-Multicall_UNH-IOL_Jan-13th-2026.pdf | TransferDelegate | ambiguous — not counted | 0xfbea79… (alternative) `0xfbea79d13e6f795a0e1e4b99090f1165a01c7b03` — liveness: live (current_address_book_code)<br>0x8eca03… (alternative) `0x8eca03175fd5ac62fb6f4ecbb9a95d13dcdcb4f8` — liveness: live (current_address_book_code)<br>0x72faeb… (alternative) `0x72faebf58a62e33c044c37d8d973a961633ea294` — liveness: live (current_address_book_code)<br>TransferDelegate (alternative) `0x60fccb9b58d5e806ca5cb8bfce721c2274609de4` — deployed 2026-01-22 22:40:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | LZ-OApp&OFT_Zellic_Sep-23-2025.pdf | OApp | unmatched — not counted | — | Scope section lists 'LayerZero OApp & OFT Contracts' as target; report discusses OApp and OFT as the audited contracts. | no |
 | LZ-OApp&OFT_Zellic_Sep-23-2025.pdf | OFT | unmatched — not counted | — | Scope section lists 'LayerZero OApp & OFT Contracts' as target; report discusses OApp and OFT as the audited contracts. | no |
 | OApp&OFT-Zellic-12JUN2024.pdf | OApp | unmatched — not counted | — | listed in scope | no |
@@ -1093,7 +1093,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | `0x60fccb...609de4` | TransferDelegate | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0x60fccb9b58d5e806ca5cb8bfce721c2274609de4` | TransferDelegate | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

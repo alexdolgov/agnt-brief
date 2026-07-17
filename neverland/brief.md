@@ -62,8 +62,8 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AgoraDollarErc1967Proxy | unknown | ethereum | n/a | [`0x000000...a9012a`](./contracts/ethereum-1/0x00000000efe302beaa2b3e6e1b18d08d69a9012a/) | ⚠️ Unaudited |
-| WBTCOFTAdapter | unknown | ethereum | n/a | [`0x0555e3...0d2b9c`](./contracts/ethereum-1/0x0555e30da8f98308edb960aa94c0db47230d2b9c/) | ⚠️ Unaudited |
+| AgoraDollarErc1967Proxy | unknown | ethereum | n/a | [`0x00000000efe302beaa2b3e6e1b18d08d69a9012a`](./contracts/ethereum-1/0x00000000efe302beaa2b3e6e1b18d08d69a9012a/) | ⚠️ Unaudited |
+| WBTCOFTAdapter | unknown | ethereum | n/a | [`0x0555e30da8f98308edb960aa94c0db47230d2b9c`](./contracts/ethereum-1/0x0555e30da8f98308edb960aa94c0db47230d2b9c/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -108,8 +108,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x000000...a9012a`](./contracts/ethereum-1/0x00000000efe302beaa2b3e6e1b18d08d69a9012a/) | AgoraDollarErc1967Proxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0555e3...0d2b9c`](./contracts/ethereum-1/0x0555e30da8f98308edb960aa94c0db47230d2b9c/) | WBTCOFTAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x00000000efe302beaa2b3e6e1b18d08d69a9012a`](./contracts/ethereum-1/0x00000000efe302beaa2b3e6e1b18d08d69a9012a/) | AgoraDollarErc1967Proxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0555e30da8f98308edb960aa94c0db47230d2b9c`](./contracts/ethereum-1/0x0555e30da8f98308edb960aa94c0db47230d2b9c/) | WBTCOFTAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

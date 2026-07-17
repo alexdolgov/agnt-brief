@@ -52,68 +52,68 @@ The pinned logic-topography run contains 11 contract row(s) across ethereum, zks
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x017062...573804`, chain 1)
-- UnnamedContract (`0x07efa7...93654c`, chain 1)
-- UnnamedContract (`0x12302f...78613c`, chain 1)
-- UnnamedContract (`0x34cfac...fe3f5f`, chain 1)
-- UnnamedContract (`0x38869b...43b526`, chain 1)
-- UnnamedContract (`0x3d4ba2...a46199`, chain 1)
-- UnnamedContract (`0x3e5c63...4cd36e`, chain 1)
-- UnnamedContract (`0x40a2ac...49130d`, chain 1)
-- UnnamedContract (`0x4ffef8...f5b5aa`, chain 1)
-- UnnamedContract (`0x526643...ffdac6`, chain 1)
-- UnnamedContract (`0x54e86d...0433f3`, chain 1)
-- UnnamedContract (`0x59ad67...5f69da`, chain 1)
-- UnnamedContract (`0x6439e7...4172ac`, chain 1)
-- UnnamedContract (`0x6851d6...8b0185`, chain 1)
-- UnnamedContract (`0x69f4d1...6e2938`, chain 1)
-- UnnamedContract (`0x727a77...8fc044`, chain 1)
-- UnnamedContract (`0x76e2cf...861f9b`, chain 1)
-- UnnamedContract (`0x7cbb62...6cfaa4`, chain 1)
-- UnnamedContract (`0x8538fc...c9bf4a`, chain 1)
-- UnnamedContract (`0x85a8ca...c242c3`, chain 1)
-- UnnamedContract (`0x8d29be...49cdad`, chain 1)
-- UnnamedContract (`0x900c75...c2d82a`, chain 1)
-- UnnamedContract (`0x98ffbb...aff717`, chain 1)
-- UnnamedContract (`0x998739...8f9eda`, chain 1)
-- UnnamedContract (`0x9b35af...0a1a52`, chain 1)
-- UnnamedContract (`0xa1dabe...44102b`, chain 1)
-- UnnamedContract (`0xa65387...cba3a2`, chain 1)
-- UnnamedContract (`0xa6b71e...896ab2`, chain 1)
-- UnnamedContract (`0xa83c33...8d1836`, chain 1)
-- UnnamedContract (`0xb19d6f...640a9d`, chain 1)
-- UnnamedContract (`0xb6029e...bda35a`, chain 1)
-- UnnamedContract (`0xbd89a1...ffdc54`, chain 1)
-- UnnamedContract (`0xc22834...f910bc`, chain 1)
-- UnnamedContract (`0xd5d82b...dbdf44`, chain 1)
-- UnnamedContract (`0xd9db27...709552`, chain 1)
-- UnnamedContract (`0xedd160...d67c7e`, chain 1)
-- UnnamedContract (`0xf48f2b...0fe5e4`, chain 1)
-- UnnamedContract (`0xf61a72...3798c0`, chain 1)
-- UnnamedContract (`0xfb1bff...7191ea`, chain 1)
-- UnnamedContract (`0xfd0732...59ec99`, chain 1)
-- UnnamedContract (`0xff83f6...8d9f69`, chain 1)
-- UnnamedContract (`0x0408ef...cef773`, chain 324)
-- UnnamedContract (`0x199a9d...1bcb39`, chain 324)
-- UnnamedContract (`0x309d0b...33e885`, chain 324)
-- UnnamedContract (`0x610fca...469380`, chain 324)
-- UnnamedContract (`0x817756...8b09a7`, chain 324)
-- UnnamedContract (`0xa26620...b3e590`, chain 324)
-- UnnamedContract (`0xaca1ec...061888`, chain 324)
-- UnnamedContract (`0xc329d0...4a8629`, chain 324)
-- UnnamedContract (`0xc35f06...c68dfa`, chain 324)
-- UnnamedContract (`0xdd3502...a7199d`, chain 324)
-- CompatibilityFallbackHandler (`0x3efcbb...be77f4`, chain 1)
-- CreateCall (`0x2ef5ec...da90b4`, chain 1)
-- MultiSend (`0x218543...7d7eb7`, chain 1)
-- MultiSend (`0xa238cb...7e7761`, chain 1)
-- MultiSendCallOnly (`0x9641d7...8102e2`, chain 1)
-- Safe (`0x41675c...c7461a`, chain 1)
-- Safe (`0xff51a5...2ca44b`, chain 1)
-- SafeL2 (`0x29fcb4...00c762`, chain 1)
-- SafeProxyFactory (`0x14f298...165e7b`, chain 1)
-- SafeProxyFactory (`0x4e1dcf...20ec67`, chain 1)
-- SignMessageLib (`0xd53cd0...8012c9`, chain 1)
+- UnnamedContract (`0x017062a1de2fe6b99be3d9d37841fed19f573804`, chain 1)
+- UnnamedContract (`0x07efa797c55b5dde3698d876b277abb6b893654c`, chain 1)
+- UnnamedContract (`0x12302fe9c02ff50939baaaaf415fc226c078613c`, chain 1)
+- UnnamedContract (`0x34cfac646f301356faa8b21e94227e3583fe3f5f`, chain 1)
+- UnnamedContract (`0x38869bf66a61cf6bdb996a6ae40d5853fd43b526`, chain 1)
+- UnnamedContract (`0x3d4ba2e0884aa488718476ca2fb8efc291a46199`, chain 1)
+- UnnamedContract (`0x3e5c63644e683549055b9be8653de26e0b4cd36e`, chain 1)
+- UnnamedContract (`0x40a2accbd92bca938b02010e17a5b8929b49130d`, chain 1)
+- UnnamedContract (`0x4ffef8222648872b3de295ba1e49110e61f5b5aa`, chain 1)
+- UnnamedContract (`0x526643f69b81b008f46d95cd5ced5ec0edffdac6`, chain 1)
+- UnnamedContract (`0x54e86d004d71a8d2112ec75face57d730b0433f3`, chain 1)
+- UnnamedContract (`0x59ad6735bcd8152b84860cb256dd9e96b85f69da`, chain 1)
+- UnnamedContract (`0x6439e7abd8bb915a5263094784c5cf561c4172ac`, chain 1)
+- UnnamedContract (`0x6851d6fdfafd08c0295c392436245e5bc78b0185`, chain 1)
+- UnnamedContract (`0x69f4d1788e39c87893c980c06edf4b7f686e2938`, chain 1)
+- UnnamedContract (`0x727a77a074d1e6c4530e814f89e618a3298fc044`, chain 1)
+- UnnamedContract (`0x76e2cfc1f5fa8f6a5b3fc4c8f4788f0116861f9b`, chain 1)
+- UnnamedContract (`0x7cbb62eaa69f79e6873cd1ecb2392971036cfaa4`, chain 1)
+- UnnamedContract (`0x8538fcbccba7f5303d2c679fa5d7a629a8c9bf4a`, chain 1)
+- UnnamedContract (`0x85a8ca358d388530ad0fb95d0cb89dd44fc242c3`, chain 1)
+- UnnamedContract (`0x8d29be29923b68abfdd21e541b9374737b49cdad`, chain 1)
+- UnnamedContract (`0x900c7589200010d6c6ecaae5b06ebe653bc2d82a`, chain 1)
+- UnnamedContract (`0x98ffbbf51bb33a056b08ddf711f289936aaff717`, chain 1)
+- UnnamedContract (`0x998739bfdaadde7c933b942a68053933098f9eda`, chain 1)
+- UnnamedContract (`0x9b35af71d77eaf8d7e40252370304687390a1a52`, chain 1)
+- UnnamedContract (`0xa1dabef33b3b82c7814b6d82a79e50f4ac44102b`, chain 1)
+- UnnamedContract (`0xa65387f16b013cf2af4605ad8aa5ec25a2cba3a2`, chain 1)
+- UnnamedContract (`0xa6b71e26c5e0845f74c812102ca7114b6a896ab2`, chain 1)
+- UnnamedContract (`0xa83c336b20401af773b6219ba5027174338d1836`, chain 1)
+- UnnamedContract (`0xb19d6ffc2182150f8eb585b79d4abcd7c5640a9d`, chain 1)
+- UnnamedContract (`0xb6029ea3b2c51d09a50b53ca8012feeb05bda35a`, chain 1)
+- UnnamedContract (`0xbd89a1ce4dde368ffab0ec35506eece0b1ffdc54`, chain 1)
+- UnnamedContract (`0xc22834581ebc8527d974f8a1c97e1bea4ef910bc`, chain 1)
+- UnnamedContract (`0xd5d82b6addc9027b22dca772aa68d5d74cdbdf44`, chain 1)
+- UnnamedContract (`0xd9db270c1b5e3bd161e8c8503c55ceabee709552`, chain 1)
+- UnnamedContract (`0xedd160febbd92e350d4d398fb636302fccd67c7e`, chain 1)
+- UnnamedContract (`0xf48f2b2d2a534e402487b3ee7c18c33aec0fe5e4`, chain 1)
+- UnnamedContract (`0xf61a721642b0c0c8b334ba3763ba1326f53798c0`, chain 1)
+- UnnamedContract (`0xfb1bffc9d739b8d520daf37df666da4c687191ea`, chain 1)
+- UnnamedContract (`0xfd0732dc9e303f09fcef3a7388ad10a83459ec99`, chain 1)
+- UnnamedContract (`0xff83f6335d8930cbad1c0d439a841f01888d9f69`, chain 1)
+- UnnamedContract (`0x0408ef011960d02349d50286d20531229bcef773`, chain 324)
+- UnnamedContract (`0x199a9df0224031c20cc27083a4164c9c8f1bcb39`, chain 324)
+- UnnamedContract (`0x309d0b190fecca8e1d5d8309a16f7e3cb133e885`, chain 324)
+- UnnamedContract (`0x610fca2e0279fa1f8c00c8c2f71df522ad469380`, chain 324)
+- UnnamedContract (`0x817756c6c555a94bcee39eb5a102abc1678b09a7`, chain 324)
+- UnnamedContract (`0xa26620d1f8f1a2433f0d25027f141aacafb3e590`, chain 324)
+- UnnamedContract (`0xaca1ec0a1a575cdccf1dc3d5d296202eb6061888`, chain 324)
+- UnnamedContract (`0xc329d02fd8cb2fc13aa919005af46320794a8629`, chain 324)
+- UnnamedContract (`0xc35f063962328ac65ced5d4c3fc5def8dec68dfa`, chain 324)
+- UnnamedContract (`0xdd35026932273768a3e31f4eff7313b5b7a7199d`, chain 324)
+- CompatibilityFallbackHandler (`0x3efcbb83a4a7afcb4f68d501e2c2203a38be77f4`, chain 1)
+- CreateCall (`0x2ef5ecfbea521449e4de05edb1ce63b75eda90b4`, chain 1)
+- MultiSend (`0x218543288004cd07832472d464648173c77d7eb7`, chain 1)
+- MultiSend (`0xa238cbeb142c10ef7ad8442c6d1f9e89e07e7761`, chain 1)
+- MultiSendCallOnly (`0x9641d764fc13c8b624c04430c7356c1c7c8102e2`, chain 1)
+- Safe (`0x41675c099f32341bf84bfc5382af534df5c7461a`, chain 1)
+- Safe (`0xff51a5898e281db6dfc7855790607438df2ca44b`, chain 1)
+- SafeL2 (`0x29fcb43b46531bca003ddc8fcb67ffe91900c762`, chain 1)
+- SafeProxyFactory (`0x14f2982d601c9458f93bd70b218933a6f8165e7b`, chain 1)
+- SafeProxyFactory (`0x4e1dcf7ad4e460cfd30791ccc4f9c8a4f820ec67`, chain 1)
+- SignMessageLib (`0xd53cd0ab83d845ac265be939c57f53ad838012c9`, chain 1)
 
 ## Contract Surface Quality
 
@@ -158,25 +158,25 @@ The pinned logic-topography run contains 11 contract row(s) across ethereum, zks
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| CompatibilityFallbackHandler | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391958 | `0x3efcbb...be77f4` | ✅ Audited |
-| CreateCall | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391951 | `0x2ef5ec...da90b4` | ✅ Audited |
-| MultiSend | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391949 | `0x218543...7d7eb7` | ✅ Audited |
-| MultiSendCallOnly | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391978 | `0x9641d7...8102e2` | ✅ Audited |
-| Safe | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392004 | `0xff51a5...2ca44b` | ✅ Audited |
-| SafeL2 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391950 | `0x29fcb4...00c762` | ✅ Audited |
-| SafeProxyFactory | registry | project_anchor | own_supporting | 0 | ethereum | unit-391947 | `0x14f298...165e7b` | ✅ Audited |
-| SignMessageLib | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391994 | `0xd53cd0...8012c9` | ✅ Audited |
+| CompatibilityFallbackHandler | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391958 | `0x3efcbb83a4a7afcb4f68d501e2c2203a38be77f4` | ✅ Audited |
+| CreateCall | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391951 | `0x2ef5ecfbea521449e4de05edb1ce63b75eda90b4` | ✅ Audited |
+| MultiSend | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391949 | `0x218543288004cd07832472d464648173c77d7eb7` | ✅ Audited |
+| MultiSendCallOnly | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391978 | `0x9641d764fc13c8b624c04430c7356c1c7c8102e2` | ✅ Audited |
+| Safe | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392004 | `0xff51a5898e281db6dfc7855790607438df2ca44b` | ✅ Audited |
+| SafeL2 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391950 | `0x29fcb43b46531bca003ddc8fcb67ffe91900c762` | ✅ Audited |
+| SafeProxyFactory | registry | project_anchor | own_supporting | 0 | ethereum | unit-391947 | `0x14f2982d601c9458f93bd70b218933a6f8165e7b` | ✅ Audited |
+| SignMessageLib | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391994 | `0xd53cd0ab83d845ac265be939c57f53ad838012c9` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (6)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| GnosisSafe | governance | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x8cf60b...0bd1d1` | ⚠️ Unaudited |
-| MultiSend | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391983 | `0xa238cb...7e7761` | ⚠️ Unaudited |
-| Safe | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391960 | `0x41675c...c7461a` | ⚠️ Unaudited |
-| Safe4337Module | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x75cf11...d5c226` | ⚠️ Unaudited |
-| SafeProxyFactory | registry | project_anchor | own_supporting | 0 | ethereum | unit-391962 | `0x4e1dcf...20ec67` | ⚠️ Unaudited |
-| VestingPool | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x96b71e...1ea4ff` | ⚠️ Unaudited |
+| GnosisSafe | governance | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x8cf60b289f8d31f737049b590b5e4285ff0bd1d1` | ⚠️ Unaudited |
+| MultiSend | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391983 | `0xa238cbeb142c10ef7ad8442c6d1f9e89e07e7761` | ⚠️ Unaudited |
+| Safe | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391960 | `0x41675c099f32341bf84bfc5382af534df5c7461a` | ⚠️ Unaudited |
+| Safe4337Module | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x75cf11467937ce3f2f357ce24ffc3dbf8fd5c226` | ⚠️ Unaudited |
+| SafeProxyFactory | registry | project_anchor | own_supporting | 0 | ethereum | unit-391962 | `0x4e1dcf7ad4e460cfd30791ccc4f9c8a4f820ec67` | ⚠️ Unaudited |
+| VestingPool | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x96b71e2551915d98d22c448b040a3bc4801ea4ff` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -196,58 +196,58 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391943 | `0x017062...573804` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391944 | `0x07efa7...93654c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391946 | `0x12302f...78613c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391953 | `0x34cfac...fe3f5f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391955 | `0x38869b...43b526` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391956 | `0x3d4ba2...a46199` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391957 | `0x3e5c63...4cd36e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391959 | `0x40a2ac...49130d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391963 | `0x4ffef8...f5b5aa` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391964 | `0x526643...ffdac6` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391965 | `0x54e86d...0433f3` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391966 | `0x59ad67...5f69da` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391967 | `0x6439e7...4172ac` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391968 | `0x6851d6...8b0185` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391969 | `0x69f4d1...6e2938` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391970 | `0x727a77...8fc044` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391971 | `0x76e2cf...861f9b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391972 | `0x7cbb62...6cfaa4` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391973 | `0x8538fc...c9bf4a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391974 | `0x85a8ca...c242c3` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391975 | `0x8d29be...49cdad` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391976 | `0x900c75...c2d82a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391979 | `0x98ffbb...aff717` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391980 | `0x998739...8f9eda` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391981 | `0x9b35af...0a1a52` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391982 | `0xa1dabe...44102b` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa581c4...0b4037` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391984 | `0xa65387...cba3a2` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391985 | `0xa6b71e...896ab2` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391986 | `0xa83c33...8d1836` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391989 | `0xb19d6f...640a9d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391990 | `0xb6029e...bda35a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391991 | `0xbd89a1...ffdc54` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391992 | `0xc22834...f910bc` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391995 | `0xd5d82b...dbdf44` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391996 | `0xd9db27...709552` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391998 | `0xedd160...d67c7e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392000 | `0xf48f2b...0fe5e4` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392001 | `0xf61a72...3798c0` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392002 | `0xfb1bff...7191ea` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392003 | `0xfd0732...59ec99` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392005 | `0xff83f6...8d9f69` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-392006 | `0x0408ef...cef773` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-392007 | `0x199a9d...1bcb39` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-392008 | `0x309d0b...33e885` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-392009 | `0x610fca...469380` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-392010 | `0x817756...8b09a7` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-392011 | `0xa26620...b3e590` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-392012 | `0xaca1ec...061888` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-392013 | `0xc329d0...4a8629` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-392014 | `0xc35f06...c68dfa` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-392015 | `0xdd3502...a7199d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391943 | `0x017062a1de2fe6b99be3d9d37841fed19f573804` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391944 | `0x07efa797c55b5dde3698d876b277abb6b893654c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391946 | `0x12302fe9c02ff50939baaaaf415fc226c078613c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391953 | `0x34cfac646f301356faa8b21e94227e3583fe3f5f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391955 | `0x38869bf66a61cf6bdb996a6ae40d5853fd43b526` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391956 | `0x3d4ba2e0884aa488718476ca2fb8efc291a46199` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391957 | `0x3e5c63644e683549055b9be8653de26e0b4cd36e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391959 | `0x40a2accbd92bca938b02010e17a5b8929b49130d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391963 | `0x4ffef8222648872b3de295ba1e49110e61f5b5aa` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391964 | `0x526643f69b81b008f46d95cd5ced5ec0edffdac6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391965 | `0x54e86d004d71a8d2112ec75face57d730b0433f3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391966 | `0x59ad6735bcd8152b84860cb256dd9e96b85f69da` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391967 | `0x6439e7abd8bb915a5263094784c5cf561c4172ac` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391968 | `0x6851d6fdfafd08c0295c392436245e5bc78b0185` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391969 | `0x69f4d1788e39c87893c980c06edf4b7f686e2938` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391970 | `0x727a77a074d1e6c4530e814f89e618a3298fc044` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391971 | `0x76e2cfc1f5fa8f6a5b3fc4c8f4788f0116861f9b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391972 | `0x7cbb62eaa69f79e6873cd1ecb2392971036cfaa4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391973 | `0x8538fcbccba7f5303d2c679fa5d7a629a8c9bf4a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391974 | `0x85a8ca358d388530ad0fb95d0cb89dd44fc242c3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391975 | `0x8d29be29923b68abfdd21e541b9374737b49cdad` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391976 | `0x900c7589200010d6c6ecaae5b06ebe653bc2d82a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391979 | `0x98ffbbf51bb33a056b08ddf711f289936aaff717` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391980 | `0x998739bfdaadde7c933b942a68053933098f9eda` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391981 | `0x9b35af71d77eaf8d7e40252370304687390a1a52` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391982 | `0xa1dabef33b3b82c7814b6d82a79e50f4ac44102b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa581c4a4db7175302464ff3c06380bc3270b4037` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391984 | `0xa65387f16b013cf2af4605ad8aa5ec25a2cba3a2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391985 | `0xa6b71e26c5e0845f74c812102ca7114b6a896ab2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391986 | `0xa83c336b20401af773b6219ba5027174338d1836` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391989 | `0xb19d6ffc2182150f8eb585b79d4abcd7c5640a9d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391990 | `0xb6029ea3b2c51d09a50b53ca8012feeb05bda35a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391991 | `0xbd89a1ce4dde368ffab0ec35506eece0b1ffdc54` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391992 | `0xc22834581ebc8527d974f8a1c97e1bea4ef910bc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391995 | `0xd5d82b6addc9027b22dca772aa68d5d74cdbdf44` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391996 | `0xd9db270c1b5e3bd161e8c8503c55ceabee709552` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391998 | `0xedd160febbd92e350d4d398fb636302fccd67c7e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392000 | `0xf48f2b2d2a534e402487b3ee7c18c33aec0fe5e4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392001 | `0xf61a721642b0c0c8b334ba3763ba1326f53798c0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392002 | `0xfb1bffc9d739b8d520daf37df666da4c687191ea` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392003 | `0xfd0732dc9e303f09fcef3a7388ad10a83459ec99` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392005 | `0xff83f6335d8930cbad1c0d439a841f01888d9f69` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-392006 | `0x0408ef011960d02349d50286d20531229bcef773` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-392007 | `0x199a9df0224031c20cc27083a4164c9c8f1bcb39` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-392008 | `0x309d0b190fecca8e1d5d8309a16f7e3cb133e885` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-392009 | `0x610fca2e0279fa1f8c00c8c2f71df522ad469380` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-392010 | `0x817756c6c555a94bcee39eb5a102abc1678b09a7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-392011 | `0xa26620d1f8f1a2433f0d25027f141aacafb3e590` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-392012 | `0xaca1ec0a1a575cdccf1dc3d5d296202eb6061888` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-392013 | `0xc329d02fd8cb2fc13aa919005af46320794a8629` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-392014 | `0xc35f063962328ac65ced5d4c3fc5def8dec68dfa` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-392015 | `0xdd35026932273768a3e31f4eff7313b5b7a7199d` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -322,7 +322,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Gnosis_Safe_Audit_Report.pdf | DailyLimitExtension | unmatched — not counted | — | mentioned as an extension in scope | no |
 | Gnosis_Safe_Audit_Report.pdf | SocialRecoveryExtension | unmatched — not counted | — | mentioned as an extension in scope | no |
 | Gnosis_Safe_Audit_Report.pdf | CreateAndAddModules | unmatched — not counted | — | listed in iteration 2 scope | no |
-| Gnosis_Safe_Audit_Report.pdf | MultiSend | ambiguous — not counted | MultiSend (alternative) `0xa238cb...7e7761` — deployed 2021-05-25 18:18:32+03 — liveness: live (current_address_book_code)<br>MultiSend (alternative) `0x218543...7d7eb7` — deployed 2025-06-24 17:47:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Gnosis_Safe_Audit_Report.pdf | MultiSend | ambiguous — not counted | MultiSend (alternative) `0xa238cbeb142c10ef7ad8442c6d1f9e89e07e7761` — deployed 2021-05-25 18:18:32+03 — liveness: live (current_address_book_code)<br>MultiSend (alternative) `0x218543288004cd07832472d464648173c77d7eb7` — deployed 2025-06-24 17:47:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | Gnosis_Safe_Audit_Report.pdf | StateChannelModule | unmatched — not counted | — | explicitly audited in iteration 2 | no |
 | Gnosis_Safe_Audit_Report.pdf | GnosisSafePersonalEdition | unmatched — not counted | — | reviewed in iteration 2 | no |
 | Gnosis_Safe_Audit_Report.pdf | GnosisSafeTeamEdition | unmatched — not counted | — | reviewed in iteration 2 | no |
@@ -345,8 +345,8 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Gnosis_Safe_Audit_Report_1_1_0.pdf | ERC777TokensRecipient | unmatched — not counted | — | listed in scope | no |
 | Gnosis_Safe_Audit_Report_1_1_0.pdf | ISignatureValidator | unmatched — not counted | — | listed in scope | no |
 | Gnosis_Safe_Audit_Report_1_1_0.pdf | CreateAndAddModules | unmatched — not counted | — | listed in scope | no |
-| Gnosis_Safe_Audit_Report_1_1_0.pdf | CreateCall | own contract | CreateCall (selected) `0x2ef5ec...da90b4` — deployed 2025-06-24 17:47:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Gnosis_Safe_Audit_Report_1_1_0.pdf | MultiSend | ambiguous — not counted | MultiSend (alternative) `0xa238cb...7e7761` — deployed 2021-05-25 18:18:32+03 — liveness: live (current_address_book_code)<br>MultiSend (alternative) `0x218543...7d7eb7` — deployed 2025-06-24 17:47:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Gnosis_Safe_Audit_Report_1_1_0.pdf | CreateCall | own contract | CreateCall (selected) `0x2ef5ecfbea521449e4de05edb1ce63b75eda90b4` — deployed 2025-06-24 17:47:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Gnosis_Safe_Audit_Report_1_1_0.pdf | MultiSend | ambiguous — not counted | MultiSend (alternative) `0xa238cbeb142c10ef7ad8442c6d1f9e89e07e7761` — deployed 2021-05-25 18:18:32+03 — liveness: live (current_address_book_code)<br>MultiSend (alternative) `0x218543288004cd07832472d464648173c77d7eb7` — deployed 2025-06-24 17:47:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | Gnosis_Safe_Audit_Report_1_1_0.pdf | DailyLimitModule | unmatched — not counted | — | listed in scope | no |
 | Gnosis_Safe_Audit_Report_1_1_0.pdf | SocialRecoveryModule | unmatched — not counted | — | listed in scope | no |
 | Gnosis_Safe_Audit_Report_1_1_0.pdf | StateChannelModule | unmatched — not counted | — | listed in scope | no |
@@ -373,8 +373,8 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Gnosis_Safe_Audit_Report_1_1_1.pdf | ERC777TokensRecipient | unmatched — not counted | — | listed in scope | no |
 | Gnosis_Safe_Audit_Report_1_1_1.pdf | ISignatureValidator | unmatched — not counted | — | listed in scope | no |
 | Gnosis_Safe_Audit_Report_1_1_1.pdf | CreateAndAddModules | unmatched — not counted | — | listed in scope | no |
-| Gnosis_Safe_Audit_Report_1_1_1.pdf | CreateCall | own contract | CreateCall (selected) `0x2ef5ec...da90b4` — deployed 2025-06-24 17:47:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Gnosis_Safe_Audit_Report_1_1_1.pdf | MultiSend | ambiguous — not counted | MultiSend (alternative) `0xa238cb...7e7761` — deployed 2021-05-25 18:18:32+03 — liveness: live (current_address_book_code)<br>MultiSend (alternative) `0x218543...7d7eb7` — deployed 2025-06-24 17:47:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Gnosis_Safe_Audit_Report_1_1_1.pdf | CreateCall | own contract | CreateCall (selected) `0x2ef5ecfbea521449e4de05edb1ce63b75eda90b4` — deployed 2025-06-24 17:47:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Gnosis_Safe_Audit_Report_1_1_1.pdf | MultiSend | ambiguous — not counted | MultiSend (alternative) `0xa238cbeb142c10ef7ad8442c6d1f9e89e07e7761` — deployed 2021-05-25 18:18:32+03 — liveness: live (current_address_book_code)<br>MultiSend (alternative) `0x218543288004cd07832472d464648173c77d7eb7` — deployed 2025-06-24 17:47:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | Gnosis_Safe_Audit_Report_1_1_1.pdf | DailyLimitModule | unmatched — not counted | — | listed in scope | no |
 | Gnosis_Safe_Audit_Report_1_1_1.pdf | SocialRecoveryModule | unmatched — not counted | — | listed in scope | no |
 | Gnosis_Safe_Audit_Report_1_1_1.pdf | StateChannelModule | unmatched — not counted | — | listed in scope | no |
@@ -395,21 +395,21 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Gnosis_Safe_Formal_Verification_Report_1_0_0.pdf | ModuleManager | unmatched — not counted | — | listed in scope | no |
 | Gnosis_Safe_Formal_Verification_Report_1_0_0.pdf | MasterCopy | unmatched — not counted | — | listed in scope | no |
 | Gnosis_Safe_Symbolic_Execution.pdf | GnosisSafePersonalEdition | unmatched — not counted | — | Contract name appears in the audit report text (e.g., 'GnosisSafePersonalEdition::constructor', 'GnosisSafePersonalEdition::setup'). | no |
-| Safe_Audit_Report_1_4_0.pdf | SafeL2 | own contract | SafeL2 (selected) `0x29fcb4...00c762` — deployed 2023-06-15 21:13:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Safe_Audit_Report_1_4_0.pdf | SafeProxyFactory | ambiguous — not counted | SafeProxyFactory (alternative) `0x4e1dcf...20ec67` — deployed 2023-06-09 08:48:23+03 — liveness: live (current_address_book_code)<br>SafeProxyFactory (alternative) `0x14f298...165e7b` — deployed 2025-06-24 17:46:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| Safe_Audit_Report_1_4_0.pdf | CompatibilityFallbackHandler | own contract | CompatibilityFallbackHandler (selected) `0x3efcbb...be77f4` — deployed 2025-06-24 17:46:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Safe_Audit_Report_1_4_0.pdf | MultiSendCallOnly | own contract | MultiSendCallOnly (selected) `0x9641d7...8102e2` — deployed 2023-06-10 03:42:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Safe_Audit_Report_1_4_0.pdf | SignMessageLib | own contract | SignMessageLib (selected) `0xd53cd0...8012c9` — deployed 2023-06-15 21:12:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Safe_Audit_Report_1_5_0_Ackee.pdf | SafeProxyFactory | own contract | SafeProxyFactory (alternative) `0x4e1dcf...20ec67` — deployed 2023-06-09 08:48:23+03 — liveness: live (current_address_book_code)<br>SafeProxyFactory (selected) `0x14f298...165e7b` — deployed 2025-06-24 17:46:35+03 — liveness: live (current_address_book_code) | deployment-date disambiguation: 2025-06-24 was 27d from audit; next candidate 719d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Safe_Audit_Report_1_4_0.pdf | SafeL2 | own contract | SafeL2 (selected) `0x29fcb43b46531bca003ddc8fcb67ffe91900c762` — deployed 2023-06-15 21:13:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Safe_Audit_Report_1_4_0.pdf | SafeProxyFactory | ambiguous — not counted | SafeProxyFactory (alternative) `0x4e1dcf7ad4e460cfd30791ccc4f9c8a4f820ec67` — deployed 2023-06-09 08:48:23+03 — liveness: live (current_address_book_code)<br>SafeProxyFactory (alternative) `0x14f2982d601c9458f93bd70b218933a6f8165e7b` — deployed 2025-06-24 17:46:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Safe_Audit_Report_1_4_0.pdf | CompatibilityFallbackHandler | own contract | CompatibilityFallbackHandler (selected) `0x3efcbb83a4a7afcb4f68d501e2c2203a38be77f4` — deployed 2025-06-24 17:46:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Safe_Audit_Report_1_4_0.pdf | MultiSendCallOnly | own contract | MultiSendCallOnly (selected) `0x9641d764fc13c8b624c04430c7356c1c7c8102e2` — deployed 2023-06-10 03:42:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Safe_Audit_Report_1_4_0.pdf | SignMessageLib | own contract | SignMessageLib (selected) `0xd53cd0ab83d845ac265be939c57f53ad838012c9` — deployed 2023-06-15 21:12:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Safe_Audit_Report_1_5_0_Ackee.pdf | SafeProxyFactory | own contract | SafeProxyFactory (alternative) `0x4e1dcf7ad4e460cfd30791ccc4f9c8a4f820ec67` — deployed 2023-06-09 08:48:23+03 — liveness: live (current_address_book_code)<br>SafeProxyFactory (selected) `0x14f2982d601c9458f93bd70b218933a6f8165e7b` — deployed 2025-06-24 17:46:35+03 — liveness: live (current_address_book_code) | deployment-date disambiguation: 2025-06-24 was 27d from audit; next candidate 719d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Safe_Audit_Report_1_5_0_Ackee.pdf | SafeProxy | unmatched — not counted | — | listed in scope and findings | no |
-| Safe_Audit_Report_1_5_0_Ackee.pdf | CompatibilityFallbackHandler | own contract | CompatibilityFallbackHandler (selected) `0x3efcbb...be77f4` — deployed 2025-06-24 17:46:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Safe_Audit_Report_1_5_0_Ackee.pdf | CompatibilityFallbackHandler | own contract | CompatibilityFallbackHandler (selected) `0x3efcbb83a4a7afcb4f68d501e2c2203a38be77f4` — deployed 2025-06-24 17:46:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Safe_Audit_Report_1_5_0_Ackee.pdf | SafeToL2Migration | unmatched — not counted | — | listed in scope and findings | no |
-| Safe_Audit_Report_1_5_0_Ackee.pdf | Safe | own contract | Safe (alternative) `0x41675c...c7461a` — deployed 2023-06-15 21:16:47+03 — liveness: live (current_address_book_code)<br>Safe (selected) `0xff51a5...2ca44b` — deployed 2025-07-03 14:46:35+03 — liveness: live (current_address_book_code) | deployment-date disambiguation: 2025-07-03 was 36d from audit; next candidate 713d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Safe_Audit_Report_1_5_0_Ackee.pdf | Safe | own contract | Safe (alternative) `0x41675c099f32341bf84bfc5382af534df5c7461a` — deployed 2023-06-15 21:16:47+03 — liveness: live (current_address_book_code)<br>Safe (selected) `0xff51a5898e281db6dfc7855790607438df2ca44b` — deployed 2025-07-03 14:46:35+03 — liveness: live (current_address_book_code) | deployment-date disambiguation: 2025-07-03 was 36d from audit; next candidate 713d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Safe_Audit_Report_1_5_0_Ackee.pdf | TokenCallbackHandler | unmatched — not counted | — | listed in scope and findings | no |
 | Safe_Audit_Report_1_5_0_Ackee.pdf | FallbackManager | unmatched — not counted | — | listed in scope and findings | no |
 | Safe_Audit_Report_1_5_0_Ackee.pdf | SignatureVerifierMuxer | unmatched — not counted | — | listed in scope and findings | no |
-| Safe_Audit_Report_1_5_0_Ackee.pdf | MultiSendCallOnly | own contract | MultiSendCallOnly (selected) `0x9641d7...8102e2` — deployed 2023-06-10 03:42:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Safe_Audit_Report_1_5_0_Ackee.pdf | MultiSend | own contract | MultiSend (alternative) `0xa238cb...7e7761` — deployed 2021-05-25 18:18:32+03 — liveness: live (current_address_book_code)<br>MultiSend (selected) `0x218543...7d7eb7` — deployed 2025-06-24 17:47:35+03 — liveness: live (current_address_book_code) | deployment-date disambiguation: 2025-06-24 was 27d from audit; next candidate 1464d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Safe_Audit_Report_1_5_0_Ackee.pdf | MultiSendCallOnly | own contract | MultiSendCallOnly (selected) `0x9641d764fc13c8b624c04430c7356c1c7c8102e2` — deployed 2023-06-10 03:42:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Safe_Audit_Report_1_5_0_Ackee.pdf | MultiSend | own contract | MultiSend (alternative) `0xa238cbeb142c10ef7ad8442c6d1f9e89e07e7761` — deployed 2021-05-25 18:18:32+03 — liveness: live (current_address_book_code)<br>MultiSend (selected) `0x218543288004cd07832472d464648173c77d7eb7` — deployed 2025-06-24 17:47:35+03 — liveness: live (current_address_book_code) | deployment-date disambiguation: 2025-06-24 was 27d from audit; next candidate 1464d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Safe_Audit_Report_1_5_0_Ackee.pdf | ModuleManager | unmatched — not counted | — | listed in scope and findings | no |
 | Safe_Audit_Report_1_5_0_Ackee.pdf | ERC165Handler | unmatched — not counted | — | listed in scope and findings | no |
 | Safe_Audit_Report_1_5_0_Ackee.pdf | ExtensibleBase | unmatched — not counted | — | listed in scope and findings | no |
@@ -417,15 +417,15 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Safe_Audit_Report_1_5_0_Ackee.pdf | OwnerManager | unmatched — not counted | — | listed in scope and findings | no |
 | Safe_Audit_Report_1_5_0_Ackee.pdf | SafeStorage | unmatched — not counted | — | listed in scope and findings | no |
 | Safe_Audit_Report_1_5_0_Ackee.pdf | SignatureValidatorConstants | unmatched — not counted | — | listed in scope and findings | no |
-| Safe_Audit_Report_1_5_0_Ackee.pdf | SignMessageLib | own contract | SignMessageLib (selected) `0xd53cd0...8012c9` — deployed 2023-06-15 21:12:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Safe_Audit_Report_1_5_0_Ackee.pdf | SignMessageLib | own contract | SignMessageLib (selected) `0xd53cd0ab83d845ac265be939c57f53ad838012c9` — deployed 2023-06-15 21:12:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Safe_Audit_Report_1_5_0_Ackee.pdf | GuardManager | unmatched — not counted | — | listed in scope and findings | no |
 | Safe_Audit_Report_1_5_0_Ackee.pdf | Executor | unmatched — not counted | — | listed in scope and findings | no |
 | Safe_Audit_Report_1_5_0_Ackee.pdf | ExtensibleFallbackHandler | unmatched — not counted | — | listed in scope and findings | no |
 | Safe_Audit_Report_1_5_0_Ackee.pdf | ISafe | unmatched — not counted | — | listed in scope and findings | no |
 | Safe_Audit_Report_1_5_0_Ackee.pdf | INativeCurrencyPaymentFallback | unmatched — not counted | — | listed in scope and findings | no |
 | Safe_Audit_Report_1_5_0_Ackee.pdf | MarshalLib | unmatched — not counted | — | listed in scope and findings | no |
-| Safe_Audit_Report_1_5_0_Certora.pdf | Safe | ambiguous — not counted | Safe (alternative) `0x41675c...c7461a` — deployed 2023-06-15 21:16:47+03 — liveness: live (current_address_book_code)<br>Safe (alternative) `0xff51a5...2ca44b` — deployed 2025-07-03 14:46:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| Safe_Audit_Report_1_5_0_Certora.pdf | SafeL2 | own contract | SafeL2 (selected) `0x29fcb4...00c762` — deployed 2023-06-15 21:13:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Safe_Audit_Report_1_5_0_Certora.pdf | Safe | ambiguous — not counted | Safe (alternative) `0x41675c099f32341bf84bfc5382af534df5c7461a` — deployed 2023-06-15 21:16:47+03 — liveness: live (current_address_book_code)<br>Safe (alternative) `0xff51a5898e281db6dfc7855790607438df2ca44b` — deployed 2025-07-03 14:46:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Safe_Audit_Report_1_5_0_Certora.pdf | SafeL2 | own contract | SafeL2 (selected) `0x29fcb43b46531bca003ddc8fcb67ffe91900c762` — deployed 2023-06-15 21:13:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Safe_Audit_Report_1_5_0_Certora.pdf | SimulateTxAccessor | unmatched — not counted | — | listed in scope | no |
 | Safe_Audit_Report_1_5_0_Certora.pdf | Executor | unmatched — not counted | — | listed in scope | no |
 | Safe_Audit_Report_1_5_0_Certora.pdf | FallbackManager | unmatched — not counted | — | listed in scope | no |
@@ -445,22 +445,22 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Safe_Audit_Report_1_5_0_Certora.pdf | MarshalLib | unmatched — not counted | — | listed in scope | no |
 | Safe_Audit_Report_1_5_0_Certora.pdf | SignatureVerifierMuxer | unmatched — not counted | — | listed in scope | no |
 | Safe_Audit_Report_1_5_0_Certora.pdf | TokenCallbacks | unmatched — not counted | — | listed in scope | no |
-| Safe_Audit_Report_1_5_0_Certora.pdf | CompatibilityFallbackHandler | own contract | CompatibilityFallbackHandler (selected) `0x3efcbb...be77f4` — deployed 2025-06-24 17:46:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Safe_Audit_Report_1_5_0_Certora.pdf | CompatibilityFallbackHandler | own contract | CompatibilityFallbackHandler (selected) `0x3efcbb83a4a7afcb4f68d501e2c2203a38be77f4` — deployed 2025-06-24 17:46:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Safe_Audit_Report_1_5_0_Certora.pdf | ExtensibleFallbackHandler | unmatched — not counted | — | listed in scope | no |
 | Safe_Audit_Report_1_5_0_Certora.pdf | HandlerContext | unmatched — not counted | — | listed in scope | no |
 | Safe_Audit_Report_1_5_0_Certora.pdf | TokenCallbackHandler | unmatched — not counted | — | listed in scope | no |
-| Safe_Audit_Report_1_5_0_Certora.pdf | CreateCall | own contract | CreateCall (selected) `0x2ef5ec...da90b4` — deployed 2025-06-24 17:47:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Safe_Audit_Report_1_5_0_Certora.pdf | CreateCall | own contract | CreateCall (selected) `0x2ef5ecfbea521449e4de05edb1ce63b75eda90b4` — deployed 2025-06-24 17:47:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Safe_Audit_Report_1_5_0_Certora.pdf | Enum | unmatched — not counted | — | listed in scope | no |
 | Safe_Audit_Report_1_5_0_Certora.pdf | ErrorMessage | unmatched — not counted | — | listed in scope | no |
-| Safe_Audit_Report_1_5_0_Certora.pdf | MultiSend | ambiguous — not counted | MultiSend (alternative) `0xa238cb...7e7761` — deployed 2021-05-25 18:18:32+03 — liveness: live (current_address_book_code)<br>MultiSend (alternative) `0x218543...7d7eb7` — deployed 2025-06-24 17:47:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| Safe_Audit_Report_1_5_0_Certora.pdf | MultiSendCallOnly | own contract | MultiSendCallOnly (selected) `0x9641d7...8102e2` — deployed 2023-06-10 03:42:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Safe_Audit_Report_1_5_0_Certora.pdf | MultiSend | ambiguous — not counted | MultiSend (alternative) `0xa238cbeb142c10ef7ad8442c6d1f9e89e07e7761` — deployed 2021-05-25 18:18:32+03 — liveness: live (current_address_book_code)<br>MultiSend (alternative) `0x218543288004cd07832472d464648173c77d7eb7` — deployed 2025-06-24 17:47:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Safe_Audit_Report_1_5_0_Certora.pdf | MultiSendCallOnly | own contract | MultiSendCallOnly (selected) `0x9641d764fc13c8b624c04430c7356c1c7c8102e2` — deployed 2023-06-10 03:42:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Safe_Audit_Report_1_5_0_Certora.pdf | SafeMigration | unmatched — not counted | — | listed in scope | no |
 | Safe_Audit_Report_1_5_0_Certora.pdf | SafeStorage | unmatched — not counted | — | listed in scope | no |
 | Safe_Audit_Report_1_5_0_Certora.pdf | SafeToL2Migration | unmatched — not counted | — | listed in scope | no |
 | Safe_Audit_Report_1_5_0_Certora.pdf | SafeToL2Setup | unmatched — not counted | — | listed in scope | no |
-| Safe_Audit_Report_1_5_0_Certora.pdf | SignMessageLib | own contract | SignMessageLib (selected) `0xd53cd0...8012c9` — deployed 2023-06-15 21:12:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Safe_Audit_Report_1_5_0_Certora.pdf | SignMessageLib | own contract | SignMessageLib (selected) `0xd53cd0ab83d845ac265be939c57f53ad838012c9` — deployed 2023-06-15 21:12:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Safe_Audit_Report_1_5_0_Certora.pdf | SafeProxy | unmatched — not counted | — | listed in scope | no |
-| Safe_Audit_Report_1_5_0_Certora.pdf | SafeProxyFactory | ambiguous — not counted | SafeProxyFactory (alternative) `0x4e1dcf...20ec67` — deployed 2023-06-09 08:48:23+03 — liveness: live (current_address_book_code)<br>SafeProxyFactory (alternative) `0x14f298...165e7b` — deployed 2025-06-24 17:46:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Safe_Audit_Report_1_5_0_Certora.pdf | SafeProxyFactory | ambiguous — not counted | SafeProxyFactory (alternative) `0x4e1dcf7ad4e460cfd30791ccc4f9c8a4f820ec67` — deployed 2023-06-09 08:48:23+03 — liveness: live (current_address_book_code)<br>SafeProxyFactory (alternative) `0x14f2982d601c9458f93bd70b218933a6f8165e7b` — deployed 2025-06-24 17:46:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | Safe_Library_Contracts_Audit_Report_1_4_1.pdf | SafeMigration | unmatched — not counted | — | listed in scope table and project overview | no |
 | Safe_Library_Contracts_Audit_Report_1_4_1.pdf | SafeToL2Setup | unmatched — not counted | — | listed in scope table and project overview | no |
 | Safe_Library_Contracts_Audit_Report_1_4_1.pdf | SafeToL2Migration | unmatched — not counted | — | listed in scope table and project overview | no |

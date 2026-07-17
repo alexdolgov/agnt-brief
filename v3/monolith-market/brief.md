@@ -53,8 +53,8 @@ The pinned logic-topography run contains 2 contract row(s) across ethereum, sepo
 
 ### Forked Contracts
 
-**Metadata** (`0x2afb12...8f581a`, chain 1)
-Origin: inverse-finance (`0x2afb12...8f581a`)
+**Metadata** (`0x2afb125bb848049b54d0903a1fd365e7518f581a`, chain 1)
+Origin: inverse-finance (`0x2afb125bb848049b54d0903a1fd365e7518f581a`)
 Containment: 100.0% - 15 functions inherited
 Centroid audit status: pending_validation
 
@@ -64,8 +64,8 @@ Removals (removed from original): none
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x6d961c...39b849`, chain 1)
-- Lens (`0x8aab59...01e60d`, chain 1)
+- UnnamedContract (`0x6d961c9dcf1ad73566822ba4b087892e3839b849`, chain 1)
+- Lens (`0x8aab59675e123ceefe5e05b0bc1be8fe6101e60d`, chain 1)
 
 ## Contract Surface Quality
 
@@ -109,15 +109,15 @@ Removals (removed from original): none
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Lens | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389171 | `0x8aab59...01e60d` | ✅ Audited |
+| Lens | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389171 | `0x8aab59675e123ceefe5e05b0bc1be8fe6101e60d` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2c13d0...618d83` | ⚠️ Unaudited |
-| Metadata | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389169 | `0x2afb12...8f581a` | ⚠️ Unaudited |
-| Timelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x926df1...659d5b` | ⚠️ Unaudited |
+| Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2c13d0f087c42644fcdeeb0f4d0a272c50618d83` | ⚠️ Unaudited |
+| Metadata | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389169 | `0x2afb125bb848049b54d0903a1fd365e7518f581a` | ⚠️ Unaudited |
+| Timelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x926df14a23be491164dcf93f4c468a50ef659d5b` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -137,10 +137,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389170 | `0x6d961c...39b849` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-389172 | `0x365009...19e4d2` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-389173 | `0x823427...3d2a22` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-389174 | `0x8aab59...01e60d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389170 | `0x6d961c9dcf1ad73566822ba4b087892e3839b849` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-389172 | `0x365009fa2ddb17f386e20854e4b281827619e4d2` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-389173 | `0x82342771d91a4daa9947419d1e0f95fe7e3d2a22` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-389174 | `0x8aab59675e123ceefe5e05b0bc1be8fe6101e60d` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -175,25 +175,25 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | yAudit-Monolith-Report-June-2025.pdf | Vault | unmatched — not counted | — | listed in scope | no |
 | yAudit-Monolith-Report-June-2025.pdf | Lender | unmatched — not counted | — | listed in scope | no |
 | yAudit-Monolith-Report-June-2025.pdf | InterestModel | unmatched — not counted | — | listed in scope | no |
-| yAudit-Monolith-Report-June-2025.pdf | Factory | own contract | 0x6d961c… (selected) `0x6d961c...39b849` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| yAudit-Monolith-Report-June-2025.pdf | Factory | own contract | 0x6d961c… (selected) `0x6d961c9dcf1ad73566822ba4b087892e3839b849` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | yAudit-Monolith-Report-June-2025.pdf | Coin | unmatched — not counted | — | listed in scope | no |
-| ChainSecurity-Monolith-Audit-Report-October-2025.pdf | Factory | own contract | 0x6d961c… (selected) `0x6d961c...39b849` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity-Monolith-Audit-Report-October-2025.pdf | Factory | own contract | 0x6d961c… (selected) `0x6d961c9dcf1ad73566822ba4b087892e3839b849` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ChainSecurity-Monolith-Audit-Report-October-2025.pdf | Coin | unmatched — not counted | — | listed in scope table | no |
 | ChainSecurity-Monolith-Audit-Report-October-2025.pdf | InterestModel | unmatched — not counted | — | listed in scope table | no |
 | ChainSecurity-Monolith-Audit-Report-October-2025.pdf | Vault | unmatched — not counted | — | listed in scope table | no |
 | ChainSecurity-Monolith-Audit-Report-October-2025.pdf | Lender | unmatched — not counted | — | listed in scope table | no |
 | Sherlock-Monolith-Public-Audit-Contest-Report-December-2025.pdf | Coin | unmatched — not counted | — | listed in scope | no |
-| Sherlock-Monolith-Public-Audit-Contest-Report-December-2025.pdf | Factory | own contract | 0x6d961c… (selected) `0x6d961c...39b849` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Sherlock-Monolith-Public-Audit-Contest-Report-December-2025.pdf | Factory | own contract | 0x6d961c… (selected) `0x6d961c9dcf1ad73566822ba4b087892e3839b849` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Sherlock-Monolith-Public-Audit-Contest-Report-December-2025.pdf | InterestModel | unmatched — not counted | — | listed in scope | no |
 | Sherlock-Monolith-Public-Audit-Contest-Report-December-2025.pdf | Lender | unmatched — not counted | — | listed in scope | no |
-| Sherlock-Monolith-Public-Audit-Contest-Report-December-2025.pdf | Lens | own contract | Lens (selected) `0x8aab59...01e60d` — deployed 2026-04-18 14:36:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Sherlock-Monolith-Public-Audit-Contest-Report-December-2025.pdf | Lens | own contract | Lens (selected) `0x8aab59675e123ceefe5e05b0bc1be8fe6101e60d` — deployed 2026-04-18 14:36:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Sherlock-Monolith-Public-Audit-Contest-Report-December-2025.pdf | Vault | unmatched — not counted | — | listed in scope | no |
-| ChainSecurity-Monolith-Re-Audit-Report-March-2026.pdf | Factory | own contract | 0x6d961c… (selected) `0x6d961c...39b849` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity-Monolith-Re-Audit-Report-March-2026.pdf | Factory | own contract | 0x6d961c… (selected) `0x6d961c9dcf1ad73566822ba4b087892e3839b849` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ChainSecurity-Monolith-Re-Audit-Report-March-2026.pdf | Coin | unmatched — not counted | — | listed in scope table | no |
 | ChainSecurity-Monolith-Re-Audit-Report-March-2026.pdf | InterestModel | unmatched — not counted | — | listed in scope table | no |
 | ChainSecurity-Monolith-Re-Audit-Report-March-2026.pdf | Vault | unmatched — not counted | — | listed in scope table | no |
 | ChainSecurity-Monolith-Re-Audit-Report-March-2026.pdf | Lender | unmatched — not counted | — | listed in scope table | no |
-| Sherlock-AI-Monolith-Audit-Report-April-2026.pdf | Factory | own contract | 0x6d961c… (selected) `0x6d961c...39b849` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Sherlock-AI-Monolith-Audit-Report-April-2026.pdf | Factory | own contract | 0x6d961c… (selected) `0x6d961c9dcf1ad73566822ba4b087892e3839b849` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Sherlock-AI-Monolith-Audit-Report-April-2026.pdf | Coin | unmatched — not counted | — | listed in scope | no |
 | Sherlock-AI-Monolith-Audit-Report-April-2026.pdf | InterestModel | unmatched — not counted | — | listed in scope | no |
 | Sherlock-AI-Monolith-Audit-Report-April-2026.pdf | Vault | unmatched — not counted | — | listed in scope | no |
@@ -202,7 +202,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Nemesis-Monolith-Audit-Report-April-2026.md | Vault | unmatched — not counted | — | listed in scope | no |
 | Nemesis-Monolith-Audit-Report-April-2026.md | Coin | unmatched — not counted | — | listed in scope | no |
 | Nemesis-Monolith-Audit-Report-April-2026.md | InterestModel | unmatched — not counted | — | listed in scope | no |
-| Nemesis-Monolith-Audit-Report-April-2026.md | Factory | own contract | 0x6d961c… (selected) `0x6d961c...39b849` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Nemesis-Monolith-Audit-Report-April-2026.md | Factory | own contract | 0x6d961c… (selected) `0x6d961c9dcf1ad73566822ba4b087892e3839b849` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 
 ## Coverage Gaps
 
@@ -210,7 +210,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x2afb12...8f581a` | Metadata | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x2afb125bb848049b54d0903a1fd365e7518f581a` | Metadata | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

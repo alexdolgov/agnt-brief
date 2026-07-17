@@ -57,9 +57,9 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum, base
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x831cfd...3d60c0`, chain 8453)
-- UnnamedContract (`0x5e645c...0ce0c0`, chain 42161)
-- Alphix (`0x0e4b89...5660c0`, chain 8453)
+- UnnamedContract (`0x831cfdf7c0e194f5369f204b3dd2481b843d60c0`, chain 8453)
+- UnnamedContract (`0x5e645c3d580976ca9e3fe77525d954e73a0ce0c0`, chain 42161)
+- Alphix (`0x0e4b892df7c5bcf5010faf4aa106074e555660c0`, chain 8453)
 
 ## Contract Surface Quality
 
@@ -104,14 +104,14 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum, base
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Alphix | unknown | project_anchor | own_supporting | 0 | base | unit-378729 | `0x0e4b89...5660c0` | ✅ Audited |
+| Alphix | unknown | project_anchor | own_supporting | 0 | base | unit-378729 | `0x0e4b892df7c5bcf5010faf4aa106074e555660c0` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AlphixLVRFee | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x7cbbff...1b9044` | ⚠️ Unaudited |
-| AlphixPro | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2f9cf8...3f9080` | ⚠️ Unaudited |
+| AlphixLVRFee | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x7cbbff9c4fcd74b221c535f4fb4b1db04f1b9044` | ⚠️ Unaudited |
+| AlphixPro | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2f9cf87a6cbfa53c3f1b184900de17298e3f9080` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -131,12 +131,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-378730 | `0x831cfd...3d60c0` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-378728 | `0x5e645c...0ce0c0` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | base-sepolia | unit-378731 | `0x285a19...a17fc0` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | base-sepolia | unit-378732 | `0x3c59d4...d07cb0` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | base-sepolia | unit-378733 | `0x5a22aa...794b54` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | base-sepolia | unit-378734 | `0x876895...d23a34` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-378730 | `0x831cfdf7c0e194f5369f204b3dd2481b843d60c0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-378728 | `0x5e645c3d580976ca9e3fe77525d954e73a0ce0c0` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | base-sepolia | unit-378731 | `0x285a195230239822adbc6fd2281c7b1de1a17fc0` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | base-sepolia | unit-378732 | `0x3c59d4d01682c6180a564f52573c07372bd07cb0` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | base-sepolia | unit-378733 | `0x5a22aa4a4b62e3ee72cb6d077b0873d6aa794b54` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | base-sepolia | unit-378734 | `0x8768950eb999faa53c8b0aa0cd7dcc19b9d23a34` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -159,7 +159,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
 | | Sherlock | [Github](https://github.com/alphixfi/alphix-core) | [Github]() | December 2025 | 0 High, 0 Medium, 6 Low/Info. All fixed. | | AlphixLogic | unmatched — not counted | — | listed in scope | no |
-| | Sherlock | [Github](https://github.com/alphixfi/alphix-core) | [Github]() | December 2025 | 0 High, 0 Medium, 6 Low/Info. All fixed. | | Alphix | own contract | Alphix (selected) `0x0e4b89...5660c0` — deployed 2026-02-10 21:30:53+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Sherlock | [Github](https://github.com/alphixfi/alphix-core) | [Github]() | December 2025 | 0 High, 0 Medium, 6 Low/Info. All fixed. | | Alphix | own contract | Alphix (selected) `0x0e4b892df7c5bcf5010faf4aa106074e555660c0` — deployed 2026-02-10 21:30:53+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | Sherlock | [Github](https://github.com/alphixfi/alphix-core) | [Github]() | December 2025 | 0 High, 0 Medium, 6 Low/Info. All fixed. | | BaseDynamicFee | unmatched — not counted | — | listed in scope | no |
 | | Sherlock | [Github](https://github.com/alphixfi/alphix-core) | [Github]() | December 2025 | 0 High, 0 Medium, 6 Low/Info. All fixed. | | IAlphixLogic | unmatched — not counted | — | listed in scope | no |
 | | Sherlock | [Github](https://github.com/alphixfi/alphix-core) | [Github]() | December 2025 | 0 High, 0 Medium, 6 Low/Info. All fixed. | | IAlphix | unmatched — not counted | — | listed in scope | no |
@@ -167,7 +167,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | | Sherlock | [Github](https://github.com/alphixfi/alphix-core) | [Github]() | December 2025 | 0 High, 0 Medium, 6 Low/Info. All fixed. | | AlphixGlobalConstants | unmatched — not counted | — | listed in scope | no |
 | | Sherlock | [Github](https://github.com/alphixfi/alphix-core) | [Github]() | December 2025 | 0 High, 0 Medium, 6 Low/Info. All fixed. | | DynamicFee | unmatched — not counted | — | listed in scope | no |
 | | Sherlock | [Github](https://github.com/alphixfi/alphix-core) | [Github]() | December 2025 | 0 High, 0 Medium, 6 Low/Info. All fixed. | | Registry | unmatched — not counted | — | listed in scope | no |
-| BugPocer_Alphix.pdf | Alphix | own contract | Alphix (selected) `0x0e4b89...5660c0` — deployed 2026-02-10 21:30:53+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| BugPocer_Alphix.pdf | Alphix | own contract | Alphix (selected) `0x0e4b892df7c5bcf5010faf4aa106074e555660c0` — deployed 2026-02-10 21:30:53+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 
 ## Coverage Gaps
 

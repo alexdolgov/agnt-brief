@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across avalanche. Str
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- RestrictedLockupToken (`0x7c6a93...a8f7a7`, chain 43114)
+- RestrictedLockupToken (`0x7c6a937943f135283a2561938de2200994a8f7a7`, chain 43114)
 
 ## Contract Surface Quality
 
@@ -103,11 +103,11 @@ The pinned logic-topography run contains 1 contract row(s) across avalanche. Str
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Dividends | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x790e11...4df7e4` | ⚠️ Unaudited |
-| GnosisSafeProxy | governance | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x386f94...ef18f4` | ⚠️ Unaudited |
-| RestrictedLockupToken | token | project_anchor | own_supporting | 0 | avalanche | unit-391366 | `0x7c6a93...a8f7a7` | ⚠️ Unaudited |
-| RestrictedSwap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x97af8f...d33576` | ⚠️ Unaudited |
-| TransferRules | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xfb2310...cb81e7` | ⚠️ Unaudited |
+| Dividends | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x790e115a36c158908716934082cce8fc194df7e4` | ⚠️ Unaudited |
+| GnosisSafeProxy | governance | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x386f942cbc11be2dae9de41cbb44f18b6fef18f4` | ⚠️ Unaudited |
+| RestrictedLockupToken | token | project_anchor | own_supporting | 0 | avalanche | unit-391366 | `0x7c6a937943f135283a2561938de2200994a8f7a7` | ⚠️ Unaudited |
+| RestrictedSwap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x97af8f20ad2e7c5cae81682180011ffb16d33576` | ⚠️ Unaudited |
+| TransferRules | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xfb23108ebefcb2079a98aa7b2480307f47cb81e7` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -144,7 +144,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| avalanche | `0x7c6a93...a8f7a7` | RestrictedLockupToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | `0x7c6a937943f135283a2561938de2200994a8f7a7` | RestrictedLockupToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

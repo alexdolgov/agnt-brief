@@ -52,21 +52,21 @@ The pinned logic-topography run contains 17 contract row(s) across bsc, ethereum
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x420000...000014`, chain 10)
-- UnnamedContract (`0x420000...000017`, chain 10)
-- UnnamedContract (`0x420000...000019`, chain 10)
-- UnnamedContract (`0x420000...00001a`, chain 10)
-- GovernanceToken (`0x420000...000042`, chain 10)
-- Proxy (`0x420000...000007`, chain 10)
-- Proxy (`0x420000...00000f`, chain 10)
-- Proxy (`0x420000...000010`, chain 10)
-- Proxy (`0x420000...000011`, chain 10)
-- Proxy (`0x420000...000012`, chain 10)
-- Proxy (`0x420000...000015`, chain 10)
-- Proxy (`0x420000...000016`, chain 10)
-- Proxy (`0x420000...000018`, chain 10)
-- Proxy (`0x420000...000020`, chain 10)
-- Proxy (`0x420000...000021`, chain 10)
+- UnnamedContract (`0x4200000000000000000000000000000000000014`, chain 10)
+- UnnamedContract (`0x4200000000000000000000000000000000000017`, chain 10)
+- UnnamedContract (`0x4200000000000000000000000000000000000019`, chain 10)
+- UnnamedContract (`0x420000000000000000000000000000000000001a`, chain 10)
+- GovernanceToken (`0x4200000000000000000000000000000000000042`, chain 10)
+- Proxy (`0x4200000000000000000000000000000000000007`, chain 10)
+- Proxy (`0x420000000000000000000000000000000000000f`, chain 10)
+- Proxy (`0x4200000000000000000000000000000000000010`, chain 10)
+- Proxy (`0x4200000000000000000000000000000000000011`, chain 10)
+- Proxy (`0x4200000000000000000000000000000000000012`, chain 10)
+- Proxy (`0x4200000000000000000000000000000000000015`, chain 10)
+- Proxy (`0x4200000000000000000000000000000000000016`, chain 10)
+- Proxy (`0x4200000000000000000000000000000000000018`, chain 10)
+- Proxy (`0x4200000000000000000000000000000000000020`, chain 10)
+- Proxy (`0x4200000000000000000000000000000000000021`, chain 10)
 
 ## Contract Surface Quality
 
@@ -112,30 +112,30 @@ The pinned logic-topography run contains 17 contract row(s) across bsc, ethereum
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BinanceHemiOFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 4 deployments: bsc `0x5ffd0e...5afc5b`; bsc `0xb8dbff...a2c3c3`; bsc `0xd275f9...42506e`; bsc `0xfc5538...e91575` | ⚠️ Unaudited |
-| EAS | unknown | project_anchor | own_supporting | 1 | optimism | unit-241871 | `0x420000...000021` | ⚠️ Unaudited |
-| GasPriceOracle | operational_periphery | project_anchor | own_supporting | 1 | optimism | unit-241864 | `0x420000...00000f` | ⚠️ Unaudited |
-| GnosisSafeProxyFactory | registry | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241842 | `0xa6b71e...896ab2` | ⚠️ Unaudited |
-| GnosisSafeProxyFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xa6b71e...896ab2` | ⚠️ Unaudited |
-| GovernanceToken | token | project_anchor | own_supporting | 0 | optimism | unit-241858 | `0x420000...000042` | ⚠️ Unaudited |
-| Hemi | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xeb964a...4f484d` | ⚠️ Unaudited |
-| HemiLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 4 deployments: bsc `0x0795a3...ff1026`; bsc `0x7070fa...fb89f9`; bsc `0x86bb2b...94046b`; bsc `0xfbe1ba...6eae8b` | ⚠️ Unaudited |
-| L1Block | unknown | project_anchor | own_supporting | 1 | optimism | unit-241865 | `0x420000...000015` | ⚠️ Unaudited |
-| L1StandardBridge | bridge_template | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-241861 | `0x5eaa10...9f191e` | ⚠️ Unaudited |
-| L2CrossDomainMessenger | unknown | project_anchor | own_supporting | 1 | optimism | unit-241862 | `0x420000...000007` | ⚠️ Unaudited |
-| L2OutputOracle | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-241859 | `0x6daf3a...9c0d51` | ⚠️ Unaudited |
-| L2StandardBridge | operational_periphery | project_anchor | own_supporting | 1 | optimism | unit-241868 | `0x420000...000010` | ⚠️ Unaudited |
-| L2ToL1MessagePasser | unknown | project_anchor | own_supporting | 1 | optimism | unit-241863 | `0x420000...000016` | ⚠️ Unaudited |
-| MIPS | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241832 | `0x42ff66...ba9c2a` | ⚠️ Unaudited |
-| MockDstOFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 35 deployments: bsc `0x04db2d...cec72c`; bsc `0x14c9bc...298fba`; bsc `0x182c58...8463a1`; bsc `0x25c304...77d608`; bsc `0x2dd586...1142a8`; bsc `0x3a82a4...9cd2f4`; bsc `0x3ea24e...fbbcad`; bsc `0x466140...53a8f3`; bsc `0x4f2acd...1bd83e`; bsc `0x4ff907...c0f538`; bsc `0x51bc60...865761`; bsc `0x656f1f...c9e4d0`; bsc `0x6e3ac5...245365`; bsc `0x760c66...4ba3b7`; bsc `0x790e5f...e36acb`; bsc `0x8e4f0e...6110bf`; bsc `0x8f1561...9c0bb3`; bsc `0x951f5d...7d2c1d`; bsc `0x9bfc21...722406`; bsc `0xa3ceec...ac4da2`; bsc `0xb908ca...0c476e`; bsc `0xbd5caa...128a66`; bsc `0xbf504a...fb3735`; bsc `0xbf7d0f...35b2e2`; bsc `0xc340d0...090657`; bsc `0xc9ffa2...a03b46`; bsc `0xd86a00...df086b`; bsc `0xdb2d0b...2c3766`; bsc `0xdbd9cf...3bd39a`; bsc `0xe002c5...9e0ed9`; bsc `0xe2a466...ba8cc8`; bsc `0xe2adb4...77f938`; bsc `0xf22873...9b7e0f`; bsc `0xf3b36c...5893e0`; bsc `0xffd74e...2dfd09` | ⚠️ Unaudited |
-| MockLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0x32a21e...169a23`; bsc `0xded54c...aad82e` | ⚠️ Unaudited |
-| OFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 6 deployments: bsc `0x10061d...7b180c`; bsc `0x37d8c0...74d931`; bsc `0x64b5bb...609373`; bsc `0x707c24...412075`; bsc `0xa30e1a...076f30`; bsc `0xc141b6...a96515` | ⚠️ Unaudited |
-| OptimismMintableERC20Factory | registry | project_anchor | own_supporting | 1 | optimism | unit-241869 | `0x420000...000012` | ⚠️ Unaudited |
-| OptimismPortal | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-241860 | `0x39a000...3a4d7e` | ⚠️ Unaudited |
-| PreimageOracle | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241836 | `0x613f36...24ed20` | ⚠️ Unaudited |
-| ProxyAdmin | governance | project_anchor | own_supporting | 1 | optimism | unit-241867 | `0x420000...000018` | ⚠️ Unaudited |
-| SchemaRegistry | registry | project_anchor | own_supporting | 1 | optimism | unit-241866 | `0x420000...000020` | ⚠️ Unaudited |
-| SequencerFeeVault | core_logic | project_anchor | own_supporting | 1 | optimism | unit-241870 | `0x420000...000011` | ⚠️ Unaudited |
+| BinanceHemiOFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 4 deployments: bsc `0x5ffd0eadc186af9512542d0d5e5eafc65d5afc5b`; bsc `0xb8dbff1e8dfa6a8cb2b6702f685e3fb73ba2c3c3`; bsc `0xd275f99dba63259466ef83abf1a9c2effc42506e`; bsc `0xfc553809c82ab0853e5d9e7dd168dd4454e91575` | ⚠️ Unaudited |
+| EAS | unknown | project_anchor | own_supporting | 1 | optimism | unit-241871 | `0x4200000000000000000000000000000000000021` | ⚠️ Unaudited |
+| GasPriceOracle | operational_periphery | project_anchor | own_supporting | 1 | optimism | unit-241864 | `0x420000000000000000000000000000000000000f` | ⚠️ Unaudited |
+| GnosisSafeProxyFactory | registry | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241842 | `0xa6b71e26c5e0845f74c812102ca7114b6a896ab2` | ⚠️ Unaudited |
+| GnosisSafeProxyFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xa6b71e26c5e0845f74c812102ca7114b6a896ab2` | ⚠️ Unaudited |
+| GovernanceToken | token | project_anchor | own_supporting | 0 | optimism | unit-241858 | `0x4200000000000000000000000000000000000042` | ⚠️ Unaudited |
+| Hemi | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xeb964a1a6fab73b8c72a0d15c7337fa4804f484d` | ⚠️ Unaudited |
+| HemiLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 4 deployments: bsc `0x0795a3c4898d823946f953bd1234c0e7b7ff1026`; bsc `0x7070fa313d1514ada227f38a8afcc8e37cfb89f9`; bsc `0x86bb2b7ec923dc0f30a784de00f0737ec094046b`; bsc `0xfbe1baa283c3cdf96052e56eb979e3b01b6eae8b` | ⚠️ Unaudited |
+| L1Block | unknown | project_anchor | own_supporting | 1 | optimism | unit-241865 | `0x4200000000000000000000000000000000000015` | ⚠️ Unaudited |
+| L1StandardBridge | bridge_template | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-241861 | `0x5eaa10f99e7e6d177ef9f74e519e319aa49f191e` | ⚠️ Unaudited |
+| L2CrossDomainMessenger | unknown | project_anchor | own_supporting | 1 | optimism | unit-241862 | `0x4200000000000000000000000000000000000007` | ⚠️ Unaudited |
+| L2OutputOracle | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-241859 | `0x6daf3a3497d8abdfe12915add9829f83a79c0d51` | ⚠️ Unaudited |
+| L2StandardBridge | operational_periphery | project_anchor | own_supporting | 1 | optimism | unit-241868 | `0x4200000000000000000000000000000000000010` | ⚠️ Unaudited |
+| L2ToL1MessagePasser | unknown | project_anchor | own_supporting | 1 | optimism | unit-241863 | `0x4200000000000000000000000000000000000016` | ⚠️ Unaudited |
+| MIPS | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241832 | `0x42ff661af011939f699d67bd021d237ebcba9c2a` | ⚠️ Unaudited |
+| MockDstOFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 35 deployments: bsc `0x04db2da16318e616d28f0da7aa59eeb12acec72c`; bsc `0x14c9bc56eff931ae8625899f1b747d4431298fba`; bsc `0x182c58c10fa565d9d9a3b929294b8803f38463a1`; bsc `0x25c304f15513e9c8054c84ed6a9927e8e677d608`; bsc `0x2dd5869c3d7d251e1e9a452bd7aa2e11c61142a8`; bsc `0x3a82a401a5834a32aa5f6268982805bbb69cd2f4`; bsc `0x3ea24e3727a85a479e29e02cc70e792936fbbcad`; bsc `0x4661407fc224e5432d7f528a20ef8906e453a8f3`; bsc `0x4f2acd70a590736bb6185a7aab503971e61bd83e`; bsc `0x4ff907f877e92ef39cdfba6d0db73e9e2ac0f538`; bsc `0x51bc603a29bef7181e9866ed27beaae215865761`; bsc `0x656f1f3a4df83a10afb2bd2ecad8ef4a96c9e4d0`; bsc `0x6e3ac56a1df60ada3b5563c3a609222045245365`; bsc `0x760c6622e94868f4e6df8e8d25c9c0c8dc4ba3b7`; bsc `0x790e5f103ab69122fc5d9a3d5216fad11fe36acb`; bsc `0x8e4f0e00904d03b2fa805c2b07c436e7a76110bf`; bsc `0x8f156189a3cd28dfc8fb7bbbace58f98f09c0bb3`; bsc `0x951f5d2593e0a678c1192fab4fa3dbbf867d2c1d`; bsc `0x9bfc2143b2729ede4a53b96379b36d6018722406`; bsc `0xa3ceec1740090b303a9682cd43f1f14d7bac4da2`; bsc `0xb908cadb1906b44c3d163486d8ceb9b4370c476e`; bsc `0xbd5caae9f1b73dce4e14790cfdf32de0d0128a66`; bsc `0xbf504a1eb823a0a2964cb043068472f479fb3735`; bsc `0xbf7d0f62b64b23053949b3a88a03da5bfd35b2e2`; bsc `0xc340d0a130663fa901a1bdb7a3ddb911de090657`; bsc `0xc9ffa23308d02dc9cffe955fcce5ffd117a03b46`; bsc `0xd86a00de186222a6720e0838b28ccf46c6df086b`; bsc `0xdb2d0baae78f1dc2a8504b471f3cea257b2c3766`; bsc `0xdbd9cfb0b54c08e75085f8c8844e8054d13bd39a`; bsc `0xe002c5c9ad8f533c17c25df21c453f31849e0ed9`; bsc `0xe2a466df120fb847520763461d99c22ea5ba8cc8`; bsc `0xe2adb496684eb9c43b5025f05b50ee492c77f938`; bsc `0xf228733daa7897dd728b11609b4382b9d69b7e0f`; bsc `0xf3b36c39dd2a5e0407fb3aee0dd444a88d5893e0`; bsc `0xffd74ecf5b4eec6eac2624764933fb5f2e2dfd09` | ⚠️ Unaudited |
+| MockLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0x32a21ec8ee93971d4b4093c0895fd841c7169a23`; bsc `0xded54ce0e6724ffc3992939771e54a6dbcaad82e` | ⚠️ Unaudited |
+| OFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 6 deployments: bsc `0x10061d0593441ff74536158592e1be3f4c7b180c`; bsc `0x37d8c0afeef48aa9d925475cf6c73e4d8c74d931`; bsc `0x64b5bb3b7ef0267019fee5b826c60cb9b7609373`; bsc `0x707c243b59fedf29730cd3d1025fbeeea0412075`; bsc `0xa30e1a67026b9cb4dec0ea2338cc5cd34d076f30`; bsc `0xc141b66ee4262ba46ea29578955c274fd4a96515` | ⚠️ Unaudited |
+| OptimismMintableERC20Factory | registry | project_anchor | own_supporting | 1 | optimism | unit-241869 | `0x4200000000000000000000000000000000000012` | ⚠️ Unaudited |
+| OptimismPortal | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-241860 | `0x39a0005415256b9863afe2d55edcf75ecc3a4d7e` | ⚠️ Unaudited |
+| PreimageOracle | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241836 | `0x613f36be58ba712b37474f4b82484d680d24ed20` | ⚠️ Unaudited |
+| ProxyAdmin | governance | project_anchor | own_supporting | 1 | optimism | unit-241867 | `0x4200000000000000000000000000000000000018` | ⚠️ Unaudited |
+| SchemaRegistry | registry | project_anchor | own_supporting | 1 | optimism | unit-241866 | `0x4200000000000000000000000000000000000020` | ⚠️ Unaudited |
+| SequencerFeeVault | core_logic | project_anchor | own_supporting | 1 | optimism | unit-241870 | `0x4200000000000000000000000000000000000011` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -155,42 +155,42 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241826 | `0x0262fe...09342c` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241828 | `0x04dcfe...ebb634` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241829 | `0x13cb1b...f3ce48` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241830 | `0x15144f...8d2ab8` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000006` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000007` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000010` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000011` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000012` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000014` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000015` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000016` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000017` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241834 | `0x5442d0...2562c3` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241835 | `0x5ae686...5303c3` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7007dd...0b8f12` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241837 | `0x8434dc...25ea69` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9865bb...493754` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241839 | `0xa44633...6bede0` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241841 | `0xa5f377...9f5e43` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241846 | `0xbe81a9...fefb30` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241848 | `0xc56273...a575a3` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241850 | `0xd9db27...709552` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xec9fa5...b7f215` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241851 | `0xf005df...6fb050` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241852 | `0xf44007...f54677` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-241854 | `0x420000...000014` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-241855 | `0x420000...000017` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-241856 | `0x420000...000019` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-241857 | `0x420000...00001a` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0c3497...cb67d6` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x5687ba...d1ee0b` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x963b5b...bd0a34` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xd74432...4d5b30` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe38d19...b3ca10` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe55744...ef005a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241826 | `0x0262fedc4a98f94ddb90cef0e058644d8409342c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241828 | `0x04dcfe50e43823a1d8f6e3fbb8af10bfb7ebb634` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241829 | `0x13cb1b6e69ec8ff6a5c8823d1e8dc78cccf3ce48` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241830 | `0x15144fb8621cb3c4ed3db223c173ffb58c8d2ab8` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4200000000000000000000000000000000000006` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4200000000000000000000000000000000000007` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4200000000000000000000000000000000000010` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4200000000000000000000000000000000000011` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4200000000000000000000000000000000000012` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4200000000000000000000000000000000000014` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4200000000000000000000000000000000000015` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4200000000000000000000000000000000000016` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4200000000000000000000000000000000000017` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241834 | `0x5442d0ddb33b396879d2d016a9ad09ad122562c3` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241835 | `0x5ae68684d9179a8053883f1df599ea7fb35303c3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7007dd1c09527b92aecd8ae6570b73d09e0b8f12` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241837 | `0x8434dc705e4b729405dd66c94dfc62bc3825ea69` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9865bbb4455e6f929fdcbab5505d201b5d493754` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241839 | `0xa446331bd28cbe0186a983a27c528f566b6bede0` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241841 | `0xa5f37791378c55941a52b4dcb70be4d8d09f5e43` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241846 | `0xbe81a9d662422f667f634f3fc301e2e360fefb30` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241848 | `0xc5627348dbc9179cfb5a24c8199635770ea575a3` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241850 | `0xd9db270c1b5e3bd161e8c8503c55ceabee709552` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xec9fa5dac1118963933e1a675a4eea0009b7f215` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241851 | `0xf005dfb08377fad44588af68d0884d272a6fb050` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241852 | `0xf44007eaf2fafdd8ba8d3551f23cd2b879f54677` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-241854 | `0x4200000000000000000000000000000000000014` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-241855 | `0x4200000000000000000000000000000000000017` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-241856 | `0x4200000000000000000000000000000000000019` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-241857 | `0x420000000000000000000000000000000000001a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0c3497c91291f6a8db73efa7565a83f89ccb67d6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x5687ba62088aa4cd6a8df1930798fe510fd1ee0b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x963b5bc11950ab4852e9c60992ec21827ebd0a34` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xd744320abd3bd4445dc3c90c889391bd454d5b30` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe38d19b2950a386f44052ddc07fcb4a6d6b3ca10` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe55744ebb196d0e4ddea70204142eaf517ef005a` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -251,16 +251,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| optimism | `0x420000...000021` | EAS | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | `0x420000...00000f` | GasPriceOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | `0x420000...000042` | GovernanceToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | `0x420000...000015` | L1Block | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | `0x420000...000007` | L2CrossDomainMessenger | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | `0x420000...000010` | L2StandardBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | `0x420000...000016` | L2ToL1MessagePasser | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | `0x420000...000012` | OptimismMintableERC20Factory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | `0x420000...000020` | SchemaRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | `0x420000...000011` | SequencerFeeVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x4200000000000000000000000000000000000021` | EAS | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x420000000000000000000000000000000000000f` | GasPriceOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x4200000000000000000000000000000000000042` | GovernanceToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x4200000000000000000000000000000000000015` | L1Block | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x4200000000000000000000000000000000000007` | L2CrossDomainMessenger | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x4200000000000000000000000000000000000010` | L2StandardBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x4200000000000000000000000000000000000016` | L2ToL1MessagePasser | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x4200000000000000000000000000000000000012` | OptimismMintableERC20Factory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x4200000000000000000000000000000000000020` | SchemaRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x4200000000000000000000000000000000000011` | SequencerFeeVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

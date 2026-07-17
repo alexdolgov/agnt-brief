@@ -52,29 +52,29 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- AlgebraFactory (`0xfb8ed3...c4b0f0`, chain 1)
-- AlgebraFeePluginFactoryV1 (`0x478dc6...5f7fb3`, chain 1)
-- BCTokenDeployer (`0xe5a143...c67d79`, chain 1)
-- BCTokenFactory (`0x5145e1...aa0920`, chain 1)
-- BondingCurve (`0x035d26...035245`, chain 1)
-- CurveMath (`0x78e6b8...199e32`, chain 1)
-- CypherFactory (`0xcc8e4c...48a8d4`, chain 1)
-- CypherRouter (`0xadfd0e...bcc46f`, chain 1)
-- CypherYakRouter (`0x37ca43...1995e3`, chain 1)
-- Distributor (`0x2a7b9e...0362d4`, chain 1)
-- ERC1967Proxy (`0x3f7558...61b9d1`, chain 1)
-- ERC1967Proxy (`0x5163b5...8848b6`, chain 1)
-- ERC1967Proxy (`0xa279ca...249dfd`, chain 1)
-- Harvester (`0x59716f...3f3681`, chain 1)
-- HighlightsManager (`0x6ef6de...415e35`, chain 1)
-- LiquidityManager (`0x141273...aa07dc`, chain 1)
-- NonfungiblePositionManager (`0x0a984a...9a2f7c`, chain 1)
-- Quoter (`0x02f22d...20f723`, chain 1)
-- ReferralManager (`0x4e06b0...88f773`, chain 1)
-- StakingVaultFactory (`0xb4a217...90aa55`, chain 1)
-- SwapRouter (`0x20c589...c0b0ab`, chain 1)
-- TokenVesting (`0x359019...94b348`, chain 1)
-- TransparentUpgradeableProxy (`0xcaf7d2...2b2262`, chain 1)
+- AlgebraFactory (`0xfb8ed3485efa29a0e4bed93351dd51b59fc4b0f0`, chain 1)
+- AlgebraFeePluginFactoryV1 (`0x478dc624b9cfb68ed1cea0e7b51a6279905f7fb3`, chain 1)
+- BCTokenDeployer (`0xe5a1438aca8e48a0d6ef6fc402254b709ec67d79`, chain 1)
+- BCTokenFactory (`0x5145e18526b6851f9e6aa28f11cb667956aa0920`, chain 1)
+- BondingCurve (`0x035d264b16d445eb6a5b3109a40224e210035245`, chain 1)
+- CurveMath (`0x78e6b8e6f479323fbbeb31878c1538c270199e32`, chain 1)
+- CypherFactory (`0xcc8e4c2998395e56d06d985ba791138edf48a8d4`, chain 1)
+- CypherRouter (`0xadfd0ebc71afcd38070a9fb5cecf9a932cbcc46f`, chain 1)
+- CypherYakRouter (`0x37ca43556bb981ca6827b4a92369a28eb61995e3`, chain 1)
+- Distributor (`0x2a7b9e22a76edec50167590fd3198b27040362d4`, chain 1)
+- ERC1967Proxy (`0x3f75580cd579547a69854ac2924371209261b9d1`, chain 1)
+- ERC1967Proxy (`0x5163b56b5275401bdfa5e46c75eb7c9d728848b6`, chain 1)
+- ERC1967Proxy (`0xa279ca693d66fe65ba0062d0218578f424249dfd`, chain 1)
+- Harvester (`0x59716fb1d8a2131c1cab3847842fd6c8583f3681`, chain 1)
+- HighlightsManager (`0x6ef6dec7a077f68424e23f090d5fd57e01415e35`, chain 1)
+- LiquidityManager (`0x14127323b4b84e9688ef1018ab5f641344aa07dc`, chain 1)
+- NonfungiblePositionManager (`0x0a984a446a116335ac90425d2d1e69a7199a2f7c`, chain 1)
+- Quoter (`0x02f22d58d161d1c291abfe88764d84120f20f723`, chain 1)
+- ReferralManager (`0x4e06b03a4a84fea63c565cd0e47747f8cb88f773`, chain 1)
+- StakingVaultFactory (`0xb4a217606603f68dc18ec88b8622464c4c90aa55`, chain 1)
+- SwapRouter (`0x20c5893f69f635f55b0367c519f3f95e59c0b0ab`, chain 1)
+- TokenVesting (`0x3590194aaf1dbf5923bd5a4e69f2ada90c94b348`, chain 1)
+- TransparentUpgradeableProxy (`0xcaf7d2ae2c8de1512b2bd392eebb0b95192b2262`, chain 1)
 
 ## Contract Surface Quality
 
@@ -120,29 +120,29 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AlgebraFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383649 | `0xfb8ed3...c4b0f0` | ⚠️ Unaudited |
-| AlgebraFeePluginFactoryV1 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383639 | `0x478dc6...5f7fb3` | ⚠️ Unaudited |
-| BCTokenDeployer | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383648 | `0xe5a143...c67d79` | ⚠️ Unaudited |
-| BCTokenFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383641 | `0x5145e1...aa0920` | ⚠️ Unaudited |
-| BondingCurve | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383632 | `0x035d26...035245` | ⚠️ Unaudited |
-| CampaignFactory | unknown | project_anchor | own_supporting | 1 | ethereum | unit-383651 | `0xcaf7d2...2b2262` | ⚠️ Unaudited |
-| CurveMath | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383644 | `0x78e6b8...199e32` | ⚠️ Unaudited |
-| CypherFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383647 | `0xcc8e4c...48a8d4` | ⚠️ Unaudited |
-| CypherRouter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383645 | `0xadfd0e...bcc46f` | ⚠️ Unaudited |
-| CypherYakRouter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383638 | `0x37ca43...1995e3` | ⚠️ Unaudited |
-| Distributor | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383636 | `0x2a7b9e...0362d4` | ⚠️ Unaudited |
-| EscrowToken | unknown | project_anchor | own_supporting | 1 | ethereum | unit-383650 | `0x5163b5...8848b6` | ⚠️ Unaudited |
-| Harvester | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383642 | `0x59716f...3f3681` | ⚠️ Unaudited |
-| HighlightsManager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383643 | `0x6ef6de...415e35` | ⚠️ Unaudited |
-| LiquidityManager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383634 | `0x141273...aa07dc` | ⚠️ Unaudited |
-| MainToken | unknown | project_anchor | own_supporting | 1 | ethereum | unit-383653 | `0xa279ca...249dfd` | ⚠️ Unaudited |
-| NonfungiblePositionManager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383633 | `0x0a984a...9a2f7c` | ⚠️ Unaudited |
-| OptionsToken | unknown | project_anchor | own_supporting | 1 | ethereum | unit-383652 | `0x3f7558...61b9d1` | ⚠️ Unaudited |
-| Quoter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383631 | `0x02f22d...20f723` | ⚠️ Unaudited |
-| ReferralManager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383640 | `0x4e06b0...88f773` | ⚠️ Unaudited |
-| StakingVaultFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383646 | `0xb4a217...90aa55` | ⚠️ Unaudited |
-| SwapRouter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383635 | `0x20c589...c0b0ab` | ⚠️ Unaudited |
-| TokenVesting | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383637 | `0x359019...94b348` | ⚠️ Unaudited |
+| AlgebraFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383649 | `0xfb8ed3485efa29a0e4bed93351dd51b59fc4b0f0` | ⚠️ Unaudited |
+| AlgebraFeePluginFactoryV1 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383639 | `0x478dc624b9cfb68ed1cea0e7b51a6279905f7fb3` | ⚠️ Unaudited |
+| BCTokenDeployer | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383648 | `0xe5a1438aca8e48a0d6ef6fc402254b709ec67d79` | ⚠️ Unaudited |
+| BCTokenFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383641 | `0x5145e18526b6851f9e6aa28f11cb667956aa0920` | ⚠️ Unaudited |
+| BondingCurve | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383632 | `0x035d264b16d445eb6a5b3109a40224e210035245` | ⚠️ Unaudited |
+| CampaignFactory | unknown | project_anchor | own_supporting | 1 | ethereum | unit-383651 | `0xcaf7d2ae2c8de1512b2bd392eebb0b95192b2262` | ⚠️ Unaudited |
+| CurveMath | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383644 | `0x78e6b8e6f479323fbbeb31878c1538c270199e32` | ⚠️ Unaudited |
+| CypherFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383647 | `0xcc8e4c2998395e56d06d985ba791138edf48a8d4` | ⚠️ Unaudited |
+| CypherRouter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383645 | `0xadfd0ebc71afcd38070a9fb5cecf9a932cbcc46f` | ⚠️ Unaudited |
+| CypherYakRouter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383638 | `0x37ca43556bb981ca6827b4a92369a28eb61995e3` | ⚠️ Unaudited |
+| Distributor | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383636 | `0x2a7b9e22a76edec50167590fd3198b27040362d4` | ⚠️ Unaudited |
+| EscrowToken | unknown | project_anchor | own_supporting | 1 | ethereum | unit-383650 | `0x5163b56b5275401bdfa5e46c75eb7c9d728848b6` | ⚠️ Unaudited |
+| Harvester | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383642 | `0x59716fb1d8a2131c1cab3847842fd6c8583f3681` | ⚠️ Unaudited |
+| HighlightsManager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383643 | `0x6ef6dec7a077f68424e23f090d5fd57e01415e35` | ⚠️ Unaudited |
+| LiquidityManager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383634 | `0x14127323b4b84e9688ef1018ab5f641344aa07dc` | ⚠️ Unaudited |
+| MainToken | unknown | project_anchor | own_supporting | 1 | ethereum | unit-383653 | `0xa279ca693d66fe65ba0062d0218578f424249dfd` | ⚠️ Unaudited |
+| NonfungiblePositionManager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383633 | `0x0a984a446a116335ac90425d2d1e69a7199a2f7c` | ⚠️ Unaudited |
+| OptionsToken | unknown | project_anchor | own_supporting | 1 | ethereum | unit-383652 | `0x3f75580cd579547a69854ac2924371209261b9d1` | ⚠️ Unaudited |
+| Quoter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383631 | `0x02f22d58d161d1c291abfe88764d84120f20f723` | ⚠️ Unaudited |
+| ReferralManager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383640 | `0x4e06b03a4a84fea63c565cd0e47747f8cb88f773` | ⚠️ Unaudited |
+| StakingVaultFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383646 | `0xb4a217606603f68dc18ec88b8622464c4c90aa55` | ⚠️ Unaudited |
+| SwapRouter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383635 | `0x20c5893f69f635f55b0367c519f3f95e59c0b0ab` | ⚠️ Unaudited |
+| TokenVesting | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383637 | `0x3590194aaf1dbf5923bd5a4e69f2ada90c94b348` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

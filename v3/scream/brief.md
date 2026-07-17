@@ -57,7 +57,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xe4ba95...6273a2`, chain 250)
+- UnnamedContract (`0xe4ba95c54fb96ae5807e88ed466c6a80326273a2`, chain 250)
 
 ## Contract Surface Quality
 
@@ -121,8 +121,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fantom | n/a | `0xe0654c...6bf475` | ❓ Unverified |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | fantom | unit-392086 | `0xe4ba95...6273a2` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fantom | n/a | `0xe0654c8e6fd4d733349ac7e09f6f23da256bf475` | ❓ Unverified |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | fantom | unit-392086 | `0xe4ba95c54fb96ae5807e88ed466c6a80326273a2` | ❓ Unverified |
 
 ## Audit Inventory
 

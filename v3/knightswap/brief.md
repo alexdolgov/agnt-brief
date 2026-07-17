@@ -52,10 +52,10 @@ The pinned logic-topography run contains 4 contract row(s) across bsc, fantom. S
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- KnightFactory (`0xf0bc2e...90751f`, chain 56)
-- KnightRouter (`0x05e61e...d6c46f`, chain 56)
-- KnightToken (`0xd23811...c4abba`, chain 56)
-- MasterChef (`0xe50cb7...407414`, chain 56)
+- KnightFactory (`0xf0bc2e21a76513aa7cc2730c7a1d6dee0790751f`, chain 56)
+- KnightRouter (`0x05e61e0cdcd2170a76f9568a110cee3afdd6c46f`, chain 56)
+- KnightToken (`0xd23811058eb6e7967d9a00dc3886e75610c4abba`, chain 56)
+- MasterChef (`0xe50cb76a71b0c52ab091860cd61b9ba2fa407414`, chain 56)
 
 ## Contract Surface Quality
 
@@ -101,23 +101,23 @@ The pinned logic-topography run contains 4 contract row(s) across bsc, fantom. S
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Astroshot | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0x8b1e9a...c119df`; bsc `0xf219e7...eea5b2` | ⚠️ Unaudited |
-| BIGFOOT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x1326be...b210be` | ⚠️ Unaudited |
-| Fantomnomics | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xb56b90...cd0cf8` | ⚠️ Unaudited |
-| IterableMapping | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0x568763...e7900b`; bsc `0x8f3063...28a9fd` | ⚠️ Unaudited |
-| IWO | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 6 deployments: bsc `0x1bbee6...a55dc6`; bsc `0x29c8d8...c42d2f`; bsc `0x4bb4e6...9ea997`; bsc `0x597111...b7c94b`; bsc `0x935c82...e0880a`; bsc `0x979363...890899` | ⚠️ Unaudited |
-| KnightFactory | registry | project_anchor | own_supporting | 0 | bsc | unit-388373 | `0xf0bc2e...90751f` | ⚠️ Unaudited |
-| KnightRouter | adapter | project_anchor | own_supporting | 0 | bsc | unit-388370 | `0x05e61e...d6c46f` | ⚠️ Unaudited |
-| KnightToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x30ee67...c066bd` | ⚠️ Unaudited |
-| KnightToken | token | project_anchor | own_supporting | 0 | bsc | unit-388371 | `0xd23811...c4abba` | ⚠️ Unaudited |
-| MasterChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 4 deployments: bsc `0x246e3e...9165a6`; bsc `0x662215...1a1cec`; bsc `0xa379f5...596863`; bsc `0xf5d8c5...bc1a49` | ⚠️ Unaudited |
-| MasterChef | unknown | project_anchor | own_supporting | 0 | bsc | unit-388372 | `0xe50cb7...407414` | ⚠️ Unaudited |
-| NFTHELPER | token | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe186af...6edc34` | ⚠️ Unaudited |
-| SmartChefFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x300206...fa56ff` | ⚠️ Unaudited |
-| Spartans | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0xbcfe39...910b1e`; bsc `0xd27fae...fd864c` | ⚠️ Unaudited |
-| TOKEN2NFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x63a6c5...bced67` | ⚠️ Unaudited |
-| Wizshot | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0x551c61...8bb81d`; bsc `0xa1cffa...ceee64` | ⚠️ Unaudited |
-| Wizshot2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x7d82f5...732218` | ⚠️ Unaudited |
+| Astroshot | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0x8b1e9a0f782d9e8fb964fcb3133ea1f2bac119df`; bsc `0xf219e74dbfe267e367aa7e5f00615d2676eea5b2` | ⚠️ Unaudited |
+| BIGFOOT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x1326be0d18a9d3110501661decdb850aa6b210be` | ⚠️ Unaudited |
+| Fantomnomics | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xb56b90f623107a4047fdc4c237279f360dcd0cf8` | ⚠️ Unaudited |
+| IterableMapping | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0x56876361f53c78ab3ca3b7f33d88a8bf2ce7900b`; bsc `0x8f3063be7c99f430d11fc0ef065638f35a28a9fd` | ⚠️ Unaudited |
+| IWO | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 6 deployments: bsc `0x1bbee6b4cb56e7cc005e93e1ae4c57be2aa55dc6`; bsc `0x29c8d8a01bad3ba8ce33fde4a1ac0ae93ec42d2f`; bsc `0x4bb4e621b69dec94a2dfd78f37e06723989ea997`; bsc `0x597111f001bfaaff92fcf4efcb9f63668ab7c94b`; bsc `0x935c822aa2db55a068ebbae01849b5e342e0880a`; bsc `0x97936313a5c37f2c6c55f541c0e1837552890899` | ⚠️ Unaudited |
+| KnightFactory | registry | project_anchor | own_supporting | 0 | bsc | unit-388373 | `0xf0bc2e21a76513aa7cc2730c7a1d6dee0790751f` | ⚠️ Unaudited |
+| KnightRouter | adapter | project_anchor | own_supporting | 0 | bsc | unit-388370 | `0x05e61e0cdcd2170a76f9568a110cee3afdd6c46f` | ⚠️ Unaudited |
+| KnightToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x30ee6741da7a447a2addd1db594f4af8dbc066bd` | ⚠️ Unaudited |
+| KnightToken | token | project_anchor | own_supporting | 0 | bsc | unit-388371 | `0xd23811058eb6e7967d9a00dc3886e75610c4abba` | ⚠️ Unaudited |
+| MasterChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 4 deployments: bsc `0x246e3e02bd1fe4a82ef6e8a2c276ae01c59165a6`; bsc `0x6622154437586f1562c23d4641bd95efdb1a1cec`; bsc `0xa379f53003cbaa3d1d3a88e9a7b069a44b596863`; bsc `0xf5d8c52a6a3d487c783c570c362a9b006fbc1a49` | ⚠️ Unaudited |
+| MasterChef | unknown | project_anchor | own_supporting | 0 | bsc | unit-388372 | `0xe50cb76a71b0c52ab091860cd61b9ba2fa407414` | ⚠️ Unaudited |
+| NFTHELPER | token | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe186af8f9bfd6385df4340a87650c425506edc34` | ⚠️ Unaudited |
+| SmartChefFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x300206b75df4b8bd32c2317727fdae0273fa56ff` | ⚠️ Unaudited |
+| Spartans | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0xbcfe392e778dbb59dcad624f10f7fa8c4a910b1e`; bsc `0xd27fae23775993af58f84408b611f4ff9afd864c` | ⚠️ Unaudited |
+| TOKEN2NFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x63a6c517cdbb674d42931cc716236249e3bced67` | ⚠️ Unaudited |
+| Wizshot | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0x551c61db482289994e7d426fc4db6493918bb81d`; bsc `0xa1cffafab3adf425ccc3708818cf0e5ed7ceee64` | ⚠️ Unaudited |
+| Wizshot2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x7d82f56ea0820a9d42b01c3c28f1997721732218` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -137,12 +137,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x1ea8fb...9d02b9` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x77e6d5...8b3f27` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xcaeb6e...ad8262` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xcc84b3...f61620` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xff16d3...5ad8c1` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fantom | n/a | `0x7d82f5...732218` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x1ea8fbd271d56db3d4e5e09c93365d0aa79d02b9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x77e6d5352d3de6aec92d3ab4b25f159cd98b3f27` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xcaeb6e7d0d973c75cfe3e57b7ba546931dad8262` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xcc84b344f36f2c77431cbb20c175d19a52f61620` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xff16d3aac139079ce9d6ebd56a93c5e3805ad8c1` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fantom | n/a | `0x7d82f56ea0820a9d42b01c3c28f1997721732218` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -168,10 +168,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | `0xf0bc2e...90751f` | KnightFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x05e61e...d6c46f` | KnightRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0xd23811...c4abba` | KnightToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0xe50cb7...407414` | MasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xf0bc2e21a76513aa7cc2730c7a1d6dee0790751f` | KnightFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x05e61e0cdcd2170a76f9568a110cee3afdd6c46f` | KnightRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xd23811058eb6e7967d9a00dc3886e75610c4abba` | KnightToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xe50cb76a71b0c52ab091860cd61b9ba2fa407414` | MasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

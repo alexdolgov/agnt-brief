@@ -62,9 +62,9 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| HastraAutoNavEngine | unknown | ethereum | n/a | 3 deployments: ethereum [`0x3c331b...69f443`](./contracts/ethereum-1/0x3c331b892f193fcdbb9f9c2f227fe56c6169f443/); ethereum `0x748d07...b14da3`; ethereum `0xd52452...29bc75` | ⚠️ Unaudited |
-| HastraNavEngine | unknown | ethereum | n/a | [`0x1376de...30c3a7`](./contracts/ethereum-1/0x1376de100324d42337f1a2c08351d7242f30c3a7/) | ⚠️ Unaudited |
-| HastraSMBNavEngine | unknown | ethereum | n/a | [`0x9fd0b0...db019e`](./contracts/ethereum-1/0x9fd0b0ef9fb4591a7c315bc19f0fb29a9edb019e/) | ⚠️ Unaudited |
+| HastraAutoNavEngine | unknown | ethereum | n/a | 3 deployments: ethereum [`0x3c331b892f193fcdbb9f9c2f227fe56c6169f443`](./contracts/ethereum-1/0x3c331b892f193fcdbb9f9c2f227fe56c6169f443/); ethereum `0x748d0731738e68c7e2d693ccae56c82fd7b14da3`; ethereum `0xd524523e56fce26eb427301aee6c82b66129bc75` | ⚠️ Unaudited |
+| HastraNavEngine | unknown | ethereum | n/a | [`0x1376de100324d42337f1a2c08351d7242f30c3a7`](./contracts/ethereum-1/0x1376de100324d42337f1a2c08351d7242f30c3a7/) | ⚠️ Unaudited |
+| HastraSMBNavEngine | unknown | ethereum | n/a | [`0x9fd0b0ef9fb4591a7c315bc19f0fb29a9edb019e`](./contracts/ethereum-1/0x9fd0b0ef9fb4591a7c315bc19f0fb29a9edb019e/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -96,9 +96,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x3c331b...69f443`](./contracts/ethereum-1/0x3c331b892f193fcdbb9f9c2f227fe56c6169f443/) | HastraAutoNavEngine | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1376de...30c3a7`](./contracts/ethereum-1/0x1376de100324d42337f1a2c08351d7242f30c3a7/) | HastraNavEngine | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x9fd0b0...db019e`](./contracts/ethereum-1/0x9fd0b0ef9fb4591a7c315bc19f0fb29a9edb019e/) | HastraSMBNavEngine | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x3c331b892f193fcdbb9f9c2f227fe56c6169f443`](./contracts/ethereum-1/0x3c331b892f193fcdbb9f9c2f227fe56c6169f443/) | HastraAutoNavEngine | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1376de100324d42337f1a2c08351d7242f30c3a7`](./contracts/ethereum-1/0x1376de100324d42337f1a2c08351d7242f30c3a7/) | HastraNavEngine | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x9fd0b0ef9fb4591a7c315bc19f0fb29a9edb019e`](./contracts/ethereum-1/0x9fd0b0ef9fb4591a7c315bc19f0fb29a9edb019e/) | HastraSMBNavEngine | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

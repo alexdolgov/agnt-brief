@@ -58,14 +58,14 @@ The protocol comprises 2 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| StableWrapper | unknown | ethereum | n/a | 5 deployments: ethereum [`0x05f47d...2cabe0`](./contracts/ethereum-1/0x05f47d7cbb0f3d7f988e442e8c1401685d2cabe0/); ethereum `0x2ca440...1ab8cb`; ethereum `0x6eaf19...7dbb4c`; ethereum `0xdcfd98...76a427`; ethereum `0xf70f54...386a34` | ✅ Audited |
-| StreamVault | core_logic | ethereum | n/a | 13 deployments: ethereum [`0x12fd50...8057d6`](./contracts/ethereum-1/0x12fd502e2052cafb41eccc5b596023d9978057d6/); ethereum `0x2a0a09...dfdee0`; ethereum `0x2a2f84...3892c2`; ethereum `0x350fa4...7a916a`; ethereum `0x6efa12...0ad48e`; ethereum `0x7e586f...723153`; ethereum `0x8a31d2...01c68b`; ethereum `0x9e0bbb...476984`; ethereum `0xa79108...d21920`; ethereum `0xae2e5f...c8d749`; ethereum `0xc15697...f64f13`; ethereum `0xe2fc85...f26f94`; ethereum `0xf3b466...8de3a7` | ✅ Audited |
+| StableWrapper | unknown | ethereum | n/a | 5 deployments: ethereum [`0x05f47d7cbb0f3d7f988e442e8c1401685d2cabe0`](./contracts/ethereum-1/0x05f47d7cbb0f3d7f988e442e8c1401685d2cabe0/); ethereum `0x2ca4408c2c6d75aecdc708b04f28ec15d31ab8cb`; ethereum `0x6eaf19b2fc24552925db245f9ff613157a7dbb4c`; ethereum `0xdcfd98a5681722df0d93fc11b9205f757576a427`; ethereum `0xf70f54cefdcd3c8f011865685ff49fb80a386a34` | ✅ Audited |
+| StreamVault | core_logic | ethereum | n/a | 13 deployments: ethereum [`0x12fd502e2052cafb41eccc5b596023d9978057d6`](./contracts/ethereum-1/0x12fd502e2052cafb41eccc5b596023d9978057d6/); ethereum `0x2a0a0919bab77fa74bc7ccd3eeec06fc08dfdee0`; ethereum `0x2a2f84e9afe7b39146cdaf068b06b84ee23892c2`; ethereum `0x350fa4016e5bb6d6ee5707505defe127607a916a`; ethereum `0x6efa12b38038a6249b7abdd5a047d211fb0ad48e`; ethereum `0x7e586fbaf3084c0be7ab5c82c04ffd7592723153`; ethereum `0x8a31d2d10f34aaf24a2c48713e213266bc01c68b`; ethereum `0x9e0bbbe43eb27dd0d6e02b25784df9f110476984`; ethereum `0xa791082be08b890792c558f1292ac4a2dad21920`; ethereum `0xae2e5fa6edbb5266ec150b4d4d2f875c1dc8d749`; ethereum `0xc15697f61170fc3bb4e99eb7913b4c7893f64f13`; ethereum `0xe2fc85bfb48c4cf147921fbe110cf92ef9f26f94`; ethereum `0xf3b466f09ef476e311ce275407cfb09a8d8de3a7` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| VaultKeeper | unknown | ethereum | n/a | 7 deployments: ethereum [`0x0735eb...d33bfc`](./contracts/ethereum-1/0x0735ebeec9dd125cce45c2f354883ed9e7d33bfc/); ethereum `0x642f0d...58f5e7`; ethereum `0x66b9ff...2e4e7c`; ethereum `0x7012da...d1b09e`; ethereum `0x80ca28...385d43`; ethereum `0x84acf9...4f0637`; ethereum `0xdffb08...52994c` | ⚠️ Unaudited |
+| VaultKeeper | unknown | ethereum | n/a | 7 deployments: ethereum [`0x0735ebeec9dd125cce45c2f354883ed9e7d33bfc`](./contracts/ethereum-1/0x0735ebeec9dd125cce45c2f354883ed9e7d33bfc/); ethereum `0x642f0d57479f059efa32e9a886a86ed65a58f5e7`; ethereum `0x66b9ff597dd5f32a3460611d42695fb2d52e4e7c`; ethereum `0x7012daab8d34a6f415b2eaac3b75565592d1b09e`; ethereum `0x80ca285b0d3d42fb3a3d6ffca8df70d79c385d43`; ethereum `0x84acf9bce2b9ca1b8304da9af1fab71caa4f0637`; ethereum `0xdffb08c3366854b7bacfd6281757f9cda152994c` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -85,7 +85,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x4d4874...20af5d` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4d48748b0726fc4a292f93260717d6b92720af5d` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -99,7 +99,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x0735eb...d33bfc`](./contracts/ethereum-1/0x0735ebeec9dd125cce45c2f354883ed9e7d33bfc/) | VaultKeeper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0735ebeec9dd125cce45c2f354883ed9e7d33bfc`](./contracts/ethereum-1/0x0735ebeec9dd125cce45c2f354883ed9e7d33bfc/) | VaultKeeper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

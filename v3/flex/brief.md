@@ -52,11 +52,11 @@ The pinned logic-topography run contains 3 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x4e8341...638290`, chain 1)
-- UnnamedContract (`0x687b82...ef3b67`, chain 1)
-- Factory (`0xe2c4a5...34753d`, chain 1)
-- Leverage Zapper (`0xbf3e99...6137e0`, chain 1)
-- Registry (`0x911744...7c77c8`, chain 1)
+- UnnamedContract (`0x4e8341c77c94cce982ab96d92bb28d69f4638290`, chain 1)
+- UnnamedContract (`0x687b82da9753c9db280d4d9abd7bcac022ef3b67`, chain 1)
+- Factory (`0xe2c4a5c2ab1ed5745d206b33cc0abf0a5d34753d`, chain 1)
+- Leverage Zapper (`0xbf3e996821d43ac3b6069ae74efa101ffc6137e0`, chain 1)
+- Registry (`0x9117440a7d03238905d1c8908157bd7a547c77c8`, chain 1)
 
 ## Contract Surface Quality
 
@@ -100,28 +100,28 @@ The pinned logic-topography run contains 3 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Factory | registry | project_anchor | own_supporting | 0 | ethereum | unit-386063 | `0xe2c4a5...34753d` | ✅ Audited |
+| Factory | registry | project_anchor | own_supporting | 0 | ethereum | unit-386063 | `0xe2c4a5c2ab1ed5745d206b33cc0abf0a5d34753d` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (16)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AllocatorStrategyAprOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x84d1ae...899471` | ⚠️ Unaudited |
-| Auction | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x10b07c...ac0bcf` | ⚠️ Unaudited |
-| Debt In Front Helper | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa4119b...16ebd6` | ⚠️ Unaudited |
-| Dutch Desk | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3f1951...ed1efa` | ⚠️ Unaudited |
-| Leverage Zapper | adapter | project_anchor | own_supporting | 0 | ethereum | unit-386061 | `0xbf3e99...6137e0` | ⚠️ Unaudited |
-| Price Oracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x1356d2...383990`; ethereum `0x38cae0...49a15a`; ethereum `0x6d8d09...a54206`; ethereum `0xe8eb47...a7a18d`; ethereum `0xf58f5c...62e4c3` | ⚠️ Unaudited |
-| Registry | registry | project_anchor | own_supporting | 0 | ethereum | unit-386060 | `0x911744...7c77c8` | ⚠️ Unaudited |
-| Sorted Troves | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc489b9...119acc` | ⚠️ Unaudited |
-| StrategyAprOracle | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfd6117...45b9d1` | ⚠️ Unaudited |
-| StrategyFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7a3b96...805266` | ⚠️ Unaudited |
-| Swap Executor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x91eb41...3d5421` | ⚠️ Unaudited |
-| TokenizedStrategy | core_logic | non_address_book | non_address_book_inventory (excluded) | 3 | ethereum | n/a | 3 deployments: ethereum `0x33c452...29b732`; ethereum `0x467ce1...b27751`; ethereum `0xfb4f83...70f95e` | ⚠️ Unaudited |
-| Trove Manager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd82db9...8e2e49` | ⚠️ Unaudited |
-| USDC Dutch Taker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x83cf6e...c63e7b`; ethereum `0xd8ce6e...ad68ec` | ⚠️ Unaudited |
-| Yearn V3 Vault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x863687...d0f7b8` | ⚠️ Unaudited |
-| Yearn Vault Auction Taker | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1ee35c...c47f07` | ⚠️ Unaudited |
+| AllocatorStrategyAprOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x84d1aec938d4b9f492c50a1b5218e77195899471` | ⚠️ Unaudited |
+| Auction | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x10b07c594e6de6d40e13c2d0b6c49e5a3cac0bcf` | ⚠️ Unaudited |
+| Debt In Front Helper | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa4119b541a2ebf411f3ed6201107fc1da016ebd6` | ⚠️ Unaudited |
+| Dutch Desk | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3f195124394d63fcb4a792181cc8a65717ed1efa` | ⚠️ Unaudited |
+| Leverage Zapper | adapter | project_anchor | own_supporting | 0 | ethereum | unit-386061 | `0xbf3e996821d43ac3b6069ae74efa101ffc6137e0` | ⚠️ Unaudited |
+| Price Oracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x1356d2fa7cbb108cc6671bb61777cb4cef383990`; ethereum `0x38cae071526c57f95bbbb41eb12661fbf749a15a`; ethereum `0x6d8d09f18afd74e6d6d0190ccdf89de8fea54206`; ethereum `0xe8eb473cb2aed7893f34e91a6f63c45532a7a18d`; ethereum `0xf58f5c5b8bf903e70b8a96e04e5f6d000662e4c3` | ⚠️ Unaudited |
+| Registry | registry | project_anchor | own_supporting | 0 | ethereum | unit-386060 | `0x9117440a7d03238905d1c8908157bd7a547c77c8` | ⚠️ Unaudited |
+| Sorted Troves | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc489b9e1003b337146fb8095687a8fb1f7119acc` | ⚠️ Unaudited |
+| StrategyAprOracle | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfd6117e7dc92dd284412a0ee9fc2c9bdb945b9d1` | ⚠️ Unaudited |
+| StrategyFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7a3b96e84156d22cdb53cbfc0b035ddd61805266` | ⚠️ Unaudited |
+| Swap Executor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x91eb419d77962bf89a0f1ca8b1fa525f443d5421` | ⚠️ Unaudited |
+| TokenizedStrategy | core_logic | non_address_book | non_address_book_inventory (excluded) | 3 | ethereum | n/a | 3 deployments: ethereum `0x33c45216e121e31f1a8cd24c7e9d0d0c9e29b732`; ethereum `0x467ce10870747372968ba98463a1d9af9fb27751`; ethereum `0xfb4f83c3923eab7b6254cd2399c206109970f95e` | ⚠️ Unaudited |
+| Trove Manager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd82db9893751e9c90e2a6c3be31183048e8e2e49` | ⚠️ Unaudited |
+| USDC Dutch Taker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x83cf6efbbf7fb7b53c271f4bb00d8469dcc63e7b`; ethereum `0xd8ce6ed969266e529779b6d6c35aefbd5dad68ec` | ⚠️ Unaudited |
+| Yearn V3 Vault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x863687e4e9751b57f38b4b0eba04744c72d0f7b8` | ⚠️ Unaudited |
+| Yearn Vault Auction Taker | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1ee35c67f8031291aef79e2abc87b904b9c47f07` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -141,8 +141,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386056 | `0x4e8341...638290` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386059 | `0x687b82...ef3b67` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386056 | `0x4e8341c77c94cce982ab96d92bb28d69f4638290` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386059 | `0x687b82da9753c9db280d4d9abd7bcac022ef3b67` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -191,13 +191,13 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | flex-audit-27-april.md | TroveManager | unmatched — not counted | — | — | no |
 | 2026-03-Flex-report.pdf | auction | unmatched — not counted | — | listed in scope | no |
 | 2026-03-Flex-report.pdf | dutch_desk | unmatched — not counted | — | listed in scope | no |
-| 2026-03-Flex-report.pdf | factory | own contract | Factory (selected) `0xe2c4a5...34753d` — deployed 2026-05-14 20:22:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2026-03-Flex-report.pdf | factory | own contract | Factory (selected) `0xe2c4a5c2ab1ed5745d206b33cc0abf0a5d34753d` — deployed 2026-05-14 20:22:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2026-03-Flex-report.pdf | Lender | unmatched — not counted | — | listed in scope | no |
 | 2026-03-Flex-report.pdf | LenderFactory | unmatched — not counted | — | listed in scope | no |
 | 2026-03-Flex-report.pdf | yvusd_to_usdc_oracle | unmatched — not counted | — | listed in scope | no |
 | 2026-03-Flex-report.pdf | daddy | unmatched — not counted | — | listed in scope | no |
 | 2026-03-Flex-report.pdf | leverage_zapper | unmatched — not counted | — | listed in scope | no |
-| 2026-03-Flex-report.pdf | registry | ambiguous — not counted | Factory (alternative) `0xe2c4a5...34753d` — deployed 2026-05-14 20:22:47+03 — liveness: live (current_address_book_code)<br>Registry (alternative) `0x911744...7c77c8` — deployed 2026-05-14 20:22:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| 2026-03-Flex-report.pdf | registry | ambiguous — not counted | Factory (alternative) `0xe2c4a5c2ab1ed5745d206b33cc0abf0a5d34753d` — deployed 2026-05-14 20:22:47+03 — liveness: live (current_address_book_code)<br>Registry (alternative) `0x9117440a7d03238905d1c8908157bd7a547c77c8` — deployed 2026-05-14 20:22:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | 2026-03-Flex-report.pdf | sorted_troves | unmatched — not counted | — | listed in scope | no |
 | 2026-03-Flex-report.pdf | trove_manager | unmatched — not counted | — | listed in scope | no |
 
@@ -207,8 +207,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0xbf3e99...6137e0` | Leverage Zapper | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x911744...7c77c8` | Registry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xbf3e996821d43ac3b6069ae74efa101ffc6137e0` | Leverage Zapper | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x9117440a7d03238905d1c8908157bd7a547c77c8` | Registry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -61,24 +61,24 @@ The protocol comprises 6 functional families. Its contracts share 3 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| blackholeswap | unknown | ethereum | n/a | 2 deployments: ethereum [`0x35101c...341935`](./contracts/ethereum-1/0x35101c731b1548b5e48bb23f99edbc2f5c341935/); bsc `0x75192d...34ce7e` | ✅ Audited |
-| Hakka | unknown | ethereum | n/a | [`0x0e29e5...de3bcd`](./contracts/ethereum-1/0x0e29e5abbb5fd88e28b2d355774e73bd47de3bcd/) | ✅ Audited |
-| HakkaRewardsVesting | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0x735a80...40c95a`](./contracts/ethereum-1/0x735a80510536a9a18c8824f40dbc92824640c95a/); ethereum `0xf4d1f9...5b7977` | ✅ Audited |
-| InsuranceImprovementProposalProxy | unknown | ethereum | n/a | [`0x9933ad...530780`](./contracts/ethereum-1/0x9933ad4d38702cdc28c5db2f421f1f02cf530780/) | ✅ Audited |
-| TokenFactory | unknown | bsc | n/a | 2 deployments: bsc [`0x1794ad...822606`](./contracts/bsc-56/0x1794ad747340ccf7ae9d7d61c728aa7be1822606/); polygon `0x47ca21...0a4e95` | ✅ Audited |
-| VestingVault | operational_periphery | ethereum | n/a | 3 deployments: ethereum [`0x51f123...238ed6`](./contracts/ethereum-1/0x51f12323820b3c0077864990d9e6ad9604238ed6/); bsc `0x6dbff2...fa94dc`; polygon `0xec4b77...b8001a` | ✅ Audited |
+| blackholeswap | unknown | ethereum | n/a | 2 deployments: ethereum [`0x35101c731b1548b5e48bb23f99edbc2f5c341935`](./contracts/ethereum-1/0x35101c731b1548b5e48bb23f99edbc2f5c341935/); bsc `0x75192d6f3d51554cc2ee7b40c3aac5f97934ce7e` | ✅ Audited |
+| Hakka | unknown | ethereum | n/a | [`0x0e29e5abbb5fd88e28b2d355774e73bd47de3bcd`](./contracts/ethereum-1/0x0e29e5abbb5fd88e28b2d355774e73bd47de3bcd/) | ✅ Audited |
+| HakkaRewardsVesting | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0x735a80510536a9a18c8824f40dbc92824640c95a`](./contracts/ethereum-1/0x735a80510536a9a18c8824f40dbc92824640c95a/); ethereum `0xf4d1f9674c8e9f29a69dc2e6f841292e675b7977` | ✅ Audited |
+| InsuranceImprovementProposalProxy | unknown | ethereum | n/a | [`0x9933ad4d38702cdc28c5db2f421f1f02cf530780`](./contracts/ethereum-1/0x9933ad4d38702cdc28c5db2f421f1f02cf530780/) | ✅ Audited |
+| TokenFactory | unknown | bsc | n/a | 2 deployments: bsc [`0x1794ad747340ccf7ae9d7d61c728aa7be1822606`](./contracts/bsc-56/0x1794ad747340ccf7ae9d7d61c728aa7be1822606/); polygon `0x47ca2166a5b837e891e6e64e780d1b43fc0a4e95` | ✅ Audited |
+| VestingVault | operational_periphery | ethereum | n/a | 3 deployments: ethereum [`0x51f12323820b3c0077864990d9e6ad9604238ed6`](./contracts/ethereum-1/0x51f12323820b3c0077864990d9e6ad9604238ed6/); bsc `0x6dbff20caff68b99b1e67b50d14a9d7bbdfa94dc`; polygon `0xec4b77e7369325b52a1f9d1ae080b59954b8001a` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (7)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BPool | core_logic | ethereum | n/a | [`0x1b8874...d77016`](./contracts/ethereum-1/0x1b8874baceaafba9ea194a625d12e8b270d77016/) | ⚠️ Unaudited |
-| Burner | unknown | ethereum | n/a | [`0xde0231...c2b16d`](./contracts/ethereum-1/0xde02313f8bf17f31380c63e41cdecee98bc2b16d/) | ⚠️ Unaudited |
-| GnosisSafeL2 | governance | polygon | n/a | [`0xb44c87...46eaa8`](./contracts/polygon-137/0xb44c87181fb2ae4a7794a67c833c09e58a46eaa8/) | ⚠️ Unaudited |
-| sHakka | unknown | bsc | n/a | 4 deployments: ethereum `0xb92586...897a62`; ethereum `0xd99588...f15040`; bsc [`0x51de1e...f29be6`](./contracts/bsc-56/0x51de1eef029b5cc1ef359e62aa98101f56f29be6/); polygon `0x7f8093...3032d5` | ⚠️ Unaudited |
-| TFToken | token | ethereum | n/a | [`0xbdda96...e9dee3`](./contracts/ethereum-1/0xbdda9670bc2a672c36cce0102ce8c69b12e9dee3/) | ⚠️ Unaudited |
-| ThreeFMutual | unknown | ethereum | n/a | [`0x66be1b...c6cb32`](./contracts/ethereum-1/0x66be1bc6c6af47900bbd4f3711801be6c2c6cb32/) | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | ethereum | n/a | [`0x9c5999...b9957e`](./contracts/ethereum-1/0x9c5999653f44672336c2ef0a0008587fa8b9957e/) | ⚠️ Unaudited |
+| BPool | core_logic | ethereum | n/a | [`0x1b8874baceaafba9ea194a625d12e8b270d77016`](./contracts/ethereum-1/0x1b8874baceaafba9ea194a625d12e8b270d77016/) | ⚠️ Unaudited |
+| Burner | unknown | ethereum | n/a | [`0xde02313f8bf17f31380c63e41cdecee98bc2b16d`](./contracts/ethereum-1/0xde02313f8bf17f31380c63e41cdecee98bc2b16d/) | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | polygon | n/a | [`0xb44c87181fb2ae4a7794a67c833c09e58a46eaa8`](./contracts/polygon-137/0xb44c87181fb2ae4a7794a67c833c09e58a46eaa8/) | ⚠️ Unaudited |
+| sHakka | unknown | bsc | n/a | 4 deployments: ethereum `0xb925863a15ebdeae1a638bf2b6fd00d4db897a62`; ethereum `0xd9958826bce875a75cc1789d5929459e6ff15040`; bsc [`0x51de1eef029b5cc1ef359e62aa98101f56f29be6`](./contracts/bsc-56/0x51de1eef029b5cc1ef359e62aa98101f56f29be6/); polygon `0x7f8093f5f49a9d7f0334f8017ff777f1893032d5` | ⚠️ Unaudited |
+| TFToken | token | ethereum | n/a | [`0xbdda9670bc2a672c36cce0102ce8c69b12e9dee3`](./contracts/ethereum-1/0xbdda9670bc2a672c36cce0102ce8c69b12e9dee3/) | ⚠️ Unaudited |
+| ThreeFMutual | unknown | ethereum | n/a | [`0x66be1bc6c6af47900bbd4f3711801be6c2c6cb32`](./contracts/ethereum-1/0x66be1bc6c6af47900bbd4f3711801be6c2c6cb32/) | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | ethereum | n/a | [`0x9c5999653f44672336c2ef0a0008587fa8b9957e`](./contracts/ethereum-1/0x9c5999653f44672336c2ef0a0008587fa8b9957e/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -98,16 +98,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x0a3e36...5bc5d4` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x5113db...139089` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc2f08a...0fa7b5` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x15fb14...f49064` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x2d4eb3...652faa` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x5113db...139089` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x7a602e...6a3ba2` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x350ebf...0a39ad` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xc441d0...268f3b` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xda40f3...251a6b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x0a3e364ee37bac9e6aff9e864e65b4603d5bc5d4` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x5113dbe8c1fa6e5397f0b3b00e890e7fa1139089` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc2f08a9e8ce03b7f2f706a97b7cd8472b60fa7b5` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x15fb145319351458ab5d608c705cf3a0adf49064` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x2d4eb3b4882b2b8ac33eec408ded865f24652faa` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x5113dbe8c1fa6e5397f0b3b00e890e7fa1139089` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x7a602e72e1b94cf3fcd85a0f9bdb25f3c86a3ba2` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x350ebf46bd072b1a92cdfa97cfda5a29e90a39ad` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xc441d00a10ec8efece3fc3308f42c036ac268f3b` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xda40f33e32418048d6088b07f057348125251a6b` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -128,11 +128,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x1b8874...d77016`](./contracts/ethereum-1/0x1b8874baceaafba9ea194a625d12e8b270d77016/) | BPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xde0231...c2b16d`](./contracts/ethereum-1/0xde02313f8bf17f31380c63e41cdecee98bc2b16d/) | Burner | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x51de1e...f29be6`](./contracts/bsc-56/0x51de1eef029b5cc1ef359e62aa98101f56f29be6/) | sHakka | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xbdda96...e9dee3`](./contracts/ethereum-1/0xbdda9670bc2a672c36cce0102ce8c69b12e9dee3/) | TFToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x66be1b...c6cb32`](./contracts/ethereum-1/0x66be1bc6c6af47900bbd4f3711801be6c2c6cb32/) | ThreeFMutual | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1b8874baceaafba9ea194a625d12e8b270d77016`](./contracts/ethereum-1/0x1b8874baceaafba9ea194a625d12e8b270d77016/) | BPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xde02313f8bf17f31380c63e41cdecee98bc2b16d`](./contracts/ethereum-1/0xde02313f8bf17f31380c63e41cdecee98bc2b16d/) | Burner | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x51de1eef029b5cc1ef359e62aa98101f56f29be6`](./contracts/bsc-56/0x51de1eef029b5cc1ef359e62aa98101f56f29be6/) | sHakka | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xbdda9670bc2a672c36cce0102ce8c69b12e9dee3`](./contracts/ethereum-1/0xbdda9670bc2a672c36cce0102ce8c69b12e9dee3/) | TFToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x66be1bc6c6af47900bbd4f3711801be6c2c6cb32`](./contracts/ethereum-1/0x66be1bc6c6af47900bbd4f3711801be6c2c6cb32/) | ThreeFMutual | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

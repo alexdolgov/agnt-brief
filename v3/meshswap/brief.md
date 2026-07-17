@@ -52,18 +52,18 @@ The pinned logic-topography run contains 8 contract row(s) across polygon. Struc
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x06d057...c8e390`, chain 137)
-- UnnamedContract (`0x51a4b6...16ce19`, chain 137)
-- UnnamedContract (`0x705b40...b137b9`, chain 137)
-- UnnamedContract (`0xf61e4e...d464da`, chain 137)
-- EcoPotVotingImpl (`0x13c5c5...f622d1`, chain 137)
-- FactoryImpl (`0x9f3044...33282d`, chain 137)
-- FactoryProxy (`0x504722...d52e7a`, chain 137)
-- MESH (`0x82362e...82868a`, chain 137)
-- RouterImpl (`0x10f4a7...946639`, chain 137)
-- UChildERC20Proxy (`0x2791bc...a84174`, chain 137)
-- VotingMESHImpl (`0x176b29...55df13`, chain 137)
-- WMATIC (`0x0d500b...df1270`, chain 137)
+- UnnamedContract (`0x06d057bc1129e6be214e53f04e07f1a6dcc8e390`, chain 137)
+- UnnamedContract (`0x51a4b6556b21aec229f4ca372044a505fe16ce19`, chain 137)
+- UnnamedContract (`0x705b40af8cecd59406cf630ab7750055c9b137b9`, chain 137)
+- UnnamedContract (`0xf61e4ede9128a9fa9a128cb7d161f4e73bd464da`, chain 137)
+- EcoPotVotingImpl (`0x13c5c5a5d418b5365fb30ca1ec8a9fb2a6f622d1`, chain 137)
+- FactoryImpl (`0x9f3044f7f9fc8bc9ed615d54845b4577b833282d`, chain 137)
+- FactoryProxy (`0x504722a6eabb3d1573bada9abd585ae177d52e7a`, chain 137)
+- MESH (`0x82362ec182db3cf7829014bc61e9be8a2e82868a`, chain 137)
+- RouterImpl (`0x10f4a785f458bc144e3706575924889954946639`, chain 137)
+- UChildERC20Proxy (`0x2791bca1f2de4661ed88a30c99a7a9449aa84174`, chain 137)
+- VotingMESHImpl (`0x176b29289f66236c65c7ac5db2400abb5955df13`, chain 137)
+- WMATIC (`0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270`, chain 137)
 
 ## Contract Surface Quality
 
@@ -108,43 +108,43 @@ The pinned logic-topography run contains 8 contract row(s) across polygon. Struc
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| FactoryImpl | unknown | project_anchor | own_supporting | 1 | polygon | unit-246455 | `0x9f3044...33282d` | ✅ Audited |
-| MESH | unknown | project_anchor | own_supporting | 0 | polygon | unit-246449 | `0x82362e...82868a` | ✅ Audited |
-| RouterImpl | unknown | project_anchor | own_supporting | 1 | polygon | unit-246456 | `0x10f4a7...946639` | ✅ Audited |
+| FactoryImpl | unknown | project_anchor | own_supporting | 1 | polygon | unit-246455 | `0x9f3044f7f9fc8bc9ed615d54845b4577b833282d` | ✅ Audited |
+| MESH | unknown | project_anchor | own_supporting | 0 | polygon | unit-246449 | `0x82362ec182db3cf7829014bc61e9be8a2e82868a` | ✅ Audited |
+| RouterImpl | unknown | project_anchor | own_supporting | 1 | polygon | unit-246456 | `0x10f4a785f458bc144e3706575924889954946639` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (29)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ChildChainManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x195fe6...5dfa0b` | ⚠️ Unaudited |
-| ChildChainManagerProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xafeea1...171ce8` | ⚠️ Unaudited |
-| ChildERC1155 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xa0c68c...c77c77` | ⚠️ Unaudited |
-| ChildERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x0b9020...6eb88f` | ⚠️ Unaudited |
-| ChildERC721 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x6ebeac...a93aab` | ⚠️ Unaudited |
-| ChildMintableERC721 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xd4888f...25b653` | ⚠️ Unaudited |
-| DragonLair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xf28164...8a16b1` | ⚠️ Unaudited |
-| EcoPotVotingImpl | unknown | project_anchor | own_supporting | 1 | polygon | unit-246454 | `0x13c5c5...f622d1` | ⚠️ Unaudited |
-| ExchangeImpl | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xe13f02...e26479` | ⚠️ Unaudited |
-| FactoryProxy | unknown | project_anchor | own_supporting | 1 | polygon | unit-246452 | `0x504722...d52e7a` | ⚠️ Unaudited |
-| FxChild | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x839725...afa28a` | ⚠️ Unaudited |
-| GovernanceImpl | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x0e8582...1bccad` | ⚠️ Unaudited |
-| Helper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x8fed08...57af49` | ⚠️ Unaudited |
-| MaticWETH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x7ceb23...b9f619` | ⚠️ Unaudited |
-| MultiSigWallet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x06d28a...b09abd` | ⚠️ Unaudited |
-| PoolVotingImpl | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x222dcc...a246d7` | ⚠️ Unaudited |
-| Quick | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x831753...33dc13` | ⚠️ Unaudited |
-| QuickConverter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x38e8d7...5239ea` | ⚠️ Unaudited |
-| SinglePoolFactoryImpl | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x4e5b43...1fa3fa` | ⚠️ Unaudited |
-| SinglePoolImpl | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x9e8461...f10b39` | ⚠️ Unaudited |
-| StakingRewardsFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x02a2d8...537e1c` | ⚠️ Unaudited |
-| UChildDAI | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x490e37...7999a7` | ⚠️ Unaudited |
-| UChildERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x0735a6...6f0e12` | ⚠️ Unaudited |
-| UChildERC20Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x02daef...057966` | ⚠️ Unaudited |
-| UChildERC20Proxy | unknown | project_anchor | own_supporting | 1 | polygon | unit-246457 | `0x2791bc...a84174` | ⚠️ Unaudited |
-| UChildERC20Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | polygon | n/a | `0xc2132d...b58e8f` | ⚠️ Unaudited |
-| VamToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x1512d2...9cfbc8` | ⚠️ Unaudited |
-| VotingMESHImpl | unknown | project_anchor | own_supporting | 1 | polygon | unit-246453 | `0x176b29...55df13` | ⚠️ Unaudited |
-| WMATIC | unknown | project_anchor | own_supporting | 0 | polygon | unit-246446 | `0x0d500b...df1270` | ⚠️ Unaudited |
+| ChildChainManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x195fe6ee6639665cceb15bcceb9980fc445dfa0b` | ⚠️ Unaudited |
+| ChildChainManagerProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xafeea1de9d660d3cb53031cfe1a58de40b171ce8` | ⚠️ Unaudited |
+| ChildERC1155 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xa0c68c638235ee32657e8f720a23cec1bfc77c77` | ⚠️ Unaudited |
+| ChildERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x0b9020d4e32990d67559b1317c7bf0c15d6eb88f` | ⚠️ Unaudited |
+| ChildERC721 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x6ebeac13f6403d19c95b6b75008b12fd21a93aab` | ⚠️ Unaudited |
+| ChildMintableERC721 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xd4888fab8bd39a663b63161f5ee1eae31a25b653` | ⚠️ Unaudited |
+| DragonLair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xf28164a485b0b2c90639e47b0f377b4a438a16b1` | ⚠️ Unaudited |
+| EcoPotVotingImpl | unknown | project_anchor | own_supporting | 1 | polygon | unit-246454 | `0x13c5c5a5d418b5365fb30ca1ec8a9fb2a6f622d1` | ⚠️ Unaudited |
+| ExchangeImpl | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xe13f021df700b35bb3dde0fa050c72ee71e26479` | ⚠️ Unaudited |
+| FactoryProxy | unknown | project_anchor | own_supporting | 1 | polygon | unit-246452 | `0x504722a6eabb3d1573bada9abd585ae177d52e7a` | ⚠️ Unaudited |
+| FxChild | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x8397259c983751daf40400790063935a11afa28a` | ⚠️ Unaudited |
+| GovernanceImpl | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x0e85821697009edcc94f8ae46777ac9f961bccad` | ⚠️ Unaudited |
+| Helper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x8fed083364938080dc126e32290907296e57af49` | ⚠️ Unaudited |
+| MaticWETH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x7ceb23fd6bc0add59e62ac25578270cff1b9f619` | ⚠️ Unaudited |
+| MultiSigWallet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x06d28ab0f52b7762e7091430dabda81f4fb09abd` | ⚠️ Unaudited |
+| PoolVotingImpl | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x222dcc2d51c686c8e2116370e8fc517ae6a246d7` | ⚠️ Unaudited |
+| Quick | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x831753dd7087cac61ab5644b308642cc1c33dc13` | ⚠️ Unaudited |
+| QuickConverter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x38e8d77f4b651fb989c8b5ad274346dd5b5239ea` | ⚠️ Unaudited |
+| SinglePoolFactoryImpl | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x4e5b43ae063ed7b91e00a7aa5156b5cbc51fa3fa` | ⚠️ Unaudited |
+| SinglePoolImpl | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x9e84610370729a05931da5f6807c59ef82f10b39` | ⚠️ Unaudited |
+| StakingRewardsFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x02a2d80ce5c021a40aec9062a6273bbc33537e1c` | ⚠️ Unaudited |
+| UChildDAI | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x490e379c9cff64944be82b849f8fd5972c7999a7` | ⚠️ Unaudited |
+| UChildERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x0735a62b0b6e837fa67130589988436fd26f0e12` | ⚠️ Unaudited |
+| UChildERC20Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x02daefc2e8aad089d094579499508398e3057966` | ⚠️ Unaudited |
+| UChildERC20Proxy | unknown | project_anchor | own_supporting | 1 | polygon | unit-246457 | `0x2791bca1f2de4661ed88a30c99a7a9449aa84174` | ⚠️ Unaudited |
+| UChildERC20Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | polygon | n/a | `0xc2132d05d31c914a87c6611c10748aeb04b58e8f` | ⚠️ Unaudited |
+| VamToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x1512d268a94ce119eacbf80139ad7910eb9cfbc8` | ⚠️ Unaudited |
+| VotingMESHImpl | unknown | project_anchor | own_supporting | 1 | polygon | unit-246453 | `0x176b29289f66236c65c7ac5db2400abb5955df13` | ⚠️ Unaudited |
+| WMATIC | unknown | project_anchor | own_supporting | 0 | polygon | unit-246446 | `0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -164,11 +164,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | polygon | n/a | `0x000000...000000` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-246445 | `0x06d057...c8e390` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-246447 | `0x51a4b6...16ce19` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-246448 | `0x705b40...b137b9` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-246451 | `0xf61e4e...d464da` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | polygon | n/a | `0x0000000000000000000000000000000000000000` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-246445 | `0x06d057bc1129e6be214e53f04e07f1a6dcc8e390` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-246447 | `0x51a4b6556b21aec229f4ca372044a505fe16ce19` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-246448 | `0x705b40af8cecd59406cf630ab7750055c9b137b9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-246451 | `0xf61e4ede9128a9fa9a128cb7d161f4e73bd464da` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -191,9 +191,9 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
 | [Theori]_meshswap_audit_rev1.0.pdf | Exchange | unmatched — not counted | — | mentioned in findings and scope | no |
-| [Theori]_meshswap_audit_rev1.0.pdf | Factory | own proxy deployment | FactoryImpl (proxy) (selected) `0x9f3044...33282d` — deployed 2022-05-02 11:02:19+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| [Theori]_meshswap_audit_rev1.0.pdf | MESH | own contract | MESH (selected) `0x82362e...82868a` — deployed 2022-04-25 12:35:17+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| [Theori]_meshswap_audit_rev1.0.pdf | MESHswapRouter | own proxy deployment | RouterImpl (proxy) (selected) `0x10f4a7...946639` — deployed 2022-05-02 11:02:25+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [Theori]_meshswap_audit_rev1.0.pdf | Factory | own proxy deployment | FactoryImpl (proxy) (selected) `0x9f3044f7f9fc8bc9ed615d54845b4577b833282d` — deployed 2022-05-02 11:02:19+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [Theori]_meshswap_audit_rev1.0.pdf | MESH | own contract | MESH (selected) `0x82362ec182db3cf7829014bc61e9be8a2e82868a` — deployed 2022-04-25 12:35:17+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [Theori]_meshswap_audit_rev1.0.pdf | MESHswapRouter | own proxy deployment | RouterImpl (proxy) (selected) `0x10f4a785f458bc144e3706575924889954946639` — deployed 2022-05-02 11:02:25+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | [Theori]_meshswap_audit_rev1.0.pdf | PlusPool | unmatched — not counted | — | mentioned in findings | no |
 | [Theori]_meshswap_audit_rev1.0.pdf | BuybackFund | unmatched — not counted | — | mentioned in findings | no |
 | [Theori]_meshswap_audit_rev1.0.pdf | Governance | unmatched — not counted | — | mentioned in findings | no |
@@ -201,12 +201,12 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | [MoveLabs]_Security_Analysis_Report_Final.pdf | ConcentratedFactory | unmatched — not counted | — | mentioned in Issue 1 | no |
 | [MoveLabs]_Security_Analysis_Report_Final.pdf | BuybackFund | unmatched — not counted | — | mentioned in Recommendation 1 | no |
 | [MoveLabs]_Security_Analysis_Report_Final.pdf | MESHswapOracle | unmatched — not counted | — | mentioned in Recommendation 1 | no |
-| [MoveLabs]_Security_Analysis_Report_Final.pdf | MESHswapRouter | own proxy deployment | RouterImpl (proxy) (selected) `0x10f4a7...946639` — deployed 2022-05-02 11:02:25+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [MoveLabs]_Security_Analysis_Report_Final.pdf | MESHswapRouter | own proxy deployment | RouterImpl (proxy) (selected) `0x10f4a785f458bc144e3706575924889954946639` — deployed 2022-05-02 11:02:25+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | [MoveLabs]_Security_Analysis_Report_Final.pdf | EIP2771Recipient | unmatched — not counted | — | mentioned in Recommendation 1 | no |
 | [MoveLabs]_Security_Analysis_Report_Final.pdf | MESHswapLibrary | unmatched — not counted | — | mentioned in Recommendation 1 | no |
 | [MoveLabs]_Security_Analysis_Report_Final.pdf | LeveragedUser | unmatched — not counted | — | mentioned in Recommendation 2 | no |
 | [MoveLabs]_Security_Analysis_Report_Final.pdf | Exchange | unmatched — not counted | — | mentioned in Scenario 1 | no |
-| [MoveLabs]_Security_Analysis_Report_Final.pdf | PoolVoting | own contract | 0x705b40… (selected) `0x705b40...b137b9` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [MoveLabs]_Security_Analysis_Report_Final.pdf | PoolVoting | own contract | 0x705b40… (selected) `0x705b40af8cecd59406cf630ab7750055c9b137b9` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | [MoveLabs]_Security_Analysis_Report_Final.pdf | PlusPool | unmatched — not counted | — | mentioned in Scenario 2 | no |
 
 ## Coverage Gaps
@@ -215,11 +215,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| polygon | `0x13c5c5...f622d1` | EcoPotVotingImpl | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | `0x504722...d52e7a` | FactoryProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | `0x2791bc...a84174` | UChildERC20Proxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | `0x176b29...55df13` | VotingMESHImpl | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | `0x0d500b...df1270` | WMATIC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0x13c5c5a5d418b5365fb30ca1ec8a9fb2a6f622d1` | EcoPotVotingImpl | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0x504722a6eabb3d1573bada9abd585ae177d52e7a` | FactoryProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0x2791bca1f2de4661ed88a30c99a7a9449aa84174` | UChildERC20Proxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0x176b29289f66236c65c7ac5db2400abb5955df13` | VotingMESHImpl | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270` | WMATIC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -90,9 +90,9 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Crowdsale | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x398e41...a446f7` | ⚠️ Unaudited |
-| StandardToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4a220e...254675` | ⚠️ Unaudited |
-| WrapDepositRedeem | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x37aca9...b68970`; ethereum `0x893676...162c51`; ethereum `0xb39026...d9b1e2` | ⚠️ Unaudited |
+| Crowdsale | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x398e41ac3d5972b4bac2320cd130c7a25ca446f7` | ⚠️ Unaudited |
+| StandardToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4a220e6096b25eadb88358cb44068a3248254675` | ⚠️ Unaudited |
+| WrapDepositRedeem | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x37aca97a99d1b4260a5e9821d0ef14947fb68970`; ethereum `0x8936761f2903ed1af2b269e6fa3a79ebb0162c51`; ethereum `0xb3902647015c17fc3c2f5ca5f5cb68bbf2d9b1e2` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

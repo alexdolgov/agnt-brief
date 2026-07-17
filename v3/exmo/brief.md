@@ -56,7 +56,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- EXMOCoin (`0x83869d...8c0f62`, chain 1)
+- EXMOCoin (`0x83869de76b9ad8125e22b857f519f001588c0f62`, chain 1)
 
 ## Contract Surface Quality
 
@@ -102,7 +102,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| EXMOCoin | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385049 | `0x83869d...8c0f62` | ⚠️ Unaudited |
+| EXMOCoin | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385049 | `0x83869de76b9ad8125e22b857f519f001588c0f62` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

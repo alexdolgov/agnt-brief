@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x3d75f2...046c81`, chain 42161)
+- UnnamedContract (`0x3d75f2bb8abcdbd1e27443cb5cbce8a668046c81`, chain 42161)
 
 ## Contract Surface Quality
 
@@ -103,11 +103,11 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| HLP0 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0522f3...5c8718` | ⚠️ Unaudited |
-| HLPAMO | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x1425db...3efdd2` | ⚠️ Unaudited |
-| HLPSHARES | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x7ca136...43afdf` | ⚠️ Unaudited |
-| HLPUSDC | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x91bd96...6214c5` | ⚠️ Unaudited |
-| UnnamedContract | token | project_anchor | own_supporting | 0 | arbitrum | unit-387249 | `0x3d75f2...046c81` | ⚠️ Unaudited |
+| HLP0 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0522f36aed206fa9055715c1e7d28114b45c8718` | ⚠️ Unaudited |
+| HLPAMO | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x1425dbef278e3ce3c6a1cf9f75bad8f4cb3efdd2` | ⚠️ Unaudited |
+| HLPSHARES | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x7ca13681dfb071de2c6461adb7a29a950743afdf` | ⚠️ Unaudited |
+| HLPUSDC | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x91bd968a8bd27c08b9fc7173d0f475411a6214c5` | ⚠️ Unaudited |
+| UnnamedContract | token | project_anchor | own_supporting | 0 | arbitrum | unit-387249 | `0x3d75f2bb8abcdbd1e27443cb5cbce8a668046c81` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

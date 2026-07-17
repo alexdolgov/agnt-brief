@@ -59,11 +59,11 @@ The protocol comprises 3 functional families. Its contracts share 2 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BridgeCommittee | unknown | ethereum | n/a | 2 deployments: ethereum [`0xa470ca...23b63b`](./contracts/ethereum-1/0xa470ca92126bd6b6f6e98f3010c7e384f223b63b/); ethereum `0xee2d52...5b416f` | ✅ Audited |
-| BridgeConfig | unknown | ethereum | n/a | 2 deployments: ethereum [`0x72d34f...6a1540`](./contracts/ethereum-1/0x72d34fe82c71bf8120647518e5128e53106a1540/); ethereum `0xb083c4...fec50c` | ✅ Audited |
-| BridgeLimiter | unknown | ethereum | n/a | 2 deployments: ethereum [`0x12183b...736767`](./contracts/ethereum-1/0x12183b0796bbc4678999100e8c6c5715d5736767/); ethereum `0xd754e5...887340` | ✅ Audited |
-| BridgeVault | operational_periphery | ethereum | n/a | [`0x312e67...f80b53`](./contracts/ethereum-1/0x312e67b47a2a29ae200184949093d92369f80b53/) | ✅ Audited |
-| SuiBridge | unknown | ethereum | n/a | 2 deployments: ethereum [`0xa60f29...bb036c`](./contracts/ethereum-1/0xa60f29201aeae592d9ab95747ae1cf425dbb036c/); ethereum `0xda3bd1...8a92fd` | ✅ Audited |
+| BridgeCommittee | unknown | ethereum | n/a | 2 deployments: ethereum [`0xa470ca92126bd6b6f6e98f3010c7e384f223b63b`](./contracts/ethereum-1/0xa470ca92126bd6b6f6e98f3010c7e384f223b63b/); ethereum `0xee2d52477a7c1a7be0b0347dbe7e3b15185b416f` | ✅ Audited |
+| BridgeConfig | unknown | ethereum | n/a | 2 deployments: ethereum [`0x72d34fe82c71bf8120647518e5128e53106a1540`](./contracts/ethereum-1/0x72d34fe82c71bf8120647518e5128e53106a1540/); ethereum `0xb083c462fa5b04899d87204a4566b3db90fec50c` | ✅ Audited |
+| BridgeLimiter | unknown | ethereum | n/a | 2 deployments: ethereum [`0x12183b0796bbc4678999100e8c6c5715d5736767`](./contracts/ethereum-1/0x12183b0796bbc4678999100e8c6c5715d5736767/); ethereum `0xd754e54261e300ff9653567f03f74bfdef887340` | ✅ Audited |
+| BridgeVault | operational_periphery | ethereum | n/a | [`0x312e67b47a2a29ae200184949093d92369f80b53`](./contracts/ethereum-1/0x312e67b47a2a29ae200184949093d92369f80b53/) | ✅ Audited |
+| SuiBridge | unknown | ethereum | n/a | 2 deployments: ethereum [`0xa60f29201aeae592d9ab95747ae1cf425dbb036c`](./contracts/ethereum-1/0xa60f29201aeae592d9ab95747ae1cf425dbb036c/); ethereum `0xda3bd1fe1973470312db04551b65f401bc8a92fd` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 

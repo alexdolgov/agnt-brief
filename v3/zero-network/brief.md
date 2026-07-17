@@ -52,10 +52,10 @@ The pinned logic-topography run contains 4 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- ValidatorTimelock (`0x8c0bfc...06f564`, chain 1)
-- ZERO Network Diamond (`0xdbd849...ca02d9`, chain 1)
-- Zeronetwork Multisig (`0x2e5be1...5dd6a9`, chain 1)
-- ZeroNetworkZkEvmAdmin (`0xca8faa...d173b3`, chain 1)
+- ValidatorTimelock (`0x8c0bfc04ada21fd496c55b8c50331f904306f564`, chain 1)
+- ZERO Network Diamond (`0xdbd849acc6ba61f461cb8a41bbaee2d673ca02d9`, chain 1)
+- Zeronetwork Multisig (`0x2e5be1479cf661eed9f526b7926ea87f6a5dd6a9`, chain 1)
+- ZeroNetworkZkEvmAdmin (`0xca8faaf5ba885fec8c2c8cd49badaa7589d173b3`, chain 1)
 
 ## Contract Surface Quality
 
@@ -101,10 +101,10 @@ The pinned logic-topography run contains 4 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ValidatorTimelock | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398185 | `0x8c0bfc...06f564` | ⚠️ Unaudited |
-| ZERO Network Diamond | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398189 | `0xdbd849...ca02d9` | ⚠️ Unaudited |
-| Zeronetwork Multisig | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398184 | `0x2e5be1...5dd6a9` | ⚠️ Unaudited |
-| ZeroNetworkZkEvmAdmin | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398187 | `0xca8faa...d173b3` | ⚠️ Unaudited |
+| ValidatorTimelock | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398185 | `0x8c0bfc04ada21fd496c55b8c50331f904306f564` | ⚠️ Unaudited |
+| ZERO Network Diamond | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398189 | `0xdbd849acc6ba61f461cb8a41bbaee2d673ca02d9` | ⚠️ Unaudited |
+| Zeronetwork Multisig | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398184 | `0x2e5be1479cf661eed9f526b7926ea87f6a5dd6a9` | ⚠️ Unaudited |
+| ZeroNetworkZkEvmAdmin | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398187 | `0xca8faaf5ba885fec8c2c8cd49badaa7589d173b3` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -124,10 +124,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-398182 | `0x1ac4f6...210911` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-398183 | `0x2db2ff...3c5bd6` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-398186 | `0xbed1eb...1111f6` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-398188 | `0xd71ddc...e9868a` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-398182 | `0x1ac4f629fdc77a7700b68d03bf8d1a53f2210911` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-398183 | `0x2db2ffdecb7446aaab01fac3f4d55863db3c5bd6` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-398186 | `0xbed1eb542f9a5aa6419ff3deb921a372681111f6` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-398188 | `0xd71ddc9956781bf07dbfb9fca891f971dbe9868a` | ❓ Unverified |
 
 ## Audit Inventory
 

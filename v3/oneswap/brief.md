@@ -57,7 +57,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x9f4165...d8aa36`, chain 52)
+- UnnamedContract (`0x9f4165009e93b7f5ba61a477ad08cd3d1ad8aa36`, chain 52)
 
 ## Contract Surface Quality
 
@@ -103,13 +103,13 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| LockSend | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x019779...eeac38` | ⚠️ Unaudited |
-| OneSwapBuyback | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x28a359...8a5f33` | ⚠️ Unaudited |
-| OneSwapFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5ed3c9...54c8c4` | ⚠️ Unaudited |
-| OneSwapGov | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf08255...c57c4f` | ⚠️ Unaudited |
-| OneSwapPair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4e3e08...4a9446` | ⚠️ Unaudited |
-| OneSwapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x5ed3c9...54c8c4` | ⚠️ Unaudited |
-| OneSwapToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0b342c...04d5a4` | ⚠️ Unaudited |
+| LockSend | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x01977983a85804f17835f5ea8232bbd9fbeeac38` | ⚠️ Unaudited |
+| OneSwapBuyback | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x28a359cb732bfb74e77d282ace88e43db28a5f33` | ⚠️ Unaudited |
+| OneSwapFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5ed3c9089ed0355bc77cf439dc2ed28c4054c8c4` | ⚠️ Unaudited |
+| OneSwapGov | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf0825577c259aa94728310875368f905afc57c4f` | ⚠️ Unaudited |
+| OneSwapPair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4e3e0852d664b671222384d654d789b2434a9446` | ⚠️ Unaudited |
+| OneSwapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x5ed3c9089ed0355bc77cf439dc2ed28c4054c8c4` | ⚠️ Unaudited |
+| OneSwapToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0b342c51d1592c41068d5d4b4da4a68c0a04d5a4` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -129,7 +129,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | token | project_anchor | own_supporting | 0 | coinex-smart-chain | unit-390459 | `0x9f4165...d8aa36` | ❓ Unverified |
+| UnnamedContract | token | project_anchor | own_supporting | 0 | coinex-smart-chain | unit-390459 | `0x9f4165009e93b7f5ba61a477ad08cd3d1ad8aa36` | ❓ Unverified |
 
 ## Audit Inventory
 

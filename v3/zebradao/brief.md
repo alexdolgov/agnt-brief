@@ -90,17 +90,17 @@ The pinned logic-topography run contains 1 contract row(s) across base. Structur
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| CErc20Delegate | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x798937...6b3e42` | ⚠️ Unaudited |
-| CErc20Delegator | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x8b5114...9d93f1` | ⚠️ Unaudited |
-| CEtherDelegate | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x4b20db...7c6b36` | ⚠️ Unaudited |
-| CometProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb42b4a...bed4ed` | ⚠️ Unaudited |
-| Comptroller | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0xbea1d5...5ed6e7` | ⚠️ Unaudited |
-| JumpRateModelV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xe77969...50199d` | ⚠️ Unaudited |
-| RewardDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x4da03b...7b7e05` | ⚠️ Unaudited |
-| StakedDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x0b42a3...5f5f89` | ⚠️ Unaudited |
-| TimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x536652...b11378` | ⚠️ Unaudited |
-| Token | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-263664 | `0xf0ce1d...af899e` | ⚠️ Unaudited |
-| TokenVesting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x15682f...b4f9c7` | ⚠️ Unaudited |
+| CErc20Delegate | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x798937a81cea1cc124545210b6b45719516b3e42` | ⚠️ Unaudited |
+| CErc20Delegator | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x8b51143530a92f703c954ab0d261ef688d9d93f1` | ⚠️ Unaudited |
+| CEtherDelegate | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x4b20dbdd4d5a7a762f788796df5e0487007c6b36` | ⚠️ Unaudited |
+| CometProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb42b4a20d0b381ad9539a2f01f346245abbed4ed` | ⚠️ Unaudited |
+| Comptroller | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0xbea1d596ae022fae90d84ffaf0907e38a25ed6e7` | ⚠️ Unaudited |
+| JumpRateModelV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xe779696e43df41c23c1a4d190ac8144c4250199d` | ⚠️ Unaudited |
+| RewardDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x4da03b673e9b3a21e76ab389c6cf145bfb7b7e05` | ⚠️ Unaudited |
+| StakedDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x0b42a3d7290a94df04cf4193f62856950a5f5f89` | ⚠️ Unaudited |
+| TimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x5366523cb3dcefb854eb81913fef1abf8cb11378` | ⚠️ Unaudited |
+| Token | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-263664 | `0xf0ce1d83b5fc9c67f157d8b97fd09e2cf8af899e` | ⚠️ Unaudited |
+| TokenVesting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x15682f9a45a2eaff039a5884105b8139c3b4f9c7` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

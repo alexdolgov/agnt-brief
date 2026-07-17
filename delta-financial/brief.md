@@ -61,14 +61,14 @@ The protocol comprises 3 functional families. Its contracts share 10 common proj
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CORE | unknown | ethereum | n/a | [`0x62359e...fa23d7`](./contracts/ethereum-1/0x62359ed7505efc61ff1d56fef82158ccaffa23d7/) | ⚠️ Unaudited |
-| coreDAI | unknown | ethereum | n/a | [`0x00a661...f37642`](./contracts/ethereum-1/0x00a66189143279b6db9b77294688f47959f37642/) | ⚠️ Unaudited |
-| CoreDAO | unknown | ethereum | n/a | [`0xf66cd2...32dd58`](./contracts/ethereum-1/0xf66cd2f8755a21d3c8683a10269f795c0532dd58/) | ⚠️ Unaudited |
-| DELTA_Deep_Vault_Withdrawal | operational_periphery | ethereum | n/a | [`0x251bbe...60a943`](./contracts/ethereum-1/0x251bbe8c7abc2a1ca8d0b25fc1149abe6160a943/) | ⚠️ Unaudited |
-| DELTA_Distributor | operational_periphery | ethereum | n/a | [`0xf249c5...667461`](./contracts/ethereum-1/0xf249c5b422758d91d8f05e1cc5fc85cf4b667461/) | ⚠️ Unaudited |
-| FannyVault | core_logic | ethereum | n/a | [`0xbb791b...9d7816`](./contracts/ethereum-1/0xbb791bc6106e4d949863e2ab76fc01ac0a9d7816/) | ⚠️ Unaudited |
-| Unimplemented | unknown | ethereum | n/a | [`0x0c53b4...7e363c`](./contracts/ethereum-1/0x0c53b4b0a343c70a9e610bde28a269610d7e363c/) | ⚠️ Unaudited |
-| wCORE | unknown | ethereum | n/a | [`0x17b8c1...23b669`](./contracts/ethereum-1/0x17b8c1a92b66b1cf3092c5d223cb3a129023b669/) | ⚠️ Unaudited |
+| CORE | unknown | ethereum | n/a | [`0x62359ed7505efc61ff1d56fef82158ccaffa23d7`](./contracts/ethereum-1/0x62359ed7505efc61ff1d56fef82158ccaffa23d7/) | ⚠️ Unaudited |
+| coreDAI | unknown | ethereum | n/a | [`0x00a66189143279b6db9b77294688f47959f37642`](./contracts/ethereum-1/0x00a66189143279b6db9b77294688f47959f37642/) | ⚠️ Unaudited |
+| CoreDAO | unknown | ethereum | n/a | [`0xf66cd2f8755a21d3c8683a10269f795c0532dd58`](./contracts/ethereum-1/0xf66cd2f8755a21d3c8683a10269f795c0532dd58/) | ⚠️ Unaudited |
+| DELTA_Deep_Vault_Withdrawal | operational_periphery | ethereum | n/a | [`0x251bbe8c7abc2a1ca8d0b25fc1149abe6160a943`](./contracts/ethereum-1/0x251bbe8c7abc2a1ca8d0b25fc1149abe6160a943/) | ⚠️ Unaudited |
+| DELTA_Distributor | operational_periphery | ethereum | n/a | [`0xf249c5b422758d91d8f05e1cc5fc85cf4b667461`](./contracts/ethereum-1/0xf249c5b422758d91d8f05e1cc5fc85cf4b667461/) | ⚠️ Unaudited |
+| FannyVault | core_logic | ethereum | n/a | [`0xbb791bc6106e4d949863e2ab76fc01ac0a9d7816`](./contracts/ethereum-1/0xbb791bc6106e4d949863e2ab76fc01ac0a9d7816/) | ⚠️ Unaudited |
+| Unimplemented | unknown | ethereum | n/a | [`0x0c53b4b0a343c70a9e610bde28a269610d7e363c`](./contracts/ethereum-1/0x0c53b4b0a343c70a9e610bde28a269610d7e363c/) | ⚠️ Unaudited |
+| wCORE | unknown | ethereum | n/a | [`0x17b8c1a92b66b1cf3092c5d223cb3a129023b669`](./contracts/ethereum-1/0x17b8c1a92b66b1cf3092c5d223cb3a129023b669/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -88,20 +88,20 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x25858c...fe71da` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x398ab4...02c954` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x48f32c...06e199` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x708722...5059d2` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x7c0f5f...d6e01a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x80af36...7c4cdd` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x859b2f...66c20e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x9e20ec...54c38b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xa1a957...de71d0` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xa53369...a98e0e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xa8a9da...42b8a4` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xb0a3f8...788654` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc1fa5b...0403cf` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xd8a55f...ccf506` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x25858ce5f5ff0c615942c97068f56eab49fe71da` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x398ab4e965ec2039d01bea1d5c80bc626c02c954` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x48f32cffd47a0150c72de7e48b3afe46c306e199` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x708722e26de791459e3faee0667d3e26a75059d2` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x7c0f5f9d36be65227a325e51f215172367d6e01a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x80af363fd2833c24a43d88b78f172b36c17c4cdd` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x859b2fce1f098a9a42f30f2d672de3e2de66c20e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x9e20ec2933afe047a7854960ba6e81e02c54c38b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xa1a9571fc12f3ee2a750adfd9bd4720ea3de71d0` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xa533698e11a28cb641fb60035ed9ab9130a98e0e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xa8a9da203d9840793d86d3d12467aea6f042b8a4` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb0a3f83e879c20bbd2187a773ceabf371e788654` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc1fa5bf5b839809f766353e00324eda2dc0403cf` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd8a55f64835d6e9925b1fe69e5e942bc0accf506` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -115,14 +115,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x62359e...fa23d7`](./contracts/ethereum-1/0x62359ed7505efc61ff1d56fef82158ccaffa23d7/) | CORE | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x00a661...f37642`](./contracts/ethereum-1/0x00a66189143279b6db9b77294688f47959f37642/) | coreDAI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xf66cd2...32dd58`](./contracts/ethereum-1/0xf66cd2f8755a21d3c8683a10269f795c0532dd58/) | CoreDAO | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x251bbe...60a943`](./contracts/ethereum-1/0x251bbe8c7abc2a1ca8d0b25fc1149abe6160a943/) | DELTA_Deep_Vault_Withdrawal | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xf249c5...667461`](./contracts/ethereum-1/0xf249c5b422758d91d8f05e1cc5fc85cf4b667461/) | DELTA_Distributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xbb791b...9d7816`](./contracts/ethereum-1/0xbb791bc6106e4d949863e2ab76fc01ac0a9d7816/) | FannyVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0c53b4...7e363c`](./contracts/ethereum-1/0x0c53b4b0a343c70a9e610bde28a269610d7e363c/) | Unimplemented | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x17b8c1...23b669`](./contracts/ethereum-1/0x17b8c1a92b66b1cf3092c5d223cb3a129023b669/) | wCORE | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x62359ed7505efc61ff1d56fef82158ccaffa23d7`](./contracts/ethereum-1/0x62359ed7505efc61ff1d56fef82158ccaffa23d7/) | CORE | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x00a66189143279b6db9b77294688f47959f37642`](./contracts/ethereum-1/0x00a66189143279b6db9b77294688f47959f37642/) | coreDAI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xf66cd2f8755a21d3c8683a10269f795c0532dd58`](./contracts/ethereum-1/0xf66cd2f8755a21d3c8683a10269f795c0532dd58/) | CoreDAO | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x251bbe8c7abc2a1ca8d0b25fc1149abe6160a943`](./contracts/ethereum-1/0x251bbe8c7abc2a1ca8d0b25fc1149abe6160a943/) | DELTA_Deep_Vault_Withdrawal | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xf249c5b422758d91d8f05e1cc5fc85cf4b667461`](./contracts/ethereum-1/0xf249c5b422758d91d8f05e1cc5fc85cf4b667461/) | DELTA_Distributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xbb791bc6106e4d949863e2ab76fc01ac0a9d7816`](./contracts/ethereum-1/0xbb791bc6106e4d949863e2ab76fc01ac0a9d7816/) | FannyVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0c53b4b0a343c70a9e610bde28a269610d7e363c`](./contracts/ethereum-1/0x0c53b4b0a343c70a9e610bde28a269610d7e363c/) | Unimplemented | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x17b8c1a92b66b1cf3092c5d223cb3a129023b669`](./contracts/ethereum-1/0x17b8c1a92b66b1cf3092c5d223cb3a129023b669/) | wCORE | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

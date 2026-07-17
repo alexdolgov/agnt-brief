@@ -61,9 +61,9 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| EBFOX | unknown | sonic | n/a | [`0xbd87a9...64d0ab`](./contracts/sonic-146/0xbd87a909f9a40fdad6d9be703e89a0383064d0ab/) | ⚠️ Unaudited |
-| Foxify | unknown | sonic | n/a | [`0x261dfa...af0eb6`](./contracts/sonic-146/0x261dfa2528dfa19011f10b168c856e02baaf0eb6/) | ⚠️ Unaudited |
-| FoxifyMaxi | unknown | sonic | n/a | [`0x3725b7...4edd37`](./contracts/sonic-146/0x3725b740b33e75898e4e2e616e9bb519884edd37/) | ⚠️ Unaudited |
+| EBFOX | unknown | sonic | n/a | [`0xbd87a909f9a40fdad6d9be703e89a0383064d0ab`](./contracts/sonic-146/0xbd87a909f9a40fdad6d9be703e89a0383064d0ab/) | ⚠️ Unaudited |
+| Foxify | unknown | sonic | n/a | [`0x261dfa2528dfa19011f10b168c856e02baaf0eb6`](./contracts/sonic-146/0x261dfa2528dfa19011f10b168c856e02baaf0eb6/) | ⚠️ Unaudited |
+| FoxifyMaxi | unknown | sonic | n/a | [`0x3725b740b33e75898e4e2e616e9bb519884edd37`](./contracts/sonic-146/0x3725b740b33e75898e4e2e616e9bb519884edd37/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -83,8 +83,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | sonic | n/a | `0x91fb98...a9287f` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0xc23ce5...0b2779` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x91fb98c2ff10b0378890e07dc4a6496624a9287f` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xc23ce59e5ac45d96fc41db3e133ee3232c0b2779` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -98,9 +98,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| sonic | [`0xbd87a9...64d0ab`](./contracts/sonic-146/0xbd87a909f9a40fdad6d9be703e89a0383064d0ab/) | EBFOX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0x261dfa...af0eb6`](./contracts/sonic-146/0x261dfa2528dfa19011f10b168c856e02baaf0eb6/) | Foxify | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0x3725b7...4edd37`](./contracts/sonic-146/0x3725b740b33e75898e4e2e616e9bb519884edd37/) | FoxifyMaxi | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0xbd87a909f9a40fdad6d9be703e89a0383064d0ab`](./contracts/sonic-146/0xbd87a909f9a40fdad6d9be703e89a0383064d0ab/) | EBFOX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x261dfa2528dfa19011f10b168c856e02baaf0eb6`](./contracts/sonic-146/0x261dfa2528dfa19011f10b168c856e02baaf0eb6/) | Foxify | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x3725b740b33e75898e4e2e616e9bb519884edd37`](./contracts/sonic-146/0x3725b740b33e75898e4e2e616e9bb519884edd37/) | FoxifyMaxi | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

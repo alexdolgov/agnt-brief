@@ -61,11 +61,11 @@ The protocol comprises 2 functional families. Contracts are linked by 1 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| VaultV2 | core_logic | ethereum | n/a | 8 deployments: ethereum [`0x0bf016...eaa334`](./contracts/ethereum-1/0x0bf0164d17469241b6e086da4016dcc54feaa334/); ethereum `0x153bd1...d64a57`; ethereum `0x35cbe8...b4f560`; ethereum `0x610f5b...e4ae7e`; ethereum `0x951a9f...b6c0f8`; ethereum `0x9f39b1...eefa82`; ethereum `0xeb6719...bf202c`; ethereum `0xf1ca44...76f9a1` | ⚠️ Unaudited |
-| VaultV2 | core_logic | ethereum | n/a | [`0xd8cd72...da0c27`](./contracts/ethereum-1/0xd8cd72a2eb7a4312404c00aed5172c0026da0c27/) | ⚠️ Unaudited |
-| MetaMorphoV1_1 | unknown | ethereum | n/a | 6 deployments: ethereum [`0x47fe8a...f47efc`](./contracts/ethereum-1/0x47fe8ab9ee47dd65c24df52324181790b9f47efc/); ethereum `0x670195...45cb90`; ethereum `0x874e7f...81939c`; ethereum `0xb0f05e...504ba9`; ethereum `0xf9b85b...e8d4c8`; ethereum `0xfa7ed4...c40c63` | ⚠️ Unaudited |
-| Morpho | unknown | ethereum | n/a | [`0xbbbbbb...eeffcb`](./contracts/ethereum-1/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb/) | ⚠️ Unaudited |
-| Safe | unknown | ethereum | n/a | [`0xeb4af6...c04645`](./contracts/ethereum-1/0xeb4af6fa3afa08b10d593ec8ff87efb03bc04645/) | ⚠️ Unaudited |
+| VaultV2 | core_logic | ethereum | n/a | 8 deployments: ethereum [`0x0bf0164d17469241b6e086da4016dcc54feaa334`](./contracts/ethereum-1/0x0bf0164d17469241b6e086da4016dcc54feaa334/); ethereum `0x153bd1abe60104bd46aa05a27fa12d1346d64a57`; ethereum `0x35cbe8542e70fa2f7f9cdf129f19e593f4b4f560`; ethereum `0x610f5b68bd1eed68af649a3fd3dc2caa1ee4ae7e`; ethereum `0x951a9f4a2ce19b9dea6b37e691d076a345b6c0f8`; ethereum `0x9f39b13bb472126d6937bf25a39338e664eefa82`; ethereum `0xeb6719c14ba01bf1d6bfb78a65f63f12fabf202c`; ethereum `0xf1ca44eea3a4effcb195a970a2f1d8553f76f9a1` | ⚠️ Unaudited |
+| VaultV2 | core_logic | ethereum | n/a | [`0xd8cd72a2eb7a4312404c00aed5172c0026da0c27`](./contracts/ethereum-1/0xd8cd72a2eb7a4312404c00aed5172c0026da0c27/) | ⚠️ Unaudited |
+| MetaMorphoV1_1 | unknown | ethereum | n/a | 6 deployments: ethereum [`0x47fe8ab9ee47dd65c24df52324181790b9f47efc`](./contracts/ethereum-1/0x47fe8ab9ee47dd65c24df52324181790b9f47efc/); ethereum `0x6701957aaa39e9352a42729cc65436a4c945cb90`; ethereum `0x874e7fb1abb4c27a7bbeeefa39e888b63181939c`; ethereum `0xb0f05e4de970a1aaf77f8c2f823953a367504ba9`; ethereum `0xf9b85b19f6885511165505299648e6d052e8d4c8`; ethereum `0xfa7ed49eb24a6117d8a3168eee69d26b45c40c63` | ⚠️ Unaudited |
+| Morpho | unknown | ethereum | n/a | [`0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb`](./contracts/ethereum-1/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb/) | ⚠️ Unaudited |
+| Safe | unknown | ethereum | n/a | [`0xeb4af6fa3afa08b10d593ec8ff87efb03bc04645`](./contracts/ethereum-1/0xeb4af6fa3afa08b10d593ec8ff87efb03bc04645/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -96,8 +96,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x0bf016...eaa334`](./contracts/ethereum-1/0x0bf0164d17469241b6e086da4016dcc54feaa334/) | VaultV2 | core_logic | $36,603,893.28 | Verified native implementation with $36,603,893.28 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xd8cd72...da0c27`](./contracts/ethereum-1/0xd8cd72a2eb7a4312404c00aed5172c0026da0c27/) | VaultV2 | core_logic | $83,162.73 | Verified native implementation with $83,162.73 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0bf0164d17469241b6e086da4016dcc54feaa334`](./contracts/ethereum-1/0x0bf0164d17469241b6e086da4016dcc54feaa334/) | VaultV2 | core_logic | $36,603,893.28 | Verified native implementation with $36,603,893.28 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xd8cd72a2eb7a4312404c00aed5172c0026da0c27`](./contracts/ethereum-1/0xd8cd72a2eb7a4312404c00aed5172c0026da0c27/) | VaultV2 | core_logic | $83,162.73 | Verified native implementation with $83,162.73 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

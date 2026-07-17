@@ -61,8 +61,8 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| FactoryBurnMintERC20 | registry | bsc | n/a | [`0x71fb17...42ed5f`](./contracts/bsc-56/0x71fb1795b084ff2b65eabf51cad22bbefd42ed5f/) | ⚠️ Unaudited |
-| PancakeV3Pool | core_logic | bsc | n/a | [`0x39aae2...390ab7`](./contracts/bsc-56/0x39aae24d8c04e6aa9405fa7583a9e7bacb390ab7/) | ⚠️ Unaudited |
+| FactoryBurnMintERC20 | registry | bsc | n/a | [`0x71fb1795b084ff2b65eabf51cad22bbefd42ed5f`](./contracts/bsc-56/0x71fb1795b084ff2b65eabf51cad22bbefd42ed5f/) | ⚠️ Unaudited |
+| PancakeV3Pool | core_logic | bsc | n/a | [`0x39aae24d8c04e6aa9405fa7583a9e7bacb390ab7`](./contracts/bsc-56/0x39aae24d8c04e6aa9405fa7583a9e7bacb390ab7/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -97,8 +97,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x71fb17...42ed5f`](./contracts/bsc-56/0x71fb1795b084ff2b65eabf51cad22bbefd42ed5f/) | FactoryBurnMintERC20 | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x39aae2...390ab7`](./contracts/bsc-56/0x39aae24d8c04e6aa9405fa7583a9e7bacb390ab7/) | PancakeV3Pool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x71fb1795b084ff2b65eabf51cad22bbefd42ed5f`](./contracts/bsc-56/0x71fb1795b084ff2b65eabf51cad22bbefd42ed5f/) | FactoryBurnMintERC20 | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x39aae24d8c04e6aa9405fa7583a9e7bacb390ab7`](./contracts/bsc-56/0x39aae24d8c04e6aa9405fa7583a9e7bacb390ab7/) | PancakeV3Pool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

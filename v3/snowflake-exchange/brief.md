@@ -90,16 +90,16 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AdminUpgradeabilityProxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | polygon | unit-165764 | `0x1d060c...df5608` | ⚠️ Unaudited |
-| AdminUpgradeabilityProxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | polygon | unit-165763 | `0x30d5d5...166295` | ⚠️ Unaudited |
-| LiquidityLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | unit-165761 | `0x8490e3...c5d16b` | ⚠️ Unaudited |
-| MasterSnowflakeV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | unit-165758 | `0x6a22e8...5e3165` | ⚠️ Unaudited |
-| Pool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | unit-165759 | `0x6f52d3...527f95` | ⚠️ Unaudited |
-| PoolProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | unit-165762 | `0x93236d...25dedf` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | polygon | unit-165757 | `0x4dc0bf...42364f` | ⚠️ Unaudited |
-| SimpleRewarderPerSec | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | unit-165755 | `0x068e00...035500` | ⚠️ Unaudited |
-| Token | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | unit-165760 | `0x7dbdb7...ca9095` | ⚠️ Unaudited |
-| VeSnow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | unit-165756 | `0x44f7e9...7ced9d` | ⚠️ Unaudited |
+| AdminUpgradeabilityProxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | polygon | unit-165764 | `0x1d060c82e643528db02882b4b2e4379631df5608` | ⚠️ Unaudited |
+| AdminUpgradeabilityProxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | polygon | unit-165763 | `0x30d5d5549ffef0a70c1b0de09a6448babb166295` | ⚠️ Unaudited |
+| LiquidityLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | unit-165761 | `0x8490e32cb4e8a43f35eee19244b0513c14c5d16b` | ⚠️ Unaudited |
+| MasterSnowflakeV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | unit-165758 | `0x6a22e86a983db7c24a71b3666c1a7ca7925e3165` | ⚠️ Unaudited |
+| Pool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | unit-165759 | `0x6f52d32dff6a9b9d9a20c5d059f83c2183527f95` | ⚠️ Unaudited |
+| PoolProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | unit-165762 | `0x93236d836fb2723eac51db86a803aeb53c25dedf` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | polygon | unit-165757 | `0x4dc0bf37138caf947c6e7f7811f5a0a94342364f` | ⚠️ Unaudited |
+| SimpleRewarderPerSec | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | unit-165755 | `0x068e00886dc66b4ca002ef8bfb09ae705f035500` | ⚠️ Unaudited |
+| Token | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | unit-165760 | `0x7dbdb74b1ca0e7da16101877a1221a800cca9095` | ⚠️ Unaudited |
+| VeSnow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | unit-165756 | `0x44f7e9d762754e0c757b37bfb68440c0bf7ced9d` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

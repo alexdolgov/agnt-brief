@@ -56,7 +56,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- MorphoMarketFactory (`0xd8c846...901220`, chain 1)
+- MorphoMarketFactory (`0xd8c846cee3d5efddeda4d36784a2d88858901220`, chain 1)
 
 ## Contract Surface Quality
 
@@ -102,7 +102,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| MorphoMarketFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-393155 | `0xd8c846...901220` | ⚠️ Unaudited |
+| MorphoMarketFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-393155 | `0xd8c846cee3d5efddeda4d36784a2d88858901220` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

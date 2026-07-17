@@ -48,8 +48,8 @@ The pinned logic-topography run contains 9 contract row(s) across base. Structur
 
 ### Forked Contracts
 
-**CTFExchange** (`0x05c748...923fa5`, chain 8453)
-Origin: limitless-exchange (`0x46e607...48891d`)
+**CTFExchange** (`0x05c748e2f4dcde0ec9fa8ddc40de6b867f923fa5`, chain 8453)
+Origin: limitless-exchange (`0x46e607d3f4a8494b0ab9b304d1463e2f4848891d`)
 Containment: 100.0% - 35 functions inherited
 Centroid audit status: pending_validation
 
@@ -57,8 +57,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**NegRiskAdapter** (`0x6151ef...1e712d`, chain 8453)
-Origin: predict-fun (`0x41dce1...0b2a40`)
+**NegRiskAdapter** (`0x6151ef8368b6316c1aa3c68453ef083ad31e712d`, chain 8453)
+Origin: predict-fun (`0x41dce1a4b8fb5e6327701750af6231b7cd0b2a40`)
 Containment: 66.7% - 18 functions inherited
 Centroid audit status: pending_validation
 
@@ -78,13 +78,13 @@ Removals (removed from original):
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- FeeModule (`0x5130c2...a9d6eb`, chain 8453)
-- FiatTokenProxy (`0x833589...a02913`, chain 8453)
-- NegRiskCtfExchange (`0x46e607...48891d`, chain 8453)
-- NegRiskFeeModule (`0x18b3e1...4a483d`, chain 8453)
-- NegRiskOperator (`0xae363a...543992`, chain 8453)
-- Vault (`0x2ec22e...d210b3`, chain 8453)
-- WrappedCollateral (`0x428f0f...6b8c03`, chain 8453)
+- FeeModule (`0x5130c2c398f930c4f43b15635410047cbea9d6eb`, chain 8453)
+- FiatTokenProxy (`0x833589fcd6edb6e08f4c7c32d4f71b54bda02913`, chain 8453)
+- NegRiskCtfExchange (`0x46e607d3f4a8494b0ab9b304d1463e2f4848891d`, chain 8453)
+- NegRiskFeeModule (`0x18b3e1192c01286050a0994bc26f7226ae4a483d`, chain 8453)
+- NegRiskOperator (`0xae363abc7b264755e8706d81475c3586d4543992`, chain 8453)
+- Vault (`0x2ec22ee9381d0b3570ccb5887960ddfd05d210b3`, chain 8453)
+- WrappedCollateral (`0x428f0fc93221a9957dc667baa07e62d50c6b8c03`, chain 8453)
 
 ## Contract Surface Quality
 
@@ -130,28 +130,28 @@ Removals (removed from original):
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ConditionalTokens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0b017c...b9ae28` | ⚠️ Unaudited |
-| CTFExchange | unknown | project_anchor | own_supporting | 0 | base | unit-266862 | `0x05c748...923fa5` | ⚠️ Unaudited |
-| FeeModule | unknown | project_anchor | own_supporting | 0 | base | unit-266867 | `0x5130c2...a9d6eb` | ⚠️ Unaudited |
-| FiatTokenProxy | unknown | project_anchor | own_supporting | 1 | base | unit-266870 | `0x833589...a02913` | ⚠️ Unaudited |
-| FiatTokenV2_1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x6d0c9a...c8d0c1` | ⚠️ Unaudited |
-| Fixed192x64Math | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbe4974...f466bb` | ⚠️ Unaudited |
-| FixedProductMarketMakerFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x8cf2c1...68cb32` | ⚠️ Unaudited |
-| FPMMDeterministicFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x6b5d0c...2c7ca6` | ⚠️ Unaudited |
-| LMSRMarketMakerFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0665ac...ac94ae` | ⚠️ Unaudited |
-| LMTS | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x9eadbe...b02f93` | ⚠️ Unaudited |
-| MasterMinter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x223039...ed52e1` | ⚠️ Unaudited |
-| MerkleDistributorWithDeadline | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x050b10...8379b8` | ⚠️ Unaudited |
-| MockCoin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xfd9dc7...ec71dd` | ⚠️ Unaudited |
-| MockERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x04792d...270378` | ⚠️ Unaudited |
-| MockWETH9 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0f654b...eef2b3` | ⚠️ Unaudited |
-| NegRiskAdapter | unknown | project_anchor | own_supporting | 0 | base | unit-266868 | `0x6151ef...1e712d` | ⚠️ Unaudited |
-| NegRiskCtfExchange | unknown | project_anchor | own_supporting | 0 | base | unit-266866 | `0x46e607...48891d` | ⚠️ Unaudited |
-| NegRiskFeeModule | unknown | project_anchor | own_supporting | 0 | base | unit-266863 | `0x18b3e1...4a483d` | ⚠️ Unaudited |
-| NegRiskOperator | unknown | project_anchor | own_supporting | 0 | base | unit-266869 | `0xae363a...543992` | ⚠️ Unaudited |
-| Vault | unknown | project_anchor | own_supporting | 0 | base | unit-266864 | `0x2ec22e...d210b3` | ⚠️ Unaudited |
-| Whitelist | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xa94cbe...57afed` | ⚠️ Unaudited |
-| WrappedCollateral | unknown | project_anchor | own_supporting | 0 | base | unit-266865 | `0x428f0f...6b8c03` | ⚠️ Unaudited |
+| ConditionalTokens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0b017cdcd731ff177ec00c4294561ff00ab9ae28` | ⚠️ Unaudited |
+| CTFExchange | unknown | project_anchor | own_supporting | 0 | base | unit-266862 | `0x05c748e2f4dcde0ec9fa8ddc40de6b867f923fa5` | ⚠️ Unaudited |
+| FeeModule | unknown | project_anchor | own_supporting | 0 | base | unit-266867 | `0x5130c2c398f930c4f43b15635410047cbea9d6eb` | ⚠️ Unaudited |
+| FiatTokenProxy | unknown | project_anchor | own_supporting | 1 | base | unit-266870 | `0x833589fcd6edb6e08f4c7c32d4f71b54bda02913` | ⚠️ Unaudited |
+| FiatTokenV2_1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x6d0c9a70d85e42ba8b76dc06620d4e988ec8d0c1` | ⚠️ Unaudited |
+| Fixed192x64Math | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbe4974e19404894baa5ba4562cf748bcacf466bb` | ⚠️ Unaudited |
+| FixedProductMarketMakerFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x8cf2c130abc977a93ded099bbf54fe8c8f68cb32` | ⚠️ Unaudited |
+| FPMMDeterministicFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x6b5d0c08cffc8de2d079a21e37ddb40c452c7ca6` | ⚠️ Unaudited |
+| LMSRMarketMakerFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0665acb185a54fb3ec6a22a0097d1b432cac94ae` | ⚠️ Unaudited |
+| LMTS | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x9eadbe35f3ee3bf3e28180070c429298a1b02f93` | ⚠️ Unaudited |
+| MasterMinter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2230393edad0299b7e7b59f20aa856cd1bed52e1` | ⚠️ Unaudited |
+| MerkleDistributorWithDeadline | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x050b10cbcd8448bbad6fe644094ed4aa5b8379b8` | ⚠️ Unaudited |
+| MockCoin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xfd9dc7e303654d910b2b30c1caaefa6e4eec71dd` | ⚠️ Unaudited |
+| MockERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x04792d48550be72a5e80d7dd04e65e06ef270378` | ⚠️ Unaudited |
+| MockWETH9 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0f654baec6fd510309a3a8f3461f8d73e7eef2b3` | ⚠️ Unaudited |
+| NegRiskAdapter | unknown | project_anchor | own_supporting | 0 | base | unit-266868 | `0x6151ef8368b6316c1aa3c68453ef083ad31e712d` | ⚠️ Unaudited |
+| NegRiskCtfExchange | unknown | project_anchor | own_supporting | 0 | base | unit-266866 | `0x46e607d3f4a8494b0ab9b304d1463e2f4848891d` | ⚠️ Unaudited |
+| NegRiskFeeModule | unknown | project_anchor | own_supporting | 0 | base | unit-266863 | `0x18b3e1192c01286050a0994bc26f7226ae4a483d` | ⚠️ Unaudited |
+| NegRiskOperator | unknown | project_anchor | own_supporting | 0 | base | unit-266869 | `0xae363abc7b264755e8706d81475c3586d4543992` | ⚠️ Unaudited |
+| Vault | unknown | project_anchor | own_supporting | 0 | base | unit-266864 | `0x2ec22ee9381d0b3570ccb5887960ddfd05d210b3` | ⚠️ Unaudited |
+| Whitelist | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xa94cbe4ad581a7761c62142e6c22582b8c57afed` | ⚠️ Unaudited |
+| WrappedCollateral | unknown | project_anchor | own_supporting | 0 | base | unit-266865 | `0x428f0fc93221a9957dc667baa07e62d50c6b8c03` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -171,23 +171,23 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x5a38af...aedfc6` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x5d6c6a...27886a` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x6d8a7d...aae87d` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x73fc1b...3cc661` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x7afeb9...ab2436` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x80307d...7a1c0e` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xa4409d...4f0dc3` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb7d463...4b5f61` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb8daa4...41340c` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbd8ff5...798b01` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xc9c989...b76e18` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xd2e4a2...fb2751` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xd7d245...87bd58` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xe3e00b...bb5c47` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xeecd2c...931c7a` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xf1de95...af096d` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xfeb646...92dadb` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x5a38afc17f7e97ad8d6c547ddb837e40b4aedfc6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x5d6c6a4fea600e0b1a3ab3ef711060310e27886a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x6d8a7d1898306ca129a74c296d14e55e20aae87d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x73fc1b1395ba964fea8705bff7ef8ea5c23cc661` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x7afeb946986211950d17f24176039f12c2ab2436` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x80307da4d8ea92cd7a13bbf6b3309431ca7a1c0e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xa4409d988ca2218d956beefd3874100f444f0dc3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb7d463037836cff84fa9ddc25c1136756b4b5f61` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb8daa4c8c9f690396f671bb601727a4c3741340c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbd8ff5ac78a3739037feaa18278cc157c4798b01` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xc9c98965297bc527861c898329ee280632b76e18` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xd2e4a23e57f67a90bfc999d420fda16de0fb2751` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xd7d245cb2cbe55633e270af8379e5d4aba87bd58` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xe3e00ba3a9888d1de4834269f62ac008b4bb5c47` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xeecd2cf0ff29d712648fc328be4ee02fc7931c7a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xf1de958f8641448a5ba78c01f434085385af096d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xfeb646d32a2a558359419a1c9c5dfb47fd92dadb` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -206,15 +206,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | `0x05c748...923fa5` | CTFExchange | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x5130c2...a9d6eb` | FeeModule | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x833589...a02913` | FiatTokenProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x6151ef...1e712d` | NegRiskAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x46e607...48891d` | NegRiskCtfExchange | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x18b3e1...4a483d` | NegRiskFeeModule | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xae363a...543992` | NegRiskOperator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x2ec22e...d210b3` | Vault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x428f0f...6b8c03` | WrappedCollateral | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x05c748e2f4dcde0ec9fa8ddc40de6b867f923fa5` | CTFExchange | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x5130c2c398f930c4f43b15635410047cbea9d6eb` | FeeModule | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x833589fcd6edb6e08f4c7c32d4f71b54bda02913` | FiatTokenProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x6151ef8368b6316c1aa3c68453ef083ad31e712d` | NegRiskAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x46e607d3f4a8494b0ab9b304d1463e2f4848891d` | NegRiskCtfExchange | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x18b3e1192c01286050a0994bc26f7226ae4a483d` | NegRiskFeeModule | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xae363abc7b264755e8706d81475c3586d4543992` | NegRiskOperator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x2ec22ee9381d0b3570ccb5887960ddfd05d210b3` | Vault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x428f0fc93221a9957dc667baa07e62d50c6b8c03` | WrappedCollateral | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

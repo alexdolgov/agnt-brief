@@ -57,9 +57,9 @@ The pinned logic-topography run contains 2 contract row(s) across bsc, kaia. Str
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xd51c33...c113aa`, chain 8217)
-- FinixToken (`0x0f02b1...c4e30d`, chain 56)
-- SIXToken (`0x070a98...3489fe`, chain 56)
+- UnnamedContract (`0xd51c337147c8033a43f3b5ce0023382320c113aa`, chain 8217)
+- FinixToken (`0x0f02b1f5af54e04fb6dd6550f009ac2429c4e30d`, chain 56)
+- SIXToken (`0x070a9867ea49ce7afc4505817204860e823489fe`, chain 56)
 
 ## Contract Surface Quality
 
@@ -104,19 +104,19 @@ The pinned logic-topography run contains 2 contract row(s) across bsc, kaia. Str
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| FinixToken | unknown | project_anchor | own_supporting | 0 | bsc | unit-383707 | `0x0f02b1...c4e30d` | ✅ Audited |
+| FinixToken | unknown | project_anchor | own_supporting | 0 | bsc | unit-383707 | `0x0f02b1f5af54e04fb6dd6550f009ac2429c4e30d` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (7)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Apollo | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x1b4aec...9d0a15` | ⚠️ Unaudited |
-| DefinixFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x43ebb0...f92d19` | ⚠️ Unaudited |
-| DefinixRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x151030...e826ad` | ⚠️ Unaudited |
-| FlameKeeper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xfaaa40...99853f` | ⚠️ Unaudited |
-| Herodotus | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x6b51e8...3b105a` | ⚠️ Unaudited |
-| SIXToken | unknown | project_anchor | own_supporting | 0 | bsc | unit-383706 | `0x070a98...3489fe` | ⚠️ Unaudited |
-| TimelockController | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | bsc | n/a | `0x967bef...04cbfe` | ⚠️ Unaudited |
+| Apollo | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x1b4aec66ef4f942da16845d22ce2656d759d0a15` | ⚠️ Unaudited |
+| DefinixFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x43ebb0cb9bd53a3ed928dd662095ace1cef92d19` | ⚠️ Unaudited |
+| DefinixRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x151030a9fa62fbb202eee50bd4a4057ab9e826ad` | ⚠️ Unaudited |
+| FlameKeeper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xfaaa404735f33cdab5eae2fddfd375b92399853f` | ⚠️ Unaudited |
+| Herodotus | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x6b51e8fdc32ead0b837deb334fcb79e24f3b105a` | ⚠️ Unaudited |
+| SIXToken | unknown | project_anchor | own_supporting | 0 | bsc | unit-383706 | `0x070a9867ea49ce7afc4505817204860e823489fe` | ⚠️ Unaudited |
+| TimelockController | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | bsc | n/a | `0x967bef27c509fa0772c10d59f47236a2d304cbfe` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -136,7 +136,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | kaia | unit-383708 | `0xd51c33...c113aa` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | kaia | unit-383708 | `0xd51c337147c8033a43f3b5ce0023382320c113aa` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -192,7 +192,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | REP-Six_Network_Definix_Periphery-22_04_2021.pdf | IUniswapV1Exchange | unmatched — not counted | — | listed in scope table | no |
 | REP-Six_Network_Definix_Periphery-22_04_2021.pdf | IUniswapV1Factory | unmatched — not counted | — | listed in scope table | no |
 | REP-Six_Network_LP_Farm_Contracts-22_04_2021.pdf | BnbStaking | unmatched — not counted | — | listed in scope table | no |
-| REP-Six_Network_LP_Farm_Contracts-22_04_2021.pdf | FinixToken | own contract | FinixToken (selected) `0x0f02b1...c4e30d` — deployed 2021-03-26 11:33:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| REP-Six_Network_LP_Farm_Contracts-22_04_2021.pdf | FinixToken | own contract | FinixToken (selected) `0x0f02b1f5af54e04fb6dd6550f009ac2429c4e30d` — deployed 2021-03-26 11:33:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | REP-Six_Network_LP_Farm_Contracts-22_04_2021.pdf | FlameKeeper | unmatched — not counted | — | listed in scope table | no |
 | REP-Six_Network_LP_Farm_Contracts-22_04_2021.pdf | Herodotus | unmatched — not counted | — | listed in scope table and findings | no |
 | REP-Six_Network_LP_Farm_Contracts-22_04_2021.pdf | SousChef | unmatched — not counted | — | listed in scope table | no |
@@ -222,7 +222,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | The Six Network-24_04_2021.pdf | DefinixRouter | unmatched — not counted | — | listed in scope | no |
 | The Six Network-24_04_2021.pdf | Herodotus | unmatched — not counted | — | listed in scope | no |
 | The Six Network-24_04_2021.pdf | FlameKeeper | unmatched — not counted | — | listed in scope | no |
-| The Six Network-24_04_2021.pdf | FinixToken | own contract | FinixToken (selected) `0x0f02b1...c4e30d` — deployed 2021-03-26 11:33:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| The Six Network-24_04_2021.pdf | FinixToken | own contract | FinixToken (selected) `0x0f02b1f5af54e04fb6dd6550f009ac2429c4e30d` — deployed 2021-03-26 11:33:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | The Six Network-24_04_2021.pdf | ApolloLib | unmatched — not counted | — | listed in scope | no |
 | The Six Network-24_04_2021.pdf | ApolloFactory | unmatched — not counted | — | listed in scope | no |
 | The Six Network-24_04_2021.pdf | Apollo | unmatched — not counted | — | listed in scope | no |
@@ -233,7 +233,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | `0x070a98...3489fe` | SIXToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x070a9867ea49ce7afc4505817204860e823489fe` | SIXToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -59,7 +59,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| TokenERC20 | token | bsc | n/a | [`0xe32f9e...448eaf`](./contracts/bsc-56/0xe32f9e8f7f7222fcd83ee0fc68baf12118448eaf/) | ✅ Audited |
+| TokenERC20 | token | bsc | n/a | [`0xe32f9e8f7f7222fcd83ee0fc68baf12118448eaf`](./contracts/bsc-56/0xe32f9e8f7f7222fcd83ee0fc68baf12118448eaf/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 

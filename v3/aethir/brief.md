@@ -93,14 +93,14 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AethirToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbe0ed4...c5226b` | ⚠️ Unaudited |
-| AethirWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x1ecb43...33a13c`; ethereum `0x3f69bb...3f7fee` | ⚠️ Unaudited |
-| LensRewardV2 | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdf4aa3...8124ff` | ⚠️ Unaudited |
-| SmartWalletChecker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb91eb8...41bed4` | ⚠️ Unaudited |
-| StAethir | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc96aa6...19e59c` | ⚠️ Unaudited |
-| VeAethir | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1b49f5...1b7490` | ⚠️ Unaudited |
-| VestingWallet | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf9d9f4...6336b6` | ⚠️ Unaudited |
-| Voting Escrow | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6f5c81...0c6b31` | ⚠️ Unaudited |
+| AethirToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbe0ed4138121ecfc5c0e56b40517da27e6c5226b` | ⚠️ Unaudited |
+| AethirWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x1ecb43e02d6573119eaf0e6509a4725b8633a13c`; ethereum `0x3f69bb14860f7f3348ac8a5f0d445322143f7fee` | ⚠️ Unaudited |
+| LensRewardV2 | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdf4aa37a2927deb886f3dc3d070c55b5088124ff` | ⚠️ Unaudited |
+| SmartWalletChecker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb91eb8907c34147b1ab58dc663a3594bb241bed4` | ⚠️ Unaudited |
+| StAethir | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc96aa65f31e41b4ca6924b86d93e25686019e59c` | ⚠️ Unaudited |
+| VeAethir | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1b49f587feca530a7bf7cf2bd3fbda780e1b7490` | ⚠️ Unaudited |
+| VestingWallet | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf9d9f4ae37d09d50a279058c008a4fa98b6336b6` | ⚠️ Unaudited |
+| Voting Escrow | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6f5c81fe067ae25afd52218f140a73d51f0c6b31` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

@@ -52,11 +52,11 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x02cbe4...ad51aa`, chain 8217)
-- UnnamedContract (`0x508627...2152a5`, chain 8217)
-- UnnamedContract (`0x7b1b38...f3ec99`, chain 8217)
-- UnnamedContract (`0x888888...28d5f3`, chain 8217)
-- UnnamedContract (`0xc7b18f...d2f202`, chain 8217)
+- UnnamedContract (`0x02cbe46fb8a1f579254a9b485788f2d86cad51aa`, chain 8217)
+- UnnamedContract (`0x5086273d9c8a79b7d2466aacc52a6e43e22152a5`, chain 8217)
+- UnnamedContract (`0x7b1b38625a76c016b21f909fc88519f32df3ec99`, chain 8217)
+- UnnamedContract (`0x8888888888885b073f3c81258c27e83db228d5f3`, chain 8217)
+- UnnamedContract (`0xc7b18f63cd5ebd9e22eb5b17c7fc59ff6ed2f202`, chain 8217)
 
 ## Contract Surface Quality
 
@@ -120,12 +120,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | kaia | n/a | `0x000000...000000` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | kaia | unit-381911 | `0x02cbe4...ad51aa` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | kaia | unit-381912 | `0x508627...2152a5` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | kaia | unit-381913 | `0x7b1b38...f3ec99` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | kaia | unit-381914 | `0x888888...28d5f3` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | kaia | unit-381915 | `0xc7b18f...d2f202` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | kaia | n/a | `0x0000000000000000000000000000000000000000` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | kaia | unit-381911 | `0x02cbe46fb8a1f579254a9b485788f2d86cad51aa` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | kaia | unit-381912 | `0x5086273d9c8a79b7d2466aacc52a6e43e22152a5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | kaia | unit-381913 | `0x7b1b38625a76c016b21f909fc88519f32df3ec99` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | kaia | unit-381914 | `0x8888888888885b073f3c81258c27e83db228d5f3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | kaia | unit-381915 | `0xc7b18f63cd5ebd9e22eb5b17c7fc59ff6ed2f202` | ❓ Unverified |
 
 ## Audit Inventory
 

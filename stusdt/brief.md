@@ -60,10 +60,10 @@ The protocol forms a single structural family (Core Logic) of 4 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| MinterProxy | unknown | ethereum | n/a | [`0xe22d16...73728c`](./contracts/ethereum-1/0xe22d16a16d8a5a92241cf696c35c08eaa873728c/) | ✅ Audited |
-| StUSDTProxy | unknown | ethereum | n/a | [`0x25ec98...145e10`](./contracts/ethereum-1/0x25ec98773d7b4ced4cafab96a2a1c0945f145e10/) | ✅ Audited |
-| UnstUSDTProxy | unknown | ethereum | n/a | [`0x156269...2c058c`](./contracts/ethereum-1/0x156269966404ca72f6721c3228676c56412c058c/) | ✅ Audited |
-| WstUSDTProxy | unknown | ethereum | n/a | [`0x572975...fe1ab0`](./contracts/ethereum-1/0x572975ff6d5136c81c8d7448b6361ef9eefe1ab0/) | ✅ Audited |
+| MinterProxy | unknown | ethereum | n/a | [`0xe22d16a16d8a5a92241cf696c35c08eaa873728c`](./contracts/ethereum-1/0xe22d16a16d8a5a92241cf696c35c08eaa873728c/) | ✅ Audited |
+| StUSDTProxy | unknown | ethereum | n/a | [`0x25ec98773d7b4ced4cafab96a2a1c0945f145e10`](./contracts/ethereum-1/0x25ec98773d7b4ced4cafab96a2a1c0945f145e10/) | ✅ Audited |
+| UnstUSDTProxy | unknown | ethereum | n/a | [`0x156269966404ca72f6721c3228676c56412c058c`](./contracts/ethereum-1/0x156269966404ca72f6721c3228676c56412c058c/) | ✅ Audited |
+| WstUSDTProxy | unknown | ethereum | n/a | [`0x572975ff6d5136c81c8d7448b6361ef9eefe1ab0`](./contracts/ethereum-1/0x572975ff6d5136c81c8d7448b6361ef9eefe1ab0/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 

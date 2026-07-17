@@ -60,9 +60,9 @@ The protocol comprises 3 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| JMIExtension | adapter | ethereum | n/a | [`0xd48e56...ef28f9`](./contracts/ethereum-1/0xd48e565561416de59da1050ed70b8d75e8ef28f9/) | ⚠️ Unaudited |
-| MToken | token | ethereum | n/a | [`0x866a2b...36be1b`](./contracts/ethereum-1/0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b/) | ⚠️ Unaudited |
-| SwapFacility | unknown | ethereum | n/a | [`0xb68071...6f6278`](./contracts/ethereum-1/0xb6807116b3b1b321a390594e31ecd6e0076f6278/) | ⚠️ Unaudited |
+| JMIExtension | adapter | ethereum | n/a | [`0xd48e565561416de59da1050ed70b8d75e8ef28f9`](./contracts/ethereum-1/0xd48e565561416de59da1050ed70b8d75e8ef28f9/) | ⚠️ Unaudited |
+| MToken | token | ethereum | n/a | [`0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b`](./contracts/ethereum-1/0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b/) | ⚠️ Unaudited |
+| SwapFacility | unknown | ethereum | n/a | [`0xb6807116b3b1b321a390594e31ecd6e0076f6278`](./contracts/ethereum-1/0xb6807116b3b1b321a390594e31ecd6e0076f6278/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,9 +93,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xd48e56...ef28f9`](./contracts/ethereum-1/0xd48e565561416de59da1050ed70b8d75e8ef28f9/) | JMIExtension | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x866a2b...36be1b`](./contracts/ethereum-1/0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b/) | MToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xb68071...6f6278`](./contracts/ethereum-1/0xb6807116b3b1b321a390594e31ecd6e0076f6278/) | SwapFacility | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xd48e565561416de59da1050ed70b8d75e8ef28f9`](./contracts/ethereum-1/0xd48e565561416de59da1050ed70b8d75e8ef28f9/) | JMIExtension | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b`](./contracts/ethereum-1/0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b/) | MToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb6807116b3b1b321a390594e31ecd6e0076f6278`](./contracts/ethereum-1/0xb6807116b3b1b321a390594e31ecd6e0076f6278/) | SwapFacility | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

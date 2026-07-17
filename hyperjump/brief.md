@@ -60,20 +60,20 @@ The protocol comprises 2 functional families. Contracts are linked by 5 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BeefyVaultV4 | unknown | bsc | n/a | [`0x02931d...23d913`](./contracts/bsc-56/0x02931dca7f6360fbfafde00be784b8c80123d913/) | ⚠️ Unaudited |
-| BurnMachineV2 | unknown | bsc | n/a | [`0xef6a9d...4af52b`](./contracts/bsc-56/0xef6a9d388071cfa59534c625e03df002f64af52b/) | ⚠️ Unaudited |
-| HyperAlloy | unknown | bsc | n/a | [`0x5ef599...6065bd`](./contracts/bsc-56/0x5ef5994fa33ff4eb6c82d51ee1dc145c546065bd/) | ⚠️ Unaudited |
-| HyperBurn | unknown | bsc | n/a | [`0x03d6bd...ecd54d`](./contracts/bsc-56/0x03d6bd3d48f956d783456695698c407a46ecd54d/) | ⚠️ Unaudited |
-| HyperCity | unknown | bsc | n/a | [`0x4f1818...1c6250`](./contracts/bsc-56/0x4f1818ff649498a2441ae1ad29ccf55a8e1c6250/) | ⚠️ Unaudited |
-| HyperMechs | unknown | bsc | n/a | [`0x3ae713...b84954`](./contracts/bsc-56/0x3ae713c662b8852d686e718e0762631a4cb84954/) | ⚠️ Unaudited |
-| HyperPool | unknown | bsc | n/a | [`0x1b04a6...e82f4b`](./contracts/bsc-56/0x1b04a6cdd6422f44eeea2dbe9bf1127a1ae82f4b/) | ⚠️ Unaudited |
-| HyperPoolV2 | unknown | bsc | n/a | [`0x027587...625a85`](./contracts/bsc-56/0x027587c42d8c43b5e8e622aa9981a409ef625a85/) | ⚠️ Unaudited |
-| HyperWarp | unknown | bsc | n/a | [`0x624e7c...8ae756`](./contracts/bsc-56/0x624e7c88b6884bffbab31623f4d1f8bc8b8ae756/) | ⚠️ Unaudited |
-| LPFeeVault | unknown | bsc | n/a | [`0x0fa942...59fa8d`](./contracts/bsc-56/0x0fa9420a4bfc08dbb6bdd1728b1555a96c59fa8d/) | ⚠️ Unaudited |
-| StarVaultLPF | unknown | bsc | n/a | [`0x64776d...e01447`](./contracts/bsc-56/0x64776d5bdbd391716a01c9fff35fc18fbce01447/) | ⚠️ Unaudited |
-| StrategyHyperLP | unknown | bsc | n/a | [`0x02db4d...d65cf8`](./contracts/bsc-56/0x02db4d714641f46dd70bec80e4e4c33f8fd65cf8/) | ⚠️ Unaudited |
-| StrategyHyperLPV2 | unknown | bsc | n/a | [`0x78609e...0454ab`](./contracts/bsc-56/0x78609e486ec17441e250d949df395a37e00454ab/) | ⚠️ Unaudited |
-| Timelock | unknown | bsc | n/a | [`0x89861b...d00265`](./contracts/bsc-56/0x89861bf28cedabba52ea4b06869186294cd00265/) | ⚠️ Unaudited |
+| BeefyVaultV4 | unknown | bsc | n/a | [`0x02931dca7f6360fbfafde00be784b8c80123d913`](./contracts/bsc-56/0x02931dca7f6360fbfafde00be784b8c80123d913/) | ⚠️ Unaudited |
+| BurnMachineV2 | unknown | bsc | n/a | [`0xef6a9d388071cfa59534c625e03df002f64af52b`](./contracts/bsc-56/0xef6a9d388071cfa59534c625e03df002f64af52b/) | ⚠️ Unaudited |
+| HyperAlloy | unknown | bsc | n/a | [`0x5ef5994fa33ff4eb6c82d51ee1dc145c546065bd`](./contracts/bsc-56/0x5ef5994fa33ff4eb6c82d51ee1dc145c546065bd/) | ⚠️ Unaudited |
+| HyperBurn | unknown | bsc | n/a | [`0x03d6bd3d48f956d783456695698c407a46ecd54d`](./contracts/bsc-56/0x03d6bd3d48f956d783456695698c407a46ecd54d/) | ⚠️ Unaudited |
+| HyperCity | unknown | bsc | n/a | [`0x4f1818ff649498a2441ae1ad29ccf55a8e1c6250`](./contracts/bsc-56/0x4f1818ff649498a2441ae1ad29ccf55a8e1c6250/) | ⚠️ Unaudited |
+| HyperMechs | unknown | bsc | n/a | [`0x3ae713c662b8852d686e718e0762631a4cb84954`](./contracts/bsc-56/0x3ae713c662b8852d686e718e0762631a4cb84954/) | ⚠️ Unaudited |
+| HyperPool | unknown | bsc | n/a | [`0x1b04a6cdd6422f44eeea2dbe9bf1127a1ae82f4b`](./contracts/bsc-56/0x1b04a6cdd6422f44eeea2dbe9bf1127a1ae82f4b/) | ⚠️ Unaudited |
+| HyperPoolV2 | unknown | bsc | n/a | [`0x027587c42d8c43b5e8e622aa9981a409ef625a85`](./contracts/bsc-56/0x027587c42d8c43b5e8e622aa9981a409ef625a85/) | ⚠️ Unaudited |
+| HyperWarp | unknown | bsc | n/a | [`0x624e7c88b6884bffbab31623f4d1f8bc8b8ae756`](./contracts/bsc-56/0x624e7c88b6884bffbab31623f4d1f8bc8b8ae756/) | ⚠️ Unaudited |
+| LPFeeVault | unknown | bsc | n/a | [`0x0fa9420a4bfc08dbb6bdd1728b1555a96c59fa8d`](./contracts/bsc-56/0x0fa9420a4bfc08dbb6bdd1728b1555a96c59fa8d/) | ⚠️ Unaudited |
+| StarVaultLPF | unknown | bsc | n/a | [`0x64776d5bdbd391716a01c9fff35fc18fbce01447`](./contracts/bsc-56/0x64776d5bdbd391716a01c9fff35fc18fbce01447/) | ⚠️ Unaudited |
+| StrategyHyperLP | unknown | bsc | n/a | [`0x02db4d714641f46dd70bec80e4e4c33f8fd65cf8`](./contracts/bsc-56/0x02db4d714641f46dd70bec80e4e4c33f8fd65cf8/) | ⚠️ Unaudited |
+| StrategyHyperLPV2 | unknown | bsc | n/a | [`0x78609e486ec17441e250d949df395a37e00454ab`](./contracts/bsc-56/0x78609e486ec17441e250d949df395a37e00454ab/) | ⚠️ Unaudited |
+| Timelock | unknown | bsc | n/a | [`0x89861bf28cedabba52ea4b06869186294cd00265`](./contracts/bsc-56/0x89861bf28cedabba52ea4b06869186294cd00265/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -107,20 +107,20 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x02931d...23d913`](./contracts/bsc-56/0x02931dca7f6360fbfafde00be784b8c80123d913/) | BeefyVaultV4 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xef6a9d...4af52b`](./contracts/bsc-56/0xef6a9d388071cfa59534c625e03df002f64af52b/) | BurnMachineV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x5ef599...6065bd`](./contracts/bsc-56/0x5ef5994fa33ff4eb6c82d51ee1dc145c546065bd/) | HyperAlloy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x03d6bd...ecd54d`](./contracts/bsc-56/0x03d6bd3d48f956d783456695698c407a46ecd54d/) | HyperBurn | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x4f1818...1c6250`](./contracts/bsc-56/0x4f1818ff649498a2441ae1ad29ccf55a8e1c6250/) | HyperCity | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x3ae713...b84954`](./contracts/bsc-56/0x3ae713c662b8852d686e718e0762631a4cb84954/) | HyperMechs | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x1b04a6...e82f4b`](./contracts/bsc-56/0x1b04a6cdd6422f44eeea2dbe9bf1127a1ae82f4b/) | HyperPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x027587...625a85`](./contracts/bsc-56/0x027587c42d8c43b5e8e622aa9981a409ef625a85/) | HyperPoolV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x624e7c...8ae756`](./contracts/bsc-56/0x624e7c88b6884bffbab31623f4d1f8bc8b8ae756/) | HyperWarp | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x0fa942...59fa8d`](./contracts/bsc-56/0x0fa9420a4bfc08dbb6bdd1728b1555a96c59fa8d/) | LPFeeVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x64776d...e01447`](./contracts/bsc-56/0x64776d5bdbd391716a01c9fff35fc18fbce01447/) | StarVaultLPF | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x02db4d...d65cf8`](./contracts/bsc-56/0x02db4d714641f46dd70bec80e4e4c33f8fd65cf8/) | StrategyHyperLP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x78609e...0454ab`](./contracts/bsc-56/0x78609e486ec17441e250d949df395a37e00454ab/) | StrategyHyperLPV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x89861b...d00265`](./contracts/bsc-56/0x89861bf28cedabba52ea4b06869186294cd00265/) | Timelock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x02931dca7f6360fbfafde00be784b8c80123d913`](./contracts/bsc-56/0x02931dca7f6360fbfafde00be784b8c80123d913/) | BeefyVaultV4 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xef6a9d388071cfa59534c625e03df002f64af52b`](./contracts/bsc-56/0xef6a9d388071cfa59534c625e03df002f64af52b/) | BurnMachineV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x5ef5994fa33ff4eb6c82d51ee1dc145c546065bd`](./contracts/bsc-56/0x5ef5994fa33ff4eb6c82d51ee1dc145c546065bd/) | HyperAlloy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x03d6bd3d48f956d783456695698c407a46ecd54d`](./contracts/bsc-56/0x03d6bd3d48f956d783456695698c407a46ecd54d/) | HyperBurn | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x4f1818ff649498a2441ae1ad29ccf55a8e1c6250`](./contracts/bsc-56/0x4f1818ff649498a2441ae1ad29ccf55a8e1c6250/) | HyperCity | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x3ae713c662b8852d686e718e0762631a4cb84954`](./contracts/bsc-56/0x3ae713c662b8852d686e718e0762631a4cb84954/) | HyperMechs | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x1b04a6cdd6422f44eeea2dbe9bf1127a1ae82f4b`](./contracts/bsc-56/0x1b04a6cdd6422f44eeea2dbe9bf1127a1ae82f4b/) | HyperPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x027587c42d8c43b5e8e622aa9981a409ef625a85`](./contracts/bsc-56/0x027587c42d8c43b5e8e622aa9981a409ef625a85/) | HyperPoolV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x624e7c88b6884bffbab31623f4d1f8bc8b8ae756`](./contracts/bsc-56/0x624e7c88b6884bffbab31623f4d1f8bc8b8ae756/) | HyperWarp | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x0fa9420a4bfc08dbb6bdd1728b1555a96c59fa8d`](./contracts/bsc-56/0x0fa9420a4bfc08dbb6bdd1728b1555a96c59fa8d/) | LPFeeVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x64776d5bdbd391716a01c9fff35fc18fbce01447`](./contracts/bsc-56/0x64776d5bdbd391716a01c9fff35fc18fbce01447/) | StarVaultLPF | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x02db4d714641f46dd70bec80e4e4c33f8fd65cf8`](./contracts/bsc-56/0x02db4d714641f46dd70bec80e4e4c33f8fd65cf8/) | StrategyHyperLP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x78609e486ec17441e250d949df395a37e00454ab`](./contracts/bsc-56/0x78609e486ec17441e250d949df395a37e00454ab/) | StrategyHyperLPV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x89861bf28cedabba52ea4b06869186294cd00265`](./contracts/bsc-56/0x89861bf28cedabba52ea4b06869186294cd00265/) | Timelock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

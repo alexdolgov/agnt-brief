@@ -61,28 +61,28 @@ The protocol comprises 3 functional families. Its contracts share 2 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AuctionModule | unknown | berachain | n/a | [`0x79f068...e0bc59`](./contracts/berachain-80094/0x79f068438022995ae4c11f00df3b2fd9bae0bc59/) | ⚠️ Unaudited |
-| BeaconProxy | unknown | berachain | n/a | [`0x34018a...4e5e95`](./contracts/berachain-80094/0x34018ac9dc4b114036ca148aa18c8f75594e5e95/) | ⚠️ Unaudited |
-| BeraPawForge | unknown | berachain | n/a | [`0x1cb5d6...29fb3d`](./contracts/berachain-80094/0x1cb5d6147fe08c4baf787a5f6bc30e16e829fb3d/) | ⚠️ Unaudited |
-| BeraPawRewardsReserve | unknown | berachain | n/a | [`0x717dd5...06bdd0`](./contracts/berachain-80094/0x717dd5cea52cfb549b2e6b9d56e48b459406bdd0/) | ⚠️ Unaudited |
-| BeraPawRewardVaultFactory | unknown | berachain | n/a | [`0x339922...e2c699`](./contracts/berachain-80094/0x339922dc33f06308c19d1a5830908820cde2c699/) | ⚠️ Unaudited |
-| BGT | unknown | berachain | n/a | [`0x656b95...eb1dba`](./contracts/berachain-80094/0x656b95e550c07a9ffe548bd4085c72418ceb1dba/) | ⚠️ Unaudited |
-| BuyBackBurnModule | unknown | berachain | n/a | [`0x8e91e2...19ef5b`](./contracts/berachain-80094/0x8e91e211c4ba7e95a7301a537b09435c1a19ef5b/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | berachain | n/a | [`0x118d2c...3eec9a`](./contracts/berachain-80094/0x118d2ceee9785eaf70c15cd74cd84c9f8c3eec9a/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | berachain | n/a | [`0x3ea91a...96ec28`](./contracts/berachain-80094/0x3ea91ae9e47edbc43e64c6ddf99d67207296ec28/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | berachain | n/a | [`0x4b1d14...f0b00b`](./contracts/berachain-80094/0x4b1d14c4fea305c4144b51ee64141567a0f0b00b/) | ⚠️ Unaudited |
-| EulerDepositLBGTModule | unknown | berachain | n/a | [`0x9e1b7b...b22634`](./contracts/berachain-80094/0x9e1b7bdfeb1f6a0365f158f4052472f093b22634/) | ⚠️ Unaudited |
-| LBGT | unknown | berachain | n/a | [`0xbaadcc...d6babe`](./contracts/berachain-80094/0xbaadcc2962417c01af99fb2b7c75706b9bd6babe/) | ⚠️ Unaudited |
-| LbgtHelper | unknown | berachain | n/a | [`0x938f83...355eb4`](./contracts/berachain-80094/0x938f83738ccd5b4217862fa4b521b015f3355eb4/) | ⚠️ Unaudited |
-| LBGTStakingRewards | unknown | berachain | n/a | [`0x0e4692...ff13f4`](./contracts/berachain-80094/0x0e4692b4ec8c920ad7f00aed419ad22d8dff13f4/) | ⚠️ Unaudited |
-| LPStakingRewards | unknown | berachain | n/a | [`0x3301dd...b55b8d`](./contracts/berachain-80094/0x3301dd4676f022807f23bd66611679ff59b55b8d/) | ⚠️ Unaudited |
-| pBERA | unknown | berachain | n/a | [`0xdeadf1...26b34a`](./contracts/berachain-80094/0xdeadf18cb9233770fe8874c78d7483b4a126b34a/) | ⚠️ Unaudited |
-| PolVault | unknown | berachain | n/a | [`0x43a5df...3c9606`](./contracts/berachain-80094/0x43a5df33d4bf24cb79894c912962c88a0d3c9606/) | ⚠️ Unaudited |
-| PrePaw | unknown | berachain | n/a | [`0x03c86e...33e1ac`](./contracts/berachain-80094/0x03c86e21623f25eca0ea544890c7603b9a33e1ac/) | ⚠️ Unaudited |
-| RewardVault | unknown | berachain | n/a | [`0xe8ed00...d5a401`](./contracts/berachain-80094/0xe8ed00b1b142e8d84ef773c4fccaa18682d5a401/) | ⚠️ Unaudited |
-| StakedLbgt | unknown | berachain | n/a | [`0x083546...771ce9`](./contracts/berachain-80094/0x083546224a992eb0cd8f2290576b15c612771ce9/) | ⚠️ Unaudited |
-| StakedPBera | unknown | berachain | n/a | [`0x18e352...265a5c`](./contracts/berachain-80094/0x18e352afe7b29624f827489c833869bc98265a5c/) | ⚠️ Unaudited |
-| yPawRefund | unknown | berachain | n/a | [`0xe9405d...8a96b5`](./contracts/berachain-80094/0xe9405de9ee6684fee4d7c0489fe3219a878a96b5/) | ⚠️ Unaudited |
+| AuctionModule | unknown | berachain | n/a | [`0x79f068438022995ae4c11f00df3b2fd9bae0bc59`](./contracts/berachain-80094/0x79f068438022995ae4c11f00df3b2fd9bae0bc59/) | ⚠️ Unaudited |
+| BeaconProxy | unknown | berachain | n/a | [`0x34018ac9dc4b114036ca148aa18c8f75594e5e95`](./contracts/berachain-80094/0x34018ac9dc4b114036ca148aa18c8f75594e5e95/) | ⚠️ Unaudited |
+| BeraPawForge | unknown | berachain | n/a | [`0x1cb5d6147fe08c4baf787a5f6bc30e16e829fb3d`](./contracts/berachain-80094/0x1cb5d6147fe08c4baf787a5f6bc30e16e829fb3d/) | ⚠️ Unaudited |
+| BeraPawRewardsReserve | unknown | berachain | n/a | [`0x717dd5cea52cfb549b2e6b9d56e48b459406bdd0`](./contracts/berachain-80094/0x717dd5cea52cfb549b2e6b9d56e48b459406bdd0/) | ⚠️ Unaudited |
+| BeraPawRewardVaultFactory | unknown | berachain | n/a | [`0x339922dc33f06308c19d1a5830908820cde2c699`](./contracts/berachain-80094/0x339922dc33f06308c19d1a5830908820cde2c699/) | ⚠️ Unaudited |
+| BGT | unknown | berachain | n/a | [`0x656b95e550c07a9ffe548bd4085c72418ceb1dba`](./contracts/berachain-80094/0x656b95e550c07a9ffe548bd4085c72418ceb1dba/) | ⚠️ Unaudited |
+| BuyBackBurnModule | unknown | berachain | n/a | [`0x8e91e211c4ba7e95a7301a537b09435c1a19ef5b`](./contracts/berachain-80094/0x8e91e211c4ba7e95a7301a537b09435c1a19ef5b/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | berachain | n/a | [`0x118d2ceee9785eaf70c15cd74cd84c9f8c3eec9a`](./contracts/berachain-80094/0x118d2ceee9785eaf70c15cd74cd84c9f8c3eec9a/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | berachain | n/a | [`0x3ea91ae9e47edbc43e64c6ddf99d67207296ec28`](./contracts/berachain-80094/0x3ea91ae9e47edbc43e64c6ddf99d67207296ec28/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | berachain | n/a | [`0x4b1d14c4fea305c4144b51ee64141567a0f0b00b`](./contracts/berachain-80094/0x4b1d14c4fea305c4144b51ee64141567a0f0b00b/) | ⚠️ Unaudited |
+| EulerDepositLBGTModule | unknown | berachain | n/a | [`0x9e1b7bdfeb1f6a0365f158f4052472f093b22634`](./contracts/berachain-80094/0x9e1b7bdfeb1f6a0365f158f4052472f093b22634/) | ⚠️ Unaudited |
+| LBGT | unknown | berachain | n/a | [`0xbaadcc2962417c01af99fb2b7c75706b9bd6babe`](./contracts/berachain-80094/0xbaadcc2962417c01af99fb2b7c75706b9bd6babe/) | ⚠️ Unaudited |
+| LbgtHelper | unknown | berachain | n/a | [`0x938f83738ccd5b4217862fa4b521b015f3355eb4`](./contracts/berachain-80094/0x938f83738ccd5b4217862fa4b521b015f3355eb4/) | ⚠️ Unaudited |
+| LBGTStakingRewards | unknown | berachain | n/a | [`0x0e4692b4ec8c920ad7f00aed419ad22d8dff13f4`](./contracts/berachain-80094/0x0e4692b4ec8c920ad7f00aed419ad22d8dff13f4/) | ⚠️ Unaudited |
+| LPStakingRewards | unknown | berachain | n/a | [`0x3301dd4676f022807f23bd66611679ff59b55b8d`](./contracts/berachain-80094/0x3301dd4676f022807f23bd66611679ff59b55b8d/) | ⚠️ Unaudited |
+| pBERA | unknown | berachain | n/a | [`0xdeadf18cb9233770fe8874c78d7483b4a126b34a`](./contracts/berachain-80094/0xdeadf18cb9233770fe8874c78d7483b4a126b34a/) | ⚠️ Unaudited |
+| PolVault | unknown | berachain | n/a | [`0x43a5df33d4bf24cb79894c912962c88a0d3c9606`](./contracts/berachain-80094/0x43a5df33d4bf24cb79894c912962c88a0d3c9606/) | ⚠️ Unaudited |
+| PrePaw | unknown | berachain | n/a | [`0x03c86e21623f25eca0ea544890c7603b9a33e1ac`](./contracts/berachain-80094/0x03c86e21623f25eca0ea544890c7603b9a33e1ac/) | ⚠️ Unaudited |
+| RewardVault | unknown | berachain | n/a | [`0xe8ed00b1b142e8d84ef773c4fccaa18682d5a401`](./contracts/berachain-80094/0xe8ed00b1b142e8d84ef773c4fccaa18682d5a401/) | ⚠️ Unaudited |
+| StakedLbgt | unknown | berachain | n/a | [`0x083546224a992eb0cd8f2290576b15c612771ce9`](./contracts/berachain-80094/0x083546224a992eb0cd8f2290576b15c612771ce9/) | ⚠️ Unaudited |
+| StakedPBera | unknown | berachain | n/a | [`0x18e352afe7b29624f827489c833869bc98265a5c`](./contracts/berachain-80094/0x18e352afe7b29624f827489c833869bc98265a5c/) | ⚠️ Unaudited |
+| yPawRefund | unknown | berachain | n/a | [`0xe9405de9ee6684fee4d7c0489fe3219a878a96b5`](./contracts/berachain-80094/0xe9405de9ee6684fee4d7c0489fe3219a878a96b5/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -120,24 +120,24 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| berachain | [`0x79f068...e0bc59`](./contracts/berachain-80094/0x79f068438022995ae4c11f00df3b2fd9bae0bc59/) | AuctionModule | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | [`0x1cb5d6...29fb3d`](./contracts/berachain-80094/0x1cb5d6147fe08c4baf787a5f6bc30e16e829fb3d/) | BeraPawForge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | [`0x717dd5...06bdd0`](./contracts/berachain-80094/0x717dd5cea52cfb549b2e6b9d56e48b459406bdd0/) | BeraPawRewardsReserve | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | [`0x339922...e2c699`](./contracts/berachain-80094/0x339922dc33f06308c19d1a5830908820cde2c699/) | BeraPawRewardVaultFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | [`0x656b95...eb1dba`](./contracts/berachain-80094/0x656b95e550c07a9ffe548bd4085c72418ceb1dba/) | BGT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | [`0x8e91e2...19ef5b`](./contracts/berachain-80094/0x8e91e211c4ba7e95a7301a537b09435c1a19ef5b/) | BuyBackBurnModule | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | [`0x9e1b7b...b22634`](./contracts/berachain-80094/0x9e1b7bdfeb1f6a0365f158f4052472f093b22634/) | EulerDepositLBGTModule | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | [`0xbaadcc...d6babe`](./contracts/berachain-80094/0xbaadcc2962417c01af99fb2b7c75706b9bd6babe/) | LBGT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | [`0x938f83...355eb4`](./contracts/berachain-80094/0x938f83738ccd5b4217862fa4b521b015f3355eb4/) | LbgtHelper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | [`0x0e4692...ff13f4`](./contracts/berachain-80094/0x0e4692b4ec8c920ad7f00aed419ad22d8dff13f4/) | LBGTStakingRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | [`0x3301dd...b55b8d`](./contracts/berachain-80094/0x3301dd4676f022807f23bd66611679ff59b55b8d/) | LPStakingRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | [`0xdeadf1...26b34a`](./contracts/berachain-80094/0xdeadf18cb9233770fe8874c78d7483b4a126b34a/) | pBERA | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | [`0x43a5df...3c9606`](./contracts/berachain-80094/0x43a5df33d4bf24cb79894c912962c88a0d3c9606/) | PolVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | [`0x03c86e...33e1ac`](./contracts/berachain-80094/0x03c86e21623f25eca0ea544890c7603b9a33e1ac/) | PrePaw | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | [`0xe8ed00...d5a401`](./contracts/berachain-80094/0xe8ed00b1b142e8d84ef773c4fccaa18682d5a401/) | RewardVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | [`0x083546...771ce9`](./contracts/berachain-80094/0x083546224a992eb0cd8f2290576b15c612771ce9/) | StakedLbgt | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | [`0x18e352...265a5c`](./contracts/berachain-80094/0x18e352afe7b29624f827489c833869bc98265a5c/) | StakedPBera | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | [`0xe9405d...8a96b5`](./contracts/berachain-80094/0xe9405de9ee6684fee4d7c0489fe3219a878a96b5/) | yPawRefund | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0x79f068438022995ae4c11f00df3b2fd9bae0bc59`](./contracts/berachain-80094/0x79f068438022995ae4c11f00df3b2fd9bae0bc59/) | AuctionModule | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0x1cb5d6147fe08c4baf787a5f6bc30e16e829fb3d`](./contracts/berachain-80094/0x1cb5d6147fe08c4baf787a5f6bc30e16e829fb3d/) | BeraPawForge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0x717dd5cea52cfb549b2e6b9d56e48b459406bdd0`](./contracts/berachain-80094/0x717dd5cea52cfb549b2e6b9d56e48b459406bdd0/) | BeraPawRewardsReserve | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0x339922dc33f06308c19d1a5830908820cde2c699`](./contracts/berachain-80094/0x339922dc33f06308c19d1a5830908820cde2c699/) | BeraPawRewardVaultFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0x656b95e550c07a9ffe548bd4085c72418ceb1dba`](./contracts/berachain-80094/0x656b95e550c07a9ffe548bd4085c72418ceb1dba/) | BGT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0x8e91e211c4ba7e95a7301a537b09435c1a19ef5b`](./contracts/berachain-80094/0x8e91e211c4ba7e95a7301a537b09435c1a19ef5b/) | BuyBackBurnModule | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0x9e1b7bdfeb1f6a0365f158f4052472f093b22634`](./contracts/berachain-80094/0x9e1b7bdfeb1f6a0365f158f4052472f093b22634/) | EulerDepositLBGTModule | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0xbaadcc2962417c01af99fb2b7c75706b9bd6babe`](./contracts/berachain-80094/0xbaadcc2962417c01af99fb2b7c75706b9bd6babe/) | LBGT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0x938f83738ccd5b4217862fa4b521b015f3355eb4`](./contracts/berachain-80094/0x938f83738ccd5b4217862fa4b521b015f3355eb4/) | LbgtHelper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0x0e4692b4ec8c920ad7f00aed419ad22d8dff13f4`](./contracts/berachain-80094/0x0e4692b4ec8c920ad7f00aed419ad22d8dff13f4/) | LBGTStakingRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0x3301dd4676f022807f23bd66611679ff59b55b8d`](./contracts/berachain-80094/0x3301dd4676f022807f23bd66611679ff59b55b8d/) | LPStakingRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0xdeadf18cb9233770fe8874c78d7483b4a126b34a`](./contracts/berachain-80094/0xdeadf18cb9233770fe8874c78d7483b4a126b34a/) | pBERA | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0x43a5df33d4bf24cb79894c912962c88a0d3c9606`](./contracts/berachain-80094/0x43a5df33d4bf24cb79894c912962c88a0d3c9606/) | PolVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0x03c86e21623f25eca0ea544890c7603b9a33e1ac`](./contracts/berachain-80094/0x03c86e21623f25eca0ea544890c7603b9a33e1ac/) | PrePaw | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0xe8ed00b1b142e8d84ef773c4fccaa18682d5a401`](./contracts/berachain-80094/0xe8ed00b1b142e8d84ef773c4fccaa18682d5a401/) | RewardVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0x083546224a992eb0cd8f2290576b15c612771ce9`](./contracts/berachain-80094/0x083546224a992eb0cd8f2290576b15c612771ce9/) | StakedLbgt | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0x18e352afe7b29624f827489c833869bc98265a5c`](./contracts/berachain-80094/0x18e352afe7b29624f827489c833869bc98265a5c/) | StakedPBera | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0xe9405de9ee6684fee4d7c0489fe3219a878a96b5`](./contracts/berachain-80094/0xe9405de9ee6684fee4d7c0489fe3219a878a96b5/) | yPawRefund | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

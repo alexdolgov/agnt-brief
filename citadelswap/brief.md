@@ -60,9 +60,9 @@ The protocol comprises 3 functional families. Contracts are linked by 1 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CitadelMaster | unknown | base | n/a | [`0x75776c...f85237`](./contracts/base-8453/0x75776c547d312eba17c9461fd5c10ba6c2f85237/) | ⚠️ Unaudited |
-| CitadelRouter | adapter | base | n/a | [`0x112f3f...3e4234`](./contracts/base-8453/0x112f3f5ce89a46b9d7e18131e8e7cdde313e4234/) | ⚠️ Unaudited |
-| CitadelToken | token | base | n/a | [`0x723306...8d0898`](./contracts/base-8453/0x7233062d88133b5402d39d62bfa23a1b6c8d0898/) | ⚠️ Unaudited |
+| CitadelMaster | unknown | base | n/a | [`0x75776c547d312eba17c9461fd5c10ba6c2f85237`](./contracts/base-8453/0x75776c547d312eba17c9461fd5c10ba6c2f85237/) | ⚠️ Unaudited |
+| CitadelRouter | adapter | base | n/a | [`0x112f3f5ce89a46b9d7e18131e8e7cdde313e4234`](./contracts/base-8453/0x112f3f5ce89a46b9d7e18131e8e7cdde313e4234/) | ⚠️ Unaudited |
+| CitadelToken | token | base | n/a | [`0x7233062d88133b5402d39d62bfa23a1b6c8d0898`](./contracts/base-8453/0x7233062d88133b5402d39d62bfa23a1b6c8d0898/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -82,8 +82,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | base | n/a | `0x4076f3...9b27fb` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xdf3700...4d088f` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x4076f3f43460293105256535d6ff8bb74c9b27fb` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xdf3700182aad4283f4c23bce3067c705ca4d088f` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -97,9 +97,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x75776c...f85237`](./contracts/base-8453/0x75776c547d312eba17c9461fd5c10ba6c2f85237/) | CitadelMaster | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x112f3f...3e4234`](./contracts/base-8453/0x112f3f5ce89a46b9d7e18131e8e7cdde313e4234/) | CitadelRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x723306...8d0898`](./contracts/base-8453/0x7233062d88133b5402d39d62bfa23a1b6c8d0898/) | CitadelToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x75776c547d312eba17c9461fd5c10ba6c2f85237`](./contracts/base-8453/0x75776c547d312eba17c9461fd5c10ba6c2f85237/) | CitadelMaster | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x112f3f5ce89a46b9d7e18131e8e7cdde313e4234`](./contracts/base-8453/0x112f3f5ce89a46b9d7e18131e8e7cdde313e4234/) | CitadelRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x7233062d88133b5402d39d62bfa23a1b6c8d0898`](./contracts/base-8453/0x7233062d88133b5402d39d62bfa23a1b6c8d0898/) | CitadelToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

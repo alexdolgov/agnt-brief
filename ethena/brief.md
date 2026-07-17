@@ -67,37 +67,37 @@ The protocol comprises 2 functional families. Its contracts share 14 common proj
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ENA | unknown | ethereum | n/a | [`0x57e114...1e6061`](./contracts/ethereum-1/0x57e114b691db790c35207b2e685d4a43181e6061/) | ✅ Audited |
-| EthenaLPStaking | unknown | ethereum | n/a | [`0x8707f2...cfc512`](./contracts/ethereum-1/0x8707f238936c12c309bfc2b9959c35828acfc512/) | ✅ Audited |
-| EthenaMinting | unknown | ethereum | n/a | [`0x2cc440...f8afc3`](./contracts/ethereum-1/0x2cc440b721d2cafd6d64908d6d8c4acc57f8afc3/) | ✅ Audited |
-| StakedENA | unknown | ethereum | n/a | [`0x7fd57b...e1018b`](./contracts/ethereum-1/0x7fd57b46ae1a7b14f6940508381877ee03e1018b/) | ✅ Audited |
-| StakedUSDeV2 | unknown | ethereum | n/a | [`0x6bf967...bac41d`](./contracts/ethereum-1/0x6bf967288ffef9420b142fb97ccf236584bac41d/) | ✅ Audited |
-| StakingRewardsDistributor | unknown | ethereum | n/a | [`0xf2fa33...c6b439`](./contracts/ethereum-1/0xf2fa332bd83149c66b09b45670bce64746c6b439/) | ✅ Audited |
-| USDe | unknown | ethereum | n/a | [`0x4c9edd...1e68b3`](./contracts/ethereum-1/0x4c9edd5852cd905f086c759e8383e09bff1e68b3/) | ✅ Audited |
+| ENA | unknown | ethereum | n/a | [`0x57e114b691db790c35207b2e685d4a43181e6061`](./contracts/ethereum-1/0x57e114b691db790c35207b2e685d4a43181e6061/) | ✅ Audited |
+| EthenaLPStaking | unknown | ethereum | n/a | [`0x8707f238936c12c309bfc2b9959c35828acfc512`](./contracts/ethereum-1/0x8707f238936c12c309bfc2b9959c35828acfc512/) | ✅ Audited |
+| EthenaMinting | unknown | ethereum | n/a | [`0x2cc440b721d2cafd6d64908d6d8c4acc57f8afc3`](./contracts/ethereum-1/0x2cc440b721d2cafd6d64908d6d8c4acc57f8afc3/) | ✅ Audited |
+| StakedENA | unknown | ethereum | n/a | [`0x7fd57b46ae1a7b14f6940508381877ee03e1018b`](./contracts/ethereum-1/0x7fd57b46ae1a7b14f6940508381877ee03e1018b/) | ✅ Audited |
+| StakedUSDeV2 | unknown | ethereum | n/a | [`0x6bf967288ffef9420b142fb97ccf236584bac41d`](./contracts/ethereum-1/0x6bf967288ffef9420b142fb97ccf236584bac41d/) | ✅ Audited |
+| StakingRewardsDistributor | unknown | ethereum | n/a | [`0xf2fa332bd83149c66b09b45670bce64746c6b439`](./contracts/ethereum-1/0xf2fa332bd83149c66b09b45670bce64746c6b439/) | ✅ Audited |
+| USDe | unknown | ethereum | n/a | [`0x4c9edd5852cd905f086c759e8383e09bff1e68b3`](./contracts/ethereum-1/0x4c9edd5852cd905f086c759e8383e09bff1e68b3/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (19)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ENAOFTAdapter | unknown | ethereum | n/a | [`0x58538e...9c0133`](./contracts/ethereum-1/0x58538e6a46e07434d7e7375bc268d3cb839c0133/) | ⚠️ Unaudited |
-| EthenaTimelockController | unknown | ethereum | n/a | [`0x7deee3...0175ae`](./contracts/ethereum-1/0x7deee377b91fd419c8ff2257197ae457fe0175ae/) | ⚠️ Unaudited |
-| EthenaWallet | unknown | ethereum | n/a | [`0xcd1b8d...33a02e`](./contracts/ethereum-1/0xcd1b8dc7813bb89e179c400e0b1d16cedf33a02e/) | ⚠️ Unaudited |
-| GnosisSafe | unknown | ethereum | n/a | [`0x2b5ab5...5dd4d5`](./contracts/ethereum-1/0x2b5ab59163a6e93b4486f6055d33ca4a115dd4d5/) | ⚠️ Unaudited |
-| GnosisSafeProxy | unknown | mantle | n/a | [`0x799a2c...a060bb`](./contracts/mantle-5000/0x799a2cd46cbc7fb53949072257e6331054a060bb/) | ⚠️ Unaudited |
-| GnosisSafeProxy | unknown | berachain | n/a | [`0x093d3f...b09364`](./contracts/berachain-80094/0x093d3f4785149a3d2600cb10d63afa14f9b09364/) | ⚠️ Unaudited |
-| Groth16Verifier | unknown | ethereum | n/a | [`0x8a526f...005234`](./contracts/ethereum-1/0x8a526f919c391105ef251ddede15067027005234/) | ⚠️ Unaudited |
-| MellowVaultCompat | unknown | ethereum | n/a | [`0xc65433...c47bd8`](./contracts/ethereum-1/0xc65433845ecd16688eda196497fa9130d6c47bd8/) | ⚠️ Unaudited |
-| MockToken | unknown | ethereum | n/a | [`0xe90ec1...58d16b`](./contracts/ethereum-1/0xe90ec12369fbbcbcdaaa320da59134281458d16b/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | ethereum | n/a | [`0x3c405f...9acd68`](./contracts/ethereum-1/0x3c405f68d5c6ece868e5646cac926679839acd68/) | ⚠️ Unaudited |
-| StakedUSDeOFTAdapter | unknown | ethereum | n/a | [`0x211cc4...5fe5d2`](./contracts/ethereum-1/0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2/) | ⚠️ Unaudited |
-| TestnetERC20 | unknown | ethereum | n/a | [`0xabb158...3cbea7`](./contracts/ethereum-1/0xabb15848b98d3ef7ad20a69127b003c7613cbea7/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x0795ab...aa28c3`](./contracts/ethereum-1/0x0795ab0dc75497a2c3f6345f2de0feef0eaa28c3/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0xc13919...18ac1c`](./contracts/ethereum-1/0xc139190f447e929f090edeb554d95abb8b18ac1c/) | ⚠️ Unaudited |
-| UniswapV3Pool | unknown | ethereum | n/a | [`0x435664...2f1e47`](./contracts/ethereum-1/0x435664008f38b0650fbc1c9fc971d0a3bc2f1e47/) | ⚠️ Unaudited |
-| USDeOFTAdapter | unknown | ethereum | n/a | [`0x5d3a1f...52ef34`](./contracts/ethereum-1/0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34/) | ⚠️ Unaudited |
-| USDtb | unknown | ethereum | n/a | [`0xea8a76...39e475`](./contracts/ethereum-1/0xea8a763b5b1f9c9c7aea64f33947448d9e39e475/) | ⚠️ Unaudited |
-| USDtbMinting | unknown | ethereum | n/a | [`0xa3ddbf...48416a`](./contracts/ethereum-1/0xa3ddbf92077b850e29c4805df0a2459ae048416a/) | ⚠️ Unaudited |
-| VaultRouter | unknown | ethereum | n/a | [`0x231fa7...331c3c`](./contracts/ethereum-1/0x231fa76fd55284082ec5aba51272b9ff68331c3c/) | ⚠️ Unaudited |
+| ENAOFTAdapter | unknown | ethereum | n/a | [`0x58538e6a46e07434d7e7375bc268d3cb839c0133`](./contracts/ethereum-1/0x58538e6a46e07434d7e7375bc268d3cb839c0133/) | ⚠️ Unaudited |
+| EthenaTimelockController | unknown | ethereum | n/a | [`0x7deee377b91fd419c8ff2257197ae457fe0175ae`](./contracts/ethereum-1/0x7deee377b91fd419c8ff2257197ae457fe0175ae/) | ⚠️ Unaudited |
+| EthenaWallet | unknown | ethereum | n/a | [`0xcd1b8dc7813bb89e179c400e0b1d16cedf33a02e`](./contracts/ethereum-1/0xcd1b8dc7813bb89e179c400e0b1d16cedf33a02e/) | ⚠️ Unaudited |
+| GnosisSafe | unknown | ethereum | n/a | [`0x2b5ab59163a6e93b4486f6055d33ca4a115dd4d5`](./contracts/ethereum-1/0x2b5ab59163a6e93b4486f6055d33ca4a115dd4d5/) | ⚠️ Unaudited |
+| GnosisSafeProxy | unknown | mantle | n/a | [`0x799a2cd46cbc7fb53949072257e6331054a060bb`](./contracts/mantle-5000/0x799a2cd46cbc7fb53949072257e6331054a060bb/) | ⚠️ Unaudited |
+| GnosisSafeProxy | unknown | berachain | n/a | [`0x093d3f4785149a3d2600cb10d63afa14f9b09364`](./contracts/berachain-80094/0x093d3f4785149a3d2600cb10d63afa14f9b09364/) | ⚠️ Unaudited |
+| Groth16Verifier | unknown | ethereum | n/a | [`0x8a526f919c391105ef251ddede15067027005234`](./contracts/ethereum-1/0x8a526f919c391105ef251ddede15067027005234/) | ⚠️ Unaudited |
+| MellowVaultCompat | unknown | ethereum | n/a | [`0xc65433845ecd16688eda196497fa9130d6c47bd8`](./contracts/ethereum-1/0xc65433845ecd16688eda196497fa9130d6c47bd8/) | ⚠️ Unaudited |
+| MockToken | unknown | ethereum | n/a | [`0xe90ec12369fbbcbcdaaa320da59134281458d16b`](./contracts/ethereum-1/0xe90ec12369fbbcbcdaaa320da59134281458d16b/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | ethereum | n/a | [`0x3c405f68d5c6ece868e5646cac926679839acd68`](./contracts/ethereum-1/0x3c405f68d5c6ece868e5646cac926679839acd68/) | ⚠️ Unaudited |
+| StakedUSDeOFTAdapter | unknown | ethereum | n/a | [`0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2`](./contracts/ethereum-1/0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2/) | ⚠️ Unaudited |
+| TestnetERC20 | unknown | ethereum | n/a | [`0xabb15848b98d3ef7ad20a69127b003c7613cbea7`](./contracts/ethereum-1/0xabb15848b98d3ef7ad20a69127b003c7613cbea7/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x0795ab0dc75497a2c3f6345f2de0feef0eaa28c3`](./contracts/ethereum-1/0x0795ab0dc75497a2c3f6345f2de0feef0eaa28c3/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0xc139190f447e929f090edeb554d95abb8b18ac1c`](./contracts/ethereum-1/0xc139190f447e929f090edeb554d95abb8b18ac1c/) | ⚠️ Unaudited |
+| UniswapV3Pool | unknown | ethereum | n/a | [`0x435664008f38b0650fbc1c9fc971d0a3bc2f1e47`](./contracts/ethereum-1/0x435664008f38b0650fbc1c9fc971d0a3bc2f1e47/) | ⚠️ Unaudited |
+| USDeOFTAdapter | unknown | ethereum | n/a | [`0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34`](./contracts/ethereum-1/0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34/) | ⚠️ Unaudited |
+| USDtb | unknown | ethereum | n/a | [`0xea8a763b5b1f9c9c7aea64f33947448d9e39e475`](./contracts/ethereum-1/0xea8a763b5b1f9c9c7aea64f33947448d9e39e475/) | ⚠️ Unaudited |
+| USDtbMinting | unknown | ethereum | n/a | [`0xa3ddbf92077b850e29c4805df0a2459ae048416a`](./contracts/ethereum-1/0xa3ddbf92077b850e29c4805df0a2459ae048416a/) | ⚠️ Unaudited |
+| VaultRouter | unknown | ethereum | n/a | [`0x231fa76fd55284082ec5aba51272b9ff68331c3c`](./contracts/ethereum-1/0x231fa76fd55284082ec5aba51272b9ff68331c3c/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -144,18 +144,18 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x58538e...9c0133`](./contracts/ethereum-1/0x58538e6a46e07434d7e7375bc268d3cb839c0133/) | ENAOFTAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x7deee3...0175ae`](./contracts/ethereum-1/0x7deee377b91fd419c8ff2257197ae457fe0175ae/) | EthenaTimelockController | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xcd1b8d...33a02e`](./contracts/ethereum-1/0xcd1b8dc7813bb89e179c400e0b1d16cedf33a02e/) | EthenaWallet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x8a526f...005234`](./contracts/ethereum-1/0x8a526f919c391105ef251ddede15067027005234/) | Groth16Verifier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc65433...c47bd8`](./contracts/ethereum-1/0xc65433845ecd16688eda196497fa9130d6c47bd8/) | MellowVaultCompat | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xe90ec1...58d16b`](./contracts/ethereum-1/0xe90ec12369fbbcbcdaaa320da59134281458d16b/) | MockToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x211cc4...5fe5d2`](./contracts/ethereum-1/0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2/) | StakedUSDeOFTAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xabb158...3cbea7`](./contracts/ethereum-1/0xabb15848b98d3ef7ad20a69127b003c7613cbea7/) | TestnetERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x5d3a1f...52ef34`](./contracts/ethereum-1/0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34/) | USDeOFTAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xea8a76...39e475`](./contracts/ethereum-1/0xea8a763b5b1f9c9c7aea64f33947448d9e39e475/) | USDtb | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa3ddbf...48416a`](./contracts/ethereum-1/0xa3ddbf92077b850e29c4805df0a2459ae048416a/) | USDtbMinting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x231fa7...331c3c`](./contracts/ethereum-1/0x231fa76fd55284082ec5aba51272b9ff68331c3c/) | VaultRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x58538e6a46e07434d7e7375bc268d3cb839c0133`](./contracts/ethereum-1/0x58538e6a46e07434d7e7375bc268d3cb839c0133/) | ENAOFTAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x7deee377b91fd419c8ff2257197ae457fe0175ae`](./contracts/ethereum-1/0x7deee377b91fd419c8ff2257197ae457fe0175ae/) | EthenaTimelockController | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xcd1b8dc7813bb89e179c400e0b1d16cedf33a02e`](./contracts/ethereum-1/0xcd1b8dc7813bb89e179c400e0b1d16cedf33a02e/) | EthenaWallet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8a526f919c391105ef251ddede15067027005234`](./contracts/ethereum-1/0x8a526f919c391105ef251ddede15067027005234/) | Groth16Verifier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc65433845ecd16688eda196497fa9130d6c47bd8`](./contracts/ethereum-1/0xc65433845ecd16688eda196497fa9130d6c47bd8/) | MellowVaultCompat | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe90ec12369fbbcbcdaaa320da59134281458d16b`](./contracts/ethereum-1/0xe90ec12369fbbcbcdaaa320da59134281458d16b/) | MockToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2`](./contracts/ethereum-1/0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2/) | StakedUSDeOFTAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xabb15848b98d3ef7ad20a69127b003c7613cbea7`](./contracts/ethereum-1/0xabb15848b98d3ef7ad20a69127b003c7613cbea7/) | TestnetERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34`](./contracts/ethereum-1/0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34/) | USDeOFTAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xea8a763b5b1f9c9c7aea64f33947448d9e39e475`](./contracts/ethereum-1/0xea8a763b5b1f9c9c7aea64f33947448d9e39e475/) | USDtb | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa3ddbf92077b850e29c4805df0a2459ae048416a`](./contracts/ethereum-1/0xa3ddbf92077b850e29c4805df0a2459ae048416a/) | USDtbMinting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x231fa76fd55284082ec5aba51272b9ff68331c3c`](./contracts/ethereum-1/0x231fa76fd55284082ec5aba51272b9ff68331c3c/) | VaultRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

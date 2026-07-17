@@ -57,9 +57,9 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum, chai
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x6398b7...4ddc0f`, chain 42161)
-- UnnamedContract (`0xc09247...f1370e`, chain 42161)
-- TransparentUpgradeableProxy (`0x6c84a8...d0de40`, chain 42161)
+- UnnamedContract (`0x6398b76df91c5ebe9f488e3656658e79284ddc0f`, chain 42161)
+- UnnamedContract (`0xc09247f837a205bdde43960ca01bdea426f1370e`, chain 42161)
+- TransparentUpgradeableProxy (`0x6c84a8f1c29108f47a79964b5fe888d4f4d0de40`, chain 42161)
 
 ## Contract Surface Quality
 
@@ -105,9 +105,9 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum, chai
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ProxyAdmin | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | n/a | `0x02612d...8a3db3` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | external_dependency_or_infra | standard_proxy_or_library (excluded) | 1 | arbitrum | n/a | `0x1293a5...a15458` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-381374 | `0x6c84a8...d0de40` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | n/a | `0x02612d20cc087670a959bb12ca3c5fd56c8a3db3` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | external_dependency_or_infra | standard_proxy_or_library (excluded) | 1 | arbitrum | n/a | `0x1293a54e160d1cd7075487898d65266081a15458` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-381374 | `0x6c84a8f1c29108f47a79964b5fe888d4f4d0de40` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -127,16 +127,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | chain-3 | unit-381364 | `0x3612e3...518239` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | chain-3 | unit-381365 | `0xf4a0b7...fab373` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | chain-4 | unit-381366 | `0x3d9cc5...a85a4a` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | chain-4 | unit-381367 | `0x7d5a21...7ba045` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-381370 | `0x6d6e40...da68c8` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-381371 | `0xe761e1...ef1654` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | chain-6 | unit-381372 | `0x6398b7...4ddc0f` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | chain-6 | unit-381373 | `0xc09247...f1370e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381368 | `0x6398b7...4ddc0f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381369 | `0xc09247...f1370e` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | chain-3 | unit-381364 | `0x3612e393ca2fbb8874854b88ffcf04307a518239` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | chain-3 | unit-381365 | `0xf4a0b7da7f80e21fa253ea2d1bafb66d97fab373` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | chain-4 | unit-381366 | `0x3d9cc5780ca1db78760ad3d35458509178a85a4a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | chain-4 | unit-381367 | `0x7d5a2187cc8ef75f8822dab0e8c9a2db147ba045` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-381370 | `0x6d6e404253826ac1a1fa9736c332eb8c27da68c8` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-381371 | `0xe761e1354097757c019855637746e7dd1bef1654` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | chain-6 | unit-381372 | `0x6398b76df91c5ebe9f488e3656658e79284ddc0f` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | chain-6 | unit-381373 | `0xc09247f837a205bdde43960ca01bdea426f1370e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381368 | `0x6398b76df91c5ebe9f488e3656658e79284ddc0f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381369 | `0xc09247f837a205bdde43960ca01bdea426f1370e` | ❓ Unverified |
 
 ## Audit Inventory
 

@@ -61,11 +61,11 @@ The protocol comprises 2 functional families. Its contracts share 2 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| GeneScience | unknown | ethereum | n/a | [`0xf97e0a...946a2b`](./contracts/ethereum-1/0xf97e0a5b616dffc913e72455fde9ea8bbe946a2b/) | ⚠️ Unaudited |
-| KittyCore | unknown | ethereum | n/a | [`0x06012c...7a266d`](./contracts/ethereum-1/0x06012c8cf97bead5deae237070f9587f8e7a266d/) | ⚠️ Unaudited |
-| Migrations | unknown | ethereum | n/a | [`0x08ea78...141751`](./contracts/ethereum-1/0x08ea78fb540fe5361afd39a6b421a0662e141751/) | ⚠️ Unaudited |
-| SaleClockAuction | unknown | ethereum | n/a | [`0x7163cd...89a9e5`](./contracts/ethereum-1/0x7163cd869f445a0fe0c5049a979c9e27b589a9e5/) | ⚠️ Unaudited |
-| SiringClockAuction | unknown | ethereum | n/a | [`0x6b5a1e...2c4aac`](./contracts/ethereum-1/0x6b5a1ed9e51448c1c76dc4ddf24e243d402c4aac/) | ⚠️ Unaudited |
+| GeneScience | unknown | ethereum | n/a | [`0xf97e0a5b616dffc913e72455fde9ea8bbe946a2b`](./contracts/ethereum-1/0xf97e0a5b616dffc913e72455fde9ea8bbe946a2b/) | ⚠️ Unaudited |
+| KittyCore | unknown | ethereum | n/a | [`0x06012c8cf97bead5deae237070f9587f8e7a266d`](./contracts/ethereum-1/0x06012c8cf97bead5deae237070f9587f8e7a266d/) | ⚠️ Unaudited |
+| Migrations | unknown | ethereum | n/a | [`0x08ea78fb540fe5361afd39a6b421a0662e141751`](./contracts/ethereum-1/0x08ea78fb540fe5361afd39a6b421a0662e141751/) | ⚠️ Unaudited |
+| SaleClockAuction | unknown | ethereum | n/a | [`0x7163cd869f445a0fe0c5049a979c9e27b589a9e5`](./contracts/ethereum-1/0x7163cd869f445a0fe0c5049a979c9e27b589a9e5/) | ⚠️ Unaudited |
+| SiringClockAuction | unknown | ethereum | n/a | [`0x6b5a1ed9e51448c1c76dc4ddf24e243d402c4aac`](./contracts/ethereum-1/0x6b5a1ed9e51448c1c76dc4ddf24e243d402c4aac/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -96,11 +96,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xf97e0a...946a2b`](./contracts/ethereum-1/0xf97e0a5b616dffc913e72455fde9ea8bbe946a2b/) | GeneScience | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x06012c...7a266d`](./contracts/ethereum-1/0x06012c8cf97bead5deae237070f9587f8e7a266d/) | KittyCore | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x08ea78...141751`](./contracts/ethereum-1/0x08ea78fb540fe5361afd39a6b421a0662e141751/) | Migrations | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x7163cd...89a9e5`](./contracts/ethereum-1/0x7163cd869f445a0fe0c5049a979c9e27b589a9e5/) | SaleClockAuction | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6b5a1e...2c4aac`](./contracts/ethereum-1/0x6b5a1ed9e51448c1c76dc4ddf24e243d402c4aac/) | SiringClockAuction | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xf97e0a5b616dffc913e72455fde9ea8bbe946a2b`](./contracts/ethereum-1/0xf97e0a5b616dffc913e72455fde9ea8bbe946a2b/) | GeneScience | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x06012c8cf97bead5deae237070f9587f8e7a266d`](./contracts/ethereum-1/0x06012c8cf97bead5deae237070f9587f8e7a266d/) | KittyCore | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x08ea78fb540fe5361afd39a6b421a0662e141751`](./contracts/ethereum-1/0x08ea78fb540fe5361afd39a6b421a0662e141751/) | Migrations | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x7163cd869f445a0fe0c5049a979c9e27b589a9e5`](./contracts/ethereum-1/0x7163cd869f445a0fe0c5049a979c9e27b589a9e5/) | SaleClockAuction | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6b5a1ed9e51448c1c76dc4ddf24e243d402c4aac`](./contracts/ethereum-1/0x6b5a1ed9e51448c1c76dc4ddf24e243d402c4aac/) | SiringClockAuction | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

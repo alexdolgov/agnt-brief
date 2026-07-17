@@ -62,9 +62,9 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ProxyAdmin | unknown | arbitrum | n/a | [`0x02612d...8a3db3`](./contracts/arbitrum-42161/0x02612d20cc087670a959bb12ca3c5fd56c8a3db3/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | [`0x1293a5...a15458`](./contracts/arbitrum-42161/0x1293a54e160d1cd7075487898d65266081a15458/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | [`0x6c84a8...d0de40`](./contracts/arbitrum-42161/0x6c84a8f1c29108f47a79964b5fe888d4f4d0de40/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | arbitrum | n/a | [`0x02612d20cc087670a959bb12ca3c5fd56c8a3db3`](./contracts/arbitrum-42161/0x02612d20cc087670a959bb12ca3c5fd56c8a3db3/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | [`0x1293a54e160d1cd7075487898d65266081a15458`](./contracts/arbitrum-42161/0x1293a54e160d1cd7075487898d65266081a15458/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | [`0x6c84a8f1c29108f47a79964b5fe888d4f4d0de40`](./contracts/arbitrum-42161/0x6c84a8f1c29108f47a79964b5fe888d4f4d0de40/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

@@ -61,7 +61,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| RewardToken | token | bsc | n/a | [`0x38a5cb...eb8526`](./contracts/bsc-56/0x38a5cbe2fb53d1d407dd5a22c4362daf48eb8526/) | ⚠️ Unaudited |
+| RewardToken | token | bsc | n/a | [`0x38a5cbe2fb53d1d407dd5a22c4362daf48eb8526`](./contracts/bsc-56/0x38a5cbe2fb53d1d407dd5a22c4362daf48eb8526/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,7 +93,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x38a5cb...eb8526`](./contracts/bsc-56/0x38a5cbe2fb53d1d407dd5a22c4362daf48eb8526/) | RewardToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x38a5cbe2fb53d1d407dd5a22c4362daf48eb8526`](./contracts/bsc-56/0x38a5cbe2fb53d1d407dd5a22c4362daf48eb8526/) | RewardToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

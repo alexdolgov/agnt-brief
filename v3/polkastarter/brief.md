@@ -57,9 +57,9 @@ The pinned logic-topography run contains 2 contract row(s) across bsc, ethereum.
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x7e624f...87f570`, chain 56)
-- PolkastarterToken (`0x83e6f1...c3d5aa`, chain 1)
-- PolsStake (`0xc24a36...79d8d7`, chain 1)
+- UnnamedContract (`0x7e624fa0e1c4abfd309cc15719b7e2580887f570`, chain 56)
+- PolkastarterToken (`0x83e6f1e41cdd28eaceb20cb649155049fac3d5aa`, chain 1)
+- PolsStake (`0xc24a365a870821eb83fd216c9596edd89479d8d7`, chain 1)
 
 ## Contract Surface Quality
 
@@ -103,17 +103,17 @@ The pinned logic-topography run contains 2 contract row(s) across bsc, ethereum.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| PolsStake | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251547 | `0xc24a36...79d8d7` | ✅ Audited |
+| PolsStake | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251547 | `0xc24a365a870821eb83fd216c9596edd89479d8d7` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| DUMMY | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9e53a3...502a6e` | ⚠️ Unaudited |
-| PolkastarterDistributionContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa8ff9e...165e04` | ⚠️ Unaudited |
-| PolkastarterToken | token | project_anchor | own_supporting | 0 | ethereum | unit-251546 | `0x83e6f1...c3d5aa` | ⚠️ Unaudited |
-| PolsStake | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xd55867...63de3a` | ⚠️ Unaudited |
-| RandomSeed | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x4c6fa3...01c5e7`; ethereum `0x4e1a49...069234`; ethereum `0xddfe27...2f2be3` | ⚠️ Unaudited |
+| DUMMY | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9e53a348dadff7e6ad8cd24d115544fc41502a6e` | ⚠️ Unaudited |
+| PolkastarterDistributionContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa8ff9e209e70ccbde820b75c51ece964ee165e04` | ⚠️ Unaudited |
+| PolkastarterToken | token | project_anchor | own_supporting | 0 | ethereum | unit-251546 | `0x83e6f1e41cdd28eaceb20cb649155049fac3d5aa` | ⚠️ Unaudited |
+| PolsStake | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xd558675a8c8e1fd45002010bac970b115163de3a` | ⚠️ Unaudited |
+| RandomSeed | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x4c6fa38c9f6c19a640a673c7ea45b1e89101c5e7`; ethereum `0x4e1a49b194c3b1eb43b98f1b0fef091d0e069234`; ethereum `0xddfe278c54b6ee6b7d6f76866de3b732c52f2be3` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -133,8 +133,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-251548 | `0x7e624f...87f570` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc24a36...79d8d7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-251548 | `0x7e624fa0e1c4abfd309cc15719b7e2580887f570` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc24a365a870821eb83fd216c9596edd89479d8d7` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -158,8 +158,8 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| 38f5ef00-1d8b-452f-bd87-317cedba47b3.pdf | PolsStake | own contract | PolsStake (selected) `0xc24a36...79d8d7` — deployed 2021-10-03 14:53:52+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| MythX_95814d21d1b04aad491b65fc.pdf | PolsStake | own contract | PolsStake (selected) `0xc24a36...79d8d7` — deployed 2021-10-03 14:53:52+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 38f5ef00-1d8b-452f-bd87-317cedba47b3.pdf | PolsStake | own contract | PolsStake (selected) `0xc24a365a870821eb83fd216c9596edd89479d8d7` — deployed 2021-10-03 14:53:52+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| MythX_95814d21d1b04aad491b65fc.pdf | PolsStake | own contract | PolsStake (selected) `0xc24a365a870821eb83fd216c9596edd89479d8d7` — deployed 2021-10-03 14:53:52+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | PolsStake_flat-MythX-standard_677a6fe7453e19b4b4fe976c.pdf | PolsStake_flat | unmatched — not counted | — | Main source file in analysis summary | no |
 
 ## Coverage Gaps
@@ -168,7 +168,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x83e6f1...c3d5aa` | PolkastarterToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x83e6f1e41cdd28eaceb20cb649155049fac3d5aa` | PolkastarterToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

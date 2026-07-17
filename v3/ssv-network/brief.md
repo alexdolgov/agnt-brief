@@ -52,16 +52,16 @@ The pinned logic-topography run contains 4 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x9d65ff...917f54`, chain 1)
-- UnnamedContract (`0xafe830...6a66e4`, chain 1)
-- UnnamedContract (`0xd7de1a...54c522`, chain 1)
-- UnnamedContract (`0xdd9bc3...30a4e1`, chain 1)
-- UnnamedContract (`0xe16d61...d26d9f`, chain 1)
-- UnnamedContract (`0xec2941...be7afb`, chain 1)
-- CSSVToken (`0xe018d3...960546`, chain 1)
-- DepositContract (`0x000000...7705fa`, chain 1)
-- DEXV2 (`0x2bf73a...ba735e`, chain 1)
-- GnosisSafe (`0xb35096...b2e6b6`, chain 1)
+- UnnamedContract (`0x9d65ff81a3c488d585bbfb0bfe3c7707c7917f54`, chain 1)
+- UnnamedContract (`0xafe830b6ee262ba11cce5f32fdcd760ffe6a66e4`, chain 1)
+- UnnamedContract (`0xd7de1a7f07d5cf5766d8f9c67b036f6ab554c522`, chain 1)
+- UnnamedContract (`0xdd9bc35ae942ef0cfa76930954a156b3ff30a4e1`, chain 1)
+- UnnamedContract (`0xe16d6138b1d2ad4fd6603acdb329ad1a6cd26d9f`, chain 1)
+- UnnamedContract (`0xec29418bc30fed20de85706f32c7d77da0be7afb`, chain 1)
+- CSSVToken (`0xe018d31f120a637828f46afd6c64ec099d960546`, chain 1)
+- DepositContract (`0x00000000219ab540356cbb839cbe05303d7705fa`, chain 1)
+- DEXV2 (`0x2bf73a478cc6a7ba4e6758a3a52abdc8cdba735e`, chain 1)
+- GnosisSafe (`0xb35096b074fdb9bbac63e3adae0bbde512b2e6b6`, chain 1)
 
 ## Contract Surface Quality
 
@@ -105,32 +105,32 @@ The pinned logic-topography run contains 4 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| CSSVToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392965 | `0xe018d3...960546` | ✅ Audited |
+| CSSVToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392965 | `0xe018d31f120a637828f46afd6c64ec099d960546` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (20)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| CumulativeMerkleDrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x13006e...7be7cf` | ⚠️ Unaudited |
-| DepositContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392960 | `0x000000...7705fa` | ⚠️ Unaudited |
-| DEX | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x77511a...5db8b1` | ⚠️ Unaudited |
-| DEXV2 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-392968 | `0x2bf73a...ba735e` | ⚠️ Unaudited |
-| GnosisSafe | unknown | project_anchor | own_supporting | 1 | ethereum | unit-392969 | `0xb35096...b2e6b6` | ⚠️ Unaudited |
-| MerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe16e6b...5e95a6` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xaf8a99...950bed` | ⚠️ Unaudited |
-| SSVClusters | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3611d3...2832b4` | ⚠️ Unaudited |
-| SSVDAO | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6240ee...ccd511` | ⚠️ Unaudited |
-| SSVNetwork | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x050e94...9d1750` | ⚠️ Unaudited |
-| SSVNetworkSSVStakingUpgrade | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5220e9...873e9e` | ⚠️ Unaudited |
-| SSVNetworkUpgradeValidatorsPerOperator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x32cd25...2e988c` | ⚠️ Unaudited |
-| SSVNetworkViews | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x052e5f...708a94` | ⚠️ Unaudited |
-| SSVOperators | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x338554...ce6060` | ⚠️ Unaudited |
-| SSVOperatorsWhitelist | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcb7dde...f3227d` | ⚠️ Unaudited |
-| SSVStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1b844e...1c7034` | ⚠️ Unaudited |
-| SSVToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x584d44...d41f1c` | ⚠️ Unaudited |
-| SSVValidators | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9122fd...5e7499` | ⚠️ Unaudited |
-| SSVViews | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x055051...642c45` | ⚠️ Unaudited |
-| TokenVestingController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x051cd7...93e4a5` | ⚠️ Unaudited |
+| CumulativeMerkleDrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x13006e447608bb62383d1d59bb11a93e957be7cf` | ⚠️ Unaudited |
+| DepositContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392960 | `0x00000000219ab540356cbb839cbe05303d7705fa` | ⚠️ Unaudited |
+| DEX | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x77511aa462c73c28016084477e5c7dfc315db8b1` | ⚠️ Unaudited |
+| DEXV2 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-392968 | `0x2bf73a478cc6a7ba4e6758a3a52abdc8cdba735e` | ⚠️ Unaudited |
+| GnosisSafe | unknown | project_anchor | own_supporting | 1 | ethereum | unit-392969 | `0xb35096b074fdb9bbac63e3adae0bbde512b2e6b6` | ⚠️ Unaudited |
+| MerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe16e6bddf4a1683c029ddc7aecb567a6095e95a6` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xaf8a99140871538ac7a6883890c83892af950bed` | ⚠️ Unaudited |
+| SSVClusters | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3611d36a7c052211d6f3b1a39326ad38a02832b4` | ⚠️ Unaudited |
+| SSVDAO | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6240ee8c276f17b9672eb2efea3472e13dccd511` | ⚠️ Unaudited |
+| SSVNetwork | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x050e94a68440531f3e89e93c33f349270e9d1750` | ⚠️ Unaudited |
+| SSVNetworkSSVStakingUpgrade | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5220e9b259ef934c23baefe4dc98d0ab6e873e9e` | ⚠️ Unaudited |
+| SSVNetworkUpgradeValidatorsPerOperator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x32cd259417da4af4c506accbef7758fb352e988c` | ⚠️ Unaudited |
+| SSVNetworkViews | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x052e5f6bd9db71c08db38377596875cec5708a94` | ⚠️ Unaudited |
+| SSVOperators | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x338554a41b6a2ec9325157c01666ad8b0ace6060` | ⚠️ Unaudited |
+| SSVOperatorsWhitelist | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcb7dde81e068cd7f8f5dd8bfa34639eb97f3227d` | ⚠️ Unaudited |
+| SSVStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1b844e7abb9779f551ddccb5f0f34a54ec1c7034` | ⚠️ Unaudited |
+| SSVToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x584d44d3e36f3690a4170dad0238df5441d41f1c` | ⚠️ Unaudited |
+| SSVValidators | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9122fded65ed6b562243efdc9e55ff0bef5e7499` | ⚠️ Unaudited |
+| SSVViews | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x055051fa508eeda80c38de34ca936aba59642c45` | ⚠️ Unaudited |
+| TokenVestingController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x051cd7c00d37d54a9eaacbb0ef17ab790d93e4a5` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -150,16 +150,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x58410b...daf59c` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5addb3...8368fe` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6e1a5d...571d4d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392961 | `0x9d65ff...917f54` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9f5d4e...7a038e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392962 | `0xafe830...6a66e4` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392963 | `0xd7de1a...54c522` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392964 | `0xdd9bc3...30a4e1` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392966 | `0xe16d61...d26d9f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392967 | `0xec2941...be7afb` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x58410bef803ecd7e63b23664c586a6db72daf59c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5addb3f1529c5ec70d77400499ee4bbf328368fe` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6e1a5d27361c666f681af06535c8ac773e571d4d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392961 | `0x9d65ff81a3c488d585bbfb0bfe3c7707c7917f54` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9f5d4ec84fc4785788ab44f9de973cf34f7a038e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392962 | `0xafe830b6ee262ba11cce5f32fdcd760ffe6a66e4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392963 | `0xd7de1a7f07d5cf5766d8f9c67b036f6ab554c522` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392964 | `0xdd9bc35ae942ef0cfa76930954a156b3ff30a4e1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392966 | `0xe16d6138b1d2ad4fd6603acdb329ad1a6cd26d9f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392967 | `0xec29418bc30fed20de85706f32c7d77da0be7afb` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -317,7 +317,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | 2026-04-10_Quantstamp_v2.0.0.pdf | SSVStaking | unmatched — not counted | — | listed in scope | no |
 | 2026-04-10_Quantstamp_v2.0.0.pdf | SSVValidators | unmatched — not counted | — | listed in scope | no |
 | 2026-04-10_Quantstamp_v2.0.0.pdf | SSVViews | unmatched — not counted | — | listed in scope | no |
-| 2026-04-10_Quantstamp_v2.0.0.pdf | CSSVToken | own contract | CSSVToken (selected) `0xe018d3...960546` — deployed 2026-03-23 12:01:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2026-04-10_Quantstamp_v2.0.0.pdf | CSSVToken | own contract | CSSVToken (selected) `0xe018d31f120a637828f46afd6c64ec099d960546` — deployed 2026-03-23 12:01:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2026-04-10_Quantstamp_v2.0.0.pdf | SSVToken | unmatched — not counted | — | listed in scope | no |
 | 2026-04-10_Quantstamp_v2.0.0.pdf | BasicWhitelisting | unmatched — not counted | — | listed in scope | no |
 | Hacken_SSV_Labs_L1_SSV_Labs_SSV_Node_Aug2024_P_2024_1212_2_20241016.pdf | SSV Node | unmatched — not counted | — | The scope section states: 'The scope consists of the full codebase of the SSV Node repository, including: Cryptography and EKM, QBFT consensus, Networking, Storage.' | no |
@@ -352,8 +352,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x000000...7705fa` | DepositContract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x2bf73a...ba735e` | DEXV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x00000000219ab540356cbb839cbe05303d7705fa` | DepositContract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x2bf73a478cc6a7ba4e6758a3a52abdc8cdba735e` | DEXV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -52,22 +52,22 @@ The pinned logic-topography run contains 7 contract row(s) across arbitrum, aval
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x204baf...2702f6`, chain 1)
-- UnnamedContract (`0x39f971...a18eab`, chain 1)
-- UnnamedContract (`0x7ea8c2...11d696`, chain 10)
-- UnnamedContract (`0x7a1dec...9c2093`, chain 56)
-- UnnamedContract (`0xa5fdb0...99016f`, chain 56)
-- UnnamedContract (`0x030b8b...898c30`, chain 137)
-- UnnamedContract (`0x365795...b46293`, chain 137)
-- UnnamedContract (`0x226cb1...ec1059`, chain 42161)
-- UnnamedContract (`0x5ef960...f5c7c0`, chain 43114)
-- MasterChef (`0xde866d...26c674`, chain 56)
-- Timelock (`0x7a6981...9a3d86`, chain 56)
-- WardenRouterV2 (`0x451ef8...761004`, chain 56)
-- WardenSwap (`0xb75fa2...a6610a`, chain 56)
-- WardenSwap1_5 (`0x359b9f...8125ae`, chain 56)
-- WardenSwap1_5_Aegis (`0x68fac8...d0e5b6`, chain 56)
-- WardenswapV2Router02 (`0x71ac17...de4054`, chain 56)
+- UnnamedContract (`0x204bafc07e707840aa1f7abdb95cae21742702f6`, chain 1)
+- UnnamedContract (`0x39f97198c5dbc193eb962c4b3b7e447091a18eab`, chain 1)
+- UnnamedContract (`0x7ea8c22e6dcd7bd69eb180664da68e1f1f11d696`, chain 10)
+- UnnamedContract (`0x7a1decf6c24232060f4d76a33a317157549c2093`, chain 56)
+- UnnamedContract (`0xa5fdb0822bf82de3315f1766574547115e99016f`, chain 56)
+- UnnamedContract (`0x030b8b7bf245e762736e65c0903295447b898c30`, chain 137)
+- UnnamedContract (`0x3657952d7ba5a0a4799809b5b6fdff9ec5b46293`, chain 137)
+- UnnamedContract (`0x226cb17a52709034e2ec6abe0d2f0a9ebcec1059`, chain 42161)
+- UnnamedContract (`0x5ef960eb78b8cfc11e654d03beeb313badf5c7c0`, chain 43114)
+- MasterChef (`0xde866dd77b6df6772e320dc92bff0eddc626c674`, chain 56)
+- Timelock (`0x7a6981d4dbfa6b8fe4a75b8947363084719a3d86`, chain 56)
+- WardenRouterV2 (`0x451ef8d6b645a60115eb8b8bea76b39c0c761004`, chain 56)
+- WardenSwap (`0xb75fa2a799fc7935f37500ba9780cbe10aa6610a`, chain 56)
+- WardenSwap1_5 (`0x359b9fc0765481569c33ccef23bd14d0878125ae`, chain 56)
+- WardenSwap1_5_Aegis (`0x68fac8a95d04b69bdbf66ca554f47a8193d0e5b6`, chain 56)
+- WardenswapV2Router02 (`0x71ac17934b60a4610dc58b715b61e45dcbde4054`, chain 56)
 
 ## Contract Surface Quality
 
@@ -112,32 +112,32 @@ The pinned logic-topography run contains 7 contract row(s) across arbitrum, aval
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| MasterChef | unknown | project_anchor | own_supporting | 0 | bsc | unit-396397 | `0xde866d...26c674` | ✅ Audited |
-| Timelock | unknown | project_anchor | own_supporting | 0 | bsc | unit-396394 | `0x7a6981...9a3d86` | ✅ Audited |
-| WardenSwap | unknown | project_anchor | own_supporting | 0 | bsc | unit-396396 | `0xb75fa2...a6610a` | ✅ Audited |
-| WardenSwap1_5_Aegis | unknown | project_anchor | own_supporting | 0 | bsc | unit-396391 | `0x68fac8...d0e5b6` | ✅ Audited |
+| MasterChef | unknown | project_anchor | own_supporting | 0 | bsc | unit-396397 | `0xde866dd77b6df6772e320dc92bff0eddc626c674` | ✅ Audited |
+| Timelock | unknown | project_anchor | own_supporting | 0 | bsc | unit-396394 | `0x7a6981d4dbfa6b8fe4a75b8947363084719a3d86` | ✅ Audited |
+| WardenSwap | unknown | project_anchor | own_supporting | 0 | bsc | unit-396396 | `0xb75fa2a799fc7935f37500ba9780cbe10aa6610a` | ✅ Audited |
+| WardenSwap1_5_Aegis | unknown | project_anchor | own_supporting | 0 | bsc | unit-396391 | `0x68fac8a95d04b69bdbf66ca554f47a8193d0e5b6` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (17)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| NullifierToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x359805...feddd1` | ⚠️ Unaudited |
-| SpartanRoute | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xecc52c...e0d88a` | ⚠️ Unaudited |
-| Tempest | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x372aed...4b226e` | ⚠️ Unaudited |
-| WardenACryptoSRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x210686...5e0711` | ⚠️ Unaudited |
-| WardenBestRateQuery | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x8d32aa...c34eff` | ⚠️ Unaudited |
-| WardenBnbRoute | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x83e187...a9001a` | ⚠️ Unaudited |
-| WardenCosmicBrain | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3c0d05...bcb783` | ⚠️ Unaudited |
-| WardenCosmoCore | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xbf0955...5c575a` | ⚠️ Unaudited |
-| WardenFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x365795...b46293` | ⚠️ Unaudited |
-| WardenMdexRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x00a73c...17e516` | ⚠️ Unaudited |
-| WardenNerveRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xd3d8ef...71b602` | ⚠️ Unaudited |
-| WardenRouterV2 | unknown | project_anchor | own_supporting | 0 | bsc | unit-396388 | `0x451ef8...761004` | ⚠️ Unaudited |
-| WardenSwap1_5 | unknown | project_anchor | own_supporting | 0 | bsc | unit-396387 | `0x359b9f...8125ae` | ⚠️ Unaudited |
-| WardenswapV2Router02 | unknown | project_anchor | own_supporting | 0 | bsc | unit-396392 | `0x71ac17...de4054` | ⚠️ Unaudited |
-| WardenswapValueDefiRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x64e16e...9ff415` | ⚠️ Unaudited |
-| WardenToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0feadc...1627fc` | ⚠️ Unaudited |
-| WardenUV2Router | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x023591...cb6978` | ⚠️ Unaudited |
+| NullifierToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3598059bfe7ce24ab939bee17bf06101ddfeddd1` | ⚠️ Unaudited |
+| SpartanRoute | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xecc52cc4d767d85a451b542c09a0eb1392e0d88a` | ⚠️ Unaudited |
+| Tempest | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x372aed0528ea4bc95e1101b2882cb15fca4b226e` | ⚠️ Unaudited |
+| WardenACryptoSRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x21068601985069868cef87b951763e47cd5e0711` | ⚠️ Unaudited |
+| WardenBestRateQuery | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x8d32aa3ce12c9869156eba5e384ea00e81c34eff` | ⚠️ Unaudited |
+| WardenBnbRoute | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x83e187bba6f16424b8efcdc21ba13d0e0fa9001a` | ⚠️ Unaudited |
+| WardenCosmicBrain | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3c0d058aab0b47a377c25effc856b84f0ebcb783` | ⚠️ Unaudited |
+| WardenCosmoCore | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xbf0955a3c4d3dd474b397ae4cdb8d264065c575a` | ⚠️ Unaudited |
+| WardenFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3657952d7ba5a0a4799809b5b6fdff9ec5b46293` | ⚠️ Unaudited |
+| WardenMdexRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x00a73c823044ff385d905636ebd48a122517e516` | ⚠️ Unaudited |
+| WardenNerveRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xd3d8efc4c3289163e52de716212b67e3c571b602` | ⚠️ Unaudited |
+| WardenRouterV2 | unknown | project_anchor | own_supporting | 0 | bsc | unit-396388 | `0x451ef8d6b645a60115eb8b8bea76b39c0c761004` | ⚠️ Unaudited |
+| WardenSwap1_5 | unknown | project_anchor | own_supporting | 0 | bsc | unit-396387 | `0x359b9fc0765481569c33ccef23bd14d0878125ae` | ⚠️ Unaudited |
+| WardenswapV2Router02 | unknown | project_anchor | own_supporting | 0 | bsc | unit-396392 | `0x71ac17934b60a4610dc58b715b61e45dcbde4054` | ⚠️ Unaudited |
+| WardenswapValueDefiRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x64e16e42493c9d537521a0346c91e254de9ff415` | ⚠️ Unaudited |
+| WardenToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0feadcc3824e7f3c12f40e324a60c23ca51627fc` | ⚠️ Unaudited |
+| WardenUV2Router | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0235910cd3017178f69db8ea98c43f3764cb6978` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -157,15 +157,15 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396378 | `0x204baf...2702f6` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396379 | `0x39f971...a18eab` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-396382 | `0x7ea8c2...11d696` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-396393 | `0x7a1dec...9c2093` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-396395 | `0xa5fdb0...99016f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-396383 | `0x030b8b...898c30` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-396384 | `0x365795...b46293` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-396385 | `0x226cb1...ec1059` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-396386 | `0x5ef960...f5c7c0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396378 | `0x204bafc07e707840aa1f7abdb95cae21742702f6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396379 | `0x39f97198c5dbc193eb962c4b3b7e447091a18eab` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-396382 | `0x7ea8c22e6dcd7bd69eb180664da68e1f1f11d696` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-396393 | `0x7a1decf6c24232060f4d76a33a317157549c2093` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-396395 | `0xa5fdb0822bf82de3315f1766574547115e99016f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-396383 | `0x030b8b7bf245e762736e65c0903295447b898c30` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-396384 | `0x3657952d7ba5a0a4799809b5b6fdff9ec5b46293` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-396385 | `0x226cb17a52709034e2ec6abe0d2f0a9ebcec1059` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-396386 | `0x5ef960eb78b8cfc11e654d03beeb313badf5c7c0` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -197,7 +197,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| Audit Report Valix | WardenSwap1_5_Aegis | own contract | WardenSwap1_5_Aegis (selected) `0x68fac8...d0e5b6` — deployed 2021-08-25 11:15:24+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Audit Report Valix | WardenSwap1_5_Aegis | own contract | WardenSwap1_5_Aegis (selected) `0x68fac8a95d04b69bdbf66ca554f47a8193d0e5b6` — deployed 2021-08-25 11:15:24+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Audit Report Valix | WardenSwap1_5_Aegis_L2 | unmatched — not counted | — | listed in scope table | no |
 | Audit Report Valix | WardenCosmoCore | unmatched — not counted | — | listed in scope table and findings | no |
 | Audit Report Valix | WardenDataDeserialize | unmatched — not counted | — | listed in scope table and findings | no |
@@ -213,14 +213,14 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Audited by Valix | Aegis L2 | unmatched — not counted | — | mentioned as audited smart contract | no |
 | ValixConsulting-Audit-Report-WardenFinance-Wondrous-X-v1.0.pdf | WondrousX | unmatched — not counted | — | listed in scope table and findings | no |
 | ValixConsulting-Audit-Report-WardenFinance-Wondrous-X-v1.0.pdf | SaleSwitch | unmatched — not counted | — | listed in scope table and findings | no |
-| WardenSwap Farm | MasterChef | own contract | MasterChef (selected) `0xde866d...26c674` — deployed 2021-03-15 19:00:16+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| WardenSwap Farm | MasterChef | own contract | MasterChef (selected) `0xde866dd77b6df6772e320dc92bff0eddc626c674` — deployed 2021-03-15 19:00:16+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | WardenSwap Farm | Tempest | unmatched — not counted | — | listed in scope table and files in scope | no |
-| WardenSwap Farm | Timelock | own contract | Timelock (selected) `0x7a6981...9a3d86` — deployed 2021-03-17 14:11:19+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| WardenSwap Farm | Timelock | own contract | Timelock (selected) `0x7a6981d4dbfa6b8fe4a75b8947363084719a3d86` — deployed 2021-03-17 14:11:19+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | WardenSwap Farm | WardenToken | unmatched — not counted | — | listed in scope table and files in scope | no |
 | WardenSwap Farm | Multicall | unmatched — not counted | — | listed in scope table | no |
 | WardenSwap Protocol | Partnership | unmatched — not counted | — | listed in scope table | no |
 | WardenSwap Protocol | RoutingManagement | unmatched — not counted | — | listed in scope table | no |
-| WardenSwap Protocol | WardenSwap | own contract | WardenSwap (selected) `0xb75fa2...a6610a` — deployed 2021-03-15 20:37:58+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| WardenSwap Protocol | WardenSwap | own contract | WardenSwap (selected) `0xb75fa2a799fc7935f37500ba9780cbe10aa6610a` — deployed 2021-03-15 20:37:58+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | WardenSwap Protocol | WardenBestRateQuery | unmatched — not counted | — | listed in scope table | no |
 | WardenSwap Protocol | IUniswapV2Router | unmatched — not counted | — | listed in scope table | no |
 | WardenSwap Protocol | IWardenTradingRoute | unmatched — not counted | — | listed in scope table | no |
@@ -239,9 +239,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | `0x451ef8...761004` | WardenRouterV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x359b9f...8125ae` | WardenSwap1_5 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x71ac17...de4054` | WardenswapV2Router02 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x451ef8d6b645a60115eb8b8bea76b39c0c761004` | WardenRouterV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x359b9fc0765481569c33ccef23bd14d0878125ae` | WardenSwap1_5 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x71ac17934b60a4610dc58b715b61e45dcbde4054` | WardenswapV2Router02 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

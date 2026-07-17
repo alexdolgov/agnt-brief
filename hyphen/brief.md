@@ -62,21 +62,21 @@ The protocol comprises 3 functional families. Its contracts share 3 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| K1MeeValidator | unknown | ethereum | n/a | 2 deployments: ethereum [`0x000000...1a2d95`](./contracts/ethereum-1/0x00000000d12897ddadc2044614a9677b191a2d95/); ethereum `0x000000...08a44c` | ✅ Audited |
-| K1Validator | unknown | ethereum | n/a | [`0x000000...c75cba`](./contracts/ethereum-1/0x0000002d6db27c52e3c11c1cf24072004ac75cba/) | ✅ Audited |
-| K1ValidatorFactory | registry | ethereum | n/a | [`0x000000...684cd6`](./contracts/ethereum-1/0x00000024115aa990f0bae0b6b0d5b8f68b684cd6/) | ✅ Audited |
-| Nexus | unknown | ethereum | n/a | 2 deployments: ethereum [`0x000000...923b03`](./contracts/ethereum-1/0x000000004f43c49e93c970e84001853a70923b03/); ethereum `0x000000...dfeaaf` | ✅ Audited |
-| NexusAccountFactory | registry | ethereum | n/a | 2 deployments: ethereum [`0x000000...7b13de`](./contracts/ethereum-1/0x000000001d1d5004a02bafab9de2d6ce5b7b13de/); ethereum `0x000000...9f6f3a` | ✅ Audited |
-| NexusBootstrap | unknown | ethereum | n/a | 2 deployments: ethereum [`0x000000...27c289`](./contracts/ethereum-1/0x00000000d3254452a909e4eed47455af7e27c289/); ethereum `0x000000...ea5903` | ✅ Audited |
-| Storage | unknown | ethereum | n/a | [`0x000000...71b183`](./contracts/ethereum-1/0x0000000671eb337e12fe5db0e788f32e1d71b183/) | ✅ Audited |
+| K1MeeValidator | unknown | ethereum | n/a | 2 deployments: ethereum [`0x00000000d12897ddadc2044614a9677b191a2d95`](./contracts/ethereum-1/0x00000000d12897ddadc2044614a9677b191a2d95/); ethereum `0x00000000e894100becfc7c934ab7ac8fba08a44c` | ✅ Audited |
+| K1Validator | unknown | ethereum | n/a | [`0x0000002d6db27c52e3c11c1cf24072004ac75cba`](./contracts/ethereum-1/0x0000002d6db27c52e3c11c1cf24072004ac75cba/) | ✅ Audited |
+| K1ValidatorFactory | registry | ethereum | n/a | [`0x00000024115aa990f0bae0b6b0d5b8f68b684cd6`](./contracts/ethereum-1/0x00000024115aa990f0bae0b6b0d5b8f68b684cd6/) | ✅ Audited |
+| Nexus | unknown | ethereum | n/a | 2 deployments: ethereum [`0x000000004f43c49e93c970e84001853a70923b03`](./contracts/ethereum-1/0x000000004f43c49e93c970e84001853a70923b03/); ethereum `0x000000008761e87f023f65c49dc9cb1c7edfeaaf` | ✅ Audited |
+| NexusAccountFactory | registry | ethereum | n/a | 2 deployments: ethereum [`0x000000001d1d5004a02bafab9de2d6ce5b7b13de`](./contracts/ethereum-1/0x000000001d1d5004a02bafab9de2d6ce5b7b13de/); ethereum `0x000000226cada0d8b36034f5d5c06855f59f6f3a` | ✅ Audited |
+| NexusBootstrap | unknown | ethereum | n/a | 2 deployments: ethereum [`0x00000000d3254452a909e4eed47455af7e27c289`](./contracts/ethereum-1/0x00000000d3254452a909e4eed47455af7e27c289/); ethereum `0x000000f5b753fdd20c5ca2d7c1210b3ab1ea5903` | ✅ Audited |
+| Storage | unknown | ethereum | n/a | [`0x0000000671eb337e12fe5db0e788f32e1d71b183`](./contracts/ethereum-1/0x0000000671eb337e12fe5db0e788f32e1d71b183/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BiconomySponsorshipPaymaster | unknown | optimism | n/a | 4 deployments: ethereum `0x000000...841bbc`; optimism [`0x000000...146852`](./contracts/optimism-10/0x0000006087310897e0bffcb3f0ed3704f7146852/); polygon `0x000000...841bbc`; base [`0x000000...146852`](./contracts/base-8453/0x0000006087310897e0bffcb3f0ed3704f7146852/) | ⚠️ Unaudited |
-| EntryPoint | unknown | ethereum | n/a | [`0x000000...7da032`](./contracts/ethereum-1/0x0000000071727de22e5e9d8baf0edac6f37da032/) | ⚠️ Unaudited |
-| EtherForwarder | unknown | ethereum | n/a | 2 deployments: ethereum [`0x000000...0d41da`](./contracts/ethereum-1/0x000000001f1c68bd5bf69aa1ccc1d429700d41da/); ethereum `0x000000...4132a1` | ⚠️ Unaudited |
+| BiconomySponsorshipPaymaster | unknown | optimism | n/a | 4 deployments: ethereum `0x00000072a5f551d6e80b2f6ad4fb256a27841bbc`; optimism [`0x0000006087310897e0bffcb3f0ed3704f7146852`](./contracts/optimism-10/0x0000006087310897e0bffcb3f0ed3704f7146852/); polygon `0x00000072a5f551d6e80b2f6ad4fb256a27841bbc`; base [`0x0000006087310897e0bffcb3f0ed3704f7146852`](./contracts/base-8453/0x0000006087310897e0bffcb3f0ed3704f7146852/) | ⚠️ Unaudited |
+| EntryPoint | unknown | ethereum | n/a | [`0x0000000071727de22e5e9d8baf0edac6f37da032`](./contracts/ethereum-1/0x0000000071727de22e5e9d8baf0edac6f37da032/) | ⚠️ Unaudited |
+| EtherForwarder | unknown | ethereum | n/a | 2 deployments: ethereum [`0x000000001f1c68bd5bf69aa1ccc1d429700d41da`](./contracts/ethereum-1/0x000000001f1c68bd5bf69aa1ccc1d429700d41da/); ethereum `0x000000afe527a978ecb761008af475cff04132a1` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -96,11 +96,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x000000...fb3b6a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x000000...54ec3c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x000000...fa4dd2` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x4b1912...0633b6` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xe854c8...cad977` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x000000001964d23c59962fc7a912872ee8fb3b6a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x0000000c8b6b3329cea5d15c9d8c15f1f254ec3c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x000000c4781be3349f81d341027fd7a4edfa4dd2` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4b19129ea58431a06d01054f69acae5de50633b6` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe854c84cd68fc434cb3b0042c29235d452cad977` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -124,9 +124,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| optimism | [`0x000000...146852`](./contracts/optimism-10/0x0000006087310897e0bffcb3f0ed3704f7146852/) | BiconomySponsorshipPaymaster | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x000000...7da032`](./contracts/ethereum-1/0x0000000071727de22e5e9d8baf0edac6f37da032/) | EntryPoint | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x000000...0d41da`](./contracts/ethereum-1/0x000000001f1c68bd5bf69aa1ccc1d429700d41da/) | EtherForwarder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | [`0x0000006087310897e0bffcb3f0ed3704f7146852`](./contracts/optimism-10/0x0000006087310897e0bffcb3f0ed3704f7146852/) | BiconomySponsorshipPaymaster | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0000000071727de22e5e9d8baf0edac6f37da032`](./contracts/ethereum-1/0x0000000071727de22e5e9d8baf0edac6f37da032/) | EntryPoint | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x000000001f1c68bd5bf69aa1ccc1d429700d41da`](./contracts/ethereum-1/0x000000001f1c68bd5bf69aa1ccc1d429700d41da/) | EtherForwarder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

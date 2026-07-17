@@ -61,8 +61,8 @@ The protocol forms a single structural family (Core Logic) of 8 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Baks | unknown | bsc | n/a | [`0x8bd22c...d91596`](./contracts/bsc-56/0x8bd22c61b409587d24d87fb56e88bd84e5d91596/) | ✅ Audited |
-| Voice | unknown | bsc | n/a | [`0x3a0c66...f999c5`](./contracts/bsc-56/0x3a0c66ff229b4ff924cba7bfb32ec860c0f999c5/) | ✅ Audited |
+| Baks | unknown | bsc | n/a | [`0x8bd22c61b409587d24d87fb56e88bd84e5d91596`](./contracts/bsc-56/0x8bd22c61b409587d24d87fb56e88bd84e5d91596/) | ✅ Audited |
+| Voice | unknown | bsc | n/a | [`0x3a0c66ff229b4ff924cba7bfb32ec860c0f999c5`](./contracts/bsc-56/0x3a0c66ff229b4ff924cba7bfb32ec860c0f999c5/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 
@@ -86,9 +86,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0x8866cb...a1ebe8` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xc37d01...cf5636` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xe7cb3a...142a6d` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x8866cb6c95c5a16b0c24e30e5d247b8708a1ebe8` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xc37d0175946aaea126fd93aac4b0b25309cf5636` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xe7cb3ac521f8b267fc65f802d9f1df6b18142a6d` | ❓ Unverified |
 
 ## Audit Inventory
 

@@ -48,8 +48,8 @@ The pinned logic-topography run contains 3 contract row(s) across arbitrum, poly
 
 ### Forked Contracts
 
-**SetToken** (`0xadb6d6...437252`, chain 137)
-Origin: beta-finance (`0x1494ca...ba3c2b`)
+**SetToken** (`0xadb6d62e142a2f911fb3c9ca1c1d0fe5d9437252`, chain 137)
+Origin: beta-finance (`0x1494ca1f11d487c2bbe4543e90080aeba4ba3c2b`)
 Containment: 100.0% - 28 functions inherited
 Centroid audit status: pending_validation
 
@@ -57,8 +57,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**SetToken** (`0xbe9a09...e30f63`, chain 137)
-Origin: beta-finance (`0x1494ca...ba3c2b`)
+**SetToken** (`0xbe9a09dff5aef8d7411d799bbbaee2e471e30f63`, chain 137)
+Origin: beta-finance (`0x1494ca1f11d487c2bbe4543e90080aeba4ba3c2b`)
 Containment: 100.0% - 28 functions inherited
 Centroid audit status: pending_validation
 
@@ -66,8 +66,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**SetToken** (`0xd32dfe...80662f`, chain 137)
-Origin: beta-finance (`0x1494ca...ba3c2b`)
+**SetToken** (`0xd32dfefd9d00f772db460a3b542f0a736d80662f`, chain 137)
+Origin: beta-finance (`0x1494ca1f11d487c2bbe4543e90080aeba4ba3c2b`)
 Containment: 100.0% - 28 functions inherited
 Centroid audit status: pending_validation
 
@@ -77,9 +77,9 @@ Removals (removed from original): none
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x24b803...596c8a`, chain 42161)
-- UnnamedContract (`0x9e877c...0ec079`, chain 42161)
-- UnnamedContract (`0xdd4850...ff3fac`, chain 42161)
+- UnnamedContract (`0x24b803ae0992bda7183bab6ed2df0acd1e596c8a`, chain 42161)
+- UnnamedContract (`0x9e877c64616a256bdcb599268ca8002df00ec079`, chain 42161)
+- UnnamedContract (`0xdd4850e856ddb373f723f34e7fe26901a3ff3fac`, chain 42161)
 
 ## Contract Surface Quality
 
@@ -125,24 +125,24 @@ Removals (removed from original): none
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Airdrop | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0xf6e8fe...7e6b99` | ⚠️ Unaudited |
-| BasicIssuanceModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 8 deployments: polygon `0x2ce6c3...9f34b0`; polygon `0x3b2a94...18b64e`; polygon `0x4a4ebd...5cade4`; polygon `0x6f0790...4cb8ed`; polygon `0x78bc29...c846dc`; polygon `0xe6f4a7...cef262`; arbitrum `0x018afb...925e82`; arbitrum `0xcc0589...2e6723` | ⚠️ Unaudited |
-| Controller | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 3 deployments: polygon `0x153e73...fb6e83`; arbitrum `0x828680...dfeb23`; arbitrum `0xa36c2b...b864be` | ⚠️ Unaudited |
-| ExchangeIssuanceZeroEx | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 7 deployments: polygon `0x40c20f...dbac14`; polygon `0x44ace3...a408c4`; polygon `0xa2e9af...e83763`; polygon `0xdbf320...79f058`; polygon `0xe9eecd...eea18d`; arbitrum `0x7eea52...b86c79`; arbitrum `0x8ca32f...65a585` | ⚠️ Unaudited |
-| IndexStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x8087cb...f4312d` | ⚠️ Unaudited |
-| IntegrationRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 3 deployments: polygon `0x6bc676...67cc89`; arbitrum `0x27e193...c604ae`; arbitrum `0x97bd10...12b633` | ⚠️ Unaudited |
-| LockonVesting | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x555962...91f2a0` | ⚠️ Unaudited |
-| LockStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x36f6dd...11423a` | ⚠️ Unaudited |
-| LockToken | token | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x992c20...d6ef74` | ⚠️ Unaudited |
-| MockToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 3 deployments: polygon `0xec45d1...ea9f24`; arbitrum `0x36a922...f82820`; arbitrum `0xb350d9...3069b2` | ⚠️ Unaudited |
-| PositionComponentCorrectionModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 6 deployments: polygon `0x8868c2...bcabb9`; polygon `0x8a11c6...a929e5`; polygon `0x9a4620...b041ba`; arbitrum `0x5a0c15...0795b8`; arbitrum `0x781f87...2cc7c5`; arbitrum `0xcaf7e1...f799e3` | ⚠️ Unaudited |
-| PositionUnitAdjusterModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 6 deployments: polygon `0x63005b...b35f50`; polygon `0x8c2e03...95f06b`; polygon `0xb9bf07...642282`; arbitrum `0x99871a...b17278`; arbitrum `0xc2031d...be1b02`; arbitrum `0xe1093e...05b7eb` | ⚠️ Unaudited |
-| SetToken | token | project_anchor | own_supporting | 0 | polygon | unit-245152 | `0xadb6d6...437252` | ⚠️ Unaudited |
-| SetToken | token | project_anchor | own_supporting | 0 | polygon | unit-245153 | `0xbe9a09...e30f63` | ⚠️ Unaudited |
-| SetToken | token | project_anchor | own_supporting | 0 | polygon | unit-245154 | `0xd32dfe...80662f` | ⚠️ Unaudited |
-| TradeModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 3 deployments: polygon `0x6cc11e...1c3b01`; arbitrum `0x495113...a026a6`; arbitrum `0xebe11a...56bcd3` | ⚠️ Unaudited |
-| ZeroExApiAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 4 deployments: polygon `0x8d93a0...4320c1`; polygon `0xe65f1a...37309b`; arbitrum `0x1f1a16...b37308`; arbitrum `0x28ccf5...8f4f23` | ⚠️ Unaudited |
-| ZeroExApiV2Adapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 4 deployments: polygon `0x6b5842...45d5b5`; polygon `0xa18670...823cb3`; arbitrum `0x958360...648550`; arbitrum `0xb70e58...fdf3d6` | ⚠️ Unaudited |
+| Airdrop | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0xf6e8fef3e5e0a7664caedbcc3e655e188a7e6b99` | ⚠️ Unaudited |
+| BasicIssuanceModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 8 deployments: polygon `0x2ce6c32682d5793c7a7db4273defe0ba679f34b0`; polygon `0x3b2a94ad65d6091672df6144f7ef48193218b64e`; polygon `0x4a4ebd6f484416414729212d4fab23ece45cade4`; polygon `0x6f0790c97379d30cd02e8b3688ca6655a14cb8ed`; polygon `0x78bc29f1d7706acf6a6460b92fcba931e8c846dc`; polygon `0xe6f4a718ded6722baba16caa26e844459dcef262`; arbitrum `0x018afbf49356138d7ccf465f3f3420e233925e82`; arbitrum `0xcc058995b83dfc02137f299b01547165452e6723` | ⚠️ Unaudited |
+| Controller | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 3 deployments: polygon `0x153e739b8823b277844ad885a30ac5bd9dfb6e83`; arbitrum `0x8286808afd208be479abfa2103db443580dfeb23`; arbitrum `0xa36c2b06afc96ffd52d148ed6acbb9fe2ab864be` | ⚠️ Unaudited |
+| ExchangeIssuanceZeroEx | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 7 deployments: polygon `0x40c20fb57113ebe4f332c311a2b0257cdbdbac14`; polygon `0x44ace3accfb7ec2150a9b5a0ca747e65f2a408c4`; polygon `0xa2e9af75241a71ea77ffccfa2da37f4eb1e83763`; polygon `0xdbf3204ecf63c26c06685140edffb2172079f058`; polygon `0xe9eecdc587535ba2b3e18e262470850733eea18d`; arbitrum `0x7eea5246d5fc47d97d04ce9fa23640d821b86c79`; arbitrum `0x8ca32fe0c266ef97d000db0ec3758e7f9665a585` | ⚠️ Unaudited |
+| IndexStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x8087cb6c02b7a3c35e8c88cdbbd5eeb3fcf4312d` | ⚠️ Unaudited |
+| IntegrationRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 3 deployments: polygon `0x6bc6762040adc7cb581b20cf09b44586a567cc89`; arbitrum `0x27e19358642b51363c9e63ffbea5b9f460c604ae`; arbitrum `0x97bd109b2353966221560cb86513822fb512b633` | ⚠️ Unaudited |
+| LockonVesting | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x555962ce3093b15fac8d37c2a49935c96991f2a0` | ⚠️ Unaudited |
+| LockStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x36f6ddf9ee7c6dbec3e799c81d03a7986411423a` | ⚠️ Unaudited |
+| LockToken | token | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x992c20c4e2f10f6b2c81ee686a200569fbd6ef74` | ⚠️ Unaudited |
+| MockToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 3 deployments: polygon `0xec45d1372963a8c154357a762f7e1cd35dea9f24`; arbitrum `0x36a9220ab15dfd0a12035a38aca9f6600ff82820`; arbitrum `0xb350d9b5566654a3221981e861544d8d843069b2` | ⚠️ Unaudited |
+| PositionComponentCorrectionModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 6 deployments: polygon `0x8868c2762d86d9636a3fa17df54c814232bcabb9`; polygon `0x8a11c64827e2f62a81e392af46640f9947a929e5`; polygon `0x9a462036285d38a84ad8a45f010ad42719b041ba`; arbitrum `0x5a0c15343702d070ab780e12f94fbde1f00795b8`; arbitrum `0x781f8726f86c94ad13522f7a1ad2ac0b562cc7c5`; arbitrum `0xcaf7e16cddf4713c8d6d5749c9cc6a150af799e3` | ⚠️ Unaudited |
+| PositionUnitAdjusterModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 6 deployments: polygon `0x63005bb8daa3774af731f7f8b0d7a8790eb35f50`; polygon `0x8c2e0399291d6225517a873de04ab92c2c95f06b`; polygon `0xb9bf0710d606b39d2f71acf328d5cd277b642282`; arbitrum `0x99871ad98beb57c0a9e304bf298aab17b3b17278`; arbitrum `0xc2031d4df2c22f1af4a5166651693cf7dbbe1b02`; arbitrum `0xe1093e1a3f09170fda78c7011b82eacb6b05b7eb` | ⚠️ Unaudited |
+| SetToken | token | project_anchor | own_supporting | 0 | polygon | unit-245152 | `0xadb6d62e142a2f911fb3c9ca1c1d0fe5d9437252` | ⚠️ Unaudited |
+| SetToken | token | project_anchor | own_supporting | 0 | polygon | unit-245153 | `0xbe9a09dff5aef8d7411d799bbbaee2e471e30f63` | ⚠️ Unaudited |
+| SetToken | token | project_anchor | own_supporting | 0 | polygon | unit-245154 | `0xd32dfefd9d00f772db460a3b542f0a736d80662f` | ⚠️ Unaudited |
+| TradeModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 3 deployments: polygon `0x6cc11e2de10f7539bfd38b49549957a9081c3b01`; arbitrum `0x4951133b9429ac86ea894b428ff6409b08a026a6`; arbitrum `0xebe11a8cef9f0502797c6a5781ccfbca8c56bcd3` | ⚠️ Unaudited |
+| ZeroExApiAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 4 deployments: polygon `0x8d93a0a8fd3fb6edcd37f51215d6e8ae9b4320c1`; polygon `0xe65f1a06864728be868d7828d242be7bf437309b`; arbitrum `0x1f1a16c32982829bc77c9796ce862c628fb37308`; arbitrum `0x28ccf520dc09f1062534806f868625a20e8f4f23` | ⚠️ Unaudited |
+| ZeroExApiV2Adapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 4 deployments: polygon `0x6b5842a517089e58424a0b1650c90812ae45d5b5`; polygon `0xa186701e71c46f898db74ee3dc70ddbba5823cb3`; arbitrum `0x9583600ba5ad5ba86c1895a8cec332b357648550`; arbitrum `0xb70e5889d2b361fae3ac72cff7bf5c6974fdf3d6` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -162,13 +162,13 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x9c50ce...a3520f` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x175024...3290d0` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-245155 | `0x24b803...596c8a` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x3d0b47...72c300` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-245156 | `0x9e877c...0ec079` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xb4106f...833468` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-245157 | `0xdd4850...ff3fac` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x9c50cea1d41ad171d4e0992130e9504953a3520f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x175024128546022923641dd116ec8521d53290d0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-245155 | `0x24b803ae0992bda7183bab6ed2df0acd1e596c8a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x3d0b47738073ac8c3d343f149e56a6c28872c300` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-245156 | `0x9e877c64616a256bdcb599268ca8002df00ec079` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xb4106ff9e881063bb62d261f9205cac00d833468` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-245157 | `0xdd4850e856ddb373f723f34e7fe26901a3ff3fac` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -231,9 +231,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| polygon | `0xadb6d6...437252` | SetToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | `0xbe9a09...e30f63` | SetToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | `0xd32dfe...80662f` | SetToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0xadb6d62e142a2f911fb3c9ca1c1d0fe5d9437252` | SetToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0xbe9a09dff5aef8d7411d799bbbaee2e471e30f63` | SetToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0xd32dfefd9d00f772db460a3b542f0a736d80662f` | SetToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -90,8 +90,8 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| KnitFinance | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xef5346...10b207` | ⚠️ Unaudited |
-| Migrations | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7b282e...1ef3e4` | ⚠️ Unaudited |
+| KnitFinance | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xef53462838000184f35f7d991452e5f25110b207` | ⚠️ Unaudited |
+| Migrations | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7b282e09ca06dae8d116e448765fb849eb1ef3e4` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

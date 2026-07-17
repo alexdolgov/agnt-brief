@@ -59,21 +59,21 @@ The protocol comprises 5 functional families. Its contracts share 2 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| EthosProfile | unknown | base | n/a | 2 deployments: base [`0x266171...369e3a`](./contracts/base-8453/0x2661710d76c872681efc25300de84138a6369e3a/); base `0x311df4...fc255c` | ✅ Audited |
-| EthosVouch | unknown | base | n/a | 4 deployments: base [`0x5a9149...7ae9c3`](./contracts/base-8453/0x5a914935c56a9f62417726064a9a9aed5d7ae9c3/); base `0xb7866c...fa53bd`; base `0xbbbdbe...827c47`; base `0xebe137...892801` | ✅ Audited |
+| EthosProfile | unknown | base | n/a | 2 deployments: base [`0x2661710d76c872681efc25300de84138a6369e3a`](./contracts/base-8453/0x2661710d76c872681efc25300de84138a6369e3a/); base `0x311df4d62055064b3047e3535b81f33eeffc255c` | ✅ Audited |
+| EthosVouch | unknown | base | n/a | 4 deployments: base [`0x5a914935c56a9f62417726064a9a9aed5d7ae9c3`](./contracts/base-8453/0x5a914935c56a9f62417726064a9a9aed5d7ae9c3/); base `0xb7866ca9e586118fb7a97b5f198776f86afa53bd`; base `0xbbbdbebc1ad8e1081b31d341123577f1a5827c47`; base `0xebe137ea60f980f40fd30e763d09b9c0ce892801` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (8)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ContractAddressManager | governance | base | n/a | 2 deployments: base [`0xc31252...0f3e9a`](./contracts/base-8453/0xc31252d6be0252018f1b12def25f6582db0f3e9a/); base `0xe6f811...0b7436` | ⚠️ Unaudited |
-| EthosBond | unknown | base | n/a | [`0x21380b...28384a`](./contracts/base-8453/0x21380b24ee8b4a8d809a5049d0a9ac047828384a/) | ⚠️ Unaudited |
-| EthosSlash | unknown | base | n/a | [`0xb51b4a...dc1f1b`](./contracts/base-8453/0xb51b4a6622d591785abcee24060796c5e5dc1f1b/) | ⚠️ Unaudited |
-| EthosVote | unknown | base | n/a | [`0xfe086e...2d1d59`](./contracts/base-8453/0xfe086ebd36209bcbbbbe6c4e9af36365222d1d59/) | ⚠️ Unaudited |
-| InteractionControl | unknown | base | n/a | [`0x4fa643...c38b61`](./contracts/base-8453/0x4fa6432cd0e2f2b4310c27d80c9726ea41c38b61/) | ⚠️ Unaudited |
-| SafeL2 | unknown | base | n/a | 2 deployments: base [`0x7a20d9...31c131`](./contracts/base-8453/0x7a20d99307172d8f6b80bf1e904bbf069c31c131/); base `0xb4a9bc...cb4774` | ⚠️ Unaudited |
-| SafeProxy | unknown | base | n/a | [`0x72f04d...81018d`](./contracts/base-8453/0x72f04d999e12d456fe7ee0acaa345124a081018d/) | ⚠️ Unaudited |
-| SignatureVerifier | periphery | base | n/a | [`0x78a32a...da7f57`](./contracts/base-8453/0x78a32a705bfc1600e0a2e056316e44877bda7f57/) | ⚠️ Unaudited |
+| ContractAddressManager | governance | base | n/a | 2 deployments: base [`0xc31252d6be0252018f1b12def25f6582db0f3e9a`](./contracts/base-8453/0xc31252d6be0252018f1b12def25f6582db0f3e9a/); base `0xe6f811d8aed56d68d2b8658e01519069470b7436` | ⚠️ Unaudited |
+| EthosBond | unknown | base | n/a | [`0x21380b24ee8b4a8d809a5049d0a9ac047828384a`](./contracts/base-8453/0x21380b24ee8b4a8d809a5049d0a9ac047828384a/) | ⚠️ Unaudited |
+| EthosSlash | unknown | base | n/a | [`0xb51b4a6622d591785abcee24060796c5e5dc1f1b`](./contracts/base-8453/0xb51b4a6622d591785abcee24060796c5e5dc1f1b/) | ⚠️ Unaudited |
+| EthosVote | unknown | base | n/a | [`0xfe086ebd36209bcbbbbe6c4e9af36365222d1d59`](./contracts/base-8453/0xfe086ebd36209bcbbbbe6c4e9af36365222d1d59/) | ⚠️ Unaudited |
+| InteractionControl | unknown | base | n/a | [`0x4fa6432cd0e2f2b4310c27d80c9726ea41c38b61`](./contracts/base-8453/0x4fa6432cd0e2f2b4310c27d80c9726ea41c38b61/) | ⚠️ Unaudited |
+| SafeL2 | unknown | base | n/a | 2 deployments: base [`0x7a20d99307172d8f6b80bf1e904bbf069c31c131`](./contracts/base-8453/0x7a20d99307172d8f6b80bf1e904bbf069c31c131/); base `0xb4a9bc5fb037ebd805a405f2b53cfadf4bcb4774` | ⚠️ Unaudited |
+| SafeProxy | unknown | base | n/a | [`0x72f04d999e12d456fe7ee0acaa345124a081018d`](./contracts/base-8453/0x72f04d999e12d456fe7ee0acaa345124a081018d/) | ⚠️ Unaudited |
+| SignatureVerifier | periphery | base | n/a | [`0x78a32a705bfc1600e0a2e056316e44877bda7f57`](./contracts/base-8453/0x78a32a705bfc1600e0a2e056316e44877bda7f57/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,13 +93,13 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | base | n/a | `0x1a574e...d63b11` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x354fb4...d29186` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x3a9271...22f3f9` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x789888...f241ce` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x7c7ad8...cdfbe0` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xcaa2dc...9860a9` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xd8385e...852e3c` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x1a574edc919ddb2ceb192f3623b68ff1c5d63b11` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x354fb4d1e6751dd7f73943f9ebc032d521d29186` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x3a9271fe639edd6bfed95357955a378de122f3f9` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x789888ce1e09f3822218eaaef70a6c51b3f241ce` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x7c7ad8d1a255e1aef9d8f77ee13f107d49cdfbe0` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xcaa2dccd4a863f31d66b289a00825f61a49860a9` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xd8385ee87471215f56ccd34b1f2b1ee7cb852e3c` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -114,12 +114,12 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0xc31252...0f3e9a`](./contracts/base-8453/0xc31252d6be0252018f1b12def25f6582db0f3e9a/) | ContractAddressManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x21380b...28384a`](./contracts/base-8453/0x21380b24ee8b4a8d809a5049d0a9ac047828384a/) | EthosBond | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xb51b4a...dc1f1b`](./contracts/base-8453/0xb51b4a6622d591785abcee24060796c5e5dc1f1b/) | EthosSlash | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xfe086e...2d1d59`](./contracts/base-8453/0xfe086ebd36209bcbbbbe6c4e9af36365222d1d59/) | EthosVote | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x4fa643...c38b61`](./contracts/base-8453/0x4fa6432cd0e2f2b4310c27d80c9726ea41c38b61/) | InteractionControl | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x78a32a...da7f57`](./contracts/base-8453/0x78a32a705bfc1600e0a2e056316e44877bda7f57/) | SignatureVerifier | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xc31252d6be0252018f1b12def25f6582db0f3e9a`](./contracts/base-8453/0xc31252d6be0252018f1b12def25f6582db0f3e9a/) | ContractAddressManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x21380b24ee8b4a8d809a5049d0a9ac047828384a`](./contracts/base-8453/0x21380b24ee8b4a8d809a5049d0a9ac047828384a/) | EthosBond | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xb51b4a6622d591785abcee24060796c5e5dc1f1b`](./contracts/base-8453/0xb51b4a6622d591785abcee24060796c5e5dc1f1b/) | EthosSlash | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xfe086ebd36209bcbbbbe6c4e9af36365222d1d59`](./contracts/base-8453/0xfe086ebd36209bcbbbbe6c4e9af36365222d1d59/) | EthosVote | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x4fa6432cd0e2f2b4310c27d80c9726ea41c38b61`](./contracts/base-8453/0x4fa6432cd0e2f2b4310c27d80c9726ea41c38b61/) | InteractionControl | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x78a32a705bfc1600e0a2e056316e44877bda7f57`](./contracts/base-8453/0x78a32a705bfc1600e0a2e056316e44877bda7f57/) | SignatureVerifier | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

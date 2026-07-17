@@ -61,8 +61,8 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| MoonLock | unknown | moonriver | n/a | [`0x0134eb...e39eb3`](./contracts/moonriver-1285/0x0134eb236b47186021a50d25a51365ac77e39eb3/) | ⚠️ Unaudited |
-| WETH | unknown | moonriver | n/a | [`0x98878b...032b8a`](./contracts/moonriver-1285/0x98878b06940ae243284ca214f92bb71a2b032b8a/) | ⚠️ Unaudited |
+| MoonLock | unknown | moonriver | n/a | [`0x0134eb236b47186021a50d25a51365ac77e39eb3`](./contracts/moonriver-1285/0x0134eb236b47186021a50d25a51365ac77e39eb3/) | ⚠️ Unaudited |
+| WETH | unknown | moonriver | n/a | [`0x98878b06940ae243284ca214f92bb71a2b032b8a`](./contracts/moonriver-1285/0x98878b06940ae243284ca214f92bb71a2b032b8a/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -94,8 +94,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| moonriver | [`0x0134eb...e39eb3`](./contracts/moonriver-1285/0x0134eb236b47186021a50d25a51365ac77e39eb3/) | MoonLock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| moonriver | [`0x98878b...032b8a`](./contracts/moonriver-1285/0x98878b06940ae243284ca214f92bb71a2b032b8a/) | WETH | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | [`0x0134eb236b47186021a50d25a51365ac77e39eb3`](./contracts/moonriver-1285/0x0134eb236b47186021a50d25a51365ac77e39eb3/) | MoonLock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | [`0x98878b06940ae243284ca214f92bb71a2b032b8a`](./contracts/moonriver-1285/0x98878b06940ae243284ca214f92bb71a2b032b8a/) | WETH | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -52,9 +52,9 @@ The pinned logic-topography run contains 3 contract row(s) across arbitrum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- AMLP (`0x152f5e...993a4b`, chain 42161)
-- AmlpManager (`0x98a6ae...bcf8dd`, chain 42161)
-- FundingVault (`0x07f169...df043f`, chain 42161)
+- AMLP (`0x152f5e6142db867f905a68617dbb6408d7993a4b`, chain 42161)
+- AmlpManager (`0x98a6aee58699e4f4e13d8d8d0800e4e9cbbcf8dd`, chain 42161)
+- FundingVault (`0x07f169d388c56cf8517b249e845502a14ddf043f`, chain 42161)
 
 ## Contract Surface Quality
 
@@ -98,20 +98,20 @@ The pinned logic-topography run contains 3 contract row(s) across arbitrum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AMLP | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-266810 | `0x152f5e...993a4b` | ✅ Audited |
+| AMLP | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-266810 | `0x152f5e6142db867f905a68617dbb6408d7993a4b` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (8)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AHLP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x5fd22d...34c2c4` | ⚠️ Unaudited |
-| AhlpManager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xc5f9d4...40bd9f` | ⚠️ Unaudited |
-| AhlpStaker | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x1ba274...408d85`; arbitrum `0x237455...175600` | ⚠️ Unaudited |
-| AmlpManager | governance | project_anchor | own_supporting | 0 | arbitrum | unit-266811 | `0x98a6ae...bcf8dd` | ⚠️ Unaudited |
-| AmlpStaker | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x3a66b8...a50999`; arbitrum `0x88ff0b...d52038` | ⚠️ Unaudited |
-| FundingVault | core_logic | project_anchor | own_supporting | 0 | arbitrum | unit-266809 | `0x07f169...df043f` | ⚠️ Unaudited |
-| sAHLP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x50c30f...685ea9` | ⚠️ Unaudited |
-| sAMLP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: arbitrum `0x4f2b37...24b6a7`; arbitrum `0xbc08f3...edb9db` | ⚠️ Unaudited |
+| AHLP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x5fd22da8315992dbbd82d5ac1087803ff134c2c4` | ⚠️ Unaudited |
+| AhlpManager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xc5f9d4b9f68caaa869317baa09a233b22940bd9f` | ⚠️ Unaudited |
+| AhlpStaker | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x1ba274ebbb07353657ed8c76a87acf362e408d85`; arbitrum `0x237455b466c896a646d72a1c23e579638c175600` | ⚠️ Unaudited |
+| AmlpManager | governance | project_anchor | own_supporting | 0 | arbitrum | unit-266811 | `0x98a6aee58699e4f4e13d8d8d0800e4e9cbbcf8dd` | ⚠️ Unaudited |
+| AmlpStaker | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x3a66b81be26f2d799c5a96a011e1e3fb2ba50999`; arbitrum `0x88ff0b40a93166251c7b319bedbf6f41f2d52038` | ⚠️ Unaudited |
+| FundingVault | core_logic | project_anchor | own_supporting | 0 | arbitrum | unit-266809 | `0x07f169d388c56cf8517b249e845502a14ddf043f` | ⚠️ Unaudited |
+| sAHLP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x50c30f24b957b1ac9e31558e55bf7dc4ab685ea9` | ⚠️ Unaudited |
+| sAMLP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: arbitrum `0x4f2b3767616ee3523534910176d61ff35224b6a7`; arbitrum `0xbc08f30c18a79a3a18dbbd40931c551f91edb9db` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -131,10 +131,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x169dac...30378d` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x734ec6...3597b8` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xf5ce87...2132fc` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xfb323b...13bd68` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x169dac7128a6b26a3de082304a001295b330378d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x734ec6a0791a1b84a9208faae6187ed81d3597b8` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xf5ce8705f91184ce0d7009baaa959f16c62132fc` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xfb323b42c1058c6e2e9c185c05862df47513bd68` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -154,7 +154,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| skynet.certik.com/projects/antarctic-exchange | AMLP | own contract | AMLP (selected) `0x152f5e...993a4b` — deployed 2025-01-02 13:17:16+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| skynet.certik.com/projects/antarctic-exchange | AMLP | own contract | AMLP (selected) `0x152f5e6142db867f905a68617dbb6408d7993a4b` — deployed 2025-01-02 13:17:16+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | skynet.certik.com/projects/antarctic-exchange | HashStorage | unmatched — not counted | — | listed in Audited Files | no |
 | skynet.certik.com/projects/antarctic-exchange | MintableBaseToken | unmatched — not counted | — | listed in Assessed Contracts | no |
 
@@ -164,8 +164,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | `0x98a6ae...bcf8dd` | AmlpManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | `0x07f169...df043f` | FundingVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0x98a6aee58699e4f4e13d8d8d0800e4e9cbbcf8dd` | AmlpManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0x07f169d388c56cf8517b249e845502a14ddf043f` | FundingVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across aurora. Struct
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- EvmErc20 (`0x9f1f93...5ccef0`, chain 1313161554)
+- EvmErc20 (`0x9f1f933c660a1dc856f0e0fe058435879c5ccef0`, chain 1313161554)
 
 ## Contract Surface Quality
 
@@ -103,7 +103,7 @@ The pinned logic-topography run contains 1 contract row(s) across aurora. Struct
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| EvmErc20 | unknown | project_anchor | own_supporting | 0 | aurora | unit-380304 | `0x9f1f93...5ccef0` | ⚠️ Unaudited |
+| EvmErc20 | unknown | project_anchor | own_supporting | 0 | aurora | unit-380304 | `0x9f1f933c660a1dc856f0e0fe058435879c5ccef0` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -123,8 +123,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | aurora | unit-380303 | `0x845e15...ad9826` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | aurora | unit-380305 | `0xe5308d...337d99` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | aurora | unit-380303 | `0x845e15a441cfc1871b7ac610b0e922019bad9826` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | aurora | unit-380305 | `0xe5308dc623101508952948b141fd9eabd3337d99` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -154,7 +154,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| aurora | `0x9f1f93...5ccef0` | EvmErc20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| aurora | `0x9f1f933c660a1dc856f0e0fe058435879c5ccef0` | EvmErc20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

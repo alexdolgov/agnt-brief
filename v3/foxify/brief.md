@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum, soni
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- Foxify (`0x261dfa...af0eb6`, chain 146)
+- Foxify (`0x261dfa2528dfa19011f10b168c856e02baaf0eb6`, chain 146)
 
 ## Contract Surface Quality
 
@@ -103,12 +103,12 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum, soni
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| EBFOX | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xbd87a9...64d0ab` | ⚠️ Unaudited |
-| Foxify | unknown | project_anchor | own_supporting | 0 | sonic | unit-386584 | `0x261dfa...af0eb6` | ⚠️ Unaudited |
-| FoxifyMaxi | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x3725b7...4edd37` | ⚠️ Unaudited |
-| SFOX | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x8725bc...f97d8e` | ⚠️ Unaudited |
-| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | 2 deployments: sonic `0x62e157...004808`; sonic `0xf9eb7e...07e0db` | ⚠️ Unaudited |
-| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | sonic | n/a | 3 deployments: sonic `0xc24d38...33a54f`; sonic `0xc64ca6...21c322`; sonic `0xca2dfb...58850d` | ⚠️ Unaudited |
+| EBFOX | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xbd87a909f9a40fdad6d9be703e89a0383064d0ab` | ⚠️ Unaudited |
+| Foxify | unknown | project_anchor | own_supporting | 0 | sonic | unit-386584 | `0x261dfa2528dfa19011f10b168c856e02baaf0eb6` | ⚠️ Unaudited |
+| FoxifyMaxi | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x3725b740b33e75898e4e2e616e9bb519884edd37` | ⚠️ Unaudited |
+| SFOX | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x8725bc25a94bcec8ef1f47bb8e9c22e343f97d8e` | ⚠️ Unaudited |
+| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | 2 deployments: sonic `0x62e15748e3a28082efd8f51b1a7b56eb0b004808`; sonic `0xf9eb7e3dc07e9cbabc462db13d73da931b07e0db` | ⚠️ Unaudited |
+| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | sonic | n/a | 3 deployments: sonic `0xc24d387e68ece6c26e6f551e119af4e18f33a54f`; sonic `0xc64ca64f35e919c6b469be16f4f0ea24a621c322`; sonic `0xca2dfb842f0c5158bb57296a243813e37058850d` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -128,8 +128,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x91fb98...a9287f` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xc23ce5...0b2779` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x91fb98c2ff10b0378890e07dc4a6496624a9287f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xc23ce59e5ac45d96fc41db3e133ee3232c0b2779` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -158,7 +158,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| sonic | `0x261dfa...af0eb6` | Foxify | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0x261dfa2528dfa19011f10b168c856e02baaf0eb6` | Foxify | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

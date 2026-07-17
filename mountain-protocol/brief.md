@@ -59,11 +59,11 @@ The protocol forms a single structural family (Mountain Protocol) of 1 contract(
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| USDM | unknown | ethereum | n/a | [`0x59d935...85508c`](./contracts/ethereum-1/0x59d9356e565ab3a36dd77763fc0d87feaf85508c/) | ✅ Audited |
-| USDM | unknown | optimism | n/a | [`0x59d935...85508c`](./contracts/optimism-10/0x59d9356e565ab3a36dd77763fc0d87feaf85508c/) | ✅ Audited |
-| USDM | unknown | polygon | n/a | [`0x59d935...85508c`](./contracts/polygon-137/0x59d9356e565ab3a36dd77763fc0d87feaf85508c/) | ✅ Audited |
-| USDM | unknown | base | n/a | [`0x59d935...85508c`](./contracts/base-8453/0x59d9356e565ab3a36dd77763fc0d87feaf85508c/) | ✅ Audited |
-| USDM | unknown | arbitrum | n/a | [`0x59d935...85508c`](./contracts/arbitrum-42161/0x59d9356e565ab3a36dd77763fc0d87feaf85508c/) | ✅ Audited |
+| USDM | unknown | ethereum | n/a | [`0x59d9356e565ab3a36dd77763fc0d87feaf85508c`](./contracts/ethereum-1/0x59d9356e565ab3a36dd77763fc0d87feaf85508c/) | ✅ Audited |
+| USDM | unknown | optimism | n/a | [`0x59d9356e565ab3a36dd77763fc0d87feaf85508c`](./contracts/optimism-10/0x59d9356e565ab3a36dd77763fc0d87feaf85508c/) | ✅ Audited |
+| USDM | unknown | polygon | n/a | [`0x59d9356e565ab3a36dd77763fc0d87feaf85508c`](./contracts/polygon-137/0x59d9356e565ab3a36dd77763fc0d87feaf85508c/) | ✅ Audited |
+| USDM | unknown | base | n/a | [`0x59d9356e565ab3a36dd77763fc0d87feaf85508c`](./contracts/base-8453/0x59d9356e565ab3a36dd77763fc0d87feaf85508c/) | ✅ Audited |
+| USDM | unknown | arbitrum | n/a | [`0x59d9356e565ab3a36dd77763fc0d87feaf85508c`](./contracts/arbitrum-42161/0x59d9356e565ab3a36dd77763fc0d87feaf85508c/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 
@@ -87,7 +87,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | zksync-era | n/a | `0x59d935...85508c` | ❓ Unverified |
+| UnnamedContract | unknown | zksync-era | n/a | `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` | ❓ Unverified |
 
 ## Audit Inventory
 

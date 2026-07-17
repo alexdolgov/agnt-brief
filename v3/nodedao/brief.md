@@ -52,17 +52,17 @@ The pinned logic-topography run contains 2 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x0d6f76...a725bc`, chain 1)
-- UnnamedContract (`0x16f692...b5735b`, chain 1)
-- UnnamedContract (`0x54f661...d1ea62`, chain 1)
-- UnnamedContract (`0x9efdeb...a3b75c`, chain 1)
-- UnnamedContract (`0xa9d213...dee8f3`, chain 1)
-- UnnamedContract (`0xbdfe7f...def3d8`, chain 1)
-- UnnamedContract (`0xc65720...c7789a`, chain 1)
-- UnnamedContract (`0xd7c049...812121`, chain 1)
-- UnnamedContract (`0xf3c794...c07c18`, chain 1)
-- CumulativeMerkleDrop (`0x1349a8...7b6610`, chain 1)
-- LsdETH (`0x9dc7e1...b97c5b`, chain 1)
+- UnnamedContract (`0x0d6f764452ca43eb8bd22788c9db43e4b5a725bc`, chain 1)
+- UnnamedContract (`0x16f692525f3b8c8a96f8c945d365da958fb5735b`, chain 1)
+- UnnamedContract (`0x54f661260dd47b6178cf4f6f3e90cc30d8d1ea62`, chain 1)
+- UnnamedContract (`0x9efdeb695f1e3f0ad3bcfb1e07d2749b50a3b75c`, chain 1)
+- UnnamedContract (`0xa9d21395a58d832d2c44605d286560876ddee8f3`, chain 1)
+- UnnamedContract (`0xbdfe7fc2caac000e8436c72c104d611277def3d8`, chain 1)
+- UnnamedContract (`0xc6572019548dfeba782ba5a2093c836626c7789a`, chain 1)
+- UnnamedContract (`0xd7c049cd4ba216679ecc04eb2767cc5e39812121`, chain 1)
+- UnnamedContract (`0xf3c79408164abfb6fd5ddfe33b084e4ad2c07c18`, chain 1)
+- CumulativeMerkleDrop (`0x1349a8d352b1971cbebeacf55fb75526f47b6610`, chain 1)
+- LsdETH (`0x9dc7e196092dac94f0c76cfb020b60fa75b97c5b`, chain 1)
 
 ## Contract Surface Quality
 
@@ -108,11 +108,11 @@ The pinned logic-topography run contains 2 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| CumulativeMerkleDrop | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-389860 | `0x1349a8...7b6610` | ⚠️ Unaudited |
-| GnosisSafe | governance | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x718b78...2d6a1d` | ⚠️ Unaudited |
-| LsdETH | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389863 | `0x9dc7e1...b97c5b` | ⚠️ Unaudited |
-| NethOFTAdapter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3343f9...3283ce` | ⚠️ Unaudited |
-| RNethOFTAdapter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcea368...8ded56` | ⚠️ Unaudited |
+| CumulativeMerkleDrop | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-389860 | `0x1349a8d352b1971cbebeacf55fb75526f47b6610` | ⚠️ Unaudited |
+| GnosisSafe | governance | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x718b7885fec8511dc8f2a378d3045c90e82d6a1d` | ⚠️ Unaudited |
+| LsdETH | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389863 | `0x9dc7e196092dac94f0c76cfb020b60fa75b97c5b` | ⚠️ Unaudited |
+| NethOFTAdapter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3343f9de5612b6f8a433abc3eaae245cfa3283ce` | ⚠️ Unaudited |
+| RNethOFTAdapter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcea3681131dd151ee72a5c8dbba555cb8b8ded56` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -132,15 +132,15 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389859 | `0x0d6f76...a725bc` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389861 | `0x16f692...b5735b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389862 | `0x54f661...d1ea62` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389864 | `0x9efdeb...a3b75c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389865 | `0xa9d213...dee8f3` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389866 | `0xbdfe7f...def3d8` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389867 | `0xc65720...c7789a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389868 | `0xd7c049...812121` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389869 | `0xf3c794...c07c18` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389859 | `0x0d6f764452ca43eb8bd22788c9db43e4b5a725bc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389861 | `0x16f692525f3b8c8a96f8c945d365da958fb5735b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389862 | `0x54f661260dd47b6178cf4f6f3e90cc30d8d1ea62` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389864 | `0x9efdeb695f1e3f0ad3bcfb1e07d2749b50a3b75c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389865 | `0xa9d21395a58d832d2c44605d286560876ddee8f3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389866 | `0xbdfe7fc2caac000e8436c72c104d611277def3d8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389867 | `0xc6572019548dfeba782ba5a2093c836626c7789a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389868 | `0xd7c049cd4ba216679ecc04eb2767cc5e39812121` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389869 | `0xf3c79408164abfb6fd5ddfe33b084e4ad2c07c18` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -220,8 +220,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x1349a8...7b6610` | CumulativeMerkleDrop | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x9dc7e1...b97c5b` | LsdETH | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x1349a8d352b1971cbebeacf55fb75526f47b6610` | CumulativeMerkleDrop | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x9dc7e196092dac94f0c76cfb020b60fa75b97c5b` | LsdETH | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

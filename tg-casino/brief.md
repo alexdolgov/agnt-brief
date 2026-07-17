@@ -60,16 +60,16 @@ The protocol comprises 4 functional families. Contracts are linked by 4 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| PresaleV1 | unknown | ethereum | n/a | [`0xa87e79...73009a`](./contracts/ethereum-1/0xa87e79652814a0239bf752d4d7be70f61b73009a/) | ✅ Audited |
-| StakingManagerV1 | governance | ethereum | n/a | [`0x21d6d6...540ae8`](./contracts/ethereum-1/0x21d6d6d6ffd8b68e94bf5159bb029635af540ae8/) | ✅ Audited |
-| TGCToken | token | ethereum | n/a | 2 deployments: ethereum [`0x14bc78...b547b0`](./contracts/ethereum-1/0x14bc78f0e6b9854da2a92f43a0526b31ceb547b0/); ethereum `0x25b4f5...7cb7cf` | ✅ Audited |
+| PresaleV1 | unknown | ethereum | n/a | [`0xa87e79652814a0239bf752d4d7be70f61b73009a`](./contracts/ethereum-1/0xa87e79652814a0239bf752d4d7be70f61b73009a/) | ✅ Audited |
+| StakingManagerV1 | governance | ethereum | n/a | [`0x21d6d6d6ffd8b68e94bf5159bb029635af540ae8`](./contracts/ethereum-1/0x21d6d6d6ffd8b68e94bf5159bb029635af540ae8/) | ✅ Audited |
+| TGCToken | token | ethereum | n/a | 2 deployments: ethereum [`0x14bc78f0e6b9854da2a92f43a0526b31ceb547b0`](./contracts/ethereum-1/0x14bc78f0e6b9854da2a92f43a0526b31ceb547b0/); ethereum `0x25b4f5d4c314bcd5d7962734936c957b947cb7cf` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| StakingManagerV2 | governance | ethereum | n/a | [`0xfad6ef...f77b42`](./contracts/ethereum-1/0xfad6ef2b6e30a4854b7fc2e3de09ba4c88f77b42/) | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | ethereum | n/a | [`0x85aa97...2122bf`](./contracts/ethereum-1/0x85aa97537837514a9229fcaeb66eeef7242122bf/) | ⚠️ Unaudited |
+| StakingManagerV2 | governance | ethereum | n/a | [`0xfad6ef2b6e30a4854b7fc2e3de09ba4c88f77b42`](./contracts/ethereum-1/0xfad6ef2b6e30a4854b7fc2e3de09ba4c88f77b42/) | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | ethereum | n/a | [`0x85aa97537837514a9229fcaeb66eeef7242122bf`](./contracts/ethereum-1/0x85aa97537837514a9229fcaeb66eeef7242122bf/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -108,7 +108,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xfad6ef...f77b42`](./contracts/ethereum-1/0xfad6ef2b6e30a4854b7fc2e3de09ba4c88f77b42/) | StakingManagerV2 | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xfad6ef2b6e30a4854b7fc2e3de09ba4c88f77b42`](./contracts/ethereum-1/0xfad6ef2b6e30a4854b7fc2e3de09ba4c88f77b42/) | StakingManagerV2 | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

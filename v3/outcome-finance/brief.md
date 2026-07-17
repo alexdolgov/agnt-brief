@@ -56,7 +56,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x04fa0d...2ef828`, chain 1)
+- UnnamedContract (`0x04fa0d235c4abf4bcf4787af4cf447de572ef828`, chain 1)
 
 ## Contract Surface Quality
 
@@ -102,9 +102,9 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ExpiringMultiParty | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4f1424...af153c` | ⚠️ Unaudited |
-| OptimisticOracleV2 | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa0ae66...23ffae` | ⚠️ Unaudited |
-| SkinnyOptimisticOracle | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xee3afe...887c24` | ⚠️ Unaudited |
+| ExpiringMultiParty | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4f1424cef6ace40c0ae4fc64d74b734f1eaf153c` | ⚠️ Unaudited |
+| OptimisticOracleV2 | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa0ae6609447e57a42c51b50eae921d701823ffae` | ⚠️ Unaudited |
+| SkinnyOptimisticOracle | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xee3afe347d5c74317041e2618c49534daf887c24` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -124,8 +124,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390501 | `0x04fa0d...2ef828` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | boba | n/a | `0xc064b1...d41f68` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390501 | `0x04fa0d235c4abf4bcf4787af4cf447de572ef828` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | boba | n/a | `0xc064b1fe8ce7138da4c07bfca1f8eed922d41f68` | ❓ Unverified |
 
 ## Audit Inventory
 

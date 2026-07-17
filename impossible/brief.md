@@ -64,20 +64,20 @@ The protocol comprises 2 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ImpossibleRouterExtension | unknown | aurora | n/a | [`0x16e1cd...b0c5e2`](./contracts/aurora-1313161554/0x16e1cd2370752cc7a4aad326fe2c1aae95b0c5e2/) | ✅ Audited |
-| ImpossibleSwapFactory | unknown | bsc | n/a | [`0x4233ad...3df85f`](./contracts/bsc-56/0x4233ad9b8b7c1ccf0818907908a7f0796a3df85f/) | ✅ Audited |
-| ImpossibleWrapperFactory | unknown | moonbeam | n/a | [`0x45a3a3...7fd7c1`](./contracts/moonbeam-1284/0x45a3a315277fbc1bce0611c4398b32e0317fd7c1/) | ✅ Audited |
-| StableXFactory | unknown | bsc | n/a | [`0x08823b...41963c`](./contracts/bsc-56/0x08823b2f32c96e120ed15d595c4dc3069c41963c/) | ✅ Audited |
+| ImpossibleRouterExtension | unknown | aurora | n/a | [`0x16e1cd2370752cc7a4aad326fe2c1aae95b0c5e2`](./contracts/aurora-1313161554/0x16e1cd2370752cc7a4aad326fe2c1aae95b0c5e2/) | ✅ Audited |
+| ImpossibleSwapFactory | unknown | bsc | n/a | [`0x4233ad9b8b7c1ccf0818907908a7f0796a3df85f`](./contracts/bsc-56/0x4233ad9b8b7c1ccf0818907908a7f0796a3df85f/) | ✅ Audited |
+| ImpossibleWrapperFactory | unknown | moonbeam | n/a | [`0x45a3a315277fbc1bce0611c4398b32e0317fd7c1`](./contracts/moonbeam-1284/0x45a3a315277fbc1bce0611c4398b32e0317fd7c1/) | ✅ Audited |
+| StableXFactory | unknown | bsc | n/a | [`0x08823b2f32c96e120ed15d595c4dc3069c41963c`](./contracts/bsc-56/0x08823b2f32c96e120ed15d595c4dc3069c41963c/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| IFTokenStandard | unknown | aurora | n/a | [`0x2efede...00eacb`](./contracts/aurora-1313161554/0x2efedebd6e29963511589731a33311196f00eacb/) | ⚠️ Unaudited |
-| ImpossibleDecentralizedIncubatorAccessToken | unknown | bsc | n/a | [`0x0b15dd...9bcb89`](./contracts/bsc-56/0x0b15ddf19d47e6a86a56148fb4afffc6929bcb89/) | ⚠️ Unaudited |
-| ImpossibleRouter | unknown | moonbeam | n/a | [`0x16e1cd...b0c5e2`](./contracts/moonbeam-1284/0x16e1cd2370752cc7a4aad326fe2c1aae95b0c5e2/) | ⚠️ Unaudited |
-| StableXMigrator | unknown | bsc | n/a | [`0x0c0282...4e4100`](./contracts/bsc-56/0x0c028235dcbc7f9de8926f8ef36feea55b4e4100/) | ⚠️ Unaudited |
-| StableXRouter | unknown | bsc | n/a | [`0x1cce09...5e5fb3`](./contracts/bsc-56/0x1cce099ae70f17fb74adfc9b00dbdf208a5e5fb3/) | ⚠️ Unaudited |
+| IFTokenStandard | unknown | aurora | n/a | [`0x2efedebd6e29963511589731a33311196f00eacb`](./contracts/aurora-1313161554/0x2efedebd6e29963511589731a33311196f00eacb/) | ⚠️ Unaudited |
+| ImpossibleDecentralizedIncubatorAccessToken | unknown | bsc | n/a | [`0x0b15ddf19d47e6a86a56148fb4afffc6929bcb89`](./contracts/bsc-56/0x0b15ddf19d47e6a86a56148fb4afffc6929bcb89/) | ⚠️ Unaudited |
+| ImpossibleRouter | unknown | moonbeam | n/a | [`0x16e1cd2370752cc7a4aad326fe2c1aae95b0c5e2`](./contracts/moonbeam-1284/0x16e1cd2370752cc7a4aad326fe2c1aae95b0c5e2/) | ⚠️ Unaudited |
+| StableXMigrator | unknown | bsc | n/a | [`0x0c028235dcbc7f9de8926f8ef36feea55b4e4100`](./contracts/bsc-56/0x0c028235dcbc7f9de8926f8ef36feea55b4e4100/) | ⚠️ Unaudited |
+| StableXRouter | unknown | bsc | n/a | [`0x1cce099ae70f17fb74adfc9b00dbdf208a5e5fb3`](./contracts/bsc-56/0x1cce099ae70f17fb74adfc9b00dbdf208a5e5fb3/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -124,11 +124,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| aurora | [`0x2efede...00eacb`](./contracts/aurora-1313161554/0x2efedebd6e29963511589731a33311196f00eacb/) | IFTokenStandard | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x0b15dd...9bcb89`](./contracts/bsc-56/0x0b15ddf19d47e6a86a56148fb4afffc6929bcb89/) | ImpossibleDecentralizedIncubatorAccessToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| moonbeam | [`0x16e1cd...b0c5e2`](./contracts/moonbeam-1284/0x16e1cd2370752cc7a4aad326fe2c1aae95b0c5e2/) | ImpossibleRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x0c0282...4e4100`](./contracts/bsc-56/0x0c028235dcbc7f9de8926f8ef36feea55b4e4100/) | StableXMigrator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x1cce09...5e5fb3`](./contracts/bsc-56/0x1cce099ae70f17fb74adfc9b00dbdf208a5e5fb3/) | StableXRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| aurora | [`0x2efedebd6e29963511589731a33311196f00eacb`](./contracts/aurora-1313161554/0x2efedebd6e29963511589731a33311196f00eacb/) | IFTokenStandard | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x0b15ddf19d47e6a86a56148fb4afffc6929bcb89`](./contracts/bsc-56/0x0b15ddf19d47e6a86a56148fb4afffc6929bcb89/) | ImpossibleDecentralizedIncubatorAccessToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonbeam | [`0x16e1cd2370752cc7a4aad326fe2c1aae95b0c5e2`](./contracts/moonbeam-1284/0x16e1cd2370752cc7a4aad326fe2c1aae95b0c5e2/) | ImpossibleRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x0c028235dcbc7f9de8926f8ef36feea55b4e4100`](./contracts/bsc-56/0x0c028235dcbc7f9de8926f8ef36feea55b4e4100/) | StableXMigrator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x1cce099ae70f17fb74adfc9b00dbdf208a5e5fb3`](./contracts/bsc-56/0x1cce099ae70f17fb74adfc9b00dbdf208a5e5fb3/) | StableXRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

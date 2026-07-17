@@ -61,7 +61,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| GravisToken | token | bsc | n/a | [`0x190cec...1cf539`](./contracts/bsc-56/0x190cec0657a02e9eab1c1df5d59f9139131cf539/) | ⚠️ Unaudited |
+| GravisToken | token | bsc | n/a | [`0x190cec0657a02e9eab1c1df5d59f9139131cf539`](./contracts/bsc-56/0x190cec0657a02e9eab1c1df5d59f9139131cf539/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,7 +93,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x190cec...1cf539`](./contracts/bsc-56/0x190cec0657a02e9eab1c1df5d59f9139131cf539/) | GravisToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x190cec0657a02e9eab1c1df5d59f9139131cf539`](./contracts/bsc-56/0x190cec0657a02e9eab1c1df5d59f9139131cf539/) | GravisToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

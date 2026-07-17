@@ -61,16 +61,16 @@ The protocol comprises 5 functional families. Contracts are linked by 1 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| MdexFactory | registry | bsc | n/a | [`0x3cd1c4...8062b8`](./contracts/bsc-56/0x3cd1c46068daea5ebb0d3f55f6915b10648062b8/) | ✅ Audited |
-| MdexRouter | adapter | bsc | n/a | 3 deployments: bsc [`0x0384e9...bc4333`](./contracts/bsc-56/0x0384e9ad329396c3a6a401243ca71633b2bc4333/); bsc `0x62c1a0...b87059`; bsc `0x7dae51...af1ba8` | ✅ Audited |
-| MdxToken | token | bsc | n/a | [`0x9c65ab...e3a739`](./contracts/bsc-56/0x9c65ab58d8d978db963e63f2bfb7121627e3a739/) | ✅ Audited |
-| SwapMining | unknown | bsc | n/a | [`0x782395...b44c11`](./contracts/bsc-56/0x782395303692abed877d2737aa7982345eb44c11/) | ✅ Audited |
+| MdexFactory | registry | bsc | n/a | [`0x3cd1c46068daea5ebb0d3f55f6915b10648062b8`](./contracts/bsc-56/0x3cd1c46068daea5ebb0d3f55f6915b10648062b8/) | ✅ Audited |
+| MdexRouter | adapter | bsc | n/a | 3 deployments: bsc [`0x0384e9ad329396c3a6a401243ca71633b2bc4333`](./contracts/bsc-56/0x0384e9ad329396c3a6a401243ca71633b2bc4333/); bsc `0x62c1a0d92b09d0912f7bb9c96c5ecdc7f2b87059`; bsc `0x7dae51bd3e3376b8c7c4900e9107f12be3af1ba8` | ✅ Audited |
+| MdxToken | token | bsc | n/a | [`0x9c65ab58d8d978db963e63f2bfb7121627e3a739`](./contracts/bsc-56/0x9c65ab58d8d978db963e63f2bfb7121627e3a739/) | ✅ Audited |
+| SwapMining | unknown | bsc | n/a | [`0x782395303692abed877d2737aa7982345eb44c11`](./contracts/bsc-56/0x782395303692abed877d2737aa7982345eb44c11/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BSCPool | core_logic | bsc | n/a | [`0xc48fe2...728a50`](./contracts/bsc-56/0xc48fe252aa631017df253578b1405ea399728a50/) | ⚠️ Unaudited |
+| BSCPool | core_logic | bsc | n/a | [`0xc48fe252aa631017df253578b1405ea399728a50`](./contracts/bsc-56/0xc48fe252aa631017df253578b1405ea399728a50/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -90,12 +90,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0x9458f7...abef8e` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xba6f7d...3392d6` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xbd21cd...570f5e` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xd6cd59...158047` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xfa2eeb...21214f` | ❓ Unverified |
-| UnnamedContract | unknown | heco | n/a | `0xb0b670...22d941` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x9458f7d8e2dc56fbcc71628aa3811d44bfabef8e` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xba6f7d77eaeeed5ed9f6cb385022702a8f3392d6` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xbd21cd7dd5aa12561a608821cb1de7b2f5570f5e` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xd6cd5963be717dc1afa5100c7e29be8ac4158047` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xfa2eeb85dd47ff9497b340cc2c5474453821214f` | ❓ Unverified |
+| UnnamedContract | unknown | heco | n/a | `0xb0b670fc1f7724119963018db0bfa86adb22d941` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -111,7 +111,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0xc48fe2...728a50`](./contracts/bsc-56/0xc48fe252aa631017df253578b1405ea399728a50/) | BSCPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xc48fe252aa631017df253578b1405ea399728a50`](./contracts/bsc-56/0xc48fe252aa631017df253578b1405ea399728a50/) | BSCPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

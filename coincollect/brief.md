@@ -60,8 +60,8 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CCNFT | unknown | polygon | n/a | [`0x569b70...f57eed`](./contracts/polygon-137/0x569b70fc565afba702d9e77e75fd3e3c78f57eed/) | ⚠️ Unaudited |
-| CollectToken | unknown | polygon | n/a | [`0x566337...6d4148`](./contracts/polygon-137/0x56633733fc8baf9f730ad2b6b9956ae22c6d4148/) | ⚠️ Unaudited |
+| CCNFT | unknown | polygon | n/a | [`0x569b70fc565afba702d9e77e75fd3e3c78f57eed`](./contracts/polygon-137/0x569b70fc565afba702d9e77e75fd3e3c78f57eed/) | ⚠️ Unaudited |
+| CollectToken | unknown | polygon | n/a | [`0x56633733fc8baf9f730ad2b6b9956ae22c6d4148`](./contracts/polygon-137/0x56633733fc8baf9f730ad2b6b9956ae22c6d4148/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -92,8 +92,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| polygon | [`0x569b70...f57eed`](./contracts/polygon-137/0x569b70fc565afba702d9e77e75fd3e3c78f57eed/) | CCNFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x566337...6d4148`](./contracts/polygon-137/0x56633733fc8baf9f730ad2b6b9956ae22c6d4148/) | CollectToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x569b70fc565afba702d9e77e75fd3e3c78f57eed`](./contracts/polygon-137/0x569b70fc565afba702d9e77e75fd3e3c78f57eed/) | CCNFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x56633733fc8baf9f730ad2b6b9956ae22c6d4148`](./contracts/polygon-137/0x56633733fc8baf9f730ad2b6b9956ae22c6d4148/) | CollectToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

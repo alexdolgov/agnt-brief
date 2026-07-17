@@ -61,14 +61,14 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BBOFT | unknown | ethereum | n/a | [`0xd459ec...1073a3`](./contracts/ethereum-1/0xd459eceddafcc1d876a3be7290a2e16e801073a3/) | ⚠️ Unaudited |
-| BBTC | unknown | ethereum | n/a | [`0x8b8d92...9d6863`](./contracts/ethereum-1/0x8b8d92bb45ec8225558096f99d6d75c2b49d6863/) | ⚠️ Unaudited |
-| BBUSD | unknown | ethereum | n/a | [`0xbc8570...da6eb1`](./contracts/ethereum-1/0xbc8570ae1dae11d8b439fa1845753bef2eda6eb1/) | ⚠️ Unaudited |
-| CefiTokenWrapper | unknown | ethereum | n/a | [`0x403f10...757475`](./contracts/ethereum-1/0x403f10c86b4d6f33b0d5163073784f6d9e757475/) | ⚠️ Unaudited |
-| CefiTrove | unknown | ethereum | n/a | [`0x69b706...e40116`](./contracts/ethereum-1/0x69b706f1c78a42404f9f2a2d982fe33fc4e40116/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | ethereum | n/a | [`0x13b037...4707b2`](./contracts/ethereum-1/0x13b037ab4b9056132cff7bd080b00bcae54707b2/) | ⚠️ Unaudited |
-| TokenVestingWallet | unknown | ethereum | n/a | [`0x4756c4...cb580e`](./contracts/ethereum-1/0x4756c41be6212a8ebf1ee0fa951f47bd91cb580e/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x035d73...316467`](./contracts/ethereum-1/0x035d73d9a563334bf35e08bfb49ea39ed4316467/) | ⚠️ Unaudited |
+| BBOFT | unknown | ethereum | n/a | [`0xd459eceddafcc1d876a3be7290a2e16e801073a3`](./contracts/ethereum-1/0xd459eceddafcc1d876a3be7290a2e16e801073a3/) | ⚠️ Unaudited |
+| BBTC | unknown | ethereum | n/a | [`0x8b8d92bb45ec8225558096f99d6d75c2b49d6863`](./contracts/ethereum-1/0x8b8d92bb45ec8225558096f99d6d75c2b49d6863/) | ⚠️ Unaudited |
+| BBUSD | unknown | ethereum | n/a | [`0xbc8570ae1dae11d8b439fa1845753bef2eda6eb1`](./contracts/ethereum-1/0xbc8570ae1dae11d8b439fa1845753bef2eda6eb1/) | ⚠️ Unaudited |
+| CefiTokenWrapper | unknown | ethereum | n/a | [`0x403f10c86b4d6f33b0d5163073784f6d9e757475`](./contracts/ethereum-1/0x403f10c86b4d6f33b0d5163073784f6d9e757475/) | ⚠️ Unaudited |
+| CefiTrove | unknown | ethereum | n/a | [`0x69b706f1c78a42404f9f2a2d982fe33fc4e40116`](./contracts/ethereum-1/0x69b706f1c78a42404f9f2a2d982fe33fc4e40116/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | ethereum | n/a | [`0x13b037ab4b9056132cff7bd080b00bcae54707b2`](./contracts/ethereum-1/0x13b037ab4b9056132cff7bd080b00bcae54707b2/) | ⚠️ Unaudited |
+| TokenVestingWallet | unknown | ethereum | n/a | [`0x4756c41be6212a8ebf1ee0fa951f47bd91cb580e`](./contracts/ethereum-1/0x4756c41be6212a8ebf1ee0fa951f47bd91cb580e/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x035d73d9a563334bf35e08bfb49ea39ed4316467`](./contracts/ethereum-1/0x035d73d9a563334bf35e08bfb49ea39ed4316467/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -103,12 +103,12 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xd459ec...1073a3`](./contracts/ethereum-1/0xd459eceddafcc1d876a3be7290a2e16e801073a3/) | BBOFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x8b8d92...9d6863`](./contracts/ethereum-1/0x8b8d92bb45ec8225558096f99d6d75c2b49d6863/) | BBTC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xbc8570...da6eb1`](./contracts/ethereum-1/0xbc8570ae1dae11d8b439fa1845753bef2eda6eb1/) | BBUSD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x403f10...757475`](./contracts/ethereum-1/0x403f10c86b4d6f33b0d5163073784f6d9e757475/) | CefiTokenWrapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x69b706...e40116`](./contracts/ethereum-1/0x69b706f1c78a42404f9f2a2d982fe33fc4e40116/) | CefiTrove | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x4756c4...cb580e`](./contracts/ethereum-1/0x4756c41be6212a8ebf1ee0fa951f47bd91cb580e/) | TokenVestingWallet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xd459eceddafcc1d876a3be7290a2e16e801073a3`](./contracts/ethereum-1/0xd459eceddafcc1d876a3be7290a2e16e801073a3/) | BBOFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8b8d92bb45ec8225558096f99d6d75c2b49d6863`](./contracts/ethereum-1/0x8b8d92bb45ec8225558096f99d6d75c2b49d6863/) | BBTC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xbc8570ae1dae11d8b439fa1845753bef2eda6eb1`](./contracts/ethereum-1/0xbc8570ae1dae11d8b439fa1845753bef2eda6eb1/) | BBUSD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x403f10c86b4d6f33b0d5163073784f6d9e757475`](./contracts/ethereum-1/0x403f10c86b4d6f33b0d5163073784f6d9e757475/) | CefiTokenWrapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x69b706f1c78a42404f9f2a2d982fe33fc4e40116`](./contracts/ethereum-1/0x69b706f1c78a42404f9f2a2d982fe33fc4e40116/) | CefiTrove | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4756c41be6212a8ebf1ee0fa951f47bd91cb580e`](./contracts/ethereum-1/0x4756c41be6212a8ebf1ee0fa951f47bd91cb580e/) | TokenVestingWallet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -52,12 +52,12 @@ The pinned logic-topography run contains 5 contract row(s) across arbitrum, celo
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- ModuleFactory (`0x974e1f...a0bc9e`, chain 137)
-- ModuleFactory (`0xbdc819...8f6155`, chain 42220)
-- Vault (`0x3f48e0...553e32`, chain 137)
-- Vault (`0x4a3f7d...7d31a9`, chain 42161)
-- Vault (`0x2a68c9...51343f`, chain 42220)
-- VaultFactory (`0x73eacd...d8dbb6`, chain 42220)
+- ModuleFactory (`0x974e1f25ae092116314ba02964625ded74a0bc9e`, chain 137)
+- ModuleFactory (`0xbdc819f7c26c02a4954c910d00a51660b08f6155`, chain 42220)
+- Vault (`0x3f48e00cfeba3e713db8bc3e28d634578c553e32`, chain 137)
+- Vault (`0x4a3f7dd63077cde8d7eff3c958eb69a3dd7d31a9`, chain 42161)
+- Vault (`0x2a68c98bd43aa24331396f29166aef2bfd51343f`, chain 42220)
+- VaultFactory (`0x73eacd32271f297c9427aa29c0517a18dad8dbb6`, chain 42220)
 
 ## Contract Surface Quality
 
@@ -103,24 +103,24 @@ The pinned logic-topography run contains 5 contract row(s) across arbitrum, celo
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| GlobalPriceValuation | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 2 deployments: polygon `0xd28a91...1b2019`; polygon `0xe9e02e...763bad` | ⚠️ Unaudited |
-| Hook | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 2 deployments: polygon `0x48b38b...cf6bff`; polygon `0xfa171a...6a5036` | ⚠️ Unaudited |
-| ModuleFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x4dcc7a...6ba4c2` | ⚠️ Unaudited |
-| ModuleFactory | unknown | project_anchor | own_supporting | 0 | polygon | unit-395346 | `0x974e1f...a0bc9e` | ⚠️ Unaudited |
-| ModuleFactory | unknown | project_anchor | own_supporting | 0 | celo | unit-395350 | `0xbdc819...8f6155` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x4a3f7d...7d31a9` | ⚠️ Unaudited |
-| StableCoinOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x320f08...be501d` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | polygon | n/a | 2 deployments: polygon `0x237f75...7247d6`; polygon `0x2d4500...20cd3f` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | polygon | n/a | 2 deployments: polygon `0xd216cb...a58850`; polygon `0xf2742c...34b62c` | ⚠️ Unaudited |
-| ValuationModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x10761d...5d72d9` | ⚠️ Unaudited |
-| Vault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 2 deployments: polygon `0x02c25a...b38a48`; polygon `0xf532b7...3d4c0d` | ⚠️ Unaudited |
-| Vault | core_logic | project_anchor | own_supporting | 0 | polygon | unit-395345 | `0x3f48e0...553e32` | ⚠️ Unaudited |
-| Vault | core_logic | project_anchor | own_supporting | 0 | arbitrum | unit-395347 | `0x4a3f7d...7d31a9` | ⚠️ Unaudited |
-| Vault | core_logic | project_anchor | own_supporting | 0 | celo | unit-395348 | `0x2a68c9...51343f` | ⚠️ Unaudited |
-| VaultFactory | unknown | project_anchor | own_supporting | 0 | polygon | unit-395344 | `0x256288...6be45b` | ⚠️ Unaudited |
-| VaultFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x49421f...00d627` | ⚠️ Unaudited |
-| VaultFactory | unknown | project_anchor | own_supporting | 0 | celo | unit-395349 | `0x73eacd...d8dbb6` | ⚠️ Unaudited |
-| WithdrawModule | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xa40173...8393a5` | ⚠️ Unaudited |
+| GlobalPriceValuation | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 2 deployments: polygon `0xd28a91626fc7908f5c18b3e04ac152118d1b2019`; polygon `0xe9e02e486995d92f877f7a6e8566285ef8763bad` | ⚠️ Unaudited |
+| Hook | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 2 deployments: polygon `0x48b38b467ece159c9e149153fce4a53685cf6bff`; polygon `0xfa171ad7d5e88f6afdbcb9a52118285d8c6a5036` | ⚠️ Unaudited |
+| ModuleFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x4dcc7a839ce7e952cd90d03d65c70b9ccd6ba4c2` | ⚠️ Unaudited |
+| ModuleFactory | unknown | project_anchor | own_supporting | 0 | polygon | unit-395346 | `0x974e1f25ae092116314ba02964625ded74a0bc9e` | ⚠️ Unaudited |
+| ModuleFactory | unknown | project_anchor | own_supporting | 0 | celo | unit-395350 | `0xbdc819f7c26c02a4954c910d00a51660b08f6155` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x4a3f7dd63077cde8d7eff3c958eb69a3dd7d31a9` | ⚠️ Unaudited |
+| StableCoinOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x320f08c29ca15dbfb4901a9da7f412fae0be501d` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | polygon | n/a | 2 deployments: polygon `0x237f754e3b7567a8932ebe2fbb64ad9d107247d6`; polygon `0x2d45009c012c71e0d9dea249be9b4ae28320cd3f` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | polygon | n/a | 2 deployments: polygon `0xd216cb113259c1d5ddccf001e6bfbdd1c8a58850`; polygon `0xf2742cba7de47029213aed8db080290b3634b62c` | ⚠️ Unaudited |
+| ValuationModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x10761dbefafe3aac2feaac2a0d0c6148fb5d72d9` | ⚠️ Unaudited |
+| Vault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 2 deployments: polygon `0x02c25ac43ae068d5808b726af720f47b87b38a48`; polygon `0xf532b78ec895183120aa18e5f6679e13493d4c0d` | ⚠️ Unaudited |
+| Vault | core_logic | project_anchor | own_supporting | 0 | polygon | unit-395345 | `0x3f48e00cfeba3e713db8bc3e28d634578c553e32` | ⚠️ Unaudited |
+| Vault | core_logic | project_anchor | own_supporting | 0 | arbitrum | unit-395347 | `0x4a3f7dd63077cde8d7eff3c958eb69a3dd7d31a9` | ⚠️ Unaudited |
+| Vault | core_logic | project_anchor | own_supporting | 0 | celo | unit-395348 | `0x2a68c98bd43aa24331396f29166aef2bfd51343f` | ⚠️ Unaudited |
+| VaultFactory | unknown | project_anchor | own_supporting | 0 | polygon | unit-395344 | `0x2562883f006d04ccc2907635e38089fbfc6be45b` | ⚠️ Unaudited |
+| VaultFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x49421fea2e34ffe728299e5a297474dfda00d627` | ⚠️ Unaudited |
+| VaultFactory | unknown | project_anchor | own_supporting | 0 | celo | unit-395349 | `0x73eacd32271f297c9427aa29c0517a18dad8dbb6` | ⚠️ Unaudited |
+| WithdrawModule | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xa40173bfd57178e748b41ff0d18080b8c18393a5` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -140,12 +140,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x04d5b4...0636fc` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x08ce5e...73604f` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x0ef0f6...b920f7` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x4eda56...baf02f` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x8a805e...320a6b` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x95b304...16cf4b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x04d5b47d7a59443d7240f505e74e44037a0636fc` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x08ce5e200b3986dd29b23ad0597e439adc73604f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x0ef0f605d93ea31bb1bf54fd150e7b6f16b920f7` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x4eda5660c74b7a6e754983e805882d80e0baf02f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x8a805e6f06523bc905d49580129ff04052320a6b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x95b3047d17313307bfbf5ef6701450eadf16cf4b` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -201,11 +201,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| polygon | `0x974e1f...a0bc9e` | ModuleFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | `0x3f48e0...553e32` | Vault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | `0x4a3f7d...7d31a9` | Vault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | `0x2a68c9...51343f` | Vault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | `0x256288...6be45b` | VaultFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0x974e1f25ae092116314ba02964625ded74a0bc9e` | ModuleFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0x3f48e00cfeba3e713db8bc3e28d634578c553e32` | Vault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0x4a3f7dd63077cde8d7eff3c958eb69a3dd7d31a9` | Vault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | `0x2a68c98bd43aa24331396f29166aef2bfd51343f` | Vault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0x2562883f006d04ccc2907635e38089fbfc6be45b` | VaultFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

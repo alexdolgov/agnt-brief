@@ -52,9 +52,9 @@ The pinned logic-topography run contains 3 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- VaultV2 (`0x610f5b...e4ae7e`, chain 1)
-- VaultV2 (`0x951a9f...b6c0f8`, chain 1)
-- VaultV2 (`0xf1ca44...76f9a1`, chain 1)
+- VaultV2 (`0x610f5b68bd1eed68af649a3fd3dc2caa1ee4ae7e`, chain 1)
+- VaultV2 (`0x951a9f4a2ce19b9dea6b37e691d076a345b6c0f8`, chain 1)
+- VaultV2 (`0xf1ca44eea3a4effcb195a970a2f1d8553f76f9a1`, chain 1)
 
 ## Contract Surface Quality
 
@@ -100,12 +100,12 @@ The pinned logic-topography run contains 3 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| VaultV2 | core_logic | project_anchor | own_core | 0 | ethereum | n/a | 7 deployments: ethereum `0x0bf016...eaa334`; ethereum `0x153bd1...d64a57`; ethereum `0x35cbe8...b4f560`; ethereum `0x951a9f...b6c0f8`; ethereum `0x9f39b1...eefa82`; ethereum `0xeb6719...bf202c`; ethereum `0xf1ca44...76f9a1` | ⚠️ Unaudited |
-| VaultV2 | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-378725 | `0x610f5b...e4ae7e` | ⚠️ Unaudited |
-| VaultV2 | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xd8cd72...da0c27` | ⚠️ Unaudited |
-| MetaMorphoV1_1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 6 deployments: ethereum `0x47fe8a...f47efc`; ethereum `0x670195...45cb90`; ethereum `0x874e7f...81939c`; ethereum `0xb0f05e...504ba9`; ethereum `0xf9b85b...e8d4c8`; ethereum `0xfa7ed4...c40c63` | ⚠️ Unaudited |
-| Morpho | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbbbbbb...eeffcb` | ⚠️ Unaudited |
-| Safe | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xeb4af6...c04645` | ⚠️ Unaudited |
+| VaultV2 | core_logic | project_anchor | own_core | 0 | ethereum | n/a | 7 deployments: ethereum `0x0bf0164d17469241b6e086da4016dcc54feaa334`; ethereum `0x153bd1abe60104bd46aa05a27fa12d1346d64a57`; ethereum `0x35cbe8542e70fa2f7f9cdf129f19e593f4b4f560`; ethereum `0x951a9f4a2ce19b9dea6b37e691d076a345b6c0f8`; ethereum `0x9f39b13bb472126d6937bf25a39338e664eefa82`; ethereum `0xeb6719c14ba01bf1d6bfb78a65f63f12fabf202c`; ethereum `0xf1ca44eea3a4effcb195a970a2f1d8553f76f9a1` | ⚠️ Unaudited |
+| VaultV2 | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-378725 | `0x610f5b68bd1eed68af649a3fd3dc2caa1ee4ae7e` | ⚠️ Unaudited |
+| VaultV2 | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xd8cd72a2eb7a4312404c00aed5172c0026da0c27` | ⚠️ Unaudited |
+| MetaMorphoV1_1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 6 deployments: ethereum `0x47fe8ab9ee47dd65c24df52324181790b9f47efc`; ethereum `0x6701957aaa39e9352a42729cc65436a4c945cb90`; ethereum `0x874e7fb1abb4c27a7bbeeefa39e888b63181939c`; ethereum `0xb0f05e4de970a1aaf77f8c2f823953a367504ba9`; ethereum `0xf9b85b19f6885511165505299648e6d052e8d4c8`; ethereum `0xfa7ed49eb24a6117d8a3168eee69d26b45c40c63` | ⚠️ Unaudited |
+| Morpho | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb` | ⚠️ Unaudited |
+| Safe | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xeb4af6fa3afa08b10d593ec8ff87efb03bc04645` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -142,8 +142,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x0bf016...eaa334` | VaultV2 | core_logic | $34,249,744.10 | Verified native implementation with $34,249,744.10 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x610f5b...e4ae7e` | VaultV2 | core_logic | $2,354,149.18 | Verified native implementation with $2,354,149.18 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x0bf0164d17469241b6e086da4016dcc54feaa334` | VaultV2 | core_logic | $34,249,744.10 | Verified native implementation with $34,249,744.10 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x610f5b68bd1eed68af649a3fd3dc2caa1ee4ae7e` | VaultV2 | core_logic | $2,354,149.18 | Verified native implementation with $2,354,149.18 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -62,7 +62,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| SimplexAdminFacet | unknown | berachain | n/a | [`0xa1bed1...c21089`](./contracts/berachain-80094/0xa1bed164c12cd9479a1049f97bde5b3d6ec21089/) | ⚠️ Unaudited |
+| SimplexAdminFacet | unknown | berachain | n/a | [`0xa1bed164c12cd9479a1049f97bde5b3d6ec21089`](./contracts/berachain-80094/0xa1bed164c12cd9479a1049f97bde5b3d6ec21089/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,7 +95,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| berachain | [`0xa1bed1...c21089`](./contracts/berachain-80094/0xa1bed164c12cd9479a1049f97bde5b3d6ec21089/) | SimplexAdminFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0xa1bed164c12cd9479a1049f97bde5b3d6ec21089`](./contracts/berachain-80094/0xa1bed164c12cd9479a1049f97bde5b3d6ec21089/) | SimplexAdminFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

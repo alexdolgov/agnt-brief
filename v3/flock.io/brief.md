@@ -89,29 +89,29 @@ The pinned logic-topography run contains 2 contract row(s) across base. Structur
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| FlockTokenUpgradeable | unknown | project_anchor | own_supporting | 1 | base | unit-240015 | 2 deployments: base `0x22754d...45f784`; base `0x5ab3d4...a7b691` | ✅ Audited |
+| FlockTokenUpgradeable | unknown | project_anchor | own_supporting | 1 | base | unit-240015 | 2 deployments: base `0x22754dad1b54ce707997afce9a78a3413045f784`; base `0x5ab3d4c385b400f3abb49e80de2faf6a88a7b691` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (17)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| FlockAirDrop | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x05379b...e93d66`; base `0x7c3eac...988daf` | ⚠️ Unaudited |
-| FlockConfig | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | base | n/a | 3 deployments: base `0x64e545...1e4997`; base `0x769cec...a2148a`; base `0xf79584...8fb833` | ⚠️ Unaudited |
-| FlockPoolManagerUpgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x1a15d5...d48af6`; base `0x2d2f27...20dd65` | ⚠️ Unaudited |
-| FlockPoolManagerV2Upgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x25c2d9...1f5137`; base `0x5c4155...7a1502` | ⚠️ Unaudited |
-| FlockRewardPool | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x86dbb3...1343a8`; base `0xde02bb...8682b5` | ⚠️ Unaudited |
-| FlockStakeInfoUpgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x2886fd...d17883`; base `0x8a83ef...6a400a` | ⚠️ Unaudited |
-| FlockStakeInfoV2Upgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x1b964b...9f1f98`; base `0xa799ec...f5bf63` | ⚠️ Unaudited |
-| FlockTaskManagerUpgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: base `0x05e42e...8b737a`; base `0xac24d8...7d8fe4`; base `0xe8e31e...980d6c` | ⚠️ Unaudited |
-| FlockTaskManagerUpgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x5813de...99aaa0`; base `0xc4d8cf...31846a` | ⚠️ Unaudited |
-| FlockTaskManagerV2Upgradeable | governance | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x29d4ec...e69fed` | ⚠️ Unaudited |
-| FlockTaskManagerV2Upgradeable | governance | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x360406...466a3d`; base `0x8884e9...5acdad` | ⚠️ Unaudited |
-| FlockTokenUpgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x81e741...3ad626` | ⚠️ Unaudited |
-| gmFlockExchangeUpgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x9e0acc...def83f`; base `0xe1fa45...fc6123` | ⚠️ Unaudited |
-| gmFlockUpgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x781dd2...5cad24`; base `0x7fe6d7...0c816c` | ⚠️ Unaudited |
-| LinearVestingRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x34e11c...dfb5b5`; base `0xf36088...752b53` | ⚠️ Unaudited |
-| ModelTokenLaunchUpgradeable | token | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x6f39fe...97f0b1` | ⚠️ Unaudited |
-| ProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb6523d...7e9f06` | ⚠️ Unaudited |
+| FlockAirDrop | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x05379b6dc36d264f535d35c7d9bbd50115e93d66`; base `0x7c3eac01749cb3eecc5726bf00b8f43ffd988daf` | ⚠️ Unaudited |
+| FlockConfig | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | base | n/a | 3 deployments: base `0x64e5450bbddea04199fbbf1ca5c22a10701e4997`; base `0x769ceca23323c4409f1782a282e5e0cd26a2148a`; base `0xf79584e389996c7189eee7fd322e4d65408fb833` | ⚠️ Unaudited |
+| FlockPoolManagerUpgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x1a15d5bf8cdb6b1241903806e844fb72ebd48af6`; base `0x2d2f27589b2ac6d792fc111549c7e4547c20dd65` | ⚠️ Unaudited |
+| FlockPoolManagerV2Upgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x25c2d9619b1548b0c8ddc3e5ceffe64b951f5137`; base `0x5c415570e4a9c49e64ea640180f91161b47a1502` | ⚠️ Unaudited |
+| FlockRewardPool | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x86dbb37cd9cb039e5a55562d7e716d08161343a8`; base `0xde02bb6d2a4702407c103363324bbb36f88682b5` | ⚠️ Unaudited |
+| FlockStakeInfoUpgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x2886fd3861b09d6d7b3d7cf25c8ea2999ad17883`; base `0x8a83efd9436ebf4fa4a8ad2b1751f5feb56a400a` | ⚠️ Unaudited |
+| FlockStakeInfoV2Upgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x1b964b3df82238b404afd7db1c10b9c0c29f1f98`; base `0xa799ece98ca2c52eeb5837f0faffb12883f5bf63` | ⚠️ Unaudited |
+| FlockTaskManagerUpgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: base `0x05e42e03996379cd0b6290cc2767a1bdd78b737a`; base `0xac24d8a23e0306c1ee689f33359db2889e7d8fe4`; base `0xe8e31e34ee55ffc815222fe883b5137be1980d6c` | ⚠️ Unaudited |
+| FlockTaskManagerUpgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x5813dee58523ea082ee80162527efeed7799aaa0`; base `0xc4d8cf5f0f994330676bef1fb4612b04e531846a` | ⚠️ Unaudited |
+| FlockTaskManagerV2Upgradeable | governance | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x29d4ecea4b1fcac239bf4b4dc3b42829c2e69fed` | ⚠️ Unaudited |
+| FlockTaskManagerV2Upgradeable | governance | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x36040670d539d13420f9d1caf605fa2901466a3d`; base `0x8884e9571debc8c5069b29fbdd4ee0702e5acdad` | ⚠️ Unaudited |
+| FlockTokenUpgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x81e741f9a342604af36b00365c1add26163ad626` | ⚠️ Unaudited |
+| gmFlockExchangeUpgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x9e0acc78662b9193f9eff711af460406e9def83f`; base `0xe1fa4592b7a35ff6cef65fdec5e13a1f48fc6123` | ⚠️ Unaudited |
+| gmFlockUpgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x781dd21d8430e4e267af5713e01332742f5cad24`; base `0x7fe6d76a5e9dae35590f720679ccd10cfb0c816c` | ⚠️ Unaudited |
+| LinearVestingRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x34e11cf7a9d3de34b7ecf6602c23edfd98dfb5b5`; base `0xf360886bb80eb1efc413c4e89566e6c59d752b53` | ⚠️ Unaudited |
+| ModelTokenLaunchUpgradeable | token | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x6f39fe20f19103a215bcc444a64f78ae7797f0b1` | ⚠️ Unaudited |
+| ProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb6523d5d33d29a7e6573330310e3f0e6157e9f06` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -131,7 +131,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x7bf579...5e195e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x7bf57986e7df6c19bb1222a8d09d693cba5e195e` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -162,7 +162,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | FLock Phase1 - SlowMist Audit Report.pdf | FlockPoolManagerUpgradeable | unmatched — not counted | — | listed in audit scope | no |
 | FLock Phase1 - SlowMist Audit Report.pdf | FlockStakeInfoUpgradeable | unmatched — not counted | — | listed in audit scope | no |
 | FLock Phase1 - SlowMist Audit Report.pdf | FlockTaskManagerUpgradeable | unmatched — not counted | — | listed in audit scope | no |
-| FLock Phase1 - SlowMist Audit Report.pdf | FlockTokenUpgradeable | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x5ab3d4...a7b691` — deployed 2024-12-21 02:29:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| FLock Phase1 - SlowMist Audit Report.pdf | FlockTokenUpgradeable | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x5ab3d4c385b400f3abb49e80de2faf6a88a7b691` — deployed 2024-12-21 02:29:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | FLock Phase1 - SlowMist Audit Report.pdf | FlockConfig | unmatched — not counted | — | listed in audit scope as config directory | no |
 | Flock v2 - SlowMist Audit Report.pdf | FlockMiniPoolV2 | unmatched — not counted | — | listed in scope | no |
 | Flock v2 - SlowMist Audit Report.pdf | FlockPoolManagerV2Upgradeable | unmatched — not counted | — | listed in scope | no |

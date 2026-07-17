@@ -90,11 +90,11 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Registry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149296 | `0x11808d...e30836` | ⚠️ Unaudited |
-| RollupChain | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149299 | `0xcf6659...0a1f2e` | ⚠️ Unaudited |
-| StrategyCompoundEthLendingPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149298 | `0x61fc4d...8aea8d` | ⚠️ Unaudited |
-| TransitionDisputer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149297 | `0x5d3c0f...7e007f` | ⚠️ Unaudited |
-| TransitionEvaluator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149295 | `0x0762d3...381cb5` | ⚠️ Unaudited |
+| Registry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149296 | `0x11808dd312fcdf6455b2de6ed197981fa9e30836` | ⚠️ Unaudited |
+| RollupChain | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149299 | `0xcf665943b6bc32be29a3e2eaab1afed2880a1f2e` | ⚠️ Unaudited |
+| StrategyCompoundEthLendingPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149298 | `0x61fc4d40d313eb01483f537a6db2b29fb38aea8d` | ⚠️ Unaudited |
+| TransitionDisputer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149297 | `0x5d3c0f4ca5ee99f8e8f59ff9a5fab04f6a7e007f` | ⚠️ Unaudited |
+| TransitionEvaluator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149295 | `0x0762d31185b1675a441008aba3eea22e1b381cb5` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

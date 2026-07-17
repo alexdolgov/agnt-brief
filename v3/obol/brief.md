@@ -52,10 +52,10 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x119acd...f7f522`, chain 1)
-- UnnamedContract (`0x2fb590...bf0fe3`, chain 1)
-- UnnamedContract (`0xa9d941...d9e2a6`, chain 1)
-- UnnamedContract (`0xe11eab...bdcb22`, chain 1)
+- UnnamedContract (`0x119acd7844cbdd5fc09b1c6a4408f490c8f7f522`, chain 1)
+- UnnamedContract (`0x2fb59065f049e0d0e3180c6312fa0feb5bbf0fe3`, chain 1)
+- UnnamedContract (`0xa9d94139a310150ca1163b5e23f3e1dbb7d9e2a6`, chain 1)
+- UnnamedContract (`0xe11eabf19a49c389d3e8735c35f8f34f28bdcb22`, chain 1)
 
 ## Contract Surface Quality
 
@@ -101,12 +101,12 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| DepositContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x000000...7705fa` | ⚠️ Unaudited |
-| ObolOverwhelmingSupportAutoDelegate | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xca2885...579158` | ⚠️ Unaudited |
-| ObolStaker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x306410...004259` | ⚠️ Unaudited |
-| ObolToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0b0100...29d5f7` | ⚠️ Unaudited |
-| RebasingStakedObol | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1932e8...0e8bea` | ⚠️ Unaudited |
-| TransferRewardNotifier | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x384dd8...2d8802` | ⚠️ Unaudited |
+| DepositContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x00000000219ab540356cbb839cbe05303d7705fa` | ⚠️ Unaudited |
+| ObolOverwhelmingSupportAutoDelegate | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xca28852b6fc15ebd95b17c875d5eb14b08579158` | ⚠️ Unaudited |
+| ObolStaker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x30641013934ec7625c9e73a4d63aab4201004259` | ⚠️ Unaudited |
+| ObolToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0b010000b7624eb9b3dfbc279673c76e9d29d5f7` | ⚠️ Unaudited |
+| RebasingStakedObol | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1932e815254c53b3ecd81cecf252a5ac7f0e8bea` | ⚠️ Unaudited |
+| TransferRewardNotifier | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x384dd81047f88ee35de75da1149943b8e62d8802` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -126,14 +126,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389900 | `0x119acd...f7f522` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | ethereum | unit-389901 | `0x2c26b5...7de584` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389902 | `0x2fb590...bf0fe3` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389903 | `0xa9d941...d9e2a6` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389904 | `0xe11eab...bdcb22` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-389905 | `0x99585e...eef0d6` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-389906 | `0xca78f8...12e64a` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-389907 | `0xf32f8b...f2a3d3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389900 | `0x119acd7844cbdd5fc09b1c6a4408f490c8f7f522` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | ethereum | unit-389901 | `0x2c26b5a373294caccbd3de817d9b7c6aea7de584` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389902 | `0x2fb59065f049e0d0e3180c6312fa0feb5bbf0fe3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389903 | `0xa9d94139a310150ca1163b5e23f3e1dbb7d9e2a6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389904 | `0xe11eabf19a49c389d3e8735c35f8f34f28bdcb22` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-389905 | `0x99585e71ab1118682d51efefca0a170c70eef0d6` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-389906 | `0xca78f8fda7ec13ae246e4d4cd38b9ce25a12e64a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-389907 | `0xf32f8b563d8369d40c45d5d667c2b26937f2a3d3` | ❓ Unverified |
 
 ## Audit Inventory
 

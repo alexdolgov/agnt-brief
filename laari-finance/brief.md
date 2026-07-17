@@ -59,7 +59,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Laari | unknown | base | n/a | [`0x236f9e...5ec760`](./contracts/base-8453/0x236f9ebe3a40f3b24cea63a880704c712d5ec760/) | ✅ Audited |
+| Laari | unknown | base | n/a | [`0x236f9ebe3a40f3b24cea63a880704c712d5ec760`](./contracts/base-8453/0x236f9ebe3a40f3b24cea63a880704c712d5ec760/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 

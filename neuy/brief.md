@@ -59,11 +59,11 @@ The protocol comprises 2 functional families. Its contracts share 5 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ChildERC20 | unknown | polygon | n/a | [`0x30b622...88bee7`](./contracts/polygon-137/0x30b622609ffab1641b498e9bf1ff102ab288bee7/) | ⚠️ Unaudited |
-| ChildERC721 | unknown | polygon | n/a | [`0x004bae...4d5b57`](./contracts/polygon-137/0x004bae2ed0210e937327aaf199135393f64d5b57/) | ⚠️ Unaudited |
-| CryptoCabz | unknown | polygon | n/a | [`0x76bf9a...ed5c30`](./contracts/polygon-137/0x76bf9ac96fc75849c6872cf89f367e56feed5c30/) | ⚠️ Unaudited |
-| UChildERC20 | unknown | polygon | n/a | [`0x00032e...b5f25b`](./contracts/polygon-137/0x00032e33ac57c73f9d4e3e85a97488214cb5f25b/) | ⚠️ Unaudited |
-| UChildERC20Proxy | unknown | polygon | n/a | [`0x009aed...643974`](./contracts/polygon-137/0x009aedc40323b16a0cbc71920d05c15192643974/) | ⚠️ Unaudited |
+| ChildERC20 | unknown | polygon | n/a | [`0x30b622609ffab1641b498e9bf1ff102ab288bee7`](./contracts/polygon-137/0x30b622609ffab1641b498e9bf1ff102ab288bee7/) | ⚠️ Unaudited |
+| ChildERC721 | unknown | polygon | n/a | [`0x004bae2ed0210e937327aaf199135393f64d5b57`](./contracts/polygon-137/0x004bae2ed0210e937327aaf199135393f64d5b57/) | ⚠️ Unaudited |
+| CryptoCabz | unknown | polygon | n/a | [`0x76bf9ac96fc75849c6872cf89f367e56feed5c30`](./contracts/polygon-137/0x76bf9ac96fc75849c6872cf89f367e56feed5c30/) | ⚠️ Unaudited |
+| UChildERC20 | unknown | polygon | n/a | [`0x00032e33ac57c73f9d4e3e85a97488214cb5f25b`](./contracts/polygon-137/0x00032e33ac57c73f9d4e3e85a97488214cb5f25b/) | ⚠️ Unaudited |
+| UChildERC20Proxy | unknown | polygon | n/a | [`0x009aedc40323b16a0cbc71920d05c15192643974`](./contracts/polygon-137/0x009aedc40323b16a0cbc71920d05c15192643974/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -94,11 +94,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| polygon | [`0x30b622...88bee7`](./contracts/polygon-137/0x30b622609ffab1641b498e9bf1ff102ab288bee7/) | ChildERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x004bae...4d5b57`](./contracts/polygon-137/0x004bae2ed0210e937327aaf199135393f64d5b57/) | ChildERC721 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x76bf9a...ed5c30`](./contracts/polygon-137/0x76bf9ac96fc75849c6872cf89f367e56feed5c30/) | CryptoCabz | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x00032e...b5f25b`](./contracts/polygon-137/0x00032e33ac57c73f9d4e3e85a97488214cb5f25b/) | UChildERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x009aed...643974`](./contracts/polygon-137/0x009aedc40323b16a0cbc71920d05c15192643974/) | UChildERC20Proxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x30b622609ffab1641b498e9bf1ff102ab288bee7`](./contracts/polygon-137/0x30b622609ffab1641b498e9bf1ff102ab288bee7/) | ChildERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x004bae2ed0210e937327aaf199135393f64d5b57`](./contracts/polygon-137/0x004bae2ed0210e937327aaf199135393f64d5b57/) | ChildERC721 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x76bf9ac96fc75849c6872cf89f367e56feed5c30`](./contracts/polygon-137/0x76bf9ac96fc75849c6872cf89f367e56feed5c30/) | CryptoCabz | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x00032e33ac57c73f9d4e3e85a97488214cb5f25b`](./contracts/polygon-137/0x00032e33ac57c73f9d4e3e85a97488214cb5f25b/) | UChildERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x009aedc40323b16a0cbc71920d05c15192643974`](./contracts/polygon-137/0x009aedc40323b16a0cbc71920d05c15192643974/) | UChildERC20Proxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

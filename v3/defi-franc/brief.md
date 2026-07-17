@@ -90,29 +90,29 @@ The pinned logic-topography run contains 19 contract row(s) across ethereum. Str
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ActivePool | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234922 | `0x77e034...e36a33` | ⚠️ Unaudited |
-| AdminContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234920 | `0x2748c5...42f254` | ⚠️ Unaudited |
-| AirdropMON | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xff42ec...a3fc8f` | ⚠️ Unaudited |
-| BorrowerOperations | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234925 | `0x9eb2ce...1dfd74` | ⚠️ Unaudited |
-| CollSurplusPool | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234926 | `0xa622c3...6f594b` | ⚠️ Unaudited |
-| CommunityIssuance | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234915 | `0x0fa46e...1d3d86` | ⚠️ Unaudited |
-| DCHFToken | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234913 | `0x045da4...727a36` | ⚠️ Unaudited |
-| DefaultPool | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234929 | `0xc1f785...ac7ab5` | ⚠️ Unaudited |
-| DfrancParameters | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234921 | `0x6f9990...cacc42` | ⚠️ Unaudited |
-| GasPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2a3abc...0a650f` | ⚠️ Unaudited |
-| HintHelpers | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234916 | `0x172443...3406c4` | ⚠️ Unaudited |
-| LiqBootstrap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf7db42...c55a06` | ⚠️ Unaudited |
-| LockedMON | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x020b7d...43366f` | ⚠️ Unaudited |
-| MONStaking | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234923 | `0x8bc370...e0c56f` | ⚠️ Unaudited |
-| MONToken | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234918 | `0x1ea48b...61fc17` | ⚠️ Unaudited |
-| MultiTroveGetter | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234930 | `0xd4ecc3...8facca` | ⚠️ Unaudited |
-| PriceFeed | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234914 | `0x09ab3c...5ee9da` | ⚠️ Unaudited |
-| SortedTroves | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234917 | `0x1dd694...f72286` | ⚠️ Unaudited |
-| StabilityPool | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234912 | `0x04556d...454c4b` | ⚠️ Unaudited |
-| StabilityPoolManager | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234919 | `0x202fbf...74ad21` | ⚠️ Unaudited |
-| TroveManager | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234924 | `0x998381...334f7f` | ⚠️ Unaudited |
-| TroveManagerHelpers | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234927 | `0xaaacb8...61e518` | ⚠️ Unaudited |
-| Vester | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234928 | `0xc0747a...111611` | ⚠️ Unaudited |
+| ActivePool | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234922 | `0x77e034c8a1392d99a2c776a6c1593866fee36a33` | ⚠️ Unaudited |
+| AdminContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234920 | `0x2748c55219dca1d9d3c3a57505e99bb04e42f254` | ⚠️ Unaudited |
+| AirdropMON | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xff42ec1c83e0f4939c45ab4f6a027b44e5a3fc8f` | ⚠️ Unaudited |
+| BorrowerOperations | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234925 | `0x9eb2ce1be2dd6947e4f5aabe33106f48861dfd74` | ⚠️ Unaudited |
+| CollSurplusPool | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234926 | `0xa622c3bdbfbe749b1984bc127bfb500e196f594b` | ⚠️ Unaudited |
+| CommunityIssuance | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234915 | `0x0fa46e8cbceff8468db2ec2fd77731d8a11d3d86` | ⚠️ Unaudited |
+| DCHFToken | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234913 | `0x045da4bfe02b320f4403674b3b7d121737727a36` | ⚠️ Unaudited |
+| DefaultPool | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234929 | `0xc1f785b74a01dd9fac0de6070bc583fe9eac7ab5` | ⚠️ Unaudited |
+| DfrancParameters | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234921 | `0x6f9990b242873d7396511f2630412a3fcecacc42` | ⚠️ Unaudited |
+| GasPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2a3abc893894167530f810097747ecd1710a650f` | ⚠️ Unaudited |
+| HintHelpers | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234916 | `0x17244338034bea1fa940779bc769ff01833406c4` | ⚠️ Unaudited |
+| LiqBootstrap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf7db4205032153a81bcb6ed0561c00e65ac55a06` | ⚠️ Unaudited |
+| LockedMON | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x020b7d785d343c92f3be7d802545d031e943366f` | ⚠️ Unaudited |
+| MONStaking | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234923 | `0x8bc3702c35d33e5df7cb0f06cb72a0c34ae0c56f` | ⚠️ Unaudited |
+| MONToken | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234918 | `0x1ea48b9965bb5086f3b468e50ed93888a661fc17` | ⚠️ Unaudited |
+| MultiTroveGetter | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234930 | `0xd4ecc372e99dabdbc0fabe02d2515a24388facca` | ⚠️ Unaudited |
+| PriceFeed | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234914 | `0x09ab3c0ce6cb41c13343879a667a6bdad65ee9da` | ⚠️ Unaudited |
+| SortedTroves | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234917 | `0x1dd69453a685c735f2ab43e2169b57e9edf72286` | ⚠️ Unaudited |
+| StabilityPool | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234912 | `0x04556d845f12ff7d8ff04a37f40387dd1b454c4b` | ⚠️ Unaudited |
+| StabilityPoolManager | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234919 | `0x202fbff035188f9f0525e144c8b3f8249a74ad21` | ⚠️ Unaudited |
+| TroveManager | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234924 | `0x99838142189ade67c1951f9c57c3333281334f7f` | ⚠️ Unaudited |
+| TroveManagerHelpers | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234927 | `0xaaacb8c39bd5acbb0a236112df8d15411161e518` | ⚠️ Unaudited |
+| Vester | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-234928 | `0xc0747a27c6fa20effba2937419647e976f111611` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -132,12 +132,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x0f4588...a0c857` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x2e92c4...520a39` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x6a9f9d...e2c548` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x83737e...ee8a69` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x8eba1a...b3c083` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xc9a113...4c7bfa` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x0f45883cdbe2b4d9cf79c823509112028da0c857` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x2e92c456278d77558723ca263c713b5d30520a39` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x6a9f9d6f5d672a9784c5e560a9648de6cbe2c548` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x83737eae72ba7597b36494d723fbf58cafee8a69` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x8eba1ad289f5e6c50d2f924e17cc8dd607b3c083` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xc9a113c35f961af3526e6f016f6df9da0a4c7bfa` | ❓ Unverified |
 
 ## Audit Inventory
 

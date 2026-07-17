@@ -52,14 +52,14 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x07cdb4...1400e4`, chain 1)
-- UnnamedContract (`0x8fb8b6...9ddd85`, chain 1)
-- UnnamedContract (`0x9424b2...ef581b`, chain 1)
-- UnnamedContract (`0x9733f4...ff2a48`, chain 1)
-- UnnamedContract (`0xc120c7...7b4685`, chain 1)
-- UnnamedContract (`0xf8bc08...fc302e`, chain 1)
-- UnnamedContract (`0xf8d838...f14359`, chain 1)
-- UnnamedContract (`0xe9428b...59a009`, chain 56)
+- UnnamedContract (`0x07cdb44fa1e7eceb638c12a3451a3dc9ce1400e4`, chain 1)
+- UnnamedContract (`0x8fb8b62ad979d833f450e3ede2cebabdeb9ddd85`, chain 1)
+- UnnamedContract (`0x9424b287c8c0def28e96d595b1f76aef11ef581b`, chain 1)
+- UnnamedContract (`0x9733f49d577da2b6705ca173382c0e3cdfff2a48`, chain 1)
+- UnnamedContract (`0xc120c7db0804ae3abeb1d5f9c9c70402347b4685`, chain 1)
+- UnnamedContract (`0xf8bc0856472486c20dceeab81d5e5980d9fc302e`, chain 1)
+- UnnamedContract (`0xf8d8385b904f926c68e7e02ec2842e7beaf14359`, chain 1)
+- UnnamedContract (`0xe9428b8acaa6b9d7c3314d093975c291ec59a009`, chain 56)
 
 ## Contract Surface Quality
 
@@ -105,10 +105,10 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| PEAKDEFI_V1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5b103d...403a45` | ⚠️ Unaudited |
-| PEAKDEFI_V2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x630d98...eaad78` | ⚠️ Unaudited |
-| Timelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5c254f...78729d` | ⚠️ Unaudited |
-| Vesting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa44557...a66a2b` | ⚠️ Unaudited |
+| PEAKDEFI_V1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5b103d2125d83d2521815f62304b67b2c2403a45` | ⚠️ Unaudited |
+| PEAKDEFI_V2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x630d98424efe0ea27fb1b3ab7741907dffeaad78` | ⚠️ Unaudited |
+| Timelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5c254fd411db8d8a696b94a46508df7ce578729d` | ⚠️ Unaudited |
+| Vesting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa445570a6a156c4a5e564b0d4075c3cc02a66a2b` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -128,14 +128,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390690 | `0x07cdb4...1400e4` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390691 | `0x8fb8b6...9ddd85` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390692 | `0x9424b2...ef581b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390693 | `0x9733f4...ff2a48` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390694 | `0xc120c7...7b4685` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390695 | `0xf8bc08...fc302e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390696 | `0xf8d838...f14359` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-390697 | `0xe9428b...59a009` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390690 | `0x07cdb44fa1e7eceb638c12a3451a3dc9ce1400e4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390691 | `0x8fb8b62ad979d833f450e3ede2cebabdeb9ddd85` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390692 | `0x9424b287c8c0def28e96d595b1f76aef11ef581b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390693 | `0x9733f49d577da2b6705ca173382c0e3cdfff2a48` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390694 | `0xc120c7db0804ae3abeb1d5f9c9c70402347b4685` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390695 | `0xf8bc0856472486c20dceeab81d5e5980d9fc302e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390696 | `0xf8d8385b904f926c68e7e02ec2842e7beaf14359` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-390697 | `0xe9428b8acaa6b9d7c3314d093975c291ec59a009` | ❓ Unverified |
 
 ## Audit Inventory
 

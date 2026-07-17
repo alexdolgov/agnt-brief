@@ -58,15 +58,15 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| SmartCoin | unknown | avalanche | n/a | [`0xcc2f1d...ff116c`](./contracts/avalanche-43114/0xcc2f1d827b18321254223df4e84de399d9ff116c/) | ✅ Audited |
+| SmartCoin | unknown | avalanche | n/a | [`0xcc2f1d827b18321254223df4e84de399d9ff116c`](./contracts/avalanche-43114/0xcc2f1d827b18321254223df4e84de399d9ff116c/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| JoePair | unknown | avalanche | n/a | [`0xf07084...073254`](./contracts/avalanche-43114/0xf070843ba9ed0ab85b0d15f9e8d67a5a8e073254/) | ⚠️ Unaudited |
-| MasterChefSmartCoinV2 | unknown | avalanche | n/a | [`0xa0488f...d23822`](./contracts/avalanche-43114/0xa0488f956d7fe05b1798e9faf0ce5f1133d23822/) | ⚠️ Unaudited |
-| MasterChefSmartCoinV3 | unknown | avalanche | n/a | [`0xdb69c8...8bf443`](./contracts/avalanche-43114/0xdb69c8841363d76efc0b7008afac15756c8bf443/) | ⚠️ Unaudited |
+| JoePair | unknown | avalanche | n/a | [`0xf070843ba9ed0ab85b0d15f9e8d67a5a8e073254`](./contracts/avalanche-43114/0xf070843ba9ed0ab85b0d15f9e8d67a5a8e073254/) | ⚠️ Unaudited |
+| MasterChefSmartCoinV2 | unknown | avalanche | n/a | [`0xa0488f956d7fe05b1798e9faf0ce5f1133d23822`](./contracts/avalanche-43114/0xa0488f956d7fe05b1798e9faf0ce5f1133d23822/) | ⚠️ Unaudited |
+| MasterChefSmartCoinV3 | unknown | avalanche | n/a | [`0xdb69c8841363d76efc0b7008afac15756c8bf443`](./contracts/avalanche-43114/0xdb69c8841363d76efc0b7008afac15756c8bf443/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -86,7 +86,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | avalanche | n/a | `0x7877a1...e4b23a` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x7877a16a3d7d2de9e9c1046c896167d067e4b23a` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -100,9 +100,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| avalanche | [`0xf07084...073254`](./contracts/avalanche-43114/0xf070843ba9ed0ab85b0d15f9e8d67a5a8e073254/) | JoePair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0xa0488f...d23822`](./contracts/avalanche-43114/0xa0488f956d7fe05b1798e9faf0ce5f1133d23822/) | MasterChefSmartCoinV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0xdb69c8...8bf443`](./contracts/avalanche-43114/0xdb69c8841363d76efc0b7008afac15756c8bf443/) | MasterChefSmartCoinV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0xf070843ba9ed0ab85b0d15f9e8d67a5a8e073254`](./contracts/avalanche-43114/0xf070843ba9ed0ab85b0d15f9e8d67a5a8e073254/) | JoePair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0xa0488f956d7fe05b1798e9faf0ce5f1133d23822`](./contracts/avalanche-43114/0xa0488f956d7fe05b1798e9faf0ce5f1133d23822/) | MasterChefSmartCoinV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0xdb69c8841363d76efc0b7008afac15756c8bf443`](./contracts/avalanche-43114/0xdb69c8841363d76efc0b7008afac15756c8bf443/) | MasterChefSmartCoinV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

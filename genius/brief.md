@@ -60,7 +60,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Genius | unknown | ethereum | n/a | [`0x444444...46fcc8`](./contracts/ethereum-1/0x444444444444c1a66f394025ac839a535246fcc8/) | ⚠️ Unaudited |
+| Genius | unknown | ethereum | n/a | [`0x444444444444c1a66f394025ac839a535246fcc8`](./contracts/ethereum-1/0x444444444444c1a66f394025ac839a535246fcc8/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -92,7 +92,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x444444...46fcc8`](./contracts/ethereum-1/0x444444444444c1a66f394025ac839a535246fcc8/) | Genius | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x444444444444c1a66f394025ac839a535246fcc8`](./contracts/ethereum-1/0x444444444444c1a66f394025ac839a535246fcc8/) | Genius | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

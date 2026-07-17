@@ -57,8 +57,8 @@ The pinned logic-topography run contains 2 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- BMEX (`0xb113c6...275277`, chain 1)
-- Vesting (`0x65a355...d28232`, chain 1)
+- BMEX (`0xb113c6cf239f60d380359b762e95c13817275277`, chain 1)
+- Vesting (`0x65a35599a063f3ca882b1550a328d8a543d28232`, chain 1)
 
 ## Contract Surface Quality
 
@@ -104,20 +104,20 @@ The pinned logic-topography run contains 2 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BankFrickCompliance | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc07458...de0996` | ⚠️ Unaudited |
-| BMEX | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380625 | `0xb113c6...275277` | ⚠️ Unaudited |
-| ClaimTopicsRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x003288...698bb8` | ⚠️ Unaudited |
-| CountryRestrictions | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7db90c...6706d3` | ⚠️ Unaudited |
-| DefaultCompliance | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x362618...ed4e04` | ⚠️ Unaudited |
-| IdentityRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x027d98...1d3588` | ⚠️ Unaudited |
-| IdentityRegistryStorage | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0e0476...5e23af` | ⚠️ Unaudited |
-| ImplementationAuthority | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9ef484...8d5659` | ⚠️ Unaudited |
-| LimitsDMAndCountryRestrictions | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x23daf7...f77b7f` | ⚠️ Unaudited |
-| POWRAI | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5ebb51...a00d34` | ⚠️ Unaudited |
-| Token | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x287a4c...49b28d` | ⚠️ Unaudited |
-| TrustedIssuersRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1d147f...5959f3` | ⚠️ Unaudited |
-| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf771d9...b7c71d` | ⚠️ Unaudited |
-| Vesting | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380624 | `0x65a355...d28232` | ⚠️ Unaudited |
+| BankFrickCompliance | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc074583b5c9d07b46d791b1da1c3393a62de0996` | ⚠️ Unaudited |
+| BMEX | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380625 | `0xb113c6cf239f60d380359b762e95c13817275277` | ⚠️ Unaudited |
+| ClaimTopicsRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x003288d46471359320c9cc47696a55e6c1698bb8` | ⚠️ Unaudited |
+| CountryRestrictions | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7db90c31ac3cec5c60348d4e6baba4c1a16706d3` | ⚠️ Unaudited |
+| DefaultCompliance | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x362618d8f3df95686acb46d2f2da91d53bed4e04` | ⚠️ Unaudited |
+| IdentityRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x027d98795d95b6d5824f1cc585d9fb0a2a1d3588` | ⚠️ Unaudited |
+| IdentityRegistryStorage | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0e0476e20c92819cc8c9d9525982ffe3fe5e23af` | ⚠️ Unaudited |
+| ImplementationAuthority | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9ef484a9becb9b2fcd4a540ccd5ba805c58d5659` | ⚠️ Unaudited |
+| LimitsDMAndCountryRestrictions | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x23daf74c10b414dc34bd860d88f87f2b1cf77b7f` | ⚠️ Unaudited |
+| POWRAI | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5ebb51f6a5676fbba87fd467fd0f67a0c0a00d34` | ⚠️ Unaudited |
+| Token | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x287a4ce8e2c4f045dea7bc7c0cd7f1cbc749b28d` | ⚠️ Unaudited |
+| TrustedIssuersRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1d147f13f225835136dc99553c9f04626f5959f3` | ⚠️ Unaudited |
+| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf771d937c8c1772d1070ae83bca5bc7525b7c71d` | ⚠️ Unaudited |
+| Vesting | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380624 | `0x65a35599a063f3ca882b1550a328d8a543d28232` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -154,8 +154,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0xb113c6...275277` | BMEX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x65a355...d28232` | Vesting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xb113c6cf239f60d380359b762e95c13817275277` | BMEX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x65a35599a063f3ca882b1550a328d8a543d28232` | Vesting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

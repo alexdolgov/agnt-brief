@@ -52,22 +52,22 @@ The pinned logic-topography run contains 3 contract row(s) across bsc, ethereum,
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x2103e8...ea8682`, chain 1)
-- UnnamedContract (`0x530824...45b44a`, chain 1)
-- UnnamedContract (`0x67dcc9...58c7ee`, chain 1)
-- UnnamedContract (`0xb2624f...bbf72e`, chain 1)
-- UnnamedContract (`0xca2418...9ae02b`, chain 1)
-- UnnamedContract (`0x23ae4f...656028`, chain 56)
-- UnnamedContract (`0xe310db...70298b`, chain 56)
-- UnnamedContract (`0xfc9bd2...ea2ea2`, chain 56)
-- UnnamedContract (`0x59c734...5417cc`, chain 137)
-- UnnamedContract (`0xa7e229...801081`, chain 137)
-- UnnamedContract (`0x257721...47d15a`, chain 177)
-- UnnamedContract (`0x318864...7047f5`, chain 177)
-- UnnamedContract (`0x5a3917...fbea67`, chain 177)
-- FallbackReserveFeed (`0x20377b...5e28ab`, chain 1)
-- MTokenMain (`0x123ffe...58d9e1`, chain 1)
-- MTokenMessenger (`0x0be916...8f68c5`, chain 1)
+- UnnamedContract (`0x2103e845c5e135493bb6c2a4f0b8651956ea8682`, chain 1)
+- UnnamedContract (`0x530824da86689c9c17cdc2871ff29b058345b44a`, chain 1)
+- UnnamedContract (`0x67dcc9c33363cc0e650738528fe4fef1d658c7ee`, chain 1)
+- UnnamedContract (`0xb2624f7e72788f1ebf1c7877c646732957bbf72e`, chain 1)
+- UnnamedContract (`0xca241823d4bfe8b29610709db617407fbc9ae02b`, chain 1)
+- UnnamedContract (`0x23ae4fd8e7844cdbc97775496ebd0e8248656028`, chain 56)
+- UnnamedContract (`0xe310db5ff835127f4acd858a4e3ef96c1770298b`, chain 56)
+- UnnamedContract (`0xfc9bd26e3dbd517e60245616ea02bcff21ea2ea2`, chain 56)
+- UnnamedContract (`0x59c734c8753b596607cb8a72f1f51965c75417cc`, chain 137)
+- UnnamedContract (`0xa7e22972a19dd924afeedf3db28033b146801081`, chain 137)
+- UnnamedContract (`0x2577217c86ae2e8a5f70abb663b9231e5d47d15a`, chain 177)
+- UnnamedContract (`0x31886417d9c9ad5e0712cedd7c61c56b747047f5`, chain 177)
+- UnnamedContract (`0x5a3917c6607275cfaa87d2f26fac26bc9afbea67`, chain 177)
+- FallbackReserveFeed (`0x20377b5e38e0e992bbdcf3502ec72ded6a5e28ab`, chain 1)
+- MTokenMain (`0x123ffe0a3c62878dcbee2742227dc8990058d9e1`, chain 1)
+- MTokenMessenger (`0x0be91692750982b4ba92dabc3985c548098f68c5`, chain 1)
 
 ## Contract Surface Quality
 
@@ -113,30 +113,30 @@ The pinned logic-topography run contains 3 contract row(s) across bsc, ethereum,
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BullionEnumerableNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x62bee1...cc368c` | ⚠️ Unaudited |
-| BullionNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x52a6dd...d2f9dc` | ⚠️ Unaudited |
-| CCWSTBTMessager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2a918b...0bbf18` | ⚠️ Unaudited |
-| CustomerManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0978aa...e3f004` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0x0630f6...19c755` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0x0654cf...39ec76` | ⚠️ Unaudited |
-| FallbackReserveFeed | unknown | project_anchor | own_supporting | 0 | ethereum | unit-246323 | `0x20377b...5e28ab` | ⚠️ Unaudited |
-| Minter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x344363...1a0e2f` | ⚠️ Unaudited |
-| MTokenMain | unknown | project_anchor | own_supporting | 1 | ethereum | unit-246337 | `0x123ffe...58d9e1` | ⚠️ Unaudited |
-| MTokenMessager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x24ce2a...028c7e` | ⚠️ Unaudited |
-| MTokenMessagerV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x102874...5fb878` | ⚠️ Unaudited |
-| MTokenMessenger | unknown | project_anchor | own_supporting | 1 | ethereum | unit-246338 | `0x0be916...8f68c5` | ⚠️ Unaudited |
-| MTokenMessengerLZ | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xb350d8...a6386f` | ⚠️ Unaudited |
-| MTokenMinter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5fd20e...296cef` | ⚠️ Unaudited |
-| MTokenSide | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x1d0ba3...245010` | ⚠️ Unaudited |
-| OKXSwapAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x08190f...25c8ee` | ⚠️ Unaudited |
-| STBT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x24f5b8...0fc948` | ⚠️ Unaudited |
-| StbtTimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0eb8f1...7b6f47` | ⚠️ Unaudited |
-| STBTv2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3f0868...5a37aa` | ⚠️ Unaudited |
-| TERPOC | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x2022be...6a877d` | ⚠️ Unaudited |
-| UpgradeableSTBT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x32a67b...60528f` | ⚠️ Unaudited |
-| WSTBT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x288a80...bc4c83` | ⚠️ Unaudited |
-| XAUMDCAMinter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3681af...3289e2` | ⚠️ Unaudited |
-| XAUMDCARouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x31b19c...f57775` | ⚠️ Unaudited |
+| BullionEnumerableNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x62bee1bc8cf74fbbbd1f8444a39ca1db4acc368c` | ⚠️ Unaudited |
+| BullionNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x52a6ddc1ccc00b69e6fdc6228b50f0fa6dd2f9dc` | ⚠️ Unaudited |
+| CCWSTBTMessager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2a918b3a032174dd89c3d9e7f27ea0d7710bbf18` | ⚠️ Unaudited |
+| CustomerManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0978aa6ed342ff8327e97415653f5af790e3f004` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0x0630f63329e3c4b675d8ba1b82c330f46319c755` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0x0654cf3aa9dd54d5ffe3a6c21bb9205a3a39ec76` | ⚠️ Unaudited |
+| FallbackReserveFeed | unknown | project_anchor | own_supporting | 0 | ethereum | unit-246323 | `0x20377b5e38e0e992bbdcf3502ec72ded6a5e28ab` | ⚠️ Unaudited |
+| Minter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x344363f85a25837b154dd1c03117fef0341a0e2f` | ⚠️ Unaudited |
+| MTokenMain | unknown | project_anchor | own_supporting | 1 | ethereum | unit-246337 | `0x123ffe0a3c62878dcbee2742227dc8990058d9e1` | ⚠️ Unaudited |
+| MTokenMessager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x24ce2a00eb05b33b206b4057598f97ddc3028c7e` | ⚠️ Unaudited |
+| MTokenMessagerV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x102874ca109a5a7e94a0385f1380cebc905fb878` | ⚠️ Unaudited |
+| MTokenMessenger | unknown | project_anchor | own_supporting | 1 | ethereum | unit-246338 | `0x0be91692750982b4ba92dabc3985c548098f68c5` | ⚠️ Unaudited |
+| MTokenMessengerLZ | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xb350d8decc3adf68c3856d46ab42976ca7a6386f` | ⚠️ Unaudited |
+| MTokenMinter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5fd20e49239aaedb8490c07a622c129a39296cef` | ⚠️ Unaudited |
+| MTokenSide | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x1d0ba3daa950415b1f36c6fa6b98571325245010` | ⚠️ Unaudited |
+| OKXSwapAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x08190f1cf3f2f067d5749dce1b27decd6e25c8ee` | ⚠️ Unaudited |
+| STBT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x24f5b8e0e4a0a9ccdcc4fa05a9885a28140fc948` | ⚠️ Unaudited |
+| StbtTimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0eb8f11ec17c160b0d51586b0e420faff07b6f47` | ⚠️ Unaudited |
+| STBTv2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3f0868fd7b0844e374277ebc9a3e4979465a37aa` | ⚠️ Unaudited |
+| TERPOC | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x2022be364c2c0b46bb693d154bfb8eb5476a877d` | ⚠️ Unaudited |
+| UpgradeableSTBT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x32a67bf4815b4f28e879fd09671ef74ebd60528f` | ⚠️ Unaudited |
+| WSTBT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x288a8005c53632d920045b7c7c2e54a3f1bc4c83` | ⚠️ Unaudited |
+| XAUMDCAMinter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3681afa163e6263447abf565936a7225583289e2` | ⚠️ Unaudited |
+| XAUMDCARouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x31b19c0cedd24f5a0dd6471649b5698a85f57775` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -156,19 +156,19 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-246324 | `0x2103e8...ea8682` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-246325 | `0x530824...45b44a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-246326 | `0x67dcc9...58c7ee` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-246327 | `0xb2624f...bbf72e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-246328 | `0xca2418...9ae02b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-246334 | `0x23ae4f...656028` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-246335 | `0xe310db...70298b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-246336 | `0xfc9bd2...ea2ea2` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-246329 | `0x59c734...5417cc` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-246330 | `0xa7e229...801081` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hashkey | unit-246331 | `0x257721...47d15a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hashkey | unit-246332 | `0x318864...7047f5` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hashkey | unit-246333 | `0x5a3917...fbea67` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-246324 | `0x2103e845c5e135493bb6c2a4f0b8651956ea8682` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-246325 | `0x530824da86689c9c17cdc2871ff29b058345b44a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-246326 | `0x67dcc9c33363cc0e650738528fe4fef1d658c7ee` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-246327 | `0xb2624f7e72788f1ebf1c7877c646732957bbf72e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-246328 | `0xca241823d4bfe8b29610709db617407fbc9ae02b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-246334 | `0x23ae4fd8e7844cdbc97775496ebd0e8248656028` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-246335 | `0xe310db5ff835127f4acd858a4e3ef96c1770298b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-246336 | `0xfc9bd26e3dbd517e60245616ea02bcff21ea2ea2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-246329 | `0x59c734c8753b596607cb8a72f1f51965c75417cc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-246330 | `0xa7e22972a19dd924afeedf3db28033b146801081` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hashkey | unit-246331 | `0x2577217c86ae2e8a5f70abb663b9231e5d47d15a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hashkey | unit-246332 | `0x31886417d9c9ad5e0712cedd7c61c56b747047f5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hashkey | unit-246333 | `0x5a3917c6607275cfaa87d2f26fac26bc9afbea67` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -229,9 +229,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x20377b...5e28ab` | FallbackReserveFeed | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x123ffe...58d9e1` | MTokenMain | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x0be916...8f68c5` | MTokenMessenger | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x20377b5e38e0e992bbdcf3502ec72ded6a5e28ab` | FallbackReserveFeed | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x123ffe0a3c62878dcbee2742227dc8990058d9e1` | MTokenMain | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x0be91692750982b4ba92dabc3985c548098f68c5` | MTokenMessenger | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

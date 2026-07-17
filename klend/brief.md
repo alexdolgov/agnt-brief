@@ -58,15 +58,15 @@ The protocol comprises 2 functional families. Its contracts share 8 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CEther | unknown | bsc | n/a | [`0x2c334c...7ff481`](./contracts/bsc-56/0x2c334c6cbc0547e759084bd8d469f933b17ff481/) | ✅ Audited |
-| Comp | unknown | bsc | n/a | 3 deployments: bsc [`0x532581...4a8651`](./contracts/bsc-56/0x532581462d91b7b2087a5be54110f10c884a8651/); bsc `0x999532...66acf3`; bsc `0xf95995...c6d0fb` | ✅ Audited |
+| CEther | unknown | bsc | n/a | [`0x2c334c6cbc0547e759084bd8d469f933b17ff481`](./contracts/bsc-56/0x2c334c6cbc0547e759084bd8d469f933b17ff481/) | ✅ Audited |
+| Comp | unknown | bsc | n/a | 3 deployments: bsc [`0x532581462d91b7b2087a5be54110f10c884a8651`](./contracts/bsc-56/0x532581462d91b7b2087a5be54110f10c884a8651/); bsc `0x999532be4918a4faf3552c80e26f00e67a66acf3`; bsc `0xf95995d642c652e9a7d124d546a7bdf297c6d0fb` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Comptroller | unknown | bsc | n/a | [`0x500db8...391096`](./contracts/bsc-56/0x500db844220fa49fe8cbf9ee35159c4094391096/) | ⚠️ Unaudited |
-| Comptroller | unknown | bsc | n/a | 2 deployments: bsc [`0xa6bed5...dd1e5c`](./contracts/bsc-56/0xa6bed5b7320941ea185a315d1292492f7fdd1e5c/); bsc `0xc9b51b...0765e7` | ⚠️ Unaudited |
+| Comptroller | unknown | bsc | n/a | [`0x500db844220fa49fe8cbf9ee35159c4094391096`](./contracts/bsc-56/0x500db844220fa49fe8cbf9ee35159c4094391096/) | ⚠️ Unaudited |
+| Comptroller | unknown | bsc | n/a | 2 deployments: bsc [`0xa6bed5b7320941ea185a315d1292492f7fdd1e5c`](./contracts/bsc-56/0xa6bed5b7320941ea185a315d1292492f7fdd1e5c/); bsc `0xc9b51b99f42b3a59a818f7b2b14740fc6c0765e7` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -86,27 +86,27 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0x05fa23...e57297` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x08627a...51426a` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x12eadb...f72316` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x154159...fc3b2c` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x2141d2...812dee` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x2d811b...5f3844` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x37773f...08e48d` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x3e88fb...ef5ca8` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x4899f3...e03a67` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x6cda81...c9fa7b` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x6ed83e...61ac99` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x795331...b8a211` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x7ea83d...41a2b7` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x8a600d...66f81a` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xaf4370...95e7b9` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xb779bf...ecd158` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xcf4150...55fe79` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xd52e72...3472fc` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xe51afb...6024a9` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xe7a89b...2a55ec` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xf92e95...20ab52` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x05fa238911f5cbb970ff5492679a08145ae57297` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x08627af97f556aa0b39039ed863fee836c51426a` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x12eadbad11667a70a6968931a56aed9ac4f72316` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x154159a25ed1e6eea4f67a4df6689c5027fc3b2c` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x2141d23e18039147d70d9672d4b9398ea3812dee` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x2d811b47e89be0c53f867fdbcda88252ea5f3844` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x37773f54e72478c7bd027932d711e7a9bd08e48d` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x3e88fb26215a0bd854996b6c9be6421105ef5ca8` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x4899f3d3a7c959d6415b26b7aaf9dbb202e03a67` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x6cda812f20db8086f2a212808f1a53a62fc9fa7b` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x6ed83ef2c6b4051465389e09a8ff953dc161ac99` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x795331aeecf3dc7627bb2bc424f95976b0b8a211` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x7ea83d08796c37b6d1cbc39bb0cf526c7d41a2b7` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x8a600ddf3bf1e79c52a42177c7f336e5c766f81a` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xaf4370120e5e4372cd43fdd5dfd2a31d4195e7b9` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xb779bfd7a8aacb017fd0a6e5117cf473dcecd158` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xcf415039c82033151b48fee4d2dfcd0ab555fe79` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xd52e72cd24edf839c745caabd61bf24e033472fc` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xe51afbd5a23b6c255a0961876597b38b646024a9` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xe7a89bb6d98e1c53aca0c86df1d92140082a55ec` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xf92e951df45064ecc4d19e5a95a845d66f20ab52` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -120,8 +120,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x500db8...391096`](./contracts/bsc-56/0x500db844220fa49fe8cbf9ee35159c4094391096/) | Comptroller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xa6bed5...dd1e5c`](./contracts/bsc-56/0xa6bed5b7320941ea185a315d1292492f7fdd1e5c/) | Comptroller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x500db844220fa49fe8cbf9ee35159c4094391096`](./contracts/bsc-56/0x500db844220fa49fe8cbf9ee35159c4094391096/) | Comptroller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xa6bed5b7320941ea185a315d1292492f7fdd1e5c`](./contracts/bsc-56/0xa6bed5b7320941ea185a315d1292492f7fdd1e5c/) | Comptroller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

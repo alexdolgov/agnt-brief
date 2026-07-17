@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x3980c9...e9c04b`, chain 1)
+- UnnamedContract (`0x3980c9ed79d2c191a89e02fa3529c60ed6e9c04b`, chain 1)
 
 ## Contract Surface Quality
 
@@ -103,8 +103,8 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| MToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9e32b1...d6ed8e` | ⚠️ Unaudited |
-| UnnamedContract | proxy | project_anchor | own_supporting | 0 | ethereum | unit-389001 | `0x3980c9...e9c04b` | ⚠️ Unaudited |
+| MToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9e32b13ce7f2e80a01932b42553652e053d6ed8e` | ⚠️ Unaudited |
+| UnnamedContract | proxy | project_anchor | own_supporting | 0 | ethereum | unit-389001 | `0x3980c9ed79d2c191a89e02fa3529c60ed6e9c04b` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -124,7 +124,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-389000 | `0x101500...2c3113` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-389000 | `0x101500214981e7a5ad2334d8404eaf365c2c3113` | ❓ Unverified |
 
 ## Audit Inventory
 

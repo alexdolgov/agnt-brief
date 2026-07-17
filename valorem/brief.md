@@ -62,7 +62,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ValoremOptionsClearinghouse | unknown | arbitrum | n/a | [`0x402a40...4190c9`](./contracts/arbitrum-42161/0x402a401b1944ebb5a3030f36aa70d6b5794190c9/) | ⚠️ Unaudited |
+| ValoremOptionsClearinghouse | unknown | arbitrum | n/a | [`0x402a401b1944ebb5a3030f36aa70d6b5794190c9`](./contracts/arbitrum-42161/0x402a401b1944ebb5a3030f36aa70d6b5794190c9/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,7 +95,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | [`0x402a40...4190c9`](./contracts/arbitrum-42161/0x402a401b1944ebb5a3030f36aa70d6b5794190c9/) | ValoremOptionsClearinghouse | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x402a401b1944ebb5a3030f36aa70d6b5794190c9`](./contracts/arbitrum-42161/0x402a401b1944ebb5a3030f36aa70d6b5794190c9/) | ValoremOptionsClearinghouse | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

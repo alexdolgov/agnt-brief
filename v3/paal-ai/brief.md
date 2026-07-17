@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- PAALAI (`0x14fee6...d10e16`, chain 1)
+- PAALAI (`0x14fee680690900ba0cccfc76ad70fd1b95d10e16`, chain 1)
 
 ## Contract Surface Quality
 
@@ -103,9 +103,9 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| PAALAI | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390503 | `0x14fee6...d10e16` | ⚠️ Unaudited |
-| StakingPool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x163ad6...942d7b`; ethereum `0x843106...80894f`; ethereum `0x85e253...69d624` | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2a6c34...a9259f` | ⚠️ Unaudited |
+| PAALAI | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390503 | `0x14fee680690900ba0cccfc76ad70fd1b95d10e16` | ⚠️ Unaudited |
+| StakingPool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x163ad6ac78ffe40e194310faeada8f6615942d7b`; ethereum `0x8431060c8e72793afada261e9dd0ab950e80894f`; ethereum `0x85e253162c7e97275b703980f6b6fa8c0469d624` | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2a6c340bcbb0a79d3deecd3bc5cbc2605ea9259f` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -125,7 +125,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4a24d5...2544bf` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4a24d53e6664d79896f49767a652eae6f92544bf` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -153,7 +153,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x14fee6...d10e16` | PAALAI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x14fee680690900ba0cccfc76ad70fd1b95d10e16` | PAALAI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

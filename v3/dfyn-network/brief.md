@@ -52,13 +52,13 @@ The pinned logic-topography run contains 2 contract row(s) across arbitrum, fant
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x75455c...23c976`, chain 137)
-- UnnamedContract (`0xe7fb3e...66423b`, chain 137)
-- UnnamedContract (`0x2724b9...b5ef2d`, chain 250)
-- UnnamedContract (`0xd9820a...3d64f5`, chain 250)
-- UnnamedContract (`0xaede1e...85e71c`, chain 42161)
-- DfynPricePrediction (`0x150b4f...cc29e7`, chain 137)
-- UniswapV2Factory (`0xa10207...c57429`, chain 42161)
+- UnnamedContract (`0x75455c3de45dd32cbe9a5ad5e518d3d50823c976`, chain 137)
+- UnnamedContract (`0xe7fb3e833efe5f9c441105eb65ef8b261266423b`, chain 137)
+- UnnamedContract (`0x2724b9497b2cf3325c6be3ea430b3cec34b5ef2d`, chain 250)
+- UnnamedContract (`0xd9820a17053d6314b20642e465a84bf01a3d64f5`, chain 250)
+- UnnamedContract (`0xaede1efe768bd8a1663a7608c63290c60b85e71c`, chain 42161)
+- DfynPricePrediction (`0x150b4fd25c7c0c65301e86b599822f2feecc29e7`, chain 137)
+- UniswapV2Factory (`0xa102072a4c07f06ec3b4900fdc4c7b80b6c57429`, chain 42161)
 
 ## Contract Surface Quality
 
@@ -104,28 +104,28 @@ The pinned logic-topography run contains 2 contract row(s) across arbitrum, fant
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ChildERC1155 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xd841b4...95e039` | ⚠️ Unaudited |
-| ChildERC721 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x0119fd...d06dd5` | ⚠️ Unaudited |
-| ChildMintableERC1155 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xbda641...3fdbb6` | ⚠️ Unaudited |
-| ChildMintableERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x07280d...3952ea` | ⚠️ Unaudited |
-| DfynChest | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x5cf9d1...d45fc0` | ⚠️ Unaudited |
-| DFYNFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xd9820a...3d64f5` | ⚠️ Unaudited |
-| DfynPricePrediction | unknown | project_anchor | own_supporting | 0 | polygon | unit-235289 | `0x150b4f...cc29e7` | ⚠️ Unaudited |
-| DFYNRouter02 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x4c28f4...dce1fa` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | polygon | n/a | `0x01df11...ee4cf7` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | polygon | n/a | `0x26fbd7...9fdc3f` | ⚠️ Unaudited |
-| HelloWorld | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x04de5e...7d1f98` | ⚠️ Unaudited |
-| RewardVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x6ac606...44c4ac` | ⚠️ Unaudited |
-| StakingRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x03428d...431cca` | ⚠️ Unaudited |
-| StakingRewardsFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x038be8...eae967` | ⚠️ Unaudited |
-| Transfer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xfa38b8...e50698` | ⚠️ Unaudited |
-| UChildERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x002e97...5d8dbb` | ⚠️ Unaudited |
-| UChildERC20Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x000de6...6ec08c` | ⚠️ Unaudited |
-| UniswapV2Factory | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-235294 | `0xa10207...c57429` | ⚠️ Unaudited |
-| UniswapV2Router02 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xa10207...c57429` | ⚠️ Unaudited |
-| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x356fe5...8a3723` | ⚠️ Unaudited |
-| WETH9 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x4c28f4...dce1fa` | ⚠️ Unaudited |
-| XERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x48856f...95f723` | ⚠️ Unaudited |
+| ChildERC1155 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xd841b4a74867a4e92c1627c8f99a717d0795e039` | ⚠️ Unaudited |
+| ChildERC721 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x0119fd9592d7acea88c9b0d04b794a82bed06dd5` | ⚠️ Unaudited |
+| ChildMintableERC1155 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xbda6415502b0ddab9eda1d09f4f16286273fdbb6` | ⚠️ Unaudited |
+| ChildMintableERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x07280d3143311b012ad268a74f2aa791713952ea` | ⚠️ Unaudited |
+| DfynChest | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x5cf9d1f77c9b044e1d2d0dcc0cfda7423fd45fc0` | ⚠️ Unaudited |
+| DFYNFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xd9820a17053d6314b20642e465a84bf01a3d64f5` | ⚠️ Unaudited |
+| DfynPricePrediction | unknown | project_anchor | own_supporting | 0 | polygon | unit-235289 | `0x150b4fd25c7c0c65301e86b599822f2feecc29e7` | ⚠️ Unaudited |
+| DFYNRouter02 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x4c28f48448720e9000907bc2611f73022fdce1fa` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | polygon | n/a | `0x01df11ef6822b88e5913625e7e66696c01ee4cf7` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | polygon | n/a | `0x26fbd7d74e969d878033984995336b56449fdc3f` | ⚠️ Unaudited |
+| HelloWorld | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x04de5e721ae1ecc1d637d29c2562c9700d7d1f98` | ⚠️ Unaudited |
+| RewardVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x6ac606389982ae6d2f82f817c46eacf54244c4ac` | ⚠️ Unaudited |
+| StakingRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x03428da1a46beb305db74c55d4ec192907431cca` | ⚠️ Unaudited |
+| StakingRewardsFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x038be886326340844c4e9d0098af006876eae967` | ⚠️ Unaudited |
+| Transfer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xfa38b8632153b2d083a94590e577298c0ae50698` | ⚠️ Unaudited |
+| UChildERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x002e97b041e42697def62afab53c99c1dd5d8dbb` | ⚠️ Unaudited |
+| UChildERC20Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x000de668684839f97d4845f32a43e913366ec08c` | ⚠️ Unaudited |
+| UniswapV2Factory | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-235294 | `0xa102072a4c07f06ec3b4900fdc4c7b80b6c57429` | ⚠️ Unaudited |
+| UniswapV2Router02 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xa102072a4c07f06ec3b4900fdc4c7b80b6c57429` | ⚠️ Unaudited |
+| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x356fe56801fdb5bb44f63023f4ac3e26588a3723` | ⚠️ Unaudited |
+| WETH9 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x4c28f48448720e9000907bc2611f73022fdce1fa` | ⚠️ Unaudited |
+| XERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x48856f48fb4eafab8646de0b0b48bace1f95f723` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -145,11 +145,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-235290 | `0x75455c...23c976` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-235291 | `0xe7fb3e...66423b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-235292 | `0x2724b9...b5ef2d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-235293 | `0xd9820a...3d64f5` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-235295 | `0xaede1e...85e71c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-235290 | `0x75455c3de45dd32cbe9a5ad5e518d3d50823c976` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-235291 | `0xe7fb3e833efe5f9c441105eb65ef8b261266423b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-235292 | `0x2724b9497b2cf3325c6be3ea430b3cec34b5ef2d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-235293 | `0xd9820a17053d6314b20642e465a84bf01a3d64f5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-235295 | `0xaede1efe768bd8a1663a7608c63290c60b85e71c` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -197,7 +197,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| polygon | `0x150b4f...cc29e7` | DfynPricePrediction | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0x150b4fd25c7c0c65301e86b599822f2feecc29e7` | DfynPricePrediction | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

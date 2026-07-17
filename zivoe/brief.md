@@ -61,29 +61,29 @@ The protocol comprises 7 functional families. Its contracts share 9 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| OCT_DAO | unknown | ethereum | n/a | [`0xd70233...78d108`](./contracts/ethereum-1/0xd702332915fddf588793d54d63872a97ad78d108/) | ✅ Audited |
-| ZivoeGovernorV2 | governance | ethereum | n/a | [`0x94ac60...32a71e`](./contracts/ethereum-1/0x94ac60103b6b0df0cd828086b16eff2a3e32a71e/) | ✅ Audited |
-| ZivoeRewards | unknown | ethereum | n/a | 3 deployments: ethereum [`0x0d45c2...9ded5d`](./contracts/ethereum-1/0x0d45c292bacdc47ce850e4c83a2fa2e8509ded5d/); ethereum `0xb397aa...6b2dce`; ethereum `0xcacdb1...78aa7c` | ✅ Audited |
-| ZivoeRewardsVesting | operational_periphery | ethereum | n/a | [`0x520f2b...1168f6`](./contracts/ethereum-1/0x520f2b5766176fd94b62507c848599b6251168f6/) | ✅ Audited |
-| ZivoeRouter | adapter | ethereum | n/a | [`0x420909...a2c3b6`](./contracts/ethereum-1/0x420909ba4b361853703668e19461b3a5dea2c3b6/) | ✅ Audited |
-| ZivoeToken | token | ethereum | n/a | [`0xe412d4...19a9d2`](./contracts/ethereum-1/0xe412d46a0fbd567332b7689cfffe1f8a4f19a9d2/) | ✅ Audited |
-| ZivoeTranches | core_logic | ethereum | n/a | [`0x6282b4...4715a8`](./contracts/ethereum-1/0x6282b480f0b989f0b603f821a840d964bc4715a8/) | ✅ Audited |
-| ZivoeTrancheToken | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x7aa5bf...ad3bb6`](./contracts/ethereum-1/0x7aa5bf30042b2145b9f0629ea68de55b42ad3bb6/); ethereum `0xa923fa...ab6dd0` | ✅ Audited |
-| ZivoeVault | core_logic | ethereum | n/a | [`0x94babe...fbedd4`](./contracts/ethereum-1/0x94babe9ee75c38034920bc6ed42748e8eefbedd4/) | ✅ Audited |
-| ZivoeYDL | unknown | ethereum | n/a | [`0xfb7920...474b2b`](./contracts/ethereum-1/0xfb7920b55887840643e20952f22eb18ddc474b2b/) | ✅ Audited |
+| OCT_DAO | unknown | ethereum | n/a | [`0xd702332915fddf588793d54d63872a97ad78d108`](./contracts/ethereum-1/0xd702332915fddf588793d54d63872a97ad78d108/) | ✅ Audited |
+| ZivoeGovernorV2 | governance | ethereum | n/a | [`0x94ac60103b6b0df0cd828086b16eff2a3e32a71e`](./contracts/ethereum-1/0x94ac60103b6b0df0cd828086b16eff2a3e32a71e/) | ✅ Audited |
+| ZivoeRewards | unknown | ethereum | n/a | 3 deployments: ethereum [`0x0d45c292bacdc47ce850e4c83a2fa2e8509ded5d`](./contracts/ethereum-1/0x0d45c292bacdc47ce850e4c83a2fa2e8509ded5d/); ethereum `0xb397aa1d78109115dcc57b907dcd9d61bb6b2dce`; ethereum `0xcacdb1a5a11f824e02de4ca6e7b2d12bb278aa7c` | ✅ Audited |
+| ZivoeRewardsVesting | operational_periphery | ethereum | n/a | [`0x520f2b5766176fd94b62507c848599b6251168f6`](./contracts/ethereum-1/0x520f2b5766176fd94b62507c848599b6251168f6/) | ✅ Audited |
+| ZivoeRouter | adapter | ethereum | n/a | [`0x420909ba4b361853703668e19461b3a5dea2c3b6`](./contracts/ethereum-1/0x420909ba4b361853703668e19461b3a5dea2c3b6/) | ✅ Audited |
+| ZivoeToken | token | ethereum | n/a | [`0xe412d46a0fbd567332b7689cfffe1f8a4f19a9d2`](./contracts/ethereum-1/0xe412d46a0fbd567332b7689cfffe1f8a4f19a9d2/) | ✅ Audited |
+| ZivoeTranches | core_logic | ethereum | n/a | [`0x6282b480f0b989f0b603f821a840d964bc4715a8`](./contracts/ethereum-1/0x6282b480f0b989f0b603f821a840d964bc4715a8/) | ✅ Audited |
+| ZivoeTrancheToken | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x7aa5bf30042b2145b9f0629ea68de55b42ad3bb6`](./contracts/ethereum-1/0x7aa5bf30042b2145b9f0629ea68de55b42ad3bb6/); ethereum `0xa923fa389de41c4fc56bd3b9a99c142c81ab6dd0` | ✅ Audited |
+| ZivoeVault | core_logic | ethereum | n/a | [`0x94babe9ee75c38034920bc6ed42748e8eefbedd4`](./contracts/ethereum-1/0x94babe9ee75c38034920bc6ed42748e8eefbedd4/) | ✅ Audited |
+| ZivoeYDL | unknown | ethereum | n/a | [`0xfb7920b55887840643e20952f22eb18ddc474b2b`](./contracts/ethereum-1/0xfb7920b55887840643e20952f22eb18ddc474b2b/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (8)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ATokenInstance | token | ethereum | n/a | [`0x98c23e...e16f5c`](./contracts/ethereum-1/0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c/) | ⚠️ Unaudited |
-| FrxUSD | unknown | ethereum | n/a | [`0xcacd6f...586e29`](./contracts/ethereum-1/0xcacd6fd266af91b8aed52accc382b4e165586e29/) | ⚠️ Unaudited |
-| OCC_Cycle | unknown | ethereum | n/a | [`0x161c42...ccc17f`](./contracts/ethereum-1/0x161c42fb3ca3bae7755124b56d48a88bceccc17f/) | ⚠️ Unaudited |
-| OCC_Variable | unknown | ethereum | n/a | [`0x26ac86...26f29e`](./contracts/ethereum-1/0x26ac8662f7502ef246f763311176e3131326f29e/) | ⚠️ Unaudited |
-| OCR_Cycle | unknown | ethereum | n/a | [`0x12e46e...78ad6f`](./contracts/ethereum-1/0x12e46e69623350ab3ae6d52cab86a152a078ad6f/) | ⚠️ Unaudited |
-| OCR_Instant | unknown | ethereum | n/a | [`0x7720e6...2a89ec`](./contracts/ethereum-1/0x7720e6eee8ef2457d4e1c38d6a9295967b2a89ec/) | ⚠️ Unaudited |
-| Safe | unknown | ethereum | n/a | 2 deployments: ethereum [`0x50c72f...eb0fd5`](./contracts/ethereum-1/0x50c72ff8c5e7498f64beaeb8ed5be83cabeb0fd5/); ethereum `0xc8d624...d5f026` | ⚠️ Unaudited |
-| ZivoeTLC | unknown | ethereum | n/a | [`0xe1a68a...3fc916`](./contracts/ethereum-1/0xe1a68a0404426d6bbc459794e576640dee3fc916/) | ⚠️ Unaudited |
+| ATokenInstance | token | ethereum | n/a | [`0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c`](./contracts/ethereum-1/0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c/) | ⚠️ Unaudited |
+| FrxUSD | unknown | ethereum | n/a | [`0xcacd6fd266af91b8aed52accc382b4e165586e29`](./contracts/ethereum-1/0xcacd6fd266af91b8aed52accc382b4e165586e29/) | ⚠️ Unaudited |
+| OCC_Cycle | unknown | ethereum | n/a | [`0x161c42fb3ca3bae7755124b56d48a88bceccc17f`](./contracts/ethereum-1/0x161c42fb3ca3bae7755124b56d48a88bceccc17f/) | ⚠️ Unaudited |
+| OCC_Variable | unknown | ethereum | n/a | [`0x26ac8662f7502ef246f763311176e3131326f29e`](./contracts/ethereum-1/0x26ac8662f7502ef246f763311176e3131326f29e/) | ⚠️ Unaudited |
+| OCR_Cycle | unknown | ethereum | n/a | [`0x12e46e69623350ab3ae6d52cab86a152a078ad6f`](./contracts/ethereum-1/0x12e46e69623350ab3ae6d52cab86a152a078ad6f/) | ⚠️ Unaudited |
+| OCR_Instant | unknown | ethereum | n/a | [`0x7720e6eee8ef2457d4e1c38d6a9295967b2a89ec`](./contracts/ethereum-1/0x7720e6eee8ef2457d4e1c38d6a9295967b2a89ec/) | ⚠️ Unaudited |
+| Safe | unknown | ethereum | n/a | 2 deployments: ethereum [`0x50c72ff8c5e7498f64beaeb8ed5be83cabeb0fd5`](./contracts/ethereum-1/0x50c72ff8c5e7498f64beaeb8ed5be83cabeb0fd5/); ethereum `0xc8d6248ffbc59bfd51b23e69b962c60590d5f026` | ⚠️ Unaudited |
+| ZivoeTLC | unknown | ethereum | n/a | [`0xe1a68a0404426d6bbc459794e576640dee3fc916`](./contracts/ethereum-1/0xe1a68a0404426d6bbc459794e576640dee3fc916/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -103,7 +103,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0xd4b4e6...29c6d2` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd4b4e69b484635be0f8e19bb859564570f29c6d2` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -123,13 +123,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x98c23e...e16f5c`](./contracts/ethereum-1/0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c/) | ATokenInstance | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xcacd6f...586e29`](./contracts/ethereum-1/0xcacd6fd266af91b8aed52accc382b4e165586e29/) | FrxUSD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x161c42...ccc17f`](./contracts/ethereum-1/0x161c42fb3ca3bae7755124b56d48a88bceccc17f/) | OCC_Cycle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x26ac86...26f29e`](./contracts/ethereum-1/0x26ac8662f7502ef246f763311176e3131326f29e/) | OCC_Variable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x12e46e...78ad6f`](./contracts/ethereum-1/0x12e46e69623350ab3ae6d52cab86a152a078ad6f/) | OCR_Cycle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x7720e6...2a89ec`](./contracts/ethereum-1/0x7720e6eee8ef2457d4e1c38d6a9295967b2a89ec/) | OCR_Instant | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xe1a68a...3fc916`](./contracts/ethereum-1/0xe1a68a0404426d6bbc459794e576640dee3fc916/) | ZivoeTLC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c`](./contracts/ethereum-1/0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c/) | ATokenInstance | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xcacd6fd266af91b8aed52accc382b4e165586e29`](./contracts/ethereum-1/0xcacd6fd266af91b8aed52accc382b4e165586e29/) | FrxUSD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x161c42fb3ca3bae7755124b56d48a88bceccc17f`](./contracts/ethereum-1/0x161c42fb3ca3bae7755124b56d48a88bceccc17f/) | OCC_Cycle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x26ac8662f7502ef246f763311176e3131326f29e`](./contracts/ethereum-1/0x26ac8662f7502ef246f763311176e3131326f29e/) | OCC_Variable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x12e46e69623350ab3ae6d52cab86a152a078ad6f`](./contracts/ethereum-1/0x12e46e69623350ab3ae6d52cab86a152a078ad6f/) | OCR_Cycle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x7720e6eee8ef2457d4e1c38d6a9295967b2a89ec`](./contracts/ethereum-1/0x7720e6eee8ef2457d4e1c38d6a9295967b2a89ec/) | OCR_Instant | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe1a68a0404426d6bbc459794e576640dee3fc916`](./contracts/ethereum-1/0xe1a68a0404426d6bbc459794e576640dee3fc916/) | ZivoeTLC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

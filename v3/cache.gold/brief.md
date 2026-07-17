@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- CacheGold (`0xf52384...c2eaa0`, chain 1)
+- CacheGold (`0xf5238462e7235c7b62811567e63dd17d12c2eaa0`, chain 1)
 
 ## Contract Surface Quality
 
@@ -101,15 +101,15 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| CacheGold | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381528 | `0xf52384...c2eaa0` | ✅ Audited |
+| CacheGold | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381528 | `0xf5238462e7235c7b62811567e63dd17d12c2eaa0` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| GramChain | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x8382ad...58aef4`; ethereum `0xddfe95...7b9de4` | ⚠️ Unaudited |
-| LockedGoldOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5b7820...f82730` | ⚠️ Unaudited |
-| MultiSigWallet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x3ab9c3...4b234c`; ethereum `0x6522b0...a1ac91`; ethereum `0x7ea9b5...1b6636` | ⚠️ Unaudited |
+| GramChain | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x8382adf670cb280f2f318bc2446be3860758aef4`; ethereum `0xddfe951a49acd7f013d85cc169293384cd7b9de4` | ⚠️ Unaudited |
+| LockedGoldOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5b7820e62778c7317403d892f6501dd816f82730` | ⚠️ Unaudited |
+| MultiSigWallet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x3ab9c31148789570f51180a3ef7107e16c4b234c`; ethereum `0x6522b05fe48d274f14559e0391be3675e6a1ac91`; ethereum `0x7ea9b52e9f8673f3e22b4eec2c4c7a7e2d1b6636` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -129,13 +129,13 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x101e22...3acc20` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1158e6...3f549b` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3d7956...aed20c` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4a2b32...1723da` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4b73d8...977466` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8b9be8...11842b` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa6d6f1...a5d77f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x101e2212f5860e813983329b20200bdc6e3acc20` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1158e64ba535a269e265c89475541ca46e3f549b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3d7956bba51b7d88e56f0a6b1f6badba65aed20c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4a2b32f6b3ddc9edd7c654ba97d453d7631723da` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4b73d8cd4cc8f43833c321feb72a84829f977466` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8b9be8d577a3ebf1ea985f35a49165ffc011842b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa6d6f1ee5b4c39e75b9ea3e6f16672b193a5d77f` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -157,7 +157,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| CACHE_Gold_Audit_Zerotrust.pdf | CacheGold | own contract | CacheGold (selected) `0xf52384...c2eaa0` — deployed 2020-02-17 14:03:15+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| CACHE_Gold_Audit_Zerotrust.pdf | CacheGold | own contract | CacheGold (selected) `0xf5238462e7235c7b62811567e63dd17d12c2eaa0` — deployed 2020-02-17 14:03:15+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | CACHE_Gold_Audit_Zerotrust.pdf | LockedGoldOracle | unmatched — not counted | — | — | no |
 | CACHE_Gold_CGT_Audit_Polygon_CertiK.pdf | FxERC20ChildTunnel | unmatched — not counted | — | listed in Audit Scope table | no |
 | CACHE_Gold_CGT_Audit_Polygon_CertiK.pdf | FxERC20RootTunnel | unmatched — not counted | — | listed in Audit Scope table | no |

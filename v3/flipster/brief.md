@@ -107,7 +107,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | kaia | n/a | 2 deployments: kaia `0x61e57f...737682`; kaia `0x987753...93e698` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | kaia | n/a | 2 deployments: kaia `0x61e57f94fd0239ec568db7c4dd778f168c737682`; kaia `0x987753779885d0cb90e368070f54f220ae93e698` | ❓ Unverified |
 
 ## Audit Inventory
 

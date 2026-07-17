@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- XAI (`0x35e78b...dbe232`, chain 1)
+- XAI (`0x35e78b3982e87ecfd5b3f3265b601c046cdbe232`, chain 1)
 
 ## Contract Surface Quality
 
@@ -103,8 +103,8 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| SideShiftVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x380870...66bd62`; ethereum `0x74f06d...2561b9` | ⚠️ Unaudited |
-| XAI | unknown | project_anchor | own_supporting | 0 | ethereum | unit-254742 | `0x35e78b...dbe232` | ⚠️ Unaudited |
+| SideShiftVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x3808708e761b988d23ae011ed0e12674fb66bd62`; ethereum `0x74f06d64da4452e63fb89c90783343517e2561b9` | ⚠️ Unaudited |
+| XAI | unknown | project_anchor | own_supporting | 0 | ethereum | unit-254742 | `0x35e78b3982e87ecfd5b3f3265b601c046cdbe232` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -141,7 +141,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x35e78b...dbe232` | XAI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x35e78b3982e87ecfd5b3f3265b601c046cdbe232` | XAI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

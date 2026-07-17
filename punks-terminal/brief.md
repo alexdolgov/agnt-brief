@@ -61,12 +61,12 @@ The protocol comprises 4 functional families. Contracts are linked by 8 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CryptoPunks721 | unknown | ethereum | n/a | [`0x000000...5c5c2f`](./contracts/ethereum-1/0x000000000000003607fce1ac9e043a86675c5c2f/) | ⚠️ Unaudited |
-| CryptoPunksMarket | unknown | ethereum | n/a | [`0xb47e3c...193bbb`](./contracts/ethereum-1/0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb/) | ⚠️ Unaudited |
-| PunkTransferHelper | periphery | ethereum | n/a | [`0x000000...312272`](./contracts/ethereum-1/0x000000000000748d91de137891483c6f2f312272/) | ⚠️ Unaudited |
-| Stash | unknown | ethereum | n/a | 8 deployments: ethereum [`0x000000...968eec`](./contracts/ethereum-1/0x00000000000060d035a8002956b5fb02e3968eec/); ethereum `0x32b262...f90d7e`; ethereum `0x436f07...b8f6fc`; ethereum `0xa3c22e...3a6f23`; ethereum `0xccb008...d1e925`; ethereum `0xe4f741...6460ce`; ethereum `0xf30c1e...73090f`; ethereum `0xf78baa...b8c860` | ⚠️ Unaudited |
-| StashFactory | registry | ethereum | n/a | [`0x000000...866750`](./contracts/ethereum-1/0x000000000000a6fa31f5fc51c1640aac76866750/) | ⚠️ Unaudited |
-| WrappedPunk | unknown | ethereum | n/a | [`0xb7f7f6...c313f6`](./contracts/ethereum-1/0xb7f7f6c52f2e2fdb1963eab30438024864c313f6/) | ⚠️ Unaudited |
+| CryptoPunks721 | unknown | ethereum | n/a | [`0x000000000000003607fce1ac9e043a86675c5c2f`](./contracts/ethereum-1/0x000000000000003607fce1ac9e043a86675c5c2f/) | ⚠️ Unaudited |
+| CryptoPunksMarket | unknown | ethereum | n/a | [`0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb`](./contracts/ethereum-1/0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb/) | ⚠️ Unaudited |
+| PunkTransferHelper | periphery | ethereum | n/a | [`0x000000000000748d91de137891483c6f2f312272`](./contracts/ethereum-1/0x000000000000748d91de137891483c6f2f312272/) | ⚠️ Unaudited |
+| Stash | unknown | ethereum | n/a | 8 deployments: ethereum [`0x00000000000060d035a8002956b5fb02e3968eec`](./contracts/ethereum-1/0x00000000000060d035a8002956b5fb02e3968eec/); ethereum `0x32b26224a937c9de1efc0cbbad71c835b8f90d7e`; ethereum `0x436f079edb456f7feb36ebfef59467ea22b8f6fc`; ethereum `0xa3c22ee54e4dce534229bcdd71c346bc1e3a6f23`; ethereum `0xccb0082ff1d696b8a996e8db81fe9ac39ed1e925`; ethereum `0xe4f74112b54e7261903baedb941797be296460ce`; ethereum `0xf30c1e83e91d17f259cdca5a819bc8ad9173090f`; ethereum `0xf78baae3e2c597ac7f994106e8914ecf6cb8c860` | ⚠️ Unaudited |
+| StashFactory | registry | ethereum | n/a | [`0x000000000000a6fa31f5fc51c1640aac76866750`](./contracts/ethereum-1/0x000000000000a6fa31f5fc51c1640aac76866750/) | ⚠️ Unaudited |
+| WrappedPunk | unknown | ethereum | n/a | [`0xb7f7f6c52f2e2fdb1963eab30438024864c313f6`](./contracts/ethereum-1/0xb7f7f6c52f2e2fdb1963eab30438024864c313f6/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -97,12 +97,12 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x000000...5c5c2f`](./contracts/ethereum-1/0x000000000000003607fce1ac9e043a86675c5c2f/) | CryptoPunks721 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xb47e3c...193bbb`](./contracts/ethereum-1/0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb/) | CryptoPunksMarket | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x000000...312272`](./contracts/ethereum-1/0x000000000000748d91de137891483c6f2f312272/) | PunkTransferHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x000000...968eec`](./contracts/ethereum-1/0x00000000000060d035a8002956b5fb02e3968eec/) | Stash | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x000000...866750`](./contracts/ethereum-1/0x000000000000a6fa31f5fc51c1640aac76866750/) | StashFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xb7f7f6...c313f6`](./contracts/ethereum-1/0xb7f7f6c52f2e2fdb1963eab30438024864c313f6/) | WrappedPunk | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x000000000000003607fce1ac9e043a86675c5c2f`](./contracts/ethereum-1/0x000000000000003607fce1ac9e043a86675c5c2f/) | CryptoPunks721 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb`](./contracts/ethereum-1/0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb/) | CryptoPunksMarket | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x000000000000748d91de137891483c6f2f312272`](./contracts/ethereum-1/0x000000000000748d91de137891483c6f2f312272/) | PunkTransferHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x00000000000060d035a8002956b5fb02e3968eec`](./contracts/ethereum-1/0x00000000000060d035a8002956b5fb02e3968eec/) | Stash | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x000000000000a6fa31f5fc51c1640aac76866750`](./contracts/ethereum-1/0x000000000000a6fa31f5fc51c1640aac76866750/) | StashFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb7f7f6c52f2e2fdb1963eab30438024864c313f6`](./contracts/ethereum-1/0xb7f7f6c52f2e2fdb1963eab30438024864c313f6/) | WrappedPunk | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

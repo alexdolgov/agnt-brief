@@ -90,24 +90,24 @@ The pinned logic-topography run contains 4 contract row(s) across avalanche. Str
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| DAI | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xb52d65...e5bc4d` | ⚠️ Unaudited |
-| Distributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x5ed671...4d19fc` | ⚠️ Unaudited |
-| ETHTimeBondDepository | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x472c18...bfee9c` | ⚠️ Unaudited |
-| JoePair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 4 deployments: avalanche `0x425c45...4404d8`; avalanche `0x53942d...3f59a2`; avalanche `0x781655...fd755d`; avalanche `0xa3d2cf...417d6d` | ⚠️ Unaudited |
-| MEMOries | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-255156 | `0xe9eb40...0260a4` | ⚠️ Unaudited |
-| SnowbankBondDepository | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 5 deployments: avalanche `0x0d71d9...4517ff`; avalanche `0x4226b0...007174`; avalanche `0x555d01...83f43e`; avalanche `0x5e831e...caa480`; avalanche `0x8548a4...9b1432` | ⚠️ Unaudited |
-| SnowbankFinalRedistribution | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xafe654...476887` | ⚠️ Unaudited |
-| SnowbankNoRFVBondDepository | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 2 deployments: avalanche `0x4a916a...fa7ac0`; avalanche `0x5030dc...8ec36e` | ⚠️ Unaudited |
-| SnowbankProMaxFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 3 deployments: avalanche `0xa420aa...ac3f95`; avalanche `0xdbec2f...e0b224`; avalanche `0xfe5ab2...ff2380` | ⚠️ Unaudited |
-| SnowbankProMaxFactoryStorage | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x6a019f...f3b3be` | ⚠️ Unaudited |
-| SPMSubsidyRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xbbf060...152706` | ⚠️ Unaudited |
-| StakingHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x3d371d...6387ce` | ⚠️ Unaudited |
-| StakingWarmup | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xb99639...2ca625` | ⚠️ Unaudited |
-| TimeBondDepository | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 6 deployments: avalanche `0x288e6d...ea6592`; avalanche `0x587bc7...183f5d`; avalanche `0x82332e...266cca`; avalanche `0x90a08f...bf5c5f`; avalanche `0xcf6568...ec50f2`; avalanche `0xcf7a5f...761d3e` | ⚠️ Unaudited |
-| TimeBondingCalculator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xf1ac1e...6f992b` | ⚠️ Unaudited |
-| TimeERC20Token | token | external_dependency_or_infra | third_party_dependency (excluded) | 0 | avalanche | unit-255153 | `0x7d1232...a8942f` | ⚠️ Unaudited |
-| TimeStaking | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-255154 | `0x85784d...2d99ad` | ⚠️ Unaudited |
-| TimeTreasury | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-255155 | `0xa82422...7dd873` | ⚠️ Unaudited |
+| DAI | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xb52d65708078a615d48813b583cc34244de5bc4d` | ⚠️ Unaudited |
+| Distributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x5ed6713a67298c4d826a3690cea628e20d4d19fc` | ⚠️ Unaudited |
+| ETHTimeBondDepository | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x472c18c4079ecb68629f4fba1141172404bfee9c` | ⚠️ Unaudited |
+| JoePair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 4 deployments: avalanche `0x425c45adfb53861e5db8f17d9b072ab60d4404d8`; avalanche `0x53942dcce5087f56cf1d68f4e017ca3a793f59a2`; avalanche `0x781655d802670bba3c89aebaaea59d3182fd755d`; avalanche `0xa3d2cfe49df9d1ea0dc589b69252e1eddc417d6d` | ⚠️ Unaudited |
+| MEMOries | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-255156 | `0xe9eb40d52ce4744322204d4a29af63c30f0260a4` | ⚠️ Unaudited |
+| SnowbankBondDepository | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 5 deployments: avalanche `0x0d71d9616f6844f12f1ce1516aa67817754517ff`; avalanche `0x4226b0df20ed038827d9a9c99de9d21997007174`; avalanche `0x555d0112b1ca9e468c04dab37195b2a48c83f43e`; avalanche `0x5e831ef7b5b2824b6f327055d0193ecf8dcaa480`; avalanche `0x8548a41a896e0d1163bf863c807f3c72409b1432` | ⚠️ Unaudited |
+| SnowbankFinalRedistribution | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xafe654c1b34e9f702bf8007bccd6481b90476887` | ⚠️ Unaudited |
+| SnowbankNoRFVBondDepository | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 2 deployments: avalanche `0x4a916abcb24236cae854c51914b8374374fa7ac0`; avalanche `0x5030dcf903563682e312839622393bbbbe8ec36e` | ⚠️ Unaudited |
+| SnowbankProMaxFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 3 deployments: avalanche `0xa420aac325ee5b4e7b7b6008e73bb77452ac3f95`; avalanche `0xdbec2f16aff7dbdc28353818cd300a1e3fe0b224`; avalanche `0xfe5ab268e77995f2b2319da726084e1c43ff2380` | ⚠️ Unaudited |
+| SnowbankProMaxFactoryStorage | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x6a019fac4954af6019836d3769920122fbf3b3be` | ⚠️ Unaudited |
+| SPMSubsidyRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xbbf060a065c918022006699da8e300b0ca152706` | ⚠️ Unaudited |
+| StakingHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x3d371d925db78f8e46130af95756789ece6387ce` | ⚠️ Unaudited |
+| StakingWarmup | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xb996392302721270609b41f004357c0c4e2ca625` | ⚠️ Unaudited |
+| TimeBondDepository | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 6 deployments: avalanche `0x288e6d7f4935c1f4d2862715306d4bdf8dea6592`; avalanche `0x587bc7775f88d9a190aa02d30f7df2c9bb183f5d`; avalanche `0x82332edf98c2d8b40f14b1db7b8dc07451266cca`; avalanche `0x90a08fdf9f433954930f19e97fe9a1b0bdbf5c5f`; avalanche `0xcf6568d0536f2048bcdb6b4c05fe933db4ec50f2`; avalanche `0xcf7a5f05e4c89f1fce463317ca47520c98761d3e` | ⚠️ Unaudited |
+| TimeBondingCalculator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xf1ac1ed0ef7f61223df64e52a6e6e1d6ca6f992b` | ⚠️ Unaudited |
+| TimeERC20Token | token | external_dependency_or_infra | third_party_dependency (excluded) | 0 | avalanche | unit-255153 | `0x7d1232b90d3f809a54eeaeebc639c62df8a8942f` | ⚠️ Unaudited |
+| TimeStaking | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-255154 | `0x85784d5e2ccae89bcb39ebf0ac6cdc93d42d99ad` | ⚠️ Unaudited |
+| TimeTreasury | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-255155 | `0xa82422a5fd4f9cb85cd4aac393cd3296a27dd873` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -127,8 +127,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | n/a | `0x31c4c0...3c87d4` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xfc3625...073f5e` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | n/a | `0x31c4c046efad4b04b823a919cc0bdd0f663c87d4` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xfc3625cd7a5c9d40bfe6ee075a73867b32073f5e` | ❓ Unverified |
 
 ## Audit Inventory
 

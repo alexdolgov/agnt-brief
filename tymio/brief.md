@@ -60,7 +60,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| PayerV3 | unknown | ethereum | n/a | 2 deployments: ethereum [`0xb67d63...f1aad6`](./contracts/ethereum-1/0xb67d637b1301eeb56dba4555bbd15cd220f1aad6/); arbitrum [`0xb67d63...f1aad6`](./contracts/arbitrum-42161/0xb67d637b1301eeb56dba4555bbd15cd220f1aad6/) | ✅ Audited |
+| PayerV3 | unknown | ethereum | n/a | 2 deployments: ethereum [`0xb67d637b1301eeb56dba4555bbd15cd220f1aad6`](./contracts/ethereum-1/0xb67d637b1301eeb56dba4555bbd15cd220f1aad6/); arbitrum [`0xb67d637b1301eeb56dba4555bbd15cd220f1aad6`](./contracts/arbitrum-42161/0xb67d637b1301eeb56dba4555bbd15cd220f1aad6/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 

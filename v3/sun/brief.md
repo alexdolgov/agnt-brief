@@ -90,8 +90,8 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Safe | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xa9c99a...ebeb1e` | ⚠️ Unaudited |
-| SafeProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0xa9c99a...ebeb1e`; arbitrum `0xa9c99a...ebeb1e` | ⚠️ Unaudited |
+| Safe | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xa9c99a9f70ccf9fcd23fc05f1ebdc76040ebeb1e` | ⚠️ Unaudited |
+| SafeProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0xa9c99a9f70ccf9fcd23fc05f1ebdc76040ebeb1e`; arbitrum `0xa9c99a9f70ccf9fcd23fc05f1ebdc76040ebeb1e` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

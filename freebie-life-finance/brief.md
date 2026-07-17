@@ -61,8 +61,8 @@ The protocol forms a single structural family (Core Logic) of 3 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Freebie | unknown | avalanche | n/a | [`0x9bedce...3fd86d`](./contracts/avalanche-43114/0x9bedce29f79076b21dd04958a9fd4b22f63fd86d/) | ⚠️ Unaudited |
-| JoePair | unknown | avalanche | n/a | [`0xa862ff...9156f0`](./contracts/avalanche-43114/0xa862ff4a1d2393818dbdbfbeb33bf5e35e9156f0/) | ⚠️ Unaudited |
+| Freebie | unknown | avalanche | n/a | [`0x9bedce29f79076b21dd04958a9fd4b22f63fd86d`](./contracts/avalanche-43114/0x9bedce29f79076b21dd04958a9fd4b22f63fd86d/) | ⚠️ Unaudited |
+| JoePair | unknown | avalanche | n/a | [`0xa862ff4a1d2393818dbdbfbeb33bf5e35e9156f0`](./contracts/avalanche-43114/0xa862ff4a1d2393818dbdbfbeb33bf5e35e9156f0/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -82,8 +82,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | avalanche | n/a | `0x590c65...9deb0b` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x8351bb...d0e92f` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x590c6519768b1ad56ad52918a04cdbcd919deb0b` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x8351bb88827a1fb2a4bc5509d31d6416a6d0e92f` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -97,8 +97,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| avalanche | [`0x9bedce...3fd86d`](./contracts/avalanche-43114/0x9bedce29f79076b21dd04958a9fd4b22f63fd86d/) | Freebie | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0xa862ff...9156f0`](./contracts/avalanche-43114/0xa862ff4a1d2393818dbdbfbeb33bf5e35e9156f0/) | JoePair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0x9bedce29f79076b21dd04958a9fd4b22f63fd86d`](./contracts/avalanche-43114/0x9bedce29f79076b21dd04958a9fd4b22f63fd86d/) | Freebie | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0xa862ff4a1d2393818dbdbfbeb33bf5e35e9156f0`](./contracts/avalanche-43114/0xa862ff4a1d2393818dbdbfbeb33bf5e35e9156f0/) | JoePair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

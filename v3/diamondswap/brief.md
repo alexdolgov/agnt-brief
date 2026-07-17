@@ -57,8 +57,8 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x7d57c4...06bc83`, chain 153153)
-- UnnamedContract (`0xeadbf6...2a00a8`, chain 153153)
+- UnnamedContract (`0x7d57c45dc107497c5c5c0f544a84691d2b06bc83`, chain 153153)
+- UnnamedContract (`0xeadbf63e6fed15b8b648177518b094fc142a00a8`, chain 153153)
 
 ## Contract Surface Quality
 
@@ -104,27 +104,27 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AirDropper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xfda4f2...62dbdc` | ⚠️ Unaudited |
-| BasicAuth | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x7a39d2...5a5b2b` | ⚠️ Unaudited |
-| CTOFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xfa8d16...5f3a34` | ⚠️ Unaudited |
-| CTOInit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x36cadc...26054a` | ⚠️ Unaudited |
-| DefaultDiamondProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x19ccc8...fc1b2f` | ⚠️ Unaudited |
-| DiamondSwapV2FactoryFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x9108ba...36c150` | ⚠️ Unaudited |
-| DiamondSwapV2FactoryInit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x7e7315...bc5c6b` | ⚠️ Unaudited |
-| DiamondSwapV2RouterFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x6b48db...0dbe67` | ⚠️ Unaudited |
-| DiamondSwapV2RouterInit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x7c3762...04f14e` | ⚠️ Unaudited |
-| DiamondSwapV3Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x80778a...bc4637` | ⚠️ Unaudited |
-| DYORFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xa629d7...9b156c` | ⚠️ Unaudited |
-| DYORInit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb4428e...b02522` | ⚠️ Unaudited |
-| NonfungiblePositionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x66ab3d...332cc9` | ⚠️ Unaudited |
-| NonfungibleTokenPositionDescriptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x07e0fd...908e6c` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | n/a | `0x8b97db...242a21` | ⚠️ Unaudited |
-| QuoterV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x1e5812...f5d308` | ⚠️ Unaudited |
-| StakingFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x94cd5b...10cc20` | ⚠️ Unaudited |
-| StakingInit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x792299...f1f309` | ⚠️ Unaudited |
-| SwapRouter02 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x94e656...2bb4d3` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | n/a | `0xa4cbf1...4e24bc` | ⚠️ Unaudited |
-| VaultFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x530090...353650` | ⚠️ Unaudited |
+| AirDropper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xfda4f231efae3c88a9121970e1b408c5b862dbdc` | ⚠️ Unaudited |
+| BasicAuth | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x7a39d26641ed8c8061e8f58a73eff348345a5b2b` | ⚠️ Unaudited |
+| CTOFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xfa8d16a2285613da39001b6f168e9e83135f3a34` | ⚠️ Unaudited |
+| CTOInit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x36cadce52bbe76840a57aec4731444832026054a` | ⚠️ Unaudited |
+| DefaultDiamondProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x19ccc8e9796d278820c259f287c2ff5c42fc1b2f` | ⚠️ Unaudited |
+| DiamondSwapV2FactoryFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x9108ba9ff5570c31eb69fa039381e49dd036c150` | ⚠️ Unaudited |
+| DiamondSwapV2FactoryInit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x7e73154252484d67bad9966a44a32b45d9bc5c6b` | ⚠️ Unaudited |
+| DiamondSwapV2RouterFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x6b48dbc21193d725bcea11a4ff9e2f8d7f0dbe67` | ⚠️ Unaudited |
+| DiamondSwapV2RouterInit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x7c3762fdaa608254f98a0071347ee471a504f14e` | ⚠️ Unaudited |
+| DiamondSwapV3Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x80778a7b9d0e391bf45b9c7a76ee3cc9b4bc4637` | ⚠️ Unaudited |
+| DYORFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xa629d7e42f3041df983bf8011cc1d9b3229b156c` | ⚠️ Unaudited |
+| DYORInit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb4428e82af311d8211a47f06b36f6cd433b02522` | ⚠️ Unaudited |
+| NonfungiblePositionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x66ab3d6a0fcec856a4d6ab709fe422d0c9332cc9` | ⚠️ Unaudited |
+| NonfungibleTokenPositionDescriptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x07e0fd7588e9f1022f1bdbccfe16793792908e6c` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | n/a | `0x8b97db61c78b051d817e0cd226ecbfb1e4242a21` | ⚠️ Unaudited |
+| QuoterV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x1e58120d59c3f18b8b456348eee4f712a4f5d308` | ⚠️ Unaudited |
+| StakingFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x94cd5ba94c50fc5ed7ac889650dadff85110cc20` | ⚠️ Unaudited |
+| StakingInit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x792299d4e4473eb033051d71644a089d52f1f309` | ⚠️ Unaudited |
+| SwapRouter02 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x94e656ddd2ec7f47154e10765ff5e664592bb4d3` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | n/a | `0xa4cbf1e40d8aaa011a667ae2082dde6b944e24bc` | ⚠️ Unaudited |
+| VaultFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x530090b2ec1bbeb2fde9e47284af50e725353650` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -144,8 +144,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | odyssey | unit-384062 | `0x7d57c4...06bc83` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | odyssey | unit-384063 | `0xeadbf6...2a00a8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | odyssey | unit-384062 | `0x7d57c45dc107497c5c5c0f544a84691d2b06bc83` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | odyssey | unit-384063 | `0xeadbf63e6fed15b8b648177518b094fc142a00a8` | ❓ Unverified |
 
 ## Audit Inventory
 

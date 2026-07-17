@@ -60,17 +60,17 @@ The protocol comprises 4 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| StakedUSDuV2 | token | bsc | n/a | [`0x385c27...52ec71`](./contracts/bsc-56/0x385c279445581a186a4182a5503094ebb652ec71/) | ✅ Audited |
-| UnitasMintingV2 | unknown | bsc | n/a | [`0xbb984c...4ea82a`](./contracts/bsc-56/0xbb984ce670100aa855f6152f88b26ee57f4ea82a/) | ✅ Audited |
-| USDu | unknown | bsc | n/a | [`0xea953e...db5882`](./contracts/bsc-56/0xea953ea6634d55dac6697c436b1e81a679db5882/) | ✅ Audited |
+| StakedUSDuV2 | token | bsc | n/a | [`0x385c279445581a186a4182a5503094ebb652ec71`](./contracts/bsc-56/0x385c279445581a186a4182a5503094ebb652ec71/) | ✅ Audited |
+| UnitasMintingV2 | unknown | bsc | n/a | [`0xbb984ce670100aa855f6152f88b26ee57f4ea82a`](./contracts/bsc-56/0xbb984ce670100aa855f6152f88b26ee57f4ea82a/) | ✅ Audited |
+| USDu | unknown | bsc | n/a | [`0xea953ea6634d55dac6697c436b1e81a679db5882`](./contracts/bsc-56/0xea953ea6634d55dac6697c436b1e81a679db5882/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| PancakeV3Pool | core_logic | bsc | n/a | [`0x8aab55...852120`](./contracts/bsc-56/0x8aab5522d601bbb85501d703b55a272e47852120/) | ⚠️ Unaudited |
-| SafeProxy | unknown | bsc | n/a | [`0xb464c9...0ed3a9`](./contracts/bsc-56/0xb464c9890604926bd5fa7b66bf15d26bcd0ed3a9/) | ⚠️ Unaudited |
-| XGLDToken | token | bsc | n/a | [`0xe60106...50ac91`](./contracts/bsc-56/0xe60106a5cab7e7c64830919d36ab20caaf50ac91/) | ⚠️ Unaudited |
+| PancakeV3Pool | core_logic | bsc | n/a | [`0x8aab5522d601bbb85501d703b55a272e47852120`](./contracts/bsc-56/0x8aab5522d601bbb85501d703b55a272e47852120/) | ⚠️ Unaudited |
+| SafeProxy | unknown | bsc | n/a | [`0xb464c9890604926bd5fa7b66bf15d26bcd0ed3a9`](./contracts/bsc-56/0xb464c9890604926bd5fa7b66bf15d26bcd0ed3a9/) | ⚠️ Unaudited |
+| XGLDToken | token | bsc | n/a | [`0xe60106a5cab7e7c64830919d36ab20caaf50ac91`](./contracts/bsc-56/0xe60106a5cab7e7c64830919d36ab20caaf50ac91/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -90,12 +90,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0x3b5f4a...5fbb4c` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x643c75...a6e4b4` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x6e705a...2c0c0e` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x82a7cc...95c361` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xa1e952...31c89d` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xcfff99...39eb38` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x3b5f4ac56dab45f43dbad9b41c6a57f0f85fbb4c` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x643c75cb6eb5218e7cb39f563dd606bf62a6e4b4` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x6e705a2e978a30dc92df69b428a333f6b82c0c0e` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x82a7cc65dc43a9cd5b105581b954ef082595c361` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xa1e9526cb6ac47403a7a820e75d7bb0c2831c89d` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xcfff99c2ac4c0cbc03dc4a8fa55baefe1139eb38` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -113,8 +113,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x8aab55...852120`](./contracts/bsc-56/0x8aab5522d601bbb85501d703b55a272e47852120/) | PancakeV3Pool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xe60106...50ac91`](./contracts/bsc-56/0xe60106a5cab7e7c64830919d36ab20caaf50ac91/) | XGLDToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x8aab5522d601bbb85501d703b55a272e47852120`](./contracts/bsc-56/0x8aab5522d601bbb85501d703b55a272e47852120/) | PancakeV3Pool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xe60106a5cab7e7c64830919d36ab20caaf50ac91`](./contracts/bsc-56/0xe60106a5cab7e7c64830919d36ab20caaf50ac91/) | XGLDToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

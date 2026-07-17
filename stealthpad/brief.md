@@ -59,13 +59,13 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| StealthPad | unknown | ethereum | n/a | [`0xb18f98...60fcbf`](./contracts/ethereum-1/0xb18f98822c22492bd6b77d19cae9367f3d60fcbf/) | ✅ Audited |
+| StealthPad | unknown | ethereum | n/a | [`0xb18f98822c22492bd6b77d19cae9367f3d60fcbf`](./contracts/ethereum-1/0xb18f98822c22492bd6b77d19cae9367f3d60fcbf/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UniswapV2Pair | unknown | ethereum | n/a | [`0x626bb5...fd3788`](./contracts/ethereum-1/0x626bb5e02694372b5a919a5981659595c2fd3788/) | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | ethereum | n/a | [`0x626bb5e02694372b5a919a5981659595c2fd3788`](./contracts/ethereum-1/0x626bb5e02694372b5a919a5981659595c2fd3788/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

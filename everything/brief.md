@@ -61,10 +61,10 @@ The protocol comprises 3 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UniPoolPair | core_logic | arbitrum | n/a | [`0xfa896e...fe8f56`](./contracts/arbitrum-42161/0xfa896ef9659ea0dcf42c751e2b1f78f626fe8f56/) | ⚠️ Unaudited |
-| UniPoolRouter | adapter | arbitrum | n/a | [`0xb15e7a...ff7628`](./contracts/arbitrum-42161/0xb15e7a89e71b8468c23eb330f837caf0f2ff7628/) | ⚠️ Unaudited |
-| WormholeTransceiver | unknown | arbitrum | n/a | [`0x1ea94d...9d63b5`](./contracts/arbitrum-42161/0x1ea94dfaaabfa1ac4dcc672cc27fca6bc59d63b5/) | ⚠️ Unaudited |
-| WormholeTransceiver | unknown | arbitrum | n/a | [`0x3d0f80...a945f6`](./contracts/arbitrum-42161/0x3d0f808e717943f7aa53c6285a33a2dfa2a945f6/) | ⚠️ Unaudited |
+| UniPoolPair | core_logic | arbitrum | n/a | [`0xfa896ef9659ea0dcf42c751e2b1f78f626fe8f56`](./contracts/arbitrum-42161/0xfa896ef9659ea0dcf42c751e2b1f78f626fe8f56/) | ⚠️ Unaudited |
+| UniPoolRouter | adapter | arbitrum | n/a | [`0xb15e7a89e71b8468c23eb330f837caf0f2ff7628`](./contracts/arbitrum-42161/0xb15e7a89e71b8468c23eb330f837caf0f2ff7628/) | ⚠️ Unaudited |
+| WormholeTransceiver | unknown | arbitrum | n/a | [`0x1ea94dfaaabfa1ac4dcc672cc27fca6bc59d63b5`](./contracts/arbitrum-42161/0x1ea94dfaaabfa1ac4dcc672cc27fca6bc59d63b5/) | ⚠️ Unaudited |
+| WormholeTransceiver | unknown | arbitrum | n/a | [`0x3d0f808e717943f7aa53c6285a33a2dfa2a945f6`](./contracts/arbitrum-42161/0x3d0f808e717943f7aa53c6285a33a2dfa2a945f6/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -84,10 +84,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | arbitrum | n/a | `0x4e3ca9...e8acb5` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x6a53ed...c98003` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x99af3f...7cd682` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xc26494...4fca44` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x4e3ca901719c84cf86f4328d3d930b471de8acb5` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x6a53ed05b0c3514d4789cb0ed79c17092dc98003` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x99af3f509009b7266d251bc4292612b7e77cd682` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xc264944e9e7073f8f98fef7338cda973914fca44` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -100,8 +100,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | [`0xfa896e...fe8f56`](./contracts/arbitrum-42161/0xfa896ef9659ea0dcf42c751e2b1f78f626fe8f56/) | UniPoolPair | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xb15e7a...ff7628`](./contracts/arbitrum-42161/0xb15e7a89e71b8468c23eb330f837caf0f2ff7628/) | UniPoolRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xfa896ef9659ea0dcf42c751e2b1f78f626fe8f56`](./contracts/arbitrum-42161/0xfa896ef9659ea0dcf42c751e2b1f78f626fe8f56/) | UniPoolPair | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xb15e7a89e71b8468c23eb330f837caf0f2ff7628`](./contracts/arbitrum-42161/0xb15e7a89e71b8468c23eb330f837caf0f2ff7628/) | UniPoolRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

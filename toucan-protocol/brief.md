@@ -61,26 +61,26 @@ The protocol comprises 2 functional families. Its contracts share 4 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Biochar | unknown | base | n/a | [`0x20b048...9f5055`](./contracts/base-8453/0x20b048fa035d5763685d695e66adf62c5d9f5055/) | ⚠️ Unaudited |
-| BiocharFilter | unknown | celo | n/a | [`0x218669...3884b9`](./contracts/celo-42220/0x21866905ae7da3769b96dcdd3506013a733884b9/) | ⚠️ Unaudited |
-| CarbonOffsetBatches | unknown | polygon | n/a | [`0x66b1b5...869717`](./contracts/polygon-137/0x66b1b59f9d59413ddc1539122d7d5f6b70869717/) | ⚠️ Unaudited |
-| CarbonProjectVintages | unknown | base | n/a | [`0x09d147...f5d345`](./contracts/base-8453/0x09d14737300a3dcaaa3c6e9aeb4e666122f5d345/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | polygon | n/a | [`0x0fead3...056ea1`](./contracts/polygon-137/0x0fead3f81b35e133f9d78f9029950cf1f6056ea1/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | celo | n/a | [`0x02de47...0a7e92`](./contracts/celo-42220/0x02de4766c272abc10bc88c220d214a26960a7e92/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | celo | n/a | [`0x0ccb00...0873fe`](./contracts/celo-42220/0x0ccb0071e8b8b716a2a5998ab4d97b83790873fe/) | ⚠️ Unaudited |
-| FeeCalculator | unknown | base | n/a | [`0x6a4549...490da5`](./contracts/base-8453/0x6a4549759c475d845d4ae074b3656dc257490da5/) | ⚠️ Unaudited |
-| FxHashNFTCarbonExtension | unknown | base | n/a | [`0x1d1cd7...e6b083`](./contracts/base-8453/0x1d1cd730fcb1e89b387d67dbe48f5d5bbae6b083/) | ⚠️ Unaudited |
-| OffsetHelper | unknown | celo | n/a | [`0x424282...8c37d1`](./contracts/celo-42220/0x4242829d15434fea6606cf995f1bed68a18c37d1/) | ⚠️ Unaudited |
-| PuroToucanCarbonOffsets | unknown | polygon | n/a | [`0x05de01...7de399`](./contracts/polygon-137/0x05de010c6187a8bb3232176674f7492b5a7de399/) | ⚠️ Unaudited |
-| RetirementCertificates | unknown | base | n/a | [`0x09da61...2cb186`](./contracts/base-8453/0x09da61144b05c4a80b2d3c67bd72d740922cb186/) | ⚠️ Unaudited |
-| ToucanCarbonOffsets | unknown | polygon | n/a | [`0x1671a1...229f44`](./contracts/polygon-137/0x1671a112fd50870b45d1d44f5aaff8de50229f44/) | ⚠️ Unaudited |
-| ToucanCarbonOffsetsEscrow | unknown | polygon | n/a | [`0x027553...42792a`](./contracts/polygon-137/0x027553435c2373f49e9cdfe3b50a25326242792a/) | ⚠️ Unaudited |
-| ToucanCarbonOffsetsFactory | unknown | base | n/a | [`0x20b00a...f11ca0`](./contracts/base-8453/0x20b00ac9c365b33b4d5ba5e7c075f2f94df11ca0/) | ⚠️ Unaudited |
-| ToucanContractRegistry | unknown | polygon | n/a | [`0x04a3f2...85e59e`](./contracts/polygon-137/0x04a3f298e88e54d3672a94136886ff9cd285e59e/) | ⚠️ Unaudited |
-| ToucanCrosschainMessenger | unknown | celo | n/a | [`0x882ade...c38654`](./contracts/celo-42220/0x882adea1a3b875fc776cac94541ccb1275c38654/) | ⚠️ Unaudited |
-| ToucanRegenBridge | unknown | polygon | n/a | [`0x35d742...924056`](./contracts/polygon-137/0x35d7426fb9069b99bb36bad30eb804e8fd924056/) | ⚠️ Unaudited |
-| UpgradeableBeacon | unknown | base | n/a | [`0x3476bf...5e78ec`](./contracts/base-8453/0x3476bfb58a03cafb6f7b7b02c21fc6597e5e78ec/) | ⚠️ Unaudited |
-| UUPSProxy | unknown | polygon | n/a | [`0x599a97...0dc07d`](./contracts/polygon-137/0x599a978c43f5cea1b26a399d28869ad4690dc07d/) | ⚠️ Unaudited |
+| Biochar | unknown | base | n/a | [`0x20b048fa035d5763685d695e66adf62c5d9f5055`](./contracts/base-8453/0x20b048fa035d5763685d695e66adf62c5d9f5055/) | ⚠️ Unaudited |
+| BiocharFilter | unknown | celo | n/a | [`0x21866905ae7da3769b96dcdd3506013a733884b9`](./contracts/celo-42220/0x21866905ae7da3769b96dcdd3506013a733884b9/) | ⚠️ Unaudited |
+| CarbonOffsetBatches | unknown | polygon | n/a | [`0x66b1b59f9d59413ddc1539122d7d5f6b70869717`](./contracts/polygon-137/0x66b1b59f9d59413ddc1539122d7d5f6b70869717/) | ⚠️ Unaudited |
+| CarbonProjectVintages | unknown | base | n/a | [`0x09d14737300a3dcaaa3c6e9aeb4e666122f5d345`](./contracts/base-8453/0x09d14737300a3dcaaa3c6e9aeb4e666122f5d345/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | polygon | n/a | [`0x0fead3f81b35e133f9d78f9029950cf1f6056ea1`](./contracts/polygon-137/0x0fead3f81b35e133f9d78f9029950cf1f6056ea1/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | celo | n/a | [`0x02de4766c272abc10bc88c220d214a26960a7e92`](./contracts/celo-42220/0x02de4766c272abc10bc88c220d214a26960a7e92/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | celo | n/a | [`0x0ccb0071e8b8b716a2a5998ab4d97b83790873fe`](./contracts/celo-42220/0x0ccb0071e8b8b716a2a5998ab4d97b83790873fe/) | ⚠️ Unaudited |
+| FeeCalculator | unknown | base | n/a | [`0x6a4549759c475d845d4ae074b3656dc257490da5`](./contracts/base-8453/0x6a4549759c475d845d4ae074b3656dc257490da5/) | ⚠️ Unaudited |
+| FxHashNFTCarbonExtension | unknown | base | n/a | [`0x1d1cd730fcb1e89b387d67dbe48f5d5bbae6b083`](./contracts/base-8453/0x1d1cd730fcb1e89b387d67dbe48f5d5bbae6b083/) | ⚠️ Unaudited |
+| OffsetHelper | unknown | celo | n/a | [`0x4242829d15434fea6606cf995f1bed68a18c37d1`](./contracts/celo-42220/0x4242829d15434fea6606cf995f1bed68a18c37d1/) | ⚠️ Unaudited |
+| PuroToucanCarbonOffsets | unknown | polygon | n/a | [`0x05de010c6187a8bb3232176674f7492b5a7de399`](./contracts/polygon-137/0x05de010c6187a8bb3232176674f7492b5a7de399/) | ⚠️ Unaudited |
+| RetirementCertificates | unknown | base | n/a | [`0x09da61144b05c4a80b2d3c67bd72d740922cb186`](./contracts/base-8453/0x09da61144b05c4a80b2d3c67bd72d740922cb186/) | ⚠️ Unaudited |
+| ToucanCarbonOffsets | unknown | polygon | n/a | [`0x1671a112fd50870b45d1d44f5aaff8de50229f44`](./contracts/polygon-137/0x1671a112fd50870b45d1d44f5aaff8de50229f44/) | ⚠️ Unaudited |
+| ToucanCarbonOffsetsEscrow | unknown | polygon | n/a | [`0x027553435c2373f49e9cdfe3b50a25326242792a`](./contracts/polygon-137/0x027553435c2373f49e9cdfe3b50a25326242792a/) | ⚠️ Unaudited |
+| ToucanCarbonOffsetsFactory | unknown | base | n/a | [`0x20b00ac9c365b33b4d5ba5e7c075f2f94df11ca0`](./contracts/base-8453/0x20b00ac9c365b33b4d5ba5e7c075f2f94df11ca0/) | ⚠️ Unaudited |
+| ToucanContractRegistry | unknown | polygon | n/a | [`0x04a3f298e88e54d3672a94136886ff9cd285e59e`](./contracts/polygon-137/0x04a3f298e88e54d3672a94136886ff9cd285e59e/) | ⚠️ Unaudited |
+| ToucanCrosschainMessenger | unknown | celo | n/a | [`0x882adea1a3b875fc776cac94541ccb1275c38654`](./contracts/celo-42220/0x882adea1a3b875fc776cac94541ccb1275c38654/) | ⚠️ Unaudited |
+| ToucanRegenBridge | unknown | polygon | n/a | [`0x35d7426fb9069b99bb36bad30eb804e8fd924056`](./contracts/polygon-137/0x35d7426fb9069b99bb36bad30eb804e8fd924056/) | ⚠️ Unaudited |
+| UpgradeableBeacon | unknown | base | n/a | [`0x3476bfb58a03cafb6f7b7b02c21fc6597e5e78ec`](./contracts/base-8453/0x3476bfb58a03cafb6f7b7b02c21fc6597e5e78ec/) | ⚠️ Unaudited |
+| UUPSProxy | unknown | polygon | n/a | [`0x599a978c43f5cea1b26a399d28869ad4690dc07d`](./contracts/polygon-137/0x599a978c43f5cea1b26a399d28869ad4690dc07d/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -111,22 +111,22 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x20b048...9f5055`](./contracts/base-8453/0x20b048fa035d5763685d695e66adf62c5d9f5055/) | Biochar | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x218669...3884b9`](./contracts/celo-42220/0x21866905ae7da3769b96dcdd3506013a733884b9/) | BiocharFilter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x66b1b5...869717`](./contracts/polygon-137/0x66b1b59f9d59413ddc1539122d7d5f6b70869717/) | CarbonOffsetBatches | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x09d147...f5d345`](./contracts/base-8453/0x09d14737300a3dcaaa3c6e9aeb4e666122f5d345/) | CarbonProjectVintages | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x6a4549...490da5`](./contracts/base-8453/0x6a4549759c475d845d4ae074b3656dc257490da5/) | FeeCalculator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x1d1cd7...e6b083`](./contracts/base-8453/0x1d1cd730fcb1e89b387d67dbe48f5d5bbae6b083/) | FxHashNFTCarbonExtension | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x424282...8c37d1`](./contracts/celo-42220/0x4242829d15434fea6606cf995f1bed68a18c37d1/) | OffsetHelper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x05de01...7de399`](./contracts/polygon-137/0x05de010c6187a8bb3232176674f7492b5a7de399/) | PuroToucanCarbonOffsets | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x09da61...2cb186`](./contracts/base-8453/0x09da61144b05c4a80b2d3c67bd72d740922cb186/) | RetirementCertificates | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x1671a1...229f44`](./contracts/polygon-137/0x1671a112fd50870b45d1d44f5aaff8de50229f44/) | ToucanCarbonOffsets | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x027553...42792a`](./contracts/polygon-137/0x027553435c2373f49e9cdfe3b50a25326242792a/) | ToucanCarbonOffsetsEscrow | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x20b00a...f11ca0`](./contracts/base-8453/0x20b00ac9c365b33b4d5ba5e7c075f2f94df11ca0/) | ToucanCarbonOffsetsFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x04a3f2...85e59e`](./contracts/polygon-137/0x04a3f298e88e54d3672a94136886ff9cd285e59e/) | ToucanContractRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | [`0x882ade...c38654`](./contracts/celo-42220/0x882adea1a3b875fc776cac94541ccb1275c38654/) | ToucanCrosschainMessenger | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x35d742...924056`](./contracts/polygon-137/0x35d7426fb9069b99bb36bad30eb804e8fd924056/) | ToucanRegenBridge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x599a97...0dc07d`](./contracts/polygon-137/0x599a978c43f5cea1b26a399d28869ad4690dc07d/) | UUPSProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x20b048fa035d5763685d695e66adf62c5d9f5055`](./contracts/base-8453/0x20b048fa035d5763685d695e66adf62c5d9f5055/) | Biochar | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | [`0x21866905ae7da3769b96dcdd3506013a733884b9`](./contracts/celo-42220/0x21866905ae7da3769b96dcdd3506013a733884b9/) | BiocharFilter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x66b1b59f9d59413ddc1539122d7d5f6b70869717`](./contracts/polygon-137/0x66b1b59f9d59413ddc1539122d7d5f6b70869717/) | CarbonOffsetBatches | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x09d14737300a3dcaaa3c6e9aeb4e666122f5d345`](./contracts/base-8453/0x09d14737300a3dcaaa3c6e9aeb4e666122f5d345/) | CarbonProjectVintages | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x6a4549759c475d845d4ae074b3656dc257490da5`](./contracts/base-8453/0x6a4549759c475d845d4ae074b3656dc257490da5/) | FeeCalculator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x1d1cd730fcb1e89b387d67dbe48f5d5bbae6b083`](./contracts/base-8453/0x1d1cd730fcb1e89b387d67dbe48f5d5bbae6b083/) | FxHashNFTCarbonExtension | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | [`0x4242829d15434fea6606cf995f1bed68a18c37d1`](./contracts/celo-42220/0x4242829d15434fea6606cf995f1bed68a18c37d1/) | OffsetHelper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x05de010c6187a8bb3232176674f7492b5a7de399`](./contracts/polygon-137/0x05de010c6187a8bb3232176674f7492b5a7de399/) | PuroToucanCarbonOffsets | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x09da61144b05c4a80b2d3c67bd72d740922cb186`](./contracts/base-8453/0x09da61144b05c4a80b2d3c67bd72d740922cb186/) | RetirementCertificates | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x1671a112fd50870b45d1d44f5aaff8de50229f44`](./contracts/polygon-137/0x1671a112fd50870b45d1d44f5aaff8de50229f44/) | ToucanCarbonOffsets | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x027553435c2373f49e9cdfe3b50a25326242792a`](./contracts/polygon-137/0x027553435c2373f49e9cdfe3b50a25326242792a/) | ToucanCarbonOffsetsEscrow | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x20b00ac9c365b33b4d5ba5e7c075f2f94df11ca0`](./contracts/base-8453/0x20b00ac9c365b33b4d5ba5e7c075f2f94df11ca0/) | ToucanCarbonOffsetsFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x04a3f298e88e54d3672a94136886ff9cd285e59e`](./contracts/polygon-137/0x04a3f298e88e54d3672a94136886ff9cd285e59e/) | ToucanContractRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | [`0x882adea1a3b875fc776cac94541ccb1275c38654`](./contracts/celo-42220/0x882adea1a3b875fc776cac94541ccb1275c38654/) | ToucanCrosschainMessenger | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x35d7426fb9069b99bb36bad30eb804e8fd924056`](./contracts/polygon-137/0x35d7426fb9069b99bb36bad30eb804e8fd924056/) | ToucanRegenBridge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x599a978c43f5cea1b26a399d28869ad4690dc07d`](./contracts/polygon-137/0x599a978c43f5cea1b26a399d28869ad4690dc07d/) | UUPSProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

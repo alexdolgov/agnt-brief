@@ -52,10 +52,10 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x118933...d33a69`, chain 25)
-- UnnamedContract (`0x8a44ac...3120e5`, chain 25)
-- UnnamedContract (`0x8ebc40...6f954a`, chain 25)
-- UnnamedContract (`0xcd2e5c...1570c9`, chain 25)
+- UnnamedContract (`0x1189331089b6ca8bea989c1f2ffd0efadcd33a69`, chain 25)
+- UnnamedContract (`0x8a44ac7d38b9925d2437803520ed38ae5c3120e5`, chain 25)
+- UnnamedContract (`0x8ebc409998ef75661a4c464ff9bbb490586f954a`, chain 25)
+- UnnamedContract (`0xcd2e5cc83681d62beb066ad0a2ec94bf301570c9`, chain 25)
 
 ## Contract Surface Quality
 
@@ -119,11 +119,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-389915 | `0x118933...d33a69` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | cronos | n/a | 4 deployments: cronos `0x1215b7...93904f`; cronos `0x1ec6e8...d0c566`; cronos `0x4e5cdf...877275`; cronos `0x6d5599...e00deb` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-389916 | `0x8a44ac...3120e5` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-389917 | `0x8ebc40...6f954a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-389919 | `0xcd2e5c...1570c9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-389915 | `0x1189331089b6ca8bea989c1f2ffd0efadcd33a69` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | cronos | n/a | 4 deployments: cronos `0x1215b773d67fd9ed17656b08e223caef4a93904f`; cronos `0x1ec6e891bdaa523da0f538c9556064d909d0c566`; cronos `0x4e5cdf0a7a13f05e4168e3b2b9ba96c740877275`; cronos `0x6d5599616732ea278235b47a76cfd398fde00deb` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-389916 | `0x8a44ac7d38b9925d2437803520ed38ae5c3120e5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-389917 | `0x8ebc409998ef75661a4c464ff9bbb490586f954a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-389919 | `0xcd2e5cc83681d62beb066ad0a2ec94bf301570c9` | ❓ Unverified |
 
 ## Audit Inventory
 

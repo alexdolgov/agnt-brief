@@ -52,9 +52,9 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xd2fddf...253b76`, chain 177)
-- UnnamedContract (`0xd30a4c...4ce9b1`, chain 177)
-- UnnamedContract (`0xe10451...50d914`, chain 177)
+- UnnamedContract (`0xd2fddff28a534300ae961c5435e16f9465253b76`, chain 177)
+- UnnamedContract (`0xd30a4ca3b40ea4ff00e81b0471750aa9a94ce9b1`, chain 177)
+- UnnamedContract (`0xe1045155ee02e0997e6bb4509d854a306c50d914`, chain 177)
 
 ## Contract Surface Quality
 
@@ -118,13 +118,13 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-133 | unit-387434 | `0x6b126a...e574c4` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-133 | unit-387435 | `0xbfda9c...5c9257` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-133 | unit-387436 | `0xe41844...8fea96` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hashkey | unit-387437 | `0x56e45f...146483` | ❓ Unverified |
-| UnnamedContract | token | project_anchor | own_supporting | 0 | hashkey | unit-387438 | `0xd2fddf...253b76` | ❓ Unverified |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | hashkey | unit-387439 | `0xd30a4c...4ce9b1` | ❓ Unverified |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | hashkey | unit-387440 | `0xe10451...50d914` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-133 | unit-387434 | `0x6b126ad5f9cd3ced2a7a8ceb5153d475bee574c4` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-133 | unit-387435 | `0xbfda9cb158cc994e3af5ee0f006f76126e5c9257` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-133 | unit-387436 | `0xe41844eaffd946b138e133e73f55bb9dd98fea96` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hashkey | unit-387437 | `0x56e45f362cf4bbfb5a99e631ef177f2907146483` | ❓ Unverified |
+| UnnamedContract | token | project_anchor | own_supporting | 0 | hashkey | unit-387438 | `0xd2fddff28a534300ae961c5435e16f9465253b76` | ❓ Unverified |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | hashkey | unit-387439 | `0xd30a4ca3b40ea4ff00e81b0471750aa9a94ce9b1` | ❓ Unverified |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | hashkey | unit-387440 | `0xe1045155ee02e0997e6bb4509d854a306c50d914` | ❓ Unverified |
 
 ## Audit Inventory
 

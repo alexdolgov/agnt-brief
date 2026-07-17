@@ -65,26 +65,26 @@ The protocol comprises 3 functional families. Contracts are linked by 2 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BurnableMintableCappedERC20 | unknown | ethereum | n/a | [`0x467719...a5e5f3`](./contracts/ethereum-1/0x467719ad09025fcc6cf6f8311755809d45a5e5f3/) | ✅ Audited |
-| ConstAddressDeployer | unknown | ethereum | n/a | [`0x98b292...77919e`](./contracts/ethereum-1/0x98b2920d53612483f91f12ed7754e51b4a77919e/) | ✅ Audited |
-| Create3Deployer | unknown | ethereum | n/a | [`0x6513ae...dc90d8`](./contracts/ethereum-1/0x6513aedb4d1593ba12e50644401d976aebdc90d8/) | ✅ Audited |
-| Nexus | unknown | ethereum | n/a | [`0xafce80...845eb3`](./contracts/ethereum-1/0xafce80b19a8ce13dec0739a1aab7a028d6845eb3/) | ✅ Audited |
-| ReceiverImplementation | unknown | mode | n/a | [`0x66e9cb...01d0f7`](./contracts/mode-34443/0x66e9cba5529824a03b5bc9931d9c63637101d0f7/) | ✅ Audited |
-| Timelock | unknown | ethereum | n/a | [`0x2e9bdd...887a9f`](./contracts/ethereum-1/0x2e9bdddbad724b1cc3bfe521d8e2c5f52a887a9f/) | ✅ Audited |
+| BurnableMintableCappedERC20 | unknown | ethereum | n/a | [`0x467719ad09025fcc6cf6f8311755809d45a5e5f3`](./contracts/ethereum-1/0x467719ad09025fcc6cf6f8311755809d45a5e5f3/) | ✅ Audited |
+| ConstAddressDeployer | unknown | ethereum | n/a | [`0x98b2920d53612483f91f12ed7754e51b4a77919e`](./contracts/ethereum-1/0x98b2920d53612483f91f12ed7754e51b4a77919e/) | ✅ Audited |
+| Create3Deployer | unknown | ethereum | n/a | [`0x6513aedb4d1593ba12e50644401d976aebdc90d8`](./contracts/ethereum-1/0x6513aedb4d1593ba12e50644401d976aebdc90d8/) | ✅ Audited |
+| Nexus | unknown | ethereum | n/a | [`0xafce80b19a8ce13dec0739a1aab7a028d6845eb3`](./contracts/ethereum-1/0xafce80b19a8ce13dec0739a1aab7a028d6845eb3/) | ✅ Audited |
+| ReceiverImplementation | unknown | mode | n/a | [`0x66e9cba5529824a03b5bc9931d9c63637101d0f7`](./contracts/mode-34443/0x66e9cba5529824a03b5bc9931d9c63637101d0f7/) | ✅ Audited |
+| Timelock | unknown | ethereum | n/a | [`0x2e9bdddbad724b1cc3bfe521d8e2c5f52a887a9f`](./contracts/ethereum-1/0x2e9bdddbad724b1cc3bfe521d8e2c5f52a887a9f/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (9)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ActionQueueUpgradeable | unknown | ethereum | n/a | [`0x10087e...399afe`](./contracts/ethereum-1/0x10087e44d399345b2f959e7c3619d57a73399afe/) | ⚠️ Unaudited |
-| BondSaleV1Upgradeable | unknown | ethereum | n/a | [`0x16b6ac...c91b4c`](./contracts/ethereum-1/0x16b6ac8f9af81a01d9ff14191842418ebdc91b4c/) | ⚠️ Unaudited |
-| KIP | unknown | ethereum | n/a | [`0x946fb0...6cd374`](./contracts/ethereum-1/0x946fb08103b400d1c79e07acccdef5cfd26cd374/) | ⚠️ Unaudited |
-| KIPStakingSimple | unknown | ethereum | n/a | [`0x0611dc...e91ce8`](./contracts/ethereum-1/0x0611dcc913a9e108fd91eb282e00dff45de91ce8/) | ⚠️ Unaudited |
-| StakedUSDX | unknown | ethereum | n/a | [`0x7788a3...d87d92`](./contracts/ethereum-1/0x7788a3538c5fc7f9c7c8a74eac4c898fc8d87d92/) | ⚠️ Unaudited |
-| USDX | unknown | ethereum | n/a | [`0xf3527e...a66cef`](./contracts/ethereum-1/0xf3527ef8de265eaa3716fb312c12847bfba66cef/) | ⚠️ Unaudited |
-| USDXRedeem | unknown | ethereum | n/a | [`0x0eaf6f...d82f7b`](./contracts/ethereum-1/0x0eaf6fe1aed8631114d1de78317982ce73d82f7b/) | ⚠️ Unaudited |
-| USDXSales | unknown | ethereum | n/a | [`0x859834...e3065f`](./contracts/ethereum-1/0x8598348b2cb4f62ec529ad52ab5e57b52ae3065f/) | ⚠️ Unaudited |
-| VEKIP | unknown | ethereum | n/a | [`0x2c328a...dca12c`](./contracts/ethereum-1/0x2c328a18675a94775ad28d1aa6f47b755bdca12c/) | ⚠️ Unaudited |
+| ActionQueueUpgradeable | unknown | ethereum | n/a | [`0x10087e44d399345b2f959e7c3619d57a73399afe`](./contracts/ethereum-1/0x10087e44d399345b2f959e7c3619d57a73399afe/) | ⚠️ Unaudited |
+| BondSaleV1Upgradeable | unknown | ethereum | n/a | [`0x16b6ac8f9af81a01d9ff14191842418ebdc91b4c`](./contracts/ethereum-1/0x16b6ac8f9af81a01d9ff14191842418ebdc91b4c/) | ⚠️ Unaudited |
+| KIP | unknown | ethereum | n/a | [`0x946fb08103b400d1c79e07acccdef5cfd26cd374`](./contracts/ethereum-1/0x946fb08103b400d1c79e07acccdef5cfd26cd374/) | ⚠️ Unaudited |
+| KIPStakingSimple | unknown | ethereum | n/a | [`0x0611dcc913a9e108fd91eb282e00dff45de91ce8`](./contracts/ethereum-1/0x0611dcc913a9e108fd91eb282e00dff45de91ce8/) | ⚠️ Unaudited |
+| StakedUSDX | unknown | ethereum | n/a | [`0x7788a3538c5fc7f9c7c8a74eac4c898fc8d87d92`](./contracts/ethereum-1/0x7788a3538c5fc7f9c7c8a74eac4c898fc8d87d92/) | ⚠️ Unaudited |
+| USDX | unknown | ethereum | n/a | [`0xf3527ef8de265eaa3716fb312c12847bfba66cef`](./contracts/ethereum-1/0xf3527ef8de265eaa3716fb312c12847bfba66cef/) | ⚠️ Unaudited |
+| USDXRedeem | unknown | ethereum | n/a | [`0x0eaf6fe1aed8631114d1de78317982ce73d82f7b`](./contracts/ethereum-1/0x0eaf6fe1aed8631114d1de78317982ce73d82f7b/) | ⚠️ Unaudited |
+| USDXSales | unknown | ethereum | n/a | [`0x8598348b2cb4f62ec529ad52ab5e57b52ae3065f`](./contracts/ethereum-1/0x8598348b2cb4f62ec529ad52ab5e57b52ae3065f/) | ⚠️ Unaudited |
+| VEKIP | unknown | ethereum | n/a | [`0x2c328a18675a94775ad28d1aa6f47b755bdca12c`](./contracts/ethereum-1/0x2c328a18675a94775ad28d1aa6f47b755bdca12c/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -178,15 +178,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x10087e...399afe`](./contracts/ethereum-1/0x10087e44d399345b2f959e7c3619d57a73399afe/) | ActionQueueUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x16b6ac...c91b4c`](./contracts/ethereum-1/0x16b6ac8f9af81a01d9ff14191842418ebdc91b4c/) | BondSaleV1Upgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x946fb0...6cd374`](./contracts/ethereum-1/0x946fb08103b400d1c79e07acccdef5cfd26cd374/) | KIP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0611dc...e91ce8`](./contracts/ethereum-1/0x0611dcc913a9e108fd91eb282e00dff45de91ce8/) | KIPStakingSimple | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x7788a3...d87d92`](./contracts/ethereum-1/0x7788a3538c5fc7f9c7c8a74eac4c898fc8d87d92/) | StakedUSDX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xf3527e...a66cef`](./contracts/ethereum-1/0xf3527ef8de265eaa3716fb312c12847bfba66cef/) | USDX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0eaf6f...d82f7b`](./contracts/ethereum-1/0x0eaf6fe1aed8631114d1de78317982ce73d82f7b/) | USDXRedeem | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x859834...e3065f`](./contracts/ethereum-1/0x8598348b2cb4f62ec529ad52ab5e57b52ae3065f/) | USDXSales | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2c328a...dca12c`](./contracts/ethereum-1/0x2c328a18675a94775ad28d1aa6f47b755bdca12c/) | VEKIP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x10087e44d399345b2f959e7c3619d57a73399afe`](./contracts/ethereum-1/0x10087e44d399345b2f959e7c3619d57a73399afe/) | ActionQueueUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x16b6ac8f9af81a01d9ff14191842418ebdc91b4c`](./contracts/ethereum-1/0x16b6ac8f9af81a01d9ff14191842418ebdc91b4c/) | BondSaleV1Upgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x946fb08103b400d1c79e07acccdef5cfd26cd374`](./contracts/ethereum-1/0x946fb08103b400d1c79e07acccdef5cfd26cd374/) | KIP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0611dcc913a9e108fd91eb282e00dff45de91ce8`](./contracts/ethereum-1/0x0611dcc913a9e108fd91eb282e00dff45de91ce8/) | KIPStakingSimple | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x7788a3538c5fc7f9c7c8a74eac4c898fc8d87d92`](./contracts/ethereum-1/0x7788a3538c5fc7f9c7c8a74eac4c898fc8d87d92/) | StakedUSDX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xf3527ef8de265eaa3716fb312c12847bfba66cef`](./contracts/ethereum-1/0xf3527ef8de265eaa3716fb312c12847bfba66cef/) | USDX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0eaf6fe1aed8631114d1de78317982ce73d82f7b`](./contracts/ethereum-1/0x0eaf6fe1aed8631114d1de78317982ce73d82f7b/) | USDXRedeem | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8598348b2cb4f62ec529ad52ab5e57b52ae3065f`](./contracts/ethereum-1/0x8598348b2cb4f62ec529ad52ab5e57b52ae3065f/) | USDXSales | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x2c328a18675a94775ad28d1aa6f47b755bdca12c`](./contracts/ethereum-1/0x2c328a18675a94775ad28d1aa6f47b755bdca12c/) | VEKIP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

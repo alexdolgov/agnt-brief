@@ -61,15 +61,15 @@ The protocol comprises 4 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BookManager | governance | base | n/a | [`0x8ca3a6...380112`](./contracts/base-8453/0x8ca3a6f4a6260661fcb9a25584c796a1fa380112/) | ✅ Audited |
-| Controller | governance | base | n/a | [`0x2610dc...520bca`](./contracts/base-8453/0x2610dc1f2e625e57f07b0ce17152b0f4c6520bca/) | ✅ Audited |
-| LiquidityVault | unknown | base | n/a | 2 deployments: base [`0x5b351c...8c06b5`](./contracts/base-8453/0x5b351c9eed322616f76b8669176412e1808c06b5/); base `0xfe87e2...83a76d` | ✅ Audited |
-| LiquidityVault | unknown | base | n/a | 2 deployments: base [`0xbfd645...189449`](./contracts/base-8453/0xbfd645ffb504e968ae53869c9fdcbcb8d1189449/); base `0xca1f6e...c0b834` | ✅ Audited |
-| Minter | operational_periphery | base | n/a | 2 deployments: base [`0x2092a5...0c59d1`](./contracts/base-8453/0x2092a58c47f3444c82871ecdd5ea1e96c80c59d1/); base `0xc8f98f...5f098f` | ✅ Audited |
-| Operator | unknown | base | n/a | 2 deployments: base [`0x00f7a0...308625`](./contracts/base-8453/0x00f7a0c7e66f0e3a10d9e980e0854ebe0e308625/); base `0x82b54a...25a563` | ✅ Audited |
-| Operator | unknown | base | n/a | 2 deployments: base [`0x7ba560...cb63fb`](./contracts/base-8453/0x7ba560d09bd5379216f1e4393906701210cb63fb/); base `0xe5141a...8d1a8b` | ✅ Audited |
-| SimpleOracleStrategy | unknown | base | n/a | 2 deployments: base [`0x063150...b5fb58`](./contracts/base-8453/0x063150b24807e836eacf8c8420b8922d10b5fb58/); base `0x454b85...6fe892` | ✅ Audited |
-| SimpleOracleStrategy | unknown | base | n/a | 2 deployments: base [`0x2913c4...b9246a`](./contracts/base-8453/0x2913c40db3509a4bc3059ba79c5c6013efb9246a/); base `0x29e071...5f2777` | ✅ Audited |
+| BookManager | governance | base | n/a | [`0x8ca3a6f4a6260661fcb9a25584c796a1fa380112`](./contracts/base-8453/0x8ca3a6f4a6260661fcb9a25584c796a1fa380112/) | ✅ Audited |
+| Controller | governance | base | n/a | [`0x2610dc1f2e625e57f07b0ce17152b0f4c6520bca`](./contracts/base-8453/0x2610dc1f2e625e57f07b0ce17152b0f4c6520bca/) | ✅ Audited |
+| LiquidityVault | unknown | base | n/a | 2 deployments: base [`0x5b351c9eed322616f76b8669176412e1808c06b5`](./contracts/base-8453/0x5b351c9eed322616f76b8669176412e1808c06b5/); base `0xfe87e2cc08a8801a12105d862aee71470883a76d` | ✅ Audited |
+| LiquidityVault | unknown | base | n/a | 2 deployments: base [`0xbfd645ffb504e968ae53869c9fdcbcb8d1189449`](./contracts/base-8453/0xbfd645ffb504e968ae53869c9fdcbcb8d1189449/); base `0xca1f6e4ae690d06e3bf943b9019c5ca060c0b834` | ✅ Audited |
+| Minter | operational_periphery | base | n/a | 2 deployments: base [`0x2092a58c47f3444c82871ecdd5ea1e96c80c59d1`](./contracts/base-8453/0x2092a58c47f3444c82871ecdd5ea1e96c80c59d1/); base `0xc8f98f60ce54e72ccbb18aa8628fa7a2885f098f` | ✅ Audited |
+| Operator | unknown | base | n/a | 2 deployments: base [`0x00f7a0c7e66f0e3a10d9e980e0854ebe0e308625`](./contracts/base-8453/0x00f7a0c7e66f0e3a10d9e980e0854ebe0e308625/); base `0x82b54a5f07a63d2d2d61a92b1a75839aac25a563` | ✅ Audited |
+| Operator | unknown | base | n/a | 2 deployments: base [`0x7ba560d09bd5379216f1e4393906701210cb63fb`](./contracts/base-8453/0x7ba560d09bd5379216f1e4393906701210cb63fb/); base `0xe5141a7287582fd1cc178847f8fc3688198d1a8b` | ✅ Audited |
+| SimpleOracleStrategy | unknown | base | n/a | 2 deployments: base [`0x063150b24807e836eacf8c8420b8922d10b5fb58`](./contracts/base-8453/0x063150b24807e836eacf8c8420b8922d10b5fb58/); base `0x454b85d03ffbf86c2bfb0dacd21d2687d36fe892` | ✅ Audited |
+| SimpleOracleStrategy | unknown | base | n/a | 2 deployments: base [`0x2913c40db3509a4bc3059ba79c5c6013efb9246a`](./contracts/base-8453/0x2913c40db3509a4bc3059ba79c5c6013efb9246a/); base `0x29e07197ccf70d0ac6cb0a3c307627819f5f2777` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 
@@ -93,10 +93,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | base | n/a | `0x000000...64c133` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x6657d1...be8ccc` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x976f96...cd1efd` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xc23995...3e5ccc` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x000000000000bb1b11e5ac8099e92e366b64c133` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x6657d192273731c3cac646cc82d5f28d0cbe8ccc` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x976f96c87ff686ced0c5dc575476463e8acd1efd` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xc239950c389b1ac5c79a336705144cd46d3e5ccc` | ❓ Unverified |
 
 ## Audit Inventory
 

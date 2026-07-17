@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across polygon. Struc
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- TokTokNft (`0x9d6d53...09460a`, chain 137)
+- TokTokNft (`0x9d6d53b5bc498200503bc7abcbdec2b8a009460a`, chain 137)
 
 ## Contract Surface Quality
 
@@ -103,7 +103,7 @@ The pinned logic-topography run contains 1 contract row(s) across polygon. Struc
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| TokTokNft | token | project_anchor | own_supporting | 0 | polygon | unit-266846 | `0x9d6d53...09460a` | ⚠️ Unaudited |
+| TokTokNft | token | project_anchor | own_supporting | 0 | polygon | unit-266846 | `0x9d6d53b5bc498200503bc7abcbdec2b8a009460a` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -150,7 +150,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| polygon | `0x9d6d53...09460a` | TokTokNft | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0x9d6d53b5bc498200503bc7abcbdec2b8a009460a` | TokTokNft | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- StakeToken (`0x3802c2...eb74b8`, chain 1)
+- StakeToken (`0x3802c218221390025bceabbad5d8c59f40eb74b8`, chain 1)
 
 ## Contract Surface Quality
 
@@ -103,10 +103,10 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| DepositContract | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x000000...7705fa` | ⚠️ Unaudited |
-| EthStakingCrowdsale | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x384365...5306e5` | ⚠️ Unaudited |
-| StakeToken | token | project_anchor | own_supporting | 0 | ethereum | unit-386805 | `0x3802c2...eb74b8` | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x408d1f...2ce19f` | ⚠️ Unaudited |
+| DepositContract | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x00000000219ab540356cbb839cbe05303d7705fa` | ⚠️ Unaudited |
+| EthStakingCrowdsale | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x384365838b002f60544ece69153d685c8f5306e5` | ⚠️ Unaudited |
+| StakeToken | token | project_anchor | own_supporting | 0 | ethereum | unit-386805 | `0x3802c218221390025bceabbad5d8c59f40eb74b8` | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x408d1f0a8a6f478f082f34c5eeb41541262ce19f` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -126,7 +126,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-386806 | `0x9ad03c...c416c4` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-386806 | `0x9ad03c34aab604a9e0fde41dbf8e383e11c416c4` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -145,7 +145,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x3802c2...eb74b8` | StakeToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x3802c218221390025bceabbad5d8c59f40eb74b8` | StakeToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

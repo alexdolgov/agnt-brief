@@ -59,14 +59,14 @@ The protocol comprises 3 functional families. Contracts are linked by 1 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| EnjoyoorsVault | core_logic | ethereum | n/a | [`0x59660c...046409`](./contracts/ethereum-1/0x59660cb83da31ec23f9d992c11f80fc527046409/) | ✅ Audited |
-| EnjoyoorsWithdrawalApprover | operational_periphery | ethereum | n/a | [`0x8a4e79...8b7c17`](./contracts/ethereum-1/0x8a4e79d2e12d253f6cefec473439b4b0e98b7c17/) | ✅ Audited |
+| EnjoyoorsVault | core_logic | ethereum | n/a | [`0x59660cb83da31ec23f9d992c11f80fc527046409`](./contracts/ethereum-1/0x59660cb83da31ec23f9d992c11f80fc527046409/) | ✅ Audited |
+| EnjoyoorsWithdrawalApprover | operational_periphery | ethereum | n/a | [`0x8a4e79d2e12d253f6cefec473439b4b0e98b7c17`](./contracts/ethereum-1/0x8a4e79d2e12d253f6cefec473439b4b0e98b7c17/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| TokenLister | token | ethereum | n/a | [`0x8b3f27...ff7b04`](./contracts/ethereum-1/0x8b3f27ae96c43a301067c77dc445af2299ff7b04/) | ⚠️ Unaudited |
+| TokenLister | token | ethereum | n/a | [`0x8b3f27ae96c43a301067c77dc445af2299ff7b04`](./contracts/ethereum-1/0x8b3f27ae96c43a301067c77dc445af2299ff7b04/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -100,7 +100,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x8b3f27...ff7b04`](./contracts/ethereum-1/0x8b3f27ae96c43a301067c77dc445af2299ff7b04/) | TokenLister | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8b3f27ae96c43a301067c77dc445af2299ff7b04`](./contracts/ethereum-1/0x8b3f27ae96c43a301067c77dc445af2299ff7b04/) | TokenLister | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

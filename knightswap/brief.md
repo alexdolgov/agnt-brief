@@ -61,11 +61,11 @@ The protocol comprises 5 functional families. Contracts are linked by 5 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| KnightFactory | registry | bsc | n/a | [`0xf0bc2e...90751f`](./contracts/bsc-56/0xf0bc2e21a76513aa7cc2730c7a1d6dee0790751f/) | ⚠️ Unaudited |
-| KnightRouter | adapter | bsc | n/a | [`0x05e61e...d6c46f`](./contracts/bsc-56/0x05e61e0cdcd2170a76f9568a110cee3afdd6c46f/) | ⚠️ Unaudited |
-| KnightToken | token | bsc | n/a | [`0xd23811...c4abba`](./contracts/bsc-56/0xd23811058eb6e7967d9a00dc3886e75610c4abba/) | ⚠️ Unaudited |
-| MasterChef | unknown | bsc | n/a | 2 deployments: bsc [`0xe50cb7...407414`](./contracts/bsc-56/0xe50cb76a71b0c52ab091860cd61b9ba2fa407414/); bsc `0xf5d8c5...bc1a49` | ⚠️ Unaudited |
-| NFTHELPER | token | bsc | n/a | [`0xe186af...6edc34`](./contracts/bsc-56/0xe186af8f9bfd6385df4340a87650c425506edc34/) | ⚠️ Unaudited |
+| KnightFactory | registry | bsc | n/a | [`0xf0bc2e21a76513aa7cc2730c7a1d6dee0790751f`](./contracts/bsc-56/0xf0bc2e21a76513aa7cc2730c7a1d6dee0790751f/) | ⚠️ Unaudited |
+| KnightRouter | adapter | bsc | n/a | [`0x05e61e0cdcd2170a76f9568a110cee3afdd6c46f`](./contracts/bsc-56/0x05e61e0cdcd2170a76f9568a110cee3afdd6c46f/) | ⚠️ Unaudited |
+| KnightToken | token | bsc | n/a | [`0xd23811058eb6e7967d9a00dc3886e75610c4abba`](./contracts/bsc-56/0xd23811058eb6e7967d9a00dc3886e75610c4abba/) | ⚠️ Unaudited |
+| MasterChef | unknown | bsc | n/a | 2 deployments: bsc [`0xe50cb76a71b0c52ab091860cd61b9ba2fa407414`](./contracts/bsc-56/0xe50cb76a71b0c52ab091860cd61b9ba2fa407414/); bsc `0xf5d8c52a6a3d487c783c570c362a9b006fbc1a49` | ⚠️ Unaudited |
+| NFTHELPER | token | bsc | n/a | [`0xe186af8f9bfd6385df4340a87650c425506edc34`](./contracts/bsc-56/0xe186af8f9bfd6385df4340a87650c425506edc34/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -85,12 +85,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0x1ea8fb...9d02b9` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x77e6d5...8b3f27` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xcaeb6e...ad8262` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xcc84b3...f61620` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xff16d3...5ad8c1` | ❓ Unverified |
-| UnnamedContract | unknown | fantom | n/a | `0x7d82f5...732218` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x1ea8fbd271d56db3d4e5e09c93365d0aa79d02b9` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x77e6d5352d3de6aec92d3ab4b25f159cd98b3f27` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xcaeb6e7d0d973c75cfe3e57b7ba546931dad8262` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xcc84b344f36f2c77431cbb20c175d19a52f61620` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xff16d3aac139079ce9d6ebd56a93c5e3805ad8c1` | ❓ Unverified |
+| UnnamedContract | unknown | fantom | n/a | `0x7d82f56ea0820a9d42b01c3c28f1997721732218` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -104,11 +104,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0xf0bc2e...90751f`](./contracts/bsc-56/0xf0bc2e21a76513aa7cc2730c7a1d6dee0790751f/) | KnightFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x05e61e...d6c46f`](./contracts/bsc-56/0x05e61e0cdcd2170a76f9568a110cee3afdd6c46f/) | KnightRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xd23811...c4abba`](./contracts/bsc-56/0xd23811058eb6e7967d9a00dc3886e75610c4abba/) | KnightToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xe50cb7...407414`](./contracts/bsc-56/0xe50cb76a71b0c52ab091860cd61b9ba2fa407414/) | MasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xe186af...6edc34`](./contracts/bsc-56/0xe186af8f9bfd6385df4340a87650c425506edc34/) | NFTHELPER | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xf0bc2e21a76513aa7cc2730c7a1d6dee0790751f`](./contracts/bsc-56/0xf0bc2e21a76513aa7cc2730c7a1d6dee0790751f/) | KnightFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x05e61e0cdcd2170a76f9568a110cee3afdd6c46f`](./contracts/bsc-56/0x05e61e0cdcd2170a76f9568a110cee3afdd6c46f/) | KnightRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xd23811058eb6e7967d9a00dc3886e75610c4abba`](./contracts/bsc-56/0xd23811058eb6e7967d9a00dc3886e75610c4abba/) | KnightToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xe50cb76a71b0c52ab091860cd61b9ba2fa407414`](./contracts/bsc-56/0xe50cb76a71b0c52ab091860cd61b9ba2fa407414/) | MasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xe186af8f9bfd6385df4340a87650c425506edc34`](./contracts/bsc-56/0xe186af8f9bfd6385df4340a87650c425506edc34/) | NFTHELPER | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

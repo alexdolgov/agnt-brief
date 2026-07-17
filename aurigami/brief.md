@@ -65,8 +65,8 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| EvmErc20 | token | aurora | n/a | 2 deployments: aurora [`0x09c9d4...8d3a4f`](./contracts/aurora-1313161554/0x09c9d464b58d96837f8d8b6f4d9fe4ad408d3a4f/); aurora `0x3d4205...bb7980` | ⚠️ Unaudited |
-| Ply | unknown | ethereum | n/a | [`0x1ab432...2ef90b`](./contracts/ethereum-1/0x1ab43204a195a0fd37edec621482afd3792ef90b/) | ⚠️ Unaudited |
+| EvmErc20 | token | aurora | n/a | 2 deployments: aurora [`0x09c9d464b58d96837f8d8b6f4d9fe4ad408d3a4f`](./contracts/aurora-1313161554/0x09c9d464b58d96837f8d8b6f4d9fe4ad408d3a4f/); aurora `0x3d4205511c25ccd29e3fff6fba0d321b44bb7980` | ⚠️ Unaudited |
+| Ply | unknown | ethereum | n/a | [`0x1ab43204a195a0fd37edec621482afd3792ef90b`](./contracts/ethereum-1/0x1ab43204a195a0fd37edec621482afd3792ef90b/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

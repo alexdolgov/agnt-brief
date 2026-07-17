@@ -61,9 +61,9 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| PancakePair | unknown | bsc | n/a | 2 deployments: bsc [`0x35bc50...1a0622`](./contracts/bsc-56/0x35bc504e05fa91f17552a9c3a6a2e7e9651a0622/); bsc `0x4bcaa3...b55cc2` | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | polygon | n/a | [`0x46489f...246e73`](./contracts/polygon-137/0x46489f825f11d7473d20279699b108acaa246e73/) | ⚠️ Unaudited |
-| WaultSwapPair | unknown | polygon | n/a | [`0x4bd5df...b878e1`](./contracts/polygon-137/0x4bd5df4300b7c5309cb1a0143e4a6d0184b878e1/) | ⚠️ Unaudited |
+| PancakePair | unknown | bsc | n/a | 2 deployments: bsc [`0x35bc504e05fa91f17552a9c3a6a2e7e9651a0622`](./contracts/bsc-56/0x35bc504e05fa91f17552a9c3a6a2e7e9651a0622/); bsc `0x4bcaa3bd33ff733a581df027aad1ebdbddb55cc2` | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | polygon | n/a | [`0x46489f825f11d7473d20279699b108acaa246e73`](./contracts/polygon-137/0x46489f825f11d7473d20279699b108acaa246e73/) | ⚠️ Unaudited |
+| WaultSwapPair | unknown | polygon | n/a | [`0x4bd5df4300b7c5309cb1a0143e4a6d0184b878e1`](./contracts/polygon-137/0x4bd5df4300b7c5309cb1a0143e4a6d0184b878e1/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -96,8 +96,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x35bc50...1a0622`](./contracts/bsc-56/0x35bc504e05fa91f17552a9c3a6a2e7e9651a0622/) | PancakePair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x4bd5df...b878e1`](./contracts/polygon-137/0x4bd5df4300b7c5309cb1a0143e4a6d0184b878e1/) | WaultSwapPair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x35bc504e05fa91f17552a9c3a6a2e7e9651a0622`](./contracts/bsc-56/0x35bc504e05fa91f17552a9c3a6a2e7e9651a0622/) | PancakePair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x4bd5df4300b7c5309cb1a0143e4a6d0184b878e1`](./contracts/polygon-137/0x4bd5df4300b7c5309cb1a0143e4a6d0184b878e1/) | WaultSwapPair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

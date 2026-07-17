@@ -61,22 +61,22 @@ The protocol comprises 6 functional families. Its contracts share 7 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| NonfungiblePositionManager | governance | blast | n/a | [`0x434575...e227f9`](./contracts/blast-81457/0x434575eaea081b735c985fa9bf63cd7b87e227f9/) | ✅ Audited |
-| ThrusterFactory | registry | blast | n/a | 2 deployments: blast [`0x378368...b93fc4`](./contracts/blast-81457/0x37836821a2c03c171fb1a595767f4a16e2b93fc4/); blast `0xb4a7d9...aafa13` | ✅ Audited |
-| ThrusterPair | unknown | blast | n/a | 2 deployments: blast [`0x12c69b...3fc7df`](./contracts/blast-81457/0x12c69bfa3fb3cba75a1defa6e976b87e233fc7df/); blast `0xd2f1a2...dbf477` | ✅ Audited |
-| ThrusterPoolFactory | registry | blast | n/a | [`0x71b08f...016127`](./contracts/blast-81457/0x71b08f13b3c3af35aadeb3949afeb1ded1016127/) | ✅ Audited |
+| NonfungiblePositionManager | governance | blast | n/a | [`0x434575eaea081b735c985fa9bf63cd7b87e227f9`](./contracts/blast-81457/0x434575eaea081b735c985fa9bf63cd7b87e227f9/) | ✅ Audited |
+| ThrusterFactory | registry | blast | n/a | 2 deployments: blast [`0x37836821a2c03c171fb1a595767f4a16e2b93fc4`](./contracts/blast-81457/0x37836821a2c03c171fb1a595767f4a16e2b93fc4/); blast `0xb4a7d971d0adea1c73198c97d7ab3f9ce4aafa13` | ✅ Audited |
+| ThrusterPair | unknown | blast | n/a | 2 deployments: blast [`0x12c69bfa3fb3cba75a1defa6e976b87e233fc7df`](./contracts/blast-81457/0x12c69bfa3fb3cba75a1defa6e976b87e233fc7df/); blast `0xd2f1a205959605550471762e7dea1a034edbf477` | ✅ Audited |
+| ThrusterPoolFactory | registry | blast | n/a | [`0x71b08f13b3c3af35aadeb3949afeb1ded1016127`](./contracts/blast-81457/0x71b08f13b3c3af35aadeb3949afeb1ded1016127/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (7)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BatchDistributor | operational_periphery | blast | n/a | [`0x0561fc...1056ab`](./contracts/blast-81457/0x0561fc4e3c728afc9a0407fa109a2bd2981056ab/) | ⚠️ Unaudited |
-| Curve Fee Distribution | unknown | blast | n/a | [`0xaafa3d...13c65c`](./contracts/blast-81457/0xaafa3db42ea9c114c36a2a033e04c8bc0813c65c/) | ⚠️ Unaudited |
-| Gauge Controller | operational_periphery | blast | n/a | [`0xd40fb8...db2756`](./contracts/blast-81457/0xd40fb88b94d20d5d60a94e00492214061bdb2756/) | ⚠️ Unaudited |
-| Pump | unknown | blast | n/a | [`0x216a5a...b5630a`](./contracts/blast-81457/0x216a5a1135a9dab49fa9ad865e0f22fe22b5630a/) | ⚠️ Unaudited |
-| SwapRouter | adapter | blast | n/a | [`0x337827...0c0555`](./contracts/blast-81457/0x337827814155ecbf24d20231fca4444f530c0555/) | ⚠️ Unaudited |
-| ThrusterRouter | adapter | blast | n/a | 2 deployments: blast [`0x44889b...fb2b4e`](./contracts/blast-81457/0x44889b52b71e60de6ed7de82e2939fcc52fb2b4e/); blast `0x98994a...1650f6` | ⚠️ Unaudited |
-| Voting Escrow | operational_periphery | blast | n/a | [`0xc6de1f...2386a4`](./contracts/blast-81457/0xc6de1f30415352941f7ce784a67b2df1552386a4/) | ⚠️ Unaudited |
+| BatchDistributor | operational_periphery | blast | n/a | [`0x0561fc4e3c728afc9a0407fa109a2bd2981056ab`](./contracts/blast-81457/0x0561fc4e3c728afc9a0407fa109a2bd2981056ab/) | ⚠️ Unaudited |
+| Curve Fee Distribution | unknown | blast | n/a | [`0xaafa3db42ea9c114c36a2a033e04c8bc0813c65c`](./contracts/blast-81457/0xaafa3db42ea9c114c36a2a033e04c8bc0813c65c/) | ⚠️ Unaudited |
+| Gauge Controller | operational_periphery | blast | n/a | [`0xd40fb88b94d20d5d60a94e00492214061bdb2756`](./contracts/blast-81457/0xd40fb88b94d20d5d60a94e00492214061bdb2756/) | ⚠️ Unaudited |
+| Pump | unknown | blast | n/a | [`0x216a5a1135a9dab49fa9ad865e0f22fe22b5630a`](./contracts/blast-81457/0x216a5a1135a9dab49fa9ad865e0f22fe22b5630a/) | ⚠️ Unaudited |
+| SwapRouter | adapter | blast | n/a | [`0x337827814155ecbf24d20231fca4444f530c0555`](./contracts/blast-81457/0x337827814155ecbf24d20231fca4444f530c0555/) | ⚠️ Unaudited |
+| ThrusterRouter | adapter | blast | n/a | 2 deployments: blast [`0x44889b52b71e60de6ed7de82e2939fcc52fb2b4e`](./contracts/blast-81457/0x44889b52b71e60de6ed7de82e2939fcc52fb2b4e/); blast `0x98994a9a7a2570367554589189dc9772241650f6` | ⚠️ Unaudited |
+| Voting Escrow | operational_periphery | blast | n/a | [`0xc6de1f30415352941f7ce784a67b2df1552386a4`](./contracts/blast-81457/0xc6de1f30415352941f7ce784a67b2df1552386a4/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -96,14 +96,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | blast | n/a | `0x18db7b...428397` | ❓ Unverified |
-| UnnamedContract | unknown | blast | n/a | `0x32cad2...a5b412` | ❓ Unverified |
-| UnnamedContract | unknown | blast | n/a | `0x44a2f2...7e968a` | ❓ Unverified |
-| UnnamedContract | unknown | blast | n/a | `0x609fdd...ef3358` | ❓ Unverified |
-| UnnamedContract | unknown | blast | n/a | `0x985924...735e4a` | ❓ Unverified |
-| UnnamedContract | unknown | blast | n/a | `0xc4af38...72ba44` | ❓ Unverified |
-| UnnamedContract | unknown | blast | n/a | `0xd3aad2...22b6d7` | ❓ Unverified |
-| UnnamedContract | unknown | blast | n/a | `0xe79513...11fd87` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0x18db7bd01ff9a30bdbdf3de98c41e2a54a428397` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0x32cad270abfa47a0b9f11da15641c6cb82a5b412` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0x44a2f2303933e71e5fa779ce463c7d71607e968a` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0x609fddd3fa63257c25ba0ac284d76c166bef3358` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0x9859246073f08d1644c496c19be7aa9c02735e4a` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0xc4af384fa1ff36a49c55549811e1b2dc1f72ba44` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0xd3aad230f86e8827b468ea811a1d49644522b6d7` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0xe79513f49f029f6cf1301c16913c4f50c011fd87` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -129,12 +129,12 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| blast | [`0x0561fc...1056ab`](./contracts/blast-81457/0x0561fc4e3c728afc9a0407fa109a2bd2981056ab/) | BatchDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0xd40fb8...db2756`](./contracts/blast-81457/0xd40fb88b94d20d5d60a94e00492214061bdb2756/) | Gauge Controller | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0x216a5a...b5630a`](./contracts/blast-81457/0x216a5a1135a9dab49fa9ad865e0f22fe22b5630a/) | Pump | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0x337827...0c0555`](./contracts/blast-81457/0x337827814155ecbf24d20231fca4444f530c0555/) | SwapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0x44889b...fb2b4e`](./contracts/blast-81457/0x44889b52b71e60de6ed7de82e2939fcc52fb2b4e/) | ThrusterRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | [`0xc6de1f...2386a4`](./contracts/blast-81457/0xc6de1f30415352941f7ce784a67b2df1552386a4/) | Voting Escrow | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x0561fc4e3c728afc9a0407fa109a2bd2981056ab`](./contracts/blast-81457/0x0561fc4e3c728afc9a0407fa109a2bd2981056ab/) | BatchDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0xd40fb88b94d20d5d60a94e00492214061bdb2756`](./contracts/blast-81457/0xd40fb88b94d20d5d60a94e00492214061bdb2756/) | Gauge Controller | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x216a5a1135a9dab49fa9ad865e0f22fe22b5630a`](./contracts/blast-81457/0x216a5a1135a9dab49fa9ad865e0f22fe22b5630a/) | Pump | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x337827814155ecbf24d20231fca4444f530c0555`](./contracts/blast-81457/0x337827814155ecbf24d20231fca4444f530c0555/) | SwapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x44889b52b71e60de6ed7de82e2939fcc52fb2b4e`](./contracts/blast-81457/0x44889b52b71e60de6ed7de82e2939fcc52fb2b4e/) | ThrusterRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0xc6de1f30415352941f7ce784a67b2df1552386a4`](./contracts/blast-81457/0xc6de1f30415352941f7ce784a67b2df1552386a4/) | Voting Escrow | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

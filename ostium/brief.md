@@ -60,27 +60,27 @@ The protocol comprises 7 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| OstiumLockedDepositNft | token | arbitrum | n/a | [`0xb4f112...31c8d3`](./contracts/arbitrum-42161/0xb4f1123be58f5d69e1cf565ed8756c7fcf31c8d3/) | ✅ Audited |
-| OstiumOpenPnl | unknown | arbitrum | unit-12 | [`0xe607ac...d1858c`](./contracts/arbitrum-42161/0xe607ac9ff58697c5978afa1fc1c5c437a6d1858c/) | ✅ Audited |
-| OstiumPairInfos | periphery | arbitrum | unit-3 | [`0x389024...c9d66c`](./contracts/arbitrum-42161/0x3890243a8fc091c626ed26c087a028b46bc9d66c/) | ✅ Audited |
-| OstiumPairsStorage | registry | arbitrum | unit-2 | [`0x260e34...577823`](./contracts/arbitrum-42161/0x260e349f643f12797fdc6f8c9d3df211d5577823/) | ✅ Audited |
-| OstiumPriceUpKeep | operational_periphery | arbitrum | unit-5 | [`0x52b2a7...b77f0c`](./contracts/arbitrum-42161/0x52b2a78e12b09b66c6c8ce291d653d40bab77f0c/) | ✅ Audited |
-| OstiumPrivatePriceUpKeep | operational_periphery | arbitrum | unit-10 | [`0xb71ec9...7a3d36`](./contracts/arbitrum-42161/0xb71ec9ebd8145dacacf6724363143cb5667a3d36/) | ✅ Audited |
-| OstiumRegistry | registry | arbitrum | n/a | [`0x799a13...9608d2`](./contracts/arbitrum-42161/0x799a139ae56e11f0476ace2f6118cfcaed9608d2/) | ✅ Audited |
-| OstiumTimelockOwner | governance | arbitrum | n/a | [`0xeb85dc...23bbf7`](./contracts/arbitrum-42161/0xeb85dc6095c74d36500c9cdcacc15ecdc223bbf7/) | ✅ Audited |
-| OstiumTradesUpKeep | unknown | arbitrum | unit-8 | [`0x959da1...f57324`](./contracts/arbitrum-42161/0x959da1452238f71f17f7da5dba2e9c04fef57324/) | ✅ Audited |
-| OstiumTrading | unknown | arbitrum | unit-6 | [`0x6d0ba1...702411`](./contracts/arbitrum-42161/0x6d0ba1f9996dbd8885827e1b2e8f6593e7702411/) | ✅ Audited |
-| OstiumTradingStorage | unknown | arbitrum | unit-11 | [`0xccd589...3d66e7`](./contracts/arbitrum-42161/0xccd5891083a8acd2074690f65d3024e7d13d66e7/) | ✅ Audited |
-| OstiumVault | core_logic | arbitrum | unit-1 | [`0x20d419...e27f98`](./contracts/arbitrum-42161/0x20d419a8e12c45f88fda7c5760bb6923cee27f98/) | ✅ Audited |
+| OstiumLockedDepositNft | token | arbitrum | n/a | [`0xb4f1123be58f5d69e1cf565ed8756c7fcf31c8d3`](./contracts/arbitrum-42161/0xb4f1123be58f5d69e1cf565ed8756c7fcf31c8d3/) | ✅ Audited |
+| OstiumOpenPnl | unknown | arbitrum | unit-12 | [`0xe607ac9ff58697c5978afa1fc1c5c437a6d1858c`](./contracts/arbitrum-42161/0xe607ac9ff58697c5978afa1fc1c5c437a6d1858c/) | ✅ Audited |
+| OstiumPairInfos | periphery | arbitrum | unit-3 | [`0x3890243a8fc091c626ed26c087a028b46bc9d66c`](./contracts/arbitrum-42161/0x3890243a8fc091c626ed26c087a028b46bc9d66c/) | ✅ Audited |
+| OstiumPairsStorage | registry | arbitrum | unit-2 | [`0x260e349f643f12797fdc6f8c9d3df211d5577823`](./contracts/arbitrum-42161/0x260e349f643f12797fdc6f8c9d3df211d5577823/) | ✅ Audited |
+| OstiumPriceUpKeep | operational_periphery | arbitrum | unit-5 | [`0x52b2a78e12b09b66c6c8ce291d653d40bab77f0c`](./contracts/arbitrum-42161/0x52b2a78e12b09b66c6c8ce291d653d40bab77f0c/) | ✅ Audited |
+| OstiumPrivatePriceUpKeep | operational_periphery | arbitrum | unit-10 | [`0xb71ec9ebd8145dacacf6724363143cb5667a3d36`](./contracts/arbitrum-42161/0xb71ec9ebd8145dacacf6724363143cb5667a3d36/) | ✅ Audited |
+| OstiumRegistry | registry | arbitrum | n/a | [`0x799a139ae56e11f0476ace2f6118cfcaed9608d2`](./contracts/arbitrum-42161/0x799a139ae56e11f0476ace2f6118cfcaed9608d2/) | ✅ Audited |
+| OstiumTimelockOwner | governance | arbitrum | n/a | [`0xeb85dc6095c74d36500c9cdcacc15ecdc223bbf7`](./contracts/arbitrum-42161/0xeb85dc6095c74d36500c9cdcacc15ecdc223bbf7/) | ✅ Audited |
+| OstiumTradesUpKeep | unknown | arbitrum | unit-8 | [`0x959da1452238f71f17f7da5dba2e9c04fef57324`](./contracts/arbitrum-42161/0x959da1452238f71f17f7da5dba2e9c04fef57324/) | ✅ Audited |
+| OstiumTrading | unknown | arbitrum | unit-6 | [`0x6d0ba1f9996dbd8885827e1b2e8f6593e7702411`](./contracts/arbitrum-42161/0x6d0ba1f9996dbd8885827e1b2e8f6593e7702411/) | ✅ Audited |
+| OstiumTradingStorage | unknown | arbitrum | unit-11 | [`0xccd5891083a8acd2074690f65d3024e7d13d66e7`](./contracts/arbitrum-42161/0xccd5891083a8acd2074690f65d3024e7d13d66e7/) | ✅ Audited |
+| OstiumVault | core_logic | arbitrum | unit-1 | [`0x20d419a8e12c45f88fda7c5760bb6923cee27f98`](./contracts/arbitrum-42161/0x20d419a8e12c45f88fda7c5760bb6923cee27f98/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (4)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| OstiumPriceRouter | unknown | arbitrum | unit-9 | 2 deployments: arbitrum [`0x5126c2...63d0ba`](./contracts/arbitrum-42161/0x5126c2a3f681de161198d026facf927b8f63d0ba/); arbitrum `0xab3333...4c4473` | ⚠️ Unaudited |
-| OstiumPriceRouter | unknown | arbitrum | unit-4 | [`0x52453f...f161b4`](./contracts/arbitrum-42161/0x52453fbc4a33f7a2a0a01d67b952625816f161b4/) | ⚠️ Unaudited |
-| OstiumTradingCallbacks | unknown | arbitrum | unit-7 | [`0x7720fc...9742a9`](./contracts/arbitrum-42161/0x7720fc8c8680bf4a1af99d44c6c265a74e9742a9/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | arbitrum | n/a | [`0x083f97...1f4025`](./contracts/arbitrum-42161/0x083f97babf33d4abc03151b5dec98170761f4025/) | ⚠️ Unaudited |
+| OstiumPriceRouter | unknown | arbitrum | unit-9 | 2 deployments: arbitrum [`0x5126c2a3f681de161198d026facf927b8f63d0ba`](./contracts/arbitrum-42161/0x5126c2a3f681de161198d026facf927b8f63d0ba/); arbitrum `0xab33334dff0c0ef02a4cf0bce5c69df0dc4c4473` | ⚠️ Unaudited |
+| OstiumPriceRouter | unknown | arbitrum | unit-4 | [`0x52453fbc4a33f7a2a0a01d67b952625816f161b4`](./contracts/arbitrum-42161/0x52453fbc4a33f7a2a0a01d67b952625816f161b4/) | ⚠️ Unaudited |
+| OstiumTradingCallbacks | unknown | arbitrum | unit-7 | [`0x7720fc8c8680bf4a1af99d44c6c265a74e9742a9`](./contracts/arbitrum-42161/0x7720fc8c8680bf4a1af99d44c6c265a74e9742a9/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | arbitrum | n/a | [`0x083f97babf33d4abc03151b5dec98170761f4025`](./contracts/arbitrum-42161/0x083f97babf33d4abc03151b5dec98170761f4025/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -118,9 +118,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | [`0x5126c2...63d0ba`](./contracts/arbitrum-42161/0x5126c2a3f681de161198d026facf927b8f63d0ba/) | OstiumPriceRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x52453f...f161b4`](./contracts/arbitrum-42161/0x52453fbc4a33f7a2a0a01d67b952625816f161b4/) | OstiumPriceRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x7720fc...9742a9`](./contracts/arbitrum-42161/0x7720fc8c8680bf4a1af99d44c6c265a74e9742a9/) | OstiumTradingCallbacks | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x5126c2a3f681de161198d026facf927b8f63d0ba`](./contracts/arbitrum-42161/0x5126c2a3f681de161198d026facf927b8f63d0ba/) | OstiumPriceRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x52453fbc4a33f7a2a0a01d67b952625816f161b4`](./contracts/arbitrum-42161/0x52453fbc4a33f7a2a0a01d67b952625816f161b4/) | OstiumPriceRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x7720fc8c8680bf4a1af99d44c6c265a74e9742a9`](./contracts/arbitrum-42161/0x7720fc8c8680bf4a1af99d44c6c265a74e9742a9/) | OstiumTradingCallbacks | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -59,11 +59,11 @@ The protocol forms a single structural family (Core Logic) of 5 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Mon | unknown | ethereum | n/a | [`0xc555d6...4a600e`](./contracts/ethereum-1/0xc555d625828c4527d477e595ff1dd5801b4a600e/) | ⚠️ Unaudited |
-| NftBasedClaim | unknown | ethereum | n/a | [`0x2b4f7b...692deb`](./contracts/ethereum-1/0x2b4f7b99fdd1d01b376a3da54990406785692deb/) | ⚠️ Unaudited |
-| StakingAndClaimsRegistry | unknown | ethereum | n/a | [`0x65a8b3...a59780`](./contracts/ethereum-1/0x65a8b32bc4de5e0156dba85ce615d9ef8ea59780/) | ⚠️ Unaudited |
-| WalletBasedClaim | unknown | ethereum | n/a | [`0x0ffe97...f3fc3d`](./contracts/ethereum-1/0x0ffe970e4de8ef267efd6c415ee1a41679f3fc3d/) | ⚠️ Unaudited |
-| WalletBasedClaimWithDirectWithdrawal | unknown | ethereum | n/a | [`0x1c985f...a9cb93`](./contracts/ethereum-1/0x1c985f8dc670c6b4a406fab04316ac12a4a9cb93/) | ⚠️ Unaudited |
+| Mon | unknown | ethereum | n/a | [`0xc555d625828c4527d477e595ff1dd5801b4a600e`](./contracts/ethereum-1/0xc555d625828c4527d477e595ff1dd5801b4a600e/) | ⚠️ Unaudited |
+| NftBasedClaim | unknown | ethereum | n/a | [`0x2b4f7b99fdd1d01b376a3da54990406785692deb`](./contracts/ethereum-1/0x2b4f7b99fdd1d01b376a3da54990406785692deb/) | ⚠️ Unaudited |
+| StakingAndClaimsRegistry | unknown | ethereum | n/a | [`0x65a8b32bc4de5e0156dba85ce615d9ef8ea59780`](./contracts/ethereum-1/0x65a8b32bc4de5e0156dba85ce615d9ef8ea59780/) | ⚠️ Unaudited |
+| WalletBasedClaim | unknown | ethereum | n/a | [`0x0ffe970e4de8ef267efd6c415ee1a41679f3fc3d`](./contracts/ethereum-1/0x0ffe970e4de8ef267efd6c415ee1a41679f3fc3d/) | ⚠️ Unaudited |
+| WalletBasedClaimWithDirectWithdrawal | unknown | ethereum | n/a | [`0x1c985f8dc670c6b4a406fab04316ac12a4a9cb93`](./contracts/ethereum-1/0x1c985f8dc670c6b4a406fab04316ac12a4a9cb93/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -94,11 +94,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xc555d6...4a600e`](./contracts/ethereum-1/0xc555d625828c4527d477e595ff1dd5801b4a600e/) | Mon | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2b4f7b...692deb`](./contracts/ethereum-1/0x2b4f7b99fdd1d01b376a3da54990406785692deb/) | NftBasedClaim | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x65a8b3...a59780`](./contracts/ethereum-1/0x65a8b32bc4de5e0156dba85ce615d9ef8ea59780/) | StakingAndClaimsRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0ffe97...f3fc3d`](./contracts/ethereum-1/0x0ffe970e4de8ef267efd6c415ee1a41679f3fc3d/) | WalletBasedClaim | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1c985f...a9cb93`](./contracts/ethereum-1/0x1c985f8dc670c6b4a406fab04316ac12a4a9cb93/) | WalletBasedClaimWithDirectWithdrawal | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc555d625828c4527d477e595ff1dd5801b4a600e`](./contracts/ethereum-1/0xc555d625828c4527d477e595ff1dd5801b4a600e/) | Mon | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x2b4f7b99fdd1d01b376a3da54990406785692deb`](./contracts/ethereum-1/0x2b4f7b99fdd1d01b376a3da54990406785692deb/) | NftBasedClaim | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x65a8b32bc4de5e0156dba85ce615d9ef8ea59780`](./contracts/ethereum-1/0x65a8b32bc4de5e0156dba85ce615d9ef8ea59780/) | StakingAndClaimsRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0ffe970e4de8ef267efd6c415ee1a41679f3fc3d`](./contracts/ethereum-1/0x0ffe970e4de8ef267efd6c415ee1a41679f3fc3d/) | WalletBasedClaim | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1c985f8dc670c6b4a406fab04316ac12a4a9cb93`](./contracts/ethereum-1/0x1c985f8dc670c6b4a406fab04316ac12a4a9cb93/) | WalletBasedClaimWithDirectWithdrawal | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -56,7 +56,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x708c0e...a322ff`, chain 56)
+- UnnamedContract (`0x708c0e1d2417603d9acb0ae04fefbb93a7a322ff`, chain 56)
 
 ## Contract Surface Quality
 
@@ -102,12 +102,12 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BOX | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x067c54...70eebc` | ⚠️ Unaudited |
-| BoxswapFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x72dee7...082463` | ⚠️ Unaudited |
-| BoxswapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xfd0a50...425bf8` | ⚠️ Unaudited |
-| DPRBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x375223...4b9406` | ⚠️ Unaudited |
-| DPRStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0e3a78...285a9a` | ⚠️ Unaudited |
-| Token | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xa0a2ee...7e90a4` | ⚠️ Unaudited |
+| BOX | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x067c5427ac503fad52382607b18b46537570eebc` | ⚠️ Unaudited |
+| BoxswapFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x72dee7f07d7c2e6a1a5ff52589f672b553082463` | ⚠️ Unaudited |
+| BoxswapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xfd0a50d0350fa7a0cd233fd229baa6703f425bf8` | ⚠️ Unaudited |
+| DPRBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x375223d6ed2b7e08bf7fc552d72eba403e4b9406` | ⚠️ Unaudited |
+| DPRStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0e3a7828ec45530b009adb23dd6fb4d8f8285a9a` | ⚠️ Unaudited |
+| Token | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xa0a2ee912caf7921eaabc866c6ef6fec8f7e90a4` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -127,7 +127,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-383694 | `0x708c0e...a322ff` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-383694 | `0x708c0e1d2417603d9acb0ae04fefbb93a7a322ff` | ❓ Unverified |
 
 ## Audit Inventory
 

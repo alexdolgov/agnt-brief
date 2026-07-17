@@ -61,9 +61,9 @@ The protocol comprises 2 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| DAOFarm | unknown | bsc | n/a | [`0x598ca7...a22781`](./contracts/bsc-56/0x598ca79eee092a084b5f168c4196edb80ea22781/) | ⚠️ Unaudited |
-| Staking | unknown | ethereum | n/a | [`0xd07e86...d6a847`](./contracts/ethereum-1/0xd07e86f68c7b9f9b215a3ca3e79e74bf94d6a847/) | ⚠️ Unaudited |
-| Token | token | ethereum | n/a | [`0x0f51bb...6b09ad`](./contracts/ethereum-1/0x0f51bb10119727a7e5ea3538074fb341f56b09ad/) | ⚠️ Unaudited |
+| DAOFarm | unknown | bsc | n/a | [`0x598ca79eee092a084b5f168c4196edb80ea22781`](./contracts/bsc-56/0x598ca79eee092a084b5f168c4196edb80ea22781/) | ⚠️ Unaudited |
+| Staking | unknown | ethereum | n/a | [`0xd07e86f68c7b9f9b215a3ca3e79e74bf94d6a847`](./contracts/ethereum-1/0xd07e86f68c7b9f9b215a3ca3e79e74bf94d6a847/) | ⚠️ Unaudited |
+| Token | token | ethereum | n/a | [`0x0f51bb10119727a7e5ea3538074fb341f56b09ad`](./contracts/ethereum-1/0x0f51bb10119727a7e5ea3538074fb341f56b09ad/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -83,20 +83,20 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x30e8de...2747bd` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x47617f...669f42` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x4fa001...d87cf8` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x608926...58d856` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x6347d8...1f5bf8` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x6a45b5...4182f6` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x7b03e2...079e0b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x7db84c...f9357f` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x8fed6d...2d302c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xb7301d...7cc23d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xcf5180...3b0490` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xddde91...fdb351` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xe55c9a...b0dde5` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xecb621...b1f74a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x30e8def41d8c70de900dd673c08238f77c2747bd` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x47617f799d7e23d2b6c9f77bf2b58d14cf669f42` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4fa001cbd8a337afdf2a35273e4b45399cd87cf8` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x608926ff4074c2c15c807b8ec250785f9e58d856` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x6347d8a905111b012bb1ce6121db020fa41f5bf8` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x6a45b5b7af56b9ee4c22abc3fdffc8bf014182f6` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x7b03e2261631912b7cedab85eb0ef099eb079e0b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x7db84c4a3cd4359c665b98711bbb4b7450f9357f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x8fed6da93e0e3d0d8416ccfe3c79c210342d302c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb7301df3ced2de2138a294862fcccb184d7cc23d` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xcf5180580c3c300cd9714d28813d4907123b0490` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xddde915b4b1a4d9a83ac166ad6b252d981fdb351` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe55c9a5da032dffd251bba6400d04a0122b0dde5` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xecb62131cfe56b1410bfb109e3c1209917b1f74a` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -116,9 +116,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x598ca7...a22781`](./contracts/bsc-56/0x598ca79eee092a084b5f168c4196edb80ea22781/) | DAOFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xd07e86...d6a847`](./contracts/ethereum-1/0xd07e86f68c7b9f9b215a3ca3e79e74bf94d6a847/) | Staking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0f51bb...6b09ad`](./contracts/ethereum-1/0x0f51bb10119727a7e5ea3538074fb341f56b09ad/) | Token | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x598ca79eee092a084b5f168c4196edb80ea22781`](./contracts/bsc-56/0x598ca79eee092a084b5f168c4196edb80ea22781/) | DAOFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xd07e86f68c7b9f9b215a3ca3e79e74bf94d6a847`](./contracts/ethereum-1/0xd07e86f68c7b9f9b215a3ca3e79e74bf94d6a847/) | Staking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0f51bb10119727a7e5ea3538074fb341f56b09ad`](./contracts/ethereum-1/0x0f51bb10119727a7e5ea3538074fb341f56b09ad/) | Token | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

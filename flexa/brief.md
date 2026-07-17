@@ -60,17 +60,17 @@ The protocol comprises 3 functional families. Its contracts share 2 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Amp | unknown | ethereum | n/a | [`0xff2081...1095c2`](./contracts/ethereum-1/0xff20817765cb7f73d4bde2e66e067e58d11095c2/) | ✅ Audited |
-| FlexaCollateralManager | governance | ethereum | n/a | [`0x706d7f...e7c578`](./contracts/ethereum-1/0x706d7f8b3445d8dfc790c524e3990ef014e7c578/) | ✅ Audited |
+| Amp | unknown | ethereum | n/a | [`0xff20817765cb7f73d4bde2e66e067e58d11095c2`](./contracts/ethereum-1/0xff20817765cb7f73d4bde2e66e067e58d11095c2/) | ✅ Audited |
+| FlexaCollateralManager | governance | ethereum | n/a | [`0x706d7f8b3445d8dfc790c524e3990ef014e7c578`](./contracts/ethereum-1/0x706d7f8b3445d8dfc790c524e3990ef014e7c578/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (4)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AnvilGovernorDelegate | governance | ethereum | n/a | 2 deployments: ethereum [`0x00e83d...4874c9`](./contracts/ethereum-1/0x00e83d0698faf01bd080a4dd2927e6ab7c4874c9/); ethereum `0x123641...b49f49` | ⚠️ Unaudited |
-| CollateralVault | core_logic | ethereum | n/a | [`0x5d2725...1d675f`](./contracts/ethereum-1/0x5d2725fde4d7aa3388da4519ac0449cc031d675f/) | ⚠️ Unaudited |
-| Flexacoin | unknown | ethereum | n/a | [`0x4a57e6...adebde`](./contracts/ethereum-1/0x4a57e687b9126435a9b19e4a802113e266adebde/) | ⚠️ Unaudited |
-| Reward | unknown | ethereum | n/a | [`0xc6a06f...da22da`](./contracts/ethereum-1/0xc6a06f2d000b8cfdd392c4d6ab715a9ff1da22da/) | ⚠️ Unaudited |
+| AnvilGovernorDelegate | governance | ethereum | n/a | 2 deployments: ethereum [`0x00e83d0698faf01bd080a4dd2927e6ab7c4874c9`](./contracts/ethereum-1/0x00e83d0698faf01bd080a4dd2927e6ab7c4874c9/); ethereum `0x123641b8a2063217a96ef88bf608931a43b49f49` | ⚠️ Unaudited |
+| CollateralVault | core_logic | ethereum | n/a | [`0x5d2725fde4d7aa3388da4519ac0449cc031d675f`](./contracts/ethereum-1/0x5d2725fde4d7aa3388da4519ac0449cc031d675f/) | ⚠️ Unaudited |
+| Flexacoin | unknown | ethereum | n/a | [`0x4a57e687b9126435a9b19e4a802113e266adebde`](./contracts/ethereum-1/0x4a57e687b9126435a9b19e4a802113e266adebde/) | ⚠️ Unaudited |
+| Reward | unknown | ethereum | n/a | [`0xc6a06f2d000b8cfdd392c4d6ab715a9ff1da22da`](./contracts/ethereum-1/0xc6a06f2d000b8cfdd392c4d6ab715a9ff1da22da/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -90,7 +90,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x78f5f5...0f8483` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x78f5f531a135e21ce2d1913d289595ab240f8483` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -105,10 +105,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x00e83d...4874c9`](./contracts/ethereum-1/0x00e83d0698faf01bd080a4dd2927e6ab7c4874c9/) | AnvilGovernorDelegate | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x5d2725...1d675f`](./contracts/ethereum-1/0x5d2725fde4d7aa3388da4519ac0449cc031d675f/) | CollateralVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x4a57e6...adebde`](./contracts/ethereum-1/0x4a57e687b9126435a9b19e4a802113e266adebde/) | Flexacoin | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc6a06f...da22da`](./contracts/ethereum-1/0xc6a06f2d000b8cfdd392c4d6ab715a9ff1da22da/) | Reward | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x00e83d0698faf01bd080a4dd2927e6ab7c4874c9`](./contracts/ethereum-1/0x00e83d0698faf01bd080a4dd2927e6ab7c4874c9/) | AnvilGovernorDelegate | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5d2725fde4d7aa3388da4519ac0449cc031d675f`](./contracts/ethereum-1/0x5d2725fde4d7aa3388da4519ac0449cc031d675f/) | CollateralVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4a57e687b9126435a9b19e4a802113e266adebde`](./contracts/ethereum-1/0x4a57e687b9126435a9b19e4a802113e266adebde/) | Flexacoin | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc6a06f2d000b8cfdd392c4d6ab715a9ff1da22da`](./contracts/ethereum-1/0xc6a06f2d000b8cfdd392c4d6ab715a9ff1da22da/) | Reward | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

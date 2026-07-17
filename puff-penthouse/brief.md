@@ -59,10 +59,10 @@ The protocol forms a single structural family (Core Logic) of 4 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| METHL2 | unknown | mantle | n/a | [`0xa1f06b...3c6a2c`](./contracts/mantle-5000/0xa1f06b96f082c470e9759d1090d281b2493c6a2c/) | ⚠️ Unaudited |
-| PepeToken | unknown | mantle | n/a | [`0x8baf44...640477`](./contracts/mantle-5000/0x8baf44b350ef672232a6673e1e128c7875640477/) | ⚠️ Unaudited |
-| Puff | unknown | mantle | n/a | [`0x26a6b0...3be140`](./contracts/mantle-5000/0x26a6b0dcdcfb981362afa56d581e4a7dba3be140/) | ⚠️ Unaudited |
-| TimelockController | unknown | mantle | n/a | [`0x91a194...ec65e5`](./contracts/mantle-5000/0x91a19402818ec3da51ead9db15a4776827ec65e5/) | ⚠️ Unaudited |
+| METHL2 | unknown | mantle | n/a | [`0xa1f06b96f082c470e9759d1090d281b2493c6a2c`](./contracts/mantle-5000/0xa1f06b96f082c470e9759d1090d281b2493c6a2c/) | ⚠️ Unaudited |
+| PepeToken | unknown | mantle | n/a | [`0x8baf44b350ef672232a6673e1e128c7875640477`](./contracts/mantle-5000/0x8baf44b350ef672232a6673e1e128c7875640477/) | ⚠️ Unaudited |
+| Puff | unknown | mantle | n/a | [`0x26a6b0dcdcfb981362afa56d581e4a7dba3be140`](./contracts/mantle-5000/0x26a6b0dcdcfb981362afa56d581e4a7dba3be140/) | ⚠️ Unaudited |
+| TimelockController | unknown | mantle | n/a | [`0x91a19402818ec3da51ead9db15a4776827ec65e5`](./contracts/mantle-5000/0x91a19402818ec3da51ead9db15a4776827ec65e5/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,9 +93,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| mantle | [`0xa1f06b...3c6a2c`](./contracts/mantle-5000/0xa1f06b96f082c470e9759d1090d281b2493c6a2c/) | METHL2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| mantle | [`0x8baf44...640477`](./contracts/mantle-5000/0x8baf44b350ef672232a6673e1e128c7875640477/) | PepeToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| mantle | [`0x26a6b0...3be140`](./contracts/mantle-5000/0x26a6b0dcdcfb981362afa56d581e4a7dba3be140/) | Puff | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| mantle | [`0xa1f06b96f082c470e9759d1090d281b2493c6a2c`](./contracts/mantle-5000/0xa1f06b96f082c470e9759d1090d281b2493c6a2c/) | METHL2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| mantle | [`0x8baf44b350ef672232a6673e1e128c7875640477`](./contracts/mantle-5000/0x8baf44b350ef672232a6673e1e128c7875640477/) | PepeToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| mantle | [`0x26a6b0dcdcfb981362afa56d581e4a7dba3be140`](./contracts/mantle-5000/0x26a6b0dcdcfb981362afa56d581e4a7dba3be140/) | Puff | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

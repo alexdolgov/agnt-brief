@@ -61,17 +61,17 @@ The protocol comprises 3 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CPredictionFactory | unknown | polygon | n/a | [`0x24992f...4b0368`](./contracts/polygon-137/0x24992f91cfaaae97cf0b09057a4c40dc644b0368/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | bsc | n/a | [`0x00199e...874f5c`](./contracts/bsc-56/0x00199e444155f6a06d74cf36315419d39b874f5c/) | ⚠️ Unaudited |
-| PRDTFrontendHelper | unknown | bsc | n/a | [`0x301ab4...0ad4c2`](./contracts/bsc-56/0x301ab4a9bb432a1e034a4b92894d675e2e0ad4c2/) | ⚠️ Unaudited |
-| PRDTMultipleU_V0 | unknown | polygon | n/a | [`0x7529b5...db5a88`](./contracts/polygon-137/0x7529b5550bbba74c095069dc5b370e460edb5a88/) | ⚠️ Unaudited |
-| PRDTToken | unknown | bsc | n/a | [`0x854b5f...cfa301`](./contracts/bsc-56/0x854b5f2bfcc5b7cd05d6259cf5d035af57cfa301/) | ⚠️ Unaudited |
-| PredictionsContract | unknown | polygon | n/a | [`0x35af66...6f6d60`](./contracts/polygon-137/0x35af667afd82de3c224fcfca9a66d32b586f6d60/) | ⚠️ Unaudited |
-| ProBalance | unknown | polygon | n/a | [`0x0b9c8c...6998f5`](./contracts/polygon-137/0x0b9c8c0a04354f41b985c10daf7db30bc66998f5/) | ⚠️ Unaudited |
-| ProBalanceSecondary | unknown | polygon | n/a | [`0x3992a9...85e0fb`](./contracts/polygon-137/0x3992a99134ae42b3be566b8b802388bf1785e0fb/) | ⚠️ Unaudited |
-| SafeProxy | unknown | ethereum | n/a | [`0xd9632d...a77dd4`](./contracts/ethereum-1/0xd9632d09518d940e307580dd1d7b4abd22a77dd4/) | ⚠️ Unaudited |
-| SafeProxy | unknown | bsc | n/a | [`0xd9632d...a77dd4`](./contracts/bsc-56/0xd9632d09518d940e307580dd1d7b4abd22a77dd4/) | ⚠️ Unaudited |
-| SafeProxy | unknown | polygon | n/a | [`0xd9632d...a77dd4`](./contracts/polygon-137/0xd9632d09518d940e307580dd1d7b4abd22a77dd4/) | ⚠️ Unaudited |
+| CPredictionFactory | unknown | polygon | n/a | [`0x24992f91cfaaae97cf0b09057a4c40dc644b0368`](./contracts/polygon-137/0x24992f91cfaaae97cf0b09057a4c40dc644b0368/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | bsc | n/a | [`0x00199e444155f6a06d74cf36315419d39b874f5c`](./contracts/bsc-56/0x00199e444155f6a06d74cf36315419d39b874f5c/) | ⚠️ Unaudited |
+| PRDTFrontendHelper | unknown | bsc | n/a | [`0x301ab4a9bb432a1e034a4b92894d675e2e0ad4c2`](./contracts/bsc-56/0x301ab4a9bb432a1e034a4b92894d675e2e0ad4c2/) | ⚠️ Unaudited |
+| PRDTMultipleU_V0 | unknown | polygon | n/a | [`0x7529b5550bbba74c095069dc5b370e460edb5a88`](./contracts/polygon-137/0x7529b5550bbba74c095069dc5b370e460edb5a88/) | ⚠️ Unaudited |
+| PRDTToken | unknown | bsc | n/a | [`0x854b5f2bfcc5b7cd05d6259cf5d035af57cfa301`](./contracts/bsc-56/0x854b5f2bfcc5b7cd05d6259cf5d035af57cfa301/) | ⚠️ Unaudited |
+| PredictionsContract | unknown | polygon | n/a | [`0x35af667afd82de3c224fcfca9a66d32b586f6d60`](./contracts/polygon-137/0x35af667afd82de3c224fcfca9a66d32b586f6d60/) | ⚠️ Unaudited |
+| ProBalance | unknown | polygon | n/a | [`0x0b9c8c0a04354f41b985c10daf7db30bc66998f5`](./contracts/polygon-137/0x0b9c8c0a04354f41b985c10daf7db30bc66998f5/) | ⚠️ Unaudited |
+| ProBalanceSecondary | unknown | polygon | n/a | [`0x3992a99134ae42b3be566b8b802388bf1785e0fb`](./contracts/polygon-137/0x3992a99134ae42b3be566b8b802388bf1785e0fb/) | ⚠️ Unaudited |
+| SafeProxy | unknown | ethereum | n/a | [`0xd9632d09518d940e307580dd1d7b4abd22a77dd4`](./contracts/ethereum-1/0xd9632d09518d940e307580dd1d7b4abd22a77dd4/) | ⚠️ Unaudited |
+| SafeProxy | unknown | bsc | n/a | [`0xd9632d09518d940e307580dd1d7b4abd22a77dd4`](./contracts/bsc-56/0xd9632d09518d940e307580dd1d7b4abd22a77dd4/) | ⚠️ Unaudited |
+| SafeProxy | unknown | polygon | n/a | [`0xd9632d09518d940e307580dd1d7b4abd22a77dd4`](./contracts/polygon-137/0xd9632d09518d940e307580dd1d7b4abd22a77dd4/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -103,13 +103,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| polygon | [`0x24992f...4b0368`](./contracts/polygon-137/0x24992f91cfaaae97cf0b09057a4c40dc644b0368/) | CPredictionFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x301ab4...0ad4c2`](./contracts/bsc-56/0x301ab4a9bb432a1e034a4b92894d675e2e0ad4c2/) | PRDTFrontendHelper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x7529b5...db5a88`](./contracts/polygon-137/0x7529b5550bbba74c095069dc5b370e460edb5a88/) | PRDTMultipleU_V0 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x854b5f...cfa301`](./contracts/bsc-56/0x854b5f2bfcc5b7cd05d6259cf5d035af57cfa301/) | PRDTToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x35af66...6f6d60`](./contracts/polygon-137/0x35af667afd82de3c224fcfca9a66d32b586f6d60/) | PredictionsContract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x0b9c8c...6998f5`](./contracts/polygon-137/0x0b9c8c0a04354f41b985c10daf7db30bc66998f5/) | ProBalance | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x3992a9...85e0fb`](./contracts/polygon-137/0x3992a99134ae42b3be566b8b802388bf1785e0fb/) | ProBalanceSecondary | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x24992f91cfaaae97cf0b09057a4c40dc644b0368`](./contracts/polygon-137/0x24992f91cfaaae97cf0b09057a4c40dc644b0368/) | CPredictionFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x301ab4a9bb432a1e034a4b92894d675e2e0ad4c2`](./contracts/bsc-56/0x301ab4a9bb432a1e034a4b92894d675e2e0ad4c2/) | PRDTFrontendHelper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x7529b5550bbba74c095069dc5b370e460edb5a88`](./contracts/polygon-137/0x7529b5550bbba74c095069dc5b370e460edb5a88/) | PRDTMultipleU_V0 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x854b5f2bfcc5b7cd05d6259cf5d035af57cfa301`](./contracts/bsc-56/0x854b5f2bfcc5b7cd05d6259cf5d035af57cfa301/) | PRDTToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x35af667afd82de3c224fcfca9a66d32b586f6d60`](./contracts/polygon-137/0x35af667afd82de3c224fcfca9a66d32b586f6d60/) | PredictionsContract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x0b9c8c0a04354f41b985c10daf7db30bc66998f5`](./contracts/polygon-137/0x0b9c8c0a04354f41b985c10daf7db30bc66998f5/) | ProBalance | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x3992a99134ae42b3be566b8b802388bf1785e0fb`](./contracts/polygon-137/0x3992a99134ae42b3be566b8b802388bf1785e0fb/) | ProBalanceSecondary | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

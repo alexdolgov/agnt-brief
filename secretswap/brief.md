@@ -61,10 +61,10 @@ The protocol forms a single structural family (Core Logic) of 4 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| MerkleDistributor | unknown | ethereum | n/a | [`0x421b00...9f6286`](./contracts/ethereum-1/0x421b003b056dad54de1fe44247c1e5b8e69f6286/) | ⚠️ Unaudited |
-| SEFI | unknown | ethereum | n/a | [`0x773258...58b8ac`](./contracts/ethereum-1/0x773258b03c730f84af10dfcb1bfaa7487558b8ac/) | ⚠️ Unaudited |
-| wATOM | unknown | ethereum | n/a | [`0x1cdb22...398b53`](./contracts/ethereum-1/0x1cdb2230dda231dbf3ebbd2a5ef9570a24398b53/) | ⚠️ Unaudited |
-| WrappedSCRT | unknown | ethereum | n/a | [`0x2b89bf...6968be`](./contracts/ethereum-1/0x2b89bf8ba858cd2fcee1fada378d5cd6936968be/) | ⚠️ Unaudited |
+| MerkleDistributor | unknown | ethereum | n/a | [`0x421b003b056dad54de1fe44247c1e5b8e69f6286`](./contracts/ethereum-1/0x421b003b056dad54de1fe44247c1e5b8e69f6286/) | ⚠️ Unaudited |
+| SEFI | unknown | ethereum | n/a | [`0x773258b03c730f84af10dfcb1bfaa7487558b8ac`](./contracts/ethereum-1/0x773258b03c730f84af10dfcb1bfaa7487558b8ac/) | ⚠️ Unaudited |
+| wATOM | unknown | ethereum | n/a | [`0x1cdb2230dda231dbf3ebbd2a5ef9570a24398b53`](./contracts/ethereum-1/0x1cdb2230dda231dbf3ebbd2a5ef9570a24398b53/) | ⚠️ Unaudited |
+| WrappedSCRT | unknown | ethereum | n/a | [`0x2b89bf8ba858cd2fcee1fada378d5cd6936968be`](./contracts/ethereum-1/0x2b89bf8ba858cd2fcee1fada378d5cd6936968be/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,10 +95,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x421b00...9f6286`](./contracts/ethereum-1/0x421b003b056dad54de1fe44247c1e5b8e69f6286/) | MerkleDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x773258...58b8ac`](./contracts/ethereum-1/0x773258b03c730f84af10dfcb1bfaa7487558b8ac/) | SEFI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1cdb22...398b53`](./contracts/ethereum-1/0x1cdb2230dda231dbf3ebbd2a5ef9570a24398b53/) | wATOM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2b89bf...6968be`](./contracts/ethereum-1/0x2b89bf8ba858cd2fcee1fada378d5cd6936968be/) | WrappedSCRT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x421b003b056dad54de1fe44247c1e5b8e69f6286`](./contracts/ethereum-1/0x421b003b056dad54de1fe44247c1e5b8e69f6286/) | MerkleDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x773258b03c730f84af10dfcb1bfaa7487558b8ac`](./contracts/ethereum-1/0x773258b03c730f84af10dfcb1bfaa7487558b8ac/) | SEFI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1cdb2230dda231dbf3ebbd2a5ef9570a24398b53`](./contracts/ethereum-1/0x1cdb2230dda231dbf3ebbd2a5ef9570a24398b53/) | wATOM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x2b89bf8ba858cd2fcee1fada378d5cd6936968be`](./contracts/ethereum-1/0x2b89bf8ba858cd2fcee1fada378d5cd6936968be/) | WrappedSCRT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

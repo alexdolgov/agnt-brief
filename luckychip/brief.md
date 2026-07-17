@@ -59,20 +59,20 @@ The protocol comprises 3 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BetMining | unknown | bsc | n/a | [`0xdb4a01...966cc0`](./contracts/bsc-56/0xdb4a019aa054b0c04cb7d1e25e59d6fe2c966cc0/) | ✅ Audited |
-| LCToken | token | bsc | n/a | 2 deployments: bsc [`0x6012c3...eca8b3`](./contracts/bsc-56/0x6012c3a742f92103d238f1c8306cf8fbcdeca8b3/); bsc `0x640c41...8f842a` | ✅ Audited |
-| LuckyPower | unknown | bsc | n/a | [`0x7353ba...332c5b`](./contracts/bsc-56/0x7353ba5e34b69c623ab552276c6ec89da8332c5b/) | ✅ Audited |
-| MasterChef | unknown | bsc | n/a | [`0x15d2a6...a1ec2b`](./contracts/bsc-56/0x15d2a6fc45af66a2952dc27c40450c1f06a1ec2b/) | ✅ Audited |
+| BetMining | unknown | bsc | n/a | [`0xdb4a019aa054b0c04cb7d1e25e59d6fe2c966cc0`](./contracts/bsc-56/0xdb4a019aa054b0c04cb7d1e25e59d6fe2c966cc0/) | ✅ Audited |
+| LCToken | token | bsc | n/a | 2 deployments: bsc [`0x6012c3a742f92103d238f1c8306cf8fbcdeca8b3`](./contracts/bsc-56/0x6012c3a742f92103d238f1c8306cf8fbcdeca8b3/); bsc `0x640c4126f68543ff0d33487831f608a7898f842a` | ✅ Audited |
+| LuckyPower | unknown | bsc | n/a | [`0x7353ba5e34b69c623ab552276c6ec89da8332c5b`](./contracts/bsc-56/0x7353ba5e34b69c623ab552276c6ec89da8332c5b/) | ✅ Audited |
+| MasterChef | unknown | bsc | n/a | [`0x15d2a6fc45af66a2952dc27c40450c1f06a1ec2b`](./contracts/bsc-56/0x15d2a6fc45af66a2952dc27c40450c1f06a1ec2b/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Dice | unknown | bsc | n/a | 4 deployments: bsc [`0x42276d...6b043f`](./contracts/bsc-56/0x42276d807749cecc25f9e8e25a2a09bb1e6b043f/); bsc `0x682ce0...21db2d`; bsc `0x9a8777...cfcb2b`; bsc `0xda2718...e123fe` | ⚠️ Unaudited |
-| DiceBNB | unknown | bsc | n/a | 3 deployments: bsc [`0x40bd59...53e2cc`](./contracts/bsc-56/0x40bd59e5297cfe3cf0b65a4dc4074ddeac53e2cc/); bsc `0x61730d...a95ba5`; bsc `0xdf3e96...f49630` | ⚠️ Unaudited |
-| DiceToken | unknown | bsc | n/a | 11 deployments: bsc [`0x51c7e2...8cf261`](./contracts/bsc-56/0x51c7e2091ba35052485e745120097b81b08cf261/); bsc `0x6323b8...31403e`; bsc `0x796686...14add8`; bsc `0x928262...d09bc2`; bsc `0xa247b0...4a8aa4`; bsc `0xb48859...30d436`; bsc `0xd2b1d9...8b022d`; bsc `0xe26f35...6b6f88`; bsc `0xe48cc1...79c36f`; bsc `0xe500cd...f778d6`; bsc `0xfb4ee5...07c626` | ⚠️ Unaudited |
-| LuckyFlipBNB | unknown | bsc | n/a | 2 deployments: bsc [`0x193443...6a4e7a`](./contracts/bsc-56/0x1934438465f3f312f913250336e4ff826b6a4e7a/); bsc `0x615116...a055ca` | ⚠️ Unaudited |
-| LuckyGameBNB | unknown | bsc | n/a | [`0x45218e...89f819`](./contracts/bsc-56/0x45218ede6f026f0994c55b6fa3554a8ea989f819/) | ⚠️ Unaudited |
+| Dice | unknown | bsc | n/a | 4 deployments: bsc [`0x42276d807749cecc25f9e8e25a2a09bb1e6b043f`](./contracts/bsc-56/0x42276d807749cecc25f9e8e25a2a09bb1e6b043f/); bsc `0x682ce0e340a0248b4554e14e834969f2e421db2d`; bsc `0x9a877744dfb9fb314ff5c50d34e4f8efd7cfcb2b`; bsc `0xda271857e7c560e6571d6585d6ac6a8683e123fe` | ⚠️ Unaudited |
+| DiceBNB | unknown | bsc | n/a | 3 deployments: bsc [`0x40bd59e5297cfe3cf0b65a4dc4074ddeac53e2cc`](./contracts/bsc-56/0x40bd59e5297cfe3cf0b65a4dc4074ddeac53e2cc/); bsc `0x61730d50624a89c0f8a864d32bb0ed2aaba95ba5`; bsc `0xdf3e96a5d4a0c9aef5f15c642eb736e2a2f49630` | ⚠️ Unaudited |
+| DiceToken | unknown | bsc | n/a | 11 deployments: bsc [`0x51c7e2091ba35052485e745120097b81b08cf261`](./contracts/bsc-56/0x51c7e2091ba35052485e745120097b81b08cf261/); bsc `0x6323b8f77bd1c7129e134697bb8024f68831403e`; bsc `0x79668624c329f605735a10525c12f6eddc14add8`; bsc `0x928262c8b92def1dab5076d53f60e0531cd09bc2`; bsc `0xa247b0b8c8baeb974ae0c64ad4504b30ab4a8aa4`; bsc `0xb48859f5f9154be1d9b239b43471ef665b30d436`; bsc `0xd2b1d99d2e5d2058cce7c267f1f87a78158b022d`; bsc `0xe26f357e9d4cff2d01bd1d4a7b55fb77b86b6f88`; bsc `0xe48cc1803c1310f35879c6e2bf085f78b579c36f`; bsc `0xe500cda37b89bc10cb9329029959a69a3bf778d6`; bsc `0xfb4ee5ed160d4c2658c963aefebc22f7b707c626` | ⚠️ Unaudited |
+| LuckyFlipBNB | unknown | bsc | n/a | 2 deployments: bsc [`0x1934438465f3f312f913250336e4ff826b6a4e7a`](./contracts/bsc-56/0x1934438465f3f312f913250336e4ff826b6a4e7a/); bsc `0x615116667689a49c3c2432984ed5e373bda055ca` | ⚠️ Unaudited |
+| LuckyGameBNB | unknown | bsc | n/a | [`0x45218ede6f026f0994c55b6fa3554a8ea989f819`](./contracts/bsc-56/0x45218ede6f026f0994c55b6fa3554a8ea989f819/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -107,11 +107,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x42276d...6b043f`](./contracts/bsc-56/0x42276d807749cecc25f9e8e25a2a09bb1e6b043f/) | Dice | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x40bd59...53e2cc`](./contracts/bsc-56/0x40bd59e5297cfe3cf0b65a4dc4074ddeac53e2cc/) | DiceBNB | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x51c7e2...8cf261`](./contracts/bsc-56/0x51c7e2091ba35052485e745120097b81b08cf261/) | DiceToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x193443...6a4e7a`](./contracts/bsc-56/0x1934438465f3f312f913250336e4ff826b6a4e7a/) | LuckyFlipBNB | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x45218e...89f819`](./contracts/bsc-56/0x45218ede6f026f0994c55b6fa3554a8ea989f819/) | LuckyGameBNB | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x42276d807749cecc25f9e8e25a2a09bb1e6b043f`](./contracts/bsc-56/0x42276d807749cecc25f9e8e25a2a09bb1e6b043f/) | Dice | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x40bd59e5297cfe3cf0b65a4dc4074ddeac53e2cc`](./contracts/bsc-56/0x40bd59e5297cfe3cf0b65a4dc4074ddeac53e2cc/) | DiceBNB | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x51c7e2091ba35052485e745120097b81b08cf261`](./contracts/bsc-56/0x51c7e2091ba35052485e745120097b81b08cf261/) | DiceToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x1934438465f3f312f913250336e4ff826b6a4e7a`](./contracts/bsc-56/0x1934438465f3f312f913250336e4ff826b6a4e7a/) | LuckyFlipBNB | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x45218ede6f026f0994c55b6fa3554a8ea989f819`](./contracts/bsc-56/0x45218ede6f026f0994c55b6fa3554a8ea989f819/) | LuckyGameBNB | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

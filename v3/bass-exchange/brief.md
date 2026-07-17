@@ -90,22 +90,22 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Token | token | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x1f23b7...aebad8` | ⚠️ Unaudited |
-| Asset | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 5 deployments: base `0x127fce...e49dec`; base `0x1dd576...3bec6d`; base `0x38c9d8...a7d731`; base `0x57d00d...968c39`; base `0x65c252...45d8a9` | ⚠️ Unaudited |
-| DynamicPoolV2 | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x32622a...f6b399` | ⚠️ Unaudited |
-| FeeCollector | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x128acd...0fe3e4`; base `0xa4a730...c9a2c1` | ⚠️ Unaudited |
-| HighCovRatioFeePoolV2 | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb42328...23bbf0` | ⚠️ Unaudited |
-| LiquidityLocker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xf167dd...c8a548` | ⚠️ Unaudited |
-| MasterWombatV4 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x0b1578...68ed0f`; base `0x3af031...39d33b` | ⚠️ Unaudited |
-| MasterWombatV4 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x382980...c2a33d` | ⚠️ Unaudited |
-| ProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x6ce6b9...75ced6` | ⚠️ Unaudited |
-| SkimmableAsset | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x2bcaa7...ec0a6a`; base `0x2f4588...6ebff2` | ⚠️ Unaudited |
-| StakedDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 2 | base | n/a | 3 deployments: base `0x62087a...5880c5`; base `0xa5895b...344333`; base `0xb6d740...7f2832` | ⚠️ Unaudited |
-| TimelockController | governance | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xa8ad2e...331f29` | ⚠️ Unaudited |
-| TokenVesting | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0062e8...56856c` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | proxy | non_address_book | non_address_book_inventory (excluded) | 3 | base | n/a | 4 deployments: base `0x2e07bd...2b014e`; base `0x37917e...383eda`; base `0xe9f28d...55952c`; base `0xfcbf17...52b50d` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x66a55a...8a82e0`; base `0x887976...136853` | ⚠️ Unaudited |
-| WombatRouter02 | adapter | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x34116b...4bdd5a`; base `0x719c28...2b3c52` | ⚠️ Unaudited |
+| Token | token | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x1f23b787053802108fed5b67cf703f0778aebad8` | ⚠️ Unaudited |
+| Asset | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 5 deployments: base `0x127fce29004451beb4e62869adac635353e49dec`; base `0x1dd5763e0014b2f8dee9413c88fe3c1f6d3bec6d`; base `0x38c9d84474fd89fe49e4f3a01408ba15a6a7d731`; base `0x57d00df5d2bb73e709f6cf0e7d84257dd6968c39`; base `0x65c2521bf6af79d53161eeacba58cd2d0045d8a9` | ⚠️ Unaudited |
+| DynamicPoolV2 | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x32622a9e2518440d319dfd8f6d4cb6a1faf6b399` | ⚠️ Unaudited |
+| FeeCollector | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x128acd4983555a84a063da5b0f2d28298a0fe3e4`; base `0xa4a7304a4c6e4626ce421841d2d20dabcfc9a2c1` | ⚠️ Unaudited |
+| HighCovRatioFeePoolV2 | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb42328f9bfdfbde45590473b2161e1a07823bbf0` | ⚠️ Unaudited |
+| LiquidityLocker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xf167dd9bdea0aef6d0709204ecae04df0ac8a548` | ⚠️ Unaudited |
+| MasterWombatV4 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x0b15783d6daf9d7923493e15d958fb4c3468ed0f`; base `0x3af03135ed268b8bc85894eebd5ee50f8739d33b` | ⚠️ Unaudited |
+| MasterWombatV4 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x382980d6eb2f038c003770adb46737b7a0c2a33d` | ⚠️ Unaudited |
+| ProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x6ce6b96dbe6c7808295efd0d8d5567862575ced6` | ⚠️ Unaudited |
+| SkimmableAsset | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x2bcaa79ab66af39a1d1d83749407845394ec0a6a`; base `0x2f458884e0015d1bb936b9a553baf9d5b96ebff2` | ⚠️ Unaudited |
+| StakedDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 2 | base | n/a | 3 deployments: base `0x62087a1ea1fab540e3da3c5ddd0c8721035880c5`; base `0xa5895b5ff267041b968aa82d37a141f08f344333`; base `0xb6d7406f2e4b2680ffcca3ad3c3fab5ee07f2832` | ⚠️ Unaudited |
+| TimelockController | governance | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xa8ad2e09ea8ee9af8d766af960d4328191331f29` | ⚠️ Unaudited |
+| TokenVesting | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0062e8b644631c3562706d39888f2eedc156856c` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | non_address_book | non_address_book_inventory (excluded) | 3 | base | n/a | 4 deployments: base `0x2e07bd7ac8bcb519a08a253bb1db14dd052b014e`; base `0x37917e5de1e5c4a616a895f296de8d8333383eda`; base `0xe9f28d26737ecd1763a64ca88dfed4526555952c`; base `0xfcbf176863a8a2329f11886bbfa802f57e52b50d` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x66a55ad2c419147315428998377cb351468a82e0`; base `0x887976c425b7ca006f56ed2fe279c38a60136853` | ⚠️ Unaudited |
+| WombatRouter02 | adapter | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x34116bf2d73c916cb03b4a505b577b59e74bdd5a`; base `0x719c2829ca36ccf59f6522869aa984088f2b3c52` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -125,10 +125,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0a6156...e48fb4` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x515829...521ba0` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x6ba897...2ecaf2` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb11f5e...8f9a9c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0a6156f86c3b1eccdf51a3217a2d359e3de48fb4` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x515829865242ab88c3f4825289dedcc216521ba0` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x6ba897e91732c8d2f66b94f62515790e362ecaf2` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb11f5e642ef4cf963e45a83e55a8fedcd58f9a9c` | ❓ Unverified |
 
 ## Audit Inventory
 

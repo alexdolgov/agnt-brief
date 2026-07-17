@@ -60,17 +60,17 @@ The protocol comprises 4 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AddrMapper | unknown | ethereum | n/a | [`0x2430ab...4a881a`](./contracts/ethereum-1/0x2430ab56fb46bcac05e39aa947d26e8eef4a881a/) | ✅ Audited |
-| FujiERC1155 | token | ethereum | n/a | [`0x1cf24e...a95484`](./contracts/ethereum-1/0x1cf24e4ec41da581bee223e1affebb62a5a95484/) | ✅ Audited |
-| FujiOracle | unknown | ethereum | n/a | [`0xadf849...7734a8`](./contracts/ethereum-1/0xadf849079d415157cbbdb21bb7542b47077734a8/) | ✅ Audited |
+| AddrMapper | unknown | ethereum | n/a | [`0x2430ab56fb46bcac05e39aa947d26e8eef4a881a`](./contracts/ethereum-1/0x2430ab56fb46bcac05e39aa947d26e8eef4a881a/) | ✅ Audited |
+| FujiERC1155 | token | ethereum | n/a | [`0x1cf24e4ec41da581bee223e1affebb62a5a95484`](./contracts/ethereum-1/0x1cf24e4ec41da581bee223e1affebb62a5a95484/) | ✅ Audited |
+| FujiOracle | unknown | ethereum | n/a | [`0xadf849079d415157cbbdb21bb7542b47077734a8`](./contracts/ethereum-1/0xadf849079d415157cbbdb21bb7542b47077734a8/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Controller | unknown | ethereum | n/a | 3 deployments: ethereum [`0x30c591...7a724a`](./contracts/ethereum-1/0x30c591b64c39ad8e9f5139521cedb077d27a724a/); ethereum `0x3f3668...5f3736`; ethereum `0xb24f10...c3dab7` | ⚠️ Unaudited |
-| Flasher | unknown | ethereum | n/a | 9 deployments: ethereum [`0x01267e...0cccae`](./contracts/ethereum-1/0x01267e6b6ec2196c6e21a64a7f3e3211f10cccae/); ethereum `0x15d2f1...9cb64e`; ethereum `0x3067fe...f9cfb1`; ethereum `0x54f721...f6d985`; ethereum `0x68c3df...84ed83`; ethereum `0x7b2871...a55947`; ethereum `0x845f59...ae62f5`; ethereum `0xd13e1d...25010a`; ethereum `0xf45f46...d3b9d3` | ⚠️ Unaudited |
-| Fliquidator | unknown | ethereum | n/a | 3 deployments: ethereum [`0x53032d...7d9cd2`](./contracts/ethereum-1/0x53032dc4dd5c85efee772b1fe38de05ed27d9cd2/); ethereum `0xd43e4b...ae6268`; ethereum `0xe3a2df...3b2be0` | ⚠️ Unaudited |
+| Controller | unknown | ethereum | n/a | 3 deployments: ethereum [`0x30c591b64c39ad8e9f5139521cedb077d27a724a`](./contracts/ethereum-1/0x30c591b64c39ad8e9f5139521cedb077d27a724a/); ethereum `0x3f366802f4e7576fc5daa82890cc6e04c85f3736`; ethereum `0xb24f1011d255a83093776ba8a8c4cd1d4ec3dab7` | ⚠️ Unaudited |
+| Flasher | unknown | ethereum | n/a | 9 deployments: ethereum [`0x01267e6b6ec2196c6e21a64a7f3e3211f10cccae`](./contracts/ethereum-1/0x01267e6b6ec2196c6e21a64a7f3e3211f10cccae/); ethereum `0x15d2f1f6e1bc3abfa284698b3337cbf98c9cb64e`; ethereum `0x3067fed80acc37e3f018b9c37181aadc0af9cfb1`; ethereum `0x54f72175c40c3f4857b18fe539a85ddb92f6d985`; ethereum `0x68c3dfecc475e51c8c3e67d676cb41d81b84ed83`; ethereum `0x7b28716a339e33b9d42f927196016458aca55947`; ethereum `0x845f591778d05112d4d9709366d4d26f3cae62f5`; ethereum `0xd13e1da292432d06f65479f62d1ef4280125010a`; ethereum `0xf45f46c2c0521c8921447132edcbadb628d3b9d3` | ⚠️ Unaudited |
+| Fliquidator | unknown | ethereum | n/a | 3 deployments: ethereum [`0x53032dc4dd5c85efee772b1fe38de05ed27d9cd2`](./contracts/ethereum-1/0x53032dc4dd5c85efee772b1fe38de05ed27d9cd2/); ethereum `0xd43e4be9125de772237f0bc9701e5ca3afae6268`; ethereum `0xe3a2df184c021b8cbdfe2e89f7d3f495473b2be0` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -90,10 +90,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x76e779...e3adf6` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x9e2b7c...f10951` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc79fcb...c3de66` | ❓ Unverified |
-| UnnamedContract | unknown | fantom | n/a | `0xb4e2ec...721d70` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x76e77921341e4414e60bde4a3f56822c70e3adf6` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x9e2b7c84ebc915f848ba69ba44cf75044cf10951` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc79fcb669b505b5217c477974a1a8f5c86c3de66` | ❓ Unverified |
+| UnnamedContract | unknown | fantom | n/a | `0xb4e2ec87f8e6e166929a900ed433c4589d721d70` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -109,9 +109,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x30c591...7a724a`](./contracts/ethereum-1/0x30c591b64c39ad8e9f5139521cedb077d27a724a/) | Controller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x01267e...0cccae`](./contracts/ethereum-1/0x01267e6b6ec2196c6e21a64a7f3e3211f10cccae/) | Flasher | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x53032d...7d9cd2`](./contracts/ethereum-1/0x53032dc4dd5c85efee772b1fe38de05ed27d9cd2/) | Fliquidator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x30c591b64c39ad8e9f5139521cedb077d27a724a`](./contracts/ethereum-1/0x30c591b64c39ad8e9f5139521cedb077d27a724a/) | Controller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x01267e6b6ec2196c6e21a64a7f3e3211f10cccae`](./contracts/ethereum-1/0x01267e6b6ec2196c6e21a64a7f3e3211f10cccae/) | Flasher | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x53032dc4dd5c85efee772b1fe38de05ed27d9cd2`](./contracts/ethereum-1/0x53032dc4dd5c85efee772b1fe38de05ed27d9cd2/) | Fliquidator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

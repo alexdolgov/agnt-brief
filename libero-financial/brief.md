@@ -59,7 +59,7 @@ The protocol comprises 2 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| LiberoToken | token | bsc | n/a | [`0x0dfcb4...414d78`](./contracts/bsc-56/0x0dfcb45eae071b3b846e220560bbcdd958414d78/) | ✅ Audited |
+| LiberoToken | token | bsc | n/a | [`0x0dfcb45eae071b3b846e220560bbcdd958414d78`](./contracts/bsc-56/0x0dfcb45eae071b3b846e220560bbcdd958414d78/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 
@@ -83,30 +83,30 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0x138d71...8c06ac` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x1420c8...52ac27` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x170c8f...1bb6b0` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x1d8140...48f676` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x30c196...9960a8` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x3f645b...c82d5a` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x42e6e0...8e683d` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x434c02...9adebd` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x46d941...8f1cd4` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x4b81fa...20c11d` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x5eb196...b898eb` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x6b9936...b8c547` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x8e03f9...826c14` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xa78b00...192fe1` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xaaf0f1...757dbe` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xaf44d6...4505e6` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xb2b11d...83040e` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xbaf482...f80c93` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xc30ba6...145862` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xc6d0e9...852da3` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xcd0aee...d0d49f` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xd1df1f...f81f5a` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xeb3a2a...a4008d` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xfc1f59...7ec193` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x138d71f786e553e54913575661e94689d78c06ac` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x1420c81bf26f9c0b6e4029ace64f18bcdf52ac27` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x170c8f96c59070a993411101fe417996271bb6b0` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x1d81400b943eadd8a56920a1c31c541fe048f676` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x30c1963381fdfc8ae59452a1952c809d609960a8` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x3f645b9039bcb31549d75e079db2411d5ac82d5a` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x42e6e0474db2243ac5c8aaa32764e913e78e683d` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x434c0253d4b0aa9890103f6a9840998e689adebd` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x46d941db6e38bc92246ff25a56e543d53f8f1cd4` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x4b81fa598703bb8fc8cd942bd0209c236620c11d` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x5eb196879d5c866d42892aec6294f3270db898eb` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x6b99365359055dec459bb13b7aff3fae02b8c547` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x8e03f9926ddb3f0e957f09ee202278d8eb826c14` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xa78b001772b4e1e846072a57ca622d11f5192fe1` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xaaf0f1df1fab8333647ea1eeda55877926757dbe` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xaf44d6230121a970581e9c2d0fd71acd6f4505e6` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xb2b11d8da4cd9c20410de6eb55bad2734983040e` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xbaf4827909478807b83fb4c718be928cd3f80c93` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xc30ba6ee7b93927db06afac2762c47b2f6145862` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xc6d0e99942c7492c637545811d75960de7852da3` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xcd0aee837d3e6a3fd66d5ec802f9d88869d0d49f` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xd1df1f670f00937a8580655b8ac9bae90ef81f5a` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xeb3a2a3383550bb6bacaccd683c6dca666a4008d` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xfc1f5934062fe5b7e376f569ce19d657467ec193` | ❓ Unverified |
 
 ## Audit Inventory
 

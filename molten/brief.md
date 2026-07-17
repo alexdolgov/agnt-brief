@@ -59,15 +59,15 @@ The protocol comprises 2 functional families. Contracts are linked by 1 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AllowList | unknown | ethereum | n/a | [`0x9b2383...b99dda`](./contracts/ethereum-1/0x9b23837ea87ad2b2ee201cebc53b03bca2b99dda/) | ✅ Audited |
+| AllowList | unknown | ethereum | n/a | [`0x9b23837ea87ad2b2ee201cebc53b03bca2b99dda`](./contracts/ethereum-1/0x9b23837ea87ad2b2ee201cebc53b03bca2b99dda/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BlockedList | unknown | ethereum | n/a | [`0xf62715...97b015`](./contracts/ethereum-1/0xf62715bddce4b8a6ded9e5251bd99ebb7997b015/) | ⚠️ Unaudited |
-| SumerProxy | unknown | ethereum | n/a | [`0x1c2253...7d28e0`](./contracts/ethereum-1/0x1c22531aa9747d76fff8f0a43b37954ca67d28e0/) | ⚠️ Unaudited |
-| Token | unknown | ethereum | n/a | [`0x2f4aac...e50929`](./contracts/ethereum-1/0x2f4aac198df6351b4827adb0a4e1431b0ce50929/) | ⚠️ Unaudited |
+| BlockedList | unknown | ethereum | n/a | [`0xf62715bddce4b8a6ded9e5251bd99ebb7997b015`](./contracts/ethereum-1/0xf62715bddce4b8a6ded9e5251bd99ebb7997b015/) | ⚠️ Unaudited |
+| SumerProxy | unknown | ethereum | n/a | [`0x1c22531aa9747d76fff8f0a43b37954ca67d28e0`](./contracts/ethereum-1/0x1c22531aa9747d76fff8f0a43b37954ca67d28e0/) | ⚠️ Unaudited |
+| Token | unknown | ethereum | n/a | [`0x2f4aac198df6351b4827adb0a4e1431b0ce50929`](./contracts/ethereum-1/0x2f4aac198df6351b4827adb0a4e1431b0ce50929/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -100,9 +100,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xf62715...97b015`](./contracts/ethereum-1/0xf62715bddce4b8a6ded9e5251bd99ebb7997b015/) | BlockedList | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1c2253...7d28e0`](./contracts/ethereum-1/0x1c22531aa9747d76fff8f0a43b37954ca67d28e0/) | SumerProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2f4aac...e50929`](./contracts/ethereum-1/0x2f4aac198df6351b4827adb0a4e1431b0ce50929/) | Token | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xf62715bddce4b8a6ded9e5251bd99ebb7997b015`](./contracts/ethereum-1/0xf62715bddce4b8a6ded9e5251bd99ebb7997b015/) | BlockedList | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1c22531aa9747d76fff8f0a43b37954ca67d28e0`](./contracts/ethereum-1/0x1c22531aa9747d76fff8f0a43b37954ca67d28e0/) | SumerProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x2f4aac198df6351b4827adb0a4e1431b0ce50929`](./contracts/ethereum-1/0x2f4aac198df6351b4827adb0a4e1431b0ce50929/) | Token | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

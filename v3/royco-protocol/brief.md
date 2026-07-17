@@ -52,11 +52,11 @@ The pinned logic-topography run contains 3 contract row(s) across arbitrum, aval
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- AdaptiveCurveYDM (`0x071b0f...e3dfac`, chain 1)
-- ERC1967Proxy (`0x63da12...f2581b`, chain 1)
-- RoycoFactory (`0xd567cc...0bb71d`, chain 1)
-- TransparentUpgradeableProxy (`0xd3f8ed...7a6c2d`, chain 1)
-- VaultProxy (`0xcd9f59...0d2a32`, chain 1)
+- AdaptiveCurveYDM (`0x071b0fa065774b403b8dae0ae93a09df5de3dfac`, chain 1)
+- ERC1967Proxy (`0x63da1229be88fb4d20210147954a1a3e05f2581b`, chain 1)
+- RoycoFactory (`0xd567ccbb336eb71ec2537057e2bcf6db840bb71d`, chain 1)
+- TransparentUpgradeableProxy (`0xd3f8edff57570c4f9b11cc95ea65117e2d7a6c2d`, chain 1)
+- VaultProxy (`0xcd9f5907f92818bc06c9ad70217f089e190d2a32`, chain 1)
 
 ## Contract Surface Quality
 
@@ -101,32 +101,32 @@ The pinned logic-topography run contains 3 contract row(s) across arbitrum, aval
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ConcreteAsyncVaultImpl | core_logic | project_anchor | own_supporting | 1 | ethereum | unit-391709 | `0xcd9f59...0d2a32` | ✅ Audited |
-| MultisigStrategy | core_logic | project_anchor | own_supporting | 1 | ethereum | unit-391711 | `0xd3f8ed...7a6c2d` | ✅ Audited |
-| RoycoEntryPoint | unknown | project_anchor | own_supporting | 1 | ethereum | unit-391712 | `0x63da12...f2581b` | ✅ Audited |
+| ConcreteAsyncVaultImpl | core_logic | project_anchor | own_supporting | 1 | ethereum | unit-391709 | `0xcd9f5907f92818bc06c9ad70217f089e190d2a32` | ✅ Audited |
+| MultisigStrategy | core_logic | project_anchor | own_supporting | 1 | ethereum | unit-391711 | `0xd3f8edff57570c4f9b11cc95ea65117e2d7a6c2d` | ✅ Audited |
+| RoycoEntryPoint | unknown | project_anchor | own_supporting | 1 | ethereum | unit-391712 | `0x63da1229be88fb4d20210147954a1a3e05f2581b` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (18)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AccountantWithRateProviders | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 2 deployments: sonic `0x80f0b2...e6bac9`; sonic `0x830129...b0416e` | ⚠️ Unaudited |
-| AdaptiveCurveYDM | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391707 | `0x071b0f...e3dfac` | ⚠️ Unaudited |
-| ArcticArchitectureLens | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x90983e...16a396`; sonic `0x90983e...16a396` | ⚠️ Unaudited |
-| BoringVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x74d1fa...bad5cc`; sonic `0x74d1fa...bad5cc` | ⚠️ Unaudited |
-| ConcretePredepositVaultImpl | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb1119e...903d8d` | ⚠️ Unaudited |
-| LayerZeroTeller | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x60ebb5...42b0b8` | ⚠️ Unaudited |
-| PredepostVaultOApp | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xb03c43...ea8f04` | ⚠️ Unaudited |
-| RecipeMarketHub | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | 5 deployments: ethereum `0x783251...d937c0`; sonic `0xfcc593...95bdbd`; hyperliquid `0x6af057...6787fd`; base `0x783251...d937c0`; arbitrum `0x783251...d937c0` | ⚠️ Unaudited |
-| RoycoFactory | registry | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x7cc6fb...27253c` | ⚠️ Unaudited |
-| RoycoFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391708 | `0xd567cc...0bb71d` | ⚠️ Unaudited |
-| RoycoFactory | registry | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x7cc6fb...27253c` | ⚠️ Unaudited |
-| RoycoFactory | registry | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | `0x7cc6fb...27253c` | ⚠️ Unaudited |
-| Safe | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-391710 | `0x170ff0...4af6c8` | ⚠️ Unaudited |
-| VaultMarketHub | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0xa97ecc...769280`; arbitrum `0xa97ecc...769280` | ⚠️ Unaudited |
-| WeirollWallet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0x40a1c0...309dc0`; sonic `0x40a1c0...309dc0`; base `0x40a1c0...309dc0`; arbitrum `0x40a1c0...309dc0` | ⚠️ Unaudited |
-| WeirollWalletHelper | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x07899a...7c9911`; sonic `0x07899a...7c9911`; hyperliquid `0x07899a...7c9911`; base `0x07899a...7c9911`; arbitrum `0x07899a...7c9911` | ⚠️ Unaudited |
-| WhitelistUserDepositHook | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5c4952...342f13` | ⚠️ Unaudited |
-| WrappedVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x3c44c2...eb3e66`; sonic `0xb0a396...e2bf33`; base `0x3c44c2...eb3e66`; base `0xb0a396...e2bf33`; arbitrum `0x3c44c2...eb3e66` | ⚠️ Unaudited |
+| AccountantWithRateProviders | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 2 deployments: sonic `0x80f0b206b7e5daa1b1ba4ea1478a33241ee6bac9`; sonic `0x8301294e84ca5a2644e7f3cd47a86369f1b0416e` | ⚠️ Unaudited |
+| AdaptiveCurveYDM | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391707 | `0x071b0fa065774b403b8dae0ae93a09df5de3dfac` | ⚠️ Unaudited |
+| ArcticArchitectureLens | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x90983ebf38e981ae38f7da9e71804380e316a396`; sonic `0x90983ebf38e981ae38f7da9e71804380e316a396` | ⚠️ Unaudited |
+| BoringVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x74d1fafa4e0163b2f1035f1b052137f3f9bad5cc`; sonic `0x74d1fafa4e0163b2f1035f1b052137f3f9bad5cc` | ⚠️ Unaudited |
+| ConcretePredepositVaultImpl | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb1119e9ba782c04c96fa0fe9ce89448650903d8d` | ⚠️ Unaudited |
+| LayerZeroTeller | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x60ebb5d1454bb99aa35f63f609e79179b342b0b8` | ⚠️ Unaudited |
+| PredepostVaultOApp | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xb03c43ab9599d5ad44561317689d147887ea8f04` | ⚠️ Unaudited |
+| RecipeMarketHub | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | 5 deployments: ethereum `0x783251f103555068c1e9d755f69458f39ed937c0`; sonic `0xfcc593ad3705ebcd72ec961c63eb484be795bdbd`; hyperliquid `0x6af057b1c423d108ab710d6f4e3e46f3536787fd`; base `0x783251f103555068c1e9d755f69458f39ed937c0`; arbitrum `0x783251f103555068c1e9d755f69458f39ed937c0` | ⚠️ Unaudited |
+| RoycoFactory | registry | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x7cc6fb28ec7b5e7afc3cb3986141797ffc27253c` | ⚠️ Unaudited |
+| RoycoFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391708 | `0xd567ccbb336eb71ec2537057e2bcf6db840bb71d` | ⚠️ Unaudited |
+| RoycoFactory | registry | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x7cc6fb28ec7b5e7afc3cb3986141797ffc27253c` | ⚠️ Unaudited |
+| RoycoFactory | registry | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | `0x7cc6fb28ec7b5e7afc3cb3986141797ffc27253c` | ⚠️ Unaudited |
+| Safe | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-391710 | `0x170ff06326ebb64bf609a848fc143143994af6c8` | ⚠️ Unaudited |
+| VaultMarketHub | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0xa97ecc6bfda40baf2fdd096dd33e88bd8e769280`; arbitrum `0xa97ecc6bfda40baf2fdd096dd33e88bd8e769280` | ⚠️ Unaudited |
+| WeirollWallet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0x40a1c08084671e9a799b73853e82308225309dc0`; sonic `0x40a1c08084671e9a799b73853e82308225309dc0`; base `0x40a1c08084671e9a799b73853e82308225309dc0`; arbitrum `0x40a1c08084671e9a799b73853e82308225309dc0` | ⚠️ Unaudited |
+| WeirollWalletHelper | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x07899ac8be7462151d6515fcd4773dd9267c9911`; sonic `0x07899ac8be7462151d6515fcd4773dd9267c9911`; hyperliquid `0x07899ac8be7462151d6515fcd4773dd9267c9911`; base `0x07899ac8be7462151d6515fcd4773dd9267c9911`; arbitrum `0x07899ac8be7462151d6515fcd4773dd9267c9911` | ⚠️ Unaudited |
+| WhitelistUserDepositHook | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5c4952751cf5c9d4ea3ad84f3407c56ba2342f13` | ⚠️ Unaudited |
+| WrappedVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x3c44c20377e252567d283dc7746d1bea67eb3e66`; sonic `0xb0a3960b115e0999f33e8afd4a11f16e04e2bf33`; base `0x3c44c20377e252567d283dc7746d1bea67eb3e66`; base `0xb0a3960b115e0999f33e8afd4a11f16e04e2bf33`; arbitrum `0x3c44c20377e252567d283dc7746d1bea67eb3e66` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -146,8 +146,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0x40a1c0...309dc0` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0x595ee7...e301fc` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0x40a1c08084671e9a799b73853e82308225309dc0` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0x595ee728f3b8f5e937f6a21fe20f929dd8e301fc` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -188,15 +188,15 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | hexens.io/audit-reports/royco-risk-tranching-protocol-update-mar-2026 | RoycoVaultTranche | unmatched — not counted | — | finding ROYCO3-3 | no |
 | hexens.io/audit-reports/royco-risk-tranching-protocol-update-mar-2026 | AdaptiveCurveYDM_V1 | unmatched — not counted | — | finding ROYCO3-9 | no |
 | hexens.io/audit-reports/royco-risk-tranching-protocol-update-mar-2026 | AdaptiveCurveYDM_V2 | unmatched — not counted | — | finding ROYCO3-9 | no |
-| hexens.io/audit-reports/royco-entry-point-contract-update-apr-2026 | RoycoEntryPoint | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x63da12...f2581b` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| hexens.io/audit-reports/royco-entry-point-contract-update-apr-2026 | RoycoEntryPoint | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x63da1229be88fb4d20210147954a1a3e05f2581b` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | hexens.io/audit-reports/royco-entry-point-contract-update-apr-2026 | MaplePoolV2_ST_JT_ExitSharePriceToChainlinkOracle_Kernel | unmatched — not counted | — | Finding ROYCO4-2 path | no |
 | hexens.io/audit-reports/royco-entry-point-contract-update-apr-2026 | Identical_ERC20_ST_JT_ChainlinkToAdminOracle_SoulBoundTrancheShares_Kernel | unmatched — not counted | — | Finding ROYCO4-4 path | no |
 | hexens.io/audit-reports/royco-entry-point-contract-update-apr-2026 | RoycoKernel | unmatched — not counted | — | Finding ROYCO4-11 path | no |
 | hexens.io/audit-reports/royco-entry-point-contract-update-apr-2026 | RoycoAccountant | unmatched — not counted | — | Finding ROYCO4-8 path | no |
 | cantinacode-concrete-finance-813b45d86d6450723139b0cc55857c4d.pdf | UpgradeableVault | unmatched — not counted | — | listed in scope | no |
 | cantinacode-concrete-finance-813b45d86d6450723139b0cc55857c4d.pdf | ConcreteFactory | unmatched — not counted | — | listed in scope | no |
-| cantinacode-concrete-finance-813b45d86d6450723139b0cc55857c4d.pdf | VaultProxy | own proxy deployment | VaultProxy (proxy) (selected) `0xcd9f59...0d2a32` — deployed 2026-01-06 17:11:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| cantinacode-concrete-finance-813b45d86d6450723139b0cc55857c4d.pdf | ConcreteAsyncVaultImpl | own proxy deployment | VaultProxy (proxy) (selected) `0xcd9f59...0d2a32` — deployed 2026-01-06 17:11:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| cantinacode-concrete-finance-813b45d86d6450723139b0cc55857c4d.pdf | VaultProxy | own proxy deployment | VaultProxy (proxy) (selected) `0xcd9f5907f92818bc06c9ad70217f089e190d2a32` — deployed 2026-01-06 17:11:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| cantinacode-concrete-finance-813b45d86d6450723139b0cc55857c4d.pdf | ConcreteAsyncVaultImpl | own proxy deployment | VaultProxy (proxy) (selected) `0xcd9f5907f92818bc06c9ad70217f089e190d2a32` — deployed 2026-01-06 17:11:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | cantinacode-concrete-finance-813b45d86d6450723139b0cc55857c4d.pdf | ConcreteBridgedVaultImpl | unmatched — not counted | — | listed in scope | no |
 | cantinacode-concrete-finance-813b45d86d6450723139b0cc55857c4d.pdf | ConcretePredepositVaultImpl | unmatched — not counted | — | listed in scope | no |
 | cantinacode-concrete-finance-813b45d86d6450723139b0cc55857c4d.pdf | ConcreteStandardVaultImpl | unmatched — not counted | — | listed in scope | no |
@@ -243,11 +243,11 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | cantinacode-concrete-finance-813b45d86d6450723139b0cc55857c4d.pdf | PredepostVaultOApp | unmatched — not counted | — | listed in scope | no |
 | cantinacode-concrete-finance-813b45d86d6450723139b0cc55857c4d.pdf | ShareDistributor | unmatched — not counted | — | listed in scope | no |
 | cantinacode-concrete-finance-813b45d86d6450723139b0cc55857c4d.pdf | BaseStrategy | unmatched — not counted | — | listed in scope | no |
-| cantinacode-concrete-finance-813b45d86d6450723139b0cc55857c4d.pdf | MultisigStrategy | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xd3f8ed...7a6c2d` — deployed 2026-01-06 17:20:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| cantinacode-concrete-finance-813b45d86d6450723139b0cc55857c4d.pdf | MultisigStrategy | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xd3f8edff57570c4f9b11cc95ea65117e2d7a6c2d` — deployed 2026-01-06 17:20:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | cantinacode-concrete-finance-813b45d86d6450723139b0cc55857c4d.pdf | SimpleStrategy | unmatched — not counted | — | listed in scope | no |
 | Standard-Implementation-9948d7fcebb518e5c29051bc2326b5ec.pdf | UpgradeableVault | unmatched — not counted | — | listed in scope | no |
 | Standard-Implementation-9948d7fcebb518e5c29051bc2326b5ec.pdf | ConcreteFactory | unmatched — not counted | — | listed in scope | no |
-| Standard-Implementation-9948d7fcebb518e5c29051bc2326b5ec.pdf | VaultProxy | own proxy deployment | VaultProxy (proxy) (selected) `0xcd9f59...0d2a32` — deployed 2026-01-06 17:11:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Standard-Implementation-9948d7fcebb518e5c29051bc2326b5ec.pdf | VaultProxy | own proxy deployment | VaultProxy (proxy) (selected) `0xcd9f5907f92818bc06c9ad70217f089e190d2a32` — deployed 2026-01-06 17:11:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Standard-Implementation-9948d7fcebb518e5c29051bc2326b5ec.pdf | ConcreteStandardVaultImpl | unmatched — not counted | — | listed in scope | no |
 | Standard-Implementation-9948d7fcebb518e5c29051bc2326b5ec.pdf | ConcreteCachedVaultStateStorageLib | unmatched — not counted | — | listed in scope | no |
 | Standard-Implementation-9948d7fcebb518e5c29051bc2326b5ec.pdf | ConcreteFactoryBaseStorageLib | unmatched — not counted | — | listed in scope | no |

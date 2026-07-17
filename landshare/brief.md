@@ -61,14 +61,14 @@ The protocol comprises 2 functional families. Contracts are linked by 3 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AutoLandVaultV3 | unknown | bsc | n/a | [`0x6233ff...e4d4a3`](./contracts/bsc-56/0x6233ffeef97d08db2c763f389eebd9d738e4d4a3/) | ⚠️ Unaudited |
-| DSSwap_Pair | unknown | bsc | n/a | [`0x89bad1...4a1b35`](./contracts/bsc-56/0x89bad177367736c186f7b41a9fba7b23474a1b35/) | ⚠️ Unaudited |
-| LandMigrator | unknown | bsc | n/a | [`0x0c4e44...faca43`](./contracts/bsc-56/0x0c4e4492e0ed41e41cffa59bd5e3189f92faca43/) | ⚠️ Unaudited |
-| LandshareAPIConsumer | unknown | bsc | n/a | [`0x61f8c9...d77735`](./contracts/bsc-56/0x61f8c9fe835e4ca722db3a81a2746260b0d77735/) | ⚠️ Unaudited |
-| LandshareSale | unknown | bsc | n/a | [`0x3e8127...dce833`](./contracts/bsc-56/0x3e8127fe9f832b22a179ed294009357d3fdce833/) | ⚠️ Unaudited |
-| LandshareToken | unknown | bsc | n/a | [`0xa73164...42fa5c`](./contracts/bsc-56/0xa73164db271931cf952cbaeff9e8f5817b42fa5c/) | ⚠️ Unaudited |
-| MasterChef | unknown | bsc | n/a | [`0x3f9458...47f93b`](./contracts/bsc-56/0x3f9458892fb114328bc675e11e71ff10c847f93b/) | ⚠️ Unaudited |
-| PancakePair | unknown | bsc | n/a | [`0x13f80c...5caefa`](./contracts/bsc-56/0x13f80c53b837622e899e1ac0021ed3d1775caefa/) | ⚠️ Unaudited |
+| AutoLandVaultV3 | unknown | bsc | n/a | [`0x6233ffeef97d08db2c763f389eebd9d738e4d4a3`](./contracts/bsc-56/0x6233ffeef97d08db2c763f389eebd9d738e4d4a3/) | ⚠️ Unaudited |
+| DSSwap_Pair | unknown | bsc | n/a | [`0x89bad177367736c186f7b41a9fba7b23474a1b35`](./contracts/bsc-56/0x89bad177367736c186f7b41a9fba7b23474a1b35/) | ⚠️ Unaudited |
+| LandMigrator | unknown | bsc | n/a | [`0x0c4e4492e0ed41e41cffa59bd5e3189f92faca43`](./contracts/bsc-56/0x0c4e4492e0ed41e41cffa59bd5e3189f92faca43/) | ⚠️ Unaudited |
+| LandshareAPIConsumer | unknown | bsc | n/a | [`0x61f8c9fe835e4ca722db3a81a2746260b0d77735`](./contracts/bsc-56/0x61f8c9fe835e4ca722db3a81a2746260b0d77735/) | ⚠️ Unaudited |
+| LandshareSale | unknown | bsc | n/a | [`0x3e8127fe9f832b22a179ed294009357d3fdce833`](./contracts/bsc-56/0x3e8127fe9f832b22a179ed294009357d3fdce833/) | ⚠️ Unaudited |
+| LandshareToken | unknown | bsc | n/a | [`0xa73164db271931cf952cbaeff9e8f5817b42fa5c`](./contracts/bsc-56/0xa73164db271931cf952cbaeff9e8f5817b42fa5c/) | ⚠️ Unaudited |
+| MasterChef | unknown | bsc | n/a | [`0x3f9458892fb114328bc675e11e71ff10c847f93b`](./contracts/bsc-56/0x3f9458892fb114328bc675e11e71ff10c847f93b/) | ⚠️ Unaudited |
+| PancakePair | unknown | bsc | n/a | [`0x13f80c53b837622e899e1ac0021ed3d1775caefa`](./contracts/bsc-56/0x13f80c53b837622e899e1ac0021ed3d1775caefa/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -99,14 +99,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x6233ff...e4d4a3`](./contracts/bsc-56/0x6233ffeef97d08db2c763f389eebd9d738e4d4a3/) | AutoLandVaultV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x89bad1...4a1b35`](./contracts/bsc-56/0x89bad177367736c186f7b41a9fba7b23474a1b35/) | DSSwap_Pair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x0c4e44...faca43`](./contracts/bsc-56/0x0c4e4492e0ed41e41cffa59bd5e3189f92faca43/) | LandMigrator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x61f8c9...d77735`](./contracts/bsc-56/0x61f8c9fe835e4ca722db3a81a2746260b0d77735/) | LandshareAPIConsumer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x3e8127...dce833`](./contracts/bsc-56/0x3e8127fe9f832b22a179ed294009357d3fdce833/) | LandshareSale | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xa73164...42fa5c`](./contracts/bsc-56/0xa73164db271931cf952cbaeff9e8f5817b42fa5c/) | LandshareToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x3f9458...47f93b`](./contracts/bsc-56/0x3f9458892fb114328bc675e11e71ff10c847f93b/) | MasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x13f80c...5caefa`](./contracts/bsc-56/0x13f80c53b837622e899e1ac0021ed3d1775caefa/) | PancakePair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x6233ffeef97d08db2c763f389eebd9d738e4d4a3`](./contracts/bsc-56/0x6233ffeef97d08db2c763f389eebd9d738e4d4a3/) | AutoLandVaultV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x89bad177367736c186f7b41a9fba7b23474a1b35`](./contracts/bsc-56/0x89bad177367736c186f7b41a9fba7b23474a1b35/) | DSSwap_Pair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x0c4e4492e0ed41e41cffa59bd5e3189f92faca43`](./contracts/bsc-56/0x0c4e4492e0ed41e41cffa59bd5e3189f92faca43/) | LandMigrator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x61f8c9fe835e4ca722db3a81a2746260b0d77735`](./contracts/bsc-56/0x61f8c9fe835e4ca722db3a81a2746260b0d77735/) | LandshareAPIConsumer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x3e8127fe9f832b22a179ed294009357d3fdce833`](./contracts/bsc-56/0x3e8127fe9f832b22a179ed294009357d3fdce833/) | LandshareSale | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xa73164db271931cf952cbaeff9e8f5817b42fa5c`](./contracts/bsc-56/0xa73164db271931cf952cbaeff9e8f5817b42fa5c/) | LandshareToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x3f9458892fb114328bc675e11e71ff10c847f93b`](./contracts/bsc-56/0x3f9458892fb114328bc675e11e71ff10c847f93b/) | MasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x13f80c53b837622e899e1ac0021ed3d1775caefa`](./contracts/bsc-56/0x13f80c53b837622e899e1ac0021ed3d1775caefa/) | PancakePair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

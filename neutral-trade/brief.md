@@ -79,10 +79,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0xaae8a5...f84651` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xb03715...1fb823` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xb2246d...6fcd68` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x799e01...3ae6f9` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xaae8a508a5e39c134a4d6a49d7dce82a17f84651` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb03715bec4514ae7d338fcd85053ca227a1fb823` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb2246d6f3ddeeca74cfd29dc3cce05c1746fcd68` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x799e0112977c37f8d93a768cf5a2305bdd3ae6f9` | ❓ Unverified |
 
 ## Audit Inventory
 

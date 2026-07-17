@@ -57,7 +57,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x946bc7...763f2d`, chain 8217)
+- UnnamedContract (`0x946bc715501413b9454bb6a31412a21998763f2d`, chain 8217)
 
 ## Contract Surface Quality
 
@@ -121,7 +121,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | kaia | unit-388308 | `0x946bc7...763f2d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | kaia | unit-388308 | `0x946bc715501413b9454bb6a31412a21998763f2d` | ❓ Unverified |
 
 ## Audit Inventory
 

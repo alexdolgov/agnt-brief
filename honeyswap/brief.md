@@ -62,7 +62,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| MiniMeToken | unknown | gnosis | n/a | [`0x71850b...05eef9`](./contracts/gnosis-100/0x71850b7e9ee3f13ab46d67167341e4bdc905eef9/) | ⚠️ Unaudited |
+| MiniMeToken | unknown | gnosis | n/a | [`0x71850b7e9ee3f13ab46d67167341e4bdc905eef9`](./contracts/gnosis-100/0x71850b7e9ee3f13ab46d67167341e4bdc905eef9/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -94,7 +94,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| gnosis | [`0x71850b...05eef9`](./contracts/gnosis-100/0x71850b7e9ee3f13ab46d67167341e4bdc905eef9/) | MiniMeToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| gnosis | [`0x71850b7e9ee3f13ab46d67167341e4bdc905eef9`](./contracts/gnosis-100/0x71850b7e9ee3f13ab46d67167341e4bdc905eef9/) | MiniMeToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

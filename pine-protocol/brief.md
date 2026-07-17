@@ -59,10 +59,10 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ControlPlane01 | unknown | ethereum | n/a | [`0x19c56c...e481f9`](./contracts/ethereum-1/0x19c56cb20e6e9598fc4d22318436f34981e481f9/) | ⚠️ Unaudited |
-| ERC721LendingPool02 | unknown | ethereum | n/a | [`0x8d525d...c364eb`](./contracts/ethereum-1/0x8d525db8385e1e5f2e63fb38be1a7f6504c364eb/) | ⚠️ Unaudited |
-| LandRover01 | unknown | ethereum | n/a | [`0x5284d9...ce193c`](./contracts/ethereum-1/0x5284d97a1462a767f385ae6ae89ba9065ece193c/) | ⚠️ Unaudited |
-| Pine | unknown | ethereum | n/a | [`0x569424...443a51`](./contracts/ethereum-1/0x569424c5ee13884a193773fdc5d1c5f79c443a51/) | ⚠️ Unaudited |
+| ControlPlane01 | unknown | ethereum | n/a | [`0x19c56cb20e6e9598fc4d22318436f34981e481f9`](./contracts/ethereum-1/0x19c56cb20e6e9598fc4d22318436f34981e481f9/) | ⚠️ Unaudited |
+| ERC721LendingPool02 | unknown | ethereum | n/a | [`0x8d525db8385e1e5f2e63fb38be1a7f6504c364eb`](./contracts/ethereum-1/0x8d525db8385e1e5f2e63fb38be1a7f6504c364eb/) | ⚠️ Unaudited |
+| LandRover01 | unknown | ethereum | n/a | [`0x5284d97a1462a767f385ae6ae89ba9065ece193c`](./contracts/ethereum-1/0x5284d97a1462a767f385ae6ae89ba9065ece193c/) | ⚠️ Unaudited |
+| Pine | unknown | ethereum | n/a | [`0x569424c5ee13884a193773fdc5d1c5f79c443a51`](./contracts/ethereum-1/0x569424c5ee13884a193773fdc5d1c5f79c443a51/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,10 +93,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x19c56c...e481f9`](./contracts/ethereum-1/0x19c56cb20e6e9598fc4d22318436f34981e481f9/) | ControlPlane01 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x8d525d...c364eb`](./contracts/ethereum-1/0x8d525db8385e1e5f2e63fb38be1a7f6504c364eb/) | ERC721LendingPool02 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x5284d9...ce193c`](./contracts/ethereum-1/0x5284d97a1462a767f385ae6ae89ba9065ece193c/) | LandRover01 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x569424...443a51`](./contracts/ethereum-1/0x569424c5ee13884a193773fdc5d1c5f79c443a51/) | Pine | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x19c56cb20e6e9598fc4d22318436f34981e481f9`](./contracts/ethereum-1/0x19c56cb20e6e9598fc4d22318436f34981e481f9/) | ControlPlane01 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8d525db8385e1e5f2e63fb38be1a7f6504c364eb`](./contracts/ethereum-1/0x8d525db8385e1e5f2e63fb38be1a7f6504c364eb/) | ERC721LendingPool02 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5284d97a1462a767f385ae6ae89ba9065ece193c`](./contracts/ethereum-1/0x5284d97a1462a767f385ae6ae89ba9065ece193c/) | LandRover01 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x569424c5ee13884a193773fdc5d1c5f79c443a51`](./contracts/ethereum-1/0x569424c5ee13884a193773fdc5d1c5f79c443a51/) | Pine | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

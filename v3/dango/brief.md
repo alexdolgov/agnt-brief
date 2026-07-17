@@ -90,9 +90,9 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| HypERC20Collateral | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xd05909...c0f36c`; ethereum `0xe07165...fc84f9` | ⚠️ Unaudited |
-| HypNative | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x9d0ea3...cf73d4`; ethereum `0x9d259a...3154cb` | ⚠️ Unaudited |
-| ProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x613942...09e601`; ethereum `0x947303...361fe6` | ⚠️ Unaudited |
+| HypERC20Collateral | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xd05909852ae07118857f9d071781671d12c0f36c`; ethereum `0xe071653043828c9923c79b04b077358d94fc84f9` | ⚠️ Unaudited |
+| HypNative | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x9d0ea335355da17ee89e50df43ab823416cf73d4`; ethereum `0x9d259aa1ec7324c7433b89d2935b08c30f3154cb` | ⚠️ Unaudited |
+| ProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x613942eff27c6886bb2a33a172cdaf03a009e601`; ethereum `0x947303e34c1a2b97fb00c68c1cc4ca97b3361fe6` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

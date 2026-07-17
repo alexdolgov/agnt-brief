@@ -80,7 +80,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | kava | n/a | 18 deployments: kava `0x09d656...10a2e8`; kava `0x0db75e...dd4411`; kava `0x199a0c...a9ed1e`; kava `0x336771...81be2e`; kava `0x471f79...958154`; kava `0x52b180...17d79f`; kava `0x59e38a...2acb7b`; kava `0x670410...a4a080`; kava `0x6eff7d...325f0a`; kava `0x7bff6c...6370bc`; kava `0x7f8ed7...361501`; kava `0x83e315...36f649`; kava `0x990e15...1b9026`; kava `0x9e334c...63bbcf`; kava `0xa07dee...4ae82e`; kava `0xbd9881...ef9c50`; kava `0xc0608a...d58d55`; kava `0xea8481...b15ced` | ❓ Unverified |
+| UnnamedContract | unknown | kava | n/a | 18 deployments: kava `0x09d6561b3795ae237e42f7adf3dc83742e10a2e8`; kava `0x0db75ef798a12312afd98d1884577664f4dd4411`; kava `0x199a0cd96065f50f9f7978c7bb47869503a9ed1e`; kava `0x3367716f07a85c04340b01d95b618d02c681be2e`; kava `0x471f79616569343e8e84a66f342b7b433b958154`; kava `0x52b18024e084150e001a34be9c7a41706517d79f`; kava `0x59e38a5799b64fe17c5fab7e0e5396c15e2acb7b`; kava `0x67041094c4fc1492a1ab988fb8de0ab4a0a4a080`; kava `0x6eff7d2d494bc13949523e3504de1994a6325f0a`; kava `0x7bff6c730da681df03364c955b165576186370bc`; kava `0x7f8ed7d31795dc6f5fc5f6685b11419674361501`; kava `0x83e315fc68f97eaff04468d05eb084c9ed36f649`; kava `0x990e157fc8a492c28f5b50022f000183131b9026`; kava `0x9e334ce82f7659d2967c92a4a399ad694f63bbcf`; kava `0xa07dee8ff35fe2e2961a7e1006eada98e24ae82e`; kava `0xbd98813a2f43587ccec8c0489a5486d1f6ef9c50`; kava `0xc0608a81fe9850360b899d5efc9f34d1ccd58d55`; kava `0xea848151acb1508988e56ee7689f004df2b15ced` | ❓ Unverified |
 
 ## Audit Inventory
 

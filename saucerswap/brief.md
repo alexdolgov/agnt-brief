@@ -62,7 +62,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| InterchainToken | unknown | base | n/a | [`0xa4ff56...45d293`](./contracts/base-8453/0xa4ff56ef7ef4a2cad03cfa130208c9bc1b45d293/) | ⚠️ Unaudited |
+| InterchainToken | unknown | base | n/a | [`0xa4ff56ef7ef4a2cad03cfa130208c9bc1b45d293`](./contracts/base-8453/0xa4ff56ef7ef4a2cad03cfa130208c9bc1b45d293/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -101,7 +101,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0xa4ff56...45d293`](./contracts/base-8453/0xa4ff56ef7ef4a2cad03cfa130208c9bc1b45d293/) | InterchainToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xa4ff56ef7ef4a2cad03cfa130208c9bc1b45d293`](./contracts/base-8453/0xa4ff56ef7ef4a2cad03cfa130208c9bc1b45d293/) | InterchainToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

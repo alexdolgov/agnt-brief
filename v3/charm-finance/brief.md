@@ -52,9 +52,9 @@ The pinned logic-topography run contains 2 contract row(s) across arbitrum, base
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- AlphaProVaultFactory (`0x5b7b8b...9b2afa`, chain 1)
-- AlphaProVaultFactory (`0x189bd7...6ed137`, chain 80094)
-- UnnamedContract (`0xfaf1af...6d8a07`, chain 288)
+- AlphaProVaultFactory (`0x5b7b8b487d05f77977b7abeec5f922925b9b2afa`, chain 1)
+- AlphaProVaultFactory (`0x189bd734c2f1beeaca81e0edbb1ce3b8a16ed137`, chain 80094)
+- UnnamedContract (`0xfaf1af4dc761dba157227a3c06cec9a7486d8a07`, chain 288)
 
 ## Contract Surface Quality
 
@@ -99,30 +99,30 @@ The pinned logic-topography run contains 2 contract row(s) across arbitrum, base
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AlphaProVaultFactory | registry | project_anchor | own_supporting | 0 | berachain | unit-231848 | `0x189bd7...6ed137` | ✅ Audited |
+| AlphaProVaultFactory | registry | project_anchor | own_supporting | 0 | berachain | unit-231848 | `0x189bd734c2f1beeaca81e0edbb1ce3b8a16ed137` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (18)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AlphaProPeriphery | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | 2 deployments: berachain `0xe2ac68...331a66`; berachain `0xf1b21f...39a7ee` | ⚠️ Unaudited |
-| AlphaProVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | 6 deployments: ethereum `0xfaf1af...6d8a07`; polygon `0xfaf1af...6d8a07`; base `0xfaf1af...6d8a07`; arbitrum `0xfaf1af...6d8a07`; berachain `0x0a4b7a...e9baea`; berachain `0xf0f42c...05df61` | ⚠️ Unaudited |
-| AlphaProVaultFactory | registry | project_anchor | own_supporting | 0 | ethereum | unit-231846 | `0x5b7b8b...9b2afa` | ⚠️ Unaudited |
-| AlphaProVaultFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 4 deployments: polygon `0x5b7b8b...9b2afa`; base `0x5b7b8b...9b2afa`; arbitrum `0x5b7b8b...9b2afa`; berachain `0x78f25a...b4ad15` | ⚠️ Unaudited |
-| AlphaStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x40c367...b03526` | ⚠️ Unaudited |
-| AlphaVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0x55535c...d0d21a`; ethereum `0x9bf7b4...164322`; ethereum `0xbd7c6d...4e8a66`; ethereum `0xe72f3e...2c6c11` | ⚠️ Unaudited |
-| CubePool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x23f6a2...bc1b67`; ethereum `0xd9bb96...38e8ff`; ethereum `0xe86e8f...430204` | ⚠️ Unaudited |
-| CubePoolMulticall | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x01cc4a...fffe04`; ethereum `0x1b1686...e6aba7` | ⚠️ Unaudited |
-| CubeToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x63ac15...11a49e` | ⚠️ Unaudited |
-| ManagerStore | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x8c5fa5...c962ed` | ⚠️ Unaudited |
-| OptionFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x443ec3...822e86`; ethereum `0x849eb9...0377d5`; ethereum `0xcdfe16...742f2b` | ⚠️ Unaudited |
-| OptionMarket | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x063555...db3895`; ethereum `0x31d07b...f738ac`; ethereum `0xf3e900...410d80` | ⚠️ Unaudited |
-| OptionRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0x029b6e...533755`; ethereum `0x258ebe...ff33c7`; ethereum `0x574467...dad1cd`; ethereum `0x70de9a...113034` | ⚠️ Unaudited |
-| OptionToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x17b4c8...4b9357`; ethereum `0x22e425...4ddecf`; ethereum `0x51be15...d809a0` | ⚠️ Unaudited |
-| OptionViews | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x3cb5d4...e4e815`; ethereum `0x4c4d29...afd64f` | ⚠️ Unaudited |
-| PassiveRebalanceVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb52f32...4cef52` | ⚠️ Unaudited |
-| PassiveStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x1cea47...ccd836`; ethereum `0x4e0302...c5d5ed`; ethereum `0x5503bb...79a6fd`; ethereum `0x8209df...c5dcd9`; ethereum `0xa6803e...e0c1c3` | ⚠️ Unaudited |
-| TokenVesting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcb591f...73aff4` | ⚠️ Unaudited |
+| AlphaProPeriphery | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | 2 deployments: berachain `0xe2ac68fe15a8e64639aedcda30867cac04331a66`; berachain `0xf1b21f82b69b989fdd750623a83b13996539a7ee` | ⚠️ Unaudited |
+| AlphaProVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | 6 deployments: ethereum `0xfaf1af4dc761dba157227a3c06cec9a7486d8a07`; polygon `0xfaf1af4dc761dba157227a3c06cec9a7486d8a07`; base `0xfaf1af4dc761dba157227a3c06cec9a7486d8a07`; arbitrum `0xfaf1af4dc761dba157227a3c06cec9a7486d8a07`; berachain `0x0a4b7ac0723d0d08de255aa9d574958c66e9baea`; berachain `0xf0f42c62923c6e741c64e0163c5c50965c05df61` | ⚠️ Unaudited |
+| AlphaProVaultFactory | registry | project_anchor | own_supporting | 0 | ethereum | unit-231846 | `0x5b7b8b487d05f77977b7abeec5f922925b9b2afa` | ⚠️ Unaudited |
+| AlphaProVaultFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 4 deployments: polygon `0x5b7b8b487d05f77977b7abeec5f922925b9b2afa`; base `0x5b7b8b487d05f77977b7abeec5f922925b9b2afa`; arbitrum `0x5b7b8b487d05f77977b7abeec5f922925b9b2afa`; berachain `0x78f25a5f78092bd13109a2f889cf324907b4ad15` | ⚠️ Unaudited |
+| AlphaStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x40c36799490042b31efc4d3a7f8bde5d3cb03526` | ⚠️ Unaudited |
+| AlphaVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0x55535c4c56f6bf373e06c43e44c0356aafd0d21a`; ethereum `0x9bf7b46c7ad5ab62034e9349ab912c0345164322`; ethereum `0xbd7c6d2ede836b6b27c461799c4e9ecb8f4e8a66`; ethereum `0xe72f3e105e475d7db3a003ffa377afae9c2c6c11` | ⚠️ Unaudited |
+| CubePool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x23f6a2d8d691294c3a1144eed14f5632e8bc1b67`; ethereum `0xd9bb966a21b133ecdb8a50475329e165d938e8ff`; ethereum `0xe86e8f373dffee8bdc2bcc9ba1a1f860b6430204` | ⚠️ Unaudited |
+| CubePoolMulticall | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x01cc4a364f16b9ed0b77b3be704a5b1b8dfffe04`; ethereum `0x1b16864708f55ec6c34ee23560fa684c9be6aba7` | ⚠️ Unaudited |
+| CubeToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x63ac156aab82af415dd24594529d13e47d11a49e` | ⚠️ Unaudited |
+| ManagerStore | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x8c5fa599334fd98650faecb4c5b2bc40a8c962ed` | ⚠️ Unaudited |
+| OptionFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x443ec3dc7840c3eb610a2a80068dfe3c56822e86`; ethereum `0x849eb90b944070096b0b1629361caae6010377d5`; ethereum `0xcdfe169df3d64e2e43d88794a21048a52c742f2b` | ⚠️ Unaudited |
+| OptionMarket | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x063555aad59cf37ccf915a2dcc807b0a2adb3895`; ethereum `0x31d07b60a3a51122c5ae83eec7ee310443f738ac`; ethereum `0xf3e90025276fcf0955aa66f8f07f090380410d80` | ⚠️ Unaudited |
+| OptionRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0x029b6ed38c86bef3bd4fc2cb390ff00019533755`; ethereum `0x258ebefc228b43c30189e77b362ca1f2a5ff33c7`; ethereum `0x574467e54f1e145d0d1a9a96560a7704fedad1cd`; ethereum `0x70de9a5c1759c863acae67e426b88fa862113034` | ⚠️ Unaudited |
+| OptionToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x17b4c8562f644a87a3b5c1aa53846d61404b9357`; ethereum `0x22e4254dd15d229c8d7cee069051c0da334ddecf`; ethereum `0x51be157502554ef282d6e3fe7118a282e1d809a0` | ⚠️ Unaudited |
+| OptionViews | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x3cb5d4aeb622a72cf971d4f308e767c53be4e815`; ethereum `0x4c4d29e73c651840a561e97b3d87e3d5f1afd64f` | ⚠️ Unaudited |
+| PassiveRebalanceVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb52f322f7534d60807700bd8414d3c498d4cef52` | ⚠️ Unaudited |
+| PassiveStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x1cea471aab8c57118d187315f3d6ae1834ccd836`; ethereum `0x4e03028626aa5e5d5e4cfef2970231b0d6c5d5ed`; ethereum `0x5503bb32a0e37a1f0b8f8fe2006abc33c779a6fd`; ethereum `0x8209df5a847c321d26ecb155ca76f95224c5dcd9`; ethereum `0xa6803e6164ee978d8c511afb23ba49ae0ae0c1c3` | ⚠️ Unaudited |
+| TokenVesting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcb591fa448c9b67e206d404c0d3219011173aff4` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -142,13 +142,13 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbed8a8...fe1319` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd4b456...1067cf` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xbed8a8...fe1319` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | boba | unit-231847 | `0xfaf1af...6d8a07` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbed8a8...fe1319` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xbed8a8...fe1319` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xfcc5d3...780d3b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbed8a8152dd2dbf52275f0f44d42250436fe1319` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd4b4568615cb365bca926910ebc30ea2161067cf` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xbed8a8152dd2dbf52275f0f44d42250436fe1319` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | boba | unit-231847 | `0xfaf1af4dc761dba157227a3c06cec9a7486d8a07` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbed8a8152dd2dbf52275f0f44d42250436fe1319` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xbed8a8152dd2dbf52275f0f44d42250436fe1319` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xfcc5d3b0ba012905e149acab826d452e29780d3b` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -179,10 +179,10 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
 | spaces/ncWpbfiN022KvH5AGrQq/uploads/IM3bniGpiEo24osqeSJ5/report-cantinacode-charm-0604.pdf | AlphaProVault | unmatched — not counted | — | — | no |
-| spaces/ncWpbfiN022KvH5AGrQq/uploads/IM3bniGpiEo24osqeSJ5/report-cantinacode-charm-0604.pdf | AlphaProVaultFactory | own contract | AlphaProVaultFactory (alternative) `0x5b7b8b...9b2afa` — deployed 2023-07-07 13:59:59+03 — liveness: live (current_address_book_code)<br>AlphaProVaultFactory (selected) `0x189bd7...6ed137` — deployed 2025-06-26 19:04:40+03 — liveness: live (current_address_book_code) | deployment-date disambiguation: 2025-06-26 was 25d from audit; next candidate 695d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/ncWpbfiN022KvH5AGrQq/uploads/IM3bniGpiEo24osqeSJ5/report-cantinacode-charm-0604.pdf | AlphaProVaultFactory | own contract | AlphaProVaultFactory (alternative) `0x5b7b8b487d05f77977b7abeec5f922925b9b2afa` — deployed 2023-07-07 13:59:59+03 — liveness: live (current_address_book_code)<br>AlphaProVaultFactory (selected) `0x189bd734c2f1beeaca81e0edbb1ce3b8a16ed137` — deployed 2025-06-26 19:04:40+03 — liveness: live (current_address_book_code) | deployment-date disambiguation: 2025-06-26 was 25d from audit; next candidate 695d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/ncWpbfiN022KvH5AGrQq/uploads/cDHlWmzrwu3w7pAxW6dG/PeckShield-Audit-Report-Charm-v1.0.pdf | AlphaProVault | unmatched — not counted | — | — | no |
 | spaces/ncWpbfiN022KvH5AGrQq/uploads/Lx7bFYx6tcfSpsdqT3jV/PeckShield-Audit-Report-Charm-AlphaPro-v1.0.pdf | AlphaProVault | unmatched — not counted | — | Target in finding PVE-001 and PVE-003 | no |
-| spaces/ncWpbfiN022KvH5AGrQq/uploads/Lx7bFYx6tcfSpsdqT3jV/PeckShield-Audit-Report-Charm-AlphaPro-v1.0.pdf | AlphaProVaultFactory | ambiguous — not counted | AlphaProVaultFactory (alternative) `0x5b7b8b...9b2afa` — deployed 2023-07-07 13:59:59+03 — liveness: live (current_address_book_code)<br>AlphaProVaultFactory (alternative) `0x189bd7...6ed137` — deployed 2025-06-26 19:04:40+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| spaces/ncWpbfiN022KvH5AGrQq/uploads/Lx7bFYx6tcfSpsdqT3jV/PeckShield-Audit-Report-Charm-AlphaPro-v1.0.pdf | AlphaProVaultFactory | ambiguous — not counted | AlphaProVaultFactory (alternative) `0x5b7b8b487d05f77977b7abeec5f922925b9b2afa` — deployed 2023-07-07 13:59:59+03 — liveness: live (current_address_book_code)<br>AlphaProVaultFactory (alternative) `0x189bd734c2f1beeaca81e0edbb1ce3b8a16ed137` — deployed 2025-06-26 19:04:40+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | spaces/ncWpbfiN022KvH5AGrQq/uploads/cblzw4RcfNUsNN1dnlPG/REP-Charm Finance Alpha Vaults-2021-06-30.pdf | AlphaStrategy | unmatched — not counted | — | — | no |
 | spaces/ncWpbfiN022KvH5AGrQq/uploads/cblzw4RcfNUsNN1dnlPG/REP-Charm Finance Alpha Vaults-2021-06-30.pdf | AlphaVault | unmatched — not counted | — | — | no |
 | Audit Report - Charm Finance [27.10.2020].pdf | CharmToken | unmatched — not counted | — | listed in scope | no |
@@ -200,7 +200,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x5b7b8b...9b2afa` | AlphaProVaultFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x5b7b8b487d05f77977b7abeec5f922925b9b2afa` | AlphaProVaultFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

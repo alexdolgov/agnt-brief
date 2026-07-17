@@ -52,36 +52,36 @@ The pinned logic-topography run contains 2 contract row(s) across fraxtal. Struc
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x000000...c78ba3`, chain 252)
-- UnnamedContract (`0x8e01fc...4a1ce3`, chain 252)
-- UnnamedContract (`0x951207...32e30f`, chain 252)
-- UnnamedContract (`0xaaa04d...97322b`, chain 252)
-- UnnamedContract (`0xaaa115...18eae6`, chain 252)
-- UnnamedContract (`0xaaa1c3...271744`, chain 252)
-- UnnamedContract (`0xaaa2a4...e84a2f`, chain 252)
-- UnnamedContract (`0xaaa2d4...b446b7`, chain 252)
-- UnnamedContract (`0xaaa3e4...64cd49`, chain 252)
-- UnnamedContract (`0xaaa425...f46ccc`, chain 252)
-- UnnamedContract (`0xaaa45c...711faa`, chain 252)
-- UnnamedContract (`0xaaa75a...fb30b6`, chain 252)
-- UnnamedContract (`0xaaa78e...45946a`, chain 252)
-- UnnamedContract (`0xaaa7bf...e3f89c`, chain 252)
-- UnnamedContract (`0xaaa823...b71330`, chain 252)
-- UnnamedContract (`0xaaa932...29833b`, chain 252)
-- UnnamedContract (`0xaaa9ea...06d22c`, chain 252)
-- UnnamedContract (`0xaaa9fb...1498fc`, chain 252)
-- UnnamedContract (`0xaaabfd...e12680`, chain 252)
-- UnnamedContract (`0xaaacd7...1a104c`, chain 252)
-- UnnamedContract (`0xaaad7f...755c63`, chain 252)
-- UnnamedContract (`0xaaadc6...af77fc`, chain 252)
-- UnnamedContract (`0xaaae58...d68159`, chain 252)
-- UnnamedContract (`0xaaae99...52483b`, chain 252)
-- UnnamedContract (`0xaaaea1...6bca3d`, chain 252)
-- UnnamedContract (`0xaaaea1...b9ce6f`, chain 252)
-- UnnamedContract (`0xaaaf3d...8d9869`, chain 252)
-- UnnamedContract (`0xaaafc0...7f8562`, chain 252)
-- TransparentUpgradeableProxy (`0xaaa16c...b1ab57`, chain 252)
-- TransparentUpgradeableProxy (`0xaaa329...320c42`, chain 252)
+- UnnamedContract (`0x000000000022d473030f116ddee9f6b43ac78ba3`, chain 252)
+- UnnamedContract (`0x8e01fc0d89b93a6447d6c6eca6fbd30e6e4a1ce3`, chain 252)
+- UnnamedContract (`0x95120704f4e2d545aea8b6b3c16d9da1fa32e30f`, chain 252)
+- UnnamedContract (`0xaaa04d7751adc79e1525b408ba38344c5797322b`, chain 252)
+- UnnamedContract (`0xaaa11500dddb2b67a90d1a154dfb7eabb518eae6`, chain 252)
+- UnnamedContract (`0xaaa1c31cc1d1c2da7e634130ded0ea2043271744`, chain 252)
+- UnnamedContract (`0xaaa2a49958a443dc9d19fddee873b5d1d6e84a2f`, chain 252)
+- UnnamedContract (`0xaaa2d4987eed427ba5e2c933eefcd75c84b446b7`, chain 252)
+- UnnamedContract (`0xaaa3e4bd26221255234904fa9e8a300d3c64cd49`, chain 252)
+- UnnamedContract (`0xaaa42561f12b3a83aa775935adaa6aa975f46ccc`, chain 252)
+- UnnamedContract (`0xaaa45c8f5ef92a000a121d102f4e89278a711faa`, chain 252)
+- UnnamedContract (`0xaaa75a605c2f245a30fb4299e5cdfbf6b4fb30b6`, chain 252)
+- UnnamedContract (`0xaaa78e8c4241990b4ce159e105da08129345946a`, chain 252)
+- UnnamedContract (`0xaaa7bf23e1cee9f5ce70e3d7dffd09cc7ae3f89c`, chain 252)
+- UnnamedContract (`0xaaa823aa799bda3193d46476539bcb1da5b71330`, chain 252)
+- UnnamedContract (`0xaaa932839641c037452f826bb9d7b2057129833b`, chain 252)
+- UnnamedContract (`0xaaa9ea898ae0b7d3805af555af3a2e3bdf06d22c`, chain 252)
+- UnnamedContract (`0xaaa9fb3a08c13ba97ae0f518b3afa5c4a81498fc`, chain 252)
+- UnnamedContract (`0xaaabfd1e45cc93d16c2751645e50f2594be12680`, chain 252)
+- UnnamedContract (`0xaaacd718b331dae78ed62499a08f387d381a104c`, chain 252)
+- UnnamedContract (`0xaaad7f8b00b5ce6f8516ac595f0bb175ae755c63`, chain 252)
+- UnnamedContract (`0xaaadc6c928ec940d171ddde564d5bcca4daf77fc`, chain 252)
+- UnnamedContract (`0xaaae58986b24e422740c8f22b3efb80bcbd68159`, chain 252)
+- UnnamedContract (`0xaaae99091fbb28d400029052821653c1c752483b`, chain 252)
+- UnnamedContract (`0xaaaea10b0e6fbe566fe27c3a023dc5d8ca6bca3d`, chain 252)
+- UnnamedContract (`0xaaaea1fb9f3de3f70e89f37b69ab11b47eb9ce6f`, chain 252)
+- UnnamedContract (`0xaaaf3d9cdd3602d117c67d80eec37a160c8d9869`, chain 252)
+- UnnamedContract (`0xaaafc0791b0ef4d4225d1c1f57dd6a41177f8562`, chain 252)
+- TransparentUpgradeableProxy (`0xaaa16c016bf556fcd620328f0759252e29b1ab57`, chain 252)
+- TransparentUpgradeableProxy (`0xaaa32926fce6be95ea2c51cb4fcb60836d320c42`, chain 252)
 
 ## Contract Surface Quality
 
@@ -127,8 +127,8 @@ The pinned logic-topography run contains 2 contract row(s) across fraxtal. Struc
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | fraxtal | unit-252057 | `0xaaa16c...b1ab57` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | fraxtal | unit-252056 | `0xaaa329...320c42` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | fraxtal | unit-252057 | `0xaaa16c016bf556fcd620328f0759252e29b1ab57` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | fraxtal | unit-252056 | `0xaaa32926fce6be95ea2c51cb4fcb60836d320c42` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -148,34 +148,34 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252027 | `0x000000...c78ba3` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252028 | `0x8e01fc...4a1ce3` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252029 | `0x951207...32e30f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252030 | `0xaaa04d...97322b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252031 | `0xaaa115...18eae6` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252032 | `0xaaa1c3...271744` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252033 | `0xaaa2a4...e84a2f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252034 | `0xaaa2d4...b446b7` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252035 | `0xaaa3e4...64cd49` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252036 | `0xaaa425...f46ccc` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252037 | `0xaaa45c...711faa` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252038 | `0xaaa75a...fb30b6` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252039 | `0xaaa78e...45946a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252040 | `0xaaa7bf...e3f89c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252041 | `0xaaa823...b71330` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252042 | `0xaaa932...29833b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252043 | `0xaaa9ea...06d22c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252044 | `0xaaa9fb...1498fc` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252045 | `0xaaabfd...e12680` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252046 | `0xaaacd7...1a104c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252048 | `0xaaad7f...755c63` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252049 | `0xaaadc6...af77fc` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252050 | `0xaaae58...d68159` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252051 | `0xaaae99...52483b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252052 | `0xaaaea1...6bca3d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252053 | `0xaaaea1...b9ce6f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252054 | `0xaaaf3d...8d9869` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252055 | `0xaaafc0...7f8562` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252027 | `0x000000000022d473030f116ddee9f6b43ac78ba3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252028 | `0x8e01fc0d89b93a6447d6c6eca6fbd30e6e4a1ce3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252029 | `0x95120704f4e2d545aea8b6b3c16d9da1fa32e30f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252030 | `0xaaa04d7751adc79e1525b408ba38344c5797322b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252031 | `0xaaa11500dddb2b67a90d1a154dfb7eabb518eae6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252032 | `0xaaa1c31cc1d1c2da7e634130ded0ea2043271744` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252033 | `0xaaa2a49958a443dc9d19fddee873b5d1d6e84a2f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252034 | `0xaaa2d4987eed427ba5e2c933eefcd75c84b446b7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252035 | `0xaaa3e4bd26221255234904fa9e8a300d3c64cd49` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252036 | `0xaaa42561f12b3a83aa775935adaa6aa975f46ccc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252037 | `0xaaa45c8f5ef92a000a121d102f4e89278a711faa` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252038 | `0xaaa75a605c2f245a30fb4299e5cdfbf6b4fb30b6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252039 | `0xaaa78e8c4241990b4ce159e105da08129345946a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252040 | `0xaaa7bf23e1cee9f5ce70e3d7dffd09cc7ae3f89c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252041 | `0xaaa823aa799bda3193d46476539bcb1da5b71330` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252042 | `0xaaa932839641c037452f826bb9d7b2057129833b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252043 | `0xaaa9ea898ae0b7d3805af555af3a2e3bdf06d22c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252044 | `0xaaa9fb3a08c13ba97ae0f518b3afa5c4a81498fc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252045 | `0xaaabfd1e45cc93d16c2751645e50f2594be12680` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252046 | `0xaaacd718b331dae78ed62499a08f387d381a104c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252048 | `0xaaad7f8b00b5ce6f8516ac595f0bb175ae755c63` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252049 | `0xaaadc6c928ec940d171ddde564d5bcca4daf77fc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252050 | `0xaaae58986b24e422740c8f22b3efb80bcbd68159` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252051 | `0xaaae99091fbb28d400029052821653c1c752483b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252052 | `0xaaaea10b0e6fbe566fe27c3a023dc5d8ca6bca3d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252053 | `0xaaaea1fb9f3de3f70e89f37b69ab11b47eb9ce6f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252054 | `0xaaaf3d9cdd3602d117c67d80eec37a160c8d9869` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-252055 | `0xaaafc0791b0ef4d4225d1c1f57dd6a41177f8562` | ❓ Unverified |
 
 ## Audit Inventory
 

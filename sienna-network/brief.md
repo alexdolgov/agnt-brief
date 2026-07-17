@@ -62,7 +62,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| WrappedSienna | unknown | bsc | n/a | [`0x130f6e...d7ba9b`](./contracts/bsc-56/0x130f6e4d338bfd8304f5342d759abe5c6bd7ba9b/) | ⚠️ Unaudited |
+| WrappedSienna | unknown | bsc | n/a | [`0x130f6e4d338bfd8304f5342d759abe5c6bd7ba9b`](./contracts/bsc-56/0x130f6e4d338bfd8304f5342d759abe5c6bd7ba9b/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,7 +93,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x130f6e...d7ba9b`](./contracts/bsc-56/0x130f6e4d338bfd8304f5342d759abe5c6bd7ba9b/) | WrappedSienna | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x130f6e4d338bfd8304f5342d759abe5c6bd7ba9b`](./contracts/bsc-56/0x130f6e4d338bfd8304f5342d759abe5c6bd7ba9b/) | WrappedSienna | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

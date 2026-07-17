@@ -52,24 +52,24 @@ The pinned logic-topography run contains 3 contract row(s) across bsc, ethereum.
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x009cf7...cea9b0`, chain 56)
-- UnnamedContract (`0x1ee38d...08e6fb`, chain 56)
-- UnnamedContract (`0x2170ed...f933f8`, chain 56)
-- UnnamedContract (`0x23396c...49d6fc`, chain 56)
-- UnnamedContract (`0x3c3f20...df3b91`, chain 56)
-- UnnamedContract (`0x3c6919...f0012a`, chain 56)
-- UnnamedContract (`0x55d398...197955`, chain 56)
-- UnnamedContract (`0x5e7409...e396a1`, chain 56)
-- UnnamedContract (`0x94b418...aad07e`, chain 56)
-- UnnamedContract (`0xbb4cdb...bc095c`, chain 56)
-- UnnamedContract (`0xdf4dbf...0e388a`, chain 56)
-- UnnamedContract (`0xdf7952...0dba07`, chain 56)
-- UnnamedContract (`0xe7e53a...97e149`, chain 56)
-- UnnamedContract (`0xe9e7ce...087d56`, chain 56)
-- UnnamedContract (`0xfee8a1...380849`, chain 56)
-- PureChef (`0xb8692d...09adb8`, chain 56)
-- PureToken (`0x481f05...ad89bc`, chain 56)
-- SingleChef (`0x63621a...47b0f4`, chain 56)
+- UnnamedContract (`0x009cf7bc57584b7998236eff51b98a168dcea9b0`, chain 56)
+- UnnamedContract (`0x1ee38d535d541c55c9dae27b12edf090c608e6fb`, chain 56)
+- UnnamedContract (`0x2170ed0880ac9a755fd29b2688956bd959f933f8`, chain 56)
+- UnnamedContract (`0x23396cf899ca06c4472205fc903bdb4de249d6fc`, chain 56)
+- UnnamedContract (`0x3c3f2049cc17c136a604be23cf7e42745edf3b91`, chain 56)
+- UnnamedContract (`0x3c6919b132462c1fec572c6300e83191f4f0012a`, chain 56)
+- UnnamedContract (`0x55d398326f99059ff775485246999027b3197955`, chain 56)
+- UnnamedContract (`0x5e74094cd416f55179dbd0e45b1a8ed030e396a1`, chain 56)
+- UnnamedContract (`0x94b4188d143b9dd6bd7083ae38a461fcc6aad07e`, chain 56)
+- UnnamedContract (`0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c`, chain 56)
+- UnnamedContract (`0xdf4dbf6536201370f95e06a0f8a7a70fe40e388a`, chain 56)
+- UnnamedContract (`0xdf7952b35f24acf7fc0487d01c8d5690a60dba07`, chain 56)
+- UnnamedContract (`0xe7e53a7e9e3cf6b840f167ef69519175c497e149`, chain 56)
+- UnnamedContract (`0xe9e7cea3dedca5984780bafc599bd69add087d56`, chain 56)
+- UnnamedContract (`0xfee8a195570a18461146f401d6033f5ab3380849`, chain 56)
+- PureChef (`0xb8692d7768cc70c8309b669c1f5a3d856909adb8`, chain 56)
+- PureToken (`0x481f0557fb3bb5ee461fd47f287b1ca944ad89bc`, chain 56)
+- SingleChef (`0x63621a878f6eae37dc5bdedb2b828d9e3747b0f4`, chain 56)
 
 ## Contract Surface Quality
 
@@ -115,12 +115,12 @@ The pinned logic-topography run contains 3 contract row(s) across bsc, ethereum.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| PureChef | unknown | project_anchor | own_supporting | 0 | bsc | unit-391250 | `0xb8692d...09adb8` | ⚠️ Unaudited |
-| PureMaker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xa7d7c0...082698` | ⚠️ Unaudited |
-| PureSwapFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x208382...395958` | ⚠️ Unaudited |
-| PureSwapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3e8743...87f305` | ⚠️ Unaudited |
-| PureToken | unknown | project_anchor | own_supporting | 0 | bsc | unit-391235 | `0x481f05...ad89bc` | ⚠️ Unaudited |
-| SingleChef | unknown | project_anchor | own_supporting | 0 | bsc | unit-391240 | `0x63621a...47b0f4` | ⚠️ Unaudited |
+| PureChef | unknown | project_anchor | own_supporting | 0 | bsc | unit-391250 | `0xb8692d7768cc70c8309b669c1f5a3d856909adb8` | ⚠️ Unaudited |
+| PureMaker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xa7d7c06928a6a255a8e7083433f3fcea08082698` | ⚠️ Unaudited |
+| PureSwapFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x208382f44c3042a4d788fd185133a76154395958` | ⚠️ Unaudited |
+| PureSwapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3e8743b5453a348606111ab0a4dee7f70a87f305` | ⚠️ Unaudited |
+| PureToken | unknown | project_anchor | own_supporting | 0 | bsc | unit-391235 | `0x481f0557fb3bb5ee461fd47f287b1ca944ad89bc` | ⚠️ Unaudited |
+| SingleChef | unknown | project_anchor | own_supporting | 0 | bsc | unit-391240 | `0x63621a878f6eae37dc5bdedb2b828d9e3747b0f4` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -140,21 +140,21 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391228 | `0x009cf7...cea9b0` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391229 | `0x1ee38d...08e6fb` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391230 | `0x2170ed...f933f8` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391231 | `0x23396c...49d6fc` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391232 | `0x3c3f20...df3b91` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391233 | `0x3c6919...f0012a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391237 | `0x55d398...197955` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391238 | `0x5e7409...e396a1` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391245 | `0x94b418...aad07e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391251 | `0xbb4cdb...bc095c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391255 | `0xdf4dbf...0e388a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391256 | `0xdf7952...0dba07` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391257 | `0xe7e53a...97e149` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391258 | `0xe9e7ce...087d56` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391260 | `0xfee8a1...380849` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391228 | `0x009cf7bc57584b7998236eff51b98a168dcea9b0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391229 | `0x1ee38d535d541c55c9dae27b12edf090c608e6fb` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391230 | `0x2170ed0880ac9a755fd29b2688956bd959f933f8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391231 | `0x23396cf899ca06c4472205fc903bdb4de249d6fc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391232 | `0x3c3f2049cc17c136a604be23cf7e42745edf3b91` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391233 | `0x3c6919b132462c1fec572c6300e83191f4f0012a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391237 | `0x55d398326f99059ff775485246999027b3197955` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391238 | `0x5e74094cd416f55179dbd0e45b1a8ed030e396a1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391245 | `0x94b4188d143b9dd6bd7083ae38a461fcc6aad07e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391251 | `0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391255 | `0xdf4dbf6536201370f95e06a0f8a7a70fe40e388a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391256 | `0xdf7952b35f24acf7fc0487d01c8d5690a60dba07` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391257 | `0xe7e53a7e9e3cf6b840f167ef69519175c497e149` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391258 | `0xe9e7cea3dedca5984780bafc599bd69add087d56` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391260 | `0xfee8a195570a18461146f401d6033f5ab3380849` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -215,9 +215,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | `0xb8692d...09adb8` | PureChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x481f05...ad89bc` | PureToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x63621a...47b0f4` | SingleChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xb8692d7768cc70c8309b669c1f5a3d856909adb8` | PureChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x481f0557fb3bb5ee461fd47f287b1ca944ad89bc` | PureToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x63621a878f6eae37dc5bdedb2b828d9e3747b0f4` | SingleChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -52,25 +52,25 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- AddressManager (`0x8c5d64...b4dabe`, chain 1)
-- FPI (`0x5ca135...cbe08e`, chain 1)
-- FPIS (`0xc2544a...901fdb`, chain 1)
-- FRAXShares (`0x3432b6...c964d0`, chain 1)
-- FRAXStablecoin (`0x853d95...75b99e`, chain 1)
-- FrxBTC (`0x6ca233...f77f95`, chain 1)
-- frxETH (`0x5e8422...8caa1f`, chain 1)
-- L1ChugSplashProxy (`0x34c0bd...58bde2`, chain 1)
-- Proxy (`0x11fe3b...1376cc`, chain 1)
-- Proxy (`0x34a9f2...25f8b2`, chain 1)
-- Proxy (`0x36cb65...ca6f6d`, chain 1)
-- Proxy (`0x66cc91...e171e4`, chain 1)
-- Proxy (`0xa9b5fb...8d0ec5`, chain 1)
-- ProxyAdmin (`0x13fe62...81abca`, chain 1)
-- ResolvedDelegateProxy (`0x126bcc...d542ed`, chain 1)
-- sfrxETH (`0xac3e01...bbe38f`, chain 1)
-- StakedFrax (`0xa663b0...c41c32`, chain 1)
-- TransparentUpgradeableProxy (`0x04acaf...88977f`, chain 1)
-- TransparentUpgradeableProxy (`0xcf62f9...c9c5b6`, chain 1)
+- AddressManager (`0x8c5d64d10394cfa070066e70ec19e67398b4dabe`, chain 1)
+- FPI (`0x5ca135cb8527d76e932f34b5145575f9d8cbe08e`, chain 1)
+- FPIS (`0xc2544a32872a91f4a553b404c6950e89de901fdb`, chain 1)
+- FRAXShares (`0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0`, chain 1)
+- FRAXStablecoin (`0x853d955acef822db058eb8505911ed77f175b99e`, chain 1)
+- FrxBTC (`0x6ca2338a21b2fe9dd39040d2fe06aad861f77f95`, chain 1)
+- frxETH (`0x5e8422345238f34275888049021821e8e08caa1f`, chain 1)
+- L1ChugSplashProxy (`0x34c0bd5877a5ee7099d0f5688d65f4bb9158bde2`, chain 1)
+- Proxy (`0x11fe3be54ac01c13dd985ce2bdd10ed77e1376cc`, chain 1)
+- Proxy (`0x34a9f273cbd847d49c3de015fc26c3e66825f8b2`, chain 1)
+- Proxy (`0x36cb65c1967a0fb0eee11569c51c2f2aa1ca6f6d`, chain 1)
+- Proxy (`0x66cc916ed5c6c2fa97014f7d1cd141528ae171e4`, chain 1)
+- Proxy (`0xa9b5fb84b7aeaf0d51c95db04a76b1d4738d0ec5`, chain 1)
+- ProxyAdmin (`0x13fe62cb24aea5afd179f20d362c056c3881abca`, chain 1)
+- ResolvedDelegateProxy (`0x126bcc31bc076b3d515f60fbc81fdde0b0d542ed`, chain 1)
+- sfrxETH (`0xac3e018457b222d93114458476f3e3416abbe38f`, chain 1)
+- StakedFrax (`0xa663b02cf0a4b149d2ad41910cb81e23e1c41c32`, chain 1)
+- TransparentUpgradeableProxy (`0x04acaf8d2865c0714f79da09645c13fd2888977f`, chain 1)
+- TransparentUpgradeableProxy (`0xcf62f905562626cfcdd2261162a51fd02fc9c5b6`, chain 1)
 
 ## Contract Surface Quality
 
@@ -116,25 +116,25 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AddressManager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386618 | `0x8c5d64...b4dabe` | ⚠️ Unaudited |
-| FPI | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386612 | `0x5ca135...cbe08e` | ⚠️ Unaudited |
-| FPIS | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386621 | `0xc2544a...901fdb` | ⚠️ Unaudited |
-| FRAXShares | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386606 | `0x3432b6...c964d0` | ⚠️ Unaudited |
-| FRAXStablecoin | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386617 | `0x853d95...75b99e` | ⚠️ Unaudited |
-| FrxBTC | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386615 | `0x6ca233...f77f95` | ⚠️ Unaudited |
-| frxETH | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386613 | `0x5e8422...8caa1f` | ⚠️ Unaudited |
-| L1CrossDomainMessenger | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386646 | `0x126bcc...d542ed` | ⚠️ Unaudited |
-| L1ERC721Bridge | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386642 | `0xa9b5fb...8d0ec5` | ⚠️ Unaudited |
-| L1StandardBridge | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386648 | `0x34c0bd...58bde2` | ⚠️ Unaudited |
-| L2OutputOracle | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386640 | `0x66cc91...e171e4` | ⚠️ Unaudited |
-| OptimismMintableERC20Factory | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386641 | `0x11fe3b...1376cc` | ⚠️ Unaudited |
-| OptimismPortalCGT | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386647 | `0x36cb65...ca6f6d` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386603 | `0x13fe62...81abca` | ⚠️ Unaudited |
-| sfrxETH | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386620 | `0xac3e01...bbe38f` | ⚠️ Unaudited |
-| SfrxUSD | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386644 | `0xcf62f9...c9c5b6` | ⚠️ Unaudited |
-| StakedFrax | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386619 | `0xa663b0...c41c32` | ⚠️ Unaudited |
-| SystemConfig | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386645 | `0x34a9f2...25f8b2` | ⚠️ Unaudited |
-| WFRAXTokenOFTUpgradeable | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386643 | `0x04acaf...88977f` | ⚠️ Unaudited |
+| AddressManager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386618 | `0x8c5d64d10394cfa070066e70ec19e67398b4dabe` | ⚠️ Unaudited |
+| FPI | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386612 | `0x5ca135cb8527d76e932f34b5145575f9d8cbe08e` | ⚠️ Unaudited |
+| FPIS | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386621 | `0xc2544a32872a91f4a553b404c6950e89de901fdb` | ⚠️ Unaudited |
+| FRAXShares | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386606 | `0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0` | ⚠️ Unaudited |
+| FRAXStablecoin | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386617 | `0x853d955acef822db058eb8505911ed77f175b99e` | ⚠️ Unaudited |
+| FrxBTC | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386615 | `0x6ca2338a21b2fe9dd39040d2fe06aad861f77f95` | ⚠️ Unaudited |
+| frxETH | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386613 | `0x5e8422345238f34275888049021821e8e08caa1f` | ⚠️ Unaudited |
+| L1CrossDomainMessenger | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386646 | `0x126bcc31bc076b3d515f60fbc81fdde0b0d542ed` | ⚠️ Unaudited |
+| L1ERC721Bridge | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386642 | `0xa9b5fb84b7aeaf0d51c95db04a76b1d4738d0ec5` | ⚠️ Unaudited |
+| L1StandardBridge | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386648 | `0x34c0bd5877a5ee7099d0f5688d65f4bb9158bde2` | ⚠️ Unaudited |
+| L2OutputOracle | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386640 | `0x66cc916ed5c6c2fa97014f7d1cd141528ae171e4` | ⚠️ Unaudited |
+| OptimismMintableERC20Factory | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386641 | `0x11fe3be54ac01c13dd985ce2bdd10ed77e1376cc` | ⚠️ Unaudited |
+| OptimismPortalCGT | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386647 | `0x36cb65c1967a0fb0eee11569c51c2f2aa1ca6f6d` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386603 | `0x13fe62cb24aea5afd179f20d362c056c3881abca` | ⚠️ Unaudited |
+| sfrxETH | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386620 | `0xac3e018457b222d93114458476f3e3416abbe38f` | ⚠️ Unaudited |
+| SfrxUSD | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386644 | `0xcf62f905562626cfcdd2261162a51fd02fc9c5b6` | ⚠️ Unaudited |
+| StakedFrax | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386619 | `0xa663b02cf0a4b149d2ad41910cb81e23e1c41c32` | ⚠️ Unaudited |
+| SystemConfig | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386645 | `0x34a9f273cbd847d49c3de015fc26c3e66825f8b2` | ⚠️ Unaudited |
+| WFRAXTokenOFTUpgradeable | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386643 | `0x04acaf8d2865c0714f79da09645c13fd2888977f` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

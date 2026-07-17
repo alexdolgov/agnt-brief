@@ -61,12 +61,12 @@ The protocol forms a single structural family (Core Logic) of 6 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BOX | unknown | bsc | n/a | [`0x067c54...70eebc`](./contracts/bsc-56/0x067c5427ac503fad52382607b18b46537570eebc/) | ⚠️ Unaudited |
-| BoxswapFactory | unknown | bsc | n/a | [`0x72dee7...082463`](./contracts/bsc-56/0x72dee7f07d7c2e6a1a5ff52589f672b553082463/) | ⚠️ Unaudited |
-| BoxswapRouter | unknown | bsc | n/a | [`0xfd0a50...425bf8`](./contracts/bsc-56/0xfd0a50d0350fa7a0cd233fd229baa6703f425bf8/) | ⚠️ Unaudited |
-| DPRBridge | unknown | bsc | n/a | [`0x375223...4b9406`](./contracts/bsc-56/0x375223d6ed2b7e08bf7fc552d72eba403e4b9406/) | ⚠️ Unaudited |
-| DPRStaking | unknown | bsc | n/a | [`0x0e3a78...285a9a`](./contracts/bsc-56/0x0e3a7828ec45530b009adb23dd6fb4d8f8285a9a/) | ⚠️ Unaudited |
-| Token | unknown | bsc | n/a | [`0xa0a2ee...7e90a4`](./contracts/bsc-56/0xa0a2ee912caf7921eaabc866c6ef6fec8f7e90a4/) | ⚠️ Unaudited |
+| BOX | unknown | bsc | n/a | [`0x067c5427ac503fad52382607b18b46537570eebc`](./contracts/bsc-56/0x067c5427ac503fad52382607b18b46537570eebc/) | ⚠️ Unaudited |
+| BoxswapFactory | unknown | bsc | n/a | [`0x72dee7f07d7c2e6a1a5ff52589f672b553082463`](./contracts/bsc-56/0x72dee7f07d7c2e6a1a5ff52589f672b553082463/) | ⚠️ Unaudited |
+| BoxswapRouter | unknown | bsc | n/a | [`0xfd0a50d0350fa7a0cd233fd229baa6703f425bf8`](./contracts/bsc-56/0xfd0a50d0350fa7a0cd233fd229baa6703f425bf8/) | ⚠️ Unaudited |
+| DPRBridge | unknown | bsc | n/a | [`0x375223d6ed2b7e08bf7fc552d72eba403e4b9406`](./contracts/bsc-56/0x375223d6ed2b7e08bf7fc552d72eba403e4b9406/) | ⚠️ Unaudited |
+| DPRStaking | unknown | bsc | n/a | [`0x0e3a7828ec45530b009adb23dd6fb4d8f8285a9a`](./contracts/bsc-56/0x0e3a7828ec45530b009adb23dd6fb4d8f8285a9a/) | ⚠️ Unaudited |
+| Token | unknown | bsc | n/a | [`0xa0a2ee912caf7921eaabc866c6ef6fec8f7e90a4`](./contracts/bsc-56/0xa0a2ee912caf7921eaabc866c6ef6fec8f7e90a4/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -97,12 +97,12 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x067c54...70eebc`](./contracts/bsc-56/0x067c5427ac503fad52382607b18b46537570eebc/) | BOX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x72dee7...082463`](./contracts/bsc-56/0x72dee7f07d7c2e6a1a5ff52589f672b553082463/) | BoxswapFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xfd0a50...425bf8`](./contracts/bsc-56/0xfd0a50d0350fa7a0cd233fd229baa6703f425bf8/) | BoxswapRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x375223...4b9406`](./contracts/bsc-56/0x375223d6ed2b7e08bf7fc552d72eba403e4b9406/) | DPRBridge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x0e3a78...285a9a`](./contracts/bsc-56/0x0e3a7828ec45530b009adb23dd6fb4d8f8285a9a/) | DPRStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xa0a2ee...7e90a4`](./contracts/bsc-56/0xa0a2ee912caf7921eaabc866c6ef6fec8f7e90a4/) | Token | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x067c5427ac503fad52382607b18b46537570eebc`](./contracts/bsc-56/0x067c5427ac503fad52382607b18b46537570eebc/) | BOX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x72dee7f07d7c2e6a1a5ff52589f672b553082463`](./contracts/bsc-56/0x72dee7f07d7c2e6a1a5ff52589f672b553082463/) | BoxswapFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xfd0a50d0350fa7a0cd233fd229baa6703f425bf8`](./contracts/bsc-56/0xfd0a50d0350fa7a0cd233fd229baa6703f425bf8/) | BoxswapRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x375223d6ed2b7e08bf7fc552d72eba403e4b9406`](./contracts/bsc-56/0x375223d6ed2b7e08bf7fc552d72eba403e4b9406/) | DPRBridge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x0e3a7828ec45530b009adb23dd6fb4d8f8285a9a`](./contracts/bsc-56/0x0e3a7828ec45530b009adb23dd6fb4d8f8285a9a/) | DPRStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xa0a2ee912caf7921eaabc866c6ef6fec8f7e90a4`](./contracts/bsc-56/0xa0a2ee912caf7921eaabc866c6ef6fec8f7e90a4/) | Token | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

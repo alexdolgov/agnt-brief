@@ -90,33 +90,33 @@ The pinned logic-topography run contains 2 contract row(s) across metis. Structu
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BDeployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xe0bfe6...ff9c04` | ⚠️ Unaudited |
-| CDeployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x558f62...db7660` | ⚠️ Unaudited |
-| CosmicPools | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x388474...87c796` | ⚠️ Unaudited |
-| Disperse | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x0a6d6a...b958e9` | ⚠️ Unaudited |
-| Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x15294f...93c63b` | ⚠️ Unaudited |
-| MasterChef | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | metis | unit-258548 | `0x54a8fb...241e21` | ⚠️ Unaudited |
-| Multicall2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x96a3db...ef687c` | ⚠️ Unaudited |
-| Multicall3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x855b69...4b636f` | ⚠️ Unaudited |
-| OlympusProFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x8ff40b...32c505` | ⚠️ Unaudited |
-| OlympusProFactoryStorage | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x4c87b1...af028c` | ⚠️ Unaudited |
-| OPSubsidyRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xe02ae2...a47509` | ⚠️ Unaudited |
-| OptiSwap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xe6b6e9...ee1988` | ⚠️ Unaudited |
-| SolidlyDexHandler | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x52cd63...4466c1` | ⚠️ Unaudited |
-| SphereSubsidyRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x731076...4eec55` | ⚠️ Unaudited |
-| StakedETH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x2dda3c...c99826` | ⚠️ Unaudited |
-| StakedMETIS | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x0c5dad...a5d97e` | ⚠️ Unaudited |
-| StakedUSDC | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x63d4ef...12e79f` | ⚠️ Unaudited |
-| StyxPriceOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xea1aac...a89c4b` | ⚠️ Unaudited |
-| Tethys | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | metis | unit-258549 | `0x69fdb7...1f43f3` | ⚠️ Unaudited |
-| TethysChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x5bfe0d...8bea96` | ⚠️ Unaudited |
-| TethysMaker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xce202c...340702` | ⚠️ Unaudited |
-| TethysPadToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x1f25ee...07b9bf` | ⚠️ Unaudited |
-| TethysPartnershipRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x101aae...efbd0a` | ⚠️ Unaudited |
-| TethysRewarder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xe779ef...e66522` | ⚠️ Unaudited |
-| TethysTemple | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x5d0cef...26e20a` | ⚠️ Unaudited |
-| TokenTimelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x46db4e...8ca600` | ⚠️ Unaudited |
-| TrackAggregator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xdca334...9092e8` | ⚠️ Unaudited |
+| BDeployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xe0bfe6bb92be41d2b80f24952a0b4e51f6ff9c04` | ⚠️ Unaudited |
+| CDeployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x558f62915aaec88aa1b2348d9d14ebcf84db7660` | ⚠️ Unaudited |
+| CosmicPools | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x388474fc9e8096d9d358566a8e8ed9b64f87c796` | ⚠️ Unaudited |
+| Disperse | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x0a6d6a4964369429db4f00af226ffd51fbb958e9` | ⚠️ Unaudited |
+| Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x15294ff72d7a3d21e52111a3d428d1964f93c63b` | ⚠️ Unaudited |
+| MasterChef | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | metis | unit-258548 | `0x54a8fb8c634ded694d270b78cb931ca6bf241e21` | ⚠️ Unaudited |
+| Multicall2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x96a3dbbea8749eef68cbdec4486cacbcd9ef687c` | ⚠️ Unaudited |
+| Multicall3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x855b693bc524f6f0ac29c2a772c541da6d4b636f` | ⚠️ Unaudited |
+| OlympusProFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x8ff40b0318cd3068062c30c476be48987932c505` | ⚠️ Unaudited |
+| OlympusProFactoryStorage | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x4c87b16ff1b67c15ffaf2b779a8a7a5739af028c` | ⚠️ Unaudited |
+| OPSubsidyRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xe02ae21b448c1f7d7f133ba9f4db1868d0a47509` | ⚠️ Unaudited |
+| OptiSwap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xe6b6e95c05375a1e24d1ec3f6d43ed34e6ee1988` | ⚠️ Unaudited |
+| SolidlyDexHandler | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x52cd632e513ef1ebd3138d1339027676104466c1` | ⚠️ Unaudited |
+| SphereSubsidyRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x7310764840ac8644c4d2c77f0c1e2b1f9a4eec55` | ⚠️ Unaudited |
+| StakedETH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x2dda3cacb47a2eef235702292a4836751dc99826` | ⚠️ Unaudited |
+| StakedMETIS | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x0c5dad5a58501135df4798a298f78ab8d1a5d97e` | ⚠️ Unaudited |
+| StakedUSDC | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x63d4efead90914b50e1a14858eb638f87312e79f` | ⚠️ Unaudited |
+| StyxPriceOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xea1aac002ee2c9db41b80a27fad80632c4a89c4b` | ⚠️ Unaudited |
+| Tethys | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | metis | unit-258549 | `0x69fdb77064ec5c84fa2f21072973eb28441f43f3` | ⚠️ Unaudited |
+| TethysChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x5bfe0dcb06958ecc1096aab7169147b4d98bea96` | ⚠️ Unaudited |
+| TethysMaker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xce202c4e6b5aeb92427f5a8005cb3636f4340702` | ⚠️ Unaudited |
+| TethysPadToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x1f25ee2720acc959095d16ce87d4859c0507b9bf` | ⚠️ Unaudited |
+| TethysPartnershipRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x101aaeadd762eb6852f7333e57d5323faaefbd0a` | ⚠️ Unaudited |
+| TethysRewarder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xe779ef0c7bf86f0c74d865f45b0935b0ece66522` | ⚠️ Unaudited |
+| TethysTemple | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x5d0cef8e3a62f9cdb07c04f8b4188ddd5c26e20a` | ⚠️ Unaudited |
+| TokenTimelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x46db4ea2f4ca6a664e850dbbbe5c0e4ae78ca600` | ⚠️ Unaudited |
+| TrackAggregator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xdca3341b8a5943da1a3235a34d7120f4759092e8` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

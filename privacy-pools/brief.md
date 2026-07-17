@@ -59,16 +59,16 @@ The protocol comprises 3 functional families. Contracts are linked by 2 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Entrypoint | unknown | ethereum | n/a | [`0xdd8aa0...fbd4c1`](./contracts/ethereum-1/0xdd8aa0560a08e39c0b3a84bba356bc025afbd4c1/) | ✅ Audited |
-| PrivacyPoolComplex | core_logic | ethereum | n/a | [`0x1a604e...b61633`](./contracts/ethereum-1/0x1a604e9dfa0efdc7ffda378af16cb81243b61633/) | ✅ Audited |
-| PrivacyPoolSimple | core_logic | ethereum | n/a | [`0xf241d5...a9c9fb`](./contracts/ethereum-1/0xf241d57c6debae225c0f2e6ea1529373c9a9c9fb/) | ✅ Audited |
+| Entrypoint | unknown | ethereum | n/a | [`0xdd8aa0560a08e39c0b3a84bba356bc025afbd4c1`](./contracts/ethereum-1/0xdd8aa0560a08e39c0b3a84bba356bc025afbd4c1/) | ✅ Audited |
+| PrivacyPoolComplex | core_logic | ethereum | n/a | [`0x1a604e9dfa0efdc7ffda378af16cb81243b61633`](./contracts/ethereum-1/0x1a604e9dfa0efdc7ffda378af16cb81243b61633/) | ✅ Audited |
+| PrivacyPoolSimple | core_logic | ethereum | n/a | [`0xf241d57c6debae225c0f2e6ea1529373c9a9c9fb`](./contracts/ethereum-1/0xf241d57c6debae225c0f2e6ea1529373c9a9c9fb/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CommitmentVerifier | periphery | ethereum | n/a | [`0xa45aca...565ec6`](./contracts/ethereum-1/0xa45aca8604a73d80c551faad6355a5c3a5565ec6/) | ⚠️ Unaudited |
-| WithdrawalVerifier | operational_periphery | ethereum | n/a | [`0x022891...897d6d`](./contracts/ethereum-1/0x022891f938ae7fdc8ab9ead0fbf50aba8c897d6d/) | ⚠️ Unaudited |
+| CommitmentVerifier | periphery | ethereum | n/a | [`0xa45aca8604a73d80c551faad6355a5c3a5565ec6`](./contracts/ethereum-1/0xa45aca8604a73d80c551faad6355a5c3a5565ec6/) | ⚠️ Unaudited |
+| WithdrawalVerifier | operational_periphery | ethereum | n/a | [`0x022891f938ae7fdc8ab9ead0fbf50aba8c897d6d`](./contracts/ethereum-1/0x022891f938ae7fdc8ab9ead0fbf50aba8c897d6d/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -103,8 +103,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xa45aca...565ec6`](./contracts/ethereum-1/0xa45aca8604a73d80c551faad6355a5c3a5565ec6/) | CommitmentVerifier | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x022891...897d6d`](./contracts/ethereum-1/0x022891f938ae7fdc8ab9ead0fbf50aba8c897d6d/) | WithdrawalVerifier | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa45aca8604a73d80c551faad6355a5c3a5565ec6`](./contracts/ethereum-1/0xa45aca8604a73d80c551faad6355a5c3a5565ec6/) | CommitmentVerifier | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x022891f938ae7fdc8ab9ead0fbf50aba8c897d6d`](./contracts/ethereum-1/0x022891f938ae7fdc8ab9ead0fbf50aba8c897d6d/) | WithdrawalVerifier | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

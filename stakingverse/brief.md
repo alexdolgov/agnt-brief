@@ -80,7 +80,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | lukso | n/a | 2 deployments: lukso `0x8a3982...bc8f7d`; lukso `0x9f49a9...0f6f04` | ❓ Unverified |
+| UnnamedContract | unknown | lukso | n/a | 2 deployments: lukso `0x8a3982f0a7d154d11a5f43eec7f50e52ebbc8f7d`; lukso `0x9f49a95b0c3c9e2a6c77a16c177928294c0f6f04` | ❓ Unverified |
 
 ## Audit Inventory
 

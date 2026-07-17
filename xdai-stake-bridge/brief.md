@@ -62,14 +62,14 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ERC677MultiBridgeToken | unknown | ethereum | n/a | [`0x0ae055...f195e6`](./contracts/ethereum-1/0x0ae055097c6d159879521c384f1d2123d1f195e6/) | ✅ Audited |
+| ERC677MultiBridgeToken | unknown | ethereum | n/a | [`0x0ae055097c6d159879521c384f1d2123d1f195e6`](./contracts/ethereum-1/0x0ae055097c6d159879521c384f1d2123d1f195e6/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Distribution | unknown | ethereum | n/a | [`0x5d020e...366555`](./contracts/ethereum-1/0x5d020eb50fce62320a6730e6c18659a28b366555/) | ⚠️ Unaudited |
-| MultipleDistribution | unknown | ethereum | n/a | [`0x0218b7...aea918`](./contracts/ethereum-1/0x0218b706898d234b85d2494df21eb0677eaea918/) | ⚠️ Unaudited |
+| Distribution | unknown | ethereum | n/a | [`0x5d020eb50fce62320a6730e6c18659a28b366555`](./contracts/ethereum-1/0x5d020eb50fce62320a6730e6c18659a28b366555/) | ⚠️ Unaudited |
+| MultipleDistribution | unknown | ethereum | n/a | [`0x0218b706898d234b85d2494df21eb0677eaea918`](./contracts/ethereum-1/0x0218b706898d234b85d2494df21eb0677eaea918/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -120,8 +120,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x5d020e...366555`](./contracts/ethereum-1/0x5d020eb50fce62320a6730e6c18659a28b366555/) | Distribution | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0218b7...aea918`](./contracts/ethereum-1/0x0218b706898d234b85d2494df21eb0677eaea918/) | MultipleDistribution | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5d020eb50fce62320a6730e6c18659a28b366555`](./contracts/ethereum-1/0x5d020eb50fce62320a6730e6c18659a28b366555/) | Distribution | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0218b706898d234b85d2494df21eb0677eaea918`](./contracts/ethereum-1/0x0218b706898d234b85d2494df21eb0677eaea918/) | MultipleDistribution | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -61,10 +61,10 @@ The protocol forms a single structural family (Supporting Contracts) of 4 contra
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ERC1967Proxy | unknown | hyperliquid | n/a | [`0x888888...05b20c`](./contracts/hyperliquid-999/0x88888880793f89ce85777ff2e0e2d366bf05b20c/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | [`0x888888...c3beda`](./contracts/hyperliquid-999/0x8888888192a4a0593c13532ba48449fc24c3beda/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | [`0x888888...d77930`](./contracts/hyperliquid-999/0x8888888f0651a534011d7ad277c302e7d2d77930/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | [`0x888888...c216fa`](./contracts/hyperliquid-999/0x8888888fdaac0e7cf8c6523c8955bf7954c216fa/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | [`0x88888880793f89ce85777ff2e0e2d366bf05b20c`](./contracts/hyperliquid-999/0x88888880793f89ce85777ff2e0e2d366bf05b20c/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | [`0x8888888192a4a0593c13532ba48449fc24c3beda`](./contracts/hyperliquid-999/0x8888888192a4a0593c13532ba48449fc24c3beda/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | [`0x8888888f0651a534011d7ad277c302e7d2d77930`](./contracts/hyperliquid-999/0x8888888f0651a534011d7ad277c302e7d2d77930/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | [`0x8888888fdaac0e7cf8c6523c8955bf7954c216fa`](./contracts/hyperliquid-999/0x8888888fdaac0e7cf8c6523c8955bf7954c216fa/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum, aval
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- OperatorFactory (`0x3e64cd...11f48a`, chain 1)
+- OperatorFactory (`0x3e64cd889482443324f91bfa9c84fe72a511f48a`, chain 1)
 
 ## Contract Surface Quality
 
@@ -104,78 +104,78 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum, aval
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AccessControlledAggregator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0086e1...01b423` | ⚠️ Unaudited |
-| AccessControlledOCR2Aggregator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x00f0ef...65c382` | ⚠️ Unaudited |
-| AccessControlledOffchainAggregator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x000bcf...d7e1bc` | ⚠️ Unaudited |
-| ARM | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x38660c...5cce5f` | ⚠️ Unaudited |
-| ARMProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x14a7e6...b694a5` | ⚠️ Unaudited |
-| BlockhashStore | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x683be5...d71778` | ⚠️ Unaudited |
-| BridgeToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x19860c...8dde98` | ⚠️ Unaudited |
-| BurnFromMintTokenPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x03df92...a50280` | ⚠️ Unaudited |
-| BurnMintERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0x04dad2...ef3bc7` | ⚠️ Unaudited |
-| BurnMintERC20Transparent | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0xb9af87...e3208f` | ⚠️ Unaudited |
-| BurnMintTokenPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x00ce37...1e4ce7` | ⚠️ Unaudited |
-| BurnMintTokenPoolAndProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x04505e...c79187` | ⚠️ Unaudited |
-| BurnWithFromMintTokenPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x00c8af...025010` | ⚠️ Unaudited |
-| BurnWithFromMintTokenPoolAndProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x476eef...240b93` | ⚠️ Unaudited |
-| CallProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x1bb0f5...7266b1` | ⚠️ Unaudited |
-| CCTPMessageTransmitterProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0xe94e3b...18037a` | ⚠️ Unaudited |
-| ChannelConfigStore | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1affdb...0160f3` | ⚠️ Unaudited |
-| CommitStore | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x002b16...0edeea` | ⚠️ Unaudited |
-| CommitteeVerifier | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0x18bb4a...5de84f` | ⚠️ Unaudited |
-| Configurator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6d05b6...2e71b1` | ⚠️ Unaudited |
-| ConfirmedTransactionModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x04b221...8748ba` | ⚠️ Unaudited |
-| DOODLEF | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x9fbe92...285830` | ⚠️ Unaudited |
-| Doodles | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8a90ca...b8992e` | ⚠️ Unaudited |
-| Dooplicator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x466cfc...9213ac` | ⚠️ Unaudited |
-| DualAggregator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1eeb87...19a5df` | ⚠️ Unaudited |
-| EACAggregatorProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0x0147f2...e8c32d` | ⚠️ Unaudited |
-| EVM2EVMOffRamp | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x006fc7...8bbca7` | ⚠️ Unaudited |
-| EVM2EVMOnRamp | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x004405...03a390` | ⚠️ Unaudited |
-| Executor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0xe65870...809564` | ⚠️ Unaudited |
-| FactoryBurnMintERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x0b1479...1cc85e` | ⚠️ Unaudited |
-| FeeManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x48a42f...dcf649` | ⚠️ Unaudited |
-| FeeQuoter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x006bc1...ac1e83` | ⚠️ Unaudited |
-| Flags | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x26e0e1...0bf332` | ⚠️ Unaudited |
-| FunctionsClientUpgradeHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x03b1b1...70d29f` | ⚠️ Unaudited |
-| FunctionsCoordinator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3503b2...579acf` | ⚠️ Unaudited |
-| GnosisSafe | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4adfbf...9a993d` | ⚠️ Unaudited |
-| GnosisSafeProxyFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0x1fb8fa...71ebae` | ⚠️ Unaudited |
-| HeartbeatRequester | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4822d7...f8c315` | ⚠️ Unaudited |
-| LinkToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0x012414...518ac3` | ⚠️ Unaudited |
-| LinkTokenOptimism | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x350a79...ffa7f6` | ⚠️ Unaudited |
-| LockReleaseTokenPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x022d74...951892` | ⚠️ Unaudited |
-| LockReleaseTokenPoolAndProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0d7368...521fc0` | ⚠️ Unaudited |
-| ManyChainMultiSig | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x057f63...dd9b74` | ⚠️ Unaudited |
-| MockReceiverV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0x9c117a...61c920` | ⚠️ Unaudited |
-| NonceManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0x06fc83...6ae1c9` | ⚠️ Unaudited |
-| OffRamp | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0x02a4d6...58894d` | ⚠️ Unaudited |
-| OnRamp | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0x1e11ba...0e6e7b` | ⚠️ Unaudited |
-| OperatorFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-231772 | `0x3e64cd...11f48a` | ⚠️ Unaudited |
-| PermittableToken | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | gnosis | n/a | `0xe2e73a...ca09b2` | ⚠️ Unaudited |
-| PriceRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x020082...a81985` | ⚠️ Unaudited |
-| RBACTimelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x13ac97...664beb` | ⚠️ Unaudited |
-| RegistryModuleOwnerCustom | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0x010771...a0f8fa` | ⚠️ Unaudited |
-| RewardManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1a2a2d...75e7ec` | ⚠️ Unaudited |
-| RMN | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x1c51b6...7a7e49` | ⚠️ Unaudited |
-| RMNProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0x652592...39b048` | ⚠️ Unaudited |
-| RMNRemote | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0x1912c3...f237ca` | ⚠️ Unaudited |
-| Router | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x0e6137...798d05` | ⚠️ Unaudited |
-| SimpleReadAccessController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x70e7d9...a02ab9` | ⚠️ Unaudited |
-| SimpleWriteAccessController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0x0f4930...26f134` | ⚠️ Unaudited |
-| SpaceDoodles | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5d663e...57b91c` | ⚠️ Unaudited |
-| StandardArbERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0xf97f4d...539fb4` | ⚠️ Unaudited |
-| Storage | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0xb41828...f8e5e2` | ⚠️ Unaudited |
-| TokenAdminRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x00f027...4931d8` | ⚠️ Unaudited |
-| TokenPoolFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x3d276e...5d3c01` | ⚠️ Unaudited |
-| UniswapAnchoredView | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x046728...63a58d` | ⚠️ Unaudited |
-| USDCTokenPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x043366...1dfc5d` | ⚠️ Unaudited |
-| USDCTokenPoolProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0x546673...07c045` | ⚠️ Unaudited |
-| ValidatorProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x023824...ee7c3c` | ⚠️ Unaudited |
-| Verifier | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa618f1...457d05` | ⚠️ Unaudited |
-| VerifierProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xaae5ec...ff6582` | ⚠️ Unaudited |
-| VRFCoordinator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x3d2341...177ae0` | ⚠️ Unaudited |
-| VRFV2PlusWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x02aae1...ad910c` | ⚠️ Unaudited |
+| AccessControlledAggregator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0086e1e119ecc95be344c3efca7b39f15a01b423` | ⚠️ Unaudited |
+| AccessControlledOCR2Aggregator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x00f0efb3d9dbe7fe91fee44ae09dae5dfa65c382` | ⚠️ Unaudited |
+| AccessControlledOffchainAggregator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x000bcfdc448754b25f8e8afd5fc1fcc259d7e1bc` | ⚠️ Unaudited |
+| ARM | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x38660c8cc222c0192b635c2ac09687b4f25cce5f` | ⚠️ Unaudited |
+| ARMProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x14a7e6a1b2564b10dbdcc9084c4fbc3e72b694a5` | ⚠️ Unaudited |
+| BlockhashStore | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x683be5e11c1cdce9e63522f45223f47250d71778` | ⚠️ Unaudited |
+| BridgeToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x19860ccb0a68fd4213ab9d8266f7bbf05a8dde98` | ⚠️ Unaudited |
+| BurnFromMintTokenPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x03df929510a52c97bb1b3e5f33ea5d9735a50280` | ⚠️ Unaudited |
+| BurnMintERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0x04dad2d628e9dc53f7a72c5a7836fd23a4ef3bc7` | ⚠️ Unaudited |
+| BurnMintERC20Transparent | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0xb9af873c7089cf3a0b6d67538065dd94b5e3208f` | ⚠️ Unaudited |
+| BurnMintTokenPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x00ce37b1c949bf938de4281d8c4261ee421e4ce7` | ⚠️ Unaudited |
+| BurnMintTokenPoolAndProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x04505e4182a2ab7989b03eb2321e3141c1c79187` | ⚠️ Unaudited |
+| BurnWithFromMintTokenPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x00c8af57a18eb97df446fa12e051c63274025010` | ⚠️ Unaudited |
+| BurnWithFromMintTokenPoolAndProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x476eefef46e0d65e1e371fe093696259b1240b93` | ⚠️ Unaudited |
+| CallProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x1bb0f55b00c2607d2561e6042faea4690d7266b1` | ⚠️ Unaudited |
+| CCTPMessageTransmitterProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0xe94e3b78be62e7fb7a388884c1f9000f6818037a` | ⚠️ Unaudited |
+| ChannelConfigStore | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1affdb984bbd8c3382f1ddc8bd605383830160f3` | ⚠️ Unaudited |
+| CommitStore | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x002b164b1dcf4e92f352dc625a01be0e890edeea` | ⚠️ Unaudited |
+| CommitteeVerifier | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0x18bb4ad0f8cc5241334a85fb5d0d48c6a05de84f` | ⚠️ Unaudited |
+| Configurator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6d05b6b04a4f456e0ea6a0379b6173eae52e71b1` | ⚠️ Unaudited |
+| ConfirmedTransactionModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x04b2218a03f4b034a2e83e9e8d1e7ea0da8748ba` | ⚠️ Unaudited |
+| DOODLEF | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x9fbe92624b48ba00545c2573801c8e38e8285830` | ⚠️ Unaudited |
+| Doodles | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8a90cab2b38dba80c64b7734e58ee1db38b8992e` | ⚠️ Unaudited |
+| Dooplicator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x466cfcd0525189b573e794f554b8a751279213ac` | ⚠️ Unaudited |
+| DualAggregator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1eeb875dd64f6313ff315679791ae1a27c19a5df` | ⚠️ Unaudited |
+| EACAggregatorProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0x0147f2ad7f1e2bc51f998cc128a8355d5ae8c32d` | ⚠️ Unaudited |
+| EVM2EVMOffRamp | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x006fc7533e472ee3ac7277bd600e086a0a8bbca7` | ⚠️ Unaudited |
+| EVM2EVMOnRamp | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x004405d927cad243358a270c2dd3d51c8303a390` | ⚠️ Unaudited |
+| Executor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0xe65870ed081025ed64fa4039d3363e73ff809564` | ⚠️ Unaudited |
+| FactoryBurnMintERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x0b147965f21e8c56ff6d41c530b4ad30791cc85e` | ⚠️ Unaudited |
+| FeeManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x48a42f6aed34fd936355b5358fee4de847dcf649` | ⚠️ Unaudited |
+| FeeQuoter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x006bc1f599a10b73c88cc3cd19a92829c4ac1e83` | ⚠️ Unaudited |
+| Flags | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x26e0e12b1682884a557e67743c6a575fd00bf332` | ⚠️ Unaudited |
+| FunctionsClientUpgradeHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x03b1b16e7c016f881783674aa6b24fc21d70d29f` | ⚠️ Unaudited |
+| FunctionsCoordinator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3503b2a4692f62dd2c5d4c0a6546fb50ba579acf` | ⚠️ Unaudited |
+| GnosisSafe | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4adfbf10e9833ee6dd57b3569c5755f8139a993d` | ⚠️ Unaudited |
+| GnosisSafeProxyFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0x1fb8fa5a86b3b91da07a973f9848ae9d1271ebae` | ⚠️ Unaudited |
+| HeartbeatRequester | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4822d77a2d328115c4edebe1c82f313b28f8c315` | ⚠️ Unaudited |
+| LinkToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0x012414a392f9fa442a3109f1320c439c45518ac3` | ⚠️ Unaudited |
+| LinkTokenOptimism | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x350a791bfc2c21f9ed5d10980dad2e2638ffa7f6` | ⚠️ Unaudited |
+| LockReleaseTokenPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x022d74c2d24e7625368720dcba5674bd8a951892` | ⚠️ Unaudited |
+| LockReleaseTokenPoolAndProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0d736853812a12f085de867adf4ea4aba9521fc0` | ⚠️ Unaudited |
+| ManyChainMultiSig | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x057f63e458a835e5c83d2194cab1c30a76dd9b74` | ⚠️ Unaudited |
+| MockReceiverV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0x9c117a3e7fcd4e91eea06c6d6f7f21a0da61c920` | ⚠️ Unaudited |
+| NonceManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0x06fc836cf9839b1cd891c440a0a45242da6ae1c9` | ⚠️ Unaudited |
+| OffRamp | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0x02a4d69cffec00fbf7f3b60c93e3529dfc58894d` | ⚠️ Unaudited |
+| OnRamp | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0x1e11bab3f07fa72312182ffdc460ae45400e6e7b` | ⚠️ Unaudited |
+| OperatorFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-231772 | `0x3e64cd889482443324f91bfa9c84fe72a511f48a` | ⚠️ Unaudited |
+| PermittableToken | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | gnosis | n/a | `0xe2e73a1c69ecf83f464efce6a5be353a37ca09b2` | ⚠️ Unaudited |
+| PriceRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x020082a7a9c2510e1921116001152dee4da81985` | ⚠️ Unaudited |
+| RBACTimelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x13ac97663d19ff20fe467bfa580748505e664beb` | ⚠️ Unaudited |
+| RegistryModuleOwnerCustom | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0x010771998a1f4736bd844939d0bf01ac5ca0f8fa` | ⚠️ Unaudited |
+| RewardManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1a2a2dc0aab0defc092ed8636330eaebd975e7ec` | ⚠️ Unaudited |
+| RMN | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x1c51b6d5bfcfb7ee82c80949dfd146db157a7e49` | ⚠️ Unaudited |
+| RMNProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0x6525923279256b8a86c1c01cf5955eb00c39b048` | ⚠️ Unaudited |
+| RMNRemote | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0x1912c3cfafe8a76a32a92861d815ac2837f237ca` | ⚠️ Unaudited |
+| Router | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x0e6137e72cc322b0f3b7ed172f7bd7b5ac798d05` | ⚠️ Unaudited |
+| SimpleReadAccessController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x70e7d9a2fe6225d926b7c0bb728529eb64a02ab9` | ⚠️ Unaudited |
+| SimpleWriteAccessController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0x0f4930c3c04c8cb57874907f38be77a6d526f134` | ⚠️ Unaudited |
+| SpaceDoodles | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5d663edd9c884b2398634d68ec1cca083957b91c` | ⚠️ Unaudited |
+| StandardArbERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0xf97f4df75117a78c1a5a0dbb814af92458539fb4` | ⚠️ Unaudited |
+| Storage | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0xb4182810ee17d6726439a4eb108abe29bdf8e5e2` | ⚠️ Unaudited |
+| TokenAdminRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x00f027ea6d0fb03256a15e9182b2b9227a4931d8` | ⚠️ Unaudited |
+| TokenPoolFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x3d276e2c2debc581f194591750a4d04aa15d3c01` | ⚠️ Unaudited |
+| UniswapAnchoredView | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x046728da7cb8272284238bd3e47909823d63a58d` | ⚠️ Unaudited |
+| USDCTokenPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x04336603557feb138b36075156e92f9e551dfc5d` | ⚠️ Unaudited |
+| USDCTokenPoolProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0x5466730bba7ffedc695dd55939b36402e207c045` | ⚠️ Unaudited |
+| ValidatorProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0238247e71ad0ab272203af13baea72e99ee7c3c` | ⚠️ Unaudited |
+| Verifier | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa618f119504455762c9bbbce4ac9ee7fde457d05` | ⚠️ Unaudited |
+| VerifierProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xaae5ec245bb779883786b44ab3aaad5313ff6582` | ⚠️ Unaudited |
+| VRFCoordinator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x3d2341adb2d31f1c5530cdc622016af293177ae0` | ⚠️ Unaudited |
+| VRFV2PlusWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x02aae1a04f9828517b3007f83f6181900cad910c` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -219,7 +219,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x3e64cd...11f48a` | OperatorFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x3e64cd889482443324f91bfa9c84fe72a511f48a` | OperatorFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

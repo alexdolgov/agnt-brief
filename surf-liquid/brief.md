@@ -61,12 +61,12 @@ The protocol comprises 3 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AgentKeyV2 | unknown | base | n/a | [`0xcdca2e...0dafbf`](./contracts/base-8453/0xcdca2eaae4a8a6b83d7a3589946c2301040dafbf/) | ⚠️ Unaudited |
-| BridgeLib | unknown | ethereum | n/a | [`0xab7111...cce284`](./contracts/ethereum-1/0xab71119e39d1d51b8dc0d0b72ab5e31539cce284/) | ⚠️ Unaudited |
-| BundlerLib | unknown | ethereum | n/a | [`0x84be6e...24c99b`](./contracts/ethereum-1/0x84be6e2916c614c183b9b603073187bbbd24c99b/) | ⚠️ Unaudited |
-| DirectDepositLib | unknown | ethereum | n/a | [`0x8888db...4b9178`](./contracts/ethereum-1/0x8888db40e2732a66610c52e74f525258344b9178/) | ⚠️ Unaudited |
-| UserVaultFactory | unknown | ethereum | n/a | [`0x8fa50d...c18779`](./contracts/ethereum-1/0x8fa50dea8db10987d7d22ac092001c3613c18779/) | ⚠️ Unaudited |
-| VaultRegistry | unknown | ethereum | n/a | [`0x98a0de...69f271`](./contracts/ethereum-1/0x98a0def9c959ec934df02141291303819369f271/) | ⚠️ Unaudited |
+| AgentKeyV2 | unknown | base | n/a | [`0xcdca2eaae4a8a6b83d7a3589946c2301040dafbf`](./contracts/base-8453/0xcdca2eaae4a8a6b83d7a3589946c2301040dafbf/) | ⚠️ Unaudited |
+| BridgeLib | unknown | ethereum | n/a | [`0xab71119e39d1d51b8dc0d0b72ab5e31539cce284`](./contracts/ethereum-1/0xab71119e39d1d51b8dc0d0b72ab5e31539cce284/) | ⚠️ Unaudited |
+| BundlerLib | unknown | ethereum | n/a | [`0x84be6e2916c614c183b9b603073187bbbd24c99b`](./contracts/ethereum-1/0x84be6e2916c614c183b9b603073187bbbd24c99b/) | ⚠️ Unaudited |
+| DirectDepositLib | unknown | ethereum | n/a | [`0x8888db40e2732a66610c52e74f525258344b9178`](./contracts/ethereum-1/0x8888db40e2732a66610c52e74f525258344b9178/) | ⚠️ Unaudited |
+| UserVaultFactory | unknown | ethereum | n/a | [`0x8fa50dea8db10987d7d22ac092001c3613c18779`](./contracts/ethereum-1/0x8fa50dea8db10987d7d22ac092001c3613c18779/) | ⚠️ Unaudited |
+| VaultRegistry | unknown | ethereum | n/a | [`0x98a0def9c959ec934df02141291303819369f271`](./contracts/ethereum-1/0x98a0def9c959ec934df02141291303819369f271/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -99,12 +99,12 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0xcdca2e...0dafbf`](./contracts/base-8453/0xcdca2eaae4a8a6b83d7a3589946c2301040dafbf/) | AgentKeyV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xab7111...cce284`](./contracts/ethereum-1/0xab71119e39d1d51b8dc0d0b72ab5e31539cce284/) | BridgeLib | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x84be6e...24c99b`](./contracts/ethereum-1/0x84be6e2916c614c183b9b603073187bbbd24c99b/) | BundlerLib | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x8888db...4b9178`](./contracts/ethereum-1/0x8888db40e2732a66610c52e74f525258344b9178/) | DirectDepositLib | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x8fa50d...c18779`](./contracts/ethereum-1/0x8fa50dea8db10987d7d22ac092001c3613c18779/) | UserVaultFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x98a0de...69f271`](./contracts/ethereum-1/0x98a0def9c959ec934df02141291303819369f271/) | VaultRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xcdca2eaae4a8a6b83d7a3589946c2301040dafbf`](./contracts/base-8453/0xcdca2eaae4a8a6b83d7a3589946c2301040dafbf/) | AgentKeyV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xab71119e39d1d51b8dc0d0b72ab5e31539cce284`](./contracts/ethereum-1/0xab71119e39d1d51b8dc0d0b72ab5e31539cce284/) | BridgeLib | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x84be6e2916c614c183b9b603073187bbbd24c99b`](./contracts/ethereum-1/0x84be6e2916c614c183b9b603073187bbbd24c99b/) | BundlerLib | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8888db40e2732a66610c52e74f525258344b9178`](./contracts/ethereum-1/0x8888db40e2732a66610c52e74f525258344b9178/) | DirectDepositLib | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8fa50dea8db10987d7d22ac092001c3613c18779`](./contracts/ethereum-1/0x8fa50dea8db10987d7d22ac092001c3613c18779/) | UserVaultFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x98a0def9c959ec934df02141291303819369f271`](./contracts/ethereum-1/0x98a0def9c959ec934df02141291303819369f271/) | VaultRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

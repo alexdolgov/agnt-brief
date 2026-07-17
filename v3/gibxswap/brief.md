@@ -90,20 +90,20 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| GIBXBar | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-142245 | `0x63d275...608536` | ⚠️ Unaudited |
-| GIBXFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-142246 | `0x97bcd9...2066e8` | ⚠️ Unaudited |
-| GIBXRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-142237 | `0x253fe2...e15aa5` | ⚠️ Unaudited |
-| GIBXSwapFee | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-142235 | `0x10a55a...bf47d0` | ⚠️ Unaudited |
-| GIBXToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-142234 | `0x004eda...d7f620` | ⚠️ Unaudited |
-| ILO | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-142239 | `0x299cac...36005c` | ⚠️ Unaudited |
-| MasterChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-142240 | `0x29e023...c95947` | ⚠️ Unaudited |
-| MasterChefTimelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-142241 | `0x39f01e...49ed28` | ⚠️ Unaudited |
-| Oracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-142243 | `0x572138...556c2c` | ⚠️ Unaudited |
-| PoolChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-142236 | `0x10ee03...6785df` | ⚠️ Unaudited |
-| PoolChefTimelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-142242 | `0x3d008d...9bb6c8` | ⚠️ Unaudited |
-| PoolFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-142244 | `0x5d9f2c...f15465` | ⚠️ Unaudited |
-| SwapMining | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-142247 | `0xc31a35...64ea1f` | ⚠️ Unaudited |
-| TokenLocker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-142238 | `0x26ce70...323b3c` | ⚠️ Unaudited |
+| GIBXBar | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-142245 | `0x63d2756537ab0b10c1a3578b0755417e5f608536` | ⚠️ Unaudited |
+| GIBXFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-142246 | `0x97bcd9bb482144291d77ee53bfa99317a82066e8` | ⚠️ Unaudited |
+| GIBXRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-142237 | `0x253fe2c76728c98fc18bb52e9a0ba8522be15aa5` | ⚠️ Unaudited |
+| GIBXSwapFee | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-142235 | `0x10a55ac513d202721be12eb40cd29b5b5dbf47d0` | ⚠️ Unaudited |
+| GIBXToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-142234 | `0x004eda9c37660387e424872b0cf25323fdd7f620` | ⚠️ Unaudited |
+| ILO | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-142239 | `0x299cac915a93216c35b35786c70b7e523e36005c` | ⚠️ Unaudited |
+| MasterChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-142240 | `0x29e02337fba64d61239f1140389b371127c95947` | ⚠️ Unaudited |
+| MasterChefTimelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-142241 | `0x39f01e469c9a000b426e7196f9ff75f9ae49ed28` | ⚠️ Unaudited |
+| Oracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-142243 | `0x572138bbbbb851be13db130297b69c330e556c2c` | ⚠️ Unaudited |
+| PoolChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-142236 | `0x10ee036c8dc47e74b063f56f750b5b22d76785df` | ⚠️ Unaudited |
+| PoolChefTimelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-142242 | `0x3d008d53e7061fdc4bfb256e6b868615dd9bb6c8` | ⚠️ Unaudited |
+| PoolFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-142244 | `0x5d9f2c265c57bb3d70636034f52f20f92ff15465` | ⚠️ Unaudited |
+| SwapMining | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-142247 | `0xc31a355277228c1bf9a88599647faeaae664ea1f` | ⚠️ Unaudited |
+| TokenLocker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-142238 | `0x26ce70a8404c390bdbb680a67c5b10a492323b3c` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -123,20 +123,20 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x02332c...f432e8` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x0e3c93...0ba374` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x0fcc29...f47d23` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x1f598e...56e567` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x2008b6...d65129` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x4ab507...68c7b8` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x6f5da3...96c4af` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x77a9d1...9aee55` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0xaa2dcc...10b592` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0xaad035...d1934e` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0xaed487...870d34` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0xb816e6...af38bf` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0xdba63f...2da79b` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0xfec95d...0d44c4` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x02332c69debf4eda2857e6146ca87425f1f432e8` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x0e3c939cc14e5797aeaf7718210a8e94f20ba374` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x0fcc29c11b6ebedafde71e0ea114bd1eddf47d23` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x1f598e9d022e5df76070bea8bc94e0347f56e567` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x2008b6d863f5f5a678274cd3fb254fe191d65129` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x4ab507e85b148e66b5a79b34a8a7942ef368c7b8` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x6f5da3bc98da0c67787ff85f25d265ead296c4af` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x77a9d1aa94a0ade8515ad5b2f57066e4489aee55` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0xaa2dcc97540c4a3c2ebbe5b9862c49c7d410b592` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0xaad0351e32982ab22c3325f41da318955bd1934e` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0xaed487b71965f792af648810595b5d069e870d34` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0xb816e67685b7b2d183adad9fa2aacc89f9af38bf` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0xdba63fa240d8f4ff68c82082a48087243e2da79b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0xfec95dc89baf31ddeebb9b0e413e13701d0d44c4` | ❓ Unverified |
 
 ## Audit Inventory
 

@@ -61,12 +61,12 @@ The protocol comprises 2 functional families. Contracts are linked by 1 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| GeneralSwapForwarder | unknown | base | n/a | [`0x567a06...4a4354`](./contracts/base-8453/0x567a06c6e4f77fcc64cf53183e0328a7f84a4354/) | ⚠️ Unaudited |
-| InfinityPoolsFactory | unknown | base | n/a | [`0x86342d...695f08`](./contracts/base-8453/0x86342d7bbe93cb640a6c57d4781f04d93a695f08/) | ⚠️ Unaudited |
-| InfinityPoolsPeriphery | unknown | base | n/a | [`0xf8fad0...c011a7`](./contracts/base-8453/0xf8fad01b2902ff57460552c920233682c7c011a7/) | ⚠️ Unaudited |
-| InfinityPoolsQuoter | unknown | base | n/a | [`0xc9d8a5...55663c`](./contracts/base-8453/0xc9d8a51be17b79eb8fd22f87f6851c243855663c/) | ⚠️ Unaudited |
-| InfinityPoolsSwapForwarder | unknown | base | n/a | [`0x99a9c2...d4ebe7`](./contracts/base-8453/0x99a9c21053acccf6961f7f12cff0d9d155d4ebe7/) | ⚠️ Unaudited |
-| UniV2SwapForwarder | unknown | base | n/a | [`0xdc9be7...e61021`](./contracts/base-8453/0xdc9be7d212536e8e23b0074678d0625499e61021/) | ⚠️ Unaudited |
+| GeneralSwapForwarder | unknown | base | n/a | [`0x567a06c6e4f77fcc64cf53183e0328a7f84a4354`](./contracts/base-8453/0x567a06c6e4f77fcc64cf53183e0328a7f84a4354/) | ⚠️ Unaudited |
+| InfinityPoolsFactory | unknown | base | n/a | [`0x86342d7bbe93cb640a6c57d4781f04d93a695f08`](./contracts/base-8453/0x86342d7bbe93cb640a6c57d4781f04d93a695f08/) | ⚠️ Unaudited |
+| InfinityPoolsPeriphery | unknown | base | n/a | [`0xf8fad01b2902ff57460552c920233682c7c011a7`](./contracts/base-8453/0xf8fad01b2902ff57460552c920233682c7c011a7/) | ⚠️ Unaudited |
+| InfinityPoolsQuoter | unknown | base | n/a | [`0xc9d8a51be17b79eb8fd22f87f6851c243855663c`](./contracts/base-8453/0xc9d8a51be17b79eb8fd22f87f6851c243855663c/) | ⚠️ Unaudited |
+| InfinityPoolsSwapForwarder | unknown | base | n/a | [`0x99a9c21053acccf6961f7f12cff0d9d155d4ebe7`](./contracts/base-8453/0x99a9c21053acccf6961f7f12cff0d9d155d4ebe7/) | ⚠️ Unaudited |
+| UniV2SwapForwarder | unknown | base | n/a | [`0xdc9be7d212536e8e23b0074678d0625499e61021`](./contracts/base-8453/0xdc9be7d212536e8e23b0074678d0625499e61021/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -99,12 +99,12 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x567a06...4a4354`](./contracts/base-8453/0x567a06c6e4f77fcc64cf53183e0328a7f84a4354/) | GeneralSwapForwarder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x86342d...695f08`](./contracts/base-8453/0x86342d7bbe93cb640a6c57d4781f04d93a695f08/) | InfinityPoolsFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xf8fad0...c011a7`](./contracts/base-8453/0xf8fad01b2902ff57460552c920233682c7c011a7/) | InfinityPoolsPeriphery | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xc9d8a5...55663c`](./contracts/base-8453/0xc9d8a51be17b79eb8fd22f87f6851c243855663c/) | InfinityPoolsQuoter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x99a9c2...d4ebe7`](./contracts/base-8453/0x99a9c21053acccf6961f7f12cff0d9d155d4ebe7/) | InfinityPoolsSwapForwarder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xdc9be7...e61021`](./contracts/base-8453/0xdc9be7d212536e8e23b0074678d0625499e61021/) | UniV2SwapForwarder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x567a06c6e4f77fcc64cf53183e0328a7f84a4354`](./contracts/base-8453/0x567a06c6e4f77fcc64cf53183e0328a7f84a4354/) | GeneralSwapForwarder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x86342d7bbe93cb640a6c57d4781f04d93a695f08`](./contracts/base-8453/0x86342d7bbe93cb640a6c57d4781f04d93a695f08/) | InfinityPoolsFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xf8fad01b2902ff57460552c920233682c7c011a7`](./contracts/base-8453/0xf8fad01b2902ff57460552c920233682c7c011a7/) | InfinityPoolsPeriphery | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xc9d8a51be17b79eb8fd22f87f6851c243855663c`](./contracts/base-8453/0xc9d8a51be17b79eb8fd22f87f6851c243855663c/) | InfinityPoolsQuoter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x99a9c21053acccf6961f7f12cff0d9d155d4ebe7`](./contracts/base-8453/0x99a9c21053acccf6961f7f12cff0d9d155d4ebe7/) | InfinityPoolsSwapForwarder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xdc9be7d212536e8e23b0074678d0625499e61021`](./contracts/base-8453/0xdc9be7d212536e8e23b0074678d0625499e61021/) | UniV2SwapForwarder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

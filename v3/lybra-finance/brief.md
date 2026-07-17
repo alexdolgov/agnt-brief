@@ -57,8 +57,8 @@ The pinned logic-topography run contains 2 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x97de57...ada371`, chain 1)
-- PeUSDMainnet (`0xd585aa...52f247`, chain 1)
+- UnnamedContract (`0x97de57ec338ab5d51557da3434828c5dbfada371`, chain 1)
+- PeUSDMainnet (`0xd585aaafa2b58b1cd75092b51ade9fa4ce52f247`, chain 1)
 
 ## Contract Surface Quality
 
@@ -102,44 +102,44 @@ The pinned logic-topography run contains 2 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | token | project_anchor | own_supporting | 0 | ethereum | unit-388613 | `0x97de57...ada371` | ✅ Audited |
+| UnnamedContract | token | project_anchor | own_supporting | 0 | ethereum | unit-388613 | `0x97de57ec338ab5d51557da3434828c5dbfada371` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (32)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AdminTimelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2f0a03...8cf484` | ⚠️ Unaudited |
-| CollateralRatioGuardian | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x126dc5...142bde` | ⚠️ Unaudited |
-| esLBR | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x73b198...dfb89f` | ⚠️ Unaudited |
-| esLBRBoost | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x78c02d...3cbcf3` | ⚠️ Unaudited |
-| EUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdf3ac4...4262cc` | ⚠️ Unaudited |
-| EUSDMiningIncentives | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0b2659...1edbde` | ⚠️ Unaudited |
-| GovernanceTimelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x81905e...b26406` | ⚠️ Unaudited |
-| GrantHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6e2cee...5cc6d3` | ⚠️ Unaudited |
-| LBR | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xed1167...981ebd` | ⚠️ Unaudited |
-| LBRMinerFromL2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbcaf98...97f0ef` | ⚠️ Unaudited |
-| LBRPriceOFeed | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1932d3...803338` | ⚠️ Unaudited |
-| LybraBalanceSheet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0bf9b8...349014` | ⚠️ Unaudited |
-| LybraConfigurator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0bc061...e6346e` | ⚠️ Unaudited |
-| LybraETHxVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5c5510...9e5d24` | ⚠️ Unaudited |
-| LybraGovernance | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x34afe1...7e1b69` | ⚠️ Unaudited |
-| LybraHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbdf8d5...0a8568` | ⚠️ Unaudited |
-| LybraOrder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7f13d7...d5f34a` | ⚠️ Unaudited |
-| LybraProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa23e44...8cad73` | ⚠️ Unaudited |
-| LybraRETHVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x090b27...4bb958` | ⚠️ Unaudited |
-| LybraStETHVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa980d4...e06f0e` | ⚠️ Unaudited |
-| LybraWBETHVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb72da4...4bf262` | ⚠️ Unaudited |
-| LybraWstETHVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5e28b5...1c45ce` | ⚠️ Unaudited |
-| MigrateHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd3e9de...797cd4` | ⚠️ Unaudited |
-| NonBoost | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdf2840...ee20af` | ⚠️ Unaudited |
-| PeUSDMainnet | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388614 | `0xd585aa...52f247` | ⚠️ Unaudited |
-| ProtocolRewardsPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc2966a...2ed89e` | ⚠️ Unaudited |
-| Repayment | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x28ac0a...0e569e` | ⚠️ Unaudited |
-| StakingRewardsV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x19d7cb...344d6e` | ⚠️ Unaudited |
-| TokenHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb36135...a38af1` | ⚠️ Unaudited |
-| TokenUnlocking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x000bcb...6cc970` | ⚠️ Unaudited |
-| UniswapPairOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc62686...4647c5` | ⚠️ Unaudited |
-| V1eUSDRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x11079f...e9a881` | ⚠️ Unaudited |
+| AdminTimelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2f0a037fbe917f63e4504b0b07d92cc93c8cf484` | ⚠️ Unaudited |
+| CollateralRatioGuardian | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x126dc5e04b0e8c8ef6f4602fda90e39c0a142bde` | ⚠️ Unaudited |
+| esLBR | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x73b1988a3336208e55275c52fac7f5d3a7dfb89f` | ⚠️ Unaudited |
+| esLBRBoost | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x78c02d080091e17a33b4a5986a880235233cbcf3` | ⚠️ Unaudited |
+| EUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdf3ac4f479375802a821f7b7b46cd7eb5e4262cc` | ⚠️ Unaudited |
+| EUSDMiningIncentives | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0b2659734121feb636534213a159ac91691edbde` | ⚠️ Unaudited |
+| GovernanceTimelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x81905eae41af5235ec4d7e9b12e8d51251b26406` | ⚠️ Unaudited |
+| GrantHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6e2cee09d5a71a9bf041e13fe52096133e5cc6d3` | ⚠️ Unaudited |
+| LBR | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xed1167b6dc64e8a366db86f2e952a482d0981ebd` | ⚠️ Unaudited |
+| LBRMinerFromL2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbcaf98f5198b3a68ddcd6720d80483182997f0ef` | ⚠️ Unaudited |
+| LBRPriceOFeed | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1932d36f5dd86327ceacd470271709a931803338` | ⚠️ Unaudited |
+| LybraBalanceSheet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0bf9b8dfac5ae048cf43fef66cc5b5f62a349014` | ⚠️ Unaudited |
+| LybraConfigurator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0bc0616c57b8cd59b530e1fcb5c5b8b4a5e6346e` | ⚠️ Unaudited |
+| LybraETHxVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5c5510e6a04311ab4d8f31b23ba0a6059c9e5d24` | ⚠️ Unaudited |
+| LybraGovernance | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x34afe1b92a63f647a3c2e56a4a8347c8fa7e1b69` | ⚠️ Unaudited |
+| LybraHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbdf8d5010278a54e9510c8a17b53c7bfc20a8568` | ⚠️ Unaudited |
+| LybraOrder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7f13d793010115e9b4db341e60f522aafad5f34a` | ⚠️ Unaudited |
+| LybraProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa23e44aea714fbbc08ef28340d78067b9a8cad73` | ⚠️ Unaudited |
+| LybraRETHVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x090b2787d6798000710a8e821ec6111d254bb958` | ⚠️ Unaudited |
+| LybraStETHVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa980d4c0c2e48d305b582aa439a3575e3de06f0e` | ⚠️ Unaudited |
+| LybraWBETHVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb72da4a9866b0993b9a7d842e5060716f74bf262` | ⚠️ Unaudited |
+| LybraWstETHVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5e28b5858da2c6fb4e449d69eeb5b82e271c45ce` | ⚠️ Unaudited |
+| MigrateHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd3e9de27d66f1d8ade2bee73334b76734e797cd4` | ⚠️ Unaudited |
+| NonBoost | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdf284087c7887df16bb1b686421dc34766ee20af` | ⚠️ Unaudited |
+| PeUSDMainnet | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388614 | `0xd585aaafa2b58b1cd75092b51ade9fa4ce52f247` | ⚠️ Unaudited |
+| ProtocolRewardsPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc2966a73bbc53f3c99268ed84d245dbe972ed89e` | ⚠️ Unaudited |
+| Repayment | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x28ac0a35faf6f2704cd8324c250a029c190e569e` | ⚠️ Unaudited |
+| StakingRewardsV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x19d7cb89e1f92f21d71db34bef4944b9f3344d6e` | ⚠️ Unaudited |
+| TokenHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb36135b700df1f740b82c914a10ba045eca38af1` | ⚠️ Unaudited |
+| TokenUnlocking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x000bcb9975d040f32ad59880317f4be8286cc970` | ⚠️ Unaudited |
+| UniswapPairOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc626867660df1cc6274ce0338e7dfb92474647c5` | ⚠️ Unaudited |
+| V1eUSDRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x11079fc996237e9dd830899e29ecfdaa6ee9a881` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -177,7 +177,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| DL audit link | Lybra | own contract | 0x97de57… (selected) `0x97de57...ada371` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| DL audit link | Lybra | own contract | 0x97de57… (selected) `0x97de57ec338ab5d51557da3434828c5dbfada371` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | DL audit link | EUSD | unmatched — not counted | — | Inheritance chart shows Lybra inherits from EUSD and Governable. | no |
 | DL audit link | Governable | unmatched — not counted | — | Inheritance chart shows Lybra inherits from EUSD and Governable. | no |
 
@@ -187,7 +187,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0xd585aa...52f247` | PeUSDMainnet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xd585aaafa2b58b1cd75092b51ade9fa4ce52f247` | PeUSDMainnet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

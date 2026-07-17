@@ -61,29 +61,29 @@ The protocol comprises 3 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| FeeSplitter | unknown | arbitrum | n/a | [`0x27f804...61ced9`](./contracts/arbitrum-42161/0x27f80488078bc485c9cf5a989fcbab27d561ced9/) | ✅ Audited |
-| NestedAsset | unknown | ethereum | n/a | [`0x0f0293...fe7d77`](./contracts/ethereum-1/0x0f0293b0976c076eb0dd8e81cb9dde1366fe7d77/) | ✅ Audited |
-| NestedFactory | unknown | polygon | n/a | [`0x0c4578...b8ed81`](./contracts/polygon-137/0x0c457862a844f41381c5429b1cb6394192b8ed81/) | ✅ Audited |
-| NestedRecords | unknown | optimism | n/a | [`0x27f804...61ced9`](./contracts/optimism-10/0x27f80488078bc485c9cf5a989fcbab27d561ced9/) | ✅ Audited |
-| NestedReserve | unknown | ethereum | n/a | [`0x0535f1...46c65d`](./contracts/ethereum-1/0x0535f1f43ee274123291bbab284948caed46c65d/) | ✅ Audited |
-| OperatorResolver | unknown | ethereum | n/a | [`0x04a730...ad376b`](./contracts/ethereum-1/0x04a7307e94fd83b2fe88537729640ea7a0ad376b/) | ✅ Audited |
-| OperatorScripts | unknown | bsc | n/a | [`0x0c4578...b8ed81`](./contracts/bsc-56/0x0c457862a844f41381c5429b1cb6394192b8ed81/) | ✅ Audited |
-| OwnerProxy | unknown | polygon | n/a | [`0x022f65...62af49`](./contracts/polygon-137/0x022f65aa70af76167dfa328fe27eecbe4162af49/) | ✅ Audited |
-| TimelockControllerEmergency | unknown | ethereum | n/a | [`0x0e04e8...31ebcc`](./contracts/ethereum-1/0x0e04e8127cf11db51d4c8841f71833af1231ebcc/) | ✅ Audited |
-| Withdrawer | unknown | bsc | n/a | [`0x0384f3...1f8058`](./contracts/bsc-56/0x0384f3b95faa3c2f48c40f15fe8bd8cd1f1f8058/) | ✅ Audited |
-| ZeroExOperator | unknown | ethereum | n/a | [`0x1db811...0d6940`](./contracts/ethereum-1/0x1db81116467789b7dcc3b070ee8f5aa4d90d6940/) | ✅ Audited |
-| ZeroExStorage | unknown | ethereum | n/a | [`0xa19d09...fabe65`](./contracts/ethereum-1/0xa19d093d24d345fa25424d15202cab00a5fabe65/) | ✅ Audited |
+| FeeSplitter | unknown | arbitrum | n/a | [`0x27f80488078bc485c9cf5a989fcbab27d561ced9`](./contracts/arbitrum-42161/0x27f80488078bc485c9cf5a989fcbab27d561ced9/) | ✅ Audited |
+| NestedAsset | unknown | ethereum | n/a | [`0x0f0293b0976c076eb0dd8e81cb9dde1366fe7d77`](./contracts/ethereum-1/0x0f0293b0976c076eb0dd8e81cb9dde1366fe7d77/) | ✅ Audited |
+| NestedFactory | unknown | polygon | n/a | [`0x0c457862a844f41381c5429b1cb6394192b8ed81`](./contracts/polygon-137/0x0c457862a844f41381c5429b1cb6394192b8ed81/) | ✅ Audited |
+| NestedRecords | unknown | optimism | n/a | [`0x27f80488078bc485c9cf5a989fcbab27d561ced9`](./contracts/optimism-10/0x27f80488078bc485c9cf5a989fcbab27d561ced9/) | ✅ Audited |
+| NestedReserve | unknown | ethereum | n/a | [`0x0535f1f43ee274123291bbab284948caed46c65d`](./contracts/ethereum-1/0x0535f1f43ee274123291bbab284948caed46c65d/) | ✅ Audited |
+| OperatorResolver | unknown | ethereum | n/a | [`0x04a7307e94fd83b2fe88537729640ea7a0ad376b`](./contracts/ethereum-1/0x04a7307e94fd83b2fe88537729640ea7a0ad376b/) | ✅ Audited |
+| OperatorScripts | unknown | bsc | n/a | [`0x0c457862a844f41381c5429b1cb6394192b8ed81`](./contracts/bsc-56/0x0c457862a844f41381c5429b1cb6394192b8ed81/) | ✅ Audited |
+| OwnerProxy | unknown | polygon | n/a | [`0x022f65aa70af76167dfa328fe27eecbe4162af49`](./contracts/polygon-137/0x022f65aa70af76167dfa328fe27eecbe4162af49/) | ✅ Audited |
+| TimelockControllerEmergency | unknown | ethereum | n/a | [`0x0e04e8127cf11db51d4c8841f71833af1231ebcc`](./contracts/ethereum-1/0x0e04e8127cf11db51d4c8841f71833af1231ebcc/) | ✅ Audited |
+| Withdrawer | unknown | bsc | n/a | [`0x0384f3b95faa3c2f48c40f15fe8bd8cd1f1f8058`](./contracts/bsc-56/0x0384f3b95faa3c2f48c40f15fe8bd8cd1f1f8058/) | ✅ Audited |
+| ZeroExOperator | unknown | ethereum | n/a | [`0x1db81116467789b7dcc3b070ee8f5aa4d90d6940`](./contracts/ethereum-1/0x1db81116467789b7dcc3b070ee8f5aa4d90d6940/) | ✅ Audited |
+| ZeroExStorage | unknown | ethereum | n/a | [`0xa19d093d24d345fa25424d15202cab00a5fabe65`](./contracts/ethereum-1/0xa19d093d24d345fa25424d15202cab00a5fabe65/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (6)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CREATE3Factory | unknown | bsc | n/a | [`0x55de72...b97eb9`](./contracts/bsc-56/0x55de7264fc5c847065c69a6240d3a6c05db97eb9/) | ⚠️ Unaudited |
-| FlatOperator | unknown | arbitrum | n/a | [`0x2a3c3d...f26989`](./contracts/arbitrum-42161/0x2a3c3d80e93501e751e5b6f355f396e831f26989/) | ⚠️ Unaudited |
-| NestedAssetBatcher | unknown | bsc | n/a | [`0x2b2eda...0eb815`](./contracts/bsc-56/0x2b2eda765282f6265101c0f72157d50f8f0eb815/) | ⚠️ Unaudited |
-| SingleCall | unknown | arbitrum | n/a | [`0x449d08...c5200f`](./contracts/arbitrum-42161/0x449d088c9f184af598fe72d26742a58a11c5200f/) | ⚠️ Unaudited |
-| TimelockController | unknown | bsc | n/a | [`0x78a720...8d829a`](./contracts/bsc-56/0x78a7207f221b1f376a73f52dd27087b7708d829a/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | bsc | n/a | [`0x74afad...3fd330`](./contracts/bsc-56/0x74afada131db545df782d196c8736d97593fd330/) | ⚠️ Unaudited |
+| CREATE3Factory | unknown | bsc | n/a | [`0x55de7264fc5c847065c69a6240d3a6c05db97eb9`](./contracts/bsc-56/0x55de7264fc5c847065c69a6240d3a6c05db97eb9/) | ⚠️ Unaudited |
+| FlatOperator | unknown | arbitrum | n/a | [`0x2a3c3d80e93501e751e5b6f355f396e831f26989`](./contracts/arbitrum-42161/0x2a3c3d80e93501e751e5b6f355f396e831f26989/) | ⚠️ Unaudited |
+| NestedAssetBatcher | unknown | bsc | n/a | [`0x2b2eda765282f6265101c0f72157d50f8f0eb815`](./contracts/bsc-56/0x2b2eda765282f6265101c0f72157d50f8f0eb815/) | ⚠️ Unaudited |
+| SingleCall | unknown | arbitrum | n/a | [`0x449d088c9f184af598fe72d26742a58a11c5200f`](./contracts/arbitrum-42161/0x449d088c9f184af598fe72d26742a58a11c5200f/) | ⚠️ Unaudited |
+| TimelockController | unknown | bsc | n/a | [`0x78a7207f221b1f376a73f52dd27087b7708d829a`](./contracts/bsc-56/0x78a7207f221b1f376a73f52dd27087b7708d829a/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | bsc | n/a | [`0x74afada131db545df782d196c8736d97593fd330`](./contracts/bsc-56/0x74afada131db545df782d196c8736d97593fd330/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -119,10 +119,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x55de72...b97eb9`](./contracts/bsc-56/0x55de7264fc5c847065c69a6240d3a6c05db97eb9/) | CREATE3Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x2a3c3d...f26989`](./contracts/arbitrum-42161/0x2a3c3d80e93501e751e5b6f355f396e831f26989/) | FlatOperator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x2b2eda...0eb815`](./contracts/bsc-56/0x2b2eda765282f6265101c0f72157d50f8f0eb815/) | NestedAssetBatcher | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x449d08...c5200f`](./contracts/arbitrum-42161/0x449d088c9f184af598fe72d26742a58a11c5200f/) | SingleCall | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x55de7264fc5c847065c69a6240d3a6c05db97eb9`](./contracts/bsc-56/0x55de7264fc5c847065c69a6240d3a6c05db97eb9/) | CREATE3Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x2a3c3d80e93501e751e5b6f355f396e831f26989`](./contracts/arbitrum-42161/0x2a3c3d80e93501e751e5b6f355f396e831f26989/) | FlatOperator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x2b2eda765282f6265101c0f72157d50f8f0eb815`](./contracts/bsc-56/0x2b2eda765282f6265101c0f72157d50f8f0eb815/) | NestedAssetBatcher | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x449d088c9f184af598fe72d26742a58a11c5200f`](./contracts/arbitrum-42161/0x449d088c9f184af598fe72d26742a58a11c5200f/) | SingleCall | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

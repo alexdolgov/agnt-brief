@@ -79,8 +79,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Goldsand | unknown | ethereum | n/a | `0x665942...6fd36f` | ❓ Unverified |
-| WithdrawalVault | operational_periphery | ethereum | n/a | `0x22b35d...f35c13` | ❓ Unverified |
+| Goldsand | unknown | ethereum | n/a | `0x6659423929e1a00119fc3f79c8e4f443cc6fd36f` | ❓ Unverified |
+| WithdrawalVault | operational_periphery | ethereum | n/a | `0x22b35d437b3999f5c357c176adeec1b8b0f35c13` | ❓ Unverified |
 
 ## Audit Inventory
 

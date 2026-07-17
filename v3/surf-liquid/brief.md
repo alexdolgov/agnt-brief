@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across base, ethereum
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- AgentKeyV2 (`0xcdca2e...0dafbf`, chain 8453)
+- AgentKeyV2 (`0xcdca2eaae4a8a6b83d7a3589946c2301040dafbf`, chain 8453)
 
 ## Contract Surface Quality
 
@@ -103,12 +103,12 @@ The pinned logic-topography run contains 1 contract row(s) across base, ethereum
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AgentKeyV2 | unknown | project_anchor | own_supporting | 0 | base | unit-393508 | `0xcdca2e...0dafbf` | ⚠️ Unaudited |
-| BridgeLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xab7111...cce284` | ⚠️ Unaudited |
-| BundlerLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x84be6e...24c99b` | ⚠️ Unaudited |
-| DirectDepositLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8888db...4b9178` | ⚠️ Unaudited |
-| UserVaultFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x8fa50d...c18779` | ⚠️ Unaudited |
-| VaultRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x98a0de...69f271` | ⚠️ Unaudited |
+| AgentKeyV2 | unknown | project_anchor | own_supporting | 0 | base | unit-393508 | `0xcdca2eaae4a8a6b83d7a3589946c2301040dafbf` | ⚠️ Unaudited |
+| BridgeLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xab71119e39d1d51b8dc0d0b72ab5e31539cce284` | ⚠️ Unaudited |
+| BundlerLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x84be6e2916c614c183b9b603073187bbbd24c99b` | ⚠️ Unaudited |
+| DirectDepositLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8888db40e2732a66610c52e74f525258344b9178` | ⚠️ Unaudited |
+| UserVaultFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x8fa50dea8db10987d7d22ac092001c3613c18779` | ⚠️ Unaudited |
+| VaultRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x98a0def9c959ec934df02141291303819369f271` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -157,7 +157,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | `0xcdca2e...0dafbf` | AgentKeyV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xcdca2eaae4a8a6b83d7a3589946c2301040dafbf` | AgentKeyV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

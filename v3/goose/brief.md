@@ -52,10 +52,10 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x1ee38d...08e6fb`, chain 56)
-- UnnamedContract (`0x2ef488...42ab3a`, chain 56)
-- UnnamedContract (`0xe70e91...7f2e57`, chain 56)
-- UnnamedContract (`0xf952fc...5bfda6`, chain 56)
+- UnnamedContract (`0x1ee38d535d541c55c9dae27b12edf090c608e6fb`, chain 56)
+- UnnamedContract (`0x2ef488de034567e9b8d312928fd52812a242ab3a`, chain 56)
+- UnnamedContract (`0xe70e9185f5ea7ba3c5d63705784d8563017f2e57`, chain 56)
+- UnnamedContract (`0xf952fc3ca7325cc27d15885d37117676d25bfda6`, chain 56)
 
 ## Contract Surface Quality
 
@@ -101,11 +101,11 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| DataStorage | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | opbnb | n/a | 2 deployments: opbnb `0x38bb3b...7c75b4`; arbitrum `0x7da1ea...448ef3` | ⚠️ Unaudited |
-| LRTVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x234c01...4f6299` | ⚠️ Unaudited |
-| Safe | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x509b38...d695e0` | ⚠️ Unaudited |
-| USDVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: ethereum `0xe8a01d...e7e9fb`; arbitrum `0x0874f9...232899` | ⚠️ Unaudited |
-| VaultFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xa988bf...ae6e3f` | ⚠️ Unaudited |
+| DataStorage | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | opbnb | n/a | 2 deployments: opbnb `0x38bb3b7e89baf7b538b48e19e2bab72b9f7c75b4`; arbitrum `0x7da1ea975cfa94c230fe527b9d36a62a77448ef3` | ⚠️ Unaudited |
+| LRTVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x234c013dccb6af642fcb7060a91c9c71504f6299` | ⚠️ Unaudited |
+| Safe | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x509b38c5f884067e2128c4fc89d1489813d695e0` | ⚠️ Unaudited |
+| USDVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: ethereum `0xe8a01d8dac4af19ec7a22cf87f3d141ce6e7e9fb`; arbitrum `0x0874f961178879cdbde3500544c49f864f232899` | ⚠️ Unaudited |
+| VaultFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xa988bfe90492d701069702321e319628c9ae6e3f` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -125,17 +125,17 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-387046 | `0x1ee38d...08e6fb` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-387047 | `0x2ef488...42ab3a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-387048 | `0xe70e91...7f2e57` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-387049 | `0xf952fc...5bfda6` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | opbnb | n/a | `0x2618d3...a5230d` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | opbnb | n/a | `0x7da1ea...448ef3` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | opbnb | n/a | `0x857ab0...0c2d3b` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | opbnb | n/a | `0xa988bf...ae6e3f` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | opbnb | n/a | `0xbaa11f...97a6bb` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | opbnb | n/a | `0xc5db81...8563b9` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | opbnb | n/a | `0xe4bf4e...6ec8d3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-387046 | `0x1ee38d535d541c55c9dae27b12edf090c608e6fb` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-387047 | `0x2ef488de034567e9b8d312928fd52812a242ab3a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-387048 | `0xe70e9185f5ea7ba3c5d63705784d8563017f2e57` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-387049 | `0xf952fc3ca7325cc27d15885d37117676d25bfda6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | opbnb | n/a | `0x2618d3ab61ae9c7f8082e37c7e6aa14cf1a5230d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | opbnb | n/a | `0x7da1ea975cfa94c230fe527b9d36a62a77448ef3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | opbnb | n/a | `0x857ab0b4f236f7dd7e5ac5f96c0bbebf230c2d3b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | opbnb | n/a | `0xa988bfe90492d701069702321e319628c9ae6e3f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | opbnb | n/a | `0xbaa11f119d3209a506ffb5911f1812bfca97a6bb` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | opbnb | n/a | `0xc5db819a2473961857f24c2bedf508def28563b9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | opbnb | n/a | `0xe4bf4e9be7004f081583952f34ed51efa66ec8d3` | ❓ Unverified |
 
 ## Audit Inventory
 

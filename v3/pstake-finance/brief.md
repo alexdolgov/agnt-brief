@@ -52,11 +52,11 @@ The pinned logic-topography run contains 4 contract row(s) across base, blast, b
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x38815a...e93400`, chain 8453)
-- BlastOLE (`0xcbf7b4...03b5ae`, chain 81457)
-- MintSwapCanonicalToken (`0x4c882e...8a7c0c`, chain 56)
-- OptimismMintableERC20 (`0x023550...4c04cd`, chain 10)
-- pStake (`0xfb5c68...f77006`, chain 1)
+- UnnamedContract (`0x38815a4455921667d673b4cb3d48f0383ee93400`, chain 8453)
+- BlastOLE (`0xcbf7b47e9da345812e3bd732e3ee369a7203b5ae`, chain 81457)
+- MintSwapCanonicalToken (`0x4c882ec256823ee773b25b414d36f92ef58a7c0c`, chain 56)
+- OptimismMintableERC20 (`0x023550adde4fa2f90d63a41d9282bee0294c04cd`, chain 10)
+- pStake (`0xfb5c6815ca3ac72ce9f5006869ae67f18bf77006`, chain 1)
 
 ## Contract Surface Quality
 
@@ -102,23 +102,23 @@ The pinned logic-topography run contains 4 contract row(s) across base, blast, b
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| pStake | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251965 | `0xfb5c68...f77006` | ✅ Audited |
+| pStake | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251965 | `0xfb5c6815ca3ac72ce9f5006869ae67f18bf77006` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (11)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AddressStore | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x4a6b31...fec121` | ⚠️ Unaudited |
-| BlastOLE | unknown | project_anchor | own_supporting | 0 | blast | unit-251968 | `0xcbf7b4...03b5ae` | ⚠️ Unaudited |
-| MintSwapCanonicalToken | unknown | project_anchor | own_supporting | 0 | bsc | unit-251967 | `0x4c882e...8a7c0c` | ⚠️ Unaudited |
-| OptimismMintableERC20 | unknown | project_anchor | own_supporting | 0 | optimism | unit-251966 | `0x023550...4c04cd` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x457ccd...94d370` | ⚠️ Unaudited |
-| StakedBNBToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc2e9d0...e4fb16` | ⚠️ Unaudited |
-| StakePool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x17cdf9...d528ee` | ⚠️ Unaudited |
-| TimelockedAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0b3b41...ca647a` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0x2fc80e...fc69bf` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0x3a29f1...83c558` | ⚠️ Unaudited |
-| UndelegationHolder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3c0fc5...5dc298` | ⚠️ Unaudited |
+| AddressStore | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x4a6b3127a1d295878d8790f6ece0776f65fec121` | ⚠️ Unaudited |
+| BlastOLE | unknown | project_anchor | own_supporting | 0 | blast | unit-251968 | `0xcbf7b47e9da345812e3bd732e3ee369a7203b5ae` | ⚠️ Unaudited |
+| MintSwapCanonicalToken | unknown | project_anchor | own_supporting | 0 | bsc | unit-251967 | `0x4c882ec256823ee773b25b414d36f92ef58a7c0c` | ⚠️ Unaudited |
+| OptimismMintableERC20 | unknown | project_anchor | own_supporting | 0 | optimism | unit-251966 | `0x023550adde4fa2f90d63a41d9282bee0294c04cd` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x457ccda8d92172bb0a692a9167ca82673694d370` | ⚠️ Unaudited |
+| StakedBNBToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc2e9d07f66a89c44062459a47a0d2dc038e4fb16` | ⚠️ Unaudited |
+| StakePool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x17cdf9913230d5f9a2b7a0f5b0df286581d528ee` | ⚠️ Unaudited |
+| TimelockedAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0b3b4150bd4ee2a532eeaa0e6be86cfd27ca647a` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0x2fc80e731c40ec6590783bb11eede9dd43fc69bf` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0x3a29f1de4d069745db7184089e657e4c8d83c558` | ⚠️ Unaudited |
+| UndelegationHolder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3c0fc52c7de41363c14a63ea09ba4202d15dc298` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -138,7 +138,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-251969 | `0x38815a...e93400` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-251969 | `0x38815a4455921667d673b4cb3d48f0383ee93400` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -196,7 +196,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| DL audit link | PSTAKE | own contract | pStake (selected) `0xfb5c68...f77006` — deployed 2022-01-12 00:52:25+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| DL audit link | PSTAKE | own contract | pStake (selected) `0xfb5c6815ca3ac72ce9f5006869ae67f18bf77006` — deployed 2022-01-12 00:52:25+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | DL audit link | StakeLPCoreV8 | unmatched — not counted | — | listed in scope table | no |
 | DL audit link | STokensV2 | unmatched — not counted | — | listed in scope table | no |
 | DL audit link | TokenWrapperV2 | unmatched — not counted | — | listed in scope table | no |
@@ -231,7 +231,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | pSTAKE Smart Contract Audit - PeckShield [09.07.2021].pdf | TokenWrapper | unmatched — not counted | — | Target in findings PVE-003, PVE-004, PVE-005 | no |
 | pSTAKE Smart Contract Audit - Solidified [02.08.2021].pdf | LiquidStaking | unmatched — not counted | — | listed in scope | no |
 | pSTAKE Smart Contract Audit - Solidified [02.08.2021].pdf | Migrations | unmatched — not counted | — | listed in scope | no |
-| pSTAKE Smart Contract Audit - Solidified [02.08.2021].pdf | PSTAKE | own contract | pStake (selected) `0xfb5c68...f77006` — deployed 2022-01-12 00:52:25+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| pSTAKE Smart Contract Audit - Solidified [02.08.2021].pdf | PSTAKE | own contract | pStake (selected) `0xfb5c6815ca3ac72ce9f5006869ae67f18bf77006` — deployed 2022-01-12 00:52:25+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | pSTAKE Smart Contract Audit - Solidified [02.08.2021].pdf | STokens | unmatched — not counted | — | listed in scope | no |
 | pSTAKE Smart Contract Audit - Solidified [02.08.2021].pdf | StakeLPCore | unmatched — not counted | — | listed in scope | no |
 | pSTAKE Smart Contract Audit - Solidified [02.08.2021].pdf | TokenWrapper | unmatched — not counted | — | listed in scope | no |
@@ -249,7 +249,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | pSTAKE Smart Contract Audit - Solidified [02.08.2021].pdf | BytesLib | unmatched — not counted | — | listed in scope | no |
 | pSTAKE Smart Contract Audit - Solidified [02.08.2021].pdf | FullMath | unmatched — not counted | — | listed in scope | no |
 | pSTAKE Smart Contract Audit - Solidified [02.08.2021].pdf | TransferHelper | unmatched — not counted | — | listed in scope | no |
-| pSTAKE Smart Contracts Audit - PeckShield [7:1:2022].pdf | pStake | own contract | pStake (selected) `0xfb5c68...f77006` — deployed 2022-01-12 00:52:25+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| pSTAKE Smart Contracts Audit - PeckShield [7:1:2022].pdf | pStake | own contract | pStake (selected) `0xfb5c6815ca3ac72ce9f5006869ae67f18bf77006` — deployed 2022-01-12 00:52:25+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | pSTAKE Smart Contracts Audit - PeckShield [7:1:2022].pdf | Orchestrator | unmatched — not counted | — | Target of findings PVE-001 and PVE-002; described as core contract | no |
 | pSTAKE Smart Contracts Audit - PeckShield [7:1:2022].pdf | StepVesting | unmatched — not counted | — | Mentioned in Orchestrator constructor and mintAndTransferTokens function | no |
 | pSTAKE Solana Staking audit - Kudelski Security [10.05.2022].pdf | wrapper-contract | unmatched — not counted | — | listed in scope table | no |
@@ -322,8 +322,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | `0x4c882e...8a7c0c` | MintSwapCanonicalToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | `0x023550...4c04cd` | OptimismMintableERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x4c882ec256823ee773b25b414d36f92ef58a7c0c` | MintSwapCanonicalToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x023550adde4fa2f90d63a41d9282bee0294c04cd` | OptimismMintableERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

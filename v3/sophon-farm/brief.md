@@ -52,12 +52,12 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x6b7774...ddd3f0`, chain 1)
-- UnnamedContract (`0xf553e6...a8f987`, chain 1)
-- UnnamedContract (`0x31dba3...18c742`, chain 56)
-- UnnamedContract (`0xeb971f...109148`, chain 137)
-- UnnamedContract (`0x31dba3...18c742`, chain 8453)
-- UnnamedContract (`0x31dba3...18c742`, chain 42161)
+- UnnamedContract (`0x6b7774cb12ed7573a7586e7d0e62a2a563ddd3f0`, chain 1)
+- UnnamedContract (`0xf553e6d903aa43420ed7e3bc2313be9286a8f987`, chain 1)
+- UnnamedContract (`0x31dba3c96481fde3cd81c2aaf51f2d8bf618c742`, chain 56)
+- UnnamedContract (`0xeb971fd26783f32694dbb392dd7289de23109148`, chain 137)
+- UnnamedContract (`0x31dba3c96481fde3cd81c2aaf51f2d8bf618c742`, chain 8453)
+- UnnamedContract (`0x31dba3c96481fde3cd81c2aaf51f2d8bf618c742`, chain 42161)
 
 ## Contract Surface Quality
 
@@ -103,8 +103,8 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| SFAzurUpgrade | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2ce8ad...40ea69` | ⚠️ Unaudited |
-| SophonFarmingProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x52df5e...4a774a` | ⚠️ Unaudited |
+| SFAzurUpgrade | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2ce8ad8c545b7fb434d26961c7029d515940ea69` | ⚠️ Unaudited |
+| SophonFarmingProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x52df5e394469743839a47b4d0b1e09b8a84a774a` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -124,12 +124,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-256292 | `0x6b7774...ddd3f0` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-256293 | `0xf553e6...a8f987` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-256296 | `0x31dba3...18c742` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-256294 | `0xeb971f...109148` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-256297 | `0x31dba3...18c742` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-256295 | `0x31dba3...18c742` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-256292 | `0x6b7774cb12ed7573a7586e7d0e62a2a563ddd3f0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-256293 | `0xf553e6d903aa43420ed7e3bc2313be9286a8f987` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-256296 | `0x31dba3c96481fde3cd81c2aaf51f2d8bf618c742` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-256294 | `0xeb971fd26783f32694dbb392dd7289de23109148` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-256297 | `0x31dba3c96481fde3cd81c2aaf51f2d8bf618c742` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-256295 | `0x31dba3c96481fde3cd81c2aaf51f2d8bf618c742` | ❓ Unverified |
 
 ## Audit Inventory
 

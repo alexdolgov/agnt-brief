@@ -52,24 +52,24 @@ The pinned logic-topography run contains 12 contract row(s) across optimism, pol
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x668c52...ddf289`, chain 137)
-- UnnamedContract (`0x82907e...ba2d0d`, chain 137)
-- UnnamedContract (`0x8aeb89...c74ce6`, chain 137)
-- UnnamedContract (`0x9a7b41...2cb3ee`, chain 137)
-- UnnamedContract (`0xa86c51...dfb840`, chain 137)
-- UnnamedContract (`0xb8580e...974138`, chain 137)
-- DelegatedDepositVerifier (`0x85afa0...7ea38f`, chain 10)
-- FiatTokenProxy (`0x0b2c63...97ff85`, chain 10)
-- TimelockController (`0x9ec9d8...f8982a`, chain 137)
-- TransferVerifier (`0x7ad8d9...b8195d`, chain 10)
-- TreeUpdateVerifier (`0x2c34af...e1e81d`, chain 10)
-- UChildERC20Proxy (`0x2791bc...a84174`, chain 137)
-- WETH9 (`0x420000...000006`, chain 10)
-- ZkBobDirectDepositQueue (`0x15b8c7...2c0014`, chain 10)
-- ZkBobDirectDepositQueueETH (`0x318e2c...5fc869`, chain 10)
-- ZkBobPoolETH (`0x58320a...2c5992`, chain 10)
-- ZkBobPoolUSDC (`0x1ca8c2...14c97c`, chain 10)
-- ZkBobPoolUSDCMigrated (`0x72e6b5...4d62fb`, chain 137)
+- UnnamedContract (`0x668c5286ead26fac5fa944887f9d2f20f7ddf289`, chain 137)
+- UnnamedContract (`0x82907eaeb25d248dc82033e45b00a3e012ba2d0d`, chain 137)
+- UnnamedContract (`0x8aeb89d5c689c2cf373fe8b56c7a0cd5bdc74ce6`, chain 137)
+- UnnamedContract (`0x9a7b4198065efe631a962e737bdfe1f44f2cb3ee`, chain 137)
+- UnnamedContract (`0xa86c511832ead78d30ad49711874a9f3a1dfb840`, chain 137)
+- UnnamedContract (`0xb8580ea6312dd2311d72bc932b0354a07d974138`, chain 137)
+- DelegatedDepositVerifier (`0x85afa00f38ad5f353c2b80985407b8e8a27ea38f`, chain 10)
+- FiatTokenProxy (`0x0b2c639c533813f4aa9d7837caf62653d097ff85`, chain 10)
+- TimelockController (`0x9ec9d8b2ff9b9f93d7ed3362d714d751b4f8982a`, chain 137)
+- TransferVerifier (`0x7ad8d97c60bfb59e501e3b6c1d8e564b0bb8195d`, chain 10)
+- TreeUpdateVerifier (`0x2c34afcb1c51796c3c0c7710c72a56eb72e1e81d`, chain 10)
+- UChildERC20Proxy (`0x2791bca1f2de4661ed88a30c99a7a9449aa84174`, chain 137)
+- WETH9 (`0x4200000000000000000000000000000000000006`, chain 10)
+- ZkBobDirectDepositQueue (`0x15b8c75c024acba8c114c21f42eb515a762c0014`, chain 10)
+- ZkBobDirectDepositQueueETH (`0x318e2c1f5f6ac4fdd5979e73d498342b255fc869`, chain 10)
+- ZkBobPoolETH (`0x58320a55bbc5f89e5d0c92108f762ac0172c5992`, chain 10)
+- ZkBobPoolUSDC (`0x1ca8c2b9b20e18e86d5b9a72370fc6c91814c97c`, chain 10)
+- ZkBobPoolUSDCMigrated (`0x72e6b59d4a90ab232e55d4bb7ed2dd17494d62fb`, chain 137)
 
 ## Contract Surface Quality
 
@@ -113,50 +113,50 @@ The pinned logic-topography run contains 12 contract row(s) across optimism, pol
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ZkBobDirectDepositQueue | unknown | project_anchor | own_supporting | 1 | optimism | unit-263868 | `0x15b8c7...2c0014` | ✅ Audited |
-| ZkBobPoolETH | unknown | project_anchor | own_supporting | 1 | optimism | unit-263866 | `0x58320a...2c5992` | ✅ Audited |
+| ZkBobDirectDepositQueue | unknown | project_anchor | own_supporting | 1 | optimism | unit-263868 | `0x15b8c75c024acba8c114c21f42eb515a762c0014` | ✅ Audited |
+| ZkBobPoolETH | unknown | project_anchor | own_supporting | 1 | optimism | unit-263866 | `0x58320a55bbc5f89e5d0c92108f762ac0172c5992` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (37)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AccountingMigrator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xbff002...a95f7b` | ⚠️ Unaudited |
-| AllowListOperatorManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x6cbe37...3aaccb` | ⚠️ Unaudited |
-| Base58 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x056295...551ad1` | ⚠️ Unaudited |
-| BobToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x82907e...ba2d0d` | ⚠️ Unaudited |
-| BobVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x72e6b5...4d62fb` | ⚠️ Unaudited |
-| ChildChainManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x195fe6...5dfa0b` | ⚠️ Unaudited |
-| ChildChainManagerProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xafeea1...171ce8` | ⚠️ Unaudited |
-| ChildERC1155 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xa0c68c...c77c77` | ⚠️ Unaudited |
-| ChildERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x0b9020...6eb88f` | ⚠️ Unaudited |
-| ChildERC721 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x6ebeac...a93aab` | ⚠️ Unaudited |
-| ChildMintableERC721 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xd4888f...25b653` | ⚠️ Unaudited |
-| DelegatedDepositVerifier | unknown | project_anchor | own_supporting | 0 | optimism | unit-263845 | `0x85afa0...7ea38f` | ⚠️ Unaudited |
-| EIP1967Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0x1f9843...fa039b` | ⚠️ Unaudited |
-| FiatTokenProxy | unknown | project_anchor | own_supporting | 1 | optimism | unit-263869 | `0x0b2c63...97ff85` | ⚠️ Unaudited |
-| FiatTokenV2_1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xbd17de...0d6fa7` | ⚠️ Unaudited |
-| FxChild | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x839725...afa28a` | ⚠️ Unaudited |
-| MasterMinter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x70429f...6c325b` | ⚠️ Unaudited |
-| MaticWETH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x7ceb23...b9f619` | ⚠️ Unaudited |
-| MutableOperatorManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x4b8c0b...c75a2e` | ⚠️ Unaudited |
-| OPSupplyReductionHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x3c28fb...03f21c` | ⚠️ Unaudited |
-| SimpleKYCProviderManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xb6cdf6...caed78` | ⚠️ Unaudited |
-| TimelockController | unknown | project_anchor | own_supporting | 0 | polygon | unit-263860 | `0x9ec9d8...f8982a` | ⚠️ Unaudited |
-| TransferVerifier | unknown | project_anchor | own_supporting | 0 | optimism | unit-263844 | `0x7ad8d9...b8195d` | ⚠️ Unaudited |
-| TreeUpdateVerifier | unknown | project_anchor | own_supporting | 0 | optimism | unit-263842 | `0x2c34af...e1e81d` | ⚠️ Unaudited |
-| UChildDAI | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x490e37...7999a7` | ⚠️ Unaudited |
-| UChildERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x0735a6...6f0e12` | ⚠️ Unaudited |
-| UChildERC20Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x02daef...057966` | ⚠️ Unaudited |
-| UChildERC20Proxy | unknown | project_anchor | own_supporting | 1 | polygon | unit-263871 | `0x2791bc...a84174` | ⚠️ Unaudited |
-| UChildERC20Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | polygon | n/a | `0xc2132d...b58e8f` | ⚠️ Unaudited |
-| WETH9 | unknown | project_anchor | own_supporting | 0 | optimism | unit-263843 | `0x420000...000006` | ⚠️ Unaudited |
-| ZkAddress | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x0a165e...ec5283` | ⚠️ Unaudited |
-| ZkBobAccounting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xbf3d58...2c9c1b` | ⚠️ Unaudited |
-| ZkBobDirectDepositQueueETH | unknown | project_anchor | own_supporting | 1 | optimism | unit-263867 | `0x318e2c...5fc869` | ⚠️ Unaudited |
-| ZkBobPay | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x222994...167181` | ⚠️ Unaudited |
-| ZkBobPool | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0x00707b...09912b` | ⚠️ Unaudited |
-| ZkBobPoolUSDC | unknown | project_anchor | own_supporting | 1 | optimism | unit-263865 | `0x1ca8c2...14c97c` | ⚠️ Unaudited |
-| ZkBobPoolUSDCMigrated | unknown | project_anchor | own_supporting | 1 | polygon | unit-263870 | `0x72e6b5...4d62fb` | ⚠️ Unaudited |
+| AccountingMigrator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xbff0020638011357315302727ed55c5193a95f7b` | ⚠️ Unaudited |
+| AllowListOperatorManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x6cbe376af580bc2c718f710d0e3ab98feb3aaccb` | ⚠️ Unaudited |
+| Base58 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x056295b97c743b3553e00a54a574da24a9551ad1` | ⚠️ Unaudited |
+| BobToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x82907eaeb25d248dc82033e45b00a3e012ba2d0d` | ⚠️ Unaudited |
+| BobVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x72e6b59d4a90ab232e55d4bb7ed2dd17494d62fb` | ⚠️ Unaudited |
+| ChildChainManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x195fe6ee6639665cceb15bcceb9980fc445dfa0b` | ⚠️ Unaudited |
+| ChildChainManagerProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xafeea1de9d660d3cb53031cfe1a58de40b171ce8` | ⚠️ Unaudited |
+| ChildERC1155 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xa0c68c638235ee32657e8f720a23cec1bfc77c77` | ⚠️ Unaudited |
+| ChildERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x0b9020d4e32990d67559b1317c7bf0c15d6eb88f` | ⚠️ Unaudited |
+| ChildERC721 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x6ebeac13f6403d19c95b6b75008b12fd21a93aab` | ⚠️ Unaudited |
+| ChildMintableERC721 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xd4888fab8bd39a663b63161f5ee1eae31a25b653` | ⚠️ Unaudited |
+| DelegatedDepositVerifier | unknown | project_anchor | own_supporting | 0 | optimism | unit-263845 | `0x85afa00f38ad5f353c2b80985407b8e8a27ea38f` | ⚠️ Unaudited |
+| EIP1967Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0x1f9843c88efc073cb0e33b9e138cff5b9efa039b` | ⚠️ Unaudited |
+| FiatTokenProxy | unknown | project_anchor | own_supporting | 1 | optimism | unit-263869 | `0x0b2c639c533813f4aa9d7837caf62653d097ff85` | ⚠️ Unaudited |
+| FiatTokenV2_1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xbd17deee53a58b48548117a11a2e7bbf2d0d6fa7` | ⚠️ Unaudited |
+| FxChild | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x8397259c983751daf40400790063935a11afa28a` | ⚠️ Unaudited |
+| MasterMinter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x70429f78c2d7d1de6f89be421bce64ba876c325b` | ⚠️ Unaudited |
+| MaticWETH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x7ceb23fd6bc0add59e62ac25578270cff1b9f619` | ⚠️ Unaudited |
+| MutableOperatorManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x4b8c0b14aa7cb5a7cff3546415bbdcacd7c75a2e` | ⚠️ Unaudited |
+| OPSupplyReductionHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x3c28fb3aa25239e6a35a6a36757d38fe9303f21c` | ⚠️ Unaudited |
+| SimpleKYCProviderManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xb6cdf60c4097b8ef9f90bf70d2a2abd8b8caed78` | ⚠️ Unaudited |
+| TimelockController | unknown | project_anchor | own_supporting | 0 | polygon | unit-263860 | `0x9ec9d8b2ff9b9f93d7ed3362d714d751b4f8982a` | ⚠️ Unaudited |
+| TransferVerifier | unknown | project_anchor | own_supporting | 0 | optimism | unit-263844 | `0x7ad8d97c60bfb59e501e3b6c1d8e564b0bb8195d` | ⚠️ Unaudited |
+| TreeUpdateVerifier | unknown | project_anchor | own_supporting | 0 | optimism | unit-263842 | `0x2c34afcb1c51796c3c0c7710c72a56eb72e1e81d` | ⚠️ Unaudited |
+| UChildDAI | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x490e379c9cff64944be82b849f8fd5972c7999a7` | ⚠️ Unaudited |
+| UChildERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x0735a62b0b6e837fa67130589988436fd26f0e12` | ⚠️ Unaudited |
+| UChildERC20Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x02daefc2e8aad089d094579499508398e3057966` | ⚠️ Unaudited |
+| UChildERC20Proxy | unknown | project_anchor | own_supporting | 1 | polygon | unit-263871 | `0x2791bca1f2de4661ed88a30c99a7a9449aa84174` | ⚠️ Unaudited |
+| UChildERC20Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | polygon | n/a | `0xc2132d05d31c914a87c6611c10748aeb04b58e8f` | ⚠️ Unaudited |
+| WETH9 | unknown | project_anchor | own_supporting | 0 | optimism | unit-263843 | `0x4200000000000000000000000000000000000006` | ⚠️ Unaudited |
+| ZkAddress | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x0a165e27ebbd4da0c0c0eb851ac9cc78e0ec5283` | ⚠️ Unaudited |
+| ZkBobAccounting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xbf3d58f026642951990c0421964179c83e2c9c1b` | ⚠️ Unaudited |
+| ZkBobDirectDepositQueueETH | unknown | project_anchor | own_supporting | 1 | optimism | unit-263867 | `0x318e2c1f5f6ac4fdd5979e73d498342b255fc869` | ⚠️ Unaudited |
+| ZkBobPay | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x22299414e9e0e7663f8977a7ea6c1908f2167181` | ⚠️ Unaudited |
+| ZkBobPool | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0x00707bbab9dbb07b77df63dfabbafa192c09912b` | ⚠️ Unaudited |
+| ZkBobPoolUSDC | unknown | project_anchor | own_supporting | 1 | optimism | unit-263865 | `0x1ca8c2b9b20e18e86d5b9a72370fc6c91814c97c` | ⚠️ Unaudited |
+| ZkBobPoolUSDCMigrated | unknown | project_anchor | own_supporting | 1 | polygon | unit-263870 | `0x72e6b59d4a90ab232e55d4bb7ed2dd17494d62fb` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -176,21 +176,21 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-263856 | `0x668c52...ddf289` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-263857 | `0x82907e...ba2d0d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-263858 | `0x8aeb89...c74ce6` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-263859 | `0x9a7b41...2cb3ee` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-263861 | `0xa86c51...dfb840` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-263862 | `0xb8580e...974138` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-263846 | `0x2c74b1...f0c46f` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-263847 | `0x3bd088...d1c9e6` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-263848 | `0x4b6f00...03cdab` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-263849 | `0x5573d8...2ea3ee` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-263850 | `0x98db3a...f2b08c` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-263851 | `0xb5fe2f...05277e` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-263852 | `0xb9988d...335796` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-263854 | `0xe342ca...1b614f` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-263855 | `0xe3dd18...442ade` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-263856 | `0x668c5286ead26fac5fa944887f9d2f20f7ddf289` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-263857 | `0x82907eaeb25d248dc82033e45b00a3e012ba2d0d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-263858 | `0x8aeb89d5c689c2cf373fe8b56c7a0cd5bdc74ce6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-263859 | `0x9a7b4198065efe631a962e737bdfe1f44f2cb3ee` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-263861 | `0xa86c511832ead78d30ad49711874a9f3a1dfb840` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-263862 | `0xb8580ea6312dd2311d72bc932b0354a07d974138` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-263846 | `0x2c74b18e2f84b78ac67428d0c7a9898515f0c46f` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-263847 | `0x3bd088c19960a8b5d72e4e01847791bd0dd1c9e6` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-263848 | `0x4b6f007a91c5733cd4f8bbec5ba5951f8303cdab` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-263849 | `0x5573d865cf113d44d219faf1b26f5785cb2ea3ee` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-263850 | `0x98db3a72bef2145a8f8d8b94f81317341af2b08c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-263851 | `0xb5fe2f991db54b6c9362fe2ace8f78c9dd05277e` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-263852 | `0xb9988d599a64723462955bfc8441f1af90335796` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-263854 | `0xe342ca03a553383c1983b892c24290c1ce1b614f` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-263855 | `0xe3dd183ffa70bcfc442a0b9991e682ca8a442ade` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -241,7 +241,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | BOB_Protocol-contracts-1.1.0-rc2-security-audit-report.pdf | BalancedMinter | unmatched — not counted | — | listed in scope table | no |
 | BOB_Protocol-contracts-1.1.0-rc2-security-audit-report.pdf | Bot | unmatched — not counted | — | listed in scope table | no |
 | BOB_Protocol-contracts-1.1.0-rc2-security-audit-report.pdf | ZkBobAccounting | unmatched — not counted | — | listed in scope table | no |
-| BOB_Protocol-contracts-1.1.0-rc2-security-audit-report.pdf | ZkBobDirectDepositQueue | own proxy deployment | ZkBobDirectDepositQueue (proxy) (selected) `0x15b8c7...2c0014` — deployed 2023-04-05 16:41:13+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| BOB_Protocol-contracts-1.1.0-rc2-security-audit-report.pdf | ZkBobDirectDepositQueue | own proxy deployment | ZkBobDirectDepositQueue (proxy) (selected) `0x15b8c75c024acba8c114c21f42eb515a762c0014` — deployed 2023-04-05 16:41:13+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | BOB_Protocol-contracts-1.1.0-rc2-security-audit-report.pdf | MutableOperatorManager | unmatched — not counted | — | listed in scope table | no |
 | BOB_Protocol-contracts-1.1.0-rc2-security-audit-report.pdf | SimpleOperatorManager | unmatched — not counted | — | listed in scope table | no |
 | BOB_Protocol-contracts-1.1.0-rc2-security-audit-report.pdf | Vault | unmatched — not counted | — | listed in scope table | no |
@@ -254,7 +254,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | BOB_Protocol-contracts-1.1.0-rc2-security-audit-report.pdf | ChainlinkOracle | unmatched — not counted | — | listed in scope table | no |
 | BOB_Protocol-contracts-1.1.0-rc2-security-audit-report.pdf | ERC20Recovery | unmatched — not counted | — | listed in scope table | no |
 | BOB_Protocol-contracts-1.1.0-rc2-security-audit-report.pdf | ZkBobPool | unmatched — not counted | — | listed in scope table | no |
-| BOB_Protocol-contracts-1.1.0-rc2-security-audit-report.pdf | ZkBobPoolETH | own proxy deployment | ZkBobPoolETH (proxy) (selected) `0x58320a...2c5992` — deployed 2023-06-27 18:39:45+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| BOB_Protocol-contracts-1.1.0-rc2-security-audit-report.pdf | ZkBobPoolETH | own proxy deployment | ZkBobPoolETH (proxy) (selected) `0x58320a55bbc5f89e5d0c92108f762ac0172c5992` — deployed 2023-06-27 18:39:45+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | BOB_Protocol-contracts-1.1.0-rc2-security-audit-report.pdf | BobVault | unmatched — not counted | — | listed in scope table | no |
 | BOB_Protocol-contracts-1.1.0-rc2-security-audit-report.pdf | EIP1967Admin | unmatched — not counted | — | listed in scope table | no |
 | BOB_Protocol-contracts-1.1.0-rc2-security-audit-report.pdf | EIP1967Proxy | unmatched — not counted | — | listed in scope table | no |
@@ -306,15 +306,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| optimism | `0x85afa0...7ea38f` | DelegatedDepositVerifier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | `0x0b2c63...97ff85` | FiatTokenProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | `0x7ad8d9...b8195d` | TransferVerifier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | `0x2c34af...e1e81d` | TreeUpdateVerifier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | `0x2791bc...a84174` | UChildERC20Proxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | `0x420000...000006` | WETH9 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | `0x318e2c...5fc869` | ZkBobDirectDepositQueueETH | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | `0x1ca8c2...14c97c` | ZkBobPoolUSDC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | `0x72e6b5...4d62fb` | ZkBobPoolUSDCMigrated | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x85afa00f38ad5f353c2b80985407b8e8a27ea38f` | DelegatedDepositVerifier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x0b2c639c533813f4aa9d7837caf62653d097ff85` | FiatTokenProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x7ad8d97c60bfb59e501e3b6c1d8e564b0bb8195d` | TransferVerifier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x2c34afcb1c51796c3c0c7710c72a56eb72e1e81d` | TreeUpdateVerifier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0x2791bca1f2de4661ed88a30c99a7a9449aa84174` | UChildERC20Proxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x4200000000000000000000000000000000000006` | WETH9 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x318e2c1f5f6ac4fdd5979e73d498342b255fc869` | ZkBobDirectDepositQueueETH | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x1ca8c2b9b20e18e86d5b9a72370fc6c91814c97c` | ZkBobPoolUSDC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0x72e6b59d4a90ab232e55d4bb7ed2dd17494d62fb` | ZkBobPoolUSDCMigrated | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

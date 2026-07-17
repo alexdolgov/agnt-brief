@@ -60,14 +60,14 @@ The protocol comprises 2 functional families. Its contracts share 4 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AToken | token | ethereum | n/a | [`0x028171...5b68a3`](./contracts/ethereum-1/0x028171bca77440897b824ca71d1c56cac55b68a3/) | ⚠️ Unaudited |
-| AToken | token | ethereum | n/a | [`0xbcca60...96263c`](./contracts/ethereum-1/0xbcca60bb61934080951369a648fb03df4f96263c/) | ⚠️ Unaudited |
-| AToken | token | polygon | n/a | 2 deployments: polygon [`0x1a13f4...998b7f`](./contracts/polygon-137/0x1a13f4ca1d028320a707d99520abfefca3998b7f/); polygon `0x27f8d0...830a6e` | ⚠️ Unaudited |
-| BalancerGovernanceToken | token | ethereum | n/a | [`0xba1000...424e3d`](./contracts/ethereum-1/0xba100000625a3754423978a60c9317c58a424e3d/) | ⚠️ Unaudited |
-| ElasticPool | core_logic | ethereum | n/a | [`0x951428...0ce6bf`](./contracts/ethereum-1/0x95142849d31eaa20b5b9ab746dff27ff400ce6bf/) | ⚠️ Unaudited |
-| ExchangeHUSDC | unknown | ethereum | n/a | [`0x87b46e...079033`](./contracts/ethereum-1/0x87b46e49681e08e3addf8a90f6a1fb5183079033/) | ⚠️ Unaudited |
-| hUSDCToken | token | ethereum | n/a | [`0xf4775c...d9b810`](./contracts/ethereum-1/0xf4775c5dd1f90f57dface0c27c29047f18d9b810/) | ⚠️ Unaudited |
-| ReservePool | core_logic | ethereum | n/a | [`0xce596b...b67859`](./contracts/ethereum-1/0xce596bf99d21e46fa91143c03d7a356682b67859/) | ⚠️ Unaudited |
+| AToken | token | ethereum | n/a | [`0x028171bca77440897b824ca71d1c56cac55b68a3`](./contracts/ethereum-1/0x028171bca77440897b824ca71d1c56cac55b68a3/) | ⚠️ Unaudited |
+| AToken | token | ethereum | n/a | [`0xbcca60bb61934080951369a648fb03df4f96263c`](./contracts/ethereum-1/0xbcca60bb61934080951369a648fb03df4f96263c/) | ⚠️ Unaudited |
+| AToken | token | polygon | n/a | 2 deployments: polygon [`0x1a13f4ca1d028320a707d99520abfefca3998b7f`](./contracts/polygon-137/0x1a13f4ca1d028320a707d99520abfefca3998b7f/); polygon `0x27f8d03b3a2196956ed754badc28d73be8830a6e` | ⚠️ Unaudited |
+| BalancerGovernanceToken | token | ethereum | n/a | [`0xba100000625a3754423978a60c9317c58a424e3d`](./contracts/ethereum-1/0xba100000625a3754423978a60c9317c58a424e3d/) | ⚠️ Unaudited |
+| ElasticPool | core_logic | ethereum | n/a | [`0x95142849d31eaa20b5b9ab746dff27ff400ce6bf`](./contracts/ethereum-1/0x95142849d31eaa20b5b9ab746dff27ff400ce6bf/) | ⚠️ Unaudited |
+| ExchangeHUSDC | unknown | ethereum | n/a | [`0x87b46e49681e08e3addf8a90f6a1fb5183079033`](./contracts/ethereum-1/0x87b46e49681e08e3addf8a90f6a1fb5183079033/) | ⚠️ Unaudited |
+| hUSDCToken | token | ethereum | n/a | [`0xf4775c5dd1f90f57dface0c27c29047f18d9b810`](./contracts/ethereum-1/0xf4775c5dd1f90f57dface0c27c29047f18d9b810/) | ⚠️ Unaudited |
+| ReservePool | core_logic | ethereum | n/a | [`0xce596bf99d21e46fa91143c03d7a356682b67859`](./contracts/ethereum-1/0xce596bf99d21e46fa91143c03d7a356682b67859/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -99,13 +99,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x028171...5b68a3`](./contracts/ethereum-1/0x028171bca77440897b824ca71d1c56cac55b68a3/) | AToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xbcca60...96263c`](./contracts/ethereum-1/0xbcca60bb61934080951369a648fb03df4f96263c/) | AToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x1a13f4...998b7f`](./contracts/polygon-137/0x1a13f4ca1d028320a707d99520abfefca3998b7f/) | AToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x951428...0ce6bf`](./contracts/ethereum-1/0x95142849d31eaa20b5b9ab746dff27ff400ce6bf/) | ElasticPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x87b46e...079033`](./contracts/ethereum-1/0x87b46e49681e08e3addf8a90f6a1fb5183079033/) | ExchangeHUSDC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xf4775c...d9b810`](./contracts/ethereum-1/0xf4775c5dd1f90f57dface0c27c29047f18d9b810/) | hUSDCToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xce596b...b67859`](./contracts/ethereum-1/0xce596bf99d21e46fa91143c03d7a356682b67859/) | ReservePool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x028171bca77440897b824ca71d1c56cac55b68a3`](./contracts/ethereum-1/0x028171bca77440897b824ca71d1c56cac55b68a3/) | AToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xbcca60bb61934080951369a648fb03df4f96263c`](./contracts/ethereum-1/0xbcca60bb61934080951369a648fb03df4f96263c/) | AToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x1a13f4ca1d028320a707d99520abfefca3998b7f`](./contracts/polygon-137/0x1a13f4ca1d028320a707d99520abfefca3998b7f/) | AToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x95142849d31eaa20b5b9ab746dff27ff400ce6bf`](./contracts/ethereum-1/0x95142849d31eaa20b5b9ab746dff27ff400ce6bf/) | ElasticPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x87b46e49681e08e3addf8a90f6a1fb5183079033`](./contracts/ethereum-1/0x87b46e49681e08e3addf8a90f6a1fb5183079033/) | ExchangeHUSDC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xf4775c5dd1f90f57dface0c27c29047f18d9b810`](./contracts/ethereum-1/0xf4775c5dd1f90f57dface0c27c29047f18d9b810/) | hUSDCToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xce596bf99d21e46fa91143c03d7a356682b67859`](./contracts/ethereum-1/0xce596bf99d21e46fa91143c03d7a356682b67859/) | ReservePool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

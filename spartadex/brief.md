@@ -60,17 +60,17 @@ The protocol comprises 2 functional families. Its contracts share 2 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Airdrop | unknown | arbitrum | n/a | [`0x0de811...361626`](./contracts/arbitrum-42161/0x0de811cfc8bbd855798a0da8f0fb893a20361626/) | ⚠️ Unaudited |
-| PaymentReceiver | unknown | arbitrum | n/a | [`0x933b0e...245cb7`](./contracts/arbitrum-42161/0x933b0ea2048438c11d53dac32d283115d5245cb7/) | ⚠️ Unaudited |
-| Polis | unknown | arbitrum | n/a | [`0x314494...471cb9`](./contracts/arbitrum-42161/0x31449423737538cde5f60c5052f122d599471cb9/) | ⚠️ Unaudited |
-| PolisManager | unknown | arbitrum | n/a | [`0xebc1dd...6ff3de`](./contracts/arbitrum-42161/0xebc1dd1f6560fc1045d30c0d0ac610c3336ff3de/) | ⚠️ Unaudited |
-| PolisMinter | unknown | arbitrum | n/a | [`0x39fdd0...4fe17f`](./contracts/arbitrum-42161/0x39fdd07893b8867be7b8ff02fe9b557ddc4fe17f/) | ⚠️ Unaudited |
-| Sparta | unknown | arbitrum | n/a | [`0x11f98c...5ce9a8`](./contracts/arbitrum-42161/0x11f98c7e42a367dab4f200d2fdc460fb445ce9a8/) | ⚠️ Unaudited |
-| SpartaAccessControl | unknown | arbitrum | n/a | [`0x01b364...075b22`](./contracts/arbitrum-42161/0x01b3646adb846061411da058757b944049075b22/) | ⚠️ Unaudited |
-| SpartaDexFactory | unknown | linea | n/a | [`0x9e4fc4...ea5a9e`](./contracts/linea-59144/0x9e4fc4a5a0769ba74088856c229c4a1db2ea5a9e/) | ⚠️ Unaudited |
-| SpartaDexPair | unknown | linea | n/a | [`0xb64b15...cf370b`](./contracts/linea-59144/0xb64b15dfdfb9d3edacf9291b0e8a65fc52cf370b/) | ⚠️ Unaudited |
-| SpartaDexRouter | unknown | linea | n/a | [`0xea2f47...8d399a`](./contracts/linea-59144/0xea2f47ac12e00e2fcc8f242561bc53bc288d399a/) | ⚠️ Unaudited |
-| StakedSparta | unknown | arbitrum | n/a | [`0xdeab92...ecf01f`](./contracts/arbitrum-42161/0xdeab92d6a3618f6d830c925d7ae8f1c87eecf01f/) | ⚠️ Unaudited |
+| Airdrop | unknown | arbitrum | n/a | [`0x0de811cfc8bbd855798a0da8f0fb893a20361626`](./contracts/arbitrum-42161/0x0de811cfc8bbd855798a0da8f0fb893a20361626/) | ⚠️ Unaudited |
+| PaymentReceiver | unknown | arbitrum | n/a | [`0x933b0ea2048438c11d53dac32d283115d5245cb7`](./contracts/arbitrum-42161/0x933b0ea2048438c11d53dac32d283115d5245cb7/) | ⚠️ Unaudited |
+| Polis | unknown | arbitrum | n/a | [`0x31449423737538cde5f60c5052f122d599471cb9`](./contracts/arbitrum-42161/0x31449423737538cde5f60c5052f122d599471cb9/) | ⚠️ Unaudited |
+| PolisManager | unknown | arbitrum | n/a | [`0xebc1dd1f6560fc1045d30c0d0ac610c3336ff3de`](./contracts/arbitrum-42161/0xebc1dd1f6560fc1045d30c0d0ac610c3336ff3de/) | ⚠️ Unaudited |
+| PolisMinter | unknown | arbitrum | n/a | [`0x39fdd07893b8867be7b8ff02fe9b557ddc4fe17f`](./contracts/arbitrum-42161/0x39fdd07893b8867be7b8ff02fe9b557ddc4fe17f/) | ⚠️ Unaudited |
+| Sparta | unknown | arbitrum | n/a | [`0x11f98c7e42a367dab4f200d2fdc460fb445ce9a8`](./contracts/arbitrum-42161/0x11f98c7e42a367dab4f200d2fdc460fb445ce9a8/) | ⚠️ Unaudited |
+| SpartaAccessControl | unknown | arbitrum | n/a | [`0x01b3646adb846061411da058757b944049075b22`](./contracts/arbitrum-42161/0x01b3646adb846061411da058757b944049075b22/) | ⚠️ Unaudited |
+| SpartaDexFactory | unknown | linea | n/a | [`0x9e4fc4a5a0769ba74088856c229c4a1db2ea5a9e`](./contracts/linea-59144/0x9e4fc4a5a0769ba74088856c229c4a1db2ea5a9e/) | ⚠️ Unaudited |
+| SpartaDexPair | unknown | linea | n/a | [`0xb64b15dfdfb9d3edacf9291b0e8a65fc52cf370b`](./contracts/linea-59144/0xb64b15dfdfb9d3edacf9291b0e8a65fc52cf370b/) | ⚠️ Unaudited |
+| SpartaDexRouter | unknown | linea | n/a | [`0xea2f47ac12e00e2fcc8f242561bc53bc288d399a`](./contracts/linea-59144/0xea2f47ac12e00e2fcc8f242561bc53bc288d399a/) | ⚠️ Unaudited |
+| StakedSparta | unknown | arbitrum | n/a | [`0xdeab92d6a3618f6d830c925d7ae8f1c87eecf01f`](./contracts/arbitrum-42161/0xdeab92d6a3618f6d830c925d7ae8f1c87eecf01f/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -101,17 +101,17 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | [`0x0de811...361626`](./contracts/arbitrum-42161/0x0de811cfc8bbd855798a0da8f0fb893a20361626/) | Airdrop | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x933b0e...245cb7`](./contracts/arbitrum-42161/0x933b0ea2048438c11d53dac32d283115d5245cb7/) | PaymentReceiver | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x314494...471cb9`](./contracts/arbitrum-42161/0x31449423737538cde5f60c5052f122d599471cb9/) | Polis | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xebc1dd...6ff3de`](./contracts/arbitrum-42161/0xebc1dd1f6560fc1045d30c0d0ac610c3336ff3de/) | PolisManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x39fdd0...4fe17f`](./contracts/arbitrum-42161/0x39fdd07893b8867be7b8ff02fe9b557ddc4fe17f/) | PolisMinter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x11f98c...5ce9a8`](./contracts/arbitrum-42161/0x11f98c7e42a367dab4f200d2fdc460fb445ce9a8/) | Sparta | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x01b364...075b22`](./contracts/arbitrum-42161/0x01b3646adb846061411da058757b944049075b22/) | SpartaAccessControl | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0x9e4fc4...ea5a9e`](./contracts/linea-59144/0x9e4fc4a5a0769ba74088856c229c4a1db2ea5a9e/) | SpartaDexFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0xb64b15...cf370b`](./contracts/linea-59144/0xb64b15dfdfb9d3edacf9291b0e8a65fc52cf370b/) | SpartaDexPair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0xea2f47...8d399a`](./contracts/linea-59144/0xea2f47ac12e00e2fcc8f242561bc53bc288d399a/) | SpartaDexRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xdeab92...ecf01f`](./contracts/arbitrum-42161/0xdeab92d6a3618f6d830c925d7ae8f1c87eecf01f/) | StakedSparta | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x0de811cfc8bbd855798a0da8f0fb893a20361626`](./contracts/arbitrum-42161/0x0de811cfc8bbd855798a0da8f0fb893a20361626/) | Airdrop | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x933b0ea2048438c11d53dac32d283115d5245cb7`](./contracts/arbitrum-42161/0x933b0ea2048438c11d53dac32d283115d5245cb7/) | PaymentReceiver | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x31449423737538cde5f60c5052f122d599471cb9`](./contracts/arbitrum-42161/0x31449423737538cde5f60c5052f122d599471cb9/) | Polis | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xebc1dd1f6560fc1045d30c0d0ac610c3336ff3de`](./contracts/arbitrum-42161/0xebc1dd1f6560fc1045d30c0d0ac610c3336ff3de/) | PolisManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x39fdd07893b8867be7b8ff02fe9b557ddc4fe17f`](./contracts/arbitrum-42161/0x39fdd07893b8867be7b8ff02fe9b557ddc4fe17f/) | PolisMinter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x11f98c7e42a367dab4f200d2fdc460fb445ce9a8`](./contracts/arbitrum-42161/0x11f98c7e42a367dab4f200d2fdc460fb445ce9a8/) | Sparta | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x01b3646adb846061411da058757b944049075b22`](./contracts/arbitrum-42161/0x01b3646adb846061411da058757b944049075b22/) | SpartaAccessControl | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x9e4fc4a5a0769ba74088856c229c4a1db2ea5a9e`](./contracts/linea-59144/0x9e4fc4a5a0769ba74088856c229c4a1db2ea5a9e/) | SpartaDexFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0xb64b15dfdfb9d3edacf9291b0e8a65fc52cf370b`](./contracts/linea-59144/0xb64b15dfdfb9d3edacf9291b0e8a65fc52cf370b/) | SpartaDexPair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0xea2f47ac12e00e2fcc8f242561bc53bc288d399a`](./contracts/linea-59144/0xea2f47ac12e00e2fcc8f242561bc53bc288d399a/) | SpartaDexRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xdeab92d6a3618f6d830c925d7ae8f1c87eecf01f`](./contracts/arbitrum-42161/0xdeab92d6a3618f6d830c925d7ae8f1c87eecf01f/) | StakedSparta | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

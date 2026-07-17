@@ -90,14 +90,14 @@ The pinned logic-topography run contains 1 contract row(s) across bsc. Structura
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AutoLandVaultV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x6233ff...e4d4a3` | ⚠️ Unaudited |
-| DSSwap_Pair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x89bad1...4a1b35` | ⚠️ Unaudited |
-| LandMigrator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0c4e44...faca43` | ⚠️ Unaudited |
-| LandshareAPIConsumer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x61f8c9...d77735` | ⚠️ Unaudited |
-| LandshareSale | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3e8127...dce833` | ⚠️ Unaudited |
-| LandshareToken | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-244446 | `0xa73164...42fa5c` | ⚠️ Unaudited |
-| MasterChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3f9458...47f93b` | ⚠️ Unaudited |
-| PancakePair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x13f80c...5caefa` | ⚠️ Unaudited |
+| AutoLandVaultV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x6233ffeef97d08db2c763f389eebd9d738e4d4a3` | ⚠️ Unaudited |
+| DSSwap_Pair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x89bad177367736c186f7b41a9fba7b23474a1b35` | ⚠️ Unaudited |
+| LandMigrator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0c4e4492e0ed41e41cffa59bd5e3189f92faca43` | ⚠️ Unaudited |
+| LandshareAPIConsumer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x61f8c9fe835e4ca722db3a81a2746260b0d77735` | ⚠️ Unaudited |
+| LandshareSale | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3e8127fe9f832b22a179ed294009357d3fdce833` | ⚠️ Unaudited |
+| LandshareToken | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-244446 | `0xa73164db271931cf952cbaeff9e8f5817b42fa5c` | ⚠️ Unaudited |
+| MasterChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3f9458892fb114328bc675e11e71ff10c847f93b` | ⚠️ Unaudited |
+| PancakePair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x13f80c53b837622e899e1ac0021ed3d1775caefa` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -117,7 +117,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x9d986a...a1fdb0` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x9d986a3f147212327dd658f712d5264a73a1fdb0` | ❓ Unverified |
 
 ## Audit Inventory
 

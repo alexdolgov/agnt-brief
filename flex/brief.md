@@ -60,26 +60,26 @@ The protocol comprises 4 functional families. Contracts are linked by 1 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Auction | unknown | ethereum | n/a | [`0x10b07c...ac0bcf`](./contracts/ethereum-1/0x10b07c594e6de6d40e13c2d0b6c49e5a3cac0bcf/) | ✅ Audited |
-| Factory | registry | ethereum | n/a | [`0xe2c4a5...34753d`](./contracts/ethereum-1/0xe2c4a5c2ab1ed5745d206b33cc0abf0a5d34753d/) | ✅ Audited |
-| Registry | registry | ethereum | n/a | [`0x911744...7c77c8`](./contracts/ethereum-1/0x9117440a7d03238905d1c8908157bd7a547c77c8/) | ✅ Audited |
-| StrategyAprOracle | operational_periphery | ethereum | n/a | [`0xfd6117...45b9d1`](./contracts/ethereum-1/0xfd6117e7dc92dd284412a0ee9fc2c9bdb945b9d1/) | ✅ Audited |
-| TokenizedStrategy | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x33c452...29b732`](./contracts/ethereum-1/0x33c45216e121e31f1a8cd24c7e9d0d0c9e29b732/); ethereum `0x467ce1...b27751` | ✅ Audited |
+| Auction | unknown | ethereum | n/a | [`0x10b07c594e6de6d40e13c2d0b6c49e5a3cac0bcf`](./contracts/ethereum-1/0x10b07c594e6de6d40e13c2d0b6c49e5a3cac0bcf/) | ✅ Audited |
+| Factory | registry | ethereum | n/a | [`0xe2c4a5c2ab1ed5745d206b33cc0abf0a5d34753d`](./contracts/ethereum-1/0xe2c4a5c2ab1ed5745d206b33cc0abf0a5d34753d/) | ✅ Audited |
+| Registry | registry | ethereum | n/a | [`0x9117440a7d03238905d1c8908157bd7a547c77c8`](./contracts/ethereum-1/0x9117440a7d03238905d1c8908157bd7a547c77c8/) | ✅ Audited |
+| StrategyAprOracle | operational_periphery | ethereum | n/a | [`0xfd6117e7dc92dd284412a0ee9fc2c9bdb945b9d1`](./contracts/ethereum-1/0xfd6117e7dc92dd284412a0ee9fc2c9bdb945b9d1/) | ✅ Audited |
+| TokenizedStrategy | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x33c45216e121e31f1a8cd24c7e9d0d0c9e29b732`](./contracts/ethereum-1/0x33c45216e121e31f1a8cd24c7e9d0d0c9e29b732/); ethereum `0x467ce10870747372968ba98463a1d9af9fb27751` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (10)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Debt In Front Helper | periphery | ethereum | n/a | [`0xa4119b...16ebd6`](./contracts/ethereum-1/0xa4119b541a2ebf411f3ed6201107fc1da016ebd6/) | ⚠️ Unaudited |
-| Dutch Desk | unknown | ethereum | n/a | [`0x3f1951...ed1efa`](./contracts/ethereum-1/0x3f195124394d63fcb4a792181cc8a65717ed1efa/) | ⚠️ Unaudited |
-| Leverage Zapper | adapter | ethereum | n/a | [`0xbf3e99...6137e0`](./contracts/ethereum-1/0xbf3e996821d43ac3b6069ae74efa101ffc6137e0/) | ⚠️ Unaudited |
-| Price Oracle | operational_periphery | ethereum | n/a | [`0x6d8d09...a54206`](./contracts/ethereum-1/0x6d8d09f18afd74e6d6d0190ccdf89de8fea54206/) | ⚠️ Unaudited |
-| Sorted Troves | unknown | ethereum | n/a | [`0xc489b9...119acc`](./contracts/ethereum-1/0xc489b9e1003b337146fb8095687a8fb1f7119acc/) | ⚠️ Unaudited |
-| StrategyFactory | registry | ethereum | n/a | [`0x7a3b96...805266`](./contracts/ethereum-1/0x7a3b96e84156d22cdb53cbfc0b035ddd61805266/) | ⚠️ Unaudited |
-| Swap Executor | unknown | ethereum | n/a | [`0x91eb41...3d5421`](./contracts/ethereum-1/0x91eb419d77962bf89a0f1ca8b1fa525f443d5421/) | ⚠️ Unaudited |
-| Trove Manager | governance | ethereum | n/a | [`0xd82db9...8e2e49`](./contracts/ethereum-1/0xd82db9893751e9c90e2a6c3be31183048e8e2e49/) | ⚠️ Unaudited |
-| Yearn V3 Vault | core_logic | ethereum | n/a | [`0x863687...d0f7b8`](./contracts/ethereum-1/0x863687e4e9751b57f38b4b0eba04744c72d0f7b8/) | ⚠️ Unaudited |
-| Yearn Vault Auction Taker | core_logic | ethereum | n/a | [`0x1ee35c...c47f07`](./contracts/ethereum-1/0x1ee35c67f8031291aef79e2abc87b904b9c47f07/) | ⚠️ Unaudited |
+| Debt In Front Helper | periphery | ethereum | n/a | [`0xa4119b541a2ebf411f3ed6201107fc1da016ebd6`](./contracts/ethereum-1/0xa4119b541a2ebf411f3ed6201107fc1da016ebd6/) | ⚠️ Unaudited |
+| Dutch Desk | unknown | ethereum | n/a | [`0x3f195124394d63fcb4a792181cc8a65717ed1efa`](./contracts/ethereum-1/0x3f195124394d63fcb4a792181cc8a65717ed1efa/) | ⚠️ Unaudited |
+| Leverage Zapper | adapter | ethereum | n/a | [`0xbf3e996821d43ac3b6069ae74efa101ffc6137e0`](./contracts/ethereum-1/0xbf3e996821d43ac3b6069ae74efa101ffc6137e0/) | ⚠️ Unaudited |
+| Price Oracle | operational_periphery | ethereum | n/a | [`0x6d8d09f18afd74e6d6d0190ccdf89de8fea54206`](./contracts/ethereum-1/0x6d8d09f18afd74e6d6d0190ccdf89de8fea54206/) | ⚠️ Unaudited |
+| Sorted Troves | unknown | ethereum | n/a | [`0xc489b9e1003b337146fb8095687a8fb1f7119acc`](./contracts/ethereum-1/0xc489b9e1003b337146fb8095687a8fb1f7119acc/) | ⚠️ Unaudited |
+| StrategyFactory | registry | ethereum | n/a | [`0x7a3b96e84156d22cdb53cbfc0b035ddd61805266`](./contracts/ethereum-1/0x7a3b96e84156d22cdb53cbfc0b035ddd61805266/) | ⚠️ Unaudited |
+| Swap Executor | unknown | ethereum | n/a | [`0x91eb419d77962bf89a0f1ca8b1fa525f443d5421`](./contracts/ethereum-1/0x91eb419d77962bf89a0f1ca8b1fa525f443d5421/) | ⚠️ Unaudited |
+| Trove Manager | governance | ethereum | n/a | [`0xd82db9893751e9c90e2a6c3be31183048e8e2e49`](./contracts/ethereum-1/0xd82db9893751e9c90e2a6c3be31183048e8e2e49/) | ⚠️ Unaudited |
+| Yearn V3 Vault | core_logic | ethereum | n/a | [`0x863687e4e9751b57f38b4b0eba04744c72d0f7b8`](./contracts/ethereum-1/0x863687e4e9751b57f38b4b0eba04744c72d0f7b8/) | ⚠️ Unaudited |
+| Yearn Vault Auction Taker | core_logic | ethereum | n/a | [`0x1ee35c67f8031291aef79e2abc87b904b9c47f07`](./contracts/ethereum-1/0x1ee35c67f8031291aef79e2abc87b904b9c47f07/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -114,14 +114,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xa4119b...16ebd6`](./contracts/ethereum-1/0xa4119b541a2ebf411f3ed6201107fc1da016ebd6/) | Debt In Front Helper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x3f1951...ed1efa`](./contracts/ethereum-1/0x3f195124394d63fcb4a792181cc8a65717ed1efa/) | Dutch Desk | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xbf3e99...6137e0`](./contracts/ethereum-1/0xbf3e996821d43ac3b6069ae74efa101ffc6137e0/) | Leverage Zapper | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6d8d09...a54206`](./contracts/ethereum-1/0x6d8d09f18afd74e6d6d0190ccdf89de8fea54206/) | Price Oracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc489b9...119acc`](./contracts/ethereum-1/0xc489b9e1003b337146fb8095687a8fb1f7119acc/) | Sorted Troves | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x7a3b96...805266`](./contracts/ethereum-1/0x7a3b96e84156d22cdb53cbfc0b035ddd61805266/) | StrategyFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x91eb41...3d5421`](./contracts/ethereum-1/0x91eb419d77962bf89a0f1ca8b1fa525f443d5421/) | Swap Executor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xd82db9...8e2e49`](./contracts/ethereum-1/0xd82db9893751e9c90e2a6c3be31183048e8e2e49/) | Trove Manager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa4119b541a2ebf411f3ed6201107fc1da016ebd6`](./contracts/ethereum-1/0xa4119b541a2ebf411f3ed6201107fc1da016ebd6/) | Debt In Front Helper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x3f195124394d63fcb4a792181cc8a65717ed1efa`](./contracts/ethereum-1/0x3f195124394d63fcb4a792181cc8a65717ed1efa/) | Dutch Desk | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xbf3e996821d43ac3b6069ae74efa101ffc6137e0`](./contracts/ethereum-1/0xbf3e996821d43ac3b6069ae74efa101ffc6137e0/) | Leverage Zapper | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6d8d09f18afd74e6d6d0190ccdf89de8fea54206`](./contracts/ethereum-1/0x6d8d09f18afd74e6d6d0190ccdf89de8fea54206/) | Price Oracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc489b9e1003b337146fb8095687a8fb1f7119acc`](./contracts/ethereum-1/0xc489b9e1003b337146fb8095687a8fb1f7119acc/) | Sorted Troves | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x7a3b96e84156d22cdb53cbfc0b035ddd61805266`](./contracts/ethereum-1/0x7a3b96e84156d22cdb53cbfc0b035ddd61805266/) | StrategyFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x91eb419d77962bf89a0f1ca8b1fa525f443d5421`](./contracts/ethereum-1/0x91eb419d77962bf89a0f1ca8b1fa525f443d5421/) | Swap Executor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xd82db9893751e9c90e2a6c3be31183048e8e2e49`](./contracts/ethereum-1/0xd82db9893751e9c90e2a6c3be31183048e8e2e49/) | Trove Manager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

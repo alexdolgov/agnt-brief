@@ -61,14 +61,14 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BITU | unknown | bsc | n/a | [`0x654a32...88e6bd`](./contracts/bsc-56/0x654a32542a84bea7d2c2c1a1ed1aaaf26888e6bd/) | ✅ Audited |
-| BitUMinting | unknown | bsc | n/a | [`0xa581b5...116f18`](./contracts/bsc-56/0xa581b5b3d007dab450943749e29a677a0d116f18/) | ✅ Audited |
+| BITU | unknown | bsc | n/a | [`0x654a32542a84bea7d2c2c1a1ed1aaaf26888e6bd`](./contracts/bsc-56/0x654a32542a84bea7d2c2c1a1ed1aaaf26888e6bd/) | ✅ Audited |
+| BitUMinting | unknown | bsc | n/a | [`0xa581b5b3d007dab450943749e29a677a0d116f18`](./contracts/bsc-56/0xa581b5b3d007dab450943749e29a677a0d116f18/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BEP20USDT | token | bsc | n/a | [`0x55d398...197955`](./contracts/bsc-56/0x55d398326f99059ff775485246999027b3197955/) | ⚠️ Unaudited |
+| BEP20USDT | token | bsc | n/a | [`0x55d398326f99059ff775485246999027b3197955`](./contracts/bsc-56/0x55d398326f99059ff775485246999027b3197955/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

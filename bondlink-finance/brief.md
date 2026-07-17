@@ -59,14 +59,14 @@ The protocol comprises 2 functional families. Its contracts share 3 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| sUSDb | unknown | ethereum | n/a | [`0xb73383...3e85a6`](./contracts/ethereum-1/0xb73383430391f4fc9873c80be1f64a93273e85a6/) | ✅ Audited |
-| USDb | unknown | ethereum | n/a | [`0x1623a5...90b5c5`](./contracts/ethereum-1/0x1623a55e0ba2384afd7511d6d7f77cf28790b5c5/) | ✅ Audited |
+| sUSDb | unknown | ethereum | n/a | [`0xb73383430391f4fc9873c80be1f64a93273e85a6`](./contracts/ethereum-1/0xb73383430391f4fc9873c80be1f64a93273e85a6/) | ✅ Audited |
+| USDb | unknown | ethereum | n/a | [`0x1623a55e0ba2384afd7511d6d7f77cf28790b5c5`](./contracts/ethereum-1/0x1623a55e0ba2384afd7511d6d7f77cf28790b5c5/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| RewardDistributor | operational_periphery | ethereum | n/a | [`0xdb81ef...8bf295`](./contracts/ethereum-1/0xdb81efd62ce14800852d24cc61e6bad44f8bf295/) | ⚠️ Unaudited |
+| RewardDistributor | operational_periphery | ethereum | n/a | [`0xdb81efd62ce14800852d24cc61e6bad44f8bf295`](./contracts/ethereum-1/0xdb81efd62ce14800852d24cc61e6bad44f8bf295/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -86,9 +86,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x68f00f...16320d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc3f466...724d85` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xcc75ab...20105b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x68f00f5392d5e827663044c8374d0ce54d16320d` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc3f466784c20a57e3a4709b70e2db443cf724d85` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xcc75ab1140557f2d24992d7e89ddbed5f120105b` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -102,7 +102,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xdb81ef...8bf295`](./contracts/ethereum-1/0xdb81efd62ce14800852d24cc61e6bad44f8bf295/) | RewardDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xdb81efd62ce14800852d24cc61e6bad44f8bf295`](./contracts/ethereum-1/0xdb81efd62ce14800852d24cc61e6bad44f8bf295/) | RewardDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -62,9 +62,9 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AlmanakToken | unknown | ethereum | n/a | [`0xdefa1d...7cc3a3`](./contracts/ethereum-1/0xdefa1d21c5f1cbeac00eeb54b44c7d86467cc3a3/) | ⚠️ Unaudited |
-| AlmanakTokenL2 | unknown | base | n/a | [`0xdefa1d...7cc3a3`](./contracts/base-8453/0xdefa1d21c5f1cbeac00eeb54b44c7d86467cc3a3/) | ⚠️ Unaudited |
-| Vault | unknown | ethereum | n/a | [`0x5a97b0...b12ee3`](./contracts/ethereum-1/0x5a97b0b97197299456af841f8605543b13b12ee3/) | ⚠️ Unaudited |
+| AlmanakToken | unknown | ethereum | n/a | [`0xdefa1d21c5f1cbeac00eeb54b44c7d86467cc3a3`](./contracts/ethereum-1/0xdefa1d21c5f1cbeac00eeb54b44c7d86467cc3a3/) | ⚠️ Unaudited |
+| AlmanakTokenL2 | unknown | base | n/a | [`0xdefa1d21c5f1cbeac00eeb54b44c7d86467cc3a3`](./contracts/base-8453/0xdefa1d21c5f1cbeac00eeb54b44c7d86467cc3a3/) | ⚠️ Unaudited |
+| Vault | unknown | ethereum | n/a | [`0x5a97b0b97197299456af841f8605543b13b12ee3`](./contracts/ethereum-1/0x5a97b0b97197299456af841f8605543b13b12ee3/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,9 +95,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xdefa1d...7cc3a3`](./contracts/ethereum-1/0xdefa1d21c5f1cbeac00eeb54b44c7d86467cc3a3/) | AlmanakToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xdefa1d...7cc3a3`](./contracts/base-8453/0xdefa1d21c5f1cbeac00eeb54b44c7d86467cc3a3/) | AlmanakTokenL2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x5a97b0...b12ee3`](./contracts/ethereum-1/0x5a97b0b97197299456af841f8605543b13b12ee3/) | Vault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xdefa1d21c5f1cbeac00eeb54b44c7d86467cc3a3`](./contracts/ethereum-1/0xdefa1d21c5f1cbeac00eeb54b44c7d86467cc3a3/) | AlmanakToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xdefa1d21c5f1cbeac00eeb54b44c7d86467cc3a3`](./contracts/base-8453/0xdefa1d21c5f1cbeac00eeb54b44c7d86467cc3a3/) | AlmanakTokenL2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5a97b0b97197299456af841f8605543b13b12ee3`](./contracts/ethereum-1/0x5a97b0b97197299456af841f8605543b13b12ee3/) | Vault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

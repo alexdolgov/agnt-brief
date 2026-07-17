@@ -61,7 +61,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| MooniFactory | unknown | ethereum | n/a | [`0x71cd66...e7d303`](./contracts/ethereum-1/0x71cd6666064c3a1354a3b4dca5fa1e2d3ee7d303/) | ⚠️ Unaudited |
+| MooniFactory | unknown | ethereum | n/a | [`0x71cd6666064c3a1354a3b4dca5fa1e2d3ee7d303`](./contracts/ethereum-1/0x71cd6666064c3a1354a3b4dca5fa1e2d3ee7d303/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -94,7 +94,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x71cd66...e7d303`](./contracts/ethereum-1/0x71cd6666064c3a1354a3b4dca5fa1e2d3ee7d303/) | MooniFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x71cd6666064c3a1354a3b4dca5fa1e2d3ee7d303`](./contracts/ethereum-1/0x71cd6666064c3a1354a3b4dca5fa1e2d3ee7d303/) | MooniFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

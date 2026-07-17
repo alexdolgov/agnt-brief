@@ -59,14 +59,14 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| SigToken | unknown | ethereum | n/a | [`0x777777...606517`](./contracts/ethereum-1/0x7777777777697cfeecf846a76326da79cc606517/) | ✅ Audited |
+| SigToken | unknown | ethereum | n/a | [`0x7777777777697cfeecf846a76326da79cc606517`](./contracts/ethereum-1/0x7777777777697cfeecf846a76326da79cc606517/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| xSIG | unknown | ethereum | n/a | [`0xb82a2e...0fc757`](./contracts/ethereum-1/0xb82a2e5871b146e8b903b342c9c0c72c6b0fc757/) | ⚠️ Unaudited |
-| xSigma | unknown | ethereum | n/a | [`0x16b910...6ae438`](./contracts/ethereum-1/0x16b910dcd628c75f7447b8922a81d3a94b6ae438/) | ⚠️ Unaudited |
+| xSIG | unknown | ethereum | n/a | [`0xb82a2e5871b146e8b903b342c9c0c72c6b0fc757`](./contracts/ethereum-1/0xb82a2e5871b146e8b903b342c9c0c72c6b0fc757/) | ⚠️ Unaudited |
+| xSigma | unknown | ethereum | n/a | [`0x16b910dcd628c75f7447b8922a81d3a94b6ae438`](./contracts/ethereum-1/0x16b910dcd628c75f7447b8922a81d3a94b6ae438/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -98,8 +98,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xb82a2e...0fc757`](./contracts/ethereum-1/0xb82a2e5871b146e8b903b342c9c0c72c6b0fc757/) | xSIG | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x16b910...6ae438`](./contracts/ethereum-1/0x16b910dcd628c75f7447b8922a81d3a94b6ae438/) | xSigma | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb82a2e5871b146e8b903b342c9c0c72c6b0fc757`](./contracts/ethereum-1/0xb82a2e5871b146e8b903b342c9c0c72c6b0fc757/) | xSIG | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x16b910dcd628c75f7447b8922a81d3a94b6ae438`](./contracts/ethereum-1/0x16b910dcd628c75f7447b8922a81d3a94b6ae438/) | xSigma | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

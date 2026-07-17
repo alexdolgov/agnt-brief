@@ -65,7 +65,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AGFTokenV1 | token | ethereum | n/a | [`0xb3ed70...bebce5`](./contracts/ethereum-1/0xb3ed706b564bba9cab64042f4e1b391be7bebce5/) | ⚠️ Unaudited |
+| AGFTokenV1 | token | ethereum | n/a | [`0xb3ed706b564bba9cab64042f4e1b391be7bebce5`](./contracts/ethereum-1/0xb3ed706b564bba9cab64042f4e1b391be7bebce5/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

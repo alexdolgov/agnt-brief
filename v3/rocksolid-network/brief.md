@@ -57,7 +57,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- OptinProxy (`0x936fac...d81bc7`, chain 1)
+- OptinProxy (`0x936facdf10c8c36294e7b9d28345255539d81bc7`, chain 1)
 
 ## Contract Surface Quality
 
@@ -101,13 +101,13 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Vault | unknown | project_anchor | own_supporting | 1 | ethereum | unit-391555 | `0x936fac...d81bc7` | ✅ Audited |
+| Vault | unknown | project_anchor | own_supporting | 1 | ethereum | unit-391555 | `0x936facdf10c8c36294e7b9d28345255539d81bc7` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| CombinedRateProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x716f0c...df445e` | ⚠️ Unaudited |
+| CombinedRateProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x716f0c5453099690b54e7b72d9491a72b8df445e` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -127,7 +127,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x000000...000000` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x0000000000000000000000000000000000000000` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -149,7 +149,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| spaces/5vcVbvvRrtwZ0uaFrufF/uploads/fnXfTtKlAKAD5g9oG2nS/NM_0581_FINAL_Lagoon.pdf | OptinProxy | own proxy deployment | OptinProxy (proxy) (selected) `0x936fac...d81bc7` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/5vcVbvvRrtwZ0uaFrufF/uploads/fnXfTtKlAKAD5g9oG2nS/NM_0581_FINAL_Lagoon.pdf | OptinProxy | own proxy deployment | OptinProxy (proxy) (selected) `0x936facdf10c8c36294e7b9d28345255539d81bc7` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/5vcVbvvRrtwZ0uaFrufF/uploads/fnXfTtKlAKAD5g9oG2nS/NM_0581_FINAL_Lagoon.pdf | DelayProxyAdmin | unmatched — not counted | — | listed in Audited Files table | no |
 | spaces/5vcVbvvRrtwZ0uaFrufF/uploads/fnXfTtKlAKAD5g9oG2nS/NM_0581_FINAL_Lagoon.pdf | OptinProxyFactory | unmatched — not counted | — | listed in Audited Files table | no |
 | spaces/5vcVbvvRrtwZ0uaFrufF/uploads/fnXfTtKlAKAD5g9oG2nS/NM_0581_FINAL_Lagoon.pdf | LogicRegistry | unmatched — not counted | — | listed in Audited Files table | no |
@@ -158,7 +158,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | spaces/5vcVbvvRrtwZ0uaFrufF/uploads/8HkE2EU7hepf08gYGPsx/NM_0534_Lagoon.pdf | Silo | unmatched — not counted | — | listed in Audited Files table | no |
 | spaces/5vcVbvvRrtwZ0uaFrufF/uploads/8HkE2EU7hepf08gYGPsx/NM_0534_Lagoon.pdf | FeeManager | unmatched — not counted | — | listed in Audited Files table | no |
 | spaces/5vcVbvvRrtwZ0uaFrufF/uploads/8HkE2EU7hepf08gYGPsx/NM_0534_Lagoon.pdf | ERC7540 | unmatched — not counted | — | listed in Audited Files table | no |
-| spaces/5vcVbvvRrtwZ0uaFrufF/uploads/8HkE2EU7hepf08gYGPsx/NM_0534_Lagoon.pdf | Vault | own proxy deployment | OptinProxy (proxy) (selected) `0x936fac...d81bc7` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/5vcVbvvRrtwZ0uaFrufF/uploads/8HkE2EU7hepf08gYGPsx/NM_0534_Lagoon.pdf | Vault | own proxy deployment | OptinProxy (proxy) (selected) `0x936facdf10c8c36294e7b9d28345255539d81bc7` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/5vcVbvvRrtwZ0uaFrufF/uploads/8HkE2EU7hepf08gYGPsx/NM_0534_Lagoon.pdf | Errors | unmatched — not counted | — | listed in Audited Files table | no |
 | spaces/5vcVbvvRrtwZ0uaFrufF/uploads/8HkE2EU7hepf08gYGPsx/NM_0534_Lagoon.pdf | Events | unmatched — not counted | — | listed in Audited Files table | no |
 | spaces/5vcVbvvRrtwZ0uaFrufF/uploads/8HkE2EU7hepf08gYGPsx/NM_0534_Lagoon.pdf | Enums | unmatched — not counted | — | listed in Audited Files table | no |

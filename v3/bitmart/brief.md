@@ -89,7 +89,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BMC | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-126791 | `0x3fedeb...887c33` | ⚠️ Unaudited |
+| BMC | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-126791 | `0x3fedeb84209ed302c0ce9279e300312349887c33` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

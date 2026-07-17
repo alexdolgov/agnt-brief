@@ -60,14 +60,14 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BRC20 | unknown | ethereum | n/a | [`0x38e382...51de93`](./contracts/ethereum-1/0x38e382f74dfb84608f3c1f10187f6bef5951de93/) | ✅ Audited |
-| BRC20Factory | unknown | ethereum | n/a | [`0x861e3c...3a6700`](./contracts/ethereum-1/0x861e3c82bc2753ea64ae5f962d993df6853a6700/) | ✅ Audited |
+| BRC20 | unknown | ethereum | n/a | [`0x38e382f74dfb84608f3c1f10187f6bef5951de93`](./contracts/ethereum-1/0x38e382f74dfb84608f3c1f10187f6bef5951de93/) | ✅ Audited |
+| BRC20Factory | unknown | ethereum | n/a | [`0x861e3c82bc2753ea64ae5f962d993df6853a6700`](./contracts/ethereum-1/0x861e3c82bc2753ea64ae5f962d993df6853a6700/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ERC1967Proxy | unknown | ethereum | n/a | [`0x2af598...9b3052`](./contracts/ethereum-1/0x2af5988998b07ca2de3e465641f369564d9b3052/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | ethereum | n/a | [`0x2af5988998b07ca2de3e465641f369564d9b3052`](./contracts/ethereum-1/0x2af5988998b07ca2de3e465641f369564d9b3052/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

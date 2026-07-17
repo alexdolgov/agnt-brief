@@ -60,8 +60,8 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| GravityToken | token | polygon | n/a | [`0x874e17...ab0381`](./contracts/polygon-137/0x874e178a2f3f3f9d34db862453cd756e7eab0381/) | ✅ Audited |
-| Locking | unknown | polygon | n/a | [`0xb45ba3...af168d`](./contracts/polygon-137/0xb45ba3f36c1c6c306f1d6f7c2d7d4564b6af168d/) | ✅ Audited |
+| GravityToken | token | polygon | n/a | [`0x874e178a2f3f3f9d34db862453cd756e7eab0381`](./contracts/polygon-137/0x874e178a2f3f3f9d34db862453cd756e7eab0381/) | ✅ Audited |
+| Locking | unknown | polygon | n/a | [`0xb45ba3f36c1c6c306f1d6f7c2d7d4564b6af168d`](./contracts/polygon-137/0xb45ba3f36c1c6c306f1d6f7c2d7d4564b6af168d/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 
@@ -85,7 +85,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | polygon | n/a | `0xe03ba1...22681c` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xe03ba1f7329dc24b0153a21578e3d1348322681c` | ❓ Unverified |
 
 ## Audit Inventory
 

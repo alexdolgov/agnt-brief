@@ -57,9 +57,9 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x58b548...7de806`, chain 1)
-- UnnamedContract (`0x5fdcca...8e27e9`, chain 1)
-- UnnamedContract (`0x9fabd9...c7cd32`, chain 1)
+- UnnamedContract (`0x58b5484f489f7858dc83a5a677338074b57de806`, chain 1)
+- UnnamedContract (`0x5fdcca53617f4d2b9134b29090c87d01058e27e9`, chain 1)
+- UnnamedContract (`0x9fabd9cc71f15b9cfd717e117fbb9cfd9fc7cd32`, chain 1)
 
 ## Contract Surface Quality
 
@@ -105,7 +105,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| IMXToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf57e7e...6e79ff` | ⚠️ Unaudited |
+| IMXToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf57e7e7c23978c3caec3c3548e3d615c346e79ff` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -125,9 +125,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387384 | `0x58b548...7de806` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387385 | `0x5fdcca...8e27e9` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387387 | `0x9fabd9...c7cd32` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387384 | `0x58b5484f489f7858dc83a5a677338074b57de806` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387385 | `0x5fdcca53617f4d2b9134b29090c87d01058e27e9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387387 | `0x9fabd9cc71f15b9cfd717e117fbb9cfd9fc7cd32` | ❓ Unverified |
 
 ## Audit Inventory
 

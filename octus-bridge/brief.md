@@ -62,7 +62,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Diamond | unknown | polygon | n/a | [`0x54c553...19dfff`](./contracts/polygon-137/0x54c55369a6900731d22eacb0df7c0253cf19dfff/) | ⚠️ Unaudited |
+| Diamond | unknown | polygon | n/a | [`0x54c55369a6900731d22eacb0df7c0253cf19dfff`](./contracts/polygon-137/0x54c55369a6900731d22eacb0df7c0253cf19dfff/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -94,7 +94,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| polygon | [`0x54c553...19dfff`](./contracts/polygon-137/0x54c55369a6900731d22eacb0df7c0253cf19dfff/) | Diamond | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x54c55369a6900731d22eacb0df7c0253cf19dfff`](./contracts/polygon-137/0x54c55369a6900731d22eacb0df7c0253cf19dfff/) | Diamond | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

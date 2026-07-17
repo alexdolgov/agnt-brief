@@ -59,13 +59,13 @@ The protocol forms a single structural family (Core Logic) of 7 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| FeeApprover | unknown | ethereum | n/a | [`0x318b47...9f3be2`](./contracts/ethereum-1/0x318b47c570b136bfdaec6cedb83caf73389f3be2/) | ⚠️ Unaudited |
-| StrategyControllerV1 | unknown | ethereum | n/a | [`0x575ad0...77be37`](./contracts/ethereum-1/0x575ad0e9d6debb4199168ca042e40810a477be37/) | ⚠️ Unaudited |
-| TCORE | unknown | ethereum | n/a | [`0x7a3d5d...7a2253`](./contracts/ethereum-1/0x7a3d5d49d64e57dbd6fbb21df7202bd3ee7a2253/) | ⚠️ Unaudited |
-| TCOREv1Router | unknown | ethereum | n/a | [`0xaf89fa...6cae40`](./contracts/ethereum-1/0xaf89fa1ab9e30af4068bcc18c131132b836cae40/) | ⚠️ Unaudited |
-| TcoreVaultV1 | unknown | ethereum | n/a | [`0x275ad4...ac7139`](./contracts/ethereum-1/0x275ad41c2b7eeb350bc5f9f2f2f24aac8fac7139/) | ⚠️ Unaudited |
-| tPoolDAI | unknown | ethereum | n/a | [`0xb12a30...35c8bc`](./contracts/ethereum-1/0xb12a30b72ab4a7f00d1e5e66a6d74d621b35c8bc/) | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | ethereum | n/a | [`0x39c0ed...d78093`](./contracts/ethereum-1/0x39c0edef530d284b8f7820061114157c5bd78093/) | ⚠️ Unaudited |
+| FeeApprover | unknown | ethereum | n/a | [`0x318b47c570b136bfdaec6cedb83caf73389f3be2`](./contracts/ethereum-1/0x318b47c570b136bfdaec6cedb83caf73389f3be2/) | ⚠️ Unaudited |
+| StrategyControllerV1 | unknown | ethereum | n/a | [`0x575ad0e9d6debb4199168ca042e40810a477be37`](./contracts/ethereum-1/0x575ad0e9d6debb4199168ca042e40810a477be37/) | ⚠️ Unaudited |
+| TCORE | unknown | ethereum | n/a | [`0x7a3d5d49d64e57dbd6fbb21df7202bd3ee7a2253`](./contracts/ethereum-1/0x7a3d5d49d64e57dbd6fbb21df7202bd3ee7a2253/) | ⚠️ Unaudited |
+| TCOREv1Router | unknown | ethereum | n/a | [`0xaf89fa1ab9e30af4068bcc18c131132b836cae40`](./contracts/ethereum-1/0xaf89fa1ab9e30af4068bcc18c131132b836cae40/) | ⚠️ Unaudited |
+| TcoreVaultV1 | unknown | ethereum | n/a | [`0x275ad41c2b7eeb350bc5f9f2f2f24aac8fac7139`](./contracts/ethereum-1/0x275ad41c2b7eeb350bc5f9f2f2f24aac8fac7139/) | ⚠️ Unaudited |
+| tPoolDAI | unknown | ethereum | n/a | [`0xb12a30b72ab4a7f00d1e5e66a6d74d621b35c8bc`](./contracts/ethereum-1/0xb12a30b72ab4a7f00d1e5e66a6d74d621b35c8bc/) | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | ethereum | n/a | [`0x39c0edef530d284b8f7820061114157c5bd78093`](./contracts/ethereum-1/0x39c0edef530d284b8f7820061114157c5bd78093/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -96,12 +96,12 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x318b47...9f3be2`](./contracts/ethereum-1/0x318b47c570b136bfdaec6cedb83caf73389f3be2/) | FeeApprover | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x575ad0...77be37`](./contracts/ethereum-1/0x575ad0e9d6debb4199168ca042e40810a477be37/) | StrategyControllerV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x7a3d5d...7a2253`](./contracts/ethereum-1/0x7a3d5d49d64e57dbd6fbb21df7202bd3ee7a2253/) | TCORE | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xaf89fa...6cae40`](./contracts/ethereum-1/0xaf89fa1ab9e30af4068bcc18c131132b836cae40/) | TCOREv1Router | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x275ad4...ac7139`](./contracts/ethereum-1/0x275ad41c2b7eeb350bc5f9f2f2f24aac8fac7139/) | TcoreVaultV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xb12a30...35c8bc`](./contracts/ethereum-1/0xb12a30b72ab4a7f00d1e5e66a6d74d621b35c8bc/) | tPoolDAI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x318b47c570b136bfdaec6cedb83caf73389f3be2`](./contracts/ethereum-1/0x318b47c570b136bfdaec6cedb83caf73389f3be2/) | FeeApprover | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x575ad0e9d6debb4199168ca042e40810a477be37`](./contracts/ethereum-1/0x575ad0e9d6debb4199168ca042e40810a477be37/) | StrategyControllerV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x7a3d5d49d64e57dbd6fbb21df7202bd3ee7a2253`](./contracts/ethereum-1/0x7a3d5d49d64e57dbd6fbb21df7202bd3ee7a2253/) | TCORE | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xaf89fa1ab9e30af4068bcc18c131132b836cae40`](./contracts/ethereum-1/0xaf89fa1ab9e30af4068bcc18c131132b836cae40/) | TCOREv1Router | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x275ad41c2b7eeb350bc5f9f2f2f24aac8fac7139`](./contracts/ethereum-1/0x275ad41c2b7eeb350bc5f9f2f2f24aac8fac7139/) | TcoreVaultV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb12a30b72ab4a7f00d1e5e66a6d74d621b35c8bc`](./contracts/ethereum-1/0xb12a30b72ab4a7f00d1e5e66a6d74d621b35c8bc/) | tPoolDAI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

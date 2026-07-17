@@ -56,8 +56,8 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x4904ba...aba4bd`, chain 1)
-- UnnamedContract (`0x486f6a...120b9a`, chain 42161)
+- UnnamedContract (`0x4904ba3148147d2f78b05a8446c01c48a7aba4bd`, chain 1)
+- UnnamedContract (`0x486f6aea7d150254273ac7a5ffd872db54120b9a`, chain 42161)
 
 ## Contract Surface Quality
 
@@ -121,8 +121,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394069 | `0x4904ba...aba4bd` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-394070 | `0x486f6a...120b9a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394069 | `0x4904ba3148147d2f78b05a8446c01c48a7aba4bd` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-394070 | `0x486f6aea7d150254273ac7a5ffd872db54120b9a` | ❓ Unverified |
 
 ## Audit Inventory
 

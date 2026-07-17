@@ -59,10 +59,10 @@ The protocol forms a single structural family (Core Logic) of 4 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Gateway | unknown | bsc | n/a | [`0x71bc81...ca6916`](./contracts/bsc-56/0x71bc811abac709c47b8e2846cb76fa1431ca6916/) | ⚠️ Unaudited |
-| HarborLGE | unknown | bsc | n/a | [`0x5700f0...de689b`](./contracts/bsc-56/0x5700f01c50d0e15593f21b30df05335c1cde689b/) | ⚠️ Unaudited |
-| HarborToken | unknown | bsc | n/a | [`0x3e371a...3dad26`](./contracts/bsc-56/0x3e371af1f0f7c3969f924298ff63b3df783dad26/) | ⚠️ Unaudited |
-| UiDataProvider | unknown | bsc | n/a | [`0x7bd25c...11eb26`](./contracts/bsc-56/0x7bd25c29feee53ea38d2bf18d16ed2d13611eb26/) | ⚠️ Unaudited |
+| Gateway | unknown | bsc | n/a | [`0x71bc811abac709c47b8e2846cb76fa1431ca6916`](./contracts/bsc-56/0x71bc811abac709c47b8e2846cb76fa1431ca6916/) | ⚠️ Unaudited |
+| HarborLGE | unknown | bsc | n/a | [`0x5700f01c50d0e15593f21b30df05335c1cde689b`](./contracts/bsc-56/0x5700f01c50d0e15593f21b30df05335c1cde689b/) | ⚠️ Unaudited |
+| HarborToken | unknown | bsc | n/a | [`0x3e371af1f0f7c3969f924298ff63b3df783dad26`](./contracts/bsc-56/0x3e371af1f0f7c3969f924298ff63b3df783dad26/) | ⚠️ Unaudited |
+| UiDataProvider | unknown | bsc | n/a | [`0x7bd25c29feee53ea38d2bf18d16ed2d13611eb26`](./contracts/bsc-56/0x7bd25c29feee53ea38d2bf18d16ed2d13611eb26/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,10 +93,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x71bc81...ca6916`](./contracts/bsc-56/0x71bc811abac709c47b8e2846cb76fa1431ca6916/) | Gateway | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x5700f0...de689b`](./contracts/bsc-56/0x5700f01c50d0e15593f21b30df05335c1cde689b/) | HarborLGE | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x3e371a...3dad26`](./contracts/bsc-56/0x3e371af1f0f7c3969f924298ff63b3df783dad26/) | HarborToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x7bd25c...11eb26`](./contracts/bsc-56/0x7bd25c29feee53ea38d2bf18d16ed2d13611eb26/) | UiDataProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x71bc811abac709c47b8e2846cb76fa1431ca6916`](./contracts/bsc-56/0x71bc811abac709c47b8e2846cb76fa1431ca6916/) | Gateway | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x5700f01c50d0e15593f21b30df05335c1cde689b`](./contracts/bsc-56/0x5700f01c50d0e15593f21b30df05335c1cde689b/) | HarborLGE | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x3e371af1f0f7c3969f924298ff63b3df783dad26`](./contracts/bsc-56/0x3e371af1f0f7c3969f924298ff63b3df783dad26/) | HarborToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x7bd25c29feee53ea38d2bf18d16ed2d13611eb26`](./contracts/bsc-56/0x7bd25c29feee53ea38d2bf18d16ed2d13611eb26/) | UiDataProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

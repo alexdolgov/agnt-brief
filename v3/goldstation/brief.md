@@ -57,7 +57,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x27397b...63d4ff`, chain 8217)
+- UnnamedContract (`0x27397bfbefd58a437f2636f80a8e70cfc363d4ff`, chain 8217)
 
 ## Contract Surface Quality
 
@@ -121,9 +121,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | kaia | unit-386859 | `0x27397b...63d4ff` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | kaia | n/a | 4 deployments: kaia `0x347e5c...62ae88`; kaia `0x4836cc...0cd95e`; kaia `0x4d55b0...dc8954`; kaia `0x6569b1...47dc76` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x1b27d7...64281d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | kaia | unit-386859 | `0x27397bfbefd58a437f2636f80a8e70cfc363d4ff` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | kaia | n/a | 4 deployments: kaia `0x347e5ce6764df9df85487bea523d3e242762ae88`; kaia `0x4836cc1f355bb2a61c210eaa0cd3f729160cd95e`; kaia `0x4d55b04ac52b2ca41ad04337ff13cbaefbdc8954`; kaia `0x6569b14043c03537b5b125f5ac5de3605a47dc76` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x1b27d7a06deea4d5cb4fd60c164153c90f64281d` | ❓ Unverified |
 
 ## Audit Inventory
 

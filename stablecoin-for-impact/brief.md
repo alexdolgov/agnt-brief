@@ -62,7 +62,7 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ATokenInstance | token | ethereum | n/a | 3 deployments: ethereum [`0x018008...754e63`](./contracts/ethereum-1/0x018008bfb33d285247a21d44e50697654f754e63/); ethereum `0x238789...d4086a`; ethereum `0x98c23e...e16f5c` | ⚠️ Unaudited |
+| ATokenInstance | token | ethereum | n/a | 3 deployments: ethereum [`0x018008bfb33d285247a21d44e50697654f754e63`](./contracts/ethereum-1/0x018008bfb33d285247a21d44e50697654f754e63/); ethereum `0x23878914efe38d27c4d67ab83ed1b93a74d4086a`; ethereum `0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -82,7 +82,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AaveImpact | unknown | ethereum | n/a | `0xd88316...92f0a6` | ❓ Unverified |
+| AaveImpact | unknown | ethereum | n/a | `0xd8831608954c7c4044938ac76e32da81d692f0a6` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -96,7 +96,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x018008...754e63`](./contracts/ethereum-1/0x018008bfb33d285247a21d44e50697654f754e63/) | ATokenInstance | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x018008bfb33d285247a21d44e50697654f754e63`](./contracts/ethereum-1/0x018008bfb33d285247a21d44e50697654f754e63/) | ATokenInstance | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

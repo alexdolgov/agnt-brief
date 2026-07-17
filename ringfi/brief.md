@@ -59,13 +59,13 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| RingContract | unknown | bsc | n/a | [`0x021988...ff05c9`](./contracts/bsc-56/0x021988d2c89b1a9ff56641b2f247942358ff05c9/) | ✅ Audited |
+| RingContract | unknown | bsc | n/a | [`0x021988d2c89b1a9ff56641b2f247942358ff05c9`](./contracts/bsc-56/0x021988d2c89b1a9ff56641b2f247942358ff05c9/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| WrappedRingERC20 | token | bsc | n/a | [`0x59ae8c...a4c405`](./contracts/bsc-56/0x59ae8c783ebce3cc68cce32c427128101fa4c405/) | ⚠️ Unaudited |
+| WrappedRingERC20 | token | bsc | n/a | [`0x59ae8c783ebce3cc68cce32c427128101fa4c405`](./contracts/bsc-56/0x59ae8c783ebce3cc68cce32c427128101fa4c405/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -97,7 +97,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x59ae8c...a4c405`](./contracts/bsc-56/0x59ae8c783ebce3cc68cce32c427128101fa4c405/) | WrappedRingERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x59ae8c783ebce3cc68cce32c427128101fa4c405`](./contracts/bsc-56/0x59ae8c783ebce3cc68cce32c427128101fa4c405/) | WrappedRingERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

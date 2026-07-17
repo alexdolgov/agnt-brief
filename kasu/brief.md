@@ -60,35 +60,35 @@ The protocol comprises 4 functional families. Its contracts share 4 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| FeeManager | governance | base | n/a | [`0xef956c...39b6b9`](./contracts/base-8453/0xef956c2193e032609da84bec5e5251b28939b6b9/) | ✅ Audited |
-| LendingPoolTranche | core_logic | base | n/a | 2 deployments: base [`0x94a699...00f3f9`](./contracts/base-8453/0x94a699a93519bef708b5be69914436363100f3f9/); base `0xa2e999...4fb1d0` | ✅ Audited |
-| PendingPool | core_logic | base | n/a | 2 deployments: base [`0x080238...e05e1d`](./contracts/base-8453/0x08023888ffb36f007679d1ec64a4f22f54e05e1d/); base `0x6ecd74...c8e2e0` | ✅ Audited |
-| Swapper | unknown | base | n/a | [`0xe593ed...baa6d2`](./contracts/base-8453/0xe593edf0579cfa8b622c327c05a0070c71baa6d2/) | ✅ Audited |
-| UserManager | governance | base | n/a | [`0x5dc8d3...3c93f3`](./contracts/base-8453/0x5dc8d315a80fd99abef0f327b9a52a3fbc3c93f3/) | ✅ Audited |
+| FeeManager | governance | base | n/a | [`0xef956c2193e032609da84bec5e5251b28939b6b9`](./contracts/base-8453/0xef956c2193e032609da84bec5e5251b28939b6b9/) | ✅ Audited |
+| LendingPoolTranche | core_logic | base | n/a | 2 deployments: base [`0x94a699a93519bef708b5be69914436363100f3f9`](./contracts/base-8453/0x94a699a93519bef708b5be69914436363100f3f9/); base `0xa2e9992b73be340ec7134e751a4e5358374fb1d0` | ✅ Audited |
+| PendingPool | core_logic | base | n/a | 2 deployments: base [`0x08023888ffb36f007679d1ec64a4f22f54e05e1d`](./contracts/base-8453/0x08023888ffb36f007679d1ec64a4f22f54e05e1d/); base `0x6ecd74982433ea8f00fbd879485641c507c8e2e0` | ✅ Audited |
+| Swapper | unknown | base | n/a | [`0xe593edf0579cfa8b622c327c05a0070c71baa6d2`](./contracts/base-8453/0xe593edf0579cfa8b622c327c05a0070c71baa6d2/) | ✅ Audited |
+| UserManager | governance | base | n/a | [`0x5dc8d315a80fd99abef0f327b9a52a3fbc3c93f3`](./contracts/base-8453/0x5dc8d315a80fd99abef0f327b9a52a3fbc3c93f3/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (19)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AcceptedRequestsCalculation | unknown | base | n/a | 2 deployments: base [`0x0133c2...b3307a`](./contracts/base-8453/0x0133c2ec8a72dec51a9373e4003a2ccf09b3307a/); base `0x1e69dd...58bd0e` | ⚠️ Unaudited |
-| ClearingCoordinator | unknown | base | n/a | 2 deployments: base [`0x2889ea...175ed1`](./contracts/base-8453/0x2889eafa5732abd724cda4ebc1b9659f90175ed1/); base `0x2cf12a...f57de2` | ⚠️ Unaudited |
-| FixedTermDeposit | unknown | base | n/a | [`0x757ab3...ae5ed3`](./contracts/base-8453/0x757ab3139e09beb9ccdf59762ad00825efae5ed3/) | ⚠️ Unaudited |
-| KasuAllowList | unknown | base | n/a | [`0x807a7e...cbf8bb`](./contracts/base-8453/0x807a7e119ebf0282420b5ca0e0056c0525cbf8bb/) | ⚠️ Unaudited |
-| KasuController | unknown | base | n/a | 2 deployments: base [`0xb0d7eb...5d2868`](./contracts/base-8453/0xb0d7eb2d5036fb85a231d0e243a5b723ba5d2868/); base `0xe768e5...60b052` | ⚠️ Unaudited |
-| KasuPoolExternalTVL | unknown | base | n/a | 2 deployments: base [`0x662379...9f3c9f`](./contracts/base-8453/0x662379febb3e4f91400b5f7d4f7f7ce4699f3c9f/); base `0xe477a8...2cb191` | ⚠️ Unaudited |
-| KSU | unknown | base | n/a | 2 deployments: base [`0x5d9b87...ceadba`](./contracts/base-8453/0x5d9b878744dbe721a3f33a60a6b102e289ceadba/); base `0x792383...acf693` | ⚠️ Unaudited |
-| KSULockBonus | unknown | base | n/a | [`0xeede30...e20b40`](./contracts/base-8453/0xeede30acf16caff49c1a48f75185c67be2e20b40/) | ⚠️ Unaudited |
-| KSULocking | unknown | base | n/a | [`0xb145c0...553ce1`](./contracts/base-8453/0xb145c061684c701c2c018a3f322aa14f5a553ce1/) | ⚠️ Unaudited |
-| LendingPool | unknown | base | n/a | 2 deployments: base [`0x2af3eb...d7ab31`](./contracts/base-8453/0x2af3eb5945a524e1c23dc2fb2b3b37a5cad7ab31/); base `0x9b9ec3...efa621` | ⚠️ Unaudited |
-| LendingPool | unknown | base | n/a | 2 deployments: base [`0x8855ec...926e8f`](./contracts/base-8453/0x8855ec34d148fddcd3d536a2eb9c04943e926e8f/); base `0xcdc9b9...a1de99` | ⚠️ Unaudited |
-| LendingPoolFactory | unknown | base | n/a | [`0x263b5d...ab05a8`](./contracts/base-8453/0x263b5d074584118ff2b65b0125ac8a4529ab05a8/) | ⚠️ Unaudited |
-| LendingPoolFactory | unknown | base | n/a | 2 deployments: base [`0x617b6e...03f9f3`](./contracts/base-8453/0x617b6e6a4f444bbc5dee08193e9597e20603f9f3/); base `0xd8c77e...905190` | ⚠️ Unaudited |
-| LendingPoolManager | unknown | base | n/a | [`0xe1be32...2096b5`](./contracts/base-8453/0xe1be322323a412579b4a09fb08ff4bfca12096b5/) | ⚠️ Unaudited |
-| LendingPoolTranche | unknown | base | n/a | 4 deployments: base [`0x31b186...bac13f`](./contracts/base-8453/0x31b186049085e7bf5b68c27657bd73b5a5bac13f/); base `0x8f2b35...467f12`; base `0xec9980...d9c899`; base `0xef5d12...3033be` | ⚠️ Unaudited |
-| ManualKsuPrice | unknown | base | n/a | 2 deployments: base [`0x221a54...4e5c1b`](./contracts/base-8453/0x221a54cbbd5f490bd8e77cf36acba4b1304e5c1b/); base `0xb82992...ca4dc6` | ⚠️ Unaudited |
-| PendingPool | unknown | base | n/a | 3 deployments: base [`0x0c5554...c7f4cc`](./contracts/base-8453/0x0c5554058118dba2da4a3ca2a448c5a61bc7f4cc/); base `0x3cf856...c7dbf4`; base `0xc17f46...03e3a9` | ⚠️ Unaudited |
-| SystemVariables | unknown | base | n/a | [`0x193bb0...c41f69`](./contracts/base-8453/0x193bb02a24f5562b58feb86550e6f09bb6c41f69/) | ⚠️ Unaudited |
-| UserLoyaltyRewards | unknown | base | n/a | [`0xb4784f...19d635`](./contracts/base-8453/0xb4784f69bb1f1076f50907cb0a815908a719d635/) | ⚠️ Unaudited |
+| AcceptedRequestsCalculation | unknown | base | n/a | 2 deployments: base [`0x0133c2ec8a72dec51a9373e4003a2ccf09b3307a`](./contracts/base-8453/0x0133c2ec8a72dec51a9373e4003a2ccf09b3307a/); base `0x1e69dd53b1224ea012086dda11f9b4a23b58bd0e` | ⚠️ Unaudited |
+| ClearingCoordinator | unknown | base | n/a | 2 deployments: base [`0x2889eafa5732abd724cda4ebc1b9659f90175ed1`](./contracts/base-8453/0x2889eafa5732abd724cda4ebc1b9659f90175ed1/); base `0x2cf12a6d91fa4beb5a4c17589a03e78f88f57de2` | ⚠️ Unaudited |
+| FixedTermDeposit | unknown | base | n/a | [`0x757ab3139e09beb9ccdf59762ad00825efae5ed3`](./contracts/base-8453/0x757ab3139e09beb9ccdf59762ad00825efae5ed3/) | ⚠️ Unaudited |
+| KasuAllowList | unknown | base | n/a | [`0x807a7e119ebf0282420b5ca0e0056c0525cbf8bb`](./contracts/base-8453/0x807a7e119ebf0282420b5ca0e0056c0525cbf8bb/) | ⚠️ Unaudited |
+| KasuController | unknown | base | n/a | 2 deployments: base [`0xb0d7eb2d5036fb85a231d0e243a5b723ba5d2868`](./contracts/base-8453/0xb0d7eb2d5036fb85a231d0e243a5b723ba5d2868/); base `0xe768e5d17f338df23983876afdcd42ae7d60b052` | ⚠️ Unaudited |
+| KasuPoolExternalTVL | unknown | base | n/a | 2 deployments: base [`0x662379febb3e4f91400b5f7d4f7f7ce4699f3c9f`](./contracts/base-8453/0x662379febb3e4f91400b5f7d4f7f7ce4699f3c9f/); base `0xe477a800c428c7ace5ba2b4cef0be55bca2cb191` | ⚠️ Unaudited |
+| KSU | unknown | base | n/a | 2 deployments: base [`0x5d9b878744dbe721a3f33a60a6b102e289ceadba`](./contracts/base-8453/0x5d9b878744dbe721a3f33a60a6b102e289ceadba/); base `0x7923837dc93d897e12696e0f4fd50b51fbacf693` | ⚠️ Unaudited |
+| KSULockBonus | unknown | base | n/a | [`0xeede30acf16caff49c1a48f75185c67be2e20b40`](./contracts/base-8453/0xeede30acf16caff49c1a48f75185c67be2e20b40/) | ⚠️ Unaudited |
+| KSULocking | unknown | base | n/a | [`0xb145c061684c701c2c018a3f322aa14f5a553ce1`](./contracts/base-8453/0xb145c061684c701c2c018a3f322aa14f5a553ce1/) | ⚠️ Unaudited |
+| LendingPool | unknown | base | n/a | 2 deployments: base [`0x2af3eb5945a524e1c23dc2fb2b3b37a5cad7ab31`](./contracts/base-8453/0x2af3eb5945a524e1c23dc2fb2b3b37a5cad7ab31/); base `0x9b9ec355b7f11a996b8d483d8608a82785efa621` | ⚠️ Unaudited |
+| LendingPool | unknown | base | n/a | 2 deployments: base [`0x8855ec34d148fddcd3d536a2eb9c04943e926e8f`](./contracts/base-8453/0x8855ec34d148fddcd3d536a2eb9c04943e926e8f/); base `0xcdc9b9b475095cb0dcd9e11c5d1c9463c5a1de99` | ⚠️ Unaudited |
+| LendingPoolFactory | unknown | base | n/a | [`0x263b5d074584118ff2b65b0125ac8a4529ab05a8`](./contracts/base-8453/0x263b5d074584118ff2b65b0125ac8a4529ab05a8/) | ⚠️ Unaudited |
+| LendingPoolFactory | unknown | base | n/a | 2 deployments: base [`0x617b6e6a4f444bbc5dee08193e9597e20603f9f3`](./contracts/base-8453/0x617b6e6a4f444bbc5dee08193e9597e20603f9f3/); base `0xd8c77e8882f9bada35804625e8264e51cb905190` | ⚠️ Unaudited |
+| LendingPoolManager | unknown | base | n/a | [`0xe1be322323a412579b4a09fb08ff4bfca12096b5`](./contracts/base-8453/0xe1be322323a412579b4a09fb08ff4bfca12096b5/) | ⚠️ Unaudited |
+| LendingPoolTranche | unknown | base | n/a | 4 deployments: base [`0x31b186049085e7bf5b68c27657bd73b5a5bac13f`](./contracts/base-8453/0x31b186049085e7bf5b68c27657bd73b5a5bac13f/); base `0x8f2b35004fd5fe1b1d649bf52df8fd6ee4467f12`; base `0xec998071e553742596d9971190f13c3dafd9c899`; base `0xef5d123d26280fc96099abf9c86d7b7e5a3033be` | ⚠️ Unaudited |
+| ManualKsuPrice | unknown | base | n/a | 2 deployments: base [`0x221a54cbbd5f490bd8e77cf36acba4b1304e5c1b`](./contracts/base-8453/0x221a54cbbd5f490bd8e77cf36acba4b1304e5c1b/); base `0xb82992c13adee67f43758bce6ff16e32c0ca4dc6` | ⚠️ Unaudited |
+| PendingPool | unknown | base | n/a | 3 deployments: base [`0x0c5554058118dba2da4a3ca2a448c5a61bc7f4cc`](./contracts/base-8453/0x0c5554058118dba2da4a3ca2a448c5a61bc7f4cc/); base `0x3cf8562b0a1ff6d6749071e478177ec2ddc7dbf4`; base `0xc17f46d36de495a866d11e1fc284fa013903e3a9` | ⚠️ Unaudited |
+| SystemVariables | unknown | base | n/a | [`0x193bb02a24f5562b58feb86550e6f09bb6c41f69`](./contracts/base-8453/0x193bb02a24f5562b58feb86550e6f09bb6c41f69/) | ⚠️ Unaudited |
+| UserLoyaltyRewards | unknown | base | n/a | [`0xb4784f69bb1f1076f50907cb0a815908a719d635`](./contracts/base-8453/0xb4784f69bb1f1076f50907cb0a815908a719d635/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -108,8 +108,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | base | n/a | `0x59c8ea...d0eedc` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xafb296...3a7765` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x59c8ea31bd71fa48e0201a88354b1be26dd0eedc` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xafb2966dcc3f20ec4412162a8d203247a93a7765` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -124,25 +124,25 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x0133c2...b3307a`](./contracts/base-8453/0x0133c2ec8a72dec51a9373e4003a2ccf09b3307a/) | AcceptedRequestsCalculation | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x2889ea...175ed1`](./contracts/base-8453/0x2889eafa5732abd724cda4ebc1b9659f90175ed1/) | ClearingCoordinator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x757ab3...ae5ed3`](./contracts/base-8453/0x757ab3139e09beb9ccdf59762ad00825efae5ed3/) | FixedTermDeposit | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x807a7e...cbf8bb`](./contracts/base-8453/0x807a7e119ebf0282420b5ca0e0056c0525cbf8bb/) | KasuAllowList | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xb0d7eb...5d2868`](./contracts/base-8453/0xb0d7eb2d5036fb85a231d0e243a5b723ba5d2868/) | KasuController | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x662379...9f3c9f`](./contracts/base-8453/0x662379febb3e4f91400b5f7d4f7f7ce4699f3c9f/) | KasuPoolExternalTVL | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x5d9b87...ceadba`](./contracts/base-8453/0x5d9b878744dbe721a3f33a60a6b102e289ceadba/) | KSU | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xeede30...e20b40`](./contracts/base-8453/0xeede30acf16caff49c1a48f75185c67be2e20b40/) | KSULockBonus | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xb145c0...553ce1`](./contracts/base-8453/0xb145c061684c701c2c018a3f322aa14f5a553ce1/) | KSULocking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x2af3eb...d7ab31`](./contracts/base-8453/0x2af3eb5945a524e1c23dc2fb2b3b37a5cad7ab31/) | LendingPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x8855ec...926e8f`](./contracts/base-8453/0x8855ec34d148fddcd3d536a2eb9c04943e926e8f/) | LendingPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x263b5d...ab05a8`](./contracts/base-8453/0x263b5d074584118ff2b65b0125ac8a4529ab05a8/) | LendingPoolFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x617b6e...03f9f3`](./contracts/base-8453/0x617b6e6a4f444bbc5dee08193e9597e20603f9f3/) | LendingPoolFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xe1be32...2096b5`](./contracts/base-8453/0xe1be322323a412579b4a09fb08ff4bfca12096b5/) | LendingPoolManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x31b186...bac13f`](./contracts/base-8453/0x31b186049085e7bf5b68c27657bd73b5a5bac13f/) | LendingPoolTranche | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x221a54...4e5c1b`](./contracts/base-8453/0x221a54cbbd5f490bd8e77cf36acba4b1304e5c1b/) | ManualKsuPrice | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x0c5554...c7f4cc`](./contracts/base-8453/0x0c5554058118dba2da4a3ca2a448c5a61bc7f4cc/) | PendingPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x193bb0...c41f69`](./contracts/base-8453/0x193bb02a24f5562b58feb86550e6f09bb6c41f69/) | SystemVariables | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xb4784f...19d635`](./contracts/base-8453/0xb4784f69bb1f1076f50907cb0a815908a719d635/) | UserLoyaltyRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x0133c2ec8a72dec51a9373e4003a2ccf09b3307a`](./contracts/base-8453/0x0133c2ec8a72dec51a9373e4003a2ccf09b3307a/) | AcceptedRequestsCalculation | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x2889eafa5732abd724cda4ebc1b9659f90175ed1`](./contracts/base-8453/0x2889eafa5732abd724cda4ebc1b9659f90175ed1/) | ClearingCoordinator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x757ab3139e09beb9ccdf59762ad00825efae5ed3`](./contracts/base-8453/0x757ab3139e09beb9ccdf59762ad00825efae5ed3/) | FixedTermDeposit | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x807a7e119ebf0282420b5ca0e0056c0525cbf8bb`](./contracts/base-8453/0x807a7e119ebf0282420b5ca0e0056c0525cbf8bb/) | KasuAllowList | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xb0d7eb2d5036fb85a231d0e243a5b723ba5d2868`](./contracts/base-8453/0xb0d7eb2d5036fb85a231d0e243a5b723ba5d2868/) | KasuController | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x662379febb3e4f91400b5f7d4f7f7ce4699f3c9f`](./contracts/base-8453/0x662379febb3e4f91400b5f7d4f7f7ce4699f3c9f/) | KasuPoolExternalTVL | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x5d9b878744dbe721a3f33a60a6b102e289ceadba`](./contracts/base-8453/0x5d9b878744dbe721a3f33a60a6b102e289ceadba/) | KSU | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xeede30acf16caff49c1a48f75185c67be2e20b40`](./contracts/base-8453/0xeede30acf16caff49c1a48f75185c67be2e20b40/) | KSULockBonus | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xb145c061684c701c2c018a3f322aa14f5a553ce1`](./contracts/base-8453/0xb145c061684c701c2c018a3f322aa14f5a553ce1/) | KSULocking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x2af3eb5945a524e1c23dc2fb2b3b37a5cad7ab31`](./contracts/base-8453/0x2af3eb5945a524e1c23dc2fb2b3b37a5cad7ab31/) | LendingPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x8855ec34d148fddcd3d536a2eb9c04943e926e8f`](./contracts/base-8453/0x8855ec34d148fddcd3d536a2eb9c04943e926e8f/) | LendingPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x263b5d074584118ff2b65b0125ac8a4529ab05a8`](./contracts/base-8453/0x263b5d074584118ff2b65b0125ac8a4529ab05a8/) | LendingPoolFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x617b6e6a4f444bbc5dee08193e9597e20603f9f3`](./contracts/base-8453/0x617b6e6a4f444bbc5dee08193e9597e20603f9f3/) | LendingPoolFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xe1be322323a412579b4a09fb08ff4bfca12096b5`](./contracts/base-8453/0xe1be322323a412579b4a09fb08ff4bfca12096b5/) | LendingPoolManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x31b186049085e7bf5b68c27657bd73b5a5bac13f`](./contracts/base-8453/0x31b186049085e7bf5b68c27657bd73b5a5bac13f/) | LendingPoolTranche | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x221a54cbbd5f490bd8e77cf36acba4b1304e5c1b`](./contracts/base-8453/0x221a54cbbd5f490bd8e77cf36acba4b1304e5c1b/) | ManualKsuPrice | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x0c5554058118dba2da4a3ca2a448c5a61bc7f4cc`](./contracts/base-8453/0x0c5554058118dba2da4a3ca2a448c5a61bc7f4cc/) | PendingPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x193bb02a24f5562b58feb86550e6f09bb6c41f69`](./contracts/base-8453/0x193bb02a24f5562b58feb86550e6f09bb6c41f69/) | SystemVariables | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xb4784f69bb1f1076f50907cb0a815908a719d635`](./contracts/base-8453/0xb4784f69bb1f1076f50907cb0a815908a719d635/) | UserLoyaltyRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

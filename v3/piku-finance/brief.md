@@ -52,12 +52,12 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x098697...e95fe6`, chain 1)
-- UnnamedContract (`0x2bf11d...7dd326`, chain 1)
-- UnnamedContract (`0x2e4039...c02dc3`, chain 1)
-- UnnamedContract (`0x5da17c...839df8`, chain 1)
-- UnnamedContract (`0x827ce7...a5594a`, chain 1)
-- UnnamedContract (`0x99351b...da71e7`, chain 1)
+- UnnamedContract (`0x098697ba3fee4ea76294c5d6a466a4e3b3e95fe6`, chain 1)
+- UnnamedContract (`0x2bf11d2e04bc40daa95c24b8b90ec4f5c57dd326`, chain 1)
+- UnnamedContract (`0x2e4039e8e31475d65dc00293c366fdbfbbc02dc3`, chain 1)
+- UnnamedContract (`0x5da17ca137f1128d4be7ce574bc61f3ac4839df8`, chain 1)
+- UnnamedContract (`0x827ce7e8e35861d9ac7fe002755767b695a5594a`, chain 1)
+- UnnamedContract (`0x99351baed3d8ab544ccb08af96a105910fda71e7`, chain 1)
 
 ## Contract Surface Quality
 
@@ -121,12 +121,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251281 | `0x098697...e95fe6` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251282 | `0x2bf11d...7dd326` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251283 | `0x2e4039...c02dc3` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251284 | `0x5da17c...839df8` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251285 | `0x827ce7...a5594a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251286 | `0x99351b...da71e7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251281 | `0x098697ba3fee4ea76294c5d6a466a4e3b3e95fe6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251282 | `0x2bf11d2e04bc40daa95c24b8b90ec4f5c57dd326` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251283 | `0x2e4039e8e31475d65dc00293c366fdbfbbc02dc3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251284 | `0x5da17ca137f1128d4be7ce574bc61f3ac4839df8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251285 | `0x827ce7e8e35861d9ac7fe002755767b695a5594a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251286 | `0x99351baed3d8ab544ccb08af96a105910fda71e7` | ❓ Unverified |
 
 ## Audit Inventory
 

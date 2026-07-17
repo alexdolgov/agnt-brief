@@ -61,11 +61,11 @@ The protocol comprises 3 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Dividends | unknown | avalanche | n/a | [`0x790e11...4df7e4`](./contracts/avalanche-43114/0x790e115a36c158908716934082cce8fc194df7e4/) | ⚠️ Unaudited |
-| GnosisSafeProxy | governance | avalanche | n/a | [`0x386f94...ef18f4`](./contracts/avalanche-43114/0x386f942cbc11be2dae9de41cbb44f18b6fef18f4/) | ⚠️ Unaudited |
-| RestrictedLockupToken | token | avalanche | n/a | [`0x7c6a93...a8f7a7`](./contracts/avalanche-43114/0x7c6a937943f135283a2561938de2200994a8f7a7/) | ⚠️ Unaudited |
-| RestrictedSwap | unknown | avalanche | n/a | [`0x97af8f...d33576`](./contracts/avalanche-43114/0x97af8f20ad2e7c5cae81682180011ffb16d33576/) | ⚠️ Unaudited |
-| TransferRules | unknown | avalanche | n/a | [`0xfb2310...cb81e7`](./contracts/avalanche-43114/0xfb23108ebefcb2079a98aa7b2480307f47cb81e7/) | ⚠️ Unaudited |
+| Dividends | unknown | avalanche | n/a | [`0x790e115a36c158908716934082cce8fc194df7e4`](./contracts/avalanche-43114/0x790e115a36c158908716934082cce8fc194df7e4/) | ⚠️ Unaudited |
+| GnosisSafeProxy | governance | avalanche | n/a | [`0x386f942cbc11be2dae9de41cbb44f18b6fef18f4`](./contracts/avalanche-43114/0x386f942cbc11be2dae9de41cbb44f18b6fef18f4/) | ⚠️ Unaudited |
+| RestrictedLockupToken | token | avalanche | n/a | [`0x7c6a937943f135283a2561938de2200994a8f7a7`](./contracts/avalanche-43114/0x7c6a937943f135283a2561938de2200994a8f7a7/) | ⚠️ Unaudited |
+| RestrictedSwap | unknown | avalanche | n/a | [`0x97af8f20ad2e7c5cae81682180011ffb16d33576`](./contracts/avalanche-43114/0x97af8f20ad2e7c5cae81682180011ffb16d33576/) | ⚠️ Unaudited |
+| TransferRules | unknown | avalanche | n/a | [`0xfb23108ebefcb2079a98aa7b2480307f47cb81e7`](./contracts/avalanche-43114/0xfb23108ebefcb2079a98aa7b2480307f47cb81e7/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -96,10 +96,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| avalanche | [`0x790e11...4df7e4`](./contracts/avalanche-43114/0x790e115a36c158908716934082cce8fc194df7e4/) | Dividends | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x7c6a93...a8f7a7`](./contracts/avalanche-43114/0x7c6a937943f135283a2561938de2200994a8f7a7/) | RestrictedLockupToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x97af8f...d33576`](./contracts/avalanche-43114/0x97af8f20ad2e7c5cae81682180011ffb16d33576/) | RestrictedSwap | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0xfb2310...cb81e7`](./contracts/avalanche-43114/0xfb23108ebefcb2079a98aa7b2480307f47cb81e7/) | TransferRules | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0x790e115a36c158908716934082cce8fc194df7e4`](./contracts/avalanche-43114/0x790e115a36c158908716934082cce8fc194df7e4/) | Dividends | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0x7c6a937943f135283a2561938de2200994a8f7a7`](./contracts/avalanche-43114/0x7c6a937943f135283a2561938de2200994a8f7a7/) | RestrictedLockupToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0x97af8f20ad2e7c5cae81682180011ffb16d33576`](./contracts/avalanche-43114/0x97af8f20ad2e7c5cae81682180011ffb16d33576/) | RestrictedSwap | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0xfb23108ebefcb2079a98aa7b2480307f47cb81e7`](./contracts/avalanche-43114/0xfb23108ebefcb2079a98aa7b2480307f47cb81e7/) | TransferRules | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

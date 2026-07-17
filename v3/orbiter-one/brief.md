@@ -52,21 +52,21 @@ The pinned logic-topography run contains 14 contract row(s) across moonbeam. Str
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x0aca5c...b11698`, chain 1284)
-- UnnamedContract (`0x0bd102...198419`, chain 1284)
-- UnnamedContract (`0x168525...7dcf57`, chain 1284)
-- UnnamedContract (`0x17f7b9...23a779`, chain 1284)
-- UnnamedContract (`0x27dc3d...c4c97d`, chain 1284)
-- UnnamedContract (`0x39cbe0...2ccc70`, chain 1284)
-- UnnamedContract (`0x569322...60d947`, chain 1284)
-- UnnamedContract (`0x64cff2...bdb693`, chain 1284)
-- UnnamedContract (`0x6cc6c1...398642`, chain 1284)
-- UnnamedContract (`0x864f6a...3fee4b`, chain 1284)
-- UnnamedContract (`0xa5ebbf...36d951`, chain 1284)
-- UnnamedContract (`0xcc444c...f6c259`, chain 1284)
-- UnnamedContract (`0xdf2b90...6886b7`, chain 1284)
-- UnnamedContract (`0xe48451...a43efe`, chain 1284)
-- OrbitLottery (`0xaa0c24...729a13`, chain 1284)
+- UnnamedContract (`0x0aca5cb726c4e86045f6fbb673eaaca854b11698`, chain 1284)
+- UnnamedContract (`0x0bd102515503f1bd2b37bc723ba5ee7cfb198419`, chain 1284)
+- UnnamedContract (`0x168525d35d61ce3c9cf17b91c98755f2197dcf57`, chain 1284)
+- UnnamedContract (`0x17f7b994510e7652981bd115f174a9241323a779`, chain 1284)
+- UnnamedContract (`0x27dc3dadbfb40adc677a2d5ef192d40ad7c4c97d`, chain 1284)
+- UnnamedContract (`0x39cbe088dc510596d5fb14f051917f88932ccc70`, chain 1284)
+- UnnamedContract (`0x5693227b49d79c294dbfc6df76399013a860d947`, chain 1284)
+- UnnamedContract (`0x64cff24763227511475b345498f71b987ebdb693`, chain 1284)
+- UnnamedContract (`0x6cc6c17d25bd3646b3710d6188d0467f5d398642`, chain 1284)
+- UnnamedContract (`0x864f6a9a0ba613c079a7c0ab9f1ac8b3e63fee4b`, chain 1284)
+- UnnamedContract (`0xa5ebbfe3d4391c7079fa6cd5dc230b915936d951`, chain 1284)
+- UnnamedContract (`0xcc444ca6bba3764fc55beefe4ffa27435cf6c259`, chain 1284)
+- UnnamedContract (`0xdf2b90e2ed9a77054be91aa00bd52f78a86886b7`, chain 1284)
+- UnnamedContract (`0xe48451b26e140b9b2f1a55f2879fe0ca66a43efe`, chain 1284)
+- OrbitLottery (`0xaa0c247e385f2995fb0d88921470bfb450729a13`, chain 1284)
 
 ## Contract Surface Quality
 
@@ -110,26 +110,26 @@ The pinned logic-topography run contains 14 contract row(s) across moonbeam. Str
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | moonbeam | unit-390454 | `0xa5ebbf...36d951` | ✅ Audited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | moonbeam | unit-390454 | `0xa5ebbfe3d4391c7079fa6cd5dc230b915936d951` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (14)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| OrbitLottery | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-390455 | `0xaa0c24...729a13` | ⚠️ Unaudited |
-| ORBToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0x4eeaa1...a3c3d7` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | moonbeam | unit-390445 | `0x0bd102...198419` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | moonbeam | unit-390446 | `0x168525...7dcf57` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | moonbeam | unit-390447 | `0x17f7b9...23a779` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | moonbeam | unit-390448 | `0x27dc3d...c4c97d` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | moonbeam | unit-390449 | `0x39cbe0...2ccc70` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | moonbeam | unit-390450 | `0x569322...60d947` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | moonbeam | unit-390451 | `0x64cff2...bdb693` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | third_party_dependency | 0 | moonbeam | unit-390452 | `0x6cc6c1...398642` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | moonbeam | unit-390453 | `0x864f6a...3fee4b` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | moonbeam | unit-390456 | `0xcc444c...f6c259` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | moonbeam | unit-390457 | `0xdf2b90...6886b7` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | moonbeam | unit-390458 | `0xe48451...a43efe` | ⚠️ Unaudited |
+| OrbitLottery | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-390455 | `0xaa0c247e385f2995fb0d88921470bfb450729a13` | ⚠️ Unaudited |
+| ORBToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0x4eeaa1fd27c50c64e77272bcdde68c28f0a3c3d7` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | moonbeam | unit-390445 | `0x0bd102515503f1bd2b37bc723ba5ee7cfb198419` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | moonbeam | unit-390446 | `0x168525d35d61ce3c9cf17b91c98755f2197dcf57` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | moonbeam | unit-390447 | `0x17f7b994510e7652981bd115f174a9241323a779` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | moonbeam | unit-390448 | `0x27dc3dadbfb40adc677a2d5ef192d40ad7c4c97d` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | moonbeam | unit-390449 | `0x39cbe088dc510596d5fb14f051917f88932ccc70` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | moonbeam | unit-390450 | `0x5693227b49d79c294dbfc6df76399013a860d947` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | moonbeam | unit-390451 | `0x64cff24763227511475b345498f71b987ebdb693` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | third_party_dependency | 0 | moonbeam | unit-390452 | `0x6cc6c17d25bd3646b3710d6188d0467f5d398642` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | moonbeam | unit-390453 | `0x864f6a9a0ba613c079a7c0ab9f1ac8b3e63fee4b` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | moonbeam | unit-390456 | `0xcc444ca6bba3764fc55beefe4ffa27435cf6c259` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | moonbeam | unit-390457 | `0xdf2b90e2ed9a77054be91aa00bd52f78a86886b7` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | moonbeam | unit-390458 | `0xe48451b26e140b9b2f1a55f2879fe0ca66a43efe` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -149,9 +149,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | moonbeam | unit-390444 | `0x0aca5c...b11698` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0x6d954e...2c9e58` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0x996878...c8719c` | ❓ Unverified |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | moonbeam | unit-390444 | `0x0aca5cb726c4e86045f6fbb673eaaca854b11698` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0x6d954ee9a06c6fea6fc53bfb971a1489de2c9e58` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0x9968788811688d037392c0de5e270d13a0c8719c` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -173,7 +173,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| SmartContract_Audit_Solidproof_OrbiterOne_Incentive.pdf | Incentive | own contract | 0xa5ebbf… (selected) `0xa5ebbf...36d951` — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| SmartContract_Audit_Solidproof_OrbiterOne_Incentive.pdf | Incentive | own contract | 0xa5ebbf… (selected) `0xa5ebbfe3d4391c7079fa6cd5dc230b915936d951` — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | SmartContract_Audit_Solidproof_Orbiterone.pdf | ReaderOrbiter | unmatched — not counted | — | listed in Tested Contract Files | no |
 | SmartContract_Audit_Solidproof_Orbiterone.pdf | OrbiterInterface | unmatched — not counted | — | listed in Tested Contract Files | no |
 | SmartContract_Audit_Solidproof_Orbiterone.pdf | Orbiter | unmatched — not counted | — | listed in Tested Contract Files | no |
@@ -184,7 +184,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| moonbeam | `0xaa0c24...729a13` | OrbitLottery | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonbeam | `0xaa0c247e385f2995fb0d88921470bfb450729a13` | OrbitLottery | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

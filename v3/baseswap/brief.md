@@ -57,7 +57,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x647fc2...d3cb88`, chain 8453)
+- UnnamedContract (`0x647fc2d8b7587b036a93a98d6612a9ecefd3cb88`, chain 8453)
 
 ## Contract Surface Quality
 
@@ -103,37 +103,37 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BPLPManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb5e73f...f958aa` | ⚠️ Unaudited |
-| BswapToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x78a087...a63ae9` | ⚠️ Unaudited |
-| FastPriceEvents | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xffba6f...c62c78` | ⚠️ Unaudited |
-| FastPriceFeed | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x169155...6c0641` | ⚠️ Unaudited |
-| MasterChefV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2b0a43...8d541a` | ⚠️ Unaudited |
-| MixedRouteQuoterV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xdb7971...14b772` | ⚠️ Unaudited |
-| NonfungiblePositionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x20c51b...503065` | ⚠️ Unaudited |
-| OrderBook | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb4df85...d5b688` | ⚠️ Unaudited |
-| OrderBookReader | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xd1a8d9...e89493` | ⚠️ Unaudited |
-| OrderExecutor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xa64db2...51f146` | ⚠️ Unaudited |
-| PancakeFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x6f1a2f...2a7910` | ⚠️ Unaudited |
-| PancakeRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x327df1...505d86` | ⚠️ Unaudited |
-| PositionUtils | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x3a1804...5568a7` | ⚠️ Unaudited |
-| QuoterV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2918e3...1fb13c` | ⚠️ Unaudited |
-| Reader | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x3d7cbf...b24187` | ⚠️ Unaudited |
-| ReferralReader | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xaa88ad...0020fc` | ⚠️ Unaudited |
-| ReferralStorage | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xab2b07...94ac55` | ⚠️ Unaudited |
-| RewardReader | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x67965f...7730df` | ⚠️ Unaudited |
-| Router | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x6699ca...1cd15e` | ⚠️ Unaudited |
-| ShortsTracker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x54ee88...42e2cc` | ⚠️ Unaudited |
-| SmartChefFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xc9ee54...a92989` | ⚠️ Unaudited |
-| SwapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x149638...4adf75` | ⚠️ Unaudited |
-| TickLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x49a3a5...ea2e30` | ⚠️ Unaudited |
-| UniswapV3Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x3f6533...f27781` | ⚠️ Unaudited |
-| USBS | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xda55eb...21cd57` | ⚠️ Unaudited |
-| V3Migrator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x4710b1...2a2c6a` | ⚠️ Unaudited |
-| V3PrepToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x07de05...35f089` | ⚠️ Unaudited |
-| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xd29cea...f544ae` | ⚠️ Unaudited |
-| VaultPriceFeed | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x88f1a4...a4ca3c` | ⚠️ Unaudited |
-| VaultReader | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x5c0987...0014ec` | ⚠️ Unaudited |
-| VaultUtils | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x3371da...ecbcc3` | ⚠️ Unaudited |
+| BPLPManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb5e73f436a676c649f186dfe6fcbf1bacff958aa` | ⚠️ Unaudited |
+| BswapToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x78a087d713be963bf307b18f2ff8122ef9a63ae9` | ⚠️ Unaudited |
+| FastPriceEvents | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xffba6f02ae140d8ec2fc7798b5ab60e85bc62c78` | ⚠️ Unaudited |
+| FastPriceFeed | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x1691559e2cdd440fc40997978eedd63bf76c0641` | ⚠️ Unaudited |
+| MasterChefV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2b0a43dccbd7d42c18f6a83f86d1a19fa58d541a` | ⚠️ Unaudited |
+| MixedRouteQuoterV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xdb7971adc396d7ed3953e9542a8d4baec914b772` | ⚠️ Unaudited |
+| NonfungiblePositionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x20c51b3da2e7821ef62d63a447ac9e5f8a503065` | ⚠️ Unaudited |
+| OrderBook | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb4df850b99cf6dae86c2ceca7782ac81a5d5b688` | ⚠️ Unaudited |
+| OrderBookReader | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xd1a8d93eebf7a32ad6bc1f8674082ab2f0e89493` | ⚠️ Unaudited |
+| OrderExecutor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xa64db2c205fdc3fd930dcb6e3e1f9510ca51f146` | ⚠️ Unaudited |
+| PancakeFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x6f1a2f63ea06b475edbf2e6393406058c12a7910` | ⚠️ Unaudited |
+| PancakeRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x327df1e6de05895d2ab08513aadd9313fe505d86` | ⚠️ Unaudited |
+| PositionUtils | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x3a180411a88525d872793342ba8b09ab635568a7` | ⚠️ Unaudited |
+| QuoterV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2918e366d059733fe12a2a9c18e7f6fea01fb13c` | ⚠️ Unaudited |
+| Reader | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x3d7cbf8104aea85d8c76d5eeb397441a59b24187` | ⚠️ Unaudited |
+| ReferralReader | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xaa88ad234a374989d46a854337e315bcf70020fc` | ⚠️ Unaudited |
+| ReferralStorage | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xab2b07da4710bcd8f2d610ca4420e632b994ac55` | ⚠️ Unaudited |
+| RewardReader | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x67965f5126103abbd49ba912d46bf3afb37730df` | ⚠️ Unaudited |
+| Router | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x6699ca490855082a67429b712f96a9a68a1cd15e` | ⚠️ Unaudited |
+| ShortsTracker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x54ee88d2094ecd5b1472c11a604478feda42e2cc` | ⚠️ Unaudited |
+| SmartChefFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xc9ee54147445f1c1c23f52183c95456e69a92989` | ⚠️ Unaudited |
+| SwapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x14963869592e41a2ecd7524bd213cfc3044adf75` | ⚠️ Unaudited |
+| TickLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x49a3a5cf91de1b78c43dc1add03e8a71f1ea2e30` | ⚠️ Unaudited |
+| UniswapV3Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x3f6533d37d7623bf7a396730637ce0f52bf27781` | ⚠️ Unaudited |
+| USBS | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xda55eb290d30203a0a30e0411153c4667021cd57` | ⚠️ Unaudited |
+| V3Migrator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x4710b12426270d17936ea61d8314e099062a2c6a` | ⚠️ Unaudited |
+| V3PrepToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x07de0511cb0d7af0b63a1a63b2a575b8ec35f089` | ⚠️ Unaudited |
+| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xd29ceab5e7c902806f5de29305e45b772ef544ae` | ⚠️ Unaudited |
+| VaultPriceFeed | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x88f1a478d86239f0929c984431281b8a1ca4ca3c` | ⚠️ Unaudited |
+| VaultReader | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x5c09876676bc0225d94757f78bde48708f0014ec` | ⚠️ Unaudited |
+| VaultUtils | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x3371da2b01ca2e31bb230582aede3e7cf5ecbcc3` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -153,7 +153,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-380132 | `0x647fc2...d3cb88` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-380132 | `0x647fc2d8b7587b036a93a98d6612a9ecefd3cb88` | ❓ Unverified |
 
 ## Audit Inventory
 

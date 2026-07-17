@@ -52,19 +52,19 @@ The pinned logic-topography run contains 14 contract row(s) across ethereum. Str
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- CreditLine (`0x26389b...20c6a9`, chain 1)
-- GnosisSafeProxy (`0x333333...6fb5ef`, chain 1)
-- Helper (`0x82736f...444505`, chain 1)
-- InsuranceFund (`0x4507b5...d29935`, chain 1)
-- Jane (`0x333333...0e3404`, chain 1)
-- MarkdownController (`0xf0eae7...726214`, chain 1)
-- ProtocolConfig (`0x64bc68...b70b98`, chain 1)
-- RewardsDistributor (`0xac6985...f064e8`, chain 1)
-- TimelockController (`0x1dccd4...08f8c2`, chain 1)
-- TransparentUpgradeableProxy (`0x056b26...d55ecc`, chain 1)
-- TransparentUpgradeableProxy (`0x1d434d...f9c7df`, chain 1)
-- TransparentUpgradeableProxy (`0xde6e08...b0ecbc`, chain 1)
-- TransparentUpgradeableProxy (`0xf68955...6164a7`, chain 1)
+- CreditLine (`0x26389b03298ba5da0664ffd6bf78cf3a7820c6a9`, chain 1)
+- GnosisSafeProxy (`0x33333333bd7045f1a601a1e289d7ab21036fb5ef`, chain 1)
+- Helper (`0x82736f81a56935c8429addbda4aebec737444505`, chain 1)
+- InsuranceFund (`0x4507b5b23340d248457d955a211c8b0634d29935`, chain 1)
+- Jane (`0x333333330522f64ee8d0b3039c460b41670e3404`, chain 1)
+- MarkdownController (`0xf0eae71092f3c9411a9eab8f81e7d91d29726214`, chain 1)
+- ProtocolConfig (`0x64bc68ea388e42c73747668122eee3a5bfb70b98`, chain 1)
+- RewardsDistributor (`0xac6985d4dbcd89ccad71db9bf0309eaf57f064e8`, chain 1)
+- TimelockController (`0x1dccd4628d48a50c1a7adea3848bcc869f08f8c2`, chain 1)
+- TransparentUpgradeableProxy (`0x056b269eb1f75477a8666ae8c7fe01b64dd55ecc`, chain 1)
+- TransparentUpgradeableProxy (`0x1d434d2899f81f3c3fdf52c814a6e23318f9c7df`, chain 1)
+- TransparentUpgradeableProxy (`0xde6e08ac208088cc62812ba30608d852c6b0ecbc`, chain 1)
+- TransparentUpgradeableProxy (`0xf689555121e529ff0463e191f9bd9d1e496164a7`, chain 1)
 
 ## Contract Surface Quality
 
@@ -110,44 +110,44 @@ The pinned logic-topography run contains 14 contract row(s) across ethereum. Str
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AdaptiveCurveIrm | unknown | project_anchor | own_supporting | 1 | ethereum | unit-378312 | `0x1d434d...f9c7df` | ✅ Audited |
-| CreditLine | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378302 | `0x26389b...20c6a9` | ✅ Audited |
-| Helper | periphery | project_anchor | own_supporting | 0 | ethereum | unit-378305 | `0x82736f...444505` | ✅ Audited |
-| InsuranceFund | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378304 | `0x4507b5...d29935` | ✅ Audited |
-| Jane | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378303 | `0x333333...0e3404` | ✅ Audited |
-| MarkdownController | governance | project_anchor | own_supporting | 0 | ethereum | unit-378307 | `0xf0eae7...726214` | ✅ Audited |
-| MorphoCredit | unknown | project_anchor | own_supporting | 1 | ethereum | unit-378310 | `0xde6e08...b0ecbc` | ✅ Audited |
-| ProtocolConfig | governance | project_anchor | own_supporting | 1 | ethereum | unit-378309 | 2 deployments: ethereum `0x64bc68...b70b98`; ethereum `0x6b276a...84f34e` | ✅ Audited |
-| RewardsDistributor | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-378306 | `0xac6985...f064e8` | ✅ Audited |
-| sUSD3 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-378308 | `0xf68955...6164a7` | ✅ Audited |
-| USD3 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-378311 | `0x056b26...d55ecc` | ✅ Audited |
+| AdaptiveCurveIrm | unknown | project_anchor | own_supporting | 1 | ethereum | unit-378312 | `0x1d434d2899f81f3c3fdf52c814a6e23318f9c7df` | ✅ Audited |
+| CreditLine | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378302 | `0x26389b03298ba5da0664ffd6bf78cf3a7820c6a9` | ✅ Audited |
+| Helper | periphery | project_anchor | own_supporting | 0 | ethereum | unit-378305 | `0x82736f81a56935c8429addbda4aebec737444505` | ✅ Audited |
+| InsuranceFund | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378304 | `0x4507b5b23340d248457d955a211c8b0634d29935` | ✅ Audited |
+| Jane | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378303 | `0x333333330522f64ee8d0b3039c460b41670e3404` | ✅ Audited |
+| MarkdownController | governance | project_anchor | own_supporting | 0 | ethereum | unit-378307 | `0xf0eae71092f3c9411a9eab8f81e7d91d29726214` | ✅ Audited |
+| MorphoCredit | unknown | project_anchor | own_supporting | 1 | ethereum | unit-378310 | `0xde6e08ac208088cc62812ba30608d852c6b0ecbc` | ✅ Audited |
+| ProtocolConfig | governance | project_anchor | own_supporting | 1 | ethereum | unit-378309 | 2 deployments: ethereum `0x64bc68ea388e42c73747668122eee3a5bfb70b98`; ethereum `0x6b276a2a7dd8b629adba8a06ad6573d01c84f34e` | ✅ Audited |
+| RewardsDistributor | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-378306 | `0xac6985d4dbcd89ccad71db9bf0309eaf57f064e8` | ✅ Audited |
+| sUSD3 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-378308 | `0xf689555121e529ff0463e191f9bd9d1e496164a7` | ✅ Audited |
+| USD3 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-378311 | `0x056b269eb1f75477a8666ae8c7fe01b64dd55ecc` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (22)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| StataTokenV2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xd4fa2d...8cd23e` | ⚠️ Unaudited |
-| Amplol | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x3fbb7b...03fc5a`; ethereum `0xe74ee9...f45145` | ⚠️ Unaudited |
-| Amplol | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x72d9bc...42b2e5`; ethereum `0xf7a18b...417e21` | ⚠️ Unaudited |
-| Amplol | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x749937...8635c4`; ethereum `0x79d674...3d0a37`; ethereum `0xab8e94...ae4615`; ethereum `0xb9c6ac...58f73b`; ethereum `0xf914e2...83adc6` | ⚠️ Unaudited |
-| Amplol | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x82616e...c023c4`; ethereum `0xeadf1d...7509e5` | ⚠️ Unaudited |
-| EmergencyController | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x792a14...2ea12c`; ethereum `0x84b31b...d2e051` | ⚠️ Unaudited |
-| GnosisSafeL2 | governance | project_anchor | own_supporting | 1 | ethereum | unit-378313 | `0x333333...6fb5ef` | ⚠️ Unaudited |
-| Helper | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2a66f9...f3f682` | ⚠️ Unaudited |
-| Jane | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xff031e...fd72fc` | ⚠️ Unaudited |
-| ManualStrikeSelection | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x4ef286...656b46`; ethereum `0xa7b3a9...17a9d9` | ⚠️ Unaudited |
-| MarkdownManager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfd1726...118b5d` | ⚠️ Unaudited |
-| ProtocolConfig | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xaa11ab...a9bf1e` | ⚠️ Unaudited |
-| PYTLocker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbfd433...e2e266` | ⚠️ Unaudited |
-| RewardsDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc95f8f...2f555c` | ⚠️ Unaudited |
-| RibbonThetaVaultWithSwap | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x2e96b8...efb619`; ethereum `0x4a94a0...5da126`; ethereum `0xbc8a59...6521a7` | ⚠️ Unaudited |
-| RibbonThetaVaultWithSwap | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x4c8ce0...a9944c`; ethereum `0xacd147...99fb4d` | ⚠️ Unaudited |
-| RibbonThetaVaultWithSwap | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x65809c...a803d0`; ethereum `0x8ee376...55dafb` | ⚠️ Unaudited |
-| RibbonThetaVaultWithSwap | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x73092a...6f2dc9`; ethereum `0xa235c6...147572` | ⚠️ Unaudited |
-| RibbonThetaVaultWithSwap | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x959744...41ea9f`; ethereum `0xa6f76b...45f030` | ⚠️ Unaudited |
-| TimelockController | governance | project_anchor | own_supporting | 0 | ethereum | unit-378301 | `0x1dccd4...08f8c2` | ⚠️ Unaudited |
-| TokenizedStrategy | core_logic | non_address_book | non_address_book_inventory (excluded) | 7 | ethereum | n/a | 7 deployments: ethereum `0x05367c...36a06e`; ethereum `0x492a3d...3d9f91`; ethereum `0x49ef4a...0df852`; ethereum `0x4f6694...bc0645`; ethereum `0x83872d...45f35a`; ethereum `0xbd35e3...247c2e`; ethereum `0xf733c7...3304de` | ⚠️ Unaudited |
-| VaultLifecycleWithSwap | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x4f1faf...dc19ba`; ethereum `0x8fe8d5...c0dd11` | ⚠️ Unaudited |
+| StataTokenV2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xd4fa2d31b7968e448877f69a96de69f5de8cd23e` | ⚠️ Unaudited |
+| Amplol | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x3fbb7b2f220e2b68f1ff14794543f01ed703fc5a`; ethereum `0xe74ee9c836883fcf7c0f394a2429e82d97f45145` | ⚠️ Unaudited |
+| Amplol | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x72d9bc9d8e65a690d12a92da249f3216ba42b2e5`; ethereum `0xf7a18b1ec65b8471d80218a01bd4413ad8417e21` | ⚠️ Unaudited |
+| Amplol | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x74993710931113b1d383469a25596f525a8635c4`; ethereum `0x79d674e544b27f67d584f424c9bd9ef4353d0a37`; ethereum `0xab8e9492863be96643be447fe41854bd2cae4615`; ethereum `0xb9c6ac5f80e9fcd41adca55fd98438300558f73b`; ethereum `0xf914e25ff1d83eef6a871e9293199369a283adc6` | ⚠️ Unaudited |
+| Amplol | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x82616ea8627f6d4def852fe918b2a61a2dc023c4`; ethereum `0xeadf1de23cece2109cb72517da1b7b710b7509e5` | ⚠️ Unaudited |
+| EmergencyController | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x792a1450a3d2023e2de6bb29208031dea52ea12c`; ethereum `0x84b31b84917485e221305edf590b8e3660d2e051` | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | project_anchor | own_supporting | 1 | ethereum | unit-378313 | `0x33333333bd7045f1a601a1e289d7ab21036fb5ef` | ⚠️ Unaudited |
+| Helper | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2a66f992bf227d2e50ef19edd21503c3c4f3f682` | ⚠️ Unaudited |
+| Jane | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xff031e9fcdee6207fc17e1f1fefc66d346fd72fc` | ⚠️ Unaudited |
+| ManualStrikeSelection | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x4ef28605dd3921320da832cefe72a674da656b46`; ethereum `0xa7b3a9deba8d3b49a0dd75eda34ef64f6217a9d9` | ⚠️ Unaudited |
+| MarkdownManager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfd172699e44008d1f48fd945a0421a03d8118b5d` | ⚠️ Unaudited |
+| ProtocolConfig | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xaa11ab352fd05094a2400609fb6100e755a9bf1e` | ⚠️ Unaudited |
+| PYTLocker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbfd433db118c459d8bf83ed839326a260de2e266` | ⚠️ Unaudited |
+| RewardsDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc95f8f5ff078b65125c7d00f2cc7b4ae062f555c` | ⚠️ Unaudited |
+| RibbonThetaVaultWithSwap | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x2e96b888c0f7d5362022de5f330e24dff5efb619`; ethereum `0x4a94a0743a69bee2a58c8fae7ef3881c2f5da126`; ethereum `0xbc8a59497d4e27f65f132c359cc6ccedbf6521a7` | ⚠️ Unaudited |
+| RibbonThetaVaultWithSwap | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x4c8ce0e024b8f53d5cac310c3046d82834a9944c`; ethereum `0xacd147a5bbcb7166c5bb13a9354ad7a59b99fb4d` | ⚠️ Unaudited |
+| RibbonThetaVaultWithSwap | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x65809c5dccde77ab8bb023c47e24d147eca803d0`; ethereum `0x8ee376f98d739cc8bfad13ac9165e4a22955dafb` | ⚠️ Unaudited |
+| RibbonThetaVaultWithSwap | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x73092aef9fe617ab0e8c3261593cb431a56f2dc9`; ethereum `0xa235c6d0f94bc156d2f5f98cdf4e3296a9147572` | ⚠️ Unaudited |
+| RibbonThetaVaultWithSwap | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x959744121d0a13d3c8752dd01f06417b2a41ea9f`; ethereum `0xa6f76b158300006a2612e9a39e67e893dc45f030` | ⚠️ Unaudited |
+| TimelockController | governance | project_anchor | own_supporting | 0 | ethereum | unit-378301 | `0x1dccd4628d48a50c1a7adea3848bcc869f08f8c2` | ⚠️ Unaudited |
+| TokenizedStrategy | core_logic | non_address_book | non_address_book_inventory (excluded) | 7 | ethereum | n/a | 7 deployments: ethereum `0x05367c7a76afeb7bdf7c06b479d7551d6536a06e`; ethereum `0x492a3dd7a6f4bc7ff7b2d001148e2c67b33d9f91`; ethereum `0x49ef4aef11d236a5e0879d07975fc30efd0df852`; ethereum `0x4f6694dde9dacceea069b5bbf41735c029bc0645`; ethereum `0x83872df0cbdc2408ba61123004105372ce45f35a`; ethereum `0xbd35e3bd64eed7db85162bc2a4e4f37796247c2e`; ethereum `0xf733c71a6e9c46741fbcbd0af37a1543373304de` | ⚠️ Unaudited |
+| VaultLifecycleWithSwap | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x4f1fafbfe3a3a3f66e17ba674c5c79eb0cdc19ba`; ethereum `0x8fe8d5e4eb0f60169fd5fb178595625dcec0dd11` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -167,8 +167,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x98633a...b4520b` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe12caa...48c754` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x98633af43f2bcb2a7a4b4c31d461171d7bb4520b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe12caa67886c5d07cbf429958eaaafcce448c754` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -197,10 +197,10 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
 | veridise-audit.pdf | ConstantsLib | unmatched — not counted | — | — | no |
-| veridise-audit.pdf | CreditLine | own contract | CreditLine (selected) `0x26389b...20c6a9` — deployed 2025-08-25 03:57:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| veridise-audit.pdf | CreditLine | own contract | CreditLine (selected) `0x26389b03298ba5da0664ffd6bf78cf3a7820c6a9` — deployed 2025-08-25 03:57:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | veridise-audit.pdf | ErrorsLib | unmatched — not counted | — | — | no |
 | veridise-audit.pdf | EventsLib | unmatched — not counted | — | — | no |
-| veridise-audit.pdf | Helper | own contract | Helper (selected) `0x82736f...444505` — deployed 2025-08-25 04:30:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| veridise-audit.pdf | Helper | own contract | Helper (selected) `0x82736f81a56935c8429addbda4aebec737444505` — deployed 2025-08-25 04:30:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | veridise-audit.pdf | IAaveMarket | unmatched — not counted | — | — | no |
 | veridise-audit.pdf | IMarkdownManager | unmatched — not counted | — | — | no |
 | veridise-audit.pdf | IMorpho | unmatched — not counted | — | — | no |
@@ -208,58 +208,58 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | veridise-audit.pdf | IMorphoSupplyCallback | unmatched — not counted | — | — | no |
 | veridise-audit.pdf | MarkdownManager | unmatched — not counted | — | — | no |
 | veridise-audit.pdf | Morpho | unmatched — not counted | — | — | no |
-| veridise-audit.pdf | MorphoCredit | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xde6e08...b0ecbc` — deployed 2025-08-25 03:57:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| veridise-audit.pdf | MorphoCredit | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xde6e08ac208088cc62812ba30608d852c6b0ecbc` — deployed 2025-08-25 03:57:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | veridise-audit.pdf | MorphoCreditStorageLib | unmatched — not counted | — | — | no |
 | veridise-audit.pdf | MorphoStorageLib | unmatched — not counted | — | — | no |
-| veridise-audit.pdf | ProtocolConfig | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6b276a...84f34e` — deployed 2025-08-25 03:57:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| veridise-audit.pdf | USD3 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x056b26...d55ecc` — deployed 2025-08-25 03:57:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| veridise-audit.pdf | sUSD3 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf68955...6164a7` — deployed 2025-08-25 03:57:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| sherlock-audit.pdf | AdaptiveCurveIrm | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x1d434d...f9c7df` — deployed 2025-08-25 03:57:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| veridise-audit.pdf | ProtocolConfig | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6b276a2a7dd8b629adba8a06ad6573d01c84f34e` — deployed 2025-08-25 03:57:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| veridise-audit.pdf | USD3 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x056b269eb1f75477a8666ae8c7fe01b64dd55ecc` — deployed 2025-08-25 03:57:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| veridise-audit.pdf | sUSD3 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf689555121e529ff0463e191f9bd9d1e496164a7` — deployed 2025-08-25 03:57:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| sherlock-audit.pdf | AdaptiveCurveIrm | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x1d434d2899f81f3c3fdf52c814a6e23318f9c7df` — deployed 2025-08-25 03:57:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | sherlock-audit.pdf | BaseStrategyUpgradeable | unmatched — not counted | — | — | no |
-| sherlock-audit.pdf | CreditLine | own contract | CreditLine (selected) `0x26389b...20c6a9` — deployed 2025-08-25 03:57:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| sherlock-audit.pdf | Helper | own contract | Helper (selected) `0x82736f...444505` — deployed 2025-08-25 04:30:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| sherlock-audit.pdf | InsuranceFund | own contract | InsuranceFund (selected) `0x4507b5...d29935` — deployed 2025-08-25 03:57:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| sherlock-audit.pdf | CreditLine | own contract | CreditLine (selected) `0x26389b03298ba5da0664ffd6bf78cf3a7820c6a9` — deployed 2025-08-25 03:57:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| sherlock-audit.pdf | Helper | own contract | Helper (selected) `0x82736f81a56935c8429addbda4aebec737444505` — deployed 2025-08-25 04:30:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| sherlock-audit.pdf | InsuranceFund | own contract | InsuranceFund (selected) `0x4507b5b23340d248457d955a211c8b0634d29935` — deployed 2025-08-25 03:57:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | sherlock-audit.pdf | MarkdownManager | unmatched — not counted | — | — | no |
-| sherlock-audit.pdf | MorphoCredit | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xde6e08...b0ecbc` — deployed 2025-08-25 03:57:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| sherlock-audit.pdf | ProtocolConfig | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6b276a...84f34e` — deployed 2025-08-25 03:57:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| sherlock-audit.pdf | USD3 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x056b26...d55ecc` — deployed 2025-08-25 03:57:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| sherlock-audit.pdf | sUSD3 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf68955...6164a7` — deployed 2025-08-25 03:57:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| electisec-audit.pdf | AdaptiveCurveIrm | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x1d434d...f9c7df` — deployed 2025-08-25 03:57:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| electisec-audit.pdf | CreditLine | own contract | CreditLine (selected) `0x26389b...20c6a9` — deployed 2025-08-25 03:57:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| electisec-audit.pdf | Helper | own contract | Helper (selected) `0x82736f...444505` — deployed 2025-08-25 04:30:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| electisec-audit.pdf | InsuranceFund | own contract | InsuranceFund (selected) `0x4507b5...d29935` — deployed 2025-08-25 03:57:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| electisec-audit.pdf | Jane | own contract | Jane (selected) `0x333333...0e3404` — deployed 2025-10-21 23:28:11+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| electisec-audit.pdf | MarkdownController | own contract | MarkdownController (selected) `0xf0eae7...726214` — deployed 2025-10-21 23:37:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| sherlock-audit.pdf | MorphoCredit | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xde6e08ac208088cc62812ba30608d852c6b0ecbc` — deployed 2025-08-25 03:57:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| sherlock-audit.pdf | ProtocolConfig | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6b276a2a7dd8b629adba8a06ad6573d01c84f34e` — deployed 2025-08-25 03:57:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| sherlock-audit.pdf | USD3 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x056b269eb1f75477a8666ae8c7fe01b64dd55ecc` — deployed 2025-08-25 03:57:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| sherlock-audit.pdf | sUSD3 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf689555121e529ff0463e191f9bd9d1e496164a7` — deployed 2025-08-25 03:57:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| electisec-audit.pdf | AdaptiveCurveIrm | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x1d434d2899f81f3c3fdf52c814a6e23318f9c7df` — deployed 2025-08-25 03:57:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| electisec-audit.pdf | CreditLine | own contract | CreditLine (selected) `0x26389b03298ba5da0664ffd6bf78cf3a7820c6a9` — deployed 2025-08-25 03:57:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| electisec-audit.pdf | Helper | own contract | Helper (selected) `0x82736f81a56935c8429addbda4aebec737444505` — deployed 2025-08-25 04:30:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| electisec-audit.pdf | InsuranceFund | own contract | InsuranceFund (selected) `0x4507b5b23340d248457d955a211c8b0634d29935` — deployed 2025-08-25 03:57:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| electisec-audit.pdf | Jane | own contract | Jane (selected) `0x333333330522f64ee8d0b3039c460b41670e3404` — deployed 2025-10-21 23:28:11+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| electisec-audit.pdf | MarkdownController | own contract | MarkdownController (selected) `0xf0eae71092f3c9411a9eab8f81e7d91d29726214` — deployed 2025-10-21 23:37:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | electisec-audit.pdf | Morpho | unmatched — not counted | — | — | no |
-| electisec-audit.pdf | MorphoCredit | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xde6e08...b0ecbc` — deployed 2025-08-25 03:57:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| electisec-audit.pdf | MorphoCredit | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xde6e08ac208088cc62812ba30608d852c6b0ecbc` — deployed 2025-08-25 03:57:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | electisec-audit.pdf | PYTLocker | unmatched — not counted | — | — | no |
-| electisec-audit.pdf | ProtocolConfig | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6b276a...84f34e` — deployed 2025-08-25 03:57:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| electisec-audit.pdf | RewardsDistributor | own contract | RewardsDistributor (selected) `0xac6985...f064e8` — deployed 2025-10-21 23:33:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| electisec-audit.pdf | USD3 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x056b26...d55ecc` — deployed 2025-08-25 03:57:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| electisec-audit.pdf | sUSD3 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf68955...6164a7` — deployed 2025-08-25 03:57:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| sherlock-2-audit.pdf | AdaptiveCurveIrm | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x1d434d...f9c7df` — deployed 2025-08-25 03:57:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| electisec-audit.pdf | ProtocolConfig | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6b276a2a7dd8b629adba8a06ad6573d01c84f34e` — deployed 2025-08-25 03:57:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| electisec-audit.pdf | RewardsDistributor | own contract | RewardsDistributor (selected) `0xac6985d4dbcd89ccad71db9bf0309eaf57f064e8` — deployed 2025-10-21 23:33:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| electisec-audit.pdf | USD3 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x056b269eb1f75477a8666ae8c7fe01b64dd55ecc` — deployed 2025-08-25 03:57:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| electisec-audit.pdf | sUSD3 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf689555121e529ff0463e191f9bd9d1e496164a7` — deployed 2025-08-25 03:57:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| sherlock-2-audit.pdf | AdaptiveCurveIrm | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x1d434d2899f81f3c3fdf52c814a6e23318f9c7df` — deployed 2025-08-25 03:57:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | sherlock-2-audit.pdf | BaseStrategyUpgradeable | unmatched — not counted | — | — | no |
-| sherlock-2-audit.pdf | CreditLine | own contract | CreditLine (selected) `0x26389b...20c6a9` — deployed 2025-08-25 03:57:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| sherlock-2-audit.pdf | Helper | own contract | Helper (selected) `0x82736f...444505` — deployed 2025-08-25 04:30:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| sherlock-2-audit.pdf | CreditLine | own contract | CreditLine (selected) `0x26389b03298ba5da0664ffd6bf78cf3a7820c6a9` — deployed 2025-08-25 03:57:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| sherlock-2-audit.pdf | Helper | own contract | Helper (selected) `0x82736f81a56935c8429addbda4aebec737444505` — deployed 2025-08-25 04:30:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | sherlock-2-audit.pdf | IProtocolConfig | unmatched — not counted | — | — | no |
 | sherlock-2-audit.pdf | ISUSD3 | unmatched — not counted | — | — | no |
-| sherlock-2-audit.pdf | InsuranceFund | own contract | InsuranceFund (selected) `0x4507b5...d29935` — deployed 2025-08-25 03:57:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| sherlock-2-audit.pdf | Jane | own contract | Jane (selected) `0x333333...0e3404` — deployed 2025-10-21 23:28:11+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| sherlock-2-audit.pdf | MarkdownController | own contract | MarkdownController (selected) `0xf0eae7...726214` — deployed 2025-10-21 23:37:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| sherlock-2-audit.pdf | InsuranceFund | own contract | InsuranceFund (selected) `0x4507b5b23340d248457d955a211c8b0634d29935` — deployed 2025-08-25 03:57:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| sherlock-2-audit.pdf | Jane | own contract | Jane (selected) `0x333333330522f64ee8d0b3039c460b41670e3404` — deployed 2025-10-21 23:28:11+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| sherlock-2-audit.pdf | MarkdownController | own contract | MarkdownController (selected) `0xf0eae71092f3c9411a9eab8f81e7d91d29726214` — deployed 2025-10-21 23:37:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | sherlock-2-audit.pdf | Morpho | unmatched — not counted | — | — | no |
-| sherlock-2-audit.pdf | MorphoCredit | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xde6e08...b0ecbc` — deployed 2025-08-25 03:57:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| sherlock-2-audit.pdf | MorphoCredit | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xde6e08ac208088cc62812ba30608d852c6b0ecbc` — deployed 2025-08-25 03:57:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | sherlock-2-audit.pdf | MorphoCreditLib | unmatched — not counted | — | — | no |
 | sherlock-2-audit.pdf | MorphoCreditStorageLib | unmatched — not counted | — | — | no |
 | sherlock-2-audit.pdf | MorphoStorageLib | unmatched — not counted | — | — | no |
 | sherlock-2-audit.pdf | PYTLocker | unmatched — not counted | — | — | no |
-| sherlock-2-audit.pdf | ProtocolConfig | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6b276a...84f34e` — deployed 2025-08-25 03:57:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| sherlock-2-audit.pdf | ProtocolConfig | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6b276a2a7dd8b629adba8a06ad6573d01c84f34e` — deployed 2025-08-25 03:57:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | sherlock-2-audit.pdf | ProtocolConfigLib | unmatched — not counted | — | — | no |
-| sherlock-2-audit.pdf | RewardsDistributor | own contract | RewardsDistributor (selected) `0xac6985...f064e8` — deployed 2025-10-21 23:33:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| sherlock-2-audit.pdf | USD3 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x056b26...d55ecc` — deployed 2025-08-25 03:57:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| sherlock-2-audit.pdf | sUSD3 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf68955...6164a7` — deployed 2025-08-25 03:57:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| sherlock-2-audit.pdf | RewardsDistributor | own contract | RewardsDistributor (selected) `0xac6985d4dbcd89ccad71db9bf0309eaf57f064e8` — deployed 2025-10-21 23:33:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| sherlock-2-audit.pdf | USD3 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x056b269eb1f75477a8666ae8c7fe01b64dd55ecc` — deployed 2025-08-25 03:57:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| sherlock-2-audit.pdf | sUSD3 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf689555121e529ff0463e191f9bd9d1e496164a7` — deployed 2025-08-25 03:57:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | electisec-audit | ProtocolConfigLib | unmatched — not counted | — | listed in Audit Scope section | no |
-| electisec-audit | USD3 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x056b26...d55ecc` — deployed 2025-08-25 03:57:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| electisec-audit | sUSD3 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf68955...6164a7` — deployed 2025-08-25 03:57:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| electisec-audit | USD3 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x056b269eb1f75477a8666ae8c7fe01b64dd55ecc` — deployed 2025-08-25 03:57:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| electisec-audit | sUSD3 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf689555121e529ff0463e191f9bd9d1e496164a7` — deployed 2025-08-25 03:57:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | electisec-audit | BaseHooksUpgradeable | unmatched — not counted | — | listed in Audit Scope section | no |
 
 ## Coverage Gaps

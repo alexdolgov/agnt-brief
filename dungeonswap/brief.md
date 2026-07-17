@@ -62,8 +62,8 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| DNDToken | token | bsc | n/a | [`0x14c358...7af034`](./contracts/bsc-56/0x14c358b573a4ce45364a3dbd84bbb4dae87af034/) | ⚠️ Unaudited |
-| DungeonMaster | unknown | bsc | n/a | [`0x3720f1...2d321f`](./contracts/bsc-56/0x3720f1f9a02bfb4dd6afb9030eb826b4392d321f/) | ⚠️ Unaudited |
+| DNDToken | token | bsc | n/a | [`0x14c358b573a4ce45364a3dbd84bbb4dae87af034`](./contracts/bsc-56/0x14c358b573a4ce45364a3dbd84bbb4dae87af034/) | ⚠️ Unaudited |
+| DungeonMaster | unknown | bsc | n/a | [`0x3720f1f9a02bfb4dd6afb9030eb826b4392d321f`](./contracts/bsc-56/0x3720f1f9a02bfb4dd6afb9030eb826b4392d321f/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -83,7 +83,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0x0eaa1d...24f554` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x0eaa1d7ddf52b5fd68e48ba933fe0f873b24f554` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -97,8 +97,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x14c358...7af034`](./contracts/bsc-56/0x14c358b573a4ce45364a3dbd84bbb4dae87af034/) | DNDToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x3720f1...2d321f`](./contracts/bsc-56/0x3720f1f9a02bfb4dd6afb9030eb826b4392d321f/) | DungeonMaster | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x14c358b573a4ce45364a3dbd84bbb4dae87af034`](./contracts/bsc-56/0x14c358b573a4ce45364a3dbd84bbb4dae87af034/) | DNDToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x3720f1f9a02bfb4dd6afb9030eb826b4392d321f`](./contracts/bsc-56/0x3720f1f9a02bfb4dd6afb9030eb826b4392d321f/) | DungeonMaster | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

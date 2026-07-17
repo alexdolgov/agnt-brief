@@ -52,23 +52,23 @@ The pinned logic-topography run contains 21 contract row(s) across base. Structu
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x1441cb...b07d27`, chain 8453)
-- UnnamedContract (`0x56df15...329e01`, chain 8453)
-- UnnamedContract (`0x5ed50f...ee106d`, chain 8453)
-- UnnamedContract (`0xd54b64...36590c`, chain 8453)
-- AeroGaugePlugin (`0x25a7e6...89f040`, chain 8453)
-- AeroPairPlugin (`0xd1ca9d...3ed715`, chain 8453)
-- AeroPairPlugin (`0xef0487...2755bd`, chain 8453)
-- Multicall (`0xda81a3...aae82f`, chain 8453)
-- OTOKEN (`0xbe1053...9a2b79`, chain 8453)
-- ScaleGaugePlugin (`0xf19a7b...5290b8`, chain 8453)
-- TOKEN (`0x58dd17...79e9b9`, chain 8453)
-- TOKENFees (`0x8d05ef...ecd6c1`, chain 8453)
-- TOKENGovernor (`0x46e77d...8c64b4`, chain 8453)
-- VelociGaugePluginFactory (`0xc40215...fc8abf`, chain 8453)
-- Voter (`0x756fc5...492452`, chain 8453)
-- VTOKEN (`0x60c087...b11515`, chain 8453)
-- VTOKENRewarder (`0xdd3e79...1de558`, chain 8453)
+- UnnamedContract (`0x1441cba5a9df12f157c362ca0c8eed50c2b07d27`, chain 8453)
+- UnnamedContract (`0x56df157dec576cc2596257fb17115a7ea0329e01`, chain 8453)
+- UnnamedContract (`0x5ed50fbb15d047b2b6bc0e6fade25a3b1eee106d`, chain 8453)
+- UnnamedContract (`0xd54b64a096b785d19cff3f19061509230736590c`, chain 8453)
+- AeroGaugePlugin (`0x25a7e6a89f06ef3f90b844f69f1f0b63d389f040`, chain 8453)
+- AeroPairPlugin (`0xd1ca9d78005b5a891c8a6bd8408ed308b33ed715`, chain 8453)
+- AeroPairPlugin (`0xef04879d23e4113bbc32898436241b7e382755bd`, chain 8453)
+- Multicall (`0xda81a398787f57810f1225db3a6dc12635aae82f`, chain 8453)
+- OTOKEN (`0xbe1053ec4ac137c9a5b4462d53d5c2c0b89a2b79`, chain 8453)
+- ScaleGaugePlugin (`0xf19a7b64809dc969b173f40d3f8c6734935290b8`, chain 8453)
+- TOKEN (`0x58dd173f30ecffdfebcd242c71241fb2f179e9b9`, chain 8453)
+- TOKENFees (`0x8d05ef8093a746101cee1a0578edd277f3ecd6c1`, chain 8453)
+- TOKENGovernor (`0x46e77d8349ba8ae9137b89196a61ffee2c8c64b4`, chain 8453)
+- VelociGaugePluginFactory (`0xc40215fedcc1475b5d767c4ebc7085501ffc8abf`, chain 8453)
+- Voter (`0x756fc5e6bdb26a85594346d7d0520e1c0e492452`, chain 8453)
+- VTOKEN (`0x60c08737877a5262bdb1c1cac8fb90b5e5b11515`, chain 8453)
+- VTOKENRewarder (`0xdd3e797522e15c3ede6ed468738cba754e1de558`, chain 8453)
 
 ## Contract Surface Quality
 
@@ -113,34 +113,34 @@ The pinned logic-topography run contains 21 contract row(s) across base. Structu
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BribeFactory | unknown | project_anchor | own_supporting | 0 | base | unit-258862 | `0x971441...64c0fd` | ✅ Audited |
-| GaugeFactory | unknown | project_anchor | own_supporting | 0 | base | unit-258870 | `0xe23e1a...36a5a5` | ✅ Audited |
-| Minter | unknown | project_anchor | own_supporting | 0 | base | unit-258875 | `0xf49222...162576` | ✅ Audited |
-| OTOKEN | token | project_anchor | own_supporting | 0 | base | unit-258864 | `0xbe1053...9a2b79` | ✅ Audited |
-| TOKENFees | token | project_anchor | own_supporting | 0 | base | unit-258861 | `0x8d05ef...ecd6c1` | ✅ Audited |
-| Voter | unknown | project_anchor | own_supporting | 0 | base | unit-258860 | `0x756fc5...492452` | ✅ Audited |
-| VTOKEN | token | project_anchor | own_supporting | 0 | base | unit-258859 | `0x60c087...b11515` | ✅ Audited |
+| BribeFactory | unknown | project_anchor | own_supporting | 0 | base | unit-258862 | `0x9714412e8838337e60c8f7b4c2bc49247964c0fd` | ✅ Audited |
+| GaugeFactory | unknown | project_anchor | own_supporting | 0 | base | unit-258870 | `0xe23e1a116090a0829b7ab536a3af463a5a36a5a5` | ✅ Audited |
+| Minter | unknown | project_anchor | own_supporting | 0 | base | unit-258875 | `0xf49222fccba2c149b3ff3ae9d3a30edb1f162576` | ✅ Audited |
+| OTOKEN | token | project_anchor | own_supporting | 0 | base | unit-258864 | `0xbe1053ec4ac137c9a5b4462d53d5c2c0b89a2b79` | ✅ Audited |
+| TOKENFees | token | project_anchor | own_supporting | 0 | base | unit-258861 | `0x8d05ef8093a746101cee1a0578edd277f3ecd6c1` | ✅ Audited |
+| Voter | unknown | project_anchor | own_supporting | 0 | base | unit-258860 | `0x756fc5e6bdb26a85594346d7d0520e1c0e492452` | ✅ Audited |
+| VTOKEN | token | project_anchor | own_supporting | 0 | base | unit-258859 | `0x60c08737877a5262bdb1c1cac8fb90b5e5b11515` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (16)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AeroGaugePlugin | operational_periphery | project_anchor | own_supporting | 0 | base | unit-258853 | `0x25a7e6...89f040` | ⚠️ Unaudited |
-| AeroGaugePluginFactory | unknown | project_anchor | own_supporting | 0 | base | unit-258863 | `0x9fc663...7ff6ed` | ⚠️ Unaudited |
-| AeroPairPlugin | unknown | project_anchor | own_supporting | 0 | base | unit-258866 | `0xd1ca9d...3ed715` | ⚠️ Unaudited |
-| AeroPairPlugin | unknown | project_anchor | own_supporting | 0 | base | unit-258873 | `0xef0487...2755bd` | ⚠️ Unaudited |
-| AeroPairPluginFactory | unknown | project_anchor | own_supporting | 0 | base | unit-258871 | `0xeac050...eb0448` | ⚠️ Unaudited |
-| Controller | unknown | project_anchor | own_supporting | 0 | base | unit-258852 | `0x1eeb34...d4904e` | ⚠️ Unaudited |
-| MerkleClaim | unknown | project_anchor | own_supporting | 0 | base | unit-258857 | `0x5d8218...a037e1` | ⚠️ Unaudited |
-| Multicall | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x3bb30c...f0947e`; base `0x752de9...facc71` | ⚠️ Unaudited |
-| Multicall | unknown | project_anchor | own_supporting | 0 | base | unit-258868 | `0xda81a3...aae82f` | ⚠️ Unaudited |
-| ScaleGaugePlugin | operational_periphery | project_anchor | own_supporting | 0 | base | unit-258874 | `0xf19a7b...5290b8` | ⚠️ Unaudited |
-| ScaleGaugePluginFactory | unknown | project_anchor | own_supporting | 0 | base | unit-258872 | `0xece72a...71e22e` | ⚠️ Unaudited |
-| TOKEN | token | project_anchor | own_supporting | 0 | base | unit-258856 | `0x58dd17...79e9b9` | ⚠️ Unaudited |
-| TOKENGovernor | unknown | project_anchor | own_supporting | 0 | base | unit-258854 | `0x46e77d...8c64b4` | ⚠️ Unaudited |
-| VelociGaugePluginFactory | unknown | project_anchor | own_supporting | 0 | base | unit-258865 | `0xc40215...fc8abf` | ⚠️ Unaudited |
-| VelociGrapheneGaugePluginFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xed8b18...ef23a3` | ⚠️ Unaudited |
-| VTOKENRewarder | token | project_anchor | own_supporting | 0 | base | unit-258869 | `0xdd3e79...1de558` | ⚠️ Unaudited |
+| AeroGaugePlugin | operational_periphery | project_anchor | own_supporting | 0 | base | unit-258853 | `0x25a7e6a89f06ef3f90b844f69f1f0b63d389f040` | ⚠️ Unaudited |
+| AeroGaugePluginFactory | unknown | project_anchor | own_supporting | 0 | base | unit-258863 | `0x9fc66381ea664f6aea4bd516091ebbe1d27ff6ed` | ⚠️ Unaudited |
+| AeroPairPlugin | unknown | project_anchor | own_supporting | 0 | base | unit-258866 | `0xd1ca9d78005b5a891c8a6bd8408ed308b33ed715` | ⚠️ Unaudited |
+| AeroPairPlugin | unknown | project_anchor | own_supporting | 0 | base | unit-258873 | `0xef04879d23e4113bbc32898436241b7e382755bd` | ⚠️ Unaudited |
+| AeroPairPluginFactory | unknown | project_anchor | own_supporting | 0 | base | unit-258871 | `0xeac05094887c6548f3054fc121c57844c2eb0448` | ⚠️ Unaudited |
+| Controller | unknown | project_anchor | own_supporting | 0 | base | unit-258852 | `0x1eeb34b653d396cdc60a9c434c09e1803dd4904e` | ⚠️ Unaudited |
+| MerkleClaim | unknown | project_anchor | own_supporting | 0 | base | unit-258857 | `0x5d82183db96e55a5f2caee691728584cd4a037e1` | ⚠️ Unaudited |
+| Multicall | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x3bb30ca0bf95d6a2fc8ad9087bac92711bf0947e`; base `0x752de9d1b6f8796d214d2a24a6f6f55ee9facc71` | ⚠️ Unaudited |
+| Multicall | unknown | project_anchor | own_supporting | 0 | base | unit-258868 | `0xda81a398787f57810f1225db3a6dc12635aae82f` | ⚠️ Unaudited |
+| ScaleGaugePlugin | operational_periphery | project_anchor | own_supporting | 0 | base | unit-258874 | `0xf19a7b64809dc969b173f40d3f8c6734935290b8` | ⚠️ Unaudited |
+| ScaleGaugePluginFactory | unknown | project_anchor | own_supporting | 0 | base | unit-258872 | `0xece72a27bbd6e667672ac226a26eaf3e2f71e22e` | ⚠️ Unaudited |
+| TOKEN | token | project_anchor | own_supporting | 0 | base | unit-258856 | `0x58dd173f30ecffdfebcd242c71241fb2f179e9b9` | ⚠️ Unaudited |
+| TOKENGovernor | unknown | project_anchor | own_supporting | 0 | base | unit-258854 | `0x46e77d8349ba8ae9137b89196a61ffee2c8c64b4` | ⚠️ Unaudited |
+| VelociGaugePluginFactory | unknown | project_anchor | own_supporting | 0 | base | unit-258865 | `0xc40215fedcc1475b5d767c4ebc7085501ffc8abf` | ⚠️ Unaudited |
+| VelociGrapheneGaugePluginFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xed8b18cdef8a70227e01395c2571d72867ef23a3` | ⚠️ Unaudited |
+| VTOKENRewarder | token | project_anchor | own_supporting | 0 | base | unit-258869 | `0xdd3e797522e15c3ede6ed468738cba754e1de558` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -160,10 +160,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-258851 | `0x1441cb...b07d27` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-258855 | `0x56df15...329e01` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-258858 | `0x5ed50f...ee106d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-258867 | `0xd54b64...36590c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-258851 | `0x1441cba5a9df12f157c362ca0c8eed50c2b07d27` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-258855 | `0x56df157dec576cc2596257fb17115a7ea0329e01` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-258858 | `0x5ed50fbb15d047b2b6bc0e6fade25a3b1eee106d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-258867 | `0xd54b64a096b785d19cff3f19061509230736590c` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -186,25 +186,25 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
 | spaces/5qfDTx0sJybWgitP8x4j/uploads/nzcUOiAySnZr2UQCCpsK/PeckShield-Audit-Report-LilToken-v1.0rc (1).pdf | LilToken | unmatched — not counted | — | Target of audit, mentioned in introduction and throughout report | no |
-| spaces/5qfDTx0sJybWgitP8x4j/uploads/nzcUOiAySnZr2UQCCpsK/PeckShield-Audit-Report-LilToken-v1.0rc (1).pdf | TOKEN | ambiguous — not counted | VTOKEN (alternative) `0x60c087...b11515` — deployed 2023-11-05 08:42:05+03 — liveness: live (code_present_context)<br>TOKENFees (alternative) `0x8d05ef...ecd6c1` — deployed 2023-11-05 08:42:05+03 — liveness: live (code_present_context)<br>VTOKENRewarder (alternative) `0xdd3e79...1de558` — deployed 2023-11-05 08:42:05+03 — liveness: live (code_present_context)<br>TOKEN (alternative) `0x58dd17...79e9b9` — deployed 2023-11-05 08:42:05+03 — liveness: live (code_present_context)<br>OTOKEN (alternative) `0xbe1053...9a2b79` — deployed 2023-11-05 08:42:05+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| spaces/5qfDTx0sJybWgitP8x4j/uploads/nzcUOiAySnZr2UQCCpsK/PeckShield-Audit-Report-LilToken-v1.0rc (1).pdf | TOKEN | ambiguous — not counted | VTOKEN (alternative) `0x60c08737877a5262bdb1c1cac8fb90b5e5b11515` — deployed 2023-11-05 08:42:05+03 — liveness: live (code_present_context)<br>TOKENFees (alternative) `0x8d05ef8093a746101cee1a0578edd277f3ecd6c1` — deployed 2023-11-05 08:42:05+03 — liveness: live (code_present_context)<br>VTOKENRewarder (alternative) `0xdd3e797522e15c3ede6ed468738cba754e1de558` — deployed 2023-11-05 08:42:05+03 — liveness: live (code_present_context)<br>TOKEN (alternative) `0x58dd173f30ecffdfebcd242c71241fb2f179e9b9` — deployed 2023-11-05 08:42:05+03 — liveness: live (code_present_context)<br>OTOKEN (alternative) `0xbe1053ec4ac137c9a5b4462d53d5c2c0b89a2b79` — deployed 2023-11-05 08:42:05+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | spaces/5qfDTx0sJybWgitP8x4j/uploads/nzcUOiAySnZr2UQCCpsK/PeckShield-Audit-Report-LilToken-v1.0rc (1).pdf | BASE | unmatched — not counted | — | Base token backing TOKEN, mentioned in bonding curve description | no |
-| spaces/5qfDTx0sJybWgitP8x4j/uploads/nzcUOiAySnZr2UQCCpsK/PeckShield-Audit-Report-LilToken-v1.0rc (1).pdf | oTOKEN | own contract | OTOKEN (selected) `0xbe1053...9a2b79` — deployed 2023-11-05 08:42:05+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| spaces/5qfDTx0sJybWgitP8x4j/uploads/nzcUOiAySnZr2UQCCpsK/PeckShield-Audit-Report-LilToken-v1.0rc (1).pdf | VTOKEN | own contract | VTOKEN (selected) `0x60c087...b11515` — deployed 2023-11-05 08:42:05+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| spaces/5qfDTx0sJybWgitP8x4j/uploads/nzcUOiAySnZr2UQCCpsK/PeckShield-Audit-Report-LilToken-v1.0rc (1).pdf | Voter | own contract | Voter (selected) `0x756fc5...492452` — deployed 2023-11-05 08:49:15+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/5qfDTx0sJybWgitP8x4j/uploads/nzcUOiAySnZr2UQCCpsK/PeckShield-Audit-Report-LilToken-v1.0rc (1).pdf | oTOKEN | own contract | OTOKEN (selected) `0xbe1053ec4ac137c9a5b4462d53d5c2c0b89a2b79` — deployed 2023-11-05 08:42:05+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/5qfDTx0sJybWgitP8x4j/uploads/nzcUOiAySnZr2UQCCpsK/PeckShield-Audit-Report-LilToken-v1.0rc (1).pdf | VTOKEN | own contract | VTOKEN (selected) `0x60c08737877a5262bdb1c1cac8fb90b5e5b11515` — deployed 2023-11-05 08:42:05+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/5qfDTx0sJybWgitP8x4j/uploads/nzcUOiAySnZr2UQCCpsK/PeckShield-Audit-Report-LilToken-v1.0rc (1).pdf | Voter | own contract | Voter (selected) `0x756fc5e6bdb26a85594346d7d0520e1c0e492452` — deployed 2023-11-05 08:49:15+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/5qfDTx0sJybWgitP8x4j/uploads/nzcUOiAySnZr2UQCCpsK/PeckShield-Audit-Report-LilToken-v1.0rc (1).pdf | Plugin | unmatched — not counted | — | Plugin contract for Gauge-Plugins, mentioned in introduction and finding PVE-001 | no |
 | spaces/5qfDTx0sJybWgitP8x4j/uploads/nzcUOiAySnZr2UQCCpsK/PeckShield-Audit-Report-LilToken-v1.0rc (1).pdf | Gauge | unmatched — not counted | — | Gauge contract, mentioned in introduction and finding PVE-005 | no |
-| spaces/5qfDTx0sJybWgitP8x4j/uploads/nzcUOiAySnZr2UQCCpsK/PeckShield-Audit-Report-LilToken-v1.0rc (1).pdf | Minter | own contract | Minter (selected) `0xf49222...162576` — deployed 2023-11-05 08:49:25+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| spaces/5qfDTx0sJybWgitP8x4j/uploads/nzcUOiAySnZr2UQCCpsK/PeckShield-Audit-Report-LilToken-v1.0rc (1).pdf | TOKENFees | own contract | TOKENFees (selected) `0x8d05ef...ecd6c1` — deployed 2023-11-05 08:42:05+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| spaces/5qfDTx0sJybWgitP8x4j/uploads/nzcUOiAySnZr2UQCCpsK/PeckShield-Audit-Report-LilToken-v1.0rc (1).pdf | FEES | own contract | TOKENFees (selected) `0x8d05ef...ecd6c1` — deployed 2023-11-05 08:42:05+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/5qfDTx0sJybWgitP8x4j/uploads/nzcUOiAySnZr2UQCCpsK/PeckShield-Audit-Report-LilToken-v1.0rc (1).pdf | Minter | own contract | Minter (selected) `0xf49222fccba2c149b3ff3ae9d3a30edb1f162576` — deployed 2023-11-05 08:49:25+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/5qfDTx0sJybWgitP8x4j/uploads/nzcUOiAySnZr2UQCCpsK/PeckShield-Audit-Report-LilToken-v1.0rc (1).pdf | TOKENFees | own contract | TOKENFees (selected) `0x8d05ef8093a746101cee1a0578edd277f3ecd6c1` — deployed 2023-11-05 08:42:05+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/5qfDTx0sJybWgitP8x4j/uploads/nzcUOiAySnZr2UQCCpsK/PeckShield-Audit-Report-LilToken-v1.0rc (1).pdf | FEES | own contract | TOKENFees (selected) `0x8d05ef8093a746101cee1a0578edd277f3ecd6c1` — deployed 2023-11-05 08:42:05+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/5qfDTx0sJybWgitP8x4j/uploads/0dGTom7KMTseCGo56Xg0/ZokyoAudit.pdf | CantodexPairPlugin | unmatched — not counted | — | listed in scope | no |
 | spaces/5qfDTx0sJybWgitP8x4j/uploads/0dGTom7KMTseCGo56Xg0/ZokyoAudit.pdf | FortePairPlugin | unmatched — not counted | — | listed in scope | no |
 | spaces/5qfDTx0sJybWgitP8x4j/uploads/0dGTom7KMTseCGo56Xg0/ZokyoAudit.pdf | VelocimeterPairPlugin | unmatched — not counted | — | listed in scope | no |
-| spaces/5qfDTx0sJybWgitP8x4j/uploads/0dGTom7KMTseCGo56Xg0/ZokyoAudit.pdf | BribeFactory | own contract | BribeFactory (selected) `0x971441...64c0fd` — deployed 2023-11-05 08:44:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| spaces/5qfDTx0sJybWgitP8x4j/uploads/0dGTom7KMTseCGo56Xg0/ZokyoAudit.pdf | GaugeFactory | own contract | GaugeFactory (selected) `0xe23e1a...36a5a5` — deployed 2023-11-05 08:44:37+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| spaces/5qfDTx0sJybWgitP8x4j/uploads/0dGTom7KMTseCGo56Xg0/ZokyoAudit.pdf | Minter | own contract | Minter (selected) `0xf49222...162576` — deployed 2023-11-05 08:49:25+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/5qfDTx0sJybWgitP8x4j/uploads/0dGTom7KMTseCGo56Xg0/ZokyoAudit.pdf | BribeFactory | own contract | BribeFactory (selected) `0x9714412e8838337e60c8f7b4c2bc49247964c0fd` — deployed 2023-11-05 08:44:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/5qfDTx0sJybWgitP8x4j/uploads/0dGTom7KMTseCGo56Xg0/ZokyoAudit.pdf | GaugeFactory | own contract | GaugeFactory (selected) `0xe23e1a116090a0829b7ab536a3af463a5a36a5a5` — deployed 2023-11-05 08:44:37+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/5qfDTx0sJybWgitP8x4j/uploads/0dGTom7KMTseCGo56Xg0/ZokyoAudit.pdf | Minter | own contract | Minter (selected) `0xf49222fccba2c149b3ff3ae9d3a30edb1f162576` — deployed 2023-11-05 08:49:25+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/5qfDTx0sJybWgitP8x4j/uploads/0dGTom7KMTseCGo56Xg0/ZokyoAudit.pdf | oSOUL | unmatched — not counted | — | listed in scope | no |
 | spaces/5qfDTx0sJybWgitP8x4j/uploads/0dGTom7KMTseCGo56Xg0/ZokyoAudit.pdf | SOUL | unmatched — not counted | — | listed in scope | no |
-| spaces/5qfDTx0sJybWgitP8x4j/uploads/0dGTom7KMTseCGo56Xg0/ZokyoAudit.pdf | Voter | own contract | Voter (selected) `0x756fc5...492452` — deployed 2023-11-05 08:49:15+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/5qfDTx0sJybWgitP8x4j/uploads/0dGTom7KMTseCGo56Xg0/ZokyoAudit.pdf | Voter | own contract | Voter (selected) `0x756fc5e6bdb26a85594346d7d0520e1c0e492452` — deployed 2023-11-05 08:49:15+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/5qfDTx0sJybWgitP8x4j/uploads/0dGTom7KMTseCGo56Xg0/ZokyoAudit.pdf | vSOUL | unmatched — not counted | — | listed in scope | no |
 
 ## Coverage Gaps
@@ -213,19 +213,19 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | `0x25a7e6...89f040` | AeroGaugePlugin | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x9fc663...7ff6ed` | AeroGaugePluginFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xd1ca9d...3ed715` | AeroPairPlugin | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xef0487...2755bd` | AeroPairPlugin | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xeac050...eb0448` | AeroPairPluginFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x1eeb34...d4904e` | Controller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x5d8218...a037e1` | MerkleClaim | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xf19a7b...5290b8` | ScaleGaugePlugin | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xece72a...71e22e` | ScaleGaugePluginFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x58dd17...79e9b9` | TOKEN | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x46e77d...8c64b4` | TOKENGovernor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xc40215...fc8abf` | VelociGaugePluginFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xdd3e79...1de558` | VTOKENRewarder | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x25a7e6a89f06ef3f90b844f69f1f0b63d389f040` | AeroGaugePlugin | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x9fc66381ea664f6aea4bd516091ebbe1d27ff6ed` | AeroGaugePluginFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xd1ca9d78005b5a891c8a6bd8408ed308b33ed715` | AeroPairPlugin | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xef04879d23e4113bbc32898436241b7e382755bd` | AeroPairPlugin | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xeac05094887c6548f3054fc121c57844c2eb0448` | AeroPairPluginFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x1eeb34b653d396cdc60a9c434c09e1803dd4904e` | Controller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x5d82183db96e55a5f2caee691728584cd4a037e1` | MerkleClaim | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xf19a7b64809dc969b173f40d3f8c6734935290b8` | ScaleGaugePlugin | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xece72a27bbd6e667672ac226a26eaf3e2f71e22e` | ScaleGaugePluginFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x58dd173f30ecffdfebcd242c71241fb2f179e9b9` | TOKEN | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x46e77d8349ba8ae9137b89196a61ffee2c8c64b4` | TOKENGovernor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xc40215fedcc1475b5d767c4ebc7085501ffc8abf` | VelociGaugePluginFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xdd3e797522e15c3ede6ed468738cba754e1de558` | VTOKENRewarder | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

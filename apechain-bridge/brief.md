@@ -64,22 +64,22 @@ The protocol comprises 7 functional families. Its contracts share 2 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| SimpleToken | token | ethereum | n/a | [`0x4d2244...594381`](./contracts/ethereum-1/0x4d224452801aced8b2f0aebe155379bb5d594381/) | ⚠️ Unaudited |
-| ApeCoinStakedVoting | unknown | ethereum | n/a | [`0x0187ae...e96e71`](./contracts/ethereum-1/0x0187ae64e905b4fe7dd1568a5642fbef05e96e71/) | ⚠️ Unaudited |
-| ApeCoinStaking | unknown | ethereum | n/a | [`0x5954ab...2afbb9`](./contracts/ethereum-1/0x5954ab967bc958940b7eb73ee84797dc8a2afbb9/) | ⚠️ Unaudited |
-| ApeETH | unknown | ethereum | n/a | [`0xcf800f...f70438`](./contracts/ethereum-1/0xcf800f4948d16f23333508191b1b1591daf70438/) | ⚠️ Unaudited |
-| ApeUSD | unknown | ethereum | n/a | [`0xa2235d...3fbef4`](./contracts/ethereum-1/0xa2235d059f80e176d931ef76b6c51953eb3fbef4/) | ⚠️ Unaudited |
-| ERC20Bridge | operational_periphery | arbitrum | n/a | [`0x6b71af...0434b8`](./contracts/arbitrum-42161/0x6b71afb4b7725227ab944c96fe018ab9dc0434b8/) | ⚠️ Unaudited |
-| ERC20Inbox | token | arbitrum | n/a | [`0x1b98e4...064d15`](./contracts/arbitrum-42161/0x1b98e4ed82ee1a91a65a38c690e2266364064d15/) | ⚠️ Unaudited |
-| ERC20Outbox | token | arbitrum | n/a | [`0x4f405b...05c2af`](./contracts/arbitrum-42161/0x4f405ba65291063d8a524c2bdf55d4e67405c2af/) | ⚠️ Unaudited |
-| L1ApeETHRouter | adapter | ethereum | n/a | [`0x6c92ce...aed0a1`](./contracts/ethereum-1/0x6c92ceeb09c83f1018d5bca81d933df3eeaed0a1/) | ⚠️ Unaudited |
-| L1Oft4626Router | adapter | ethereum | n/a | [`0xf33d21...59cb00`](./contracts/ethereum-1/0xf33d21137cd0b878f3a18cc60cd74f842c59cb00/) | ⚠️ Unaudited |
-| L1OrbitCustomGateway | unknown | arbitrum | n/a | [`0xed543d...5d0ab0`](./contracts/arbitrum-42161/0xed543da6fe33ccee50dc024b78c27959235d0ab0/) | ⚠️ Unaudited |
-| L1OrbitERC20Gateway | token | arbitrum | n/a | [`0xb603a1...b8ddb0`](./contracts/arbitrum-42161/0xb603a1c07a11945bfe4855347c88583e31b8ddb0/) | ⚠️ Unaudited |
-| L1OrbitGatewayRouter | adapter | arbitrum | n/a | [`0xd57df5...d4a700`](./contracts/arbitrum-42161/0xd57df5c2dc2d60307a74944191f2aa5b7bd4a700/) | ⚠️ Unaudited |
-| ProxyAdmin | governance | arbitrum | n/a | [`0x1e5f8f...75b507`](./contracts/arbitrum-42161/0x1e5f8ff72895aea53dd62b590da51e92dc75b507/) | ⚠️ Unaudited |
-| RollupAdminLogic | unknown | arbitrum | n/a | [`0x374de5...df259c`](./contracts/arbitrum-42161/0x374de579ae15ad59ed0519aeaf1a23f348df259c/) | ⚠️ Unaudited |
-| SequencerInbox | unknown | arbitrum | n/a | [`0xe6a92a...5e4a3c`](./contracts/arbitrum-42161/0xe6a92ae29e24c343ee66a2b3d3ecb783d65e4a3c/) | ⚠️ Unaudited |
+| SimpleToken | token | ethereum | n/a | [`0x4d224452801aced8b2f0aebe155379bb5d594381`](./contracts/ethereum-1/0x4d224452801aced8b2f0aebe155379bb5d594381/) | ⚠️ Unaudited |
+| ApeCoinStakedVoting | unknown | ethereum | n/a | [`0x0187ae64e905b4fe7dd1568a5642fbef05e96e71`](./contracts/ethereum-1/0x0187ae64e905b4fe7dd1568a5642fbef05e96e71/) | ⚠️ Unaudited |
+| ApeCoinStaking | unknown | ethereum | n/a | [`0x5954ab967bc958940b7eb73ee84797dc8a2afbb9`](./contracts/ethereum-1/0x5954ab967bc958940b7eb73ee84797dc8a2afbb9/) | ⚠️ Unaudited |
+| ApeETH | unknown | ethereum | n/a | [`0xcf800f4948d16f23333508191b1b1591daf70438`](./contracts/ethereum-1/0xcf800f4948d16f23333508191b1b1591daf70438/) | ⚠️ Unaudited |
+| ApeUSD | unknown | ethereum | n/a | [`0xa2235d059f80e176d931ef76b6c51953eb3fbef4`](./contracts/ethereum-1/0xa2235d059f80e176d931ef76b6c51953eb3fbef4/) | ⚠️ Unaudited |
+| ERC20Bridge | operational_periphery | arbitrum | n/a | [`0x6b71afb4b7725227ab944c96fe018ab9dc0434b8`](./contracts/arbitrum-42161/0x6b71afb4b7725227ab944c96fe018ab9dc0434b8/) | ⚠️ Unaudited |
+| ERC20Inbox | token | arbitrum | n/a | [`0x1b98e4ed82ee1a91a65a38c690e2266364064d15`](./contracts/arbitrum-42161/0x1b98e4ed82ee1a91a65a38c690e2266364064d15/) | ⚠️ Unaudited |
+| ERC20Outbox | token | arbitrum | n/a | [`0x4f405ba65291063d8a524c2bdf55d4e67405c2af`](./contracts/arbitrum-42161/0x4f405ba65291063d8a524c2bdf55d4e67405c2af/) | ⚠️ Unaudited |
+| L1ApeETHRouter | adapter | ethereum | n/a | [`0x6c92ceeb09c83f1018d5bca81d933df3eeaed0a1`](./contracts/ethereum-1/0x6c92ceeb09c83f1018d5bca81d933df3eeaed0a1/) | ⚠️ Unaudited |
+| L1Oft4626Router | adapter | ethereum | n/a | [`0xf33d21137cd0b878f3a18cc60cd74f842c59cb00`](./contracts/ethereum-1/0xf33d21137cd0b878f3a18cc60cd74f842c59cb00/) | ⚠️ Unaudited |
+| L1OrbitCustomGateway | unknown | arbitrum | n/a | [`0xed543da6fe33ccee50dc024b78c27959235d0ab0`](./contracts/arbitrum-42161/0xed543da6fe33ccee50dc024b78c27959235d0ab0/) | ⚠️ Unaudited |
+| L1OrbitERC20Gateway | token | arbitrum | n/a | [`0xb603a1c07a11945bfe4855347c88583e31b8ddb0`](./contracts/arbitrum-42161/0xb603a1c07a11945bfe4855347c88583e31b8ddb0/) | ⚠️ Unaudited |
+| L1OrbitGatewayRouter | adapter | arbitrum | n/a | [`0xd57df5c2dc2d60307a74944191f2aa5b7bd4a700`](./contracts/arbitrum-42161/0xd57df5c2dc2d60307a74944191f2aa5b7bd4a700/) | ⚠️ Unaudited |
+| ProxyAdmin | governance | arbitrum | n/a | [`0x1e5f8ff72895aea53dd62b590da51e92dc75b507`](./contracts/arbitrum-42161/0x1e5f8ff72895aea53dd62b590da51e92dc75b507/) | ⚠️ Unaudited |
+| RollupAdminLogic | unknown | arbitrum | n/a | [`0x374de579ae15ad59ed0519aeaf1a23f348df259c`](./contracts/arbitrum-42161/0x374de579ae15ad59ed0519aeaf1a23f348df259c/) | ⚠️ Unaudited |
+| SequencerInbox | unknown | arbitrum | n/a | [`0xe6a92ae29e24c343ee66a2b3d3ecb783d65e4a3c`](./contracts/arbitrum-42161/0xe6a92ae29e24c343ee66a2b3d3ecb783d65e4a3c/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -99,8 +99,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x27e800...47b84d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x5b61c1...ac196c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x27e800528bf4f0b1a8831c85763d20a26047b84d` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x5b61c1c63206052b852c24b36d23abe35dac196c` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -113,13 +113,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x4d2244...594381`](./contracts/ethereum-1/0x4d224452801aced8b2f0aebe155379bb5d594381/) | SimpleToken | token | $148,164,315.76 | Verified native implementation with $148,164,315.76 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0187ae...e96e71`](./contracts/ethereum-1/0x0187ae64e905b4fe7dd1568a5642fbef05e96e71/) | ApeCoinStakedVoting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x5954ab...2afbb9`](./contracts/ethereum-1/0x5954ab967bc958940b7eb73ee84797dc8a2afbb9/) | ApeCoinStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xcf800f...f70438`](./contracts/ethereum-1/0xcf800f4948d16f23333508191b1b1591daf70438/) | ApeETH | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa2235d...3fbef4`](./contracts/ethereum-1/0xa2235d059f80e176d931ef76b6c51953eb3fbef4/) | ApeUSD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6c92ce...aed0a1`](./contracts/ethereum-1/0x6c92ceeb09c83f1018d5bca81d933df3eeaed0a1/) | L1ApeETHRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xf33d21...59cb00`](./contracts/ethereum-1/0xf33d21137cd0b878f3a18cc60cd74f842c59cb00/) | L1Oft4626Router | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4d224452801aced8b2f0aebe155379bb5d594381`](./contracts/ethereum-1/0x4d224452801aced8b2f0aebe155379bb5d594381/) | SimpleToken | token | $148,164,315.76 | Verified native implementation with $148,164,315.76 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0187ae64e905b4fe7dd1568a5642fbef05e96e71`](./contracts/ethereum-1/0x0187ae64e905b4fe7dd1568a5642fbef05e96e71/) | ApeCoinStakedVoting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5954ab967bc958940b7eb73ee84797dc8a2afbb9`](./contracts/ethereum-1/0x5954ab967bc958940b7eb73ee84797dc8a2afbb9/) | ApeCoinStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xcf800f4948d16f23333508191b1b1591daf70438`](./contracts/ethereum-1/0xcf800f4948d16f23333508191b1b1591daf70438/) | ApeETH | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa2235d059f80e176d931ef76b6c51953eb3fbef4`](./contracts/ethereum-1/0xa2235d059f80e176d931ef76b6c51953eb3fbef4/) | ApeUSD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6c92ceeb09c83f1018d5bca81d933df3eeaed0a1`](./contracts/ethereum-1/0x6c92ceeb09c83f1018d5bca81d933df3eeaed0a1/) | L1ApeETHRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xf33d21137cd0b878f3a18cc60cd74f842c59cb00`](./contracts/ethereum-1/0xf33d21137cd0b878f3a18cc60cd74f842c59cb00/) | L1Oft4626Router | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

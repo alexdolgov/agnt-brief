@@ -51,37 +51,37 @@ The pinned logic-topography run contains 31 contract row(s) across arbitrum, bas
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- ETH Mainnet Admin Safe / ProxyAdmin owner (`0xb9577e...fe0da2`, chain 1)
-- L1Vault (Arbitrum) (`0x4b7b39...046be8`, chain 1)
-- L1Vault (Base) (`0x48cdad...0a60f6`, chain 1)
-- L1Vault (Linea) (`0x6224c5...6979ef`, chain 1)
-- L1Vault (Optimism) (`0x83d4b4...0ab4e0`, chain 1)
-- L1Vault (Scroll) (`0x32064a...8a36a6`, chain 1)
-- L1Vault (zkSync) (`0xdadb65...efbf76`, chain 1)
-- L1Vault and multichain rate-provider TimelockController (`0x10e563...deb869`, chain 1)
-- L1Vault ProxyAdmin (`0x2155ab...b2b2c1`, chain 1)
-- LRTConfig (`0x947cb4...d65ec7`, chain 1)
-- LRTConverter (`0x598dbc...939dfa`, chain 1)
-- LRTDepositPool (`0x036676...2d375d`, chain 1)
-- LRTOracle (`0x349a73...70020d`, chain 1)
-- LRTUnstakingVault (`0xc66830...8184ba`, chain 1)
-- LRTWithdrawalManager (`0x62de59...65ec16`, chain 1)
-- Manager TimelockController (`0x1fda02...08e674`, chain 1)
-- NodeDelegator proxy 0 (`0xfc5619...f1cb85`, chain 1)
-- NodeDelegator proxy 1 (Luganodes) (`0x395884...788946`, chain 1)
-- NodeDelegator proxy 2 (P2P) (`0x79f172...082c32`, chain 1)
-- NodeDelegator proxy 3 (`0x4c798c...712f83`, chain 1)
-- NodeDelegator proxy 4 (`0xee5470...2d53d3`, chain 1)
-- NodeDelegator proxy 5 (Allnodes/Pier2) (`0x049ea1...0fba7b`, chain 1)
-- NodeDelegator proxy 6 (Luganodes) (`0x545d69...6d3ab9`, chain 1)
-- ProxyAdmin (Admin Safe-owned) (`0x7550ea...8753fa`, chain 1)
-- ProxyAdmin (Timelock-owned) (`0xb61e0e...59dc78`, chain 1)
-- ProxyFactory (`0x673a66...41cee2`, chain 1)
-- rsETH (`0xa1290d...99e5a7`, chain 1)
-- RSETHMultiChainRateProvider (`0x078890...9d9ab6`, chain 1)
-- RSETHRateProvider (`0xf1cccb...fd2c8a`, chain 1)
-- TimelockController / ProxyAdmin owner (`0x49bd99...3135b1`, chain 1)
-- UnlockedWithdrawalsInitializer (`0xa9b1ce...b35595`, chain 1)
+- ETH Mainnet Admin Safe / ProxyAdmin owner (`0xb9577e83a6d9a6de35047aa066e3758221fe0da2`, chain 1)
+- L1Vault (Arbitrum) (`0x4b7b39793a84ab6eccda80795733480e7d046be8`, chain 1)
+- L1Vault (Base) (`0x48cdad4c3c7a2f5818dab5eb08df7db5420a60f6`, chain 1)
+- L1Vault (Linea) (`0x6224c582a0989cfecd232af28c68f446b46979ef`, chain 1)
+- L1Vault (Optimism) (`0x83d4b497dbe3bd2d42e0f3ee5ab34f83e80ab4e0`, chain 1)
+- L1Vault (Scroll) (`0x32064a427e8bdf59b14ac169d9835168328a36a6`, chain 1)
+- L1Vault (zkSync) (`0xdadb65fb1fcc3d877d774e5e2b00013fe1efbf76`, chain 1)
+- L1Vault and multichain rate-provider TimelockController (`0x10e5631320a6e7898f1b18aeade46acc81deb869`, chain 1)
+- L1Vault ProxyAdmin (`0x2155ab0b399a71df8c464dfc1b02149b53b2b2c1`, chain 1)
+- LRTConfig (`0x947cb49334e6571ccbfef1f1f1178d8469d65ec7`, chain 1)
+- LRTConverter (`0x598dbcb99711e5577ff76ef4577417197b939dfa`, chain 1)
+- LRTDepositPool (`0x036676389e48133b63a802f8635ad39e752d375d`, chain 1)
+- LRTOracle (`0x349a73444b1a310bae67ef67973022020d70020d`, chain 1)
+- LRTUnstakingVault (`0xc66830e2667bc740c0bed9a71f18b14b8c8184ba`, chain 1)
+- LRTWithdrawalManager (`0x62de59c08eb5dae4b7e6f7a8cad3006d6965ec16`, chain 1)
+- Manager TimelockController (`0x1fda02cf28f28a763d996ad5ee37b9f1b608e674`, chain 1)
+- NodeDelegator proxy 0 (`0xfc561966ceaaa09f4d6cba4add54778c2bf1cb85`, chain 1)
+- NodeDelegator proxy 1 (Luganodes) (`0x395884d1974a839702bcfcba176ac7871c788946`, chain 1)
+- NodeDelegator proxy 2 (P2P) (`0x79f17234746344e0365d40be50d8d43db9082c32`, chain 1)
+- NodeDelegator proxy 3 (`0x4c798c4653b1257d5149910523d7a6eed5712f83`, chain 1)
+- NodeDelegator proxy 4 (`0xee5470e1519972c3ea95249d60ebd064af2d53d3`, chain 1)
+- NodeDelegator proxy 5 (Allnodes/Pier2) (`0x049ea11d337f185b1aa910d98e8fbd991f0fba7b`, chain 1)
+- NodeDelegator proxy 6 (Luganodes) (`0x545d69b99759e7b670df243b882700121d6d3ab9`, chain 1)
+- ProxyAdmin (Admin Safe-owned) (`0x7550eaee86f649dc5cba74e92d3e2667b68753fa`, chain 1)
+- ProxyAdmin (Timelock-owned) (`0xb61e0e39b6d4030c36a176f576aabe44bf59dc78`, chain 1)
+- ProxyFactory (`0x673a669425457bcabeb247f56552a0fd8141cee2`, chain 1)
+- rsETH (`0xa1290d69c65a6fe4df752f95823fae25cb99e5a7`, chain 1)
+- RSETHMultiChainRateProvider (`0x0788906b19ba8f8d0e8a7015f0714df3179d9ab6`, chain 1)
+- RSETHRateProvider (`0xf1cccba5558d31628216489a1435e068b1fd2c8a`, chain 1)
+- TimelockController / ProxyAdmin owner (`0x49bd9989e31ad35b0a62c20be86335196a3135b1`, chain 1)
+- UnlockedWithdrawalsInitializer (`0xa9b1ced1839ba07c4e8aaef45bb60c8b27b35595`, chain 1)
 
 ## Contract Surface Quality
 
@@ -127,37 +127,37 @@ The pinned logic-topography run contains 31 contract row(s) across arbitrum, bas
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ETH Mainnet Admin Safe / ProxyAdmin owner | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388266 | `0xb9577e...fe0da2` | ⚠️ Unaudited |
-| L1Vault (Arbitrum) | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388248 | `0x4b7b39...046be8` | ⚠️ Unaudited |
-| L1Vault (Base) | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388246 | `0x48cdad...0a60f6` | ⚠️ Unaudited |
-| L1Vault (Linea) | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388253 | `0x6224c5...6979ef` | ⚠️ Unaudited |
-| L1Vault (Optimism) | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388258 | `0x83d4b4...0ab4e0` | ⚠️ Unaudited |
-| L1Vault (Scroll) | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388241 | `0x32064a...8a36a6` | ⚠️ Unaudited |
-| L1Vault (zkSync) | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388268 | `0xdadb65...efbf76` | ⚠️ Unaudited |
-| L1Vault and multichain rate-provider TimelockController | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388238 | `0x10e563...deb869` | ⚠️ Unaudited |
-| L1Vault ProxyAdmin | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388240 | `0x2155ab...b2b2c1` | ⚠️ Unaudited |
-| LRTConfig | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388261 | `0x947cb4...d65ec7` | ⚠️ Unaudited |
-| LRTConverter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388252 | `0x598dbc...939dfa` | ⚠️ Unaudited |
-| LRTDepositPool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388234 | `0x036676...2d375d` | ⚠️ Unaudited |
-| LRTOracle | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388243 | `0x349a73...70020d` | ⚠️ Unaudited |
-| LRTUnstakingVault | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388267 | `0xc66830...8184ba` | ⚠️ Unaudited |
-| LRTWithdrawalManager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388254 | `0x62de59...65ec16` | ⚠️ Unaudited |
-| Manager TimelockController | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388239 | `0x1fda02...08e674` | ⚠️ Unaudited |
-| NodeDelegator proxy 0 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388273 | `0xfc5619...f1cb85` | ⚠️ Unaudited |
-| NodeDelegator proxy 1 (Luganodes) | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388244 | `0x395884...788946` | ⚠️ Unaudited |
-| NodeDelegator proxy 2 (P2P) | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388257 | `0x79f172...082c32` | ⚠️ Unaudited |
-| NodeDelegator proxy 3 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388249 | `0x4c798c...712f83` | ⚠️ Unaudited |
-| NodeDelegator proxy 4 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388271 | `0xee5470...2d53d3` | ⚠️ Unaudited |
-| NodeDelegator proxy 5 (Allnodes/Pier2) | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388235 | `0x049ea1...0fba7b` | ⚠️ Unaudited |
-| NodeDelegator proxy 6 (Luganodes) | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388251 | `0x545d69...6d3ab9` | ⚠️ Unaudited |
-| ProxyAdmin (Admin Safe-owned) | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388256 | `0x7550ea...8753fa` | ⚠️ Unaudited |
-| ProxyAdmin (Timelock-owned) | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388265 | `0xb61e0e...59dc78` | ⚠️ Unaudited |
-| ProxyFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388255 | `0x673a66...41cee2` | ⚠️ Unaudited |
-| rsETH | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388263 | `0xa1290d...99e5a7` | ⚠️ Unaudited |
-| RSETHMultiChainRateProvider | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388236 | `0x078890...9d9ab6` | ⚠️ Unaudited |
-| RSETHRateProvider | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388272 | `0xf1cccb...fd2c8a` | ⚠️ Unaudited |
-| TimelockController / ProxyAdmin owner | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388247 | `0x49bd99...3135b1` | ⚠️ Unaudited |
-| UnlockedWithdrawalsInitializer | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388264 | `0xa9b1ce...b35595` | ⚠️ Unaudited |
+| ETH Mainnet Admin Safe / ProxyAdmin owner | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388266 | `0xb9577e83a6d9a6de35047aa066e3758221fe0da2` | ⚠️ Unaudited |
+| L1Vault (Arbitrum) | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388248 | `0x4b7b39793a84ab6eccda80795733480e7d046be8` | ⚠️ Unaudited |
+| L1Vault (Base) | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388246 | `0x48cdad4c3c7a2f5818dab5eb08df7db5420a60f6` | ⚠️ Unaudited |
+| L1Vault (Linea) | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388253 | `0x6224c582a0989cfecd232af28c68f446b46979ef` | ⚠️ Unaudited |
+| L1Vault (Optimism) | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388258 | `0x83d4b497dbe3bd2d42e0f3ee5ab34f83e80ab4e0` | ⚠️ Unaudited |
+| L1Vault (Scroll) | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388241 | `0x32064a427e8bdf59b14ac169d9835168328a36a6` | ⚠️ Unaudited |
+| L1Vault (zkSync) | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388268 | `0xdadb65fb1fcc3d877d774e5e2b00013fe1efbf76` | ⚠️ Unaudited |
+| L1Vault and multichain rate-provider TimelockController | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388238 | `0x10e5631320a6e7898f1b18aeade46acc81deb869` | ⚠️ Unaudited |
+| L1Vault ProxyAdmin | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388240 | `0x2155ab0b399a71df8c464dfc1b02149b53b2b2c1` | ⚠️ Unaudited |
+| LRTConfig | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388261 | `0x947cb49334e6571ccbfef1f1f1178d8469d65ec7` | ⚠️ Unaudited |
+| LRTConverter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388252 | `0x598dbcb99711e5577ff76ef4577417197b939dfa` | ⚠️ Unaudited |
+| LRTDepositPool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388234 | `0x036676389e48133b63a802f8635ad39e752d375d` | ⚠️ Unaudited |
+| LRTOracle | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388243 | `0x349a73444b1a310bae67ef67973022020d70020d` | ⚠️ Unaudited |
+| LRTUnstakingVault | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388267 | `0xc66830e2667bc740c0bed9a71f18b14b8c8184ba` | ⚠️ Unaudited |
+| LRTWithdrawalManager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388254 | `0x62de59c08eb5dae4b7e6f7a8cad3006d6965ec16` | ⚠️ Unaudited |
+| Manager TimelockController | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388239 | `0x1fda02cf28f28a763d996ad5ee37b9f1b608e674` | ⚠️ Unaudited |
+| NodeDelegator proxy 0 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388273 | `0xfc561966ceaaa09f4d6cba4add54778c2bf1cb85` | ⚠️ Unaudited |
+| NodeDelegator proxy 1 (Luganodes) | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388244 | `0x395884d1974a839702bcfcba176ac7871c788946` | ⚠️ Unaudited |
+| NodeDelegator proxy 2 (P2P) | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388257 | `0x79f17234746344e0365d40be50d8d43db9082c32` | ⚠️ Unaudited |
+| NodeDelegator proxy 3 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388249 | `0x4c798c4653b1257d5149910523d7a6eed5712f83` | ⚠️ Unaudited |
+| NodeDelegator proxy 4 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388271 | `0xee5470e1519972c3ea95249d60ebd064af2d53d3` | ⚠️ Unaudited |
+| NodeDelegator proxy 5 (Allnodes/Pier2) | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388235 | `0x049ea11d337f185b1aa910d98e8fbd991f0fba7b` | ⚠️ Unaudited |
+| NodeDelegator proxy 6 (Luganodes) | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388251 | `0x545d69b99759e7b670df243b882700121d6d3ab9` | ⚠️ Unaudited |
+| ProxyAdmin (Admin Safe-owned) | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388256 | `0x7550eaee86f649dc5cba74e92d3e2667b68753fa` | ⚠️ Unaudited |
+| ProxyAdmin (Timelock-owned) | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388265 | `0xb61e0e39b6d4030c36a176f576aabe44bf59dc78` | ⚠️ Unaudited |
+| ProxyFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388255 | `0x673a669425457bcabeb247f56552a0fd8141cee2` | ⚠️ Unaudited |
+| rsETH | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388263 | `0xa1290d69c65a6fe4df752f95823fae25cb99e5a7` | ⚠️ Unaudited |
+| RSETHMultiChainRateProvider | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388236 | `0x0788906b19ba8f8d0e8a7015f0714df3179d9ab6` | ⚠️ Unaudited |
+| RSETHRateProvider | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388272 | `0xf1cccba5558d31628216489a1435e068b1fd2c8a` | ⚠️ Unaudited |
+| TimelockController / ProxyAdmin owner | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388247 | `0x49bd9989e31ad35b0a62c20be86335196a3135b1` | ⚠️ Unaudited |
+| UnlockedWithdrawalsInitializer | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388264 | `0xa9b1ced1839ba07c4e8aaef45bb60c8b27b35595` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -177,48 +177,48 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-388237 | `0x07b96c...429473` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-388242 | `0x322f2d...c36f78` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-388245 | `0x429554...7748b3` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-388250 | `0x4e24a7...c98c62` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-388259 | `0x85d456...e98ef3` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-388260 | `0x92b4f5...e6e388` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-388262 | `0x9d2fc9...31c4ad` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-388269 | `0xdbc336...fb477c` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-388270 | `0xe80382...8374e4` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-388274 | `0x043849...1fc44d` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-388275 | `0x4186bf...56b41f` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | optimism | unit-388276 | `0x68a9ec...4e2b72` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-388294 | `0x4186bf...56b41f` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | sonic | unit-388277 | `0xd75787...5099b1` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | manta-pacific | unit-388278 | `0x4186bf...56b41f` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | x-layer | unit-388285 | `0x1b3a9a...d5a0f9` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | zksync-era | unit-388286 | `0x6be242...ab7236` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | swellchain | unit-388284 | `0xc3eacf...b09f58` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-388305 | `0x1bc711...a45993` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-17000 | unit-388279 | `0x1b132c...58386f` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-17000 | unit-388280 | `0x6aa9cb...0b5c13` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-17000 | unit-388281 | `0xa0f9f6...41557b` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-17000 | unit-388282 | `0xf8e4b7...cc1af7` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-17000 | unit-388283 | `0xf9336f...7542d5` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | mode | unit-388287 | `0x4186bf...56b41f` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | unit-388288 | `0x4186bf...56b41f` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-388289 | `0xe119d2...064a6b` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | hemi | unit-388290 | `0xc3eacf...b09f58` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | zircuit | unit-388291 | `0x4186bf...56b41f` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | zircuit | unit-388292 | `0x571405...5e8659` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | linea | unit-388301 | `0x4186bf...56b41f` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | linea | unit-388302 | `0xb999ea...2fd577` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | berachain | unit-388303 | `0x4186bf...56b41f` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | blast | unit-388304 | `0x4186bf...56b41f` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | base-sepolia | unit-388306 | `0x4ff0b2...abb61f` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | base-sepolia | unit-388307 | `0xa321d2...1bbade` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | scroll | unit-388293 | `0x65421b...781b66` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | hoodi | unit-388295 | `0x0b4ace...919a6b` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | hoodi | unit-388296 | `0x335a87...2ba371` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | hoodi | unit-388297 | `0x44167e...9bd1a8` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | hoodi | unit-388299 | `0xc11480...3cdfc5` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | hoodi | unit-388300 | `0xeb26b4...e59c0b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-388237 | `0x07b96cf1183c9bff2e43acf0e547a8c4e4429473` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-388242 | `0x322f2d4bfe8280eeb713b7c51eeba42590c36f78` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-388245 | `0x429554411c8f0aceec899100d3aaccf2707748b3` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-388250 | `0x4e24a7e8b276b8ed42124c9e09c811f3edc98c62` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-388259 | `0x85d456b2dff1fd8245387c0bfb64dfb700e98ef3` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-388260 | `0x92b4f5b9ffa1b5db3b976e89a75e87b332e6e388` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-388262 | `0x9d2fc9287e1c3a1a814382b40aab13873031c4ad` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-388269 | `0xdbc3363de051550d122d9c623cbaff441afb477c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-388270 | `0xe8038228ff1aefd007d7a22c9f08ddaadf8374e4` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-388274 | `0x043849686ee254ada46a432770e1a491491fc44d` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-388275 | `0x4186bfc76e2e237523cbc30fd220fe055156b41f` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | optimism | unit-388276 | `0x68a9ec5b93f04a60c77f486a664f283b2e4e2b72` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-388294 | `0x4186bfc76e2e237523cbc30fd220fe055156b41f` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | sonic | unit-388277 | `0xd75787ba9aba324420d522bda84c08c87e5099b1` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | manta-pacific | unit-388278 | `0x4186bfc76e2e237523cbc30fd220fe055156b41f` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | x-layer | unit-388285 | `0x1b3a9a689ba7555f9d7984d7ad4025574ed5a0f9` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | zksync-era | unit-388286 | `0x6be2425c381eb034045b527780d2bf4e21ab7236` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | swellchain | unit-388284 | `0xc3eacf0612346366db554c991d7858716db09f58` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-388305 | `0x1bc71130a0e39942a7658878169764bbd8a45993` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-17000 | unit-388279 | `0x1b132cbc40d35170d8c46614bc1c2282f458386f` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-17000 | unit-388280 | `0x6aa9cb27581f266fd17895c7fb80cf22cf0b5c13` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-17000 | unit-388281 | `0xa0f9f6d5d6ef60d80517adf3e8ab9d4e0a41557b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-17000 | unit-388282 | `0xf8e4b7b81dafd1c8642466ab1c12d37015cc1af7` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-17000 | unit-388283 | `0xf9336f42a8c5ddde48e148208687444c707542d5` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | mode | unit-388287 | `0x4186bfc76e2e237523cbc30fd220fe055156b41f` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | unit-388288 | `0x4186bfc76e2e237523cbc30fd220fe055156b41f` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-388289 | `0xe119d214a6efa7d3cf60e6e59481ede1b0064a6b` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | hemi | unit-388290 | `0xc3eacf0612346366db554c991d7858716db09f58` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | zircuit | unit-388291 | `0x4186bfc76e2e237523cbc30fd220fe055156b41f` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | zircuit | unit-388292 | `0x571405d597091e8728d8240f558bac01275e8659` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | linea | unit-388301 | `0x4186bfc76e2e237523cbc30fd220fe055156b41f` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | linea | unit-388302 | `0xb999ea589e0a1cce9153601dac2d6e203c2fd577` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | berachain | unit-388303 | `0x4186bfc76e2e237523cbc30fd220fe055156b41f` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | blast | unit-388304 | `0x4186bfc76e2e237523cbc30fd220fe055156b41f` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | base-sepolia | unit-388306 | `0x4ff0b2caefeed2906e96931ad74e265ee2abb61f` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | base-sepolia | unit-388307 | `0xa321d2a72db265c04d5c1318ed69a719681bbade` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | scroll | unit-388293 | `0x65421ba909200b81640d98b979d07487c9781b66` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | hoodi | unit-388295 | `0x0b4acef96828f28bbebc6a0e5c5c6b2c84919a6b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | hoodi | unit-388296 | `0x335a87203f39e9134fbb336e73629bf0822ba371` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | hoodi | unit-388297 | `0x44167e2db805feb0eca440f695dc0bf5679bd1a8` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | hoodi | unit-388299 | `0xc114805227947248153478a10638d8e0e93cdfc5` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | hoodi | unit-388300 | `0xeb26b4108d216e78d1ea4c136689d8c8f7e59c0b` | ❓ Unverified |
 
 ## Audit Inventory
 

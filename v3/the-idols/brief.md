@@ -52,10 +52,10 @@ The pinned logic-topography run contains 5 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- IdolMain (`0x439cac...d17094`, chain 1)
-- IdolMarketplace (`0x0dd5a3...ea29e7`, chain 1)
-- RewardsCollector (`0x7d624c...61256a`, chain 1)
-- VirtueToken (`0x9416ba...86b863`, chain 1)
+- IdolMain (`0x439cac149b935ae1d726569800972e1669d17094`, chain 1)
+- IdolMarketplace (`0x0dd5a35fe4cd65fe7928c7b923902b43d6ea29e7`, chain 1)
+- RewardsCollector (`0x7d624c34e475a2eca893d0c118527b6e2061256a`, chain 1)
+- VirtueToken (`0x9416ba76e88d873050a06e5956a3ebf10386b863`, chain 1)
 
 ## Contract Surface Quality
 
@@ -100,27 +100,27 @@ The pinned logic-topography run contains 5 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| IdolMain | unknown | project_anchor | own_supporting | 0 | ethereum | unit-258653 | `0x439cac...d17094` | ✅ Audited |
-| IdolMarketplace | unknown | project_anchor | own_supporting | 0 | ethereum | unit-258652 | `0x0dd5a3...ea29e7` | ✅ Audited |
-| VirtueToken | token | project_anchor | own_supporting | 0 | ethereum | unit-258655 | `0x9416ba...86b863` | ✅ Audited |
+| IdolMain | unknown | project_anchor | own_supporting | 0 | ethereum | unit-258653 | `0x439cac149b935ae1d726569800972e1669d17094` | ✅ Audited |
+| IdolMarketplace | unknown | project_anchor | own_supporting | 0 | ethereum | unit-258652 | `0x0dd5a35fe4cd65fe7928c7b923902b43d6ea29e7` | ✅ Audited |
+| VirtueToken | token | project_anchor | own_supporting | 0 | ethereum | unit-258655 | `0x9416ba76e88d873050a06e5956a3ebf10386b863` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (13)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| EthClaimContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6e8886...69f19a` | ⚠️ Unaudited |
-| IdolGoldlist | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6dc988...986aa5` | ⚠️ Unaudited |
-| IdolMarketplace | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x4a0ced...b76652`; ethereum `0x4ce4f4...db3bbf`; ethereum `0x523fbd...2df5e6` | ⚠️ Unaudited |
-| IdolMintContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7b4b02...3cdc5e` | ⚠️ Unaudited |
-| Lido | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xae7ab9...d7fe84` | ⚠️ Unaudited |
-| MarketplaceRefundContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x87d2ed...8b8c8b` | ⚠️ Unaudited |
-| OfferingRefundContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2e94c0...78e8ad` | ⚠️ Unaudited |
-| RewardsCollector | unknown | project_anchor | own_supporting | 0 | ethereum | unit-258654 | `0x7d624c...61256a` | ⚠️ Unaudited |
-| VirtueClaimContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5a5e20...1cd6c4` | ⚠️ Unaudited |
-| VirtueEthRewards | unknown | project_anchor | own_supporting | 0 | ethereum | unit-258656 | `0xc73b93...9b7baf` | ⚠️ Unaudited |
-| VirtueZapperContract | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x42455b...daa635` | ⚠️ Unaudited |
-| VirtuousHourAirdrop | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5fc37a...263f76` | ⚠️ Unaudited |
-| Vyper_contract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdc2431...f67022` | ⚠️ Unaudited |
+| EthClaimContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6e88861a1ff98f713753b9506638c7c49269f19a` | ⚠️ Unaudited |
+| IdolGoldlist | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6dc9886f694ba078f617c53d6330e001f6986aa5` | ⚠️ Unaudited |
+| IdolMarketplace | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x4a0cedd8abf9fc5a0187cf9faa0a2466bab76652`; ethereum `0x4ce4f4c4891876ffc0670bd9a25fcc4597db3bbf`; ethereum `0x523fbd08ead56490dbbfa008ef582e7a272df5e6` | ⚠️ Unaudited |
+| IdolMintContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7b4b02372d8e54c1c0454d97f01d85ef203cdc5e` | ⚠️ Unaudited |
+| Lido | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xae7ab96520de3a18e5e111b5eaab095312d7fe84` | ⚠️ Unaudited |
+| MarketplaceRefundContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x87d2edba911c7e2e13580af897ba77e47e8b8c8b` | ⚠️ Unaudited |
+| OfferingRefundContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2e94c074d7360dccf0d7b2891d867b734978e8ad` | ⚠️ Unaudited |
+| RewardsCollector | unknown | project_anchor | own_supporting | 0 | ethereum | unit-258654 | `0x7d624c34e475a2eca893d0c118527b6e2061256a` | ⚠️ Unaudited |
+| VirtueClaimContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5a5e20e29d000762bf33e29c0a2091d78f1cd6c4` | ⚠️ Unaudited |
+| VirtueEthRewards | unknown | project_anchor | own_supporting | 0 | ethereum | unit-258656 | `0xc73b93885f10c5eaf8cb126495bbd14d3b9b7baf` | ⚠️ Unaudited |
+| VirtueZapperContract | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x42455baefaaaa545c1cf501329d21acec1daa635` | ⚠️ Unaudited |
+| VirtuousHourAirdrop | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5fc37a6ae6dd977bebbeb2831ead35bfb7263f76` | ⚠️ Unaudited |
+| Vyper_contract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdc24316b9ae028f1497c275eb9192a3ea0f67022` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -140,10 +140,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x17d7e5...9b4eaa` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x734324...a7c677` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x815c5d...a7741e` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd272d2...47be2c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x17d7e56c3744006bc214bf11db4953d5cf9b4eaa` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7343241a210b4c13bc6d805612d2e61d4aa7c677` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x815c5d8fd4c029d611de4344582cee38ffa7741e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd272d2c89c4e7309e24799c3e030987bbd47be2c` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -165,18 +165,18 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| spaces/ba7s5jnnrOzcoSBMQAGq/uploads/Jc6W2sm0sGnJihyrsnQ6/Certik - The Idols NFT.pdf | IdolMain | own contract | IdolMain (selected) `0x439cac...d17094` — deployed 2022-03-02 03:24:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| spaces/ba7s5jnnrOzcoSBMQAGq/uploads/Jc6W2sm0sGnJihyrsnQ6/Certik - The Idols NFT.pdf | IdolMarketplace | own contract | IdolMarketplace (selected) `0x0dd5a3...ea29e7` — deployed 2022-03-15 00:12:41+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/ba7s5jnnrOzcoSBMQAGq/uploads/Jc6W2sm0sGnJihyrsnQ6/Certik - The Idols NFT.pdf | IdolMain | own contract | IdolMain (selected) `0x439cac149b935ae1d726569800972e1669d17094` — deployed 2022-03-02 03:24:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/ba7s5jnnrOzcoSBMQAGq/uploads/Jc6W2sm0sGnJihyrsnQ6/Certik - The Idols NFT.pdf | IdolMarketplace | own contract | IdolMarketplace (selected) `0x0dd5a35fe4cd65fe7928c7b923902b43d6ea29e7` — deployed 2022-03-15 00:12:41+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/ba7s5jnnrOzcoSBMQAGq/uploads/Jc6W2sm0sGnJihyrsnQ6/Certik - The Idols NFT.pdf | IdolMintContract | unmatched — not counted | — | listed in scope table | no |
 | spaces/ba7s5jnnrOzcoSBMQAGq/uploads/Jc6W2sm0sGnJihyrsnQ6/Certik - The Idols NFT.pdf | VirtueRewards | unmatched — not counted | — | listed in scope table | no |
 | spaces/ba7s5jnnrOzcoSBMQAGq/uploads/Jc6W2sm0sGnJihyrsnQ6/Certik - The Idols NFT.pdf | VirtueStaking | unmatched — not counted | — | listed in scope table | no |
-| spaces/ba7s5jnnrOzcoSBMQAGq/uploads/Jc6W2sm0sGnJihyrsnQ6/Certik - The Idols NFT.pdf | VirtueToken | own contract | VirtueToken (selected) `0x9416ba...86b863` — deployed 2022-03-02 03:28:18+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| spaces/ba7s5jnnrOzcoSBMQAGq/uploads/aHFdiiTIbOAfE09s9boc/The Idols Audit (WhiteHatDAO).pdf | idolMain | own contract | IdolMain (selected) `0x439cac...d17094` — deployed 2022-03-02 03:24:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| spaces/ba7s5jnnrOzcoSBMQAGq/uploads/aHFdiiTIbOAfE09s9boc/The Idols Audit (WhiteHatDAO).pdf | idolmarketplace | own contract | IdolMarketplace (selected) `0x0dd5a3...ea29e7` — deployed 2022-03-15 00:12:41+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/ba7s5jnnrOzcoSBMQAGq/uploads/Jc6W2sm0sGnJihyrsnQ6/Certik - The Idols NFT.pdf | VirtueToken | own contract | VirtueToken (selected) `0x9416ba76e88d873050a06e5956a3ebf10386b863` — deployed 2022-03-02 03:28:18+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/ba7s5jnnrOzcoSBMQAGq/uploads/aHFdiiTIbOAfE09s9boc/The Idols Audit (WhiteHatDAO).pdf | idolMain | own contract | IdolMain (selected) `0x439cac149b935ae1d726569800972e1669d17094` — deployed 2022-03-02 03:24:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/ba7s5jnnrOzcoSBMQAGq/uploads/aHFdiiTIbOAfE09s9boc/The Idols Audit (WhiteHatDAO).pdf | idolmarketplace | own contract | IdolMarketplace (selected) `0x0dd5a35fe4cd65fe7928c7b923902b43d6ea29e7` — deployed 2022-03-15 00:12:41+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/ba7s5jnnrOzcoSBMQAGq/uploads/aHFdiiTIbOAfE09s9boc/The Idols Audit (WhiteHatDAO).pdf | idolMintContract | unmatched — not counted | — | listed in scope table | no |
 | spaces/ba7s5jnnrOzcoSBMQAGq/uploads/aHFdiiTIbOAfE09s9boc/The Idols Audit (WhiteHatDAO).pdf | VirtueRewards | unmatched — not counted | — | listed in scope table | no |
 | spaces/ba7s5jnnrOzcoSBMQAGq/uploads/aHFdiiTIbOAfE09s9boc/The Idols Audit (WhiteHatDAO).pdf | VirtueStaking | unmatched — not counted | — | listed in scope table | no |
-| spaces/ba7s5jnnrOzcoSBMQAGq/uploads/aHFdiiTIbOAfE09s9boc/The Idols Audit (WhiteHatDAO).pdf | VirtueToken | own contract | VirtueToken (selected) `0x9416ba...86b863` — deployed 2022-03-02 03:28:18+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/ba7s5jnnrOzcoSBMQAGq/uploads/aHFdiiTIbOAfE09s9boc/The Idols Audit (WhiteHatDAO).pdf | VirtueToken | own contract | VirtueToken (selected) `0x9416ba76e88d873050a06e5956a3ebf10386b863` — deployed 2022-03-02 03:28:18+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/ba7s5jnnrOzcoSBMQAGq/uploads/aHFdiiTIbOAfE09s9boc/The Idols Audit (WhiteHatDAO).pdf | ICurvePool | unmatched — not counted | — | listed in scope table | no |
 | spaces/ba7s5jnnrOzcoSBMQAGq/uploads/aHFdiiTIbOAfE09s9boc/The Idols Audit (WhiteHatDAO).pdf | IIdolMain | unmatched — not counted | — | listed in scope table | no |
 | spaces/ba7s5jnnrOzcoSBMQAGq/uploads/aHFdiiTIbOAfE09s9boc/The Idols Audit (WhiteHatDAO).pdf | IIdolMarketplace | unmatched — not counted | — | listed in scope table | no |
@@ -188,8 +188,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x7d624c...61256a` | RewardsCollector | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xc73b93...9b7baf` | VirtueEthRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x7d624c34e475a2eca893d0c118527b6e2061256a` | RewardsCollector | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xc73b93885f10c5eaf8cb126495bbd14d3b9b7baf` | VirtueEthRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

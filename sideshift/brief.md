@@ -61,8 +61,8 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| SideShiftVault | core_logic | ethereum | n/a | [`0x380870...66bd62`](./contracts/ethereum-1/0x3808708e761b988d23ae011ed0e12674fb66bd62/) | ⚠️ Unaudited |
-| XAI | unknown | ethereum | n/a | [`0x35e78b...dbe232`](./contracts/ethereum-1/0x35e78b3982e87ecfd5b3f3265b601c046cdbe232/) | ⚠️ Unaudited |
+| SideShiftVault | core_logic | ethereum | n/a | [`0x3808708e761b988d23ae011ed0e12674fb66bd62`](./contracts/ethereum-1/0x3808708e761b988d23ae011ed0e12674fb66bd62/) | ⚠️ Unaudited |
+| XAI | unknown | ethereum | n/a | [`0x35e78b3982e87ecfd5b3f3265b601c046cdbe232`](./contracts/ethereum-1/0x35e78b3982e87ecfd5b3f3265b601c046cdbe232/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,8 +93,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x380870...66bd62`](./contracts/ethereum-1/0x3808708e761b988d23ae011ed0e12674fb66bd62/) | SideShiftVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x35e78b...dbe232`](./contracts/ethereum-1/0x35e78b3982e87ecfd5b3f3265b601c046cdbe232/) | XAI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x3808708e761b988d23ae011ed0e12674fb66bd62`](./contracts/ethereum-1/0x3808708e761b988d23ae011ed0e12674fb66bd62/) | SideShiftVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x35e78b3982e87ecfd5b3f3265b601c046cdbe232`](./contracts/ethereum-1/0x35e78b3982e87ecfd5b3f3265b601c046cdbe232/) | XAI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

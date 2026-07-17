@@ -57,9 +57,9 @@ The pinned logic-topography run contains 2 contract row(s) across base, ethereum
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x140ff2...72885b`, chain 8453)
-- UnnamedContract (`0xd61bfc...f606e8`, chain 8453)
-- SafeProxy (`0xa199f7...7852a6`, chain 8453)
+- UnnamedContract (`0x140ff23687e81ac1c80d5cdb7cc59370c872885b`, chain 8453)
+- UnnamedContract (`0xd61bfc9ca1d0d2b03a3dd74e2ab81df8e5f606e8`, chain 8453)
+- SafeProxy (`0xa199f766c46759356588ef91209aff4f8c7852a6`, chain 8453)
 
 ## Contract Surface Quality
 
@@ -105,9 +105,9 @@ The pinned logic-topography run contains 2 contract row(s) across base, ethereum
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| GnosisSafeProxy | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-255144 | `0x140ff2...72885b` | ⚠️ Unaudited |
-| SafeProxy | unknown | project_anchor | own_supporting | 0 | base | unit-255151 | `0xa199f7...7852a6` | ⚠️ Unaudited |
-| SnowblVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x21731f...77b72d` | ⚠️ Unaudited |
+| GnosisSafeProxy | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-255144 | `0x140ff23687e81ac1c80d5cdb7cc59370c872885b` | ⚠️ Unaudited |
+| SafeProxy | unknown | project_anchor | own_supporting | 0 | base | unit-255151 | `0xa199f766c46759356588ef91209aff4f8c7852a6` | ⚠️ Unaudited |
+| SnowblVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x21731f4d4250247e2a2922dfc81164017377b72d` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -127,13 +127,13 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-255145 | `0x28260d...74bf0c` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0ab60c...f33b32` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-255150 | `0x140ff2...72885b` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x28260d...74bf0c` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x7bee0f...a73dc8` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x80c7d5...cd854f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-255152 | `0xd61bfc...f606e8` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-255145 | `0x28260d9aac84809621967e72a1ee80d69d74bf0c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0ab60c56981e5010ced9d4e5539175b8d0f33b32` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-255150 | `0x140ff23687e81ac1c80d5cdb7cc59370c872885b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x28260d9aac84809621967e72a1ee80d69d74bf0c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x7bee0ff0feb49f7141cbc369c8fcbea2d5a73dc8` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x80c7d57e72b38ec56250497bca76d48a89cd854f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-255152 | `0xd61bfc9ca1d0d2b03a3dd74e2ab81df8e5f606e8` | ❓ Unverified |
 
 ## Audit Inventory
 

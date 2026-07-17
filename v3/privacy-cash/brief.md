@@ -52,14 +52,14 @@ The pinned logic-topography run contains 8 contract row(s) across base, ethereum
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xa0b869...06eb48`, chain 1)
-- UnnamedContract (`0xdac17f...831ec7`, chain 1)
-- UnnamedContract (`0x44eb99...f0a3ce`, chain 8453)
-- UnnamedContract (`0x833589...a02913`, chain 8453)
-- ERC1967Proxy (`0x77a10a...830dd0`, chain 1)
-- ERC1967Proxy (`0xc88f4d...a7527f`, chain 1)
-- ERC1967Proxy (`0x7f6737...b081ec`, chain 8453)
-- ERC1967Proxy (`0xe91dd4...5a905b`, chain 8453)
+- UnnamedContract (`0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48`, chain 1)
+- UnnamedContract (`0xdac17f958d2ee523a2206206994597c13d831ec7`, chain 1)
+- UnnamedContract (`0x44eb9939cfde7c394f1632c6890191d695f0a3ce`, chain 8453)
+- UnnamedContract (`0x833589fcd6edb6e08f4c7c32d4f71b54bda02913`, chain 8453)
+- ERC1967Proxy (`0x77a10ae3e513c2d73d73eb52212c6918c8830dd0`, chain 1)
+- ERC1967Proxy (`0xc88f4df2b6eddd6b6bdf95a0177f50c90fa7527f`, chain 1)
+- ERC1967Proxy (`0x7f673790c08ddf27c0aa6fa9526ccc8daab081ec`, chain 8453)
+- ERC1967Proxy (`0xe91dd4ab03909f5ceb87f42b4308b222995a905b`, chain 8453)
 
 ## Contract Surface Quality
 
@@ -105,12 +105,12 @@ The pinned logic-topography run contains 8 contract row(s) across base, ethereum
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ERCPool | unknown | project_anchor | own_supporting | 1 | ethereum | unit-251954 | 2 deployments: ethereum `0x803db1...583958`; ethereum `0xc88f4d...a7527f` | ⚠️ Unaudited |
-| ERCPool | unknown | project_anchor | own_supporting | 1 | base | unit-251956 | 2 deployments: base `0x6b5365...447c9a`; base `0xe91dd4...5a905b` | ⚠️ Unaudited |
-| EtherPool | unknown | project_anchor | own_supporting | 1 | ethereum | unit-251955 | 2 deployments: ethereum `0x77a10a...830dd0`; ethereum `0xec5266...f3b738` | ⚠️ Unaudited |
-| EtherPool | unknown | project_anchor | own_supporting | 1 | base | unit-251957 | 2 deployments: base `0x7f6737...b081ec`; base `0xa9cefe...99ecdd` | ⚠️ Unaudited |
-| EtherPool | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0xbcffce...982c98`; base `0xfee24c...c832a1` | ⚠️ Unaudited |
-| Verifier2 | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 6 deployments: ethereum `0x9926a4...d56313`; ethereum `0xbcffce...982c98`; ethereum `0xfee24c...c832a1`; base `0x41187a...ff7c6f`; base `0x870755...6dabd0`; base `0xe24f4c...225b7c` | ⚠️ Unaudited |
+| ERCPool | unknown | project_anchor | own_supporting | 1 | ethereum | unit-251954 | 2 deployments: ethereum `0x803db1b37e3bb94d65e42f3dc886614587583958`; ethereum `0xc88f4df2b6eddd6b6bdf95a0177f50c90fa7527f` | ⚠️ Unaudited |
+| ERCPool | unknown | project_anchor | own_supporting | 1 | base | unit-251956 | 2 deployments: base `0x6b5365cf6118bceabe41b5acff0b20e8f4447c9a`; base `0xe91dd4ab03909f5ceb87f42b4308b222995a905b` | ⚠️ Unaudited |
+| EtherPool | unknown | project_anchor | own_supporting | 1 | ethereum | unit-251955 | 2 deployments: ethereum `0x77a10ae3e513c2d73d73eb52212c6918c8830dd0`; ethereum `0xec5266c9e44631e1ba22fd6377c38130c1f3b738` | ⚠️ Unaudited |
+| EtherPool | unknown | project_anchor | own_supporting | 1 | base | unit-251957 | 2 deployments: base `0x7f673790c08ddf27c0aa6fa9526ccc8daab081ec`; base `0xa9cefead8d2f343b2c8c561e903378ede899ecdd` | ⚠️ Unaudited |
+| EtherPool | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0xbcffce41652093264d0807e2e834aff255982c98`; base `0xfee24cf58d2f74fa9b01d715e342d8462ac832a1` | ⚠️ Unaudited |
+| Verifier2 | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 6 deployments: ethereum `0x9926a40b0879b36f9586c4285f0fae597bd56313`; ethereum `0xbcffce41652093264d0807e2e834aff255982c98`; ethereum `0xfee24cf58d2f74fa9b01d715e342d8462ac832a1`; base `0x41187a79c57e9143b1f6c4aa7e16bf0e07ff7c6f`; base `0x8707551c52f390a262ad796fab8d2477d56dabd0`; base `0xe24f4c1ae704bd968fb59d470d73f6066d225b7c` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -130,15 +130,15 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1d4fe6...d3106d` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x22d850...391f77` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251949 | `0xa0b869...06eb48` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251950 | `0xdac17f...831ec7` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x045596...88d2e3` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-251951 | `0x44eb99...f0a3ce` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-251952 | `0x833589...a02913` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbb0c7f...c9013f` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xf48b36...24e9ac` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1d4fe6c99e9637460c8f9fde052165c9e5d3106d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x22d8509e7af58b1eafb311f8f76e81dc3a391f77` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251949 | `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251950 | `0xdac17f958d2ee523a2206206994597c13d831ec7` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x04559676cbdfea9f849f6207f9a7947c3288d2e3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-251951 | `0x44eb9939cfde7c394f1632c6890191d695f0a3ce` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-251952 | `0x833589fcd6edb6e08f4c7c32d4f71b54bda02913` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbb0c7f576b7bdaa8f2a119cb295076acd0c9013f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xf48b36221e4be8b385617fb24a0842068524e9ac` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -230,10 +230,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x803db1...583958` | ERCPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x6b5365...447c9a` | ERCPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x77a10a...830dd0` | EtherPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x7f6737...b081ec` | EtherPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x803db1b37e3bb94d65e42f3dc886614587583958` | ERCPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x6b5365cf6118bceabe41b5acff0b20e8f4447c9a` | ERCPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x77a10ae3e513c2d73d73eb52212c6918c8830dd0` | EtherPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x7f673790c08ddf27c0aa6fa9526ccc8daab081ec` | EtherPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

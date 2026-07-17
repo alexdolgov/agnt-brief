@@ -52,33 +52,33 @@ The pinned logic-topography run contains 20 contract row(s) across ethereum, scr
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x0d7e90...39af9b`, chain 534352)
-- UnnamedContract (`0x13fbe0...55998a`, chain 534352)
-- UnnamedContract (`0x247969...bde548`, chain 534352)
-- UnnamedContract (`0x31c994...5bbb37`, chain 534352)
-- UnnamedContract (`0x3da0bf...211695`, chain 534352)
-- UnnamedContract (`0x4c0926...a19d79`, chain 534352)
-- UnnamedContract (`0x50c7d3...cbb16a`, chain 534352)
-- UnnamedContract (`0x62597c...263bcc`, chain 534352)
-- UnnamedContract (`0x6260af...21554b`, chain 534352)
-- UnnamedContract (`0x64ccbe...067988`, chain 534352)
-- UnnamedContract (`0x65d123...e88a13`, chain 534352)
-- UnnamedContract (`0x6774bc...d8b367`, chain 534352)
-- UnnamedContract (`0x6ea73e...dacdf0`, chain 534352)
-- UnnamedContract (`0x7003e7...391cf9`, chain 534352)
-- UnnamedContract (`0x781e90...969cbc`, chain 534352)
-- UnnamedContract (`0x7ac440...a9d4fe`, chain 534352)
-- UnnamedContract (`0x7bc08e...e80582`, chain 534352)
-- UnnamedContract (`0x7f2b8c...e3e905`, chain 534352)
-- UnnamedContract (`0x8a54a2...e9866d`, chain 534352)
-- UnnamedContract (`0xa5df85...c83146`, chain 534352)
-- UnnamedContract (`0xb2b10a...04b6ff`, chain 534352)
-- UnnamedContract (`0xb94f7f...d975b6`, chain 534352)
-- UnnamedContract (`0xd8a791...b3f8f9`, chain 534352)
-- UnnamedContract (`0xe2b479...8f447a`, chain 534352)
-- UnnamedContract (`0xef27a5...ba77ac`, chain 534352)
-- UnnamedContract (`0xf0b229...2de763`, chain 534352)
-- UnnamedContract (`0xf8b137...e41fd6`, chain 534352)
+- UnnamedContract (`0x0d7e906bd9cafa154b048cfa766cc1e54e39af9b`, chain 534352)
+- UnnamedContract (`0x13fbe0d0e5552b8c9c4ae9e2435f38f37355998a`, chain 534352)
+- UnnamedContract (`0x247969f4fad93a33d4826046bc3eae0d36bde548`, chain 534352)
+- UnnamedContract (`0x31c994f2017e71b82fd4d8118f140c81215bbb37`, chain 534352)
+- UnnamedContract (`0x3da0bf44814cfc678376b3311838272158211695`, chain 534352)
+- UnnamedContract (`0x4c0926ff5252a435fd19e10ed15e5a249ba19d79`, chain 534352)
+- UnnamedContract (`0x50c7d3e7f7c656493d1d76aaa1a836cedfcbb16a`, chain 534352)
+- UnnamedContract (`0x62597cc19703af10b58fef87b0d5d29efe263bcc`, chain 534352)
+- UnnamedContract (`0x6260af48e8948617b8fa17f4e5cea2d21d21554b`, chain 534352)
+- UnnamedContract (`0x64ccbe37c9a82d85a1f2e74649b7a42923067988`, chain 534352)
+- UnnamedContract (`0x65d123d6389b900d954677c26327bfc1c3e88a13`, chain 534352)
+- UnnamedContract (`0x6774bcbd5cecef1336b5300fb5186a12ddd8b367`, chain 534352)
+- UnnamedContract (`0x6ea73e05adc79974b931123675ea8f78ffdacdf0`, chain 534352)
+- UnnamedContract (`0x7003e7b7186f0e6601203b99f7b8decbfa391cf9`, chain 534352)
+- UnnamedContract (`0x781e90f1c8fc4611c9b7497c3b47f99ef6969cbc`, chain 534352)
+- UnnamedContract (`0x7ac440cae8eb6328de4fa621163a792c1ea9d4fe`, chain 534352)
+- UnnamedContract (`0x7bc08e1c04fb41d75f1410363f0c5746eae80582`, chain 534352)
+- UnnamedContract (`0x7f2b8c31f88b6006c382775eea88297ec1e3e905`, chain 534352)
+- UnnamedContract (`0x8a54a2347da2562917304141ab67324615e9866d`, chain 534352)
+- UnnamedContract (`0xa5df8530766a85936ee3e139dece3bf081c83146`, chain 534352)
+- UnnamedContract (`0xb2b10a289a229415a124efdef310c10cb004b6ff`, chain 534352)
+- UnnamedContract (`0xb94f7f6abcb811c5ac709de14e37590fccd975b6`, chain 534352)
+- UnnamedContract (`0xd8a791fe2be73eb6e6cf1eb0cb3f36adc9b3f8f9`, chain 534352)
+- UnnamedContract (`0xe2b4795039517653c5ae8c2a9bfdd783b48f447a`, chain 534352)
+- UnnamedContract (`0xef27a5e63aa3f1b8312f744b9b4dceb910ba77ac`, chain 534352)
+- UnnamedContract (`0xf0b2293f5d834eae920c6974d50957a1732de763`, chain 534352)
+- UnnamedContract (`0xf8b1378579659d8f7ee5f3c929c2f3e332e41fd6`, chain 534352)
 
 ## Contract Surface Quality
 
@@ -125,57 +125,57 @@ The pinned logic-topography run contains 20 contract row(s) across ethereum, scr
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| L1CustomERC20Gateway | unknown | project_anchor | own_supporting | 1 | ethereum | unit-392394 | 2 deployments: ethereum `0x40c3c3...6d6c97`; ethereum `0xb2b10a...04b6ff` | ✅ Audited |
-| L1ERC1155Gateway | unknown | project_anchor | own_supporting | 1 | ethereum | unit-392398 | 2 deployments: ethereum `0xb94f7f...d975b6`; ethereum `0xca4635...ffe38e` | ✅ Audited |
-| L1ERC721Gateway | unknown | project_anchor | own_supporting | 1 | ethereum | unit-392396 | 2 deployments: ethereum `0x6260af...21554b`; ethereum `0x79f1bf...45a27a` | ✅ Audited |
-| L1ETHGateway | unknown | project_anchor | own_supporting | 1 | ethereum | unit-392392 | 2 deployments: ethereum `0x1fee6a...b2a1d0`; ethereum `0x7f2b8c...e3e905` | ✅ Audited |
-| L1GatewayRouter | unknown | project_anchor | own_supporting | 1 | ethereum | unit-392397 | 2 deployments: ethereum `0xb93ac0...f798f3`; ethereum `0xf8b137...e41fd6` | ✅ Audited |
-| L1ScrollMessenger | unknown | project_anchor | own_supporting | 1 | ethereum | unit-392395 | 2 deployments: ethereum `0x6774bc...d8b367`; ethereum `0x79b6ea...dcbf69` | ✅ Audited |
-| L1StandardERC20Gateway | unknown | project_anchor | own_supporting | 1 | ethereum | unit-392400 | 2 deployments: ethereum `0xd8a791...b3f8f9`; ethereum `0xff8238...8c0ee9` | ✅ Audited |
-| L1WETHGateway | unknown | project_anchor | own_supporting | 1 | ethereum | unit-392399 | 2 deployments: ethereum `0x7ac440...a9d4fe`; ethereum `0xe25eff...a86c24` | ✅ Audited |
+| L1CustomERC20Gateway | unknown | project_anchor | own_supporting | 1 | ethereum | unit-392394 | 2 deployments: ethereum `0x40c3c3dea3b7d6d117e6713377144fd8ee6d6c97`; ethereum `0xb2b10a289a229415a124efdef310c10cb004b6ff` | ✅ Audited |
+| L1ERC1155Gateway | unknown | project_anchor | own_supporting | 1 | ethereum | unit-392398 | 2 deployments: ethereum `0xb94f7f6abcb811c5ac709de14e37590fccd975b6`; ethereum `0xca46358d5f01e4f865885514dae6275087ffe38e` | ✅ Audited |
+| L1ERC721Gateway | unknown | project_anchor | own_supporting | 1 | ethereum | unit-392396 | 2 deployments: ethereum `0x6260af48e8948617b8fa17f4e5cea2d21d21554b`; ethereum `0x79f1bf1906b63b56e08c3ada4c51de11f145a27a` | ✅ Audited |
+| L1ETHGateway | unknown | project_anchor | own_supporting | 1 | ethereum | unit-392392 | 2 deployments: ethereum `0x1fee6a6dc49095fb9c84d61aa4b8a07284b2a1d0`; ethereum `0x7f2b8c31f88b6006c382775eea88297ec1e3e905` | ✅ Audited |
+| L1GatewayRouter | unknown | project_anchor | own_supporting | 1 | ethereum | unit-392397 | 2 deployments: ethereum `0xb93ac04010bd61f45bf492022a5b49a902f798f3`; ethereum `0xf8b1378579659d8f7ee5f3c929c2f3e332e41fd6` | ✅ Audited |
+| L1ScrollMessenger | unknown | project_anchor | own_supporting | 1 | ethereum | unit-392395 | 2 deployments: ethereum `0x6774bcbd5cecef1336b5300fb5186a12ddd8b367`; ethereum `0x79b6eabffaa958fdf2aa2bf632878bd323dcbf69` | ✅ Audited |
+| L1StandardERC20Gateway | unknown | project_anchor | own_supporting | 1 | ethereum | unit-392400 | 2 deployments: ethereum `0xd8a791fe2be73eb6e6cf1eb0cb3f36adc9b3f8f9`; ethereum `0xff8238be22cc583b3d69a76da9d84da7788c0ee9` | ✅ Audited |
+| L1WETHGateway | unknown | project_anchor | own_supporting | 1 | ethereum | unit-392399 | 2 deployments: ethereum `0x7ac440cae8eb6328de4fa621163a792c1ea9d4fe`; ethereum `0xe25effefd08c4a57556d47ef96471cb567a86c24` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (38)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| EmptyContract | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x8c8fb1...e985e3`; ethereum `0xfaf8f7...a8afca` | ⚠️ Unaudited |
-| EnforcedTxGateway | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x642af4...806318` | ⚠️ Unaudited |
-| EnforcedTxGateway | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x72cacb...9d7a5d`; ethereum `0x7e87c7...bddbcc` | ⚠️ Unaudited |
-| L1BatchBridgeGateway | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x5bcfd9...852bc4`; ethereum `0x7999cd...1e3233` | ⚠️ Unaudited |
-| L1CustomERC20Gateway | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x67260a...98f515`; ethereum `0xbad002...4c56cb` | ⚠️ Unaudited |
-| L1CustomERC20Gateway | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7f512e...781c2c` | ⚠️ Unaudited |
-| L1ERC1155Gateway | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x244bf7...2f8cd7`; ethereum `0xcb4638...863593` | ⚠️ Unaudited |
-| L1ERC721Gateway | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0xd1841c...e392bb`; ethereum `0xde3be7...323dae` | ⚠️ Unaudited |
-| L1ETHGateway | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x1fcbe0...d5c55d`; ethereum `0x546e0b...367b42` | ⚠️ Unaudited |
-| L1LidoGateway | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x6625c6...a3f504` | ⚠️ Unaudited |
-| L1MessageQueue | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbc9d74...adcf8f` | ⚠️ Unaudited |
-| L1MessageQueueV2 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-392393 | 2 deployments: ethereum `0x39c36c...052eca`; ethereum `0x56971d...c2d18a` | ⚠️ Unaudited |
-| L1MessageQueueV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xefa158...38591d` | ⚠️ Unaudited |
-| L1MessageQueueWithGasPriceOracle | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | ethereum | unit-392391 | 2 deployments: ethereum `0x0d7e90...39af9b`; ethereum `0x137cc5...07b374` | ⚠️ Unaudited |
-| L1MessageQueueWithGasPriceOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xebaed7...448e01` | ⚠️ Unaudited |
-| L1ScrollMessenger | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x72981f...a37fb6`; ethereum `0xaf2f89...e37845`; ethereum `0xc63261...cff868` | ⚠️ Unaudited |
-| L1StandardERC20Gateway | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x4015fc...f6239c`; ethereum `0x921873...63564a` | ⚠️ Unaudited |
-| L1USDCGateway | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x4a5810...2b5432`; ethereum `0xbc4b3d...5247d2` | ⚠️ Unaudited |
-| L1USDCGateway | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x56ce8a...2aff5e`; ethereum `0xf1af3b...9a5c7b` | ⚠️ Unaudited |
-| L1USDCGateway | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x666712...953aa8`; ethereum `0xea2e80...432ea3` | ⚠️ Unaudited |
-| L1WETHGateway | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0xa4f400...b9fb49`; ethereum `0xd3c421...7ca307` | ⚠️ Unaudited |
-| L2GasPriceOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x987e30...c33852`; ethereum `0xfdf1ee...1a4e9e` | ⚠️ Unaudited |
-| MultipleVersionRollupVerifier | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0x1ea29d...8998f6`; ethereum `0x4cea3e...4ead3f`; ethereum `0xa2ab52...ef32a0`; ethereum `0xf94afb...a2416b` | ⚠️ Unaudited |
-| PauseController | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x22e5c2...dc83e7`; ethereum `0x8717b1...265afe` | ⚠️ Unaudited |
-| PauseController | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x57e26d...41d98d`; ethereum `0xb8f7ea...229d8b` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0xcc2c53...2628a9`; ethereum `0xeb803e...59d072` | ⚠️ Unaudited |
-| ScrollChain | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x0a2070...8c3ba7`; ethereum `0xa13baf...c1e556` | ⚠️ Unaudited |
-| ScrollChain | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 8 deployments: ethereum `0x2e07f0...51d75f`; ethereum `0x39ef2c...2ca612`; ethereum `0x4f250b...5c628a`; ethereum `0x8f3392...db538f`; ethereum `0x9bb163...02d25f`; ethereum `0xaa6d0f...93cac8`; ethereum `0xb7c883...dce43f`; ethereum `0xfa1485...75539c` | ⚠️ Unaudited |
-| ScrollChainCommitmentVerifier | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc43624...ddf203` | ⚠️ Unaudited |
-| ScrollOwner | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x798576...7a26a6` | ⚠️ Unaudited |
-| SystemConfig | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6a1247...f2276a` | ⚠️ Unaudited |
-| SystemConfig | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x843272...6c7a4d`; ethereum `0xf15a4b...515eee` | ⚠️ Unaudited |
-| TimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 6 deployments: ethereum `0x0cd4c0...feca44`; ethereum `0x0e5893...0ec4f4`; ethereum `0x1a658b...d4ab9c`; ethereum `0x3f9041...68a9fd`; ethereum `0x826714...49216b`; ethereum `0xdc1d11...349b1b` | ⚠️ Unaudited |
-| Whitelist | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x259204...eacf37` | ⚠️ Unaudited |
-| ZkEvmVerifierPostEuclid | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x011231...1466b3`; ethereum `0x1dc65f...3a1357`; ethereum `0x75249b...b6b577`; ethereum `0x84f2f4...f0480c`; ethereum `0xbb08c8...6297ba` | ⚠️ Unaudited |
-| ZkEvmVerifierPostFeynman | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa8d470...21f485` | ⚠️ Unaudited |
-| ZkEvmVerifierV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0x3f7b73...c58184`; ethereum `0x4b289e...cdb247`; ethereum `0x585dfa...0dad2d`; ethereum `0x63fb51...acfaa2` | ⚠️ Unaudited |
-| ZkEvmVerifierV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x2d6e16...0c18fb`; ethereum `0xcaecee...ce54b3` | ⚠️ Unaudited |
+| EmptyContract | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x8c8fb15e0dbdae91aa426decedfb779c6ae985e3`; ethereum `0xfaf8f72e54d1089fa1882b6f597bfdff59a8afca` | ⚠️ Unaudited |
+| EnforcedTxGateway | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x642af405bf64660665b37977449c9c536b806318` | ⚠️ Unaudited |
+| EnforcedTxGateway | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x72cacbcfde2d1e19122f8a36a4d6676cd39d7a5d`; ethereum `0x7e87c75bbe7991bbcebd2c7a56f4cfc923bddbcc` | ⚠️ Unaudited |
+| L1BatchBridgeGateway | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x5bcfd99c34cf7e06fc756f6f5ae7400504852bc4`; ethereum `0x7999cdd5e2893475d89211a2e3fda67a841e3233` | ⚠️ Unaudited |
+| L1CustomERC20Gateway | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x67260a8b73c5b77b55c1805218a42a7a6f98f515`; ethereum `0xbad002fb13adffcbcba57a4d4a43886f3f4c56cb` | ⚠️ Unaudited |
+| L1CustomERC20Gateway | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7f512e2e9dfc4552941d99a5b2405bbcf5781c2c` | ⚠️ Unaudited |
+| L1ERC1155Gateway | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x244bf7aef29f03916569470a51fa0794b62f8cd7`; ethereum `0xcb4638620e4c6decef26374e71b0dd4871863593` | ⚠️ Unaudited |
+| L1ERC721Gateway | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0xd1841c5756428812233eea78afc17cb2d3e392bb`; ethereum `0xde3be7c2aa151d1e152ddfcbf0962fcdf5323dae` | ⚠️ Unaudited |
+| L1ETHGateway | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x1fcbe079c4bbab37406dab7dfd35acae37d5c55d`; ethereum `0x546e0bf31fb6e7babd493452e4e6999191367b42` | ⚠️ Unaudited |
+| L1LidoGateway | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x6625c6332c9f91f2d27c304e729b86db87a3f504` | ⚠️ Unaudited |
+| L1MessageQueue | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbc9d741501a20f962756c95bf906b4abffadcf8f` | ⚠️ Unaudited |
+| L1MessageQueueV2 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-392393 | 2 deployments: ethereum `0x39c36c9026ac18104839a50c61a4507ea5052eca`; ethereum `0x56971da63a3c0205184fef096e9ddfc7a8c2d18a` | ⚠️ Unaudited |
+| L1MessageQueueV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xefa158006b072793a49e622b26761cd0ec38591d` | ⚠️ Unaudited |
+| L1MessageQueueWithGasPriceOracle | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | ethereum | unit-392391 | 2 deployments: ethereum `0x0d7e906bd9cafa154b048cfa766cc1e54e39af9b`; ethereum `0x137cc585f607edebbc3ca6360affcfeab507b374` | ⚠️ Unaudited |
+| L1MessageQueueWithGasPriceOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xebaed7a81c298b24ee6d59c22698a951dc448e01` | ⚠️ Unaudited |
+| L1ScrollMessenger | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x72981fd00087ff4f60abfde9f353cb1912a37fb6`; ethereum `0xaf2f898a8680cb52766abe0588ebe6b9bfe37845`; ethereum `0xc6326109e33465d6d61e4cb7afce7b1be7cff868` | ⚠️ Unaudited |
+| L1StandardERC20Gateway | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x4015fc868c06689abeba4a9dc8fa43b804f6239c`; ethereum `0x9218732389d80f9b8723c3f32a38865b7a63564a` | ⚠️ Unaudited |
+| L1USDCGateway | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x4a5810f71b6836027c26c25bff9708dfcd2b5432`; ethereum `0xbc4b3d9a89f187dbaa0d2e60985ea1fffa5247d2` | ⚠️ Unaudited |
+| L1USDCGateway | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x56ce8a8e8399f6cd5e7e4f549e8bfd673f2aff5e`; ethereum `0xf1af3b23de0a5ca3cab7261cb0061c0d779a5c7b` | ⚠️ Unaudited |
+| L1USDCGateway | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x6667123b5017aab9945f73345848b82d7a953aa8`; ethereum `0xea2e804ff5291ca423dfeff486b9a91ae4432ea3` | ⚠️ Unaudited |
+| L1WETHGateway | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0xa4f400593dffc0ae02f940ab58f6e3cc6fb9fb49`; ethereum `0xd3c42158682d55e082eabe08a29f7515a97ca307` | ⚠️ Unaudited |
+| L2GasPriceOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x987e300fdfb06093859358522a79098848c33852`; ethereum `0xfdf1ee0098168eaa61bf87db68c39c85151a4e9e` | ⚠️ Unaudited |
+| MultipleVersionRollupVerifier | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0x1ea29d57dac237152d878758bae4beb2668998f6`; ethereum `0x4cea3e866e7c57fd75cb0ca3e9f5f1151d4ead3f`; ethereum `0xa2ab526e5c5491f10fc05a55f064bf9f7cef32a0`; ethereum `0xf94afbd9370e25dd6ca557d5d67634aefda2416b` | ⚠️ Unaudited |
+| PauseController | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x22e5c20bb540d68f43a6790927fab8e4fbdc83e7`; ethereum `0x8717b1e9b466685b589def23891bacbb92265afe` | ⚠️ Unaudited |
+| PauseController | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x57e26d997852e7e94915e250446c3bf43f41d98d`; ethereum `0xb8f7ea9998530833cbb7e0ef4f0d945957229d8b` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0xcc2c53556bc75217cf698721b29071d6f12628a9`; ethereum `0xeb803eb3f501998126bf37bb823646ed3d59d072` | ⚠️ Unaudited |
+| ScrollChain | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x0a20703878e68e587c59204cc0ea86098b8c3ba7`; ethereum `0xa13baf47339d63b743e7da8741db5456dac1e556` | ⚠️ Unaudited |
+| ScrollChain | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 8 deployments: ethereum `0x2e07f0fba71709bb5e1f045b02152e45b451d75f`; ethereum `0x39ef2c564ce27eb5702ceb71cf00c633932ca612`; ethereum `0x4f250b05262240c787a1ee222687c6ec395c628a`; ethereum `0x8f339292d2b3909574b2beb051a613a987db538f`; ethereum `0x9bb163401e8c72573854c4cd968afa7a7b02d25f`; ethereum `0xaa6d0f2490ac3957b97e11afec6f0f250593cac8`; ethereum `0xb7c8833f5627a8a12558cafa0d0ebd1acbdce43f`; ethereum `0xfa148514d03420b7b1a13ec74da06d2ca875539c` | ⚠️ Unaudited |
+| ScrollChainCommitmentVerifier | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc4362457a91b2e55934bdcb7daaf6b1ab3ddf203` | ⚠️ Unaudited |
+| ScrollOwner | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x798576400f7d662961ba15c6b3f3d813447a26a6` | ⚠️ Unaudited |
+| SystemConfig | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6a124779fdf107c3f6bcb992731dcaad09f2276a` | ⚠️ Unaudited |
+| SystemConfig | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x8432728a257646449245558b8b7dbe51a16c7a4d`; ethereum `0xf15a4b6d1fe2ca6ee38bc3fb957f43f58b515eee` | ⚠️ Unaudited |
+| TimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 6 deployments: ethereum `0x0cd4c0f24a0a9f3e2fe80ed385d8ad5a2ffeca44`; ethereum `0x0e58939204eeda84f796fbc86840a50af10ec4f4`; ethereum `0x1a658b88fd0a3c82fa1a0609fcdbd32e7dd4ab9c`; ethereum `0x3f9041350b661c74c6cbe440c8bd6bc4c168a9fd`; ethereum `0x826714add4dda2b8750794a467c892c0cd49216b`; ethereum `0xdc1d1189da69ae2016e4976a43de20972d349b1b` | ⚠️ Unaudited |
+| Whitelist | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x259204ddd2ba29bd9b1b9a5c9b093f73d7eacf37` | ⚠️ Unaudited |
+| ZkEvmVerifierPostEuclid | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x0112315fa1c81c35ac9a477e161b52ae4d1466b3`; ethereum `0x1dc65f7ab1964ec328f6249d1a68d0c1633a1357`; ethereum `0x75249b5ebf283d0a46c2f9b21498a7d600b6b577`; ethereum `0x84f2f46a1ae147e87a7b361e3ae4ff2b9af0480c`; ethereum `0xbb08c87a2e871fcf3d86c4f7ed03dec8b66297ba` | ⚠️ Unaudited |
+| ZkEvmVerifierPostFeynman | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa8d4702aa5c09af5dd1323e1842a43789021f485` | ⚠️ Unaudited |
+| ZkEvmVerifierV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0x3f7b737155e6e0dece9cd8cd3240d15939c58184`; ethereum `0x4b289e4a5331bafbc6ccb2f10c39b8edcecdb247`; ethereum `0x585dfad7bf4099e011d185e266907a8ab60dad2d`; ethereum `0x63fb51c55d9605a75f8872c80de260a00facfaa2` | ⚠️ Unaudited |
+| ZkEvmVerifierV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x2d6e16d8e8a0c3bc7750e774b108ec39ab0c18fb`; ethereum `0xcaecee2e815e7f758c2477f900afa14bddce54b3` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -195,54 +195,54 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x350817...1ae63e` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x47a499...8a9033` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392354 | `0x0d7e90...39af9b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392355 | `0x13fbe0...55998a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392357 | `0x247969...bde548` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392358 | `0x31c994...5bbb37` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392359 | `0x3da0bf...211695` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392361 | `0x4c0926...a19d79` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392362 | `0x50c7d3...cbb16a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392364 | `0x62597c...263bcc` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392365 | `0x6260af...21554b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392366 | `0x64ccbe...067988` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392367 | `0x65d123...e88a13` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392368 | `0x6774bc...d8b367` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392369 | `0x6ea73e...dacdf0` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392370 | `0x7003e7...391cf9` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392371 | `0x781e90...969cbc` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392372 | `0x7ac440...a9d4fe` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392373 | `0x7bc08e...e80582` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392374 | `0x7f2b8c...e3e905` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392375 | `0x8a54a2...e9866d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392379 | `0xa5df85...c83146` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392381 | `0xb2b10a...04b6ff` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392383 | `0xb94f7f...d975b6` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392385 | `0xd8a791...b3f8f9` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392387 | `0xe2b479...8f447a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392388 | `0xef27a5...ba77ac` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392389 | `0xf0b229...2de763` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392390 | `0xf8b137...e41fd6` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-392334 | `0x058dec...f3eacf` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-392335 | `0x13fbe0...55998a` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-392336 | `0x179b94...785c97` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | sepolia | unit-392337 | `0x247969...bde548` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-392338 | `0x31c994...5bbb37` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-392339 | `0x3da0bf...211695` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-392340 | `0x481b20...81ea27` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-392341 | `0x50c7d3...cbb16a` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-392342 | `0x65d123...e88a13` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-392343 | `0x8a54a2...e9866d` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-392344 | `0x91e8ad...c1101c` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-392345 | `0x9ad3c5...171230` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-392346 | `0xa0673e...c5f19f` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-392347 | `0xa5df85...c83146` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-392348 | `0xadca91...ef9582` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-392349 | `0xba50f5...6e603d` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-392350 | `0xe17c9b...4612a5` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-392351 | `0xef27a5...ba77ac` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | sepolia | unit-392352 | `0xf0b229...2de763` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3508174fa966e75f70b15348209e33bc711ae63e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x47a4991eda6166bc9ffedad1335d006bae8a9033` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392354 | `0x0d7e906bd9cafa154b048cfa766cc1e54e39af9b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392355 | `0x13fbe0d0e5552b8c9c4ae9e2435f38f37355998a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392357 | `0x247969f4fad93a33d4826046bc3eae0d36bde548` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392358 | `0x31c994f2017e71b82fd4d8118f140c81215bbb37` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392359 | `0x3da0bf44814cfc678376b3311838272158211695` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392361 | `0x4c0926ff5252a435fd19e10ed15e5a249ba19d79` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392362 | `0x50c7d3e7f7c656493d1d76aaa1a836cedfcbb16a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392364 | `0x62597cc19703af10b58fef87b0d5d29efe263bcc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392365 | `0x6260af48e8948617b8fa17f4e5cea2d21d21554b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392366 | `0x64ccbe37c9a82d85a1f2e74649b7a42923067988` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392367 | `0x65d123d6389b900d954677c26327bfc1c3e88a13` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392368 | `0x6774bcbd5cecef1336b5300fb5186a12ddd8b367` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392369 | `0x6ea73e05adc79974b931123675ea8f78ffdacdf0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392370 | `0x7003e7b7186f0e6601203b99f7b8decbfa391cf9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392371 | `0x781e90f1c8fc4611c9b7497c3b47f99ef6969cbc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392372 | `0x7ac440cae8eb6328de4fa621163a792c1ea9d4fe` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392373 | `0x7bc08e1c04fb41d75f1410363f0c5746eae80582` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392374 | `0x7f2b8c31f88b6006c382775eea88297ec1e3e905` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392375 | `0x8a54a2347da2562917304141ab67324615e9866d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392379 | `0xa5df8530766a85936ee3e139dece3bf081c83146` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392381 | `0xb2b10a289a229415a124efdef310c10cb004b6ff` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392383 | `0xb94f7f6abcb811c5ac709de14e37590fccd975b6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392385 | `0xd8a791fe2be73eb6e6cf1eb0cb3f36adc9b3f8f9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392387 | `0xe2b4795039517653c5ae8c2a9bfdd783b48f447a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392388 | `0xef27a5e63aa3f1b8312f744b9b4dceb910ba77ac` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392389 | `0xf0b2293f5d834eae920c6974d50957a1732de763` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-392390 | `0xf8b1378579659d8f7ee5f3c929c2f3e332e41fd6` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-392334 | `0x058dec71e53079f9ed053f3a0bbca877f6f3eacf` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-392335 | `0x13fbe0d0e5552b8c9c4ae9e2435f38f37355998a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-392336 | `0x179b9415194b67dc3c0b8760e075cd4415785c97` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | sepolia | unit-392337 | `0x247969f4fad93a33d4826046bc3eae0d36bde548` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-392338 | `0x31c994f2017e71b82fd4d8118f140c81215bbb37` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-392339 | `0x3da0bf44814cfc678376b3311838272158211695` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-392340 | `0x481b20a927206af7a754db8b904b052e2781ea27` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-392341 | `0x50c7d3e7f7c656493d1d76aaa1a836cedfcbb16a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-392342 | `0x65d123d6389b900d954677c26327bfc1c3e88a13` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-392343 | `0x8a54a2347da2562917304141ab67324615e9866d` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-392344 | `0x91e8addfe1358aca5314c644312d38237fc1101c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-392345 | `0x9ad3c5617ecaa556d6e166787a97081907171230` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-392346 | `0xa0673ec0a48aa924f067f1274ecd281a10c5f19f` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-392347 | `0xa5df8530766a85936ee3e139dece3bf081c83146` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-392348 | `0xadca915971a336ea2f5b567e662f5bd74aef9582` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-392349 | `0xba50f5340fb9f3bd074bd638c9be13ecb36e603d` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-392350 | `0xe17c9b9c66faf07753cdb04316d09f52144612a5` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-392351 | `0xef27a5e63aa3f1b8312f744b9b4dceb910ba77ac` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | sepolia | unit-392352 | `0xf0b2293f5d834eae920c6974d50957a1732de763` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -344,16 +344,16 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 |---|---|---|---|---|---|
 | 202307 Scroll Layer 1 Audit Report.pdf | External | unmatched — not counted | — | listed in scope | no |
 | 202307 Scroll Layer 1 Audit Report.pdf | IL1ScrollMessenger | unmatched — not counted | — | listed in scope | no |
-| 202307 Scroll Layer 1 Audit Report.pdf | L1ScrollMessenger | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6774bc...d8b367` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 202307 Scroll Layer 1 Audit Report.pdf | L1ScrollMessenger | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6774bcbd5cecef1336b5300fb5186a12ddd8b367` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 202307 Scroll Layer 1 Audit Report.pdf | EnforcedTxGateway | unmatched — not counted | — | listed in scope | no |
-| 202307 Scroll Layer 1 Audit Report.pdf | L1CustomERC20Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb2b10a...04b6ff` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 202307 Scroll Layer 1 Audit Report.pdf | L1ERC1155Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb94f7f...d975b6` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 202307 Scroll Layer 1 Audit Report.pdf | L1CustomERC20Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb2b10a289a229415a124efdef310c10cb004b6ff` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 202307 Scroll Layer 1 Audit Report.pdf | L1ERC1155Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb94f7f6abcb811c5ac709de14e37590fccd975b6` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 202307 Scroll Layer 1 Audit Report.pdf | L1ERC20Gateway | unmatched — not counted | — | listed in scope | no |
-| 202307 Scroll Layer 1 Audit Report.pdf | L1ERC721Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6260af...21554b` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 202307 Scroll Layer 1 Audit Report.pdf | L1ETHGateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x7f2b8c...e3e905` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 202307 Scroll Layer 1 Audit Report.pdf | L1GatewayRouter | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf8b137...e41fd6` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 202307 Scroll Layer 1 Audit Report.pdf | L1StandardERC20Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xd8a791...b3f8f9` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 202307 Scroll Layer 1 Audit Report.pdf | L1WETHGateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x7ac440...a9d4fe` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 202307 Scroll Layer 1 Audit Report.pdf | L1ERC721Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6260af48e8948617b8fa17f4e5cea2d21d21554b` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 202307 Scroll Layer 1 Audit Report.pdf | L1ETHGateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x7f2b8c31f88b6006c382775eea88297ec1e3e905` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 202307 Scroll Layer 1 Audit Report.pdf | L1GatewayRouter | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf8b1378579659d8f7ee5f3c929c2f3e332e41fd6` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 202307 Scroll Layer 1 Audit Report.pdf | L1StandardERC20Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xd8a791fe2be73eb6e6cf1eb0cb3f36adc9b3f8f9` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 202307 Scroll Layer 1 Audit Report.pdf | L1WETHGateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x7ac440cae8eb6328de4fa621163a792c1ea9d4fe` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 202307 Scroll Layer 1 Audit Report.pdf | IL1MessageQueue | unmatched — not counted | — | listed in scope | no |
 | 202307 Scroll Layer 1 Audit Report.pdf | IL2GasPriceOracle | unmatched — not counted | — | listed in scope | no |
 | 202307 Scroll Layer 1 Audit Report.pdf | IScrollChain | unmatched — not counted | — | listed in scope | no |
@@ -440,19 +440,19 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | 202308 Scroll GasSwap, Multiple Verifier, Wrapped Ether and Diff Final Audit Report.pdf | IL1ERC721Gateway | unmatched — not counted | — | listed in diff audit scope | no |
 | 202308 Scroll GasSwap, Multiple Verifier, Wrapped Ether and Diff Final Audit Report.pdf | IL1ETHGateway | unmatched — not counted | — | listed in diff audit scope | no |
 | 202308 Scroll GasSwap, Multiple Verifier, Wrapped Ether and Diff Final Audit Report.pdf | IL1GatewayRouter | unmatched — not counted | — | listed in diff audit scope | no |
-| 202308 Scroll GasSwap, Multiple Verifier, Wrapped Ether and Diff Final Audit Report.pdf | L1CustomERC20Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb2b10a...04b6ff` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 202308 Scroll GasSwap, Multiple Verifier, Wrapped Ether and Diff Final Audit Report.pdf | L1ERC1155Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb94f7f...d975b6` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 202308 Scroll GasSwap, Multiple Verifier, Wrapped Ether and Diff Final Audit Report.pdf | L1CustomERC20Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb2b10a289a229415a124efdef310c10cb004b6ff` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 202308 Scroll GasSwap, Multiple Verifier, Wrapped Ether and Diff Final Audit Report.pdf | L1ERC1155Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb94f7f6abcb811c5ac709de14e37590fccd975b6` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 202308 Scroll GasSwap, Multiple Verifier, Wrapped Ether and Diff Final Audit Report.pdf | L1ERC20Gateway | unmatched — not counted | — | listed in diff audit scope | no |
-| 202308 Scroll GasSwap, Multiple Verifier, Wrapped Ether and Diff Final Audit Report.pdf | L1ERC721Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6260af...21554b` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 202308 Scroll GasSwap, Multiple Verifier, Wrapped Ether and Diff Final Audit Report.pdf | L1ETHGateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x7f2b8c...e3e905` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 202308 Scroll GasSwap, Multiple Verifier, Wrapped Ether and Diff Final Audit Report.pdf | L1GatewayRouter | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf8b137...e41fd6` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 202308 Scroll GasSwap, Multiple Verifier, Wrapped Ether and Diff Final Audit Report.pdf | L1StandardERC20Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xd8a791...b3f8f9` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 202308 Scroll GasSwap, Multiple Verifier, Wrapped Ether and Diff Final Audit Report.pdf | L1WETHGateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x7ac440...a9d4fe` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 202308 Scroll GasSwap, Multiple Verifier, Wrapped Ether and Diff Final Audit Report.pdf | L1ERC721Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6260af48e8948617b8fa17f4e5cea2d21d21554b` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 202308 Scroll GasSwap, Multiple Verifier, Wrapped Ether and Diff Final Audit Report.pdf | L1ETHGateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x7f2b8c31f88b6006c382775eea88297ec1e3e905` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 202308 Scroll GasSwap, Multiple Verifier, Wrapped Ether and Diff Final Audit Report.pdf | L1GatewayRouter | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf8b1378579659d8f7ee5f3c929c2f3e332e41fd6` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 202308 Scroll GasSwap, Multiple Verifier, Wrapped Ether and Diff Final Audit Report.pdf | L1StandardERC20Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xd8a791fe2be73eb6e6cf1eb0cb3f36adc9b3f8f9` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 202308 Scroll GasSwap, Multiple Verifier, Wrapped Ether and Diff Final Audit Report.pdf | L1WETHGateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x7ac440cae8eb6328de4fa621163a792c1ea9d4fe` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 202308 Scroll GasSwap, Multiple Verifier, Wrapped Ether and Diff Final Audit Report.pdf | IL1MessageQueue | unmatched — not counted | — | listed in diff audit scope | no |
 | 202308 Scroll GasSwap, Multiple Verifier, Wrapped Ether and Diff Final Audit Report.pdf | L1MessageQueue | unmatched — not counted | — | listed in diff audit scope | no |
 | 202308 Scroll GasSwap, Multiple Verifier, Wrapped Ether and Diff Final Audit Report.pdf | ScrollChain | unmatched — not counted | — | listed in diff audit scope | no |
 | 202308 Scroll GasSwap, Multiple Verifier, Wrapped Ether and Diff Final Audit Report.pdf | IL1ScrollMessenger | unmatched — not counted | — | listed in diff audit scope | no |
-| 202308 Scroll GasSwap, Multiple Verifier, Wrapped Ether and Diff Final Audit Report.pdf | L1ScrollMessenger | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6774bc...d8b367` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 202308 Scroll GasSwap, Multiple Verifier, Wrapped Ether and Diff Final Audit Report.pdf | L1ScrollMessenger | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6774bcbd5cecef1336b5300fb5186a12ddd8b367` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 202308 Scroll GasSwap, Multiple Verifier, Wrapped Ether and Diff Final Audit Report.pdf | L2ERC1155Gateway | unmatched — not counted | — | listed in diff audit scope | no |
 | 202308 Scroll GasSwap, Multiple Verifier, Wrapped Ether and Diff Final Audit Report.pdf | L2ERC721Gateway | unmatched — not counted | — | listed in diff audit scope | no |
 | 202308 Scroll GasSwap, Multiple Verifier, Wrapped Ether and Diff Final Audit Report.pdf | L2ETHGateway | unmatched — not counted | — | listed in diff audit scope | no |
@@ -471,8 +471,8 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | 202309 ScrollOwner and Rate Limiter Audit.pdf | ITokenRateLimiter | unmatched — not counted | — | listed in scope | no |
 | 202309 ScrollOwner and Rate Limiter Audit.pdf | TokenRateLimiter | unmatched — not counted | — | listed in scope | no |
 | 202309 ScrollOwner and Rate Limiter Audit.pdf | L1ERC20Gateway | unmatched — not counted | — | listed in scope (diff audit) | no |
-| 202309 ScrollOwner and Rate Limiter Audit.pdf | L1ETHGateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x7f2b8c...e3e905` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 202309 ScrollOwner and Rate Limiter Audit.pdf | L1ScrollMessenger | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6774bc...d8b367` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 202309 ScrollOwner and Rate Limiter Audit.pdf | L1ETHGateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x7f2b8c31f88b6006c382775eea88297ec1e3e905` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 202309 ScrollOwner and Rate Limiter Audit.pdf | L1ScrollMessenger | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6774bcbd5cecef1336b5300fb5186a12ddd8b367` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 202309 ScrollOwner and Rate Limiter Audit.pdf | L2CustomERC20Gateway | unmatched — not counted | — | listed in scope (diff audit) | no |
 | 202309 ScrollOwner and Rate Limiter Audit.pdf | L2StandardERC20Gateway | unmatched — not counted | — | listed in scope (diff audit) | no |
 | 202309 ScrollOwner and Rate Limiter Audit.pdf | L2WETHGateway | unmatched — not counted | — | listed in scope (diff audit) | no |
@@ -494,15 +494,15 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | 202309 Scroll Diff Audit Report.pdf | ScrollChain | unmatched — not counted | — | listed in scope | no |
 | 202309 Scroll Diff Audit Report.pdf | L2TxFeeVaults | unmatched — not counted | — | listed in scope | no |
 | 202309 Scroll Diff Audit Report.pdf | FeeVault | unmatched — not counted | — | listed in scope | no |
-| Scroll - Bridge Gas Optimizations Audit Report (Feb 2024).pdf | L1CustomERC20Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb2b10a...04b6ff` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Scroll - Bridge Gas Optimizations Audit Report (Feb 2024).pdf | L1ERC1155Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb94f7f...d975b6` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Scroll - Bridge Gas Optimizations Audit Report (Feb 2024).pdf | L1ERC721Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6260af...21554b` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Scroll - Bridge Gas Optimizations Audit Report (Feb 2024).pdf | L1ETHGateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x7f2b8c...e3e905` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Scroll - Bridge Gas Optimizations Audit Report (Feb 2024).pdf | L1GatewayRouter | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf8b137...e41fd6` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Scroll - Bridge Gas Optimizations Audit Report (Feb 2024).pdf | L1StandardERC20Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xd8a791...b3f8f9` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Scroll - Bridge Gas Optimizations Audit Report (Feb 2024).pdf | L1WETHGateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x7ac440...a9d4fe` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Scroll - Bridge Gas Optimizations Audit Report (Feb 2024).pdf | L1CustomERC20Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb2b10a289a229415a124efdef310c10cb004b6ff` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Scroll - Bridge Gas Optimizations Audit Report (Feb 2024).pdf | L1ERC1155Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb94f7f6abcb811c5ac709de14e37590fccd975b6` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Scroll - Bridge Gas Optimizations Audit Report (Feb 2024).pdf | L1ERC721Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6260af48e8948617b8fa17f4e5cea2d21d21554b` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Scroll - Bridge Gas Optimizations Audit Report (Feb 2024).pdf | L1ETHGateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x7f2b8c31f88b6006c382775eea88297ec1e3e905` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Scroll - Bridge Gas Optimizations Audit Report (Feb 2024).pdf | L1GatewayRouter | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf8b1378579659d8f7ee5f3c929c2f3e332e41fd6` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Scroll - Bridge Gas Optimizations Audit Report (Feb 2024).pdf | L1StandardERC20Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xd8a791fe2be73eb6e6cf1eb0cb3f36adc9b3f8f9` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Scroll - Bridge Gas Optimizations Audit Report (Feb 2024).pdf | L1WETHGateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x7ac440cae8eb6328de4fa621163a792c1ea9d4fe` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Scroll - Bridge Gas Optimizations Audit Report (Feb 2024).pdf | L1USDCGateway | unmatched — not counted | — | listed in scope | no |
-| Scroll - Bridge Gas Optimizations Audit Report (Feb 2024).pdf | L1ScrollMessenger | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6774bc...d8b367` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Scroll - Bridge Gas Optimizations Audit Report (Feb 2024).pdf | L1ScrollMessenger | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6774bcbd5cecef1336b5300fb5186a12ddd8b367` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Scroll - Bridge Gas Optimizations Audit Report (Feb 2024).pdf | IL1MessageQueue | unmatched — not counted | — | listed in scope | no |
 | Scroll - Bridge Gas Optimizations Audit Report (Feb 2024).pdf | IL1MessageQueueWithGasPriceOracle | unmatched — not counted | — | listed in scope | no |
 | Scroll - Bridge Gas Optimizations Audit Report (Feb 2024).pdf | IL2GasPriceOracle | unmatched — not counted | — | listed in scope | no |
@@ -537,15 +537,15 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | blog.openzeppelin.com/scroll-eip-4844-support-audit | BatchHeaderV1Codec | unmatched — not counted | — | listed in scope as newly added file | no |
 | blog.openzeppelin.com/scroll-eip-4844-support-audit | ChunkCodecV1 | unmatched — not counted | — | listed in scope as newly added file | no |
 | Scroll - 05.26.23 Zellic Audit Report.pdf | External | unmatched — not counted | — | listed in scope | no |
-| Scroll - 05.26.23 Zellic Audit Report.pdf | L1ScrollMessenger | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6774bc...d8b367` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Scroll - 05.26.23 Zellic Audit Report.pdf | L1CustomERC20Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb2b10a...04b6ff` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Scroll - 05.26.23 Zellic Audit Report.pdf | L1ERC1155Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb94f7f...d975b6` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Scroll - 05.26.23 Zellic Audit Report.pdf | L1ScrollMessenger | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6774bcbd5cecef1336b5300fb5186a12ddd8b367` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Scroll - 05.26.23 Zellic Audit Report.pdf | L1CustomERC20Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb2b10a289a229415a124efdef310c10cb004b6ff` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Scroll - 05.26.23 Zellic Audit Report.pdf | L1ERC1155Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb94f7f6abcb811c5ac709de14e37590fccd975b6` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Scroll - 05.26.23 Zellic Audit Report.pdf | L1ERC20Gateway | unmatched — not counted | — | listed in scope | no |
-| Scroll - 05.26.23 Zellic Audit Report.pdf | L1ERC721Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6260af...21554b` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Scroll - 05.26.23 Zellic Audit Report.pdf | L1ETHGateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x7f2b8c...e3e905` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Scroll - 05.26.23 Zellic Audit Report.pdf | L1GatewayRouter | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf8b137...e41fd6` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Scroll - 05.26.23 Zellic Audit Report.pdf | L1StandardERC20Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xd8a791...b3f8f9` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Scroll - 05.26.23 Zellic Audit Report.pdf | L1WETHGateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x7ac440...a9d4fe` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Scroll - 05.26.23 Zellic Audit Report.pdf | L1ERC721Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6260af48e8948617b8fa17f4e5cea2d21d21554b` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Scroll - 05.26.23 Zellic Audit Report.pdf | L1ETHGateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x7f2b8c31f88b6006c382775eea88297ec1e3e905` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Scroll - 05.26.23 Zellic Audit Report.pdf | L1GatewayRouter | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf8b1378579659d8f7ee5f3c929c2f3e332e41fd6` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Scroll - 05.26.23 Zellic Audit Report.pdf | L1StandardERC20Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xd8a791fe2be73eb6e6cf1eb0cb3f36adc9b3f8f9` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Scroll - 05.26.23 Zellic Audit Report.pdf | L1WETHGateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x7ac440cae8eb6328de4fa621163a792c1ea9d4fe` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Scroll - 05.26.23 Zellic Audit Report.pdf | L1MessageQueue | unmatched — not counted | — | listed in scope | no |
 | Scroll - 05.26.23 Zellic Audit Report.pdf | L2GasPriceOracle | unmatched — not counted | — | listed in scope | no |
 | Scroll - 05.26.23 Zellic Audit Report.pdf | ScrollChainCommitmentVerifier | unmatched — not counted | — | listed in scope | no |
@@ -585,15 +585,15 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Scroll - 05.26.23 Zellic Audit Report.pdf | FeeOnTransferToken | unmatched — not counted | — | listed in scope | no |
 | Scroll - 05.26.23 Zellic Audit Report.pdf | TransferReentrantToken | unmatched — not counted | — | listed in scope | no |
 | Scroll - 09.27.23 Zellic Audit Report.pdf | GasSwap | unmatched — not counted | — | listed in scope table | no |
-| Scroll - 09.27.23 Zellic Audit Report.pdf | L1ScrollMessenger | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6774bc...d8b367` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Scroll - 09.27.23 Zellic Audit Report.pdf | L1ScrollMessenger | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6774bcbd5cecef1336b5300fb5186a12ddd8b367` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Scroll - 09.27.23 Zellic Audit Report.pdf | EnforcedTxGateway | unmatched — not counted | — | listed in scope table | no |
-| Scroll - 09.27.23 Zellic Audit Report.pdf | L1CustomERC20Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb2b10a...04b6ff` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Scroll - 09.27.23 Zellic Audit Report.pdf | L1CustomERC20Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb2b10a289a229415a124efdef310c10cb004b6ff` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Scroll - 09.27.23 Zellic Audit Report.pdf | L1ERC20Gateway | unmatched — not counted | — | listed in scope table | no |
-| Scroll - 09.27.23 Zellic Audit Report.pdf | L1ERC721Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6260af...21554b` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Scroll - 09.27.23 Zellic Audit Report.pdf | L1GatewayRouter | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf8b137...e41fd6` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Scroll - 09.27.23 Zellic Audit Report.pdf | L1StandardERC20Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xd8a791...b3f8f9` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Scroll - 09.27.23 Zellic Audit Report.pdf | L1ERC721Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6260af48e8948617b8fa17f4e5cea2d21d21554b` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Scroll - 09.27.23 Zellic Audit Report.pdf | L1GatewayRouter | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf8b1378579659d8f7ee5f3c929c2f3e332e41fd6` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Scroll - 09.27.23 Zellic Audit Report.pdf | L1StandardERC20Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xd8a791fe2be73eb6e6cf1eb0cb3f36adc9b3f8f9` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Scroll - 09.27.23 Zellic Audit Report.pdf | L1USDCGateway | unmatched — not counted | — | listed in scope table | no |
-| Scroll - 09.27.23 Zellic Audit Report.pdf | L1WETHGateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x7ac440...a9d4fe` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Scroll - 09.27.23 Zellic Audit Report.pdf | L1WETHGateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x7ac440cae8eb6328de4fa621163a792c1ea9d4fe` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Scroll - 09.27.23 Zellic Audit Report.pdf | L1MessageQueue | unmatched — not counted | — | listed in scope table | no |
 | Scroll - 09.27.23 Zellic Audit Report.pdf | L2GasPriceOracle | unmatched — not counted | — | listed in scope table | no |
 | Scroll - 09.27.23 Zellic Audit Report.pdf | MultipleVersionRollupVerifier | unmatched — not counted | — | listed in scope table | no |
@@ -734,20 +734,20 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Feynman-Upgrade-Trails-of-Bits.pdf | L2SystemConfig | unmatched — not counted | — | mentioned in Executive Summary as a new contract | no |
 | Feynman-Upgrade-Trails-of-Bits.pdf | L1GasPriceOracle | unmatched — not counted | — | mentioned in Executive Summary as contract with changes | no |
 | Feynman-Upgrade-Trails-of-Bits.pdf | ZkEvmVerifierPostFeynman | unmatched — not counted | — | mentioned in Executive Summary as a new verifier contract | no |
-| Feynman-Upgrade-Trails-of-Bits.pdf | L1ScrollMessenger | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6774bc...d8b367` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Feynman-Upgrade-Trails-of-Bits.pdf | L1ScrollMessenger | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6774bcbd5cecef1336b5300fb5186a12ddd8b367` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Feynman-Upgrade-Trails-of-Bits.pdf | L2ScrollMessenger | unmatched — not counted | — | mentioned in Executive Summary as contract with changes | no |
 | Feynman-Upgrade-Trails-of-Bits.pdf | ScrollChain | unmatched — not counted | — | target of finding TOB-SCRFMSC-2 | no |
 | Internal-Audit-Scroll-Final-Report.pdf | ScrollREVM | unmatched — not counted | — | listed in scope | no |
 | Internal-Audit-Scroll-Final-Report.pdf | zkVM Guest Program Changes | unmatched — not counted | — | listed in scope | no |
-| 202402 Bridge Gas Optimizations Audit Report.pdf | L1CustomERC20Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb2b10a...04b6ff` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 202402 Bridge Gas Optimizations Audit Report.pdf | L1ERC1155Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb94f7f...d975b6` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 202402 Bridge Gas Optimizations Audit Report.pdf | L1ERC721Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6260af...21554b` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 202402 Bridge Gas Optimizations Audit Report.pdf | L1ETHGateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x7f2b8c...e3e905` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 202402 Bridge Gas Optimizations Audit Report.pdf | L1GatewayRouter | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf8b137...e41fd6` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 202402 Bridge Gas Optimizations Audit Report.pdf | L1StandardERC20Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xd8a791...b3f8f9` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 202402 Bridge Gas Optimizations Audit Report.pdf | L1WETHGateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x7ac440...a9d4fe` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 202402 Bridge Gas Optimizations Audit Report.pdf | L1CustomERC20Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb2b10a289a229415a124efdef310c10cb004b6ff` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 202402 Bridge Gas Optimizations Audit Report.pdf | L1ERC1155Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb94f7f6abcb811c5ac709de14e37590fccd975b6` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 202402 Bridge Gas Optimizations Audit Report.pdf | L1ERC721Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6260af48e8948617b8fa17f4e5cea2d21d21554b` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 202402 Bridge Gas Optimizations Audit Report.pdf | L1ETHGateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x7f2b8c31f88b6006c382775eea88297ec1e3e905` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 202402 Bridge Gas Optimizations Audit Report.pdf | L1GatewayRouter | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf8b1378579659d8f7ee5f3c929c2f3e332e41fd6` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 202402 Bridge Gas Optimizations Audit Report.pdf | L1StandardERC20Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xd8a791fe2be73eb6e6cf1eb0cb3f36adc9b3f8f9` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 202402 Bridge Gas Optimizations Audit Report.pdf | L1WETHGateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x7ac440cae8eb6328de4fa621163a792c1ea9d4fe` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 202402 Bridge Gas Optimizations Audit Report.pdf | L1USDCGateway | unmatched — not counted | — | listed in scope | no |
-| 202402 Bridge Gas Optimizations Audit Report.pdf | L1ScrollMessenger | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6774bc...d8b367` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 202402 Bridge Gas Optimizations Audit Report.pdf | L1ScrollMessenger | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6774bcbd5cecef1336b5300fb5186a12ddd8b367` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 202402 Bridge Gas Optimizations Audit Report.pdf | IL1MessageQueue | unmatched — not counted | — | listed in scope | no |
 | 202402 Bridge Gas Optimizations Audit Report.pdf | IL1MessageQueueWithGasPriceOracle | unmatched — not counted | — | listed in scope | no |
 | 202402 Bridge Gas Optimizations Audit Report.pdf | IL2GasPriceOracle | unmatched — not counted | — | listed in scope | no |
@@ -787,16 +787,16 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Galileo_Final_Report.pdf | ScrollREVM | unmatched — not counted | — | Scope section lists 'Scroll REVM' with repository URL | no |
 | 1 | External | unmatched — not counted | — | listed in scope | no |
 | 1 | IL1ScrollMessenger | unmatched — not counted | — | listed in scope | no |
-| 1 | L1ScrollMessenger | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6774bc...d8b367` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 1 | L1ScrollMessenger | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6774bcbd5cecef1336b5300fb5186a12ddd8b367` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 1 | EnforcedTxGateway | unmatched — not counted | — | listed in scope | no |
-| 1 | L1CustomERC20Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb2b10a...04b6ff` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 1 | L1ERC1155Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb94f7f...d975b6` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 1 | L1CustomERC20Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb2b10a289a229415a124efdef310c10cb004b6ff` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 1 | L1ERC1155Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb94f7f6abcb811c5ac709de14e37590fccd975b6` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 1 | L1ERC20Gateway | unmatched — not counted | — | listed in scope | no |
-| 1 | L1ERC721Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6260af...21554b` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 1 | L1ETHGateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x7f2b8c...e3e905` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 1 | L1GatewayRouter | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf8b137...e41fd6` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 1 | L1StandardERC20Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xd8a791...b3f8f9` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 1 | L1WETHGateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x7ac440...a9d4fe` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 1 | L1ERC721Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6260af48e8948617b8fa17f4e5cea2d21d21554b` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 1 | L1ETHGateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x7f2b8c31f88b6006c382775eea88297ec1e3e905` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 1 | L1GatewayRouter | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf8b1378579659d8f7ee5f3c929c2f3e332e41fd6` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 1 | L1StandardERC20Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xd8a791fe2be73eb6e6cf1eb0cb3f36adc9b3f8f9` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 1 | L1WETHGateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x7ac440cae8eb6328de4fa621163a792c1ea9d4fe` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 1 | IL1MessageQueue | unmatched — not counted | — | listed in scope | no |
 | 1 | IL2GasPriceOracle | unmatched — not counted | — | listed in scope | no |
 | 1 | IScrollChain | unmatched — not counted | — | listed in scope | no |
@@ -883,19 +883,19 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | 3 | IL1ERC721Gateway | unmatched — not counted | — | listed in diff audit scope | no |
 | 3 | IL1ETHGateway | unmatched — not counted | — | listed in diff audit scope | no |
 | 3 | IL1GatewayRouter | unmatched — not counted | — | listed in diff audit scope | no |
-| 3 | L1CustomERC20Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb2b10a...04b6ff` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 3 | L1ERC1155Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb94f7f...d975b6` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 3 | L1CustomERC20Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb2b10a289a229415a124efdef310c10cb004b6ff` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 3 | L1ERC1155Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb94f7f6abcb811c5ac709de14e37590fccd975b6` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 3 | L1ERC20Gateway | unmatched — not counted | — | listed in diff audit scope | no |
-| 3 | L1ERC721Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6260af...21554b` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 3 | L1ETHGateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x7f2b8c...e3e905` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 3 | L1GatewayRouter | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf8b137...e41fd6` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 3 | L1StandardERC20Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xd8a791...b3f8f9` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 3 | L1WETHGateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x7ac440...a9d4fe` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 3 | L1ERC721Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6260af48e8948617b8fa17f4e5cea2d21d21554b` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 3 | L1ETHGateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x7f2b8c31f88b6006c382775eea88297ec1e3e905` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 3 | L1GatewayRouter | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf8b1378579659d8f7ee5f3c929c2f3e332e41fd6` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 3 | L1StandardERC20Gateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xd8a791fe2be73eb6e6cf1eb0cb3f36adc9b3f8f9` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 3 | L1WETHGateway | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x7ac440cae8eb6328de4fa621163a792c1ea9d4fe` — deployed 2023-10-08 19:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 3 | IL1MessageQueue | unmatched — not counted | — | listed in diff audit scope | no |
 | 3 | L1MessageQueue | unmatched — not counted | — | listed in diff audit scope | no |
 | 3 | ScrollChain | unmatched — not counted | — | listed in diff audit scope | no |
 | 3 | IL1ScrollMessenger | unmatched — not counted | — | listed in diff audit scope | no |
-| 3 | L1ScrollMessenger | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6774bc...d8b367` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 3 | L1ScrollMessenger | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x6774bcbd5cecef1336b5300fb5186a12ddd8b367` — deployed 2023-10-08 19:25:23+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 3 | L2ERC1155Gateway | unmatched — not counted | — | listed in diff audit scope | no |
 | 3 | L2ERC721Gateway | unmatched — not counted | — | listed in diff audit scope | no |
 | 3 | L2ETHGateway | unmatched — not counted | — | listed in diff audit scope | no |
@@ -928,7 +928,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x39c36c...052eca` | L1MessageQueueV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x39c36c9026ac18104839a50c61a4507ea5052eca` | L1MessageQueueV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

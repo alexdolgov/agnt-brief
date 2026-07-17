@@ -89,11 +89,11 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| GeneScience | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-129666 | `0xf97e0a...946a2b` | ⚠️ Unaudited |
-| KittyCore | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-129658 | `0x06012c...7a266d` | ⚠️ Unaudited |
-| Migrations | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-129660 | `0x08ea78...141751` | ⚠️ Unaudited |
-| SaleClockAuction | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-129664 | `0x7163cd...89a9e5` | ⚠️ Unaudited |
-| SiringClockAuction | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-129663 | `0x6b5a1e...2c4aac` | ⚠️ Unaudited |
+| GeneScience | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-129666 | `0xf97e0a5b616dffc913e72455fde9ea8bbe946a2b` | ⚠️ Unaudited |
+| KittyCore | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-129658 | `0x06012c8cf97bead5deae237070f9587f8e7a266d` | ⚠️ Unaudited |
+| Migrations | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-129660 | `0x08ea78fb540fe5361afd39a6b421a0662e141751` | ⚠️ Unaudited |
+| SaleClockAuction | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-129664 | `0x7163cd869f445a0fe0c5049a979c9e27b589a9e5` | ⚠️ Unaudited |
+| SiringClockAuction | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-129663 | `0x6b5a1ed9e51448c1c76dc4ddf24e243d402c4aac` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

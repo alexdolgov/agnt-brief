@@ -52,19 +52,19 @@ The pinned logic-topography run contains 5 contract row(s) across chain-2910, et
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x6c5c4e...5a9388`, chain 1)
-- UnnamedContract (`0x530000...000006`, chain 2818)
-- UnnamedContract (`0x530000...000008`, chain 2818)
-- UnnamedContract (`0x530000...000010`, chain 2818)
-- UnnamedContract (`0x530000...000016`, chain 2818)
-- UnnamedContract (`0x530000...000018`, chain 2818)
-- UnnamedContract (`0x530000...000020`, chain 2818)
-- UnnamedContract (`0xc5e44e...cf426b`, chain 2818)
-- TransparentUpgradeableProxy (`0x1c1ffb...8ade68`, chain 1)
-- TransparentUpgradeableProxy (`0x2c8314...e1b289`, chain 1)
-- TransparentUpgradeableProxy (`0x44c28f...ab2bd8`, chain 1)
-- TransparentUpgradeableProxy (`0x788890...01877f`, chain 1)
-- TransparentUpgradeableProxy (`0xa534ba...b52ef1`, chain 1)
+- UnnamedContract (`0x6c5c4e930b7b53f482b2f2ed5f37cf78c15a9388`, chain 1)
+- UnnamedContract (`0x5300000000000000000000000000000000000006`, chain 2818)
+- UnnamedContract (`0x5300000000000000000000000000000000000008`, chain 2818)
+- UnnamedContract (`0x5300000000000000000000000000000000000010`, chain 2818)
+- UnnamedContract (`0x5300000000000000000000000000000000000016`, chain 2818)
+- UnnamedContract (`0x5300000000000000000000000000000000000018`, chain 2818)
+- UnnamedContract (`0x5300000000000000000000000000000000000020`, chain 2818)
+- UnnamedContract (`0xc5e44e2ffe9523809146ed17d62bb382eccf426b`, chain 2818)
+- TransparentUpgradeableProxy (`0x1c1ffb5828c3a48b54e8910f1c75256a498ade68`, chain 1)
+- TransparentUpgradeableProxy (`0x2c8314f5aada5d7a9d32eefebfc43accabe1b289`, chain 1)
+- TransparentUpgradeableProxy (`0x44c28f61a5c2dd24fc71d7df8e85e18af4ab2bd8`, chain 1)
+- TransparentUpgradeableProxy (`0x788890ba6f105cca373c4ff01055cd34de01877f`, chain 1)
+- TransparentUpgradeableProxy (`0xa534badd09b4c62b7b1c32c41df310aa17b52ef1`, chain 1)
 
 ## Contract Surface Quality
 
@@ -110,17 +110,17 @@ The pinned logic-topography run contains 5 contract row(s) across chain-2910, et
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| L1CrossDomainMessenger | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xdc7136...623304` | ⚠️ Unaudited |
-| L1CustomERC20Gateway | token | project_anchor | own_supporting | 1 | ethereum | unit-389636 | `0xa534ba...b52ef1` | ⚠️ Unaudited |
-| L1ETHGateway | unknown | project_anchor | own_supporting | 1 | ethereum | unit-389634 | `0x1c1ffb...8ade68` | ⚠️ Unaudited |
-| L1GatewayRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x749775...8f8a8a` | ⚠️ Unaudited |
-| L1Staking | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x0dc417...0543f7` | ⚠️ Unaudited |
-| L1StandardERC20Gateway | token | project_anchor | own_supporting | 1 | ethereum | unit-389635 | `0x44c28f...ab2bd8` | ⚠️ Unaudited |
-| L1USDCGateway | unknown | project_anchor | own_supporting | 1 | ethereum | unit-389637 | `0x2c8314...e1b289` | ⚠️ Unaudited |
-| L1WETHGateway | token | project_anchor | own_supporting | 1 | ethereum | unit-389633 | `0x788890...01877f` | ⚠️ Unaudited |
-| Rollup | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x759894...3cef60` | ⚠️ Unaudited |
-| TimelockControllerUpgradeable | governance | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x542675...55b530` | ⚠️ Unaudited |
-| ZkEvmVerifierV1 | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd9f244...3ad692` | ⚠️ Unaudited |
+| L1CrossDomainMessenger | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xdc71366effa760804dcfc3edf87fa2a6f1623304` | ⚠️ Unaudited |
+| L1CustomERC20Gateway | token | project_anchor | own_supporting | 1 | ethereum | unit-389636 | `0xa534badd09b4c62b7b1c32c41df310aa17b52ef1` | ⚠️ Unaudited |
+| L1ETHGateway | unknown | project_anchor | own_supporting | 1 | ethereum | unit-389634 | `0x1c1ffb5828c3a48b54e8910f1c75256a498ade68` | ⚠️ Unaudited |
+| L1GatewayRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x7497756ada7e656ae9f00781af49fc0fd08f8a8a` | ⚠️ Unaudited |
+| L1Staking | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x0dc417f8af88388737c5053ff73f345f080543f7` | ⚠️ Unaudited |
+| L1StandardERC20Gateway | token | project_anchor | own_supporting | 1 | ethereum | unit-389635 | `0x44c28f61a5c2dd24fc71d7df8e85e18af4ab2bd8` | ⚠️ Unaudited |
+| L1USDCGateway | unknown | project_anchor | own_supporting | 1 | ethereum | unit-389637 | `0x2c8314f5aada5d7a9d32eefebfc43accabe1b289` | ⚠️ Unaudited |
+| L1WETHGateway | token | project_anchor | own_supporting | 1 | ethereum | unit-389633 | `0x788890ba6f105cca373c4ff01055cd34de01877f` | ⚠️ Unaudited |
+| Rollup | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x759894ced0e6af42c26668076ffa84d02e3cef60` | ⚠️ Unaudited |
+| TimelockControllerUpgradeable | governance | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x542675e90e269f20ecbb9e0095d4751ac155b530` | ⚠️ Unaudited |
+| ZkEvmVerifierV1 | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd9f24400816c4cc1a3cbb9b851c9b0bab63ad692` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -140,26 +140,26 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389613 | `0x6c5c4e...5a9388` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | morph | unit-389614 | `0x530000...000006` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | morph | unit-389615 | `0x530000...000008` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | morph | unit-389616 | `0x530000...000010` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | morph | unit-389617 | `0x530000...000016` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | morph | unit-389618 | `0x530000...000018` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | morph | unit-389619 | `0x530000...000020` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | morph | unit-389620 | `0xc5e44e...cf426b` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-2910 | unit-389621 | `0x530000...000006` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-2910 | unit-389622 | `0x530000...000008` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-2910 | unit-389623 | `0x530000...000010` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-2910 | unit-389624 | `0x530000...000016` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-2910 | unit-389625 | `0x5de206...d61fee` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-2910 | unit-389626 | `0xc5e26e...7630bc` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | hoodi | unit-389627 | `0x2d14dc...3d60ff` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | hoodi | unit-389628 | `0x4061a8...3de689` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | hoodi | unit-389629 | `0x625849...15d581` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | hoodi | unit-389630 | `0x80a9f2...a58faf` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | hoodi | unit-389631 | `0xb57ea4...ddabe5` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | hoodi | unit-389632 | `0xf4f8e7...e96dee` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389613 | `0x6c5c4e930b7b53f482b2f2ed5f37cf78c15a9388` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | morph | unit-389614 | `0x5300000000000000000000000000000000000006` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | morph | unit-389615 | `0x5300000000000000000000000000000000000008` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | morph | unit-389616 | `0x5300000000000000000000000000000000000010` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | morph | unit-389617 | `0x5300000000000000000000000000000000000016` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | morph | unit-389618 | `0x5300000000000000000000000000000000000018` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | morph | unit-389619 | `0x5300000000000000000000000000000000000020` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | morph | unit-389620 | `0xc5e44e2ffe9523809146ed17d62bb382eccf426b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-2910 | unit-389621 | `0x5300000000000000000000000000000000000006` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-2910 | unit-389622 | `0x5300000000000000000000000000000000000008` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-2910 | unit-389623 | `0x5300000000000000000000000000000000000010` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-2910 | unit-389624 | `0x5300000000000000000000000000000000000016` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-2910 | unit-389625 | `0x5de20686680ed9bbae10cafbc2fddbca3fd61fee` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-2910 | unit-389626 | `0xc5e26e7091333cc3b200f2dc42e17d1f7e7630bc` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | hoodi | unit-389627 | `0x2d14dcfa6c0ecec2b9bbe8c2ee0e422d0a3d60ff` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | hoodi | unit-389628 | `0x4061a8dc9e41f219db4bde7eb3b253165e3de689` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | hoodi | unit-389629 | `0x625849788c16315680f34ee72a5e9961cd15d581` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | hoodi | unit-389630 | `0x80a9f200e457169ff560dc8b4fb2a138bba58faf` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | hoodi | unit-389631 | `0xb57ea443b92242895fafec4e02bb0a59b0ddabe5` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | hoodi | unit-389632 | `0xf4f8e700573c74dd69d4437a7289933a68e96dee` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -178,11 +178,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0xa534ba...b52ef1` | L1CustomERC20Gateway | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x1c1ffb...8ade68` | L1ETHGateway | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x44c28f...ab2bd8` | L1StandardERC20Gateway | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x2c8314...e1b289` | L1USDCGateway | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x788890...01877f` | L1WETHGateway | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xa534badd09b4c62b7b1c32c41df310aa17b52ef1` | L1CustomERC20Gateway | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x1c1ffb5828c3a48b54e8910f1c75256a498ade68` | L1ETHGateway | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x44c28f61a5c2dd24fc71d7df8e85e18af4ab2bd8` | L1StandardERC20Gateway | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x2c8314f5aada5d7a9d32eefebfc43accabe1b289` | L1USDCGateway | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x788890ba6f105cca373c4ff01055cd34de01877f` | L1WETHGateway | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

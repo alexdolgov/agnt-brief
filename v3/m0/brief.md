@@ -52,84 +52,84 @@ The pinned logic-topography run contains 14 contract row(s) across arbitrum, arb
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x0bc305...cc4173`, chain 1)
-- UnnamedContract (`0x866a2b...36be1b`, chain 1)
-- UnnamedContract (`0xaad146...eee8a7`, chain 1)
-- UnnamedContract (`0xb68071...6f6278`, chain 1)
-- UnnamedContract (`0xd925c8...d128fd`, chain 1)
-- UnnamedContract (`0xebdb09...66b14d`, chain 1)
-- UnnamedContract (`0xeff09b...20070d`, chain 1)
-- UnnamedContract (`0x119fbe...81ae2c`, chain 56)
-- UnnamedContract (`0x3349e4...8a4dde`, chain 56)
-- UnnamedContract (`0x36f586...3c2ece`, chain 56)
-- UnnamedContract (`0x437cc3...98b291`, chain 56)
-- UnnamedContract (`0x51dce1...4b0dc3`, chain 56)
-- UnnamedContract (`0x866a2b...36be1b`, chain 56)
-- UnnamedContract (`0xb68071...6f6278`, chain 56)
-- UnnamedContract (`0x119fbe...81ae2c`, chain 143)
-- UnnamedContract (`0x437cc3...98b291`, chain 143)
-- UnnamedContract (`0x77ef4e...bb4b4d`, chain 143)
-- UnnamedContract (`0x866a2b...36be1b`, chain 143)
-- UnnamedContract (`0xb68071...6f6278`, chain 143)
-- UnnamedContract (`0xd925c8...d128fd`, chain 143)
-- UnnamedContract (`0xfcc1d5...180f32`, chain 143)
-- UnnamedContract (`0x119fbe...81ae2c`, chain 999)
-- UnnamedContract (`0x3349e4...8a4dde`, chain 999)
-- UnnamedContract (`0x36f586...3c2ece`, chain 999)
-- UnnamedContract (`0x437cc3...98b291`, chain 999)
-- UnnamedContract (`0x51dce1...4b0dc3`, chain 999)
-- UnnamedContract (`0x866a2b...36be1b`, chain 999)
-- UnnamedContract (`0xb68071...6f6278`, chain 999)
-- UnnamedContract (`0x119fbe...81ae2c`, chain 8453)
-- UnnamedContract (`0x3349e4...8a4dde`, chain 8453)
-- UnnamedContract (`0x437cc3...98b291`, chain 8453)
-- UnnamedContract (`0x866a2b...36be1b`, chain 8453)
-- UnnamedContract (`0xacffec...9d4fdd`, chain 8453)
-- UnnamedContract (`0xb68071...6f6278`, chain 8453)
-- UnnamedContract (`0xd925c8...d128fd`, chain 8453)
-- UnnamedContract (`0x119fbe...81ae2c`, chain 9745)
-- UnnamedContract (`0x3349e4...8a4dde`, chain 9745)
-- UnnamedContract (`0x36f586...3c2ece`, chain 9745)
-- UnnamedContract (`0x437cc3...98b291`, chain 9745)
-- UnnamedContract (`0x51dce1...4b0dc3`, chain 9745)
-- UnnamedContract (`0x866a2b...36be1b`, chain 9745)
-- UnnamedContract (`0xb68071...6f6278`, chain 9745)
-- UnnamedContract (`0xd925c8...d128fd`, chain 9745)
-- UnnamedContract (`0xfcc1d5...180f32`, chain 9745)
-- UnnamedContract (`0x0bc305...cc4173`, chain 42161)
-- UnnamedContract (`0x119fbe...81ae2c`, chain 42161)
-- UnnamedContract (`0x25c8af...a09c2a`, chain 42161)
-- UnnamedContract (`0x3349e4...8a4dde`, chain 42161)
-- UnnamedContract (`0x437cc3...98b291`, chain 42161)
-- UnnamedContract (`0x693cc3...cd9499`, chain 42161)
-- UnnamedContract (`0x866a2b...36be1b`, chain 42161)
-- UnnamedContract (`0xaad146...eee8a7`, chain 42161)
-- UnnamedContract (`0xacffec...9d4fdd`, chain 42161)
-- UnnamedContract (`0xb68071...6f6278`, chain 42161)
-- UnnamedContract (`0xd925c8...d128fd`, chain 42161)
-- UnnamedContract (`0xebdb09...66b14d`, chain 42161)
-- UnnamedContract (`0xeff09b...20070d`, chain 42161)
-- UnnamedContract (`0x119fbe...81ae2c`, chain 59144)
-- UnnamedContract (`0x3349e4...8a4dde`, chain 59144)
-- UnnamedContract (`0x36f586...3c2ece`, chain 59144)
-- UnnamedContract (`0x437cc3...98b291`, chain 59144)
-- UnnamedContract (`0x51dce1...4b0dc3`, chain 59144)
-- UnnamedContract (`0x866a2b...36be1b`, chain 59144)
-- UnnamedContract (`0xb68071...6f6278`, chain 59144)
-- DistributionVault (`0xd7298f...caa34f`, chain 1)
-- EmergencyGovernor (`0x886d40...cdf90a`, chain 1)
-- ERC1967Proxy (`0x36f586...3c2ece`, chain 1)
-- ERC1967Proxy (`0xacffec...9d4fdd`, chain 1)
-- HyperlaneBridge (`0x51dce1...4b0dc3`, chain 1)
-- MinterGateway (`0xf7f963...19f04e`, chain 1)
-- PowerToken (`0x5983b8...4c5b03`, chain 1)
-- Proxy (`0x437cc3...98b291`, chain 1)
-- Registrar (`0x119fbe...81ae2c`, chain 1)
-- StandardGovernor (`0xb024ac...1da016`, chain 1)
-- TransparentUpgradeableProxy (`0x25c8af...a09c2a`, chain 1)
-- TransparentUpgradeableProxy (`0x693cc3...cd9499`, chain 1)
-- ZeroGovernor (`0xa0dafa...8b80fe`, chain 1)
-- ZeroToken (`0x988567...0492be`, chain 1)
+- UnnamedContract (`0x0bc305e7e13113caed3f5486849e9518a1cc4173`, chain 1)
+- UnnamedContract (`0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b`, chain 1)
+- UnnamedContract (`0xaad1466fe33d373189fb9dcc47270e608feee8a7`, chain 1)
+- UnnamedContract (`0xb6807116b3b1b321a390594e31ecd6e0076f6278`, chain 1)
+- UnnamedContract (`0xd925c84b55e4e44a53749ff5f2a5a13f63d128fd`, chain 1)
+- UnnamedContract (`0xebdb0942ce16386ab90718c7bd10c91cdb66b14d`, chain 1)
+- UnnamedContract (`0xeff09b0c726789f4c123397c04f5ed4a9a20070d`, chain 1)
+- UnnamedContract (`0x119fbeedd4f4f4298fb59b720d5654442b81ae2c`, chain 56)
+- UnnamedContract (`0x3349e443068f76666789c4f76f00d9c4f38a4dde`, chain 56)
+- UnnamedContract (`0x36f586a30502ae3afb555b8aa4dcc05d233c2ece`, chain 56)
+- UnnamedContract (`0x437cc33344a0b27a429f795ff6b469c72698b291`, chain 56)
+- UnnamedContract (`0x51dce104e5ba88fabc19a2c519f955bb834b0dc3`, chain 56)
+- UnnamedContract (`0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b`, chain 56)
+- UnnamedContract (`0xb6807116b3b1b321a390594e31ecd6e0076f6278`, chain 56)
+- UnnamedContract (`0x119fbeedd4f4f4298fb59b720d5654442b81ae2c`, chain 143)
+- UnnamedContract (`0x437cc33344a0b27a429f795ff6b469c72698b291`, chain 143)
+- UnnamedContract (`0x77ef4e9d37524069f81890c537a5c5d390bb4b4d`, chain 143)
+- UnnamedContract (`0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b`, chain 143)
+- UnnamedContract (`0xb6807116b3b1b321a390594e31ecd6e0076f6278`, chain 143)
+- UnnamedContract (`0xd925c84b55e4e44a53749ff5f2a5a13f63d128fd`, chain 143)
+- UnnamedContract (`0xfcc1d596ad6cab0b5394eaa447d8626813180f32`, chain 143)
+- UnnamedContract (`0x119fbeedd4f4f4298fb59b720d5654442b81ae2c`, chain 999)
+- UnnamedContract (`0x3349e443068f76666789c4f76f00d9c4f38a4dde`, chain 999)
+- UnnamedContract (`0x36f586a30502ae3afb555b8aa4dcc05d233c2ece`, chain 999)
+- UnnamedContract (`0x437cc33344a0b27a429f795ff6b469c72698b291`, chain 999)
+- UnnamedContract (`0x51dce104e5ba88fabc19a2c519f955bb834b0dc3`, chain 999)
+- UnnamedContract (`0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b`, chain 999)
+- UnnamedContract (`0xb6807116b3b1b321a390594e31ecd6e0076f6278`, chain 999)
+- UnnamedContract (`0x119fbeedd4f4f4298fb59b720d5654442b81ae2c`, chain 8453)
+- UnnamedContract (`0x3349e443068f76666789c4f76f00d9c4f38a4dde`, chain 8453)
+- UnnamedContract (`0x437cc33344a0b27a429f795ff6b469c72698b291`, chain 8453)
+- UnnamedContract (`0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b`, chain 8453)
+- UnnamedContract (`0xacffec28c4eee21c889a4e6c0704c540ed9d4fdd`, chain 8453)
+- UnnamedContract (`0xb6807116b3b1b321a390594e31ecd6e0076f6278`, chain 8453)
+- UnnamedContract (`0xd925c84b55e4e44a53749ff5f2a5a13f63d128fd`, chain 8453)
+- UnnamedContract (`0x119fbeedd4f4f4298fb59b720d5654442b81ae2c`, chain 9745)
+- UnnamedContract (`0x3349e443068f76666789c4f76f00d9c4f38a4dde`, chain 9745)
+- UnnamedContract (`0x36f586a30502ae3afb555b8aa4dcc05d233c2ece`, chain 9745)
+- UnnamedContract (`0x437cc33344a0b27a429f795ff6b469c72698b291`, chain 9745)
+- UnnamedContract (`0x51dce104e5ba88fabc19a2c519f955bb834b0dc3`, chain 9745)
+- UnnamedContract (`0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b`, chain 9745)
+- UnnamedContract (`0xb6807116b3b1b321a390594e31ecd6e0076f6278`, chain 9745)
+- UnnamedContract (`0xd925c84b55e4e44a53749ff5f2a5a13f63d128fd`, chain 9745)
+- UnnamedContract (`0xfcc1d596ad6cab0b5394eaa447d8626813180f32`, chain 9745)
+- UnnamedContract (`0x0bc305e7e13113caed3f5486849e9518a1cc4173`, chain 42161)
+- UnnamedContract (`0x119fbeedd4f4f4298fb59b720d5654442b81ae2c`, chain 42161)
+- UnnamedContract (`0x25c8affc5a63d8e047c12918c0438aba5aa09c2a`, chain 42161)
+- UnnamedContract (`0x3349e443068f76666789c4f76f00d9c4f38a4dde`, chain 42161)
+- UnnamedContract (`0x437cc33344a0b27a429f795ff6b469c72698b291`, chain 42161)
+- UnnamedContract (`0x693cc3305342b02ac1549b509a704ff944cd9499`, chain 42161)
+- UnnamedContract (`0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b`, chain 42161)
+- UnnamedContract (`0xaad1466fe33d373189fb9dcc47270e608feee8a7`, chain 42161)
+- UnnamedContract (`0xacffec28c4eee21c889a4e6c0704c540ed9d4fdd`, chain 42161)
+- UnnamedContract (`0xb6807116b3b1b321a390594e31ecd6e0076f6278`, chain 42161)
+- UnnamedContract (`0xd925c84b55e4e44a53749ff5f2a5a13f63d128fd`, chain 42161)
+- UnnamedContract (`0xebdb0942ce16386ab90718c7bd10c91cdb66b14d`, chain 42161)
+- UnnamedContract (`0xeff09b0c726789f4c123397c04f5ed4a9a20070d`, chain 42161)
+- UnnamedContract (`0x119fbeedd4f4f4298fb59b720d5654442b81ae2c`, chain 59144)
+- UnnamedContract (`0x3349e443068f76666789c4f76f00d9c4f38a4dde`, chain 59144)
+- UnnamedContract (`0x36f586a30502ae3afb555b8aa4dcc05d233c2ece`, chain 59144)
+- UnnamedContract (`0x437cc33344a0b27a429f795ff6b469c72698b291`, chain 59144)
+- UnnamedContract (`0x51dce104e5ba88fabc19a2c519f955bb834b0dc3`, chain 59144)
+- UnnamedContract (`0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b`, chain 59144)
+- UnnamedContract (`0xb6807116b3b1b321a390594e31ecd6e0076f6278`, chain 59144)
+- DistributionVault (`0xd7298f620b0f752cf41bd818a16c756d9dcaa34f`, chain 1)
+- EmergencyGovernor (`0x886d405949f709bc3f4451491bdd07ff51cdf90a`, chain 1)
+- ERC1967Proxy (`0x36f586a30502ae3afb555b8aa4dcc05d233c2ece`, chain 1)
+- ERC1967Proxy (`0xacffec28c4eee21c889a4e6c0704c540ed9d4fdd`, chain 1)
+- HyperlaneBridge (`0x51dce104e5ba88fabc19a2c519f955bb834b0dc3`, chain 1)
+- MinterGateway (`0xf7f9638cb444d65e5a40bf5ff98ebe4ff319f04e`, chain 1)
+- PowerToken (`0x5983b89fa184f14917013b9c3062afd9434c5b03`, chain 1)
+- Proxy (`0x437cc33344a0b27a429f795ff6b469c72698b291`, chain 1)
+- Registrar (`0x119fbeedd4f4f4298fb59b720d5654442b81ae2c`, chain 1)
+- StandardGovernor (`0xb024ac5a7c6bc92fbacc8c3387e628a07e1da016`, chain 1)
+- TransparentUpgradeableProxy (`0x25c8affc5a63d8e047c12918c0438aba5aa09c2a`, chain 1)
+- TransparentUpgradeableProxy (`0x693cc3305342b02ac1549b509a704ff944cd9499`, chain 1)
+- ZeroGovernor (`0xa0dafaeea4a1d44534e1b9227e19cae6358b80fe`, chain 1)
+- ZeroToken (`0x988567fe094570cce1ffda29d1f2d842b70492be`, chain 1)
 
 ## Contract Surface Quality
 
@@ -180,44 +180,44 @@ The pinned logic-topography run contains 14 contract row(s) across arbitrum, arb
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| DistributionVault | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388654 | `0xd7298f...caa34f` | ✅ Audited |
-| EmergencyGovernor | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388648 | `0x886d40...cdf90a` | ✅ Audited |
-| HyperlaneBridge | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388645 | `0x51dce1...4b0dc3` | ✅ Audited |
-| MinterGateway | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388658 | `0xf7f963...19f04e` | ✅ Audited |
-| PowerToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388646 | `0x5983b8...4c5b03` | ✅ Audited |
-| StandardGovernor | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388652 | `0xb024ac...1da016` | ✅ Audited |
-| ZeroGovernor | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388650 | `0xa0dafa...8b80fe` | ✅ Audited |
-| ZeroToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388649 | `0x988567...0492be` | ✅ Audited |
+| DistributionVault | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388654 | `0xd7298f620b0f752cf41bd818a16c756d9dcaa34f` | ✅ Audited |
+| EmergencyGovernor | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388648 | `0x886d405949f709bc3f4451491bdd07ff51cdf90a` | ✅ Audited |
+| HyperlaneBridge | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388645 | `0x51dce104e5ba88fabc19a2c519f955bb834b0dc3` | ✅ Audited |
+| MinterGateway | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388658 | `0xf7f9638cb444d65e5a40bf5ff98ebe4ff319f04e` | ✅ Audited |
+| PowerToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388646 | `0x5983b89fa184f14917013b9c3062afd9434c5b03` | ✅ Audited |
+| StandardGovernor | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388652 | `0xb024ac5a7c6bc92fbacc8c3387e628a07e1da016` | ✅ Audited |
+| ZeroGovernor | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388650 | `0xa0dafaeea4a1d44534e1b9227e19cae6358b80fe` | ✅ Audited |
+| ZeroToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388649 | `0x988567fe094570cce1ffda29d1f2d842b70492be` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (25)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-388736 | `0x36f586...3c2ece` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-388734 | `0xacffec...9d4fdd` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | optimism | n/a | `0x3349e4...8a4dde` | ⚠️ Unaudited |
-| ExecutorEntryPoint | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x4db060...fda979` | ⚠️ Unaudited |
-| ExtensionBeacon | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xb82328...79a931` | ⚠️ Unaudited |
-| HyperlaneBridgeAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0x01ffa0...403b6d` | ⚠️ Unaudited |
-| JMIExtension | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0xf2414b...973a27` | ⚠️ Unaudited |
-| LayerZeroBridgeAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x77ef4e...bb4b4d` | ⚠️ Unaudited |
-| Migrator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x1051ad...fd1029` | ⚠️ Unaudited |
-| MToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x23a62a...234bc8` | ⚠️ Unaudited |
-| MultiMint | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x4ffbc3...4033ef` | ⚠️ Unaudited |
-| MUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x23d816...53ee79` | ⚠️ Unaudited |
-| Portal | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x23ca66...bba468` | ⚠️ Unaudited |
-| Proxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-388735 | `0x437cc3...98b291` | ⚠️ Unaudited |
-| PYUSDX | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x8dfb7c...71c5e0` | ⚠️ Unaudited |
-| Registrar | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388643 | `0x119fbe...81ae2c` | ⚠️ Unaudited |
-| SpokePortal | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x01ffa0...403b6d` | ⚠️ Unaudited |
-| SpokePortalV1StorageCleaner | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x593ffa...ea7bae` | ⚠️ Unaudited |
-| SwapFacility | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x07dd9e...8cd146` | ⚠️ Unaudited |
-| TimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3e98f1...2cd52a` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-388733 | `0x25c8af...a09c2a` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-388737 | `0x693cc3...cd9499` | ⚠️ Unaudited |
-| UniswapV3SwapAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x023bd2...bc4f4b` | ⚠️ Unaudited |
-| USDZ | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xd87c75...ff1bda` | ⚠️ Unaudited |
-| YieldToOne | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xc560c9...678803` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-388736 | `0x36f586a30502ae3afb555b8aa4dcc05d233c2ece` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-388734 | `0xacffec28c4eee21c889a4e6c0704c540ed9d4fdd` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | optimism | n/a | `0x3349e443068f76666789c4f76f00d9c4f38a4dde` | ⚠️ Unaudited |
+| ExecutorEntryPoint | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x4db06053edb413899454bad5bf25213b22fda979` | ⚠️ Unaudited |
+| ExtensionBeacon | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xb823280379f3e057ccae4ba5f6f772528979a931` | ⚠️ Unaudited |
+| HyperlaneBridgeAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0x01ffa0003a21f14e039d249af4f4d770f8403b6d` | ⚠️ Unaudited |
+| JMIExtension | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0xf2414b88c565b53fbb3923c96bdf826333973a27` | ⚠️ Unaudited |
+| LayerZeroBridgeAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x77ef4e9d37524069f81890c537a5c5d390bb4b4d` | ⚠️ Unaudited |
+| Migrator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x1051adbfd1e9981d08d3d64c221878b2befd1029` | ⚠️ Unaudited |
+| MToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x23a62a85fa6d6bfa78ae2924060c051e28234bc8` | ⚠️ Unaudited |
+| MultiMint | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x4ffbc316cf29e8eb39cbf819cfd3d5f5b34033ef` | ⚠️ Unaudited |
+| MUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x23d8162e084aa33d8ef6fcc0ab33f4028a53ee79` | ⚠️ Unaudited |
+| Portal | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x23ca665c8a73292fc7ac2cc4493d2ce883bba468` | ⚠️ Unaudited |
+| Proxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-388735 | `0x437cc33344a0b27a429f795ff6b469c72698b291` | ⚠️ Unaudited |
+| PYUSDX | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x8dfb7c8ce5e67ace965520b134b4aca8fd71c5e0` | ⚠️ Unaudited |
+| Registrar | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388643 | `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` | ⚠️ Unaudited |
+| SpokePortal | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x01ffa0003a21f14e039d249af4f4d770f8403b6d` | ⚠️ Unaudited |
+| SpokePortalV1StorageCleaner | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x593ffa1ad180c3c872628761697c5288fdea7bae` | ⚠️ Unaudited |
+| SwapFacility | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x07dd9e3b00002f9cb178670159d4e6fe0d8cd146` | ⚠️ Unaudited |
+| TimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3e98f104dcec706d087cc58db1e92ba7fc2cd52a` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-388733 | `0x25c8affc5a63d8e047c12918c0438aba5aa09c2a` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-388737 | `0x693cc3305342b02ac1549b509a704ff944cd9499` | ⚠️ Unaudited |
+| UniswapV3SwapAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x023bd2f0a95373c55fc8d1c5f8e60cc3b9bc4f4b` | ⚠️ Unaudited |
+| USDZ | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xd87c75a92db19fe334fe7812890f893449ff1bda` | ⚠️ Unaudited |
+| YieldToOne | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xc560c9b8ed6d589ee676d279f2649a236c678803` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -237,90 +237,90 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388642 | `0x0bc305...cc4173` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x17c4de...0bee26` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x733183...410bf8` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388647 | `0x866a2b...36be1b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388651 | `0xaad146...eee8a7` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388653 | `0xb68071...6f6278` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388655 | `0xd925c8...d128fd` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388656 | `0xebdb09...66b14d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388657 | `0xeff09b...20070d` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfcc1d5...180f32` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-388694 | `0x119fbe...81ae2c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-388695 | `0x3349e4...8a4dde` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-388696 | `0x36f586...3c2ece` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-388697 | `0x437cc3...98b291` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-388698 | `0x51dce1...4b0dc3` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-388699 | `0x866a2b...36be1b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-388700 | `0xb68071...6f6278` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-388667 | `0x119fbe...81ae2c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-388668 | `0x437cc3...98b291` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-388669 | `0x77ef4e...bb4b4d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-388670 | `0x866a2b...36be1b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-388671 | `0xb68071...6f6278` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-388672 | `0xd925c8...d128fd` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-388673 | `0xfcc1d5...180f32` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-388726 | `0x119fbe...81ae2c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-388727 | `0x3349e4...8a4dde` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-388728 | `0x36f586...3c2ece` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-388729 | `0x437cc3...98b291` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-388730 | `0x51dce1...4b0dc3` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-388731 | `0x866a2b...36be1b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-388732 | `0xb68071...6f6278` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-388708 | `0x119fbe...81ae2c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-388709 | `0x3349e4...8a4dde` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-388710 | `0x437cc3...98b291` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-388711 | `0x866a2b...36be1b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-388712 | `0xacffec...9d4fdd` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-388713 | `0xb68071...6f6278` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-388714 | `0xd925c8...d128fd` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-388715 | `0x119fbe...81ae2c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-388716 | `0x3349e4...8a4dde` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-388717 | `0x36f586...3c2ece` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-388718 | `0x437cc3...98b291` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-388719 | `0x51dce1...4b0dc3` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0x77ef4e...bb4b4d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-388720 | `0x866a2b...36be1b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-388722 | `0xb68071...6f6278` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-388723 | `0xd925c8...d128fd` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-388724 | `0xfcc1d5...180f32` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388674 | `0x0bc305...cc4173` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388675 | `0x119fbe...81ae2c` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x17c4de...0bee26` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388676 | `0x25c8af...a09c2a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388677 | `0x3349e4...8a4dde` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388678 | `0x437cc3...98b291` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388679 | `0x693cc3...cd9499` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x733183...410bf8` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388680 | `0x866a2b...36be1b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388681 | `0xaad146...eee8a7` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388682 | `0xacffec...9d4fdd` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388683 | `0xb68071...6f6278` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388684 | `0xd925c8...d128fd` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388685 | `0xebdb09...66b14d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388686 | `0xeff09b...20070d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-388701 | `0x119fbe...81ae2c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-388702 | `0x3349e4...8a4dde` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-388703 | `0x36f586...3c2ece` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-388704 | `0x437cc3...98b291` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-388705 | `0x51dce1...4b0dc3` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-388706 | `0x866a2b...36be1b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-388707 | `0xb68071...6f6278` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | arbitrum-sepolia | unit-388687 | `0x0bc305...cc4173` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | arbitrum-sepolia | unit-388688 | `0x25c8af...a09c2a` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | arbitrum-sepolia | unit-388689 | `0x693cc3...cd9499` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | arbitrum-sepolia | unit-388690 | `0x733183...410bf8` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | arbitrum-sepolia | unit-388691 | `0xaad146...eee8a7` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | arbitrum-sepolia | unit-388692 | `0xebdb09...66b14d` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | arbitrum-sepolia | unit-388693 | `0xeff09b...20070d` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-388659 | `0x0bc305...cc4173` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-388660 | `0x17c4de...0bee26` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-388661 | `0x25c8af...a09c2a` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-388662 | `0x693cc3...cd9499` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-388664 | `0xaad146...eee8a7` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-388665 | `0xebdb09...66b14d` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-388666 | `0xeff09b...20070d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388642 | `0x0bc305e7e13113caed3f5486849e9518a1cc4173` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x17c4de4e1f3ba848f447151635e1bc2e120bee26` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x733183c4b50d4426b1118cc1b412ef7eb6410bf8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388647 | `0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388651 | `0xaad1466fe33d373189fb9dcc47270e608feee8a7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388653 | `0xb6807116b3b1b321a390594e31ecd6e0076f6278` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388655 | `0xd925c84b55e4e44a53749ff5f2a5a13f63d128fd` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388656 | `0xebdb0942ce16386ab90718c7bd10c91cdb66b14d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388657 | `0xeff09b0c726789f4c123397c04f5ed4a9a20070d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfcc1d596ad6cab0b5394eaa447d8626813180f32` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-388694 | `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-388695 | `0x3349e443068f76666789c4f76f00d9c4f38a4dde` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-388696 | `0x36f586a30502ae3afb555b8aa4dcc05d233c2ece` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-388697 | `0x437cc33344a0b27a429f795ff6b469c72698b291` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-388698 | `0x51dce104e5ba88fabc19a2c519f955bb834b0dc3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-388699 | `0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-388700 | `0xb6807116b3b1b321a390594e31ecd6e0076f6278` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-388667 | `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-388668 | `0x437cc33344a0b27a429f795ff6b469c72698b291` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-388669 | `0x77ef4e9d37524069f81890c537a5c5d390bb4b4d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-388670 | `0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-388671 | `0xb6807116b3b1b321a390594e31ecd6e0076f6278` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-388672 | `0xd925c84b55e4e44a53749ff5f2a5a13f63d128fd` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-388673 | `0xfcc1d596ad6cab0b5394eaa447d8626813180f32` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-388726 | `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-388727 | `0x3349e443068f76666789c4f76f00d9c4f38a4dde` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-388728 | `0x36f586a30502ae3afb555b8aa4dcc05d233c2ece` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-388729 | `0x437cc33344a0b27a429f795ff6b469c72698b291` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-388730 | `0x51dce104e5ba88fabc19a2c519f955bb834b0dc3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-388731 | `0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-388732 | `0xb6807116b3b1b321a390594e31ecd6e0076f6278` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-388708 | `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-388709 | `0x3349e443068f76666789c4f76f00d9c4f38a4dde` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-388710 | `0x437cc33344a0b27a429f795ff6b469c72698b291` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-388711 | `0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-388712 | `0xacffec28c4eee21c889a4e6c0704c540ed9d4fdd` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-388713 | `0xb6807116b3b1b321a390594e31ecd6e0076f6278` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-388714 | `0xd925c84b55e4e44a53749ff5f2a5a13f63d128fd` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-388715 | `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-388716 | `0x3349e443068f76666789c4f76f00d9c4f38a4dde` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-388717 | `0x36f586a30502ae3afb555b8aa4dcc05d233c2ece` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-388718 | `0x437cc33344a0b27a429f795ff6b469c72698b291` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-388719 | `0x51dce104e5ba88fabc19a2c519f955bb834b0dc3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0x77ef4e9d37524069f81890c537a5c5d390bb4b4d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-388720 | `0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-388722 | `0xb6807116b3b1b321a390594e31ecd6e0076f6278` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-388723 | `0xd925c84b55e4e44a53749ff5f2a5a13f63d128fd` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-388724 | `0xfcc1d596ad6cab0b5394eaa447d8626813180f32` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388674 | `0x0bc305e7e13113caed3f5486849e9518a1cc4173` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388675 | `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x17c4de4e1f3ba848f447151635e1bc2e120bee26` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388676 | `0x25c8affc5a63d8e047c12918c0438aba5aa09c2a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388677 | `0x3349e443068f76666789c4f76f00d9c4f38a4dde` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388678 | `0x437cc33344a0b27a429f795ff6b469c72698b291` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388679 | `0x693cc3305342b02ac1549b509a704ff944cd9499` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x733183c4b50d4426b1118cc1b412ef7eb6410bf8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388680 | `0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388681 | `0xaad1466fe33d373189fb9dcc47270e608feee8a7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388682 | `0xacffec28c4eee21c889a4e6c0704c540ed9d4fdd` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388683 | `0xb6807116b3b1b321a390594e31ecd6e0076f6278` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388684 | `0xd925c84b55e4e44a53749ff5f2a5a13f63d128fd` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388685 | `0xebdb0942ce16386ab90718c7bd10c91cdb66b14d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388686 | `0xeff09b0c726789f4c123397c04f5ed4a9a20070d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-388701 | `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-388702 | `0x3349e443068f76666789c4f76f00d9c4f38a4dde` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-388703 | `0x36f586a30502ae3afb555b8aa4dcc05d233c2ece` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-388704 | `0x437cc33344a0b27a429f795ff6b469c72698b291` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-388705 | `0x51dce104e5ba88fabc19a2c519f955bb834b0dc3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-388706 | `0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-388707 | `0xb6807116b3b1b321a390594e31ecd6e0076f6278` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | arbitrum-sepolia | unit-388687 | `0x0bc305e7e13113caed3f5486849e9518a1cc4173` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | arbitrum-sepolia | unit-388688 | `0x25c8affc5a63d8e047c12918c0438aba5aa09c2a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | arbitrum-sepolia | unit-388689 | `0x693cc3305342b02ac1549b509a704ff944cd9499` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | arbitrum-sepolia | unit-388690 | `0x733183c4b50d4426b1118cc1b412ef7eb6410bf8` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | arbitrum-sepolia | unit-388691 | `0xaad1466fe33d373189fb9dcc47270e608feee8a7` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | arbitrum-sepolia | unit-388692 | `0xebdb0942ce16386ab90718c7bd10c91cdb66b14d` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | arbitrum-sepolia | unit-388693 | `0xeff09b0c726789f4c123397c04f5ed4a9a20070d` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-388659 | `0x0bc305e7e13113caed3f5486849e9518a1cc4173` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-388660 | `0x17c4de4e1f3ba848f447151635e1bc2e120bee26` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-388661 | `0x25c8affc5a63d8e047c12918c0438aba5aa09c2a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-388662 | `0x693cc3305342b02ac1549b509a704ff944cd9499` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-388664 | `0xaad1466fe33d373189fb9dcc47270e608feee8a7` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-388665 | `0xebdb0942ce16386ab90718c7bd10c91cdb66b14d` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-388666 | `0xeff09b0c726789f4c123397c04f5ed4a9a20070d` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -442,15 +442,15 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| | Quantstamp | Jan 2024 - March 2024 | [Quantstamp\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | Registrar | ambiguous — not counted | Registrar (alternative) `0x119fbe...81ae2c` — deployed 2024-05-07 16:17:59+03 — liveness: live (code_present_context)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| | Quantstamp | Jan 2024 - March 2024 | [Quantstamp\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | Registrar | ambiguous — not counted | Registrar (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — deployed 2024-05-07 16:17:59+03 — liveness: live (code_present_context)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | | Quantstamp | Jan 2024 - March 2024 | [Quantstamp\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | PowerTokenDeployer | unmatched — not counted | — | listed in scope | no |
-| | Quantstamp | Jan 2024 - March 2024 | [Quantstamp\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | PowerToken | own contract | PowerToken (selected) `0x5983b8...4c5b03` — deployed 2024-05-07 16:16:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| | Quantstamp | Jan 2024 - March 2024 | [Quantstamp\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | StandardGovernor | own contract | StandardGovernor (selected) `0xb024ac...1da016` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Quantstamp | Jan 2024 - March 2024 | [Quantstamp\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | PowerToken | own contract | PowerToken (selected) `0x5983b89fa184f14917013b9c3062afd9434c5b03` — deployed 2024-05-07 16:16:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Quantstamp | Jan 2024 - March 2024 | [Quantstamp\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | StandardGovernor | own contract | StandardGovernor (selected) `0xb024ac5a7c6bc92fbacc8c3387e628a07e1da016` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | Quantstamp | Jan 2024 - March 2024 | [Quantstamp\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | StandardGovernorDeployer | unmatched — not counted | — | listed in scope | no |
-| | Quantstamp | Jan 2024 - March 2024 | [Quantstamp\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | ZeroToken | own contract | ZeroToken (selected) `0x988567...0492be` — deployed 2024-05-07 16:17:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| | Quantstamp | Jan 2024 - March 2024 | [Quantstamp\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | ZeroGovernor | own contract | ZeroGovernor (selected) `0xa0dafa...8b80fe` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| | Quantstamp | Jan 2024 - March 2024 | [Quantstamp\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | DistributionVault | own contract | DistributionVault (selected) `0xd7298f...caa34f` — deployed 2024-05-07 16:17:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| | Quantstamp | Jan 2024 - March 2024 | [Quantstamp\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | EmergencyGovernor | own contract | EmergencyGovernor (selected) `0x886d40...cdf90a` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Quantstamp | Jan 2024 - March 2024 | [Quantstamp\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | ZeroToken | own contract | ZeroToken (selected) `0x988567fe094570cce1ffda29d1f2d842b70492be` — deployed 2024-05-07 16:17:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Quantstamp | Jan 2024 - March 2024 | [Quantstamp\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | ZeroGovernor | own contract | ZeroGovernor (selected) `0xa0dafaeea4a1d44534e1b9227e19cae6358b80fe` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Quantstamp | Jan 2024 - March 2024 | [Quantstamp\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | DistributionVault | own contract | DistributionVault (selected) `0xd7298f620b0f752cf41bd818a16c756d9dcaa34f` — deployed 2024-05-07 16:17:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Quantstamp | Jan 2024 - March 2024 | [Quantstamp\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | EmergencyGovernor | own contract | EmergencyGovernor (selected) `0x886d405949f709bc3f4451491bdd07ff51cdf90a` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | Quantstamp | Jan 2024 - March 2024 | [Quantstamp\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | EmergencyGovernorDeployer | unmatched — not counted | — | listed in scope | no |
 | | Quantstamp | Jan 2024 - March 2024 | [Quantstamp\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | PowerBootstrapToken | unmatched — not counted | — | listed in scope | no |
 | | Quantstamp | Jan 2024 - March 2024 | [Quantstamp\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | IDeployer | unmatched — not counted | — | listed in scope | no |
@@ -491,7 +491,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | | Quantstamp | Jan 2024 - March 2024 | [Quantstamp\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | IERC1271 | unmatched — not counted | — | listed in scope | no |
 | | Quantstamp | Jan 2024 - March 2024 | [Quantstamp\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | UIntMath | unmatched — not counted | — | listed in scope | no |
 | | Quantstamp | Jan 2024 - March 2024 | [Quantstamp\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | SignatureChecker | unmatched — not counted | — | listed in scope | no |
-| | Quantstamp | Jan 2024 - March 2024 | [Quantstamp\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | MinterGateway | own contract | MinterGateway (selected) `0xf7f963...19f04e` — deployed 2024-05-07 16:19:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Quantstamp | Jan 2024 - March 2024 | [Quantstamp\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | MinterGateway | own contract | MinterGateway (selected) `0xf7f9638cb444d65e5a40bf5ff98ebe4ff319f04e` — deployed 2024-05-07 16:19:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | Quantstamp | Jan 2024 - March 2024 | [Quantstamp\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | MToken | unmatched — not counted | — | listed in scope | no |
 | | Quantstamp | Jan 2024 - March 2024 | [Quantstamp\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | IContinuousIndexing | unmatched — not counted | — | listed in scope | no |
 | | Quantstamp | Jan 2024 - March 2024 | [Quantstamp\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | ITTGRegistrar | unmatched — not counted | — | listed in scope | no |
@@ -525,18 +525,18 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | | Three Sigma | Jan 2024 - March 2024 | [ThreeSigma\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | EpochBasedVoteToken | unmatched — not counted | — | listed in scope table | no |
 | | Three Sigma | Jan 2024 - March 2024 | [ThreeSigma\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | ERC5805 | unmatched — not counted | — | listed in scope table | no |
 | | Three Sigma | Jan 2024 - March 2024 | [ThreeSigma\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | ThresholdGovernor | unmatched — not counted | — | listed in scope table | no |
-| | Three Sigma | Jan 2024 - March 2024 | [ThreeSigma\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | DistributionVault | own contract | DistributionVault (selected) `0xd7298f...caa34f` — deployed 2024-05-07 16:17:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| | Three Sigma | Jan 2024 - March 2024 | [ThreeSigma\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | EmergencyGovernor | own contract | EmergencyGovernor (selected) `0x886d40...cdf90a` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Three Sigma | Jan 2024 - March 2024 | [ThreeSigma\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | DistributionVault | own contract | DistributionVault (selected) `0xd7298f620b0f752cf41bd818a16c756d9dcaa34f` — deployed 2024-05-07 16:17:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Three Sigma | Jan 2024 - March 2024 | [ThreeSigma\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | EmergencyGovernor | own contract | EmergencyGovernor (selected) `0x886d405949f709bc3f4451491bdd07ff51cdf90a` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | Three Sigma | Jan 2024 - March 2024 | [ThreeSigma\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | EmergencyGovernorDeployer | unmatched — not counted | — | listed in scope table | no |
 | | Three Sigma | Jan 2024 - March 2024 | [ThreeSigma\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | PureEpochs | unmatched — not counted | — | listed in scope table | no |
 | | Three Sigma | Jan 2024 - March 2024 | [ThreeSigma\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | PowerBootstrapToken | unmatched — not counted | — | listed in scope table | no |
-| | Three Sigma | Jan 2024 - March 2024 | [ThreeSigma\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | PowerToken | own contract | PowerToken (selected) `0x5983b8...4c5b03` — deployed 2024-05-07 16:16:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Three Sigma | Jan 2024 - March 2024 | [ThreeSigma\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | PowerToken | own contract | PowerToken (selected) `0x5983b89fa184f14917013b9c3062afd9434c5b03` — deployed 2024-05-07 16:16:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | Three Sigma | Jan 2024 - March 2024 | [ThreeSigma\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | PowerTokenDeployer | unmatched — not counted | — | listed in scope table | no |
-| | Three Sigma | Jan 2024 - March 2024 | [ThreeSigma\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | Registrar | ambiguous — not counted | Registrar (alternative) `0x119fbe...81ae2c` — deployed 2024-05-07 16:17:59+03 — liveness: live (code_present_context)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| | Three Sigma | Jan 2024 - March 2024 | [ThreeSigma\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | StandardGovernor | own contract | StandardGovernor (selected) `0xb024ac...1da016` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Three Sigma | Jan 2024 - March 2024 | [ThreeSigma\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | Registrar | ambiguous — not counted | Registrar (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — deployed 2024-05-07 16:17:59+03 — liveness: live (code_present_context)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| | Three Sigma | Jan 2024 - March 2024 | [ThreeSigma\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | StandardGovernor | own contract | StandardGovernor (selected) `0xb024ac5a7c6bc92fbacc8c3387e628a07e1da016` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | Three Sigma | Jan 2024 - March 2024 | [ThreeSigma\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | StandardGovernorDeployer | unmatched — not counted | — | listed in scope table | no |
-| | Three Sigma | Jan 2024 - March 2024 | [ThreeSigma\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | ZeroGovernor | own contract | ZeroGovernor (selected) `0xa0dafa...8b80fe` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| | Three Sigma | Jan 2024 - March 2024 | [ThreeSigma\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | ZeroToken | own contract | ZeroToken (selected) `0x988567...0492be` — deployed 2024-05-07 16:17:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Three Sigma | Jan 2024 - March 2024 | [ThreeSigma\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | ZeroGovernor | own contract | ZeroGovernor (selected) `0xa0dafaeea4a1d44534e1b9227e19cae6358b80fe` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Three Sigma | Jan 2024 - March 2024 | [ThreeSigma\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | ZeroToken | own contract | ZeroToken (selected) `0x988567fe094570cce1ffda29d1f2d842b70492be` — deployed 2024-05-07 16:17:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | Certora | Jan 2024 - March 2024 | [Certora\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | IBatchGovernor | unmatched — not counted | — | listed in scope | no |
 | | Certora | Jan 2024 - March 2024 | [Certora\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | IEpochBasedInflationaryVoteToken | unmatched — not counted | — | listed in scope | no |
 | | Certora | Jan 2024 - March 2024 | [Certora\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | IEpochBasedVoteToken | unmatched — not counted | — | listed in scope | no |
@@ -562,17 +562,17 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | | Certora | Jan 2024 - March 2024 | [Certora\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | IZeroGovernor | unmatched — not counted | — | listed in scope | no |
 | | Certora | Jan 2024 - March 2024 | [Certora\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | IZeroToken | unmatched — not counted | — | listed in scope | no |
 | | Certora | Jan 2024 - March 2024 | [Certora\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | PureEpochs | unmatched — not counted | — | listed in scope | no |
-| | Certora | Jan 2024 - March 2024 | [Certora\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | DistributionVault | own contract | DistributionVault (selected) `0xd7298f...caa34f` — deployed 2024-05-07 16:17:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| | Certora | Jan 2024 - March 2024 | [Certora\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | EmergencyGovernor | own contract | EmergencyGovernor (selected) `0x886d40...cdf90a` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Certora | Jan 2024 - March 2024 | [Certora\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | DistributionVault | own contract | DistributionVault (selected) `0xd7298f620b0f752cf41bd818a16c756d9dcaa34f` — deployed 2024-05-07 16:17:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Certora | Jan 2024 - March 2024 | [Certora\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | EmergencyGovernor | own contract | EmergencyGovernor (selected) `0x886d405949f709bc3f4451491bdd07ff51cdf90a` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | Certora | Jan 2024 - March 2024 | [Certora\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | EmergencyGovernorDeployer | unmatched — not counted | — | listed in scope | no |
 | | Certora | Jan 2024 - March 2024 | [Certora\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | PowerBootstrapToken | unmatched — not counted | — | listed in scope | no |
-| | Certora | Jan 2024 - March 2024 | [Certora\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | PowerToken | own contract | PowerToken (selected) `0x5983b8...4c5b03` — deployed 2024-05-07 16:16:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Certora | Jan 2024 - March 2024 | [Certora\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | PowerToken | own contract | PowerToken (selected) `0x5983b89fa184f14917013b9c3062afd9434c5b03` — deployed 2024-05-07 16:16:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | Certora | Jan 2024 - March 2024 | [Certora\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | PowerTokenDeployer | unmatched — not counted | — | listed in scope | no |
-| | Certora | Jan 2024 - March 2024 | [Certora\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | Registrar | ambiguous — not counted | Registrar (alternative) `0x119fbe...81ae2c` — deployed 2024-05-07 16:17:59+03 — liveness: live (code_present_context)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| | Certora | Jan 2024 - March 2024 | [Certora\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | StandardGovernor | own contract | StandardGovernor (selected) `0xb024ac...1da016` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Certora | Jan 2024 - March 2024 | [Certora\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | Registrar | ambiguous — not counted | Registrar (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — deployed 2024-05-07 16:17:59+03 — liveness: live (code_present_context)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| | Certora | Jan 2024 - March 2024 | [Certora\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | StandardGovernor | own contract | StandardGovernor (selected) `0xb024ac5a7c6bc92fbacc8c3387e628a07e1da016` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | Certora | Jan 2024 - March 2024 | [Certora\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | StandardGovernorDeployer | unmatched — not counted | — | listed in scope | no |
-| | Certora | Jan 2024 - March 2024 | [Certora\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | ZeroGovernor | own contract | ZeroGovernor (selected) `0xa0dafa...8b80fe` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| | Certora | Jan 2024 - March 2024 | [Certora\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | ZeroToken | own contract | ZeroToken (selected) `0x988567...0492be` — deployed 2024-05-07 16:17:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Certora | Jan 2024 - March 2024 | [Certora\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | ZeroGovernor | own contract | ZeroGovernor (selected) `0xa0dafaeea4a1d44534e1b9227e19cae6358b80fe` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Certora | Jan 2024 - March 2024 | [Certora\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | ZeroToken | own contract | ZeroToken (selected) `0x988567fe094570cce1ffda29d1f2d842b70492be` — deployed 2024-05-07 16:17:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | Certora | Jan 2024 - March 2024 | [Certora\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | ContinuousIndexing | unmatched — not counted | — | listed in scope | no |
 | | Certora | Jan 2024 - March 2024 | [Certora\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | IContinuousIndexing | unmatched — not counted | — | listed in scope | no |
 | | Certora | Jan 2024 - March 2024 | [Certora\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | IMinterGateway | unmatched — not counted | — | listed in scope | no |
@@ -587,19 +587,19 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | | Certora | Jan 2024 - March 2024 | [Certora\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | MinterRateModel | unmatched — not counted | — | listed in scope | no |
 | | Certora | Jan 2024 - March 2024 | [Certora\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | SplitEarnerRateModel | unmatched — not counted | — | listed in scope | no |
 | | Certora | Jan 2024 - March 2024 | [Certora\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | StableEarnerRateModel | unmatched — not counted | — | listed in scope | no |
-| | Certora | Jan 2024 - March 2024 | [Certora\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | MinterGateway | own contract | MinterGateway (selected) `0xf7f963...19f04e` — deployed 2024-05-07 16:19:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Certora | Jan 2024 - March 2024 | [Certora\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | MinterGateway | own contract | MinterGateway (selected) `0xf7f9638cb444d65e5a40bf5ff98ebe4ff319f04e` — deployed 2024-05-07 16:19:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | Certora | Jan 2024 - March 2024 | [Certora\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | MToken | unmatched — not counted | — | listed in scope | no |
-| | Chainsecurity | Jan 2024 - March 2024 | [Chainsecurity\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | DistributionVault | own contract | DistributionVault (selected) `0xd7298f...caa34f` — deployed 2024-05-07 16:17:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| | Chainsecurity | Jan 2024 - March 2024 | [Chainsecurity\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | EmergencyGovernor | own contract | EmergencyGovernor (selected) `0x886d40...cdf90a` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Chainsecurity | Jan 2024 - March 2024 | [Chainsecurity\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | DistributionVault | own contract | DistributionVault (selected) `0xd7298f620b0f752cf41bd818a16c756d9dcaa34f` — deployed 2024-05-07 16:17:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Chainsecurity | Jan 2024 - March 2024 | [Chainsecurity\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | EmergencyGovernor | own contract | EmergencyGovernor (selected) `0x886d405949f709bc3f4451491bdd07ff51cdf90a` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | Chainsecurity | Jan 2024 - March 2024 | [Chainsecurity\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | EmergencyGovernorDeployer | unmatched — not counted | — | listed in scope table | no |
 | | Chainsecurity | Jan 2024 - March 2024 | [Chainsecurity\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | PowerBootstrapToken | unmatched — not counted | — | listed in scope table | no |
-| | Chainsecurity | Jan 2024 - March 2024 | [Chainsecurity\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | PowerToken | own contract | PowerToken (selected) `0x5983b8...4c5b03` — deployed 2024-05-07 16:16:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Chainsecurity | Jan 2024 - March 2024 | [Chainsecurity\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | PowerToken | own contract | PowerToken (selected) `0x5983b89fa184f14917013b9c3062afd9434c5b03` — deployed 2024-05-07 16:16:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | Chainsecurity | Jan 2024 - March 2024 | [Chainsecurity\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | PowerTokenDeployer | unmatched — not counted | — | listed in scope table | no |
-| | Chainsecurity | Jan 2024 - March 2024 | [Chainsecurity\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | Registrar | ambiguous — not counted | Registrar (alternative) `0x119fbe...81ae2c` — deployed 2024-05-07 16:17:59+03 — liveness: live (code_present_context)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| | Chainsecurity | Jan 2024 - March 2024 | [Chainsecurity\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | StandardGovernor | own contract | StandardGovernor (selected) `0xb024ac...1da016` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Chainsecurity | Jan 2024 - March 2024 | [Chainsecurity\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | Registrar | ambiguous — not counted | Registrar (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — deployed 2024-05-07 16:17:59+03 — liveness: live (code_present_context)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| | Chainsecurity | Jan 2024 - March 2024 | [Chainsecurity\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | StandardGovernor | own contract | StandardGovernor (selected) `0xb024ac5a7c6bc92fbacc8c3387e628a07e1da016` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | Chainsecurity | Jan 2024 - March 2024 | [Chainsecurity\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | StandardGovernorDeployer | unmatched — not counted | — | listed in scope table | no |
-| | Chainsecurity | Jan 2024 - March 2024 | [Chainsecurity\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | ZeroGovernor | own contract | ZeroGovernor (selected) `0xa0dafa...8b80fe` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| | Chainsecurity | Jan 2024 - March 2024 | [Chainsecurity\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | ZeroToken | own contract | ZeroToken (selected) `0x988567...0492be` — deployed 2024-05-07 16:17:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Chainsecurity | Jan 2024 - March 2024 | [Chainsecurity\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | ZeroGovernor | own contract | ZeroGovernor (selected) `0xa0dafaeea4a1d44534e1b9227e19cae6358b80fe` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Chainsecurity | Jan 2024 - March 2024 | [Chainsecurity\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | ZeroToken | own contract | ZeroToken (selected) `0x988567fe094570cce1ffda29d1f2d842b70492be` — deployed 2024-05-07 16:17:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | Chainsecurity | Jan 2024 - March 2024 | [Chainsecurity\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | BatchGovernor | unmatched — not counted | — | listed in scope table | no |
 | | Chainsecurity | Jan 2024 - March 2024 | [Chainsecurity\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | ERC5805 | unmatched — not counted | — | listed in scope table | no |
 | | Chainsecurity | Jan 2024 - March 2024 | [Chainsecurity\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | EpochBasedInflationaryVoteToken | unmatched — not counted | — | listed in scope table | no |
@@ -626,7 +626,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | | Chainsecurity | Jan 2024 - March 2024 | [Chainsecurity\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | IZeroToken | unmatched — not counted | — | listed in scope table | no |
 | | Chainsecurity | Jan 2024 - March 2024 | [Chainsecurity\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | PureEpochs | unmatched — not counted | — | listed in scope table | no |
 | | Chainsecurity | Jan 2024 - March 2024 | [Chainsecurity\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | MToken | unmatched — not counted | — | listed in scope table | no |
-| | Chainsecurity | Jan 2024 - March 2024 | [Chainsecurity\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | MinterGateway | own contract | MinterGateway (selected) `0xf7f963...19f04e` — deployed 2024-05-07 16:19:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Chainsecurity | Jan 2024 - March 2024 | [Chainsecurity\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | MinterGateway | own contract | MinterGateway (selected) `0xf7f9638cb444d65e5a40bf5ff98ebe4ff319f04e` — deployed 2024-05-07 16:19:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | Chainsecurity | Jan 2024 - March 2024 | [Chainsecurity\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | ContinuousIndexing | unmatched — not counted | — | listed in scope table | no |
 | | Chainsecurity | Jan 2024 - March 2024 | [Chainsecurity\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | IContinuousIndexing | unmatched — not counted | — | listed in scope table | no |
 | | Chainsecurity | Jan 2024 - March 2024 | [Chainsecurity\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | IMToken | unmatched — not counted | — | listed in scope table | no |
@@ -657,16 +657,16 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | | Chainsecurity | Jan 2024 - March 2024 | [Chainsecurity\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | ERC712Extended | unmatched — not counted | — | renamed from ERC712 in version 2 | no |
 | | Chainsecurity | Jan 2024 - March 2024 | [Chainsecurity\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | IERC712Extended | unmatched — not counted | — | added in version 2 | no |
 | | Chainsecurity | Jan 2024 - March 2024 | [Chainsecurity\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | EarnerRateModel | unmatched — not counted | — | renamed from StableEarnerRateModel in version 3 | no |
-| | OpenZeppelin | Jan 2024 - March 2024 | [OpenZeppelin report.pdf](){rel="&#x22;nofollow&#x22;"} | | MinterGateway | own contract | MinterGateway (selected) `0xf7f963...19f04e` — deployed 2024-05-07 16:19:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | OpenZeppelin | Jan 2024 - March 2024 | [OpenZeppelin report.pdf](){rel="&#x22;nofollow&#x22;"} | | MinterGateway | own contract | MinterGateway (selected) `0xf7f9638cb444d65e5a40bf5ff98ebe4ff319f04e` — deployed 2024-05-07 16:19:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | OpenZeppelin | Jan 2024 - March 2024 | [OpenZeppelin report.pdf](){rel="&#x22;nofollow&#x22;"} | | MToken | unmatched — not counted | — | mentioned in scope and findings | no |
-| | OpenZeppelin | Jan 2024 - March 2024 | [OpenZeppelin report.pdf](){rel="&#x22;nofollow&#x22;"} | | DistributionVault | own contract | DistributionVault (selected) `0xd7298f...caa34f` — deployed 2024-05-07 16:17:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| | OpenZeppelin | Jan 2024 - March 2024 | [OpenZeppelin report.pdf](){rel="&#x22;nofollow&#x22;"} | | PowerToken | own contract | PowerToken (selected) `0x5983b8...4c5b03` — deployed 2024-05-07 16:16:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| | OpenZeppelin | Jan 2024 - March 2024 | [OpenZeppelin report.pdf](){rel="&#x22;nofollow&#x22;"} | | ZeroToken | own contract | ZeroToken (selected) `0x988567...0492be` — deployed 2024-05-07 16:17:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| | OpenZeppelin | Jan 2024 - March 2024 | [OpenZeppelin report.pdf](){rel="&#x22;nofollow&#x22;"} | | StandardGovernor | own contract | StandardGovernor (selected) `0xb024ac...1da016` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| | OpenZeppelin | Jan 2024 - March 2024 | [OpenZeppelin report.pdf](){rel="&#x22;nofollow&#x22;"} | | EmergencyGovernor | own contract | EmergencyGovernor (selected) `0x886d40...cdf90a` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| | OpenZeppelin | Jan 2024 - March 2024 | [OpenZeppelin report.pdf](){rel="&#x22;nofollow&#x22;"} | | ZeroGovernor | own contract | ZeroGovernor (selected) `0xa0dafa...8b80fe` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | OpenZeppelin | Jan 2024 - March 2024 | [OpenZeppelin report.pdf](){rel="&#x22;nofollow&#x22;"} | | DistributionVault | own contract | DistributionVault (selected) `0xd7298f620b0f752cf41bd818a16c756d9dcaa34f` — deployed 2024-05-07 16:17:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | OpenZeppelin | Jan 2024 - March 2024 | [OpenZeppelin report.pdf](){rel="&#x22;nofollow&#x22;"} | | PowerToken | own contract | PowerToken (selected) `0x5983b89fa184f14917013b9c3062afd9434c5b03` — deployed 2024-05-07 16:16:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | OpenZeppelin | Jan 2024 - March 2024 | [OpenZeppelin report.pdf](){rel="&#x22;nofollow&#x22;"} | | ZeroToken | own contract | ZeroToken (selected) `0x988567fe094570cce1ffda29d1f2d842b70492be` — deployed 2024-05-07 16:17:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | OpenZeppelin | Jan 2024 - March 2024 | [OpenZeppelin report.pdf](){rel="&#x22;nofollow&#x22;"} | | StandardGovernor | own contract | StandardGovernor (selected) `0xb024ac5a7c6bc92fbacc8c3387e628a07e1da016` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | OpenZeppelin | Jan 2024 - March 2024 | [OpenZeppelin report.pdf](){rel="&#x22;nofollow&#x22;"} | | EmergencyGovernor | own contract | EmergencyGovernor (selected) `0x886d405949f709bc3f4451491bdd07ff51cdf90a` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | OpenZeppelin | Jan 2024 - March 2024 | [OpenZeppelin report.pdf](){rel="&#x22;nofollow&#x22;"} | | ZeroGovernor | own contract | ZeroGovernor (selected) `0xa0dafaeea4a1d44534e1b9227e19cae6358b80fe` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | OpenZeppelin | Jan 2024 - March 2024 | [OpenZeppelin report.pdf](){rel="&#x22;nofollow&#x22;"} | | TTGRegistrarReader | unmatched — not counted | — | mentioned in scope and findings | no |
-| | OpenZeppelin | Jan 2024 - March 2024 | [OpenZeppelin report.pdf](){rel="&#x22;nofollow&#x22;"} | | Registrar | ambiguous — not counted | Registrar (alternative) `0x119fbe...81ae2c` — deployed 2024-05-07 16:17:59+03 — liveness: live (code_present_context)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| | OpenZeppelin | Jan 2024 - March 2024 | [OpenZeppelin report.pdf](){rel="&#x22;nofollow&#x22;"} | | Registrar | ambiguous — not counted | Registrar (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — deployed 2024-05-07 16:17:59+03 — liveness: live (code_present_context)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | | OpenZeppelin | Jan 2024 - March 2024 | [OpenZeppelin report.pdf](){rel="&#x22;nofollow&#x22;"} | | BatchGovernor | unmatched — not counted | — | mentioned in scope and findings | no |
 | | OpenZeppelin | Jan 2024 - March 2024 | [OpenZeppelin report.pdf](){rel="&#x22;nofollow&#x22;"} | | ThresholdGovernor | unmatched — not counted | — | mentioned in scope and findings | no |
 | | OpenZeppelin | Jan 2024 - March 2024 | [OpenZeppelin report.pdf](){rel="&#x22;nofollow&#x22;"} | | EpochBasedVoteToken | unmatched — not counted | — | mentioned in scope and findings | no |
@@ -680,30 +680,30 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | | OpenZeppelin | Jan 2024 - March 2024 | [OpenZeppelin report.pdf](){rel="&#x22;nofollow&#x22;"} | | PowerTokenDeployer | unmatched — not counted | — | mentioned in findings | no |
 | | OpenZeppelin | Jan 2024 - March 2024 | [OpenZeppelin report.pdf](){rel="&#x22;nofollow&#x22;"} | | StandardGovernorDeployer | unmatched — not counted | — | mentioned in findings | no |
 | | Prototech Labs | Jan 2024 - Feb 2024 | [PrototechLabs\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | EpochBasedVoteToken | unmatched — not counted | — | mentioned in context of findings (7.1, 7.2, 10.8) | no |
-| | Prototech Labs | Jan 2024 - Feb 2024 | [PrototechLabs\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | PowerToken | own contract | PowerToken (selected) `0x5983b8...4c5b03` — deployed 2024-05-07 16:16:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| | Prototech Labs | Jan 2024 - Feb 2024 | [PrototechLabs\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | ZeroToken | own contract | ZeroToken (selected) `0x988567...0492be` — deployed 2024-05-07 16:17:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Prototech Labs | Jan 2024 - Feb 2024 | [PrototechLabs\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | PowerToken | own contract | PowerToken (selected) `0x5983b89fa184f14917013b9c3062afd9434c5b03` — deployed 2024-05-07 16:16:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Prototech Labs | Jan 2024 - Feb 2024 | [PrototechLabs\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | ZeroToken | own contract | ZeroToken (selected) `0x988567fe094570cce1ffda29d1f2d842b70492be` — deployed 2024-05-07 16:17:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | Prototech Labs | Jan 2024 - Feb 2024 | [PrototechLabs\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | MToken | unmatched — not counted | — | mentioned in findings (8.1, 8.2, 10.1, 10.8) | no |
-| | Prototech Labs | Jan 2024 - Feb 2024 | [PrototechLabs\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | MinterGateway | own contract | MinterGateway (selected) `0xf7f963...19f04e` — deployed 2024-05-07 16:19:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Prototech Labs | Jan 2024 - Feb 2024 | [PrototechLabs\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | MinterGateway | own contract | MinterGateway (selected) `0xf7f9638cb444d65e5a40bf5ff98ebe4ff319f04e` — deployed 2024-05-07 16:19:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | Prototech Labs | Jan 2024 - Feb 2024 | [PrototechLabs\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | ERC3009 | unmatched — not counted | — | mentioned in finding 8.2 | no |
 | | Prototech Labs | Jan 2024 - Feb 2024 | [PrototechLabs\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | ERC20Extended | unmatched — not counted | — | mentioned in finding 11.2 | no |
 | | Prototech Labs | Jan 2024 - Feb 2024 | [PrototechLabs\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | SignatureChecker | unmatched — not counted | — | mentioned in finding 11.7 | no |
-| | Prototech Labs | Jan 2024 - Feb 2024 | [PrototechLabs\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | StandardGovernor | own contract | StandardGovernor (selected) `0xb024ac...1da016` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| | Prototech Labs | Jan 2024 - Feb 2024 | [PrototechLabs\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | DistributionVault | own contract | DistributionVault (selected) `0xd7298f...caa34f` — deployed 2024-05-07 16:17:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| | Prototech Labs | Jan 2024 - Feb 2024 | [PrototechLabs\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | EmergencyGovernor | own contract | EmergencyGovernor (selected) `0x886d40...cdf90a` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Prototech Labs | Jan 2024 - Feb 2024 | [PrototechLabs\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | StandardGovernor | own contract | StandardGovernor (selected) `0xb024ac5a7c6bc92fbacc8c3387e628a07e1da016` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Prototech Labs | Jan 2024 - Feb 2024 | [PrototechLabs\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | DistributionVault | own contract | DistributionVault (selected) `0xd7298f620b0f752cf41bd818a16c756d9dcaa34f` — deployed 2024-05-07 16:17:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Prototech Labs | Jan 2024 - Feb 2024 | [PrototechLabs\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | EmergencyGovernor | own contract | EmergencyGovernor (selected) `0x886d405949f709bc3f4451491bdd07ff51cdf90a` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | Prototech Labs | Jan 2024 - Feb 2024 | [PrototechLabs\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | PowerBootstrapToken | unmatched — not counted | — | mentioned in appendix invariants | no |
-| | Prototech Labs | Jan 2024 - Feb 2024 | [PrototechLabs\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | Registrar | ambiguous — not counted | Registrar (alternative) `0x119fbe...81ae2c` — deployed 2024-05-07 16:17:59+03 — liveness: live (code_present_context)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| | Prototech Labs | Jan 2024 - Feb 2024 | [PrototechLabs\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | ZeroGovernor | own contract | ZeroGovernor (selected) `0xa0dafa...8b80fe` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Prototech Labs | Jan 2024 - Feb 2024 | [PrototechLabs\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | Registrar | ambiguous — not counted | Registrar (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — deployed 2024-05-07 16:17:59+03 — liveness: live (code_present_context)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| | Prototech Labs | Jan 2024 - Feb 2024 | [PrototechLabs\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | ZeroGovernor | own contract | ZeroGovernor (selected) `0xa0dafaeea4a1d44534e1b9227e19cae6358b80fe` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | Prototech Labs | Jan 2024 - Feb 2024 | [PrototechLabs\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | ContinuousIndexing | unmatched — not counted | — | mentioned in findings 10.4, 10.5 | no |
 | | Prototech Labs | Jan 2024 - Feb 2024 | [PrototechLabs\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | EpochBasedInflationaryVoteToken | unmatched — not counted | — | mentioned in finding 10.9 | no |
 | | Prototech Labs | Jan 2024 - Feb 2024 | [PrototechLabs\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | MockBootstrapToken | unmatched — not counted | — | mentioned in finding 8.4 | no |
 | | Prototech Labs | Jan 2024 - Feb 2024 | [PrototechLabs\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | MockCashToken | unmatched — not counted | — | mentioned in finding 7.3 | no |
 | | Sherlock | March 2024 - April 2024 | [Sherlock\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | MToken | unmatched — not counted | — | mentioned in scope and findings | no |
-| | Sherlock | March 2024 - April 2024 | [Sherlock\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | MinterGateway | own contract | MinterGateway (selected) `0xf7f963...19f04e` — deployed 2024-05-07 16:19:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Sherlock | March 2024 - April 2024 | [Sherlock\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | MinterGateway | own contract | MinterGateway (selected) `0xf7f9638cb444d65e5a40bf5ff98ebe4ff319f04e` — deployed 2024-05-07 16:19:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | Sherlock | March 2024 - April 2024 | [Sherlock\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | StableEarnerRateModel | unmatched — not counted | — | mentioned in findings | no |
 | | Sherlock | March 2024 - April 2024 | [Sherlock\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | TTGRegistrarReader | unmatched — not counted | — | mentioned in findings | no |
 | | Chainsecurity | July 2024 - Aug 2024 | [ChainSecurity Wrapped `$M` Audit Report.pdf](){rel="&#x22;nofollow&#x22;"} | | Migratable | unmatched — not counted | — | listed in scope table | no |
 | | Chainsecurity | July 2024 - Aug 2024 | [ChainSecurity Wrapped `$M` Audit Report.pdf](){rel="&#x22;nofollow&#x22;"} | | WrappedMToken | unmatched — not counted | — | listed in scope table | no |
-| | Chainsecurity | July 2024 - Aug 2024 | [ChainSecurity Wrapped `$M` Audit Report.pdf](){rel="&#x22;nofollow&#x22;"} | | Proxy | ambiguous — not counted | Proxy (proxy) (alternative) `0x437cc3...98b291` — deployed 2024-08-14 18:51:47+03 — liveness: live (current_address_book_code) | bare standard proxy-shell name is not deployment identity; normalized_full_corpus:project_anchor:matcher_anchor | no |
+| | Chainsecurity | July 2024 - Aug 2024 | [ChainSecurity Wrapped `$M` Audit Report.pdf](){rel="&#x22;nofollow&#x22;"} | | Proxy | ambiguous — not counted | Proxy (proxy) (alternative) `0x437cc33344a0b27a429f795ff6b469c72698b291` — deployed 2024-08-14 18:51:47+03 — liveness: live (current_address_book_code) | bare standard proxy-shell name is not deployment identity; normalized_full_corpus:project_anchor:matcher_anchor | no |
 | | Chainsecurity | July 2024 - Aug 2024 | [ChainSecurity Wrapped `$M` Audit Report.pdf](){rel="&#x22;nofollow&#x22;"} | | IndexingMath | unmatched — not counted | — | listed in scope table | no |
 | | Chainsecurity | July 2024 - Aug 2024 | [ChainSecurity Wrapped `$M` Audit Report.pdf](){rel="&#x22;nofollow&#x22;"} | | IMigratable | unmatched — not counted | — | listed in scope table | no |
 | | Chainsecurity | July 2024 - Aug 2024 | [ChainSecurity Wrapped `$M` Audit Report.pdf](){rel="&#x22;nofollow&#x22;"} | | IRegistrarLike | unmatched — not counted | — | listed in scope table | no |
@@ -711,7 +711,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | | Chainsecurity | July 2024 - Aug 2024 | [ChainSecurity Wrapped `$M` Audit Report.pdf](){rel="&#x22;nofollow&#x22;"} | | IMTokenLike | unmatched — not counted | — | listed in scope table | no |
 | | Three Sigma | July 2024 - Aug 2024 | [Three Sigma Wrapped `$M` Audit Report.pdf](){rel="&#x22;nofollow&#x22;"} | | IndexingMath | unmatched — not counted | — | listed in scope table | no |
 | | Three Sigma | July 2024 - Aug 2024 | [Three Sigma Wrapped `$M` Audit Report.pdf](){rel="&#x22;nofollow&#x22;"} | | Migratable | unmatched — not counted | — | listed in scope table | no |
-| | Three Sigma | July 2024 - Aug 2024 | [Three Sigma Wrapped `$M` Audit Report.pdf](){rel="&#x22;nofollow&#x22;"} | | Proxy | ambiguous — not counted | Proxy (proxy) (alternative) `0x437cc3...98b291` — deployed 2024-08-14 18:51:47+03 — liveness: live (current_address_book_code) | bare standard proxy-shell name is not deployment identity; normalized_full_corpus:project_anchor:matcher_anchor | no |
+| | Three Sigma | July 2024 - Aug 2024 | [Three Sigma Wrapped `$M` Audit Report.pdf](){rel="&#x22;nofollow&#x22;"} | | Proxy | ambiguous — not counted | Proxy (proxy) (alternative) `0x437cc33344a0b27a429f795ff6b469c72698b291` — deployed 2024-08-14 18:51:47+03 — liveness: live (current_address_book_code) | bare standard proxy-shell name is not deployment identity; normalized_full_corpus:project_anchor:matcher_anchor | no |
 | | Three Sigma | July 2024 - Aug 2024 | [Three Sigma Wrapped `$M` Audit Report.pdf](){rel="&#x22;nofollow&#x22;"} | | WrappedMToken | unmatched — not counted | — | listed in scope table | no |
 | | Kirill Fedoseev | July 2024 - Aug 2024 | [Kirill Fedoseev Wrapped `$M` Audit Report.md](){rel="&#x22;nofollow&#x22;"} | | IMigratable | unmatched — not counted | — | listed in scope | no |
 | | Kirill Fedoseev | July 2024 - Aug 2024 | [Kirill Fedoseev Wrapped `$M` Audit Report.md](){rel="&#x22;nofollow&#x22;"} | | IMTokenLike | unmatched — not counted | — | listed in scope | no |
@@ -719,7 +719,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | | Kirill Fedoseev | July 2024 - Aug 2024 | [Kirill Fedoseev Wrapped `$M` Audit Report.md](){rel="&#x22;nofollow&#x22;"} | | IWrappedMToken | unmatched — not counted | — | listed in scope | no |
 | | Kirill Fedoseev | July 2024 - Aug 2024 | [Kirill Fedoseev Wrapped `$M` Audit Report.md](){rel="&#x22;nofollow&#x22;"} | | IndexingMath | unmatched — not counted | — | listed in scope | no |
 | | Kirill Fedoseev | July 2024 - Aug 2024 | [Kirill Fedoseev Wrapped `$M` Audit Report.md](){rel="&#x22;nofollow&#x22;"} | | Migratable | unmatched — not counted | — | listed in scope | no |
-| | Kirill Fedoseev | July 2024 - Aug 2024 | [Kirill Fedoseev Wrapped `$M` Audit Report.md](){rel="&#x22;nofollow&#x22;"} | | Proxy | ambiguous — not counted | Proxy (proxy) (alternative) `0x437cc3...98b291` — deployed 2024-08-14 18:51:47+03 — liveness: live (current_address_book_code) | bare standard proxy-shell name is not deployment identity; normalized_full_corpus:project_anchor:matcher_anchor | no |
+| | Kirill Fedoseev | July 2024 - Aug 2024 | [Kirill Fedoseev Wrapped `$M` Audit Report.md](){rel="&#x22;nofollow&#x22;"} | | Proxy | ambiguous — not counted | Proxy (proxy) (alternative) `0x437cc33344a0b27a429f795ff6b469c72698b291` — deployed 2024-08-14 18:51:47+03 — liveness: live (current_address_book_code) | bare standard proxy-shell name is not deployment identity; normalized_full_corpus:project_anchor:matcher_anchor | no |
 | | Kirill Fedoseev | July 2024 - Aug 2024 | [Kirill Fedoseev Wrapped `$M` Audit Report.md](){rel="&#x22;nofollow&#x22;"} | | WrappedMToken | unmatched — not counted | — | listed in scope | no |
 | | Certora | July 2025 | [Certora\_MExtension\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | MYieldFee | unmatched — not counted | — | listed in scope and findings | no |
 | | Certora | July 2025 | [Certora\_MExtension\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | SwapFacility | unmatched — not counted | — | listed in findings | no |
@@ -773,7 +773,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | | Three Sigma | April 2025 | [ThreeSigma\_PortalLite\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | Blacklistable | unmatched — not counted | — | listed in scope table | no |
 | | Three Sigma | April 2025 | [ThreeSigma\_PortalLite\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | MExtension | unmatched — not counted | — | listed in scope table | no |
 | | Three Sigma | April 2025 | [ThreeSigma\_PortalLite\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | PausableOwnable | unmatched — not counted | — | listed in scope table | no |
-| | Three Sigma | April 2025 | [ThreeSigma\_PortalLite\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | HyperlaneBridge | own contract | HyperlaneBridge (selected) `0x51dce1...4b0dc3` — deployed 2025-05-21 06:55:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Three Sigma | April 2025 | [ThreeSigma\_PortalLite\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | HyperlaneBridge | own contract | HyperlaneBridge (selected) `0x51dce104e5ba88fabc19a2c519f955bb834b0dc3` — deployed 2025-05-21 06:55:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | Three Sigma | April 2025 | [ThreeSigma\_PortalLite\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | StandardHookMetadata | unmatched — not counted | — | listed in scope table | no |
 | | Three Sigma | April 2025 | [ThreeSigma\_PortalLite\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | HubPortal | unmatched — not counted | — | listed in scope table | no |
 | | Three Sigma | April 2025 | [ThreeSigma\_PortalLite\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | BytesParser | unmatched — not counted | — | listed in scope table | no |
@@ -781,19 +781,19 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | | Three Sigma | April 2025 | [ThreeSigma\_PortalLite\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | SafeCall | unmatched — not counted | — | listed in scope table | no |
 | | Three Sigma | April 2025 | [ThreeSigma\_PortalLite\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | TypeConverter | unmatched — not counted | — | listed in scope table | no |
 | | Three Sigma | April 2025 | [ThreeSigma\_PortalLite\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | MYieldToOne | unmatched — not counted | — | listed in scope table | no |
-| | Three Sigma | April 2025 | [ThreeSigma\_PortalLite\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | Portal | own contract | 0x36f586… (selected) `0x36f586...3c2ece` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Three Sigma | April 2025 | [ThreeSigma\_PortalLite\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | Portal | own contract | 0x36f586… (selected) `0x36f586a30502ae3afb555b8aa4dcc05d233c2ece` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | Three Sigma | April 2025 | [ThreeSigma\_PortalLite\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | SpokePortal | unmatched — not counted | — | listed in scope table | no |
-| | ChainLight | May 2025 | [ChainLight\_PortalLite\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | HyperlaneBridge | own contract | HyperlaneBridge (selected) `0x51dce1...4b0dc3` — deployed 2025-05-21 06:55:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | ChainLight | May 2025 | [ChainLight\_PortalLite\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | HyperlaneBridge | own contract | HyperlaneBridge (selected) `0x51dce104e5ba88fabc19a2c519f955bb834b0dc3` — deployed 2025-05-21 06:55:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | ChainLight | May 2025 | [ChainLight\_PortalLite\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | HubPortal | unmatched — not counted | — | mentioned in findings MPORTALLITE-002 and MPORTALLITE-003 | no |
 | | ChainLight | May 2025 | [ChainLight\_PortalLite\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | SpokePortal | unmatched — not counted | — | mentioned in finding MPORTALLITE-001 | no |
 | | ChainLight | May 2025 | [ChainLight\_PortalLite\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | IndexingMath | unmatched — not counted | — | mentioned in findings MPORTALLITE-002 and MPORTALLITE-003 | no |
 | | ChainSecurity | September 12, 2025 | [ChainSecurity\_M0\_M\_Portal\_Lite\_audit.pdf](){rel="&#x22;nofollow&#x22;"} | | HubPortal | unmatched — not counted | — | listed in scope table | no |
-| | ChainSecurity | September 12, 2025 | [ChainSecurity\_M0\_M\_Portal\_Lite\_audit.pdf](){rel="&#x22;nofollow&#x22;"} | | Portal | own contract | 0x36f586… (selected) `0x36f586...3c2ece` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | ChainSecurity | September 12, 2025 | [ChainSecurity\_M0\_M\_Portal\_Lite\_audit.pdf](){rel="&#x22;nofollow&#x22;"} | | Portal | own contract | 0x36f586… (selected) `0x36f586a30502ae3afb555b8aa4dcc05d233c2ece` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | ChainSecurity | September 12, 2025 | [ChainSecurity\_M0\_M\_Portal\_Lite\_audit.pdf](){rel="&#x22;nofollow&#x22;"} | | SpokePortal | unmatched — not counted | — | listed in scope table | no |
 | | ChainSecurity | September 12, 2025 | [ChainSecurity\_M0\_M\_Portal\_Lite\_audit.pdf](){rel="&#x22;nofollow&#x22;"} | | Locker | unmatched — not counted | — | listed in scope table | no |
 | | ChainSecurity | September 12, 2025 | [ChainSecurity\_M0\_M\_Portal\_Lite\_audit.pdf](){rel="&#x22;nofollow&#x22;"} | | ReentrancyLock | unmatched — not counted | — | listed in scope table | no |
 | | Guardian Audits | August 15, 2025 | [GuardianAudits\_M0\_PortalLite\_audit.pdf](){rel="&#x22;nofollow&#x22;"} | | HubPortal | unmatched — not counted | — | listed in scope table | no |
-| | Guardian Audits | August 15, 2025 | [GuardianAudits\_M0\_PortalLite\_audit.pdf](){rel="&#x22;nofollow&#x22;"} | | Portal | own contract | 0x36f586… (selected) `0x36f586...3c2ece` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Guardian Audits | August 15, 2025 | [GuardianAudits\_M0\_PortalLite\_audit.pdf](){rel="&#x22;nofollow&#x22;"} | | Portal | own contract | 0x36f586… (selected) `0x36f586a30502ae3afb555b8aa4dcc05d233c2ece` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | Guardian Audits | August 15, 2025 | [GuardianAudits\_M0\_PortalLite\_audit.pdf](){rel="&#x22;nofollow&#x22;"} | | SpokePortal | unmatched — not counted | — | listed in scope table | no |
 | | Guardian Audits | August 15, 2025 | [GuardianAudits\_M0\_PortalLite\_audit.pdf](){rel="&#x22;nofollow&#x22;"} | | SpokeVault | unmatched — not counted | — | listed in scope table | no |
 | | Guardian Audits | August 15, 2025 | [GuardianAudits\_M0\_PortalLite\_audit.pdf](){rel="&#x22;nofollow&#x22;"} | | ScriptBase | unmatched — not counted | — | listed in scope table | no |
@@ -823,14 +823,14 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | | Guardian Audits | August 15, 2025 | [GuardianAudits\_M0\_PortalLite\_audit.pdf](){rel="&#x22;nofollow&#x22;"} | | UpgradeHubPortalBase | unmatched — not counted | — | listed in scope table | no |
 | | Guardian Audits | August 15, 2025 | [GuardianAudits\_M0\_PortalLite\_audit.pdf](){rel="&#x22;nofollow&#x22;"} | | UpgradeSpokePortal | unmatched — not counted | — | listed in scope table | no |
 | | Guardian Audits | August 15, 2025 | [GuardianAudits\_M0\_PortalLite\_audit.pdf](){rel="&#x22;nofollow&#x22;"} | | UpgradeSpokePortalBase | unmatched — not counted | — | listed in scope table | no |
-| | Guardian Audits | August 15, 2025 | [GuardianAudits\_M0\_PortalLite\_audit.pdf](){rel="&#x22;nofollow&#x22;"} | | HyperlaneBridge | own contract | HyperlaneBridge (selected) `0x51dce1...4b0dc3` — deployed 2025-05-21 06:55:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Guardian Audits | August 15, 2025 | [GuardianAudits\_M0\_PortalLite\_audit.pdf](){rel="&#x22;nofollow&#x22;"} | | HyperlaneBridge | own contract | HyperlaneBridge (selected) `0x51dce104e5ba88fabc19a2c519f955bb834b0dc3` — deployed 2025-05-21 06:55:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | Guardian Audits | August 15, 2025 | [GuardianAudits\_M0\_PortalLite\_audit.pdf](){rel="&#x22;nofollow&#x22;"} | | StandardHookMetadata | unmatched — not counted | — | listed in scope table | no |
 | | Halborn | October 27, 2025 | [Halborn - M Portal Lite 10-27-25.pdf](){rel="&#x22;nofollow&#x22;"} | | HubPortal | unmatched — not counted | — | listed in scope | no |
-| | Halborn | October 27, 2025 | [Halborn - M Portal Lite 10-27-25.pdf](){rel="&#x22;nofollow&#x22;"} | | Portal | own contract | 0x36f586… (selected) `0x36f586...3c2ece` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Halborn | October 27, 2025 | [Halborn - M Portal Lite 10-27-25.pdf](){rel="&#x22;nofollow&#x22;"} | | Portal | own contract | 0x36f586… (selected) `0x36f586a30502ae3afb555b8aa4dcc05d233c2ece` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | Halborn | October 27, 2025 | [Halborn - M Portal Lite 10-27-25.pdf](){rel="&#x22;nofollow&#x22;"} | | SpokePortal | unmatched — not counted | — | listed in scope | no |
 | | Halborn | March 2025 | [Halborn\_SolanaM\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | Earn | unmatched — not counted | — | listed in scope | no |
 | | Halborn | March 2025 | [Halborn\_SolanaM\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | ExtEarn | unmatched — not counted | — | listed in scope | no |
-| | Halborn | March 2025 | [Halborn\_SolanaM\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | Portal | own contract | 0x36f586… (selected) `0x36f586...3c2ece` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Halborn | March 2025 | [Halborn\_SolanaM\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | Portal | own contract | 0x36f586… (selected) `0x36f586a30502ae3afb555b8aa4dcc05d233c2ece` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | OtterSec | April 2025 | [OtterSec\_SolanaM\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | earn | unmatched — not counted | — | Scope section: 'earn - A program for yield distribution logic and earner management for the M token.' | no |
 | | OtterSec | April 2025 | [OtterSec\_SolanaM\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | ext-earn | unmatched — not counted | — | Scope section: 'ext-earn - A program to handle wrapping/unwrapping M to wM, as well as yield distribution and earner manager for the wM token.' | no |
 | | Sec3 | May 2025 | [Sec3\_SolanaM\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | earn | unmatched — not counted | — | listed in scope table as P1 | no |
@@ -844,7 +844,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | | Kirill Fedoseev | August 6, 2025 | [MZero-review-report-v1-private.md](){rel="&#x22;nofollow&#x22;"} | | MUSD | unmatched — not counted | — | Reviewed contracts: src/MUSD.sol | no |
 | | Adevar | January 21, 2026 | [Adevar\_M0\_Portal\_V2.pdf](){rel="&#x22;nofollow&#x22;"} | | HubPortal | unmatched — not counted | — | listed in scope and findings | no |
 | | Adevar | January 21, 2026 | [Adevar\_M0\_Portal\_V2.pdf](){rel="&#x22;nofollow&#x22;"} | | SpokePortal | unmatched — not counted | — | listed in scope and findings | no |
-| | Adevar | January 21, 2026 | [Adevar\_M0\_Portal\_V2.pdf](){rel="&#x22;nofollow&#x22;"} | | Portal | own contract | 0x36f586… (selected) `0x36f586...3c2ece` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Adevar | January 21, 2026 | [Adevar\_M0\_Portal\_V2.pdf](){rel="&#x22;nofollow&#x22;"} | | Portal | own contract | 0x36f586… (selected) `0x36f586a30502ae3afb555b8aa4dcc05d233c2ece` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | Adevar | January 21, 2026 | [Adevar\_M0\_Portal\_V2.pdf](){rel="&#x22;nofollow&#x22;"} | | MigrateSpokePortalBase | unmatched — not counted | — | listed in findings | no |
 | | Adevar | January 21, 2026 | [Adevar\_M0\_Portal\_V2.pdf](){rel="&#x22;nofollow&#x22;"} | | IHubPortal | unmatched — not counted | — | referenced in HubPortal.sol | no |
 | | ChainSecurity | February 24, 2026 | [ChainSecurity\_M0\_Portal\_V2\_Liquidity\_Delivery.pdf](){rel="&#x22;nofollow&#x22;"} | | HyperlaneBridgeAdapter | unmatched — not counted | — | listed in scope | no |
@@ -865,7 +865,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | | ChainSecurity | February 24, 2026 | [ChainSecurity\_M0\_Portal\_V2\_Liquidity\_Delivery.pdf](){rel="&#x22;nofollow&#x22;"} | | TypeConverter | unmatched — not counted | — | listed in scope | no |
 | | ChainSecurity | February 24, 2026 | [ChainSecurity\_M0\_Portal\_V2\_Liquidity\_Delivery.pdf](){rel="&#x22;nofollow&#x22;"} | | ReentrancyLock | unmatched — not counted | — | listed in scope | no |
 | | ChainSecurity | February 24, 2026 | [ChainSecurity\_M0\_Portal\_V2\_Liquidity\_Delivery.pdf](){rel="&#x22;nofollow&#x22;"} | | HubPortal | unmatched — not counted | — | listed in scope | no |
-| | ChainSecurity | February 24, 2026 | [ChainSecurity\_M0\_Portal\_V2\_Liquidity\_Delivery.pdf](){rel="&#x22;nofollow&#x22;"} | | Portal | own contract | 0x36f586… (selected) `0x36f586...3c2ece` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | ChainSecurity | February 24, 2026 | [ChainSecurity\_M0\_Portal\_V2\_Liquidity\_Delivery.pdf](){rel="&#x22;nofollow&#x22;"} | | Portal | own contract | 0x36f586… (selected) `0x36f586a30502ae3afb555b8aa4dcc05d233c2ece` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | ChainSecurity | February 24, 2026 | [ChainSecurity\_M0\_Portal\_V2\_Liquidity\_Delivery.pdf](){rel="&#x22;nofollow&#x22;"} | | SpokePortal | unmatched — not counted | — | listed in scope | no |
 | | ChainSecurity | February 24, 2026 | [ChainSecurity\_M0\_Portal\_V2\_Liquidity\_Delivery.pdf](){rel="&#x22;nofollow&#x22;"} | | ExecutorOptions | unmatched — not counted | — | listed in scope | no |
 | | ChainSecurity | February 24, 2026 | [ChainSecurity\_M0\_Portal\_V2\_Liquidity\_Delivery.pdf](){rel="&#x22;nofollow&#x22;"} | | OptionsBuilder | unmatched — not counted | — | listed in scope | no |
@@ -873,7 +873,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | | ChainSecurity | February 24, 2026 | [ChainSecurity\_M0\_Portal\_V2\_Liquidity\_Delivery.pdf](){rel="&#x22;nofollow&#x22;"} | | OrderBook | unmatched — not counted | — | listed in scope | no |
 | | ChainSecurity | February 24, 2026 | [ChainSecurity\_M0\_Portal\_V2\_Liquidity\_Delivery.pdf](){rel="&#x22;nofollow&#x22;"} | | IOrderBook | unmatched — not counted | — | listed in scope | no |
 | | Guardian Audits | January 30, 2026 | [Guardian\_M0\_Portal\_V2\_Liquidity\_Delivery.pdf](){rel="&#x22;nofollow&#x22;"} | | HubPortal | unmatched — not counted | — | listed in scope table | no |
-| | Guardian Audits | January 30, 2026 | [Guardian\_M0\_Portal\_V2\_Liquidity\_Delivery.pdf](){rel="&#x22;nofollow&#x22;"} | | Portal | own contract | 0x36f586… (selected) `0x36f586...3c2ece` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Guardian Audits | January 30, 2026 | [Guardian\_M0\_Portal\_V2\_Liquidity\_Delivery.pdf](){rel="&#x22;nofollow&#x22;"} | | Portal | own contract | 0x36f586… (selected) `0x36f586a30502ae3afb555b8aa4dcc05d233c2ece` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | Guardian Audits | January 30, 2026 | [Guardian\_M0\_Portal\_V2\_Liquidity\_Delivery.pdf](){rel="&#x22;nofollow&#x22;"} | | SpokePortal | unmatched — not counted | — | listed in scope table | no |
 | | Guardian Audits | January 30, 2026 | [Guardian\_M0\_Portal\_V2\_Liquidity\_Delivery.pdf](){rel="&#x22;nofollow&#x22;"} | | ReentrancyLock | unmatched — not counted | — | listed in scope table | no |
 | | Guardian Audits | January 30, 2026 | [Guardian\_M0\_Portal\_V2\_Liquidity\_Delivery.pdf](){rel="&#x22;nofollow&#x22;"} | | BytesParser | unmatched — not counted | — | listed in scope table | no |
@@ -903,7 +903,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | | Guardian Audits | January 30, 2026 | [Guardian\_M0\_Portal\_V2\_Liquidity\_Delivery.pdf](){rel="&#x22;nofollow&#x22;"} | | claim_refund | unmatched — not counted | — | listed in SVM Liquidity-Delivery scope table | no |
 | | Guardian Audits | January 30, 2026 | [Guardian\_M0\_Portal\_V2\_Liquidity\_Delivery.pdf](){rel="&#x22;nofollow&#x22;"} | | close_order_token_account | unmatched — not counted | — | mentioned in remediation findings (M-04) | no |
 | | Halborn | January 16, 2026 | [Halborn\_M0\_Portal\_V2.pdf](){rel="&#x22;nofollow&#x22;"} | | HubPortal | unmatched — not counted | — | listed in scope | no |
-| | Halborn | January 16, 2026 | [Halborn\_M0\_Portal\_V2.pdf](){rel="&#x22;nofollow&#x22;"} | | Portal | own contract | 0x36f586… (selected) `0x36f586...3c2ece` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Halborn | January 16, 2026 | [Halborn\_M0\_Portal\_V2.pdf](){rel="&#x22;nofollow&#x22;"} | | Portal | own contract | 0x36f586… (selected) `0x36f586a30502ae3afb555b8aa4dcc05d233c2ece` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | Halborn | January 16, 2026 | [Halborn\_M0\_Portal\_V2.pdf](){rel="&#x22;nofollow&#x22;"} | | SpokePortal | unmatched — not counted | — | listed in scope | no |
 | | Sherlock | December 19, 2025 | [Sherlock\_M0\_Portal\_V2.pdf](){rel="&#x22;nofollow&#x22;"} | | BridgeAdapter | unmatched — not counted | — | listed in scope | no |
 | | Sherlock | December 19, 2025 | [Sherlock\_M0\_Portal\_V2.pdf](){rel="&#x22;nofollow&#x22;"} | | HyperlaneBridgeAdapter | unmatched — not counted | — | listed in scope | no |
@@ -923,7 +923,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | | Sherlock | December 19, 2025 | [Sherlock\_M0\_Portal\_V2.pdf](){rel="&#x22;nofollow&#x22;"} | | BytesParser | unmatched — not counted | — | listed in scope | no |
 | | Sherlock | December 19, 2025 | [Sherlock\_M0\_Portal\_V2.pdf](){rel="&#x22;nofollow&#x22;"} | | PayloadEncoder | unmatched — not counted | — | listed in scope | no |
 | | Sherlock | December 19, 2025 | [Sherlock\_M0\_Portal\_V2.pdf](){rel="&#x22;nofollow&#x22;"} | | TypeConverter | unmatched — not counted | — | listed in scope | no |
-| | Sherlock | December 19, 2025 | [Sherlock\_M0\_Portal\_V2.pdf](){rel="&#x22;nofollow&#x22;"} | | Portal | own contract | 0x36f586… (selected) `0x36f586...3c2ece` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| | Sherlock | December 19, 2025 | [Sherlock\_M0\_Portal\_V2.pdf](){rel="&#x22;nofollow&#x22;"} | | Portal | own contract | 0x36f586… (selected) `0x36f586a30502ae3afb555b8aa4dcc05d233c2ece` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | | Sherlock | December 19, 2025 | [Sherlock\_M0\_Portal\_V2.pdf](){rel="&#x22;nofollow&#x22;"} | | SpokePortal | unmatched — not counted | — | listed in scope | no |
 | | Sherlock | December 19, 2025 | [Sherlock\_M0\_Portal\_V2.pdf](){rel="&#x22;nofollow&#x22;"} | | ReentrancyLock | unmatched — not counted | — | listed in scope | no |
 | | Sherlock | December 19, 2025 | [Sherlock\_M0\_Portal\_V2.pdf](){rel="&#x22;nofollow&#x22;"} | | common | unmatched — not counted | — | listed in scope | no |
@@ -944,14 +944,14 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | | Sherlock | November 13, 2025 | [Sherlock\_JMI\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | ISwapFacility | unmatched — not counted | — | listed in scope | no |
 | | Sherlock | November 13, 2025 | [Sherlock\_JMI\_report.pdf](){rel="&#x22;nofollow&#x22;"} | | SwapFacility | unmatched — not counted | — | listed in scope | no |
 | Audits and fixes overview.pdf | MToken | unmatched — not counted | — | listed in scope | no |
-| Audits and fixes overview.pdf | MinterGateway | own contract | MinterGateway (selected) `0xf7f963...19f04e` — deployed 2024-05-07 16:19:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Audits and fixes overview.pdf | PowerToken | own contract | PowerToken (selected) `0x5983b8...4c5b03` — deployed 2024-05-07 16:16:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Audits and fixes overview.pdf | StandardGovernor | own contract | StandardGovernor (selected) `0xb024ac...1da016` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Audits and fixes overview.pdf | MinterGateway | own contract | MinterGateway (selected) `0xf7f9638cb444d65e5a40bf5ff98ebe4ff319f04e` — deployed 2024-05-07 16:19:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Audits and fixes overview.pdf | PowerToken | own contract | PowerToken (selected) `0x5983b89fa184f14917013b9c3062afd9434c5b03` — deployed 2024-05-07 16:16:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Audits and fixes overview.pdf | StandardGovernor | own contract | StandardGovernor (selected) `0xb024ac5a7c6bc92fbacc8c3387e628a07e1da016` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Audits and fixes overview.pdf | ThresholdGovernor | unmatched — not counted | — | listed in scope | no |
 | Audits and fixes overview.pdf | BatchGovernor | unmatched — not counted | — | listed in scope | no |
-| Audits and fixes overview.pdf | ZeroGovernor | own contract | ZeroGovernor (selected) `0xa0dafa...8b80fe` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Audits and fixes overview.pdf | EmergencyGovernor | own contract | EmergencyGovernor (selected) `0x886d40...cdf90a` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Audits and fixes overview.pdf | DistributionVault | own contract | DistributionVault (selected) `0xd7298f...caa34f` — deployed 2024-05-07 16:17:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Audits and fixes overview.pdf | ZeroGovernor | own contract | ZeroGovernor (selected) `0xa0dafaeea4a1d44534e1b9227e19cae6358b80fe` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Audits and fixes overview.pdf | EmergencyGovernor | own contract | EmergencyGovernor (selected) `0x886d405949f709bc3f4451491bdd07ff51cdf90a` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Audits and fixes overview.pdf | DistributionVault | own contract | DistributionVault (selected) `0xd7298f620b0f752cf41bd818a16c756d9dcaa34f` — deployed 2024-05-07 16:17:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Audits and fixes overview.pdf | StableEarnerRateModel | unmatched — not counted | — | listed in scope | no |
 | Audits and fixes overview.pdf | SplitEarnerRateModel | unmatched — not counted | — | listed in scope | no |
 | Audits and fixes overview.pdf | EpochBasedInflationaryVoteToken | unmatched — not counted | — | listed in scope | no |
@@ -968,11 +968,11 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Audits and fixes overview.pdf | ContractHelper | unmatched — not counted | — | listed in scope | no |
 | Audits and fixes overview.pdf | UIntMath | unmatched — not counted | — | listed in scope | no |
 | Audits and fixes overview.pdf | PowerBootstrapToken | unmatched — not counted | — | listed in scope | no |
-| Audits and fixes overview.pdf | ZeroToken | own contract | ZeroToken (selected) `0x988567...0492be` — deployed 2024-05-07 16:17:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Audits and fixes overview.pdf | ZeroToken | own contract | ZeroToken (selected) `0x988567fe094570cce1ffda29d1f2d842b70492be` — deployed 2024-05-07 16:17:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Quantstamp External Fix Review.pdf | MToken | unmatched — not counted | — | mentioned in findings H01, H02, etc. | no |
-| Quantstamp External Fix Review.pdf | PowerToken | own contract | PowerToken (selected) `0x5983b8...4c5b03` — deployed 2024-05-07 16:16:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Quantstamp External Fix Review.pdf | StandardGovernor | own contract | StandardGovernor (selected) `0xb024ac...1da016` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Quantstamp External Fix Review.pdf | ZeroToken | own contract | ZeroToken (selected) `0x988567...0492be` — deployed 2024-05-07 16:17:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Quantstamp External Fix Review.pdf | PowerToken | own contract | PowerToken (selected) `0x5983b89fa184f14917013b9c3062afd9434c5b03` — deployed 2024-05-07 16:16:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Quantstamp External Fix Review.pdf | StandardGovernor | own contract | StandardGovernor (selected) `0xb024ac5a7c6bc92fbacc8c3387e628a07e1da016` — deployed 2024-05-07 16:16:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Quantstamp External Fix Review.pdf | ZeroToken | own contract | ZeroToken (selected) `0x988567fe094570cce1ffda29d1f2d842b70492be` — deployed 2024-05-07 16:17:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ChainSecurity_M0_M_Extensions_audit.pdf | MExtension | unmatched — not counted | — | listed in scope table | no |
 | ChainSecurity_M0_M_Extensions_audit.pdf | Blacklistable | unmatched — not counted | — | listed in scope table (later removed) | no |
 | ChainSecurity_M0_M_Extensions_audit.pdf | IndexingMath | unmatched — not counted | — | listed in scope table | no |
@@ -1000,12 +1000,12 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | adevar_v2_audit.pdf | m_ext | unmatched — not counted | — | listed in scope as part of solana-m-extension repository | no |
 | adevar_v2_audit.pdf | ext_swap | unmatched — not counted | — | mentioned in About M0 section as component of solana-m-extension programs | no |
 | adevar_v2_audit.pdf | earn | unmatched — not counted | — | listed in scope as part of solana-m repository | no |
-| adevar_v2_audit.pdf | portal | own contract | 0x36f586… (selected) `0x36f586...3c2ece` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| adevar_v2_audit.pdf | portal | own contract | 0x36f586… (selected) `0x36f586a30502ae3afb555b8aa4dcc05d233c2ece` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | halborn_v2_audit.pdf | earn | unmatched — not counted | — | listed in scope as Solana program | no |
 | halborn_v2_audit.pdf | portal | unmatched — not counted | — | listed in scope | no |
 | halborn_v2_audit.pdf | m_ext | unmatched — not counted | — | listed in scope as Solana program | no |
 | halborn_v2_audit.pdf | ext_swap | unmatched — not counted | — | listed in scope as Solana program | no |
-| halborn_v2_audit.pdf | portal | own contract | 0x36f586… (selected) `0x36f586...3c2ece` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| halborn_v2_audit.pdf | portal | own contract | 0x36f586… (selected) `0x36f586a30502ae3afb555b8aa4dcc05d233c2ece` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | guardian_liquidity_delivery_update.pdf | IOrderBook | unmatched — not counted | — | mentioned in finding I-01 location | no |
 | guardian_liquidity_delivery_update.pdf | OrderBook | unmatched — not counted | — | mentioned in finding I-02 and L-01 locations | no |
 | chainsecurity_report.pdf | HyperlaneBridgeAdapter | unmatched — not counted | — | listed in scope | no |
@@ -1026,12 +1026,12 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | chainsecurity_report.pdf | TypeConverter | unmatched — not counted | — | listed in scope | no |
 | chainsecurity_report.pdf | ReentrancyLock | unmatched — not counted | — | listed in scope | no |
 | chainsecurity_report.pdf | HubPortal | unmatched — not counted | — | listed in scope | no |
-| chainsecurity_report.pdf | Portal | own contract | 0x36f586… (selected) `0x36f586...3c2ece` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| chainsecurity_report.pdf | Portal | own contract | 0x36f586… (selected) `0x36f586a30502ae3afb555b8aa4dcc05d233c2ece` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | chainsecurity_report.pdf | SpokePortal | unmatched — not counted | — | listed in scope | no |
 | chainsecurity_report.pdf | OrderBook | unmatched — not counted | — | listed in scope | no |
 | chainsecurity_report.pdf | IOrderBook | unmatched — not counted | — | listed in scope | no |
 | guardian_report.pdf | HubPortal | unmatched — not counted | — | listed in scope table | no |
-| guardian_report.pdf | Portal | own contract | 0x36f586… (selected) `0x36f586...3c2ece` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| guardian_report.pdf | Portal | own contract | 0x36f586… (selected) `0x36f586a30502ae3afb555b8aa4dcc05d233c2ece` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | guardian_report.pdf | SpokePortal | unmatched — not counted | — | listed in scope table | no |
 | guardian_report.pdf | ReentrancyLock | unmatched — not counted | — | listed in scope table | no |
 | guardian_report.pdf | BytesParser | unmatched — not counted | — | listed in scope table | no |
@@ -1082,7 +1082,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | adevar_report.pdf | OrderBook | unmatched — not counted | — | listed in scope and findings | no |
 | adevar_report.pdf | fill | unmatched — not counted | — | listed in scope and findings | no |
 | adevar_report.pdf | open | unmatched — not counted | — | listed in scope and findings | no |
-| 2024-11-26-cyfrin-M0-Portals-v2.0.pdf | Portal | own contract | 0x36f586… (selected) `0x36f586...3c2ece` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2024-11-26-cyfrin-M0-Portals-v2.0.pdf | Portal | own contract | 0x36f586… (selected) `0x36f586a30502ae3afb555b8aa4dcc05d233c2ece` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2024-11-26-cyfrin-M0-Portals-v2.0.pdf | HubPortal | unmatched — not counted | — | listed in scope | no |
 | 2024-11-26-cyfrin-M0-Portals-v2.0.pdf | SpokePortal | unmatched — not counted | — | listed in scope | no |
 | 2024-11-26-cyfrin-M0-Portals-v2.0.pdf | SpokeVault | unmatched — not counted | — | listed in scope | no |
@@ -1094,13 +1094,13 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | 2024-11-26-cyfrin-M0-Portals-v2.0.pdf | TypeConverter | unmatched — not counted | — | listed in scope | no |
 | Halborn - M Portal.pdf | ExecutorEntryPoint | unmatched — not counted | — | listed in scope | no |
 | Halborn - M Portal.pdf | HubExecutorEntryPoint | unmatched — not counted | — | listed in scope | no |
-| Halborn - M Portal.pdf | Portal | own contract | 0x36f586… (selected) `0x36f586...3c2ece` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Halborn - M Portal.pdf | Portal | own contract | 0x36f586… (selected) `0x36f586a30502ae3afb555b8aa4dcc05d233c2ece` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Halborn - M Portal.pdf | HubPortal | unmatched — not counted | — | listed in scope | no |
 | Kirill-Fedoseev-audit-report-v2.md | HubPortal | unmatched — not counted | — | mentioned in scope summary and findings | no |
 | Kirill-Fedoseev-audit-report-v2.md | SpokePortal | unmatched — not counted | — | mentioned in scope summary and findings | no |
 | Kirill-Fedoseev-audit-report-v2.md | SpokeVault | unmatched — not counted | — | mentioned in scope summary and findings | no |
 | Kirill-Fedoseev-audit-report-v2.md | SmartMToken | unmatched — not counted | — | mentioned in findings | no |
-| Kirill-Fedoseev-audit-report-v2.md | Registrar | ambiguous — not counted | Registrar (alternative) `0x119fbe...81ae2c` — deployed 2024-05-07 16:17:59+03 — liveness: live (code_present_context)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbe...81ae2c` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Kirill-Fedoseev-audit-report-v2.md | Registrar | ambiguous — not counted | Registrar (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — deployed 2024-05-07 16:17:59+03 — liveness: live (code_present_context)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code)<br>0x119fbe… (alternative) `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | Kirill-Fedoseev-audit-report-v2.md | IContinuousIndexing | unmatched — not counted | — | mentioned in findings | no |
 | Kirill-Fedoseev-audit-report-v2.md | ISpokeVault | unmatched — not counted | — | mentioned in findings | no |
 | Kirill-Fedoseev-audit-report-v2.md | PayloadEncoder | unmatched — not counted | — | mentioned in findings | no |
@@ -1113,7 +1113,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x119fbe...81ae2c` | Registrar | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` | Registrar | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -61,7 +61,7 @@ The protocol comprises 2 functional families. Its contracts share 12 common proj
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| PRFI | unknown | base | n/a | [`0x7bbcf1...de3255`](./contracts/base-8453/0x7bbcf1b600565ae023a1806ef637af4739de3255/) | ⚠️ Unaudited |
+| PRFI | unknown | base | n/a | [`0x7bbcf1b600565ae023a1806ef637af4739de3255`](./contracts/base-8453/0x7bbcf1b600565ae023a1806ef637af4739de3255/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -81,14 +81,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | base | n/a | `0x1e8559...b97582` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x3d5154...563bca` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x793db5...bad98b` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x7d8f06...c68494` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x86ceb2...936f95` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x8da56b...bc9fa5` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xc7f171...000c7a` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xdf3206...22151a` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x1e8559dc36662ef13c924e0ef65a4c8bbcb97582` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x3d51540dfdda899ba2fc15fd7b78e53557563bca` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x793db56a15ca053dcfd9d62b9992eb1906bad98b` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x7d8f06ed5f7844037a01d7b3f690c2dcc1c68494` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x86ceb2583db939ca2e3ddf638cd34e7654936f95` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x8da56bed633b73547535f0563f287472e1bc9fa5` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xc7f1716625d999fb8d70b67e47310fe401000c7a` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xdf320691ea30081a9c4179ab31ddb7e23e22151a` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -103,7 +103,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x7bbcf1...de3255`](./contracts/base-8453/0x7bbcf1b600565ae023a1806ef637af4739de3255/) | PRFI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x7bbcf1b600565ae023a1806ef637af4739de3255`](./contracts/base-8453/0x7bbcf1b600565ae023a1806ef637af4739de3255/) | PRFI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

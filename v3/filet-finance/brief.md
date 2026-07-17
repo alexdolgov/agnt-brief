@@ -90,7 +90,7 @@ The pinned logic-topography run contains 1 contract row(s) across bsc, heco. Str
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| StakingCon | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-239832 | `0x9c821d...fa6f39` | ⚠️ Unaudited |
+| StakingCon | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-239832 | `0x9c821defd3bbb07c5c786c3bb039051364fa6f39` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -110,8 +110,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | heco | n/a | `0x01502c...a1837f` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | heco | n/a | `0x9c821d...fa6f39` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | heco | n/a | `0x01502cae9e6f973eab687aa99ba1b332aaa1837f` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | heco | n/a | `0x9c821defd3bbb07c5c786c3bb039051364fa6f39` | ❓ Unverified |
 
 ## Audit Inventory
 

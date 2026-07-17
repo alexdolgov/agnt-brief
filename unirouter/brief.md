@@ -61,13 +61,13 @@ The protocol comprises 2 functional families. Its contracts share 4 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BridgeConfig | unknown | mode | n/a | [`0xf99f62...88fc24`](./contracts/mode-34443/0xf99f62475f50be59393dbdc148e6627e4e88fc24/) | ⚠️ Unaudited |
-| BridgeEndpoint | unknown | mode | n/a | [`0x79d1c9...b38e8a`](./contracts/mode-34443/0x79d1c91053baceced5c796ab8a765e4d5ab38e8a/) | ⚠️ Unaudited |
-| BridgeRegistry | unknown | mode | n/a | [`0x88af5f...20d66c`](./contracts/mode-34443/0x88af5f4bdd601c1bd3674bf1ad2cc282a720d66c/) | ⚠️ Unaudited |
-| BridgeToken | unknown | mode | n/a | [`0x0d3c78...a6cf07`](./contracts/mode-34443/0x0d3c781313b1d4abbb45459621f0168826a6cf07/) | ⚠️ Unaudited |
-| MintableERC20 | unknown | bsc | n/a | [`0x2a3dc2...1c081a`](./contracts/bsc-56/0x2a3dc2d5daf9c8c46c954b8669f4643c6b1c081a/) | ⚠️ Unaudited |
-| MultisigWallet | unknown | mode | n/a | [`0x4869f4...2f480c`](./contracts/mode-34443/0x4869f4ec844cd3383f8261affcf29b23182f480c/) | ⚠️ Unaudited |
-| TimeLock | unknown | mode | n/a | [`0x1dcae9...759ab3`](./contracts/mode-34443/0x1dcae9e29e5f9aab02792a1a27e0ba2875759ab3/) | ⚠️ Unaudited |
+| BridgeConfig | unknown | mode | n/a | [`0xf99f62475f50be59393dbdc148e6627e4e88fc24`](./contracts/mode-34443/0xf99f62475f50be59393dbdc148e6627e4e88fc24/) | ⚠️ Unaudited |
+| BridgeEndpoint | unknown | mode | n/a | [`0x79d1c91053baceced5c796ab8a765e4d5ab38e8a`](./contracts/mode-34443/0x79d1c91053baceced5c796ab8a765e4d5ab38e8a/) | ⚠️ Unaudited |
+| BridgeRegistry | unknown | mode | n/a | [`0x88af5f4bdd601c1bd3674bf1ad2cc282a720d66c`](./contracts/mode-34443/0x88af5f4bdd601c1bd3674bf1ad2cc282a720d66c/) | ⚠️ Unaudited |
+| BridgeToken | unknown | mode | n/a | [`0x0d3c781313b1d4abbb45459621f0168826a6cf07`](./contracts/mode-34443/0x0d3c781313b1d4abbb45459621f0168826a6cf07/) | ⚠️ Unaudited |
+| MintableERC20 | unknown | bsc | n/a | [`0x2a3dc2d5daf9c8c46c954b8669f4643c6b1c081a`](./contracts/bsc-56/0x2a3dc2d5daf9c8c46c954b8669f4643c6b1c081a/) | ⚠️ Unaudited |
+| MultisigWallet | unknown | mode | n/a | [`0x4869f4ec844cd3383f8261affcf29b23182f480c`](./contracts/mode-34443/0x4869f4ec844cd3383f8261affcf29b23182f480c/) | ⚠️ Unaudited |
+| TimeLock | unknown | mode | n/a | [`0x1dcae9e29e5f9aab02792a1a27e0ba2875759ab3`](./contracts/mode-34443/0x1dcae9e29e5f9aab02792a1a27e0ba2875759ab3/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -99,13 +99,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| mode | [`0xf99f62...88fc24`](./contracts/mode-34443/0xf99f62475f50be59393dbdc148e6627e4e88fc24/) | BridgeConfig | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| mode | [`0x79d1c9...b38e8a`](./contracts/mode-34443/0x79d1c91053baceced5c796ab8a765e4d5ab38e8a/) | BridgeEndpoint | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| mode | [`0x88af5f...20d66c`](./contracts/mode-34443/0x88af5f4bdd601c1bd3674bf1ad2cc282a720d66c/) | BridgeRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| mode | [`0x0d3c78...a6cf07`](./contracts/mode-34443/0x0d3c781313b1d4abbb45459621f0168826a6cf07/) | BridgeToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x2a3dc2...1c081a`](./contracts/bsc-56/0x2a3dc2d5daf9c8c46c954b8669f4643c6b1c081a/) | MintableERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| mode | [`0x4869f4...2f480c`](./contracts/mode-34443/0x4869f4ec844cd3383f8261affcf29b23182f480c/) | MultisigWallet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| mode | [`0x1dcae9...759ab3`](./contracts/mode-34443/0x1dcae9e29e5f9aab02792a1a27e0ba2875759ab3/) | TimeLock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| mode | [`0xf99f62475f50be59393dbdc148e6627e4e88fc24`](./contracts/mode-34443/0xf99f62475f50be59393dbdc148e6627e4e88fc24/) | BridgeConfig | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| mode | [`0x79d1c91053baceced5c796ab8a765e4d5ab38e8a`](./contracts/mode-34443/0x79d1c91053baceced5c796ab8a765e4d5ab38e8a/) | BridgeEndpoint | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| mode | [`0x88af5f4bdd601c1bd3674bf1ad2cc282a720d66c`](./contracts/mode-34443/0x88af5f4bdd601c1bd3674bf1ad2cc282a720d66c/) | BridgeRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| mode | [`0x0d3c781313b1d4abbb45459621f0168826a6cf07`](./contracts/mode-34443/0x0d3c781313b1d4abbb45459621f0168826a6cf07/) | BridgeToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x2a3dc2d5daf9c8c46c954b8669f4643c6b1c081a`](./contracts/bsc-56/0x2a3dc2d5daf9c8c46c954b8669f4643c6b1c081a/) | MintableERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| mode | [`0x4869f4ec844cd3383f8261affcf29b23182f480c`](./contracts/mode-34443/0x4869f4ec844cd3383f8261affcf29b23182f480c/) | MultisigWallet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| mode | [`0x1dcae9e29e5f9aab02792a1a27e0ba2875759ab3`](./contracts/mode-34443/0x1dcae9e29e5f9aab02792a1a27e0ba2875759ab3/) | TimeLock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

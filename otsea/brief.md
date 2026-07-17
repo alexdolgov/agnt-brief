@@ -59,17 +59,17 @@ The protocol comprises 2 functional families. Its contracts share 2 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| OTSea | unknown | ethereum | n/a | 2 deployments: ethereum [`0x6e8b67...5353b4`](./contracts/ethereum-1/0x6e8b67b315b44519f8c2befdbbe11097c45353b4/); base `0xa836af...8c5fd5` | ✅ Audited |
-| OTSeaERC20 | token | ethereum | n/a | [`0x5da151...09cb09`](./contracts/ethereum-1/0x5da151b95657e788076d04d56234bd93e409cb09/) | ✅ Audited |
+| OTSea | unknown | ethereum | n/a | 2 deployments: ethereum [`0x6e8b67b315b44519f8c2befdbbe11097c45353b4`](./contracts/ethereum-1/0x6e8b67b315b44519f8c2befdbbe11097c45353b4/); base `0xa836af59d35b3da3c9fb5cfd6f84d9e3bd8c5fd5` | ✅ Audited |
+| OTSeaERC20 | token | ethereum | n/a | [`0x5da151b95657e788076d04d56234bd93e409cb09`](./contracts/ethereum-1/0x5da151b95657e788076d04d56234bd93e409cb09/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (4)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| OTSeaMigration | unknown | ethereum | n/a | [`0xe4eacc...fe50e9`](./contracts/ethereum-1/0xe4eacc41aa1a8208d57c1b4766b6b69e1cfe50e9/) | ⚠️ Unaudited |
-| OTSeaRevenueDistributor | unknown | ethereum | n/a | [`0x34bccf...cca7ff`](./contracts/ethereum-1/0x34bccf4af03870265fe99cec262524f343cca7ff/) | ⚠️ Unaudited |
-| OTSeaStable | unknown | ethereum | n/a | [`0x1c3c44...1885b8`](./contracts/ethereum-1/0x1c3c442c0ece529e6a8d7815b33c014e641885b8/) | ⚠️ Unaudited |
-| OTSeaStaking | unknown | ethereum | n/a | [`0xf2c8e8...f30916`](./contracts/ethereum-1/0xf2c8e860ca12cde3f3195423ecf54427a4f30916/) | ⚠️ Unaudited |
+| OTSeaMigration | unknown | ethereum | n/a | [`0xe4eacc41aa1a8208d57c1b4766b6b69e1cfe50e9`](./contracts/ethereum-1/0xe4eacc41aa1a8208d57c1b4766b6b69e1cfe50e9/) | ⚠️ Unaudited |
+| OTSeaRevenueDistributor | unknown | ethereum | n/a | [`0x34bccf4af03870265fe99cec262524f343cca7ff`](./contracts/ethereum-1/0x34bccf4af03870265fe99cec262524f343cca7ff/) | ⚠️ Unaudited |
+| OTSeaStable | unknown | ethereum | n/a | [`0x1c3c442c0ece529e6a8d7815b33c014e641885b8`](./contracts/ethereum-1/0x1c3c442c0ece529e6a8d7815b33c014e641885b8/) | ⚠️ Unaudited |
+| OTSeaStaking | unknown | ethereum | n/a | [`0xf2c8e860ca12cde3f3195423ecf54427a4f30916`](./contracts/ethereum-1/0xf2c8e860ca12cde3f3195423ecf54427a4f30916/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -89,20 +89,20 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x14d727...4f73f2` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x20662e...23343d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x2ef116...33c0ed` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x40e0c6...2aa0ff` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x56a3c6...dd70e9` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x81077a...fffec2` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x902f26...0c4ea8` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x92cd50...b77a0c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xa0aa24...be2ad7` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xa1f4bf...8e3fbe` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xb2f99e...052505` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xd8119b...0d02d9` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xdb0429...28c1f9` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x34bccf...cca7ff` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x14d7279b9bce6aaae9d557e78ad7856c3f4f73f2` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x20662eb429f302789111b2f26b300396f623343d` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x2ef116a2dcec994d809cd0b7ce4887037733c0ed` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x40e0c695a560df86c19679e5714a4fd5392aa0ff` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x56a3c6cae948e71fbfbabeaf57ac0c48eadd70e9` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x81077a71870d16b784349264265f0521b9fffec2` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x902f2688e872a9454f355f3d6eec3aa7240c4ea8` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x92cd502123129cdfd0d0af1e0e055f5500b77a0c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xa0aa2446674d859cc020c19428953d6564be2ad7` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xa1f4bf1a13c17f91d5a976ebf04b6e6bf18e3fbe` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb2f99e6f08c0435f3d5352ea1b87afd77c052505` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd8119be471fce0b4b72aa3c1e8fcc6b5370d02d9` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xdb042933ed8e912234006a9cb2215acc1428c1f9` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x34bccf4af03870265fe99cec262524f343cca7ff` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -118,10 +118,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xe4eacc...fe50e9`](./contracts/ethereum-1/0xe4eacc41aa1a8208d57c1b4766b6b69e1cfe50e9/) | OTSeaMigration | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x34bccf...cca7ff`](./contracts/ethereum-1/0x34bccf4af03870265fe99cec262524f343cca7ff/) | OTSeaRevenueDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1c3c44...1885b8`](./contracts/ethereum-1/0x1c3c442c0ece529e6a8d7815b33c014e641885b8/) | OTSeaStable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xf2c8e8...f30916`](./contracts/ethereum-1/0xf2c8e860ca12cde3f3195423ecf54427a4f30916/) | OTSeaStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe4eacc41aa1a8208d57c1b4766b6b69e1cfe50e9`](./contracts/ethereum-1/0xe4eacc41aa1a8208d57c1b4766b6b69e1cfe50e9/) | OTSeaMigration | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x34bccf4af03870265fe99cec262524f343cca7ff`](./contracts/ethereum-1/0x34bccf4af03870265fe99cec262524f343cca7ff/) | OTSeaRevenueDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1c3c442c0ece529e6a8d7815b33c014e641885b8`](./contracts/ethereum-1/0x1c3c442c0ece529e6a8d7815b33c014e641885b8/) | OTSeaStable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xf2c8e860ca12cde3f3195423ecf54427a4f30916`](./contracts/ethereum-1/0xf2c8e860ca12cde3f3195423ecf54427a4f30916/) | OTSeaStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

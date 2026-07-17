@@ -62,9 +62,9 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AdminUpgradeabilityProxy | unknown | bsc | n/a | [`0x098e86...c619f8`](./contracts/bsc-56/0x098e86a6f1440cf500e965d50bdd0e8dfdc619f8/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | bsc | n/a | [`0x358502...4fdbbb`](./contracts/bsc-56/0x35850294d6f5961fdc708f1e3d2a21e4c34fdbbb/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | polygon | n/a | [`0x084274...566c7f`](./contracts/polygon-137/0x0842744879067dd6b9e7c28b2523184be2566c7f/) | ⚠️ Unaudited |
+| AdminUpgradeabilityProxy | unknown | bsc | n/a | [`0x098e86a6f1440cf500e965d50bdd0e8dfdc619f8`](./contracts/bsc-56/0x098e86a6f1440cf500e965d50bdd0e8dfdc619f8/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | bsc | n/a | [`0x35850294d6f5961fdc708f1e3d2a21e4c34fdbbb`](./contracts/bsc-56/0x35850294d6f5961fdc708f1e3d2a21e4c34fdbbb/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | polygon | n/a | [`0x0842744879067dd6b9e7c28b2523184be2566c7f`](./contracts/polygon-137/0x0842744879067dd6b9e7c28b2523184be2566c7f/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

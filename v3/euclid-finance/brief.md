@@ -90,8 +90,8 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| LRTConfig | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-139266 | `0xdabb6e...ae274e` | ⚠️ Unaudited |
-| LRTDepositPool | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-139267 | `0x26803c...d29947` | ⚠️ Unaudited |
+| LRTConfig | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-139266 | `0xdabb6ec246c9572c30b11f77907006da5cae274e` | ⚠️ Unaudited |
+| LRTDepositPool | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-139267 | `0x26803cb8bd2916eb58c3610cab50077a96d29947` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -111,7 +111,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xf857c9...227e03` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xf857c938829c2a53557fb3fbb1c85d10a5227e03` | ❓ Unverified |
 
 ## Audit Inventory
 

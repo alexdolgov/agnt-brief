@@ -89,7 +89,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| GPS | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0c1dc7...a0dca5` | ⚠️ Unaudited |
+| GPS | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0c1dc73159e30c4b06170f2593d3118968a0dca5` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

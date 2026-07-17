@@ -56,7 +56,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x2af5d2...912ca3`, chain 1)
+- UnnamedContract (`0x2af5d2ad76741191d15dfe7bf6ac92d4bd912ca3`, chain 1)
 
 ## Contract Surface Quality
 
@@ -102,7 +102,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| GnosisSafe | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xc61b9b...ce193c` | ⚠️ Unaudited |
+| GnosisSafe | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xc61b9bb3a7a0767e3179713f3a5c7a9aedce193c` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -122,7 +122,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380599 | `0x2af5d2...912ca3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380599 | `0x2af5d2ad76741191d15dfe7bf6ac92d4bd912ca3` | ❓ Unverified |
 
 ## Audit Inventory
 

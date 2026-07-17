@@ -61,35 +61,35 @@ The protocol comprises 3 functional families. Its contracts share 19 common proj
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CapToken | unknown | ethereum | n/a | [`0xcccc62...a3cccc`](./contracts/ethereum-1/0xcccc62962d17b8914c62d74ffb843d73b2a3cccc/) | ⚠️ Unaudited |
-| Create2Deployer | unknown | ethereum | n/a | [`0x13b0d8...e9bef2`](./contracts/ethereum-1/0x13b0d85ccb8bf860b6b79af3029fca081ae9bef2/) | ⚠️ Unaudited |
-| CreateX | unknown | ethereum | n/a | [`0xba5ed0...8ba5ed`](./contracts/ethereum-1/0xba5ed099633d3b313e4d5f7bdc1305d3c28ba5ed/) | ⚠️ Unaudited |
-| EntryPoint | unknown | ethereum | n/a | [`0x000000...7da032`](./contracts/ethereum-1/0x0000000071727de22e5e9d8baf0edac6f37da032/) | ⚠️ Unaudited |
-| ERC1820Registry | unknown | ethereum | n/a | [`0x1820a4...5fad24`](./contracts/ethereum-1/0x1820a4b7618bde71dce8cdc73aab6c95905fad24/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | ethereum | n/a | [`0x88887b...1d8888`](./contracts/ethereum-1/0x88887be419578051ff9f4eb6c858a951921d8888/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | ethereum | n/a | [`0xec2af1...943926`](./contracts/ethereum-1/0xec2af1c8b110a61fd9c3fa6a554a031ca9943926/) | ⚠️ Unaudited |
-| GnosisSafe | unknown | ethereum | n/a | [`0x69f4d1...6e2938`](./contracts/ethereum-1/0x69f4d1788e39c87893c980c06edf4b7f686e2938/) | ⚠️ Unaudited |
-| GnosisSafeL2 | unknown | ethereum | n/a | [`0xfb1bff...7191ea`](./contracts/ethereum-1/0xfb1bffc9d739b8d520daf37df666da4c687191ea/) | ⚠️ Unaudited |
-| L1ChugSplashProxy | unknown | ethereum | n/a | [`0x0ca3a2...a2ee75`](./contracts/ethereum-1/0x0ca3a2fbc3d770b578223fbb6b062fa875a2ee75/) | ⚠️ Unaudited |
-| Merge | unknown | ethereum | n/a | [`0x17fef0...319618`](./contracts/ethereum-1/0x17fef0d05ffed818af08ae00bec06b65c4319618/) | ⚠️ Unaudited |
-| Multicall3 | unknown | ethereum | n/a | [`0xca11bd...76ca11`](./contracts/ethereum-1/0xca11bde05977b3631167028862be2a173976ca11/) | ⚠️ Unaudited |
-| MultiSend | unknown | ethereum | n/a | [`0x998739...8f9eda`](./contracts/ethereum-1/0x998739bfdaadde7c933b942a68053933098f9eda/) | ⚠️ Unaudited |
-| MultiSendCallOnly | unknown | ethereum | n/a | [`0xa1dabe...44102b`](./contracts/ethereum-1/0xa1dabef33b3b82c7814b6d82a79e50f4ac44102b/) | ⚠️ Unaudited |
-| Permit2 | unknown | ethereum | n/a | [`0x000000...c78ba3`](./contracts/ethereum-1/0x000000000022d473030f116ddee9f6b43ac78ba3/) | ⚠️ Unaudited |
-| Proxy | unknown | ethereum | n/a | [`0x037b8f...650049`](./contracts/ethereum-1/0x037b8fd9056a6d66422e4c471417564f35650049/) | ⚠️ Unaudited |
-| Proxy | unknown | ethereum | n/a | [`0x10a5ef...e75c9b`](./contracts/ethereum-1/0x10a5ef23c1ed5f06e157999dccb20b0c0be75c9b/) | ⚠️ Unaudited |
-| Proxy | unknown | ethereum | n/a | [`0x1ed92e...1cb77e`](./contracts/ethereum-1/0x1ed92e1bc9a2735216540eddd0191144681cb77e/) | ⚠️ Unaudited |
-| Proxy | unknown | ethereum | n/a | [`0x3d8ee2...12a242`](./contracts/ethereum-1/0x3d8ee269f87a7f3f0590c5c0d825fff06212a242/) | ⚠️ Unaudited |
-| Proxy | unknown | ethereum | n/a | [`0x7f82f5...d709e8`](./contracts/ethereum-1/0x7f82f57f0dd546519324392e408b01fcc7d709e8/) | ⚠️ Unaudited |
-| Proxy | unknown | ethereum | n/a | [`0x854684...c9d563`](./contracts/ethereum-1/0x8546840adf796875cd9aacc5b3b048f6b2c9d563/) | ⚠️ Unaudited |
-| Proxy | unknown | ethereum | n/a | [`0xf87503...bd7c61`](./contracts/ethereum-1/0xf875030b9464001fc0f964e47546b0afeebd7c61/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | ethereum | n/a | [`0x2a4642...a7fe9f`](./contracts/ethereum-1/0x2a46427f3ed4e4b6f61a642143473d1df1a7fe9f/) | ⚠️ Unaudited |
-| ResolvedDelegateProxy | unknown | ethereum | n/a | [`0x6c7198...831cc9`](./contracts/ethereum-1/0x6c7198250087b29a8040ec63903bc130f4831cc9/) | ⚠️ Unaudited |
-| SenderCreator | unknown | ethereum | n/a | [`0x7fc984...088348`](./contracts/ethereum-1/0x7fc98430eaedbb6070b35b39d798725049088348/) | ⚠️ Unaudited |
-| StakedUSDeOFTAdapter | unknown | ethereum | n/a | [`0x211cc4...5fe5d2`](./contracts/ethereum-1/0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0xb0f70c...817072`](./contracts/ethereum-1/0xb0f70c0bd6fd87dbeb7c10dc692a2a6106817072/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0xecac9c...5c11c1`](./contracts/ethereum-1/0xecac9c5f704e954931349da37f60e39f515c11c1/) | ⚠️ Unaudited |
-| USDeOFTAdapter | unknown | ethereum | n/a | [`0x5d3a1f...52ef34`](./contracts/ethereum-1/0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34/) | ⚠️ Unaudited |
+| CapToken | unknown | ethereum | n/a | [`0xcccc62962d17b8914c62d74ffb843d73b2a3cccc`](./contracts/ethereum-1/0xcccc62962d17b8914c62d74ffb843d73b2a3cccc/) | ⚠️ Unaudited |
+| Create2Deployer | unknown | ethereum | n/a | [`0x13b0d85ccb8bf860b6b79af3029fca081ae9bef2`](./contracts/ethereum-1/0x13b0d85ccb8bf860b6b79af3029fca081ae9bef2/) | ⚠️ Unaudited |
+| CreateX | unknown | ethereum | n/a | [`0xba5ed099633d3b313e4d5f7bdc1305d3c28ba5ed`](./contracts/ethereum-1/0xba5ed099633d3b313e4d5f7bdc1305d3c28ba5ed/) | ⚠️ Unaudited |
+| EntryPoint | unknown | ethereum | n/a | [`0x0000000071727de22e5e9d8baf0edac6f37da032`](./contracts/ethereum-1/0x0000000071727de22e5e9d8baf0edac6f37da032/) | ⚠️ Unaudited |
+| ERC1820Registry | unknown | ethereum | n/a | [`0x1820a4b7618bde71dce8cdc73aab6c95905fad24`](./contracts/ethereum-1/0x1820a4b7618bde71dce8cdc73aab6c95905fad24/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | ethereum | n/a | [`0x88887be419578051ff9f4eb6c858a951921d8888`](./contracts/ethereum-1/0x88887be419578051ff9f4eb6c858a951921d8888/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | ethereum | n/a | [`0xec2af1c8b110a61fd9c3fa6a554a031ca9943926`](./contracts/ethereum-1/0xec2af1c8b110a61fd9c3fa6a554a031ca9943926/) | ⚠️ Unaudited |
+| GnosisSafe | unknown | ethereum | n/a | [`0x69f4d1788e39c87893c980c06edf4b7f686e2938`](./contracts/ethereum-1/0x69f4d1788e39c87893c980c06edf4b7f686e2938/) | ⚠️ Unaudited |
+| GnosisSafeL2 | unknown | ethereum | n/a | [`0xfb1bffc9d739b8d520daf37df666da4c687191ea`](./contracts/ethereum-1/0xfb1bffc9d739b8d520daf37df666da4c687191ea/) | ⚠️ Unaudited |
+| L1ChugSplashProxy | unknown | ethereum | n/a | [`0x0ca3a2fbc3d770b578223fbb6b062fa875a2ee75`](./contracts/ethereum-1/0x0ca3a2fbc3d770b578223fbb6b062fa875a2ee75/) | ⚠️ Unaudited |
+| Merge | unknown | ethereum | n/a | [`0x17fef0d05ffed818af08ae00bec06b65c4319618`](./contracts/ethereum-1/0x17fef0d05ffed818af08ae00bec06b65c4319618/) | ⚠️ Unaudited |
+| Multicall3 | unknown | ethereum | n/a | [`0xca11bde05977b3631167028862be2a173976ca11`](./contracts/ethereum-1/0xca11bde05977b3631167028862be2a173976ca11/) | ⚠️ Unaudited |
+| MultiSend | unknown | ethereum | n/a | [`0x998739bfdaadde7c933b942a68053933098f9eda`](./contracts/ethereum-1/0x998739bfdaadde7c933b942a68053933098f9eda/) | ⚠️ Unaudited |
+| MultiSendCallOnly | unknown | ethereum | n/a | [`0xa1dabef33b3b82c7814b6d82a79e50f4ac44102b`](./contracts/ethereum-1/0xa1dabef33b3b82c7814b6d82a79e50f4ac44102b/) | ⚠️ Unaudited |
+| Permit2 | unknown | ethereum | n/a | [`0x000000000022d473030f116ddee9f6b43ac78ba3`](./contracts/ethereum-1/0x000000000022d473030f116ddee9f6b43ac78ba3/) | ⚠️ Unaudited |
+| Proxy | unknown | ethereum | n/a | [`0x037b8fd9056a6d66422e4c471417564f35650049`](./contracts/ethereum-1/0x037b8fd9056a6d66422e4c471417564f35650049/) | ⚠️ Unaudited |
+| Proxy | unknown | ethereum | n/a | [`0x10a5ef23c1ed5f06e157999dccb20b0c0be75c9b`](./contracts/ethereum-1/0x10a5ef23c1ed5f06e157999dccb20b0c0be75c9b/) | ⚠️ Unaudited |
+| Proxy | unknown | ethereum | n/a | [`0x1ed92e1bc9a2735216540eddd0191144681cb77e`](./contracts/ethereum-1/0x1ed92e1bc9a2735216540eddd0191144681cb77e/) | ⚠️ Unaudited |
+| Proxy | unknown | ethereum | n/a | [`0x3d8ee269f87a7f3f0590c5c0d825fff06212a242`](./contracts/ethereum-1/0x3d8ee269f87a7f3f0590c5c0d825fff06212a242/) | ⚠️ Unaudited |
+| Proxy | unknown | ethereum | n/a | [`0x7f82f57f0dd546519324392e408b01fcc7d709e8`](./contracts/ethereum-1/0x7f82f57f0dd546519324392e408b01fcc7d709e8/) | ⚠️ Unaudited |
+| Proxy | unknown | ethereum | n/a | [`0x8546840adf796875cd9aacc5b3b048f6b2c9d563`](./contracts/ethereum-1/0x8546840adf796875cd9aacc5b3b048f6b2c9d563/) | ⚠️ Unaudited |
+| Proxy | unknown | ethereum | n/a | [`0xf875030b9464001fc0f964e47546b0afeebd7c61`](./contracts/ethereum-1/0xf875030b9464001fc0f964e47546b0afeebd7c61/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | ethereum | n/a | [`0x2a46427f3ed4e4b6f61a642143473d1df1a7fe9f`](./contracts/ethereum-1/0x2a46427f3ed4e4b6f61a642143473d1df1a7fe9f/) | ⚠️ Unaudited |
+| ResolvedDelegateProxy | unknown | ethereum | n/a | [`0x6c7198250087b29a8040ec63903bc130f4831cc9`](./contracts/ethereum-1/0x6c7198250087b29a8040ec63903bc130f4831cc9/) | ⚠️ Unaudited |
+| SenderCreator | unknown | ethereum | n/a | [`0x7fc98430eaedbb6070b35b39d798725049088348`](./contracts/ethereum-1/0x7fc98430eaedbb6070b35b39d798725049088348/) | ⚠️ Unaudited |
+| StakedUSDeOFTAdapter | unknown | ethereum | n/a | [`0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2`](./contracts/ethereum-1/0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0xb0f70c0bd6fd87dbeb7c10dc692a2a6106817072`](./contracts/ethereum-1/0xb0f70c0bd6fd87dbeb7c10dc692a2a6106817072/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0xecac9c5f704e954931349da37f60e39f515c11c1`](./contracts/ethereum-1/0xecac9c5f704e954931349da37f60e39f515c11c1/) | ⚠️ Unaudited |
+| USDeOFTAdapter | unknown | ethereum | n/a | [`0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34`](./contracts/ethereum-1/0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -122,15 +122,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xcccc62...a3cccc`](./contracts/ethereum-1/0xcccc62962d17b8914c62d74ffb843d73b2a3cccc/) | CapToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x000000...7da032`](./contracts/ethereum-1/0x0000000071727de22e5e9d8baf0edac6f37da032/) | EntryPoint | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1820a4...5fad24`](./contracts/ethereum-1/0x1820a4b7618bde71dce8cdc73aab6c95905fad24/) | ERC1820Registry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0ca3a2...a2ee75`](./contracts/ethereum-1/0x0ca3a2fbc3d770b578223fbb6b062fa875a2ee75/) | L1ChugSplashProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x17fef0...319618`](./contracts/ethereum-1/0x17fef0d05ffed818af08ae00bec06b65c4319618/) | Merge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6c7198...831cc9`](./contracts/ethereum-1/0x6c7198250087b29a8040ec63903bc130f4831cc9/) | ResolvedDelegateProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x7fc984...088348`](./contracts/ethereum-1/0x7fc98430eaedbb6070b35b39d798725049088348/) | SenderCreator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x211cc4...5fe5d2`](./contracts/ethereum-1/0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2/) | StakedUSDeOFTAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x5d3a1f...52ef34`](./contracts/ethereum-1/0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34/) | USDeOFTAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xcccc62962d17b8914c62d74ffb843d73b2a3cccc`](./contracts/ethereum-1/0xcccc62962d17b8914c62d74ffb843d73b2a3cccc/) | CapToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0000000071727de22e5e9d8baf0edac6f37da032`](./contracts/ethereum-1/0x0000000071727de22e5e9d8baf0edac6f37da032/) | EntryPoint | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1820a4b7618bde71dce8cdc73aab6c95905fad24`](./contracts/ethereum-1/0x1820a4b7618bde71dce8cdc73aab6c95905fad24/) | ERC1820Registry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0ca3a2fbc3d770b578223fbb6b062fa875a2ee75`](./contracts/ethereum-1/0x0ca3a2fbc3d770b578223fbb6b062fa875a2ee75/) | L1ChugSplashProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x17fef0d05ffed818af08ae00bec06b65c4319618`](./contracts/ethereum-1/0x17fef0d05ffed818af08ae00bec06b65c4319618/) | Merge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6c7198250087b29a8040ec63903bc130f4831cc9`](./contracts/ethereum-1/0x6c7198250087b29a8040ec63903bc130f4831cc9/) | ResolvedDelegateProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x7fc98430eaedbb6070b35b39d798725049088348`](./contracts/ethereum-1/0x7fc98430eaedbb6070b35b39d798725049088348/) | SenderCreator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2`](./contracts/ethereum-1/0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2/) | StakedUSDeOFTAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34`](./contracts/ethereum-1/0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34/) | USDeOFTAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

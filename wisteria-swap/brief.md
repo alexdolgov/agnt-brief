@@ -61,7 +61,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| WisteriaSwap | unknown | bsc | n/a | [`0xaadff1...c3ece7`](./contracts/bsc-56/0xaadff17d56d80312b392ced903f3e8dbe5c3ece7/) | ⚠️ Unaudited |
+| WisteriaSwap | unknown | bsc | n/a | [`0xaadff17d56d80312b392ced903f3e8dbe5c3ece7`](./contracts/bsc-56/0xaadff17d56d80312b392ced903f3e8dbe5c3ece7/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,7 +93,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0xaadff1...c3ece7`](./contracts/bsc-56/0xaadff17d56d80312b392ced903f3e8dbe5c3ece7/) | WisteriaSwap | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xaadff17d56d80312b392ced903f3e8dbe5c3ece7`](./contracts/bsc-56/0xaadff17d56d80312b392ced903f3e8dbe5c3ece7/) | WisteriaSwap | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

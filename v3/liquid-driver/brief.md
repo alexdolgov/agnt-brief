@@ -57,9 +57,9 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x05b710...658e89`, chain 250)
-- UnnamedContract (`0x10b620...cd86f9`, chain 250)
-- UnnamedContract (`0x742474...861a0c`, chain 250)
+- UnnamedContract (`0x05b7109b2dae299d882c410c1a281fc194658e89`, chain 250)
+- UnnamedContract (`0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9`, chain 250)
+- UnnamedContract (`0x742474dae70fa2ab063ab786b1fbe5704e861a0c`, chain 250)
 
 ## Contract Surface Quality
 
@@ -105,29 +105,29 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AnyswapV3ERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x04068d...5d5b75` | ⚠️ Unaudited |
-| liveThe | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x7f49a9...30ea5a` | ⚠️ Unaudited |
-| LiveTheChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0c214c...2ccc35` | ⚠️ Unaudited |
-| LiveTheChefRewardSeeder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3c7357...742119` | ⚠️ Unaudited |
-| LiveTheChefSecondRewarder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x301e2d...4ddbba` | ⚠️ Unaudited |
-| LiveTheFeeManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x053a5b...a234e9` | ⚠️ Unaudited |
-| LiveTheManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0b843e...338142` | ⚠️ Unaudited |
-| MiniChefV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x21c8b2...6bc4b5` | ⚠️ Unaudited |
-| MockERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2301d8...ba6a4a` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x60ae73...fda22c` | ⚠️ Unaudited |
-| QLqdr | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x082deb...466616` | ⚠️ Unaudited |
-| SmartWalletWhitelist | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xaf1123...d3719b` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0x15a678...3bf86f` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0x1f1570...6ad7ef` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0x219b1d...bf9b6d` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0x283581...71a212` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0x326c6c...b05432` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0x409932...f3933c` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0x8081c9...e1349b` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0xa19547...2b13aa` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0xc1f5c8...a31799` | ⚠️ Unaudited |
-| V2Migrator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0e5cce...138cf2` | ⚠️ Unaudited |
-| Vyper_contract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x1e7388...40de45` | ⚠️ Unaudited |
+| AnyswapV3ERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x04068da6c83afcfa0e13ba15a6696662335d5b75` | ⚠️ Unaudited |
+| liveThe | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x7f49a90103419aff919bdbf53833cad6e230ea5a` | ⚠️ Unaudited |
+| LiveTheChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0c214c8f68e10efb66e1ca03d29036e8a32ccc35` | ⚠️ Unaudited |
+| LiveTheChefRewardSeeder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3c73571026fb57d59917233e700570aba5742119` | ⚠️ Unaudited |
+| LiveTheChefSecondRewarder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x301e2d3a8336aba9dbe6ad50f65e4e3e8c4ddbba` | ⚠️ Unaudited |
+| LiveTheFeeManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x053a5b18c5cc0c03786be4f75ebf62cdf1a234e9` | ⚠️ Unaudited |
+| LiveTheManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0b843e695b23bfbc89db97ea07ca9664fd338142` | ⚠️ Unaudited |
+| MiniChefV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x21c8b25ac1adf0b3163c868fb94e1f44586bc4b5` | ⚠️ Unaudited |
+| MockERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2301d8074f606cc8bd418f819770dab0e0ba6a4a` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x60ae73bd198be2a7867f10038d9f367836fda22c` | ⚠️ Unaudited |
+| QLqdr | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x082debec62b09770162a12f6b898176c5b466616` | ⚠️ Unaudited |
+| SmartWalletWhitelist | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xaf1123d03fc668fc25b085896899ea5b2fd3719b` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0x15a678c004a91e101940ce1499f0cb2d223bf86f` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0x1f1570ab469088c6c79210516a1dea66976ad7ef` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0x219b1da33fdcc75b7be1f51889c1fdfa61bf9b6d` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0x2835814d519f1bbf469c80205ec99e45b071a212` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0x326c6c675338435a7e1cdea7cddb1d2f11b05432` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0x4099327ac3c356cb1ac3babe7484a153fff3933c` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0x8081c959bc0386225e0e56a844d5e64df2e1349b` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0xa1954737421d4506b2f1042d24dfd5969b2b13aa` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0xc1f5c8141027e7d38268b9e0924606a183a31799` | ⚠️ Unaudited |
+| V2Migrator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0e5cce16a88e37db7608673a5b9894be76138cf2` | ⚠️ Unaudited |
+| Vyper_contract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x1e73885fdc69fd232a1650d7753fef654e40de45` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -147,9 +147,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-388513 | `0x05b710...658e89` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-388514 | `0x10b620...cd86f9` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-388515 | `0x742474...861a0c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-388513 | `0x05b7109b2dae299d882c410c1a281fc194658e89` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-388514 | `0x10b620b2dbac4faa7d7ffd71da486f5d44cd86f9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-388515 | `0x742474dae70fa2ab063ab786b1fbe5704e861a0c` | ❓ Unverified |
 
 ## Audit Inventory
 

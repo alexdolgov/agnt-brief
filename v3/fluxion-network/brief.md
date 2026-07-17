@@ -52,15 +52,15 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- FactoryRegistry (`0x47c401...fd8710`, chain 5000)
-- NonfungiblePositionManager (`0x2b70c4...fd8db3`, chain 5000)
-- Pool (`0x8d4b46...d921e6`, chain 5000)
-- PoolFactory (`0x9336b1...d41fe9`, chain 5000)
-- PoolFeesUpgradeable (`0xac1305...9e27b1`, chain 5000)
-- QuoterV2 (`0x3e4ee1...2e14ce`, chain 5000)
-- Router (`0xd772e6...fb6408`, chain 5000)
-- SwapRouter (`0x5628a5...6dfaa0`, chain 5000)
-- UniswapV3Factory (`0xf88316...9b737c`, chain 5000)
+- FactoryRegistry (`0x47c401407f11482d562e2c00b67944c379fd8710`, chain 5000)
+- NonfungiblePositionManager (`0x2b70c4e7ca8e920435a5db191e066e9e3afd8db3`, chain 5000)
+- Pool (`0x8d4b46b6ce7c59ec42eea9e67b0eeffd29d921e6`, chain 5000)
+- PoolFactory (`0x9336b143c572d75f1f2b7374532e8c96eed41fe9`, chain 5000)
+- PoolFeesUpgradeable (`0xac130562c9406b87a84883437c39190a009e27b1`, chain 5000)
+- QuoterV2 (`0x3e4ee18ac7280813236a1eb850679da5322e14ce`, chain 5000)
+- Router (`0xd772e655af24fe5af92504d613d1da0d9cfb6408`, chain 5000)
+- SwapRouter (`0x5628a59df0ecac3f3171f877a94beb26ba6dfaa0`, chain 5000)
+- UniswapV3Factory (`0xf883162ed9c7e8ef604214c964c678e40c9b737c`, chain 5000)
 
 ## Contract Surface Quality
 
@@ -106,19 +106,19 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| NonfungiblePositionManager | unknown | project_anchor | own_supporting | 0 | mantle | unit-386588 | `0x2b70c4...fd8db3` | ✅ Audited |
-| Pool | unknown | project_anchor | own_supporting | 1 | mantle | unit-386595 | 2 deployments: mantle `0x8d4b46...d921e6`; mantle `0x9336b1...d41fe9` | ✅ Audited |
-| PoolFeesUpgradeable | unknown | project_anchor | own_supporting | 0 | mantle | unit-386591 | `0xac1305...9e27b1` | ✅ Audited |
-| SwapRouter | unknown | project_anchor | own_supporting | 1 | mantle | unit-386594 | `0x5628a5...6dfaa0` | ✅ Audited |
-| UniswapV3Factory | unknown | project_anchor | own_supporting | 0 | mantle | unit-386593 | `0xf88316...9b737c` | ✅ Audited |
+| NonfungiblePositionManager | unknown | project_anchor | own_supporting | 0 | mantle | unit-386588 | `0x2b70c4e7ca8e920435a5db191e066e9e3afd8db3` | ✅ Audited |
+| Pool | unknown | project_anchor | own_supporting | 1 | mantle | unit-386595 | 2 deployments: mantle `0x8d4b46b6ce7c59ec42eea9e67b0eeffd29d921e6`; mantle `0x9336b143c572d75f1f2b7374532e8c96eed41fe9` | ✅ Audited |
+| PoolFeesUpgradeable | unknown | project_anchor | own_supporting | 0 | mantle | unit-386591 | `0xac130562c9406b87a84883437c39190a009e27b1` | ✅ Audited |
+| SwapRouter | unknown | project_anchor | own_supporting | 1 | mantle | unit-386594 | `0x5628a59df0ecac3f3171f877a94beb26ba6dfaa0` | ✅ Audited |
+| UniswapV3Factory | unknown | project_anchor | own_supporting | 0 | mantle | unit-386593 | `0xf883162ed9c7e8ef604214c964c678e40c9b737c` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| FactoryRegistry | unknown | project_anchor | own_supporting | 0 | mantle | unit-386590 | `0x47c401...fd8710` | ⚠️ Unaudited |
-| QuoterV2 | unknown | project_anchor | own_supporting | 0 | mantle | unit-386589 | `0x3e4ee1...2e14ce` | ⚠️ Unaudited |
-| Router | unknown | project_anchor | own_supporting | 0 | mantle | unit-386592 | `0xd772e6...fb6408` | ⚠️ Unaudited |
+| FactoryRegistry | unknown | project_anchor | own_supporting | 0 | mantle | unit-386590 | `0x47c401407f11482d562e2c00b67944c379fd8710` | ⚠️ Unaudited |
+| QuoterV2 | unknown | project_anchor | own_supporting | 0 | mantle | unit-386589 | `0x3e4ee18ac7280813236a1eb850679da5322e14ce` | ⚠️ Unaudited |
+| Router | unknown | project_anchor | own_supporting | 0 | mantle | unit-386592 | `0xd772e655af24fe5af92504d613d1da0d9cfb6408` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -164,13 +164,13 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| Fluxion Smart Contract Audit Report-Exvul.pdf | Pool | ambiguous — not counted | Pool (alternative) `0x8d4b46...d921e6` — liveness: live (current_address_book_code)<br>PoolFactory (proxy) (alternative) `0x9336b1...d41fe9` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| Fluxion Smart Contract Audit Report-Exvul.pdf | PoolFactory | own proxy deployment | PoolFactory (proxy) (selected) `0x9336b1...d41fe9` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Fluxion Smart Contract Audit Report-Exvul.pdf | PoolFeesUpgradeable | own contract | PoolFeesUpgradeable (selected) `0xac1305...9e27b1` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Fluxion Smart Contract Audit Report-Exvul.pdf | Pool | ambiguous — not counted | Pool (alternative) `0x8d4b46b6ce7c59ec42eea9e67b0eeffd29d921e6` — liveness: live (current_address_book_code)<br>PoolFactory (proxy) (alternative) `0x9336b143c572d75f1f2b7374532e8c96eed41fe9` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Fluxion Smart Contract Audit Report-Exvul.pdf | PoolFactory | own proxy deployment | PoolFactory (proxy) (selected) `0x9336b143c572d75f1f2b7374532e8c96eed41fe9` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Fluxion Smart Contract Audit Report-Exvul.pdf | PoolFeesUpgradeable | own contract | PoolFeesUpgradeable (selected) `0xac130562c9406b87a84883437c39190a009e27b1` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Fluxion Smart Contract Audit Report-Exvul.pdf | IPool | unmatched — not counted | — | listed in scope and findings | no |
-| Fluxion Smart Contract - V2 Audit Report-Exvul.pdf | Pool | ambiguous — not counted | Pool (alternative) `0x8d4b46...d921e6` — liveness: live (current_address_book_code)<br>PoolFactory (proxy) (alternative) `0x9336b1...d41fe9` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| Fluxion Smart Contract - V2 Audit Report-Exvul.pdf | PoolFactory | own proxy deployment | PoolFactory (proxy) (selected) `0x9336b1...d41fe9` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Fluxion Smart Contract - V2 Audit Report-Exvul.pdf | PoolFeesUpgradeable | own contract | PoolFeesUpgradeable (selected) `0xac1305...9e27b1` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Fluxion Smart Contract - V2 Audit Report-Exvul.pdf | Pool | ambiguous — not counted | Pool (alternative) `0x8d4b46b6ce7c59ec42eea9e67b0eeffd29d921e6` — liveness: live (current_address_book_code)<br>PoolFactory (proxy) (alternative) `0x9336b143c572d75f1f2b7374532e8c96eed41fe9` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Fluxion Smart Contract - V2 Audit Report-Exvul.pdf | PoolFactory | own proxy deployment | PoolFactory (proxy) (selected) `0x9336b143c572d75f1f2b7374532e8c96eed41fe9` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Fluxion Smart Contract - V2 Audit Report-Exvul.pdf | PoolFeesUpgradeable | own contract | PoolFeesUpgradeable (selected) `0xac130562c9406b87a84883437c39190a009e27b1` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Fluxion Smart Contract - V2 Audit Report-Exvul.pdf | IPool | unmatched — not counted | — | listed in scope and findings | no |
 | Fluxion-Exchange Smart Contract Audit Report - QuillAudits.pdf | BlockTimestamp | unmatched — not counted | — | listed in scope table | no |
 | Fluxion-Exchange Smart Contract Audit Report - QuillAudits.pdf | ERC721Permit | unmatched — not counted | — | listed in scope table | no |
@@ -198,10 +198,10 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Fluxion-Exchange Smart Contract Audit Report - QuillAudits.pdf | SqrtPriceMathPartial | unmatched — not counted | — | listed in scope table | no |
 | Fluxion-Exchange Smart Contract Audit Report - QuillAudits.pdf | TokenRatioSortOrder | unmatched — not counted | — | listed in scope table | no |
 | Fluxion-Exchange Smart Contract Audit Report - QuillAudits.pdf | TransferHelper | unmatched — not counted | — | listed in scope table | no |
-| Fluxion-Exchange Smart Contract Audit Report - QuillAudits.pdf | NonfungiblePositionManager | own contract | NonfungiblePositionManager (selected) `0x2b70c4...fd8db3` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Fluxion-Exchange Smart Contract Audit Report - QuillAudits.pdf | SwapRouter | own proxy deployment | SwapRouter (proxy) (selected) `0x5628a5...6dfaa0` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Fluxion-Exchange Smart Contract Audit Report - QuillAudits.pdf | NonfungiblePositionManager | own contract | NonfungiblePositionManager (selected) `0x2b70c4e7ca8e920435a5db191e066e9e3afd8db3` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Fluxion-Exchange Smart Contract Audit Report - QuillAudits.pdf | SwapRouter | own proxy deployment | SwapRouter (proxy) (selected) `0x5628a59df0ecac3f3171f877a94beb26ba6dfaa0` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Fluxion-Exchange Smart Contract Audit Report - QuillAudits.pdf | NoDelegateCall | unmatched — not counted | — | listed in scope table | no |
-| Fluxion-Exchange Smart Contract Audit Report - QuillAudits.pdf | UniswapV3Factory | own contract | UniswapV3Factory (selected) `0xf88316...9b737c` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Fluxion-Exchange Smart Contract Audit Report - QuillAudits.pdf | UniswapV3Factory | own contract | UniswapV3Factory (selected) `0xf883162ed9c7e8ef604214c964c678e40c9b737c` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Fluxion-Exchange Smart Contract Audit Report - QuillAudits.pdf | UniswapV3Pool | unmatched — not counted | — | listed in scope table | no |
 | Fluxion-Exchange Smart Contract Audit Report - QuillAudits.pdf | UniswapV3PoolDeployer | unmatched — not counted | — | listed in scope table | no |
 | Fluxion-Exchange Smart Contract Audit Report - QuillAudits.pdf | BitMath | unmatched — not counted | — | listed in scope table | no |

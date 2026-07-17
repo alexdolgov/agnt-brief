@@ -48,8 +48,8 @@ The pinned logic-topography run contains 143 contract row(s) across arbitrum, av
 
 ### Forked Contracts
 
-**BridgeableTokenP** (`0x78bb48...95823c`, chain 1)
-Origin: mimo (`0x4dde0e...8531fc`)
+**BridgeableTokenP** (`0x78bb4882b77d74ad9b04ab71fe8e61f72595823c`, chain 1)
+Origin: mimo (`0x4dde0e308cfb60515218c6ad2df1134fc48531fc`)
 Containment: 100.0% - 25 functions inherited
 Centroid audit status: pending_validation
 
@@ -57,8 +57,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**BridgeableTokenP** (`0x76a9a0...759dd5`, chain 10)
-Origin: mimo (`0x4dde0e...8531fc`)
+**BridgeableTokenP** (`0x76a9a0062ec6712b99b4f63bd2b4270185759dd5`, chain 10)
+Origin: mimo (`0x4dde0e308cfb60515218c6ad2df1134fc48531fc`)
 Containment: 100.0% - 25 functions inherited
 Centroid audit status: pending_validation
 
@@ -66,8 +66,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**BridgeableTokenP** (`0x7b54f3...420c72`, chain 56)
-Origin: mimo (`0x4dde0e...8531fc`)
+**BridgeableTokenP** (`0x7b54f3d993d3bca077946034ea710f9c07420c72`, chain 56)
+Origin: mimo (`0x4dde0e308cfb60515218c6ad2df1134fc48531fc`)
 Containment: 100.0% - 25 functions inherited
 Centroid audit status: pending_validation
 
@@ -75,8 +75,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**BridgeableTokenP** (`0x9ffacb...c699ec`, chain 100)
-Origin: mimo (`0x4dde0e...8531fc`)
+**BridgeableTokenP** (`0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec`, chain 100)
+Origin: mimo (`0x4dde0e308cfb60515218c6ad2df1134fc48531fc`)
 Containment: 100.0% - 25 functions inherited
 Centroid audit status: pending_validation
 
@@ -84,8 +84,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**BridgeableTokenP** (`0x9ffacb...c699ec`, chain 130)
-Origin: mimo (`0x4dde0e...8531fc`)
+**BridgeableTokenP** (`0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec`, chain 130)
+Origin: mimo (`0x4dde0e308cfb60515218c6ad2df1134fc48531fc`)
 Containment: 100.0% - 25 functions inherited
 Centroid audit status: pending_validation
 
@@ -93,8 +93,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**BridgeableTokenP** (`0x9afdb5...4a2ca9`, chain 137)
-Origin: mimo (`0x4dde0e...8531fc`)
+**BridgeableTokenP** (`0x9afdb5a5ec2bbdddaa4573baa25caa4e4e4a2ca9`, chain 137)
+Origin: mimo (`0x4dde0e308cfb60515218c6ad2df1134fc48531fc`)
 Containment: 100.0% - 25 functions inherited
 Centroid audit status: pending_validation
 
@@ -102,8 +102,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**BridgeableTokenP** (`0xda8189...a377e6`, chain 146)
-Origin: mimo (`0x4dde0e...8531fc`)
+**BridgeableTokenP** (`0xda818995ddeee3ac36bf492133e1feae1fa377e6`, chain 146)
+Origin: mimo (`0x4dde0e308cfb60515218c6ad2df1134fc48531fc`)
 Containment: 100.0% - 25 functions inherited
 Centroid audit status: pending_validation
 
@@ -111,8 +111,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**BridgeableTokenP** (`0x9e79ec...3a9ee7`, chain 252)
-Origin: mimo (`0x4dde0e...8531fc`)
+**BridgeableTokenP** (`0x9e79ec4bc3574f2865636aecff44b60a723a9ee7`, chain 252)
+Origin: mimo (`0x4dde0e308cfb60515218c6ad2df1134fc48531fc`)
 Containment: 100.0% - 25 functions inherited
 Centroid audit status: pending_validation
 
@@ -120,8 +120,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**BridgeableTokenP** (`0xc3bef2...8048ed`, chain 999)
-Origin: mimo (`0x4dde0e...8531fc`)
+**BridgeableTokenP** (`0xc3bef21ea7deb5c34cf33e918c8e28972c8048ed`, chain 999)
+Origin: mimo (`0x4dde0e308cfb60515218c6ad2df1134fc48531fc`)
 Containment: 100.0% - 25 functions inherited
 Centroid audit status: pending_validation
 
@@ -129,8 +129,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**BridgeableTokenP** (`0x7b54f3...420c72`, chain 1329)
-Origin: mimo (`0x4dde0e...8531fc`)
+**BridgeableTokenP** (`0x7b54f3d993d3bca077946034ea710f9c07420c72`, chain 1329)
+Origin: mimo (`0x4dde0e308cfb60515218c6ad2df1134fc48531fc`)
 Containment: 100.0% - 25 functions inherited
 Centroid audit status: pending_validation
 
@@ -138,8 +138,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**BridgeableTokenP** (`0x4dde0e...8531fc`, chain 8453)
-Origin: mimo (`0x4dde0e...8531fc`)
+**BridgeableTokenP** (`0x4dde0e308cfb60515218c6ad2df1134fc48531fc`, chain 8453)
+Origin: mimo (`0x4dde0e308cfb60515218c6ad2df1134fc48531fc`)
 Containment: 100.0% - 25 functions inherited
 Centroid audit status: pending_validation
 
@@ -147,8 +147,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**BridgeableTokenP** (`0x9e79ec...3a9ee7`, chain 9745)
-Origin: mimo (`0x4dde0e...8531fc`)
+**BridgeableTokenP** (`0x9e79ec4bc3574f2865636aecff44b60a723a9ee7`, chain 9745)
+Origin: mimo (`0x4dde0e308cfb60515218c6ad2df1134fc48531fc`)
 Containment: 100.0% - 25 functions inherited
 Centroid audit status: pending_validation
 
@@ -156,8 +156,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**BridgeableTokenP** (`0x4dde0e...8531fc`, chain 42161)
-Origin: mimo (`0x4dde0e...8531fc`)
+**BridgeableTokenP** (`0x4dde0e308cfb60515218c6ad2df1134fc48531fc`, chain 42161)
+Origin: mimo (`0x4dde0e308cfb60515218c6ad2df1134fc48531fc`)
 Containment: 100.0% - 25 functions inherited
 Centroid audit status: pending_validation
 
@@ -165,8 +165,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**BridgeableTokenP** (`0x9ffacb...c699ec`, chain 43114)
-Origin: mimo (`0x4dde0e...8531fc`)
+**BridgeableTokenP** (`0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec`, chain 43114)
+Origin: mimo (`0x4dde0e308cfb60515218c6ad2df1134fc48531fc`)
 Containment: 100.0% - 25 functions inherited
 Centroid audit status: pending_validation
 
@@ -174,8 +174,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**BridgeableTokenP** (`0x9e79ec...3a9ee7`, chain 59144)
-Origin: mimo (`0x4dde0e...8531fc`)
+**BridgeableTokenP** (`0x9e79ec4bc3574f2865636aecff44b60a723a9ee7`, chain 59144)
+Origin: mimo (`0x4dde0e308cfb60515218c6ad2df1134fc48531fc`)
 Containment: 100.0% - 25 functions inherited
 Centroid audit status: pending_validation
 
@@ -183,8 +183,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**BridgeableTokenP** (`0x9ffacb...c699ec`, chain 80094)
-Origin: mimo (`0x4dde0e...8531fc`)
+**BridgeableTokenP** (`0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec`, chain 80094)
+Origin: mimo (`0x4dde0e308cfb60515218c6ad2df1134fc48531fc`)
 Containment: 100.0% - 25 functions inherited
 Centroid audit status: pending_validation
 
@@ -192,8 +192,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**BridgeableTokenP** (`0x9ffacb...c699ec`, chain 534352)
-Origin: mimo (`0x4dde0e...8531fc`)
+**BridgeableTokenP** (`0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec`, chain 534352)
+Origin: mimo (`0x4dde0e308cfb60515218c6ad2df1134fc48531fc`)
 Containment: 92.0% - 23 functions inherited
 Centroid audit status: pending_validation
 
@@ -203,8 +203,8 @@ Removals (removed from original):
 - lzReceiveSimulate(Origin,bytes32,bytes,address,bytes)
 - setMsgInspector(address)
 
-**Getters** (`0x90e4ae...a4ee43`, chain 146)
-Origin: mimo (`0x120805...06a9d2`)
+**Getters** (`0x90e4ae8ba8c6fd51fced0f9331668b05c7a4ee43`, chain 146)
+Origin: mimo (`0x120805265fa944834dc6e930de2995768806a9d2`)
 Containment: 100.0% - 24 functions inherited
 Centroid audit status: pending_validation
 
@@ -214,154 +214,154 @@ Removals (removed from original): none
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x0d45b1...32cae4`, chain 1)
-- UnnamedContract (`0x1bb46f...8ff97e`, chain 1)
-- UnnamedContract (`0x41d589...547c80`, chain 1)
-- UnnamedContract (`0x473868...d8e74f`, chain 1)
-- UnnamedContract (`0x506ba3...7f3c5a`, chain 1)
-- UnnamedContract (`0x6efedd...f262a2`, chain 1)
-- UnnamedContract (`0x9b3a8f...e24459`, chain 1)
-- UnnamedContract (`0xa19c5d...f7c025`, chain 1)
-- UnnamedContract (`0xa360e5...41c2f5`, chain 1)
-- UnnamedContract (`0xa9c21c...59181d`, chain 1)
-- UnnamedContract (`0xad58fc...e51b0d`, chain 1)
-- UnnamedContract (`0xc743be...e4a92f`, chain 1)
-- UnnamedContract (`0xc9b627...ba0bfc`, chain 1)
-- UnnamedContract (`0xd8cc2a...309862`, chain 1)
-- UnnamedContract (`0xeb1974...489095`, chain 1)
-- UnnamedContract (`0x3dde24...a9a6c3`, chain 43114)
-- UnnamedContract (`0x9e0dcf...991277`, chain 534352)
-- UnnamedContract (`0xcb3e56...de600b`, chain 534352)
-- UnnamedContract (`0xe23b5d...05cf7b`, chain 534352)
-- DiamondCut (`0xe9fe47...5990e8`, chain 146)
-- DiamondCut (`0xa65821...1759df`, chain 999)
-- DiamondCut (`0x154524...9295b1`, chain 8453)
-- DiamondCut (`0x657acb...ce0052`, chain 43114)
-- DiamondLoupe (`0x2b6c7c...6e4dec`, chain 146)
-- DiamondLoupe (`0xbefbae...5f8826`, chain 999)
-- DiamondLoupe (`0x24cef2...13d3aa`, chain 8453)
-- DiamondLoupe (`0x23d491...2ba95d`, chain 43114)
-- DiamondProxy (`0xbefbae...5f8826`, chain 146)
-- DiamondProxy (`0x125030...0f1707`, chain 999)
-- DiamondProxy (`0xc3bef2...8048ed`, chain 8453)
-- DiamondProxy (`0x41d589...547c80`, chain 43114)
-- ERC1967Proxy (`0x3ebe33...8e54d9`, chain 10)
-- ERC1967Proxy (`0x90337e...348545`, chain 10)
-- ERC1967Proxy (`0x048c4e...133d5c`, chain 56)
-- ERC1967Proxy (`0xc0e62f...4fe3fa`, chain 56)
-- ERC1967Proxy (`0x9e0dcf...991277`, chain 100)
-- ERC1967Proxy (`0x9ee196...f26aa4`, chain 100)
-- ERC1967Proxy (`0x9e0dcf...991277`, chain 130)
-- ERC1967Proxy (`0x9ee196...f26aa4`, chain 130)
-- ERC1967Proxy (`0x125030...0f1707`, chain 137)
-- ERC1967Proxy (`0xc15fd0...48da5f`, chain 137)
-- ERC1967Proxy (`0x08417c...c3f182`, chain 146)
-- ERC1967Proxy (`0x2cb56d...e885e7`, chain 146)
-- ERC1967Proxy (`0xe8a3da...77517b`, chain 146)
-- ERC1967Proxy (`0x46b053...e3faf2`, chain 252)
-- ERC1967Proxy (`0x8fcf91...4140f3`, chain 252)
-- ERC1967Proxy (`0x154524...9295b1`, chain 999)
-- ERC1967Proxy (`0x9b3a8f...e24459`, chain 999)
-- ERC1967Proxy (`0xbe65f0...57d588`, chain 999)
-- ERC1967Proxy (`0x048c4e...133d5c`, chain 1329)
-- ERC1967Proxy (`0xc0e62f...4fe3fa`, chain 1329)
-- ERC1967Proxy (`0x08417c...c3f182`, chain 8453)
-- ERC1967Proxy (`0x472ed5...e3e7e7`, chain 8453)
-- ERC1967Proxy (`0x76a9a0...759dd5`, chain 8453)
-- ERC1967Proxy (`0x46b053...e3faf2`, chain 9745)
-- ERC1967Proxy (`0xc2f8b5...abcb8f`, chain 9745)
-- ERC1967Proxy (`0x08417c...c3f182`, chain 42161)
-- ERC1967Proxy (`0x76a9a0...759dd5`, chain 42161)
-- ERC1967Proxy (`0x9d92c2...8ed3e0`, chain 43114)
-- ERC1967Proxy (`0x9e0dcf...991277`, chain 43114)
-- ERC1967Proxy (`0x9ee196...f26aa4`, chain 43114)
-- ERC1967Proxy (`0x46b053...e3faf2`, chain 59144)
-- ERC1967Proxy (`0x8fcf91...4140f3`, chain 59144)
-- ERC1967Proxy (`0x9e0dcf...991277`, chain 80094)
-- ERC1967Proxy (`0x9ee196...f26aa4`, chain 80094)
-- ERC1967Proxy (`0x9ee196...f26aa4`, chain 534352)
-- FlashParallelToken (`0x4def53...1eda14`, chain 10)
-- FlashParallelToken (`0x9ffacb...c699ec`, chain 56)
-- FlashParallelToken (`0xe23b5d...05cf7b`, chain 100)
-- FlashParallelToken (`0xe23b5d...05cf7b`, chain 130)
-- FlashParallelToken (`0x09f396...50ab72`, chain 137)
-- FlashParallelToken (`0x4dde0e...8531fc`, chain 146)
-- FlashParallelToken (`0x10eb3f...1b539b`, chain 252)
-- FlashParallelToken (`0x3997f0...2298d7`, chain 999)
-- FlashParallelToken (`0x9ffacb...c699ec`, chain 1329)
-- FlashParallelToken (`0xb3dbec...26746c`, chain 8453)
-- FlashParallelToken (`0x10eb3f...1b539b`, chain 9745)
-- FlashParallelToken (`0xb3dbec...26746c`, chain 42161)
-- FlashParallelToken (`0xe23b5d...05cf7b`, chain 43114)
-- FlashParallelToken (`0x10eb3f...1b539b`, chain 59144)
-- FlashParallelToken (`0xe23b5d...05cf7b`, chain 80094)
-- GenericHarvester (`0x36da06...12636c`, chain 1)
-- GenericHarvester (`0x120805...06a9d2`, chain 146)
-- GenericHarvester (`0x57770c...db7e0e`, chain 999)
-- GenericHarvester (`0xca43ec...6b410a`, chain 8453)
-- GenericHarvester (`0x0d45b1...32cae4`, chain 43114)
-- Getters (`0x120805...06a9d2`, chain 999)
-- Getters (`0xbe65f0...57d588`, chain 8453)
-- Getters (`0xf6cc47...e22dbb`, chain 43114)
-- ParallelAccessManager (`0x94ea88...355f7a`, chain 1)
-- ParallelAccessManager (`0x0e4e7c...debf46`, chain 10)
-- ParallelAccessManager (`0xfd28f1...85998e`, chain 56)
-- ParallelAccessManager (`0xfd28f1...85998e`, chain 100)
-- ParallelAccessManager (`0xfd28f1...85998e`, chain 130)
-- ParallelAccessManager (`0x7df74b...6e2811`, chain 137)
-- ParallelAccessManager (`0x8efb3d...094b78`, chain 146)
-- ParallelAccessManager (`0xfd28f1...85998e`, chain 252)
-- ParallelAccessManager (`0xfd28f1...85998e`, chain 999)
-- ParallelAccessManager (`0xfd28f1...85998e`, chain 1329)
-- ParallelAccessManager (`0x0e4e7c...debf46`, chain 8453)
-- ParallelAccessManager (`0xfd28f1...85998e`, chain 9745)
-- ParallelAccessManager (`0x0e4e7c...debf46`, chain 42161)
-- ParallelAccessManager (`0xfd28f1...85998e`, chain 43114)
-- ParallelAccessManager (`0xfd28f1...85998e`, chain 59144)
-- ParallelAccessManager (`0xfd28f1...85998e`, chain 80094)
-- ParallelAccessManager (`0xfd28f1...85998e`, chain 534352)
-- Redeemer (`0xe5c82b...032cc8`, chain 146)
-- Redeemer (`0xf92ed9...bdf594`, chain 999)
-- Redeemer (`0xe9fe47...5990e8`, chain 8453)
-- Redeemer (`0x6efedd...f262a2`, chain 43114)
-- RewardHandler (`0xfb2d07...91e3f7`, chain 146)
-- RewardHandler (`0xa5d9ca...5cbd18`, chain 999)
-- RewardHandler (`0x2b6c7c...6e4dec`, chain 8453)
-- RewardHandler (`0x36da06...12636c`, chain 43114)
-- SavingsNameable (`0xae2fb6...403e2e`, chain 146)
-- SavingsNameable (`0x769f53...d400fd`, chain 999)
-- SavingsNameable (`0xa65821...1759df`, chain 8453)
-- SettersGovernor (`0xc3bef2...8048ed`, chain 146)
-- SettersGovernor (`0x472ed5...e3e7e7`, chain 999)
-- SettersGovernor (`0x90e4ae...a4ee43`, chain 8453)
-- SettersGovernor (`0x5beada...5013a2`, chain 43114)
-- SettersGuardian (`0xca43ec...6b410a`, chain 146)
-- SettersGuardian (`0xe5c82b...032cc8`, chain 8453)
-- SettersGuardian (`0xbbc90e...43fe84`, chain 43114)
-- Swapper (`0xa65821...1759df`, chain 146)
-- Swapper (`0xfb2d07...91e3f7`, chain 8453)
-- Swapper (`0x57265a...ac1490`, chain 43114)
-- TokenP (`0xe8a2d8...322135`, chain 10)
-- TokenP (`0x411dc6...c783bd`, chain 56)
-- TokenP (`0xcb3e56...de600b`, chain 100)
-- TokenP (`0xcb3e56...de600b`, chain 130)
-- TokenP (`0xfefc86...49c9bc`, chain 137)
-- TokenP (`0xb3dbec...26746c`, chain 146)
-- TokenP (`0x35c632...e0f1c7`, chain 252)
-- TokenP (`0x24cef2...13d3aa`, chain 999)
-- TokenP (`0x411dc6...c783bd`, chain 1329)
-- TokenP (`0x3ebe33...8e54d9`, chain 8453)
-- TokenP (`0x0e4e7c...debf46`, chain 9745)
-- TokenP (`0x3ebe33...8e54d9`, chain 42161)
-- TokenP (`0xcb3e56...de600b`, chain 43114)
-- TokenP (`0x35c632...e0f1c7`, chain 59144)
-- TokenP (`0xcb3e56...de600b`, chain 80094)
-- UnnamedContract (`0x9e0dcf...991277`, chain 57073)
-- UnnamedContract (`0x9ee196...f26aa4`, chain 57073)
-- UnnamedContract (`0x9ffacb...c699ec`, chain 57073)
-- UnnamedContract (`0xcb3e56...de600b`, chain 57073)
-- UnnamedContract (`0xe23b5d...05cf7b`, chain 57073)
-- UnnamedContract (`0xfd28f1...85998e`, chain 57073)
+- UnnamedContract (`0x0d45b129dc868963025db79a9074ea9c9e32cae4`, chain 1)
+- UnnamedContract (`0x1bb46fc55e3fd91ca0f162dcc0b3ef574c8ff97e`, chain 1)
+- UnnamedContract (`0x41d58951cbd12d4ef49b0437897677bbf5547c80`, chain 1)
+- UnnamedContract (`0x4738682c1d8981ed9583b58f619d91742ad8e74f`, chain 1)
+- UnnamedContract (`0x506ba37aa8e265be445913b9c4080852277f3c5a`, chain 1)
+- UnnamedContract (`0x6efeddf9269c3683ba516cb0e2124fe335f262a2`, chain 1)
+- UnnamedContract (`0x9b3a8f7cec208e247d97dee13313690977e24459`, chain 1)
+- UnnamedContract (`0xa19c5d1013a8682ac76206a085ec24ac89f7c025`, chain 1)
+- UnnamedContract (`0xa360e5ad9f17caff53715346888aa0d13541c2f5`, chain 1)
+- UnnamedContract (`0xa9c21cf291ad935e0c9b05a55a42254fb159181d`, chain 1)
+- UnnamedContract (`0xad58fc13a682a121e5fe2f8e45d4d988a7e51b0d`, chain 1)
+- UnnamedContract (`0xc743bede8412228b42ae755cd64a33cd3ae4a92f`, chain 1)
+- UnnamedContract (`0xc9b6279baa19dbb8bcc3250c89caa093aaba0bfc`, chain 1)
+- UnnamedContract (`0xd8cc2a51556da84b5db309e86f30ff98b5309862`, chain 1)
+- UnnamedContract (`0xeb197439d1425f3129f01f7763ec511df2489095`, chain 1)
+- UnnamedContract (`0x3dde241c6263eb0cdf2e09f77cbcf90028a9a6c3`, chain 43114)
+- UnnamedContract (`0x9e0dcf7a33bbde6689560c5c807dd2a3df991277`, chain 534352)
+- UnnamedContract (`0xcb3e564293393e0d4f43305a250d4e1716de600b`, chain 534352)
+- UnnamedContract (`0xe23b5ded6f7b7cb56ebcd459b19dad4d7e05cf7b`, chain 534352)
+- DiamondCut (`0xe9fe4720fa99f9b28584da44abb8cf91f15990e8`, chain 146)
+- DiamondCut (`0xa65821ffe86e6eb613daa1f70af350c5a21759df`, chain 999)
+- DiamondCut (`0x15452454a9735d68df430879b2941316a09295b1`, chain 8453)
+- DiamondCut (`0x657acb8a3bf9383e561565d422ea9b9a90ce0052`, chain 43114)
+- DiamondLoupe (`0x2b6c7c275404e93a14a05b549af292231d6e4dec`, chain 146)
+- DiamondLoupe (`0xbefbae2330186f031b469e26283acc66bb5f8826`, chain 999)
+- DiamondLoupe (`0x24cef236056834f38e9247a1fff6681dd313d3aa`, chain 8453)
+- DiamondLoupe (`0x23d491aa7c0972087f8a607f6f4c7106a02ba95d`, chain 43114)
+- DiamondProxy (`0xbefbae2330186f031b469e26283acc66bb5f8826`, chain 146)
+- DiamondProxy (`0x1250304f66404cd153fa39388ddcdaec7e0f1707`, chain 999)
+- DiamondProxy (`0xc3bef21ea7deb5c34cf33e918c8e28972c8048ed`, chain 8453)
+- DiamondProxy (`0x41d58951cbd12d4ef49b0437897677bbf5547c80`, chain 43114)
+- ERC1967Proxy (`0x3ebe332d2aa8ccb5ddc051c9925d9a41708e54d9`, chain 10)
+- ERC1967Proxy (`0x90337e484b1cb02132fc150d3afa262147348545`, chain 10)
+- ERC1967Proxy (`0x048c4e07d170eedee8772ca76aee1c4e2d133d5c`, chain 56)
+- ERC1967Proxy (`0xc0e62f863bbd9dab9d2f79e4ecc248e60c4fe3fa`, chain 56)
+- ERC1967Proxy (`0x9e0dcf7a33bbde6689560c5c807dd2a3df991277`, chain 100)
+- ERC1967Proxy (`0x9ee1963f05553ef838604dd39403be21cef26aa4`, chain 100)
+- ERC1967Proxy (`0x9e0dcf7a33bbde6689560c5c807dd2a3df991277`, chain 130)
+- ERC1967Proxy (`0x9ee1963f05553ef838604dd39403be21cef26aa4`, chain 130)
+- ERC1967Proxy (`0x1250304f66404cd153fa39388ddcdaec7e0f1707`, chain 137)
+- ERC1967Proxy (`0xc15fd01a21e8f6625f709b16f6b3562d2848da5f`, chain 137)
+- ERC1967Proxy (`0x08417cdb7f52a5021bb4eb6e0deaf3f295c3f182`, chain 146)
+- ERC1967Proxy (`0x2cb56df31b909854b01d4b1ead5676cf90e885e7`, chain 146)
+- ERC1967Proxy (`0xe8a3da6f5ed1cf04c58ac7f6a7383641e877517b`, chain 146)
+- ERC1967Proxy (`0x46b053ce47f16390574bb8f54caccd04c1e3faf2`, chain 252)
+- ERC1967Proxy (`0x8fcf9118fdd359f6277cdd143c2da206e64140f3`, chain 252)
+- ERC1967Proxy (`0x15452454a9735d68df430879b2941316a09295b1`, chain 999)
+- ERC1967Proxy (`0x9b3a8f7cec208e247d97dee13313690977e24459`, chain 999)
+- ERC1967Proxy (`0xbe65f0f410a72bec163dc65d46c83699e957d588`, chain 999)
+- ERC1967Proxy (`0x048c4e07d170eedee8772ca76aee1c4e2d133d5c`, chain 1329)
+- ERC1967Proxy (`0xc0e62f863bbd9dab9d2f79e4ecc248e60c4fe3fa`, chain 1329)
+- ERC1967Proxy (`0x08417cdb7f52a5021bb4eb6e0deaf3f295c3f182`, chain 8453)
+- ERC1967Proxy (`0x472ed57b376fe400259fb28e5c46eb53f0e3e7e7`, chain 8453)
+- ERC1967Proxy (`0x76a9a0062ec6712b99b4f63bd2b4270185759dd5`, chain 8453)
+- ERC1967Proxy (`0x46b053ce47f16390574bb8f54caccd04c1e3faf2`, chain 9745)
+- ERC1967Proxy (`0xc2f8b5d893217462ae9c9879c9285a5a3aabcb8f`, chain 9745)
+- ERC1967Proxy (`0x08417cdb7f52a5021bb4eb6e0deaf3f295c3f182`, chain 42161)
+- ERC1967Proxy (`0x76a9a0062ec6712b99b4f63bd2b4270185759dd5`, chain 42161)
+- ERC1967Proxy (`0x9d92c21205383651610f90722131655a5b8ed3e0`, chain 43114)
+- ERC1967Proxy (`0x9e0dcf7a33bbde6689560c5c807dd2a3df991277`, chain 43114)
+- ERC1967Proxy (`0x9ee1963f05553ef838604dd39403be21cef26aa4`, chain 43114)
+- ERC1967Proxy (`0x46b053ce47f16390574bb8f54caccd04c1e3faf2`, chain 59144)
+- ERC1967Proxy (`0x8fcf9118fdd359f6277cdd143c2da206e64140f3`, chain 59144)
+- ERC1967Proxy (`0x9e0dcf7a33bbde6689560c5c807dd2a3df991277`, chain 80094)
+- ERC1967Proxy (`0x9ee1963f05553ef838604dd39403be21cef26aa4`, chain 80094)
+- ERC1967Proxy (`0x9ee1963f05553ef838604dd39403be21cef26aa4`, chain 534352)
+- FlashParallelToken (`0x4def531c3060686948f00ecc7504f2e0b71eda14`, chain 10)
+- FlashParallelToken (`0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec`, chain 56)
+- FlashParallelToken (`0xe23b5ded6f7b7cb56ebcd459b19dad4d7e05cf7b`, chain 100)
+- FlashParallelToken (`0xe23b5ded6f7b7cb56ebcd459b19dad4d7e05cf7b`, chain 130)
+- FlashParallelToken (`0x09f3964874d3c8494f2e98e9e003e53c2750ab72`, chain 137)
+- FlashParallelToken (`0x4dde0e308cfb60515218c6ad2df1134fc48531fc`, chain 146)
+- FlashParallelToken (`0x10eb3f443baa258b3417d6c318f7865ad61b539b`, chain 252)
+- FlashParallelToken (`0x3997f0dbd1e2cfc4eccf60c31366930dcf2298d7`, chain 999)
+- FlashParallelToken (`0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec`, chain 1329)
+- FlashParallelToken (`0xb3dbece41acdd6ad76d037b8da2e53c58826746c`, chain 8453)
+- FlashParallelToken (`0x10eb3f443baa258b3417d6c318f7865ad61b539b`, chain 9745)
+- FlashParallelToken (`0xb3dbece41acdd6ad76d037b8da2e53c58826746c`, chain 42161)
+- FlashParallelToken (`0xe23b5ded6f7b7cb56ebcd459b19dad4d7e05cf7b`, chain 43114)
+- FlashParallelToken (`0x10eb3f443baa258b3417d6c318f7865ad61b539b`, chain 59144)
+- FlashParallelToken (`0xe23b5ded6f7b7cb56ebcd459b19dad4d7e05cf7b`, chain 80094)
+- GenericHarvester (`0x36da06796fd9d22bcd6287b66a87ffdadb12636c`, chain 1)
+- GenericHarvester (`0x120805265fa944834dc6e930de2995768806a9d2`, chain 146)
+- GenericHarvester (`0x57770c1721eb35509f38210a935c8b1911db7e0e`, chain 999)
+- GenericHarvester (`0xca43ecfcdfba1fed003649e946ae6091646b410a`, chain 8453)
+- GenericHarvester (`0x0d45b129dc868963025db79a9074ea9c9e32cae4`, chain 43114)
+- Getters (`0x120805265fa944834dc6e930de2995768806a9d2`, chain 999)
+- Getters (`0xbe65f0f410a72bec163dc65d46c83699e957d588`, chain 8453)
+- Getters (`0xf6cc47e981ed5902be382dbe7b54e3696de22dbb`, chain 43114)
+- ParallelAccessManager (`0x94ea8800444017695345156319e96bdb1e355f7a`, chain 1)
+- ParallelAccessManager (`0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46`, chain 10)
+- ParallelAccessManager (`0xfd28f108e95f4d41daae9dbfff707d677985998e`, chain 56)
+- ParallelAccessManager (`0xfd28f108e95f4d41daae9dbfff707d677985998e`, chain 100)
+- ParallelAccessManager (`0xfd28f108e95f4d41daae9dbfff707d677985998e`, chain 130)
+- ParallelAccessManager (`0x7df74bbb6f82ec1bcb1562a30ef5bf5c326e2811`, chain 137)
+- ParallelAccessManager (`0x8efb3ded78fbaef2a4efe01e01bbd911e4094b78`, chain 146)
+- ParallelAccessManager (`0xfd28f108e95f4d41daae9dbfff707d677985998e`, chain 252)
+- ParallelAccessManager (`0xfd28f108e95f4d41daae9dbfff707d677985998e`, chain 999)
+- ParallelAccessManager (`0xfd28f108e95f4d41daae9dbfff707d677985998e`, chain 1329)
+- ParallelAccessManager (`0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46`, chain 8453)
+- ParallelAccessManager (`0xfd28f108e95f4d41daae9dbfff707d677985998e`, chain 9745)
+- ParallelAccessManager (`0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46`, chain 42161)
+- ParallelAccessManager (`0xfd28f108e95f4d41daae9dbfff707d677985998e`, chain 43114)
+- ParallelAccessManager (`0xfd28f108e95f4d41daae9dbfff707d677985998e`, chain 59144)
+- ParallelAccessManager (`0xfd28f108e95f4d41daae9dbfff707d677985998e`, chain 80094)
+- ParallelAccessManager (`0xfd28f108e95f4d41daae9dbfff707d677985998e`, chain 534352)
+- Redeemer (`0xe5c82b4f09fd4d079757e156db44afd2c8032cc8`, chain 146)
+- Redeemer (`0xf92ed96c7bec4ad46ff7937cae633c907ebdf594`, chain 999)
+- Redeemer (`0xe9fe4720fa99f9b28584da44abb8cf91f15990e8`, chain 8453)
+- Redeemer (`0x6efeddf9269c3683ba516cb0e2124fe335f262a2`, chain 43114)
+- RewardHandler (`0xfb2d070270e9ffc2db107d0162b47c2ed291e3f7`, chain 146)
+- RewardHandler (`0xa5d9caa2ef06d39d5992b5046e2defff6d5cbd18`, chain 999)
+- RewardHandler (`0x2b6c7c275404e93a14a05b549af292231d6e4dec`, chain 8453)
+- RewardHandler (`0x36da06796fd9d22bcd6287b66a87ffdadb12636c`, chain 43114)
+- SavingsNameable (`0xae2fb66d1989ec1684ff095b75d151ae8e403e2e`, chain 146)
+- SavingsNameable (`0x769f533139eb1723c41cadec243ce10bc4d400fd`, chain 999)
+- SavingsNameable (`0xa65821ffe86e6eb613daa1f70af350c5a21759df`, chain 8453)
+- SettersGovernor (`0xc3bef21ea7deb5c34cf33e918c8e28972c8048ed`, chain 146)
+- SettersGovernor (`0x472ed57b376fe400259fb28e5c46eb53f0e3e7e7`, chain 999)
+- SettersGovernor (`0x90e4ae8ba8c6fd51fced0f9331668b05c7a4ee43`, chain 8453)
+- SettersGovernor (`0x5beada21a6b9cb229117b3ea2c0d1594785013a2`, chain 43114)
+- SettersGuardian (`0xca43ecfcdfba1fed003649e946ae6091646b410a`, chain 146)
+- SettersGuardian (`0xe5c82b4f09fd4d079757e156db44afd2c8032cc8`, chain 8453)
+- SettersGuardian (`0xbbc90e685c4a66ebbdc71a3a1437d3111e43fe84`, chain 43114)
+- Swapper (`0xa65821ffe86e6eb613daa1f70af350c5a21759df`, chain 146)
+- Swapper (`0xfb2d070270e9ffc2db107d0162b47c2ed291e3f7`, chain 8453)
+- Swapper (`0x57265a3d7db8f4a4a155eadf6c7326926cac1490`, chain 43114)
+- TokenP (`0xe8a2d848fe656e34a6caa35f375b42979e322135`, chain 10)
+- TokenP (`0x411dc65548c066fb0f85bf48a72306d321c783bd`, chain 56)
+- TokenP (`0xcb3e564293393e0d4f43305a250d4e1716de600b`, chain 100)
+- TokenP (`0xcb3e564293393e0d4f43305a250d4e1716de600b`, chain 130)
+- TokenP (`0xfefc8635edf0faad83312a713cb67722d049c9bc`, chain 137)
+- TokenP (`0xb3dbece41acdd6ad76d037b8da2e53c58826746c`, chain 146)
+- TokenP (`0x35c6323da7d0a4be33ada37eca81e03bece0f1c7`, chain 252)
+- TokenP (`0x24cef236056834f38e9247a1fff6681dd313d3aa`, chain 999)
+- TokenP (`0x411dc65548c066fb0f85bf48a72306d321c783bd`, chain 1329)
+- TokenP (`0x3ebe332d2aa8ccb5ddc051c9925d9a41708e54d9`, chain 8453)
+- TokenP (`0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46`, chain 9745)
+- TokenP (`0x3ebe332d2aa8ccb5ddc051c9925d9a41708e54d9`, chain 42161)
+- TokenP (`0xcb3e564293393e0d4f43305a250d4e1716de600b`, chain 43114)
+- TokenP (`0x35c6323da7d0a4be33ada37eca81e03bece0f1c7`, chain 59144)
+- TokenP (`0xcb3e564293393e0d4f43305a250d4e1716de600b`, chain 80094)
+- UnnamedContract (`0x9e0dcf7a33bbde6689560c5c807dd2a3df991277`, chain 57073)
+- UnnamedContract (`0x9ee1963f05553ef838604dd39403be21cef26aa4`, chain 57073)
+- UnnamedContract (`0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec`, chain 57073)
+- UnnamedContract (`0xcb3e564293393e0d4f43305a250d4e1716de600b`, chain 57073)
+- UnnamedContract (`0xe23b5ded6f7b7cb56ebcd459b19dad4d7e05cf7b`, chain 57073)
+- UnnamedContract (`0xfd28f108e95f4d41daae9dbfff707d677985998e`, chain 57073)
 
 ## Contract Surface Quality
 
@@ -407,131 +407,131 @@ Removals (removed from original): none
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BridgeableToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 12 deployments: ethereum `0x5208f5...c4ca3f`; ethereum `0x624615...815bfb`; ethereum `0x74e3f9...f60e30`; ethereum `0x86afa5...9668e9`; ethereum `0xd4dee6...c838eb`; ethereum `0xe0a86c...5022b2`; polygon `0x1b03d0...583342`; polygon `0x431132...32273b`; polygon `0x5e6c85...f2be85`; polygon `0x7e6bc0...d0a433`; polygon `0x917b9d...51afd7`; polygon `0xe462df...6bc9a8` | ⚠️ Unaudited |
-| BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-251294 | `0x78bb48...95823c` | ⚠️ Unaudited |
-| BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | optimism | unit-251306 | `0x76a9a0...759dd5` | ⚠️ Unaudited |
-| BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | bsc | unit-251347 | `0x7b54f3...420c72` | ⚠️ Unaudited |
-| BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | gnosis | unit-251307 | `0x9ffacb...c699ec` | ⚠️ Unaudited |
-| BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | unichain | unit-251309 | `0x9ffacb...c699ec` | ⚠️ Unaudited |
-| BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | polygon | unit-251314 | `0x9afdb5...4a2ca9` | ⚠️ Unaudited |
-| BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | sonic | unit-251321 | `0xda8189...a377e6` | ⚠️ Unaudited |
-| BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | fraxtal | unit-251325 | `0x9e79ec...3a9ee7` | ⚠️ Unaudited |
-| BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | hyperliquid | unit-251380 | `0xc3bef2...8048ed` | ⚠️ Unaudited |
-| BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | sei | unit-251311 | `0x7b54f3...420c72` | ⚠️ Unaudited |
-| BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | base | unit-251363 | `0x4dde0e...8531fc` | ⚠️ Unaudited |
-| BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | plasma | unit-251369 | `0x9e79ec...3a9ee7` | ⚠️ Unaudited |
-| BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | arbitrum | unit-251328 | `0x4dde0e...8531fc` | ⚠️ Unaudited |
-| BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | avalanche | unit-251337 | `0x9ffacb...c699ec` | ⚠️ Unaudited |
-| BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | linea | unit-251355 | `0x9e79ec...3a9ee7` | ⚠️ Unaudited |
-| BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | berachain | unit-251357 | `0x9ffacb...c699ec` | ⚠️ Unaudited |
-| BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | scroll | unit-251343 | `0x9ffacb...c699ec` | ⚠️ Unaudited |
-| DiamondCut | unknown | project_anchor | own_supporting | 0 | sonic | unit-251323 | `0xe9fe47...5990e8` | ⚠️ Unaudited |
-| DiamondCut | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-251377 | `0xa65821...1759df` | ⚠️ Unaudited |
-| DiamondCut | unknown | project_anchor | own_supporting | 0 | base | unit-251360 | `0x154524...9295b1` | ⚠️ Unaudited |
-| DiamondCut | unknown | project_anchor | own_supporting | 0 | avalanche | unit-251335 | `0x657acb...ce0052` | ⚠️ Unaudited |
-| DiamondInitializer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | 5 deployments: sonic `0xbe65f0...57d588`; hyperliquid `0x056566...cc2c3f`; hyperliquid `0x8b8997...7edaf1`; base `0x3997f0...2298d7`; avalanche `0x506ba3...7f3c5a` | ⚠️ Unaudited |
-| DiamondLoupe | unknown | project_anchor | own_supporting | 0 | sonic | unit-251316 | `0x2b6c7c...6e4dec` | ⚠️ Unaudited |
-| DiamondLoupe | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-251379 | `0xbefbae...5f8826` | ⚠️ Unaudited |
-| DiamondLoupe | unknown | project_anchor | own_supporting | 0 | base | unit-251361 | `0x24cef2...13d3aa` | ⚠️ Unaudited |
-| DiamondLoupe | unknown | project_anchor | own_supporting | 0 | avalanche | unit-251330 | `0x23d491...2ba95d` | ⚠️ Unaudited |
-| DiamondProxy | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-251372 | `0x125030...0f1707` | ⚠️ Unaudited |
-| DiamondProxy | unknown | project_anchor | own_supporting | 0 | avalanche | unit-251332 | `0x41d589...547c80` | ⚠️ Unaudited |
-| ERC1967Proxy | proxy | project_anchor | own_supporting | 0 | scroll | unit-251342 | `0x9ee196...f26aa4` | ⚠️ Unaudited |
-| FlashParallelToken | unknown | project_anchor | own_supporting | 1 | optimism | unit-251383 | 2 deployments: optimism `0x3ebe33...8e54d9`; optimism `0x4def53...1eda14` | ⚠️ Unaudited |
-| FlashParallelToken | unknown | project_anchor | own_supporting | 1 | bsc | unit-251405 | 2 deployments: bsc `0x9ffacb...c699ec`; bsc `0xc0e62f...4fe3fa` | ⚠️ Unaudited |
-| FlashParallelToken | unknown | project_anchor | own_supporting | 1 | gnosis | unit-251386 | 2 deployments: gnosis `0x9e0dcf...991277`; gnosis `0xe23b5d...05cf7b` | ⚠️ Unaudited |
-| FlashParallelToken | unknown | project_anchor | own_supporting | 1 | unichain | unit-251388 | 2 deployments: unichain `0x9e0dcf...991277`; unichain `0xe23b5d...05cf7b` | ⚠️ Unaudited |
-| FlashParallelToken | unknown | project_anchor | own_supporting | 1 | polygon | unit-251391 | 2 deployments: polygon `0x09f396...50ab72`; polygon `0xc15fd0...48da5f` | ⚠️ Unaudited |
-| FlashParallelToken | unknown | project_anchor | own_supporting | 1 | sonic | unit-251393 | 2 deployments: sonic `0x2cb56d...e885e7`; sonic `0x4dde0e...8531fc` | ⚠️ Unaudited |
-| FlashParallelToken | unknown | project_anchor | own_supporting | 1 | fraxtal | unit-251397 | 2 deployments: fraxtal `0x10eb3f...1b539b`; fraxtal `0x46b053...e3faf2` | ⚠️ Unaudited |
-| FlashParallelToken | unknown | project_anchor | own_supporting | 1 | hyperliquid | unit-251417 | 2 deployments: hyperliquid `0x154524...9295b1`; hyperliquid `0x3997f0...2298d7` | ⚠️ Unaudited |
-| FlashParallelToken | unknown | project_anchor | own_supporting | 1 | sei | unit-251390 | 2 deployments: sei `0x9ffacb...c699ec`; sei `0xc0e62f...4fe3fa` | ⚠️ Unaudited |
-| FlashParallelToken | unknown | project_anchor | own_supporting | 1 | base | unit-251412 | 2 deployments: base `0x08417c...c3f182`; base `0xb3dbec...26746c` | ⚠️ Unaudited |
-| FlashParallelToken | unknown | project_anchor | own_supporting | 1 | plasma | unit-251415 | 2 deployments: plasma `0x10eb3f...1b539b`; plasma `0x46b053...e3faf2` | ⚠️ Unaudited |
-| FlashParallelToken | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-251400 | 2 deployments: arbitrum `0x08417c...c3f182`; arbitrum `0xb3dbec...26746c` | ⚠️ Unaudited |
-| FlashParallelToken | unknown | project_anchor | own_supporting | 1 | avalanche | unit-251403 | 2 deployments: avalanche `0x9e0dcf...991277`; avalanche `0xe23b5d...05cf7b` | ⚠️ Unaudited |
-| FlashParallelToken | unknown | project_anchor | own_supporting | 1 | linea | unit-251406 | 2 deployments: linea `0x10eb3f...1b539b`; linea `0x46b053...e3faf2` | ⚠️ Unaudited |
-| FlashParallelToken | unknown | project_anchor | own_supporting | 1 | berachain | unit-251409 | 2 deployments: berachain `0x9e0dcf...991277`; berachain `0xe23b5d...05cf7b` | ⚠️ Unaudited |
-| GenericHarvester | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-251289 | `0x36da06...12636c` | ⚠️ Unaudited |
-| GenericHarvester | operational_periphery | project_anchor | own_supporting | 0 | sonic | unit-251315 | `0x120805...06a9d2` | ⚠️ Unaudited |
-| GenericHarvester | operational_periphery | project_anchor | own_supporting | 0 | hyperliquid | unit-251375 | `0x57770c...db7e0e` | ⚠️ Unaudited |
-| GenericHarvester | operational_periphery | project_anchor | own_supporting | 0 | base | unit-251366 | `0xca43ec...6b410a` | ⚠️ Unaudited |
-| GenericHarvester | operational_periphery | project_anchor | own_supporting | 0 | avalanche | unit-251329 | `0x0d45b1...32cae4` | ⚠️ Unaudited |
-| Getters | unknown | project_anchor | own_supporting | 0 | sonic | unit-251318 | `0x90e4ae...a4ee43` | ⚠️ Unaudited |
-| Getters | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-251371 | `0x120805...06a9d2` | ⚠️ Unaudited |
-| Getters | unknown | project_anchor | own_supporting | 0 | base | unit-251365 | `0xbe65f0...57d588` | ⚠️ Unaudited |
-| Getters | unknown | project_anchor | own_supporting | 0 | avalanche | unit-251339 | `0xf6cc47...e22dbb` | ⚠️ Unaudited |
-| GnosisSafe | governance | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x25fc7f...706f9b` | ⚠️ Unaudited |
-| MainFeeDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: polygon `0x90337e...348545`; polygon `0xb4af56...7cbaa1`; base `0x5d49c8...59b7e3` | ⚠️ Unaudited |
-| MIMOVaultActions | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 6 deployments: polygon `0x1d5825...f4c595`; polygon `0x6ae3cf...d2d4fe`; polygon `0xa8b25d...c13546`; polygon `0xde91eb...02a434`; polygon `0xeb259d...b66d4b`; polygon `0xf6abf8...c51f58` | ⚠️ Unaudited |
-| ParallelAccessManager | governance | project_anchor | own_supporting | 0 | ethereum | unit-251295 | `0x94ea88...355f7a` | ⚠️ Unaudited |
-| ParallelAccessManager | governance | project_anchor | own_supporting | 0 | optimism | unit-251305 | `0x0e4e7c...debf46` | ⚠️ Unaudited |
-| ParallelAccessManager | governance | project_anchor | own_supporting | 0 | bsc | unit-251348 | `0xfd28f1...85998e` | ⚠️ Unaudited |
-| ParallelAccessManager | governance | project_anchor | own_supporting | 0 | gnosis | unit-251308 | `0xfd28f1...85998e` | ⚠️ Unaudited |
-| ParallelAccessManager | governance | project_anchor | own_supporting | 0 | unichain | unit-251310 | `0xfd28f1...85998e` | ⚠️ Unaudited |
-| ParallelAccessManager | governance | project_anchor | own_supporting | 0 | polygon | unit-251313 | `0x7df74b...6e2811` | ⚠️ Unaudited |
-| ParallelAccessManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 2 deployments: polygon `0x8fcf91...4140f3`; sonic `0xa7eb07...55a75c` | ⚠️ Unaudited |
-| ParallelAccessManager | governance | project_anchor | own_supporting | 0 | sonic | unit-251317 | `0x8efb3d...094b78` | ⚠️ Unaudited |
-| ParallelAccessManager | governance | project_anchor | own_supporting | 0 | fraxtal | unit-251326 | `0xfd28f1...85998e` | ⚠️ Unaudited |
-| ParallelAccessManager | governance | project_anchor | own_supporting | 0 | hyperliquid | unit-251382 | `0xfd28f1...85998e` | ⚠️ Unaudited |
-| ParallelAccessManager | governance | project_anchor | own_supporting | 0 | sei | unit-251312 | `0xfd28f1...85998e` | ⚠️ Unaudited |
-| ParallelAccessManager | governance | project_anchor | own_supporting | 0 | base | unit-251359 | `0x0e4e7c...debf46` | ⚠️ Unaudited |
-| ParallelAccessManager | governance | project_anchor | own_supporting | 0 | plasma | unit-251370 | `0xfd28f1...85998e` | ⚠️ Unaudited |
-| ParallelAccessManager | governance | project_anchor | own_supporting | 0 | arbitrum | unit-251327 | `0x0e4e7c...debf46` | ⚠️ Unaudited |
-| ParallelAccessManager | governance | project_anchor | own_supporting | 0 | avalanche | unit-251340 | `0xfd28f1...85998e` | ⚠️ Unaudited |
-| ParallelAccessManager | governance | project_anchor | own_supporting | 0 | linea | unit-251356 | `0xfd28f1...85998e` | ⚠️ Unaudited |
-| ParallelAccessManager | governance | project_anchor | own_supporting | 0 | berachain | unit-251358 | `0xfd28f1...85998e` | ⚠️ Unaudited |
-| ParallelAccessManager | governance | project_anchor | own_supporting | 0 | scroll | unit-251346 | `0xfd28f1...85998e` | ⚠️ Unaudited |
-| PeripheralMigrationContract | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x9c6885...5316cb` | ⚠️ Unaudited |
-| PeripheralPRL | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 5 deployments: optimism `0xfd28f1...85998e`; polygon `0x7790dd...2d5948`; sonic `0xfd28f1...85998e`; base `0xfd28f1...85998e`; arbitrum `0xfd28f1...85998e` | ⚠️ Unaudited |
-| Redeemer | unknown | project_anchor | own_supporting | 0 | sonic | unit-251322 | `0xe5c82b...032cc8` | ⚠️ Unaudited |
-| Redeemer | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-251381 | `0xf92ed9...bdf594` | ⚠️ Unaudited |
-| Redeemer | unknown | project_anchor | own_supporting | 0 | base | unit-251368 | `0xe9fe47...5990e8` | ⚠️ Unaudited |
-| Redeemer | unknown | project_anchor | own_supporting | 0 | avalanche | unit-251336 | `0x6efedd...f262a2` | ⚠️ Unaudited |
-| RewardHandler | unknown | project_anchor | own_supporting | 0 | sonic | unit-251324 | `0xfb2d07...91e3f7` | ⚠️ Unaudited |
-| RewardHandler | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-251376 | `0xa5d9ca...5cbd18` | ⚠️ Unaudited |
-| RewardHandler | unknown | project_anchor | own_supporting | 0 | base | unit-251362 | `0x2b6c7c...6e4dec` | ⚠️ Unaudited |
-| RewardHandler | unknown | project_anchor | own_supporting | 0 | avalanche | unit-251331 | `0x36da06...12636c` | ⚠️ Unaudited |
-| RewardMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: polygon `0x7b54f3...420c72`; base `0x13e867...41a96b` | ⚠️ Unaudited |
-| SavingsNameable | unknown | project_anchor | own_supporting | 1 | sonic | unit-251395 | 2 deployments: sonic `0xae2fb6...403e2e`; sonic `0xe8a3da...77517b` | ⚠️ Unaudited |
-| SavingsNameable | unknown | project_anchor | own_supporting | 1 | hyperliquid | unit-251418 | 2 deployments: hyperliquid `0x769f53...d400fd`; hyperliquid `0x9b3a8f...e24459` | ⚠️ Unaudited |
-| SavingsNameable | unknown | project_anchor | own_supporting | 1 | base | unit-251411 | 2 deployments: base `0x472ed5...e3e7e7`; base `0xa65821...1759df` | ⚠️ Unaudited |
-| SavingsNameable | unknown | project_anchor | own_supporting | 1 | avalanche | unit-251401 | 2 deployments: avalanche `0x3dde24...a9a6c3`; avalanche `0x9d92c2...8ed3e0` | ⚠️ Unaudited |
-| SavingsNameable | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x645fea...25884d` | ⚠️ Unaudited |
-| SettersGovernor | governance | project_anchor | own_supporting | 0 | sonic | unit-251319 | `0xc3bef2...8048ed` | ⚠️ Unaudited |
-| SettersGovernor | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-251374 | `0x472ed5...e3e7e7` | ⚠️ Unaudited |
-| SettersGovernor | governance | project_anchor | own_supporting | 0 | base | unit-251364 | `0x90e4ae...a4ee43` | ⚠️ Unaudited |
-| SettersGovernor | governance | project_anchor | own_supporting | 0 | avalanche | unit-251334 | `0x5beada...5013a2` | ⚠️ Unaudited |
-| SettersGuardian | governance | project_anchor | own_supporting | 0 | sonic | unit-251320 | `0xca43ec...6b410a` | ⚠️ Unaudited |
-| SettersGuardian | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-251378 | `0xae2fb6...403e2e` | ⚠️ Unaudited |
-| SettersGuardian | governance | project_anchor | own_supporting | 0 | base | unit-251367 | `0xe5c82b...032cc8` | ⚠️ Unaudited |
-| SettersGuardian | governance | project_anchor | own_supporting | 0 | avalanche | unit-251338 | `0xbbc90e...43fe84` | ⚠️ Unaudited |
-| SideChainFeeCollector | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | 2 deployments: hyperliquid `0x2f77c2...908574`; avalanche `0x7d2c6c...4907c5` | ⚠️ Unaudited |
-| sPRL1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 5 deployments: ethereum `0xead729...1b5901`; polygon `0xdb7be3...aa9475`; sonic `0x7df74b...6e2811`; base `0x01fa35...922e48`; base `0xefc130...c4d2ce` | ⚠️ Unaudited |
-| sPRL2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe8a2d8...322135` | ⚠️ Unaudited |
-| sPRL2V2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb22f5e...a00e24` | ⚠️ Unaudited |
-| Swapper | unknown | project_anchor | own_supporting | 1 | sonic | unit-251394 | 2 deployments: sonic `0xa65821...1759df`; sonic `0xbefbae...5f8826` | ⚠️ Unaudited |
-| Swapper | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-251373 | `0x1b2741...1b5179` | ⚠️ Unaudited |
-| Swapper | unknown | project_anchor | own_supporting | 1 | base | unit-251413 | 2 deployments: base `0xc3bef2...8048ed`; base `0xfb2d07...91e3f7` | ⚠️ Unaudited |
-| Swapper | adapter | project_anchor | own_supporting | 0 | avalanche | unit-251333 | `0x57265a...ac1490` | ⚠️ Unaudited |
-| TokenP | unknown | project_anchor | own_supporting | 1 | optimism | unit-251384 | 2 deployments: optimism `0x90337e...348545`; optimism `0xe8a2d8...322135` | ⚠️ Unaudited |
-| TokenP | unknown | project_anchor | own_supporting | 1 | bsc | unit-251404 | 2 deployments: bsc `0x048c4e...133d5c`; bsc `0x411dc6...c783bd` | ⚠️ Unaudited |
-| TokenP | unknown | project_anchor | own_supporting | 1 | gnosis | unit-251385 | 2 deployments: gnosis `0x9ee196...f26aa4`; gnosis `0xcb3e56...de600b` | ⚠️ Unaudited |
-| TokenP | unknown | project_anchor | own_supporting | 1 | unichain | unit-251387 | 2 deployments: unichain `0x9ee196...f26aa4`; unichain `0xcb3e56...de600b` | ⚠️ Unaudited |
-| TokenP | unknown | project_anchor | own_supporting | 1 | polygon | unit-251392 | 2 deployments: polygon `0x125030...0f1707`; polygon `0xfefc86...49c9bc` | ⚠️ Unaudited |
-| TokenP | unknown | project_anchor | own_supporting | 1 | sonic | unit-251396 | 2 deployments: sonic `0x08417c...c3f182`; sonic `0xb3dbec...26746c` | ⚠️ Unaudited |
-| TokenP | unknown | project_anchor | own_supporting | 1 | fraxtal | unit-251398 | 2 deployments: fraxtal `0x35c632...e0f1c7`; fraxtal `0x8fcf91...4140f3` | ⚠️ Unaudited |
-| TokenP | unknown | project_anchor | own_supporting | 1 | hyperliquid | unit-251416 | 2 deployments: hyperliquid `0x24cef2...13d3aa`; hyperliquid `0xbe65f0...57d588` | ⚠️ Unaudited |
-| TokenP | unknown | project_anchor | own_supporting | 1 | sei | unit-251389 | 2 deployments: sei `0x048c4e...133d5c`; sei `0x411dc6...c783bd` | ⚠️ Unaudited |
-| TokenP | unknown | project_anchor | own_supporting | 1 | base | unit-251410 | 2 deployments: base `0x3ebe33...8e54d9`; base `0x76a9a0...759dd5` | ⚠️ Unaudited |
-| TokenP | unknown | project_anchor | own_supporting | 1 | plasma | unit-251414 | 2 deployments: plasma `0x0e4e7c...debf46`; plasma `0xc2f8b5...abcb8f` | ⚠️ Unaudited |
-| TokenP | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-251399 | 2 deployments: arbitrum `0x3ebe33...8e54d9`; arbitrum `0x76a9a0...759dd5` | ⚠️ Unaudited |
-| TokenP | unknown | project_anchor | own_supporting | 1 | avalanche | unit-251402 | 2 deployments: avalanche `0x9ee196...f26aa4`; avalanche `0xcb3e56...de600b` | ⚠️ Unaudited |
-| TokenP | unknown | project_anchor | own_supporting | 1 | linea | unit-251407 | 2 deployments: linea `0x35c632...e0f1c7`; linea `0x8fcf91...4140f3` | ⚠️ Unaudited |
-| TokenP | unknown | project_anchor | own_supporting | 1 | berachain | unit-251408 | 2 deployments: berachain `0x9ee196...f26aa4`; berachain `0xcb3e56...de600b` | ⚠️ Unaudited |
-| VaultsCore | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 13 deployments: ethereum `0x173ae6...8c674b`; ethereum `0x4fbb33...20cd46`; ethereum `0x68e88c...509672`; ethereum `0x78c48a...a920e6`; ethereum `0x917b9d...51afd7`; ethereum `0xe26348...f93204`; polygon `0x0a9202...1b400f`; polygon `0x6cffe4...acd8c5`; polygon `0x78c48a...a920e6`; polygon `0x9912c1...11a172`; polygon `0xc0459e...16c1a4`; polygon `0xcababc...5e6e5f`; polygon `0xfaee16...6b5711` | ⚠️ Unaudited |
-| VaultsCoreState | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 6 deployments: ethereum `0x5362a6...e3de64`; ethereum `0x963d98...745249`; ethereum `0xdb7553...06386f`; polygon `0x02c69c...6f25d8`; polygon `0x0f3acb...662b48`; polygon `0xfad382...81f346` | ⚠️ Unaudited |
-| VaultsV2Feed | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 2 deployments: sei `0xd8cc2a...309862`; sei `0xeb1974...489095` | ⚠️ Unaudited |
+| BridgeableToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 12 deployments: ethereum `0x5208f5de46c25273e2fb8d5a73d605997bc4ca3f`; ethereum `0x62461591ffee0c539be1bb51a22624e6f3815bfb`; ethereum `0x74e3f9d724da6d7e4db8ecab4f18e6ba44f60e30`; ethereum `0x86afa59ff739b5be56ce8a81a424af17b29668e9`; ethereum `0xd4dee6e089969600d3359cdbcd34e3111bc838eb`; ethereum `0xe0a86c3a7038e33cb31531222fae33a51b5022b2`; polygon `0x1b03d006a47df53b440b9a94af88f38f63583342`; polygon `0x4311321f144e2cf24df87deefe79e9c4e232273b`; polygon `0x5e6c853a308e54282aa4c0ceb721a9cdcdf2be85`; polygon `0x7e6bc0dc649f5e48842c881e97666c7e21d0a433`; polygon `0x917b9d8e62739986ec182e0f988c7f938651afd7`; polygon `0xe462df8d4aa7db3aecfe810ec8d1fa4f716bc9a8` | ⚠️ Unaudited |
+| BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-251294 | `0x78bb4882b77d74ad9b04ab71fe8e61f72595823c` | ⚠️ Unaudited |
+| BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | optimism | unit-251306 | `0x76a9a0062ec6712b99b4f63bd2b4270185759dd5` | ⚠️ Unaudited |
+| BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | bsc | unit-251347 | `0x7b54f3d993d3bca077946034ea710f9c07420c72` | ⚠️ Unaudited |
+| BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | gnosis | unit-251307 | `0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec` | ⚠️ Unaudited |
+| BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | unichain | unit-251309 | `0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec` | ⚠️ Unaudited |
+| BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | polygon | unit-251314 | `0x9afdb5a5ec2bbdddaa4573baa25caa4e4e4a2ca9` | ⚠️ Unaudited |
+| BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | sonic | unit-251321 | `0xda818995ddeee3ac36bf492133e1feae1fa377e6` | ⚠️ Unaudited |
+| BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | fraxtal | unit-251325 | `0x9e79ec4bc3574f2865636aecff44b60a723a9ee7` | ⚠️ Unaudited |
+| BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | hyperliquid | unit-251380 | `0xc3bef21ea7deb5c34cf33e918c8e28972c8048ed` | ⚠️ Unaudited |
+| BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | sei | unit-251311 | `0x7b54f3d993d3bca077946034ea710f9c07420c72` | ⚠️ Unaudited |
+| BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | base | unit-251363 | `0x4dde0e308cfb60515218c6ad2df1134fc48531fc` | ⚠️ Unaudited |
+| BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | plasma | unit-251369 | `0x9e79ec4bc3574f2865636aecff44b60a723a9ee7` | ⚠️ Unaudited |
+| BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | arbitrum | unit-251328 | `0x4dde0e308cfb60515218c6ad2df1134fc48531fc` | ⚠️ Unaudited |
+| BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | avalanche | unit-251337 | `0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec` | ⚠️ Unaudited |
+| BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | linea | unit-251355 | `0x9e79ec4bc3574f2865636aecff44b60a723a9ee7` | ⚠️ Unaudited |
+| BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | berachain | unit-251357 | `0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec` | ⚠️ Unaudited |
+| BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | scroll | unit-251343 | `0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec` | ⚠️ Unaudited |
+| DiamondCut | unknown | project_anchor | own_supporting | 0 | sonic | unit-251323 | `0xe9fe4720fa99f9b28584da44abb8cf91f15990e8` | ⚠️ Unaudited |
+| DiamondCut | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-251377 | `0xa65821ffe86e6eb613daa1f70af350c5a21759df` | ⚠️ Unaudited |
+| DiamondCut | unknown | project_anchor | own_supporting | 0 | base | unit-251360 | `0x15452454a9735d68df430879b2941316a09295b1` | ⚠️ Unaudited |
+| DiamondCut | unknown | project_anchor | own_supporting | 0 | avalanche | unit-251335 | `0x657acb8a3bf9383e561565d422ea9b9a90ce0052` | ⚠️ Unaudited |
+| DiamondInitializer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | 5 deployments: sonic `0xbe65f0f410a72bec163dc65d46c83699e957d588`; hyperliquid `0x056566077da53b0a349af9b9bdbfa2658ccc2c3f`; hyperliquid `0x8b899796b4a442e7723e02f8b5b65a39f27edaf1`; base `0x3997f0dbd1e2cfc4eccf60c31366930dcf2298d7`; avalanche `0x506ba37aa8e265be445913b9c4080852277f3c5a` | ⚠️ Unaudited |
+| DiamondLoupe | unknown | project_anchor | own_supporting | 0 | sonic | unit-251316 | `0x2b6c7c275404e93a14a05b549af292231d6e4dec` | ⚠️ Unaudited |
+| DiamondLoupe | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-251379 | `0xbefbae2330186f031b469e26283acc66bb5f8826` | ⚠️ Unaudited |
+| DiamondLoupe | unknown | project_anchor | own_supporting | 0 | base | unit-251361 | `0x24cef236056834f38e9247a1fff6681dd313d3aa` | ⚠️ Unaudited |
+| DiamondLoupe | unknown | project_anchor | own_supporting | 0 | avalanche | unit-251330 | `0x23d491aa7c0972087f8a607f6f4c7106a02ba95d` | ⚠️ Unaudited |
+| DiamondProxy | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-251372 | `0x1250304f66404cd153fa39388ddcdaec7e0f1707` | ⚠️ Unaudited |
+| DiamondProxy | unknown | project_anchor | own_supporting | 0 | avalanche | unit-251332 | `0x41d58951cbd12d4ef49b0437897677bbf5547c80` | ⚠️ Unaudited |
+| ERC1967Proxy | proxy | project_anchor | own_supporting | 0 | scroll | unit-251342 | `0x9ee1963f05553ef838604dd39403be21cef26aa4` | ⚠️ Unaudited |
+| FlashParallelToken | unknown | project_anchor | own_supporting | 1 | optimism | unit-251383 | 2 deployments: optimism `0x3ebe332d2aa8ccb5ddc051c9925d9a41708e54d9`; optimism `0x4def531c3060686948f00ecc7504f2e0b71eda14` | ⚠️ Unaudited |
+| FlashParallelToken | unknown | project_anchor | own_supporting | 1 | bsc | unit-251405 | 2 deployments: bsc `0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec`; bsc `0xc0e62f863bbd9dab9d2f79e4ecc248e60c4fe3fa` | ⚠️ Unaudited |
+| FlashParallelToken | unknown | project_anchor | own_supporting | 1 | gnosis | unit-251386 | 2 deployments: gnosis `0x9e0dcf7a33bbde6689560c5c807dd2a3df991277`; gnosis `0xe23b5ded6f7b7cb56ebcd459b19dad4d7e05cf7b` | ⚠️ Unaudited |
+| FlashParallelToken | unknown | project_anchor | own_supporting | 1 | unichain | unit-251388 | 2 deployments: unichain `0x9e0dcf7a33bbde6689560c5c807dd2a3df991277`; unichain `0xe23b5ded6f7b7cb56ebcd459b19dad4d7e05cf7b` | ⚠️ Unaudited |
+| FlashParallelToken | unknown | project_anchor | own_supporting | 1 | polygon | unit-251391 | 2 deployments: polygon `0x09f3964874d3c8494f2e98e9e003e53c2750ab72`; polygon `0xc15fd01a21e8f6625f709b16f6b3562d2848da5f` | ⚠️ Unaudited |
+| FlashParallelToken | unknown | project_anchor | own_supporting | 1 | sonic | unit-251393 | 2 deployments: sonic `0x2cb56df31b909854b01d4b1ead5676cf90e885e7`; sonic `0x4dde0e308cfb60515218c6ad2df1134fc48531fc` | ⚠️ Unaudited |
+| FlashParallelToken | unknown | project_anchor | own_supporting | 1 | fraxtal | unit-251397 | 2 deployments: fraxtal `0x10eb3f443baa258b3417d6c318f7865ad61b539b`; fraxtal `0x46b053ce47f16390574bb8f54caccd04c1e3faf2` | ⚠️ Unaudited |
+| FlashParallelToken | unknown | project_anchor | own_supporting | 1 | hyperliquid | unit-251417 | 2 deployments: hyperliquid `0x15452454a9735d68df430879b2941316a09295b1`; hyperliquid `0x3997f0dbd1e2cfc4eccf60c31366930dcf2298d7` | ⚠️ Unaudited |
+| FlashParallelToken | unknown | project_anchor | own_supporting | 1 | sei | unit-251390 | 2 deployments: sei `0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec`; sei `0xc0e62f863bbd9dab9d2f79e4ecc248e60c4fe3fa` | ⚠️ Unaudited |
+| FlashParallelToken | unknown | project_anchor | own_supporting | 1 | base | unit-251412 | 2 deployments: base `0x08417cdb7f52a5021bb4eb6e0deaf3f295c3f182`; base `0xb3dbece41acdd6ad76d037b8da2e53c58826746c` | ⚠️ Unaudited |
+| FlashParallelToken | unknown | project_anchor | own_supporting | 1 | plasma | unit-251415 | 2 deployments: plasma `0x10eb3f443baa258b3417d6c318f7865ad61b539b`; plasma `0x46b053ce47f16390574bb8f54caccd04c1e3faf2` | ⚠️ Unaudited |
+| FlashParallelToken | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-251400 | 2 deployments: arbitrum `0x08417cdb7f52a5021bb4eb6e0deaf3f295c3f182`; arbitrum `0xb3dbece41acdd6ad76d037b8da2e53c58826746c` | ⚠️ Unaudited |
+| FlashParallelToken | unknown | project_anchor | own_supporting | 1 | avalanche | unit-251403 | 2 deployments: avalanche `0x9e0dcf7a33bbde6689560c5c807dd2a3df991277`; avalanche `0xe23b5ded6f7b7cb56ebcd459b19dad4d7e05cf7b` | ⚠️ Unaudited |
+| FlashParallelToken | unknown | project_anchor | own_supporting | 1 | linea | unit-251406 | 2 deployments: linea `0x10eb3f443baa258b3417d6c318f7865ad61b539b`; linea `0x46b053ce47f16390574bb8f54caccd04c1e3faf2` | ⚠️ Unaudited |
+| FlashParallelToken | unknown | project_anchor | own_supporting | 1 | berachain | unit-251409 | 2 deployments: berachain `0x9e0dcf7a33bbde6689560c5c807dd2a3df991277`; berachain `0xe23b5ded6f7b7cb56ebcd459b19dad4d7e05cf7b` | ⚠️ Unaudited |
+| GenericHarvester | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-251289 | `0x36da06796fd9d22bcd6287b66a87ffdadb12636c` | ⚠️ Unaudited |
+| GenericHarvester | operational_periphery | project_anchor | own_supporting | 0 | sonic | unit-251315 | `0x120805265fa944834dc6e930de2995768806a9d2` | ⚠️ Unaudited |
+| GenericHarvester | operational_periphery | project_anchor | own_supporting | 0 | hyperliquid | unit-251375 | `0x57770c1721eb35509f38210a935c8b1911db7e0e` | ⚠️ Unaudited |
+| GenericHarvester | operational_periphery | project_anchor | own_supporting | 0 | base | unit-251366 | `0xca43ecfcdfba1fed003649e946ae6091646b410a` | ⚠️ Unaudited |
+| GenericHarvester | operational_periphery | project_anchor | own_supporting | 0 | avalanche | unit-251329 | `0x0d45b129dc868963025db79a9074ea9c9e32cae4` | ⚠️ Unaudited |
+| Getters | unknown | project_anchor | own_supporting | 0 | sonic | unit-251318 | `0x90e4ae8ba8c6fd51fced0f9331668b05c7a4ee43` | ⚠️ Unaudited |
+| Getters | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-251371 | `0x120805265fa944834dc6e930de2995768806a9d2` | ⚠️ Unaudited |
+| Getters | unknown | project_anchor | own_supporting | 0 | base | unit-251365 | `0xbe65f0f410a72bec163dc65d46c83699e957d588` | ⚠️ Unaudited |
+| Getters | unknown | project_anchor | own_supporting | 0 | avalanche | unit-251339 | `0xf6cc47e981ed5902be382dbe7b54e3696de22dbb` | ⚠️ Unaudited |
+| GnosisSafe | governance | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x25fc7ffa8f9da3582a36633d04804f0004706f9b` | ⚠️ Unaudited |
+| MainFeeDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: polygon `0x90337e484b1cb02132fc150d3afa262147348545`; polygon `0xb4af56f42e19f6555611c5b2f5075eecd17cbaa1`; base `0x5d49c8b8cc691533742602d6ab3127904959b7e3` | ⚠️ Unaudited |
+| MIMOVaultActions | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 6 deployments: polygon `0x1d58251e035654fdd4b8ca53c0bb06fb4af4c595`; polygon `0x6ae3cf8481ba4d6876d70f64d7fed079afd2d4fe`; polygon `0xa8b25d675e793521f24de3a07c35f79496c13546`; polygon `0xde91eb8206c228f4208c34510cf0c61c9302a434`; polygon `0xeb259d5778942b5626bd2d3de0616b4644b66d4b`; polygon `0xf6abf8a89b3da7c254bb3207e2eba9810bc51f58` | ⚠️ Unaudited |
+| ParallelAccessManager | governance | project_anchor | own_supporting | 0 | ethereum | unit-251295 | `0x94ea8800444017695345156319e96bdb1e355f7a` | ⚠️ Unaudited |
+| ParallelAccessManager | governance | project_anchor | own_supporting | 0 | optimism | unit-251305 | `0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46` | ⚠️ Unaudited |
+| ParallelAccessManager | governance | project_anchor | own_supporting | 0 | bsc | unit-251348 | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ⚠️ Unaudited |
+| ParallelAccessManager | governance | project_anchor | own_supporting | 0 | gnosis | unit-251308 | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ⚠️ Unaudited |
+| ParallelAccessManager | governance | project_anchor | own_supporting | 0 | unichain | unit-251310 | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ⚠️ Unaudited |
+| ParallelAccessManager | governance | project_anchor | own_supporting | 0 | polygon | unit-251313 | `0x7df74bbb6f82ec1bcb1562a30ef5bf5c326e2811` | ⚠️ Unaudited |
+| ParallelAccessManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 2 deployments: polygon `0x8fcf9118fdd359f6277cdd143c2da206e64140f3`; sonic `0xa7eb076f57960e265b91514c03d1d1281055a75c` | ⚠️ Unaudited |
+| ParallelAccessManager | governance | project_anchor | own_supporting | 0 | sonic | unit-251317 | `0x8efb3ded78fbaef2a4efe01e01bbd911e4094b78` | ⚠️ Unaudited |
+| ParallelAccessManager | governance | project_anchor | own_supporting | 0 | fraxtal | unit-251326 | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ⚠️ Unaudited |
+| ParallelAccessManager | governance | project_anchor | own_supporting | 0 | hyperliquid | unit-251382 | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ⚠️ Unaudited |
+| ParallelAccessManager | governance | project_anchor | own_supporting | 0 | sei | unit-251312 | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ⚠️ Unaudited |
+| ParallelAccessManager | governance | project_anchor | own_supporting | 0 | base | unit-251359 | `0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46` | ⚠️ Unaudited |
+| ParallelAccessManager | governance | project_anchor | own_supporting | 0 | plasma | unit-251370 | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ⚠️ Unaudited |
+| ParallelAccessManager | governance | project_anchor | own_supporting | 0 | arbitrum | unit-251327 | `0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46` | ⚠️ Unaudited |
+| ParallelAccessManager | governance | project_anchor | own_supporting | 0 | avalanche | unit-251340 | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ⚠️ Unaudited |
+| ParallelAccessManager | governance | project_anchor | own_supporting | 0 | linea | unit-251356 | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ⚠️ Unaudited |
+| ParallelAccessManager | governance | project_anchor | own_supporting | 0 | berachain | unit-251358 | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ⚠️ Unaudited |
+| ParallelAccessManager | governance | project_anchor | own_supporting | 0 | scroll | unit-251346 | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ⚠️ Unaudited |
+| PeripheralMigrationContract | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x9c68850e18eacd4ea7ca2998b6bbed9cf55316cb` | ⚠️ Unaudited |
+| PeripheralPRL | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 5 deployments: optimism `0xfd28f108e95f4d41daae9dbfff707d677985998e`; polygon `0x7790dd69aa10ed3f1271e41cd7222d2a7d2d5948`; sonic `0xfd28f108e95f4d41daae9dbfff707d677985998e`; base `0xfd28f108e95f4d41daae9dbfff707d677985998e`; arbitrum `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ⚠️ Unaudited |
+| Redeemer | unknown | project_anchor | own_supporting | 0 | sonic | unit-251322 | `0xe5c82b4f09fd4d079757e156db44afd2c8032cc8` | ⚠️ Unaudited |
+| Redeemer | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-251381 | `0xf92ed96c7bec4ad46ff7937cae633c907ebdf594` | ⚠️ Unaudited |
+| Redeemer | unknown | project_anchor | own_supporting | 0 | base | unit-251368 | `0xe9fe4720fa99f9b28584da44abb8cf91f15990e8` | ⚠️ Unaudited |
+| Redeemer | unknown | project_anchor | own_supporting | 0 | avalanche | unit-251336 | `0x6efeddf9269c3683ba516cb0e2124fe335f262a2` | ⚠️ Unaudited |
+| RewardHandler | unknown | project_anchor | own_supporting | 0 | sonic | unit-251324 | `0xfb2d070270e9ffc2db107d0162b47c2ed291e3f7` | ⚠️ Unaudited |
+| RewardHandler | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-251376 | `0xa5d9caa2ef06d39d5992b5046e2defff6d5cbd18` | ⚠️ Unaudited |
+| RewardHandler | unknown | project_anchor | own_supporting | 0 | base | unit-251362 | `0x2b6c7c275404e93a14a05b549af292231d6e4dec` | ⚠️ Unaudited |
+| RewardHandler | unknown | project_anchor | own_supporting | 0 | avalanche | unit-251331 | `0x36da06796fd9d22bcd6287b66a87ffdadb12636c` | ⚠️ Unaudited |
+| RewardMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: polygon `0x7b54f3d993d3bca077946034ea710f9c07420c72`; base `0x13e867f55043302925971e88ab8fab704241a96b` | ⚠️ Unaudited |
+| SavingsNameable | unknown | project_anchor | own_supporting | 1 | sonic | unit-251395 | 2 deployments: sonic `0xae2fb66d1989ec1684ff095b75d151ae8e403e2e`; sonic `0xe8a3da6f5ed1cf04c58ac7f6a7383641e877517b` | ⚠️ Unaudited |
+| SavingsNameable | unknown | project_anchor | own_supporting | 1 | hyperliquid | unit-251418 | 2 deployments: hyperliquid `0x769f533139eb1723c41cadec243ce10bc4d400fd`; hyperliquid `0x9b3a8f7cec208e247d97dee13313690977e24459` | ⚠️ Unaudited |
+| SavingsNameable | unknown | project_anchor | own_supporting | 1 | base | unit-251411 | 2 deployments: base `0x472ed57b376fe400259fb28e5c46eb53f0e3e7e7`; base `0xa65821ffe86e6eb613daa1f70af350c5a21759df` | ⚠️ Unaudited |
+| SavingsNameable | unknown | project_anchor | own_supporting | 1 | avalanche | unit-251401 | 2 deployments: avalanche `0x3dde241c6263eb0cdf2e09f77cbcf90028a9a6c3`; avalanche `0x9d92c21205383651610f90722131655a5b8ed3e0` | ⚠️ Unaudited |
+| SavingsNameable | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x645feabb38283d13249845881778b6c24a25884d` | ⚠️ Unaudited |
+| SettersGovernor | governance | project_anchor | own_supporting | 0 | sonic | unit-251319 | `0xc3bef21ea7deb5c34cf33e918c8e28972c8048ed` | ⚠️ Unaudited |
+| SettersGovernor | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-251374 | `0x472ed57b376fe400259fb28e5c46eb53f0e3e7e7` | ⚠️ Unaudited |
+| SettersGovernor | governance | project_anchor | own_supporting | 0 | base | unit-251364 | `0x90e4ae8ba8c6fd51fced0f9331668b05c7a4ee43` | ⚠️ Unaudited |
+| SettersGovernor | governance | project_anchor | own_supporting | 0 | avalanche | unit-251334 | `0x5beada21a6b9cb229117b3ea2c0d1594785013a2` | ⚠️ Unaudited |
+| SettersGuardian | governance | project_anchor | own_supporting | 0 | sonic | unit-251320 | `0xca43ecfcdfba1fed003649e946ae6091646b410a` | ⚠️ Unaudited |
+| SettersGuardian | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-251378 | `0xae2fb66d1989ec1684ff095b75d151ae8e403e2e` | ⚠️ Unaudited |
+| SettersGuardian | governance | project_anchor | own_supporting | 0 | base | unit-251367 | `0xe5c82b4f09fd4d079757e156db44afd2c8032cc8` | ⚠️ Unaudited |
+| SettersGuardian | governance | project_anchor | own_supporting | 0 | avalanche | unit-251338 | `0xbbc90e685c4a66ebbdc71a3a1437d3111e43fe84` | ⚠️ Unaudited |
+| SideChainFeeCollector | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | 2 deployments: hyperliquid `0x2f77c2fe829ecc1cc4fe891ca05d121971908574`; avalanche `0x7d2c6c944907ead0be1b6c84c9cfe3db4d4907c5` | ⚠️ Unaudited |
+| sPRL1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 5 deployments: ethereum `0xead729472f82e5ec2ff4e691d67633077c1b5901`; polygon `0xdb7be3a50bdf5641757ebea38e8014e1f0aa9475`; sonic `0x7df74bbb6f82ec1bcb1562a30ef5bf5c326e2811`; base `0x01fa35fde0e813e2d6687660a74a313d8d922e48`; base `0xefc1309b67a52c5dfc2588bfc2d97a66afc4d2ce` | ⚠️ Unaudited |
+| sPRL2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe8a2d848fe656e34a6caa35f375b42979e322135` | ⚠️ Unaudited |
+| sPRL2V2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb22f5edbc62adcc093307025b8fdf75a0aa00e24` | ⚠️ Unaudited |
+| Swapper | unknown | project_anchor | own_supporting | 1 | sonic | unit-251394 | 2 deployments: sonic `0xa65821ffe86e6eb613daa1f70af350c5a21759df`; sonic `0xbefbae2330186f031b469e26283acc66bb5f8826` | ⚠️ Unaudited |
+| Swapper | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-251373 | `0x1b2741db9f46a0411852e4cc28ddc476851b5179` | ⚠️ Unaudited |
+| Swapper | unknown | project_anchor | own_supporting | 1 | base | unit-251413 | 2 deployments: base `0xc3bef21ea7deb5c34cf33e918c8e28972c8048ed`; base `0xfb2d070270e9ffc2db107d0162b47c2ed291e3f7` | ⚠️ Unaudited |
+| Swapper | adapter | project_anchor | own_supporting | 0 | avalanche | unit-251333 | `0x57265a3d7db8f4a4a155eadf6c7326926cac1490` | ⚠️ Unaudited |
+| TokenP | unknown | project_anchor | own_supporting | 1 | optimism | unit-251384 | 2 deployments: optimism `0x90337e484b1cb02132fc150d3afa262147348545`; optimism `0xe8a2d848fe656e34a6caa35f375b42979e322135` | ⚠️ Unaudited |
+| TokenP | unknown | project_anchor | own_supporting | 1 | bsc | unit-251404 | 2 deployments: bsc `0x048c4e07d170eedee8772ca76aee1c4e2d133d5c`; bsc `0x411dc65548c066fb0f85bf48a72306d321c783bd` | ⚠️ Unaudited |
+| TokenP | unknown | project_anchor | own_supporting | 1 | gnosis | unit-251385 | 2 deployments: gnosis `0x9ee1963f05553ef838604dd39403be21cef26aa4`; gnosis `0xcb3e564293393e0d4f43305a250d4e1716de600b` | ⚠️ Unaudited |
+| TokenP | unknown | project_anchor | own_supporting | 1 | unichain | unit-251387 | 2 deployments: unichain `0x9ee1963f05553ef838604dd39403be21cef26aa4`; unichain `0xcb3e564293393e0d4f43305a250d4e1716de600b` | ⚠️ Unaudited |
+| TokenP | unknown | project_anchor | own_supporting | 1 | polygon | unit-251392 | 2 deployments: polygon `0x1250304f66404cd153fa39388ddcdaec7e0f1707`; polygon `0xfefc8635edf0faad83312a713cb67722d049c9bc` | ⚠️ Unaudited |
+| TokenP | unknown | project_anchor | own_supporting | 1 | sonic | unit-251396 | 2 deployments: sonic `0x08417cdb7f52a5021bb4eb6e0deaf3f295c3f182`; sonic `0xb3dbece41acdd6ad76d037b8da2e53c58826746c` | ⚠️ Unaudited |
+| TokenP | unknown | project_anchor | own_supporting | 1 | fraxtal | unit-251398 | 2 deployments: fraxtal `0x35c6323da7d0a4be33ada37eca81e03bece0f1c7`; fraxtal `0x8fcf9118fdd359f6277cdd143c2da206e64140f3` | ⚠️ Unaudited |
+| TokenP | unknown | project_anchor | own_supporting | 1 | hyperliquid | unit-251416 | 2 deployments: hyperliquid `0x24cef236056834f38e9247a1fff6681dd313d3aa`; hyperliquid `0xbe65f0f410a72bec163dc65d46c83699e957d588` | ⚠️ Unaudited |
+| TokenP | unknown | project_anchor | own_supporting | 1 | sei | unit-251389 | 2 deployments: sei `0x048c4e07d170eedee8772ca76aee1c4e2d133d5c`; sei `0x411dc65548c066fb0f85bf48a72306d321c783bd` | ⚠️ Unaudited |
+| TokenP | unknown | project_anchor | own_supporting | 1 | base | unit-251410 | 2 deployments: base `0x3ebe332d2aa8ccb5ddc051c9925d9a41708e54d9`; base `0x76a9a0062ec6712b99b4f63bd2b4270185759dd5` | ⚠️ Unaudited |
+| TokenP | unknown | project_anchor | own_supporting | 1 | plasma | unit-251414 | 2 deployments: plasma `0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46`; plasma `0xc2f8b5d893217462ae9c9879c9285a5a3aabcb8f` | ⚠️ Unaudited |
+| TokenP | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-251399 | 2 deployments: arbitrum `0x3ebe332d2aa8ccb5ddc051c9925d9a41708e54d9`; arbitrum `0x76a9a0062ec6712b99b4f63bd2b4270185759dd5` | ⚠️ Unaudited |
+| TokenP | unknown | project_anchor | own_supporting | 1 | avalanche | unit-251402 | 2 deployments: avalanche `0x9ee1963f05553ef838604dd39403be21cef26aa4`; avalanche `0xcb3e564293393e0d4f43305a250d4e1716de600b` | ⚠️ Unaudited |
+| TokenP | unknown | project_anchor | own_supporting | 1 | linea | unit-251407 | 2 deployments: linea `0x35c6323da7d0a4be33ada37eca81e03bece0f1c7`; linea `0x8fcf9118fdd359f6277cdd143c2da206e64140f3` | ⚠️ Unaudited |
+| TokenP | unknown | project_anchor | own_supporting | 1 | berachain | unit-251408 | 2 deployments: berachain `0x9ee1963f05553ef838604dd39403be21cef26aa4`; berachain `0xcb3e564293393e0d4f43305a250d4e1716de600b` | ⚠️ Unaudited |
+| VaultsCore | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 13 deployments: ethereum `0x173ae6283a717b6cdd5491eac5f82c082a8c674b`; ethereum `0x4fbb33fe9fc784ab5a86dc19cce4ecd29c20cd46`; ethereum `0x68e88c802f146ead2f99f3a91fb880d1a2509672`; ethereum `0x78c48a7d7fc69735fdab448fe6068bba44a920e6`; ethereum `0x917b9d8e62739986ec182e0f988c7f938651afd7`; ethereum `0xe26348d30694aa7e879b9335252362df3df93204`; polygon `0x0a9202c6417a7b6b166e7f7fe2719b09261b400f`; polygon `0x6cffe4caacddfdc641823c23f49ec71158acd8c5`; polygon `0x78c48a7d7fc69735fdab448fe6068bba44a920e6`; polygon `0x9912c16db85d6075df6f0725a08b95f63a11a172`; polygon `0xc0459eff90be3dcd1ada71e1e8bdb7619a16c1a4`; polygon `0xcababc1feb7c5298f69b635099d75975ad5e6e5f`; polygon `0xfaee16d1d150107bb19bff0f5c2e302ab76b5711` | ⚠️ Unaudited |
+| VaultsCoreState | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 6 deployments: ethereum `0x5362a6bf52b07c3c6a795ab03675f041a3e3de64`; ethereum `0x963d9858651fa21e903e83c5d985fc74f6745249`; ethereum `0xdb75531e12ca4bb6cd5cfe77f10522b08806386f`; polygon `0x02c69c480ab4a35f2c7117e2c17c904cd76f25d8`; polygon `0x0f3acbc30da85612588c2e2dfd81ac667b662b48`; polygon `0xfad382ee9b8229fb9b05df9f9391bac5dd81f346` | ⚠️ Unaudited |
+| VaultsV2Feed | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 2 deployments: sei `0xd8cc2a51556da84b5db309e86f30ff98b5309862`; sei `0xeb197439d1425f3129f01f7763ec511df2489095` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -551,36 +551,36 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251287 | `0x0d45b1...32cae4` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251288 | `0x1bb46f...8ff97e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251290 | `0x41d589...547c80` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251291 | `0x473868...d8e74f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251292 | `0x506ba3...7f3c5a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251293 | `0x6efedd...f262a2` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251296 | `0x9b3a8f...e24459` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251297 | `0xa19c5d...f7c025` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251298 | `0xa360e5...41c2f5` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251299 | `0xa9c21c...59181d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251300 | `0xad58fc...e51b0d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251301 | `0xc743be...e4a92f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251302 | `0xc9b627...ba0bfc` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251303 | `0xd8cc2a...309862` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251304 | `0xeb1974...489095` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x098e37...02d8b6` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x9e7733...2c64ef` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xd4dee6...c838eb` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fantom | n/a | `0xf6abf8...c51f58` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0xca43ec...6b410a` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xa360e5...41c2f5` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-251349 | `0x9e0dcf...991277` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-251350 | `0x9ee196...f26aa4` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-251351 | `0x9ffacb...c699ec` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-251352 | `0xcb3e56...de600b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-251353 | `0xe23b5d...05cf7b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-251354 | `0xfd28f1...85998e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-251341 | `0x9e0dcf...991277` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-251344 | `0xcb3e56...de600b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-251345 | `0xe23b5d...05cf7b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251287 | `0x0d45b129dc868963025db79a9074ea9c9e32cae4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251288 | `0x1bb46fc55e3fd91ca0f162dcc0b3ef574c8ff97e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251290 | `0x41d58951cbd12d4ef49b0437897677bbf5547c80` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251291 | `0x4738682c1d8981ed9583b58f619d91742ad8e74f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251292 | `0x506ba37aa8e265be445913b9c4080852277f3c5a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251293 | `0x6efeddf9269c3683ba516cb0e2124fe335f262a2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251296 | `0x9b3a8f7cec208e247d97dee13313690977e24459` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251297 | `0xa19c5d1013a8682ac76206a085ec24ac89f7c025` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251298 | `0xa360e5ad9f17caff53715346888aa0d13541c2f5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251299 | `0xa9c21cf291ad935e0c9b05a55a42254fb159181d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251300 | `0xad58fc13a682a121e5fe2f8e45d4d988a7e51b0d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251301 | `0xc743bede8412228b42ae755cd64a33cd3ae4a92f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251302 | `0xc9b6279baa19dbb8bcc3250c89caa093aaba0bfc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251303 | `0xd8cc2a51556da84b5db309e86f30ff98b5309862` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251304 | `0xeb197439d1425f3129f01f7763ec511df2489095` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x098e37a2bfac675cf5a5c21d4f10e391d502d8b6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x9e77331a61e05737f41c379c5c7145df802c64ef` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xd4dee6e089969600d3359cdbcd34e3111bc838eb` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fantom | n/a | `0xf6abf8a89b3da7c254bb3207e2eba9810bc51f58` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0xca43ecfcdfba1fed003649e946ae6091646b410a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xa360e5ad9f17caff53715346888aa0d13541c2f5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-251349 | `0x9e0dcf7a33bbde6689560c5c807dd2a3df991277` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-251350 | `0x9ee1963f05553ef838604dd39403be21cef26aa4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-251351 | `0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-251352 | `0xcb3e564293393e0d4f43305a250d4e1716de600b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-251353 | `0xe23b5ded6f7b7cb56ebcd459b19dad4d7e05cf7b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-251354 | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-251341 | `0x9e0dcf7a33bbde6689560c5c807dd2a3df991277` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-251344 | `0xcb3e564293393e0d4f43305a250d4e1716de600b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-251345 | `0xe23b5ded6f7b7cb56ebcd459b19dad4d7e05cf7b` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -682,112 +682,112 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x78bb48...95823c` | BridgeableTokenP | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | `0x76a9a0...759dd5` | BridgeableTokenP | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x7b54f3...420c72` | BridgeableTokenP | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| gnosis | `0x9ffacb...c699ec` | BridgeableTokenP | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| unichain | `0x9ffacb...c699ec` | BridgeableTokenP | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | `0x9afdb5...4a2ca9` | BridgeableTokenP | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | `0xda8189...a377e6` | BridgeableTokenP | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| fraxtal | `0x9e79ec...3a9ee7` | BridgeableTokenP | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | `0xc3bef2...8048ed` | BridgeableTokenP | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sei | `0x7b54f3...420c72` | BridgeableTokenP | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x4dde0e...8531fc` | BridgeableTokenP | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| plasma | `0x9e79ec...3a9ee7` | BridgeableTokenP | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | `0x4dde0e...8531fc` | BridgeableTokenP | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | `0x9ffacb...c699ec` | BridgeableTokenP | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | `0x9e79ec...3a9ee7` | BridgeableTokenP | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | `0x9ffacb...c699ec` | BridgeableTokenP | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| scroll | `0x9ffacb...c699ec` | BridgeableTokenP | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | `0xe9fe47...5990e8` | DiamondCut | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | `0xa65821...1759df` | DiamondCut | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x154524...9295b1` | DiamondCut | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | `0x657acb...ce0052` | DiamondCut | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | `0x2b6c7c...6e4dec` | DiamondLoupe | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | `0xbefbae...5f8826` | DiamondLoupe | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x24cef2...13d3aa` | DiamondLoupe | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | `0x23d491...2ba95d` | DiamondLoupe | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | `0x125030...0f1707` | DiamondProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | `0x41d589...547c80` | DiamondProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | `0x3ebe33...8e54d9` | FlashParallelToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x9ffacb...c699ec` | FlashParallelToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| gnosis | `0x9e0dcf...991277` | FlashParallelToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| unichain | `0x9e0dcf...991277` | FlashParallelToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | `0x09f396...50ab72` | FlashParallelToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | `0x2cb56d...e885e7` | FlashParallelToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| fraxtal | `0x10eb3f...1b539b` | FlashParallelToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | `0x154524...9295b1` | FlashParallelToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sei | `0x9ffacb...c699ec` | FlashParallelToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x08417c...c3f182` | FlashParallelToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| plasma | `0x10eb3f...1b539b` | FlashParallelToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | `0x08417c...c3f182` | FlashParallelToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | `0x9e0dcf...991277` | FlashParallelToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | `0x10eb3f...1b539b` | FlashParallelToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | `0x9e0dcf...991277` | FlashParallelToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x36da06...12636c` | GenericHarvester | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | `0x120805...06a9d2` | GenericHarvester | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | `0x57770c...db7e0e` | GenericHarvester | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xca43ec...6b410a` | GenericHarvester | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | `0x0d45b1...32cae4` | GenericHarvester | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | `0x90e4ae...a4ee43` | Getters | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | `0x120805...06a9d2` | Getters | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xbe65f0...57d588` | Getters | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | `0xf6cc47...e22dbb` | Getters | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x94ea88...355f7a` | ParallelAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | `0x0e4e7c...debf46` | ParallelAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0xfd28f1...85998e` | ParallelAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| gnosis | `0xfd28f1...85998e` | ParallelAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| unichain | `0xfd28f1...85998e` | ParallelAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | `0x7df74b...6e2811` | ParallelAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | `0x8efb3d...094b78` | ParallelAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| fraxtal | `0xfd28f1...85998e` | ParallelAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | `0xfd28f1...85998e` | ParallelAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sei | `0xfd28f1...85998e` | ParallelAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x0e4e7c...debf46` | ParallelAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| plasma | `0xfd28f1...85998e` | ParallelAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | `0x0e4e7c...debf46` | ParallelAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | `0xfd28f1...85998e` | ParallelAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | `0xfd28f1...85998e` | ParallelAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | `0xfd28f1...85998e` | ParallelAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| scroll | `0xfd28f1...85998e` | ParallelAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | `0xe5c82b...032cc8` | Redeemer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | `0xf92ed9...bdf594` | Redeemer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xe9fe47...5990e8` | Redeemer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | `0x6efedd...f262a2` | Redeemer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | `0xfb2d07...91e3f7` | RewardHandler | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | `0xa5d9ca...5cbd18` | RewardHandler | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x2b6c7c...6e4dec` | RewardHandler | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | `0x36da06...12636c` | RewardHandler | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | `0xae2fb6...403e2e` | SavingsNameable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | `0x769f53...d400fd` | SavingsNameable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x472ed5...e3e7e7` | SavingsNameable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | `0xc3bef2...8048ed` | SettersGovernor | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | `0x472ed5...e3e7e7` | SettersGovernor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x90e4ae...a4ee43` | SettersGovernor | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | `0x5beada...5013a2` | SettersGovernor | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | `0xca43ec...6b410a` | SettersGuardian | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | `0xae2fb6...403e2e` | SettersGuardian | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xe5c82b...032cc8` | SettersGuardian | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | `0xbbc90e...43fe84` | SettersGuardian | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | `0xa65821...1759df` | Swapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | `0x1b2741...1b5179` | Swapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xc3bef2...8048ed` | Swapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | `0x57265a...ac1490` | Swapper | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | `0x90337e...348545` | TokenP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x048c4e...133d5c` | TokenP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| gnosis | `0x9ee196...f26aa4` | TokenP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| unichain | `0x9ee196...f26aa4` | TokenP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | `0x125030...0f1707` | TokenP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | `0x08417c...c3f182` | TokenP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| fraxtal | `0x35c632...e0f1c7` | TokenP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | `0x24cef2...13d3aa` | TokenP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sei | `0x048c4e...133d5c` | TokenP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x3ebe33...8e54d9` | TokenP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| plasma | `0x0e4e7c...debf46` | TokenP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | `0x3ebe33...8e54d9` | TokenP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | `0x9ee196...f26aa4` | TokenP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | `0x35c632...e0f1c7` | TokenP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | `0x9ee196...f26aa4` | TokenP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x78bb4882b77d74ad9b04ab71fe8e61f72595823c` | BridgeableTokenP | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x76a9a0062ec6712b99b4f63bd2b4270185759dd5` | BridgeableTokenP | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x7b54f3d993d3bca077946034ea710f9c07420c72` | BridgeableTokenP | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| gnosis | `0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec` | BridgeableTokenP | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| unichain | `0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec` | BridgeableTokenP | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0x9afdb5a5ec2bbdddaa4573baa25caa4e4e4a2ca9` | BridgeableTokenP | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0xda818995ddeee3ac36bf492133e1feae1fa377e6` | BridgeableTokenP | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| fraxtal | `0x9e79ec4bc3574f2865636aecff44b60a723a9ee7` | BridgeableTokenP | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | `0xc3bef21ea7deb5c34cf33e918c8e28972c8048ed` | BridgeableTokenP | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sei | `0x7b54f3d993d3bca077946034ea710f9c07420c72` | BridgeableTokenP | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x4dde0e308cfb60515218c6ad2df1134fc48531fc` | BridgeableTokenP | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| plasma | `0x9e79ec4bc3574f2865636aecff44b60a723a9ee7` | BridgeableTokenP | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0x4dde0e308cfb60515218c6ad2df1134fc48531fc` | BridgeableTokenP | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | `0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec` | BridgeableTokenP | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | `0x9e79ec4bc3574f2865636aecff44b60a723a9ee7` | BridgeableTokenP | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | `0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec` | BridgeableTokenP | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| scroll | `0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec` | BridgeableTokenP | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0xe9fe4720fa99f9b28584da44abb8cf91f15990e8` | DiamondCut | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | `0xa65821ffe86e6eb613daa1f70af350c5a21759df` | DiamondCut | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x15452454a9735d68df430879b2941316a09295b1` | DiamondCut | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | `0x657acb8a3bf9383e561565d422ea9b9a90ce0052` | DiamondCut | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0x2b6c7c275404e93a14a05b549af292231d6e4dec` | DiamondLoupe | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | `0xbefbae2330186f031b469e26283acc66bb5f8826` | DiamondLoupe | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x24cef236056834f38e9247a1fff6681dd313d3aa` | DiamondLoupe | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | `0x23d491aa7c0972087f8a607f6f4c7106a02ba95d` | DiamondLoupe | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | `0x1250304f66404cd153fa39388ddcdaec7e0f1707` | DiamondProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | `0x41d58951cbd12d4ef49b0437897677bbf5547c80` | DiamondProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x3ebe332d2aa8ccb5ddc051c9925d9a41708e54d9` | FlashParallelToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec` | FlashParallelToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| gnosis | `0x9e0dcf7a33bbde6689560c5c807dd2a3df991277` | FlashParallelToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| unichain | `0x9e0dcf7a33bbde6689560c5c807dd2a3df991277` | FlashParallelToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0x09f3964874d3c8494f2e98e9e003e53c2750ab72` | FlashParallelToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0x2cb56df31b909854b01d4b1ead5676cf90e885e7` | FlashParallelToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| fraxtal | `0x10eb3f443baa258b3417d6c318f7865ad61b539b` | FlashParallelToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | `0x15452454a9735d68df430879b2941316a09295b1` | FlashParallelToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sei | `0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec` | FlashParallelToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x08417cdb7f52a5021bb4eb6e0deaf3f295c3f182` | FlashParallelToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| plasma | `0x10eb3f443baa258b3417d6c318f7865ad61b539b` | FlashParallelToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0x08417cdb7f52a5021bb4eb6e0deaf3f295c3f182` | FlashParallelToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | `0x9e0dcf7a33bbde6689560c5c807dd2a3df991277` | FlashParallelToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | `0x10eb3f443baa258b3417d6c318f7865ad61b539b` | FlashParallelToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | `0x9e0dcf7a33bbde6689560c5c807dd2a3df991277` | FlashParallelToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x36da06796fd9d22bcd6287b66a87ffdadb12636c` | GenericHarvester | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0x120805265fa944834dc6e930de2995768806a9d2` | GenericHarvester | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | `0x57770c1721eb35509f38210a935c8b1911db7e0e` | GenericHarvester | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xca43ecfcdfba1fed003649e946ae6091646b410a` | GenericHarvester | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | `0x0d45b129dc868963025db79a9074ea9c9e32cae4` | GenericHarvester | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0x90e4ae8ba8c6fd51fced0f9331668b05c7a4ee43` | Getters | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | `0x120805265fa944834dc6e930de2995768806a9d2` | Getters | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xbe65f0f410a72bec163dc65d46c83699e957d588` | Getters | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | `0xf6cc47e981ed5902be382dbe7b54e3696de22dbb` | Getters | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x94ea8800444017695345156319e96bdb1e355f7a` | ParallelAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46` | ParallelAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ParallelAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| gnosis | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ParallelAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| unichain | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ParallelAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0x7df74bbb6f82ec1bcb1562a30ef5bf5c326e2811` | ParallelAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0x8efb3ded78fbaef2a4efe01e01bbd911e4094b78` | ParallelAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| fraxtal | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ParallelAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ParallelAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sei | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ParallelAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46` | ParallelAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| plasma | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ParallelAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46` | ParallelAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ParallelAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ParallelAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ParallelAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| scroll | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ParallelAccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0xe5c82b4f09fd4d079757e156db44afd2c8032cc8` | Redeemer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | `0xf92ed96c7bec4ad46ff7937cae633c907ebdf594` | Redeemer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xe9fe4720fa99f9b28584da44abb8cf91f15990e8` | Redeemer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | `0x6efeddf9269c3683ba516cb0e2124fe335f262a2` | Redeemer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0xfb2d070270e9ffc2db107d0162b47c2ed291e3f7` | RewardHandler | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | `0xa5d9caa2ef06d39d5992b5046e2defff6d5cbd18` | RewardHandler | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x2b6c7c275404e93a14a05b549af292231d6e4dec` | RewardHandler | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | `0x36da06796fd9d22bcd6287b66a87ffdadb12636c` | RewardHandler | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0xae2fb66d1989ec1684ff095b75d151ae8e403e2e` | SavingsNameable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | `0x769f533139eb1723c41cadec243ce10bc4d400fd` | SavingsNameable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x472ed57b376fe400259fb28e5c46eb53f0e3e7e7` | SavingsNameable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0xc3bef21ea7deb5c34cf33e918c8e28972c8048ed` | SettersGovernor | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | `0x472ed57b376fe400259fb28e5c46eb53f0e3e7e7` | SettersGovernor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x90e4ae8ba8c6fd51fced0f9331668b05c7a4ee43` | SettersGovernor | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | `0x5beada21a6b9cb229117b3ea2c0d1594785013a2` | SettersGovernor | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0xca43ecfcdfba1fed003649e946ae6091646b410a` | SettersGuardian | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | `0xae2fb66d1989ec1684ff095b75d151ae8e403e2e` | SettersGuardian | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xe5c82b4f09fd4d079757e156db44afd2c8032cc8` | SettersGuardian | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | `0xbbc90e685c4a66ebbdc71a3a1437d3111e43fe84` | SettersGuardian | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0xa65821ffe86e6eb613daa1f70af350c5a21759df` | Swapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | `0x1b2741db9f46a0411852e4cc28ddc476851b5179` | Swapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xc3bef21ea7deb5c34cf33e918c8e28972c8048ed` | Swapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | `0x57265a3d7db8f4a4a155eadf6c7326926cac1490` | Swapper | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x90337e484b1cb02132fc150d3afa262147348545` | TokenP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x048c4e07d170eedee8772ca76aee1c4e2d133d5c` | TokenP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| gnosis | `0x9ee1963f05553ef838604dd39403be21cef26aa4` | TokenP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| unichain | `0x9ee1963f05553ef838604dd39403be21cef26aa4` | TokenP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0x1250304f66404cd153fa39388ddcdaec7e0f1707` | TokenP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0x08417cdb7f52a5021bb4eb6e0deaf3f295c3f182` | TokenP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| fraxtal | `0x35c6323da7d0a4be33ada37eca81e03bece0f1c7` | TokenP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | `0x24cef236056834f38e9247a1fff6681dd313d3aa` | TokenP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sei | `0x048c4e07d170eedee8772ca76aee1c4e2d133d5c` | TokenP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x3ebe332d2aa8ccb5ddc051c9925d9a41708e54d9` | TokenP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| plasma | `0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46` | TokenP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0x3ebe332d2aa8ccb5ddc051c9925d9a41708e54d9` | TokenP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | `0x9ee1963f05553ef838604dd39403be21cef26aa4` | TokenP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | `0x35c6323da7d0a4be33ada37eca81e03bece0f1c7` | TokenP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | `0x9ee1963f05553ef838604dd39403be21cef26aa4` | TokenP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

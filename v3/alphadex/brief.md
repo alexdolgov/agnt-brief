@@ -90,13 +90,13 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AlphaDEX | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | unit-121433 | `0x8e7cd8...b02a60` | ⚠️ Unaudited |
-| LaunchpadFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | unit-121435 | `0xd9341f...157dd0` | ⚠️ Unaudited |
-| LPStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | unit-121429 | `0x29a31b...2ed820` | ⚠️ Unaudited |
-| MasterChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | unit-121431 | `0x55a616...384f5c` | ⚠️ Unaudited |
-| RewardNft | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | unit-121434 | `0xaa6535...266b5b` | ⚠️ Unaudited |
-| Roar | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | unit-121430 | `0x4829b5...7ab833` | ⚠️ Unaudited |
-| RoarStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | unit-121432 | `0x70f0bf...873236` | ⚠️ Unaudited |
+| AlphaDEX | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | unit-121433 | `0x8e7cd893d8f371051a39aa65976bca22d7b02a60` | ⚠️ Unaudited |
+| LaunchpadFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | unit-121435 | `0xd9341fd84affa37af97747c08b9404ef30157dd0` | ⚠️ Unaudited |
+| LPStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | unit-121429 | `0x29a31b6e45cf5133c0483496471226a6d22ed820` | ⚠️ Unaudited |
+| MasterChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | unit-121431 | `0x55a616ac51d8bbe8a50c951acd5e941285384f5c` | ⚠️ Unaudited |
+| RewardNft | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | unit-121434 | `0xaa6535409e076f203e0f431c518b998d85266b5b` | ⚠️ Unaudited |
+| Roar | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | unit-121430 | `0x4829b57f0160427f768a5c0aa23cd3d33c7ab833` | ⚠️ Unaudited |
+| RoarStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | unit-121432 | `0x70f0bf009d24f2628762cb1e079a9d720e873236` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

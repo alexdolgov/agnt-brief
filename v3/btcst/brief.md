@@ -89,7 +89,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BEP20TokenImplementation | token | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0xba2ae4...744c43` | ⚠️ Unaudited |
+| BEP20TokenImplementation | token | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0xba2ae424d960c26247dd6c32edc70b295c744c43` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

@@ -62,24 +62,24 @@ The protocol comprises 3 functional families. Its contracts share 3 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| FeeRegistry | unknown | mantle | n/a | [`0x16fd09...7c18e8`](./contracts/mantle-5000/0x16fd09034c04d31f7776159393e3a577fa7c18e8/) | ✅ Audited |
-| OptinProxyFactory | unknown | polygon | n/a | [`0x0c0e28...d05a91`](./contracts/polygon-137/0x0c0e287f6e4de685f4b44a5282a3ad4a29d05a91/) | ✅ Audited |
-| ProtocolRegistry | unknown | polygon | n/a | [`0x13664b...fe49b9`](./contracts/polygon-137/0x13664b3131031e7ff7ca19fb74344da050fe49b9/) | ✅ Audited |
-| Silo | unknown | polygon | n/a | [`0x572f73...e4839b`](./contracts/polygon-137/0x572f734f7c4673e8864ab79d71f22a9805e4839b/) | ✅ Audited |
-| Vault | unknown | ethereum | n/a | [`0x065ef7...0d8950`](./contracts/ethereum-1/0x065ef71bcdc43adb76bd0585d02ffe7c9e0d8950/) | ✅ Audited |
-| Vault_v0_5_0 | unknown | ethereum | n/a | [`0x23fbda...d397cb`](./contracts/ethereum-1/0x23fbda54849e8904154c8f8436a59b95b1d397cb/) | ✅ Audited |
+| FeeRegistry | unknown | mantle | n/a | [`0x16fd09034c04d31f7776159393e3a577fa7c18e8`](./contracts/mantle-5000/0x16fd09034c04d31f7776159393e3a577fa7c18e8/) | ✅ Audited |
+| OptinProxyFactory | unknown | polygon | n/a | [`0x0c0e287f6e4de685f4b44a5282a3ad4a29d05a91`](./contracts/polygon-137/0x0c0e287f6e4de685f4b44a5282a3ad4a29d05a91/) | ✅ Audited |
+| ProtocolRegistry | unknown | polygon | n/a | [`0x13664b3131031e7ff7ca19fb74344da050fe49b9`](./contracts/polygon-137/0x13664b3131031e7ff7ca19fb74344da050fe49b9/) | ✅ Audited |
+| Silo | unknown | polygon | n/a | [`0x572f734f7c4673e8864ab79d71f22a9805e4839b`](./contracts/polygon-137/0x572f734f7c4673e8864ab79d71f22a9805e4839b/) | ✅ Audited |
+| Vault | unknown | ethereum | n/a | [`0x065ef71bcdc43adb76bd0585d02ffe7c9e0d8950`](./contracts/ethereum-1/0x065ef71bcdc43adb76bd0585d02ffe7c9e0d8950/) | ✅ Audited |
+| Vault_v0_5_0 | unknown | ethereum | n/a | [`0x23fbda54849e8904154c8f8436a59b95b1d397cb`](./contracts/ethereum-1/0x23fbda54849e8904154c8f8436a59b95b1d397cb/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (7)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| EquilibriaCrutch | unknown | ethereum | n/a | [`0xb10794...77ad62`](./contracts/ethereum-1/0xb107943bbf7c6874af38ebf49c15b383b077ad62/) | ⚠️ Unaudited |
-| LagoonVault | unknown | ethereum | n/a | [`0x03d1ec...e14bfc`](./contracts/ethereum-1/0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc/) | ⚠️ Unaudited |
-| MockLogicRegistry | unknown | sei | n/a | [`0x2f02db...86dbfd`](./contracts/sei-1329/0x2f02db0a974841f710362e96742cacc2c786dbfd/) | ⚠️ Unaudited |
-| PTOraclePriceAdapterFactory | unknown | ethereum | n/a | [`0x70efd8...001d05`](./contracts/ethereum-1/0x70efd899dd4934e25b6042d0a06412e4ea001d05/) | ⚠️ Unaudited |
-| ShowcaseBug | unknown | arbitrum | n/a | [`0x23fbda...d397cb`](./contracts/arbitrum-42161/0x23fbda54849e8904154c8f8436a59b95b1d397cb/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | [`0x90beb5...24cd84`](./contracts/hyperliquid-999/0x90beb507a1ba7d64633540cbce615b574224cd84/) | ⚠️ Unaudited |
-| Vault0_2_1 | unknown | arbitrum | n/a | [`0x652716...23ab20`](./contracts/arbitrum-42161/0x652716fad571f04d26a3c8ffd9e593f17123ab20/) | ⚠️ Unaudited |
+| EquilibriaCrutch | unknown | ethereum | n/a | [`0xb107943bbf7c6874af38ebf49c15b383b077ad62`](./contracts/ethereum-1/0xb107943bbf7c6874af38ebf49c15b383b077ad62/) | ⚠️ Unaudited |
+| LagoonVault | unknown | ethereum | n/a | [`0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc`](./contracts/ethereum-1/0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc/) | ⚠️ Unaudited |
+| MockLogicRegistry | unknown | sei | n/a | [`0x2f02db0a974841f710362e96742cacc2c786dbfd`](./contracts/sei-1329/0x2f02db0a974841f710362e96742cacc2c786dbfd/) | ⚠️ Unaudited |
+| PTOraclePriceAdapterFactory | unknown | ethereum | n/a | [`0x70efd899dd4934e25b6042d0a06412e4ea001d05`](./contracts/ethereum-1/0x70efd899dd4934e25b6042d0a06412e4ea001d05/) | ⚠️ Unaudited |
+| ShowcaseBug | unknown | arbitrum | n/a | [`0x23fbda54849e8904154c8f8436a59b95b1d397cb`](./contracts/arbitrum-42161/0x23fbda54849e8904154c8f8436a59b95b1d397cb/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | [`0x90beb507a1ba7d64633540cbce615b574224cd84`](./contracts/hyperliquid-999/0x90beb507a1ba7d64633540cbce615b574224cd84/) | ⚠️ Unaudited |
+| Vault0_2_1 | unknown | arbitrum | n/a | [`0x652716fad571f04d26a3c8ffd9e593f17123ab20`](./contracts/arbitrum-42161/0x652716fad571f04d26a3c8ffd9e593f17123ab20/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -121,12 +121,12 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xb10794...77ad62`](./contracts/ethereum-1/0xb107943bbf7c6874af38ebf49c15b383b077ad62/) | EquilibriaCrutch | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x03d1ec...e14bfc`](./contracts/ethereum-1/0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc/) | LagoonVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sei | [`0x2f02db...86dbfd`](./contracts/sei-1329/0x2f02db0a974841f710362e96742cacc2c786dbfd/) | MockLogicRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x70efd8...001d05`](./contracts/ethereum-1/0x70efd899dd4934e25b6042d0a06412e4ea001d05/) | PTOraclePriceAdapterFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x23fbda...d397cb`](./contracts/arbitrum-42161/0x23fbda54849e8904154c8f8436a59b95b1d397cb/) | ShowcaseBug | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x652716...23ab20`](./contracts/arbitrum-42161/0x652716fad571f04d26a3c8ffd9e593f17123ab20/) | Vault0_2_1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb107943bbf7c6874af38ebf49c15b383b077ad62`](./contracts/ethereum-1/0xb107943bbf7c6874af38ebf49c15b383b077ad62/) | EquilibriaCrutch | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc`](./contracts/ethereum-1/0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc/) | LagoonVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sei | [`0x2f02db0a974841f710362e96742cacc2c786dbfd`](./contracts/sei-1329/0x2f02db0a974841f710362e96742cacc2c786dbfd/) | MockLogicRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x70efd899dd4934e25b6042d0a06412e4ea001d05`](./contracts/ethereum-1/0x70efd899dd4934e25b6042d0a06412e4ea001d05/) | PTOraclePriceAdapterFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x23fbda54849e8904154c8f8436a59b95b1d397cb`](./contracts/arbitrum-42161/0x23fbda54849e8904154c8f8436a59b95b1d397cb/) | ShowcaseBug | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x652716fad571f04d26a3c8ffd9e593f17123ab20`](./contracts/arbitrum-42161/0x652716fad571f04d26a3c8ffd9e593f17123ab20/) | Vault0_2_1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

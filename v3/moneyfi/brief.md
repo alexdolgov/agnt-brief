@@ -90,27 +90,27 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ERC1967Proxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | ethereum | unit-154057 | `0x3e5248...c300fd` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | ethereum | unit-154056 | `0xc5224b...ba1c07` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | bsc | unit-154063 | `0x0f93ea...f131db` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | bsc | unit-154047 | `0x1efa94...c71832` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | base | unit-154067 | `0x0ccbcd...cc9f6e` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | base | unit-154065 | `0x16fe43...e916a2` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | base | unit-154066 | `0xd9ec31...064fc2` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | arbitrum | unit-154059 | `0x0f92f5...f1e1e4` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | arbitrum | unit-154058 | `0x322d52...d20d4d` | ⚠️ Unaudited |
-| MoneyFiAerodromeSwap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | unit-154055 | `0x85affe...37293d` | ⚠️ Unaudited |
-| MoneyFiCCTPV1CrossChain | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-154044 | `0x103f24...0ebcdb` | ⚠️ Unaudited |
-| MoneyFiCCTPV1Utils | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-154043 | `0x0cda33...f4c8df` | ⚠️ Unaudited |
-| MoneyFiController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-154045 | `0x1b37b5...cb3164` | ⚠️ Unaudited |
-| MoneyFiCrossChainRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-154042 | `0x067430...6bad05` | ⚠️ Unaudited |
-| MoneyFiFundVault | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | unit-154061 | `0x0228a8...c197b7` | ⚠️ Unaudited |
-| MoneyFiPancakeSwap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-154049 | `0xf5d465...5dbed1` | ⚠️ Unaudited |
-| MoneyFiReferral | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | unit-154052 | `0x39a183...d684a5` | ⚠️ Unaudited |
-| MoneyFiRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-154041 | `0x034c02...6da85f` | ⚠️ Unaudited |
-| MoneyFiStartegyUpgradeableAllBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | unit-154054 | `0x477101...37b1cc` | ⚠️ Unaudited |
-| MoneyFiStrategyUpgradeableAllBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-154039 | `0x03afbc...f42593` | ⚠️ Unaudited |
-| MoneyFiTokenLp | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | unit-154040 | `0x0f3347...7b7181` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | ethereum | unit-154057 | `0x3e5248390072df19b4a292e8ce6fe65c0fc300fd` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | ethereum | unit-154056 | `0xc5224ba06a932b65909b6fa53b263d5b84ba1c07` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | bsc | unit-154063 | `0x0f93ea942eff599298c75e941e068badb7f131db` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | bsc | unit-154047 | `0x1efa94587d929f61ae5c2c21adcbe853b6c71832` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | base | unit-154067 | `0x0ccbcd220d94344f0ae7346d2a6276c404cc9f6e` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | base | unit-154065 | `0x16fe43a853883842bfc13bf8c96596a287e916a2` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | base | unit-154066 | `0xd9ec31efcdb4d98e6578ecb70b970ec60a064fc2` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | arbitrum | unit-154059 | `0x0f92f50532c6c4d7d7d95cda3474177794f1e1e4` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | arbitrum | unit-154058 | `0x322d521a9319bf9388419dd53a73ea4605d20d4d` | ⚠️ Unaudited |
+| MoneyFiAerodromeSwap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | unit-154055 | `0x85affe800e3d5098cf9aed4749e765a4a137293d` | ⚠️ Unaudited |
+| MoneyFiCCTPV1CrossChain | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-154044 | `0x103f2454a7941f07d5661669bd6eed0d1e0ebcdb` | ⚠️ Unaudited |
+| MoneyFiCCTPV1Utils | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-154043 | `0x0cda33f268e4456cd5d8b6b212c912bacdf4c8df` | ⚠️ Unaudited |
+| MoneyFiController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-154045 | `0x1b37b54d38421e7bdbd3d886a395a87167cb3164` | ⚠️ Unaudited |
+| MoneyFiCrossChainRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-154042 | `0x067430eca3e7a947afc99345552627e4b46bad05` | ⚠️ Unaudited |
+| MoneyFiFundVault | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | unit-154061 | `0x0228a82cdae89fe94d6ba7c5e1c8404d68c197b7` | ⚠️ Unaudited |
+| MoneyFiPancakeSwap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-154049 | `0xf5d4650902cb5df6cee4f21e3763bc6a0a5dbed1` | ⚠️ Unaudited |
+| MoneyFiReferral | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | unit-154052 | `0x39a18374b0357572e23c17f3057a2b0d8ed684a5` | ⚠️ Unaudited |
+| MoneyFiRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-154041 | `0x034c02b3f961258b743af776f72a53b6976da85f` | ⚠️ Unaudited |
+| MoneyFiStartegyUpgradeableAllBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | unit-154054 | `0x477101fd75df7f58d04d71144f56e38ab637b1cc` | ⚠️ Unaudited |
+| MoneyFiStrategyUpgradeableAllBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-154039 | `0x03afbc04c44d648dd59fc9cafb2b00730bf42593` | ⚠️ Unaudited |
+| MoneyFiTokenLp | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | unit-154040 | `0x0f33473b45df316aa410d7060faf2ace2b7b7181` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

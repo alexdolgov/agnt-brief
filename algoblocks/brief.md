@@ -61,17 +61,17 @@ The protocol comprises 5 functional families. Its contracts share 2 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Algoblocks | unknown | bsc | n/a | [`0xfecca8...fd3a48`](./contracts/bsc-56/0xfecca80ff6deb2b492e93df3b67f0c523cfd3a48/) | ✅ Audited |
+| Algoblocks | unknown | bsc | n/a | [`0xfecca80ff6deb2b492e93df3b67f0c523cfd3a48`](./contracts/bsc-56/0xfecca80ff6deb2b492e93df3b67f0c523cfd3a48/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| DCBLiqLocker | unknown | bsc | n/a | [`0x1587d7...78dfae`](./contracts/bsc-56/0x1587d7bf992a854a23ffd7b1bcf96393d978dfae/) | ⚠️ Unaudited |
-| DCBVault | core_logic | bsc | n/a | 3 deployments: bsc [`0x5729cd...ff1523`](./contracts/bsc-56/0x5729cdd601a9ddc6fb81c27a7d84558e95ff1523/); bsc `0x8222e5...4749a2`; bsc `0xa459da...45677e` | ⚠️ Unaudited |
-| DecubateMasterChef | unknown | bsc | n/a | 2 deployments: bsc [`0xac87de...46ffe7`](./contracts/bsc-56/0xac87de420894eaa8234d288334faec08bb46ffe7/); bsc `0xd17481...30884a` | ⚠️ Unaudited |
-| DecubateTiers | unknown | bsc | n/a | 14 deployments: bsc [`0x073dd3...9fac41`](./contracts/bsc-56/0x073dd345accc5398138242d8f7b8bcc1a29fac41/); bsc `0x15a74f...9ef81e`; bsc `0x1c0386...c9f27b`; bsc `0x20e858...27e5f6`; bsc `0x3a795d...61b2fa`; bsc `0x3c6fcb...d9221e`; bsc `0x3e954b...7f379e`; bsc `0x45a5ea...2d79d3`; bsc `0x8befb4...aebc66`; bsc `0x94b8dc...2ce9be`; bsc `0xbe4696...a67e50`; bsc `0xbf792c...0757f4`; bsc `0xc6153c...e77f3d`; bsc `0xe4c32d...42134a` | ⚠️ Unaudited |
-| DecubateVestingV2 | operational_periphery | bsc | n/a | 2 deployments: bsc [`0xc4754d...89cd2f`](./contracts/bsc-56/0xc4754dac9c047e3772ddffb8dc641bf15689cd2f/); bsc `0xdb3161...988659` | ⚠️ Unaudited |
+| DCBLiqLocker | unknown | bsc | n/a | [`0x1587d7bf992a854a23ffd7b1bcf96393d978dfae`](./contracts/bsc-56/0x1587d7bf992a854a23ffd7b1bcf96393d978dfae/) | ⚠️ Unaudited |
+| DCBVault | core_logic | bsc | n/a | 3 deployments: bsc [`0x5729cdd601a9ddc6fb81c27a7d84558e95ff1523`](./contracts/bsc-56/0x5729cdd601a9ddc6fb81c27a7d84558e95ff1523/); bsc `0x8222e5fad2a9eed6634aa9117a02c4af9f4749a2`; bsc `0xa459daf69670ad1fe6d2834e9a6f852cf045677e` | ⚠️ Unaudited |
+| DecubateMasterChef | unknown | bsc | n/a | 2 deployments: bsc [`0xac87de420894eaa8234d288334faec08bb46ffe7`](./contracts/bsc-56/0xac87de420894eaa8234d288334faec08bb46ffe7/); bsc `0xd1748192ae1db982be2fb8c3e6d893c75330884a` | ⚠️ Unaudited |
+| DecubateTiers | unknown | bsc | n/a | 14 deployments: bsc [`0x073dd345accc5398138242d8f7b8bcc1a29fac41`](./contracts/bsc-56/0x073dd345accc5398138242d8f7b8bcc1a29fac41/); bsc `0x15a74f281e4911f79f97ec1c5ed54008f29ef81e`; bsc `0x1c03866d059e56478fa6b9111c7f962087c9f27b`; bsc `0x20e858562b9ba2746a2780f26a4023191927e5f6`; bsc `0x3a795d25af9420f0a7fa368061a6f97aad61b2fa`; bsc `0x3c6fcbd7a32023c5f0104d0741dc452386d9221e`; bsc `0x3e954babcdfdbbe7b2de820be6371d020f7f379e`; bsc `0x45a5ea2a8cf4ac16cf66f9446af81233022d79d3`; bsc `0x8befb4b534e711a844aa9a10c3e7d00cbbaebc66`; bsc `0x94b8dc8e81741fb28ac6936c92ff584e7d2ce9be`; bsc `0xbe46969a30095b36fe7b6d17f3e3870972a67e50`; bsc `0xbf792c2847a4a81bb10c2cac21a8ff7a280757f4`; bsc `0xc6153c1ac63701dc3f837b44e43d63279fe77f3d`; bsc `0xe4c32d5d52180e5e94b8f043f0870052b742134a` | ⚠️ Unaudited |
+| DecubateVestingV2 | operational_periphery | bsc | n/a | 2 deployments: bsc [`0xc4754dac9c047e3772ddffb8dc641bf15689cd2f`](./contracts/bsc-56/0xc4754dac9c047e3772ddffb8dc641bf15689cd2f/); bsc `0xdb3161a70c379a3ab74d81cb4698a5c370988659` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -91,19 +91,19 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0x235208...141fa9` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x26c557...c78891` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x3c5527...3a310f` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x4946c2...0f732b` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x6d3227...7161ad` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x747bf7...69ceae` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x7d056d...e9db11` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xa07bfc...fa0184` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xa16fe7...39a13a` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xaf99a7...14296a` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xb269ed...aeb0fc` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xc38c4a...f3e8f3` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xdf83a7...48c86c` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x235208a31093ae3b2017976cc4d5a03683141fa9` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x26c557d1125fde890bf58b65e139d58a7cc78891` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x3c552711a60db74de4bb8a659b68cd4f833a310f` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x4946c2b42037198aea8c836903ef7d95ea0f732b` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x6d32277dbb92188a8daf6136c6d592eda57161ad` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x747bf7e5b0794829570b92b9ae007cfc5e69ceae` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x7d056d4a320ee66fa7bab5de17aea4e276e9db11` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xa07bfc194cb680b836cd2f637a25ca625dfa0184` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xa16fe7d49f555ef3a02eb9b16337efd1b139a13a` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xaf99a75ef3dde0ee775e89a6e52d1ae31314296a` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xb269ed9729b76210b7c2b724688f0c56a9aeb0fc` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xc38c4a1e8c0d2fb504ea5c964aa00abf9ef3e8f3` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xdf83a7ac2988bceb990a2c79721546157348c86c` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -117,10 +117,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x5729cd...ff1523`](./contracts/bsc-56/0x5729cdd601a9ddc6fb81c27a7d84558e95ff1523/) | DCBVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xac87de...46ffe7`](./contracts/bsc-56/0xac87de420894eaa8234d288334faec08bb46ffe7/) | DecubateMasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x073dd3...9fac41`](./contracts/bsc-56/0x073dd345accc5398138242d8f7b8bcc1a29fac41/) | DecubateTiers | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xc4754d...89cd2f`](./contracts/bsc-56/0xc4754dac9c047e3772ddffb8dc641bf15689cd2f/) | DecubateVestingV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x5729cdd601a9ddc6fb81c27a7d84558e95ff1523`](./contracts/bsc-56/0x5729cdd601a9ddc6fb81c27a7d84558e95ff1523/) | DCBVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xac87de420894eaa8234d288334faec08bb46ffe7`](./contracts/bsc-56/0xac87de420894eaa8234d288334faec08bb46ffe7/) | DecubateMasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x073dd345accc5398138242d8f7b8bcc1a29fac41`](./contracts/bsc-56/0x073dd345accc5398138242d8f7b8bcc1a29fac41/) | DecubateTiers | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xc4754dac9c047e3772ddffb8dc641bf15689cd2f`](./contracts/bsc-56/0xc4754dac9c047e3772ddffb8dc641bf15689cd2f/) | DecubateVestingV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

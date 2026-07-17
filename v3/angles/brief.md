@@ -54,12 +54,12 @@ The pinned logic-topography run contains 6 contract row(s) across sonic. Structu
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- AnglesVault (`0xd4012c...63e1f2`, chain 146)
-- AnglesVaultProxy (`0xe5203b...ef4269`, chain 146)
-- anS (`0x3eac5e...43ce7a`, chain 146)
-- anSProxy (`0x0c4e18...9ec987`, chain 146)
-- wanS (`0xba3bb1...207a64`, chain 146)
-- WrappedAnsProxy (`0xfa85fe...5abd70`, chain 146)
+- AnglesVault (`0xd4012c5f3cbcc383d358c5086da694757463e1f2`, chain 146)
+- AnglesVaultProxy (`0xe5203be1643465b3c0de28fd2154843497ef4269`, chain 146)
+- anS (`0x3eac5eb19c1b300e301874e2113bc2eced43ce7a`, chain 146)
+- anSProxy (`0x0c4e186eae8acaa7f7de1315d5ad174be39ec987`, chain 146)
+- wanS (`0xba3bb17d19e556900e42e7c1e9e89dc6d3207a64`, chain 146)
+- WrappedAnsProxy (`0xfa85fe5a8f5560e9039c04f2b0a90de1415abd70`, chain 146)
 
 ## Contract Surface Quality
 
@@ -104,37 +104,37 @@ The pinned logic-topography run contains 6 contract row(s) across sonic. Structu
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AnglesVault | core_logic | project_anchor | own_supporting | 1 | sonic | unit-379056 | 2 deployments: sonic `0xd4012c...63e1f2`; sonic `0xe5203b...ef4269` | ✅ Audited |
+| AnglesVault | core_logic | project_anchor | own_supporting | 1 | sonic | unit-379056 | 2 deployments: sonic `0xd4012c5f3cbcc383d358c5086da694757463e1f2`; sonic `0xe5203be1643465b3c0de28fd2154843497ef4269` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (25)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| PoolV2 | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 2 deployments: sonic `0x033f4a...b3c722`; sonic `0x4bf2d4...ce9eea` | ⚠️ Unaudited |
-| Pool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 5 deployments: sonic `0x6c2a52...41c452`; sonic `0x71e558...3d6a54`; sonic `0xc8291d...db3dd8`; sonic `0xc85ada...0b928f`; sonic `0xef7073...1237eb` | ⚠️ Unaudited |
-| Aggregator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 4 deployments: sonic `0x6d06b7...b0ac35`; sonic `0x8417bd...00552f`; sonic `0xa342a0...3b9070`; sonic `0xfb644c...1d41cd` | ⚠️ Unaudited |
-| AnglesLiquidVaultRateProvider | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 2 deployments: sonic `0x5c6e05...fd35b0`; sonic `0x9b2e90...3e206e` | ⚠️ Unaudited |
-| AnglesSmartRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 2 deployments: sonic `0x0af78f...189a00`; sonic `0xe4b84f...103175` | ⚠️ Unaudited |
-| anS | unknown | project_anchor | own_supporting | 1 | sonic | unit-379054 | 2 deployments: sonic `0x0c4e18...9ec987`; sonic `0x3eac5e...43ce7a` | ⚠️ Unaudited |
-| anS | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x71f589...1b4472` | ⚠️ Unaudited |
-| AtomicQueue | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x22f749...5a348c` | ⚠️ Unaudited |
-| BeetsLpAddHelper | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 3 deployments: sonic `0x87b294...a672a4`; sonic `0xbe4d17...18595a`; sonic `0xc83d8a...3225bd` | ⚠️ Unaudited |
-| BeetsLpRateProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x3df5a1...3a077a` | ⚠️ Unaudited |
-| Deployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xde4452...520033` | ⚠️ Unaudited |
-| FeeSplitter | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 2 deployments: sonic `0x4cc72c...863a9e`; sonic `0xfd1ba5...d2b010` | ⚠️ Unaudited |
-| ManualRegistry | registry | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x9786db...07be7b` | ⚠️ Unaudited |
-| PoolOwner | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 5 deployments: sonic `0x01ddde...493b1a`; sonic `0x2210a9...6cb6d6`; sonic `0x228075...a4079a`; sonic `0xa9e4c9...9e1788`; sonic `0xd965e9...a727ef` | ⚠️ Unaudited |
-| PoolToken | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 7 deployments: sonic `0x2f45b6...ef51fd`; sonic `0x2f6679...b39b45`; sonic `0x3bcb4f...1d5f8b`; sonic `0x451d00...62666e`; sonic `0x88cf50...c3bb7d`; sonic `0xa93c94...d48c4d`; sonic `0xe0c7af...24eb48` | ⚠️ Unaudited |
-| RingsVaultRateProvider | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 5 deployments: sonic `0x117b60...11c9b8`; sonic `0x142e7a...03fbb3`; sonic `0xa633c1...9deeb3`; sonic `0xa96ac7...0a685e`; sonic `0xd822b4...409f30` | ⚠️ Unaudited |
-| RolesAuthority | governance | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x135cb0...f98c47` | ⚠️ Unaudited |
-| SFC | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | `0xfc00fa...000000` | ⚠️ Unaudited |
-| SiloBorrowableWsRateProvider | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x1e3600...7ad01f` | ⚠️ Unaudited |
-| SonicUsdcRateProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xf14aee...b5a416` | ⚠️ Unaudited |
-| SonicUsdtRateProvider | token | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 2 deployments: sonic `0x0140f9...fa6f3f`; sonic `0x8a3b3a...dd2d39` | ⚠️ Unaudited |
-| Timelock | governance | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 3 deployments: sonic `0x035b1c...3e3f20`; sonic `0x94869d...c288da`; sonic `0xe14e14...1282e7` | ⚠️ Unaudited |
-| Vault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 7 deployments: sonic `0x097df3...1bfb0f`; sonic `0x15e96c...92e69d`; sonic `0x1c8a00...8c5635`; sonic `0x1edbcc...51945e`; sonic `0x7a1f5f...736465`; sonic `0xcafd81...e14d41`; sonic `0xedea26...08bca5` | ⚠️ Unaudited |
-| wanS | unknown | project_anchor | own_supporting | 1 | sonic | unit-379055 | 2 deployments: sonic `0xba3bb1...207a64`; sonic `0xfa85fe...5abd70` | ⚠️ Unaudited |
-| WsRateProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x615ee0...156ed5` | ⚠️ Unaudited |
+| PoolV2 | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 2 deployments: sonic `0x033f4a109fc11a11d3afb92dca0ab6c30bb3c722`; sonic `0x4bf2d4868e7c8514093a4d548b8edf5ae4ce9eea` | ⚠️ Unaudited |
+| Pool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 5 deployments: sonic `0x6c2a529921f70eaf44d689ef882d96f09041c452`; sonic `0x71e558d352125a4950301e1fb7027b09303d6a54`; sonic `0xc8291d518fe771b5612ecc0d6a99d5dc03db3dd8`; sonic `0xc85ada86a52dc74e3b0bbd71e5a7e6b0770b928f`; sonic `0xef7073465ff7674d886f1705ed8e471ef61237eb` | ⚠️ Unaudited |
+| Aggregator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 4 deployments: sonic `0x6d06b7fac4f6393672fd038083370d38f3b0ac35`; sonic `0x8417bdef7fe41743cd26e591f1e4f0d19c00552f`; sonic `0xa342a00f66783a4ca59d0c0716f2d24f593b9070`; sonic `0xfb644cea02886ddc1b56d6d9fece811c941d41cd` | ⚠️ Unaudited |
+| AnglesLiquidVaultRateProvider | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 2 deployments: sonic `0x5c6e05d97af61637fdf5144ad4ed81a12bfd35b0`; sonic `0x9b2e90317888c0ca88041a2caecd03a6f63e206e` | ⚠️ Unaudited |
+| AnglesSmartRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 2 deployments: sonic `0x0af78f0ccb7d1a042d13f3d4def51cec7c189a00`; sonic `0xe4b84fdd6979a872dd57973f3e4a45921c103175` | ⚠️ Unaudited |
+| anS | unknown | project_anchor | own_supporting | 1 | sonic | unit-379054 | 2 deployments: sonic `0x0c4e186eae8acaa7f7de1315d5ad174be39ec987`; sonic `0x3eac5eb19c1b300e301874e2113bc2eced43ce7a` | ⚠️ Unaudited |
+| anS | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x71f589c4032a2152c377903c0c2485d1b41b4472` | ⚠️ Unaudited |
+| AtomicQueue | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x22f74995f88d4fd631bb8f64fa523af0da5a348c` | ⚠️ Unaudited |
+| BeetsLpAddHelper | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 3 deployments: sonic `0x87b2948046431022d2633d5e8107ed70d4a672a4`; sonic `0xbe4d17ecb01b6173ae7c168ea9b654a64d18595a`; sonic `0xc83d8ab2978f93dea406a3f4f575bf35e03225bd` | ⚠️ Unaudited |
+| BeetsLpRateProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x3df5a1f8e1742f225e485afb99ccfe910d3a077a` | ⚠️ Unaudited |
+| Deployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xde4452a4a4851356e72db53ebfbc9b5b6d520033` | ⚠️ Unaudited |
+| FeeSplitter | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 2 deployments: sonic `0x4cc72cafb1d87068cae2da03243317f96e863a9e`; sonic `0xfd1ba507a7bb118af057671568551f6ac7d2b010` | ⚠️ Unaudited |
+| ManualRegistry | registry | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x9786db1486a2f67977ef1e3dfbd0eb01e407be7b` | ⚠️ Unaudited |
+| PoolOwner | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 5 deployments: sonic `0x01ddde7f3b29fe9571f8bee23a48daab39493b1a`; sonic `0x2210a9357d51ff909eaa43570b3f1275e76cb6d6`; sonic `0x2280753c0f14e1f48352ca760cde48dfc2a4079a`; sonic `0xa9e4c941f4677fa4eff10173cdbdfb2e909e1788`; sonic `0xd965e9210caf1cdc1ed2f0a8936329c12ba727ef` | ⚠️ Unaudited |
+| PoolToken | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 7 deployments: sonic `0x2f45b61b90b821efdb4525f89162cfd857ef51fd`; sonic `0x2f6679945c215729608f9896f081d2af42b39b45`; sonic `0x3bcb4f5c22758b145820e1126e69d96f891d5f8b`; sonic `0x451d0084cceaa2cc7ef7ecc71631c54f4e62666e`; sonic `0x88cf500da90ac0351a5b886b73678d183bc3bb7d`; sonic `0xa93c9411f8fecf5e6acd81ecd99a71c165d48c4d`; sonic `0xe0c7af51b39f4cb8d4816a07d0713fe59024eb48` | ⚠️ Unaudited |
+| RingsVaultRateProvider | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 5 deployments: sonic `0x117b60ddd662c9165cbe7f442f5d79e98311c9b8`; sonic `0x142e7af40de1a225cc1436b363d4187f8403fbb3`; sonic `0xa633c15e09ca2a8dbb6cd52aae915a3b379deeb3`; sonic `0xa96ac774bd4b8e513b4eb3bad7f3639ee50a685e`; sonic `0xd822b488bd5b0e5fcd4d3fcb6ba9867b6b409f30` | ⚠️ Unaudited |
+| RolesAuthority | governance | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x135cb0ebeacb89738a17d3ee6b3caf392af98c47` | ⚠️ Unaudited |
+| SFC | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | `0xfc00face00000000000000000000000000000000` | ⚠️ Unaudited |
+| SiloBorrowableWsRateProvider | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x1e360058e211dd88d695926ba0683034477ad01f` | ⚠️ Unaudited |
+| SonicUsdcRateProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xf14aeeb00e51d8447f5064f73c519e23a9b5a416` | ⚠️ Unaudited |
+| SonicUsdtRateProvider | token | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 2 deployments: sonic `0x0140f9b548565bf913020f186402ced1e8fa6f3f`; sonic `0x8a3b3aa843aab44944209700ca878e9ea5dd2d39` | ⚠️ Unaudited |
+| Timelock | governance | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 3 deployments: sonic `0x035b1c84051e8c6988e3e7ed39991b6e683e3f20`; sonic `0x94869d505fe7bab884505f45a48c24628fc288da`; sonic `0xe14e14cc32b939957742d7586e9debc9631282e7` | ⚠️ Unaudited |
+| Vault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 7 deployments: sonic `0x097df3dfb8c5b090e661296563f1fe24701bfb0f`; sonic `0x15e96cdeca34b9de1b31586c1206206adb92e69d`; sonic `0x1c8a00371ed3e66d2b9e45676d421a29848c5635`; sonic `0x1edbcc4bf6e1524715f55544113430f4e451945e`; sonic `0x7a1f5fb31506274ee22afb1acf4d3c1a3f736465`; sonic `0xcafd8145535a9abb7e15262fb6e2ba6452e14d41`; sonic `0xedea2647cfe580c9b6f2148c270f9aae6b08bca5` | ⚠️ Unaudited |
+| wanS | unknown | project_anchor | own_supporting | 1 | sonic | unit-379055 | 2 deployments: sonic `0xba3bb17d19e556900e42e7c1e9e89dc6d3207a64`; sonic `0xfa85fe5a8f5560e9039c04f2b0a90de1415abd70` | ⚠️ Unaudited |
+| WsRateProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x615ee09caa940a91ef4738fdea8935f659156ed5` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -154,21 +154,21 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x02b472...2cee57` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x093045...22d7bd` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x16fdf1...089993` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x1f88ea...2a5884` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x34fe76...228945` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x510d02...3e4ba4` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x5b52fa...2dc073` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x5dbba7...cba78f` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x7f7eb9...ed4c31` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xa7b87c...08029e` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xb52a8d...e7207a` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xbe7cc6...d6fe53` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xd68c5c...ec840b` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xe904a7...c6f23d` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xf46b21...740497` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x02b4723b471acac2048954faa59923cd7d2cee57` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x0930453c8d14a6e31473acd12ac94d122b22d7bd` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x16fdf10d097f9dc9527bba50397e314163089993` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x1f88ea7979df5292bd8c712374f79e0c2c2a5884` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x34fe76b604776eb3ec7f2178714ba7d270228945` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x510d02e3bce27c57ebf632bcca37ce86823e4ba4` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x5b52fa88f9848efc70dafc14ba17a81f5a2dc073` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x5dbba7fb977f02356d8088a7e199ce249acba78f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x7f7eb928ea8c84795b9a9265078cb38500ed4c31` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xa7b87c579ff16dc615df69dab2c3059f5008029e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xb52a8d5212463ea5c624be88901093859ae7207a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xbe7cc6c5dabdf3fb899a2e4a7fd5646374d6fe53` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xd68c5cc0cc0bf8deb07d447930a2f44affec840b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xe904a7a1e66532dea9905dd8d385d15937c6f23d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xf46b21f3d0f6af145112b81ad459cc92ab740497` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -188,7 +188,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| spaces/llPyhrg6nxGZCqiOX61A/uploads/bSKwCaHEqGfKBo6FUXtL/SpearBit x Angles.pdf | AnglesVault | own proxy deployment | AnglesVaultProxy (proxy) (selected) `0xe5203b...ef4269` — deployed 2025-01-21 13:52:52+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/llPyhrg6nxGZCqiOX61A/uploads/bSKwCaHEqGfKBo6FUXtL/SpearBit x Angles.pdf | AnglesVault | own proxy deployment | AnglesVaultProxy (proxy) (selected) `0xe5203be1643465b3c0de28fd2154843497ef4269` — deployed 2025-01-21 13:52:52+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 
 ## Coverage Gaps
 
@@ -196,8 +196,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| sonic | `0x0c4e18...9ec987` | anS | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | `0xba3bb1...207a64` | wanS | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0x0c4e186eae8acaa7f7de1315d5ad174be39ec987` | anS | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0xba3bb17d19e556900e42e7c1e9e89dc6d3207a64` | wanS | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

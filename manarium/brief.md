@@ -59,7 +59,7 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Manarium | unknown | bsc | n/a | [`0xc80a0a...2c4a35`](./contracts/bsc-56/0xc80a0a55caf6a7bfb4ee22f9380c4077312c4a35/) | ✅ Audited |
+| Manarium | unknown | bsc | n/a | [`0xc80a0a55caf6a7bfb4ee22f9380c4077312c4a35`](./contracts/bsc-56/0xc80a0a55caf6a7bfb4ee22f9380c4077312c4a35/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 
@@ -83,8 +83,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0x212664...7f7037` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xe77f23...0c2117` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x212664a9c41c89fff775500b27418848c77f7037` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xe77f237c88570ab6024b40b49494c18b050c2117` | ❓ Unverified |
 
 ## Audit Inventory
 

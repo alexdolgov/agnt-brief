@@ -57,19 +57,19 @@ The protocol forms a single structural family (Core Logic) of 8 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| SakaiDAO | unknown | bsc | n/a | [`0x0b5e46...e64f85`](./contracts/bsc-56/0x0b5e462b4308e837f540b5bd212b34ee8fe64f85/) | ✅ Audited |
+| SakaiDAO | unknown | bsc | n/a | [`0x0b5e462b4308e837f540b5bd212b34ee8fe64f85`](./contracts/bsc-56/0x0b5e462b4308e837f540b5bd212b34ee8fe64f85/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (7)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| SAKAI | unknown | bsc | n/a | [`0x43b35e...d1c4af`](./contracts/bsc-56/0x43b35e89d15b91162dea1c51133c4c93bdd1c4af/) | ⚠️ Unaudited |
-| SakaiDistributor | unknown | bsc | n/a | [`0xf17e28...cd3f20`](./contracts/bsc-56/0xf17e28cb23849dd0db75f7e130e15c55a1cd3f20/) | ⚠️ Unaudited |
-| SakaiProposal | unknown | bsc | n/a | [`0x3999ec...ea5f78`](./contracts/bsc-56/0x3999eca025e34a044ed5c56b2fef74a893ea5f78/) | ⚠️ Unaudited |
-| SakaiStaking | unknown | bsc | n/a | [`0x44b3eb...9c2957`](./contracts/bsc-56/0x44b3eb3cc015653ef4dc013b889feda3be9c2957/) | ⚠️ Unaudited |
-| SakaiVaultProtocol | unknown | bsc | n/a | [`0x1e8c98...df9324`](./contracts/bsc-56/0x1e8c9814745e51f27ab47733d36ff5280bdf9324/) | ⚠️ Unaudited |
-| SUSD | unknown | bsc | n/a | [`0x5e4faf...fe9ce7`](./contracts/bsc-56/0x5e4faf13a3d66e741f1e9b8743b8d26f6afe9ce7/) | ⚠️ Unaudited |
-| TheVaultTicker | unknown | bsc | n/a | [`0x439596...128fea`](./contracts/bsc-56/0x439596ccb842f2a556677ab62f9d985e00128fea/) | ⚠️ Unaudited |
+| SAKAI | unknown | bsc | n/a | [`0x43b35e89d15b91162dea1c51133c4c93bdd1c4af`](./contracts/bsc-56/0x43b35e89d15b91162dea1c51133c4c93bdd1c4af/) | ⚠️ Unaudited |
+| SakaiDistributor | unknown | bsc | n/a | [`0xf17e28cb23849dd0db75f7e130e15c55a1cd3f20`](./contracts/bsc-56/0xf17e28cb23849dd0db75f7e130e15c55a1cd3f20/) | ⚠️ Unaudited |
+| SakaiProposal | unknown | bsc | n/a | [`0x3999eca025e34a044ed5c56b2fef74a893ea5f78`](./contracts/bsc-56/0x3999eca025e34a044ed5c56b2fef74a893ea5f78/) | ⚠️ Unaudited |
+| SakaiStaking | unknown | bsc | n/a | [`0x44b3eb3cc015653ef4dc013b889feda3be9c2957`](./contracts/bsc-56/0x44b3eb3cc015653ef4dc013b889feda3be9c2957/) | ⚠️ Unaudited |
+| SakaiVaultProtocol | unknown | bsc | n/a | [`0x1e8c9814745e51f27ab47733d36ff5280bdf9324`](./contracts/bsc-56/0x1e8c9814745e51f27ab47733d36ff5280bdf9324/) | ⚠️ Unaudited |
+| SUSD | unknown | bsc | n/a | [`0x5e4faf13a3d66e741f1e9b8743b8d26f6afe9ce7`](./contracts/bsc-56/0x5e4faf13a3d66e741f1e9b8743b8d26f6afe9ce7/) | ⚠️ Unaudited |
+| TheVaultTicker | unknown | bsc | n/a | [`0x439596ccb842f2a556677ab62f9d985e00128fea`](./contracts/bsc-56/0x439596ccb842f2a556677ab62f9d985e00128fea/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -101,13 +101,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x43b35e...d1c4af`](./contracts/bsc-56/0x43b35e89d15b91162dea1c51133c4c93bdd1c4af/) | SAKAI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xf17e28...cd3f20`](./contracts/bsc-56/0xf17e28cb23849dd0db75f7e130e15c55a1cd3f20/) | SakaiDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x3999ec...ea5f78`](./contracts/bsc-56/0x3999eca025e34a044ed5c56b2fef74a893ea5f78/) | SakaiProposal | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x44b3eb...9c2957`](./contracts/bsc-56/0x44b3eb3cc015653ef4dc013b889feda3be9c2957/) | SakaiStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x1e8c98...df9324`](./contracts/bsc-56/0x1e8c9814745e51f27ab47733d36ff5280bdf9324/) | SakaiVaultProtocol | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x5e4faf...fe9ce7`](./contracts/bsc-56/0x5e4faf13a3d66e741f1e9b8743b8d26f6afe9ce7/) | SUSD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x439596...128fea`](./contracts/bsc-56/0x439596ccb842f2a556677ab62f9d985e00128fea/) | TheVaultTicker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x43b35e89d15b91162dea1c51133c4c93bdd1c4af`](./contracts/bsc-56/0x43b35e89d15b91162dea1c51133c4c93bdd1c4af/) | SAKAI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xf17e28cb23849dd0db75f7e130e15c55a1cd3f20`](./contracts/bsc-56/0xf17e28cb23849dd0db75f7e130e15c55a1cd3f20/) | SakaiDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x3999eca025e34a044ed5c56b2fef74a893ea5f78`](./contracts/bsc-56/0x3999eca025e34a044ed5c56b2fef74a893ea5f78/) | SakaiProposal | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x44b3eb3cc015653ef4dc013b889feda3be9c2957`](./contracts/bsc-56/0x44b3eb3cc015653ef4dc013b889feda3be9c2957/) | SakaiStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x1e8c9814745e51f27ab47733d36ff5280bdf9324`](./contracts/bsc-56/0x1e8c9814745e51f27ab47733d36ff5280bdf9324/) | SakaiVaultProtocol | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x5e4faf13a3d66e741f1e9b8743b8d26f6afe9ce7`](./contracts/bsc-56/0x5e4faf13a3d66e741f1e9b8743b8d26f6afe9ce7/) | SUSD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x439596ccb842f2a556677ab62f9d985e00128fea`](./contracts/bsc-56/0x439596ccb842f2a556677ab62f9d985e00128fea/) | TheVaultTicker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

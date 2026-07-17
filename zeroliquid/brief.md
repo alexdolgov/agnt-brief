@@ -59,13 +59,13 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ZeroLiquidToken | token | ethereum | n/a | [`0x776280...11c89f`](./contracts/ethereum-1/0x776280f68ad33c4d49e6846507b7dbaf7811c89f/) | ✅ Audited |
+| ZeroLiquidToken | token | ethereum | n/a | [`0x776280f68ad33c4d49e6846507b7dbaf7811c89f`](./contracts/ethereum-1/0x776280f68ad33c4d49e6846507b7dbaf7811c89f/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Zero | unknown | ethereum | n/a | [`0xb0ed33...025ecc`](./contracts/ethereum-1/0xb0ed33f79d89541dfdcb04a8f04bc2c6be025ecc/) | ⚠️ Unaudited |
+| Zero | unknown | ethereum | n/a | [`0xb0ed33f79d89541dfdcb04a8f04bc2c6be025ecc`](./contracts/ethereum-1/0xb0ed33f79d89541dfdcb04a8f04bc2c6be025ecc/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -97,7 +97,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xb0ed33...025ecc`](./contracts/ethereum-1/0xb0ed33f79d89541dfdcb04a8f04bc2c6be025ecc/) | Zero | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb0ed33f79d89541dfdcb04a8f04bc2c6be025ecc`](./contracts/ethereum-1/0xb0ed33f79d89541dfdcb04a8f04bc2c6be025ecc/) | Zero | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

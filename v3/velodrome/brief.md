@@ -48,8 +48,8 @@ The pinned logic-topography run contains 82 contract row(s) across base, bob, ce
 
 ### Forked Contracts
 
-**Router** (`0xa062ae...8b2858`, chain 10)
-Origin: 40-acres (`0xa062ae...8b2858`)
+**Router** (`0xa062ae8a9c5e11aaa026fc2670b0d65ccc8b2858`, chain 10)
+Origin: 40-acres (`0xa062ae8a9c5e11aaa026fc2670b0d65ccc8b2858`)
 Containment: 100.0% - 19 functions inherited
 Centroid audit status: pending_validation
 
@@ -57,8 +57,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**Voter** (`0x41c914...5abf3c`, chain 10)
-Origin: arcadia-finance (`0x41c914...5abf3c`)
+**Voter** (`0x41c914ee0c7e1a5edcd0295623e6dc557b5abf3c`, chain 10)
+Origin: arcadia-finance (`0x41c914ee0c7e1a5edcd0295623e6dc557b5abf3c`)
 Containment: 100.0% - 29 functions inherited
 Centroid audit status: pending_validation
 
@@ -66,8 +66,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**VotingEscrow** (`0xfaf8fd...06787d`, chain 10)
-Origin: iaero-protocol (`0xebf418...67e6b4`)
+**VotingEscrow** (`0xfaf8fd17d9840595845582fcb047df13f006787d`, chain 10)
+Origin: iaero-protocol (`0xebf418fe2512e7e6bd9b87a8f0f294acdc67e6b4`)
 Containment: 96.0% - 48 functions inherited
 Centroid audit status: pending_validation
 
@@ -79,198 +79,198 @@ Removals (removed from original):
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- Minter (`0x6dc9e1...d10982`, chain 10)
-- RewardsDistributor (`0x9d4736...1ea99b`, chain 10)
-- Superchain emergencyCouncil (`0xf7a15f...defeda`, chain 10)
-- Superchain leafFeeModule (`0x81c5d0...06b362`, chain 130)
-- Superchain leafFeeModule (`0xc60a68...b62e31`, chain 252)
-- Superchain leafFeeModule (`0x44536f...97a06b`, chain 1135)
-- Superchain leafFeeModule (`0x81c5d0...06b362`, chain 1750)
-- Superchain leafFeeModule (`0x81c5d0...06b362`, chain 1868)
-- Superchain leafFeeModule (`0x81c5d0...06b362`, chain 1923)
-- Superchain leafFeeModule (`0x81c5d0...06b362`, chain 5330)
-- Superchain leafFeeModule (`0x81c5d0...06b362`, chain 57073)
-- Superchain leafGaugeFactory (`0x42e403...38c445`, chain 130)
-- Superchain leafGaugeFactory (`0x42e403...38c445`, chain 252)
-- Superchain leafGaugeFactory (`0x42e403...38c445`, chain 1135)
-- Superchain leafGaugeFactory (`0x42e403...38c445`, chain 1750)
-- Superchain leafGaugeFactory (`0x42e403...38c445`, chain 1868)
-- Superchain leafGaugeFactory (`0x42e403...38c445`, chain 1923)
-- Superchain leafGaugeFactory (`0x42e403...38c445`, chain 5330)
-- Superchain leafGaugeFactory (`0x42e403...38c445`, chain 34443)
-- Superchain leafGaugeFactory (`0x42e403...38c445`, chain 42220)
-- Superchain leafGaugeFactory (`0x42e403...38c445`, chain 57073)
-- Superchain leafMessageBridge (`0xf27876...59c011`, chain 130)
-- Superchain leafMessageBridge (`0xf27876...59c011`, chain 252)
-- Superchain leafMessageBridge (`0xf27876...59c011`, chain 1135)
-- Superchain leafMessageBridge (`0xf27876...59c011`, chain 1750)
-- Superchain leafMessageBridge (`0xf27876...59c011`, chain 1868)
-- Superchain leafMessageBridge (`0xf27876...59c011`, chain 1923)
-- Superchain leafMessageBridge (`0xf27876...59c011`, chain 5330)
-- Superchain leafMessageBridge (`0xf27876...59c011`, chain 34443)
-- Superchain leafMessageBridge (`0xf27876...59c011`, chain 42220)
-- Superchain leafMessageBridge (`0xf27876...59c011`, chain 57073)
-- Superchain leafMessageModule (`0x2bba75...fba15e`, chain 130)
-- Superchain leafMessageModule (`0x2bba75...fba15e`, chain 252)
-- Superchain leafMessageModule (`0xf38560...30071d`, chain 1135)
-- Superchain leafMessageModule (`0x2bba75...fba15e`, chain 1750)
-- Superchain leafMessageModule (`0x2bba75...fba15e`, chain 1868)
-- Superchain leafMessageModule (`0x2bba75...fba15e`, chain 1923)
-- Superchain leafMessageModule (`0x2bba75...fba15e`, chain 5330)
-- Superchain leafMessageModule (`0x2bba75...fba15e`, chain 34443)
-- Superchain leafMessageModule (`0x2bba75...fba15e`, chain 42220)
-- Superchain leafMessageModule (`0x2bba75...fba15e`, chain 57073)
-- Superchain leafPoolFactory (`0x31832f...ce4bc0`, chain 130)
-- Superchain leafPoolFactory (`0x31832f...ce4bc0`, chain 252)
-- Superchain leafPoolFactory (`0x31832f...ce4bc0`, chain 1135)
-- Superchain leafPoolFactory (`0x31832f...ce4bc0`, chain 1750)
-- Superchain leafPoolFactory (`0x31832f...ce4bc0`, chain 1868)
-- Superchain leafPoolFactory (`0x31832f...ce4bc0`, chain 1923)
-- Superchain leafPoolFactory (`0x31832f...ce4bc0`, chain 5330)
-- Superchain leafPoolFactory (`0x31832f...ce4bc0`, chain 34443)
-- Superchain leafPoolFactory (`0x31832f...ce4bc0`, chain 42220)
-- Superchain leafPoolFactory (`0x31832f...ce4bc0`, chain 57073)
-- Superchain leafPoolFactory (`0x31832f...ce4bc0`, chain 60808)
-- Superchain leafPoolImplementation (`0x10499d...bb374c`, chain 130)
-- Superchain leafPoolImplementation (`0x10499d...bb374c`, chain 252)
-- Superchain leafPoolImplementation (`0x10499d...bb374c`, chain 1135)
-- Superchain leafPoolImplementation (`0x10499d...bb374c`, chain 1750)
-- Superchain leafPoolImplementation (`0x10499d...bb374c`, chain 1868)
-- Superchain leafPoolImplementation (`0x10499d...bb374c`, chain 1923)
-- Superchain leafPoolImplementation (`0x10499d...bb374c`, chain 5330)
-- Superchain leafPoolImplementation (`0x10499d...bb374c`, chain 34443)
-- Superchain leafPoolImplementation (`0x10499d...bb374c`, chain 42220)
-- Superchain leafPoolImplementation (`0x10499d...bb374c`, chain 57073)
-- Superchain leafPoolImplementation (`0x10499d...bb374c`, chain 60808)
-- Superchain leafRestrictedRewardToken (`0xafcc6a...73e01b`, chain 130)
-- Superchain leafRestrictedRewardToken (`0xafcc6a...73e01b`, chain 252)
-- Superchain leafRestrictedRewardToken (`0xafcc6a...73e01b`, chain 1135)
-- Superchain leafRestrictedRewardToken (`0xafcc6a...73e01b`, chain 1750)
-- Superchain leafRestrictedRewardToken (`0xafcc6a...73e01b`, chain 1868)
-- Superchain leafRestrictedRewardToken (`0xafcc6a...73e01b`, chain 1923)
-- Superchain leafRestrictedRewardToken (`0xafcc6a...73e01b`, chain 5330)
-- Superchain leafRestrictedRewardToken (`0xafcc6a...73e01b`, chain 8453)
-- Superchain leafRestrictedRewardToken (`0xafcc6a...73e01b`, chain 34443)
-- Superchain leafRestrictedRewardToken (`0xafcc6a...73e01b`, chain 42220)
-- Superchain leafRestrictedRewardToken (`0xafcc6a...73e01b`, chain 57073)
-- Superchain leafRestrictedTokenBridge (`0xac6a60...82d214`, chain 130)
-- Superchain leafRestrictedTokenBridge (`0xac6a60...82d214`, chain 252)
-- Superchain leafRestrictedTokenBridge (`0xac6a60...82d214`, chain 1135)
-- Superchain leafRestrictedTokenBridge (`0xac6a60...82d214`, chain 1750)
-- Superchain leafRestrictedTokenBridge (`0xac6a60...82d214`, chain 1868)
-- Superchain leafRestrictedTokenBridge (`0xac6a60...82d214`, chain 1923)
-- Superchain leafRestrictedTokenBridge (`0xac6a60...82d214`, chain 5330)
-- Superchain leafRestrictedTokenBridge (`0xac6a60...82d214`, chain 8453)
-- Superchain leafRestrictedTokenBridge (`0xac6a60...82d214`, chain 34443)
-- Superchain leafRestrictedTokenBridge (`0xac6a60...82d214`, chain 42220)
-- Superchain leafRestrictedTokenBridge (`0xac6a60...82d214`, chain 57073)
-- Superchain leafRestrictedXFactory (`0x00a376...c75fb1`, chain 130)
-- Superchain leafRestrictedXFactory (`0x00a376...c75fb1`, chain 252)
-- Superchain leafRestrictedXFactory (`0x00a376...c75fb1`, chain 1135)
-- Superchain leafRestrictedXFactory (`0x00a376...c75fb1`, chain 1750)
-- Superchain leafRestrictedXFactory (`0x00a376...c75fb1`, chain 1868)
-- Superchain leafRestrictedXFactory (`0x00a376...c75fb1`, chain 1923)
-- Superchain leafRestrictedXFactory (`0x00a376...c75fb1`, chain 5330)
-- Superchain leafRestrictedXFactory (`0x00a376...c75fb1`, chain 8453)
-- Superchain leafRestrictedXFactory (`0x00a376...c75fb1`, chain 34443)
-- Superchain leafRestrictedXFactory (`0x00a376...c75fb1`, chain 42220)
-- Superchain leafRestrictedXFactory (`0x00a376...c75fb1`, chain 57073)
-- Superchain leafRouter (`0x3a6317...0c2a45`, chain 130)
-- Superchain leafRouter (`0x3a6317...0c2a45`, chain 252)
-- Superchain leafRouter (`0x3a6317...0c2a45`, chain 1135)
-- Superchain leafRouter (`0x3a6317...0c2a45`, chain 1750)
-- Superchain leafRouter (`0x3a6317...0c2a45`, chain 1868)
-- Superchain leafRouter (`0x3a6317...0c2a45`, chain 1923)
-- Superchain leafRouter (`0x3a6317...0c2a45`, chain 5330)
-- Superchain leafRouter (`0x3a6317...0c2a45`, chain 34443)
-- Superchain leafRouter (`0x3a6317...0c2a45`, chain 42220)
-- Superchain leafRouter (`0x3a6317...0c2a45`, chain 57073)
-- Superchain leafRouter (`0x3a6317...0c2a45`, chain 60808)
-- Superchain leafTokenBridge (`0x1a9d17...a17814`, chain 130)
-- Superchain leafTokenBridge (`0x1a9d17...a17814`, chain 252)
-- Superchain leafTokenBridge (`0x1a9d17...a17814`, chain 1135)
-- Superchain leafTokenBridge (`0x1a9d17...a17814`, chain 1750)
-- Superchain leafTokenBridge (`0x1a9d17...a17814`, chain 1868)
-- Superchain leafTokenBridge (`0x1a9d17...a17814`, chain 1923)
-- Superchain leafTokenBridge (`0x1a9d17...a17814`, chain 5330)
-- Superchain leafTokenBridge (`0x1a9d17...a17814`, chain 34443)
-- Superchain leafTokenBridge (`0x1a9d17...a17814`, chain 42220)
-- Superchain leafTokenBridge (`0x1a9d17...a17814`, chain 57073)
-- Superchain leafVoter (`0x97cdbc...8a1123`, chain 130)
-- Superchain leafVoter (`0x97cdbc...8a1123`, chain 252)
-- Superchain leafVoter (`0x97cdbc...8a1123`, chain 1135)
-- Superchain leafVoter (`0x97cdbc...8a1123`, chain 1750)
-- Superchain leafVoter (`0x97cdbc...8a1123`, chain 1868)
-- Superchain leafVoter (`0x97cdbc...8a1123`, chain 1923)
-- Superchain leafVoter (`0x97cdbc...8a1123`, chain 5330)
-- Superchain leafVoter (`0x97cdbc...8a1123`, chain 34443)
-- Superchain leafVoter (`0x97cdbc...8a1123`, chain 42220)
-- Superchain leafVoter (`0x97cdbc...8a1123`, chain 57073)
-- Superchain leafVotingRewardsFactory (`0x7dc9fd...f4fb2f`, chain 130)
-- Superchain leafVotingRewardsFactory (`0x7dc9fd...f4fb2f`, chain 252)
-- Superchain leafVotingRewardsFactory (`0x7dc9fd...f4fb2f`, chain 1135)
-- Superchain leafVotingRewardsFactory (`0x7dc9fd...f4fb2f`, chain 1750)
-- Superchain leafVotingRewardsFactory (`0x7dc9fd...f4fb2f`, chain 1868)
-- Superchain leafVotingRewardsFactory (`0x7dc9fd...f4fb2f`, chain 1923)
-- Superchain leafVotingRewardsFactory (`0x7dc9fd...f4fb2f`, chain 5330)
-- Superchain leafVotingRewardsFactory (`0x7dc9fd...f4fb2f`, chain 34443)
-- Superchain leafVotingRewardsFactory (`0x7dc9fd...f4fb2f`, chain 42220)
-- Superchain leafVotingRewardsFactory (`0x7dc9fd...f4fb2f`, chain 57073)
-- Superchain leafXFactory (`0x73cae4...294b31`, chain 130)
-- Superchain leafXFactory (`0x73cae4...294b31`, chain 252)
-- Superchain leafXFactory (`0x73cae4...294b31`, chain 1135)
-- Superchain leafXFactory (`0x73cae4...294b31`, chain 1750)
-- Superchain leafXFactory (`0x73cae4...294b31`, chain 1868)
-- Superchain leafXFactory (`0x73cae4...294b31`, chain 1923)
-- Superchain leafXFactory (`0x73cae4...294b31`, chain 5330)
-- Superchain leafXFactory (`0x73cae4...294b31`, chain 34443)
-- Superchain leafXFactory (`0x73cae4...294b31`, chain 42220)
-- Superchain leafXFactory (`0x73cae4...294b31`, chain 57073)
-- Superchain leafXVelo (`0x7f9adf...a28a81`, chain 130)
-- Superchain leafXVelo (`0x7f9adf...a28a81`, chain 252)
-- Superchain leafXVelo (`0x7f9adf...a28a81`, chain 1135)
-- Superchain leafXVelo (`0x7f9adf...a28a81`, chain 1750)
-- Superchain leafXVelo (`0x7f9adf...a28a81`, chain 1868)
-- Superchain leafXVelo (`0x7f9adf...a28a81`, chain 1923)
-- Superchain leafXVelo (`0x7f9adf...a28a81`, chain 5330)
-- Superchain leafXVelo (`0x7f9adf...a28a81`, chain 34443)
-- Superchain leafXVelo (`0x7f9adf...a28a81`, chain 42220)
-- Superchain leafXVelo (`0x7f9adf...a28a81`, chain 57073)
-- Superchain mixedRouteQuoter (`0x0f3887...3ef8ba`, chain 60808)
-- Superchain rootGaugeFactory (`0x42e403...38c445`, chain 10)
-- Superchain rootLockbox (`0x12b64d...d60232`, chain 10)
-- Superchain rootMessageBridge (`0xf27876...59c011`, chain 10)
-- Superchain rootMessageModule (`0x2bba75...fba15e`, chain 10)
-- Superchain rootModuleVault (`0x916e0a...2030c5`, chain 10)
-- Superchain rootPoolFactory (`0x31832f...ce4bc0`, chain 10)
-- Superchain rootPoolImplementation (`0x10499d...bb374c`, chain 10)
-- Superchain rootRestrictedRewardLockbox (`0xb46cea...d92313`, chain 10)
-- Superchain rootRestrictedRewardToken (`0xafcc6a...73e01b`, chain 10)
-- Superchain rootRestrictedTokenBridge (`0xac6a60...82d214`, chain 10)
-- Superchain rootRestrictedTokenBridgeVault (`0xb9d32b...09c8d2`, chain 10)
-- Superchain rootRestrictedXFactory (`0x00a376...c75fb1`, chain 10)
-- Superchain rootTokenBridge (`0x1a9d17...a17814`, chain 10)
-- Superchain rootTokenBridgeVault (`0x479bec...22242b`, chain 10)
-- Superchain rootVotingRewardsFactory (`0x7dc9fd...f4fb2f`, chain 10)
-- Superchain rootXFactory (`0x73cae4...294b31`, chain 10)
-- Superchain rootXVelo (`0x7f9adf...a28a81`, chain 10)
-- Superchain stakingRewardsFactory (`0x8eb683...530389`, chain 60808)
-- Superchain stakingRewardsImplementation (`0x593d09...084271`, chain 60808)
-- Superchain tokenRegistry (`0x8d9c67...9107a7`, chain 60808)
-- Superchain universalRouter (`0xc3f14f...e67783`, chain 60808)
-- V2 ArtProxy (`0x4a9ea0...1782dd`, chain 10)
-- V2 FactoryRegistry (`0xf4c67c...aa1d7b`, chain 10)
-- V2 Forwarder (`0x06824d...29ab74`, chain 10)
-- V2 GaugeFactory (`0x8391fe...835071`, chain 10)
-- V2 ManagedRewardsFactory (`0x3f468e...142e9c`, chain 10)
-- V2 PoolFactory (`0xf10460...e5ff5a`, chain 10)
-- V2 SimpleEpochGovernor (`0x654eb9...ee20e4`, chain 10)
-- V2 SinkGauge (`0x3b59a6...ecd367`, chain 10)
-- V2 SinkGaugeFactory (`0xe62b4b...e9e5a2`, chain 10)
-- V2 SinkPool (`0x333030...1c2b88`, chain 10)
-- V2 SinkPoolFactory (`0xd173b8...069091`, chain 10)
-- V2 VotingRewardsFactory (`0x756e7c...ada8ec`, chain 10)
-- Velo (`0x9560e8...1088db`, chain 10)
+- Minter (`0x6dc9e1c04ee59ed3531d73a72256c0da46d10982`, chain 10)
+- RewardsDistributor (`0x9d4736ec60715e71afe72973f7885dcbc21ea99b`, chain 10)
+- Superchain emergencyCouncil (`0xf7a15f27533c2db26341220c1e0b939b56defeda`, chain 10)
+- Superchain leafFeeModule (`0x81c5d01ae474040a59d0092a6973f4621e06b362`, chain 130)
+- Superchain leafFeeModule (`0xc60a684e00f2aec11603348a615cb2b454b62e31`, chain 252)
+- Superchain leafFeeModule (`0x44536f7694d2d2f843437aded8d95525f797a06b`, chain 1135)
+- Superchain leafFeeModule (`0x81c5d01ae474040a59d0092a6973f4621e06b362`, chain 1750)
+- Superchain leafFeeModule (`0x81c5d01ae474040a59d0092a6973f4621e06b362`, chain 1868)
+- Superchain leafFeeModule (`0x81c5d01ae474040a59d0092a6973f4621e06b362`, chain 1923)
+- Superchain leafFeeModule (`0x81c5d01ae474040a59d0092a6973f4621e06b362`, chain 5330)
+- Superchain leafFeeModule (`0x81c5d01ae474040a59d0092a6973f4621e06b362`, chain 57073)
+- Superchain leafGaugeFactory (`0x42e403b73898320f23109708b0ba1ae85838c445`, chain 130)
+- Superchain leafGaugeFactory (`0x42e403b73898320f23109708b0ba1ae85838c445`, chain 252)
+- Superchain leafGaugeFactory (`0x42e403b73898320f23109708b0ba1ae85838c445`, chain 1135)
+- Superchain leafGaugeFactory (`0x42e403b73898320f23109708b0ba1ae85838c445`, chain 1750)
+- Superchain leafGaugeFactory (`0x42e403b73898320f23109708b0ba1ae85838c445`, chain 1868)
+- Superchain leafGaugeFactory (`0x42e403b73898320f23109708b0ba1ae85838c445`, chain 1923)
+- Superchain leafGaugeFactory (`0x42e403b73898320f23109708b0ba1ae85838c445`, chain 5330)
+- Superchain leafGaugeFactory (`0x42e403b73898320f23109708b0ba1ae85838c445`, chain 34443)
+- Superchain leafGaugeFactory (`0x42e403b73898320f23109708b0ba1ae85838c445`, chain 42220)
+- Superchain leafGaugeFactory (`0x42e403b73898320f23109708b0ba1ae85838c445`, chain 57073)
+- Superchain leafMessageBridge (`0xf278761576f45472bdd721eaca19317ce159c011`, chain 130)
+- Superchain leafMessageBridge (`0xf278761576f45472bdd721eaca19317ce159c011`, chain 252)
+- Superchain leafMessageBridge (`0xf278761576f45472bdd721eaca19317ce159c011`, chain 1135)
+- Superchain leafMessageBridge (`0xf278761576f45472bdd721eaca19317ce159c011`, chain 1750)
+- Superchain leafMessageBridge (`0xf278761576f45472bdd721eaca19317ce159c011`, chain 1868)
+- Superchain leafMessageBridge (`0xf278761576f45472bdd721eaca19317ce159c011`, chain 1923)
+- Superchain leafMessageBridge (`0xf278761576f45472bdd721eaca19317ce159c011`, chain 5330)
+- Superchain leafMessageBridge (`0xf278761576f45472bdd721eaca19317ce159c011`, chain 34443)
+- Superchain leafMessageBridge (`0xf278761576f45472bdd721eaca19317ce159c011`, chain 42220)
+- Superchain leafMessageBridge (`0xf278761576f45472bdd721eaca19317ce159c011`, chain 57073)
+- Superchain leafMessageModule (`0x2bba7515f7cf114b45186274981888d8c2fba15e`, chain 130)
+- Superchain leafMessageModule (`0x2bba7515f7cf114b45186274981888d8c2fba15e`, chain 252)
+- Superchain leafMessageModule (`0xf385603a12be8b7b885222329c581fdd1c30071d`, chain 1135)
+- Superchain leafMessageModule (`0x2bba7515f7cf114b45186274981888d8c2fba15e`, chain 1750)
+- Superchain leafMessageModule (`0x2bba7515f7cf114b45186274981888d8c2fba15e`, chain 1868)
+- Superchain leafMessageModule (`0x2bba7515f7cf114b45186274981888d8c2fba15e`, chain 1923)
+- Superchain leafMessageModule (`0x2bba7515f7cf114b45186274981888d8c2fba15e`, chain 5330)
+- Superchain leafMessageModule (`0x2bba7515f7cf114b45186274981888d8c2fba15e`, chain 34443)
+- Superchain leafMessageModule (`0x2bba7515f7cf114b45186274981888d8c2fba15e`, chain 42220)
+- Superchain leafMessageModule (`0x2bba7515f7cf114b45186274981888d8c2fba15e`, chain 57073)
+- Superchain leafPoolFactory (`0x31832f2a97fd20664d76cc421207669b55ce4bc0`, chain 130)
+- Superchain leafPoolFactory (`0x31832f2a97fd20664d76cc421207669b55ce4bc0`, chain 252)
+- Superchain leafPoolFactory (`0x31832f2a97fd20664d76cc421207669b55ce4bc0`, chain 1135)
+- Superchain leafPoolFactory (`0x31832f2a97fd20664d76cc421207669b55ce4bc0`, chain 1750)
+- Superchain leafPoolFactory (`0x31832f2a97fd20664d76cc421207669b55ce4bc0`, chain 1868)
+- Superchain leafPoolFactory (`0x31832f2a97fd20664d76cc421207669b55ce4bc0`, chain 1923)
+- Superchain leafPoolFactory (`0x31832f2a97fd20664d76cc421207669b55ce4bc0`, chain 5330)
+- Superchain leafPoolFactory (`0x31832f2a97fd20664d76cc421207669b55ce4bc0`, chain 34443)
+- Superchain leafPoolFactory (`0x31832f2a97fd20664d76cc421207669b55ce4bc0`, chain 42220)
+- Superchain leafPoolFactory (`0x31832f2a97fd20664d76cc421207669b55ce4bc0`, chain 57073)
+- Superchain leafPoolFactory (`0x31832f2a97fd20664d76cc421207669b55ce4bc0`, chain 60808)
+- Superchain leafPoolImplementation (`0x10499d88bd32af443fc936f67de32be1c8bb374c`, chain 130)
+- Superchain leafPoolImplementation (`0x10499d88bd32af443fc936f67de32be1c8bb374c`, chain 252)
+- Superchain leafPoolImplementation (`0x10499d88bd32af443fc936f67de32be1c8bb374c`, chain 1135)
+- Superchain leafPoolImplementation (`0x10499d88bd32af443fc936f67de32be1c8bb374c`, chain 1750)
+- Superchain leafPoolImplementation (`0x10499d88bd32af443fc936f67de32be1c8bb374c`, chain 1868)
+- Superchain leafPoolImplementation (`0x10499d88bd32af443fc936f67de32be1c8bb374c`, chain 1923)
+- Superchain leafPoolImplementation (`0x10499d88bd32af443fc936f67de32be1c8bb374c`, chain 5330)
+- Superchain leafPoolImplementation (`0x10499d88bd32af443fc936f67de32be1c8bb374c`, chain 34443)
+- Superchain leafPoolImplementation (`0x10499d88bd32af443fc936f67de32be1c8bb374c`, chain 42220)
+- Superchain leafPoolImplementation (`0x10499d88bd32af443fc936f67de32be1c8bb374c`, chain 57073)
+- Superchain leafPoolImplementation (`0x10499d88bd32af443fc936f67de32be1c8bb374c`, chain 60808)
+- Superchain leafRestrictedRewardToken (`0xafcc6ae807187a31e84138f3860d4ce27973e01b`, chain 130)
+- Superchain leafRestrictedRewardToken (`0xafcc6ae807187a31e84138f3860d4ce27973e01b`, chain 252)
+- Superchain leafRestrictedRewardToken (`0xafcc6ae807187a31e84138f3860d4ce27973e01b`, chain 1135)
+- Superchain leafRestrictedRewardToken (`0xafcc6ae807187a31e84138f3860d4ce27973e01b`, chain 1750)
+- Superchain leafRestrictedRewardToken (`0xafcc6ae807187a31e84138f3860d4ce27973e01b`, chain 1868)
+- Superchain leafRestrictedRewardToken (`0xafcc6ae807187a31e84138f3860d4ce27973e01b`, chain 1923)
+- Superchain leafRestrictedRewardToken (`0xafcc6ae807187a31e84138f3860d4ce27973e01b`, chain 5330)
+- Superchain leafRestrictedRewardToken (`0xafcc6ae807187a31e84138f3860d4ce27973e01b`, chain 8453)
+- Superchain leafRestrictedRewardToken (`0xafcc6ae807187a31e84138f3860d4ce27973e01b`, chain 34443)
+- Superchain leafRestrictedRewardToken (`0xafcc6ae807187a31e84138f3860d4ce27973e01b`, chain 42220)
+- Superchain leafRestrictedRewardToken (`0xafcc6ae807187a31e84138f3860d4ce27973e01b`, chain 57073)
+- Superchain leafRestrictedTokenBridge (`0xac6a6080e002d2803959242c0fe10050c482d214`, chain 130)
+- Superchain leafRestrictedTokenBridge (`0xac6a6080e002d2803959242c0fe10050c482d214`, chain 252)
+- Superchain leafRestrictedTokenBridge (`0xac6a6080e002d2803959242c0fe10050c482d214`, chain 1135)
+- Superchain leafRestrictedTokenBridge (`0xac6a6080e002d2803959242c0fe10050c482d214`, chain 1750)
+- Superchain leafRestrictedTokenBridge (`0xac6a6080e002d2803959242c0fe10050c482d214`, chain 1868)
+- Superchain leafRestrictedTokenBridge (`0xac6a6080e002d2803959242c0fe10050c482d214`, chain 1923)
+- Superchain leafRestrictedTokenBridge (`0xac6a6080e002d2803959242c0fe10050c482d214`, chain 5330)
+- Superchain leafRestrictedTokenBridge (`0xac6a6080e002d2803959242c0fe10050c482d214`, chain 8453)
+- Superchain leafRestrictedTokenBridge (`0xac6a6080e002d2803959242c0fe10050c482d214`, chain 34443)
+- Superchain leafRestrictedTokenBridge (`0xac6a6080e002d2803959242c0fe10050c482d214`, chain 42220)
+- Superchain leafRestrictedTokenBridge (`0xac6a6080e002d2803959242c0fe10050c482d214`, chain 57073)
+- Superchain leafRestrictedXFactory (`0x00a3767687699c65878655b62e565453bdc75fb1`, chain 130)
+- Superchain leafRestrictedXFactory (`0x00a3767687699c65878655b62e565453bdc75fb1`, chain 252)
+- Superchain leafRestrictedXFactory (`0x00a3767687699c65878655b62e565453bdc75fb1`, chain 1135)
+- Superchain leafRestrictedXFactory (`0x00a3767687699c65878655b62e565453bdc75fb1`, chain 1750)
+- Superchain leafRestrictedXFactory (`0x00a3767687699c65878655b62e565453bdc75fb1`, chain 1868)
+- Superchain leafRestrictedXFactory (`0x00a3767687699c65878655b62e565453bdc75fb1`, chain 1923)
+- Superchain leafRestrictedXFactory (`0x00a3767687699c65878655b62e565453bdc75fb1`, chain 5330)
+- Superchain leafRestrictedXFactory (`0x00a3767687699c65878655b62e565453bdc75fb1`, chain 8453)
+- Superchain leafRestrictedXFactory (`0x00a3767687699c65878655b62e565453bdc75fb1`, chain 34443)
+- Superchain leafRestrictedXFactory (`0x00a3767687699c65878655b62e565453bdc75fb1`, chain 42220)
+- Superchain leafRestrictedXFactory (`0x00a3767687699c65878655b62e565453bdc75fb1`, chain 57073)
+- Superchain leafRouter (`0x3a63171dd9bebf4d07bc782fecc7eb0b890c2a45`, chain 130)
+- Superchain leafRouter (`0x3a63171dd9bebf4d07bc782fecc7eb0b890c2a45`, chain 252)
+- Superchain leafRouter (`0x3a63171dd9bebf4d07bc782fecc7eb0b890c2a45`, chain 1135)
+- Superchain leafRouter (`0x3a63171dd9bebf4d07bc782fecc7eb0b890c2a45`, chain 1750)
+- Superchain leafRouter (`0x3a63171dd9bebf4d07bc782fecc7eb0b890c2a45`, chain 1868)
+- Superchain leafRouter (`0x3a63171dd9bebf4d07bc782fecc7eb0b890c2a45`, chain 1923)
+- Superchain leafRouter (`0x3a63171dd9bebf4d07bc782fecc7eb0b890c2a45`, chain 5330)
+- Superchain leafRouter (`0x3a63171dd9bebf4d07bc782fecc7eb0b890c2a45`, chain 34443)
+- Superchain leafRouter (`0x3a63171dd9bebf4d07bc782fecc7eb0b890c2a45`, chain 42220)
+- Superchain leafRouter (`0x3a63171dd9bebf4d07bc782fecc7eb0b890c2a45`, chain 57073)
+- Superchain leafRouter (`0x3a63171dd9bebf4d07bc782fecc7eb0b890c2a45`, chain 60808)
+- Superchain leafTokenBridge (`0x1a9d17828897d6289c6dff9dc9f5cc3baea17814`, chain 130)
+- Superchain leafTokenBridge (`0x1a9d17828897d6289c6dff9dc9f5cc3baea17814`, chain 252)
+- Superchain leafTokenBridge (`0x1a9d17828897d6289c6dff9dc9f5cc3baea17814`, chain 1135)
+- Superchain leafTokenBridge (`0x1a9d17828897d6289c6dff9dc9f5cc3baea17814`, chain 1750)
+- Superchain leafTokenBridge (`0x1a9d17828897d6289c6dff9dc9f5cc3baea17814`, chain 1868)
+- Superchain leafTokenBridge (`0x1a9d17828897d6289c6dff9dc9f5cc3baea17814`, chain 1923)
+- Superchain leafTokenBridge (`0x1a9d17828897d6289c6dff9dc9f5cc3baea17814`, chain 5330)
+- Superchain leafTokenBridge (`0x1a9d17828897d6289c6dff9dc9f5cc3baea17814`, chain 34443)
+- Superchain leafTokenBridge (`0x1a9d17828897d6289c6dff9dc9f5cc3baea17814`, chain 42220)
+- Superchain leafTokenBridge (`0x1a9d17828897d6289c6dff9dc9f5cc3baea17814`, chain 57073)
+- Superchain leafVoter (`0x97cdbce21b6fd0585d29e539b1b99dad328a1123`, chain 130)
+- Superchain leafVoter (`0x97cdbce21b6fd0585d29e539b1b99dad328a1123`, chain 252)
+- Superchain leafVoter (`0x97cdbce21b6fd0585d29e539b1b99dad328a1123`, chain 1135)
+- Superchain leafVoter (`0x97cdbce21b6fd0585d29e539b1b99dad328a1123`, chain 1750)
+- Superchain leafVoter (`0x97cdbce21b6fd0585d29e539b1b99dad328a1123`, chain 1868)
+- Superchain leafVoter (`0x97cdbce21b6fd0585d29e539b1b99dad328a1123`, chain 1923)
+- Superchain leafVoter (`0x97cdbce21b6fd0585d29e539b1b99dad328a1123`, chain 5330)
+- Superchain leafVoter (`0x97cdbce21b6fd0585d29e539b1b99dad328a1123`, chain 34443)
+- Superchain leafVoter (`0x97cdbce21b6fd0585d29e539b1b99dad328a1123`, chain 42220)
+- Superchain leafVoter (`0x97cdbce21b6fd0585d29e539b1b99dad328a1123`, chain 57073)
+- Superchain leafVotingRewardsFactory (`0x7dc9fd82f91b36f416a89f5478375e4a79f4fb2f`, chain 130)
+- Superchain leafVotingRewardsFactory (`0x7dc9fd82f91b36f416a89f5478375e4a79f4fb2f`, chain 252)
+- Superchain leafVotingRewardsFactory (`0x7dc9fd82f91b36f416a89f5478375e4a79f4fb2f`, chain 1135)
+- Superchain leafVotingRewardsFactory (`0x7dc9fd82f91b36f416a89f5478375e4a79f4fb2f`, chain 1750)
+- Superchain leafVotingRewardsFactory (`0x7dc9fd82f91b36f416a89f5478375e4a79f4fb2f`, chain 1868)
+- Superchain leafVotingRewardsFactory (`0x7dc9fd82f91b36f416a89f5478375e4a79f4fb2f`, chain 1923)
+- Superchain leafVotingRewardsFactory (`0x7dc9fd82f91b36f416a89f5478375e4a79f4fb2f`, chain 5330)
+- Superchain leafVotingRewardsFactory (`0x7dc9fd82f91b36f416a89f5478375e4a79f4fb2f`, chain 34443)
+- Superchain leafVotingRewardsFactory (`0x7dc9fd82f91b36f416a89f5478375e4a79f4fb2f`, chain 42220)
+- Superchain leafVotingRewardsFactory (`0x7dc9fd82f91b36f416a89f5478375e4a79f4fb2f`, chain 57073)
+- Superchain leafXFactory (`0x73cae4450f11f4a33a49c880ce3e8e56a9294b31`, chain 130)
+- Superchain leafXFactory (`0x73cae4450f11f4a33a49c880ce3e8e56a9294b31`, chain 252)
+- Superchain leafXFactory (`0x73cae4450f11f4a33a49c880ce3e8e56a9294b31`, chain 1135)
+- Superchain leafXFactory (`0x73cae4450f11f4a33a49c880ce3e8e56a9294b31`, chain 1750)
+- Superchain leafXFactory (`0x73cae4450f11f4a33a49c880ce3e8e56a9294b31`, chain 1868)
+- Superchain leafXFactory (`0x73cae4450f11f4a33a49c880ce3e8e56a9294b31`, chain 1923)
+- Superchain leafXFactory (`0x73cae4450f11f4a33a49c880ce3e8e56a9294b31`, chain 5330)
+- Superchain leafXFactory (`0x73cae4450f11f4a33a49c880ce3e8e56a9294b31`, chain 34443)
+- Superchain leafXFactory (`0x73cae4450f11f4a33a49c880ce3e8e56a9294b31`, chain 42220)
+- Superchain leafXFactory (`0x73cae4450f11f4a33a49c880ce3e8e56a9294b31`, chain 57073)
+- Superchain leafXVelo (`0x7f9adfbd38b669f03d1d11000bc76b9aaea28a81`, chain 130)
+- Superchain leafXVelo (`0x7f9adfbd38b669f03d1d11000bc76b9aaea28a81`, chain 252)
+- Superchain leafXVelo (`0x7f9adfbd38b669f03d1d11000bc76b9aaea28a81`, chain 1135)
+- Superchain leafXVelo (`0x7f9adfbd38b669f03d1d11000bc76b9aaea28a81`, chain 1750)
+- Superchain leafXVelo (`0x7f9adfbd38b669f03d1d11000bc76b9aaea28a81`, chain 1868)
+- Superchain leafXVelo (`0x7f9adfbd38b669f03d1d11000bc76b9aaea28a81`, chain 1923)
+- Superchain leafXVelo (`0x7f9adfbd38b669f03d1d11000bc76b9aaea28a81`, chain 5330)
+- Superchain leafXVelo (`0x7f9adfbd38b669f03d1d11000bc76b9aaea28a81`, chain 34443)
+- Superchain leafXVelo (`0x7f9adfbd38b669f03d1d11000bc76b9aaea28a81`, chain 42220)
+- Superchain leafXVelo (`0x7f9adfbd38b669f03d1d11000bc76b9aaea28a81`, chain 57073)
+- Superchain mixedRouteQuoter (`0x0f3887909c548c41eb8a6667a4b23fc6683ef8ba`, chain 60808)
+- Superchain rootGaugeFactory (`0x42e403b73898320f23109708b0ba1ae85838c445`, chain 10)
+- Superchain rootLockbox (`0x12b64df29590b4f0934070fac96e82e580d60232`, chain 10)
+- Superchain rootMessageBridge (`0xf278761576f45472bdd721eaca19317ce159c011`, chain 10)
+- Superchain rootMessageModule (`0x2bba7515f7cf114b45186274981888d8c2fba15e`, chain 10)
+- Superchain rootModuleVault (`0x916e0ad2d7e3f446a26b0333ca37a9e8972030c5`, chain 10)
+- Superchain rootPoolFactory (`0x31832f2a97fd20664d76cc421207669b55ce4bc0`, chain 10)
+- Superchain rootPoolImplementation (`0x10499d88bd32af443fc936f67de32be1c8bb374c`, chain 10)
+- Superchain rootRestrictedRewardLockbox (`0xb46cea3e5839914bcb7622841d6e3dfc1bd92313`, chain 10)
+- Superchain rootRestrictedRewardToken (`0xafcc6ae807187a31e84138f3860d4ce27973e01b`, chain 10)
+- Superchain rootRestrictedTokenBridge (`0xac6a6080e002d2803959242c0fe10050c482d214`, chain 10)
+- Superchain rootRestrictedTokenBridgeVault (`0xb9d32bf44a71bc0a383bd2061584e98a1e09c8d2`, chain 10)
+- Superchain rootRestrictedXFactory (`0x00a3767687699c65878655b62e565453bdc75fb1`, chain 10)
+- Superchain rootTokenBridge (`0x1a9d17828897d6289c6dff9dc9f5cc3baea17814`, chain 10)
+- Superchain rootTokenBridgeVault (`0x479bec910d4025b4ac440ec27acf28eac522242b`, chain 10)
+- Superchain rootVotingRewardsFactory (`0x7dc9fd82f91b36f416a89f5478375e4a79f4fb2f`, chain 10)
+- Superchain rootXFactory (`0x73cae4450f11f4a33a49c880ce3e8e56a9294b31`, chain 10)
+- Superchain rootXVelo (`0x7f9adfbd38b669f03d1d11000bc76b9aaea28a81`, chain 10)
+- Superchain stakingRewardsFactory (`0x8eb6838b4e998da08aab851f3d42076f21530389`, chain 60808)
+- Superchain stakingRewardsImplementation (`0x593d092bb28ccefe33bfdd3d9457e77bd3084271`, chain 60808)
+- Superchain tokenRegistry (`0x8d9c67488c154286b9d4ccac6c4cbf30589107a7`, chain 60808)
+- Superchain universalRouter (`0xc3f14f34ea43943e6fd677a2bdcea65882e67783`, chain 60808)
+- V2 ArtProxy (`0x4a9ea0dd5649ec4b6745c60d1769e2184c1782dd`, chain 10)
+- V2 FactoryRegistry (`0xf4c67cdeaab8360370f41514d06e32ccd8aa1d7b`, chain 10)
+- V2 Forwarder (`0x06824df38d1d77eadeb6bafcb03904e27429ab74`, chain 10)
+- V2 GaugeFactory (`0x8391fe399640e7228a059f8fa104b8a7b4835071`, chain 10)
+- V2 ManagedRewardsFactory (`0x3f468e35f5c262a6e796bfe3be831bf8b9142e9c`, chain 10)
+- V2 PoolFactory (`0xf1046053aa5682b4f9a81b5481394da16be5ff5a`, chain 10)
+- V2 SimpleEpochGovernor (`0x654eb9f7323718ef5fff6d420d08b8cdd8ee20e4`, chain 10)
+- V2 SinkGauge (`0x3b59a6b600f912260048a0f3a834c1039aecd367`, chain 10)
+- V2 SinkGaugeFactory (`0xe62b4bc24eb6446675a1cb3faca2339676e9e5a2`, chain 10)
+- V2 SinkPool (`0x333030a736b47d20346d82a473680658ac1c2b88`, chain 10)
+- V2 SinkPoolFactory (`0xd173b8d1a91ba0d434f393ad7a1680515a069091`, chain 10)
+- V2 VotingRewardsFactory (`0x756e7c245c69d351fffbfb88ba234aa395ada8ec`, chain 10)
+- Velo (`0x9560e827af36c94d2ac33a39bce1fe78631088db`, chain 10)
 
 ## Contract Surface Quality
 
@@ -316,107 +316,107 @@ Removals (removed from original):
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Minter | operational_periphery | project_anchor | own_supporting | 0 | optimism | unit-396422 | `0x6dc9e1...d10982` | ✅ Audited |
-| RewardsDistributor | operational_periphery | project_anchor | own_supporting | 0 | optimism | unit-396430 | `0x9d4736...1ea99b` | ✅ Audited |
-| Router | adapter | project_anchor | own_supporting | 0 | optimism | unit-396431 | `0xa062ae...8b2858` | ✅ Audited |
-| Velo | token | project_anchor | own_supporting | 0 | optimism | unit-396429 | `0x9560e8...1088db` | ✅ Audited |
-| Voter | unknown | project_anchor | own_supporting | 0 | optimism | unit-396417 | `0x41c914...5abf3c` | ✅ Audited |
-| VotingEscrow | operational_periphery | project_anchor | own_supporting | 0 | optimism | unit-396442 | `0xfaf8fd...06787d` | ✅ Audited |
+| Minter | operational_periphery | project_anchor | own_supporting | 0 | optimism | unit-396422 | `0x6dc9e1c04ee59ed3531d73a72256c0da46d10982` | ✅ Audited |
+| RewardsDistributor | operational_periphery | project_anchor | own_supporting | 0 | optimism | unit-396430 | `0x9d4736ec60715e71afe72973f7885dcbc21ea99b` | ✅ Audited |
+| Router | adapter | project_anchor | own_supporting | 0 | optimism | unit-396431 | `0xa062ae8a9c5e11aaa026fc2670b0d65ccc8b2858` | ✅ Audited |
+| Velo | token | project_anchor | own_supporting | 0 | optimism | unit-396429 | `0x9560e827af36c94d2ac33a39bce1fe78631088db` | ✅ Audited |
+| Voter | unknown | project_anchor | own_supporting | 0 | optimism | unit-396417 | `0x41c914ee0c7e1a5edcd0295623e6dc557b5abf3c` | ✅ Audited |
+| VotingEscrow | operational_periphery | project_anchor | own_supporting | 0 | optimism | unit-396442 | `0xfaf8fd17d9840595845582fcb047df13f006787d` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (90)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| CLFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xcc0bdd...1cd12f` | ⚠️ Unaudited |
-| CustomFeeModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x8d9c67...9107a7` | ⚠️ Unaudited |
-| CustomSwapFeeModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xbcae2d...89572e` | ⚠️ Unaudited |
-| CustomUnstakedFeeModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 2 deployments: celo `0x21fcc0...413b92`; celo `0xb8e41d...42d5c5` | ⚠️ Unaudited |
-| DynamicSwapFeeModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xfffee3...cb99b2` | ⚠️ Unaudited |
-| GnosisSafeL2 | governance | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | optimism | unit-396603 | `0x838352...ee2b3f` | ⚠️ Unaudited |
-| MixedRouteQuoterV1 | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xff79ec...b44722` | ⚠️ Unaudited |
-| NonfungiblePositionManager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0x416b43...dc6f29` | ⚠️ Unaudited |
-| NonfungiblePositionManager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0xbb5dfe...56adf4` | ⚠️ Unaudited |
-| QuoterV2 | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x89d821...621466` | ⚠️ Unaudited |
-| SinkManager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x5aee5f...abcdae` | ⚠️ Unaudited |
-| SlipstreamSugar | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 2 deployments: celo `0x928bb6...3f2be5`; celo `0xee03e0...153590` | ⚠️ Unaudited |
-| Superchain emergencyCouncil | unknown | project_anchor | own_supporting | 0 | optimism | unit-396441 | `0xf7a15f...defeda` | ⚠️ Unaudited |
-| Superchain leafFeeModule | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-396531 | `0xc60a68...b62e31` | ⚠️ Unaudited |
-| Superchain leafGaugeFactory | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-396524 | `0x42e403...38c445` | ⚠️ Unaudited |
-| Superchain leafGaugeFactory | unknown | project_anchor | own_supporting | 0 | mode | unit-396539 | `0x42e403...38c445` | ⚠️ Unaudited |
-| Superchain leafGaugeFactory | unknown | project_anchor | own_supporting | 0 | celo | unit-396553 | `0x42e403...38c445` | ⚠️ Unaudited |
-| Superchain leafMessageBridge | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-396532 | `0xf27876...59c011` | ⚠️ Unaudited |
-| Superchain leafMessageBridge | unknown | project_anchor | own_supporting | 0 | mode | unit-396546 | `0xf27876...59c011` | ⚠️ Unaudited |
-| Superchain leafMessageBridge | unknown | project_anchor | own_supporting | 0 | celo | unit-396561 | `0xf27876...59c011` | ⚠️ Unaudited |
-| Superchain leafMessageModule | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-396521 | `0x2bba75...fba15e` | ⚠️ Unaudited |
-| Superchain leafMessageModule | unknown | project_anchor | own_supporting | 0 | mode | unit-396536 | `0x2bba75...fba15e` | ⚠️ Unaudited |
-| Superchain leafMessageModule | unknown | project_anchor | own_supporting | 0 | celo | unit-396550 | `0x2bba75...fba15e` | ⚠️ Unaudited |
-| Superchain leafPoolFactory | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-396522 | `0x31832f...ce4bc0` | ⚠️ Unaudited |
-| Superchain leafPoolFactory | unknown | project_anchor | own_supporting | 0 | mode | unit-396537 | `0x31832f...ce4bc0` | ⚠️ Unaudited |
-| Superchain leafPoolFactory | unknown | project_anchor | own_supporting | 0 | celo | unit-396551 | `0x31832f...ce4bc0` | ⚠️ Unaudited |
-| Superchain leafPoolImplementation | unknown | project_anchor | own_supporting | 0 | unichain | unit-396459 | `0x10499d...bb374c` | ⚠️ Unaudited |
-| Superchain leafPoolImplementation | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-396519 | `0x10499d...bb374c` | ⚠️ Unaudited |
-| Superchain leafPoolImplementation | unknown | project_anchor | own_supporting | 0 | mode | unit-396534 | `0x10499d...bb374c` | ⚠️ Unaudited |
-| Superchain leafPoolImplementation | unknown | project_anchor | own_supporting | 0 | celo | unit-396548 | `0x10499d...bb374c` | ⚠️ Unaudited |
-| Superchain leafRestrictedRewardToken | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-396530 | `0xafcc6a...73e01b` | ⚠️ Unaudited |
-| Superchain leafRestrictedRewardToken | unknown | project_anchor | own_supporting | 0 | base | unit-396602 | `0xafcc6a...73e01b` | ⚠️ Unaudited |
-| Superchain leafRestrictedRewardToken | unknown | project_anchor | own_supporting | 0 | mode | unit-396545 | `0xafcc6a...73e01b` | ⚠️ Unaudited |
-| Superchain leafRestrictedRewardToken | unknown | project_anchor | own_supporting | 0 | celo | unit-396560 | `0xafcc6a...73e01b` | ⚠️ Unaudited |
-| Superchain leafRestrictedTokenBridge | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-396529 | `0xac6a60...82d214` | ⚠️ Unaudited |
-| Superchain leafRestrictedTokenBridge | unknown | project_anchor | own_supporting | 0 | base | unit-396601 | `0xac6a60...82d214` | ⚠️ Unaudited |
-| Superchain leafRestrictedTokenBridge | unknown | project_anchor | own_supporting | 0 | mode | unit-396544 | `0xac6a60...82d214` | ⚠️ Unaudited |
-| Superchain leafRestrictedTokenBridge | unknown | project_anchor | own_supporting | 0 | celo | unit-396559 | `0xac6a60...82d214` | ⚠️ Unaudited |
-| Superchain leafRestrictedXFactory | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-396518 | `0x00a376...c75fb1` | ⚠️ Unaudited |
-| Superchain leafRestrictedXFactory | unknown | project_anchor | own_supporting | 0 | base | unit-396600 | `0x00a376...c75fb1` | ⚠️ Unaudited |
-| Superchain leafRestrictedXFactory | unknown | project_anchor | own_supporting | 0 | mode | unit-396533 | `0x00a376...c75fb1` | ⚠️ Unaudited |
-| Superchain leafRestrictedXFactory | unknown | project_anchor | own_supporting | 0 | celo | unit-396547 | `0x00a376...c75fb1` | ⚠️ Unaudited |
-| Superchain leafRouter | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-396523 | `0x3a6317...0c2a45` | ⚠️ Unaudited |
-| Superchain leafRouter | unknown | project_anchor | own_supporting | 0 | mode | unit-396538 | `0x3a6317...0c2a45` | ⚠️ Unaudited |
-| Superchain leafRouter | unknown | project_anchor | own_supporting | 0 | celo | unit-396552 | `0x3a6317...0c2a45` | ⚠️ Unaudited |
-| Superchain leafTokenBridge | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-396520 | `0x1a9d17...a17814` | ⚠️ Unaudited |
-| Superchain leafTokenBridge | unknown | project_anchor | own_supporting | 0 | mode | unit-396535 | `0x1a9d17...a17814` | ⚠️ Unaudited |
-| Superchain leafTokenBridge | unknown | project_anchor | own_supporting | 0 | celo | unit-396549 | `0x1a9d17...a17814` | ⚠️ Unaudited |
-| Superchain leafVoter | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-396528 | `0x97cdbc...8a1123` | ⚠️ Unaudited |
-| Superchain leafVoter | unknown | project_anchor | own_supporting | 0 | mode | unit-396543 | `0x97cdbc...8a1123` | ⚠️ Unaudited |
-| Superchain leafVoter | unknown | project_anchor | own_supporting | 0 | celo | unit-396558 | `0x97cdbc...8a1123` | ⚠️ Unaudited |
-| Superchain leafVotingRewardsFactory | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-396526 | `0x7dc9fd...f4fb2f` | ⚠️ Unaudited |
-| Superchain leafVotingRewardsFactory | unknown | project_anchor | own_supporting | 0 | mode | unit-396541 | `0x7dc9fd...f4fb2f` | ⚠️ Unaudited |
-| Superchain leafVotingRewardsFactory | unknown | project_anchor | own_supporting | 0 | celo | unit-396555 | `0x7dc9fd...f4fb2f` | ⚠️ Unaudited |
-| Superchain leafXFactory | unknown | project_anchor | own_supporting | 0 | mode | unit-396540 | `0x73cae4...294b31` | ⚠️ Unaudited |
-| Superchain leafXFactory | unknown | project_anchor | own_supporting | 0 | celo | unit-396554 | `0x73cae4...294b31` | ⚠️ Unaudited |
-| Superchain leafXVelo | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-396527 | `0x7f9adf...a28a81` | ⚠️ Unaudited |
-| Superchain leafXVelo | unknown | project_anchor | own_supporting | 0 | mode | unit-396542 | `0x7f9adf...a28a81` | ⚠️ Unaudited |
-| Superchain leafXVelo | unknown | project_anchor | own_supporting | 0 | celo | unit-396556 | `0x7f9adf...a28a81` | ⚠️ Unaudited |
-| Superchain rootGaugeFactory | unknown | project_anchor | own_supporting | 0 | optimism | unit-396418 | `0x42e403...38c445` | ⚠️ Unaudited |
-| Superchain rootLockbox | unknown | project_anchor | own_supporting | 0 | optimism | unit-396410 | `0x12b64d...d60232` | ⚠️ Unaudited |
-| Superchain rootMessageBridge | unknown | project_anchor | own_supporting | 0 | optimism | unit-396439 | `0xf27876...59c011` | ⚠️ Unaudited |
-| Superchain rootMessageModule | unknown | project_anchor | own_supporting | 0 | optimism | unit-396412 | `0x2bba75...fba15e` | ⚠️ Unaudited |
-| Superchain rootModuleVault | unknown | project_anchor | own_supporting | 0 | optimism | unit-396428 | `0x916e0a...2030c5` | ⚠️ Unaudited |
-| Superchain rootPoolFactory | unknown | project_anchor | own_supporting | 0 | optimism | unit-396413 | `0x31832f...ce4bc0` | ⚠️ Unaudited |
-| Superchain rootPoolImplementation | unknown | project_anchor | own_supporting | 0 | optimism | unit-396409 | `0x10499d...bb374c` | ⚠️ Unaudited |
-| Superchain rootRestrictedRewardLockbox | unknown | project_anchor | own_supporting | 0 | optimism | unit-396434 | `0xb46cea...d92313` | ⚠️ Unaudited |
-| Superchain rootRestrictedRewardToken | unknown | project_anchor | own_supporting | 0 | optimism | unit-396433 | `0xafcc6a...73e01b` | ⚠️ Unaudited |
-| Superchain rootRestrictedTokenBridge | unknown | project_anchor | own_supporting | 0 | optimism | unit-396432 | `0xac6a60...82d214` | ⚠️ Unaudited |
-| Superchain rootRestrictedTokenBridgeVault | unknown | project_anchor | own_supporting | 0 | optimism | unit-396435 | `0xb9d32b...09c8d2` | ⚠️ Unaudited |
-| Superchain rootRestrictedXFactory | unknown | project_anchor | own_supporting | 0 | optimism | unit-396407 | `0x00a376...c75fb1` | ⚠️ Unaudited |
-| Superchain rootTokenBridge | unknown | project_anchor | own_supporting | 0 | optimism | unit-396411 | `0x1a9d17...a17814` | ⚠️ Unaudited |
-| Superchain rootTokenBridgeVault | unknown | project_anchor | own_supporting | 0 | optimism | unit-396419 | `0x479bec...22242b` | ⚠️ Unaudited |
-| Superchain rootVotingRewardsFactory | unknown | project_anchor | own_supporting | 0 | optimism | unit-396425 | `0x7dc9fd...f4fb2f` | ⚠️ Unaudited |
-| Superchain rootXVelo | unknown | project_anchor | own_supporting | 0 | optimism | unit-396426 | `0x7f9adf...a28a81` | ⚠️ Unaudited |
-| SwapRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x0792a6...cc9676` | ⚠️ Unaudited |
-| UniversalRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 2 deployments: optimism `0x4bf3e3...1142fc`; optimism `0xf132bd...3eb817` | ⚠️ Unaudited |
-| UnsupportedProtocol | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xefc371...d4518e` | ⚠️ Unaudited |
-| V2 ArtProxy | unknown | project_anchor | own_supporting | 0 | optimism | unit-396420 | `0x4a9ea0...1782dd` | ⚠️ Unaudited |
-| V2 FactoryRegistry | unknown | project_anchor | own_supporting | 0 | optimism | unit-396440 | `0xf4c67c...aa1d7b` | ⚠️ Unaudited |
-| V2 Forwarder | unknown | project_anchor | own_supporting | 0 | optimism | unit-396408 | `0x06824d...29ab74` | ⚠️ Unaudited |
-| V2 GaugeFactory | unknown | project_anchor | own_supporting | 0 | optimism | unit-396427 | `0x8391fe...835071` | ⚠️ Unaudited |
-| V2 ManagedRewardsFactory | unknown | project_anchor | own_supporting | 0 | optimism | unit-396416 | `0x3f468e...142e9c` | ⚠️ Unaudited |
-| V2 PoolFactory | unknown | project_anchor | own_supporting | 0 | optimism | unit-396438 | `0xf10460...e5ff5a` | ⚠️ Unaudited |
-| V2 SimpleEpochGovernor | unknown | project_anchor | own_supporting | 0 | optimism | unit-396421 | `0x654eb9...ee20e4` | ⚠️ Unaudited |
-| V2 SinkGauge | unknown | project_anchor | own_supporting | 0 | optimism | unit-396415 | `0x3b59a6...ecd367` | ⚠️ Unaudited |
-| V2 SinkGaugeFactory | unknown | project_anchor | own_supporting | 0 | optimism | unit-396437 | `0xe62b4b...e9e5a2` | ⚠️ Unaudited |
-| V2 SinkPool | unknown | project_anchor | own_supporting | 0 | optimism | unit-396414 | `0x333030...1c2b88` | ⚠️ Unaudited |
-| V2 SinkPoolFactory | unknown | project_anchor | own_supporting | 0 | optimism | unit-396436 | `0xd173b8...069091` | ⚠️ Unaudited |
-| V2 VotingRewardsFactory | unknown | project_anchor | own_supporting | 0 | optimism | unit-396424 | `0x756e7c...ada8ec` | ⚠️ Unaudited |
+| CLFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xcc0bddb707055e04e497ab22a59c2af4391cd12f` | ⚠️ Unaudited |
+| CustomFeeModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x8d9c67488c154286b9d4ccac6c4cbf30589107a7` | ⚠️ Unaudited |
+| CustomSwapFeeModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xbcae2d4b4e8e34a4100e69e9c73af8214a89572e` | ⚠️ Unaudited |
+| CustomUnstakedFeeModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 2 deployments: celo `0x21fcc0c421ae0a5f6919535ecf000688a0413b92`; celo `0xb8e41db4be1f6249cec64f48ce4349004442d5c5` | ⚠️ Unaudited |
+| DynamicSwapFeeModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xfffee309ea5bc4cc591cb37da50182d7a8cb99b2` | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | optimism | unit-396603 | `0x838352f4e3992187a33a04826273db3992ee2b3f` | ⚠️ Unaudited |
+| MixedRouteQuoterV1 | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xff79ec912ba114fd7989b9a2b90c65f0c1b44722` | ⚠️ Unaudited |
+| NonfungiblePositionManager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0x416b433906b1b72fa758e166e239c43d68dc6f29` | ⚠️ Unaudited |
+| NonfungiblePositionManager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0xbb5dfe1380333cee4c2eebd7202c80de2256adf4` | ⚠️ Unaudited |
+| QuoterV2 | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x89d8218ed5ff1e46d8dcd33fb0bbee3be1621466` | ⚠️ Unaudited |
+| SinkManager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x5aee5f0e6c2055ebd776db25f48f6c9a68abcdae` | ⚠️ Unaudited |
+| SlipstreamSugar | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 2 deployments: celo `0x928bb6c9097d5c9c1eb5e99e71e24e4d773f2be5`; celo `0xee03e08107755bc34412e78377b971ecc7153590` | ⚠️ Unaudited |
+| Superchain emergencyCouncil | unknown | project_anchor | own_supporting | 0 | optimism | unit-396441 | `0xf7a15f27533c2db26341220c1e0b939b56defeda` | ⚠️ Unaudited |
+| Superchain leafFeeModule | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-396531 | `0xc60a684e00f2aec11603348a615cb2b454b62e31` | ⚠️ Unaudited |
+| Superchain leafGaugeFactory | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-396524 | `0x42e403b73898320f23109708b0ba1ae85838c445` | ⚠️ Unaudited |
+| Superchain leafGaugeFactory | unknown | project_anchor | own_supporting | 0 | mode | unit-396539 | `0x42e403b73898320f23109708b0ba1ae85838c445` | ⚠️ Unaudited |
+| Superchain leafGaugeFactory | unknown | project_anchor | own_supporting | 0 | celo | unit-396553 | `0x42e403b73898320f23109708b0ba1ae85838c445` | ⚠️ Unaudited |
+| Superchain leafMessageBridge | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-396532 | `0xf278761576f45472bdd721eaca19317ce159c011` | ⚠️ Unaudited |
+| Superchain leafMessageBridge | unknown | project_anchor | own_supporting | 0 | mode | unit-396546 | `0xf278761576f45472bdd721eaca19317ce159c011` | ⚠️ Unaudited |
+| Superchain leafMessageBridge | unknown | project_anchor | own_supporting | 0 | celo | unit-396561 | `0xf278761576f45472bdd721eaca19317ce159c011` | ⚠️ Unaudited |
+| Superchain leafMessageModule | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-396521 | `0x2bba7515f7cf114b45186274981888d8c2fba15e` | ⚠️ Unaudited |
+| Superchain leafMessageModule | unknown | project_anchor | own_supporting | 0 | mode | unit-396536 | `0x2bba7515f7cf114b45186274981888d8c2fba15e` | ⚠️ Unaudited |
+| Superchain leafMessageModule | unknown | project_anchor | own_supporting | 0 | celo | unit-396550 | `0x2bba7515f7cf114b45186274981888d8c2fba15e` | ⚠️ Unaudited |
+| Superchain leafPoolFactory | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-396522 | `0x31832f2a97fd20664d76cc421207669b55ce4bc0` | ⚠️ Unaudited |
+| Superchain leafPoolFactory | unknown | project_anchor | own_supporting | 0 | mode | unit-396537 | `0x31832f2a97fd20664d76cc421207669b55ce4bc0` | ⚠️ Unaudited |
+| Superchain leafPoolFactory | unknown | project_anchor | own_supporting | 0 | celo | unit-396551 | `0x31832f2a97fd20664d76cc421207669b55ce4bc0` | ⚠️ Unaudited |
+| Superchain leafPoolImplementation | unknown | project_anchor | own_supporting | 0 | unichain | unit-396459 | `0x10499d88bd32af443fc936f67de32be1c8bb374c` | ⚠️ Unaudited |
+| Superchain leafPoolImplementation | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-396519 | `0x10499d88bd32af443fc936f67de32be1c8bb374c` | ⚠️ Unaudited |
+| Superchain leafPoolImplementation | unknown | project_anchor | own_supporting | 0 | mode | unit-396534 | `0x10499d88bd32af443fc936f67de32be1c8bb374c` | ⚠️ Unaudited |
+| Superchain leafPoolImplementation | unknown | project_anchor | own_supporting | 0 | celo | unit-396548 | `0x10499d88bd32af443fc936f67de32be1c8bb374c` | ⚠️ Unaudited |
+| Superchain leafRestrictedRewardToken | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-396530 | `0xafcc6ae807187a31e84138f3860d4ce27973e01b` | ⚠️ Unaudited |
+| Superchain leafRestrictedRewardToken | unknown | project_anchor | own_supporting | 0 | base | unit-396602 | `0xafcc6ae807187a31e84138f3860d4ce27973e01b` | ⚠️ Unaudited |
+| Superchain leafRestrictedRewardToken | unknown | project_anchor | own_supporting | 0 | mode | unit-396545 | `0xafcc6ae807187a31e84138f3860d4ce27973e01b` | ⚠️ Unaudited |
+| Superchain leafRestrictedRewardToken | unknown | project_anchor | own_supporting | 0 | celo | unit-396560 | `0xafcc6ae807187a31e84138f3860d4ce27973e01b` | ⚠️ Unaudited |
+| Superchain leafRestrictedTokenBridge | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-396529 | `0xac6a6080e002d2803959242c0fe10050c482d214` | ⚠️ Unaudited |
+| Superchain leafRestrictedTokenBridge | unknown | project_anchor | own_supporting | 0 | base | unit-396601 | `0xac6a6080e002d2803959242c0fe10050c482d214` | ⚠️ Unaudited |
+| Superchain leafRestrictedTokenBridge | unknown | project_anchor | own_supporting | 0 | mode | unit-396544 | `0xac6a6080e002d2803959242c0fe10050c482d214` | ⚠️ Unaudited |
+| Superchain leafRestrictedTokenBridge | unknown | project_anchor | own_supporting | 0 | celo | unit-396559 | `0xac6a6080e002d2803959242c0fe10050c482d214` | ⚠️ Unaudited |
+| Superchain leafRestrictedXFactory | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-396518 | `0x00a3767687699c65878655b62e565453bdc75fb1` | ⚠️ Unaudited |
+| Superchain leafRestrictedXFactory | unknown | project_anchor | own_supporting | 0 | base | unit-396600 | `0x00a3767687699c65878655b62e565453bdc75fb1` | ⚠️ Unaudited |
+| Superchain leafRestrictedXFactory | unknown | project_anchor | own_supporting | 0 | mode | unit-396533 | `0x00a3767687699c65878655b62e565453bdc75fb1` | ⚠️ Unaudited |
+| Superchain leafRestrictedXFactory | unknown | project_anchor | own_supporting | 0 | celo | unit-396547 | `0x00a3767687699c65878655b62e565453bdc75fb1` | ⚠️ Unaudited |
+| Superchain leafRouter | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-396523 | `0x3a63171dd9bebf4d07bc782fecc7eb0b890c2a45` | ⚠️ Unaudited |
+| Superchain leafRouter | unknown | project_anchor | own_supporting | 0 | mode | unit-396538 | `0x3a63171dd9bebf4d07bc782fecc7eb0b890c2a45` | ⚠️ Unaudited |
+| Superchain leafRouter | unknown | project_anchor | own_supporting | 0 | celo | unit-396552 | `0x3a63171dd9bebf4d07bc782fecc7eb0b890c2a45` | ⚠️ Unaudited |
+| Superchain leafTokenBridge | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-396520 | `0x1a9d17828897d6289c6dff9dc9f5cc3baea17814` | ⚠️ Unaudited |
+| Superchain leafTokenBridge | unknown | project_anchor | own_supporting | 0 | mode | unit-396535 | `0x1a9d17828897d6289c6dff9dc9f5cc3baea17814` | ⚠️ Unaudited |
+| Superchain leafTokenBridge | unknown | project_anchor | own_supporting | 0 | celo | unit-396549 | `0x1a9d17828897d6289c6dff9dc9f5cc3baea17814` | ⚠️ Unaudited |
+| Superchain leafVoter | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-396528 | `0x97cdbce21b6fd0585d29e539b1b99dad328a1123` | ⚠️ Unaudited |
+| Superchain leafVoter | unknown | project_anchor | own_supporting | 0 | mode | unit-396543 | `0x97cdbce21b6fd0585d29e539b1b99dad328a1123` | ⚠️ Unaudited |
+| Superchain leafVoter | unknown | project_anchor | own_supporting | 0 | celo | unit-396558 | `0x97cdbce21b6fd0585d29e539b1b99dad328a1123` | ⚠️ Unaudited |
+| Superchain leafVotingRewardsFactory | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-396526 | `0x7dc9fd82f91b36f416a89f5478375e4a79f4fb2f` | ⚠️ Unaudited |
+| Superchain leafVotingRewardsFactory | unknown | project_anchor | own_supporting | 0 | mode | unit-396541 | `0x7dc9fd82f91b36f416a89f5478375e4a79f4fb2f` | ⚠️ Unaudited |
+| Superchain leafVotingRewardsFactory | unknown | project_anchor | own_supporting | 0 | celo | unit-396555 | `0x7dc9fd82f91b36f416a89f5478375e4a79f4fb2f` | ⚠️ Unaudited |
+| Superchain leafXFactory | unknown | project_anchor | own_supporting | 0 | mode | unit-396540 | `0x73cae4450f11f4a33a49c880ce3e8e56a9294b31` | ⚠️ Unaudited |
+| Superchain leafXFactory | unknown | project_anchor | own_supporting | 0 | celo | unit-396554 | `0x73cae4450f11f4a33a49c880ce3e8e56a9294b31` | ⚠️ Unaudited |
+| Superchain leafXVelo | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-396527 | `0x7f9adfbd38b669f03d1d11000bc76b9aaea28a81` | ⚠️ Unaudited |
+| Superchain leafXVelo | unknown | project_anchor | own_supporting | 0 | mode | unit-396542 | `0x7f9adfbd38b669f03d1d11000bc76b9aaea28a81` | ⚠️ Unaudited |
+| Superchain leafXVelo | unknown | project_anchor | own_supporting | 0 | celo | unit-396556 | `0x7f9adfbd38b669f03d1d11000bc76b9aaea28a81` | ⚠️ Unaudited |
+| Superchain rootGaugeFactory | unknown | project_anchor | own_supporting | 0 | optimism | unit-396418 | `0x42e403b73898320f23109708b0ba1ae85838c445` | ⚠️ Unaudited |
+| Superchain rootLockbox | unknown | project_anchor | own_supporting | 0 | optimism | unit-396410 | `0x12b64df29590b4f0934070fac96e82e580d60232` | ⚠️ Unaudited |
+| Superchain rootMessageBridge | unknown | project_anchor | own_supporting | 0 | optimism | unit-396439 | `0xf278761576f45472bdd721eaca19317ce159c011` | ⚠️ Unaudited |
+| Superchain rootMessageModule | unknown | project_anchor | own_supporting | 0 | optimism | unit-396412 | `0x2bba7515f7cf114b45186274981888d8c2fba15e` | ⚠️ Unaudited |
+| Superchain rootModuleVault | unknown | project_anchor | own_supporting | 0 | optimism | unit-396428 | `0x916e0ad2d7e3f446a26b0333ca37a9e8972030c5` | ⚠️ Unaudited |
+| Superchain rootPoolFactory | unknown | project_anchor | own_supporting | 0 | optimism | unit-396413 | `0x31832f2a97fd20664d76cc421207669b55ce4bc0` | ⚠️ Unaudited |
+| Superchain rootPoolImplementation | unknown | project_anchor | own_supporting | 0 | optimism | unit-396409 | `0x10499d88bd32af443fc936f67de32be1c8bb374c` | ⚠️ Unaudited |
+| Superchain rootRestrictedRewardLockbox | unknown | project_anchor | own_supporting | 0 | optimism | unit-396434 | `0xb46cea3e5839914bcb7622841d6e3dfc1bd92313` | ⚠️ Unaudited |
+| Superchain rootRestrictedRewardToken | unknown | project_anchor | own_supporting | 0 | optimism | unit-396433 | `0xafcc6ae807187a31e84138f3860d4ce27973e01b` | ⚠️ Unaudited |
+| Superchain rootRestrictedTokenBridge | unknown | project_anchor | own_supporting | 0 | optimism | unit-396432 | `0xac6a6080e002d2803959242c0fe10050c482d214` | ⚠️ Unaudited |
+| Superchain rootRestrictedTokenBridgeVault | unknown | project_anchor | own_supporting | 0 | optimism | unit-396435 | `0xb9d32bf44a71bc0a383bd2061584e98a1e09c8d2` | ⚠️ Unaudited |
+| Superchain rootRestrictedXFactory | unknown | project_anchor | own_supporting | 0 | optimism | unit-396407 | `0x00a3767687699c65878655b62e565453bdc75fb1` | ⚠️ Unaudited |
+| Superchain rootTokenBridge | unknown | project_anchor | own_supporting | 0 | optimism | unit-396411 | `0x1a9d17828897d6289c6dff9dc9f5cc3baea17814` | ⚠️ Unaudited |
+| Superchain rootTokenBridgeVault | unknown | project_anchor | own_supporting | 0 | optimism | unit-396419 | `0x479bec910d4025b4ac440ec27acf28eac522242b` | ⚠️ Unaudited |
+| Superchain rootVotingRewardsFactory | unknown | project_anchor | own_supporting | 0 | optimism | unit-396425 | `0x7dc9fd82f91b36f416a89f5478375e4a79f4fb2f` | ⚠️ Unaudited |
+| Superchain rootXVelo | unknown | project_anchor | own_supporting | 0 | optimism | unit-396426 | `0x7f9adfbd38b669f03d1d11000bc76b9aaea28a81` | ⚠️ Unaudited |
+| SwapRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x0792a633f0c19c351081cf4b211f68f79bcc9676` | ⚠️ Unaudited |
+| UniversalRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 2 deployments: optimism `0x4bf3e32de155359d1d75e8b474b66848221142fc`; optimism `0xf132bdb9573867cd72f2585c338b923f973eb817` | ⚠️ Unaudited |
+| UnsupportedProtocol | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xefc371c64f20a09ead02d5addd59a52dd3d4518e` | ⚠️ Unaudited |
+| V2 ArtProxy | unknown | project_anchor | own_supporting | 0 | optimism | unit-396420 | `0x4a9ea0dd5649ec4b6745c60d1769e2184c1782dd` | ⚠️ Unaudited |
+| V2 FactoryRegistry | unknown | project_anchor | own_supporting | 0 | optimism | unit-396440 | `0xf4c67cdeaab8360370f41514d06e32ccd8aa1d7b` | ⚠️ Unaudited |
+| V2 Forwarder | unknown | project_anchor | own_supporting | 0 | optimism | unit-396408 | `0x06824df38d1d77eadeb6bafcb03904e27429ab74` | ⚠️ Unaudited |
+| V2 GaugeFactory | unknown | project_anchor | own_supporting | 0 | optimism | unit-396427 | `0x8391fe399640e7228a059f8fa104b8a7b4835071` | ⚠️ Unaudited |
+| V2 ManagedRewardsFactory | unknown | project_anchor | own_supporting | 0 | optimism | unit-396416 | `0x3f468e35f5c262a6e796bfe3be831bf8b9142e9c` | ⚠️ Unaudited |
+| V2 PoolFactory | unknown | project_anchor | own_supporting | 0 | optimism | unit-396438 | `0xf1046053aa5682b4f9a81b5481394da16be5ff5a` | ⚠️ Unaudited |
+| V2 SimpleEpochGovernor | unknown | project_anchor | own_supporting | 0 | optimism | unit-396421 | `0x654eb9f7323718ef5fff6d420d08b8cdd8ee20e4` | ⚠️ Unaudited |
+| V2 SinkGauge | unknown | project_anchor | own_supporting | 0 | optimism | unit-396415 | `0x3b59a6b600f912260048a0f3a834c1039aecd367` | ⚠️ Unaudited |
+| V2 SinkGaugeFactory | unknown | project_anchor | own_supporting | 0 | optimism | unit-396437 | `0xe62b4bc24eb6446675a1cb3faca2339676e9e5a2` | ⚠️ Unaudited |
+| V2 SinkPool | unknown | project_anchor | own_supporting | 0 | optimism | unit-396414 | `0x333030a736b47d20346d82a473680658ac1c2b88` | ⚠️ Unaudited |
+| V2 SinkPoolFactory | unknown | project_anchor | own_supporting | 0 | optimism | unit-396436 | `0xd173b8d1a91ba0d434f393ad7a1680515a069091` | ⚠️ Unaudited |
+| V2 VotingRewardsFactory | unknown | project_anchor | own_supporting | 0 | optimism | unit-396424 | `0x756e7c245c69d351fffbfb88ba234aa395ada8ec` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -436,120 +436,120 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Superchain leafFeeModule | unknown | project_anchor | own_supporting | 0 | unichain | unit-396468 | `0x81c5d0...06b362` | ❓ Unverified |
-| Superchain leafFeeModule | unknown | project_anchor | own_supporting | 0 | lisk | unit-396449 | `0x44536f...97a06b` | ❓ Unverified |
-| Superchain leafFeeModule | unknown | project_anchor | own_supporting | 0 | metal-l2 | unit-396483 | `0x81c5d0...06b362` | ❓ Unverified |
-| Superchain leafFeeModule | unknown | project_anchor | own_supporting | 0 | soneium | unit-396498 | `0x81c5d0...06b362` | ❓ Unverified |
-| Superchain leafFeeModule | unknown | project_anchor | own_supporting | 0 | swellchain | unit-396513 | `0x81c5d0...06b362` | ❓ Unverified |
-| Superchain leafFeeModule | unknown | project_anchor | own_supporting | 0 | superseed | unit-396572 | `0x81c5d0...06b362` | ❓ Unverified |
-| Superchain leafFeeModule | unknown | project_anchor | own_supporting | 0 | ink | unit-396587 | `0x81c5d0...06b362` | ❓ Unverified |
-| Superchain leafGaugeFactory | unknown | project_anchor | own_supporting | 0 | unichain | unit-396464 | `0x42e403...38c445` | ❓ Unverified |
-| Superchain leafGaugeFactory | unknown | project_anchor | own_supporting | 0 | lisk | unit-396448 | `0x42e403...38c445` | ❓ Unverified |
-| Superchain leafGaugeFactory | unknown | project_anchor | own_supporting | 0 | metal-l2 | unit-396479 | `0x42e403...38c445` | ❓ Unverified |
-| Superchain leafGaugeFactory | unknown | project_anchor | own_supporting | 0 | soneium | unit-396494 | `0x42e403...38c445` | ❓ Unverified |
-| Superchain leafGaugeFactory | unknown | project_anchor | own_supporting | 0 | swellchain | unit-396509 | `0x42e403...38c445` | ❓ Unverified |
-| Superchain leafGaugeFactory | unknown | project_anchor | own_supporting | 0 | superseed | unit-396568 | `0x42e403...38c445` | ❓ Unverified |
-| Superchain leafGaugeFactory | unknown | project_anchor | own_supporting | 0 | ink | unit-396583 | `0x42e403...38c445` | ❓ Unverified |
-| Superchain leafMessageBridge | unknown | project_anchor | own_supporting | 0 | unichain | unit-396472 | `0xf27876...59c011` | ❓ Unverified |
-| Superchain leafMessageBridge | unknown | project_anchor | own_supporting | 0 | lisk | unit-396456 | `0xf27876...59c011` | ❓ Unverified |
-| Superchain leafMessageBridge | unknown | project_anchor | own_supporting | 0 | metal-l2 | unit-396487 | `0xf27876...59c011` | ❓ Unverified |
-| Superchain leafMessageBridge | unknown | project_anchor | own_supporting | 0 | soneium | unit-396502 | `0xf27876...59c011` | ❓ Unverified |
-| Superchain leafMessageBridge | unknown | project_anchor | own_supporting | 0 | swellchain | unit-396517 | `0xf27876...59c011` | ❓ Unverified |
-| Superchain leafMessageBridge | unknown | project_anchor | own_supporting | 0 | superseed | unit-396576 | `0xf27876...59c011` | ❓ Unverified |
-| Superchain leafMessageBridge | unknown | project_anchor | own_supporting | 0 | ink | unit-396591 | `0xf27876...59c011` | ❓ Unverified |
-| Superchain leafMessageModule | unknown | project_anchor | own_supporting | 0 | unichain | unit-396461 | `0x2bba75...fba15e` | ❓ Unverified |
-| Superchain leafMessageModule | unknown | project_anchor | own_supporting | 0 | lisk | unit-396457 | `0xf38560...30071d` | ❓ Unverified |
-| Superchain leafMessageModule | unknown | project_anchor | own_supporting | 0 | metal-l2 | unit-396476 | `0x2bba75...fba15e` | ❓ Unverified |
-| Superchain leafMessageModule | unknown | project_anchor | own_supporting | 0 | soneium | unit-396491 | `0x2bba75...fba15e` | ❓ Unverified |
-| Superchain leafMessageModule | unknown | project_anchor | own_supporting | 0 | swellchain | unit-396506 | `0x2bba75...fba15e` | ❓ Unverified |
-| Superchain leafMessageModule | unknown | project_anchor | own_supporting | 0 | superseed | unit-396565 | `0x2bba75...fba15e` | ❓ Unverified |
-| Superchain leafMessageModule | unknown | project_anchor | own_supporting | 0 | ink | unit-396580 | `0x2bba75...fba15e` | ❓ Unverified |
-| Superchain leafPoolFactory | unknown | project_anchor | own_supporting | 0 | unichain | unit-396462 | `0x31832f...ce4bc0` | ❓ Unverified |
-| Superchain leafPoolFactory | unknown | project_anchor | own_supporting | 0 | lisk | unit-396446 | `0x31832f...ce4bc0` | ❓ Unverified |
-| Superchain leafPoolFactory | unknown | project_anchor | own_supporting | 0 | metal-l2 | unit-396477 | `0x31832f...ce4bc0` | ❓ Unverified |
-| Superchain leafPoolFactory | unknown | project_anchor | own_supporting | 0 | soneium | unit-396492 | `0x31832f...ce4bc0` | ❓ Unverified |
-| Superchain leafPoolFactory | unknown | project_anchor | own_supporting | 0 | swellchain | unit-396507 | `0x31832f...ce4bc0` | ❓ Unverified |
-| Superchain leafPoolFactory | unknown | project_anchor | own_supporting | 0 | superseed | unit-396566 | `0x31832f...ce4bc0` | ❓ Unverified |
-| Superchain leafPoolFactory | unknown | project_anchor | own_supporting | 0 | ink | unit-396581 | `0x31832f...ce4bc0` | ❓ Unverified |
-| Superchain leafPoolFactory | unknown | project_anchor | own_supporting | 0 | bob | unit-396594 | `0x31832f...ce4bc0` | ❓ Unverified |
-| Superchain leafPoolImplementation | unknown | project_anchor | own_supporting | 0 | lisk | unit-396444 | `0x10499d...bb374c` | ❓ Unverified |
-| Superchain leafPoolImplementation | unknown | project_anchor | own_supporting | 0 | metal-l2 | unit-396474 | `0x10499d...bb374c` | ❓ Unverified |
-| Superchain leafPoolImplementation | unknown | project_anchor | own_supporting | 0 | soneium | unit-396489 | `0x10499d...bb374c` | ❓ Unverified |
-| Superchain leafPoolImplementation | unknown | project_anchor | own_supporting | 0 | swellchain | unit-396504 | `0x10499d...bb374c` | ❓ Unverified |
-| Superchain leafPoolImplementation | unknown | project_anchor | own_supporting | 0 | superseed | unit-396563 | `0x10499d...bb374c` | ❓ Unverified |
-| Superchain leafPoolImplementation | unknown | project_anchor | own_supporting | 0 | ink | unit-396578 | `0x10499d...bb374c` | ❓ Unverified |
-| Superchain leafPoolImplementation | unknown | project_anchor | own_supporting | 0 | bob | unit-396593 | `0x10499d...bb374c` | ❓ Unverified |
-| Superchain leafRestrictedRewardToken | unknown | project_anchor | own_supporting | 0 | unichain | unit-396471 | `0xafcc6a...73e01b` | ❓ Unverified |
-| Superchain leafRestrictedRewardToken | unknown | project_anchor | own_supporting | 0 | lisk | unit-396455 | `0xafcc6a...73e01b` | ❓ Unverified |
-| Superchain leafRestrictedRewardToken | unknown | project_anchor | own_supporting | 0 | metal-l2 | unit-396486 | `0xafcc6a...73e01b` | ❓ Unverified |
-| Superchain leafRestrictedRewardToken | unknown | project_anchor | own_supporting | 0 | soneium | unit-396501 | `0xafcc6a...73e01b` | ❓ Unverified |
-| Superchain leafRestrictedRewardToken | unknown | project_anchor | own_supporting | 0 | swellchain | unit-396516 | `0xafcc6a...73e01b` | ❓ Unverified |
-| Superchain leafRestrictedRewardToken | unknown | project_anchor | own_supporting | 0 | superseed | unit-396575 | `0xafcc6a...73e01b` | ❓ Unverified |
-| Superchain leafRestrictedRewardToken | unknown | project_anchor | own_supporting | 0 | ink | unit-396590 | `0xafcc6a...73e01b` | ❓ Unverified |
-| Superchain leafRestrictedTokenBridge | unknown | project_anchor | own_supporting | 0 | unichain | unit-396470 | `0xac6a60...82d214` | ❓ Unverified |
-| Superchain leafRestrictedTokenBridge | unknown | project_anchor | own_supporting | 0 | lisk | unit-396454 | `0xac6a60...82d214` | ❓ Unverified |
-| Superchain leafRestrictedTokenBridge | unknown | project_anchor | own_supporting | 0 | metal-l2 | unit-396485 | `0xac6a60...82d214` | ❓ Unverified |
-| Superchain leafRestrictedTokenBridge | unknown | project_anchor | own_supporting | 0 | soneium | unit-396500 | `0xac6a60...82d214` | ❓ Unverified |
-| Superchain leafRestrictedTokenBridge | unknown | project_anchor | own_supporting | 0 | swellchain | unit-396515 | `0xac6a60...82d214` | ❓ Unverified |
-| Superchain leafRestrictedTokenBridge | unknown | project_anchor | own_supporting | 0 | superseed | unit-396574 | `0xac6a60...82d214` | ❓ Unverified |
-| Superchain leafRestrictedTokenBridge | unknown | project_anchor | own_supporting | 0 | ink | unit-396589 | `0xac6a60...82d214` | ❓ Unverified |
-| Superchain leafRestrictedXFactory | unknown | project_anchor | own_supporting | 0 | unichain | unit-396458 | `0x00a376...c75fb1` | ❓ Unverified |
-| Superchain leafRestrictedXFactory | unknown | project_anchor | own_supporting | 0 | lisk | unit-396443 | `0x00a376...c75fb1` | ❓ Unverified |
-| Superchain leafRestrictedXFactory | unknown | project_anchor | own_supporting | 0 | metal-l2 | unit-396473 | `0x00a376...c75fb1` | ❓ Unverified |
-| Superchain leafRestrictedXFactory | unknown | project_anchor | own_supporting | 0 | soneium | unit-396488 | `0x00a376...c75fb1` | ❓ Unverified |
-| Superchain leafRestrictedXFactory | unknown | project_anchor | own_supporting | 0 | swellchain | unit-396503 | `0x00a376...c75fb1` | ❓ Unverified |
-| Superchain leafRestrictedXFactory | unknown | project_anchor | own_supporting | 0 | superseed | unit-396562 | `0x00a376...c75fb1` | ❓ Unverified |
-| Superchain leafRestrictedXFactory | unknown | project_anchor | own_supporting | 0 | ink | unit-396577 | `0x00a376...c75fb1` | ❓ Unverified |
-| Superchain leafRouter | unknown | project_anchor | own_supporting | 0 | unichain | unit-396463 | `0x3a6317...0c2a45` | ❓ Unverified |
-| Superchain leafRouter | unknown | project_anchor | own_supporting | 0 | lisk | unit-396447 | `0x3a6317...0c2a45` | ❓ Unverified |
-| Superchain leafRouter | unknown | project_anchor | own_supporting | 0 | metal-l2 | unit-396478 | `0x3a6317...0c2a45` | ❓ Unverified |
-| Superchain leafRouter | unknown | project_anchor | own_supporting | 0 | soneium | unit-396493 | `0x3a6317...0c2a45` | ❓ Unverified |
-| Superchain leafRouter | unknown | project_anchor | own_supporting | 0 | swellchain | unit-396508 | `0x3a6317...0c2a45` | ❓ Unverified |
-| Superchain leafRouter | unknown | project_anchor | own_supporting | 0 | superseed | unit-396567 | `0x3a6317...0c2a45` | ❓ Unverified |
-| Superchain leafRouter | unknown | project_anchor | own_supporting | 0 | ink | unit-396582 | `0x3a6317...0c2a45` | ❓ Unverified |
-| Superchain leafRouter | unknown | project_anchor | own_supporting | 0 | bob | unit-396595 | `0x3a6317...0c2a45` | ❓ Unverified |
-| Superchain leafTokenBridge | unknown | project_anchor | own_supporting | 0 | unichain | unit-396460 | `0x1a9d17...a17814` | ❓ Unverified |
-| Superchain leafTokenBridge | unknown | project_anchor | own_supporting | 0 | lisk | unit-396445 | `0x1a9d17...a17814` | ❓ Unverified |
-| Superchain leafTokenBridge | unknown | project_anchor | own_supporting | 0 | metal-l2 | unit-396475 | `0x1a9d17...a17814` | ❓ Unverified |
-| Superchain leafTokenBridge | unknown | project_anchor | own_supporting | 0 | soneium | unit-396490 | `0x1a9d17...a17814` | ❓ Unverified |
-| Superchain leafTokenBridge | unknown | project_anchor | own_supporting | 0 | swellchain | unit-396505 | `0x1a9d17...a17814` | ❓ Unverified |
-| Superchain leafTokenBridge | unknown | project_anchor | own_supporting | 0 | superseed | unit-396564 | `0x1a9d17...a17814` | ❓ Unverified |
-| Superchain leafTokenBridge | unknown | project_anchor | own_supporting | 0 | ink | unit-396579 | `0x1a9d17...a17814` | ❓ Unverified |
-| Superchain leafVoter | unknown | project_anchor | own_supporting | 0 | unichain | unit-396469 | `0x97cdbc...8a1123` | ❓ Unverified |
-| Superchain leafVoter | unknown | project_anchor | own_supporting | 0 | lisk | unit-396453 | `0x97cdbc...8a1123` | ❓ Unverified |
-| Superchain leafVoter | unknown | project_anchor | own_supporting | 0 | metal-l2 | unit-396484 | `0x97cdbc...8a1123` | ❓ Unverified |
-| Superchain leafVoter | unknown | project_anchor | own_supporting | 0 | soneium | unit-396499 | `0x97cdbc...8a1123` | ❓ Unverified |
-| Superchain leafVoter | unknown | project_anchor | own_supporting | 0 | swellchain | unit-396514 | `0x97cdbc...8a1123` | ❓ Unverified |
-| Superchain leafVoter | unknown | project_anchor | own_supporting | 0 | superseed | unit-396573 | `0x97cdbc...8a1123` | ❓ Unverified |
-| Superchain leafVoter | unknown | project_anchor | own_supporting | 0 | ink | unit-396588 | `0x97cdbc...8a1123` | ❓ Unverified |
-| Superchain leafVotingRewardsFactory | unknown | project_anchor | own_supporting | 0 | unichain | unit-396466 | `0x7dc9fd...f4fb2f` | ❓ Unverified |
-| Superchain leafVotingRewardsFactory | unknown | project_anchor | own_supporting | 0 | lisk | unit-396451 | `0x7dc9fd...f4fb2f` | ❓ Unverified |
-| Superchain leafVotingRewardsFactory | unknown | project_anchor | own_supporting | 0 | metal-l2 | unit-396481 | `0x7dc9fd...f4fb2f` | ❓ Unverified |
-| Superchain leafVotingRewardsFactory | unknown | project_anchor | own_supporting | 0 | soneium | unit-396496 | `0x7dc9fd...f4fb2f` | ❓ Unverified |
-| Superchain leafVotingRewardsFactory | unknown | project_anchor | own_supporting | 0 | swellchain | unit-396511 | `0x7dc9fd...f4fb2f` | ❓ Unverified |
-| Superchain leafVotingRewardsFactory | unknown | project_anchor | own_supporting | 0 | superseed | unit-396570 | `0x7dc9fd...f4fb2f` | ❓ Unverified |
-| Superchain leafVotingRewardsFactory | unknown | project_anchor | own_supporting | 0 | ink | unit-396585 | `0x7dc9fd...f4fb2f` | ❓ Unverified |
-| Superchain leafXFactory | unknown | project_anchor | own_supporting | 0 | unichain | unit-396465 | `0x73cae4...294b31` | ❓ Unverified |
-| Superchain leafXFactory | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-396525 | `0x73cae4...294b31` | ❓ Unverified |
-| Superchain leafXFactory | unknown | project_anchor | own_supporting | 0 | lisk | unit-396450 | `0x73cae4...294b31` | ❓ Unverified |
-| Superchain leafXFactory | unknown | project_anchor | own_supporting | 0 | metal-l2 | unit-396480 | `0x73cae4...294b31` | ❓ Unverified |
-| Superchain leafXFactory | unknown | project_anchor | own_supporting | 0 | soneium | unit-396495 | `0x73cae4...294b31` | ❓ Unverified |
-| Superchain leafXFactory | unknown | project_anchor | own_supporting | 0 | swellchain | unit-396510 | `0x73cae4...294b31` | ❓ Unverified |
-| Superchain leafXFactory | unknown | project_anchor | own_supporting | 0 | superseed | unit-396569 | `0x73cae4...294b31` | ❓ Unverified |
-| Superchain leafXFactory | unknown | project_anchor | own_supporting | 0 | ink | unit-396584 | `0x73cae4...294b31` | ❓ Unverified |
-| Superchain leafXVelo | unknown | project_anchor | own_supporting | 0 | unichain | unit-396467 | `0x7f9adf...a28a81` | ❓ Unverified |
-| Superchain leafXVelo | unknown | project_anchor | own_supporting | 0 | lisk | unit-396452 | `0x7f9adf...a28a81` | ❓ Unverified |
-| Superchain leafXVelo | unknown | project_anchor | own_supporting | 0 | metal-l2 | unit-396482 | `0x7f9adf...a28a81` | ❓ Unverified |
-| Superchain leafXVelo | unknown | project_anchor | own_supporting | 0 | soneium | unit-396497 | `0x7f9adf...a28a81` | ❓ Unverified |
-| Superchain leafXVelo | unknown | project_anchor | own_supporting | 0 | swellchain | unit-396512 | `0x7f9adf...a28a81` | ❓ Unverified |
-| Superchain leafXVelo | unknown | project_anchor | own_supporting | 0 | superseed | unit-396571 | `0x7f9adf...a28a81` | ❓ Unverified |
-| Superchain leafXVelo | unknown | project_anchor | own_supporting | 0 | ink | unit-396586 | `0x7f9adf...a28a81` | ❓ Unverified |
-| Superchain mixedRouteQuoter | unknown | project_anchor | own_supporting | 0 | bob | unit-396592 | `0x0f3887...3ef8ba` | ❓ Unverified |
-| Superchain rootXFactory | unknown | project_anchor | own_supporting | 0 | optimism | unit-396423 | `0x73cae4...294b31` | ❓ Unverified |
-| Superchain stakingRewardsFactory | unknown | project_anchor | own_supporting | 0 | bob | unit-396598 | `0x8eb683...530389` | ❓ Unverified |
-| Superchain stakingRewardsImplementation | unknown | project_anchor | own_supporting | 0 | bob | unit-396596 | `0x593d09...084271` | ❓ Unverified |
-| Superchain tokenRegistry | unknown | project_anchor | own_supporting | 0 | bob | unit-396597 | `0x8d9c67...9107a7` | ❓ Unverified |
-| Superchain universalRouter | unknown | project_anchor | own_supporting | 0 | bob | unit-396599 | `0xc3f14f...e67783` | ❓ Unverified |
+| Superchain leafFeeModule | unknown | project_anchor | own_supporting | 0 | unichain | unit-396468 | `0x81c5d01ae474040a59d0092a6973f4621e06b362` | ❓ Unverified |
+| Superchain leafFeeModule | unknown | project_anchor | own_supporting | 0 | lisk | unit-396449 | `0x44536f7694d2d2f843437aded8d95525f797a06b` | ❓ Unverified |
+| Superchain leafFeeModule | unknown | project_anchor | own_supporting | 0 | metal-l2 | unit-396483 | `0x81c5d01ae474040a59d0092a6973f4621e06b362` | ❓ Unverified |
+| Superchain leafFeeModule | unknown | project_anchor | own_supporting | 0 | soneium | unit-396498 | `0x81c5d01ae474040a59d0092a6973f4621e06b362` | ❓ Unverified |
+| Superchain leafFeeModule | unknown | project_anchor | own_supporting | 0 | swellchain | unit-396513 | `0x81c5d01ae474040a59d0092a6973f4621e06b362` | ❓ Unverified |
+| Superchain leafFeeModule | unknown | project_anchor | own_supporting | 0 | superseed | unit-396572 | `0x81c5d01ae474040a59d0092a6973f4621e06b362` | ❓ Unverified |
+| Superchain leafFeeModule | unknown | project_anchor | own_supporting | 0 | ink | unit-396587 | `0x81c5d01ae474040a59d0092a6973f4621e06b362` | ❓ Unverified |
+| Superchain leafGaugeFactory | unknown | project_anchor | own_supporting | 0 | unichain | unit-396464 | `0x42e403b73898320f23109708b0ba1ae85838c445` | ❓ Unverified |
+| Superchain leafGaugeFactory | unknown | project_anchor | own_supporting | 0 | lisk | unit-396448 | `0x42e403b73898320f23109708b0ba1ae85838c445` | ❓ Unverified |
+| Superchain leafGaugeFactory | unknown | project_anchor | own_supporting | 0 | metal-l2 | unit-396479 | `0x42e403b73898320f23109708b0ba1ae85838c445` | ❓ Unverified |
+| Superchain leafGaugeFactory | unknown | project_anchor | own_supporting | 0 | soneium | unit-396494 | `0x42e403b73898320f23109708b0ba1ae85838c445` | ❓ Unverified |
+| Superchain leafGaugeFactory | unknown | project_anchor | own_supporting | 0 | swellchain | unit-396509 | `0x42e403b73898320f23109708b0ba1ae85838c445` | ❓ Unverified |
+| Superchain leafGaugeFactory | unknown | project_anchor | own_supporting | 0 | superseed | unit-396568 | `0x42e403b73898320f23109708b0ba1ae85838c445` | ❓ Unverified |
+| Superchain leafGaugeFactory | unknown | project_anchor | own_supporting | 0 | ink | unit-396583 | `0x42e403b73898320f23109708b0ba1ae85838c445` | ❓ Unverified |
+| Superchain leafMessageBridge | unknown | project_anchor | own_supporting | 0 | unichain | unit-396472 | `0xf278761576f45472bdd721eaca19317ce159c011` | ❓ Unverified |
+| Superchain leafMessageBridge | unknown | project_anchor | own_supporting | 0 | lisk | unit-396456 | `0xf278761576f45472bdd721eaca19317ce159c011` | ❓ Unverified |
+| Superchain leafMessageBridge | unknown | project_anchor | own_supporting | 0 | metal-l2 | unit-396487 | `0xf278761576f45472bdd721eaca19317ce159c011` | ❓ Unverified |
+| Superchain leafMessageBridge | unknown | project_anchor | own_supporting | 0 | soneium | unit-396502 | `0xf278761576f45472bdd721eaca19317ce159c011` | ❓ Unverified |
+| Superchain leafMessageBridge | unknown | project_anchor | own_supporting | 0 | swellchain | unit-396517 | `0xf278761576f45472bdd721eaca19317ce159c011` | ❓ Unverified |
+| Superchain leafMessageBridge | unknown | project_anchor | own_supporting | 0 | superseed | unit-396576 | `0xf278761576f45472bdd721eaca19317ce159c011` | ❓ Unverified |
+| Superchain leafMessageBridge | unknown | project_anchor | own_supporting | 0 | ink | unit-396591 | `0xf278761576f45472bdd721eaca19317ce159c011` | ❓ Unverified |
+| Superchain leafMessageModule | unknown | project_anchor | own_supporting | 0 | unichain | unit-396461 | `0x2bba7515f7cf114b45186274981888d8c2fba15e` | ❓ Unverified |
+| Superchain leafMessageModule | unknown | project_anchor | own_supporting | 0 | lisk | unit-396457 | `0xf385603a12be8b7b885222329c581fdd1c30071d` | ❓ Unverified |
+| Superchain leafMessageModule | unknown | project_anchor | own_supporting | 0 | metal-l2 | unit-396476 | `0x2bba7515f7cf114b45186274981888d8c2fba15e` | ❓ Unverified |
+| Superchain leafMessageModule | unknown | project_anchor | own_supporting | 0 | soneium | unit-396491 | `0x2bba7515f7cf114b45186274981888d8c2fba15e` | ❓ Unverified |
+| Superchain leafMessageModule | unknown | project_anchor | own_supporting | 0 | swellchain | unit-396506 | `0x2bba7515f7cf114b45186274981888d8c2fba15e` | ❓ Unverified |
+| Superchain leafMessageModule | unknown | project_anchor | own_supporting | 0 | superseed | unit-396565 | `0x2bba7515f7cf114b45186274981888d8c2fba15e` | ❓ Unverified |
+| Superchain leafMessageModule | unknown | project_anchor | own_supporting | 0 | ink | unit-396580 | `0x2bba7515f7cf114b45186274981888d8c2fba15e` | ❓ Unverified |
+| Superchain leafPoolFactory | unknown | project_anchor | own_supporting | 0 | unichain | unit-396462 | `0x31832f2a97fd20664d76cc421207669b55ce4bc0` | ❓ Unverified |
+| Superchain leafPoolFactory | unknown | project_anchor | own_supporting | 0 | lisk | unit-396446 | `0x31832f2a97fd20664d76cc421207669b55ce4bc0` | ❓ Unverified |
+| Superchain leafPoolFactory | unknown | project_anchor | own_supporting | 0 | metal-l2 | unit-396477 | `0x31832f2a97fd20664d76cc421207669b55ce4bc0` | ❓ Unverified |
+| Superchain leafPoolFactory | unknown | project_anchor | own_supporting | 0 | soneium | unit-396492 | `0x31832f2a97fd20664d76cc421207669b55ce4bc0` | ❓ Unverified |
+| Superchain leafPoolFactory | unknown | project_anchor | own_supporting | 0 | swellchain | unit-396507 | `0x31832f2a97fd20664d76cc421207669b55ce4bc0` | ❓ Unverified |
+| Superchain leafPoolFactory | unknown | project_anchor | own_supporting | 0 | superseed | unit-396566 | `0x31832f2a97fd20664d76cc421207669b55ce4bc0` | ❓ Unverified |
+| Superchain leafPoolFactory | unknown | project_anchor | own_supporting | 0 | ink | unit-396581 | `0x31832f2a97fd20664d76cc421207669b55ce4bc0` | ❓ Unverified |
+| Superchain leafPoolFactory | unknown | project_anchor | own_supporting | 0 | bob | unit-396594 | `0x31832f2a97fd20664d76cc421207669b55ce4bc0` | ❓ Unverified |
+| Superchain leafPoolImplementation | unknown | project_anchor | own_supporting | 0 | lisk | unit-396444 | `0x10499d88bd32af443fc936f67de32be1c8bb374c` | ❓ Unverified |
+| Superchain leafPoolImplementation | unknown | project_anchor | own_supporting | 0 | metal-l2 | unit-396474 | `0x10499d88bd32af443fc936f67de32be1c8bb374c` | ❓ Unverified |
+| Superchain leafPoolImplementation | unknown | project_anchor | own_supporting | 0 | soneium | unit-396489 | `0x10499d88bd32af443fc936f67de32be1c8bb374c` | ❓ Unverified |
+| Superchain leafPoolImplementation | unknown | project_anchor | own_supporting | 0 | swellchain | unit-396504 | `0x10499d88bd32af443fc936f67de32be1c8bb374c` | ❓ Unverified |
+| Superchain leafPoolImplementation | unknown | project_anchor | own_supporting | 0 | superseed | unit-396563 | `0x10499d88bd32af443fc936f67de32be1c8bb374c` | ❓ Unverified |
+| Superchain leafPoolImplementation | unknown | project_anchor | own_supporting | 0 | ink | unit-396578 | `0x10499d88bd32af443fc936f67de32be1c8bb374c` | ❓ Unverified |
+| Superchain leafPoolImplementation | unknown | project_anchor | own_supporting | 0 | bob | unit-396593 | `0x10499d88bd32af443fc936f67de32be1c8bb374c` | ❓ Unverified |
+| Superchain leafRestrictedRewardToken | unknown | project_anchor | own_supporting | 0 | unichain | unit-396471 | `0xafcc6ae807187a31e84138f3860d4ce27973e01b` | ❓ Unverified |
+| Superchain leafRestrictedRewardToken | unknown | project_anchor | own_supporting | 0 | lisk | unit-396455 | `0xafcc6ae807187a31e84138f3860d4ce27973e01b` | ❓ Unverified |
+| Superchain leafRestrictedRewardToken | unknown | project_anchor | own_supporting | 0 | metal-l2 | unit-396486 | `0xafcc6ae807187a31e84138f3860d4ce27973e01b` | ❓ Unverified |
+| Superchain leafRestrictedRewardToken | unknown | project_anchor | own_supporting | 0 | soneium | unit-396501 | `0xafcc6ae807187a31e84138f3860d4ce27973e01b` | ❓ Unverified |
+| Superchain leafRestrictedRewardToken | unknown | project_anchor | own_supporting | 0 | swellchain | unit-396516 | `0xafcc6ae807187a31e84138f3860d4ce27973e01b` | ❓ Unverified |
+| Superchain leafRestrictedRewardToken | unknown | project_anchor | own_supporting | 0 | superseed | unit-396575 | `0xafcc6ae807187a31e84138f3860d4ce27973e01b` | ❓ Unverified |
+| Superchain leafRestrictedRewardToken | unknown | project_anchor | own_supporting | 0 | ink | unit-396590 | `0xafcc6ae807187a31e84138f3860d4ce27973e01b` | ❓ Unverified |
+| Superchain leafRestrictedTokenBridge | unknown | project_anchor | own_supporting | 0 | unichain | unit-396470 | `0xac6a6080e002d2803959242c0fe10050c482d214` | ❓ Unverified |
+| Superchain leafRestrictedTokenBridge | unknown | project_anchor | own_supporting | 0 | lisk | unit-396454 | `0xac6a6080e002d2803959242c0fe10050c482d214` | ❓ Unverified |
+| Superchain leafRestrictedTokenBridge | unknown | project_anchor | own_supporting | 0 | metal-l2 | unit-396485 | `0xac6a6080e002d2803959242c0fe10050c482d214` | ❓ Unverified |
+| Superchain leafRestrictedTokenBridge | unknown | project_anchor | own_supporting | 0 | soneium | unit-396500 | `0xac6a6080e002d2803959242c0fe10050c482d214` | ❓ Unverified |
+| Superchain leafRestrictedTokenBridge | unknown | project_anchor | own_supporting | 0 | swellchain | unit-396515 | `0xac6a6080e002d2803959242c0fe10050c482d214` | ❓ Unverified |
+| Superchain leafRestrictedTokenBridge | unknown | project_anchor | own_supporting | 0 | superseed | unit-396574 | `0xac6a6080e002d2803959242c0fe10050c482d214` | ❓ Unverified |
+| Superchain leafRestrictedTokenBridge | unknown | project_anchor | own_supporting | 0 | ink | unit-396589 | `0xac6a6080e002d2803959242c0fe10050c482d214` | ❓ Unverified |
+| Superchain leafRestrictedXFactory | unknown | project_anchor | own_supporting | 0 | unichain | unit-396458 | `0x00a3767687699c65878655b62e565453bdc75fb1` | ❓ Unverified |
+| Superchain leafRestrictedXFactory | unknown | project_anchor | own_supporting | 0 | lisk | unit-396443 | `0x00a3767687699c65878655b62e565453bdc75fb1` | ❓ Unverified |
+| Superchain leafRestrictedXFactory | unknown | project_anchor | own_supporting | 0 | metal-l2 | unit-396473 | `0x00a3767687699c65878655b62e565453bdc75fb1` | ❓ Unverified |
+| Superchain leafRestrictedXFactory | unknown | project_anchor | own_supporting | 0 | soneium | unit-396488 | `0x00a3767687699c65878655b62e565453bdc75fb1` | ❓ Unverified |
+| Superchain leafRestrictedXFactory | unknown | project_anchor | own_supporting | 0 | swellchain | unit-396503 | `0x00a3767687699c65878655b62e565453bdc75fb1` | ❓ Unverified |
+| Superchain leafRestrictedXFactory | unknown | project_anchor | own_supporting | 0 | superseed | unit-396562 | `0x00a3767687699c65878655b62e565453bdc75fb1` | ❓ Unverified |
+| Superchain leafRestrictedXFactory | unknown | project_anchor | own_supporting | 0 | ink | unit-396577 | `0x00a3767687699c65878655b62e565453bdc75fb1` | ❓ Unverified |
+| Superchain leafRouter | unknown | project_anchor | own_supporting | 0 | unichain | unit-396463 | `0x3a63171dd9bebf4d07bc782fecc7eb0b890c2a45` | ❓ Unverified |
+| Superchain leafRouter | unknown | project_anchor | own_supporting | 0 | lisk | unit-396447 | `0x3a63171dd9bebf4d07bc782fecc7eb0b890c2a45` | ❓ Unverified |
+| Superchain leafRouter | unknown | project_anchor | own_supporting | 0 | metal-l2 | unit-396478 | `0x3a63171dd9bebf4d07bc782fecc7eb0b890c2a45` | ❓ Unverified |
+| Superchain leafRouter | unknown | project_anchor | own_supporting | 0 | soneium | unit-396493 | `0x3a63171dd9bebf4d07bc782fecc7eb0b890c2a45` | ❓ Unverified |
+| Superchain leafRouter | unknown | project_anchor | own_supporting | 0 | swellchain | unit-396508 | `0x3a63171dd9bebf4d07bc782fecc7eb0b890c2a45` | ❓ Unverified |
+| Superchain leafRouter | unknown | project_anchor | own_supporting | 0 | superseed | unit-396567 | `0x3a63171dd9bebf4d07bc782fecc7eb0b890c2a45` | ❓ Unverified |
+| Superchain leafRouter | unknown | project_anchor | own_supporting | 0 | ink | unit-396582 | `0x3a63171dd9bebf4d07bc782fecc7eb0b890c2a45` | ❓ Unverified |
+| Superchain leafRouter | unknown | project_anchor | own_supporting | 0 | bob | unit-396595 | `0x3a63171dd9bebf4d07bc782fecc7eb0b890c2a45` | ❓ Unverified |
+| Superchain leafTokenBridge | unknown | project_anchor | own_supporting | 0 | unichain | unit-396460 | `0x1a9d17828897d6289c6dff9dc9f5cc3baea17814` | ❓ Unverified |
+| Superchain leafTokenBridge | unknown | project_anchor | own_supporting | 0 | lisk | unit-396445 | `0x1a9d17828897d6289c6dff9dc9f5cc3baea17814` | ❓ Unverified |
+| Superchain leafTokenBridge | unknown | project_anchor | own_supporting | 0 | metal-l2 | unit-396475 | `0x1a9d17828897d6289c6dff9dc9f5cc3baea17814` | ❓ Unverified |
+| Superchain leafTokenBridge | unknown | project_anchor | own_supporting | 0 | soneium | unit-396490 | `0x1a9d17828897d6289c6dff9dc9f5cc3baea17814` | ❓ Unverified |
+| Superchain leafTokenBridge | unknown | project_anchor | own_supporting | 0 | swellchain | unit-396505 | `0x1a9d17828897d6289c6dff9dc9f5cc3baea17814` | ❓ Unverified |
+| Superchain leafTokenBridge | unknown | project_anchor | own_supporting | 0 | superseed | unit-396564 | `0x1a9d17828897d6289c6dff9dc9f5cc3baea17814` | ❓ Unverified |
+| Superchain leafTokenBridge | unknown | project_anchor | own_supporting | 0 | ink | unit-396579 | `0x1a9d17828897d6289c6dff9dc9f5cc3baea17814` | ❓ Unverified |
+| Superchain leafVoter | unknown | project_anchor | own_supporting | 0 | unichain | unit-396469 | `0x97cdbce21b6fd0585d29e539b1b99dad328a1123` | ❓ Unverified |
+| Superchain leafVoter | unknown | project_anchor | own_supporting | 0 | lisk | unit-396453 | `0x97cdbce21b6fd0585d29e539b1b99dad328a1123` | ❓ Unverified |
+| Superchain leafVoter | unknown | project_anchor | own_supporting | 0 | metal-l2 | unit-396484 | `0x97cdbce21b6fd0585d29e539b1b99dad328a1123` | ❓ Unverified |
+| Superchain leafVoter | unknown | project_anchor | own_supporting | 0 | soneium | unit-396499 | `0x97cdbce21b6fd0585d29e539b1b99dad328a1123` | ❓ Unverified |
+| Superchain leafVoter | unknown | project_anchor | own_supporting | 0 | swellchain | unit-396514 | `0x97cdbce21b6fd0585d29e539b1b99dad328a1123` | ❓ Unverified |
+| Superchain leafVoter | unknown | project_anchor | own_supporting | 0 | superseed | unit-396573 | `0x97cdbce21b6fd0585d29e539b1b99dad328a1123` | ❓ Unverified |
+| Superchain leafVoter | unknown | project_anchor | own_supporting | 0 | ink | unit-396588 | `0x97cdbce21b6fd0585d29e539b1b99dad328a1123` | ❓ Unverified |
+| Superchain leafVotingRewardsFactory | unknown | project_anchor | own_supporting | 0 | unichain | unit-396466 | `0x7dc9fd82f91b36f416a89f5478375e4a79f4fb2f` | ❓ Unverified |
+| Superchain leafVotingRewardsFactory | unknown | project_anchor | own_supporting | 0 | lisk | unit-396451 | `0x7dc9fd82f91b36f416a89f5478375e4a79f4fb2f` | ❓ Unverified |
+| Superchain leafVotingRewardsFactory | unknown | project_anchor | own_supporting | 0 | metal-l2 | unit-396481 | `0x7dc9fd82f91b36f416a89f5478375e4a79f4fb2f` | ❓ Unverified |
+| Superchain leafVotingRewardsFactory | unknown | project_anchor | own_supporting | 0 | soneium | unit-396496 | `0x7dc9fd82f91b36f416a89f5478375e4a79f4fb2f` | ❓ Unverified |
+| Superchain leafVotingRewardsFactory | unknown | project_anchor | own_supporting | 0 | swellchain | unit-396511 | `0x7dc9fd82f91b36f416a89f5478375e4a79f4fb2f` | ❓ Unverified |
+| Superchain leafVotingRewardsFactory | unknown | project_anchor | own_supporting | 0 | superseed | unit-396570 | `0x7dc9fd82f91b36f416a89f5478375e4a79f4fb2f` | ❓ Unverified |
+| Superchain leafVotingRewardsFactory | unknown | project_anchor | own_supporting | 0 | ink | unit-396585 | `0x7dc9fd82f91b36f416a89f5478375e4a79f4fb2f` | ❓ Unverified |
+| Superchain leafXFactory | unknown | project_anchor | own_supporting | 0 | unichain | unit-396465 | `0x73cae4450f11f4a33a49c880ce3e8e56a9294b31` | ❓ Unverified |
+| Superchain leafXFactory | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-396525 | `0x73cae4450f11f4a33a49c880ce3e8e56a9294b31` | ❓ Unverified |
+| Superchain leafXFactory | unknown | project_anchor | own_supporting | 0 | lisk | unit-396450 | `0x73cae4450f11f4a33a49c880ce3e8e56a9294b31` | ❓ Unverified |
+| Superchain leafXFactory | unknown | project_anchor | own_supporting | 0 | metal-l2 | unit-396480 | `0x73cae4450f11f4a33a49c880ce3e8e56a9294b31` | ❓ Unverified |
+| Superchain leafXFactory | unknown | project_anchor | own_supporting | 0 | soneium | unit-396495 | `0x73cae4450f11f4a33a49c880ce3e8e56a9294b31` | ❓ Unverified |
+| Superchain leafXFactory | unknown | project_anchor | own_supporting | 0 | swellchain | unit-396510 | `0x73cae4450f11f4a33a49c880ce3e8e56a9294b31` | ❓ Unverified |
+| Superchain leafXFactory | unknown | project_anchor | own_supporting | 0 | superseed | unit-396569 | `0x73cae4450f11f4a33a49c880ce3e8e56a9294b31` | ❓ Unverified |
+| Superchain leafXFactory | unknown | project_anchor | own_supporting | 0 | ink | unit-396584 | `0x73cae4450f11f4a33a49c880ce3e8e56a9294b31` | ❓ Unverified |
+| Superchain leafXVelo | unknown | project_anchor | own_supporting | 0 | unichain | unit-396467 | `0x7f9adfbd38b669f03d1d11000bc76b9aaea28a81` | ❓ Unverified |
+| Superchain leafXVelo | unknown | project_anchor | own_supporting | 0 | lisk | unit-396452 | `0x7f9adfbd38b669f03d1d11000bc76b9aaea28a81` | ❓ Unverified |
+| Superchain leafXVelo | unknown | project_anchor | own_supporting | 0 | metal-l2 | unit-396482 | `0x7f9adfbd38b669f03d1d11000bc76b9aaea28a81` | ❓ Unverified |
+| Superchain leafXVelo | unknown | project_anchor | own_supporting | 0 | soneium | unit-396497 | `0x7f9adfbd38b669f03d1d11000bc76b9aaea28a81` | ❓ Unverified |
+| Superchain leafXVelo | unknown | project_anchor | own_supporting | 0 | swellchain | unit-396512 | `0x7f9adfbd38b669f03d1d11000bc76b9aaea28a81` | ❓ Unverified |
+| Superchain leafXVelo | unknown | project_anchor | own_supporting | 0 | superseed | unit-396571 | `0x7f9adfbd38b669f03d1d11000bc76b9aaea28a81` | ❓ Unverified |
+| Superchain leafXVelo | unknown | project_anchor | own_supporting | 0 | ink | unit-396586 | `0x7f9adfbd38b669f03d1d11000bc76b9aaea28a81` | ❓ Unverified |
+| Superchain mixedRouteQuoter | unknown | project_anchor | own_supporting | 0 | bob | unit-396592 | `0x0f3887909c548c41eb8a6667a4b23fc6683ef8ba` | ❓ Unverified |
+| Superchain rootXFactory | unknown | project_anchor | own_supporting | 0 | optimism | unit-396423 | `0x73cae4450f11f4a33a49c880ce3e8e56a9294b31` | ❓ Unverified |
+| Superchain stakingRewardsFactory | unknown | project_anchor | own_supporting | 0 | bob | unit-396598 | `0x8eb6838b4e998da08aab851f3d42076f21530389` | ❓ Unverified |
+| Superchain stakingRewardsImplementation | unknown | project_anchor | own_supporting | 0 | bob | unit-396596 | `0x593d092bb28ccefe33bfdd3d9457e77bd3084271` | ❓ Unverified |
+| Superchain tokenRegistry | unknown | project_anchor | own_supporting | 0 | bob | unit-396597 | `0x8d9c67488c154286b9d4ccac6c4cbf30589107a7` | ❓ Unverified |
+| Superchain universalRouter | unknown | project_anchor | own_supporting | 0 | bob | unit-396599 | `0xc3f14f34ea43943e6fd677a2bdcea65882e67783` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -592,18 +592,18 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Velodrome-Spearbit-Security-Review.pdf | FeesVotingReward | unmatched — not counted | — | — | no |
 | Velodrome-Spearbit-Security-Review.pdf | Gauge | unmatched — not counted | — | — | no |
 | Velodrome-Spearbit-Security-Review.pdf | LockedManagedReward | unmatched — not counted | — | — | no |
-| Velodrome-Spearbit-Security-Review.pdf | Minter | own contract | Minter (selected) `0x6dc9e1...d10982` — deployed 2023-06-22 03:08:31+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Velodrome-Spearbit-Security-Review.pdf | Minter | own contract | Minter (selected) `0x6dc9e1c04ee59ed3531d73a72256c0da46d10982` — deployed 2023-06-22 03:08:31+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Velodrome-Spearbit-Security-Review.pdf | Pair | unmatched — not counted | — | — | no |
 | Velodrome-Spearbit-Security-Review.pdf | Reward | unmatched — not counted | — | — | no |
-| Velodrome-Spearbit-Security-Review.pdf | RewardsDistributor | own contract | RewardsDistributor (selected) `0x9d4736...1ea99b` — deployed 2023-06-22 03:07:49+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Velodrome-Spearbit-Security-Review.pdf | Router | own contract | Router (selected) `0xa062ae...8b2858` — deployed 2023-06-22 03:08:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Velodrome-Spearbit-Security-Review.pdf | RewardsDistributor | own contract | RewardsDistributor (selected) `0x9d4736ec60715e71afe72973f7885dcbc21ea99b` — deployed 2023-06-22 03:07:49+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Velodrome-Spearbit-Security-Review.pdf | Router | own contract | Router (selected) `0xa062ae8a9c5e11aaa026fc2670b0d65ccc8b2858` — deployed 2023-06-22 03:08:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Velodrome-Spearbit-Security-Review.pdf | SinkConverter | unmatched — not counted | — | — | no |
 | Velodrome-Spearbit-Security-Review.pdf | SinkManager | unmatched — not counted | — | — | no |
-| Velodrome-Spearbit-Security-Review.pdf | Velo | own contract | Velo (selected) `0x9560e8...1088db` — deployed 2023-06-22 03:06:09+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Velodrome-Spearbit-Security-Review.pdf | Velo | own contract | Velo (selected) `0x9560e827af36c94d2ac33a39bce1fe78631088db` — deployed 2023-06-22 03:06:09+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Velodrome-Spearbit-Security-Review.pdf | VeloGovernor | unmatched — not counted | — | — | no |
 | Velodrome-Spearbit-Security-Review.pdf | VelodromeTimeLibrary | unmatched — not counted | — | — | no |
-| Velodrome-Spearbit-Security-Review.pdf | Voter | own contract | Voter (selected) `0x41c914...5abf3c` — deployed 2023-06-22 03:07:59+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Velodrome-Spearbit-Security-Review.pdf | VotingEscrow | own contract | VotingEscrow (selected) `0xfaf8fd...06787d` — deployed 2023-06-22 03:07:25+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Velodrome-Spearbit-Security-Review.pdf | Voter | own contract | Voter (selected) `0x41c914ee0c7e1a5edcd0295623e6dc557b5abf3c` — deployed 2023-06-22 03:07:59+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Velodrome-Spearbit-Security-Review.pdf | VotingEscrow | own contract | VotingEscrow (selected) `0xfaf8fd17d9840595845582fcb047df13f006787d` — deployed 2023-06-22 03:07:25+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Velodrome-Spearbit-Security-Review-Nov23.pdf | CLFactory | unmatched — not counted | — | — | no |
 | Velodrome-Spearbit-Security-Review-Nov23.pdf | CLGauge | unmatched — not counted | — | — | no |
 | Velodrome-Spearbit-Security-Review-Nov23.pdf | CLGaugeFactory | unmatched — not counted | — | — | no |
@@ -618,7 +618,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Velodrome-Spearbit-Security-Review-Nov23.pdf | IERC20 | unmatched — not counted | — | — | no |
 | Velodrome-Spearbit-Security-Review-Nov23.pdf | IFeeModule | unmatched — not counted | — | — | no |
 | Velodrome-Spearbit-Security-Review-Nov23.pdf | IVoter | unmatched — not counted | — | — | no |
-| Velodrome-Spearbit-Security-Review-Nov23.pdf | Minter | own contract | Minter (selected) `0x6dc9e1...d10982` — deployed 2023-06-22 03:08:31+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Velodrome-Spearbit-Security-Review-Nov23.pdf | Minter | own contract | Minter (selected) `0x6dc9e1c04ee59ed3531d73a72256c0da46d10982` — deployed 2023-06-22 03:08:31+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Velodrome-Spearbit-Security-Review-Nov23.pdf | NonfungiblePositionManager | unmatched — not counted | — | — | no |
 | Velodrome-Spearbit-Security-Review-Nov23.pdf | PeripheryPayments | unmatched — not counted | — | — | no |
 | Velodrome-Spearbit-Security-Review-Nov23.pdf | Permit2Payments | unmatched — not counted | — | — | no |
@@ -627,7 +627,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Velodrome-Spearbit-Security-Review-Nov23.pdf | PoolFactory | unmatched — not counted | — | — | no |
 | Velodrome-Spearbit-Security-Review-Nov23.pdf | Position | unmatched — not counted | — | — | no |
 | Velodrome-Spearbit-Security-Review-Nov23.pdf | ReentrancyGuard | unmatched — not counted | — | — | no |
-| Velodrome-Spearbit-Security-Review-Nov23.pdf | Router | own contract | Router (selected) `0xa062ae...8b2858` — deployed 2023-06-22 03:08:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Velodrome-Spearbit-Security-Review-Nov23.pdf | Router | own contract | Router (selected) `0xa062ae8a9c5e11aaa026fc2670b0d65ccc8b2858` — deployed 2023-06-22 03:08:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Velodrome-Spearbit-Security-Review-Nov23.pdf | SafeERC20 | unmatched — not counted | — | — | no |
 | Velodrome-Spearbit-Security-Review-Nov23.pdf | SwapRouter | unmatched — not counted | — | — | no |
 | Velodrome-Spearbit-Security-Review-Nov23.pdf | TransferHelper | unmatched — not counted | — | — | no |
@@ -657,7 +657,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | 2024.11.13 - Final - Velodrome.pdf | StandardHookMetadata | unmatched — not counted | — | — | no |
 | 2024.11.13 - Final - Velodrome.pdf | TokenBridge | unmatched — not counted | — | — | no |
 | 2024.11.13 - Final - Velodrome.pdf | TypeCasts | unmatched — not counted | — | — | no |
-| 2024.11.13 - Final - Velodrome.pdf | Voter | own contract | Voter (selected) `0x41c914...5abf3c` — deployed 2023-06-22 03:07:59+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2024.11.13 - Final - Velodrome.pdf | Voter | own contract | Voter (selected) `0x41c914ee0c7e1a5edcd0295623e6dc557b5abf3c` — deployed 2023-06-22 03:07:59+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2024.11.13 - Final - Velodrome.pdf | XERC20 | unmatched — not counted | — | — | no |
 | 2024.11.13 - Final - Velodrome.pdf | XERC20Factory | unmatched — not counted | — | — | no |
 | 2024.11.13 - Final - Velodrome.pdf | XERC20Lockbox | unmatched — not counted | — | — | no |

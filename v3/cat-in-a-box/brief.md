@@ -52,13 +52,13 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- boxsteth (`0x769020...7e3b73`, chain 1)
-- catinaboxcdp (`0x7f0a0c...9c6014`, chain 1)
-- catinaboxcdp1point1 (`0x6ffd09...6890fa`, chain 1)
-- feeSplitStaking (`0x320c87...3c5d7c`, chain 1)
-- feeSplitToken (`0xe4b91f...120f94`, chain 1)
-- GnosisSafeProxy (`0x98e647...8226af`, chain 1)
-- psmstart (`0x24146d...4ae0d7`, chain 1)
+- boxsteth (`0x7690202e2c2297bcd03664e31116d1dffe7e3b73`, chain 1)
+- catinaboxcdp (`0x7f0a0c7149a46bf943ccd412da687144b49c6014`, chain 1)
+- catinaboxcdp1point1 (`0x6ffd098e92b606b2947b89a08911c00ca06890fa`, chain 1)
+- feeSplitStaking (`0x320c871b6f7721083604ffdd8070e64c1d3c5d7c`, chain 1)
+- feeSplitToken (`0xe4b91faf8810f8895772e7ca065d4cb889120f94`, chain 1)
+- GnosisSafeProxy (`0x98e6475c01d018ae78c02ef48738f687538226af`, chain 1)
+- psmstart (`0x24146d1b3339cf76b455dc42e71ea5cdff4ae0d7`, chain 1)
 
 ## Contract Surface Quality
 
@@ -104,13 +104,13 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| boxsteth | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381620 | `0x769020...7e3b73` | ⚠️ Unaudited |
-| catinaboxcdp | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381622 | `0x7f0a0c...9c6014` | ⚠️ Unaudited |
-| catinaboxcdp1point1 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381618 | `0x6ffd09...6890fa` | ⚠️ Unaudited |
-| feeSplitStaking | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381616 | `0x320c87...3c5d7c` | ⚠️ Unaudited |
-| feeSplitToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381626 | `0xe4b91f...120f94` | ⚠️ Unaudited |
-| GnosisSafe | unknown | project_anchor | own_supporting | 1 | ethereum | unit-381628 | `0x98e647...8226af` | ⚠️ Unaudited |
-| psmstart | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381614 | `0x24146d...4ae0d7` | ⚠️ Unaudited |
+| boxsteth | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381620 | `0x7690202e2c2297bcd03664e31116d1dffe7e3b73` | ⚠️ Unaudited |
+| catinaboxcdp | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381622 | `0x7f0a0c7149a46bf943ccd412da687144b49c6014` | ⚠️ Unaudited |
+| catinaboxcdp1point1 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381618 | `0x6ffd098e92b606b2947b89a08911c00ca06890fa` | ⚠️ Unaudited |
+| feeSplitStaking | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381616 | `0x320c871b6f7721083604ffdd8070e64c1d3c5d7c` | ⚠️ Unaudited |
+| feeSplitToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381626 | `0xe4b91faf8810f8895772e7ca065d4cb889120f94` | ⚠️ Unaudited |
+| GnosisSafe | unknown | project_anchor | own_supporting | 1 | ethereum | unit-381628 | `0x98e6475c01d018ae78c02ef48738f687538226af` | ⚠️ Unaudited |
+| psmstart | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381614 | `0x24146d1b3339cf76b455dc42e71ea5cdff4ae0d7` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -130,7 +130,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-381624 | `0xae7ab9...d7fe84` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-381624 | `0xae7ab96520de3a18e5e111b5eaab095312d7fe84` | ❓ Unverified |
 
 ## Audit Inventory
 

@@ -61,8 +61,8 @@ The protocol comprises 3 functional families. Its contracts share 8 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| PermittableToken | token | ethereum | n/a | 2 deployments: ethereum [`0xa1077a...0f9a27`](./contracts/ethereum-1/0xa1077a294dde1b09bb078844df40758a5d0f9a27/); ethereum `0xa88260...e6d68a` | ⚠️ Unaudited |
-| WETHOmnibridgeRouter | operational_periphery | ethereum | n/a | [`0x8ac4ae...350f55`](./contracts/ethereum-1/0x8ac4ae65b3656e26dc4e0e69108b392283350f55/) | ⚠️ Unaudited |
+| PermittableToken | token | ethereum | n/a | 2 deployments: ethereum [`0xa1077a294dde1b09bb078844df40758a5d0f9a27`](./contracts/ethereum-1/0xa1077a294dde1b09bb078844df40758a5d0f9a27/); ethereum `0xa882606494d86804b5514e07e6bd2d6a6ee6d68a` | ⚠️ Unaudited |
+| WETHOmnibridgeRouter | operational_periphery | ethereum | n/a | [`0x8ac4ae65b3656e26dc4e0e69108b392283350f55`](./contracts/ethereum-1/0x8ac4ae65b3656e26dc4e0e69108b392283350f55/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -82,7 +82,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0xf868da...a28499` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf868da5a5d5f799cee2205d8fd1f5ad2c4a28499` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -95,8 +95,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xa1077a...0f9a27`](./contracts/ethereum-1/0xa1077a294dde1b09bb078844df40758a5d0f9a27/) | PermittableToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x8ac4ae...350f55`](./contracts/ethereum-1/0x8ac4ae65b3656e26dc4e0e69108b392283350f55/) | WETHOmnibridgeRouter | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa1077a294dde1b09bb078844df40758a5d0f9a27`](./contracts/ethereum-1/0xa1077a294dde1b09bb078844df40758a5d0f9a27/) | PermittableToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8ac4ae65b3656e26dc4e0e69108b392283350f55`](./contracts/ethereum-1/0x8ac4ae65b3656e26dc4e0e69108b392283350f55/) | WETHOmnibridgeRouter | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

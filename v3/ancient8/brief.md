@@ -52,15 +52,15 @@ The pinned logic-topography run contains 7 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xb09dc0...277996`, chain 1)
-- UnnamedContract (`0xd5e3ed...950033`, chain 1)
-- AddressManager (`0x15a52f...12dc82`, chain 1)
-- L1CrossDomainMessenger (`0x012c34...4ce2af`, chain 1)
-- L1ERC721Bridge (`0x132b34...1ebcaa`, chain 1)
-- OptimismMintableERC20Factory (`0xf2b7b6...e7089e`, chain 1)
-- OptimismPortal2 (`0x639f2a...bacb68`, chain 1)
-- ProxyAdmin (`0x75a223...b4b492`, chain 1)
-- SystemConfig (`0x0b4cfc...e3e8ec`, chain 1)
+- UnnamedContract (`0xb09dc08428c8b4efb4ff9c0827386cdf34277996`, chain 1)
+- UnnamedContract (`0xd5e3edf5b68135d559d572e26bf863fbc1950033`, chain 1)
+- AddressManager (`0x15a52fed1c448028a240b603dd93f2697e12dc82`, chain 1)
+- L1CrossDomainMessenger (`0x012c341506ee1939e56084f43ae5dbce224ce2af`, chain 1)
+- L1ERC721Bridge (`0x132b3456300332d488f946b818eb9512931ebcaa`, chain 1)
+- OptimismMintableERC20Factory (`0xf2b7b677d14f4f570d084d7d615254f984e7089e`, chain 1)
+- OptimismPortal2 (`0x639f2aece398aa76b07e59ef6abe2cfe32bacb68`, chain 1)
+- ProxyAdmin (`0x75a223fb459461b9fa61dd25109ea05522b4b492`, chain 1)
+- SystemConfig (`0x0b4cfc49acc656ce6d03cb0794860da92be3e8ec`, chain 1)
 
 ## Contract Surface Quality
 
@@ -106,18 +106,18 @@ The pinned logic-topography run contains 7 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AddressManager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226624 | `0x15a52f...12dc82` | ⚠️ Unaudited |
-| Ancient8 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3e5a19...4062df` | ⚠️ Unaudited |
-| ERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf2e04d...38f302` | ⚠️ Unaudited |
-| L1CrossDomainMessenger | unknown | project_anchor | own_supporting | 1 | ethereum | unit-226636 | `0x012c34...4ce2af` | ⚠️ Unaudited |
-| L1ERC721Bridge | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226623 | `0x132b34...1ebcaa` | ⚠️ Unaudited |
-| L1StandardBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x12d4e6...36fb80` | ⚠️ Unaudited |
-| L2OutputOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1f6161...90fbf6` | ⚠️ Unaudited |
-| OptimismMintableERC20Factory | unknown | project_anchor | own_supporting | 1 | ethereum | unit-226639 | `0xf2b7b6...e7089e` | ⚠️ Unaudited |
-| OptimismPortal | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9fc6a6...59e75e` | ⚠️ Unaudited |
-| OptimismPortal2 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-226638 | `0x639f2a...bacb68` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | project_anchor | third_party_dependency | 0 | ethereum | unit-226628 | `0x75a223...b4b492` | ⚠️ Unaudited |
-| SystemConfig | unknown | project_anchor | own_supporting | 1 | ethereum | unit-226637 | `0x0b4cfc...e3e8ec` | ⚠️ Unaudited |
+| AddressManager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226624 | `0x15a52fed1c448028a240b603dd93f2697e12dc82` | ⚠️ Unaudited |
+| Ancient8 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3e5a19c91266ad8ce2477b91585d1856b84062df` | ⚠️ Unaudited |
+| ERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf2e04d727bb448082e9f2f27f7b64be9f438f302` | ⚠️ Unaudited |
+| L1CrossDomainMessenger | unknown | project_anchor | own_supporting | 1 | ethereum | unit-226636 | `0x012c341506ee1939e56084f43ae5dbce224ce2af` | ⚠️ Unaudited |
+| L1ERC721Bridge | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226623 | `0x132b3456300332d488f946b818eb9512931ebcaa` | ⚠️ Unaudited |
+| L1StandardBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x12d4e64e1b46d27a00fe392653a894c1dd36fb80` | ⚠️ Unaudited |
+| L2OutputOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1f61619e8c228fb67204cd157a3e50aa6690fbf6` | ⚠️ Unaudited |
+| OptimismMintableERC20Factory | unknown | project_anchor | own_supporting | 1 | ethereum | unit-226639 | `0xf2b7b677d14f4f570d084d7d615254f984e7089e` | ⚠️ Unaudited |
+| OptimismPortal | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9fc6a608b45c6f129650c26a34bbe5d26959e75e` | ⚠️ Unaudited |
+| OptimismPortal2 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-226638 | `0x639f2aece398aa76b07e59ef6abe2cfe32bacb68` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | project_anchor | third_party_dependency | 0 | ethereum | unit-226628 | `0x75a223fb459461b9fa61dd25109ea05522b4b492` | ⚠️ Unaudited |
+| SystemConfig | unknown | project_anchor | own_supporting | 1 | ethereum | unit-226637 | `0x0b4cfc49acc656ce6d03cb0794860da92be3e8ec` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -137,16 +137,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000006` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000007` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000010` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000015` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x42847d...463df0` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x97423a...57c0e5` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226631 | `0xb09dc0...277996` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb76d6e...108d4e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226632 | `0xd5e3ed...950033` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd812d6...f0d424` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4200000000000000000000000000000000000006` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4200000000000000000000000000000000000007` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4200000000000000000000000000000000000010` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4200000000000000000000000000000000000015` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x42847d8faff45c72a92cce9458fe622001463df0` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x97423a68bae94b5de52d767a17abcc54c157c0e5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226631 | `0xb09dc08428c8b4efb4ff9c0827386cdf34277996` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb76d6e8c82d06fd262ef3799db73d5a724108d4e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226632 | `0xd5e3edf5b68135d559d572e26bf863fbc1950033` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd812d616a7c54ee1c8e9c9cd20d72090bdf0d424` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -165,12 +165,12 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x15a52f...12dc82` | AddressManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x012c34...4ce2af` | L1CrossDomainMessenger | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x132b34...1ebcaa` | L1ERC721Bridge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xf2b7b6...e7089e` | OptimismMintableERC20Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x639f2a...bacb68` | OptimismPortal2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x0b4cfc...e3e8ec` | SystemConfig | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x15a52fed1c448028a240b603dd93f2697e12dc82` | AddressManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x012c341506ee1939e56084f43ae5dbce224ce2af` | L1CrossDomainMessenger | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x132b3456300332d488f946b818eb9512931ebcaa` | L1ERC721Bridge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xf2b7b677d14f4f570d084d7d615254f984e7089e` | OptimismMintableERC20Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x639f2aece398aa76b07e59ef6abe2cfe32bacb68` | OptimismPortal2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x0b4cfc49acc656ce6d03cb0794860da92be3e8ec` | SystemConfig | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

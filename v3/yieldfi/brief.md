@@ -52,18 +52,18 @@ The pinned logic-topography run contains 39 contract row(s) across arbitrum, ava
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- TransparentUpgradeableProxy (`0x08fb98...c5f05c`, chain 1)
-- TransparentUpgradeableProxy (`0x13a9f3...929ff0`, chain 1)
-- TransparentUpgradeableProxy (`0x3edae9...4ee668`, chain 1)
-- TransparentUpgradeableProxy (`0x5c46ed...ba3878`, chain 1)
-- TransparentUpgradeableProxy (`0x67dba3...241df5`, chain 1)
-- TransparentUpgradeableProxy (`0x803438...b3fce1`, chain 1)
-- TransparentUpgradeableProxy (`0x95178e...6832fa`, chain 1)
-- TransparentUpgradeableProxy (`0x9a7664...0f7505`, chain 1)
-- TransparentUpgradeableProxy (`0xbbb6ed...963aa6`, chain 1)
-- TransparentUpgradeableProxy (`0xc9ec62...849961`, chain 1)
-- TransparentUpgradeableProxy (`0xdd5eff...318894`, chain 1)
-- TransparentUpgradeableProxy (`0xf6cdcf...abdba4`, chain 1)
+- TransparentUpgradeableProxy (`0x08fb9833a5a84d5bcecdf5a4a635d33260c5f05c`, chain 1)
+- TransparentUpgradeableProxy (`0x13a9f3f09588c4e5c6cddb1164398630bf929ff0`, chain 1)
+- TransparentUpgradeableProxy (`0x3edae9c342ba1c0ece710db1f0c7bccec24ee668`, chain 1)
+- TransparentUpgradeableProxy (`0x5c46ed83fc4446282a75d30375d993357aba3878`, chain 1)
+- TransparentUpgradeableProxy (`0x67dba3444a99b9788e78932015312b2550241df5`, chain 1)
+- TransparentUpgradeableProxy (`0x803438689b101aede853c9604d32aa80f0b3fce1`, chain 1)
+- TransparentUpgradeableProxy (`0x95178e55fe7edd0792b9819b7654c9ee076832fa`, chain 1)
+- TransparentUpgradeableProxy (`0x9a766451b18df401e39109f8a9f06355be0f7505`, chain 1)
+- TransparentUpgradeableProxy (`0xbbb6edf1811fda36f591c617b51d2d43e4963aa6`, chain 1)
+- TransparentUpgradeableProxy (`0xc9ec62d1e2ada282c3544178664d98cf62849961`, chain 1)
+- TransparentUpgradeableProxy (`0xdd5eff0756db08bad0ff16b66f88f506e7318894`, chain 1)
+- TransparentUpgradeableProxy (`0xf6cdcf759e39c29eb843cbfd549a7d9b82abdba4`, chain 1)
 
 ## Contract Surface Quality
 
@@ -109,77 +109,77 @@ The pinned logic-topography run contains 39 contract row(s) across arbitrum, ava
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Administrator | unknown | project_anchor | own_supporting | 1 | ethereum | unit-263554 | `0x803438...b3fce1` | ✅ Audited |
-| ChainlinkOracleAdapter | operational_periphery | project_anchor | own_supporting | 1 | ethereum | unit-263574 | `0xf6cdcf...abdba4` | ✅ Audited |
-| FeatureRegistry | registry | project_anchor | own_supporting | 1 | ethereum | unit-263573 | `0xc9ec62...849961` | ✅ Audited |
-| GreenlistFeature | unknown | project_anchor | own_supporting | 1 | ethereum | unit-263568 | `0x13a9f3...929ff0` | ✅ Audited |
-| LimitsFeature | unknown | project_anchor | own_supporting | 1 | ethereum | unit-263570 | `0xbbb6ed...963aa6` | ✅ Audited |
-| Manager | governance | project_anchor | own_supporting | 1 | ethereum | unit-263566 | `0x08fb98...c5f05c` | ✅ Audited |
-| NAV | unknown | project_anchor | own_supporting | 1 | ethereum | unit-263563 | `0x95178e...6832fa` | ✅ Audited |
-| PriceOracle | operational_periphery | project_anchor | own_supporting | 1 | ethereum | unit-263565 | `0x67dba3...241df5` | ✅ Audited |
-| VaultFactory | registry | project_anchor | own_supporting | 1 | ethereum | unit-263576 | `0x5c46ed...ba3878` | ✅ Audited |
+| Administrator | unknown | project_anchor | own_supporting | 1 | ethereum | unit-263554 | `0x803438689b101aede853c9604d32aa80f0b3fce1` | ✅ Audited |
+| ChainlinkOracleAdapter | operational_periphery | project_anchor | own_supporting | 1 | ethereum | unit-263574 | `0xf6cdcf759e39c29eb843cbfd549a7d9b82abdba4` | ✅ Audited |
+| FeatureRegistry | registry | project_anchor | own_supporting | 1 | ethereum | unit-263573 | `0xc9ec62d1e2ada282c3544178664d98cf62849961` | ✅ Audited |
+| GreenlistFeature | unknown | project_anchor | own_supporting | 1 | ethereum | unit-263568 | `0x13a9f3f09588c4e5c6cddb1164398630bf929ff0` | ✅ Audited |
+| LimitsFeature | unknown | project_anchor | own_supporting | 1 | ethereum | unit-263570 | `0xbbb6edf1811fda36f591c617b51d2d43e4963aa6` | ✅ Audited |
+| Manager | governance | project_anchor | own_supporting | 1 | ethereum | unit-263566 | `0x08fb9833a5a84d5bcecdf5a4a635d33260c5f05c` | ✅ Audited |
+| NAV | unknown | project_anchor | own_supporting | 1 | ethereum | unit-263563 | `0x95178e55fe7edd0792b9819b7654c9ee076832fa` | ✅ Audited |
+| PriceOracle | operational_periphery | project_anchor | own_supporting | 1 | ethereum | unit-263565 | `0x67dba3444a99b9788e78932015312b2550241df5` | ✅ Audited |
+| VaultFactory | registry | project_anchor | own_supporting | 1 | ethereum | unit-263576 | `0x5c46ed83fc4446282a75d30375d993357aba3878` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (57)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Administrator | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x9305a0...29bdff`; ethereum `0xf2de80...51aa26` | ⚠️ Unaudited |
-| BridgeCCIP | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-263529 | `0x6be164...12b1ee` | ⚠️ Unaudited |
-| BridgeCCIP | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | optimism | unit-263534 | `0xa358f0...770604` | ⚠️ Unaudited |
-| BridgeCCIP | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-263545 | `0x383d63...6924ce` | ⚠️ Unaudited |
-| BridgeCCIP | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sonic | unit-263537 | `0x321520...2189d9` | ⚠️ Unaudited |
-| BridgeCCIP | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-263552 | `0xb3138a...385c30` | ⚠️ Unaudited |
-| BridgeCCIP | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-263541 | `0x8a264a...48f066` | ⚠️ Unaudited |
-| BridgeCCIP | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-263544 | `0xf6aebd...a9f9df` | ⚠️ Unaudited |
-| BridgeLR | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-263530 | `0x8484e4...942bdc` | ⚠️ Unaudited |
-| BridgeMB | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0b7e6c...b19f60` | ⚠️ Unaudited |
-| LockBox | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x0407d3...5f4d6d`; ethereum `0xbc5c54...12d1c9` | ⚠️ Unaudited |
-| LockBox | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263555 | `0x659b5b...0e2231` | ⚠️ Unaudited |
-| LockBox | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xaf60c7...d4355d` | ⚠️ Unaudited |
-| Manager | governance | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263562 | `0x03acc3...08c8dc` | ⚠️ Unaudited |
-| Manager | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263569 | 2 deployments: ethereum `0x88538b...993935`; ethereum `0xa356be...744dd2` | ⚠️ Unaudited |
-| Manager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0x03acc3...08c8dc` | ⚠️ Unaudited |
-| Manager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0x03acc3...08c8dc` | ⚠️ Unaudited |
-| Manager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0x08fb98...c5f05c` | ⚠️ Unaudited |
-| Manager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | `0x03acc3...08c8dc` | ⚠️ Unaudited |
-| Manager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x03acc3...08c8dc` | ⚠️ Unaudited |
-| Manager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x03acc3...08c8dc` | ⚠️ Unaudited |
-| Receipt | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263575 | 2 deployments: ethereum `0x154e5d...b8deed`; ethereum `0xce1f3d...5f68f1` | ⚠️ Unaudited |
-| Receipt | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x441e2e...27a693` | ⚠️ Unaudited |
-| Registry | registry | project_anchor | own_supporting | 1 | ethereum | unit-263558 | `0x9a7664...0f7505` | ⚠️ Unaudited |
-| Registry | registry | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0x9a7664...0f7505` | ⚠️ Unaudited |
-| SToken | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263556 | 2 deployments: ethereum `0x20b8f4...f4dc0d`; ethereum `0x4f8e14...cb95f2` | ⚠️ Unaudited |
-| SToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9f4a9e...2cedcc` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | ethereum | n/a | 3 deployments: ethereum `0x24bc41...cb6e01`; ethereum `0xaec8c1...337026`; ethereum `0xdfbd30...70db53` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | proxy | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0x5c46ed...ba3878`; sonic `0xf4f447...ee55de` | ⚠️ Unaudited |
-| Vault | core_logic | non_address_book | non_address_book_inventory (excluded) | 3 | ethereum | n/a | 3 deployments: ethereum `0x06c2c7...1c4f27`; ethereum `0x386e09...468e9c`; ethereum `0xd04ae7...b08ff0` | ⚠️ Unaudited |
-| Vault | core_logic | project_anchor | own_supporting | 1 | ethereum | unit-263564 | `0x3edae9...4ee668` | ⚠️ Unaudited |
-| Vault | core_logic | project_anchor | own_supporting | 1 | ethereum | unit-263577 | `0xdd5eff...318894` | ⚠️ Unaudited |
-| Vault | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0xdd5eff...318894` | ⚠️ Unaudited |
-| vyToken | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263567 | `0x1e2a56...749e1b` | ⚠️ Unaudited |
-| vyToken | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263572 | `0x2e3c5e...0d92fc` | ⚠️ Unaudited |
-| vyToken | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263571 | `0x307311...a5c9f9` | ⚠️ Unaudited |
-| vyTokenL2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0xf4f447...ee55de` | ⚠️ Unaudited |
-| vyTokenL2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0xf4f447...ee55de` | ⚠️ Unaudited |
-| vyTokenL2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x8c93a6...6a7f90` | ⚠️ Unaudited |
-| vyTokenL2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0xf4f447...ee55de` | ⚠️ Unaudited |
-| vyTokenL2 | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | arbitrum | unit-263581 | `0x8c93a6...6a7f90` | ⚠️ Unaudited |
-| vyTokenL2 | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | arbitrum | unit-263578 | `0xf4f447...ee55de` | ⚠️ Unaudited |
-| vyTokenL2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | `0xf4f447...ee55de` | ⚠️ Unaudited |
-| Yield | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xa52bc2...5df01a`; ethereum `0xf4ef3b...78427b` | ⚠️ Unaudited |
-| YToken | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263559 | `0x19ebd1...7f35cb` | ⚠️ Unaudited |
-| YToken | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263561 | `0x1ce7d9...845a97` | ⚠️ Unaudited |
-| YToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x79e243...f82c8d`; ethereum `0x8ae736...3fdd69` | ⚠️ Unaudited |
-| YToken | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263557 | `0x8464f6...ec123a` | ⚠️ Unaudited |
-| YToken | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263560 | `0xa01200...fc6c43` | ⚠️ Unaudited |
-| YTokenL2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0x4772d2...5c8121` | ⚠️ Unaudited |
-| YTokenL2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0x4772d2...5c8121` | ⚠️ Unaudited |
-| YTokenL2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | `0x4772d2...5c8121` | ⚠️ Unaudited |
-| YTokenL2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x1f52ed...671fe8` | ⚠️ Unaudited |
-| YTokenL2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x4772d2...5c8121` | ⚠️ Unaudited |
-| YTokenL2 | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | arbitrum | unit-263580 | `0x1f52ed...671fe8` | ⚠️ Unaudited |
-| YTokenL2 | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | arbitrum | unit-263579 | `0x4772d2...5c8121` | ⚠️ Unaudited |
-| YTokenL2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | `0x4772d2...5c8121` | ⚠️ Unaudited |
+| Administrator | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x9305a0cc13293b69dee0b9d281d21144b029bdff`; ethereum `0xf2de8048f002b70202d05249810e72914651aa26` | ⚠️ Unaudited |
+| BridgeCCIP | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-263529 | `0x6be164af10879a86e4643089638b6864ef12b1ee` | ⚠️ Unaudited |
+| BridgeCCIP | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | optimism | unit-263534 | `0xa358f0e78dd6cafa810b6f08e248ba1bf1770604` | ⚠️ Unaudited |
+| BridgeCCIP | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-263545 | `0x383d63d824eb3758a721fda66932f160c56924ce` | ⚠️ Unaudited |
+| BridgeCCIP | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sonic | unit-263537 | `0x321520f89076836a0e306e4a41bccd1bfd2189d9` | ⚠️ Unaudited |
+| BridgeCCIP | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-263552 | `0xb3138a82c715cab9ea8247631b653f6e48385c30` | ⚠️ Unaudited |
+| BridgeCCIP | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-263541 | `0x8a264a32d73d12e597e9532f1d16bac12948f066` | ⚠️ Unaudited |
+| BridgeCCIP | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-263544 | `0xf6aebdeb2add0ab53a0090dc8714719604a9f9df` | ⚠️ Unaudited |
+| BridgeLR | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-263530 | `0x8484e4440e22683573e94b4eb040802307942bdc` | ⚠️ Unaudited |
+| BridgeMB | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0b7e6c528d13ade83c85cefbb72158c7e1b19f60` | ⚠️ Unaudited |
+| LockBox | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x0407d37e3a8cc7e8bcbc69ab31b8da4be25f4d6d`; ethereum `0xbc5c54133673f5de40b2b2ff4c067f17bb12d1c9` | ⚠️ Unaudited |
+| LockBox | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263555 | `0x659b5bc7f2f888db3d5901b78cdb34df270e2231` | ⚠️ Unaudited |
+| LockBox | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xaf60c7f41c93ebb380dee6e7de9ce28b7fd4355d` | ⚠️ Unaudited |
+| Manager | governance | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263562 | `0x03acc35286baae6d73d99a9f14ef13752208c8dc` | ⚠️ Unaudited |
+| Manager | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263569 | 2 deployments: ethereum `0x88538b8199238efe82f53862b1eaf5e705993935`; ethereum `0xa356be4391227195b16ae6a26f1f23f606744dd2` | ⚠️ Unaudited |
+| Manager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0x03acc35286baae6d73d99a9f14ef13752208c8dc` | ⚠️ Unaudited |
+| Manager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0x03acc35286baae6d73d99a9f14ef13752208c8dc` | ⚠️ Unaudited |
+| Manager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0x08fb9833a5a84d5bcecdf5a4a635d33260c5f05c` | ⚠️ Unaudited |
+| Manager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | `0x03acc35286baae6d73d99a9f14ef13752208c8dc` | ⚠️ Unaudited |
+| Manager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x03acc35286baae6d73d99a9f14ef13752208c8dc` | ⚠️ Unaudited |
+| Manager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x03acc35286baae6d73d99a9f14ef13752208c8dc` | ⚠️ Unaudited |
+| Receipt | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263575 | 2 deployments: ethereum `0x154e5dd6d7a0efbb343a3f2146a31590eeb8deed`; ethereum `0xce1f3d4d4f8de6a4b5b8e73c174d46ba135f68f1` | ⚠️ Unaudited |
+| Receipt | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x441e2ebcefb4fcfa3608be416df7a5bb5927a693` | ⚠️ Unaudited |
+| Registry | registry | project_anchor | own_supporting | 1 | ethereum | unit-263558 | `0x9a766451b18df401e39109f8a9f06355be0f7505` | ⚠️ Unaudited |
+| Registry | registry | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0x9a766451b18df401e39109f8a9f06355be0f7505` | ⚠️ Unaudited |
+| SToken | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263556 | 2 deployments: ethereum `0x20b8f4a172e3a0bdb96c89d49629e83f73f4dc0d`; ethereum `0x4f8e1426a9d10bddc11d26042ad270f16ccb95f2` | ⚠️ Unaudited |
+| SToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9f4a9ef56b164da0bf06218030c7c16d592cedcc` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | ethereum | n/a | 3 deployments: ethereum `0x24bc4128942786f7cff18af3f71041d003cb6e01`; ethereum `0xaec8c110aa8f326b11d068ed6380ea4263337026`; ethereum `0xdfbd303d2aea36919978aabae46b182c0270db53` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0x5c46ed83fc4446282a75d30375d993357aba3878`; sonic `0xf4f447e6afa04c9d11ef0e2fc0d7f19c24ee55de` | ⚠️ Unaudited |
+| Vault | core_logic | non_address_book | non_address_book_inventory (excluded) | 3 | ethereum | n/a | 3 deployments: ethereum `0x06c2c73f30135c831d010ec7b82d0f32321c4f27`; ethereum `0x386e0983d0e05f5239fd029793ef3ba37b468e9c`; ethereum `0xd04ae722b3fe56812e13bb212a79cea7c1b08ff0` | ⚠️ Unaudited |
+| Vault | core_logic | project_anchor | own_supporting | 1 | ethereum | unit-263564 | `0x3edae9c342ba1c0ece710db1f0c7bccec24ee668` | ⚠️ Unaudited |
+| Vault | core_logic | project_anchor | own_supporting | 1 | ethereum | unit-263577 | `0xdd5eff0756db08bad0ff16b66f88f506e7318894` | ⚠️ Unaudited |
+| Vault | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0xdd5eff0756db08bad0ff16b66f88f506e7318894` | ⚠️ Unaudited |
+| vyToken | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263567 | `0x1e2a5622178f93efd4349e2eb3dbdf2761749e1b` | ⚠️ Unaudited |
+| vyToken | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263572 | `0x2e3c5e514eef46727de1fe44618027a9b70d92fc` | ⚠️ Unaudited |
+| vyToken | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263571 | `0x3073112c2c4800b89764973d5790ccc7fba5c9f9` | ⚠️ Unaudited |
+| vyTokenL2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0xf4f447e6afa04c9d11ef0e2fc0d7f19c24ee55de` | ⚠️ Unaudited |
+| vyTokenL2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0xf4f447e6afa04c9d11ef0e2fc0d7f19c24ee55de` | ⚠️ Unaudited |
+| vyTokenL2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x8c93a6752bfe29fda26eba8df4390c642e6a7f90` | ⚠️ Unaudited |
+| vyTokenL2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0xf4f447e6afa04c9d11ef0e2fc0d7f19c24ee55de` | ⚠️ Unaudited |
+| vyTokenL2 | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | arbitrum | unit-263581 | `0x8c93a6752bfe29fda26eba8df4390c642e6a7f90` | ⚠️ Unaudited |
+| vyTokenL2 | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | arbitrum | unit-263578 | `0xf4f447e6afa04c9d11ef0e2fc0d7f19c24ee55de` | ⚠️ Unaudited |
+| vyTokenL2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | `0xf4f447e6afa04c9d11ef0e2fc0d7f19c24ee55de` | ⚠️ Unaudited |
+| Yield | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xa52bc229c750b35c10d54f23ad3cb6e8155df01a`; ethereum `0xf4ef3ba63593dfd0967577b2bb3c9ba51d78427b` | ⚠️ Unaudited |
+| YToken | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263559 | `0x19ebd191f7a24ece672ba13a302212b5ef7f35cb` | ⚠️ Unaudited |
+| YToken | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263561 | `0x1ce7d9942ff78c328a4181b9f3826fee6d845a97` | ⚠️ Unaudited |
+| YToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x79e243f6504615497c1374ea0b6365dd1ef82c8d`; ethereum `0x8ae736308611addd0c6581abc46676a3153fdd69` | ⚠️ Unaudited |
+| YToken | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263557 | `0x8464f6ecae1ea58ec816c13f964030eab8ec123a` | ⚠️ Unaudited |
+| YToken | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263560 | `0xa01200b2e74de6489cf56864e3d76bbc06fc6c43` | ⚠️ Unaudited |
+| YTokenL2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0x4772d2e014f9fc3a820c444e3313968e9a5c8121` | ⚠️ Unaudited |
+| YTokenL2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0x4772d2e014f9fc3a820c444e3313968e9a5c8121` | ⚠️ Unaudited |
+| YTokenL2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | `0x4772d2e014f9fc3a820c444e3313968e9a5c8121` | ⚠️ Unaudited |
+| YTokenL2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x1f52edf2815bfa625890b61d6bf43ddc24671fe8` | ⚠️ Unaudited |
+| YTokenL2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x4772d2e014f9fc3a820c444e3313968e9a5c8121` | ⚠️ Unaudited |
+| YTokenL2 | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | arbitrum | unit-263580 | `0x1f52edf2815bfa625890b61d6bf43ddc24671fe8` | ⚠️ Unaudited |
+| YTokenL2 | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | arbitrum | unit-263579 | `0x4772d2e014f9fc3a820c444e3313968e9a5c8121` | ⚠️ Unaudited |
+| YTokenL2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | `0x4772d2e014f9fc3a820c444e3313968e9a5c8121` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -199,30 +199,30 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Manager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | `0x03acc3...08c8dc` | ❓ Unverified |
-| Proxy (impl: 0x0ca01ee564363e115c1990fac21314ddfa210f4a) | proxy | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | linea | unit-263582 | `0xde3fdb...6383d6` | ❓ Unverified |
-| Proxy (impl: 0x4ed3166fab585d9da1126955c9b1f0f61c971801) | proxy | non_address_book | non_address_book_inventory (excluded) | 1 | plasma | n/a | `0xf4f447...ee55de` | ❓ Unverified |
-| Proxy (impl: 0x52cb1a9a9154f0e0a3c7ce08f95caee6062dbca9) | proxy | non_address_book | non_address_book_inventory (excluded) | 1 | plasma | n/a | `0x4772d2...5c8121` | ❓ Unverified |
-| Proxy (impl: 0x6c6e88a438092fda33ad2304c54180b41c35fa64) | proxy | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | linea | unit-263583 | `0x168bc4...7569e7` | ❓ Unverified |
-| Proxy (impl: 0x7b7e9dc2ff8e48e311d727786ed6aa7b1ce6bfa8) | proxy | non_address_book | non_address_book_inventory (excluded) | 1 | plasma | n/a | `0x03acc3...08c8dc` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | optimism | unit-263531 | `0x1ce7d9...845a97` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | optimism | unit-263532 | `0x4ca1da...92c87b` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | optimism | unit-263533 | `0x895e15...3b1579` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | optimism | unit-263535 | `0xabd5e0...9413ef` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | optimism | unit-263536 | `0xd62311...319939` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-263547 | `0x4ca1da...92c87b` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-263548 | `0x87e829...6f3dec` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-263549 | `0x895e15...3b1579` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-263550 | `0x9305a0...29bdff` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-263551 | `0x9f4a9e...2cedcc` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | plasma | unit-263553 | `0xe58226...d9ef2e` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-263538 | `0x4ca1da...92c87b` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-263539 | `0x87e829...6f3dec` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-263540 | `0x895e15...3b1579` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-263542 | `0x9305a0...29bdff` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-263543 | `0x9f4a9e...2cedcc` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | linea | unit-263546 | `0xda2d9e...9c225f` | ❓ Unverified |
-| YTokenL2 | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | linea | unit-263584 | `0x4e559d...4c2e28` | ❓ Unverified |
+| Manager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | `0x03acc35286baae6d73d99a9f14ef13752208c8dc` | ❓ Unverified |
+| Proxy (impl: 0x0ca01ee564363e115c1990fac21314ddfa210f4a) | proxy | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | linea | unit-263582 | `0xde3fdbd847b25b8621174253a399b6b8406383d6` | ❓ Unverified |
+| Proxy (impl: 0x4ed3166fab585d9da1126955c9b1f0f61c971801) | proxy | non_address_book | non_address_book_inventory (excluded) | 1 | plasma | n/a | `0xf4f447e6afa04c9d11ef0e2fc0d7f19c24ee55de` | ❓ Unverified |
+| Proxy (impl: 0x52cb1a9a9154f0e0a3c7ce08f95caee6062dbca9) | proxy | non_address_book | non_address_book_inventory (excluded) | 1 | plasma | n/a | `0x4772d2e014f9fc3a820c444e3313968e9a5c8121` | ❓ Unverified |
+| Proxy (impl: 0x6c6e88a438092fda33ad2304c54180b41c35fa64) | proxy | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | linea | unit-263583 | `0x168bc4db5dcbeca279983324d3082c47e47569e7` | ❓ Unverified |
+| Proxy (impl: 0x7b7e9dc2ff8e48e311d727786ed6aa7b1ce6bfa8) | proxy | non_address_book | non_address_book_inventory (excluded) | 1 | plasma | n/a | `0x03acc35286baae6d73d99a9f14ef13752208c8dc` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | optimism | unit-263531 | `0x1ce7d9942ff78c328a4181b9f3826fee6d845a97` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | optimism | unit-263532 | `0x4ca1da924629b53615e2c3c2389fc8760f92c87b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | optimism | unit-263533 | `0x895e15020c3f52ddd4d8e9514eb83c39f53b1579` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | optimism | unit-263535 | `0xabd5e0c639d09272688854c43d47b309769413ef` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | optimism | unit-263536 | `0xd623117f3f6190e3144038b5f0f0c2db5f319939` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-263547 | `0x4ca1da924629b53615e2c3c2389fc8760f92c87b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-263548 | `0x87e8298ff74d5542d72b7ff07475ddf11f6f3dec` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-263549 | `0x895e15020c3f52ddd4d8e9514eb83c39f53b1579` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-263550 | `0x9305a0cc13293b69dee0b9d281d21144b029bdff` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-263551 | `0x9f4a9ef56b164da0bf06218030c7c16d592cedcc` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | plasma | unit-263553 | `0xe582262bc5c35dc213388a928da5162753d9ef2e` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-263538 | `0x4ca1da924629b53615e2c3c2389fc8760f92c87b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-263539 | `0x87e8298ff74d5542d72b7ff07475ddf11f6f3dec` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-263540 | `0x895e15020c3f52ddd4d8e9514eb83c39f53b1579` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-263542 | `0x9305a0cc13293b69dee0b9d281d21144b029bdff` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-263543 | `0x9f4a9ef56b164da0bf06218030c7c16d592cedcc` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | linea | unit-263546 | `0xda2d9e7233984db3b928241b04f003fb569c225f` | ❓ Unverified |
+| YTokenL2 | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | linea | unit-263584 | `0x4e559dbccbe87de66c6a9f3f25231096f24c2e28` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -261,25 +261,25 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
 | 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | AccessControl | unmatched — not counted | — | listed in scope | no |
-| 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | Administrator | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x803438...b3fce1` — deployed 2026-01-15 17:52:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | Administrator | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x803438689b101aede853c9604d32aa80f0b3fce1` — deployed 2026-01-15 17:52:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | IEvents | unmatched — not counted | — | listed in scope | no |
 | 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | IFeature | unmatched — not counted | — | listed in scope | no |
 | 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | IManager | unmatched — not counted | — | listed in scope | no |
 | 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | IRegistry | unmatched — not counted | — | listed in scope | no |
 | 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | IVault | unmatched — not counted | — | listed in scope | no |
-| 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | Manager | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x08fb98...c5f05c` — deployed 2026-01-15 17:55:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | NAV | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x95178e...6832fa` — deployed 2026-01-15 17:54:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | Registry | ambiguous — not counted | TransparentUpgradeableProxy (proxy) (alternative) `0x9a7664...0f7505` — deployed 2026-01-15 17:52:47+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x5c46ed...ba3878` — deployed 2026-01-15 17:56:11+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0xc9ec62...849961` — deployed 2026-01-15 17:53:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | Vault | ambiguous — not counted | TransparentUpgradeableProxy (proxy) (alternative) `0xdd5eff...318894` — deployed 2026-01-22 12:41:47+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x3edae9...4ee668` — deployed 2026-01-15 19:43:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | FeatureRegistry | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xc9ec62...849961` — deployed 2026-01-15 17:53:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | GreenlistFeature | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x13a9f3...929ff0` — deployed 2026-01-15 17:56:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | Manager | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x08fb9833a5a84d5bcecdf5a4a635d33260c5f05c` — deployed 2026-01-15 17:55:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | NAV | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x95178e55fe7edd0792b9819b7654c9ee076832fa` — deployed 2026-01-15 17:54:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | Registry | ambiguous — not counted | TransparentUpgradeableProxy (proxy) (alternative) `0x9a766451b18df401e39109f8a9f06355be0f7505` — deployed 2026-01-15 17:52:47+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x5c46ed83fc4446282a75d30375d993357aba3878` — deployed 2026-01-15 17:56:11+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0xc9ec62d1e2ada282c3544178664d98cf62849961` — deployed 2026-01-15 17:53:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | Vault | ambiguous — not counted | TransparentUpgradeableProxy (proxy) (alternative) `0xdd5eff0756db08bad0ff16b66f88f506e7318894` — deployed 2026-01-22 12:41:47+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x3edae9c342ba1c0ece710db1f0c7bccec24ee668` — deployed 2026-01-15 19:43:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | FeatureRegistry | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xc9ec62d1e2ada282c3544178664d98cf62849961` — deployed 2026-01-15 17:53:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | GreenlistFeature | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x13a9f3f09588c4e5c6cddb1164398630bf929ff0` — deployed 2026-01-15 17:56:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | IGreenlistFeature | unmatched — not counted | — | listed in scope | no |
 | 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | IFeatureRegistry | unmatched — not counted | — | listed in scope | no |
 | 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | ILimitsFeature | unmatched — not counted | — | listed in scope | no |
-| 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | LimitsFeature | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xbbb6ed...963aa6` — deployed 2026-01-15 17:57:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | LimitsFeature | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xbbb6edf1811fda36f591c617b51d2d43e4963aa6` — deployed 2026-01-15 17:57:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | Create2Factory | unmatched — not counted | — | listed in scope | no |
 | 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | IVaultFactory | unmatched — not counted | — | listed in scope | no |
-| 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | VaultFactory | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x5c46ed...ba3878` — deployed 2026-01-15 17:56:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | VaultFactory | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x5c46ed83fc4446282a75d30375d993357aba3878` — deployed 2026-01-15 17:56:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | IAccessControl | unmatched — not counted | — | listed in scope | no |
 | 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | IBlackList | unmatched — not counted | — | listed in scope | no |
 | 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | IPausable | unmatched — not counted | — | listed in scope | no |
@@ -293,21 +293,21 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | Roles | unmatched — not counted | — | listed in scope | no |
 | 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | SafeCastLib | unmatched — not counted | — | listed in scope | no |
 | 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | SignerLib | unmatched — not counted | — | listed in scope | no |
-| 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | ChainlinkOracleAdapter | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf6cdcf...abdba4` — deployed 2026-01-16 18:12:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | ChainlinkOracleAdapter | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf6cdcf759e39c29eb843cbfd549a7d9b82abdba4` — deployed 2026-01-16 18:12:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | IOracleAdapter | unmatched — not counted | — | listed in scope | no |
 | 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | IPriceOracle | unmatched — not counted | — | listed in scope | no |
-| 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | PriceOracle | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x67dba3...241df5` — deployed 2026-01-15 17:53:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf | PriceOracle | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x67dba3444a99b9788e78932015312b2550241df5` — deployed 2026-01-15 17:53:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2025-06-17-cyfrin-yieldfi-pr19-vytoken-v2.2.pdf | BridgeCCIP | unmatched — not counted | — | — | no |
 | 2025-06-17-cyfrin-yieldfi-pr19-vytoken-v2.2.pdf | BridgeMB | unmatched — not counted | — | — | no |
 | 2025-06-17-cyfrin-yieldfi-pr19-vytoken-v2.2.pdf | LockBox | unmatched — not counted | — | — | no |
-| 2025-06-17-cyfrin-yieldfi-pr19-vytoken-v2.2.pdf | Manager | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x08fb98...c5f05c` — deployed 2026-01-15 17:55:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2025-06-17-cyfrin-yieldfi-pr19-vytoken-v2.2.pdf | Manager | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x08fb9833a5a84d5bcecdf5a4a635d33260c5f05c` — deployed 2026-01-15 17:55:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2025-06-17-cyfrin-yieldfi-pr19-vytoken-v2.2.pdf | YToken | unmatched — not counted | — | — | no |
 | 2025-06-17-cyfrin-yieldfi-pr19-vytoken-v2.2.pdf | YTokenL2 | unmatched — not counted | — | — | no |
 | 2025-06-17-cyfrin-yieldfi-pr19-vytoken-v2.2.pdf | Yield | unmatched — not counted | — | — | no |
 | 2025-06-17-cyfrin-yieldfi-pr19-vytoken-v2.2.pdf | dYTokenL1 | unmatched — not counted | — | — | no |
 | 2025-06-17-cyfrin-yieldfi-pr19-vytoken-v2.2.pdf | dYTokenL2 | unmatched — not counted | — | — | no |
 | 2025-04-24-cyfrin-yieldfi-v2.0.pdf | Access | unmatched — not counted | — | — | no |
-| 2025-04-24-cyfrin-yieldfi-v2.0.pdf | Administrator | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x803438...b3fce1` — deployed 2026-01-15 17:52:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2025-04-24-cyfrin-yieldfi-v2.0.pdf | Administrator | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x803438689b101aede853c9604d32aa80f0b3fce1` — deployed 2026-01-15 17:52:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2025-04-24-cyfrin-yieldfi-v2.0.pdf | BondReceipt | unmatched — not counted | — | — | no |
 | 2025-04-24-cyfrin-yieldfi-v2.0.pdf | Bridge | unmatched — not counted | — | — | no |
 | 2025-04-24-cyfrin-yieldfi-v2.0.pdf | BridgeCCIP | unmatched — not counted | — | — | no |
@@ -319,7 +319,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | 2025-04-24-cyfrin-yieldfi-v2.0.pdf | Helpers | unmatched — not counted | — | — | no |
 | 2025-04-24-cyfrin-yieldfi-v2.0.pdf | LockBox | unmatched — not counted | — | — | no |
 | 2025-04-24-cyfrin-yieldfi-v2.0.pdf | MPC | unmatched — not counted | — | — | no |
-| 2025-04-24-cyfrin-yieldfi-v2.0.pdf | Manager | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x08fb98...c5f05c` — deployed 2026-01-15 17:55:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2025-04-24-cyfrin-yieldfi-v2.0.pdf | Manager | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x08fb9833a5a84d5bcecdf5a4a635d33260c5f05c` — deployed 2026-01-15 17:55:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2025-04-24-cyfrin-yieldfi-v2.0.pdf | OracleAdapter | unmatched — not counted | — | — | no |
 | 2025-04-24-cyfrin-yieldfi-v2.0.pdf | PerpetualBond | unmatched — not counted | — | — | no |
 | 2025-04-24-cyfrin-yieldfi-v2.0.pdf | Receipt | unmatched — not counted | — | — | no |
@@ -328,25 +328,25 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | 2025-04-24-cyfrin-yieldfi-v2.0.pdf | YTokenL2 | unmatched — not counted | — | — | no |
 | 2025-04-24-cyfrin-yieldfi-v2.0.pdf | Yield | unmatched — not counted | — | — | no |
 | YieldFi Sherlock Audit Report.pdf | AccessControl | unmatched — not counted | — | listed in scope | no |
-| YieldFi Sherlock Audit Report.pdf | Administrator | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x803438...b3fce1` — deployed 2026-01-15 17:52:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| YieldFi Sherlock Audit Report.pdf | Administrator | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x803438689b101aede853c9604d32aa80f0b3fce1` — deployed 2026-01-15 17:52:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | YieldFi Sherlock Audit Report.pdf | IEvents | unmatched — not counted | — | listed in scope | no |
 | YieldFi Sherlock Audit Report.pdf | IFeature | unmatched — not counted | — | listed in scope | no |
 | YieldFi Sherlock Audit Report.pdf | IManager | unmatched — not counted | — | listed in scope | no |
 | YieldFi Sherlock Audit Report.pdf | IRegistry | unmatched — not counted | — | listed in scope | no |
 | YieldFi Sherlock Audit Report.pdf | IVault | unmatched — not counted | — | listed in scope | no |
-| YieldFi Sherlock Audit Report.pdf | Manager | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x08fb98...c5f05c` — deployed 2026-01-15 17:55:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| YieldFi Sherlock Audit Report.pdf | NAV | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x95178e...6832fa` — deployed 2026-01-15 17:54:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| YieldFi Sherlock Audit Report.pdf | Registry | ambiguous — not counted | TransparentUpgradeableProxy (proxy) (alternative) `0x9a7664...0f7505` — deployed 2026-01-15 17:52:47+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x5c46ed...ba3878` — deployed 2026-01-15 17:56:11+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0xc9ec62...849961` — deployed 2026-01-15 17:53:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| YieldFi Sherlock Audit Report.pdf | Vault | ambiguous — not counted | TransparentUpgradeableProxy (proxy) (alternative) `0xdd5eff...318894` — deployed 2026-01-22 12:41:47+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x3edae9...4ee668` — deployed 2026-01-15 19:43:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| YieldFi Sherlock Audit Report.pdf | FeatureRegistry | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xc9ec62...849961` — deployed 2026-01-15 17:53:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| YieldFi Sherlock Audit Report.pdf | GreenlistFeature | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x13a9f3...929ff0` — deployed 2026-01-15 17:56:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| YieldFi Sherlock Audit Report.pdf | Manager | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x08fb9833a5a84d5bcecdf5a4a635d33260c5f05c` — deployed 2026-01-15 17:55:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| YieldFi Sherlock Audit Report.pdf | NAV | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x95178e55fe7edd0792b9819b7654c9ee076832fa` — deployed 2026-01-15 17:54:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| YieldFi Sherlock Audit Report.pdf | Registry | ambiguous — not counted | TransparentUpgradeableProxy (proxy) (alternative) `0x9a766451b18df401e39109f8a9f06355be0f7505` — deployed 2026-01-15 17:52:47+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x5c46ed83fc4446282a75d30375d993357aba3878` — deployed 2026-01-15 17:56:11+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0xc9ec62d1e2ada282c3544178664d98cf62849961` — deployed 2026-01-15 17:53:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| YieldFi Sherlock Audit Report.pdf | Vault | ambiguous — not counted | TransparentUpgradeableProxy (proxy) (alternative) `0xdd5eff0756db08bad0ff16b66f88f506e7318894` — deployed 2026-01-22 12:41:47+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x3edae9c342ba1c0ece710db1f0c7bccec24ee668` — deployed 2026-01-15 19:43:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| YieldFi Sherlock Audit Report.pdf | FeatureRegistry | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xc9ec62d1e2ada282c3544178664d98cf62849961` — deployed 2026-01-15 17:53:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| YieldFi Sherlock Audit Report.pdf | GreenlistFeature | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x13a9f3f09588c4e5c6cddb1164398630bf929ff0` — deployed 2026-01-15 17:56:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | YieldFi Sherlock Audit Report.pdf | IGreenlistFeature | unmatched — not counted | — | listed in scope | no |
 | YieldFi Sherlock Audit Report.pdf | IFeatureRegistry | unmatched — not counted | — | listed in scope | no |
 | YieldFi Sherlock Audit Report.pdf | ILimitsFeature | unmatched — not counted | — | listed in scope | no |
-| YieldFi Sherlock Audit Report.pdf | LimitsFeature | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xbbb6ed...963aa6` — deployed 2026-01-15 17:57:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| YieldFi Sherlock Audit Report.pdf | LimitsFeature | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xbbb6edf1811fda36f591c617b51d2d43e4963aa6` — deployed 2026-01-15 17:57:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | YieldFi Sherlock Audit Report.pdf | Create2Factory | unmatched — not counted | — | listed in scope | no |
 | YieldFi Sherlock Audit Report.pdf | IVaultFactory | unmatched — not counted | — | listed in scope | no |
-| YieldFi Sherlock Audit Report.pdf | VaultFactory | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x5c46ed...ba3878` — deployed 2026-01-15 17:56:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| YieldFi Sherlock Audit Report.pdf | VaultFactory | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x5c46ed83fc4446282a75d30375d993357aba3878` — deployed 2026-01-15 17:56:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | YieldFi Sherlock Audit Report.pdf | IAccessControl | unmatched — not counted | — | listed in scope | no |
 | YieldFi Sherlock Audit Report.pdf | IBlackList | unmatched — not counted | — | listed in scope | no |
 | YieldFi Sherlock Audit Report.pdf | IPausable | unmatched — not counted | — | listed in scope | no |
@@ -360,13 +360,13 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | YieldFi Sherlock Audit Report.pdf | Roles | unmatched — not counted | — | listed in scope | no |
 | YieldFi Sherlock Audit Report.pdf | SafeCastLib | unmatched — not counted | — | listed in scope | no |
 | YieldFi Sherlock Audit Report.pdf | SignerLib | unmatched — not counted | — | listed in scope | no |
-| YieldFi Sherlock Audit Report.pdf | ChainlinkOracleAdapter | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf6cdcf...abdba4` — deployed 2026-01-16 18:12:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| YieldFi Sherlock Audit Report.pdf | ChainlinkOracleAdapter | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf6cdcf759e39c29eb843cbfd549a7d9b82abdba4` — deployed 2026-01-16 18:12:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | YieldFi Sherlock Audit Report.pdf | IOracleAdapter | unmatched — not counted | — | listed in scope | no |
 | YieldFi Sherlock Audit Report.pdf | IPriceOracle | unmatched — not counted | — | listed in scope | no |
-| YieldFi Sherlock Audit Report.pdf | PriceOracle | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x67dba3...241df5` — deployed 2026-01-15 17:53:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| YieldFi Sherlock Audit Report.pdf | PriceOracle | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x67dba3444a99b9788e78932015312b2550241df5` — deployed 2026-01-15 17:53:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Cyfrin x YieldFi Audit Report.pdf | BridgeMB | unmatched — not counted | — | listed in Audit Scope | no |
 | Cyfrin x YieldFi Audit Report.pdf | BridgeCCIP | unmatched — not counted | — | listed in Audit Scope | no |
-| Cyfrin x YieldFi Audit Report.pdf | Manager | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x08fb98...c5f05c` — deployed 2026-01-15 17:55:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Cyfrin x YieldFi Audit Report.pdf | Manager | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x08fb9833a5a84d5bcecdf5a4a635d33260c5f05c` — deployed 2026-01-15 17:55:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Cyfrin x YieldFi Audit Report.pdf | LockBox | unmatched — not counted | — | listed in Audit Scope | no |
 | Cyfrin x YieldFi Audit Report.pdf | Yield | unmatched — not counted | — | listed in Audit Scope | no |
 | Cyfrin x YieldFi Audit Report.pdf | YToken | unmatched — not counted | — | listed in Audit Scope | no |
@@ -374,7 +374,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Cyfrin x YieldFi Audit Report.pdf | dYTokenL1 | unmatched — not counted | — | listed in Audit Scope | no |
 | Cyfrin x YieldFi Audit Report.pdf | dYTokenL2 | unmatched — not counted | — | listed in Audit Scope | no |
 | YieldFi x Cyfrin Team Audit Report.pdf | Access | unmatched — not counted | — | listed in scope | no |
-| YieldFi x Cyfrin Team Audit Report.pdf | Administrator | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x803438...b3fce1` — deployed 2026-01-15 17:52:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| YieldFi x Cyfrin Team Audit Report.pdf | Administrator | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x803438689b101aede853c9604d32aa80f0b3fce1` — deployed 2026-01-15 17:52:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | YieldFi x Cyfrin Team Audit Report.pdf | BridgeCCIP | unmatched — not counted | — | listed in scope | no |
 | YieldFi x Cyfrin Team Audit Report.pdf | Bridge | unmatched — not counted | — | listed in scope | no |
 | YieldFi x Cyfrin Team Audit Report.pdf | BridgeLR | unmatched — not counted | — | listed in scope | no |
@@ -384,7 +384,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | YieldFi x Cyfrin Team Audit Report.pdf | YToken | unmatched — not counted | — | listed in scope | no |
 | YieldFi x Cyfrin Team Audit Report.pdf | YTokenL2 | unmatched — not counted | — | listed in scope | no |
 | YieldFi x Cyfrin Team Audit Report.pdf | BondReceipt | unmatched — not counted | — | listed in scope | no |
-| YieldFi x Cyfrin Team Audit Report.pdf | Manager | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x08fb98...c5f05c` — deployed 2026-01-15 17:55:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| YieldFi x Cyfrin Team Audit Report.pdf | Manager | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x08fb9833a5a84d5bcecdf5a4a635d33260c5f05c` — deployed 2026-01-15 17:55:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | YieldFi x Cyfrin Team Audit Report.pdf | MPC | unmatched — not counted | — | listed in scope | no |
 | YieldFi x Cyfrin Team Audit Report.pdf | PerpetualBond | unmatched — not counted | — | listed in scope | no |
 | YieldFi x Cyfrin Team Audit Report.pdf | Receipt | unmatched — not counted | — | listed in scope | no |
@@ -416,7 +416,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | YieldFi x Halborn Audit Report.pdf | IRole | unmatched — not counted | — | listed in scope | no |
 | YieldFi x Halborn Audit Report.pdf | IPausable | unmatched — not counted | — | listed in scope | no |
 | YieldFi x Halborn Audit Report.pdf | Access | unmatched — not counted | — | listed in scope | no |
-| YieldFi x Halborn Audit Report.pdf | Administrator | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x803438...b3fce1` — deployed 2026-01-15 17:52:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| YieldFi x Halborn Audit Report.pdf | Administrator | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x803438689b101aede853c9604d32aa80f0b3fce1` — deployed 2026-01-15 17:52:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | YieldFi x Spearbit : Cantina Audit Report.pdf | SToken | unmatched — not counted | — | Context:SToken.sol#L79 | no |
 | YieldFi x Spearbit : Cantina Audit Report.pdf | STokenL2 | unmatched — not counted | — | Context:STokenL2.sol#L26 | no |
 | YieldFi x Spearbit : Cantina Audit Report.pdf | ISToken | unmatched — not counted | — | Context:ISToken.sol#L6 | no |
@@ -428,9 +428,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x9a7664...0f7505` | Registry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x3edae9...4ee668` | Vault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xdd5eff...318894` | Vault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x9a766451b18df401e39109f8a9f06355be0f7505` | Registry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x3edae9c342ba1c0ece710db1f0c7bccec24ee668` | Vault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xdd5eff0756db08bad0ff16b66f88f506e7318894` | Vault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

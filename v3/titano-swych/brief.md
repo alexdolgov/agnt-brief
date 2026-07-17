@@ -53,8 +53,8 @@ The pinned logic-topography run contains 1 contract row(s) across bsc. Structura
 
 ### Forked Contracts
 
-**Titano** (`0x4e3cab...420aee`, chain 56)
-Origin: libero-financial (`0x0dfcb4...414d78`)
+**Titano** (`0x4e3cabd3ad77420ff9031d19899594041c420aee`, chain 56)
+Origin: libero-financial (`0x0dfcb45eae071b3b846e220560bbcdd958414d78`)
 Containment: 82.6% - 19 functions inherited
 Centroid audit status: pending_validation
 
@@ -113,7 +113,7 @@ Removals (removed from original):
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Titano | unknown | project_anchor | own_supporting | 0 | bsc | unit-394068 | `0x4e3cab...420aee` | ✅ Audited |
+| Titano | unknown | project_anchor | own_supporting | 0 | bsc | unit-394068 | `0x4e3cabd3ad77420ff9031d19899594041c420aee` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 
@@ -155,7 +155,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| DL audit link | Titano | own contract | Titano (selected) `0x4e3cab...420aee` — deployed 2022-04-22 14:50:32+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| DL audit link | Titano | own contract | Titano (selected) `0x4e3cabd3ad77420ff9031d19899594041c420aee` — deployed 2022-04-22 14:50:32+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 
 ## Coverage Gaps
 

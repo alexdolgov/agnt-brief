@@ -60,8 +60,8 @@ The protocol forms a single structural family (Registries) of 1 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ClonableBeaconProxy | registry | arbitrum | n/a | [`0x65c936...49977f`](./contracts/arbitrum-42161/0x65c936f008bc34fe819bce9fa5afd9dc2d49977f/) | ⚠️ Unaudited |
-| WeightedPool | core_logic | arbitrum | n/a | [`0x569061...cb75a4`](./contracts/arbitrum-42161/0x569061e2d807881f4a33e1cbe1063bc614cb75a4/) | ⚠️ Unaudited |
+| ClonableBeaconProxy | registry | arbitrum | n/a | [`0x65c936f008bc34fe819bce9fa5afd9dc2d49977f`](./contracts/arbitrum-42161/0x65c936f008bc34fe819bce9fa5afd9dc2d49977f/) | ⚠️ Unaudited |
+| WeightedPool | core_logic | arbitrum | n/a | [`0x569061e2d807881f4a33e1cbe1063bc614cb75a4`](./contracts/arbitrum-42161/0x569061e2d807881f4a33e1cbe1063bc614cb75a4/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -98,8 +98,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | [`0x65c936...49977f`](./contracts/arbitrum-42161/0x65c936f008bc34fe819bce9fa5afd9dc2d49977f/) | ClonableBeaconProxy | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x569061...cb75a4`](./contracts/arbitrum-42161/0x569061e2d807881f4a33e1cbe1063bc614cb75a4/) | WeightedPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x65c936f008bc34fe819bce9fa5afd9dc2d49977f`](./contracts/arbitrum-42161/0x65c936f008bc34fe819bce9fa5afd9dc2d49977f/) | ClonableBeaconProxy | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x569061e2d807881f4a33e1cbe1063bc614cb75a4`](./contracts/arbitrum-42161/0x569061e2d807881f4a33e1cbe1063bc614cb75a4/) | WeightedPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

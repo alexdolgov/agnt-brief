@@ -82,7 +82,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | fantom | n/a | 12 deployments: fantom `0x04068d...5d5b75`; fantom `0x049d68...3a3c7a`; fantom `0x0a10da...0c53a5`; fantom `0x407c47...24a759`; fantom `0x49c290...54ab7a`; fantom `0x525ca3...943379`; fantom `0x62a2ff...0851fe`; fantom `0x8d7d34...ed89ae`; fantom `0xa0e0f4...405831`; fantom `0xaebff2...5fa2ed`; fantom `0xe5009d...f0e5cd`; fantom `0xfb98b3...ea213b` | ❓ Unverified |
+| UnnamedContract | unknown | fantom | n/a | 12 deployments: fantom `0x04068da6c83afcfa0e13ba15a6696662335d5b75`; fantom `0x049d68029688eabf473097a2fc38ef61633a3c7a`; fantom `0x0a10dad90b9c6fb8b87bff3857a4b012890c53a5`; fantom `0x407c47e3fdb7952ee53aa232b5f28566a024a759`; fantom `0x49c290ff692149a4e16611c694fded42c954ab7a`; fantom `0x525ca3877a78c6ae12292d0a55765775e3943379`; fantom `0x62a2ff4bccc5dd5316c358cdf079ec5e5c0851fe`; fantom `0x8d7d3409881b51466b483b11ea1b8a03cded89ae`; fantom `0xa0e0f462d66de459711bc721ce1fdcc3d9405831`; fantom `0xaebff260074782a3dfd8981352b44767a05fa2ed`; fantom `0xe5009dd5912a68b0d7c6f874cd0b4492c9f0e5cd`; fantom `0xfb98b335551a418cd0737375a2ea0ded62ea213b` | ❓ Unverified |
 
 ## Audit Inventory
 

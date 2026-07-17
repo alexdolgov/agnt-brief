@@ -52,21 +52,21 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- ERC1967Proxy (`0x3ef3d8...0dd9ae`, chain 137)
-- ERC1967Proxy (`0x9d6094...09f9a7`, chain 137)
-- FiatTokenProxy (`0x3c499c...5c3359`, chain 137)
-- InitializableImmutableAdminUpgradeabilityProxy (`0x794a61...4814ad`, chain 137)
-- MetaMorphoV1_1 (`0x3f33f9...9664c2`, chain 137)
-- MetaMorphoV1_1 (`0x781fb7...558c42`, chain 137)
-- MetaMorphoV1_1 (`0xf5c81d...073ccf`, chain 137)
-- MetaMorphoV1_1 (`0xfd0685...24d6c8`, chain 137)
-- PoolAddressesProvider (`0xa97684...ab3cdb`, chain 137)
-- SafeProxy (`0x9e33fa...410585`, chain 137)
-- Timelock (`0xcc3e7c...dd4a02`, chain 137)
-- UChildERC20Proxy (`0x1bfd67...d9bfd6`, chain 137)
-- UChildERC20Proxy (`0x8505b9...7aef5c`, chain 137)
-- UiPoolDataProviderV3 (`0x68100b...463e93`, chain 137)
-- WMATIC (`0x0d500b...df1270`, chain 137)
+- ERC1967Proxy (`0x3ef3d8ba38ebe18db133cec108f4d14ce00dd9ae`, chain 137)
+- ERC1967Proxy (`0x9d60947d49911e3c262c108f97fe07cde209f9a7`, chain 137)
+- FiatTokenProxy (`0x3c499c542cef5e3811e1192ce70d8cc03d5c3359`, chain 137)
+- InitializableImmutableAdminUpgradeabilityProxy (`0x794a61358d6845594f94dc1db02a252b5b4814ad`, chain 137)
+- MetaMorphoV1_1 (`0x3f33f9f7e2d7cfbcbdf8ea8b870a6e3d449664c2`, chain 137)
+- MetaMorphoV1_1 (`0x781fb7f6d845e3be129289833b04d43aa8558c42`, chain 137)
+- MetaMorphoV1_1 (`0xf5c81d25ee174d83f1fd202ca94ae6070d073ccf`, chain 137)
+- MetaMorphoV1_1 (`0xfd06859a671c21497a2eb8c5e3fea48de924d6c8`, chain 137)
+- PoolAddressesProvider (`0xa97684ead0e402dc232d5a977953df7ecbab3cdb`, chain 137)
+- SafeProxy (`0x9e33faae38ff641094fa68c65c2ce600b3410585`, chain 137)
+- Timelock (`0xcc3e7c85bb0ee4f09380e041fee95a0caedd4a02`, chain 137)
+- UChildERC20Proxy (`0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6`, chain 137)
+- UChildERC20Proxy (`0x8505b9d2254a7ae468c0e9dd10ccea3a837aef5c`, chain 137)
+- UiPoolDataProviderV3 (`0x68100bd5345ea474d93577127c11f39ff8463e93`, chain 137)
+- WMATIC (`0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270`, chain 137)
 
 ## Contract Surface Quality
 
@@ -112,20 +112,20 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Distributor | unknown | project_anchor | own_supporting | 1 | polygon | unit-381816 | `0x3ef3d8...0dd9ae` | ⚠️ Unaudited |
-| FiatTokenV2_2 | unknown | project_anchor | own_supporting | 1 | polygon | unit-381814 | `0x3c499c...5c3359` | ⚠️ Unaudited |
-| MetaMorphoV1_1 | unknown | project_anchor | own_supporting | 0 | polygon | unit-381807 | `0x3f33f9...9664c2` | ⚠️ Unaudited |
-| MetaMorphoV1_1 | unknown | project_anchor | own_supporting | 0 | polygon | unit-381809 | `0x781fb7...558c42` | ⚠️ Unaudited |
-| MetaMorphoV1_1 | unknown | project_anchor | own_supporting | 0 | polygon | unit-381812 | `0xf5c81d...073ccf` | ⚠️ Unaudited |
-| MetaMorphoV1_1 | unknown | project_anchor | own_supporting | 0 | polygon | unit-381813 | `0xfd0685...24d6c8` | ⚠️ Unaudited |
-| PoolAddressesProvider | unknown | project_anchor | own_supporting | 0 | polygon | unit-381810 | `0xa97684...ab3cdb` | ⚠️ Unaudited |
-| PoolInstance | unknown | project_anchor | own_supporting | 1 | polygon | unit-381817 | `0x794a61...4814ad` | ⚠️ Unaudited |
-| SafeL2 | unknown | project_anchor | own_supporting | 1 | polygon | unit-381815 | `0x9e33fa...410585` | ⚠️ Unaudited |
-| SecuritizeVault | unknown | project_anchor | own_supporting | 1 | polygon | unit-381818 | `0x9d6094...09f9a7` | ⚠️ Unaudited |
-| Timelock | unknown | project_anchor | own_supporting | 0 | polygon | unit-381811 | `0xcc3e7c...dd4a02` | ⚠️ Unaudited |
-| UChildERC20 | unknown | project_anchor | own_supporting | 2 | polygon | unit-381819 (2 proxies) | 2 deployments: polygon `0x1bfd67...d9bfd6`; polygon `0x8505b9...7aef5c` | ⚠️ Unaudited |
-| UiPoolDataProviderV3 | unknown | project_anchor | own_supporting | 0 | polygon | unit-381808 | `0x68100b...463e93` | ⚠️ Unaudited |
-| WMATIC | unknown | project_anchor | own_supporting | 0 | polygon | unit-381806 | `0x0d500b...df1270` | ⚠️ Unaudited |
+| Distributor | unknown | project_anchor | own_supporting | 1 | polygon | unit-381816 | `0x3ef3d8ba38ebe18db133cec108f4d14ce00dd9ae` | ⚠️ Unaudited |
+| FiatTokenV2_2 | unknown | project_anchor | own_supporting | 1 | polygon | unit-381814 | `0x3c499c542cef5e3811e1192ce70d8cc03d5c3359` | ⚠️ Unaudited |
+| MetaMorphoV1_1 | unknown | project_anchor | own_supporting | 0 | polygon | unit-381807 | `0x3f33f9f7e2d7cfbcbdf8ea8b870a6e3d449664c2` | ⚠️ Unaudited |
+| MetaMorphoV1_1 | unknown | project_anchor | own_supporting | 0 | polygon | unit-381809 | `0x781fb7f6d845e3be129289833b04d43aa8558c42` | ⚠️ Unaudited |
+| MetaMorphoV1_1 | unknown | project_anchor | own_supporting | 0 | polygon | unit-381812 | `0xf5c81d25ee174d83f1fd202ca94ae6070d073ccf` | ⚠️ Unaudited |
+| MetaMorphoV1_1 | unknown | project_anchor | own_supporting | 0 | polygon | unit-381813 | `0xfd06859a671c21497a2eb8c5e3fea48de924d6c8` | ⚠️ Unaudited |
+| PoolAddressesProvider | unknown | project_anchor | own_supporting | 0 | polygon | unit-381810 | `0xa97684ead0e402dc232d5a977953df7ecbab3cdb` | ⚠️ Unaudited |
+| PoolInstance | unknown | project_anchor | own_supporting | 1 | polygon | unit-381817 | `0x794a61358d6845594f94dc1db02a252b5b4814ad` | ⚠️ Unaudited |
+| SafeL2 | unknown | project_anchor | own_supporting | 1 | polygon | unit-381815 | `0x9e33faae38ff641094fa68c65c2ce600b3410585` | ⚠️ Unaudited |
+| SecuritizeVault | unknown | project_anchor | own_supporting | 1 | polygon | unit-381818 | `0x9d60947d49911e3c262c108f97fe07cde209f9a7` | ⚠️ Unaudited |
+| Timelock | unknown | project_anchor | own_supporting | 0 | polygon | unit-381811 | `0xcc3e7c85bb0ee4f09380e041fee95a0caedd4a02` | ⚠️ Unaudited |
+| UChildERC20 | unknown | project_anchor | own_supporting | 2 | polygon | unit-381819 (2 proxies) | 2 deployments: polygon `0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6`; polygon `0x8505b9d2254a7ae468c0e9dd10ccea3a837aef5c` | ⚠️ Unaudited |
+| UiPoolDataProviderV3 | unknown | project_anchor | own_supporting | 0 | polygon | unit-381808 | `0x68100bd5345ea474d93577127c11f39ff8463e93` | ⚠️ Unaudited |
+| WMATIC | unknown | project_anchor | own_supporting | 0 | polygon | unit-381806 | `0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

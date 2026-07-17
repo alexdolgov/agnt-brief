@@ -52,20 +52,20 @@ The pinned logic-topography run contains 2 contract row(s) across arbitrum, aval
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x8d6f54...60f9b1`, chain 1)
-- UnnamedContract (`0xa8e068...219632`, chain 10)
-- UnnamedContract (`0x3f680a...f884d5`, chain 56)
-- UnnamedContract (`0x6fc0f2...112b51`, chain 130)
-- UnnamedContract (`0x6fc0f2...112b51`, chain 146)
-- UnnamedContract (`0xda1d1d...074362`, chain 1329)
-- UnnamedContract (`0xc094c2...5f7287`, chain 5000)
-- UnnamedContract (`0x6fc0f2...112b51`, chain 8453)
-- UnnamedContract (`0xf838e8...9c45c9`, chain 9745)
-- UnnamedContract (`0x9de724...204fb4`, chain 42161)
-- UnnamedContract (`0xb1ee4f...b1f1f5`, chain 42161)
-- UnnamedContract (`0x8d6f54...60f9b1`, chain 59144)
-- OptinProxyFactory (`0x0c0e28...d05a91`, chain 137)
-- TransparentUpgradeableProxy (`0x90beb5...24cd84`, chain 999)
+- UnnamedContract (`0x8d6f5479b14348186fae9bc7e636e947c260f9b1`, chain 1)
+- UnnamedContract (`0xa8e0684887b9475f8942df6a89beba5b25219632`, chain 10)
+- UnnamedContract (`0x3f680ab9e51eeed9381de5275f4995611ff884d5`, chain 56)
+- UnnamedContract (`0x6fc0f2320483fa03fbfdf626ddbae2cc4b112b51`, chain 130)
+- UnnamedContract (`0x6fc0f2320483fa03fbfdf626ddbae2cc4b112b51`, chain 146)
+- UnnamedContract (`0xda1d1de87c4d90a07a6462ccd9be651a0d074362`, chain 1329)
+- UnnamedContract (`0xc094c224ce0406bc338e00837b96ad2e265f7287`, chain 5000)
+- UnnamedContract (`0x6fc0f2320483fa03fbfdf626ddbae2cc4b112b51`, chain 8453)
+- UnnamedContract (`0xf838e8bd649fc6fbc48d44e9d87273c0519c45c9`, chain 9745)
+- UnnamedContract (`0x9de724b0efee0fba07fe21a16b9bf9bbb5204fb4`, chain 42161)
+- UnnamedContract (`0xb1ee4f77a1691696a737ab9852e389cf4cb1f1f5`, chain 42161)
+- UnnamedContract (`0x8d6f5479b14348186fae9bc7e636e947c260f9b1`, chain 59144)
+- OptinProxyFactory (`0x0c0e287f6e4de685f4b44a5282a3ad4a29d05a91`, chain 137)
+- TransparentUpgradeableProxy (`0x90beb507a1ba7d64633540cbce615b574224cd84`, chain 999)
 
 ## Contract Surface Quality
 
@@ -110,24 +110,24 @@ The pinned logic-topography run contains 2 contract row(s) across arbitrum, aval
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| OptinProxyFactory | unknown | project_anchor | own_supporting | 1 | polygon | unit-244534 | `0x0c0e28...d05a91` | ✅ Audited |
+| OptinProxyFactory | unknown | project_anchor | own_supporting | 1 | polygon | unit-244534 | `0x0c0e287f6e4de685f4b44a5282a3ad4a29d05a91` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (12)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| EquilibriaCrutch | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb10794...77ad62` | ⚠️ Unaudited |
-| FeeRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x16fd09...7c18e8` | ⚠️ Unaudited |
-| LagoonVault | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x03d1ec...e14bfc` | ⚠️ Unaudited |
-| MockLogicRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x2f02db...86dbfd` | ⚠️ Unaudited |
-| ProtocolRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x13664b...fe49b9` | ⚠️ Unaudited |
-| PTOraclePriceAdapterFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x70efd8...001d05` | ⚠️ Unaudited |
-| ShowcaseBug | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x23fbda...d397cb` | ⚠️ Unaudited |
-| Silo | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x572f73...e4839b` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | hyperliquid | unit-244535 | `0x90beb5...24cd84` | ⚠️ Unaudited |
-| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x065ef7...0d8950` | ⚠️ Unaudited |
-| Vault_v0_5_0 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x23fbda...d397cb` | ⚠️ Unaudited |
-| Vault0_2_1 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x652716...23ab20` | ⚠️ Unaudited |
+| EquilibriaCrutch | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb107943bbf7c6874af38ebf49c15b383b077ad62` | ⚠️ Unaudited |
+| FeeRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x16fd09034c04d31f7776159393e3a577fa7c18e8` | ⚠️ Unaudited |
+| LagoonVault | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc` | ⚠️ Unaudited |
+| MockLogicRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x2f02db0a974841f710362e96742cacc2c786dbfd` | ⚠️ Unaudited |
+| ProtocolRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x13664b3131031e7ff7ca19fb74344da050fe49b9` | ⚠️ Unaudited |
+| PTOraclePriceAdapterFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x70efd899dd4934e25b6042d0a06412e4ea001d05` | ⚠️ Unaudited |
+| ShowcaseBug | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x23fbda54849e8904154c8f8436a59b95b1d397cb` | ⚠️ Unaudited |
+| Silo | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x572f734f7c4673e8864ab79d71f22a9805e4839b` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | hyperliquid | unit-244535 | `0x90beb507a1ba7d64633540cbce615b574224cd84` | ⚠️ Unaudited |
+| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x065ef71bcdc43adb76bd0585d02ffe7c9e0d8950` | ⚠️ Unaudited |
+| Vault_v0_5_0 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x23fbda54849e8904154c8f8436a59b95b1d397cb` | ⚠️ Unaudited |
+| Vault0_2_1 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x652716fad571f04d26a3c8ffd9e593f17123ab20` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -147,19 +147,19 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-244520 | `0x8d6f54...60f9b1` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-244522 | `0xa8e068...219632` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-244530 | `0x3f680a...f884d5` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | unichain | unit-244523 | `0x6fc0f2...112b51` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-244525 | `0x6fc0f2...112b51` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sei | unit-244524 | `0xda1d1d...074362` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | mantle | unit-244529 | `0xc094c2...5f7287` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-244532 | `0x6fc0f2...112b51` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-244533 | `0xf838e8...9c45c9` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-244526 | `0x9de724...204fb4` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-244527 | `0xb1ee4f...b1f1f5` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-244528 | `0xc094c2...5f7287` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-244531 | `0x8d6f54...60f9b1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-244520 | `0x8d6f5479b14348186fae9bc7e636e947c260f9b1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-244522 | `0xa8e0684887b9475f8942df6a89beba5b25219632` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-244530 | `0x3f680ab9e51eeed9381de5275f4995611ff884d5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | unichain | unit-244523 | `0x6fc0f2320483fa03fbfdf626ddbae2cc4b112b51` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-244525 | `0x6fc0f2320483fa03fbfdf626ddbae2cc4b112b51` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sei | unit-244524 | `0xda1d1de87c4d90a07a6462ccd9be651a0d074362` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | mantle | unit-244529 | `0xc094c224ce0406bc338e00837b96ad2e265f7287` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-244532 | `0x6fc0f2320483fa03fbfdf626ddbae2cc4b112b51` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-244533 | `0xf838e8bd649fc6fbc48d44e9d87273c0519c45c9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-244526 | `0x9de724b0efee0fba07fe21a16b9bf9bbb5204fb4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-244527 | `0xb1ee4f77a1691696a737ab9852e389cf4cb1f1f5` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-244528 | `0xc094c224ce0406bc338e00837b96ad2e265f7287` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-244531 | `0x8d6f5479b14348186fae9bc7e636e947c260f9b1` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -251,7 +251,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | NM_0534_Lagoon.pdf | IERC7540Deposit | unmatched — not counted | — | listed in Audited Files table | no |
 | NM_0534_Lagoon.pdf | IERC7540Redeem | unmatched — not counted | — | listed in Audited Files table | no |
 | NM_0534_Lagoon.pdf | IERC7575 | unmatched — not counted | — | listed in Audited Files table | no |
-| NM_0581-FINAL_Lagoon.pdf | OptinProxyFactory | own proxy deployment | OptinProxyFactory (proxy) (selected) `0x0c0e28...d05a91` — deployed 2025-09-27 00:41:25+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| NM_0581-FINAL_Lagoon.pdf | OptinProxyFactory | own proxy deployment | OptinProxyFactory (proxy) (selected) `0x0c0e287f6e4de685f4b44a5282a3ad4a29d05a91` — deployed 2025-09-27 00:41:25+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | NM_0581-FINAL_Lagoon.pdf | OptinProxy | unmatched — not counted | — | listed in Audited Files table and Section 4.2 | no |
 | NM_0581-FINAL_Lagoon.pdf | DelayProxyAdmin | unmatched — not counted | — | listed in Audited Files table and Section 4.3 | no |
 | NM_0581-FINAL_Lagoon.pdf | LogicRegistry | unmatched — not counted | — | listed in Audited Files table and Section 4.4 | no |
@@ -262,7 +262,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | ToB-v0.5.0.pdf | OptinProxy | unmatched — not counted | — | mentioned in coverage section | no |
 | ToB-v0.5.0.pdf | DelayProxyAdmin | unmatched — not counted | — | listed in scope and detailed findings | no |
 | ToB-v0.5.0.pdf | LogicRegistry | unmatched — not counted | — | mentioned in coverage section | no |
-| ToB-v0.5.0.pdf | OptinProxyFactory | own proxy deployment | OptinProxyFactory (proxy) (selected) `0x0c0e28...d05a91` — deployed 2025-09-27 00:41:25+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ToB-v0.5.0.pdf | OptinProxyFactory | own proxy deployment | OptinProxyFactory (proxy) (selected) `0x0c0e287f6e4de685f4b44a5282a3ad4a29d05a91` — deployed 2025-09-27 00:41:25+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ToB-v0.5.0.pdf | Roles | unmatched — not counted | — | mentioned in coverage section | no |
 | ToB-v0.5.0.pdf | Whitelistable | unmatched — not counted | — | mentioned in coverage section | no |
 | ToB-v0.5.0.pdf | Silo | unmatched — not counted | — | mentioned in coverage section | no |
@@ -295,7 +295,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | NM_0822_Lagoon.pdf | VaultStorage | unmatched — not counted | — | listed in audited files table | no |
 | NM_0822_Lagoon.pdf | Enums | unmatched — not counted | — | listed in audited files table | no |
 | NM_0822_Lagoon.pdf | Struct | unmatched — not counted | — | listed in audited files table | no |
-| NM_0822_Lagoon.pdf | OptinProxyFactory | own proxy deployment | OptinProxyFactory (proxy) (selected) `0x0c0e28...d05a91` — deployed 2025-09-27 00:41:25+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| NM_0822_Lagoon.pdf | OptinProxyFactory | own proxy deployment | OptinProxyFactory (proxy) (selected) `0x0c0e287f6e4de685f4b44a5282a3ad4a29d05a91` — deployed 2025-09-27 00:41:25+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ToB-v0.6.0.pdf | AccessableLib | unmatched — not counted | — | listed in scope and findings | no |
 | ToB-v0.6.0.pdf | ERC7540Lib | unmatched — not counted | — | listed in scope and findings | no |
 | ToB-v0.6.0.pdf | FeeLib | unmatched — not counted | — | referenced in findings as FeeLib.computeFee | no |

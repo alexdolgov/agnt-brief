@@ -61,30 +61,30 @@ The protocol comprises 6 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| L1StandardBridge | operational_periphery | ethereum | n/a | [`0x386b76...b26dd8`](./contracts/ethereum-1/0x386b76d9ca5f5fb150b6bfb35cf5379b22b26dd8/) | ✅ Audited |
-| L2OutputOracle | operational_periphery | ethereum | n/a | [`0x92ef6a...9245a4`](./contracts/ethereum-1/0x92ef6af472b39f1b363da45e35530c24619245a4/) | ✅ Audited |
-| OptimismPortal | unknown | ethereum | n/a | [`0x17bfaf...043fb1`](./contracts/ethereum-1/0x17bfafa932d2e23bd9b909fd5b4d2e2a27043fb1/) | ✅ Audited |
-| ZtakingPool | core_logic | ethereum | n/a | [`0xf047ab...aeafa6`](./contracts/ethereum-1/0xf047ab4c75cebf0eb9ed34ae2c186f3611aeafa6/) | ✅ Audited |
+| L1StandardBridge | operational_periphery | ethereum | n/a | [`0x386b76d9ca5f5fb150b6bfb35cf5379b22b26dd8`](./contracts/ethereum-1/0x386b76d9ca5f5fb150b6bfb35cf5379b22b26dd8/) | ✅ Audited |
+| L2OutputOracle | operational_periphery | ethereum | n/a | [`0x92ef6af472b39f1b363da45e35530c24619245a4`](./contracts/ethereum-1/0x92ef6af472b39f1b363da45e35530c24619245a4/) | ✅ Audited |
+| OptimismPortal | unknown | ethereum | n/a | [`0x17bfafa932d2e23bd9b909fd5b4d2e2a27043fb1`](./contracts/ethereum-1/0x17bfafa932d2e23bd9b909fd5b4d2e2a27043fb1/) | ✅ Audited |
+| ZtakingPool | core_logic | ethereum | n/a | [`0xf047ab4c75cebf0eb9ed34ae2c186f3611aeafa6`](./contracts/ethereum-1/0xf047ab4c75cebf0eb9ed34ae2c186f3611aeafa6/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (15)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CrisisControlRegistry | registry | ethereum | n/a | [`0x7d43eb...80f35e`](./contracts/ethereum-1/0x7d43eb137185aea81a020563099e940bb380f35e/) | ⚠️ Unaudited |
-| ERC20RevocableComplianceTokenBasicPackageUpgradable | token | ethereum | n/a | [`0x48ab4e...02717f`](./contracts/ethereum-1/0x48ab4e39ac59f4e88974804b04a991b3a402717f/) | ⚠️ Unaudited |
-| GnosisSafe | governance | ethereum | n/a | 2 deployments: ethereum [`0x2c0b27...2db276`](./contracts/ethereum-1/0x2c0b27f7c8f083b539557a0ba787041bf22db276/); ethereum `0xc463ea...2baf38` | ⚠️ Unaudited |
-| L1CrossDomainMessenger | unknown | ethereum | n/a | [`0x2a721c...5ea091`](./contracts/ethereum-1/0x2a721cbe81a128be0f01040e3353c3805a5ea091/) | ⚠️ Unaudited |
-| L1ERC721Bridge | unknown | ethereum | n/a | [`0x994eeb...0dd244`](./contracts/ethereum-1/0x994eeb321f9cd79b077a5455fc248c77f30dd244/) | ⚠️ Unaudited |
-| OptimismMintableERC20Factory | unknown | ethereum | n/a | [`0xc77ece...90e932`](./contracts/ethereum-1/0xc77ece87c91c44afb5f19638f9a0f75b5d90e932/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | ethereum | n/a | [`0x5b1ef6...fc5257`](./contracts/ethereum-1/0x5b1ef673d9c316b3ee9ed3b4e3cc84952bfc5257/) | ⚠️ Unaudited |
-| ResolverRegistry | registry | ethereum | n/a | [`0x6c8910...d5cf0e`](./contracts/ethereum-1/0x6c89104690452ad7e209f0ab72287c2561d5cf0e/) | ⚠️ Unaudited |
-| RSETH | token | ethereum | n/a | [`0xa1290d...99e5a7`](./contracts/ethereum-1/0xa1290d69c65a6fe4df752f95823fae25cb99e5a7/) | ⚠️ Unaudited |
-| SP1VerifierGateway | periphery | ethereum | n/a | [`0xf35a40...e31f67`](./contracts/ethereum-1/0xf35a4088ea0231c44b9db52d25c0e9e2fee31f67/) | ⚠️ Unaudited |
-| SuperchainConfig | unknown | ethereum | n/a | [`0x745393...6d3da0`](./contracts/ethereum-1/0x745393cc03b5fe668ecd52c0e625f59aad6d3da0/) | ⚠️ Unaudited |
-| SystemConfig | unknown | ethereum | n/a | [`0x30f82a...a428ff`](./contracts/ethereum-1/0x30f82a1ca89226e8b8815d6ebb728e3b18a428ff/) | ⚠️ Unaudited |
-| TokenizedStrategy | core_logic | base | n/a | 2 deployments: base [`0x1a48ce...37e1cc`](./contracts/base-8453/0x1a48cec817bcb5436efe99bab6dde228cc37e1cc/); base `0xe83ef4...ab1dc5` | ⚠️ Unaudited |
-| Verifier | unknown | ethereum | n/a | [`0x6bce74...a1447c`](./contracts/ethereum-1/0x6bce7408c0781dce7b71494274302d4b75a1447c/) | ⚠️ Unaudited |
-| VerifierV2 | unknown | ethereum | n/a | [`0xc25d09...dc9737`](./contracts/ethereum-1/0xc25d093d3a3f58952252d2e763beaf2559dc9737/) | ⚠️ Unaudited |
+| CrisisControlRegistry | registry | ethereum | n/a | [`0x7d43eb137185aea81a020563099e940bb380f35e`](./contracts/ethereum-1/0x7d43eb137185aea81a020563099e940bb380f35e/) | ⚠️ Unaudited |
+| ERC20RevocableComplianceTokenBasicPackageUpgradable | token | ethereum | n/a | [`0x48ab4e39ac59f4e88974804b04a991b3a402717f`](./contracts/ethereum-1/0x48ab4e39ac59f4e88974804b04a991b3a402717f/) | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | n/a | 2 deployments: ethereum [`0x2c0b27f7c8f083b539557a0ba787041bf22db276`](./contracts/ethereum-1/0x2c0b27f7c8f083b539557a0ba787041bf22db276/); ethereum `0xc463eac02572cc964d43d2414023e2c6b62baf38` | ⚠️ Unaudited |
+| L1CrossDomainMessenger | unknown | ethereum | n/a | [`0x2a721cbe81a128be0f01040e3353c3805a5ea091`](./contracts/ethereum-1/0x2a721cbe81a128be0f01040e3353c3805a5ea091/) | ⚠️ Unaudited |
+| L1ERC721Bridge | unknown | ethereum | n/a | [`0x994eeb321f9cd79b077a5455fc248c77f30dd244`](./contracts/ethereum-1/0x994eeb321f9cd79b077a5455fc248c77f30dd244/) | ⚠️ Unaudited |
+| OptimismMintableERC20Factory | unknown | ethereum | n/a | [`0xc77ece87c91c44afb5f19638f9a0f75b5d90e932`](./contracts/ethereum-1/0xc77ece87c91c44afb5f19638f9a0f75b5d90e932/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | ethereum | n/a | [`0x5b1ef673d9c316b3ee9ed3b4e3cc84952bfc5257`](./contracts/ethereum-1/0x5b1ef673d9c316b3ee9ed3b4e3cc84952bfc5257/) | ⚠️ Unaudited |
+| ResolverRegistry | registry | ethereum | n/a | [`0x6c89104690452ad7e209f0ab72287c2561d5cf0e`](./contracts/ethereum-1/0x6c89104690452ad7e209f0ab72287c2561d5cf0e/) | ⚠️ Unaudited |
+| RSETH | token | ethereum | n/a | [`0xa1290d69c65a6fe4df752f95823fae25cb99e5a7`](./contracts/ethereum-1/0xa1290d69c65a6fe4df752f95823fae25cb99e5a7/) | ⚠️ Unaudited |
+| SP1VerifierGateway | periphery | ethereum | n/a | [`0xf35a4088ea0231c44b9db52d25c0e9e2fee31f67`](./contracts/ethereum-1/0xf35a4088ea0231c44b9db52d25c0e9e2fee31f67/) | ⚠️ Unaudited |
+| SuperchainConfig | unknown | ethereum | n/a | [`0x745393cc03b5fe668ecd52c0e625f59aad6d3da0`](./contracts/ethereum-1/0x745393cc03b5fe668ecd52c0e625f59aad6d3da0/) | ⚠️ Unaudited |
+| SystemConfig | unknown | ethereum | n/a | [`0x30f82a1ca89226e8b8815d6ebb728e3b18a428ff`](./contracts/ethereum-1/0x30f82a1ca89226e8b8815d6ebb728e3b18a428ff/) | ⚠️ Unaudited |
+| TokenizedStrategy | core_logic | base | n/a | 2 deployments: base [`0x1a48cec817bcb5436efe99bab6dde228cc37e1cc`](./contracts/base-8453/0x1a48cec817bcb5436efe99bab6dde228cc37e1cc/); base `0xe83ef4375d806c02387069f1b753b2ab76ab1dc5` | ⚠️ Unaudited |
+| Verifier | unknown | ethereum | n/a | [`0x6bce7408c0781dce7b71494274302d4b75a1447c`](./contracts/ethereum-1/0x6bce7408c0781dce7b71494274302d4b75a1447c/) | ⚠️ Unaudited |
+| VerifierV2 | unknown | ethereum | n/a | [`0xc25d093d3a3f58952252d2e763beaf2559dc9737`](./contracts/ethereum-1/0xc25d093d3a3f58952252d2e763beaf2559dc9737/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -104,7 +104,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x0792c4...df3f5b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x0792c46723d479d4c29de5d78d93c0146edf3f5b` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -128,19 +128,19 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x7d43eb...80f35e`](./contracts/ethereum-1/0x7d43eb137185aea81a020563099e940bb380f35e/) | CrisisControlRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x48ab4e...02717f`](./contracts/ethereum-1/0x48ab4e39ac59f4e88974804b04a991b3a402717f/) | ERC20RevocableComplianceTokenBasicPackageUpgradable | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2a721c...5ea091`](./contracts/ethereum-1/0x2a721cbe81a128be0f01040e3353c3805a5ea091/) | L1CrossDomainMessenger | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x994eeb...0dd244`](./contracts/ethereum-1/0x994eeb321f9cd79b077a5455fc248c77f30dd244/) | L1ERC721Bridge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc77ece...90e932`](./contracts/ethereum-1/0xc77ece87c91c44afb5f19638f9a0f75b5d90e932/) | OptimismMintableERC20Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6c8910...d5cf0e`](./contracts/ethereum-1/0x6c89104690452ad7e209f0ab72287c2561d5cf0e/) | ResolverRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa1290d...99e5a7`](./contracts/ethereum-1/0xa1290d69c65a6fe4df752f95823fae25cb99e5a7/) | RSETH | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xf35a40...e31f67`](./contracts/ethereum-1/0xf35a4088ea0231c44b9db52d25c0e9e2fee31f67/) | SP1VerifierGateway | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x745393...6d3da0`](./contracts/ethereum-1/0x745393cc03b5fe668ecd52c0e625f59aad6d3da0/) | SuperchainConfig | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x30f82a...a428ff`](./contracts/ethereum-1/0x30f82a1ca89226e8b8815d6ebb728e3b18a428ff/) | SystemConfig | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x1a48ce...37e1cc`](./contracts/base-8453/0x1a48cec817bcb5436efe99bab6dde228cc37e1cc/) | TokenizedStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6bce74...a1447c`](./contracts/ethereum-1/0x6bce7408c0781dce7b71494274302d4b75a1447c/) | Verifier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc25d09...dc9737`](./contracts/ethereum-1/0xc25d093d3a3f58952252d2e763beaf2559dc9737/) | VerifierV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x7d43eb137185aea81a020563099e940bb380f35e`](./contracts/ethereum-1/0x7d43eb137185aea81a020563099e940bb380f35e/) | CrisisControlRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x48ab4e39ac59f4e88974804b04a991b3a402717f`](./contracts/ethereum-1/0x48ab4e39ac59f4e88974804b04a991b3a402717f/) | ERC20RevocableComplianceTokenBasicPackageUpgradable | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x2a721cbe81a128be0f01040e3353c3805a5ea091`](./contracts/ethereum-1/0x2a721cbe81a128be0f01040e3353c3805a5ea091/) | L1CrossDomainMessenger | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x994eeb321f9cd79b077a5455fc248c77f30dd244`](./contracts/ethereum-1/0x994eeb321f9cd79b077a5455fc248c77f30dd244/) | L1ERC721Bridge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc77ece87c91c44afb5f19638f9a0f75b5d90e932`](./contracts/ethereum-1/0xc77ece87c91c44afb5f19638f9a0f75b5d90e932/) | OptimismMintableERC20Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6c89104690452ad7e209f0ab72287c2561d5cf0e`](./contracts/ethereum-1/0x6c89104690452ad7e209f0ab72287c2561d5cf0e/) | ResolverRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa1290d69c65a6fe4df752f95823fae25cb99e5a7`](./contracts/ethereum-1/0xa1290d69c65a6fe4df752f95823fae25cb99e5a7/) | RSETH | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xf35a4088ea0231c44b9db52d25c0e9e2fee31f67`](./contracts/ethereum-1/0xf35a4088ea0231c44b9db52d25c0e9e2fee31f67/) | SP1VerifierGateway | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x745393cc03b5fe668ecd52c0e625f59aad6d3da0`](./contracts/ethereum-1/0x745393cc03b5fe668ecd52c0e625f59aad6d3da0/) | SuperchainConfig | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x30f82a1ca89226e8b8815d6ebb728e3b18a428ff`](./contracts/ethereum-1/0x30f82a1ca89226e8b8815d6ebb728e3b18a428ff/) | SystemConfig | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x1a48cec817bcb5436efe99bab6dde228cc37e1cc`](./contracts/base-8453/0x1a48cec817bcb5436efe99bab6dde228cc37e1cc/) | TokenizedStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6bce7408c0781dce7b71494274302d4b75a1447c`](./contracts/ethereum-1/0x6bce7408c0781dce7b71494274302d4b75a1447c/) | Verifier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc25d093d3a3f58952252d2e763beaf2559dc9737`](./contracts/ethereum-1/0xc25d093d3a3f58952252d2e763beaf2559dc9737/) | VerifierV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

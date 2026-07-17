@@ -62,8 +62,8 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BlastPoints | unknown | blast | n/a | [`0x45bafa...20589b`](./contracts/blast-81457/0x45bafad5a6a531bc18cf6ce5b02c58ea4d20589b/) | ⚠️ Unaudited |
-| OffchainFund | unknown | blast | n/a | [`0x010869...e9beb2`](./contracts/blast-81457/0x010869d79f5f3e4b6d18783ac1acc4e01be9beb2/) | ⚠️ Unaudited |
+| BlastPoints | unknown | blast | n/a | [`0x45bafad5a6a531bc18cf6ce5b02c58ea4d20589b`](./contracts/blast-81457/0x45bafad5a6a531bc18cf6ce5b02c58ea4d20589b/) | ⚠️ Unaudited |
+| OffchainFund | unknown | blast | n/a | [`0x010869d79f5f3e4b6d18783ac1acc4e01be9beb2`](./contracts/blast-81457/0x010869d79f5f3e4b6d18783ac1acc4e01be9beb2/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -101,7 +101,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| blast | [`0x010869...e9beb2`](./contracts/blast-81457/0x010869d79f5f3e4b6d18783ac1acc4e01be9beb2/) | OffchainFund | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x010869d79f5f3e4b6d18783ac1acc4e01be9beb2`](./contracts/blast-81457/0x010869d79f5f3e4b6d18783ac1acc4e01be9beb2/) | OffchainFund | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

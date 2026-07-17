@@ -89,8 +89,8 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-181924 | `0xbed1eb...1111f6` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-181922 | `0xd7f9f5...8cb2cb` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-181924 | `0xbed1eb542f9a5aa6419ff3deb921a372681111f6` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-181922 | `0xd7f9f54194c633f36ccd5f3da84ad4a1c38cb2cb` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

@@ -57,7 +57,7 @@ The pinned logic-topography run contains 5 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- StakingHOPE (`0xf5c6d9...9fd4d8`, chain 1)
+- StakingHOPE (`0xf5c6d9fc73991f687f158fe30d4a77691a9fd4d8`, chain 1)
 
 ## Contract Surface Quality
 
@@ -101,38 +101,38 @@ The pinned logic-topography run contains 5 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| HOPE | unknown | project_anchor | own_supporting | 1 | ethereum | unit-387318 | 2 deployments: ethereum `0x8f9bd4...03c61e`; ethereum `0xc353bf...68f98e` | ✅ Audited |
-| LT | unknown | project_anchor | own_supporting | 1 | ethereum | unit-387319 | 2 deployments: ethereum `0x9ed143...9a735b`; ethereum `0xd708e5...8ed019` | ✅ Audited |
-| StakingHOPE | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387317 | `0xf5c6d9...9fd4d8` | ✅ Audited |
+| HOPE | unknown | project_anchor | own_supporting | 1 | ethereum | unit-387318 | 2 deployments: ethereum `0x8f9bd4f6b88c46657aab889f1150b0521203c61e`; ethereum `0xc353bf07405304aeab75f4c2fac7e88d6a68f98e` | ✅ Audited |
+| LT | unknown | project_anchor | own_supporting | 1 | ethereum | unit-387319 | 2 deployments: ethereum `0x9ed1439d328647bdb148c20316ea024c719a735b`; ethereum `0xd708e5620f5769f65d018a3c97d63abfeb8ed019` | ✅ Audited |
+| StakingHOPE | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387317 | `0xf5c6d9fc73991f687f158fe30d4a77691a9fd4d8` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (24)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ApprovedTokenManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2ca1f5...173c78` | ⚠️ Unaudited |
-| BurnerManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0d80a7...966066` | ⚠️ Unaudited |
-| FeeDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x60498d...7285bb`; ethereum `0x99040c...2bb697` | ⚠️ Unaudited |
-| GaugeController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa8b270...b4dd7e` | ⚠️ Unaudited |
-| GaugeFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x71b38e...e2bdb1` | ⚠️ Unaudited |
-| GaugeFeeDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xdedd17...3c48ed`; ethereum `0xe0530d...898a84` | ⚠️ Unaudited |
-| HOPE | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xe4a14f...848e84` | ⚠️ Unaudited |
-| HopeSwapBurner | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd32864...acea42` | ⚠️ Unaudited |
-| HopeSwapBurnerBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x370606...91e149`; ethereum `0xfda6a3...8e3026` | ⚠️ Unaudited |
-| HToken | token | non_address_book | non_address_book_inventory (excluded) | 7 | ethereum | n/a | 7 deployments: ethereum `0x1fc2dd...2c9386`; ethereum `0x25126f...403907`; ethereum `0x396856...a4323e`; ethereum `0x58792e...f74d90`; ethereum `0x5dd30e...303572`; ethereum `0x6090f3...51b749`; ethereum `0xb3cc0a...334e62` | ⚠️ Unaudited |
-| LightTeamVault | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x6a1207...9d82c3`; ethereum `0xdd42df...e54513` | ⚠️ Unaudited |
-| LightTeamVaultManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x045087...a20a91`; ethereum `0xedb47d...b3c0bc` | ⚠️ Unaudited |
-| Minter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x94afb2...b2688f` | ⚠️ Unaudited |
-| Permit2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc53c83...e87a35` | ⚠️ Unaudited |
-| PoolGauge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3f954d...7908aa` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcc0f98...a3bd39` | ⚠️ Unaudited |
-| RestrictedList | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9e63ff...881edd` | ⚠️ Unaudited |
-| RockXETH | token | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xf1376b...df51f4` | ⚠️ Unaudited |
-| SmartWalletWhitelist | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x377a83...8700cb` | ⚠️ Unaudited |
-| SwapFeeToVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xda9c43...f42f23` | ⚠️ Unaudited |
-| UnderlyingBurner | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd61fd6...cadc97` | ⚠️ Unaudited |
-| UnderlyingBurnerV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x77b3cf...ee5f29` | ⚠️ Unaudited |
-| UniswapV2Router02 | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x219bd2...5051e9` | ⚠️ Unaudited |
-| VotingEscrow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe909f3...b67400` | ⚠️ Unaudited |
+| ApprovedTokenManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2ca1f5e429d423701052222e598e036016173c78` | ⚠️ Unaudited |
+| BurnerManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0d80a72c9f98e5b1c7fb3e3dc4d58aeca5966066` | ⚠️ Unaudited |
+| FeeDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x60498d57c18737f0a37e43f9bc20a3ce937285bb`; ethereum `0x99040c96bb8d931c29b2a9b91dcfcd36162bb697` | ⚠️ Unaudited |
+| GaugeController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa8b2706b45eb95e5d14f8c29a3c5cf0cd5b4dd7e` | ⚠️ Unaudited |
+| GaugeFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x71b38e6af260a725c42d0c5325836ad3dbe2bdb1` | ⚠️ Unaudited |
+| GaugeFeeDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xdedd17f3f3d6af647b94b77fa0d97983003c48ed`; ethereum `0xe0530d1261802eb32908b72574f9a6362c898a84` | ⚠️ Unaudited |
+| HOPE | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xe4a14f5a293274ee3fae3958895a22e6fc848e84` | ⚠️ Unaudited |
+| HopeSwapBurner | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd32864ff55aa1ceabace9d3e57bb113461acea42` | ⚠️ Unaudited |
+| HopeSwapBurnerBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x37060608acf9dcdbb5c1f8d0a37c24171b91e149`; ethereum `0xfda6a3367212a7a93bf1fdc2c0564823008e3026` | ⚠️ Unaudited |
+| HToken | token | non_address_book | non_address_book_inventory (excluded) | 7 | ethereum | n/a | 7 deployments: ethereum `0x1fc2dd0dcb64e0159b0474cfe6e45985522c9386`; ethereum `0x25126f207db7dc427415ea640ce0187767403907`; ethereum `0x396856f04836aaeba30311e2903b43e565a4323e`; ethereum `0x58792e9279cc6a178be5e367a145b75a36f74d90`; ethereum `0x5dd30eddcffb7dc18136501ce21e408243303572`; ethereum `0x6090f36f979bb221e71d5667afc3bb445551b749`; ethereum `0xb3cc0a5cd8e97713f2852600c90a4a0cd2334e62` | ⚠️ Unaudited |
+| LightTeamVault | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x6a120782dc421ef28f148ee1fee8a09bc59d82c3`; ethereum `0xdd42df1350c4c0b17eef521d6136015424e54513` | ⚠️ Unaudited |
+| LightTeamVaultManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x045087cbb64b35a31845b6e720c17f443ea20a91`; ethereum `0xedb47d8e8d07c93b7c5e202308d13dbec8b3c0bc` | ⚠️ Unaudited |
+| Minter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x94afb2c17af24cfacf19f364628f459dfab2688f` | ⚠️ Unaudited |
+| Permit2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc53c83d26151dbcffa349fae20b6155299e87a35` | ⚠️ Unaudited |
+| PoolGauge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3f954d5db340578773218388d8327035db7908aa` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcc0f986021010d4a3345cca903bf5487aea3bd39` | ⚠️ Unaudited |
+| RestrictedList | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9e63ff8003c33d264be368729ea525d8f5881edd` | ⚠️ Unaudited |
+| RockXETH | token | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xf1376bcef0f78459c0ed0ba5ddce976f1ddf51f4` | ⚠️ Unaudited |
+| SmartWalletWhitelist | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x377a83e5cf25d96c0c21dcd0a3c75ccd638700cb` | ⚠️ Unaudited |
+| SwapFeeToVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xda9c43a13a82b0d0292cf38e18fa71a0a9f42f23` | ⚠️ Unaudited |
+| UnderlyingBurner | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd61fd63a466dee970eea49ef109283a57acadc97` | ⚠️ Unaudited |
+| UnderlyingBurnerV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x77b3cfcd79f8030fac267da519a1d8e4f6ee5f29` | ⚠️ Unaudited |
+| UniswapV2Router02 | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x219bd2d1449f3813c01204ee455d11b41d5051e9` | ⚠️ Unaudited |
+| VotingEscrow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe909f37f3003fa37aad83c1baf2a98e5a7b67400` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -203,10 +203,10 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | PeckShield-Audit-Report-HOPE-v1.2.pdf | FeeDistributor | unmatched — not counted | — | Mentioned in finding PVE-005 as target contract alongside GaugeFeeDistributor | no |
 | SlowMist Audit Report - LightDAO Phase1_en-us.pdf | AgentManager | unmatched — not counted | — | listed in scope and visibility table | no |
 | SlowMist Audit Report - LightDAO Phase1_en-us.pdf | HOPESalesAgent | unmatched — not counted | — | listed in scope and visibility table | no |
-| SlowMist Audit Report - LightDAO Phase1_en-us.pdf | LT | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x9ed143...9a735b` — deployed 2023-04-18 03:00:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| SlowMist Audit Report - LightDAO Phase1_en-us.pdf | HOPE | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xc353bf...68f98e` — deployed 2023-04-17 18:49:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| SlowMist Audit Report - LightDAO Phase1_en-us.pdf | LT | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x9ed1439d328647bdb148c20316ea024c719a735b` — deployed 2023-04-18 03:00:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| SlowMist Audit Report - LightDAO Phase1_en-us.pdf | HOPE | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xc353bf07405304aeab75f4c2fac7e88d6a68f98e` — deployed 2023-04-17 18:49:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | SlowMist Audit Report - LightDAO Phase1_en-us.pdf | Minter | unmatched — not counted | — | listed in scope and visibility table | no |
-| SlowMist Audit Report - LightDAO Phase1_en-us.pdf | StakingHOPE | own contract | StakingHOPE (selected) `0xf5c6d9...9fd4d8` — deployed 2023-04-18 03:38:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| SlowMist Audit Report - LightDAO Phase1_en-us.pdf | StakingHOPE | own contract | StakingHOPE (selected) `0xf5c6d9fc73991f687f158fe30d4a77691a9fd4d8` — deployed 2023-04-18 03:38:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | SlowMist Audit Report - LightDAO Phase1_en-us.pdf | VotingEscrow | unmatched — not counted | — | listed in scope and visibility table | no |
 | SlowMist Audit Report - LightDAO Phase1_en-us.pdf | PoolGomboc | unmatched — not counted | — | listed in scope and visibility table | no |
 | SlowMist Audit Report - LightDAO Phase1_en-us.pdf | GombocController | unmatched — not counted | — | listed in scope and visibility table | no |

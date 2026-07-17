@@ -90,30 +90,30 @@ The pinned logic-topography run contains 6 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BorrowLogic | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-259530 | `0xfed987...6cadc6` | ⚠️ Unaudited |
-| ClaimableRewardsFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x072529...005127` | ⚠️ Unaudited |
-| EModeLogic | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-259523 | `0xd1bddc...69c3d5` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xbe62db...fb2dc7` | ⚠️ Unaudited |
-| FlashLoanLogic | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-259515 | `0x5e84ce...f5b0bb` | ⚠️ Unaudited |
-| KBTCV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x73e0c0...a4db98` | ⚠️ Unaudited |
-| LiquidationLogic | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-259503 | `0x36ae48...94ef43` | ⚠️ Unaudited |
-| MultiplierMgmtFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x018a09...fe2859` | ⚠️ Unaudited |
-| OFTWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x147bde...6bf9c4` | ⚠️ Unaudited |
-| PAXG | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7da4c5...0fa543` | ⚠️ Unaudited |
-| PayoutGroupFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x77fe03...a363df` | ⚠️ Unaudited |
-| PoolLogic | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-259527 | `0xe51b69...626806` | ⚠️ Unaudited |
-| PYUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7302ea...f90708` | ⚠️ Unaudited |
-| StakedUSDeOFTAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x211cc4...5fe5d2` | ⚠️ Unaudited |
-| SupplyControl | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x31d9bd...347ec3` | ⚠️ Unaudited |
-| SupplyLogic | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-259491 | `0x034fd1...25c168` | ⚠️ Unaudited |
-| TimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x903656...997654` | ⚠️ Unaudited |
-| TokenAdminFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x01a473...b1e3f5` | ⚠️ Unaudited |
-| TokenExtensionsFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5dff61...d561a8` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xa1290d...99e5a7` | ⚠️ Unaudited |
-| USDeOFTAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5d3a1f...52ef34` | ⚠️ Unaudited |
-| USDG | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x568c28...a507f7` | ⚠️ Unaudited |
-| USDP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x28edab...9f533f` | ⚠️ Unaudited |
-| XERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x241609...cceea5` | ⚠️ Unaudited |
+| BorrowLogic | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-259530 | `0xfed9871528e713b5038c4c44bbe7a315f56cadc6` | ⚠️ Unaudited |
+| ClaimableRewardsFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x07252906a80ac482aeb1a44e1153cdd3e6005127` | ⚠️ Unaudited |
+| EModeLogic | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-259523 | `0xd1bddc05a3bb5a7907d82a1b4f1e21dbce69c3d5` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xbe62db8ed4838e10e1318593ac9e3eb9ccfb2dc7` | ⚠️ Unaudited |
+| FlashLoanLogic | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-259515 | `0x5e84cee2afb7b37d2ab14722c39a7c1c26f5b0bb` | ⚠️ Unaudited |
+| KBTCV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x73e0c0d45e048d25fc26fa3159b0aa04bfa4db98` | ⚠️ Unaudited |
+| LiquidationLogic | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-259503 | `0x36ae486289bb807c3c79a1427b9c3d934294ef43` | ⚠️ Unaudited |
+| MultiplierMgmtFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x018a090fb8d50376bf8464922ffda935a1fe2859` | ⚠️ Unaudited |
+| OFTWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x147bde4f997f0d4c7544ed0c55eacf1e5e6bf9c4` | ⚠️ Unaudited |
+| PAXG | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7da4c5d9eca180a03765a6d27196f2a0380fa543` | ⚠️ Unaudited |
+| PayoutGroupFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x77fe0365db15a1ec05833b7c1802d68356a363df` | ⚠️ Unaudited |
+| PoolLogic | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-259527 | `0xe51b69e5722bf547866a4d7bc190c6e81b626806` | ⚠️ Unaudited |
+| PYUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7302ea4e51b041b691d1f3458fa7d36560f90708` | ⚠️ Unaudited |
+| StakedUSDeOFTAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2` | ⚠️ Unaudited |
+| SupplyControl | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x31d9bdea6f104606c954f8fe6ba614f1bd347ec3` | ⚠️ Unaudited |
+| SupplyLogic | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-259491 | `0x034fd14b9ae6bb066a1f9f85a55e990b0b25c168` | ⚠️ Unaudited |
+| TimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9036566eaa5f83e0b9e1161c6c602b0adf997654` | ⚠️ Unaudited |
+| TokenAdminFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x01a473ed747c29397616eabae1dff273c5b1e3f5` | ⚠️ Unaudited |
+| TokenExtensionsFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5dff613f9e283d268489ba6ae1c9b22970d561a8` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xa1290d69c65a6fe4df752f95823fae25cb99e5a7` | ⚠️ Unaudited |
+| USDeOFTAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34` | ⚠️ Unaudited |
+| USDG | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x568c28170115fe772b30229199d4ae0595a507f7` | ⚠️ Unaudited |
+| USDP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x28edab7eec878d54fa877ffff4604dfd649f533f` | ⚠️ Unaudited |
+| XERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x2416092f143378750bb29b79ed961ab195cceea5` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

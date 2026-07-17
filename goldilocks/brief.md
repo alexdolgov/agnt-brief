@@ -59,20 +59,20 @@ The protocol forms a single structural family (Core Logic) of 9 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Goldiswap | unknown | berachain | n/a | [`0xb7e448...800466`](./contracts/berachain-80094/0xb7e448e5677d212b8c8da7d6312e8afc49800466/) | ✅ Audited |
+| Goldiswap | unknown | berachain | n/a | [`0xb7e448e5677d212b8c8da7d6312e8afc49800466`](./contracts/berachain-80094/0xb7e448e5677d212b8c8da7d6312e8afc49800466/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (8)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| DamOft | unknown | berachain | n/a | [`0x713567...a75a72`](./contracts/berachain-80094/0x71356761fd23e77e5d78c37c70fe78229ca75a72/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | berachain | n/a | [`0x17c3b6...d551ab`](./contracts/berachain-80094/0x17c3b688badd6dd11244096a9fbc4ae0add551ab/) | ⚠️ Unaudited |
-| RusdOft | unknown | berachain | n/a | [`0x09d421...8f2b34`](./contracts/berachain-80094/0x09d4214c03d01f49544c0448dbe3a27f768f2b34/) | ⚠️ Unaudited |
-| Sigma | unknown | berachain | n/a | [`0x563a27...731fe5`](./contracts/berachain-80094/0x563a27728d298f21738ab694e95f344a42731fe5/) | ⚠️ Unaudited |
-| SrusdOft | unknown | berachain | n/a | [`0x547561...e947d7`](./contracts/berachain-80094/0x5475611dffb8ef4d697ae39df9395513b6e947d7/) | ⚠️ Unaudited |
-| uniBTC | unknown | berachain | n/a | [`0x50fa14...1b8190`](./contracts/berachain-80094/0x50fa1411201e2ac0361fb893e903b80f141b8190/) | ⚠️ Unaudited |
-| VaultWithoutNative | unknown | berachain | n/a | [`0xa93322...4ffadd`](./contracts/berachain-80094/0xa93322a98335b791df87f20bb939fbe4d84ffadd/) | ⚠️ Unaudited |
-| WsrusdOft | unknown | berachain | n/a | [`0x316cd3...f64514`](./contracts/berachain-80094/0x316cd39632cac4f4cdfc21757c4500fe12f64514/) | ⚠️ Unaudited |
+| DamOft | unknown | berachain | n/a | [`0x71356761fd23e77e5d78c37c70fe78229ca75a72`](./contracts/berachain-80094/0x71356761fd23e77e5d78c37c70fe78229ca75a72/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | berachain | n/a | [`0x17c3b688badd6dd11244096a9fbc4ae0add551ab`](./contracts/berachain-80094/0x17c3b688badd6dd11244096a9fbc4ae0add551ab/) | ⚠️ Unaudited |
+| RusdOft | unknown | berachain | n/a | [`0x09d4214c03d01f49544c0448dbe3a27f768f2b34`](./contracts/berachain-80094/0x09d4214c03d01f49544c0448dbe3a27f768f2b34/) | ⚠️ Unaudited |
+| Sigma | unknown | berachain | n/a | [`0x563a27728d298f21738ab694e95f344a42731fe5`](./contracts/berachain-80094/0x563a27728d298f21738ab694e95f344a42731fe5/) | ⚠️ Unaudited |
+| SrusdOft | unknown | berachain | n/a | [`0x5475611dffb8ef4d697ae39df9395513b6e947d7`](./contracts/berachain-80094/0x5475611dffb8ef4d697ae39df9395513b6e947d7/) | ⚠️ Unaudited |
+| uniBTC | unknown | berachain | n/a | [`0x50fa1411201e2ac0361fb893e903b80f141b8190`](./contracts/berachain-80094/0x50fa1411201e2ac0361fb893e903b80f141b8190/) | ⚠️ Unaudited |
+| VaultWithoutNative | unknown | berachain | n/a | [`0xa93322a98335b791df87f20bb939fbe4d84ffadd`](./contracts/berachain-80094/0xa93322a98335b791df87f20bb939fbe4d84ffadd/) | ⚠️ Unaudited |
+| WsrusdOft | unknown | berachain | n/a | [`0x316cd39632cac4f4cdfc21757c4500fe12f64514`](./contracts/berachain-80094/0x316cd39632cac4f4cdfc21757c4500fe12f64514/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -108,13 +108,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| berachain | [`0x713567...a75a72`](./contracts/berachain-80094/0x71356761fd23e77e5d78c37c70fe78229ca75a72/) | DamOft | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | [`0x09d421...8f2b34`](./contracts/berachain-80094/0x09d4214c03d01f49544c0448dbe3a27f768f2b34/) | RusdOft | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | [`0x563a27...731fe5`](./contracts/berachain-80094/0x563a27728d298f21738ab694e95f344a42731fe5/) | Sigma | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | [`0x547561...e947d7`](./contracts/berachain-80094/0x5475611dffb8ef4d697ae39df9395513b6e947d7/) | SrusdOft | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | [`0x50fa14...1b8190`](./contracts/berachain-80094/0x50fa1411201e2ac0361fb893e903b80f141b8190/) | uniBTC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | [`0xa93322...4ffadd`](./contracts/berachain-80094/0xa93322a98335b791df87f20bb939fbe4d84ffadd/) | VaultWithoutNative | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | [`0x316cd3...f64514`](./contracts/berachain-80094/0x316cd39632cac4f4cdfc21757c4500fe12f64514/) | WsrusdOft | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0x71356761fd23e77e5d78c37c70fe78229ca75a72`](./contracts/berachain-80094/0x71356761fd23e77e5d78c37c70fe78229ca75a72/) | DamOft | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0x09d4214c03d01f49544c0448dbe3a27f768f2b34`](./contracts/berachain-80094/0x09d4214c03d01f49544c0448dbe3a27f768f2b34/) | RusdOft | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0x563a27728d298f21738ab694e95f344a42731fe5`](./contracts/berachain-80094/0x563a27728d298f21738ab694e95f344a42731fe5/) | Sigma | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0x5475611dffb8ef4d697ae39df9395513b6e947d7`](./contracts/berachain-80094/0x5475611dffb8ef4d697ae39df9395513b6e947d7/) | SrusdOft | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0x50fa1411201e2ac0361fb893e903b80f141b8190`](./contracts/berachain-80094/0x50fa1411201e2ac0361fb893e903b80f141b8190/) | uniBTC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0xa93322a98335b791df87f20bb939fbe4d84ffadd`](./contracts/berachain-80094/0xa93322a98335b791df87f20bb939fbe4d84ffadd/) | VaultWithoutNative | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0x316cd39632cac4f4cdfc21757c4500fe12f64514`](./contracts/berachain-80094/0x316cd39632cac4f4cdfc21757c4500fe12f64514/) | WsrusdOft | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

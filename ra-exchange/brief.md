@@ -61,8 +61,8 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| TransparentUpgradeableProxy | unknown | fraxtal | n/a | [`0xaaa16c...b1ab57`](./contracts/fraxtal-252/0xaaa16c016bf556fcd620328f0759252e29b1ab57/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | fraxtal | n/a | [`0xaaa329...320c42`](./contracts/fraxtal-252/0xaaa32926fce6be95ea2c51cb4fcb60836d320c42/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | fraxtal | n/a | [`0xaaa16c016bf556fcd620328f0759252e29b1ab57`](./contracts/fraxtal-252/0xaaa16c016bf556fcd620328f0759252e29b1ab57/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | fraxtal | n/a | [`0xaaa32926fce6be95ea2c51cb4fcb60836d320c42`](./contracts/fraxtal-252/0xaaa32926fce6be95ea2c51cb4fcb60836d320c42/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

@@ -52,10 +52,10 @@ The pinned logic-topography run contains 4 contract row(s) across base. Structur
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x314fd0...8a1839`, chain 8453)
-- UnnamedContract (`0x897129...b0b496`, chain 8453)
-- UnnamedContract (`0x99dcd0...37ec70`, chain 8453)
-- UnnamedContract (`0xd6dcad...7a5a43`, chain 8453)
+- UnnamedContract (`0x314fd07319ef645ba7d548915ccd91f4788a1839`, chain 8453)
+- UnnamedContract (`0x89712980cb434ef5ae4ab29349419eb976b0b496`, chain 8453)
+- UnnamedContract (`0x99dcd0d75822ba398f13b2a8852b07c7e137ec70`, chain 8453)
+- UnnamedContract (`0xd6dcad2f7da91fbb27bda471540d9770c97a5a43`, chain 8453)
 
 ## Contract Surface Quality
 
@@ -101,10 +101,10 @@ The pinned logic-topography run contains 4 contract row(s) across base. Structur
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | base | unit-389586 | `0x314fd0...8a1839` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | base | unit-389587 | `0x897129...b0b496` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | base | unit-389588 | `0x99dcd0...37ec70` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | base | unit-389589 | `0xd6dcad...7a5a43` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | base | unit-389586 | `0x314fd07319ef645ba7d548915ccd91f4788a1839` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | base | unit-389587 | `0x89712980cb434ef5ae4ab29349419eb976b0b496` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | base | unit-389588 | `0x99dcd0d75822ba398f13b2a8852b07c7e137ec70` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | base | unit-389589 | `0xd6dcad2f7da91fbb27bda471540d9770c97a5a43` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

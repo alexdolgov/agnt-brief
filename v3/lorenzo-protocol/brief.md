@@ -90,7 +90,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| sUSD1PlusVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x8f18f2...151972` | ⚠️ Unaudited |
+| sUSD1PlusVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x8f18f2c97d2f5ec0e1d5b91c1d2ce245a9151972` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

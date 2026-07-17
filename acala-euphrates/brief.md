@@ -65,7 +65,7 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Token | token | ethereum | n/a | [`0x7fe92e...276b7d`](./contracts/ethereum-1/0x7fe92ec600f15cd25253b421bc151c51b0276b7d/) | ⚠️ Unaudited |
+| Token | token | ethereum | n/a | [`0x7fe92ec600f15cd25253b421bc151c51b0276b7d`](./contracts/ethereum-1/0x7fe92ec600f15cd25253b421bc151c51b0276b7d/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -85,7 +85,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0xe1bd43...edb0f9` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe1bd4306a178f86a9214c39abcd53d021bedb0f9` | ❓ Unverified |
 
 ## Audit Inventory
 

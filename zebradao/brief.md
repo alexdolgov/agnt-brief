@@ -60,17 +60,17 @@ The protocol comprises 2 functional families. Its contracts share 11 common proj
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CErc20Delegate | unknown | base | n/a | [`0x798937...6b3e42`](./contracts/base-8453/0x798937a81cea1cc124545210b6b45719516b3e42/) | ⚠️ Unaudited |
-| CErc20Delegator | unknown | base | n/a | [`0x8b5114...9d93f1`](./contracts/base-8453/0x8b51143530a92f703c954ab0d261ef688d9d93f1/) | ⚠️ Unaudited |
-| CEtherDelegate | unknown | base | n/a | [`0x4b20db...7c6b36`](./contracts/base-8453/0x4b20dbdd4d5a7a762f788796df5e0487007c6b36/) | ⚠️ Unaudited |
-| CometProxyAdmin | unknown | base | n/a | [`0xb42b4a...bed4ed`](./contracts/base-8453/0xb42b4a20d0b381ad9539a2f01f346245abbed4ed/) | ⚠️ Unaudited |
-| Comptroller | unknown | base | n/a | [`0xbea1d5...5ed6e7`](./contracts/base-8453/0xbea1d596ae022fae90d84ffaf0907e38a25ed6e7/) | ⚠️ Unaudited |
-| JumpRateModelV2 | unknown | base | n/a | [`0xe77969...50199d`](./contracts/base-8453/0xe779696e43df41c23c1a4d190ac8144c4250199d/) | ⚠️ Unaudited |
-| RewardDistributor | unknown | base | n/a | [`0x4da03b...7b7e05`](./contracts/base-8453/0x4da03b673e9b3a21e76ab389c6cf145bfb7b7e05/) | ⚠️ Unaudited |
-| StakedDistributor | unknown | base | n/a | [`0x0b42a3...5f5f89`](./contracts/base-8453/0x0b42a3d7290a94df04cf4193f62856950a5f5f89/) | ⚠️ Unaudited |
-| TimelockController | unknown | base | n/a | [`0x536652...b11378`](./contracts/base-8453/0x5366523cb3dcefb854eb81913fef1abf8cb11378/) | ⚠️ Unaudited |
-| Token | unknown | base | n/a | [`0xf0ce1d...af899e`](./contracts/base-8453/0xf0ce1d83b5fc9c67f157d8b97fd09e2cf8af899e/) | ⚠️ Unaudited |
-| TokenVesting | unknown | base | n/a | [`0x15682f...b4f9c7`](./contracts/base-8453/0x15682f9a45a2eaff039a5884105b8139c3b4f9c7/) | ⚠️ Unaudited |
+| CErc20Delegate | unknown | base | n/a | [`0x798937a81cea1cc124545210b6b45719516b3e42`](./contracts/base-8453/0x798937a81cea1cc124545210b6b45719516b3e42/) | ⚠️ Unaudited |
+| CErc20Delegator | unknown | base | n/a | [`0x8b51143530a92f703c954ab0d261ef688d9d93f1`](./contracts/base-8453/0x8b51143530a92f703c954ab0d261ef688d9d93f1/) | ⚠️ Unaudited |
+| CEtherDelegate | unknown | base | n/a | [`0x4b20dbdd4d5a7a762f788796df5e0487007c6b36`](./contracts/base-8453/0x4b20dbdd4d5a7a762f788796df5e0487007c6b36/) | ⚠️ Unaudited |
+| CometProxyAdmin | unknown | base | n/a | [`0xb42b4a20d0b381ad9539a2f01f346245abbed4ed`](./contracts/base-8453/0xb42b4a20d0b381ad9539a2f01f346245abbed4ed/) | ⚠️ Unaudited |
+| Comptroller | unknown | base | n/a | [`0xbea1d596ae022fae90d84ffaf0907e38a25ed6e7`](./contracts/base-8453/0xbea1d596ae022fae90d84ffaf0907e38a25ed6e7/) | ⚠️ Unaudited |
+| JumpRateModelV2 | unknown | base | n/a | [`0xe779696e43df41c23c1a4d190ac8144c4250199d`](./contracts/base-8453/0xe779696e43df41c23c1a4d190ac8144c4250199d/) | ⚠️ Unaudited |
+| RewardDistributor | unknown | base | n/a | [`0x4da03b673e9b3a21e76ab389c6cf145bfb7b7e05`](./contracts/base-8453/0x4da03b673e9b3a21e76ab389c6cf145bfb7b7e05/) | ⚠️ Unaudited |
+| StakedDistributor | unknown | base | n/a | [`0x0b42a3d7290a94df04cf4193f62856950a5f5f89`](./contracts/base-8453/0x0b42a3d7290a94df04cf4193f62856950a5f5f89/) | ⚠️ Unaudited |
+| TimelockController | unknown | base | n/a | [`0x5366523cb3dcefb854eb81913fef1abf8cb11378`](./contracts/base-8453/0x5366523cb3dcefb854eb81913fef1abf8cb11378/) | ⚠️ Unaudited |
+| Token | unknown | base | n/a | [`0xf0ce1d83b5fc9c67f157d8b97fd09e2cf8af899e`](./contracts/base-8453/0xf0ce1d83b5fc9c67f157d8b97fd09e2cf8af899e/) | ⚠️ Unaudited |
+| TokenVesting | unknown | base | n/a | [`0x15682f9a45a2eaff039a5884105b8139c3b4f9c7`](./contracts/base-8453/0x15682f9a45a2eaff039a5884105b8139c3b4f9c7/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -101,16 +101,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x798937...6b3e42`](./contracts/base-8453/0x798937a81cea1cc124545210b6b45719516b3e42/) | CErc20Delegate | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x8b5114...9d93f1`](./contracts/base-8453/0x8b51143530a92f703c954ab0d261ef688d9d93f1/) | CErc20Delegator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x4b20db...7c6b36`](./contracts/base-8453/0x4b20dbdd4d5a7a762f788796df5e0487007c6b36/) | CEtherDelegate | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xb42b4a...bed4ed`](./contracts/base-8453/0xb42b4a20d0b381ad9539a2f01f346245abbed4ed/) | CometProxyAdmin | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xbea1d5...5ed6e7`](./contracts/base-8453/0xbea1d596ae022fae90d84ffaf0907e38a25ed6e7/) | Comptroller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xe77969...50199d`](./contracts/base-8453/0xe779696e43df41c23c1a4d190ac8144c4250199d/) | JumpRateModelV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x4da03b...7b7e05`](./contracts/base-8453/0x4da03b673e9b3a21e76ab389c6cf145bfb7b7e05/) | RewardDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x0b42a3...5f5f89`](./contracts/base-8453/0x0b42a3d7290a94df04cf4193f62856950a5f5f89/) | StakedDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xf0ce1d...af899e`](./contracts/base-8453/0xf0ce1d83b5fc9c67f157d8b97fd09e2cf8af899e/) | Token | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x15682f...b4f9c7`](./contracts/base-8453/0x15682f9a45a2eaff039a5884105b8139c3b4f9c7/) | TokenVesting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x798937a81cea1cc124545210b6b45719516b3e42`](./contracts/base-8453/0x798937a81cea1cc124545210b6b45719516b3e42/) | CErc20Delegate | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x8b51143530a92f703c954ab0d261ef688d9d93f1`](./contracts/base-8453/0x8b51143530a92f703c954ab0d261ef688d9d93f1/) | CErc20Delegator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x4b20dbdd4d5a7a762f788796df5e0487007c6b36`](./contracts/base-8453/0x4b20dbdd4d5a7a762f788796df5e0487007c6b36/) | CEtherDelegate | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xb42b4a20d0b381ad9539a2f01f346245abbed4ed`](./contracts/base-8453/0xb42b4a20d0b381ad9539a2f01f346245abbed4ed/) | CometProxyAdmin | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xbea1d596ae022fae90d84ffaf0907e38a25ed6e7`](./contracts/base-8453/0xbea1d596ae022fae90d84ffaf0907e38a25ed6e7/) | Comptroller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xe779696e43df41c23c1a4d190ac8144c4250199d`](./contracts/base-8453/0xe779696e43df41c23c1a4d190ac8144c4250199d/) | JumpRateModelV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x4da03b673e9b3a21e76ab389c6cf145bfb7b7e05`](./contracts/base-8453/0x4da03b673e9b3a21e76ab389c6cf145bfb7b7e05/) | RewardDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x0b42a3d7290a94df04cf4193f62856950a5f5f89`](./contracts/base-8453/0x0b42a3d7290a94df04cf4193f62856950a5f5f89/) | StakedDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xf0ce1d83b5fc9c67f157d8b97fd09e2cf8af899e`](./contracts/base-8453/0xf0ce1d83b5fc9c67f157d8b97fd09e2cf8af899e/) | Token | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x15682f9a45a2eaff039a5884105b8139c3b4f9c7`](./contracts/base-8453/0x15682f9a45a2eaff039a5884105b8139c3b4f9c7/) | TokenVesting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

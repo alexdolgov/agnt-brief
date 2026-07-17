@@ -78,11 +78,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | moonbeam | n/a | `0x243e03...7d666a` | ❓ Unverified |
-| UnnamedContract | unknown | moonbeam | n/a | `0xc404e1...7def3c` | ❓ Unverified |
-| UnnamedContract | unknown | moonbeam | n/a | `0xcdb32e...ec549f` | ❓ Unverified |
-| UnnamedContract | unknown | moonbeam | n/a | `0xd89dea...511f64` | ❓ Unverified |
-| UnnamedContract | unknown | moonbeam | n/a | `0xfa1cfa...5ee6d4` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x243e038685209b9b68e0521bd5838c6c937d666a` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0xc404e12d3466accb625c67dbab2e1a8a457def3c` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0xcdb32eed99aa19d39e5d6ec45ba74dc4afec549f` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0xd89dea2dac8fb73f4107c2cbea5eb36dab511f64` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0xfa1cfa75bfae8303a9fe8af711aacd59015ee6d4` | ❓ Unverified |
 
 ## Audit Inventory
 

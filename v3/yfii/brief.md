@@ -52,11 +52,11 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x16cac1...6cf565`, chain 1)
-- UnnamedContract (`0xaffcd3...0dc13a`, chain 1)
-- UnnamedContract (`0xb81d3c...25c092`, chain 1)
-- UnnamedContract (`0xf1750b...884d45`, chain 1)
-- YFII (`0xa1d0e2...ccab83`, chain 1)
+- UnnamedContract (`0x16cac1403377978644e78769daa49d8f6b6cf565`, chain 1)
+- UnnamedContract (`0xaffcd3d45cef58b1dfa773463824c6f6bb0dc13a`, chain 1)
+- UnnamedContract (`0xb81d3cb2708530ea990a287142b82d058725c092`, chain 1)
+- UnnamedContract (`0xf1750b770485a5d0589a6ba1270d9fc354884d45`, chain 1)
+- YFII (`0xa1d0e215a23d7030842fc67ce582a6afa3ccab83`, chain 1)
 
 ## Contract Surface Quality
 
@@ -100,28 +100,28 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| YFII | unknown | project_anchor | own_supporting | 0 | ethereum | unit-397463 | `0xa1d0e2...ccab83` | ✅ Audited |
+| YFII | unknown | project_anchor | own_supporting | 0 | ethereum | unit-397463 | `0xa1d0e215a23d7030842fc67ce582a6afa3ccab83` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (16)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Controller | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8c2a19...1b515f` | ⚠️ Unaudited |
-| fortube | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x37edb4...9b752c` | ⚠️ Unaudited |
-| getuniout | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x75055d...b52c58` | ⚠️ Unaudited |
-| iLPVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x19d994...089d1f` | ⚠️ Unaudited |
-| iVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1e0dc6...5f2064` | ⚠️ Unaudited |
-| onesplitError | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x045644...90f214` | ⚠️ Unaudited |
-| qianAndWepiggy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd2b9af...85fecd` | ⚠️ Unaudited |
-| Strategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe9ba31...7d0a0f` | ⚠️ Unaudited |
-| StrategyCRV | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xefb684...042eee` | ⚠️ Unaudited |
-| StrategyDForce | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x88d89b...9dcc83` | ⚠️ Unaudited |
-| StrategyDForceDAI | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbdd4a5...81258e` | ⚠️ Unaudited |
-| StrategyFortube | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0c3e69...f4f0a5` | ⚠️ Unaudited |
-| Unipool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3d367c...ee96ca` | ⚠️ Unaudited |
-| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf811c0...80de45` | ⚠️ Unaudited |
-| YfiiVoterProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x266ca2...e4760e` | ⚠️ Unaudited |
-| yVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6f2a72...a17faa` | ⚠️ Unaudited |
+| Controller | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8c2a19108d8f6aec72867e9cfb1bf517601b515f` | ⚠️ Unaudited |
+| fortube | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x37edb4812aa9bb7a05c8b56642041b3a609b752c` | ⚠️ Unaudited |
+| getuniout | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x75055d3292aba5592cc09c61f73397e05db52c58` | ⚠️ Unaudited |
+| iLPVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x19d994471d61d36fe367928cc58102a376089d1f` | ⚠️ Unaudited |
+| iVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1e0dc67aea5aa74718822590294230162b5f2064` | ⚠️ Unaudited |
+| onesplitError | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x045644b23e622cb3db24d18e1a77e8124790f214` | ⚠️ Unaudited |
+| qianAndWepiggy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd2b9af583e4188ccc6297d2f0721e8fb1385fecd` | ⚠️ Unaudited |
+| Strategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe9ba312991e76116879b484135d2b86ea27d0a0f` | ⚠️ Unaudited |
+| StrategyCRV | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xefb684ab29371e701cce3ca9e3fd8f5e33042eee` | ⚠️ Unaudited |
+| StrategyDForce | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x88d89bc6df5777ef762d8b7c841b1a4e179dcc83` | ⚠️ Unaudited |
+| StrategyDForceDAI | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbdd4a57c5ee8558370bb661d29a979657d81258e` | ⚠️ Unaudited |
+| StrategyFortube | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0c3e69ef29cbd32e0732409b748ef317a5f4f0a5` | ⚠️ Unaudited |
+| Unipool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3d367c9529f260b0661e1c1e91167c9319ee96ca` | ⚠️ Unaudited |
+| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf811c062d14fdf9fda95d6a2c54e137afe80de45` | ⚠️ Unaudited |
+| YfiiVoterProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x266ca21f966d93f5580e20b55ef66c8320e4760e` | ⚠️ Unaudited |
+| yVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6f2a725f13111c52a972e20d6aa4dcb190a17faa` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -141,10 +141,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-397462 | `0x16cac1...6cf565` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-397464 | `0xaffcd3...0dc13a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-397465 | `0xb81d3c...25c092` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-397466 | `0xf1750b...884d45` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-397462 | `0x16cac1403377978644e78769daa49d8f6b6cf565` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-397464 | `0xaffcd3d45cef58b1dfa773463824c6f6bb0dc13a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-397465 | `0xb81d3cb2708530ea990a287142b82d058725c092` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-397466 | `0xf1750b770485a5d0589a6ba1270d9fc354884d45` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -170,14 +170,14 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| 200803-YFII-Token-Pool1-Pool2.en.md | YFII Pool 1 | own contract | 0xb81d3c… (selected) `0xb81d3c...25c092` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 200803-YFII-Token-Pool1-Pool2.en.md | YFII Pool 2 | own contract | 0xaffcd3… (selected) `0xaffcd3...0dc13a` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 200803-YFII-Token-Pool1-Pool2.en.md | YFII Token | own contract | YFII (selected) `0xa1d0e2...ccab83` — deployed 2020-07-26 16:05:00+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 200803-YFII-Token-Pool1-Pool2.en.md | BPT Token | own contract | 0x16cac1… (selected) `0x16cac1...6cf565` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 200803-YFII-Token-Pool1-Pool2.md | YFII Pool 1 | own contract | 0xb81d3c… (selected) `0xb81d3c...25c092` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 200803-YFII-Token-Pool1-Pool2.md | YFII Pool 2 | own contract | 0xaffcd3… (selected) `0xaffcd3...0dc13a` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 200803-YFII-Token-Pool1-Pool2.md | YFII Token | own contract | YFII (selected) `0xa1d0e2...ccab83` — deployed 2020-07-26 16:05:00+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 200803-YFII-Token-Pool1-Pool2.md | BPT Token | own contract | 0x16cac1… (selected) `0x16cac1...6cf565` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 200803-YFII-Token-Pool1-Pool2.en.md | YFII Pool 1 | own contract | 0xb81d3c… (selected) `0xb81d3cb2708530ea990a287142b82d058725c092` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 200803-YFII-Token-Pool1-Pool2.en.md | YFII Pool 2 | own contract | 0xaffcd3… (selected) `0xaffcd3d45cef58b1dfa773463824c6f6bb0dc13a` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 200803-YFII-Token-Pool1-Pool2.en.md | YFII Token | own contract | YFII (selected) `0xa1d0e215a23d7030842fc67ce582a6afa3ccab83` — deployed 2020-07-26 16:05:00+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 200803-YFII-Token-Pool1-Pool2.en.md | BPT Token | own contract | 0x16cac1… (selected) `0x16cac1403377978644e78769daa49d8f6b6cf565` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 200803-YFII-Token-Pool1-Pool2.md | YFII Pool 1 | own contract | 0xb81d3c… (selected) `0xb81d3cb2708530ea990a287142b82d058725c092` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 200803-YFII-Token-Pool1-Pool2.md | YFII Pool 2 | own contract | 0xaffcd3… (selected) `0xaffcd3d45cef58b1dfa773463824c6f6bb0dc13a` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 200803-YFII-Token-Pool1-Pool2.md | YFII Token | own contract | YFII (selected) `0xa1d0e215a23d7030842fc67ce582a6afa3ccab83` — deployed 2020-07-26 16:05:00+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 200803-YFII-Token-Pool1-Pool2.md | BPT Token | own contract | 0x16cac1… (selected) `0x16cac1403377978644e78769daa49d8f6b6cf565` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | YFII_v2_Smart_Contract_Audit_Report.pdf | Controller | unmatched — not counted | — | listed in scope table | no |
 | YFII_v2_Smart_Contract_Audit_Report.pdf | StrategyFortubeUSDT | unmatched — not counted | — | listed in scope table | no |
 | YFII_v2_Smart_Contract_Audit_Report.pdf | iVaultUSDT | unmatched — not counted | — | listed in scope table | no |

@@ -62,9 +62,9 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AdminUpgradeabilityProxy | unknown | gnosis | n/a | [`0x009bab...5faa61`](./contracts/gnosis-100/0x009bab289f104699ae87e576294d18ed505faa61/) | ⚠️ Unaudited |
-| AdminUpgradeabilityProxy | unknown | gnosis | n/a | [`0x062461...f5d9ff`](./contracts/gnosis-100/0x06246100ba403608b98adfb006d82a7484f5d9ff/) | ⚠️ Unaudited |
-| REG | unknown | gnosis | n/a | [`0x0aa1e9...5f1dce`](./contracts/gnosis-100/0x0aa1e96d2a46ec6beb2923de1e61addf5f5f1dce/) | ⚠️ Unaudited |
+| AdminUpgradeabilityProxy | unknown | gnosis | n/a | [`0x009bab289f104699ae87e576294d18ed505faa61`](./contracts/gnosis-100/0x009bab289f104699ae87e576294d18ed505faa61/) | ⚠️ Unaudited |
+| AdminUpgradeabilityProxy | unknown | gnosis | n/a | [`0x06246100ba403608b98adfb006d82a7484f5d9ff`](./contracts/gnosis-100/0x06246100ba403608b98adfb006d82a7484f5d9ff/) | ⚠️ Unaudited |
+| REG | unknown | gnosis | n/a | [`0x0aa1e96d2a46ec6beb2923de1e61addf5f5f1dce`](./contracts/gnosis-100/0x0aa1e96d2a46ec6beb2923de1e61addf5f5f1dce/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,7 +95,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| gnosis | [`0x0aa1e9...5f1dce`](./contracts/gnosis-100/0x0aa1e96d2a46ec6beb2923de1e61addf5f5f1dce/) | REG | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| gnosis | [`0x0aa1e96d2a46ec6beb2923de1e61addf5f5f1dce`](./contracts/gnosis-100/0x0aa1e96d2a46ec6beb2923de1e61addf5f5f1dce/) | REG | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

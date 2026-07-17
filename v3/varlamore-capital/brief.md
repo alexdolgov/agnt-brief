@@ -52,15 +52,15 @@ The pinned logic-topography run contains 9 contract row(s) across avalanche, eth
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- Varlamore ETH (`0xad43bd...5c2ff6`, chain 1)
-- Varlamore ETH (`0xcc7bdb...0bb409`, chain 146)
-- Varlamore Falcon USDC (`0xa9b23b...fcc17b`, chain 1)
-- Varlamore Falcon USDC (`0xb4b989...e2ee5f`, chain 1)
-- Varlamore Mainstreet USDC (`0xffa4f6...73876b`, chain 146)
-- Varlamore S (`0xded4ac...4cfa0e`, chain 146)
-- Varlamore USDC Core (`0x3e1128...e43656`, chain 146)
-- Varlamore USDC Growth (`0xd6b1d1...9a13e9`, chain 1)
-- Varlamore USDC Growth (`0x025dff...314b6c`, chain 43114)
+- Varlamore ETH (`0xad43bd27a4d7c18c05f78f24d9bd3fa6805c2ff6`, chain 1)
+- Varlamore ETH (`0xcc7bdb3ff050d65918b96e4bdf1060a1aa0bb409`, chain 146)
+- Varlamore Falcon USDC (`0xa9b23b28621cfb32e0ebf50b572afac671fcc17b`, chain 1)
+- Varlamore Falcon USDC (`0xb4b98983ad44257e267f5bdd3b4a86fb40e2ee5f`, chain 1)
+- Varlamore Mainstreet USDC (`0xffa4f67d4facff62e53e6ac4f76a1e049673876b`, chain 146)
+- Varlamore S (`0xded4ac8645619334186f28b8798e07ca354cfa0e`, chain 146)
+- Varlamore USDC Core (`0x3e11288c2e1ec2a5200e407d1eebd416dbe43656`, chain 146)
+- Varlamore USDC Growth (`0xd6b1d1fc1531046b1af598cc9d06d005659a13e9`, chain 1)
+- Varlamore USDC Growth (`0x025dff399d166138ce8ce9630e4677285c314b6c`, chain 43114)
 
 ## Contract Surface Quality
 
@@ -106,15 +106,15 @@ The pinned logic-topography run contains 9 contract row(s) across avalanche, eth
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Varlamore ETH | unknown | project_anchor | own_supporting | 0 | ethereum | unit-395617 | `0xad43bd...5c2ff6` | ⚠️ Unaudited |
-| Varlamore ETH | unknown | project_anchor | own_supporting | 0 | sonic | unit-395623 | `0xcc7bdb...0bb409` | ⚠️ Unaudited |
-| Varlamore Falcon USDC | unknown | project_anchor | own_supporting | 0 | ethereum | unit-395616 | `0xa9b23b...fcc17b` | ⚠️ Unaudited |
-| Varlamore Falcon USDC | unknown | project_anchor | own_supporting | 0 | ethereum | unit-395618 | `0xb4b989...e2ee5f` | ⚠️ Unaudited |
-| Varlamore Mainstreet USDC | unknown | project_anchor | own_supporting | 0 | sonic | unit-395626 | `0xffa4f6...73876b` | ⚠️ Unaudited |
-| Varlamore S | unknown | project_anchor | own_supporting | 0 | sonic | unit-395624 | `0xded4ac...4cfa0e` | ⚠️ Unaudited |
-| Varlamore USDC Core | unknown | project_anchor | own_supporting | 0 | sonic | unit-395620 | `0x3e1128...e43656` | ⚠️ Unaudited |
-| Varlamore USDC Growth | unknown | project_anchor | own_supporting | 0 | ethereum | unit-395619 | `0xd6b1d1...9a13e9` | ⚠️ Unaudited |
-| Varlamore USDC Growth | unknown | project_anchor | own_supporting | 0 | avalanche | unit-395627 | `0x025dff...314b6c` | ⚠️ Unaudited |
+| Varlamore ETH | unknown | project_anchor | own_supporting | 0 | ethereum | unit-395617 | `0xad43bd27a4d7c18c05f78f24d9bd3fa6805c2ff6` | ⚠️ Unaudited |
+| Varlamore ETH | unknown | project_anchor | own_supporting | 0 | sonic | unit-395623 | `0xcc7bdb3ff050d65918b96e4bdf1060a1aa0bb409` | ⚠️ Unaudited |
+| Varlamore Falcon USDC | unknown | project_anchor | own_supporting | 0 | ethereum | unit-395616 | `0xa9b23b28621cfb32e0ebf50b572afac671fcc17b` | ⚠️ Unaudited |
+| Varlamore Falcon USDC | unknown | project_anchor | own_supporting | 0 | ethereum | unit-395618 | `0xb4b98983ad44257e267f5bdd3b4a86fb40e2ee5f` | ⚠️ Unaudited |
+| Varlamore Mainstreet USDC | unknown | project_anchor | own_supporting | 0 | sonic | unit-395626 | `0xffa4f67d4facff62e53e6ac4f76a1e049673876b` | ⚠️ Unaudited |
+| Varlamore S | unknown | project_anchor | own_supporting | 0 | sonic | unit-395624 | `0xded4ac8645619334186f28b8798e07ca354cfa0e` | ⚠️ Unaudited |
+| Varlamore USDC Core | unknown | project_anchor | own_supporting | 0 | sonic | unit-395620 | `0x3e11288c2e1ec2a5200e407d1eebd416dbe43656` | ⚠️ Unaudited |
+| Varlamore USDC Growth | unknown | project_anchor | own_supporting | 0 | ethereum | unit-395619 | `0xd6b1d1fc1531046b1af598cc9d06d005659a13e9` | ⚠️ Unaudited |
+| Varlamore USDC Growth | unknown | project_anchor | own_supporting | 0 | avalanche | unit-395627 | `0x025dff399d166138ce8ce9630e4677285c314b6c` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -134,12 +134,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-395615 | `0x8399c8...4fd78f` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sonic | unit-395621 | `0x9a1bf5...acfc6f` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sonic | unit-395622 | `0xb6a23c...f9c5ba` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sonic | unit-395625 | `0xf6f870...f89885` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-395628 | `0x3d7b0c...91835b` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-395629 | `0x6c09bf...b335d4` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-395615 | `0x8399c8fc273bd165c346af74a02e65f10e4fd78f` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sonic | unit-395621 | `0x9a1bf5365edbb99c2c61ca6d9ffad0b705acfc6f` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sonic | unit-395622 | `0xb6a23cb29e512df41876b28d7a848bd831f9c5ba` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sonic | unit-395625 | `0xf6f87073cf8929c206a77b0694619dc776f89885` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-395628 | `0x3d7b0c3997e48fa3fc96cd057d1fb4e5f891835b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-395629 | `0x6c09bfdc1df45d6c4ff78dc9f1c13af29eb335d4` | ❓ Unverified |
 
 ## Audit Inventory
 

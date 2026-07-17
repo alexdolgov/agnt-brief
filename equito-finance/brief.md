@@ -61,7 +61,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| PSYOP | unknown | ethereum | n/a | [`0xaa0781...3e4964`](./contracts/ethereum-1/0xaa07810ae08575921c476ff088bc949da43e4964/) | ⚠️ Unaudited |
+| PSYOP | unknown | ethereum | n/a | [`0xaa07810ae08575921c476ff088bc949da43e4964`](./contracts/ethereum-1/0xaa07810ae08575921c476ff088bc949da43e4964/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,7 +95,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xaa0781...3e4964`](./contracts/ethereum-1/0xaa07810ae08575921c476ff088bc949da43e4964/) | PSYOP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xaa07810ae08575921c476ff088bc949da43e4964`](./contracts/ethereum-1/0xaa07810ae08575921c476ff088bc949da43e4964/) | PSYOP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

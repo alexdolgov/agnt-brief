@@ -90,15 +90,15 @@ The pinned logic-topography run contains 12 contract row(s) across ethereum. Str
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AutoStakingVault | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-241742 | 2 deployments: ethereum `0x609a62...d10b2b`; ethereum `0x997e2e...ee1da9` | ⚠️ Unaudited |
-| FeedVerifier | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-241744 | 2 deployments: ethereum `0xbc6023...a5d937`; ethereum `0xdf4ab2...64d6a3` | ⚠️ Unaudited |
-| HastraAutoNavEngine | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x3c331b...69f443`; ethereum `0xd52452...29bc75` | ⚠️ Unaudited |
-| HastraAutoNavEngine | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x748d07...b14da3`; ethereum `0xc38479...e24af3` | ⚠️ Unaudited |
-| HastraNavEngine | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-241740 | 2 deployments: ethereum `0x1376de...30c3a7`; ethereum `0xfed839...e4eca9` | ⚠️ Unaudited |
-| HastraSMBNavEngine | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x9fd0b0...db019e`; ethereum `0xbea0bf...e9d76d` | ⚠️ Unaudited |
-| SMBStakingVault | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-241741 | 2 deployments: ethereum `0x49c62f...c59bec`; ethereum `0xbd4953...9bf3d9` | ⚠️ Unaudited |
-| StakingVault | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-241743 | 2 deployments: ethereum `0x19ebb3...65f7f6`; ethereum `0x90fd84...5a5abd` | ⚠️ Unaudited |
-| YieldVault | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-241745 | 2 deployments: ethereum `0x6ad038...9a66cc`; ethereum `0xda962f...6d1a1d` | ⚠️ Unaudited |
+| AutoStakingVault | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-241742 | 2 deployments: ethereum `0x609a62efe553ec177c0472625bbf89725bd10b2b`; ethereum `0x997e2efbce91d170b00ea402e35a66c887ee1da9` | ⚠️ Unaudited |
+| FeedVerifier | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-241744 | 2 deployments: ethereum `0xbc6023cb49f8e8ca6cef563d5fd97ba4c6a5d937`; ethereum `0xdf4ab20fa7752be52e41e42f1fd667f37964d6a3` | ⚠️ Unaudited |
+| HastraAutoNavEngine | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x3c331b892f193fcdbb9f9c2f227fe56c6169f443`; ethereum `0xd524523e56fce26eb427301aee6c82b66129bc75` | ⚠️ Unaudited |
+| HastraAutoNavEngine | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x748d0731738e68c7e2d693ccae56c82fd7b14da3`; ethereum `0xc38479c4f1155a6b3d839f33f70d4a9923e24af3` | ⚠️ Unaudited |
+| HastraNavEngine | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-241740 | 2 deployments: ethereum `0x1376de100324d42337f1a2c08351d7242f30c3a7`; ethereum `0xfed839b6ba09c1abf4c768aba0eca50746e4eca9` | ⚠️ Unaudited |
+| HastraSMBNavEngine | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x9fd0b0ef9fb4591a7c315bc19f0fb29a9edb019e`; ethereum `0xbea0bfc28861eb1d0832a9d5689aa7c558e9d76d` | ⚠️ Unaudited |
+| SMBStakingVault | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-241741 | 2 deployments: ethereum `0x49c62f9c3d7d401a7933e2484ae88c70c9c59bec`; ethereum `0xbd49537cc9105e8c1651ed12b94cd9a3d79bf3d9` | ⚠️ Unaudited |
+| StakingVault | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-241743 | 2 deployments: ethereum `0x19ebb35279a16207ec4ba82799cc64715065f7f6`; ethereum `0x90fd843c68db38e2de0618acbb39341cba5a5abd` | ⚠️ Unaudited |
+| YieldVault | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-241745 | 2 deployments: ethereum `0x6ad038ca6c04e885630851278ca0a856ad9a66cc`; ethereum `0xda962f7a0308e9d4f2f60c5aab94f173c26d1a1d` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -118,7 +118,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0xa0b869...06eb48` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48` | ❓ Unverified |
 
 ## Audit Inventory
 

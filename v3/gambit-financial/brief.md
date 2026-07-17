@@ -56,9 +56,9 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- Reader (`0x1f6bae...e9948f`, chain 56)
-- Router (`0xd46b23...8a8e1f`, chain 56)
-- Vault (`0xc73a8d...4ff67b`, chain 56)
+- Reader (`0x1f6bae121a9f97ca3e02cba33f799c5df0e9948f`, chain 56)
+- Router (`0xd46b23d042e976f8666f554e928e0dc7478a8e1f`, chain 56)
+- Vault (`0xc73a8dcac88498fd4b4b1b2aaa37b0a2614ff67b`, chain 56)
 
 ## Contract Surface Quality
 
@@ -104,9 +104,9 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Reader | unknown | project_anchor | own_supporting | 0 | bsc | unit-386689 | `0x1f6bae...e9948f` | ⚠️ Unaudited |
-| Router | unknown | project_anchor | own_supporting | 0 | bsc | unit-386691 | `0xd46b23...8a8e1f` | ⚠️ Unaudited |
-| Vault | unknown | project_anchor | own_supporting | 0 | bsc | unit-386690 | `0xc73a8d...4ff67b` | ⚠️ Unaudited |
+| Reader | unknown | project_anchor | own_supporting | 0 | bsc | unit-386689 | `0x1f6bae121a9f97ca3e02cba33f799c5df0e9948f` | ⚠️ Unaudited |
+| Router | unknown | project_anchor | own_supporting | 0 | bsc | unit-386691 | `0xd46b23d042e976f8666f554e928e0dc7478a8e1f` | ⚠️ Unaudited |
+| Vault | unknown | project_anchor | own_supporting | 0 | bsc | unit-386690 | `0xc73a8dcac88498fd4b4b1b2aaa37b0a2614ff67b` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

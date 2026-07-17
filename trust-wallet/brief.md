@@ -61,15 +61,15 @@ The protocol comprises 5 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| bscSUNDOG | unknown | bsc | n/a | [`0xdc419c...1936a7`](./contracts/bsc-56/0xdc419cfe5454bf58001f131e98cf2065e11936a7/) | ⚠️ Unaudited |
-| DistributionCreator | unknown | bsc | n/a | 3 deployments: bsc [`0x46a9e9...c57829`](./contracts/bsc-56/0x46a9e9434dac9baa1f95a5129f04aef6c8c57829/); bsc `0x99fe85...924012`; bsc `0xc42b7a...3229d5` | ⚠️ Unaudited |
-| Distributor | unknown | bsc | n/a | 4 deployments: bsc [`0x04a7d1...65c199`](./contracts/bsc-56/0x04a7d169c5b14d2e29a3ba8b5071dda5e365c199/); bsc `0x4195fa...a6a9a7`; bsc `0x44e3d3...628819`; bsc `0xa0e088...f53de4` | ⚠️ Unaudited |
-| ERC1967Proxy | proxy | bsc | n/a | 2 deployments: bsc [`0x147f41...54c52d`](./contracts/bsc-56/0x147f4163756db2eee9092bb848603a9e7054c52d/); bsc `0xedbebe...8c24ba` | ⚠️ Unaudited |
-| PointToken | token | bsc | n/a | [`0x1276d6...7932db`](./contracts/bsc-56/0x1276d63baef24d316383be594b8f978a507932db/) | ⚠️ Unaudited |
-| PullTokenWrapperAllow | token | bsc | n/a | [`0xc9dfd5...e0c45b`](./contracts/bsc-56/0xc9dfd5c18f12a3ba6293001700810602efe0c45b/) | ⚠️ Unaudited |
-| Token | token | bsc | n/a | [`0x799a29...7a872b`](./contracts/bsc-56/0x799a290f9cc4085a0ce5b42b5f2c30193a7a872b/) | ⚠️ Unaudited |
-| TokenLocker | token | bsc | n/a | 3 deployments: bsc [`0x0e7dd5...002c25`](./contracts/bsc-56/0x0e7dd56f7d2cadc066b992cec58253190f002c25/); bsc `0x3bffd2...0146b9`; bsc `0x5029f4...bfc2ed` | ⚠️ Unaudited |
-| TrustWalletToken | token | bsc | n/a | [`0x4b0f18...508003`](./contracts/bsc-56/0x4b0f1812e5df2a09796481ff14017e6005508003/) | ⚠️ Unaudited |
+| bscSUNDOG | unknown | bsc | n/a | [`0xdc419cfe5454bf58001f131e98cf2065e11936a7`](./contracts/bsc-56/0xdc419cfe5454bf58001f131e98cf2065e11936a7/) | ⚠️ Unaudited |
+| DistributionCreator | unknown | bsc | n/a | 3 deployments: bsc [`0x46a9e9434dac9baa1f95a5129f04aef6c8c57829`](./contracts/bsc-56/0x46a9e9434dac9baa1f95a5129f04aef6c8c57829/); bsc `0x99fe8557a8f322525262720c52b7d57c56924012`; bsc `0xc42b7a34cb37ee450cc8059b10d839e4753229d5` | ⚠️ Unaudited |
+| Distributor | unknown | bsc | n/a | 4 deployments: bsc [`0x04a7d169c5b14d2e29a3ba8b5071dda5e365c199`](./contracts/bsc-56/0x04a7d169c5b14d2e29a3ba8b5071dda5e365c199/); bsc `0x4195faaba1cbad584fe2fec711d788cdb9a6a9a7`; bsc `0x44e3d3bba34e16a67c633daf86114284fc628819`; bsc `0xa0e088fb02a8d5a71d337b88b7629b0413f53de4` | ⚠️ Unaudited |
+| ERC1967Proxy | proxy | bsc | n/a | 2 deployments: bsc [`0x147f4163756db2eee9092bb848603a9e7054c52d`](./contracts/bsc-56/0x147f4163756db2eee9092bb848603a9e7054c52d/); bsc `0xedbebe204ef070b6880e07a28b55edc7748c24ba` | ⚠️ Unaudited |
+| PointToken | token | bsc | n/a | [`0x1276d63baef24d316383be594b8f978a507932db`](./contracts/bsc-56/0x1276d63baef24d316383be594b8f978a507932db/) | ⚠️ Unaudited |
+| PullTokenWrapperAllow | token | bsc | n/a | [`0xc9dfd5c18f12a3ba6293001700810602efe0c45b`](./contracts/bsc-56/0xc9dfd5c18f12a3ba6293001700810602efe0c45b/) | ⚠️ Unaudited |
+| Token | token | bsc | n/a | [`0x799a290f9cc4085a0ce5b42b5f2c30193a7a872b`](./contracts/bsc-56/0x799a290f9cc4085a0ce5b42b5f2c30193a7a872b/) | ⚠️ Unaudited |
+| TokenLocker | token | bsc | n/a | 3 deployments: bsc [`0x0e7dd56f7d2cadc066b992cec58253190f002c25`](./contracts/bsc-56/0x0e7dd56f7d2cadc066b992cec58253190f002c25/); bsc `0x3bffd2ee930c506e91453b74e7c0214da60146b9`; bsc `0x5029f49585d57ed770d2194841b5a0be06bfc2ed` | ⚠️ Unaudited |
+| TrustWalletToken | token | bsc | n/a | [`0x4b0f1812e5df2a09796481ff14017e6005508003`](./contracts/bsc-56/0x4b0f1812e5df2a09796481ff14017e6005508003/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -89,8 +89,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0x22b0ac...c47f5e` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xe0e2a2...0a32e3` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x22b0ac22d5d58f05873e470bca5db7ceb5c47f5e` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xe0e2a29b69e6600e37000d1bdbccbe523f0a32e3` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -113,14 +113,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0xdc419c...1936a7`](./contracts/bsc-56/0xdc419cfe5454bf58001f131e98cf2065e11936a7/) | bscSUNDOG | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x46a9e9...c57829`](./contracts/bsc-56/0x46a9e9434dac9baa1f95a5129f04aef6c8c57829/) | DistributionCreator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x04a7d1...65c199`](./contracts/bsc-56/0x04a7d169c5b14d2e29a3ba8b5071dda5e365c199/) | Distributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x1276d6...7932db`](./contracts/bsc-56/0x1276d63baef24d316383be594b8f978a507932db/) | PointToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xc9dfd5...e0c45b`](./contracts/bsc-56/0xc9dfd5c18f12a3ba6293001700810602efe0c45b/) | PullTokenWrapperAllow | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x799a29...7a872b`](./contracts/bsc-56/0x799a290f9cc4085a0ce5b42b5f2c30193a7a872b/) | Token | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x0e7dd5...002c25`](./contracts/bsc-56/0x0e7dd56f7d2cadc066b992cec58253190f002c25/) | TokenLocker | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x4b0f18...508003`](./contracts/bsc-56/0x4b0f1812e5df2a09796481ff14017e6005508003/) | TrustWalletToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xdc419cfe5454bf58001f131e98cf2065e11936a7`](./contracts/bsc-56/0xdc419cfe5454bf58001f131e98cf2065e11936a7/) | bscSUNDOG | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x46a9e9434dac9baa1f95a5129f04aef6c8c57829`](./contracts/bsc-56/0x46a9e9434dac9baa1f95a5129f04aef6c8c57829/) | DistributionCreator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x04a7d169c5b14d2e29a3ba8b5071dda5e365c199`](./contracts/bsc-56/0x04a7d169c5b14d2e29a3ba8b5071dda5e365c199/) | Distributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x1276d63baef24d316383be594b8f978a507932db`](./contracts/bsc-56/0x1276d63baef24d316383be594b8f978a507932db/) | PointToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xc9dfd5c18f12a3ba6293001700810602efe0c45b`](./contracts/bsc-56/0xc9dfd5c18f12a3ba6293001700810602efe0c45b/) | PullTokenWrapperAllow | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x799a290f9cc4085a0ce5b42b5f2c30193a7a872b`](./contracts/bsc-56/0x799a290f9cc4085a0ce5b42b5f2c30193a7a872b/) | Token | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x0e7dd56f7d2cadc066b992cec58253190f002c25`](./contracts/bsc-56/0x0e7dd56f7d2cadc066b992cec58253190f002c25/) | TokenLocker | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x4b0f1812e5df2a09796481ff14017e6005508003`](./contracts/bsc-56/0x4b0f1812e5df2a09796481ff14017e6005508003/) | TrustWalletToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

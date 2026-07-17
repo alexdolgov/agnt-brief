@@ -61,11 +61,11 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| PresaleNewClaimsV1 | unknown | ethereum | n/a | [`0xc9291a...009961`](./contracts/ethereum-1/0xc9291ac4f0b9de2b334b0493869595ff85009961/) | ⚠️ Unaudited |
-| PresaleNewClaimsV2 | unknown | ethereum | n/a | [`0xc5fd40...bb0c61`](./contracts/ethereum-1/0xc5fd40e4daf9ff211ff99b0be59b7260bcbb0c61/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | ethereum | n/a | [`0x092dd6...9b5319`](./contracts/ethereum-1/0x092dd6c876c78a8e7478b35417f98d964b9b5319/) | ⚠️ Unaudited |
-| Token | unknown | ethereum | n/a | [`0x93aa0c...4085d6`](./contracts/ethereum-1/0x93aa0ccd1e5628d3a841c4dbdf602d9eb04085d6/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0xe77864...10ee3a`](./contracts/ethereum-1/0xe77864e6368103da3e0c3f86781456af1a10ee3a/) | ⚠️ Unaudited |
+| PresaleNewClaimsV1 | unknown | ethereum | n/a | [`0xc9291ac4f0b9de2b334b0493869595ff85009961`](./contracts/ethereum-1/0xc9291ac4f0b9de2b334b0493869595ff85009961/) | ⚠️ Unaudited |
+| PresaleNewClaimsV2 | unknown | ethereum | n/a | [`0xc5fd40e4daf9ff211ff99b0be59b7260bcbb0c61`](./contracts/ethereum-1/0xc5fd40e4daf9ff211ff99b0be59b7260bcbb0c61/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | ethereum | n/a | [`0x092dd6c876c78a8e7478b35417f98d964b9b5319`](./contracts/ethereum-1/0x092dd6c876c78a8e7478b35417f98d964b9b5319/) | ⚠️ Unaudited |
+| Token | unknown | ethereum | n/a | [`0x93aa0ccd1e5628d3a841c4dbdf602d9eb04085d6`](./contracts/ethereum-1/0x93aa0ccd1e5628d3a841c4dbdf602d9eb04085d6/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0xe77864e6368103da3e0c3f86781456af1a10ee3a`](./contracts/ethereum-1/0xe77864e6368103da3e0c3f86781456af1a10ee3a/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -96,9 +96,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xc9291a...009961`](./contracts/ethereum-1/0xc9291ac4f0b9de2b334b0493869595ff85009961/) | PresaleNewClaimsV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc5fd40...bb0c61`](./contracts/ethereum-1/0xc5fd40e4daf9ff211ff99b0be59b7260bcbb0c61/) | PresaleNewClaimsV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x93aa0c...4085d6`](./contracts/ethereum-1/0x93aa0ccd1e5628d3a841c4dbdf602d9eb04085d6/) | Token | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc9291ac4f0b9de2b334b0493869595ff85009961`](./contracts/ethereum-1/0xc9291ac4f0b9de2b334b0493869595ff85009961/) | PresaleNewClaimsV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc5fd40e4daf9ff211ff99b0be59b7260bcbb0c61`](./contracts/ethereum-1/0xc5fd40e4daf9ff211ff99b0be59b7260bcbb0c61/) | PresaleNewClaimsV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x93aa0ccd1e5628d3a841c4dbdf602d9eb04085d6`](./contracts/ethereum-1/0x93aa0ccd1e5628d3a841c4dbdf602d9eb04085d6/) | Token | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

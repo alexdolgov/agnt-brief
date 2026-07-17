@@ -57,8 +57,8 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x233c53...4cb4cd`, chain 143)
-- UnnamedContract (`0x233c53...4cb4cd`, chain 196)
+- UnnamedContract (`0x233c5370ccfb3cd7409d9a3fb98ab94de94cb4cd`, chain 143)
+- UnnamedContract (`0x233c5370ccfb3cd7409d9a3fb98ab94de94cb4cd`, chain 196)
 
 ## Contract Surface Quality
 
@@ -104,8 +104,8 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| FiatTokenV2_2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | gnosis | n/a | `0x2a22f9...8f76f0` | ⚠️ Unaudited |
-| PermittableToken | token | non_address_book | non_address_book_inventory (excluded) | 1 | gnosis | n/a | `0x177127...973d3c` | ⚠️ Unaudited |
+| FiatTokenV2_2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | gnosis | n/a | `0x2a22f9c3b484c3629090feed35f17ff8f88f76f0` | ⚠️ Unaudited |
+| PermittableToken | token | non_address_book | non_address_book_inventory (excluded) | 1 | gnosis | n/a | `0x177127622c4a00f3d409b75571e12cb3c8973d3c` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -125,8 +125,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-389847 | `0x233c53...4cb4cd` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | x-layer | unit-389848 | `0x233c53...4cb4cd` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-389847 | `0x233c5370ccfb3cd7409d9a3fb98ab94de94cb4cd` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | x-layer | unit-389848 | `0x233c5370ccfb3cd7409d9a3fb98ab94de94cb4cd` | ❓ Unverified |
 
 ## Audit Inventory
 

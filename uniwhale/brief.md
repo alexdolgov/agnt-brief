@@ -61,57 +61,57 @@ The protocol comprises 8 functional families. Its contracts share 7 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| esUniwhaleV2 | unknown | bsc | n/a | 2 deployments: bsc [`0x4b0708...f6e254`](./contracts/bsc-56/0x4b0708b001c4daea5808eab21508cd7339f6e254/); bsc `0x614c46...722f80` | ✅ Audited |
-| FeeVault | core_logic | bsc | n/a | 2 deployments: bsc [`0x9bea24...fc6e74`](./contracts/bsc-56/0x9bea24685836a8c858e93d1710c55721e7fc6e74/); bsc `0xfbcff7...971dbf` | ✅ Audited |
-| LiquidityPool | unknown | bsc | n/a | 10 deployments: bsc [`0x089dba...cc79ad`](./contracts/bsc-56/0x089dba6f9f907327b9479d14c962586ab9cc79ad/); bsc `0x1f1d6f...1007c2`; bsc `0x48c314...7b15bc`; bsc `0x52dcd8...83e43a`; bsc `0x6f89de...8d17d7`; bsc `0x7a22d5...bc0867`; bsc `0x7bf129...d2c75f`; bsc `0xd48600...d5aba0`; bsc `0xedf173...fdbe75`; bsc `0xf272eb...8ea8b8` | ✅ Audited |
-| LiquidityPool | unknown | bsc | n/a | 2 deployments: bsc [`0x9ab799...a6be9e`](./contracts/bsc-56/0x9ab799894f505772aaa91b091df9766db9a6be9e/); bsc `0xbdecaf...4769e7` | ✅ Audited |
-| MarginPool | unknown | bsc | n/a | [`0x7d9cc5...fa109b`](./contracts/bsc-56/0x7d9cc5232a455addeb99cb8221d5ccb784fa109b/) | ✅ Audited |
-| MarketBook | unknown | bsc | n/a | [`0x4cd24e...1e1414`](./contracts/bsc-56/0x4cd24e1452933699e24fe5a62ba1700c421e1414/) | ✅ Audited |
-| MarketBook | unknown | bsc | n/a | 2 deployments: bsc [`0xa277b3...000c9f`](./contracts/bsc-56/0xa277b3c54549eae35dab484077a2a78559000c9f/); bsc `0xf00b7b...19999f` | ✅ Audited |
-| OracleAggregator | unknown | bsc | n/a | 3 deployments: bsc [`0x059b49...bed2a5`](./contracts/bsc-56/0x059b491a6403567663483238e8458183a3bed2a5/); bsc `0x0b56a6...a3716b`; bsc `0xa2dea1...1043b1` | ✅ Audited |
-| PancakeRouter | unknown | bsc | n/a | [`0x0f5df5...8059d1`](./contracts/bsc-56/0x0f5df5edad59d331d8419d9fd9cda025c28059d1/) | ✅ Audited |
-| PoolReader | core_logic | bsc | n/a | [`0xdf4261...238cf6`](./contracts/bsc-56/0xdf4261ffd44d66cf8007753c5e998eee34238cf6/) | ✅ Audited |
-| RegistryCore | unknown | bsc | n/a | 12 deployments: bsc [`0x35a31d...16ff2c`](./contracts/bsc-56/0x35a31db0f726954074d73c67df7389345516ff2c/); bsc `0x3a3233...17a461`; bsc `0x5be771...d29872`; bsc `0x7e7245...a7d7a6`; bsc `0x808b66...498b0d`; bsc `0x903bd6...c49d87`; bsc `0xa74a41...8e1446`; bsc `0xa82b6c...f3283d`; bsc `0xab64cb...3fe692`; bsc `0xc24915...6ef667`; bsc `0xdb7bbe...bbbeb3`; bsc `0xf1e1db...f0555c` | ✅ Audited |
-| RegistryCore | registry | bsc | n/a | 2 deployments: bsc [`0xae0c4a...927ff9`](./contracts/bsc-56/0xae0c4a3432b18d9c65e1544a7669d9de44927ff9/); bsc `0xe8a811...cbb5d1` | ✅ Audited |
-| RegistryReader | unknown | bsc | n/a | 4 deployments: bsc [`0x234d7e...af8e72`](./contracts/bsc-56/0x234d7e86655ea8efb1ab8d29038784deedaf8e72/); bsc `0x41e53d...2a8e43`; bsc `0x81950d...aa3805`; bsc `0xbdbde8...c96088` | ✅ Audited |
-| RevenuePool | unknown | bsc | n/a | 2 deployments: bsc [`0x55f889...36fb94`](./contracts/bsc-56/0x55f889d632ac3105aeea8f15c68eb75e2336fb94/); bsc `0xd31769...81e391` | ✅ Audited |
-| RevenuePool | unknown | bsc | n/a | 2 deployments: bsc [`0x605555...78c22f`](./contracts/bsc-56/0x60555593996d55717e9047f2c6e46af28d78c22f/); bsc `0x9382cd...78c842` | ✅ Audited |
-| SwapRouterGetter | unknown | bsc | n/a | [`0x1cb109...e747a9`](./contracts/bsc-56/0x1cb1099175cff621778609517334b35920e747a9/) | ✅ Audited |
-| TradingCore | unknown | bsc | n/a | 13 deployments: bsc [`0x14359b...0040eb`](./contracts/bsc-56/0x14359be87cd6ca759eefc106090ee7e7720040eb/); bsc `0x1e0526...7c5ad1`; bsc `0x371a34...a3189b`; bsc `0x59a365...235311`; bsc `0x7a06bc...8ce499`; bsc `0x7cf574...37e6d1`; bsc `0x8990ca...5972f5`; bsc `0x9332fc...d97165`; bsc `0x971922...04d500`; bsc `0x98b0d1...3dda32`; bsc `0xa77808...9142c5`; bsc `0xddc9e3...1d608c`; bsc `0xea9bb0...4d0486` | ✅ Audited |
-| TradingCore | unknown | bsc | n/a | 2 deployments: bsc [`0x292671...fcc1ea`](./contracts/bsc-56/0x2926710dcb5c3e046285755410979d1de5fcc1ea/); bsc `0x55d5f4...fc5bb4` | ✅ Audited |
-| TradingCore | unknown | bsc | n/a | 2 deployments: bsc [`0x6c675a...c28a7b`](./contracts/bsc-56/0x6c675ac96955db45e01a8d7f61886692e2c28a7b/); bsc `0x9b5215...329ebc` | ✅ Audited |
-| TradingCoreLib | unknown | bsc | n/a | 8 deployments: bsc [`0x0b60b8...fc4bb0`](./contracts/bsc-56/0x0b60b89d17b2bc18d10821677bb3137d5afc4bb0/); bsc `0x2cb1bb...630e94`; bsc `0xa02474...b330f2`; bsc `0xa197e4...0a8c20`; bsc `0xa36995...d01ac7`; bsc `0xa7e362...be2a39`; bsc `0xb09bc6...736049`; bsc `0xfaa356...22e66e` | ✅ Audited |
-| TradingCoreLib | unknown | bsc | n/a | 2 deployments: bsc [`0x98fa0d...f3e2ff`](./contracts/bsc-56/0x98fa0d383fecdcc458a1aeab69790f5e87f3e2ff/); bsc `0xdf6c13...339bfc` | ✅ Audited |
-| UniwhaleToken | unknown | bsc | n/a | 6 deployments: bsc [`0x0af3f4...44ba3e`](./contracts/bsc-56/0x0af3f407985df252ecf0f73568b377115244ba3e/); bsc `0x16d7f9...1950df`; bsc `0xae7a52...b3b685`; bsc `0xbe0d1e...440a1a`; bsc `0xc2ba85...8f7146`; bsc `0xef14a0...cb5677` | ✅ Audited |
-| UniwhaleToken | token | bsc | n/a | 2 deployments: bsc [`0x5b65cd...f8dc06`](./contracts/bsc-56/0x5b65cd9feb54f1df3d0c60576003344079f8dc06/); bsc `0xf89896...19acf9` | ✅ Audited |
+| esUniwhaleV2 | unknown | bsc | n/a | 2 deployments: bsc [`0x4b0708b001c4daea5808eab21508cd7339f6e254`](./contracts/bsc-56/0x4b0708b001c4daea5808eab21508cd7339f6e254/); bsc `0x614c46b715424706e4f0f8e15854f8d176722f80` | ✅ Audited |
+| FeeVault | core_logic | bsc | n/a | 2 deployments: bsc [`0x9bea24685836a8c858e93d1710c55721e7fc6e74`](./contracts/bsc-56/0x9bea24685836a8c858e93d1710c55721e7fc6e74/); bsc `0xfbcff79a83dbfb6559ef043fc8277e570b971dbf` | ✅ Audited |
+| LiquidityPool | unknown | bsc | n/a | 10 deployments: bsc [`0x089dba6f9f907327b9479d14c962586ab9cc79ad`](./contracts/bsc-56/0x089dba6f9f907327b9479d14c962586ab9cc79ad/); bsc `0x1f1d6f6dc5fcf6431bdd090056812760ec1007c2`; bsc `0x48c314178d3d3bc47e4decc1e50f51d0a97b15bc`; bsc `0x52dcd80506bc421cae6927c73f306fd0d083e43a`; bsc `0x6f89ded40508e37ac981ff0ec88af51ddb8d17d7`; bsc `0x7a22d58c29b033122ff212eed558ab8bc3bc0867`; bsc `0x7bf129917cac9397b16f2effb3cc772d12d2c75f`; bsc `0xd48600e28794dc4fc6b38b7dfdaba89179d5aba0`; bsc `0xedf17350e91bb8890dc3a67b4dafc5e9a5fdbe75`; bsc `0xf272eba1396b5eba3b21a74e7e512a744c8ea8b8` | ✅ Audited |
+| LiquidityPool | unknown | bsc | n/a | 2 deployments: bsc [`0x9ab799894f505772aaa91b091df9766db9a6be9e`](./contracts/bsc-56/0x9ab799894f505772aaa91b091df9766db9a6be9e/); bsc `0xbdecafd9096d43616a8e0eb8f3fa0865fd4769e7` | ✅ Audited |
+| MarginPool | unknown | bsc | n/a | [`0x7d9cc5232a455addeb99cb8221d5ccb784fa109b`](./contracts/bsc-56/0x7d9cc5232a455addeb99cb8221d5ccb784fa109b/) | ✅ Audited |
+| MarketBook | unknown | bsc | n/a | [`0x4cd24e1452933699e24fe5a62ba1700c421e1414`](./contracts/bsc-56/0x4cd24e1452933699e24fe5a62ba1700c421e1414/) | ✅ Audited |
+| MarketBook | unknown | bsc | n/a | 2 deployments: bsc [`0xa277b3c54549eae35dab484077a2a78559000c9f`](./contracts/bsc-56/0xa277b3c54549eae35dab484077a2a78559000c9f/); bsc `0xf00b7b260731c2cceb2ab612ecb29d95a419999f` | ✅ Audited |
+| OracleAggregator | unknown | bsc | n/a | 3 deployments: bsc [`0x059b491a6403567663483238e8458183a3bed2a5`](./contracts/bsc-56/0x059b491a6403567663483238e8458183a3bed2a5/); bsc `0x0b56a61d817e215d6f6dc7b461be2e5b0ca3716b`; bsc `0xa2dea1a833b6798177c11f73f6f726d7221043b1` | ✅ Audited |
+| PancakeRouter | unknown | bsc | n/a | [`0x0f5df5edad59d331d8419d9fd9cda025c28059d1`](./contracts/bsc-56/0x0f5df5edad59d331d8419d9fd9cda025c28059d1/) | ✅ Audited |
+| PoolReader | core_logic | bsc | n/a | [`0xdf4261ffd44d66cf8007753c5e998eee34238cf6`](./contracts/bsc-56/0xdf4261ffd44d66cf8007753c5e998eee34238cf6/) | ✅ Audited |
+| RegistryCore | unknown | bsc | n/a | 12 deployments: bsc [`0x35a31db0f726954074d73c67df7389345516ff2c`](./contracts/bsc-56/0x35a31db0f726954074d73c67df7389345516ff2c/); bsc `0x3a32334e424dd343140583e28f9f89f89b17a461`; bsc `0x5be7714ff80a0eff6fb6139bc1b3967d3ad29872`; bsc `0x7e724544daeed0bc0fa1867f3e24a2a1c1a7d7a6`; bsc `0x808b660d24c568fa1c15660049ab6786bd498b0d`; bsc `0x903bd66367f013b23713e3e5832591526ec49d87`; bsc `0xa74a41fcfb5ffde74d7c71e0ec20106c5d8e1446`; bsc `0xa82b6c24b9ebb4391cbbc63a1a08fb0e3cf3283d`; bsc `0xab64cb21226c12bd409686fefcf54b79483fe692`; bsc `0xc249155e57777c615c4c2a1baead4117b16ef667`; bsc `0xdb7bbe05fb62fbcd43a1b4a401933a3e61bbbeb3`; bsc `0xf1e1db12506be7e64a3c55981458121f86f0555c` | ✅ Audited |
+| RegistryCore | registry | bsc | n/a | 2 deployments: bsc [`0xae0c4a3432b18d9c65e1544a7669d9de44927ff9`](./contracts/bsc-56/0xae0c4a3432b18d9c65e1544a7669d9de44927ff9/); bsc `0xe8a81189909f0c9f4d5057908f7664eab5cbb5d1` | ✅ Audited |
+| RegistryReader | unknown | bsc | n/a | 4 deployments: bsc [`0x234d7e86655ea8efb1ab8d29038784deedaf8e72`](./contracts/bsc-56/0x234d7e86655ea8efb1ab8d29038784deedaf8e72/); bsc `0x41e53d951c926a0bfe0ba767cac86cf6dc2a8e43`; bsc `0x81950d81e1c4446377e261f466158f8952aa3805`; bsc `0xbdbde8bef75a244ec28127f33b8d628488c96088` | ✅ Audited |
+| RevenuePool | unknown | bsc | n/a | 2 deployments: bsc [`0x55f889d632ac3105aeea8f15c68eb75e2336fb94`](./contracts/bsc-56/0x55f889d632ac3105aeea8f15c68eb75e2336fb94/); bsc `0xd317694308f3d5e3bfda708692d5ddeeb981e391` | ✅ Audited |
+| RevenuePool | unknown | bsc | n/a | 2 deployments: bsc [`0x60555593996d55717e9047f2c6e46af28d78c22f`](./contracts/bsc-56/0x60555593996d55717e9047f2c6e46af28d78c22f/); bsc `0x9382cd711bc058ab9fe1e00a6085408fea78c842` | ✅ Audited |
+| SwapRouterGetter | unknown | bsc | n/a | [`0x1cb1099175cff621778609517334b35920e747a9`](./contracts/bsc-56/0x1cb1099175cff621778609517334b35920e747a9/) | ✅ Audited |
+| TradingCore | unknown | bsc | n/a | 13 deployments: bsc [`0x14359be87cd6ca759eefc106090ee7e7720040eb`](./contracts/bsc-56/0x14359be87cd6ca759eefc106090ee7e7720040eb/); bsc `0x1e0526a9edc00eb49fc5e5e219b325e6ff7c5ad1`; bsc `0x371a342c40297940f1d802c432e8759fbea3189b`; bsc `0x59a3650227ac79529b43ee334bc2c5f587235311`; bsc `0x7a06bc1ce2e777034cf9844e26d2e9683d8ce499`; bsc `0x7cf574f4839574aab9a41834033114378837e6d1`; bsc `0x8990ca8ffcba28541c8825ac74fb77f3ad5972f5`; bsc `0x9332fcd693113a0a94a1712636ccd1f524d97165`; bsc `0x971922e10cc3fd9b9fa40fb7fd7335c80c04d500`; bsc `0x98b0d15420b940d3e63b5d34d9399f525c3dda32`; bsc `0xa778088a07669ebfe5d3c5bab357e526d39142c5`; bsc `0xddc9e31623caa990d4b9bbd63740f74d401d608c`; bsc `0xea9bb043fbf9a2e647c11ac1666ffeb0ae4d0486` | ✅ Audited |
+| TradingCore | unknown | bsc | n/a | 2 deployments: bsc [`0x2926710dcb5c3e046285755410979d1de5fcc1ea`](./contracts/bsc-56/0x2926710dcb5c3e046285755410979d1de5fcc1ea/); bsc `0x55d5f4c69c3e5e7a3d16afcf490750186efc5bb4` | ✅ Audited |
+| TradingCore | unknown | bsc | n/a | 2 deployments: bsc [`0x6c675ac96955db45e01a8d7f61886692e2c28a7b`](./contracts/bsc-56/0x6c675ac96955db45e01a8d7f61886692e2c28a7b/); bsc `0x9b5215c94d9576286805570db1da96999c329ebc` | ✅ Audited |
+| TradingCoreLib | unknown | bsc | n/a | 8 deployments: bsc [`0x0b60b89d17b2bc18d10821677bb3137d5afc4bb0`](./contracts/bsc-56/0x0b60b89d17b2bc18d10821677bb3137d5afc4bb0/); bsc `0x2cb1bbc8f15950ef498f6093bff0684aca630e94`; bsc `0xa02474fc8b65402eacf4642cf020c10dcab330f2`; bsc `0xa197e4ff766233e639eec60a33a96fc3f20a8c20`; bsc `0xa36995a4a2ebf747970f34609f60577880d01ac7`; bsc `0xa7e36292b27090d328b1804c6666df5678be2a39`; bsc `0xb09bc676557ecb8353b0a4b5ab4927d44c736049`; bsc `0xfaa35688cf891a23be78284110f1c0044422e66e` | ✅ Audited |
+| TradingCoreLib | unknown | bsc | n/a | 2 deployments: bsc [`0x98fa0d383fecdcc458a1aeab69790f5e87f3e2ff`](./contracts/bsc-56/0x98fa0d383fecdcc458a1aeab69790f5e87f3e2ff/); bsc `0xdf6c13978311865bacf2b8d88623a08bc1339bfc` | ✅ Audited |
+| UniwhaleToken | unknown | bsc | n/a | 6 deployments: bsc [`0x0af3f407985df252ecf0f73568b377115244ba3e`](./contracts/bsc-56/0x0af3f407985df252ecf0f73568b377115244ba3e/); bsc `0x16d7f9db9c58acb451bf5e494fba082dc01950df`; bsc `0xae7a5297814787480b77d2281a2e5aa63fb3b685`; bsc `0xbe0d1e24a571b7d4fde1064edec71df5dc440a1a`; bsc `0xc2ba852abe57765ab47d597554e04330578f7146`; bsc `0xef14a04998ef694254d86dd0d0cd208293cb5677` | ✅ Audited |
+| UniwhaleToken | token | bsc | n/a | 2 deployments: bsc [`0x5b65cd9feb54f1df3d0c60576003344079f8dc06`](./contracts/bsc-56/0x5b65cd9feb54f1df3d0c60576003344079f8dc06/); bsc `0xf89896384ef07096661dbd6c7ac97c837319acf9` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (23)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AirdropHelper | unknown | bsc | n/a | 2 deployments: bsc [`0x43dc3a...bfd18a`](./contracts/bsc-56/0x43dc3a2af323f2e4ec9cc9736df55aba9cbfd18a/); bsc `0xaf9e15...446491` | ⚠️ Unaudited |
-| esUniwhaleToken | unknown | bsc | n/a | 2 deployments: bsc [`0x0026aa...643230`](./contracts/bsc-56/0x0026aae37996cea1ea1a99e88563031e5d643230/); bsc `0x61c07e...66d5cf` | ⚠️ Unaudited |
-| esUniwhaleToken | unknown | bsc | n/a | 7 deployments: bsc [`0x26278d...dffdae`](./contracts/bsc-56/0x26278daa6ec3368fd2f672260abbcd8e67dffdae/); bsc `0x43bc4a...dc783d`; bsc `0x59d35a...bd44d1`; bsc `0x92a1f0...ed509c`; bsc `0xa5212d...97bb4a`; bsc `0xde99d0...3732b5`; bsc `0xfc9686...b5bca8` | ⚠️ Unaudited |
-| Fees | unknown | bsc | n/a | 2 deployments: bsc [`0x00c114...338fd3`](./contracts/bsc-56/0x00c114b623e75b6ab03ba4f67f89bebacc338fd3/); bsc `0xc37ee4...2a4102` | ⚠️ Unaudited |
-| Fees | unknown | bsc | n/a | [`0xc4a94d...598c64`](./contracts/bsc-56/0xc4a94d2891690e9b930ad20204fa071940598c64/) | ⚠️ Unaudited |
-| LimitBook | unknown | bsc | n/a | 7 deployments: bsc [`0x107f7f...a080e6`](./contracts/bsc-56/0x107f7f198cc133c2a2492566b2b229363aa080e6/); bsc `0x20c5e7...f78ade`; bsc `0x3e9849...a33901`; bsc `0x46e7ee...3ce06d`; bsc `0x782f71...89c573`; bsc `0xa2c4a5...e70c06`; bsc `0xec7a1e...9d47f4` | ⚠️ Unaudited |
-| LimitBook | unknown | bsc | n/a | 2 deployments: bsc [`0x27bbbf...523e21`](./contracts/bsc-56/0x27bbbf42dfa62bf16bf9684747476a7a40523e21/); bsc `0x404d97...208d9b` | ⚠️ Unaudited |
-| LimitBook | unknown | bsc | n/a | 2 deployments: bsc [`0x5145b1...bd8440`](./contracts/bsc-56/0x5145b10dad211e24fd217c7f57cb90d0cfbd8440/); bsc `0xa61b3d...fedf06` | ⚠️ Unaudited |
-| LimitBook | unknown | bsc | n/a | 2 deployments: bsc [`0x656ac0...0a8ea7`](./contracts/bsc-56/0x656ac046304446c5802849fcfd5f5ddb090a8ea7/); bsc `0xcc391c...6b5e9a` | ⚠️ Unaudited |
-| MarginPool | core_logic | bsc | n/a | 2 deployments: bsc [`0xbb1b94...ac9bcc`](./contracts/bsc-56/0xbb1b941ab76fae4e9f552b860efac1f367ac9bcc/); bsc `0xd2e9d5...fb1008` | ⚠️ Unaudited |
-| MigrateHelper | unknown | bsc | n/a | 2 deployments: bsc [`0x5e8284...125b47`](./contracts/bsc-56/0x5e828415b88d9747bab771ce79021c7f52125b47/); bsc `0x8d5f9b...9f899d` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | bsc | n/a | [`0x9314cc...c43014`](./contracts/bsc-56/0x9314cca6cf879518c37ac4932fb4bf13d6c43014/) | ⚠️ Unaudited |
-| Referrals | unknown | bsc | n/a | 2 deployments: bsc [`0x81173c...8dc8f4`](./contracts/bsc-56/0x81173c1530bb9ab00b2c47d2a6b056322f8dc8f4/); bsc `0xd2e0fd...4ccafd` | ⚠️ Unaudited |
-| Referrals | unknown | bsc | n/a | [`0xdb88ba...725d27`](./contracts/bsc-56/0xdb88ba9c9f717a077fdc62ad3185064793725d27/) | ⚠️ Unaudited |
-| TraderFarm | unknown | bsc | n/a | 2 deployments: bsc [`0x43b8c6...1e5e3a`](./contracts/bsc-56/0x43b8c63097f38ba0eff68766d3db991f9c1e5e3a/); bsc `0x9f6ada...ed7afd` | ⚠️ Unaudited |
-| TraderFarm | unknown | bsc | n/a | 2 deployments: bsc [`0x796ae7...cc2d06`](./contracts/bsc-56/0x796ae7d5001b42f4fc54be7fdc33eca5accc2d06/); bsc `0xef82b2...fee389` | ⚠️ Unaudited |
-| TradingCoreWithRouter | unknown | bsc | n/a | 2 deployments: bsc [`0x51d759...ff4411`](./contracts/bsc-56/0x51d759c0d7bb898358fc9e5c889eac9364ff4411/); bsc `0xec0521...abc1e4` | ⚠️ Unaudited |
-| TradingCoreWithRouter | unknown | bsc | n/a | 2 deployments: bsc [`0x926b30...2f36f3`](./contracts/bsc-56/0x926b303605b03d5e9d1a942b76ce7bb03e2f36f3/); bsc `0xdaf311...cff129` | ⚠️ Unaudited |
-| TradingCoreWithRouter | adapter | bsc | n/a | 2 deployments: bsc [`0xb6ebb9...4e415d`](./contracts/bsc-56/0xb6ebb9bffd3bbc9d46feac4167b88b9eee4e415d/); bsc `0xd429cb...aa557f` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | bsc | n/a | 2 deployments: bsc [`0x498cd3...eea9fd`](./contracts/bsc-56/0x498cd3e719f0011188536947b92a0e4b42eea9fd/); bsc `0x7bb4b5...dadb54` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | bsc | n/a | 2 deployments: bsc [`0xbd4daa...edffea`](./contracts/bsc-56/0xbd4daa4f582ab9aca6f9a8c66d93bfc059edffea/); bsc `0xc8d7aa...b890e5` | ⚠️ Unaudited |
-| UniwhalePass | unknown | bsc | n/a | 2 deployments: bsc [`0x3cce74...12a68f`](./contracts/bsc-56/0x3cce74aa8c60c4f8a42df146f7c3d7761f12a68f/); bsc `0x3d8ce3...be7c2e` | ⚠️ Unaudited |
-| UniwhalePass | unknown | bsc | n/a | 5 deployments: bsc [`0xad25d1...011511`](./contracts/bsc-56/0xad25d1e971a779f3444607c1b1f1024115011511/); bsc `0xbe8a0c...6bfcbf`; bsc `0xc6e73c...cbeb49`; bsc `0xf780b3...bd338a`; bsc `0xfbffdd...37c97e` | ⚠️ Unaudited |
+| AirdropHelper | unknown | bsc | n/a | 2 deployments: bsc [`0x43dc3a2af323f2e4ec9cc9736df55aba9cbfd18a`](./contracts/bsc-56/0x43dc3a2af323f2e4ec9cc9736df55aba9cbfd18a/); bsc `0xaf9e1568df6ba6725f94b598916362a5a6446491` | ⚠️ Unaudited |
+| esUniwhaleToken | unknown | bsc | n/a | 2 deployments: bsc [`0x0026aae37996cea1ea1a99e88563031e5d643230`](./contracts/bsc-56/0x0026aae37996cea1ea1a99e88563031e5d643230/); bsc `0x61c07ec9ca5ff18102396b4fff4eb31d7866d5cf` | ⚠️ Unaudited |
+| esUniwhaleToken | unknown | bsc | n/a | 7 deployments: bsc [`0x26278daa6ec3368fd2f672260abbcd8e67dffdae`](./contracts/bsc-56/0x26278daa6ec3368fd2f672260abbcd8e67dffdae/); bsc `0x43bc4a57dc0916108d5948aeb4e75d7c4cdc783d`; bsc `0x59d35a27df6171cf993392b1ba6898e5fdbd44d1`; bsc `0x92a1f0f46c41ee7bd67af285d615c6e8fded509c`; bsc `0xa5212d3a0c435036d30bc4e2a5d4fd366297bb4a`; bsc `0xde99d0f9b6da544e4d924c24de03c7c15b3732b5`; bsc `0xfc9686253b0fab341b5406429ad320c64bb5bca8` | ⚠️ Unaudited |
+| Fees | unknown | bsc | n/a | 2 deployments: bsc [`0x00c114b623e75b6ab03ba4f67f89bebacc338fd3`](./contracts/bsc-56/0x00c114b623e75b6ab03ba4f67f89bebacc338fd3/); bsc `0xc37ee44893839f221a07c2c51966e616262a4102` | ⚠️ Unaudited |
+| Fees | unknown | bsc | n/a | [`0xc4a94d2891690e9b930ad20204fa071940598c64`](./contracts/bsc-56/0xc4a94d2891690e9b930ad20204fa071940598c64/) | ⚠️ Unaudited |
+| LimitBook | unknown | bsc | n/a | 7 deployments: bsc [`0x107f7f198cc133c2a2492566b2b229363aa080e6`](./contracts/bsc-56/0x107f7f198cc133c2a2492566b2b229363aa080e6/); bsc `0x20c5e75087cffc035ebd8cf1b9b94da3eef78ade`; bsc `0x3e98490a21ab783b185799c981d05a6d8da33901`; bsc `0x46e7ee45c5a57e70d1d80962a398c796ae3ce06d`; bsc `0x782f7189b428a1bbd6455a804f98a3010289c573`; bsc `0xa2c4a539a58248d375198c60f81acb788ee70c06`; bsc `0xec7a1efc5776b92b2a2bdf33e98e0321ca9d47f4` | ⚠️ Unaudited |
+| LimitBook | unknown | bsc | n/a | 2 deployments: bsc [`0x27bbbf42dfa62bf16bf9684747476a7a40523e21`](./contracts/bsc-56/0x27bbbf42dfa62bf16bf9684747476a7a40523e21/); bsc `0x404d97815009304ab09f50f85ef3e17985208d9b` | ⚠️ Unaudited |
+| LimitBook | unknown | bsc | n/a | 2 deployments: bsc [`0x5145b10dad211e24fd217c7f57cb90d0cfbd8440`](./contracts/bsc-56/0x5145b10dad211e24fd217c7f57cb90d0cfbd8440/); bsc `0xa61b3d8ba0d0f9c86833d6f7d945d960e9fedf06` | ⚠️ Unaudited |
+| LimitBook | unknown | bsc | n/a | 2 deployments: bsc [`0x656ac046304446c5802849fcfd5f5ddb090a8ea7`](./contracts/bsc-56/0x656ac046304446c5802849fcfd5f5ddb090a8ea7/); bsc `0xcc391c77fbd3d1293c4bb2d8363e4f6a6b6b5e9a` | ⚠️ Unaudited |
+| MarginPool | core_logic | bsc | n/a | 2 deployments: bsc [`0xbb1b941ab76fae4e9f552b860efac1f367ac9bcc`](./contracts/bsc-56/0xbb1b941ab76fae4e9f552b860efac1f367ac9bcc/); bsc `0xd2e9d588a026aea78deb4da98fe48777c5fb1008` | ⚠️ Unaudited |
+| MigrateHelper | unknown | bsc | n/a | 2 deployments: bsc [`0x5e828415b88d9747bab771ce79021c7f52125b47`](./contracts/bsc-56/0x5e828415b88d9747bab771ce79021c7f52125b47/); bsc `0x8d5f9b64d07e339d55328bdc433b6c59039f899d` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | bsc | n/a | [`0x9314cca6cf879518c37ac4932fb4bf13d6c43014`](./contracts/bsc-56/0x9314cca6cf879518c37ac4932fb4bf13d6c43014/) | ⚠️ Unaudited |
+| Referrals | unknown | bsc | n/a | 2 deployments: bsc [`0x81173c1530bb9ab00b2c47d2a6b056322f8dc8f4`](./contracts/bsc-56/0x81173c1530bb9ab00b2c47d2a6b056322f8dc8f4/); bsc `0xd2e0fd88f9f321204a87081c9befba731e4ccafd` | ⚠️ Unaudited |
+| Referrals | unknown | bsc | n/a | [`0xdb88ba9c9f717a077fdc62ad3185064793725d27`](./contracts/bsc-56/0xdb88ba9c9f717a077fdc62ad3185064793725d27/) | ⚠️ Unaudited |
+| TraderFarm | unknown | bsc | n/a | 2 deployments: bsc [`0x43b8c63097f38ba0eff68766d3db991f9c1e5e3a`](./contracts/bsc-56/0x43b8c63097f38ba0eff68766d3db991f9c1e5e3a/); bsc `0x9f6adae89859049cab4c225d6e2fc0492fed7afd` | ⚠️ Unaudited |
+| TraderFarm | unknown | bsc | n/a | 2 deployments: bsc [`0x796ae7d5001b42f4fc54be7fdc33eca5accc2d06`](./contracts/bsc-56/0x796ae7d5001b42f4fc54be7fdc33eca5accc2d06/); bsc `0xef82b217ce9e282b513dd71e668d6e15acfee389` | ⚠️ Unaudited |
+| TradingCoreWithRouter | unknown | bsc | n/a | 2 deployments: bsc [`0x51d759c0d7bb898358fc9e5c889eac9364ff4411`](./contracts/bsc-56/0x51d759c0d7bb898358fc9e5c889eac9364ff4411/); bsc `0xec0521bcf9836513107de5259ab38173c5abc1e4` | ⚠️ Unaudited |
+| TradingCoreWithRouter | unknown | bsc | n/a | 2 deployments: bsc [`0x926b303605b03d5e9d1a942b76ce7bb03e2f36f3`](./contracts/bsc-56/0x926b303605b03d5e9d1a942b76ce7bb03e2f36f3/); bsc `0xdaf311cd286bc7094487afc306f6ff3681cff129` | ⚠️ Unaudited |
+| TradingCoreWithRouter | adapter | bsc | n/a | 2 deployments: bsc [`0xb6ebb9bffd3bbc9d46feac4167b88b9eee4e415d`](./contracts/bsc-56/0xb6ebb9bffd3bbc9d46feac4167b88b9eee4e415d/); bsc `0xd429cb80b4e4b5c0ea27f148278a6061daaa557f` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | bsc | n/a | 2 deployments: bsc [`0x498cd3e719f0011188536947b92a0e4b42eea9fd`](./contracts/bsc-56/0x498cd3e719f0011188536947b92a0e4b42eea9fd/); bsc `0x7bb4b513377ad65511e22e2d2db705ae18dadb54` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | bsc | n/a | 2 deployments: bsc [`0xbd4daa4f582ab9aca6f9a8c66d93bfc059edffea`](./contracts/bsc-56/0xbd4daa4f582ab9aca6f9a8c66d93bfc059edffea/); bsc `0xc8d7aa19cabed70fb10c1b35d2a2980404b890e5` | ⚠️ Unaudited |
+| UniwhalePass | unknown | bsc | n/a | 2 deployments: bsc [`0x3cce74aa8c60c4f8a42df146f7c3d7761f12a68f`](./contracts/bsc-56/0x3cce74aa8c60c4f8a42df146f7c3d7761f12a68f/); bsc `0x3d8ce31601b8ed4db5eeb921fcf7f178babe7c2e` | ⚠️ Unaudited |
+| UniwhalePass | unknown | bsc | n/a | 5 deployments: bsc [`0xad25d1e971a779f3444607c1b1f1024115011511`](./contracts/bsc-56/0xad25d1e971a779f3444607c1b1f1024115011511/); bsc `0xbe8a0c12f3ebcaab4631ac9d8e5a80ccd76bfcbf`; bsc `0xc6e73c2328c838f67eb35c2bee2cfa0808cbeb49`; bsc `0xf780b3f0c5291ebcef040fc1a904169a47bd338a`; bsc `0xfbffdd3555b25f714599865c2682b0619837c97e` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -131,20 +131,20 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0x03a65f...35139e` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x046f8d...2dab82` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x082fa8...da875f` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x0c364a...047265` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x40d258...d640b1` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x46eeb8...bcbf6b` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x47325f...c167f3` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x4cd612...606d94` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x5032cd...1d3153` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x5dddd9...765883` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x8d9bea...0ac94c` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x9ffcef...1f3a46` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xa79cc8...0588a6` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xb083c4...35fc8e` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x03a65f983a4bc8fc04ed79d932bd42c93035139e` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x046f8dbeed5b9c8b57e9b9716dd21e5c1c2dab82` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x082fa863f49be9e277669ee8c71e19fc08da875f` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x0c364aa985ed1d902e312bb24bfc7536dd047265` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x40d25884494bc4d72bc7a407a8cfacfa38d640b1` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x46eeb83992d57710d390b245d550d54378bcbf6b` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x47325f13873adbd926a0b05c9bb1daaaa2c167f3` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x4cd612f2f73fc2259684a40b4d2e3f0db2606d94` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x5032cde3d1e85e9c6837ad28351bbf1fa61d3153` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x5dddd9e7aa629be635bf1b4311ccd680eb765883` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x8d9bea3fff3b86f9b6cddb9374023b3bdd0ac94c` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x9ffcef3a8bebcc5e2e089f5deeec8675c41f3a46` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xa79cc844cb59c98afef6165fe9750ba1d80588a6` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xb083c431cd6373a2b7087f6e720378a90935fc8e` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -161,26 +161,26 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x43dc3a...bfd18a`](./contracts/bsc-56/0x43dc3a2af323f2e4ec9cc9736df55aba9cbfd18a/) | AirdropHelper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x0026aa...643230`](./contracts/bsc-56/0x0026aae37996cea1ea1a99e88563031e5d643230/) | esUniwhaleToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x26278d...dffdae`](./contracts/bsc-56/0x26278daa6ec3368fd2f672260abbcd8e67dffdae/) | esUniwhaleToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x00c114...338fd3`](./contracts/bsc-56/0x00c114b623e75b6ab03ba4f67f89bebacc338fd3/) | Fees | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xc4a94d...598c64`](./contracts/bsc-56/0xc4a94d2891690e9b930ad20204fa071940598c64/) | Fees | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x107f7f...a080e6`](./contracts/bsc-56/0x107f7f198cc133c2a2492566b2b229363aa080e6/) | LimitBook | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x27bbbf...523e21`](./contracts/bsc-56/0x27bbbf42dfa62bf16bf9684747476a7a40523e21/) | LimitBook | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x5145b1...bd8440`](./contracts/bsc-56/0x5145b10dad211e24fd217c7f57cb90d0cfbd8440/) | LimitBook | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x656ac0...0a8ea7`](./contracts/bsc-56/0x656ac046304446c5802849fcfd5f5ddb090a8ea7/) | LimitBook | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xbb1b94...ac9bcc`](./contracts/bsc-56/0xbb1b941ab76fae4e9f552b860efac1f367ac9bcc/) | MarginPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x5e8284...125b47`](./contracts/bsc-56/0x5e828415b88d9747bab771ce79021c7f52125b47/) | MigrateHelper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x81173c...8dc8f4`](./contracts/bsc-56/0x81173c1530bb9ab00b2c47d2a6b056322f8dc8f4/) | Referrals | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xdb88ba...725d27`](./contracts/bsc-56/0xdb88ba9c9f717a077fdc62ad3185064793725d27/) | Referrals | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x43b8c6...1e5e3a`](./contracts/bsc-56/0x43b8c63097f38ba0eff68766d3db991f9c1e5e3a/) | TraderFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x796ae7...cc2d06`](./contracts/bsc-56/0x796ae7d5001b42f4fc54be7fdc33eca5accc2d06/) | TraderFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x51d759...ff4411`](./contracts/bsc-56/0x51d759c0d7bb898358fc9e5c889eac9364ff4411/) | TradingCoreWithRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x926b30...2f36f3`](./contracts/bsc-56/0x926b303605b03d5e9d1a942b76ce7bb03e2f36f3/) | TradingCoreWithRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xb6ebb9...4e415d`](./contracts/bsc-56/0xb6ebb9bffd3bbc9d46feac4167b88b9eee4e415d/) | TradingCoreWithRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x3cce74...12a68f`](./contracts/bsc-56/0x3cce74aa8c60c4f8a42df146f7c3d7761f12a68f/) | UniwhalePass | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xad25d1...011511`](./contracts/bsc-56/0xad25d1e971a779f3444607c1b1f1024115011511/) | UniwhalePass | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x43dc3a2af323f2e4ec9cc9736df55aba9cbfd18a`](./contracts/bsc-56/0x43dc3a2af323f2e4ec9cc9736df55aba9cbfd18a/) | AirdropHelper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x0026aae37996cea1ea1a99e88563031e5d643230`](./contracts/bsc-56/0x0026aae37996cea1ea1a99e88563031e5d643230/) | esUniwhaleToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x26278daa6ec3368fd2f672260abbcd8e67dffdae`](./contracts/bsc-56/0x26278daa6ec3368fd2f672260abbcd8e67dffdae/) | esUniwhaleToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x00c114b623e75b6ab03ba4f67f89bebacc338fd3`](./contracts/bsc-56/0x00c114b623e75b6ab03ba4f67f89bebacc338fd3/) | Fees | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xc4a94d2891690e9b930ad20204fa071940598c64`](./contracts/bsc-56/0xc4a94d2891690e9b930ad20204fa071940598c64/) | Fees | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x107f7f198cc133c2a2492566b2b229363aa080e6`](./contracts/bsc-56/0x107f7f198cc133c2a2492566b2b229363aa080e6/) | LimitBook | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x27bbbf42dfa62bf16bf9684747476a7a40523e21`](./contracts/bsc-56/0x27bbbf42dfa62bf16bf9684747476a7a40523e21/) | LimitBook | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x5145b10dad211e24fd217c7f57cb90d0cfbd8440`](./contracts/bsc-56/0x5145b10dad211e24fd217c7f57cb90d0cfbd8440/) | LimitBook | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x656ac046304446c5802849fcfd5f5ddb090a8ea7`](./contracts/bsc-56/0x656ac046304446c5802849fcfd5f5ddb090a8ea7/) | LimitBook | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xbb1b941ab76fae4e9f552b860efac1f367ac9bcc`](./contracts/bsc-56/0xbb1b941ab76fae4e9f552b860efac1f367ac9bcc/) | MarginPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x5e828415b88d9747bab771ce79021c7f52125b47`](./contracts/bsc-56/0x5e828415b88d9747bab771ce79021c7f52125b47/) | MigrateHelper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x81173c1530bb9ab00b2c47d2a6b056322f8dc8f4`](./contracts/bsc-56/0x81173c1530bb9ab00b2c47d2a6b056322f8dc8f4/) | Referrals | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xdb88ba9c9f717a077fdc62ad3185064793725d27`](./contracts/bsc-56/0xdb88ba9c9f717a077fdc62ad3185064793725d27/) | Referrals | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x43b8c63097f38ba0eff68766d3db991f9c1e5e3a`](./contracts/bsc-56/0x43b8c63097f38ba0eff68766d3db991f9c1e5e3a/) | TraderFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x796ae7d5001b42f4fc54be7fdc33eca5accc2d06`](./contracts/bsc-56/0x796ae7d5001b42f4fc54be7fdc33eca5accc2d06/) | TraderFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x51d759c0d7bb898358fc9e5c889eac9364ff4411`](./contracts/bsc-56/0x51d759c0d7bb898358fc9e5c889eac9364ff4411/) | TradingCoreWithRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x926b303605b03d5e9d1a942b76ce7bb03e2f36f3`](./contracts/bsc-56/0x926b303605b03d5e9d1a942b76ce7bb03e2f36f3/) | TradingCoreWithRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xb6ebb9bffd3bbc9d46feac4167b88b9eee4e415d`](./contracts/bsc-56/0xb6ebb9bffd3bbc9d46feac4167b88b9eee4e415d/) | TradingCoreWithRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x3cce74aa8c60c4f8a42df146f7c3d7761f12a68f`](./contracts/bsc-56/0x3cce74aa8c60c4f8a42df146f7c3d7761f12a68f/) | UniwhalePass | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xad25d1e971a779f3444607c1b1f1024115011511`](./contracts/bsc-56/0xad25d1e971a779f3444607c1b1f1024115011511/) | UniwhalePass | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

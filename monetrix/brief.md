@@ -59,26 +59,26 @@ The protocol comprises 2 functional families. Its contracts share 4 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| MonetrixAccountant | unknown | hyperliquid | n/a | [`0x5ce5e4...f1a8e2`](./contracts/hyperliquid-999/0x5ce5e40522e8cb42d7a1ae2dadab808d31f1a8e2/) | ✅ Audited |
-| MonetrixVault | unknown | hyperliquid | n/a | [`0x08f69c...2c77f2`](./contracts/hyperliquid-999/0x08f69c88c47ef1c5274fc11bfe350561252c77f2/) | ✅ Audited |
-| RedeemEscrow | unknown | hyperliquid | n/a | [`0x17100f...6d978f`](./contracts/hyperliquid-999/0x17100f8cafd727550bb32e6f1496d463da6d978f/) | ✅ Audited |
-| sUSDMEscrow | unknown | hyperliquid | n/a | [`0xd81600...4e3707`](./contracts/hyperliquid-999/0xd81600838ab778d49038df9c3b78cdca244e3707/) | ✅ Audited |
-| USDM | unknown | hyperliquid | n/a | [`0x05faf9...d586df`](./contracts/hyperliquid-999/0x05faf9cfa7143804e7fb0db423fde8330cd586df/) | ✅ Audited |
+| MonetrixAccountant | unknown | hyperliquid | n/a | [`0x5ce5e40522e8cb42d7a1ae2dadab808d31f1a8e2`](./contracts/hyperliquid-999/0x5ce5e40522e8cb42d7a1ae2dadab808d31f1a8e2/) | ✅ Audited |
+| MonetrixVault | unknown | hyperliquid | n/a | [`0x08f69c88c47ef1c5274fc11bfe350561252c77f2`](./contracts/hyperliquid-999/0x08f69c88c47ef1c5274fc11bfe350561252c77f2/) | ✅ Audited |
+| RedeemEscrow | unknown | hyperliquid | n/a | [`0x17100f8cafd727550bb32e6f1496d463da6d978f`](./contracts/hyperliquid-999/0x17100f8cafd727550bb32e6f1496d463da6d978f/) | ✅ Audited |
+| sUSDMEscrow | unknown | hyperliquid | n/a | [`0xd81600838ab778d49038df9c3b78cdca244e3707`](./contracts/hyperliquid-999/0xd81600838ab778d49038df9c3b78cdca244e3707/) | ✅ Audited |
+| USDM | unknown | hyperliquid | n/a | [`0x05faf9cfa7143804e7fb0db423fde8330cd586df`](./contracts/hyperliquid-999/0x05faf9cfa7143804e7fb0db423fde8330cd586df/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (10)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ERC1967Proxy | unknown | hyperliquid | n/a | [`0x01313e...734cee`](./contracts/hyperliquid-999/0x01313e95c0dd7fd4ad67edc39823b079f6734cee/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | [`0x12e4f1...91c58c`](./contracts/hyperliquid-999/0x12e4f1a26dc008e68c0e77a60881680eda91c58c/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | [`0x301024...586595`](./contracts/hyperliquid-999/0x301024e319191495146ab3627fe3fc1ffe586595/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | [`0x4d9f48...7c2106`](./contracts/hyperliquid-999/0x4d9f48f3055fa354254b1ca82a0badb88f7c2106/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | [`0x5f1ab6...e63ddf`](./contracts/hyperliquid-999/0x5f1ab62c3159ebe04aff14beef84b0b60de63ddf/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | [`0x7592b9...9c4132`](./contracts/hyperliquid-999/0x7592b9fc42e000783d491739c77ccb86f19c4132/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | [`0xaa556b...7b8f32`](./contracts/hyperliquid-999/0xaa556b9755c249f9b6b98f89dd20c5d4997b8f32/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | [`0xaace6a...ce329d`](./contracts/hyperliquid-999/0xaace6a69c27df3f92763f688606335cbf3ce329d/) | ⚠️ Unaudited |
-| MonetrixGenesisVault | unknown | hyperliquid | n/a | [`0xc50a1d...c9cd63`](./contracts/hyperliquid-999/0xc50a1dd2866a822c81bd0aa00b638c4bddc9cd63/) | ⚠️ Unaudited |
-| TimelockController | unknown | hyperliquid | n/a | [`0x6f00b0...a329bf`](./contracts/hyperliquid-999/0x6f00b0fbc805a8319b4837bb152f4fe700a329bf/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | [`0x01313e95c0dd7fd4ad67edc39823b079f6734cee`](./contracts/hyperliquid-999/0x01313e95c0dd7fd4ad67edc39823b079f6734cee/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | [`0x12e4f1a26dc008e68c0e77a60881680eda91c58c`](./contracts/hyperliquid-999/0x12e4f1a26dc008e68c0e77a60881680eda91c58c/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | [`0x301024e319191495146ab3627fe3fc1ffe586595`](./contracts/hyperliquid-999/0x301024e319191495146ab3627fe3fc1ffe586595/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | [`0x4d9f48f3055fa354254b1ca82a0badb88f7c2106`](./contracts/hyperliquid-999/0x4d9f48f3055fa354254b1ca82a0badb88f7c2106/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | [`0x5f1ab62c3159ebe04aff14beef84b0b60de63ddf`](./contracts/hyperliquid-999/0x5f1ab62c3159ebe04aff14beef84b0b60de63ddf/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | [`0x7592b9fc42e000783d491739c77ccb86f19c4132`](./contracts/hyperliquid-999/0x7592b9fc42e000783d491739c77ccb86f19c4132/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | [`0xaa556b9755c249f9b6b98f89dd20c5d4997b8f32`](./contracts/hyperliquid-999/0xaa556b9755c249f9b6b98f89dd20c5d4997b8f32/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | [`0xaace6a69c27df3f92763f688606335cbf3ce329d`](./contracts/hyperliquid-999/0xaace6a69c27df3f92763f688606335cbf3ce329d/) | ⚠️ Unaudited |
+| MonetrixGenesisVault | unknown | hyperliquid | n/a | [`0xc50a1dd2866a822c81bd0aa00b638c4bddc9cd63`](./contracts/hyperliquid-999/0xc50a1dd2866a822c81bd0aa00b638c4bddc9cd63/) | ⚠️ Unaudited |
+| TimelockController | unknown | hyperliquid | n/a | [`0x6f00b0fbc805a8319b4837bb152f4fe700a329bf`](./contracts/hyperliquid-999/0x6f00b0fbc805a8319b4837bb152f4fe700a329bf/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -111,7 +111,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| hyperliquid | [`0xc50a1d...c9cd63`](./contracts/hyperliquid-999/0xc50a1dd2866a822c81bd0aa00b638c4bddc9cd63/) | MonetrixGenesisVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0xc50a1dd2866a822c81bd0aa00b638c4bddc9cd63`](./contracts/hyperliquid-999/0xc50a1dd2866a822c81bd0aa00b638c4bddc9cd63/) | MonetrixGenesisVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

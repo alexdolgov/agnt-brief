@@ -59,15 +59,15 @@ The protocol comprises 3 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| DYSON | unknown | blast | n/a | [`0x9cbd81...d1159c`](./contracts/blast-81457/0x9cbd81b43ba263ca894178366cfb89a246d1159c/) | ✅ Audited |
-| Router | adapter | blast | n/a | [`0xada6e6...a73bdc`](./contracts/blast-81457/0xada6e69781399990d42becb1a9427955ffa73bdc/) | ✅ Audited |
-| sDYSON | unknown | blast | n/a | [`0x8813b3...70c088`](./contracts/blast-81457/0x8813b3eeb279a43ac89e502e6fbe0ec89170c088/) | ✅ Audited |
+| DYSON | unknown | blast | n/a | [`0x9cbd81b43ba263ca894178366cfb89a246d1159c`](./contracts/blast-81457/0x9cbd81b43ba263ca894178366cfb89a246d1159c/) | ✅ Audited |
+| Router | adapter | blast | n/a | [`0xada6e69781399990d42becb1a9427955ffa73bdc`](./contracts/blast-81457/0xada6e69781399990d42becb1a9427955ffa73bdc/) | ✅ Audited |
+| sDYSON | unknown | blast | n/a | [`0x8813b3eeb279a43ac89e502e6fbe0ec89170c088`](./contracts/blast-81457/0x8813b3eeb279a43ac89e502e6fbe0ec89170c088/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| sDYSONAirdrop | unknown | blast | n/a | [`0xacd1aa...2a4e30`](./contracts/blast-81457/0xacd1aa2a3f5a8e7e19ecd0dceb97b869ca2a4e30/) | ⚠️ Unaudited |
+| sDYSONAirdrop | unknown | blast | n/a | [`0xacd1aa2a3f5a8e7e19ecd0dceb97b869ca2a4e30`](./contracts/blast-81457/0xacd1aa2a3f5a8e7e19ecd0dceb97b869ca2a4e30/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -87,7 +87,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | polygon-zkevm | n/a | 2 deployments: polygon-zkevm `0x51a0d4...357d1d`; polygon-zkevm `0x9cbd81...d1159c` | ❓ Unverified |
+| UnnamedContract | unknown | polygon-zkevm | n/a | 2 deployments: polygon-zkevm `0x51a0d4b81400581d8722627dafcd0c1ff9357d1d`; polygon-zkevm `0x9cbd81b43ba263ca894178366cfb89a246d1159c` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -103,7 +103,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| blast | [`0xacd1aa...2a4e30`](./contracts/blast-81457/0xacd1aa2a3f5a8e7e19ecd0dceb97b869ca2a4e30/) | sDYSONAirdrop | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0xacd1aa2a3f5a8e7e19ecd0dceb97b869ca2a4e30`](./contracts/blast-81457/0xacd1aa2a3f5a8e7e19ecd0dceb97b869ca2a4e30/) | sDYSONAirdrop | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

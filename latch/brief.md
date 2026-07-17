@@ -59,14 +59,14 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| DepositPool | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x7cc08f...b8f90c`](./contracts/ethereum-1/0x7cc08f23a6e8222c86a62fce3d4d252dd1b8f90c/); ethereum `0xfe606e...31a023` | ✅ Audited |
-| StakingPool | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x29403b...119b95`](./contracts/ethereum-1/0x29403b1ac2b745c806e4d4988e4c1b6f4c119b95/); ethereum `0x899f88...d3245b` | ✅ Audited |
+| DepositPool | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x7cc08f23a6e8222c86a62fce3d4d252dd1b8f90c`](./contracts/ethereum-1/0x7cc08f23a6e8222c86a62fce3d4d252dd1b8f90c/); ethereum `0xfe606eec8eb8e6ad8e8654968a15650f5331a023` | ✅ Audited |
+| StakingPool | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x29403b1ac2b745c806e4d4988e4c1b6f4c119b95`](./contracts/ethereum-1/0x29403b1ac2b745c806e4d4988e4c1b6f4c119b95/); ethereum `0x899f88b7c34a01ed0eea2bdb0952bd271ad3245b` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| GnosisSafe | governance | ethereum | n/a | [`0x774388...4562e7`](./contracts/ethereum-1/0x774388454c92fe33e781ab535a5e9d186a4562e7/) | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | n/a | [`0x774388454c92fe33e781ab535a5e9d186a4562e7`](./contracts/ethereum-1/0x774388454c92fe33e781ab535a5e9d186a4562e7/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

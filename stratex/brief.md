@@ -62,7 +62,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Whitelist | unknown | base | n/a | [`0x0c6014...66fc5c`](./contracts/base-8453/0x0c601411e764c2c2f058a4c82a1425f8fa66fc5c/) | ⚠️ Unaudited |
+| Whitelist | unknown | base | n/a | [`0x0c601411e764c2c2f058a4c82a1425f8fa66fc5c`](./contracts/base-8453/0x0c601411e764c2c2f058a4c82a1425f8fa66fc5c/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,7 +93,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x0c6014...66fc5c`](./contracts/base-8453/0x0c601411e764c2c2f058a4c82a1425f8fa66fc5c/) | Whitelist | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x0c601411e764c2c2f058a4c82a1425f8fa66fc5c`](./contracts/base-8453/0x0c601411e764c2c2f058a4c82a1425f8fa66fc5c/) | Whitelist | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -57,41 +57,41 @@ The pinned logic-topography run contains 40 contract row(s) across linea. Struct
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- BribeV2 (`0xec9453...cc0f5a`, chain 59144)
-- CErc20Upgradable (`0x0a3b1e...fd5f0b`, chain 59144)
-- CErc20Upgradable (`0x1ce302...f9c920`, chain 59144)
-- CErc20Upgradable (`0x5a731d...865456`, chain 59144)
-- CErc20Upgradable (`0x6e0c50...f6c4f7`, chain 59144)
-- CErc20Upgradable (`0x801c4c...29216f`, chain 59144)
-- CErc20Upgradable (`0x883100...bcd40d`, chain 59144)
-- CErc20Upgradable (`0x8ce989...817045`, chain 59144)
-- CErc20Upgradable (`0xb52f4c...3129a5`, chain 59144)
-- CErc20Upgradable (`0xd910ea...5644ac`, chain 59144)
-- GnosisSafeProxy (`0xe3cda0...aee9ee`, chain 59144)
-- LGEDepositor (`0x8f1b13...49f14d`, chain 59144)
-- Mendi (`0x43e880...44065f`, chain 59144)
-- MendiLoyaltyPoint (`0xea5747...b7eb52`, chain 59144)
-- MixedPriceOracleV2 (`0xc23f48...e24433`, chain 59144)
-- OwnedDistributor (`0x5df210...2bc434`, chain 59144)
-- OwnedDistributor (`0x716f2d...1053f5`, chain 59144)
-- Pair (`0xe5e19b...7bf567`, chain 59144)
-- ReserveManagerV2 (`0x9a71e9...2b751f`, chain 59144)
-- StakedDistributor (`0x07d392...f26673`, chain 59144)
-- StakedDistributor (`0x7f13ef...e526f8`, chain 59144)
-- TimelockController (`0x6c81d7...b26902`, chain 59144)
-- TransparentUpgradeableProxy (`0x109f4a...29362a`, chain 59144)
-- TransparentUpgradeableProxy (`0x150b1e...4921ca`, chain 59144)
-- TransparentUpgradeableProxy (`0x1f27f8...9869aa`, chain 59144)
-- TransparentUpgradeableProxy (`0x333d8b...e1b30d`, chain 59144)
-- TransparentUpgradeableProxy (`0x384be0...1546ea`, chain 59144)
-- TransparentUpgradeableProxy (`0x8a90d2...074a67`, chain 59144)
-- TransparentUpgradeableProxy (`0x9b4971...0753b5`, chain 59144)
-- TransparentUpgradeableProxy (`0x9be5e2...88a40f`, chain 59144)
-- TransparentUpgradeableProxy (`0xad7f33...fee6f3`, chain 59144)
-- TransparentUpgradeableProxy (`0xceed85...86a782`, chain 59144)
-- TransparentUpgradeableProxy (`0xcf8ded...284486`, chain 59144)
-- TransparentUpgradeableProxy (`0xf669c3...300e89`, chain 59144)
-- Unitroller (`0x1b4d3b...b93103`, chain 59144)
+- BribeV2 (`0xec9453d72613c2c9d6a639784f9db4a230cc0f5a`, chain 59144)
+- CErc20Upgradable (`0x0a3b1e53ccc621e07d2a253ff5816d1123fd5f0b`, chain 59144)
+- CErc20Upgradable (`0x1ce3023de380e9bbe14f32cb56dca4ccb8f9c920`, chain 59144)
+- CErc20Upgradable (`0x5a731de58b5a4946dec3cfb6b5dab6b8a3865456`, chain 59144)
+- CErc20Upgradable (`0x6e0c50657b610f4613b1c6b1dae95262a3f6c4f7`, chain 59144)
+- CErc20Upgradable (`0x801c4ca69d10770816cd37a5747d82fc2629216f`, chain 59144)
+- CErc20Upgradable (`0x883100388d61ef6daa147de45deb04934fbcd40d`, chain 59144)
+- CErc20Upgradable (`0x8ce9892329e04a86ea25056ba77bb9aa60817045`, chain 59144)
+- CErc20Upgradable (`0xb52f4c3607afb27147a8bc8ff601b765003129a5`, chain 59144)
+- CErc20Upgradable (`0xd910eae6bab709cf17491157bf422ff3215644ac`, chain 59144)
+- GnosisSafeProxy (`0xe3cda0a0896b70f0ebc6a1848096529aa7aee9ee`, chain 59144)
+- LGEDepositor (`0x8f1b13497326857011b0b9a2b066054e1849f14d`, chain 59144)
+- Mendi (`0x43e8809ea748eff3204ee01f08872f063e44065f`, chain 59144)
+- MendiLoyaltyPoint (`0xea57474c20c4bb3f0fea4a5d2996c1e636b7eb52`, chain 59144)
+- MixedPriceOracleV2 (`0xc23f48e29376566bd0024872fc313b5cd7e24433`, chain 59144)
+- OwnedDistributor (`0x5df2107a5b5e7b0b19dd7ded7470e8d9792bc434`, chain 59144)
+- OwnedDistributor (`0x716f2de8a4de036ffe2b806a2948060a6f1053f5`, chain 59144)
+- Pair (`0xe5e19bbf39c76a8c980b48f2ec89d0de877bf567`, chain 59144)
+- ReserveManagerV2 (`0x9a71e980a2f27888319c580e86e3df15172b751f`, chain 59144)
+- StakedDistributor (`0x07d3929d35a2bbb433b9b6bcd999f6abd9f26673`, chain 59144)
+- StakedDistributor (`0x7f13efd27d28fe1bd4324afcb18c8b3baae526f8`, chain 59144)
+- TimelockController (`0x6c81d7fe6072ce519c1a5b966d62545f07b26902`, chain 59144)
+- TransparentUpgradeableProxy (`0x109f4af9ec6a5ede198f7a4d9d9d7390de29362a`, chain 59144)
+- TransparentUpgradeableProxy (`0x150b1e51738cdf0ccfe472594c62d7d6074921ca`, chain 59144)
+- TransparentUpgradeableProxy (`0x1f27f81c1d13dd96a3b75d42e3d5d92b709869aa`, chain 59144)
+- TransparentUpgradeableProxy (`0x333d8b480bdb25ea7be4dd87eeb359988ce1b30d`, chain 59144)
+- TransparentUpgradeableProxy (`0x384be093d35feedb74eb9133863caf059c1546ea`, chain 59144)
+- TransparentUpgradeableProxy (`0x8a90d208666deec08123444f67bf5b1836074a67`, chain 59144)
+- TransparentUpgradeableProxy (`0x9b4971ac84054597eded7dc7b4b7e8a0c90753b5`, chain 59144)
+- TransparentUpgradeableProxy (`0x9be5e24f05bbafc28da814bd59284878b388a40f`, chain 59144)
+- TransparentUpgradeableProxy (`0xad7f33984bed10518012013d4ab0458d37fee6f3`, chain 59144)
+- TransparentUpgradeableProxy (`0xceed853798ff1c95ceb4dc48f68394eb7a86a782`, chain 59144)
+- TransparentUpgradeableProxy (`0xcf8dedcdc62317beaedfbee3c77c08425f284486`, chain 59144)
+- TransparentUpgradeableProxy (`0xf669c3c03d9fdf4339e19214a749e52616300e89`, chain 59144)
+- Unitroller (`0x1b4d3b0421ddc1eb216d230bc01527422fb93103`, chain 59144)
 
 ## Contract Surface Quality
 
@@ -136,63 +136,63 @@ The pinned logic-topography run contains 40 contract row(s) across linea. Struct
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Api3AggregatorAdaptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 3 deployments: linea `0x14d8ca...c6d6ca`; linea `0x392728...9a80a5`; linea `0xd707bd...6c84ba` | ⚠️ Unaudited |
-| Api3AggregatorDeviationAdaptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x6fecd2...b1ab9b` | ⚠️ Unaudited |
-| BasicLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x523546...92b69b`; linea `0xa9822b...e28f27` | ⚠️ Unaudited |
-| BribeV2 | unknown | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400475 | `0xec9453...cc0f5a` | ⚠️ Unaudited |
-| CErc20Upgradable | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x022e3a...6d799b`; linea `0x815c08...0b2cd7` | ⚠️ Unaudited |
-| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400478 | 2 deployments: linea `0x0a3b1e...fd5f0b`; linea `0xceed85...86a782` | ⚠️ Unaudited |
-| CErc20Upgradable | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | linea | n/a | 2 deployments: linea `0x0b3a1b...4cbbe4`; linea `0x268eb0...e929b4` | ⚠️ Unaudited |
-| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400485 | 2 deployments: linea `0x109f4a...29362a`; linea `0x801c4c...29216f` | ⚠️ Unaudited |
-| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400480 | 2 deployments: linea `0x1ce302...f9c920`; linea `0x9be5e2...88a40f` | ⚠️ Unaudited |
-| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400489 | 2 deployments: linea `0x1f27f8...9869aa`; linea `0xb52f4c...3129a5` | ⚠️ Unaudited |
-| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400487 | 2 deployments: linea `0x333d8b...e1b30d`; linea `0x8ce989...817045` | ⚠️ Unaudited |
-| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400482 | 2 deployments: linea `0x5a731d...865456`; linea `0x8a90d2...074a67` | ⚠️ Unaudited |
-| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400483 | 2 deployments: linea `0x6e0c50...f6c4f7`; linea `0xad7f33...fee6f3` | ⚠️ Unaudited |
-| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400486 | 2 deployments: linea `0x883100...bcd40d`; linea `0xf669c3...300e89` | ⚠️ Unaudited |
-| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400490 | 2 deployments: linea `0x9b4971...0753b5`; linea `0xd910ea...5644ac` | ⚠️ Unaudited |
-| Comptroller | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400479 | 2 deployments: linea `0x1a1166...c3d9e3`; linea `0x1b4d3b...b93103` | ⚠️ Unaudited |
-| GnosisSafeL2 | governance | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400481 | `0xe3cda0...aee9ee` | ⚠️ Unaudited |
-| JumpRateModelV4 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x23b9cb...780cb7`; linea `0x85a58a...93ea19` | ⚠️ Unaudited |
-| JumpRateModelV4 | unknown | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400468 | `0x62c31a...5c02d0` | ⚠️ Unaudited |
-| LGEDepositor | unknown | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400471 | `0x8f1b13...49f14d` | ⚠️ Unaudited |
-| LiquidityGenerator | unknown | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400466 | `0x55231f...9e9144` | ⚠️ Unaudited |
-| LPDepositor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | linea | n/a | 2 deployments: linea `0x7b6763...a5939c`; linea `0x7d4483...1cfbba` | ⚠️ Unaudited |
-| LPDepositor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | linea | n/a | 2 deployments: linea `0x9cfbfc...98fc23`; linea `0xc321e5...29ce68` | ⚠️ Unaudited |
-| LPDepositor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xbfd1b0...0a5e64` | ⚠️ Unaudited |
-| Mendi | unknown | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400465 | `0x43e880...44065f` | ⚠️ Unaudited |
-| MendiLoyaltyPoint | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 4 deployments: linea `0x375654...55a50e`; linea `0x688ff5...26dea1`; linea `0xdaf3ba...3d6725`; linea `0xe5bcd7...dd90ea` | ⚠️ Unaudited |
-| MendiLoyaltyPoint | unknown | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400474 | `0xea5747...b7eb52` | ⚠️ Unaudited |
-| MixedPriceOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xccbea2...cffec2` | ⚠️ Unaudited |
-| MixedPriceOracleV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 7 deployments: linea `0x4a0231...9cdc9c`; linea `0x7a6ef4...0fdcc1`; linea `0xd04f7a...bff23f`; linea `0xd2ed95...8fa012`; linea `0xd3e706...5bc1d3`; linea `0xe8de3a...78a27a`; linea `0xec598a...49d8fe` | ⚠️ Unaudited |
-| MixedPriceOracleV2 | unknown | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400472 | `0xc23f48...e24433` | ⚠️ Unaudited |
-| MixedPriceOracleV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x395abf...1ac5f2` | ⚠️ Unaudited |
-| MixedPriceOracleV4 | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | linea | unit-400463 | `0x16f866...c90fbd` | ⚠️ Unaudited |
-| OwnedDistributor | operational_periphery | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400467 | `0x5df210...2bc434` | ⚠️ Unaudited |
-| OwnedDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 6 deployments: linea `0x5f9668...c38d61`; linea `0x957491...691fa7`; linea `0xa4fc54...d38e43`; linea `0xb43221...d69b95`; linea `0xec45fe...53a5e2`; linea `0xeda946...8fc474` | ⚠️ Unaudited |
-| OwnedDistributor | operational_periphery | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400470 | `0x716f2d...1053f5` | ⚠️ Unaudited |
-| OwnedDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | linea | n/a | 2 deployments: linea `0x9b9274...7a7c40`; linea `0xe17d41...acf662` | ⚠️ Unaudited |
-| Pair | unknown | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400473 | `0xe5e19b...7bf567` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x2f9386...bc733c`; linea `0x54b41d...d3bc8c` | ⚠️ Unaudited |
-| PythPriceOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 4 deployments: linea `0x0d4173...db3636`; linea `0xa6b761...3a0df3`; linea `0xcc16cf...e2c749`; linea `0xe15903...4f1230` | ⚠️ Unaudited |
-| ReserveManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x7c2e7b...1a49e4`; linea `0xa16602...d5c5a8` | ⚠️ Unaudited |
-| ReserveManagerV2 | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400488 | 2 deployments: linea `0x384be0...1546ea`; linea `0x9a71e9...2b751f` | ⚠️ Unaudited |
-| RewardDistributor | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400476 | 2 deployments: linea `0x052932...8b7ca5`; linea `0x3b9b93...013d40` | ⚠️ Unaudited |
-| RewardHolder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x162218...ecc222`; linea `0x4664c7...3a26ed` | ⚠️ Unaudited |
-| RewardHolder | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | linea | n/a | 2 deployments: linea `0x246db9...8d46da`; linea `0x5f6f83...08c832` | ⚠️ Unaudited |
-| RewardHolder | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | linea | n/a | 2 deployments: linea `0x90c9cd...27fc8c`; linea `0x9589ff...341934` | ⚠️ Unaudited |
-| RewardHolder | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | linea | n/a | 2 deployments: linea `0xb05619...12a673`; linea `0xd114e0...bc923e` | ⚠️ Unaudited |
-| RewardManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x951e3e...1e79dc` | ⚠️ Unaudited |
-| RewardManagerV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | linea | n/a | 2 deployments: linea `0x04a716...ab7bd5`; linea `0x1ac9d6...5f6101` | ⚠️ Unaudited |
-| SimplePriceOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x75f0ad...901219` | ⚠️ Unaudited |
-| StakedDistributor | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400477 | 2 deployments: linea `0x07d392...f26673`; linea `0x150b1e...4921ca` | ⚠️ Unaudited |
-| StakedDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 8 deployments: linea `0x5bb5c0...490fea`; linea `0x62ffc7...d4820c`; linea `0x686fc5...c94c6e`; linea `0x8e8bdf...eaa113`; linea `0xbdea2a...cbd12c`; linea `0xc2ecfe...10fee9`; linea `0xcb0112...739b3d`; linea `0xe4e5e5...618dee` | ⚠️ Unaudited |
-| StakedDistributor | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400484 | 2 deployments: linea `0x7f13ef...e526f8`; linea `0xcf8ded...284486` | ⚠️ Unaudited |
-| TimelockController | unknown | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400469 | `0x6c81d7...b26902` | ⚠️ Unaudited |
-| TimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xae73a4...a3e8a7` | ⚠️ Unaudited |
-| VesterCliff | unknown | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400464 | `0x2938b0...495741` | ⚠️ Unaudited |
-| VesterCliff | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x6cdf38...30b138`; linea `0xe79840...26bea5` | ⚠️ Unaudited |
-| VesterSale | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 4 deployments: linea `0x4ff038...d0e45b`; linea `0xbb4bba...c2c311`; linea `0xd63b16...41cd83`; linea `0xf90af8...3a702f` | ⚠️ Unaudited |
+| Api3AggregatorAdaptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 3 deployments: linea `0x14d8ca4d05cfd1ea4739abab06b28d8dc7c6d6ca`; linea `0x392728f860b328fb6e4f28ccf9b91a26359a80a5`; linea `0xd707bd88a6aae8174c1447af4c746d55676c84ba` | ⚠️ Unaudited |
+| Api3AggregatorDeviationAdaptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x6fecd2f4798d37fbe64bfde1ebecae3b3fb1ab9b` | ⚠️ Unaudited |
+| BasicLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x52354609af7a8fdd1fbcf9d4d52d25b26492b69b`; linea `0xa9822b043995d5a979135fe79a42013690e28f27` | ⚠️ Unaudited |
+| BribeV2 | unknown | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400475 | `0xec9453d72613c2c9d6a639784f9db4a230cc0f5a` | ⚠️ Unaudited |
+| CErc20Upgradable | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x022e3af748ae14388b5a5a93ffc20966146d799b`; linea `0x815c089b70a0bf6e1bc4cad566592c6b4e0b2cd7` | ⚠️ Unaudited |
+| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400478 | 2 deployments: linea `0x0a3b1e53ccc621e07d2a253ff5816d1123fd5f0b`; linea `0xceed853798ff1c95ceb4dc48f68394eb7a86a782` | ⚠️ Unaudited |
+| CErc20Upgradable | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | linea | n/a | 2 deployments: linea `0x0b3a1b6c1058692654c42673b239666ad14cbbe4`; linea `0x268eb060f29d7be9d70dc6ed7634a42867e929b4` | ⚠️ Unaudited |
+| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400485 | 2 deployments: linea `0x109f4af9ec6a5ede198f7a4d9d9d7390de29362a`; linea `0x801c4ca69d10770816cd37a5747d82fc2629216f` | ⚠️ Unaudited |
+| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400480 | 2 deployments: linea `0x1ce3023de380e9bbe14f32cb56dca4ccb8f9c920`; linea `0x9be5e24f05bbafc28da814bd59284878b388a40f` | ⚠️ Unaudited |
+| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400489 | 2 deployments: linea `0x1f27f81c1d13dd96a3b75d42e3d5d92b709869aa`; linea `0xb52f4c3607afb27147a8bc8ff601b765003129a5` | ⚠️ Unaudited |
+| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400487 | 2 deployments: linea `0x333d8b480bdb25ea7be4dd87eeb359988ce1b30d`; linea `0x8ce9892329e04a86ea25056ba77bb9aa60817045` | ⚠️ Unaudited |
+| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400482 | 2 deployments: linea `0x5a731de58b5a4946dec3cfb6b5dab6b8a3865456`; linea `0x8a90d208666deec08123444f67bf5b1836074a67` | ⚠️ Unaudited |
+| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400483 | 2 deployments: linea `0x6e0c50657b610f4613b1c6b1dae95262a3f6c4f7`; linea `0xad7f33984bed10518012013d4ab0458d37fee6f3` | ⚠️ Unaudited |
+| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400486 | 2 deployments: linea `0x883100388d61ef6daa147de45deb04934fbcd40d`; linea `0xf669c3c03d9fdf4339e19214a749e52616300e89` | ⚠️ Unaudited |
+| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400490 | 2 deployments: linea `0x9b4971ac84054597eded7dc7b4b7e8a0c90753b5`; linea `0xd910eae6bab709cf17491157bf422ff3215644ac` | ⚠️ Unaudited |
+| Comptroller | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400479 | 2 deployments: linea `0x1a11669ecf91692440da95cc8a12de80b1c3d9e3`; linea `0x1b4d3b0421ddc1eb216d230bc01527422fb93103` | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400481 | `0xe3cda0a0896b70f0ebc6a1848096529aa7aee9ee` | ⚠️ Unaudited |
+| JumpRateModelV4 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x23b9cb6f49100c54fa2a13ba0f85832b38780cb7`; linea `0x85a58adc34401e0792037d0e512f7e9b0b93ea19` | ⚠️ Unaudited |
+| JumpRateModelV4 | unknown | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400468 | `0x62c31a75334e566aa049ab24a2ff13ac3a5c02d0` | ⚠️ Unaudited |
+| LGEDepositor | unknown | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400471 | `0x8f1b13497326857011b0b9a2b066054e1849f14d` | ⚠️ Unaudited |
+| LiquidityGenerator | unknown | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400466 | `0x55231f67b289815483a037d459877d85819e9144` | ⚠️ Unaudited |
+| LPDepositor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | linea | n/a | 2 deployments: linea `0x7b676378fd66a2bb6650df1fdf847d3988a5939c`; linea `0x7d4483304910bf3e0ad19a8425c9adde411cfbba` | ⚠️ Unaudited |
+| LPDepositor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | linea | n/a | 2 deployments: linea `0x9cfbfc54389318fa65958237c5143256b198fc23`; linea `0xc321e5eba8480adcc122fa90cf63557c0d29ce68` | ⚠️ Unaudited |
+| LPDepositor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xbfd1b02b5e90975b4132169a9dc987b7f50a5e64` | ⚠️ Unaudited |
+| Mendi | unknown | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400465 | `0x43e8809ea748eff3204ee01f08872f063e44065f` | ⚠️ Unaudited |
+| MendiLoyaltyPoint | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 4 deployments: linea `0x375654490163c50ef334a42cd0b38c5c3f55a50e`; linea `0x688ff5acedd3295ae4b60cc613a9a3fa5326dea1`; linea `0xdaf3baa5d809ee93c0f5b3ca03b53a1ecc3d6725`; linea `0xe5bcd7f05e6b125a8655d8b0a0de4328a6dd90ea` | ⚠️ Unaudited |
+| MendiLoyaltyPoint | unknown | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400474 | `0xea57474c20c4bb3f0fea4a5d2996c1e636b7eb52` | ⚠️ Unaudited |
+| MixedPriceOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xccbea2d7e074744ab46e28a043f85038bccffec2` | ⚠️ Unaudited |
+| MixedPriceOracleV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 7 deployments: linea `0x4a0231404ad94541676d872fa9577e3e179cdc9c`; linea `0x7a6ef42dd75ab079ff1bee6f106ddd9e110fdcc1`; linea `0xd04f7a229acface4c40b863fee7e420e4ebff23f`; linea `0xd2ed953c240edc59d57e5cfb527eb768048fa012`; linea `0xd3e706d98b588a8f819ec324d0e0934a685bc1d3`; linea `0xe8de3ac339d20f19527f605a9452cdc8c178a27a`; linea `0xec598aaab34b791b97db45b0910a9cbbb449d8fe` | ⚠️ Unaudited |
+| MixedPriceOracleV2 | unknown | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400472 | `0xc23f48e29376566bd0024872fc313b5cd7e24433` | ⚠️ Unaudited |
+| MixedPriceOracleV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x395abf58d87067b10637201241d10e16361ac5f2` | ⚠️ Unaudited |
+| MixedPriceOracleV4 | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | linea | unit-400463 | `0x16f8668d7d650b494861569279e4f48d29c90fbd` | ⚠️ Unaudited |
+| OwnedDistributor | operational_periphery | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400467 | `0x5df2107a5b5e7b0b19dd7ded7470e8d9792bc434` | ⚠️ Unaudited |
+| OwnedDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 6 deployments: linea `0x5f9668b84c469b6c2791b1e77ca2fac832c38d61`; linea `0x957491b07c4d2bfe960dec0d1f0988ff94691fa7`; linea `0xa4fc544076e36b14ba1ab06bacc8720f21d38e43`; linea `0xb432214a50bb5413cfe7e943d2ae8a8828d69b95`; linea `0xec45fe7ecf5679073779d7d2e9c827071653a5e2`; linea `0xeda9463c1409934bc240cfe2ebc12df9c18fc474` | ⚠️ Unaudited |
+| OwnedDistributor | operational_periphery | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400470 | `0x716f2de8a4de036ffe2b806a2948060a6f1053f5` | ⚠️ Unaudited |
+| OwnedDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | linea | n/a | 2 deployments: linea `0x9b927483979872a69f797f234b56f78e917a7c40`; linea `0xe17d41790ee5b794c22ce7276905490f60acf662` | ⚠️ Unaudited |
+| Pair | unknown | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400473 | `0xe5e19bbf39c76a8c980b48f2ec89d0de877bf567` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x2f9386f0c8ebeed27873a2a64c7f243af9bc733c`; linea `0x54b41d219afef0d23c34180676979f6812d3bc8c` | ⚠️ Unaudited |
+| PythPriceOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 4 deployments: linea `0x0d4173a9dbf32bf7f9d9f5907b6476ad53db3636`; linea `0xa6b761094bf495b4378b5ee7c083390b853a0df3`; linea `0xcc16cfd03f60efc60b657bc6c094440181e2c749`; linea `0xe159031d368bf07f803da0e96ce747f3b44f1230` | ⚠️ Unaudited |
+| ReserveManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x7c2e7b17ad0346e0305232f845c40fb7a91a49e4`; linea `0xa166023647dc4e81f4c8a267967a8dc2c2d5c5a8` | ⚠️ Unaudited |
+| ReserveManagerV2 | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400488 | 2 deployments: linea `0x384be093d35feedb74eb9133863caf059c1546ea`; linea `0x9a71e980a2f27888319c580e86e3df15172b751f` | ⚠️ Unaudited |
+| RewardDistributor | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400476 | 2 deployments: linea `0x052932456a8fd199cd33be91312638a35c8b7ca5`; linea `0x3b9b9364bf69761d308145371c38d9b558013d40` | ⚠️ Unaudited |
+| RewardHolder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x1622180cd1ec6e8d60744772e6b2cc1ce9ecc222`; linea `0x4664c72246c99543624f3c667ce7ffb4523a26ed` | ⚠️ Unaudited |
+| RewardHolder | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | linea | n/a | 2 deployments: linea `0x246db9f51d607f0dee14fb1c97e1e97e698d46da`; linea `0x5f6f836d831ae8d9d5dddf2b91deca27ea08c832` | ⚠️ Unaudited |
+| RewardHolder | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | linea | n/a | 2 deployments: linea `0x90c9cdddadd3f99a708f6f5f9e0970e98e27fc8c`; linea `0x9589ff9cd2bda7b25965a9b007647e638a341934` | ⚠️ Unaudited |
+| RewardHolder | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | linea | n/a | 2 deployments: linea `0xb05619c2d198510a88253544c849e29a3612a673`; linea `0xd114e0d11d801ee0f5bd6ee1070193dd3fbc923e` | ⚠️ Unaudited |
+| RewardManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x951e3e4ba025292ee04601b1969844771f1e79dc` | ⚠️ Unaudited |
+| RewardManagerV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | linea | n/a | 2 deployments: linea `0x04a716725e43f6618b11d280bfa12491d9ab7bd5`; linea `0x1ac9d64f283a947b69b9f5de6f1d6e6bfe5f6101` | ⚠️ Unaudited |
+| SimplePriceOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x75f0adc23ec4ceb70cc0257de830163a48901219` | ⚠️ Unaudited |
+| StakedDistributor | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400477 | 2 deployments: linea `0x07d3929d35a2bbb433b9b6bcd999f6abd9f26673`; linea `0x150b1e51738cdf0ccfe472594c62d7d6074921ca` | ⚠️ Unaudited |
+| StakedDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 8 deployments: linea `0x5bb5c07247dfc7bee83d2849230a03bcfc490fea`; linea `0x62ffc79a9078838dd6b9e16918188d2e56d4820c`; linea `0x686fc507fe4a48ee3153c42ec2bbaf91f7c94c6e`; linea `0x8e8bdff0f84a42e0f1a598d6dc24b50546eaa113`; linea `0xbdea2a5dac12679d9767b37dea25e0c8dccbd12c`; linea `0xc2ecfe3c793926b5b9dbdfd202bc0c777e10fee9`; linea `0xcb0112f46669fa051df657065c33cee48c739b3d`; linea `0xe4e5e5cd071f8a202b2aafb3f7eead93dd618dee` | ⚠️ Unaudited |
+| StakedDistributor | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400484 | 2 deployments: linea `0x7f13efd27d28fe1bd4324afcb18c8b3baae526f8`; linea `0xcf8dedcdc62317beaedfbee3c77c08425f284486` | ⚠️ Unaudited |
+| TimelockController | unknown | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400469 | `0x6c81d7fe6072ce519c1a5b966d62545f07b26902` | ⚠️ Unaudited |
+| TimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xae73a4e3e70598d98a8174be4d897578c5a3e8a7` | ⚠️ Unaudited |
+| VesterCliff | unknown | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400464 | `0x2938b0932ef3fd7a58a9fc077398cad981495741` | ⚠️ Unaudited |
+| VesterCliff | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x6cdf38bc17249bc702db254445e3b3be5430b138`; linea `0xe7984037d561bc6eb16d16421e564a3c2526bea5` | ⚠️ Unaudited |
+| VesterSale | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 4 deployments: linea `0x4ff0389fd01f4afee2048ea1550b6bc166d0e45b`; linea `0xbb4bba3b0afe7530985d1edc1f7b3e2a3ac2c311`; linea `0xd63b161adb2f72f0ceb7542326d4fab1f341cd83`; linea `0xf90af8e5ee4b6e9e4126b52322d1442bd03a702f` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -212,17 +212,17 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x23c603...34b2b1` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x2b2b78...1699c6` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x7fab16...532492` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x8208dd...9d242d` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x87f99c...a99788` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xacf19d...871e5f` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xaef45c...596835` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xb1c144...cf1fe1` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xb20b9a...8ba9a5` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xc21b80...b18173` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xf40175...edc271` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x23c6035ebc88e35f3846d3b9f494a9996334b2b1` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x2b2b780f9fefb65d8e60ff986e04be062f1699c6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x7fab165a9f9c02dbced3c319936f2b19f3532492` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x8208dd4e40c97469091e2af4862659e2f59d242d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x87f99ccb9bb8c12c0c5ca8b100610e3ba9a99788` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xacf19d5eeb42baf7e7089380e8a3867f3c871e5f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xaef45cedf76ca61df495646c25b1a2015a596835` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xb1c144bfe8eeb509c4d5dcf598f0af3626cf1fe1` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xb20b9a1ec924320f2c7d21f532b2b8d1ce8ba9a5` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xc21b8077262d68f4d7cdea25a6654dee8ab18173` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xf40175e87baee76ec774ce860ccb0b382fedc271` | ❓ Unverified |
 
 ## Audit Inventory
 

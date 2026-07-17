@@ -62,7 +62,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Tranche | unknown | celo | n/a | [`0x27e8c8...3b54c8`](./contracts/celo-42220/0x27e8c820d05aea8824b1ac35116f63f9833b54c8/) | ⚠️ Unaudited |
+| Tranche | unknown | celo | n/a | [`0x27e8c820d05aea8824b1ac35116f63f9833b54c8`](./contracts/celo-42220/0x27e8c820d05aea8824b1ac35116f63f9833b54c8/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,7 +93,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| celo | [`0x27e8c8...3b54c8`](./contracts/celo-42220/0x27e8c820d05aea8824b1ac35116f63f9833b54c8/) | Tranche | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | [`0x27e8c820d05aea8824b1ac35116f63f9833b54c8`](./contracts/celo-42220/0x27e8c820d05aea8824b1ac35116f63f9833b54c8/) | Tranche | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

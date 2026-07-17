@@ -52,23 +52,23 @@ The pinned logic-topography run contains 15 contract row(s) across ethereum, opt
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- a-AA_idle_cpFAS-USDC (`0x4a7282...9f5b22`, chain 1)
-- a-AA_idle_cpFAS-USDT (`0x5e2da6...41c3f9`, chain 1)
-- a-AA_idle_cpFAS-USDT (`0xe92b7a...95f3c4`, chain 10)
-- a-AA_idle_cpPOR-USDT (`0x53dac8...4534f0`, chain 1101)
-- a-AA_idle_cpPORT-USDT (`0xf06e00...5bd165`, chain 10)
-- a-AA_idle_cpWINC1-USDC (`0x53dac8...4534f0`, chain 10)
-- a-BB_idle_cpFAS-USDC (`0x695e5c...9324fa`, chain 1)
-- a-BB_idle_cpFAS-USDT (`0xfdad59...9c8bc4`, chain 1)
-- a-BB_idle_cpFAS-USDT (`0x07e7d4...b21afa`, chain 10)
-- a-BB_idle_cpPOR-USDT (`0x923917...8bc06b`, chain 1101)
-- a-BB_idle_cpPORT-USDT (`0xfcb69e...4b2868`, chain 10)
-- a-BB_idle_cpWINC1-USDC (`0x923917...8bc06b`, chain 10)
-- a-crvUSDFRAX-f (`0xfcb69e...4b2868`, chain 1)
-- a-crvUSDUSDC-f (`0xf06e00...5bd165`, chain 1)
-- a-crvUSDUSDT-f (`0x6b0825...3f933b`, chain 1)
-- a-stETH-ng-f (`0x603018...58e46c`, chain 1)
-- a-wstETH (`0x5ef17e...ece9ce`, chain 1)
+- a-AA_idle_cpFAS-USDC (`0x4a728224b87c63b53c5fbcacd95b5c3f0c9f5b22`, chain 1)
+- a-AA_idle_cpFAS-USDT (`0x5e2da626313cef5f67d21616df6e7a531e41c3f9`, chain 1)
+- a-AA_idle_cpFAS-USDT (`0xe92b7a8eb449aba20da0b2f5b2a4f5f25f95f3c4`, chain 10)
+- a-AA_idle_cpPOR-USDT (`0x53dac8d715350afb3443d346aa3abd73da4534f0`, chain 1101)
+- a-AA_idle_cpPORT-USDT (`0xf06e004cab43f326aa3668c8723a8bdbcf5bd165`, chain 10)
+- a-AA_idle_cpWINC1-USDC (`0x53dac8d715350afb3443d346aa3abd73da4534f0`, chain 10)
+- a-BB_idle_cpFAS-USDC (`0x695e5c49eaeeb5333e2af0ddb27722d36e9324fa`, chain 1)
+- a-BB_idle_cpFAS-USDT (`0xfdad59ef0686c3da702b7d651a3bd35a539c8bc4`, chain 1)
+- a-BB_idle_cpFAS-USDT (`0x07e7d45bc488de9eed94aa5f9bb8c845f4b21afa`, chain 10)
+- a-BB_idle_cpPOR-USDT (`0x923917304012c7e14d122eb1d6a8f49f608bc06b`, chain 1101)
+- a-BB_idle_cpPORT-USDT (`0xfcb69e5e535e04a809dc8af7eba59c2fed4b2868`, chain 10)
+- a-BB_idle_cpWINC1-USDC (`0x923917304012c7e14d122eb1d6a8f49f608bc06b`, chain 10)
+- a-crvUSDFRAX-f (`0xfcb69e5e535e04a809dc8af7eba59c2fed4b2868`, chain 1)
+- a-crvUSDUSDC-f (`0xf06e004cab43f326aa3668c8723a8bdbcf5bd165`, chain 1)
+- a-crvUSDUSDT-f (`0x6b0825b3e079fad25086431f7154acb3073f933b`, chain 1)
+- a-stETH-ng-f (`0x6030189834b69919bffbc25e01c596ea5858e46c`, chain 1)
+- a-wstETH (`0x5ef17ee66a64fd5b394362d98f51ba155aece9ce`, chain 1)
 
 ## Contract Surface Quality
 
@@ -114,25 +114,25 @@ The pinned logic-topography run contains 15 contract row(s) across ethereum, opt
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| a-AA_idle_cpFAS-USDC | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378997 | `0x4a7282...9f5b22` | ⚠️ Unaudited |
-| a-AA_idle_cpFAS-USDT | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378998 | `0x5e2da6...41c3f9` | ⚠️ Unaudited |
-| a-AA_idle_cpFAS-USDT | unknown | project_anchor | own_supporting | 0 | optimism | unit-379009 | `0xe92b7a...95f3c4` | ⚠️ Unaudited |
-| a-AA_idle_cpPORT-USDT | unknown | project_anchor | own_supporting | 0 | optimism | unit-379010 | `0xf06e00...5bd165` | ⚠️ Unaudited |
-| a-AA_idle_cpWINC1-USDC | unknown | project_anchor | own_supporting | 0 | optimism | unit-379007 | `0x53dac8...4534f0` | ⚠️ Unaudited |
-| a-BB_idle_cpFAS-USDC | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379001 | `0x695e5c...9324fa` | ⚠️ Unaudited |
-| a-BB_idle_cpFAS-USDT | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379005 | `0xfdad59...9c8bc4` | ⚠️ Unaudited |
-| a-BB_idle_cpFAS-USDT | unknown | project_anchor | own_supporting | 0 | optimism | unit-379006 | `0x07e7d4...b21afa` | ⚠️ Unaudited |
-| a-BB_idle_cpPORT-USDT | unknown | project_anchor | own_supporting | 0 | optimism | unit-379011 | `0xfcb69e...4b2868` | ⚠️ Unaudited |
-| a-BB_idle_cpWINC1-USDC | unknown | project_anchor | own_supporting | 0 | optimism | unit-379008 | `0x923917...8bc06b` | ⚠️ Unaudited |
-| a-crvUSDFRAX-f | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379004 | `0xfcb69e...4b2868` | ⚠️ Unaudited |
-| a-crvUSDUSDC-f | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379003 | `0xf06e00...5bd165` | ⚠️ Unaudited |
-| a-crvUSDUSDT-f | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379002 | `0x6b0825...3f933b` | ⚠️ Unaudited |
-| a-stETH-ng-f | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379000 | `0x603018...58e46c` | ⚠️ Unaudited |
-| a-wstETH | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378999 | `0x5ef17e...ece9ce` | ⚠️ Unaudited |
-| IdleCDO | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xc4574c...6c5e61` | ⚠️ Unaudited |
-| IdleCDOOptimism | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0x877112...10e528` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x34ca1e...c3e03e` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x00233c...85d10f` | ⚠️ Unaudited |
+| a-AA_idle_cpFAS-USDC | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378997 | `0x4a728224b87c63b53c5fbcacd95b5c3f0c9f5b22` | ⚠️ Unaudited |
+| a-AA_idle_cpFAS-USDT | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378998 | `0x5e2da626313cef5f67d21616df6e7a531e41c3f9` | ⚠️ Unaudited |
+| a-AA_idle_cpFAS-USDT | unknown | project_anchor | own_supporting | 0 | optimism | unit-379009 | `0xe92b7a8eb449aba20da0b2f5b2a4f5f25f95f3c4` | ⚠️ Unaudited |
+| a-AA_idle_cpPORT-USDT | unknown | project_anchor | own_supporting | 0 | optimism | unit-379010 | `0xf06e004cab43f326aa3668c8723a8bdbcf5bd165` | ⚠️ Unaudited |
+| a-AA_idle_cpWINC1-USDC | unknown | project_anchor | own_supporting | 0 | optimism | unit-379007 | `0x53dac8d715350afb3443d346aa3abd73da4534f0` | ⚠️ Unaudited |
+| a-BB_idle_cpFAS-USDC | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379001 | `0x695e5c49eaeeb5333e2af0ddb27722d36e9324fa` | ⚠️ Unaudited |
+| a-BB_idle_cpFAS-USDT | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379005 | `0xfdad59ef0686c3da702b7d651a3bd35a539c8bc4` | ⚠️ Unaudited |
+| a-BB_idle_cpFAS-USDT | unknown | project_anchor | own_supporting | 0 | optimism | unit-379006 | `0x07e7d45bc488de9eed94aa5f9bb8c845f4b21afa` | ⚠️ Unaudited |
+| a-BB_idle_cpPORT-USDT | unknown | project_anchor | own_supporting | 0 | optimism | unit-379011 | `0xfcb69e5e535e04a809dc8af7eba59c2fed4b2868` | ⚠️ Unaudited |
+| a-BB_idle_cpWINC1-USDC | unknown | project_anchor | own_supporting | 0 | optimism | unit-379008 | `0x923917304012c7e14d122eb1d6a8f49f608bc06b` | ⚠️ Unaudited |
+| a-crvUSDFRAX-f | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379004 | `0xfcb69e5e535e04a809dc8af7eba59c2fed4b2868` | ⚠️ Unaudited |
+| a-crvUSDUSDC-f | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379003 | `0xf06e004cab43f326aa3668c8723a8bdbcf5bd165` | ⚠️ Unaudited |
+| a-crvUSDUSDT-f | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379002 | `0x6b0825b3e079fad25086431f7154acb3073f933b` | ⚠️ Unaudited |
+| a-stETH-ng-f | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379000 | `0x6030189834b69919bffbc25e01c596ea5858e46c` | ⚠️ Unaudited |
+| a-wstETH | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378999 | `0x5ef17ee66a64fd5b394362d98f51ba155aece9ce` | ⚠️ Unaudited |
+| IdleCDO | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xc4574c60a455655864ab80fa7638561a756c5e61` | ⚠️ Unaudited |
+| IdleCDOOptimism | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0x8771128e9e386dc8e4663118bb11ea3de910e528` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x34ca1eb15b86f70dbac2631c1d4bb6aa9bc3e03e` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x00233ca2d687d962edc95a9ebc03b2aade85d10f` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -152,8 +152,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| a-AA_idle_cpPOR-USDT | unknown | project_anchor | own_supporting | 0 | polygon-zkevm | unit-379012 | `0x53dac8...4534f0` | ❓ Unverified |
-| a-BB_idle_cpPOR-USDT | unknown | project_anchor | own_supporting | 0 | polygon-zkevm | unit-379013 | `0x923917...8bc06b` | ❓ Unverified |
+| a-AA_idle_cpPOR-USDT | unknown | project_anchor | own_supporting | 0 | polygon-zkevm | unit-379012 | `0x53dac8d715350afb3443d346aa3abd73da4534f0` | ❓ Unverified |
+| a-BB_idle_cpPOR-USDT | unknown | project_anchor | own_supporting | 0 | polygon-zkevm | unit-379013 | `0x923917304012c7e14d122eb1d6a8f49f608bc06b` | ❓ Unverified |
 
 ## Audit Inventory
 

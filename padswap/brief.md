@@ -60,14 +60,14 @@ The protocol comprises 3 functional families. Contracts are linked by 6 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| LPFarm | unknown | bsc | n/a | 2 deployments: bsc [`0x816ed1...15dc76`](./contracts/bsc-56/0x816ed1589b7783d7dd820ba4ebdef5899515dc76/); bsc `0xc1b3bf...f84101` | ⚠️ Unaudited |
-| Pad | unknown | bsc | n/a | [`0xc0888d...deb6d5`](./contracts/bsc-56/0xc0888d80ee0abf84563168b3182650c0addeb6d5/) | ⚠️ Unaudited |
-| PadFarmsV2 | unknown | bsc | n/a | 2 deployments: bsc [`0x392051...9db7ea`](./contracts/bsc-56/0x39205195afb9c79a5eb1d9575091b5a6a19db7ea/); bsc `0x4992df...4ed08b` | ⚠️ Unaudited |
-| PadFarmsV3 | unknown | bsc | n/a | [`0xb87b83...f55e82`](./contracts/bsc-56/0xb87b836083617f61b9c35ddd934c7bc03ff55e82/) | ⚠️ Unaudited |
-| PadOnlyFarm | unknown | bsc | n/a | [`0x300244...664ed1`](./contracts/bsc-56/0x30024473efd45ef9bfd7781db5438e1a58664ed1/) | ⚠️ Unaudited |
-| PadRouter | adapter | bsc | n/a | [`0x764372...138c24`](./contracts/bsc-56/0x76437234d29f84d9a12820a137c6c6a719138c24/) | ⚠️ Unaudited |
-| SonofDogeV2 | unknown | bsc | n/a | [`0xcdb943...307e60`](./contracts/bsc-56/0xcdb943908de5ee37998a53f23467017d1a307e60/) | ⚠️ Unaudited |
-| Toad | unknown | bsc | n/a | [`0x463e73...d539e9`](./contracts/bsc-56/0x463e737d8f740395abf44f7aac2d9531d8d539e9/) | ⚠️ Unaudited |
+| LPFarm | unknown | bsc | n/a | 2 deployments: bsc [`0x816ed1589b7783d7dd820ba4ebdef5899515dc76`](./contracts/bsc-56/0x816ed1589b7783d7dd820ba4ebdef5899515dc76/); bsc `0xc1b3bfaf4fa50b339f068948e9dcec298df84101` | ⚠️ Unaudited |
+| Pad | unknown | bsc | n/a | [`0xc0888d80ee0abf84563168b3182650c0addeb6d5`](./contracts/bsc-56/0xc0888d80ee0abf84563168b3182650c0addeb6d5/) | ⚠️ Unaudited |
+| PadFarmsV2 | unknown | bsc | n/a | 2 deployments: bsc [`0x39205195afb9c79a5eb1d9575091b5a6a19db7ea`](./contracts/bsc-56/0x39205195afb9c79a5eb1d9575091b5a6a19db7ea/); bsc `0x4992df071416370fe780627edfdd8cbc694ed08b` | ⚠️ Unaudited |
+| PadFarmsV3 | unknown | bsc | n/a | [`0xb87b836083617f61b9c35ddd934c7bc03ff55e82`](./contracts/bsc-56/0xb87b836083617f61b9c35ddd934c7bc03ff55e82/) | ⚠️ Unaudited |
+| PadOnlyFarm | unknown | bsc | n/a | [`0x30024473efd45ef9bfd7781db5438e1a58664ed1`](./contracts/bsc-56/0x30024473efd45ef9bfd7781db5438e1a58664ed1/) | ⚠️ Unaudited |
+| PadRouter | adapter | bsc | n/a | [`0x76437234d29f84d9a12820a137c6c6a719138c24`](./contracts/bsc-56/0x76437234d29f84d9a12820a137c6c6a719138c24/) | ⚠️ Unaudited |
+| SonofDogeV2 | unknown | bsc | n/a | [`0xcdb943908de5ee37998a53f23467017d1a307e60`](./contracts/bsc-56/0xcdb943908de5ee37998a53f23467017d1a307e60/) | ⚠️ Unaudited |
+| Toad | unknown | bsc | n/a | [`0x463e737d8f740395abf44f7aac2d9531d8d539e9`](./contracts/bsc-56/0x463e737d8f740395abf44f7aac2d9531d8d539e9/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -87,22 +87,22 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0x167cef...2f3f4a` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x4a7fdf...a6aeb0` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x4eaf76...c5af17` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x5346d5...af265f` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x6e42f4...76cde5` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x7ebab3...4d0752` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x994a66...febf60` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x9ebb25...dea9ae` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xba1ced...cafc86` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xc97c28...99cba5` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xceb4e3...e4d84c` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xdb76db...60a36a` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xe4fa0d...49c315` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xe80e9f...7d0d84` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xeb2d2c...e7b329` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xf4cd67...f062ec` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x167cef0dfd2fb050cab2e3d4002b9689852f3f4a` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x4a7fdf96fdbd1f7ef9892dae34f47125d2a6aeb0` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x4eaf76e360746e4f22f2fedb53870f4634c5af17` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x5346d54582541851a13b63f3779b93a301af265f` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x6e42f496bb6fe61a5bb1d52467b8625fbf76cde5` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x7ebab3383818020362beb7a0dbb2af93714d0752` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x994a6621aaeef4d5e31fb54e2fbb1226e9febf60` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x9ebb25b44c1384af8f9cc87b34947438cbdea9ae` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xba1ced604cc1c99b1d30bcdb6941da2c23cafc86` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xc97c28fae3825919789786a77dbbe5128399cba5` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xceb4e35a6f637f3be350964983efba9c1ae4d84c` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xdb76db816c96ad26d3ff3351633c609b5b60a36a` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xe4fa0dc5ba43f26403bcf6e3f327bc8ac749c315` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xe80e9f5a417e073cbde0ca4ab70a35906e7d0d84` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xeb2d2cbbecbe4a403c3ab8112af5dd1394e7b329` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xf4cd6749b183f83fa54735996e59cdfc96f062ec` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -116,14 +116,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x816ed1...15dc76`](./contracts/bsc-56/0x816ed1589b7783d7dd820ba4ebdef5899515dc76/) | LPFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xc0888d...deb6d5`](./contracts/bsc-56/0xc0888d80ee0abf84563168b3182650c0addeb6d5/) | Pad | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x392051...9db7ea`](./contracts/bsc-56/0x39205195afb9c79a5eb1d9575091b5a6a19db7ea/) | PadFarmsV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xb87b83...f55e82`](./contracts/bsc-56/0xb87b836083617f61b9c35ddd934c7bc03ff55e82/) | PadFarmsV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x300244...664ed1`](./contracts/bsc-56/0x30024473efd45ef9bfd7781db5438e1a58664ed1/) | PadOnlyFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x764372...138c24`](./contracts/bsc-56/0x76437234d29f84d9a12820a137c6c6a719138c24/) | PadRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xcdb943...307e60`](./contracts/bsc-56/0xcdb943908de5ee37998a53f23467017d1a307e60/) | SonofDogeV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x463e73...d539e9`](./contracts/bsc-56/0x463e737d8f740395abf44f7aac2d9531d8d539e9/) | Toad | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x816ed1589b7783d7dd820ba4ebdef5899515dc76`](./contracts/bsc-56/0x816ed1589b7783d7dd820ba4ebdef5899515dc76/) | LPFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xc0888d80ee0abf84563168b3182650c0addeb6d5`](./contracts/bsc-56/0xc0888d80ee0abf84563168b3182650c0addeb6d5/) | Pad | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x39205195afb9c79a5eb1d9575091b5a6a19db7ea`](./contracts/bsc-56/0x39205195afb9c79a5eb1d9575091b5a6a19db7ea/) | PadFarmsV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xb87b836083617f61b9c35ddd934c7bc03ff55e82`](./contracts/bsc-56/0xb87b836083617f61b9c35ddd934c7bc03ff55e82/) | PadFarmsV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x30024473efd45ef9bfd7781db5438e1a58664ed1`](./contracts/bsc-56/0x30024473efd45ef9bfd7781db5438e1a58664ed1/) | PadOnlyFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x76437234d29f84d9a12820a137c6c6a719138c24`](./contracts/bsc-56/0x76437234d29f84d9a12820a137c6c6a719138c24/) | PadRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xcdb943908de5ee37998a53f23467017d1a307e60`](./contracts/bsc-56/0xcdb943908de5ee37998a53f23467017d1a307e60/) | SonofDogeV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x463e737d8f740395abf44f7aac2d9531d8d539e9`](./contracts/bsc-56/0x463e737d8f740395abf44f7aac2d9531d8d539e9/) | Toad | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

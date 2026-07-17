@@ -59,14 +59,14 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Bridge | operational_periphery | optimism | n/a | [`0x000031...8f6a56`](./contracts/optimism-10/0x0000317bec33af037b5fab2028f52d14658f6a56/) | ✅ Audited |
-| Bridge | operational_periphery | polygon | n/a | [`0x000031...8f6a56`](./contracts/polygon-137/0x0000317bec33af037b5fab2028f52d14658f6a56/) | ✅ Audited |
-| Bridge | operational_periphery | mantle | n/a | [`0x000031...8f6a56`](./contracts/mantle-5000/0x0000317bec33af037b5fab2028f52d14658f6a56/) | ✅ Audited |
-| Bridge | operational_periphery | base | n/a | [`0x000031...8f6a56`](./contracts/base-8453/0x0000317bec33af037b5fab2028f52d14658f6a56/) | ✅ Audited |
-| Bridge | operational_periphery | arbitrum | n/a | [`0x000031...8f6a56`](./contracts/arbitrum-42161/0x0000317bec33af037b5fab2028f52d14658f6a56/) | ✅ Audited |
-| Bridge | operational_periphery | linea | n/a | [`0x000031...8f6a56`](./contracts/linea-59144/0x0000317bec33af037b5fab2028f52d14658f6a56/) | ✅ Audited |
-| Bridge | operational_periphery | blast | n/a | [`0x000031...8f6a56`](./contracts/blast-81457/0x0000317bec33af037b5fab2028f52d14658f6a56/) | ✅ Audited |
-| OmniServiceProxy | unknown | scroll | n/a | [`0x000031...8f6a56`](./contracts/scroll-534352/0x0000317bec33af037b5fab2028f52d14658f6a56/) | ✅ Audited |
+| Bridge | operational_periphery | optimism | n/a | [`0x0000317bec33af037b5fab2028f52d14658f6a56`](./contracts/optimism-10/0x0000317bec33af037b5fab2028f52d14658f6a56/) | ✅ Audited |
+| Bridge | operational_periphery | polygon | n/a | [`0x0000317bec33af037b5fab2028f52d14658f6a56`](./contracts/polygon-137/0x0000317bec33af037b5fab2028f52d14658f6a56/) | ✅ Audited |
+| Bridge | operational_periphery | mantle | n/a | [`0x0000317bec33af037b5fab2028f52d14658f6a56`](./contracts/mantle-5000/0x0000317bec33af037b5fab2028f52d14658f6a56/) | ✅ Audited |
+| Bridge | operational_periphery | base | n/a | [`0x0000317bec33af037b5fab2028f52d14658f6a56`](./contracts/base-8453/0x0000317bec33af037b5fab2028f52d14658f6a56/) | ✅ Audited |
+| Bridge | operational_periphery | arbitrum | n/a | [`0x0000317bec33af037b5fab2028f52d14658f6a56`](./contracts/arbitrum-42161/0x0000317bec33af037b5fab2028f52d14658f6a56/) | ✅ Audited |
+| Bridge | operational_periphery | linea | n/a | [`0x0000317bec33af037b5fab2028f52d14658f6a56`](./contracts/linea-59144/0x0000317bec33af037b5fab2028f52d14658f6a56/) | ✅ Audited |
+| Bridge | operational_periphery | blast | n/a | [`0x0000317bec33af037b5fab2028f52d14658f6a56`](./contracts/blast-81457/0x0000317bec33af037b5fab2028f52d14658f6a56/) | ✅ Audited |
+| OmniServiceProxy | unknown | scroll | n/a | [`0x0000317bec33af037b5fab2028f52d14658f6a56`](./contracts/scroll-534352/0x0000317bec33af037b5fab2028f52d14658f6a56/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 
@@ -90,10 +90,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | zksync-era | n/a | `0x58a64d...28bbf5` | ❓ Unverified |
-| UnnamedContract | unknown | zksync-era | n/a | `0xbd8df7...f112a9` | ❓ Unverified |
-| UnnamedContract | unknown | zksync-era | n/a | `0xdef84c...02fa3d` | ❓ Unverified |
-| UnnamedContract | unknown | merlin | n/a | 4 deployments: merlin `0x000031...8f6a56`; merlin `0x41d903...fb0f71`; klaytn `0x000031...8f6a56`; klaytn `0xd077a4...3e4fdb` | ❓ Unverified |
+| UnnamedContract | unknown | zksync-era | n/a | `0x58a64d2bf0032ac05216ddc9cadd0f9db828bbf5` | ❓ Unverified |
+| UnnamedContract | unknown | zksync-era | n/a | `0xbd8df7558baff8f4ccaaa6eeca0252ff8bf112a9` | ❓ Unverified |
+| UnnamedContract | unknown | zksync-era | n/a | `0xdef84c4b412361e3a98a5277c108d7f0df02fa3d` | ❓ Unverified |
+| UnnamedContract | unknown | merlin | n/a | 4 deployments: merlin `0x0000317bec33af037b5fab2028f52d14658f6a56`; merlin `0x41d9036454be47d3745a823c4aacd0e29cfb0f71`; klaytn `0x0000317bec33af037b5fab2028f52d14658f6a56`; klaytn `0xd077a400968890eacc75cdc901f0356c943e4fdb` | ❓ Unverified |
 
 ## Audit Inventory
 

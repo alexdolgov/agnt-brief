@@ -61,7 +61,7 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| HumpERC20Token | token | bsc | n/a | [`0x453939...2d7a51`](./contracts/bsc-56/0x453939c0270e9405876c7f047ade3932fd2d7a51/) | ⚠️ Unaudited |
+| HumpERC20Token | token | bsc | n/a | [`0x453939c0270e9405876c7f047ade3932fd2d7a51`](./contracts/bsc-56/0x453939c0270e9405876c7f047ade3932fd2d7a51/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -81,7 +81,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0x88bdb4...79ce39` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x88bdb43ce40afe68322305cce4c5cb93ba79ce39` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -95,7 +95,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x453939...2d7a51`](./contracts/bsc-56/0x453939c0270e9405876c7f047ade3932fd2d7a51/) | HumpERC20Token | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x453939c0270e9405876c7f047ade3932fd2d7a51`](./contracts/bsc-56/0x453939c0270e9405876c7f047ade3932fd2d7a51/) | HumpERC20Token | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

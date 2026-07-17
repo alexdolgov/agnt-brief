@@ -62,7 +62,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| EtherealPreDepositVault | core_logic | ethereum | n/a | [`0x90d2af...74cc8f`](./contracts/ethereum-1/0x90d2af7d622ca3141efa4d8f1f24d86e5974cc8f/) | ⚠️ Unaudited |
+| EtherealPreDepositVault | core_logic | ethereum | n/a | [`0x90d2af7d622ca3141efa4d8f1f24d86e5974cc8f`](./contracts/ethereum-1/0x90d2af7d622ca3141efa4d8f1f24d86e5974cc8f/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -97,7 +97,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x90d2af...74cc8f`](./contracts/ethereum-1/0x90d2af7d622ca3141efa4d8f1f24d86e5974cc8f/) | EtherealPreDepositVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x90d2af7d622ca3141efa4d8f1f24d86e5974cc8f`](./contracts/ethereum-1/0x90d2af7d622ca3141efa4d8f1f24d86e5974cc8f/) | EtherealPreDepositVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

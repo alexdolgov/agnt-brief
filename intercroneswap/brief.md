@@ -61,12 +61,12 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ICR | unknown | bsc | n/a | [`0x4f60ad...971e00`](./contracts/bsc-56/0x4f60ad2c684296458b12053c0ef402e162971e00/) | ⚠️ Unaudited |
-| ICR_b | unknown | bsc | n/a | [`0x9b4da0...315d2f`](./contracts/bsc-56/0x9b4da0d77c7d611e8fe0ec9214dd791d05315d2f/) | ⚠️ Unaudited |
-| InterCrone | unknown | bsc | n/a | [`0xdc0678...9d06d8`](./contracts/bsc-56/0xdc0678e929852aebe68e0ce60f65049b0d9d06d8/) | ⚠️ Unaudited |
-| IswapV1Factory | unknown | bsc | n/a | [`0x774433...56632b`](./contracts/bsc-56/0x774433016a25e19b2a8d96996c940e326356632b/) | ⚠️ Unaudited |
-| IswapV1Router02 | unknown | bsc | n/a | [`0x4fd7d1...d259b3`](./contracts/bsc-56/0x4fd7d13c126ece5c3fe7a839871b242971d259b3/) | ⚠️ Unaudited |
-| StakingRewards | unknown | bsc | n/a | [`0x0484b7...35b38d`](./contracts/bsc-56/0x0484b79f91f88234e01cd7fd6ceeeb9d5835b38d/) | ⚠️ Unaudited |
+| ICR | unknown | bsc | n/a | [`0x4f60ad2c684296458b12053c0ef402e162971e00`](./contracts/bsc-56/0x4f60ad2c684296458b12053c0ef402e162971e00/) | ⚠️ Unaudited |
+| ICR_b | unknown | bsc | n/a | [`0x9b4da0d77c7d611e8fe0ec9214dd791d05315d2f`](./contracts/bsc-56/0x9b4da0d77c7d611e8fe0ec9214dd791d05315d2f/) | ⚠️ Unaudited |
+| InterCrone | unknown | bsc | n/a | [`0xdc0678e929852aebe68e0ce60f65049b0d9d06d8`](./contracts/bsc-56/0xdc0678e929852aebe68e0ce60f65049b0d9d06d8/) | ⚠️ Unaudited |
+| IswapV1Factory | unknown | bsc | n/a | [`0x774433016a25e19b2a8d96996c940e326356632b`](./contracts/bsc-56/0x774433016a25e19b2a8d96996c940e326356632b/) | ⚠️ Unaudited |
+| IswapV1Router02 | unknown | bsc | n/a | [`0x4fd7d13c126ece5c3fe7a839871b242971d259b3`](./contracts/bsc-56/0x4fd7d13c126ece5c3fe7a839871b242971d259b3/) | ⚠️ Unaudited |
+| StakingRewards | unknown | bsc | n/a | [`0x0484b79f91f88234e01cd7fd6ceeeb9d5835b38d`](./contracts/bsc-56/0x0484b79f91f88234e01cd7fd6ceeeb9d5835b38d/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -97,12 +97,12 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x4f60ad...971e00`](./contracts/bsc-56/0x4f60ad2c684296458b12053c0ef402e162971e00/) | ICR | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x9b4da0...315d2f`](./contracts/bsc-56/0x9b4da0d77c7d611e8fe0ec9214dd791d05315d2f/) | ICR_b | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xdc0678...9d06d8`](./contracts/bsc-56/0xdc0678e929852aebe68e0ce60f65049b0d9d06d8/) | InterCrone | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x774433...56632b`](./contracts/bsc-56/0x774433016a25e19b2a8d96996c940e326356632b/) | IswapV1Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x4fd7d1...d259b3`](./contracts/bsc-56/0x4fd7d13c126ece5c3fe7a839871b242971d259b3/) | IswapV1Router02 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x0484b7...35b38d`](./contracts/bsc-56/0x0484b79f91f88234e01cd7fd6ceeeb9d5835b38d/) | StakingRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x4f60ad2c684296458b12053c0ef402e162971e00`](./contracts/bsc-56/0x4f60ad2c684296458b12053c0ef402e162971e00/) | ICR | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x9b4da0d77c7d611e8fe0ec9214dd791d05315d2f`](./contracts/bsc-56/0x9b4da0d77c7d611e8fe0ec9214dd791d05315d2f/) | ICR_b | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xdc0678e929852aebe68e0ce60f65049b0d9d06d8`](./contracts/bsc-56/0xdc0678e929852aebe68e0ce60f65049b0d9d06d8/) | InterCrone | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x774433016a25e19b2a8d96996c940e326356632b`](./contracts/bsc-56/0x774433016a25e19b2a8d96996c940e326356632b/) | IswapV1Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x4fd7d13c126ece5c3fe7a839871b242971d259b3`](./contracts/bsc-56/0x4fd7d13c126ece5c3fe7a839871b242971d259b3/) | IswapV1Router02 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x0484b79f91f88234e01cd7fd6ceeeb9d5835b38d`](./contracts/bsc-56/0x0484b79f91f88234e01cd7fd6ceeeb9d5835b38d/) | StakingRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

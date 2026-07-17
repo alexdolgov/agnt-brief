@@ -61,14 +61,14 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| USDat | unknown | ethereum | n/a | [`0x23238f...5aaa71`](./contracts/ethereum-1/0x23238f20b894f29041f48d88ee91131c395aaa71/) | ✅ Audited |
+| USDat | unknown | ethereum | n/a | [`0x23238f20b894f29041f48d88ee91131c395aaa71`](./contracts/ethereum-1/0x23238f20b894f29041f48d88ee91131c395aaa71/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ERC1967Proxy | unknown | ethereum | n/a | [`0xd16633...bd2df7`](./contracts/ethereum-1/0xd166337499e176bbc38a1fbd113ab144e5bd2df7/) | ⚠️ Unaudited |
-| MToken | unknown | ethereum | n/a | [`0x866a2b...36be1b`](./contracts/ethereum-1/0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | ethereum | n/a | [`0xd166337499e176bbc38a1fbd113ab144e5bd2df7`](./contracts/ethereum-1/0xd166337499e176bbc38a1fbd113ab144e5bd2df7/) | ⚠️ Unaudited |
+| MToken | unknown | ethereum | n/a | [`0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b`](./contracts/ethereum-1/0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -103,7 +103,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x866a2b...36be1b`](./contracts/ethereum-1/0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b/) | MToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b`](./contracts/ethereum-1/0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b/) | MToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

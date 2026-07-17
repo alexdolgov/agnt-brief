@@ -59,16 +59,16 @@ The protocol forms a single structural family (Core Logic) of 10 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ArbiFluxToken | unknown | arbitrum | n/a | [`0x640812...71b276`](./contracts/arbitrum-42161/0x64081252c497fcfec247a664e9d10ca8ed71b276/) | ⚠️ Unaudited |
-| BatchMinter | unknown | arbitrum | n/a | [`0x352c8a...fd189c`](./contracts/arbitrum-42161/0x352c8a363ef1c9e730b8a2ee14bab90545fd189c/) | ⚠️ Unaudited |
-| DamToken | unknown | ethereum | n/a | [`0xf80d58...8786df`](./contracts/ethereum-1/0xf80d589b3dbe130c270a69f1a69d050f268786df/) | ⚠️ Unaudited |
-| DatamineTimRewards | unknown | arbitrum | n/a | [`0x0eba2e...d1212b`](./contracts/arbitrum-42161/0x0eba2eb532a46ae8c7010668671e5bcdc6d1212b/) | ⚠️ Unaudited |
-| DatamineTimRewardsVersionTwo | unknown | arbitrum | n/a | [`0xe948c8...7c29dd`](./contracts/arbitrum-42161/0xe948c8417dd2f8e7dfc88ac3f50b3f89db7c29dd/) | ⚠️ Unaudited |
-| Flux | unknown | arbitrum | n/a | [`0xf80d58...8786df`](./contracts/arbitrum-42161/0xf80d589b3dbe130c270a69f1a69d050f268786df/) | ⚠️ Unaudited |
-| FluxToken | unknown | ethereum | n/a | [`0x469eda...5cb1d9`](./contracts/ethereum-1/0x469eda64aed3a3ad6f868c44564291aa415cb1d9/) | ⚠️ Unaudited |
-| HodlClickerRush | unknown | arbitrum | n/a | [`0x012c2a...8d27e0`](./contracts/arbitrum-42161/0x012c2a83f854bd016074195d06611785ef8d27e0/) | ⚠️ Unaudited |
-| LockquidityToken | unknown | arbitrum | n/a | [`0x454f67...4cea03`](./contracts/arbitrum-42161/0x454f676d44df315eef9b5425178d5a8b524cea03/) | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | arbitrum | n/a | [`0x0c93a1...405e7a`](./contracts/arbitrum-42161/0x0c93a1d3f68a0554d37f3e7af3a1442a94405e7a/) | ⚠️ Unaudited |
+| ArbiFluxToken | unknown | arbitrum | n/a | [`0x64081252c497fcfec247a664e9d10ca8ed71b276`](./contracts/arbitrum-42161/0x64081252c497fcfec247a664e9d10ca8ed71b276/) | ⚠️ Unaudited |
+| BatchMinter | unknown | arbitrum | n/a | [`0x352c8a363ef1c9e730b8a2ee14bab90545fd189c`](./contracts/arbitrum-42161/0x352c8a363ef1c9e730b8a2ee14bab90545fd189c/) | ⚠️ Unaudited |
+| DamToken | unknown | ethereum | n/a | [`0xf80d589b3dbe130c270a69f1a69d050f268786df`](./contracts/ethereum-1/0xf80d589b3dbe130c270a69f1a69d050f268786df/) | ⚠️ Unaudited |
+| DatamineTimRewards | unknown | arbitrum | n/a | [`0x0eba2eb532a46ae8c7010668671e5bcdc6d1212b`](./contracts/arbitrum-42161/0x0eba2eb532a46ae8c7010668671e5bcdc6d1212b/) | ⚠️ Unaudited |
+| DatamineTimRewardsVersionTwo | unknown | arbitrum | n/a | [`0xe948c8417dd2f8e7dfc88ac3f50b3f89db7c29dd`](./contracts/arbitrum-42161/0xe948c8417dd2f8e7dfc88ac3f50b3f89db7c29dd/) | ⚠️ Unaudited |
+| Flux | unknown | arbitrum | n/a | [`0xf80d589b3dbe130c270a69f1a69d050f268786df`](./contracts/arbitrum-42161/0xf80d589b3dbe130c270a69f1a69d050f268786df/) | ⚠️ Unaudited |
+| FluxToken | unknown | ethereum | n/a | [`0x469eda64aed3a3ad6f868c44564291aa415cb1d9`](./contracts/ethereum-1/0x469eda64aed3a3ad6f868c44564291aa415cb1d9/) | ⚠️ Unaudited |
+| HodlClickerRush | unknown | arbitrum | n/a | [`0x012c2a83f854bd016074195d06611785ef8d27e0`](./contracts/arbitrum-42161/0x012c2a83f854bd016074195d06611785ef8d27e0/) | ⚠️ Unaudited |
+| LockquidityToken | unknown | arbitrum | n/a | [`0x454f676d44df315eef9b5425178d5a8b524cea03`](./contracts/arbitrum-42161/0x454f676d44df315eef9b5425178d5a8b524cea03/) | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | arbitrum | n/a | [`0x0c93a1d3f68a0554d37f3e7af3a1442a94405e7a`](./contracts/arbitrum-42161/0x0c93a1d3f68a0554d37f3e7af3a1442a94405e7a/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -99,15 +99,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | [`0x640812...71b276`](./contracts/arbitrum-42161/0x64081252c497fcfec247a664e9d10ca8ed71b276/) | ArbiFluxToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x352c8a...fd189c`](./contracts/arbitrum-42161/0x352c8a363ef1c9e730b8a2ee14bab90545fd189c/) | BatchMinter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xf80d58...8786df`](./contracts/ethereum-1/0xf80d589b3dbe130c270a69f1a69d050f268786df/) | DamToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x0eba2e...d1212b`](./contracts/arbitrum-42161/0x0eba2eb532a46ae8c7010668671e5bcdc6d1212b/) | DatamineTimRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xe948c8...7c29dd`](./contracts/arbitrum-42161/0xe948c8417dd2f8e7dfc88ac3f50b3f89db7c29dd/) | DatamineTimRewardsVersionTwo | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xf80d58...8786df`](./contracts/arbitrum-42161/0xf80d589b3dbe130c270a69f1a69d050f268786df/) | Flux | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x469eda...5cb1d9`](./contracts/ethereum-1/0x469eda64aed3a3ad6f868c44564291aa415cb1d9/) | FluxToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x012c2a...8d27e0`](./contracts/arbitrum-42161/0x012c2a83f854bd016074195d06611785ef8d27e0/) | HodlClickerRush | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x454f67...4cea03`](./contracts/arbitrum-42161/0x454f676d44df315eef9b5425178d5a8b524cea03/) | LockquidityToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x64081252c497fcfec247a664e9d10ca8ed71b276`](./contracts/arbitrum-42161/0x64081252c497fcfec247a664e9d10ca8ed71b276/) | ArbiFluxToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x352c8a363ef1c9e730b8a2ee14bab90545fd189c`](./contracts/arbitrum-42161/0x352c8a363ef1c9e730b8a2ee14bab90545fd189c/) | BatchMinter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xf80d589b3dbe130c270a69f1a69d050f268786df`](./contracts/ethereum-1/0xf80d589b3dbe130c270a69f1a69d050f268786df/) | DamToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x0eba2eb532a46ae8c7010668671e5bcdc6d1212b`](./contracts/arbitrum-42161/0x0eba2eb532a46ae8c7010668671e5bcdc6d1212b/) | DatamineTimRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xe948c8417dd2f8e7dfc88ac3f50b3f89db7c29dd`](./contracts/arbitrum-42161/0xe948c8417dd2f8e7dfc88ac3f50b3f89db7c29dd/) | DatamineTimRewardsVersionTwo | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xf80d589b3dbe130c270a69f1a69d050f268786df`](./contracts/arbitrum-42161/0xf80d589b3dbe130c270a69f1a69d050f268786df/) | Flux | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x469eda64aed3a3ad6f868c44564291aa415cb1d9`](./contracts/ethereum-1/0x469eda64aed3a3ad6f868c44564291aa415cb1d9/) | FluxToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x012c2a83f854bd016074195d06611785ef8d27e0`](./contracts/arbitrum-42161/0x012c2a83f854bd016074195d06611785ef8d27e0/) | HodlClickerRush | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x454f676d44df315eef9b5425178d5a8b524cea03`](./contracts/arbitrum-42161/0x454f676d44df315eef9b5425178d5a8b524cea03/) | LockquidityToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

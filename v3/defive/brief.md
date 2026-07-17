@@ -89,23 +89,23 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BurnToFunBribeVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xbeb62b...934a6a` | ⚠️ Unaudited |
-| BurnToFunCampaign | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x09b133...60fcf5` | ⚠️ Unaudited |
-| BurnToFunCampaignFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xaf563b...655500` | ⚠️ Unaudited |
-| BurnToFunFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x1dc2b2...834de8` | ⚠️ Unaudited |
-| BurnToFunTokenFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x096d7a...b1ca9c` | ⚠️ Unaudited |
-| BurnToFunVestingFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x089848...8320a0` | ⚠️ Unaudited |
-| DeFiveClaiming | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x0594d7...c442e9` | ⚠️ Unaudited |
-| DeFiveFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x47524c...c551e6` | ⚠️ Unaudited |
-| DeFiveLpClaiming | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x2e5a17...4d8d9f` | ⚠️ Unaudited |
-| DeFiveMulticall | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xc4c354...e9c8e4` | ⚠️ Unaudited |
-| DeFiveRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xc159d9...68c725` | ⚠️ Unaudited |
-| FIVE | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x15f7a3...c0a351` | ⚠️ Unaudited |
-| LumosCards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xee4c8d...1682ab` | ⚠️ Unaudited |
-| MasterFarmer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x0aed2b...c8832d` | ⚠️ Unaudited |
-| RareWiggies | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x871b67...225257` | ⚠️ Unaudited |
-| SNSToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x7b0a41...6ee9f5` | ⚠️ Unaudited |
-| Wiggies | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x31e7aa...c72f3d` | ⚠️ Unaudited |
+| BurnToFunBribeVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xbeb62b3d8111ee0550f5baa6c430885d67934a6a` | ⚠️ Unaudited |
+| BurnToFunCampaign | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x09b133cd6e4caefe97d5f0167356b8be6a60fcf5` | ⚠️ Unaudited |
+| BurnToFunCampaignFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xaf563bc608c1ccfd787434aa14a3716fcc655500` | ⚠️ Unaudited |
+| BurnToFunFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x1dc2b2c4f1495d30e950ec7ee77a1d3864834de8` | ⚠️ Unaudited |
+| BurnToFunTokenFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x096d7a6d17cc011cb3918f3d1574860998b1ca9c` | ⚠️ Unaudited |
+| BurnToFunVestingFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x089848ed7d61419b9b61408385f1e84e4d8320a0` | ⚠️ Unaudited |
+| DeFiveClaiming | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x0594d73e517aec7a824aa89c1498b26df8c442e9` | ⚠️ Unaudited |
+| DeFiveFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x47524ca6578e172878abf6fd6f3e1cd106c551e6` | ⚠️ Unaudited |
+| DeFiveLpClaiming | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x2e5a175591be074a23ae4491bcf4942a9b4d8d9f` | ⚠️ Unaudited |
+| DeFiveMulticall | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xc4c35416ffa712f4cef5ac03d0c505b173e9c8e4` | ⚠️ Unaudited |
+| DeFiveRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xc159d904ca8c2449df0ae4836197278f2f68c725` | ⚠️ Unaudited |
+| FIVE | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x15f7a33cc1e4744f100f03bb13d7eb67c5c0a351` | ⚠️ Unaudited |
+| LumosCards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xee4c8d3221122aeadf1a08fcdd5aa90fba1682ab` | ⚠️ Unaudited |
+| MasterFarmer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x0aed2bc9a61f88fd118262094fd10d1723c8832d` | ⚠️ Unaudited |
+| RareWiggies | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x871b671a8e5da1bab132e1034684b1b8c1225257` | ⚠️ Unaudited |
+| SNSToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x7b0a41f0c17474e41a0c36c0bf33b9aed06ee9f5` | ⚠️ Unaudited |
+| Wiggies | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x31e7aac987c7b304ab0822cfad6e736ce7c72f3d` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

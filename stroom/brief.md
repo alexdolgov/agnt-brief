@@ -59,22 +59,22 @@ The protocol forms a single structural family (Stroom) of 11 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| strBTC | unknown | ethereum | n/a | [`0xb2723d...9b3017`](./contracts/ethereum-1/0xb2723d5df98689eca6a4e7321121662ddb9b3017/) | ✅ Audited |
-| ValidatorRegistry | unknown | ethereum | n/a | [`0x8cdb1e...e10e36`](./contracts/ethereum-1/0x8cdb1eab36096f4891299c7d1b8dee777ae10e36/) | ✅ Audited |
+| strBTC | unknown | ethereum | n/a | [`0xb2723d5df98689eca6a4e7321121662ddb9b3017`](./contracts/ethereum-1/0xb2723d5df98689eca6a4e7321121662ddb9b3017/) | ✅ Audited |
+| ValidatorRegistry | unknown | ethereum | n/a | [`0x8cdb1eab36096f4891299c7d1b8dee777ae10e36`](./contracts/ethereum-1/0x8cdb1eab36096f4891299c7d1b8dee777ae10e36/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (9)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CBBTCConverterImmutable | unknown | ethereum | n/a | [`0xe7b4c4...df2cd0`](./contracts/ethereum-1/0xe7b4c44adb17147ad877eb8607eeb1e95adf2cd0/) | ⚠️ Unaudited |
-| Chronicle_WSTRBTC_USD_1 | unknown | ethereum | n/a | [`0x27c0d6...068917`](./contracts/ethereum-1/0x27c0d69b99e4ea0bf99ebdc07dacbe0b3f068917/) | ⚠️ Unaudited |
-| DIAOracleV2 | unknown | ethereum | n/a | [`0xfe0593...b0463d`](./contracts/ethereum-1/0xfe0593fa61c7cf3d2cd17b8b53ef844a33b0463d/) | ⚠️ Unaudited |
-| DIAStroomAdapter | unknown | ethereum | n/a | [`0x12db8f...7a1811`](./contracts/ethereum-1/0x12db8fca6aaa29e922bfad8a7771ae11f17a1811/) | ⚠️ Unaudited |
-| DiaStroomAssetSpecificCallingConvention | unknown | ethereum | n/a | [`0x1d18b5...cf8d40`](./contracts/ethereum-1/0x1d18b5147b11908b24a247517f606c0705cf8d40/) | ⚠️ Unaudited |
-| FiatTokenV2_1 | unknown | ethereum | n/a | [`0xcbb7c0...ed33bf`](./contracts/ethereum-1/0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf/) | ⚠️ Unaudited |
-| WBTC | unknown | ethereum | n/a | [`0x2260fa...c2c599`](./contracts/ethereum-1/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599/) | ⚠️ Unaudited |
-| WBTCConverterImmutable | unknown | ethereum | n/a | [`0x56192f...cb1352`](./contracts/ethereum-1/0x56192f14c1d84e41db3d5d4c5d407efdb5cb1352/) | ⚠️ Unaudited |
-| wstrBTC | unknown | ethereum | n/a | [`0xa3ca88...e6f770`](./contracts/ethereum-1/0xa3ca88cfb7bbe9cfbd47df053ffa2130c7e6f770/) | ⚠️ Unaudited |
+| CBBTCConverterImmutable | unknown | ethereum | n/a | [`0xe7b4c44adb17147ad877eb8607eeb1e95adf2cd0`](./contracts/ethereum-1/0xe7b4c44adb17147ad877eb8607eeb1e95adf2cd0/) | ⚠️ Unaudited |
+| Chronicle_WSTRBTC_USD_1 | unknown | ethereum | n/a | [`0x27c0d69b99e4ea0bf99ebdc07dacbe0b3f068917`](./contracts/ethereum-1/0x27c0d69b99e4ea0bf99ebdc07dacbe0b3f068917/) | ⚠️ Unaudited |
+| DIAOracleV2 | unknown | ethereum | n/a | [`0xfe0593fa61c7cf3d2cd17b8b53ef844a33b0463d`](./contracts/ethereum-1/0xfe0593fa61c7cf3d2cd17b8b53ef844a33b0463d/) | ⚠️ Unaudited |
+| DIAStroomAdapter | unknown | ethereum | n/a | [`0x12db8fca6aaa29e922bfad8a7771ae11f17a1811`](./contracts/ethereum-1/0x12db8fca6aaa29e922bfad8a7771ae11f17a1811/) | ⚠️ Unaudited |
+| DiaStroomAssetSpecificCallingConvention | unknown | ethereum | n/a | [`0x1d18b5147b11908b24a247517f606c0705cf8d40`](./contracts/ethereum-1/0x1d18b5147b11908b24a247517f606c0705cf8d40/) | ⚠️ Unaudited |
+| FiatTokenV2_1 | unknown | ethereum | n/a | [`0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf`](./contracts/ethereum-1/0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf/) | ⚠️ Unaudited |
+| WBTC | unknown | ethereum | n/a | [`0x2260fac5e5542a773aa44fbcfedf7c193bc2c599`](./contracts/ethereum-1/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599/) | ⚠️ Unaudited |
+| WBTCConverterImmutable | unknown | ethereum | n/a | [`0x56192f14c1d84e41db3d5d4c5d407efdb5cb1352`](./contracts/ethereum-1/0x56192f14c1d84e41db3d5d4c5d407efdb5cb1352/) | ⚠️ Unaudited |
+| wstrBTC | unknown | ethereum | n/a | [`0xa3ca88cfb7bbe9cfbd47df053ffa2130c7e6f770`](./contracts/ethereum-1/0xa3ca88cfb7bbe9cfbd47df053ffa2130c7e6f770/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -94,7 +94,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x1f03c2...055024` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x1f03c22a13055de17b02c0b6942c3bd99b055024` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -108,14 +108,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xe7b4c4...df2cd0`](./contracts/ethereum-1/0xe7b4c44adb17147ad877eb8607eeb1e95adf2cd0/) | CBBTCConverterImmutable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xfe0593...b0463d`](./contracts/ethereum-1/0xfe0593fa61c7cf3d2cd17b8b53ef844a33b0463d/) | DIAOracleV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x12db8f...7a1811`](./contracts/ethereum-1/0x12db8fca6aaa29e922bfad8a7771ae11f17a1811/) | DIAStroomAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1d18b5...cf8d40`](./contracts/ethereum-1/0x1d18b5147b11908b24a247517f606c0705cf8d40/) | DiaStroomAssetSpecificCallingConvention | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xcbb7c0...ed33bf`](./contracts/ethereum-1/0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf/) | FiatTokenV2_1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2260fa...c2c599`](./contracts/ethereum-1/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599/) | WBTC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x56192f...cb1352`](./contracts/ethereum-1/0x56192f14c1d84e41db3d5d4c5d407efdb5cb1352/) | WBTCConverterImmutable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa3ca88...e6f770`](./contracts/ethereum-1/0xa3ca88cfb7bbe9cfbd47df053ffa2130c7e6f770/) | wstrBTC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe7b4c44adb17147ad877eb8607eeb1e95adf2cd0`](./contracts/ethereum-1/0xe7b4c44adb17147ad877eb8607eeb1e95adf2cd0/) | CBBTCConverterImmutable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xfe0593fa61c7cf3d2cd17b8b53ef844a33b0463d`](./contracts/ethereum-1/0xfe0593fa61c7cf3d2cd17b8b53ef844a33b0463d/) | DIAOracleV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x12db8fca6aaa29e922bfad8a7771ae11f17a1811`](./contracts/ethereum-1/0x12db8fca6aaa29e922bfad8a7771ae11f17a1811/) | DIAStroomAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1d18b5147b11908b24a247517f606c0705cf8d40`](./contracts/ethereum-1/0x1d18b5147b11908b24a247517f606c0705cf8d40/) | DiaStroomAssetSpecificCallingConvention | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf`](./contracts/ethereum-1/0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf/) | FiatTokenV2_1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x2260fac5e5542a773aa44fbcfedf7c193bc2c599`](./contracts/ethereum-1/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599/) | WBTC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x56192f14c1d84e41db3d5d4c5d407efdb5cb1352`](./contracts/ethereum-1/0x56192f14c1d84e41db3d5d4c5d407efdb5cb1352/) | WBTCConverterImmutable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa3ca88cfb7bbe9cfbd47df053ffa2130c7e6f770`](./contracts/ethereum-1/0xa3ca88cfb7bbe9cfbd47df053ffa2130c7e6f770/) | wstrBTC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

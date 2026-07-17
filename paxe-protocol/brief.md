@@ -58,17 +58,17 @@ The protocol comprises 2 functional families. Contracts are linked by 7 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| LiquidFarming | unknown | bsc | n/a | 3 deployments: bsc [`0x08d98d...41be85`](./contracts/bsc-56/0x08d98db82d757a868e8a9866a7199e22ce41be85/); bsc `0x75a806...e349fb`; bsc `0xba576f...02241f` | ✅ Audited |
+| LiquidFarming | unknown | bsc | n/a | 3 deployments: bsc [`0x08d98db82d757a868e8a9866a7199e22ce41be85`](./contracts/bsc-56/0x08d98db82d757a868e8a9866a7199e22ce41be85/); bsc `0x75a8063c9f17ffae2dc0677961e8efc3b4e349fb`; bsc `0xba576f5ecba5182a20f010089107dfb00502241f` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Paxe | unknown | bsc | n/a | [`0xd2a3ee...5dd2fa`](./contracts/bsc-56/0xd2a3eec06719d5ac66248003b5488e02165dd2fa/) | ⚠️ Unaudited |
-| PaxeRestaking | unknown | bsc | n/a | [`0x269e1c...e9e9c8`](./contracts/bsc-56/0x269e1ceb128cccd5684bbaff9906d69ed1e9e9c8/) | ⚠️ Unaudited |
-| PaxeStaking | unknown | bsc | n/a | [`0x8461e6...16b8d5`](./contracts/bsc-56/0x8461e6429248656e5479b4bd09f918cbc016b8d5/) | ⚠️ Unaudited |
-| PaxeStakingV2 | unknown | bsc | n/a | [`0x311049...364a09`](./contracts/bsc-56/0x311049dcac17e9d9a961590b436c132f91364a09/) | ⚠️ Unaudited |
-| PPAXE | unknown | bsc | n/a | [`0x017183...b2f99f`](./contracts/bsc-56/0x017183e188e4cd1b31e509f03d417d0f11b2f99f/) | ⚠️ Unaudited |
+| Paxe | unknown | bsc | n/a | [`0xd2a3eec06719d5ac66248003b5488e02165dd2fa`](./contracts/bsc-56/0xd2a3eec06719d5ac66248003b5488e02165dd2fa/) | ⚠️ Unaudited |
+| PaxeRestaking | unknown | bsc | n/a | [`0x269e1ceb128cccd5684bbaff9906d69ed1e9e9c8`](./contracts/bsc-56/0x269e1ceb128cccd5684bbaff9906d69ed1e9e9c8/) | ⚠️ Unaudited |
+| PaxeStaking | unknown | bsc | n/a | [`0x8461e6429248656e5479b4bd09f918cbc016b8d5`](./contracts/bsc-56/0x8461e6429248656e5479b4bd09f918cbc016b8d5/) | ⚠️ Unaudited |
+| PaxeStakingV2 | unknown | bsc | n/a | [`0x311049dcac17e9d9a961590b436c132f91364a09`](./contracts/bsc-56/0x311049dcac17e9d9a961590b436c132f91364a09/) | ⚠️ Unaudited |
+| PPAXE | unknown | bsc | n/a | [`0x017183e188e4cd1b31e509f03d417d0f11b2f99f`](./contracts/bsc-56/0x017183e188e4cd1b31e509f03d417d0f11b2f99f/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -88,8 +88,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0x007d0a...bbf503` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x00de3d...373146` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x007d0a64516c954a8c3ba145185a2ed5b9bbf503` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x00de3de6b799790c86618088e87299ff46373146` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -103,11 +103,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0xd2a3ee...5dd2fa`](./contracts/bsc-56/0xd2a3eec06719d5ac66248003b5488e02165dd2fa/) | Paxe | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x269e1c...e9e9c8`](./contracts/bsc-56/0x269e1ceb128cccd5684bbaff9906d69ed1e9e9c8/) | PaxeRestaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x8461e6...16b8d5`](./contracts/bsc-56/0x8461e6429248656e5479b4bd09f918cbc016b8d5/) | PaxeStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x311049...364a09`](./contracts/bsc-56/0x311049dcac17e9d9a961590b436c132f91364a09/) | PaxeStakingV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x017183...b2f99f`](./contracts/bsc-56/0x017183e188e4cd1b31e509f03d417d0f11b2f99f/) | PPAXE | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xd2a3eec06719d5ac66248003b5488e02165dd2fa`](./contracts/bsc-56/0xd2a3eec06719d5ac66248003b5488e02165dd2fa/) | Paxe | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x269e1ceb128cccd5684bbaff9906d69ed1e9e9c8`](./contracts/bsc-56/0x269e1ceb128cccd5684bbaff9906d69ed1e9e9c8/) | PaxeRestaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x8461e6429248656e5479b4bd09f918cbc016b8d5`](./contracts/bsc-56/0x8461e6429248656e5479b4bd09f918cbc016b8d5/) | PaxeStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x311049dcac17e9d9a961590b436c132f91364a09`](./contracts/bsc-56/0x311049dcac17e9d9a961590b436c132f91364a09/) | PaxeStakingV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x017183e188e4cd1b31e509f03d417d0f11b2f99f`](./contracts/bsc-56/0x017183e188e4cd1b31e509f03d417d0f11b2f99f/) | PPAXE | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

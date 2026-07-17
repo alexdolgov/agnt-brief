@@ -60,14 +60,14 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Token | unknown | bsc | n/a | [`0x0bf3bc...290b47`](./contracts/bsc-56/0x0bf3bcf21dac3c97dea1815732b4f41bcc290b47/) | ✅ Audited |
-| TokenVesting | unknown | bsc | n/a | [`0x010e2f...6a18bf`](./contracts/bsc-56/0x010e2f2a34cfc5c206e9283e356b3f586e6a18bf/) | ✅ Audited |
+| Token | unknown | bsc | n/a | [`0x0bf3bcf21dac3c97dea1815732b4f41bcc290b47`](./contracts/bsc-56/0x0bf3bcf21dac3c97dea1815732b4f41bcc290b47/) | ✅ Audited |
+| TokenVesting | unknown | bsc | n/a | [`0x010e2f2a34cfc5c206e9283e356b3f586e6a18bf`](./contracts/bsc-56/0x010e2f2a34cfc5c206e9283e356b3f586e6a18bf/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| TokenStaking | unknown | bsc | n/a | [`0x30f135...5d21c0`](./contracts/bsc-56/0x30f135c4cfd9ba241803ce4e6a3f1f9f295d21c0/) | ⚠️ Unaudited |
+| TokenStaking | unknown | bsc | n/a | [`0x30f135c4cfd9ba241803ce4e6a3f1f9f295d21c0`](./contracts/bsc-56/0x30f135c4cfd9ba241803ce4e6a3f1f9f295d21c0/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -101,7 +101,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x30f135...5d21c0`](./contracts/bsc-56/0x30f135c4cfd9ba241803ce4e6a3f1f9f295d21c0/) | TokenStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x30f135c4cfd9ba241803ce4e6a3f1f9f295d21c0`](./contracts/bsc-56/0x30f135c4cfd9ba241803ce4e6a3f1f9f295d21c0/) | TokenStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

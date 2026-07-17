@@ -62,13 +62,13 @@ The protocol comprises 3 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| RollupProcessor | unknown | ethereum | n/a | [`0x737901...42a2ba`](./contracts/ethereum-1/0x737901bea3eeb88459df9ef1be8ff3ae1b42a2ba/) | ✅ Audited |
+| RollupProcessor | unknown | ethereum | n/a | [`0x737901bea3eeb88459df9ef1be8ff3ae1b42a2ba`](./contracts/ethereum-1/0x737901bea3eeb88459df9ef1be8ff3ae1b42a2ba/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| RollupProcessorV3 | unknown | ethereum | n/a | [`0xff1f2b...680455`](./contracts/ethereum-1/0xff1f2b4adb9df6fc8eafecdcbf96a2b351680455/) | ⚠️ Unaudited |
+| RollupProcessorV3 | unknown | ethereum | n/a | [`0xff1f2b4adb9df6fc8eafecdcbf96a2b351680455`](./contracts/ethereum-1/0xff1f2b4adb9df6fc8eafecdcbf96a2b351680455/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -88,8 +88,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x743178...f1a61a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x8eefd2...41c784` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x7431786f99c62df3d06d417cc4a5bf1d2bf1a61a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x8eefd2d44952ddcb94bb383d4c0aa670f941c784` | ❓ Unverified |
 
 ## Audit Inventory
 

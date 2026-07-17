@@ -48,8 +48,8 @@ The pinned logic-topography run contains 11 contract row(s) across arbitrum, bas
 
 ### Forked Contracts
 
-**BookManager** (`0x8ca3a6...380112`, chain 8453)
-Origin: sonic-market (`0xd4ad5e...17c636`)
+**BookManager** (`0x8ca3a6f4a6260661fcb9a25584c796a1fa380112`, chain 8453)
+Origin: sonic-market (`0xd4ad5ed9e1436904624b6db8b1be31f36317c636`)
 Containment: 100.0% - 31 functions inherited
 Centroid audit status: pending_validation
 
@@ -57,8 +57,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**Controller** (`0x2610dc...520bca`, chain 8453)
-Origin: sonic-market (`0xca6c15...2eadd1`)
+**Controller** (`0x2610dc1f2e625e57f07b0ce17152b0f4c6520bca`, chain 8453)
+Origin: sonic-market (`0xca6c15b7b03ca69087b85b8ea690ed44a92eadd1`)
 Containment: 100.0% - 15 functions inherited
 Centroid audit status: pending_validation
 
@@ -68,31 +68,31 @@ Removals (removed from original): none
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x19b68a...de8e83`, chain 143)
-- UnnamedContract (`0x54cd53...4e9e7d`, chain 143)
-- UnnamedContract (`0x6657d1...be8ccc`, chain 143)
-- UnnamedContract (`0xb09684...5da873`, chain 143)
-- UnnamedContract (`0xb1251b...c9d242`, chain 143)
-- UnnamedContract (`0xcbd3c0...46195b`, chain 143)
-- UnnamedContract (`0xe424c2...68d238`, chain 143)
-- UnnamedContract (`0x46107e...52bd47`, chain 146)
-- UnnamedContract (`0x466795...0803a7`, chain 146)
-- UnnamedContract (`0x920f77...7d05b8`, chain 146)
-- UnnamedContract (`0xd4ad5e...17c636`, chain 146)
-- UnnamedContract (`0xdd30f8...95554f`, chain 146)
-- UnnamedContract (`0xe81e78...da5613`, chain 146)
-- UnnamedContract (`0xf7e728...ac9a09`, chain 146)
-- UnnamedContract (`0x21bb87...2ad7e1`, chain 42161)
-- UnnamedContract (`0x536913...159830`, chain 42161)
-- UnnamedContract (`0x74ffe4...8c2fdf`, chain 42161)
-- UnnamedContract (`0xc6ed4b...f2362e`, chain 42161)
-- UnnamedContract (`0xfe87e2...83a76d`, chain 42161)
-- UnnamedContract (`0x067311...3ae03b`, chain 80094)
-- UnnamedContract (`0x4abb86...0a49a8`, chain 80094)
-- UnnamedContract (`0xded58e...75d1e4`, chain 80094)
-- BookViewer (`0xd0175b...cd7309`, chain 8453)
-- ERC1967Proxy (`0xcd166f...78f029`, chain 8453)
-- Minter (`0x2092a5...0c59d1`, chain 8453)
+- UnnamedContract (`0x19b68a2b909d96c05b623050c276fbd457de8e83`, chain 143)
+- UnnamedContract (`0x54cd5332b1689b6506ce089da5651b1a814e9e7d`, chain 143)
+- UnnamedContract (`0x6657d192273731c3cac646cc82d5f28d0cbe8ccc`, chain 143)
+- UnnamedContract (`0xb09684f5486d1af80699bbc27f14dd5a905da873`, chain 143)
+- UnnamedContract (`0xb1251bf43bb7de76de7e6ce7b64af843dfc9d242`, chain 143)
+- UnnamedContract (`0xcbd3c0b81a9a36356a3669a7f60a0d2f0846195b`, chain 143)
+- UnnamedContract (`0xe424c211e2ed8a5b6d1c57fa493c41715568d238`, chain 143)
+- UnnamedContract (`0x46107ec44112675689053b96aea2127fd952bd47`, chain 146)
+- UnnamedContract (`0x466795c0eae3c44a6dcbb6db0534f7019e0803a7`, chain 146)
+- UnnamedContract (`0x920f77aebf215e611abacd0fd51a87f3927d05b8`, chain 146)
+- UnnamedContract (`0xd4ad5ed9e1436904624b6db8b1be31f36317c636`, chain 146)
+- UnnamedContract (`0xdd30f831beb51fbf33e3d579e5529d3b1495554f`, chain 146)
+- UnnamedContract (`0xe81e78f946e34d13dcb6fd46a78713e0ffda5613`, chain 146)
+- UnnamedContract (`0xf7e7285ebe537fdf1c1c4432aa1863721eac9a09`, chain 146)
+- UnnamedContract (`0x21bb8709fe339b227795809b0cb8eb5a152ad7e1`, chain 42161)
+- UnnamedContract (`0x53691300635ce3ae575f91a186c2248a0e159830`, chain 42161)
+- UnnamedContract (`0x74ffe45757db60b24a7574b3b5948dad368c2fdf`, chain 42161)
+- UnnamedContract (`0xc6ed4be4a69fd23eb6ab9c6f8b787748def2362e`, chain 42161)
+- UnnamedContract (`0xfe87e2cc08a8801a12105d862aee71470883a76d`, chain 42161)
+- UnnamedContract (`0x06731177b4fa6df2b14a714736828e373e3ae03b`, chain 80094)
+- UnnamedContract (`0x4abb86f499f53e2b1f52302b2ba7bbb0a90a49a8`, chain 80094)
+- UnnamedContract (`0xded58e263087f5b45d878bd9cf599b7a1a75d1e4`, chain 80094)
+- BookViewer (`0xd0175b064dc022fadf46bba7604dad5653cd7309`, chain 8453)
+- ERC1967Proxy (`0xcd166f67f13c7d5c4b899fb1c980dceff278f029`, chain 8453)
+- Minter (`0x2092a58c47f3444c82871ecdd5ea1e96c80c59d1`, chain 8453)
 
 ## Contract Surface Quality
 
@@ -138,22 +138,22 @@ Removals (removed from original): none
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| LiquidityVault | unknown | project_anchor | own_supporting | 1 | base | unit-232083 | 2 deployments: base `0xbfd645...189449`; base `0xca1f6e...c0b834` | ✅ Audited |
-| SimpleOracleStrategy | unknown | project_anchor | own_supporting | 1 | base | unit-232081 | 2 deployments: base `0x2913c4...b9246a`; base `0x29e071...5f2777` | ✅ Audited |
+| LiquidityVault | unknown | project_anchor | own_supporting | 1 | base | unit-232083 | 2 deployments: base `0xbfd645ffb504e968ae53869c9fdcbcb8d1189449`; base `0xca1f6e4ae690d06e3bf943b9019c5ca060c0b834` | ✅ Audited |
+| SimpleOracleStrategy | unknown | project_anchor | own_supporting | 1 | base | unit-232081 | 2 deployments: base `0x2913c40db3509a4bc3059ba79c5c6013efb9246a`; base `0x29e07197ccf70d0ac6cb0a3c307627819f5f2777` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (9)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BookManager | governance | project_anchor | own_supporting | 0 | base | unit-232080 | `0x8ca3a6...380112` | ⚠️ Unaudited |
-| BookViewer | unknown | project_anchor | own_supporting | 1 | base | unit-232084 | 2 deployments: base `0xcd166f...78f029`; base `0xd0175b...cd7309` | ⚠️ Unaudited |
-| Controller | governance | project_anchor | own_supporting | 0 | base | unit-232079 | `0x2610dc...520bca` | ⚠️ Unaudited |
-| LiquidityVault | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x5b351c...8c06b5`; base `0xfe87e2...83a76d` | ⚠️ Unaudited |
-| Minter | operational_periphery | project_anchor | own_supporting | 0 | base | unit-232078 | `0x2092a5...0c59d1` | ⚠️ Unaudited |
-| Minter | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xc8f98f...5f098f` | ⚠️ Unaudited |
-| Operator | unknown | project_anchor | own_supporting | 1 | base | unit-232082 | 2 deployments: base `0x00f7a0...308625`; base `0x82b54a...25a563` | ⚠️ Unaudited |
-| Operator | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x7ba560...cb63fb`; base `0xe5141a...8d1a8b` | ⚠️ Unaudited |
-| SimpleOracleStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x063150...b5fb58`; base `0x454b85...6fe892` | ⚠️ Unaudited |
+| BookManager | governance | project_anchor | own_supporting | 0 | base | unit-232080 | `0x8ca3a6f4a6260661fcb9a25584c796a1fa380112` | ⚠️ Unaudited |
+| BookViewer | unknown | project_anchor | own_supporting | 1 | base | unit-232084 | 2 deployments: base `0xcd166f67f13c7d5c4b899fb1c980dceff278f029`; base `0xd0175b064dc022fadf46bba7604dad5653cd7309` | ⚠️ Unaudited |
+| Controller | governance | project_anchor | own_supporting | 0 | base | unit-232079 | `0x2610dc1f2e625e57f07b0ce17152b0f4c6520bca` | ⚠️ Unaudited |
+| LiquidityVault | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x5b351c9eed322616f76b8669176412e1808c06b5`; base `0xfe87e2cc08a8801a12105d862aee71470883a76d` | ⚠️ Unaudited |
+| Minter | operational_periphery | project_anchor | own_supporting | 0 | base | unit-232078 | `0x2092a58c47f3444c82871ecdd5ea1e96c80c59d1` | ⚠️ Unaudited |
+| Minter | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xc8f98f60ce54e72ccbb18aa8628fa7a2885f098f` | ⚠️ Unaudited |
+| Operator | unknown | project_anchor | own_supporting | 1 | base | unit-232082 | 2 deployments: base `0x00f7a0c7e66f0e3a10d9e980e0854ebe0e308625`; base `0x82b54a5f07a63d2d2d61a92b1a75839aac25a563` | ⚠️ Unaudited |
+| Operator | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x7ba560d09bd5379216f1e4393906701210cb63fb`; base `0xe5141a7287582fd1cc178847f8fc3688198d1a8b` | ⚠️ Unaudited |
+| SimpleOracleStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x063150b24807e836eacf8c8420b8922d10b5fb58`; base `0x454b85d03ffbf86c2bfb0dacd21d2687d36fe892` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -173,33 +173,33 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-232056 | `0x19b68a...de8e83` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-232057 | `0x54cd53...4e9e7d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-232058 | `0x6657d1...be8ccc` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-232059 | `0xb09684...5da873` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-232060 | `0xb1251b...c9d242` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-232061 | `0xcbd3c0...46195b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-232062 | `0xe424c2...68d238` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-232063 | `0x46107e...52bd47` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-232064 | `0x466795...0803a7` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-232065 | `0x920f77...7d05b8` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-232066 | `0xd4ad5e...17c636` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-232067 | `0xdd30f8...95554f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-232068 | `0xe81e78...da5613` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-232069 | `0xf7e728...ac9a09` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x000000...64c133` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x6657d1...be8ccc` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x976f96...cd1efd` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xc23995...3e5ccc` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-232070 | `0x21bb87...2ad7e1` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-232071 | `0x536913...159830` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-232072 | `0x74ffe4...8c2fdf` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-232073 | `0xc6ed4b...f2362e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-232074 | `0xfe87e2...83a76d` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | berachain | n/a | `0x000000...000000` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-232075 | `0x067311...3ae03b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-232076 | `0x4abb86...0a49a8` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-232077 | `0xded58e...75d1e4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-232056 | `0x19b68a2b909d96c05b623050c276fbd457de8e83` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-232057 | `0x54cd5332b1689b6506ce089da5651b1a814e9e7d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-232058 | `0x6657d192273731c3cac646cc82d5f28d0cbe8ccc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-232059 | `0xb09684f5486d1af80699bbc27f14dd5a905da873` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-232060 | `0xb1251bf43bb7de76de7e6ce7b64af843dfc9d242` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-232061 | `0xcbd3c0b81a9a36356a3669a7f60a0d2f0846195b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-232062 | `0xe424c211e2ed8a5b6d1c57fa493c41715568d238` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-232063 | `0x46107ec44112675689053b96aea2127fd952bd47` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-232064 | `0x466795c0eae3c44a6dcbb6db0534f7019e0803a7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-232065 | `0x920f77aebf215e611abacd0fd51a87f3927d05b8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-232066 | `0xd4ad5ed9e1436904624b6db8b1be31f36317c636` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-232067 | `0xdd30f831beb51fbf33e3d579e5529d3b1495554f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-232068 | `0xe81e78f946e34d13dcb6fd46a78713e0ffda5613` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-232069 | `0xf7e7285ebe537fdf1c1c4432aa1863721eac9a09` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x000000000000bb1b11e5ac8099e92e366b64c133` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x6657d192273731c3cac646cc82d5f28d0cbe8ccc` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x976f96c87ff686ced0c5dc575476463e8acd1efd` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xc239950c389b1ac5c79a336705144cd46d3e5ccc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-232070 | `0x21bb8709fe339b227795809b0cb8eb5a152ad7e1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-232071 | `0x53691300635ce3ae575f91a186c2248a0e159830` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-232072 | `0x74ffe45757db60b24a7574b3b5948dad368c2fdf` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-232073 | `0xc6ed4be4a69fd23eb6ab9c6f8b787748def2362e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-232074 | `0xfe87e2cc08a8801a12105d862aee71470883a76d` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | berachain | n/a | `0x0000000000000000000000000000000000000000` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-232075 | `0x06731177b4fa6df2b14a714736828e373e3ae03b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-232076 | `0x4abb86f499f53e2b1f52302b2ba7bbb0a90a49a8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-232077 | `0xded58e263087f5b45d878bd9cf599b7a1a75d1e4` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -233,11 +233,11 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| Clober_Rebalancer_v03.pdf | Rebalancer | ambiguous — not counted | ERC1967Proxy (proxy) (alternative) `0xca1f6e...c0b834` — deployed 2026-01-26 18:07:01+03 — liveness: live (proxy_unit_reachable)<br>0xb09684… (alternative) `0xb09684...5da873` — liveness: live (current_address_book_code)<br>0x46107e… (alternative) `0x46107e...52bd47` — liveness: live (current_address_book_code)<br>0x21bb87… (alternative) `0x21bb87...2ad7e1` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| Clober_Rebalancer_v03.pdf | SimpleOracleStrategy | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x29e071...5f2777` — deployed 2026-01-26 18:07:01+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Clober_Rebalancer_v03.pdf | Rebalancer | ambiguous — not counted | ERC1967Proxy (proxy) (alternative) `0xca1f6e4ae690d06e3bf943b9019c5ca060c0b834` — deployed 2026-01-26 18:07:01+03 — liveness: live (proxy_unit_reachable)<br>0xb09684… (alternative) `0xb09684f5486d1af80699bbc27f14dd5a905da873` — liveness: live (current_address_book_code)<br>0x46107e… (alternative) `0x46107ec44112675689053b96aea2127fd952bd47` — liveness: live (current_address_book_code)<br>0x21bb87… (alternative) `0x21bb8709fe339b227795809b0cb8eb5a152ad7e1` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Clober_Rebalancer_v03.pdf | SimpleOracleStrategy | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x29e07197ccf70d0ac6cb0a3c307627819f5f2777` — deployed 2026-01-26 18:07:01+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Clober_Rebalancer_v03.pdf | ERC6909Supply | unmatched — not counted | — | listed in scope | no |
-| Clober_V2.pdf | Controller | ambiguous — not counted | 0x536913… (alternative) `0x536913...159830` — liveness: live (current_address_book_code)<br>0x067311… (alternative) `0x067311...3ae03b` — liveness: live (current_address_book_code)<br>Controller (alternative) `0x2610dc...520bca` — deployed 2026-01-20 16:28:07+03 — liveness: live (current_address_book_code)<br>0x19b68a… (alternative) `0x19b68a...de8e83` — liveness: live (current_address_book_code)<br>0x920f77… (alternative) `0x920f77...7d05b8` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| Clober_V2.pdf | BookManager | ambiguous — not counted | BookManager (alternative) `0x8ca3a6...380112` — deployed 2026-01-17 20:35:53+03 — liveness: live (proxy_unit_reachable)<br>0xded58e… (alternative) `0xded58e...75d1e4` — liveness: live (current_address_book_code)<br>0xd4ad5e… (alternative) `0xd4ad5e...17c636` — liveness: live (current_address_book_code)<br>0x74ffe4… (alternative) `0x74ffe4...8c2fdf` — liveness: live (current_address_book_code)<br>0x6657d1… (alternative) `0x6657d1...be8ccc` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Clober_V2.pdf | Controller | ambiguous — not counted | 0x536913… (alternative) `0x53691300635ce3ae575f91a186c2248a0e159830` — liveness: live (current_address_book_code)<br>0x067311… (alternative) `0x06731177b4fa6df2b14a714736828e373e3ae03b` — liveness: live (current_address_book_code)<br>Controller (alternative) `0x2610dc1f2e625e57f07b0ce17152b0f4c6520bca` — deployed 2026-01-20 16:28:07+03 — liveness: live (current_address_book_code)<br>0x19b68a… (alternative) `0x19b68a2b909d96c05b623050c276fbd457de8e83` — liveness: live (current_address_book_code)<br>0x920f77… (alternative) `0x920f77aebf215e611abacd0fd51a87f3927d05b8` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Clober_V2.pdf | BookManager | ambiguous — not counted | BookManager (alternative) `0x8ca3a6f4a6260661fcb9a25584c796a1fa380112` — deployed 2026-01-17 20:35:53+03 — liveness: live (proxy_unit_reachable)<br>0xded58e… (alternative) `0xded58e263087f5b45d878bd9cf599b7a1a75d1e4` — liveness: live (current_address_book_code)<br>0xd4ad5e… (alternative) `0xd4ad5ed9e1436904624b6db8b1be31f36317c636` — liveness: live (current_address_book_code)<br>0x74ffe4… (alternative) `0x74ffe45757db60b24a7574b3b5948dad368c2fdf` — liveness: live (current_address_book_code)<br>0x6657d1… (alternative) `0x6657d192273731c3cac646cc82d5f28d0cbe8ccc` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | Clober_V2.pdf | BaseHook | unmatched — not counted | — | listed in scope | no |
 | Clober_V2.pdf | BountyPlatform | unmatched — not counted | — | listed in scope | no |
 | Clober_V2.pdf | Book | unmatched — not counted | — | listed in scope | no |
@@ -251,21 +251,21 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Clober_V2.pdf | SignificantBit | unmatched — not counted | — | listed in scope | no |
 | Clober_V2.pdf | Tick | unmatched — not counted | — | listed in scope | no |
 | Clober_V2.pdf | TotalClaimableMap | unmatched — not counted | — | listed in scope | no |
-| Clober_Liquidity_Vault_v2_Audit_Report_by_Trust_Security-7d8bcf5e7f6b488122f7974aef1d70c7.pdf | Rebalancer | ambiguous — not counted | ERC1967Proxy (proxy) (alternative) `0xca1f6e...c0b834` — deployed 2026-01-26 18:07:01+03 — liveness: live (proxy_unit_reachable)<br>0xb09684… (alternative) `0xb09684...5da873` — liveness: live (current_address_book_code)<br>0x46107e… (alternative) `0x46107e...52bd47` — liveness: live (current_address_book_code)<br>0x21bb87… (alternative) `0x21bb87...2ad7e1` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| Clober_Liquidity_Vault_v2_Audit_Report_by_Trust_Security-7d8bcf5e7f6b488122f7974aef1d70c7.pdf | SimpleOracleStrategy | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x29e071...5f2777` — deployed 2026-01-26 18:07:01+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 2025_1_Clober_LiquidityVault-50ac1ebac2c19b9449389bcdf1c788bf.pdf | Minter | ambiguous — not counted | 0x466795… (alternative) `0x466795...0803a7` — liveness: live (current_address_book_code)<br>0xfe87e2… (alternative) `0xfe87e2...83a76d` — liveness: live (current_address_book_code)<br>0xb1251b… (alternative) `0xb1251b...c9d242` — liveness: live (current_address_book_code)<br>Minter (alternative) `0x2092a5...0c59d1` — deployed 2026-01-26 18:07:01+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| 2025_1_Clober_LiquidityVault-50ac1ebac2c19b9449389bcdf1c788bf.pdf | Operator | ambiguous — not counted | ERC1967Proxy (proxy) (alternative) `0x00f7a0...308625` — deployed 2026-01-26 18:07:01+03 — liveness: live (current_address_book_code)<br>0xf7e728… (alternative) `0xf7e728...ac9a09` — liveness: live (current_address_book_code)<br>0xcbd3c0… (alternative) `0xcbd3c0...46195b` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| 2025_1_Clober_LiquidityVault-50ac1ebac2c19b9449389bcdf1c788bf.pdf | Rebalancer | ambiguous — not counted | ERC1967Proxy (proxy) (alternative) `0xca1f6e...c0b834` — deployed 2026-01-26 18:07:01+03 — liveness: live (proxy_unit_reachable)<br>0xb09684… (alternative) `0xb09684...5da873` — liveness: live (current_address_book_code)<br>0x46107e… (alternative) `0x46107e...52bd47` — liveness: live (current_address_book_code)<br>0x21bb87… (alternative) `0x21bb87...2ad7e1` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| 2025_1_Clober_LiquidityVault-50ac1ebac2c19b9449389bcdf1c788bf.pdf | SimpleOracleStrategy | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x29e071...5f2777` — deployed 2026-01-26 18:07:01+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Clober_Liquidity_Vault_v2_Audit_Report_by_Trust_Security-7d8bcf5e7f6b488122f7974aef1d70c7.pdf | Rebalancer | ambiguous — not counted | ERC1967Proxy (proxy) (alternative) `0xca1f6e4ae690d06e3bf943b9019c5ca060c0b834` — deployed 2026-01-26 18:07:01+03 — liveness: live (proxy_unit_reachable)<br>0xb09684… (alternative) `0xb09684f5486d1af80699bbc27f14dd5a905da873` — liveness: live (current_address_book_code)<br>0x46107e… (alternative) `0x46107ec44112675689053b96aea2127fd952bd47` — liveness: live (current_address_book_code)<br>0x21bb87… (alternative) `0x21bb8709fe339b227795809b0cb8eb5a152ad7e1` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Clober_Liquidity_Vault_v2_Audit_Report_by_Trust_Security-7d8bcf5e7f6b488122f7974aef1d70c7.pdf | SimpleOracleStrategy | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x29e07197ccf70d0ac6cb0a3c307627819f5f2777` — deployed 2026-01-26 18:07:01+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2025_1_Clober_LiquidityVault-50ac1ebac2c19b9449389bcdf1c788bf.pdf | Minter | ambiguous — not counted | 0x466795… (alternative) `0x466795c0eae3c44a6dcbb6db0534f7019e0803a7` — liveness: live (current_address_book_code)<br>0xfe87e2… (alternative) `0xfe87e2cc08a8801a12105d862aee71470883a76d` — liveness: live (current_address_book_code)<br>0xb1251b… (alternative) `0xb1251bf43bb7de76de7e6ce7b64af843dfc9d242` — liveness: live (current_address_book_code)<br>Minter (alternative) `0x2092a58c47f3444c82871ecdd5ea1e96c80c59d1` — deployed 2026-01-26 18:07:01+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| 2025_1_Clober_LiquidityVault-50ac1ebac2c19b9449389bcdf1c788bf.pdf | Operator | ambiguous — not counted | ERC1967Proxy (proxy) (alternative) `0x00f7a0c7e66f0e3a10d9e980e0854ebe0e308625` — deployed 2026-01-26 18:07:01+03 — liveness: live (current_address_book_code)<br>0xf7e728… (alternative) `0xf7e7285ebe537fdf1c1c4432aa1863721eac9a09` — liveness: live (current_address_book_code)<br>0xcbd3c0… (alternative) `0xcbd3c0b81a9a36356a3669a7f60a0d2f0846195b` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| 2025_1_Clober_LiquidityVault-50ac1ebac2c19b9449389bcdf1c788bf.pdf | Rebalancer | ambiguous — not counted | ERC1967Proxy (proxy) (alternative) `0xca1f6e4ae690d06e3bf943b9019c5ca060c0b834` — deployed 2026-01-26 18:07:01+03 — liveness: live (proxy_unit_reachable)<br>0xb09684… (alternative) `0xb09684f5486d1af80699bbc27f14dd5a905da873` — liveness: live (current_address_book_code)<br>0x46107e… (alternative) `0x46107ec44112675689053b96aea2127fd952bd47` — liveness: live (current_address_book_code)<br>0x21bb87… (alternative) `0x21bb8709fe339b227795809b0cb8eb5a152ad7e1` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| 2025_1_Clober_LiquidityVault-50ac1ebac2c19b9449389bcdf1c788bf.pdf | SimpleOracleStrategy | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x29e07197ccf70d0ac6cb0a3c307627819f5f2777` — deployed 2026-01-26 18:07:01+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2025_1_Clober_LiquidityVault-50ac1ebac2c19b9449389bcdf1c788bf.pdf | ChainlinkOracle | unmatched — not counted | — | listed in scope table | no |
 | 2025_1_Clober_LiquidityVault-50ac1ebac2c19b9449389bcdf1c788bf.pdf | DatastreamOracle | unmatched — not counted | — | listed in scope table | no |
-| 2026_4_Clober_LiquidityVault-a2cb42bf934d68038d8d46230bd6615f.pdf | Operator | ambiguous — not counted | ERC1967Proxy (proxy) (alternative) `0x00f7a0...308625` — deployed 2026-01-26 18:07:01+03 — liveness: live (current_address_book_code)<br>0xf7e728… (alternative) `0xf7e728...ac9a09` — liveness: live (current_address_book_code)<br>0xcbd3c0… (alternative) `0xcbd3c0...46195b` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| 2026_4_Clober_LiquidityVault-a2cb42bf934d68038d8d46230bd6615f.pdf | LiquidityVault | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xca1f6e...c0b834` — deployed 2026-01-26 18:07:01+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 2026_4_Clober_LiquidityVault-a2cb42bf934d68038d8d46230bd6615f.pdf | SimpleOracleStrategy | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x29e071...5f2777` — deployed 2026-01-26 18:07:01+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2026_4_Clober_LiquidityVault-a2cb42bf934d68038d8d46230bd6615f.pdf | Operator | ambiguous — not counted | ERC1967Proxy (proxy) (alternative) `0x00f7a0c7e66f0e3a10d9e980e0854ebe0e308625` — deployed 2026-01-26 18:07:01+03 — liveness: live (current_address_book_code)<br>0xf7e728… (alternative) `0xf7e7285ebe537fdf1c1c4432aa1863721eac9a09` — liveness: live (current_address_book_code)<br>0xcbd3c0… (alternative) `0xcbd3c0b81a9a36356a3669a7f60a0d2f0846195b` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| 2026_4_Clober_LiquidityVault-a2cb42bf934d68038d8d46230bd6615f.pdf | LiquidityVault | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xca1f6e4ae690d06e3bf943b9019c5ca060c0b834` — deployed 2026-01-26 18:07:01+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2026_4_Clober_LiquidityVault-a2cb42bf934d68038d8d46230bd6615f.pdf | SimpleOracleStrategy | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x29e07197ccf70d0ac6cb0a3c307627819f5f2777` — deployed 2026-01-26 18:07:01+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2026_4_Clober_LiquidityVault-a2cb42bf934d68038d8d46230bd6615f.pdf | ChainlinkOracle | unmatched — not counted | — | listed in scope | no |
 | 2026_4_Clober_LiquidityVault-a2cb42bf934d68038d8d46230bd6615f.pdf | DatastreamOracle | unmatched — not counted | — | listed in scope | no |
-| Clober_V2-fc545ee25635e5ef6d3a73c0991461eb.pdf | Controller | ambiguous — not counted | 0x536913… (alternative) `0x536913...159830` — liveness: live (current_address_book_code)<br>0x067311… (alternative) `0x067311...3ae03b` — liveness: live (current_address_book_code)<br>Controller (alternative) `0x2610dc...520bca` — deployed 2026-01-20 16:28:07+03 — liveness: live (current_address_book_code)<br>0x19b68a… (alternative) `0x19b68a...de8e83` — liveness: live (current_address_book_code)<br>0x920f77… (alternative) `0x920f77...7d05b8` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| Clober_V2-fc545ee25635e5ef6d3a73c0991461eb.pdf | BookManager | ambiguous — not counted | BookManager (alternative) `0x8ca3a6...380112` — deployed 2026-01-17 20:35:53+03 — liveness: live (proxy_unit_reachable)<br>0xded58e… (alternative) `0xded58e...75d1e4` — liveness: live (current_address_book_code)<br>0xd4ad5e… (alternative) `0xd4ad5e...17c636` — liveness: live (current_address_book_code)<br>0x74ffe4… (alternative) `0x74ffe4...8c2fdf` — liveness: live (current_address_book_code)<br>0x6657d1… (alternative) `0x6657d1...be8ccc` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Clober_V2-fc545ee25635e5ef6d3a73c0991461eb.pdf | Controller | ambiguous — not counted | 0x536913… (alternative) `0x53691300635ce3ae575f91a186c2248a0e159830` — liveness: live (current_address_book_code)<br>0x067311… (alternative) `0x06731177b4fa6df2b14a714736828e373e3ae03b` — liveness: live (current_address_book_code)<br>Controller (alternative) `0x2610dc1f2e625e57f07b0ce17152b0f4c6520bca` — deployed 2026-01-20 16:28:07+03 — liveness: live (current_address_book_code)<br>0x19b68a… (alternative) `0x19b68a2b909d96c05b623050c276fbd457de8e83` — liveness: live (current_address_book_code)<br>0x920f77… (alternative) `0x920f77aebf215e611abacd0fd51a87f3927d05b8` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Clober_V2-fc545ee25635e5ef6d3a73c0991461eb.pdf | BookManager | ambiguous — not counted | BookManager (alternative) `0x8ca3a6f4a6260661fcb9a25584c796a1fa380112` — deployed 2026-01-17 20:35:53+03 — liveness: live (proxy_unit_reachable)<br>0xded58e… (alternative) `0xded58e263087f5b45d878bd9cf599b7a1a75d1e4` — liveness: live (current_address_book_code)<br>0xd4ad5e… (alternative) `0xd4ad5ed9e1436904624b6db8b1be31f36317c636` — liveness: live (current_address_book_code)<br>0x74ffe4… (alternative) `0x74ffe45757db60b24a7574b3b5948dad368c2fdf` — liveness: live (current_address_book_code)<br>0x6657d1… (alternative) `0x6657d192273731c3cac646cc82d5f28d0cbe8ccc` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | Clober_V2-fc545ee25635e5ef6d3a73c0991461eb.pdf | BaseHook | unmatched — not counted | — | listed in scope | no |
 | Clober_V2-fc545ee25635e5ef6d3a73c0991461eb.pdf | BountyPlatform | unmatched — not counted | — | listed in scope | no |
 | Clober_V2-fc545ee25635e5ef6d3a73c0991461eb.pdf | Book | unmatched — not counted | — | listed in scope | no |
@@ -315,11 +315,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | `0x8ca3a6...380112` | BookManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xcd166f...78f029` | BookViewer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x2610dc...520bca` | Controller | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x2092a5...0c59d1` | Minter | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x00f7a0...308625` | Operator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x8ca3a6f4a6260661fcb9a25584c796a1fa380112` | BookManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xcd166f67f13c7d5c4b899fb1c980dceff278f029` | BookViewer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x2610dc1f2e625e57f07b0ce17152b0f4c6520bca` | Controller | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x2092a58c47f3444c82871ecdd5ea1e96c80c59d1` | Minter | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x00f7a0c7e66f0e3a10d9e980e0854ebe0e308625` | Operator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

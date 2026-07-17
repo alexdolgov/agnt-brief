@@ -61,7 +61,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| POOF | unknown | celo | n/a | [`0x00400f...05c762`](./contracts/celo-42220/0x00400fcbf0816bebb94654259de7273f4a05c762/) | ⚠️ Unaudited |
+| POOF | unknown | celo | n/a | [`0x00400fcbf0816bebb94654259de7273f4a05c762`](./contracts/celo-42220/0x00400fcbf0816bebb94654259de7273f4a05c762/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -92,7 +92,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| celo | [`0x00400f...05c762`](./contracts/celo-42220/0x00400fcbf0816bebb94654259de7273f4a05c762/) | POOF | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | [`0x00400fcbf0816bebb94654259de7273f4a05c762`](./contracts/celo-42220/0x00400fcbf0816bebb94654259de7273f4a05c762/) | POOF | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

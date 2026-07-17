@@ -52,11 +52,11 @@ The pinned logic-topography run contains 5 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- SherBuy (`0xf8583f...e262a6`, chain 1)
-- SherClaim (`0x7289c6...02bdd3`, chain 1)
-- Sherlock (`0x0865a8...83eabf`, chain 1)
-- SherlockClaimManager (`0xfeedd2...25eb84`, chain 1)
-- SherlockProtocolManager (`0x3d0b8a...caa1d3`, chain 1)
+- SherBuy (`0xf8583f22c2f6f8cd27f62879a0fb4319bce262a6`, chain 1)
+- SherClaim (`0x7289c61c75dcdb8fe4df0b937c08c9c40902bdd3`, chain 1)
+- Sherlock (`0x0865a889183039689034da55c1fd12af5083eabf`, chain 1)
+- SherlockClaimManager (`0xfeedd254ae4b7c44a0472bb836b813ce4625eb84`, chain 1)
+- SherlockProtocolManager (`0x3d0b8a0a10835ab9b0f0beb54c5400b8aacaa1d3`, chain 1)
 
 ## Contract Surface Quality
 
@@ -101,41 +101,41 @@ The pinned logic-topography run contains 5 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Sherlock | unknown | project_anchor | own_supporting | 0 | ethereum | unit-254699 | `0x0865a8...83eabf` | ✅ Audited |
-| SherlockClaimManager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-254703 | `0xfeedd2...25eb84` | ✅ Audited |
-| SherlockProtocolManager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-254700 | `0x3d0b8a...caa1d3` | ✅ Audited |
+| Sherlock | unknown | project_anchor | own_supporting | 0 | ethereum | unit-254699 | `0x0865a889183039689034da55c1fd12af5083eabf` | ✅ Audited |
+| SherlockClaimManager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-254703 | `0xfeedd254ae4b7c44a0472bb836b813ce4625eb84` | ✅ Audited |
+| SherlockProtocolManager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-254700 | `0x3d0b8a0a10835ab9b0f0beb54c5400b8aacaa1d3` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (27)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AlphaBetaEqualDepositMaxSplitter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x01fe7f...0ee27d` | ⚠️ Unaudited |
-| AlphaBetaEqualDepositSplitter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7e0049...7705b1` | ⚠️ Unaudited |
-| EulerStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc124a8...b49026` | ⚠️ Unaudited |
-| ForeignLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xde229e...793005` | ⚠️ Unaudited |
-| Gov | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2776fb...97fc3f` | ⚠️ Unaudited |
-| GovDev | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x314752...f133a1` | ⚠️ Unaudited |
-| InfoStorage | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbfa53d...d7fc70` | ⚠️ Unaudited |
-| LibPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xedda10...35ab7e` | ⚠️ Unaudited |
-| LibSherX | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x22b6d0...c53b1e` | ⚠️ Unaudited |
-| Manager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x68a442...a8d555` | ⚠️ Unaudited |
-| MaplePlaceholderStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x63146d...16a6eb` | ⚠️ Unaudited |
-| MapleStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb2acd0...3f7956` | ⚠️ Unaudited |
-| MasterStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1e8be9...bdd507` | ⚠️ Unaudited |
-| MerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0b222a...d16e59` | ⚠️ Unaudited |
-| NativeLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xca1bf9...9a2f43` | ⚠️ Unaudited |
-| Payout | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc11843...1c23f9` | ⚠️ Unaudited |
-| PoolBase | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4efe56...b4ca40` | ⚠️ Unaudited |
-| PoolDevOnly | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8ca057...067134` | ⚠️ Unaudited |
-| PoolOpen | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xce9dd6...b5ce22` | ⚠️ Unaudited |
-| PoolStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3b354a...65c5e4` | ⚠️ Unaudited |
-| SherBuy | unknown | project_anchor | own_supporting | 0 | ethereum | unit-254702 | `0xf8583f...e262a6` | ⚠️ Unaudited |
-| SherClaim | unknown | project_anchor | own_supporting | 0 | ethereum | unit-254701 | `0x7289c6...02bdd3` | ⚠️ Unaudited |
-| SherDistributionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3264bb...eb5939` | ⚠️ Unaudited |
-| SherDistributionManagerEmpty | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5775f3...fdb31b` | ⚠️ Unaudited |
-| SherX | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf60466...6ee88b` | ⚠️ Unaudited |
-| SherXERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xeafd0c...b9294a` | ⚠️ Unaudited |
-| TimelockController | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0x92aeff...e358c4` | ⚠️ Unaudited |
+| AlphaBetaEqualDepositMaxSplitter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x01fe7ff1162d4b4ab41bdaf99296644b7b0ee27d` | ⚠️ Unaudited |
+| AlphaBetaEqualDepositSplitter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7e0049866879151480d9ec01391bbf713f7705b1` | ⚠️ Unaudited |
+| EulerStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc124a8088c39625f125655152a168baa86b49026` | ⚠️ Unaudited |
+| ForeignLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xde229e52bdb72c449db7912968e51d9d5e793005` | ⚠️ Unaudited |
+| Gov | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2776fb23394693829f1339154cc149391397fc3f` | ⚠️ Unaudited |
+| GovDev | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3147528e778075e216aabc583ac7b823e4f133a1` | ⚠️ Unaudited |
+| InfoStorage | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbfa53d098d7063ddcc39a45ea6f8c290fcd7fc70` | ⚠️ Unaudited |
+| LibPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xedda10a93767b07f6913cb01479f6418eb35ab7e` | ⚠️ Unaudited |
+| LibSherX | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x22b6d0df02ff7480c77d73a755e5e5ecdac53b1e` | ⚠️ Unaudited |
+| Manager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x68a442cff69bb6795528a22e2974b74c0ba8d555` | ⚠️ Unaudited |
+| MaplePlaceholderStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x63146dbb7a870958120fcdd66da239e6c816a6eb` | ⚠️ Unaudited |
+| MapleStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb2acd0214f87d217a2ef148aa4a5aba71d3f7956` | ⚠️ Unaudited |
+| MasterStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1e8be946370a99019e323998acd37a1206bdd507` | ⚠️ Unaudited |
+| MerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0b222a6aa23fb5cff3ef7e5e5857aa3673d16e59` | ⚠️ Unaudited |
+| NativeLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xca1bf9e6add6155e92dc1dc7c0bf210c159a2f43` | ⚠️ Unaudited |
+| Payout | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc118439d0630873cdf3a1fee798b22c2b61c23f9` | ⚠️ Unaudited |
+| PoolBase | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4efe566cab5e1018be83e9c5de14836b96b4ca40` | ⚠️ Unaudited |
+| PoolDevOnly | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8ca05763a3e46d27d1fc37abaa622ed8a9067134` | ⚠️ Unaudited |
+| PoolOpen | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xce9dd62a533cf89abe5018af9682980922b5ce22` | ⚠️ Unaudited |
+| PoolStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3b354a4bd898d875d8ecfc4d7797ff8a1665c5e4` | ⚠️ Unaudited |
+| SherBuy | unknown | project_anchor | own_supporting | 0 | ethereum | unit-254702 | `0xf8583f22c2f6f8cd27f62879a0fb4319bce262a6` | ⚠️ Unaudited |
+| SherClaim | unknown | project_anchor | own_supporting | 0 | ethereum | unit-254701 | `0x7289c61c75dcdb8fe4df0b937c08c9c40902bdd3` | ⚠️ Unaudited |
+| SherDistributionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3264bbef71983307342a656aeb285509e5eb5939` | ⚠️ Unaudited |
+| SherDistributionManagerEmpty | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5775f32787656e77dd99f20f4e478ddc85fdb31b` | ⚠️ Unaudited |
+| SherX | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf6046651beaf118ed1f4fe2c93526c9e186ee88b` | ⚠️ Unaudited |
+| SherXERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xeafd0ce3eb91d08b36136e9fdd42b54d1bb9294a` | ⚠️ Unaudited |
+| TimelockController | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0x92aeffffad9fff820f7fcaf1563d8467afe358c4` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -179,17 +179,17 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| Sherlock - Code Arena Jan 2022.pdf | Sherlock | own contract | Sherlock (selected) `0x0865a8...83eabf` — deployed 2022-03-03 00:56:54+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Sherlock - Code Arena Jan 2022.pdf | SherlockClaimManager | own contract | SherlockClaimManager (selected) `0xfeedd2...25eb84` — deployed 2022-03-03 00:56:09+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Sherlock - Code Arena Jan 2022.pdf | SherlockProtocolManager | own contract | SherlockProtocolManager (selected) `0x3d0b8a...caa1d3` — deployed 2022-03-03 00:52:18+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Sherlock - Code Arena Jan 2022.pdf | Sherlock | own contract | Sherlock (selected) `0x0865a889183039689034da55c1fd12af5083eabf` — deployed 2022-03-03 00:56:54+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Sherlock - Code Arena Jan 2022.pdf | SherlockClaimManager | own contract | SherlockClaimManager (selected) `0xfeedd254ae4b7c44a0472bb836b813ce4625eb84` — deployed 2022-03-03 00:56:09+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Sherlock - Code Arena Jan 2022.pdf | SherlockProtocolManager | own contract | SherlockProtocolManager (selected) `0x3d0b8a0a10835ab9b0f0beb54c5400b8aacaa1d3` — deployed 2022-03-03 00:52:18+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Sherlock - Code Arena Jan 2022.pdf | SherDistributionManager | unmatched — not counted | — | mentioned in findings | no |
 | Sherlock - Code Arena Jan 2022.pdf | Manager | unmatched — not counted | — | mentioned in findings | no |
 | Sherlock - Code Arena Jan 2022.pdf | AaveV2Strategy | unmatched — not counted | — | mentioned in findings | no |
 | Sherlock - Code Arena Jan 2022.pdf | ISherlockClaimManager | unmatched — not counted | — | mentioned in findings | no |
 | Sherlock - Code Arena Jan 2022.pdf | ISherlockGov | unmatched — not counted | — | mentioned in findings | no |
-| Sherlock - Trail of Bits Dec 2021.pdf | Sherlock | own contract | Sherlock (selected) `0x0865a8...83eabf` — deployed 2022-03-03 00:56:54+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Sherlock - Trail of Bits Dec 2021.pdf | SherlockClaimManager | own contract | SherlockClaimManager (selected) `0xfeedd2...25eb84` — deployed 2022-03-03 00:56:09+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Sherlock - Trail of Bits Dec 2021.pdf | SherlockProtocolManager | own contract | SherlockProtocolManager (selected) `0x3d0b8a...caa1d3` — deployed 2022-03-03 00:52:18+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Sherlock - Trail of Bits Dec 2021.pdf | Sherlock | own contract | Sherlock (selected) `0x0865a889183039689034da55c1fd12af5083eabf` — deployed 2022-03-03 00:56:54+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Sherlock - Trail of Bits Dec 2021.pdf | SherlockClaimManager | own contract | SherlockClaimManager (selected) `0xfeedd254ae4b7c44a0472bb836b813ce4625eb84` — deployed 2022-03-03 00:56:09+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Sherlock - Trail of Bits Dec 2021.pdf | SherlockProtocolManager | own contract | SherlockProtocolManager (selected) `0x3d0b8a0a10835ab9b0f0beb54c5400b8aacaa1d3` — deployed 2022-03-03 00:52:18+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Sherlock - Trail of Bits Dec 2021.pdf | SherDistributionManager | unmatched — not counted | — | listed in scope | no |
 | Sherlock - Trail of Bits Dec 2021.pdf | AaveV2Strategy | unmatched — not counted | — | listed in scope | no |
 | Sherlock - Trail of Bits Dec 2021.pdf | Manager | unmatched — not counted | — | listed in scope | no |
@@ -207,8 +207,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0xf8583f...e262a6` | SherBuy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x7289c6...02bdd3` | SherClaim | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xf8583f22c2f6f8cd27f62879a0fb4319bce262a6` | SherBuy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x7289c61c75dcdb8fe4df0b937c08c9c40902bdd3` | SherClaim | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

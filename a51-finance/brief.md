@@ -64,35 +64,35 @@ The protocol comprises 5 functional families. Its contracts share 3 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CLTBase | unknown | manta | n/a | 3 deployments: manta [`0x693170...d8c44c`](./contracts/manta-169/0x69317029384c3305fc04670c68a2b434e2d8c44c/); base `0xdfb179...105828`; linea `0xa8dc31...639576` | ✅ Audited |
-| CLTModules | unknown | manta | n/a | [`0x634062...eedd55`](./contracts/manta-169/0x634062496b8ecc63d597401d81d11d5d24eedd55/) | ✅ Audited |
-| GovernanceFeeHandler | unknown | manta | n/a | [`0x948a4d...1ab322`](./contracts/manta-169/0x948a4df3e32dd43208b111b27c592f90c41ab322/) | ✅ Audited |
-| Modes | unknown | manta | n/a | [`0x599cbb...3af0bc`](./contracts/manta-169/0x599cbbce726a2d6a849364ab1a5b7ae1573af0bc/) | ✅ Audited |
-| PoolActions | unknown | linea | n/a | 2 deployments: manta `0x9d8059...b01053`; linea [`0x9c225a...5000b5`](./contracts/linea-59144/0x9c225a02426e3229c073a6132e083561e95000b5/) | ✅ Audited |
-| TransferHelper | unknown | linea | n/a | 2 deployments: manta `0x44ae07...fbeb97`; linea [`0x171c1c...b9b57e`](./contracts/linea-59144/0x171c1c6775ef30017879c2f43336e6f878b9b57e/) | ✅ Audited |
-| ULMState | unknown | ethereum | n/a | [`0xc4a8ec...275464`](./contracts/ethereum-1/0xc4a8ec5b29a392dd6df0d18e07c33301e0275464/) | ✅ Audited |
-| Unipilot | unknown | ethereum | n/a | [`0xde5bf9...b2b08c`](./contracts/ethereum-1/0xde5bf92e3372aa59c73ca7dfc6cec599e1b2b08c/) | ✅ Audited |
-| UnipilotActiveFactory | registry | ethereum | n/a | 4 deployments: ethereum [`0x4b8e58...a5118f`](./contracts/ethereum-1/0x4b8e58d252ba251e044ec63125e83172eca5118f/); polygon `0x95b775...904708`; polygon `0xc99fa7...2fcece`; polygon `0xd12999...815c67` | ✅ Audited |
-| UnipilotFarm | unknown | ethereum | n/a | 2 deployments: ethereum [`0x6e6657...5220b8`](./contracts/ethereum-1/0x6e665791f0219a10a4d52ac0915931cf045220b8/); ethereum `0x8fddc4...309102` | ✅ Audited |
-| UnipilotPassiveFactory | registry | polygon | n/a | [`0xbd712d...31b16f`](./contracts/polygon-137/0xbd712d4dbd4b8d0cd2a98adb0f9fc2928031b16f/) | ✅ Audited |
-| UniStrategy | unknown | ethereum | n/a | 4 deployments: ethereum [`0x381e3c...93edab`](./contracts/ethereum-1/0x381e3c53380db31adc8f1d2eb6a5a8ddf793edab/); ethereum `0x7b0909...1b21fd`; ethereum `0xbe46a8...f787b1`; ethereum `0xee899a...30d8e3` | ✅ Audited |
-| UserPositions | unknown | manta | n/a | 2 deployments: manta [`0x3e0aa2...ef9da6`](./contracts/manta-169/0x3e0aa2e17fe3e5e319f388c794fdbc3c64ef9da6/); linea `0xafb178...ab6398` | ✅ Audited |
-| V3Oracle | unknown | ethereum | n/a | 3 deployments: ethereum [`0x1538e7...af2a11`](./contracts/ethereum-1/0x1538e779c6a25701c3cbc8133ee755f2adaf2a11/); ethereum `0x2148eb...e1f32f`; ethereum `0x458766...26221a` | ✅ Audited |
+| CLTBase | unknown | manta | n/a | 3 deployments: manta [`0x69317029384c3305fc04670c68a2b434e2d8c44c`](./contracts/manta-169/0x69317029384c3305fc04670c68a2b434e2d8c44c/); base `0xdfb179526ae303eea49ac99dd360159c39105828`; linea `0xa8dc31c8c9f93db2e42a5472f580689794639576` | ✅ Audited |
+| CLTModules | unknown | manta | n/a | [`0x634062496b8ecc63d597401d81d11d5d24eedd55`](./contracts/manta-169/0x634062496b8ecc63d597401d81d11d5d24eedd55/) | ✅ Audited |
+| GovernanceFeeHandler | unknown | manta | n/a | [`0x948a4df3e32dd43208b111b27c592f90c41ab322`](./contracts/manta-169/0x948a4df3e32dd43208b111b27c592f90c41ab322/) | ✅ Audited |
+| Modes | unknown | manta | n/a | [`0x599cbbce726a2d6a849364ab1a5b7ae1573af0bc`](./contracts/manta-169/0x599cbbce726a2d6a849364ab1a5b7ae1573af0bc/) | ✅ Audited |
+| PoolActions | unknown | linea | n/a | 2 deployments: manta `0x9d80597d9403bdb35b3d7d9f400377e790b01053`; linea [`0x9c225a02426e3229c073a6132e083561e95000b5`](./contracts/linea-59144/0x9c225a02426e3229c073a6132e083561e95000b5/) | ✅ Audited |
+| TransferHelper | unknown | linea | n/a | 2 deployments: manta `0x44ae07568378d2159ed41d0f060a3d6baefbeb97`; linea [`0x171c1c6775ef30017879c2f43336e6f878b9b57e`](./contracts/linea-59144/0x171c1c6775ef30017879c2f43336e6f878b9b57e/) | ✅ Audited |
+| ULMState | unknown | ethereum | n/a | [`0xc4a8ec5b29a392dd6df0d18e07c33301e0275464`](./contracts/ethereum-1/0xc4a8ec5b29a392dd6df0d18e07c33301e0275464/) | ✅ Audited |
+| Unipilot | unknown | ethereum | n/a | [`0xde5bf92e3372aa59c73ca7dfc6cec599e1b2b08c`](./contracts/ethereum-1/0xde5bf92e3372aa59c73ca7dfc6cec599e1b2b08c/) | ✅ Audited |
+| UnipilotActiveFactory | registry | ethereum | n/a | 4 deployments: ethereum [`0x4b8e58d252ba251e044ec63125e83172eca5118f`](./contracts/ethereum-1/0x4b8e58d252ba251e044ec63125e83172eca5118f/); polygon `0x95b77505b38f8a261ada04f54b8d0cda08904708`; polygon `0xc99fa77ab721817da9dd3c3b4f8ecb13772fcece`; polygon `0xd1299921ea4980fb89873557ac58842346815c67` | ✅ Audited |
+| UnipilotFarm | unknown | ethereum | n/a | 2 deployments: ethereum [`0x6e665791f0219a10a4d52ac0915931cf045220b8`](./contracts/ethereum-1/0x6e665791f0219a10a4d52ac0915931cf045220b8/); ethereum `0x8fddc464ee63575463afd214586344a09b309102` | ✅ Audited |
+| UnipilotPassiveFactory | registry | polygon | n/a | [`0xbd712d4dbd4b8d0cd2a98adb0f9fc2928031b16f`](./contracts/polygon-137/0xbd712d4dbd4b8d0cd2a98adb0f9fc2928031b16f/) | ✅ Audited |
+| UniStrategy | unknown | ethereum | n/a | 4 deployments: ethereum [`0x381e3c53380db31adc8f1d2eb6a5a8ddf793edab`](./contracts/ethereum-1/0x381e3c53380db31adc8f1d2eb6a5a8ddf793edab/); ethereum `0x7b0909218ad3f30d49caa711b8274819281b21fd`; ethereum `0xbe46a8d428ef46cd3b816c8ff78c6409a5f787b1`; ethereum `0xee899a6007c46c28205e8760ddbd81ccbb30d8e3` | ✅ Audited |
+| UserPositions | unknown | manta | n/a | 2 deployments: manta [`0x3e0aa2e17fe3e5e319f388c794fdbc3c64ef9da6`](./contracts/manta-169/0x3e0aa2e17fe3e5e319f388c794fdbc3c64ef9da6/); linea `0xafb17876b2e8b5b5d1585393b6a19930a0ab6398` | ✅ Audited |
+| V3Oracle | unknown | ethereum | n/a | 3 deployments: ethereum [`0x1538e779c6a25701c3cbc8133ee755f2adaf2a11`](./contracts/ethereum-1/0x1538e779c6a25701c3cbc8133ee755f2adaf2a11/); ethereum `0x2148eb8fd9cbfd7d63d6f595e9ce8e2837e1f32f`; ethereum `0x458766536f95b9333d48a78a91ab1aaf4226221a` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (10)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| A51 | unknown | polygon | n/a | [`0xe9e7c0...e63ed0`](./contracts/polygon-137/0xe9e7c09e82328c3107d367f6c617cf9977e63ed0/) | ⚠️ Unaudited |
-| A51LiquidityLocker | unknown | polygon | n/a | [`0x0587d2...5697a5`](./contracts/polygon-137/0x0587d2b60af1ad9dce86c8f9495c759cb15697a5/) | ⚠️ Unaudited |
-| CLTHelper | periphery | manta | n/a | 2 deployments: manta [`0xa1d818...830f81`](./contracts/manta-169/0xa1d8180f4482359ceb7eb7437fcf4a2616830f81/); manta `0xffd9ac...18de0b` | ⚠️ Unaudited |
-| CLTTwapQuoter | periphery | manta | n/a | [`0x2935a2...39a227`](./contracts/manta-169/0x2935a23f015ce177d6cc6bacce189a2e0039a227/) | ⚠️ Unaudited |
-| LiquidityMigrator | unknown | ethereum | n/a | [`0x809dad...7c3fbb`](./contracts/ethereum-1/0x809dad6cfcfa220028e462a494d4e6378c7c3fbb/) | ⚠️ Unaudited |
-| LiquidityShares | unknown | manta | n/a | 2 deployments: manta [`0x7794a9...68a0e2`](./contracts/manta-169/0x7794a94ff4c4c6840cbf92b793092730a068a0e2/); linea `0xbd58d9...5ae147` | ⚠️ Unaudited |
-| Pilot | unknown | ethereum | n/a | [`0x37c997...b99525`](./contracts/ethereum-1/0x37c997b35c619c21323f3518b9357914e8b99525/) | ⚠️ Unaudited |
-| Position | unknown | linea | n/a | 2 deployments: manta `0xc203e4...f2b4dc`; linea [`0x0f7ee2...e8ab56`](./contracts/linea-59144/0x0f7ee2b5451bfba623314f8c94bbd965b3e8ab56/) | ⚠️ Unaudited |
-| RebaseModule | unknown | manta | n/a | [`0x86f571...a46093`](./contracts/manta-169/0x86f5714ecea724dc7a7a2bdc005ac36f08a46093/) | ⚠️ Unaudited |
-| StrategyFeeShares | unknown | linea | n/a | 2 deployments: manta `0xc22e20...c3ab1e`; linea [`0x6e7e83...956f51`](./contracts/linea-59144/0x6e7e838e20ed6657aaf1166f9b7a845565956f51/) | ⚠️ Unaudited |
+| A51 | unknown | polygon | n/a | [`0xe9e7c09e82328c3107d367f6c617cf9977e63ed0`](./contracts/polygon-137/0xe9e7c09e82328c3107d367f6c617cf9977e63ed0/) | ⚠️ Unaudited |
+| A51LiquidityLocker | unknown | polygon | n/a | [`0x0587d2b60af1ad9dce86c8f9495c759cb15697a5`](./contracts/polygon-137/0x0587d2b60af1ad9dce86c8f9495c759cb15697a5/) | ⚠️ Unaudited |
+| CLTHelper | periphery | manta | n/a | 2 deployments: manta [`0xa1d8180f4482359ceb7eb7437fcf4a2616830f81`](./contracts/manta-169/0xa1d8180f4482359ceb7eb7437fcf4a2616830f81/); manta `0xffd9acf25f2d930be88d486d588ecba7a418de0b` | ⚠️ Unaudited |
+| CLTTwapQuoter | periphery | manta | n/a | [`0x2935a23f015ce177d6cc6bacce189a2e0039a227`](./contracts/manta-169/0x2935a23f015ce177d6cc6bacce189a2e0039a227/) | ⚠️ Unaudited |
+| LiquidityMigrator | unknown | ethereum | n/a | [`0x809dad6cfcfa220028e462a494d4e6378c7c3fbb`](./contracts/ethereum-1/0x809dad6cfcfa220028e462a494d4e6378c7c3fbb/) | ⚠️ Unaudited |
+| LiquidityShares | unknown | manta | n/a | 2 deployments: manta [`0x7794a94ff4c4c6840cbf92b793092730a068a0e2`](./contracts/manta-169/0x7794a94ff4c4c6840cbf92b793092730a068a0e2/); linea `0xbd58d9192a9acb9cd7f068a5c07d503f605ae147` | ⚠️ Unaudited |
+| Pilot | unknown | ethereum | n/a | [`0x37c997b35c619c21323f3518b9357914e8b99525`](./contracts/ethereum-1/0x37c997b35c619c21323f3518b9357914e8b99525/) | ⚠️ Unaudited |
+| Position | unknown | linea | n/a | 2 deployments: manta `0xc203e40fb4d742a0559705e33c9c2af41af2b4dc`; linea [`0x0f7ee2b5451bfba623314f8c94bbd965b3e8ab56`](./contracts/linea-59144/0x0f7ee2b5451bfba623314f8c94bbd965b3e8ab56/) | ⚠️ Unaudited |
+| RebaseModule | unknown | manta | n/a | [`0x86f5714ecea724dc7a7a2bdc005ac36f08a46093`](./contracts/manta-169/0x86f5714ecea724dc7a7a2bdc005ac36f08a46093/) | ⚠️ Unaudited |
+| StrategyFeeShares | unknown | linea | n/a | 2 deployments: manta `0xc22e20950aa1f2e91fac75ab7fd8a21ef2c3ab1e`; linea [`0x6e7e838e20ed6657aaf1166f9b7a845565956f51`](./contracts/linea-59144/0x6e7e838e20ed6657aaf1166f9b7a845565956f51/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -112,8 +112,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | polygon | n/a | `0x137eb3...1aede8` | ❓ Unverified |
-| UnnamedContract | unknown | polygon-zkevm | n/a | 6 deployments: polygon-zkevm `0x16c6d2...220bd5`; polygon-zkevm `0x30beb7...f68e74`; polygon-zkevm `0x965356...cce7b2`; polygon-zkevm `0xbd712d...31b16f`; polygon-zkevm `0xbd7887...5e7052`; polygon-zkevm `0xc99fa7...2fcece` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x137eb39148e1db79d2d174c60eb172a8111aede8` | ❓ Unverified |
+| UnnamedContract | unknown | polygon-zkevm | n/a | 6 deployments: polygon-zkevm `0x16c6d274e076c7b36a4d3fee2f9ab2e12d220bd5`; polygon-zkevm `0x30beb7a1d66cbe9594e159979f0c7e31a9f68e74`; polygon-zkevm `0x965356eb2c208ce4130e267342ca720042cce7b2`; polygon-zkevm `0xbd712d4dbd4b8d0cd2a98adb0f9fc2928031b16f`; polygon-zkevm `0xbd7887e11a9356957680a34955a135cf465e7052`; polygon-zkevm `0xc99fa77ab721817da9dd3c3b4f8ecb13772fcece` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -134,16 +134,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| polygon | [`0xe9e7c0...e63ed0`](./contracts/polygon-137/0xe9e7c09e82328c3107d367f6c617cf9977e63ed0/) | A51 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x0587d2...5697a5`](./contracts/polygon-137/0x0587d2b60af1ad9dce86c8f9495c759cb15697a5/) | A51LiquidityLocker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0xa1d818...830f81`](./contracts/manta-169/0xa1d8180f4482359ceb7eb7437fcf4a2616830f81/) | CLTHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0x2935a2...39a227`](./contracts/manta-169/0x2935a23f015ce177d6cc6bacce189a2e0039a227/) | CLTTwapQuoter | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x809dad...7c3fbb`](./contracts/ethereum-1/0x809dad6cfcfa220028e462a494d4e6378c7c3fbb/) | LiquidityMigrator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0x7794a9...68a0e2`](./contracts/manta-169/0x7794a94ff4c4c6840cbf92b793092730a068a0e2/) | LiquidityShares | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x37c997...b99525`](./contracts/ethereum-1/0x37c997b35c619c21323f3518b9357914e8b99525/) | Pilot | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0x0f7ee2...e8ab56`](./contracts/linea-59144/0x0f7ee2b5451bfba623314f8c94bbd965b3e8ab56/) | Position | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0x86f571...a46093`](./contracts/manta-169/0x86f5714ecea724dc7a7a2bdc005ac36f08a46093/) | RebaseModule | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0x6e7e83...956f51`](./contracts/linea-59144/0x6e7e838e20ed6657aaf1166f9b7a845565956f51/) | StrategyFeeShares | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xe9e7c09e82328c3107d367f6c617cf9977e63ed0`](./contracts/polygon-137/0xe9e7c09e82328c3107d367f6c617cf9977e63ed0/) | A51 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x0587d2b60af1ad9dce86c8f9495c759cb15697a5`](./contracts/polygon-137/0x0587d2b60af1ad9dce86c8f9495c759cb15697a5/) | A51LiquidityLocker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| manta | [`0xa1d8180f4482359ceb7eb7437fcf4a2616830f81`](./contracts/manta-169/0xa1d8180f4482359ceb7eb7437fcf4a2616830f81/) | CLTHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| manta | [`0x2935a23f015ce177d6cc6bacce189a2e0039a227`](./contracts/manta-169/0x2935a23f015ce177d6cc6bacce189a2e0039a227/) | CLTTwapQuoter | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x809dad6cfcfa220028e462a494d4e6378c7c3fbb`](./contracts/ethereum-1/0x809dad6cfcfa220028e462a494d4e6378c7c3fbb/) | LiquidityMigrator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| manta | [`0x7794a94ff4c4c6840cbf92b793092730a068a0e2`](./contracts/manta-169/0x7794a94ff4c4c6840cbf92b793092730a068a0e2/) | LiquidityShares | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x37c997b35c619c21323f3518b9357914e8b99525`](./contracts/ethereum-1/0x37c997b35c619c21323f3518b9357914e8b99525/) | Pilot | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x0f7ee2b5451bfba623314f8c94bbd965b3e8ab56`](./contracts/linea-59144/0x0f7ee2b5451bfba623314f8c94bbd965b3e8ab56/) | Position | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| manta | [`0x86f5714ecea724dc7a7a2bdc005ac36f08a46093`](./contracts/manta-169/0x86f5714ecea724dc7a7a2bdc005ac36f08a46093/) | RebaseModule | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x6e7e838e20ed6657aaf1166f9b7a845565956f51`](./contracts/linea-59144/0x6e7e838e20ed6657aaf1166f9b7a845565956f51/) | StrategyFeeShares | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

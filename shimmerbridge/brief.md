@@ -61,7 +61,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| OriginalTokenBridge | unknown | optimism | n/a | [`0x9c6d5a...f17898`](./contracts/optimism-10/0x9c6d5a71fdd306329287a835e9b8edb7f0f17898/) | ⚠️ Unaudited |
+| OriginalTokenBridge | unknown | optimism | n/a | [`0x9c6d5a71fdd306329287a835e9b8edb7f0f17898`](./contracts/optimism-10/0x9c6d5a71fdd306329287a835e9b8edb7f0f17898/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,7 +93,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| optimism | [`0x9c6d5a...f17898`](./contracts/optimism-10/0x9c6d5a71fdd306329287a835e9b8edb7f0f17898/) | OriginalTokenBridge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | [`0x9c6d5a71fdd306329287a835e9b8edb7f0f17898`](./contracts/optimism-10/0x9c6d5a71fdd306329287a835e9b8edb7f0f17898/) | OriginalTokenBridge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

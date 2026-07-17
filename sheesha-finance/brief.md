@@ -59,10 +59,10 @@ The protocol forms a single structural family (Core Logic) of 4 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| LGE | unknown | bsc | n/a | [`0x232fb0...abe768`](./contracts/bsc-56/0x232fb065d9d24c34708eedbf03724f2e95abe768/) | ⚠️ Unaudited |
-| PancakePair | unknown | bsc | n/a | [`0xb31ecb...b30a11`](./contracts/bsc-56/0xb31ecb43645eb273210838e710f2692cc6b30a11/) | ⚠️ Unaudited |
-| SHEESHAVault | unknown | bsc | n/a | [`0x8fc627...c0b6c4`](./contracts/bsc-56/0x8fc627a3e352ead0b705d81fb660588d7ac0b6c4/) | ⚠️ Unaudited |
-| SHEESHAVaultLP | unknown | bsc | n/a | [`0x5d350f...6a0a35`](./contracts/bsc-56/0x5d350f07c1d9245c1ecb7c622c67edd49c6a0a35/) | ⚠️ Unaudited |
+| LGE | unknown | bsc | n/a | [`0x232fb065d9d24c34708eedbf03724f2e95abe768`](./contracts/bsc-56/0x232fb065d9d24c34708eedbf03724f2e95abe768/) | ⚠️ Unaudited |
+| PancakePair | unknown | bsc | n/a | [`0xb31ecb43645eb273210838e710f2692cc6b30a11`](./contracts/bsc-56/0xb31ecb43645eb273210838e710f2692cc6b30a11/) | ⚠️ Unaudited |
+| SHEESHAVault | unknown | bsc | n/a | [`0x8fc627a3e352ead0b705d81fb660588d7ac0b6c4`](./contracts/bsc-56/0x8fc627a3e352ead0b705d81fb660588d7ac0b6c4/) | ⚠️ Unaudited |
+| SHEESHAVaultLP | unknown | bsc | n/a | [`0x5d350f07c1d9245c1ecb7c622c67edd49c6a0a35`](./contracts/bsc-56/0x5d350f07c1d9245c1ecb7c622c67edd49c6a0a35/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,10 +93,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x232fb0...abe768`](./contracts/bsc-56/0x232fb065d9d24c34708eedbf03724f2e95abe768/) | LGE | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xb31ecb...b30a11`](./contracts/bsc-56/0xb31ecb43645eb273210838e710f2692cc6b30a11/) | PancakePair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x8fc627...c0b6c4`](./contracts/bsc-56/0x8fc627a3e352ead0b705d81fb660588d7ac0b6c4/) | SHEESHAVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x5d350f...6a0a35`](./contracts/bsc-56/0x5d350f07c1d9245c1ecb7c622c67edd49c6a0a35/) | SHEESHAVaultLP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x232fb065d9d24c34708eedbf03724f2e95abe768`](./contracts/bsc-56/0x232fb065d9d24c34708eedbf03724f2e95abe768/) | LGE | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xb31ecb43645eb273210838e710f2692cc6b30a11`](./contracts/bsc-56/0xb31ecb43645eb273210838e710f2692cc6b30a11/) | PancakePair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x8fc627a3e352ead0b705d81fb660588d7ac0b6c4`](./contracts/bsc-56/0x8fc627a3e352ead0b705d81fb660588d7ac0b6c4/) | SHEESHAVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x5d350f07c1d9245c1ecb7c622c67edd49c6a0a35`](./contracts/bsc-56/0x5d350f07c1d9245c1ecb7c622c67edd49c6a0a35/) | SHEESHAVaultLP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

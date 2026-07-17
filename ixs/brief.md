@@ -61,16 +61,16 @@ The protocol comprises 3 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| GnosisSafeProxy | unknown | polygon | n/a | [`0x9546a2...cb3ddd`](./contracts/polygon-137/0x9546a22c244497b6fb5338e4ff7c74c5accb3ddd/) | ⚠️ Unaudited |
-| IxsGovernanceToken | unknown | ethereum | n/a | [`0xf65dd1...b1f20c`](./contracts/ethereum-1/0xf65dd1b5de5655b56ae8beae49bb2bcb95b1f20c/) | ⚠️ Unaudited |
-| IxsSale | unknown | base | n/a | [`0x4f4c18...6fefb6`](./contracts/base-8453/0x4f4c185dee9f069bc0f6a5d51ad39f33fb6fefb6/) | ⚠️ Unaudited |
-| IxsToken | unknown | base | n/a | [`0x41d8eb...1a9680`](./contracts/base-8453/0x41d8eb8b8d69c28a3879e93cbb3c4c6b8d1a9680/) | ⚠️ Unaudited |
-| IxsTokenAdapter | unknown | base | n/a | [`0x83f081...748a39`](./contracts/base-8453/0x83f08144e7383a81b0efeb87e421cf0da2748a39/) | ⚠️ Unaudited |
-| Presale | unknown | ethereum | n/a | [`0x98dc0b...7749e7`](./contracts/ethereum-1/0x98dc0b47ba9338d10b46ef419ef3589b9b7749e7/) | ⚠️ Unaudited |
-| SimpleBatch | unknown | polygon | n/a | [`0x11ba4f...6baf87`](./contracts/polygon-137/0x11ba4ff86ba4a0d7cbf3f80f0200e043936baf87/) | ⚠️ Unaudited |
-| TitaniumTech | unknown | polygon | n/a | [`0x52a296...02b76f`](./contracts/polygon-137/0x52a29640447db7bae033b349006607829b02b76f/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | base | n/a | [`0x32714d...558bb9`](./contracts/base-8453/0x32714df9ee6ae513e04902c803e34eef7b558bb9/) | ⚠️ Unaudited |
-| WrappedToken | unknown | polygon | n/a | [`0x1ba17c...43a1b8`](./contracts/polygon-137/0x1ba17c639bdaecd8dc4aac37df062d17ee43a1b8/) | ⚠️ Unaudited |
+| GnosisSafeProxy | unknown | polygon | n/a | [`0x9546a22c244497b6fb5338e4ff7c74c5accb3ddd`](./contracts/polygon-137/0x9546a22c244497b6fb5338e4ff7c74c5accb3ddd/) | ⚠️ Unaudited |
+| IxsGovernanceToken | unknown | ethereum | n/a | [`0xf65dd1b5de5655b56ae8beae49bb2bcb95b1f20c`](./contracts/ethereum-1/0xf65dd1b5de5655b56ae8beae49bb2bcb95b1f20c/) | ⚠️ Unaudited |
+| IxsSale | unknown | base | n/a | [`0x4f4c185dee9f069bc0f6a5d51ad39f33fb6fefb6`](./contracts/base-8453/0x4f4c185dee9f069bc0f6a5d51ad39f33fb6fefb6/) | ⚠️ Unaudited |
+| IxsToken | unknown | base | n/a | [`0x41d8eb8b8d69c28a3879e93cbb3c4c6b8d1a9680`](./contracts/base-8453/0x41d8eb8b8d69c28a3879e93cbb3c4c6b8d1a9680/) | ⚠️ Unaudited |
+| IxsTokenAdapter | unknown | base | n/a | [`0x83f08144e7383a81b0efeb87e421cf0da2748a39`](./contracts/base-8453/0x83f08144e7383a81b0efeb87e421cf0da2748a39/) | ⚠️ Unaudited |
+| Presale | unknown | ethereum | n/a | [`0x98dc0b47ba9338d10b46ef419ef3589b9b7749e7`](./contracts/ethereum-1/0x98dc0b47ba9338d10b46ef419ef3589b9b7749e7/) | ⚠️ Unaudited |
+| SimpleBatch | unknown | polygon | n/a | [`0x11ba4ff86ba4a0d7cbf3f80f0200e043936baf87`](./contracts/polygon-137/0x11ba4ff86ba4a0d7cbf3f80f0200e043936baf87/) | ⚠️ Unaudited |
+| TitaniumTech | unknown | polygon | n/a | [`0x52a29640447db7bae033b349006607829b02b76f`](./contracts/polygon-137/0x52a29640447db7bae033b349006607829b02b76f/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | base | n/a | [`0x32714df9ee6ae513e04902c803e34eef7b558bb9`](./contracts/base-8453/0x32714df9ee6ae513e04902c803e34eef7b558bb9/) | ⚠️ Unaudited |
+| WrappedToken | unknown | polygon | n/a | [`0x1ba17c639bdaecd8dc4aac37df062d17ee43a1b8`](./contracts/polygon-137/0x1ba17c639bdaecd8dc4aac37df062d17ee43a1b8/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -105,14 +105,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xf65dd1...b1f20c`](./contracts/ethereum-1/0xf65dd1b5de5655b56ae8beae49bb2bcb95b1f20c/) | IxsGovernanceToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x4f4c18...6fefb6`](./contracts/base-8453/0x4f4c185dee9f069bc0f6a5d51ad39f33fb6fefb6/) | IxsSale | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x41d8eb...1a9680`](./contracts/base-8453/0x41d8eb8b8d69c28a3879e93cbb3c4c6b8d1a9680/) | IxsToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x83f081...748a39`](./contracts/base-8453/0x83f08144e7383a81b0efeb87e421cf0da2748a39/) | IxsTokenAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x98dc0b...7749e7`](./contracts/ethereum-1/0x98dc0b47ba9338d10b46ef419ef3589b9b7749e7/) | Presale | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x11ba4f...6baf87`](./contracts/polygon-137/0x11ba4ff86ba4a0d7cbf3f80f0200e043936baf87/) | SimpleBatch | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x52a296...02b76f`](./contracts/polygon-137/0x52a29640447db7bae033b349006607829b02b76f/) | TitaniumTech | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x1ba17c...43a1b8`](./contracts/polygon-137/0x1ba17c639bdaecd8dc4aac37df062d17ee43a1b8/) | WrappedToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xf65dd1b5de5655b56ae8beae49bb2bcb95b1f20c`](./contracts/ethereum-1/0xf65dd1b5de5655b56ae8beae49bb2bcb95b1f20c/) | IxsGovernanceToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x4f4c185dee9f069bc0f6a5d51ad39f33fb6fefb6`](./contracts/base-8453/0x4f4c185dee9f069bc0f6a5d51ad39f33fb6fefb6/) | IxsSale | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x41d8eb8b8d69c28a3879e93cbb3c4c6b8d1a9680`](./contracts/base-8453/0x41d8eb8b8d69c28a3879e93cbb3c4c6b8d1a9680/) | IxsToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x83f08144e7383a81b0efeb87e421cf0da2748a39`](./contracts/base-8453/0x83f08144e7383a81b0efeb87e421cf0da2748a39/) | IxsTokenAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x98dc0b47ba9338d10b46ef419ef3589b9b7749e7`](./contracts/ethereum-1/0x98dc0b47ba9338d10b46ef419ef3589b9b7749e7/) | Presale | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x11ba4ff86ba4a0d7cbf3f80f0200e043936baf87`](./contracts/polygon-137/0x11ba4ff86ba4a0d7cbf3f80f0200e043936baf87/) | SimpleBatch | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x52a29640447db7bae033b349006607829b02b76f`](./contracts/polygon-137/0x52a29640447db7bae033b349006607829b02b76f/) | TitaniumTech | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x1ba17c639bdaecd8dc4aac37df062d17ee43a1b8`](./contracts/polygon-137/0x1ba17c639bdaecd8dc4aac37df062d17ee43a1b8/) | WrappedToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -52,29 +52,29 @@ The pinned logic-topography run contains 1 contract row(s) across gnosis, polygo
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x0b2108...d7afe2`, chain 100)
-- UnnamedContract (`0x0e25b9...b453e7`, chain 100)
-- UnnamedContract (`0x4ba736...b2d1cb`, chain 100)
-- UnnamedContract (`0x59a157...8a178c`, chain 100)
-- UnnamedContract (`0x6f38d1...f15071`, chain 100)
-- UnnamedContract (`0x7714eb...0dc593`, chain 100)
-- UnnamedContract (`0x8ccbea...20a155`, chain 100)
-- UnnamedContract (`0xbc4fb6...507d03`, chain 100)
-- UnnamedContract (`0xc08fbc...6ab901`, chain 100)
-- UnnamedContract (`0xe71331...012c00`, chain 100)
-- UnnamedContract (`0xeb24f7...564517`, chain 100)
-- UnnamedContract (`0xed062e...7d5825`, chain 100)
-- UnnamedContract (`0xfbd0b2...e68b2a`, chain 100)
-- UnnamedContract (`0x110905...51d24e`, chain 137)
-- UnnamedContract (`0x2ae820...cb160d`, chain 137)
-- UnnamedContract (`0x44e4fc...196f85`, chain 137)
-- UnnamedContract (`0x517b5c...c9bcb7`, chain 137)
-- UnnamedContract (`0x8c9968...795501`, chain 137)
-- UnnamedContract (`0xbc9d02...c81eeb`, chain 137)
-- UnnamedContract (`0xc5f126...af3166`, chain 137)
-- UnnamedContract (`0xeac1dc...fa6af7`, chain 137)
-- UnnamedContract (`0xec7904...4dd922`, chain 137)
-- UnnamedContract (`0xf0c837...69c015`, chain 137)
+- UnnamedContract (`0x0b21081c6f8b1990f53fc76279cc41ba22d7afe2`, chain 100)
+- UnnamedContract (`0x0e25b918c9fb2fea5d42011d1f4b9f8c61b453e7`, chain 100)
+- UnnamedContract (`0x4ba7362f9189572cbb1216819a45aba0d0b2d1cb`, chain 100)
+- UnnamedContract (`0x59a15718992a42082ab2306bc6cbd662958a178c`, chain 100)
+- UnnamedContract (`0x6f38d112b13eda1e3abafc61e296be2e27f15071`, chain 100)
+- UnnamedContract (`0x7714eb44754cb9db6d65b61f3352df12600dc593`, chain 100)
+- UnnamedContract (`0x8ccbeab14b5ac4a431fffc39f4bec4089020a155`, chain 100)
+- UnnamedContract (`0xbc4fb635636b81e60a4e356c4dceb53cac507d03`, chain 100)
+- UnnamedContract (`0xc08fbc829a879470c15916aad14e85905e6ab901`, chain 100)
+- UnnamedContract (`0xe71331aef803baec606423b105e4d1c85f012c00`, chain 100)
+- UnnamedContract (`0xeb24f7001437188baf2d5ef0b0fcfadad4564517`, chain 100)
+- UnnamedContract (`0xed062e26c8f41a9088d060156edc7fc6c17d5825`, chain 100)
+- UnnamedContract (`0xfbd0b2726070a9d6aff6d7216c9e9340eae68b2a`, chain 100)
+- UnnamedContract (`0x1109052d0155657520ca1869ae25a0a5ad51d24e`, chain 137)
+- UnnamedContract (`0x2ae82037c7c9e6af4d24bb0781f6477f29cb160d`, chain 137)
+- UnnamedContract (`0x44e4fcfed14e1285c9e0f6eae77d5fdd0f196f85`, chain 137)
+- UnnamedContract (`0x517b5c25ee5f972857bd4fd5bffbbd23b1c9bcb7`, chain 137)
+- UnnamedContract (`0x8c9968a2b16bc1cd0ead74f5eef25e899e795501`, chain 137)
+- UnnamedContract (`0xbc9d027eb4b1d9622f217de10f07dc74b7c81eeb`, chain 137)
+- UnnamedContract (`0xc5f12618bc930aab89bfc53b9d20288dfaaf3166`, chain 137)
+- UnnamedContract (`0xeac1dc5ccf09e2b816f9544878cd513728fa6af7`, chain 137)
+- UnnamedContract (`0xec7904e20b69f60966d6c6b9dc534355614dd922`, chain 137)
+- UnnamedContract (`0xf0c8376065fadfacb706cafbaac96b321069c015`, chain 137)
 
 ## Contract Surface Quality
 
@@ -120,7 +120,7 @@ The pinned logic-topography run contains 1 contract row(s) across gnosis, polygo
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| MiniMeToken | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | gnosis | unit-241878 | `0x71850b...05eef9` | ⚠️ Unaudited |
+| MiniMeToken | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | gnosis | unit-241878 | `0x71850b7e9ee3f13ab46d67167341e4bdc905eef9` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -140,50 +140,50 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-241873 | `0x0b2108...d7afe2` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-241874 | `0x0e25b9...b453e7` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-241875 | `0x4ba736...b2d1cb` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-241876 | `0x59a157...8a178c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-241877 | `0x6f38d1...f15071` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-241879 | `0x7714eb...0dc593` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-241880 | `0x8ccbea...20a155` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-241881 | `0xbc4fb6...507d03` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-241882 | `0xc08fbc...6ab901` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-241883 | `0xe71331...012c00` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | gnosis | unit-241884 | `0xe91d15...63a97d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-241885 | `0xeb24f7...564517` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-241886 | `0xed062e...7d5825` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-241887 | `0xfbd0b2...e68b2a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-241888 | `0x110905...51d24e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-241889 | `0x2ae820...cb160d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-241890 | `0x44e4fc...196f85` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-241892 | `0x517b5c...c9bcb7` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-241893 | `0x8c9968...795501` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-241894 | `0xbc9d02...c81eeb` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-241895 | `0xc5f126...af3166` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-241896 | `0xeac1dc...fa6af7` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-241897 | `0xec7904...4dd922` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-241898 | `0xf0c837...69c015` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241899 | `0x0643cd...04623a` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241900 | `0x1b35f1...f113fd` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241901 | `0x41b003...fc9e4c` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241902 | `0x53f037...ecc7a7` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241903 | `0x5b0f8d...8524e6` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241904 | `0x664551...c6d529` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241905 | `0x6a10a3...b04e22` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241906 | `0x6c66ec...f41b4a` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241907 | `0x7817a8...b0c9d1` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241908 | `0x92f015...fe9051` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241909 | `0x99dfa8...feba64` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241910 | `0x9d51fd...16e880` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241911 | `0xb1576a...4ff8be` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241912 | `0xb7e098...1ba458` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241913 | `0xc271f2...b0815b` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241914 | `0xd1cf4c...369dfd` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241915 | `0xd233d4...c2945c` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241916 | `0xe5ff66...b733f4` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241917 | `0xe97999...bd12ea` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241918 | `0xf0e29c...b32200` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-241873 | `0x0b21081c6f8b1990f53fc76279cc41ba22d7afe2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-241874 | `0x0e25b918c9fb2fea5d42011d1f4b9f8c61b453e7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-241875 | `0x4ba7362f9189572cbb1216819a45aba0d0b2d1cb` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-241876 | `0x59a15718992a42082ab2306bc6cbd662958a178c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-241877 | `0x6f38d112b13eda1e3abafc61e296be2e27f15071` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-241879 | `0x7714eb44754cb9db6d65b61f3352df12600dc593` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-241880 | `0x8ccbeab14b5ac4a431fffc39f4bec4089020a155` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-241881 | `0xbc4fb635636b81e60a4e356c4dceb53cac507d03` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-241882 | `0xc08fbc829a879470c15916aad14e85905e6ab901` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-241883 | `0xe71331aef803baec606423b105e4d1c85f012c00` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | gnosis | unit-241884 | `0xe91d153e0b41518a2ce8dd3d7944fa863463a97d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-241885 | `0xeb24f7001437188baf2d5ef0b0fcfadad4564517` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-241886 | `0xed062e26c8f41a9088d060156edc7fc6c17d5825` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-241887 | `0xfbd0b2726070a9d6aff6d7216c9e9340eae68b2a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-241888 | `0x1109052d0155657520ca1869ae25a0a5ad51d24e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-241889 | `0x2ae82037c7c9e6af4d24bb0781f6477f29cb160d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-241890 | `0x44e4fcfed14e1285c9e0f6eae77d5fdd0f196f85` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-241892 | `0x517b5c25ee5f972857bd4fd5bffbbd23b1c9bcb7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-241893 | `0x8c9968a2b16bc1cd0ead74f5eef25e899e795501` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-241894 | `0xbc9d027eb4b1d9622f217de10f07dc74b7c81eeb` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-241895 | `0xc5f12618bc930aab89bfc53b9d20288dfaaf3166` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-241896 | `0xeac1dc5ccf09e2b816f9544878cd513728fa6af7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-241897 | `0xec7904e20b69f60966d6c6b9dc534355614dd922` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-241898 | `0xf0c8376065fadfacb706cafbaac96b321069c015` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241899 | `0x0643cd09cbe6c2a405eff4d165acd9206804623a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241900 | `0x1b35f10413859d25cf63d27336ef0434acf113fd` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241901 | `0x41b0039fcc760b8899b3d11e954a7a7b5dfc9e4c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241902 | `0x53f03714e7d2bbf6498d9cb2b26854daa2ecc7a7` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241903 | `0x5b0f8d8f47e3fdf7ee1c337abca19dbba98524e6` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241904 | `0x6645516fed458f900b5c89a095e0a6d099c6d529` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241905 | `0x6a10a3012bfb0a59b01aa9d1972b167103b04e22` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241906 | `0x6c66ec1437dadc26070b731cce0086f9aef41b4a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241907 | `0x7817a805598822985310b859c9e507a535b0c9d1` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241908 | `0x92f0155e2354461e8ad278dfa37ad7da03fe9051` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241909 | `0x99dfa87ea183e0e21f977255f768ae453ffeba64` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241910 | `0x9d51fd641e420692e981ddf4345b1917ee16e880` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241911 | `0xb1576a9be5ec445368740161174f3dd1034ff8be` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241912 | `0xb7e098cb86b120363a935730970a3758861ba458` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241913 | `0xc271f2382ec150de7536168f10c988766eb0815b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241914 | `0xd1cf4cf213ff1dec94b4879356ab481b47369dfd` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241915 | `0xd233d46ddeceef8cc8679f281ee5892f94c2945c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241916 | `0xe5ff665bd031bc044f47ba5611f5450d69b733f4` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241917 | `0xe97999f411333e3b712104aa04fc06b149bd12ea` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon-mumbai | unit-241918 | `0xf0e29cc532c198bdd09bf0c4e37c47dd68b32200` | ❓ Unverified |
 
 ## Audit Inventory
 

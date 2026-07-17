@@ -64,9 +64,9 @@ The protocol forms a single structural family (Core Logic) of 3 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| VaultV2 | core_logic | base | n/a | 5 deployments: base [`0x48a90e...c79965`](./contracts/base-8453/0x48a90e85be5c56b0a669985a12ee7c449fc79965/); base `0x5083b1...3f7c48`; base `0x89bedb...4d6f53`; base `0xbb2f06...d977c9`; base `0xdba76b...09f7a8` | ⚠️ Unaudited |
-| MetaMorpho | unknown | base | n/a | 4 deployments: base [`0x543257...f5a796`](./contracts/base-8453/0x543257ef2161176d7c8cd90ba65c2d4caef5a796/); base `0xa0e430...3d0ff1`; base `0xc1256a...00a2ca`; base `0xf24608...01a026` | ⚠️ Unaudited |
-| Morpho | unknown | base | n/a | [`0xbbbbbb...eeffcb`](./contracts/base-8453/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb/) | ⚠️ Unaudited |
+| VaultV2 | core_logic | base | n/a | 5 deployments: base [`0x48a90e85be5c56b0a669985a12ee7c449fc79965`](./contracts/base-8453/0x48a90e85be5c56b0a669985a12ee7c449fc79965/); base `0x5083b1387ec3d4ee6467b83890d98f1af93f7c48`; base `0x89bedbb1c4837444da215a377275ff96a84d6f53`; base `0xbb2f06ceae42cbcf5559ed0713538c8892d977c9`; base `0xdba76bc542bb07538e046b40f2e8a215b409f7a8` | ⚠️ Unaudited |
+| MetaMorpho | unknown | base | n/a | 4 deployments: base [`0x543257ef2161176d7c8cd90ba65c2d4caef5a796`](./contracts/base-8453/0x543257ef2161176d7c8cd90ba65c2d4caef5a796/); base `0xa0e430870c4604ccfc7b38ca7845b1ff653d0ff1`; base `0xc1256ae5ff1cf2719d4937adb3bbccab2e00a2ca`; base `0xf24608e0ccb972b0b0f4a6446a0bbf58c701a026` | ⚠️ Unaudited |
+| Morpho | unknown | base | n/a | [`0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb`](./contracts/base-8453/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

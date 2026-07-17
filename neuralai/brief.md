@@ -62,8 +62,8 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| NeuralAI | unknown | ethereum | n/a | [`0x32b053...bde6e1`](./contracts/ethereum-1/0x32b053f2cba79f80ada5078cb6b305da92bde6e1/) | ⚠️ Unaudited |
-| NeuralStaking | token | ethereum | n/a | [`0xbe2cf8...9b20c3`](./contracts/ethereum-1/0xbe2cf8da9887e2ab997ed53cc49263ebd09b20c3/) | ⚠️ Unaudited |
+| NeuralAI | unknown | ethereum | n/a | [`0x32b053f2cba79f80ada5078cb6b305da92bde6e1`](./contracts/ethereum-1/0x32b053f2cba79f80ada5078cb6b305da92bde6e1/) | ⚠️ Unaudited |
+| NeuralStaking | token | ethereum | n/a | [`0xbe2cf8da9887e2ab997ed53cc49263ebd09b20c3`](./contracts/ethereum-1/0xbe2cf8da9887e2ab997ed53cc49263ebd09b20c3/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,8 +95,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x32b053...bde6e1`](./contracts/ethereum-1/0x32b053f2cba79f80ada5078cb6b305da92bde6e1/) | NeuralAI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xbe2cf8...9b20c3`](./contracts/ethereum-1/0xbe2cf8da9887e2ab997ed53cc49263ebd09b20c3/) | NeuralStaking | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x32b053f2cba79f80ada5078cb6b305da92bde6e1`](./contracts/ethereum-1/0x32b053f2cba79f80ada5078cb6b305da92bde6e1/) | NeuralAI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xbe2cf8da9887e2ab997ed53cc49263ebd09b20c3`](./contracts/ethereum-1/0xbe2cf8da9887e2ab997ed53cc49263ebd09b20c3/) | NeuralStaking | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

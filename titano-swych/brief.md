@@ -59,7 +59,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Titano | unknown | bsc | n/a | [`0x4e3cab...420aee`](./contracts/bsc-56/0x4e3cabd3ad77420ff9031d19899594041c420aee/) | ✅ Audited |
+| Titano | unknown | bsc | n/a | [`0x4e3cabd3ad77420ff9031d19899594041c420aee`](./contracts/bsc-56/0x4e3cabd3ad77420ff9031d19899594041c420aee/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 

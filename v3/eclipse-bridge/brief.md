@@ -57,7 +57,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x2b08d7...d4be11`, chain 1)
+- UnnamedContract (`0x2b08d7cf7eaff0f5f6623d9fb09b080726d4be11`, chain 1)
 
 ## Contract Surface Quality
 
@@ -103,7 +103,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Eclipse | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x6055dc...8430de` | ⚠️ Unaudited |
+| Eclipse | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x6055dc6ff1077eebe5e6d2ba1a1f53d7ef8430de` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -123,8 +123,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-384168 | `0x2b08d7...d4be11` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | ethereum | unit-384169 | `0x504392...28b30a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-384168 | `0x2b08d7cf7eaff0f5f6623d9fb09b080726d4be11` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | ethereum | unit-384169 | `0x504392f02ee64d6b51ad3bcf7999e69ebe28b30a` | ❓ Unverified |
 
 ## Audit Inventory
 

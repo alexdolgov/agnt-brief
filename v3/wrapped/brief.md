@@ -56,8 +56,8 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x4a6451...b66e10`, chain 1)
-- UnnamedContract (`0x6e1a19...7494de`, chain 1)
+- UnnamedContract (`0x4a64515e5e1d1073e83f30cb97bed20400b66e10`, chain 1)
+- UnnamedContract (`0x6e1a19f235be7ed8e3369ef73b196c07257494de`, chain 1)
 
 ## Contract Surface Quality
 
@@ -103,7 +103,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AutoFarmV2_CrossChain | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xdd11b6...12303f` | ⚠️ Unaudited |
+| AutoFarmV2_CrossChain | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xdd11b66b90402f294a017c4688509c364312303f` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -123,8 +123,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396677 | `0x4a6451...b66e10` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396678 | `0x6e1a19...7494de` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396677 | `0x4a64515e5e1d1073e83f30cb97bed20400b66e10` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396678 | `0x6e1a19f235be7ed8e3369ef73b196c07257494de` | ❓ Unverified |
 
 ## Audit Inventory
 

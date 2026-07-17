@@ -61,12 +61,12 @@ The protocol forms a single structural family (Core Logic) of 6 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| DepositContract | unknown | ethereum | n/a | [`0x000000...7705fa`](./contracts/ethereum-1/0x00000000219ab540356cbb839cbe05303d7705fa/) | ⚠️ Unaudited |
-| ObolOverwhelmingSupportAutoDelegate | unknown | ethereum | n/a | [`0xca2885...579158`](./contracts/ethereum-1/0xca28852b6fc15ebd95b17c875d5eb14b08579158/) | ⚠️ Unaudited |
-| ObolStaker | unknown | ethereum | n/a | [`0x306410...004259`](./contracts/ethereum-1/0x30641013934ec7625c9e73a4d63aab4201004259/) | ⚠️ Unaudited |
-| ObolToken | unknown | ethereum | n/a | [`0x0b0100...29d5f7`](./contracts/ethereum-1/0x0b010000b7624eb9b3dfbc279673c76e9d29d5f7/) | ⚠️ Unaudited |
-| RebasingStakedObol | unknown | ethereum | n/a | [`0x1932e8...0e8bea`](./contracts/ethereum-1/0x1932e815254c53b3ecd81cecf252a5ac7f0e8bea/) | ⚠️ Unaudited |
-| TransferRewardNotifier | unknown | ethereum | n/a | [`0x384dd8...2d8802`](./contracts/ethereum-1/0x384dd81047f88ee35de75da1149943b8e62d8802/) | ⚠️ Unaudited |
+| DepositContract | unknown | ethereum | n/a | [`0x00000000219ab540356cbb839cbe05303d7705fa`](./contracts/ethereum-1/0x00000000219ab540356cbb839cbe05303d7705fa/) | ⚠️ Unaudited |
+| ObolOverwhelmingSupportAutoDelegate | unknown | ethereum | n/a | [`0xca28852b6fc15ebd95b17c875d5eb14b08579158`](./contracts/ethereum-1/0xca28852b6fc15ebd95b17c875d5eb14b08579158/) | ⚠️ Unaudited |
+| ObolStaker | unknown | ethereum | n/a | [`0x30641013934ec7625c9e73a4d63aab4201004259`](./contracts/ethereum-1/0x30641013934ec7625c9e73a4d63aab4201004259/) | ⚠️ Unaudited |
+| ObolToken | unknown | ethereum | n/a | [`0x0b010000b7624eb9b3dfbc279673c76e9d29d5f7`](./contracts/ethereum-1/0x0b010000b7624eb9b3dfbc279673c76e9d29d5f7/) | ⚠️ Unaudited |
+| RebasingStakedObol | unknown | ethereum | n/a | [`0x1932e815254c53b3ecd81cecf252a5ac7f0e8bea`](./contracts/ethereum-1/0x1932e815254c53b3ecd81cecf252a5ac7f0e8bea/) | ⚠️ Unaudited |
+| TransferRewardNotifier | unknown | ethereum | n/a | [`0x384dd81047f88ee35de75da1149943b8e62d8802`](./contracts/ethereum-1/0x384dd81047f88ee35de75da1149943b8e62d8802/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -108,12 +108,12 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x000000...7705fa`](./contracts/ethereum-1/0x00000000219ab540356cbb839cbe05303d7705fa/) | DepositContract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xca2885...579158`](./contracts/ethereum-1/0xca28852b6fc15ebd95b17c875d5eb14b08579158/) | ObolOverwhelmingSupportAutoDelegate | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x306410...004259`](./contracts/ethereum-1/0x30641013934ec7625c9e73a4d63aab4201004259/) | ObolStaker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0b0100...29d5f7`](./contracts/ethereum-1/0x0b010000b7624eb9b3dfbc279673c76e9d29d5f7/) | ObolToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1932e8...0e8bea`](./contracts/ethereum-1/0x1932e815254c53b3ecd81cecf252a5ac7f0e8bea/) | RebasingStakedObol | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x384dd8...2d8802`](./contracts/ethereum-1/0x384dd81047f88ee35de75da1149943b8e62d8802/) | TransferRewardNotifier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x00000000219ab540356cbb839cbe05303d7705fa`](./contracts/ethereum-1/0x00000000219ab540356cbb839cbe05303d7705fa/) | DepositContract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xca28852b6fc15ebd95b17c875d5eb14b08579158`](./contracts/ethereum-1/0xca28852b6fc15ebd95b17c875d5eb14b08579158/) | ObolOverwhelmingSupportAutoDelegate | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x30641013934ec7625c9e73a4d63aab4201004259`](./contracts/ethereum-1/0x30641013934ec7625c9e73a4d63aab4201004259/) | ObolStaker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0b010000b7624eb9b3dfbc279673c76e9d29d5f7`](./contracts/ethereum-1/0x0b010000b7624eb9b3dfbc279673c76e9d29d5f7/) | ObolToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1932e815254c53b3ecd81cecf252a5ac7f0e8bea`](./contracts/ethereum-1/0x1932e815254c53b3ecd81cecf252a5ac7f0e8bea/) | RebasingStakedObol | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x384dd81047f88ee35de75da1149943b8e62d8802`](./contracts/ethereum-1/0x384dd81047f88ee35de75da1149943b8e62d8802/) | TransferRewardNotifier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -52,15 +52,15 @@ The pinned logic-topography run contains 4 contract row(s) across base, ethereum
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x7d16d2...bdb48b`, chain 1)
-- UnnamedContract (`0x895a57...230683`, chain 1)
-- UnnamedContract (`0x8c1bed...0b6549`, chain 1)
-- UnnamedContract (`0xb5fe69...819632`, chain 1)
-- UnnamedContract (`0xebc83b...8bb2ce`, chain 1)
-- CoverageFundV1 (`0x32aac3...e49a81`, chain 1)
-- RedeemManagerV1 (`0x080b3a...ad3375`, chain 1)
-- TUPProxy (`0x1235f1...06b725`, chain 1)
-- WithdrawV1 (`0x0afd81...c25154`, chain 1)
+- UnnamedContract (`0x7d16d2c4e96bcfc8f815e15b771ac847ecbdb48b`, chain 1)
+- UnnamedContract (`0x895a57ed71025d51fe4080530a3489d92e230683`, chain 1)
+- UnnamedContract (`0x8c1bed5b9a0928467c9b1341da1d7bd5e10b6549`, chain 1)
+- UnnamedContract (`0xb5fe6946836d687848b5abd42dabf531d5819632`, chain 1)
+- UnnamedContract (`0xebc83bb472b2816ec5b5de8d34f0efc9088bb2ce`, chain 1)
+- CoverageFundV1 (`0x32aac358b627b9feaa971cc33304027a41e49a81`, chain 1)
+- RedeemManagerV1 (`0x080b3a41390b357ad7e8097644d1dedf57ad3375`, chain 1)
+- TUPProxy (`0x1235f1b60df026b2620e48e735c422425e06b725`, chain 1)
+- WithdrawV1 (`0x0afd81862eea47322cf85db39d3d07e8a3c25154`, chain 1)
 
 ## Contract Surface Quality
 
@@ -106,33 +106,33 @@ The pinned logic-topography run contains 4 contract row(s) across base, ethereum
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| CoverageFundV1 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-244840 | `0x32aac3...e49a81` | ✅ Audited |
-| TUPProxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-244838 | `0x1235f1...06b725` | ✅ Audited |
+| CoverageFundV1 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-244840 | `0x32aac358b627b9feaa971cc33304027a41e49a81` | ✅ Audited |
+| TUPProxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-244838 | `0x1235f1b60df026b2620e48e735c422425e06b725` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (20)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AllowlistV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8892da...e493f2` | ⚠️ Unaudited |
-| BurnMintERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2af9ee...f1f8a8` | ⚠️ Unaudited |
-| BurnMintTokenPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x3a4e3b...14d591` | ⚠️ Unaudited |
-| ConfigManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc2f123...de032e` | ⚠️ Unaudited |
-| ELFeeRecipientV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x108a04...294e13` | ⚠️ Unaudited |
-| Firewall | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0d1de2...002ceb` | ⚠️ Unaudited |
-| ImmutableBeaconFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb33ec2...bea808` | ⚠️ Unaudited |
-| LockReleaseTokenPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0a0247...45b404` | ⚠️ Unaudited |
-| OperatorsRegistryV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7adbc0...841008` | ⚠️ Unaudited |
-| OracleV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x485ade...720aa0` | ⚠️ Unaudited |
-| OrchestratorFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x083f8a...e8a7b8` | ⚠️ Unaudited |
-| OrchestratorV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x85a1dc...64a031` | ⚠️ Unaudited |
-| ProtocolMetricsV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb4fe3e...177a77` | ⚠️ Unaudited |
-| RedeemManagerV1 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-244839 | `0x080b3a...ad3375` | ⚠️ Unaudited |
-| RiverV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x179d66...0de4f2` | ⚠️ Unaudited |
-| TlcMigration | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2f9014...0a4bd9` | ⚠️ Unaudited |
-| TLCV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1d6289...58fde4` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xec3f66...d2d455` | ⚠️ Unaudited |
-| TVSUpgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe40c54...bb7b8a` | ⚠️ Unaudited |
-| WithdrawV1 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-244841 | `0x0afd81...c25154` | ⚠️ Unaudited |
+| AllowlistV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8892daf1fcd24b2e8a3c6194d297aaab04e493f2` | ⚠️ Unaudited |
+| BurnMintERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2af9ee712a72bb1e7f4f51dacad827bf24f1f8a8` | ⚠️ Unaudited |
+| BurnMintTokenPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x3a4e3b9a4fb73a4015b4afe1efe02214b614d591` | ⚠️ Unaudited |
+| ConfigManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc2f1230b2958feeca02bcd41a6a127612fde032e` | ⚠️ Unaudited |
+| ELFeeRecipientV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x108a04f7a181a1e0a58bdb1772707aee88294e13` | ⚠️ Unaudited |
+| Firewall | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0d1de267015a75f5069fd1c9ed382210b3002ceb` | ⚠️ Unaudited |
+| ImmutableBeaconFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb33ec2a84e556de6b7c379dd2ed26f3855bea808` | ⚠️ Unaudited |
+| LockReleaseTokenPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0a02473e57902fd7764e6e952e2962763045b404` | ⚠️ Unaudited |
+| OperatorsRegistryV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7adbc0bd23ab71b1dc8c946c0550ff87c9841008` | ⚠️ Unaudited |
+| OracleV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x485ade5b7f66eccad4583862bc5c2aa838720aa0` | ⚠️ Unaudited |
+| OrchestratorFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x083f8ada3849ce97fee777cec6324277d4e8a7b8` | ⚠️ Unaudited |
+| OrchestratorV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x85a1dc9f6f9af9799354fe9c717fb84f5664a031` | ⚠️ Unaudited |
+| ProtocolMetricsV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb4fe3e83dbb646ad9050f89ab44425fbd7177a77` | ⚠️ Unaudited |
+| RedeemManagerV1 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-244839 | `0x080b3a41390b357ad7e8097644d1dedf57ad3375` | ⚠️ Unaudited |
+| RiverV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x179d669ac78896f970040e57cb297582b50de4f2` | ⚠️ Unaudited |
+| TlcMigration | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2f90147165326f6b7acc297b2e9ef977730a4bd9` | ⚠️ Unaudited |
+| TLCV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1d628949c6c59ebc69563ca94bcbcb4cba58fde4` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xec3f66d7fac189ed83593c730ef46b67a9d2d455` | ⚠️ Unaudited |
+| TVSUpgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe40c54b39e811ab85a19ed783b91fa10acbb7b8a` | ⚠️ Unaudited |
+| WithdrawV1 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-244841 | `0x0afd81862eea47322cf85db39d3d07e8a3c25154` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -152,11 +152,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-244833 | `0x7d16d2...bdb48b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-244834 | `0x895a57...230683` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-244835 | `0x8c1bed...0b6549` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-244836 | `0xb5fe69...819632` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-244837 | `0xebc83b...8bb2ce` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-244833 | `0x7d16d2c4e96bcfc8f815e15b771ac847ecbdb48b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-244834 | `0x895a57ed71025d51fe4080530a3489d92e230683` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-244835 | `0x8c1bed5b9a0928467c9b1341da1d7bd5e10b6549` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-244836 | `0xb5fe6946836d687848b5abd42dabf531d5819632` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-244837 | `0xebc83bb472b2816ec5b5de8d34f0efc9088bb2ce` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -241,7 +241,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | LiquidCollective3-Spearbit-Security-Review.pdf | LibBasisPoints | unmatched — not counted | — | mentioned in findings context | no |
 | LiquidCollective2-Spearbit-Security-Review.pdf | TLCV1 | unmatched — not counted | — | mentioned in findings context and remediation | no |
 | LiquidCollective2-Spearbit-Security-Review.pdf | ERC20VestableVotesUpgradeableV1 | unmatched — not counted | — | mentioned in findings context and remediation | no |
-| LiquidCollective2-Spearbit-Security-Review.pdf | CoverageFundV1 | own proxy deployment | CoverageFundV1 (proxy) (selected) `0x32aac3...e49a81` — deployed 2022-12-02 14:24:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| LiquidCollective2-Spearbit-Security-Review.pdf | CoverageFundV1 | own proxy deployment | CoverageFundV1 (proxy) (selected) `0x32aac358b627b9feaa971cc33304027a41e49a81` — deployed 2022-12-02 14:24:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | LiquidCollective2-Spearbit-Security-Review.pdf | RiverV1 | unmatched — not counted | — | mentioned in findings context and remediation | no |
 | LiquidCollective2-Spearbit-Security-Review.pdf | OracleManagerV1 | unmatched — not counted | — | mentioned in findings context | no |
 | LiquidCollective2-Spearbit-Security-Review.pdf | OracleV1 | unmatched — not counted | — | mentioned in findings context | no |
@@ -274,7 +274,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Alluvial_Liquid_Collective_Smart_Contract_Security_Audit_Report_Halborn_Final_Update_v2.pdf | TransferManager | unmatched — not counted | — | Referenced in findings (e.g., TransferManager.1.sol) | no |
 | Alluvial_Liquid_Collective_Smart_Contract_Security_Audit_Report_Halborn_Final_Update_v2.pdf | DepositManager | unmatched — not counted | — | Referenced in findings (e.g., DepositManager.1.sol) | no |
 | Alluvial_Liquid_Collective_Smart_Contract_Security_Audit_Report_Halborn_Final_Update_v2.pdf | OperatorsManager | unmatched — not counted | — | Referenced in findings (e.g., OperatorsManager.1.sol) | no |
-| Alluvial_Liquid_Collective_Smart_Contract_Security_Audit_Report_Halborn_Final_Update_v2.pdf | TUPProxy | own proxy deployment | TUPProxy (proxy) (selected) `0x1235f1...06b725` — deployed 2022-10-04 20:58:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Alluvial_Liquid_Collective_Smart_Contract_Security_Audit_Report_Halborn_Final_Update_v2.pdf | TUPProxy | own proxy deployment | TUPProxy (proxy) (selected) `0x1235f1b60df026b2620e48e735c422425e06b725` — deployed 2022-10-04 20:58:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Alluvial_Liquid_Collective_Smart_Contract_Security_Audit_Report_Halborn_Final_Update_v2.pdf | Firewall | unmatched — not counted | — | Referenced in finding HAL-09 | no |
 | Alluvial_Liquid_Collective_Smart_Contract_Security_Audit_Report_Halborn_Final_Update_v2.pdf | ELFeeRecipient | unmatched — not counted | — | Referenced in finding HAL-09 as ELFeeRecipientV1 | no |
 | Alluvial_Liquid_Collective_Smart_Contract_Security_Audit_Report_Halborn_Final_Update_v2.pdf | SharesManager | unmatched — not counted | — | Referenced in appendix as SharesManager contract | no |
@@ -285,7 +285,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | 202207_Halborn.md | ELFeeRecipient | unmatched — not counted | — | listed in scope | no |
 | 202207_Halborn.md | WLSETH | unmatched — not counted | — | listed in scope | no |
 | 202207_Halborn.md | Firewall | unmatched — not counted | — | listed in scope | no |
-| 202207_Halborn.md | TUPProxy | own proxy deployment | TUPProxy (proxy) (selected) `0x1235f1...06b725` — deployed 2022-10-04 20:58:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 202207_Halborn.md | TUPProxy | own proxy deployment | TUPProxy (proxy) (selected) `0x1235f1b60df026b2620e48e735c422425e06b725` — deployed 2022-10-04 20:58:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 202207_Halborn.md | Initializable | unmatched — not counted | — | listed in scope | no |
 | 202209_Spearbit.md | River | unmatched — not counted | — | listed in scope | no |
 | 202209_Spearbit.md | OperatorsRegistry | unmatched — not counted | — | listed in scope | no |
@@ -295,7 +295,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | 202209_Spearbit.md | ELFeeRecipient | unmatched — not counted | — | listed in scope | no |
 | 202209_Spearbit.md | WLSETH | unmatched — not counted | — | listed in scope | no |
 | 202209_Spearbit.md | Firewall | unmatched — not counted | — | listed in scope | no |
-| 202209_Spearbit.md | TUPProxy | own proxy deployment | TUPProxy (proxy) (selected) `0x1235f1...06b725` — deployed 2022-10-04 20:58:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 202209_Spearbit.md | TUPProxy | own proxy deployment | TUPProxy (proxy) (selected) `0x1235f1b60df026b2620e48e735c422425e06b725` — deployed 2022-10-04 20:58:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 202209_Spearbit.md | Initializable | unmatched — not counted | — | listed in scope | no |
 | 202211_Spearbit.md | TLC | unmatched — not counted | — | listed in scope as 'New smart contract: TLC' | no |
 | 202303_Spearbit.md | Redeem Manager | unmatched — not counted | — | listed in scope as 'New smart contract: Redeem Manager' | no |
@@ -308,7 +308,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | 202402_Certora.md | ELFeeRecipient | unmatched — not counted | — | listed in scope | no |
 | 202402_Certora.md | WLSETH | unmatched — not counted | — | listed in scope | no |
 | 202402_Certora.md | Firewall | unmatched — not counted | — | listed in scope | no |
-| 202402_Certora.md | TUPProxy | own proxy deployment | TUPProxy (proxy) (selected) `0x1235f1...06b725` — deployed 2022-10-04 20:58:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 202402_Certora.md | TUPProxy | own proxy deployment | TUPProxy (proxy) (selected) `0x1235f1b60df026b2620e48e735c422425e06b725` — deployed 2022-10-04 20:58:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 202402_Certora.md | Initializable | unmatched — not counted | — | listed in scope | no |
 | 202402_Certora.md | TLC | unmatched — not counted | — | listed in scope | no |
 | 202402_Certora.md | OperatorsRegistry | unmatched — not counted | — | listed in scope | no |
@@ -322,8 +322,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x080b3a...ad3375` | RedeemManagerV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x0afd81...c25154` | WithdrawV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x080b3a41390b357ad7e8097644d1dedf57ad3375` | RedeemManagerV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x0afd81862eea47322cf85db39d3d07e8a3c25154` | WithdrawV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

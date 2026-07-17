@@ -62,13 +62,13 @@ The protocol comprises 2 functional families. Contracts are linked by 2 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ArenaToken | token | bsc | n/a | [`0x2a17dc...7d27a2`](./contracts/bsc-56/0x2a17dc11a1828725cdb318e0036acf12727d27a2/) | ✅ Audited |
+| ArenaToken | token | bsc | n/a | [`0x2a17dc11a1828725cdb318e0036acf12727d27a2`](./contracts/bsc-56/0x2a17dc11a1828725cdb318e0036acf12727d27a2/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ArenaMaster | unknown | bsc | n/a | [`0xbea60d...2b7e77`](./contracts/bsc-56/0xbea60d145747a66cf27456ef136b3976322b7e77/) | ⚠️ Unaudited |
+| ArenaMaster | unknown | bsc | n/a | [`0xbea60d145747a66cf27456ef136b3976322b7e77`](./contracts/bsc-56/0xbea60d145747a66cf27456ef136b3976322b7e77/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -88,11 +88,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0x2370c7...e01466` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x610184...b142e9` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x6b5517...9c2631` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xad63f1...fc6d1d` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xf37c37...7816fe` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x2370c7a8a72e323102730a8419d49ecbc9e01466` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x61018455f6318b782d5b3de7585e61fd5db142e9` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x6b55178df599c84bc2b13c7791aab639569c2631` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xad63f10232787f8c8bc6ceace0d5861860fc6d1d` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xf37c37385061835b566dacbccdc9b0b3c87816fe` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -106,7 +106,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0xbea60d...2b7e77`](./contracts/bsc-56/0xbea60d145747a66cf27456ef136b3976322b7e77/) | ArenaMaster | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xbea60d145747a66cf27456ef136b3976322b7e77`](./contracts/bsc-56/0xbea60d145747a66cf27456ef136b3976322b7e77/) | ArenaMaster | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

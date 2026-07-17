@@ -57,8 +57,8 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum, ethe
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x54d225...f90581`, chain 1)
-- UnnamedContract (`0x55d1f1...bc3238`, chain 2818)
+- UnnamedContract (`0x54d2252757e1672eead234d27b1270728ff90581`, chain 1)
+- UnnamedContract (`0x55d1f1879969bdbb9960d269974564c58dbc3238`, chain 2818)
 
 ## Contract Surface Quality
 
@@ -104,30 +104,30 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum, ethe
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x3e5161...fc4a51` | ⚠️ Unaudited |
-| ATokensAndRatesHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x3e0730...af74ea` | ⚠️ Unaudited |
-| ChefIncentivesController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x287ff9...f0db32` | ⚠️ Unaudited |
-| DefaultReserveInterestRateStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x00ff3b...3a9577` | ⚠️ Unaudited |
-| LendingPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xab843b...8534d6` | ⚠️ Unaudited |
-| LendingPoolAddressesProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x8d4757...d52832` | ⚠️ Unaudited |
-| LendingPoolAddressesProviderRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x397824...9e83ae` | ⚠️ Unaudited |
-| LendingPoolCollateralManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xb8b4db...55c608` | ⚠️ Unaudited |
-| LendingPoolConfigurator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x6e2b55...66b32d` | ⚠️ Unaudited |
-| LendingRateOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x1fab9a...3d7ecb` | ⚠️ Unaudited |
-| Leverager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x5682a3...be3b1b` | ⚠️ Unaudited |
-| MasterChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x854775...783a95` | ⚠️ Unaudited |
-| MerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xefab5c...a23a82` | ⚠️ Unaudited |
-| MultiFeeDistribution | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xc2054a...455c13` | ⚠️ Unaudited |
-| QuickLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x75206c...921bad` | ⚠️ Unaudited |
-| RadiantToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x01a01d...67f6ba` | ⚠️ Unaudited |
-| StableAndVariableTokensHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0f9819...c1772b` | ⚠️ Unaudited |
-| Timelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0b6f13...1dc7a9` | ⚠️ Unaudited |
-| TokenVesting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x5a88e4...d15740` | ⚠️ Unaudited |
-| UiPoolDataProviderV2V3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x80c641...20fc31` | ⚠️ Unaudited |
-| UnnamedContract | token | project_anchor | own_supporting | 0 | ethereum | unit-380639 | `0x54d225...f90581` | ⚠️ Unaudited |
-| VariableDebtToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x3b6176...bc504b` | ⚠️ Unaudited |
-| WalletBalanceProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xe36d52...75c621` | ⚠️ Unaudited |
-| WETHGateway | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xebf974...385e9a` | ⚠️ Unaudited |
+| AToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x3e516184686ffb009ce9f77d67dececb2afc4a51` | ⚠️ Unaudited |
+| ATokensAndRatesHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x3e0730775a8568e3773a496e0a65438bd1af74ea` | ⚠️ Unaudited |
+| ChefIncentivesController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x287ff908b4db0b29b65b8442b0a5840455f0db32` | ⚠️ Unaudited |
+| DefaultReserveInterestRateStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x00ff3b408cdbb79c32683aa7b6e4ecb7a33a9577` | ⚠️ Unaudited |
+| LendingPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xab843bec136e848fc47f0eb24902b61f158534d6` | ⚠️ Unaudited |
+| LendingPoolAddressesProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x8d475766ab187acf6238ae45fff213fa19d52832` | ⚠️ Unaudited |
+| LendingPoolAddressesProviderRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x397824e7b156f57263aea72ff61ea860289e83ae` | ⚠️ Unaudited |
+| LendingPoolCollateralManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xb8b4dbcbf943f21ca956a8cfeeea917d1855c608` | ⚠️ Unaudited |
+| LendingPoolConfigurator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x6e2b5533729b1f67d7e60bcb89ccbc3f5f66b32d` | ⚠️ Unaudited |
+| LendingRateOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x1fab9ae08e670f853158e40bfc6a5e0b3c3d7ecb` | ⚠️ Unaudited |
+| Leverager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x5682a39078edce41a65f1bd8733bf9ca2bbe3b1b` | ⚠️ Unaudited |
+| MasterChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x854775e2607a65321476f7f40d4dd33ada783a95` | ⚠️ Unaudited |
+| MerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xefab5c6f57f301f87875b3270bb4659e27a23a82` | ⚠️ Unaudited |
+| MultiFeeDistribution | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xc2054a8c33bfce28de8af4af548c48915c455c13` | ⚠️ Unaudited |
+| QuickLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x75206c2a29b646706c8856df0e8acaea38921bad` | ⚠️ Unaudited |
+| RadiantToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x01a01deaf702e960d91151de6113e1fc4667f6ba` | ⚠️ Unaudited |
+| StableAndVariableTokensHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0f9819516eadfc947e652710e3dbf738d6c1772b` | ⚠️ Unaudited |
+| Timelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0b6f135db3a621ab9041ac261276d8f38e1dc7a9` | ⚠️ Unaudited |
+| TokenVesting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x5a88e473fa2f4012e6c1b730dd070e4b15d15740` | ⚠️ Unaudited |
+| UiPoolDataProviderV2V3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x80c64191944a53ee1deabb6705b50fea8620fc31` | ⚠️ Unaudited |
+| UnnamedContract | token | project_anchor | own_supporting | 0 | ethereum | unit-380639 | `0x54d2252757e1672eead234d27b1270728ff90581` | ⚠️ Unaudited |
+| VariableDebtToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x3b6176cae0bfa63d9f8c8561cebe3e19c1bc504b` | ⚠️ Unaudited |
+| WalletBalanceProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xe36d523ad4febaa09b9bc043999252f96375c621` | ⚠️ Unaudited |
+| WETHGateway | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xebf9746af2c757a20db467b007f4fa6317385e9a` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -147,8 +147,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-380638 | `0x19de6b...828a28` | ❓ Unverified |
-| UnnamedContract | token | project_anchor | own_supporting | 0 | morph | unit-380640 | `0x55d1f1...bc3238` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-380638 | `0x19de6b897ed14a376dda0fe53a5420d2ac828a28` | ❓ Unverified |
+| UnnamedContract | token | project_anchor | own_supporting | 0 | morph | unit-380640 | `0x55d1f1879969bdbb9960d269974564c58dbc3238` | ❓ Unverified |
 
 ## Audit Inventory
 

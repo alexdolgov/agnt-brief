@@ -57,8 +57,8 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xa0ee7a...a79720`, chain 1)
-- UnnamedContract (`0xa0ee7a...a79720`, chain 56)
+- UnnamedContract (`0xa0ee7a142d267c1f36714e4a8f75612f20a79720`, chain 1)
+- UnnamedContract (`0xa0ee7a142d267c1f36714e4a8f75612f20a79720`, chain 56)
 
 ## Contract Surface Quality
 
@@ -104,7 +104,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AutoFarmV2_CrossChain | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x89d065...eb0b76` | ⚠️ Unaudited |
+| AutoFarmV2_CrossChain | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x89d065572136814230a55ddeeddec9df34eb0b76` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -124,10 +124,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x000000...000000` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391034 | `0xa0ee7a...a79720` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x000000...000000` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391041 | `0xa0ee7a...a79720` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x0000000000000000000000000000000000000000` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391034 | `0xa0ee7a142d267c1f36714e4a8f75612f20a79720` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x0000000000000000000000000000000000000000` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391041 | `0xa0ee7a142d267c1f36714e4a8f75612f20a79720` | ❓ Unverified |
 
 ## Audit Inventory
 

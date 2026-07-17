@@ -52,58 +52,58 @@ The pinned logic-topography run contains 47 contract row(s) across arbitrum, bas
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x9609af...440262`, chain 1)
-- UnnamedContract (`0x939197...2b593e`, chain 130)
-- UnnamedContract (`0xa16113...2059be`, chain 130)
-- UnnamedContract (`0xd3c8da...b1d58d`, chain 130)
-- UnnamedContract (`0xf97750...31ab18`, chain 130)
-- UnnamedContract (`0xdfc7d2...2b511e`, chain 1329)
-- BeaconProxy (`0x926720...d01cce`, chain 1)
-- brBTC (`0xa16113...2059be`, chain 999)
-- brBTC (`0x89b2c7...740aeb`, chain 8453)
-- brVault (`0x6518b4...1dba0f`, chain 56)
-- brVault (`0xd3c8da...b1d58d`, chain 80094)
-- MultiBridgeToken (`0x3d15fd...e2c3a0`, chain 42161)
-- MultiBridgeToken (`0x15eefe...ef4d25`, chain 59144)
-- MultiBridgeToken (`0x15eefe...ef4d25`, chain 534352)
-- Staking (`0xf047d1...9df110`, chain 1)
-- TransparentUpgradeableProxy (`0x004e9c...350568`, chain 1)
-- TransparentUpgradeableProxy (`0x047d41...10d6da`, chain 1)
-- TransparentUpgradeableProxy (`0x1419b4...0e3386`, chain 1)
-- TransparentUpgradeableProxy (`0x2ec37d...8f6646`, chain 1)
-- TransparentUpgradeableProxy (`0x3f4eac...6e9850`, chain 1)
-- TransparentUpgradeableProxy (`0x4befa2...269e9d`, chain 1)
-- TransparentUpgradeableProxy (`0xf1376b...df51f4`, chain 1)
-- TransparentUpgradeableProxy (`0x939197...2b593e`, chain 10)
-- TransparentUpgradeableProxy (`0xf97750...31ab18`, chain 10)
-- TransparentUpgradeableProxy (`0x1df46e...90ad93`, chain 56)
-- TransparentUpgradeableProxy (`0x6b2a01...bd726a`, chain 56)
-- TransparentUpgradeableProxy (`0x733a6c...f01df3`, chain 56)
-- TransparentUpgradeableProxy (`0x84e5c8...c26800`, chain 56)
-- TransparentUpgradeableProxy (`0xc3827a...db6e90`, chain 146)
-- TransparentUpgradeableProxy (`0xdfc7d2...2b511e`, chain 999)
-- TransparentUpgradeableProxy (`0xf97750...31ab18`, chain 999)
-- TransparentUpgradeableProxy (`0x939197...2b593e`, chain 5000)
-- TransparentUpgradeableProxy (`0xf97750...31ab18`, chain 5000)
-- TransparentUpgradeableProxy (`0x3376eb...61514a`, chain 8453)
-- TransparentUpgradeableProxy (`0x939197...2b593e`, chain 8453)
-- TransparentUpgradeableProxy (`0x6b2a01...bd726a`, chain 34443)
-- TransparentUpgradeableProxy (`0x84e5c8...c26800`, chain 34443)
-- TransparentUpgradeableProxy (`0x6b2a01...bd726a`, chain 42161)
-- TransparentUpgradeableProxy (`0x84e5c8...c26800`, chain 42161)
-- TransparentUpgradeableProxy (`0x939197...2b593e`, chain 80094)
-- TransparentUpgradeableProxy (`0xc3827a...db6e90`, chain 80094)
-- TransparentUpgradeableProxy (`0xf97750...31ab18`, chain 80094)
-- uniBTC (`0x939197...2b593e`, chain 999)
-- uniBTC (`0x552b0c...42fa05`, chain 8453)
-- UnnamedContract (`0xa16113...2059be`, chain 57073)
-- UnnamedContract (`0xd3c8da...b1d58d`, chain 57073)
-- VaultWithoutNative (`0x3376eb...61514a`, chain 10)
-- VaultWithoutNative (`0xdfc7d2...2b511e`, chain 56)
-- VaultWithoutNative (`0xe1061f...838a8c`, chain 146)
-- VaultWithoutNative (`0x89b2c7...740aeb`, chain 5000)
-- VaultWithoutNative (`0xd4b6b3...4a7509`, chain 8453)
-- VaultWithoutNative (`0xa93322...4ffadd`, chain 80094)
+- UnnamedContract (`0x9609af0490b96d7add7eea3554b1a944ee440262`, chain 1)
+- UnnamedContract (`0x93919784c523f39cacaa98ee0a9d96c3f32b593e`, chain 130)
+- UnnamedContract (`0xa161132371c94299d215915d4cbc3b629e2059be`, chain 130)
+- UnnamedContract (`0xd3c8da379d71a33bfee8875f87ac2748beb1d58d`, chain 130)
+- UnnamedContract (`0xf9775085d726e782e83585033b58606f7731ab18`, chain 130)
+- UnnamedContract (`0xdfc7d2d003a053b2e0490531e9317a59962b511e`, chain 1329)
+- BeaconProxy (`0x926720ae39114d0e2043b79570a1e08f00d01cce`, chain 1)
+- brBTC (`0xa161132371c94299d215915d4cbc3b629e2059be`, chain 999)
+- brBTC (`0x89b2c722abf9e1c8dd215e4e8352e0f293740aeb`, chain 8453)
+- brVault (`0x6518b4c7fa1502246649106e69857e3b7d1dba0f`, chain 56)
+- brVault (`0xd3c8da379d71a33bfee8875f87ac2748beb1d58d`, chain 80094)
+- MultiBridgeToken (`0x3d15fd46ce9e551498328b1c83071d9509e2c3a0`, chain 42161)
+- MultiBridgeToken (`0x15eefe5b297136b8712291b632404b66a8ef4d25`, chain 59144)
+- MultiBridgeToken (`0x15eefe5b297136b8712291b632404b66a8ef4d25`, chain 534352)
+- Staking (`0xf047d19d064c541bb96f03a99620256b749df110`, chain 1)
+- TransparentUpgradeableProxy (`0x004e9c3ef86bc1ca1f0bb5c7662861ee93350568`, chain 1)
+- TransparentUpgradeableProxy (`0x047d41f2544b7f63a8e991af2068a363d210d6da`, chain 1)
+- TransparentUpgradeableProxy (`0x1419b48e5c1f5ce413cf02d6dcbe1314170e3386`, chain 1)
+- TransparentUpgradeableProxy (`0x2ec37d45fcae65d9787ecf71dc85a444968f6646`, chain 1)
+- TransparentUpgradeableProxy (`0x3f4eaceb930b0edfa78a1dfcbae5c5494e6e9850`, chain 1)
+- TransparentUpgradeableProxy (`0x4befa2aa9c305238aa3e0b5d17eb20c045269e9d`, chain 1)
+- TransparentUpgradeableProxy (`0xf1376bcef0f78459c0ed0ba5ddce976f1ddf51f4`, chain 1)
+- TransparentUpgradeableProxy (`0x93919784c523f39cacaa98ee0a9d96c3f32b593e`, chain 10)
+- TransparentUpgradeableProxy (`0xf9775085d726e782e83585033b58606f7731ab18`, chain 10)
+- TransparentUpgradeableProxy (`0x1df46ec5e86fec4589b3fa7d60b6dc7ef890ad93`, chain 56)
+- TransparentUpgradeableProxy (`0x6b2a01a5f79deb4c2f3c0eda7b01df456fbd726a`, chain 56)
+- TransparentUpgradeableProxy (`0x733a6c29eda4a58931ae81b8d91e29f2eaf01df3`, chain 56)
+- TransparentUpgradeableProxy (`0x84e5c854a7ff9f49c888d69deca578d406c26800`, chain 56)
+- TransparentUpgradeableProxy (`0xc3827a4bc8224ee2d116637023b124ced6db6e90`, chain 146)
+- TransparentUpgradeableProxy (`0xdfc7d2d003a053b2e0490531e9317a59962b511e`, chain 999)
+- TransparentUpgradeableProxy (`0xf9775085d726e782e83585033b58606f7731ab18`, chain 999)
+- TransparentUpgradeableProxy (`0x93919784c523f39cacaa98ee0a9d96c3f32b593e`, chain 5000)
+- TransparentUpgradeableProxy (`0xf9775085d726e782e83585033b58606f7731ab18`, chain 5000)
+- TransparentUpgradeableProxy (`0x3376ebca0a85fc8d791b1001a571c41fdd61514a`, chain 8453)
+- TransparentUpgradeableProxy (`0x93919784c523f39cacaa98ee0a9d96c3f32b593e`, chain 8453)
+- TransparentUpgradeableProxy (`0x6b2a01a5f79deb4c2f3c0eda7b01df456fbd726a`, chain 34443)
+- TransparentUpgradeableProxy (`0x84e5c854a7ff9f49c888d69deca578d406c26800`, chain 34443)
+- TransparentUpgradeableProxy (`0x6b2a01a5f79deb4c2f3c0eda7b01df456fbd726a`, chain 42161)
+- TransparentUpgradeableProxy (`0x84e5c854a7ff9f49c888d69deca578d406c26800`, chain 42161)
+- TransparentUpgradeableProxy (`0x93919784c523f39cacaa98ee0a9d96c3f32b593e`, chain 80094)
+- TransparentUpgradeableProxy (`0xc3827a4bc8224ee2d116637023b124ced6db6e90`, chain 80094)
+- TransparentUpgradeableProxy (`0xf9775085d726e782e83585033b58606f7731ab18`, chain 80094)
+- uniBTC (`0x93919784c523f39cacaa98ee0a9d96c3f32b593e`, chain 999)
+- uniBTC (`0x552b0c6688fcae5cf0164f27fd129b882a42fa05`, chain 8453)
+- UnnamedContract (`0xa161132371c94299d215915d4cbc3b629e2059be`, chain 57073)
+- UnnamedContract (`0xd3c8da379d71a33bfee8875f87ac2748beb1d58d`, chain 57073)
+- VaultWithoutNative (`0x3376ebca0a85fc8d791b1001a571c41fdd61514a`, chain 10)
+- VaultWithoutNative (`0xdfc7d2d003a053b2e0490531e9317a59962b511e`, chain 56)
+- VaultWithoutNative (`0xe1061f0d0a2aaf273dc9e2077e8545417b838a8c`, chain 146)
+- VaultWithoutNative (`0x89b2c722abf9e1c8dd215e4e8352e0f293740aeb`, chain 5000)
+- VaultWithoutNative (`0xd4b6b3a3d0ec23de1f0674a7bd7d667f224a7509`, chain 8453)
+- VaultWithoutNative (`0xa93322a98335b791df87f20bb939fbe4d84ffadd`, chain 80094)
 
 ## Contract Surface Quality
 
@@ -148,77 +148,77 @@ The pinned logic-topography run contains 47 contract row(s) across arbitrum, bas
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| RockXETH | token | project_anchor | own_supporting | 1 | ethereum | unit-229230 | `0xf1376b...df51f4` | ✅ Audited |
-| brVault | unknown | project_anchor | own_supporting | 1 | berachain | unit-229254 | 2 deployments: berachain `0xd3c8da...b1d58d`; berachain `0xf97750...31ab18` | ✅ Audited |
+| RockXETH | token | project_anchor | own_supporting | 1 | ethereum | unit-229230 | `0xf1376bcef0f78459c0ed0ba5ddce976f1ddf51f4` | ✅ Audited |
+| brVault | unknown | project_anchor | own_supporting | 1 | berachain | unit-229254 | 2 deployments: berachain `0xd3c8da379d71a33bfee8875f87ac2748beb1d58d`; berachain `0xf9775085d726e782e83585033b58606f7731ab18` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (64)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| brVault | core_logic | project_anchor | own_supporting | 1 | bsc | unit-229244 | 2 deployments: bsc `0x1df46e...90ad93`; bsc `0x6518b4...1dba0f` | ⚠️ Unaudited |
-| VaultWithoutNative | core_logic | project_anchor | own_supporting | 1 | ethereum | unit-229226 | `0x047d41...10d6da` | ⚠️ Unaudited |
-| brVault | core_logic | project_anchor | own_supporting | 1 | ethereum | unit-229231 | `0x1419b4...0e3386` | ⚠️ Unaudited |
-| VaultWithoutNative | core_logic | project_anchor | own_supporting | 1 | bsc | unit-229246 | 2 deployments: bsc `0x84e5c8...c26800`; bsc `0xdfc7d2...2b511e` | ⚠️ Unaudited |
-| VaultWithoutNative | unknown | project_anchor | own_supporting | 1 | optimism | unit-229234 | 2 deployments: optimism `0x3376eb...61514a`; optimism `0xf97750...31ab18` | ⚠️ Unaudited |
-| EigenPod | core_logic | project_anchor | own_supporting | 1 | ethereum | unit-229228 | `0x926720...d01cce` | ⚠️ Unaudited |
-| Airdrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x109228...19bda9` | ⚠️ Unaudited |
-| Bedrock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xff7d6a...f56b41` | ⚠️ Unaudited |
-| brBTC | unknown | project_anchor | own_supporting | 1 | ethereum | unit-229229 | `0x2ec37d...8f6646` | ⚠️ Unaudited |
-| brBTC | unknown | project_anchor | own_supporting | 1 | bsc | unit-229245 | `0x733a6c...f01df3` | ⚠️ Unaudited |
-| brBTC | unknown | project_anchor | own_supporting | 1 | hyperliquid | unit-229266 | 2 deployments: hyperliquid `0xa16113...2059be`; hyperliquid `0xdfc7d2...2b511e` | ⚠️ Unaudited |
-| brBTC | unknown | project_anchor | own_supporting | 1 | base | unit-229260 | 2 deployments: base `0x3376eb...61514a`; base `0x89b2c7...740aeb` | ⚠️ Unaudited |
-| brBTC | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0xa16113...2059be`; base `0xdfc7d2...2b511e` | ⚠️ Unaudited |
-| brBTC | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0xd3c8da...b1d58d`; base `0xf97750...31ab18` | ⚠️ Unaudited |
-| brBTC | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | 2 deployments: bsc `0x5e8fd0...618ae0`; berachain `0x552b0c...42fa05` | ⚠️ Unaudited |
-| brBTC | unknown | project_anchor | own_supporting | 1 | berachain | unit-229249 | `0x939197...2b593e` | ⚠️ Unaudited |
-| brBTCOFTAdapter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbefc7d...d6633d` | ⚠️ Unaudited |
-| CCIPPeer | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xab3630...defa83`; ethereum `0xdf1925...756e59` | ⚠️ Unaudited |
-| CCIPPeer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 3 deployments: ethereum `0xd498e4...acc656`; bsc `0x3774af...4ba818`; sonic `0xd8b81b...a6649c` | ⚠️ Unaudited |
-| CCIPPeer | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0x5e3787...58d2f9` | ⚠️ Unaudited |
-| CCIPPeer | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | 2 deployments: sonic `0xab3630...defa83`; sonic `0xbefc7d...d6633d` | ⚠️ Unaudited |
-| cuniBTC | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x247918...af43f3` | ⚠️ Unaudited |
-| DelayRedeemRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3c4c2f...8faeae` | ⚠️ Unaudited |
-| Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x6f10dc...601370`; ethereum `0x79cf1c...e7c53d` | ⚠️ Unaudited |
-| FBTCProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | 3 deployments: bsc `0x3376eb...61514a`; mantle `0x02e3e2...af25ea`; mantle `0x11b380...66be7b` | ⚠️ Unaudited |
-| MultiBridgeToken | operational_periphery | project_anchor | own_supporting | 0 | linea | unit-229225 | 2 deployments: arbitrum `0x3d15fd...e2c3a0`; linea `0x15eefe...ef4d25` | ⚠️ Unaudited |
-| MultiBridgeToken | operational_periphery | project_anchor | own_supporting | 0 | scroll | unit-229222 | `0x15eefe...ef4d25` | ⚠️ Unaudited |
-| ProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 8 deployments: ethereum `0xc3827a...db6e90`; bsc `0x79f2c3...449597`; sonic `0x17c3b6...d551ab`; hyperliquid `0x9203ce...718031`; base `0x321c67...b42ef7`; base `0x886eaf...3616bf`; berachain `0x17c3b6...d551ab`; berachain `0x9203ce...718031` | ⚠️ Unaudited |
-| Restaking | unknown | project_anchor | own_supporting | 1 | ethereum | unit-229227 | `0x3f4eac...6e9850` | ⚠️ Unaudited |
-| Restaking | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x563a27...731fe5`; ethereum `0xb290be...69ec47` | ⚠️ Unaudited |
-| RockXETH | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3376eb...61514a` | ⚠️ Unaudited |
-| Sigma | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 6 deployments: optimism `0x58cb26...9d187d`; bsc `0x1f6c2e...257b5a`; mantle `0x3376eb...61514a`; mantle `0x58cb26...9d187d`; mode `0x1f6c2e...257b5a`; arbitrum `0x1f6c2e...257b5a` | ⚠️ Unaudited |
-| Sigma | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | 2 deployments: bsc `0x89b2c7...740aeb`; bsc `0x8cc6d6...853915` | ⚠️ Unaudited |
-| Sigma | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x169185...9fb932`; base `0x4519c8...5f0caf` | ⚠️ Unaudited |
-| Sigma | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x8cc6d6...853915` | ⚠️ Unaudited |
-| Sigma | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | berachain | n/a | 2 deployments: berachain `0x563a27...731fe5`; berachain `0xb290be...69ec47` | ⚠️ Unaudited |
-| Staking | unknown | project_anchor | own_supporting | 1 | ethereum | unit-229233 | 2 deployments: ethereum `0x4befa2...269e9d`; ethereum `0xf047d1...9df110` | ⚠️ Unaudited |
-| Staking | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x5c74e7...c51d6f`; ethereum `0xe0240d...88dea3` | ⚠️ Unaudited |
-| Staking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa93322...4ffadd` | ⚠️ Unaudited |
-| TransferProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | 4 deployments: optimism `0xbc48e8...33d03d`; bsc `0x981692...1d3b8d`; bsc `0xbc48e8...33d03d`; mantle `0x3e904a...33eab5` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | proxy | project_anchor | own_supporting | 0 | mode | unit-229219 | `0x6b2a01...bd726a` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | proxy | project_anchor | own_supporting | 0 | mode | unit-229220 | `0x84e5c8...c26800` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0x8cc6d6...853915` | ⚠️ Unaudited |
-| uniBTC | unknown | project_anchor | own_supporting | 1 | ethereum | unit-229232 | `0x004e9c...350568` | ⚠️ Unaudited |
-| uniBTC | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x20d702...634510`; ethereum `0xd8b81b...a6649c` | ⚠️ Unaudited |
-| uniBTC | unknown | project_anchor | own_supporting | 1 | optimism | unit-229235 | `0x939197...2b593e` | ⚠️ Unaudited |
-| uniBTC | unknown | project_anchor | own_supporting | 1 | bsc | unit-229247 | `0x6b2a01...bd726a` | ⚠️ Unaudited |
-| uniBTC | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 11 deployments: optimism `0x552b0c...42fa05`; optimism `0x89b2c7...740aeb`; optimism `0xdfc7d2...2b511e`; bsc `0x9203ce...718031`; bsc `0x94c7f8...cce2b3`; sonic `0x50fa14...1b8190`; mantle `0x552b0c...42fa05`; mantle `0xdfc7d2...2b511e`; mode `0x94c7f8...cce2b3`; arbitrum `0x94c7f8...cce2b3`; berachain `0x50fa14...1b8190` | ⚠️ Unaudited |
-| uniBTC | unknown | project_anchor | own_supporting | 1 | sonic | unit-229238 | `0xc3827a...db6e90` | ⚠️ Unaudited |
-| uniBTC | unknown | project_anchor | own_supporting | 1 | hyperliquid | unit-229265 | 2 deployments: hyperliquid `0x939197...2b593e`; hyperliquid `0xf97750...31ab18` | ⚠️ Unaudited |
-| uniBTC | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | hyperliquid | n/a | `0xd3c8da...b1d58d` | ⚠️ Unaudited |
-| uniBTC | unknown | project_anchor | own_supporting | 1 | mantle | unit-229243 | `0x939197...2b593e` | ⚠️ Unaudited |
-| uniBTC | unknown | project_anchor | own_supporting | 1 | base | unit-229258 | 2 deployments: base `0x552b0c...42fa05`; base `0x939197...2b593e` | ⚠️ Unaudited |
-| uniBTC | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-229241 | `0x6b2a01...bd726a` | ⚠️ Unaudited |
-| uniBTC | unknown | project_anchor | own_supporting | 1 | berachain | unit-229256 | `0xc3827a...db6e90` | ⚠️ Unaudited |
-| uniBTCOFTAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x17c3b6...d551ab`; ethereum `0x50fa14...1b8190` | ⚠️ Unaudited |
-| uniBTCRate | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x02643a...870c5e`; base `0xc651dd...c11680` | ⚠️ Unaudited |
-| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 9 deployments: ethereum `0x285afd...77b458`; optimism `0xd3c8da...b1d58d`; bsc `0x08cb45...46775d`; bsc `0x8891c1...c9c533`; mantle `0xd3c8da...b1d58d`; mode `0x08cb45...46775d`; mode `0xfa8c3e...f41e5f`; arbitrum `0x08cb45...46775d`; arbitrum `0xfa8c3e...f41e5f` | ⚠️ Unaudited |
-| VaultWithoutNative | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 3 deployments: bsc `0x552b0c...42fa05`; bsc `0xa16113...2059be`; bsc `0xd3c8da...b1d58d` | ⚠️ Unaudited |
-| VaultWithoutNative | unknown | project_anchor | own_supporting | 1 | sonic | unit-229239 | 2 deployments: sonic `0x20d702...634510`; sonic `0xe1061f...838a8c` | ⚠️ Unaudited |
-| VaultWithoutNative | unknown | project_anchor | own_supporting | 1 | mantle | unit-229242 | 2 deployments: mantle `0x89b2c7...740aeb`; mantle `0xf97750...31ab18` | ⚠️ Unaudited |
-| VaultWithoutNative | unknown | project_anchor | own_supporting | 1 | base | unit-229262 | 2 deployments: base `0x9f283b...dcfefb`; base `0xd4b6b3...4a7509` | ⚠️ Unaudited |
-| VaultWithoutNative | core_logic | project_anchor | own_supporting | 1 | arbitrum | unit-229240 | `0x84e5c8...c26800` | ⚠️ Unaudited |
-| VaultWithoutNative | unknown | project_anchor | own_supporting | 1 | berachain | unit-229251 | 2 deployments: berachain `0xa93322...4ffadd`; berachain `0xe0240d...88dea3` | ⚠️ Unaudited |
+| brVault | core_logic | project_anchor | own_supporting | 1 | bsc | unit-229244 | 2 deployments: bsc `0x1df46ec5e86fec4589b3fa7d60b6dc7ef890ad93`; bsc `0x6518b4c7fa1502246649106e69857e3b7d1dba0f` | ⚠️ Unaudited |
+| VaultWithoutNative | core_logic | project_anchor | own_supporting | 1 | ethereum | unit-229226 | `0x047d41f2544b7f63a8e991af2068a363d210d6da` | ⚠️ Unaudited |
+| brVault | core_logic | project_anchor | own_supporting | 1 | ethereum | unit-229231 | `0x1419b48e5c1f5ce413cf02d6dcbe1314170e3386` | ⚠️ Unaudited |
+| VaultWithoutNative | core_logic | project_anchor | own_supporting | 1 | bsc | unit-229246 | 2 deployments: bsc `0x84e5c854a7ff9f49c888d69deca578d406c26800`; bsc `0xdfc7d2d003a053b2e0490531e9317a59962b511e` | ⚠️ Unaudited |
+| VaultWithoutNative | unknown | project_anchor | own_supporting | 1 | optimism | unit-229234 | 2 deployments: optimism `0x3376ebca0a85fc8d791b1001a571c41fdd61514a`; optimism `0xf9775085d726e782e83585033b58606f7731ab18` | ⚠️ Unaudited |
+| EigenPod | core_logic | project_anchor | own_supporting | 1 | ethereum | unit-229228 | `0x926720ae39114d0e2043b79570a1e08f00d01cce` | ⚠️ Unaudited |
+| Airdrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x109228348113fe837207e033fdbce3bb5f19bda9` | ⚠️ Unaudited |
+| Bedrock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xff7d6a96ae471bbcd7713af9cb1feeb16cf56b41` | ⚠️ Unaudited |
+| brBTC | unknown | project_anchor | own_supporting | 1 | ethereum | unit-229229 | `0x2ec37d45fcae65d9787ecf71dc85a444968f6646` | ⚠️ Unaudited |
+| brBTC | unknown | project_anchor | own_supporting | 1 | bsc | unit-229245 | `0x733a6c29eda4a58931ae81b8d91e29f2eaf01df3` | ⚠️ Unaudited |
+| brBTC | unknown | project_anchor | own_supporting | 1 | hyperliquid | unit-229266 | 2 deployments: hyperliquid `0xa161132371c94299d215915d4cbc3b629e2059be`; hyperliquid `0xdfc7d2d003a053b2e0490531e9317a59962b511e` | ⚠️ Unaudited |
+| brBTC | unknown | project_anchor | own_supporting | 1 | base | unit-229260 | 2 deployments: base `0x3376ebca0a85fc8d791b1001a571c41fdd61514a`; base `0x89b2c722abf9e1c8dd215e4e8352e0f293740aeb` | ⚠️ Unaudited |
+| brBTC | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0xa161132371c94299d215915d4cbc3b629e2059be`; base `0xdfc7d2d003a053b2e0490531e9317a59962b511e` | ⚠️ Unaudited |
+| brBTC | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0xd3c8da379d71a33bfee8875f87ac2748beb1d58d`; base `0xf9775085d726e782e83585033b58606f7731ab18` | ⚠️ Unaudited |
+| brBTC | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | 2 deployments: bsc `0x5e8fd0f3273407643a5c55d343f1afa5d7618ae0`; berachain `0x552b0c6688fcae5cf0164f27fd129b882a42fa05` | ⚠️ Unaudited |
+| brBTC | unknown | project_anchor | own_supporting | 1 | berachain | unit-229249 | `0x93919784c523f39cacaa98ee0a9d96c3f32b593e` | ⚠️ Unaudited |
+| brBTCOFTAdapter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbefc7d6a15cc9bf839e64a16cd43abd55dd6633d` | ⚠️ Unaudited |
+| CCIPPeer | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xab3630cef046e2dfafd327eb8b7b96d627defa83`; ethereum `0xdf1925b7a0f56a3ed7f74be2a813ae8bba756e59` | ⚠️ Unaudited |
+| CCIPPeer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 3 deployments: ethereum `0xd498e4aee5585ff8099158e641c025a761acc656`; bsc `0x3774af7bb6e792963167588ae85b5ab8664ba818`; sonic `0xd8b81b8950981efba4c00eed567f903580a6649c` | ⚠️ Unaudited |
+| CCIPPeer | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0x5e3787fd0bf2178eb15dc03eef893dac0258d2f9` | ⚠️ Unaudited |
+| CCIPPeer | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | 2 deployments: sonic `0xab3630cef046e2dfafd327eb8b7b96d627defa83`; sonic `0xbefc7d6a15cc9bf839e64a16cd43abd55dd6633d` | ⚠️ Unaudited |
+| cuniBTC | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2479185e254d5efea735fc6ff7fd921ff0af43f3` | ⚠️ Unaudited |
+| DelayRedeemRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3c4c2f4d6e45c23df2b02b94168a5f0d378faeae` | ⚠️ Unaudited |
+| Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x6f10dc7dc5ff3cbb7c18b324abdc05fade601370`; ethereum `0x79cf1cf70b4aef73e15a7b14efb314d2fde7c53d` | ⚠️ Unaudited |
+| FBTCProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | 3 deployments: bsc `0x3376ebca0a85fc8d791b1001a571c41fdd61514a`; mantle `0x02e3e2c644601b18ad67a6f09155fe5581af25ea`; mantle `0x11b3808a5c0b612bc284ef7c2c6034c77a66be7b` | ⚠️ Unaudited |
+| MultiBridgeToken | operational_periphery | project_anchor | own_supporting | 0 | linea | unit-229225 | 2 deployments: arbitrum `0x3d15fd46ce9e551498328b1c83071d9509e2c3a0`; linea `0x15eefe5b297136b8712291b632404b66a8ef4d25` | ⚠️ Unaudited |
+| MultiBridgeToken | operational_periphery | project_anchor | own_supporting | 0 | scroll | unit-229222 | `0x15eefe5b297136b8712291b632404b66a8ef4d25` | ⚠️ Unaudited |
+| ProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 8 deployments: ethereum `0xc3827a4bc8224ee2d116637023b124ced6db6e90`; bsc `0x79f2c32204e997d4d49de3d45a6130d627449597`; sonic `0x17c3b688badd6dd11244096a9fbc4ae0add551ab`; hyperliquid `0x9203ce1bcded1a20f697e1780bc47d5b6d718031`; base `0x321c67ff4c3d313565131f67568bb6c12fb42ef7`; base `0x886eaf3d2b9dfd0a1dd24b82d56a2f487e3616bf`; berachain `0x17c3b688badd6dd11244096a9fbc4ae0add551ab`; berachain `0x9203ce1bcded1a20f697e1780bc47d5b6d718031` | ⚠️ Unaudited |
+| Restaking | unknown | project_anchor | own_supporting | 1 | ethereum | unit-229227 | `0x3f4eaceb930b0edfa78a1dfcbae5c5494e6e9850` | ⚠️ Unaudited |
+| Restaking | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x563a27728d298f21738ab694e95f344a42731fe5`; ethereum `0xb290bedd4302dc7160467c59692387073b69ec47` | ⚠️ Unaudited |
+| RockXETH | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3376ebca0a85fc8d791b1001a571c41fdd61514a` | ⚠️ Unaudited |
+| Sigma | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 6 deployments: optimism `0x58cb2637deca008a7e9aebbe9843fa7e4d9d187d`; bsc `0x1f6c2e81f09174d076aa19afd7c9c67d0e257b5a`; mantle `0x3376ebca0a85fc8d791b1001a571c41fdd61514a`; mantle `0x58cb2637deca008a7e9aebbe9843fa7e4d9d187d`; mode `0x1f6c2e81f09174d076aa19afd7c9c67d0e257b5a`; arbitrum `0x1f6c2e81f09174d076aa19afd7c9c67d0e257b5a` | ⚠️ Unaudited |
+| Sigma | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | 2 deployments: bsc `0x89b2c722abf9e1c8dd215e4e8352e0f293740aeb`; bsc `0x8cc6d6135c7088fdb3ebfb39b11e7cb2f9853915` | ⚠️ Unaudited |
+| Sigma | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x16918506c3a1217328b507898aff58d62c9fb932`; base `0x4519c8e32b080a778f2ae188d5fdcd98175f0caf` | ⚠️ Unaudited |
+| Sigma | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x8cc6d6135c7088fdb3ebfb39b11e7cb2f9853915` | ⚠️ Unaudited |
+| Sigma | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | berachain | n/a | 2 deployments: berachain `0x563a27728d298f21738ab694e95f344a42731fe5`; berachain `0xb290bedd4302dc7160467c59692387073b69ec47` | ⚠️ Unaudited |
+| Staking | unknown | project_anchor | own_supporting | 1 | ethereum | unit-229233 | 2 deployments: ethereum `0x4befa2aa9c305238aa3e0b5d17eb20c045269e9d`; ethereum `0xf047d19d064c541bb96f03a99620256b749df110` | ⚠️ Unaudited |
+| Staking | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x5c74e737dad608f21b90e1d155f5571541c51d6f`; ethereum `0xe0240d05ae9ef703e2b71f3f4eb326ea1888dea3` | ⚠️ Unaudited |
+| Staking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa93322a98335b791df87f20bb939fbe4d84ffadd` | ⚠️ Unaudited |
+| TransferProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | 4 deployments: optimism `0xbc48e8bb4e270e0c59cc1bc8885571b7bc33d03d`; bsc `0x98169228cb99ed26c1043ed8ca53a5cb371d3b8d`; bsc `0xbc48e8bb4e270e0c59cc1bc8885571b7bc33d03d`; mantle `0x3e904af0cf56b304d0d286c8fb6ea5a84e33eab5` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | project_anchor | own_supporting | 0 | mode | unit-229219 | `0x6b2a01a5f79deb4c2f3c0eda7b01df456fbd726a` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | project_anchor | own_supporting | 0 | mode | unit-229220 | `0x84e5c854a7ff9f49c888d69deca578d406c26800` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0x8cc6d6135c7088fdb3ebfb39b11e7cb2f9853915` | ⚠️ Unaudited |
+| uniBTC | unknown | project_anchor | own_supporting | 1 | ethereum | unit-229232 | `0x004e9c3ef86bc1ca1f0bb5c7662861ee93350568` | ⚠️ Unaudited |
+| uniBTC | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x20d70277afc6e1304b89fc1a30d84130f1634510`; ethereum `0xd8b81b8950981efba4c00eed567f903580a6649c` | ⚠️ Unaudited |
+| uniBTC | unknown | project_anchor | own_supporting | 1 | optimism | unit-229235 | `0x93919784c523f39cacaa98ee0a9d96c3f32b593e` | ⚠️ Unaudited |
+| uniBTC | unknown | project_anchor | own_supporting | 1 | bsc | unit-229247 | `0x6b2a01a5f79deb4c2f3c0eda7b01df456fbd726a` | ⚠️ Unaudited |
+| uniBTC | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 11 deployments: optimism `0x552b0c6688fcae5cf0164f27fd129b882a42fa05`; optimism `0x89b2c722abf9e1c8dd215e4e8352e0f293740aeb`; optimism `0xdfc7d2d003a053b2e0490531e9317a59962b511e`; bsc `0x9203ce1bcded1a20f697e1780bc47d5b6d718031`; bsc `0x94c7f81e3b0458daa721ca5e29f6ced05ccce2b3`; sonic `0x50fa1411201e2ac0361fb893e903b80f141b8190`; mantle `0x552b0c6688fcae5cf0164f27fd129b882a42fa05`; mantle `0xdfc7d2d003a053b2e0490531e9317a59962b511e`; mode `0x94c7f81e3b0458daa721ca5e29f6ced05ccce2b3`; arbitrum `0x94c7f81e3b0458daa721ca5e29f6ced05ccce2b3`; berachain `0x50fa1411201e2ac0361fb893e903b80f141b8190` | ⚠️ Unaudited |
+| uniBTC | unknown | project_anchor | own_supporting | 1 | sonic | unit-229238 | `0xc3827a4bc8224ee2d116637023b124ced6db6e90` | ⚠️ Unaudited |
+| uniBTC | unknown | project_anchor | own_supporting | 1 | hyperliquid | unit-229265 | 2 deployments: hyperliquid `0x93919784c523f39cacaa98ee0a9d96c3f32b593e`; hyperliquid `0xf9775085d726e782e83585033b58606f7731ab18` | ⚠️ Unaudited |
+| uniBTC | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | hyperliquid | n/a | `0xd3c8da379d71a33bfee8875f87ac2748beb1d58d` | ⚠️ Unaudited |
+| uniBTC | unknown | project_anchor | own_supporting | 1 | mantle | unit-229243 | `0x93919784c523f39cacaa98ee0a9d96c3f32b593e` | ⚠️ Unaudited |
+| uniBTC | unknown | project_anchor | own_supporting | 1 | base | unit-229258 | 2 deployments: base `0x552b0c6688fcae5cf0164f27fd129b882a42fa05`; base `0x93919784c523f39cacaa98ee0a9d96c3f32b593e` | ⚠️ Unaudited |
+| uniBTC | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-229241 | `0x6b2a01a5f79deb4c2f3c0eda7b01df456fbd726a` | ⚠️ Unaudited |
+| uniBTC | unknown | project_anchor | own_supporting | 1 | berachain | unit-229256 | `0xc3827a4bc8224ee2d116637023b124ced6db6e90` | ⚠️ Unaudited |
+| uniBTCOFTAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x17c3b688badd6dd11244096a9fbc4ae0add551ab`; ethereum `0x50fa1411201e2ac0361fb893e903b80f141b8190` | ⚠️ Unaudited |
+| uniBTCRate | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x02643a61f03783b8897c11fbd7b255dc0e870c5e`; base `0xc651dd42f634126ecd1f605d1173601e6fc11680` | ⚠️ Unaudited |
+| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 9 deployments: ethereum `0x285afd3688a20aa854b9aed89e538cf85177b458`; optimism `0xd3c8da379d71a33bfee8875f87ac2748beb1d58d`; bsc `0x08cb45f7fc43c25bbe830dacfe57d72cbc46775d`; bsc `0x8891c147041390efa5177f0a77d12cbdc4c9c533`; mantle `0xd3c8da379d71a33bfee8875f87ac2748beb1d58d`; mode `0x08cb45f7fc43c25bbe830dacfe57d72cbc46775d`; mode `0xfa8c3e48d8ad82b3eaf640163310927e85f41e5f`; arbitrum `0x08cb45f7fc43c25bbe830dacfe57d72cbc46775d`; arbitrum `0xfa8c3e48d8ad82b3eaf640163310927e85f41e5f` | ⚠️ Unaudited |
+| VaultWithoutNative | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 3 deployments: bsc `0x552b0c6688fcae5cf0164f27fd129b882a42fa05`; bsc `0xa161132371c94299d215915d4cbc3b629e2059be`; bsc `0xd3c8da379d71a33bfee8875f87ac2748beb1d58d` | ⚠️ Unaudited |
+| VaultWithoutNative | unknown | project_anchor | own_supporting | 1 | sonic | unit-229239 | 2 deployments: sonic `0x20d70277afc6e1304b89fc1a30d84130f1634510`; sonic `0xe1061f0d0a2aaf273dc9e2077e8545417b838a8c` | ⚠️ Unaudited |
+| VaultWithoutNative | unknown | project_anchor | own_supporting | 1 | mantle | unit-229242 | 2 deployments: mantle `0x89b2c722abf9e1c8dd215e4e8352e0f293740aeb`; mantle `0xf9775085d726e782e83585033b58606f7731ab18` | ⚠️ Unaudited |
+| VaultWithoutNative | unknown | project_anchor | own_supporting | 1 | base | unit-229262 | 2 deployments: base `0x9f283b0401d9698e86097fdc44820bcbe5dcfefb`; base `0xd4b6b3a3d0ec23de1f0674a7bd7d667f224a7509` | ⚠️ Unaudited |
+| VaultWithoutNative | core_logic | project_anchor | own_supporting | 1 | arbitrum | unit-229240 | `0x84e5c854a7ff9f49c888d69deca578d406c26800` | ⚠️ Unaudited |
+| VaultWithoutNative | unknown | project_anchor | own_supporting | 1 | berachain | unit-229251 | 2 deployments: berachain `0xa93322a98335b791df87f20bb939fbe4d84ffadd`; berachain `0xe0240d05ae9ef703e2b71f3f4eb326ea1888dea3` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -238,19 +238,19 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Proxy (impl: 0xf9775085d726e782e83585033b58606f7731ab18) | proxy | project_anchor | own_supporting | 1 | unichain | unit-229237 | 2 deployments: unichain `0xa16113...2059be`; unichain `0xf97750...31ab18` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2c914b...4c7e5f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-229217 | `0x9609af...440262` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x11b380...66be7b` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x11b380...66be7b` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x58cb26...9d187d` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0x9203ce...718031` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 1 | unichain | unit-229236 | 2 deployments: unichain `0x939197...2b593e`; unichain `0xd3c8da...b1d58d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sei | unit-229218 | `0xdfc7d2...2b511e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-229223 | `0xa16113...2059be` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-229224 | `0xd3c8da...b1d58d` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xdf1925...756e59` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xe1061f...838a8c` | ❓ Unverified |
+| Proxy (impl: 0xf9775085d726e782e83585033b58606f7731ab18) | proxy | project_anchor | own_supporting | 1 | unichain | unit-229237 | 2 deployments: unichain `0xa161132371c94299d215915d4cbc3b629e2059be`; unichain `0xf9775085d726e782e83585033b58606f7731ab18` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2c914ba874d94090ba0e6f56790bb8eb6d4c7e5f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-229217 | `0x9609af0490b96d7add7eea3554b1a944ee440262` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x11b3808a5c0b612bc284ef7c2c6034c77a66be7b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x11b3808a5c0b612bc284ef7c2c6034c77a66be7b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x58cb2637deca008a7e9aebbe9843fa7e4d9d187d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0x9203ce1bcded1a20f697e1780bc47d5b6d718031` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 1 | unichain | unit-229236 | 2 deployments: unichain `0x93919784c523f39cacaa98ee0a9d96c3f32b593e`; unichain `0xd3c8da379d71a33bfee8875f87ac2748beb1d58d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sei | unit-229218 | `0xdfc7d2d003a053b2e0490531e9317a59962b511e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-229223 | `0xa161132371c94299d215915d4cbc3b629e2059be` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-229224 | `0xd3c8da379d71a33bfee8875f87ac2748beb1d58d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xdf1925b7a0f56a3ed7f74be2a813ae8bba756e59` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xe1061f0d0a2aaf273dc9e2077e8545417b838a8c` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -286,32 +286,32 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| PeckShield-Audit-Report-RockXStaking-v1.0.pdf | RockXETH | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf1376b...df51f4` — deployed 2022-09-29 07:19:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| PeckShield-Audit-Report-RockXStaking-v1.0.pdf | RockXETH | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf1376bcef0f78459c0ed0ba5ddce976f1ddf51f4` — deployed 2022-09-29 07:19:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | PeckShield-Audit-Report-RockXStaking-v1.0.pdf | RockXStaking | unmatched — not counted | — | — | no |
-| blocksec_bedrock_br_v1.0-signed.pdf | brBTC | ambiguous — not counted | TransparentUpgradeableProxy (proxy) (alternative) `0x2ec37d...8f6646` — deployed 2024-12-19 09:07:23+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x733a6c...f01df3` — deployed 2024-12-19 09:21:45+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x939197...2b593e` — deployed 2025-02-06 08:36:50+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x3376eb...61514a` — deployed 2025-06-13 10:36:19+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0xdfc7d2...2b511e` — deployed 2025-08-12 10:36:25+03 — liveness: live (current_address_book_code)<br>0xa16113… (proxy) (alternative) `0xa16113...2059be` — deployed 2025-08-08 06:33:15+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| blocksec_bedrock_br_v1.0-signed.pdf | brVault | ambiguous — not counted | TransparentUpgradeableProxy (proxy) (alternative) `0x1df46e...90ad93` — deployed 2024-12-19 09:22:21+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0xf97750...31ab18` — deployed 2025-02-06 08:38:21+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x1419b4...0e3386` — deployed 2024-12-19 09:10:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| blocksec_bedrock_br_v1.0-signed.pdf | brBTC | ambiguous — not counted | TransparentUpgradeableProxy (proxy) (alternative) `0x2ec37d45fcae65d9787ecf71dc85a444968f6646` — deployed 2024-12-19 09:07:23+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x733a6c29eda4a58931ae81b8d91e29f2eaf01df3` — deployed 2024-12-19 09:21:45+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x93919784c523f39cacaa98ee0a9d96c3f32b593e` — deployed 2025-02-06 08:36:50+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x3376ebca0a85fc8d791b1001a571c41fdd61514a` — deployed 2025-06-13 10:36:19+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0xdfc7d2d003a053b2e0490531e9317a59962b511e` — deployed 2025-08-12 10:36:25+03 — liveness: live (current_address_book_code)<br>0xa16113… (proxy) (alternative) `0xa161132371c94299d215915d4cbc3b629e2059be` — deployed 2025-08-08 06:33:15+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| blocksec_bedrock_br_v1.0-signed.pdf | brVault | ambiguous — not counted | TransparentUpgradeableProxy (proxy) (alternative) `0x1df46ec5e86fec4589b3fa7d60b6dc7ef890ad93` — deployed 2024-12-19 09:22:21+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0xf9775085d726e782e83585033b58606f7731ab18` — deployed 2025-02-06 08:38:21+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x1419b48e5c1f5ce413cf02d6dcbe1314170e3386` — deployed 2024-12-19 09:10:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | blocksec_bedrock_unibtc_v1.0-signed.pdf | ccipPeer | unmatched — not counted | — | Listed in scope folder ccip/ and mentioned in findings | no |
 | blocksec_bedrock_unibtc_v1.0-signed.pdf | DelayRedeemRouter | unmatched — not counted | — | Listed in scope folder contracts/contracts/ and mentioned in findings | no |
 | blocksec_bedrock_unibtc_v1.0-signed.pdf | BitLayerNativeProxy | unmatched — not counted | — | Listed in scope folder contracts/contracts/ and mentioned in findings | no |
-| blocksec_bedrock_unibtc_v1.0-signed.pdf | Vault | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf97750...31ab18` — deployed 2025-02-06 08:38:21+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| blocksec_bedrock_unibtc_v1.0-signed.pdf | Vault | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf9775085d726e782e83585033b58606f7731ab18` — deployed 2025-02-06 08:38:21+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | blocksec_bedrock_unibtc_v1.0-signed.pdf | BR | unmatched — not counted | — | Listed in scope folder contracts/contracts/ and mentioned in findings | no |
 | blocksec_bedrock_unibtc_v1.0-signed.pdf | Bedrock | unmatched — not counted | — | Listed in scope folder contracts/contracts/ and mentioned in findings (contract name is Bedrock) | no |
 | blocksec_bedrock_unibtc_v1.0-signed.pdf | DirectBTCMinter | unmatched — not counted | — | Listed in scope folder contracts/contracts/ and mentioned in findings | no |
 | blocksec_bedrock_unibtc_v1.0-signed.pdf | MBTCProxy | unmatched — not counted | — | Listed in scope folder contracts/contracts/ and mentioned in findings | no |
 | blocksec_bedrock_unibtc_v1.0-signed.pdf | SwapProxy | unmatched — not counted | — | Listed in scope folder contracts/contracts/ and mentioned in findings | no |
-| PeckShield-Audit-Report-uniBTC-v1.0.pdf | Vault | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf97750...31ab18` — deployed 2025-02-06 08:38:21+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| PeckShield-Audit-Report-uniBTC-v1.0.pdf | Vault | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf9775085d726e782e83585033b58606f7731ab18` — deployed 2025-02-06 08:38:21+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | PeckShield-Audit-Report-uniBTC-v1.0.pdf | DelayRedeemRouter | unmatched — not counted | — | Listed in findings target DelayRedeemRouter | no |
-| code audit blocksec.pdf | uniBTC | ambiguous — not counted | TransparentUpgradeableProxy (proxy) (alternative) `0x939197...2b593e` — deployed 2025-06-13 10:29:21+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x939197...2b593e` — deployed 2024-07-08 06:29:23+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x6b2a01...bd726a` — deployed 2024-09-10 13:25:26+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x6b2a01...bd726a` — deployed 2024-09-02 12:27:34+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0xf97750...31ab18` — deployed 2025-08-12 10:33:49+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0xc3827a...db6e90` — deployed 2025-01-23 07:10:04+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x939197...2b593e` — deployed 2024-07-12 11:31:06+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0xc3827a...db6e90` — deployed 2025-02-17 11:53:33+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x004e9c...350568` — deployed 2024-04-13 11:41:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| code audit blocksec.pdf | uniBTC | ambiguous — not counted | TransparentUpgradeableProxy (proxy) (alternative) `0x93919784c523f39cacaa98ee0a9d96c3f32b593e` — deployed 2025-06-13 10:29:21+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x93919784c523f39cacaa98ee0a9d96c3f32b593e` — deployed 2024-07-08 06:29:23+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x6b2a01a5f79deb4c2f3c0eda7b01df456fbd726a` — deployed 2024-09-10 13:25:26+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x6b2a01a5f79deb4c2f3c0eda7b01df456fbd726a` — deployed 2024-09-02 12:27:34+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0xf9775085d726e782e83585033b58606f7731ab18` — deployed 2025-08-12 10:33:49+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0xc3827a4bc8224ee2d116637023b124ced6db6e90` — deployed 2025-01-23 07:10:04+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x93919784c523f39cacaa98ee0a9d96c3f32b593e` — deployed 2024-07-12 11:31:06+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0xc3827a4bc8224ee2d116637023b124ced6db6e90` — deployed 2025-02-17 11:53:33+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x004e9c3ef86bc1ca1f0bb5c7662861ee93350568` — deployed 2024-04-13 11:41:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | code audit blocksec.pdf | Peer | unmatched — not counted | — | listed in scope | no |
-| code audit blocksec.pdf | Vault | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf97750...31ab18` — deployed 2025-02-06 08:38:21+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| PeckShield-Audit-Report-Bedrock-v1.0.pdf | RockXETH | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf1376b...df51f4` — deployed 2022-09-29 07:19:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| code audit blocksec.pdf | Vault | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf9775085d726e782e83585033b58606f7731ab18` — deployed 2025-02-06 08:38:21+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| PeckShield-Audit-Report-Bedrock-v1.0.pdf | RockXETH | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf1376bcef0f78459c0ed0ba5ddce976f1ddf51f4` — deployed 2022-09-29 07:19:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | PeckShield-Audit-Report-Bedrock-v1.0.pdf | RockXStaking | unmatched — not counted | — | — | no |
 | PeckShield-Audit-Report-RockXStaking-IOTEX-v1.0.pdf | IOTXClear | unmatched — not counted | — | Target in finding PVE-001 | no |
 | PeckShield-Audit-Report-RockXStaking-IOTEX-v1.0.pdf | IOTXStaking | unmatched — not counted | — | Target in finding PVE-002 and PVE-003 | no |
 | blocksec_bedrock_unibtc_v1.1-signed.pdf | ccipPeer | unmatched — not counted | — | Listed in scope folder ccip/ and referenced in findings | no |
 | blocksec_bedrock_unibtc_v1.1-signed.pdf | DelayRedeemRouter | unmatched — not counted | — | Listed in scope folder contracts/contracts/ and referenced in findings | no |
 | blocksec_bedrock_unibtc_v1.1-signed.pdf | BitLayerNativeProxy | unmatched — not counted | — | Referenced in finding 2.1.2 | no |
-| blocksec_bedrock_unibtc_v1.1-signed.pdf | Vault | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf97750...31ab18` — deployed 2025-02-06 08:38:21+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| blocksec_bedrock_unibtc_v1.1-signed.pdf | Vault | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xf9775085d726e782e83585033b58606f7731ab18` — deployed 2025-02-06 08:38:21+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | blocksec_bedrock_unibtc_v1.1-signed.pdf | BR | unmatched — not counted | — | Listed in scope folder contracts/contracts/ and referenced in finding 2.3.1 | no |
 | blocksec_bedrock_unibtc_v1.1-signed.pdf | DirectBTCMinter | unmatched — not counted | — | Listed in scope folder contracts/contracts/ and referenced in finding 2.3.2 | no |
 | blocksec_bedrock_unibtc_v1.1-signed.pdf | MBTCProxy | unmatched — not counted | — | Listed in scope folder contracts/contracts/ and referenced in finding 2.3.4 | no |
@@ -324,14 +324,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| optimism | `0x3376eb...61514a` | VaultWithoutNative | unknown | $865.59 | Verified native implementation with $865.59 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | `0xa16113...2059be` | brBTC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | `0x939197...2b593e` | uniBTC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x552b0c...42fa05` | uniBTC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | `0x20d702...634510` | VaultWithoutNative | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| mantle | `0x89b2c7...740aeb` | VaultWithoutNative | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x9f283b...dcfefb` | VaultWithoutNative | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | `0xa93322...4ffadd` | VaultWithoutNative | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x3376ebca0a85fc8d791b1001a571c41fdd61514a` | VaultWithoutNative | unknown | $865.59 | Verified native implementation with $865.59 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | `0xa161132371c94299d215915d4cbc3b629e2059be` | brBTC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | `0x93919784c523f39cacaa98ee0a9d96c3f32b593e` | uniBTC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x552b0c6688fcae5cf0164f27fd129b882a42fa05` | uniBTC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0x20d70277afc6e1304b89fc1a30d84130f1634510` | VaultWithoutNative | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| mantle | `0x89b2c722abf9e1c8dd215e4e8352e0f293740aeb` | VaultWithoutNative | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x9f283b0401d9698e86097fdc44820bcbe5dcfefb` | VaultWithoutNative | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | `0xa93322a98335b791df87f20bb939fbe4d84ffadd` | VaultWithoutNative | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

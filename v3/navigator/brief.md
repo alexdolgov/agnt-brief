@@ -90,18 +90,18 @@ The pinned logic-topography run contains 9 contract row(s) across arbitrum, soni
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| EIP173Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | `0x7b9e96...71ce4f` | ⚠️ Unaudited |
-| FastPriceEvents | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-248549 | `0xf75d3c...f4221e` | ⚠️ Unaudited |
-| GLP | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-248535 | `0x41cd8c...045eb6` | ⚠️ Unaudited |
-| GlpManager | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-248538 | `0x65dcb3...177780` | ⚠️ Unaudited |
-| MintableBaseToken | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-248532 | `0x2d270f...8a7493` | ⚠️ Unaudited |
-| NAVI | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x6881b8...3682f3` | ⚠️ Unaudited |
-| PositionRouter | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-248534 | `0x3b2732...a6faf5` | ⚠️ Unaudited |
-| PriceFeedTimelock | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-248544 | `0xb2a477...ef9ecd` | ⚠️ Unaudited |
-| RewardTracker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xef8770...6b3dc4` | ⚠️ Unaudited |
-| Router | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-248527 | `0x01e9b3...50f320` | ⚠️ Unaudited |
-| Vault | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-248533 | `0x304951...5b3d5b` | ⚠️ Unaudited |
-| VaultPriceFeed | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-248540 | `0x7b9e96...71ce4f` | ⚠️ Unaudited |
+| EIP173Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | `0x7b9e962dd8aed0db9a1d8a2d7a962ad8b871ce4f` | ⚠️ Unaudited |
+| FastPriceEvents | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-248549 | `0xf75d3c6f20fb65cc0b8f84687e5cbac3d7f4221e` | ⚠️ Unaudited |
+| GLP | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-248535 | `0x41cd8cafc24a771031b9eb9c57cfc94d86045eb6` | ⚠️ Unaudited |
+| GlpManager | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-248538 | `0x65dcb38637b526305be55f14b24a4ab2bd177780` | ⚠️ Unaudited |
+| MintableBaseToken | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-248532 | `0x2d270f66fee6ac9e27ff6551af5a8cfb5c8a7493` | ⚠️ Unaudited |
+| NAVI | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x6881b80ea7c858e4aeef63893e18a8a36f3682f3` | ⚠️ Unaudited |
+| PositionRouter | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-248534 | `0x3b2732c1e5a248bbdd0315e9e8845c64f5a6faf5` | ⚠️ Unaudited |
+| PriceFeedTimelock | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-248544 | `0xb2a477c6ba5e96f6decbced836cb7d3d32ef9ecd` | ⚠️ Unaudited |
+| RewardTracker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xef8770e9506a8d1aae3d599327a39cf14b6b3dc4` | ⚠️ Unaudited |
+| Router | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-248527 | `0x01e9b35785ef3f7ef2677c371442976bd550f320` | ⚠️ Unaudited |
+| Vault | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-248533 | `0x304951d7172bcada54ccac1e4674862b3d5b3d5b` | ⚠️ Unaudited |
+| VaultPriceFeed | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-248540 | `0x7b9e962dd8aed0db9a1d8a2d7a962ad8b871ce4f` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

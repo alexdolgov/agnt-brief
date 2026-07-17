@@ -90,45 +90,45 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AnkrETHOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6bea94...12f9fc` | ⚠️ Unaudited |
-| BondController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x84d7a3...19cc04` | ⚠️ Unaudited |
-| BondFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x019fa3...b04ac0`; ethereum `0x17550f...91fd54` | ⚠️ Unaudited |
-| ButtonswapFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x75a92d...9ba64a` | ⚠️ Unaudited |
-| ButtonswapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 4 deployments: ethereum `0x5c2539...fb1d6e`; ethereum `0x6cf6ac...f072be`; base `0x4322f6...d710f1`; base `0x8648e2...6529a5` | ⚠️ Unaudited |
-| ButtonToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 5 deployments: ethereum `0x97040a...f4eac5`; ethereum `0x9af5c1...010fb3`; ethereum `0xab4691...53e9f9`; base `0x23aafb...daca85`; base `0x5f9348...ed4cc1` | ⚠️ Unaudited |
-| ButtonTokenFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 5 deployments: ethereum `0x65bc95...3bc021`; ethereum `0x84d0f1...b51960`; ethereum `0xfa5914...54adc5`; base `0x5f5146...0373e1`; base `0x6a6bd9...57144a` | ⚠️ Unaudited |
-| ButtonTokenWethRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb08c5e...e80a0d` | ⚠️ Unaudited |
-| ETHxOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x18f4f8...5b62cf`; ethereum `0x6e2528...282f24` | ⚠️ Unaudited |
-| GenericButtonswapRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: ethereum `0xf4a25f...657071`; base `0xa6c9d0...ed2e2f` | ⚠️ Unaudited |
-| GeyserRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x58c3fc...6ea1c1` | ⚠️ Unaudited |
-| GeyserViewer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe89776...c2777f` | ⚠️ Unaudited |
-| InceptionTokenOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x44e706...7187f4` | ⚠️ Unaudited |
-| MarzMint | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5ea186...aefd64` | ⚠️ Unaudited |
-| MarzResources | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x46a731...0d24c2` | ⚠️ Unaudited |
-| MarzResources | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x7532e3...1be5cb`; ethereum `0xc4a0a5...ae4d45` | ⚠️ Unaudited |
-| MarzResources | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x75376c...50b3fa`; ethereum `0xf77648...22fd30` | ⚠️ Unaudited |
-| MevEthOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x46f1a3...87663b` | ⚠️ Unaudited |
-| MultiMine | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1e938c...ef5006` | ⚠️ Unaudited |
-| PairLauncher | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x026651...59d314`; ethereum `0xb0c0a7...5476e3`; ethereum `0xcabb66...1b9785`; ethereum `0xd1a59b...e7e0be`; ethereum `0xdced44...79e869` | ⚠️ Unaudited |
-| PartyVaultRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa1889f...cf2b0e` | ⚠️ Unaudited |
-| Plot | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3de5a3...e2e493` | ⚠️ Unaudited |
-| Plot | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x6795ee...18519a`; ethereum `0xd0ba8b...d3142b` | ⚠️ Unaudited |
-| Points2Manager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: ethereum `0x9dd61f...5fe14b`; base `0x47d44e...136243`; base `0x814dbb...e596d0` | ⚠️ Unaudited |
-| PointsVaultExtension | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x7c4ec8...da7f0c`; ethereum `0xaacc96...366145`; base `0xd16ec9...e6caa2` | ⚠️ Unaudited |
-| PowerSwitchFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x812599...05a9e0` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdb4229...d99652` | ⚠️ Unaudited |
-| RewardPoolFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x20c0fe...f89bea` | ⚠️ Unaudited |
-| RouterV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xac8977...023ca9` | ⚠️ Unaudited |
-| SDaiOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb36ffe...88a9f1` | ⚠️ Unaudited |
-| SwETHOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x25e9a0...69da17` | ⚠️ Unaudited |
-| Tranche | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x367874...6af137` | ⚠️ Unaudited |
-| TrancheFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x124e3c...067de9` | ⚠️ Unaudited |
-| UnbuttonToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x37a528...0165de` | ⚠️ Unaudited |
-| UnbuttonTokenFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x75ff64...fc8b8f` | ⚠️ Unaudited |
-| UniETHOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3a6d95...542d6b` | ⚠️ Unaudited |
-| UniV3LoanRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0x154797...5f9468`; ethereum `0x26fa99...915464`; ethereum `0x5bdd08...4d253e`; ethereum `0xb482c2...afc73d` | ⚠️ Unaudited |
-| UniversalVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc1ec9d...09f053` | ⚠️ Unaudited |
-| VaultFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc905e4...0ad2c9` | ⚠️ Unaudited |
+| AnkrETHOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6bea94c2651b1ccda2c15a12ca6e7e9e8512f9fc` | ⚠️ Unaudited |
+| BondController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x84d7a34f3efbe552b2855d158b10c3970b19cc04` | ⚠️ Unaudited |
+| BondFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x019fa32d71bb96922695c6cdea33774fdeb04ac0`; ethereum `0x17550f48c61915a67f216a083ced89e04d91fd54` | ⚠️ Unaudited |
+| ButtonswapFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x75a92dfb38c3506dce3bbb5eb32a10852f9ba64a` | ⚠️ Unaudited |
+| ButtonswapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 4 deployments: ethereum `0x5c2539bdb5487877876265cd3f31500e1afb1d6e`; ethereum `0x6cf6ac4712fe64cda8138009b042b36e80f072be`; base `0x4322f635ac515bb3b6eda73a33e3955443d710f1`; base `0x8648e218d128bf89d48b4d3b797990fc5f6529a5` | ⚠️ Unaudited |
+| ButtonToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 5 deployments: ethereum `0x97040ab746803e7645779d2383da216e8ef4eac5`; ethereum `0x9af5c1fa62d0dedb7be3c68939a4b2d96d010fb3`; ethereum `0xab4691ad011adb810610e9610a74be77c553e9f9`; base `0x23aafbcd479d14ca802bd39d70a03c7384daca85`; base `0x5f9348a845f0fe74bcc343c2cde11b65f1ed4cc1` | ⚠️ Unaudited |
+| ButtonTokenFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 5 deployments: ethereum `0x65bc95ac790f8afd47fc9b83640bf722a73bc021`; ethereum `0x84d0f1cd873122f2a87673e079ea69cd80b51960`; ethereum `0xfa5914837f3c225a9e6ae93f9e35d2d85f54adc5`; base `0x5f51466c781e74c53c043f441e700d3bb80373e1`; base `0x6a6bd97dbb3001dbc306cffefa8f1b900457144a` | ⚠️ Unaudited |
+| ButtonTokenWethRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb08c5e2e8e73d0fb9842171496b2da04e8e80a0d` | ⚠️ Unaudited |
+| ETHxOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x18f4f8d9aef590c8af2a70f46d46572f955b62cf`; ethereum `0x6e252827a23f5dd89185395d9aea19fe0c282f24` | ⚠️ Unaudited |
+| GenericButtonswapRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: ethereum `0xf4a25f7d15fa822e060f64d0eb83bf7200657071`; base `0xa6c9d0cb8fff7a47db726ab8b31206dd69ed2e2f` | ⚠️ Unaudited |
+| GeyserRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x58c3fc934df9fdb469add40245622d51d96ea1c1` | ⚠️ Unaudited |
+| GeyserViewer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe897769d639f68005e2bf56e8f7f11094ac2777f` | ⚠️ Unaudited |
+| InceptionTokenOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x44e7061f723ff38c501d6334b23337dad87187f4` | ⚠️ Unaudited |
+| MarzMint | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5ea1864ce8669036f0eb082e29fffad4adaefd64` | ⚠️ Unaudited |
+| MarzResources | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x46a731c5a16fa8b4b085287e4b98e505990d24c2` | ⚠️ Unaudited |
+| MarzResources | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x7532e3e303e721b81f8a2492344e8b15f11be5cb`; ethereum `0xc4a0a55a949012b8b52611f4e78cd9e924ae4d45` | ⚠️ Unaudited |
+| MarzResources | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x75376c8b1afc6a6d7cd18617cf2ada431d50b3fa`; ethereum `0xf7764821280afc17e010a149346e1fbb7822fd30` | ⚠️ Unaudited |
+| MevEthOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x46f1a3889552c3e4bab3a4572ed3951ecc87663b` | ⚠️ Unaudited |
+| MultiMine | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1e938ce66af91b02ef7e1c753ef3efb692ef5006` | ⚠️ Unaudited |
+| PairLauncher | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x0266513bb58095b161afe978f3f06bbd7659d314`; ethereum `0xb0c0a78d7b2191bbb2f534989d6415cd365476e3`; ethereum `0xcabb66c9d320e7b267076770c2855ccf881b9785`; ethereum `0xd1a59b7900633f7aa78feec1db2938afd5e7e0be`; ethereum `0xdced448603e3c1e0f2dfe136b2f9ba2f5779e869` | ⚠️ Unaudited |
+| PartyVaultRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa1889fe86ef694be1470e4a0ce5fd9f030cf2b0e` | ⚠️ Unaudited |
+| Plot | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3de5a3735699e689d4e2f2c68204553776e2e493` | ⚠️ Unaudited |
+| Plot | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x6795eef1ac76ee5dbb1e9eb219e72171ad18519a`; ethereum `0xd0ba8b19b0f5e25c11ed233302e75794c9d3142b` | ⚠️ Unaudited |
+| Points2Manager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: ethereum `0x9dd61f638712adc3f7d92ceaa08253e2ef5fe14b`; base `0x47d44ec7b0608f9bc34235817f36ab0875136243`; base `0x814dbbf5ce11e5e171f5154be95e620a6fe596d0` | ⚠️ Unaudited |
+| PointsVaultExtension | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x7c4ec89c64286976e471a9d672e7c4fdddda7f0c`; ethereum `0xaacc96f18aac0dd16a8c854e9a4f14b55a366145`; base `0xd16ec98b906a17fe7e1fccd0b53858da87e6caa2` | ⚠️ Unaudited |
+| PowerSwitchFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x812599fc02981a1c22c370119d5d3081e805a9e0` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdb422932496bc97aa626ae9f8efaf1344cd99652` | ⚠️ Unaudited |
+| RewardPoolFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x20c0fe2f2f49e3c56879635dec82e5857ff89bea` | ⚠️ Unaudited |
+| RouterV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xac89770f49700b38bb9174a8c6a951149e023ca9` | ⚠️ Unaudited |
+| SDaiOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb36ffea8bd59728970faab35ac9d29b90288a9f1` | ⚠️ Unaudited |
+| SwETHOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x25e9a0f785b63dd721c28dfc0b338551af69da17` | ⚠️ Unaudited |
+| Tranche | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x36787412f5ddc051c95c313138b8ae4e396af137` | ⚠️ Unaudited |
+| TrancheFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x124e3ccc6e8fd6f949c9f1773e1c465b99067de9` | ⚠️ Unaudited |
+| UnbuttonToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x37a528b28062096d994a0569db6be5a0550165de` | ⚠️ Unaudited |
+| UnbuttonTokenFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x75ff649d6119fab43dea5e5e9e02586f27fc8b8f` | ⚠️ Unaudited |
+| UniETHOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3a6d958dd0aa07ddd4d2cf9c8a91b3fd3e542d6b` | ⚠️ Unaudited |
+| UniV3LoanRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0x154797797df7668855045d6737d38e80dd5f9468`; ethereum `0x26fa9931ac24b2abdc2e2de23ae722ede5915464`; ethereum `0x5bdd0812f0f6ce66024ddaa92650f838e94d253e`; ethereum `0xb482c27d2753a734196d330d07b6ffa8e9afc73d` | ⚠️ Unaudited |
+| UniversalVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc1ec9d57f5295a82e8bd24e045db83100d09f053` | ⚠️ Unaudited |
+| VaultFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc905e46a1207dc4a4a19538f21fc7d0c890ad2c9` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -148,10 +148,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x626e7d...6d5cce` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x83f639...508798` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa94fd1...571a84` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe8a48c...771cd4` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x626e7dfaa0b8cd68c4f6831d7f27601a6f6d5cce` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x83f6392aab030043420d184a025e0cd63f508798` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa94fd1efdecaac484601a4537efbdb016a571a84` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe8a48c1a4f0584c4d3013c2707e0f3b61e771cd4` | ❓ Unverified |
 
 ## Audit Inventory
 

@@ -61,8 +61,8 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| PodMaster | unknown | bsc | n/a | [`0xdee627...687c0d`](./contracts/bsc-56/0xdee627eaab378ec57ecfb94b389b718ef3687c0d/) | ⚠️ Unaudited |
-| PodToken | token | bsc | n/a | [`0xdded22...74c78f`](./contracts/bsc-56/0xdded222297b3d08dafdac8f65eeb799b2674c78f/) | ⚠️ Unaudited |
+| PodMaster | unknown | bsc | n/a | [`0xdee627eaab378ec57ecfb94b389b718ef3687c0d`](./contracts/bsc-56/0xdee627eaab378ec57ecfb94b389b718ef3687c0d/) | ⚠️ Unaudited |
+| PodToken | token | bsc | n/a | [`0xdded222297b3d08dafdac8f65eeb799b2674c78f`](./contracts/bsc-56/0xdded222297b3d08dafdac8f65eeb799b2674c78f/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -82,7 +82,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0x929b69...e5e8b9` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x929b6932e43f85d4ab405d6ce3271a1f7ee5e8b9` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -96,8 +96,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0xdee627...687c0d`](./contracts/bsc-56/0xdee627eaab378ec57ecfb94b389b718ef3687c0d/) | PodMaster | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xdded22...74c78f`](./contracts/bsc-56/0xdded222297b3d08dafdac8f65eeb799b2674c78f/) | PodToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xdee627eaab378ec57ecfb94b389b718ef3687c0d`](./contracts/bsc-56/0xdee627eaab378ec57ecfb94b389b718ef3687c0d/) | PodMaster | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xdded222297b3d08dafdac8f65eeb799b2674c78f`](./contracts/bsc-56/0xdded222297b3d08dafdac8f65eeb799b2674c78f/) | PodToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

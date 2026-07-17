@@ -52,39 +52,39 @@ The pinned logic-topography run contains 11 contract row(s) across arbitrum, bas
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x0b2b2b...955ef9`, chain 1)
-- UnnamedContract (`0x0c1c1c...b71f6e`, chain 1)
-- UnnamedContract (`0xffb200...427f24`, chain 1)
-- UnnamedContract (`0xffc100...b7cf4e`, chain 1)
-- UnnamedContract (`0x0a1a1a...ed82ef`, chain 8453)
-- UnnamedContract (`0x0b2b2b...955ef9`, chain 8453)
-- UnnamedContract (`0x0c1c1c...b71f6e`, chain 8453)
-- UnnamedContract (`0xffa100...b4bae5`, chain 8453)
-- UnnamedContract (`0xffb200...427f24`, chain 8453)
-- UnnamedContract (`0xffc100...b7cf4e`, chain 8453)
-- UnnamedContract (`0x0a1a1a...ed82ef`, chain 9745)
-- UnnamedContract (`0x0b2b2b...955ef9`, chain 9745)
-- UnnamedContract (`0xffa100...b4bae5`, chain 9745)
-- UnnamedContract (`0xffb200...427f24`, chain 9745)
-- UnnamedContract (`0x0b2b2b...955ef9`, chain 42161)
-- UnnamedContract (`0x0c1c1c...b71f6e`, chain 42161)
-- UnnamedContract (`0x24a92e...bd1392`, chain 42161)
-- UnnamedContract (`0x80e314...5aee37`, chain 42161)
-- UnnamedContract (`0x9ddfd4...4b1a9e`, chain 42161)
-- UnnamedContract (`0xea0eae...b35a1e`, chain 42161)
-- UnnamedContract (`0xffa100...b4bae5`, chain 42161)
-- UnnamedContract (`0xffb200...427f24`, chain 42161)
-- AmortizedInterestRateModel (`0xe01520...6fa18d`, chain 42161)
-- ChainlinkPriceOracle (`0xd40a52...741ebc`, chain 42161)
-- ChipGovernor (`0x0ddc1d...847b26`, chain 42161)
-- DepositTimelock (`0x0d710c...23c9f8`, chain 42161)
-- LoanRouter (`0x0c2ed1...9597d1`, chain 42161)
-- OAdapter (`0xffa100...b4bae5`, chain 1)
-- OLockAdapter (`0xffc100...b7cf4e`, chain 42161)
-- OToken (`0x0a1a1a...ed82ef`, chain 1)
-- StakedChip (`0x0d2d2d...5c4d4a`, chain 42161)
-- TimelockController (`0x0eec1e...398221`, chain 42161)
-- USDai (`0x0a1a1a...ed82ef`, chain 42161)
+- UnnamedContract (`0x0b2b2b2076d95dda7817e785989fe353fe955ef9`, chain 1)
+- UnnamedContract (`0x0c1c1c109fe34733fca54b82d7b46b75cfb71f6e`, chain 1)
+- UnnamedContract (`0xffb20098fd7b8e84762eea4609f299d101427f24`, chain 1)
+- UnnamedContract (`0xffc1002994b1e9a744036d0abdaefe8356b7cf4e`, chain 1)
+- UnnamedContract (`0x0a1a1a107e45b7ced86833863f482bc5f4ed82ef`, chain 8453)
+- UnnamedContract (`0x0b2b2b2076d95dda7817e785989fe353fe955ef9`, chain 8453)
+- UnnamedContract (`0x0c1c1c109fe34733fca54b82d7b46b75cfb71f6e`, chain 8453)
+- UnnamedContract (`0xffa10065ce1d1c42fabc46e06b84ed8ffeb4bae5`, chain 8453)
+- UnnamedContract (`0xffb20098fd7b8e84762eea4609f299d101427f24`, chain 8453)
+- UnnamedContract (`0xffc1002994b1e9a744036d0abdaefe8356b7cf4e`, chain 8453)
+- UnnamedContract (`0x0a1a1a107e45b7ced86833863f482bc5f4ed82ef`, chain 9745)
+- UnnamedContract (`0x0b2b2b2076d95dda7817e785989fe353fe955ef9`, chain 9745)
+- UnnamedContract (`0xffa10065ce1d1c42fabc46e06b84ed8ffeb4bae5`, chain 9745)
+- UnnamedContract (`0xffb20098fd7b8e84762eea4609f299d101427f24`, chain 9745)
+- UnnamedContract (`0x0b2b2b2076d95dda7817e785989fe353fe955ef9`, chain 42161)
+- UnnamedContract (`0x0c1c1c109fe34733fca54b82d7b46b75cfb71f6e`, chain 42161)
+- UnnamedContract (`0x24a92e28a8c5d8812dcfaf44bcb20cc0babd1392`, chain 42161)
+- UnnamedContract (`0x80e3146fb2328fe1b79f92f5a3a6bf35515aee37`, chain 42161)
+- UnnamedContract (`0x9ddfd49ac4689cf894203794d792dcb38e4b1a9e`, chain 42161)
+- UnnamedContract (`0xea0eae46bc15cd975f0545ba35584d96c7b35a1e`, chain 42161)
+- UnnamedContract (`0xffa10065ce1d1c42fabc46e06b84ed8ffeb4bae5`, chain 42161)
+- UnnamedContract (`0xffb20098fd7b8e84762eea4609f299d101427f24`, chain 42161)
+- AmortizedInterestRateModel (`0xe01520fd4f249efa4d905f60b6b54e2ade6fa18d`, chain 42161)
+- ChainlinkPriceOracle (`0xd40a5298c6fced81eb5da8bb1f9328b16f741ebc`, chain 42161)
+- ChipGovernor (`0x0ddc1dd03c58e425f96567679b52f349db847b26`, chain 42161)
+- DepositTimelock (`0x0d710cc05f34d2ead9fba3c78d53d76a0623c9f8`, chain 42161)
+- LoanRouter (`0x0c2ed170f2bb1df1a44292ad621b577b3c9597d1`, chain 42161)
+- OAdapter (`0xffa10065ce1d1c42fabc46e06b84ed8ffeb4bae5`, chain 1)
+- OLockAdapter (`0xffc1002994b1e9a744036d0abdaefe8356b7cf4e`, chain 42161)
+- OToken (`0x0a1a1a107e45b7ced86833863f482bc5f4ed82ef`, chain 1)
+- StakedChip (`0x0d2d2d20962f2468566f4d1a4ddeb482915c4d4a`, chain 42161)
+- TimelockController (`0x0eec1ee03add82342a6ac68a9c5cf62cb2398221`, chain 42161)
+- USDai (`0x0a1a1a107e45b7ced86833863f482bc5f4ed82ef`, chain 42161)
 
 ## Contract Surface Quality
 
@@ -129,60 +129,60 @@ The pinned logic-topography run contains 11 contract row(s) across arbitrum, bas
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AmortizedInterestRateModel | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-395517 | `0xe01520...6fa18d` | ✅ Audited |
-| ChainlinkPriceOracle | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-395516 | `0xd40a52...741ebc` | ✅ Audited |
-| ChipGovernor | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-395511 | `0x0ddc1d...847b26` | ✅ Audited |
-| DepositTimelock | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-395535 | `0x0d710c...23c9f8` | ✅ Audited |
-| LoanRouter | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-395536 | `0x0c2ed1...9597d1` | ✅ Audited |
-| OAdapter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-395506 | `0xffa100...b4bae5` | ✅ Audited |
-| OToken | unknown | project_anchor | own_supporting | 1 | ethereum | unit-395532 | `0x0a1a1a...ed82ef` | ✅ Audited |
-| StakedChip | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-395533 | `0x0d2d2d...5c4d4a` | ✅ Audited |
-| TimelockController | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-395512 | `0x0eec1e...398221` | ✅ Audited |
-| USDai | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-395534 | `0x0a1a1a...ed82ef` | ✅ Audited |
+| AmortizedInterestRateModel | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-395517 | `0xe01520fd4f249efa4d905f60b6b54e2ade6fa18d` | ✅ Audited |
+| ChainlinkPriceOracle | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-395516 | `0xd40a5298c6fced81eb5da8bb1f9328b16f741ebc` | ✅ Audited |
+| ChipGovernor | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-395511 | `0x0ddc1dd03c58e425f96567679b52f349db847b26` | ✅ Audited |
+| DepositTimelock | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-395535 | `0x0d710cc05f34d2ead9fba3c78d53d76a0623c9f8` | ✅ Audited |
+| LoanRouter | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-395536 | `0x0c2ed170f2bb1df1a44292ad621b577b3c9597d1` | ✅ Audited |
+| OAdapter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-395506 | `0xffa10065ce1d1c42fabc46e06b84ed8ffeb4bae5` | ✅ Audited |
+| OToken | unknown | project_anchor | own_supporting | 1 | ethereum | unit-395532 | `0x0a1a1a107e45b7ced86833863f482bc5f4ed82ef` | ✅ Audited |
+| StakedChip | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-395533 | `0x0d2d2d20962f2468566f4d1a4ddeb482915c4d4a` | ✅ Audited |
+| TimelockController | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-395512 | `0x0eec1ee03add82342a6ac68a9c5cf62cb2398221` | ✅ Audited |
+| USDai | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-395534 | `0x0a1a1a107e45b7ced86833863f482bc5f4ed82ef` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (39)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AirdropVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0846ec...8ca7dc` | ⚠️ Unaudited |
-| BaseYieldEscrow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x3eff54...1d8acb` | ⚠️ Unaudited |
-| BundleCollateralWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x2b47d3...9d2f47` | ⚠️ Unaudited |
-| Chip | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0b471c...127cbc` | ⚠️ Unaudited |
-| ChipClaim | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x3c2113...7faaae` | ⚠️ Unaudited |
-| ChipReceiptToken | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x0c5021...95471e` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x19ed5c...c1876a`; arbitrum `0xb07151...c6867e` | ⚠️ Unaudited |
-| ExecutorEntryPoint | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x4db060...fda979` | ⚠️ Unaudited |
-| ExtensionBeacon | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xb82328...79a931` | ⚠️ Unaudited |
-| ExtensionFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x5bcb52...f6cca4` | ⚠️ Unaudited |
-| ExternalCollateralLiquidator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0764dc...17b57d` | ⚠️ Unaudited |
-| FLX | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x6ead2a...cdbfc3` | ⚠️ Unaudited |
-| HyperlaneBridgeAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x26feb1...8cbf80` | ⚠️ Unaudited |
-| ICOVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x5e1b1e...b049b5` | ⚠️ Unaudited |
-| IssuerGateway | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xb1bb9f...c6693c` | ⚠️ Unaudited |
-| MS721v2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xb31549...d60a19` | ⚠️ Unaudited |
-| MToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x866a2b...36be1b` | ⚠️ Unaudited |
-| MultiMint | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x4ffbc3...4033ef` | ⚠️ Unaudited |
-| OLockAdapter | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-395521 | `0xffc100...b7cf4e` | ⚠️ Unaudited |
-| OrderBook | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xa5567f...18c721` | ⚠️ Unaudited |
-| OUSDaiUtility | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x1c17b2...03dbd7` | ⚠️ Unaudited |
-| Portal | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x23ca66...bba468` | ⚠️ Unaudited |
-| PYUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x46850a...696984` | ⚠️ Unaudited |
-| PYUSDX | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x8dfb7c...71c5e0` | ⚠️ Unaudited |
-| ReceiptToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x6dbe4f...93584c` | ⚠️ Unaudited |
-| Registrar | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x119fbe...81ae2c` | ⚠️ Unaudited |
-| SimpleInterestRateModel | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x92e1a1...48711a` | ⚠️ Unaudited |
-| SpokePortal | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x658cb1...4a7878` | ⚠️ Unaudited |
-| SpokePortalV1StorageCleaner | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x7ae99b...5e5f74` | ⚠️ Unaudited |
-| SpokeVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xf78e63...8b403e` | ⚠️ Unaudited |
-| StakedUSDai | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x008014...1bc08a` | ⚠️ Unaudited |
-| SwapFacility | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x18b8a7...9c7e9a` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | arbitrum | n/a | `0xac5036...048e00` | ⚠️ Unaudited |
-| USDaiQueuedDepositor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x1038a3...f8e9d1` | ⚠️ Unaudited |
-| USDaiSwapAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xe3a333...01b75f` | ⚠️ Unaudited |
-| USDZ | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xd87c75...ff1bda` | ⚠️ Unaudited |
-| WeightedRateGracePeriodRangedCollectionPool | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x0f62b8...2bb867` | ⚠️ Unaudited |
-| WrappedMToken | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x437cc3...98b291` | ⚠️ Unaudited |
-| YieldToOne | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xc560c9...678803` | ⚠️ Unaudited |
+| AirdropVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0846ec18c83a867e64f3fd1dc0da6ced868ca7dc` | ⚠️ Unaudited |
+| BaseYieldEscrow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x3eff54373bce60adac42daf8892684f5911d8acb` | ⚠️ Unaudited |
+| BundleCollateralWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x2b47d3a936dc43be3b1915935c80102aae9d2f47` | ⚠️ Unaudited |
+| Chip | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0b471c6740f3f29aa9c8f50340a713886e127cbc` | ⚠️ Unaudited |
+| ChipClaim | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x3c211385f5b061ce5b6d14d7c7d0aefc777faaae` | ⚠️ Unaudited |
+| ChipReceiptToken | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x0c502123de42aae8e38ef4e26a2961bea295471e` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x19ed5c631edd34ac776368c377a855c42bc1876a`; arbitrum `0xb071515976bcfc69ca1f57babbb8f974b2c6867e` | ⚠️ Unaudited |
+| ExecutorEntryPoint | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x4db06053edb413899454bad5bf25213b22fda979` | ⚠️ Unaudited |
+| ExtensionBeacon | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xb823280379f3e057ccae4ba5f6f772528979a931` | ⚠️ Unaudited |
+| ExtensionFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x5bcb52965004561ed4d78366a36d0b1b11f6cca4` | ⚠️ Unaudited |
+| ExternalCollateralLiquidator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0764dc5f138e879721d2ead70a37c6efad17b57d` | ⚠️ Unaudited |
+| FLX | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x6ead2a169e9183746302cb623f09fa0f35cdbfc3` | ⚠️ Unaudited |
+| HyperlaneBridgeAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x26feb1f798b0737ddb64c3e83aa39fcdac8cbf80` | ⚠️ Unaudited |
+| ICOVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x5e1b1ea6a30456e9c5ee35b44a9475e4d6b049b5` | ⚠️ Unaudited |
+| IssuerGateway | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xb1bb9f97af604385eb69212f34d986073ac6693c` | ⚠️ Unaudited |
+| MS721v2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xb31549d4216de82147e7c25ea757e7e7cad60a19` | ⚠️ Unaudited |
+| MToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b` | ⚠️ Unaudited |
+| MultiMint | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x4ffbc316cf29e8eb39cbf819cfd3d5f5b34033ef` | ⚠️ Unaudited |
+| OLockAdapter | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-395521 | `0xffc1002994b1e9a744036d0abdaefe8356b7cf4e` | ⚠️ Unaudited |
+| OrderBook | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xa5567fbf92486cba1692858afad1907db118c721` | ⚠️ Unaudited |
+| OUSDaiUtility | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x1c17b2ab80158d422c3f945bc92add549503dbd7` | ⚠️ Unaudited |
+| Portal | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x23ca665c8a73292fc7ac2cc4493d2ce883bba468` | ⚠️ Unaudited |
+| PYUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x46850ad61c2b7d64d08c9c754f45254596696984` | ⚠️ Unaudited |
+| PYUSDX | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x8dfb7c8ce5e67ace965520b134b4aca8fd71c5e0` | ⚠️ Unaudited |
+| ReceiptToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x6dbe4fad1616be5d6435be6227df3da81793584c` | ⚠️ Unaudited |
+| Registrar | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` | ⚠️ Unaudited |
+| SimpleInterestRateModel | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x92e1a11d0689adb40f0abcc0aeef7b36ff48711a` | ⚠️ Unaudited |
+| SpokePortal | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x658cb1f1ac918da7d330ac2dae28ef01e14a7878` | ⚠️ Unaudited |
+| SpokePortalV1StorageCleaner | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x7ae99b6029ca77f3a6814173a30b84264f5e5f74` | ⚠️ Unaudited |
+| SpokeVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xf78e63cdf695976f0100f161abae5579fe8b403e` | ⚠️ Unaudited |
+| StakedUSDai | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x008014531ecb268c6fddde6f891d2d0e8b1bc08a` | ⚠️ Unaudited |
+| SwapFacility | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x18b8a7aaa40b647d9f5c040be265b007679c7e9a` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | arbitrum | n/a | `0xac5036965da7db1cd353f5d76d9709ea2c048e00` | ⚠️ Unaudited |
+| USDaiQueuedDepositor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x1038a3ca77886247bdf3342b2f8c174698f8e9d1` | ⚠️ Unaudited |
+| USDaiSwapAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xe3a3337316204855e2eb240a7439a2d8d501b75f` | ⚠️ Unaudited |
+| USDZ | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xd87c75a92db19fe334fe7812890f893449ff1bda` | ⚠️ Unaudited |
+| WeightedRateGracePeriodRangedCollectionPool | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x0f62b8c58e1039f246d69ba2215ad5bf0d2bb867` | ⚠️ Unaudited |
+| WrappedMToken | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x437cc33344a0b27a429f795ff6b469c72698b291` | ⚠️ Unaudited |
+| YieldToOne | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xc560c9b8ed6d589ee676d279f2649a236c678803` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -202,28 +202,28 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-395504 | `0x0b2b2b...955ef9` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-395505 | `0x0c1c1c...b71f6e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-395507 | `0xffb200...427f24` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-395508 | `0xffc100...b7cf4e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-395522 | `0x0a1a1a...ed82ef` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-395523 | `0x0b2b2b...955ef9` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-395524 | `0x0c1c1c...b71f6e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-395525 | `0xffa100...b4bae5` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-395526 | `0xffb200...427f24` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-395527 | `0xffc100...b7cf4e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-395528 | `0x0a1a1a...ed82ef` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-395529 | `0x0b2b2b...955ef9` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-395530 | `0xffa100...b4bae5` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-395531 | `0xffb200...427f24` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-395509 | `0x0b2b2b...955ef9` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-395510 | `0x0c1c1c...b71f6e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-395513 | `0x24a92e...bd1392` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-395514 | `0x80e314...5aee37` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-395515 | `0x9ddfd4...4b1a9e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-395518 | `0xea0eae...b35a1e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-395519 | `0xffa100...b4bae5` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-395520 | `0xffb200...427f24` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-395504 | `0x0b2b2b2076d95dda7817e785989fe353fe955ef9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-395505 | `0x0c1c1c109fe34733fca54b82d7b46b75cfb71f6e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-395507 | `0xffb20098fd7b8e84762eea4609f299d101427f24` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-395508 | `0xffc1002994b1e9a744036d0abdaefe8356b7cf4e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-395522 | `0x0a1a1a107e45b7ced86833863f482bc5f4ed82ef` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-395523 | `0x0b2b2b2076d95dda7817e785989fe353fe955ef9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-395524 | `0x0c1c1c109fe34733fca54b82d7b46b75cfb71f6e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-395525 | `0xffa10065ce1d1c42fabc46e06b84ed8ffeb4bae5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-395526 | `0xffb20098fd7b8e84762eea4609f299d101427f24` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-395527 | `0xffc1002994b1e9a744036d0abdaefe8356b7cf4e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-395528 | `0x0a1a1a107e45b7ced86833863f482bc5f4ed82ef` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-395529 | `0x0b2b2b2076d95dda7817e785989fe353fe955ef9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-395530 | `0xffa10065ce1d1c42fabc46e06b84ed8ffeb4bae5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-395531 | `0xffb20098fd7b8e84762eea4609f299d101427f24` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-395509 | `0x0b2b2b2076d95dda7817e785989fe353fe955ef9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-395510 | `0x0c1c1c109fe34733fca54b82d7b46b75cfb71f6e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-395513 | `0x24a92e28a8c5d8812dcfaf44bcb20cc0babd1392` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-395514 | `0x80e3146fb2328fe1b79f92f5a3a6bf35515aee37` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-395515 | `0x9ddfd49ac4689cf894203794d792dcb38e4b1a9e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-395518 | `0xea0eae46bc15cd975f0545ba35584d96c7b35a1e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-395519 | `0xffa10065ce1d1c42fabc46e06b84ed8ffeb4bae5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-395520 | `0xffb20098fd7b8e84762eea4609f299d101427f24` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -256,14 +256,14 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
 | ktl Audit Report (03-12-2026 part 2).pdf | Chip | unmatched — not counted | — | listed in scope table | no |
-| ktl Audit Report (03-12-2026 part 2).pdf | ChipGovernor | own contract | ChipGovernor (selected) `0x0ddc1d...847b26` — deployed 2026-03-31 11:25:54+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| ktl Audit Report (03-12-2026 part 2).pdf | StakedChip | own proxy deployment | StakedChip (proxy) (selected) `0x0d2d2d...5c4d4a` — deployed 2026-03-31 11:25:54+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| ktl Audit Report (03-12-2026 part 2).pdf | TimelockController | own contract | TimelockController (selected) `0x0eec1e...398221` — deployed 2026-03-31 11:25:54+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ktl Audit Report (03-12-2026 part 2).pdf | ChipGovernor | own contract | ChipGovernor (selected) `0x0ddc1dd03c58e425f96567679b52f349db847b26` — deployed 2026-03-31 11:25:54+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ktl Audit Report (03-12-2026 part 2).pdf | StakedChip | own proxy deployment | StakedChip (proxy) (selected) `0x0d2d2d20962f2468566f4d1a4ddeb482915c4d4a` — deployed 2026-03-31 11:25:54+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ktl Audit Report (03-12-2026 part 2).pdf | TimelockController | own contract | TimelockController (selected) `0x0eec1ee03add82342a6ac68a9c5cf62cb2398221` — deployed 2026-03-31 11:25:54+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ktl Audit Report (03-12-2026 part 2).pdf | IChip | unmatched — not counted | — | listed in scope table | no |
 | ktl Audit Report (03-12-2026 part 2).pdf | IMintableBurnable | unmatched — not counted | — | listed in scope table | no |
 | ktl Audit Report (03-12-2026 part 2).pdf | IStakedChip | unmatched — not counted | — | listed in scope table | no |
-| ktl Audit Report (03-12-2026 part 2).pdf | OAdapter | own contract | OAdapter (selected) `0xffa100...b4bae5` — deployed 2025-05-23 23:34:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| ktl Audit Report (03-12-2026 part 2).pdf | OToken | own proxy deployment | OToken (proxy) (selected) `0x0a1a1a...ed82ef` — deployed 2025-05-23 23:34:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ktl Audit Report (03-12-2026 part 2).pdf | OAdapter | own contract | OAdapter (selected) `0xffa10065ce1d1c42fabc46e06b84ed8ffeb4bae5` — deployed 2025-05-23 23:34:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ktl Audit Report (03-12-2026 part 2).pdf | OToken | own proxy deployment | OToken (proxy) (selected) `0x0a1a1a107e45b7ced86833863f482bc5f4ed82ef` — deployed 2025-05-23 23:34:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ktl Audit Report (03-12-2026 part 1).pdf | AirdropVault | unmatched — not counted | — | listed in scope | no |
 | ktl Audit Report (03-12-2026 part 1).pdf | ChipClaim | unmatched — not counted | — | listed in scope | no |
 | ktl Audit Report (03-12-2026 part 1).pdf | ChipReceiptToken | unmatched — not counted | — | listed in scope | no |
@@ -278,15 +278,15 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | ktl Audit Report (11-27-2025).pdf | RedemptionLogic | unmatched — not counted | — | listed in scope section | no |
 | ktl Audit Report (11-27-2025).pdf | StakedUSDai | unmatched — not counted | — | listed in scope section | no |
 | ktl Audit Report (11-27-2025).pdf | StakedUSDaiStorage | unmatched — not counted | — | listed in scope section | no |
-| ktl Audit Report (11-27-2025).pdf | USDai | own proxy deployment | USDai (proxy) (selected) `0x0a1a1a...ed82ef` — deployed 2025-05-13 12:29:16+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ktl Audit Report (11-27-2025).pdf | USDai | own proxy deployment | USDai (proxy) (selected) `0x0a1a1a107e45b7ced86833863f482bc5f4ed82ef` — deployed 2025-05-13 12:29:16+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ktl Audit Report (11-27-2025).pdf | ILoanRouterPositionManager | unmatched — not counted | — | listed in scope section | no |
 | ktl Audit Report (11-27-2025).pdf | IStakedUSDai | unmatched — not counted | — | listed in scope section | no |
 | ktl Audit Report (11-27-2025).pdf | IUSDai | unmatched — not counted | — | listed in scope section | no |
 | ktl Audit Report (11-27-2025).pdf | IUSDaiQueuedDepositor | unmatched — not counted | — | listed in scope section | no |
 | ktl Audit Report (11-27-2025).pdf | LoanRouterPositionManager | unmatched — not counted | — | listed in scope section | no |
 | ktl Audit Report (11-27-2025).pdf | LoanRouterPositionManagerLogic | unmatched — not counted | — | listed in scope section | no |
-| ktl Audit Report (10-29-2025).pdf | DepositTimelock | own proxy deployment | DepositTimelock (proxy) (selected) `0x0d710c...23c9f8` — deployed 2025-12-03 19:48:46+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| ktl Audit Report (10-29-2025).pdf | LoanRouter | own proxy deployment | LoanRouter (proxy) (selected) `0x0c2ed1...9597d1` — deployed 2025-12-05 20:15:44+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ktl Audit Report (10-29-2025).pdf | DepositTimelock | own proxy deployment | DepositTimelock (proxy) (selected) `0x0d710cc05f34d2ead9fba3c78d53d76a0623c9f8` — deployed 2025-12-03 19:48:46+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ktl Audit Report (10-29-2025).pdf | LoanRouter | own proxy deployment | LoanRouter (proxy) (selected) `0x0c2ed170f2bb1df1a44292ad621b577b3c9597d1` — deployed 2025-12-05 20:15:44+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ktl Audit Report (10-29-2025).pdf | LoanTermsLogic | unmatched — not counted | — | listed in scope | no |
 | ktl Audit Report (10-29-2025).pdf | IDepositTimelock | unmatched — not counted | — | listed in scope | no |
 | ktl Audit Report (10-29-2025).pdf | IInterestRateModel | unmatched — not counted | — | listed in scope | no |
@@ -299,14 +299,14 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | ktl Audit Report (10-29-2025).pdf | ICollateralWrapper | unmatched — not counted | — | listed in scope | no |
 | ktl Audit Report (10-29-2025).pdf | ISwapRouter02 | unmatched — not counted | — | listed in scope | no |
 | ktl Audit Report (10-29-2025).pdf | IUSDai | unmatched — not counted | — | listed in scope | no |
-| ktl Audit Report (10-29-2025).pdf | AmortizedInterestRateModel | own contract | AmortizedInterestRateModel (selected) `0xe01520...6fa18d` — deployed 2025-12-03 11:57:02+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ktl Audit Report (10-29-2025).pdf | AmortizedInterestRateModel | own contract | AmortizedInterestRateModel (selected) `0xe01520fd4f249efa4d905f60b6b54e2ade6fa18d` — deployed 2025-12-03 11:57:02+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ktl Audit Report (10-29-2025).pdf | SimpleInterestRateModel | unmatched — not counted | — | listed in scope | no |
 | ktl Audit Report (10-29-2025).pdf | USDaiSwapAdapter | unmatched — not counted | — | listed in scope | no |
 | ktl Audit Report (10-29-2025).pdf | UniswapV3SwapAdapter | unmatched — not counted | — | listed in scope | no |
 | ktl Audit Report (05-14-2025).pdf | RedemptionLogic | unmatched — not counted | — | listed in scope | no |
 | ktl Audit Report (05-14-2025).pdf | StakedUSDai | unmatched — not counted | — | listed in scope | no |
 | ktl Audit Report (05-14-2025).pdf | StakedUSDaiStorage | unmatched — not counted | — | listed in scope | no |
-| ktl Audit Report (05-14-2025).pdf | USDai | own proxy deployment | USDai (proxy) (selected) `0x0a1a1a...ed82ef` — deployed 2025-05-13 12:29:16+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ktl Audit Report (05-14-2025).pdf | USDai | own proxy deployment | USDai (proxy) (selected) `0x0a1a1a107e45b7ced86833863f482bc5f4ed82ef` — deployed 2025-05-13 12:29:16+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ktl Audit Report (05-14-2025).pdf | IBasePositionManager | unmatched — not counted | — | listed in scope | no |
 | ktl Audit Report (05-14-2025).pdf | IERC7540 | unmatched — not counted | — | listed in scope | no |
 | ktl Audit Report (05-14-2025).pdf | IERC7575 | unmatched — not counted | — | listed in scope | no |
@@ -321,18 +321,18 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | ktl Audit Report (05-14-2025).pdf | IPool | unmatched — not counted | — | listed in scope | no |
 | ktl Audit Report (05-14-2025).pdf | ISwapRouter02 | unmatched — not counted | — | listed in scope | no |
 | ktl Audit Report (05-14-2025).pdf | IWrappedMToken | unmatched — not counted | — | listed in scope | no |
-| ktl Audit Report (05-14-2025).pdf | OAdapter | own contract | OAdapter (selected) `0xffa100...b4bae5` — deployed 2025-05-23 23:34:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| ktl Audit Report (05-14-2025).pdf | OToken | own proxy deployment | OToken (proxy) (selected) `0x0a1a1a...ed82ef` — deployed 2025-05-23 23:34:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ktl Audit Report (05-14-2025).pdf | OAdapter | own contract | OAdapter (selected) `0xffa10065ce1d1c42fabc46e06b84ed8ffeb4bae5` — deployed 2025-05-23 23:34:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ktl Audit Report (05-14-2025).pdf | OToken | own proxy deployment | OToken (proxy) (selected) `0x0a1a1a107e45b7ced86833863f482bc5f4ed82ef` — deployed 2025-05-23 23:34:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ktl Audit Report (05-14-2025).pdf | OUSDaiUtility | unmatched — not counted | — | listed in scope | no |
-| ktl Audit Report (05-14-2025).pdf | ChainlinkPriceOracle | own contract | ChainlinkPriceOracle (selected) `0xd40a52...741ebc` — deployed 2026-02-02 20:47:37+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ktl Audit Report (05-14-2025).pdf | ChainlinkPriceOracle | own contract | ChainlinkPriceOracle (selected) `0xd40a5298c6fced81eb5da8bb1f9328b16f741ebc` — deployed 2026-02-02 20:47:37+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ktl Audit Report (05-14-2025).pdf | BasePositionManager | unmatched — not counted | — | listed in scope | no |
 | ktl Audit Report (05-14-2025).pdf | PoolPositionManager | unmatched — not counted | — | listed in scope | no |
 | ktl Audit Report (05-14-2025).pdf | PositionManager | unmatched — not counted | — | listed in scope | no |
 | ktl Audit Report (05-14-2025).pdf | UniswapV3SwapAdapter | unmatched — not counted | — | listed in scope | no |
-| Cantina Audit Report (05-12-2025).pdf | USDai | own proxy deployment | USDai (proxy) (selected) `0x0a1a1a...ed82ef` — deployed 2025-05-13 12:29:16+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Cantina Audit Report (05-12-2025).pdf | USDai | own proxy deployment | USDai (proxy) (selected) `0x0a1a1a107e45b7ced86833863f482bc5f4ed82ef` — deployed 2025-05-13 12:29:16+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Cantina Audit Report (05-12-2025).pdf | StakedUSDai | unmatched — not counted | — | mentioned in findings context | no |
 | Cantina Audit Report (05-12-2025).pdf | RedemptionLogic | unmatched — not counted | — | mentioned in findings context | no |
-| Cantina Audit Report (05-12-2025).pdf | ChainlinkPriceOracle | own contract | ChainlinkPriceOracle (selected) `0xd40a52...741ebc` — deployed 2026-02-02 20:47:37+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Cantina Audit Report (05-12-2025).pdf | ChainlinkPriceOracle | own contract | ChainlinkPriceOracle (selected) `0xd40a5298c6fced81eb5da8bb1f9328b16f741ebc` — deployed 2026-02-02 20:47:37+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Cantina Audit Report (05-12-2025).pdf | BasePositionManager | unmatched — not counted | — | mentioned in findings context | no |
 | Cantina Audit Report (05-12-2025).pdf | PoolPositionManager | unmatched — not counted | — | mentioned in findings context | no |
 | Cantina Audit Report (05-12-2025).pdf | UniswapV3SwapAdapter | unmatched — not counted | — | mentioned in findings context | no |
@@ -343,7 +343,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | `0xffc100...b7cf4e` | OLockAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0xffc1002994b1e9a744036d0abdaefe8356b7cf4e` | OLockAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

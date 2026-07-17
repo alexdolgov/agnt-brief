@@ -57,9 +57,9 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum, base
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x528d46...fe64aa`, chain 56)
-- UnnamedContract (`0x109d30...a47544`, chain 137)
-- ERC1967Proxy (`0x109d30...a47544`, chain 1)
+- UnnamedContract (`0x528d46b5780879e28cf410c0b86d991a38fe64aa`, chain 56)
+- UnnamedContract (`0x109d3042a3c682f94107b3818e93b3ade2a47544`, chain 137)
+- ERC1967Proxy (`0x109d3042a3c682f94107b3818e93b3ade2a47544`, chain 1)
 
 ## Contract Surface Quality
 
@@ -105,8 +105,8 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum, base
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-256787 | `0x109d30...a47544` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0x10057f...d66777` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-256787 | `0x109d3042a3c682f94107b3818e93b3ade2a47544` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0x10057f7d9897414d1c84c886e16566dce8d66777` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -126,8 +126,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-256784 | `0x528d46...fe64aa` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-256778 | `0x109d30...a47544` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-256784 | `0x528d46b5780879e28cf410c0b86d991a38fe64aa` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-256778 | `0x109d3042a3c682f94107b3818e93b3ade2a47544` | ❓ Unverified |
 
 ## Audit Inventory
 

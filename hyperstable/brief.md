@@ -61,44 +61,44 @@ The protocol comprises 2 functional families. Its contracts share 2 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BribeFactory | unknown | hyperliquid | n/a | [`0x058855...7e0ff1`](./contracts/hyperliquid-999/0x058855f5132b2518168e5b85cf2e44cab57e0ff1/) | ✅ Audited |
-| DebtToken | unknown | hyperliquid | n/a | [`0x8ff0dd...c74bd8`](./contracts/hyperliquid-999/0x8ff0dd9f9c40a0d76ef1bcfaf5f98c1610c74bd8/) | ✅ Audited |
-| EmissionScheduler | unknown | hyperliquid | n/a | [`0x0c063c...5c6f1f`](./contracts/hyperliquid-999/0x0c063cee3715737eb6ac6a45783b9323d05c6f1f/) | ✅ Audited |
-| ExternalBribe | unknown | hyperliquid | n/a | [`0x11ce84...15e079`](./contracts/hyperliquid-999/0x11ce8455eae678d88e286f4695fb95a09a15e079/) | ✅ Audited |
-| InternalBribe | unknown | hyperliquid | n/a | [`0x5a5688...a981d6`](./contracts/hyperliquid-999/0x5a5688e2c953321fd1f1dd35b1cd3baac1a981d6/) | ✅ Audited |
-| LiquidationBuffer | unknown | hyperliquid | n/a | [`0x35b220...886578`](./contracts/hyperliquid-999/0x35b2200ca9f7298ad3be73bd1cbfcc20c7886578/) | ✅ Audited |
-| LiquidationManager | unknown | hyperliquid | n/a | [`0x896703...cfd114`](./contracts/hyperliquid-999/0x8967034f7030230748ff60479ea8452190cfd114/) | ✅ Audited |
-| Minter | unknown | hyperliquid | n/a | [`0xbb16ae...a93ba1`](./contracts/hyperliquid-999/0xbb16ae0b903f1a3810de5f600edbe8ce76a93ba1/) | ✅ Audited |
-| Peg | unknown | hyperliquid | n/a | [`0x28245a...5c89db`](./contracts/hyperliquid-999/0x28245ab01298eaef7933bc90d35bd9dbca5c89db/) | ✅ Audited |
-| PositionManager | unknown | hyperliquid | n/a | [`0x14e6cb...e8be80`](./contracts/hyperliquid-999/0x14e6cb6e5949c9ea691577757a11a903dce8be80/) | ✅ Audited |
-| RewardsDistributor | unknown | hyperliquid | n/a | [`0x581686...283c49`](./contracts/hyperliquid-999/0x581686866e5b9f4f2d7adc4b4f36940531283c49/) | ✅ Audited |
-| TokenRewardsDistributor | unknown | hyperliquid | n/a | [`0x2c30a9...7828af`](./contracts/hyperliquid-999/0x2c30a961e5b2aa618ab6a99beefd44ca5e7828af/) | ✅ Audited |
-| Vault | unknown | hyperliquid | n/a | [`0x6714cd...bca6bb`](./contracts/hyperliquid-999/0x6714cd43536e7e242923ace3d301a3311dbca6bb/) | ✅ Audited |
-| VeArtProxy | unknown | hyperliquid | n/a | [`0xaa170b...663ca8`](./contracts/hyperliquid-999/0xaa170b0f4f07d9eb34a0a7d0870a8f4f04663ca8/) | ✅ Audited |
-| Voter | unknown | hyperliquid | n/a | [`0xf3113e...11908a`](./contracts/hyperliquid-999/0xf3113e4f80c84935e576cfd75f4423e9b911908a/) | ✅ Audited |
-| VotingEscrow | unknown | hyperliquid | n/a | [`0xdb9a1b...4d4e23`](./contracts/hyperliquid-999/0xdb9a1bdc443dd11366b8a6dc8038144ecc4d4e23/) | ✅ Audited |
+| BribeFactory | unknown | hyperliquid | n/a | [`0x058855f5132b2518168e5b85cf2e44cab57e0ff1`](./contracts/hyperliquid-999/0x058855f5132b2518168e5b85cf2e44cab57e0ff1/) | ✅ Audited |
+| DebtToken | unknown | hyperliquid | n/a | [`0x8ff0dd9f9c40a0d76ef1bcfaf5f98c1610c74bd8`](./contracts/hyperliquid-999/0x8ff0dd9f9c40a0d76ef1bcfaf5f98c1610c74bd8/) | ✅ Audited |
+| EmissionScheduler | unknown | hyperliquid | n/a | [`0x0c063cee3715737eb6ac6a45783b9323d05c6f1f`](./contracts/hyperliquid-999/0x0c063cee3715737eb6ac6a45783b9323d05c6f1f/) | ✅ Audited |
+| ExternalBribe | unknown | hyperliquid | n/a | [`0x11ce8455eae678d88e286f4695fb95a09a15e079`](./contracts/hyperliquid-999/0x11ce8455eae678d88e286f4695fb95a09a15e079/) | ✅ Audited |
+| InternalBribe | unknown | hyperliquid | n/a | [`0x5a5688e2c953321fd1f1dd35b1cd3baac1a981d6`](./contracts/hyperliquid-999/0x5a5688e2c953321fd1f1dd35b1cd3baac1a981d6/) | ✅ Audited |
+| LiquidationBuffer | unknown | hyperliquid | n/a | [`0x35b2200ca9f7298ad3be73bd1cbfcc20c7886578`](./contracts/hyperliquid-999/0x35b2200ca9f7298ad3be73bd1cbfcc20c7886578/) | ✅ Audited |
+| LiquidationManager | unknown | hyperliquid | n/a | [`0x8967034f7030230748ff60479ea8452190cfd114`](./contracts/hyperliquid-999/0x8967034f7030230748ff60479ea8452190cfd114/) | ✅ Audited |
+| Minter | unknown | hyperliquid | n/a | [`0xbb16ae0b903f1a3810de5f600edbe8ce76a93ba1`](./contracts/hyperliquid-999/0xbb16ae0b903f1a3810de5f600edbe8ce76a93ba1/) | ✅ Audited |
+| Peg | unknown | hyperliquid | n/a | [`0x28245ab01298eaef7933bc90d35bd9dbca5c89db`](./contracts/hyperliquid-999/0x28245ab01298eaef7933bc90d35bd9dbca5c89db/) | ✅ Audited |
+| PositionManager | unknown | hyperliquid | n/a | [`0x14e6cb6e5949c9ea691577757a11a903dce8be80`](./contracts/hyperliquid-999/0x14e6cb6e5949c9ea691577757a11a903dce8be80/) | ✅ Audited |
+| RewardsDistributor | unknown | hyperliquid | n/a | [`0x581686866e5b9f4f2d7adc4b4f36940531283c49`](./contracts/hyperliquid-999/0x581686866e5b9f4f2d7adc4b4f36940531283c49/) | ✅ Audited |
+| TokenRewardsDistributor | unknown | hyperliquid | n/a | [`0x2c30a961e5b2aa618ab6a99beefd44ca5e7828af`](./contracts/hyperliquid-999/0x2c30a961e5b2aa618ab6a99beefd44ca5e7828af/) | ✅ Audited |
+| Vault | unknown | hyperliquid | n/a | [`0x6714cd43536e7e242923ace3d301a3311dbca6bb`](./contracts/hyperliquid-999/0x6714cd43536e7e242923ace3d301a3311dbca6bb/) | ✅ Audited |
+| VeArtProxy | unknown | hyperliquid | n/a | [`0xaa170b0f4f07d9eb34a0a7d0870a8f4f04663ca8`](./contracts/hyperliquid-999/0xaa170b0f4f07d9eb34a0a7d0870a8f4f04663ca8/) | ✅ Audited |
+| Voter | unknown | hyperliquid | n/a | [`0xf3113e4f80c84935e576cfd75f4423e9b911908a`](./contracts/hyperliquid-999/0xf3113e4f80c84935e576cfd75f4423e9b911908a/) | ✅ Audited |
+| VotingEscrow | unknown | hyperliquid | n/a | [`0xdb9a1bdc443dd11366b8a6dc8038144ecc4d4e23`](./contracts/hyperliquid-999/0xdb9a1bdc443dd11366b8a6dc8038144ecc4d4e23/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (17)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Bonus | unknown | hyperliquid | n/a | [`0x25f029...858423`](./contracts/hyperliquid-999/0x25f029291631779c8f2f6324674e1e8996858423/) | ⚠️ Unaudited |
-| Claimer | unknown | hyperliquid | n/a | [`0x7b2336...ef90f4`](./contracts/hyperliquid-999/0x7b2336f162ccad3eaa0a45334ed3e7fc36ef90f4/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | [`0x424a44...934bfb`](./contracts/hyperliquid-999/0x424a449cad8121f94feab2607ddc2d7e66934bfb/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | [`0x793679...686583`](./contracts/hyperliquid-999/0x79367964c8f9b6deb993d0a50d128500b9686583/) | ⚠️ Unaudited |
-| GaugeProviderV2 | unknown | hyperliquid | n/a | [`0xffe560...81d314`](./contracts/hyperliquid-999/0xffe560d89aed42fa3f40fc0f9a5ab85a3781d314/) | ⚠️ Unaudited |
-| GnosisSafeProxy | unknown | hyperliquid | n/a | [`0x47a2b1...e9ecab`](./contracts/hyperliquid-999/0x47a2b186da70d53319936477791d6723bfe9ecab/) | ⚠️ Unaudited |
-| HyperSwapGaugeFactory | unknown | hyperliquid | n/a | [`0x9c287a...31bb35`](./contracts/hyperliquid-999/0x9c287a1efa774a84847833e323d873fc0231bb35/) | ⚠️ Unaudited |
-| InterestDistributor | unknown | hyperliquid | n/a | [`0x2e6fda...6290d2`](./contracts/hyperliquid-999/0x2e6fda4324237969f683db2f30379919d86290d2/) | ⚠️ Unaudited |
-| InterestDistributorOwner | unknown | hyperliquid | n/a | [`0x560bb7...724358`](./contracts/hyperliquid-999/0x560bb7dbfe6c6b53c0b6d23ab181798450724358/) | ⚠️ Unaudited |
-| InterestRateStrategyV2 | unknown | hyperliquid | n/a | [`0xa05023...a031e9`](./contracts/hyperliquid-999/0xa05023d6f6074d8d3ac6f9819db5e6993da031e9/) | ⚠️ Unaudited |
-| LiquidationManagerV2 | unknown | hyperliquid | n/a | [`0x401e28...0296dc`](./contracts/hyperliquid-999/0x401e28035ecf5976db0fa5b657cbb12b160296dc/) | ⚠️ Unaudited |
-| MetaMorphoV1_1 | unknown | hyperliquid | n/a | [`0x1730b2...c90081`](./contracts/hyperliquid-999/0x1730b28c4dff6e0b412d873c7eb03a9fbbc90081/) | ⚠️ Unaudited |
-| PositionManagerV2 | unknown | hyperliquid | n/a | [`0x7ad97a...d1c24b`](./contracts/hyperliquid-999/0x7ad97a3b3535f83dd563cab45b2c6070ddd1c24b/) | ⚠️ Unaudited |
-| PythOracle | unknown | hyperliquid | n/a | [`0x434b88...33de21`](./contracts/hyperliquid-999/0x434b8847d53fd2392a12ed5458cae3707c33de21/) | ⚠️ Unaudited |
-| ReferralRegistry | unknown | hyperliquid | n/a | [`0x3fed84...11baf8`](./contracts/hyperliquid-999/0x3fed84f3b58bdc8b4857aaf6902916224e11baf8/) | ⚠️ Unaudited |
-| VaultV2 | unknown | hyperliquid | n/a | [`0xe7ceac...d1f531`](./contracts/hyperliquid-999/0xe7ceaccaa613d8fde4e214d7f71c85933cd1f531/) | ⚠️ Unaudited |
-| WrappedStakedHypeVault | unknown | hyperliquid | n/a | [`0xc55fab...2f67fc`](./contracts/hyperliquid-999/0xc55fab3ddcab42b6dd2358fbdc59950f832f67fc/) | ⚠️ Unaudited |
+| Bonus | unknown | hyperliquid | n/a | [`0x25f029291631779c8f2f6324674e1e8996858423`](./contracts/hyperliquid-999/0x25f029291631779c8f2f6324674e1e8996858423/) | ⚠️ Unaudited |
+| Claimer | unknown | hyperliquid | n/a | [`0x7b2336f162ccad3eaa0a45334ed3e7fc36ef90f4`](./contracts/hyperliquid-999/0x7b2336f162ccad3eaa0a45334ed3e7fc36ef90f4/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | [`0x424a449cad8121f94feab2607ddc2d7e66934bfb`](./contracts/hyperliquid-999/0x424a449cad8121f94feab2607ddc2d7e66934bfb/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | [`0x79367964c8f9b6deb993d0a50d128500b9686583`](./contracts/hyperliquid-999/0x79367964c8f9b6deb993d0a50d128500b9686583/) | ⚠️ Unaudited |
+| GaugeProviderV2 | unknown | hyperliquid | n/a | [`0xffe560d89aed42fa3f40fc0f9a5ab85a3781d314`](./contracts/hyperliquid-999/0xffe560d89aed42fa3f40fc0f9a5ab85a3781d314/) | ⚠️ Unaudited |
+| GnosisSafeProxy | unknown | hyperliquid | n/a | [`0x47a2b186da70d53319936477791d6723bfe9ecab`](./contracts/hyperliquid-999/0x47a2b186da70d53319936477791d6723bfe9ecab/) | ⚠️ Unaudited |
+| HyperSwapGaugeFactory | unknown | hyperliquid | n/a | [`0x9c287a1efa774a84847833e323d873fc0231bb35`](./contracts/hyperliquid-999/0x9c287a1efa774a84847833e323d873fc0231bb35/) | ⚠️ Unaudited |
+| InterestDistributor | unknown | hyperliquid | n/a | [`0x2e6fda4324237969f683db2f30379919d86290d2`](./contracts/hyperliquid-999/0x2e6fda4324237969f683db2f30379919d86290d2/) | ⚠️ Unaudited |
+| InterestDistributorOwner | unknown | hyperliquid | n/a | [`0x560bb7dbfe6c6b53c0b6d23ab181798450724358`](./contracts/hyperliquid-999/0x560bb7dbfe6c6b53c0b6d23ab181798450724358/) | ⚠️ Unaudited |
+| InterestRateStrategyV2 | unknown | hyperliquid | n/a | [`0xa05023d6f6074d8d3ac6f9819db5e6993da031e9`](./contracts/hyperliquid-999/0xa05023d6f6074d8d3ac6f9819db5e6993da031e9/) | ⚠️ Unaudited |
+| LiquidationManagerV2 | unknown | hyperliquid | n/a | [`0x401e28035ecf5976db0fa5b657cbb12b160296dc`](./contracts/hyperliquid-999/0x401e28035ecf5976db0fa5b657cbb12b160296dc/) | ⚠️ Unaudited |
+| MetaMorphoV1_1 | unknown | hyperliquid | n/a | [`0x1730b28c4dff6e0b412d873c7eb03a9fbbc90081`](./contracts/hyperliquid-999/0x1730b28c4dff6e0b412d873c7eb03a9fbbc90081/) | ⚠️ Unaudited |
+| PositionManagerV2 | unknown | hyperliquid | n/a | [`0x7ad97a3b3535f83dd563cab45b2c6070ddd1c24b`](./contracts/hyperliquid-999/0x7ad97a3b3535f83dd563cab45b2c6070ddd1c24b/) | ⚠️ Unaudited |
+| PythOracle | unknown | hyperliquid | n/a | [`0x434b8847d53fd2392a12ed5458cae3707c33de21`](./contracts/hyperliquid-999/0x434b8847d53fd2392a12ed5458cae3707c33de21/) | ⚠️ Unaudited |
+| ReferralRegistry | unknown | hyperliquid | n/a | [`0x3fed84f3b58bdc8b4857aaf6902916224e11baf8`](./contracts/hyperliquid-999/0x3fed84f3b58bdc8b4857aaf6902916224e11baf8/) | ⚠️ Unaudited |
+| VaultV2 | unknown | hyperliquid | n/a | [`0xe7ceaccaa613d8fde4e214d7f71c85933cd1f531`](./contracts/hyperliquid-999/0xe7ceaccaa613d8fde4e214d7f71c85933cd1f531/) | ⚠️ Unaudited |
+| WrappedStakedHypeVault | unknown | hyperliquid | n/a | [`0xc55fab3ddcab42b6dd2358fbdc59950f832f67fc`](./contracts/hyperliquid-999/0xc55fab3ddcab42b6dd2358fbdc59950f832f67fc/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -135,19 +135,19 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| hyperliquid | [`0x25f029...858423`](./contracts/hyperliquid-999/0x25f029291631779c8f2f6324674e1e8996858423/) | Bonus | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x7b2336...ef90f4`](./contracts/hyperliquid-999/0x7b2336f162ccad3eaa0a45334ed3e7fc36ef90f4/) | Claimer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0xffe560...81d314`](./contracts/hyperliquid-999/0xffe560d89aed42fa3f40fc0f9a5ab85a3781d314/) | GaugeProviderV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x9c287a...31bb35`](./contracts/hyperliquid-999/0x9c287a1efa774a84847833e323d873fc0231bb35/) | HyperSwapGaugeFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x2e6fda...6290d2`](./contracts/hyperliquid-999/0x2e6fda4324237969f683db2f30379919d86290d2/) | InterestDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x560bb7...724358`](./contracts/hyperliquid-999/0x560bb7dbfe6c6b53c0b6d23ab181798450724358/) | InterestDistributorOwner | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0xa05023...a031e9`](./contracts/hyperliquid-999/0xa05023d6f6074d8d3ac6f9819db5e6993da031e9/) | InterestRateStrategyV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x401e28...0296dc`](./contracts/hyperliquid-999/0x401e28035ecf5976db0fa5b657cbb12b160296dc/) | LiquidationManagerV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x7ad97a...d1c24b`](./contracts/hyperliquid-999/0x7ad97a3b3535f83dd563cab45b2c6070ddd1c24b/) | PositionManagerV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x434b88...33de21`](./contracts/hyperliquid-999/0x434b8847d53fd2392a12ed5458cae3707c33de21/) | PythOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x3fed84...11baf8`](./contracts/hyperliquid-999/0x3fed84f3b58bdc8b4857aaf6902916224e11baf8/) | ReferralRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0xe7ceac...d1f531`](./contracts/hyperliquid-999/0xe7ceaccaa613d8fde4e214d7f71c85933cd1f531/) | VaultV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0xc55fab...2f67fc`](./contracts/hyperliquid-999/0xc55fab3ddcab42b6dd2358fbdc59950f832f67fc/) | WrappedStakedHypeVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x25f029291631779c8f2f6324674e1e8996858423`](./contracts/hyperliquid-999/0x25f029291631779c8f2f6324674e1e8996858423/) | Bonus | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x7b2336f162ccad3eaa0a45334ed3e7fc36ef90f4`](./contracts/hyperliquid-999/0x7b2336f162ccad3eaa0a45334ed3e7fc36ef90f4/) | Claimer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0xffe560d89aed42fa3f40fc0f9a5ab85a3781d314`](./contracts/hyperliquid-999/0xffe560d89aed42fa3f40fc0f9a5ab85a3781d314/) | GaugeProviderV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x9c287a1efa774a84847833e323d873fc0231bb35`](./contracts/hyperliquid-999/0x9c287a1efa774a84847833e323d873fc0231bb35/) | HyperSwapGaugeFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x2e6fda4324237969f683db2f30379919d86290d2`](./contracts/hyperliquid-999/0x2e6fda4324237969f683db2f30379919d86290d2/) | InterestDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x560bb7dbfe6c6b53c0b6d23ab181798450724358`](./contracts/hyperliquid-999/0x560bb7dbfe6c6b53c0b6d23ab181798450724358/) | InterestDistributorOwner | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0xa05023d6f6074d8d3ac6f9819db5e6993da031e9`](./contracts/hyperliquid-999/0xa05023d6f6074d8d3ac6f9819db5e6993da031e9/) | InterestRateStrategyV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x401e28035ecf5976db0fa5b657cbb12b160296dc`](./contracts/hyperliquid-999/0x401e28035ecf5976db0fa5b657cbb12b160296dc/) | LiquidationManagerV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x7ad97a3b3535f83dd563cab45b2c6070ddd1c24b`](./contracts/hyperliquid-999/0x7ad97a3b3535f83dd563cab45b2c6070ddd1c24b/) | PositionManagerV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x434b8847d53fd2392a12ed5458cae3707c33de21`](./contracts/hyperliquid-999/0x434b8847d53fd2392a12ed5458cae3707c33de21/) | PythOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x3fed84f3b58bdc8b4857aaf6902916224e11baf8`](./contracts/hyperliquid-999/0x3fed84f3b58bdc8b4857aaf6902916224e11baf8/) | ReferralRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0xe7ceaccaa613d8fde4e214d7f71c85933cd1f531`](./contracts/hyperliquid-999/0xe7ceaccaa613d8fde4e214d7f71c85933cd1f531/) | VaultV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0xc55fab3ddcab42b6dd2358fbdc59950f832f67fc`](./contracts/hyperliquid-999/0xc55fab3ddcab42b6dd2358fbdc59950f832f67fc/) | WrappedStakedHypeVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

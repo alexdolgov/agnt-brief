@@ -65,9 +65,9 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| LayerZeroToken | unknown | ethereum | n/a | [`0x698588...3271cd`](./contracts/ethereum-1/0x6985884c4392d348587b19cb9eaaf157f13271cd/) | ✅ Audited |
-| LZMultiCall | unknown | ethereum | n/a | [`0x5528cf...12bde3`](./contracts/ethereum-1/0x5528cf58feb8fbfce94f43b33240fffb1312bde3/) | ✅ Audited |
-| TransferDelegate | unknown | arbitrum | n/a | [`0x60fccb...609de4`](./contracts/arbitrum-42161/0x60fccb9b58d5e806ca5cb8bfce721c2274609de4/) | ✅ Audited |
+| LayerZeroToken | unknown | ethereum | n/a | [`0x6985884c4392d348587b19cb9eaaf157f13271cd`](./contracts/ethereum-1/0x6985884c4392d348587b19cb9eaaf157f13271cd/) | ✅ Audited |
+| LZMultiCall | unknown | ethereum | n/a | [`0x5528cf58feb8fbfce94f43b33240fffb1312bde3`](./contracts/ethereum-1/0x5528cf58feb8fbfce94f43b33240fffb1312bde3/) | ✅ Audited |
+| TransferDelegate | unknown | arbitrum | n/a | [`0x60fccb9b58d5e806ca5cb8bfce721c2274609de4`](./contracts/arbitrum-42161/0x60fccb9b58d5e806ca5cb8bfce721c2274609de4/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 

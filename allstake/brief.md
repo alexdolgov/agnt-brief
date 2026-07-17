@@ -60,13 +60,13 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| StrategyManager | unknown | ethereum | n/a | [`0x1ebcd3...77e533`](./contracts/ethereum-1/0x1ebcd3c5ad19e0183078c50da280cb4baf77e533/) | ✅ Audited |
+| StrategyManager | unknown | ethereum | n/a | [`0x1ebcd3c5ad19e0183078c50da280cb4baf77e533`](./contracts/ethereum-1/0x1ebcd3c5ad19e0183078c50da280cb4baf77e533/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UiDataProvider | unknown | ethereum | n/a | [`0xb72f5f...76fb51`](./contracts/ethereum-1/0xb72f5fd9d1402e5e086ac3ee9c96391ee076fb51/) | ⚠️ Unaudited |
+| UiDataProvider | unknown | ethereum | n/a | [`0xb72f5fd9d1402e5e086ac3ee9c96391ee076fb51`](./contracts/ethereum-1/0xb72f5fd9d1402e5e086ac3ee9c96391ee076fb51/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -100,7 +100,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xb72f5f...76fb51`](./contracts/ethereum-1/0xb72f5fd9d1402e5e086ac3ee9c96391ee076fb51/) | UiDataProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb72f5fd9d1402e5e086ac3ee9c96391ee076fb51`](./contracts/ethereum-1/0xb72f5fd9d1402e5e086ac3ee9c96391ee076fb51/) | UiDataProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

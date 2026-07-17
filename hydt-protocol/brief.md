@@ -57,21 +57,21 @@ The protocol comprises 2 functional families. Its contracts share 2 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Control | unknown | bsc | n/a | [`0x73210f...f7573c`](./contracts/bsc-56/0x73210fbe16461929735eb7ea114924a6eaf7573c/) | ✅ Audited |
-| ControlResolver | unknown | bsc | n/a | [`0x2c9d6a...a73542`](./contracts/bsc-56/0x2c9d6a49be8727fce1e9e7d39e93261417a73542/) | ✅ Audited |
-| Earn | unknown | bsc | n/a | [`0x3b65b3...ca7071`](./contracts/bsc-56/0x3b65b37b7111f6d3b31159853ff8f7155dca7071/) | ✅ Audited |
-| Farm | unknown | bsc | n/a | [`0x4590ba...64a779`](./contracts/bsc-56/0x4590bad61ae62acff33032e3bf64b52b7264a779/) | ✅ Audited |
-| HYDT | unknown | bsc | n/a | [`0x981051...d0cd51`](./contracts/bsc-56/0x9810512be701801954449408966c630595d0cd51/) | ✅ Audited |
-| HYGT | unknown | bsc | n/a | [`0x100995...72c59b`](./contracts/bsc-56/0x100995a7e5ffd8ee60cc18a10c75cee8c572c59b/) | ✅ Audited |
-| Reserve | unknown | bsc | n/a | [`0xc5161a...76c177`](./contracts/bsc-56/0xc5161ae3437c08036b98bdb58cfe6bbff876c177/) | ✅ Audited |
-| sHYDT | unknown | bsc | n/a | [`0xab4f1b...6c89c0`](./contracts/bsc-56/0xab4f1bb558e564ae294d45a025111277c36c89c0/) | ✅ Audited |
+| Control | unknown | bsc | n/a | [`0x73210fbe16461929735eb7ea114924a6eaf7573c`](./contracts/bsc-56/0x73210fbe16461929735eb7ea114924a6eaf7573c/) | ✅ Audited |
+| ControlResolver | unknown | bsc | n/a | [`0x2c9d6a49be8727fce1e9e7d39e93261417a73542`](./contracts/bsc-56/0x2c9d6a49be8727fce1e9e7d39e93261417a73542/) | ✅ Audited |
+| Earn | unknown | bsc | n/a | [`0x3b65b37b7111f6d3b31159853ff8f7155dca7071`](./contracts/bsc-56/0x3b65b37b7111f6d3b31159853ff8f7155dca7071/) | ✅ Audited |
+| Farm | unknown | bsc | n/a | [`0x4590bad61ae62acff33032e3bf64b52b7264a779`](./contracts/bsc-56/0x4590bad61ae62acff33032e3bf64b52b7264a779/) | ✅ Audited |
+| HYDT | unknown | bsc | n/a | [`0x9810512be701801954449408966c630595d0cd51`](./contracts/bsc-56/0x9810512be701801954449408966c630595d0cd51/) | ✅ Audited |
+| HYGT | unknown | bsc | n/a | [`0x100995a7e5ffd8ee60cc18a10c75cee8c572c59b`](./contracts/bsc-56/0x100995a7e5ffd8ee60cc18a10c75cee8c572c59b/) | ✅ Audited |
+| Reserve | unknown | bsc | n/a | [`0xc5161ae3437c08036b98bdb58cfe6bbff876c177`](./contracts/bsc-56/0xc5161ae3437c08036b98bdb58cfe6bbff876c177/) | ✅ Audited |
+| sHYDT | unknown | bsc | n/a | [`0xab4f1bb558e564ae294d45a025111277c36c89c0`](./contracts/bsc-56/0xab4f1bb558e564ae294d45a025111277c36c89c0/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| InitialMintV2 | unknown | bsc | n/a | [`0xa2268f...fedb9b`](./contracts/bsc-56/0xa2268fcc2fe7a2bb755fbe5a7b3ac346ddfedb9b/) | ⚠️ Unaudited |
-| PancakePair | unknown | bsc | n/a | [`0xbb8ae5...ce957a`](./contracts/bsc-56/0xbb8ae522f812e9e65239a0e5db87a9d738ce957a/) | ⚠️ Unaudited |
+| InitialMintV2 | unknown | bsc | n/a | [`0xa2268fcc2fe7a2bb755fbe5a7b3ac346ddfedb9b`](./contracts/bsc-56/0xa2268fcc2fe7a2bb755fbe5a7b3ac346ddfedb9b/) | ⚠️ Unaudited |
+| PancakePair | unknown | bsc | n/a | [`0xbb8ae522f812e9e65239a0e5db87a9d738ce957a`](./contracts/bsc-56/0xbb8ae522f812e9e65239a0e5db87a9d738ce957a/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -103,8 +103,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0xa2268f...fedb9b`](./contracts/bsc-56/0xa2268fcc2fe7a2bb755fbe5a7b3ac346ddfedb9b/) | InitialMintV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xbb8ae5...ce957a`](./contracts/bsc-56/0xbb8ae522f812e9e65239a0e5db87a9d738ce957a/) | PancakePair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xa2268fcc2fe7a2bb755fbe5a7b3ac346ddfedb9b`](./contracts/bsc-56/0xa2268fcc2fe7a2bb755fbe5a7b3ac346ddfedb9b/) | InitialMintV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xbb8ae522f812e9e65239a0e5db87a9d738ce957a`](./contracts/bsc-56/0xbb8ae522f812e9e65239a0e5db87a9d738ce957a/) | PancakePair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

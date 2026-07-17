@@ -59,21 +59,21 @@ The protocol comprises 5 functional families. Its contracts share 2 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Dividends | unknown | base | n/a | [`0xb8b0e1...10508f`](./contracts/base-8453/0xb8b0e1ebd2266a0dff7da4ebee8daaaa6810508f/) | ✅ Audited |
-| SynthChef | unknown | base | n/a | [`0xef153c...0098b9`](./contracts/base-8453/0xef153cb7bfc04c657cb7f582c7411556320098b9/) | ✅ Audited |
-| SynthToken | token | base | n/a | [`0xbd2dbb...fe5ed2`](./contracts/base-8453/0xbd2dbb8ecea9743ca5b16423b4eaa26bdcfe5ed2/) | ✅ Audited |
-| XSynthToken | token | base | n/a | [`0x01cc6b...2d05ea`](./contracts/base-8453/0x01cc6b33c63cee896521d63451896c14d42d05ea/) | ✅ Audited |
+| Dividends | unknown | base | n/a | [`0xb8b0e1ebd2266a0dff7da4ebee8daaaa6810508f`](./contracts/base-8453/0xb8b0e1ebd2266a0dff7da4ebee8daaaa6810508f/) | ✅ Audited |
+| SynthChef | unknown | base | n/a | [`0xef153cb7bfc04c657cb7f582c7411556320098b9`](./contracts/base-8453/0xef153cb7bfc04c657cb7f582c7411556320098b9/) | ✅ Audited |
+| SynthToken | token | base | n/a | [`0xbd2dbb8ecea9743ca5b16423b4eaa26bdcfe5ed2`](./contracts/base-8453/0xbd2dbb8ecea9743ca5b16423b4eaa26bdcfe5ed2/) | ✅ Audited |
+| XSynthToken | token | base | n/a | [`0x01cc6b33c63cee896521d63451896c14d42d05ea`](./contracts/base-8453/0x01cc6b33c63cee896521d63451896c14d42d05ea/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (6)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| SLP | unknown | base | n/a | [`0x67599b...b8291d`](./contracts/base-8453/0x67599b62d6864621704b2a124857fcfa39b8291d/) | ⚠️ Unaudited |
-| SynthFactory | unknown | base | n/a | [`0x4bd16d...7d720d`](./contracts/base-8453/0x4bd16d59a5e1e0db903f724aa9d721a31d7d720d/) | ⚠️ Unaudited |
-| SynthPair | unknown | base | n/a | [`0xac5af1...7ecb28`](./contracts/base-8453/0xac5af1706cc42a7c398c274c3b8ecf735e7ecb28/) | ⚠️ Unaudited |
-| SynthRouter | adapter | base | n/a | [`0x8734b3...abeff0`](./contracts/base-8453/0x8734b3264dbd22f899bcef4e92d442d538abeff0/) | ⚠️ Unaudited |
-| Vesting | operational_periphery | base | n/a | [`0x253f74...735a05`](./contracts/base-8453/0x253f744e6faf9c7a452a819bb9e07314ca735a05/) | ⚠️ Unaudited |
-| WETH9 | token | base | n/a | [`0x420000...000006`](./contracts/base-8453/0x4200000000000000000000000000000000000006/) | ⚠️ Unaudited |
+| SLP | unknown | base | n/a | [`0x67599b62d6864621704b2a124857fcfa39b8291d`](./contracts/base-8453/0x67599b62d6864621704b2a124857fcfa39b8291d/) | ⚠️ Unaudited |
+| SynthFactory | unknown | base | n/a | [`0x4bd16d59a5e1e0db903f724aa9d721a31d7d720d`](./contracts/base-8453/0x4bd16d59a5e1e0db903f724aa9d721a31d7d720d/) | ⚠️ Unaudited |
+| SynthPair | unknown | base | n/a | [`0xac5af1706cc42a7c398c274c3b8ecf735e7ecb28`](./contracts/base-8453/0xac5af1706cc42a7c398c274c3b8ecf735e7ecb28/) | ⚠️ Unaudited |
+| SynthRouter | adapter | base | n/a | [`0x8734b3264dbd22f899bcef4e92d442d538abeff0`](./contracts/base-8453/0x8734b3264dbd22f899bcef4e92d442d538abeff0/) | ⚠️ Unaudited |
+| Vesting | operational_periphery | base | n/a | [`0x253f744e6faf9c7a452a819bb9e07314ca735a05`](./contracts/base-8453/0x253f744e6faf9c7a452a819bb9e07314ca735a05/) | ⚠️ Unaudited |
+| WETH9 | token | base | n/a | [`0x4200000000000000000000000000000000000006`](./contracts/base-8453/0x4200000000000000000000000000000000000006/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,11 +93,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | base | n/a | `0x2b1df2...ce9778` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x41206c...407981` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x651c84...0e548c` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x9c0af1...a9f811` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xe41dc6...f21cfe` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x2b1df2fc773554fb5a5c04ca66104436dace9778` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x41206c34546ec633089e7e8d2f59de5912407981` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x651c849651f0fc3e42ded95ffba9039bf70e548c` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x9c0af16d2267a89f532662809593bc71c1a9f811` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xe41dc6a073bda8f4b967dc2bf7b9f0fa67f21cfe` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -111,12 +111,12 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x67599b...b8291d`](./contracts/base-8453/0x67599b62d6864621704b2a124857fcfa39b8291d/) | SLP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x4bd16d...7d720d`](./contracts/base-8453/0x4bd16d59a5e1e0db903f724aa9d721a31d7d720d/) | SynthFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xac5af1...7ecb28`](./contracts/base-8453/0xac5af1706cc42a7c398c274c3b8ecf735e7ecb28/) | SynthPair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x8734b3...abeff0`](./contracts/base-8453/0x8734b3264dbd22f899bcef4e92d442d538abeff0/) | SynthRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x253f74...735a05`](./contracts/base-8453/0x253f744e6faf9c7a452a819bb9e07314ca735a05/) | Vesting | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x420000...000006`](./contracts/base-8453/0x4200000000000000000000000000000000000006/) | WETH9 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x67599b62d6864621704b2a124857fcfa39b8291d`](./contracts/base-8453/0x67599b62d6864621704b2a124857fcfa39b8291d/) | SLP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x4bd16d59a5e1e0db903f724aa9d721a31d7d720d`](./contracts/base-8453/0x4bd16d59a5e1e0db903f724aa9d721a31d7d720d/) | SynthFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xac5af1706cc42a7c398c274c3b8ecf735e7ecb28`](./contracts/base-8453/0xac5af1706cc42a7c398c274c3b8ecf735e7ecb28/) | SynthPair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x8734b3264dbd22f899bcef4e92d442d538abeff0`](./contracts/base-8453/0x8734b3264dbd22f899bcef4e92d442d538abeff0/) | SynthRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x253f744e6faf9c7a452a819bb9e07314ca735a05`](./contracts/base-8453/0x253f744e6faf9c7a452a819bb9e07314ca735a05/) | Vesting | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x4200000000000000000000000000000000000006`](./contracts/base-8453/0x4200000000000000000000000000000000000006/) | WETH9 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -90,17 +90,17 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| CPredictionFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x24992f...4b0368` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | external_dependency_or_infra | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0x00199e...874f5c` | ⚠️ Unaudited |
-| PRDTFrontendHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x301ab4...0ad4c2` | ⚠️ Unaudited |
-| PRDTMultipleU_V0 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x7529b5...db5a88` | ⚠️ Unaudited |
-| PRDTToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x854b5f...cfa301` | ⚠️ Unaudited |
-| PredictionsContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x35af66...6f6d60` | ⚠️ Unaudited |
-| ProBalance | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x0b9c8c...6998f5` | ⚠️ Unaudited |
-| ProBalanceSecondary | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x3992a9...85e0fb` | ⚠️ Unaudited |
-| SafeProxy | unknown | external_dependency_or_infra | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xd9632d...a77dd4` | ⚠️ Unaudited |
-| SafeProxy | unknown | external_dependency_or_infra | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0xd9632d...a77dd4` | ⚠️ Unaudited |
-| SafeProxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | polygon | n/a | `0xd9632d...a77dd4` | ⚠️ Unaudited |
+| CPredictionFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x24992f91cfaaae97cf0b09057a4c40dc644b0368` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | external_dependency_or_infra | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0x00199e444155f6a06d74cf36315419d39b874f5c` | ⚠️ Unaudited |
+| PRDTFrontendHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x301ab4a9bb432a1e034a4b92894d675e2e0ad4c2` | ⚠️ Unaudited |
+| PRDTMultipleU_V0 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x7529b5550bbba74c095069dc5b370e460edb5a88` | ⚠️ Unaudited |
+| PRDTToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x854b5f2bfcc5b7cd05d6259cf5d035af57cfa301` | ⚠️ Unaudited |
+| PredictionsContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x35af667afd82de3c224fcfca9a66d32b586f6d60` | ⚠️ Unaudited |
+| ProBalance | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x0b9c8c0a04354f41b985c10daf7db30bc66998f5` | ⚠️ Unaudited |
+| ProBalanceSecondary | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x3992a99134ae42b3be566b8b802388bf1785e0fb` | ⚠️ Unaudited |
+| SafeProxy | unknown | external_dependency_or_infra | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xd9632d09518d940e307580dd1d7b4abd22a77dd4` | ⚠️ Unaudited |
+| SafeProxy | unknown | external_dependency_or_infra | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0xd9632d09518d940e307580dd1d7b4abd22a77dd4` | ⚠️ Unaudited |
+| SafeProxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | polygon | n/a | `0xd9632d09518d940e307580dd1d7b4abd22a77dd4` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -120,7 +120,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | bsc | unit-251776 | `0x49efb4...028da8` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | bsc | unit-251776 | `0x49efb44831ad88a9cffb183d48c0c60bf4028da8` | ❓ Unverified |
 
 ## Audit Inventory
 

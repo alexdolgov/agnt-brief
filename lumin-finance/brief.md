@@ -61,7 +61,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| LuminOft | unknown | arbitrum | n/a | [`0x1fc011...0501c2`](./contracts/arbitrum-42161/0x1fc01117e196800f416a577350cb1938d10501c2/) | ⚠️ Unaudited |
+| LuminOft | unknown | arbitrum | n/a | [`0x1fc01117e196800f416a577350cb1938d10501c2`](./contracts/arbitrum-42161/0x1fc01117e196800f416a577350cb1938d10501c2/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,7 +93,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | [`0x1fc011...0501c2`](./contracts/arbitrum-42161/0x1fc01117e196800f416a577350cb1938d10501c2/) | LuminOft | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x1fc01117e196800f416a577350cb1938d10501c2`](./contracts/arbitrum-42161/0x1fc01117e196800f416a577350cb1938d10501c2/) | LuminOft | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

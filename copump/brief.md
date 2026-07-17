@@ -59,10 +59,10 @@ The protocol forms a single structural family (Core Logic) of 8 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Copump | unknown | celo | n/a | 14 deployments: celo [`0x045af9...22706d`](./contracts/celo-42220/0x045af95caabb5971183c411abd7c81f2e122706d/); celo `0x38fea0...feb590`; celo `0x644ee3...7f96ce`; celo `0x7657a1...3bd2bf`; celo `0x90b4b1...e5c607`; celo `0x95e483...56f5bb`; celo `0xc58788...a04362`; celo `0xcd463d...5a4322`; celo `0xf041b6...1533d7`; linea [`0x045af9...22706d`](./contracts/linea-59144/0x045af95caabb5971183c411abd7c81f2e122706d/); linea `0x38fea0...feb590`; linea `0xb2af16...6c2604`; linea `0xbef631...67115b`; linea `0xc58788...a04362` | ✅ Audited |
-| CopumpCelo | unknown | celo | n/a | [`0x797357...af1655`](./contracts/celo-42220/0x797357f76042d76523848ef9abb5e2e5c1af1655/) | ✅ Audited |
-| CopumpSyncSwap | unknown | linea | n/a | 4 deployments: linea [`0x2b2339...a45e4e`](./contracts/linea-59144/0x2b23394b8583f8829fcf3880f00ceebc82a45e4e/); linea `0x38ab36...ce134e`; linea `0x44e7a3...56c06e`; linea `0xa74e55...205036` | ✅ Audited |
-| CopumpUniswap | unknown | sonic | n/a | [`0xbef631...67115b`](./contracts/sonic-146/0xbef63121a00916d88c4558f2a92f7d931c67115b/) | ✅ Audited |
+| Copump | unknown | celo | n/a | 14 deployments: celo [`0x045af95caabb5971183c411abd7c81f2e122706d`](./contracts/celo-42220/0x045af95caabb5971183c411abd7c81f2e122706d/); celo `0x38fea0959656ff4009a8d807adaa5247dbfeb590`; celo `0x644ee35da93acbfa301cde6535e0855c637f96ce`; celo `0x7657a160c7fdd0a880ab1de7c6fc1106ac3bd2bf`; celo `0x90b4b1bc99bf6731bba000c1329c4d445ae5c607`; celo `0x95e483ce4acf1f24b6cbd8b369e0735a3e56f5bb`; celo `0xc5878811dab98c21e6bc22620e5ae4da70a04362`; celo `0xcd463d22f65661d07a41dac2f0da7b65c95a4322`; celo `0xf041b6a41d61dc6fb792f4171039b6bf811533d7`; linea [`0x045af95caabb5971183c411abd7c81f2e122706d`](./contracts/linea-59144/0x045af95caabb5971183c411abd7c81f2e122706d/); linea `0x38fea0959656ff4009a8d807adaa5247dbfeb590`; linea `0xb2af16da8a53b3ce4ca9f8a863a906c1936c2604`; linea `0xbef63121a00916d88c4558f2a92f7d931c67115b`; linea `0xc5878811dab98c21e6bc22620e5ae4da70a04362` | ✅ Audited |
+| CopumpCelo | unknown | celo | n/a | [`0x797357f76042d76523848ef9abb5e2e5c1af1655`](./contracts/celo-42220/0x797357f76042d76523848ef9abb5e2e5c1af1655/) | ✅ Audited |
+| CopumpSyncSwap | unknown | linea | n/a | 4 deployments: linea [`0x2b23394b8583f8829fcf3880f00ceebc82a45e4e`](./contracts/linea-59144/0x2b23394b8583f8829fcf3880f00ceebc82a45e4e/); linea `0x38ab36d99242ce0cb795b09e17de9960e3ce134e`; linea `0x44e7a3f09f88529737c52dd5e58841ec0b56c06e`; linea `0xa74e55412ffb46747dd45eefdb68bf1366205036` | ✅ Audited |
+| CopumpUniswap | unknown | sonic | n/a | [`0xbef63121a00916d88c4558f2a92f7d931c67115b`](./contracts/sonic-146/0xbef63121a00916d88c4558f2a92f7d931c67115b/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 

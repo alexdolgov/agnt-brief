@@ -62,20 +62,20 @@ The protocol comprises 2 functional families. Its contracts share 2 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AirDrop | unknown | bsc | n/a | [`0x01d152...790a25`](./contracts/bsc-56/0x01d152ff991e76b6cb310387c07cafdfda790a25/) | ⚠️ Unaudited |
-| Core | unknown | bsc | n/a | [`0x00789c...fca2a7`](./contracts/bsc-56/0x00789cfb69499c65ac9a3a68fb4917c9b4fca2a7/) | ⚠️ Unaudited |
-| IMO | unknown | bsc | n/a | [`0x243ddd...9aba75`](./contracts/bsc-56/0x243ddd2e42ceb93349e726e2367edec6339aba75/) | ⚠️ Unaudited |
-| LiquidityMiningMaster | unknown | bsc | n/a | [`0x18878c...7c80ed`](./contracts/bsc-56/0x18878ca9b1cd1862c2cc357a6cf7a0ec857c80ed/) | ⚠️ Unaudited |
-| LiquidityMiningMasterBNB | unknown | bsc | n/a | [`0x48c425...7cabe3`](./contracts/bsc-56/0x48c42579d98aa768cde893f8214371ed607cabe3/) | ⚠️ Unaudited |
-| MarsFarmV2 | unknown | bsc | n/a | [`0x376289...e310e9`](./contracts/bsc-56/0x3762899a888944c1dde493041a339df2f9e310e9/) | ⚠️ Unaudited |
-| MarsStake | unknown | bsc | n/a | [`0x3b550b...36583b`](./contracts/bsc-56/0x3b550bbfac32ec434f858a8135fa17c40636583b/) | ⚠️ Unaudited |
-| MarsStratX2_PCS | unknown | bsc | n/a | [`0x4c7f4d...c5238f`](./contracts/bsc-56/0x4c7f4daca14c4bb0e6b616cc6faa8354ccc5238f/) | ⚠️ Unaudited |
-| MarsSwapFactory | unknown | bsc | n/a | [`0x6f1248...81f3be`](./contracts/bsc-56/0x6f12482d9869303b998c54d91bcd8bccba81f3be/) | ⚠️ Unaudited |
-| MarsSwapRouter | unknown | bsc | n/a | [`0xb68825...66e72d`](./contracts/bsc-56/0xb68825c810e67d4e444ad5b9deb55ba56a66e72d/) | ⚠️ Unaudited |
-| Timelock | unknown | bsc | n/a | [`0xc35a8b...ea6cbc`](./contracts/bsc-56/0xc35a8bdbb93abfab362af6dc3383cd2c6aea6cbc/) | ⚠️ Unaudited |
-| USDMToken | unknown | bsc | n/a | [`0xbb0fa2...fbbe85`](./contracts/bsc-56/0xbb0fa2fbe9b37444f5d1dbd22e0e5bdd2afbbe85/) | ⚠️ Unaudited |
-| VestingMaster | unknown | bsc | n/a | [`0x381fac...39c3db`](./contracts/bsc-56/0x381facb9282770a5e3ac6c8637096b442039c3db/) | ⚠️ Unaudited |
-| XMSToken | unknown | bsc | n/a | [`0x7859b0...81b576`](./contracts/bsc-56/0x7859b01bbf675d67da8cd128a50d155cd881b576/) | ⚠️ Unaudited |
+| AirDrop | unknown | bsc | n/a | [`0x01d152ff991e76b6cb310387c07cafdfda790a25`](./contracts/bsc-56/0x01d152ff991e76b6cb310387c07cafdfda790a25/) | ⚠️ Unaudited |
+| Core | unknown | bsc | n/a | [`0x00789cfb69499c65ac9a3a68fb4917c9b4fca2a7`](./contracts/bsc-56/0x00789cfb69499c65ac9a3a68fb4917c9b4fca2a7/) | ⚠️ Unaudited |
+| IMO | unknown | bsc | n/a | [`0x243ddd2e42ceb93349e726e2367edec6339aba75`](./contracts/bsc-56/0x243ddd2e42ceb93349e726e2367edec6339aba75/) | ⚠️ Unaudited |
+| LiquidityMiningMaster | unknown | bsc | n/a | [`0x18878ca9b1cd1862c2cc357a6cf7a0ec857c80ed`](./contracts/bsc-56/0x18878ca9b1cd1862c2cc357a6cf7a0ec857c80ed/) | ⚠️ Unaudited |
+| LiquidityMiningMasterBNB | unknown | bsc | n/a | [`0x48c42579d98aa768cde893f8214371ed607cabe3`](./contracts/bsc-56/0x48c42579d98aa768cde893f8214371ed607cabe3/) | ⚠️ Unaudited |
+| MarsFarmV2 | unknown | bsc | n/a | [`0x3762899a888944c1dde493041a339df2f9e310e9`](./contracts/bsc-56/0x3762899a888944c1dde493041a339df2f9e310e9/) | ⚠️ Unaudited |
+| MarsStake | unknown | bsc | n/a | [`0x3b550bbfac32ec434f858a8135fa17c40636583b`](./contracts/bsc-56/0x3b550bbfac32ec434f858a8135fa17c40636583b/) | ⚠️ Unaudited |
+| MarsStratX2_PCS | unknown | bsc | n/a | [`0x4c7f4daca14c4bb0e6b616cc6faa8354ccc5238f`](./contracts/bsc-56/0x4c7f4daca14c4bb0e6b616cc6faa8354ccc5238f/) | ⚠️ Unaudited |
+| MarsSwapFactory | unknown | bsc | n/a | [`0x6f12482d9869303b998c54d91bcd8bccba81f3be`](./contracts/bsc-56/0x6f12482d9869303b998c54d91bcd8bccba81f3be/) | ⚠️ Unaudited |
+| MarsSwapRouter | unknown | bsc | n/a | [`0xb68825c810e67d4e444ad5b9deb55ba56a66e72d`](./contracts/bsc-56/0xb68825c810e67d4e444ad5b9deb55ba56a66e72d/) | ⚠️ Unaudited |
+| Timelock | unknown | bsc | n/a | [`0xc35a8bdbb93abfab362af6dc3383cd2c6aea6cbc`](./contracts/bsc-56/0xc35a8bdbb93abfab362af6dc3383cd2c6aea6cbc/) | ⚠️ Unaudited |
+| USDMToken | unknown | bsc | n/a | [`0xbb0fa2fbe9b37444f5d1dbd22e0e5bdd2afbbe85`](./contracts/bsc-56/0xbb0fa2fbe9b37444f5d1dbd22e0e5bdd2afbbe85/) | ⚠️ Unaudited |
+| VestingMaster | unknown | bsc | n/a | [`0x381facb9282770a5e3ac6c8637096b442039c3db`](./contracts/bsc-56/0x381facb9282770a5e3ac6c8637096b442039c3db/) | ⚠️ Unaudited |
+| XMSToken | unknown | bsc | n/a | [`0x7859b01bbf675d67da8cd128a50d155cd881b576`](./contracts/bsc-56/0x7859b01bbf675d67da8cd128a50d155cd881b576/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -108,20 +108,20 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x01d152...790a25`](./contracts/bsc-56/0x01d152ff991e76b6cb310387c07cafdfda790a25/) | AirDrop | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x00789c...fca2a7`](./contracts/bsc-56/0x00789cfb69499c65ac9a3a68fb4917c9b4fca2a7/) | Core | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x243ddd...9aba75`](./contracts/bsc-56/0x243ddd2e42ceb93349e726e2367edec6339aba75/) | IMO | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x18878c...7c80ed`](./contracts/bsc-56/0x18878ca9b1cd1862c2cc357a6cf7a0ec857c80ed/) | LiquidityMiningMaster | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x48c425...7cabe3`](./contracts/bsc-56/0x48c42579d98aa768cde893f8214371ed607cabe3/) | LiquidityMiningMasterBNB | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x376289...e310e9`](./contracts/bsc-56/0x3762899a888944c1dde493041a339df2f9e310e9/) | MarsFarmV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x3b550b...36583b`](./contracts/bsc-56/0x3b550bbfac32ec434f858a8135fa17c40636583b/) | MarsStake | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x4c7f4d...c5238f`](./contracts/bsc-56/0x4c7f4daca14c4bb0e6b616cc6faa8354ccc5238f/) | MarsStratX2_PCS | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x6f1248...81f3be`](./contracts/bsc-56/0x6f12482d9869303b998c54d91bcd8bccba81f3be/) | MarsSwapFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xb68825...66e72d`](./contracts/bsc-56/0xb68825c810e67d4e444ad5b9deb55ba56a66e72d/) | MarsSwapRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xc35a8b...ea6cbc`](./contracts/bsc-56/0xc35a8bdbb93abfab362af6dc3383cd2c6aea6cbc/) | Timelock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xbb0fa2...fbbe85`](./contracts/bsc-56/0xbb0fa2fbe9b37444f5d1dbd22e0e5bdd2afbbe85/) | USDMToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x381fac...39c3db`](./contracts/bsc-56/0x381facb9282770a5e3ac6c8637096b442039c3db/) | VestingMaster | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x7859b0...81b576`](./contracts/bsc-56/0x7859b01bbf675d67da8cd128a50d155cd881b576/) | XMSToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x01d152ff991e76b6cb310387c07cafdfda790a25`](./contracts/bsc-56/0x01d152ff991e76b6cb310387c07cafdfda790a25/) | AirDrop | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x00789cfb69499c65ac9a3a68fb4917c9b4fca2a7`](./contracts/bsc-56/0x00789cfb69499c65ac9a3a68fb4917c9b4fca2a7/) | Core | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x243ddd2e42ceb93349e726e2367edec6339aba75`](./contracts/bsc-56/0x243ddd2e42ceb93349e726e2367edec6339aba75/) | IMO | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x18878ca9b1cd1862c2cc357a6cf7a0ec857c80ed`](./contracts/bsc-56/0x18878ca9b1cd1862c2cc357a6cf7a0ec857c80ed/) | LiquidityMiningMaster | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x48c42579d98aa768cde893f8214371ed607cabe3`](./contracts/bsc-56/0x48c42579d98aa768cde893f8214371ed607cabe3/) | LiquidityMiningMasterBNB | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x3762899a888944c1dde493041a339df2f9e310e9`](./contracts/bsc-56/0x3762899a888944c1dde493041a339df2f9e310e9/) | MarsFarmV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x3b550bbfac32ec434f858a8135fa17c40636583b`](./contracts/bsc-56/0x3b550bbfac32ec434f858a8135fa17c40636583b/) | MarsStake | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x4c7f4daca14c4bb0e6b616cc6faa8354ccc5238f`](./contracts/bsc-56/0x4c7f4daca14c4bb0e6b616cc6faa8354ccc5238f/) | MarsStratX2_PCS | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x6f12482d9869303b998c54d91bcd8bccba81f3be`](./contracts/bsc-56/0x6f12482d9869303b998c54d91bcd8bccba81f3be/) | MarsSwapFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xb68825c810e67d4e444ad5b9deb55ba56a66e72d`](./contracts/bsc-56/0xb68825c810e67d4e444ad5b9deb55ba56a66e72d/) | MarsSwapRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xc35a8bdbb93abfab362af6dc3383cd2c6aea6cbc`](./contracts/bsc-56/0xc35a8bdbb93abfab362af6dc3383cd2c6aea6cbc/) | Timelock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xbb0fa2fbe9b37444f5d1dbd22e0e5bdd2afbbe85`](./contracts/bsc-56/0xbb0fa2fbe9b37444f5d1dbd22e0e5bdd2afbbe85/) | USDMToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x381facb9282770a5e3ac6c8637096b442039c3db`](./contracts/bsc-56/0x381facb9282770a5e3ac6c8637096b442039c3db/) | VestingMaster | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x7859b01bbf675d67da8cd128a50d155cd881b576`](./contracts/bsc-56/0x7859b01bbf675d67da8cd128a50d155cd881b576/) | XMSToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

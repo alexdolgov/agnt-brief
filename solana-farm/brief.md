@@ -62,7 +62,7 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Solana | unknown | bsc | n/a | [`0xfea6ab...e8b9a1`](./contracts/bsc-56/0xfea6ab80cd850c3e63374bc737479aeec0e8b9a1/) | ⚠️ Unaudited |
+| Solana | unknown | bsc | n/a | [`0xfea6ab80cd850c3e63374bc737479aeec0e8b9a1`](./contracts/bsc-56/0xfea6ab80cd850c3e63374bc737479aeec0e8b9a1/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -82,8 +82,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0x9158be...c7f4d2` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xee3940...967b2f` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x9158be9de2ae11978a9f91d6014e509285c7f4d2` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xee3940f678f9db9dbdb006ba63b7f085a0967b2f` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -97,7 +97,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0xfea6ab...e8b9a1`](./contracts/bsc-56/0xfea6ab80cd850c3e63374bc737479aeec0e8b9a1/) | Solana | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xfea6ab80cd850c3e63374bc737479aeec0e8b9a1`](./contracts/bsc-56/0xfea6ab80cd850c3e63374bc737479aeec0e8b9a1/) | Solana | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

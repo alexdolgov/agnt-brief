@@ -48,8 +48,8 @@ The pinned logic-topography run contains 6 contract row(s) across arbitrum, base
 
 ### Forked Contracts
 
-**ArbitrumBridgeExecutor** (`0x64307c...b7a16d`, chain 42161)
-Origin: compound-finance (`0x0e3759...46eacf`)
+**ArbitrumBridgeExecutor** (`0x64307c2668cf9a8e55dbbe276e33e78fbfb7a16d`, chain 42161)
+Origin: compound-finance (`0x0e37599436974a25ddeedf795c848d30af46eacf`)
 Containment: 100.0% - 18 functions inherited
 Centroid audit status: pending_validation
 
@@ -57,8 +57,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**OptimismBridgeExecutor** (`0x2b290e...39c442`, chain 10)
-Origin: compound-finance (`0x0e3759...46eacf`)
+**OptimismBridgeExecutor** (`0x2b290e6c443ffb909eaee2c3269a2bfd6a39c442`, chain 10)
+Origin: compound-finance (`0x0e37599436974a25ddeedf795c848d30af46eacf`)
 Containment: 100.0% - 18 functions inherited
 Centroid audit status: pending_validation
 
@@ -68,33 +68,33 @@ Removals (removed from original): none
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x27ec13...617f8a`, chain 1)
-- UnnamedContract (`0x7483e8...32d9c4`, chain 1)
-- UnnamedContract (`0x7b42e9...131025`, chain 1)
-- UnnamedContract (`0x80e429...2d9986`, chain 1)
-- UnnamedContract (`0xbabeb7...84d4a4`, chain 1)
-- UnnamedContract (`0xbc0f42...2ffd86`, chain 1)
-- UnnamedContract (`0x0a5f4d...978114`, chain 10)
-- UnnamedContract (`0x5c1fc5...713048`, chain 10)
-- UnnamedContract (`0x80bfd0...bc11a2`, chain 10)
-- UnnamedContract (`0xbc547e...6fc06b`, chain 10)
-- UnnamedContract (`0xfe3b2f...fb30fb`, chain 10)
-- UnnamedContract (`0x1db5b4...659cba`, chain 8453)
-- UnnamedContract (`0x3a9a3f...34b61c`, chain 8453)
-- UnnamedContract (`0x4e973a...ccfe2a`, chain 8453)
-- UnnamedContract (`0x5a4f8e...5b98b6`, chain 8453)
-- UnnamedContract (`0x91b4a1...fd5a3d`, chain 8453)
-- UnnamedContract (`0x95827f...c579ff`, chain 8453)
-- UnnamedContract (`0xa6311e...50bddf`, chain 8453)
-- UnnamedContract (`0x2e5e5f...51fdf3`, chain 42161)
-- UnnamedContract (`0x3e0eb7...558d1d`, chain 42161)
-- UnnamedContract (`0x524cbc...3e29c7`, chain 42161)
-- UnnamedContract (`0x6cf1f4...b4043b`, chain 42161)
-- UnnamedContract (`0xcc07b8...87d521`, chain 42161)
-- ClonableBeaconProxy (`0x565f12...4f8030`, chain 42161)
-- GovernanceStrategy (`0x287672...8b0728`, chain 1)
-- MerkleClaimFactory (`0x07f4d8...e33b6c`, chain 10)
-- OptimismMintableERC20 (`0xb38360...6b2a2f`, chain 8453)
+- UnnamedContract (`0x27ec130ffcd2ca54bb9359a6f0a7cf3952617f8a`, chain 1)
+- UnnamedContract (`0x7483e83b481c69a93cb025395194e0dc4f32d9c4`, chain 1)
+- UnnamedContract (`0x7b42e90f0e5f3cd83b6d623020852e74f1131025`, chain 1)
+- UnnamedContract (`0x80e429285e1a847edc2f3258a40f5df5622d9986`, chain 1)
+- UnnamedContract (`0xbabeb75c4e110515dc7d31353d404f0a1784d4a4`, chain 1)
+- UnnamedContract (`0xbc0f42bdc9491180742c4b4e9ce84dbbec2ffd86`, chain 1)
+- UnnamedContract (`0x0a5f4d187415d94deb2a8576d96c64b7b5978114`, chain 10)
+- UnnamedContract (`0x5c1fc5e57eaf3f56c1ce05f9508dbe179c713048`, chain 10)
+- UnnamedContract (`0x80bfd06271072c4eaa5fef2e3c1217f21bbc11a2`, chain 10)
+- UnnamedContract (`0xbc547efb36be42fd71236c9858b6eee0a16fc06b`, chain 10)
+- UnnamedContract (`0xfe3b2f655b725ba6cd0cc78961e013968ffb30fb`, chain 10)
+- UnnamedContract (`0x1db5b42e760072bd981ae67435f73884aa659cba`, chain 8453)
+- UnnamedContract (`0x3a9a3fc757122ba5c518d5d2ac8ce6d78e34b61c`, chain 8453)
+- UnnamedContract (`0x4e973a2cdc9b73b794139b0f7f57e379f5ccfe2a`, chain 8453)
+- UnnamedContract (`0x5a4f8efa33a2715304fed1363fd0029f185b98b6`, chain 8453)
+- UnnamedContract (`0x91b4a1f2bd97c3b577ce944d81260aa3b1fd5a3d`, chain 8453)
+- UnnamedContract (`0x95827f79a23b4d51af2b28a9a4fd65a25cc579ff`, chain 8453)
+- UnnamedContract (`0xa6311e3998cf02947853d14974401fda5950bddf`, chain 8453)
+- UnnamedContract (`0x2e5e5f790558d23a9f38fdc573490745c651fdf3`, chain 42161)
+- UnnamedContract (`0x3e0eb76458991959c0a267d75780de7933558d1d`, chain 42161)
+- UnnamedContract (`0x524cbc5b0b57eb910827cd132b7b68feef3e29c7`, chain 42161)
+- UnnamedContract (`0x6cf1f406210704558c7d99a0d14222b1c7b4043b`, chain 42161)
+- UnnamedContract (`0xcc07b85d956de5cdf44d6eed42e1d22d4c87d521`, chain 42161)
+- ClonableBeaconProxy (`0x565f12c7f08d906ea9f32c0826412ec13d4f8030`, chain 42161)
+- GovernanceStrategy (`0x287672b1efcac09715cfb972aa747a9fcd8b0728`, chain 1)
+- MerkleClaimFactory (`0x07f4d8b815458b42ecc27440140c99c764e33b6c`, chain 10)
+- OptimismMintableERC20 (`0xb3836098d1e94ec651d74d053d4a0813316b2a2f`, chain 8453)
 
 ## Contract Surface Quality
 
@@ -140,62 +140,62 @@ Removals (removed from original): none
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Admin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x8d3829...8843b4` | ⚠️ Unaudited |
-| AquilaFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x035022...70d2b0` | ⚠️ Unaudited |
-| AquilaRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x109074...7e7fd1` | ⚠️ Unaudited |
-| ArbitrumBridgeExecutor | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-391775 | `0x64307c...b7a16d` | ⚠️ Unaudited |
-| BathBuddy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x0299d5...d3ffac` | ⚠️ Unaudited |
-| BathHouse | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x0daaf7...8b52f5` | ⚠️ Unaudited |
-| BathPair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x03660e...878a57` | ⚠️ Unaudited |
-| BathToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x2fd610...e4b8fa` | ⚠️ Unaudited |
-| BebraVesting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x559825...550858` | ⚠️ Unaudited |
-| BondAggregator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xece03d...bbe897` | ⚠️ Unaudited |
-| BondFixedTermSDA | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x1c2eff...37ac77` | ⚠️ Unaudited |
-| BondFixedTermTeller | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xd13a6f...724e5f` | ⚠️ Unaudited |
-| ClearingV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x79f17c...231e04` | ⚠️ Unaudited |
-| ClonableBeaconProxy | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-391786 | `0x565f12...4f8030` | ⚠️ Unaudited |
-| Collector | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x1115cf...3a3170` | ⚠️ Unaudited |
-| Executor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0c2727...fcccd8` | ⚠️ Unaudited |
-| GladiusOrderQuoter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x56e436...627fd9` | ⚠️ Unaudited |
-| GladiusReactor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x3c53c0...2d07f9` | ⚠️ Unaudited |
-| GovernanceStrategy | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391759 | `0x287672...8b0728` | ⚠️ Unaudited |
-| HypervisorFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xeb1e99...e43c96` | ⚠️ Unaudited |
-| InitializableAdminUpgradeabilityProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x1456a1...12c181` | ⚠️ Unaudited |
-| MarketAid | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x0fc9b5...5db839` | ⚠️ Unaudited |
-| MarketAidFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x04fdd1...6ada1b` | ⚠️ Unaudited |
-| MerkleClaimERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0x2181f1...fd6ba3` | ⚠️ Unaudited |
-| MerkleClaimFactory | unknown | project_anchor | own_supporting | 0 | optimism | unit-391765 | `0x07f4d8...e33b6c` | ⚠️ Unaudited |
-| MerkleClaimFactoryV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x5e08f1...6a0a63` | ⚠️ Unaudited |
-| MerkleMerkleMerkle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2618be...6f59ec` | ⚠️ Unaudited |
-| NFTDescriptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x085ffe...0c6745` | ⚠️ Unaudited |
-| NonfungiblePositionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x001c81...e702ab` | ⚠️ Unaudited |
-| NonfungibleTokenPositionDescriptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x106aa8...c68a52` | ⚠️ Unaudited |
-| OptimismBridgeExecutor | unknown | project_anchor | own_supporting | 0 | optimism | unit-391767 | `0x2b290e...39c442` | ⚠️ Unaudited |
-| OptimismMintableERC20 | unknown | project_anchor | own_supporting | 0 | base | unit-391785 | `0xb38360...6b2a2f` | ⚠️ Unaudited |
-| PoolArbExecutor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x455f8f...7e0b24` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x1c4bf0...0da593` | ⚠️ Unaudited |
-| QuoterV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x22066f...d3284c` | ⚠️ Unaudited |
-| RolesAuthority | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x865c9c...8829a4` | ⚠️ Unaudited |
-| RubiconFeeController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0c2727...fcccd8` | ⚠️ Unaudited |
-| RubiconGovernance | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x902618...ccc935` | ⚠️ Unaudited |
-| RubiconMarket | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2d39ed...353aa0` | ⚠️ Unaudited |
-| RubiconRewardsVestingWallet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x39eb71...d78569` | ⚠️ Unaudited |
-| RubiconRFQ | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x293e35...2986af` | ⚠️ Unaudited |
-| RubiconRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x01fb1a...497d37` | ⚠️ Unaudited |
-| RubiconV3Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x045b70...aa62ba` | ⚠️ Unaudited |
-| RubiLPFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x424f76...3f0c3d` | ⚠️ Unaudited |
-| RubiLPFactoryV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0ea5bc...a7b8b7` | ⚠️ Unaudited |
-| StakingMultiRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x1bcbc9...30329c` | ⚠️ Unaudited |
-| StakingRewardsFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x568cc6...a2cbe9` | ⚠️ Unaudited |
-| StrategistUtility | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0x02d902...ab4566` | ⚠️ Unaudited |
-| SwapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x373948...434541` | ⚠️ Unaudited |
-| TickLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x846472...db640c` | ⚠️ Unaudited |
-| TransitionBathHouse | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xf7cad9...5aba25` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | optimism | n/a | `0x264188...20ce02` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | optimism | n/a | `0x63998c...1cfd90` | ⚠️ Unaudited |
-| UniProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x5365df...d06d93` | ⚠️ Unaudited |
-| UniswapV3Staker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x22066f...d3284c` | ⚠️ Unaudited |
-| WETH9 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x420000...000006` | ⚠️ Unaudited |
+| Admin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x8d38290f53aa056726f30fe972b454a63c8843b4` | ⚠️ Unaudited |
+| AquilaFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x03502261a6aa8e911643cd0d71c6dc6ba570d2b0` | ⚠️ Unaudited |
+| AquilaRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x109074b31759a5b08164e54c44333f33247e7fd1` | ⚠️ Unaudited |
+| ArbitrumBridgeExecutor | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-391775 | `0x64307c2668cf9a8e55dbbe276e33e78fbfb7a16d` | ⚠️ Unaudited |
+| BathBuddy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x0299d5f49dcccdd56b80f9fc2730ac3b75d3ffac` | ⚠️ Unaudited |
+| BathHouse | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x0daaf796d2b87cad097908399a0b7e8a1b8b52f5` | ⚠️ Unaudited |
+| BathPair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x03660e5261c8effd8ec62971ae64e18c4d878a57` | ⚠️ Unaudited |
+| BathToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x2fd610e57b0239635de4ebd56c178d0d33e4b8fa` | ⚠️ Unaudited |
+| BebraVesting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x55982546e8814770753e9b7c3c7b51340f550858` | ⚠️ Unaudited |
+| BondAggregator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xece03d9d58086ad6e5e04fcc88d21fb1d1bbe897` | ⚠️ Unaudited |
+| BondFixedTermSDA | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x1c2eff644b6084bbd9a57bacb16788048d37ac77` | ⚠️ Unaudited |
+| BondFixedTermTeller | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xd13a6f548f29dea6efb4b26654885e4a97724e5f` | ⚠️ Unaudited |
+| ClearingV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x79f17c4d4fdb9db42e2b7839d56a2cff10231e04` | ⚠️ Unaudited |
+| ClonableBeaconProxy | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-391786 | `0x565f12c7f08d906ea9f32c0826412ec13d4f8030` | ⚠️ Unaudited |
+| Collector | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x1115cfebdb1a4761514b9d3b3d0fd30f503a3170` | ⚠️ Unaudited |
+| Executor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0c27278542ec10c205d475ea382d9be348fcccd8` | ⚠️ Unaudited |
+| GladiusOrderQuoter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x56e43695d183dcfa9d8fe95e796227a491627fd9` | ⚠️ Unaudited |
+| GladiusReactor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x3c53c04d633bec3fb0de3492607c239bf92d07f9` | ⚠️ Unaudited |
+| GovernanceStrategy | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391759 | `0x287672b1efcac09715cfb972aa747a9fcd8b0728` | ⚠️ Unaudited |
+| HypervisorFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xeb1e9934a7f668a4e3ce8845bc28a88c0ae43c96` | ⚠️ Unaudited |
+| InitializableAdminUpgradeabilityProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x1456a1897509bb9a42610d8ff5fe869d2612c181` | ⚠️ Unaudited |
+| MarketAid | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x0fc9b5f4aeaf77d4aab26e0a3dd27710415db839` | ⚠️ Unaudited |
+| MarketAidFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x04fdd1602c0a2f6a39fe64bb0f315080386ada1b` | ⚠️ Unaudited |
+| MerkleClaimERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0x2181f152d02712cb51072c4cbc1ef8ec2efd6ba3` | ⚠️ Unaudited |
+| MerkleClaimFactory | unknown | project_anchor | own_supporting | 0 | optimism | unit-391765 | `0x07f4d8b815458b42ecc27440140c99c764e33b6c` | ⚠️ Unaudited |
+| MerkleClaimFactoryV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x5e08f194553c329323db7ccdc5cdd918cc6a0a63` | ⚠️ Unaudited |
+| MerkleMerkleMerkle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2618bee17579a416db232cfa7c0afa43586f59ec` | ⚠️ Unaudited |
+| NFTDescriptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x085ffe068af0ac80dc70d8c0c6e04389dc0c6745` | ⚠️ Unaudited |
+| NonfungiblePositionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x001c8124f4d63a6b44c904a9eff620df1be702ab` | ⚠️ Unaudited |
+| NonfungibleTokenPositionDescriptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x106aa881c7fd4cc8b9ffa613721c49b890c68a52` | ⚠️ Unaudited |
+| OptimismBridgeExecutor | unknown | project_anchor | own_supporting | 0 | optimism | unit-391767 | `0x2b290e6c443ffb909eaee2c3269a2bfd6a39c442` | ⚠️ Unaudited |
+| OptimismMintableERC20 | unknown | project_anchor | own_supporting | 0 | base | unit-391785 | `0xb3836098d1e94ec651d74d053d4a0813316b2a2f` | ⚠️ Unaudited |
+| PoolArbExecutor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x455f8f98b52b38ac15dfb628dcee7eeeb57e0b24` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x1c4bf098a570d4f2dac5fdb9b74bbb84c70da593` | ⚠️ Unaudited |
+| QuoterV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x22066f5a85076630cf9deeb0a12186b73cd3284c` | ⚠️ Unaudited |
+| RolesAuthority | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x865c9ccc7c5ac4a6cc206a23ce299a61408829a4` | ⚠️ Unaudited |
+| RubiconFeeController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0c27278542ec10c205d475ea382d9be348fcccd8` | ⚠️ Unaudited |
+| RubiconGovernance | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x902618f10bf52cfdc19e89de5fb6c107c0ccc935` | ⚠️ Unaudited |
+| RubiconMarket | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2d39edaa2fce28752e487dc1693e0b5309353aa0` | ⚠️ Unaudited |
+| RubiconRewardsVestingWallet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x39eb71ac275f69e7e7a3a698309fb56b11d78569` | ⚠️ Unaudited |
+| RubiconRFQ | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x293e354a45a07d25ae1b2f9f00c91115a12986af` | ⚠️ Unaudited |
+| RubiconRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x01fb1ad98ff51eb9e218dd74af54cbe213497d37` | ⚠️ Unaudited |
+| RubiconV3Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x045b7012cbd158c1b48874310f985adb48aa62ba` | ⚠️ Unaudited |
+| RubiLPFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x424f7653afa3e8d5818591e6e7b34e41e33f0c3d` | ⚠️ Unaudited |
+| RubiLPFactoryV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0ea5bcdf410f7fbf67837b060cbce92a27a7b8b7` | ⚠️ Unaudited |
+| StakingMultiRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x1bcbc996fc9e57ab4d3b08a1e7a54b7ae030329c` | ⚠️ Unaudited |
+| StakingRewardsFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x568cc64a86248d02542b20d66f2f7d30d3a2cbe9` | ⚠️ Unaudited |
+| StrategistUtility | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0x02d902f9e4d29f6143e79f82cca68a1fb8ab4566` | ⚠️ Unaudited |
+| SwapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x3739488662524c8cdc0b41d2fa6a1bdf75434541` | ⚠️ Unaudited |
+| TickLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x84647261db8d61fc9a1717cff5eb64b1d3db640c` | ⚠️ Unaudited |
+| TransitionBathHouse | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xf7cad960fe1f621ce6d05cb1b3240aed135aba25` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | optimism | n/a | `0x2641884bb28e3d832e7d57dc71e76e849f20ce02` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | optimism | n/a | `0x63998c67f051a21dc11bceb07e0719a81c1cfd90` | ⚠️ Unaudited |
+| UniProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x5365df15547fd5475041e7a3c0879d0e49d06d93` | ⚠️ Unaudited |
+| UniswapV3Staker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x22066f5a85076630cf9deeb0a12186b73cd3284c` | ⚠️ Unaudited |
+| WETH9 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x4200000000000000000000000000000000000006` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -215,29 +215,29 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391758 | `0x27ec13...617f8a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391760 | `0x7483e8...32d9c4` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391761 | `0x7b42e9...131025` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391762 | `0x80e429...2d9986` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391763 | `0xbabeb7...84d4a4` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391764 | `0xbc0f42...2ffd86` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-391766 | `0x0a5f4d...978114` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-391768 | `0x5c1fc5...713048` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-391769 | `0x80bfd0...bc11a2` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-391770 | `0xbc547e...6fc06b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-391771 | `0xfe3b2f...fb30fb` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-391778 | `0x1db5b4...659cba` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-391779 | `0x3a9a3f...34b61c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-391780 | `0x4e973a...ccfe2a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-391781 | `0x5a4f8e...5b98b6` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-391782 | `0x91b4a1...fd5a3d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-391783 | `0x95827f...c579ff` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-391784 | `0xa6311e...50bddf` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-391772 | `0x2e5e5f...51fdf3` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-391773 | `0x3e0eb7...558d1d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-391774 | `0x524cbc...3e29c7` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-391776 | `0x6cf1f4...b4043b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-391777 | `0xcc07b8...87d521` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391758 | `0x27ec130ffcd2ca54bb9359a6f0a7cf3952617f8a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391760 | `0x7483e83b481c69a93cb025395194e0dc4f32d9c4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391761 | `0x7b42e90f0e5f3cd83b6d623020852e74f1131025` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391762 | `0x80e429285e1a847edc2f3258a40f5df5622d9986` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391763 | `0xbabeb75c4e110515dc7d31353d404f0a1784d4a4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391764 | `0xbc0f42bdc9491180742c4b4e9ce84dbbec2ffd86` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-391766 | `0x0a5f4d187415d94deb2a8576d96c64b7b5978114` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-391768 | `0x5c1fc5e57eaf3f56c1ce05f9508dbe179c713048` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-391769 | `0x80bfd06271072c4eaa5fef2e3c1217f21bbc11a2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-391770 | `0xbc547efb36be42fd71236c9858b6eee0a16fc06b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-391771 | `0xfe3b2f655b725ba6cd0cc78961e013968ffb30fb` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-391778 | `0x1db5b42e760072bd981ae67435f73884aa659cba` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-391779 | `0x3a9a3fc757122ba5c518d5d2ac8ce6d78e34b61c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-391780 | `0x4e973a2cdc9b73b794139b0f7f57e379f5ccfe2a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-391781 | `0x5a4f8efa33a2715304fed1363fd0029f185b98b6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-391782 | `0x91b4a1f2bd97c3b577ce944d81260aa3b1fd5a3d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-391783 | `0x95827f79a23b4d51af2b28a9a4fd65a25cc579ff` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-391784 | `0xa6311e3998cf02947853d14974401fda5950bddf` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-391772 | `0x2e5e5f790558d23a9f38fdc573490745c651fdf3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-391773 | `0x3e0eb76458991959c0a267d75780de7933558d1d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-391774 | `0x524cbc5b0b57eb910827cd132b7b68feef3e29c7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-391776 | `0x6cf1f406210704558c7d99a0d14222b1c7b4043b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-391777 | `0xcc07b85d956de5cdf44d6eed42e1d22d4c87d521` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -297,12 +297,12 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | `0x64307c...b7a16d` | ArbitrumBridgeExecutor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | `0x565f12...4f8030` | ClonableBeaconProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x287672...8b0728` | GovernanceStrategy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | `0x07f4d8...e33b6c` | MerkleClaimFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | `0x2b290e...39c442` | OptimismBridgeExecutor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xb38360...6b2a2f` | OptimismMintableERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0x64307c2668cf9a8e55dbbe276e33e78fbfb7a16d` | ArbitrumBridgeExecutor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0x565f12c7f08d906ea9f32c0826412ec13d4f8030` | ClonableBeaconProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x287672b1efcac09715cfb972aa747a9fcd8b0728` | GovernanceStrategy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x07f4d8b815458b42ecc27440140c99c764e33b6c` | MerkleClaimFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x2b290e6c443ffb909eaee2c3269a2bfd6a39c442` | OptimismBridgeExecutor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xb3836098d1e94ec651d74d053d4a0813316b2a2f` | OptimismMintableERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

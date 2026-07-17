@@ -70,35 +70,35 @@ Total inherited audits: 11. Inherited coverage reflects forked/shared code audit
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Minter | unknown | ethereum | n/a | [`0x344363...1a0e2f`](./contracts/ethereum-1/0x344363f85a25837b154dd1c03117fef0341a0e2f/) | ✅ Audited |
-| STBT | unknown | ethereum | n/a | [`0x24f5b8...0fc948`](./contracts/ethereum-1/0x24f5b8e0e4a0a9ccdcc4fa05a9885a28140fc948/) | ✅ Audited |
-| StbtTimelockController | unknown | ethereum | n/a | [`0x0eb8f1...7b6f47`](./contracts/ethereum-1/0x0eb8f11ec17c160b0d51586b0e420faff07b6f47/) | ✅ Audited |
-| STBTv2 | unknown | ethereum | n/a | [`0x3f0868...5a37aa`](./contracts/ethereum-1/0x3f0868fd7b0844e374277ebc9a3e4979465a37aa/) | ✅ Audited |
-| UpgradeableSTBT | unknown | ethereum | n/a | [`0x32a67b...60528f`](./contracts/ethereum-1/0x32a67bf4815b4f28e879fd09671ef74ebd60528f/) | ✅ Audited |
-| WSTBT | unknown | ethereum | n/a | [`0x288a80...bc4c83`](./contracts/ethereum-1/0x288a8005c53632d920045b7c7c2e54a3f1bc4c83/) | ✅ Audited |
+| Minter | unknown | ethereum | n/a | [`0x344363f85a25837b154dd1c03117fef0341a0e2f`](./contracts/ethereum-1/0x344363f85a25837b154dd1c03117fef0341a0e2f/) | ✅ Audited |
+| STBT | unknown | ethereum | n/a | [`0x24f5b8e0e4a0a9ccdcc4fa05a9885a28140fc948`](./contracts/ethereum-1/0x24f5b8e0e4a0a9ccdcc4fa05a9885a28140fc948/) | ✅ Audited |
+| StbtTimelockController | unknown | ethereum | n/a | [`0x0eb8f11ec17c160b0d51586b0e420faff07b6f47`](./contracts/ethereum-1/0x0eb8f11ec17c160b0d51586b0e420faff07b6f47/) | ✅ Audited |
+| STBTv2 | unknown | ethereum | n/a | [`0x3f0868fd7b0844e374277ebc9a3e4979465a37aa`](./contracts/ethereum-1/0x3f0868fd7b0844e374277ebc9a3e4979465a37aa/) | ✅ Audited |
+| UpgradeableSTBT | unknown | ethereum | n/a | [`0x32a67bf4815b4f28e879fd09671ef74ebd60528f`](./contracts/ethereum-1/0x32a67bf4815b4f28e879fd09671ef74ebd60528f/) | ✅ Audited |
+| WSTBT | unknown | ethereum | n/a | [`0x288a8005c53632d920045b7c7c2e54a3f1bc4c83`](./contracts/ethereum-1/0x288a8005c53632d920045b7c7c2e54a3f1bc4c83/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (18)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BullionEnumerableNFT | unknown | ethereum | n/a | [`0x62bee1...cc368c`](./contracts/ethereum-1/0x62bee1bc8cf74fbbbd1f8444a39ca1db4acc368c/) | ⚠️ Unaudited |
-| BullionNFT | unknown | ethereum | n/a | [`0x52a6dd...d2f9dc`](./contracts/ethereum-1/0x52a6ddc1ccc00b69e6fdc6228b50f0fa6dd2f9dc/) | ⚠️ Unaudited |
-| CCWSTBTMessager | unknown | bsc | n/a | [`0x2a918b...0bbf18`](./contracts/bsc-56/0x2a918b3a032174dd89c3d9e7f27ea0d7710bbf18/) | ⚠️ Unaudited |
-| CustomerManager | unknown | ethereum | n/a | [`0x0978aa...e3f004`](./contracts/ethereum-1/0x0978aa6ed342ff8327e97415653f5af790e3f004/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | bsc | n/a | [`0x0630f6...19c755`](./contracts/bsc-56/0x0630f63329e3c4b675d8ba1b82c330f46319c755/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | bsc | n/a | [`0x0654cf...39ec76`](./contracts/bsc-56/0x0654cf3aa9dd54d5ffe3a6c21bb9205a3a39ec76/) | ⚠️ Unaudited |
-| FallbackReserveFeed | unknown | ethereum | n/a | [`0x20377b...5e28ab`](./contracts/ethereum-1/0x20377b5e38e0e992bbdcf3502ec72ded6a5e28ab/) | ⚠️ Unaudited |
-| MTokenMain | unknown | ethereum | n/a | [`0x123ffe...58d9e1`](./contracts/ethereum-1/0x123ffe0a3c62878dcbee2742227dc8990058d9e1/) | ⚠️ Unaudited |
-| MTokenMessager | unknown | ethereum | n/a | [`0x24ce2a...028c7e`](./contracts/ethereum-1/0x24ce2a00eb05b33b206b4057598f97ddc3028c7e/) | ⚠️ Unaudited |
-| MTokenMessagerV2 | unknown | ethereum | n/a | [`0x102874...5fb878`](./contracts/ethereum-1/0x102874ca109a5a7e94a0385f1380cebc905fb878/) | ⚠️ Unaudited |
-| MTokenMessenger | unknown | ethereum | n/a | [`0x0be916...8f68c5`](./contracts/ethereum-1/0x0be91692750982b4ba92dabc3985c548098f68c5/) | ⚠️ Unaudited |
-| MTokenMessengerLZ | unknown | ethereum | n/a | [`0xb350d8...a6386f`](./contracts/ethereum-1/0xb350d8decc3adf68c3856d46ab42976ca7a6386f/) | ⚠️ Unaudited |
-| MTokenMinter | unknown | ethereum | n/a | [`0x5fd20e...296cef`](./contracts/ethereum-1/0x5fd20e49239aaedb8490c07a622c129a39296cef/) | ⚠️ Unaudited |
-| MTokenSide | unknown | bsc | n/a | [`0x1d0ba3...245010`](./contracts/bsc-56/0x1d0ba3daa950415b1f36c6fa6b98571325245010/) | ⚠️ Unaudited |
-| OKXSwapAdapter | unknown | bsc | n/a | [`0x08190f...25c8ee`](./contracts/bsc-56/0x08190f1cf3f2f067d5749dce1b27decd6e25c8ee/) | ⚠️ Unaudited |
-| TERPOC | unknown | ethereum | n/a | [`0x2022be...6a877d`](./contracts/ethereum-1/0x2022be364c2c0b46bb693d154bfb8eb5476a877d/) | ⚠️ Unaudited |
-| XAUMDCAMinter | unknown | bsc | n/a | [`0x3681af...3289e2`](./contracts/bsc-56/0x3681afa163e6263447abf565936a7225583289e2/) | ⚠️ Unaudited |
-| XAUMDCARouter | unknown | bsc | n/a | [`0x31b19c...f57775`](./contracts/bsc-56/0x31b19c0cedd24f5a0dd6471649b5698a85f57775/) | ⚠️ Unaudited |
+| BullionEnumerableNFT | unknown | ethereum | n/a | [`0x62bee1bc8cf74fbbbd1f8444a39ca1db4acc368c`](./contracts/ethereum-1/0x62bee1bc8cf74fbbbd1f8444a39ca1db4acc368c/) | ⚠️ Unaudited |
+| BullionNFT | unknown | ethereum | n/a | [`0x52a6ddc1ccc00b69e6fdc6228b50f0fa6dd2f9dc`](./contracts/ethereum-1/0x52a6ddc1ccc00b69e6fdc6228b50f0fa6dd2f9dc/) | ⚠️ Unaudited |
+| CCWSTBTMessager | unknown | bsc | n/a | [`0x2a918b3a032174dd89c3d9e7f27ea0d7710bbf18`](./contracts/bsc-56/0x2a918b3a032174dd89c3d9e7f27ea0d7710bbf18/) | ⚠️ Unaudited |
+| CustomerManager | unknown | ethereum | n/a | [`0x0978aa6ed342ff8327e97415653f5af790e3f004`](./contracts/ethereum-1/0x0978aa6ed342ff8327e97415653f5af790e3f004/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | bsc | n/a | [`0x0630f63329e3c4b675d8ba1b82c330f46319c755`](./contracts/bsc-56/0x0630f63329e3c4b675d8ba1b82c330f46319c755/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | bsc | n/a | [`0x0654cf3aa9dd54d5ffe3a6c21bb9205a3a39ec76`](./contracts/bsc-56/0x0654cf3aa9dd54d5ffe3a6c21bb9205a3a39ec76/) | ⚠️ Unaudited |
+| FallbackReserveFeed | unknown | ethereum | n/a | [`0x20377b5e38e0e992bbdcf3502ec72ded6a5e28ab`](./contracts/ethereum-1/0x20377b5e38e0e992bbdcf3502ec72ded6a5e28ab/) | ⚠️ Unaudited |
+| MTokenMain | unknown | ethereum | n/a | [`0x123ffe0a3c62878dcbee2742227dc8990058d9e1`](./contracts/ethereum-1/0x123ffe0a3c62878dcbee2742227dc8990058d9e1/) | ⚠️ Unaudited |
+| MTokenMessager | unknown | ethereum | n/a | [`0x24ce2a00eb05b33b206b4057598f97ddc3028c7e`](./contracts/ethereum-1/0x24ce2a00eb05b33b206b4057598f97ddc3028c7e/) | ⚠️ Unaudited |
+| MTokenMessagerV2 | unknown | ethereum | n/a | [`0x102874ca109a5a7e94a0385f1380cebc905fb878`](./contracts/ethereum-1/0x102874ca109a5a7e94a0385f1380cebc905fb878/) | ⚠️ Unaudited |
+| MTokenMessenger | unknown | ethereum | n/a | [`0x0be91692750982b4ba92dabc3985c548098f68c5`](./contracts/ethereum-1/0x0be91692750982b4ba92dabc3985c548098f68c5/) | ⚠️ Unaudited |
+| MTokenMessengerLZ | unknown | ethereum | n/a | [`0xb350d8decc3adf68c3856d46ab42976ca7a6386f`](./contracts/ethereum-1/0xb350d8decc3adf68c3856d46ab42976ca7a6386f/) | ⚠️ Unaudited |
+| MTokenMinter | unknown | ethereum | n/a | [`0x5fd20e49239aaedb8490c07a622c129a39296cef`](./contracts/ethereum-1/0x5fd20e49239aaedb8490c07a622c129a39296cef/) | ⚠️ Unaudited |
+| MTokenSide | unknown | bsc | n/a | [`0x1d0ba3daa950415b1f36c6fa6b98571325245010`](./contracts/bsc-56/0x1d0ba3daa950415b1f36c6fa6b98571325245010/) | ⚠️ Unaudited |
+| OKXSwapAdapter | unknown | bsc | n/a | [`0x08190f1cf3f2f067d5749dce1b27decd6e25c8ee`](./contracts/bsc-56/0x08190f1cf3f2f067d5749dce1b27decd6e25c8ee/) | ⚠️ Unaudited |
+| TERPOC | unknown | ethereum | n/a | [`0x2022be364c2c0b46bb693d154bfb8eb5476a877d`](./contracts/ethereum-1/0x2022be364c2c0b46bb693d154bfb8eb5476a877d/) | ⚠️ Unaudited |
+| XAUMDCAMinter | unknown | bsc | n/a | [`0x3681afa163e6263447abf565936a7225583289e2`](./contracts/bsc-56/0x3681afa163e6263447abf565936a7225583289e2/) | ⚠️ Unaudited |
+| XAUMDCARouter | unknown | bsc | n/a | [`0x31b19c0cedd24f5a0dd6471649b5698a85f57775`](./contracts/bsc-56/0x31b19c0cedd24f5a0dd6471649b5698a85f57775/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -149,22 +149,22 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x62bee1...cc368c`](./contracts/ethereum-1/0x62bee1bc8cf74fbbbd1f8444a39ca1db4acc368c/) | BullionEnumerableNFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x52a6dd...d2f9dc`](./contracts/ethereum-1/0x52a6ddc1ccc00b69e6fdc6228b50f0fa6dd2f9dc/) | BullionNFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x2a918b...0bbf18`](./contracts/bsc-56/0x2a918b3a032174dd89c3d9e7f27ea0d7710bbf18/) | CCWSTBTMessager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0978aa...e3f004`](./contracts/ethereum-1/0x0978aa6ed342ff8327e97415653f5af790e3f004/) | CustomerManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x20377b...5e28ab`](./contracts/ethereum-1/0x20377b5e38e0e992bbdcf3502ec72ded6a5e28ab/) | FallbackReserveFeed | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x123ffe...58d9e1`](./contracts/ethereum-1/0x123ffe0a3c62878dcbee2742227dc8990058d9e1/) | MTokenMain | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x24ce2a...028c7e`](./contracts/ethereum-1/0x24ce2a00eb05b33b206b4057598f97ddc3028c7e/) | MTokenMessager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x102874...5fb878`](./contracts/ethereum-1/0x102874ca109a5a7e94a0385f1380cebc905fb878/) | MTokenMessagerV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0be916...8f68c5`](./contracts/ethereum-1/0x0be91692750982b4ba92dabc3985c548098f68c5/) | MTokenMessenger | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xb350d8...a6386f`](./contracts/ethereum-1/0xb350d8decc3adf68c3856d46ab42976ca7a6386f/) | MTokenMessengerLZ | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x5fd20e...296cef`](./contracts/ethereum-1/0x5fd20e49239aaedb8490c07a622c129a39296cef/) | MTokenMinter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x1d0ba3...245010`](./contracts/bsc-56/0x1d0ba3daa950415b1f36c6fa6b98571325245010/) | MTokenSide | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x08190f...25c8ee`](./contracts/bsc-56/0x08190f1cf3f2f067d5749dce1b27decd6e25c8ee/) | OKXSwapAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2022be...6a877d`](./contracts/ethereum-1/0x2022be364c2c0b46bb693d154bfb8eb5476a877d/) | TERPOC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x3681af...3289e2`](./contracts/bsc-56/0x3681afa163e6263447abf565936a7225583289e2/) | XAUMDCAMinter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x31b19c...f57775`](./contracts/bsc-56/0x31b19c0cedd24f5a0dd6471649b5698a85f57775/) | XAUMDCARouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x62bee1bc8cf74fbbbd1f8444a39ca1db4acc368c`](./contracts/ethereum-1/0x62bee1bc8cf74fbbbd1f8444a39ca1db4acc368c/) | BullionEnumerableNFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x52a6ddc1ccc00b69e6fdc6228b50f0fa6dd2f9dc`](./contracts/ethereum-1/0x52a6ddc1ccc00b69e6fdc6228b50f0fa6dd2f9dc/) | BullionNFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x2a918b3a032174dd89c3d9e7f27ea0d7710bbf18`](./contracts/bsc-56/0x2a918b3a032174dd89c3d9e7f27ea0d7710bbf18/) | CCWSTBTMessager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0978aa6ed342ff8327e97415653f5af790e3f004`](./contracts/ethereum-1/0x0978aa6ed342ff8327e97415653f5af790e3f004/) | CustomerManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x20377b5e38e0e992bbdcf3502ec72ded6a5e28ab`](./contracts/ethereum-1/0x20377b5e38e0e992bbdcf3502ec72ded6a5e28ab/) | FallbackReserveFeed | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x123ffe0a3c62878dcbee2742227dc8990058d9e1`](./contracts/ethereum-1/0x123ffe0a3c62878dcbee2742227dc8990058d9e1/) | MTokenMain | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x24ce2a00eb05b33b206b4057598f97ddc3028c7e`](./contracts/ethereum-1/0x24ce2a00eb05b33b206b4057598f97ddc3028c7e/) | MTokenMessager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x102874ca109a5a7e94a0385f1380cebc905fb878`](./contracts/ethereum-1/0x102874ca109a5a7e94a0385f1380cebc905fb878/) | MTokenMessagerV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0be91692750982b4ba92dabc3985c548098f68c5`](./contracts/ethereum-1/0x0be91692750982b4ba92dabc3985c548098f68c5/) | MTokenMessenger | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb350d8decc3adf68c3856d46ab42976ca7a6386f`](./contracts/ethereum-1/0xb350d8decc3adf68c3856d46ab42976ca7a6386f/) | MTokenMessengerLZ | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5fd20e49239aaedb8490c07a622c129a39296cef`](./contracts/ethereum-1/0x5fd20e49239aaedb8490c07a622c129a39296cef/) | MTokenMinter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x1d0ba3daa950415b1f36c6fa6b98571325245010`](./contracts/bsc-56/0x1d0ba3daa950415b1f36c6fa6b98571325245010/) | MTokenSide | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x08190f1cf3f2f067d5749dce1b27decd6e25c8ee`](./contracts/bsc-56/0x08190f1cf3f2f067d5749dce1b27decd6e25c8ee/) | OKXSwapAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x2022be364c2c0b46bb693d154bfb8eb5476a877d`](./contracts/ethereum-1/0x2022be364c2c0b46bb693d154bfb8eb5476a877d/) | TERPOC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x3681afa163e6263447abf565936a7225583289e2`](./contracts/bsc-56/0x3681afa163e6263447abf565936a7225583289e2/) | XAUMDCAMinter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x31b19c0cedd24f5a0dd6471649b5698a85f57775`](./contracts/bsc-56/0x31b19c0cedd24f5a0dd6471649b5698a85f57775/) | XAUMDCARouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -61,12 +61,12 @@ The protocol forms a single structural family (Core Logic) of 6 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| EternalStorageProxy | unknown | ethereum | n/a | [`0x1715a3...eba10d`](./contracts/ethereum-1/0x1715a3e4a142d8b698131108995174f37aeba10d/) | ⚠️ Unaudited |
-| EternalStorageProxy | unknown | ethereum | n/a | [`0x2fa878...b0c95d`](./contracts/ethereum-1/0x2fa878ab3f87cc1c9737fc071108f904c0b0c95d/) | ⚠️ Unaudited |
-| EternalStorageProxy | unknown | ethereum | n/a | [`0xd0764f...d5636c`](./contracts/ethereum-1/0xd0764fae29e0a6a96ff685f71cfc685456d5636c/) | ⚠️ Unaudited |
-| PermittableToken | unknown | ethereum | n/a | [`0xa1077a...0f9a27`](./contracts/ethereum-1/0xa1077a294dde1b09bb078844df40758a5d0f9a27/) | ⚠️ Unaudited |
-| TokenFactory | unknown | ethereum | n/a | [`0x98bf93...dacc02`](./contracts/ethereum-1/0x98bf93ebf5c380c0e6ae8e192a7e2ae08edacc02/) | ⚠️ Unaudited |
-| WETHOmnibridgeRouter | unknown | ethereum | n/a | [`0x8ac4ae...350f55`](./contracts/ethereum-1/0x8ac4ae65b3656e26dc4e0e69108b392283350f55/) | ⚠️ Unaudited |
+| EternalStorageProxy | unknown | ethereum | n/a | [`0x1715a3e4a142d8b698131108995174f37aeba10d`](./contracts/ethereum-1/0x1715a3e4a142d8b698131108995174f37aeba10d/) | ⚠️ Unaudited |
+| EternalStorageProxy | unknown | ethereum | n/a | [`0x2fa878ab3f87cc1c9737fc071108f904c0b0c95d`](./contracts/ethereum-1/0x2fa878ab3f87cc1c9737fc071108f904c0b0c95d/) | ⚠️ Unaudited |
+| EternalStorageProxy | unknown | ethereum | n/a | [`0xd0764fae29e0a6a96ff685f71cfc685456d5636c`](./contracts/ethereum-1/0xd0764fae29e0a6a96ff685f71cfc685456d5636c/) | ⚠️ Unaudited |
+| PermittableToken | unknown | ethereum | n/a | [`0xa1077a294dde1b09bb078844df40758a5d0f9a27`](./contracts/ethereum-1/0xa1077a294dde1b09bb078844df40758a5d0f9a27/) | ⚠️ Unaudited |
+| TokenFactory | unknown | ethereum | n/a | [`0x98bf93ebf5c380c0e6ae8e192a7e2ae08edacc02`](./contracts/ethereum-1/0x98bf93ebf5c380c0e6ae8e192a7e2ae08edacc02/) | ⚠️ Unaudited |
+| WETHOmnibridgeRouter | unknown | ethereum | n/a | [`0x8ac4ae65b3656e26dc4e0e69108b392283350f55`](./contracts/ethereum-1/0x8ac4ae65b3656e26dc4e0e69108b392283350f55/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -97,12 +97,12 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x1715a3...eba10d`](./contracts/ethereum-1/0x1715a3e4a142d8b698131108995174f37aeba10d/) | EternalStorageProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2fa878...b0c95d`](./contracts/ethereum-1/0x2fa878ab3f87cc1c9737fc071108f904c0b0c95d/) | EternalStorageProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xd0764f...d5636c`](./contracts/ethereum-1/0xd0764fae29e0a6a96ff685f71cfc685456d5636c/) | EternalStorageProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa1077a...0f9a27`](./contracts/ethereum-1/0xa1077a294dde1b09bb078844df40758a5d0f9a27/) | PermittableToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x98bf93...dacc02`](./contracts/ethereum-1/0x98bf93ebf5c380c0e6ae8e192a7e2ae08edacc02/) | TokenFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x8ac4ae...350f55`](./contracts/ethereum-1/0x8ac4ae65b3656e26dc4e0e69108b392283350f55/) | WETHOmnibridgeRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1715a3e4a142d8b698131108995174f37aeba10d`](./contracts/ethereum-1/0x1715a3e4a142d8b698131108995174f37aeba10d/) | EternalStorageProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x2fa878ab3f87cc1c9737fc071108f904c0b0c95d`](./contracts/ethereum-1/0x2fa878ab3f87cc1c9737fc071108f904c0b0c95d/) | EternalStorageProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xd0764fae29e0a6a96ff685f71cfc685456d5636c`](./contracts/ethereum-1/0xd0764fae29e0a6a96ff685f71cfc685456d5636c/) | EternalStorageProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa1077a294dde1b09bb078844df40758a5d0f9a27`](./contracts/ethereum-1/0xa1077a294dde1b09bb078844df40758a5d0f9a27/) | PermittableToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x98bf93ebf5c380c0e6ae8e192a7e2ae08edacc02`](./contracts/ethereum-1/0x98bf93ebf5c380c0e6ae8e192a7e2ae08edacc02/) | TokenFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8ac4ae65b3656e26dc4e0e69108b392283350f55`](./contracts/ethereum-1/0x8ac4ae65b3656e26dc4e0e69108b392283350f55/) | WETHOmnibridgeRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

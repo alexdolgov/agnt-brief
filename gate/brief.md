@@ -62,7 +62,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| GateChainToken | unknown | ethereum | n/a | [`0xe66747...454759`](./contracts/ethereum-1/0xe66747a101bff2dba3697199dcce5b743b454759/) | ⚠️ Unaudited |
+| GateChainToken | unknown | ethereum | n/a | [`0xe66747a101bff2dba3697199dcce5b743b454759`](./contracts/ethereum-1/0xe66747a101bff2dba3697199dcce5b743b454759/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -94,7 +94,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xe66747...454759`](./contracts/ethereum-1/0xe66747a101bff2dba3697199dcce5b743b454759/) | GateChainToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe66747a101bff2dba3697199dcce5b743b454759`](./contracts/ethereum-1/0xe66747a101bff2dba3697199dcce5b743b454759/) | GateChainToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

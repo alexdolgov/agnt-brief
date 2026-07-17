@@ -62,7 +62,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| JustMoney | unknown | bsc | n/a | [`0x388d81...879771`](./contracts/bsc-56/0x388d819724dd6d71760a38f00dc01d310d879771/) | ⚠️ Unaudited |
+| JustMoney | unknown | bsc | n/a | [`0x388d819724dd6d71760a38f00dc01d310d879771`](./contracts/bsc-56/0x388d819724dd6d71760a38f00dc01d310d879771/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,7 +93,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x388d81...879771`](./contracts/bsc-56/0x388d819724dd6d71760a38f00dc01d310d879771/) | JustMoney | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x388d819724dd6d71760a38f00dc01d310d879771`](./contracts/bsc-56/0x388d819724dd6d71760a38f00dc01d310d879771/) | JustMoney | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -52,15 +52,15 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xc74303...f308d4`, chain 1)
-- UnnamedContract (`0x008e05...3930e2`, chain 10)
-- UnnamedContract (`0x978c76...e2a4ef`, chain 25)
-- UnnamedContract (`0xfa5b25...7164d9`, chain 56)
-- UnnamedContract (`0xa3039a...3ff8ad`, chain 137)
-- UnnamedContract (`0xc2109f...311627`, chain 137)
-- UnnamedContract (`0x0f7ba1...ff4587`, chain 8453)
-- UnnamedContract (`0x537816...dcb361`, chain 42161)
-- UnnamedContract (`0x201a2f...254c0a`, chain 43114)
+- UnnamedContract (`0xc74303104e4aa5833a59767d59e958f4a0f308d4`, chain 1)
+- UnnamedContract (`0x008e05f850bc3c7f495ba05e70e92d33fb3930e2`, chain 10)
+- UnnamedContract (`0x978c76b2c692595413b75ed63bb9a0f74ee2a4ef`, chain 25)
+- UnnamedContract (`0xfa5b25a3a2faf613285afe6f74ed9a81387164d9`, chain 56)
+- UnnamedContract (`0xa3039a86408c859adcc618dc6bf00cafb13ff8ad`, chain 137)
+- UnnamedContract (`0xc2109f2b4a31c837e0f987b47fb819b7b4311627`, chain 137)
+- UnnamedContract (`0x0f7ba1632447ded5dd18ceb65755e3d36aff4587`, chain 8453)
+- UnnamedContract (`0x537816fbb8ec6078fb8b51f3bc35d5444edcb361`, chain 42161)
+- UnnamedContract (`0x201a2f5e03b83b542e617b3004379c8691254c0a`, chain 43114)
 
 ## Contract Surface Quality
 
@@ -124,15 +124,15 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BridgeImplementationV2 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-389004 | `0xc74303...f308d4` | ❓ Unverified |
-| BridgeImplementationV2 | unknown | project_anchor | own_supporting | 1 | optimism | unit-389005 | `0x008e05...3930e2` | ❓ Unverified |
-| BridgeImplementationV2 | unknown | project_anchor | own_supporting | 1 | bsc | unit-389010 | `0xfa5b25...7164d9` | ❓ Unverified |
-| BridgeImplementationV2 | unknown | project_anchor | own_supporting | 1 | polygon | unit-389006 | `0xa3039a...3ff8ad` | ❓ Unverified |
-| BridgeImplementationV2 | unknown | project_anchor | own_supporting | 1 | base | unit-389011 | `0x0f7ba1...ff4587` | ❓ Unverified |
-| BridgeImplementationV2 | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-389008 | `0x537816...dcb361` | ❓ Unverified |
-| Proxy (impl: 0x97bb8ce1db85a3aeef7292b5f02645ca0d3490ee) | unknown | project_anchor | own_supporting | 1 | polygon | unit-389007 | `0xc2109f...311627` | ❓ Unverified |
-| Proxy (impl: 0xd1ada3a8c21adf45a0d2d46decb68eb203a63311) | unknown | project_anchor | own_supporting | 1 | avalanche | unit-389009 | `0x201a2f...254c0a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-389003 | `0x978c76...e2a4ef` | ❓ Unverified |
+| BridgeImplementationV2 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-389004 | `0xc74303104e4aa5833a59767d59e958f4a0f308d4` | ❓ Unverified |
+| BridgeImplementationV2 | unknown | project_anchor | own_supporting | 1 | optimism | unit-389005 | `0x008e05f850bc3c7f495ba05e70e92d33fb3930e2` | ❓ Unverified |
+| BridgeImplementationV2 | unknown | project_anchor | own_supporting | 1 | bsc | unit-389010 | `0xfa5b25a3a2faf613285afe6f74ed9a81387164d9` | ❓ Unverified |
+| BridgeImplementationV2 | unknown | project_anchor | own_supporting | 1 | polygon | unit-389006 | `0xa3039a86408c859adcc618dc6bf00cafb13ff8ad` | ❓ Unverified |
+| BridgeImplementationV2 | unknown | project_anchor | own_supporting | 1 | base | unit-389011 | `0x0f7ba1632447ded5dd18ceb65755e3d36aff4587` | ❓ Unverified |
+| BridgeImplementationV2 | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-389008 | `0x537816fbb8ec6078fb8b51f3bc35d5444edcb361` | ❓ Unverified |
+| Proxy (impl: 0x97bb8ce1db85a3aeef7292b5f02645ca0d3490ee) | unknown | project_anchor | own_supporting | 1 | polygon | unit-389007 | `0xc2109f2b4a31c837e0f987b47fb819b7b4311627` | ❓ Unverified |
+| Proxy (impl: 0xd1ada3a8c21adf45a0d2d46decb68eb203a63311) | unknown | project_anchor | own_supporting | 1 | avalanche | unit-389009 | `0x201a2f5e03b83b542e617b3004379c8691254c0a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-389003 | `0x978c76b2c692595413b75ed63bb9a0f74ee2a4ef` | ❓ Unverified |
 
 ## Audit Inventory
 

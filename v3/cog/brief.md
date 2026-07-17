@@ -52,11 +52,11 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xab5899...344645`, chain 534352)
-- UnnamedContract (`0xadec0d...8df59c`, chain 534352)
-- CogPair (`0x41d54d...853ce8`, chain 534352)
-- CogPair (`0x91be22...60944d`, chain 534352)
-- LoanRouter (`0x4671d3...5f86e2`, chain 534352)
+- UnnamedContract (`0xab58996663b516f4542e80b3c05246f96f344645`, chain 534352)
+- UnnamedContract (`0xadec0df8f4a1152f6ae19e4bc5fadf43ab8df59c`, chain 534352)
+- CogPair (`0x41d54de8d81ee9232b67a4a936fc2e49b9853ce8`, chain 534352)
+- CogPair (`0x91be2224d66fb320ea123e1889ef3cfaf460944d`, chain 534352)
+- LoanRouter (`0x4671d3d57988dfd1b3832a03adb9a2fed95f86e2`, chain 534352)
 
 ## Contract Surface Quality
 
@@ -102,10 +102,10 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| CogFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | scroll | n/a | `0xbabd55...04117d` | ⚠️ Unaudited |
-| CogPair | unknown | project_anchor | own_supporting | 0 | scroll | unit-381747 | `0x41d54d...853ce8` | ⚠️ Unaudited |
-| CogPair | unknown | project_anchor | own_supporting | 0 | scroll | unit-381749 | `0x91be22...60944d` | ⚠️ Unaudited |
-| LoanRouter | unknown | project_anchor | own_supporting | 0 | scroll | unit-381748 | `0x4671d3...5f86e2` | ⚠️ Unaudited |
+| CogFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | scroll | n/a | `0xbabd55549c266c6755b99173fe7604238d04117d` | ⚠️ Unaudited |
+| CogPair | unknown | project_anchor | own_supporting | 0 | scroll | unit-381747 | `0x41d54de8d81ee9232b67a4a936fc2e49b9853ce8` | ⚠️ Unaudited |
+| CogPair | unknown | project_anchor | own_supporting | 0 | scroll | unit-381749 | `0x91be2224d66fb320ea123e1889ef3cfaf460944d` | ⚠️ Unaudited |
+| LoanRouter | unknown | project_anchor | own_supporting | 0 | scroll | unit-381748 | `0x4671d3d57988dfd1b3832a03adb9a2fed95f86e2` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -125,8 +125,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-381750 | `0xab5899...344645` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-381751 | `0xadec0d...8df59c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-381750 | `0xab58996663b516f4542e80b3c05246f96f344645` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-381751 | `0xadec0df8f4a1152f6ae19e4bc5fadf43ab8df59c` | ❓ Unverified |
 
 ## Audit Inventory
 

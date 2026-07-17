@@ -60,19 +60,19 @@ The protocol comprises 2 functional families. Its contracts share 4 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| afiToken | unknown | ethereum | n/a | [`0x0b4c65...b40fd1`](./contracts/ethereum-1/0x0b4c655bc989baafe728f8270ff988a7c2b40fd1/) | ✅ Audited |
-| Manager | unknown | ethereum | n/a | [`0x38750a...ec7839`](./contracts/ethereum-1/0x38750a3fd3ca0c2fad4ebdd5588ef81164ec7839/) | ✅ Audited |
-| Yield | unknown | ethereum | n/a | [`0x90e937...b377fb`](./contracts/ethereum-1/0x90e9378e8e73a195580baedb6b27caf8ffb377fb/) | ✅ Audited |
+| afiToken | unknown | ethereum | n/a | [`0x0b4c655bc989baafe728f8270ff988a7c2b40fd1`](./contracts/ethereum-1/0x0b4c655bc989baafe728f8270ff988a7c2b40fd1/) | ✅ Audited |
+| Manager | unknown | ethereum | n/a | [`0x38750a3fd3ca0c2fad4ebdd5588ef81164ec7839`](./contracts/ethereum-1/0x38750a3fd3ca0c2fad4ebdd5588ef81164ec7839/) | ✅ Audited |
+| Yield | unknown | ethereum | n/a | [`0x90e9378e8e73a195580baedb6b27caf8ffb377fb`](./contracts/ethereum-1/0x90e9378e8e73a195580baedb6b27caf8ffb377fb/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AfiOracle | unknown | ethereum | n/a | [`0x32f232...a1a582`](./contracts/ethereum-1/0x32f232423829296f035e2cfcdc426911d4a1a582/) | ⚠️ Unaudited |
-| afiRwaVault | unknown | ethereum | n/a | [`0x10b3e8...ec1b24`](./contracts/ethereum-1/0x10b3e8015b4bbf3a5ec359314ddafe399fec1b24/) | ⚠️ Unaudited |
-| afiVault | unknown | base | n/a | [`0xd0ec96...c24454`](./contracts/base-8453/0xd0ec961a8dc94bc6791184456b6b210408c24454/) | ⚠️ Unaudited |
-| Network | unknown | ethereum | n/a | [`0x1457c0...b64b93`](./contracts/ethereum-1/0x1457c085a609dc3997d99525d4764ccbacb64b93/) | ⚠️ Unaudited |
-| Oracle | unknown | ethereum | n/a | [`0x0bb632...946ae4`](./contracts/ethereum-1/0x0bb632c59b13b7254e86ac72aa18241806946ae4/) | ⚠️ Unaudited |
+| AfiOracle | unknown | ethereum | n/a | [`0x32f232423829296f035e2cfcdc426911d4a1a582`](./contracts/ethereum-1/0x32f232423829296f035e2cfcdc426911d4a1a582/) | ⚠️ Unaudited |
+| afiRwaVault | unknown | ethereum | n/a | [`0x10b3e8015b4bbf3a5ec359314ddafe399fec1b24`](./contracts/ethereum-1/0x10b3e8015b4bbf3a5ec359314ddafe399fec1b24/) | ⚠️ Unaudited |
+| afiVault | unknown | base | n/a | [`0xd0ec961a8dc94bc6791184456b6b210408c24454`](./contracts/base-8453/0xd0ec961a8dc94bc6791184456b6b210408c24454/) | ⚠️ Unaudited |
+| Network | unknown | ethereum | n/a | [`0x1457c085a609dc3997d99525d4764ccbacb64b93`](./contracts/ethereum-1/0x1457c085a609dc3997d99525d4764ccbacb64b93/) | ⚠️ Unaudited |
+| Oracle | unknown | ethereum | n/a | [`0x0bb632c59b13b7254e86ac72aa18241806946ae4`](./contracts/ethereum-1/0x0bb632c59b13b7254e86ac72aa18241806946ae4/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -107,11 +107,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x32f232...a1a582`](./contracts/ethereum-1/0x32f232423829296f035e2cfcdc426911d4a1a582/) | AfiOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x10b3e8...ec1b24`](./contracts/ethereum-1/0x10b3e8015b4bbf3a5ec359314ddafe399fec1b24/) | afiRwaVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xd0ec96...c24454`](./contracts/base-8453/0xd0ec961a8dc94bc6791184456b6b210408c24454/) | afiVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1457c0...b64b93`](./contracts/ethereum-1/0x1457c085a609dc3997d99525d4764ccbacb64b93/) | Network | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0bb632...946ae4`](./contracts/ethereum-1/0x0bb632c59b13b7254e86ac72aa18241806946ae4/) | Oracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x32f232423829296f035e2cfcdc426911d4a1a582`](./contracts/ethereum-1/0x32f232423829296f035e2cfcdc426911d4a1a582/) | AfiOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x10b3e8015b4bbf3a5ec359314ddafe399fec1b24`](./contracts/ethereum-1/0x10b3e8015b4bbf3a5ec359314ddafe399fec1b24/) | afiRwaVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xd0ec961a8dc94bc6791184456b6b210408c24454`](./contracts/base-8453/0xd0ec961a8dc94bc6791184456b6b210408c24454/) | afiVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1457c085a609dc3997d99525d4764ccbacb64b93`](./contracts/ethereum-1/0x1457c085a609dc3997d99525d4764ccbacb64b93/) | Network | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0bb632c59b13b7254e86ac72aa18241806946ae4`](./contracts/ethereum-1/0x0bb632c59b13b7254e86ac72aa18241806946ae4/) | Oracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

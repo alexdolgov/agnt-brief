@@ -52,14 +52,14 @@ The pinned logic-topography run contains 10 contract row(s) across mode, polygon
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- GnosisSafeProxy (`0x56dc54...b95e71`, chain 137)
-- MNT (`0xe92175...eeae04`, chain 137)
-- UnnamedContract (`0x12d41b...d98215`, chain 1101)
-- UnnamedContract (`0x375488...e736bf`, chain 1101)
-- UnnamedContract (`0x3b92b5...7073f4`, chain 1101)
-- UnnamedContract (`0x4af97f...db3e77`, chain 1101)
-- UnnamedContract (`0x9b7bce...aefe4b`, chain 1101)
-- UnnamedContract (`0xfe825c...3947a8`, chain 1101)
+- GnosisSafeProxy (`0x56dc54ddc30bdc43db84b8e59087097805b95e71`, chain 137)
+- MNT (`0xe92175ea10fc1f59f633c77153e81780a6eeae04`, chain 137)
+- UnnamedContract (`0x12d41b6df938c739f00c392575e3fd9292d98215`, chain 1101)
+- UnnamedContract (`0x375488f097176507e39b9653b88fdc52cde736bf`, chain 1101)
+- UnnamedContract (`0x3b92b5e8e72a016991cc399241a6a4659f7073f4`, chain 1101)
+- UnnamedContract (`0x4af97f73343b226c5a5872dcd2d1c4944bdb3e77`, chain 1101)
+- UnnamedContract (`0x9b7bcea67049819f4b35e84468c5e87918aefe4b`, chain 1101)
+- UnnamedContract (`0xfe825cc878b25420d4b5df5c68ddcde8bf3947a8`, chain 1101)
 
 ## Contract Surface Quality
 
@@ -103,33 +103,33 @@ The pinned logic-topography run contains 10 contract row(s) across mode, polygon
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| MasterMantis | unknown | project_anchor | own_supporting | 1 | polygon | unit-388878 | 2 deployments: polygon `0x19400d...5bb32b`; polygon `0x2c1ded...8b6d1e` | ✅ Audited |
-| Pool | unknown | project_anchor | own_supporting | 1 | polygon | unit-388881 | 2 deployments: polygon `0x62ba5e...7166ad`; polygon `0xbaef01...ab8f66` | ✅ Audited |
+| MasterMantis | unknown | project_anchor | own_supporting | 1 | polygon | unit-388878 | 2 deployments: polygon `0x19400d6e8e7b6d34ffe756731c46e230f85bb32b`; polygon `0x2c1ded27522e317515e5b5e856de7293938b6d1e` | ✅ Audited |
+| Pool | unknown | project_anchor | own_supporting | 1 | polygon | unit-388881 | 2 deployments: polygon `0x62ba5e1ab1fa304687f132f67e35bfc5247166ad`; polygon `0xbaef0174573e2705994f35490324f93c8aab8f66` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (20)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| GnosisSafeL2 | governance | project_anchor | own_supporting | 1 | polygon | unit-388879 | `0x56dc54...b95e71` | ⚠️ Unaudited |
-| LP | unknown | project_anchor | own_supporting | 3 | polygon | unit-388880 (3 proxies) | 4 deployments: polygon `0x4b3bfc...23e64b`; polygon `0x977e41...01906c`; polygon `0xe03aec...13b889`; polygon `0xe8a1ea...ce1820` | ⚠️ Unaudited |
-| LP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0xd4cd95...400ca3` | ⚠️ Unaudited |
-| MasterMantis | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0x3dcf3b...1995fc` | ⚠️ Unaudited |
-| MNT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 3 deployments: polygon `0x1456ff...5a3278`; polygon `0xaf30ce...43333b`; polygon `0xe8fc92...82cb7f` | ⚠️ Unaudited |
-| MNT | unknown | project_anchor | own_supporting | 0 | polygon | unit-388877 | `0xe92175...eeae04` | ⚠️ Unaudited |
-| MNTS | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x6e1bf9...9a0086` | ⚠️ Unaudited |
-| MockString | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x7e593f...5448f0` | ⚠️ Unaudited |
-| Pool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | 2 deployments: polygon `0x69928a...0c6906`; mode `0x20a588...dec13e` | ⚠️ Unaudited |
-| PoolHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x12e999...a62098` | ⚠️ Unaudited |
-| PoolHelper2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x2202d5...8aa5bb` | ⚠️ Unaudited |
-| PoolVolatile | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0xe03aec...13b889` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 2 deployments: polygon `0x3dcf3b...1995fc`; mode `0x6962f8...c29139` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | polygon | n/a | 3 deployments: polygon `0x10a7d5...0401c5`; polygon `0x64522c...9b734f`; polygon `0xbb9190...a3ddd4` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 3 | polygon | n/a | 4 deployments: polygon `0x12d41b...d98215`; polygon `0x153e43...9c9cb9`; polygon `0x3b92b5...7073f4`; polygon `0x9b7bce...aefe4b` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | polygon | n/a | 2 deployments: polygon `0x20a588...dec13e`; polygon `0x714023...dbc896` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | polygon | n/a | 2 deployments: polygon `0x2adedc...0c1f80`; polygon `0xfcd302...523130` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | polygon | n/a | 2 deployments: polygon `0x8997e7...d7b448`; polygon `0xda4f88...82ba41` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | polygon | n/a | 2 deployments: polygon `0x967f59...11def8`; polygon `0xd4cd95...400ca3` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | proxy | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | 10 deployments: mode `0x12d41b...d98215`; mode `0x153e43...9c9cb9`; mode `0x4af97f...db3e77`; mode `0x4b3bfc...23e64b`; mode `0x7bcad0...d73ccb`; mode `0x8997e7...d7b448`; mode `0x967f59...11def8`; mode `0xa56b52...caafb4`; mode `0xda4f88...82ba41`; mode `0xe8a1ea...ce1820` | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | project_anchor | own_supporting | 1 | polygon | unit-388879 | `0x56dc54ddc30bdc43db84b8e59087097805b95e71` | ⚠️ Unaudited |
+| LP | unknown | project_anchor | own_supporting | 3 | polygon | unit-388880 (3 proxies) | 4 deployments: polygon `0x4b3bfcaa4f8bd4a276b81c110640da634723e64b`; polygon `0x977e41e76dadd104128d016bcd7941546501906c`; polygon `0xe03aec0d08b3158350a9ab99f6cea7ba9513b889`; polygon `0xe8a1ead2f4c454e319b76fa3325b754c47ce1820` | ⚠️ Unaudited |
+| LP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0xd4cd95ee7fe89d0cd1982a7336634ec5cb400ca3` | ⚠️ Unaudited |
+| MasterMantis | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0x3dcf3bcdeab8ae7487d6fe7c7cb3af95d21995fc` | ⚠️ Unaudited |
+| MNT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 3 deployments: polygon `0x1456ff0448122e11da73f0592c30331e325a3278`; polygon `0xaf30ce975fa38d421b3b1f09e91c5393d943333b`; polygon `0xe8fc92d1c2aef6ea37b2b9b6c9f4eac8f582cb7f` | ⚠️ Unaudited |
+| MNT | unknown | project_anchor | own_supporting | 0 | polygon | unit-388877 | `0xe92175ea10fc1f59f633c77153e81780a6eeae04` | ⚠️ Unaudited |
+| MNTS | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x6e1bf91427e2b63c1dce474a64e8b8e75c9a0086` | ⚠️ Unaudited |
+| MockString | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x7e593fb939edacb056cb08485c051572315448f0` | ⚠️ Unaudited |
+| Pool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | 2 deployments: polygon `0x69928a7a134f594179257b63b16e9662990c6906`; mode `0x20a5889c03d28c2f5efe569157ae291090dec13e` | ⚠️ Unaudited |
+| PoolHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x12e999fa8b464b123f5f9f91d64b4a286fa62098` | ⚠️ Unaudited |
+| PoolHelper2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x2202d5a1edc43f590c65f97b5bbd83b84a8aa5bb` | ⚠️ Unaudited |
+| PoolVolatile | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0xe03aec0d08b3158350a9ab99f6cea7ba9513b889` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 2 deployments: polygon `0x3dcf3bcdeab8ae7487d6fe7c7cb3af95d21995fc`; mode `0x6962f8dd1d50f73c2ccff64d39b334b6afc29139` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | polygon | n/a | 3 deployments: polygon `0x10a7d5276669cb5b286cdc35e9399f01ab0401c5`; polygon `0x64522cc5028d7dbc96727a10728029a01b9b734f`; polygon `0xbb919023638201bfa66157a7eba6302795a3ddd4` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 3 | polygon | n/a | 4 deployments: polygon `0x12d41b6df938c739f00c392575e3fd9292d98215`; polygon `0x153e43f5545a094c19c4dd290555ba04279c9cb9`; polygon `0x3b92b5e8e72a016991cc399241a6a4659f7073f4`; polygon `0x9b7bcea67049819f4b35e84468c5e87918aefe4b` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | polygon | n/a | 2 deployments: polygon `0x20a5889c03d28c2f5efe569157ae291090dec13e`; polygon `0x714023acef728603686dd5b186ad1c7052dbc896` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | polygon | n/a | 2 deployments: polygon `0x2adedcfd726e03032ddef1241d5c8efad40c1f80`; polygon `0xfcd30228773edf22e3d2293dfdf013a626523130` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | polygon | n/a | 2 deployments: polygon `0x8997e7669da8451e356472cf3ef33dfbc9d7b448`; polygon `0xda4f88fd4b55d03433fa243d1f98f5618a82ba41` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | polygon | n/a | 2 deployments: polygon `0x967f594f73930a02817daf3112ccc7f2c611def8`; polygon `0xd4cd95ee7fe89d0cd1982a7336634ec5cb400ca3` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | 10 deployments: mode `0x12d41b6df938c739f00c392575e3fd9292d98215`; mode `0x153e43f5545a094c19c4dd290555ba04279c9cb9`; mode `0x4af97f73343b226c5a5872dcd2d1c4944bdb3e77`; mode `0x4b3bfcaa4f8bd4a276b81c110640da634723e64b`; mode `0x7bcad0e76c7623f352c311bba25d24fb16d73ccb`; mode `0x8997e7669da8451e356472cf3ef33dfbc9d7b448`; mode `0x967f594f73930a02817daf3112ccc7f2c611def8`; mode `0xa56b52d7a8f3cbb3b4261501c60a7ea95acaafb4`; mode `0xda4f88fd4b55d03433fa243d1f98f5618a82ba41`; mode `0xe8a1ead2f4c454e319b76fa3325b754c47ce1820` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -149,40 +149,40 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x0737ac...d4ceec` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x16f8c8...effd76` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x187b34...fe3806` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x2b4d15...336779` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x2b9914...3037c0` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x2d2bca...198fe3` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x472469...c4d512` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x4af97f...db3e77` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x4f3fd2...0c4501` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x586f03...3cbe4b` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x6962f8...c29139` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x8b2399...fcc5af` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x8c2ca2...de15fe` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xc18949...561b23` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xc9c7ea...b15a9c` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xcdbd54...5e3261` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xd5ad5d...cebe73` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xe4bb53...39f7fb` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xe8a8ea...813a3a` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xf45bf7...dfd33d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon-zkevm | unit-388871 | `0x12d41b...d98215` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon-zkevm | unit-388872 | `0x375488...e736bf` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon-zkevm | unit-388873 | `0x3b92b5...7073f4` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon-zkevm | unit-388874 | `0x4af97f...db3e77` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon-zkevm | unit-388875 | `0x9b7bce...aefe4b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon-zkevm | unit-388876 | `0xfe825c...3947a8` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0x16f8c8...effd76` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0x2b4d15...336779` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0x2c1ded...8b6d1e` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0x62ba5e...7166ad` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0x714023...dbc896` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0x977e41...01906c` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0xbb9190...a3ddd4` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0xf45bf7...dfd33d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x0737ac52b53097b8605a8dd3a6062d1a74d4ceec` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x16f8c8a7bb3157a2db3f2139964e22ada4effd76` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x187b347da45494defa62c4eb1fdc22bcccfe3806` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x2b4d155ebff3b3b76e47dd65a442b3490f336779` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x2b99145fac25b86a81f4dc9fedaeb25aa93037c0` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x2d2bca343d285aa6e38015ac2ba67e14e9198fe3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x472469469381f232fa3c0fa265e59e0831c4d512` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x4af97f73343b226c5a5872dcd2d1c4944bdb3e77` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x4f3fd20386bf6b68d00272853ef36cc20d0c4501` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x586f03266f0fdf4b4a7d00ffca836a9d673cbe4b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x6962f8dd1d50f73c2ccff64d39b334b6afc29139` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x8b239927bb826cf79401bd0ae12e00bf42fcc5af` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x8c2ca2e6c1092f3c8f5f7b19575fcf5c2ede15fe` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xc189491d95bb36d2c0a095e9aafdabeb4e561b23` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xc9c7ea75314f47dab32c5580466f0866a8b15a9c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xcdbd54ed1eddf3b8cbcecf4ca54565ccc95e3261` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xd5ad5d55b8773e724b49b749e28c4daf17cebe73` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xe4bb53292c83e35c1ecea0f49e7f0b735d39f7fb` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xe8a8eaee4fbbbeb8e450d0cbf8054bae76813a3a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xf45bf7d8934c898df2ad9c365eae4991b2dfd33d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon-zkevm | unit-388871 | `0x12d41b6df938c739f00c392575e3fd9292d98215` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon-zkevm | unit-388872 | `0x375488f097176507e39b9653b88fdc52cde736bf` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon-zkevm | unit-388873 | `0x3b92b5e8e72a016991cc399241a6a4659f7073f4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon-zkevm | unit-388874 | `0x4af97f73343b226c5a5872dcd2d1c4944bdb3e77` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon-zkevm | unit-388875 | `0x9b7bcea67049819f4b35e84468c5e87918aefe4b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon-zkevm | unit-388876 | `0xfe825cc878b25420d4b5df5c68ddcde8bf3947a8` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0x16f8c8a7bb3157a2db3f2139964e22ada4effd76` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0x2b4d155ebff3b3b76e47dd65a442b3490f336779` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0x2c1ded27522e317515e5b5e856de7293938b6d1e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0x62ba5e1ab1fa304687f132f67e35bfc5247166ad` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0x714023acef728603686dd5b186ad1c7052dbc896` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0x977e41e76dadd104128d016bcd7941546501906c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0xbb919023638201bfa66157a7eba6302795a3ddd4` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0xf45bf7d8934c898df2ad9c365eae4991b2dfd33d` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -206,13 +206,13 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 |---|---|---|---|---|---|
 | PeckShield-Audit-Report-MantisSwap-v1.0.pdf | veMNT | unmatched — not counted | — | Target in finding PVE-001 | no |
 | PeckShield-Audit-Report-MantisSwap-v1.0.pdf | Marketplace | unmatched — not counted | — | Target in finding PVE-002 | no |
-| PeckShield-Audit-Report-MantisSwap-v1.0.pdf | MasterMantis | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x2c1ded...8b6d1e` — deployed 2023-03-20 13:49:36+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| PeckShield-Audit-Report-MantisSwap-v1.0.pdf | MasterMantis | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x2c1ded27522e317515e5b5e856de7293938b6d1e` — deployed 2023-03-20 13:49:36+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | PeckShield-Audit-Report-MantisSwap-v1.0.pdf | Rewarder | unmatched — not counted | — | Target in finding PVE-003 | no |
-| omniscia.io/reports/mantissa-finance-core-system-64bf82869d175e0014dae1cd | LP | ambiguous — not counted | TransparentUpgradeableProxy (proxy) (alternative) `0x4b3bfc...23e64b` — deployed 2023-03-20 13:50:56+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0xe8a1ea...ce1820` — deployed 2023-03-20 13:50:36+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0xe03aec...13b889` — deployed 2023-03-20 13:50:24+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| omniscia.io/reports/mantissa-finance-core-system-64bf82869d175e0014dae1cd | LP | ambiguous — not counted | TransparentUpgradeableProxy (proxy) (alternative) `0x4b3bfcaa4f8bd4a276b81c110640da634723e64b` — deployed 2023-03-20 13:50:56+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0xe8a1ead2f4c454e319b76fa3325b754c47ce1820` — deployed 2023-03-20 13:50:36+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0xe03aec0d08b3158350a9ab99f6cea7ba9513b889` — deployed 2023-03-20 13:50:24+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | omniscia.io/reports/mantissa-finance-core-system-64bf82869d175e0014dae1cd | MNTS | unmatched — not counted | — | listed in scope table | no |
 | omniscia.io/reports/mantissa-finance-core-system-64bf82869d175e0014dae1cd | Marketplace | unmatched — not counted | — | listed in scope table | no |
-| omniscia.io/reports/mantissa-finance-core-system-64bf82869d175e0014dae1cd | MasterMantis | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x2c1ded...8b6d1e` — deployed 2023-03-20 13:49:36+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| omniscia.io/reports/mantissa-finance-core-system-64bf82869d175e0014dae1cd | Pool | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x62ba5e...7166ad` — deployed 2023-03-20 13:50:04+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| omniscia.io/reports/mantissa-finance-core-system-64bf82869d175e0014dae1cd | MasterMantis | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x2c1ded27522e317515e5b5e856de7293938b6d1e` — deployed 2023-03-20 13:49:36+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| omniscia.io/reports/mantissa-finance-core-system-64bf82869d175e0014dae1cd | Pool | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x62ba5e1ab1fa304687f132f67e35bfc5247166ad` — deployed 2023-03-20 13:50:04+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | omniscia.io/reports/mantissa-finance-core-system-64bf82869d175e0014dae1cd | PoolHelper | unmatched — not counted | — | listed in scope table | no |
 | omniscia.io/reports/mantissa-finance-core-system-64bf82869d175e0014dae1cd | PoolVolatile | unmatched — not counted | — | listed in scope table | no |
 | omniscia.io/reports/mantissa-finance-core-system-64bf82869d175e0014dae1cd | Rewarder | unmatched — not counted | — | listed in scope table | no |
@@ -225,8 +225,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| polygon | `0x4b3bfc...23e64b` | LP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | `0xe92175...eeae04` | MNT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0x4b3bfcaa4f8bd4a276b81c110640da634723e64b` | LP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0xe92175ea10fc1f59f633c77153e81780a6eeae04` | MNT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

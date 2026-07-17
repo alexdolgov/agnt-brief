@@ -60,23 +60,23 @@ The protocol comprises 2 functional families. Its contracts share 2 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| HooksFactory | unknown | plasma | n/a | [`0xb46bae...42e517`](./contracts/plasma-9745/0xb46bae25ac6d23148531ed1853a8881fd842e517/) | ✅ Audited |
-| MarketLens | unknown | ethereum | n/a | [`0x3556d0...586862`](./contracts/ethereum-1/0x3556d0497180afb37e6eaebd5d17309159586862/) | ✅ Audited |
-| WildcatArchController | unknown | plasma | n/a | [`0xdb2e0d...f348ae`](./contracts/plasma-9745/0xdb2e0de97d6d96aa56754635704a4273e0f348ae/) | ✅ Audited |
-| WildcatMarketControllerFactory | unknown | ethereum | n/a | [`0xa1a18e...d6aa4f`](./contracts/ethereum-1/0xa1a18eea2a9e81bf84c131282a4b99867dd6aa4f/) | ✅ Audited |
-| WildcatSanctionsSentinel | unknown | plasma | n/a | [`0x370648...903f5b`](./contracts/plasma-9745/0x37064895ba2c1e269eaf7ff32564818d08903f5b/) | ✅ Audited |
+| HooksFactory | unknown | plasma | n/a | [`0xb46bae25ac6d23148531ed1853a8881fd842e517`](./contracts/plasma-9745/0xb46bae25ac6d23148531ed1853a8881fd842e517/) | ✅ Audited |
+| MarketLens | unknown | ethereum | n/a | [`0x3556d0497180afb37e6eaebd5d17309159586862`](./contracts/ethereum-1/0x3556d0497180afb37e6eaebd5d17309159586862/) | ✅ Audited |
+| WildcatArchController | unknown | plasma | n/a | [`0xdb2e0de97d6d96aa56754635704a4273e0f348ae`](./contracts/plasma-9745/0xdb2e0de97d6d96aa56754635704a4273e0f348ae/) | ✅ Audited |
+| WildcatMarketControllerFactory | unknown | ethereum | n/a | [`0xa1a18eea2a9e81bf84c131282a4b99867dd6aa4f`](./contracts/ethereum-1/0xa1a18eea2a9e81bf84c131282a4b99867dd6aa4f/) | ✅ Audited |
+| WildcatSanctionsSentinel | unknown | plasma | n/a | [`0x37064895ba2c1e269eaf7ff32564818d08903f5b`](./contracts/plasma-9745/0x37064895ba2c1e269eaf7ff32564818d08903f5b/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (7)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ChainalysisProxy | unknown | plasma | n/a | [`0x38056f...5f3f46`](./contracts/plasma-9745/0x38056f7fe6396417b191bf7dc6a3aa04235f3f46/) | ⚠️ Unaudited |
-| OpenAccessRoleProvider | unknown | ethereum | n/a | [`0x562055...373101`](./contracts/ethereum-1/0x5620553d8881335f74ad19259daacd1d9b373101/) | ⚠️ Unaudited |
-| SphereXEngine | unknown | ethereum | n/a | [`0x4f90c0...a1766a`](./contracts/ethereum-1/0x4f90c0a26cc2ad22ee98398dcc02bbe314a1766a/) | ⚠️ Unaudited |
-| Wildcat4626WrapperFactory | unknown | ethereum | n/a | [`0xea6de1...bb148a`](./contracts/ethereum-1/0xea6de11f8f3f83c79bd9d8db5517fcfdf2bb148a/) | ⚠️ Unaudited |
-| WildcatCopyOfChainalysisList | unknown | plasma | n/a | [`0xfeb516...945ee4`](./contracts/plasma-9745/0xfeb516d9d946dd487a9346f6fee11f40c6945ee4/) | ⚠️ Unaudited |
-| WildcatFeeRecipient | unknown | ethereum | n/a | [`0x35a5d1...708554`](./contracts/ethereum-1/0x35a5d1bd68f3139971027b92c1ee9384a0708554/) | ⚠️ Unaudited |
-| WildcatMarketCollateralFactory | unknown | ethereum | n/a | [`0xbbf84a...403e7c`](./contracts/ethereum-1/0xbbf84ab8b232a467511772af4ab8a4190f403e7c/) | ⚠️ Unaudited |
+| ChainalysisProxy | unknown | plasma | n/a | [`0x38056f7fe6396417b191bf7dc6a3aa04235f3f46`](./contracts/plasma-9745/0x38056f7fe6396417b191bf7dc6a3aa04235f3f46/) | ⚠️ Unaudited |
+| OpenAccessRoleProvider | unknown | ethereum | n/a | [`0x5620553d8881335f74ad19259daacd1d9b373101`](./contracts/ethereum-1/0x5620553d8881335f74ad19259daacd1d9b373101/) | ⚠️ Unaudited |
+| SphereXEngine | unknown | ethereum | n/a | [`0x4f90c0a26cc2ad22ee98398dcc02bbe314a1766a`](./contracts/ethereum-1/0x4f90c0a26cc2ad22ee98398dcc02bbe314a1766a/) | ⚠️ Unaudited |
+| Wildcat4626WrapperFactory | unknown | ethereum | n/a | [`0xea6de11f8f3f83c79bd9d8db5517fcfdf2bb148a`](./contracts/ethereum-1/0xea6de11f8f3f83c79bd9d8db5517fcfdf2bb148a/) | ⚠️ Unaudited |
+| WildcatCopyOfChainalysisList | unknown | plasma | n/a | [`0xfeb516d9d946dd487a9346f6fee11f40c6945ee4`](./contracts/plasma-9745/0xfeb516d9d946dd487a9346f6fee11f40c6945ee4/) | ⚠️ Unaudited |
+| WildcatFeeRecipient | unknown | ethereum | n/a | [`0x35a5d1bd68f3139971027b92c1ee9384a0708554`](./contracts/ethereum-1/0x35a5d1bd68f3139971027b92c1ee9384a0708554/) | ⚠️ Unaudited |
+| WildcatMarketCollateralFactory | unknown | ethereum | n/a | [`0xbbf84ab8b232a467511772af4ab8a4190f403e7c`](./contracts/ethereum-1/0xbbf84ab8b232a467511772af4ab8a4190f403e7c/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -111,13 +111,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| plasma | [`0x38056f...5f3f46`](./contracts/plasma-9745/0x38056f7fe6396417b191bf7dc6a3aa04235f3f46/) | ChainalysisProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x562055...373101`](./contracts/ethereum-1/0x5620553d8881335f74ad19259daacd1d9b373101/) | OpenAccessRoleProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x4f90c0...a1766a`](./contracts/ethereum-1/0x4f90c0a26cc2ad22ee98398dcc02bbe314a1766a/) | SphereXEngine | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xea6de1...bb148a`](./contracts/ethereum-1/0xea6de11f8f3f83c79bd9d8db5517fcfdf2bb148a/) | Wildcat4626WrapperFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| plasma | [`0xfeb516...945ee4`](./contracts/plasma-9745/0xfeb516d9d946dd487a9346f6fee11f40c6945ee4/) | WildcatCopyOfChainalysisList | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x35a5d1...708554`](./contracts/ethereum-1/0x35a5d1bd68f3139971027b92c1ee9384a0708554/) | WildcatFeeRecipient | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xbbf84a...403e7c`](./contracts/ethereum-1/0xbbf84ab8b232a467511772af4ab8a4190f403e7c/) | WildcatMarketCollateralFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| plasma | [`0x38056f7fe6396417b191bf7dc6a3aa04235f3f46`](./contracts/plasma-9745/0x38056f7fe6396417b191bf7dc6a3aa04235f3f46/) | ChainalysisProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5620553d8881335f74ad19259daacd1d9b373101`](./contracts/ethereum-1/0x5620553d8881335f74ad19259daacd1d9b373101/) | OpenAccessRoleProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4f90c0a26cc2ad22ee98398dcc02bbe314a1766a`](./contracts/ethereum-1/0x4f90c0a26cc2ad22ee98398dcc02bbe314a1766a/) | SphereXEngine | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xea6de11f8f3f83c79bd9d8db5517fcfdf2bb148a`](./contracts/ethereum-1/0xea6de11f8f3f83c79bd9d8db5517fcfdf2bb148a/) | Wildcat4626WrapperFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| plasma | [`0xfeb516d9d946dd487a9346f6fee11f40c6945ee4`](./contracts/plasma-9745/0xfeb516d9d946dd487a9346f6fee11f40c6945ee4/) | WildcatCopyOfChainalysisList | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x35a5d1bd68f3139971027b92c1ee9384a0708554`](./contracts/ethereum-1/0x35a5d1bd68f3139971027b92c1ee9384a0708554/) | WildcatFeeRecipient | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xbbf84ab8b232a467511772af4ab8a4190f403e7c`](./contracts/ethereum-1/0xbbf84ab8b232a467511772af4ab8a4190f403e7c/) | WildcatMarketCollateralFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

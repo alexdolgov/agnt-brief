@@ -61,10 +61,10 @@ The protocol comprises 2 functional families. Contracts are linked by 1 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| HLP0 | unknown | arbitrum | n/a | [`0x0522f3...5c8718`](./contracts/arbitrum-42161/0x0522f36aed206fa9055715c1e7d28114b45c8718/) | ⚠️ Unaudited |
-| HLPAMO | unknown | arbitrum | n/a | [`0x1425db...3efdd2`](./contracts/arbitrum-42161/0x1425dbef278e3ce3c6a1cf9f75bad8f4cb3efdd2/) | ⚠️ Unaudited |
-| HLPSHARES | unknown | arbitrum | n/a | [`0x7ca136...43afdf`](./contracts/arbitrum-42161/0x7ca13681dfb071de2c6461adb7a29a950743afdf/) | ⚠️ Unaudited |
-| HLPUSDC | unknown | arbitrum | n/a | [`0x91bd96...6214c5`](./contracts/arbitrum-42161/0x91bd968a8bd27c08b9fc7173d0f475411a6214c5/) | ⚠️ Unaudited |
+| HLP0 | unknown | arbitrum | n/a | [`0x0522f36aed206fa9055715c1e7d28114b45c8718`](./contracts/arbitrum-42161/0x0522f36aed206fa9055715c1e7d28114b45c8718/) | ⚠️ Unaudited |
+| HLPAMO | unknown | arbitrum | n/a | [`0x1425dbef278e3ce3c6a1cf9f75bad8f4cb3efdd2`](./contracts/arbitrum-42161/0x1425dbef278e3ce3c6a1cf9f75bad8f4cb3efdd2/) | ⚠️ Unaudited |
+| HLPSHARES | unknown | arbitrum | n/a | [`0x7ca13681dfb071de2c6461adb7a29a950743afdf`](./contracts/arbitrum-42161/0x7ca13681dfb071de2c6461adb7a29a950743afdf/) | ⚠️ Unaudited |
+| HLPUSDC | unknown | arbitrum | n/a | [`0x91bd968a8bd27c08b9fc7173d0f475411a6214c5`](./contracts/arbitrum-42161/0x91bd968a8bd27c08b9fc7173d0f475411a6214c5/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,10 +95,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | [`0x0522f3...5c8718`](./contracts/arbitrum-42161/0x0522f36aed206fa9055715c1e7d28114b45c8718/) | HLP0 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x1425db...3efdd2`](./contracts/arbitrum-42161/0x1425dbef278e3ce3c6a1cf9f75bad8f4cb3efdd2/) | HLPAMO | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x7ca136...43afdf`](./contracts/arbitrum-42161/0x7ca13681dfb071de2c6461adb7a29a950743afdf/) | HLPSHARES | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x91bd96...6214c5`](./contracts/arbitrum-42161/0x91bd968a8bd27c08b9fc7173d0f475411a6214c5/) | HLPUSDC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x0522f36aed206fa9055715c1e7d28114b45c8718`](./contracts/arbitrum-42161/0x0522f36aed206fa9055715c1e7d28114b45c8718/) | HLP0 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x1425dbef278e3ce3c6a1cf9f75bad8f4cb3efdd2`](./contracts/arbitrum-42161/0x1425dbef278e3ce3c6a1cf9f75bad8f4cb3efdd2/) | HLPAMO | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x7ca13681dfb071de2c6461adb7a29a950743afdf`](./contracts/arbitrum-42161/0x7ca13681dfb071de2c6461adb7a29a950743afdf/) | HLPSHARES | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x91bd968a8bd27c08b9fc7173d0f475411a6214c5`](./contracts/arbitrum-42161/0x91bd968a8bd27c08b9fc7173d0f475411a6214c5/) | HLPUSDC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

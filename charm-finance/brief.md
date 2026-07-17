@@ -62,16 +62,16 @@ The protocol comprises 4 functional families. Its contracts share 5 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AlphaProVault | core_logic | berachain | n/a | 6 deployments: ethereum `0xfaf1af...6d8a07`; polygon `0xfaf1af...6d8a07`; base `0xfaf1af...6d8a07`; arbitrum `0xfaf1af...6d8a07`; berachain [`0x0a4b7a...e9baea`](./contracts/berachain-80094/0x0a4b7ac0723d0d08de255aa9d574958c66e9baea/); berachain `0xf0f42c...05df61` | ✅ Audited |
-| AlphaProVaultFactory | registry | berachain | n/a | 6 deployments: ethereum `0x5b7b8b...9b2afa`; polygon `0x5b7b8b...9b2afa`; base `0x5b7b8b...9b2afa`; arbitrum `0x5b7b8b...9b2afa`; berachain [`0x189bd7...6ed137`](./contracts/berachain-80094/0x189bd734c2f1beeaca81e0edbb1ce3b8a16ed137/); berachain `0x78f25a...b4ad15` | ✅ Audited |
-| AlphaVault | core_logic | ethereum | n/a | 3 deployments: ethereum [`0x9bf7b4...164322`](./contracts/ethereum-1/0x9bf7b46c7ad5ab62034e9349ab912c0345164322/); ethereum `0xbd7c6d...4e8a66`; ethereum `0xe72f3e...2c6c11` | ✅ Audited |
+| AlphaProVault | core_logic | berachain | n/a | 6 deployments: ethereum `0xfaf1af4dc761dba157227a3c06cec9a7486d8a07`; polygon `0xfaf1af4dc761dba157227a3c06cec9a7486d8a07`; base `0xfaf1af4dc761dba157227a3c06cec9a7486d8a07`; arbitrum `0xfaf1af4dc761dba157227a3c06cec9a7486d8a07`; berachain [`0x0a4b7ac0723d0d08de255aa9d574958c66e9baea`](./contracts/berachain-80094/0x0a4b7ac0723d0d08de255aa9d574958c66e9baea/); berachain `0xf0f42c62923c6e741c64e0163c5c50965c05df61` | ✅ Audited |
+| AlphaProVaultFactory | registry | berachain | n/a | 6 deployments: ethereum `0x5b7b8b487d05f77977b7abeec5f922925b9b2afa`; polygon `0x5b7b8b487d05f77977b7abeec5f922925b9b2afa`; base `0x5b7b8b487d05f77977b7abeec5f922925b9b2afa`; arbitrum `0x5b7b8b487d05f77977b7abeec5f922925b9b2afa`; berachain [`0x189bd734c2f1beeaca81e0edbb1ce3b8a16ed137`](./contracts/berachain-80094/0x189bd734c2f1beeaca81e0edbb1ce3b8a16ed137/); berachain `0x78f25a5f78092bd13109a2f889cf324907b4ad15` | ✅ Audited |
+| AlphaVault | core_logic | ethereum | n/a | 3 deployments: ethereum [`0x9bf7b46c7ad5ab62034e9349ab912c0345164322`](./contracts/ethereum-1/0x9bf7b46c7ad5ab62034e9349ab912c0345164322/); ethereum `0xbd7c6d2ede836b6b27c461799c4e9ecb8f4e8a66`; ethereum `0xe72f3e105e475d7db3a003ffa377afae9c2c6c11` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AlphaProPeriphery | periphery | berachain | n/a | 2 deployments: berachain [`0xe2ac68...331a66`](./contracts/berachain-80094/0xe2ac68fe15a8e64639aedcda30867cac04331a66/); berachain `0xf1b21f...39a7ee` | ⚠️ Unaudited |
-| CubePool | core_logic | ethereum | n/a | [`0x23f6a2...bc1b67`](./contracts/ethereum-1/0x23f6a2d8d691294c3a1144eed14f5632e8bc1b67/) | ⚠️ Unaudited |
+| AlphaProPeriphery | periphery | berachain | n/a | 2 deployments: berachain [`0xe2ac68fe15a8e64639aedcda30867cac04331a66`](./contracts/berachain-80094/0xe2ac68fe15a8e64639aedcda30867cac04331a66/); berachain `0xf1b21f82b69b989fdd750623a83b13996539a7ee` | ⚠️ Unaudited |
+| CubePool | core_logic | ethereum | n/a | [`0x23f6a2d8d691294c3a1144eed14f5632e8bc1b67`](./contracts/ethereum-1/0x23f6a2d8d691294c3a1144eed14f5632e8bc1b67/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -91,13 +91,13 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0xbed8a8...fe1319` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xd4b456...1067cf` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xbed8a8...fe1319` | ❓ Unverified |
-| UnnamedContract | unknown | boba | n/a | `0xfaf1af...6d8a07` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xbed8a8...fe1319` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xbed8a8...fe1319` | ❓ Unverified |
-| UnnamedContract | unknown | berachain | n/a | `0xfcc5d3...780d3b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xbed8a8152dd2dbf52275f0f44d42250436fe1319` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd4b4568615cb365bca926910ebc30ea2161067cf` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xbed8a8152dd2dbf52275f0f44d42250436fe1319` | ❓ Unverified |
+| UnnamedContract | unknown | boba | n/a | `0xfaf1af4dc761dba157227a3c06cec9a7486d8a07` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xbed8a8152dd2dbf52275f0f44d42250436fe1319` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xbed8a8152dd2dbf52275f0f44d42250436fe1319` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0xfcc5d3b0ba012905e149acab826d452e29780d3b` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -116,8 +116,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| berachain | [`0xe2ac68...331a66`](./contracts/berachain-80094/0xe2ac68fe15a8e64639aedcda30867cac04331a66/) | AlphaProPeriphery | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x23f6a2...bc1b67`](./contracts/ethereum-1/0x23f6a2d8d691294c3a1144eed14f5632e8bc1b67/) | CubePool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0xe2ac68fe15a8e64639aedcda30867cac04331a66`](./contracts/berachain-80094/0xe2ac68fe15a8e64639aedcda30867cac04331a66/) | AlphaProPeriphery | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x23f6a2d8d691294c3a1144eed14f5632e8bc1b67`](./contracts/ethereum-1/0x23f6a2d8d691294c3a1144eed14f5632e8bc1b67/) | CubePool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

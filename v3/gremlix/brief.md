@@ -52,11 +52,11 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- Keeper (`0xc6b58f...c852b5`, chain 42161)
-- Strategy (`0x546b55...078a1a`, chain 42161)
-- Strategy (`0x696225...31cc56`, chain 42161)
-- Vault (`0xd519ef...6c36c8`, chain 42161)
-- VaultWithInitialHolders (`0x973ae1...fb0886`, chain 42161)
+- Keeper (`0xc6b58f7680a90865acf10ff3931e273cdec852b5`, chain 42161)
+- Strategy (`0x546b5510bdaa7359bb7adb66d7ae165335078a1a`, chain 42161)
+- Strategy (`0x696225e0e6a04aa34ef82d1eba64857af231cc56`, chain 42161)
+- Vault (`0xd519ef317be061b310d3caa4565fa1ef466c36c8`, chain 42161)
+- VaultWithInitialHolders (`0x973ae12ac9078e9f9b1708c477a9670bb3fb0886`, chain 42161)
 
 ## Contract Surface Quality
 
@@ -102,11 +102,11 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Keeper | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-387057 | `0xc6b58f...c852b5` | ⚠️ Unaudited |
-| Strategy | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-387054 | `0x546b55...078a1a` | ⚠️ Unaudited |
-| Strategy | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-387055 | `0x696225...31cc56` | ⚠️ Unaudited |
-| Vault | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-387058 | `0xd519ef...6c36c8` | ⚠️ Unaudited |
-| VaultWithInitialHolders | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-387056 | `0x973ae1...fb0886` | ⚠️ Unaudited |
+| Keeper | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-387057 | `0xc6b58f7680a90865acf10ff3931e273cdec852b5` | ⚠️ Unaudited |
+| Strategy | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-387054 | `0x546b5510bdaa7359bb7adb66d7ae165335078a1a` | ⚠️ Unaudited |
+| Strategy | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-387055 | `0x696225e0e6a04aa34ef82d1eba64857af231cc56` | ⚠️ Unaudited |
+| Vault | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-387058 | `0xd519ef317be061b310d3caa4565fa1ef466c36c8` | ⚠️ Unaudited |
+| VaultWithInitialHolders | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-387056 | `0x973ae12ac9078e9f9b1708c477a9670bb3fb0886` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

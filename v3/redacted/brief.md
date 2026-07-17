@@ -56,8 +56,8 @@ The pinned logic-topography run contains 2 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- apxETH (`0x9ba021...2cb3e6`, chain 1)
-- pxETH (`0x04c154...d00cc6`, chain 1)
+- apxETH (`0x9ba021b0a9b958b5e75ce9f6dff97c7ee52cb3e6`, chain 1)
+- pxETH (`0x04c154b66cb340f3ae24111cc767e0184ed00cc6`, chain 1)
 
 ## Contract Surface Quality
 
@@ -103,8 +103,8 @@ The pinned logic-topography run contains 2 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| apxETH | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391316 | `0x9ba021...2cb3e6` | ⚠️ Unaudited |
-| pxETH | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391315 | `0x04c154...d00cc6` | ⚠️ Unaudited |
+| apxETH | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391316 | `0x9ba021b0a9b958b5e75ce9f6dff97c7ee52cb3e6` | ⚠️ Unaudited |
+| pxETH | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391315 | `0x04c154b66cb340f3ae24111cc767e0184ed00cc6` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

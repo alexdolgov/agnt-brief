@@ -52,22 +52,22 @@ The pinned logic-topography run contains 5 contract row(s) across arbitrum, aval
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x57f5e0...af7812`, chain 1)
-- UnnamedContract (`0x57f5e0...af7812`, chain 10)
-- UnnamedContract (`0x57f5e0...af7812`, chain 137)
-- UnnamedContract (`0x7715c2...c9dc31`, chain 324)
-- UnnamedContract (`0xa900cb...d5442b`, chain 324)
-- UnnamedContract (`0x57f5e0...af7812`, chain 8453)
-- UnnamedContract (`0x57f5e0...af7812`, chain 42161)
-- UnnamedContract (`0x57f5e0...af7812`, chain 42220)
-- UnnamedContract (`0x59d935...85508c`, chain 42220)
-- UnnamedContract (`0x57f5e0...af7812`, chain 43114)
-- UnnamedContract (`0x59d935...85508c`, chain 43114)
-- ERC1967Proxy (`0x59d935...85508c`, chain 1)
-- ERC1967Proxy (`0x59d935...85508c`, chain 10)
-- ERC1967Proxy (`0x59d935...85508c`, chain 137)
-- ERC1967Proxy (`0x59d935...85508c`, chain 8453)
-- ERC1967Proxy (`0x59d935...85508c`, chain 42161)
+- UnnamedContract (`0x57f5e098cad7a3d1eed53991d4d66c45c9af7812`, chain 1)
+- UnnamedContract (`0x57f5e098cad7a3d1eed53991d4d66c45c9af7812`, chain 10)
+- UnnamedContract (`0x57f5e098cad7a3d1eed53991d4d66c45c9af7812`, chain 137)
+- UnnamedContract (`0x7715c206a14ac93cb1a6c0316a6e5f8ad7c9dc31`, chain 324)
+- UnnamedContract (`0xa900cbe7739c96d2b153a273953620a701d5442b`, chain 324)
+- UnnamedContract (`0x57f5e098cad7a3d1eed53991d4d66c45c9af7812`, chain 8453)
+- UnnamedContract (`0x57f5e098cad7a3d1eed53991d4d66c45c9af7812`, chain 42161)
+- UnnamedContract (`0x57f5e098cad7a3d1eed53991d4d66c45c9af7812`, chain 42220)
+- UnnamedContract (`0x59d9356e565ab3a36dd77763fc0d87feaf85508c`, chain 42220)
+- UnnamedContract (`0x57f5e098cad7a3d1eed53991d4d66c45c9af7812`, chain 43114)
+- UnnamedContract (`0x59d9356e565ab3a36dd77763fc0d87feaf85508c`, chain 43114)
+- ERC1967Proxy (`0x59d9356e565ab3a36dd77763fc0d87feaf85508c`, chain 1)
+- ERC1967Proxy (`0x59d9356e565ab3a36dd77763fc0d87feaf85508c`, chain 10)
+- ERC1967Proxy (`0x59d9356e565ab3a36dd77763fc0d87feaf85508c`, chain 137)
+- ERC1967Proxy (`0x59d9356e565ab3a36dd77763fc0d87feaf85508c`, chain 8453)
+- ERC1967Proxy (`0x59d9356e565ab3a36dd77763fc0d87feaf85508c`, chain 42161)
 
 ## Contract Surface Quality
 
@@ -113,11 +113,11 @@ The pinned logic-topography run contains 5 contract row(s) across arbitrum, aval
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| USDM | unknown | project_anchor | own_supporting | 1 | ethereum | unit-248391 | `0x59d935...85508c` | ⚠️ Unaudited |
-| USDM | unknown | project_anchor | own_supporting | 1 | optimism | unit-248392 | `0x59d935...85508c` | ⚠️ Unaudited |
-| USDM | unknown | project_anchor | own_supporting | 1 | polygon | unit-248393 | `0x59d935...85508c` | ⚠️ Unaudited |
-| USDM | unknown | project_anchor | own_supporting | 1 | base | unit-248395 | `0x59d935...85508c` | ⚠️ Unaudited |
-| USDM | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-248394 | `0x59d935...85508c` | ⚠️ Unaudited |
+| USDM | unknown | project_anchor | own_supporting | 1 | ethereum | unit-248391 | `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` | ⚠️ Unaudited |
+| USDM | unknown | project_anchor | own_supporting | 1 | optimism | unit-248392 | `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` | ⚠️ Unaudited |
+| USDM | unknown | project_anchor | own_supporting | 1 | polygon | unit-248393 | `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` | ⚠️ Unaudited |
+| USDM | unknown | project_anchor | own_supporting | 1 | base | unit-248395 | `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` | ⚠️ Unaudited |
+| USDM | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-248394 | `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -137,18 +137,18 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248380 | `0x57f5e0...af7812` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-248381 | `0x57f5e0...af7812` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-248382 | `0x57f5e0...af7812` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | zksync-era | n/a | `0x59d935...85508c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-248383 | `0x7715c2...c9dc31` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-248384 | `0xa900cb...d5442b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-248390 | `0x57f5e0...af7812` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-248385 | `0x57f5e0...af7812` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-248386 | `0x57f5e0...af7812` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-248387 | `0x59d935...85508c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-248388 | `0x57f5e0...af7812` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-248389 | `0x59d935...85508c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248380 | `0x57f5e098cad7a3d1eed53991d4d66c45c9af7812` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-248381 | `0x57f5e098cad7a3d1eed53991d4d66c45c9af7812` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-248382 | `0x57f5e098cad7a3d1eed53991d4d66c45c9af7812` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | zksync-era | n/a | `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-248383 | `0x7715c206a14ac93cb1a6c0316a6e5f8ad7c9dc31` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-248384 | `0xa900cbe7739c96d2b153a273953620a701d5442b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-248390 | `0x57f5e098cad7a3d1eed53991d4d66c45c9af7812` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-248385 | `0x57f5e098cad7a3d1eed53991d4d66c45c9af7812` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-248386 | `0x57f5e098cad7a3d1eed53991d4d66c45c9af7812` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-248387 | `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-248388 | `0x57f5e098cad7a3d1eed53991d4d66c45c9af7812` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-248389 | `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -170,8 +170,8 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| OpenZeppelin Mountain Protocol USDM - Audit Report Jun 2023.pdf | USDM | ambiguous — not counted | ERC1967Proxy (proxy) (alternative) `0x59d935...85508c` — deployed 2023-08-25 20:35:11+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x59d935...85508c` — deployed 2023-11-17 17:52:57+03 — liveness: live (current_address_book_code)<br>0x59d935… (alternative) `0x59d935...85508c` — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x59d935...85508c` — deployed 2023-11-17 03:34:09+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x59d935...85508c` — deployed 2023-11-17 04:59:59+03 — liveness: live (current_address_book_code)<br>0x59d935… (alternative) `0x59d935...85508c` — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x59d935...85508c` — deployed 2023-11-17 17:51:13+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| OpenZeppelin Mountain Protocol wUSDM - Audit Report Oct 2023.pdf | wUSDM | ambiguous — not counted | 0x57f5e0… (alternative) `0x57f5e0...af7812` — liveness: live (current_address_book_code)<br>0x57f5e0… (alternative) `0x57f5e0...af7812` — liveness: live (current_address_book_code)<br>0x57f5e0… (alternative) `0x57f5e0...af7812` — liveness: live (current_address_book_code)<br>0x57f5e0… (alternative) `0x57f5e0...af7812` — liveness: live (current_address_book_code)<br>0x57f5e0… (alternative) `0x57f5e0...af7812` — liveness: live (current_address_book_code)<br>0x57f5e0… (alternative) `0x57f5e0...af7812` — liveness: live (current_address_book_code)<br>0x57f5e0… (alternative) `0x57f5e0...af7812` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| OpenZeppelin Mountain Protocol USDM - Audit Report Jun 2023.pdf | USDM | ambiguous — not counted | ERC1967Proxy (proxy) (alternative) `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` — deployed 2023-08-25 20:35:11+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` — deployed 2023-11-17 17:52:57+03 — liveness: live (current_address_book_code)<br>0x59d935… (alternative) `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` — deployed 2023-11-17 03:34:09+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` — deployed 2023-11-17 04:59:59+03 — liveness: live (current_address_book_code)<br>0x59d935… (alternative) `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` — deployed 2023-11-17 17:51:13+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| OpenZeppelin Mountain Protocol wUSDM - Audit Report Oct 2023.pdf | wUSDM | ambiguous — not counted | 0x57f5e0… (alternative) `0x57f5e098cad7a3d1eed53991d4d66c45c9af7812` — liveness: live (current_address_book_code)<br>0x57f5e0… (alternative) `0x57f5e098cad7a3d1eed53991d4d66c45c9af7812` — liveness: live (current_address_book_code)<br>0x57f5e0… (alternative) `0x57f5e098cad7a3d1eed53991d4d66c45c9af7812` — liveness: live (current_address_book_code)<br>0x57f5e0… (alternative) `0x57f5e098cad7a3d1eed53991d4d66c45c9af7812` — liveness: live (current_address_book_code)<br>0x57f5e0… (alternative) `0x57f5e098cad7a3d1eed53991d4d66c45c9af7812` — liveness: live (current_address_book_code)<br>0x57f5e0… (alternative) `0x57f5e098cad7a3d1eed53991d4d66c45c9af7812` — liveness: live (current_address_book_code)<br>0x57f5e0… (alternative) `0x57f5e098cad7a3d1eed53991d4d66c45c9af7812` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 
 ## Coverage Gaps
 
@@ -179,11 +179,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x59d935...85508c` | USDM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | `0x59d935...85508c` | USDM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | `0x59d935...85508c` | USDM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x59d935...85508c` | USDM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | `0x59d935...85508c` | USDM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` | USDM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` | USDM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` | USDM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` | USDM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` | USDM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

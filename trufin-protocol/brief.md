@@ -62,19 +62,19 @@ The protocol comprises 3 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Staker | unknown | ethereum | n/a | 2 deployments: ethereum [`0x1608b6...96a603`](./contracts/ethereum-1/0x1608b68d47c8752dbbfe748fdc902e401f96a603/); ethereum `0xcfab85...89006d` | ✅ Audited |
-| TruStakeMATICv2 | unknown | ethereum | n/a | [`0xa43a7c...8987ed`](./contracts/ethereum-1/0xa43a7c62d56df036c187e1966c03e2799d8987ed/) | ✅ Audited |
-| TruStakePOL | unknown | ethereum | n/a | 2 deployments: ethereum [`0xbe63b2...17f8db`](./contracts/ethereum-1/0xbe63b28453eeb284ae9413949accf41ed817f8db/); ethereum `0xc10214...c8e5e8` | ✅ Audited |
+| Staker | unknown | ethereum | n/a | 2 deployments: ethereum [`0x1608b68d47c8752dbbfe748fdc902e401f96a603`](./contracts/ethereum-1/0x1608b68d47c8752dbbfe748fdc902e401f96a603/); ethereum `0xcfab8530ccf1f9936daede537d6ebbc75289006d` | ✅ Audited |
+| TruStakeMATICv2 | unknown | ethereum | n/a | [`0xa43a7c62d56df036c187e1966c03e2799d8987ed`](./contracts/ethereum-1/0xa43a7c62d56df036c187e1966c03e2799d8987ed/) | ✅ Audited |
+| TruStakePOL | unknown | ethereum | n/a | 2 deployments: ethereum [`0xbe63b28453eeb284ae9413949accf41ed817f8db`](./contracts/ethereum-1/0xbe63b28453eeb284ae9413949accf41ed817f8db/); ethereum `0xc10214cde5d6754ec1e2220362f2120142c8e5e8` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| MasterWhitelist | unknown | ethereum | n/a | 2 deployments: ethereum [`0x570177...439937`](./contracts/ethereum-1/0x5701773567a4a903ef1de459d0b542adb2439937/); ethereum `0x948ddf...6b14d8` | ⚠️ Unaudited |
-| MasterWhitelist | unknown | ethereum | n/a | 2 deployments: ethereum [`0xb78610...3f0334`](./contracts/ethereum-1/0xb78610ade922b1aa0df2b0981f0dec17733f0334/); ethereum `0xc90a7c...87757c` | ⚠️ Unaudited |
-| PausableModule | unknown | ethereum | n/a | [`0xe6dcd7...84c246`](./contracts/ethereum-1/0xe6dcd72cc14e1b1a6c4d8a3c4b7d9f3bcf84c246/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | ethereum | n/a | 3 deployments: ethereum [`0x022420...155158`](./contracts/ethereum-1/0x022420797d9491b455c345375c48b62a21155158/); ethereum `0x567676...791131`; ethereum `0xf7a2a6...b5430a` | ⚠️ Unaudited |
-| TruStakeMATICv2 | unknown | ethereum | n/a | 3 deployments: ethereum [`0x0ee0f1...3863a4`](./contracts/ethereum-1/0x0ee0f1e438e4f0d8e3aa8d1f35592aa5303863a4/); ethereum `0x6ba703...de5ad9`; ethereum `0xe0579d...6ceb71` | ⚠️ Unaudited |
+| MasterWhitelist | unknown | ethereum | n/a | 2 deployments: ethereum [`0x5701773567a4a903ef1de459d0b542adb2439937`](./contracts/ethereum-1/0x5701773567a4a903ef1de459d0b542adb2439937/); ethereum `0x948ddfecd6ec588beab5a5aaa210504d2f6b14d8` | ⚠️ Unaudited |
+| MasterWhitelist | unknown | ethereum | n/a | 2 deployments: ethereum [`0xb78610ade922b1aa0df2b0981f0dec17733f0334`](./contracts/ethereum-1/0xb78610ade922b1aa0df2b0981f0dec17733f0334/); ethereum `0xc90a7cb712e5ac2dd377602866051ac61487757c` | ⚠️ Unaudited |
+| PausableModule | unknown | ethereum | n/a | [`0xe6dcd72cc14e1b1a6c4d8a3c4b7d9f3bcf84c246`](./contracts/ethereum-1/0xe6dcd72cc14e1b1a6c4d8a3c4b7d9f3bcf84c246/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | ethereum | n/a | 3 deployments: ethereum [`0x022420797d9491b455c345375c48b62a21155158`](./contracts/ethereum-1/0x022420797d9491b455c345375c48b62a21155158/); ethereum `0x567676ddb095b582b49ed21538fc45c9ce791131`; ethereum `0xf7a2a6bd2117a7b907c461d357f0cd4c86b5430a` | ⚠️ Unaudited |
+| TruStakeMATICv2 | unknown | ethereum | n/a | 3 deployments: ethereum [`0x0ee0f1e438e4f0d8e3aa8d1f35592aa5303863a4`](./contracts/ethereum-1/0x0ee0f1e438e4f0d8e3aa8d1f35592aa5303863a4/); ethereum `0x6ba703406bc530d7e160f2b25a253e21d1de5ad9`; ethereum `0xe0579d3d0471720e9e9b76e3fb73dff06e6ceb71` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -94,7 +94,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x66d552...6ef9b5` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x66d55290f20d0984f1a1ede2e9f324b5a86ef9b5` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -120,10 +120,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x570177...439937`](./contracts/ethereum-1/0x5701773567a4a903ef1de459d0b542adb2439937/) | MasterWhitelist | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xb78610...3f0334`](./contracts/ethereum-1/0xb78610ade922b1aa0df2b0981f0dec17733f0334/) | MasterWhitelist | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xe6dcd7...84c246`](./contracts/ethereum-1/0xe6dcd72cc14e1b1a6c4d8a3c4b7d9f3bcf84c246/) | PausableModule | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0ee0f1...3863a4`](./contracts/ethereum-1/0x0ee0f1e438e4f0d8e3aa8d1f35592aa5303863a4/) | TruStakeMATICv2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5701773567a4a903ef1de459d0b542adb2439937`](./contracts/ethereum-1/0x5701773567a4a903ef1de459d0b542adb2439937/) | MasterWhitelist | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb78610ade922b1aa0df2b0981f0dec17733f0334`](./contracts/ethereum-1/0xb78610ade922b1aa0df2b0981f0dec17733f0334/) | MasterWhitelist | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe6dcd72cc14e1b1a6c4d8a3c4b7d9f3bcf84c246`](./contracts/ethereum-1/0xe6dcd72cc14e1b1a6c4d8a3c4b7d9f3bcf84c246/) | PausableModule | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0ee0f1e438e4f0d8e3aa8d1f35592aa5303863a4`](./contracts/ethereum-1/0x0ee0f1e438e4f0d8e3aa8d1f35592aa5303863a4/) | TruStakeMATICv2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

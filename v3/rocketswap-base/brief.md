@@ -52,12 +52,12 @@ The pinned logic-topography run contains 6 contract row(s) across base, bsc. Str
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- RcktLocker (`0x234ccb...633a96`, chain 8453)
-- RcktMasterChef (`0x304063...f6eaff`, chain 8453)
-- RcktVault (`0x2ec62d...458a3c`, chain 8453)
-- RocketSwapToken (`0x6653dd...2eec09`, chain 8453)
-- UniswapV2Factory (`0x1b8128...ff99fc`, chain 8453)
-- UniswapV2Router02 (`0x4cf760...1b306e`, chain 8453)
+- RcktLocker (`0x234ccb5c64fdb3958c47e8efbe122b2d54633a96`, chain 8453)
+- RcktMasterChef (`0x304063953727b53048500dfd877a17d1c4f6eaff`, chain 8453)
+- RcktVault (`0x2ec62d08277ffc42eb5af71c7595c1a9f9458a3c`, chain 8453)
+- RocketSwapToken (`0x6653dd4b92a0e5bf8ae570a98906d9d6fd2eec09`, chain 8453)
+- UniswapV2Factory (`0x1b8128c3a1b7d20053d10763ff02466ca7ff99fc`, chain 8453)
+- UniswapV2Router02 (`0x4cf76043b3f97ba06917cbd90f9e3a2aac1b306e`, chain 8453)
 
 ## Contract Surface Quality
 
@@ -101,19 +101,19 @@ The pinned logic-topography run contains 6 contract row(s) across base, bsc. Str
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| RocketSwapToken | unknown | project_anchor | own_supporting | 0 | base | unit-253167 | `0x6653dd...2eec09` | ✅ Audited |
-| UniswapV2Factory | unknown | project_anchor | own_supporting | 0 | base | unit-253162 | `0x1b8128...ff99fc` | ✅ Audited |
-| UniswapV2Router02 | unknown | project_anchor | own_supporting | 0 | base | unit-253166 | `0x4cf760...1b306e` | ✅ Audited |
+| RocketSwapToken | unknown | project_anchor | own_supporting | 0 | base | unit-253167 | `0x6653dd4b92a0e5bf8ae570a98906d9d6fd2eec09` | ✅ Audited |
+| UniswapV2Factory | unknown | project_anchor | own_supporting | 0 | base | unit-253162 | `0x1b8128c3a1b7d20053d10763ff02466ca7ff99fc` | ✅ Audited |
+| UniswapV2Router02 | unknown | project_anchor | own_supporting | 0 | base | unit-253166 | `0x4cf76043b3f97ba06917cbd90f9e3a2aac1b306e` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Multicall2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x85dde5...3abc0e` | ⚠️ Unaudited |
-| Multicall3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x74f477...98e099` | ⚠️ Unaudited |
-| RcktLocker | unknown | project_anchor | own_supporting | 0 | base | unit-253163 | `0x234ccb...633a96` | ⚠️ Unaudited |
-| RcktMasterChef | unknown | project_anchor | own_supporting | 0 | base | unit-253165 | `0x304063...f6eaff` | ⚠️ Unaudited |
-| RcktVault | unknown | project_anchor | own_supporting | 0 | base | unit-253164 | `0x2ec62d...458a3c` | ⚠️ Unaudited |
+| Multicall2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x85dde545bbb76a4ed954c9525426cb2a283abc0e` | ⚠️ Unaudited |
+| Multicall3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x74f477c907730eedea4274f5ed26b5ad7f98e099` | ⚠️ Unaudited |
+| RcktLocker | unknown | project_anchor | own_supporting | 0 | base | unit-253163 | `0x234ccb5c64fdb3958c47e8efbe122b2d54633a96` | ⚠️ Unaudited |
+| RcktMasterChef | unknown | project_anchor | own_supporting | 0 | base | unit-253165 | `0x304063953727b53048500dfd877a17d1c4f6eaff` | ⚠️ Unaudited |
+| RcktVault | unknown | project_anchor | own_supporting | 0 | base | unit-253164 | `0x2ec62d08277ffc42eb5af71c7595c1a9f9458a3c` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -133,12 +133,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0ca811...a3ebc9` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2de412...0300e6` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x7e1206...0050b8` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xba4b5f...8f5d73` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbe35be...c69fcb` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xc83ef3...136770` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0ca8118737a356b62c6d6fad6f5ca87ba8a3ebc9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2de412bc1c4134b6c6fd869f1bb3f6d4be0300e6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x7e1206e8ca5fcacc0f9a3edd640c66fd780050b8` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xba4b5fd0326e5bd0eaed9369a52f8ef1bf8f5d73` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbe35beec0ac33eefbcfaf16e8088897153c69fcb` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xc83ef35eb044b57850cf28eff40067719f136770` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -158,9 +158,9 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| SmartContract_Audit_Solidproof_RocketSwap.pdf | RocketSwapToken | own contract | RocketSwapToken (selected) `0x6653dd...2eec09` — deployed 2023-07-25 06:21:59+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| SmartContract_Audit_Solidproof_RocketSwap.pdf | UniswapV2Router02 | own contract | UniswapV2Router02 (selected) `0x4cf760...1b306e` — deployed 2023-07-25 06:13:05+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| SmartContract_Audit_Solidproof_RocketSwap.pdf | UniswapV2Factory | own contract | UniswapV2Factory (selected) `0x1b8128...ff99fc` — deployed 2023-07-25 06:03:53+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| SmartContract_Audit_Solidproof_RocketSwap.pdf | RocketSwapToken | own contract | RocketSwapToken (selected) `0x6653dd4b92a0e5bf8ae570a98906d9d6fd2eec09` — deployed 2023-07-25 06:21:59+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| SmartContract_Audit_Solidproof_RocketSwap.pdf | UniswapV2Router02 | own contract | UniswapV2Router02 (selected) `0x4cf76043b3f97ba06917cbd90f9e3a2aac1b306e` — deployed 2023-07-25 06:13:05+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| SmartContract_Audit_Solidproof_RocketSwap.pdf | UniswapV2Factory | own contract | UniswapV2Factory (selected) `0x1b8128c3a1b7d20053d10763ff02466ca7ff99fc` — deployed 2023-07-25 06:03:53+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 
 ## Coverage Gaps
 
@@ -168,9 +168,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | `0x234ccb...633a96` | RcktLocker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x304063...f6eaff` | RcktMasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x2ec62d...458a3c` | RcktVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x234ccb5c64fdb3958c47e8efbe122b2d54633a96` | RcktLocker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x304063953727b53048500dfd877a17d1c4f6eaff` | RcktMasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x2ec62d08277ffc42eb5af71c7595c1a9f9458a3c` | RcktVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -60,13 +60,13 @@ The protocol forms a single structural family (Core Logic) of 7 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AlphaDEX | unknown | moonriver | n/a | [`0x8e7cd8...b02a60`](./contracts/moonriver-1285/0x8e7cd893d8f371051a39aa65976bca22d7b02a60/) | ⚠️ Unaudited |
-| LaunchpadFactory | unknown | moonriver | n/a | [`0xd9341f...157dd0`](./contracts/moonriver-1285/0xd9341fd84affa37af97747c08b9404ef30157dd0/) | ⚠️ Unaudited |
-| LPStaking | unknown | moonriver | n/a | [`0x29a31b...2ed820`](./contracts/moonriver-1285/0x29a31b6e45cf5133c0483496471226a6d22ed820/) | ⚠️ Unaudited |
-| MasterChef | unknown | moonriver | n/a | [`0x55a616...384f5c`](./contracts/moonriver-1285/0x55a616ac51d8bbe8a50c951acd5e941285384f5c/) | ⚠️ Unaudited |
-| RewardNft | unknown | moonriver | n/a | [`0xaa6535...266b5b`](./contracts/moonriver-1285/0xaa6535409e076f203e0f431c518b998d85266b5b/) | ⚠️ Unaudited |
-| Roar | unknown | moonriver | n/a | [`0x4829b5...7ab833`](./contracts/moonriver-1285/0x4829b57f0160427f768a5c0aa23cd3d33c7ab833/) | ⚠️ Unaudited |
-| RoarStaking | unknown | moonriver | n/a | [`0x70f0bf...873236`](./contracts/moonriver-1285/0x70f0bf009d24f2628762cb1e079a9d720e873236/) | ⚠️ Unaudited |
+| AlphaDEX | unknown | moonriver | n/a | [`0x8e7cd893d8f371051a39aa65976bca22d7b02a60`](./contracts/moonriver-1285/0x8e7cd893d8f371051a39aa65976bca22d7b02a60/) | ⚠️ Unaudited |
+| LaunchpadFactory | unknown | moonriver | n/a | [`0xd9341fd84affa37af97747c08b9404ef30157dd0`](./contracts/moonriver-1285/0xd9341fd84affa37af97747c08b9404ef30157dd0/) | ⚠️ Unaudited |
+| LPStaking | unknown | moonriver | n/a | [`0x29a31b6e45cf5133c0483496471226a6d22ed820`](./contracts/moonriver-1285/0x29a31b6e45cf5133c0483496471226a6d22ed820/) | ⚠️ Unaudited |
+| MasterChef | unknown | moonriver | n/a | [`0x55a616ac51d8bbe8a50c951acd5e941285384f5c`](./contracts/moonriver-1285/0x55a616ac51d8bbe8a50c951acd5e941285384f5c/) | ⚠️ Unaudited |
+| RewardNft | unknown | moonriver | n/a | [`0xaa6535409e076f203e0f431c518b998d85266b5b`](./contracts/moonriver-1285/0xaa6535409e076f203e0f431c518b998d85266b5b/) | ⚠️ Unaudited |
+| Roar | unknown | moonriver | n/a | [`0x4829b57f0160427f768a5c0aa23cd3d33c7ab833`](./contracts/moonriver-1285/0x4829b57f0160427f768a5c0aa23cd3d33c7ab833/) | ⚠️ Unaudited |
+| RoarStaking | unknown | moonriver | n/a | [`0x70f0bf009d24f2628762cb1e079a9d720e873236`](./contracts/moonriver-1285/0x70f0bf009d24f2628762cb1e079a9d720e873236/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -98,13 +98,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| moonriver | [`0x8e7cd8...b02a60`](./contracts/moonriver-1285/0x8e7cd893d8f371051a39aa65976bca22d7b02a60/) | AlphaDEX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| moonriver | [`0xd9341f...157dd0`](./contracts/moonriver-1285/0xd9341fd84affa37af97747c08b9404ef30157dd0/) | LaunchpadFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| moonriver | [`0x29a31b...2ed820`](./contracts/moonriver-1285/0x29a31b6e45cf5133c0483496471226a6d22ed820/) | LPStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| moonriver | [`0x55a616...384f5c`](./contracts/moonriver-1285/0x55a616ac51d8bbe8a50c951acd5e941285384f5c/) | MasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| moonriver | [`0xaa6535...266b5b`](./contracts/moonriver-1285/0xaa6535409e076f203e0f431c518b998d85266b5b/) | RewardNft | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| moonriver | [`0x4829b5...7ab833`](./contracts/moonriver-1285/0x4829b57f0160427f768a5c0aa23cd3d33c7ab833/) | Roar | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| moonriver | [`0x70f0bf...873236`](./contracts/moonriver-1285/0x70f0bf009d24f2628762cb1e079a9d720e873236/) | RoarStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | [`0x8e7cd893d8f371051a39aa65976bca22d7b02a60`](./contracts/moonriver-1285/0x8e7cd893d8f371051a39aa65976bca22d7b02a60/) | AlphaDEX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | [`0xd9341fd84affa37af97747c08b9404ef30157dd0`](./contracts/moonriver-1285/0xd9341fd84affa37af97747c08b9404ef30157dd0/) | LaunchpadFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | [`0x29a31b6e45cf5133c0483496471226a6d22ed820`](./contracts/moonriver-1285/0x29a31b6e45cf5133c0483496471226a6d22ed820/) | LPStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | [`0x55a616ac51d8bbe8a50c951acd5e941285384f5c`](./contracts/moonriver-1285/0x55a616ac51d8bbe8a50c951acd5e941285384f5c/) | MasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | [`0xaa6535409e076f203e0f431c518b998d85266b5b`](./contracts/moonriver-1285/0xaa6535409e076f203e0f431c518b998d85266b5b/) | RewardNft | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | [`0x4829b57f0160427f768a5c0aa23cd3d33c7ab833`](./contracts/moonriver-1285/0x4829b57f0160427f768a5c0aa23cd3d33c7ab833/) | Roar | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | [`0x70f0bf009d24f2628762cb1e079a9d720e873236`](./contracts/moonriver-1285/0x70f0bf009d24f2628762cb1e079a9d720e873236/) | RoarStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

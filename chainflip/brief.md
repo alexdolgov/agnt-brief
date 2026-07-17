@@ -59,22 +59,22 @@ The protocol comprises 5 functional families. Its contracts share 25 common proj
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| FLIP | unknown | ethereum | n/a | [`0x826180...22678a`](./contracts/ethereum-1/0x826180541412d574cf1336d22c0c0a287822678a/) | ✅ Audited |
-| KeyManager | governance | arbitrum | n/a | 2 deployments: ethereum `0xcd351d...bf08be`; arbitrum [`0xbfe612...000275`](./contracts/arbitrum-42161/0xbfe612c77c2807ac5a6a41f84436287578000275/) | ✅ Audited |
-| Vault | core_logic | arbitrum | n/a | 2 deployments: ethereum `0xf5e103...f62bcc`; arbitrum [`0x79001a...498920`](./contracts/arbitrum-42161/0x79001a5e762f3befc8e5871b42f6734e00498920/) | ✅ Audited |
+| FLIP | unknown | ethereum | n/a | [`0x826180541412d574cf1336d22c0c0a287822678a`](./contracts/ethereum-1/0x826180541412d574cf1336d22c0c0a287822678a/) | ✅ Audited |
+| KeyManager | governance | arbitrum | n/a | 2 deployments: ethereum `0xcd351d3626dc244730796a3168d315168ebf08be`; arbitrum [`0xbfe612c77c2807ac5a6a41f84436287578000275`](./contracts/arbitrum-42161/0xbfe612c77c2807ac5a6a41f84436287578000275/) | ✅ Audited |
+| Vault | core_logic | arbitrum | n/a | 2 deployments: ethereum `0xf5e10380213880111522dd0efd3dbb45b9f62bcc`; arbitrum [`0x79001a5e762f3befc8e5871b42f6734e00498920`](./contracts/arbitrum-42161/0x79001a5e762f3befc8e5871b42f6734e00498920/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (8)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| EACAggregatorProxy | unknown | ethereum | n/a | [`0x5f4ec3...5b8419`](./contracts/ethereum-1/0x5f4ec3df9cbd43714fe2740f5e3616155c5b8419/) | ⚠️ Unaudited |
-| FiatTokenV2_2 | token | ethereum | n/a | [`0xa0b869...06eb48`](./contracts/ethereum-1/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/) | ⚠️ Unaudited |
-| FiatTokenV2_2 | token | arbitrum | n/a | [`0xaf88d0...8e5831`](./contracts/arbitrum-42161/0xaf88d065e77c8cc2239327c5edb3a432268e5831/) | ⚠️ Unaudited |
-| ScUtils | unknown | ethereum | n/a | [`0x13ad79...301380`](./contracts/ethereum-1/0x13ad793e7b75eaacee34b69792552f086b301380/) | ⚠️ Unaudited |
-| StateChainGateway | unknown | ethereum | n/a | [`0x6995ab...621dbd`](./contracts/ethereum-1/0x6995ab7c4d7f4b03f467cf4c8e920427d9621dbd/) | ⚠️ Unaudited |
-| TetherToken | token | ethereum | n/a | [`0xdac17f...831ec7`](./contracts/ethereum-1/0xdac17f958d2ee523a2206206994597c13d831ec7/) | ⚠️ Unaudited |
-| TokenVestingNoStaking | operational_periphery | ethereum | n/a | 5 deployments: ethereum [`0x1aaa03...43e887`](./contracts/ethereum-1/0x1aaa037bfbbe56995db04b30298f9a7ccc43e887/); ethereum `0x5df5e9...2b3773`; ethereum `0x7eb1b8...4b7e75`; ethereum `0x8d1ecf...736e3a`; ethereum `0xfa7431...361507` | ⚠️ Unaudited |
-| TokenVestingStaking | operational_periphery | ethereum | n/a | 8 deployments: ethereum [`0x00b284...2830b9`](./contracts/ethereum-1/0x00b2849f4bdb572858ac144f83340a3f472830b9/); ethereum `0x159cd1...8699ed`; ethereum `0x1728e5...bc0861`; ethereum `0x36541c...e2ba8e`; ethereum `0x3bfe74...5bf858`; ethereum `0x49d9c4...0fef37`; ethereum `0xde4c12...c67d38`; ethereum `0xf361c4...4fe474` | ⚠️ Unaudited |
+| EACAggregatorProxy | unknown | ethereum | n/a | [`0x5f4ec3df9cbd43714fe2740f5e3616155c5b8419`](./contracts/ethereum-1/0x5f4ec3df9cbd43714fe2740f5e3616155c5b8419/) | ⚠️ Unaudited |
+| FiatTokenV2_2 | token | ethereum | n/a | [`0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48`](./contracts/ethereum-1/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/) | ⚠️ Unaudited |
+| FiatTokenV2_2 | token | arbitrum | n/a | [`0xaf88d065e77c8cc2239327c5edb3a432268e5831`](./contracts/arbitrum-42161/0xaf88d065e77c8cc2239327c5edb3a432268e5831/) | ⚠️ Unaudited |
+| ScUtils | unknown | ethereum | n/a | [`0x13ad793e7b75eaacee34b69792552f086b301380`](./contracts/ethereum-1/0x13ad793e7b75eaacee34b69792552f086b301380/) | ⚠️ Unaudited |
+| StateChainGateway | unknown | ethereum | n/a | [`0x6995ab7c4d7f4b03f467cf4c8e920427d9621dbd`](./contracts/ethereum-1/0x6995ab7c4d7f4b03f467cf4c8e920427d9621dbd/) | ⚠️ Unaudited |
+| TetherToken | token | ethereum | n/a | [`0xdac17f958d2ee523a2206206994597c13d831ec7`](./contracts/ethereum-1/0xdac17f958d2ee523a2206206994597c13d831ec7/) | ⚠️ Unaudited |
+| TokenVestingNoStaking | operational_periphery | ethereum | n/a | 5 deployments: ethereum [`0x1aaa037bfbbe56995db04b30298f9a7ccc43e887`](./contracts/ethereum-1/0x1aaa037bfbbe56995db04b30298f9a7ccc43e887/); ethereum `0x5df5e9f92bec15c786029e1f5d1f1ae0ba2b3773`; ethereum `0x7eb1b82d111fb0ebe8f9bab8f3fbda6f7d4b7e75`; ethereum `0x8d1ecf1a5f082e9fe806adff6bc8a3f11a736e3a`; ethereum `0xfa743157557ea7ecf359733a0b7325bf7f361507` | ⚠️ Unaudited |
+| TokenVestingStaking | operational_periphery | ethereum | n/a | 8 deployments: ethereum [`0x00b2849f4bdb572858ac144f83340a3f472830b9`](./contracts/ethereum-1/0x00b2849f4bdb572858ac144f83340a3f472830b9/); ethereum `0x159cd13d05ae9be47b6bc4589879f4281c8699ed`; ethereum `0x1728e5d34eea55260e3e94f3f63d41bbf6bc0861`; ethereum `0x36541c775106970e522fcf254f9181ca1ce2ba8e`; ethereum `0x3bfe744c302b4bfa04e9fa5c9063e3de3d5bf858`; ethereum `0x49d9c4d897e26a142eb7dd01f5cdeb92ea0fef37`; ethereum `0xde4c128e9865fe82294143f34038099c95c67d38`; ethereum `0xf361c439266b7ca7cf739ae379aa1813b84fe474` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -94,7 +94,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0xbfe612...000275` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xbfe612c77c2807ac5a6a41f84436287578000275` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -111,14 +111,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x5f4ec3...5b8419`](./contracts/ethereum-1/0x5f4ec3df9cbd43714fe2740f5e3616155c5b8419/) | EACAggregatorProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa0b869...06eb48`](./contracts/ethereum-1/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/) | FiatTokenV2_2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xaf88d0...8e5831`](./contracts/arbitrum-42161/0xaf88d065e77c8cc2239327c5edb3a432268e5831/) | FiatTokenV2_2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x13ad79...301380`](./contracts/ethereum-1/0x13ad793e7b75eaacee34b69792552f086b301380/) | ScUtils | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6995ab...621dbd`](./contracts/ethereum-1/0x6995ab7c4d7f4b03f467cf4c8e920427d9621dbd/) | StateChainGateway | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xdac17f...831ec7`](./contracts/ethereum-1/0xdac17f958d2ee523a2206206994597c13d831ec7/) | TetherToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1aaa03...43e887`](./contracts/ethereum-1/0x1aaa037bfbbe56995db04b30298f9a7ccc43e887/) | TokenVestingNoStaking | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x00b284...2830b9`](./contracts/ethereum-1/0x00b2849f4bdb572858ac144f83340a3f472830b9/) | TokenVestingStaking | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5f4ec3df9cbd43714fe2740f5e3616155c5b8419`](./contracts/ethereum-1/0x5f4ec3df9cbd43714fe2740f5e3616155c5b8419/) | EACAggregatorProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48`](./contracts/ethereum-1/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/) | FiatTokenV2_2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xaf88d065e77c8cc2239327c5edb3a432268e5831`](./contracts/arbitrum-42161/0xaf88d065e77c8cc2239327c5edb3a432268e5831/) | FiatTokenV2_2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x13ad793e7b75eaacee34b69792552f086b301380`](./contracts/ethereum-1/0x13ad793e7b75eaacee34b69792552f086b301380/) | ScUtils | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6995ab7c4d7f4b03f467cf4c8e920427d9621dbd`](./contracts/ethereum-1/0x6995ab7c4d7f4b03f467cf4c8e920427d9621dbd/) | StateChainGateway | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xdac17f958d2ee523a2206206994597c13d831ec7`](./contracts/ethereum-1/0xdac17f958d2ee523a2206206994597c13d831ec7/) | TetherToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1aaa037bfbbe56995db04b30298f9a7ccc43e887`](./contracts/ethereum-1/0x1aaa037bfbbe56995db04b30298f9a7ccc43e887/) | TokenVestingNoStaking | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x00b2849f4bdb572858ac144f83340a3f472830b9`](./contracts/ethereum-1/0x00b2849f4bdb572858ac144f83340a3f472830b9/) | TokenVestingStaking | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

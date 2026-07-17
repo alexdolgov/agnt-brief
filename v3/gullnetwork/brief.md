@@ -52,22 +52,22 @@ The pinned logic-topography run contains 1 contract row(s) across manta-pacific.
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x01b445...d2d460`, chain 169)
-- UnnamedContract (`0x1266c3...dc8510`, chain 169)
-- UnnamedContract (`0x15ae4d...277d13`, chain 169)
-- UnnamedContract (`0x53edbd...039bd8`, chain 169)
-- UnnamedContract (`0x5c6e3d...04d617`, chain 169)
-- UnnamedContract (`0x857c66...f4bc0f`, chain 169)
-- UnnamedContract (`0x85fa37...94263f`, chain 169)
-- UnnamedContract (`0x987d6c...717fb2`, chain 169)
-- UnnamedContract (`0xa3c957...ef1038`, chain 169)
-- UnnamedContract (`0xa50384...27e0c0`, chain 169)
-- UnnamedContract (`0xa7535c...73d00c`, chain 169)
-- UnnamedContract (`0xb1346f...87c1fd`, chain 169)
-- UnnamedContract (`0xc686e0...21ab46`, chain 169)
-- UnnamedContract (`0xcdda6a...a7dafe`, chain 169)
-- UnnamedContract (`0xec7d2d...f62ec3`, chain 169)
-- GullV2Factory (`0x31a788...906db3`, chain 169)
+- UnnamedContract (`0x01b4455710cfc743056add3ec1c2bac52fd2d460`, chain 169)
+- UnnamedContract (`0x1266c32ca48013a79694efab4622f6349edc8510`, chain 169)
+- UnnamedContract (`0x15ae4df50629060031cd50514a0458e4b2277d13`, chain 169)
+- UnnamedContract (`0x53edbd3da00e07a98e2d28df37f441ac8e039bd8`, chain 169)
+- UnnamedContract (`0x5c6e3db777502b6b0708ca2c0136bfacd804d617`, chain 169)
+- UnnamedContract (`0x857c6612c45a2f612d561b474e00c3fe16f4bc0f`, chain 169)
+- UnnamedContract (`0x85fa37bcc4036f5a4f773ba21f1a424be694263f`, chain 169)
+- UnnamedContract (`0x987d6c6907c4bf6174a89a2b8709184604717fb2`, chain 169)
+- UnnamedContract (`0xa3c957b20779abf06661e25ee361be1430ef1038`, chain 169)
+- UnnamedContract (`0xa503844730da7cb2defb3ae5b813e20ced27e0c0`, chain 169)
+- UnnamedContract (`0xa7535cd4c944d84b7831925eaa447a4c2173d00c`, chain 169)
+- UnnamedContract (`0xb1346ff891a74c4444984f1ce3cdb13ee787c1fd`, chain 169)
+- UnnamedContract (`0xc686e0b5a823365f277d048e02ab681c5121ab46`, chain 169)
+- UnnamedContract (`0xcdda6af3f904145b00f96a2f940013d1d7a7dafe`, chain 169)
+- UnnamedContract (`0xec7d2dbf91acdbf43b376c47edeb369c4cf62ec3`, chain 169)
+- GullV2Factory (`0x31a78894a2b5de2c4244cd41595cd0050a906db3`, chain 169)
 
 ## Contract Surface Quality
 
@@ -113,14 +113,14 @@ The pinned logic-topography run contains 1 contract row(s) across manta-pacific.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ERC1967Proxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | manta-pacific | n/a | `0x0aa43a...cd3e4a` | ⚠️ Unaudited |
-| GULL | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0x9582b5...504205` | ⚠️ Unaudited |
-| GullOFTAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0x617f15...6d2e95` | ⚠️ Unaudited |
-| GullStakingFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0xfc6387...9744de` | ⚠️ Unaudited |
-| GullV2Factory | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-387234 | `0x31a788...906db3` | ⚠️ Unaudited |
-| GullV2Router02 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0x0c5d91...1ec462` | ⚠️ Unaudited |
-| GullVIP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0xc7faab...551f77` | ⚠️ Unaudited |
-| MantaGull | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0xccdb7b...74f360` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | manta-pacific | n/a | `0x0aa43a13c09bc0faef6aeb3ba002bc32bacd3e4a` | ⚠️ Unaudited |
+| GULL | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0x9582b518d28dc65945f8151c25e44a4e80504205` | ⚠️ Unaudited |
+| GullOFTAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0x617f1536dafd893994b9f51381f78875c86d2e95` | ⚠️ Unaudited |
+| GullStakingFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0xfc6387f581d2a827f183a9ea68f07063f99744de` | ⚠️ Unaudited |
+| GullV2Factory | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-387234 | `0x31a78894a2b5de2c4244cd41595cd0050a906db3` | ⚠️ Unaudited |
+| GullV2Router02 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0x0c5d91e097a22e1454987652d7ccdb825f1ec462` | ⚠️ Unaudited |
+| GullVIP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0xc7faab6408346dc5928e60556681f2359a551f77` | ⚠️ Unaudited |
+| MantaGull | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0xccdb7b8e012d282a86a2a8e94e9351472774f360` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -140,21 +140,21 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-387231 | `0x01b445...d2d460` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-387232 | `0x1266c3...dc8510` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-387233 | `0x15ae4d...277d13` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-387235 | `0x53edbd...039bd8` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-387236 | `0x5c6e3d...04d617` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-387237 | `0x857c66...f4bc0f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-387238 | `0x85fa37...94263f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-387239 | `0x987d6c...717fb2` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-387240 | `0xa3c957...ef1038` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-387241 | `0xa50384...27e0c0` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-387242 | `0xa7535c...73d00c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-387243 | `0xb1346f...87c1fd` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-387244 | `0xc686e0...21ab46` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-387245 | `0xcdda6a...a7dafe` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-387246 | `0xec7d2d...f62ec3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-387231 | `0x01b4455710cfc743056add3ec1c2bac52fd2d460` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-387232 | `0x1266c32ca48013a79694efab4622f6349edc8510` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-387233 | `0x15ae4df50629060031cd50514a0458e4b2277d13` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-387235 | `0x53edbd3da00e07a98e2d28df37f441ac8e039bd8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-387236 | `0x5c6e3db777502b6b0708ca2c0136bfacd804d617` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-387237 | `0x857c6612c45a2f612d561b474e00c3fe16f4bc0f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-387238 | `0x85fa37bcc4036f5a4f773ba21f1a424be694263f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-387239 | `0x987d6c6907c4bf6174a89a2b8709184604717fb2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-387240 | `0xa3c957b20779abf06661e25ee361be1430ef1038` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-387241 | `0xa503844730da7cb2defb3ae5b813e20ced27e0c0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-387242 | `0xa7535cd4c944d84b7831925eaa447a4c2173d00c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-387243 | `0xb1346ff891a74c4444984f1ce3cdb13ee787c1fd` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-387244 | `0xc686e0b5a823365f277d048e02ab681c5121ab46` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-387245 | `0xcdda6af3f904145b00f96a2f940013d1d7a7dafe` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-387246 | `0xec7d2dbf91acdbf43b376c47edeb369c4cf62ec3` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -184,7 +184,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| manta-pacific | `0x31a788...906db3` | GullV2Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| manta-pacific | `0x31a78894a2b5de2c4244cd41595cd0050a906db3` | GullV2Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

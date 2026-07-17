@@ -52,13 +52,13 @@ The pinned logic-topography run contains 4 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x5cbade...949efd`, chain 1)
-- UnnamedContract (`0xa8b12c...46d358`, chain 1)
-- UnnamedContract (`0xae2617...0a02b9`, chain 1)
-- BTCParamV2 (`0x260f6b...94b897`, chain 1)
-- MarsToken (`0x66c0dd...4d70b7`, chain 1)
-- TokenDistribute (`0x52fe73...07e7b7`, chain 1)
-- USDTMARSLPTOKENPool (`0x9b9c2d...a809dd`, chain 1)
+- UnnamedContract (`0x5cbade4d03ea436f792e9f939e70908524949efd`, chain 1)
+- UnnamedContract (`0xa8b12cc90abf65191532a12bb5394a714a46d358`, chain 1)
+- UnnamedContract (`0xae26170200ec3ae66b8afaa87f2fa49c1e0a02b9`, chain 1)
+- BTCParamV2 (`0x260f6bab7680019d2447bf62e9dbbc80dd94b897`, chain 1)
+- MarsToken (`0x66c0dded8433c9ea86c8cf91237b14e10b4d70b7`, chain 1)
+- TokenDistribute (`0x52fe73fa78d4b85437a33a7dcbda16aada07e7b7`, chain 1)
+- USDTMARSLPTOKENPool (`0x9b9c2d202f9a0ed9be9daf9df50cc0e327a809dd`, chain 1)
 
 ## Contract Surface Quality
 
@@ -104,23 +104,23 @@ The pinned logic-topography run contains 4 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BACMARSLPTOKENPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8360b0...1644b1` | ⚠️ Unaudited |
-| BTCParamV2 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-388955 | `0x260f6b...94b897` | ⚠️ Unaudited |
-| ETHParamV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x2472ef...c200ff` | ⚠️ Unaudited |
-| LpStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x95cb68...d080de` | ⚠️ Unaudited |
-| MarsLpStakingController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa91706...a60142` | ⚠️ Unaudited |
-| MarsStakingRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x395f12...202e3c` | ⚠️ Unaudited |
-| MarsToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388951 | `0x66c0dd...4d70b7` | ⚠️ Unaudited |
-| Oracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x97386b...9a1c1a` | ⚠️ Unaudited |
-| POWToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x14b939...158ce6` | ⚠️ Unaudited |
-| POWTokenProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x16a60d...3d4fc8` | ⚠️ Unaudited |
-| Staking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x033666...88ce00` | ⚠️ Unaudited |
-| StakingRewardsFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe3a8f8...d6106c` | ⚠️ Unaudited |
-| StakingRewardsWbtc | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x51a710...e18e11` | ⚠️ Unaudited |
-| TokenDistribute | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388949 | `0x52fe73...07e7b7` | ⚠️ Unaudited |
-| TreasuryVester | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x577114...4d45f2` | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0x64b91b...50d089` | ⚠️ Unaudited |
-| USDTMARSLPTOKENPool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388952 | `0x9b9c2d...a809dd` | ⚠️ Unaudited |
+| BACMARSLPTOKENPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8360b0d0d01e938441902569dfff66af701644b1` | ⚠️ Unaudited |
+| BTCParamV2 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-388955 | `0x260f6bab7680019d2447bf62e9dbbc80dd94b897` | ⚠️ Unaudited |
+| ETHParamV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x2472effdc3e4379074e808f475a7266357c200ff` | ⚠️ Unaudited |
+| LpStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x95cb6853e35f8a8bd1da907c7d1c967a0ad080de` | ⚠️ Unaudited |
+| MarsLpStakingController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa91706451e7f547233b13b3ce245186a2fa60142` | ⚠️ Unaudited |
+| MarsStakingRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x395f12c3af52a3b2ee3b63dcef8be2130a202e3c` | ⚠️ Unaudited |
+| MarsToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388951 | `0x66c0dded8433c9ea86c8cf91237b14e10b4d70b7` | ⚠️ Unaudited |
+| Oracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x97386b57e15c7fd09e36f04018f0b442b99a1c1a` | ⚠️ Unaudited |
+| POWToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x14b939e7eb0cb290fadccd0816e8975069158ce6` | ⚠️ Unaudited |
+| POWTokenProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x16a60d78fe6f92d25ebddaff6b1efc9d193d4fc8` | ⚠️ Unaudited |
+| Staking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x033666a848d68c9854b038ebb3958097f688ce00` | ⚠️ Unaudited |
+| StakingRewardsFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe3a8f85ab99e5e90d9d0dda0adf2139389d6106c` | ⚠️ Unaudited |
+| StakingRewardsWbtc | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x51a710218ec2ba2ac459ee28ec37c6df7fe18e11` | ⚠️ Unaudited |
+| TokenDistribute | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388949 | `0x52fe73fa78d4b85437a33a7dcbda16aada07e7b7` | ⚠️ Unaudited |
+| TreasuryVester | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5771144334826d79c07ffa544e935921904d45f2` | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0x64b91b92240bc1901855dd55ae632addb650d089` | ⚠️ Unaudited |
+| USDTMARSLPTOKENPool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388952 | `0x9b9c2d202f9a0ed9be9daf9df50cc0e327a809dd` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -140,9 +140,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388950 | `0x5cbade...949efd` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388953 | `0xa8b12c...46d358` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388954 | `0xae2617...0a02b9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388950 | `0x5cbade4d03ea436f792e9f939e70908524949efd` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388953 | `0xa8b12cc90abf65191532a12bb5394a714a46d358` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388954 | `0xae26170200ec3ae66b8afaa87f2fa49c1e0a02b9` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -161,10 +161,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x260f6b...94b897` | BTCParamV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x66c0dd...4d70b7` | MarsToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x52fe73...07e7b7` | TokenDistribute | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x9b9c2d...a809dd` | USDTMARSLPTOKENPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x260f6bab7680019d2447bf62e9dbbc80dd94b897` | BTCParamV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x66c0dded8433c9ea86c8cf91237b14e10b4d70b7` | MarsToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x52fe73fa78d4b85437a33a7dcbda16aada07e7b7` | TokenDistribute | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x9b9c2d202f9a0ed9be9daf9df50cc0e327a809dd` | USDTMARSLPTOKENPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

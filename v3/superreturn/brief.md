@@ -57,9 +57,9 @@ The pinned logic-topography run contains 2 contract row(s) across arbitrum, ethe
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- ERC1967Proxy (`0x139450...40c9fd`, chain 1)
-- ERC1967Proxy (`0x15f3ee...c682eb`, chain 1)
-- SSuperusdZapTeller (`0xff3341...9cf50e`, chain 1)
+- ERC1967Proxy (`0x139450c2dcef827c9a2a0bb1cb5506260940c9fd`, chain 1)
+- ERC1967Proxy (`0x15f3ee2f609fbae0bc48e3a071d66dd917c682eb`, chain 1)
+- SSuperusdZapTeller (`0xff33415469cf7e594d349780e4f39bd6ce9cf50e`, chain 1)
 
 ## Contract Surface Quality
 
@@ -105,16 +105,16 @@ The pinned logic-topography run contains 2 contract row(s) across arbitrum, ethe
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BoringVault | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393506 | `0x15f3ee...c682eb` | ✅ Audited |
+| BoringVault | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393506 | `0x15f3ee2f609fbae0bc48e3a071d66dd917c682eb` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (4)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BeaconProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x53afe3...259419` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393507 | `0x139450...40c9fd` | ⚠️ Unaudited |
-| MetaMorphoV1_1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x250cf7...a1f9ca` | ⚠️ Unaudited |
-| SSuperusdZapTeller | unknown | project_anchor | own_supporting | 0 | ethereum | unit-393505 | `0xff3341...9cf50e` | ⚠️ Unaudited |
+| BeaconProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x53afe3343f322c4189ab69e0d048efd154259419` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393507 | `0x139450c2dcef827c9a2a0bb1cb5506260940c9fd` | ⚠️ Unaudited |
+| MetaMorphoV1_1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x250cf7c82bac7cb6cf899b6052979d4b5ba1f9ca` | ⚠️ Unaudited |
+| SSuperusdZapTeller | unknown | project_anchor | own_supporting | 0 | ethereum | unit-393505 | `0xff33415469cf7e594d349780e4f39bd6ce9cf50e` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -158,7 +158,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| 0xmacro.com/library/audits/superReturn-1 | BoringVault | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x15f3ee...c682eb` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 0xmacro.com/library/audits/superReturn-1 | BoringVault | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x15f3ee2f609fbae0bc48e3a071d66dd917c682eb` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 0xmacro.com/library/audits/superReturn-1 | BoringVaultSCVersion | unmatched — not counted | — | listed in scope table with SHA256 hash | no |
 | 0xmacro.com/library/audits/superReturn-1 | MorphoDecoderAndSanitizer | unmatched — not counted | — | listed in scope table with SHA256 hash | no |
 | 0xmacro.com/library/audits/superReturn-1 | OpenEdenDecoderAndSanitizer | unmatched — not counted | — | listed in scope table with SHA256 hash | no |
@@ -170,7 +170,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | 0xmacro-boring-vault-arctic-0.pdf | AtomicQueue | unmatched — not counted | — | listed in scope table | no |
 | 0xmacro-boring-vault-arctic-0.pdf | AtomicSolver | unmatched — not counted | — | listed in scope table | no |
 | 0xmacro-boring-vault-arctic-0.pdf | IAtomicSolver | unmatched — not counted | — | listed in scope table | no |
-| 0xmacro-boring-vault-arctic-0.pdf | BoringVault | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x15f3ee...c682eb` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 0xmacro-boring-vault-arctic-0.pdf | BoringVault | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x15f3ee2f609fbae0bc48e3a071d66dd917c682eb` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 0xmacro-boring-vault-arctic-0.pdf | BaseDecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
 | 0xmacro-boring-vault-arctic-0.pdf | EtherFiLiquidDecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
 | 0xmacro-boring-vault-arctic-0.pdf | LidoLiquidDecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
@@ -219,7 +219,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | spearbit-boring-vault-arctic-0.pdf | DexAggregatorUManager | unmatched — not counted | — | mentioned in finding 3.1.2 context | no |
 | spearbit-boring-vault-arctic-0.pdf | DexSwapperUManager | unmatched — not counted | — | mentioned in finding 3.1.2 context | no |
 | spearbit-boring-vault-arctic-0.pdf | TellerWithMultiAssetSupport | unmatched — not counted | — | mentioned in finding 3.1.4 context | no |
-| spearbit-boring-vault-arctic-0.pdf | BoringVault | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x15f3ee...c682eb` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spearbit-boring-vault-arctic-0.pdf | BoringVault | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x15f3ee2f609fbae0bc48e3a071d66dd917c682eb` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spearbit-boring-vault-arctic-0.pdf | AccountantWithRateProviders | unmatched — not counted | — | mentioned in finding 3.2.4 context | no |
 | spearbit-boring-vault-arctic-0.pdf | ManagerWithMerkleVerification | unmatched — not counted | — | mentioned in finding 3.2.2 context | no |
 | spearbit-boring-vault-arctic-0.pdf | MorphoBlueDecoderAndSanitizer | unmatched — not counted | — | mentioned in finding 3.2.1 context | no |
@@ -232,7 +232,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0xff3341...9cf50e` | SSuperusdZapTeller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xff33415469cf7e594d349780e4f39bd6ce9cf50e` | SSuperusdZapTeller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

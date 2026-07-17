@@ -64,7 +64,7 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AxeERC20 | token | ethereum | n/a | [`0x30ac83...1b126c`](./contracts/ethereum-1/0x30ac8317dfb0ab4263cd8db1c4f10749911b126c/) | ⚠️ Unaudited |
+| AxeERC20 | token | ethereum | n/a | [`0x30ac8317dfb0ab4263cd8db1c4f10749911b126c`](./contracts/ethereum-1/0x30ac8317dfb0ab4263cd8db1c4f10749911b126c/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -84,7 +84,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x5e54ba...80c311` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x5e54baf07e06f031fe2b45ae24f165e50b80c311` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -98,7 +98,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x30ac83...1b126c`](./contracts/ethereum-1/0x30ac8317dfb0ab4263cd8db1c4f10749911b126c/) | AxeERC20 | token | $13,264.90 | Verified native implementation with $13,264.90 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x30ac8317dfb0ab4263cd8db1c4f10749911b126c`](./contracts/ethereum-1/0x30ac8317dfb0ab4263cd8db1c4f10749911b126c/) | AxeERC20 | token | $13,264.90 | Verified native implementation with $13,264.90 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

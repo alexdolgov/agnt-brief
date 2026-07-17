@@ -52,10 +52,10 @@ The pinned logic-topography run contains 3 contract row(s) across sonic. Structu
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xff4cd8...c180f6`, chain 146)
-- ERC1967Proxy (`0x1d3c99...176bb7`, chain 146)
-- ERC1967Proxy (`0x9ef762...c895b3`, chain 146)
-- MessageBus (`0xb5b371...925308`, chain 146)
+- UnnamedContract (`0xff4cd89f549432c312c497628748d4d76ac180f6`, chain 146)
+- ERC1967Proxy (`0x1d3c99da3cef5c26f02a86dc7d685efa40176bb7`, chain 146)
+- ERC1967Proxy (`0x9ef7629f9b930168b76283add7120777b3c895b3`, chain 146)
+- MessageBus (`0xb5b371b75f9850ddd6ccb6c436db54972a925308`, chain 146)
 
 ## Contract Surface Quality
 
@@ -101,9 +101,9 @@ The pinned logic-topography run contains 3 contract row(s) across sonic. Structu
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Bridge | operational_periphery | project_anchor | own_supporting | 1 | sonic | unit-255286 | `0x9ef762...c895b3` | ⚠️ Unaudited |
-| MessageBus | operational_periphery | project_anchor | own_supporting | 0 | sonic | unit-255284 | `0xb5b371...925308` | ⚠️ Unaudited |
-| UpdateManager | governance | project_anchor | own_supporting | 1 | sonic | unit-255287 | `0x1d3c99...176bb7` | ⚠️ Unaudited |
+| Bridge | operational_periphery | project_anchor | own_supporting | 1 | sonic | unit-255286 | `0x9ef7629f9b930168b76283add7120777b3c895b3` | ⚠️ Unaudited |
+| MessageBus | operational_periphery | project_anchor | own_supporting | 0 | sonic | unit-255284 | `0xb5b371b75f9850ddd6ccb6c436db54972a925308` | ⚠️ Unaudited |
+| UpdateManager | governance | project_anchor | own_supporting | 1 | sonic | unit-255287 | `0x1d3c99da3cef5c26f02a86dc7d685efa40176bb7` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -123,7 +123,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-255285 | `0xff4cd8...c180f6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-255285 | `0xff4cd89f549432c312c497628748d4d76ac180f6` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -170,9 +170,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| sonic | `0x9ef762...c895b3` | Bridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | `0xb5b371...925308` | MessageBus | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | `0x1d3c99...176bb7` | UpdateManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0x9ef7629f9b930168b76283add7120777b3c895b3` | Bridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0xb5b371b75f9850ddd6ccb6c436db54972a925308` | MessageBus | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0x1d3c99da3cef5c26f02a86dc7d685efa40176bb7` | UpdateManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

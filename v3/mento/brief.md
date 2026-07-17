@@ -48,8 +48,8 @@ The pinned logic-topography run contains 21 contract row(s) across celo. Structu
 
 ### Forked Contracts
 
-**ActivePool** (`0xa7873f...8473b2`, chain 42220)
-Origin: liquity (`0xeb5a8c...b16afe`)
+**ActivePool** (`0xa7873f4bf2a1ea2eb20b1e8a992c4748e78473b2`, chain 42220)
+Origin: liquity (`0xeb5a8c825582965f1d84606e078620a84ab16afe`)
 Containment: 100.0% - 26 functions inherited
 Centroid audit status: pending_validation
 
@@ -57,8 +57,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**AddressesRegistry** (`0xb3136d...fe0c6e`, chain 42220)
-Origin: liquity (`0x8d733f...3aac54`)
+**AddressesRegistry** (`0xb3136dbadb14ab587ffa91545538126938fe0c6e`, chain 42220)
+Origin: liquity (`0x8d733f7ea7c23cbea7c613b6ebd845d46d3aac54`)
 Containment: 74.5% - 17 functions inherited
 Centroid audit status: pending_validation
 
@@ -74,8 +74,8 @@ Removals (removed from original):
 - MCR()
 - SCR()
 
-**BorrowerOperations** (`0x8ec9a8...943b8a`, chain 42220)
-Origin: liquity (`0x372abd...46bc65`)
+**BorrowerOperations** (`0x8ec9a81871f816f1ef007a82293703057a943b8a`, chain 42220)
+Origin: liquity (`0x372abd1810eaf23cb9d941bbe7596dfb2c46bc65`)
 Containment: 97.5% - 39 functions inherited
 Centroid audit status: pending_validation
 
@@ -84,8 +84,8 @@ Additions (unaudited): none
 Removals (removed from original):
 - SCR()
 
-**SortedTroves** (`0x46d0c9...12bf9b`, chain 42220)
-Origin: liquity (`0xa25269...3063f4`)
+**SortedTroves** (`0x46d0c9e51e05d6ff38b2a19d6310488f3112bf9b`, chain 42220)
+Origin: liquity (`0xa25269e41bd072513849f2e64ad221e84f3063f4`)
 Containment: 100.0% - 22 functions inherited
 Centroid audit status: pending_validation
 
@@ -93,8 +93,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**TroveManager** (`0xb38aef...3885c9`, chain 42220)
-Origin: liquity (`0x7bcb64...76cf5a`)
+**TroveManager** (`0xb38aef2bf4e34b997330d626ebcd7629de3885c9`, chain 42220)
+Origin: liquity (`0x7bcb64b2c9206a5b699ed43363f6f98d4776cf5a`)
 Containment: 100.0% - 36 functions inherited
 Centroid audit status: pending_validation
 
@@ -104,78 +104,78 @@ Removals (removed from original): none
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x06346c...8aaa15`, chain 42220)
-- UnnamedContract (`0x064d8b...cd74e9`, chain 42220)
-- UnnamedContract (`0x0c0712...06dddb`, chain 42220)
-- UnnamedContract (`0x0feba7...53228d`, chain 42220)
-- UnnamedContract (`0x105d4a...c20d7b`, chain 42220)
-- UnnamedContract (`0x1b78f6...143e37`, chain 42220)
-- UnnamedContract (`0x247cb6...211663`, chain 42220)
-- UnnamedContract (`0x2d5d7e...e8c1a5`, chain 42220)
-- UnnamedContract (`0x303ed1...24ab39`, chain 42220)
-- UnnamedContract (`0x34c5bb...485d73`, chain 42220)
-- UnnamedContract (`0x3efad8...c5a2d0`, chain 42220)
-- UnnamedContract (`0x420fbd...dee148`, chain 42220)
-- UnnamedContract (`0x4255cf...853806`, chain 42220)
-- UnnamedContract (`0x434563...d8850e`, chain 42220)
-- UnnamedContract (`0x456a3d...53b0d0`, chain 42220)
-- UnnamedContract (`0x462fe0...aaa19e`, chain 42220)
-- UnnamedContract (`0x47036d...a59852`, chain 42220)
-- UnnamedContract (`0x49349f...f9b5d9`, chain 42220)
-- UnnamedContract (`0x4b6214...ce304a`, chain 42220)
-- UnnamedContract (`0x4c3585...410bf6`, chain 42220)
-- UnnamedContract (`0x4dbc33...87bf68`, chain 42220)
-- UnnamedContract (`0x4e78bd...dcb985`, chain 42220)
-- UnnamedContract (`0x70536e...f0de51`, chain 42220)
-- UnnamedContract (`0x717550...f492f9`, chain 42220)
-- UnnamedContract (`0x73f93d...f29a08`, chain 42220)
-- UnnamedContract (`0x765de8...b1282a`, chain 42220)
-- UnnamedContract (`0x777a82...6b4cad`, chain 42220)
-- UnnamedContract (`0x7b2f7d...10adf6`, chain 42220)
-- UnnamedContract (`0x8124b6...219311`, chain 42220)
-- UnnamedContract (`0x815795...74c318`, chain 42220)
-- UnnamedContract (`0x890db8...6e2147`, chain 42220)
-- UnnamedContract (`0x8a567e...4041ea`, chain 42220)
-- UnnamedContract (`0x8c0014...3fcb56`, chain 42220)
-- UnnamedContract (`0x8cb051...b77f30`, chain 42220)
-- UnnamedContract (`0x9380fa...ed4eb9`, chain 42220)
-- UnnamedContract (`0xa0fb8b...ae4f0b`, chain 42220)
-- UnnamedContract (`0xa3d754...58fd65`, chain 42220)
-- UnnamedContract (`0xa472fb...c4383a`, chain 42220)
-- UnnamedContract (`0xa849b4...07613b`, chain 42220)
-- UnnamedContract (`0xaa6a9b...e31823`, chain 42220)
-- UnnamedContract (`0xb285d4...3ddd2d`, chain 42220)
-- UnnamedContract (`0xb55a79...ee131d`, chain 42220)
-- UnnamedContract (`0xb910a7...671cdf`, chain 42220)
-- UnnamedContract (`0xc16d23...1df5ff`, chain 42220)
-- UnnamedContract (`0xc1b767...256059`, chain 42220)
-- UnnamedContract (`0xc45ecf...892e20`, chain 42220)
-- UnnamedContract (`0xcc5bb0...872a8a`, chain 42220)
-- UnnamedContract (`0xccf663...a40746`, chain 42220)
-- UnnamedContract (`0xcf7031...5b4ced`, chain 42220)
-- UnnamedContract (`0xd8763c...d6ca73`, chain 42220)
-- UnnamedContract (`0xdebed1...7550fb`, chain 42220)
-- UnnamedContract (`0xe2702b...a76f71`, chain 42220)
-- UnnamedContract (`0xe8537a...ab4787`, chain 42220)
-- UnnamedContract (`0xefb849...7b7b33`, chain 42220)
-- UnnamedContract (`0xfaea5f...3c7313`, chain 42220)
-- UnnamedContract (`0xfd9651...93b57d`, chain 42220)
-- BiPoolManagerProxy (`0x22d9db...4ec901`, chain 42220)
-- CollateralRegistry (`0x1bedd4...a605fb`, chain 42220)
-- CollSurplusPool (`0xfff48e...09d4b6`, chain 42220)
-- DefaultPool (`0x95191e...8d0047`, chain 42220)
-- GasPool (`0x8b61f9...79817b`, chain 42220)
-- HintHelpers (`0xafd741...374d82`, chain 42220)
-- MarketHoursBreaker (`0x0a18b8...4e0daf`, chain 42220)
-- MentoToken (`0x7ff62f...77cfb6`, chain 42220)
-- MultiTroveGetter (`0x78fd33...f8327f`, chain 42220)
-- ReserveTroveFactory (`0x028594...9519e1`, chain 42220)
-- Router (`0x486184...f9b6f6`, chain 42220)
-- StableTokenCADProxy (`0xff4ab1...2b6325`, chain 42220)
-- StableTokenV3 (`0x4b9b0e...e7a2a2`, chain 42220)
-- TransparentUpgradeableProxy (`0x001bb6...80279c`, chain 42220)
-- TroveNFT (`0x46273a...72c6b6`, chain 42220)
-- VirtualPoolFactory (`0x22abd4...e5acb3`, chain 42220)
+- UnnamedContract (`0x06346c0fab682dbde9f245d2d84677592e8aaa15`, chain 42220)
+- UnnamedContract (`0x064d8bcc79711cf51df7ca0a7fe531a271cd74e9`, chain 42220)
+- UnnamedContract (`0x0c07126d0cb30e66ef7553cc7c37143b4f06dddb`, chain 42220)
+- UnnamedContract (`0x0feba760d93423d127de1b6abecdb60e5253228d`, chain 42220)
+- UnnamedContract (`0x105d4a9306d2e55a71d2eb95b81553ae1dc20d7b`, chain 42220)
+- UnnamedContract (`0x1b78f6acd05e7bcb00f74863bfd8a7c264143e37`, chain 42220)
+- UnnamedContract (`0x247cb6ecf21bdd2bc29d726cccc8d2f066211663`, chain 42220)
+- UnnamedContract (`0x2d5d7e2767c5493610cae84e0ab7f9d2cce8c1a5`, chain 42220)
+- UnnamedContract (`0x303ed1df62fa067659b586ebee8de0ece824ab39`, chain 42220)
+- UnnamedContract (`0x34c5bb4113cd6ff681a82a8e8cffb3b587485d73`, chain 42220)
+- UnnamedContract (`0x3efad8f997f705675924470ec84677db68c5a2d0`, chain 42220)
+- UnnamedContract (`0x420fbdb50dadf0286144bff91ed62a6893dee148`, chain 42220)
+- UnnamedContract (`0x4255cf38e51516766180b33122029a88cb853806`, chain 42220)
+- UnnamedContract (`0x434563b0604be100f04b7ae485bcafe3c9d8850e`, chain 42220)
+- UnnamedContract (`0x456a3d042c0dbd3db53d5489e98dfb038553b0d0`, chain 42220)
+- UnnamedContract (`0x462fe04b4fd719cbd04c0310365d421d02aaa19e`, chain 42220)
+- UnnamedContract (`0x47036d78bb3169b4f5560dd77bf93f4412a59852`, chain 42220)
+- UnnamedContract (`0x49349f92d2b17d491e42c8fdb02d19f072f9b5d9`, chain 42220)
+- UnnamedContract (`0x4b621443c1c749ef5252e8aee158a52b5ece304a`, chain 42220)
+- UnnamedContract (`0x4c35853a3b4e647fd266f4de678dcc8fec410bf6`, chain 42220)
+- UnnamedContract (`0x4dbc33b3aba78475a5aa4bc7a5b11445d387bf68`, chain 42220)
+- UnnamedContract (`0x4e78bd9565341eabe99cdc024acb044d9bdcb985`, chain 42220)
+- UnnamedContract (`0x70536e44d1d9238ba8e35ffe63bb388a63f0de51`, chain 42220)
+- UnnamedContract (`0x7175504c455076f15c04a2f90a8e352281f492f9`, chain 42220)
+- UnnamedContract (`0x73f93dcc49cb8a239e2032663e9475dd5ef29a08`, chain 42220)
+- UnnamedContract (`0x765de816845861e75a25fca122bb6898b8b1282a`, chain 42220)
+- UnnamedContract (`0x777a8255ca72412f0d706dc03c9d1987306b4cad`, chain 42220)
+- UnnamedContract (`0x7b2f7d11eabd576782f77bf2cca46a853410adf6`, chain 42220)
+- UnnamedContract (`0x8124b66595ff4e79b7f0c1b1101afa501d219311`, chain 42220)
+- UnnamedContract (`0x815795c30d0758a297b08cd4e0643620c974c318`, chain 42220)
+- UnnamedContract (`0x890db8a597940165901372dd7db61c9f246e2147`, chain 42220)
+- UnnamedContract (`0x8a567e2ae79ca692bd748ab832081c45de4041ea`, chain 42220)
+- UnnamedContract (`0x8c0014afe032e4574481d8934504100bf23fcb56`, chain 42220)
+- UnnamedContract (`0x8cb0518a0510ab62450f79f3cd9ee0cbddb77f30`, chain 42220)
+- UnnamedContract (`0x9380fa34fd9e4fd14c06305fd7b6199089ed4eb9`, chain 42220)
+- UnnamedContract (`0xa0fb8b16ce6af3634ff9f3f4f40e49e1c1ae4f0b`, chain 42220)
+- UnnamedContract (`0xa3d754445f8c3a8134f64467826352885558fd65`, chain 42220)
+- UnnamedContract (`0xa472fbbf4b890a54381977ac392bdf82eec4383a`, chain 42220)
+- UnnamedContract (`0xa849b475fe5a4b5c9c3280152c7a1945b907613b`, chain 42220)
+- UnnamedContract (`0xaa6a9b01d02ddb3db718669a83621c97c2e31823`, chain 42220)
+- UnnamedContract (`0xb285d4c7133d6f27bfb29224fb0d22e7ec3ddd2d`, chain 42220)
+- UnnamedContract (`0xb55a79f398e759e43c95b979163f30ec87ee131d`, chain 42220)
+- UnnamedContract (`0xb910a75f9a96f1f0fafeb2e3f823b3e030671cdf`, chain 42220)
+- UnnamedContract (`0xc16d23e4789e2b214d71c1df7820a4ddab1df5ff`, chain 42220)
+- UnnamedContract (`0xc1b767756f582d124e76bb3e246f31e6ab256059`, chain 42220)
+- UnnamedContract (`0xc45ecf20f3cd864b32d9794d6f76814ae8892e20`, chain 42220)
+- UnnamedContract (`0xcc5bb0ba252082213ce1303cbfba8d56cd872a8a`, chain 42220)
+- UnnamedContract (`0xccf663b1ff11028f0b19058d0f7b674004a40746`, chain 42220)
+- UnnamedContract (`0xcf7031937f49f348c55930353fd3bc3aa15b4ced`, chain 42220)
+- UnnamedContract (`0xd8763cba276a3738e6de85b4b3bf5fded6d6ca73`, chain 42220)
+- UnnamedContract (`0xdebed1f6f6ce9f6e73aa25f95acbffe2397550fb`, chain 42220)
+- UnnamedContract (`0xe2702bd97ee33c88c8f6f92da3b733608aa76f71`, chain 42220)
+- UnnamedContract (`0xe8537a3d056da446677b9e9d6c5db704eaab4787`, chain 42220)
+- UnnamedContract (`0xefb84935239dacdecf7c5ba76d8de40b077b7b33`, chain 42220)
+- UnnamedContract (`0xfaea5f3404bba20d3cc2f8c4b0a888f55a3c7313`, chain 42220)
+- UnnamedContract (`0xfd9651862bc1965349e92073152112289393b57d`, chain 42220)
+- BiPoolManagerProxy (`0x22d9db95e6ae61c104a7b6f6c78d7993b94ec901`, chain 42220)
+- CollateralRegistry (`0x1bedd4334335522b0a0e8e610d326b16b0a605fb`, chain 42220)
+- CollSurplusPool (`0xfff48ee3bd2d534e35b54d538de30a9d7709d4b6`, chain 42220)
+- DefaultPool (`0x95191e52d01ec060cea753cdadfeeb07b78d0047`, chain 42220)
+- GasPool (`0x8b61f941d89560c7d8b3d595f44f7fd97d79817b`, chain 42220)
+- HintHelpers (`0xafd741674bc4aa965a788dace5b0434fd4374d82`, chain 42220)
+- MarketHoursBreaker (`0x0a18b8e7338ef8d6025529257aa5ccd5a14e0daf`, chain 42220)
+- MentoToken (`0x7ff62f59e3e89ea34163ea1458eebcc81177cfb6`, chain 42220)
+- MultiTroveGetter (`0x78fd33d2bce0389cf41e15947b0eb0ce9df8327f`, chain 42220)
+- ReserveTroveFactory (`0x02859465dcc7d7f2bee183fc7fac78544c9519e1`, chain 42220)
+- Router (`0x4861840c2efb2b98312b0ae34d86fd73e8f9b6f6`, chain 42220)
+- StableTokenCADProxy (`0xff4ab19391af240c311c54200a492233052b6325`, chain 42220)
+- StableTokenV3 (`0x4b9b0e94197b7b2b11d311239e1420106ce7a2a2`, chain 42220)
+- TransparentUpgradeableProxy (`0x001bb66636dcd149a1a2ba8c50e408bddd80279c`, chain 42220)
+- TroveNFT (`0x46273a5792013973b64a42e760e6f81d0472c6b6`, chain 42220)
+- VirtualPoolFactory (`0x22abd4adf6aab38ac1022352d496a07acee5acb3`, chain 42220)
 
 ## Contract Surface Quality
 
@@ -222,44 +222,44 @@ Removals (removed from original): none
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ActivePool | core_logic | project_anchor | own_supporting | 0 | celo | unit-389143 | `0xa7873f...8473b2` | ✅ Audited |
-| AddressesRegistry | registry | project_anchor | own_supporting | 0 | celo | unit-389148 | `0xb3136d...fe0c6e` | ✅ Audited |
-| BiPoolManager | core_logic | project_anchor | own_supporting | 1 | celo | unit-389168 | `0x22d9db...4ec901` | ✅ Audited |
-| BorrowerOperations | core_logic | project_anchor | own_supporting | 0 | celo | unit-389137 | `0x8ec9a8...943b8a` | ✅ Audited |
-| CollateralRegistry | registry | project_anchor | own_supporting | 0 | celo | unit-389100 | `0x1bedd4...a605fb` | ✅ Audited |
-| CollSurplusPool | core_logic | project_anchor | own_supporting | 0 | celo | unit-389166 | `0xfff48e...09d4b6` | ✅ Audited |
-| DefaultPool | core_logic | project_anchor | own_supporting | 0 | celo | unit-389139 | `0x95191e...8d0047` | ✅ Audited |
-| GasPool | core_logic | project_anchor | own_supporting | 0 | celo | unit-389134 | `0x8b61f9...79817b` | ✅ Audited |
-| Locking | unknown | project_anchor | own_supporting | 1 | celo | unit-389167 | `0x001bb6...80279c` | ✅ Audited |
-| MarketHoursBreaker | unknown | project_anchor | own_supporting | 0 | celo | unit-389095 | `0x0a18b8...4e0daf` | ✅ Audited |
-| MentoToken | token | project_anchor | own_supporting | 0 | celo | unit-389129 | `0x7ff62f...77cfb6` | ✅ Audited |
-| Router | adapter | project_anchor | own_supporting | 0 | celo | unit-389115 | `0x486184...f9b6f6` | ✅ Audited |
-| SortedTroves | unknown | project_anchor | own_supporting | 0 | celo | unit-389113 | `0x46d0c9...12bf9b` | ✅ Audited |
-| StableTokenV3 | token | project_anchor | own_supporting | 0 | celo | unit-389118 | `0x4b9b0e...e7a2a2` | ✅ Audited |
-| TroveManager | governance | project_anchor | own_supporting | 0 | celo | unit-389149 | `0xb38aef...3885c9` | ✅ Audited |
-| TroveNFT | token | project_anchor | own_supporting | 0 | celo | unit-389111 | `0x46273a...72c6b6` | ✅ Audited |
-| VirtualPoolFactory | registry | project_anchor | own_supporting | 0 | celo | unit-389101 | `0x22abd4...e5acb3` | ✅ Audited |
+| ActivePool | core_logic | project_anchor | own_supporting | 0 | celo | unit-389143 | `0xa7873f4bf2a1ea2eb20b1e8a992c4748e78473b2` | ✅ Audited |
+| AddressesRegistry | registry | project_anchor | own_supporting | 0 | celo | unit-389148 | `0xb3136dbadb14ab587ffa91545538126938fe0c6e` | ✅ Audited |
+| BiPoolManager | core_logic | project_anchor | own_supporting | 1 | celo | unit-389168 | `0x22d9db95e6ae61c104a7b6f6c78d7993b94ec901` | ✅ Audited |
+| BorrowerOperations | core_logic | project_anchor | own_supporting | 0 | celo | unit-389137 | `0x8ec9a81871f816f1ef007a82293703057a943b8a` | ✅ Audited |
+| CollateralRegistry | registry | project_anchor | own_supporting | 0 | celo | unit-389100 | `0x1bedd4334335522b0a0e8e610d326b16b0a605fb` | ✅ Audited |
+| CollSurplusPool | core_logic | project_anchor | own_supporting | 0 | celo | unit-389166 | `0xfff48ee3bd2d534e35b54d538de30a9d7709d4b6` | ✅ Audited |
+| DefaultPool | core_logic | project_anchor | own_supporting | 0 | celo | unit-389139 | `0x95191e52d01ec060cea753cdadfeeb07b78d0047` | ✅ Audited |
+| GasPool | core_logic | project_anchor | own_supporting | 0 | celo | unit-389134 | `0x8b61f941d89560c7d8b3d595f44f7fd97d79817b` | ✅ Audited |
+| Locking | unknown | project_anchor | own_supporting | 1 | celo | unit-389167 | `0x001bb66636dcd149a1a2ba8c50e408bddd80279c` | ✅ Audited |
+| MarketHoursBreaker | unknown | project_anchor | own_supporting | 0 | celo | unit-389095 | `0x0a18b8e7338ef8d6025529257aa5ccd5a14e0daf` | ✅ Audited |
+| MentoToken | token | project_anchor | own_supporting | 0 | celo | unit-389129 | `0x7ff62f59e3e89ea34163ea1458eebcc81177cfb6` | ✅ Audited |
+| Router | adapter | project_anchor | own_supporting | 0 | celo | unit-389115 | `0x4861840c2efb2b98312b0ae34d86fd73e8f9b6f6` | ✅ Audited |
+| SortedTroves | unknown | project_anchor | own_supporting | 0 | celo | unit-389113 | `0x46d0c9e51e05d6ff38b2a19d6310488f3112bf9b` | ✅ Audited |
+| StableTokenV3 | token | project_anchor | own_supporting | 0 | celo | unit-389118 | `0x4b9b0e94197b7b2b11d311239e1420106ce7a2a2` | ✅ Audited |
+| TroveManager | governance | project_anchor | own_supporting | 0 | celo | unit-389149 | `0xb38aef2bf4e34b997330d626ebcd7629de3885c9` | ✅ Audited |
+| TroveNFT | token | project_anchor | own_supporting | 0 | celo | unit-389111 | `0x46273a5792013973b64a42e760e6f81d0472c6b6` | ✅ Audited |
+| VirtualPoolFactory | registry | project_anchor | own_supporting | 0 | celo | unit-389101 | `0x22abd4adf6aab38ac1022352d496a07acee5acb3` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (16)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Accounts | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 3 deployments: celo `0x0fe151...67ef53`; celo `0x565677...e2b98c`; celo `0xbac4a3...05f603` | ⚠️ Unaudited |
-| AttestationsProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 18 deployments: celo `0x2496fd...8e9a3d`; celo `0x252b03...5f1649`; celo `0x30b3c1...0595ac`; celo `0x3a4936...edb3f4`; celo `0x488deb...6c8fa6`; celo `0x4a241b...877da9`; celo `0x65e25c...799411`; celo `0x673f19...74eecb`; celo `0x68da81...504785`; celo `0x93d52a...a0ecf7`; celo `0xb53ce2...d8d96a`; celo `0xc834e7...359afd`; celo `0xcc6517...9e8fbe`; celo `0xdadd05...6f9303`; celo `0xdd944d...99f451`; celo `0xeaaf55...bc9149`; celo `0xf114c7...f5406a`; celo `0xff2ba5...c9fd2d` | ⚠️ Unaudited |
-| Election | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 2 deployments: celo `0x169c94...3009bc`; celo `0x3db69c...9f6f28` | ⚠️ Unaudited |
-| EpochManager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x91e35c...dfc535` | ⚠️ Unaudited |
-| EpochRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 2 deployments: celo `0x4cadba...562aba`; celo `0x9dc549...f050d9` | ⚠️ Unaudited |
-| GnosisSafeL2 | governance | non_address_book | standard_proxy_or_library (excluded) | 1 | celo | n/a | `0x876477...9e9ae1` | ⚠️ Unaudited |
-| GoldToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 2 deployments: celo `0x04a182...c7edb2`; celo `0xb16516...b2c19d` | ⚠️ Unaudited |
-| Governance | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 2 deployments: celo `0x40bca4...1824e6`; celo `0xf51d27...7a215d` | ⚠️ Unaudited |
-| GovernanceSlasher | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xb1b7b6...c51e9e` | ⚠️ Unaudited |
-| HintHelpers | periphery | project_anchor | own_supporting | 0 | celo | unit-389146 | `0xafd741...374d82` | ⚠️ Unaudited |
-| IntegerSortedLinkedList | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xa86051...0d047c` | ⚠️ Unaudited |
-| MultiSig | governance | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 2 deployments: celo `0x68e231...ee3903`; celo `0xad52b8...14e7fc` | ⚠️ Unaudited |
-| MultiTroveGetter | unknown | project_anchor | own_supporting | 0 | celo | unit-389127 | `0x78fd33...f8327f` | ⚠️ Unaudited |
-| ReserveTroveFactory | registry | project_anchor | own_supporting | 0 | celo | unit-389092 | `0x028594...9519e1` | ⚠️ Unaudited |
-| SafeProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xd3d2e5...2137e1` | ⚠️ Unaudited |
-| StableTokenCADProxy | token | project_anchor | own_supporting | 0 | celo | unit-389165 | `0xff4ab1...2b6325` | ⚠️ Unaudited |
+| Accounts | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 3 deployments: celo `0x0fe15138b6ecf2b9cc3b2bc12fe9671d4267ef53`; celo `0x56567727a0da93ee0beba9400af7eb96dae2b98c`; celo `0xbac4a39ecba3c0f2e5caf30f090f094f6405f603` | ⚠️ Unaudited |
+| AttestationsProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 18 deployments: celo `0x2496fda4b928e8cf799ac04ea79861ac828e9a3d`; celo `0x252b037054e1394cd5e4a92a76f1fbff925f1649`; celo `0x30b3c1265262d7bda066357a4678cb2d660595ac`; celo `0x3a493665dc7a609d94b87adf0af51bf8d2edb3f4`; celo `0x488debd4b7646a44cac389dae4c6b55ad26c8fa6`; celo `0x4a241b9df1b54f983fd0dc094bc400fc93877da9`; celo `0x65e25c46cb80ae5f8118d6bcfa3b69d969799411`; celo `0x673f19caa81ae317aa9acdcb3a8b0593c174eecb`; celo `0x68da817fda9f7538eb75792536b5c5c7b5504785`; celo `0x93d52a66e6300baadc91b194a246fc349ba0ecf7`; celo `0xb53ce2e9c5222049a4b374bb404b0d5f92d8d96a`; celo `0xc834e7c2252bb1b9df90a7f161bc0877dc359afd`; celo `0xcc651797284339852a38f66c31fafa8ffe9e8fbe`; celo `0xdadd05185e053f7ccd308852237b1aa57a6f9303`; celo `0xdd944d35b87dfdfb8aa249a434ecc2c01d99f451`; celo `0xeaaf5597cd2a86d9933d38bc1482244078bc9149`; celo `0xf114c70fda914a96e06afdac06fe19fef8f5406a`; celo `0xff2ba5b9d1a97e872a451e43a0e28a2a2bc9fd2d` | ⚠️ Unaudited |
+| Election | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 2 deployments: celo `0x169c946c9f70094b8ad74ee16477f27e713009bc`; celo `0x3db69cf778dfa1d60145731d9ce09a674c9f6f28` | ⚠️ Unaudited |
+| EpochManager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x91e35ccea07a15af477e189c1e2bd12569dfc535` | ⚠️ Unaudited |
+| EpochRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 2 deployments: celo `0x4cadba6ae9984b408b492a3f8f451e1bb3562aba`; celo `0x9dc549eeb4fca1b2c00e55aa771144321ff050d9` | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | non_address_book | standard_proxy_or_library (excluded) | 1 | celo | n/a | `0x87647780180b8f55980c7d3ffefe08a9b29e9ae1` | ⚠️ Unaudited |
+| GoldToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 2 deployments: celo `0x04a182a01a303a4f1333a5ce1213ae54f0c7edb2`; celo `0xb165169b8cccc849108d81d094d6f49324b2c19d` | ⚠️ Unaudited |
+| Governance | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 2 deployments: celo `0x40bca46d9f7db71ecaa1e76655c3038a5a1824e6`; celo `0xf51d27777e5b2b910e0caad467ae945e4b7a215d` | ⚠️ Unaudited |
+| GovernanceSlasher | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xb1b7b6af5bb6b527094c7cc5ce8bab32f4c51e9e` | ⚠️ Unaudited |
+| HintHelpers | periphery | project_anchor | own_supporting | 0 | celo | unit-389146 | `0xafd741674bc4aa965a788dace5b0434fd4374d82` | ⚠️ Unaudited |
+| IntegerSortedLinkedList | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xa86051f29c45218b5f6cd121ebafb690660d047c` | ⚠️ Unaudited |
+| MultiSig | governance | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 2 deployments: celo `0x68e231b208d82dedba0cf7d97db0d3bf9bee3903`; celo `0xad52b8aa73b45b0872fe05d5de2c10123414e7fc` | ⚠️ Unaudited |
+| MultiTroveGetter | unknown | project_anchor | own_supporting | 0 | celo | unit-389127 | `0x78fd33d2bce0389cf41e15947b0eb0ce9df8327f` | ⚠️ Unaudited |
+| ReserveTroveFactory | registry | project_anchor | own_supporting | 0 | celo | unit-389092 | `0x02859465dcc7d7f2bee183fc7fac78544c9519e1` | ⚠️ Unaudited |
+| SafeProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xd3d2e5c5af667da817b2d752d86c8f40c22137e1` | ⚠️ Unaudited |
+| StableTokenCADProxy | token | project_anchor | own_supporting | 0 | celo | unit-389165 | `0xff4ab19391af240c311c54200a492233052b6325` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -279,84 +279,84 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x03e39a...7d1089` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389093 | `0x06346c...8aaa15` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389094 | `0x064d8b...cd74e9` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x066f67...bd25f2` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x08a4b5...f0bd29` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389096 | `0x0c0712...06dddb` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x0cb6fd...42422f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389097 | `0x0feba7...53228d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389098 | `0x105d4a...c20d7b` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x120c00...49e892` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389099 | `0x1b78f6...143e37` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x1e3d01...42ba5f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389102 | `0x247cb6...211663` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389103 | `0x2d5d7e...e8c1a5` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x2dad1c...64f261` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389104 | `0x303ed1...24ab39` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x30584e...9f3f7d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389105 | `0x34c5bb...485d73` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389106 | `0x3efad8...c5a2d0` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389107 | `0x420fbd...dee148` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389108 | `0x4255cf...853806` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389109 | `0x434563...d8850e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389110 | `0x456a3d...53b0d0` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389112 | `0x462fe0...aaa19e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389114 | `0x47036d...a59852` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389116 | `0x49349f...f9b5d9` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389117 | `0x4b6214...ce304a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389119 | `0x4c3585...410bf6` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389120 | `0x4dbc33...87bf68` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389121 | `0x4e78bd...dcb985` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x4efa94...8bc05e` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x55f3b4...ecb381` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x65534a...043372` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389122 | `0x70536e...f0de51` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389123 | `0x717550...f492f9` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x72306f...72c33d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389124 | `0x73f93d...f29a08` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389125 | `0x765de8...b1282a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389126 | `0x777a82...6b4cad` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389128 | `0x7b2f7d...10adf6` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389130 | `0x8124b6...219311` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389131 | `0x815795...74c318` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389132 | `0x890db8...6e2147` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389133 | `0x8a567e...4041ea` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x8bc96d...272e59` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389135 | `0x8c0014...3fcb56` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389136 | `0x8cb051...b77f30` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389138 | `0x9380fa...ed4eb9` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389140 | `0xa0fb8b...ae4f0b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389141 | `0xa3d754...58fd65` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389142 | `0xa472fb...c4383a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389144 | `0xa849b4...07613b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389145 | `0xaa6a9b...e31823` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389147 | `0xb285d4...3ddd2d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389150 | `0xb55a79...ee131d` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xb658b5...be2b54` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xb7feac...ff582a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389151 | `0xb910a7...671cdf` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xb98746...ae9feb` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xbcb789...c3a567` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389152 | `0xc16d23...1df5ff` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389153 | `0xc1b767...256059` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389154 | `0xc45ecf...892e20` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xc682c3...67330d` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xc99d54...dd411e` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xcb32ea...d10f3f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389155 | `0xcc5bb0...872a8a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389156 | `0xccf663...a40746` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389157 | `0xcf7031...5b4ced` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xd0716c...015c3f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389158 | `0xd8763c...d6ca73` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xddf776...0b27fe` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389159 | `0xdebed1...7550fb` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389160 | `0xe2702b...a76f71` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389161 | `0xe8537a...ab4787` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389162 | `0xefb849...7b7b33` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389163 | `0xfaea5f...3c7313` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389164 | `0xfd9651...93b57d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x03e39a4747a5ad250cefb64650194228a37d1089` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389093 | `0x06346c0fab682dbde9f245d2d84677592e8aaa15` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389094 | `0x064d8bcc79711cf51df7ca0a7fe531a271cd74e9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x066f672c03347a24ee3f52d1f184f04f7abd25f2` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x08a4b5bc1b5adef0a283c8f0185ded6169f0bd29` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389096 | `0x0c07126d0cb30e66ef7553cc7c37143b4f06dddb` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x0cb6fd1a8fef2a7ebb29b6d5083742a35b42422f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389097 | `0x0feba760d93423d127de1b6abecdb60e5253228d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389098 | `0x105d4a9306d2e55a71d2eb95b81553ae1dc20d7b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x120c00afa9052583402ea361f43d9683c849e892` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389099 | `0x1b78f6acd05e7bcb00f74863bfd8a7c264143e37` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x1e3d01fe61d1bc29a34106c682a79b1c4142ba5f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389102 | `0x247cb6ecf21bdd2bc29d726cccc8d2f066211663` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389103 | `0x2d5d7e2767c5493610cae84e0ab7f9d2cce8c1a5` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x2dad1cd6b9597fd2b4f421aae872c4f66d64f261` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389104 | `0x303ed1df62fa067659b586ebee8de0ece824ab39` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x30584e0bd69e6224b256b5a9cbbec8b6c09f3f7d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389105 | `0x34c5bb4113cd6ff681a82a8e8cffb3b587485d73` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389106 | `0x3efad8f997f705675924470ec84677db68c5a2d0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389107 | `0x420fbdb50dadf0286144bff91ed62a6893dee148` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389108 | `0x4255cf38e51516766180b33122029a88cb853806` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389109 | `0x434563b0604be100f04b7ae485bcafe3c9d8850e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389110 | `0x456a3d042c0dbd3db53d5489e98dfb038553b0d0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389112 | `0x462fe04b4fd719cbd04c0310365d421d02aaa19e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389114 | `0x47036d78bb3169b4f5560dd77bf93f4412a59852` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389116 | `0x49349f92d2b17d491e42c8fdb02d19f072f9b5d9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389117 | `0x4b621443c1c749ef5252e8aee158a52b5ece304a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389119 | `0x4c35853a3b4e647fd266f4de678dcc8fec410bf6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389120 | `0x4dbc33b3aba78475a5aa4bc7a5b11445d387bf68` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389121 | `0x4e78bd9565341eabe99cdc024acb044d9bdcb985` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x4efa94f406f528ec092b896ea8b0ddffe38bc05e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x55f3b4d42c0e4371a6f84d46db6e3b328eecb381` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x65534a1cedacc6ef812f751b459db7660e043372` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389122 | `0x70536e44d1d9238ba8e35ffe63bb388a63f0de51` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389123 | `0x7175504c455076f15c04a2f90a8e352281f492f9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x72306ff91e79054e35a785d3831b215dd072c33d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389124 | `0x73f93dcc49cb8a239e2032663e9475dd5ef29a08` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389125 | `0x765de816845861e75a25fca122bb6898b8b1282a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389126 | `0x777a8255ca72412f0d706dc03c9d1987306b4cad` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389128 | `0x7b2f7d11eabd576782f77bf2cca46a853410adf6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389130 | `0x8124b66595ff4e79b7f0c1b1101afa501d219311` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389131 | `0x815795c30d0758a297b08cd4e0643620c974c318` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389132 | `0x890db8a597940165901372dd7db61c9f246e2147` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389133 | `0x8a567e2ae79ca692bd748ab832081c45de4041ea` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x8bc96d9993c7613fe9a3abe00c3e302126272e59` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389135 | `0x8c0014afe032e4574481d8934504100bf23fcb56` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389136 | `0x8cb0518a0510ab62450f79f3cd9ee0cbddb77f30` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389138 | `0x9380fa34fd9e4fd14c06305fd7b6199089ed4eb9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389140 | `0xa0fb8b16ce6af3634ff9f3f4f40e49e1c1ae4f0b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389141 | `0xa3d754445f8c3a8134f64467826352885558fd65` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389142 | `0xa472fbbf4b890a54381977ac392bdf82eec4383a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389144 | `0xa849b475fe5a4b5c9c3280152c7a1945b907613b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389145 | `0xaa6a9b01d02ddb3db718669a83621c97c2e31823` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389147 | `0xb285d4c7133d6f27bfb29224fb0d22e7ec3ddd2d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389150 | `0xb55a79f398e759e43c95b979163f30ec87ee131d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xb658b5de9d6711a0ca35d1e8d688e09c67be2b54` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xb7feac258e081415c84b7f4b1092057610ff582a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389151 | `0xb910a75f9a96f1f0fafeb2e3f823b3e030671cdf` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xb98746b9b2f00aa17e801a679323a5657bae9feb` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xbcb789aabd2bf7be0a4a6674676b49787cc3a567` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389152 | `0xc16d23e4789e2b214d71c1df7820a4ddab1df5ff` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389153 | `0xc1b767756f582d124e76bb3e246f31e6ab256059` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389154 | `0xc45ecf20f3cd864b32d9794d6f76814ae8892e20` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xc682c381ceccbffd82b25f38e518f5b50b67330d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xc99d541743e0570f2eebb76ac435de0c8edd411e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xcb32eaf22ee39fc5f8592f1720d0010150d10f3f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389155 | `0xcc5bb0ba252082213ce1303cbfba8d56cd872a8a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389156 | `0xccf663b1ff11028f0b19058d0f7b674004a40746` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389157 | `0xcf7031937f49f348c55930353fd3bc3aa15b4ced` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xd0716cb2023cf22cff63a632b50c677083015c3f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389158 | `0xd8763cba276a3738e6de85b4b3bf5fded6d6ca73` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xddf776d8069d1684dbc7ca024cc5671a8a0b27fe` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389159 | `0xdebed1f6f6ce9f6e73aa25f95acbffe2397550fb` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389160 | `0xe2702bd97ee33c88c8f6f92da3b733608aa76f71` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389161 | `0xe8537a3d056da446677b9e9d6c5db704eaab4787` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389162 | `0xefb84935239dacdecf7c5ba76d8de40b077b7b33` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389163 | `0xfaea5f3404bba20d3cc2f8c4b0a888f55a3c7313` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389164 | `0xfd9651862bc1965349e92073152112289393b57d` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -422,7 +422,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 |---|---|---|---|---|---|
 | 2024-04-11-cyfrin-wormhole-evm-ntt.pdf | DummyToken | unmatched — not counted | — | — | no |
 | 2024-04-11-cyfrin-wormhole-evm-ntt.pdf | DummyTokenMintAndBurn | unmatched — not counted | — | — | no |
-| 2024-04-11-cyfrin-wormhole-evm-ntt.pdf | Governance | own contract | TroveManager (selected) `0xb38aef...3885c9` — deployed 2026-03-03 23:15:25+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2024-04-11-cyfrin-wormhole-evm-ntt.pdf | Governance | own contract | TroveManager (selected) `0xb38aef2bf4e34b997330d626ebcd7629de3885c9` — deployed 2026-03-03 23:15:25+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2024-04-11-cyfrin-wormhole-evm-ntt.pdf | INTTManagerEvents | unmatched — not counted | — | — | no |
 | 2024-04-11-cyfrin-wormhole-evm-ntt.pdf | IRateLimiterEvents | unmatched — not counted | — | — | no |
 | 2024-04-11-cyfrin-wormhole-evm-ntt.pdf | ITransceiver | unmatched — not counted | — | — | no |
@@ -450,66 +450,66 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | 2025-04-18-wormhole-ottersec-ntt-v3.pdf | sui-ntt | unmatched — not counted | — | Scope section: 'sui-ntt Sui NTT enables secure, modular cross-chain transfers...' | no |
 | 2025-05-05-wormhole-ottersec-ntt-v3-solana.pdf | example-native-token-transfers | unmatched — not counted | — | listed in scope as the program name | no |
 | 2025-08-22-ottersec-sui-ntt.pdf | sui-ntt | unmatched — not counted | — | Scope section: 'Name: sui-ntt, Description: Sui NTT enables secure, modular cross-chain transfers...' | no |
-| www.chainsecurity.com/security-audit/mento-core-v3 | CDPLiquidityStrategy | own contract | 0x4e78bd… (selected) `0x4e78bd...dcb985` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| ChainSecurity_Mento_MentoCoreV3_Audit.pdf | CDPLiquidityStrategy | own contract | 0x4e78bd… (selected) `0x4e78bd...dcb985` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| www.chainsecurity.com/security-audit/mento-core-v3 | CDPLiquidityStrategy | own contract | 0x4e78bd… (selected) `0x4e78bd9565341eabe99cdc024acb044d9bdcb985` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_Mento_MentoCoreV3_Audit.pdf | CDPLiquidityStrategy | own contract | 0x4e78bd… (selected) `0x4e78bd9565341eabe99cdc024acb044d9bdcb985` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ChainSecurity_Mento_MentoCoreV3_Audit.pdf | FPMM | unmatched — not counted | — | — | no |
-| ChainSecurity_Mento_MentoCoreV3_Audit.pdf | FPMMFactory | own contract | 0xa849b4… (selected) `0xa849b4...07613b` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_Mento_MentoCoreV3_Audit.pdf | FPMMFactory | own contract | 0xa849b4… (selected) `0xa849b475fe5a4b5c9c3280152c7a1945b907613b` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ChainSecurity_Mento_MentoCoreV3_Audit.pdf | FPMMProxy | unmatched — not counted | — | — | no |
-| ChainSecurity_Mento_MentoCoreV3_Audit.pdf | FactoryRegistry | own contract | 0x7b2f7d… (selected) `0x7b2f7d...10adf6` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_Mento_MentoCoreV3_Audit.pdf | FactoryRegistry | own contract | 0x7b2f7d… (selected) `0x7b2f7d11eabd576782f77bf2cca46a853410adf6` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ChainSecurity_Mento_MentoCoreV3_Audit.pdf | LiquidityStrategy | unmatched — not counted | — | — | no |
 | ChainSecurity_Mento_MentoCoreV3_Audit.pdf | LiquidityStrategyTypes | unmatched — not counted | — | — | no |
-| ChainSecurity_Mento_MentoCoreV3_Audit.pdf | MarketHoursBreaker | own contract | MarketHoursBreaker (selected) `0x0a18b8...4e0daf` — deployed 2026-03-03 22:14:31+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_Mento_MentoCoreV3_Audit.pdf | MarketHoursBreaker | own contract | MarketHoursBreaker (selected) `0x0a18b8e7338ef8d6025529257aa5ccd5a14e0daf` — deployed 2026-03-03 22:14:31+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ChainSecurity_Mento_MentoCoreV3_Audit.pdf | OneToOneFPMM | unmatched — not counted | — | — | no |
-| ChainSecurity_Mento_MentoCoreV3_Audit.pdf | OracleAdapter | own contract | 0xa472fb… (selected) `0xa472fb...c4383a` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| ChainSecurity_Mento_MentoCoreV3_Audit.pdf | ReserveLiquidityStrategy | own contract | 0xa0fb8b… (selected) `0xa0fb8b...ae4f0b` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| ChainSecurity_Mento_MentoCoreV3_Audit.pdf | ReserveV2 | own contract | 0x4255cf… (selected) `0x4255cf...853806` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| ChainSecurity_Mento_MentoCoreV3_Audit.pdf | Router | own contract | Router (selected) `0x486184...f9b6f6` — deployed 2026-03-03 22:14:37+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_Mento_MentoCoreV3_Audit.pdf | OracleAdapter | own contract | 0xa472fb… (selected) `0xa472fbbf4b890a54381977ac392bdf82eec4383a` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_Mento_MentoCoreV3_Audit.pdf | ReserveLiquidityStrategy | own contract | 0xa0fb8b… (selected) `0xa0fb8b16ce6af3634ff9f3f4f40e49e1c1ae4f0b` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_Mento_MentoCoreV3_Audit.pdf | ReserveV2 | own contract | 0x4255cf… (selected) `0x4255cf38e51516766180b33122029a88cb853806` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_Mento_MentoCoreV3_Audit.pdf | Router | own contract | Router (selected) `0x4861840c2efb2b98312b0ae34d86fd73e8f9b6f6` — deployed 2026-03-03 22:14:37+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ChainSecurity_Mento_MentoCoreV3_Audit.pdf | StableTokenSpoke | unmatched — not counted | — | — | no |
-| ChainSecurity_Mento_MentoCoreV3_Audit.pdf | StableTokenV3 | own contract | StableTokenV3 (selected) `0x4b9b0e...e7a2a2` — deployed 2026-03-03 22:14:37+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_Mento_MentoCoreV3_Audit.pdf | StableTokenV3 | own contract | StableTokenV3 (selected) `0x4b9b0e94197b7b2b11d311239e1420106ce7a2a2` — deployed 2026-03-03 22:14:37+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ChainSecurity_Mento_MentoCoreV3_Audit.pdf | TradingLimitsV2 | unmatched — not counted | — | — | no |
 | ChainSecurity_Mento_MentoCoreV3_Audit.pdf | VirtualPool | unmatched — not counted | — | — | no |
-| ChainSecurity_Mento_MentoCoreV3_Audit.pdf | VirtualPoolFactory | own contract | VirtualPoolFactory (selected) `0x22abd4...e5acb3` — deployed 2026-03-03 22:14:31+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_Mento_MentoCoreV3_Audit.pdf | VirtualPoolFactory | own contract | VirtualPoolFactory (selected) `0x22abd4adf6aab38ac1022352d496a07acee5acb3` — deployed 2026-03-03 22:14:31+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | www.chainsecurity.com/security-audit/mento-liquity-v2 | BatchManager | unmatched — not counted | — | mentioned in finding 'Batch Manager is not deleted in kickFromBatch' | no |
 | www.chainsecurity.com/security-audit/mento-liquity-v2 | SystemParams | unmatched — not counted | — | mentioned as 'governance-controlled SystemParams' in overview | no |
-| www.chainsecurity.com/security-audit/mento-liquity-v2 | StabilityPool | own contract | 0x2d5d7e… (selected) `0x2d5d7e...e8c1a5` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| www.chainsecurity.com/security-audit/mento-liquity-v2 | StabilityPool | own contract | 0x2d5d7e… (selected) `0x2d5d7e2767c5493610cae84e0ab7f9d2cce8c1a5` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | www.chainsecurity.com/security-audit/mento-liquity-v2 | FXPriceFeed | unmatched — not counted | — | mentioned as 'FX price feed' in overview | no |
-| ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | ActivePool | own contract | ActivePool (selected) `0xa7873f...8473b2` — deployed 2026-03-03 23:15:31+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | ActivePool | own contract | ActivePool (selected) `0xa7873f4bf2a1ea2eb20b1e8a992c4748e78473b2` — deployed 2026-03-03 23:15:31+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | AddRemoveManagers | unmatched — not counted | — | — | no |
-| ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | AddressesRegistry | own contract | AddressesRegistry (selected) `0xb3136d...fe0c6e` — deployed 2026-03-03 23:15:20+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | AddressesRegistry | own contract | AddressesRegistry (selected) `0xb3136dbadb14ab587ffa91545538126938fe0c6e` — deployed 2026-03-03 23:15:20+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | AggregatorV3Interface | unmatched — not counted | — | — | no |
 | ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | BatchId | unmatched — not counted | — | — | no |
 | ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | BatchManagerOperations | unmatched — not counted | — | — | no |
-| ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | BorrowerOperations | own contract | BorrowerOperations (selected) `0x8ec9a8...943b8a` — deployed 2026-03-03 23:15:25+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | CollSurplusPool | own contract | CollSurplusPool (selected) `0xfff48e...09d4b6` — deployed 2026-03-03 23:15:31+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | CollateralRegistry | own contract | CollateralRegistry (selected) `0x1bedd4...a605fb` — deployed 2026-03-03 23:15:20+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | BorrowerOperations | own contract | BorrowerOperations (selected) `0x8ec9a81871f816f1ef007a82293703057a943b8a` — deployed 2026-03-03 23:15:25+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | CollSurplusPool | own contract | CollSurplusPool (selected) `0xfff48ee3bd2d534e35b54d538de30a9d7709d4b6` — deployed 2026-03-03 23:15:31+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | CollateralRegistry | own contract | CollateralRegistry (selected) `0x1bedd4334335522b0a0e8e610d326b16b0a605fb` — deployed 2026-03-03 23:15:20+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | Constants | unmatched — not counted | — | — | no |
-| ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | DefaultPool | own contract | DefaultPool (selected) `0x95191e...8d0047` — deployed 2026-03-03 23:15:31+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | DefaultPool | own contract | DefaultPool (selected) `0x95191e52d01ec060cea753cdadfeeb07b78d0047` — deployed 2026-03-03 23:15:31+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | ERC20PermitUpgradeable | unmatched — not counted | — | — | no |
 | ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | ERC20Upgradeable | unmatched — not counted | — | — | no |
 | ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | FXPriceFeed | unmatched — not counted | — | — | no |
-| ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | GasPool | own contract | GasPool (selected) `0x8b61f9...79817b` — deployed 2026-03-03 23:15:31+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | GasPool | own contract | GasPool (selected) `0x8b61f941d89560c7d8b3d595f44f7fd97d79817b` — deployed 2026-03-03 23:15:31+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | LatestBatchData | unmatched — not counted | — | — | no |
 | ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | LatestTroveData | unmatched — not counted | — | — | no |
 | ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | LiquityBase | unmatched — not counted | — | — | no |
 | ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | LiquityBaseInit | unmatched — not counted | — | — | no |
 | ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | LiquityMath | unmatched — not counted | — | — | no |
 | ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | Ownable | unmatched — not counted | — | — | no |
-| ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | SortedTroves | own contract | SortedTroves (selected) `0x46d0c9...12bf9b` — deployed 2026-03-03 23:15:31+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | StabilityPool | own contract | 0x2d5d7e… (selected) `0x2d5d7e...e8c1a5` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | StableTokenV3 | own contract | StableTokenV3 (selected) `0x4b9b0e...e7a2a2` — deployed 2026-03-03 22:14:37+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | SortedTroves | own contract | SortedTroves (selected) `0x46d0c9e51e05d6ff38b2a19d6310488f3112bf9b` — deployed 2026-03-03 23:15:31+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | StabilityPool | own contract | 0x2d5d7e… (selected) `0x2d5d7e2767c5493610cae84e0ab7f9d2cce8c1a5` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | StableTokenV3 | own contract | StableTokenV3 (selected) `0x4b9b0e94197b7b2b11d311239e1420106ce7a2a2` — deployed 2026-03-03 22:14:37+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | SystemParams | unmatched — not counted | — | — | no |
 | ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | TroveChange | unmatched — not counted | — | — | no |
 | ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | TroveId | unmatched — not counted | — | — | no |
-| ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | TroveManager | own contract | TroveManager (selected) `0xb38aef...3885c9` — deployed 2026-03-03 23:15:25+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | TroveNFT | own contract | TroveNFT (selected) `0x46273a...72c6b6` — deployed 2026-03-03 23:15:25+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | TroveManager | own contract | TroveManager (selected) `0xb38aef2bf4e34b997330d626ebcd7629de3885c9` — deployed 2026-03-03 23:15:25+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_Mento_MentoLiquityV2_Audit.pdf | TroveNFT | own contract | TroveNFT (selected) `0x46273a5792013973b64a42e760e6f81d0472c6b6` — deployed 2026-03-03 23:15:25+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 0xmacro.com/library/audits/mento-3 | Emission | unmatched — not counted | — | — | no |
 | 0xmacro.com/library/audits/mento-3 | EmissionDeployerLib | unmatched — not counted | — | — | no |
 | 0xmacro.com/library/audits/mento-3 | GovernanceFactory | unmatched — not counted | — | — | no |
-| 0xmacro.com/library/audits/mento-3 | Locking | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x001bb6...80279c` — deployed 2024-05-31 21:06:53+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 0xmacro.com/library/audits/mento-3 | Locking | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x001bb66636dcd149a1a2ba8c50e408bddd80279c` — deployed 2024-05-31 21:06:53+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 0xmacro.com/library/audits/mento-3 | LockingBase | unmatched — not counted | — | — | no |
 | 0xmacro.com/library/audits/mento-3 | LockingRelock | unmatched — not counted | — | — | no |
 | 0xmacro.com/library/audits/mento-3 | LockingVotes | unmatched — not counted | — | — | no |
-| 0xmacro.com/library/audits/mento-3 | MentoToken | own contract | MentoToken (selected) `0x7ff62f...77cfb6` — deployed 2024-05-31 21:06:53+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 0xmacro.com/library/audits/mento-3 | MentoToken | own contract | MentoToken (selected) `0x7ff62f59e3e89ea34163ea1458eebcc81177cfb6` — deployed 2024-05-31 21:06:53+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 0xmacro.com/library/audits/mento-3 | MentoTokenDeployerLib | unmatched — not counted | — | — | no |
 | 0xmacro.com/library/audits/mento-2 | Airgrab | unmatched — not counted | — | — | no |
 | 0xmacro.com/library/audits/mento-2 | Emission | unmatched — not counted | — | — | no |
@@ -518,14 +518,14 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | 0xmacro.com/library/audits/mento-2 | INextVersionLock | unmatched — not counted | — | — | no |
 | 0xmacro.com/library/audits/mento-2 | LibBrokenLine | unmatched — not counted | — | — | no |
 | 0xmacro.com/library/audits/mento-2 | LibIntMapping | unmatched — not counted | — | — | no |
-| 0xmacro.com/library/audits/mento-2 | Locking | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x001bb6...80279c` — deployed 2024-05-31 21:06:53+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 0xmacro.com/library/audits/mento-2 | Locking | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x001bb66636dcd149a1a2ba8c50e408bddd80279c` — deployed 2024-05-31 21:06:53+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 0xmacro.com/library/audits/mento-2 | LockingBase | unmatched — not counted | — | — | no |
 | 0xmacro.com/library/audits/mento-2 | LockingRelock | unmatched — not counted | — | — | no |
 | 0xmacro.com/library/audits/mento-2 | LockingVotes | unmatched — not counted | — | — | no |
 | 0xmacro.com/library/audits/mento-2 | MentoGovernor | unmatched — not counted | — | — | no |
-| 0xmacro.com/library/audits/mento-2 | MentoToken | own contract | MentoToken (selected) `0x7ff62f...77cfb6` — deployed 2024-05-31 21:06:53+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 0xmacro.com/library/audits/mento-2 | MentoToken | own contract | MentoToken (selected) `0x7ff62f59e3e89ea34163ea1458eebcc81177cfb6` — deployed 2024-05-31 21:06:53+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 0xmacro.com/library/audits/mento-2 | TimelockController | unmatched — not counted | — | — | no |
-| 0xmacro.com/library/audits/mento-1 | BiPoolManager | own proxy deployment | BiPoolManagerProxy (proxy) (selected) `0x22d9db...4ec901` — deployed 2023-03-07 08:50:54+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 0xmacro.com/library/audits/mento-1 | BiPoolManager | own proxy deployment | BiPoolManagerProxy (proxy) (selected) `0x22d9db95e6ae61c104a7b6f6c78d7993b94ec901` — deployed 2023-03-07 08:50:54+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 0xmacro.com/library/audits/mento-1 | BreakerBox | unmatched — not counted | — | — | no |
 | 0xmacro.com/library/audits/mento-1 | ConstantSumPricingModule | unmatched — not counted | — | — | no |
 | 0xmacro.com/library/audits/mento-1 | ERC20PermitUpgradeable | unmatched — not counted | — | — | no |
@@ -549,12 +549,12 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | www.openzeppelin.com/news/celo-contracts-audit | Freezable | unmatched — not counted | — | listed in scope | no |
 | www.openzeppelin.com/news/celo-contracts-audit | GasPriceMinimum | unmatched — not counted | — | listed in scope | no |
 | www.openzeppelin.com/news/celo-contracts-audit | GoldToken | unmatched — not counted | — | listed in scope | no |
-| www.openzeppelin.com/news/celo-contracts-audit | Governance | own contract | TroveManager (selected) `0xb38aef...3885c9` — deployed 2026-03-03 23:15:25+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| www.openzeppelin.com/news/celo-contracts-audit | Governance | own contract | TroveManager (selected) `0xb38aef2bf4e34b997330d626ebcd7629de3885c9` — deployed 2026-03-03 23:15:25+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | www.openzeppelin.com/news/celo-contracts-audit | LockedGold | unmatched — not counted | — | listed in scope | no |
 | www.openzeppelin.com/news/celo-contracts-audit | MultiSig | unmatched — not counted | — | listed in scope | no |
 | www.openzeppelin.com/news/celo-contracts-audit | Proxy | unmatched — not counted | — | listed in scope | no |
 | www.openzeppelin.com/news/celo-contracts-audit | Random | unmatched — not counted | — | listed in scope | no |
-| www.openzeppelin.com/news/celo-contracts-audit | Registry | ambiguous — not counted | AddressesRegistry (alternative) `0xb3136d...fe0c6e` — deployed 2026-03-03 23:15:20+03 — liveness: live (current_address_book_code)<br>ReserveTroveFactory (alternative) `0x028594...9519e1` — deployed 2026-03-03 23:17:20+03 — liveness: live (current_address_book_code)<br>CollateralRegistry (alternative) `0x1bedd4...a605fb` — deployed 2026-03-03 23:15:20+03 — liveness: live (code_present_context)<br>VirtualPoolFactory (alternative) `0x22abd4...e5acb3` — deployed 2026-03-03 22:14:31+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| www.openzeppelin.com/news/celo-contracts-audit | Registry | ambiguous — not counted | AddressesRegistry (alternative) `0xb3136dbadb14ab587ffa91545538126938fe0c6e` — deployed 2026-03-03 23:15:20+03 — liveness: live (current_address_book_code)<br>ReserveTroveFactory (alternative) `0x02859465dcc7d7f2bee183fc7fac78544c9519e1` — deployed 2026-03-03 23:17:20+03 — liveness: live (current_address_book_code)<br>CollateralRegistry (alternative) `0x1bedd4334335522b0a0e8e610d326b16b0a605fb` — deployed 2026-03-03 23:15:20+03 — liveness: live (code_present_context)<br>VirtualPoolFactory (alternative) `0x22abd4adf6aab38ac1022352d496a07acee5acb3` — deployed 2026-03-03 22:14:31+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | www.openzeppelin.com/news/celo-contracts-audit | Reserve | unmatched — not counted | — | listed in scope | no |
 | www.openzeppelin.com/news/celo-contracts-audit | SlasherUtil | unmatched — not counted | — | listed in scope | no |
 | www.openzeppelin.com/news/celo-contracts-audit | SortedOracles | unmatched — not counted | — | listed in scope | no |
@@ -582,10 +582,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| celo | `0xafd741...374d82` | HintHelpers | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | `0x78fd33...f8327f` | MultiTroveGetter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | `0x028594...9519e1` | ReserveTroveFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | `0xff4ab1...2b6325` | StableTokenCADProxy | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | `0xafd741674bc4aa965a788dace5b0434fd4374d82` | HintHelpers | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | `0x78fd33d2bce0389cf41e15947b0eb0ce9df8327f` | MultiTroveGetter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | `0x02859465dcc7d7f2bee183fc7fac78544c9519e1` | ReserveTroveFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | `0xff4ab19391af240c311c54200a492233052b6325` | StableTokenCADProxy | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -61,10 +61,10 @@ The protocol comprises 3 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BridgeAssist | unknown | bsc | n/a | [`0x1d09d3...e65909`](./contracts/bsc-56/0x1d09d3458cc150016f0fd7b079af41e17ce65909/) | ⚠️ Unaudited |
-| CoinToken | unknown | bsc | n/a | [`0xc74867...02e8de`](./contracts/bsc-56/0xc748673057861a797275cd8a068abb95a902e8de/) | ⚠️ Unaudited |
-| TimelockController | unknown | bsc | n/a | [`0x860e6c...c47d54`](./contracts/bsc-56/0x860e6cc13381988631c6eb4ad391294a2fc47d54/) | ⚠️ Unaudited |
-| Vault | unknown | bsc | n/a | [`0x58ecef...75af33`](./contracts/bsc-56/0x58ecef26335af7b04a998105a6603b0dc475af33/) | ⚠️ Unaudited |
+| BridgeAssist | unknown | bsc | n/a | [`0x1d09d3458cc150016f0fd7b079af41e17ce65909`](./contracts/bsc-56/0x1d09d3458cc150016f0fd7b079af41e17ce65909/) | ⚠️ Unaudited |
+| CoinToken | unknown | bsc | n/a | [`0xc748673057861a797275cd8a068abb95a902e8de`](./contracts/bsc-56/0xc748673057861a797275cd8a068abb95a902e8de/) | ⚠️ Unaudited |
+| TimelockController | unknown | bsc | n/a | [`0x860e6cc13381988631c6eb4ad391294a2fc47d54`](./contracts/bsc-56/0x860e6cc13381988631c6eb4ad391294a2fc47d54/) | ⚠️ Unaudited |
+| Vault | unknown | bsc | n/a | [`0x58ecef26335af7b04a998105a6603b0dc475af33`](./contracts/bsc-56/0x58ecef26335af7b04a998105a6603b0dc475af33/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -97,9 +97,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x1d09d3...e65909`](./contracts/bsc-56/0x1d09d3458cc150016f0fd7b079af41e17ce65909/) | BridgeAssist | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xc74867...02e8de`](./contracts/bsc-56/0xc748673057861a797275cd8a068abb95a902e8de/) | CoinToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x58ecef...75af33`](./contracts/bsc-56/0x58ecef26335af7b04a998105a6603b0dc475af33/) | Vault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x1d09d3458cc150016f0fd7b079af41e17ce65909`](./contracts/bsc-56/0x1d09d3458cc150016f0fd7b079af41e17ce65909/) | BridgeAssist | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xc748673057861a797275cd8a068abb95a902e8de`](./contracts/bsc-56/0xc748673057861a797275cd8a068abb95a902e8de/) | CoinToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x58ecef26335af7b04a998105a6603b0dc475af33`](./contracts/bsc-56/0x58ecef26335af7b04a998105a6603b0dc475af33/) | Vault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -66,31 +66,31 @@ Total inherited audits: 15. Inherited coverage reflects forked/shared code audit
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ArbswapToken | unknown | arbitrum | n/a | [`0xd5f09e...29a099`](./contracts/arbitrum-42161/0xd5f09e5307ed5a26ac762a6ba5573c22d729a099/) | ✅ Audited |
-| MasterChefV3 | unknown | arbitrum | n/a | [`0x41210a...7eb0b0`](./contracts/arbitrum-42161/0x41210a7c9853da7a65cad516c32c25fa5c7eb0b0/) | ✅ Audited |
-| MirrorARBS | unknown | arbitrum | n/a | [`0xa04c34...089d36`](./contracts/arbitrum-42161/0xa04c348246efb67e5376da989d70175145089d36/) | ✅ Audited |
-| VestingMaster | unknown | arbitrum | n/a | [`0x2b84f4...f06735`](./contracts/arbitrum-42161/0x2b84f485c18daeb87b1ebdba4b2bc5b945f06735/) | ✅ Audited |
-| XARBSPool | unknown | arbitrum | n/a | [`0x6d6e38...f6a222`](./contracts/arbitrum-42161/0x6d6e388064eb7e3256539e9c3e9f16a829f6a222/) | ✅ Audited |
+| ArbswapToken | unknown | arbitrum | n/a | [`0xd5f09e5307ed5a26ac762a6ba5573c22d729a099`](./contracts/arbitrum-42161/0xd5f09e5307ed5a26ac762a6ba5573c22d729a099/) | ✅ Audited |
+| MasterChefV3 | unknown | arbitrum | n/a | [`0x41210a7c9853da7a65cad516c32c25fa5c7eb0b0`](./contracts/arbitrum-42161/0x41210a7c9853da7a65cad516c32c25fa5c7eb0b0/) | ✅ Audited |
+| MirrorARBS | unknown | arbitrum | n/a | [`0xa04c348246efb67e5376da989d70175145089d36`](./contracts/arbitrum-42161/0xa04c348246efb67e5376da989d70175145089d36/) | ✅ Audited |
+| VestingMaster | unknown | arbitrum | n/a | [`0x2b84f485c18daeb87b1ebdba4b2bc5b945f06735`](./contracts/arbitrum-42161/0x2b84f485c18daeb87b1ebdba4b2bc5b945f06735/) | ✅ Audited |
+| XARBSPool | unknown | arbitrum | n/a | [`0x6d6e388064eb7e3256539e9c3e9f16a829f6a222`](./contracts/arbitrum-42161/0x6d6e388064eb7e3256539e9c3e9f16a829f6a222/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (15)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ArbEgg | unknown | arbitrum | n/a | [`0x3dd7d0...5e9b6d`](./contracts/arbitrum-42161/0x3dd7d034198357bf0d54c1e377f3d2ce2a5e9b6d/) | ⚠️ Unaudited |
-| ArbsProxyOFT | unknown | arbitrum | n/a | [`0x406822...3d844a`](./contracts/arbitrum-42161/0x4068224e09d400bf2ff3dd3035bfa5671e3d844a/) | ⚠️ Unaudited |
-| ArbswapAirdrop | unknown | arbitrum | n/a | [`0x3ceefa...13d3c3`](./contracts/arbitrum-42161/0x3ceefa452a8d7522786abd2f644367464f13d3c3/) | ⚠️ Unaudited |
-| ArbswapSmartRouter | unknown | arbitrum | n/a | [`0x4aef9d...88f2e9`](./contracts/arbitrum-42161/0x4aef9d850a71d0f0051e8c69bf865ae34188f2e9/) | ⚠️ Unaudited |
-| ArbswapStableSwapFactory | unknown | arbitrum | n/a | [`0x3a52e9...2c099d`](./contracts/arbitrum-42161/0x3a52e9200ed7403d9d21664fdee540c2d02c099d/) | ⚠️ Unaudited |
-| ArbswapStableSwapLPFactory | unknown | arbitrum | n/a | [`0x5bbebd...3718f1`](./contracts/arbitrum-42161/0x5bbebd93777dfa334f6346271fbc6a56ed3718f1/) | ⚠️ Unaudited |
-| ArbswapStableSwapThreePoolDeployer | unknown | arbitrum | n/a | [`0xc1b418...125e67`](./contracts/arbitrum-42161/0xc1b418879750fc785b2112a77d73498eaa125e67/) | ⚠️ Unaudited |
-| ArbswapStableSwapTwoPoolDeployer | unknown | arbitrum | n/a | [`0x6b23bb...69507c`](./contracts/arbitrum-42161/0x6b23bbdddbbef5f999b9cb7e9b579231ac69507c/) | ⚠️ Unaudited |
-| ArbswapStableSwapTwoPoolInfo | unknown | arbitrum | n/a | [`0xaa50d3...770d7f`](./contracts/arbitrum-42161/0xaa50d30612a58f2e7935c4482fa426b0aa770d7f/) | ⚠️ Unaudited |
-| ArbswapStableSwapWBNBHelper | unknown | arbitrum | n/a | [`0x318080...5283ab`](./contracts/arbitrum-42161/0x318080b1590e06db79d55ce7a348765c3d5283ab/) | ⚠️ Unaudited |
-| ArbswapStableSwapWETHHelper | unknown | arbitrum | n/a | [`0x8bf212...b71029`](./contracts/arbitrum-42161/0x8bf212f02d557f9dd4b75dd69bf1e6bf1bb71029/) | ⚠️ Unaudited |
-| IFODeployer | unknown | arbitrum | n/a | [`0x85855c...148a6f`](./contracts/arbitrum-42161/0x85855cada5f92206fa0ee01d0d792849ea148a6f/) | ⚠️ Unaudited |
-| MockNovaFarm | unknown | arbitrum | n/a | [`0x278235...c2531b`](./contracts/arbitrum-42161/0x278235c801e9a5d6cef1f687e59fc65470c2531b/) | ⚠️ Unaudited |
-| RealArbsian | unknown | arbitrum | n/a | [`0x700794...272932`](./contracts/arbitrum-42161/0x700794d18dee51eb308eed0dc0aacadc5d272932/) | ⚠️ Unaudited |
-| TestVM | unknown | arbitrum | n/a | [`0x7de026...0eafa4`](./contracts/arbitrum-42161/0x7de026ce716319d8e01c901f366719230f0eafa4/) | ⚠️ Unaudited |
+| ArbEgg | unknown | arbitrum | n/a | [`0x3dd7d034198357bf0d54c1e377f3d2ce2a5e9b6d`](./contracts/arbitrum-42161/0x3dd7d034198357bf0d54c1e377f3d2ce2a5e9b6d/) | ⚠️ Unaudited |
+| ArbsProxyOFT | unknown | arbitrum | n/a | [`0x4068224e09d400bf2ff3dd3035bfa5671e3d844a`](./contracts/arbitrum-42161/0x4068224e09d400bf2ff3dd3035bfa5671e3d844a/) | ⚠️ Unaudited |
+| ArbswapAirdrop | unknown | arbitrum | n/a | [`0x3ceefa452a8d7522786abd2f644367464f13d3c3`](./contracts/arbitrum-42161/0x3ceefa452a8d7522786abd2f644367464f13d3c3/) | ⚠️ Unaudited |
+| ArbswapSmartRouter | unknown | arbitrum | n/a | [`0x4aef9d850a71d0f0051e8c69bf865ae34188f2e9`](./contracts/arbitrum-42161/0x4aef9d850a71d0f0051e8c69bf865ae34188f2e9/) | ⚠️ Unaudited |
+| ArbswapStableSwapFactory | unknown | arbitrum | n/a | [`0x3a52e9200ed7403d9d21664fdee540c2d02c099d`](./contracts/arbitrum-42161/0x3a52e9200ed7403d9d21664fdee540c2d02c099d/) | ⚠️ Unaudited |
+| ArbswapStableSwapLPFactory | unknown | arbitrum | n/a | [`0x5bbebd93777dfa334f6346271fbc6a56ed3718f1`](./contracts/arbitrum-42161/0x5bbebd93777dfa334f6346271fbc6a56ed3718f1/) | ⚠️ Unaudited |
+| ArbswapStableSwapThreePoolDeployer | unknown | arbitrum | n/a | [`0xc1b418879750fc785b2112a77d73498eaa125e67`](./contracts/arbitrum-42161/0xc1b418879750fc785b2112a77d73498eaa125e67/) | ⚠️ Unaudited |
+| ArbswapStableSwapTwoPoolDeployer | unknown | arbitrum | n/a | [`0x6b23bbdddbbef5f999b9cb7e9b579231ac69507c`](./contracts/arbitrum-42161/0x6b23bbdddbbef5f999b9cb7e9b579231ac69507c/) | ⚠️ Unaudited |
+| ArbswapStableSwapTwoPoolInfo | unknown | arbitrum | n/a | [`0xaa50d30612a58f2e7935c4482fa426b0aa770d7f`](./contracts/arbitrum-42161/0xaa50d30612a58f2e7935c4482fa426b0aa770d7f/) | ⚠️ Unaudited |
+| ArbswapStableSwapWBNBHelper | unknown | arbitrum | n/a | [`0x318080b1590e06db79d55ce7a348765c3d5283ab`](./contracts/arbitrum-42161/0x318080b1590e06db79d55ce7a348765c3d5283ab/) | ⚠️ Unaudited |
+| ArbswapStableSwapWETHHelper | unknown | arbitrum | n/a | [`0x8bf212f02d557f9dd4b75dd69bf1e6bf1bb71029`](./contracts/arbitrum-42161/0x8bf212f02d557f9dd4b75dd69bf1e6bf1bb71029/) | ⚠️ Unaudited |
+| IFODeployer | unknown | arbitrum | n/a | [`0x85855cada5f92206fa0ee01d0d792849ea148a6f`](./contracts/arbitrum-42161/0x85855cada5f92206fa0ee01d0d792849ea148a6f/) | ⚠️ Unaudited |
+| MockNovaFarm | unknown | arbitrum | n/a | [`0x278235c801e9a5d6cef1f687e59fc65470c2531b`](./contracts/arbitrum-42161/0x278235c801e9a5d6cef1f687e59fc65470c2531b/) | ⚠️ Unaudited |
+| RealArbsian | unknown | arbitrum | n/a | [`0x700794d18dee51eb308eed0dc0aacadc5d272932`](./contracts/arbitrum-42161/0x700794d18dee51eb308eed0dc0aacadc5d272932/) | ⚠️ Unaudited |
+| TestVM | unknown | arbitrum | n/a | [`0x7de026ce716319d8e01c901f366719230f0eafa4`](./contracts/arbitrum-42161/0x7de026ce716319d8e01c901f366719230f0eafa4/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -138,21 +138,21 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | [`0x3dd7d0...5e9b6d`](./contracts/arbitrum-42161/0x3dd7d034198357bf0d54c1e377f3d2ce2a5e9b6d/) | ArbEgg | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x406822...3d844a`](./contracts/arbitrum-42161/0x4068224e09d400bf2ff3dd3035bfa5671e3d844a/) | ArbsProxyOFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x3ceefa...13d3c3`](./contracts/arbitrum-42161/0x3ceefa452a8d7522786abd2f644367464f13d3c3/) | ArbswapAirdrop | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x4aef9d...88f2e9`](./contracts/arbitrum-42161/0x4aef9d850a71d0f0051e8c69bf865ae34188f2e9/) | ArbswapSmartRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x3a52e9...2c099d`](./contracts/arbitrum-42161/0x3a52e9200ed7403d9d21664fdee540c2d02c099d/) | ArbswapStableSwapFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x5bbebd...3718f1`](./contracts/arbitrum-42161/0x5bbebd93777dfa334f6346271fbc6a56ed3718f1/) | ArbswapStableSwapLPFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xc1b418...125e67`](./contracts/arbitrum-42161/0xc1b418879750fc785b2112a77d73498eaa125e67/) | ArbswapStableSwapThreePoolDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x6b23bb...69507c`](./contracts/arbitrum-42161/0x6b23bbdddbbef5f999b9cb7e9b579231ac69507c/) | ArbswapStableSwapTwoPoolDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xaa50d3...770d7f`](./contracts/arbitrum-42161/0xaa50d30612a58f2e7935c4482fa426b0aa770d7f/) | ArbswapStableSwapTwoPoolInfo | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x318080...5283ab`](./contracts/arbitrum-42161/0x318080b1590e06db79d55ce7a348765c3d5283ab/) | ArbswapStableSwapWBNBHelper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x8bf212...b71029`](./contracts/arbitrum-42161/0x8bf212f02d557f9dd4b75dd69bf1e6bf1bb71029/) | ArbswapStableSwapWETHHelper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x85855c...148a6f`](./contracts/arbitrum-42161/0x85855cada5f92206fa0ee01d0d792849ea148a6f/) | IFODeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x278235...c2531b`](./contracts/arbitrum-42161/0x278235c801e9a5d6cef1f687e59fc65470c2531b/) | MockNovaFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x700794...272932`](./contracts/arbitrum-42161/0x700794d18dee51eb308eed0dc0aacadc5d272932/) | RealArbsian | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x7de026...0eafa4`](./contracts/arbitrum-42161/0x7de026ce716319d8e01c901f366719230f0eafa4/) | TestVM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x3dd7d034198357bf0d54c1e377f3d2ce2a5e9b6d`](./contracts/arbitrum-42161/0x3dd7d034198357bf0d54c1e377f3d2ce2a5e9b6d/) | ArbEgg | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x4068224e09d400bf2ff3dd3035bfa5671e3d844a`](./contracts/arbitrum-42161/0x4068224e09d400bf2ff3dd3035bfa5671e3d844a/) | ArbsProxyOFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x3ceefa452a8d7522786abd2f644367464f13d3c3`](./contracts/arbitrum-42161/0x3ceefa452a8d7522786abd2f644367464f13d3c3/) | ArbswapAirdrop | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x4aef9d850a71d0f0051e8c69bf865ae34188f2e9`](./contracts/arbitrum-42161/0x4aef9d850a71d0f0051e8c69bf865ae34188f2e9/) | ArbswapSmartRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x3a52e9200ed7403d9d21664fdee540c2d02c099d`](./contracts/arbitrum-42161/0x3a52e9200ed7403d9d21664fdee540c2d02c099d/) | ArbswapStableSwapFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x5bbebd93777dfa334f6346271fbc6a56ed3718f1`](./contracts/arbitrum-42161/0x5bbebd93777dfa334f6346271fbc6a56ed3718f1/) | ArbswapStableSwapLPFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xc1b418879750fc785b2112a77d73498eaa125e67`](./contracts/arbitrum-42161/0xc1b418879750fc785b2112a77d73498eaa125e67/) | ArbswapStableSwapThreePoolDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x6b23bbdddbbef5f999b9cb7e9b579231ac69507c`](./contracts/arbitrum-42161/0x6b23bbdddbbef5f999b9cb7e9b579231ac69507c/) | ArbswapStableSwapTwoPoolDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xaa50d30612a58f2e7935c4482fa426b0aa770d7f`](./contracts/arbitrum-42161/0xaa50d30612a58f2e7935c4482fa426b0aa770d7f/) | ArbswapStableSwapTwoPoolInfo | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x318080b1590e06db79d55ce7a348765c3d5283ab`](./contracts/arbitrum-42161/0x318080b1590e06db79d55ce7a348765c3d5283ab/) | ArbswapStableSwapWBNBHelper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x8bf212f02d557f9dd4b75dd69bf1e6bf1bb71029`](./contracts/arbitrum-42161/0x8bf212f02d557f9dd4b75dd69bf1e6bf1bb71029/) | ArbswapStableSwapWETHHelper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x85855cada5f92206fa0ee01d0d792849ea148a6f`](./contracts/arbitrum-42161/0x85855cada5f92206fa0ee01d0d792849ea148a6f/) | IFODeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x278235c801e9a5d6cef1f687e59fc65470c2531b`](./contracts/arbitrum-42161/0x278235c801e9a5d6cef1f687e59fc65470c2531b/) | MockNovaFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x700794d18dee51eb308eed0dc0aacadc5d272932`](./contracts/arbitrum-42161/0x700794d18dee51eb308eed0dc0aacadc5d272932/) | RealArbsian | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x7de026ce716319d8e01c901f366719230f0eafa4`](./contracts/arbitrum-42161/0x7de026ce716319d8e01c901f366719230f0eafa4/) | TestVM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

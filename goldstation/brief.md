@@ -80,8 +80,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | klaytn | n/a | 4 deployments: klaytn `0x347e5c...62ae88`; klaytn `0x4836cc...0cd95e`; klaytn `0x4d55b0...dc8954`; klaytn `0x6569b1...47dc76` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x1b27d7...64281d` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | 4 deployments: klaytn `0x347e5ce6764df9df85487bea523d3e242762ae88`; klaytn `0x4836cc1f355bb2a61c210eaa0cd3f729160cd95e`; klaytn `0x4d55b04ac52b2ca41ad04337ff13cbaefbdc8954`; klaytn `0x6569b14043c03537b5b125f5ac5de3605a47dc76` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x1b27d7a06deea4d5cb4fd60c164153c90f64281d` | ❓ Unverified |
 
 ## Audit Inventory
 

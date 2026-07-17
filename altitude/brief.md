@@ -65,8 +65,8 @@ The protocol comprises 4 functional families. Contracts are linked by 2 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AltitudeToken | token | ethereum | n/a | 6 deployments: ethereum [`0x8929e9...fee0d1`](./contracts/ethereum-1/0x8929e9dbd2785e3ba16175e596cdd61520fee0d1/); optimism [`0x8929e9...fee0d1`](./contracts/optimism-10/0x8929e9dbd2785e3ba16175e596cdd61520fee0d1/); bsc [`0x8929e9...fee0d1`](./contracts/bsc-56/0x8929e9dbd2785e3ba16175e596cdd61520fee0d1/); polygon [`0x8929e9...fee0d1`](./contracts/polygon-137/0x8929e9dbd2785e3ba16175e596cdd61520fee0d1/); arbitrum [`0x8929e9...fee0d1`](./contracts/arbitrum-42161/0x8929e9dbd2785e3ba16175e596cdd61520fee0d1/); avalanche [`0x8929e9...fee0d1`](./contracts/avalanche-43114/0x8929e9dbd2785e3ba16175e596cdd61520fee0d1/) | ⚠️ Unaudited |
-| MerkleDistributor | operational_periphery | arbitrum | n/a | 2 deployments: arbitrum [`0x7a619e...672184`](./contracts/arbitrum-42161/0x7a619e22c3e4753bcd4c9e867946398a12672184/); arbitrum `0xcc0bda...943af6` | ⚠️ Unaudited |
+| AltitudeToken | token | ethereum | n/a | 6 deployments: ethereum [`0x8929e9dbd2785e3ba16175e596cdd61520fee0d1`](./contracts/ethereum-1/0x8929e9dbd2785e3ba16175e596cdd61520fee0d1/); optimism [`0x8929e9dbd2785e3ba16175e596cdd61520fee0d1`](./contracts/optimism-10/0x8929e9dbd2785e3ba16175e596cdd61520fee0d1/); bsc [`0x8929e9dbd2785e3ba16175e596cdd61520fee0d1`](./contracts/bsc-56/0x8929e9dbd2785e3ba16175e596cdd61520fee0d1/); polygon [`0x8929e9dbd2785e3ba16175e596cdd61520fee0d1`](./contracts/polygon-137/0x8929e9dbd2785e3ba16175e596cdd61520fee0d1/); arbitrum [`0x8929e9dbd2785e3ba16175e596cdd61520fee0d1`](./contracts/arbitrum-42161/0x8929e9dbd2785e3ba16175e596cdd61520fee0d1/); avalanche [`0x8929e9dbd2785e3ba16175e596cdd61520fee0d1`](./contracts/avalanche-43114/0x8929e9dbd2785e3ba16175e596cdd61520fee0d1/) | ⚠️ Unaudited |
+| MerkleDistributor | operational_periphery | arbitrum | n/a | 2 deployments: arbitrum [`0x7a619e22c3e4753bcd4c9e867946398a12672184`](./contracts/arbitrum-42161/0x7a619e22c3e4753bcd4c9e867946398a12672184/); arbitrum `0xcc0bda6ff7aef71e5b909baaf184560bba943af6` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (1)
 
@@ -74,7 +74,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Factory | registry | optimism | n/a | 7 deployments: optimism [`0xd99784...4ab22d`](./contracts/optimism-10/0xd997841f20cbef49e8a2b1aadd3bb513914ab22d/); bsc [`0xd99784...4ab22d`](./contracts/bsc-56/0xd997841f20cbef49e8a2b1aadd3bb513914ab22d/); polygon [`0xd99784...4ab22d`](./contracts/polygon-137/0xd997841f20cbef49e8a2b1aadd3bb513914ab22d/); mantle [`0xd99784...4ab22d`](./contracts/mantle-5000/0xd997841f20cbef49e8a2b1aadd3bb513914ab22d/); arbitrum [`0xd99784...4ab22d`](./contracts/arbitrum-42161/0xd997841f20cbef49e8a2b1aadd3bb513914ab22d/); avalanche [`0xd99784...4ab22d`](./contracts/avalanche-43114/0xd997841f20cbef49e8a2b1aadd3bb513914ab22d/); linea [`0xd99784...4ab22d`](./contracts/linea-59144/0xd997841f20cbef49e8a2b1aadd3bb513914ab22d/) | ✅ Audited (bytecode match) |
+| Factory | registry | optimism | n/a | 7 deployments: optimism [`0xd997841f20cbef49e8a2b1aadd3bb513914ab22d`](./contracts/optimism-10/0xd997841f20cbef49e8a2b1aadd3bb513914ab22d/); bsc [`0xd997841f20cbef49e8a2b1aadd3bb513914ab22d`](./contracts/bsc-56/0xd997841f20cbef49e8a2b1aadd3bb513914ab22d/); polygon [`0xd997841f20cbef49e8a2b1aadd3bb513914ab22d`](./contracts/polygon-137/0xd997841f20cbef49e8a2b1aadd3bb513914ab22d/); mantle [`0xd997841f20cbef49e8a2b1aadd3bb513914ab22d`](./contracts/mantle-5000/0xd997841f20cbef49e8a2b1aadd3bb513914ab22d/); arbitrum [`0xd997841f20cbef49e8a2b1aadd3bb513914ab22d`](./contracts/arbitrum-42161/0xd997841f20cbef49e8a2b1aadd3bb513914ab22d/); avalanche [`0xd997841f20cbef49e8a2b1aadd3bb513914ab22d`](./contracts/avalanche-43114/0xd997841f20cbef49e8a2b1aadd3bb513914ab22d/); linea [`0xd997841f20cbef49e8a2b1aadd3bb513914ab22d`](./contracts/linea-59144/0xd997841f20cbef49e8a2b1aadd3bb513914ab22d/) | ✅ Audited (bytecode match) |
 
 ### ⚠️ Verified by Bytecode + Unaudited (1)
 
@@ -82,7 +82,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AltitudeFarms | unknown | arbitrum | n/a | 3 deployments: mantle `0xf0dbc0...3c18fe`; arbitrum [`0xa912cb...18db82`](./contracts/arbitrum-42161/0xa912cb42ef8a9e5898cae13f678d372b1a18db82/); arbitrum `0xd6e501...7ea522` | ⚠️ Unaudited (bytecode match) |
+| AltitudeFarms | unknown | arbitrum | n/a | 3 deployments: mantle `0xf0dbc067d21319068e1c2617e13fc28db83c18fe`; arbitrum [`0xa912cb42ef8a9e5898cae13f678d372b1a18db82`](./contracts/arbitrum-42161/0xa912cb42ef8a9e5898cae13f678d372b1a18db82/); arbitrum `0xd6e501f92ce58623ee5d36f6badbcd35d87ea522` | ⚠️ Unaudited (bytecode match) |
 
 ### ❓ Unverified (22)
 
@@ -90,28 +90,28 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | fantom | n/a | `0x8929e9...fee0d1` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0x1d31b2...7d151c` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0x8929e9...fee0d1` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0xbc2b12...0ff44e` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0xf80e51...0a86bb` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x11c3d4...5e3938` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x1b30a2...40bf94` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x20d87e...fb47fe` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x34f417...3bf229` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x453397...b7e312` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x477680...51825a` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x5fa689...958700` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x71b2fe...207051` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x8cefea...6037fc` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x8e2f2f...2952ee` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x9cc58f...37c2e7` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xbacf66...f929c4` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xc6bf08...1224a8` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xc74702...83309b` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xf3ef45...c9a21d` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0x1d31b2...7d151c` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0x8929e9...fee0d1` | ❓ Unverified |
+| UnnamedContract | unknown | fantom | n/a | `0x8929e9dbd2785e3ba16175e596cdd61520fee0d1` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x1d31b21fe28af5f73b8e8ae0c900504bbc7d151c` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x8929e9dbd2785e3ba16175e596cdd61520fee0d1` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xbc2b1262c90ab34757dc7eb2cb7ce595660ff44e` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xf80e51afb613d764fa61751affd3313c190a86bb` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x11c3d4f266888df7e6ce324b9fc88f416f5e3938` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x1b30a2f34d2fc5d200abf89e96cc74807040bf94` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x20d87e1fdd74549c4e75d3e3c8ea940567fb47fe` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x34f4176c384c936699bc670dcfc89745ba3bf229` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x453397ae0a55e640add35a1bae868049b4b7e312` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x4776801ff6e319d9c6a82e7946415e13d551825a` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x5fa6890adc00216a3dfdcf16d6bc49c874958700` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x71b2fe54243a10381ed525681b5faf7b22207051` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x8cefea71c970b37bd2ae29defdfd30e9f26037fc` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x8e2f2fcc5d263e455f109dacec7c4a56cb2952ee` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x9cc58fa0bcdf7e3b3ec01106729d53e9d237c2e7` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xbacf66b4ce91977796d73ae8cde59ece8ef929c4` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xc6bf08d212cdb303a067d7e88ac77454f21224a8` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xc747024483de5c3d5709d437683f96974c83309b` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xf3ef450d9a79a7c644b42ce7896ebbf65dc9a21d` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0x1d31b21fe28af5f73b8e8ae0c900504bbc7d151c` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0x8929e9dbd2785e3ba16175e596cdd61520fee0d1` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -125,8 +125,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x8929e9...fee0d1`](./contracts/ethereum-1/0x8929e9dbd2785e3ba16175e596cdd61520fee0d1/) | AltitudeToken | token | $15,502.80 | Verified native implementation with $15,502.80 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xa912cb...18db82`](./contracts/arbitrum-42161/0xa912cb42ef8a9e5898cae13f678d372b1a18db82/) | AltitudeFarms | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8929e9dbd2785e3ba16175e596cdd61520fee0d1`](./contracts/ethereum-1/0x8929e9dbd2785e3ba16175e596cdd61520fee0d1/) | AltitudeToken | token | $15,502.80 | Verified native implementation with $15,502.80 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xa912cb42ef8a9e5898cae13f678d372b1a18db82`](./contracts/arbitrum-42161/0xa912cb42ef8a9e5898cae13f678d372b1a18db82/) | AltitudeFarms | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

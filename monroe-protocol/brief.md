@@ -59,7 +59,7 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Synth | unknown | manta | n/a | [`0xf88df1...53f043`](./contracts/manta-169/0xf88df111343bffe7a2d89fb770d77a264d53f043/) | ✅ Audited |
+| Synth | unknown | manta | n/a | [`0xf88df111343bffe7a2d89fb770d77a264d53f043`](./contracts/manta-169/0xf88df111343bffe7a2d89fb770d77a264d53f043/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 
@@ -83,7 +83,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | avalanche | n/a | `0xf88df1...53f043` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xf88df111343bffe7a2d89fb770d77a264d53f043` | ❓ Unverified |
 
 ## Audit Inventory
 

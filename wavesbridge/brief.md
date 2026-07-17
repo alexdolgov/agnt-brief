@@ -61,12 +61,12 @@ The protocol comprises 5 functional families. Its contracts share 2 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Bridge | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0x3ac7a6...9c3a55`](./contracts/ethereum-1/0x3ac7a6635d99f376c3c05442f7eef62d349c3a55/); bsc [`0x3ac7a6...9c3a55`](./contracts/bsc-56/0x3ac7a6635d99f376c3c05442f7eef62d349c3a55/) | ⚠️ Unaudited |
-| Neiro | unknown | ethereum | n/a | [`0x812ba4...a853ee`](./contracts/ethereum-1/0x812ba41e071c7b7fa4ebcfb62df5f45f6fa853ee/) | ⚠️ Unaudited |
-| PepeToken | token | ethereum | n/a | [`0x698250...311933`](./contracts/ethereum-1/0x6982508145454ce325ddbe47a25d4ec3d2311933/) | ⚠️ Unaudited |
-| PortalV2 | unknown | arbitrum | n/a | [`0xac8f44...0ffcbe`](./contracts/arbitrum-42161/0xac8f44ceca92b2a4b30360e5bd3043850a0ffcbe/) | ⚠️ Unaudited |
-| RealGames | unknown | ethereum | n/a | [`0x1a920b...e04882`](./contracts/ethereum-1/0x1a920b0eae5b49c51ebf042a61c3fa58dae04882/) | ⚠️ Unaudited |
-| SimpleToken | token | ethereum | n/a | [`0x4d2244...594381`](./contracts/ethereum-1/0x4d224452801aced8b2f0aebe155379bb5d594381/) | ⚠️ Unaudited |
+| Bridge | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0x3ac7a6635d99f376c3c05442f7eef62d349c3a55`](./contracts/ethereum-1/0x3ac7a6635d99f376c3c05442f7eef62d349c3a55/); bsc [`0x3ac7a6635d99f376c3c05442f7eef62d349c3a55`](./contracts/bsc-56/0x3ac7a6635d99f376c3c05442f7eef62d349c3a55/) | ⚠️ Unaudited |
+| Neiro | unknown | ethereum | n/a | [`0x812ba41e071c7b7fa4ebcfb62df5f45f6fa853ee`](./contracts/ethereum-1/0x812ba41e071c7b7fa4ebcfb62df5f45f6fa853ee/) | ⚠️ Unaudited |
+| PepeToken | token | ethereum | n/a | [`0x6982508145454ce325ddbe47a25d4ec3d2311933`](./contracts/ethereum-1/0x6982508145454ce325ddbe47a25d4ec3d2311933/) | ⚠️ Unaudited |
+| PortalV2 | unknown | arbitrum | n/a | [`0xac8f44ceca92b2a4b30360e5bd3043850a0ffcbe`](./contracts/arbitrum-42161/0xac8f44ceca92b2a4b30360e5bd3043850a0ffcbe/) | ⚠️ Unaudited |
+| RealGames | unknown | ethereum | n/a | [`0x1a920b0eae5b49c51ebf042a61c3fa58dae04882`](./contracts/ethereum-1/0x1a920b0eae5b49c51ebf042a61c3fa58dae04882/) | ⚠️ Unaudited |
+| SimpleToken | token | ethereum | n/a | [`0x4d224452801aced8b2f0aebe155379bb5d594381`](./contracts/ethereum-1/0x4d224452801aced8b2f0aebe155379bb5d594381/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -97,12 +97,12 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x3ac7a6...9c3a55`](./contracts/ethereum-1/0x3ac7a6635d99f376c3c05442f7eef62d349c3a55/) | Bridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x812ba4...a853ee`](./contracts/ethereum-1/0x812ba41e071c7b7fa4ebcfb62df5f45f6fa853ee/) | Neiro | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x698250...311933`](./contracts/ethereum-1/0x6982508145454ce325ddbe47a25d4ec3d2311933/) | PepeToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xac8f44...0ffcbe`](./contracts/arbitrum-42161/0xac8f44ceca92b2a4b30360e5bd3043850a0ffcbe/) | PortalV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1a920b...e04882`](./contracts/ethereum-1/0x1a920b0eae5b49c51ebf042a61c3fa58dae04882/) | RealGames | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x4d2244...594381`](./contracts/ethereum-1/0x4d224452801aced8b2f0aebe155379bb5d594381/) | SimpleToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x3ac7a6635d99f376c3c05442f7eef62d349c3a55`](./contracts/ethereum-1/0x3ac7a6635d99f376c3c05442f7eef62d349c3a55/) | Bridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x812ba41e071c7b7fa4ebcfb62df5f45f6fa853ee`](./contracts/ethereum-1/0x812ba41e071c7b7fa4ebcfb62df5f45f6fa853ee/) | Neiro | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6982508145454ce325ddbe47a25d4ec3d2311933`](./contracts/ethereum-1/0x6982508145454ce325ddbe47a25d4ec3d2311933/) | PepeToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xac8f44ceca92b2a4b30360e5bd3043850a0ffcbe`](./contracts/arbitrum-42161/0xac8f44ceca92b2a4b30360e5bd3043850a0ffcbe/) | PortalV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1a920b0eae5b49c51ebf042a61c3fa58dae04882`](./contracts/ethereum-1/0x1a920b0eae5b49c51ebf042a61c3fa58dae04882/) | RealGames | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4d224452801aced8b2f0aebe155379bb5d594381`](./contracts/ethereum-1/0x4d224452801aced8b2f0aebe155379bb5d594381/) | SimpleToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

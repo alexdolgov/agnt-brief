@@ -62,7 +62,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BackedAutoFeeTokenImplementation | unknown | arbitrum | n/a | [`0x02a6c1...94f4f9`](./contracts/arbitrum-42161/0x02a6c1789c3b4fdb1a7a3dfa39f90e5d3c94f4f9/) | ⚠️ Unaudited |
+| BackedAutoFeeTokenImplementation | unknown | arbitrum | n/a | [`0x02a6c1789c3b4fdb1a7a3dfa39f90e5d3c94f4f9`](./contracts/arbitrum-42161/0x02a6c1789c3b4fdb1a7a3dfa39f90e5d3c94f4f9/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,7 +93,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | [`0x02a6c1...94f4f9`](./contracts/arbitrum-42161/0x02a6c1789c3b4fdb1a7a3dfa39f90e5d3c94f4f9/) | BackedAutoFeeTokenImplementation | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x02a6c1789c3b4fdb1a7a3dfa39f90e5d3c94f4f9`](./contracts/arbitrum-42161/0x02a6c1789c3b4fdb1a7a3dfa39f90e5d3c94f4f9/) | BackedAutoFeeTokenImplementation | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

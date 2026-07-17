@@ -57,7 +57,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x9f49a9...0f6f04`, chain 42)
+- UnnamedContract (`0x9f49a95b0c3c9e2a6c77a16c177928294c0f6f04`, chain 42)
 
 ## Contract Surface Quality
 
@@ -121,8 +121,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | lukso | unit-257089 | `0x8a3982...bc8f7d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | lukso | unit-257090 | `0x9f49a9...0f6f04` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | lukso | unit-257089 | `0x8a3982f0a7d154d11a5f43eec7f50e52ebbc8f7d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | lukso | unit-257090 | `0x9f49a95b0c3c9e2a6c77a16c177928294c0f6f04` | ❓ Unverified |
 
 ## Audit Inventory
 

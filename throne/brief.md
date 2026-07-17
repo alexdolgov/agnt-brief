@@ -59,16 +59,16 @@ The protocol comprises 4 functional families. Its contracts share 8 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| OATH | unknown | base | n/a | [`0x798acf...a28ab5`](./contracts/base-8453/0x798acf1bd6e556f0c3cd72e77b3d169d26a28ab5/) | ✅ Audited |
+| OATH | unknown | base | n/a | [`0x798acf1bd6e556f0c3cd72e77b3d169d26a28ab5`](./contracts/base-8453/0x798acf1bd6e556f0c3cd72e77b3d169d26a28ab5/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (4)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| MixedRouteQuoterV1 | unknown | base | n/a | [`0xf2e996...20c80b`](./contracts/base-8453/0xf2e99648bf3b788690b6091b7ae19b507220c80b/) | ⚠️ Unaudited |
-| SmartRouter | adapter | base | n/a | [`0xf40700...df9196`](./contracts/base-8453/0xf407009ea759728e4349cca85292739347df9196/) | ⚠️ Unaudited |
-| SmartRouterHelper | unknown | base | n/a | [`0x17741e...294d17`](./contracts/base-8453/0x17741ec5d257b2828b83b28849d526497b294d17/) | ⚠️ Unaudited |
-| TokenValidator | unknown | base | n/a | [`0xa13be8...512022`](./contracts/base-8453/0xa13be8c8b3d6597e241712972f27bf9fef512022/) | ⚠️ Unaudited |
+| MixedRouteQuoterV1 | unknown | base | n/a | [`0xf2e99648bf3b788690b6091b7ae19b507220c80b`](./contracts/base-8453/0xf2e99648bf3b788690b6091b7ae19b507220c80b/) | ⚠️ Unaudited |
+| SmartRouter | adapter | base | n/a | [`0xf407009ea759728e4349cca85292739347df9196`](./contracts/base-8453/0xf407009ea759728e4349cca85292739347df9196/) | ⚠️ Unaudited |
+| SmartRouterHelper | unknown | base | n/a | [`0x17741ec5d257b2828b83b28849d526497b294d17`](./contracts/base-8453/0x17741ec5d257b2828b83b28849d526497b294d17/) | ⚠️ Unaudited |
+| TokenValidator | unknown | base | n/a | [`0xa13be8c8b3d6597e241712972f27bf9fef512022`](./contracts/base-8453/0xa13be8c8b3d6597e241712972f27bf9fef512022/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -88,15 +88,15 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | base | n/a | `0x2ad2d8...beb238` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x4963ad...0add43` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x62e6b3...88f2e6` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x6ed659...88ccd2` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x7d826c...0f89a6` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x82d32a...40656a` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xa9eecd...6f7e06` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xb3cbf6...f20a4d` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xf991af...0ad10e` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x2ad2d8c62790c91178e6bd49cdc829a19fbeb238` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x4963ad93936f369b14b78d4a9c0a68c4710add43` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x62e6b3c26540a9f41cb2300a9f7c1531b288f2e6` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x6ed659647db19ec3d510f28b5c767fb9dd88ccd2` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x7d826c47c242122d8834baf2df11299a800f89a6` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x82d32a58d94aece304eb081ac524006f9840656a` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xa9eecdb90bb79982cfe6ea17daa9aa758c6f7e06` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xb3cbf66f2372a350a746513278dd273a8cf20a4d` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf991af9650c77eaf610b11b5c449884e8c0ad10e` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -110,10 +110,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0xf2e996...20c80b`](./contracts/base-8453/0xf2e99648bf3b788690b6091b7ae19b507220c80b/) | MixedRouteQuoterV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xf40700...df9196`](./contracts/base-8453/0xf407009ea759728e4349cca85292739347df9196/) | SmartRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x17741e...294d17`](./contracts/base-8453/0x17741ec5d257b2828b83b28849d526497b294d17/) | SmartRouterHelper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xa13be8...512022`](./contracts/base-8453/0xa13be8c8b3d6597e241712972f27bf9fef512022/) | TokenValidator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xf2e99648bf3b788690b6091b7ae19b507220c80b`](./contracts/base-8453/0xf2e99648bf3b788690b6091b7ae19b507220c80b/) | MixedRouteQuoterV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xf407009ea759728e4349cca85292739347df9196`](./contracts/base-8453/0xf407009ea759728e4349cca85292739347df9196/) | SmartRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x17741ec5d257b2828b83b28849d526497b294d17`](./contracts/base-8453/0x17741ec5d257b2828b83b28849d526497b294d17/) | SmartRouterHelper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xa13be8c8b3d6597e241712972f27bf9fef512022`](./contracts/base-8453/0xa13be8c8b3d6597e241712972f27bf9fef512022/) | TokenValidator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

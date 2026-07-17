@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- OxO (`0x5a3e6a...811ad5`, chain 1)
+- OxO (`0x5a3e6a77ba2f983ec0d371ea3b475f8bc0811ad5`, chain 1)
 
 ## Contract Surface Quality
 
@@ -103,12 +103,12 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AltBn128 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x04b597...0463c6` | ⚠️ Unaudited |
-| LSAG | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x09489b...c614fc` | ⚠️ Unaudited |
-| OxO | unknown | project_anchor | own_supporting | 0 | ethereum | unit-266804 | `0x5a3e6a...811ad5` | ⚠️ Unaudited |
-| OxODashboardClaim | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x02b15c...8a2169` | ⚠️ Unaudited |
-| OxOFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x39bb77...4bec3f` | ⚠️ Unaudited |
-| OxOMixerFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1b3279...9c70a4` | ⚠️ Unaudited |
+| AltBn128 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x04b597a1e8d1526ac8168174f426b5f47c0463c6` | ⚠️ Unaudited |
+| LSAG | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x09489bceb5b8ce3b6010801c4760ee9d1cc614fc` | ⚠️ Unaudited |
+| OxO | unknown | project_anchor | own_supporting | 0 | ethereum | unit-266804 | `0x5a3e6a77ba2f983ec0d371ea3b475f8bc0811ad5` | ⚠️ Unaudited |
+| OxODashboardClaim | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x02b15c47b4b516a22fd2d8b1fc662afb808a2169` | ⚠️ Unaudited |
+| OxOFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x39bb7720796f474d5e9fe66495a45719914bec3f` | ⚠️ Unaudited |
+| OxOMixerFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1b32797451b388988b1c01b249cbf6f5679c70a4` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -128,7 +128,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc02aaa...756cc2` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -165,7 +165,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x5a3e6a...811ad5` | OxO | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x5a3e6a77ba2f983ec0d371ea3b475f8bc0811ad5` | OxO | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

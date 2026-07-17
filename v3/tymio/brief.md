@@ -57,8 +57,8 @@ The pinned logic-topography run contains 2 contract row(s) across arbitrum, ethe
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- PayerV3 (`0xb67d63...f1aad6`, chain 1)
-- PayerV3 (`0xb67d63...f1aad6`, chain 42161)
+- PayerV3 (`0xb67d637b1301eeb56dba4555bbd15cd220f1aad6`, chain 1)
+- PayerV3 (`0xb67d637b1301eeb56dba4555bbd15cd220f1aad6`, chain 42161)
 
 ## Contract Surface Quality
 
@@ -102,13 +102,13 @@ The pinned logic-topography run contains 2 contract row(s) across arbitrum, ethe
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| PayerV3 | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-395100 | `0xb67d63...f1aad6` | ✅ Audited |
+| PayerV3 | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-395100 | `0xb67d637b1301eeb56dba4555bbd15cd220f1aad6` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| PayerV3 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-395099 | `0xb67d63...f1aad6` | ⚠️ Unaudited |
+| PayerV3 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-395099 | `0xb67d637b1301eeb56dba4555bbd15cd220f1aad6` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -146,7 +146,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| TYMIO Security Analysis by Pessimistic.pdf | PayerV3 | own contract | PayerV3 (alternative) `0xb67d63...f1aad6` — deployed 2024-04-03 09:03:35+03 — liveness: live (current_address_book_code)<br>PayerV3 (selected) `0xb67d63...f1aad6` — deployed 2024-03-20 11:39:54+03 — liveness: live (current_address_book_code) | deployment-date disambiguation: 2024-03-20 was 7d from audit; next candidate 21d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| TYMIO Security Analysis by Pessimistic.pdf | PayerV3 | own contract | PayerV3 (alternative) `0xb67d637b1301eeb56dba4555bbd15cd220f1aad6` — deployed 2024-04-03 09:03:35+03 — liveness: live (current_address_book_code)<br>PayerV3 (selected) `0xb67d637b1301eeb56dba4555bbd15cd220f1aad6` — deployed 2024-03-20 11:39:54+03 — liveness: live (current_address_book_code) | deployment-date disambiguation: 2024-03-20 was 7d from audit; next candidate 21d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
 
 ## Coverage Gaps
 
@@ -154,7 +154,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0xb67d63...f1aad6` | PayerV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xb67d637b1301eeb56dba4555bbd15cd220f1aad6` | PayerV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -90,7 +90,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| GvToken | token | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xea5ede...ae1550` | ⚠️ Unaudited |
+| GvToken | token | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xea5edef1edb2f47b9637c029a6ac3b80a7ae1550` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

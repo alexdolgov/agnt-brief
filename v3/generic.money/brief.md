@@ -48,8 +48,8 @@ The pinned logic-topography run contains 17 contract row(s) across ethereum. Str
 
 ### Forked Contracts
 
-**AggregationRouterV6** (`0x111111...842a65`, chain 1)
-Origin: 1inch (`0x111111...842a65`)
+**AggregationRouterV6** (`0x111111125421ca6dc452d289314280a0f8842a65`, chain 1)
+Origin: 1inch (`0x111111125421ca6dc452d289314280a0f8842a65`)
 Containment: 100.0% - 45 functions inherited
 Centroid audit status: pending_validation
 
@@ -59,19 +59,19 @@ Removals (removed from original): none
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- BridgeCoordinatorL1 (`0xcecf6e...d056b9`, chain 1)
-- Controller (`0xf056d4...92825c`, chain 1)
-- ERC1967Proxy (`0x3794d7...5e3d17`, chain 1)
-- GenericDepositor (`0x79b4cd...35f919`, chain 1)
-- GenericUnit (`0x8c307b...172502`, chain 1)
-- GenericUSD (`0x933e1a...feacc0`, chain 1)
-- GenericUSD (`0xac8c1a...98589b`, chain 1)
-- GenericVault (`0x4825ef...3c1c3f`, chain 1)
-- GenericVault (`0x6133da...89892a`, chain 1)
-- GenericVault (`0xb82809...8157fe`, chain 1)
-- LayerZeroAdapter (`0x05a166...b0144e`, chain 1)
-- LineaBridgeAdapter (`0xe39d67...b9ab93`, chain 1)
-- OneInchSwapper (`0xb23684...7aeffc`, chain 1)
+- BridgeCoordinatorL1 (`0xcecf6e42f9aa38cb50dc6a0c3f279cd457d056b9`, chain 1)
+- Controller (`0xf056d4f903e53432873bfd0da32f9d6fcb92825c`, chain 1)
+- ERC1967Proxy (`0x3794d7f91b3dd3b338fee671ac6aa42bea5e3d17`, chain 1)
+- GenericDepositor (`0x79b4cdb14a31e8b0e21c0120c409ac14af35f919`, chain 1)
+- GenericUnit (`0x8c307badbd78bea5a1ccf9677caa58e7a2172502`, chain 1)
+- GenericUSD (`0x933e1a38386d96a8e418d3d93b7f376e5bfeacc0`, chain 1)
+- GenericUSD (`0xac8c1aeb584765db16ac3e08d4736cfce198589b`, chain 1)
+- GenericVault (`0x4825eff24f9b7b76eeafa2ecc6a1d5dfcb3c1c3f`, chain 1)
+- GenericVault (`0x6133da4cd25773ebd38542a8acef8f94ca89892a`, chain 1)
+- GenericVault (`0xb8280955ae7b5207af4cdbdcd775135bd38157fe`, chain 1)
+- LayerZeroAdapter (`0x05a166797e784d49ba880b289647eccb29b0144e`, chain 1)
+- LineaBridgeAdapter (`0xe39d672416421ce1536997ff892c8b339eb9ab93`, chain 1)
+- OneInchSwapper (`0xb2368497691f4c6e9b7acede4efc7831417aeffc`, chain 1)
 
 ## Contract Surface Quality
 
@@ -115,33 +115,33 @@ Removals (removed from original): none
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BridgeCoordinatorL1 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386804 | 2 deployments: ethereum `0x0503f2...cb6a01`; ethereum `0xcecf6e...d056b9` | ✅ Audited |
-| GenericDepositor | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386793 | `0x79b4cd...35f919` | ✅ Audited |
-| GenericUnit | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386794 | `0x8c307b...172502` | ✅ Audited |
-| LayerZeroAdapter | adapter | project_anchor | own_supporting | 0 | ethereum | unit-386787 | `0x05a166...b0144e` | ✅ Audited |
-| LineaBridgeAdapter | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-386799 | `0xe39d67...b9ab93` | ✅ Audited |
-| OneInchSwapper | adapter | project_anchor | own_supporting | 0 | ethereum | unit-386796 | `0xb23684...7aeffc` | ✅ Audited |
+| BridgeCoordinatorL1 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386804 | 2 deployments: ethereum `0x0503f2c5a1a4b72450c6cfa790f2097cf5cb6a01`; ethereum `0xcecf6e42f9aa38cb50dc6a0c3f279cd457d056b9` | ✅ Audited |
+| GenericDepositor | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386793 | `0x79b4cdb14a31e8b0e21c0120c409ac14af35f919` | ✅ Audited |
+| GenericUnit | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386794 | `0x8c307badbd78bea5a1ccf9677caa58e7a2172502` | ✅ Audited |
+| LayerZeroAdapter | adapter | project_anchor | own_supporting | 0 | ethereum | unit-386787 | `0x05a166797e784d49ba880b289647eccb29b0144e` | ✅ Audited |
+| LineaBridgeAdapter | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-386799 | `0xe39d672416421ce1536997ff892c8b339eb9ab93` | ✅ Audited |
+| OneInchSwapper | adapter | project_anchor | own_supporting | 0 | ethereum | unit-386796 | `0xb2368497691f4c6e9b7acede4efc7831417aeffc` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (16)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AggregationRouterV6 | adapter | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-386788 | `0x111111...842a65` | ⚠️ Unaudited |
-| Controller | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1e4b88...086b28` | ⚠️ Unaudited |
-| Controller | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386802 | `0x3a64d2...c973ae` | ⚠️ Unaudited |
-| Controller | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x6a7af8...bc998b` | ⚠️ Unaudited |
-| Controller | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386800 | `0xf056d4...92825c` | ⚠️ Unaudited |
-| DAO | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386801 | `0x3794d7...5e3d17` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x12dc03...1bd5b9`; ethereum `0x17a8b3...383562` | ⚠️ Unaudited |
-| GenericUnit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xee77df...3d69d7` | ⚠️ Unaudited |
-| GenericUSD | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386803 | 2 deployments: ethereum `0x933e1a...feacc0`; ethereum `0xece811...399edf` | ⚠️ Unaudited |
-| GenericUSD | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386795 | `0xac8c1a...98589b` | ⚠️ Unaudited |
-| GenericUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xbcfafe...42b738` | ⚠️ Unaudited |
-| GenericVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-386789 | `0x4825ef...3c1c3f` | ⚠️ Unaudited |
-| GenericVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-386791 | `0x6133da...89892a` | ⚠️ Unaudited |
-| GenericVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x844584...d71b1b`; ethereum `0xfce133...6b73cf` | ⚠️ Unaudited |
-| GenericVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-386797 | `0xb82809...8157fe` | ⚠️ Unaudited |
-| OneInchSwapper | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc1c8db...200a50` | ⚠️ Unaudited |
+| AggregationRouterV6 | adapter | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-386788 | `0x111111125421ca6dc452d289314280a0f8842a65` | ⚠️ Unaudited |
+| Controller | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1e4b88b37bae84b2975a09e5811cc0312c086b28` | ⚠️ Unaudited |
+| Controller | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386802 | `0x3a64d23313e1beaaba25ec13149bd8d514c973ae` | ⚠️ Unaudited |
+| Controller | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x6a7af858c40d9fcea728da11e836bdd410bc998b` | ⚠️ Unaudited |
+| Controller | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386800 | `0xf056d4f903e53432873bfd0da32f9d6fcb92825c` | ⚠️ Unaudited |
+| DAO | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386801 | `0x3794d7f91b3dd3b338fee671ac6aa42bea5e3d17` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x12dc0362553b3cd5141da3bebab0c7e51d1bd5b9`; ethereum `0x17a8b3637377a2eb934ff65e5c2ec511b1383562` | ⚠️ Unaudited |
+| GenericUnit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xee77df35586d3b61f53d424ca201cd4b8d3d69d7` | ⚠️ Unaudited |
+| GenericUSD | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386803 | 2 deployments: ethereum `0x933e1a38386d96a8e418d3d93b7f376e5bfeacc0`; ethereum `0xece811d35f79c4868a2b911e55d9aa0821399edf` | ⚠️ Unaudited |
+| GenericUSD | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386795 | `0xac8c1aeb584765db16ac3e08d4736cfce198589b` | ⚠️ Unaudited |
+| GenericUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xbcfafefeef2d4c2fe3f7e23cfa22b5f05a42b738` | ⚠️ Unaudited |
+| GenericVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-386789 | `0x4825eff24f9b7b76eeafa2ecc6a1d5dfcb3c1c3f` | ⚠️ Unaudited |
+| GenericVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-386791 | `0x6133da4cd25773ebd38542a8acef8f94ca89892a` | ⚠️ Unaudited |
+| GenericVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x844584fea58372dc3d4ed74083d15ed10cd71b1b`; ethereum `0xfce133e9a32b730dea66ef19637b9a5d106b73cf` | ⚠️ Unaudited |
+| GenericVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-386797 | `0xb8280955ae7b5207af4cdbdcd775135bd38157fe` | ⚠️ Unaudited |
+| OneInchSwapper | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc1c8db9d9fe2a312ce5bd8c76764da8539200a50` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -181,9 +181,9 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 |---|---|---|---|---|---|
 | 2026-01-19-report-cantinacode-generic-money.pdf | BaseAdapter | unmatched — not counted | — | listed in scope | no |
 | 2026-01-19-report-cantinacode-generic-money.pdf | BridgeTypes | unmatched — not counted | — | listed in scope | no |
-| 2026-01-19-report-cantinacode-generic-money.pdf | LayerZeroAdapter | own contract | LayerZeroAdapter (selected) `0x05a166...b0144e` — deployed 2025-12-17 17:28:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 2026-01-19-report-cantinacode-generic-money.pdf | LineaBridgeAdapter | own contract | LineaBridgeAdapter (selected) `0xe39d67...b9ab93` — deployed 2025-12-17 17:27:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 2026-01-19-report-cantinacode-generic-money.pdf | BridgeCoordinatorL1 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x0503f2...cb6a01` — deployed 2025-12-17 17:26:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2026-01-19-report-cantinacode-generic-money.pdf | LayerZeroAdapter | own contract | LayerZeroAdapter (selected) `0x05a166797e784d49ba880b289647eccb29b0144e` — deployed 2025-12-17 17:28:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2026-01-19-report-cantinacode-generic-money.pdf | LineaBridgeAdapter | own contract | LineaBridgeAdapter (selected) `0xe39d672416421ce1536997ff892c8b339eb9ab93` — deployed 2025-12-17 17:27:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2026-01-19-report-cantinacode-generic-money.pdf | BridgeCoordinatorL1 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x0503f2c5a1a4b72450c6cfa790f2097cf5cb6a01` — deployed 2025-12-17 17:26:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2026-01-19-report-cantinacode-generic-money.pdf | BridgeCoordinatorL2 | unmatched — not counted | — | listed in scope | no |
 | 2026-01-19-report-cantinacode-generic-money.pdf | AdapterManager | unmatched — not counted | — | listed in scope | no |
 | 2026-01-19-report-cantinacode-generic-money.pdf | BaseBridgeCoordinator | unmatched — not counted | — | listed in scope | no |
@@ -196,7 +196,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | 2026-01-19-report-cantinacode-generic-money.pdf | AccountingLogic | unmatched — not counted | — | listed in scope | no |
 | 2026-01-19-report-cantinacode-generic-money.pdf | BaseController | unmatched — not counted | — | listed in scope | no |
 | 2026-01-19-report-cantinacode-generic-money.pdf | ConfigManager | unmatched — not counted | — | listed in scope | no |
-| 2026-01-19-report-cantinacode-generic-money.pdf | Controller | ambiguous — not counted | TransparentUpgradeableProxy (proxy) (alternative) `0x3a64d2...c973ae` — deployed 2025-12-17 12:00:11+03 — liveness: live (current_address_book_code)<br>Controller (alternative) `0xf056d4...92825c` — deployed 2025-12-15 19:12:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| 2026-01-19-report-cantinacode-generic-money.pdf | Controller | ambiguous — not counted | TransparentUpgradeableProxy (proxy) (alternative) `0x3a64d23313e1beaaba25ec13149bd8d514c973ae` — deployed 2025-12-17 12:00:11+03 — liveness: live (current_address_book_code)<br>Controller (alternative) `0xf056d4f903e53432873bfd0da32f9d6fcb92825c` — deployed 2025-12-15 19:12:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | 2026-01-19-report-cantinacode-generic-money.pdf | PeripheryManager | unmatched — not counted | — | listed in scope | no |
 | 2026-01-19-report-cantinacode-generic-money.pdf | PriceFeedManager | unmatched — not counted | — | listed in scope | no |
 | 2026-01-19-report-cantinacode-generic-money.pdf | RebalancingManager | unmatched — not counted | — | listed in scope | no |
@@ -204,18 +204,18 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | 2026-01-19-report-cantinacode-generic-money.pdf | VaultLimitsLogic | unmatched — not counted | — | listed in scope | no |
 | 2026-01-19-report-cantinacode-generic-money.pdf | VaultManager | unmatched — not counted | — | listed in scope | no |
 | 2026-01-19-report-cantinacode-generic-money.pdf | YieldManager | unmatched — not counted | — | listed in scope | no |
-| 2026-01-19-report-cantinacode-generic-money.pdf | GenericUSD | ambiguous — not counted | GenericUSD (alternative) `0xac8c1a...98589b` — deployed 2025-12-15 19:14:59+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0xece811...399edf` — deployed 2025-12-17 12:02:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| 2026-01-19-report-cantinacode-generic-money.pdf | GenericDepositor | own contract | GenericDepositor (selected) `0x79b4cd...35f919` — deployed 2025-12-18 12:55:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 2026-01-19-report-cantinacode-generic-money.pdf | OneInchSwapper | own contract | OneInchSwapper (selected) `0xb23684...7aeffc` — deployed 2025-12-17 12:01:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2026-01-19-report-cantinacode-generic-money.pdf | GenericUSD | ambiguous — not counted | GenericUSD (alternative) `0xac8c1aeb584765db16ac3e08d4736cfce198589b` — deployed 2025-12-15 19:14:59+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0xece811d35f79c4868a2b911e55d9aa0821399edf` — deployed 2025-12-17 12:02:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| 2026-01-19-report-cantinacode-generic-money.pdf | GenericDepositor | own contract | GenericDepositor (selected) `0x79b4cdb14a31e8b0e21c0120c409ac14af35f919` — deployed 2025-12-18 12:55:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2026-01-19-report-cantinacode-generic-money.pdf | OneInchSwapper | own contract | OneInchSwapper (selected) `0xb2368497691f4c6e9b7acede4efc7831417aeffc` — deployed 2025-12-17 12:01:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2026-01-19-report-cantinacode-generic-money.pdf | UniswapV3Swapper | unmatched — not counted | — | listed in scope | no |
 | 2026-01-19-report-cantinacode-generic-money.pdf | USDSToDAIUniswapV3Swapper | unmatched — not counted | — | listed in scope | no |
 | 2026-01-19-report-cantinacode-generic-money.pdf | ERC20Mintable | unmatched — not counted | — | listed in scope | no |
-| 2026-01-19-report-cantinacode-generic-money.pdf | GenericUnit | own contract | GenericUnit (selected) `0x8c307b...172502` — deployed 2025-12-17 12:00:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2026-01-19-report-cantinacode-generic-money.pdf | GenericUnit | own contract | GenericUnit (selected) `0x8c307badbd78bea5a1ccf9677caa58e7a2172502` — deployed 2025-12-17 12:00:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2026-01-19-report-cantinacode-generic-money.pdf | GenericUnitL2 | unmatched — not counted | — | listed in scope | no |
 | 2026-01-19-report-cantinacode-generic-money.pdf | WhitelabeledUnitUpgradeable | unmatched — not counted | — | listed in scope | no |
 | 2026-01-19-report-cantinacode-generic-money.pdf | tryGetAssetDecimals | unmatched — not counted | — | listed in scope | no |
 | 2026-01-19-report-cantinacode-generic-money.pdf | ControlledERC7575Vault | unmatched — not counted | — | listed in scope | no |
-| 2026-01-19-report-cantinacode-generic-money.pdf | GenericVault | ambiguous — not counted | GenericVault (alternative) `0x4825ef...3c1c3f` — deployed 2025-12-17 12:05:23+03 — liveness: live (current_address_book_code)<br>GenericVault (alternative) `0xb82809...8157fe` — deployed 2025-12-17 12:06:11+03 — liveness: live (current_address_book_code)<br>GenericVault (alternative) `0x6133da...89892a` — deployed 2025-12-17 12:06:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| 2026-01-19-report-cantinacode-generic-money.pdf | GenericVault | ambiguous — not counted | GenericVault (alternative) `0x4825eff24f9b7b76eeafa2ecc6a1d5dfcb3c1c3f` — deployed 2025-12-17 12:05:23+03 — liveness: live (current_address_book_code)<br>GenericVault (alternative) `0xb8280955ae7b5207af4cdbdcd775135bd38157fe` — deployed 2025-12-17 12:06:11+03 — liveness: live (current_address_book_code)<br>GenericVault (alternative) `0x6133da4cd25773ebd38542a8acef8f94ca89892a` — deployed 2025-12-17 12:06:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | 2026-01-19-report-cantinacode-generic-money.pdf | SingleStrategyVault | unmatched — not counted | — | listed in scope | no |
 
 ## Coverage Gaps
@@ -224,14 +224,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x3a64d2...c973ae` | Controller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xf056d4...92825c` | Controller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x3794d7...5e3d17` | DAO | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x933e1a...feacc0` | GenericUSD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xac8c1a...98589b` | GenericUSD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x4825ef...3c1c3f` | GenericVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x6133da...89892a` | GenericVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xb82809...8157fe` | GenericVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x3a64d23313e1beaaba25ec13149bd8d514c973ae` | Controller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xf056d4f903e53432873bfd0da32f9d6fcb92825c` | Controller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x3794d7f91b3dd3b338fee671ac6aa42bea5e3d17` | DAO | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x933e1a38386d96a8e418d3d93b7f376e5bfeacc0` | GenericUSD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xac8c1aeb584765db16ac3e08d4736cfce198589b` | GenericUSD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x4825eff24f9b7b76eeafa2ecc6a1d5dfcb3c1c3f` | GenericVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x6133da4cd25773ebd38542a8acef8f94ca89892a` | GenericVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xb8280955ae7b5207af4cdbdcd775135bd38157fe` | GenericVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

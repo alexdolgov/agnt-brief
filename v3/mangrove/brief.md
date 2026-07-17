@@ -90,99 +90,99 @@ The pinned logic-topography run contains 37 contract row(s) across arbitrum, bas
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AaveKandelSeeder | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246087 | `0x38845d...5b5d77` | ⚠️ Unaudited |
-| AaveKandelSeeder | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-246141 | `0x095854...9b9b1d` | ⚠️ Unaudited |
-| AaveKandelSeeder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: base `0x3e6d5a...bec228`; base `0x4ff58b...ab0eb1`; base `0x556dc5...0a719a` | ⚠️ Unaudited |
-| AaveKandelSeeder | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-246127 | `0x55b12d...58fb5a` | ⚠️ Unaudited |
-| BalancerV2Swapper | adapter | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246085 | `0x369022...685dd0` | ⚠️ Unaudited |
-| BlastMangrove | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | blast | unit-246139 | `0xb1a49c...fb448c` | ⚠️ Unaudited |
-| ChainlinkPriceOracleFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246111 | `0xe26eb2...f3b1ed` | ⚠️ Unaudited |
-| CompoundVaultV2Deployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 2 deployments: sei `0x889021...1b6ad3`; sei `0xd34e51...58cf0a` | ⚠️ Unaudited |
-| ERC4626KandelSeeder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x0d5e4c...d902e6` | ⚠️ Unaudited |
-| ERC4626KandelSeeder | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246100 | `0x9c5ad9...58bb11` | ⚠️ Unaudited |
-| ERC4626KandelSeeder | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-246151 | `0x4778c5...0b41fe` | ⚠️ Unaudited |
-| ERC4626RouterDeployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: sei `0xb37f7a...ee14d9`; sei `0xc698f8...121b72`; base `0x5f4d59...ee7b34` | ⚠️ Unaudited |
-| ERC4626RouterProxyDeployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x84bf03...5ea71c` | ⚠️ Unaudited |
-| ERC4626VaultV2Deployer | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x6d5e02...c6b69a` | ⚠️ Unaudited |
-| GeometricKandelExtra | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: sei `0x572fcd...0373cc`; base `0x274f47...4bc077` | ⚠️ Unaudited |
-| Kandel | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xc88863...9878f0` | ⚠️ Unaudited |
-| KandelLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 6 deployments: sei `0x9a48cb...1a7ad2`; sei `0xbef21f...a1ba3a`; base `0x1d7c32...1427d0`; blast `0x0ea85f...28e3fa`; blast `0x3660bd...762af9`; blast `0xd12594...466fcf` | ⚠️ Unaudited |
-| KandelSeeder | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246075 | `0x075420...5124a3` | ⚠️ Unaudited |
-| KandelSeeder | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-246158 | `0x808bc0...6a089a` | ⚠️ Unaudited |
-| KandelSeeder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x4bb756...91b03d` | ⚠️ Unaudited |
-| KandelSeeder | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-246133 | `0x89139b...35745d` | ⚠️ Unaudited |
-| Mangrove | proxy | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | sei | unit-246173 | `0xd9834d...b14bcd` | ⚠️ Unaudited |
-| Mangrove | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-246145 | `0x226135...725faa` | ⚠️ Unaudited |
-| Mangrove | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-246116 | `0x109d9c...f93f61` | ⚠️ Unaudited |
-| Mangrove | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x1dbf94...d9d227` | ⚠️ Unaudited |
-| MangroveChainlinkOracleFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-246164 | `0x9d05c7...9e5712` | ⚠️ Unaudited |
-| MangroveChainlinkOracleFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-246121 | `0x31c47e...1f2587` | ⚠️ Unaudited |
-| MangroveChainlinkOracleFactoryV2 | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-246155 | `0x656a6a...960123` | ⚠️ Unaudited |
-| MangroveCleanerV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 2 deployments: base `0xb922a4...b75eae`; blast `0x22ba67...1099fa` | ⚠️ Unaudited |
-| MangroveDiaOracleFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246074 | `0x035d53...4518a1` | ⚠️ Unaudited |
-| MangroveDiaOracleFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0cf194...dd87a3` | ⚠️ Unaudited |
-| MangroveDiaOracleFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-246153 | `0x529756...d39560` | ⚠️ Unaudited |
-| MangroveERC4626KandelVaultFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246102 | `0xadbb10...6956a0` | ⚠️ Unaudited |
-| MangroveERC4626KandelVaultFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x5975ba...5e20fa` | ⚠️ Unaudited |
-| MangroveERC4626KandelVaultFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-246162 | `0x92db74...c052b8` | ⚠️ Unaudited |
-| MangroveGhostBook | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246079 | `0x127a5a...81e8b6` | ⚠️ Unaudited |
-| MangroveGhostBook | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 8 deployments: base `0x02bda8...d0af4c`; base `0xbd7189...b5a918`; base `0xfd4fcc...1fe574`; arbitrum `0x426537...d0b2c1`; arbitrum `0x6b04fb...c673ca`; arbitrum `0xc8857c...366959`; arbitrum `0xe2beb6...36dca9`; arbitrum `0xfff6f0...c20fca` | ⚠️ Unaudited |
-| MangroveGhostBook | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-246143 | `0x15f02f...bd549f` | ⚠️ Unaudited |
-| MangroveGhostBook | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-246123 | `0x46708d...dfafea` | ⚠️ Unaudited |
-| MangroveOrder | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246097 | `0x5ba076...75928b` | ⚠️ Unaudited |
-| MangroveOrder | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-246165 | `0xa3c363...2adf36` | ⚠️ Unaudited |
-| MangroveOrder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 5 deployments: arbitrum `0x0ea85f...28e3fa`; blast `0x50793d...d2ffcc`; blast `0x83251e...32d80e`; blast `0x920474...08e418`; blast `0xded8e2...b0a424` | ⚠️ Unaudited |
-| MangroveOrder | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-246125 | `0x50793d...d2ffcc` | ⚠️ Unaudited |
-| MangrovePoints | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x26e9e3...b4bfd4` | ⚠️ Unaudited |
-| MangroveVaultFactory | registry | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246106 | `0xd6cc0b...ba369e` | ⚠️ Unaudited |
-| MangroveVaultFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-246147 | `0x26a0e4...1dafa5` | ⚠️ Unaudited |
-| MangroveVaultFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xda5ecd...8cce79` | ⚠️ Unaudited |
-| MangroveVaultFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-246129 | `0x6b82ce...dab41a` | ⚠️ Unaudited |
-| MangroveVaultV2Factory | registry | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246089 | `0x44536a...b287b1` | ⚠️ Unaudited |
-| MangroveVaultV2Factory | registry | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246099 | `0x78793b...a7328c` | ⚠️ Unaudited |
-| MangroveVaultV2Factory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 2 deployments: sei `0xbce560...2f314a`; sei `0xfe7d44...2296e3` | ⚠️ Unaudited |
-| MgvCleaner | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x55b196...9ed24c` | ⚠️ Unaudited |
-| MgvOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 4 deployments: base `0xa3749d...08a7d0`; arbitrum `0xb1a49c...fb448c`; blast `0x815872...d57f62`; blast `0xe1c9a6...4b839d` | ⚠️ Unaudited |
-| MgvOracleBaseFee | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x84c931...354723` | ⚠️ Unaudited |
-| MgvPriceOracle | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246077 | `0x10f9e2...bc6e2f` | ⚠️ Unaudited |
-| MgvPriceOracle | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-246160 | `0x8fb396...560ffd` | ⚠️ Unaudited |
-| MgvPriceOracle | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xb81d09...4fd38c` | ⚠️ Unaudited |
-| MgvReader | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246114 | `0xfeafb3...87499e` | ⚠️ Unaudited |
-| MgvReader | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-246171 | `0xe5b118...fb50d3` | ⚠️ Unaudited |
-| MgvReader | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-246131 | `0x7e108d...0d1875` | ⚠️ Unaudited |
-| MgvReader | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: arbitrum `0x920474...08e418`; blast `0xaa1144...f592ee` | ⚠️ Unaudited |
-| MgvReader | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | blast | unit-246137 | `0x26fd96...4ab3f8` | ⚠️ Unaudited |
-| MgvReferral | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x07e5a2...e49908` | ⚠️ Unaudited |
-| MgvRewardsDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0xdb6a3a...0dbb10` | ⚠️ Unaudited |
-| MintHelperV1 | periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246081 | `0x1ae538...5e0716` | ⚠️ Unaudited |
-| MintHelperV1 | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-246149 | `0x2ae6f9...67cda1` | ⚠️ Unaudited |
-| MintHelperV1 | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-246135 | `0xc39b5f...5cd440` | ⚠️ Unaudited |
-| MockTokenFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x789a28...603151` | ⚠️ Unaudited |
-| NonfungiblePositionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0xafaf02...1cd21e` | ⚠️ Unaudited |
-| OracleCombinerFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246112 | `0xfd8e85...fbeb19` | ⚠️ Unaudited |
-| OracleCombinerFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-246169 | `0xb898c4...f3efed` | ⚠️ Unaudited |
-| OracleCombinerFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xf9d160...5f4fa7` | ⚠️ Unaudited |
-| OracleLib | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246095 | `0x555557...00acfd` | ⚠️ Unaudited |
-| OracleLib | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0xb9d022...cc5b1d` | ⚠️ Unaudited |
-| OxiumToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x8ee050...5f6094` | ⚠️ Unaudited |
-| QuoterV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x5d924d...2d6177` | ⚠️ Unaudited |
-| RouterProxyFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 4 deployments: sei `0x91d001...516d93`; base `0x2926cc...af54e9`; arbitrum `0x396614...77e0f1`; blast `0x79c3f2...8b7131` | ⚠️ Unaudited |
-| SmartKandelSeeder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: base `0x614fe2...5d770a`; arbitrum `0x43bb29...3ea7b7` | ⚠️ Unaudited |
-| SmartRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: sei `0xcc9d10...ac12dd`; base `0x1424d7...7fbe32` | ⚠️ Unaudited |
-| SwapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0xc7a26e...d19175` | ⚠️ Unaudited |
-| SwapRouter02 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0xc8982a...96b541` | ⚠️ Unaudited |
-| TakaraKandelSeeder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 6 deployments: sei `0x2f0c90...def08d`; sei `0x76aa9e...027eaf`; sei `0xa04bc2...8378ee`; sei `0xaccc07...4ce055`; sei `0xb9028a...6aecc4`; sei `0xf150ab...5e3f60` | ⚠️ Unaudited |
-| TakaraKandelSeeder | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246109 | `0xdcc3d2...96af2c` | ⚠️ Unaudited |
-| TakaraRouterProxyDeployer | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 3 deployments: sei `0x1feae2...94cfbf`; sei `0x7964be...c8663b`; sei `0xf63535...ce6c5b` | ⚠️ Unaudited |
-| TickLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x1db278...0e250d` | ⚠️ Unaudited |
-| UniswapV3Swapper | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-246167 | `0xaf31be...21ea3f` | ⚠️ Unaudited |
-| UniswapV3Swapper | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-246118 | `0x22ba67...1099fa` | ⚠️ Unaudited |
-| V3Migrator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0xc44d5d...5c2454` | ⚠️ Unaudited |
-| VaultsV2Feed | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 2 deployments: sei `0x85e438...c9724c`; sei `0xbb4b6b...4b7f10` | ⚠️ Unaudited |
-| VaultV2Deployer | core_logic | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246091 | `0x4476bd...3d7c60` | ⚠️ Unaudited |
-| Vif | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xd58370...bc4b06` | ⚠️ Unaudited |
-| VifReader | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xa36043...a308e4` | ⚠️ Unaudited |
-| VifRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x744449...796b47` | ⚠️ Unaudited |
+| AaveKandelSeeder | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246087 | `0x38845d7dad5bf849e1f77fe89597083fec5b5d77` | ⚠️ Unaudited |
+| AaveKandelSeeder | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-246141 | `0x095854c8c4591fb0a413615b9a366b4dd69b9b1d` | ⚠️ Unaudited |
+| AaveKandelSeeder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: base `0x3e6d5aa75617f1f2bcd2c1d9992fbb17a4bec228`; base `0x4ff58b373e845198be5bd0b81a9015f5ceab0eb1`; base `0x556dc530a23552ba19b3741d7e8fd016d20a719a` | ⚠️ Unaudited |
+| AaveKandelSeeder | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-246127 | `0x55b12de431c6e355b56b79472a3632faec58fb5a` | ⚠️ Unaudited |
+| BalancerV2Swapper | adapter | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246085 | `0x369022670f2c623ee6894ae4053ef54c2c685dd0` | ⚠️ Unaudited |
+| BlastMangrove | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | blast | unit-246139 | `0xb1a49c54192ea59b233200ea38ab56650dfb448c` | ⚠️ Unaudited |
+| ChainlinkPriceOracleFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246111 | `0xe26eb21f4b2a621e4c5ce52b3fb80608bcf3b1ed` | ⚠️ Unaudited |
+| CompoundVaultV2Deployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 2 deployments: sei `0x88902102097570134b02a245f6629b32551b6ad3`; sei `0xd34e51858465439158dfb5cf87f6e7574658cf0a` | ⚠️ Unaudited |
+| ERC4626KandelSeeder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x0d5e4ca24edda06915264feadf4b9cce74d902e6` | ⚠️ Unaudited |
+| ERC4626KandelSeeder | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246100 | `0x9c5ad9d0fc127af40b7cd6279b696607e258bb11` | ⚠️ Unaudited |
+| ERC4626KandelSeeder | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-246151 | `0x4778c54e6380bbc6ef9647f2a31528b0640b41fe` | ⚠️ Unaudited |
+| ERC4626RouterDeployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: sei `0xb37f7a1194790ee97efd03f0265cf8d27bee14d9`; sei `0xc698f8d9d496f2b9dc836df7eac82530c2121b72`; base `0x5f4d596c58a1d171196923fd8c45a09e9dee7b34` | ⚠️ Unaudited |
+| ERC4626RouterProxyDeployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x84bf03a254151afc147ad09cd85a3d5ab75ea71c` | ⚠️ Unaudited |
+| ERC4626VaultV2Deployer | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x6d5e02a56631bb0b846e0bbd521df4b3d7c6b69a` | ⚠️ Unaudited |
+| GeometricKandelExtra | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: sei `0x572fcd28707ffee2d311278d405b9db0a90373cc`; base `0x274f471270251fe69e17eb1b45666676fe4bc077` | ⚠️ Unaudited |
+| Kandel | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xc88863ec3efe3bbecc48564ebc2f135ea19878f0` | ⚠️ Unaudited |
+| KandelLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 6 deployments: sei `0x9a48cb4ac0631bf694b252b756f3c5e0a51a7ad2`; sei `0xbef21fe31e3d5a9428f8c087d328fcb502a1ba3a`; base `0x1d7c32b43409ac66a9f5666daf674e2ef21427d0`; blast `0x0ea85f9e19763eec0e376f988fe9a19c9328e3fa`; blast `0x3660bd841bb9e23e048853e77acf589e95762af9`; blast `0xd12594f8f7a7a0e7297a5a3d09ff790646466fcf` | ⚠️ Unaudited |
+| KandelSeeder | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246075 | `0x075420cb1f213857fcbaf2c9dbfc6ca6295124a3` | ⚠️ Unaudited |
+| KandelSeeder | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-246158 | `0x808bc04030bc558c99e6844e877bb22d166a089a` | ⚠️ Unaudited |
+| KandelSeeder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x4bb7567303c8bde27a4b490b3e5f1593c891b03d` | ⚠️ Unaudited |
+| KandelSeeder | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-246133 | `0x89139bed90b1bfb5501f27be6d6f9901ae35745d` | ⚠️ Unaudited |
+| Mangrove | proxy | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | sei | unit-246173 | `0xd9834d7caa2acf81c40e7aac645cf9a57cb14bcd` | ⚠️ Unaudited |
+| Mangrove | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-246145 | `0x22613524f5905cb17cbd785b956e9238bf725faa` | ⚠️ Unaudited |
+| Mangrove | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-246116 | `0x109d9cdfa4ac534354873ef634ef63c235f93f61` | ⚠️ Unaudited |
+| Mangrove | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x1dbf9445a6c8dc912afad8cce48e40f2a8d9d227` | ⚠️ Unaudited |
+| MangroveChainlinkOracleFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-246164 | `0x9d05c7a303efebd215b86b57da2fc671039e5712` | ⚠️ Unaudited |
+| MangroveChainlinkOracleFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-246121 | `0x31c47e3f442f521e1c65b5b626ac2e978c1f2587` | ⚠️ Unaudited |
+| MangroveChainlinkOracleFactoryV2 | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-246155 | `0x656a6ac038d1686d4f80427ddaf59b352f960123` | ⚠️ Unaudited |
+| MangroveCleanerV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 2 deployments: base `0xb922a4560bedcd22450574453e178e8a12b75eae`; blast `0x22ba67eb361ec40e0949ed034f3ce08af51099fa` | ⚠️ Unaudited |
+| MangroveDiaOracleFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246074 | `0x035d53d54aef1815e882fea7ef4795de214518a1` | ⚠️ Unaudited |
+| MangroveDiaOracleFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0cf19437dc140308d8f87fb824c61c9b9fdd87a3` | ⚠️ Unaudited |
+| MangroveDiaOracleFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-246153 | `0x5297561cb9df1d2ff83698c6fc51abef24d39560` | ⚠️ Unaudited |
+| MangroveERC4626KandelVaultFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246102 | `0xadbb100770e1f9ac61eac9cca2ec05a0a66956a0` | ⚠️ Unaudited |
+| MangroveERC4626KandelVaultFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x5975ba297795296f9ab99014807d853fe85e20fa` | ⚠️ Unaudited |
+| MangroveERC4626KandelVaultFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-246162 | `0x92db74a11ec2b2acdcfc354cf55243cf33c052b8` | ⚠️ Unaudited |
+| MangroveGhostBook | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246079 | `0x127a5a5e086dce304875e392c8170b04bc81e8b6` | ⚠️ Unaudited |
+| MangroveGhostBook | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 8 deployments: base `0x02bda8c9051cdcf273609786cb24ec242dd0af4c`; base `0xbd7189c760a8d00933dcdd42ad565febe9b5a918`; base `0xfd4fcc88448f86216a76e85cf6706cdc691fe574`; arbitrum `0x426537f7204272bccd6a2939de10fa6d2ed0b2c1`; arbitrum `0x6b04fbefc13bb9a27644f27eccf46bd946c673ca`; arbitrum `0xc8857cbe4e58545884323b9a0b4cc31ff5366959`; arbitrum `0xe2beb61e868661827fa822a28080957e7136dca9`; arbitrum `0xfff6f0a0332f350c583265fb54c4b2797cc20fca` | ⚠️ Unaudited |
+| MangroveGhostBook | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-246143 | `0x15f02fb9c9bb772a3303349f88c94fc971bd549f` | ⚠️ Unaudited |
+| MangroveGhostBook | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-246123 | `0x46708dd6e68e1f09c6f4830c2586f73659dfafea` | ⚠️ Unaudited |
+| MangroveOrder | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246097 | `0x5ba0761ff644560529b0f54362c8f6024175928b` | ⚠️ Unaudited |
+| MangroveOrder | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-246165 | `0xa3c363ca0ea3603faee9facffd65e777122adf36` | ⚠️ Unaudited |
+| MangroveOrder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 5 deployments: arbitrum `0x0ea85f9e19763eec0e376f988fe9a19c9328e3fa`; blast `0x50793d97a0c905ea51c1c93f37fc73abe6d2ffcc`; blast `0x83251e7f36a51c5238c9aa0c6bb7cc209b32d80e`; blast `0x9204743121466f9de67eb058c9764b5a6608e418`; blast `0xded8e2fac702646dafe51d496d1217a837b0a424` | ⚠️ Unaudited |
+| MangroveOrder | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-246125 | `0x50793d97a0c905ea51c1c93f37fc73abe6d2ffcc` | ⚠️ Unaudited |
+| MangrovePoints | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x26e9e34839b5f150b66ea30cd8b503ffa1b4bfd4` | ⚠️ Unaudited |
+| MangroveVaultFactory | registry | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246106 | `0xd6cc0b43261a73209ccc135207b8ba98d2ba369e` | ⚠️ Unaudited |
+| MangroveVaultFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-246147 | `0x26a0e433f89317ca5585945198a5f0760c1dafa5` | ⚠️ Unaudited |
+| MangroveVaultFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xda5ecd0eb8f9ba979a51a44a0c9ab57f928cce79` | ⚠️ Unaudited |
+| MangroveVaultFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-246129 | `0x6b82ce8a45ce9bef9b20c3d65747356a5cdab41a` | ⚠️ Unaudited |
+| MangroveVaultV2Factory | registry | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246089 | `0x44536a066e9c736f2d90b2999275cffd26b287b1` | ⚠️ Unaudited |
+| MangroveVaultV2Factory | registry | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246099 | `0x78793bcd98450530ce9109af1f79fd6d66a7328c` | ⚠️ Unaudited |
+| MangroveVaultV2Factory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 2 deployments: sei `0xbce560aabbe951caefd87a19a7f6caeb8e2f314a`; sei `0xfe7d4477bf03056f376dc8fd08e25a19aa2296e3` | ⚠️ Unaudited |
+| MgvCleaner | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x55b196d0d51840b99c7973d1b8d6d036b69ed24c` | ⚠️ Unaudited |
+| MgvOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 4 deployments: base `0xa3749d35103ad916c4753f89a1bf065ab608a7d0`; arbitrum `0xb1a49c54192ea59b233200ea38ab56650dfb448c`; blast `0x815872019c3a84c8befc2d0bd0d1304d10d57f62`; blast `0xe1c9a6cd839733f0e9fc5f4e9746d7b61a4b839d` | ⚠️ Unaudited |
+| MgvOracleBaseFee | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x84c931166fb306c79165fdc38b88dad24e354723` | ⚠️ Unaudited |
+| MgvPriceOracle | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246077 | `0x10f9e248e1515847ab120ce2daf2e7e7bdbc6e2f` | ⚠️ Unaudited |
+| MgvPriceOracle | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-246160 | `0x8fb396e0745f0b4b1cf12fb2e4d1662ff7560ffd` | ⚠️ Unaudited |
+| MgvPriceOracle | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xb81d09daea1bca8ece128d9762995e94834fd38c` | ⚠️ Unaudited |
+| MgvReader | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246114 | `0xfeafb31ac7f09892b50c4d6da06a1e48d487499e` | ⚠️ Unaudited |
+| MgvReader | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-246171 | `0xe5b118ea1ffbc502ea7a666376d448209bfb50d3` | ⚠️ Unaudited |
+| MgvReader | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-246131 | `0x7e108d7c9cadb03e026075bf242ac2353d0d1875` | ⚠️ Unaudited |
+| MgvReader | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: arbitrum `0x9204743121466f9de67eb058c9764b5a6608e418`; blast `0xaa11445725ac90001717ed12e47e1d1da9f592ee` | ⚠️ Unaudited |
+| MgvReader | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | blast | unit-246137 | `0x26fd9643baf1f8a44b752b28f0d90aebd04ab3f8` | ⚠️ Unaudited |
+| MgvReferral | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x07e5a2dcf82d7b5b8ab684d9b40842e174e49908` | ⚠️ Unaudited |
+| MgvRewardsDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0xdb6a3a20743f5878732ef73623a51033c80dbb10` | ⚠️ Unaudited |
+| MintHelperV1 | periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246081 | `0x1ae53888ce926ca468c9574dd2cb885b005e0716` | ⚠️ Unaudited |
+| MintHelperV1 | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-246149 | `0x2ae6f95f0ac61441d9ec9290000f81087567cda1` | ⚠️ Unaudited |
+| MintHelperV1 | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-246135 | `0xc39b5fb38a8acbffb51d876f0c0da0325b5cd440` | ⚠️ Unaudited |
+| MockTokenFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x789a28a6fcc5682365e5144e05c04d4af4603151` | ⚠️ Unaudited |
+| NonfungiblePositionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0xafaf0291a15aaf7453e2f5954b6ef56bc61cd21e` | ⚠️ Unaudited |
+| OracleCombinerFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246112 | `0xfd8e85387afe7e3df1ed7ec7b81e3de0c6fbeb19` | ⚠️ Unaudited |
+| OracleCombinerFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-246169 | `0xb898c4a986a1e4fd31b9818772f9ec16dbf3efed` | ⚠️ Unaudited |
+| OracleCombinerFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xf9d160da6a2d6ef3b1cf37a1666339c15b5f4fa7` | ⚠️ Unaudited |
+| OracleLib | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246095 | `0x5555571f9cbec32d6a8dcb5042b73cddd000acfd` | ⚠️ Unaudited |
+| OracleLib | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0xb9d022cbfbb01e96b9c51ed5f060f06658cc5b1d` | ⚠️ Unaudited |
+| OxiumToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x8ee050f6af49a6b7fd8557d0e75219d66f5f6094` | ⚠️ Unaudited |
+| QuoterV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x5d924dc43c9cc3429dbf4baad32a5b7ede2d6177` | ⚠️ Unaudited |
+| RouterProxyFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 4 deployments: sei `0x91d001e0b1f3e5cd50aa706896eb22f024516d93`; base `0x2926cc3977f93a51465f9742c548e67220af54e9`; arbitrum `0x396614e1050ffb01e16b4c985b02a7ebb377e0f1`; blast `0x79c3f23f210e30f6aa9072f0ddfd2d180c8b7131` | ⚠️ Unaudited |
+| SmartKandelSeeder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: base `0x614fe2edeeb9dfbccbb0884455e0591c9f5d770a`; arbitrum `0x43bb29f47b7b14f252fba32d686f4902823ea7b7` | ⚠️ Unaudited |
+| SmartRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: sei `0xcc9d10431f168598ae331f149856e5aef4ac12dd`; base `0x1424d7428dc11623100df1a3d06088c2d87fbe32` | ⚠️ Unaudited |
+| SwapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0xc7a26e28142aba6b9ee0a5fbcf7f8ba50ad19175` | ⚠️ Unaudited |
+| SwapRouter02 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0xc8982aece074781265a5a60b2f6ad9ec1996b541` | ⚠️ Unaudited |
+| TakaraKandelSeeder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 6 deployments: sei `0x2f0c903973501859b9ebba0c6c6afffb07def08d`; sei `0x76aa9ed48d10d458a4f716941f4c565c0e027eaf`; sei `0xa04bc23f6f1bc2a16e06887701f56ed1678378ee`; sei `0xaccc077ae632559c5eeea461fe088b68f04ce055`; sei `0xb9028a517fc2429228c5effc8323b57a976aecc4`; sei `0xf150ab4f24bd444c76d7738c4bdb8cf26e5e3f60` | ⚠️ Unaudited |
+| TakaraKandelSeeder | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246109 | `0xdcc3d2761f59b4e727570107c791a1349796af2c` | ⚠️ Unaudited |
+| TakaraRouterProxyDeployer | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 3 deployments: sei `0x1feae24e399cdee3ad009570b6c1418b5494cfbf`; sei `0x7964be30d7dec2dcd7b7c437dd6ec06effc8663b`; sei `0xf6353532fd148171b0ed580f903afab171ce6c5b` | ⚠️ Unaudited |
+| TickLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x1db278727d701fbd387f26ca95f09ce9640e250d` | ⚠️ Unaudited |
+| UniswapV3Swapper | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-246167 | `0xaf31beb21d2b1f8c3bdd211ec02470265a21ea3f` | ⚠️ Unaudited |
+| UniswapV3Swapper | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-246118 | `0x22ba67eb361ec40e0949ed034f3ce08af51099fa` | ⚠️ Unaudited |
+| V3Migrator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0xc44d5d6fb3ff81e8a5b9c5cb7dbe358c775c2454` | ⚠️ Unaudited |
+| VaultsV2Feed | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 2 deployments: sei `0x85e438c92773ad8501ec465da4f64bfb53c9724c`; sei `0xbb4b6b300d2338aabc9b36947a8096e24d4b7f10` | ⚠️ Unaudited |
+| VaultV2Deployer | core_logic | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246091 | `0x4476bdf5d97b2ba9604b3cf2104c0860823d7c60` | ⚠️ Unaudited |
+| Vif | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xd58370794cdb3738973552ee1a36197edebc4b06` | ⚠️ Unaudited |
+| VifReader | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xa36043be6f60846e8b952c8b3a2e23cf3ca308e4` | ⚠️ Unaudited |
+| VifRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x7444490be491bbae95b639180bd4dc1795796b47` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -202,33 +202,33 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246083 | `0x1efad8...46b690` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x3119fd...eb1957` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x3ac5ec...a301b0` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246093 | `0x4bb7f3...7d7726` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x4ca024...134ff7` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x5417bf...380a34` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x60251d...20da98` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x7875bd...e448f2` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x928387...2d0c31` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0xa70b4a...05c2bb` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246104 | `0xc9c403...a67f84` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0xd5843e...a30047` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0xf87e18...a7f4f7` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x1f2d0a...46dc91` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x05f20e...f88262` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x0f216b...4c8ef4` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x3870da...b41e9c` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x43bb29...3ea7b7` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x55b196...9ed24c` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x5c1476...d3a4ba` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x6a6f6e...c025ea` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xa3b5b7...5d53c8` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xa48b36...7a87c5` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xa52ba5...9ed2e2` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xc0b3e7...f16120` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xc88863...9878f0` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xcf4ec1...76d60b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246083 | `0x1efad8af168a85c655851dc90b19a2f9e346b690` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x3119fd78397bf269f04a64b9712858f0c4eb1957` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x3ac5ec2ea4da5d48289374ebc0168d03c7a301b0` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246093 | `0x4bb7f3087664e559365c4c94d3c21a39847d7726` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x4ca024b2eeb704f8b83d4197f7b88a6f94134ff7` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x5417bf5ff6ec1d7db0a1813e9b2e8aaa0d380a34` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x60251d318d9a93fa22ed48b53c8561cec620da98` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x7875bdc8960f007db4f487292426fef23fe448f2` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x92838730e226ab42414891b507fc19db262d0c31` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0xa70b4ac3973bd8eef255ec50c46f131d5e05c2bb` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-246104 | `0xc9c40382121ef6043d6b3d4870214cf415a67f84` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0xd5843ea19ff54ceba567a5eea103e59ad7a30047` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0xf87e182b6361f85974c0c367265f478702a7f4f7` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x1f2d0a0b0df172259f3a466150f82d040346dc91` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x05f20ecdc7de841b2aec0b5a4f466d8697f88262` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x0f216b63c1bb1d3a9d447e4db3f201e0d44c8ef4` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x3870dafb80713cad59dd999c85b1e46314b41e9c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x43bb29f47b7b14f252fba32d686f4902823ea7b7` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x55b196d0d51840b99c7973d1b8d6d036b69ed24c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x5c1476add10bdd078b42ac401a3db7a4aad3a4ba` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x6a6f6e271fe86ebd6a8ed6716d39ae1250c025ea` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xa3b5b77ab0a15d8be7736f214a2d2591f65d53c8` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xa48b36e01919472fcda56cad574433becb7a87c5` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xa52ba5e5199be4fd363b163bde567606589ed2e2` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xc0b3e750554448d2641c87e7bfe7a02531f16120` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xc88863ec3efe3bbecc48564ebc2f135ea19878f0` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xcf4ec117bc38d7d0fe8678b511ff6a212c76d60b` | ❓ Unverified |
 
 ## Audit Inventory
 

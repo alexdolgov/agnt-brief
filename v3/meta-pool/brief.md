@@ -52,18 +52,18 @@ The pinned logic-topography run contains 11 contract row(s) across aurora, ether
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x07f9f7...332e30`, chain 1313161554)
-- UnnamedContract (`0x158efd...375eec`, chain 1313161554)
-- UnnamedContract (`0x1cc2f3...115d01`, chain 1313161554)
-- UnnamedContract (`0x3750be...76fd37`, chain 1313161554)
-- UnnamedContract (`0x534bac...e62cf9`, chain 1313161554)
-- UnnamedContract (`0x8a7feb...5de11d`, chain 1313161554)
-- UnnamedContract (`0x98d45f...186ae0`, chain 1313161554)
-- UnnamedContract (`0xc21ff0...357453`, chain 1313161554)
-- UnnamedContract (`0xfbc142...e5d336`, chain 1313161554)
-- GnosisSafeProxy (`0x24d966...79d971`, chain 1)
-- MpDaoToken (`0x798bcb...8b361d`, chain 1)
-- ProxyAdmin (`0x806f87...a1f182`, chain 1)
+- UnnamedContract (`0x07f9f7f963c5cd2bbffd30ccfb964be114332e30`, chain 1313161554)
+- UnnamedContract (`0x158efd7b742ac77922f6dcc5ca6e0dfd0c375eec`, chain 1313161554)
+- UnnamedContract (`0x1cc2f3a24f5c826af7f98a91b98bec2c05115d01`, chain 1313161554)
+- UnnamedContract (`0x3750be57761707e3deedab9f888996f61376fd37`, chain 1313161554)
+- UnnamedContract (`0x534bacf1126f60ea513f796a3377ff432be62cf9`, chain 1313161554)
+- UnnamedContract (`0x8a7feb26ee5b202804ac11dd5a739a945c5de11d`, chain 1313161554)
+- UnnamedContract (`0x98d45f7d4fcf992cb62fb439a889320400186ae0`, chain 1313161554)
+- UnnamedContract (`0xc21ff01229e982d7c8b8691163b0a3cb8f357453`, chain 1313161554)
+- UnnamedContract (`0xfbc1423a2a4453e162cdd535991bcc4143e5d336`, chain 1313161554)
+- GnosisSafeProxy (`0x24d9664ba8384d94499d6698ab285b69e879d971`, chain 1)
+- MpDaoToken (`0x798bcb35d2d48c8ce7ef8171860b8d53a98b361d`, chain 1)
+- ProxyAdmin (`0x806f870ee04a2cc8bf2ad053baa5ed9999a1f182`, chain 1)
 
 ## Contract Surface Quality
 
@@ -107,22 +107,22 @@ The pinned logic-topography run contains 11 contract row(s) across aurora, ether
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| LiquidUnstakePool | unknown | project_anchor | own_supporting | 1 | ethereum | unit-247620 | 2 deployments: ethereum `0xdf261f...4f03cc`; ethereum `0xea9fec...a1aa81` | ✅ Audited |
-| Staking | unknown | project_anchor | own_supporting | 1 | ethereum | unit-247618 | 2 deployments: ethereum `0xd06f6a...6f4a0e`; ethereum `0xd3db79...9513ac` | ✅ Audited |
-| Withdrawal | unknown | project_anchor | own_supporting | 1 | ethereum | unit-247617 | 2 deployments: ethereum `0xcb894c...a03c61`; ethereum `0xe55e5f...36af49` | ✅ Audited |
+| LiquidUnstakePool | unknown | project_anchor | own_supporting | 1 | ethereum | unit-247620 | 2 deployments: ethereum `0xdf261f967e87b2aa44e18a22f4ace5d7f74f03cc`; ethereum `0xea9fec1ff24b523424f21eea5c249f9b29a1aa81` | ✅ Audited |
+| Staking | unknown | project_anchor | own_supporting | 1 | ethereum | unit-247618 | 2 deployments: ethereum `0xd06f6a56c5f599cb375b616df306f32b7f6f4a0e`; ethereum `0xd3db79d2d00a6b82531d8ccf65c376d9ee9513ac` | ✅ Audited |
+| Withdrawal | unknown | project_anchor | own_supporting | 1 | ethereum | unit-247617 | 2 deployments: ethereum `0xcb894c063c74053c9401ac8fdd9a9f2bb1a03c61`; ethereum `0xe55e5fde6c25ac4ad75d867817d2d8a45836af49` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (8)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| GnosisSafe | governance | project_anchor | own_supporting | 1 | ethereum | unit-247619 | `0x24d966...79d971` | ⚠️ Unaudited |
-| LiquidUnstakePool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0xaba64e...37513c`; ethereum `0xcadd97...66d675` | ⚠️ Unaudited |
-| MpDaoToken | token | project_anchor | own_supporting | 0 | ethereum | unit-247598 | `0x798bcb...8b361d` | ⚠️ Unaudited |
-| ProxyAdmin | governance | project_anchor | own_supporting | 0 | ethereum | unit-247599 | `0x806f87...a1f182` | ⚠️ Unaudited |
-| Staking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x374748...5a111a`; ethereum `0xb11284...f27b39` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x48afbb...d81710`; ethereum `0x56c517...8f7ffa` | ⚠️ Unaudited |
-| VotingPowerV1 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-247616 | 2 deployments: ethereum `0x00b6e9...e4bb89`; ethereum `0xf8709e...104113` | ⚠️ Unaudited |
-| Withdrawal | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe3355f...833cd9` | ⚠️ Unaudited |
+| GnosisSafe | governance | project_anchor | own_supporting | 1 | ethereum | unit-247619 | `0x24d9664ba8384d94499d6698ab285b69e879d971` | ⚠️ Unaudited |
+| LiquidUnstakePool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0xaba64e88f55c769d46c17beb4c70fde62d37513c`; ethereum `0xcadd976ae3a04352b4ab28865af07ad2c366d675` | ⚠️ Unaudited |
+| MpDaoToken | token | project_anchor | own_supporting | 0 | ethereum | unit-247598 | `0x798bcb35d2d48c8ce7ef8171860b8d53a98b361d` | ⚠️ Unaudited |
+| ProxyAdmin | governance | project_anchor | own_supporting | 0 | ethereum | unit-247599 | `0x806f870ee04a2cc8bf2ad053baa5ed9999a1f182` | ⚠️ Unaudited |
+| Staking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x3747484567119592ff6841df399cf679955a111a`; ethereum `0xb112841c67d94d9536d356631224340e2ef27b39` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x48afbbd342f64ef8a9ab1c143719b63c2ad81710`; ethereum `0x56c517308ec9dcbe1db9d38e8b42bc7a948f7ffa` | ⚠️ Unaudited |
+| VotingPowerV1 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-247616 | 2 deployments: ethereum `0x00b6e95a520112c288d1899c3d46b5f282e4bb89`; ethereum `0xf8709e3e8ed3db79744579d3fa1795b514104113` | ⚠️ Unaudited |
+| Withdrawal | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe3355fbbf8b85ebce83c5e9e846818b82b833cd9` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -142,25 +142,25 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x20b911...17605b` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x48e562...bc9340` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8edfe3...1fc543` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa8e57a...1a4a84` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xaedec0...4a75b7` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb19915...148db1` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc29541...0f17f2` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | ethereum | unit-247602 | `0xfbb18e...551a02` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfe394b...ee2106` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-247603 | `0x07f9f7...332e30` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-247605 | `0x158efd...375eec` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-247606 | `0x1cc2f3...115d01` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-247608 | `0x3750be...76fd37` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-247610 | `0x534bac...e62cf9` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-247611 | `0x8a7feb...5de11d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-247612 | `0x98d45f...186ae0` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-247613 | `0xc21ff0...357453` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | aurora | unit-247614 | `0xc42c30...e8501d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-247615 | `0xfbc142...e5d336` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x20b911fbe210f1119fc2c95ff0b937874017605b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x48e5628652c3410442aa9b82e4aeb344dabc9340` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8edfe36cbcde7b783da6a563476d4509fa1fc543` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa8e57aeef2ff0ac2c5387e9b1d703fa1d61a4a84` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xaedec015d61200325eebf57451c2b9f5714a75b7` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb19915e10d5f1503c43cd1166f1959863b148db1` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc29541e118f45117ce12ab70a66698b7eb0f17f2` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | ethereum | unit-247602 | `0xfbb18ed0db241eb750e472e139b74a39cc551a02` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfe394b5407599e30264b80ac7401c02915ee2106` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-247603 | `0x07f9f7f963c5cd2bbffd30ccfb964be114332e30` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-247605 | `0x158efd7b742ac77922f6dcc5ca6e0dfd0c375eec` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-247606 | `0x1cc2f3a24f5c826af7f98a91b98bec2c05115d01` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-247608 | `0x3750be57761707e3deedab9f888996f61376fd37` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-247610 | `0x534bacf1126f60ea513f796a3377ff432be62cf9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-247611 | `0x8a7feb26ee5b202804ac11dd5a739a945c5de11d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-247612 | `0x98d45f7d4fcf992cb62fb439a889320400186ae0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-247613 | `0xc21ff01229e982d7c8b8691163b0a3cb8f357453` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | aurora | unit-247614 | `0xc42c30ac6cc15fac9bd938618bcaa1a1fae8501d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-247615 | `0xfbc1423a2a4453e162cdd535991bcc4143e5d336` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -194,12 +194,12 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | 2024-06 Blocksec Audit.pdf | SwapToMpEthOnLineaV1 | unmatched — not counted | — | Listed in scope section 1.1 and referenced in findings | no |
 | MetaPool_ETH_Staking_Staking_Pools_Aurora_Smart_Contract_Security.pdf | AuroraStaking | unmatched — not counted | — | — | no |
 | MetaPool_ETH_Staking_Staking_Pools_Aurora_Smart_Contract_Security.pdf | Depositor | unmatched — not counted | — | — | no |
-| MetaPool_ETH_Staking_Staking_Pools_Aurora_Smart_Contract_Security.pdf | LiquidUnstakePool | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xdf261f...4f03cc` — deployed 2023-07-14 01:17:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| MetaPool_ETH_Staking_Staking_Pools_Aurora_Smart_Contract_Security.pdf | LiquidUnstakePool | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xdf261f967e87b2aa44e18a22f4ace5d7f74f03cc` — deployed 2023-07-14 01:17:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | MetaPool_ETH_Staking_Staking_Pools_Aurora_Smart_Contract_Security.pdf | LiquidityPool | unmatched — not counted | — | — | no |
 | MetaPool_ETH_Staking_Staking_Pools_Aurora_Smart_Contract_Security.pdf | StakedAuroraVault | unmatched — not counted | — | — | no |
-| MetaPool_ETH_Staking_Staking_Pools_Aurora_Smart_Contract_Security.pdf | Staking | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xd06f6a...6f4a0e` — deployed 2025-06-24 22:00:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| MetaPool_ETH_Staking_Staking_Pools_Aurora_Smart_Contract_Security.pdf | Staking | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xd06f6a56c5f599cb375b616df306f32b7f6f4a0e` — deployed 2025-06-24 22:00:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | MetaPool_ETH_Staking_Staking_Pools_Aurora_Smart_Contract_Security.pdf | StakingManager | unmatched — not counted | — | — | no |
-| MetaPool_ETH_Staking_Staking_Pools_Aurora_Smart_Contract_Security.pdf | Withdrawal | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xe55e5f...36af49` — deployed 2023-07-14 01:17:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| MetaPool_ETH_Staking_Staking_Pools_Aurora_Smart_Contract_Security.pdf | Withdrawal | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xe55e5fde6c25ac4ad75d867817d2d8a45836af49` — deployed 2023-07-14 01:17:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/5HvxIwoS8YhIHItpA1lt/uploads/UMkSZziqO0AyoCGzxE7D/tpyrced_blocksec_metapool_restaking_v1.0-signed.pdf | MainVaultState | unmatched — not counted | — | mentioned in findings as main_state account type | no |
 | spaces/5HvxIwoS8YhIHItpA1lt/uploads/UMkSZziqO0AyoCGzxE7D/tpyrced_blocksec_metapool_restaking_v1.0-signed.pdf | SecondaryVaultState | unmatched — not counted | — | mentioned in findings as vault_state account type | no |
 | spaces/5HvxIwoS8YhIHItpA1lt/uploads/UMkSZziqO0AyoCGzxE7D/tpyrced_blocksec_metapool_restaking_v1.0-signed.pdf | UnstakeTicket | unmatched — not counted | — | mentioned in findings as ticket account type | no |
@@ -210,7 +210,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | spaces/-MkhZe3MGAhTcvTLTzJF-887967055/uploads/BnkI1s1NHp6rjw4vBsZo/Blocksec_Audit_2.pdf | Meta Pool | unmatched — not counted | — | The audit scope includes the contract under the directory metapool in the Meta Staking Pool repository. | no |
 | spaces/5HvxIwoS8YhIHItpA1lt/uploads/Oaz0PbKGiCBzBI2hKZcv/NM_0434_METAPOOL_FINAL.pdf | StakedIP | unmatched — not counted | — | Listed in Audited Files table | no |
 | spaces/5HvxIwoS8YhIHItpA1lt/uploads/Oaz0PbKGiCBzBI2hKZcv/NM_0434_METAPOOL_FINAL.pdf | RewardsManager | unmatched — not counted | — | Listed in Audited Files table | no |
-| spaces/5HvxIwoS8YhIHItpA1lt/uploads/Oaz0PbKGiCBzBI2hKZcv/NM_0434_METAPOOL_FINAL.pdf | Withdrawal | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xe55e5f...36af49` — deployed 2023-07-14 01:17:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/5HvxIwoS8YhIHItpA1lt/uploads/Oaz0PbKGiCBzBI2hKZcv/NM_0434_METAPOOL_FINAL.pdf | Withdrawal | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xe55e5fde6c25ac4ad75d867817d2d8a45836af49` — deployed 2023-07-14 01:17:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/5HvxIwoS8YhIHItpA1lt/uploads/Oaz0PbKGiCBzBI2hKZcv/NM_0434_METAPOOL_FINAL.pdf | IStakedIP | unmatched — not counted | — | Listed in Audited Files table | no |
 | spaces/5HvxIwoS8YhIHItpA1lt/uploads/Oaz0PbKGiCBzBI2hKZcv/NM_0434_METAPOOL_FINAL.pdf | IWIP | unmatched — not counted | — | Listed in Audited Files table | no |
 | spaces/5HvxIwoS8YhIHItpA1lt/uploads/Oaz0PbKGiCBzBI2hKZcv/NM_0434_METAPOOL_FINAL.pdf | IRewardsManager | unmatched — not counted | — | Listed in Audited Files table | no |
@@ -225,8 +225,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x798bcb...8b361d` | MpDaoToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x00b6e9...e4bb89` | VotingPowerV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x798bcb35d2d48c8ce7ef8171860b8d53a98b361d` | MpDaoToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x00b6e95a520112c288d1899c3d46b5f282e4bb89` | VotingPowerV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

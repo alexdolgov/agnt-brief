@@ -52,10 +52,10 @@ The pinned logic-topography run contains 3 contract row(s) across arbitrum, bsc,
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x2f2a25...fc5b0f`, chain 42161)
-- Bridge (`0x3ac7a6...9c3a55`, chain 1)
-- Bridge (`0x3ac7a6...9c3a55`, chain 56)
-- PortalV2 (`0xac8f44...0ffcbe`, chain 42161)
+- UnnamedContract (`0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f`, chain 42161)
+- Bridge (`0x3ac7a6635d99f376c3c05442f7eef62d349c3a55`, chain 1)
+- Bridge (`0x3ac7a6635d99f376c3c05442f7eef62d349c3a55`, chain 56)
+- PortalV2 (`0xac8f44ceca92b2a4b30360e5bd3043850a0ffcbe`, chain 42161)
 
 ## Contract Surface Quality
 
@@ -101,33 +101,33 @@ The pinned logic-topography run contains 3 contract row(s) across arbitrum, bsc,
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AddressBook | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 3 deployments: arbitrum `0x564a0c...21d9b0`; arbitrum `0x78c973...461005`; arbitrum `0x9bbc76...900d31` | ⚠️ Unaudited |
-| Bridge | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-396606 | `0x3ac7a6...9c3a55` | ⚠️ Unaudited |
-| Bridge | operational_periphery | project_anchor | own_supporting | 0 | bsc | unit-396610 | `0x3ac7a6...9c3a55` | ⚠️ Unaudited |
-| ClaimHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: arbitrum `0x1d1fc5...15a735`; arbitrum `0xbf4752...3ee3db` | ⚠️ Unaudited |
-| COLON | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7e21c1...828eca` | ⚠️ Unaudited |
-| ITO | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x465dbc...a6ff2d` | ⚠️ Unaudited |
-| Neiro | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x812ba4...a853ee` | ⚠️ Unaudited |
-| OpsRegistrar | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x5571e3...8fdbb9` | ⚠️ Unaudited |
-| PepeToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x698250...311933` | ⚠️ Unaudited |
-| PoolAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 3 deployments: arbitrum `0xa60622...4ad4d4`; arbitrum `0xda1a6c...bface8`; arbitrum `0xef4f5e...3c1e56` | ⚠️ Unaudited |
-| PoolAdapterCrypto | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 3 deployments: arbitrum `0x01aa1b...c42051`; arbitrum `0x310604...50e4b6`; arbitrum `0xfa9dc4...d1e88a` | ⚠️ Unaudited |
-| PoolAdapterStableNg | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: arbitrum `0x05f4f0...437948`; arbitrum `0x853a95...a8e3a6` | ⚠️ Unaudited |
-| PoolHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xc9c98a...75f1d5` | ⚠️ Unaudited |
-| PortalV2 | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-396609 | `0xac8f44...0ffcbe` | ⚠️ Unaudited |
-| RealGames | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1a920b...e04882` | ⚠️ Unaudited |
-| SATO | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x32f411...decb0e` | ⚠️ Unaudited |
-| SimpleToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4d2244...594381` | ⚠️ Unaudited |
-| SynthesisV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xf370d9...50cc72` | ⚠️ Unaudited |
-| SynthFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x1b8607...f69178` | ⚠️ Unaudited |
-| Tweet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9d696d...3f7501` | ⚠️ Unaudited |
-| UnifiedRouterV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 3 deployments: arbitrum `0xa2a786...585c74`; arbitrum `0xe7db62...4a3be4`; arbitrum `0xfa43de...112d1a` | ⚠️ Unaudited |
-| Validator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0xf78712...2097fb`; bsc `0xf78712...2097fb` | ⚠️ Unaudited |
-| VestingByFarming | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: arbitrum `0x8c3fba...a69095`; arbitrum `0xf1bd32...5fc99f` | ⚠️ Unaudited |
-| VestingByNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: arbitrum `0x790b4a...e2e3bc`; arbitrum `0xf23654...5b3188` | ⚠️ Unaudited |
-| VestingByWhitelist | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 24 deployments: arbitrum `0x05f238...cff5e8`; arbitrum `0x06bbaf...75da20`; arbitrum `0x0d624f...a4c940`; arbitrum `0x1486b4...836ef3`; arbitrum `0x1ec4c2...87b07d`; arbitrum `0x3814bb...576ad4`; arbitrum `0x3d0ebf...cdfde7`; arbitrum `0x478473...9e7c58`; arbitrum `0x6cd1d5...dd8dcc`; arbitrum `0x702f9d...33aacb`; arbitrum `0x7793c6...0607ae`; arbitrum `0x7a9b6a...ccc1cf`; arbitrum `0x7e010a...87756a`; arbitrum `0x7ffe15...8eb37d`; arbitrum `0x803102...895558`; arbitrum `0x88b927...420c6b`; arbitrum `0x9d7919...4f483d`; arbitrum `0xa0b70e...f012d5`; arbitrum `0xafbc09...2a1412`; arbitrum `0xb70f4b...2a269a`; arbitrum `0xce04dc...d882ef`; arbitrum `0xdcf4ce...9a243d`; arbitrum `0xe02762...6df4ea`; arbitrum `0xfc2e04...bfaf3e` | ⚠️ Unaudited |
-| VirtualPriceSender | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: arbitrum `0x68fc27...639b4d`; arbitrum `0xfa843a...142541` | ⚠️ Unaudited |
-| WalletFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: arbitrum `0x76f7b0...ccf8d7`; arbitrum `0x8cb8c4...709e12` | ⚠️ Unaudited |
+| AddressBook | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 3 deployments: arbitrum `0x564a0c04877e4ca6f5d0cad8c20522226321d9b0`; arbitrum `0x78c9730279b3256655fec668644ba9e97e461005`; arbitrum `0x9bbc7661af64d7af74f41ffee71a2b2798900d31` | ⚠️ Unaudited |
+| Bridge | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-396606 | `0x3ac7a6635d99f376c3c05442f7eef62d349c3a55` | ⚠️ Unaudited |
+| Bridge | operational_periphery | project_anchor | own_supporting | 0 | bsc | unit-396610 | `0x3ac7a6635d99f376c3c05442f7eef62d349c3a55` | ⚠️ Unaudited |
+| ClaimHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: arbitrum `0x1d1fc5d96f542042001d78e92ed60c3dae15a735`; arbitrum `0xbf47522c2b6d9e56195f5b6d4c7479be9b3ee3db` | ⚠️ Unaudited |
+| COLON | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7e21c12eb03a0d235d6c513762050e9f58828eca` | ⚠️ Unaudited |
+| ITO | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x465dbc39f46f9d43c581a5d90a43e4a0f2a6ff2d` | ⚠️ Unaudited |
+| Neiro | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x812ba41e071c7b7fa4ebcfb62df5f45f6fa853ee` | ⚠️ Unaudited |
+| OpsRegistrar | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x5571e37ec0a44019350880944e3619934a8fdbb9` | ⚠️ Unaudited |
+| PepeToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6982508145454ce325ddbe47a25d4ec3d2311933` | ⚠️ Unaudited |
+| PoolAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 3 deployments: arbitrum `0xa6062214b07ea1fb384caea20bf2c692064ad4d4`; arbitrum `0xda1a6c9a431062909e84aae97d999de32bbface8`; arbitrum `0xef4f5e58e67afca010df69a605935f6d073c1e56` | ⚠️ Unaudited |
+| PoolAdapterCrypto | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 3 deployments: arbitrum `0x01aa1bdd140163b37c48e6a198565a7d44c42051`; arbitrum `0x3106047d9e3c39f9d982bdd83036166c7a50e4b6`; arbitrum `0xfa9dc4d47cbe235d38810f3d23bd7c0b8dd1e88a` | ⚠️ Unaudited |
+| PoolAdapterStableNg | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: arbitrum `0x05f4f0fbe800758637c6e8c97f641fea03437948`; arbitrum `0x853a954944a9a5d67e1e880ff9fb593a72a8e3a6` | ⚠️ Unaudited |
+| PoolHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xc9c98a0a2bf4991ad8209c296dc6d3544575f1d5` | ⚠️ Unaudited |
+| PortalV2 | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-396609 | `0xac8f44ceca92b2a4b30360e5bd3043850a0ffcbe` | ⚠️ Unaudited |
+| RealGames | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1a920b0eae5b49c51ebf042a61c3fa58dae04882` | ⚠️ Unaudited |
+| SATO | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x32f411f32dd14f142c087062335032f89bdecb0e` | ⚠️ Unaudited |
+| SimpleToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4d224452801aced8b2f0aebe155379bb5d594381` | ⚠️ Unaudited |
+| SynthesisV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xf370d9ed0141207e81321158393eea5d8a50cc72` | ⚠️ Unaudited |
+| SynthFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x1b86074274067133cabecbd882519a7e7af69178` | ⚠️ Unaudited |
+| Tweet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9d696dc16bc0d49daadb80d9bf312cec2c3f7501` | ⚠️ Unaudited |
+| UnifiedRouterV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 3 deployments: arbitrum `0xa2a786ff9148f7c88ee93372db8cbe9e94585c74`; arbitrum `0xe7db62c7960183895190274f26925388db4a3be4`; arbitrum `0xfa43de785dd3cd0ef3dae0dd2b8be3f1b5112d1a` | ⚠️ Unaudited |
+| Validator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0xf787128e3eb8161174944117b9fe1204a22097fb`; bsc `0xf787128e3eb8161174944117b9fe1204a22097fb` | ⚠️ Unaudited |
+| VestingByFarming | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: arbitrum `0x8c3fba99d378d2617658edcea7ae11a1d5a69095`; arbitrum `0xf1bd32384a4c0eb8bcd157a7712015dfe05fc99f` | ⚠️ Unaudited |
+| VestingByNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: arbitrum `0x790b4a82eb55dee72d65a7eb313fd9a2d3e2e3bc`; arbitrum `0xf236547e48b7ef008a5d0fcd75310b45cf5b3188` | ⚠️ Unaudited |
+| VestingByWhitelist | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 24 deployments: arbitrum `0x05f238678d7ecda27bcb9842604330099dcff5e8`; arbitrum `0x06bbafb1bce612f80b79105e61e615219875da20`; arbitrum `0x0d624f722d5b190e6fe8ab11f44914290ca4c940`; arbitrum `0x1486b4bc1bbe4bc02989b8a46a8b27ce6a836ef3`; arbitrum `0x1ec4c286df11f3104470a6bfac0a40baff87b07d`; arbitrum `0x3814bbb04ce40b473596802f30a683e4c2576ad4`; arbitrum `0x3d0ebf699c829f8365ce9e0db1998b89a6cdfde7`; arbitrum `0x47847347397ff761b6dc9fb7907736b13d9e7c58`; arbitrum `0x6cd1d5c140b0f19d95afb996aa0c766967dd8dcc`; arbitrum `0x702f9dee35992bcd1081a61676c3a7e10433aacb`; arbitrum `0x7793c60408301311e96e30cda4bcb151d40607ae`; arbitrum `0x7a9b6af42d76c1d19ed687e702609c5ba5ccc1cf`; arbitrum `0x7e010ae57611a375c79877ecc845e25b9487756a`; arbitrum `0x7ffe1563ef92ec2df4df4052a3e54826f28eb37d`; arbitrum `0x803102403d600c82742241b4cb894e3e7f895558`; arbitrum `0x88b927af527abcfa736fb6d08e9d5100af420c6b`; arbitrum `0x9d791936f297cf36f18f41b49f64ec4ee94f483d`; arbitrum `0xa0b70eae1e02a43f28af2bc67e73a9c917f012d5`; arbitrum `0xafbc097e5d6f469b27532c51169a6f64b82a1412`; arbitrum `0xb70f4b4465b124c20db7a3b982debd6d032a269a`; arbitrum `0xce04dcd8ace2745dbf3219d670f92b73bdd882ef`; arbitrum `0xdcf4ce2b394de339268e93cdd8bb0d58b59a243d`; arbitrum `0xe0276217339c277c95be81fbdafe20df256df4ea`; arbitrum `0xfc2e04dbf969f4869a381a8da4c9145e6ebfaf3e` | ⚠️ Unaudited |
+| VirtualPriceSender | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: arbitrum `0x68fc274b9d9e2baddc19492f512460f962639b4d`; arbitrum `0xfa843add03f881304af116caf704549867142541` | ⚠️ Unaudited |
+| WalletFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: arbitrum `0x76f7b0cbc49f6aac02d0e548b51c8851daccf8d7`; arbitrum `0x8cb8c4263eb26b2349d74ea2cb1b27bc40709e12` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -147,7 +147,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-396607 | `0x2f2a25...fc5b0f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-396607 | `0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -166,9 +166,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x3ac7a6...9c3a55` | Bridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x3ac7a6...9c3a55` | Bridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | `0xac8f44...0ffcbe` | PortalV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x3ac7a6635d99f376c3c05442f7eef62d349c3a55` | Bridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x3ac7a6635d99f376c3c05442f7eef62d349c3a55` | Bridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0xac8f44ceca92b2a4b30360e5bd3043850a0ffcbe` | PortalV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

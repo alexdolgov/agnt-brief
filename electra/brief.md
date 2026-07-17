@@ -62,8 +62,8 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ProxyAdmin | unknown | ethereum | n/a | [`0xf713a7...7c698e`](./contracts/ethereum-1/0xf713a7ac6891b0b581af46b3e753576f967c698e/) | ⚠️ Unaudited |
-| TUP_old | proxy | ethereum | n/a | [`0xfc6383...0f7127`](./contracts/ethereum-1/0xfc63831f1c517d196470f03a61afd3d0cc0f7127/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | ethereum | n/a | [`0xf713a7ac6891b0b581af46b3e753576f967c698e`](./contracts/ethereum-1/0xf713a7ac6891b0b581af46b3e753576f967c698e/) | ⚠️ Unaudited |
+| TUP_old | proxy | ethereum | n/a | [`0xfc63831f1c517d196470f03a61afd3d0cc0f7127`](./contracts/ethereum-1/0xfc63831f1c517d196470f03a61afd3d0cc0f7127/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -83,7 +83,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0xc4ae1e...268fcf` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc4ae1e29aae9d6cd898030b6e5ce4155b8268fcf` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -98,7 +98,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xfc6383...0f7127`](./contracts/ethereum-1/0xfc63831f1c517d196470f03a61afd3d0cc0f7127/) | TUP_old | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xfc63831f1c517d196470f03a61afd3d0cc0f7127`](./contracts/ethereum-1/0xfc63831f1c517d196470f03a61afd3d0cc0f7127/) | TUP_old | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -90,9 +90,9 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| SigToken | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-262221 | `0x777777...606517` | ⚠️ Unaudited |
-| xSIG | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb82a2e...0fc757` | ⚠️ Unaudited |
-| xSigma | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x16b910...6ae438` | ⚠️ Unaudited |
+| SigToken | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-262221 | `0x7777777777697cfeecf846a76326da79cc606517` | ⚠️ Unaudited |
+| xSIG | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb82a2e5871b146e8b903b342c9c0c72c6b0fc757` | ⚠️ Unaudited |
+| xSigma | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x16b910dcd628c75f7447b8922a81d3a94b6ae438` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

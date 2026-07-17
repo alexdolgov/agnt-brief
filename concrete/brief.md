@@ -60,8 +60,8 @@ The protocol forms a single structural family (Core Logic) of 2 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ConcreteMultiStrategyVault | core_logic | ethereum | n/a | [`0x15ce9b...ea5fac`](./contracts/ethereum-1/0x15ce9be6609db102b70d68ca75a39c555bea5fac/) | ✅ Audited |
-| ConcreteStandardVaultImpl | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x5854c7...e0e5fd`](./contracts/ethereum-1/0x5854c7693459c6e316a96565776b72d94ee0e5fd/); ethereum `0xb04e16...55a08f` | ✅ Audited |
+| ConcreteMultiStrategyVault | core_logic | ethereum | n/a | [`0x15ce9be6609db102b70d68ca75a39c555bea5fac`](./contracts/ethereum-1/0x15ce9be6609db102b70d68ca75a39c555bea5fac/) | ✅ Audited |
+| ConcreteStandardVaultImpl | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x5854c7693459c6e316a96565776b72d94ee0e5fd`](./contracts/ethereum-1/0x5854c7693459c6e316a96565776b72d94ee0e5fd/); ethereum `0xb04e166fd5d7078bb7b3412406609fd92855a08f` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 
@@ -85,7 +85,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x38f20a...40db53` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x38f20ad5a233c1b2c91ce987853ff3201540db53` | ❓ Unverified |
 
 ## Audit Inventory
 

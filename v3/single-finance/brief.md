@@ -57,9 +57,9 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x338726...66c96d`, chain 25)
-- UnnamedContract (`0xbda9df...8f3348`, chain 250)
-- UnnamedContract (`0x6e0c55...4ebf8a`, chain 43114)
+- UnnamedContract (`0x338726dd694db9e2230ec2bb8624a2d7f566c96d`, chain 25)
+- UnnamedContract (`0xbda9df2cff1d36ffc05e8e76ec821b25db8f3348`, chain 250)
+- UnnamedContract (`0x6e0c55f4f52e2be3eabbd368f1ae7eddeb4ebf8a`, chain 43114)
 
 ## Contract Surface Quality
 
@@ -105,16 +105,16 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AnyswapV6ERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x55853e...ca8db0` | ⚠️ Unaudited |
-| ERC1155GatewayFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x312966...a8a43c` | ⚠️ Unaudited |
-| ERC20GatewayFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xb01371...f94ab3` | ⚠️ Unaudited |
-| ERC677GatewayFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xd806a4...247b2b` | ⚠️ Unaudited |
-| ERC721GatewayFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xa87827...3fe353` | ⚠️ Unaudited |
-| FactoryPortal | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x58c1bb...a5b064` | ⚠️ Unaudited |
-| MultichainVerseExplore | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x90d5f3...f5f095` | ⚠️ Unaudited |
-| RewardMasterChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x123706...5a5b8e` | ⚠️ Unaudited |
-| Skimmer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x82f0b8...6829c1` | ⚠️ Unaudited |
-| ValueRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x7fc567...faf801` | ⚠️ Unaudited |
+| AnyswapV6ERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x55853edc67aa68ec2e3903ac00f2bc5bf2ca8db0` | ⚠️ Unaudited |
+| ERC1155GatewayFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x3129662808bec728a27ab6a6b9afd3cbaca8a43c` | ⚠️ Unaudited |
+| ERC20GatewayFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xb01371072fdcb9b4433b855e16a682b461f94ab3` | ⚠️ Unaudited |
+| ERC677GatewayFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xd806a4a473e44578796898a4c546f575d7247b2b` | ⚠️ Unaudited |
+| ERC721GatewayFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xa87827efcac7ab82992665fc178cca16843fe353` | ⚠️ Unaudited |
+| FactoryPortal | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x58c1bbb508e96cfec1787acf6afe1c7008a5b064` | ⚠️ Unaudited |
+| MultichainVerseExplore | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x90d5f3aa862f87598011e6ef511e4e8ed2f5f095` | ⚠️ Unaudited |
+| RewardMasterChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x123706cdd8e60324e610e9a2cc7012d0f45a5b8e` | ⚠️ Unaudited |
+| Skimmer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x82f0b8b456c1a451378467398982d4834b6829c1` | ⚠️ Unaudited |
+| ValueRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x7fc5670b2041d34414b0b2178fc660b1e1faf801` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -134,10 +134,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-392584 | `0x338726...66c96d` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | fantom | unit-392585 | `0x8cc97b...58380b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-392586 | `0xbda9df...8f3348` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-392587 | `0x6e0c55...4ebf8a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-392584 | `0x338726dd694db9e2230ec2bb8624a2d7f566c96d` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | fantom | unit-392585 | `0x8cc97b50fe87f31770bcdcd6bc8603bc1558380b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-392586 | `0xbda9df2cff1d36ffc05e8e76ec821b25db8f3348` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-392587 | `0x6e0c55f4f52e2be3eabbd368f1ae7eddeb4ebf8a` | ❓ Unverified |
 
 ## Audit Inventory
 

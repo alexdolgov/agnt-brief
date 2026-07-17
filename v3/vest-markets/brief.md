@@ -90,12 +90,12 @@ The pinned logic-topography run contains 2 contract row(s) across arbitrum, base
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| DevSrcBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x032aca...e55ca8`; arbitrum `0x0b3b31...495e14` | ⚠️ Unaudited |
-| DevSrcBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 12 deployments: arbitrum `0x15a6da...2051e5`; arbitrum `0x18b5b2...a28bd6`; arbitrum `0x208166...aac75b`; arbitrum `0x5cb2d8...ee2969`; arbitrum `0x6226cb...dadcfb`; arbitrum `0x648bcd...3cab29`; arbitrum `0x6c0f49...a9a1b2`; arbitrum `0x8092c5...9e1799`; arbitrum `0xa28b1b...a46851`; arbitrum `0xab99af...2f10d0`; arbitrum `0xb3df06...ccfcf5`; arbitrum `0xbfe4c2...b83dc8` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: bsc `0xca0d26...be71cb`; arbitrum `0x705aaf...6fa7f9` | ⚠️ Unaudited |
-| SrcBridge | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | bsc | unit-396341 | 2 deployments: bsc `0xe54e95...38a974`; bsc `0xef14da...372c41` | ⚠️ Unaudited |
-| SrcBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 12 deployments: bsc `0x42cd52...958b7b`; bsc `0xb2f86e...8dd1ea`; bsc `0xecd91c...c881e3`; arbitrum `0x33c48d...64cffc`; arbitrum `0x48624e...950a75`; arbitrum `0x4e63e3...3ac2b7`; arbitrum `0x624556...d04a77`; arbitrum `0x7b3e67...3a4ad2`; arbitrum `0x8952c8...209a97`; arbitrum `0x8f1587...04cbd3`; arbitrum `0x9e5550...4d2564`; arbitrum `0xf863a9...2f78da` | ⚠️ Unaudited |
-| SrcBridge | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x80c526...0eda00` | ⚠️ Unaudited |
+| DevSrcBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x032aca08c1be8fa4d4902cf8db011769d9e55ca8`; arbitrum `0x0b3b31da21ca84068be498394c64ad8447495e14` | ⚠️ Unaudited |
+| DevSrcBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 12 deployments: arbitrum `0x15a6da50cdf8afa78ebea9bda653d4c6c82051e5`; arbitrum `0x18b5b2706853cab26069970f75e6801a88a28bd6`; arbitrum `0x20816692943cf4b8dc13934d16b63c8a99aac75b`; arbitrum `0x5cb2d8112e9cc93f0c25bea0d2716e8c8cee2969`; arbitrum `0x6226cb9f194e26fe1c36b63aa736171041dadcfb`; arbitrum `0x648bcd32f540857e1100456434dde007843cab29`; arbitrum `0x6c0f4929e7bca32a8e96cd6baff34abd8ba9a1b2`; arbitrum `0x8092c5c45822a9861340e3a2e1c81146e89e1799`; arbitrum `0xa28b1b5814a811eab18b3ed33d1dd69131a46851`; arbitrum `0xab99af35aa09837d7287f169c81c86c3222f10d0`; arbitrum `0xb3df0644f6bce62e0f6914ea92380cc456ccfcf5`; arbitrum `0xbfe4c29a799865bfa5d0ef888a723d4a56b83dc8` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: bsc `0xca0d26a9c82d0b6133e624ce26f7d7d50ebe71cb`; arbitrum `0x705aaffeccb370883531f09c64133d3abb6fa7f9` | ⚠️ Unaudited |
+| SrcBridge | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | bsc | unit-396341 | 2 deployments: bsc `0xe54e9592c8292cb7d82cb8d3e4d0edc22e38a974`; bsc `0xef14da66876476c1a75dc057343b97b6bd372c41` | ⚠️ Unaudited |
+| SrcBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 12 deployments: bsc `0x42cd5231648fd412900e34d4deb14f602a958b7b`; bsc `0xb2f86eae1197032fa85389cc6c0f3b06b58dd1ea`; bsc `0xecd91c77b98d507e3c20bac86d2541ecbdc881e3`; arbitrum `0x33c48d0126f5bbcbf5fc37a814977e09df64cffc`; arbitrum `0x48624e74a7282ce09d2fb5cbe57d68d52d950a75`; arbitrum `0x4e63e30c34c162178a02a135eb94610f593ac2b7`; arbitrum `0x624556fc6955672d06afb1d197b0358ac9d04a77`; arbitrum `0x7b3e67687a99e608492a0ac460c88c56b43a4ad2`; arbitrum `0x8952c806da8fa2eccd408ee257647f2712209a97`; arbitrum `0x8f158704fc662684555f1e46de0950a38304cbd3`; arbitrum `0x9e55503859c886f415e938ef80d83d88854d2564`; arbitrum `0xf863a918073dff26a57cbb49037f98c2b22f78da` | ⚠️ Unaudited |
+| SrcBridge | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x80c526d1c2fddadb3cd39810cd7a79e07b0eda00` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -115,11 +115,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-396335 | `0xe80f92...e1c35a` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | optimism | unit-396336 | `0xe80f92...e1c35a` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | polygon | unit-396337 | `0xe80f92...e1c35a` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | zksync-era | unit-396338 | `0xf0bcf4...fda56b` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-396339 | `0x32d95f...27ef7e` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-396335 | `0xe80f92077131b9890599e418ae323de71ce1c35a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | optimism | unit-396336 | `0xe80f92077131b9890599e418ae323de71ce1c35a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | polygon | unit-396337 | `0xe80f92077131b9890599e418ae323de71ce1c35a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | zksync-era | unit-396338 | `0xf0bcf4ede69e5cb0eb1c9e35b4d408a5e7fda56b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-396339 | `0x32d95f243f9e2c1344e4baa91a8d32711527ef7e` | ❓ Unverified |
 
 ## Audit Inventory
 

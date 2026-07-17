@@ -89,9 +89,9 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| HONG | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-162695 | `0x9fa8fa...2ce0a9` | ⚠️ Unaudited |
-| token | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-162694 | `0x4a4576...3998b9` | ⚠️ Unaudited |
-| Wallet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-162696 | `0xb79ab5...812d31` | ⚠️ Unaudited |
+| HONG | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-162695 | `0x9fa8fa61a10ff892e4ebceb7f4e0fc684c2ce0a9` | ⚠️ Unaudited |
+| token | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-162694 | `0x4a4576e39dd49334b33df8c3626b9426723998b9` | ⚠️ Unaudited |
+| Wallet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-162696 | `0xb79ab5993cef2e0b714a66f3eda73b55de812d31` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

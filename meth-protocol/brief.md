@@ -61,7 +61,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| L1Cook | unknown | ethereum | n/a | [`0x9f0c01...c7b94d`](./contracts/ethereum-1/0x9f0c013016e8656bc256f948cd4b79ab25c7b94d/) | ✅ Audited |
+| L1Cook | unknown | ethereum | n/a | [`0x9f0c013016e8656bc256f948cd4b79ab25c7b94d`](./contracts/ethereum-1/0x9f0c013016e8656bc256f948cd4b79ab25c7b94d/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 

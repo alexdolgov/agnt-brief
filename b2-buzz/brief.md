@@ -62,9 +62,9 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| B2Token | unknown | bsc | n/a | [`0x783c3f...6ee2a2`](./contracts/bsc-56/0x783c3f003f172c6ac5ac700218a357d2d66ee2a2/) | ⚠️ Unaudited |
-| GnosisSafe | unknown | ethereum | n/a | [`0xeea3a0...13c42c`](./contracts/ethereum-1/0xeea3a032f381ab1e415e82fe08ebeb20f513c42c/) | ⚠️ Unaudited |
-| GnosisSafeProxy | unknown | polygon | n/a | [`0x01ce88...cd184a`](./contracts/polygon-137/0x01ce88498ed095d386e09834d32fd8f1fecd184a/) | ⚠️ Unaudited |
+| B2Token | unknown | bsc | n/a | [`0x783c3f003f172c6ac5ac700218a357d2d66ee2a2`](./contracts/bsc-56/0x783c3f003f172c6ac5ac700218a357d2d66ee2a2/) | ⚠️ Unaudited |
+| GnosisSafe | unknown | ethereum | n/a | [`0xeea3a032f381ab1e415e82fe08ebeb20f513c42c`](./contracts/ethereum-1/0xeea3a032f381ab1e415e82fe08ebeb20f513c42c/) | ⚠️ Unaudited |
+| GnosisSafeProxy | unknown | polygon | n/a | [`0x01ce88498ed095d386e09834d32fd8f1fecd184a`](./contracts/polygon-137/0x01ce88498ed095d386e09834d32fd8f1fecd184a/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -97,7 +97,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x783c3f...6ee2a2`](./contracts/bsc-56/0x783c3f003f172c6ac5ac700218a357d2d66ee2a2/) | B2Token | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x783c3f003f172c6ac5ac700218a357d2d66ee2a2`](./contracts/bsc-56/0x783c3f003f172c6ac5ac700218a357d2d66ee2a2/) | B2Token | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

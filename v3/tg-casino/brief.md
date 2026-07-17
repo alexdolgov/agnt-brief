@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- TGCToken (`0x25b4f5...7cb7cf`, chain 1)
+- TGCToken (`0x25b4f5d4c314bcd5d7962734936c957b947cb7cf`, chain 1)
 
 ## Contract Surface Quality
 
@@ -101,28 +101,28 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| TGCToken | token | project_anchor | own_supporting | 0 | ethereum | unit-393944 | `0x25b4f5...7cb7cf` | ✅ Audited |
+| TGCToken | token | project_anchor | own_supporting | 0 | ethereum | unit-393944 | `0x25b4f5d4c314bcd5d7962734936c957b947cb7cf` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (16)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| MultiStakingManagerV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8a876a...c8bae7` | ⚠️ Unaudited |
-| MultiStakingManagerV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x091656...409b47`; ethereum `0x176bd8...b06732` | ⚠️ Unaudited |
-| MultiStakingManagerV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xca74e3...c36e80` | ⚠️ Unaudited |
-| PresaleV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa87e79...73009a` | ⚠️ Unaudited |
-| PresaleV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa1f35d...0d47c4` | ⚠️ Unaudited |
-| PresaleV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x665fa1...6643fd` | ⚠️ Unaudited |
-| PresaleV4 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x39fd3e...487f92`; ethereum `0x5188e2...77cc4a` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x34813f...a7274e` | ⚠️ Unaudited |
-| StakingManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9307d5...b692bb` | ⚠️ Unaudited |
-| StakingManagerV1 | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x21d6d6...540ae8` | ⚠️ Unaudited |
-| StakingManagerV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0xb5b77c...bf1a0e`; ethereum `0xfad6ef...f77b42` | ⚠️ Unaudited |
-| StakingManagerV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc2db0d...fdd262` | ⚠️ Unaudited |
-| StakingManagerV4 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x700169...758cc8` | ⚠️ Unaudited |
-| StakingManagerV5 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x258c31...db764e`; ethereum `0x4bb67f...694085` | ⚠️ Unaudited |
-| TGCToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x14bc78...b547b0` | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x85aa97...2122bf` | ⚠️ Unaudited |
+| MultiStakingManagerV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8a876a89af8b0376b1fb0183a89728608bc8bae7` | ⚠️ Unaudited |
+| MultiStakingManagerV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x0916568854fc53b720186052d8013d62a0409b47`; ethereum `0x176bd8035ab5dba3d5893271f2b7e51085b06732` | ⚠️ Unaudited |
+| MultiStakingManagerV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xca74e32d5d5b78ccc0fa13e407872874dbc36e80` | ⚠️ Unaudited |
+| PresaleV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa87e79652814a0239bf752d4d7be70f61b73009a` | ⚠️ Unaudited |
+| PresaleV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa1f35da94d3c25c1c130092122db690ff10d47c4` | ⚠️ Unaudited |
+| PresaleV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x665fa1b41c5102ee62b6c23818c2b4f1316643fd` | ⚠️ Unaudited |
+| PresaleV4 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x39fd3e106fed3c80192d1849e13d900f45487f92`; ethereum `0x5188e2bfd1dd35ef733ffb09a4f19bd75977cc4a` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x34813f4bc5e2a14c8fffb10bd43c59fa05a7274e` | ⚠️ Unaudited |
+| StakingManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9307d50caae1fa22a08b3352b493797a7ab692bb` | ⚠️ Unaudited |
+| StakingManagerV1 | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x21d6d6d6ffd8b68e94bf5159bb029635af540ae8` | ⚠️ Unaudited |
+| StakingManagerV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0xb5b77c895bf3c4c060da327fbc953e7fbdbf1a0e`; ethereum `0xfad6ef2b6e30a4854b7fc2e3de09ba4c88f77b42` | ⚠️ Unaudited |
+| StakingManagerV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc2db0df8ba54715ff73691c8c934120168fdd262` | ⚠️ Unaudited |
+| StakingManagerV4 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x700169c3408f10e98c34ac1902e2b6ae89758cc8` | ⚠️ Unaudited |
+| StakingManagerV5 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x258c3104388f8cd72c8b4336fc536033e6db764e`; ethereum `0x4bb67fb2ef625abfec712bd5213aae4fbf694085` | ⚠️ Unaudited |
+| TGCToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x14bc78f0e6b9854da2a92f43a0526b31ceb547b0` | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x85aa97537837514a9229fcaeb66eeef7242122bf` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -174,7 +174,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| Coinsult_TG.Casino_0x25...b7cf_Audit.pdf | TGCToken | own contract | TGCToken (selected) `0x25b4f5...7cb7cf` — deployed 2023-10-06 05:46:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Coinsult_TG.Casino_0x25...b7cf_Audit.pdf | TGCToken | own contract | TGCToken (selected) `0x25b4f5d4c314bcd5d7962734936c957b947cb7cf` — deployed 2023-10-06 05:46:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | TGB_PRESALE_12_11_23.pdf | PresaleV1 | unmatched — not counted | — | Listed in scope table and assessed throughout report | no |
 | TGB_PreSaleV1_01_12_2024.pdf | PresaleV1 | unmatched — not counted | — | Listed in scope table and assessed throughout report. | no |
 | TGB_STAKING MANAGER_12_11_23.pdf | StakingManagerV1 | unmatched — not counted | — | — | no |

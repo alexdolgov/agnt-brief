@@ -52,23 +52,23 @@ The pinned logic-topography run contains 17 contract row(s) across base. Structu
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- BribeFactory (`0x722ccb...8ecaf9`, chain 8453)
-- ControllerUpgradeable (`0x8170b3...106713`, chain 8453)
-- ControllerUpgradeable Impl (`0xdb8e58...d34eef`, chain 8453)
-- GaugeFactory (`0x5abeaf...21cca2`, chain 8453)
-- MinterUpgradeable (`0x87ae7d...7186a5`, chain 8453)
-- MinterUpgradeable Impl (`0x86fddc...038cb8`, chain 8453)
-- Multicall2 (`0x96ffa1...ad7141`, chain 8453)
-- ProxyAdmin (`0x54d5ea...312b79`, chain 8453)
-- SolidlyLibrary (`0xb40788...e18f26`, chain 8453)
-- veBOLT (`0x61e2c1...16c3b9`, chain 8453)
-- VeDistUpgradeable (`0xcb793f...5e9114`, chain 8453)
-- VeDistUpgradeable Impl (`0x673556...74d51a`, chain 8453)
-- VeUpgradeable Impl (`0x93de05...e643da`, chain 8453)
-- VoltFactory (`0x2a5478...c00398`, chain 8453)
-- VoltRouter01 (`0x682521...d7d208`, chain 8453)
-- VoltVoterUpgradeable (`0x6eec5f...fbd4ca`, chain 8453)
-- VoltVoterUpgradeable Impl (`0xb14900...d42cdd`, chain 8453)
+- BribeFactory (`0x722ccb55ab1752796cf34c12d1ea7083158ecaf9`, chain 8453)
+- ControllerUpgradeable (`0x8170b318b359d85f1c91970a140d756dcd106713`, chain 8453)
+- ControllerUpgradeable Impl (`0xdb8e585e8a9a7dd00e201dc288e1f7b08fd34eef`, chain 8453)
+- GaugeFactory (`0x5abeaf061f81bf966f7ac9bb2ad16bf9e421cca2`, chain 8453)
+- MinterUpgradeable (`0x87ae7d4853febd2c3450e6d85c5233aa9e7186a5`, chain 8453)
+- MinterUpgradeable Impl (`0x86fddc06abb5b0a0f2cbcc133880a55f80038cb8`, chain 8453)
+- Multicall2 (`0x96ffa1203e4479f6656a21e5f00eec284dad7141`, chain 8453)
+- ProxyAdmin (`0x54d5ea62d3745831192ea9c2c03b520edc312b79`, chain 8453)
+- SolidlyLibrary (`0xb407883637ef802b6d17fb65c722090933e18f26`, chain 8453)
+- veBOLT (`0x61e2c1608b1caa59136bcb7845637858d216c3b9`, chain 8453)
+- VeDistUpgradeable (`0xcb793ffd789470ab8da3653a3fcc91aaa55e9114`, chain 8453)
+- VeDistUpgradeable Impl (`0x67355688b9ec9ec4a3178f022997f0dc3474d51a`, chain 8453)
+- VeUpgradeable Impl (`0x93de053520d42b3f74281852bd56f232a4e643da`, chain 8453)
+- VoltFactory (`0x2a5478be24f9e536ccb91dbf650efd6ce6c00398`, chain 8453)
+- VoltRouter01 (`0x682521e88cc71a8d49a3635bab4468ad7cd7d208`, chain 8453)
+- VoltVoterUpgradeable (`0x6eec5ff9736e619c376bd866ddf5937f3efbd4ca`, chain 8453)
+- VoltVoterUpgradeable Impl (`0xb14900cc638f84a3e4f167a2776502c7bcd42cdd`, chain 8453)
 
 ## Contract Surface Quality
 
@@ -114,23 +114,23 @@ The pinned logic-topography run contains 17 contract row(s) across base. Structu
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BOLT | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-396368 | `0x863656...916f32` | ⚠️ Unaudited |
-| BribeFactory | unknown | project_anchor | own_supporting | 0 | base | unit-396366 | `0x722ccb...8ecaf9` | ⚠️ Unaudited |
-| ControllerUpgradeable | unknown | project_anchor | own_supporting | 0 | base | unit-396367 | `0x8170b3...106713` | ⚠️ Unaudited |
-| ControllerUpgradeable Impl | unknown | project_anchor | own_supporting | 0 | base | unit-396377 | `0xdb8e58...d34eef` | ⚠️ Unaudited |
-| GaugeFactory | unknown | project_anchor | own_supporting | 0 | base | unit-396360 | `0x5abeaf...21cca2` | ⚠️ Unaudited |
-| MinterUpgradeable | unknown | project_anchor | own_supporting | 0 | base | unit-396370 | `0x87ae7d...7186a5` | ⚠️ Unaudited |
-| Multicall2 | unknown | project_anchor | own_supporting | 0 | base | unit-396372 | `0x96ffa1...ad7141` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | project_anchor | own_supporting | 0 | base | unit-396359 | `0x54d5ea...312b79` | ⚠️ Unaudited |
-| SolidlyLibrary | unknown | project_anchor | own_supporting | 0 | base | unit-396375 | `0xb40788...e18f26` | ⚠️ Unaudited |
-| veBOLT | unknown | project_anchor | own_supporting | 0 | base | unit-396361 | `0x61e2c1...16c3b9` | ⚠️ Unaudited |
-| VeDistUpgradeable | unknown | project_anchor | own_supporting | 0 | base | unit-396376 | `0xcb793f...5e9114` | ⚠️ Unaudited |
-| VeDistUpgradeable Impl | unknown | project_anchor | own_supporting | 0 | base | unit-396362 | `0x673556...74d51a` | ⚠️ Unaudited |
-| VeUpgradeable Impl | unknown | project_anchor | own_supporting | 0 | base | unit-396371 | `0x93de05...e643da` | ⚠️ Unaudited |
-| VoltFactory | unknown | project_anchor | own_supporting | 0 | base | unit-396358 | `0x2a5478...c00398` | ⚠️ Unaudited |
-| VoltRouter01 | unknown | project_anchor | own_supporting | 0 | base | unit-396363 | `0x682521...d7d208` | ⚠️ Unaudited |
-| VoltVoterUpgradeable | unknown | project_anchor | own_supporting | 0 | base | unit-396364 | `0x6eec5f...fbd4ca` | ⚠️ Unaudited |
-| VoltVoterUpgradeable Impl | unknown | project_anchor | own_supporting | 0 | base | unit-396374 | `0xb14900...d42cdd` | ⚠️ Unaudited |
+| BOLT | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-396368 | `0x863656e346d8a42ec7caaad606611b6fd8916f32` | ⚠️ Unaudited |
+| BribeFactory | unknown | project_anchor | own_supporting | 0 | base | unit-396366 | `0x722ccb55ab1752796cf34c12d1ea7083158ecaf9` | ⚠️ Unaudited |
+| ControllerUpgradeable | unknown | project_anchor | own_supporting | 0 | base | unit-396367 | `0x8170b318b359d85f1c91970a140d756dcd106713` | ⚠️ Unaudited |
+| ControllerUpgradeable Impl | unknown | project_anchor | own_supporting | 0 | base | unit-396377 | `0xdb8e585e8a9a7dd00e201dc288e1f7b08fd34eef` | ⚠️ Unaudited |
+| GaugeFactory | unknown | project_anchor | own_supporting | 0 | base | unit-396360 | `0x5abeaf061f81bf966f7ac9bb2ad16bf9e421cca2` | ⚠️ Unaudited |
+| MinterUpgradeable | unknown | project_anchor | own_supporting | 0 | base | unit-396370 | `0x87ae7d4853febd2c3450e6d85c5233aa9e7186a5` | ⚠️ Unaudited |
+| Multicall2 | unknown | project_anchor | own_supporting | 0 | base | unit-396372 | `0x96ffa1203e4479f6656a21e5f00eec284dad7141` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | project_anchor | own_supporting | 0 | base | unit-396359 | `0x54d5ea62d3745831192ea9c2c03b520edc312b79` | ⚠️ Unaudited |
+| SolidlyLibrary | unknown | project_anchor | own_supporting | 0 | base | unit-396375 | `0xb407883637ef802b6d17fb65c722090933e18f26` | ⚠️ Unaudited |
+| veBOLT | unknown | project_anchor | own_supporting | 0 | base | unit-396361 | `0x61e2c1608b1caa59136bcb7845637858d216c3b9` | ⚠️ Unaudited |
+| VeDistUpgradeable | unknown | project_anchor | own_supporting | 0 | base | unit-396376 | `0xcb793ffd789470ab8da3653a3fcc91aaa55e9114` | ⚠️ Unaudited |
+| VeDistUpgradeable Impl | unknown | project_anchor | own_supporting | 0 | base | unit-396362 | `0x67355688b9ec9ec4a3178f022997f0dc3474d51a` | ⚠️ Unaudited |
+| VeUpgradeable Impl | unknown | project_anchor | own_supporting | 0 | base | unit-396371 | `0x93de053520d42b3f74281852bd56f232a4e643da` | ⚠️ Unaudited |
+| VoltFactory | unknown | project_anchor | own_supporting | 0 | base | unit-396358 | `0x2a5478be24f9e536ccb91dbf650efd6ce6c00398` | ⚠️ Unaudited |
+| VoltRouter01 | unknown | project_anchor | own_supporting | 0 | base | unit-396363 | `0x682521e88cc71a8d49a3635bab4468ad7cd7d208` | ⚠️ Unaudited |
+| VoltVoterUpgradeable | unknown | project_anchor | own_supporting | 0 | base | unit-396364 | `0x6eec5ff9736e619c376bd866ddf5937f3efbd4ca` | ⚠️ Unaudited |
+| VoltVoterUpgradeable Impl | unknown | project_anchor | own_supporting | 0 | base | unit-396374 | `0xb14900cc638f84a3e4f167a2776502c7bcd42cdd` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -150,9 +150,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| MinterUpgradeable Impl | unknown | project_anchor | own_supporting | 0 | base | unit-396369 | `0x86fddc...038cb8` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-396365 | `0x71e602...0dccab` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-396373 | `0xa023e6...ab2f82` | ❓ Unverified |
+| MinterUpgradeable Impl | unknown | project_anchor | own_supporting | 0 | base | unit-396369 | `0x86fddc06abb5b0a0f2cbcc133880a55f80038cb8` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-396365 | `0x71e60281614222354c6078625c73cec13a0dccab` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-396373 | `0xa023e6f6b4862ea38cbe45e377abd908abab2f82` | ❓ Unverified |
 
 ## Audit Inventory
 

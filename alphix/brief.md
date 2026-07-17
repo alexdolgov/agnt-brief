@@ -61,14 +61,14 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Alphix | unknown | base | n/a | [`0x0e4b89...5660c0`](./contracts/base-8453/0x0e4b892df7c5bcf5010faf4aa106074e555660c0/) | ✅ Audited |
+| Alphix | unknown | base | n/a | [`0x0e4b892df7c5bcf5010faf4aa106074e555660c0`](./contracts/base-8453/0x0e4b892df7c5bcf5010faf4aa106074e555660c0/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AlphixLVRFee | unknown | base | n/a | [`0x7cbbff...1b9044`](./contracts/base-8453/0x7cbbff9c4fcd74b221c535f4fb4b1db04f1b9044/) | ⚠️ Unaudited |
-| AlphixPro | unknown | base | n/a | [`0x2f9cf8...3f9080`](./contracts/base-8453/0x2f9cf87a6cbfa53c3f1b184900de17298e3f9080/) | ⚠️ Unaudited |
+| AlphixLVRFee | unknown | base | n/a | [`0x7cbbff9c4fcd74b221c535f4fb4b1db04f1b9044`](./contracts/base-8453/0x7cbbff9c4fcd74b221c535f4fb4b1db04f1b9044/) | ⚠️ Unaudited |
+| AlphixPro | unknown | base | n/a | [`0x2f9cf87a6cbfa53c3f1b184900de17298e3f9080`](./contracts/base-8453/0x2f9cf87a6cbfa53c3f1b184900de17298e3f9080/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -101,8 +101,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x7cbbff...1b9044`](./contracts/base-8453/0x7cbbff9c4fcd74b221c535f4fb4b1db04f1b9044/) | AlphixLVRFee | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x2f9cf8...3f9080`](./contracts/base-8453/0x2f9cf87a6cbfa53c3f1b184900de17298e3f9080/) | AlphixPro | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x7cbbff9c4fcd74b221c535f4fb4b1db04f1b9044`](./contracts/base-8453/0x7cbbff9c4fcd74b221c535f4fb4b1db04f1b9044/) | AlphixLVRFee | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x2f9cf87a6cbfa53c3f1b184900de17298e3f9080`](./contracts/base-8453/0x2f9cf87a6cbfa53c3f1b184900de17298e3f9080/) | AlphixPro | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

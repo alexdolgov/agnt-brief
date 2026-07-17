@@ -54,12 +54,12 @@ The pinned logic-topography run contains 6 contract row(s) across base, ethereum
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- Angstrom (`0x000000...edfad4`, chain 1)
-- AngstromL2 (`0x7fa49d...09e5cf`, chain 8453)
-- AngstromL2 (`0xcd256a...1de5cf`, chain 8453)
-- AngstromL2Factory (`0x000000...69cd05`, chain 8453)
-- ControllerV1 (`0x174648...315fd4`, chain 1)
-- TimelockController (`0x60d41d...526c01`, chain 1)
+- Angstrom (`0x0000000aa232009084bd71a5797d089aa4edfad4`, chain 1)
+- AngstromL2 (`0x7fa49d29481b6d168505ccde26635e204c09e5cf`, chain 8453)
+- AngstromL2 (`0xcd256a2f4574cb6aca4837313ad225d2fe1de5cf`, chain 8453)
+- AngstromL2Factory (`0x0000000000fd3b85c30f942e8d878e858e69cd05`, chain 8453)
+- ControllerV1 (`0x1746484ea5e11c75e009252c102c8c33e0315fd4`, chain 1)
+- TimelockController (`0x60d41d9708bbefd29000d1486c6406ef23526c01`, chain 1)
 
 ## Contract Surface Quality
 
@@ -104,25 +104,25 @@ The pinned logic-topography run contains 6 contract row(s) across base, ethereum
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Angstrom | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379014 | `0x000000...edfad4` | ✅ Audited |
+| Angstrom | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379014 | `0x0000000aa232009084bd71a5797d089aa4edfad4` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (13)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| PoolManager | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x000000...e08a90`; base `0x498581...652b2b` | ⚠️ Unaudited |
-| AngstromAdapter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb535ae...4efbf8` | ⚠️ Unaudited |
-| AngstromInspector | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd262c2...03b6c3` | ⚠️ Unaudited |
-| AngstromL2 | unknown | project_anchor | own_supporting | 0 | base | unit-379020 | 2 deployments: base `0x7fa49d...09e5cf`; base `0xcd256a...1de5cf` | ⚠️ Unaudited |
-| AngstromL2Factory | registry | project_anchor | own_supporting | 0 | base | unit-379019 | `0x000000...69cd05` | ⚠️ Unaudited |
-| AngstromVaultFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6582c7...0c169c` | ⚠️ Unaudited |
-| ControllerV1 | governance | project_anchor | own_supporting | 0 | ethereum | unit-379015 | `0x174648...315fd4` | ⚠️ Unaudited |
-| EventEmitter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb3df86...8a00df` | ⚠️ Unaudited |
-| PerpsOracleAttested | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5d8555...a65c0b` | ⚠️ Unaudited |
-| PriceOracle | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4cf26a...74b89d` | ⚠️ Unaudited |
-| Swapper | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x814e3b...ebf8cc` | ⚠️ Unaudited |
-| TimelockController | governance | project_anchor | own_supporting | 0 | ethereum | unit-379016 | `0x60d41d...526c01` | ⚠️ Unaudited |
-| VaultExtension | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x06d9f5...e06c79` | ⚠️ Unaudited |
+| PoolManager | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x000000000004444c5dc75cb358380d2e3de08a90`; base `0x498581ff718922c3f8e6a244956af099b2652b2b` | ⚠️ Unaudited |
+| AngstromAdapter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb535aeb27335b91e1b5bccbd64888ba7574efbf8` | ⚠️ Unaudited |
+| AngstromInspector | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd262c224402e9a7f5e8ad1621be1bb1f3203b6c3` | ⚠️ Unaudited |
+| AngstromL2 | unknown | project_anchor | own_supporting | 0 | base | unit-379020 | 2 deployments: base `0x7fa49d29481b6d168505ccde26635e204c09e5cf`; base `0xcd256a2f4574cb6aca4837313ad225d2fe1de5cf` | ⚠️ Unaudited |
+| AngstromL2Factory | registry | project_anchor | own_supporting | 0 | base | unit-379019 | `0x0000000000fd3b85c30f942e8d878e858e69cd05` | ⚠️ Unaudited |
+| AngstromVaultFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6582c770fc4167aa807c3846c73e6006e90c169c` | ⚠️ Unaudited |
+| ControllerV1 | governance | project_anchor | own_supporting | 0 | ethereum | unit-379015 | `0x1746484ea5e11c75e009252c102c8c33e0315fd4` | ⚠️ Unaudited |
+| EventEmitter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb3df869572ac94bb1acf5e9ecbfae3afee8a00df` | ⚠️ Unaudited |
+| PerpsOracleAttested | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5d8555f8c710798274a8c655b9a26a3465a65c0b` | ⚠️ Unaudited |
+| PriceOracle | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4cf26a7e680d5d86232f985b91c6cb9e0774b89d` | ⚠️ Unaudited |
+| Swapper | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x814e3b8dfdc2376b59a5ab70e8784dcb3bebf8cc` | ⚠️ Unaudited |
+| TimelockController | governance | project_anchor | own_supporting | 0 | ethereum | unit-379016 | `0x60d41d9708bbefd29000d1486c6406ef23526c01` | ⚠️ Unaudited |
+| VaultExtension | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x06d9f5e807eeca914482bbd8ed3f40c55ce06c79` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -142,10 +142,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x73922e...bba674` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x905108...70ba90` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-379017 | `0x73922e...bba674` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-379018 | `0x905108...70ba90` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x73922ee4f10a1d5a68700ff5c4fbf6b0e5bba674` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9051085355ba7e36177e0a1c4082cb88c270ba90` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-379017 | `0x73922ee4f10a1d5a68700ff5c4fbf6b0e5bba674` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-379018 | `0x9051085355ba7e36177e0a1c4082cb88c270ba90` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -174,7 +174,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | cantina.xyz/portfolio/39f1c6a9-dbd5-4322-b6a3-84b794b97cb8 | Settlement | unmatched — not counted | — | referenced in description | no |
 | cantina.xyz/portfolio/39f1c6a9-dbd5-4322-b6a3-84b794b97cb8 | GrowthOutsideUpdater | unmatched — not counted | — | referenced in description | no |
 | cantina.xyz/portfolio/39f1c6a9-dbd5-4322-b6a3-84b794b97cb8 | PoolUpdates | unmatched — not counted | — | referenced in description | no |
-| cantina.xyz/competitions/84df57a3-0526-49b8-a7c5-334888f43940 | Angstrom | own contract | Angstrom (selected) `0x000000...edfad4` — deployed 2025-07-22 05:36:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| cantina.xyz/competitions/84df57a3-0526-49b8-a7c5-334888f43940 | Angstrom | own contract | Angstrom (selected) `0x0000000aa232009084bd71a5797d089aa4edfad4` — deployed 2025-07-22 05:36:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | cantina.xyz/competitions/84df57a3-0526-49b8-a7c5-334888f43940 | Asset | unmatched — not counted | — | — | no |
 | cantina.xyz/competitions/84df57a3-0526-49b8-a7c5-334888f43940 | CalldataReader | unmatched — not counted | — | — | no |
 | cantina.xyz/competitions/84df57a3-0526-49b8-a7c5-334888f43940 | ConfigEntry | unmatched — not counted | — | — | no |
@@ -211,7 +211,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | cantina.xyz/competitions/84df57a3-0526-49b8-a7c5-334888f43940 | UserOrderBuffer | unmatched — not counted | — | — | no |
 | cantina.xyz/competitions/84df57a3-0526-49b8-a7c5-334888f43940 | UserOrderVariantMap | unmatched — not counted | — | — | no |
 | cantina.xyz/competitions/84df57a3-0526-49b8-a7c5-334888f43940 | X128MathLib | unmatched — not counted | — | — | no |
-| cantina.xyz/portfolio/c2fe4e46-66a3-416e-ab26-40dd4b437ff6 | Angstrom | own contract | Angstrom (selected) `0x000000...edfad4` — deployed 2025-07-22 05:36:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| cantina.xyz/portfolio/c2fe4e46-66a3-416e-ab26-40dd4b437ff6 | Angstrom | own contract | Angstrom (selected) `0x0000000aa232009084bd71a5797d089aa4edfad4` — deployed 2025-07-22 05:36:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 
 ## Coverage Gaps
 
@@ -219,9 +219,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | `0x7fa49d...09e5cf` | AngstromL2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x000000...69cd05` | AngstromL2Factory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x174648...315fd4` | ControllerV1 | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x7fa49d29481b6d168505ccde26635e204c09e5cf` | AngstromL2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x0000000000fd3b85c30f942e8d878e858e69cd05` | AngstromL2Factory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x1746484ea5e11c75e009252c102c8c33e0315fd4` | ControllerV1 | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

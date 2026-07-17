@@ -61,11 +61,11 @@ The protocol comprises 4 functional families. Its contracts share 9 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CHNGovernance | unknown | ethereum | n/a | [`0xdec2f3...4ef767`](./contracts/ethereum-1/0xdec2f31c3984f3440540dc78ef21b1369d4ef767/) | ⚠️ Unaudited |
-| CHNReward | unknown | ethereum | n/a | [`0x28ca9c...a5da93`](./contracts/ethereum-1/0x28ca9caae31602d0312ebf6466c9dd57fca5da93/) | ⚠️ Unaudited |
-| CHNStaking | unknown | ethereum | n/a | [`0x23445c...0e19a9`](./contracts/ethereum-1/0x23445c63feef8d85956dc0f19ade87606d0e19a9/) | ⚠️ Unaudited |
-| MasterChef | unknown | ethereum | n/a | [`0x3fa642...249216`](./contracts/ethereum-1/0x3fa642c0bbad64569eb8424af35f518347249216/) | ⚠️ Unaudited |
-| OnyxDAORegistry | registry | ethereum | n/a | [`0xadb90c...df3b31`](./contracts/ethereum-1/0xadb90c593e0bc8395a53087d8c558f5563df3b31/) | ⚠️ Unaudited |
+| CHNGovernance | unknown | ethereum | n/a | [`0xdec2f31c3984f3440540dc78ef21b1369d4ef767`](./contracts/ethereum-1/0xdec2f31c3984f3440540dc78ef21b1369d4ef767/) | ⚠️ Unaudited |
+| CHNReward | unknown | ethereum | n/a | [`0x28ca9caae31602d0312ebf6466c9dd57fca5da93`](./contracts/ethereum-1/0x28ca9caae31602d0312ebf6466c9dd57fca5da93/) | ⚠️ Unaudited |
+| CHNStaking | unknown | ethereum | n/a | [`0x23445c63feef8d85956dc0f19ade87606d0e19a9`](./contracts/ethereum-1/0x23445c63feef8d85956dc0f19ade87606d0e19a9/) | ⚠️ Unaudited |
+| MasterChef | unknown | ethereum | n/a | [`0x3fa642c0bbad64569eb8424af35f518347249216`](./contracts/ethereum-1/0x3fa642c0bbad64569eb8424af35f518347249216/) | ⚠️ Unaudited |
+| OnyxDAORegistry | registry | ethereum | n/a | [`0xadb90c593e0bc8395a53087d8c558f5563df3b31`](./contracts/ethereum-1/0xadb90c593e0bc8395a53087d8c558f5563df3b31/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -85,8 +85,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x36f0c2...f41067` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x58e9a7...ffebba` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x36f0c2f474766a8c79d1228a1b5dd28a82f41067` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x58e9a7e38fd7094ae086b134b74ac7b9b8ffebba` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -100,11 +100,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xdec2f3...4ef767`](./contracts/ethereum-1/0xdec2f31c3984f3440540dc78ef21b1369d4ef767/) | CHNGovernance | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x28ca9c...a5da93`](./contracts/ethereum-1/0x28ca9caae31602d0312ebf6466c9dd57fca5da93/) | CHNReward | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x23445c...0e19a9`](./contracts/ethereum-1/0x23445c63feef8d85956dc0f19ade87606d0e19a9/) | CHNStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x3fa642...249216`](./contracts/ethereum-1/0x3fa642c0bbad64569eb8424af35f518347249216/) | MasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xadb90c...df3b31`](./contracts/ethereum-1/0xadb90c593e0bc8395a53087d8c558f5563df3b31/) | OnyxDAORegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xdec2f31c3984f3440540dc78ef21b1369d4ef767`](./contracts/ethereum-1/0xdec2f31c3984f3440540dc78ef21b1369d4ef767/) | CHNGovernance | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x28ca9caae31602d0312ebf6466c9dd57fca5da93`](./contracts/ethereum-1/0x28ca9caae31602d0312ebf6466c9dd57fca5da93/) | CHNReward | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x23445c63feef8d85956dc0f19ade87606d0e19a9`](./contracts/ethereum-1/0x23445c63feef8d85956dc0f19ade87606d0e19a9/) | CHNStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x3fa642c0bbad64569eb8424af35f518347249216`](./contracts/ethereum-1/0x3fa642c0bbad64569eb8424af35f518347249216/) | MasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xadb90c593e0bc8395a53087d8c558f5563df3b31`](./contracts/ethereum-1/0xadb90c593e0bc8395a53087d8c558f5563df3b31/) | OnyxDAORegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -59,21 +59,21 @@ The protocol comprises 4 functional families. Its contracts share 4 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Comptroller | unknown | mode | n/a | [`0x545f4c...bea593`](./contracts/mode-34443/0x545f4c1cfa6ef2dd7c1239887384d6baf9bea593/) | ✅ Audited |
-| RewardDistributor | unknown | mode | n/a | [`0x792190...46629b`](./contracts/mode-34443/0x792190cb3a8df67daab6c71929a963718846629b/) | ✅ Audited |
+| Comptroller | unknown | mode | n/a | [`0x545f4c1cfa6ef2dd7c1239887384d6baf9bea593`](./contracts/mode-34443/0x545f4c1cfa6ef2dd7c1239887384d6baf9bea593/) | ✅ Audited |
+| RewardDistributor | unknown | mode | n/a | [`0x792190cb3a8df67daab6c71929a963718846629b`](./contracts/mode-34443/0x792190cb3a8df67daab6c71929a963718846629b/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (8)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CErc20Delegate | unknown | mode | n/a | [`0xb0290b...571c05`](./contracts/mode-34443/0xb0290b0efc67c2fe0b1ff7f35a3f3b394d571c05/) | ⚠️ Unaudited |
-| CErc20Delegator | unknown | mode | n/a | 3 deployments: mode [`0x666170...b41339`](./contracts/mode-34443/0x6661705b319b2148aaec0ce4ba9da4acf4b41339/); mode `0xa66841...8e4fb4`; mode `0xfc2a08...708b57` | ⚠️ Unaudited |
-| CEtherDelegate | unknown | mode | n/a | [`0xc7aeef...16def8`](./contracts/mode-34443/0xc7aeefe9819450a081627fe51ed86b850016def8/) | ⚠️ Unaudited |
-| CEtherDelegator | unknown | mode | n/a | [`0xd16c5b...15ba9a`](./contracts/mode-34443/0xd16c5b79990a131f679b0d4729e44fc0e115ba9a/) | ⚠️ Unaudited |
-| JumpRateModelV2 | unknown | mode | n/a | [`0x907637...eb2be9`](./contracts/mode-34443/0x907637e6e7664d2e6a4a6c26c4586e4797eb2be9/) | ⚠️ Unaudited |
-| TimelockController | governance | mode | n/a | [`0x31e2d6...022d16`](./contracts/mode-34443/0x31e2d664bca7e5a6502a0be25d90a3bfb1022d16/) | ⚠️ Unaudited |
-| Token | token | mode | n/a | [`0x0fa000...b53a90`](./contracts/mode-34443/0x0fa000cf4018e7a5069437a06f73120db0b53a90/) | ⚠️ Unaudited |
-| Unitroller | unknown | mode | n/a | [`0x86112d...e7bffe`](./contracts/mode-34443/0x86112d3176c537b953560ea6fe43f79382e7bffe/) | ⚠️ Unaudited |
+| CErc20Delegate | unknown | mode | n/a | [`0xb0290b0efc67c2fe0b1ff7f35a3f3b394d571c05`](./contracts/mode-34443/0xb0290b0efc67c2fe0b1ff7f35a3f3b394d571c05/) | ⚠️ Unaudited |
+| CErc20Delegator | unknown | mode | n/a | 3 deployments: mode [`0x6661705b319b2148aaec0ce4ba9da4acf4b41339`](./contracts/mode-34443/0x6661705b319b2148aaec0ce4ba9da4acf4b41339/); mode `0xa668418ec2f10d250c84edba951baff2db8e4fb4`; mode `0xfc2a08411a0e68e98f76774508949a24a5708b57` | ⚠️ Unaudited |
+| CEtherDelegate | unknown | mode | n/a | [`0xc7aeefe9819450a081627fe51ed86b850016def8`](./contracts/mode-34443/0xc7aeefe9819450a081627fe51ed86b850016def8/) | ⚠️ Unaudited |
+| CEtherDelegator | unknown | mode | n/a | [`0xd16c5b79990a131f679b0d4729e44fc0e115ba9a`](./contracts/mode-34443/0xd16c5b79990a131f679b0d4729e44fc0e115ba9a/) | ⚠️ Unaudited |
+| JumpRateModelV2 | unknown | mode | n/a | [`0x907637e6e7664d2e6a4a6c26c4586e4797eb2be9`](./contracts/mode-34443/0x907637e6e7664d2e6a4a6c26c4586e4797eb2be9/) | ⚠️ Unaudited |
+| TimelockController | governance | mode | n/a | [`0x31e2d664bca7e5a6502a0be25d90a3bfb1022d16`](./contracts/mode-34443/0x31e2d664bca7e5a6502a0be25d90a3bfb1022d16/) | ⚠️ Unaudited |
+| Token | token | mode | n/a | [`0x0fa000cf4018e7a5069437a06f73120db0b53a90`](./contracts/mode-34443/0x0fa000cf4018e7a5069437a06f73120db0b53a90/) | ⚠️ Unaudited |
+| Unitroller | unknown | mode | n/a | [`0x86112d3176c537b953560ea6fe43f79382e7bffe`](./contracts/mode-34443/0x86112d3176c537b953560ea6fe43f79382e7bffe/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,8 +93,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | mode | n/a | `0x5ca8c2...6e7523` | ❓ Unverified |
-| UnnamedContract | unknown | mode | n/a | `0x755a59...41ce49` | ❓ Unverified |
+| UnnamedContract | unknown | mode | n/a | `0x5ca8c256b23cf34733eec19260d3af2a8b6e7523` | ❓ Unverified |
+| UnnamedContract | unknown | mode | n/a | `0x755a59b8987cf0727ca79ade03272e6e4541ce49` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -108,13 +108,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| mode | [`0xb0290b...571c05`](./contracts/mode-34443/0xb0290b0efc67c2fe0b1ff7f35a3f3b394d571c05/) | CErc20Delegate | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| mode | [`0x666170...b41339`](./contracts/mode-34443/0x6661705b319b2148aaec0ce4ba9da4acf4b41339/) | CErc20Delegator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| mode | [`0xc7aeef...16def8`](./contracts/mode-34443/0xc7aeefe9819450a081627fe51ed86b850016def8/) | CEtherDelegate | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| mode | [`0xd16c5b...15ba9a`](./contracts/mode-34443/0xd16c5b79990a131f679b0d4729e44fc0e115ba9a/) | CEtherDelegator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| mode | [`0x907637...eb2be9`](./contracts/mode-34443/0x907637e6e7664d2e6a4a6c26c4586e4797eb2be9/) | JumpRateModelV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| mode | [`0x0fa000...b53a90`](./contracts/mode-34443/0x0fa000cf4018e7a5069437a06f73120db0b53a90/) | Token | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| mode | [`0x86112d...e7bffe`](./contracts/mode-34443/0x86112d3176c537b953560ea6fe43f79382e7bffe/) | Unitroller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| mode | [`0xb0290b0efc67c2fe0b1ff7f35a3f3b394d571c05`](./contracts/mode-34443/0xb0290b0efc67c2fe0b1ff7f35a3f3b394d571c05/) | CErc20Delegate | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| mode | [`0x6661705b319b2148aaec0ce4ba9da4acf4b41339`](./contracts/mode-34443/0x6661705b319b2148aaec0ce4ba9da4acf4b41339/) | CErc20Delegator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| mode | [`0xc7aeefe9819450a081627fe51ed86b850016def8`](./contracts/mode-34443/0xc7aeefe9819450a081627fe51ed86b850016def8/) | CEtherDelegate | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| mode | [`0xd16c5b79990a131f679b0d4729e44fc0e115ba9a`](./contracts/mode-34443/0xd16c5b79990a131f679b0d4729e44fc0e115ba9a/) | CEtherDelegator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| mode | [`0x907637e6e7664d2e6a4a6c26c4586e4797eb2be9`](./contracts/mode-34443/0x907637e6e7664d2e6a4a6c26c4586e4797eb2be9/) | JumpRateModelV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| mode | [`0x0fa000cf4018e7a5069437a06f73120db0b53a90`](./contracts/mode-34443/0x0fa000cf4018e7a5069437a06f73120db0b53a90/) | Token | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| mode | [`0x86112d3176c537b953560ea6fe43f79382e7bffe`](./contracts/mode-34443/0x86112d3176c537b953560ea6fe43f79382e7bffe/) | Unitroller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

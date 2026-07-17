@@ -52,14 +52,14 @@ The pinned logic-topography run contains 10 contract row(s) across polygon. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x477ce8...f456fa`, chain 137)
-- UnnamedContract (`0x4ce9ae...ce811a`, chain 137)
-- UnnamedContract (`0x94930a...336cbd`, chain 137)
-- UnnamedContract (`0xbc5b59...c5d74f`, chain 137)
-- UnnamedContract (`0xc2e5cb...5a56fe`, chain 137)
-- UnnamedContract (`0xe0e44d...315c94`, chain 137)
-- Timelock (`0xf5a824...684925`, chain 137)
-- VaultChef (`0xbda1f8...45a904`, chain 137)
+- UnnamedContract (`0x477ce834ae6b7ab003cce4bc4d8697763ff456fa`, chain 137)
+- UnnamedContract (`0x4ce9ae2f5983e19aebf5b8bae4460f2b9ece811a`, chain 137)
+- UnnamedContract (`0x94930a328162957ff1dd48900af67b5439336cbd`, chain 137)
+- UnnamedContract (`0xbc5b59ea1b6f8da8258615ee38d40e999ec5d74f`, chain 137)
+- UnnamedContract (`0xc2e5cbfdab2421094a36f9126810a54d725a56fe`, chain 137)
+- UnnamedContract (`0xe0e44d4e7e61f2f4f990f5f4e2408d2187315c94`, chain 137)
+- Timelock (`0xf5a824b077cc0aaf50cf83a9e82714b89b684925`, chain 137)
+- VaultChef (`0xbda1f897e851c7ef22cd490d2cf2dace4645a904`, chain 137)
 
 ## Contract Surface Quality
 
@@ -103,24 +103,24 @@ The pinned logic-topography run contains 10 contract row(s) across polygon. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | polygon | unit-391132 | `0x477ce8...f456fa` | ✅ Audited |
-| UnnamedContract | periphery | project_anchor | own_supporting | 0 | polygon | unit-391135 | `0x94930a...336cbd` | ✅ Audited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | polygon | unit-391132 | `0x477ce834ae6b7ab003cce4bc4d8697763ff456fa` | ✅ Audited |
+| UnnamedContract | periphery | project_anchor | own_supporting | 0 | polygon | unit-391135 | `0x94930a328162957ff1dd48900af67b5439336cbd` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (11)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| FishToken | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | polygon | unit-391131 | `0x3a3df2...76572b` | ⚠️ Unaudited |
-| LiquidityLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x9cf8d7...a7b11d` | ⚠️ Unaudited |
-| MasterChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x18590c...dde46c` | ⚠️ Unaudited |
-| Referral | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | polygon | unit-391136 | `0xb67ad6...56266d` | ⚠️ Unaudited |
-| StrategyFish | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x520c34...c62df5` | ⚠️ Unaudited |
-| Timelock | unknown | project_anchor | own_supporting | 0 | polygon | unit-391141 | `0xf5a824...684925` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | polygon | unit-391133 | `0x4ce9ae...ce811a` | ⚠️ Unaudited |
-| UnnamedContract | token | project_anchor | own_supporting | 0 | polygon | unit-391137 | `0xbc5b59...c5d74f` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | polygon | unit-391139 | `0xc2e5cb...5a56fe` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | polygon | unit-391140 | `0xe0e44d...315c94` | ⚠️ Unaudited |
-| VaultChef | unknown | project_anchor | own_supporting | 0 | polygon | unit-391138 | `0xbda1f8...45a904` | ⚠️ Unaudited |
+| FishToken | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | polygon | unit-391131 | `0x3a3df212b7aa91aa0402b9035b098891d276572b` | ⚠️ Unaudited |
+| LiquidityLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x9cf8d7c64e29045e3c6bf8e86874398dc6a7b11d` | ⚠️ Unaudited |
+| MasterChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x18590c1fa38a7e7357d40a6c2bbc910340dde46c` | ⚠️ Unaudited |
+| Referral | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | polygon | unit-391136 | `0xb67ad6c2fe7dd6ba346706b833ccf4234256266d` | ⚠️ Unaudited |
+| StrategyFish | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x520c340d6c9d7efc7cf4806b6cf0ab9859c62df5` | ⚠️ Unaudited |
+| Timelock | unknown | project_anchor | own_supporting | 0 | polygon | unit-391141 | `0xf5a824b077cc0aaf50cf83a9e82714b89b684925` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | polygon | unit-391133 | `0x4ce9ae2f5983e19aebf5b8bae4460f2b9ece811a` | ⚠️ Unaudited |
+| UnnamedContract | token | project_anchor | own_supporting | 0 | polygon | unit-391137 | `0xbc5b59ea1b6f8da8258615ee38d40e999ec5d74f` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | polygon | unit-391139 | `0xc2e5cbfdab2421094a36f9126810a54d725a56fe` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | polygon | unit-391140 | `0xe0e44d4e7e61f2f4f990f5f4e2408d2187315c94` | ⚠️ Unaudited |
+| VaultChef | unknown | project_anchor | own_supporting | 0 | polygon | unit-391138 | `0xbda1f897e851c7ef22cd490d2cf2dace4645a904` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -140,7 +140,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | polygon | unit-391134 | `0x8cfd1b...13d734` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | polygon | unit-391134 | `0x8cfd1b9b7478e7b0422916b72d1db6a9d513d734` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -165,9 +165,9 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | paladinsec.co/projects/polycat-finance | MasterChef | unmatched — not counted | — | listed in scope | no |
 | paladinsec.co/projects/polycat-finance | PawToken | unmatched — not counted | — | listed in scope | no |
 | paladinsec.co/projects/polycat-finance | RewardLocker | unmatched — not counted | — | listed in scope | no |
-| paladinsec.co/projects/polycat-finance | CatRouter | own contract | 0x94930a… (selected) `0x94930a...336cbd` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| paladinsec.co/projects/polycat-finance | CatRouter | own contract | 0x94930a… (selected) `0x94930a328162957ff1dd48900af67b5439336cbd` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | paladinsec.co/projects/polycat-finance | CatPair | unmatched — not counted | — | listed in scope | no |
-| paladinsec.co/projects/polycat-finance | CatFactory | own contract | 0x477ce8… (selected) `0x477ce8...f456fa` — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| paladinsec.co/projects/polycat-finance | CatFactory | own contract | 0x477ce8… (selected) `0x477ce834ae6b7ab003cce4bc4d8697763ff456fa` — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | paladinsec.co/projects/polycat-finance | CatERC20 | unmatched — not counted | — | listed in scope | no |
 | paladinsec.co/projects/polycat-finance | CatLibrary | unmatched — not counted | — | listed in scope | no |
 
@@ -177,8 +177,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| polygon | `0xf5a824...684925` | Timelock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | `0xbda1f8...45a904` | VaultChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0xf5a824b077cc0aaf50cf83a9e82714b89b684925` | Timelock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0xbda1f897e851c7ef22cd490d2cf2dace4645a904` | VaultChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

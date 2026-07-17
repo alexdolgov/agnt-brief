@@ -61,12 +61,12 @@ The protocol comprises 4 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BEP20Token | token | bsc | n/a | [`0xe9e7ce...087d56`](./contracts/bsc-56/0xe9e7cea3dedca5984780bafc599bd69add087d56/) | ⚠️ Unaudited |
-| GovernanceHectagon | unknown | bsc | n/a | [`0x7d31ed...fa9b0d`](./contracts/bsc-56/0x7d31ed03c2442f9ffc4f22d90772ee1f32fa9b0d/) | ⚠️ Unaudited |
-| HectagonBondDepository | unknown | bsc | n/a | [`0x9ae390...eeebcf`](./contracts/bsc-56/0x9ae390630eb2e60999e5065267b02f477beeebcf/) | ⚠️ Unaudited |
-| HectagonERC20Token | token | bsc | n/a | [`0x343915...6f60ee`](./contracts/bsc-56/0x343915085b919fbd4414f7046f903d194c6f60ee/) | ⚠️ Unaudited |
-| HectagonTreasury | operational_periphery | bsc | n/a | [`0x4059c4...aba4fb`](./contracts/bsc-56/0x4059c4a0b8a2b528c4f2e101a3bb8fb169aba4fb/) | ⚠️ Unaudited |
-| PHecta | unknown | bsc | n/a | [`0x332182...48bf15`](./contracts/bsc-56/0x33218297d315fc70e1520e292ca88348b648bf15/) | ⚠️ Unaudited |
+| BEP20Token | token | bsc | n/a | [`0xe9e7cea3dedca5984780bafc599bd69add087d56`](./contracts/bsc-56/0xe9e7cea3dedca5984780bafc599bd69add087d56/) | ⚠️ Unaudited |
+| GovernanceHectagon | unknown | bsc | n/a | [`0x7d31ed03c2442f9ffc4f22d90772ee1f32fa9b0d`](./contracts/bsc-56/0x7d31ed03c2442f9ffc4f22d90772ee1f32fa9b0d/) | ⚠️ Unaudited |
+| HectagonBondDepository | unknown | bsc | n/a | [`0x9ae390630eb2e60999e5065267b02f477beeebcf`](./contracts/bsc-56/0x9ae390630eb2e60999e5065267b02f477beeebcf/) | ⚠️ Unaudited |
+| HectagonERC20Token | token | bsc | n/a | [`0x343915085b919fbd4414f7046f903d194c6f60ee`](./contracts/bsc-56/0x343915085b919fbd4414f7046f903d194c6f60ee/) | ⚠️ Unaudited |
+| HectagonTreasury | operational_periphery | bsc | n/a | [`0x4059c4a0b8a2b528c4f2e101a3bb8fb169aba4fb`](./contracts/bsc-56/0x4059c4a0b8a2b528c4f2e101a3bb8fb169aba4fb/) | ⚠️ Unaudited |
+| PHecta | unknown | bsc | n/a | [`0x33218297d315fc70e1520e292ca88348b648bf15`](./contracts/bsc-56/0x33218297d315fc70e1520e292ca88348b648bf15/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -98,12 +98,12 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0xe9e7ce...087d56`](./contracts/bsc-56/0xe9e7cea3dedca5984780bafc599bd69add087d56/) | BEP20Token | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x7d31ed...fa9b0d`](./contracts/bsc-56/0x7d31ed03c2442f9ffc4f22d90772ee1f32fa9b0d/) | GovernanceHectagon | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x9ae390...eeebcf`](./contracts/bsc-56/0x9ae390630eb2e60999e5065267b02f477beeebcf/) | HectagonBondDepository | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x343915...6f60ee`](./contracts/bsc-56/0x343915085b919fbd4414f7046f903d194c6f60ee/) | HectagonERC20Token | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x4059c4...aba4fb`](./contracts/bsc-56/0x4059c4a0b8a2b528c4f2e101a3bb8fb169aba4fb/) | HectagonTreasury | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x332182...48bf15`](./contracts/bsc-56/0x33218297d315fc70e1520e292ca88348b648bf15/) | PHecta | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xe9e7cea3dedca5984780bafc599bd69add087d56`](./contracts/bsc-56/0xe9e7cea3dedca5984780bafc599bd69add087d56/) | BEP20Token | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x7d31ed03c2442f9ffc4f22d90772ee1f32fa9b0d`](./contracts/bsc-56/0x7d31ed03c2442f9ffc4f22d90772ee1f32fa9b0d/) | GovernanceHectagon | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x9ae390630eb2e60999e5065267b02f477beeebcf`](./contracts/bsc-56/0x9ae390630eb2e60999e5065267b02f477beeebcf/) | HectagonBondDepository | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x343915085b919fbd4414f7046f903d194c6f60ee`](./contracts/bsc-56/0x343915085b919fbd4414f7046f903d194c6f60ee/) | HectagonERC20Token | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x4059c4a0b8a2b528c4f2e101a3bb8fb169aba4fb`](./contracts/bsc-56/0x4059c4a0b8a2b528c4f2e101a3bb8fb169aba4fb/) | HectagonTreasury | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x33218297d315fc70e1520e292ca88348b648bf15`](./contracts/bsc-56/0x33218297d315fc70e1520e292ca88348b648bf15/) | PHecta | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

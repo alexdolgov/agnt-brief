@@ -61,9 +61,9 @@ The protocol comprises 3 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| DepositContract | core_logic | ethereum | n/a | [`0x000000...7705fa`](./contracts/ethereum-1/0x00000000219ab540356cbb839cbe05303d7705fa/) | ⚠️ Unaudited |
-| StakeToken | token | ethereum | n/a | [`0x3802c2...eb74b8`](./contracts/ethereum-1/0x3802c218221390025bceabbad5d8c59f40eb74b8/) | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | ethereum | n/a | [`0x408d1f...2ce19f`](./contracts/ethereum-1/0x408d1f0a8a6f478f082f34c5eeb41541262ce19f/) | ⚠️ Unaudited |
+| DepositContract | core_logic | ethereum | n/a | [`0x00000000219ab540356cbb839cbe05303d7705fa`](./contracts/ethereum-1/0x00000000219ab540356cbb839cbe05303d7705fa/) | ⚠️ Unaudited |
+| StakeToken | token | ethereum | n/a | [`0x3802c218221390025bceabbad5d8c59f40eb74b8`](./contracts/ethereum-1/0x3802c218221390025bceabbad5d8c59f40eb74b8/) | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | ethereum | n/a | [`0x408d1f0a8a6f478f082f34c5eeb41541262ce19f`](./contracts/ethereum-1/0x408d1f0a8a6f478f082f34c5eeb41541262ce19f/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -94,8 +94,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x000000...7705fa`](./contracts/ethereum-1/0x00000000219ab540356cbb839cbe05303d7705fa/) | DepositContract | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x3802c2...eb74b8`](./contracts/ethereum-1/0x3802c218221390025bceabbad5d8c59f40eb74b8/) | StakeToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x00000000219ab540356cbb839cbe05303d7705fa`](./contracts/ethereum-1/0x00000000219ab540356cbb839cbe05303d7705fa/) | DepositContract | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x3802c218221390025bceabbad5d8c59f40eb74b8`](./contracts/ethereum-1/0x3802c218221390025bceabbad5d8c59f40eb74b8/) | StakeToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

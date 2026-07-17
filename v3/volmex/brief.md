@@ -52,15 +52,15 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- TransparentUpgradeableProxy (`0x054fbe...abfabc`, chain 1)
-- TransparentUpgradeableProxy (`0x187922...f56dda`, chain 1)
-- TransparentUpgradeableProxy (`0x1bb632...7e120b`, chain 1)
-- TransparentUpgradeableProxy (`0x3ceea6...21e797`, chain 1)
-- TransparentUpgradeableProxy (`0xa57fc4...8cd5c3`, chain 1)
-- VolmexPositionToken (`0x2590f1...10f9c3`, chain 1)
-- VolmexPositionToken (`0x3a707d...511f90`, chain 1)
-- VolmexPositionToken (`0x51b0bc...631970`, chain 1)
-- VolmexPositionToken (`0xc53342...21ac76`, chain 1)
+- TransparentUpgradeableProxy (`0x054fbebd2cb17205b57fb56a426ccc54caabfabc`, chain 1)
+- TransparentUpgradeableProxy (`0x187922d4235d10239b2c6ccb2217ada724f56dda`, chain 1)
+- TransparentUpgradeableProxy (`0x1bb632a08936e17ee3971e6eeb824910567e120b`, chain 1)
+- TransparentUpgradeableProxy (`0x3ceea6a3c98c2489b09b820f62fe568b5e21e797`, chain 1)
+- TransparentUpgradeableProxy (`0xa57fc404f69fce71ca26e26f0a4df7f35c8cd5c3`, chain 1)
+- VolmexPositionToken (`0x2590f1fd14ef8bb0a46c7a889c4cbc146510f9c3`, chain 1)
+- VolmexPositionToken (`0x3a707d56d538e85b783e8ce12b346e7fb6511f90`, chain 1)
+- VolmexPositionToken (`0x51b0bcbeff204b39ce792d1e16767fe6f7631970`, chain 1)
+- VolmexPositionToken (`0xc53342fd7575f572b0ff4569e31941a5b821ac76`, chain 1)
 
 ## Contract Surface Quality
 
@@ -106,13 +106,13 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| VolmexIndexFactory | unknown | project_anchor | own_supporting | 1 | ethereum | unit-396348 | `0x3ceea6...21e797` | ⚠️ Unaudited |
-| VolmexPositionToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396342 | `0x2590f1...10f9c3` | ⚠️ Unaudited |
-| VolmexPositionToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396344 | `0x3a707d...511f90` | ⚠️ Unaudited |
-| VolmexPositionToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396345 | `0x51b0bc...631970` | ⚠️ Unaudited |
-| VolmexPositionToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396346 | `0xc53342...21ac76` | ⚠️ Unaudited |
-| VolmexProtocol | unknown | project_anchor | own_supporting | 2 | ethereum | unit-396347 (2 proxies) | 2 deployments: ethereum `0x187922...f56dda`; ethereum `0xa57fc4...8cd5c3` | ⚠️ Unaudited |
-| VolmexProtocolWithPrecision | unknown | project_anchor | own_supporting | 2 | ethereum | unit-396349 (2 proxies) | 2 deployments: ethereum `0x054fbe...abfabc`; ethereum `0x1bb632...7e120b` | ⚠️ Unaudited |
+| VolmexIndexFactory | unknown | project_anchor | own_supporting | 1 | ethereum | unit-396348 | `0x3ceea6a3c98c2489b09b820f62fe568b5e21e797` | ⚠️ Unaudited |
+| VolmexPositionToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396342 | `0x2590f1fd14ef8bb0a46c7a889c4cbc146510f9c3` | ⚠️ Unaudited |
+| VolmexPositionToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396344 | `0x3a707d56d538e85b783e8ce12b346e7fb6511f90` | ⚠️ Unaudited |
+| VolmexPositionToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396345 | `0x51b0bcbeff204b39ce792d1e16767fe6f7631970` | ⚠️ Unaudited |
+| VolmexPositionToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396346 | `0xc53342fd7575f572b0ff4569e31941a5b821ac76` | ⚠️ Unaudited |
+| VolmexProtocol | unknown | project_anchor | own_supporting | 2 | ethereum | unit-396347 (2 proxies) | 2 deployments: ethereum `0x187922d4235d10239b2c6ccb2217ada724f56dda`; ethereum `0xa57fc404f69fce71ca26e26f0a4df7f35c8cd5c3` | ⚠️ Unaudited |
+| VolmexProtocolWithPrecision | unknown | project_anchor | own_supporting | 2 | ethereum | unit-396349 (2 proxies) | 2 deployments: ethereum `0x054fbebd2cb17205b57fb56a426ccc54caabfabc`; ethereum `0x1bb632a08936e17ee3971e6eeb824910567e120b` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

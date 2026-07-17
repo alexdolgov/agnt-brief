@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- NeuralAI (`0x32b053...bde6e1`, chain 1)
+- NeuralAI (`0x32b053f2cba79f80ada5078cb6b305da92bde6e1`, chain 1)
 
 ## Contract Surface Quality
 
@@ -103,8 +103,8 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| NeuralAI | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389855 | `0x32b053...bde6e1` | ⚠️ Unaudited |
-| NeuralStaking | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbe2cf8...9b20c3` | ⚠️ Unaudited |
+| NeuralAI | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389855 | `0x32b053f2cba79f80ada5078cb6b305da92bde6e1` | ⚠️ Unaudited |
+| NeuralStaking | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbe2cf8da9887e2ab997ed53cc49263ebd09b20c3` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -148,7 +148,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x32b053...bde6e1` | NeuralAI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x32b053f2cba79f80ada5078cb6b305da92bde6e1` | NeuralAI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

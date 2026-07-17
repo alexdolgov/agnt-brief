@@ -90,7 +90,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| MooniFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-154232 | `0x71cd66...e7d303` | ⚠️ Unaudited |
+| MooniFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-154232 | `0x71cd6666064c3a1354a3b4dca5fa1e2d3ee7d303` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -110,8 +110,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x2eea44...301e40` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xbaf9a5...3a9643` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x2eea44e40930b1984f42078e836c659a12301e40` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xbaf9a5d4b0052359326a6cdab54babaa3a3a9643` | ❓ Unverified |
 
 ## Audit Inventory
 

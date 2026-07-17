@@ -59,16 +59,16 @@ The protocol forms a single structural family (Core Logic) of 5 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BlackwingVault | unknown | ethereum | n/a | [`0xa92299...fab37d`](./contracts/ethereum-1/0xa92299289361fdcbb4ce9acbb512a84bd5fab37d/) | ✅ Audited |
+| BlackwingVault | unknown | ethereum | n/a | [`0xa92299289361fdcbb4ce9acbb512a84bd5fab37d`](./contracts/ethereum-1/0xa92299289361fdcbb4ce9acbb512a84bd5fab37d/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (4)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BlackwingNoopDeployer | unknown | ethereum | n/a | [`0x3b7df0...b1c04f`](./contracts/ethereum-1/0x3b7df0cd432c8f3b01b969ad8d2a2a1405b1c04f/) | ⚠️ Unaudited |
-| BlackwingVaultToken | unknown | ethereum | n/a | [`0x010bd3...845ec7`](./contracts/ethereum-1/0x010bd3cfe12cd3f57b7b0dcf23a7a8eb26845ec7/) | ⚠️ Unaudited |
-| PendlePrincipalToken | unknown | ethereum | n/a | [`0xd81036...29eab4`](./contracts/ethereum-1/0xd810362556296c834e30c9a61d8e21a5cf29eab4/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | [`0x761b2c...efb78f`](./contracts/arbitrum-42161/0x761b2ccdd37ef1cac84f8728687a5248c9efb78f/) | ⚠️ Unaudited |
+| BlackwingNoopDeployer | unknown | ethereum | n/a | [`0x3b7df0cd432c8f3b01b969ad8d2a2a1405b1c04f`](./contracts/ethereum-1/0x3b7df0cd432c8f3b01b969ad8d2a2a1405b1c04f/) | ⚠️ Unaudited |
+| BlackwingVaultToken | unknown | ethereum | n/a | [`0x010bd3cfe12cd3f57b7b0dcf23a7a8eb26845ec7`](./contracts/ethereum-1/0x010bd3cfe12cd3f57b7b0dcf23a7a8eb26845ec7/) | ⚠️ Unaudited |
+| PendlePrincipalToken | unknown | ethereum | n/a | [`0xd810362556296c834e30c9a61d8e21a5cf29eab4`](./contracts/ethereum-1/0xd810362556296c834e30c9a61d8e21a5cf29eab4/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | [`0x761b2ccdd37ef1cac84f8728687a5248c9efb78f`](./contracts/arbitrum-42161/0x761b2ccdd37ef1cac84f8728687a5248c9efb78f/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -103,8 +103,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x3b7df0...b1c04f`](./contracts/ethereum-1/0x3b7df0cd432c8f3b01b969ad8d2a2a1405b1c04f/) | BlackwingNoopDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x010bd3...845ec7`](./contracts/ethereum-1/0x010bd3cfe12cd3f57b7b0dcf23a7a8eb26845ec7/) | BlackwingVaultToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x3b7df0cd432c8f3b01b969ad8d2a2a1405b1c04f`](./contracts/ethereum-1/0x3b7df0cd432c8f3b01b969ad8d2a2a1405b1c04f/) | BlackwingNoopDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x010bd3cfe12cd3f57b7b0dcf23a7a8eb26845ec7`](./contracts/ethereum-1/0x010bd3cfe12cd3f57b7b0dcf23a7a8eb26845ec7/) | BlackwingVaultToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -62,7 +62,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| TokTokNft | token | polygon | n/a | [`0x9d6d53...09460a`](./contracts/polygon-137/0x9d6d53b5bc498200503bc7abcbdec2b8a009460a/) | ⚠️ Unaudited |
+| TokTokNft | token | polygon | n/a | [`0x9d6d53b5bc498200503bc7abcbdec2b8a009460a`](./contracts/polygon-137/0x9d6d53b5bc498200503bc7abcbdec2b8a009460a/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -94,7 +94,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| polygon | [`0x9d6d53...09460a`](./contracts/polygon-137/0x9d6d53b5bc498200503bc7abcbdec2b8a009460a/) | TokTokNft | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x9d6d53b5bc498200503bc7abcbdec2b8a009460a`](./contracts/polygon-137/0x9d6d53b5bc498200503bc7abcbdec2b8a009460a/) | TokTokNft | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

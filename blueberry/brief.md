@@ -61,12 +61,12 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BloomPool | unknown | ethereum | n/a | [`0x225a72...3450e3`](./contracts/ethereum-1/0x225a72121f077629a9049b78492a7b645a3450e3/) | ⚠️ Unaudited |
-| BlueberryToken | unknown | ethereum | n/a | [`0x904f36...966a02`](./contracts/ethereum-1/0x904f36d74bed2ef2729eaa1c7a5b70dea2966a02/) | ⚠️ Unaudited |
-| BPSFeed | unknown | ethereum | n/a | [`0x51fd72...7924ad`](./contracts/ethereum-1/0x51fd7269fd752c62e75e990dbbe73badf97924ad/) | ⚠️ Unaudited |
-| GasChecker | unknown | ethereum | n/a | [`0xd49845...dafc9b`](./contracts/ethereum-1/0xd49845d0ca19a26055904d7ce0911a8e88dafc9b/) | ⚠️ Unaudited |
-| MerkleWhitelist | unknown | ethereum | n/a | [`0x30b4a5...efd5f4`](./contracts/ethereum-1/0x30b4a5f5f98dbcad5a76db9328da48057cefd5f4/) | ⚠️ Unaudited |
-| SwapFacility | unknown | ethereum | n/a | [`0x165401...11acd6`](./contracts/ethereum-1/0x16540107a5b4e17a5d65e071a3dc8f40e011acd6/) | ⚠️ Unaudited |
+| BloomPool | unknown | ethereum | n/a | [`0x225a72121f077629a9049b78492a7b645a3450e3`](./contracts/ethereum-1/0x225a72121f077629a9049b78492a7b645a3450e3/) | ⚠️ Unaudited |
+| BlueberryToken | unknown | ethereum | n/a | [`0x904f36d74bed2ef2729eaa1c7a5b70dea2966a02`](./contracts/ethereum-1/0x904f36d74bed2ef2729eaa1c7a5b70dea2966a02/) | ⚠️ Unaudited |
+| BPSFeed | unknown | ethereum | n/a | [`0x51fd7269fd752c62e75e990dbbe73badf97924ad`](./contracts/ethereum-1/0x51fd7269fd752c62e75e990dbbe73badf97924ad/) | ⚠️ Unaudited |
+| GasChecker | unknown | ethereum | n/a | [`0xd49845d0ca19a26055904d7ce0911a8e88dafc9b`](./contracts/ethereum-1/0xd49845d0ca19a26055904d7ce0911a8e88dafc9b/) | ⚠️ Unaudited |
+| MerkleWhitelist | unknown | ethereum | n/a | [`0x30b4a5f5f98dbcad5a76db9328da48057cefd5f4`](./contracts/ethereum-1/0x30b4a5f5f98dbcad5a76db9328da48057cefd5f4/) | ⚠️ Unaudited |
+| SwapFacility | unknown | ethereum | n/a | [`0x16540107a5b4e17a5d65e071a3dc8f40e011acd6`](./contracts/ethereum-1/0x16540107a5b4e17a5d65e071a3dc8f40e011acd6/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -99,12 +99,12 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x225a72...3450e3`](./contracts/ethereum-1/0x225a72121f077629a9049b78492a7b645a3450e3/) | BloomPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x904f36...966a02`](./contracts/ethereum-1/0x904f36d74bed2ef2729eaa1c7a5b70dea2966a02/) | BlueberryToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x51fd72...7924ad`](./contracts/ethereum-1/0x51fd7269fd752c62e75e990dbbe73badf97924ad/) | BPSFeed | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xd49845...dafc9b`](./contracts/ethereum-1/0xd49845d0ca19a26055904d7ce0911a8e88dafc9b/) | GasChecker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x30b4a5...efd5f4`](./contracts/ethereum-1/0x30b4a5f5f98dbcad5a76db9328da48057cefd5f4/) | MerkleWhitelist | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x165401...11acd6`](./contracts/ethereum-1/0x16540107a5b4e17a5d65e071a3dc8f40e011acd6/) | SwapFacility | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x225a72121f077629a9049b78492a7b645a3450e3`](./contracts/ethereum-1/0x225a72121f077629a9049b78492a7b645a3450e3/) | BloomPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x904f36d74bed2ef2729eaa1c7a5b70dea2966a02`](./contracts/ethereum-1/0x904f36d74bed2ef2729eaa1c7a5b70dea2966a02/) | BlueberryToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x51fd7269fd752c62e75e990dbbe73badf97924ad`](./contracts/ethereum-1/0x51fd7269fd752c62e75e990dbbe73badf97924ad/) | BPSFeed | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xd49845d0ca19a26055904d7ce0911a8e88dafc9b`](./contracts/ethereum-1/0xd49845d0ca19a26055904d7ce0911a8e88dafc9b/) | GasChecker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x30b4a5f5f98dbcad5a76db9328da48057cefd5f4`](./contracts/ethereum-1/0x30b4a5f5f98dbcad5a76db9328da48057cefd5f4/) | MerkleWhitelist | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x16540107a5b4e17a5d65e071a3dc8f40e011acd6`](./contracts/ethereum-1/0x16540107a5b4e17a5d65e071a3dc8f40e011acd6/) | SwapFacility | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

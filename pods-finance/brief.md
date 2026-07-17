@@ -61,9 +61,9 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ETHoriaVault | unknown | ethereum | n/a | [`0x5fe4b3...d2274f`](./contracts/ethereum-1/0x5fe4b38520e856921978715c8579d2d7a4d2274f/) | ⚠️ Unaudited |
-| FUDVault | unknown | ethereum | n/a | [`0x287f94...12a969`](./contracts/ethereum-1/0x287f941ab4b5aadad2f13f9363fcec8ee312a969/) | ⚠️ Unaudited |
-| STETHVault | unknown | ethereum | n/a | [`0x463f9e...3ad879`](./contracts/ethereum-1/0x463f9ed5e11764eb9029762011a03643603ad879/) | ⚠️ Unaudited |
+| ETHoriaVault | unknown | ethereum | n/a | [`0x5fe4b38520e856921978715c8579d2d7a4d2274f`](./contracts/ethereum-1/0x5fe4b38520e856921978715c8579d2d7a4d2274f/) | ⚠️ Unaudited |
+| FUDVault | unknown | ethereum | n/a | [`0x287f941ab4b5aadad2f13f9363fcec8ee312a969`](./contracts/ethereum-1/0x287f941ab4b5aadad2f13f9363fcec8ee312a969/) | ⚠️ Unaudited |
+| STETHVault | unknown | ethereum | n/a | [`0x463f9ed5e11764eb9029762011a03643603ad879`](./contracts/ethereum-1/0x463f9ed5e11764eb9029762011a03643603ad879/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -94,9 +94,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x5fe4b3...d2274f`](./contracts/ethereum-1/0x5fe4b38520e856921978715c8579d2d7a4d2274f/) | ETHoriaVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x287f94...12a969`](./contracts/ethereum-1/0x287f941ab4b5aadad2f13f9363fcec8ee312a969/) | FUDVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x463f9e...3ad879`](./contracts/ethereum-1/0x463f9ed5e11764eb9029762011a03643603ad879/) | STETHVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5fe4b38520e856921978715c8579d2d7a4d2274f`](./contracts/ethereum-1/0x5fe4b38520e856921978715c8579d2d7a4d2274f/) | ETHoriaVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x287f941ab4b5aadad2f13f9363fcec8ee312a969`](./contracts/ethereum-1/0x287f941ab4b5aadad2f13f9363fcec8ee312a969/) | FUDVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x463f9ed5e11764eb9029762011a03643603ad879`](./contracts/ethereum-1/0x463f9ed5e11764eb9029762011a03643603ad879/) | STETHVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

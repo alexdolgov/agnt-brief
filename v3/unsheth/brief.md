@@ -52,13 +52,13 @@ The pinned logic-topography run contains 7 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x9d1485...6c1a36`, chain 1)
-- UnnamedContract (`0xd027ef...d407e4`, chain 1)
-- UnnamedContract (`0xef1203...abd48e`, chain 1)
-- LSDVault (`0x51a802...c05c74`, chain 1)
-- RenouncedOwner (`0xb25021...ed52c3`, chain 1)
-- unshETH (`0x0ae38f...a909ef`, chain 1)
-- VDAMM (`0x35636b...9db14a`, chain 1)
+- UnnamedContract (`0x9d14855cc4c89d4647bc39bc9cfe458ce46c1a36`, chain 1)
+- UnnamedContract (`0xd027ef82db658805c9ba8053196cd6ed1dd407e4`, chain 1)
+- UnnamedContract (`0xef1203e0680fe690c2923ce508556c92c9abd48e`, chain 1)
+- LSDVault (`0x51a80238b5738725128d3a3e06ab41c1d4c05c74`, chain 1)
+- RenouncedOwner (`0xb250216b5bce306fa37f7de76a82409663ed52c3`, chain 1)
+- unshETH (`0x0ae38f7e10a43b5b2fb064b42a2f4514cba909ef`, chain 1)
+- VDAMM (`0x35636b85b68c1b4a216110fb3a5fb447a99db14a`, chain 1)
 
 ## Contract Surface Quality
 
@@ -103,33 +103,33 @@ The pinned logic-topography run contains 7 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| LSDVault | unknown | project_anchor | own_supporting | 0 | ethereum | unit-395329 | `0x51a802...c05c74` | ✅ Audited |
-| unshETH | unknown | project_anchor | own_supporting | 0 | ethereum | unit-395325 | `0x0ae38f...a909ef` | ✅ Audited |
-| VDAMM | unknown | project_anchor | own_supporting | 0 | ethereum | unit-395328 | `0x35636b...9db14a` | ✅ Audited |
+| LSDVault | unknown | project_anchor | own_supporting | 0 | ethereum | unit-395329 | `0x51a80238b5738725128d3a3e06ab41c1d4c05c74` | ✅ Audited |
+| unshETH | unknown | project_anchor | own_supporting | 0 | ethereum | unit-395325 | `0x0ae38f7e10a43b5b2fb064b42a2f4514cba909ef` | ✅ Audited |
+| VDAMM | unknown | project_anchor | own_supporting | 0 | ethereum | unit-395328 | `0x35636b85b68c1b4a216110fb3a5fb447a99db14a` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (19)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| CommunalFarm | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x33890b...953cfc` | ⚠️ Unaudited |
-| Darknet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc3f131...e3cedc` | ⚠️ Unaudited |
-| EuclideanFarm | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x954d50...ff3d7e` | ⚠️ Unaudited |
-| GovernorsFarm | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc4bb59...261832` | ⚠️ Unaudited |
-| LSDRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2feaa5...bf1b7d` | ⚠️ Unaudited |
-| MerkleDistributorWithDeadline | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2955c9...79bd3a` | ⚠️ Unaudited |
-| RenouncedOwner | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-395333 | `0xb25021...ed52c3` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-395331 | `0x9d1485...6c1a36` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-395335 | `0xd027ef...d407e4` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-395337 | `0xef1203...abd48e` | ⚠️ Unaudited |
-| unshETHProxyOft | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x35f899...b26457` | ⚠️ Unaudited |
-| unshETHRateProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5f0a29...7a55d3` | ⚠️ Unaudited |
-| unshETHZap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x718c26...a91b4b` | ⚠️ Unaudited |
-| unshETHZapv2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x746109...becbc7` | ⚠️ Unaudited |
-| USDTSGReceiver | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd41d27...1c53ec` | ⚠️ Unaudited |
-| USH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe60779...70ec48` | ⚠️ Unaudited |
-| USHFarm | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x46671b...4a8339` | ⚠️ Unaudited |
-| USHProxyOFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2c8a40...7aad01` | ⚠️ Unaudited |
-| VotingEscrow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x29d0db...1ce014` | ⚠️ Unaudited |
+| CommunalFarm | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x33890b88f98a9d511678954ad8db0510b6953cfc` | ⚠️ Unaudited |
+| Darknet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc3f131e624de06c6c5b7897827c9875b67e3cedc` | ⚠️ Unaudited |
+| EuclideanFarm | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x954d5088d88291146ce58270add820e809ff3d7e` | ⚠️ Unaudited |
+| GovernorsFarm | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc4bb59e8556e7fca9000f05678abc4ba06261832` | ⚠️ Unaudited |
+| LSDRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2feaa552559fec162b2a767f674f86776fbf1b7d` | ⚠️ Unaudited |
+| MerkleDistributorWithDeadline | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2955c9cba43e769017caf257dd96c0dd9d79bd3a` | ⚠️ Unaudited |
+| RenouncedOwner | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-395333 | `0xb250216b5bce306fa37f7de76a82409663ed52c3` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-395331 | `0x9d14855cc4c89d4647bc39bc9cfe458ce46c1a36` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-395335 | `0xd027ef82db658805c9ba8053196cd6ed1dd407e4` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-395337 | `0xef1203e0680fe690c2923ce508556c92c9abd48e` | ⚠️ Unaudited |
+| unshETHProxyOft | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x35f899ce6cc304aedfdb7835f623a30473b26457` | ⚠️ Unaudited |
+| unshETHRateProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5f0a29e479744dca0d3d912f87f1a6e3237a55d3` | ⚠️ Unaudited |
+| unshETHZap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x718c26e5e60829a36fee8df1d791f340aaa91b4b` | ⚠️ Unaudited |
+| unshETHZapv2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7461092aa5234b42a17ee8cc51cfde6ef4becbc7` | ⚠️ Unaudited |
+| USDTSGReceiver | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd41d27ff3205787a4a617708f6675a44821c53ec` | ⚠️ Unaudited |
+| USH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe60779cc1b2c1d0580611c526a8df0e3f870ec48` | ⚠️ Unaudited |
+| USHFarm | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x46671bfb2746ba2916cbf9773b94f85dd94a8339` | ⚠️ Unaudited |
+| USHProxyOFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2c8a4058db744808fffa97e29c8e1b7cbf7aad01` | ⚠️ Unaudited |
+| VotingEscrow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x29d0db2154b0abd117ade13dc73bbf4e0d1ce014` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -171,17 +171,17 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| DL audit link | LSDVault | own contract | LSDVault (selected) `0x51a802...c05c74` — deployed 2023-04-01 05:52:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| DL audit link | LSDVault | own contract | LSDVault (selected) `0x51a80238b5738725128d3a3e06ab41c1d4c05c74` — deployed 2023-04-01 05:52:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | DL audit link | USH-OFT-BSC | unmatched — not counted | — | listed in audited files | no |
 | Paladin | ERC20PermitPermissionedMint | unmatched — not counted | — | listed in scope | no |
-| Paladin | unshETH | own contract | unshETH (selected) `0x0ae38f...a909ef` — deployed 2023-04-01 05:52:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Paladin | unshETH | own contract | unshETH (selected) `0x0ae38f7e10a43b5b2fb064b42a2f4514cba909ef` — deployed 2023-04-01 05:52:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Paladin | Darknet | unmatched — not counted | — | listed in scope | no |
-| Paladin | LSDVault | own contract | LSDVault (selected) `0x51a802...c05c74` — deployed 2023-04-01 05:52:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Paladin | LSDVault | own contract | LSDVault (selected) `0x51a80238b5738725128d3a3e06ab41c1d4c05c74` — deployed 2023-04-01 05:52:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Paladin | RenouncedOwner | unmatched — not counted | — | listed in scope | no |
 | Paladin | unshETHZap | unmatched — not counted | — | listed in scope | no |
-| Paladin | EvdAMM | own contract | VDAMM (selected) `0x35636b...9db14a` — deployed 2023-04-28 11:55:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Paladin | EvdAMM | own contract | VDAMM (selected) `0x35636b85b68c1b4a216110fb3a5fb447a99db14a` — deployed 2023-04-28 11:55:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Paladin | OwnedDependency | unmatched — not counted | — | listed in scope | no |
-| Certik | LSDVault | own contract | LSDVault (selected) `0x51a802...c05c74` — deployed 2023-04-01 05:52:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Certik | LSDVault | own contract | LSDVault (selected) `0x51a80238b5738725128d3a3e06ab41c1d4c05c74` — deployed 2023-04-01 05:52:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Certik | sgReciever | unmatched — not counted | — | listed in scope table | no |
 | Certik | sgSender | unmatched — not counted | — | listed in scope table | no |
 | Certik | USH-OFT-BSC | unmatched — not counted | — | listed in scope table | no |

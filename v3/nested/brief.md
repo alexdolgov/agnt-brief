@@ -52,11 +52,11 @@ The pinned logic-topography run contains 5 contract row(s) across arbitrum, bsc,
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- FlatOperator (`0x2a3c3d...f26989`, chain 42161)
-- NestedReserve (`0x0535f1...46c65d`, chain 1)
-- OperatorResolver (`0x04a730...ad376b`, chain 1)
-- ZeroExOperator (`0x1db811...0d6940`, chain 1)
-- ZeroExStorage (`0xa19d09...fabe65`, chain 1)
+- FlatOperator (`0x2a3c3d80e93501e751e5b6f355f396e831f26989`, chain 42161)
+- NestedReserve (`0x0535f1f43ee274123291bbab284948caed46c65d`, chain 1)
+- OperatorResolver (`0x04a7307e94fd83b2fe88537729640ea7a0ad376b`, chain 1)
+- ZeroExOperator (`0x1db81116467789b7dcc3b070ee8f5aa4d90d6940`, chain 1)
+- ZeroExStorage (`0xa19d093d24d345fa25424d15202cab00a5fabe65`, chain 1)
 
 ## Contract Surface Quality
 
@@ -102,29 +102,29 @@ The pinned logic-topography run contains 5 contract row(s) across arbitrum, bsc,
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| NestedReserve | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248875 | `0x0535f1...46c65d` | ✅ Audited |
-| OperatorResolver | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248873 | `0x04a730...ad376b` | ✅ Audited |
-| ZeroExOperator | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248877 | `0x1db811...0d6940` | ✅ Audited |
-| ZeroExStorage | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248879 | `0xa19d09...fabe65` | ✅ Audited |
+| NestedReserve | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248875 | `0x0535f1f43ee274123291bbab284948caed46c65d` | ✅ Audited |
+| OperatorResolver | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248873 | `0x04a7307e94fd83b2fe88537729640ea7a0ad376b` | ✅ Audited |
+| ZeroExOperator | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248877 | `0x1db81116467789b7dcc3b070ee8f5aa4d90d6940` | ✅ Audited |
+| ZeroExStorage | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248879 | `0xa19d093d24d345fa25424d15202cab00a5fabe65` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (14)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| CREATE3Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x55de72...b97eb9` | ⚠️ Unaudited |
-| FeeSplitter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x27f804...61ced9` | ⚠️ Unaudited |
-| FlatOperator | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-248881 | `0x2a3c3d...f26989` | ⚠️ Unaudited |
-| NestedAsset | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0f0293...fe7d77` | ⚠️ Unaudited |
-| NestedAssetBatcher | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2b2eda...0eb815` | ⚠️ Unaudited |
-| NestedFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x0c4578...b8ed81` | ⚠️ Unaudited |
-| NestedRecords | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x27f804...61ced9` | ⚠️ Unaudited |
-| OperatorScripts | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0c4578...b8ed81` | ⚠️ Unaudited |
-| OwnerProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x022f65...62af49` | ⚠️ Unaudited |
-| SingleCall | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x449d08...c5200f` | ⚠️ Unaudited |
-| TimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x78a720...8d829a` | ⚠️ Unaudited |
-| TimelockControllerEmergency | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0e04e8...31ebcc` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0x74afad...3fd330` | ⚠️ Unaudited |
-| Withdrawer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0384f3...1f8058` | ⚠️ Unaudited |
+| CREATE3Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x55de7264fc5c847065c69a6240d3a6c05db97eb9` | ⚠️ Unaudited |
+| FeeSplitter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x27f80488078bc485c9cf5a989fcbab27d561ced9` | ⚠️ Unaudited |
+| FlatOperator | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-248881 | `0x2a3c3d80e93501e751e5b6f355f396e831f26989` | ⚠️ Unaudited |
+| NestedAsset | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0f0293b0976c076eb0dd8e81cb9dde1366fe7d77` | ⚠️ Unaudited |
+| NestedAssetBatcher | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2b2eda765282f6265101c0f72157d50f8f0eb815` | ⚠️ Unaudited |
+| NestedFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x0c457862a844f41381c5429b1cb6394192b8ed81` | ⚠️ Unaudited |
+| NestedRecords | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x27f80488078bc485c9cf5a989fcbab27d561ced9` | ⚠️ Unaudited |
+| OperatorScripts | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0c457862a844f41381c5429b1cb6394192b8ed81` | ⚠️ Unaudited |
+| OwnerProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x022f65aa70af76167dfa328fe27eecbe4162af49` | ⚠️ Unaudited |
+| SingleCall | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x449d088c9f184af598fe72d26742a58a11c5200f` | ⚠️ Unaudited |
+| TimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x78a7207f221b1f376a73f52dd27087b7708d829a` | ⚠️ Unaudited |
+| TimelockControllerEmergency | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0e04e8127cf11db51d4c8841f71833af1231ebcc` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0x74afada131db545df782d196c8736d97593fd330` | ⚠️ Unaudited |
+| Withdrawer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0384f3b95faa3c2f48c40f15fe8bd8cd1f1f8058` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -174,11 +174,11 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Code4rena_Nested_Analysis_Report_2021_12.pdf | FeeSplitter | unmatched — not counted | — | mentioned in findings | no |
 | Code4rena_Nested_Analysis_Report_2021_12.pdf | NestedAsset | unmatched — not counted | — | mentioned in findings | no |
 | Code4rena_Nested_Analysis_Report_2021_12.pdf | NestedRecords | unmatched — not counted | — | mentioned in findings | no |
-| Code4rena_Nested_Analysis_Report_2021_12.pdf | OperatorResolver | own contract | OperatorResolver (selected) `0x04a730...ad376b` — deployed 2022-04-09 21:54:58+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Code4rena_Nested_Analysis_Report_2021_12.pdf | NestedReserve | own contract | NestedReserve (selected) `0x0535f1...46c65d` — deployed 2022-04-09 21:54:48+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Code4rena_Nested_Analysis_Report_2021_12.pdf | OperatorResolver | own contract | OperatorResolver (selected) `0x04a7307e94fd83b2fe88537729640ea7a0ad376b` — deployed 2022-04-09 21:54:58+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Code4rena_Nested_Analysis_Report_2021_12.pdf | NestedReserve | own contract | NestedReserve (selected) `0x0535f1f43ee274123291bbab284948caed46c65d` — deployed 2022-04-09 21:54:48+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Code4rena_Nested_Analysis_Report_2021_12.pdf | NestedBuybacker | unmatched — not counted | — | mentioned in findings | no |
-| Code4rena_Nested_Analysis_Report_2021_12.pdf | ZeroExOperator | own contract | ZeroExOperator (selected) `0x1db811...0d6940` — deployed 2022-04-09 21:55:25+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Code4rena_Nested_Analysis_Report_2021_12.pdf | ZeroExStorage | own contract | ZeroExStorage (selected) `0xa19d09...fabe65` — deployed 2022-04-09 21:55:25+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Code4rena_Nested_Analysis_Report_2021_12.pdf | ZeroExOperator | own contract | ZeroExOperator (selected) `0x1db81116467789b7dcc3b070ee8f5aa4d90d6940` — deployed 2022-04-09 21:55:25+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Code4rena_Nested_Analysis_Report_2021_12.pdf | ZeroExStorage | own contract | ZeroExStorage (selected) `0xa19d093d24d345fa25424d15202cab00a5fabe65` — deployed 2022-04-09 21:55:25+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Code4rena_Nested_Analysis_Report_2021_12.pdf | ExchangeHelpers | unmatched — not counted | — | mentioned in findings | no |
 | Code4rena_Nested_Analysis_Report_2021_12.pdf | OperatorHelpers | unmatched — not counted | — | mentioned in findings | no |
 | Code4rena_Nested_Analysis_Report_2021_12.pdf | MixinOperatorResolver | unmatched — not counted | — | mentioned in findings | no |
@@ -188,8 +188,8 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Code4rena_Nested_Analysis_Report_2022_04.pdf | NestedFactory | unmatched — not counted | — | listed in scope and mentioned in findings | no |
 | Code4rena_Nested_Analysis_Report_2022_04.pdf | NestedRecords | unmatched — not counted | — | mentioned in findings | no |
 | Code4rena_Nested_Analysis_Report_2022_04.pdf | MixinOperatorResolver | unmatched — not counted | — | mentioned in findings | no |
-| Code4rena_Nested_Analysis_Report_2022_04.pdf | OperatorResolver | own contract | OperatorResolver (selected) `0x04a730...ad376b` — deployed 2022-04-09 21:54:58+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Code4rena_Nested_Analysis_Report_2022_04.pdf | NestedReserve | own contract | NestedReserve (selected) `0x0535f1...46c65d` — deployed 2022-04-09 21:54:48+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Code4rena_Nested_Analysis_Report_2022_04.pdf | OperatorResolver | own contract | OperatorResolver (selected) `0x04a7307e94fd83b2fe88537729640ea7a0ad376b` — deployed 2022-04-09 21:54:58+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Code4rena_Nested_Analysis_Report_2022_04.pdf | NestedReserve | own contract | NestedReserve (selected) `0x0535f1f43ee274123291bbab284948caed46c65d` — deployed 2022-04-09 21:54:48+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Code4rena_Nested_Analysis_Report_2022_04.pdf | FeeSplitter | unmatched — not counted | — | mentioned in findings | no |
 | Code4rena_Nested_Analysis_Report_2022_04.pdf | OwnableProxyDelegation | unmatched — not counted | — | mentioned in findings | no |
 | Code4rena_Nested_Analysis_Report_2022_04.pdf | IWETH | unmatched — not counted | — | mentioned in findings as interface | no |
@@ -206,14 +206,14 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Code4rena_Nested_Analysis_Report_2022_06.md | OwnerProxy | unmatched — not counted | — | listed in scope | no |
 | Code4rena_Nested_Analysis_Report_2022_06.md | OwnableProxyDelegation | unmatched — not counted | — | listed in scope | no |
 | Code4rena_Nested_Analysis_Report_2022_06.md | MixinOperatorResolver | unmatched — not counted | — | listed in scope | no |
-| Code4rena_Nested_Analysis_Report_2022_06.md | OperatorResolver | own contract | OperatorResolver (selected) `0x04a730...ad376b` — deployed 2022-04-09 21:54:58+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Code4rena_Nested_Analysis_Report_2022_06.md | OperatorResolver | own contract | OperatorResolver (selected) `0x04a7307e94fd83b2fe88537729640ea7a0ad376b` — deployed 2022-04-09 21:54:58+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Code4rena_Nested_Analysis_Report_2022_06.md | OperatorScripts | unmatched — not counted | — | listed in scope | no |
 | Code4rena_Nested_Analysis_Report_2022_06.md | StakingLPVaultHelpers | unmatched — not counted | — | listed in scope | no |
 | Code4rena_Nested_Analysis_Report_2022_06.md | CurveHelpers | unmatched — not counted | — | listed in scope | no |
 | Code4rena_Nested_Analysis_Report_2022_06.md | ExchangeHelpers | unmatched — not counted | — | listed in scope | no |
 | PeckShield-Audit-Report-Nested-v1.0.pdf | NestedFactory | unmatched — not counted | — | Target in findings PVE-001, PVE-002, PVE-004, PVE-006 | no |
 | PeckShield-Audit-Report-Nested-v1.0.pdf | NestedRecords | unmatched — not counted | — | Target in finding PVE-001 | no |
-| PeckShield-Audit-Report-Nested-v1.0.pdf | NestedReserve | own contract | NestedReserve (selected) `0x0535f1...46c65d` — deployed 2022-04-09 21:54:48+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| PeckShield-Audit-Report-Nested-v1.0.pdf | NestedReserve | own contract | NestedReserve (selected) `0x0535f1f43ee274123291bbab284948caed46c65d` — deployed 2022-04-09 21:54:48+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | PeckShield-Audit-Report-Nested-v1.0.pdf | NestedBuybacker | unmatched — not counted | — | Target in finding PVE-002 | no |
 | PeckShield-Audit-Report-Nested-v1.0.pdf | ExchangeHelpers | unmatched — not counted | — | Target in finding PVE-005 | no |
 | PeckShield-Audit-Report-Nested-v1.0.pdf | FeeSplitter | unmatched — not counted | — | Mentioned in findings PVE-001, PVE-006 | no |
@@ -222,13 +222,13 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Red4Sec_Nested_Security_Audit_Report_v3.pdf | NestedRecords | unmatched — not counted | — | Referenced in scope and findings (NFSC01, NFSC03, NFSC04). | no |
 | Red4Sec_Nested_Security_Audit_Report_v3.pdf | FeeSplitter | unmatched — not counted | — | Referenced in scope and findings (NFSC01, NFSC04, NFSC06, NFSC07). | no |
 | Red4Sec_Nested_Security_Audit_Report_v3.pdf | NestedFactory | unmatched — not counted | — | Referenced in scope and findings (NFSC02, NFSC03, NFSC04, NFSC11). | no |
-| Red4Sec_Nested_Security_Audit_Report_v3.pdf | NestedReserve | own contract | NestedReserve (selected) `0x0535f1...46c65d` — deployed 2022-04-09 21:54:48+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Red4Sec_Nested_Security_Audit_Report_v3.pdf | NestedReserve | own contract | NestedReserve (selected) `0x0535f1f43ee274123291bbab284948caed46c65d` — deployed 2022-04-09 21:54:48+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Red4Sec_Nested_Security_Audit_Report_v3.pdf | NestedBuybacker | unmatched — not counted | — | Referenced in scope and findings (NFSC04, NFSC12). | no |
 | Red4Sec_Nested_Security_Audit_Report_v3.pdf | MixinOperatorResolver | unmatched — not counted | — | Referenced in scope and findings (NFSC04, NFSC11). | no |
-| Red4Sec_Nested_Security_Audit_Report_v3.pdf | OperatorResolver | own contract | OperatorResolver (selected) `0x04a730...ad376b` — deployed 2022-04-09 21:54:58+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Red4Sec_Nested_Security_Audit_Report_v3.pdf | OperatorResolver | own contract | OperatorResolver (selected) `0x04a7307e94fd83b2fe88537729640ea7a0ad376b` — deployed 2022-04-09 21:54:58+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Red4Sec_Nested_Security_Audit_Report_v3.pdf | ExchangeHelpers | unmatched — not counted | — | Referenced in scope and findings (NFSC11). | no |
 | Red4Sec_Nested_Security_Audit_Report_v3.pdf | SynthetixStorage | unmatched — not counted | — | Referenced in scope and findings (NFSC04). | no |
-| Red4Sec_Nested_Security_Audit_Report_v3.pdf | ZeroExStorage | own contract | ZeroExStorage (selected) `0xa19d09...fabe65` — deployed 2022-04-09 21:55:25+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Red4Sec_Nested_Security_Audit_Report_v3.pdf | ZeroExStorage | own contract | ZeroExStorage (selected) `0xa19d093d24d345fa25424d15202cab00a5fabe65` — deployed 2022-04-09 21:55:25+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 
 ## Coverage Gaps
 
@@ -236,7 +236,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | `0x2a3c3d...f26989` | FlatOperator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0x2a3c3d80e93501e751e5b6f355f396e831f26989` | FlatOperator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

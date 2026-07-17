@@ -52,12 +52,12 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x15d7cf...e6348c`, chain 8453)
-- UnnamedContract (`0xd9e050...15be80`, chain 8453)
-- UnnamedContract (`0xc5d1b8...ba6500`, chain 42161)
-- UnnamedContract (`0xce7a8d...f9ebcf`, chain 42161)
-- Permit2 (`0x000000...c78ba3`, chain 8453)
-- Permit2 (`0x000000...c78ba3`, chain 42161)
+- UnnamedContract (`0x15d7cf277be6463f153dd0d4d73f92ad65e6348c`, chain 8453)
+- UnnamedContract (`0xd9e0507d706408d0f14e22e50880189fd915be80`, chain 8453)
+- UnnamedContract (`0xc5d1b8096bbdec83bc6049e42822c7483bba6500`, chain 42161)
+- UnnamedContract (`0xce7a8d45daa9a5b29f6d255552f577d53ff9ebcf`, chain 42161)
+- Permit2 (`0x000000000022d473030f116ddee9f6b43ac78ba3`, chain 8453)
+- Permit2 (`0x000000000022d473030f116ddee9f6b43ac78ba3`, chain 42161)
 
 ## Contract Surface Quality
 
@@ -103,8 +103,8 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Permit2 | unknown | project_anchor | own_supporting | 0 | base | unit-391347 | `0x000000...c78ba3` | ⚠️ Unaudited |
-| Permit2 | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-391345 | `0x000000...c78ba3` | ⚠️ Unaudited |
+| Permit2 | unknown | project_anchor | own_supporting | 0 | base | unit-391347 | `0x000000000022d473030f116ddee9f6b43ac78ba3` | ⚠️ Unaudited |
+| Permit2 | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-391345 | `0x000000000022d473030f116ddee9f6b43ac78ba3` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -124,10 +124,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Proxy (impl: 0x11d3dfd0a6cdcc50c02b68c46e5312c40e9ac994) | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-391349 | `0xc5d1b8...ba6500` | ❓ Unverified |
-| Proxy (impl: 0x5675bdcaeab76deb26110831ac011b1d16a77dcb) | unknown | project_anchor | own_supporting | 1 | base | unit-391351 | `0xd9e050...15be80` | ❓ Unverified |
-| Proxy (impl: 0x90c3f277c3dce2f3f4cd5017441536522f3efaa1) | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-391350 | `0xce7a8d...f9ebcf` | ❓ Unverified |
-| Proxy (impl: 0xec64b5429ea770b287cb56f35489f39988b5d71b) | unknown | project_anchor | own_supporting | 1 | base | unit-391352 | `0x15d7cf...e6348c` | ❓ Unverified |
+| Proxy (impl: 0x11d3dfd0a6cdcc50c02b68c46e5312c40e9ac994) | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-391349 | `0xc5d1b8096bbdec83bc6049e42822c7483bba6500` | ❓ Unverified |
+| Proxy (impl: 0x5675bdcaeab76deb26110831ac011b1d16a77dcb) | unknown | project_anchor | own_supporting | 1 | base | unit-391351 | `0xd9e0507d706408d0f14e22e50880189fd915be80` | ❓ Unverified |
+| Proxy (impl: 0x90c3f277c3dce2f3f4cd5017441536522f3efaa1) | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-391350 | `0xce7a8d45daa9a5b29f6d255552f577d53ff9ebcf` | ❓ Unverified |
+| Proxy (impl: 0xec64b5429ea770b287cb56f35489f39988b5d71b) | unknown | project_anchor | own_supporting | 1 | base | unit-391352 | `0x15d7cf277be6463f153dd0d4d73f92ad65e6348c` | ❓ Unverified |
 
 ## Audit Inventory
 

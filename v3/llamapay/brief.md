@@ -52,45 +52,45 @@ The pinned logic-topography run contains 19 contract row(s) across arbitrum, ava
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xd152f5...452150`, chain 1)
-- UnnamedContract (`0x62e13b...cd4c10`, chain 10)
-- UnnamedContract (`0xc5a4fe...074ab9`, chain 10)
-- UnnamedContract (`0xd152f5...452150`, chain 10)
-- UnnamedContract (`0xde1c04...f84c7f`, chain 10)
-- UnnamedContract (`0x02266e...121c01`, chain 56)
-- UnnamedContract (`0xd152f5...452150`, chain 56)
-- UnnamedContract (`0xd152f5...452150`, chain 100)
-- UnnamedContract (`0xde1c04...f84c7f`, chain 100)
-- UnnamedContract (`0x02266e...121c01`, chain 137)
-- UnnamedContract (`0xc5a4fe...074ab9`, chain 137)
-- UnnamedContract (`0xd152f5...452150`, chain 137)
-- UnnamedContract (`0xde1c04...f84c7f`, chain 137)
-- UnnamedContract (`0x62e13b...cd4c10`, chain 43114)
-- UnnamedContract (`0x7d507b...25f4a3`, chain 43114)
-- UnnamedContract (`0x62e13b...cd4c10`, chain 81457)
-- Disperse (`0x6f9fb4...56301a`, chain 43114)
-- LlamaPayBot (`0xc5a4fe...074ab9`, chain 1)
-- LlamaPayBot (`0xc5a4fe...074ab9`, chain 56)
-- LlamaPayBot (`0x57547f...0353d7`, chain 43114)
-- LlamaPayFactory (`0xde1c04...f84c7f`, chain 1)
-- LlamaPayFactory (`0xde1c04...f84c7f`, chain 56)
-- LlamaPayFactory (`0x09c39b...3aea07`, chain 8453)
-- LlamaPayFactory (`0xde1c04...f84c7f`, chain 42161)
-- TokenEscrow (`0x056e39...532b72`, chain 1)
-- TokenEscrow (`0xb4e9d1...404779`, chain 10)
-- TokenEscrow (`0x1564d7...528734`, chain 42161)
-- TokenEscrow (`0x4c48f1...84fa0c`, chain 43114)
-- UnnamedContract (`0x62e13b...cd4c10`, chain 250)
-- UnnamedContract (`0xc5a4fe...074ab9`, chain 250)
-- UnnamedContract (`0xd152f5...452150`, chain 250)
-- UnnamedContract (`0xda33d4...5294d1`, chain 250)
-- UnnamedContract (`0xde1c04...f84c7f`, chain 250)
-- Vesting Escrow Factory (`0xcf6178...6ab347`, chain 1)
-- Vesting Escrow Factory (`0x62e13b...cd4c10`, chain 56)
-- Vesting Escrow Factory (`0x62e13b...cd4c10`, chain 100)
-- Vesting Escrow Factory (`0x62e13b...cd4c10`, chain 137)
-- Vesting Escrow Factory (`0x62e13b...cd4c10`, chain 8453)
-- Vesting Escrow Factory (`0x62e13b...cd4c10`, chain 42161)
+- UnnamedContract (`0xd152f549545093347a162dce210e7293f1452150`, chain 1)
+- UnnamedContract (`0x62e13be78af77c86d38a027ae432f67d9ecd4c10`, chain 10)
+- UnnamedContract (`0xc5a4fec44fbde08a7c9de6e07b60de60ac074ab9`, chain 10)
+- UnnamedContract (`0xd152f549545093347a162dce210e7293f1452150`, chain 10)
+- UnnamedContract (`0xde1c04855c2828431ba637675b6929a684f84c7f`, chain 10)
+- UnnamedContract (`0x02266e3b5ce26d62ea73ea7f2c542ebc24121c01`, chain 56)
+- UnnamedContract (`0xd152f549545093347a162dce210e7293f1452150`, chain 56)
+- UnnamedContract (`0xd152f549545093347a162dce210e7293f1452150`, chain 100)
+- UnnamedContract (`0xde1c04855c2828431ba637675b6929a684f84c7f`, chain 100)
+- UnnamedContract (`0x02266e3b5ce26d62ea73ea7f2c542ebc24121c01`, chain 137)
+- UnnamedContract (`0xc5a4fec44fbde08a7c9de6e07b60de60ac074ab9`, chain 137)
+- UnnamedContract (`0xd152f549545093347a162dce210e7293f1452150`, chain 137)
+- UnnamedContract (`0xde1c04855c2828431ba637675b6929a684f84c7f`, chain 137)
+- UnnamedContract (`0x62e13be78af77c86d38a027ae432f67d9ecd4c10`, chain 43114)
+- UnnamedContract (`0x7d507b4c2d7e54da5731f643506996da8525f4a3`, chain 43114)
+- UnnamedContract (`0x62e13be78af77c86d38a027ae432f67d9ecd4c10`, chain 81457)
+- Disperse (`0x6f9fb43274e9011804bf516e78caf5e89856301a`, chain 43114)
+- LlamaPayBot (`0xc5a4fec44fbde08a7c9de6e07b60de60ac074ab9`, chain 1)
+- LlamaPayBot (`0xc5a4fec44fbde08a7c9de6e07b60de60ac074ab9`, chain 56)
+- LlamaPayBot (`0x57547f79d8344accab21dc0a9c9d186e240353d7`, chain 43114)
+- LlamaPayFactory (`0xde1c04855c2828431ba637675b6929a684f84c7f`, chain 1)
+- LlamaPayFactory (`0xde1c04855c2828431ba637675b6929a684f84c7f`, chain 56)
+- LlamaPayFactory (`0x09c39b8311e4b7c678cbdad76556877ecd3aea07`, chain 8453)
+- LlamaPayFactory (`0xde1c04855c2828431ba637675b6929a684f84c7f`, chain 42161)
+- TokenEscrow (`0x056e39bdd2d35f4eb27478369bdade51e0532b72`, chain 1)
+- TokenEscrow (`0xb4e9d1f7b32937f04b856ec1ca39ac83e9404779`, chain 10)
+- TokenEscrow (`0x1564d7bfa4bc921a748aedb3b71e578672528734`, chain 42161)
+- TokenEscrow (`0x4c48f145e0c80d97bfbc983dd2cbebee5d84fa0c`, chain 43114)
+- UnnamedContract (`0x62e13be78af77c86d38a027ae432f67d9ecd4c10`, chain 250)
+- UnnamedContract (`0xc5a4fec44fbde08a7c9de6e07b60de60ac074ab9`, chain 250)
+- UnnamedContract (`0xd152f549545093347a162dce210e7293f1452150`, chain 250)
+- UnnamedContract (`0xda33d4b2753b3c2439ca52678e1a506e4c5294d1`, chain 250)
+- UnnamedContract (`0xde1c04855c2828431ba637675b6929a684f84c7f`, chain 250)
+- Vesting Escrow Factory (`0xcf61782465ff973638143d6492b51a85986ab347`, chain 1)
+- Vesting Escrow Factory (`0x62e13be78af77c86d38a027ae432f67d9ecd4c10`, chain 56)
+- Vesting Escrow Factory (`0x62e13be78af77c86d38a027ae432f67d9ecd4c10`, chain 100)
+- Vesting Escrow Factory (`0x62e13be78af77c86d38a027ae432f67d9ecd4c10`, chain 137)
+- Vesting Escrow Factory (`0x62e13be78af77c86d38a027ae432f67d9ecd4c10`, chain 8453)
+- Vesting Escrow Factory (`0x62e13be78af77c86d38a027ae432f67d9ecd4c10`, chain 42161)
 
 ## Contract Surface Quality
 
@@ -136,31 +136,31 @@ The pinned logic-topography run contains 19 contract row(s) across arbitrum, ava
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Disperse | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-245182 | `0x6f9fb4...56301a` | ⚠️ Unaudited |
-| Disperse | unknown | project_anchor | own_supporting | 0 | avalanche | unit-245189 | `0x6f9fb4...56301a` | ⚠️ Unaudited |
-| LlamaPayBot | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 12 deployments: ethereum `0x0327a0...ae948e`; ethereum `0xe10eb2...218ee9`; optimism `0x6f9fb4...56301a`; arbitrum `0xb1870e...b184e0`; avalanche `0x0327a0...ae948e`; avalanche `0x0e52b1...c258cf`; avalanche `0x3addfd...b6cb0f`; avalanche `0x9410fb...1b633c`; avalanche `0xb7caa9...8b268c`; avalanche `0xda33d4...5294d1`; avalanche `0xe10eb2...218ee9`; avalanche `0xf13563...bac057` | ⚠️ Unaudited |
-| LlamaPayBot | unknown | project_anchor | own_supporting | 0 | ethereum | unit-245158 | `0xc5a4fe...074ab9` | ⚠️ Unaudited |
-| LlamaPayBot | unknown | project_anchor | own_supporting | 0 | bsc | unit-245194 | `0xc5a4fe...074ab9` | ⚠️ Unaudited |
-| LlamaPayBot | unknown | project_anchor | own_supporting | 0 | avalanche | unit-245187 | `0x57547f...0353d7` | ⚠️ Unaudited |
-| LlamaPayFactory | registry | project_anchor | own_supporting | 0 | ethereum | unit-245161 | `0xde1c04...f84c7f` | ⚠️ Unaudited |
-| LlamaPayFactory | registry | project_anchor | own_supporting | 0 | bsc | unit-245196 | `0xde1c04...f84c7f` | ⚠️ Unaudited |
-| LlamaPayFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | 6 deployments: metis `0x06bfb4...f92c38`; metis `0x0ebe05...9b411c`; metis `0x43634d...030600`; metis `0x4ddfc2...7567b7`; metis `0xcfb166...c937bc`; berachain `0x09c39b...3aea07` | ⚠️ Unaudited |
-| LlamaPayFactory | registry | project_anchor | own_supporting | 0 | base | unit-245198 | `0x09c39b...3aea07` | ⚠️ Unaudited |
-| LlamaPayFactory | registry | project_anchor | own_supporting | 0 | arbitrum | unit-245183 | `0xde1c04...f84c7f` | ⚠️ Unaudited |
-| Simple Vesting Escrow | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 12 deployments: ethereum `0x9dd5cf...14bad2`; bsc `0x4ace3e...2b84bd`; gnosis `0x4ace3e...2b84bd`; polygon `0x4ace3e...2b84bd`; sonic `0xb61915...75a8b4`; base `0x0d5e12...d62cce`; base `0x2b3a5d...d15e49`; base `0x4ace3e...2b84bd`; base `0x4c0f3d...6d4be5`; base `0xb61915...75a8b4`; arbitrum `0x4ace3e...2b84bd`; berachain `0xb93427...10411a` | ⚠️ Unaudited |
-| TokenEscrow | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x02266e...121c01` | ⚠️ Unaudited |
-| TokenEscrow | operational_periphery | project_anchor | own_supporting | 1 | ethereum | unit-245200 | `0x056e39...532b72` | ⚠️ Unaudited |
-| TokenEscrow | operational_periphery | project_anchor | own_supporting | 0 | optimism | unit-245163 | `0xb4e9d1...404779` | ⚠️ Unaudited |
-| TokenEscrow | operational_periphery | project_anchor | own_supporting | 0 | arbitrum | unit-245180 | `0x1564d7...528734` | ⚠️ Unaudited |
-| TokenEscrow | operational_periphery | project_anchor | own_supporting | 0 | avalanche | unit-245186 | `0x4c48f1...84fa0c` | ⚠️ Unaudited |
-| Vesting Escrow Factory | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-245159 | `0xcf6178...6ab347` | ⚠️ Unaudited |
-| Vesting Escrow Factory | operational_periphery | project_anchor | own_supporting | 0 | bsc | unit-245193 | `0x62e13b...cd4c10` | ⚠️ Unaudited |
-| Vesting Escrow Factory | operational_periphery | project_anchor | own_supporting | 0 | gnosis | unit-245167 | `0x62e13b...cd4c10` | ⚠️ Unaudited |
-| Vesting Escrow Factory | operational_periphery | project_anchor | own_supporting | 0 | polygon | unit-245171 | `0x62e13b...cd4c10` | ⚠️ Unaudited |
-| Vesting Escrow Factory | operational_periphery | project_anchor | own_supporting | 0 | base | unit-245199 | `0x62e13b...cd4c10` | ⚠️ Unaudited |
-| Vesting Escrow Factory | operational_periphery | project_anchor | own_supporting | 0 | arbitrum | unit-245181 | `0x62e13b...cd4c10` | ⚠️ Unaudited |
-| Vesting Escrow Factory | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | 3 deployments: sonic `0xb93427...10411a`; berachain `0x4ace3e...2b84bd`; berachain `0xb61915...75a8b4` | ⚠️ Unaudited |
-| Vyper_contract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 12 deployments: ethereum `0xb61915...75a8b4`; ethereum `0xb93427...10411a`; bsc `0xb61915...75a8b4`; bsc `0xb93427...10411a`; gnosis `0xb61915...75a8b4`; gnosis `0xb93427...10411a`; polygon `0xb61915...75a8b4`; polygon `0xb93427...10411a`; arbitrum `0xb61915...75a8b4`; arbitrum `0xb93427...10411a`; avalanche `0xb61915...75a8b4`; avalanche `0xb93427...10411a` | ⚠️ Unaudited |
+| Disperse | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-245182 | `0x6f9fb43274e9011804bf516e78caf5e89856301a` | ⚠️ Unaudited |
+| Disperse | unknown | project_anchor | own_supporting | 0 | avalanche | unit-245189 | `0x6f9fb43274e9011804bf516e78caf5e89856301a` | ⚠️ Unaudited |
+| LlamaPayBot | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 12 deployments: ethereum `0x0327a00f37115115038c289827480ddaabae948e`; ethereum `0xe10eb22440feb14aa374fb5607b82041be218ee9`; optimism `0x6f9fb43274e9011804bf516e78caf5e89856301a`; arbitrum `0xb1870e647c4f7ee5dccfb3e4a98be9f888b184e0`; avalanche `0x0327a00f37115115038c289827480ddaabae948e`; avalanche `0x0e52b144489769b6eea905508e54a93cf3c258cf`; avalanche `0x3addfdd274f86587a49bb6ba09baba3581b6cb0f`; avalanche `0x9410fbb6cd03966ad3f8d9014ce1f77b001b633c`; avalanche `0xb7caa90cdbb8746f54b19f2f85e86b99598b268c`; avalanche `0xda33d4b2753b3c2439ca52678e1a506e4c5294d1`; avalanche `0xe10eb22440feb14aa374fb5607b82041be218ee9`; avalanche `0xf13563b612574d3e5372dddc6c06b7a0f3bac057` | ⚠️ Unaudited |
+| LlamaPayBot | unknown | project_anchor | own_supporting | 0 | ethereum | unit-245158 | `0xc5a4fec44fbde08a7c9de6e07b60de60ac074ab9` | ⚠️ Unaudited |
+| LlamaPayBot | unknown | project_anchor | own_supporting | 0 | bsc | unit-245194 | `0xc5a4fec44fbde08a7c9de6e07b60de60ac074ab9` | ⚠️ Unaudited |
+| LlamaPayBot | unknown | project_anchor | own_supporting | 0 | avalanche | unit-245187 | `0x57547f79d8344accab21dc0a9c9d186e240353d7` | ⚠️ Unaudited |
+| LlamaPayFactory | registry | project_anchor | own_supporting | 0 | ethereum | unit-245161 | `0xde1c04855c2828431ba637675b6929a684f84c7f` | ⚠️ Unaudited |
+| LlamaPayFactory | registry | project_anchor | own_supporting | 0 | bsc | unit-245196 | `0xde1c04855c2828431ba637675b6929a684f84c7f` | ⚠️ Unaudited |
+| LlamaPayFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | 6 deployments: metis `0x06bfb4725c1ccfbfbb45cb59b0f278c3cdf92c38`; metis `0x0ebe050c13ac5a7643616f2d9beb033f689b411c`; metis `0x43634d1c608f16fb0f4926c12b54124c93030600`; metis `0x4ddfc224e5da184dc458769491cb2f17e37567b7`; metis `0xcfb166f1c719376937886ffe10450e6778c937bc`; berachain `0x09c39b8311e4b7c678cbdad76556877ecd3aea07` | ⚠️ Unaudited |
+| LlamaPayFactory | registry | project_anchor | own_supporting | 0 | base | unit-245198 | `0x09c39b8311e4b7c678cbdad76556877ecd3aea07` | ⚠️ Unaudited |
+| LlamaPayFactory | registry | project_anchor | own_supporting | 0 | arbitrum | unit-245183 | `0xde1c04855c2828431ba637675b6929a684f84c7f` | ⚠️ Unaudited |
+| Simple Vesting Escrow | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 12 deployments: ethereum `0x9dd5cf263327e2d6a608da8c30368eb27514bad2`; bsc `0x4ace3edd57eff1176a862e7b72db090ecf2b84bd`; gnosis `0x4ace3edd57eff1176a862e7b72db090ecf2b84bd`; polygon `0x4ace3edd57eff1176a862e7b72db090ecf2b84bd`; sonic `0xb61915609e6dc7a7261b678073c53bac5875a8b4`; base `0x0d5e12e2bd630fc231d68f3cbf95ff5bb1d62cce`; base `0x2b3a5deb344d615bf0e9ba404cc9acbaecd15e49`; base `0x4ace3edd57eff1176a862e7b72db090ecf2b84bd`; base `0x4c0f3d171bf15760a5779ecac073907c9b6d4be5`; base `0xb61915609e6dc7a7261b678073c53bac5875a8b4`; arbitrum `0x4ace3edd57eff1176a862e7b72db090ecf2b84bd`; berachain `0xb93427b83573c8f27a08a909045c3e809610411a` | ⚠️ Unaudited |
+| TokenEscrow | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x02266e3b5ce26d62ea73ea7f2c542ebc24121c01` | ⚠️ Unaudited |
+| TokenEscrow | operational_periphery | project_anchor | own_supporting | 1 | ethereum | unit-245200 | `0x056e39bdd2d35f4eb27478369bdade51e0532b72` | ⚠️ Unaudited |
+| TokenEscrow | operational_periphery | project_anchor | own_supporting | 0 | optimism | unit-245163 | `0xb4e9d1f7b32937f04b856ec1ca39ac83e9404779` | ⚠️ Unaudited |
+| TokenEscrow | operational_periphery | project_anchor | own_supporting | 0 | arbitrum | unit-245180 | `0x1564d7bfa4bc921a748aedb3b71e578672528734` | ⚠️ Unaudited |
+| TokenEscrow | operational_periphery | project_anchor | own_supporting | 0 | avalanche | unit-245186 | `0x4c48f145e0c80d97bfbc983dd2cbebee5d84fa0c` | ⚠️ Unaudited |
+| Vesting Escrow Factory | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-245159 | `0xcf61782465ff973638143d6492b51a85986ab347` | ⚠️ Unaudited |
+| Vesting Escrow Factory | operational_periphery | project_anchor | own_supporting | 0 | bsc | unit-245193 | `0x62e13be78af77c86d38a027ae432f67d9ecd4c10` | ⚠️ Unaudited |
+| Vesting Escrow Factory | operational_periphery | project_anchor | own_supporting | 0 | gnosis | unit-245167 | `0x62e13be78af77c86d38a027ae432f67d9ecd4c10` | ⚠️ Unaudited |
+| Vesting Escrow Factory | operational_periphery | project_anchor | own_supporting | 0 | polygon | unit-245171 | `0x62e13be78af77c86d38a027ae432f67d9ecd4c10` | ⚠️ Unaudited |
+| Vesting Escrow Factory | operational_periphery | project_anchor | own_supporting | 0 | base | unit-245199 | `0x62e13be78af77c86d38a027ae432f67d9ecd4c10` | ⚠️ Unaudited |
+| Vesting Escrow Factory | operational_periphery | project_anchor | own_supporting | 0 | arbitrum | unit-245181 | `0x62e13be78af77c86d38a027ae432f67d9ecd4c10` | ⚠️ Unaudited |
+| Vesting Escrow Factory | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | 3 deployments: sonic `0xb93427b83573c8f27a08a909045c3e809610411a`; berachain `0x4ace3edd57eff1176a862e7b72db090ecf2b84bd`; berachain `0xb61915609e6dc7a7261b678073c53bac5875a8b4` | ⚠️ Unaudited |
+| Vyper_contract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 12 deployments: ethereum `0xb61915609e6dc7a7261b678073c53bac5875a8b4`; ethereum `0xb93427b83573c8f27a08a909045c3e809610411a`; bsc `0xb61915609e6dc7a7261b678073c53bac5875a8b4`; bsc `0xb93427b83573c8f27a08a909045c3e809610411a`; gnosis `0xb61915609e6dc7a7261b678073c53bac5875a8b4`; gnosis `0xb93427b83573c8f27a08a909045c3e809610411a`; polygon `0xb61915609e6dc7a7261b678073c53bac5875a8b4`; polygon `0xb93427b83573c8f27a08a909045c3e809610411a`; arbitrum `0xb61915609e6dc7a7261b678073c53bac5875a8b4`; arbitrum `0xb93427b83573c8f27a08a909045c3e809610411a`; avalanche `0xb61915609e6dc7a7261b678073c53bac5875a8b4`; avalanche `0xb93427b83573c8f27a08a909045c3e809610411a` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -180,33 +180,33 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-245160 | `0xd152f5...452150` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-245191 | `0xccdd68...cec23d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-245162 | `0x62e13b...cd4c10` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-245164 | `0xc5a4fe...074ab9` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-245165 | `0xd152f5...452150` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-245166 | `0xde1c04...f84c7f` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | cronos | n/a | 2 deployments: cronos `0x62e13b...cd4c10`; zora `0x62e13b...cd4c10` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-245192 | `0x02266e...121c01` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-245195 | `0xd152f5...452150` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-245168 | `0xd152f5...452150` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-245169 | `0xde1c04...f84c7f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-245170 | `0x02266e...121c01` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-245172 | `0xc5a4fe...074ab9` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-245173 | `0xd152f5...452150` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-245174 | `0xde1c04...f84c7f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-245175 | `0x62e13b...cd4c10` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-245176 | `0xc5a4fe...074ab9` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-245177 | `0xd152f5...452150` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-245178 | `0xda33d4...5294d1` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-245179 | `0xde1c04...f84c7f` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb93427...10411a` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | unit-245184 | `0x62e13b...cd4c10` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | unit-245185 | `0xc4705f...6a7d30` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x4ace3e...2b84bd` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-245188 | `0x62e13b...cd4c10` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-245190 | `0x7d507b...25f4a3` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-245197 | `0x62e13b...cd4c10` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-245160 | `0xd152f549545093347a162dce210e7293f1452150` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-245191 | `0xccdd688d7edcf89bfa217492e247d1395fcec23d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-245162 | `0x62e13be78af77c86d38a027ae432f67d9ecd4c10` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-245164 | `0xc5a4fec44fbde08a7c9de6e07b60de60ac074ab9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-245165 | `0xd152f549545093347a162dce210e7293f1452150` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-245166 | `0xde1c04855c2828431ba637675b6929a684f84c7f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | cronos | n/a | 2 deployments: cronos `0x62e13be78af77c86d38a027ae432f67d9ecd4c10`; zora `0x62e13be78af77c86d38a027ae432f67d9ecd4c10` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-245192 | `0x02266e3b5ce26d62ea73ea7f2c542ebc24121c01` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-245195 | `0xd152f549545093347a162dce210e7293f1452150` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-245168 | `0xd152f549545093347a162dce210e7293f1452150` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-245169 | `0xde1c04855c2828431ba637675b6929a684f84c7f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-245170 | `0x02266e3b5ce26d62ea73ea7f2c542ebc24121c01` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-245172 | `0xc5a4fec44fbde08a7c9de6e07b60de60ac074ab9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-245173 | `0xd152f549545093347a162dce210e7293f1452150` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-245174 | `0xde1c04855c2828431ba637675b6929a684f84c7f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-245175 | `0x62e13be78af77c86d38a027ae432f67d9ecd4c10` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-245176 | `0xc5a4fec44fbde08a7c9de6e07b60de60ac074ab9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-245177 | `0xd152f549545093347a162dce210e7293f1452150` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-245178 | `0xda33d4b2753b3c2439ca52678e1a506e4c5294d1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-245179 | `0xde1c04855c2828431ba637675b6929a684f84c7f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb93427b83573c8f27a08a909045c3e809610411a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | unit-245184 | `0x62e13be78af77c86d38a027ae432f67d9ecd4c10` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | unit-245185 | `0xc4705f96030d347f421fbe01d9a19f18b26a7d30` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x4ace3edd57eff1176a862e7b72db090ecf2b84bd` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-245188 | `0x62e13be78af77c86d38a027ae432f67d9ecd4c10` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-245190 | `0x7d507b4c2d7e54da5731f643506996da8525f4a3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-245197 | `0x62e13be78af77c86d38a027ae432f67d9ecd4c10` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -234,23 +234,23 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0xc5a4fe...074ab9` | LlamaPayBot | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0xc5a4fe...074ab9` | LlamaPayBot | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | `0x57547f...0353d7` | LlamaPayBot | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xde1c04...f84c7f` | LlamaPayFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0xde1c04...f84c7f` | LlamaPayFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x09c39b...3aea07` | LlamaPayFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | `0xde1c04...f84c7f` | LlamaPayFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x056e39...532b72` | TokenEscrow | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | `0xb4e9d1...404779` | TokenEscrow | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | `0x1564d7...528734` | TokenEscrow | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | `0x4c48f1...84fa0c` | TokenEscrow | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xcf6178...6ab347` | Vesting Escrow Factory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x62e13b...cd4c10` | Vesting Escrow Factory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| gnosis | `0x62e13b...cd4c10` | Vesting Escrow Factory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | `0x62e13b...cd4c10` | Vesting Escrow Factory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x62e13b...cd4c10` | Vesting Escrow Factory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | `0x62e13b...cd4c10` | Vesting Escrow Factory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xc5a4fec44fbde08a7c9de6e07b60de60ac074ab9` | LlamaPayBot | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xc5a4fec44fbde08a7c9de6e07b60de60ac074ab9` | LlamaPayBot | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | `0x57547f79d8344accab21dc0a9c9d186e240353d7` | LlamaPayBot | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xde1c04855c2828431ba637675b6929a684f84c7f` | LlamaPayFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xde1c04855c2828431ba637675b6929a684f84c7f` | LlamaPayFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x09c39b8311e4b7c678cbdad76556877ecd3aea07` | LlamaPayFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0xde1c04855c2828431ba637675b6929a684f84c7f` | LlamaPayFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x056e39bdd2d35f4eb27478369bdade51e0532b72` | TokenEscrow | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0xb4e9d1f7b32937f04b856ec1ca39ac83e9404779` | TokenEscrow | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0x1564d7bfa4bc921a748aedb3b71e578672528734` | TokenEscrow | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | `0x4c48f145e0c80d97bfbc983dd2cbebee5d84fa0c` | TokenEscrow | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xcf61782465ff973638143d6492b51a85986ab347` | Vesting Escrow Factory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x62e13be78af77c86d38a027ae432f67d9ecd4c10` | Vesting Escrow Factory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| gnosis | `0x62e13be78af77c86d38a027ae432f67d9ecd4c10` | Vesting Escrow Factory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0x62e13be78af77c86d38a027ae432f67d9ecd4c10` | Vesting Escrow Factory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x62e13be78af77c86d38a027ae432f67d9ecd4c10` | Vesting Escrow Factory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0x62e13be78af77c86d38a027ae432f67d9ecd4c10` | Vesting Escrow Factory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

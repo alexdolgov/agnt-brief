@@ -61,7 +61,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| RobiniaSwap | unknown | bsc | n/a | [`0xafaeee...d32d70`](./contracts/bsc-56/0xafaeee58a58867c73245397c0f768ff041d32d70/) | ⚠️ Unaudited |
+| RobiniaSwap | unknown | bsc | n/a | [`0xafaeee58a58867c73245397c0f768ff041d32d70`](./contracts/bsc-56/0xafaeee58a58867c73245397c0f768ff041d32d70/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,7 +93,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0xafaeee...d32d70`](./contracts/bsc-56/0xafaeee58a58867c73245397c0f768ff041d32d70/) | RobiniaSwap | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xafaeee58a58867c73245397c0f768ff041d32d70`](./contracts/bsc-56/0xafaeee58a58867c73245397c0f768ff041d32d70/) | RobiniaSwap | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

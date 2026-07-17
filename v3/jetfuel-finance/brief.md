@@ -90,60 +90,60 @@ The pinned logic-topography run contains 3 contract row(s) across bsc. Structura
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BEP20Token | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xfb991a...d67ec7` | ⚠️ Unaudited |
-| D100Presale | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2a950c...7ec051` | ⚠️ Unaudited |
-| FortressIJO | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2fc22a...e777d2` | ⚠️ Unaudited |
-| FTSTimeLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x94222b...4783e8` | ⚠️ Unaudited |
-| FuelToken | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-243298 | `0x2090c8...5e441a` | ⚠️ Unaudited |
-| GFCEPresale | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xcf2ef2...718874` | ⚠️ Unaudited |
-| GFORCE | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-243300 | `0x94babb...1b26ce` | ⚠️ Unaudited |
-| GFORCEv2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x5f1363...e64c66` | ⚠️ Unaudited |
-| HarvestMoonTicket | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x9c0287...ef5b8d` | ⚠️ Unaudited |
-| IJO | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0196f8...675ae2` | ⚠️ Unaudited |
-| JetBar | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xa3a3e1...475cfb` | ⚠️ Unaudited |
-| JetfuelAutoVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2d2112...d995dd` | ⚠️ Unaudited |
-| JetfuelAutoVaultv2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xa6b4c2...bdbb60` | ⚠️ Unaudited |
-| JetfuelBSCEXVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0a8ab9...997d8b` | ⚠️ Unaudited |
-| JetfuelCakeBestVaultv2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x7c6d9e...bd4afa` | ⚠️ Unaudited |
-| JetfuelFortressVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x647db6...3e22d2` | ⚠️ Unaudited |
-| JetfuelFortressVaultBNB | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x15e84d...753306` | ⚠️ Unaudited |
-| JetFuelNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x462872...f899cb` | ⚠️ Unaudited |
-| JetfuelVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x032bb9...20ecda` | ⚠️ Unaudited |
-| JetfuelVaultDittoBoost | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3d6d41...73dc20` | ⚠️ Unaudited |
-| JetfuelVaultV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x227f9a...cd2113` | ⚠️ Unaudited |
-| JetfuelVenusVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x937f23...e10f98` | ⚠️ Unaudited |
-| JetfuelVenusVaultBNB | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc15bb3...e1cd89` | ⚠️ Unaudited |
-| JetfuelVenusVaultv2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x050015...1da25f` | ⚠️ Unaudited |
-| JetFuelVIPNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x8f2181...41bb28` | ⚠️ Unaudited |
-| JetswapBar | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xd07947...d61b47` | ⚠️ Unaudited |
-| JetswapFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0eb58e...dfcbd5` | ⚠️ Unaudited |
-| JetswapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xbe65b8...714800` | ⚠️ Unaudited |
-| JetswapVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x06fd5c...c91b43` | ⚠️ Unaudited |
-| MasterChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x63d6ec...b6f9f5` | ⚠️ Unaudited |
-| MasterFuel | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-243299 | `0x86f4bc...7d4b56` | ⚠️ Unaudited |
-| RewardPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x41aff2...bf2922` | ⚠️ Unaudited |
-| SmartChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x013bc4...9dce60` | ⚠️ Unaudited |
-| SmartChefFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x9c202a...d8ae1e` | ⚠️ Unaudited |
-| StrategyApe | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3c975a...edf9b1` | ⚠️ Unaudited |
-| StrategyApeLP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xbfb7c6...871d96` | ⚠️ Unaudited |
-| StrategyAutoLP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x408951...47fdb7` | ⚠️ Unaudited |
-| StrategyAutoLPv2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x87b797...2352f1` | ⚠️ Unaudited |
-| StrategyAutoV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x715067...4a944f` | ⚠️ Unaudited |
-| StrategyBakeryLP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x005892...db964b` | ⚠️ Unaudited |
-| StrategyCakeBest | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x6d8f1f...49a0e9` | ⚠️ Unaudited |
-| StrategyCakeBestv2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xb8ceea...c8714c` | ⚠️ Unaudited |
-| StrategyCakeSmart | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x31a858...98f79a` | ⚠️ Unaudited |
-| StrategyFortress | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xdc012e...964e1a` | ⚠️ Unaudited |
-| StrategyFortressBNB | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x58b8b3...8c506d` | ⚠️ Unaudited |
-| StrategyJetfuelBSCEX | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x098daf...cd057c` | ⚠️ Unaudited |
-| StrategyJetfuelLP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x01588b...daf7fc` | ⚠️ Unaudited |
-| StrategyVenus | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3b4ac8...de2a57` | ⚠️ Unaudited |
-| StrategyVenusBNBV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x956bce...7cdaa3` | ⚠️ Unaudited |
-| StrategyVenusv2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3c0c0e...1014aa` | ⚠️ Unaudited |
-| StrategyWingsLP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0d9ab0...3eedb6` | ⚠️ Unaudited |
-| StrategyWingsSingleVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xf150fd...24e06f` | ⚠️ Unaudited |
-| TRYONPresale | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xb65be4...76e0bf` | ⚠️ Unaudited |
-| WingsToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0487b8...498446` | ⚠️ Unaudited |
+| BEP20Token | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xfb991a9bcbafc9931eb78ca6816e388f90d67ec7` | ⚠️ Unaudited |
+| D100Presale | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2a950cafa914d898cbf7a7daa71eebc73e7ec051` | ⚠️ Unaudited |
+| FortressIJO | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2fc22a43bb759cfa07fed29cf4b40d2508e777d2` | ⚠️ Unaudited |
+| FTSTimeLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x94222bd8c1fc5ca4014fec75550aaced124783e8` | ⚠️ Unaudited |
+| FuelToken | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-243298 | `0x2090c8295769791ab7a3cf1cc6e0aa19f35e441a` | ⚠️ Unaudited |
+| GFCEPresale | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xcf2ef295115068bb4e4a37451210a97a02718874` | ⚠️ Unaudited |
+| GFORCE | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-243300 | `0x94babbe728d9411612ee41b20241a6fa251b26ce` | ⚠️ Unaudited |
+| GFORCEv2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x5f136383e230f972739fae2e81e7e774afe64c66` | ⚠️ Unaudited |
+| HarvestMoonTicket | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x9c0287709e3c60bfccefdfbfccefdad57aef5b8d` | ⚠️ Unaudited |
+| IJO | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0196f8e442006a35a89734de83fc04c0d6675ae2` | ⚠️ Unaudited |
+| JetBar | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xa3a3e10ceecd7ed81536a6c529bec1e4fb475cfb` | ⚠️ Unaudited |
+| JetfuelAutoVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2d211236ccad202bc5548d0243d0e7819ed995dd` | ⚠️ Unaudited |
+| JetfuelAutoVaultv2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xa6b4c20a45df1b47d15c66af601f5aa599bdbb60` | ⚠️ Unaudited |
+| JetfuelBSCEXVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0a8ab9f4c04b62ba48d513b39f0ae0c3e6997d8b` | ⚠️ Unaudited |
+| JetfuelCakeBestVaultv2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x7c6d9eef78b07fc13d6742b6473a4ffb1dbd4afa` | ⚠️ Unaudited |
+| JetfuelFortressVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x647db6dce3c36ac1a3ba48f0f6b767a6c73e22d2` | ⚠️ Unaudited |
+| JetfuelFortressVaultBNB | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x15e84d6ed8997590e02b25d3d3ceee9686753306` | ⚠️ Unaudited |
+| JetFuelNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x4628726f2ae19282c55fc464ed0553170ff899cb` | ⚠️ Unaudited |
+| JetfuelVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x032bb900363be7a2fa566694a7f065f13820ecda` | ⚠️ Unaudited |
+| JetfuelVaultDittoBoost | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3d6d415be40159f207540f95e398f29a7173dc20` | ⚠️ Unaudited |
+| JetfuelVaultV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x227f9a94815d3a30ef8ffb7302a1793d05cd2113` | ⚠️ Unaudited |
+| JetfuelVenusVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x937f23ef476b6747b37f2125cbb257fc42e10f98` | ⚠️ Unaudited |
+| JetfuelVenusVaultBNB | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc15bb35a1752a40be9d5090e784a896074e1cd89` | ⚠️ Unaudited |
+| JetfuelVenusVaultv2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x050015dedfd2b063a706c98bfa82b3c98b1da25f` | ⚠️ Unaudited |
+| JetFuelVIPNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x8f218191da87e736c859f7c57922561c4641bb28` | ⚠️ Unaudited |
+| JetswapBar | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xd079475f820bb3a01932083382aed733d3d61b47` | ⚠️ Unaudited |
+| JetswapFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0eb58e5c8aa63314ff5547289185cc4583dfcbd5` | ⚠️ Unaudited |
+| JetswapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xbe65b8f75b9f20f4c522e0067a3887fada714800` | ⚠️ Unaudited |
+| JetswapVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x06fd5cab123990a0dd0ba2130bfa76da26c91b43` | ⚠️ Unaudited |
+| MasterChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x63d6ec1cdef04464287e2af710ffef9780b6f9f5` | ⚠️ Unaudited |
+| MasterFuel | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-243299 | `0x86f4bc1ebf2c209d12d3587b7085aea5707d4b56` | ⚠️ Unaudited |
+| RewardPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x41aff2c6bdf200d205de307f597db738c0bf2922` | ⚠️ Unaudited |
+| SmartChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x013bc4281cca84c3c2fac7203c4d2859099dce60` | ⚠️ Unaudited |
+| SmartChefFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x9c202a3bf2ed24c6667f607d62b1fabbfcd8ae1e` | ⚠️ Unaudited |
+| StrategyApe | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3c975a1f55d897cf7541693e732d6d474bedf9b1` | ⚠️ Unaudited |
+| StrategyApeLP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xbfb7c6dd4037285a387d021fdad9383a71871d96` | ⚠️ Unaudited |
+| StrategyAutoLP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x408951aa05906cda702e52139a027d29d247fdb7` | ⚠️ Unaudited |
+| StrategyAutoLPv2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x87b7972453d03e344d4fdf8dd5bef6ca692352f1` | ⚠️ Unaudited |
+| StrategyAutoV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x715067fb405dc42bb0a201c31748dc15c24a944f` | ⚠️ Unaudited |
+| StrategyBakeryLP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x00589273cfda2d74a0bee8cc7316919d52db964b` | ⚠️ Unaudited |
+| StrategyCakeBest | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x6d8f1fd50f0ce0d93ded70ec2194e5a6bb49a0e9` | ⚠️ Unaudited |
+| StrategyCakeBestv2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xb8ceea3951097a5efc46746aeafc339b28c8714c` | ⚠️ Unaudited |
+| StrategyCakeSmart | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x31a85811322211f5f7b2405e5eb2b2567f98f79a` | ⚠️ Unaudited |
+| StrategyFortress | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xdc012ee194179ceb4f5431015148b0da1f964e1a` | ⚠️ Unaudited |
+| StrategyFortressBNB | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x58b8b3430c70e76a33e91a6c942078b8f88c506d` | ⚠️ Unaudited |
+| StrategyJetfuelBSCEX | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x098daf85bed3ad16a284c4c5f2b04e5d84cd057c` | ⚠️ Unaudited |
+| StrategyJetfuelLP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x01588b79b8b9c5dfd4d7199a978c4404d5daf7fc` | ⚠️ Unaudited |
+| StrategyVenus | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3b4ac854160d97da09a183559cc8441f30de2a57` | ⚠️ Unaudited |
+| StrategyVenusBNBV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x956bce4f086dc4579b960ed80336ef79737cdaa3` | ⚠️ Unaudited |
+| StrategyVenusv2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3c0c0e0732ce790c4d30dbaa0a0eccb3c01014aa` | ⚠️ Unaudited |
+| StrategyWingsLP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0d9ab0182a8004014dd22b7b6f614d07d13eedb6` | ⚠️ Unaudited |
+| StrategyWingsSingleVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xf150fd19a8f88668099eab23291162124f24e06f` | ⚠️ Unaudited |
+| TRYONPresale | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xb65be412326e54811ff47f0130c0d8be0776e0bf` | ⚠️ Unaudited |
+| WingsToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0487b824c8261462f88940f97053e65bdb498446` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -163,7 +163,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0xf64882...4ee3dd` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0xf6488205957f0b4497053d6422f49e27944ee3dd` | ❓ Unverified |
 
 ## Audit Inventory
 

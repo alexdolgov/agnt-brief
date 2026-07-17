@@ -60,7 +60,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| IMXToken | unknown | ethereum | n/a | [`0xf57e7e...6e79ff`](./contracts/ethereum-1/0xf57e7e7c23978c3caec3c3548e3d615c346e79ff/) | ✅ Audited |
+| IMXToken | unknown | ethereum | n/a | [`0xf57e7e7c23978c3caec3c3548e3d615c346e79ff`](./contracts/ethereum-1/0xf57e7e7c23978c3caec3c3548e3d615c346e79ff/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 

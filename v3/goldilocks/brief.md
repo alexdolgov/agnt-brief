@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across berachain. Str
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- Goldiswap (`0xb7e448...800466`, chain 80094)
+- Goldiswap (`0xb7e448e5677d212b8c8da7d6312e8afc49800466`, chain 80094)
 
 ## Contract Surface Quality
 
@@ -101,20 +101,20 @@ The pinned logic-topography run contains 1 contract row(s) across berachain. Str
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Goldiswap | unknown | project_anchor | own_supporting | 0 | berachain | unit-266845 | `0xb7e448...800466` | ✅ Audited |
+| Goldiswap | unknown | project_anchor | own_supporting | 0 | berachain | unit-266845 | `0xb7e448e5677d212b8c8da7d6312e8afc49800466` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (8)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| DamOft | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x713567...a75a72` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | berachain | n/a | `0x17c3b6...d551ab` | ⚠️ Unaudited |
-| RusdOft | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x09d421...8f2b34` | ⚠️ Unaudited |
-| Sigma | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x563a27...731fe5` | ⚠️ Unaudited |
-| SrusdOft | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x547561...e947d7` | ⚠️ Unaudited |
-| uniBTC | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x50fa14...1b8190` | ⚠️ Unaudited |
-| VaultWithoutNative | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xa93322...4ffadd` | ⚠️ Unaudited |
-| WsrusdOft | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x316cd3...f64514` | ⚠️ Unaudited |
+| DamOft | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x71356761fd23e77e5d78c37c70fe78229ca75a72` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | berachain | n/a | `0x17c3b688badd6dd11244096a9fbc4ae0add551ab` | ⚠️ Unaudited |
+| RusdOft | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x09d4214c03d01f49544c0448dbe3a27f768f2b34` | ⚠️ Unaudited |
+| Sigma | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x563a27728d298f21738ab694e95f344a42731fe5` | ⚠️ Unaudited |
+| SrusdOft | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x5475611dffb8ef4d697ae39df9395513b6e947d7` | ⚠️ Unaudited |
+| uniBTC | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x50fa1411201e2ac0361fb893e903b80f141b8190` | ⚠️ Unaudited |
+| VaultWithoutNative | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xa93322a98335b791df87f20bb939fbe4d84ffadd` | ⚠️ Unaudited |
+| WsrusdOft | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x316cd39632cac4f4cdfc21757c4500fe12f64514` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -134,11 +134,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x6c00d6...d34fed` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x6fd990...38ac7f` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xb9798e...021dac` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xbf2e15...3f27ad` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xbf9a43...8d2719` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x6c00d68dc6bcc3d47d698f4b566ccbe893d34fed` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x6fd990680deb2e5dccb2ffefc3307dd34138ac7f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xb9798e0e3ab8b2f2c80684c9d51056538e021dac` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xbf2e152f460090ace91a456e3dee5acf703f27ad` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xbf9a438d24b0772493e1c06ec615391f738d2719` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -167,7 +167,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
 | Cyfrin | Goldilend | unmatched — not counted | — | listed in scope | no |
-| Cyfrin | Goldiswap | own contract | Goldiswap (selected) `0xb7e448...800466` — deployed 2025-02-07 04:28:02+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Cyfrin | Goldiswap | own contract | Goldiswap (selected) `0xb7e448e5677d212b8c8da7d6312e8afc49800466` — deployed 2025-02-07 04:28:02+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Cyfrin | Goldivault | unmatched — not counted | — | listed in scope | no |
 | Cyfrin | OwnershipToken | unmatched — not counted | — | listed in scope | no |
 | Cyfrin | YieldToken | unmatched — not counted | — | listed in scope | no |

@@ -80,7 +80,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x000000...001600` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x0000000000000000000000000000000000001600` | ❓ Unverified |
 
 ## Audit Inventory
 

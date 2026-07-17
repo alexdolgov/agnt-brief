@@ -60,7 +60,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ThoreumToken | token | bsc | n/a | [`0x580de5...817c05`](./contracts/bsc-56/0x580de58c1bd593a43dadcf0a739d504621817c05/) | ✅ Audited |
+| ThoreumToken | token | bsc | n/a | [`0x580de58c1bd593a43dadcf0a739d504621817c05`](./contracts/bsc-56/0x580de58c1bd593a43dadcf0a739d504621817c05/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 

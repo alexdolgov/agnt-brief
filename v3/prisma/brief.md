@@ -51,12 +51,12 @@ The pinned logic-topography run contains 6 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x06bdf2...7eb02c`, chain 1)
-- UnnamedContract (`0x3f7854...22829d`, chain 1)
-- UnnamedContract (`0x4591db...9fbb28`, chain 1)
-- UnnamedContract (`0x5d17ea...64ccf8`, chain 1)
-- UnnamedContract (`0x72c590...542719`, chain 1)
-- UnnamedContract (`0xda4786...afd71c`, chain 1)
+- UnnamedContract (`0x06bdf212c290473dcacea9793890c5024c7eb02c`, chain 1)
+- UnnamedContract (`0x3f78544364c3eccdce4d9c89a630aea26122829d`, chain 1)
+- UnnamedContract (`0x4591dbff62656e7859afe5e45f6f47d3669fbb28`, chain 1)
+- UnnamedContract (`0x5d17ea085f2ff5da3e6979d5d26f1dbab664ccf8`, chain 1)
+- UnnamedContract (`0x72c590349535ad52e6953744cb2a36b409542719`, chain 1)
+- UnnamedContract (`0xda47862a83dac0c112ba89c6abc2159b95afd71c`, chain 1)
 
 ## Contract Surface Quality
 
@@ -102,12 +102,12 @@ The pinned logic-topography run contains 6 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | governance | project_anchor | own_supporting | 0 | ethereum | unit-391143 | `0x06bdf2...7eb02c` | ⚠️ Unaudited |
-| UnnamedContract | governance | project_anchor | own_supporting | 0 | ethereum | unit-391144 | `0x3f7854...22829d` | ⚠️ Unaudited |
-| UnnamedContract | token | project_anchor | own_supporting | 0 | ethereum | unit-391145 | `0x4591db...9fbb28` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-391146 | `0x5d17ea...64ccf8` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-391147 | `0x72c590...542719` | ⚠️ Unaudited |
-| UnnamedContract | governance | project_anchor | own_supporting | 0 | ethereum | unit-391148 | `0xda4786...afd71c` | ⚠️ Unaudited |
+| UnnamedContract | governance | project_anchor | own_supporting | 0 | ethereum | unit-391143 | `0x06bdf212c290473dcacea9793890c5024c7eb02c` | ⚠️ Unaudited |
+| UnnamedContract | governance | project_anchor | own_supporting | 0 | ethereum | unit-391144 | `0x3f78544364c3eccdce4d9c89a630aea26122829d` | ⚠️ Unaudited |
+| UnnamedContract | token | project_anchor | own_supporting | 0 | ethereum | unit-391145 | `0x4591dbff62656e7859afe5e45f6f47d3669fbb28` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-391146 | `0x5d17ea085f2ff5da3e6979d5d26f1dbab664ccf8` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-391147 | `0x72c590349535ad52e6953744cb2a36b409542719` | ⚠️ Unaudited |
+| UnnamedContract | governance | project_anchor | own_supporting | 0 | ethereum | unit-391148 | `0xda47862a83dac0c112ba89c6abc2159b95afd71c` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

@@ -60,7 +60,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| SherpaVault | core_logic | base | n/a | [`0x960438...778380`](./contracts/base-8453/0x96043804d00dcec238718eedad9ac10719778380/) | ✅ Audited |
+| SherpaVault | core_logic | base | n/a | [`0x96043804d00dcec238718eedad9ac10719778380`](./contracts/base-8453/0x96043804d00dcec238718eedad9ac10719778380/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 

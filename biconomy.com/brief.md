@@ -62,7 +62,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CoinToken | unknown | bsc | n/a | [`0xc86401...ee808a`](./contracts/bsc-56/0xc864019047b864b6ab609a968ae2725dfaee808a/) | ⚠️ Unaudited |
+| CoinToken | unknown | bsc | n/a | [`0xc864019047b864b6ab609a968ae2725dfaee808a`](./contracts/bsc-56/0xc864019047b864b6ab609a968ae2725dfaee808a/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -104,7 +104,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0xc86401...ee808a`](./contracts/bsc-56/0xc864019047b864b6ab609a968ae2725dfaee808a/) | CoinToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xc864019047b864b6ab609a968ae2725dfaee808a`](./contracts/bsc-56/0xc864019047b864b6ab609a968ae2725dfaee808a/) | CoinToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

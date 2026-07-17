@@ -48,8 +48,8 @@ The pinned logic-topography run contains 22 contract row(s) across base, bsc, et
 
 ### Forked Contracts
 
-**L1StandardBridge** (`0x01b46e...d87997`, chain 1)
-Origin: stcyber (`0x01b46e...d87997`)
+**L1StandardBridge** (`0x01b46e02fce5fc0731076711affe73beecd87997`, chain 1)
+Origin: stcyber (`0x01b46e02fce5fc0731076711affe73beecd87997`)
 Containment: 100.0% - 16 functions inherited
 Centroid audit status: pending_validation
 
@@ -59,46 +59,46 @@ Removals (removed from original): none
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x10e34e...161b49`, chain 1)
-- UnnamedContract (`0x12a580...55b255`, chain 1)
-- UnnamedContract (`0x4f4b71...f47dbd`, chain 1)
-- UnnamedContract (`0x544dbf...6c9680`, chain 1)
-- UnnamedContract (`0x579f8d...2b28a6`, chain 1)
-- UnnamedContract (`0x6daf22...007e6d`, chain 1)
-- UnnamedContract (`0x726c6a...f0df0e`, chain 1)
-- UnnamedContract (`0x7e5410...036e03`, chain 1)
-- UnnamedContract (`0x849d08...f7aa56`, chain 1)
-- UnnamedContract (`0x985f18...6e4b46`, chain 1)
-- UnnamedContract (`0xa669a7...5e676d`, chain 1)
-- UnnamedContract (`0xbf4676...c1b36f`, chain 1)
-- UnnamedContract (`0xc2e2d8...5458c7`, chain 1)
-- UnnamedContract (`0xd9db27...709552`, chain 1)
-- UnnamedContract (`0x147788...fb88a9`, chain 10)
-- UnnamedContract (`0x147788...fb88a9`, chain 56)
-- UnnamedContract (`0x9a9d5a...f63921`, chain 56)
-- UnnamedContract (`0x147788...fb88a9`, chain 8453)
-- UnnamedContract (`0x9a9d5a...f63921`, chain 8453)
-- AddressManager (`0x19b580...09853a`, chain 1)
-- CyberToken (`0x147788...fb88a9`, chain 1)
-- CyberTokenAdapter (`0xcb0799...43b052`, chain 1)
-- CyberTokenController (`0x9a9d5a...f63921`, chain 10)
-- DataAvailabilityChallenge (`0x0d93ea...b05c51`, chain 1)
-- DisputeGameFactory (`0xb79cf1...3649a3`, chain 1)
-- GnosisSafeProxy (`0xc2259e...d75398`, chain 1)
-- GnosisSafeProxyFactory (`0xa6b71e...896ab2`, chain 1)
-- L1ERC721Bridge (`0x1234c7...e2afb1`, chain 1)
-- L2OutputOracle (`0x93e1c0...c32f85`, chain 1)
-- MIPS (`0x0048de...3e4143`, chain 1)
-- OptimismPortal (`0xacfd93...339142`, chain 1)
-- PreimageOracle (`0x0747ef...6a8dde`, chain 1)
-- Proxy (`0x1aec4c...96959d`, chain 1)
-- Proxy (`0x1d59bc...d24c99`, chain 1)
-- Proxy (`0x51a004...6268f4`, chain 1)
-- Proxy (`0x588dad...103919`, chain 1)
-- Proxy (`0x5d1f4b...ff6055`, chain 1)
-- Proxy (`0xa1780b...d41a73`, chain 1)
-- ResolvedDelegateProxy (`0x3c01eb...08dfc9`, chain 1)
-- TimelockController (`0x81759a...d3337b`, chain 1)
+- UnnamedContract (`0x10e34efe14e4d270c0f77bf1af01b6c832161b49`, chain 1)
+- UnnamedContract (`0x12a580c05466eefb2c467c6b115844cdaf55b255`, chain 1)
+- UnnamedContract (`0x4f4b716627d2ba0439327ce8b563b4443af47dbd`, chain 1)
+- UnnamedContract (`0x544dbfe87c3c308502371468b23386a9486c9680`, chain 1)
+- UnnamedContract (`0x579f8dfdaf8f180050c67b5d41342d686f2b28a6`, chain 1)
+- UnnamedContract (`0x6daf222ad565522bfc1d9ef3cc78751f6c007e6d`, chain 1)
+- UnnamedContract (`0x726c6ac8a53061e56afb2c890545348ba6f0df0e`, chain 1)
+- UnnamedContract (`0x7e54107731ec43e78da678dfa5fb6222ad036e03`, chain 1)
+- UnnamedContract (`0x849d0821b1d313b65f6ff152176f4b6a0af7aa56`, chain 1)
+- UnnamedContract (`0x985f187489954435ddf9571d45500184566e4b46`, chain 1)
+- UnnamedContract (`0xa669a743b065828682ee16109273f5cfef5e676d`, chain 1)
+- UnnamedContract (`0xbf4676f21a7889e0fd61bcdc9b98e60b01c1b36f`, chain 1)
+- UnnamedContract (`0xc2e2d8150ae64367cadc3d47e98253e54b5458c7`, chain 1)
+- UnnamedContract (`0xd9db270c1b5e3bd161e8c8503c55ceabee709552`, chain 1)
+- UnnamedContract (`0x14778860e937f509e651192a90589de711fb88a9`, chain 10)
+- UnnamedContract (`0x14778860e937f509e651192a90589de711fb88a9`, chain 56)
+- UnnamedContract (`0x9a9d5a29206dde4f70825032df32333de5f63921`, chain 56)
+- UnnamedContract (`0x14778860e937f509e651192a90589de711fb88a9`, chain 8453)
+- UnnamedContract (`0x9a9d5a29206dde4f70825032df32333de5f63921`, chain 8453)
+- AddressManager (`0x19b5804b88f10262a55ac731f28a3bbc4209853a`, chain 1)
+- CyberToken (`0x14778860e937f509e651192a90589de711fb88a9`, chain 1)
+- CyberTokenAdapter (`0xcb07992de144bdee56fdb66fff2454b43243b052`, chain 1)
+- CyberTokenController (`0x9a9d5a29206dde4f70825032df32333de5f63921`, chain 10)
+- DataAvailabilityChallenge (`0x0d93eaa86eb6948b977857750a5512bef6b05c51`, chain 1)
+- DisputeGameFactory (`0xb79cf113e524043b3ef9bf7861a05900bb3649a3`, chain 1)
+- GnosisSafeProxy (`0xc2259e7fb719411f97abdcdf449f6ba3b9d75398`, chain 1)
+- GnosisSafeProxyFactory (`0xa6b71e26c5e0845f74c812102ca7114b6a896ab2`, chain 1)
+- L1ERC721Bridge (`0x1234c7a75f40551fce5aff1d58efd72f2ee2afb1`, chain 1)
+- L2OutputOracle (`0x93e1c0d8ef27930130fb809ce18ca681a8c32f85`, chain 1)
+- MIPS (`0x0048defca9f0da952cfd1ae9f8e962937d3e4143`, chain 1)
+- OptimismPortal (`0xacfd93b4887cef4f05cf3440d150d2ce97339142`, chain 1)
+- PreimageOracle (`0x0747ef2570e3dbf65f0a12b371f19ca4a66a8dde`, chain 1)
+- Proxy (`0x1aec4c3be47c30d0befa7514cf9d99eac596959d`, chain 1)
+- Proxy (`0x1d59bc9fce6b8e2b1bf86d4777289ffd83d24c99`, chain 1)
+- Proxy (`0x51a00470eb50d758ecff3b96db0bf4a8e86268f4`, chain 1)
+- Proxy (`0x588dad44201885ff23068f1142e303d52d103919`, chain 1)
+- Proxy (`0x5d1f4bbaf6d484fa9d5d9705f92de6063bff6055`, chain 1)
+- Proxy (`0xa1780b58a75816f69ac34d606486d98824d41a73`, chain 1)
+- ResolvedDelegateProxy (`0x3c01ebf22e9c111528c1e027d68944edab08dfc9`, chain 1)
+- TimelockController (`0x81759adbf5520ad94da10991dfa29ff147d3337b`, chain 1)
 
 ## Contract Surface Quality
 
@@ -144,37 +144,37 @@ Removals (removed from original): none
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AddressManager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234830 | `0x19b580...09853a` | ⚠️ Unaudited |
-| Create2Deployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x9b2092...c67798` | ⚠️ Unaudited |
-| CyberToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234829 | `0x147788...fb88a9` | ⚠️ Unaudited |
-| CyberTokenAdapter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234846 | `0xcb0799...43b052` | ⚠️ Unaudited |
-| CyberTokenController | unknown | project_anchor | own_supporting | 0 | optimism | unit-234848 | `0x9a9d5a...f63921` | ⚠️ Unaudited |
-| CyberVesting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb2bbfc...ef57d0` | ⚠️ Unaudited |
-| DataAvailabilityChallenge | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234825 | `0x0d93ea...b05c51` | ⚠️ Unaudited |
-| DisputeGameFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234844 | `0xb79cf1...3649a3` | ⚠️ Unaudited |
-| Executor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2d0349...e57eb3` | ⚠️ Unaudited |
-| ExecutorFeeLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8d6023...34c461` | ⚠️ Unaudited |
-| FaultDisputeGame | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x96769a...d3bbcc` | ⚠️ Unaudited |
-| GnosisSafeProxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-234859 | 2 deployments: ethereum `0xc2259e...d75398`; ethereum `0xd9db27...709552` | ⚠️ Unaudited |
-| GnosisSafeProxyFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234842 | `0xa6b71e...896ab2` | ⚠️ Unaudited |
-| L1ERC721Bridge | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234827 | `0x1234c7...e2afb1` | ⚠️ Unaudited |
-| L1StandardBridge | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234823 | `0x01b46e...d87997` | ⚠️ Unaudited |
-| L2OutputOracle | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234839 | `0x93e1c0...c32f85` | ⚠️ Unaudited |
-| MerkleDistributorWithDeadline | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xb2bbfc...ef57d0` | ⚠️ Unaudited |
-| MIPS | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234822 | `0x0048de...3e4143` | ⚠️ Unaudited |
-| OptimismPortal | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234843 | `0xacfd93...339142` | ⚠️ Unaudited |
-| PermissionedDisputeGame | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfe42cc...f36b0c` | ⚠️ Unaudited |
-| PreimageOracle | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234824 | `0x0747ef...6a8dde` | ⚠️ Unaudited |
-| Proxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-234853 | 2 deployments: ethereum `0x1aec4c...96959d`; ethereum `0x579f8d...2b28a6` | ⚠️ Unaudited |
-| Proxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-234861 | `0x1d59bc...d24c99` | ⚠️ Unaudited |
-| Proxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-234860 | `0x51a004...6268f4` | ⚠️ Unaudited |
-| Proxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-234854 | 2 deployments: ethereum `0x588dad...103919`; ethereum `0x6daf22...007e6d` | ⚠️ Unaudited |
-| Proxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-234855 | `0x5d1f4b...ff6055` | ⚠️ Unaudited |
-| Proxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-234856 | 2 deployments: ethereum `0xa1780b...d41a73`; ethereum `0xc2e2d8...5458c7` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4a7228...259be3` | ⚠️ Unaudited |
-| ResolvedDelegateProxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-234858 | `0x3c01eb...08dfc9` | ⚠️ Unaudited |
-| TimelockController | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234837 | `0x81759a...d3337b` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xa4ccfb...8199f2` | ⚠️ Unaudited |
+| AddressManager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234830 | `0x19b5804b88f10262a55ac731f28a3bbc4209853a` | ⚠️ Unaudited |
+| Create2Deployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x9b20927a5dbf71d0539d48173c5f5b342bc67798` | ⚠️ Unaudited |
+| CyberToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234829 | `0x14778860e937f509e651192a90589de711fb88a9` | ⚠️ Unaudited |
+| CyberTokenAdapter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234846 | `0xcb07992de144bdee56fdb66fff2454b43243b052` | ⚠️ Unaudited |
+| CyberTokenController | unknown | project_anchor | own_supporting | 0 | optimism | unit-234848 | `0x9a9d5a29206dde4f70825032df32333de5f63921` | ⚠️ Unaudited |
+| CyberVesting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb2bbfc07948fedeb5935316203c33ce70bef57d0` | ⚠️ Unaudited |
+| DataAvailabilityChallenge | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234825 | `0x0d93eaa86eb6948b977857750a5512bef6b05c51` | ⚠️ Unaudited |
+| DisputeGameFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234844 | `0xb79cf113e524043b3ef9bf7861a05900bb3649a3` | ⚠️ Unaudited |
+| Executor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2d034969c3a31f16ae3540c802facdcacfe57eb3` | ⚠️ Unaudited |
+| ExecutorFeeLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8d6023c0d13f2c527818177a913fe7632434c461` | ⚠️ Unaudited |
+| FaultDisputeGame | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x96769a472f1d8e3d2719cc09cf4b4667e8d3bbcc` | ⚠️ Unaudited |
+| GnosisSafeProxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-234859 | 2 deployments: ethereum `0xc2259e7fb719411f97abdcdf449f6ba3b9d75398`; ethereum `0xd9db270c1b5e3bd161e8c8503c55ceabee709552` | ⚠️ Unaudited |
+| GnosisSafeProxyFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234842 | `0xa6b71e26c5e0845f74c812102ca7114b6a896ab2` | ⚠️ Unaudited |
+| L1ERC721Bridge | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234827 | `0x1234c7a75f40551fce5aff1d58efd72f2ee2afb1` | ⚠️ Unaudited |
+| L1StandardBridge | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234823 | `0x01b46e02fce5fc0731076711affe73beecd87997` | ⚠️ Unaudited |
+| L2OutputOracle | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234839 | `0x93e1c0d8ef27930130fb809ce18ca681a8c32f85` | ⚠️ Unaudited |
+| MerkleDistributorWithDeadline | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xb2bbfc07948fedeb5935316203c33ce70bef57d0` | ⚠️ Unaudited |
+| MIPS | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234822 | `0x0048defca9f0da952cfd1ae9f8e962937d3e4143` | ⚠️ Unaudited |
+| OptimismPortal | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234843 | `0xacfd93b4887cef4f05cf3440d150d2ce97339142` | ⚠️ Unaudited |
+| PermissionedDisputeGame | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfe42cc6ac1f47d1b343a631a31b6d242dbf36b0c` | ⚠️ Unaudited |
+| PreimageOracle | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234824 | `0x0747ef2570e3dbf65f0a12b371f19ca4a66a8dde` | ⚠️ Unaudited |
+| Proxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-234853 | 2 deployments: ethereum `0x1aec4c3be47c30d0befa7514cf9d99eac596959d`; ethereum `0x579f8dfdaf8f180050c67b5d41342d686f2b28a6` | ⚠️ Unaudited |
+| Proxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-234861 | `0x1d59bc9fce6b8e2b1bf86d4777289ffd83d24c99` | ⚠️ Unaudited |
+| Proxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-234860 | `0x51a00470eb50d758ecff3b96db0bf4a8e86268f4` | ⚠️ Unaudited |
+| Proxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-234854 | 2 deployments: ethereum `0x588dad44201885ff23068f1142e303d52d103919`; ethereum `0x6daf222ad565522bfc1d9ef3cc78751f6c007e6d` | ⚠️ Unaudited |
+| Proxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-234855 | `0x5d1f4bbaf6d484fa9d5d9705f92de6063bff6055` | ⚠️ Unaudited |
+| Proxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-234856 | 2 deployments: ethereum `0xa1780b58a75816f69ac34d606486d98824d41a73`; ethereum `0xc2e2d8150ae64367cadc3d47e98253e54b5458c7` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4a7228cb5bd8f811490bf5af6ec4b50740259be3` | ⚠️ Unaudited |
+| ResolvedDelegateProxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-234858 | `0x3c01ebf22e9c111528c1e027d68944edab08dfc9` | ⚠️ Unaudited |
+| TimelockController | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234837 | `0x81759adbf5520ad94da10991dfa29ff147d3337b` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xa4ccfb0f513e9886743353fcaf6d63bf578199f2` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -194,24 +194,24 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234826 | `0x10e34e...161b49` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234828 | `0x12a580...55b255` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3efe22...4b77e2` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234832 | `0x4f4b71...f47dbd` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x522d3a...d02f2b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234833 | `0x544dbf...6c9680` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234835 | `0x726c6a...f0df0e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234836 | `0x7e5410...036e03` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234838 | `0x849d08...f7aa56` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234840 | `0x985f18...6e4b46` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9a9d5a...f63921` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234841 | `0xa669a7...5e676d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234845 | `0xbf4676...c1b36f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-234847 | `0x147788...fb88a9` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-234849 | `0x147788...fb88a9` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-234850 | `0x9a9d5a...f63921` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-234851 | `0x147788...fb88a9` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-234852 | `0x9a9d5a...f63921` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234826 | `0x10e34efe14e4d270c0f77bf1af01b6c832161b49` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234828 | `0x12a580c05466eefb2c467c6b115844cdaf55b255` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3efe22fa52f6789ddfc263cec5bcf435b14b77e2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234832 | `0x4f4b716627d2ba0439327ce8b563b4443af47dbd` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x522d3a9c2bc14ce1c4d210ed41ab239fded02f2b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234833 | `0x544dbfe87c3c308502371468b23386a9486c9680` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234835 | `0x726c6ac8a53061e56afb2c890545348ba6f0df0e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234836 | `0x7e54107731ec43e78da678dfa5fb6222ad036e03` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234838 | `0x849d0821b1d313b65f6ff152176f4b6a0af7aa56` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234840 | `0x985f187489954435ddf9571d45500184566e4b46` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9a9d5a29206dde4f70825032df32333de5f63921` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234841 | `0xa669a743b065828682ee16109273f5cfef5e676d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234845 | `0xbf4676f21a7889e0fd61bcdc9b98e60b01c1b36f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-234847 | `0x14778860e937f509e651192a90589de711fb88a9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-234849 | `0x14778860e937f509e651192a90589de711fb88a9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-234850 | `0x9a9d5a29206dde4f70825032df32333de5f63921` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-234851 | `0x14778860e937f509e651192a90589de711fb88a9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-234852 | `0x9a9d5a29206dde4f70825032df32333de5f63921` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -230,20 +230,20 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x19b580...09853a` | AddressManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x147788...fb88a9` | CyberToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xcb0799...43b052` | CyberTokenAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | `0x9a9d5a...f63921` | CyberTokenController | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x0d93ea...b05c51` | DataAvailabilityChallenge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xb79cf1...3649a3` | DisputeGameFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xa6b71e...896ab2` | GnosisSafeProxyFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x1234c7...e2afb1` | L1ERC721Bridge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x01b46e...d87997` | L1StandardBridge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x93e1c0...c32f85` | L2OutputOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x0048de...3e4143` | MIPS | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xacfd93...339142` | OptimismPortal | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x0747ef...6a8dde` | PreimageOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x3c01eb...08dfc9` | ResolvedDelegateProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x19b5804b88f10262a55ac731f28a3bbc4209853a` | AddressManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x14778860e937f509e651192a90589de711fb88a9` | CyberToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xcb07992de144bdee56fdb66fff2454b43243b052` | CyberTokenAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x9a9d5a29206dde4f70825032df32333de5f63921` | CyberTokenController | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x0d93eaa86eb6948b977857750a5512bef6b05c51` | DataAvailabilityChallenge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xb79cf113e524043b3ef9bf7861a05900bb3649a3` | DisputeGameFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xa6b71e26c5e0845f74c812102ca7114b6a896ab2` | GnosisSafeProxyFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x1234c7a75f40551fce5aff1d58efd72f2ee2afb1` | L1ERC721Bridge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x01b46e02fce5fc0731076711affe73beecd87997` | L1StandardBridge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x93e1c0d8ef27930130fb809ce18ca681a8c32f85` | L2OutputOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x0048defca9f0da952cfd1ae9f8e962937d3e4143` | MIPS | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xacfd93b4887cef4f05cf3440d150d2ce97339142` | OptimismPortal | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x0747ef2570e3dbf65f0a12b371f19ca4a66a8dde` | PreimageOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x3c01ebf22e9c111528c1e027d68944edab08dfc9` | ResolvedDelegateProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -68,9 +68,9 @@ Total inherited audits: 8. Inherited coverage reflects forked/shared code audite
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Router | adapter | ethereum | n/a | [`0x80226f...146f7d`](./contracts/ethereum-1/0x80226fc0ee2b096224eeac085bb9a8cba1146f7d/) | ⚠️ Unaudited |
-| TokenAdminRegistry | registry | ethereum | n/a | [`0xb22764...c05cb6`](./contracts/ethereum-1/0xb22764f98dd05c789929716d677382df22c05cb6/) | ⚠️ Unaudited |
-| TokenPoolFactory | registry | ethereum | n/a | [`0x17d8a4...28876e`](./contracts/ethereum-1/0x17d8a409fe2cef2d3808bcb61f14abeffc28876e/) | ⚠️ Unaudited |
+| Router | adapter | ethereum | n/a | [`0x80226fc0ee2b096224eeac085bb9a8cba1146f7d`](./contracts/ethereum-1/0x80226fc0ee2b096224eeac085bb9a8cba1146f7d/) | ⚠️ Unaudited |
+| TokenAdminRegistry | registry | ethereum | n/a | [`0xb22764f98dd05c789929716d677382df22c05cb6`](./contracts/ethereum-1/0xb22764f98dd05c789929716d677382df22c05cb6/) | ⚠️ Unaudited |
+| TokenPoolFactory | registry | ethereum | n/a | [`0x17d8a409fe2cef2d3808bcb61f14abeffc28876e`](./contracts/ethereum-1/0x17d8a409fe2cef2d3808bcb61f14abeffc28876e/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -90,7 +90,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x4e59b4...b4956c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4e59b44847b379578588920ca78fbf26c0b4956c` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -116,9 +116,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x80226f...146f7d`](./contracts/ethereum-1/0x80226fc0ee2b096224eeac085bb9a8cba1146f7d/) | Router | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xb22764...c05cb6`](./contracts/ethereum-1/0xb22764f98dd05c789929716d677382df22c05cb6/) | TokenAdminRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x17d8a4...28876e`](./contracts/ethereum-1/0x17d8a409fe2cef2d3808bcb61f14abeffc28876e/) | TokenPoolFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x80226fc0ee2b096224eeac085bb9a8cba1146f7d`](./contracts/ethereum-1/0x80226fc0ee2b096224eeac085bb9a8cba1146f7d/) | Router | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb22764f98dd05c789929716d677382df22c05cb6`](./contracts/ethereum-1/0xb22764f98dd05c789929716d677382df22c05cb6/) | TokenAdminRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x17d8a409fe2cef2d3808bcb61f14abeffc28876e`](./contracts/ethereum-1/0x17d8a409fe2cef2d3808bcb61f14abeffc28876e/) | TokenPoolFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

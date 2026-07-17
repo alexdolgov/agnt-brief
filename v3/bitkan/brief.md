@@ -89,7 +89,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| KanCoin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-126790 | `0x141043...0f8f4a` | ⚠️ Unaudited |
+| KanCoin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-126790 | `0x1410434b0346f5be678d0fb554e5c7ab620f8f4a` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

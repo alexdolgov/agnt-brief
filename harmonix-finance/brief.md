@@ -61,168 +61,168 @@ The protocol comprises 6 functional families. Its contracts share 3 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| FundContract | unknown | hyperliquid | n/a | 6 deployments: hyperliquid [`0x02513f...c2db7f`](./contracts/hyperliquid-999/0x02513f514c38b685fbd05b87750d3f05c3c2db7f/); hyperliquid `0x74bd05...e6f286`; hyperliquid `0x7a428b...6e6341`; hyperliquid `0x8c03fc...e01dce`; hyperliquid `0xe7ac6c...e9227c`; hyperliquid `0xed76bd...99ba97` | ✅ Audited |
-| FundContract | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x1108fe...47be55`](./contracts/hyperliquid-999/0x1108fe54384c5c4ade2d25e420303e08c047be55/); hyperliquid `0xfde5b0...8d725c` | ✅ Audited |
-| FundContract | unknown | hyperliquid | n/a | 3 deployments: hyperliquid [`0x2aaa1e...3c62c3`](./contracts/hyperliquid-999/0x2aaa1ee7d6a457d67a95ace8d5d05b33a73c62c3/); hyperliquid `0xb8e91f...843064`; hyperliquid `0xe82152...8413c1` | ✅ Audited |
-| FundContract | unknown | hyperliquid | n/a | 4 deployments: hyperliquid [`0x3e79f3...f8cc41`](./contracts/hyperliquid-999/0x3e79f3b6d5c9d8299c54ebbe2814bb563bf8cc41/); hyperliquid `0x5b85ac...0d3b0a`; hyperliquid `0xb3f282...12cab7`; hyperliquid `0xba0557...b8863b` | ✅ Audited |
-| FundContract | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x55a463...cadcdd`](./contracts/hyperliquid-999/0x55a4639f748ecef62bc43afcf9e51729e8cadcdd/); hyperliquid `0xd54fae...f5e7b4` | ✅ Audited |
-| KelpRestakingDeltaNeutralVault | unknown | ethereum | n/a | [`0x09f2b4...4429df`](./contracts/ethereum-1/0x09f2b45a6677858f016ebef1e8f141d6944429df/) | ✅ Audited |
-| KelpRestakingDeltaNeutralVault | unknown | arbitrum | n/a | [`0x3c610c...779058`](./contracts/arbitrum-42161/0x3c610cde6d4c2a379f0f461d7ed05ed709779058/) | ✅ Audited |
-| KelpRestakingDeltaNeutralVault | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x554ef8...815d95`](./contracts/arbitrum-42161/0x554ef8e21832ffc5779f212512d9ab96a7815d95/); arbitrum `0x9e2d37...2ea13a` | ✅ Audited |
-| KelpRestakingDeltaNeutralVault | unknown | arbitrum | n/a | [`0xa50169...116b20`](./contracts/arbitrum-42161/0xa50169bdfd3b7aa14bd411891c1aba40dc116b20/) | ✅ Audited |
-| KelpRestakingDeltaNeutralVault | unknown | arbitrum | n/a | [`0xbbff0a...07f855`](./contracts/arbitrum-42161/0xbbff0affba8426608d2b319f6a2cc58bbf07f855/) | ✅ Audited |
-| KelpRestakingDeltaNeutralVault | unknown | arbitrum | n/a | [`0xfadf54...d2ac61`](./contracts/arbitrum-42161/0xfadf54397db24571499895f37a37b967e7d2ac61/) | ✅ Audited |
+| FundContract | unknown | hyperliquid | n/a | 6 deployments: hyperliquid [`0x02513f514c38b685fbd05b87750d3f05c3c2db7f`](./contracts/hyperliquid-999/0x02513f514c38b685fbd05b87750d3f05c3c2db7f/); hyperliquid `0x74bd05b661ba04936fc2e70adcf23219ade6f286`; hyperliquid `0x7a428b081d1fafe83c189bf0b871cc06c86e6341`; hyperliquid `0x8c03fcefaf24e8fecfbde393a35b7167d0e01dce`; hyperliquid `0xe7ac6c80d1697d5decf2e652ed69af97c1e9227c`; hyperliquid `0xed76bde533e8f5f1fdd6447525127e841099ba97` | ✅ Audited |
+| FundContract | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x1108fe54384c5c4ade2d25e420303e08c047be55`](./contracts/hyperliquid-999/0x1108fe54384c5c4ade2d25e420303e08c047be55/); hyperliquid `0xfde5b0626fc80e36885e2fa9cd5ad9d7768d725c` | ✅ Audited |
+| FundContract | unknown | hyperliquid | n/a | 3 deployments: hyperliquid [`0x2aaa1ee7d6a457d67a95ace8d5d05b33a73c62c3`](./contracts/hyperliquid-999/0x2aaa1ee7d6a457d67a95ace8d5d05b33a73c62c3/); hyperliquid `0xb8e91f280bc3840d6373d0e2d1fa516ad6843064`; hyperliquid `0xe82152ed3ea72ede0f1e40d00aa9dece6e8413c1` | ✅ Audited |
+| FundContract | unknown | hyperliquid | n/a | 4 deployments: hyperliquid [`0x3e79f3b6d5c9d8299c54ebbe2814bb563bf8cc41`](./contracts/hyperliquid-999/0x3e79f3b6d5c9d8299c54ebbe2814bb563bf8cc41/); hyperliquid `0x5b85ac3b24d17c22b361d963d2fe08e98e0d3b0a`; hyperliquid `0xb3f282f0e28c9907b534043a6e85a9745b12cab7`; hyperliquid `0xba05571ed93864b6fd23884027405530cdb8863b` | ✅ Audited |
+| FundContract | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x55a4639f748ecef62bc43afcf9e51729e8cadcdd`](./contracts/hyperliquid-999/0x55a4639f748ecef62bc43afcf9e51729e8cadcdd/); hyperliquid `0xd54faeb83805be322f834909d076a2b973f5e7b4` | ✅ Audited |
+| KelpRestakingDeltaNeutralVault | unknown | ethereum | n/a | [`0x09f2b45a6677858f016ebef1e8f141d6944429df`](./contracts/ethereum-1/0x09f2b45a6677858f016ebef1e8f141d6944429df/) | ✅ Audited |
+| KelpRestakingDeltaNeutralVault | unknown | arbitrum | n/a | [`0x3c610cde6d4c2a379f0f461d7ed05ed709779058`](./contracts/arbitrum-42161/0x3c610cde6d4c2a379f0f461d7ed05ed709779058/) | ✅ Audited |
+| KelpRestakingDeltaNeutralVault | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x554ef8e21832ffc5779f212512d9ab96a7815d95`](./contracts/arbitrum-42161/0x554ef8e21832ffc5779f212512d9ab96a7815d95/); arbitrum `0x9e2d3710c5ef166cf9f48e577ff84a608c2ea13a` | ✅ Audited |
+| KelpRestakingDeltaNeutralVault | unknown | arbitrum | n/a | [`0xa50169bdfd3b7aa14bd411891c1aba40dc116b20`](./contracts/arbitrum-42161/0xa50169bdfd3b7aa14bd411891c1aba40dc116b20/) | ✅ Audited |
+| KelpRestakingDeltaNeutralVault | unknown | arbitrum | n/a | [`0xbbff0affba8426608d2b319f6a2cc58bbf07f855`](./contracts/arbitrum-42161/0xbbff0affba8426608d2b319f6a2cc58bbf07f855/) | ✅ Audited |
+| KelpRestakingDeltaNeutralVault | unknown | arbitrum | n/a | [`0xfadf54397db24571499895f37a37b967e7d2ac61`](./contracts/arbitrum-42161/0xfadf54397db24571499895f37a37b967e7d2ac61/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (146)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AccessManager | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x05a626...5e72f7`](./contracts/hyperliquid-999/0x05a626914c582bff59f0a1aac3a4540def5e72f7/); hyperliquid `0x41e146...22419c` | ⚠️ Unaudited |
-| AccessManager | governance | hyperliquid | n/a | 2 deployments: hyperliquid [`0x28257c...7d3808`](./contracts/hyperliquid-999/0x28257cd6b21519a281a90637462bf7956c7d3808/); hyperliquid `0x408e48...9bf97c` | ⚠️ Unaudited |
-| AssetVault | unknown | hyperliquid | n/a | 5 deployments: hyperliquid [`0x25b4dc...dbbdfb`](./contracts/hyperliquid-999/0x25b4dc5f96312c7083a58d80d8ecad6ecddbbdfb/); hyperliquid `0x31aaa5...3d77e1`; hyperliquid `0x77a1b9...8e81f5`; hyperliquid `0x7db7bc...71f166`; hyperliquid `0xee09a7...bd7cbe` | ⚠️ Unaudited |
-| ClaimReward | unknown | hyperliquid | n/a | 4 deployments: hyperliquid [`0x04b7b5...945e97`](./contracts/hyperliquid-999/0x04b7b5cb8c3b7f35fb604fcf92e0d3925c945e97/); hyperliquid `0xbef024...98fbc0`; hyperliquid `0xc3d0ed...b38889`; hyperliquid `0xe0a8d9...864045` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x057f4e...a310f8`](./contracts/hyperliquid-999/0x057f4eb91dfd050a59cb1ecba9cc759a1aa310f8/); hyperliquid `0x3d9148...dc1eaa` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x1357a7...03552a`](./contracts/hyperliquid-999/0x1357a71eab7bc50cd579dfa68935a920e203552a/); hyperliquid `0x69051e...c58518` | ⚠️ Unaudited |
-| ERC1967Proxy | proxy | hyperliquid | n/a | 2 deployments: hyperliquid [`0x1368ee...eebc42`](./contracts/hyperliquid-999/0x1368ee9d1212ae5b26ff166049220051a9eebc42/); hyperliquid `0xe4ba90...9268ea` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x24e1cd...188043`](./contracts/hyperliquid-999/0x24e1cd4081aff985cbd58ef639aea56cdb188043/); hyperliquid `0xf463c9...ddd986` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x276787...31b844`](./contracts/hyperliquid-999/0x2767870670a65913c3d877699bd72b0cec31b844/); hyperliquid `0xfaefcd...698722` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | 3 deployments: hyperliquid [`0x2ca5cf...d77291`](./contracts/hyperliquid-999/0x2ca5cf8ef7b35c2c7df4d7c204a58c6f16d77291/); hyperliquid `0x33a821...e2537f`; hyperliquid `0x4d9cb8...994032` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x2fef70...0c565c`](./contracts/hyperliquid-999/0x2fef70f905a0fd21fe2493acc1be5eef870c565c/); hyperliquid `0x8e40b4...a88fa8` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | [`0x307825...6f0a50`](./contracts/hyperliquid-999/0x30782559957f0853419c7021e91c83338a6f0a50/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x310484...4c7f42`](./contracts/hyperliquid-999/0x3104845028ab1a9670ae025874c12aaefe4c7f42/); hyperliquid `0xd040c6...de73b6` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x31b626...88cb5c`](./contracts/hyperliquid-999/0x31b626e0554da4fcaff9987dedc3ea3f3288cb5c/); hyperliquid `0x5533b7...19b87c` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x380c52...bde06e`](./contracts/hyperliquid-999/0x380c522064688b4c9b2375b0acdce4f7cfbde06e/); hyperliquid `0x586c80...4b2f0c` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x388238...462d7f`](./contracts/hyperliquid-999/0x388238bb8805a9a1412aee7abf5c23ac1e462d7f/); hyperliquid `0xdb0036...ad3bca` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x47b100...ce4a9f`](./contracts/hyperliquid-999/0x47b100d7f444405759e9b226f6cb1cdb8cce4a9f/); hyperliquid `0xde3524...ed215e` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | 3 deployments: hyperliquid [`0x59fddf...4e9736`](./contracts/hyperliquid-999/0x59fddf86d74b4c0c38033931a44814d9ff4e9736/); hyperliquid `0x5da664...a33268`; hyperliquid `0xeeb9c3...06e2c1` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x5bb6b9...c5ced0`](./contracts/hyperliquid-999/0x5bb6b9fcef8fb3d5db5dcf04bf53730069c5ced0/); hyperliquid `0x98870d...634205` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x6c17d3...039f17`](./contracts/hyperliquid-999/0x6c17d3b2dcd25dd779be50bd27f5dad2a1039f17/); hyperliquid `0x6d5eba...a33280` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x6e850b...fc824e`](./contracts/hyperliquid-999/0x6e850b15d6f6ac830b5791c0c7452901c1fc824e/); hyperliquid `0xe9552e...1a2366` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | 3 deployments: hyperliquid [`0x72dd37...290f29`](./contracts/hyperliquid-999/0x72dd37c3cda4537df0c77a23526a341d20290f29/); hyperliquid `0x9ff5cb...fa7ee6`; hyperliquid `0xf8c853...b166a3` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x79325d...fb7093`](./contracts/hyperliquid-999/0x79325d3c5567624903b2a49542a9ed3a21fb7093/); hyperliquid `0x81e31e...3e0ec8` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x7cee01...1bb021`](./contracts/hyperliquid-999/0x7cee0144f324b85bc0d6d19028dc030d161bb021/); hyperliquid `0x941e59...9a1b9e` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x7d0a42...3d6337`](./contracts/hyperliquid-999/0x7d0a4237e52875e7e3a8f029332b054c143d6337/); hyperliquid `0xf6808d...610051` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x83ff30...4e328e`](./contracts/hyperliquid-999/0x83ff304e86df2bb44847067b074f8218494e328e/); hyperliquid `0x99e38e...e18398` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x84a081...468537`](./contracts/hyperliquid-999/0x84a08190995ff4c2f839defd5272b2813f468537/); hyperliquid `0xb7bf0f...578c36` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x8ad875...7f2623`](./contracts/hyperliquid-999/0x8ad875d4fbb2365b7c67c397c574e32b297f2623/); hyperliquid `0x9a2b46...317a42` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0xa19140...0326f0`](./contracts/hyperliquid-999/0xa191407f1bc1a4454e9dd5a1ae277aac8d0326f0/); hyperliquid `0xeebbf3...9745ee` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0xabf874...1d62ac`](./contracts/hyperliquid-999/0xabf874c491569b3a6c2dec5b69dc5c5a121d62ac/); hyperliquid `0xaf74f3...e7e1b1` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0xacf32f...261588`](./contracts/hyperliquid-999/0xacf32fd95bd16e7a77f353583542eff40e261588/); hyperliquid `0xb2cda4...57d6cf` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0xb0820f...9fbc40`](./contracts/hyperliquid-999/0xb0820fd4c7517a2690a267941551bc3ded9fbc40/); hyperliquid `0xdc2338...ee8cf8` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0xb8f440...4d650d`](./contracts/hyperliquid-999/0xb8f44096442c1f1d9540accc0f3f6814524d650d/); hyperliquid `0xf5704a...9cab46` | ⚠️ Unaudited |
-| FundNavFeed | unknown | hyperliquid | n/a | 3 deployments: hyperliquid [`0x26493d...d67077`](./contracts/hyperliquid-999/0x26493d5d3121a7938f8835436d777b6d10d67077/); hyperliquid `0x3bed7e...c13643`; hyperliquid `0x9f39f5...8c289c` | ⚠️ Unaudited |
-| FundVault | unknown | hyperliquid | n/a | 3 deployments: hyperliquid [`0x55b71e...0e0cfe`](./contracts/hyperliquid-999/0x55b71eea81b3043b65e718d8b6e31a59090e0cfe/); hyperliquid `0xabe515...333535`; hyperliquid `0xb6335c...47ddb6` | ⚠️ Unaudited |
-| HaForDefiStrategy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x1f808f...c5d173`](./contracts/hyperliquid-999/0x1f808f9f518a31a7737026056f3c2f2bccc5d173/); hyperliquid `0x7f6fdd...81a93a` | ⚠️ Unaudited |
-| HaForDefiStrategy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x4c5754...43dc0c`](./contracts/hyperliquid-999/0x4c57541f4fcbd234a5ecf31cc38572cae943dc0c/); hyperliquid `0xe6d168...452f80` | ⚠️ Unaudited |
-| HaForwardDestinationStrategy | unknown | hyperliquid | n/a | 3 deployments: hyperliquid [`0x23be71...37c072`](./contracts/hyperliquid-999/0x23be7156c97e0d7413b35fca81ca236e8137c072/); hyperliquid `0x8ea4ff...3dd712`; hyperliquid `0xacde7a...38e0c1` | ⚠️ Unaudited |
-| HAR | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x391121...a2af18`](./contracts/hyperliquid-999/0x391121d817da42ed3434d281aedbbcc416a2af18/); hyperliquid `0xdceabc...f92744` | ⚠️ Unaudited |
-| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x02a1d5...f00520`](./contracts/hyperliquid-999/0x02a1d5fba537c7156f5374d2c740fab4bdf00520/); hyperliquid `0x9938db...32be1c` | ⚠️ Unaudited |
-| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x06adea...031def`](./contracts/hyperliquid-999/0x06adeaaa77a319a639bca0f36f54a6b4bf031def/); hyperliquid `0xa5b21f...32a3d0` | ⚠️ Unaudited |
-| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x0d4033...2cc429`](./contracts/hyperliquid-999/0x0d403355c2fc8bd4d0dca2e677d1f388882cc429/); hyperliquid `0xf25d52...eb4e80` | ⚠️ Unaudited |
-| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x1e1ca9...e4e602`](./contracts/hyperliquid-999/0x1e1ca9ea99a0c37e4e512dc96c4a770877e4e602/); hyperliquid `0x6f58cb...cb8571` | ⚠️ Unaudited |
-| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x28e0f1...111dfa`](./contracts/hyperliquid-999/0x28e0f14839cf8dbfae8a561b31d0518c35111dfa/); hyperliquid `0x9ff6ed...578a21` | ⚠️ Unaudited |
-| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x48898c...f35c94`](./contracts/hyperliquid-999/0x48898ca06d346b1cf6d3148e83840d7c43f35c94/); hyperliquid `0x884c96...372b15` | ⚠️ Unaudited |
-| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x4a06e9...5227a1`](./contracts/hyperliquid-999/0x4a06e9f5c819263c0f803a8a35f44280a15227a1/); hyperliquid `0xbbb6b5...0f16a6` | ⚠️ Unaudited |
-| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x56d782...1579e2`](./contracts/hyperliquid-999/0x56d782d4400fa82e14bfba9bd9e836b4d91579e2/); hyperliquid `0xcbf856...64bbe9` | ⚠️ Unaudited |
-| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x5979aa...3f49e2`](./contracts/hyperliquid-999/0x5979aa38e5bcaa2e0b4ba3795c530022103f49e2/); hyperliquid `0xc34a47...5935c8` | ⚠️ Unaudited |
-| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x5bd4dd...cd9b09`](./contracts/hyperliquid-999/0x5bd4ddaf9ad88a4881e4f364ba2e8c8123cd9b09/); hyperliquid `0xf414b6...b1ea15` | ⚠️ Unaudited |
-| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x605646...bc8fef`](./contracts/hyperliquid-999/0x6056469445b71867f8d6a6b483bd3b7be4bc8fef/); hyperliquid `0xfe05fa...6095d6` | ⚠️ Unaudited |
-| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x65b0a6...ae035f`](./contracts/hyperliquid-999/0x65b0a63fac21d15cc8c4b7a93972e1b1c6ae035f/); hyperliquid `0x99ced1...f10505` | ⚠️ Unaudited |
-| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x6fab94...bdf59b`](./contracts/hyperliquid-999/0x6fab94fb032dad8e53eb368116d6b72c0bbdf59b/); hyperliquid `0xf4e681...bd9d4d` | ⚠️ Unaudited |
-| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x7d852a...d4b40d`](./contracts/hyperliquid-999/0x7d852a046b7f47d9164d726a896c67249ad4b40d/); hyperliquid `0xaffbc8...77e8ce` | ⚠️ Unaudited |
-| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x95f283...6c6f97`](./contracts/hyperliquid-999/0x95f2836501530886afa793f08fefd193fc6c6f97/); hyperliquid `0xef84f7...c256f6` | ⚠️ Unaudited |
-| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0xae24f8...90b136`](./contracts/hyperliquid-999/0xae24f8222832c40edb6bbcdd20030aa79790b136/); hyperliquid `0xc8bdf4...2f8016` | ⚠️ Unaudited |
-| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0xbdf77a...80b5d5`](./contracts/hyperliquid-999/0xbdf77abf7c360600b6607fcba1562ec6ea80b5d5/); hyperliquid `0xc60719...364fa1` | ⚠️ Unaudited |
-| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0xf1c57e...0c6a65`](./contracts/hyperliquid-999/0xf1c57eea645d51d03dd02f025d6dc084690c6a65/); hyperliquid `0xfeda37...9b4d55` | ⚠️ Unaudited |
-| HaVaultReader | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x3a0b0e...436f52`](./contracts/hyperliquid-999/0x3a0b0e25becefcda10ac367f4f3dc33060436f52/); hyperliquid `0x8210b8...1bc4ec` | ⚠️ Unaudited |
-| HaVaultReader | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x66341e...046fe9`](./contracts/hyperliquid-999/0x66341e783529c0837ab16791e031e109d9046fe9/); hyperliquid `0x8bb3a6...e78473` | ⚠️ Unaudited |
-| HaVaultReader | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x76994f...988bdc`](./contracts/hyperliquid-999/0x76994facc865399b08a850e8c1d8a172a2988bdc/); hyperliquid `0xb95803...b35ddd` | ⚠️ Unaudited |
-| HaVaultReader | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0xb80235...6ba14c`](./contracts/hyperliquid-999/0xb80235f6f82031f2b9a5bf91c9de46e6b06ba14c/); hyperliquid `0xf37741...c4ee92` | ⚠️ Unaudited |
-| HyperCorePriceFeed | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x699704...c45dbb`](./contracts/hyperliquid-999/0x6997045d980098206e435d388e81719adfc45dbb/); hyperliquid `0xe19085...110eef` | ⚠️ Unaudited |
-| MultiVestingDistributorMock | operational_periphery | hyperliquid | n/a | [`0x30c9fc...a2111f`](./contracts/hyperliquid-999/0x30c9fc26028c3065e0bfd9b7ba1c7c9984a2111f/) | ⚠️ Unaudited |
-| MultiVestingDistributorMock | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x45de26...a27f0f`](./contracts/hyperliquid-999/0x45de263bea4587c22c9b21aa392f8e5c5ca27f0f/); hyperliquid `0x8d8c70...d4b24a` | ⚠️ Unaudited |
-| MultiVestingDistributorMock | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x7bc78c...ad335f`](./contracts/hyperliquid-999/0x7bc78ca95d1755db67d7dda3108f161c0ead335f/); hyperliquid `0x7ee84a...e912b6` | ⚠️ Unaudited |
-| NavAggregateModel | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x8e9e87...301d30`](./contracts/hyperliquid-999/0x8e9e8705a50ec4720b14d84e34af73421e301d30/); hyperliquid `0xa3f4f7...387514` | ⚠️ Unaudited |
-| PendleHedgeVault | unknown | arbitrum | n/a | 3 deployments: arbitrum [`0x0110bb...bfabe0`](./contracts/arbitrum-42161/0x0110bb8d3e530eb9a53f92fe848a06f2c5bfabe0/); arbitrum `0x561b08...9979fc`; arbitrum `0xc0fa1d...cb50ee` | ⚠️ Unaudited |
-| PoolFactory | unknown | ethereum | n/a | 2 deployments: ethereum [`0xc7c8cd...a9473b`](./contracts/ethereum-1/0xc7c8cdd1e9817fc98ad1b05cd3633c6471a9473b/); ethereum `0xe18567...c4a9c3` | ⚠️ Unaudited |
-| PoolFactory | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x727446...2e6285`](./contracts/arbitrum-42161/0x7274463bf93e0058481042cbd6e0cc73042e6285/); arbitrum `0x81302b...1b70c1` | ⚠️ Unaudited |
-| PriceFeed | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x389c28...991df8`](./contracts/hyperliquid-999/0x389c289413c195918647a1c827476848c1991df8/); hyperliquid `0xcd66bc...91ea65` | ⚠️ Unaudited |
-| ProxyAdmin | governance | hyperliquid | n/a | [`0x7c95d4...706ada`](./contracts/hyperliquid-999/0x7c95d4c96c410a6e7dedf4bc78eb93b916706ada/) | ⚠️ Unaudited |
-| ShareToken | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x581f83...4e79fc`](./contracts/hyperliquid-999/0x581f839f495625aea422b0103e6a7727e34e79fc/); hyperliquid `0xfa2f2f...9e0f5d` | ⚠️ Unaudited |
-| ShareToken | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x7c8516...288aee`](./contracts/hyperliquid-999/0x7c8516bfaa7c3390aff61fe511e2ccc3cf288aee/); hyperliquid `0xc70882...8e98c4` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | ethereum | n/a | 2 deployments: ethereum [`0xcf8be3...dbc820`](./contracts/ethereum-1/0xcf8be38f161db8241bbbdbab4231f9df62dbc820/); ethereum `0xe1a201...9db69b` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 12 deployments: hyperliquid [`0x053a18...f70faa`](./contracts/hyperliquid-999/0x053a18d869a3d5927594cbc270107caab6f70faa/); hyperliquid `0x069b24...6dd472`; hyperliquid `0x2cbce1...b38dba`; hyperliquid `0x56edc8...e41898`; hyperliquid `0x6c8023...c3497b`; hyperliquid `0x807c47...b22c5b`; hyperliquid `0x8276e1...b386c9`; hyperliquid `0x933e97...65d270`; hyperliquid `0xa6ccd0...6cfe2c`; hyperliquid `0xc13a77...18b799`; hyperliquid `0xd031ad...888cd4`; hyperliquid `0xd8e0aa...720da7` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x05e3b8...828f04`](./contracts/hyperliquid-999/0x05e3b82444edecdc64b556c938f4ae623a828f04/); hyperliquid `0xa56c9b...19687d` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x0aa13b...e53180`](./contracts/hyperliquid-999/0x0aa13b638c60212ce3947ead9c38498c01e53180/); hyperliquid `0x15d21b...b176b2` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 3 deployments: hyperliquid [`0x0c7612...c089c4`](./contracts/hyperliquid-999/0x0c7612d7b3c6f5775966ae291ffe0d4537c089c4/); hyperliquid `0xa4ceed...1f67a7`; hyperliquid `0xe0446f...405613` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x10f4a5...8fbe0d`](./contracts/hyperliquid-999/0x10f4a52b66ead12fec74d97293ff491dbb8fbe0d/); hyperliquid `0xef447e...babb3b` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x16ab14...99d754`](./contracts/hyperliquid-999/0x16ab14c6deb158b3d8f3846c702d65309599d754/); hyperliquid `0xf58fbd...bdb0d0` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x16cde7...39ad82`](./contracts/hyperliquid-999/0x16cde735538e935e68b2ddc7c0d657acfe39ad82/); hyperliquid `0xd4e0bb...b0ef28` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x176458...4aab17`](./contracts/hyperliquid-999/0x17645878a354eed54ee238dccdf72cce224aab17/); hyperliquid `0xbbb276...5a8fb9` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 4 deployments: hyperliquid [`0x179348...bb22c6`](./contracts/hyperliquid-999/0x179348034c7fa35d2d5a0149c17cede52fbb22c6/); hyperliquid `0xa45541...dfb899`; hyperliquid `0xcca4cf...30f8f5`; hyperliquid `0xebf181...2249d8` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 4 deployments: hyperliquid [`0x19de72...e3d344`](./contracts/hyperliquid-999/0x19de72a5f174c92703d92f1fbd1afc6df1e3d344/); hyperliquid `0x6f62bb...0b5d8d`; hyperliquid `0x74a055...a3ca90`; hyperliquid `0x998103...f48867` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 5 deployments: hyperliquid [`0x206e19...15da40`](./contracts/hyperliquid-999/0x206e193fafdf881e709cca50308552a7f615da40/); hyperliquid `0x3ed61e...edf014`; hyperliquid `0x585740...dfa1dd`; hyperliquid `0x6bc7a3...88525b`; hyperliquid `0xcc33ab...b58223` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x2dd5f1...41607f`](./contracts/hyperliquid-999/0x2dd5f122bde4313d9e44b434589d46326141607f/); hyperliquid `0xfec8f5...a17da8` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 3 deployments: hyperliquid [`0x39a7d3...6e99da`](./contracts/hyperliquid-999/0x39a7d3dff6d2e31b4a11ca8c8969b619fe6e99da/); hyperliquid `0x82d8a0...4a799d`; hyperliquid `0x8bf477...c2d4eb` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 5 deployments: hyperliquid [`0x3c298b...6eba5d`](./contracts/hyperliquid-999/0x3c298b0d324fe16db73fe5e74023335bbd6eba5d/); hyperliquid `0x4b4532...1a9630`; hyperliquid `0x76b009...4c69d6`; hyperliquid `0xe67fd0...fa9c5a`; hyperliquid `0xef16af...320d1f` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 9 deployments: hyperliquid [`0x3c5374...4493fd`](./contracts/hyperliquid-999/0x3c5374a8efceb94c3e1176afc0bf89b4f14493fd/); hyperliquid `0x48e94d...ea9b82`; hyperliquid `0x95b08e...3f9dd1`; hyperliquid `0x9e780b...490dba`; hyperliquid `0xa855f9...43fa58`; hyperliquid `0xb618a0...7fe3e7`; hyperliquid `0xcbd7d9...045bc4`; hyperliquid `0xd844fb...b3fbe8`; hyperliquid `0xe695af...a9445f` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x3d5556...e90b11`](./contracts/hyperliquid-999/0x3d5556eadd436630b1ad6f52ca0259431ee90b11/); hyperliquid `0x9f255e...b6a17e` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 4 deployments: hyperliquid [`0x49005d...6f5816`](./contracts/hyperliquid-999/0x49005d40b44de5f886b57f1c3f307b62a76f5816/); hyperliquid `0x9128a2...c6a3d6`; hyperliquid `0xa5b788...ec5583`; hyperliquid `0xa950a8...2aa037` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x496d50...6f2f40`](./contracts/hyperliquid-999/0x496d50ac1b149e0af4116ab021153c2a646f2f40/); hyperliquid `0x49be29...4eb8d8` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x4c81e8...2792ca`](./contracts/hyperliquid-999/0x4c81e8a35ad2b76c142016cfab8356a4672792ca/); hyperliquid `0xcbb9e4...b43656` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x4dc4ad...ce3b3b`](./contracts/hyperliquid-999/0x4dc4ad1cde51c4a1e4a5b30a87c9c302e9ce3b3b/); hyperliquid `0x74aa6a...2bab4a` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x509110...270ca4`](./contracts/hyperliquid-999/0x509110583cd97c7900cdf1e98f0b42fe53270ca4/); hyperliquid `0xbb9655...462325` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x543303...dadac4`](./contracts/hyperliquid-999/0x543303266113b64d03ec17b7ec3829f8cddadac4/); hyperliquid `0x8a59df...845a4d` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 3 deployments: hyperliquid [`0x5736fd...4bf3a5`](./contracts/hyperliquid-999/0x5736fd4c0bc99307391272c0a2aa31686b4bf3a5/); hyperliquid `0xde38ed...d218ff`; hyperliquid `0xeec3ef...30799e` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x5df933...73b451`](./contracts/hyperliquid-999/0x5df93330c2a799cb77d62f61842271c28e73b451/); hyperliquid `0x8085c6...0f5e28` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 3 deployments: hyperliquid [`0x61d077...77b0b5`](./contracts/hyperliquid-999/0x61d077a516dcbebf56121b6c0a9851254677b0b5/); hyperliquid `0xee6286...63d9f6`; hyperliquid `0xf768d0...f0f2d0` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x65d389...aa5d34`](./contracts/hyperliquid-999/0x65d389daea19fc9a704b17a81f953d70ceaa5d34/); hyperliquid `0xe4d49e...d7ccb6` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x70725d...857f1a`](./contracts/hyperliquid-999/0x70725df576badb27dcb8e5235be6376b6b857f1a/); hyperliquid `0xcafd6e...9990fc` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x74487e...6fa10f`](./contracts/hyperliquid-999/0x74487ea81aa60c772b9d7dbe151dfd8d1f6fa10f/); hyperliquid `0xf377f2...52e6c1` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x7d6659...50ecca`](./contracts/hyperliquid-999/0x7d66591a4eb57d25ad68f303d3c223744250ecca/); hyperliquid `0xf05a94...1b58c0` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x8576c0...53d233`](./contracts/hyperliquid-999/0x8576c0b29dc0105fcb97a3b40dab6514da53d233/); hyperliquid `0xeff352...7d8aad` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x94c000...2a1d4a`](./contracts/hyperliquid-999/0x94c000e8164a28e5a80d53c0bc2b266fca2a1d4a/); hyperliquid `0xdc7ad6...60d135` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x9fdb47...c92d8d`](./contracts/hyperliquid-999/0x9fdb47d4d3c2d64d8cb39ad5d23325755dc92d8d/); hyperliquid `0xbeb903...e891df` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0xcda710...5c1642`](./contracts/hyperliquid-999/0xcda71089bdc5c7d6eafafe304902629ed75c1642/); hyperliquid `0xd8fb7e...97b3bc` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x05427a...4db7c5`](./contracts/arbitrum-42161/0x05427aa001303115b14634673dd3ff53e94db7c5/); arbitrum `0x9efd0b...80253c` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x067610...f44aa2`](./contracts/arbitrum-42161/0x067610dde86ab8aea2edb887b77ad928f3f44aa2/); arbitrum `0x1ef01c...dc31a8` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x0866af...11334e`](./contracts/arbitrum-42161/0x0866af9ff18072ee16d059082c7ea6170a11334e/); arbitrum `0x8005bf...191e37` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x09873c...44cdf1`](./contracts/arbitrum-42161/0x09873caead90d60cd84c9543e0d5cd772c44cdf1/); arbitrum `0x2cbb40...268177` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x13f093...8f3a4c`](./contracts/arbitrum-42161/0x13f093db3dc780a45994a4ac46182aa0978f3a4c/); arbitrum `0xefaebf...82aafb` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x1453b9...cca767`](./contracts/arbitrum-42161/0x1453b9642875b4df6e4867ee2782d92859cca767/); arbitrum `0x1d47ca...8e3688` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x14d9ed...a5e1df`](./contracts/arbitrum-42161/0x14d9edb7b3bf083cfda4e3c40352346df4a5e1df/); arbitrum `0x4ff8d6...abbba7` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x1ea6bf...07ae7f`](./contracts/arbitrum-42161/0x1ea6bfa5d0a350d3b9e2e22b213df5b79d07ae7f/); arbitrum `0x236a88...cdf331` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x27c6cf...384499`](./contracts/arbitrum-42161/0x27c6cf5e57b331ad8ffca727984639672e384499/); arbitrum `0x917d63...d3a538` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 3 deployments: arbitrum [`0x299ebc...a200f1`](./contracts/arbitrum-42161/0x299ebcd583507d5d5ddd61fd5cc51d831da200f1/); arbitrum `0x8f1cb3...de2b87`; arbitrum `0xee1607...51702a` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x3363a8...420135`](./contracts/arbitrum-42161/0x3363a85c31cf13a96802e2935724232767420135/); arbitrum `0xc5b144...3eb261` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x3447c5...023ab4`](./contracts/arbitrum-42161/0x3447c595061dd3c7a3a42f99917cefd44d023ab4/); arbitrum `0xc0e2b9...72e5aa` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x346c29...22e322`](./contracts/arbitrum-42161/0x346c29a4d72356f9737c30be275e36215a22e322/); arbitrum `0x3c983b...6fc407` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 3 deployments: arbitrum [`0x3b584a...48affd`](./contracts/arbitrum-42161/0x3b584a4119969984355a5ec05070b3c72948affd/); arbitrum `0x59f3f6...3679af`; arbitrum `0xc2b64d...efe6dd` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x3cfd18...d2bcf4`](./contracts/arbitrum-42161/0x3cfd185151d2ccacbaf72191de142ac300d2bcf4/); arbitrum `0x72b054...179b9d` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x488440...7efce1`](./contracts/arbitrum-42161/0x488440b63558d2fc85b3283062af289ea97efce1/); arbitrum `0xbd8c05...7e8d34` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x4d5d7d...b1ec86`](./contracts/arbitrum-42161/0x4d5d7db8028ac0a430f0194e023cd67350b1ec86/); arbitrum `0xc03226...e6f6ff` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 3 deployments: arbitrum [`0x50e2d3...f06482`](./contracts/arbitrum-42161/0x50e2d315a26e2fc8f0ebb79425e5ed4b1df06482/); arbitrum `0x74cf10...f7f4a2`; arbitrum `0xe46c3b...000705` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x55e5ce...bad344`](./contracts/arbitrum-42161/0x55e5ce11fb4fd79f934a892e11b8ea1e85bad344/); arbitrum `0xc60d4c...b0604d` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x58ec43...f553e8`](./contracts/arbitrum-42161/0x58ec4389edc6a94df2f8ff43a72b4eba63f553e8/); arbitrum `0x843329...49090b` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x613545...155c23`](./contracts/arbitrum-42161/0x61354503329c56c9207fe5d9f46cc37cb1155c23/); arbitrum `0xabc7ec...1e2316` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x63cbb4...ba953f`](./contracts/arbitrum-42161/0x63cbb431b8a2ac2c149cb577befde98fc6ba953f/); arbitrum `0xb39a04...356e13` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x66299c...50e436`](./contracts/arbitrum-42161/0x66299c8538cf6ebb8e10bd5aed954b2dfe50e436/); arbitrum `0xc61c90...e4ac73` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x69753e...7b8944`](./contracts/arbitrum-42161/0x69753e7372a4a6bd6f509261f1d0467fab7b8944/); arbitrum `0xc75dee...dc3b74` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x6a0755...f04a13`](./contracts/arbitrum-42161/0x6a075515711b668296be6e8455df23b871f04a13/); arbitrum `0xc5463b...9f3080` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x75fa7c...62c2c6`](./contracts/arbitrum-42161/0x75fa7c51f02ed5ba327f0820cb3908f9d362c2c6/); arbitrum `0xdabb35...75171c` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x7a74a0...396a64`](./contracts/arbitrum-42161/0x7a74a00425c17ade906b34b38f5e8705c2396a64/); arbitrum `0xc5d824...a64d1b` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x7d79c8...4a09a3`](./contracts/arbitrum-42161/0x7d79c838cf3cda1bd3734be6b3c1a160234a09a3/); arbitrum `0xda6b3c...99a2d0` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x862102...96c200`](./contracts/arbitrum-42161/0x862102ce12c72129b70460eb6cbdbded6396c200/); arbitrum `0xc00e16...aea7b3` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x889991...fdf773`](./contracts/arbitrum-42161/0x8899910a8c47e177c574454e8249f5e9dcfdf773/); arbitrum `0xf12f87...9b00e3` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x89c45b...c81cd4`](./contracts/arbitrum-42161/0x89c45b79c03ce6284ca948d0223e102810c81cd4/); arbitrum `0xd85cea...d0cb71` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x988297...8cd9ce`](./contracts/arbitrum-42161/0x9882975617e8ef77520262cb0add36c2598cd9ce/); arbitrum `0xa28557...d1dc98` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x9e5785...42898c`](./contracts/arbitrum-42161/0x9e578563d7e47adf00492b7e392e50b77c42898c/); arbitrum `0xc96648...66d2c2` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0xc2f10f...9f87ea`](./contracts/arbitrum-42161/0xc2f10ff8fd1deb771d46aa892a7d58e3e99f87ea/); arbitrum `0xca5bff...c9cce5` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | proxy | arbitrum | n/a | [`0xc71ba0...bc590b`](./contracts/arbitrum-42161/0xc71ba0e3c1fb9cbcb15fbc677e78c99ac1bc590b/) | ⚠️ Unaudited |
-| VaultManager | unknown | hyperliquid | n/a | 3 deployments: hyperliquid [`0x30454c...9ef4a5`](./contracts/hyperliquid-999/0x30454c49b1d5b4366afca609bb7fe13cb39ef4a5/); hyperliquid `0xa6a24e...8d96d2`; hyperliquid `0xe17545...b34edf` | ⚠️ Unaudited |
-| VaultManager | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x48dc37...525a60`](./contracts/hyperliquid-999/0x48dc377fc48823f4e1eeb47039944900cd525a60/); hyperliquid `0xd1c8dc...23ebcb` | ⚠️ Unaudited |
-| VaultManagerAdmin | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x2e2b6b...0d9db5`](./contracts/hyperliquid-999/0x2e2b6b658dc472188a1f8d39997bc5b1930d9db5/); hyperliquid `0x437c94...66e4ba` | ⚠️ Unaudited |
-| VaultManagerAdmin | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x6bf8b2...40b9dc`](./contracts/hyperliquid-999/0x6bf8b2d571333685fb9c1b5d997e126aa040b9dc/); hyperliquid `0x6dca76...3380a2` | ⚠️ Unaudited |
+| AccessManager | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x05a626914c582bff59f0a1aac3a4540def5e72f7`](./contracts/hyperliquid-999/0x05a626914c582bff59f0a1aac3a4540def5e72f7/); hyperliquid `0x41e14623112196ca248f42d97ad2133c2222419c` | ⚠️ Unaudited |
+| AccessManager | governance | hyperliquid | n/a | 2 deployments: hyperliquid [`0x28257cd6b21519a281a90637462bf7956c7d3808`](./contracts/hyperliquid-999/0x28257cd6b21519a281a90637462bf7956c7d3808/); hyperliquid `0x408e485a20442ff2a6f96a0733b4d36e869bf97c` | ⚠️ Unaudited |
+| AssetVault | unknown | hyperliquid | n/a | 5 deployments: hyperliquid [`0x25b4dc5f96312c7083a58d80d8ecad6ecddbbdfb`](./contracts/hyperliquid-999/0x25b4dc5f96312c7083a58d80d8ecad6ecddbbdfb/); hyperliquid `0x31aaa50a6096547b300a5f5af6ecc00d2f3d77e1`; hyperliquid `0x77a1b997cf8c8867e4174460b421e535158e81f5`; hyperliquid `0x7db7bcd6746f4dcfa2fdcdd80c1c313cc371f166`; hyperliquid `0xee09a7b39502813ed182144522d81df017bd7cbe` | ⚠️ Unaudited |
+| ClaimReward | unknown | hyperliquid | n/a | 4 deployments: hyperliquid [`0x04b7b5cb8c3b7f35fb604fcf92e0d3925c945e97`](./contracts/hyperliquid-999/0x04b7b5cb8c3b7f35fb604fcf92e0d3925c945e97/); hyperliquid `0xbef024e73c8844cb02ffacc63b98c451cf98fbc0`; hyperliquid `0xc3d0ed3d23c4169bf20b45aa9479e820c1b38889`; hyperliquid `0xe0a8d99c0b36c91b65746e304af72fdd37864045` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x057f4eb91dfd050a59cb1ecba9cc759a1aa310f8`](./contracts/hyperliquid-999/0x057f4eb91dfd050a59cb1ecba9cc759a1aa310f8/); hyperliquid `0x3d91485d7eaec6dd4e5ec0cb1122c8d80cdc1eaa` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x1357a71eab7bc50cd579dfa68935a920e203552a`](./contracts/hyperliquid-999/0x1357a71eab7bc50cd579dfa68935a920e203552a/); hyperliquid `0x69051ed19947924ad75183ee398a1c85efc58518` | ⚠️ Unaudited |
+| ERC1967Proxy | proxy | hyperliquid | n/a | 2 deployments: hyperliquid [`0x1368ee9d1212ae5b26ff166049220051a9eebc42`](./contracts/hyperliquid-999/0x1368ee9d1212ae5b26ff166049220051a9eebc42/); hyperliquid `0xe4ba90d2a4136f9270036b6f76b5d27fef9268ea` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x24e1cd4081aff985cbd58ef639aea56cdb188043`](./contracts/hyperliquid-999/0x24e1cd4081aff985cbd58ef639aea56cdb188043/); hyperliquid `0xf463c90ef794a57cee4fa5e4773bc05d07ddd986` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x2767870670a65913c3d877699bd72b0cec31b844`](./contracts/hyperliquid-999/0x2767870670a65913c3d877699bd72b0cec31b844/); hyperliquid `0xfaefcdefcf50d763d608aa6fcf1032be32698722` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | 3 deployments: hyperliquid [`0x2ca5cf8ef7b35c2c7df4d7c204a58c6f16d77291`](./contracts/hyperliquid-999/0x2ca5cf8ef7b35c2c7df4d7c204a58c6f16d77291/); hyperliquid `0x33a82183347327bc1667d93c458ca17c04e2537f`; hyperliquid `0x4d9cb88071b94040650739ee3fbee1c398994032` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x2fef70f905a0fd21fe2493acc1be5eef870c565c`](./contracts/hyperliquid-999/0x2fef70f905a0fd21fe2493acc1be5eef870c565c/); hyperliquid `0x8e40b43a388cc8df584b397b05899349c1a88fa8` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | [`0x30782559957f0853419c7021e91c83338a6f0a50`](./contracts/hyperliquid-999/0x30782559957f0853419c7021e91c83338a6f0a50/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x3104845028ab1a9670ae025874c12aaefe4c7f42`](./contracts/hyperliquid-999/0x3104845028ab1a9670ae025874c12aaefe4c7f42/); hyperliquid `0xd040c6482c34f123271466ff40056f6d66de73b6` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x31b626e0554da4fcaff9987dedc3ea3f3288cb5c`](./contracts/hyperliquid-999/0x31b626e0554da4fcaff9987dedc3ea3f3288cb5c/); hyperliquid `0x5533b73573633dc75bc315ca5fd357917f19b87c` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x380c522064688b4c9b2375b0acdce4f7cfbde06e`](./contracts/hyperliquid-999/0x380c522064688b4c9b2375b0acdce4f7cfbde06e/); hyperliquid `0x586c8074ec1fc0b5219983f0858e952e3b4b2f0c` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x388238bb8805a9a1412aee7abf5c23ac1e462d7f`](./contracts/hyperliquid-999/0x388238bb8805a9a1412aee7abf5c23ac1e462d7f/); hyperliquid `0xdb00367b226f65359713b8eb523d9cd2bcad3bca` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x47b100d7f444405759e9b226f6cb1cdb8cce4a9f`](./contracts/hyperliquid-999/0x47b100d7f444405759e9b226f6cb1cdb8cce4a9f/); hyperliquid `0xde3524e8b0ed859cfe6f386dc5cf0137d5ed215e` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | 3 deployments: hyperliquid [`0x59fddf86d74b4c0c38033931a44814d9ff4e9736`](./contracts/hyperliquid-999/0x59fddf86d74b4c0c38033931a44814d9ff4e9736/); hyperliquid `0x5da664ffb33af59ec54dcc2b94841422f9a33268`; hyperliquid `0xeeb9c3aa0dcda7d55442d44861627af6fc06e2c1` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x5bb6b9fcef8fb3d5db5dcf04bf53730069c5ced0`](./contracts/hyperliquid-999/0x5bb6b9fcef8fb3d5db5dcf04bf53730069c5ced0/); hyperliquid `0x98870db3d3c8577ddb58835c59420646b1634205` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x6c17d3b2dcd25dd779be50bd27f5dad2a1039f17`](./contracts/hyperliquid-999/0x6c17d3b2dcd25dd779be50bd27f5dad2a1039f17/); hyperliquid `0x6d5ebaba9bcef692d0e52b8fbdf15865dba33280` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x6e850b15d6f6ac830b5791c0c7452901c1fc824e`](./contracts/hyperliquid-999/0x6e850b15d6f6ac830b5791c0c7452901c1fc824e/); hyperliquid `0xe9552e3d244a831c727d871774a25fc4ff1a2366` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | 3 deployments: hyperliquid [`0x72dd37c3cda4537df0c77a23526a341d20290f29`](./contracts/hyperliquid-999/0x72dd37c3cda4537df0c77a23526a341d20290f29/); hyperliquid `0x9ff5cb0494d4b4ee0a357b94c98c4f05fffa7ee6`; hyperliquid `0xf8c85324a4d993f7dcd443dc1c3c2ae3ebb166a3` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x79325d3c5567624903b2a49542a9ed3a21fb7093`](./contracts/hyperliquid-999/0x79325d3c5567624903b2a49542a9ed3a21fb7093/); hyperliquid `0x81e31ea453b2a48a278cc6730887773bc63e0ec8` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x7cee0144f324b85bc0d6d19028dc030d161bb021`](./contracts/hyperliquid-999/0x7cee0144f324b85bc0d6d19028dc030d161bb021/); hyperliquid `0x941e59dd3360e492b4c47d48a00dad40889a1b9e` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x7d0a4237e52875e7e3a8f029332b054c143d6337`](./contracts/hyperliquid-999/0x7d0a4237e52875e7e3a8f029332b054c143d6337/); hyperliquid `0xf6808d6c664c088a1696e3e2a0d9b992e7610051` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x83ff304e86df2bb44847067b074f8218494e328e`](./contracts/hyperliquid-999/0x83ff304e86df2bb44847067b074f8218494e328e/); hyperliquid `0x99e38e8f3162cc2b483889027d97faf705e18398` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x84a08190995ff4c2f839defd5272b2813f468537`](./contracts/hyperliquid-999/0x84a08190995ff4c2f839defd5272b2813f468537/); hyperliquid `0xb7bf0f932d3bb626b75e7f0bd1633d518e578c36` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x8ad875d4fbb2365b7c67c397c574e32b297f2623`](./contracts/hyperliquid-999/0x8ad875d4fbb2365b7c67c397c574e32b297f2623/); hyperliquid `0x9a2b46016763af7a8cc034381de172ff24317a42` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0xa191407f1bc1a4454e9dd5a1ae277aac8d0326f0`](./contracts/hyperliquid-999/0xa191407f1bc1a4454e9dd5a1ae277aac8d0326f0/); hyperliquid `0xeebbf3ae4b2aa91810cf16d98b6aa225fe9745ee` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0xabf874c491569b3a6c2dec5b69dc5c5a121d62ac`](./contracts/hyperliquid-999/0xabf874c491569b3a6c2dec5b69dc5c5a121d62ac/); hyperliquid `0xaf74f36dedac71d506059ed2ef6fb51333e7e1b1` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0xacf32fd95bd16e7a77f353583542eff40e261588`](./contracts/hyperliquid-999/0xacf32fd95bd16e7a77f353583542eff40e261588/); hyperliquid `0xb2cda4bd5b15f78974afd33f9aea94420b57d6cf` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0xb0820fd4c7517a2690a267941551bc3ded9fbc40`](./contracts/hyperliquid-999/0xb0820fd4c7517a2690a267941551bc3ded9fbc40/); hyperliquid `0xdc2338411acf688b665cb91e556f5e2082ee8cf8` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0xb8f44096442c1f1d9540accc0f3f6814524d650d`](./contracts/hyperliquid-999/0xb8f44096442c1f1d9540accc0f3f6814524d650d/); hyperliquid `0xf5704a866e34e37b7a6c2a0bd9252d77179cab46` | ⚠️ Unaudited |
+| FundNavFeed | unknown | hyperliquid | n/a | 3 deployments: hyperliquid [`0x26493d5d3121a7938f8835436d777b6d10d67077`](./contracts/hyperliquid-999/0x26493d5d3121a7938f8835436d777b6d10d67077/); hyperliquid `0x3bed7e767dd405502526f5bc6fb38f35abc13643`; hyperliquid `0x9f39f575698a02f7c17d995080871a849a8c289c` | ⚠️ Unaudited |
+| FundVault | unknown | hyperliquid | n/a | 3 deployments: hyperliquid [`0x55b71eea81b3043b65e718d8b6e31a59090e0cfe`](./contracts/hyperliquid-999/0x55b71eea81b3043b65e718d8b6e31a59090e0cfe/); hyperliquid `0xabe515517bbd2bd220cfdc2741ee6df095333535`; hyperliquid `0xb6335c458d0859228d87ee01cf17956c8047ddb6` | ⚠️ Unaudited |
+| HaForDefiStrategy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x1f808f9f518a31a7737026056f3c2f2bccc5d173`](./contracts/hyperliquid-999/0x1f808f9f518a31a7737026056f3c2f2bccc5d173/); hyperliquid `0x7f6fddd70a2c2db079c6ae9e6d19e39a5b81a93a` | ⚠️ Unaudited |
+| HaForDefiStrategy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x4c57541f4fcbd234a5ecf31cc38572cae943dc0c`](./contracts/hyperliquid-999/0x4c57541f4fcbd234a5ecf31cc38572cae943dc0c/); hyperliquid `0xe6d1685480678d69bcceaef44d6af4e3b2452f80` | ⚠️ Unaudited |
+| HaForwardDestinationStrategy | unknown | hyperliquid | n/a | 3 deployments: hyperliquid [`0x23be7156c97e0d7413b35fca81ca236e8137c072`](./contracts/hyperliquid-999/0x23be7156c97e0d7413b35fca81ca236e8137c072/); hyperliquid `0x8ea4ff0dba85df2285df279c94172275383dd712`; hyperliquid `0xacde7aeb401f1ba7a13e7270ba28686b8a38e0c1` | ⚠️ Unaudited |
+| HAR | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x391121d817da42ed3434d281aedbbcc416a2af18`](./contracts/hyperliquid-999/0x391121d817da42ed3434d281aedbbcc416a2af18/); hyperliquid `0xdceabc60ed00e13c9d09cebcd14b0bf479f92744` | ⚠️ Unaudited |
+| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x02a1d5fba537c7156f5374d2c740fab4bdf00520`](./contracts/hyperliquid-999/0x02a1d5fba537c7156f5374d2c740fab4bdf00520/); hyperliquid `0x9938db907de8483b3b08676a9a0768e94432be1c` | ⚠️ Unaudited |
+| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x06adeaaa77a319a639bca0f36f54a6b4bf031def`](./contracts/hyperliquid-999/0x06adeaaa77a319a639bca0f36f54a6b4bf031def/); hyperliquid `0xa5b21fb82b4a145fdad8ea683f53458fcd32a3d0` | ⚠️ Unaudited |
+| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x0d403355c2fc8bd4d0dca2e677d1f388882cc429`](./contracts/hyperliquid-999/0x0d403355c2fc8bd4d0dca2e677d1f388882cc429/); hyperliquid `0xf25d52cd18cfd94b272fdc46a603e0b98deb4e80` | ⚠️ Unaudited |
+| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x1e1ca9ea99a0c37e4e512dc96c4a770877e4e602`](./contracts/hyperliquid-999/0x1e1ca9ea99a0c37e4e512dc96c4a770877e4e602/); hyperliquid `0x6f58cb1176319d0556bbebcecdddf27c69cb8571` | ⚠️ Unaudited |
+| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x28e0f14839cf8dbfae8a561b31d0518c35111dfa`](./contracts/hyperliquid-999/0x28e0f14839cf8dbfae8a561b31d0518c35111dfa/); hyperliquid `0x9ff6ed3d67728314d346fb742f71efd75e578a21` | ⚠️ Unaudited |
+| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x48898ca06d346b1cf6d3148e83840d7c43f35c94`](./contracts/hyperliquid-999/0x48898ca06d346b1cf6d3148e83840d7c43f35c94/); hyperliquid `0x884c9609d2145e0b17fec9b9500c561992372b15` | ⚠️ Unaudited |
+| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x4a06e9f5c819263c0f803a8a35f44280a15227a1`](./contracts/hyperliquid-999/0x4a06e9f5c819263c0f803a8a35f44280a15227a1/); hyperliquid `0xbbb6b52737fa12f47f1cc7845ba93175c10f16a6` | ⚠️ Unaudited |
+| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x56d782d4400fa82e14bfba9bd9e836b4d91579e2`](./contracts/hyperliquid-999/0x56d782d4400fa82e14bfba9bd9e836b4d91579e2/); hyperliquid `0xcbf856a8656845cedf83ca954ee08fa30264bbe9` | ⚠️ Unaudited |
+| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x5979aa38e5bcaa2e0b4ba3795c530022103f49e2`](./contracts/hyperliquid-999/0x5979aa38e5bcaa2e0b4ba3795c530022103f49e2/); hyperliquid `0xc34a4722dfcd6446a617be012b131989e95935c8` | ⚠️ Unaudited |
+| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x5bd4ddaf9ad88a4881e4f364ba2e8c8123cd9b09`](./contracts/hyperliquid-999/0x5bd4ddaf9ad88a4881e4f364ba2e8c8123cd9b09/); hyperliquid `0xf414b6a5b2749890d5809f6abbce5924e3b1ea15` | ⚠️ Unaudited |
+| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x6056469445b71867f8d6a6b483bd3b7be4bc8fef`](./contracts/hyperliquid-999/0x6056469445b71867f8d6a6b483bd3b7be4bc8fef/); hyperliquid `0xfe05fa9cea9166ac7e16b0e9a94c07b7fa6095d6` | ⚠️ Unaudited |
+| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x65b0a63fac21d15cc8c4b7a93972e1b1c6ae035f`](./contracts/hyperliquid-999/0x65b0a63fac21d15cc8c4b7a93972e1b1c6ae035f/); hyperliquid `0x99ced10321a61251a1d3a887c29c0f4176f10505` | ⚠️ Unaudited |
+| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x6fab94fb032dad8e53eb368116d6b72c0bbdf59b`](./contracts/hyperliquid-999/0x6fab94fb032dad8e53eb368116d6b72c0bbdf59b/); hyperliquid `0xf4e681038eee126bc1ba1c6aa4e9ee508bbd9d4d` | ⚠️ Unaudited |
+| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x7d852a046b7f47d9164d726a896c67249ad4b40d`](./contracts/hyperliquid-999/0x7d852a046b7f47d9164d726a896c67249ad4b40d/); hyperliquid `0xaffbc8db0a1bc837025ac79e18c7ad6f5977e8ce` | ⚠️ Unaudited |
+| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x95f2836501530886afa793f08fefd193fc6c6f97`](./contracts/hyperliquid-999/0x95f2836501530886afa793f08fefd193fc6c6f97/); hyperliquid `0xef84f76ee2646ba541aef8d9201e3ad58bc256f6` | ⚠️ Unaudited |
+| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0xae24f8222832c40edb6bbcdd20030aa79790b136`](./contracts/hyperliquid-999/0xae24f8222832c40edb6bbcdd20030aa79790b136/); hyperliquid `0xc8bdf4f9cb2e031b7bdfb209ca619d91222f8016` | ⚠️ Unaudited |
+| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0xbdf77abf7c360600b6607fcba1562ec6ea80b5d5`](./contracts/hyperliquid-999/0xbdf77abf7c360600b6607fcba1562ec6ea80b5d5/); hyperliquid `0xc60719ed76e36e62250c1c5db9668a98d9364fa1` | ⚠️ Unaudited |
+| HarmonixStakingUpgradeable | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0xf1c57eea645d51d03dd02f025d6dc084690c6a65`](./contracts/hyperliquid-999/0xf1c57eea645d51d03dd02f025d6dc084690c6a65/); hyperliquid `0xfeda3710bacb39e2579c25c4eb1c38e6c59b4d55` | ⚠️ Unaudited |
+| HaVaultReader | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x3a0b0e25becefcda10ac367f4f3dc33060436f52`](./contracts/hyperliquid-999/0x3a0b0e25becefcda10ac367f4f3dc33060436f52/); hyperliquid `0x8210b8658a2f60097126869f89f1ec27881bc4ec` | ⚠️ Unaudited |
+| HaVaultReader | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x66341e783529c0837ab16791e031e109d9046fe9`](./contracts/hyperliquid-999/0x66341e783529c0837ab16791e031e109d9046fe9/); hyperliquid `0x8bb3a6fc9cf81f0ea62ba2953acd226af7e78473` | ⚠️ Unaudited |
+| HaVaultReader | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x76994facc865399b08a850e8c1d8a172a2988bdc`](./contracts/hyperliquid-999/0x76994facc865399b08a850e8c1d8a172a2988bdc/); hyperliquid `0xb95803017145539601504fbedd582066fbb35ddd` | ⚠️ Unaudited |
+| HaVaultReader | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0xb80235f6f82031f2b9a5bf91c9de46e6b06ba14c`](./contracts/hyperliquid-999/0xb80235f6f82031f2b9a5bf91c9de46e6b06ba14c/); hyperliquid `0xf37741c82e143dad643196e70cc2ed0458c4ee92` | ⚠️ Unaudited |
+| HyperCorePriceFeed | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x6997045d980098206e435d388e81719adfc45dbb`](./contracts/hyperliquid-999/0x6997045d980098206e435d388e81719adfc45dbb/); hyperliquid `0xe19085cdbacafbdda0ab9df755486d49d3110eef` | ⚠️ Unaudited |
+| MultiVestingDistributorMock | operational_periphery | hyperliquid | n/a | [`0x30c9fc26028c3065e0bfd9b7ba1c7c9984a2111f`](./contracts/hyperliquid-999/0x30c9fc26028c3065e0bfd9b7ba1c7c9984a2111f/) | ⚠️ Unaudited |
+| MultiVestingDistributorMock | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x45de263bea4587c22c9b21aa392f8e5c5ca27f0f`](./contracts/hyperliquid-999/0x45de263bea4587c22c9b21aa392f8e5c5ca27f0f/); hyperliquid `0x8d8c70b1bd27f30193d1a606d32439faf1d4b24a` | ⚠️ Unaudited |
+| MultiVestingDistributorMock | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x7bc78ca95d1755db67d7dda3108f161c0ead335f`](./contracts/hyperliquid-999/0x7bc78ca95d1755db67d7dda3108f161c0ead335f/); hyperliquid `0x7ee84a5d93870e33da9b74486c9d76e75ee912b6` | ⚠️ Unaudited |
+| NavAggregateModel | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x8e9e8705a50ec4720b14d84e34af73421e301d30`](./contracts/hyperliquid-999/0x8e9e8705a50ec4720b14d84e34af73421e301d30/); hyperliquid `0xa3f4f7cee086a3ee29e06f8c5d76132734387514` | ⚠️ Unaudited |
+| PendleHedgeVault | unknown | arbitrum | n/a | 3 deployments: arbitrum [`0x0110bb8d3e530eb9a53f92fe848a06f2c5bfabe0`](./contracts/arbitrum-42161/0x0110bb8d3e530eb9a53f92fe848a06f2c5bfabe0/); arbitrum `0x561b080120f67ef6de911421bfffa2cc909979fc`; arbitrum `0xc0fa1d8b8651fd8ed8a3dd33cc0b090614cb50ee` | ⚠️ Unaudited |
+| PoolFactory | unknown | ethereum | n/a | 2 deployments: ethereum [`0xc7c8cdd1e9817fc98ad1b05cd3633c6471a9473b`](./contracts/ethereum-1/0xc7c8cdd1e9817fc98ad1b05cd3633c6471a9473b/); ethereum `0xe1856734933b1fe219ae2f13e8cbef8fbbc4a9c3` | ⚠️ Unaudited |
+| PoolFactory | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x7274463bf93e0058481042cbd6e0cc73042e6285`](./contracts/arbitrum-42161/0x7274463bf93e0058481042cbd6e0cc73042e6285/); arbitrum `0x81302b5e8ac3a99901712b8d6bc4e81da91b70c1` | ⚠️ Unaudited |
+| PriceFeed | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x389c289413c195918647a1c827476848c1991df8`](./contracts/hyperliquid-999/0x389c289413c195918647a1c827476848c1991df8/); hyperliquid `0xcd66bc6b4a215504e7920b00cce3bc93af91ea65` | ⚠️ Unaudited |
+| ProxyAdmin | governance | hyperliquid | n/a | [`0x7c95d4c96c410a6e7dedf4bc78eb93b916706ada`](./contracts/hyperliquid-999/0x7c95d4c96c410a6e7dedf4bc78eb93b916706ada/) | ⚠️ Unaudited |
+| ShareToken | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x581f839f495625aea422b0103e6a7727e34e79fc`](./contracts/hyperliquid-999/0x581f839f495625aea422b0103e6a7727e34e79fc/); hyperliquid `0xfa2f2f8460ab3f23bd995e2571cfdaa6529e0f5d` | ⚠️ Unaudited |
+| ShareToken | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x7c8516bfaa7c3390aff61fe511e2ccc3cf288aee`](./contracts/hyperliquid-999/0x7c8516bfaa7c3390aff61fe511e2ccc3cf288aee/); hyperliquid `0xc708827040c4b64d818729b93a6a8962d58e98c4` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | ethereum | n/a | 2 deployments: ethereum [`0xcf8be38f161db8241bbbdbab4231f9df62dbc820`](./contracts/ethereum-1/0xcf8be38f161db8241bbbdbab4231f9df62dbc820/); ethereum `0xe1a201e7c47de85f563ea0f1f9de2284439db69b` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 12 deployments: hyperliquid [`0x053a18d869a3d5927594cbc270107caab6f70faa`](./contracts/hyperliquid-999/0x053a18d869a3d5927594cbc270107caab6f70faa/); hyperliquid `0x069b24e4cb0836416822f916ee1d8919d16dd472`; hyperliquid `0x2cbce1fc02fb04fdee926e3d3c5aecc016b38dba`; hyperliquid `0x56edc8950dbc6cc6b9f7c3f613d398efb3e41898`; hyperliquid `0x6c802389d9a752594c70714632b75a3c8ec3497b`; hyperliquid `0x807c47757adb4038895b73f4cfb654ed37b22c5b`; hyperliquid `0x8276e112fe33474b0dfb469c38afd5e950b386c9`; hyperliquid `0x933e97ca3f892411a4083d91fa29d056fd65d270`; hyperliquid `0xa6ccd0f99d9dad45a5ae55a6677b4228ac6cfe2c`; hyperliquid `0xc13a77f7a6d5a2cf20694909cedb300cb018b799`; hyperliquid `0xd031ad9f62c195c7798f4bf14e9e2e52ef888cd4`; hyperliquid `0xd8e0aa3da29a803e626210ffea4726f750720da7` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x05e3b82444edecdc64b556c938f4ae623a828f04`](./contracts/hyperliquid-999/0x05e3b82444edecdc64b556c938f4ae623a828f04/); hyperliquid `0xa56c9b746355b8df031ccb9e20812bf8e719687d` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x0aa13b638c60212ce3947ead9c38498c01e53180`](./contracts/hyperliquid-999/0x0aa13b638c60212ce3947ead9c38498c01e53180/); hyperliquid `0x15d21b1c017fc5101907f430e9bd925acdb176b2` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 3 deployments: hyperliquid [`0x0c7612d7b3c6f5775966ae291ffe0d4537c089c4`](./contracts/hyperliquid-999/0x0c7612d7b3c6f5775966ae291ffe0d4537c089c4/); hyperliquid `0xa4ceed2ea1baf5cbf0b4d6ff66c88002e11f67a7`; hyperliquid `0xe0446f14c40f5e3d1f335e80fcd1e11ba3405613` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x10f4a52b66ead12fec74d97293ff491dbb8fbe0d`](./contracts/hyperliquid-999/0x10f4a52b66ead12fec74d97293ff491dbb8fbe0d/); hyperliquid `0xef447e471521a4a77efe80b825d84d4c8ababb3b` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x16ab14c6deb158b3d8f3846c702d65309599d754`](./contracts/hyperliquid-999/0x16ab14c6deb158b3d8f3846c702d65309599d754/); hyperliquid `0xf58fbd796a2f69c934053e1a07c7191a13bdb0d0` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x16cde735538e935e68b2ddc7c0d657acfe39ad82`](./contracts/hyperliquid-999/0x16cde735538e935e68b2ddc7c0d657acfe39ad82/); hyperliquid `0xd4e0bb0892623654e2c49d16ecd462d189b0ef28` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x17645878a354eed54ee238dccdf72cce224aab17`](./contracts/hyperliquid-999/0x17645878a354eed54ee238dccdf72cce224aab17/); hyperliquid `0xbbb27658a1051a48ce6ced858c4caee4b35a8fb9` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 4 deployments: hyperliquid [`0x179348034c7fa35d2d5a0149c17cede52fbb22c6`](./contracts/hyperliquid-999/0x179348034c7fa35d2d5a0149c17cede52fbb22c6/); hyperliquid `0xa4554189a6828aa8311cfb2295198e928cdfb899`; hyperliquid `0xcca4cf59414d0393f71b0a1e80aac73f6630f8f5`; hyperliquid `0xebf18148deff9c235e67035c2f351611462249d8` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 4 deployments: hyperliquid [`0x19de72a5f174c92703d92f1fbd1afc6df1e3d344`](./contracts/hyperliquid-999/0x19de72a5f174c92703d92f1fbd1afc6df1e3d344/); hyperliquid `0x6f62bbd8001c4d00bc9e57d82a208985230b5d8d`; hyperliquid `0x74a055a034dc0b0f5b16ac640ad2d59954a3ca90`; hyperliquid `0x998103fa018aebdd1eb7b84d8f3fc814fbf48867` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 5 deployments: hyperliquid [`0x206e193fafdf881e709cca50308552a7f615da40`](./contracts/hyperliquid-999/0x206e193fafdf881e709cca50308552a7f615da40/); hyperliquid `0x3ed61ef818949278adfc526df82f0764a0edf014`; hyperliquid `0x58574007f97fe65048dd669191e28b58cddfa1dd`; hyperliquid `0x6bc7a374749a2bea041a90eca80488179888525b`; hyperliquid `0xcc33ab73c7006f835201374fe7e14349a1b58223` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x2dd5f122bde4313d9e44b434589d46326141607f`](./contracts/hyperliquid-999/0x2dd5f122bde4313d9e44b434589d46326141607f/); hyperliquid `0xfec8f5561fd97935ac98211614b5922a33a17da8` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 3 deployments: hyperliquid [`0x39a7d3dff6d2e31b4a11ca8c8969b619fe6e99da`](./contracts/hyperliquid-999/0x39a7d3dff6d2e31b4a11ca8c8969b619fe6e99da/); hyperliquid `0x82d8a073b4c8faec5495697ce9d6b172db4a799d`; hyperliquid `0x8bf477eaab88e083c1c7b1a6791fc73edec2d4eb` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 5 deployments: hyperliquid [`0x3c298b0d324fe16db73fe5e74023335bbd6eba5d`](./contracts/hyperliquid-999/0x3c298b0d324fe16db73fe5e74023335bbd6eba5d/); hyperliquid `0x4b4532a5a995b27caf7f722db63b21545a1a9630`; hyperliquid `0x76b00916713d0016b6c62244dcfbed900c4c69d6`; hyperliquid `0xe67fd0705f7b347c0118ec0752b5e90afcfa9c5a`; hyperliquid `0xef16af2722c4a483cdf5af14e2e2d78950320d1f` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 9 deployments: hyperliquid [`0x3c5374a8efceb94c3e1176afc0bf89b4f14493fd`](./contracts/hyperliquid-999/0x3c5374a8efceb94c3e1176afc0bf89b4f14493fd/); hyperliquid `0x48e94d68fe260c13acbe2356721d0884d9ea9b82`; hyperliquid `0x95b08e3542da624929128431d0a5579df33f9dd1`; hyperliquid `0x9e780bf57bed1c7e7add2e0a618fb4aee3490dba`; hyperliquid `0xa855f95acb9e5c0be97503273b7edcbe7743fa58`; hyperliquid `0xb618a0e6722a485870e3b1315a0e9d1bc17fe3e7`; hyperliquid `0xcbd7d9f19f483aed7ffe4a031a2ce31501045bc4`; hyperliquid `0xd844fb4228b87a0d21db830277bdafaafbb3fbe8`; hyperliquid `0xe695af78bf21adf23f85720c666fca6552a9445f` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x3d5556eadd436630b1ad6f52ca0259431ee90b11`](./contracts/hyperliquid-999/0x3d5556eadd436630b1ad6f52ca0259431ee90b11/); hyperliquid `0x9f255e4e99bb4e11da37ce71af49b79bdeb6a17e` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 4 deployments: hyperliquid [`0x49005d40b44de5f886b57f1c3f307b62a76f5816`](./contracts/hyperliquid-999/0x49005d40b44de5f886b57f1c3f307b62a76f5816/); hyperliquid `0x9128a2ce49a2217619cd714df186279a11c6a3d6`; hyperliquid `0xa5b7881ee5e518e166a8e80c0bb327aa42ec5583`; hyperliquid `0xa950a8fc8cd0b89fdbeb8310c4778137ee2aa037` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x496d50ac1b149e0af4116ab021153c2a646f2f40`](./contracts/hyperliquid-999/0x496d50ac1b149e0af4116ab021153c2a646f2f40/); hyperliquid `0x49be2933c50155b9d929c8ca84f187bbcf4eb8d8` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x4c81e8a35ad2b76c142016cfab8356a4672792ca`](./contracts/hyperliquid-999/0x4c81e8a35ad2b76c142016cfab8356a4672792ca/); hyperliquid `0xcbb9e45aae4a42ff9bf0ed72c06e51c740b43656` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x4dc4ad1cde51c4a1e4a5b30a87c9c302e9ce3b3b`](./contracts/hyperliquid-999/0x4dc4ad1cde51c4a1e4a5b30a87c9c302e9ce3b3b/); hyperliquid `0x74aa6a9bdeaf972e7dcc861afbb3b160172bab4a` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x509110583cd97c7900cdf1e98f0b42fe53270ca4`](./contracts/hyperliquid-999/0x509110583cd97c7900cdf1e98f0b42fe53270ca4/); hyperliquid `0xbb9655bcaabcd6ef066e954049c9b23fe5462325` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x543303266113b64d03ec17b7ec3829f8cddadac4`](./contracts/hyperliquid-999/0x543303266113b64d03ec17b7ec3829f8cddadac4/); hyperliquid `0x8a59dfc1f0380d3bf1e70d8c369e1fc888845a4d` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 3 deployments: hyperliquid [`0x5736fd4c0bc99307391272c0a2aa31686b4bf3a5`](./contracts/hyperliquid-999/0x5736fd4c0bc99307391272c0a2aa31686b4bf3a5/); hyperliquid `0xde38ede7d792bb805971cc46d1a8f684e9d218ff`; hyperliquid `0xeec3efa754cf7e41b2952068ab4ace37bc30799e` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x5df93330c2a799cb77d62f61842271c28e73b451`](./contracts/hyperliquid-999/0x5df93330c2a799cb77d62f61842271c28e73b451/); hyperliquid `0x8085c67f122b7c7c7ab06864ac359536640f5e28` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 3 deployments: hyperliquid [`0x61d077a516dcbebf56121b6c0a9851254677b0b5`](./contracts/hyperliquid-999/0x61d077a516dcbebf56121b6c0a9851254677b0b5/); hyperliquid `0xee6286ad0c0fca50ccc89fe0e51532ad2d63d9f6`; hyperliquid `0xf768d02f06b242ad58b1b3202b7c3c4bcbf0f2d0` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x65d389daea19fc9a704b17a81f953d70ceaa5d34`](./contracts/hyperliquid-999/0x65d389daea19fc9a704b17a81f953d70ceaa5d34/); hyperliquid `0xe4d49e89e00730c423caed4a7b29e0230ed7ccb6` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x70725df576badb27dcb8e5235be6376b6b857f1a`](./contracts/hyperliquid-999/0x70725df576badb27dcb8e5235be6376b6b857f1a/); hyperliquid `0xcafd6e660ecc08390d0d0ec85a387bc7679990fc` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x74487ea81aa60c772b9d7dbe151dfd8d1f6fa10f`](./contracts/hyperliquid-999/0x74487ea81aa60c772b9d7dbe151dfd8d1f6fa10f/); hyperliquid `0xf377f259d663b530954201dd40b4a9761552e6c1` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x7d66591a4eb57d25ad68f303d3c223744250ecca`](./contracts/hyperliquid-999/0x7d66591a4eb57d25ad68f303d3c223744250ecca/); hyperliquid `0xf05a946e22b0de12c403e6e4a958b40ddb1b58c0` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x8576c0b29dc0105fcb97a3b40dab6514da53d233`](./contracts/hyperliquid-999/0x8576c0b29dc0105fcb97a3b40dab6514da53d233/); hyperliquid `0xeff35299ddf8cec0ecd7eb77a09986b4067d8aad` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x94c000e8164a28e5a80d53c0bc2b266fca2a1d4a`](./contracts/hyperliquid-999/0x94c000e8164a28e5a80d53c0bc2b266fca2a1d4a/); hyperliquid `0xdc7ad62e487f076495e81f7f25b2457fe260d135` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x9fdb47d4d3c2d64d8cb39ad5d23325755dc92d8d`](./contracts/hyperliquid-999/0x9fdb47d4d3c2d64d8cb39ad5d23325755dc92d8d/); hyperliquid `0xbeb9039904fc653276f831fc010c7fbf06e891df` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0xcda71089bdc5c7d6eafafe304902629ed75c1642`](./contracts/hyperliquid-999/0xcda71089bdc5c7d6eafafe304902629ed75c1642/); hyperliquid `0xd8fb7ec1759c7fa6280f20d58fcf1c065297b3bc` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x05427aa001303115b14634673dd3ff53e94db7c5`](./contracts/arbitrum-42161/0x05427aa001303115b14634673dd3ff53e94db7c5/); arbitrum `0x9efd0be06ff3c935efbc5ddeb4a9b9bde880253c` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x067610dde86ab8aea2edb887b77ad928f3f44aa2`](./contracts/arbitrum-42161/0x067610dde86ab8aea2edb887b77ad928f3f44aa2/); arbitrum `0x1ef01c585395923e9455016d96117b603edc31a8` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x0866af9ff18072ee16d059082c7ea6170a11334e`](./contracts/arbitrum-42161/0x0866af9ff18072ee16d059082c7ea6170a11334e/); arbitrum `0x8005bf6b6a8cc321f491bcf93cc1e061a9191e37` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x09873caead90d60cd84c9543e0d5cd772c44cdf1`](./contracts/arbitrum-42161/0x09873caead90d60cd84c9543e0d5cd772c44cdf1/); arbitrum `0x2cbb40a908837ded3b61432d453c8b9d8f268177` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x13f093db3dc780a45994a4ac46182aa0978f3a4c`](./contracts/arbitrum-42161/0x13f093db3dc780a45994a4ac46182aa0978f3a4c/); arbitrum `0xefaebf3e331cb4600003c578904457a44682aafb` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x1453b9642875b4df6e4867ee2782d92859cca767`](./contracts/arbitrum-42161/0x1453b9642875b4df6e4867ee2782d92859cca767/); arbitrum `0x1d47ca37872f4c19cf6931f801e99a0d618e3688` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x14d9edb7b3bf083cfda4e3c40352346df4a5e1df`](./contracts/arbitrum-42161/0x14d9edb7b3bf083cfda4e3c40352346df4a5e1df/); arbitrum `0x4ff8d67bdb2c141075bd21d39ccbaac53aabbba7` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x1ea6bfa5d0a350d3b9e2e22b213df5b79d07ae7f`](./contracts/arbitrum-42161/0x1ea6bfa5d0a350d3b9e2e22b213df5b79d07ae7f/); arbitrum `0x236a881a9f092ad04c447ee1d84e588871cdf331` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x27c6cf5e57b331ad8ffca727984639672e384499`](./contracts/arbitrum-42161/0x27c6cf5e57b331ad8ffca727984639672e384499/); arbitrum `0x917d630c7baa6fae147254f8d7d9fca7e0d3a538` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 3 deployments: arbitrum [`0x299ebcd583507d5d5ddd61fd5cc51d831da200f1`](./contracts/arbitrum-42161/0x299ebcd583507d5d5ddd61fd5cc51d831da200f1/); arbitrum `0x8f1cb3bcf1a58d84b3ebdf136c51bce1e5de2b87`; arbitrum `0xee1607459e81c8a6450fc43b8b4faf8c0151702a` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x3363a85c31cf13a96802e2935724232767420135`](./contracts/arbitrum-42161/0x3363a85c31cf13a96802e2935724232767420135/); arbitrum `0xc5b14494dfa0c7c8d1b162bac7614e42cc3eb261` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x3447c595061dd3c7a3a42f99917cefd44d023ab4`](./contracts/arbitrum-42161/0x3447c595061dd3c7a3a42f99917cefd44d023ab4/); arbitrum `0xc0e2b9ecabca12d5024b2c11788b1cfaf972e5aa` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x346c29a4d72356f9737c30be275e36215a22e322`](./contracts/arbitrum-42161/0x346c29a4d72356f9737c30be275e36215a22e322/); arbitrum `0x3c983bbf6a85504c34660be45c4acba26a6fc407` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 3 deployments: arbitrum [`0x3b584a4119969984355a5ec05070b3c72948affd`](./contracts/arbitrum-42161/0x3b584a4119969984355a5ec05070b3c72948affd/); arbitrum `0x59f3f6b136853fd135d9858f8c45fd15c23679af`; arbitrum `0xc2b64da281b4aa676e473c648b31d99fcaefe6dd` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x3cfd185151d2ccacbaf72191de142ac300d2bcf4`](./contracts/arbitrum-42161/0x3cfd185151d2ccacbaf72191de142ac300d2bcf4/); arbitrum `0x72b054968e386095364f5c33c5b94b0ec7179b9d` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x488440b63558d2fc85b3283062af289ea97efce1`](./contracts/arbitrum-42161/0x488440b63558d2fc85b3283062af289ea97efce1/); arbitrum `0xbd8c0594cee94a3d550145925c29eca33f7e8d34` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x4d5d7db8028ac0a430f0194e023cd67350b1ec86`](./contracts/arbitrum-42161/0x4d5d7db8028ac0a430f0194e023cd67350b1ec86/); arbitrum `0xc03226b54d4dbc2443a72a9a00b99ffd76e6f6ff` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 3 deployments: arbitrum [`0x50e2d315a26e2fc8f0ebb79425e5ed4b1df06482`](./contracts/arbitrum-42161/0x50e2d315a26e2fc8f0ebb79425e5ed4b1df06482/); arbitrum `0x74cf10caa15e9abcc08ae8bbdc60587015f7f4a2`; arbitrum `0xe46c3be33d0c682fca5f965d244398e924000705` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x55e5ce11fb4fd79f934a892e11b8ea1e85bad344`](./contracts/arbitrum-42161/0x55e5ce11fb4fd79f934a892e11b8ea1e85bad344/); arbitrum `0xc60d4cb9e8f0d1e5eab3d40a81cb3eb9c6b0604d` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x58ec4389edc6a94df2f8ff43a72b4eba63f553e8`](./contracts/arbitrum-42161/0x58ec4389edc6a94df2f8ff43a72b4eba63f553e8/); arbitrum `0x843329b2a241757325cf1cf569e3fc30b749090b` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x61354503329c56c9207fe5d9f46cc37cb1155c23`](./contracts/arbitrum-42161/0x61354503329c56c9207fe5d9f46cc37cb1155c23/); arbitrum `0xabc7ec9248fe1d4a453a28b8441c7ef07f1e2316` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x63cbb431b8a2ac2c149cb577befde98fc6ba953f`](./contracts/arbitrum-42161/0x63cbb431b8a2ac2c149cb577befde98fc6ba953f/); arbitrum `0xb39a0499c7263c5b55338387f4f8eb0d7b356e13` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x66299c8538cf6ebb8e10bd5aed954b2dfe50e436`](./contracts/arbitrum-42161/0x66299c8538cf6ebb8e10bd5aed954b2dfe50e436/); arbitrum `0xc61c90f03e9e3a37174da2fada6f3c55c3e4ac73` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x69753e7372a4a6bd6f509261f1d0467fab7b8944`](./contracts/arbitrum-42161/0x69753e7372a4a6bd6f509261f1d0467fab7b8944/); arbitrum `0xc75deec22696ca1123a21d6f149038d3a2dc3b74` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x6a075515711b668296be6e8455df23b871f04a13`](./contracts/arbitrum-42161/0x6a075515711b668296be6e8455df23b871f04a13/); arbitrum `0xc5463badb4d706c1c295c4a3ef3ecfcd0d9f3080` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x75fa7c51f02ed5ba327f0820cb3908f9d362c2c6`](./contracts/arbitrum-42161/0x75fa7c51f02ed5ba327f0820cb3908f9d362c2c6/); arbitrum `0xdabb353cb65f0e565df7d302e0ac9b738f75171c` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x7a74a00425c17ade906b34b38f5e8705c2396a64`](./contracts/arbitrum-42161/0x7a74a00425c17ade906b34b38f5e8705c2396a64/); arbitrum `0xc5d824572e20bb73de991dc31b9802fcb0a64d1b` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x7d79c838cf3cda1bd3734be6b3c1a160234a09a3`](./contracts/arbitrum-42161/0x7d79c838cf3cda1bd3734be6b3c1a160234a09a3/); arbitrum `0xda6b3c2a19c3c590d168e450144406bd2199a2d0` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x862102ce12c72129b70460eb6cbdbded6396c200`](./contracts/arbitrum-42161/0x862102ce12c72129b70460eb6cbdbded6396c200/); arbitrum `0xc00e166cf7b6684d2063d6c7f55e43f140aea7b3` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x8899910a8c47e177c574454e8249f5e9dcfdf773`](./contracts/arbitrum-42161/0x8899910a8c47e177c574454e8249f5e9dcfdf773/); arbitrum `0xf12f8753c25f8005311a24bbba1f7209249b00e3` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x89c45b79c03ce6284ca948d0223e102810c81cd4`](./contracts/arbitrum-42161/0x89c45b79c03ce6284ca948d0223e102810c81cd4/); arbitrum `0xd85cea423221ec2dea8562d214485e764ad0cb71` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x9882975617e8ef77520262cb0add36c2598cd9ce`](./contracts/arbitrum-42161/0x9882975617e8ef77520262cb0add36c2598cd9ce/); arbitrum `0xa2855752767212f6cb7d500776e21a1124d1dc98` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x9e578563d7e47adf00492b7e392e50b77c42898c`](./contracts/arbitrum-42161/0x9e578563d7e47adf00492b7e392e50b77c42898c/); arbitrum `0xc966480bd26a9df5152c646b4873912b9e66d2c2` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0xc2f10ff8fd1deb771d46aa892a7d58e3e99f87ea`](./contracts/arbitrum-42161/0xc2f10ff8fd1deb771d46aa892a7d58e3e99f87ea/); arbitrum `0xca5bff6443c3df3df854fadbbe2f9a50cfc9cce5` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | arbitrum | n/a | [`0xc71ba0e3c1fb9cbcb15fbc677e78c99ac1bc590b`](./contracts/arbitrum-42161/0xc71ba0e3c1fb9cbcb15fbc677e78c99ac1bc590b/) | ⚠️ Unaudited |
+| VaultManager | unknown | hyperliquid | n/a | 3 deployments: hyperliquid [`0x30454c49b1d5b4366afca609bb7fe13cb39ef4a5`](./contracts/hyperliquid-999/0x30454c49b1d5b4366afca609bb7fe13cb39ef4a5/); hyperliquid `0xa6a24edb9514d70a93e387c25b01a5349f8d96d2`; hyperliquid `0xe17545d526d4142799570cda05c0a81802b34edf` | ⚠️ Unaudited |
+| VaultManager | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x48dc377fc48823f4e1eeb47039944900cd525a60`](./contracts/hyperliquid-999/0x48dc377fc48823f4e1eeb47039944900cd525a60/); hyperliquid `0xd1c8dc811d6254e6565b2a6024d57cc08123ebcb` | ⚠️ Unaudited |
+| VaultManagerAdmin | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x2e2b6b658dc472188a1f8d39997bc5b1930d9db5`](./contracts/hyperliquid-999/0x2e2b6b658dc472188a1f8d39997bc5b1930d9db5/); hyperliquid `0x437c94ff5b7c3c73a3c3366dff03294df366e4ba` | ⚠️ Unaudited |
+| VaultManagerAdmin | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x6bf8b2d571333685fb9c1b5d997e126aa040b9dc`](./contracts/hyperliquid-999/0x6bf8b2d571333685fb9c1b5d997e126aa040b9dc/); hyperliquid `0x6dca767e7384d862036622c65710474b133380a2` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -242,134 +242,134 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x083050...59ab73` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x1bcf1f...ffbc44` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x3893b2...1455fb` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x4577f6...5fd0a8` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x62cc48...d58265` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x6c3c1a...714d62` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x725004...a246a5` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xaed44e...bf31f5` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xe4ae01...0a71ff` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xf36c7d...5c46b3` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xfce1db...1e197b` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x068759...1d33ef` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x143a2d...2d7c66` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x18f79c...880f13` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x256a50...d1195d` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x2b2f1b...8c6f87` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x2f5d93...c80820` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x310ed3...1321fb` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x358ac2...0f0fce` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x3b76ba...3a0621` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x406f26...385054` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x4d312e...a06df5` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x523bd6...cf979c` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x594d7b...69850a` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x5b0e7f...b2c995` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x650ea9...c98cc5` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x68aa54...8cc4eb` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x68ad5a...3afd88` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x6b2b46...5bebc4` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x6bd6a0...baf0b1` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x6e2f4f...90608e` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x6ea74d...34a4e8` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x75c80a...1efe4d` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x75d13b...ab997c` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x7b5e2d...ff2f82` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x7d05a1...97df74` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x7d507d...b6d273` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x8290ef...a8bc82` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x868ddb...512b60` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x884a7e...ac7338` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x8ae11b...c08b59` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x8ce286...a0a400` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x8e153f...87ceb4` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x92ae81...9f62e7` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0xa3af27...c22086` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0xb003ff...36fa3e` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0xb16fd8...205b6f` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0xb869de...8573b7` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0xc6fbb0...d5468e` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0xd734ef...f3b0e3` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0xde1f97...8dc75c` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0xde3201...57d228` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0xde3e20...c963e2` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0xe6d860...d0eb5d` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0xea2c3f...3f0b4f` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0xeb4a4b...b00fcf` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0xf2a7e3...00206b` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0xf3e5e2...1dafc2` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x0530f9...f0805d` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x092ece...1b40a6` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x0f812e...aeeb07` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x14352d...d0e164` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x17ee33...fe87fd` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x1dff18...5506da` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x1eaf47...ce057d` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x2614dd...567fe8` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x26c45f...61055b` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x2a1745...104ee9` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x2d0741...5b54bf` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x3056d6...0d78a9` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x347eae...0ade91` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x36dd11...464f08` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x37ff35...01704b` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x3d502f...cfd685` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x4325d1...15962f` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x43aeef...640695` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x4b2365...6fea36` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x4d2000...340e65` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x4eadd7...5b93ad` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x5dc9e7...f24312` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x5dcd79...b607b4` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x616e10...afd5b2` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x68387f...af7a03` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x6f7a38...3da3be` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x730922...3b54f3` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x730be4...62f6e5` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x7689ba...ab133a` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x76c43c...d2b327` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x86c3f3...8894d2` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x88c66b...e994c4` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x88d4b2...f939a7` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x8ad3e1...dda865` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x8c488f...6833b8` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x8d7c63...d8c9f8` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x9032c1...45c9c8` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x95c40e...3fddf6` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x97d501...4c5086` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x9b30af...3b1181` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x9be0ec...e86993` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x9f907c...06eb2f` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xa48391...114dac` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xa6dc78...74d19b` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xaae0ab...f058c9` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xab0776...89bfdd` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xabdd30...291e9f` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xaed44e...bf31f5` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xaf89e8...4062fe` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xb2db8e...0ad762` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xb30693...8e8855` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xb916a2...83bf18` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xba5f28...8a0293` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xbca7c5...d4b7b6` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xbf2ff9...8d4c10` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xc1169a...9dcf4e` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xc17f76...1ce559` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xc25987...d32d85` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xc5b919...55c514` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xc927fe...1e14c0` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xd0f26d...44e2c7` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xd46cf5...372699` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xe1568a...0781b5` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xe1a201...9db69b` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xebd56c...4fe5e3` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xf37b1a...1ea557` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xf40859...d4c83c` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xf7c693...0566aa` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xfc1dcc...e3e010` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xfe0dcb...18eb25` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x083050ae76044034a2771e9d5e4fc782e159ab73` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x1bcf1fb3ab9e9e0c4a94842be3cc2a4ebeffbc44` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x3893b2b912319d74fdc10e1656b1a2149a1455fb` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4577f61d75520eb7e3c8e131e1f2c59e6a5fd0a8` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x62cc4873890f7fde990b8ff9027b605c74d58265` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x6c3c1a64c40e76ce4fdfcd378d089974dd714d62` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x7250045f244970d25a432c86cedc3bdf8fa246a5` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xaed44e3e46808a504ba93de6567e2d7d00bf31f5` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe4ae0141ba0ddefa947c7a7bae1ed6061c0a71ff` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf36c7df05c01c6a92f5380f38b6a0af9a85c46b3` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xfce1db41097bd827ef776b3e5dc42fc4201e197b` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x0687594d4a4bfe749faa566977c4b8ce8f1d33ef` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x143a2d7040216115b23381924f1c9cf5322d7c66` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x18f79ce8cb305f6ba9f896bcf04a67abc0880f13` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x256a50d9d20ae86e9fc252608b3258d6f1d1195d` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x2b2f1b4e23589f290f7f66917db22906388c6f87` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x2f5d9396ea2783ab312844c84180a9584cc80820` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x310ed30f609b68c05100a9978bab966e401321fb` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x358ac2af72d27baffec5a5b4731b93842f0f0fce` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x3b76ba3a6414d42f83db1ba879b12b22f93a0621` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x406f26cb3c430dc4053f0b0b3745fe3334385054` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x4d312e48fd840700b3a0e30367caec1c47a06df5` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x523bd600daf3dc96fbadeed2be90d1630bcf979c` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x594d7b2c9ac0f93064a9a311417685f5a669850a` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x5b0e7ffd3d8970cf15c6afc87f9c323691b2c995` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x650ea9b60cbe74ce6d3354768bc6c3fa7dc98cc5` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x68aa542f054410662a8f3148d0e8ea13c48cc4eb` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x68ad5a19b50f9d70a462e6e992fca0b0a73afd88` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x6b2b46fb768e552de86c13d02e61c480675bebc4` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x6bd6a005161edb22ae73e3bbbe41623ac3baf0b1` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x6e2f4f088da88d88045eff6beac811137890608e` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x6ea74dc8478909e1d473183e7dfe0be54134a4e8` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x75c80aca604c74fc8cc2cdd3d612ac80ed1efe4d` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x75d13bae666c7728d36f9e4923626941d6ab997c` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x7b5e2d0d3cf3fe290e436bdab23e01d912ff2f82` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x7d05a178ca6b5111cc6d4bd18ecbf53c5297df74` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x7d507d9fd298daf216c72645a1e3f99749b6d273` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x8290ef21817924c2b7790886d81c766515a8bc82` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x868ddbd925280356e6bb13581bc9e332d5512b60` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x884a7e38f82b00ff62205e81f49c533edfac7338` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x8ae11b48103c0caa90f56c5b9a60337216c08b59` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x8ce286681f2015a4d705ae32cbf1ced8dfa0a400` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x8e153fc18904f5ed870671275b6f90f19387ceb4` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x92ae8198e6905c8b55dcb9f3d6e72483ee9f62e7` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0xa3af272d55cba5180081eb4ae3fbbca9e1c22086` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0xb003ff9baf0e0e8046f5982a1b054a57b436fa3e` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0xb16fd85c4be16347ce6230c1946f0016eb205b6f` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0xb869dea120483b7cd57e235474cb91a3db8573b7` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0xc6fbb0811467e76585ea30d312d629fec0d5468e` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0xd734ef927bd75cf8383bdf75cd8dc6eebdf3b0e3` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0xde1f979a8bdf614a3a14ae2f76cdc6d6588dc75c` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0xde320124292f52e920670d16272a1736b757d228` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0xde3e201b2e4f440e7611c9ec55ffccafe1c963e2` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0xe6d860a33b7911600c2ee058be0f4e78f6d0eb5d` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0xea2c3fae516c83c166f4cebde87bafa9803f0b4f` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0xeb4a4be224530cf74d56cae862096ba442b00fcf` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0xf2a7e33957cf150f14985b58bc0bea3fec00206b` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0xf3e5e2fcde9ccf9bb9b952f76ca5e12f191dafc2` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x0530f99e0100a6580af605491a319b8e67f0805d` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x092ece7a3513219c10a466cf40da0c38941b40a6` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x0f812e40372e387fb7269439eefc08e676aeeb07` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x14352d332aae3da20797ae49a3c493b50bd0e164` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x17ee336e204e0e993e469b04237b553298fe87fd` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x1dff18a0a931b3695048cfb6e610cfe2905506da` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x1eaf47465276d431aa96f2393d746cfcb1ce057d` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x2614dd18f16d3aeaefc1cf8d91f389f300567fe8` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x26c45f9eb3214b329c11e9cfea559a9c7361055b` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x2a1745da549c99867b00252b75ee21bfc4104ee9` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x2d074191f47b1cd1ee7ac57fefbbde24165b54bf` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x3056d68580bc72e5005f79fdd4b88af1d50d78a9` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x347eae6164a7aa869c785a973552b25d2d0ade91` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x36dd11f98adc6aefa47e422641ac902be3464f08` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x37ff350890ea0c0ada5a9f88bb2f3f6c4601704b` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x3d502fbc64121894a8a1fbadc71423eaabcfd685` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x4325d177630395e22b6a40949c6693499715962f` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x43aeef81836212be12e16a015fddc3ff7b640695` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x4b23651d797af6f6a2283a9b5597d5a8306fea36` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x4d2000d31dbf6637e3caaab1195f424267340e65` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x4eadd7055adff2984ac86821a26f2a14d85b93ad` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x5dc9e7b27c501b821d8f2f20fba93b1de8f24312` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x5dcd797b4c21cb3217e81af3564823b50db607b4` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x616e10a412d4401a6ead50b9aa701496a2afd5b2` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x68387f85c796ca138c0b74c6c42efe33e7af7a03` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x6f7a38ff25651571b46b276e40e7f8e9963da3be` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x7309225318a8c5bdc6be37eeca36e4353e3b54f3` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x730be4311fbcd6608bec4007ac6c795f8d62f6e5` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x7689ba0a5dc764bc7c6bc8a9b15e373fa4ab133a` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x76c43c915dcf70ba6924c0cb0f1927f37ad2b327` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x86c3f3910824be34ff46c1d5c70c6a59e88894d2` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x88c66bb7096c288426eafef052e3a861e6e994c4` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x88d4b21bd6f20f4abd92943ff9e7878de8f939a7` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x8ad3e1bb775ab5881bfc272acb23ee8975dda865` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x8c488f69620114f9e09bbce358b3a59b006833b8` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x8d7c63b7564cd14a350502b6c34ecd160ed8c9f8` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x9032c16e9f349c69ad6c9b7ccf0018b22345c9c8` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x95c40ec7eeab132685c01a6b70896852393fddf6` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x97d5016ecc7cb0bb522c13e8f2011a72084c5086` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x9b30af0133c10455c395f5a5a3b94a9d0d3b1181` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x9be0ecf2d0e04796efa1cedecb0bf5beb6e86993` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x9f907ce3972bb3d0e1fe8b42ea8109eb2c06eb2f` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xa48391c9b82a16c325c55856a53c48d4ef114dac` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xa6dc787fc322dda0f6b18a3f6c9aa9b4af74d19b` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xaae0ab6c5f7488b3627130004732eef34ef058c9` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xab0776df112c98242d9ed1b6f44d5a04a189bfdd` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xabdd30ded4d2456226332b965057ba2a8a291e9f` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xaed44e3e46808a504ba93de6567e2d7d00bf31f5` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xaf89e889c4a79497c91a77d689d7c232714062fe` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xb2db8e788071d81996f2039640540b4e180ad762` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xb30693c8beac531439e6cae01886eb43c48e8855` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xb916a2f24d94f07665e4259082a1ba031683bf18` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xba5f28e91f1331f957b12d4712ff1cbca78a0293` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xbca7c55043a8df8dec5cadd251dacd5dbbd4b7b6` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xbf2ff92f012603ce8d472ae9ce20886ae68d4c10` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xc1169a9174e084ce58967dfb605ab21b309dcf4e` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xc17f76c0c22539a9c683437ff5d44a2a481ce559` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xc25987638864dc846061774adf17da31f6d32d85` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xc5b91964bbdd3b9d4edf905abac9d777a355c514` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xc927fe2cdf95ba9de38016350e9f83c2d01e14c0` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xd0f26db859745f76ebb4967a5859061fa044e2c7` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xd46cf5e49133621928c93710f70cf5a380372699` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xe1568aab673f35e0cd72927586babe864a0781b5` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xe1a201e7c47de85f563ea0f1f9de2284439db69b` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xebd56cc73bd973b1f3b9fac54a51ebc41c4fe5e3` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xf37b1ad73109fdf0a2936c27548eb2d2c51ea557` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xf40859f9e6ab8b81da9ddfde573bef3080d4c83c` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xf7c693cc5814456669bb9b068697bf55070566aa` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xfc1dccfcbfe0c26022cc6323d60f9abd6fe3e010` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xfe0dcb33cd64d87f8cbb12b693f41d719c18eb25` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -386,52 +386,52 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| hyperliquid | [`0x05a626...5e72f7`](./contracts/hyperliquid-999/0x05a626914c582bff59f0a1aac3a4540def5e72f7/) | AccessManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x28257c...7d3808`](./contracts/hyperliquid-999/0x28257cd6b21519a281a90637462bf7956c7d3808/) | AccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x25b4dc...dbbdfb`](./contracts/hyperliquid-999/0x25b4dc5f96312c7083a58d80d8ecad6ecddbbdfb/) | AssetVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x04b7b5...945e97`](./contracts/hyperliquid-999/0x04b7b5cb8c3b7f35fb604fcf92e0d3925c945e97/) | ClaimReward | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x26493d...d67077`](./contracts/hyperliquid-999/0x26493d5d3121a7938f8835436d777b6d10d67077/) | FundNavFeed | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x55b71e...0e0cfe`](./contracts/hyperliquid-999/0x55b71eea81b3043b65e718d8b6e31a59090e0cfe/) | FundVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x1f808f...c5d173`](./contracts/hyperliquid-999/0x1f808f9f518a31a7737026056f3c2f2bccc5d173/) | HaForDefiStrategy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x4c5754...43dc0c`](./contracts/hyperliquid-999/0x4c57541f4fcbd234a5ecf31cc38572cae943dc0c/) | HaForDefiStrategy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x23be71...37c072`](./contracts/hyperliquid-999/0x23be7156c97e0d7413b35fca81ca236e8137c072/) | HaForwardDestinationStrategy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x391121...a2af18`](./contracts/hyperliquid-999/0x391121d817da42ed3434d281aedbbcc416a2af18/) | HAR | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x02a1d5...f00520`](./contracts/hyperliquid-999/0x02a1d5fba537c7156f5374d2c740fab4bdf00520/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x06adea...031def`](./contracts/hyperliquid-999/0x06adeaaa77a319a639bca0f36f54a6b4bf031def/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x0d4033...2cc429`](./contracts/hyperliquid-999/0x0d403355c2fc8bd4d0dca2e677d1f388882cc429/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x1e1ca9...e4e602`](./contracts/hyperliquid-999/0x1e1ca9ea99a0c37e4e512dc96c4a770877e4e602/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x28e0f1...111dfa`](./contracts/hyperliquid-999/0x28e0f14839cf8dbfae8a561b31d0518c35111dfa/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x48898c...f35c94`](./contracts/hyperliquid-999/0x48898ca06d346b1cf6d3148e83840d7c43f35c94/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x4a06e9...5227a1`](./contracts/hyperliquid-999/0x4a06e9f5c819263c0f803a8a35f44280a15227a1/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x56d782...1579e2`](./contracts/hyperliquid-999/0x56d782d4400fa82e14bfba9bd9e836b4d91579e2/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x5979aa...3f49e2`](./contracts/hyperliquid-999/0x5979aa38e5bcaa2e0b4ba3795c530022103f49e2/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x5bd4dd...cd9b09`](./contracts/hyperliquid-999/0x5bd4ddaf9ad88a4881e4f364ba2e8c8123cd9b09/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x605646...bc8fef`](./contracts/hyperliquid-999/0x6056469445b71867f8d6a6b483bd3b7be4bc8fef/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x65b0a6...ae035f`](./contracts/hyperliquid-999/0x65b0a63fac21d15cc8c4b7a93972e1b1c6ae035f/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x6fab94...bdf59b`](./contracts/hyperliquid-999/0x6fab94fb032dad8e53eb368116d6b72c0bbdf59b/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x7d852a...d4b40d`](./contracts/hyperliquid-999/0x7d852a046b7f47d9164d726a896c67249ad4b40d/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x95f283...6c6f97`](./contracts/hyperliquid-999/0x95f2836501530886afa793f08fefd193fc6c6f97/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0xae24f8...90b136`](./contracts/hyperliquid-999/0xae24f8222832c40edb6bbcdd20030aa79790b136/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0xbdf77a...80b5d5`](./contracts/hyperliquid-999/0xbdf77abf7c360600b6607fcba1562ec6ea80b5d5/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0xf1c57e...0c6a65`](./contracts/hyperliquid-999/0xf1c57eea645d51d03dd02f025d6dc084690c6a65/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x3a0b0e...436f52`](./contracts/hyperliquid-999/0x3a0b0e25becefcda10ac367f4f3dc33060436f52/) | HaVaultReader | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x66341e...046fe9`](./contracts/hyperliquid-999/0x66341e783529c0837ab16791e031e109d9046fe9/) | HaVaultReader | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x76994f...988bdc`](./contracts/hyperliquid-999/0x76994facc865399b08a850e8c1d8a172a2988bdc/) | HaVaultReader | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0xb80235...6ba14c`](./contracts/hyperliquid-999/0xb80235f6f82031f2b9a5bf91c9de46e6b06ba14c/) | HaVaultReader | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x699704...c45dbb`](./contracts/hyperliquid-999/0x6997045d980098206e435d388e81719adfc45dbb/) | HyperCorePriceFeed | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x30c9fc...a2111f`](./contracts/hyperliquid-999/0x30c9fc26028c3065e0bfd9b7ba1c7c9984a2111f/) | MultiVestingDistributorMock | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x45de26...a27f0f`](./contracts/hyperliquid-999/0x45de263bea4587c22c9b21aa392f8e5c5ca27f0f/) | MultiVestingDistributorMock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x7bc78c...ad335f`](./contracts/hyperliquid-999/0x7bc78ca95d1755db67d7dda3108f161c0ead335f/) | MultiVestingDistributorMock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x8e9e87...301d30`](./contracts/hyperliquid-999/0x8e9e8705a50ec4720b14d84e34af73421e301d30/) | NavAggregateModel | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc7c8cd...a9473b`](./contracts/ethereum-1/0xc7c8cdd1e9817fc98ad1b05cd3633c6471a9473b/) | PoolFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x727446...2e6285`](./contracts/arbitrum-42161/0x7274463bf93e0058481042cbd6e0cc73042e6285/) | PoolFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x389c28...991df8`](./contracts/hyperliquid-999/0x389c289413c195918647a1c827476848c1991df8/) | PriceFeed | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x581f83...4e79fc`](./contracts/hyperliquid-999/0x581f839f495625aea422b0103e6a7727e34e79fc/) | ShareToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x7c8516...288aee`](./contracts/hyperliquid-999/0x7c8516bfaa7c3390aff61fe511e2ccc3cf288aee/) | ShareToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x30454c...9ef4a5`](./contracts/hyperliquid-999/0x30454c49b1d5b4366afca609bb7fe13cb39ef4a5/) | VaultManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x48dc37...525a60`](./contracts/hyperliquid-999/0x48dc377fc48823f4e1eeb47039944900cd525a60/) | VaultManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x2e2b6b...0d9db5`](./contracts/hyperliquid-999/0x2e2b6b658dc472188a1f8d39997bc5b1930d9db5/) | VaultManagerAdmin | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x6bf8b2...40b9dc`](./contracts/hyperliquid-999/0x6bf8b2d571333685fb9c1b5d997e126aa040b9dc/) | VaultManagerAdmin | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x05a626914c582bff59f0a1aac3a4540def5e72f7`](./contracts/hyperliquid-999/0x05a626914c582bff59f0a1aac3a4540def5e72f7/) | AccessManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x28257cd6b21519a281a90637462bf7956c7d3808`](./contracts/hyperliquid-999/0x28257cd6b21519a281a90637462bf7956c7d3808/) | AccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x25b4dc5f96312c7083a58d80d8ecad6ecddbbdfb`](./contracts/hyperliquid-999/0x25b4dc5f96312c7083a58d80d8ecad6ecddbbdfb/) | AssetVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x04b7b5cb8c3b7f35fb604fcf92e0d3925c945e97`](./contracts/hyperliquid-999/0x04b7b5cb8c3b7f35fb604fcf92e0d3925c945e97/) | ClaimReward | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x26493d5d3121a7938f8835436d777b6d10d67077`](./contracts/hyperliquid-999/0x26493d5d3121a7938f8835436d777b6d10d67077/) | FundNavFeed | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x55b71eea81b3043b65e718d8b6e31a59090e0cfe`](./contracts/hyperliquid-999/0x55b71eea81b3043b65e718d8b6e31a59090e0cfe/) | FundVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x1f808f9f518a31a7737026056f3c2f2bccc5d173`](./contracts/hyperliquid-999/0x1f808f9f518a31a7737026056f3c2f2bccc5d173/) | HaForDefiStrategy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x4c57541f4fcbd234a5ecf31cc38572cae943dc0c`](./contracts/hyperliquid-999/0x4c57541f4fcbd234a5ecf31cc38572cae943dc0c/) | HaForDefiStrategy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x23be7156c97e0d7413b35fca81ca236e8137c072`](./contracts/hyperliquid-999/0x23be7156c97e0d7413b35fca81ca236e8137c072/) | HaForwardDestinationStrategy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x391121d817da42ed3434d281aedbbcc416a2af18`](./contracts/hyperliquid-999/0x391121d817da42ed3434d281aedbbcc416a2af18/) | HAR | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x02a1d5fba537c7156f5374d2c740fab4bdf00520`](./contracts/hyperliquid-999/0x02a1d5fba537c7156f5374d2c740fab4bdf00520/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x06adeaaa77a319a639bca0f36f54a6b4bf031def`](./contracts/hyperliquid-999/0x06adeaaa77a319a639bca0f36f54a6b4bf031def/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x0d403355c2fc8bd4d0dca2e677d1f388882cc429`](./contracts/hyperliquid-999/0x0d403355c2fc8bd4d0dca2e677d1f388882cc429/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x1e1ca9ea99a0c37e4e512dc96c4a770877e4e602`](./contracts/hyperliquid-999/0x1e1ca9ea99a0c37e4e512dc96c4a770877e4e602/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x28e0f14839cf8dbfae8a561b31d0518c35111dfa`](./contracts/hyperliquid-999/0x28e0f14839cf8dbfae8a561b31d0518c35111dfa/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x48898ca06d346b1cf6d3148e83840d7c43f35c94`](./contracts/hyperliquid-999/0x48898ca06d346b1cf6d3148e83840d7c43f35c94/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x4a06e9f5c819263c0f803a8a35f44280a15227a1`](./contracts/hyperliquid-999/0x4a06e9f5c819263c0f803a8a35f44280a15227a1/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x56d782d4400fa82e14bfba9bd9e836b4d91579e2`](./contracts/hyperliquid-999/0x56d782d4400fa82e14bfba9bd9e836b4d91579e2/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x5979aa38e5bcaa2e0b4ba3795c530022103f49e2`](./contracts/hyperliquid-999/0x5979aa38e5bcaa2e0b4ba3795c530022103f49e2/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x5bd4ddaf9ad88a4881e4f364ba2e8c8123cd9b09`](./contracts/hyperliquid-999/0x5bd4ddaf9ad88a4881e4f364ba2e8c8123cd9b09/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x6056469445b71867f8d6a6b483bd3b7be4bc8fef`](./contracts/hyperliquid-999/0x6056469445b71867f8d6a6b483bd3b7be4bc8fef/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x65b0a63fac21d15cc8c4b7a93972e1b1c6ae035f`](./contracts/hyperliquid-999/0x65b0a63fac21d15cc8c4b7a93972e1b1c6ae035f/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x6fab94fb032dad8e53eb368116d6b72c0bbdf59b`](./contracts/hyperliquid-999/0x6fab94fb032dad8e53eb368116d6b72c0bbdf59b/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x7d852a046b7f47d9164d726a896c67249ad4b40d`](./contracts/hyperliquid-999/0x7d852a046b7f47d9164d726a896c67249ad4b40d/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x95f2836501530886afa793f08fefd193fc6c6f97`](./contracts/hyperliquid-999/0x95f2836501530886afa793f08fefd193fc6c6f97/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0xae24f8222832c40edb6bbcdd20030aa79790b136`](./contracts/hyperliquid-999/0xae24f8222832c40edb6bbcdd20030aa79790b136/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0xbdf77abf7c360600b6607fcba1562ec6ea80b5d5`](./contracts/hyperliquid-999/0xbdf77abf7c360600b6607fcba1562ec6ea80b5d5/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0xf1c57eea645d51d03dd02f025d6dc084690c6a65`](./contracts/hyperliquid-999/0xf1c57eea645d51d03dd02f025d6dc084690c6a65/) | HarmonixStakingUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x3a0b0e25becefcda10ac367f4f3dc33060436f52`](./contracts/hyperliquid-999/0x3a0b0e25becefcda10ac367f4f3dc33060436f52/) | HaVaultReader | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x66341e783529c0837ab16791e031e109d9046fe9`](./contracts/hyperliquid-999/0x66341e783529c0837ab16791e031e109d9046fe9/) | HaVaultReader | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x76994facc865399b08a850e8c1d8a172a2988bdc`](./contracts/hyperliquid-999/0x76994facc865399b08a850e8c1d8a172a2988bdc/) | HaVaultReader | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0xb80235f6f82031f2b9a5bf91c9de46e6b06ba14c`](./contracts/hyperliquid-999/0xb80235f6f82031f2b9a5bf91c9de46e6b06ba14c/) | HaVaultReader | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x6997045d980098206e435d388e81719adfc45dbb`](./contracts/hyperliquid-999/0x6997045d980098206e435d388e81719adfc45dbb/) | HyperCorePriceFeed | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x30c9fc26028c3065e0bfd9b7ba1c7c9984a2111f`](./contracts/hyperliquid-999/0x30c9fc26028c3065e0bfd9b7ba1c7c9984a2111f/) | MultiVestingDistributorMock | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x45de263bea4587c22c9b21aa392f8e5c5ca27f0f`](./contracts/hyperliquid-999/0x45de263bea4587c22c9b21aa392f8e5c5ca27f0f/) | MultiVestingDistributorMock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x7bc78ca95d1755db67d7dda3108f161c0ead335f`](./contracts/hyperliquid-999/0x7bc78ca95d1755db67d7dda3108f161c0ead335f/) | MultiVestingDistributorMock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x8e9e8705a50ec4720b14d84e34af73421e301d30`](./contracts/hyperliquid-999/0x8e9e8705a50ec4720b14d84e34af73421e301d30/) | NavAggregateModel | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc7c8cdd1e9817fc98ad1b05cd3633c6471a9473b`](./contracts/ethereum-1/0xc7c8cdd1e9817fc98ad1b05cd3633c6471a9473b/) | PoolFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x7274463bf93e0058481042cbd6e0cc73042e6285`](./contracts/arbitrum-42161/0x7274463bf93e0058481042cbd6e0cc73042e6285/) | PoolFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x389c289413c195918647a1c827476848c1991df8`](./contracts/hyperliquid-999/0x389c289413c195918647a1c827476848c1991df8/) | PriceFeed | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x581f839f495625aea422b0103e6a7727e34e79fc`](./contracts/hyperliquid-999/0x581f839f495625aea422b0103e6a7727e34e79fc/) | ShareToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x7c8516bfaa7c3390aff61fe511e2ccc3cf288aee`](./contracts/hyperliquid-999/0x7c8516bfaa7c3390aff61fe511e2ccc3cf288aee/) | ShareToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x30454c49b1d5b4366afca609bb7fe13cb39ef4a5`](./contracts/hyperliquid-999/0x30454c49b1d5b4366afca609bb7fe13cb39ef4a5/) | VaultManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x48dc377fc48823f4e1eeb47039944900cd525a60`](./contracts/hyperliquid-999/0x48dc377fc48823f4e1eeb47039944900cd525a60/) | VaultManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x2e2b6b658dc472188a1f8d39997bc5b1930d9db5`](./contracts/hyperliquid-999/0x2e2b6b658dc472188a1f8d39997bc5b1930d9db5/) | VaultManagerAdmin | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x6bf8b2d571333685fb9c1b5d997e126aa040b9dc`](./contracts/hyperliquid-999/0x6bf8b2d571333685fb9c1b5d997e126aa040b9dc/) | VaultManagerAdmin | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

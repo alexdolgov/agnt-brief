@@ -89,7 +89,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| WEEXToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-178546 | `0x1b6647...579716` | ⚠️ Unaudited |
+| WEEXToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-178546 | `0x1b66474c8eca3827f16202907f41f63785579716` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

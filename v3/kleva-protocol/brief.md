@@ -107,14 +107,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | kaia | unit-244310 | `0x58770d...f17e2c` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | kaia | unit-244311 | `0x5fff3a...1a7313` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | kaia | unit-244312 | `0x7ffc41...9611e0` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | kaia | unit-244313 | `0x812668...d070de` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | kaia | unit-244314 | `0xa691c5...ef820a` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | kaia | unit-244315 | `0xa7dacb...eb1916` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | kaia | unit-244316 | `0xd42991...eed137` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | kaia | unit-244317 | `0xfaeec9...4fcf1b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | kaia | unit-244310 | `0x58770d59238b99bd75c4298e33c6493ec4f17e2c` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | kaia | unit-244311 | `0x5fff3a6c16c2208103f318f4713d4d90601a7313` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | kaia | unit-244312 | `0x7ffc4146b43cd099928a813b2c219af2e49611e0` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | kaia | unit-244313 | `0x812668fd9e61ccc7e7bccb0c7f75b1362cd070de` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | kaia | unit-244314 | `0xa691c5891d8a98109663d07bcf3ed8d3edef820a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | kaia | unit-244315 | `0xa7dacb2ada22e0fa14df0efc84bdc1d8e1eb1916` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | kaia | unit-244316 | `0xd429914222b7474ea2c288ec581d303599eed137` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | kaia | unit-244317 | `0xfaeec9b2623b66bbb3545ca24cfc32a8504fcf1b` | ❓ Unverified |
 
 ## Audit Inventory
 

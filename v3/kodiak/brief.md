@@ -52,33 +52,33 @@ The pinned logic-topography run contains 4 contract row(s) across berachain. Str
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x43dac6...806cae`, chain 80094)
-- UnnamedContract (`0x5261c5...02c1d6`, chain 80094)
-- UnnamedContract (`0x5e705e...c3028f`, chain 80094)
-- UnnamedContract (`0x644c8d...ba662b`, chain 80094)
-- UnnamedContract (`0x679a7c...d4791f`, chain 80094)
-- UnnamedContract (`0x89c8c5...3dccf3`, chain 80094)
-- UnnamedContract (`0x89ff70...3e75d8`, chain 80094)
-- UnnamedContract (`0xa73c6f...394b48`, chain 80094)
-- UnnamedContract (`0xac335f...ed9f02`, chain 80094)
-- UnnamedContract (`0xaeaa56...b0c9cf`, chain 80094)
-- UnnamedContract (`0xca11bd...76ca11`, chain 80094)
-- UnnamedContract (`0xcfe9ee...5a3590`, chain 80094)
-- UnnamedContract (`0xd84cbf...710990`, chain 80094)
-- UnnamedContract (`0xd91dd5...bc6022`, chain 80094)
-- UnnamedContract (`0xe301e4...867fb4`, chain 80094)
-- UnnamedContract (`0xe8d7b9...b69eeb`, chain 80094)
-- UnnamedContract (`0xeb109d...cf0b98`, chain 80094)
-- UnnamedContract (`0xeb81a9...f9f0fa`, chain 80094)
-- UnnamedContract (`0xed158c...cbe690`, chain 80094)
-- UnnamedContract (`0xf88ca5...7dd913`, chain 80094)
-- UnnamedContract (`0xfa0276...fc94bb`, chain 80094)
-- UnnamedContract (`0xfe5e8c...b989bd`, chain 80094)
-- UnnamedContract (`0xffcaed...537b8f`, chain 80094)
-- KodiakRewards (`0xbc3dfe...eaf6af`, chain 80094)
-- KodiakToken (`0xc0d1ac...7e21df`, chain 80094)
-- TokenMigrator (`0x88eb43...de8210`, chain 80094)
-- XKodiakToken (`0x040ea7...c04677`, chain 80094)
+- UnnamedContract (`0x43dac637c4383f91b4368041e7a8687da3806cae`, chain 80094)
+- UnnamedContract (`0x5261c5a5f08818c08ed0eb036d9575ba1e02c1d6`, chain 80094)
+- UnnamedContract (`0x5e705e184d233ff2a7cb1553793464a9d0c3028f`, chain 80094)
+- UnnamedContract (`0x644c8d6e501f7c994b74f5cea96abe65d0ba662b`, chain 80094)
+- UnnamedContract (`0x679a7c63fc83b6a4d9c1f931891d705483d4791f`, chain 80094)
+- UnnamedContract (`0x89c8c594f8dea5600bf8a30877e921a5e63dccf3`, chain 80094)
+- UnnamedContract (`0x89ff70257bc747f310bb538eefc46add763e75d8`, chain 80094)
+- UnnamedContract (`0xa73c6f1fec76d5487dc30bdb8f11d1f390394b48`, chain 80094)
+- UnnamedContract (`0xac335fe675699b0ce4c927bdaa572eb647ed9f02`, chain 80094)
+- UnnamedContract (`0xaeaa563d9110f833fa3fb1ff9a35dfba11b0c9cf`, chain 80094)
+- UnnamedContract (`0xca11bde05977b3631167028862be2a173976ca11`, chain 80094)
+- UnnamedContract (`0xcfe9ee61c271fba4d190498b5a71b8cb365a3590`, chain 80094)
+- UnnamedContract (`0xd84cbf0b02636e7f53db9e5e45a616e05d710990`, chain 80094)
+- UnnamedContract (`0xd91dd58387ccd9b66b390ae2d7c66dbd46bc6022`, chain 80094)
+- UnnamedContract (`0xe301e48f77963d3f7dbd2a4796962bd7f3867fb4`, chain 80094)
+- UnnamedContract (`0xe8d7b965ba082835ea917f2b173ff3e035b69eeb`, chain 80094)
+- UnnamedContract (`0xeb109d3935ea00b90b6ebe56e4606a1cdacf0b98`, chain 80094)
+- UnnamedContract (`0xeb81a9eeaf156d4cfec2af364af36ad65cf9f0fa`, chain 80094)
+- UnnamedContract (`0xed158c4b336a6fcb5b193a5570e3a571f6cbe690`, chain 80094)
+- UnnamedContract (`0xf88ca555751f5cda616b1d97282c9fdda07dd913`, chain 80094)
+- UnnamedContract (`0xfa0276f06161cc2f66aa51f3500484edf8fc94bb`, chain 80094)
+- UnnamedContract (`0xfe5e8c83ffe4d9627a75eaa7fee864768db989bd`, chain 80094)
+- UnnamedContract (`0xffcaed1971c28ccceaff111f4ed2235532537b8f`, chain 80094)
+- KodiakRewards (`0xbc3dfe5ee6bce8b301a3661b3528a5c605eaf6af`, chain 80094)
+- KodiakToken (`0xc0d1ac00a30fa4e30e44afc7313d6312c87e21df`, chain 80094)
+- TokenMigrator (`0x88eb43086eddf189856af7b00a09259598de8210`, chain 80094)
+- XKodiakToken (`0x040ea7d4b559357425407fdfc3c774c5dfc04677`, chain 80094)
 
 ## Contract Surface Quality
 
@@ -124,10 +124,10 @@ The pinned logic-topography run contains 4 contract row(s) across berachain. Str
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| KodiakRewards | unknown | project_anchor | own_supporting | 0 | berachain | unit-244406 | `0xbc3dfe...eaf6af` | ⚠️ Unaudited |
-| KodiakToken | token | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | berachain | unit-244407 | `0xc0d1ac...7e21df` | ⚠️ Unaudited |
-| TokenMigrator | token | project_anchor | own_supporting | 0 | berachain | unit-244400 | `0x88eb43...de8210` | ⚠️ Unaudited |
-| XKodiakToken | token | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | berachain | unit-244393 | `0x040ea7...c04677` | ⚠️ Unaudited |
+| KodiakRewards | unknown | project_anchor | own_supporting | 0 | berachain | unit-244406 | `0xbc3dfe5ee6bce8b301a3661b3528a5c605eaf6af` | ⚠️ Unaudited |
+| KodiakToken | token | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | berachain | unit-244407 | `0xc0d1ac00a30fa4e30e44afc7313d6312c87e21df` | ⚠️ Unaudited |
+| TokenMigrator | token | project_anchor | own_supporting | 0 | berachain | unit-244400 | `0x88eb43086eddf189856af7b00a09259598de8210` | ⚠️ Unaudited |
+| XKodiakToken | token | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | berachain | unit-244393 | `0x040ea7d4b559357425407fdfc3c774c5dfc04677` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -147,30 +147,30 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244394 | `0x43dac6...806cae` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244395 | `0x5261c5...02c1d6` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244396 | `0x5e705e...c3028f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244397 | `0x644c8d...ba662b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244398 | `0x679a7c...d4791f` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | berachain | unit-244399 | `0x696969...696969` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244401 | `0x89c8c5...3dccf3` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244402 | `0x89ff70...3e75d8` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244403 | `0xa73c6f...394b48` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244404 | `0xac335f...ed9f02` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244405 | `0xaeaa56...b0c9cf` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244408 | `0xca11bd...76ca11` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244409 | `0xcfe9ee...5a3590` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244410 | `0xd84cbf...710990` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244411 | `0xd91dd5...bc6022` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244412 | `0xe301e4...867fb4` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244413 | `0xe8d7b9...b69eeb` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244414 | `0xeb109d...cf0b98` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244415 | `0xeb81a9...f9f0fa` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244416 | `0xed158c...cbe690` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244417 | `0xf88ca5...7dd913` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244418 | `0xfa0276...fc94bb` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244419 | `0xfe5e8c...b989bd` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244420 | `0xffcaed...537b8f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244394 | `0x43dac637c4383f91b4368041e7a8687da3806cae` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244395 | `0x5261c5a5f08818c08ed0eb036d9575ba1e02c1d6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244396 | `0x5e705e184d233ff2a7cb1553793464a9d0c3028f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244397 | `0x644c8d6e501f7c994b74f5cea96abe65d0ba662b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244398 | `0x679a7c63fc83b6a4d9c1f931891d705483d4791f` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | berachain | unit-244399 | `0x6969696969696969696969696969696969696969` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244401 | `0x89c8c594f8dea5600bf8a30877e921a5e63dccf3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244402 | `0x89ff70257bc747f310bb538eefc46add763e75d8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244403 | `0xa73c6f1fec76d5487dc30bdb8f11d1f390394b48` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244404 | `0xac335fe675699b0ce4c927bdaa572eb647ed9f02` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244405 | `0xaeaa563d9110f833fa3fb1ff9a35dfba11b0c9cf` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244408 | `0xca11bde05977b3631167028862be2a173976ca11` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244409 | `0xcfe9ee61c271fba4d190498b5a71b8cb365a3590` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244410 | `0xd84cbf0b02636e7f53db9e5e45a616e05d710990` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244411 | `0xd91dd58387ccd9b66b390ae2d7c66dbd46bc6022` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244412 | `0xe301e48f77963d3f7dbd2a4796962bd7f3867fb4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244413 | `0xe8d7b965ba082835ea917f2b173ff3e035b69eeb` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244414 | `0xeb109d3935ea00b90b6ebe56e4606a1cdacf0b98` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244415 | `0xeb81a9eeaf156d4cfec2af364af36ad65cf9f0fa` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244416 | `0xed158c4b336a6fcb5b193a5570e3a571f6cbe690` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244417 | `0xf88ca555751f5cda616b1d97282c9fdda07dd913` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244418 | `0xfa0276f06161cc2f66aa51f3500484edf8fc94bb` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244419 | `0xfe5e8c83ffe4d9627a75eaa7fee864768db989bd` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-244420 | `0xffcaed1971c28ccceaff111f4ed2235532537b8f` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -203,18 +203,18 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/s1TqcqIFZ5UkYF7iD5Nt/kodiak_A3_by_0xmacro.pdf | FarmFactory | unmatched — not counted | — | listed in Source Code table | no |
-| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/s1TqcqIFZ5UkYF7iD5Nt/kodiak_A3_by_0xmacro.pdf | KodiakFarm | own contract | 0xeb81a9… (selected) `0xeb81a9...f9f0fa` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/s1TqcqIFZ5UkYF7iD5Nt/kodiak_A3_by_0xmacro.pdf | KodiakFarm | own contract | 0xeb81a9… (selected) `0xeb81a9eeaf156d4cfec2af364af36ad65cf9f0fa` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/s1TqcqIFZ5UkYF7iD5Nt/kodiak_A3_by_0xmacro.pdf | KDK | unmatched — not counted | — | listed in Source Code table | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/s1TqcqIFZ5UkYF7iD5Nt/kodiak_A3_by_0xmacro.pdf | xKDK | unmatched — not counted | — | listed in Source Code table | no |
-| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/s1TqcqIFZ5UkYF7iD5Nt/kodiak_A3_by_0xmacro.pdf | KodiakIsland | own contract | 0xcfe9ee… (selected) `0xcfe9ee...5a3590` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/s1TqcqIFZ5UkYF7iD5Nt/kodiak_A3_by_0xmacro.pdf | KodiakIslandFactory | own contract | 0x5261c5… (selected) `0x5261c5...02c1d6` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/s1TqcqIFZ5UkYF7iD5Nt/kodiak_A3_by_0xmacro.pdf | KodiakIsland | own contract | 0xcfe9ee… (selected) `0xcfe9ee61c271fba4d190498b5a71b8cb365a3590` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/s1TqcqIFZ5UkYF7iD5Nt/kodiak_A3_by_0xmacro.pdf | KodiakIslandFactory | own contract | 0x5261c5… (selected) `0x5261c5a5f08818c08ed0eb036d9575ba1e02c1d6` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/s1TqcqIFZ5UkYF7iD5Nt/kodiak_A3_by_0xmacro.pdf | KodiakIslandWithRouter | unmatched — not counted | — | listed in Source Code table | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/s1TqcqIFZ5UkYF7iD5Nt/kodiak_A3_by_0xmacro.pdf | KodiakIslandStorage | unmatched — not counted | — | listed in Source Code table | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/s1TqcqIFZ5UkYF7iD5Nt/kodiak_A3_by_0xmacro.pdf | OwnableUninitialized | unmatched — not counted | — | listed in Source Code table | no |
-| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/ierRx3DPkFpZU4OY3fB5/kodiak_A1_by_0xmacro.pdf | UniswapV3Factory | own contract | 0xd84cbf… (selected) `0xd84cbf...710990` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/ierRx3DPkFpZU4OY3fB5/kodiak_A1_by_0xmacro.pdf | UniswapV3Factory | own contract | 0xd84cbf… (selected) `0xd84cbf0b02636e7f53db9e5e45a616e05d710990` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/ierRx3DPkFpZU4OY3fB5/kodiak_A1_by_0xmacro.pdf | UniswapV3Pool | unmatched — not counted | — | listed in scope table | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/ierRx3DPkFpZU4OY3fB5/kodiak_A1_by_0xmacro.pdf | UniswapV2ERC20 | unmatched — not counted | — | listed in scope table | no |
-| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/ierRx3DPkFpZU4OY3fB5/kodiak_A1_by_0xmacro.pdf | UniswapV2Factory | own contract | 0x5e705e… (selected) `0x5e705e...c3028f` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/ierRx3DPkFpZU4OY3fB5/kodiak_A1_by_0xmacro.pdf | UniswapV2Factory | own contract | 0x5e705e… (selected) `0x5e705e184d233ff2a7cb1553793464a9d0c3028f` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/ierRx3DPkFpZU4OY3fB5/kodiak_A1_by_0xmacro.pdf | UniswapV2Pair | unmatched — not counted | — | listed in scope table | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/ierRx3DPkFpZU4OY3fB5/kodiak_A1_by_0xmacro.pdf | KodiakFactoryV1 | unmatched — not counted | — | listed in scope table | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/ierRx3DPkFpZU4OY3fB5/kodiak_A1_by_0xmacro.pdf | KodiakVaultV1 | unmatched — not counted | — | listed in scope table | no |
@@ -222,22 +222,22 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/ierRx3DPkFpZU4OY3fB5/kodiak_A1_by_0xmacro.pdf | KDK | unmatched — not counted | — | listed in scope table | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/ierRx3DPkFpZU4OY3fB5/kodiak_A1_by_0xmacro.pdf | TokenRewards | unmatched — not counted | — | listed in scope table | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/ierRx3DPkFpZU4OY3fB5/kodiak_A1_by_0xmacro.pdf | xKDK | unmatched — not counted | — | listed in scope table | no |
-| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/ierRx3DPkFpZU4OY3fB5/kodiak_A1_by_0xmacro.pdf | NonfungiblePositionManager | own contract | 0xfe5e8c… (selected) `0xfe5e8c...b989bd` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/ierRx3DPkFpZU4OY3fB5/kodiak_A1_by_0xmacro.pdf | NonfungiblePositionManager | own contract | 0xfe5e8c… (selected) `0xfe5e8c83ffe4d9627a75eaa7fee864768db989bd` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/ierRx3DPkFpZU4OY3fB5/kodiak_A1_by_0xmacro.pdf | NonfungibleTokenPositionDescriptor | unmatched — not counted | — | listed in scope table | no |
-| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/ierRx3DPkFpZU4OY3fB5/kodiak_A1_by_0xmacro.pdf | SwapRouter | own contract | 0xed158c… (selected) `0xed158c...cbe690` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/ierRx3DPkFpZU4OY3fB5/kodiak_A1_by_0xmacro.pdf | SwapRouter | own contract | 0xed158c… (selected) `0xed158c4b336a6fcb5b193a5570e3a571f6cbe690` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/ierRx3DPkFpZU4OY3fB5/kodiak_A1_by_0xmacro.pdf | UniswapV2Router01 | unmatched — not counted | — | listed in scope table | no |
-| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/ierRx3DPkFpZU4OY3fB5/kodiak_A1_by_0xmacro.pdf | UniswapV2Router02 | own contract | 0xd91dd5… (selected) `0xd91dd5...bc6022` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/ierRx3DPkFpZU4OY3fB5/kodiak_A1_by_0xmacro.pdf | SwapRouter02 | own contract | 0xe301e4… (selected) `0xe301e4...867fb4` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/ierRx3DPkFpZU4OY3fB5/kodiak_A1_by_0xmacro.pdf | UniswapV2Router02 | own contract | 0xd91dd5… (selected) `0xd91dd58387ccd9b66b390ae2d7c66dbd46bc6022` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/ierRx3DPkFpZU4OY3fB5/kodiak_A1_by_0xmacro.pdf | SwapRouter02 | own contract | 0xe301e4… (selected) `0xe301e48f77963d3f7dbd2a4796962bd7f3867fb4` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/ierRx3DPkFpZU4OY3fB5/kodiak_A1_by_0xmacro.pdf | V2SwapRouter | unmatched — not counted | — | listed in scope table | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/ierRx3DPkFpZU4OY3fB5/kodiak_A1_by_0xmacro.pdf | V3SwapRouter | unmatched — not counted | — | listed in scope table | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/ierRx3DPkFpZU4OY3fB5/kodiak_A1_by_0xmacro.pdf | KodiakV1RouterStaking | unmatched — not counted | — | listed in scope table | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/Sz7GaLLOLF7H4FmxpGTR/kodiak_A2_by_0xmacro.pdf | PandaMath | unmatched — not counted | — | listed in scope table | no |
-| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/Sz7GaLLOLF7H4FmxpGTR/kodiak_A2_by_0xmacro.pdf | PandaFactory | own contract | 0xac335f… (selected) `0xac335f...ed9f02` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/Sz7GaLLOLF7H4FmxpGTR/kodiak_A2_by_0xmacro.pdf | PandaFactory | own contract | 0xac335f… (selected) `0xac335fe675699b0ce4c927bdaa572eb647ed9f02` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/Sz7GaLLOLF7H4FmxpGTR/kodiak_A2_by_0xmacro.pdf | PandaPool | unmatched — not counted | — | listed in scope table | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/Sz7GaLLOLF7H4FmxpGTR/kodiak_A2_by_0xmacro.pdf | PandaToken | unmatched — not counted | — | listed in scope table | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/Sz7GaLLOLF7H4FmxpGTR/kodiak_A2_by_0xmacro.pdf | IPandaFactory | unmatched — not counted | — | mentioned in findings Q-1 and Q-2 as an interface | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | UniswapV2ERC20 | unmatched — not counted | — | — | no |
-| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | UniswapV2Factory | own contract | 0x5e705e… (selected) `0x5e705e...c3028f` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | UniswapV2Factory | own contract | 0x5e705e… (selected) `0x5e705e184d233ff2a7cb1553793464a9d0c3028f` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | UniswapV2Pair | unmatched — not counted | — | — | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | IERC20 | unmatched — not counted | — | — | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | IUniswapV2Callee | unmatched — not counted | — | — | no |
@@ -247,7 +247,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | Math | unmatched — not counted | — | — | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | SafeMath | unmatched — not counted | — | — | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | UQ112x112 | unmatched — not counted | — | — | no |
-| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | UniswapV3Factory | own contract | 0xd84cbf… (selected) `0xd84cbf...710990` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | UniswapV3Factory | own contract | 0xd84cbf… (selected) `0xd84cbf0b02636e7f53db9e5e45a616e05d710990` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | UniswapV3Pool | unmatched — not counted | — | — | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | UniswapV3PoolDeployer | unmatched — not counted | — | — | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | IERC20Minimal | unmatched — not counted | — | — | no |
@@ -303,7 +303,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | Proxy | unmatched — not counted | — | — | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | LiquidityAmounts | unmatched — not counted | — | listed in scope and findings | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | InitCodeHash | unmatched — not counted | — | — | no |
-| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | SwapRouter02 | own contract | 0xe301e4… (selected) `0xe301e4...867fb4` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | SwapRouter02 | own contract | 0xe301e4… (selected) `0xe301e48f77963d3f7dbd2a4796962bd7f3867fb4` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | V2SwapRouter | unmatched — not counted | — | listed in scope and findings | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | V3SwapRouter | unmatched — not counted | — | listed in scope and findings | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | ApproveAndCall | unmatched — not counted | — | — | no |
@@ -327,16 +327,16 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | IV2SwapRouter | unmatched — not counted | — | — | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | IV3SwapRouter | unmatched — not counted | — | — | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | IWETH | unmatched — not counted | — | — | no |
-| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | MixedRouteQuoterV1 | own contract | 0xfa0276… (selected) `0xfa0276...fc94bb` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | MixedRouteQuoterV1 | own contract | 0xfa0276… (selected) `0xfa0276f06161cc2f66aa51f3500484edf8fc94bb` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | Quoter | unmatched — not counted | — | — | no |
-| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | QuoterV2 | own contract | 0x644c8d… (selected) `0x644c8d...ba662b` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | QuoterV2 | own contract | 0x644c8d… (selected) `0x644c8d6e501f7c994b74f5cea96abe65d0ba662b` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | TokenValidator | unmatched — not counted | — | — | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | Constants | unmatched — not counted | — | — | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | PoolTicksCounter | unmatched — not counted | — | — | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | UniswapV2Library | unmatched — not counted | — | — | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | UniswapV2Migrator | unmatched — not counted | — | — | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | UniswapV2Router01 | unmatched — not counted | — | — | no |
-| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | UniswapV2Router02 | own contract | 0xd91dd5… (selected) `0xd91dd5...bc6022` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | UniswapV2Router02 | own contract | 0xd91dd5… (selected) `0xd91dd58387ccd9b66b390ae2d7c66dbd46bc6022` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | IUniswapV2Migrator | unmatched — not counted | — | — | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | IUniswapV2Router01 | unmatched — not counted | — | — | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | IUniswapV2Router02 | unmatched — not counted | — | — | no |
@@ -344,14 +344,14 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | IUniswapV1Factory | unmatched — not counted | — | — | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | UniswapV2LiquidityMathLibrary | unmatched — not counted | — | — | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | UniswapV2OracleLibrary | unmatched — not counted | — | — | no |
-| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | NonfungiblePositionManager | own contract | 0xfe5e8c… (selected) `0xfe5e8c...b989bd` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | NonfungiblePositionManager | own contract | 0xfe5e8c… (selected) `0xfe5e8c83ffe4d9627a75eaa7fee864768db989bd` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | NonfungibleTokenPositionDescriptor | unmatched — not counted | — | — | no |
-| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | SwapRouter | own contract | 0xed158c… (selected) `0xed158c...cbe690` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | SwapRouter | own contract | 0xed158c… (selected) `0xed158c4b336a6fcb5b193a5570e3a571f6cbe690` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | V3Migrator | unmatched — not counted | — | — | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | BlockTimestamp | unmatched — not counted | — | — | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | ERC721Permit | unmatched — not counted | — | — | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | LiquidityManagement | unmatched — not counted | — | — | no |
-| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | Multicall | own contract | 0x89ff70… (selected) `0x89ff70...3e75d8` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | Multicall | own contract | 0x89ff70… (selected) `0x89ff70257bc747f310bb538eefc46add763e75d8` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | PeripheryImmutableState | unmatched — not counted | — | — | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | PeripheryPayments | unmatched — not counted | — | — | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | PeripheryPaymentsWithFee | unmatched — not counted | — | — | no |
@@ -375,7 +375,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | IERC1271 | unmatched — not counted | — | — | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | IERC20PermitAllowed | unmatched — not counted | — | — | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | IWETH9 | unmatched — not counted | — | — | no |
-| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | TickLens | own contract | 0xa73c6f… (selected) `0xa73c6f...394b48` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | TickLens | own contract | 0xa73c6f… (selected) `0xa73c6f1fec76d5487dc30bdb8f11d1f390394b48` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | UniswapInterfaceMulticall | unmatched — not counted | — | — | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | BytesLib | unmatched — not counted | — | — | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | CallbackValidation | unmatched — not counted | — | — | no |
@@ -397,10 +397,10 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | IKodiakV1RouterStaking | unmatched — not counted | — | — | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | IKodiakVaultV1 | unmatched — not counted | — | — | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf | GelatoBytes | unmatched — not counted | — | — | no |
-| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/Ei2WQL3ewlsPDWDnlV9D/AstraSec-AuditReport-Kodiak-Bault.pdf | BaultFactory | own contract | 0xffcaed… (selected) `0xffcaed...537b8f` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/Ei2WQL3ewlsPDWDnlV9D/AstraSec-AuditReport-Kodiak-Bault.pdf | BaultFactory | own contract | 0xffcaed… (selected) `0xffcaed1971c28ccceaff111f4ed2235532537b8f` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/Ei2WQL3ewlsPDWDnlV9D/AstraSec-AuditReport-Kodiak-Bault.pdf | Bault | unmatched — not counted | — | listed in source code section | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/Ei2WQL3ewlsPDWDnlV9D/AstraSec-AuditReport-Kodiak-Bault.pdf | BgtConverter | unmatched — not counted | — | listed in source code section | no |
-| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/Ei2WQL3ewlsPDWDnlV9D/AstraSec-AuditReport-Kodiak-Bault.pdf | BaultRouter | own contract | 0x89c8c5… (selected) `0x89c8c5...3dccf3` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/Ei2WQL3ewlsPDWDnlV9D/AstraSec-AuditReport-Kodiak-Bault.pdf | BaultRouter | own contract | 0x89c8c5… (selected) `0x89c8c594f8dea5600bf8a30877e921a5e63dccf3` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/HLRHY2QFxlXLD1Yxcqku/AstraSec-AuditReport-Kodiak-DEX.pdf | KodiakMetaRouter | unmatched — not counted | — | mentioned in vulnerability details as target | no |
 | spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/HLRHY2QFxlXLD1Yxcqku/AstraSec-AuditReport-Kodiak-DEX.pdf | KodiakExecutor | unmatched — not counted | — | mentioned in vulnerability details as target | no |
 | audits.md | Kodiak Islands | unmatched — not counted | — | listed in scope for core protocol audits | no |
@@ -420,8 +420,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| berachain | `0xbc3dfe...eaf6af` | KodiakRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | `0x88eb43...de8210` | TokenMigrator | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | `0xbc3dfe5ee6bce8b301a3661b3528a5c605eaf6af` | KodiakRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | `0x88eb43086eddf189856af7b00a09259598de8210` | TokenMigrator | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

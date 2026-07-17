@@ -60,17 +60,17 @@ The protocol comprises 4 functional families. Its contracts share 15 common proj
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Controller | unknown | bsc | n/a | 2 deployments: ethereum `0xd819d9...8d4ab4`; bsc [`0xc11c33...1908da`](./contracts/bsc-56/0xc11c339a1b24b3a10f81a309a1d271de141908da/) | ⚠️ Unaudited |
-| ControllerV2 | governance | ethereum | n/a | [`0xbb7d94...fd1a92`](./contracts/ethereum-1/0xbb7d94a423f4978545ecf73161f0678e8afd1a92/) | ⚠️ Unaudited |
-| ControllerV2 | unknown | bsc | n/a | [`0x3c2ddd...32b571`](./contracts/bsc-56/0x3c2ddd486c07343b711a4415cdc9ab90ed32b571/) | ⚠️ Unaudited |
-| ControllerV2 | unknown | polygon | n/a | 2 deployments: polygon [`0x171d5c...0d7f28`](./contracts/polygon-137/0x171d5c31d196fae671e95594372f049bfd0d7f28/); polygon `0xdff18a...b96881` | ⚠️ Unaudited |
-| ControllerV2 | unknown | avalanche | n/a | 2 deployments: avalanche [`0x0ec312...6679c6`](./contracts/avalanche-43114/0x0ec3126390c606be63a0fa6585e68075f06679c6/); avalanche `0xdff18a...b96881` | ⚠️ Unaudited |
-| KEther | unknown | avalanche | n/a | 4 deployments: ethereum `0xa58e82...d35780`; bsc `0x5fbe4e...60b055`; polygon `0xf186a6...2425f9`; avalanche [`0x0544be...a2fc39`](./contracts/avalanche-43114/0x0544be6693763d64c02f49f16986ba1390a2fc39/) | ⚠️ Unaudited |
-| Kine | unknown | polygon | n/a | 3 deployments: ethereum `0xcbfef8...85f05d`; bsc `0xbfa9df...752d7f`; polygon [`0xa9c174...6ccd87`](./contracts/polygon-137/0xa9c1740fa56e4c0f6ce5a792fd27095c8b6ccd87/) | ⚠️ Unaudited |
-| KineExchangeTreasury | operational_periphery | bsc | n/a | 2 deployments: bsc [`0x1568a7...59eba3`](./contracts/bsc-56/0x1568a7f0bdf67d37dc963c345dbc4a598859eba3/); polygon `0x1d903b...32a19f` | ⚠️ Unaudited |
-| KineRanch | unknown | polygon | n/a | 2 deployments: ethereum `0xa8d764...9cc692`; polygon [`0x66a782...7adeda`](./contracts/polygon-137/0x66a782c9a077f5adc988cc0b5fb1cdcc9d7adeda/) | ⚠️ Unaudited |
-| KineUSD | unknown | ethereum | n/a | 2 deployments: ethereum [`0xd4c220...896a06`](./contracts/ethereum-1/0xd4c220ccac0335334d425a90f58de7c667896a06/); bsc `0xd819d9...8d4ab4` | ⚠️ Unaudited |
-| KUSDMinterV3 | unknown | ethereum | n/a | [`0xcea2d0...d7d128`](./contracts/ethereum-1/0xcea2d0a0413b6bf052eb2eca9c256ee25ad7d128/) | ⚠️ Unaudited |
+| Controller | unknown | bsc | n/a | 2 deployments: ethereum `0xd819d96f9d28ea85c1dd78e66d7241134e8d4ab4`; bsc [`0xc11c339a1b24b3a10f81a309a1d271de141908da`](./contracts/bsc-56/0xc11c339a1b24b3a10f81a309a1d271de141908da/) | ⚠️ Unaudited |
+| ControllerV2 | governance | ethereum | n/a | [`0xbb7d94a423f4978545ecf73161f0678e8afd1a92`](./contracts/ethereum-1/0xbb7d94a423f4978545ecf73161f0678e8afd1a92/) | ⚠️ Unaudited |
+| ControllerV2 | unknown | bsc | n/a | [`0x3c2ddd486c07343b711a4415cdc9ab90ed32b571`](./contracts/bsc-56/0x3c2ddd486c07343b711a4415cdc9ab90ed32b571/) | ⚠️ Unaudited |
+| ControllerV2 | unknown | polygon | n/a | 2 deployments: polygon [`0x171d5c31d196fae671e95594372f049bfd0d7f28`](./contracts/polygon-137/0x171d5c31d196fae671e95594372f049bfd0d7f28/); polygon `0xdff18ac4146d67bf2ccbe98e7db1e4fa32b96881` | ⚠️ Unaudited |
+| ControllerV2 | unknown | avalanche | n/a | 2 deployments: avalanche [`0x0ec3126390c606be63a0fa6585e68075f06679c6`](./contracts/avalanche-43114/0x0ec3126390c606be63a0fa6585e68075f06679c6/); avalanche `0xdff18ac4146d67bf2ccbe98e7db1e4fa32b96881` | ⚠️ Unaudited |
+| KEther | unknown | avalanche | n/a | 4 deployments: ethereum `0xa58e822de1517aae7114714fb354ee853cd35780`; bsc `0x5fbe4eb536dadbcee54d5b55ed6559e29c60b055`; polygon `0xf186a66c2bd0509beaafca2a16d6c39ba02425f9`; avalanche [`0x0544be6693763d64c02f49f16986ba1390a2fc39`](./contracts/avalanche-43114/0x0544be6693763d64c02f49f16986ba1390a2fc39/) | ⚠️ Unaudited |
+| Kine | unknown | polygon | n/a | 3 deployments: ethereum `0xcbfef8fdd706cde6f208460f2bf39aa9c785f05d`; bsc `0xbfa9df9ed8805e657d0feab5d186c6a567752d7f`; polygon [`0xa9c1740fa56e4c0f6ce5a792fd27095c8b6ccd87`](./contracts/polygon-137/0xa9c1740fa56e4c0f6ce5a792fd27095c8b6ccd87/) | ⚠️ Unaudited |
+| KineExchangeTreasury | operational_periphery | bsc | n/a | 2 deployments: bsc [`0x1568a7f0bdf67d37dc963c345dbc4a598859eba3`](./contracts/bsc-56/0x1568a7f0bdf67d37dc963c345dbc4a598859eba3/); polygon `0x1d903b731b0173654afe612d12b4489c7b32a19f` | ⚠️ Unaudited |
+| KineRanch | unknown | polygon | n/a | 2 deployments: ethereum `0xa8d7643324df0f38764f514eb1a99d8f379cc692`; polygon [`0x66a782c9a077f5adc988cc0b5fb1cdcc9d7adeda`](./contracts/polygon-137/0x66a782c9a077f5adc988cc0b5fb1cdcc9d7adeda/) | ⚠️ Unaudited |
+| KineUSD | unknown | ethereum | n/a | 2 deployments: ethereum [`0xd4c220ccac0335334d425a90f58de7c667896a06`](./contracts/ethereum-1/0xd4c220ccac0335334d425a90f58de7c667896a06/); bsc `0xd819d96f9d28ea85c1dd78e66d7241134e8d4ab4` | ⚠️ Unaudited |
+| KUSDMinterV3 | unknown | ethereum | n/a | [`0xcea2d0a0413b6bf052eb2eca9c256ee25ad7d128`](./contracts/ethereum-1/0xcea2d0a0413b6bf052eb2eca9c256ee25ad7d128/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -90,8 +90,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | polygon | n/a | `0x9a5c4b...8c5199` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x1641b4...200e5d` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x9a5c4bdab8213098cac594317e47fd154f8c5199` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x1641b4009f36ddb8871b7aef157c15b4d4200e5d` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -104,17 +104,17 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0xc11c33...1908da`](./contracts/bsc-56/0xc11c339a1b24b3a10f81a309a1d271de141908da/) | Controller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xbb7d94...fd1a92`](./contracts/ethereum-1/0xbb7d94a423f4978545ecf73161f0678e8afd1a92/) | ControllerV2 | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x3c2ddd...32b571`](./contracts/bsc-56/0x3c2ddd486c07343b711a4415cdc9ab90ed32b571/) | ControllerV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x171d5c...0d7f28`](./contracts/polygon-137/0x171d5c31d196fae671e95594372f049bfd0d7f28/) | ControllerV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x0ec312...6679c6`](./contracts/avalanche-43114/0x0ec3126390c606be63a0fa6585e68075f06679c6/) | ControllerV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x0544be...a2fc39`](./contracts/avalanche-43114/0x0544be6693763d64c02f49f16986ba1390a2fc39/) | KEther | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0xa9c174...6ccd87`](./contracts/polygon-137/0xa9c1740fa56e4c0f6ce5a792fd27095c8b6ccd87/) | Kine | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x1568a7...59eba3`](./contracts/bsc-56/0x1568a7f0bdf67d37dc963c345dbc4a598859eba3/) | KineExchangeTreasury | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x66a782...7adeda`](./contracts/polygon-137/0x66a782c9a077f5adc988cc0b5fb1cdcc9d7adeda/) | KineRanch | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xd4c220...896a06`](./contracts/ethereum-1/0xd4c220ccac0335334d425a90f58de7c667896a06/) | KineUSD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xcea2d0...d7d128`](./contracts/ethereum-1/0xcea2d0a0413b6bf052eb2eca9c256ee25ad7d128/) | KUSDMinterV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xc11c339a1b24b3a10f81a309a1d271de141908da`](./contracts/bsc-56/0xc11c339a1b24b3a10f81a309a1d271de141908da/) | Controller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xbb7d94a423f4978545ecf73161f0678e8afd1a92`](./contracts/ethereum-1/0xbb7d94a423f4978545ecf73161f0678e8afd1a92/) | ControllerV2 | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x3c2ddd486c07343b711a4415cdc9ab90ed32b571`](./contracts/bsc-56/0x3c2ddd486c07343b711a4415cdc9ab90ed32b571/) | ControllerV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x171d5c31d196fae671e95594372f049bfd0d7f28`](./contracts/polygon-137/0x171d5c31d196fae671e95594372f049bfd0d7f28/) | ControllerV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0x0ec3126390c606be63a0fa6585e68075f06679c6`](./contracts/avalanche-43114/0x0ec3126390c606be63a0fa6585e68075f06679c6/) | ControllerV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0x0544be6693763d64c02f49f16986ba1390a2fc39`](./contracts/avalanche-43114/0x0544be6693763d64c02f49f16986ba1390a2fc39/) | KEther | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xa9c1740fa56e4c0f6ce5a792fd27095c8b6ccd87`](./contracts/polygon-137/0xa9c1740fa56e4c0f6ce5a792fd27095c8b6ccd87/) | Kine | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x1568a7f0bdf67d37dc963c345dbc4a598859eba3`](./contracts/bsc-56/0x1568a7f0bdf67d37dc963c345dbc4a598859eba3/) | KineExchangeTreasury | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x66a782c9a077f5adc988cc0b5fb1cdcc9d7adeda`](./contracts/polygon-137/0x66a782c9a077f5adc988cc0b5fb1cdcc9d7adeda/) | KineRanch | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xd4c220ccac0335334d425a90f58de7c667896a06`](./contracts/ethereum-1/0xd4c220ccac0335334d425a90f58de7c667896a06/) | KineUSD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xcea2d0a0413b6bf052eb2eca9c256ee25ad7d128`](./contracts/ethereum-1/0xcea2d0a0413b6bf052eb2eca9c256ee25ad7d128/) | KUSDMinterV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

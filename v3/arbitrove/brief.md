@@ -52,12 +52,12 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x254eae...55afdb`, chain 42161)
-- UnnamedContract (`0x72f9b1...32524a`, chain 42161)
-- UnnamedContract (`0x978930...711150`, chain 42161)
-- UnnamedContract (`0x9d4903...84e6b7`, chain 42161)
-- UnnamedContract (`0xb49b6a...04478a`, chain 42161)
-- ArbitroveGovernanceToken (`0x982239...9c4c07`, chain 42161)
+- UnnamedContract (`0x254eaede62ad856ff892379a1a547213a355afdb`, chain 42161)
+- UnnamedContract (`0x72f9b18f1091b1f8a0981afe44ad0123ae32524a`, chain 42161)
+- UnnamedContract (`0x97893012fbe4ff00dfb18871e7dd7f6394711150`, chain 42161)
+- UnnamedContract (`0x9d4903f755fc12cded3012686c2064e98b84e6b7`, chain 42161)
+- UnnamedContract (`0xb49b6a3fd1f4bb510ef776de7a88a9e65904478a`, chain 42161)
+- ArbitroveGovernanceToken (`0x982239d38af50b0168da33346d85fb12929c4c07`, chain 42161)
 
 ## Contract Surface Quality
 
@@ -103,8 +103,8 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ArbitroveGovernanceToken | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-379253 | `0x982239...9c4c07` | ⚠️ Unaudited |
-| NitroPassport | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x348fdf...bada86` | ⚠️ Unaudited |
+| ArbitroveGovernanceToken | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-379253 | `0x982239d38af50b0168da33346d85fb12929c4c07` | ⚠️ Unaudited |
+| NitroPassport | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x348fdfe2c35934a96c1353185f09d0f9efbada86` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -124,11 +124,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-379243 | `0x254eae...55afdb` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-379245 | `0x72f9b1...32524a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-379247 | `0x978930...711150` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-379249 | `0x9d4903...84e6b7` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-379251 | `0xb49b6a...04478a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-379243 | `0x254eaede62ad856ff892379a1a547213a355afdb` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-379245 | `0x72f9b18f1091b1f8a0981afe44ad0123ae32524a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-379247 | `0x97893012fbe4ff00dfb18871e7dd7f6394711150` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-379249 | `0x9d4903f755fc12cded3012686c2064e98b84e6b7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-379251 | `0xb49b6a3fd1f4bb510ef776de7a88a9e65904478a` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -154,7 +154,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | `0x982239...9c4c07` | ArbitroveGovernanceToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0x982239d38af50b0168da33346d85fb12929c4c07` | ArbitroveGovernanceToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

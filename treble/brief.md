@@ -62,7 +62,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| TREB | unknown | base | n/a | [`0xb96450...ffac4e`](./contracts/base-8453/0xb96450dcb16e4a30b999cb5f4087bae9c0ffac4e/) | ⚠️ Unaudited |
+| TREB | unknown | base | n/a | [`0xb96450dcb16e4a30b999cb5f4087bae9c0ffac4e`](./contracts/base-8453/0xb96450dcb16e4a30b999cb5f4087bae9c0ffac4e/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,7 +93,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0xb96450...ffac4e`](./contracts/base-8453/0xb96450dcb16e4a30b999cb5f4087bae9c0ffac4e/) | TREB | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xb96450dcb16e4a30b999cb5f4087bae9c0ffac4e`](./contracts/base-8453/0xb96450dcb16e4a30b999cb5f4087bae9c0ffac4e/) | TREB | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

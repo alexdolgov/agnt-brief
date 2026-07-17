@@ -89,13 +89,13 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BridgeValidators | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x2fa878...b0c95d`; ethereum `0x95b303...0790ab` | ⚠️ Unaudited |
-| ForeignAMB | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xd0764f...d5636c`; ethereum `0xe98699...b02467` | ⚠️ Unaudited |
-| ForeignOmnibridge | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x1715a3...eba10d`; ethereum `0xb7df1e...46b873` | ⚠️ Unaudited |
-| ForeignOmnibridge | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xb825fd...fae276`; ethereum `0xe20e33...f468bf` | ⚠️ Unaudited |
-| PermittableToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0xa1077a...0f9a27`; ethereum `0xa88260...e6d68a` | ⚠️ Unaudited |
-| TokenFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x98bf93...dacc02` | ⚠️ Unaudited |
-| WETHOmnibridgeRouter | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8ac4ae...350f55` | ⚠️ Unaudited |
+| BridgeValidators | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x2fa878ab3f87cc1c9737fc071108f904c0b0c95d`; ethereum `0x95b303987a60c71504d99aa1b13b4da07b0790ab` | ⚠️ Unaudited |
+| ForeignAMB | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xd0764fae29e0a6a96ff685f71cfc685456d5636c`; ethereum `0xe98699957d3504acd57fff861e4b77b57eb02467` | ⚠️ Unaudited |
+| ForeignOmnibridge | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x1715a3e4a142d8b698131108995174f37aeba10d`; ethereum `0xb7df1e00ae030e966e635ede273625240546b873` | ⚠️ Unaudited |
+| ForeignOmnibridge | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xb825fd1e322061aac2ac8b3cde4ce18b93fae276`; ethereum `0xe20e337db2a00b1c37139c873b92a0aad3f468bf` | ⚠️ Unaudited |
+| PermittableToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0xa1077a294dde1b09bb078844df40758a5d0f9a27`; ethereum `0xa882606494d86804b5514e07e6bd2d6a6ee6d68a` | ⚠️ Unaudited |
+| TokenFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x98bf93ebf5c380c0e6ae8e192a7e2ae08edacc02` | ⚠️ Unaudited |
+| WETHOmnibridgeRouter | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8ac4ae65b3656e26dc4e0e69108b392283350f55` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -115,7 +115,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf868da...a28499` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf868da5a5d5f799cee2205d8fd1f5ad2c4a28499` | ❓ Unverified |
 
 ## Audit Inventory
 

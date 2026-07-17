@@ -64,10 +64,10 @@ The protocol comprises 4 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AtToken | token | sonic | n/a | [`0x284d81...5cbe0e`](./contracts/sonic-146/0x284d81e48fbc782aa9186a03a226690aea5cbe0e/) | ⚠️ Unaudited |
-| GnosisSafeProxy | governance | sonic | n/a | [`0x66bb47...77a667`](./contracts/sonic-146/0x66bb478787705a2c7e0a6ff21d4370230277a667/) | ⚠️ Unaudited |
-| GovToken | token | sonic | n/a | [`0xd1da31...7688b7`](./contracts/sonic-146/0xd1da314f7db27dbe3c61ac172be13d86e67688b7/) | ⚠️ Unaudited |
-| Vesting | operational_periphery | sonic | n/a | [`0x6fa136...5b2e70`](./contracts/sonic-146/0x6fa136b46be0e8b73bade53ff60ac4d6545b2e70/) | ⚠️ Unaudited |
+| AtToken | token | sonic | n/a | [`0x284d81e48fbc782aa9186a03a226690aea5cbe0e`](./contracts/sonic-146/0x284d81e48fbc782aa9186a03a226690aea5cbe0e/) | ⚠️ Unaudited |
+| GnosisSafeProxy | governance | sonic | n/a | [`0x66bb478787705a2c7e0a6ff21d4370230277a667`](./contracts/sonic-146/0x66bb478787705a2c7e0a6ff21d4370230277a667/) | ⚠️ Unaudited |
+| GovToken | token | sonic | n/a | [`0xd1da314f7db27dbe3c61ac172be13d86e67688b7`](./contracts/sonic-146/0xd1da314f7db27dbe3c61ac172be13d86e67688b7/) | ⚠️ Unaudited |
+| Vesting | operational_periphery | sonic | n/a | [`0x6fa136b46be0e8b73bade53ff60ac4d6545b2e70`](./contracts/sonic-146/0x6fa136b46be0e8b73bade53ff60ac4d6545b2e70/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -99,9 +99,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| sonic | [`0x284d81...5cbe0e`](./contracts/sonic-146/0x284d81e48fbc782aa9186a03a226690aea5cbe0e/) | AtToken | token | $19,722.40 | Verified native implementation with $19,722.40 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0xd1da31...7688b7`](./contracts/sonic-146/0xd1da314f7db27dbe3c61ac172be13d86e67688b7/) | GovToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0x6fa136...5b2e70`](./contracts/sonic-146/0x6fa136b46be0e8b73bade53ff60ac4d6545b2e70/) | Vesting | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x284d81e48fbc782aa9186a03a226690aea5cbe0e`](./contracts/sonic-146/0x284d81e48fbc782aa9186a03a226690aea5cbe0e/) | AtToken | token | $19,722.40 | Verified native implementation with $19,722.40 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0xd1da314f7db27dbe3c61ac172be13d86e67688b7`](./contracts/sonic-146/0xd1da314f7db27dbe3c61ac172be13d86e67688b7/) | GovToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x6fa136b46be0e8b73bade53ff60ac4d6545b2e70`](./contracts/sonic-146/0x6fa136b46be0e8b73bade53ff60ac4d6545b2e70/) | Vesting | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

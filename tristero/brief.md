@@ -61,8 +61,8 @@ The protocol forms a single structural family (Operational Periphery) of 2 contr
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| EscrowV4 | operational_periphery | arbitrum | n/a | [`0x270f52...00611c`](./contracts/arbitrum-42161/0x270f529f16a578aad524b94e34f579a51e00611c/) | ⚠️ Unaudited |
-| TristeroEscrowV4 | operational_periphery | ethereum | n/a | 3 deployments: ethereum [`0xe40000...471d2e`](./contracts/ethereum-1/0xe400000df2f227133ff74c662c9e935439471d2e/); base [`0xe40000...471d2e`](./contracts/base-8453/0xe400000df2f227133ff74c662c9e935439471d2e/); arbitrum [`0xe40000...471d2e`](./contracts/arbitrum-42161/0xe400000df2f227133ff74c662c9e935439471d2e/) | ⚠️ Unaudited |
+| EscrowV4 | operational_periphery | arbitrum | n/a | [`0x270f529f16a578aad524b94e34f579a51e00611c`](./contracts/arbitrum-42161/0x270f529f16a578aad524b94e34f579a51e00611c/) | ⚠️ Unaudited |
+| TristeroEscrowV4 | operational_periphery | ethereum | n/a | 3 deployments: ethereum [`0xe400000df2f227133ff74c662c9e935439471d2e`](./contracts/ethereum-1/0xe400000df2f227133ff74c662c9e935439471d2e/); base [`0xe400000df2f227133ff74c662c9e935439471d2e`](./contracts/base-8453/0xe400000df2f227133ff74c662c9e935439471d2e/); arbitrum [`0xe400000df2f227133ff74c662c9e935439471d2e`](./contracts/arbitrum-42161/0xe400000df2f227133ff74c662c9e935439471d2e/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -94,8 +94,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | [`0x270f52...00611c`](./contracts/arbitrum-42161/0x270f529f16a578aad524b94e34f579a51e00611c/) | EscrowV4 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xe40000...471d2e`](./contracts/ethereum-1/0xe400000df2f227133ff74c662c9e935439471d2e/) | TristeroEscrowV4 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x270f529f16a578aad524b94e34f579a51e00611c`](./contracts/arbitrum-42161/0x270f529f16a578aad524b94e34f579a51e00611c/) | EscrowV4 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe400000df2f227133ff74c662c9e935439471d2e`](./contracts/ethereum-1/0xe400000df2f227133ff74c662c9e935439471d2e/) | TristeroEscrowV4 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

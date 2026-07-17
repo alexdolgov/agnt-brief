@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- Nsure (`0x20945c...cd2114`, chain 1)
+- Nsure (`0x20945ca1df56d237fd40036d47e866c7dccd2114`, chain 1)
 
 ## Contract Surface Quality
 
@@ -103,15 +103,15 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Buy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x702aff...7b4477` | ⚠️ Unaudited |
-| CapitalConverter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa6b658...cafb84` | ⚠️ Unaudited |
-| CapitalStake | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb98ed9...eff6a6` | ⚠️ Unaudited |
-| ClaimPurchaseMint | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x200db9...995b26` | ⚠️ Unaudited |
-| Nsure | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389899 | `0x20945c...cd2114` | ⚠️ Unaudited |
-| Product | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x06e76c...3141a8` | ⚠️ Unaudited |
-| Surplus | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x80e711...25593c` | ⚠️ Unaudited |
-| Treasury | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfd0d28...969440` | ⚠️ Unaudited |
-| Underwriting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1a66f0...e9c966` | ⚠️ Unaudited |
+| Buy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x702aff99b08e8891fc70811174701fb7407b4477` | ⚠️ Unaudited |
+| CapitalConverter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa6b658ce4b1cdb4e7d8f97dffb549b8688cafb84` | ⚠️ Unaudited |
+| CapitalStake | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb98ed9800fcd2982d26cf0e4a6b53c96bbeff6a6` | ⚠️ Unaudited |
+| ClaimPurchaseMint | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x200db99fe5c0f39688853d4c4d8651648d995b26` | ⚠️ Unaudited |
+| Nsure | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389899 | `0x20945ca1df56d237fd40036d47e866c7dccd2114` | ⚠️ Unaudited |
+| Product | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x06e76c5c53775681f0626600d6266901a03141a8` | ⚠️ Unaudited |
+| Surplus | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x80e711b29e46d430ff1553eb2ada670e2a25593c` | ⚠️ Unaudited |
+| Treasury | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfd0d28539aed12477dcba1575eb40fca53969440` | ⚠️ Unaudited |
+| Underwriting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1a66f065303299d78693f122c800ab3debe9c966` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -176,7 +176,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x20945c...cd2114` | Nsure | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x20945ca1df56d237fd40036d47e866c7dccd2114` | Nsure | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

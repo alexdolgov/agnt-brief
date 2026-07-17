@@ -69,15 +69,15 @@ Total inherited audits: 11. Inherited coverage reflects forked/shared code audit
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Vault_v0_5_0 | unknown | ethereum | n/a | 2 deployments: ethereum [`0x23fbda...d397cb`](./contracts/ethereum-1/0x23fbda54849e8904154c8f8436a59b95b1d397cb/); ethereum `0xc1d5f0...293cf8` | ✅ Audited |
+| Vault_v0_5_0 | unknown | ethereum | n/a | 2 deployments: ethereum [`0x23fbda54849e8904154c8f8436a59b95b1d397cb`](./contracts/ethereum-1/0x23fbda54849e8904154c8f8436a59b95b1d397cb/); ethereum `0xc1d5f01a6491b97b94f3670aed4becb897293cf8` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| DelayProxyAdmin | governance | ethereum | n/a | 3 deployments: ethereum [`0x358f9f...334542`](./contracts/ethereum-1/0x358f9ff9eee76bb6fade2a6f5d495e649b334542/); ethereum `0x78ac58...0f2cf4`; ethereum `0xdf2410...f96d24` | ⚠️ Unaudited |
-| OptinProxyFactory | unknown | ethereum | n/a | [`0x245d1c...cfc69d`](./contracts/ethereum-1/0x245d1c095a0ffa6f1af0f7df81818defc9cfc69d/) | ⚠️ Unaudited |
-| OptinProxyFactory | registry | ethereum | n/a | [`0x8d6f54...60f9b1`](./contracts/ethereum-1/0x8d6f5479b14348186fae9bc7e636e947c260f9b1/) | ⚠️ Unaudited |
+| DelayProxyAdmin | governance | ethereum | n/a | 3 deployments: ethereum [`0x358f9ff9eee76bb6fade2a6f5d495e649b334542`](./contracts/ethereum-1/0x358f9ff9eee76bb6fade2a6f5d495e649b334542/); ethereum `0x78ac58ed54018f5ccd5f5de2d7c0ae40800f2cf4`; ethereum `0xdf2410949af333d8707749a955849daedcf96d24` | ⚠️ Unaudited |
+| OptinProxyFactory | unknown | ethereum | n/a | [`0x245d1c095a0ffa6f1af0f7df81818defc9cfc69d`](./contracts/ethereum-1/0x245d1c095a0ffa6f1af0f7df81818defc9cfc69d/) | ⚠️ Unaudited |
+| OptinProxyFactory | registry | ethereum | n/a | [`0x8d6f5479b14348186fae9bc7e636e947c260f9b1`](./contracts/ethereum-1/0x8d6f5479b14348186fae9bc7e636e947c260f9b1/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -97,7 +97,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0xf42bde...01e5a6` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf42bde02ebd0861a9c27c9ec4b193fdffe01e5a6` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -121,9 +121,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x358f9f...334542`](./contracts/ethereum-1/0x358f9ff9eee76bb6fade2a6f5d495e649b334542/) | DelayProxyAdmin | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x245d1c...cfc69d`](./contracts/ethereum-1/0x245d1c095a0ffa6f1af0f7df81818defc9cfc69d/) | OptinProxyFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x8d6f54...60f9b1`](./contracts/ethereum-1/0x8d6f5479b14348186fae9bc7e636e947c260f9b1/) | OptinProxyFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x358f9ff9eee76bb6fade2a6f5d495e649b334542`](./contracts/ethereum-1/0x358f9ff9eee76bb6fade2a6f5d495e649b334542/) | DelayProxyAdmin | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x245d1c095a0ffa6f1af0f7df81818defc9cfc69d`](./contracts/ethereum-1/0x245d1c095a0ffa6f1af0f7df81818defc9cfc69d/) | OptinProxyFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8d6f5479b14348186fae9bc7e636e947c260f9b1`](./contracts/ethereum-1/0x8d6f5479b14348186fae9bc7e636e947c260f9b1/) | OptinProxyFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

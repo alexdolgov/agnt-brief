@@ -60,7 +60,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| OkapiERC20Token | unknown | bsc | n/a | [`0xa90298...c406fb`](./contracts/bsc-56/0xa90298e5b1203a2dd0006a75eabe158989c406fb/) | ⚠️ Unaudited |
+| OkapiERC20Token | unknown | bsc | n/a | [`0xa90298e5b1203a2dd0006a75eabe158989c406fb`](./contracts/bsc-56/0xa90298e5b1203a2dd0006a75eabe158989c406fb/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -91,7 +91,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0xa90298...c406fb`](./contracts/bsc-56/0xa90298e5b1203a2dd0006a75eabe158989c406fb/) | OkapiERC20Token | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xa90298e5b1203a2dd0006a75eabe158989c406fb`](./contracts/bsc-56/0xa90298e5b1203a2dd0006a75eabe158989c406fb/) | OkapiERC20Token | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

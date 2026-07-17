@@ -59,21 +59,21 @@ The protocol comprises 4 functional families. Contracts are linked by 3 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AeroGaugePlugin | operational_periphery | base | n/a | [`0x25a7e6...89f040`](./contracts/base-8453/0x25a7e6a89f06ef3f90b844f69f1f0b63d389f040/) | ✅ Audited |
-| AeroPairPlugin | unknown | base | n/a | 2 deployments: base [`0xd1ca9d...3ed715`](./contracts/base-8453/0xd1ca9d78005b5a891c8a6bd8408ed308b33ed715/); base `0xef0487...2755bd` | ✅ Audited |
-| Minter | unknown | base | n/a | [`0xf49222...162576`](./contracts/base-8453/0xf49222fccba2c149b3ff3ae9d3a30edb1f162576/) | ✅ Audited |
-| OTOKEN | token | base | n/a | [`0xbe1053...9a2b79`](./contracts/base-8453/0xbe1053ec4ac137c9a5b4462d53d5c2c0b89a2b79/) | ✅ Audited |
-| ScaleGaugePlugin | operational_periphery | base | n/a | [`0xf19a7b...5290b8`](./contracts/base-8453/0xf19a7b64809dc969b173f40d3f8c6734935290b8/) | ✅ Audited |
-| TOKEN | token | base | n/a | [`0x58dd17...79e9b9`](./contracts/base-8453/0x58dd173f30ecffdfebcd242c71241fb2f179e9b9/) | ✅ Audited |
-| TOKENFees | token | base | n/a | [`0x8d05ef...ecd6c1`](./contracts/base-8453/0x8d05ef8093a746101cee1a0578edd277f3ecd6c1/) | ✅ Audited |
-| Voter | unknown | base | n/a | [`0x756fc5...492452`](./contracts/base-8453/0x756fc5e6bdb26a85594346d7d0520e1c0e492452/) | ✅ Audited |
-| VTOKEN | token | base | n/a | [`0x60c087...b11515`](./contracts/base-8453/0x60c08737877a5262bdb1c1cac8fb90b5e5b11515/) | ✅ Audited |
+| AeroGaugePlugin | operational_periphery | base | n/a | [`0x25a7e6a89f06ef3f90b844f69f1f0b63d389f040`](./contracts/base-8453/0x25a7e6a89f06ef3f90b844f69f1f0b63d389f040/) | ✅ Audited |
+| AeroPairPlugin | unknown | base | n/a | 2 deployments: base [`0xd1ca9d78005b5a891c8a6bd8408ed308b33ed715`](./contracts/base-8453/0xd1ca9d78005b5a891c8a6bd8408ed308b33ed715/); base `0xef04879d23e4113bbc32898436241b7e382755bd` | ✅ Audited |
+| Minter | unknown | base | n/a | [`0xf49222fccba2c149b3ff3ae9d3a30edb1f162576`](./contracts/base-8453/0xf49222fccba2c149b3ff3ae9d3a30edb1f162576/) | ✅ Audited |
+| OTOKEN | token | base | n/a | [`0xbe1053ec4ac137c9a5b4462d53d5c2c0b89a2b79`](./contracts/base-8453/0xbe1053ec4ac137c9a5b4462d53d5c2c0b89a2b79/) | ✅ Audited |
+| ScaleGaugePlugin | operational_periphery | base | n/a | [`0xf19a7b64809dc969b173f40d3f8c6734935290b8`](./contracts/base-8453/0xf19a7b64809dc969b173f40d3f8c6734935290b8/) | ✅ Audited |
+| TOKEN | token | base | n/a | [`0x58dd173f30ecffdfebcd242c71241fb2f179e9b9`](./contracts/base-8453/0x58dd173f30ecffdfebcd242c71241fb2f179e9b9/) | ✅ Audited |
+| TOKENFees | token | base | n/a | [`0x8d05ef8093a746101cee1a0578edd277f3ecd6c1`](./contracts/base-8453/0x8d05ef8093a746101cee1a0578edd277f3ecd6c1/) | ✅ Audited |
+| Voter | unknown | base | n/a | [`0x756fc5e6bdb26a85594346d7d0520e1c0e492452`](./contracts/base-8453/0x756fc5e6bdb26a85594346d7d0520e1c0e492452/) | ✅ Audited |
+| VTOKEN | token | base | n/a | [`0x60c08737877a5262bdb1c1cac8fb90b5e5b11515`](./contracts/base-8453/0x60c08737877a5262bdb1c1cac8fb90b5e5b11515/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| VTOKENRewarder | token | base | n/a | [`0xdd3e79...1de558`](./contracts/base-8453/0xdd3e797522e15c3ede6ed468738cba754e1de558/) | ⚠️ Unaudited |
+| VTOKENRewarder | token | base | n/a | [`0xdd3e797522e15c3ede6ed468738cba754e1de558`](./contracts/base-8453/0xdd3e797522e15c3ede6ed468738cba754e1de558/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,10 +93,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | base | n/a | `0x1441cb...b07d27` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x56df15...329e01` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x5ed50f...ee106d` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xd54b64...36590c` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x1441cba5a9df12f157c362ca0c8eed50c2b07d27` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x56df157dec576cc2596257fb17115a7ea0329e01` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x5ed50fbb15d047b2b6bc0e6fade25a3b1eee106d` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xd54b64a096b785d19cff3f19061509230736590c` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -111,7 +111,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0xdd3e79...1de558`](./contracts/base-8453/0xdd3e797522e15c3ede6ed468738cba754e1de558/) | VTOKENRewarder | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xdd3e797522e15c3ede6ed468738cba754e1de558`](./contracts/base-8453/0xdd3e797522e15c3ede6ed468738cba754e1de558/) | VTOKENRewarder | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

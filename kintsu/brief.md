@@ -79,14 +79,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Proxy (impl: 0x46fe710f0a9288160fe43d502d6d5fc85de9c16d) | unknown | hyperliquid | n/a | 2 deployments: hyperliquid `0x1810ae...390cbb`; hyperliquid `0x46fe71...e9c16d` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x1d0197...c57ba3` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | 2 deployments: hyperliquid `0x1ed00e...ea174b`; hyperliquid `0x2b9005...761d04` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0x478e01...04baac` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | 2 deployments: hyperliquid `0x577635...1102cb`; hyperliquid `0xddc126...4d2945` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | 2 deployments: hyperliquid `0xabf96a...1728d8`; hyperliquid `0xf82c9d...530659` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0xaeb3b3...29b5f6` | ❓ Unverified |
-| UnnamedContract | unknown | hyperliquid | n/a | `0xbef014...669d2d` | ❓ Unverified |
+| Proxy (impl: 0x46fe710f0a9288160fe43d502d6d5fc85de9c16d) | unknown | hyperliquid | n/a | 2 deployments: hyperliquid `0x1810ae9986fc1a7ef6f3ae20b5e376af58390cbb`; hyperliquid `0x46fe710f0a9288160fe43d502d6d5fc85de9c16d` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x1d0197fe4496bb557a5a8b904ba076629cc57ba3` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | 2 deployments: hyperliquid `0x1ed00e0bb3a7f990d9f803ce0bfc22762bea174b`; hyperliquid `0x2b90055eb5f774f54072c68d09a71c4a18761d04` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0x478e0162b8ea9bcc8d70cea5247c1baa2104baac` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | 2 deployments: hyperliquid `0x577635fa486382d139f9e99f32d67e6e041102cb`; hyperliquid `0xddc126c12f9f8df5a6fc273f6d43c1e21b4d2945` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | 2 deployments: hyperliquid `0xabf96a5c39761cbeddc09f94fb918932091728d8`; hyperliquid `0xf82c9d94ea864890e48380ed731ce58f0a530659` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0xaeb3b393f061c4a1d84aab695b3c04029929b5f6` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0xbef0142a0955a7d5dcce5c2a13fb84e332669d2d` | ❓ Unverified |
 
 ## Audit Inventory
 

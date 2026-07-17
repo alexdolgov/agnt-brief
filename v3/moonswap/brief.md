@@ -90,8 +90,8 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| MoonLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | unit-154233 | `0x0134eb...e39eb3` | ⚠️ Unaudited |
-| WETH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | unit-154234 | `0x98878b...032b8a` | ⚠️ Unaudited |
+| MoonLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | unit-154233 | `0x0134eb236b47186021a50d25a51365ac77e39eb3` | ⚠️ Unaudited |
+| WETH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | unit-154234 | `0x98878b06940ae243284ca214f92bb71a2b032b8a` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

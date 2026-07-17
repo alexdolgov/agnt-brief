@@ -61,10 +61,10 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Diamond | unknown | ethereum | n/a | [`0x4ab740...512525`](./contracts/ethereum-1/0x4ab740157721105ae503fbad756a578171512525/) | ⚠️ Unaudited |
-| Diamond | unknown | bsc | n/a | [`0x4ab740...512525`](./contracts/bsc-56/0x4ab740157721105ae503fbad756a578171512525/) | ⚠️ Unaudited |
-| Diamond | unknown | polygon | n/a | [`0x4ab740...512525`](./contracts/polygon-137/0x4ab740157721105ae503fbad756a578171512525/) | ⚠️ Unaudited |
-| MultiVaultToken | core_logic | ethereum | n/a | [`0x46f84d...8d87c9`](./contracts/ethereum-1/0x46f84dc6564cdd93922f7bfb88b03d35308d87c9/) | ⚠️ Unaudited |
+| Diamond | unknown | ethereum | n/a | [`0x4ab740157721105ae503fbad756a578171512525`](./contracts/ethereum-1/0x4ab740157721105ae503fbad756a578171512525/) | ⚠️ Unaudited |
+| Diamond | unknown | bsc | n/a | [`0x4ab740157721105ae503fbad756a578171512525`](./contracts/bsc-56/0x4ab740157721105ae503fbad756a578171512525/) | ⚠️ Unaudited |
+| Diamond | unknown | polygon | n/a | [`0x4ab740157721105ae503fbad756a578171512525`](./contracts/polygon-137/0x4ab740157721105ae503fbad756a578171512525/) | ⚠️ Unaudited |
+| MultiVaultToken | core_logic | ethereum | n/a | [`0x46f84dc6564cdd93922f7bfb88b03d35308d87c9`](./contracts/ethereum-1/0x46f84dc6564cdd93922f7bfb88b03d35308d87c9/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -84,7 +84,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Proxy (impl: 0x0bc8c8212c0c74773671c4badb18999c2b07f3c6) | proxy | avalanche | n/a | `0x4ab740...512525` | ❓ Unverified |
+| Proxy (impl: 0x0bc8c8212c0c74773671c4badb18999c2b07f3c6) | proxy | avalanche | n/a | `0x4ab740157721105ae503fbad756a578171512525` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -98,10 +98,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x4ab740...512525`](./contracts/ethereum-1/0x4ab740157721105ae503fbad756a578171512525/) | Diamond | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x4ab740...512525`](./contracts/bsc-56/0x4ab740157721105ae503fbad756a578171512525/) | Diamond | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x4ab740...512525`](./contracts/polygon-137/0x4ab740157721105ae503fbad756a578171512525/) | Diamond | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x46f84d...8d87c9`](./contracts/ethereum-1/0x46f84dc6564cdd93922f7bfb88b03d35308d87c9/) | MultiVaultToken | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4ab740157721105ae503fbad756a578171512525`](./contracts/ethereum-1/0x4ab740157721105ae503fbad756a578171512525/) | Diamond | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x4ab740157721105ae503fbad756a578171512525`](./contracts/bsc-56/0x4ab740157721105ae503fbad756a578171512525/) | Diamond | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x4ab740157721105ae503fbad756a578171512525`](./contracts/polygon-137/0x4ab740157721105ae503fbad756a578171512525/) | Diamond | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x46f84dc6564cdd93922f7bfb88b03d35308d87c9`](./contracts/ethereum-1/0x46f84dc6564cdd93922f7bfb88b03d35308d87c9/) | MultiVaultToken | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -52,10 +52,10 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- STBU (`0xa6422e...fd50ed`, chain 1)
-- STBU (`0xb0c408...3f8743`, chain 56)
-- STBU (`0xcf4030...8191bb`, chain 137)
-- StoboxProtocolSTV3 (`0x1cb9bd...abc093`, chain 42161)
+- STBU (`0xa6422e3e219ee6d4c1b18895275fe43556fd50ed`, chain 1)
+- STBU (`0xb0c4080a8fa7afa11a09473f3be14d44af3f8743`, chain 56)
+- STBU (`0xcf403036bc139d30080d2cf0f5b48066f98191bb`, chain 137)
+- StoboxProtocolSTV3 (`0x1cb9bd2c6e7f4a7de3778547d46c8d4c22abc093`, chain 42161)
 
 ## Contract Surface Quality
 
@@ -101,10 +101,10 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| DiamondCutFacet | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-393159 | `0x1cb9bd...abc093` | ⚠️ Unaudited |
-| STBU | unknown | project_anchor | own_supporting | 0 | ethereum | unit-393156 | `0xa6422e...fd50ed` | ⚠️ Unaudited |
-| STBU | unknown | project_anchor | own_supporting | 0 | bsc | unit-393158 | `0xb0c408...3f8743` | ⚠️ Unaudited |
-| STBU | unknown | project_anchor | own_supporting | 0 | polygon | unit-393157 | `0xcf4030...8191bb` | ⚠️ Unaudited |
+| DiamondCutFacet | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-393159 | `0x1cb9bd2c6e7f4a7de3778547d46c8d4c22abc093` | ⚠️ Unaudited |
+| STBU | unknown | project_anchor | own_supporting | 0 | ethereum | unit-393156 | `0xa6422e3e219ee6d4c1b18895275fe43556fd50ed` | ⚠️ Unaudited |
+| STBU | unknown | project_anchor | own_supporting | 0 | bsc | unit-393158 | `0xb0c4080a8fa7afa11a09473f3be14d44af3f8743` | ⚠️ Unaudited |
+| STBU | unknown | project_anchor | own_supporting | 0 | polygon | unit-393157 | `0xcf403036bc139d30080d2cf0f5b48066f98191bb` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -124,10 +124,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xa6422e...fd50ed` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x096d75...8223b4` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xa6422e...fd50ed` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xa6422e...fd50ed` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xa6422e3e219ee6d4c1b18895275fe43556fd50ed` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x096d75d0501c3b1479ffe15569192cec998223b4` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xa6422e3e219ee6d4c1b18895275fe43556fd50ed` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xa6422e3e219ee6d4c1b18895275fe43556fd50ed` | ❓ Unverified |
 
 ## Audit Inventory
 

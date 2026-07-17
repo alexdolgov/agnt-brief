@@ -90,17 +90,17 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| CoinswapFaaS | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-129841 | `0x496a02...5203c5` | ⚠️ Unaudited |
-| CoinswapSaaS | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-129848 | `0xfdfe9a...3f8133` | ⚠️ Unaudited |
-| CoinswapTestToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-129844 | `0xa7ba3a...bbcea1` | ⚠️ Unaudited |
-| CommunityReward | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-129836 | `0x29a888...0db9de` | ⚠️ Unaudited |
-| CommunityRewardBnb | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-129843 | `0x5ca94e...ca6cb1` | ⚠️ Unaudited |
-| CssReferral | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-129829 | `0x0207f9...8ee8cb` | ⚠️ Unaudited |
-| CssToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-129838 | `0x3bc579...23850d` | ⚠️ Unaudited |
-| MasterCSS | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-129834 | `0x140767...596aff` | ⚠️ Unaudited |
-| SpacePad | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-129833 | `0x09b543...f661f0` | ⚠️ Unaudited |
-| SpacePadFriends | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-129830 | `0x02db3a...2d7fa2` | ⚠️ Unaudited |
-| Timelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-129846 | `0xb83e4a...390889` | ⚠️ Unaudited |
+| CoinswapFaaS | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-129841 | `0x496a0227f7f16622650ddf2601b6842e845203c5` | ⚠️ Unaudited |
+| CoinswapSaaS | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-129848 | `0xfdfe9ab11d1c30bc1ffd6e2fe6eaa9660a3f8133` | ⚠️ Unaudited |
+| CoinswapTestToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-129844 | `0xa7ba3a3f2edde23706c0ef2de34b1300b2bbcea1` | ⚠️ Unaudited |
+| CommunityReward | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-129836 | `0x29a888e301a9ff0f4420a115f61e6ad0750db9de` | ⚠️ Unaudited |
+| CommunityRewardBnb | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-129843 | `0x5ca94e1b35c0a726e5431f66dbecdd2253ca6cb1` | ⚠️ Unaudited |
+| CssReferral | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-129829 | `0x0207f989db6427cd3f296a850664f9a6608ee8cb` | ⚠️ Unaudited |
+| CssToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-129838 | `0x3bc5798416c1122bcfd7cb0e055d50061f23850d` | ⚠️ Unaudited |
+| MasterCSS | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-129834 | `0x1407673057f03a67c235e95b135110ca67596aff` | ⚠️ Unaudited |
+| SpacePad | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-129833 | `0x09b543f0aa96905d9ce689874b88505608f661f0` | ⚠️ Unaudited |
+| SpacePadFriends | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-129830 | `0x02db3acce010c8dd8125c451c369479cce2d7fa2` | ⚠️ Unaudited |
+| Timelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-129846 | `0xb83e4aee074d5898af4817e6129839c981390889` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

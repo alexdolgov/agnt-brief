@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- StashFactory (`0x000000...866750`, chain 1)
+- StashFactory (`0x000000000000a6fa31f5fc51c1640aac76866750`, chain 1)
 
 ## Contract Surface Quality
 
@@ -103,16 +103,16 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Autoglyphs | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd4e407...197782` | ⚠️ Unaudited |
-| CryptoPunks | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6ba6f2...66db8d` | ⚠️ Unaudited |
-| CryptoPunks721 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x000000...5c5c2f` | ⚠️ Unaudited |
-| CryptopunksData | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x16f5a3...3af3b2` | ⚠️ Unaudited |
-| CryptoPunksMarket | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb47e3c...193bbb` | ⚠️ Unaudited |
-| Meebits | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7bd294...716bc7` | ⚠️ Unaudited |
-| PunkTransferHelper | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x000000...312272` | ⚠️ Unaudited |
-| Stash | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 8 deployments: ethereum `0x000000...968eec`; ethereum `0x32b262...f90d7e`; ethereum `0x436f07...b8f6fc`; ethereum `0xa3c22e...3a6f23`; ethereum `0xccb008...d1e925`; ethereum `0xe4f741...6460ce`; ethereum `0xf30c1e...73090f`; ethereum `0xf78baa...b8c860` | ⚠️ Unaudited |
-| StashFactory | registry | project_anchor | own_supporting | 0 | ethereum | unit-391213 | `0x000000...866750` | ⚠️ Unaudited |
-| WrappedPunk | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb7f7f6...c313f6` | ⚠️ Unaudited |
+| Autoglyphs | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd4e4078ca3495de5b1d4db434bebc5a986197782` | ⚠️ Unaudited |
+| CryptoPunks | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6ba6f2207e343923ba692e5cae646fb0f566db8d` | ⚠️ Unaudited |
+| CryptoPunks721 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x000000000000003607fce1ac9e043a86675c5c2f` | ⚠️ Unaudited |
+| CryptopunksData | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x16f5a35647d6f03d5d3da7b35409d65ba03af3b2` | ⚠️ Unaudited |
+| CryptoPunksMarket | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb` | ⚠️ Unaudited |
+| Meebits | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7bd29408f11d2bfc23c34f18275bbf23bb716bc7` | ⚠️ Unaudited |
+| PunkTransferHelper | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x000000000000748d91de137891483c6f2f312272` | ⚠️ Unaudited |
+| Stash | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 8 deployments: ethereum `0x00000000000060d035a8002956b5fb02e3968eec`; ethereum `0x32b26224a937c9de1efc0cbbad71c835b8f90d7e`; ethereum `0x436f079edb456f7feb36ebfef59467ea22b8f6fc`; ethereum `0xa3c22ee54e4dce534229bcdd71c346bc1e3a6f23`; ethereum `0xccb0082ff1d696b8a996e8db81fe9ac39ed1e925`; ethereum `0xe4f74112b54e7261903baedb941797be296460ce`; ethereum `0xf30c1e83e91d17f259cdca5a819bc8ad9173090f`; ethereum `0xf78baae3e2c597ac7f994106e8914ecf6cb8c860` | ⚠️ Unaudited |
+| StashFactory | registry | project_anchor | own_supporting | 0 | ethereum | unit-391213 | `0x000000000000a6fa31f5fc51c1640aac76866750` | ⚠️ Unaudited |
+| WrappedPunk | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb7f7f6c52f2e2fdb1963eab30438024864c313f6` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -149,7 +149,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x000000...866750` | StashFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x000000000000a6fa31f5fc51c1640aac76866750` | StashFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

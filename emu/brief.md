@@ -59,13 +59,13 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Emu | unknown | bsc | n/a | [`0x0dfbb6...4d7fa2`](./contracts/bsc-56/0x0dfbb60c53d9226e8d70aa94eac614d8294d7fa2/) | ✅ Audited |
+| Emu | unknown | bsc | n/a | [`0x0dfbb60c53d9226e8d70aa94eac614d8294d7fa2`](./contracts/bsc-56/0x0dfbb60c53d9226e8d70aa94eac614d8294d7fa2/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| MasterChef | unknown | bsc | n/a | [`0x99e1f7...4470ff`](./contracts/bsc-56/0x99e1f72d10ad66906e18b02501e3395b8c4470ff/) | ⚠️ Unaudited |
+| MasterChef | unknown | bsc | n/a | [`0x99e1f72d10ad66906e18b02501e3395b8c4470ff`](./contracts/bsc-56/0x99e1f72d10ad66906e18b02501e3395b8c4470ff/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -97,7 +97,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x99e1f7...4470ff`](./contracts/bsc-56/0x99e1f72d10ad66906e18b02501e3395b8c4470ff/) | MasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x99e1f72d10ad66906e18b02501e3395b8c4470ff`](./contracts/bsc-56/0x99e1f72d10ad66906e18b02501e3395b8c4470ff/) | MasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

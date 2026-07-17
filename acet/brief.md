@@ -62,19 +62,19 @@ The protocol comprises 3 functional families. Its contracts share 2 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AcetToken | token | bsc | n/a | [`0x9f3bcb...6ac31d`](./contracts/bsc-56/0x9f3bcbe48e8b754f331dfc694a894e8e686ac31d/) | ✅ Audited |
-| Pool | core_logic | bsc | n/a | 3 deployments: bsc [`0x38506a...0907d7`](./contracts/bsc-56/0x38506a479e8959150466ce9253c19089fd0907d7/); bsc `0x64d2c3...215c0b`; bsc `0x76c058...61435b` | ✅ Audited |
-| AcetAdaptor | unknown | bsc | n/a | [`0x263044...3d0b5c`](./contracts/bsc-56/0x26304442cd46cb3cee1a83a48f400ef43a3d0b5c/) | ✅ Audited |
+| AcetToken | token | bsc | n/a | [`0x9f3bcbe48e8b754f331dfc694a894e8e686ac31d`](./contracts/bsc-56/0x9f3bcbe48e8b754f331dfc694a894e8e686ac31d/) | ✅ Audited |
+| Pool | core_logic | bsc | n/a | 3 deployments: bsc [`0x38506a479e8959150466ce9253c19089fd0907d7`](./contracts/bsc-56/0x38506a479e8959150466ce9253c19089fd0907d7/); bsc `0x64d2c3a33f5bc09dc045f9a20fa4ca4f42215c0b`; bsc `0x76c05855e1eaec618aa56e02027f0c469661435b` | ✅ Audited |
+| AcetAdaptor | unknown | bsc | n/a | [`0x26304442cd46cb3cee1a83a48f400ef43a3d0b5c`](./contracts/bsc-56/0x26304442cd46cb3cee1a83a48f400ef43a3d0b5c/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| FarmLPV4 | unknown | bsc | n/a | 2 deployments: bsc [`0xdf30ec...7d7afc`](./contracts/bsc-56/0xdf30ecf05819f3012ced359dc8295a4e157d7afc/); bsc `0xfd7f86...c672e9` | ⚠️ Unaudited |
-| FarmV2Transition | unknown | bsc | n/a | [`0xffa1e8...2a5183`](./contracts/bsc-56/0xffa1e8053b4572aebdeae4d81c0d4a312e2a5183/) | ⚠️ Unaudited |
-| FarmV4Primary | unknown | bsc | n/a | [`0x7a5974...c58d47`](./contracts/bsc-56/0x7a59746105bb10736926a0042a629a5163c58d47/) | ⚠️ Unaudited |
-| MintReserve | unknown | bsc | n/a | [`0x588148...3907d6`](./contracts/bsc-56/0x5881480b48d993c729f9975cb250669dac3907d6/) | ⚠️ Unaudited |
-| SwapToFarm | unknown | bsc | n/a | [`0x207af2...bdb1cb`](./contracts/bsc-56/0x207af22bee1ae437574b201433d6389554bdb1cb/) | ⚠️ Unaudited |
+| FarmLPV4 | unknown | bsc | n/a | 2 deployments: bsc [`0xdf30ecf05819f3012ced359dc8295a4e157d7afc`](./contracts/bsc-56/0xdf30ecf05819f3012ced359dc8295a4e157d7afc/); bsc `0xfd7f86d8a179056531b9c73f24361b34b1c672e9` | ⚠️ Unaudited |
+| FarmV2Transition | unknown | bsc | n/a | [`0xffa1e8053b4572aebdeae4d81c0d4a312e2a5183`](./contracts/bsc-56/0xffa1e8053b4572aebdeae4d81c0d4a312e2a5183/) | ⚠️ Unaudited |
+| FarmV4Primary | unknown | bsc | n/a | [`0x7a59746105bb10736926a0042a629a5163c58d47`](./contracts/bsc-56/0x7a59746105bb10736926a0042a629a5163c58d47/) | ⚠️ Unaudited |
+| MintReserve | unknown | bsc | n/a | [`0x5881480b48d993c729f9975cb250669dac3907d6`](./contracts/bsc-56/0x5881480b48d993c729f9975cb250669dac3907d6/) | ⚠️ Unaudited |
+| SwapToFarm | unknown | bsc | n/a | [`0x207af22bee1ae437574b201433d6389554bdb1cb`](./contracts/bsc-56/0x207af22bee1ae437574b201433d6389554bdb1cb/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -107,11 +107,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0xdf30ec...7d7afc`](./contracts/bsc-56/0xdf30ecf05819f3012ced359dc8295a4e157d7afc/) | FarmLPV4 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xffa1e8...2a5183`](./contracts/bsc-56/0xffa1e8053b4572aebdeae4d81c0d4a312e2a5183/) | FarmV2Transition | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x7a5974...c58d47`](./contracts/bsc-56/0x7a59746105bb10736926a0042a629a5163c58d47/) | FarmV4Primary | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x588148...3907d6`](./contracts/bsc-56/0x5881480b48d993c729f9975cb250669dac3907d6/) | MintReserve | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x207af2...bdb1cb`](./contracts/bsc-56/0x207af22bee1ae437574b201433d6389554bdb1cb/) | SwapToFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xdf30ecf05819f3012ced359dc8295a4e157d7afc`](./contracts/bsc-56/0xdf30ecf05819f3012ced359dc8295a4e157d7afc/) | FarmLPV4 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xffa1e8053b4572aebdeae4d81c0d4a312e2a5183`](./contracts/bsc-56/0xffa1e8053b4572aebdeae4d81c0d4a312e2a5183/) | FarmV2Transition | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x7a59746105bb10736926a0042a629a5163c58d47`](./contracts/bsc-56/0x7a59746105bb10736926a0042a629a5163c58d47/) | FarmV4Primary | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x5881480b48d993c729f9975cb250669dac3907d6`](./contracts/bsc-56/0x5881480b48d993c729f9975cb250669dac3907d6/) | MintReserve | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x207af22bee1ae437574b201433d6389554bdb1cb`](./contracts/bsc-56/0x207af22bee1ae437574b201433d6389554bdb1cb/) | SwapToFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

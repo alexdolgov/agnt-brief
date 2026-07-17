@@ -90,19 +90,19 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BuyoutProposals | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x01da4a...5653f2`; ethereum `0xdf83c1...505cfd` | ⚠️ Unaudited |
-| CrossChain | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xb661ef...97bbfb`; ethereum `0xfdaa41...76fb26` | ⚠️ Unaudited |
-| MarketingMiningDelegate | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x0feccb...770dce`; ethereum `0xab2cc3...bd0db0` | ⚠️ Unaudited |
-| MarketRegulator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdddf6b...799b29` | ⚠️ Unaudited |
-| MerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xff31e3...eddfdd` | ⚠️ Unaudited |
-| ShardingDAOMiningDelegate | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x5cb8a5...b72540`; ethereum `0x627af3...e737a1` | ⚠️ Unaudited |
-| ShardingDAOMiningDelegate | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x73aaf8...98a947`; ethereum `0x84ef19...45278c`; ethereum `0xbae5d3...b5672e` | ⚠️ Unaudited |
-| ShardsFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc1a012...cf8d9f` | ⚠️ Unaudited |
-| ShardsMarketDelegateV0 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x13a246...feb824`; ethereum `0xe77149...758c20` | ⚠️ Unaudited |
-| SHDToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5845cd...db060f` | ⚠️ Unaudited |
-| SHDVote | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xec7879...5ec540` | ⚠️ Unaudited |
-| Timelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0xaeb5bc...375756`; ethereum `0xc8d11b...016b0b` | ⚠️ Unaudited |
-| TokenBarDelegate | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x5953eb...e19b16`; ethereum `0xea1e9f...1be078` | ⚠️ Unaudited |
+| BuyoutProposals | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x01da4a4a0ed7757e95848112dbb9f005b55653f2`; ethereum `0xdf83c19a6958ce28b1cb9e1751ed05b060505cfd` | ⚠️ Unaudited |
+| CrossChain | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xb661ef22dd089063d48efce2cf8e19917797bbfb`; ethereum `0xfdaa41ba4f1d712a8777ef7ca104c308ce76fb26` | ⚠️ Unaudited |
+| MarketingMiningDelegate | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x0feccb11c5b61b3922c511d0f002c0b72d770dce`; ethereum `0xab2cc3ab140e7596c5de18d1269ac39c53bd0db0` | ⚠️ Unaudited |
+| MarketRegulator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdddf6b2c719d04f5f87230dd02c12ea062799b29` | ⚠️ Unaudited |
+| MerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xff31e3921f5bef7dcea1b01c9f7ed1153beddfdd` | ⚠️ Unaudited |
+| ShardingDAOMiningDelegate | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x5cb8a52bb5191be839bbdb69bd0b24b8cbb72540`; ethereum `0x627af3b7bb61cb5e96a1f31277eb387defe737a1` | ⚠️ Unaudited |
+| ShardingDAOMiningDelegate | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x73aaf8f86fea9750273d7ff650cedbb7ae98a947`; ethereum `0x84ef19700519571d139a3815df75356b9745278c`; ethereum `0xbae5d387f2142617b15b8fe70e45743059b5672e` | ⚠️ Unaudited |
+| ShardsFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc1a0129499b5633ba0dcad1f24289fd3bfcf8d9f` | ⚠️ Unaudited |
+| ShardsMarketDelegateV0 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x13a246e429ff8e7cf7d371133b511e601bfeb824`; ethereum `0xe7714925d9d3fff268f2d5caa512d983d6758c20` | ⚠️ Unaudited |
+| SHDToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5845cd0205b5d43af695412a79cf7c1aeddb060f` | ⚠️ Unaudited |
+| SHDVote | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xec78795492cfb5dee4a54a38efb512c9095ec540` | ⚠️ Unaudited |
+| Timelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0xaeb5bcdb55e6abc2450595df27f993b82f375756`; ethereum `0xc8d11b6dc98bccd1308b65ec8c9bd54113016b0b` | ⚠️ Unaudited |
+| TokenBarDelegate | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x5953eb2e1790b9a0cba6f02cc20026a688e19b16`; ethereum `0xea1e9fef904103f39c4f7c2a1f81e665711be078` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -122,7 +122,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-164955 | `0xed955a...b5ab32` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-164955 | `0xed955a9bed9deb7547d2f71952db810619b5ab32` | ❓ Unverified |
 
 ## Audit Inventory
 

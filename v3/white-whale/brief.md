@@ -57,8 +57,8 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- TokenMintERC20Token (`0x35a532...a398e7`, chain 1)
-- TokenMintERC20Token (`0x95ad61...64c4ce`, chain 1)
+- TokenMintERC20Token (`0x35a532d376ffd9a705d0bb319532837337a398e7`, chain 1)
+- TokenMintERC20Token (`0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce`, chain 1)
 
 ## Contract Surface Quality
 
@@ -104,8 +104,8 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| TokenMintERC20Token | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396620 | `0x35a532...a398e7` | ⚠️ Unaudited |
-| TokenMintERC20Token | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396621 | `0x95ad61...64c4ce` | ⚠️ Unaudited |
+| TokenMintERC20Token | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396620 | `0x35a532d376ffd9a705d0bb319532837337a398e7` | ⚠️ Unaudited |
+| TokenMintERC20Token | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396621 | `0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

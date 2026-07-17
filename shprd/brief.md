@@ -62,9 +62,9 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ERC1967Proxy | unknown | bsc | n/a | [`0x04ee48...02495d`](./contracts/bsc-56/0x04ee4821beea5073c519d443d2afc69a0202495d/) | ⚠️ Unaudited |
-| ParseParaswap | unknown | ethereum | n/a | [`0x59e6d8...3e1f22`](./contracts/ethereum-1/0x59e6d8eb72235fc964534e0e6283d93cd73e1f22/) | ⚠️ Unaudited |
-| UpgradeableBeacon | unknown | ethereum | n/a | [`0x551a3a...ce1bc7`](./contracts/ethereum-1/0x551a3a68026c4ac28e69f12377ee079494ce1bc7/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | bsc | n/a | [`0x04ee4821beea5073c519d443d2afc69a0202495d`](./contracts/bsc-56/0x04ee4821beea5073c519d443d2afc69a0202495d/) | ⚠️ Unaudited |
+| ParseParaswap | unknown | ethereum | n/a | [`0x59e6d8eb72235fc964534e0e6283d93cd73e1f22`](./contracts/ethereum-1/0x59e6d8eb72235fc964534e0e6283d93cd73e1f22/) | ⚠️ Unaudited |
+| UpgradeableBeacon | unknown | ethereum | n/a | [`0x551a3a68026c4ac28e69f12377ee079494ce1bc7`](./contracts/ethereum-1/0x551a3a68026c4ac28e69f12377ee079494ce1bc7/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,7 +95,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x59e6d8...3e1f22`](./contracts/ethereum-1/0x59e6d8eb72235fc964534e0e6283d93cd73e1f22/) | ParseParaswap | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x59e6d8eb72235fc964534e0e6283d93cd73e1f22`](./contracts/ethereum-1/0x59e6d8eb72235fc964534e0e6283d93cd73e1f22/) | ParseParaswap | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -61,19 +61,19 @@ The protocol comprises 4 functional families. Its contracts share 5 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Core | unknown | ethereum | n/a | 2 deployments: ethereum [`0x000000...1bd701`](./contracts/ethereum-1/0x00000000000014aa86c5d3c41765bb24e11bd701/); ethereum `0xe0e0e0...57d444` | ✅ Audited |
-| Router | adapter | ethereum | n/a | [`0x999585...dff931`](./contracts/ethereum-1/0x9995855c00494d039ab6792f18e368e530dff931/) | ✅ Audited |
-| StarknetOwnerProxy | unknown | ethereum | n/a | [`0x1e0ef4...a6e9cc`](./contracts/ethereum-1/0x1e0ef4162e42c9bf820c307218c4e41ccca6e9cc/) | ✅ Audited |
+| Core | unknown | ethereum | n/a | 2 deployments: ethereum [`0x00000000000014aa86c5d3c41765bb24e11bd701`](./contracts/ethereum-1/0x00000000000014aa86c5d3c41765bb24e11bd701/); ethereum `0xe0e0e08a6a4b9dc7bd67bcb7aade5cf48157d444` | ✅ Audited |
+| Router | adapter | ethereum | n/a | [`0x9995855c00494d039ab6792f18e368e530dff931`](./contracts/ethereum-1/0x9995855c00494d039ab6792f18e368e530dff931/) | ✅ Audited |
+| StarknetOwnerProxy | unknown | ethereum | n/a | [`0x1e0ef4162e42c9bf820c307218c4e41ccca6e9cc`](./contracts/ethereum-1/0x1e0ef4162e42c9bf820c307218c4e41ccca6e9cc/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| EkuboToken | token | ethereum | n/a | [`0x04c46e...317d0f`](./contracts/ethereum-1/0x04c46e830bb56ce22735d5d8fc9cb90309317d0f/) | ⚠️ Unaudited |
-| MEVResistRouter | adapter | ethereum | n/a | [`0x0c95ea...44aeab`](./contracts/ethereum-1/0x0c95ea31e4501b3b879cae2232087e478d44aeab/) | ⚠️ Unaudited |
-| Positions | unknown | ethereum | n/a | [`0xa37cc3...b63e17`](./contracts/ethereum-1/0xa37cc341634afd9e0919d334606e676dbab63e17/) | ⚠️ Unaudited |
-| TokenWrapperFactory | registry | ethereum | n/a | [`0x2b8d80...0ab120`](./contracts/ethereum-1/0x2b8d80d891c1e20aca70ff8a85714aa1900ab120/) | ⚠️ Unaudited |
-| TokenWrapperPeriphery | token | ethereum | n/a | [`0x2992e4...89f5d6`](./contracts/ethereum-1/0x2992e49d73cc97fbc69c5498f332984c9a89f5d6/) | ⚠️ Unaudited |
+| EkuboToken | token | ethereum | n/a | [`0x04c46e830bb56ce22735d5d8fc9cb90309317d0f`](./contracts/ethereum-1/0x04c46e830bb56ce22735d5d8fc9cb90309317d0f/) | ⚠️ Unaudited |
+| MEVResistRouter | adapter | ethereum | n/a | [`0x0c95ea31e4501b3b879cae2232087e478d44aeab`](./contracts/ethereum-1/0x0c95ea31e4501b3b879cae2232087e478d44aeab/) | ⚠️ Unaudited |
+| Positions | unknown | ethereum | n/a | [`0xa37cc341634afd9e0919d334606e676dbab63e17`](./contracts/ethereum-1/0xa37cc341634afd9e0919d334606e676dbab63e17/) | ⚠️ Unaudited |
+| TokenWrapperFactory | registry | ethereum | n/a | [`0x2b8d80d891c1e20aca70ff8a85714aa1900ab120`](./contracts/ethereum-1/0x2b8d80d891c1e20aca70ff8a85714aa1900ab120/) | ⚠️ Unaudited |
+| TokenWrapperPeriphery | token | ethereum | n/a | [`0x2992e49d73cc97fbc69c5498f332984c9a89f5d6`](./contracts/ethereum-1/0x2992e49d73cc97fbc69c5498f332984c9a89f5d6/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,12 +93,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x208bb0...b7c285` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x553a2e...54c091` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x5a9093...8205be` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x91cb8a...9b408c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xae1430...67c18a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xd4279c...2b54ec` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x208bb00c6b142351e4a431f6dd323691ebb7c285` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x553a2efc570c9e104942cec6ac1c18118e54c091` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x5a9093673cdc9f7cae8b0d177797040b758205be` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x91cb8a896caf5e60b1f7c4818730543f849b408c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xae1430e3e089794beacba260657fcd0f0967c18a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd4279c050da1f5c5b2830558c7a08e57e12b54ec` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -116,11 +116,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x04c46e...317d0f`](./contracts/ethereum-1/0x04c46e830bb56ce22735d5d8fc9cb90309317d0f/) | EkuboToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0c95ea...44aeab`](./contracts/ethereum-1/0x0c95ea31e4501b3b879cae2232087e478d44aeab/) | MEVResistRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa37cc3...b63e17`](./contracts/ethereum-1/0xa37cc341634afd9e0919d334606e676dbab63e17/) | Positions | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2b8d80...0ab120`](./contracts/ethereum-1/0x2b8d80d891c1e20aca70ff8a85714aa1900ab120/) | TokenWrapperFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2992e4...89f5d6`](./contracts/ethereum-1/0x2992e49d73cc97fbc69c5498f332984c9a89f5d6/) | TokenWrapperPeriphery | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x04c46e830bb56ce22735d5d8fc9cb90309317d0f`](./contracts/ethereum-1/0x04c46e830bb56ce22735d5d8fc9cb90309317d0f/) | EkuboToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0c95ea31e4501b3b879cae2232087e478d44aeab`](./contracts/ethereum-1/0x0c95ea31e4501b3b879cae2232087e478d44aeab/) | MEVResistRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa37cc341634afd9e0919d334606e676dbab63e17`](./contracts/ethereum-1/0xa37cc341634afd9e0919d334606e676dbab63e17/) | Positions | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x2b8d80d891c1e20aca70ff8a85714aa1900ab120`](./contracts/ethereum-1/0x2b8d80d891c1e20aca70ff8a85714aa1900ab120/) | TokenWrapperFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x2992e49d73cc97fbc69c5498f332984c9a89f5d6`](./contracts/ethereum-1/0x2992e49d73cc97fbc69c5498f332984c9a89f5d6/) | TokenWrapperPeriphery | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -52,38 +52,38 @@ The pinned logic-topography run contains 24 contract row(s) across arbitrum, bas
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x7bad59...158b6f`, chain 1)
-- UnnamedContract (`0x93a3a3...7456ab`, chain 1)
-- UnnamedContract (`0x9524e2...02d44d`, chain 1)
-- UnnamedContract (`0xa425d3...3b4826`, chain 1)
-- UnnamedContract (`0xb4b3f5...ad7021`, chain 1)
-- UnnamedContract (`0xcb9737...7fdd7f`, chain 1)
-- UnnamedContract (`0xcff9d3...bb8a76`, chain 1)
-- UnnamedContract (`0xf83733...b467e0`, chain 1)
-- UnnamedContract (`0x2bcb71...c5ed26`, chain 143)
-- UnnamedContract (`0x779ded...713736`, chain 196)
-- UnnamedContract (`0x946fd0...b805f0`, chain 999)
-- UnnamedContract (`0x5dd8bf...c4cdb7`, chain 8453)
-- FiatTokenProxy (`0x1abaea...1bc33c`, chain 1)
-- FiatTokenProxy (`0xa0b869...06eb48`, chain 1)
-- FiatTokenProxy (`0x833589...a02913`, chain 8453)
-- FiatTokenProxy (`0xcbb7c0...ed33bf`, chain 8453)
-- FiatTokenProxy (`0xaf88d0...8e5831`, chain 42161)
-- SafeProxy (`0x67b6f6...44fcd2`, chain 1)
-- SafeProxy (`0x93e526...fd5927`, chain 1)
-- TetherToken (`0xdac17f...831ec7`, chain 1)
-- TimelockController (`0x38ce5e...186f48`, chain 1)
-- TransparentUpgradeableProxy (`0x586675...cc61a1`, chain 1)
-- TransparentUpgradeableProxy (`0x687496...782f38`, chain 1)
-- TransparentUpgradeableProxy (`0x000000...588a65`, chain 8453)
-- TransparentUpgradeableProxy (`0x3a43ae...0e9de7`, chain 8453)
-- TransparentUpgradeableProxy (`0x50c749...c871e9`, chain 8453)
-- TransparentUpgradeableProxy (`0xbcbc8c...60bcbc`, chain 8453)
-- WETH9 (`0xc02aaa...756cc2`, chain 1)
-- WETH9 (`0x420000...000006`, chain 8453)
-- YoOracle (`0x6e879d...d396b0`, chain 1)
-- YoRegistry (`0x542d29...bc8ae8`, chain 8453)
-- yoUSDT (`0x0a09e9...df9716`, chain 1)
+- UnnamedContract (`0x7bad596c26e175384bd9985cb97c6c3f7e158b6f`, chain 1)
+- UnnamedContract (`0x93a3a3325de6ab429523d144b41a032e7d7456ab`, chain 1)
+- UnnamedContract (`0x9524e25079b1b04d904865704783a5aa0202d44d`, chain 1)
+- UnnamedContract (`0xa425d3c9a1c048be1183d8e396406bda813b4826`, chain 1)
+- UnnamedContract (`0xb4b3f5c964a360bbd7201f72a55d0c48b8ad7021`, chain 1)
+- UnnamedContract (`0xcb9737bdd076251744704cc37ce961e8417fdd7f`, chain 1)
+- UnnamedContract (`0xcff9d39441eb668c7fffa752ad1ea47930bb8a76`, chain 1)
+- UnnamedContract (`0xf837334c5c48f16a8a73affb09859bb7fdb467e0`, chain 1)
+- UnnamedContract (`0x2bcb71309554a5dc31932cb3d5a547cd8cc5ed26`, chain 143)
+- UnnamedContract (`0x779ded0c9e1022225f8e0630b35a9b54be713736`, chain 196)
+- UnnamedContract (`0x946fd049c47beff53a32588c67df6a5a16b805f0`, chain 999)
+- UnnamedContract (`0x5dd8bfa6c5c68d05d25ef6143e05c11e26c4cdb7`, chain 8453)
+- FiatTokenProxy (`0x1abaea1f7c830bd89acc67ec4af516284b1bc33c`, chain 1)
+- FiatTokenProxy (`0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48`, chain 1)
+- FiatTokenProxy (`0x833589fcd6edb6e08f4c7c32d4f71b54bda02913`, chain 8453)
+- FiatTokenProxy (`0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf`, chain 8453)
+- FiatTokenProxy (`0xaf88d065e77c8cc2239327c5edb3a432268e5831`, chain 42161)
+- SafeProxy (`0x67b6f699f1c8040414032a3c2c88a54db144fcd2`, chain 1)
+- SafeProxy (`0x93e5260ac975b475af8bf818c14deee7fefd5927`, chain 1)
+- TetherToken (`0xdac17f958d2ee523a2206206994597c13d831ec7`, chain 1)
+- TimelockController (`0x38ce5e45d0f5d03e83863bb19b3b1a272c186f48`, chain 1)
+- TransparentUpgradeableProxy (`0x586675a3a46b008d8408933cf42d8ff6c9cc61a1`, chain 1)
+- TransparentUpgradeableProxy (`0x68749665ff8d2d112fa859aa293f07a622782f38`, chain 1)
+- TransparentUpgradeableProxy (`0x0000000f2eb9f69274678c76222b35eec7588a65`, chain 8453)
+- TransparentUpgradeableProxy (`0x3a43aec53490cb9fa922847385d82fe25d0e9de7`, chain 8453)
+- TransparentUpgradeableProxy (`0x50c749ae210d3977adc824ae11f3c7fd10c871e9`, chain 8453)
+- TransparentUpgradeableProxy (`0xbcbc8cb4d1e8ed048a6276a5e94a3e952660bcbc`, chain 8453)
+- WETH9 (`0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2`, chain 1)
+- WETH9 (`0x4200000000000000000000000000000000000006`, chain 8453)
+- YoOracle (`0x6e879d0ccc85085a709ebf5539224f53d0d396b0`, chain 1)
+- YoRegistry (`0x542d29b2b69f83fa65eec2f3c782968c43bc8ae8`, chain 8453)
+- yoUSDT (`0x0a09e980cae64d8840fd9c92f165aba4bfdf9716`, chain 1)
 
 ## Contract Surface Quality
 
@@ -132,37 +132,37 @@ The pinned logic-topography run contains 24 contract row(s) across arbitrum, bas
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| TimelockController | governance | project_anchor | own_supporting | 0 | ethereum | unit-263629 | `0x38ce5e...186f48` | ✅ Audited |
-| YoOracle | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-263633 | `0x6e879d...d396b0` | ✅ Audited |
-| YoRegistry | unknown | project_anchor | own_supporting | 1 | base | unit-263660 | 2 deployments: base `0x542d29...bc8ae8`; base `0x56c311...502232` | ✅ Audited |
+| TimelockController | governance | project_anchor | own_supporting | 0 | ethereum | unit-263629 | `0x38ce5e45d0f5d03e83863bb19b3b1a272c186f48` | ✅ Audited |
+| YoOracle | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-263633 | `0x6e879d0ccc85085a709ebf5539224f53d0d396b0` | ✅ Audited |
+| YoRegistry | unknown | project_anchor | own_supporting | 1 | base | unit-263660 | 2 deployments: base `0x542d29b2b69f83fa65eec2f3c782968c43bc8ae8`; base `0x56c3119dc3b1a75763c87d5b0a2c55e489502232` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (23)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Escrow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0xc5da2b...70ebca`; base `0xfe4196...891e10` | ⚠️ Unaudited |
-| FiatTokenV2_1 | token | project_anchor | own_supporting | 1 | base | unit-263662 | `0xcbb7c0...ed33bf` | ⚠️ Unaudited |
-| FiatTokenV2_2 | token | project_anchor | own_supporting | 2 | ethereum | unit-263655 (2 proxies) | 2 deployments: ethereum `0x1abaea...1bc33c`; ethereum `0xa0b869...06eb48` | ⚠️ Unaudited |
-| FiatTokenV2_2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x60a3e3...1adb42` | ⚠️ Unaudited |
-| FiatTokenV2_2 | token | project_anchor | own_supporting | 1 | base | unit-263659 | `0x833589...a02913` | ⚠️ Unaudited |
-| FiatTokenV2_2 | token | project_anchor | own_supporting | 1 | arbitrum | unit-263658 | `0xaf88d0...8e5831` | ⚠️ Unaudited |
-| RoadrunnerWithdrawer | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x4fd9f5...e7d7da` | ⚠️ Unaudited |
-| Safe | unknown | project_anchor | own_supporting | 2 | ethereum | unit-263654 (2 proxies) | 2 deployments: ethereum `0x67b6f6...44fcd2`; ethereum `0x93e526...fd5927` | ⚠️ Unaudited |
-| SafeProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xae11f1...a3d262` | ⚠️ Unaudited |
-| TetherToken | token | project_anchor | own_supporting | 1 | ethereum | unit-263656 | `0x687496...782f38` | ⚠️ Unaudited |
-| TetherToken | token | project_anchor | own_supporting | 0 | ethereum | unit-263646 | `0xdac17f...831ec7` | ⚠️ Unaudited |
-| WETH9 | token | project_anchor | own_supporting | 0 | ethereum | unit-263643 | `0xc02aaa...756cc2` | ⚠️ Unaudited |
-| WETH9 | token | project_anchor | own_supporting | 0 | base | unit-263650 | `0x420000...000006` | ⚠️ Unaudited |
-| YoEscrow | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x05584e...7a0efb` | ⚠️ Unaudited |
-| YoGateway | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: base `0x0cf9a8...7bb0cf`; base `0xecd62a...3c816e`; base `0xf5ebf5...556cae` | ⚠️ Unaudited |
-| YoGateway | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | base | unit-263663 | 2 deployments: base `0xc33660...6f903e`; base `0xf1eee0...4969fa` | ⚠️ Unaudited |
-| yoUSDT | unknown | project_anchor | own_supporting | 1 | ethereum | unit-263653 | 2 deployments: ethereum `0x0a09e9...df9716`; ethereum `0xb9a7da...5b721e` | ⚠️ Unaudited |
-| yoUSDT | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcbb008...14435f` | ⚠️ Unaudited |
-| YoVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 6 deployments: ethereum `0xa9c5f1...443052`; ethereum `0xda92d2...2dc169`; base `0x32578e...d123f7`; base `0x957c92...792358`; base `0xd6e282...ed4c44`; base `0xda92d2...2dc169` | ⚠️ Unaudited |
-| YoVault_V2 | core_logic | non_address_book | non_address_book_inventory (excluded) | 4 | ethereum | n/a | 4 deployments: ethereum `0x000000...588a65`; ethereum `0x3a43ae...0e9de7`; ethereum `0x50c749...c871e9`; ethereum `0xbcbc8c...60bcbc` | ⚠️ Unaudited |
-| YoVault_V2 | core_logic | project_anchor | own_supporting | 1 | ethereum | unit-263657 | `0x586675...cc61a1` | ⚠️ Unaudited |
-| YoVault_V2 | core_logic | project_anchor | own_supporting | 4 | base | unit-263661 (4 proxies) | 4 deployments: base `0x000000...588a65`; base `0x3a43ae...0e9de7`; base `0x50c749...c871e9`; base `0xbcbc8c...60bcbc` | ⚠️ Unaudited |
-| YoVault_V2 | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x000000...588a65`; arbitrum `0x7e715d...f262bb` | ⚠️ Unaudited |
+| Escrow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0xc5da2b9174234f34c5857295776f5ea1fe70ebca`; base `0xfe41964c2acccbe2da28b27f9034a227b6891e10` | ⚠️ Unaudited |
+| FiatTokenV2_1 | token | project_anchor | own_supporting | 1 | base | unit-263662 | `0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf` | ⚠️ Unaudited |
+| FiatTokenV2_2 | token | project_anchor | own_supporting | 2 | ethereum | unit-263655 (2 proxies) | 2 deployments: ethereum `0x1abaea1f7c830bd89acc67ec4af516284b1bc33c`; ethereum `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48` | ⚠️ Unaudited |
+| FiatTokenV2_2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x60a3e35cc302bfa44cb288bc5a4f316fdb1adb42` | ⚠️ Unaudited |
+| FiatTokenV2_2 | token | project_anchor | own_supporting | 1 | base | unit-263659 | `0x833589fcd6edb6e08f4c7c32d4f71b54bda02913` | ⚠️ Unaudited |
+| FiatTokenV2_2 | token | project_anchor | own_supporting | 1 | arbitrum | unit-263658 | `0xaf88d065e77c8cc2239327c5edb3a432268e5831` | ⚠️ Unaudited |
+| RoadrunnerWithdrawer | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x4fd9f5f7a2c074fcacf13dcd207413b5d4e7d7da` | ⚠️ Unaudited |
+| Safe | unknown | project_anchor | own_supporting | 2 | ethereum | unit-263654 (2 proxies) | 2 deployments: ethereum `0x67b6f699f1c8040414032a3c2c88a54db144fcd2`; ethereum `0x93e5260ac975b475af8bf818c14deee7fefd5927` | ⚠️ Unaudited |
+| SafeProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xae11f170491edf4a139e32386153936792a3d262` | ⚠️ Unaudited |
+| TetherToken | token | project_anchor | own_supporting | 1 | ethereum | unit-263656 | `0x68749665ff8d2d112fa859aa293f07a622782f38` | ⚠️ Unaudited |
+| TetherToken | token | project_anchor | own_supporting | 0 | ethereum | unit-263646 | `0xdac17f958d2ee523a2206206994597c13d831ec7` | ⚠️ Unaudited |
+| WETH9 | token | project_anchor | own_supporting | 0 | ethereum | unit-263643 | `0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2` | ⚠️ Unaudited |
+| WETH9 | token | project_anchor | own_supporting | 0 | base | unit-263650 | `0x4200000000000000000000000000000000000006` | ⚠️ Unaudited |
+| YoEscrow | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x05584e30f51cf5dfd33b03ea629ef3dbf57a0efb` | ⚠️ Unaudited |
+| YoGateway | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: base `0x0cf9a84bb9e916229f3037dc079ef418b97bb0cf`; base `0xecd62a8bbd3503710765a53218c480127b3c816e`; base `0xf5ebf57bc4ece32d1036ad907db1fa0a68556cae` | ⚠️ Unaudited |
+| YoGateway | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | base | unit-263663 | 2 deployments: base `0xc33660b771db437e15e9234cc424e750376f903e`; base `0xf1eee0957267b1a474323ff9cff7719e964969fa` | ⚠️ Unaudited |
+| yoUSDT | unknown | project_anchor | own_supporting | 1 | ethereum | unit-263653 | 2 deployments: ethereum `0x0a09e980cae64d8840fd9c92f165aba4bfdf9716`; ethereum `0xb9a7da9e90d3b428083bae04b860faa6325b721e` | ⚠️ Unaudited |
+| yoUSDT | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcbb0082b74ae921691bf15c3de8effaecd14435f` | ⚠️ Unaudited |
+| YoVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 6 deployments: ethereum `0xa9c5f18480fa36d4a84ebbd778c8ca6f65443052`; ethereum `0xda92d2172cd402d222131cc95a66ec7bd82dc169`; base `0x32578ee59e91028216f5e9f1a5ee77d298d123f7`; base `0x957c92c28a635f9c784628baaba69ae981792358`; base `0xd6e28270d3728db0ae64a348330aced3f2ed4c44`; base `0xda92d2172cd402d222131cc95a66ec7bd82dc169` | ⚠️ Unaudited |
+| YoVault_V2 | core_logic | non_address_book | non_address_book_inventory (excluded) | 4 | ethereum | n/a | 4 deployments: ethereum `0x0000000f2eb9f69274678c76222b35eec7588a65`; ethereum `0x3a43aec53490cb9fa922847385d82fe25d0e9de7`; ethereum `0x50c749ae210d3977adc824ae11f3c7fd10c871e9`; ethereum `0xbcbc8cb4d1e8ed048a6276a5e94a3e952660bcbc` | ⚠️ Unaudited |
+| YoVault_V2 | core_logic | project_anchor | own_supporting | 1 | ethereum | unit-263657 | `0x586675a3a46b008d8408933cf42d8ff6c9cc61a1` | ⚠️ Unaudited |
+| YoVault_V2 | core_logic | project_anchor | own_supporting | 4 | base | unit-263661 (4 proxies) | 4 deployments: base `0x0000000f2eb9f69274678c76222b35eec7588a65`; base `0x3a43aec53490cb9fa922847385d82fe25d0e9de7`; base `0x50c749ae210d3977adc824ae11f3c7fd10c871e9`; base `0xbcbc8cb4d1e8ed048a6276a5e94a3e952660bcbc` | ⚠️ Unaudited |
+| YoVault_V2 | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x0000000f2eb9f69274678c76222b35eec7588a65`; arbitrum `0x7e715d9731ee8c29e0bde2e852891e9fbef262bb` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -182,24 +182,24 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-263626 | `0x206ff3...3efd64` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-263627 | `0x2800fc...ecbf07` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-263630 | `0x440944...f3c50f` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x56c311...502232` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5dd8bf...c4cdb7` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-263635 | `0x7bad59...158b6f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-263636 | `0x93a3a3...7456ab` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-263637 | `0x9524e2...02d44d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-263638 | `0xa425d3...3b4826` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-263642 | `0xb4b3f5...ad7021` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-263644 | `0xcb9737...7fdd7f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-263645 | `0xcff9d3...bb8a76` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf1eee0...4969fa` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-263647 | `0xf83733...b467e0` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-263648 | `0x2bcb71...c5ed26` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | x-layer | unit-263649 | `0x779ded...713736` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-263652 | `0x946fd0...b805f0` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-263651 | `0x5dd8bf...c4cdb7` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-263626 | `0x206ff3f58f57d00c48af6010de6dc26f913efd64` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-263627 | `0x2800fc940a9b3bcb2cde3c70797b21296becbf07` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-263630 | `0x4409446b49e24861697d566e5c6d68c0d8f3c50f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x56c3119dc3b1a75763c87d5b0a2c55e489502232` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5dd8bfa6c5c68d05d25ef6143e05c11e26c4cdb7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-263635 | `0x7bad596c26e175384bd9985cb97c6c3f7e158b6f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-263636 | `0x93a3a3325de6ab429523d144b41a032e7d7456ab` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-263637 | `0x9524e25079b1b04d904865704783a5aa0202d44d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-263638 | `0xa425d3c9a1c048be1183d8e396406bda813b4826` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-263642 | `0xb4b3f5c964a360bbd7201f72a55d0c48b8ad7021` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-263644 | `0xcb9737bdd076251744704cc37ce961e8417fdd7f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-263645 | `0xcff9d39441eb668c7fffa752ad1ea47930bb8a76` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf1eee0957267b1a474323ff9cff7719e964969fa` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-263647 | `0xf837334c5c48f16a8a73affb09859bb7fdb467e0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-263648 | `0x2bcb71309554a5dc31932cb3d5a547cd8cc5ed26` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | x-layer | unit-263649 | `0x779ded0c9e1022225f8e0630b35a9b54be713736` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-263652 | `0x946fd049c47beff53a32588c67df6a5a16b805f0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-263651 | `0x5dd8bfa6c5c68d05d25ef6143e05c11e26c4cdb7` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -255,19 +255,19 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 |---|---|---|---|---|---|
 | 20251121_Paladin_YoProtocol_Final_Report.pdf | YoEscrow | unmatched — not counted | — | — | no |
 | 20251121_Paladin_YoProtocol_Final_Report.pdf | YoGateway | unmatched — not counted | — | — | no |
-| 20251121_Paladin_YoProtocol_Final_Report.pdf | YoRegistry | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x56c311...502232` — deployed 2025-08-18 15:53:51+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 20251121_Paladin_YoProtocol_Final_Report.pdf | YoRegistry | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x56c3119dc3b1a75763c87d5b0a2c55e489502232` — deployed 2025-08-18 15:53:51+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 20251121_Paladin_YoProtocol_Final_Report.pdf | YoSecondaryVault | unmatched — not counted | — | — | no |
 | 20251121_Paladin_YoProtocol_Final_Report.pdf | YoVault | unmatched — not counted | — | — | no |
 | Exponential YoProtocol Review.pdf | AuthUpgradable | unmatched — not counted | — | — | no |
 | Exponential YoProtocol Review.pdf | Errors | unmatched — not counted | — | — | no |
 | Exponential YoProtocol Review.pdf | Escrow | unmatched — not counted | — | — | no |
 | Exponential YoProtocol Review.pdf | RolesAuthority | unmatched — not counted | — | — | no |
-| Exponential YoProtocol Review.pdf | TimelockController | own contract | TimelockController (selected) `0x38ce5e...186f48` — deployed 2026-03-31 16:36:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Exponential YoProtocol Review.pdf | TimelockController | own contract | TimelockController (selected) `0x38ce5e45d0f5d03e83863bb19b3b1a272c186f48` — deployed 2026-03-31 16:36:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Exponential YoProtocol Review.pdf | yoVault | unmatched — not counted | — | — | no |
 | Yo-Protocol-Aether-Security-Audit-2.pdf | YoSecondaryVault | unmatched — not counted | — | listed in scope section | no |
-| Yo-Protocol-Aetheryc-Security-Review_V2.pdf | YoOracle | own contract | YoOracle (selected) `0x6e879d...d396b0` — deployed 2025-12-01 12:04:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Yo-Protocol-Aetheryc-Security-Review_V2.pdf | YoOracle | own contract | YoOracle (selected) `0x6e879d0ccc85085a709ebf5539224f53d0d396b0` — deployed 2025-12-01 12:04:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Yo-Protocol-Aetheryc-Security-Review_V2.pdf | YoToken | unmatched — not counted | — | listed in scope table | no |
-| Yo-Protocol-Aetheryc-Security-Review_V2.pdf | YoVault_V2 | ambiguous — not counted | TransparentUpgradeableProxy (proxy) (alternative) `0x50c749...c871e9` — deployed 2025-08-26 14:09:57+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x000000...588a65` — deployed 2025-04-17 17:55:33+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0xbcbc8c...60bcbc` — deployed 2025-03-13 13:20:35+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x3a43ae...0e9de7` — deployed 2025-01-21 14:33:07+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x586675...cc61a1` — deployed 2025-10-10 09:05:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Yo-Protocol-Aetheryc-Security-Review_V2.pdf | YoVault_V2 | ambiguous — not counted | TransparentUpgradeableProxy (proxy) (alternative) `0x50c749ae210d3977adc824ae11f3c7fd10c871e9` — deployed 2025-08-26 14:09:57+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x0000000f2eb9f69274678c76222b35eec7588a65` — deployed 2025-04-17 17:55:33+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0xbcbc8cb4d1e8ed048a6276a5e94a3e952660bcbc` — deployed 2025-03-13 13:20:35+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x3a43aec53490cb9fa922847385d82fe25d0e9de7` — deployed 2025-01-21 14:33:07+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x586675a3a46b008d8408933cf42d8ff6c9cc61a1` — deployed 2025-10-10 09:05:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | Yo-Protocol-Hunter-Security-Audit-Report-1.1.pdf | AuthUpgradable | unmatched — not counted | — | — | no |
 | Yo-Protocol-Hunter-Security-Audit-Report-1.1.pdf | Escrow | unmatched — not counted | — | — | no |
 | Yo-Protocol-Hunter-Security-Audit-Report-1.1.pdf | yoVault | unmatched — not counted | — | — | no |
@@ -275,7 +275,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Yo-Protocol-Offbeat-Security-Review.pdf | AuthUpgradable | unmatched — not counted | — | listed in scope | no |
 | Yo-Protocol-Offbeat-Security-Review.pdf | Escrow | unmatched — not counted | — | listed in scope | no |
 | Yo-Protocol-Offbeat-Security-Review.pdf | RolesAuthority | unmatched — not counted | — | listed in scope | no |
-| Yo-Protocol-Offbeat-Security-Review.pdf | TimelockController | own contract | TimelockController (selected) `0x38ce5e...186f48` — deployed 2026-03-31 16:36:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Yo-Protocol-Offbeat-Security-Review.pdf | TimelockController | own contract | TimelockController (selected) `0x38ce5e45d0f5d03e83863bb19b3b1a272c186f48` — deployed 2026-03-31 16:36:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Yo-Protocol-Offbeat-Security-Review.pdf | Errors | unmatched — not counted | — | listed in scope | no |
 | Yo-Protocol-Offbeat-Security-Review.pdf | yoVault | unmatched — not counted | — | listed in scope | no |
 | Yo-Protocol-Hunter-Security-Audit-Report.pdf | yoVault | unmatched — not counted | — | listed in scope | no |
@@ -286,16 +286,16 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | 20251121_Paladin_YoProtocol_Final_Report.pdf | YoEscrow | unmatched — not counted | — | listed in scope table and findings section | no |
 | 20251121_Paladin_YoProtocol_Final_Report.pdf | YoGateway | unmatched — not counted | — | listed in scope table and findings section | no |
 | 20251121_Paladin_YoProtocol_Final_Report.pdf | YoVault | unmatched — not counted | — | listed in scope table and findings section | no |
-| 20251121_Paladin_YoProtocol_Final_Report.pdf | YoRegistry | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x56c311...502232` — deployed 2025-08-18 15:53:51+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 20251121_Paladin_YoProtocol_Final_Report.pdf | YoRegistry | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x56c3119dc3b1a75763c87d5b0a2c55e489502232` — deployed 2025-08-18 15:53:51+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 20251121_Paladin_YoProtocol_Final_Report.pdf | YoSecondaryVault | unmatched — not counted | — | listed in scope table and findings section | no |
-| Yo-Protocol-Aetheryc-Security-Review_V2.pdf | YoOracle | own contract | YoOracle (selected) `0x6e879d...d396b0` — deployed 2025-12-01 12:04:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Yo-Protocol-Aetheryc-Security-Review_V2.pdf | YoOracle | own contract | YoOracle (selected) `0x6e879d0ccc85085a709ebf5539224f53d0d396b0` — deployed 2025-12-01 12:04:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Yo-Protocol-Aetheryc-Security-Review_V2.pdf | YoToken | unmatched — not counted | — | listed in scope table | no |
-| Yo-Protocol-Aetheryc-Security-Review_V2.pdf | YoVault_V2 | ambiguous — not counted | TransparentUpgradeableProxy (proxy) (alternative) `0x50c749...c871e9` — deployed 2025-08-26 14:09:57+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x000000...588a65` — deployed 2025-04-17 17:55:33+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0xbcbc8c...60bcbc` — deployed 2025-03-13 13:20:35+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x3a43ae...0e9de7` — deployed 2025-01-21 14:33:07+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x586675...cc61a1` — deployed 2025-10-10 09:05:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Yo-Protocol-Aetheryc-Security-Review_V2.pdf | YoVault_V2 | ambiguous — not counted | TransparentUpgradeableProxy (proxy) (alternative) `0x50c749ae210d3977adc824ae11f3c7fd10c871e9` — deployed 2025-08-26 14:09:57+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x0000000f2eb9f69274678c76222b35eec7588a65` — deployed 2025-04-17 17:55:33+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0xbcbc8cb4d1e8ed048a6276a5e94a3e952660bcbc` — deployed 2025-03-13 13:20:35+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x3a43aec53490cb9fa922847385d82fe25d0e9de7` — deployed 2025-01-21 14:33:07+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x586675a3a46b008d8408933cf42d8ff6c9cc61a1` — deployed 2025-10-10 09:05:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | yoSOL-Zellic Audit Report.pdf | yo-oracle | unmatched — not counted | — | listed in scope section | no |
 | yoSOL-Zellic Audit Report.pdf | yo-vault | unmatched — not counted | — | listed in scope section | no |
 | yoSOL-Zellic Audit Report.pdf | yo-lib | unmatched — not counted | — | listed in scope section | no |
 | 2026-accretion-yo-labs-yo-protocol-solana-audit-A26YOL1 (1).pdf | YoVault | unmatched — not counted | — | Listed in scope as Item 1: YO Solana vault, program ID yvSoLSBaLoqZ2yQttGbaYzHDXr9Bo9UdqtiRDiVaMxP | no |
-| 2026-accretion-yo-labs-yo-protocol-solana-audit-A26YOL1 (1).pdf | YoOracle | own contract | YoOracle (selected) `0x6e879d...d396b0` — deployed 2025-12-01 12:04:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2026-accretion-yo-labs-yo-protocol-solana-audit-A26YOL1 (1).pdf | YoOracle | own contract | YoOracle (selected) `0x6e879d0ccc85085a709ebf5539224f53d0d396b0` — deployed 2025-12-01 12:04:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2026-accretion-yo-labs-yo-protocol-solana-audit-A26YOL1 (1).pdf | yo-vault | unmatched — not counted | — | Referenced throughout findings as the vault program | no |
 | 2026-accretion-yo-labs-yo-protocol-solana-audit-A26YOL1 (1).pdf | yo-oracle | unmatched — not counted | — | Referenced throughout findings as the oracle program | no |
 | 2026-accretion-yo-labs-yo-protocol-solana-audit-A26YOL1 (1).pdf | yo-lib | unmatched — not counted | — | Referenced in findings as a library crate | no |
@@ -304,18 +304,18 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | yo_contracts_v2_cantina.pdf | YoAdapterBase | unmatched — not counted | — | listed in scope | no |
 | yo_contracts_v2_cantina.pdf | YoERC4626Adapter | unmatched — not counted | — | listed in scope | no |
 | yo_contracts_v2_cantina.pdf | YoIPORAdapter | unmatched — not counted | — | listed in scope | no |
-| yo_contracts_v2_cantina.pdf | YoLidoAdapter | own contract | 0xf83733… (selected) `0xf83733...b467e0` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| yo_contracts_v2_cantina.pdf | YoMorphoAdapter | ambiguous — not counted | 0x93a3a3… (alternative) `0x93a3a3...7456ab` — liveness: live (current_address_book_code)<br>0x2bcb71… (alternative) `0x2bcb71...c5ed26` — liveness: live (current_address_book_code)<br>0x946fd0… (alternative) `0x946fd0...b805f0` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| yo_contracts_v2_cantina.pdf | YoSwapAdapter | own contract | 0xa425d3… (selected) `0xa425d3...3b4826` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| yo_contracts_v2_cantina.pdf | YoLidoAdapter | own contract | 0xf83733… (selected) `0xf837334c5c48f16a8a73affb09859bb7fdb467e0` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| yo_contracts_v2_cantina.pdf | YoMorphoAdapter | ambiguous — not counted | 0x93a3a3… (alternative) `0x93a3a3325de6ab429523d144b41a032e7d7456ab` — liveness: live (current_address_book_code)<br>0x2bcb71… (alternative) `0x2bcb71309554a5dc31932cb3d5a547cd8cc5ed26` — liveness: live (current_address_book_code)<br>0x946fd0… (alternative) `0x946fd049c47beff53a32588c67df6a5a16b805f0` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| yo_contracts_v2_cantina.pdf | YoSwapAdapter | own contract | 0xa425d3… (selected) `0xa425d3c9a1c048be1183d8e396406bda813b4826` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | yo_contracts_v2_cantina.pdf | YoUSDTAdapter | unmatched — not counted | — | listed in scope | no |
 | yo_contracts_v2_cantina.pdf | AuthUpgradeable | unmatched — not counted | — | listed in scope | no |
 | yo_contracts_v2_cantina.pdf | Compatible | unmatched — not counted | — | listed in scope | no |
 | yo_contracts_v2_cantina.pdf | Errors | unmatched — not counted | — | listed in scope | no |
 | yo_contracts_v2_cantina.pdf | YoChainlinkOracle | unmatched — not counted | — | listed in scope | no |
-| yo_contracts_v2_cantina.pdf | YoApprovalRegistry | own contract | 0xb4b3f5… (selected) `0xb4b3f5...ad7021` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| yo_contracts_v2_cantina.pdf | YoERC4626VaultRegistry | own contract | 0x7bad59… (selected) `0x7bad59...158b6f` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| yo_contracts_v2_cantina.pdf | YoMorphoMarketRegistry | own contract | 0xcb9737… (selected) `0xcb9737...7fdd7f` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| yo_contracts_v2_cantina.pdf | YoSwapPairRegistry | own contract | 0xcff9d3… (selected) `0xcff9d3...bb8a76` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| yo_contracts_v2_cantina.pdf | YoApprovalRegistry | own contract | 0xb4b3f5… (selected) `0xb4b3f5c964a360bbd7201f72a55d0c48b8ad7021` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| yo_contracts_v2_cantina.pdf | YoERC4626VaultRegistry | own contract | 0x7bad59… (selected) `0x7bad596c26e175384bd9985cb97c6c3f7e158b6f` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| yo_contracts_v2_cantina.pdf | YoMorphoMarketRegistry | own contract | 0xcb9737… (selected) `0xcb9737bdd076251744704cc37ce961e8417fdd7f` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| yo_contracts_v2_cantina.pdf | YoSwapPairRegistry | own contract | 0xcff9d3… (selected) `0xcff9d39441eb668c7fffa752ad1ea47930bb8a76` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | yo_contracts_v2_rereview_cantina.pdf | YoVault | unmatched — not counted | — | listed in scope section 2.1.1 | no |
 | yo_contracts_v2_rereview_cantina.pdf | YoChainlinkOracle | unmatched — not counted | — | listed in scope section 2.1.1 | no |
 | yo_contracts_v2_rereview_cantina.pdf | YoAdapterBase | unmatched — not counted | — | listed in scope section 2.1.1 | no |
@@ -323,17 +323,17 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | yo_contracts_v2_rereview_cantina.pdf | YoFxSaveAdapter | unmatched — not counted | — | listed in scope section 2.1.1 | no |
 | yo_contracts_v2_rereview_cantina.pdf | YoFxSaveRedeemer | unmatched — not counted | — | listed in scope section 2.1.1 | no |
 | yo_contracts_v2_rereview_cantina.pdf | YoIPORAdapter | unmatched — not counted | — | listed in scope section 2.1.1 | no |
-| yo_contracts_v2_rereview_cantina.pdf | YoLidoAdapter | own contract | 0xf83733… (selected) `0xf83733...b467e0` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| yo_contracts_v2_rereview_cantina.pdf | YoMorphoAdapter | ambiguous — not counted | 0x93a3a3… (alternative) `0x93a3a3...7456ab` — liveness: live (current_address_book_code)<br>0x2bcb71… (alternative) `0x2bcb71...c5ed26` — liveness: live (current_address_book_code)<br>0x946fd0… (alternative) `0x946fd0...b805f0` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| yo_contracts_v2_rereview_cantina.pdf | YoSwapAdapter | own contract | 0xa425d3… (selected) `0xa425d3...3b4826` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| yo_contracts_v2_rereview_cantina.pdf | YoLidoAdapter | own contract | 0xf83733… (selected) `0xf837334c5c48f16a8a73affb09859bb7fdb467e0` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| yo_contracts_v2_rereview_cantina.pdf | YoMorphoAdapter | ambiguous — not counted | 0x93a3a3… (alternative) `0x93a3a3325de6ab429523d144b41a032e7d7456ab` — liveness: live (current_address_book_code)<br>0x2bcb71… (alternative) `0x2bcb71309554a5dc31932cb3d5a547cd8cc5ed26` — liveness: live (current_address_book_code)<br>0x946fd0… (alternative) `0x946fd049c47beff53a32588c67df6a5a16b805f0` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| yo_contracts_v2_rereview_cantina.pdf | YoSwapAdapter | own contract | 0xa425d3… (selected) `0xa425d3c9a1c048be1183d8e396406bda813b4826` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | yo_contracts_v2_rereview_cantina.pdf | YoUSDTAdapter | unmatched — not counted | — | listed in scope section 2.1.1 | no |
 | yo_contracts_v2_rereview_cantina.pdf | YoGateway | unmatched — not counted | — | referenced in findings (e.g., 4.2.4) | no |
-| yo_contracts_v2_rereview_cantina.pdf | YoOracle | own contract | YoOracle (selected) `0x6e879d...d396b0` — deployed 2025-12-01 12:04:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| yo_contracts_v2_rereview_cantina.pdf | YoApprovalRegistry | own contract | 0xb4b3f5… (selected) `0xb4b3f5...ad7021` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| yo_contracts_v2_rereview_cantina.pdf | YoERC4626VaultRegistry | own contract | 0x7bad59… (selected) `0x7bad59...158b6f` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| yo_contracts_v2_rereview_cantina.pdf | YoMorphoMarketRegistry | own contract | 0xcb9737… (selected) `0xcb9737...7fdd7f` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| yo_contracts_v2_rereview_cantina.pdf | YoSwapPairRegistry | own contract | 0xcff9d3… (selected) `0xcff9d3...bb8a76` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| yo_contracts_v2_rereview_cantina.pdf | YoRegistry | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x56c311...502232` — deployed 2025-08-18 15:53:51+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| yo_contracts_v2_rereview_cantina.pdf | YoOracle | own contract | YoOracle (selected) `0x6e879d0ccc85085a709ebf5539224f53d0d396b0` — deployed 2025-12-01 12:04:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| yo_contracts_v2_rereview_cantina.pdf | YoApprovalRegistry | own contract | 0xb4b3f5… (selected) `0xb4b3f5c964a360bbd7201f72a55d0c48b8ad7021` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| yo_contracts_v2_rereview_cantina.pdf | YoERC4626VaultRegistry | own contract | 0x7bad59… (selected) `0x7bad596c26e175384bd9985cb97c6c3f7e158b6f` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| yo_contracts_v2_rereview_cantina.pdf | YoMorphoMarketRegistry | own contract | 0xcb9737… (selected) `0xcb9737bdd076251744704cc37ce961e8417fdd7f` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| yo_contracts_v2_rereview_cantina.pdf | YoSwapPairRegistry | own contract | 0xcff9d3… (selected) `0xcff9d39441eb668c7fffa752ad1ea47930bb8a76` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| yo_contracts_v2_rereview_cantina.pdf | YoRegistry | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x56c3119dc3b1a75763c87d5b0a2c55e489502232` — deployed 2025-08-18 15:53:51+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | yo_contracts_v2_rereview_cantina.pdf | AuthUpgradeable | unmatched — not counted | — | referenced in trust assumptions | no |
 
 ## Coverage Gaps
@@ -342,17 +342,17 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | `0xcbb7c0...ed33bf` | FiatTokenV2_1 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x1abaea...1bc33c` | FiatTokenV2_2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x833589...a02913` | FiatTokenV2_2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | `0xaf88d0...8e5831` | FiatTokenV2_2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x687496...782f38` | TetherToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xdac17f...831ec7` | TetherToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xc02aaa...756cc2` | WETH9 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x420000...000006` | WETH9 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x0a09e9...df9716` | yoUSDT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x586675...cc61a1` | YoVault_V2 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x000000...588a65` | YoVault_V2 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf` | FiatTokenV2_1 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x1abaea1f7c830bd89acc67ec4af516284b1bc33c` | FiatTokenV2_2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x833589fcd6edb6e08f4c7c32d4f71b54bda02913` | FiatTokenV2_2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0xaf88d065e77c8cc2239327c5edb3a432268e5831` | FiatTokenV2_2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x68749665ff8d2d112fa859aa293f07a622782f38` | TetherToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xdac17f958d2ee523a2206206994597c13d831ec7` | TetherToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2` | WETH9 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x4200000000000000000000000000000000000006` | WETH9 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x0a09e980cae64d8840fd9c92f165aba4bfdf9716` | yoUSDT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x586675a3a46b008d8408933cf42d8ff6c9cc61a1` | YoVault_V2 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x0000000f2eb9f69274678c76222b35eec7588a65` | YoVault_V2 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -57,8 +57,8 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x03f772...36b329`, chain 1)
-- UnnamedContract (`0x115934...9d037c`, chain 1)
+- UnnamedContract (`0x03f7724180aa6b939894b5ca4314783b0b36b329`, chain 1)
+- UnnamedContract (`0x115934131916c8b277dd010ee02de363c09d037c`, chain 1)
 
 ## Contract Surface Quality
 
@@ -104,75 +104,75 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BoneLocker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa404f6...9bcdc7` | ⚠️ Unaudited |
-| boneMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x205c41...03aeeb` | ⚠️ Unaudited |
-| BoneToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x981303...8218d9` | ⚠️ Unaudited |
-| BoringCryptoDashboardV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0ea28d...34adce` | ⚠️ Unaudited |
-| BoringCryptoTokenScan | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x318a27...e34141` | ⚠️ Unaudited |
-| BuryBone | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf7a038...0202b3` | ⚠️ Unaudited |
-| BuryLeash | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa57d31...263a0b` | ⚠️ Unaudited |
-| BuryShib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb4a812...2d81e4` | ⚠️ Unaudited |
-| Calcium | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x205611...7c36e1` | ⚠️ Unaudited |
-| civMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8503bf...79ec6e` | ⚠️ Unaudited |
-| daiMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0075f0...90ca65` | ⚠️ Unaudited |
-| DevBoneDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x44c652...0fb479` | ⚠️ Unaudited |
-| enmtMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x69e592...0f2782` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | external_dependency_or_infra | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x24be63...35ef50` | ⚠️ Unaudited |
-| f9MerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x63837c...a83955` | ⚠️ Unaudited |
-| LandAuction | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9ed0f7...82e918` | ⚠️ Unaudited |
-| LandAuctionV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6b74c5...8ebffa` | ⚠️ Unaudited |
-| LandAuctionV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf923ce...c21040` | ⚠️ Unaudited |
-| LandRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x392eb1...5ca390` | ⚠️ Unaudited |
-| LandSaleETH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x39acd7...acd7ab` | ⚠️ Unaudited |
-| LockLeash | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcdefd3...582380` | ⚠️ Unaudited |
-| LockShiboshi | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbe4e19...af5cc3` | ⚠️ Unaudited |
-| MerkleRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x08d3cb...c2d8c8` | ⚠️ Unaudited |
-| Muiclac | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc95b59...062d7f` | ⚠️ Unaudited |
-| MultiTokenLocker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4bb0cd...9028f7` | ⚠️ Unaudited |
-| MyDataConsumerForLeash | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x441cb5...bae562` | ⚠️ Unaudited |
-| MyDataConsumerForShib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfcd80c...08c60b` | ⚠️ Unaudited |
-| NFTDescriptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb40241...5576ac` | ⚠️ Unaudited |
-| NonfungiblePositionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x23df65...2916e0` | ⚠️ Unaudited |
-| NonfungibleTokenPositionDescriptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd66ea7...8e6e7d` | ⚠️ Unaudited |
-| perlMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x40ab98...3edf76` | ⚠️ Unaudited |
-| PriceOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x683bd7...42a126` | ⚠️ Unaudited |
-| Quoter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x486dd4...11cbd1` | ⚠️ Unaudited |
-| ryoMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x773267...83b5e6` | ⚠️ Unaudited |
-| Sheboshi | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1b8e74...e24174` | ⚠️ Unaudited |
-| ShibaswapV2Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd9ce49...412509` | ⚠️ Unaudited |
-| ShibaUniFetch | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0e906a...473907` | ⚠️ Unaudited |
-| SHIBOSHIS | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x114500...d3fe7f` | ⚠️ Unaudited |
-| SOUActivityTracker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa23c7d...428b67` | ⚠️ Unaudited |
-| SOUCore | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdd2099...bbeca0` | ⚠️ Unaudited |
-| SOUCoreCCIPReceiver | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x990a98...2a9da6` | ⚠️ Unaudited |
-| SOUDistributionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x762245...b4aef5` | ⚠️ Unaudited |
-| SOUDonationStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8e3fb1...7b9e45` | ⚠️ Unaudited |
-| SOUMetadata | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x705645...dd4a51` | ⚠️ Unaudited |
-| SOUTokenSpecificPayoutStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x710eef...70f225` | ⚠️ Unaudited |
-| SOUUSDPayoutStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xff8e27...6d074c` | ⚠️ Unaudited |
-| starLMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x95cf54...6a9b22` | ⚠️ Unaudited |
-| SwapRewardDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf71741...0a0f1c` | ⚠️ Unaudited |
-| SwapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xb2ecc2...618963` | ⚠️ Unaudited |
-| tBoneBoneDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x34ad2d...36cb25` | ⚠️ Unaudited |
-| tBoneBoneMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbaaa2b...5b3238` | ⚠️ Unaudited |
-| Timelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x67b5b1...50fe5c` | ⚠️ Unaudited |
-| TopDog | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x942356...17c8d7` | ⚠️ Unaudited |
-| TreasureFinder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x00e82e...c7d51d` | ⚠️ Unaudited |
-| ufoMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x49b7b2...5d1877` | ⚠️ Unaudited |
-| usdcMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9e1fdd...aae0fe` | ⚠️ Unaudited |
-| usdtMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5140ec...d8110c` | ⚠️ Unaudited |
-| V2Migrator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbe2b8b...7da9ec` | ⚠️ Unaudited |
-| vempTokenMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc2cb0c...fd172f` | ⚠️ Unaudited |
-| wbtcMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1e26de...53a2a4` | ⚠️ Unaudited |
-| WeightOfLeash | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf790b7...ac3372` | ⚠️ Unaudited |
-| WeightOfShiboshi | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x67cf6e...bbccd3` | ⚠️ Unaudited |
-| wethMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x67e0eb...24ca3d` | ⚠️ Unaudited |
-| xFundMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6a425f...900bbe` | ⚠️ Unaudited |
-| xLeashBoneDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x68d494...44412b` | ⚠️ Unaudited |
-| xLeashBoneMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9495a0...5da26a` | ⚠️ Unaudited |
-| xShibBoneDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x526684...84e0f8` | ⚠️ Unaudited |
-| xShibBoneMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa2c148...816458` | ⚠️ Unaudited |
-| zigMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2697b3...bc640f` | ⚠️ Unaudited |
+| BoneLocker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa404f66b9278c4ab8428225014266b4b239bcdc7` | ⚠️ Unaudited |
+| boneMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x205c41bf932a34e14fea6b9b25585b3a5903aeeb` | ⚠️ Unaudited |
+| BoneToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9813037ee2218799597d83d4a5b6f3b6778218d9` | ⚠️ Unaudited |
+| BoringCryptoDashboardV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0ea28d1ce1198b4af8a84e5c08c94a907f34adce` | ⚠️ Unaudited |
+| BoringCryptoTokenScan | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x318a278711fc24f32550af30e772686bbee34141` | ⚠️ Unaudited |
+| BuryBone | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf7a0383750fef5abace57cc4c9ff98e3790202b3` | ⚠️ Unaudited |
+| BuryLeash | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa57d319b3cf3ad0e4d19770f71e63cf847263a0b` | ⚠️ Unaudited |
+| BuryShib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb4a81261b16b92af0b9f7c4a83f1e885132d81e4` | ⚠️ Unaudited |
+| Calcium | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x20561172f791f915323241e885b4f7d5187c36e1` | ⚠️ Unaudited |
+| civMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8503bf17460aed3d19e5e09bbc2b8d70aa79ec6e` | ⚠️ Unaudited |
+| daiMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0075f029648ffbd2026a7df1e9eff27ebc90ca65` | ⚠️ Unaudited |
+| DevBoneDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x44c652d679d99bb406167de9651d2535850fb479` | ⚠️ Unaudited |
+| enmtMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x69e592aa33f5c88de8dbd8791769cfdfba0f2782` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | external_dependency_or_infra | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x24be6362664e362e97e653dcf3d031f3e435ef50` | ⚠️ Unaudited |
+| f9MerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x63837c5b60fb7a29d5e8823a07ee98df3fa83955` | ⚠️ Unaudited |
+| LandAuction | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9ed0f787223ff1feb0cfb33a9207c646d182e918` | ⚠️ Unaudited |
+| LandAuctionV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6b74c5885d2e08efd80164965f8df002608ebffa` | ⚠️ Unaudited |
+| LandAuctionV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf923cea81d4d56135e1c4e6e2199a865a5c21040` | ⚠️ Unaudited |
+| LandRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x392eb130d797a3476650a4b0d2cb1138055ca390` | ⚠️ Unaudited |
+| LandSaleETH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x39acd7281868d677adf24351fc018d7e1aacd7ab` | ⚠️ Unaudited |
+| LockLeash | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcdefd353ba028a77c1cfbbf9571e7a19df582380` | ⚠️ Unaudited |
+| LockShiboshi | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbe4e191b22368bff26aa60be498575c477af5cc3` | ⚠️ Unaudited |
+| MerkleRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x08d3cbaf560fc2b220a24415543e685e1bc2d8c8` | ⚠️ Unaudited |
+| Muiclac | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc95b59e71357280e44e61aa27e3a63ece3062d7f` | ⚠️ Unaudited |
+| MultiTokenLocker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4bb0cdd7c906151347ad915af07f6af50c9028f7` | ⚠️ Unaudited |
+| MyDataConsumerForLeash | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x441cb57f2189e1df10f7010d55115f9374bae562` | ⚠️ Unaudited |
+| MyDataConsumerForShib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfcd80cbf131d545d8279b665bc55a56b3b08c60b` | ⚠️ Unaudited |
+| NFTDescriptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb40241624df0bd16e4f66abf297b0fce055576ac` | ⚠️ Unaudited |
+| NonfungiblePositionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x23df6504ab84adc2ea9ebd043b89b8ddc72916e0` | ⚠️ Unaudited |
+| NonfungibleTokenPositionDescriptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd66ea7d16f33ea95391aa278037d4676a98e6e7d` | ⚠️ Unaudited |
+| perlMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x40ab98602341a294c2b9d6a71266183edc3edf76` | ⚠️ Unaudited |
+| PriceOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x683bd722a3c769b58ac9bc96023e1e12d942a126` | ⚠️ Unaudited |
+| Quoter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x486dd4ff6abd5b2f728192cda291d2ffb611cbd1` | ⚠️ Unaudited |
+| ryoMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7732674b5e5ffec4785aefdaea807eeca383b5e6` | ⚠️ Unaudited |
+| Sheboshi | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1b8e7475b91e2303885c3cab1ef9725f3ce24174` | ⚠️ Unaudited |
+| ShibaswapV2Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd9ce49caf7299daf18fffcb2b84a44fd33412509` | ⚠️ Unaudited |
+| ShibaUniFetch | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0e906a0a798429fe5aa81e5052a5898dd0473907` | ⚠️ Unaudited |
+| SHIBOSHIS | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x11450058d796b02eb53e65374be59cff65d3fe7f` | ⚠️ Unaudited |
+| SOUActivityTracker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa23c7d20c5290ee92bccd8f8e88780e62d428b67` | ⚠️ Unaudited |
+| SOUCore | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdd2099946f99503a57dbc5e221c0db2c97bbeca0` | ⚠️ Unaudited |
+| SOUCoreCCIPReceiver | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x990a98270f24d15f63c0e95790c87f63112a9da6` | ⚠️ Unaudited |
+| SOUDistributionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x76224525656fd27ab8484e3c2a1fdcc2e5b4aef5` | ⚠️ Unaudited |
+| SOUDonationStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8e3fb1a74c16332cf08ae7124f4454b6c37b9e45` | ⚠️ Unaudited |
+| SOUMetadata | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x705645881a24f44dbce81e4f3738e061b7dd4a51` | ⚠️ Unaudited |
+| SOUTokenSpecificPayoutStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x710eefbc1f09a2eb6c71d1a0e613a2a11b70f225` | ⚠️ Unaudited |
+| SOUUSDPayoutStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xff8e27bd30df36ecf96e1f5a322a4f08016d074c` | ⚠️ Unaudited |
+| starLMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x95cf54120b4ee4f18d81e707213b78c5606a9b22` | ⚠️ Unaudited |
+| SwapRewardDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf71741c102e5295813912cf3b2fc07bc740a0f1c` | ⚠️ Unaudited |
+| SwapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xb2ecc25c0b3af0039d4d9dddfcec19e958618963` | ⚠️ Unaudited |
+| tBoneBoneDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x34ad2d8a212cb7d6909d9b523bb5847aa236cb25` | ⚠️ Unaudited |
+| tBoneBoneMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbaaa2b1f770c8aa0f86203c77a6b01e8315b3238` | ⚠️ Unaudited |
+| Timelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x67b5b1f23c373fb1252572f667d3f6e28b50fe5c` | ⚠️ Unaudited |
+| TopDog | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x94235659cf8b805b2c658f9ea2d6d6ddbb17c8d7` | ⚠️ Unaudited |
+| TreasureFinder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x00e82e98a2119aa175eab206706efe0df2c7d51d` | ⚠️ Unaudited |
+| ufoMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x49b7b2cba504088ff94615d8929d41f5535d1877` | ⚠️ Unaudited |
+| usdcMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9e1fddcfcf7c0917371497ac24d27db764aae0fe` | ⚠️ Unaudited |
+| usdtMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5140ecb1aa2daa8427e724a6a5b3893617d8110c` | ⚠️ Unaudited |
+| V2Migrator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbe2b8be84487c091f4a3fe1fc07acdfa277da9ec` | ⚠️ Unaudited |
+| vempTokenMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc2cb0c2bde7436fb90c187ba072a5038b3fd172f` | ⚠️ Unaudited |
+| wbtcMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1e26deb7e2b83742384f4dfbb2470947f853a2a4` | ⚠️ Unaudited |
+| WeightOfLeash | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf790b73f11fa1636d0d26db24bafb0f9b0ac3372` | ⚠️ Unaudited |
+| WeightOfShiboshi | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x67cf6ebc89cc50f09a10745c414192fd62bbccd3` | ⚠️ Unaudited |
+| wethMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x67e0eb8557437ab7393243c88a11f3c7e424ca3d` | ⚠️ Unaudited |
+| xFundMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6a425fc7bc4ed7cfb3cd89cca9925aba3b900bbe` | ⚠️ Unaudited |
+| xLeashBoneDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x68d494e06f70d1dd13f9faacd122799d4044412b` | ⚠️ Unaudited |
+| xLeashBoneMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9495a029ce34983c0bf0c45ee8214021e95da26a` | ⚠️ Unaudited |
+| xShibBoneDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x526684cde5e9ed50703469e1e21e388ad084e0f8` | ⚠️ Unaudited |
+| xShibBoneMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa2c14852974afe7755ea824260ca5df03b816458` | ⚠️ Unaudited |
+| zigMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2697b304724f277f4ad498a2792d694917bc640f` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -192,8 +192,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-254704 | `0x03f772...36b329` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-254705 | `0x115934...9d037c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-254704 | `0x03f7724180aa6b939894b5ca4314783b0b36b329` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-254705 | `0x115934131916c8b277dd010ee02de363c09d037c` | ❓ Unverified |
 
 ## Audit Inventory
 

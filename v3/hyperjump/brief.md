@@ -52,11 +52,11 @@ The pinned logic-topography run contains 3 contract row(s) across bsc, fantom. S
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xfd5b49...1a200d`, chain 56)
-- UnnamedContract (`0x7afca6...cca411`, chain 250)
-- HyperAlloy (`0x5ef599...6065bd`, chain 56)
-- HyperBurn (`0x03d6bd...ecd54d`, chain 56)
-- HyperCity (`0x4f1818...1c6250`, chain 56)
+- UnnamedContract (`0xfd5b495d6ce1a98102a14a7443928fc1b31a200d`, chain 56)
+- UnnamedContract (`0x7afca69dcd68a8b36764cce35b89a76450cca411`, chain 250)
+- HyperAlloy (`0x5ef5994fa33ff4eb6c82d51ee1dc145c546065bd`, chain 56)
+- HyperBurn (`0x03d6bd3d48f956d783456695698c407a46ecd54d`, chain 56)
+- HyperCity (`0x4f1818ff649498a2441ae1ad29ccf55a8e1c6250`, chain 56)
 
 ## Contract Surface Quality
 
@@ -102,20 +102,20 @@ The pinned logic-topography run contains 3 contract row(s) across bsc, fantom. S
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BeefyVaultV4 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x02931d...23d913` | ⚠️ Unaudited |
-| BurnMachineV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xef6a9d...4af52b` | ⚠️ Unaudited |
-| HyperAlloy | unknown | project_anchor | own_supporting | 0 | bsc | unit-242267 | `0x5ef599...6065bd` | ⚠️ Unaudited |
-| HyperBurn | unknown | project_anchor | own_supporting | 0 | bsc | unit-242262 | `0x03d6bd...ecd54d` | ⚠️ Unaudited |
-| HyperCity | unknown | project_anchor | own_supporting | 0 | bsc | unit-242266 | `0x4f1818...1c6250` | ⚠️ Unaudited |
-| HyperMechs | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3ae713...b84954` | ⚠️ Unaudited |
-| HyperPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x1b04a6...e82f4b` | ⚠️ Unaudited |
-| HyperPoolV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x027587...625a85` | ⚠️ Unaudited |
-| HyperWarp | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x624e7c...8ae756` | ⚠️ Unaudited |
-| LPFeeVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0fa942...59fa8d` | ⚠️ Unaudited |
-| StarVaultLPF | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x64776d...e01447` | ⚠️ Unaudited |
-| StrategyHyperLP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x02db4d...d65cf8` | ⚠️ Unaudited |
-| StrategyHyperLPV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x78609e...0454ab` | ⚠️ Unaudited |
-| Timelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x89861b...d00265` | ⚠️ Unaudited |
+| BeefyVaultV4 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x02931dca7f6360fbfafde00be784b8c80123d913` | ⚠️ Unaudited |
+| BurnMachineV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xef6a9d388071cfa59534c625e03df002f64af52b` | ⚠️ Unaudited |
+| HyperAlloy | unknown | project_anchor | own_supporting | 0 | bsc | unit-242267 | `0x5ef5994fa33ff4eb6c82d51ee1dc145c546065bd` | ⚠️ Unaudited |
+| HyperBurn | unknown | project_anchor | own_supporting | 0 | bsc | unit-242262 | `0x03d6bd3d48f956d783456695698c407a46ecd54d` | ⚠️ Unaudited |
+| HyperCity | unknown | project_anchor | own_supporting | 0 | bsc | unit-242266 | `0x4f1818ff649498a2441ae1ad29ccf55a8e1c6250` | ⚠️ Unaudited |
+| HyperMechs | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3ae713c662b8852d686e718e0762631a4cb84954` | ⚠️ Unaudited |
+| HyperPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x1b04a6cdd6422f44eeea2dbe9bf1127a1ae82f4b` | ⚠️ Unaudited |
+| HyperPoolV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x027587c42d8c43b5e8e622aa9981a409ef625a85` | ⚠️ Unaudited |
+| HyperWarp | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x624e7c88b6884bffbab31623f4d1f8bc8b8ae756` | ⚠️ Unaudited |
+| LPFeeVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0fa9420a4bfc08dbb6bdd1728b1555a96c59fa8d` | ⚠️ Unaudited |
+| StarVaultLPF | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x64776d5bdbd391716a01c9fff35fc18fbce01447` | ⚠️ Unaudited |
+| StrategyHyperLP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x02db4d714641f46dd70bec80e4e4c33f8fd65cf8` | ⚠️ Unaudited |
+| StrategyHyperLPV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x78609e486ec17441e250d949df395a37e00454ab` | ⚠️ Unaudited |
+| Timelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x89861bf28cedabba52ea4b06869186294cd00265` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -135,8 +135,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-242270 | `0xfd5b49...1a200d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-242261 | `0x7afca6...cca411` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-242270 | `0xfd5b495d6ce1a98102a14a7443928fc1b31a200d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-242261 | `0x7afca69dcd68a8b36764cce35b89a76450cca411` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -166,9 +166,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | `0x5ef599...6065bd` | HyperAlloy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x03d6bd...ecd54d` | HyperBurn | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x4f1818...1c6250` | HyperCity | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x5ef5994fa33ff4eb6c82d51ee1dc145c546065bd` | HyperAlloy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x03d6bd3d48f956d783456695698c407a46ecd54d` | HyperBurn | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x4f1818ff649498a2441ae1ad29ccf55a8e1c6250` | HyperCity | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

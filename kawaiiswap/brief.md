@@ -58,13 +58,13 @@ The protocol forms a single structural family (Core Logic) of 14 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Calcifire | unknown | bsc | n/a | [`0x9e236b...9d3405`](./contracts/bsc-56/0x9e236b43d779b385c3279820e322abae249d3405/) | ✅ Audited |
+| Calcifire | unknown | bsc | n/a | [`0x9e236b43d779b385c3279820e322abae249d3405`](./contracts/bsc-56/0x9e236b43d779b385c3279820e322abae249d3405/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Calcifer | unknown | bsc | n/a | [`0x9d13cc...febd8b`](./contracts/bsc-56/0x9d13cc6fabde882e059413c524a32ba5befebd8b/) | ⚠️ Unaudited |
+| Calcifer | unknown | bsc | n/a | [`0x9d13cc6fabde882e059413c524a32ba5befebd8b`](./contracts/bsc-56/0x9d13cc6fabde882e059413c524a32ba5befebd8b/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -84,9 +84,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0xbec316...4e3e4e` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xccf2ed...cbb953` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xf8e4da...969e70` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xbec31677eabab6fab123e3268fcecac88c4e3e4e` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xccf2ed9a87726021cb59da9b14171df3ebcbb953` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xf8e4da1b21f02f2b775511b71f7f1df556969e70` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -101,7 +101,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x9d13cc...febd8b`](./contracts/bsc-56/0x9d13cc6fabde882e059413c524a32ba5befebd8b/) | Calcifer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x9d13cc6fabde882e059413c524a32ba5befebd8b`](./contracts/bsc-56/0x9d13cc6fabde882e059413c524a32ba5befebd8b/) | Calcifer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

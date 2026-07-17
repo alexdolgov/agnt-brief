@@ -61,10 +61,10 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| GnosisSafe | governance | ethereum | n/a | [`0x2818e5...5932ca`](./contracts/ethereum-1/0x2818e54e0489274f61f33f163504074bee5932ca/) | ⚠️ Unaudited |
-| Safe | unknown | ethereum | n/a | [`0xc48c74...69d996`](./contracts/ethereum-1/0xc48c74c4eda47f915e8580391ec2f386f769d996/) | ⚠️ Unaudited |
-| SafeL2 | unknown | bsc | n/a | [`0x8e7b54...91684d`](./contracts/bsc-56/0x8e7b542d93901560583c0c22d156ecca5191684d/) | ⚠️ Unaudited |
-| SafeProxy | unknown | polygon | n/a | 3 deployments: bsc `0xc48c74...69d996`; polygon [`0x8e7b54...91684d`](./contracts/polygon-137/0x8e7b542d93901560583c0c22d156ecca5191684d/); polygon `0xc48c74...69d996` | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | n/a | [`0x2818e54e0489274f61f33f163504074bee5932ca`](./contracts/ethereum-1/0x2818e54e0489274f61f33f163504074bee5932ca/) | ⚠️ Unaudited |
+| Safe | unknown | ethereum | n/a | [`0xc48c74c4eda47f915e8580391ec2f386f769d996`](./contracts/ethereum-1/0xc48c74c4eda47f915e8580391ec2f386f769d996/) | ⚠️ Unaudited |
+| SafeL2 | unknown | bsc | n/a | [`0x8e7b542d93901560583c0c22d156ecca5191684d`](./contracts/bsc-56/0x8e7b542d93901560583c0c22d156ecca5191684d/) | ⚠️ Unaudited |
+| SafeProxy | unknown | polygon | n/a | 3 deployments: bsc `0xc48c74c4eda47f915e8580391ec2f386f769d996`; polygon [`0x8e7b542d93901560583c0c22d156ecca5191684d`](./contracts/polygon-137/0x8e7b542d93901560583c0c22d156ecca5191684d/); polygon `0xc48c74c4eda47f915e8580391ec2f386f769d996` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

@@ -57,9 +57,9 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum, moon
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xdac17f...831ec7`, chain 1)
-- UnnamedContract (`0x800632...5c903a`, chain 1284)
-- ConvergenceToken (`0xc834fa...aa8b50`, chain 1)
+- UnnamedContract (`0xdac17f958d2ee523a2206206994597c13d831ec7`, chain 1)
+- UnnamedContract (`0x8006320739fc281da67ee62eb9b4ef8add5c903a`, chain 1284)
+- ConvergenceToken (`0xc834fa996fa3bec7aad3693af486ae53d8aa8b50`, chain 1)
 
 ## Contract Surface Quality
 
@@ -105,8 +105,8 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum, moon
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ConvergenceToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381903 | `0xc834fa...aa8b50` | ⚠️ Unaudited |
-| StakingPools | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x37c7c2...36d6ee` | ⚠️ Unaudited |
+| ConvergenceToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381903 | `0xc834fa996fa3bec7aad3693af486ae53d8aa8b50` | ⚠️ Unaudited |
+| StakingPools | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x37c7c2ae51e968cefb82cff2102727256d36d6ee` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -126,8 +126,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381904 | `0xdac17f...831ec7` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-381905 | `0x800632...5c903a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381904 | `0xdac17f958d2ee523a2206206994597c13d831ec7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-381905 | `0x8006320739fc281da67ee62eb9b4ef8add5c903a` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -157,7 +157,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0xc834fa...aa8b50` | ConvergenceToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xc834fa996fa3bec7aad3693af486ae53d8aa8b50` | ConvergenceToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

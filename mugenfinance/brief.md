@@ -61,16 +61,16 @@ The protocol comprises 3 functional families. Contracts are linked by 1 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ArbitrumSwaps | unknown | arbitrum | n/a | [`0x4f1bc1...796479`](./contracts/arbitrum-42161/0x4f1bc106664c174aad15df9beb5c168511796479/) | ⚠️ Unaudited |
-| CapStrategy | core_logic | arbitrum | n/a | 4 deployments: arbitrum [`0x029782...6b702e`](./contracts/arbitrum-42161/0x029782b403811e46a5a45983bbc59bbc766b702e/); arbitrum `0x21df7f...768a8e`; arbitrum `0x93db14...4e3cb8`; arbitrum `0xe4c071...258f1d` | ⚠️ Unaudited |
-| FeeCollector | unknown | arbitrum | n/a | [`0xb09f29...14ac8a`](./contracts/arbitrum-42161/0xb09f29e2ba229fdb2bb68dd0e2049a76c014ac8a/) | ⚠️ Unaudited |
-| Mugen | unknown | arbitrum | n/a | [`0xfc77b8...22856e`](./contracts/arbitrum-42161/0xfc77b86f3ade71793e1eec1e7944db074922856e/) | ⚠️ Unaudited |
-| MugenAutoCompounder | adapter | arbitrum | n/a | [`0x44e4c3...5c4417`](./contracts/arbitrum-42161/0x44e4c3668552033419520be229cd9df0c35c4417/) | ⚠️ Unaudited |
-| MugenRedemption | unknown | arbitrum | n/a | [`0xfae58b...b35860`](./contracts/arbitrum-42161/0xfae58b1f4d70619b0810239ae5382af2dbb35860/) | ⚠️ Unaudited |
-| StrategyHub | core_logic | arbitrum | n/a | [`0x002361...22296e`](./contracts/arbitrum-42161/0x00236173844ac7f7091d69d6cbf7e0430222296e/) | ⚠️ Unaudited |
-| Treasury | operational_periphery | arbitrum | n/a | [`0xf7be84...86f3dd`](./contracts/arbitrum-42161/0xf7be8476ae27d27ebc236e33020150b23a86f3dd/) | ⚠️ Unaudited |
-| xMugen | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x25b9f8...3d15ea`](./contracts/arbitrum-42161/0x25b9f82d1f1549f97b86bd0873738e30f23d15ea/); arbitrum `0xc9bec4...14c58d` | ⚠️ Unaudited |
-| YieldDistributor | operational_periphery | arbitrum | n/a | [`0xfc22da...3fad8b`](./contracts/arbitrum-42161/0xfc22dafae9ef61535019df250e1f60a21c3fad8b/) | ⚠️ Unaudited |
+| ArbitrumSwaps | unknown | arbitrum | n/a | [`0x4f1bc106664c174aad15df9beb5c168511796479`](./contracts/arbitrum-42161/0x4f1bc106664c174aad15df9beb5c168511796479/) | ⚠️ Unaudited |
+| CapStrategy | core_logic | arbitrum | n/a | 4 deployments: arbitrum [`0x029782b403811e46a5a45983bbc59bbc766b702e`](./contracts/arbitrum-42161/0x029782b403811e46a5a45983bbc59bbc766b702e/); arbitrum `0x21df7f3996416aeb861733da609d5e0766768a8e`; arbitrum `0x93db14436ef580a04637f46674232795b14e3cb8`; arbitrum `0xe4c07117bf5edc4f2e5dff61af38cb8dcd258f1d` | ⚠️ Unaudited |
+| FeeCollector | unknown | arbitrum | n/a | [`0xb09f29e2ba229fdb2bb68dd0e2049a76c014ac8a`](./contracts/arbitrum-42161/0xb09f29e2ba229fdb2bb68dd0e2049a76c014ac8a/) | ⚠️ Unaudited |
+| Mugen | unknown | arbitrum | n/a | [`0xfc77b86f3ade71793e1eec1e7944db074922856e`](./contracts/arbitrum-42161/0xfc77b86f3ade71793e1eec1e7944db074922856e/) | ⚠️ Unaudited |
+| MugenAutoCompounder | adapter | arbitrum | n/a | [`0x44e4c3668552033419520be229cd9df0c35c4417`](./contracts/arbitrum-42161/0x44e4c3668552033419520be229cd9df0c35c4417/) | ⚠️ Unaudited |
+| MugenRedemption | unknown | arbitrum | n/a | [`0xfae58b1f4d70619b0810239ae5382af2dbb35860`](./contracts/arbitrum-42161/0xfae58b1f4d70619b0810239ae5382af2dbb35860/) | ⚠️ Unaudited |
+| StrategyHub | core_logic | arbitrum | n/a | [`0x00236173844ac7f7091d69d6cbf7e0430222296e`](./contracts/arbitrum-42161/0x00236173844ac7f7091d69d6cbf7e0430222296e/) | ⚠️ Unaudited |
+| Treasury | operational_periphery | arbitrum | n/a | [`0xf7be8476ae27d27ebc236e33020150b23a86f3dd`](./contracts/arbitrum-42161/0xf7be8476ae27d27ebc236e33020150b23a86f3dd/) | ⚠️ Unaudited |
+| xMugen | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x25b9f82d1f1549f97b86bd0873738e30f23d15ea`](./contracts/arbitrum-42161/0x25b9f82d1f1549f97b86bd0873738e30f23d15ea/); arbitrum `0xc9bec49b853b3aaa5aa9cb53c09767079e14c58d` | ⚠️ Unaudited |
+| YieldDistributor | operational_periphery | arbitrum | n/a | [`0xfc22dafae9ef61535019df250e1f60a21c3fad8b`](./contracts/arbitrum-42161/0xfc22dafae9ef61535019df250e1f60a21c3fad8b/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -90,9 +90,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | arbitrum | n/a | `0x510e2e...122100` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x5a45fa...47ff65` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xa58386...ad6322` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x510e2e667d3d0821faf4c3288bd41c0c6b122100` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x5a45fa1eb7033b488f160fe8c852ef867547ff65` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xa58386b51131b09e7dbc2169e986a9d32fad6322` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -105,16 +105,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | [`0x4f1bc1...796479`](./contracts/arbitrum-42161/0x4f1bc106664c174aad15df9beb5c168511796479/) | ArbitrumSwaps | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x029782...6b702e`](./contracts/arbitrum-42161/0x029782b403811e46a5a45983bbc59bbc766b702e/) | CapStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xb09f29...14ac8a`](./contracts/arbitrum-42161/0xb09f29e2ba229fdb2bb68dd0e2049a76c014ac8a/) | FeeCollector | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xfc77b8...22856e`](./contracts/arbitrum-42161/0xfc77b86f3ade71793e1eec1e7944db074922856e/) | Mugen | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x44e4c3...5c4417`](./contracts/arbitrum-42161/0x44e4c3668552033419520be229cd9df0c35c4417/) | MugenAutoCompounder | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xfae58b...b35860`](./contracts/arbitrum-42161/0xfae58b1f4d70619b0810239ae5382af2dbb35860/) | MugenRedemption | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x002361...22296e`](./contracts/arbitrum-42161/0x00236173844ac7f7091d69d6cbf7e0430222296e/) | StrategyHub | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xf7be84...86f3dd`](./contracts/arbitrum-42161/0xf7be8476ae27d27ebc236e33020150b23a86f3dd/) | Treasury | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x25b9f8...3d15ea`](./contracts/arbitrum-42161/0x25b9f82d1f1549f97b86bd0873738e30f23d15ea/) | xMugen | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xfc22da...3fad8b`](./contracts/arbitrum-42161/0xfc22dafae9ef61535019df250e1f60a21c3fad8b/) | YieldDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x4f1bc106664c174aad15df9beb5c168511796479`](./contracts/arbitrum-42161/0x4f1bc106664c174aad15df9beb5c168511796479/) | ArbitrumSwaps | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x029782b403811e46a5a45983bbc59bbc766b702e`](./contracts/arbitrum-42161/0x029782b403811e46a5a45983bbc59bbc766b702e/) | CapStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xb09f29e2ba229fdb2bb68dd0e2049a76c014ac8a`](./contracts/arbitrum-42161/0xb09f29e2ba229fdb2bb68dd0e2049a76c014ac8a/) | FeeCollector | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xfc77b86f3ade71793e1eec1e7944db074922856e`](./contracts/arbitrum-42161/0xfc77b86f3ade71793e1eec1e7944db074922856e/) | Mugen | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x44e4c3668552033419520be229cd9df0c35c4417`](./contracts/arbitrum-42161/0x44e4c3668552033419520be229cd9df0c35c4417/) | MugenAutoCompounder | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xfae58b1f4d70619b0810239ae5382af2dbb35860`](./contracts/arbitrum-42161/0xfae58b1f4d70619b0810239ae5382af2dbb35860/) | MugenRedemption | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x00236173844ac7f7091d69d6cbf7e0430222296e`](./contracts/arbitrum-42161/0x00236173844ac7f7091d69d6cbf7e0430222296e/) | StrategyHub | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xf7be8476ae27d27ebc236e33020150b23a86f3dd`](./contracts/arbitrum-42161/0xf7be8476ae27d27ebc236e33020150b23a86f3dd/) | Treasury | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x25b9f82d1f1549f97b86bd0873738e30f23d15ea`](./contracts/arbitrum-42161/0x25b9f82d1f1549f97b86bd0873738e30f23d15ea/) | xMugen | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xfc22dafae9ef61535019df250e1f60a21c3fad8b`](./contracts/arbitrum-42161/0xfc22dafae9ef61535019df250e1f60a21c3fad8b/) | YieldDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

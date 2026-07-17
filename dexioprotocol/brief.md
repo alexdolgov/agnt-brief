@@ -60,7 +60,7 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| DEXI | unknown | polygon | n/a | [`0x65ba64...81c78b`](./contracts/polygon-137/0x65ba64899c2c7dbfdb5130e42e2cc56de281c78b/) | ✅ Audited |
+| DEXI | unknown | polygon | n/a | [`0x65ba64899c2c7dbfdb5130e42e2cc56de281c78b`](./contracts/polygon-137/0x65ba64899c2c7dbfdb5130e42e2cc56de281c78b/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 
@@ -84,7 +84,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | kava | n/a | 5 deployments: kava `0x5a4c7c...5ce212`; kava `0x6fa2d4...bce959`; kava `0x732bb0...430266`; kava `0xb8e29c...0189f5`; kava `0xd22a58...34b68b` | ❓ Unverified |
+| UnnamedContract | unknown | kava | n/a | 5 deployments: kava `0x5a4c7c9d3126c57cddc7856dfa085e5b775ce212`; kava `0x6fa2d43f7d766fd9b2990426a06bb24b4fbce959`; kava `0x732bb01c38b7092eb554a7779ad5f7bcd3430266`; kava `0xb8e29c001e41bc3a3df7e1a549bdd898640189f5`; kava `0xd22a58f79e9481d1a88e00c343885a588b34b68b` | ❓ Unverified |
 
 ## Audit Inventory
 

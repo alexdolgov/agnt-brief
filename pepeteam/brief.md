@@ -61,8 +61,8 @@ The protocol comprises 3 functional families. Its contracts share 4 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| SafeERC20Bridge | operational_periphery | polygon | n/a | [`0x5f89d0...66e37c`](./contracts/polygon-137/0x5f89d002e72a33b57d7e1c151aaae1216666e37c/) | ⚠️ Unaudited |
-| SafeERC20BridgeWithPool | operational_periphery | bsc | n/a | 2 deployments: bsc [`0x8df127...e9367a`](./contracts/bsc-56/0x8df12786ec0e34e60d4c52f9052ba4e536e9367a/); bsc `0xfe72ac...b03723` | ⚠️ Unaudited |
+| SafeERC20Bridge | operational_periphery | polygon | n/a | [`0x5f89d002e72a33b57d7e1c151aaae1216666e37c`](./contracts/polygon-137/0x5f89d002e72a33b57d7e1c151aaae1216666e37c/) | ⚠️ Unaudited |
+| SafeERC20BridgeWithPool | operational_periphery | bsc | n/a | 2 deployments: bsc [`0x8df12786ec0e34e60d4c52f9052ba4e536e9367a`](./contracts/bsc-56/0x8df12786ec0e34e60d4c52f9052ba4e536e9367a/); bsc `0xfe72ac5e88a81dc651283142318394e80fb03723` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,8 +93,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| polygon | [`0x5f89d0...66e37c`](./contracts/polygon-137/0x5f89d002e72a33b57d7e1c151aaae1216666e37c/) | SafeERC20Bridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x8df127...e9367a`](./contracts/bsc-56/0x8df12786ec0e34e60d4c52f9052ba4e536e9367a/) | SafeERC20BridgeWithPool | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x5f89d002e72a33b57d7e1c151aaae1216666e37c`](./contracts/polygon-137/0x5f89d002e72a33b57d7e1c151aaae1216666e37c/) | SafeERC20Bridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x8df12786ec0e34e60d4c52f9052ba4e536e9367a`](./contracts/bsc-56/0x8df12786ec0e34e60d4c52f9052ba4e536e9367a/) | SafeERC20BridgeWithPool | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

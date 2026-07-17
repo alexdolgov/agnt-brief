@@ -60,12 +60,12 @@ The protocol comprises 3 functional families. Its contracts share 16 common proj
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BorrowerProxy | unknown | ethereum | n/a | [`0xde9274...ea8002`](./contracts/ethereum-1/0xde92742213fea5f78c6840b6ecbf214115ea8002/) | ⚠️ Unaudited |
-| DEX | unknown | ethereum | n/a | [`0xf65d91...768594`](./contracts/ethereum-1/0xf65d91333b1d4d3887016b17741ad602d7768594/) | ⚠️ Unaudited |
-| LiquidityPoolV2 | core_logic | ethereum | n/a | [`0x35ffd6...5e40e5`](./contracts/ethereum-1/0x35ffd6e268610e764ff6944d07760d0efe5e40e5/) | ⚠️ Unaudited |
-| LiquidityPoolV4 | core_logic | ethereum | n/a | [`0x4f868c...6275e2`](./contracts/ethereum-1/0x4f868c1aa37fcf307ab38d215382e88fca6275e2/) | ⚠️ Unaudited |
-| RookToken | token | ethereum | n/a | [`0xfa5047...313d4a`](./contracts/ethereum-1/0xfa5047c9c78b8877af97bdcb85db743fd7313d4a/) | ⚠️ Unaudited |
-| zBTC | unknown | ethereum | n/a | [`0x88c64a...78bb7d`](./contracts/ethereum-1/0x88c64a7d2ecc882d558dd16abc1537515a78bb7d/) | ⚠️ Unaudited |
+| BorrowerProxy | unknown | ethereum | n/a | [`0xde92742213fea5f78c6840b6ecbf214115ea8002`](./contracts/ethereum-1/0xde92742213fea5f78c6840b6ecbf214115ea8002/) | ⚠️ Unaudited |
+| DEX | unknown | ethereum | n/a | [`0xf65d91333b1d4d3887016b17741ad602d7768594`](./contracts/ethereum-1/0xf65d91333b1d4d3887016b17741ad602d7768594/) | ⚠️ Unaudited |
+| LiquidityPoolV2 | core_logic | ethereum | n/a | [`0x35ffd6e268610e764ff6944d07760d0efe5e40e5`](./contracts/ethereum-1/0x35ffd6e268610e764ff6944d07760d0efe5e40e5/) | ⚠️ Unaudited |
+| LiquidityPoolV4 | core_logic | ethereum | n/a | [`0x4f868c1aa37fcf307ab38d215382e88fca6275e2`](./contracts/ethereum-1/0x4f868c1aa37fcf307ab38d215382e88fca6275e2/) | ⚠️ Unaudited |
+| RookToken | token | ethereum | n/a | [`0xfa5047c9c78b8877af97bdcb85db743fd7313d4a`](./contracts/ethereum-1/0xfa5047c9c78b8877af97bdcb85db743fd7313d4a/) | ⚠️ Unaudited |
+| zBTC | unknown | ethereum | n/a | [`0x88c64a7d2ecc882d558dd16abc1537515a78bb7d`](./contracts/ethereum-1/0x88c64a7d2ecc882d558dd16abc1537515a78bb7d/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -85,14 +85,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x1d1d44...8e2c1a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x2d7e24...6f7f5b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x4012ef...d8f4f2` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x48ace4...642524` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x5be0e8...4fa359` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x9d6e6e...b11198` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xab5ebc...3a5a6e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xe175a2...490674` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x1d1d44e8850e7c38550c53aa04a110b5808e2c1a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x2d7e244ab953f16a48dde4d11a94272c5f6f7f5b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4012ef4d3e24d4a8f8d09ff6a780c7a64bd8f4f2` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x48ace4f7cdfb6ebd96530fd810f4fe47d3642524` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x5be0e8ed65ff0731df45ac946534743fba4fa359` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x9d6e6e2e58dae136f1e53b3641538731c6b11198` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xab5ebc4ddf9c4d5b00de10ff3692acdec43a5a6e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe175a237fdf7b815cbbc6d9e60fd3d9f86490674` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -112,12 +112,12 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xde9274...ea8002`](./contracts/ethereum-1/0xde92742213fea5f78c6840b6ecbf214115ea8002/) | BorrowerProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xf65d91...768594`](./contracts/ethereum-1/0xf65d91333b1d4d3887016b17741ad602d7768594/) | DEX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x35ffd6...5e40e5`](./contracts/ethereum-1/0x35ffd6e268610e764ff6944d07760d0efe5e40e5/) | LiquidityPoolV2 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x4f868c...6275e2`](./contracts/ethereum-1/0x4f868c1aa37fcf307ab38d215382e88fca6275e2/) | LiquidityPoolV4 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xfa5047...313d4a`](./contracts/ethereum-1/0xfa5047c9c78b8877af97bdcb85db743fd7313d4a/) | RookToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x88c64a...78bb7d`](./contracts/ethereum-1/0x88c64a7d2ecc882d558dd16abc1537515a78bb7d/) | zBTC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xde92742213fea5f78c6840b6ecbf214115ea8002`](./contracts/ethereum-1/0xde92742213fea5f78c6840b6ecbf214115ea8002/) | BorrowerProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xf65d91333b1d4d3887016b17741ad602d7768594`](./contracts/ethereum-1/0xf65d91333b1d4d3887016b17741ad602d7768594/) | DEX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x35ffd6e268610e764ff6944d07760d0efe5e40e5`](./contracts/ethereum-1/0x35ffd6e268610e764ff6944d07760d0efe5e40e5/) | LiquidityPoolV2 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4f868c1aa37fcf307ab38d215382e88fca6275e2`](./contracts/ethereum-1/0x4f868c1aa37fcf307ab38d215382e88fca6275e2/) | LiquidityPoolV4 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xfa5047c9c78b8877af97bdcb85db743fd7313d4a`](./contracts/ethereum-1/0xfa5047c9c78b8877af97bdcb85db743fd7313d4a/) | RookToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x88c64a7d2ecc882d558dd16abc1537515a78bb7d`](./contracts/ethereum-1/0x88c64a7d2ecc882d558dd16abc1537515a78bb7d/) | zBTC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

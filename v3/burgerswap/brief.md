@@ -52,18 +52,18 @@ The pinned logic-topography run contains 13 contract row(s) across bsc. Structur
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- DemaxBallotFactory (`0x29d5ac...b00a68`, chain 56)
-- DemaxDelegate (`0x3de79b...a35e60`, chain 56)
-- DemaxPlatform (`0x42591f...9d70ca`, chain 56)
-- DemaxPool (`0x86a327...5d4a74`, chain 56)
-- DemaxProjectDeploy (`0x5bb577...e5c7b5`, chain 56)
-- DemaxQuery2 (`0x2c7fc9...32e022`, chain 56)
-- DemaxTransferListener (`0x3becd0...6d943b`, chain 56)
-- DemaxTrigger (`0xef72eb...119031`, chain 56)
-- Dgas (`0xae9269...1d6b8f`, chain 56)
-- IFOQuery (`0x136efc...ffbae4`, chain 56)
-- TokenQuery (`0xe85ed3...1364e0`, chain 56)
-- XBurger (`0xafe24e...d788dd`, chain 56)
+- DemaxBallotFactory (`0x29d5ac18a4c315af2e8c8325a2748e590ab00a68`, chain 56)
+- DemaxDelegate (`0x3de79b6ff181aa60bd1cd7d2c6ea8a6099a35e60`, chain 56)
+- DemaxPlatform (`0x42591f57f707739b95c5c486c014b525f19d70ca`, chain 56)
+- DemaxPool (`0x86a327715d707bca24983b1145d1f6c40c5d4a74`, chain 56)
+- DemaxProjectDeploy (`0x5bb57735352165ceabcb50dc9b11db5341e5c7b5`, chain 56)
+- DemaxQuery2 (`0x2c7fc9ccf3d03d99007db5977dd5926e8e32e022`, chain 56)
+- DemaxTransferListener (`0x3becd05231bbba6f7adda92f3c79fb3aa96d943b`, chain 56)
+- DemaxTrigger (`0xef72ebba2602de655ad05ae67f7e15ccdd119031`, chain 56)
+- Dgas (`0xae9269f27437f0fcbc232d39ec814844a51d6b8f`, chain 56)
+- IFOQuery (`0x136efc39b6ba21143e408fe318efe0f872ffbae4`, chain 56)
+- TokenQuery (`0xe85ed3322373f1dc720b7dccdbecfceb871364e0`, chain 56)
+- XBurger (`0xafe24e29da7e9b3e8a25c9478376b6ad6ad788dd`, chain 56)
 
 ## Contract Surface Quality
 
@@ -107,63 +107,63 @@ The pinned logic-topography run contains 13 contract row(s) across bsc. Structur
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| DemaxPlatform | unknown | project_anchor | own_supporting | 0 | bsc | unit-266817 | `0x42591f...9d70ca` | ✅ Audited |
-| DemaxPool | unknown | project_anchor | own_supporting | 0 | bsc | unit-266820 | `0x86a327...5d4a74` | ✅ Audited |
-| DemaxTransferListener | unknown | project_anchor | own_supporting | 0 | bsc | unit-266815 | `0x3becd0...6d943b` | ✅ Audited |
+| DemaxPlatform | unknown | project_anchor | own_supporting | 0 | bsc | unit-266817 | `0x42591f57f707739b95c5c486c014b525f19d70ca` | ✅ Audited |
+| DemaxPool | unknown | project_anchor | own_supporting | 0 | bsc | unit-266820 | `0x86a327715d707bca24983b1145d1f6c40c5d4a74` | ✅ Audited |
+| DemaxTransferListener | unknown | project_anchor | own_supporting | 0 | bsc | unit-266815 | `0x3becd05231bbba6f7adda92f3c79fb3aa96d943b` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (49)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AAAAConfig | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xf66aae...7194e4` | ⚠️ Unaudited |
-| AAAADeploy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x6cda5c...668f61` | ⚠️ Unaudited |
-| AAAAFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x59b52c...8c1399` | ⚠️ Unaudited |
-| AAAAGovernance | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x16463c...80eaed` | ⚠️ Unaudited |
-| AAAAMint | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2aef4a...0fe95b` | ⚠️ Unaudited |
-| AAAAOtherConfig | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xab6508...81d2c2` | ⚠️ Unaudited |
-| AAAAPlatform | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xed49c8...9a2748` | ⚠️ Unaudited |
-| AAAAQuery | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc396c3...e93db0` | ⚠️ Unaudited |
-| AAAAQuery2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x464adc...bd324d` | ⚠️ Unaudited |
-| AAAAReward | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x261899...a5143d` | ⚠️ Unaudited |
-| AAAAShare | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xa0855a...bc47ed` | ⚠️ Unaudited |
-| Airdrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x83f72a...446428` | ⚠️ Unaudited |
-| BSCBurgerTransit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3f6219...d2cefe` | ⚠️ Unaudited |
-| BurgerERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0502f8...d08443` | ⚠️ Unaudited |
-| BurgerSave | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xee0cfa...977241` | ⚠️ Unaudited |
-| CBurger | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x4b5d13...79f640` | ⚠️ Unaudited |
-| Claim | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x54d5a9...181368` | ⚠️ Unaudited |
-| ClaimCondition | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc53f74...e5f4e0` | ⚠️ Unaudited |
-| ClaimRule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xfae8e5...096e40` | ⚠️ Unaudited |
-| DemaxBallotFactory | unknown | project_anchor | own_supporting | 0 | bsc | unit-266813 | `0x29d5ac...b00a68` | ⚠️ Unaudited |
-| DemaxConfig | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3669d6...3f4eba` | ⚠️ Unaudited |
-| DemaxDelegate | unknown | project_anchor | own_supporting | 0 | bsc | unit-266816 | `0x3de79b...a35e60` | ⚠️ Unaudited |
-| DemaxFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2254ee...e20891` | ⚠️ Unaudited |
-| DemaxGovernance | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x4d9b9c...67258d` | ⚠️ Unaudited |
-| DemaxPricePrediction | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2540ed...6ef68e` | ⚠️ Unaudited |
-| DemaxProjectDeploy | unknown | project_anchor | own_supporting | 0 | bsc | unit-266818 | `0x5bb577...e5c7b5` | ⚠️ Unaudited |
-| DemaxProjectQuery | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x76da67...24bf4f` | ⚠️ Unaudited |
-| DemaxQuery | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x236b75...012323` | ⚠️ Unaudited |
-| DemaxQuery2 | unknown | project_anchor | own_supporting | 0 | bsc | unit-266814 | `0x2c7fc9...32e022` | ⚠️ Unaudited |
-| DemaxShackChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x07de03...61ba3e` | ⚠️ Unaudited |
-| DemaxShackChefQuery | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xfdd5d0...f876ad` | ⚠️ Unaudited |
-| DemaxShackConfig | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x5fb37f...a06b24` | ⚠️ Unaudited |
-| DemaxShackFarm | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x744db7...ee247d` | ⚠️ Unaudited |
-| DemaxTrigger | unknown | project_anchor | own_supporting | 0 | bsc | unit-266824 | `0xef72eb...119031` | ⚠️ Unaudited |
-| Dgas | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | bsc | unit-266821 | `0xae9269...1d6b8f` | ⚠️ Unaudited |
-| ERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x062a0a...bdff22` | ⚠️ Unaudited |
-| ERC20Factory | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | bsc | unit-266819 | `0x6292c7...0a4a08` | ⚠️ Unaudited |
-| ERC20Token | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe0eaa6...6429a4` | ⚠️ Unaudited |
-| ETHBurgerTransit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xb92d86...174e0b` | ⚠️ Unaudited |
-| IFOFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x6d3507...ead0d2` | ⚠️ Unaudited |
-| IFOQuery | unknown | project_anchor | own_supporting | 0 | bsc | unit-266812 | `0x136efc...ffbae4` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | bsc | n/a | `0x2a5029...edd4dc` | ⚠️ Unaudited |
-| SignatureUtils | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xb86e86...b2d779` | ⚠️ Unaudited |
-| TERToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x700842...4837d1` | ⚠️ Unaudited |
-| TokenQuery | unknown | project_anchor | own_supporting | 0 | bsc | unit-266823 | `0xe85ed3...1364e0` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | external_dependency_or_infra | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0xb0e53d...254171` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | external_dependency_or_infra | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0xc3ff4a...a3c6b8` | ⚠️ Unaudited |
-| USDT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xa9a6c9...b312ae` | ⚠️ Unaudited |
-| XBurger | unknown | project_anchor | own_supporting | 0 | bsc | unit-266822 | `0xafe24e...d788dd` | ⚠️ Unaudited |
+| AAAAConfig | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xf66aaed32d6a8b9d0bb1a050019bfb36e47194e4` | ⚠️ Unaudited |
+| AAAADeploy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x6cda5cae869277c6368b8d1301ec134450668f61` | ⚠️ Unaudited |
+| AAAAFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x59b52c6f7769d5baeda35455506c2b93cf8c1399` | ⚠️ Unaudited |
+| AAAAGovernance | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x16463cd818fc4ae1e354e8af2cc4a570ac80eaed` | ⚠️ Unaudited |
+| AAAAMint | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2aef4a024099fe9ef1efd1d075a904fdc20fe95b` | ⚠️ Unaudited |
+| AAAAOtherConfig | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xab6508d93bf6e42b9c0a9676b59295f85781d2c2` | ⚠️ Unaudited |
+| AAAAPlatform | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xed49c8f41d8b5eb2a29720955a39212cfb9a2748` | ⚠️ Unaudited |
+| AAAAQuery | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc396c3ece6aca68316eb95e0cbad3c4c04e93db0` | ⚠️ Unaudited |
+| AAAAQuery2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x464adcc1bde46b176c90c4f950f8d9c800bd324d` | ⚠️ Unaudited |
+| AAAAReward | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2618997cdb340f98e731916950f8ed09b1a5143d` | ⚠️ Unaudited |
+| AAAAShare | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xa0855a1b515aa6d50af1e9c41d8db846fbbc47ed` | ⚠️ Unaudited |
+| Airdrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x83f72a72c6e513eb50be148d482a429570446428` | ⚠️ Unaudited |
+| BSCBurgerTransit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3f621973a1363c2ecc8b256e9c0a1c3e62d2cefe` | ⚠️ Unaudited |
+| BurgerERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0502f8e3cd79e2356ecbc6ba03ba4aae1cd08443` | ⚠️ Unaudited |
+| BurgerSave | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xee0cfacca812f5bf696f638501cac35334977241` | ⚠️ Unaudited |
+| CBurger | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x4b5d132e902f792e2f8327a3d4062e3edd79f640` | ⚠️ Unaudited |
+| Claim | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x54d5a9e5680f729c6a020a3b891e64a711181368` | ⚠️ Unaudited |
+| ClaimCondition | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc53f74a55b0408a2de829a51772eae6de5e5f4e0` | ⚠️ Unaudited |
+| ClaimRule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xfae8e56209dd5a7ac9be27c91516164f27096e40` | ⚠️ Unaudited |
+| DemaxBallotFactory | unknown | project_anchor | own_supporting | 0 | bsc | unit-266813 | `0x29d5ac18a4c315af2e8c8325a2748e590ab00a68` | ⚠️ Unaudited |
+| DemaxConfig | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3669d6ac4ea8a6ba0b85396995557475c23f4eba` | ⚠️ Unaudited |
+| DemaxDelegate | unknown | project_anchor | own_supporting | 0 | bsc | unit-266816 | `0x3de79b6ff181aa60bd1cd7d2c6ea8a6099a35e60` | ⚠️ Unaudited |
+| DemaxFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2254ee4434ef583edb2eb8359d3e82230ee20891` | ⚠️ Unaudited |
+| DemaxGovernance | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x4d9b9c51f286164f96c2b756762a228d8267258d` | ⚠️ Unaudited |
+| DemaxPricePrediction | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2540ed3ed762d28f7798e71c677486a2cc6ef68e` | ⚠️ Unaudited |
+| DemaxProjectDeploy | unknown | project_anchor | own_supporting | 0 | bsc | unit-266818 | `0x5bb57735352165ceabcb50dc9b11db5341e5c7b5` | ⚠️ Unaudited |
+| DemaxProjectQuery | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x76da67bb008baee6e53dcbdcd63c11f10924bf4f` | ⚠️ Unaudited |
+| DemaxQuery | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x236b758057a1d277a267bee8871c563f2a012323` | ⚠️ Unaudited |
+| DemaxQuery2 | unknown | project_anchor | own_supporting | 0 | bsc | unit-266814 | `0x2c7fc9ccf3d03d99007db5977dd5926e8e32e022` | ⚠️ Unaudited |
+| DemaxShackChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x07de034a0fc0da7a0bf703f6dca7025bcd61ba3e` | ⚠️ Unaudited |
+| DemaxShackChefQuery | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xfdd5d0202413a902414f3d7a5ccac13c40f876ad` | ⚠️ Unaudited |
+| DemaxShackConfig | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x5fb37f02196190237b47f0fe73a343b51fa06b24` | ⚠️ Unaudited |
+| DemaxShackFarm | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x744db744da07e3ade5ba99d1c80fa11dc5ee247d` | ⚠️ Unaudited |
+| DemaxTrigger | unknown | project_anchor | own_supporting | 0 | bsc | unit-266824 | `0xef72ebba2602de655ad05ae67f7e15ccdd119031` | ⚠️ Unaudited |
+| Dgas | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | bsc | unit-266821 | `0xae9269f27437f0fcbc232d39ec814844a51d6b8f` | ⚠️ Unaudited |
+| ERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x062a0a2efb3dfb6b975b7ea8d2d3ca9dacbdff22` | ⚠️ Unaudited |
+| ERC20Factory | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | bsc | unit-266819 | `0x6292c755af42512c5901524e42c8666ef60a4a08` | ⚠️ Unaudited |
+| ERC20Token | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe0eaa6376af9361d28ac3e8ecd0465ac496429a4` | ⚠️ Unaudited |
+| ETHBurgerTransit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xb92d86a9cf4656d9d2f4bd3dd6aa1b0b16174e0b` | ⚠️ Unaudited |
+| IFOFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x6d3507bd96227b95135c936b3427f54a02ead0d2` | ⚠️ Unaudited |
+| IFOQuery | unknown | project_anchor | own_supporting | 0 | bsc | unit-266812 | `0x136efc39b6ba21143e408fe318efe0f872ffbae4` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | bsc | n/a | `0x2a5029f77aad1e7ee0b98b1181ab5c35d8edd4dc` | ⚠️ Unaudited |
+| SignatureUtils | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xb86e8621aa93dbcdccb5332f99a72c4a83b2d779` | ⚠️ Unaudited |
+| TERToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x70084234e6228a5dbce0331423208babf14837d1` | ⚠️ Unaudited |
+| TokenQuery | unknown | project_anchor | own_supporting | 0 | bsc | unit-266823 | `0xe85ed3322373f1dc720b7dccdbecfceb871364e0` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | external_dependency_or_infra | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0xb0e53def61ad145bc8615c592bef212c46254171` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | external_dependency_or_infra | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0xc3ff4aa9441dcd838b8e4652bb84148216a3c6b8` | ⚠️ Unaudited |
+| USDT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xa9a6c929a2b6e538fe1d2151ad76f751dcb312ae` | ⚠️ Unaudited |
+| XBurger | unknown | project_anchor | own_supporting | 0 | bsc | unit-266822 | `0xafe24e29da7e9b3e8a25c9478376b6ad6ad788dd` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -210,9 +210,9 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | {% embed url="<>" %} | ActivityPunchIn | unmatched — not counted | — | Listed in finding PVE-003 as target contract | no |
 | {% embed url="<>" %} | ChrismasPunchIn | unmatched — not counted | — | Listed in finding PVE-003 as target contract | no |
 | {% embed url="<>" %} | DemaxBallot | unmatched — not counted | — | Listed in finding PVE-004 as target contract with code snippet showing DemaxBallot::winningProposal() | no |
-| {% embed url="<>" %} | DemaxPlatform | own contract | DemaxPlatform (selected) `0x42591f...9d70ca` — deployed 2021-05-31 09:24:27+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| {% embed url="<>" %} | DemaxTransferListener | own contract | DemaxTransferListener (selected) `0x3becd0...6d943b` — deployed 2020-09-27 15:43:31+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| {% embed url="<>" %} | DemaxPool | own contract | DemaxPool (selected) `0x86a327...5d4a74` — deployed 2020-09-22 04:18:04+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| {% embed url="<>" %} | DemaxPlatform | own contract | DemaxPlatform (selected) `0x42591f57f707739b95c5c486c014b525f19d70ca` — deployed 2021-05-31 09:24:27+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| {% embed url="<>" %} | DemaxTransferListener | own contract | DemaxTransferListener (selected) `0x3becd05231bbba6f7adda92f3c79fb3aa96d943b` — deployed 2020-09-27 15:43:31+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| {% embed url="<>" %} | DemaxPool | own contract | DemaxPool (selected) `0x86a327715d707bca24983b1145d1f6c40c5d4a74` — deployed 2020-09-22 04:18:04+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | {% embed url="<>" %} | DemaxPair | unmatched — not counted | — | Listed in finding PVE-008 as target contract with code snippets showing mint() and burn() | no |
 | {% embed url="<>" %} | DemaxFactory | unmatched — not counted | — | Referenced in DemaxPlatform::migrateLiquidity() and DemaxPool::claimReward() | no |
 | {% embed url="<>" %} | DemaxSwapLibrary | unmatched — not counted | — | Referenced in DemaxPlatform::_swapFee() | no |
@@ -226,14 +226,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | `0x29d5ac...b00a68` | DemaxBallotFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x3de79b...a35e60` | DemaxDelegate | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x5bb577...e5c7b5` | DemaxProjectDeploy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x2c7fc9...32e022` | DemaxQuery2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0xef72eb...119031` | DemaxTrigger | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x136efc...ffbae4` | IFOQuery | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0xe85ed3...1364e0` | TokenQuery | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0xafe24e...d788dd` | XBurger | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x29d5ac18a4c315af2e8c8325a2748e590ab00a68` | DemaxBallotFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x3de79b6ff181aa60bd1cd7d2c6ea8a6099a35e60` | DemaxDelegate | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x5bb57735352165ceabcb50dc9b11db5341e5c7b5` | DemaxProjectDeploy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x2c7fc9ccf3d03d99007db5977dd5926e8e32e022` | DemaxQuery2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xef72ebba2602de655ad05ae67f7e15ccdd119031` | DemaxTrigger | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x136efc39b6ba21143e408fe318efe0f872ffbae4` | IFOQuery | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xe85ed3322373f1dc720b7dccdbecfceb871364e0` | TokenQuery | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xafe24e29da7e9b3e8a25c9478376b6ad6ad788dd` | XBurger | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -62,7 +62,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ZamaERC20 | unknown | ethereum | n/a | [`0xa12cc1...49f4f3`](./contracts/ethereum-1/0xa12cc123ba206d4031d1c7f6223d1c2ec249f4f3/) | ⚠️ Unaudited |
+| ZamaERC20 | unknown | ethereum | n/a | [`0xa12cc123ba206d4031d1c7f6223d1c2ec249f4f3`](./contracts/ethereum-1/0xa12cc123ba206d4031d1c7f6223d1c2ec249f4f3/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -96,7 +96,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xa12cc1...49f4f3`](./contracts/ethereum-1/0xa12cc123ba206d4031d1c7f6223d1c2ec249f4f3/) | ZamaERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa12cc123ba206d4031d1c7f6223d1c2ec249f4f3`](./contracts/ethereum-1/0xa12cc123ba206d4031d1c7f6223d1c2ec249f4f3/) | ZamaERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

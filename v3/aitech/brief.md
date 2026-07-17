@@ -59,8 +59,8 @@ The pinned logic-topography run contains 1 contract row(s) across bsc, ethereum.
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x3e76dd...5fb2a4`, chain 1)
-- AITECH (`0x2d060e...e4f944`, chain 56)
+- UnnamedContract (`0x3e76dd57e649a263a532cc9bcc58b32a065fb2a4`, chain 1)
+- AITECH (`0x2d060ef4d6bf7f9e5edde373ab735513c0e4f944`, chain 56)
 
 ## Contract Surface Quality
 
@@ -107,9 +107,9 @@ The pinned logic-topography run contains 1 contract row(s) across bsc, ethereum.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AITECH | unknown | project_anchor | own_supporting | 0 | bsc | unit-378651 | `0x2d060e...e4f944` | ⚠️ Unaudited |
-| DCBVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0xf1c3f6...84b096` | ⚠️ Unaudited |
-| DecubateMasterChef | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0x2c4dd7...c31184` | ⚠️ Unaudited |
+| AITECH | unknown | project_anchor | own_supporting | 0 | bsc | unit-378651 | `0x2d060ef4d6bf7f9e5edde373ab735513c0e4f944` | ⚠️ Unaudited |
+| DCBVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0xf1c3f68f82e6d2560a12d977b322a5db4684b096` | ⚠️ Unaudited |
+| DecubateMasterChef | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0x2c4dd7db5ce6a9a2fb362f64ff189af772c31184` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -129,7 +129,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378650 | `0x3e76dd...5fb2a4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378650 | `0x3e76dd57e649a263a532cc9bcc58b32a065fb2a4` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -158,7 +158,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | `0x2d060e...e4f944` | AITECH | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x2d060ef4d6bf7f9e5edde373ab735513c0e4f944` | AITECH | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

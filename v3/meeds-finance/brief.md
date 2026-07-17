@@ -52,19 +52,19 @@ The pinned logic-topography run contains 9 contract row(s) across arbitrum, base
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xdd462e...7940b9`, chain 10)
-- UnnamedContract (`0x6aca77...95289a`, chain 137)
-- UnnamedContract (`0xd9df94...14efa2`, chain 8453)
-- UnnamedContract (`0xe4db36...a56769`, chain 42161)
-- MeedsToken (`0x8503a7...0547b7`, chain 1)
-- TokenFactory (`0x1b37d0...386050`, chain 1)
-- UniswapV3Pool (`0xc82b1c...12b3d1`, chain 1)
-- UniswapV3Pool (`0xfa127d...f9989e`, chain 1)
-- UniswapV3Pool (`0xe13330...369b17`, chain 10)
-- UniswapV3Pool (`0x4e7d4e...b02a69`, chain 137)
-- UniswapV3Pool (`0xada40f...51dd55`, chain 8453)
-- UniswapV3Pool (`0xc76979...7225a1`, chain 42161)
-- Vyper_contract (`0x440701...f37dfa`, chain 1)
+- UnnamedContract (`0xdd462e9399624dfcf73018793bd50a7ef47940b9`, chain 10)
+- UnnamedContract (`0x6aca77cf3bab0c4e8210a09b57b07854a995289a`, chain 137)
+- UnnamedContract (`0xd9df947d2a8f9c28c37af7cb7c526022fb14efa2`, chain 8453)
+- UnnamedContract (`0xe4db3652ac7f88c5712717fd774676bf4aa56769`, chain 42161)
+- MeedsToken (`0x8503a7b00b4b52692cc6c14e5b96f142e30547b7`, chain 1)
+- TokenFactory (`0x1b37d04759ad542640cc44ff849a373040386050`, chain 1)
+- UniswapV3Pool (`0xc82b1c50609217075d28aa22f11a80450212b3d1`, chain 1)
+- UniswapV3Pool (`0xfa127d9a1154610eedbab7323b64363089f9989e`, chain 1)
+- UniswapV3Pool (`0xe133306fc90133e33a8c322e8c81f06ec2369b17`, chain 10)
+- UniswapV3Pool (`0x4e7d4e5fd3e4a68adcbeacaa3748b9c67bb02a69`, chain 137)
+- UniswapV3Pool (`0xada40f483dd44e9e6e126a2db59379d45551dd55`, chain 8453)
+- UniswapV3Pool (`0xc76979618841ab656bb834b4fe812319677225a1`, chain 42161)
+- Vyper_contract (`0x440701ca5817b5847438da2ec2ca3b9fdbf37dfa`, chain 1)
 
 ## Contract Surface Quality
 
@@ -110,20 +110,20 @@ The pinned logic-topography run contains 9 contract row(s) across arbitrum, base
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Deed | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0143b7...558090` | ⚠️ Unaudited |
-| DeedRenting | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x0af49e...1fd76c`; ethereum `0x427aa8...693baa` | ⚠️ Unaudited |
-| DeedTenantProvisioning | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x45595f...e84681` | ⚠️ Unaudited |
-| DeedTenantProvisioning | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x49c0cf...22e1f0`; ethereum `0x887a70...e4b9d0` | ⚠️ Unaudited |
-| MeedsToken | token | project_anchor | own_supporting | 0 | ethereum | unit-246312 | `0x8503a7...0547b7` | ⚠️ Unaudited |
-| TokenFactory | registry | project_anchor | own_supporting | 0 | ethereum | unit-246310 | `0x1b37d0...386050` | ⚠️ Unaudited |
-| UniswapV3Pool | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-246313 | `0xc82b1c...12b3d1` | ⚠️ Unaudited |
-| UniswapV3Pool | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-246314 | `0xfa127d...f9989e` | ⚠️ Unaudited |
-| UniswapV3Pool | core_logic | project_anchor | own_supporting | 0 | optimism | unit-246316 | `0xe13330...369b17` | ⚠️ Unaudited |
-| UniswapV3Pool | core_logic | project_anchor | own_supporting | 0 | polygon | unit-246317 | `0x4e7d4e...b02a69` | ⚠️ Unaudited |
-| UniswapV3Pool | core_logic | project_anchor | own_supporting | 0 | base | unit-246321 | `0xada40f...51dd55` | ⚠️ Unaudited |
-| UniswapV3Pool | core_logic | project_anchor | own_supporting | 0 | arbitrum | unit-246319 | `0xc76979...7225a1` | ⚠️ Unaudited |
-| Vyper_contract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-246311 | `0x440701...f37dfa` | ⚠️ Unaudited |
-| XMeedsNFTRewarding | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x44d6d6...e1bcd4` | ⚠️ Unaudited |
+| Deed | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0143b71443650aa8efa76bd82f35c22ebd558090` | ⚠️ Unaudited |
+| DeedRenting | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x0af49e83e36256158c654ef549849d80f51fd76c`; ethereum `0x427aa8f31013960e0e5e73977c1918e15d693baa` | ⚠️ Unaudited |
+| DeedTenantProvisioning | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x45595f6f9b699d8becab00c6fe295147c4e84681` | ⚠️ Unaudited |
+| DeedTenantProvisioning | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x49c0cf46c0eb6fdf05a4e8c1fe344d510422e1f0`; ethereum `0x887a70ec5d9a76b086e040fabc877b506ae4b9d0` | ⚠️ Unaudited |
+| MeedsToken | token | project_anchor | own_supporting | 0 | ethereum | unit-246312 | `0x8503a7b00b4b52692cc6c14e5b96f142e30547b7` | ⚠️ Unaudited |
+| TokenFactory | registry | project_anchor | own_supporting | 0 | ethereum | unit-246310 | `0x1b37d04759ad542640cc44ff849a373040386050` | ⚠️ Unaudited |
+| UniswapV3Pool | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-246313 | `0xc82b1c50609217075d28aa22f11a80450212b3d1` | ⚠️ Unaudited |
+| UniswapV3Pool | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-246314 | `0xfa127d9a1154610eedbab7323b64363089f9989e` | ⚠️ Unaudited |
+| UniswapV3Pool | core_logic | project_anchor | own_supporting | 0 | optimism | unit-246316 | `0xe133306fc90133e33a8c322e8c81f06ec2369b17` | ⚠️ Unaudited |
+| UniswapV3Pool | core_logic | project_anchor | own_supporting | 0 | polygon | unit-246317 | `0x4e7d4e5fd3e4a68adcbeacaa3748b9c67bb02a69` | ⚠️ Unaudited |
+| UniswapV3Pool | core_logic | project_anchor | own_supporting | 0 | base | unit-246321 | `0xada40f483dd44e9e6e126a2db59379d45551dd55` | ⚠️ Unaudited |
+| UniswapV3Pool | core_logic | project_anchor | own_supporting | 0 | arbitrum | unit-246319 | `0xc76979618841ab656bb834b4fe812319677225a1` | ⚠️ Unaudited |
+| Vyper_contract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-246311 | `0x440701ca5817b5847438da2ec2ca3b9fdbf37dfa` | ⚠️ Unaudited |
+| XMeedsNFTRewarding | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x44d6d6ab50401dd846336e9c706a492f06e1bcd4` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -143,10 +143,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-246315 | `0xdd462e...7940b9` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-246318 | `0x6aca77...95289a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-246322 | `0xd9df94...14efa2` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-246320 | `0xe4db36...a56769` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-246315 | `0xdd462e9399624dfcf73018793bd50a7ef47940b9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-246318 | `0x6aca77cf3bab0c4e8210a09b57b07854a995289a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-246322 | `0xd9df947d2a8f9c28c37af7cb7c526022fb14efa2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-246320 | `0xe4db3652ac7f88c5712717fd774676bf4aa56769` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -165,9 +165,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x8503a7...0547b7` | MeedsToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x1b37d0...386050` | TokenFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x440701...f37dfa` | Vyper_contract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x8503a7b00b4b52692cc6c14e5b96f142e30547b7` | MeedsToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x1b37d04759ad542640cc44ff849a373040386050` | TokenFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x440701ca5817b5847438da2ec2ca3b9fdbf37dfa` | Vyper_contract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

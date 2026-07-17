@@ -52,75 +52,75 @@ The pinned logic-topography run contains 25 contract row(s) across base, ethereu
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x1315cd...07d449`, chain 1)
-- UnnamedContract (`0x2457c9...addd43`, chain 1)
-- UnnamedContract (`0x330861...846af5`, chain 1)
-- UnnamedContract (`0x3432b6...c964d0`, chain 1)
-- UnnamedContract (`0x365acc...65bb09`, chain 1)
-- UnnamedContract (`0x45af4f...e795c3`, chain 1)
-- UnnamedContract (`0x46acb3...c3ed65`, chain 1)
-- UnnamedContract (`0x475983...4ac8af`, chain 1)
-- UnnamedContract (`0x4e3fbd...5b9d2b`, chain 1)
-- UnnamedContract (`0x4f1270...987953`, chain 1)
-- UnnamedContract (`0x522103...695341`, chain 1)
-- UnnamedContract (`0x533977...13a113`, chain 1)
-- UnnamedContract (`0x5e8422...8caa1f`, chain 1)
-- UnnamedContract (`0x5f0c26...0a1251`, chain 1)
-- UnnamedContract (`0x616708...90e8b6`, chain 1)
-- UnnamedContract (`0x66387a...6f2db3`, chain 1)
-- UnnamedContract (`0x6d5a96...1b591f`, chain 1)
-- UnnamedContract (`0x72a239...5e0719`, chain 1)
-- UnnamedContract (`0x73968b...6cdb2f`, chain 1)
-- UnnamedContract (`0x770f99...dc6cc9`, chain 1)
-- UnnamedContract (`0x7f5ef1...a4ce12`, chain 1)
-- UnnamedContract (`0x8bbef9...6f1656`, chain 1)
-- UnnamedContract (`0x8c0d76...a1a0e6`, chain 1)
-- UnnamedContract (`0x8d4d61...83e598`, chain 1)
-- UnnamedContract (`0x92ccc6...421c5e`, chain 1)
-- UnnamedContract (`0x948f65...a647f1`, chain 1)
-- UnnamedContract (`0x950a50...4a7bf2`, chain 1)
-- UnnamedContract (`0xa55d60...f3e415`, chain 1)
-- UnnamedContract (`0xadfa8e...e699ab`, chain 1)
-- UnnamedContract (`0xaea5f9...51fc41`, chain 1)
-- UnnamedContract (`0xbae248...3a4011`, chain 1)
-- UnnamedContract (`0xceeff1...954062`, chain 1)
-- UnnamedContract (`0xd22276...43fe4f`, chain 1)
-- UnnamedContract (`0xd533a9...34cd52`, chain 1)
-- UnnamedContract (`0xd8132d...3da61f`, chain 1)
-- UnnamedContract (`0xdac17f...831ec7`, chain 1)
-- UnnamedContract (`0xe03d34...b48280`, chain 1)
-- UnnamedContract (`0xe52708...357159`, chain 1)
-- UnnamedContract (`0xee58bf...bdaccf`, chain 1)
-- UnnamedContract (`0xf939e0...ac1b4e`, chain 1)
-- UnnamedContract (`0xfd1b30...bce3ac`, chain 1)
-- UnnamedContract (`0x145060...d76a69`, chain 8453)
-- UnnamedContract (`0x83ed27...3dd071`, chain 8453)
-- UnnamedContract (`0x940181...d98631`, chain 8453)
-- UnnamedContract (`0xd45cb6...a40eec`, chain 8453)
-- LlamalendCrvStakeDaoERC4626Strat (`0xf3558b...96ab73`, chain 1)
-- LlamalendCrvUsdStakeDaoERC4626Strat (`0x8dfcd3...81ed47`, chain 1)
-- LlamalendWeth2StakeDaoERC4626Strat (`0x531bba...42633d`, chain 1)
-- RecapitalizationManager (`0xd5d1ac...1bd062`, chain 1)
-- RewardDistributor (`0x1a6726...4a0496`, chain 1)
-- scrvUsdERC4626Strat (`0x6d2d70...39236f`, chain 1)
-- TimelockController (`0xd752bb...befca4`, chain 1)
-- ZunamiGovernor (`0x0357f8...a03f98`, chain 1)
-- ZunamiPoolApsZunBTC (`0x3c6e1f...828d82`, chain 1)
-- ZunamiPoolApsZunETH (`0x5ab3aa...bd28e2`, chain 1)
-- ZunamiPoolApsZunUSD (`0x28e487...082889`, chain 1)
-- ZunamiPoolControllerApsZunUSD (`0xd9f559...fccfb5`, chain 1)
-- ZunamiPoolControllerZunBTC (`0x8d6c5c...11eeb4`, chain 1)
-- ZunamiPoolControllerZunETH (`0x4bd57f...6f9f32`, chain 1)
-- ZunamiPoolControllerZunUSD (`0x2f858e...dc6f4e`, chain 1)
-- ZunamiPoolZunBTC (`0x0fa308...5fc6db`, chain 1)
-- ZunamiPoolZunETH (`0xc2e660...2f2222`, chain 1)
-- ZunamiStableZap (`0x20c3a5...eec3a8`, chain 1)
-- ZunamiToken (`0x6b5204...2f0f36`, chain 1)
-- ZunDistributor (`0xeea950...967b3a`, chain 1)
-- ZunETHApsVaultStrat (`0xcb17c2...9e5654`, chain 1)
-- ZunETHVaultStrat (`0x5f8fc0...86b000`, chain 1)
-- ZunUSDApsVaultStrat (`0xf859c6...ea0276`, chain 1)
-- ZunUSDVaultStrat (`0x7aa84c...8851a0`, chain 1)
+- UnnamedContract (`0x1315cd2aa195eaacfe9cd83135aefa19bf07d449`, chain 1)
+- UnnamedContract (`0x2457c9a3cc6221674c3c91e07a7f193037addd43`, chain 1)
+- UnnamedContract (`0x330861915286814d6a1bee0cc1cd955c80846af5`, chain 1)
+- UnnamedContract (`0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0`, chain 1)
+- UnnamedContract (`0x365accfca291e7d3914637abf1f7635db165bb09`, chain 1)
+- UnnamedContract (`0x45af4f12b46682b3958b297bacebde2ce2e795c3`, chain 1)
+- UnnamedContract (`0x46acb3e0c0954db538cf7ef9e475bcea83c3ed65`, chain 1)
+- UnnamedContract (`0x47598333223b3e0284700cbfb490f87e774ac8af`, chain 1)
+- UnnamedContract (`0x4e3fbd56cd56c3e72c1403e103b45db9da5b9d2b`, chain 1)
+- UnnamedContract (`0x4f1270951ad7260ba3e6fe332f1dde08f9987953`, chain 1)
+- UnnamedContract (`0x5221038c111caf2e4d115ba442826e56b9695341`, chain 1)
+- UnnamedContract (`0x533977dacc1d3c6d7c5276c4c0e25e962013a113`, chain 1)
+- UnnamedContract (`0x5e8422345238f34275888049021821e8e08caa1f`, chain 1)
+- UnnamedContract (`0x5f0c266aafe03d0921fc60900374678f6d0a1251`, chain 1)
+- UnnamedContract (`0x6167085202ce2b53cb1de9422fe5248d9d90e8b6`, chain 1)
+- UnnamedContract (`0x66387ad53a57b0c18212403b4b6c3125a26f2db3`, chain 1)
+- UnnamedContract (`0x6d5a96ba3e09efa54c9e514142126289001b591f`, chain 1)
+- UnnamedContract (`0x72a2394c42521038a91c94f5b4c421faa45e0719`, chain 1)
+- UnnamedContract (`0x73968b9a57c6e53d41345fd57a6e6ae27d6cdb2f`, chain 1)
+- UnnamedContract (`0x770f991ca9f3d1db503024c7144498f4e5dc6cc9`, chain 1)
+- UnnamedContract (`0x7f5ef1f7f81bd21ec9f4025bd9574849d6a4ce12`, chain 1)
+- UnnamedContract (`0x8bbef98615ae53b19b7843add009e8bb6f6f1656`, chain 1)
+- UnnamedContract (`0x8c0d76c9b18779665475f3e212d9ca1ed6a1a0e6`, chain 1)
+- UnnamedContract (`0x8d4d612d96d69c9df83c2607f08f6e361983e598`, chain 1)
+- UnnamedContract (`0x92ccc61730971fe2321823ab64f3bc89f5421c5e`, chain 1)
+- UnnamedContract (`0x948f65ffb065ad5afd4c9a032d56fbde6ba647f1`, chain 1)
+- UnnamedContract (`0x950a509528ae5fc5bca6b20141fb0df2c04a7bf2`, chain 1)
+- UnnamedContract (`0xa55d60484fac40dcd6a9ccdad43e388fb1f3e415`, chain 1)
+- UnnamedContract (`0xadfa8e4c7004a9373426ac4f37f146a42ae699ab`, chain 1)
+- UnnamedContract (`0xaea5f929bc26dea0c3f5d6dcb0e00ce83751fc41`, chain 1)
+- UnnamedContract (`0xbae248ee839035c9d920fe1e3557de7c843a4011`, chain 1)
+- UnnamedContract (`0xceeff1b0b1863465ff11b62080ac40b544954062`, chain 1)
+- UnnamedContract (`0xd222762a32f8e7764da54ae08f71bba70743fe4f`, chain 1)
+- UnnamedContract (`0xd533a949740bb3306d119cc777fa900ba034cd52`, chain 1)
+- UnnamedContract (`0xd8132d8cfca9ed8c95e46cb59ae6e2c9963da61f`, chain 1)
+- UnnamedContract (`0xdac17f958d2ee523a2206206994597c13d831ec7`, chain 1)
+- UnnamedContract (`0xe03d3429b958e73edf4cf985a823c70b01b48280`, chain 1)
+- UnnamedContract (`0xe527082401705c5b395e3e7a91b0be6e78357159`, chain 1)
+- UnnamedContract (`0xee58bf056579786cf11a68c901664a5ba8bdaccf`, chain 1)
+- UnnamedContract (`0xf939e0a03fb07f59a73314e73794be0e57ac1b4e`, chain 1)
+- UnnamedContract (`0xfd1b30d0721d10b9ea41de66c8e462d1ebbce3ac`, chain 1)
+- UnnamedContract (`0x1450607df71fddb5e27b385cde82b9e9eed76a69`, chain 8453)
+- UnnamedContract (`0x83ed27966584d24a788d2331b4824f490d3dd071`, chain 8453)
+- UnnamedContract (`0x940181a94a35a4569e4529a3cdfb74e38fd98631`, chain 8453)
+- UnnamedContract (`0xd45cb67c190f34b68b5b703043b4eeba97a40eec`, chain 8453)
+- LlamalendCrvStakeDaoERC4626Strat (`0xf3558b523235fe9bb78a02ca6f18292f4796ab73`, chain 1)
+- LlamalendCrvUsdStakeDaoERC4626Strat (`0x8dfcd34b074517c446a7885c271afd365981ed47`, chain 1)
+- LlamalendWeth2StakeDaoERC4626Strat (`0x531bba64373a1b8e5a94bb51ba32cce1cb42633d`, chain 1)
+- RecapitalizationManager (`0xd5d1acc9c7ebaf8bbf85c45aee2b8b3f3b1bd062`, chain 1)
+- RewardDistributor (`0x1a6726a877a8417dfab3308d2ec389bc3f4a0496`, chain 1)
+- scrvUsdERC4626Strat (`0x6d2d702c24fe116e4c859f058551719fb839236f`, chain 1)
+- TimelockController (`0xd752bbeb0b199026cbb7d76e4eeb30440abefca4`, chain 1)
+- ZunamiGovernor (`0x0357f8afcf8bd2b119a4451bf605bef8cca03f98`, chain 1)
+- ZunamiPoolApsZunBTC (`0x3c6e1ffffc293e93bb383b375ba348b85e828d82`, chain 1)
+- ZunamiPoolApsZunETH (`0x5ab3aa11a40eb34f1d2733f08596532871bd28e2`, chain 1)
+- ZunamiPoolApsZunUSD (`0x28e487bbf6b64867c29e61dccbcd17ab64082889`, chain 1)
+- ZunamiPoolControllerApsZunUSD (`0xd9f559280c9d308549e84946c0d668a817fccfb5`, chain 1)
+- ZunamiPoolControllerZunBTC (`0x8d6c5c61e815a53b1d24ac94deec62f31911eeb4`, chain 1)
+- ZunamiPoolControllerZunETH (`0x4bd57f97e35e7c3302dc3a8d4d803826856f9f32`, chain 1)
+- ZunamiPoolControllerZunUSD (`0x2f858e4d6a96c81e37a130314d6cecb64fdc6f4e`, chain 1)
+- ZunamiPoolZunBTC (`0x0fa308ae0dde633b6ede22ba719e7e0bc45fc6db`, chain 1)
+- ZunamiPoolZunETH (`0xc2e660c62f72c2ad35ace6db78a616215e2f2222`, chain 1)
+- ZunamiStableZap (`0x20c3a51c480c33d3b4c375990bf7dc821deec3a8`, chain 1)
+- ZunamiToken (`0x6b5204b0be36771253cc38e88012e02b752f0f36`, chain 1)
+- ZunDistributor (`0xeea950a509d822cf65edceed53d161fbaa967b3a`, chain 1)
+- ZunETHApsVaultStrat (`0xcb17c25985e5873ad5d1114b0e03947fc49e5654`, chain 1)
+- ZunETHVaultStrat (`0x5f8fc0976ffe5457ccf7651d5ff4cfca2e86b000`, chain 1)
+- ZunUSDApsVaultStrat (`0xf859c621d7ff69df1e283385dbde04135eea0276`, chain 1)
+- ZunUSDVaultStrat (`0x7aa84c31be1793f2dab8dbe36faa9478af8851a0`, chain 1)
 
 ## Contract Surface Quality
 
@@ -164,84 +164,84 @@ The pinned logic-topography run contains 25 contract row(s) across base, ethereu
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| LlamalendCrvUsdStakeDaoERC4626Strat | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398324 | `0x8dfcd3...81ed47` | ✅ Audited |
-| RecapitalizationManager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398337 | `0xd5d1ac...1bd062` | ✅ Audited |
-| ZunDistributor | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398345 | `0xeea950...967b3a` | ✅ Audited |
+| LlamalendCrvUsdStakeDaoERC4626Strat | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398324 | `0x8dfcd34b074517c446a7885c271afd365981ed47` | ✅ Audited |
+| RecapitalizationManager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398337 | `0xd5d1acc9c7ebaf8bbf85c45aee2b8b3f3b1bd062` | ✅ Audited |
+| ZunDistributor | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398345 | `0xeea950a509d822cf65edceed53d161fbaa967b3a` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (70)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AnchorStrat | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x360f8d...4e73c3` | ⚠️ Unaudited |
-| ClaimingNativeStrat | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6756ef...e8f9ef` | ⚠️ Unaudited |
-| ClaimingStrat | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa655aa...e0a143` | ⚠️ Unaudited |
-| ELT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x42873d...48091b` | ⚠️ Unaudited |
-| FrxETHOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x594618...29a158` | ⚠️ Unaudited |
-| FxnOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1e08f5...8fd11e` | ⚠️ Unaudited |
-| FxUsdOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcc7988...f94327` | ⚠️ Unaudited |
-| GenericOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4142bb...e18410` | ⚠️ Unaudited |
-| LlamalendCrvStakeDaoERC4626Strat | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398346 | `0xf3558b...96ab73` | ⚠️ Unaudited |
-| LlamalendWeth2StakeDaoERC4626Strat | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398303 | `0x531bba...42633d` | ⚠️ Unaudited |
-| LlamalendWethStakeDaoERC4626Strat | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-398306 | `0x5de1bd...6998f1` | ⚠️ Unaudited |
-| LlamaSale | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8c2346...dd1dc6` | ⚠️ Unaudited |
-| PxETHOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1e276d...454666` | ⚠️ Unaudited |
-| RebalancingStrat | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6fcc3b...f907a6` | ⚠️ Unaudited |
-| RewardDistributor | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398287 | `0x1a6726...4a0496` | ⚠️ Unaudited |
-| scrvUsdERC4626Strat | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398313 | `0x6d2d70...39236f` | ⚠️ Unaudited |
-| SellingRewardManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8cc045...e696de` | ⚠️ Unaudited |
-| sfrxETHERC4626Strat | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x342209...5d72f6` | ⚠️ Unaudited |
-| SnapshotHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0ad930...26b147` | ⚠️ Unaudited |
-| StableConverter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0236b7...a8a42e` | ⚠️ Unaudited |
-| StakingRewardDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x280d48...0810bd` | ⚠️ Unaudited |
-| StakingRewardDistributorGauge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x27b465...7151ed` | ⚠️ Unaudited |
-| TimelockController | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398338 | `0xd752bb...befca4` | ⚠️ Unaudited |
-| TokenConverter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf48a59...b34bfc` | ⚠️ Unaudited |
-| TransferGauge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x124ab7...cf81df` | ⚠️ Unaudited |
-| UZD | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x015b94...63541f` | ⚠️ Unaudited |
-| VaultAPSStrat | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdc0b52...f6d7dc` | ⚠️ Unaudited |
-| VaultNativeStrat | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5255e9...c4d3f9` | ⚠️ Unaudited |
-| VaultStrat | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2d09fa...83c30b` | ⚠️ Unaudited |
-| VotemarketGauge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1c572b...49d920` | ⚠️ Unaudited |
-| VotiumGauge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0ce6df...027be1` | ⚠️ Unaudited |
-| WETHOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6fdd42...b112dc` | ⚠️ Unaudited |
-| Withdrawer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x069ee6...fc1cfb` | ⚠️ Unaudited |
-| zETH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe47f1c...a87b2b` | ⚠️ Unaudited |
-| Zunami | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2ffcc6...4d14ce` | ⚠️ Unaudited |
-| ZunamiAPS | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcab491...2698bd` | ⚠️ Unaudited |
-| ZunamiDepositEthZap2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdd38c5...3c0ed6` | ⚠️ Unaudited |
-| ZunamiDepositEthZap3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2160ad...696382` | ⚠️ Unaudited |
-| ZunamiDepositZap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1162c7...f81574` | ⚠️ Unaudited |
-| ZunamiDepositZap2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9b6042...1fcce1` | ⚠️ Unaudited |
-| ZunamiDepositZap3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa35fc7...77fef4` | ⚠️ Unaudited |
-| ZunamiForwarder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x17e392...50a0af` | ⚠️ Unaudited |
-| ZunamiGovernor | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398283 | `0x0357f8...a03f98` | ⚠️ Unaudited |
-| ZunamiLaunchZap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd18ac6...5b6699` | ⚠️ Unaudited |
-| ZunamiNative | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9de839...c6eea7` | ⚠️ Unaudited |
-| ZunamiNativeAPS | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0b49d1...b29c82` | ⚠️ Unaudited |
-| ZunamiPoolApsZunBTC | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398295 | `0x3c6e1f...828d82` | ⚠️ Unaudited |
-| ZunamiPoolApsZunETH | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398305 | `0x5ab3aa...bd28e2` | ⚠️ Unaudited |
-| ZunamiPoolApsZunUSD | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398290 | `0x28e487...082889` | ⚠️ Unaudited |
-| ZunamiPoolControllerApsZunBTC | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x179dc3...e99498` | ⚠️ Unaudited |
-| ZunamiPoolControllerApsZunETH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0beb2b...16de60` | ⚠️ Unaudited |
-| ZunamiPoolControllerApsZunUSD | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398340 | `0xd9f559...fccfb5` | ⚠️ Unaudited |
-| ZunamiPoolControllerZunBTC | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398323 | `0x8d6c5c...11eeb4` | ⚠️ Unaudited |
-| ZunamiPoolControllerZunETH | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398299 | `0x4bd57f...6f9f32` | ⚠️ Unaudited |
-| ZunamiPoolControllerZunUSD | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398291 | `0x2f858e...dc6f4e` | ⚠️ Unaudited |
-| ZunamiPoolZunBTC | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398284 | `0x0fa308...5fc6db` | ⚠️ Unaudited |
-| ZunamiPoolZunETH | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398332 | `0xc2e660...2f2222` | ⚠️ Unaudited |
-| ZunamiPoolZunUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1ecc4a...d30b0a` | ⚠️ Unaudited |
-| ZunamiRedistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd9cc8b...dec334` | ⚠️ Unaudited |
-| ZunamiRedistributorNative | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x60278e...dbeb8a` | ⚠️ Unaudited |
-| ZunamiStableZap | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398288 | `0x20c3a5...eec3a8` | ⚠️ Unaudited |
-| ZunamiTest | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x932370...d07197` | ⚠️ Unaudited |
-| ZunamiToken | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-398312 | `0x6b5204...2f0f36` | ⚠️ Unaudited |
-| ZunETHApsVaultStrat | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398333 | `0xcb17c2...9e5654` | ⚠️ Unaudited |
-| ZunEthOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x64298a...64be4b` | ⚠️ Unaudited |
-| ZunETHVaultStrat | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398309 | `0x5f8fc0...86b000` | ⚠️ Unaudited |
-| ZUNStakingRewardDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x36bae8...b9e8ea` | ⚠️ Unaudited |
-| ZunUSDApsVaultStrat | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398347 | `0xf859c6...ea0276` | ⚠️ Unaudited |
-| ZunUSDVaultStrat | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398318 | `0x7aa84c...8851a0` | ⚠️ Unaudited |
-| ZunVestingDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x190b01...73f931` | ⚠️ Unaudited |
+| AnchorStrat | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x360f8dadc56717cfb53b03ff4a570f4fd54e73c3` | ⚠️ Unaudited |
+| ClaimingNativeStrat | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6756effa8aabeb9031279e4c71d8c1bd3ae8f9ef` | ⚠️ Unaudited |
+| ClaimingStrat | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa655aa809d1fe7a55e22425780bb676e8ae0a143` | ⚠️ Unaudited |
+| ELT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x42873d662fd25b6b5d2a240afa1d39824a48091b` | ⚠️ Unaudited |
+| FrxETHOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x594618fb84e6d5ecbe876f4d9c9ed3cb4129a158` | ⚠️ Unaudited |
+| FxnOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1e08f5c21817b5f8f3629471fcc2387e5b8fd11e` | ⚠️ Unaudited |
+| FxUsdOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcc798827741e5e83477b601bbc3cc4eb92f94327` | ⚠️ Unaudited |
+| GenericOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4142bb1ceec0dec4f7aaeb3d51d2dc8e6ee18410` | ⚠️ Unaudited |
+| LlamalendCrvStakeDaoERC4626Strat | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398346 | `0xf3558b523235fe9bb78a02ca6f18292f4796ab73` | ⚠️ Unaudited |
+| LlamalendWeth2StakeDaoERC4626Strat | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398303 | `0x531bba64373a1b8e5a94bb51ba32cce1cb42633d` | ⚠️ Unaudited |
+| LlamalendWethStakeDaoERC4626Strat | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-398306 | `0x5de1bdedcdef3a5d6a833b6385ef7bd24e6998f1` | ⚠️ Unaudited |
+| LlamaSale | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8c2346f74d15b27402c39d26d58daba57bdd1dc6` | ⚠️ Unaudited |
+| PxETHOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1e276d4a186792cafe5c1854be78d47ddc454666` | ⚠️ Unaudited |
+| RebalancingStrat | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6fcc3bb4948c20a81f652a525f78f80993f907a6` | ⚠️ Unaudited |
+| RewardDistributor | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398287 | `0x1a6726a877a8417dfab3308d2ec389bc3f4a0496` | ⚠️ Unaudited |
+| scrvUsdERC4626Strat | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398313 | `0x6d2d702c24fe116e4c859f058551719fb839236f` | ⚠️ Unaudited |
+| SellingRewardManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8cc045ea0cb956a01e802f8e4d09bb8b47e696de` | ⚠️ Unaudited |
+| sfrxETHERC4626Strat | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x342209d6ed7b851d366dfe15dec15689d55d72f6` | ⚠️ Unaudited |
+| SnapshotHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0ad930970b60d24bd30f612d287f188a7626b147` | ⚠️ Unaudited |
+| StableConverter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0236b7a3996d8c3597173aa95fd2a915c7a8a42e` | ⚠️ Unaudited |
+| StakingRewardDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x280d48e85f712e067a16d6b25e7ffe261c0810bd` | ⚠️ Unaudited |
+| StakingRewardDistributorGauge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x27b4655bd341993c78c8771bdd0caeb3ff7151ed` | ⚠️ Unaudited |
+| TimelockController | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398338 | `0xd752bbeb0b199026cbb7d76e4eeb30440abefca4` | ⚠️ Unaudited |
+| TokenConverter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf48a59434609b6e934c2cf091848fa2d28b34bfc` | ⚠️ Unaudited |
+| TransferGauge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x124ab70402eaf0ba6b18f0b304577c336dcf81df` | ⚠️ Unaudited |
+| UZD | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x015b94ab2b0a14a96030573fbcd0f3d3d763541f` | ⚠️ Unaudited |
+| VaultAPSStrat | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdc0b52c04cdc0099aefcca8b0675a00cf8f6d7dc` | ⚠️ Unaudited |
+| VaultNativeStrat | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5255e95ce870f6c92bdc533221cfa011dec4d3f9` | ⚠️ Unaudited |
+| VaultStrat | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2d09fac78bbbcee4af6dfae5d3dd425b2883c30b` | ⚠️ Unaudited |
+| VotemarketGauge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1c572bf5306c086b43f6f91f032296a25b49d920` | ⚠️ Unaudited |
+| VotiumGauge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0ce6df2119f649ff6f547bfaf8f4bb7c3b027be1` | ⚠️ Unaudited |
+| WETHOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6fdd429652fe77d8e2d123d1b99178cf27b112dc` | ⚠️ Unaudited |
+| Withdrawer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x069ee67ccd267c049aa78f787b327315e6fc1cfb` | ⚠️ Unaudited |
+| zETH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe47f1cd2a37c6fe69e3501ae45eca263c5a87b2b` | ⚠️ Unaudited |
+| Zunami | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2ffcc661011bec72e1a9524e12060983e74d14ce` | ⚠️ Unaudited |
+| ZunamiAPS | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcab49182aadcd843b037bbf885ad56a3162698bd` | ⚠️ Unaudited |
+| ZunamiDepositEthZap2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdd38c58c8f8202c9581ff16296ab778e223c0ed6` | ⚠️ Unaudited |
+| ZunamiDepositEthZap3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2160ad71208f966948389efc76a4cc4930696382` | ⚠️ Unaudited |
+| ZunamiDepositZap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1162c741bda2d0284e88d7c13c1b0bfeb4f81574` | ⚠️ Unaudited |
+| ZunamiDepositZap2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9b6042c50a0af6cc657eb8512b47a919351fcce1` | ⚠️ Unaudited |
+| ZunamiDepositZap3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa35fc7d58c4e79f58e5cab26937fb6ea0277fef4` | ⚠️ Unaudited |
+| ZunamiForwarder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x17e39276ae189c286801b91e99bae6885750a0af` | ⚠️ Unaudited |
+| ZunamiGovernor | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398283 | `0x0357f8afcf8bd2b119a4451bf605bef8cca03f98` | ⚠️ Unaudited |
+| ZunamiLaunchZap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd18ac6f7b78b9576028940c305c0e767455b6699` | ⚠️ Unaudited |
+| ZunamiNative | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9de83985047ab3582668320a784f6b9736c6eea7` | ⚠️ Unaudited |
+| ZunamiNativeAPS | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0b49d1dd3f045c986f7816c2ad56f01d8fb29c82` | ⚠️ Unaudited |
+| ZunamiPoolApsZunBTC | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398295 | `0x3c6e1ffffc293e93bb383b375ba348b85e828d82` | ⚠️ Unaudited |
+| ZunamiPoolApsZunETH | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398305 | `0x5ab3aa11a40eb34f1d2733f08596532871bd28e2` | ⚠️ Unaudited |
+| ZunamiPoolApsZunUSD | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398290 | `0x28e487bbf6b64867c29e61dccbcd17ab64082889` | ⚠️ Unaudited |
+| ZunamiPoolControllerApsZunBTC | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x179dc3d6b260277643998af7de1a9354fde99498` | ⚠️ Unaudited |
+| ZunamiPoolControllerApsZunETH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0beb2b070d73a678a27ba044fec11ae9d116de60` | ⚠️ Unaudited |
+| ZunamiPoolControllerApsZunUSD | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398340 | `0xd9f559280c9d308549e84946c0d668a817fccfb5` | ⚠️ Unaudited |
+| ZunamiPoolControllerZunBTC | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398323 | `0x8d6c5c61e815a53b1d24ac94deec62f31911eeb4` | ⚠️ Unaudited |
+| ZunamiPoolControllerZunETH | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398299 | `0x4bd57f97e35e7c3302dc3a8d4d803826856f9f32` | ⚠️ Unaudited |
+| ZunamiPoolControllerZunUSD | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398291 | `0x2f858e4d6a96c81e37a130314d6cecb64fdc6f4e` | ⚠️ Unaudited |
+| ZunamiPoolZunBTC | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398284 | `0x0fa308ae0dde633b6ede22ba719e7e0bc45fc6db` | ⚠️ Unaudited |
+| ZunamiPoolZunETH | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398332 | `0xc2e660c62f72c2ad35ace6db78a616215e2f2222` | ⚠️ Unaudited |
+| ZunamiPoolZunUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1ecc4a2ee46e50327adc4ab41fec750075d30b0a` | ⚠️ Unaudited |
+| ZunamiRedistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd9cc8b337d9730161b4166edee5beff6c5dec334` | ⚠️ Unaudited |
+| ZunamiRedistributorNative | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x60278e383f1299198f70c6dea453ac6cecdbeb8a` | ⚠️ Unaudited |
+| ZunamiStableZap | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398288 | `0x20c3a51c480c33d3b4c375990bf7dc821deec3a8` | ⚠️ Unaudited |
+| ZunamiTest | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x932370b862599798f3d9a88c59d3d23cc5d07197` | ⚠️ Unaudited |
+| ZunamiToken | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-398312 | `0x6b5204b0be36771253cc38e88012e02b752f0f36` | ⚠️ Unaudited |
+| ZunETHApsVaultStrat | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398333 | `0xcb17c25985e5873ad5d1114b0e03947fc49e5654` | ⚠️ Unaudited |
+| ZunEthOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x64298a70c43d865bedb22fd95fc1f81c3f64be4b` | ⚠️ Unaudited |
+| ZunETHVaultStrat | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398309 | `0x5f8fc0976ffe5457ccf7651d5ff4cfca2e86b000` | ⚠️ Unaudited |
+| ZUNStakingRewardDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x36bae88cb53264662db66db6ac6c7830dbb9e8ea` | ⚠️ Unaudited |
+| ZunUSDApsVaultStrat | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398347 | `0xf859c621d7ff69df1e283385dbde04135eea0276` | ⚠️ Unaudited |
+| ZunUSDVaultStrat | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398318 | `0x7aa84c31be1793f2dab8dbe36faa9478af8851a0` | ⚠️ Unaudited |
+| ZunVestingDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x190b01c325ab18050f13db7e524503336473f931` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -261,52 +261,52 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398285 | `0x1315cd...07d449` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-398286 | `0x15370f...d04ceb` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398289 | `0x2457c9...addd43` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398292 | `0x330861...846af5` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398293 | `0x3432b6...c964d0` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398294 | `0x365acc...65bb09` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398296 | `0x45af4f...e795c3` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398297 | `0x46acb3...c3ed65` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398298 | `0x475983...4ac8af` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398300 | `0x4e3fbd...5b9d2b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398301 | `0x4f1270...987953` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398302 | `0x522103...695341` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398304 | `0x533977...13a113` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398307 | `0x5e8422...8caa1f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398308 | `0x5f0c26...0a1251` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398310 | `0x616708...90e8b6` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398311 | `0x66387a...6f2db3` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398314 | `0x6d5a96...1b591f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398315 | `0x72a239...5e0719` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398316 | `0x73968b...6cdb2f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398317 | `0x770f99...dc6cc9` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398319 | `0x7f5ef1...a4ce12` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398320 | `0x8bbef9...6f1656` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398321 | `0x8c0d76...a1a0e6` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398322 | `0x8d4d61...83e598` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398325 | `0x92ccc6...421c5e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398326 | `0x948f65...a647f1` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398327 | `0x950a50...4a7bf2` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398328 | `0xa55d60...f3e415` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398329 | `0xadfa8e...e699ab` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398330 | `0xaea5f9...51fc41` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398331 | `0xbae248...3a4011` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398334 | `0xceeff1...954062` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398335 | `0xd22276...43fe4f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398336 | `0xd533a9...34cd52` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398339 | `0xd8132d...3da61f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398341 | `0xdac17f...831ec7` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398342 | `0xe03d34...b48280` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398343 | `0xe52708...357159` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398344 | `0xee58bf...bdaccf` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398348 | `0xf939e0...ac1b4e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398349 | `0xfd1b30...bce3ac` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-398350 | `0x145060...d76a69` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-398351 | `0x83ed27...3dd071` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-398352 | `0x940181...d98631` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-398353 | `0xd45cb6...a40eec` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398285 | `0x1315cd2aa195eaacfe9cd83135aefa19bf07d449` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-398286 | `0x15370f2c446e41794a1b554946b826db6ed04ceb` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398289 | `0x2457c9a3cc6221674c3c91e07a7f193037addd43` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398292 | `0x330861915286814d6a1bee0cc1cd955c80846af5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398293 | `0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398294 | `0x365accfca291e7d3914637abf1f7635db165bb09` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398296 | `0x45af4f12b46682b3958b297bacebde2ce2e795c3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398297 | `0x46acb3e0c0954db538cf7ef9e475bcea83c3ed65` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398298 | `0x47598333223b3e0284700cbfb490f87e774ac8af` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398300 | `0x4e3fbd56cd56c3e72c1403e103b45db9da5b9d2b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398301 | `0x4f1270951ad7260ba3e6fe332f1dde08f9987953` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398302 | `0x5221038c111caf2e4d115ba442826e56b9695341` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398304 | `0x533977dacc1d3c6d7c5276c4c0e25e962013a113` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398307 | `0x5e8422345238f34275888049021821e8e08caa1f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398308 | `0x5f0c266aafe03d0921fc60900374678f6d0a1251` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398310 | `0x6167085202ce2b53cb1de9422fe5248d9d90e8b6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398311 | `0x66387ad53a57b0c18212403b4b6c3125a26f2db3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398314 | `0x6d5a96ba3e09efa54c9e514142126289001b591f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398315 | `0x72a2394c42521038a91c94f5b4c421faa45e0719` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398316 | `0x73968b9a57c6e53d41345fd57a6e6ae27d6cdb2f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398317 | `0x770f991ca9f3d1db503024c7144498f4e5dc6cc9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398319 | `0x7f5ef1f7f81bd21ec9f4025bd9574849d6a4ce12` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398320 | `0x8bbef98615ae53b19b7843add009e8bb6f6f1656` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398321 | `0x8c0d76c9b18779665475f3e212d9ca1ed6a1a0e6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398322 | `0x8d4d612d96d69c9df83c2607f08f6e361983e598` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398325 | `0x92ccc61730971fe2321823ab64f3bc89f5421c5e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398326 | `0x948f65ffb065ad5afd4c9a032d56fbde6ba647f1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398327 | `0x950a509528ae5fc5bca6b20141fb0df2c04a7bf2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398328 | `0xa55d60484fac40dcd6a9ccdad43e388fb1f3e415` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398329 | `0xadfa8e4c7004a9373426ac4f37f146a42ae699ab` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398330 | `0xaea5f929bc26dea0c3f5d6dcb0e00ce83751fc41` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398331 | `0xbae248ee839035c9d920fe1e3557de7c843a4011` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398334 | `0xceeff1b0b1863465ff11b62080ac40b544954062` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398335 | `0xd222762a32f8e7764da54ae08f71bba70743fe4f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398336 | `0xd533a949740bb3306d119cc777fa900ba034cd52` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398339 | `0xd8132d8cfca9ed8c95e46cb59ae6e2c9963da61f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398341 | `0xdac17f958d2ee523a2206206994597c13d831ec7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398342 | `0xe03d3429b958e73edf4cf985a823c70b01b48280` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398343 | `0xe527082401705c5b395e3e7a91b0be6e78357159` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398344 | `0xee58bf056579786cf11a68c901664a5ba8bdaccf` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398348 | `0xf939e0a03fb07f59a73314e73794be0e57ac1b4e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398349 | `0xfd1b30d0721d10b9ea41de66c8e462d1ebbce3ac` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-398350 | `0x1450607df71fddb5e27b385cde82b9e9eed76a69` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-398351 | `0x83ed27966584d24a788d2331b4824f490d3dd071` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-398352 | `0x940181a94a35a4569e4529a3cdfb74e38fd98631` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-398353 | `0xd45cb67c190f34b68b5b703043b4eeba97a40eec` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -370,8 +370,8 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Smart Contract Risk: the smart contracts of Zunami v2 immutable and underwent a comprehensive audit before deployment from [Nomoi](), Oxorio and PeckShield. | IConvexRewards | unmatched — not counted | — | listed in scope | no |
 | Smart Contract Risk: the smart contracts of Zunami v2 immutable and underwent a comprehensive audit before deployment from [Nomoi](), Oxorio and PeckShield. | StakeDaoCurveStratBase | unmatched — not counted | — | listed in scope | no |
 | Smart Contract Risk: the smart contracts of Zunami v2 immutable and underwent a comprehensive audit before deployment from [Nomoi](), Oxorio and PeckShield. | CrvUsdStakeDaoCurveStratBase | unmatched — not counted | — | listed in scope | no |
-| Smart Contract Risk: the smart contracts of Zunami v2 immutable and underwent a comprehensive audit before deployment from [Nomoi](), Oxorio and PeckShield. | UsdcCrvUsdStakeDaoCurve | own contract | 0x8d4d61… (selected) `0x8d4d61...83e598` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Smart Contract Risk: the smart contracts of Zunami v2 immutable and underwent a comprehensive audit before deployment from [Nomoi](), Oxorio and PeckShield. | UsdtCrvUsdStakeDaoCurve | own contract | 0xadfa8e… (selected) `0xadfa8e...e699ab` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Smart Contract Risk: the smart contracts of Zunami v2 immutable and underwent a comprehensive audit before deployment from [Nomoi](), Oxorio and PeckShield. | UsdcCrvUsdStakeDaoCurve | own contract | 0x8d4d61… (selected) `0x8d4d612d96d69c9df83c2607f08f6e361983e598` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Smart Contract Risk: the smart contracts of Zunami v2 immutable and underwent a comprehensive audit before deployment from [Nomoi](), Oxorio and PeckShield. | UsdtCrvUsdStakeDaoCurve | own contract | 0xadfa8e… (selected) `0xadfa8e4c7004a9373426ac4f37f146a42ae699ab` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Smart Contract Risk: the smart contracts of Zunami v2 immutable and underwent a comprehensive audit before deployment from [Nomoi](), Oxorio and PeckShield. | IStakeDaoGauge | unmatched — not counted | — | listed in scope | no |
 | Smart Contract Risk: the smart contracts of Zunami v2 immutable and underwent a comprehensive audit before deployment from [Nomoi](), Oxorio and PeckShield. | IStakeDaoVault | unmatched — not counted | — | listed in scope | no |
 | Smart Contract Risk: the smart contracts of Zunami v2 immutable and underwent a comprehensive audit before deployment from [Nomoi](), Oxorio and PeckShield. | Constants | unmatched — not counted | — | listed in scope | no |
@@ -385,14 +385,14 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | **Oxorio** (30 April 2024) - LlamaLend + other components, [report]()\ | ERC4626StratBase | unmatched — not counted | — | listed in scope | no |
 | **Oxorio** (30 April 2024) - LlamaLend + other components, [report]()\ | StakeDaoERC4626StratBase | unmatched — not counted | — | listed in scope | no |
 | **Oxorio** (30 April 2024) - LlamaLend + other components, [report]()\ | CrvUsdStakeDaoERC4626StratBase | unmatched — not counted | — | listed in scope | no |
-| **Oxorio** (30 April 2024) - LlamaLend + other components, [report]()\ | LlamalendCrvUsdStakeDaoERC4626Strat | own contract | LlamalendCrvUsdStakeDaoERC4626Strat (selected) `0x8dfcd3...81ed47` — deployed 2024-04-28 09:50:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| **Oxorio** (30 April 2024) - LlamaLend + other components, [report]()\ | LlamalendCrvUsdStakeDaoERC4626Strat | own contract | LlamalendCrvUsdStakeDaoERC4626Strat (selected) `0x8dfcd34b074517c446a7885c271afd365981ed47` — deployed 2024-04-28 09:50:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | **Oxorio** (30 April 2024) - LlamaLend + other components, [report]()\ | TokenConverter | unmatched — not counted | — | listed in scope | no |
 | **Oxorio** (30 April 2024) - LlamaLend + other components, [report]()\ | SellingCurveRewardManager2 | unmatched — not counted | — | listed in scope | no |
 | **Oxorio** (30 April 2024) - LlamaLend + other components, [report]()\ | SdtOracle | unmatched — not counted | — | listed in scope | no |
 | **Oxorio** (30 April 2024) - LlamaLend + other components, [report]()\ | ZunEthOracle | unmatched — not counted | — | listed in scope | no |
 | **Oxorio** (15 April 2024) - Zunami V2 Re-audit + Tokenomics audit, [report]()\ | ZUNStakingRewardDistributor | unmatched — not counted | — | listed in scope and findings | no |
 | **Oxorio** (15 April 2024) - Zunami V2 Re-audit + Tokenomics audit, [report]()\ | BaseStakingRewardDistributor | unmatched — not counted | — | listed in scope and findings | no |
-| **Oxorio** (15 April 2024) - Zunami V2 Re-audit + Tokenomics audit, [report]()\ | RecapitalizationManager | own contract | RecapitalizationManager (selected) `0xd5d1ac...1bd062` — deployed 2024-10-29 08:15:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| **Oxorio** (15 April 2024) - Zunami V2 Re-audit + Tokenomics audit, [report]()\ | RecapitalizationManager | own contract | RecapitalizationManager (selected) `0xd5d1acc9c7ebaf8bbf85c45aee2b8b3f3b1bd062` — deployed 2024-10-29 08:15:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | **Oxorio** (15 April 2024) - Zunami V2 Re-audit + Tokenomics audit, [report]()\ | StaticCurveLPOracle | unmatched — not counted | — | listed in scope and findings | no |
 | **Oxorio** (15 April 2024) - Zunami V2 Re-audit + Tokenomics audit, [report]()\ | ZunamiPool | unmatched — not counted | — | listed in scope and findings | no |
 | **Oxorio** (15 April 2024) - Zunami V2 Re-audit + Tokenomics audit, [report]()\ | ZunamiPoolControllerBase | unmatched — not counted | — | listed in scope and findings | no |
@@ -410,7 +410,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | **Oxorio** (15 April 2024) - Zunami V2 Re-audit + Tokenomics audit, [report]()\ | ERC4626StratBase | unmatched — not counted | — | listed in scope and findings | no |
 | **Oxorio** (15 April 2024) - Zunami V2 Re-audit + Tokenomics audit, [report]()\ | VaultStrat | unmatched — not counted | — | listed in scope and findings | no |
 | **Oxorio** (15 April 2024) - Zunami V2 Re-audit + Tokenomics audit, [report]()\ | ZunamiStratBase | unmatched — not counted | — | listed in scope and findings | no |
-| **Oxorio** (15 April 2024) - Zunami V2 Re-audit + Tokenomics audit, [report]()\ | ZunDistributor | own contract | ZunDistributor (selected) `0xeea950...967b3a` — deployed 2024-06-06 11:15:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| **Oxorio** (15 April 2024) - Zunami V2 Re-audit + Tokenomics audit, [report]()\ | ZunDistributor | own contract | ZunDistributor (selected) `0xeea950a509d822cf65edceed53d161fbaa967b3a` — deployed 2024-06-06 11:15:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | **Oxorio** (15 April 2024) - Zunami V2 Re-audit + Tokenomics audit, [report]()\ | RewardViewer | unmatched — not counted | — | listed in scope and findings | no |
 | **Oxorio** (15 April 2024) - Zunami V2 Re-audit + Tokenomics audit, [report]()\ | StakingRewardDistributor | unmatched — not counted | — | listed in scope and findings | no |
 | **Oxorio** (15 April 2024) - Zunami V2 Re-audit + Tokenomics audit, [report]()\ | CrvUsdApsConvexCurveStratBase | unmatched — not counted | — | listed in scope and findings | no |
@@ -426,9 +426,9 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | **Oxorio** (6 February 2024) - Zunami V2, [report]()\ | AccessControl2RolesValuation | unmatched — not counted | — | I-02 finding location | no |
 | **Oxorio** (6 February 2024) - Zunami V2, [report]()\ | CurveStratBase | unmatched — not counted | — | I-04 finding location | no |
 | **Oxorio** (6 February 2024) - Zunami V2, [report]()\ | StakeDaoCurveStratBase | unmatched — not counted | — | I-03 finding location | no |
-| **Oxorio** (6 February 2024) - Zunami V2, [report]()\ | RecapitalizationManager | own contract | RecapitalizationManager (selected) `0xd5d1ac...1bd062` — deployed 2024-10-29 08:15:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| **Oxorio** (6 February 2024) - Zunami V2, [report]()\ | RecapitalizationManager | own contract | RecapitalizationManager (selected) `0xd5d1acc9c7ebaf8bbf85c45aee2b8b3f3b1bd062` — deployed 2024-10-29 08:15:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | **Oxorio** (6 February 2024) - Zunami V2, [report]()\ | StakingRewardDistributor | unmatched — not counted | — | I-03 finding location | no |
-| **Oxorio** (6 February 2024) - Zunami V2, [report]()\ | ZunDistributor | own contract | ZunDistributor (selected) `0xeea950...967b3a` — deployed 2024-06-06 11:15:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| **Oxorio** (6 February 2024) - Zunami V2, [report]()\ | ZunDistributor | own contract | ZunDistributor (selected) `0xeea950a509d822cf65edceed53d161fbaa967b3a` — deployed 2024-06-06 11:15:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | **Oxorio** (6 February 2024) - Zunami V2, [report]()\ | GenericOracle | unmatched — not counted | — | I-03 finding location | no |
 | **Oxorio** (6 February 2024) - Zunami V2, [report]()\ | ERC4626StratBase | unmatched — not counted | — | I-04 finding location | no |
 | **PeckShield** (12 December 2023) - Zunami V2, [report]()\ | ERC4626StratBase | unmatched — not counted | — | Target in finding PVE-001 | no |
@@ -466,25 +466,25 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0xf3558b...96ab73` | LlamalendCrvStakeDaoERC4626Strat | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x531bba...42633d` | LlamalendWeth2StakeDaoERC4626Strat | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x1a6726...4a0496` | RewardDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x6d2d70...39236f` | scrvUsdERC4626Strat | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x0357f8...a03f98` | ZunamiGovernor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x3c6e1f...828d82` | ZunamiPoolApsZunBTC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x5ab3aa...bd28e2` | ZunamiPoolApsZunETH | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x28e487...082889` | ZunamiPoolApsZunUSD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xd9f559...fccfb5` | ZunamiPoolControllerApsZunUSD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x8d6c5c...11eeb4` | ZunamiPoolControllerZunBTC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x4bd57f...6f9f32` | ZunamiPoolControllerZunETH | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x2f858e...dc6f4e` | ZunamiPoolControllerZunUSD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x0fa308...5fc6db` | ZunamiPoolZunBTC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xc2e660...2f2222` | ZunamiPoolZunETH | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x20c3a5...eec3a8` | ZunamiStableZap | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xcb17c2...9e5654` | ZunETHApsVaultStrat | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x5f8fc0...86b000` | ZunETHVaultStrat | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xf859c6...ea0276` | ZunUSDApsVaultStrat | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x7aa84c...8851a0` | ZunUSDVaultStrat | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xf3558b523235fe9bb78a02ca6f18292f4796ab73` | LlamalendCrvStakeDaoERC4626Strat | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x531bba64373a1b8e5a94bb51ba32cce1cb42633d` | LlamalendWeth2StakeDaoERC4626Strat | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x1a6726a877a8417dfab3308d2ec389bc3f4a0496` | RewardDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x6d2d702c24fe116e4c859f058551719fb839236f` | scrvUsdERC4626Strat | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x0357f8afcf8bd2b119a4451bf605bef8cca03f98` | ZunamiGovernor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x3c6e1ffffc293e93bb383b375ba348b85e828d82` | ZunamiPoolApsZunBTC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x5ab3aa11a40eb34f1d2733f08596532871bd28e2` | ZunamiPoolApsZunETH | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x28e487bbf6b64867c29e61dccbcd17ab64082889` | ZunamiPoolApsZunUSD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xd9f559280c9d308549e84946c0d668a817fccfb5` | ZunamiPoolControllerApsZunUSD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x8d6c5c61e815a53b1d24ac94deec62f31911eeb4` | ZunamiPoolControllerZunBTC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x4bd57f97e35e7c3302dc3a8d4d803826856f9f32` | ZunamiPoolControllerZunETH | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x2f858e4d6a96c81e37a130314d6cecb64fdc6f4e` | ZunamiPoolControllerZunUSD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x0fa308ae0dde633b6ede22ba719e7e0bc45fc6db` | ZunamiPoolZunBTC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xc2e660c62f72c2ad35ace6db78a616215e2f2222` | ZunamiPoolZunETH | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x20c3a51c480c33d3b4c375990bf7dc821deec3a8` | ZunamiStableZap | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xcb17c25985e5873ad5d1114b0e03947fc49e5654` | ZunETHApsVaultStrat | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x5f8fc0976ffe5457ccf7651d5ff4cfca2e86b000` | ZunETHVaultStrat | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xf859c621d7ff69df1e283385dbde04135eea0276` | ZunUSDApsVaultStrat | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x7aa84c31be1793f2dab8dbe36faa9478af8851a0` | ZunUSDVaultStrat | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

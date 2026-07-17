@@ -89,20 +89,20 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Auction | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149687 | `0x075e0a...c6e5c4` | ⚠️ Unaudited |
-| BondMaker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149697 | `0xacdc94...4e37a3` | ⚠️ Unaudited |
-| BondTokenName | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149688 | `0x0b06da...aeed72` | ⚠️ Unaudited |
-| DecentralizedOTC | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149694 | `0x858dbd...c1b0c7` | ⚠️ Unaudited |
-| FlattenStableCoin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149699 | `0xdb4f5b...6ad782` | ⚠️ Unaudited |
-| IDOLvsETHBoxExchange | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149695 | `0x8e0ae5...7c7d5d` | ⚠️ Unaudited |
-| LBTExchangeFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149693 | `0x662dd9...847749` | ⚠️ Unaudited |
-| LBTPricing | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149690 | `0x1f760a...60772b` | ⚠️ Unaudited |
-| LienBoxExchange | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149692 | `0x31dcf5...7cf690` | ⚠️ Unaudited |
-| LienToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149696 | `0xab37e1...a7557e` | ⚠️ Unaudited |
-| MarketOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149689 | `0x120a07...c7ac82` | ⚠️ Unaudited |
-| PriceCalculator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149700 | `0xe9aa04...0b3e2d` | ⚠️ Unaudited |
-| SpreadCalculator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149698 | `0xc05cb1...bc5cbf` | ⚠️ Unaudited |
-| TrustedPriceOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149691 | `0x27bb7c...6e9d39` | ⚠️ Unaudited |
+| Auction | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149687 | `0x075e0a8623d42e8a3b99409b4e18a1bd82c6e5c4` | ⚠️ Unaudited |
+| BondMaker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149697 | `0xacdc94b9f187fa7ee3c5cf0969c2faccab4e37a3` | ⚠️ Unaudited |
+| BondTokenName | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149688 | `0x0b06dada89d0df1c9162c97009af56509caeed72` | ⚠️ Unaudited |
+| DecentralizedOTC | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149694 | `0x858dbdff0dee9dfc21d3413245cc0f349ec1b0c7` | ⚠️ Unaudited |
+| FlattenStableCoin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149699 | `0xdb4f5bc7d37816537e8af48c885ef28f366ad782` | ⚠️ Unaudited |
+| IDOLvsETHBoxExchange | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149695 | `0x8e0ae5254dc4c6f89ef9a4079096958f787c7d5d` | ⚠️ Unaudited |
+| LBTExchangeFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149693 | `0x662dd92acb050e677fdd1d458ccace9f8d847749` | ⚠️ Unaudited |
+| LBTPricing | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149690 | `0x1f760ad8fef7843f5e5e3d085b71ceaa6f60772b` | ⚠️ Unaudited |
+| LienBoxExchange | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149692 | `0x31dcf50fa6c21f189a7953ce84387f50b77cf690` | ⚠️ Unaudited |
+| LienToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149696 | `0xab37e1358b639fd877f015027bb62d3ddaa7557e` | ⚠️ Unaudited |
+| MarketOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149689 | `0x120a078fdc516a1a98bbecb9e961f8741ac7ac82` | ⚠️ Unaudited |
+| PriceCalculator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149700 | `0xe9aa04b8d955fd291d44c9fdb8eb1227850b3e2d` | ⚠️ Unaudited |
+| SpreadCalculator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149698 | `0xc05cb1999ab97a9ae5337fbdc4cb0e1458bc5cbf` | ⚠️ Unaudited |
+| TrustedPriceOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149691 | `0x27bb7c9c06c8e5c886685df31da4b094756e9d39` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

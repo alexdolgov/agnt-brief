@@ -52,12 +52,12 @@ The pinned logic-topography run contains 1 contract row(s) across base, ethereum
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x2e7d6f...12d3e5`, chain 1)
-- UnnamedContract (`0x32b485...84dbd5`, chain 1)
-- UnnamedContract (`0x960438...778380`, chain 1)
-- UnnamedContract (`0x19f3d0...aa707d`, chain 8453)
-- UnnamedContract (`0x498d9a...2544e8`, chain 8453)
-- SherpaVault (`0x960438...778380`, chain 8453)
+- UnnamedContract (`0x2e7d6f4ab0f5ec106ce6985ca33bd0967412d3e5`, chain 1)
+- UnnamedContract (`0x32b48530f8a2c5cbe79d6b43823bfc9d9584dbd5`, chain 1)
+- UnnamedContract (`0x96043804d00dcec238718eedad9ac10719778380`, chain 1)
+- UnnamedContract (`0x19f3d065df4f5296a7b4232c1c88d5994daa707d`, chain 8453)
+- UnnamedContract (`0x498d9aecf41c440829b7f945224d4abfdc2544e8`, chain 8453)
+- SherpaVault (`0x96043804d00dcec238718eedad9ac10719778380`, chain 8453)
 
 ## Contract Surface Quality
 
@@ -101,7 +101,7 @@ The pinned logic-topography run contains 1 contract row(s) across base, ethereum
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| SherpaVault | core_logic | project_anchor | own_supporting | 0 | base | unit-254712 | `0x960438...778380` | ✅ Audited |
+| SherpaVault | core_logic | project_anchor | own_supporting | 0 | base | unit-254712 | `0x96043804d00dcec238718eedad9ac10719778380` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 
@@ -125,12 +125,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-254706 | `0x2e7d6f...12d3e5` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-254707 | `0x32b485...84dbd5` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-254708 | `0x80226f...146f7d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-254709 | `0x960438...778380` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-254710 | `0x19f3d0...aa707d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-254711 | `0x498d9a...2544e8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-254706 | `0x2e7d6f4ab0f5ec106ce6985ca33bd0967412d3e5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-254707 | `0x32b48530f8a2c5cbe79d6b43823bfc9d9584dbd5` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-254708 | `0x80226fc0ee2b096224eeac085bb9a8cba1146f7d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-254709 | `0x96043804d00dcec238718eedad9ac10719778380` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-254710 | `0x19f3d065df4f5296a7b4232c1c88d5994daa707d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-254711 | `0x498d9aecf41c440829b7f945224d4abfdc2544e8` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -152,7 +152,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 |---|---|---|---|---|---|
 | 2025-11-23-cyfrin-sherpa-v2.0.pdf | ShareMath | unmatched — not counted | — | — | no |
 | 2025-11-23-cyfrin-sherpa-v2.0.pdf | SherpaUSD | unmatched — not counted | — | — | no |
-| 2025-11-23-cyfrin-sherpa-v2.0.pdf | SherpaVault | own contract | SherpaVault (selected) `0x960438...778380` — deployed 2025-11-22 12:59:53+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2025-11-23-cyfrin-sherpa-v2.0.pdf | SherpaVault | own contract | SherpaVault (selected) `0x96043804d00dcec238718eedad9ac10719778380` — deployed 2025-11-22 12:59:53+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2025-11-23-cyfrin-sherpa-v2.0.pdf | Vault | unmatched — not counted | — | — | no |
 
 ## Coverage Gaps

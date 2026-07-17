@@ -61,8 +61,8 @@ The protocol forms a single structural family (Core Logic) of 1 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Voting Escrow | operational_periphery | base | n/a | 3 deployments: ethereum `0x8e76cd...ecfb35`; base [`0x45dd22...d47842`](./contracts/base-8453/0x45dd22ace398002b34cb37b363b2f02c7dd47842/); base `0xcf08d1...6aea03` | ⚠️ Unaudited |
-| WeightedPool | core_logic | base | n/a | [`0xc3889f...72a147`](./contracts/base-8453/0xc3889f9764d68bdf2e16f237206746344172a147/) | ⚠️ Unaudited |
+| Voting Escrow | operational_periphery | base | n/a | 3 deployments: ethereum `0x8e76cdf3b14c540ab54afa7f8492ac1d16ecfb35`; base [`0x45dd22ace398002b34cb37b363b2f02c7dd47842`](./contracts/base-8453/0x45dd22ace398002b34cb37b363b2f02c7dd47842/); base `0xcf08d1ec5d8e566d95299399307f75f98d6aea03` | ⚠️ Unaudited |
+| WeightedPool | core_logic | base | n/a | [`0xc3889f9764d68bdf2e16f237206746344172a147`](./contracts/base-8453/0xc3889f9764d68bdf2e16f237206746344172a147/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -96,8 +96,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x45dd22...d47842`](./contracts/base-8453/0x45dd22ace398002b34cb37b363b2f02c7dd47842/) | Voting Escrow | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xc3889f...72a147`](./contracts/base-8453/0xc3889f9764d68bdf2e16f237206746344172a147/) | WeightedPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x45dd22ace398002b34cb37b363b2f02c7dd47842`](./contracts/base-8453/0x45dd22ace398002b34cb37b363b2f02c7dd47842/) | Voting Escrow | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xc3889f9764d68bdf2e16f237206746344172a147`](./contracts/base-8453/0xc3889f9764d68bdf2e16f237206746344172a147/) | WeightedPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -52,14 +52,14 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x9a7164...883bbf`, chain 1)
-- UnnamedContract (`0xe34316...95491d`, chain 1)
-- UnnamedContract (`0x046ca5...8beb70`, chain 196)
-- UnnamedContract (`0x4ae46a...3d2dc8`, chain 196)
-- UnnamedContract (`0x004b50...4b9bbc`, chain 42161)
-- UnnamedContract (`0x359a1e...27bcb6`, chain 42161)
-- UnnamedContract (`0x9a7164...883bbf`, chain 57073)
-- UnnamedContract (`0xe34316...95491d`, chain 57073)
+- UnnamedContract (`0x9a7164112029b81c07636ab7b59fa813e0883bbf`, chain 1)
+- UnnamedContract (`0xe343167631d89b6ffc58b88d6b7fb0228795491d`, chain 1)
+- UnnamedContract (`0x046ca5a59d53448bf63e0bee1d552c84ad8beb70`, chain 196)
+- UnnamedContract (`0x4ae46a509f6b1d9056937ba4500cb143933d2dc8`, chain 196)
+- UnnamedContract (`0x004b506865409877c9fa29bfb1eba929984b9bbc`, chain 42161)
+- UnnamedContract (`0x359a1ee087abd3042151b93ec8ea462d6b27bcb6`, chain 42161)
+- UnnamedContract (`0x9a7164112029b81c07636ab7b59fa813e0883bbf`, chain 57073)
+- UnnamedContract (`0xe343167631d89b6ffc58b88d6b7fb0228795491d`, chain 57073)
 
 ## Contract Surface Quality
 
@@ -105,7 +105,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AdminUpgradeabilityProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x458048...cbaf78` | ⚠️ Unaudited |
+| AdminUpgradeabilityProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x45804880de22913dafe09f4980848ece6ecbaf78` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -125,14 +125,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251148 | `0x9a7164...883bbf` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251149 | `0xe34316...95491d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | x-layer | unit-251150 | `0x046ca5...8beb70` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | x-layer | unit-251151 | `0x4ae46a...3d2dc8` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-251152 | `0x004b50...4b9bbc` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-251153 | `0x359a1e...27bcb6` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-251154 | `0x9a7164...883bbf` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-251155 | `0xe34316...95491d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251148 | `0x9a7164112029b81c07636ab7b59fa813e0883bbf` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251149 | `0xe343167631d89b6ffc58b88d6b7fb0228795491d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | x-layer | unit-251150 | `0x046ca5a59d53448bf63e0bee1d552c84ad8beb70` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | x-layer | unit-251151 | `0x4ae46a509f6b1d9056937ba4500cb143933d2dc8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-251152 | `0x004b506865409877c9fa29bfb1eba929984b9bbc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-251153 | `0x359a1ee087abd3042151b93ec8ea462d6b27bcb6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-251154 | `0x9a7164112029b81c07636ab7b59fa813e0883bbf` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-251155 | `0xe343167631d89b6ffc58b88d6b7fb0228795491d` | ❓ Unverified |
 
 ## Audit Inventory
 

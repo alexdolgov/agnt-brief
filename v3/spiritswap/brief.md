@@ -48,8 +48,8 @@ The pinned logic-topography run contains 9 contract row(s) across fantom, sonic.
 
 ### Forked Contracts
 
-**AlgebraEternalFarming** (`0xf5d228...4c0c08`, chain 146)
-Origin: mantra-dao (`0x83d4a9...f93e7c`)
+**AlgebraEternalFarming** (`0xf5d228fd454e99384bfaa4e695b70a8cdd4c0c08`, chain 146)
+Origin: mantra-dao (`0x83d4a9ea77a4dba073cd90b30410ac9f95f93e7c`)
 Containment: 95.8% - 23 functions inherited
 Centroid audit status: pending_validation
 
@@ -60,14 +60,14 @@ Removals (removed from original):
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x6f161b...af7382`, chain 146)
-- AlgebraCommunityVault (`0x5be5f7...5870f7`, chain 146)
-- AlgebraFactory (`0xb86020...4cda76`, chain 146)
-- FarmingCenter (`0x967f26...7e51d6`, chain 146)
-- NonfungiblePositionManager (`0x5084e9...572bb4`, chain 146)
-- Quoter (`0xe11813...a09404`, chain 146)
-- SwapRouter (`0x488219...5acd6b`, chain 146)
-- TickLens (`0xe96c8f...404dae`, chain 146)
+- UnnamedContract (`0x6f161bd48ae6ae015b03b22d24037ebcbdaf7382`, chain 146)
+- AlgebraCommunityVault (`0x5be5f71bc89a2e5fdbbb2d9aeff1f4a38d5870f7`, chain 146)
+- AlgebraFactory (`0xb860200bd68dc39ceafd6ebb82883f189f4cda76`, chain 146)
+- FarmingCenter (`0x967f26d3a2714a55bdd1bd9c6e6ed148527e51d6`, chain 146)
+- NonfungiblePositionManager (`0x5084e9fdf9264489a14e77c011073d757e572bb4`, chain 146)
+- Quoter (`0xe1181313a39d850d3a20f11ff1a6a94a29a09404`, chain 146)
+- SwapRouter (`0x4882198dd2064d1e35b24735e6b9e5e3b45acd6b`, chain 146)
+- TickLens (`0xe96c8f64237f6b4af428a474e2741d60e2404dae`, chain 146)
 
 ## Contract Surface Quality
 
@@ -113,25 +113,25 @@ Removals (removed from original):
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AlgebraCommunityVault | core_logic | project_anchor | own_supporting | 0 | sonic | unit-392847 | `0x5be5f7...5870f7` | ⚠️ Unaudited |
-| AlgebraEternalFarming | unknown | project_anchor | own_supporting | 0 | sonic | unit-392854 | `0xf5d228...4c0c08` | ⚠️ Unaudited |
-| AlgebraFactory | registry | project_anchor | own_supporting | 0 | sonic | unit-392851 | `0xb86020...4cda76` | ⚠️ Unaudited |
-| AlgebraInterfaceMulticall | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 2 deployments: sonic `0x79cb46...9dc9e0`; sonic `0xfbc48d...6a2258` | ⚠️ Unaudited |
-| AlgebraPoolDeployer | unknown | project_anchor | own_supporting | 0 | sonic | unit-392850 | `0x98af00...6c9a29` | ⚠️ Unaudited |
-| AlgebraVaultFactoryStub | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x076047...4189af` | ⚠️ Unaudited |
-| BasePluginV1Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 3 deployments: sonic `0x0a3ec1...ea5741`; sonic `0x51d7b1...377cbb`; sonic `0xa3620b...12c0e4` | ⚠️ Unaudited |
-| FarmingCenter | unknown | project_anchor | own_supporting | 0 | sonic | unit-392849 | `0x967f26...7e51d6` | ⚠️ Unaudited |
-| NonfungiblePositionManager | governance | project_anchor | own_supporting | 0 | sonic | unit-392846 | `0x5084e9...572bb4` | ⚠️ Unaudited |
-| NonfungiblePositionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xe2406e...bf8378` | ⚠️ Unaudited |
-| Quoter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x3cd3d9...3b0f87` | ⚠️ Unaudited |
-| Quoter | periphery | project_anchor | own_supporting | 0 | sonic | unit-392852 | `0xe11813...a09404` | ⚠️ Unaudited |
-| QuoterV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 2 deployments: sonic `0x6d4ac8...9cdd1a`; sonic `0x8d4013...9911a6` | ⚠️ Unaudited |
-| SwapRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x2e6b9c...0f5438` | ⚠️ Unaudited |
-| SwapRouter | adapter | project_anchor | own_supporting | 0 | sonic | unit-392845 | `0x488219...5acd6b` | ⚠️ Unaudited |
-| TickLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xd218bc...85352e` | ⚠️ Unaudited |
-| TickLens | unknown | project_anchor | own_supporting | 0 | sonic | unit-392853 | `0xe96c8f...404dae` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | 2 deployments: sonic `0x085b00...f831ea`; sonic `0x8a22bd...aa349a` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | 2 deployments: sonic `0x62fa59...763e5a`; sonic `0xfca97c...47b117` | ⚠️ Unaudited |
+| AlgebraCommunityVault | core_logic | project_anchor | own_supporting | 0 | sonic | unit-392847 | `0x5be5f71bc89a2e5fdbbb2d9aeff1f4a38d5870f7` | ⚠️ Unaudited |
+| AlgebraEternalFarming | unknown | project_anchor | own_supporting | 0 | sonic | unit-392854 | `0xf5d228fd454e99384bfaa4e695b70a8cdd4c0c08` | ⚠️ Unaudited |
+| AlgebraFactory | registry | project_anchor | own_supporting | 0 | sonic | unit-392851 | `0xb860200bd68dc39ceafd6ebb82883f189f4cda76` | ⚠️ Unaudited |
+| AlgebraInterfaceMulticall | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 2 deployments: sonic `0x79cb4664ebe30ff989e605b048b402c54b9dc9e0`; sonic `0xfbc48dc87f605665a45406d1ed21c36a6b6a2258` | ⚠️ Unaudited |
+| AlgebraPoolDeployer | unknown | project_anchor | own_supporting | 0 | sonic | unit-392850 | `0x98af00a67f5cc0b362da34283d7d32817f6c9a29` | ⚠️ Unaudited |
+| AlgebraVaultFactoryStub | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x076047eaf2d4357013cb8da37743a34f084189af` | ⚠️ Unaudited |
+| BasePluginV1Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 3 deployments: sonic `0x0a3ec155d3293cea876195f3017d6d1b6eea5741`; sonic `0x51d7b1182489be5298196e1b248388c9fa377cbb`; sonic `0xa3620b3e84c04f3dede5cddafc46dd2ed712c0e4` | ⚠️ Unaudited |
+| FarmingCenter | unknown | project_anchor | own_supporting | 0 | sonic | unit-392849 | `0x967f26d3a2714a55bdd1bd9c6e6ed148527e51d6` | ⚠️ Unaudited |
+| NonfungiblePositionManager | governance | project_anchor | own_supporting | 0 | sonic | unit-392846 | `0x5084e9fdf9264489a14e77c011073d757e572bb4` | ⚠️ Unaudited |
+| NonfungiblePositionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xe2406ef482466969fa3a873ef56c55b599bf8378` | ⚠️ Unaudited |
+| Quoter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x3cd3d9da786257c7ec74f80e1661fe40583b0f87` | ⚠️ Unaudited |
+| Quoter | periphery | project_anchor | own_supporting | 0 | sonic | unit-392852 | `0xe1181313a39d850d3a20f11ff1a6a94a29a09404` | ⚠️ Unaudited |
+| QuoterV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 2 deployments: sonic `0x6d4ac88d77273f5af83e1cc706a8a6700b9cdd1a`; sonic `0x8d4013882f2f93362b1cb7e6dc6da215d39911a6` | ⚠️ Unaudited |
+| SwapRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x2e6b9c8d4a0972f87f21437a3ac7e4a1810f5438` | ⚠️ Unaudited |
+| SwapRouter | adapter | project_anchor | own_supporting | 0 | sonic | unit-392845 | `0x4882198dd2064d1e35b24735e6b9e5e3b45acd6b` | ⚠️ Unaudited |
+| TickLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xd218bc0255e34af0caf665746d838c559c85352e` | ⚠️ Unaudited |
+| TickLens | unknown | project_anchor | own_supporting | 0 | sonic | unit-392853 | `0xe96c8f64237f6b4af428a474e2741d60e2404dae` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | 2 deployments: sonic `0x085b00de2b00fc6529e881399ece936e22f831ea`; sonic `0x8a22bd5d917caab40416f3fcffa73052e8aa349a` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | 2 deployments: sonic `0x62fa59126b12736f31e96c35fc86493450763e5a`; sonic `0xfca97cf455760f634de123158b3286090147b117` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -151,11 +151,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x0b1019...e9fee0` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x271b8e...bc8243` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-392848 | `0x6f161b...af7382` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xe57c42...c66ddb` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fantom | n/a | 5 deployments: fantom `0x2fbff4...acdc08`; fantom `0x5b2af7...34685e`; fantom `0x5cc61a...78e59b`; fantom `0x9d3591...2c6b9c`; fantom `0xef45d1...4950b0` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x0b1019859c10fc7018081f29580724455fe9fee0` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x271b8ea9de9f2a27341524d4ad8a0d3ea1bc8243` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-392848 | `0x6f161bd48ae6ae015b03b22d24037ebcbdaf7382` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xe57c42af3c5e19ef833f045a00801ad107c66ddb` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fantom | n/a | 5 deployments: fantom `0x2fbff41a9efaeae77538bd63f1ea489494acdc08`; fantom `0x5b2af7fd27e2ea14945c82dd254c79d3ed34685e`; fantom `0x5cc61a78f164885776aa610fb0fe1257df78e59b`; fantom `0x9d3591719038752db0c8beee2040ffcc3b2c6b9c`; fantom `0xef45d134b73241eda7703fa787148d9c9f4950b0` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -213,15 +213,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| sonic | `0x5be5f7...5870f7` | AlgebraCommunityVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | `0xf5d228...4c0c08` | AlgebraEternalFarming | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | `0xb86020...4cda76` | AlgebraFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | `0x98af00...6c9a29` | AlgebraPoolDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | `0x967f26...7e51d6` | FarmingCenter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | `0x5084e9...572bb4` | NonfungiblePositionManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | `0xe11813...a09404` | Quoter | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | `0x488219...5acd6b` | SwapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | `0xe96c8f...404dae` | TickLens | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0x5be5f71bc89a2e5fdbbb2d9aeff1f4a38d5870f7` | AlgebraCommunityVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0xf5d228fd454e99384bfaa4e695b70a8cdd4c0c08` | AlgebraEternalFarming | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0xb860200bd68dc39ceafd6ebb82883f189f4cda76` | AlgebraFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0x98af00a67f5cc0b362da34283d7d32817f6c9a29` | AlgebraPoolDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0x967f26d3a2714a55bdd1bd9c6e6ed148527e51d6` | FarmingCenter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0x5084e9fdf9264489a14e77c011073d757e572bb4` | NonfungiblePositionManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0xe1181313a39d850d3a20f11ff1a6a94a29a09404` | Quoter | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0x4882198dd2064d1e35b24735e6b9e5e3b45acd6b` | SwapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0xe96c8f64237f6b4af428a474e2741d60e2404dae` | TickLens | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

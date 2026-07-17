@@ -67,19 +67,19 @@ Total inherited audits: 13. Inherited coverage reflects forked/shared code audit
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AnyswapV5ERC20 | token | moonriver | n/a | 2 deployments: moonriver [`0x0cae51...de3adb`](./contracts/moonriver-1285/0x0cae51e1032e8461f4806e26332c030e34de3adb/); moonriver `0x80a160...f0f844` | ⚠️ Unaudited |
-| aRome | unknown | moonriver | n/a | [`0x3d2d04...d902be`](./contracts/moonriver-1285/0x3d2d044e8c6dad46b4f7896418d3d4dfaad902be/) | ⚠️ Unaudited |
-| CrossChainBridgeBacker_MOON_AnySwap | operational_periphery | moonriver | n/a | [`0xc7f48f...dc44ac`](./contracts/moonriver-1285/0xc7f48fb6dbb6f8a3eed90553017cdf5725dc44ac/) | ⚠️ Unaudited |
-| CrossChainCanonicalFRAX | unknown | moonriver | n/a | [`0x1a93b2...16197d`](./contracts/moonriver-1285/0x1a93b23281cc1cde4c4741353f3064709a16197d/) | ⚠️ Unaudited |
-| CrossChainOracle | operational_periphery | moonriver | n/a | [`0xbce6f8...b71be4`](./contracts/moonriver-1285/0xbce6f81b8d154b8df09d287d05826f2b34b71be4/) | ⚠️ Unaudited |
-| CrossChainOracleSingleAsset | operational_periphery | moonriver | n/a | [`0xcbd0d3...feba9a`](./contracts/moonriver-1285/0xcbd0d3c8bb0edd9a542d22b4a0de3228affeba9a/) | ⚠️ Unaudited |
-| DaiRomePresale | unknown | moonriver | n/a | [`0x093973...9bc824`](./contracts/moonriver-1285/0x093973dca8f8dab14398b7e472e69f75869bc824/) | ⚠️ Unaudited |
-| Rome | unknown | moonriver | n/a | [`0x4a4360...73d9d6`](./contracts/moonriver-1285/0x4a436073552044d5f2f49b176853ad3ad473d9d6/) | ⚠️ Unaudited |
-| RomeConscription | unknown | moonriver | n/a | [`0x3718bc...c8f685`](./contracts/moonriver-1285/0x3718bc4389cc4d960cedf9ff68e96c731bc8f685/) | ⚠️ Unaudited |
-| ROMEFRAXBondDepository | unknown | moonriver | n/a | [`0x065588...51ad8a`](./contracts/moonriver-1285/0x065588602bd7206b15f9630fdb2e81e4ca51ad8a/) | ⚠️ Unaudited |
-| RomeStaking | unknown | moonriver | n/a | [`0x6f7d01...b759f1`](./contracts/moonriver-1285/0x6f7d019502e17f1ef24ac67a260c65dd23b759f1/) | ⚠️ Unaudited |
-| SolarPair | unknown | moonriver | n/a | [`0x069c20...c05894`](./contracts/moonriver-1285/0x069c2065100b4d3d982383f7ef3ecd1b95c05894/) | ⚠️ Unaudited |
-| sRome | unknown | moonriver | n/a | [`0x89f520...8ce12a`](./contracts/moonriver-1285/0x89f52002e544585b42f8c7cf557609ca4c8ce12a/) | ⚠️ Unaudited |
+| AnyswapV5ERC20 | token | moonriver | n/a | 2 deployments: moonriver [`0x0cae51e1032e8461f4806e26332c030e34de3adb`](./contracts/moonriver-1285/0x0cae51e1032e8461f4806e26332c030e34de3adb/); moonriver `0x80a16016cc4a2e6a2caca8a4a498b1699ff0f844` | ⚠️ Unaudited |
+| aRome | unknown | moonriver | n/a | [`0x3d2d044e8c6dad46b4f7896418d3d4dfaad902be`](./contracts/moonriver-1285/0x3d2d044e8c6dad46b4f7896418d3d4dfaad902be/) | ⚠️ Unaudited |
+| CrossChainBridgeBacker_MOON_AnySwap | operational_periphery | moonriver | n/a | [`0xc7f48fb6dbb6f8a3eed90553017cdf5725dc44ac`](./contracts/moonriver-1285/0xc7f48fb6dbb6f8a3eed90553017cdf5725dc44ac/) | ⚠️ Unaudited |
+| CrossChainCanonicalFRAX | unknown | moonriver | n/a | [`0x1a93b23281cc1cde4c4741353f3064709a16197d`](./contracts/moonriver-1285/0x1a93b23281cc1cde4c4741353f3064709a16197d/) | ⚠️ Unaudited |
+| CrossChainOracle | operational_periphery | moonriver | n/a | [`0xbce6f81b8d154b8df09d287d05826f2b34b71be4`](./contracts/moonriver-1285/0xbce6f81b8d154b8df09d287d05826f2b34b71be4/) | ⚠️ Unaudited |
+| CrossChainOracleSingleAsset | operational_periphery | moonriver | n/a | [`0xcbd0d3c8bb0edd9a542d22b4a0de3228affeba9a`](./contracts/moonriver-1285/0xcbd0d3c8bb0edd9a542d22b4a0de3228affeba9a/) | ⚠️ Unaudited |
+| DaiRomePresale | unknown | moonriver | n/a | [`0x093973dca8f8dab14398b7e472e69f75869bc824`](./contracts/moonriver-1285/0x093973dca8f8dab14398b7e472e69f75869bc824/) | ⚠️ Unaudited |
+| Rome | unknown | moonriver | n/a | [`0x4a436073552044d5f2f49b176853ad3ad473d9d6`](./contracts/moonriver-1285/0x4a436073552044d5f2f49b176853ad3ad473d9d6/) | ⚠️ Unaudited |
+| RomeConscription | unknown | moonriver | n/a | [`0x3718bc4389cc4d960cedf9ff68e96c731bc8f685`](./contracts/moonriver-1285/0x3718bc4389cc4d960cedf9ff68e96c731bc8f685/) | ⚠️ Unaudited |
+| ROMEFRAXBondDepository | unknown | moonriver | n/a | [`0x065588602bd7206b15f9630fdb2e81e4ca51ad8a`](./contracts/moonriver-1285/0x065588602bd7206b15f9630fdb2e81e4ca51ad8a/) | ⚠️ Unaudited |
+| RomeStaking | unknown | moonriver | n/a | [`0x6f7d019502e17f1ef24ac67a260c65dd23b759f1`](./contracts/moonriver-1285/0x6f7d019502e17f1ef24ac67a260c65dd23b759f1/) | ⚠️ Unaudited |
+| SolarPair | unknown | moonriver | n/a | [`0x069c2065100b4d3d982383f7ef3ecd1b95c05894`](./contracts/moonriver-1285/0x069c2065100b4d3d982383f7ef3ecd1b95c05894/) | ⚠️ Unaudited |
+| sRome | unknown | moonriver | n/a | [`0x89f52002e544585b42f8c7cf557609ca4c8ce12a`](./contracts/moonriver-1285/0x89f52002e544585b42f8c7cf557609ca4c8ce12a/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -99,15 +99,15 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | moonriver | n/a | `0x1d7ca6...ef22c1` | ❓ Unverified |
-| UnnamedContract | unknown | moonriver | n/a | `0x218c3c...61a4c0` | ❓ Unverified |
-| UnnamedContract | unknown | moonriver | n/a | `0x2c78f1...3aa07e` | ❓ Unverified |
-| UnnamedContract | unknown | moonriver | n/a | `0x340fe1...7b717a` | ❓ Unverified |
-| UnnamedContract | unknown | moonriver | n/a | `0xc1be9a...4602c4` | ❓ Unverified |
-| UnnamedContract | unknown | moonriver | n/a | `0xc8bc73...67d9f8` | ❓ Unverified |
-| UnnamedContract | unknown | moonriver | n/a | `0xcb3c89...580c0a` | ❓ Unverified |
-| UnnamedContract | unknown | moonriver | n/a | `0xd67de0...850454` | ❓ Unverified |
-| UnnamedContract | unknown | moonriver | n/a | `0xe0ce60...2a1109` | ❓ Unverified |
+| UnnamedContract | unknown | moonriver | n/a | `0x1d7ca62f6af49ec66f6680b8606e634e55ef22c1` | ❓ Unverified |
+| UnnamedContract | unknown | moonriver | n/a | `0x218c3c3d49d0e7b37aff0d8bb079de36ae61a4c0` | ❓ Unverified |
+| UnnamedContract | unknown | moonriver | n/a | `0x2c78f1b70ccf63cdee49f9233e9faa99d43aa07e` | ❓ Unverified |
+| UnnamedContract | unknown | moonriver | n/a | `0x340fe1d898eccaad394e2ba0fc1f93d27c7b717a` | ❓ Unverified |
+| UnnamedContract | unknown | moonriver | n/a | `0xc1be9a4d5d45beeacae296a7bd5fadbfc14602c4` | ❓ Unverified |
+| UnnamedContract | unknown | moonriver | n/a | `0xc8bc73f917b8beef6ea444ffdcc76b71fe67d9f8` | ❓ Unverified |
+| UnnamedContract | unknown | moonriver | n/a | `0xcb3c890bf2914f1cd76b20b7230c566717580c0a` | ❓ Unverified |
+| UnnamedContract | unknown | moonriver | n/a | `0xd67de0e0a0fd7b15dc8348bb9be742f3c5850454` | ❓ Unverified |
+| UnnamedContract | unknown | moonriver | n/a | `0xe0ce60af0850bf54072635e66e79df17082a1109` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -133,18 +133,18 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| moonriver | [`0x3d2d04...d902be`](./contracts/moonriver-1285/0x3d2d044e8c6dad46b4f7896418d3d4dfaad902be/) | aRome | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| moonriver | [`0xc7f48f...dc44ac`](./contracts/moonriver-1285/0xc7f48fb6dbb6f8a3eed90553017cdf5725dc44ac/) | CrossChainBridgeBacker_MOON_AnySwap | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| moonriver | [`0x1a93b2...16197d`](./contracts/moonriver-1285/0x1a93b23281cc1cde4c4741353f3064709a16197d/) | CrossChainCanonicalFRAX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| moonriver | [`0xbce6f8...b71be4`](./contracts/moonriver-1285/0xbce6f81b8d154b8df09d287d05826f2b34b71be4/) | CrossChainOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| moonriver | [`0xcbd0d3...feba9a`](./contracts/moonriver-1285/0xcbd0d3c8bb0edd9a542d22b4a0de3228affeba9a/) | CrossChainOracleSingleAsset | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| moonriver | [`0x093973...9bc824`](./contracts/moonriver-1285/0x093973dca8f8dab14398b7e472e69f75869bc824/) | DaiRomePresale | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| moonriver | [`0x4a4360...73d9d6`](./contracts/moonriver-1285/0x4a436073552044d5f2f49b176853ad3ad473d9d6/) | Rome | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| moonriver | [`0x3718bc...c8f685`](./contracts/moonriver-1285/0x3718bc4389cc4d960cedf9ff68e96c731bc8f685/) | RomeConscription | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| moonriver | [`0x065588...51ad8a`](./contracts/moonriver-1285/0x065588602bd7206b15f9630fdb2e81e4ca51ad8a/) | ROMEFRAXBondDepository | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| moonriver | [`0x6f7d01...b759f1`](./contracts/moonriver-1285/0x6f7d019502e17f1ef24ac67a260c65dd23b759f1/) | RomeStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| moonriver | [`0x069c20...c05894`](./contracts/moonriver-1285/0x069c2065100b4d3d982383f7ef3ecd1b95c05894/) | SolarPair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| moonriver | [`0x89f520...8ce12a`](./contracts/moonriver-1285/0x89f52002e544585b42f8c7cf557609ca4c8ce12a/) | sRome | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | [`0x3d2d044e8c6dad46b4f7896418d3d4dfaad902be`](./contracts/moonriver-1285/0x3d2d044e8c6dad46b4f7896418d3d4dfaad902be/) | aRome | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | [`0xc7f48fb6dbb6f8a3eed90553017cdf5725dc44ac`](./contracts/moonriver-1285/0xc7f48fb6dbb6f8a3eed90553017cdf5725dc44ac/) | CrossChainBridgeBacker_MOON_AnySwap | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | [`0x1a93b23281cc1cde4c4741353f3064709a16197d`](./contracts/moonriver-1285/0x1a93b23281cc1cde4c4741353f3064709a16197d/) | CrossChainCanonicalFRAX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | [`0xbce6f81b8d154b8df09d287d05826f2b34b71be4`](./contracts/moonriver-1285/0xbce6f81b8d154b8df09d287d05826f2b34b71be4/) | CrossChainOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | [`0xcbd0d3c8bb0edd9a542d22b4a0de3228affeba9a`](./contracts/moonriver-1285/0xcbd0d3c8bb0edd9a542d22b4a0de3228affeba9a/) | CrossChainOracleSingleAsset | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | [`0x093973dca8f8dab14398b7e472e69f75869bc824`](./contracts/moonriver-1285/0x093973dca8f8dab14398b7e472e69f75869bc824/) | DaiRomePresale | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | [`0x4a436073552044d5f2f49b176853ad3ad473d9d6`](./contracts/moonriver-1285/0x4a436073552044d5f2f49b176853ad3ad473d9d6/) | Rome | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | [`0x3718bc4389cc4d960cedf9ff68e96c731bc8f685`](./contracts/moonriver-1285/0x3718bc4389cc4d960cedf9ff68e96c731bc8f685/) | RomeConscription | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | [`0x065588602bd7206b15f9630fdb2e81e4ca51ad8a`](./contracts/moonriver-1285/0x065588602bd7206b15f9630fdb2e81e4ca51ad8a/) | ROMEFRAXBondDepository | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | [`0x6f7d019502e17f1ef24ac67a260c65dd23b759f1`](./contracts/moonriver-1285/0x6f7d019502e17f1ef24ac67a260c65dd23b759f1/) | RomeStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | [`0x069c2065100b4d3d982383f7ef3ecd1b95c05894`](./contracts/moonriver-1285/0x069c2065100b4d3d982383f7ef3ecd1b95c05894/) | SolarPair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | [`0x89f52002e544585b42f8c7cf557609ca4c8ce12a`](./contracts/moonriver-1285/0x89f52002e544585b42f8c7cf557609ca4c8ce12a/) | sRome | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

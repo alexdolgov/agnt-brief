@@ -60,31 +60,31 @@ The protocol comprises 6 functional families. Its contracts share 2 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Fyde | unknown | ethereum | n/a | 2 deployments: ethereum [`0x87cc45...7df2ee`](./contracts/ethereum-1/0x87cc45fff5c0933bb6af6bae7fc013b7ec7df2ee/); ethereum `0xdde736...de6711` | ✅ Audited |
-| OracleModule | unknown | ethereum | n/a | 6 deployments: ethereum [`0x051983...bd2aee`](./contracts/ethereum-1/0x05198327206123e89c24abd9a482316449bd2aee/); ethereum `0x9b1223...ab6c5a`; ethereum `0xa44adf...4234ca`; ethereum `0xd7cb5e...1bcdf6`; ethereum `0xde0d6b...a6f83d`; ethereum `0xe8e40f...33b736` | ✅ Audited |
-| PooledDepositEscrow | unknown | ethereum | n/a | 3 deployments: ethereum [`0x9da792...8debfc`](./contracts/ethereum-1/0x9da7923224ed433c8f1047eb8eca80cce98debfc/); ethereum `0xcdeb11...362abf`; ethereum `0xddc55e...e070e1` | ✅ Audited |
-| Relayer | unknown | ethereum | n/a | [`0x94194d...81d9be`](./contracts/ethereum-1/0x94194de310b99d3c8a5b8c0768cfce7aef81d9be/) | ✅ Audited |
-| RelayerV2 | unknown | ethereum | n/a | [`0x6830c6...f32078`](./contracts/ethereum-1/0x6830c61df103946b63c786e63222c59677f32078/) | ✅ Audited |
-| sTRSY | unknown | ethereum | n/a | 2 deployments: ethereum [`0x16f483...f55460`](./contracts/ethereum-1/0x16f483d7a46d8d74eb176cf43687dc9dc5f55460/); ethereum `0xe11df8...1566b9` | ✅ Audited |
-| TaxModule | unknown | ethereum | n/a | 3 deployments: ethereum [`0x35afe5...0a70d3`](./contracts/ethereum-1/0x35afe52bddedbc9bbe53af119568264da00a70d3/); ethereum `0x9edd8e...f53322`; ethereum `0xf6bcf9...f1eb40` | ✅ Audited |
-| UserProxy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x68bb55...51c5a7`](./contracts/ethereum-1/0x68bb55f0bc0b9a37cd4afb5ec4794fc61651c5a7/); ethereum `0xc6f509...8239e1` | ✅ Audited |
+| Fyde | unknown | ethereum | n/a | 2 deployments: ethereum [`0x87cc45fff5c0933bb6af6bae7fc013b7ec7df2ee`](./contracts/ethereum-1/0x87cc45fff5c0933bb6af6bae7fc013b7ec7df2ee/); ethereum `0xdde736837c7c275a952a52ee11face88adde6711` | ✅ Audited |
+| OracleModule | unknown | ethereum | n/a | 6 deployments: ethereum [`0x05198327206123e89c24abd9a482316449bd2aee`](./contracts/ethereum-1/0x05198327206123e89c24abd9a482316449bd2aee/); ethereum `0x9b122361e8708be33b785e44fce4d6ca86ab6c5a`; ethereum `0xa44adf41a308a1d63786e6abaed9ac64f24234ca`; ethereum `0xd7cb5e50775d8583e8edb8993619227af81bcdf6`; ethereum `0xde0d6b162d7751fa09453debfd4df96a72a6f83d`; ethereum `0xe8e40fd4ddab26b44b1fb2d6d73833cb0a33b736` | ✅ Audited |
+| PooledDepositEscrow | unknown | ethereum | n/a | 3 deployments: ethereum [`0x9da7923224ed433c8f1047eb8eca80cce98debfc`](./contracts/ethereum-1/0x9da7923224ed433c8f1047eb8eca80cce98debfc/); ethereum `0xcdeb119b9b312434322fe8e5b75a93b35f362abf`; ethereum `0xddc55e390841021b0e99179322f66d3a17e070e1` | ✅ Audited |
+| Relayer | unknown | ethereum | n/a | [`0x94194de310b99d3c8a5b8c0768cfce7aef81d9be`](./contracts/ethereum-1/0x94194de310b99d3c8a5b8c0768cfce7aef81d9be/) | ✅ Audited |
+| RelayerV2 | unknown | ethereum | n/a | [`0x6830c61df103946b63c786e63222c59677f32078`](./contracts/ethereum-1/0x6830c61df103946b63c786e63222c59677f32078/) | ✅ Audited |
+| sTRSY | unknown | ethereum | n/a | 2 deployments: ethereum [`0x16f483d7a46d8d74eb176cf43687dc9dc5f55460`](./contracts/ethereum-1/0x16f483d7a46d8d74eb176cf43687dc9dc5f55460/); ethereum `0xe11df8c0e9b5697bd31515d0fc5f4c9bd71566b9` | ✅ Audited |
+| TaxModule | unknown | ethereum | n/a | 3 deployments: ethereum [`0x35afe52bddedbc9bbe53af119568264da00a70d3`](./contracts/ethereum-1/0x35afe52bddedbc9bbe53af119568264da00a70d3/); ethereum `0x9edd8ea842be2284b755e78c43245cd2ecf53322`; ethereum `0xf6bcf96f5bace0241303ee0819e2e009a7f1eb40` | ✅ Audited |
+| UserProxy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x68bb55f0bc0b9a37cd4afb5ec4794fc61651c5a7`](./contracts/ethereum-1/0x68bb55f0bc0b9a37cd4afb5ec4794fc61651c5a7/); ethereum `0xc6f50903a058f3807111619bd4b24ca64b8239e1` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (12)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| FydeOFTAdapter | adapter | ethereum | n/a | [`0x72527f...bcb519`](./contracts/ethereum-1/0x72527fec7d84764c405f28bd7e00e2693bbcb519/) | ⚠️ Unaudited |
-| FydeToken | unknown | ethereum | n/a | 2 deployments: ethereum [`0x8a462e...98de30`](./contracts/ethereum-1/0x8a462e6a0051d006e33152fbeadfb9a14198de30/); ethereum `0xa736cd...6b0cd8` | ⚠️ Unaudited |
-| GnosisSafe | governance | ethereum | n/a | [`0x24b3b5...eba999`](./contracts/ethereum-1/0x24b3b50c1b87b549374876d31f919e5e6eeba999/) | ⚠️ Unaudited |
-| PendlePrincipalToken | token | ethereum | n/a | [`0x1c0851...7f93b1`](./contracts/ethereum-1/0x1c085195437738d73d75dc64bc5a3e098b7f93b1/) | ⚠️ Unaudited |
-| RewardsDistributor | unknown | ethereum | n/a | 3 deployments: ethereum [`0x19d9d8...5adf6a`](./contracts/ethereum-1/0x19d9d821f6a2ed80a0a9ae06e5b12edbdd5adf6a/); ethereum `0xce1414...d15d90`; ethereum `0xd346b2...e8b3dc` | ⚠️ Unaudited |
-| StakingTRSY | unknown | ethereum | n/a | [`0x6c7441...5c32f7`](./contracts/ethereum-1/0x6c7441c76d85d7ab43eacd076d37b0775f5c32f7/) | ⚠️ Unaudited |
-| TrsyFeeDistributor | operational_periphery | ethereum | n/a | [`0x4e48b2...eb9687`](./contracts/ethereum-1/0x4e48b226b49797e50892bfb0feafb9c503eb9687/) | ⚠️ Unaudited |
-| VestingDistributor | operational_periphery | ethereum | n/a | [`0x320407...418045`](./contracts/ethereum-1/0x3204074ad7555cf6149bc21441313611b6418045/) | ⚠️ Unaudited |
-| VoteEscrow | operational_periphery | ethereum | n/a | [`0x6fa0b2...93c9ed`](./contracts/ethereum-1/0x6fa0b27ba2f951a68fa7a097f6c6ccecad93c9ed/) | ⚠️ Unaudited |
-| WithdrawETH | operational_periphery | ethereum | n/a | [`0x14fba2...341fb3`](./contracts/ethereum-1/0x14fba2a6c5a4d9ceb73956ac0a4a18ca8f341fb3/) | ⚠️ Unaudited |
-| YieldStrategy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x569871...1cf59c`](./contracts/ethereum-1/0x569871ae260d85c5981374bba2b2353a3e1cf59c/); ethereum `0xb615a7...ccc3ba` | ⚠️ Unaudited |
-| YieldStrategy | unknown | ethereum | n/a | [`0xc1bbad...c7f8cc`](./contracts/ethereum-1/0xc1bbad6d9eb5092b896158af62375dabedc7f8cc/) | ⚠️ Unaudited |
+| FydeOFTAdapter | adapter | ethereum | n/a | [`0x72527fec7d84764c405f28bd7e00e2693bbcb519`](./contracts/ethereum-1/0x72527fec7d84764c405f28bd7e00e2693bbcb519/) | ⚠️ Unaudited |
+| FydeToken | unknown | ethereum | n/a | 2 deployments: ethereum [`0x8a462e6a0051d006e33152fbeadfb9a14198de30`](./contracts/ethereum-1/0x8a462e6a0051d006e33152fbeadfb9a14198de30/); ethereum `0xa736cd2b05f3e343027a05330595606b8a6b0cd8` | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | n/a | [`0x24b3b50c1b87b549374876d31f919e5e6eeba999`](./contracts/ethereum-1/0x24b3b50c1b87b549374876d31f919e5e6eeba999/) | ⚠️ Unaudited |
+| PendlePrincipalToken | token | ethereum | n/a | [`0x1c085195437738d73d75dc64bc5a3e098b7f93b1`](./contracts/ethereum-1/0x1c085195437738d73d75dc64bc5a3e098b7f93b1/) | ⚠️ Unaudited |
+| RewardsDistributor | unknown | ethereum | n/a | 3 deployments: ethereum [`0x19d9d821f6a2ed80a0a9ae06e5b12edbdd5adf6a`](./contracts/ethereum-1/0x19d9d821f6a2ed80a0a9ae06e5b12edbdd5adf6a/); ethereum `0xce1414ae7040ba65611533df0c23db0bacd15d90`; ethereum `0xd346b2454e7f957fe779efcca6af4d54f1e8b3dc` | ⚠️ Unaudited |
+| StakingTRSY | unknown | ethereum | n/a | [`0x6c7441c76d85d7ab43eacd076d37b0775f5c32f7`](./contracts/ethereum-1/0x6c7441c76d85d7ab43eacd076d37b0775f5c32f7/) | ⚠️ Unaudited |
+| TrsyFeeDistributor | operational_periphery | ethereum | n/a | [`0x4e48b226b49797e50892bfb0feafb9c503eb9687`](./contracts/ethereum-1/0x4e48b226b49797e50892bfb0feafb9c503eb9687/) | ⚠️ Unaudited |
+| VestingDistributor | operational_periphery | ethereum | n/a | [`0x3204074ad7555cf6149bc21441313611b6418045`](./contracts/ethereum-1/0x3204074ad7555cf6149bc21441313611b6418045/) | ⚠️ Unaudited |
+| VoteEscrow | operational_periphery | ethereum | n/a | [`0x6fa0b27ba2f951a68fa7a097f6c6ccecad93c9ed`](./contracts/ethereum-1/0x6fa0b27ba2f951a68fa7a097f6c6ccecad93c9ed/) | ⚠️ Unaudited |
+| WithdrawETH | operational_periphery | ethereum | n/a | [`0x14fba2a6c5a4d9ceb73956ac0a4a18ca8f341fb3`](./contracts/ethereum-1/0x14fba2a6c5a4d9ceb73956ac0a4a18ca8f341fb3/) | ⚠️ Unaudited |
+| YieldStrategy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x569871ae260d85c5981374bba2b2353a3e1cf59c`](./contracts/ethereum-1/0x569871ae260d85c5981374bba2b2353a3e1cf59c/); ethereum `0xb615a7e4d1ed426470ac2df14f3153fa2dccc3ba` | ⚠️ Unaudited |
+| YieldStrategy | unknown | ethereum | n/a | [`0xc1bbad6d9eb5092b896158af62375dabedc7f8cc`](./contracts/ethereum-1/0xc1bbad6d9eb5092b896158af62375dabedc7f8cc/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -104,8 +104,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x9fd02f...1d6fa6` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xb2bf59...eab295` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x9fd02fa9641fa2d2d5acd9e1c9b6b3343d1d6fa6` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb2bf5935f16ea7352888bff2ed8eb935b3eab295` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -120,16 +120,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x72527f...bcb519`](./contracts/ethereum-1/0x72527fec7d84764c405f28bd7e00e2693bbcb519/) | FydeOFTAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x8a462e...98de30`](./contracts/ethereum-1/0x8a462e6a0051d006e33152fbeadfb9a14198de30/) | FydeToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x19d9d8...5adf6a`](./contracts/ethereum-1/0x19d9d821f6a2ed80a0a9ae06e5b12edbdd5adf6a/) | RewardsDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6c7441...5c32f7`](./contracts/ethereum-1/0x6c7441c76d85d7ab43eacd076d37b0775f5c32f7/) | StakingTRSY | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x4e48b2...eb9687`](./contracts/ethereum-1/0x4e48b226b49797e50892bfb0feafb9c503eb9687/) | TrsyFeeDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x320407...418045`](./contracts/ethereum-1/0x3204074ad7555cf6149bc21441313611b6418045/) | VestingDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6fa0b2...93c9ed`](./contracts/ethereum-1/0x6fa0b27ba2f951a68fa7a097f6c6ccecad93c9ed/) | VoteEscrow | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x14fba2...341fb3`](./contracts/ethereum-1/0x14fba2a6c5a4d9ceb73956ac0a4a18ca8f341fb3/) | WithdrawETH | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x569871...1cf59c`](./contracts/ethereum-1/0x569871ae260d85c5981374bba2b2353a3e1cf59c/) | YieldStrategy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc1bbad...c7f8cc`](./contracts/ethereum-1/0xc1bbad6d9eb5092b896158af62375dabedc7f8cc/) | YieldStrategy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x72527fec7d84764c405f28bd7e00e2693bbcb519`](./contracts/ethereum-1/0x72527fec7d84764c405f28bd7e00e2693bbcb519/) | FydeOFTAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8a462e6a0051d006e33152fbeadfb9a14198de30`](./contracts/ethereum-1/0x8a462e6a0051d006e33152fbeadfb9a14198de30/) | FydeToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x19d9d821f6a2ed80a0a9ae06e5b12edbdd5adf6a`](./contracts/ethereum-1/0x19d9d821f6a2ed80a0a9ae06e5b12edbdd5adf6a/) | RewardsDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6c7441c76d85d7ab43eacd076d37b0775f5c32f7`](./contracts/ethereum-1/0x6c7441c76d85d7ab43eacd076d37b0775f5c32f7/) | StakingTRSY | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4e48b226b49797e50892bfb0feafb9c503eb9687`](./contracts/ethereum-1/0x4e48b226b49797e50892bfb0feafb9c503eb9687/) | TrsyFeeDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x3204074ad7555cf6149bc21441313611b6418045`](./contracts/ethereum-1/0x3204074ad7555cf6149bc21441313611b6418045/) | VestingDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6fa0b27ba2f951a68fa7a097f6c6ccecad93c9ed`](./contracts/ethereum-1/0x6fa0b27ba2f951a68fa7a097f6c6ccecad93c9ed/) | VoteEscrow | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x14fba2a6c5a4d9ceb73956ac0a4a18ca8f341fb3`](./contracts/ethereum-1/0x14fba2a6c5a4d9ceb73956ac0a4a18ca8f341fb3/) | WithdrawETH | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x569871ae260d85c5981374bba2b2353a3e1cf59c`](./contracts/ethereum-1/0x569871ae260d85c5981374bba2b2353a3e1cf59c/) | YieldStrategy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc1bbad6d9eb5092b896158af62375dabedc7f8cc`](./contracts/ethereum-1/0xc1bbad6d9eb5092b896158af62375dabedc7f8cc/) | YieldStrategy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

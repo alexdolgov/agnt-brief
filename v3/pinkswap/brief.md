@@ -89,13 +89,13 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| MasterChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-160376 | `0xe98167...80c595` | ⚠️ Unaudited |
-| PinkSwapAirdrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-160366 | `0x726d61...255c54` | ⚠️ Unaudited |
-| PinkswapFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-160360 | `0x4fd09a...590daf` | ⚠️ Unaudited |
-| PinkswapLocker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-160373 | `0xd9a679...36c7ce` | ⚠️ Unaudited |
-| PinkswapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-160357 | `0x319ef6...0fa3ac` | ⚠️ Unaudited |
-| PinkSwapToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-160363 | `0x702b3f...21125d` | ⚠️ Unaudited |
-| Timelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-160369 | `0xa85794...068863` | ⚠️ Unaudited |
+| MasterChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-160376 | `0xe981676633dcf0256aa512f4923a7e8da180c595` | ⚠️ Unaudited |
+| PinkSwapAirdrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-160366 | `0x726d61af7c4a9a2b5dcd6a0a1f676fa582255c54` | ⚠️ Unaudited |
+| PinkswapFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-160360 | `0x4fd09a7086aa26ec4a18f9c5192edbd578590daf` | ⚠️ Unaudited |
+| PinkswapLocker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-160373 | `0xd9a6797bbdab3ddda9722fa124b4aa758836c7ce` | ⚠️ Unaudited |
+| PinkswapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-160357 | `0x319ef69a98c8e8aab36aea561daba0bf3d0fa3ac` | ⚠️ Unaudited |
+| PinkSwapToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-160363 | `0x702b3f41772e321aaccdea91e1fcef682d21125d` | ⚠️ Unaudited |
+| Timelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-160369 | `0xa857941ae810e384185135cf5966abfe5f068863` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

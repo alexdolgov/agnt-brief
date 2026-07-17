@@ -52,28 +52,28 @@ The pinned logic-topography run contains 22 contract row(s) across arbitrum, ava
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- AaveV3Facet (`0x3172c3...362fbd`, chain 1)
-- AccessControlFacet (`0xfdf1c2...eed38c`, chain 1)
-- BridgeFacet (`0xd08cab...cd37bb`, chain 1)
-- ConfigurationFacet (`0x475d69...891441`, chain 1)
-- CurveFacet (`0x00f8ab...08c897`, chain 1)
-- CurveLiquidityGaugeV6Facet (`0x4fc8df...ff3aa1`, chain 1)
-- DiamondCutFacet (`0x0629d6...f38ee7`, chain 1)
-- DiamondLoupeFacet (`0xbfb5bf...34e708`, chain 1)
-- ERC4626Facet (`0xc5c684...a1f1b5`, chain 1)
-- ERC7540Facet (`0x5b49fb...b5633b`, chain 1)
-- LzAdapter (`0xc3268c...297117`, chain 1)
-- MoreLeverageFacet (`0x589ccd...da5fc3`, chain 1)
-- MORELeverageFacet (`0xc04ea0...a6292a`, chain 1)
-- MoreVaultsComposer (`0x8d8be0...cbdfc1`, chain 1)
-- MulticallFacet (`0x4c25db...d998e3`, chain 1)
-- MultiRewardsFacet (`0x65c89a...d6cd0f`, chain 1)
-- OFTAdapterFactory (`0xfa3f78...7ea659`, chain 1)
-- TransparentUpgradeableProxy (`0x6a0b37...553890`, chain 1)
-- TransparentUpgradeableProxy (`0x7bdb8b...56bb0c`, chain 1)
-- TransparentUpgradeableProxy (`0xa7b968...a2041a`, chain 1)
-- UniswapV3Facet (`0x3df592...59b5ad`, chain 1)
-- VaultFacet (`0xe405e2...db8878`, chain 1)
+- AaveV3Facet (`0x3172c30821d61b97ed0c9b21c0fe42ff0b362fbd`, chain 1)
+- AccessControlFacet (`0xfdf1c242e8e9847f2edebab3c0f3be5f85eed38c`, chain 1)
+- BridgeFacet (`0xd08cab25309dfea0a48db8e9ef3d5afa58cd37bb`, chain 1)
+- ConfigurationFacet (`0x475d696b75fd49f48cd1d8a4389c7ad755891441`, chain 1)
+- CurveFacet (`0x00f8abfe17b4c096440a647bb0549f326e08c897`, chain 1)
+- CurveLiquidityGaugeV6Facet (`0x4fc8dfc9a4ace779e78591b17b83ea1988ff3aa1`, chain 1)
+- DiamondCutFacet (`0x0629d67cba46438458e96e7fd7bd46afe6f38ee7`, chain 1)
+- DiamondLoupeFacet (`0xbfb5bf7129d80c582681e5f59aa21ba23834e708`, chain 1)
+- ERC4626Facet (`0xc5c6844fe3a550748caaeaf8592d68386ca1f1b5`, chain 1)
+- ERC7540Facet (`0x5b49fb340ee2a92ac9b5ae9a6920a54911b5633b`, chain 1)
+- LzAdapter (`0xc3268c843a7704cc7c476edb6b38480038297117`, chain 1)
+- MoreLeverageFacet (`0x589ccdaf387e265423c1d2f95cdc903fdfda5fc3`, chain 1)
+- MORELeverageFacet (`0xc04ea0b109bef3815232e9a78a7f56d7e8a6292a`, chain 1)
+- MoreVaultsComposer (`0x8d8be034ecfd018d67f9a1a25e27f99f52cbdfc1`, chain 1)
+- MulticallFacet (`0x4c25db05c999081cdb24adfdd9cd871f70d998e3`, chain 1)
+- MultiRewardsFacet (`0x65c89a8aef485d3da46ed3ee20bf9d59e4d6cd0f`, chain 1)
+- OFTAdapterFactory (`0xfa3f78123da6c25548ced8e2e194483a067ea659`, chain 1)
+- TransparentUpgradeableProxy (`0x6a0b3724af49ce6f14669d07823650ec26553890`, chain 1)
+- TransparentUpgradeableProxy (`0x7bdb8b17604b03125efaed33ca0c55fbf856bb0c`, chain 1)
+- TransparentUpgradeableProxy (`0xa7b968ca75eb0224a396ca5cd482d18d4ca2041a`, chain 1)
+- UniswapV3Facet (`0x3df5923afb843fdc530c144844c994db8e59b5ad`, chain 1)
+- VaultFacet (`0xe405e2fec812bd73548e75c2544cfd176bdb8878`, chain 1)
 
 ## Contract Surface Quality
 
@@ -119,28 +119,28 @@ The pinned logic-topography run contains 22 contract row(s) across arbitrum, ava
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AaveV3Facet | unknown | project_anchor | own_supporting | 0 | ethereum | unit-400443 | `0x3172c3...362fbd` | ⚠️ Unaudited |
-| AccessControlFacet | governance | project_anchor | own_supporting | 0 | ethereum | unit-400459 | `0xfdf1c2...eed38c` | ⚠️ Unaudited |
-| BridgeFacet | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-400456 | `0xd08cab...cd37bb` | ⚠️ Unaudited |
-| ConfigurationFacet | governance | project_anchor | own_supporting | 0 | ethereum | unit-400445 | `0x475d69...891441` | ⚠️ Unaudited |
-| CurveFacet | unknown | project_anchor | own_supporting | 0 | ethereum | unit-400441 | `0x00f8ab...08c897` | ⚠️ Unaudited |
-| CurveLiquidityGaugeV6Facet | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-400447 | `0x4fc8df...ff3aa1` | ⚠️ Unaudited |
-| DiamondCutFacet | unknown | project_anchor | own_supporting | 0 | ethereum | unit-400442 | `0x0629d6...f38ee7` | ⚠️ Unaudited |
-| DiamondLoupeFacet | unknown | project_anchor | own_supporting | 0 | ethereum | unit-400452 | `0xbfb5bf...34e708` | ⚠️ Unaudited |
-| ERC4626Facet | unknown | project_anchor | own_supporting | 0 | ethereum | unit-400455 | `0xc5c684...a1f1b5` | ⚠️ Unaudited |
-| ERC7540Facet | unknown | project_anchor | own_supporting | 0 | ethereum | unit-400449 | `0x5b49fb...b5633b` | ⚠️ Unaudited |
-| LzAdapter | adapter | project_anchor | own_supporting | 0 | ethereum | unit-400454 | `0xc3268c...297117` | ⚠️ Unaudited |
-| MoreLeverageFacet | unknown | project_anchor | own_supporting | 0 | ethereum | unit-400448 | `0x589ccd...da5fc3` | ⚠️ Unaudited |
-| MORELeverageFacet | unknown | project_anchor | own_supporting | 0 | ethereum | unit-400453 | `0xc04ea0...a6292a` | ⚠️ Unaudited |
-| MoreVaultsComposer | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-400451 | `0x8d8be0...cbdfc1` | ⚠️ Unaudited |
-| MulticallFacet | periphery | project_anchor | own_supporting | 0 | ethereum | unit-400446 | `0x4c25db...d998e3` | ⚠️ Unaudited |
-| MultiRewardsFacet | unknown | project_anchor | own_supporting | 0 | ethereum | unit-400450 | `0x65c89a...d6cd0f` | ⚠️ Unaudited |
-| OFTAdapterFactory | adapter | project_anchor | own_supporting | 0 | ethereum | unit-400458 | `0xfa3f78...7ea659` | ⚠️ Unaudited |
-| OracleRegistry | operational_periphery | project_anchor | own_supporting | 1 | ethereum | unit-400462 | `0xa7b968...a2041a` | ⚠️ Unaudited |
-| UniswapV3Facet | unknown | project_anchor | own_supporting | 0 | ethereum | unit-400444 | `0x3df592...59b5ad` | ⚠️ Unaudited |
-| VaultFacet | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-400457 | `0xe405e2...db8878` | ⚠️ Unaudited |
-| VaultsFactory | registry | project_anchor | own_supporting | 1 | ethereum | unit-400461 | `0x7bdb8b...56bb0c` | ⚠️ Unaudited |
-| VaultsRegistry | registry | project_anchor | own_supporting | 1 | ethereum | unit-400460 | `0x6a0b37...553890` | ⚠️ Unaudited |
+| AaveV3Facet | unknown | project_anchor | own_supporting | 0 | ethereum | unit-400443 | `0x3172c30821d61b97ed0c9b21c0fe42ff0b362fbd` | ⚠️ Unaudited |
+| AccessControlFacet | governance | project_anchor | own_supporting | 0 | ethereum | unit-400459 | `0xfdf1c242e8e9847f2edebab3c0f3be5f85eed38c` | ⚠️ Unaudited |
+| BridgeFacet | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-400456 | `0xd08cab25309dfea0a48db8e9ef3d5afa58cd37bb` | ⚠️ Unaudited |
+| ConfigurationFacet | governance | project_anchor | own_supporting | 0 | ethereum | unit-400445 | `0x475d696b75fd49f48cd1d8a4389c7ad755891441` | ⚠️ Unaudited |
+| CurveFacet | unknown | project_anchor | own_supporting | 0 | ethereum | unit-400441 | `0x00f8abfe17b4c096440a647bb0549f326e08c897` | ⚠️ Unaudited |
+| CurveLiquidityGaugeV6Facet | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-400447 | `0x4fc8dfc9a4ace779e78591b17b83ea1988ff3aa1` | ⚠️ Unaudited |
+| DiamondCutFacet | unknown | project_anchor | own_supporting | 0 | ethereum | unit-400442 | `0x0629d67cba46438458e96e7fd7bd46afe6f38ee7` | ⚠️ Unaudited |
+| DiamondLoupeFacet | unknown | project_anchor | own_supporting | 0 | ethereum | unit-400452 | `0xbfb5bf7129d80c582681e5f59aa21ba23834e708` | ⚠️ Unaudited |
+| ERC4626Facet | unknown | project_anchor | own_supporting | 0 | ethereum | unit-400455 | `0xc5c6844fe3a550748caaeaf8592d68386ca1f1b5` | ⚠️ Unaudited |
+| ERC7540Facet | unknown | project_anchor | own_supporting | 0 | ethereum | unit-400449 | `0x5b49fb340ee2a92ac9b5ae9a6920a54911b5633b` | ⚠️ Unaudited |
+| LzAdapter | adapter | project_anchor | own_supporting | 0 | ethereum | unit-400454 | `0xc3268c843a7704cc7c476edb6b38480038297117` | ⚠️ Unaudited |
+| MoreLeverageFacet | unknown | project_anchor | own_supporting | 0 | ethereum | unit-400448 | `0x589ccdaf387e265423c1d2f95cdc903fdfda5fc3` | ⚠️ Unaudited |
+| MORELeverageFacet | unknown | project_anchor | own_supporting | 0 | ethereum | unit-400453 | `0xc04ea0b109bef3815232e9a78a7f56d7e8a6292a` | ⚠️ Unaudited |
+| MoreVaultsComposer | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-400451 | `0x8d8be034ecfd018d67f9a1a25e27f99f52cbdfc1` | ⚠️ Unaudited |
+| MulticallFacet | periphery | project_anchor | own_supporting | 0 | ethereum | unit-400446 | `0x4c25db05c999081cdb24adfdd9cd871f70d998e3` | ⚠️ Unaudited |
+| MultiRewardsFacet | unknown | project_anchor | own_supporting | 0 | ethereum | unit-400450 | `0x65c89a8aef485d3da46ed3ee20bf9d59e4d6cd0f` | ⚠️ Unaudited |
+| OFTAdapterFactory | adapter | project_anchor | own_supporting | 0 | ethereum | unit-400458 | `0xfa3f78123da6c25548ced8e2e194483a067ea659` | ⚠️ Unaudited |
+| OracleRegistry | operational_periphery | project_anchor | own_supporting | 1 | ethereum | unit-400462 | `0xa7b968ca75eb0224a396ca5cd482d18d4ca2041a` | ⚠️ Unaudited |
+| UniswapV3Facet | unknown | project_anchor | own_supporting | 0 | ethereum | unit-400444 | `0x3df5923afb843fdc530c144844c994db8e59b5ad` | ⚠️ Unaudited |
+| VaultFacet | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-400457 | `0xe405e2fec812bd73548e75c2544cfd176bdb8878` | ⚠️ Unaudited |
+| VaultsFactory | registry | project_anchor | own_supporting | 1 | ethereum | unit-400461 | `0x7bdb8b17604b03125efaed33ca0c55fbf856bb0c` | ⚠️ Unaudited |
+| VaultsRegistry | registry | project_anchor | own_supporting | 1 | ethereum | unit-400460 | `0x6a0b3724af49ce6f14669d07823650ec26553890` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -160,9 +160,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| VaultsFactory | registry | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x7bdb8b...56bb0c` | ❓ Unverified |
-| VaultsFactory | registry | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x7bdb8b...56bb0c` | ❓ Unverified |
-| VaultsFactory | registry | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | `0x7bdb8b...56bb0c` | ❓ Unverified |
+| VaultsFactory | registry | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x7bdb8b17604b03125efaed33ca0c55fbf856bb0c` | ❓ Unverified |
+| VaultsFactory | registry | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x7bdb8b17604b03125efaed33ca0c55fbf856bb0c` | ❓ Unverified |
+| VaultsFactory | registry | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | `0x7bdb8b17604b03125efaed33ca0c55fbf856bb0c` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -181,24 +181,24 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0xfdf1c2...eed38c` | AccessControlFacet | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xd08cab...cd37bb` | BridgeFacet | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x475d69...891441` | ConfigurationFacet | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x0629d6...f38ee7` | DiamondCutFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xbfb5bf...34e708` | DiamondLoupeFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xc5c684...a1f1b5` | ERC4626Facet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x5b49fb...b5633b` | ERC7540Facet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xc3268c...297117` | LzAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x589ccd...da5fc3` | MoreLeverageFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xc04ea0...a6292a` | MORELeverageFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x8d8be0...cbdfc1` | MoreVaultsComposer | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x4c25db...d998e3` | MulticallFacet | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x65c89a...d6cd0f` | MultiRewardsFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xfa3f78...7ea659` | OFTAdapterFactory | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xa7b968...a2041a` | OracleRegistry | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xe405e2...db8878` | VaultFacet | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x7bdb8b...56bb0c` | VaultsFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x6a0b37...553890` | VaultsRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xfdf1c242e8e9847f2edebab3c0f3be5f85eed38c` | AccessControlFacet | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xd08cab25309dfea0a48db8e9ef3d5afa58cd37bb` | BridgeFacet | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x475d696b75fd49f48cd1d8a4389c7ad755891441` | ConfigurationFacet | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x0629d67cba46438458e96e7fd7bd46afe6f38ee7` | DiamondCutFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xbfb5bf7129d80c582681e5f59aa21ba23834e708` | DiamondLoupeFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xc5c6844fe3a550748caaeaf8592d68386ca1f1b5` | ERC4626Facet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x5b49fb340ee2a92ac9b5ae9a6920a54911b5633b` | ERC7540Facet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xc3268c843a7704cc7c476edb6b38480038297117` | LzAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x589ccdaf387e265423c1d2f95cdc903fdfda5fc3` | MoreLeverageFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xc04ea0b109bef3815232e9a78a7f56d7e8a6292a` | MORELeverageFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x8d8be034ecfd018d67f9a1a25e27f99f52cbdfc1` | MoreVaultsComposer | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x4c25db05c999081cdb24adfdd9cd871f70d998e3` | MulticallFacet | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x65c89a8aef485d3da46ed3ee20bf9d59e4d6cd0f` | MultiRewardsFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xfa3f78123da6c25548ced8e2e194483a067ea659` | OFTAdapterFactory | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xa7b968ca75eb0224a396ca5cd482d18d4ca2041a` | OracleRegistry | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xe405e2fec812bd73548e75c2544cfd176bdb8878` | VaultFacet | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x7bdb8b17604b03125efaed33ca0c55fbf856bb0c` | VaultsFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x6a0b3724af49ce6f14669d07823650ec26553890` | VaultsRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

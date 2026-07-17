@@ -59,16 +59,16 @@ The protocol comprises 2 functional families. Contracts are linked by 4 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Registry | unknown | ethereum | n/a | [`0x11808d...e30836`](./contracts/ethereum-1/0x11808dd312fcdf6455b2de6ed197981fa9e30836/) | ✅ Audited |
-| RollupChain | unknown | ethereum | n/a | [`0xcf6659...0a1f2e`](./contracts/ethereum-1/0xcf665943b6bc32be29a3e2eaab1afed2880a1f2e/) | ✅ Audited |
-| TransitionDisputer | unknown | ethereum | n/a | [`0x5d3c0f...7e007f`](./contracts/ethereum-1/0x5d3c0f4ca5ee99f8e8f59ff9a5fab04f6a7e007f/) | ✅ Audited |
-| TransitionEvaluator | unknown | ethereum | n/a | [`0x0762d3...381cb5`](./contracts/ethereum-1/0x0762d31185b1675a441008aba3eea22e1b381cb5/) | ✅ Audited |
+| Registry | unknown | ethereum | n/a | [`0x11808dd312fcdf6455b2de6ed197981fa9e30836`](./contracts/ethereum-1/0x11808dd312fcdf6455b2de6ed197981fa9e30836/) | ✅ Audited |
+| RollupChain | unknown | ethereum | n/a | [`0xcf665943b6bc32be29a3e2eaab1afed2880a1f2e`](./contracts/ethereum-1/0xcf665943b6bc32be29a3e2eaab1afed2880a1f2e/) | ✅ Audited |
+| TransitionDisputer | unknown | ethereum | n/a | [`0x5d3c0f4ca5ee99f8e8f59ff9a5fab04f6a7e007f`](./contracts/ethereum-1/0x5d3c0f4ca5ee99f8e8f59ff9a5fab04f6a7e007f/) | ✅ Audited |
+| TransitionEvaluator | unknown | ethereum | n/a | [`0x0762d31185b1675a441008aba3eea22e1b381cb5`](./contracts/ethereum-1/0x0762d31185b1675a441008aba3eea22e1b381cb5/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| StrategyCompoundEthLendingPool | unknown | ethereum | n/a | [`0x61fc4d...8aea8d`](./contracts/ethereum-1/0x61fc4d40d313eb01483f537a6db2b29fb38aea8d/) | ⚠️ Unaudited |
+| StrategyCompoundEthLendingPool | unknown | ethereum | n/a | [`0x61fc4d40d313eb01483f537a6db2b29fb38aea8d`](./contracts/ethereum-1/0x61fc4d40d313eb01483f537a6db2b29fb38aea8d/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -100,7 +100,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x61fc4d...8aea8d`](./contracts/ethereum-1/0x61fc4d40d313eb01483f537a6db2b29fb38aea8d/) | StrategyCompoundEthLendingPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x61fc4d40d313eb01483f537a6db2b29fb38aea8d`](./contracts/ethereum-1/0x61fc4d40d313eb01483f537a6db2b29fb38aea8d/) | StrategyCompoundEthLendingPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

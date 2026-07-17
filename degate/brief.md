@@ -62,7 +62,7 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| DGToken | unknown | ethereum | n/a | [`0x53c839...dedede`](./contracts/ethereum-1/0x53c8395465a84955c95159814461466053dedede/) | ⚠️ Unaudited |
+| DGToken | unknown | ethereum | n/a | [`0x53c8395465a84955c95159814461466053dedede`](./contracts/ethereum-1/0x53c8395465a84955c95159814461466053dedede/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -82,7 +82,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0xe336ac...bed281` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe336ac63cf871a66e7fbe74d1dc5c6774fbed281` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -96,7 +96,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x53c839...dedede`](./contracts/ethereum-1/0x53c8395465a84955c95159814461466053dedede/) | DGToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x53c8395465a84955c95159814461466053dedede`](./contracts/ethereum-1/0x53c8395465a84955c95159814461466053dedede/) | DGToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

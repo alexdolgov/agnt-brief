@@ -61,14 +61,14 @@ The protocol comprises 2 functional families. Contracts are linked by 5 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AccountantWithRateProviders | unknown | ethereum | n/a | [`0x10f399...516efe`](./contracts/ethereum-1/0x10f3996904f1fa09db48e5d46aadd6d9fd516efe/) | ⚠️ Unaudited |
-| ArcticArchitectureLens | unknown | ethereum | n/a | [`0x074f54...dd80d9`](./contracts/ethereum-1/0x074f543e7daa7c67f77bfd8c41c79127c4dd80d9/) | ⚠️ Unaudited |
-| BoringSolver | unknown | ethereum | n/a | [`0x0546bb...3de972`](./contracts/ethereum-1/0x0546bb4676936dc93f7eb5ca7ffd2e33a13de972/) | ⚠️ Unaudited |
-| BoringVault | unknown | ethereum | n/a | [`0x1e0d15...d7c9df`](./contracts/ethereum-1/0x1e0d158ce986abb26b35da11f876268c60d7c9df/) | ⚠️ Unaudited |
-| BridgePaymaster | unknown | ethereum | n/a | [`0x038d86...7070cd`](./contracts/ethereum-1/0x038d86dbd493284a7e1b37a19dad52a35a7070cd/) | ⚠️ Unaudited |
-| FuseRolesAuthority | unknown | ethereum | n/a | [`0x110924...0718cf`](./contracts/ethereum-1/0x110924f5b072679147785e9211612d43490718cf/) | ⚠️ Unaudited |
-| PendleDecoderAndSanitizer | unknown | ethereum | n/a | [`0x197927...bbc9ca`](./contracts/ethereum-1/0x197927610dabd7b7f5f09c4b4f14f78644bbc9ca/) | ⚠️ Unaudited |
-| SolidDecoderAndSanitizer | unknown | ethereum | n/a | [`0x0a0910...9a6f93`](./contracts/ethereum-1/0x0a0910164937be95479a6349d1cd13f7a89a6f93/) | ⚠️ Unaudited |
+| AccountantWithRateProviders | unknown | ethereum | n/a | [`0x10f3996904f1fa09db48e5d46aadd6d9fd516efe`](./contracts/ethereum-1/0x10f3996904f1fa09db48e5d46aadd6d9fd516efe/) | ⚠️ Unaudited |
+| ArcticArchitectureLens | unknown | ethereum | n/a | [`0x074f543e7daa7c67f77bfd8c41c79127c4dd80d9`](./contracts/ethereum-1/0x074f543e7daa7c67f77bfd8c41c79127c4dd80d9/) | ⚠️ Unaudited |
+| BoringSolver | unknown | ethereum | n/a | [`0x0546bb4676936dc93f7eb5ca7ffd2e33a13de972`](./contracts/ethereum-1/0x0546bb4676936dc93f7eb5ca7ffd2e33a13de972/) | ⚠️ Unaudited |
+| BoringVault | unknown | ethereum | n/a | [`0x1e0d158ce986abb26b35da11f876268c60d7c9df`](./contracts/ethereum-1/0x1e0d158ce986abb26b35da11f876268c60d7c9df/) | ⚠️ Unaudited |
+| BridgePaymaster | unknown | ethereum | n/a | [`0x038d86dbd493284a7e1b37a19dad52a35a7070cd`](./contracts/ethereum-1/0x038d86dbd493284a7e1b37a19dad52a35a7070cd/) | ⚠️ Unaudited |
+| FuseRolesAuthority | unknown | ethereum | n/a | [`0x110924f5b072679147785e9211612d43490718cf`](./contracts/ethereum-1/0x110924f5b072679147785e9211612d43490718cf/) | ⚠️ Unaudited |
+| PendleDecoderAndSanitizer | unknown | ethereum | n/a | [`0x197927610dabd7b7f5f09c4b4f14f78644bbc9ca`](./contracts/ethereum-1/0x197927610dabd7b7f5f09c4b4f14f78644bbc9ca/) | ⚠️ Unaudited |
+| SolidDecoderAndSanitizer | unknown | ethereum | n/a | [`0x0a0910164937be95479a6349d1cd13f7a89a6f93`](./contracts/ethereum-1/0x0a0910164937be95479a6349d1cd13f7a89a6f93/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -99,13 +99,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x10f399...516efe`](./contracts/ethereum-1/0x10f3996904f1fa09db48e5d46aadd6d9fd516efe/) | AccountantWithRateProviders | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x074f54...dd80d9`](./contracts/ethereum-1/0x074f543e7daa7c67f77bfd8c41c79127c4dd80d9/) | ArcticArchitectureLens | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0546bb...3de972`](./contracts/ethereum-1/0x0546bb4676936dc93f7eb5ca7ffd2e33a13de972/) | BoringSolver | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1e0d15...d7c9df`](./contracts/ethereum-1/0x1e0d158ce986abb26b35da11f876268c60d7c9df/) | BoringVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x038d86...7070cd`](./contracts/ethereum-1/0x038d86dbd493284a7e1b37a19dad52a35a7070cd/) | BridgePaymaster | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x110924...0718cf`](./contracts/ethereum-1/0x110924f5b072679147785e9211612d43490718cf/) | FuseRolesAuthority | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0a0910...9a6f93`](./contracts/ethereum-1/0x0a0910164937be95479a6349d1cd13f7a89a6f93/) | SolidDecoderAndSanitizer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x10f3996904f1fa09db48e5d46aadd6d9fd516efe`](./contracts/ethereum-1/0x10f3996904f1fa09db48e5d46aadd6d9fd516efe/) | AccountantWithRateProviders | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x074f543e7daa7c67f77bfd8c41c79127c4dd80d9`](./contracts/ethereum-1/0x074f543e7daa7c67f77bfd8c41c79127c4dd80d9/) | ArcticArchitectureLens | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0546bb4676936dc93f7eb5ca7ffd2e33a13de972`](./contracts/ethereum-1/0x0546bb4676936dc93f7eb5ca7ffd2e33a13de972/) | BoringSolver | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1e0d158ce986abb26b35da11f876268c60d7c9df`](./contracts/ethereum-1/0x1e0d158ce986abb26b35da11f876268c60d7c9df/) | BoringVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x038d86dbd493284a7e1b37a19dad52a35a7070cd`](./contracts/ethereum-1/0x038d86dbd493284a7e1b37a19dad52a35a7070cd/) | BridgePaymaster | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x110924f5b072679147785e9211612d43490718cf`](./contracts/ethereum-1/0x110924f5b072679147785e9211612d43490718cf/) | FuseRolesAuthority | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0a0910164937be95479a6349d1cd13f7a89a6f93`](./contracts/ethereum-1/0x0a0910164937be95479a6349d1cd13f7a89a6f93/) | SolidDecoderAndSanitizer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -89,7 +89,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Tranche | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | unit-121821 | `0x27e8c8...3b54c8` | ⚠️ Unaudited |
+| Tranche | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | unit-121821 | `0x27e8c820d05aea8824b1ac35116f63f9833b54c8` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

@@ -61,11 +61,11 @@ The protocol comprises 4 functional families. Its contracts share 12 common proj
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Dipper | unknown | ethereum | n/a | [`0x786448...eb2368`](./contracts/ethereum-1/0x786448439d9401e0a8427acf7ca66a5114eb2368/) | ⚠️ Unaudited |
-| LpBar | unknown | ethereum | n/a | [`0xc8b5b7...4635bd`](./contracts/ethereum-1/0xc8b5b728165f5e59690ba486e4086027f34635bd/) | ⚠️ Unaudited |
-| SashimiPlate | unknown | ethereum | n/a | 4 deployments: ethereum [`0x422133...541ca6`](./contracts/ethereum-1/0x4221330f24b26f20457f7c7c925cfc46b1541ca6/); ethereum `0x56bb94...fd6168`; ethereum `0x8e95bc...778648`; ethereum `0xc5d00a...60de7f` | ⚠️ Unaudited |
-| SashimiToken | token | ethereum | n/a | [`0xc28e27...b464c2`](./contracts/ethereum-1/0xc28e27870558cf22add83540d2126da2e4b464c2/) | ⚠️ Unaudited |
-| UniswapV2Router02 | adapter | ethereum | n/a | [`0xe4fe6a...db9410`](./contracts/ethereum-1/0xe4fe6a45f354e845f954cddee6084603cedb9410/) | ⚠️ Unaudited |
+| Dipper | unknown | ethereum | n/a | [`0x786448439d9401e0a8427acf7ca66a5114eb2368`](./contracts/ethereum-1/0x786448439d9401e0a8427acf7ca66a5114eb2368/) | ⚠️ Unaudited |
+| LpBar | unknown | ethereum | n/a | [`0xc8b5b728165f5e59690ba486e4086027f34635bd`](./contracts/ethereum-1/0xc8b5b728165f5e59690ba486e4086027f34635bd/) | ⚠️ Unaudited |
+| SashimiPlate | unknown | ethereum | n/a | 4 deployments: ethereum [`0x4221330f24b26f20457f7c7c925cfc46b1541ca6`](./contracts/ethereum-1/0x4221330f24b26f20457f7c7c925cfc46b1541ca6/); ethereum `0x56bb940d92ae9a45ebdc77e94c28b960cffd6168`; ethereum `0x8e95bc97b0c1b88aa8708206c85c06299f778648`; ethereum `0xc5d00a4e730fc2e1c77764a74e5f1308a460de7f` | ⚠️ Unaudited |
+| SashimiToken | token | ethereum | n/a | [`0xc28e27870558cf22add83540d2126da2e4b464c2`](./contracts/ethereum-1/0xc28e27870558cf22add83540d2126da2e4b464c2/) | ⚠️ Unaudited |
+| UniswapV2Router02 | adapter | ethereum | n/a | [`0xe4fe6a45f354e845f954cddee6084603cedb9410`](./contracts/ethereum-1/0xe4fe6a45f354e845f954cddee6084603cedb9410/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -85,15 +85,15 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x5b8c75...e1a302` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x7578fd...56de11` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x7a7707...0af831` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xbacbd1...66c3fe` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc34146...5a65c2` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xda26ef...f10b0d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xf1b43f...ae87cd` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xf88997...18ac66` | ❓ Unverified |
-| UnnamedContract | unknown | heco | n/a | 18 deployments: heco `0x06068d...47fd31`; heco `0x377dca...15a9a1`; heco `0x389eec...796e1b`; heco `0x3f3aaa...e39a4e`; heco `0x611e93...3272df`; heco `0x6c606f...b44d5a`; heco `0x6cb9d7...5c00fa`; heco `0x6ccbc3...956655`; heco `0x818bbc...890632`; heco `0x891daa...1721e2`; heco `0x937a48...5f076f`; heco `0xae399a...a39431`; heco `0xc28e27...b464c2`; heco `0xc2d36a...e67736`; heco `0xc597f8...ca5d82`; heco `0xe2a246...7f25ba`; heco `0xe9c958...11903f`; heco `0xeaac96...737d8a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x5b8c75d6f91663c515bb12e3cf7c29ade0e1a302` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x7578fd876752a5e4999a16fb80cfe30c1056de11` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x7a77073c1191f2d2fd31a71c758d44f3de0af831` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xbacbd121f37557e5ea1d0c4bb67756867866c3fe` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc34146bb5e208f711fa99ba9d1d2c90b935a65c2` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xda26efdd87fa47eb24e0dbda145d7ba144f10b0d` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf1b43f4e14650ac8c4bb009d9b56eb77c1ae87cd` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf88997729a66aee2a5a3d34358b12a731118ac66` | ❓ Unverified |
+| UnnamedContract | unknown | heco | n/a | 18 deployments: heco `0x06068d90e0cbf9b7ccfd21efddb9bceb4c47fd31`; heco `0x377dca38ff279a73a9075f25d36d00b98515a9a1`; heco `0x389eec1b8795853770874b76b912ec18de796e1b`; heco `0x3f3aaaa941ad756fc49a4b3241a87a7c04e39a4e`; heco `0x611e93a7718a215bfda3c63f7175d764793272df`; heco `0x6c606fb47d99d1e66f9b599f8c5602cd4eb44d5a`; heco `0x6cb9d7ecf84b0d3e7704ed91046e16f9d45c00fa`; heco `0x6ccbc3a5ae94e8a75f9571438a78f3e3aa956655`; heco `0x818bbc9b9d37685f9f4db032d46b52a70d890632`; heco `0x891daabf6de7a648c9665928e1097b808c1721e2`; heco `0x937a48287fdc4b503d608cb988ac35eee75f076f`; heco `0xae399aea42867fec2cd4a04963a7f0e247a39431`; heco `0xc28e27870558cf22add83540d2126da2e4b464c2`; heco `0xc2d36a8c0b1235ddecac2ed519139e9177e67736`; heco `0xc597f86424eeb6599ea40f999dbb739e3aca5d82`; heco `0xe2a246c36fa86eee290acef79a8dc66b6b7f25ba`; heco `0xe9c95876f144bbdf5dc33d1a35c26cab0611903f`; heco `0xeaac96f59e40d38bd970b37879a79a1d28737d8a` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -107,10 +107,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x786448...eb2368`](./contracts/ethereum-1/0x786448439d9401e0a8427acf7ca66a5114eb2368/) | Dipper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc8b5b7...4635bd`](./contracts/ethereum-1/0xc8b5b728165f5e59690ba486e4086027f34635bd/) | LpBar | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x422133...541ca6`](./contracts/ethereum-1/0x4221330f24b26f20457f7c7c925cfc46b1541ca6/) | SashimiPlate | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc28e27...b464c2`](./contracts/ethereum-1/0xc28e27870558cf22add83540d2126da2e4b464c2/) | SashimiToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x786448439d9401e0a8427acf7ca66a5114eb2368`](./contracts/ethereum-1/0x786448439d9401e0a8427acf7ca66a5114eb2368/) | Dipper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc8b5b728165f5e59690ba486e4086027f34635bd`](./contracts/ethereum-1/0xc8b5b728165f5e59690ba486e4086027f34635bd/) | LpBar | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4221330f24b26f20457f7c7c925cfc46b1541ca6`](./contracts/ethereum-1/0x4221330f24b26f20457f7c7c925cfc46b1541ca6/) | SashimiPlate | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc28e27870558cf22add83540d2126da2e4b464c2`](./contracts/ethereum-1/0xc28e27870558cf22add83540d2126da2e4b464c2/) | SashimiToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

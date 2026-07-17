@@ -60,7 +60,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Factory | registry | avalanche | n/a | [`0xda66a7...7688c1`](./contracts/avalanche-43114/0xda66a7584da7210fd26726efb12585734f7688c1/) | ✅ Audited |
+| Factory | registry | avalanche | n/a | [`0xda66a7584da7210fd26726efb12585734f7688c1`](./contracts/avalanche-43114/0xda66a7584da7210fd26726efb12585734f7688c1/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 

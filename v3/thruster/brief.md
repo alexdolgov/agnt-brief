@@ -52,18 +52,18 @@ The pinned logic-topography run contains 16 contract row(s) across blast. Struct
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- FeeOnTransferDetector (`0xeae1b3...d09a52`, chain 81457)
-- NFTDescriptor (`0xe3cca3...083a8c`, chain 81457)
-- NonfungiblePositionManager (`0x434575...e227f9`, chain 81457)
-- QuoterV2 (`0x3b299f...a685be`, chain 81457)
-- SwapRouter (`0x337827...0c0555`, chain 81457)
-- ThrusterFactory (`0x378368...b93fc4`, chain 81457)
-- ThrusterFactory (`0xb4a7d9...aafa13`, chain 81457)
-- ThrusterMulticall (`0x2024c5...f834c5`, chain 81457)
-- ThrusterPoolDeployer (`0xa08ae3...405aab`, chain 81457)
-- ThrusterPoolFactory (`0x71b08f...016127`, chain 81457)
-- ThrusterRouter (`0x44889b...fb2b4e`, chain 81457)
-- ThrusterRouter (`0x98994a...1650f6`, chain 81457)
+- FeeOnTransferDetector (`0xeae1b3489ebf7bc8a621f440c59099a141d09a52`, chain 81457)
+- NFTDescriptor (`0xe3cca3a48b907d0e26135025eaeea6431c083a8c`, chain 81457)
+- NonfungiblePositionManager (`0x434575eaea081b735c985fa9bf63cd7b87e227f9`, chain 81457)
+- QuoterV2 (`0x3b299f65b47c0bfaeff715bc73077ba7a0a685be`, chain 81457)
+- SwapRouter (`0x337827814155ecbf24d20231fca4444f530c0555`, chain 81457)
+- ThrusterFactory (`0x37836821a2c03c171fb1a595767f4a16e2b93fc4`, chain 81457)
+- ThrusterFactory (`0xb4a7d971d0adea1c73198c97d7ab3f9ce4aafa13`, chain 81457)
+- ThrusterMulticall (`0x2024c59ee713db918c9ba0cb84c5e2c6c6f834c5`, chain 81457)
+- ThrusterPoolDeployer (`0xa08ae3d3f4da51c22d3c041e468bdf4c61405aab`, chain 81457)
+- ThrusterPoolFactory (`0x71b08f13b3c3af35aadeb3949afeb1ded1016127`, chain 81457)
+- ThrusterRouter (`0x44889b52b71e60de6ed7de82e2939fcc52fb2b4e`, chain 81457)
+- ThrusterRouter (`0x98994a9a7a2570367554589189dc9772241650f6`, chain 81457)
 
 ## Contract Surface Quality
 
@@ -109,45 +109,45 @@ The pinned logic-topography run contains 16 contract row(s) across blast. Struct
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| NonfungiblePositionManager | governance | project_anchor | own_supporting | 1 | blast | unit-394089 | `0x434575...e227f9` | ✅ Audited |
-| ThrusterPoolDeployer | unknown | project_anchor | own_supporting | 0 | blast | unit-394081 | `0xa08ae3...405aab` | ✅ Audited |
-| ThrusterPoolFactory | registry | project_anchor | own_supporting | 0 | blast | unit-394077 | `0x71b08f...016127` | ✅ Audited |
+| NonfungiblePositionManager | governance | project_anchor | own_supporting | 1 | blast | unit-394089 | `0x434575eaea081b735c985fa9bf63cd7b87e227f9` | ✅ Audited |
+| ThrusterPoolDeployer | unknown | project_anchor | own_supporting | 0 | blast | unit-394081 | `0xa08ae3d3f4da51c22d3c041e468bdf4c61405aab` | ✅ Audited |
+| ThrusterPoolFactory | registry | project_anchor | own_supporting | 0 | blast | unit-394077 | `0x71b08f13b3c3af35aadeb3949afeb1ded1016127` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (31)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BatchDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x0561fc...1056ab` | ⚠️ Unaudited |
-| Boost Delegation V2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x4f0ad2...c09d6f` | ⚠️ Unaudited |
-| Curve Fee Distribution | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xaafa3d...13c65c` | ⚠️ Unaudited |
-| FeeOnTransferDetector | unknown | project_anchor | own_supporting | 0 | blast | unit-394082 | `0xa9eaac...3475ab` | ⚠️ Unaudited |
-| FeeOnTransferDetector | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xc7867b...42ac99` | ⚠️ Unaudited |
-| FeeOnTransferDetector | unknown | project_anchor | own_supporting | 0 | blast | unit-394086 | `0xeae1b3...d09a52` | ⚠️ Unaudited |
-| Gauge Controller | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xd40fb8...db2756` | ⚠️ Unaudited |
-| Liquidity Gauge v5 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xb3c097...3d917d` | ⚠️ Unaudited |
-| LiquidityGaugeFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xce9537...c4cdf8` | ⚠️ Unaudited |
-| MerklGauge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x9ef366...a54981` | ⚠️ Unaudited |
-| MerklGaugeConfig | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x8e4cff...8336bb` | ⚠️ Unaudited |
-| MerklGaugeFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x85c7e8...51e2af` | ⚠️ Unaudited |
-| NFTDescriptor | unknown | project_anchor | own_supporting | 0 | blast | unit-394085 | `0xe3cca3...083a8c` | ⚠️ Unaudited |
-| Pump | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x216a5a...b5630a` | ⚠️ Unaudited |
-| PumpDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x12dc5d...ebd991` | ⚠️ Unaudited |
-| QuoterV2 | unknown | project_anchor | own_supporting | 0 | blast | unit-394074 | `0x3b299f...a685be` | ⚠️ Unaudited |
-| SmartWalletChecker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xe95499...1c434d` | ⚠️ Unaudited |
-| SwapRouter | adapter | project_anchor | own_supporting | 1 | blast | unit-394088 | `0x337827...0c0555` | ⚠️ Unaudited |
-| Thrust | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xe36072...2c596e` | ⚠️ Unaudited |
-| ThrusterFactory | registry | project_anchor | own_supporting | 0 | blast | unit-394073 | `0x378368...b93fc4` | ⚠️ Unaudited |
-| ThrusterFactory | registry | project_anchor | own_supporting | 0 | blast | unit-394083 | `0xb4a7d9...aafa13` | ⚠️ Unaudited |
-| ThrusterMulticall | unknown | project_anchor | own_supporting | 0 | blast | unit-394072 | `0x2024c5...f834c5` | ⚠️ Unaudited |
-| ThrusterPair | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | blast | unit-394071 | `0x12c69b...3fc7df` | ⚠️ Unaudited |
-| ThrusterPair | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | blast | unit-394084 | `0xd2f1a2...dbf477` | ⚠️ Unaudited |
-| ThrusterRouter | adapter | project_anchor | own_supporting | 0 | blast | unit-394076 | `0x44889b...fb2b4e` | ⚠️ Unaudited |
-| ThrusterRouter | adapter | project_anchor | own_supporting | 0 | blast | unit-394080 | `0x98994a...1650f6` | ⚠️ Unaudited |
-| TickLens | unknown | project_anchor | own_supporting | 0 | blast | unit-394078 | `0x796b39...e02ef6` | ⚠️ Unaudited |
-| Token Minter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x90a4b9...641b59` | ⚠️ Unaudited |
-| TokenAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xc9b92b...8a5572` | ⚠️ Unaudited |
-| TokenDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x29903f...a7f05e` | ⚠️ Unaudited |
-| Voting Escrow | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xc6de1f...2386a4` | ⚠️ Unaudited |
+| BatchDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x0561fc4e3c728afc9a0407fa109a2bd2981056ab` | ⚠️ Unaudited |
+| Boost Delegation V2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x4f0ad2d05ce79bf9834b02251dd15d085dc09d6f` | ⚠️ Unaudited |
+| Curve Fee Distribution | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xaafa3db42ea9c114c36a2a033e04c8bc0813c65c` | ⚠️ Unaudited |
+| FeeOnTransferDetector | unknown | project_anchor | own_supporting | 0 | blast | unit-394082 | `0xa9eaaccae316982c04b8068fb08787de673475ab` | ⚠️ Unaudited |
+| FeeOnTransferDetector | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xc7867b9cb8c339bdb51204b4428453536a42ac99` | ⚠️ Unaudited |
+| FeeOnTransferDetector | unknown | project_anchor | own_supporting | 0 | blast | unit-394086 | `0xeae1b3489ebf7bc8a621f440c59099a141d09a52` | ⚠️ Unaudited |
+| Gauge Controller | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xd40fb88b94d20d5d60a94e00492214061bdb2756` | ⚠️ Unaudited |
+| Liquidity Gauge v5 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xb3c0971f3482d71f87c8d8f3adc5ee10b73d917d` | ⚠️ Unaudited |
+| LiquidityGaugeFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xce95373c250f2770f8a7857a8f68e8fd6cc4cdf8` | ⚠️ Unaudited |
+| MerklGauge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x9ef366fb5a1589a1f4f2346cf630424985a54981` | ⚠️ Unaudited |
+| MerklGaugeConfig | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x8e4cffbe1a8425216e54301dbb90ca2bb08336bb` | ⚠️ Unaudited |
+| MerklGaugeFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x85c7e8b618b9cad0f0c40a0b40a4d31d8d51e2af` | ⚠️ Unaudited |
+| NFTDescriptor | unknown | project_anchor | own_supporting | 0 | blast | unit-394085 | `0xe3cca3a48b907d0e26135025eaeea6431c083a8c` | ⚠️ Unaudited |
+| Pump | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x216a5a1135a9dab49fa9ad865e0f22fe22b5630a` | ⚠️ Unaudited |
+| PumpDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x12dc5db96df71a6623b23f904fe83baf60ebd991` | ⚠️ Unaudited |
+| QuoterV2 | unknown | project_anchor | own_supporting | 0 | blast | unit-394074 | `0x3b299f65b47c0bfaeff715bc73077ba7a0a685be` | ⚠️ Unaudited |
+| SmartWalletChecker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xe95499477def43fe8848f77775d176851d1c434d` | ⚠️ Unaudited |
+| SwapRouter | adapter | project_anchor | own_supporting | 1 | blast | unit-394088 | `0x337827814155ecbf24d20231fca4444f530c0555` | ⚠️ Unaudited |
+| Thrust | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xe36072dd051ce26261bf50cd966311cab62c596e` | ⚠️ Unaudited |
+| ThrusterFactory | registry | project_anchor | own_supporting | 0 | blast | unit-394073 | `0x37836821a2c03c171fb1a595767f4a16e2b93fc4` | ⚠️ Unaudited |
+| ThrusterFactory | registry | project_anchor | own_supporting | 0 | blast | unit-394083 | `0xb4a7d971d0adea1c73198c97d7ab3f9ce4aafa13` | ⚠️ Unaudited |
+| ThrusterMulticall | unknown | project_anchor | own_supporting | 0 | blast | unit-394072 | `0x2024c59ee713db918c9ba0cb84c5e2c6c6f834c5` | ⚠️ Unaudited |
+| ThrusterPair | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | blast | unit-394071 | `0x12c69bfa3fb3cba75a1defa6e976b87e233fc7df` | ⚠️ Unaudited |
+| ThrusterPair | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | blast | unit-394084 | `0xd2f1a205959605550471762e7dea1a034edbf477` | ⚠️ Unaudited |
+| ThrusterRouter | adapter | project_anchor | own_supporting | 0 | blast | unit-394076 | `0x44889b52b71e60de6ed7de82e2939fcc52fb2b4e` | ⚠️ Unaudited |
+| ThrusterRouter | adapter | project_anchor | own_supporting | 0 | blast | unit-394080 | `0x98994a9a7a2570367554589189dc9772241650f6` | ⚠️ Unaudited |
+| TickLens | unknown | project_anchor | own_supporting | 0 | blast | unit-394078 | `0x796b39328b92472b2bd950aeb20d950611e02ef6` | ⚠️ Unaudited |
+| Token Minter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x90a4b92dbeabfca4e1a57dcc493d88610d641b59` | ⚠️ Unaudited |
+| TokenAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xc9b92bc5b0bf35feb5bb8df045edfca4858a5572` | ⚠️ Unaudited |
+| TokenDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x29903f1e60aea99ac4319e6e7923e0b4bfa7f05e` | ⚠️ Unaudited |
+| Voting Escrow | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xc6de1f30415352941f7ce784a67b2df1552386a4` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -167,16 +167,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| NonfungibleTokenPositionDescriptor | unknown | project_anchor | own_supporting | 0 | blast | unit-394079 | `0x985924...735e4a` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x18db7b...428397` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x32cad2...a5b412` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | blast | unit-394075 | `0x414991...091711` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x44a2f2...7e968a` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x609fdd...ef3358` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xc4af38...72ba44` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xd3aad2...22b6d7` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xe79513...11fd87` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | blast | unit-394087 | `0xf00da1...906537` | ❓ Unverified |
+| NonfungibleTokenPositionDescriptor | unknown | project_anchor | own_supporting | 0 | blast | unit-394079 | `0x9859246073f08d1644c496c19be7aa9c02735e4a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x18db7bd01ff9a30bdbdf3de98c41e2a54a428397` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x32cad270abfa47a0b9f11da15641c6cb82a5b412` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | blast | unit-394075 | `0x414991b742fbcbe3ef00d94ff9f9a63729091711` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x44a2f2303933e71e5fa779ce463c7d71607e968a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x609fddd3fa63257c25ba0ac284d76c166bef3358` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xc4af384fa1ff36a49c55549811e1b2dc1f72ba44` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xd3aad230f86e8827b468ea811a1d49644522b6d7` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xe79513f49f029f6cf1301c16913c4f50c011fd87` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | blast | unit-394087 | `0xf00da13d2960cf113edcef6e3f30d92e52906537` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -221,28 +221,28 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
 | code4rena.com/reports/2024-02-thruster | ThrusterTreasure | unmatched — not counted | — | mentioned in scope and findings | no |
-| code4rena.com/reports/2024-02-thruster | ThrusterPoolDeployer | own contract | ThrusterPoolDeployer (selected) `0xa08ae3...405aab` — deployed 2024-02-28 16:31:05+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| code4rena.com/reports/2024-02-thruster | ThrusterFactory | ambiguous — not counted | ThrusterFactory (alternative) `0xb4a7d9...aafa13` — deployed 2024-02-28 15:40:27+03 — liveness: live (code_present_context)<br>ThrusterFactory (alternative) `0x378368...b93fc4` — deployed 2024-02-28 15:53:31+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| code4rena.com/reports/2024-02-thruster | ThrusterPoolDeployer | own contract | ThrusterPoolDeployer (selected) `0xa08ae3d3f4da51c22d3c041e468bdf4c61405aab` — deployed 2024-02-28 16:31:05+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| code4rena.com/reports/2024-02-thruster | ThrusterFactory | ambiguous — not counted | ThrusterFactory (alternative) `0xb4a7d971d0adea1c73198c97d7ab3f9ce4aafa13` — deployed 2024-02-28 15:40:27+03 — liveness: live (code_present_context)<br>ThrusterFactory (alternative) `0x37836821a2c03c171fb1a595767f4a16e2b93fc4` — deployed 2024-02-28 15:53:31+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | code4rena.com/reports/2024-02-thruster | ThrusterPair | unmatched — not counted | — | mentioned in scope and findings | no |
 | code4rena.com/reports/2024-02-thruster | ThrusterPool | unmatched — not counted | — | mentioned in scope and findings | no |
 | code4rena.com/reports/2024-02-thruster | ThrusterYield | unmatched — not counted | — | mentioned in scope and findings | no |
-| code4rena.com/reports/2024-02-thruster | NonfungiblePositionManager | own proxy deployment | NonfungiblePositionManager (proxy) (selected) `0x434575...e227f9` — deployed 2024-02-28 16:31:51+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| code4rena.com/reports/2024-02-thruster | NonfungiblePositionManager | own proxy deployment | NonfungiblePositionManager (proxy) (selected) `0x434575eaea081b735c985fa9bf63cd7b87e227f9` — deployed 2024-02-28 16:31:51+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | code4rena.com/reports/2024-02-thruster | IThrusterERC20 | unmatched — not counted | — | mentioned in findings | no |
 | code4rena.com/reports/2024-02-thruster | IThrusterPair | unmatched — not counted | — | mentioned in findings | no |
-| 4naly3er-report-thruster-clmm.md | NonfungiblePositionManager | own proxy deployment | NonfungiblePositionManager (proxy) (selected) `0x434575...e227f9` — deployed 2024-02-28 16:31:51+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 4naly3er-report-thruster-clmm.md | NonfungiblePositionManager | own proxy deployment | NonfungiblePositionManager (proxy) (selected) `0x434575eaea081b735c985fa9bf63cd7b87e227f9` — deployed 2024-02-28 16:31:51+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 4naly3er-report-thruster-clmm.md | ThrusterPool | unmatched — not counted | — | listed in scope via file references in findings | no |
-| 4naly3er-report-thruster-clmm.md | ThrusterPoolDeployer | own contract | ThrusterPoolDeployer (selected) `0xa08ae3...405aab` — deployed 2024-02-28 16:31:05+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 4naly3er-report-thruster-clmm.md | ThrusterPoolFactory | own contract | ThrusterPoolFactory (selected) `0x71b08f...016127` — deployed 2024-02-28 16:30:57+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 4naly3er-report-thruster-clmm.md | ThrusterPoolDeployer | own contract | ThrusterPoolDeployer (selected) `0xa08ae3d3f4da51c22d3c041e468bdf4c61405aab` — deployed 2024-02-28 16:31:05+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 4naly3er-report-thruster-clmm.md | ThrusterPoolFactory | own contract | ThrusterPoolFactory (selected) `0x71b08f13b3c3af35aadeb3949afeb1ded1016127` — deployed 2024-02-28 16:30:57+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 4naly3er-report-thruster-clmm.md | PoolInitializer | unmatched — not counted | — | listed in scope via file references in findings | no |
 | 4naly3er-report-thruster-clmm.md | PoolAddress | unmatched — not counted | — | listed in scope via file references in findings | no |
 | 4naly3er-report-thruster-treasure.md | ThrusterTreasure | unmatched — not counted | — | listed in scope | no |
 | report.md | ThrusterTreasure | unmatched — not counted | — | listed in scope and findings | no |
-| report.md | ThrusterPoolDeployer | own contract | ThrusterPoolDeployer (selected) `0xa08ae3...405aab` — deployed 2024-02-28 16:31:05+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| report.md | ThrusterFactory | ambiguous — not counted | ThrusterFactory (alternative) `0xb4a7d9...aafa13` — deployed 2024-02-28 15:40:27+03 — liveness: live (code_present_context)<br>ThrusterFactory (alternative) `0x378368...b93fc4` — deployed 2024-02-28 15:53:31+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| report.md | ThrusterPoolDeployer | own contract | ThrusterPoolDeployer (selected) `0xa08ae3d3f4da51c22d3c041e468bdf4c61405aab` — deployed 2024-02-28 16:31:05+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| report.md | ThrusterFactory | ambiguous — not counted | ThrusterFactory (alternative) `0xb4a7d971d0adea1c73198c97d7ab3f9ce4aafa13` — deployed 2024-02-28 15:40:27+03 — liveness: live (code_present_context)<br>ThrusterFactory (alternative) `0x37836821a2c03c171fb1a595767f4a16e2b93fc4` — deployed 2024-02-28 15:53:31+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | report.md | ThrusterPair | unmatched — not counted | — | findings and low issues | no |
 | report.md | ThrusterYield | unmatched — not counted | — | low issues and analysis | no |
 | report.md | ThrusterPool | unmatched — not counted | — | low issues and gas optimizations | no |
-| report.md | NonfungiblePositionManager | own proxy deployment | NonfungiblePositionManager (proxy) (selected) `0x434575...e227f9` — deployed 2024-02-28 16:31:51+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| report.md | NonfungiblePositionManager | own proxy deployment | NonfungiblePositionManager (proxy) (selected) `0x434575eaea081b735c985fa9bf63cd7b87e227f9` — deployed 2024-02-28 16:31:51+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | report.md | IThrusterPair | unmatched — not counted | — | low issue L-02 | no |
 | report.md | IThrusterERC20 | unmatched — not counted | — | low issue L-02 | no |
 | EV_om-Q.md | ThrusterTreasure | unmatched — not counted | — | mentioned in L-01 context | no |
@@ -250,7 +250,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | EV_om-Q.md | ThrusterYield | unmatched — not counted | — | mentioned in L-02 context | no |
 | oakcobalt-Analysis.md | ThrusterPair | unmatched — not counted | — | mentioned in scope as pool contract | no |
 | oakcobalt-Analysis.md | ThrusterPool | unmatched — not counted | — | mentioned in scope as pool contract | no |
-| oakcobalt-Analysis.md | ThrusterFactory | ambiguous — not counted | ThrusterFactory (alternative) `0xb4a7d9...aafa13` — deployed 2024-02-28 15:40:27+03 — liveness: live (code_present_context)<br>ThrusterFactory (alternative) `0x378368...b93fc4` — deployed 2024-02-28 15:53:31+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| oakcobalt-Analysis.md | ThrusterFactory | ambiguous — not counted | ThrusterFactory (alternative) `0xb4a7d971d0adea1c73198c97d7ab3f9ce4aafa13` — deployed 2024-02-28 15:40:27+03 — liveness: live (code_present_context)<br>ThrusterFactory (alternative) `0x37836821a2c03c171fb1a595767f4a16e2b93fc4` — deployed 2024-02-28 15:53:31+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | oakcobalt-Analysis.md | ThrusterTreasure | unmatched — not counted | — | mentioned in scope as lottery contract | no |
 | oakcobalt-Analysis.md | ThrusterYield | unmatched — not counted | — | mentioned in scope as yield contract | no |
 | oakcobalt-G.md | ThrusterPair | unmatched — not counted | — | mentioned in Gas-01 finding | no |
@@ -260,15 +260,15 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | oakcobalt-Q.md | ThrusterYield | unmatched — not counted | — | Listed in findings Low-03, Low-06 | no |
 | oakcobalt-Q.md | ThrusterTreasure | unmatched — not counted | — | Listed in findings Low-04, Low-05, Low-07, Low-08, Low-09, Low-12 | no |
 | oakcobalt-Q.md | ThrusterPool | unmatched — not counted | — | Listed in findings Low-06, Low-13 | no |
-| oakcobalt-Q.md | NonfungiblePositionManager | own proxy deployment | NonfungiblePositionManager (proxy) (selected) `0x434575...e227f9` — deployed 2024-02-28 16:31:51+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| oakcobalt-Q.md | NonfungiblePositionManager | own proxy deployment | NonfungiblePositionManager (proxy) (selected) `0x434575eaea081b735c985fa9bf63cd7b87e227f9` — deployed 2024-02-28 16:31:51+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | rvierdiiev-Analysis.md | Thruster-cfmm | unmatched — not counted | — | mentioned as a uniswap v2 fork deployed on Blast chain | no |
 | rvierdiiev-Analysis.md | Thruster-clmm | unmatched — not counted | — | mentioned as a uniswap v3 fork deployed on Blast chain | no |
 | rvierdiiev-Analysis.md | Thruster-treasure | unmatched — not counted | — | mentioned as a module for distributing prizes | no |
 | rvierdiiev-G.md | ThrusterTreasure | unmatched — not counted | — | mentioned in findings G-01 and G-02 | no |
 | rvierdiiev-G.md | ThrusterPool | unmatched — not counted | — | mentioned in finding G-03 | no |
-| rvierdiiev-Q.md | ThrusterFactory | ambiguous — not counted | ThrusterFactory (alternative) `0xb4a7d9...aafa13` — deployed 2024-02-28 15:40:27+03 — liveness: live (code_present_context)<br>ThrusterFactory (alternative) `0x378368...b93fc4` — deployed 2024-02-28 15:53:31+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| rvierdiiev-Q.md | ThrusterFactory | ambiguous — not counted | ThrusterFactory (alternative) `0xb4a7d971d0adea1c73198c97d7ab3f9ce4aafa13` — deployed 2024-02-28 15:40:27+03 — liveness: live (code_present_context)<br>ThrusterFactory (alternative) `0x37836821a2c03c171fb1a595767f4a16e2b93fc4` — deployed 2024-02-28 15:53:31+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | rvierdiiev-Q.md | ThrusterPair | unmatched — not counted | — | mentioned in QA-01 and QA-02 | no |
-| rvierdiiev-Q.md | NonfungibleTokenPositionDescriptor | own contract | NonfungibleTokenPositionDescriptor (selected) `0x985924...735e4a` — deployed 2024-02-28 16:31:43+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| rvierdiiev-Q.md | NonfungibleTokenPositionDescriptor | own contract | NonfungibleTokenPositionDescriptor (selected) `0x9859246073f08d1644c496c19be7aa9c02735e4a` — deployed 2024-02-28 16:31:43+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | rvierdiiev-Q.md | ThrusterTreasure | unmatched — not counted | — | mentioned in QA-04, QA-05, QA-06 | no |
 
 ## Coverage Gaps
@@ -277,17 +277,17 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| blast | `0xa9eaac...3475ab` | FeeOnTransferDetector | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | `0xeae1b3...d09a52` | FeeOnTransferDetector | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | `0xe3cca3...083a8c` | NFTDescriptor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | `0x3b299f...a685be` | QuoterV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | `0x337827...0c0555` | SwapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | `0x378368...b93fc4` | ThrusterFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | `0xb4a7d9...aafa13` | ThrusterFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | `0x2024c5...f834c5` | ThrusterMulticall | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | `0x44889b...fb2b4e` | ThrusterRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | `0x98994a...1650f6` | ThrusterRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | `0x796b39...e02ef6` | TickLens | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | `0xa9eaaccae316982c04b8068fb08787de673475ab` | FeeOnTransferDetector | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | `0xeae1b3489ebf7bc8a621f440c59099a141d09a52` | FeeOnTransferDetector | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | `0xe3cca3a48b907d0e26135025eaeea6431c083a8c` | NFTDescriptor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | `0x3b299f65b47c0bfaeff715bc73077ba7a0a685be` | QuoterV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | `0x337827814155ecbf24d20231fca4444f530c0555` | SwapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | `0x37836821a2c03c171fb1a595767f4a16e2b93fc4` | ThrusterFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | `0xb4a7d971d0adea1c73198c97d7ab3f9ce4aafa13` | ThrusterFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | `0x2024c59ee713db918c9ba0cb84c5e2c6c6f834c5` | ThrusterMulticall | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | `0x44889b52b71e60de6ed7de82e2939fcc52fb2b4e` | ThrusterRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | `0x98994a9a7a2570367554589189dc9772241650f6` | ThrusterRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | `0x796b39328b92472b2bd950aeb20d950611e02ef6` | TickLens | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

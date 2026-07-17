@@ -59,13 +59,13 @@ The protocol comprises 3 functional families. Its contracts share 10 common proj
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| SlowRoll | unknown | ethereum | n/a | [`0xfbd306...cf1d1d`](./contracts/ethereum-1/0xfbd3060fe1ed10c34e236cee837d82f019cf1d1d/) | ✅ Audited |
+| SlowRoll | unknown | ethereum | n/a | [`0xfbd3060fe1ed10c34e236cee837d82f019cf1d1d`](./contracts/ethereum-1/0xfbd3060fe1ed10c34e236cee837d82f019cf1d1d/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AnchoredViewRelay | unknown | ethereum | n/a | [`0xfde4c9...699bb2`](./contracts/ethereum-1/0xfde4c96c8593536e31f229ea8f37b2ada2699bb2/) | ⚠️ Unaudited |
+| AnchoredViewRelay | unknown | ethereum | n/a | [`0xfde4c96c8593536e31f229ea8f37b2ada2699bb2`](./contracts/ethereum-1/0xfde4c96c8593536e31f229ea8f37b2ada2699bb2/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -85,12 +85,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x107da3...c25e4d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x78fcf4...a8bd74` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xa490ce...ecfe54` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xd0701a...0d815e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xd0cf31...7f5d85` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xd652db...557e6f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x107da33fdfa0661360d91e134fa5f5d4bec25e4d` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x78fcf430d81dd51b367b059ea2b9ff69ffa8bd74` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xa490ce00e4032a12befa2d3b35dee7333becfe54` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd0701a8da2b6c621df7dd82479211ee4690d815e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd0cf314c2627965ef4ddcf08c9c446e7867f5d85` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd652db177583729bdffbbb42bc4342c7f5557e6f` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -105,7 +105,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xfde4c9...699bb2`](./contracts/ethereum-1/0xfde4c96c8593536e31f229ea8f37b2ada2699bb2/) | AnchoredViewRelay | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xfde4c96c8593536e31f229ea8f37b2ada2699bb2`](./contracts/ethereum-1/0xfde4c96c8593536e31f229ea8f37b2ada2699bb2/) | AnchoredViewRelay | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

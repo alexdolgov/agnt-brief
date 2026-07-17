@@ -62,7 +62,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| WEEXToken | unknown | ethereum | n/a | [`0x1b6647...579716`](./contracts/ethereum-1/0x1b66474c8eca3827f16202907f41f63785579716/) | ⚠️ Unaudited |
+| WEEXToken | unknown | ethereum | n/a | [`0x1b66474c8eca3827f16202907f41f63785579716`](./contracts/ethereum-1/0x1b66474c8eca3827f16202907f41f63785579716/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,7 +93,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x1b6647...579716`](./contracts/ethereum-1/0x1b66474c8eca3827f16202907f41f63785579716/) | WEEXToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1b66474c8eca3827f16202907f41f63785579716`](./contracts/ethereum-1/0x1b66474c8eca3827f16202907f41f63785579716/) | WEEXToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

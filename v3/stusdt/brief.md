@@ -52,11 +52,11 @@ The pinned logic-topography run contains 4 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x82bb08...f7358d`, chain 1)
-- MinterProxy (`0xe22d16...73728c`, chain 1)
-- StUSDTProxy (`0x25ec98...145e10`, chain 1)
-- UnstUSDTProxy (`0x156269...2c058c`, chain 1)
-- WstUSDTProxy (`0x572975...fe1ab0`, chain 1)
+- UnnamedContract (`0x82bb089588061e6f6e6ba031ab03fbea78f7358d`, chain 1)
+- MinterProxy (`0xe22d16a16d8a5a92241cf696c35c08eaa873728c`, chain 1)
+- StUSDTProxy (`0x25ec98773d7b4ced4cafab96a2a1c0945f145e10`, chain 1)
+- UnstUSDTProxy (`0x156269966404ca72f6721c3228676c56412c058c`, chain 1)
+- WstUSDTProxy (`0x572975ff6d5136c81c8d7448b6361ef9eefe1ab0`, chain 1)
 
 ## Contract Surface Quality
 
@@ -101,10 +101,10 @@ The pinned logic-topography run contains 4 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| MinterProxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393256 | `0xe22d16...73728c` | ✅ Audited |
-| StUSDTProxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393258 | `0x25ec98...145e10` | ✅ Audited |
-| UnstUSDTProxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393257 | `0x156269...2c058c` | ✅ Audited |
-| WstUSDTProxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393259 | `0x572975...fe1ab0` | ✅ Audited |
+| MinterProxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393256 | `0xe22d16a16d8a5a92241cf696c35c08eaa873728c` | ✅ Audited |
+| StUSDTProxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393258 | `0x25ec98773d7b4ced4cafab96a2a1c0945f145e10` | ✅ Audited |
+| UnstUSDTProxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393257 | `0x156269966404ca72f6721c3228676c56412c058c` | ✅ Audited |
+| WstUSDTProxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393259 | `0x572975ff6d5136c81c8d7448b6361ef9eefe1ab0` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 
@@ -128,7 +128,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-393255 | `0x82bb08...f7358d` | ❓ Unverified |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-393255 | `0x82bb089588061e6f6e6ba031ab03fbea78f7358d` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -155,17 +155,17 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
 | www.chainsecurity.com/security-audit/stusdt-smart-contracts | stUSDT | unmatched — not counted | — | The report states 'stUSDT is the receipt token users receive upon staking USD stablecoins' and the title mentions 'stUSDT Smart Contracts'. | no |
-| ChainSecurity_StUSDT_StUSDT_Audit.pdf | UnstUSDTProxy | own proxy deployment | UnstUSDTProxy (proxy) (selected) `0x156269...2c058c` — deployed 2023-07-27 07:04:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_StUSDT_StUSDT_Audit.pdf | UnstUSDTProxy | own proxy deployment | UnstUSDTProxy (proxy) (selected) `0x156269966404ca72f6721c3228676c56412c058c` — deployed 2023-07-27 07:04:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ChainSecurity_StUSDT_StUSDT_Audit.pdf | WstUSDTStorage | unmatched — not counted | — | listed in scope | no |
 | ChainSecurity_StUSDT_StUSDT_Audit.pdf | BlackListManager | unmatched — not counted | — | listed in scope | no |
-| ChainSecurity_StUSDT_StUSDT_Audit.pdf | MinterProxy | own proxy deployment | MinterProxy (proxy) (selected) `0xe22d16...73728c` — deployed 2023-07-27 07:05:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_StUSDT_StUSDT_Audit.pdf | MinterProxy | own proxy deployment | MinterProxy (proxy) (selected) `0xe22d16a16d8a5a92241cf696c35c08eaa873728c` — deployed 2023-07-27 07:05:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ChainSecurity_StUSDT_StUSDT_Audit.pdf | StUSDTG1 | unmatched — not counted | — | listed in scope | no |
 | ChainSecurity_StUSDT_StUSDT_Audit.pdf | AdminProxy | unmatched — not counted | — | listed in scope | no |
 | ChainSecurity_StUSDT_StUSDT_Audit.pdf | UnstUSDTStorage | unmatched — not counted | — | listed in scope | no |
 | ChainSecurity_StUSDT_StUSDT_Audit.pdf | MinterG1 | unmatched — not counted | — | listed in scope | no |
 | ChainSecurity_StUSDT_StUSDT_Audit.pdf | WstUSDTG1 | unmatched — not counted | — | listed in scope | no |
-| ChainSecurity_StUSDT_StUSDT_Audit.pdf | WstUSDTProxy | own proxy deployment | WstUSDTProxy (proxy) (selected) `0x572975...fe1ab0` — deployed 2023-07-27 07:06:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| ChainSecurity_StUSDT_StUSDT_Audit.pdf | StUSDTProxy | own proxy deployment | StUSDTProxy (proxy) (selected) `0x25ec98...145e10` — deployed 2023-07-27 07:04:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_StUSDT_StUSDT_Audit.pdf | WstUSDTProxy | own proxy deployment | WstUSDTProxy (proxy) (selected) `0x572975ff6d5136c81c8d7448b6361ef9eefe1ab0` — deployed 2023-07-27 07:06:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_StUSDT_StUSDT_Audit.pdf | StUSDTProxy | own proxy deployment | StUSDTProxy (proxy) (selected) `0x25ec98773d7b4ced4cafab96a2a1c0945f145e10` — deployed 2023-07-27 07:04:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ChainSecurity_StUSDT_StUSDT_Audit.pdf | ValuesAggregator | unmatched — not counted | — | listed in scope | no |
 | ChainSecurity_StUSDT_StUSDT_Audit.pdf | StUSDTStorage | unmatched — not counted | — | listed in scope | no |
 | ChainSecurity_StUSDT_StUSDT_Audit.pdf | WstUSDTG2 | unmatched — not counted | — | listed in scope | no |
@@ -188,17 +188,17 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | ChainSecurity_StUSDT_StUSDT_Audit.pdf | Initializable | unmatched — not counted | — | listed in scope but excluded | no |
 | ChainSecurity_StUSDT_StUSDT_Audit.pdf | Context | unmatched — not counted | — | listed in scope but excluded | no |
 | ChainSecurity_StUSDT_StUSDT_Audit.pdf | ITRC20 | unmatched — not counted | — | listed in scope | no |
-| audit-report.pdf | UnstUSDTProxy | own proxy deployment | UnstUSDTProxy (proxy) (selected) `0x156269...2c058c` — deployed 2023-07-27 07:04:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| audit-report.pdf | UnstUSDTProxy | own proxy deployment | UnstUSDTProxy (proxy) (selected) `0x156269966404ca72f6721c3228676c56412c058c` — deployed 2023-07-27 07:04:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | audit-report.pdf | WstUSDTStorage | unmatched — not counted | — | listed in scope table | no |
 | audit-report.pdf | BlackListManager | unmatched — not counted | — | listed in scope table | no |
-| audit-report.pdf | MinterProxy | own proxy deployment | MinterProxy (proxy) (selected) `0xe22d16...73728c` — deployed 2023-07-27 07:05:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| audit-report.pdf | MinterProxy | own proxy deployment | MinterProxy (proxy) (selected) `0xe22d16a16d8a5a92241cf696c35c08eaa873728c` — deployed 2023-07-27 07:05:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | audit-report.pdf | StUSDTG1 | unmatched — not counted | — | listed in scope table | no |
 | audit-report.pdf | AdminProxy | unmatched — not counted | — | listed in scope table | no |
 | audit-report.pdf | UnstUSDTStorage | unmatched — not counted | — | listed in scope table | no |
 | audit-report.pdf | MinterG1 | unmatched — not counted | — | listed in scope table | no |
 | audit-report.pdf | WstUSDTG1 | unmatched — not counted | — | listed in scope table | no |
-| audit-report.pdf | WstUSDTProxy | own proxy deployment | WstUSDTProxy (proxy) (selected) `0x572975...fe1ab0` — deployed 2023-07-27 07:06:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| audit-report.pdf | StUSDTProxy | own proxy deployment | StUSDTProxy (proxy) (selected) `0x25ec98...145e10` — deployed 2023-07-27 07:04:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| audit-report.pdf | WstUSDTProxy | own proxy deployment | WstUSDTProxy (proxy) (selected) `0x572975ff6d5136c81c8d7448b6361ef9eefe1ab0` — deployed 2023-07-27 07:06:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| audit-report.pdf | StUSDTProxy | own proxy deployment | StUSDTProxy (proxy) (selected) `0x25ec98773d7b4ced4cafab96a2a1c0945f145e10` — deployed 2023-07-27 07:04:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | audit-report.pdf | ValuesAggregator | unmatched — not counted | — | listed in scope table | no |
 | audit-report.pdf | StUSDTStorage | unmatched — not counted | — | listed in scope table | no |
 | audit-report.pdf | WstUSDTG2 | unmatched — not counted | — | listed in scope table | no |

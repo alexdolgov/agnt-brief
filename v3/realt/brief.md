@@ -52,16 +52,16 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum, gnos
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x24d978...e0cdcc`, chain 1)
-- UnnamedContract (`0x80226f...146f7d`, chain 1)
-- UnnamedContract (`0xa17698...0701e7`, chain 1)
-- UnnamedContract (`0x4aad60...bdadce`, chain 100)
-- UnnamedContract (`0xb98ca8...1e6d04`, chain 100)
-- UnnamedContract (`0xf998fd...9c1c77`, chain 100)
-- UnnamedContract (`0x71d05f...6333db`, chain 137)
-- UnnamedContract (`0x849c5e...565bfe`, chain 137)
-- UnnamedContract (`0xc5cda5...d8817a`, chain 137)
-- REG (`0x0aa1e9...5f1dce`, chain 100)
+- UnnamedContract (`0x24d9783b185c93b8d9835c00fb3c8c2ae4e0cdcc`, chain 1)
+- UnnamedContract (`0x80226fc0ee2b096224eeac085bb9a8cba1146f7d`, chain 1)
+- UnnamedContract (`0xa17698199466e71bafc31f226db341b7840701e7`, chain 1)
+- UnnamedContract (`0x4aad6071085df840abd9baf1697d5d5992bdadce`, chain 100)
+- UnnamedContract (`0xb98ca8cbb6f95a8f0e2b0d988e52bdb0ea1e6d04`, chain 100)
+- UnnamedContract (`0xf998fd1e25d009d6c4dbd078349077d1cf9c1c77`, chain 100)
+- UnnamedContract (`0x71d05f0a2d068783f5973d9a06f874c3976333db`, chain 137)
+- UnnamedContract (`0x849c5ed5a80f5b408dd4969b78c2c8fdf0565bfe`, chain 137)
+- UnnamedContract (`0xc5cda57d21a2b26736a77974a6893b77e9d8817a`, chain 137)
+- REG (`0x0aa1e96d2a46ec6beb2923de1e61addf5f5f1dce`, chain 100)
 
 ## Contract Surface Quality
 
@@ -107,9 +107,9 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum, gnos
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AdminUpgradeabilityProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | gnosis | n/a | `0x009bab...5faa61` | ⚠️ Unaudited |
-| AdminUpgradeabilityProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x062461...f5d9ff` | ⚠️ Unaudited |
-| REG | unknown | project_anchor | own_supporting | 1 | gnosis | unit-252564 | `0x0aa1e9...5f1dce` | ⚠️ Unaudited |
+| AdminUpgradeabilityProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | gnosis | n/a | `0x009bab289f104699ae87e576294d18ed505faa61` | ⚠️ Unaudited |
+| AdminUpgradeabilityProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x06246100ba403608b98adfb006d82a7484f5d9ff` | ⚠️ Unaudited |
+| REG | unknown | project_anchor | own_supporting | 1 | gnosis | unit-252564 | `0x0aa1e96d2a46ec6beb2923de1e61addf5f5f1dce` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -129,15 +129,15 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-252555 | `0x24d978...e0cdcc` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-252556 | `0x80226f...146f7d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-252557 | `0xa17698...0701e7` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-252558 | `0x4aad60...bdadce` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-252559 | `0xb98ca8...1e6d04` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-252560 | `0xf998fd...9c1c77` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-252561 | `0x71d05f...6333db` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-252562 | `0x849c5e...565bfe` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-252563 | `0xc5cda5...d8817a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-252555 | `0x24d9783b185c93b8d9835c00fb3c8c2ae4e0cdcc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-252556 | `0x80226fc0ee2b096224eeac085bb9a8cba1146f7d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-252557 | `0xa17698199466e71bafc31f226db341b7840701e7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-252558 | `0x4aad6071085df840abd9baf1697d5d5992bdadce` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-252559 | `0xb98ca8cbb6f95a8f0e2b0d988e52bdb0ea1e6d04` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-252560 | `0xf998fd1e25d009d6c4dbd078349077d1cf9c1c77` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-252561 | `0x71d05f0a2d068783f5973d9a06f874c3976333db` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-252562 | `0x849c5ed5a80f5b408dd4969b78c2c8fdf0565bfe` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-252563 | `0xc5cda57d21a2b26736a77974a6893b77e9d8817a` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -156,7 +156,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| gnosis | `0x0aa1e9...5f1dce` | REG | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| gnosis | `0x0aa1e96d2a46ec6beb2923de1e61addf5f5f1dce` | REG | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

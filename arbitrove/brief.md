@@ -62,8 +62,8 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ArbitroveGovernanceToken | unknown | arbitrum | n/a | [`0x982239...9c4c07`](./contracts/arbitrum-42161/0x982239d38af50b0168da33346d85fb12929c4c07/) | ⚠️ Unaudited |
-| NitroPassport | unknown | arbitrum | n/a | [`0x348fdf...bada86`](./contracts/arbitrum-42161/0x348fdfe2c35934a96c1353185f09d0f9efbada86/) | ⚠️ Unaudited |
+| ArbitroveGovernanceToken | unknown | arbitrum | n/a | [`0x982239d38af50b0168da33346d85fb12929c4c07`](./contracts/arbitrum-42161/0x982239d38af50b0168da33346d85fb12929c4c07/) | ⚠️ Unaudited |
+| NitroPassport | unknown | arbitrum | n/a | [`0x348fdfe2c35934a96c1353185f09d0f9efbada86`](./contracts/arbitrum-42161/0x348fdfe2c35934a96c1353185f09d0f9efbada86/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,8 +95,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | [`0x982239...9c4c07`](./contracts/arbitrum-42161/0x982239d38af50b0168da33346d85fb12929c4c07/) | ArbitroveGovernanceToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x348fdf...bada86`](./contracts/arbitrum-42161/0x348fdfe2c35934a96c1353185f09d0f9efbada86/) | NitroPassport | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x982239d38af50b0168da33346d85fb12929c4c07`](./contracts/arbitrum-42161/0x982239d38af50b0168da33346d85fb12929c4c07/) | ArbitroveGovernanceToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x348fdfe2c35934a96c1353185f09d0f9efbada86`](./contracts/arbitrum-42161/0x348fdfe2c35934a96c1353185f09d0f9efbada86/) | NitroPassport | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

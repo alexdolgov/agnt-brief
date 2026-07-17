@@ -62,38 +62,38 @@ The protocol comprises 3 functional families. Its contracts share 5 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AccountantWithRateProviders | unknown | ethereum | n/a | [`0x05a155...bda32b`](./contracts/ethereum-1/0x05a1552c5e18f5a0bb9571b5f2d6a4765ebda32b/) | ✅ Audited |
-| ArcticArchitectureLens | unknown | bsc | n/a | [`0x5232bc...f94a1b`](./contracts/bsc-56/0x5232bc0f5999f8da604c42e1748a13a170f94a1b/) | ✅ Audited |
-| AtomicQueue | unknown | ethereum | n/a | [`0xd45884...5dea07`](./contracts/ethereum-1/0xd45884b592e316eb816199615a95c182f75dea07/) | ✅ Audited |
-| BoringVault | unknown | ethereum | n/a | [`0x08c6f9...c1364c`](./contracts/ethereum-1/0x08c6f91e2b681faf5e17227f2a44c307b3c1364c/) | ✅ Audited |
-| FeesAndReserves | unknown | ethereum | n/a | [`0x8a2295...02ec74`](./contracts/ethereum-1/0x8a22951e3b5133844e37959cc75fce9b3502ec74/) | ✅ Audited |
-| LayerZeroTeller | unknown | ethereum | n/a | [`0x31a5a9...18f5b8`](./contracts/ethereum-1/0x31a5a9f60dc3d62fa5168352caf0ee05aa18f5b8/) | ✅ Audited |
-| ManagerWithMerkleVerification | unknown | ethereum | n/a | [`0x048a50...4d0a17`](./contracts/ethereum-1/0x048a5002e57166a78dd060b3b36ded2f404d0a17/) | ✅ Audited |
-| PriceRouter | unknown | ethereum | n/a | [`0x693799...a4fff5`](./contracts/ethereum-1/0x693799805b502264f9365440b93c113d86a4fff5/) | ✅ Audited |
-| ProtocolFeeCollector | unknown | ethereum | n/a | [`0xdfb286...e42524`](./contracts/ethereum-1/0xdfb286d16f9cd8c5cf4d5180501c190519e42524/) | ✅ Audited |
-| TellerWithMultiAssetSupport | unknown | bsc | n/a | [`0x2ea433...deb9b3`](./contracts/bsc-56/0x2ea43384f1a98765257bc6cb26c7131debdeb9b3/) | ✅ Audited |
-| weEthExtension | unknown | ethereum | n/a | [`0x78e593...fd7535`](./contracts/ethereum-1/0x78e59309ba2779a5d3522e965fe9be2790fd7535/) | ✅ Audited |
+| AccountantWithRateProviders | unknown | ethereum | n/a | [`0x05a1552c5e18f5a0bb9571b5f2d6a4765ebda32b`](./contracts/ethereum-1/0x05a1552c5e18f5a0bb9571b5f2d6a4765ebda32b/) | ✅ Audited |
+| ArcticArchitectureLens | unknown | bsc | n/a | [`0x5232bc0f5999f8da604c42e1748a13a170f94a1b`](./contracts/bsc-56/0x5232bc0f5999f8da604c42e1748a13a170f94a1b/) | ✅ Audited |
+| AtomicQueue | unknown | ethereum | n/a | [`0xd45884b592e316eb816199615a95c182f75dea07`](./contracts/ethereum-1/0xd45884b592e316eb816199615a95c182f75dea07/) | ✅ Audited |
+| BoringVault | unknown | ethereum | n/a | [`0x08c6f91e2b681faf5e17227f2a44c307b3c1364c`](./contracts/ethereum-1/0x08c6f91e2b681faf5e17227f2a44c307b3c1364c/) | ✅ Audited |
+| FeesAndReserves | unknown | ethereum | n/a | [`0x8a22951e3b5133844e37959cc75fce9b3502ec74`](./contracts/ethereum-1/0x8a22951e3b5133844e37959cc75fce9b3502ec74/) | ✅ Audited |
+| LayerZeroTeller | unknown | ethereum | n/a | [`0x31a5a9f60dc3d62fa5168352caf0ee05aa18f5b8`](./contracts/ethereum-1/0x31a5a9f60dc3d62fa5168352caf0ee05aa18f5b8/) | ✅ Audited |
+| ManagerWithMerkleVerification | unknown | ethereum | n/a | [`0x048a5002e57166a78dd060b3b36ded2f404d0a17`](./contracts/ethereum-1/0x048a5002e57166a78dd060b3b36ded2f404d0a17/) | ✅ Audited |
+| PriceRouter | unknown | ethereum | n/a | [`0x693799805b502264f9365440b93c113d86a4fff5`](./contracts/ethereum-1/0x693799805b502264f9365440b93c113d86a4fff5/) | ✅ Audited |
+| ProtocolFeeCollector | unknown | ethereum | n/a | [`0xdfb286d16f9cd8c5cf4d5180501c190519e42524`](./contracts/ethereum-1/0xdfb286d16f9cd8c5cf4d5180501c190519e42524/) | ✅ Audited |
+| TellerWithMultiAssetSupport | unknown | bsc | n/a | [`0x2ea43384f1a98765257bc6cb26c7131debdeb9b3`](./contracts/bsc-56/0x2ea43384f1a98765257bc6cb26c7131debdeb9b3/) | ✅ Audited |
+| weEthExtension | unknown | ethereum | n/a | [`0x78e59309ba2779a5d3522e965fe9be2790fd7535`](./contracts/ethereum-1/0x78e59309ba2779a5d3522e965fe9be2790fd7535/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (16)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AtomicSolverV2 | unknown | ethereum | n/a | [`0x5b744e...1a2d7a`](./contracts/ethereum-1/0x5b744e93bbf5caf38df34f3ba14a40024d1a2d7a/) | ⚠️ Unaudited |
-| AuraERC4626Adaptor | unknown | ethereum | n/a | [`0x0f3f8c...2bb162`](./contracts/ethereum-1/0x0f3f8cab8d3888281033faf7a6c0b74de62bb162/) | ⚠️ Unaudited |
-| CellarWithOracleWithBalancerFlashLoansWithMultiAssetDepositWithNativeSupport | unknown | ethereum | n/a | [`0xea1a63...06a221`](./contracts/ethereum-1/0xea1a6307d9b18f8d1cbf1c3dd6aad8416c06a221/) | ⚠️ Unaudited |
-| eEthExtension | unknown | ethereum | n/a | [`0x4ec6e3...740d5b`](./contracts/ethereum-1/0x4ec6e3b0933cc90fdb274267dff1a57db9740d5b/) | ⚠️ Unaudited |
-| ERC20Adaptor | unknown | ethereum | n/a | [`0x7a5b17...81331d`](./contracts/ethereum-1/0x7a5b17e0ad1e0f37061fcc7f90512c367981331d/) | ⚠️ Unaudited |
-| ERC4626Adaptor | unknown | ethereum | n/a | [`0xb1761a...a681e2`](./contracts/ethereum-1/0xb1761a7c7799cb429eb5bf2db16d88534da681e2/) | ⚠️ Unaudited |
-| ERC4626SharePriceOracle | unknown | ethereum | n/a | [`0x9d3eb5...8014b0`](./contracts/ethereum-1/0x9d3eb50ed4540135a78facd70063bccc988014b0/) | ⚠️ Unaudited |
-| FeesAndReservesAdaptor | unknown | ethereum | n/a | [`0x5d84ec...b358da`](./contracts/ethereum-1/0x5d84ec98c476b159f3e107709f224d5bbbb358da/) | ⚠️ Unaudited |
-| IncentiveDistributor | unknown | ethereum | n/a | [`0xf0164d...0f8780`](./contracts/ethereum-1/0xf0164d48b308c42ae028e3379b2fb620e70f8780/) | ⚠️ Unaudited |
-| OneInchAdaptor | unknown | ethereum | n/a | [`0x5f7de9...c58d43`](./contracts/ethereum-1/0x5f7de90fb222d37225dd8929672e427699c58d43/) | ⚠️ Unaudited |
-| RedstoneEthPriceFeedExtension | unknown | ethereum | n/a | [`0xdb4b77...63ae84`](./contracts/ethereum-1/0xdb4b778085ed412518cb64207259a746f363ae84/) | ⚠️ Unaudited |
-| Registry | unknown | ethereum | n/a | [`0x37912f...059bbd`](./contracts/ethereum-1/0x37912f4c0f0d916890ebd755bf6d1f0a0e059bbd/) | ⚠️ Unaudited |
-| RolesAuthority | unknown | ethereum | n/a | [`0x6a4abb...c67d73`](./contracts/ethereum-1/0x6a4abbee0a07f358c7706c78fd7cc2702fc67d73/) | ⚠️ Unaudited |
-| TimelockController | unknown | ethereum | n/a | [`0x55148d...13924c`](./contracts/ethereum-1/0x55148d7e3983a54c9f9d1e0c2c2039e2d513924c/) | ⚠️ Unaudited |
-| WstEthExtension | unknown | ethereum | n/a | [`0xc5a3cb...c46d35`](./contracts/ethereum-1/0xc5a3cb224b799b982706008a1081073fe0c46d35/) | ⚠️ Unaudited |
-| ZeroXAdaptor | unknown | ethereum | n/a | [`0x497bbe...eecfc2`](./contracts/ethereum-1/0x497bbe7d974b45e2e28cfbbdedf9e67646eecfc2/) | ⚠️ Unaudited |
+| AtomicSolverV2 | unknown | ethereum | n/a | [`0x5b744e93bbf5caf38df34f3ba14a40024d1a2d7a`](./contracts/ethereum-1/0x5b744e93bbf5caf38df34f3ba14a40024d1a2d7a/) | ⚠️ Unaudited |
+| AuraERC4626Adaptor | unknown | ethereum | n/a | [`0x0f3f8cab8d3888281033faf7a6c0b74de62bb162`](./contracts/ethereum-1/0x0f3f8cab8d3888281033faf7a6c0b74de62bb162/) | ⚠️ Unaudited |
+| CellarWithOracleWithBalancerFlashLoansWithMultiAssetDepositWithNativeSupport | unknown | ethereum | n/a | [`0xea1a6307d9b18f8d1cbf1c3dd6aad8416c06a221`](./contracts/ethereum-1/0xea1a6307d9b18f8d1cbf1c3dd6aad8416c06a221/) | ⚠️ Unaudited |
+| eEthExtension | unknown | ethereum | n/a | [`0x4ec6e3b0933cc90fdb274267dff1a57db9740d5b`](./contracts/ethereum-1/0x4ec6e3b0933cc90fdb274267dff1a57db9740d5b/) | ⚠️ Unaudited |
+| ERC20Adaptor | unknown | ethereum | n/a | [`0x7a5b17e0ad1e0f37061fcc7f90512c367981331d`](./contracts/ethereum-1/0x7a5b17e0ad1e0f37061fcc7f90512c367981331d/) | ⚠️ Unaudited |
+| ERC4626Adaptor | unknown | ethereum | n/a | [`0xb1761a7c7799cb429eb5bf2db16d88534da681e2`](./contracts/ethereum-1/0xb1761a7c7799cb429eb5bf2db16d88534da681e2/) | ⚠️ Unaudited |
+| ERC4626SharePriceOracle | unknown | ethereum | n/a | [`0x9d3eb50ed4540135a78facd70063bccc988014b0`](./contracts/ethereum-1/0x9d3eb50ed4540135a78facd70063bccc988014b0/) | ⚠️ Unaudited |
+| FeesAndReservesAdaptor | unknown | ethereum | n/a | [`0x5d84ec98c476b159f3e107709f224d5bbbb358da`](./contracts/ethereum-1/0x5d84ec98c476b159f3e107709f224d5bbbb358da/) | ⚠️ Unaudited |
+| IncentiveDistributor | unknown | ethereum | n/a | [`0xf0164d48b308c42ae028e3379b2fb620e70f8780`](./contracts/ethereum-1/0xf0164d48b308c42ae028e3379b2fb620e70f8780/) | ⚠️ Unaudited |
+| OneInchAdaptor | unknown | ethereum | n/a | [`0x5f7de90fb222d37225dd8929672e427699c58d43`](./contracts/ethereum-1/0x5f7de90fb222d37225dd8929672e427699c58d43/) | ⚠️ Unaudited |
+| RedstoneEthPriceFeedExtension | unknown | ethereum | n/a | [`0xdb4b778085ed412518cb64207259a746f363ae84`](./contracts/ethereum-1/0xdb4b778085ed412518cb64207259a746f363ae84/) | ⚠️ Unaudited |
+| Registry | unknown | ethereum | n/a | [`0x37912f4c0f0d916890ebd755bf6d1f0a0e059bbd`](./contracts/ethereum-1/0x37912f4c0f0d916890ebd755bf6d1f0a0e059bbd/) | ⚠️ Unaudited |
+| RolesAuthority | unknown | ethereum | n/a | [`0x6a4abbee0a07f358c7706c78fd7cc2702fc67d73`](./contracts/ethereum-1/0x6a4abbee0a07f358c7706c78fd7cc2702fc67d73/) | ⚠️ Unaudited |
+| TimelockController | unknown | ethereum | n/a | [`0x55148d7e3983a54c9f9d1e0c2c2039e2d513924c`](./contracts/ethereum-1/0x55148d7e3983a54c9f9d1e0c2c2039e2d513924c/) | ⚠️ Unaudited |
+| WstEthExtension | unknown | ethereum | n/a | [`0xc5a3cb224b799b982706008a1081073fe0c46d35`](./contracts/ethereum-1/0xc5a3cb224b799b982706008a1081073fe0c46d35/) | ⚠️ Unaudited |
+| ZeroXAdaptor | unknown | ethereum | n/a | [`0x497bbe7d974b45e2e28cfbbdedf9e67646eecfc2`](./contracts/ethereum-1/0x497bbe7d974b45e2e28cfbbdedf9e67646eecfc2/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -184,20 +184,20 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x5b744e...1a2d7a`](./contracts/ethereum-1/0x5b744e93bbf5caf38df34f3ba14a40024d1a2d7a/) | AtomicSolverV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0f3f8c...2bb162`](./contracts/ethereum-1/0x0f3f8cab8d3888281033faf7a6c0b74de62bb162/) | AuraERC4626Adaptor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xea1a63...06a221`](./contracts/ethereum-1/0xea1a6307d9b18f8d1cbf1c3dd6aad8416c06a221/) | CellarWithOracleWithBalancerFlashLoansWithMultiAssetDepositWithNativeSupport | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x4ec6e3...740d5b`](./contracts/ethereum-1/0x4ec6e3b0933cc90fdb274267dff1a57db9740d5b/) | eEthExtension | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x7a5b17...81331d`](./contracts/ethereum-1/0x7a5b17e0ad1e0f37061fcc7f90512c367981331d/) | ERC20Adaptor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xb1761a...a681e2`](./contracts/ethereum-1/0xb1761a7c7799cb429eb5bf2db16d88534da681e2/) | ERC4626Adaptor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x9d3eb5...8014b0`](./contracts/ethereum-1/0x9d3eb50ed4540135a78facd70063bccc988014b0/) | ERC4626SharePriceOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x5d84ec...b358da`](./contracts/ethereum-1/0x5d84ec98c476b159f3e107709f224d5bbbb358da/) | FeesAndReservesAdaptor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xf0164d...0f8780`](./contracts/ethereum-1/0xf0164d48b308c42ae028e3379b2fb620e70f8780/) | IncentiveDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x5f7de9...c58d43`](./contracts/ethereum-1/0x5f7de90fb222d37225dd8929672e427699c58d43/) | OneInchAdaptor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x37912f...059bbd`](./contracts/ethereum-1/0x37912f4c0f0d916890ebd755bf6d1f0a0e059bbd/) | Registry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6a4abb...c67d73`](./contracts/ethereum-1/0x6a4abbee0a07f358c7706c78fd7cc2702fc67d73/) | RolesAuthority | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc5a3cb...c46d35`](./contracts/ethereum-1/0xc5a3cb224b799b982706008a1081073fe0c46d35/) | WstEthExtension | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x497bbe...eecfc2`](./contracts/ethereum-1/0x497bbe7d974b45e2e28cfbbdedf9e67646eecfc2/) | ZeroXAdaptor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5b744e93bbf5caf38df34f3ba14a40024d1a2d7a`](./contracts/ethereum-1/0x5b744e93bbf5caf38df34f3ba14a40024d1a2d7a/) | AtomicSolverV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0f3f8cab8d3888281033faf7a6c0b74de62bb162`](./contracts/ethereum-1/0x0f3f8cab8d3888281033faf7a6c0b74de62bb162/) | AuraERC4626Adaptor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xea1a6307d9b18f8d1cbf1c3dd6aad8416c06a221`](./contracts/ethereum-1/0xea1a6307d9b18f8d1cbf1c3dd6aad8416c06a221/) | CellarWithOracleWithBalancerFlashLoansWithMultiAssetDepositWithNativeSupport | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4ec6e3b0933cc90fdb274267dff1a57db9740d5b`](./contracts/ethereum-1/0x4ec6e3b0933cc90fdb274267dff1a57db9740d5b/) | eEthExtension | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x7a5b17e0ad1e0f37061fcc7f90512c367981331d`](./contracts/ethereum-1/0x7a5b17e0ad1e0f37061fcc7f90512c367981331d/) | ERC20Adaptor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb1761a7c7799cb429eb5bf2db16d88534da681e2`](./contracts/ethereum-1/0xb1761a7c7799cb429eb5bf2db16d88534da681e2/) | ERC4626Adaptor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x9d3eb50ed4540135a78facd70063bccc988014b0`](./contracts/ethereum-1/0x9d3eb50ed4540135a78facd70063bccc988014b0/) | ERC4626SharePriceOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5d84ec98c476b159f3e107709f224d5bbbb358da`](./contracts/ethereum-1/0x5d84ec98c476b159f3e107709f224d5bbbb358da/) | FeesAndReservesAdaptor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xf0164d48b308c42ae028e3379b2fb620e70f8780`](./contracts/ethereum-1/0xf0164d48b308c42ae028e3379b2fb620e70f8780/) | IncentiveDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5f7de90fb222d37225dd8929672e427699c58d43`](./contracts/ethereum-1/0x5f7de90fb222d37225dd8929672e427699c58d43/) | OneInchAdaptor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x37912f4c0f0d916890ebd755bf6d1f0a0e059bbd`](./contracts/ethereum-1/0x37912f4c0f0d916890ebd755bf6d1f0a0e059bbd/) | Registry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6a4abbee0a07f358c7706c78fd7cc2702fc67d73`](./contracts/ethereum-1/0x6a4abbee0a07f358c7706c78fd7cc2702fc67d73/) | RolesAuthority | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc5a3cb224b799b982706008a1081073fe0c46d35`](./contracts/ethereum-1/0xc5a3cb224b799b982706008a1081073fe0c46d35/) | WstEthExtension | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x497bbe7d974b45e2e28cfbbdedf9e67646eecfc2`](./contracts/ethereum-1/0x497bbe7d974b45e2e28cfbbdedf9e67646eecfc2/) | ZeroXAdaptor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

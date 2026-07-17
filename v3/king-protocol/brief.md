@@ -52,10 +52,10 @@ The pinned logic-topography run contains 4 contract row(s) across arbitrum, base
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x747cac...52232e`, chain 1)
-- UnnamedContract (`0x8f08b7...8e6040`, chain 1)
-- UnnamedContract (`0x2e4124...fee275`, chain 42161)
-- UnnamedContract (`0xc2606a...cee6f8`, chain 1923)
+- UnnamedContract (`0x747cac75776b3a0bba3de3e61ec12a6a7f52232e`, chain 1)
+- UnnamedContract (`0x8f08b70456eb22f6109f57b8fafe862ed28e6040`, chain 1)
+- UnnamedContract (`0x2e412435928efe43b156caa8f4b1068729fee275`, chain 42161)
+- UnnamedContract (`0xc2606aade4bdd978a4fa5a6edb3b66657acee6f8`, chain 1923)
 
 ## Contract Surface Quality
 
@@ -101,15 +101,15 @@ The pinned logic-topography run contains 4 contract row(s) across arbitrum, base
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ArbitrageFoundation | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 8 deployments: base `0x117212...546dc2`; base `0x2e7a78...d4eab1`; base `0x44d021...9b42fd`; base `0x506131...55dac7`; base `0x64f582...d7eae2`; base `0xb2bad5...3a18fe`; base `0xe5bb8e...6e29fb`; base `0xe92e65...47cedb` | ⚠️ Unaudited |
-| CurveTwocryptoOptimized | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x3253c8...9e0886` | ⚠️ Unaudited |
-| KingOFTL2 | unknown | project_anchor | own_supporting | 1 | mantle | unit-244213 | 2 deployments: mantle `0x548c41...7b98ed`; mantle `0x5a57eb...7a7ab0` | ⚠️ Unaudited |
-| KingOFTL2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x2a57db...9bb283`; base `0x6d0431...91570d` | ⚠️ Unaudited |
-| KingOFTL2 | unknown | project_anchor | own_supporting | 1 | base | unit-244214 | 2 deployments: base `0x4d6a22...51beab`; base `0xe22c24...5fbac0` | ⚠️ Unaudited |
-| KingOFTL2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0xcc0112...e852a9`; base `0xf25768...1d689d` | ⚠️ Unaudited |
-| Pool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xdc5f7c...3015ac` | ⚠️ Unaudited |
-| RamsesBeaconProxy | registry | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x93e6e5...7bc942` | ⚠️ Unaudited |
-| UniswapV3Plugin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 4 deployments: base `0x409994...200ec2`; base `0x84acc4...983af0`; base `0x8bd78c...e4a459`; base `0xa12772...675ef7` | ⚠️ Unaudited |
+| ArbitrageFoundation | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 8 deployments: base `0x11721202e81eb2f7445bac9f9bf11f0b87546dc2`; base `0x2e7a789893e96ee2aea8d5404cedfbf7b9d4eab1`; base `0x44d021961cd51152b24f4782cb22b64c739b42fd`; base `0x5061315ef94788a482aae586d5f93cd6c555dac7`; base `0x64f5824d1eed1234138462824e4dc74022d7eae2`; base `0xb2bad500860c1efcef22f15f3f82f656853a18fe`; base `0xe5bb8ef2d356cc54791396eaa979328f826e29fb`; base `0xe92e65ba68e39774722678103ebcfc97a747cedb` | ⚠️ Unaudited |
+| CurveTwocryptoOptimized | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x3253c8105e8e70ae6abaf2fd21c703d8729e0886` | ⚠️ Unaudited |
+| KingOFTL2 | unknown | project_anchor | own_supporting | 1 | mantle | unit-244213 | 2 deployments: mantle `0x548c4116a97e0138f78000088ea3f155717b98ed`; mantle `0x5a57ebb2c25eb64f05ebb4e07d9de8b3b67a7ab0` | ⚠️ Unaudited |
+| KingOFTL2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x2a57db06506ab9764db8dcf06ac17a5fed9bb283`; base `0x6d04314fb449e020bd70ac701dfe0f13b591570d` | ⚠️ Unaudited |
+| KingOFTL2 | unknown | project_anchor | own_supporting | 1 | base | unit-244214 | 2 deployments: base `0x4d6a22986acca58aa890fbb233f3b4563251beab`; base `0xe22c243c7559c667a1eb94b593369d192c5fbac0` | ⚠️ Unaudited |
+| KingOFTL2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0xcc011273240610838aea80b485fbdff2b2e852a9`; base `0xf25768f2ac3a4c349be98c46ee97f59a9b1d689d` | ⚠️ Unaudited |
+| Pool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xdc5f7c7916c7792603fdc17f05f7929b423015ac` | ⚠️ Unaudited |
+| RamsesBeaconProxy | registry | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x93e6e571d04848de3ba31525fca36f1e4f7bc942` | ⚠️ Unaudited |
+| UniswapV3Plugin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 4 deployments: base `0x409994fd2fdcfccddea418b7f203b4db51200ec2`; base `0x84acc48d3c96728f9572a4f1b8819317de983af0`; base `0x8bd78cc193c01573d4e464e2c3d1514dade4a459`; base `0xa12772103af37270b4a6e68865463ff6ee675ef7` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -129,22 +129,22 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2b9010...0f19e3` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-244209 | `0x747cac...52232e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-244210 | `0x8f08b7...8e6040` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | swellchain | unit-244211 | `0xc2606a...cee6f8` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x63f237...077c6a` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0xe63ba6...cce318` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0e9315...6aca5a` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x155938...a33ac4` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x34b17b...fc1dc9` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x644403...436763` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x7e2a99...025844` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xaeab5e...d12dbe` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb71612...e228e2` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbd2e14...27586b` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xe592f9...3421b5` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-244212 | `0x2e4124...fee275` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2b90103cdc9bba6c0dbcaaf961f0b5b1920f19e3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-244209 | `0x747cac75776b3a0bba3de3e61ec12a6a7f52232e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-244210 | `0x8f08b70456eb22f6109f57b8fafe862ed28e6040` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | swellchain | unit-244211 | `0xc2606aade4bdd978a4fa5a6edb3b66657acee6f8` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x63f23727af926604016ed0856a2390a1e4077c6a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0xe63ba626494f88d5a269b435213f2e8803cce318` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0e9315a7868608e6efc309575fe9fcdc756aca5a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x15593877afb1d5ee4b1ea7b31f540e88bda33ac4` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x34b17b0eaa06bb0f5d3c711627121da747fc1dc9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x644403bf932e142b45ca35bdf33d2c45d7436763` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x7e2a99a7bd0b27945c838ba702342a7acc025844` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xaeab5e4d4a8ffc01807c1ec3aa11eedfebd12dbe` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb7161279dc98a3f09f46c42a77fecc8eafe228e2` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbd2e14734ab6634ed91f37dca9b3169b5627586b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xe592f9af23a0c51ff59f611698da3833bd3421b5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-244212 | `0x2e412435928efe43b156caa8f4b1068729fee275` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -205,8 +205,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| mantle | `0x548c41...7b98ed` | KingOFTL2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x4d6a22...51beab` | KingOFTL2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| mantle | `0x548c4116a97e0138f78000088ea3f155717b98ed` | KingOFTL2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x4d6a22986acca58aa890fbb233f3b4563251beab` | KingOFTL2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

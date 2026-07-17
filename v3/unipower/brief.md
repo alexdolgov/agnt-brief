@@ -57,7 +57,7 @@ The pinned logic-topography run contains 2 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UniPower (`0xf2f9a7...cce509`, chain 1)
+- UniPower (`0xf2f9a7e93f845b3ce154efbeb64fb9346fcce509`, chain 1)
 
 ## Contract Surface Quality
 
@@ -103,12 +103,12 @@ The pinned logic-topography run contains 2 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| EthPrime | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe40e15...316a2d` | ⚠️ Unaudited |
-| Goo | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa170fb...21a5f6` | ⚠️ Unaudited |
-| LiquidityVault | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-395310 | `0xc73bb8...934513` | ⚠️ Unaudited |
-| PowerLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xae7b53...c018b4` | ⚠️ Unaudited |
-| ProofOfEtherDelta | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc5765b...a933c1` | ⚠️ Unaudited |
-| UniPower | unknown | project_anchor | own_supporting | 0 | ethereum | unit-395311 | `0xf2f9a7...cce509` | ⚠️ Unaudited |
+| EthPrime | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe40e1531a4b56fb65571ad2ca43dc0048a316a2d` | ⚠️ Unaudited |
+| Goo | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa170fb6f3e0f127f1f592a656eadff3dc421a5f6` | ⚠️ Unaudited |
+| LiquidityVault | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-395310 | `0xc73bb871dbf66958242deba79e4db19bc2934513` | ⚠️ Unaudited |
+| PowerLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xae7b530be880457523eb46d8ec6484e067c018b4` | ⚠️ Unaudited |
+| ProofOfEtherDelta | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc5765b90766da9debad0b9122521c27e1ea933c1` | ⚠️ Unaudited |
+| UniPower | unknown | project_anchor | own_supporting | 0 | ethereum | unit-395311 | `0xf2f9a7e93f845b3ce154efbeb64fb9346fcce509` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -145,7 +145,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0xf2f9a7...cce509` | UniPower | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xf2f9a7e93f845b3ce154efbeb64fb9346fcce509` | UniPower | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -52,19 +52,19 @@ The pinned logic-topography run contains 4 contract row(s) across base. Structur
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x10b72c...73a90c`, chain 8453)
-- UnnamedContract (`0x22814b...d1fcce`, chain 8453)
-- UnnamedContract (`0x262666...41e481`, chain 8453)
-- UnnamedContract (`0x348996...33b63a`, chain 8453)
-- UnnamedContract (`0x4752ba...72ad24`, chain 8453)
-- UnnamedContract (`0x73624c...f703a6`, chain 8453)
-- UnnamedContract (`0xadaa77...7172a6`, chain 8453)
-- UnnamedContract (`0xbe6d8f...6d18a5`, chain 8453)
-- UnnamedContract (`0xcf77a3...874e43`, chain 8453)
-- GeneralSwapForwarder (`0x567a06...4a4354`, chain 8453)
-- InfinityPoolsFactory (`0x86342d...695f08`, chain 8453)
-- InfinityPoolsPeriphery (`0xf8fad0...c011a7`, chain 8453)
-- UniV2SwapForwarder (`0xdc9be7...e61021`, chain 8453)
+- UnnamedContract (`0x10b72ca6989d1d1c3ea5f6e3de0eeda75f73a90c`, chain 8453)
+- UnnamedContract (`0x22814bc031f47255d52db7e0e88c6d91e3d1fcce`, chain 8453)
+- UnnamedContract (`0x2626664c2603336e57b271c5c0b26f421741e481`, chain 8453)
+- UnnamedContract (`0x3489968e96edf8fe592e083e9e31d798e233b63a`, chain 8453)
+- UnnamedContract (`0x4752ba5dbc23f44d87826276bf6fd6b1c372ad24`, chain 8453)
+- UnnamedContract (`0x73624cbebd37ec1e1fd93eb5ef4fe26d9ff703a6`, chain 8453)
+- UnnamedContract (`0xadaa772e1eec300c1bb62d8342b69e8c627172a6`, chain 8453)
+- UnnamedContract (`0xbe6d8f0d05cc4be24d5167a3ef062215be6d18a5`, chain 8453)
+- UnnamedContract (`0xcf77a3ba9a5ca399b7c97c74d54e5b1beb874e43`, chain 8453)
+- GeneralSwapForwarder (`0x567a06c6e4f77fcc64cf53183e0328a7f84a4354`, chain 8453)
+- InfinityPoolsFactory (`0x86342d7bbe93cb640a6c57d4781f04d93a695f08`, chain 8453)
+- InfinityPoolsPeriphery (`0xf8fad01b2902ff57460552c920233682c7c011a7`, chain 8453)
+- UniV2SwapForwarder (`0xdc9be7d212536e8e23b0074678d0625499e61021`, chain 8453)
 
 ## Contract Surface Quality
 
@@ -108,17 +108,17 @@ The pinned logic-topography run contains 4 contract row(s) across base. Structur
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| GeneralSwapForwarder | unknown | project_anchor | own_supporting | 0 | base | unit-387408 | `0x567a06...4a4354` | ✅ Audited |
-| InfinityPoolsFactory | unknown | project_anchor | own_supporting | 1 | base | unit-387415 | `0x86342d...695f08` | ✅ Audited |
-| InfinityPoolsPeriphery | unknown | project_anchor | own_supporting | 1 | base | unit-387414 | `0xf8fad0...c011a7` | ✅ Audited |
-| UniV2SwapForwarder | unknown | project_anchor | own_supporting | 0 | base | unit-387413 | `0xdc9be7...e61021` | ✅ Audited |
+| GeneralSwapForwarder | unknown | project_anchor | own_supporting | 0 | base | unit-387408 | `0x567a06c6e4f77fcc64cf53183e0328a7f84a4354` | ✅ Audited |
+| InfinityPoolsFactory | unknown | project_anchor | own_supporting | 1 | base | unit-387415 | `0x86342d7bbe93cb640a6c57d4781f04d93a695f08` | ✅ Audited |
+| InfinityPoolsPeriphery | unknown | project_anchor | own_supporting | 1 | base | unit-387414 | `0xf8fad01b2902ff57460552c920233682c7c011a7` | ✅ Audited |
+| UniV2SwapForwarder | unknown | project_anchor | own_supporting | 0 | base | unit-387413 | `0xdc9be7d212536e8e23b0074678d0625499e61021` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| InfinityPoolsQuoter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xc9d8a5...55663c` | ⚠️ Unaudited |
-| InfinityPoolsSwapForwarder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x99a9c2...d4ebe7` | ⚠️ Unaudited |
+| InfinityPoolsQuoter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xc9d8a51be17b79eb8fd22f87f6851c243855663c` | ⚠️ Unaudited |
+| InfinityPoolsSwapForwarder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x99a9c21053acccf6961f7f12cff0d9d155d4ebe7` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -138,15 +138,15 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-387402 | `0x10b72c...73a90c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-387403 | `0x22814b...d1fcce` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-387404 | `0x262666...41e481` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-387406 | `0x348996...33b63a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-387407 | `0x4752ba...72ad24` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-387409 | `0x73624c...f703a6` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-387410 | `0xadaa77...7172a6` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-387411 | `0xbe6d8f...6d18a5` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-387412 | `0xcf77a3...874e43` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-387402 | `0x10b72ca6989d1d1c3ea5f6e3de0eeda75f73a90c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-387403 | `0x22814bc031f47255d52db7e0e88c6d91e3d1fcce` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-387404 | `0x2626664c2603336e57b271c5c0b26f421741e481` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-387406 | `0x3489968e96edf8fe592e083e9e31d798e233b63a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-387407 | `0x4752ba5dbc23f44d87826276bf6fd6b1c372ad24` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-387409 | `0x73624cbebd37ec1e1fd93eb5ef4fe26d9ff703a6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-387410 | `0xadaa772e1eec300c1bb62d8342b69e8c627172a6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-387411 | `0xbe6d8f0d05cc4be24d5167a3ef062215be6d18a5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-387412 | `0xcf77a3ba9a5ca399b7c97c74d54e5b1beb874e43` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -209,11 +209,11 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Link | SparseFloat | unmatched — not counted | — | listed in scope | no |
 | Link | UserPay | unmatched — not counted | — | listed in scope | no |
 | Link | Utils | unmatched — not counted | — | listed in scope | no |
-| Link | InfinityPoolsPeriphery | own proxy deployment | InfinityPoolsPeriphery (proxy) (selected) `0xf8fad0...c011a7` — deployed 2025-01-11 06:35:49+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Link | GeneralSwapForwarder | own contract | GeneralSwapForwarder (selected) `0x567a06...4a4354` — deployed 2025-01-11 06:35:49+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Link | UniV2SwapForwarder | own contract | UniV2SwapForwarder (selected) `0xdc9be7...e61021` — deployed 2025-01-11 06:35:49+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Link | InfinityPoolsPeriphery | own proxy deployment | InfinityPoolsPeriphery (proxy) (selected) `0xf8fad01b2902ff57460552c920233682c7c011a7` — deployed 2025-01-11 06:35:49+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Link | GeneralSwapForwarder | own contract | GeneralSwapForwarder (selected) `0x567a06c6e4f77fcc64cf53183e0328a7f84a4354` — deployed 2025-01-11 06:35:49+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Link | UniV2SwapForwarder | own contract | UniV2SwapForwarder (selected) `0xdc9be7d212536e8e23b0074678d0625499e61021` — deployed 2025-01-11 06:35:49+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Link | InfinityPool | unmatched — not counted | — | Listed in scope and mentioned in findings | no |
-| Link | InfinityPoolsFactory | own proxy deployment | InfinityPoolsFactory (proxy) (selected) `0x86342d...695f08` — deployed 2025-01-11 06:35:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Link | InfinityPoolsFactory | own proxy deployment | InfinityPoolsFactory (proxy) (selected) `0x86342d7bbe93cb640a6c57d4781f04d93a695f08` — deployed 2025-01-11 06:35:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Link | InfinityPoolState | unmatched — not counted | — | Mentioned in findings | no |
 | Link | JumpyFallback | unmatched — not counted | — | Mentioned in findings | no |
 | Link | EraBoxcarMidSum | unmatched — not counted | — | Mentioned in findings | no |

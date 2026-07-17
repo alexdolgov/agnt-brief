@@ -62,9 +62,9 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ProxyAdmin | unknown | avalanche | n/a | [`0xa5ae02...f895e4`](./contracts/avalanche-43114/0xa5ae02015e9108dc0aa42d71c1ec1fd4c0f895e4/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | avalanche | n/a | [`0x02ba08...bc705e`](./contracts/avalanche-43114/0x02ba08f6218e98ab849d5c8860195fed8cbc705e/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | avalanche | n/a | [`0x316a58...a84151`](./contracts/avalanche-43114/0x316a587b6b0ff3ad2ec1215b252eeeaba4a84151/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | avalanche | n/a | [`0xa5ae02015e9108dc0aa42d71c1ec1fd4c0f895e4`](./contracts/avalanche-43114/0xa5ae02015e9108dc0aa42d71c1ec1fd4c0f895e4/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | avalanche | n/a | [`0x02ba08f6218e98ab849d5c8860195fed8cbc705e`](./contracts/avalanche-43114/0x02ba08f6218e98ab849d5c8860195fed8cbc705e/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | avalanche | n/a | [`0x316a587b6b0ff3ad2ec1215b252eeeaba4a84151`](./contracts/avalanche-43114/0x316a587b6b0ff3ad2ec1215b252eeeaba4a84151/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

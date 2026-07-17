@@ -52,28 +52,28 @@ The pinned logic-topography run contains 3 contract row(s) across arbitrum, aval
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x077106...867575`, chain 56)
-- UnnamedContract (`0x349218...9a89f2`, chain 56)
-- UnnamedContract (`0x426e25...4a5a58`, chain 56)
-- UnnamedContract (`0x8c3483...ea28c7`, chain 56)
-- UnnamedContract (`0x8cb83d...0c077a`, chain 56)
-- UnnamedContract (`0x8d5144...12ea2e`, chain 56)
-- UnnamedContract (`0x912243...098349`, chain 56)
-- UnnamedContract (`0x9c5a7c...038cd1`, chain 56)
-- UnnamedContract (`0xd7d71e...563e25`, chain 56)
-- UnnamedContract (`0xdb59ef...034723`, chain 56)
-- UnnamedContract (`0xde3f38...9487e1`, chain 56)
-- UnnamedContract (`0xeeed67...358e36`, chain 56)
-- UnnamedContract (`0x395668...dd1d60`, chain 137)
-- UnnamedContract (`0x3f0692...c9b071`, chain 137)
-- UnnamedContract (`0x3f95b4...273ce6`, chain 137)
-- UnnamedContract (`0x400445...6960a2`, chain 137)
-- UnnamedContract (`0x8c3483...ea28c7`, chain 137)
-- UnnamedContract (`0xd7d71e...563e25`, chain 250)
-- UnnamedContract (`0xde3f38...9487e1`, chain 250)
-- ElkFactory (`0x091d35...e47091`, chain 43114)
-- StakeManager (`0x6c21e5...24338f`, chain 137)
-- TransparentUpgradeableProxy (`0x965991...a05434`, chain 137)
+- UnnamedContract (`0x077106de127dd5ea610dbcfa2f7e61832e867575`, chain 56)
+- UnnamedContract (`0x349218829a34e6c3abeda21d046da84d8a9a89f2`, chain 56)
+- UnnamedContract (`0x426e25e358fe997e6fb1f21c3efec4b82c4a5a58`, chain 56)
+- UnnamedContract (`0x8c3483df8fa193a18c0eda71d2f7114381ea28c7`, chain 56)
+- UnnamedContract (`0x8cb83d4b4a406589b78664add7060a79430c077a`, chain 56)
+- UnnamedContract (`0x8d5144167d8403deef15acf459cf9a610f12ea2e`, chain 56)
+- UnnamedContract (`0x9122431edc9ae8d7b79836f7c77980ab24098349`, chain 56)
+- UnnamedContract (`0x9c5a7ccaee7015388d8e9663c94d4027f8038cd1`, chain 56)
+- UnnamedContract (`0xd7d71e4bc981b50696fa536d330bf745ae563e25`, chain 56)
+- UnnamedContract (`0xdb59ef120ff1fa5013bb5047e513162003034723`, chain 56)
+- UnnamedContract (`0xde3f38fd15f566416fe3941b57e1b0a50a9487e1`, chain 56)
+- UnnamedContract (`0xeeed679772e95663c38f6b7335668d4ca9358e36`, chain 56)
+- UnnamedContract (`0x3956684d3c22fc1606cc5ea113c96b92a2dd1d60`, chain 137)
+- UnnamedContract (`0x3f069263c05a31c3b8cc3f621cd4baf3c8c9b071`, chain 137)
+- UnnamedContract (`0x3f95b4938b11bb3901585d561f4adbcd90273ce6`, chain 137)
+- UnnamedContract (`0x400445e4ffd2ade6435b36c9a827b50a496960a2`, chain 137)
+- UnnamedContract (`0x8c3483df8fa193a18c0eda71d2f7114381ea28c7`, chain 137)
+- UnnamedContract (`0xd7d71e4bc981b50696fa536d330bf745ae563e25`, chain 250)
+- UnnamedContract (`0xde3f38fd15f566416fe3941b57e1b0a50a9487e1`, chain 250)
+- ElkFactory (`0x091d35d7f63487909c863001ddca481c6de47091`, chain 43114)
+- StakeManager (`0x6c21e50fb9c592d5427d790fe424ae4acc24338f`, chain 137)
+- TransparentUpgradeableProxy (`0x965991775da1a3550445f76b2aa799eac0a05434`, chain 137)
 
 ## Contract Surface Quality
 
@@ -119,47 +119,47 @@ The pinned logic-topography run contains 3 contract row(s) across arbitrum, aval
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AlgebraInterfaceMulticall | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xf3295f...9b6ff8` | ⚠️ Unaudited |
-| AtletaInterfaceMulticall | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xf3295f...9b6ff8` | ⚠️ Unaudited |
-| DonaswapInterfaceMulticall | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0xf3295f...9b6ff8` | ⚠️ Unaudited |
-| Elk | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe1c110...d7ce1c` | ⚠️ Unaudited |
-| ElkDexOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x62dfb9...f46cf4` | ⚠️ Unaudited |
-| ElkDexV3Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xc05a5a...90014f` | ⚠️ Unaudited |
-| ElkFactory | unknown | project_anchor | own_supporting | 0 | avalanche | unit-236810 | `0x091d35...e47091` | ⚠️ Unaudited |
-| ElkPair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x00ad7f...0e242e` | ⚠️ Unaudited |
-| ElkRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0a2e5a...379cb0` | ⚠️ Unaudited |
-| ElkSeasonNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x28d606...13d995` | ⚠️ Unaudited |
-| ElkTeamNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x3e75ed...8844c2` | ⚠️ Unaudited |
-| ElkUpgrade | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x1fbd13...5ffaf8` | ⚠️ Unaudited |
-| ElkV2FactoryHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x28462f...624722` | ⚠️ Unaudited |
-| ElkV2FactoryHelperPermissioned | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0b921f...73a72c` | ⚠️ Unaudited |
-| ElkV2FarmFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x3ada56...3118fd` | ⚠️ Unaudited |
-| ElkV2FarmManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x28462f...624722` | ⚠️ Unaudited |
-| FarmingRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x019d4b...305b91` | ⚠️ Unaudited |
-| MooseNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x1fa540...21d393` | ⚠️ Unaudited |
-| Multicall | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xde7258...a1c16b` | ⚠️ Unaudited |
-| NFTDescriptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x5ad267...78e6e2` | ⚠️ Unaudited |
-| NonfungiblePositionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x9831c9...8465be` | ⚠️ Unaudited |
-| NonfungibleTokenPositionDescriptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x26bab4...84e68f` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x4b094a...6256f8` | ⚠️ Unaudited |
-| Quoter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x87affd...0a80b7` | ⚠️ Unaudited |
-| QuoterV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5f0138...06999d` | ⚠️ Unaudited |
-| Reservoir | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x424242...86354a` | ⚠️ Unaudited |
-| SingleStakingRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x57a1ce...57e0fa` | ⚠️ Unaudited |
-| StakeFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x0b921f...73a72c` | ⚠️ Unaudited |
-| StakeManager | unknown | project_anchor | own_supporting | 0 | polygon | unit-236805 | `0x6c21e5...24338f` | ⚠️ Unaudited |
-| StakingRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x0106ac...637452` | ⚠️ Unaudited |
-| StakingRewardsILP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x04c25a...696dfe` | ⚠️ Unaudited |
-| StakingRewardsILPV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x0137dd...ffce66` | ⚠️ Unaudited |
-| SwapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x283f87...de2221` | ⚠️ Unaudited |
-| SwapRouter02 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x7740c2...25c2f2` | ⚠️ Unaudited |
-| TeamCompensationVester | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x05f37c...cac3a6` | ⚠️ Unaudited |
-| TickLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x430638...470701` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 0 | polygon | unit-236807 | `0x965991...a05434` | ⚠️ Unaudited |
-| UniswapInterfaceMulticall | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x352d8f...87de05` | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xc146c9...b7a825` | ⚠️ Unaudited |
-| V3Migrator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xb50575...ff23be` | ⚠️ Unaudited |
-| WarpDefiV3InterfaceMulticall | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x6cc273...3a6b12` | ⚠️ Unaudited |
+| AlgebraInterfaceMulticall | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xf3295f2178762aa96edf5e3e30178e60c79b6ff8` | ⚠️ Unaudited |
+| AtletaInterfaceMulticall | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xf3295f2178762aa96edf5e3e30178e60c79b6ff8` | ⚠️ Unaudited |
+| DonaswapInterfaceMulticall | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0xf3295f2178762aa96edf5e3e30178e60c79b6ff8` | ⚠️ Unaudited |
+| Elk | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe1c110e1b1b4a1ded0caf3e42bfbdbb7b5d7ce1c` | ⚠️ Unaudited |
+| ElkDexOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x62dfb99c4d0ac8764b75a132ce0c4c433af46cf4` | ⚠️ Unaudited |
+| ElkDexV3Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xc05a5aa56df0dc97d6b9849a06627a079790014f` | ⚠️ Unaudited |
+| ElkFactory | unknown | project_anchor | own_supporting | 0 | avalanche | unit-236810 | `0x091d35d7f63487909c863001ddca481c6de47091` | ⚠️ Unaudited |
+| ElkPair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x00ad7f72a98e222c6f2680f312037e41690e242e` | ⚠️ Unaudited |
+| ElkRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0a2e5a3dc2f74e5bfaf0bf90685a5a899f379cb0` | ⚠️ Unaudited |
+| ElkSeasonNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x28d606535d18471bf7c966c0157895a9f613d995` | ⚠️ Unaudited |
+| ElkTeamNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x3e75edd8d85c059ad8e365908d807f361c8844c2` | ⚠️ Unaudited |
+| ElkUpgrade | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x1fbd13af146cf0857fd47db7fbb1441bde5ffaf8` | ⚠️ Unaudited |
+| ElkV2FactoryHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x28462f0898120db3138e5dbbe83f2f6206624722` | ⚠️ Unaudited |
+| ElkV2FactoryHelperPermissioned | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0b921fc8b84656157f5b7ddbf385205d1873a72c` | ⚠️ Unaudited |
+| ElkV2FarmFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x3ada56e04ddd5cad6dfd6ed80de6fde2ce3118fd` | ⚠️ Unaudited |
+| ElkV2FarmManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x28462f0898120db3138e5dbbe83f2f6206624722` | ⚠️ Unaudited |
+| FarmingRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x019d4b975287b7b27ac4ce4fc0538a4a7f305b91` | ⚠️ Unaudited |
+| MooseNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x1fa5409d159f6b8be52ac89531124761df21d393` | ⚠️ Unaudited |
+| Multicall | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xde7258b4c27a958d6a212d04280002cbe3a1c16b` | ⚠️ Unaudited |
+| NFTDescriptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x5ad267449556588cbfc5eec5d7fc4057b278e6e2` | ⚠️ Unaudited |
+| NonfungiblePositionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x9831c93f3024e06db9eee6a5add6e122d18465be` | ⚠️ Unaudited |
+| NonfungibleTokenPositionDescriptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x26bab438d10ac10a5f1747a53ff1fa3af984e68f` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x4b094aecf5598ca868c4470dc2c99425da6256f8` | ⚠️ Unaudited |
+| Quoter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x87affd43ed21b0d73b080fd5d0b90a46f10a80b7` | ⚠️ Unaudited |
+| QuoterV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5f01387f0c5c1aed7b86edd9da3932984e06999d` | ⚠️ Unaudited |
+| Reservoir | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x42424242b0c0d8a19dcd0df362815e242586354a` | ⚠️ Unaudited |
+| SingleStakingRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x57a1ce7686f3b2ab61f5191c76361f985b57e0fa` | ⚠️ Unaudited |
+| StakeFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x0b921fc8b84656157f5b7ddbf385205d1873a72c` | ⚠️ Unaudited |
+| StakeManager | unknown | project_anchor | own_supporting | 0 | polygon | unit-236805 | `0x6c21e50fb9c592d5427d790fe424ae4acc24338f` | ⚠️ Unaudited |
+| StakingRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x0106acef3106a417f1dd83fe543999c8b5637452` | ⚠️ Unaudited |
+| StakingRewardsILP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x04c25ab761f9518c6c43d6835e76736f06696dfe` | ⚠️ Unaudited |
+| StakingRewardsILPV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x0137ddc034562f854cc3232b805d50d52effce66` | ⚠️ Unaudited |
+| SwapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x283f87d2d4a401aa4b31fe60597bd8ba7bde2221` | ⚠️ Unaudited |
+| SwapRouter02 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x7740c2ee0051e275323feb42521ca1161925c2f2` | ⚠️ Unaudited |
+| TeamCompensationVester | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x05f37c1fb49eda6cd2656de4365da45e58cac3a6` | ⚠️ Unaudited |
+| TickLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x430638b0710eb36ec68bbf2fca97085339470701` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 0 | polygon | unit-236807 | `0x965991775da1a3550445f76b2aa799eac0a05434` | ⚠️ Unaudited |
+| UniswapInterfaceMulticall | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x352d8f40cd62ffd82d98210ffe2d75584387de05` | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xc146c9b9ce89fe9ee472470395a4cc4e73b7a825` | ⚠️ Unaudited |
+| V3Migrator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xb50575ac3a84cd7510a10f52db43adfaccff23be` | ⚠️ Unaudited |
+| WarpDefiV3InterfaceMulticall | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x6cc2738fa0c8ce397872bc0dc51140936d3a6b12` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -179,25 +179,25 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-236811 | `0x077106...867575` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-236812 | `0x349218...9a89f2` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-236813 | `0x426e25...4a5a58` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-236814 | `0x8c3483...ea28c7` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-236815 | `0x8cb83d...0c077a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-236816 | `0x8d5144...12ea2e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-236817 | `0x912243...098349` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-236818 | `0x9c5a7c...038cd1` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-236819 | `0xd7d71e...563e25` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-236820 | `0xdb59ef...034723` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-236821 | `0xde3f38...9487e1` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-236822 | `0xeeed67...358e36` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-236801 | `0x395668...dd1d60` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-236802 | `0x3f0692...c9b071` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-236803 | `0x3f95b4...273ce6` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-236804 | `0x400445...6960a2` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-236806 | `0x8c3483...ea28c7` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-236808 | `0xd7d71e...563e25` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-236809 | `0xde3f38...9487e1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-236811 | `0x077106de127dd5ea610dbcfa2f7e61832e867575` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-236812 | `0x349218829a34e6c3abeda21d046da84d8a9a89f2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-236813 | `0x426e25e358fe997e6fb1f21c3efec4b82c4a5a58` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-236814 | `0x8c3483df8fa193a18c0eda71d2f7114381ea28c7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-236815 | `0x8cb83d4b4a406589b78664add7060a79430c077a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-236816 | `0x8d5144167d8403deef15acf459cf9a610f12ea2e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-236817 | `0x9122431edc9ae8d7b79836f7c77980ab24098349` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-236818 | `0x9c5a7ccaee7015388d8e9663c94d4027f8038cd1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-236819 | `0xd7d71e4bc981b50696fa536d330bf745ae563e25` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-236820 | `0xdb59ef120ff1fa5013bb5047e513162003034723` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-236821 | `0xde3f38fd15f566416fe3941b57e1b0a50a9487e1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-236822 | `0xeeed679772e95663c38f6b7335668d4ca9358e36` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-236801 | `0x3956684d3c22fc1606cc5ea113c96b92a2dd1d60` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-236802 | `0x3f069263c05a31c3b8cc3f621cd4baf3c8c9b071` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-236803 | `0x3f95b4938b11bb3901585d561f4adbcd90273ce6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-236804 | `0x400445e4ffd2ade6435b36c9a827b50a496960a2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-236806 | `0x8c3483df8fa193a18c0eda71d2f7114381ea28c7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-236808 | `0xd7d71e4bc981b50696fa536d330bf745ae563e25` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-236809 | `0xde3f38fd15f566416fe3941b57e1b0a50a9487e1` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -228,8 +228,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| avalanche | `0x091d35...e47091` | ElkFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | `0x6c21e5...24338f` | StakeManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | `0x091d35d7f63487909c863001ddca481c6de47091` | ElkFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0x6c21e50fb9c592d5427d790fe424ae4acc24338f` | StakeManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

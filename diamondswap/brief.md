@@ -61,27 +61,27 @@ The protocol comprises 3 functional families. Its contracts share 10 common proj
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AirDropper | unknown | base | n/a | [`0xfda4f2...62dbdc`](./contracts/base-8453/0xfda4f231efae3c88a9121970e1b408c5b862dbdc/) | ⚠️ Unaudited |
-| BasicAuth | unknown | base | n/a | [`0x7a39d2...5a5b2b`](./contracts/base-8453/0x7a39d26641ed8c8061e8f58a73eff348345a5b2b/) | ⚠️ Unaudited |
-| CTOFacet | unknown | base | n/a | [`0xfa8d16...5f3a34`](./contracts/base-8453/0xfa8d16a2285613da39001b6f168e9e83135f3a34/) | ⚠️ Unaudited |
-| CTOInit | unknown | base | n/a | [`0x36cadc...26054a`](./contracts/base-8453/0x36cadce52bbe76840a57aec4731444832026054a/) | ⚠️ Unaudited |
-| DefaultDiamondProxy | unknown | base | n/a | [`0x19ccc8...fc1b2f`](./contracts/base-8453/0x19ccc8e9796d278820c259f287c2ff5c42fc1b2f/) | ⚠️ Unaudited |
-| DiamondSwapV2FactoryFacet | unknown | base | n/a | [`0x9108ba...36c150`](./contracts/base-8453/0x9108ba9ff5570c31eb69fa039381e49dd036c150/) | ⚠️ Unaudited |
-| DiamondSwapV2FactoryInit | unknown | base | n/a | [`0x7e7315...bc5c6b`](./contracts/base-8453/0x7e73154252484d67bad9966a44a32b45d9bc5c6b/) | ⚠️ Unaudited |
-| DiamondSwapV2RouterFacet | unknown | base | n/a | [`0x6b48db...0dbe67`](./contracts/base-8453/0x6b48dbc21193d725bcea11a4ff9e2f8d7f0dbe67/) | ⚠️ Unaudited |
-| DiamondSwapV2RouterInit | unknown | base | n/a | [`0x7c3762...04f14e`](./contracts/base-8453/0x7c3762fdaa608254f98a0071347ee471a504f14e/) | ⚠️ Unaudited |
-| DiamondSwapV3Factory | unknown | base | n/a | [`0x80778a...bc4637`](./contracts/base-8453/0x80778a7b9d0e391bf45b9c7a76ee3cc9b4bc4637/) | ⚠️ Unaudited |
-| DYORFacet | unknown | base | n/a | [`0xa629d7...9b156c`](./contracts/base-8453/0xa629d7e42f3041df983bf8011cc1d9b3229b156c/) | ⚠️ Unaudited |
-| DYORInit | unknown | base | n/a | [`0xb4428e...b02522`](./contracts/base-8453/0xb4428e82af311d8211a47f06b36f6cd433b02522/) | ⚠️ Unaudited |
-| NonfungiblePositionManager | unknown | base | n/a | [`0x66ab3d...332cc9`](./contracts/base-8453/0x66ab3d6a0fcec856a4d6ab709fe422d0c9332cc9/) | ⚠️ Unaudited |
-| NonfungibleTokenPositionDescriptor | unknown | base | n/a | [`0x07e0fd...908e6c`](./contracts/base-8453/0x07e0fd7588e9f1022f1bdbccfe16793792908e6c/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | base | n/a | [`0x8b97db...242a21`](./contracts/base-8453/0x8b97db61c78b051d817e0cd226ecbfb1e4242a21/) | ⚠️ Unaudited |
-| QuoterV2 | unknown | base | n/a | [`0x1e5812...f5d308`](./contracts/base-8453/0x1e58120d59c3f18b8b456348eee4f712a4f5d308/) | ⚠️ Unaudited |
-| StakingFacet | unknown | base | n/a | [`0x94cd5b...10cc20`](./contracts/base-8453/0x94cd5ba94c50fc5ed7ac889650dadff85110cc20/) | ⚠️ Unaudited |
-| StakingInit | unknown | base | n/a | [`0x792299...f1f309`](./contracts/base-8453/0x792299d4e4473eb033051d71644a089d52f1f309/) | ⚠️ Unaudited |
-| SwapRouter02 | unknown | base | n/a | [`0x94e656...2bb4d3`](./contracts/base-8453/0x94e656ddd2ec7f47154e10765ff5e664592bb4d3/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | base | n/a | [`0xa4cbf1...4e24bc`](./contracts/base-8453/0xa4cbf1e40d8aaa011a667ae2082dde6b944e24bc/) | ⚠️ Unaudited |
-| VaultFacet | unknown | base | n/a | [`0x530090...353650`](./contracts/base-8453/0x530090b2ec1bbeb2fde9e47284af50e725353650/) | ⚠️ Unaudited |
+| AirDropper | unknown | base | n/a | [`0xfda4f231efae3c88a9121970e1b408c5b862dbdc`](./contracts/base-8453/0xfda4f231efae3c88a9121970e1b408c5b862dbdc/) | ⚠️ Unaudited |
+| BasicAuth | unknown | base | n/a | [`0x7a39d26641ed8c8061e8f58a73eff348345a5b2b`](./contracts/base-8453/0x7a39d26641ed8c8061e8f58a73eff348345a5b2b/) | ⚠️ Unaudited |
+| CTOFacet | unknown | base | n/a | [`0xfa8d16a2285613da39001b6f168e9e83135f3a34`](./contracts/base-8453/0xfa8d16a2285613da39001b6f168e9e83135f3a34/) | ⚠️ Unaudited |
+| CTOInit | unknown | base | n/a | [`0x36cadce52bbe76840a57aec4731444832026054a`](./contracts/base-8453/0x36cadce52bbe76840a57aec4731444832026054a/) | ⚠️ Unaudited |
+| DefaultDiamondProxy | unknown | base | n/a | [`0x19ccc8e9796d278820c259f287c2ff5c42fc1b2f`](./contracts/base-8453/0x19ccc8e9796d278820c259f287c2ff5c42fc1b2f/) | ⚠️ Unaudited |
+| DiamondSwapV2FactoryFacet | unknown | base | n/a | [`0x9108ba9ff5570c31eb69fa039381e49dd036c150`](./contracts/base-8453/0x9108ba9ff5570c31eb69fa039381e49dd036c150/) | ⚠️ Unaudited |
+| DiamondSwapV2FactoryInit | unknown | base | n/a | [`0x7e73154252484d67bad9966a44a32b45d9bc5c6b`](./contracts/base-8453/0x7e73154252484d67bad9966a44a32b45d9bc5c6b/) | ⚠️ Unaudited |
+| DiamondSwapV2RouterFacet | unknown | base | n/a | [`0x6b48dbc21193d725bcea11a4ff9e2f8d7f0dbe67`](./contracts/base-8453/0x6b48dbc21193d725bcea11a4ff9e2f8d7f0dbe67/) | ⚠️ Unaudited |
+| DiamondSwapV2RouterInit | unknown | base | n/a | [`0x7c3762fdaa608254f98a0071347ee471a504f14e`](./contracts/base-8453/0x7c3762fdaa608254f98a0071347ee471a504f14e/) | ⚠️ Unaudited |
+| DiamondSwapV3Factory | unknown | base | n/a | [`0x80778a7b9d0e391bf45b9c7a76ee3cc9b4bc4637`](./contracts/base-8453/0x80778a7b9d0e391bf45b9c7a76ee3cc9b4bc4637/) | ⚠️ Unaudited |
+| DYORFacet | unknown | base | n/a | [`0xa629d7e42f3041df983bf8011cc1d9b3229b156c`](./contracts/base-8453/0xa629d7e42f3041df983bf8011cc1d9b3229b156c/) | ⚠️ Unaudited |
+| DYORInit | unknown | base | n/a | [`0xb4428e82af311d8211a47f06b36f6cd433b02522`](./contracts/base-8453/0xb4428e82af311d8211a47f06b36f6cd433b02522/) | ⚠️ Unaudited |
+| NonfungiblePositionManager | unknown | base | n/a | [`0x66ab3d6a0fcec856a4d6ab709fe422d0c9332cc9`](./contracts/base-8453/0x66ab3d6a0fcec856a4d6ab709fe422d0c9332cc9/) | ⚠️ Unaudited |
+| NonfungibleTokenPositionDescriptor | unknown | base | n/a | [`0x07e0fd7588e9f1022f1bdbccfe16793792908e6c`](./contracts/base-8453/0x07e0fd7588e9f1022f1bdbccfe16793792908e6c/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | base | n/a | [`0x8b97db61c78b051d817e0cd226ecbfb1e4242a21`](./contracts/base-8453/0x8b97db61c78b051d817e0cd226ecbfb1e4242a21/) | ⚠️ Unaudited |
+| QuoterV2 | unknown | base | n/a | [`0x1e58120d59c3f18b8b456348eee4f712a4f5d308`](./contracts/base-8453/0x1e58120d59c3f18b8b456348eee4f712a4f5d308/) | ⚠️ Unaudited |
+| StakingFacet | unknown | base | n/a | [`0x94cd5ba94c50fc5ed7ac889650dadff85110cc20`](./contracts/base-8453/0x94cd5ba94c50fc5ed7ac889650dadff85110cc20/) | ⚠️ Unaudited |
+| StakingInit | unknown | base | n/a | [`0x792299d4e4473eb033051d71644a089d52f1f309`](./contracts/base-8453/0x792299d4e4473eb033051d71644a089d52f1f309/) | ⚠️ Unaudited |
+| SwapRouter02 | unknown | base | n/a | [`0x94e656ddd2ec7f47154e10765ff5e664592bb4d3`](./contracts/base-8453/0x94e656ddd2ec7f47154e10765ff5e664592bb4d3/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | base | n/a | [`0xa4cbf1e40d8aaa011a667ae2082dde6b944e24bc`](./contracts/base-8453/0xa4cbf1e40d8aaa011a667ae2082dde6b944e24bc/) | ⚠️ Unaudited |
+| VaultFacet | unknown | base | n/a | [`0x530090b2ec1bbeb2fde9e47284af50e725353650`](./contracts/base-8453/0x530090b2ec1bbeb2fde9e47284af50e725353650/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -114,25 +114,25 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0xfda4f2...62dbdc`](./contracts/base-8453/0xfda4f231efae3c88a9121970e1b408c5b862dbdc/) | AirDropper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x7a39d2...5a5b2b`](./contracts/base-8453/0x7a39d26641ed8c8061e8f58a73eff348345a5b2b/) | BasicAuth | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xfa8d16...5f3a34`](./contracts/base-8453/0xfa8d16a2285613da39001b6f168e9e83135f3a34/) | CTOFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x36cadc...26054a`](./contracts/base-8453/0x36cadce52bbe76840a57aec4731444832026054a/) | CTOInit | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x19ccc8...fc1b2f`](./contracts/base-8453/0x19ccc8e9796d278820c259f287c2ff5c42fc1b2f/) | DefaultDiamondProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x9108ba...36c150`](./contracts/base-8453/0x9108ba9ff5570c31eb69fa039381e49dd036c150/) | DiamondSwapV2FactoryFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x7e7315...bc5c6b`](./contracts/base-8453/0x7e73154252484d67bad9966a44a32b45d9bc5c6b/) | DiamondSwapV2FactoryInit | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x6b48db...0dbe67`](./contracts/base-8453/0x6b48dbc21193d725bcea11a4ff9e2f8d7f0dbe67/) | DiamondSwapV2RouterFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x7c3762...04f14e`](./contracts/base-8453/0x7c3762fdaa608254f98a0071347ee471a504f14e/) | DiamondSwapV2RouterInit | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x80778a...bc4637`](./contracts/base-8453/0x80778a7b9d0e391bf45b9c7a76ee3cc9b4bc4637/) | DiamondSwapV3Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xa629d7...9b156c`](./contracts/base-8453/0xa629d7e42f3041df983bf8011cc1d9b3229b156c/) | DYORFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xb4428e...b02522`](./contracts/base-8453/0xb4428e82af311d8211a47f06b36f6cd433b02522/) | DYORInit | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x66ab3d...332cc9`](./contracts/base-8453/0x66ab3d6a0fcec856a4d6ab709fe422d0c9332cc9/) | NonfungiblePositionManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x07e0fd...908e6c`](./contracts/base-8453/0x07e0fd7588e9f1022f1bdbccfe16793792908e6c/) | NonfungibleTokenPositionDescriptor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x1e5812...f5d308`](./contracts/base-8453/0x1e58120d59c3f18b8b456348eee4f712a4f5d308/) | QuoterV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x94cd5b...10cc20`](./contracts/base-8453/0x94cd5ba94c50fc5ed7ac889650dadff85110cc20/) | StakingFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x792299...f1f309`](./contracts/base-8453/0x792299d4e4473eb033051d71644a089d52f1f309/) | StakingInit | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x94e656...2bb4d3`](./contracts/base-8453/0x94e656ddd2ec7f47154e10765ff5e664592bb4d3/) | SwapRouter02 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x530090...353650`](./contracts/base-8453/0x530090b2ec1bbeb2fde9e47284af50e725353650/) | VaultFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xfda4f231efae3c88a9121970e1b408c5b862dbdc`](./contracts/base-8453/0xfda4f231efae3c88a9121970e1b408c5b862dbdc/) | AirDropper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x7a39d26641ed8c8061e8f58a73eff348345a5b2b`](./contracts/base-8453/0x7a39d26641ed8c8061e8f58a73eff348345a5b2b/) | BasicAuth | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xfa8d16a2285613da39001b6f168e9e83135f3a34`](./contracts/base-8453/0xfa8d16a2285613da39001b6f168e9e83135f3a34/) | CTOFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x36cadce52bbe76840a57aec4731444832026054a`](./contracts/base-8453/0x36cadce52bbe76840a57aec4731444832026054a/) | CTOInit | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x19ccc8e9796d278820c259f287c2ff5c42fc1b2f`](./contracts/base-8453/0x19ccc8e9796d278820c259f287c2ff5c42fc1b2f/) | DefaultDiamondProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x9108ba9ff5570c31eb69fa039381e49dd036c150`](./contracts/base-8453/0x9108ba9ff5570c31eb69fa039381e49dd036c150/) | DiamondSwapV2FactoryFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x7e73154252484d67bad9966a44a32b45d9bc5c6b`](./contracts/base-8453/0x7e73154252484d67bad9966a44a32b45d9bc5c6b/) | DiamondSwapV2FactoryInit | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x6b48dbc21193d725bcea11a4ff9e2f8d7f0dbe67`](./contracts/base-8453/0x6b48dbc21193d725bcea11a4ff9e2f8d7f0dbe67/) | DiamondSwapV2RouterFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x7c3762fdaa608254f98a0071347ee471a504f14e`](./contracts/base-8453/0x7c3762fdaa608254f98a0071347ee471a504f14e/) | DiamondSwapV2RouterInit | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x80778a7b9d0e391bf45b9c7a76ee3cc9b4bc4637`](./contracts/base-8453/0x80778a7b9d0e391bf45b9c7a76ee3cc9b4bc4637/) | DiamondSwapV3Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xa629d7e42f3041df983bf8011cc1d9b3229b156c`](./contracts/base-8453/0xa629d7e42f3041df983bf8011cc1d9b3229b156c/) | DYORFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xb4428e82af311d8211a47f06b36f6cd433b02522`](./contracts/base-8453/0xb4428e82af311d8211a47f06b36f6cd433b02522/) | DYORInit | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x66ab3d6a0fcec856a4d6ab709fe422d0c9332cc9`](./contracts/base-8453/0x66ab3d6a0fcec856a4d6ab709fe422d0c9332cc9/) | NonfungiblePositionManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x07e0fd7588e9f1022f1bdbccfe16793792908e6c`](./contracts/base-8453/0x07e0fd7588e9f1022f1bdbccfe16793792908e6c/) | NonfungibleTokenPositionDescriptor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x1e58120d59c3f18b8b456348eee4f712a4f5d308`](./contracts/base-8453/0x1e58120d59c3f18b8b456348eee4f712a4f5d308/) | QuoterV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x94cd5ba94c50fc5ed7ac889650dadff85110cc20`](./contracts/base-8453/0x94cd5ba94c50fc5ed7ac889650dadff85110cc20/) | StakingFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x792299d4e4473eb033051d71644a089d52f1f309`](./contracts/base-8453/0x792299d4e4473eb033051d71644a089d52f1f309/) | StakingInit | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x94e656ddd2ec7f47154e10765ff5e664592bb4d3`](./contracts/base-8453/0x94e656ddd2ec7f47154e10765ff5e664592bb4d3/) | SwapRouter02 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x530090b2ec1bbeb2fde9e47284af50e725353650`](./contracts/base-8453/0x530090b2ec1bbeb2fde9e47284af50e725353650/) | VaultFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

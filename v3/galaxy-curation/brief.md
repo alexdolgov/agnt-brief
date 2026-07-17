@@ -52,10 +52,10 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- VaultV2 (`0x187880...f9824f`, chain 1)
-- VaultV2 (`0x71ffb6...9d878d`, chain 1)
-- VaultV2 (`0x91600e...1be7d8`, chain 1)
-- VaultV2 (`0xd95fe7...9e8d96`, chain 1)
+- VaultV2 (`0x1878805799273d10ae96a58201a6f5254cf9824f`, chain 1)
+- VaultV2 (`0x71ffb6a81786ec285d429d531cf655107b9d878d`, chain 1)
+- VaultV2 (`0x91600e31fbedc72433d4a57f16639cfe661be7d8`, chain 1)
+- VaultV2 (`0xd95fe7adf5075fad9d6bf853e0f9fe53369e8d96`, chain 1)
 
 ## Contract Surface Quality
 
@@ -101,10 +101,10 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| VaultV2 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386685 | `0x187880...f9824f` | ⚠️ Unaudited |
-| VaultV2 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386686 | `0x71ffb6...9d878d` | ⚠️ Unaudited |
-| VaultV2 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386687 | `0x91600e...1be7d8` | ⚠️ Unaudited |
-| VaultV2 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386688 | `0xd95fe7...9e8d96` | ⚠️ Unaudited |
+| VaultV2 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386685 | `0x1878805799273d10ae96a58201a6f5254cf9824f` | ⚠️ Unaudited |
+| VaultV2 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386686 | `0x71ffb6a81786ec285d429d531cf655107b9d878d` | ⚠️ Unaudited |
+| VaultV2 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386687 | `0x91600e31fbedc72433d4a57f16639cfe661be7d8` | ⚠️ Unaudited |
+| VaultV2 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386688 | `0xd95fe7adf5075fad9d6bf853e0f9fe53369e8d96` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

@@ -57,8 +57,8 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x36213c...4ace8d`, chain 43114)
-- UnnamedContract (`0xdf3402...97ebd8`, chain 43114)
+- UnnamedContract (`0x36213ca1483869c5616be738bf8da7c9b34ace8d`, chain 43114)
+- UnnamedContract (`0xdf34022e8a280fc79499ca560439bb6f9797ebd8`, chain 43114)
 
 ## Contract Surface Quality
 
@@ -104,7 +104,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| VestingContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x32c8d0...1104a2` | ⚠️ Unaudited |
+| VestingContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x32c8d08c742711342d19d7b3fa53286ae51104a2` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -124,8 +124,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-392156 | `0x36213c...4ace8d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-392158 | `0xdf3402...97ebd8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-392156 | `0x36213ca1483869c5616be738bf8da7c9b34ace8d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-392158 | `0xdf34022e8a280fc79499ca560439bb6f9797ebd8` | ❓ Unverified |
 
 ## Audit Inventory
 

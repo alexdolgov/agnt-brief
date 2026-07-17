@@ -54,31 +54,31 @@ The pinned logic-topography run contains 2 contract row(s) across aurora, ethere
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x04ac48...71095e`, chain 1313161554)
-- UnnamedContract (`0x054fc0...9098bf`, chain 1313161554)
-- UnnamedContract (`0x0bc03b...9d400a`, chain 1313161554)
-- UnnamedContract (`0x319594...e94786`, chain 1313161554)
-- UnnamedContract (`0x4f0d86...b5917b`, chain 1313161554)
-- UnnamedContract (`0x5715c4...c5412b`, chain 1313161554)
-- UnnamedContract (`0x5ccad0...78d7cc`, chain 1313161554)
-- UnnamedContract (`0x60bf66...86b89f`, chain 1313161554)
-- UnnamedContract (`0x6ea6c0...d24dca`, chain 1313161554)
-- UnnamedContract (`0x817af6...369aeb`, chain 1313161554)
-- UnnamedContract (`0x888868...e433bf`, chain 1313161554)
-- UnnamedContract (`0xa200b5...e195f8`, chain 1313161554)
-- UnnamedContract (`0xa308a5...e441e6`, chain 1313161554)
-- UnnamedContract (`0xa8f1a3...7743a1`, chain 1313161554)
-- UnnamedContract (`0xad5a24...9b1c54`, chain 1313161554)
-- UnnamedContract (`0xae4fac...6e9423`, chain 1313161554)
-- UnnamedContract (`0xc6e518...744e90`, chain 1313161554)
-- UnnamedContract (`0xc9011e...3a792c`, chain 1313161554)
-- UnnamedContract (`0xc9a848...c0bbc2`, chain 1313161554)
-- UnnamedContract (`0xca9511...4449e9`, chain 1313161554)
-- UnnamedContract (`0xcecd14...19e0bd`, chain 1313161554)
-- UnnamedContract (`0xcfb6b0...60adbb`, chain 1313161554)
-- UnnamedContract (`0xffdffb...0a1e70`, chain 1313161554)
-- EvmErc20 (`0x09c9d4...8d3a4f`, chain 1313161554)
-- Ply (`0x1ab432...2ef90b`, chain 1)
+- UnnamedContract (`0x04ac48711bcdc45b4d223fb021e09da73c71095e`, chain 1313161554)
+- UnnamedContract (`0x054fc05b20bd0a4c44cde830ac086b511e9098bf`, chain 1313161554)
+- UnnamedContract (`0x0bc03bd8d4af1e8bab2194860268f5774c9d400a`, chain 1313161554)
+- UnnamedContract (`0x3195949f267702723bc614cae037cdc8d1e94786`, chain 1313161554)
+- UnnamedContract (`0x4f0d864b1abf4b701799a0b30b57a22dfeb5917b`, chain 1313161554)
+- UnnamedContract (`0x5715c45d2c82292d8e5961eb5e2c66fe0fc5412b`, chain 1313161554)
+- UnnamedContract (`0x5ccad065400341db391fd3a4b7f50087b678d7cc`, chain 1313161554)
+- UnnamedContract (`0x60bf668ca101060bd83bd644531a38719586b89f`, chain 1313161554)
+- UnnamedContract (`0x6ea6c03061bddce23d4ec60b6e6e880c33d24dca`, chain 1313161554)
+- UnnamedContract (`0x817af6cfaf35bdc1a634d6cc94ee9e4c68369aeb`, chain 1313161554)
+- UnnamedContract (`0x8888682e24dd4df7b7ff2b91fccb575737e433bf`, chain 1313161554)
+- UnnamedContract (`0xa200b567579a577f582d292f7a1b5c4ecce195f8`, chain 1313161554)
+- UnnamedContract (`0xa308a5003fa1a25bfdd9418fcee51d48dbe441e6`, chain 1313161554)
+- UnnamedContract (`0xa8f1a390ca227365fec3e53cf2851520b77743a1`, chain 1313161554)
+- UnnamedContract (`0xad5a2437ff55ed7a8cad3b797b3ec7c5a19b1c54`, chain 1313161554)
+- UnnamedContract (`0xae4fac24dcdae0132c6d04f564dcf059616e9423`, chain 1313161554)
+- UnnamedContract (`0xc6e5185438e1730959c1ef3551059a3fec744e90`, chain 1313161554)
+- UnnamedContract (`0xc9011e629c9d0b8b1e4a2091e123fbb87b3a792c`, chain 1313161554)
+- UnnamedContract (`0xc9a848ac73e378516b16e4eebba5ef6afbc0bbc2`, chain 1313161554)
+- UnnamedContract (`0xca9511b610ba5fc7e311fdef9ce16050ee4449e9`, chain 1313161554)
+- UnnamedContract (`0xcecd147409b2d64a9a2e5418e3e471e8af19e0bd`, chain 1313161554)
+- UnnamedContract (`0xcfb6b0498cb7555e7e21502e0f449bf28760adbb`, chain 1313161554)
+- UnnamedContract (`0xffdffbdb966cb84b50e62d70105f2dbf2e0a1e70`, chain 1313161554)
+- EvmErc20 (`0x09c9d464b58d96837f8d8b6f4d9fe4ad408d3a4f`, chain 1313161554)
+- Ply (`0x1ab43204a195a0fd37edec621482afd3792ef90b`, chain 1)
 
 ## Contract Surface Quality
 
@@ -125,10 +125,10 @@ The pinned logic-topography run contains 2 contract row(s) across aurora, ethere
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| EvmErc20 | token | project_anchor | own_supporting | 0 | aurora | unit-227660 | `0x09c9d4...8d3a4f` | ⚠️ Unaudited |
-| EvmErc20 | token | non_address_book | non_address_book_inventory (excluded) | 0 | aurora | n/a | `0x3d4205...bb7980` | ⚠️ Unaudited |
-| Ply | unknown | project_anchor | own_supporting | 0 | ethereum | unit-227654 | `0x1ab432...2ef90b` | ⚠️ Unaudited |
-| Ply | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7cc183...67b877` | ⚠️ Unaudited |
+| EvmErc20 | token | project_anchor | own_supporting | 0 | aurora | unit-227660 | `0x09c9d464b58d96837f8d8b6f4d9fe4ad408d3a4f` | ⚠️ Unaudited |
+| EvmErc20 | token | non_address_book | non_address_book_inventory (excluded) | 0 | aurora | n/a | `0x3d4205511c25ccd29e3fff6fba0d321b44bb7980` | ⚠️ Unaudited |
+| Ply | unknown | project_anchor | own_supporting | 0 | ethereum | unit-227654 | `0x1ab43204a195a0fd37edec621482afd3792ef90b` | ⚠️ Unaudited |
+| Ply | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7cc183af8d90015e5aa935a5240be1c2b367b877` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -148,29 +148,29 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227656 | `0x04ac48...71095e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227658 | `0x054fc0...9098bf` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227662 | `0x0bc03b...9d400a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227664 | `0x319594...e94786` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227666 | `0x4f0d86...b5917b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227668 | `0x5715c4...c5412b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227670 | `0x5ccad0...78d7cc` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227672 | `0x60bf66...86b89f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227674 | `0x6ea6c0...d24dca` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227676 | `0x817af6...369aeb` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227678 | `0x888868...e433bf` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227680 | `0xa200b5...e195f8` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227682 | `0xa308a5...e441e6` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227684 | `0xa8f1a3...7743a1` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227685 | `0xad5a24...9b1c54` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227687 | `0xae4fac...6e9423` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227689 | `0xc6e518...744e90` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227691 | `0xc9011e...3a792c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227693 | `0xc9a848...c0bbc2` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227695 | `0xca9511...4449e9` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227697 | `0xcecd14...19e0bd` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227699 | `0xcfb6b0...60adbb` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227701 | `0xffdffb...0a1e70` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227656 | `0x04ac48711bcdc45b4d223fb021e09da73c71095e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227658 | `0x054fc05b20bd0a4c44cde830ac086b511e9098bf` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227662 | `0x0bc03bd8d4af1e8bab2194860268f5774c9d400a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227664 | `0x3195949f267702723bc614cae037cdc8d1e94786` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227666 | `0x4f0d864b1abf4b701799a0b30b57a22dfeb5917b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227668 | `0x5715c45d2c82292d8e5961eb5e2c66fe0fc5412b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227670 | `0x5ccad065400341db391fd3a4b7f50087b678d7cc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227672 | `0x60bf668ca101060bd83bd644531a38719586b89f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227674 | `0x6ea6c03061bddce23d4ec60b6e6e880c33d24dca` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227676 | `0x817af6cfaf35bdc1a634d6cc94ee9e4c68369aeb` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227678 | `0x8888682e24dd4df7b7ff2b91fccb575737e433bf` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227680 | `0xa200b567579a577f582d292f7a1b5c4ecce195f8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227682 | `0xa308a5003fa1a25bfdd9418fcee51d48dbe441e6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227684 | `0xa8f1a390ca227365fec3e53cf2851520b77743a1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227685 | `0xad5a2437ff55ed7a8cad3b797b3ec7c5a19b1c54` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227687 | `0xae4fac24dcdae0132c6d04f564dcf059616e9423` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227689 | `0xc6e5185438e1730959c1ef3551059a3fec744e90` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227691 | `0xc9011e629c9d0b8b1e4a2091e123fbb87b3a792c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227693 | `0xc9a848ac73e378516b16e4eebba5ef6afbc0bbc2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227695 | `0xca9511b610ba5fc7e311fdef9ce16050ee4449e9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227697 | `0xcecd147409b2d64a9a2e5418e3e471e8af19e0bd` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227699 | `0xcfb6b0498cb7555e7e21502e0f449bf28760adbb` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-227701 | `0xffdffbdb966cb84b50e62d70105f2dbf2e0a1e70` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -194,11 +194,11 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 |---|---|---|---|---|---|
 | Aurigami_Finance_Audit_Report_by_WatchPug.pdf | AuErc20 | unmatched — not counted | — | mentioned in finding AF-1 | no |
 | Aurigami_Finance_Audit_Report_by_WatchPug.pdf | AuToken | unmatched — not counted | — | mentioned in findings AF-1, AF-2, AF-3 | no |
-| Aurigami_Finance_Audit_Report_by_WatchPug.pdf | Unitroller | own contract | 0x817af6… (selected) `0x817af6...369aeb` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Aurigami_Finance_Audit_Report_by_WatchPug.pdf | AuriLens | own contract | 0xffdffb… (selected) `0xffdffb...0a1e70` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Aurigami_Finance_Audit_Report_by_WatchPug.pdf | Unitroller | own contract | 0x817af6… (selected) `0x817af6cfaf35bdc1a634d6cc94ee9e4c68369aeb` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Aurigami_Finance_Audit_Report_by_WatchPug.pdf | AuriLens | own contract | 0xffdffb… (selected) `0xffdffbdb966cb84b50e62d70105f2dbf2e0a1e70` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Aurigami_Finance_Audit_Report_by_WatchPug.pdf | Comptroller | unmatched — not counted | — | mentioned in findings AF-4, AF-5 | no |
 | Aurigami_Finance_Audit_Report_by_WatchPug.pdf | AuriMathLib | unmatched — not counted | — | mentioned in finding AF-6 | no |
-| Aurigami_Finance_Audit_Report_by_WatchPug.pdf | AuETH | own contract | 0xca9511… (selected) `0xca9511...4449e9` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Aurigami_Finance_Audit_Report_by_WatchPug.pdf | AuETH | own contract | 0xca9511… (selected) `0xca9511b610ba5fc7e311fdef9ce16050ee4449e9` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Aurigami_Finance_Audit_Report_by_WatchPug.pdf | AuriOracle | unmatched — not counted | — | mentioned in finding AF-8 | no |
 
 ## Coverage Gaps

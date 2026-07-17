@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across aurora. Struct
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xccc2b1...a4a0ec`, chain 1313161554)
+- UnnamedContract (`0xccc2b1ad21666a5847a804a73a41f904c4a4a0ec`, chain 1313161554)
 
 ## Contract Surface Quality
 
@@ -103,11 +103,11 @@ The pinned logic-topography run contains 1 contract row(s) across aurora. Struct
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ERC1967Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | aurora | n/a | `0x05702b...41e48e` | ⚠️ Unaudited |
-| EvmErc20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | aurora | n/a | `0x18921f...1617bc` | ⚠️ Unaudited |
-| JetStakingV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | aurora | n/a | `0x852f13...790934` | ⚠️ Unaudited |
-| Treasury | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | aurora | n/a | `0x4c101a...ed827a` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | aurora | unit-379832 | `0xccc2b1...a4a0ec` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | aurora | n/a | `0x05702b754bdd27015a18faf2009d8781f641e48e` | ⚠️ Unaudited |
+| EvmErc20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | aurora | n/a | `0x18921f1e257038e538ba24d49fa6495c8b1617bc` | ⚠️ Unaudited |
+| JetStakingV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | aurora | n/a | `0x852f139dd31d2cdc669470880700037cb3790934` | ⚠️ Unaudited |
+| Treasury | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | aurora | n/a | `0x4c101a39ca2d3095db2507dadde736b8e6ed827a` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | aurora | unit-379832 | `0xccc2b1ad21666a5847a804a73a41f904c4a4a0ec` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

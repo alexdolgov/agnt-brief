@@ -62,8 +62,8 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ProxyAdmin | governance | bsc | n/a | [`0xcd4337...8afbcb`](./contracts/bsc-56/0xcd43379650cfe58ff73a1db0bdfa2863cd8afbcb/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | bsc | n/a | 2 deployments: bsc [`0x145cd0...1625db`](./contracts/bsc-56/0x145cd0d5c3dd0ef1405dcf1b4d2bce7c611625db/); bsc `0xa8fa31...b60bc1` | ⚠️ Unaudited |
+| ProxyAdmin | governance | bsc | n/a | [`0xcd43379650cfe58ff73a1db0bdfa2863cd8afbcb`](./contracts/bsc-56/0xcd43379650cfe58ff73a1db0bdfa2863cd8afbcb/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | bsc | n/a | 2 deployments: bsc [`0x145cd0d5c3dd0ef1405dcf1b4d2bce7c611625db`](./contracts/bsc-56/0x145cd0d5c3dd0ef1405dcf1b4d2bce7c611625db/); bsc `0xa8fa31388d7d9a02450a943f486bbea3b4b60bc1` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

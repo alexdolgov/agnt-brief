@@ -52,12 +52,12 @@ The pinned logic-topography run contains 5 contract row(s) across avalanche, bas
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x749b89...ae8454`, chain 8453)
-- ERC1967Proxy (`0x068f32...1c8a29`, chain 999)
-- ERC1967Proxy (`0x27ec64...6f4452`, chain 999)
-- ERC1967Proxy (`0x3b4575...b2cedf`, chain 999)
-- ERC1967Proxy (`0x9fdbda...993463`, chain 999)
-- ERC1967Proxy (`0xbe6727...cf7907`, chain 999)
+- UnnamedContract (`0x749b898e5b523f08e9e371d259e0409c19ae8454`, chain 8453)
+- ERC1967Proxy (`0x068f321fa8fb9f0d135f290ef6a3e2813e1c8a29`, chain 999)
+- ERC1967Proxy (`0x27ec642013bcb3d80ca3706599d3cda04f6f4452`, chain 999)
+- ERC1967Proxy (`0x3b4575e689ded21caad31d64c4df1f10f3b2cedf`, chain 999)
+- ERC1967Proxy (`0x9fdbda0a5e284c32744d2f17ee5c74b284993463`, chain 999)
+- ERC1967Proxy (`0xbe6727b535545c67d5caa73dea54865b92cf7907`, chain 999)
 
 ## Contract Surface Quality
 
@@ -103,12 +103,12 @@ The pinned logic-topography run contains 5 contract row(s) across avalanche, bas
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | hyperliquid | unit-259835 | `0x068f32...1c8a29` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | hyperliquid | unit-259836 | `0x27ec64...6f4452` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | hyperliquid | unit-259838 | `0x3b4575...b2cedf` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | hyperliquid | unit-259834 | `0x9fdbda...993463` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | hyperliquid | unit-259837 | `0xbe6727...cf7907` | ⚠️ Unaudited |
-| UnitPlasma | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0x11e10b...0798a1` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | hyperliquid | unit-259835 | `0x068f321fa8fb9f0d135f290ef6a3e2813e1c8a29` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | hyperliquid | unit-259836 | `0x27ec642013bcb3d80ca3706599d3cda04f6f4452` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | hyperliquid | unit-259838 | `0x3b4575e689ded21caad31d64c4df1f10f3b2cedf` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | hyperliquid | unit-259834 | `0x9fdbda0a5e284c32744d2f17ee5c74b284993463` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | hyperliquid | unit-259837 | `0xbe6727b535545c67d5caa73dea54865b92cf7907` | ⚠️ Unaudited |
+| UnitPlasma | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0x11e10b315363d43e46b04f139fc051164e0798a1` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -128,7 +128,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-259821 | `0x749b89...ae8454` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-259821 | `0x749b898e5b523f08e9e371d259e0409c19ae8454` | ❓ Unverified |
 
 ## Audit Inventory
 

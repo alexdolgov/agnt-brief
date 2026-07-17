@@ -51,43 +51,43 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- BnGS (`0x95bd60...ec36bf`, chain 8453)
-- CPMMMath (`0xee6bdc...24930c`, chain 1)
-- CPMMMath (`0xcf2b6b...6350c8`, chain 8453)
-- DeltaSwapFactory (`0x5fbe21...31ae1b`, chain 1)
-- DeltaSwapFactory (`0x9a9a17...2fc971`, chain 8453)
-- DeltaSwapFactory (`0xcb85e1...7cffa8`, chain 42161)
-- DeltaSwapRouter02 (`0xcf2b6b...6350c8`, chain 1)
-- DeltaSwapRouter02 (`0x1b7655...a05b85`, chain 8453)
-- DeltaSwapRouter02 (`0x5fbe21...31ae1b`, chain 42161)
-- ERC1967Proxy (`0xca45c1...521016`, chain 1)
-- ERC1967Proxy (`0xf6152b...b84aa6`, chain 1)
-- ERC1967Proxy (`0x496b80...5f74a6`, chain 8453)
-- ERC1967Proxy (`0x4dfbd0...d25f69`, chain 8453)
-- ERC1967Proxy (`0x7135ba...91ece1`, chain 8453)
-- ERC1967Proxy (`0x3b7261...3b98b0`, chain 42161)
-- ERC1967Proxy (`0x4475c8...d09e7c`, chain 42161)
-- ERC1967Proxy (`0x9b9132...1e077c`, chain 42161)
-- EsGS (`0x25b041...406f55`, chain 8453)
-- EsGS (`0x92c5a5...1b67ea`, chain 42161)
-- GammaPoolFactory (`0xfd5136...aac20b`, chain 1)
-- GammaPoolFactory (`0xfd5136...aac20b`, chain 8453)
-- GammaPoolFactory (`0xfd5136...aac20b`, chain 42161)
-- GammaVaultFactory (`0xf55192...1aace4`, chain 8453)
-- GammaVaultFactory (`0x3e9955...c25429`, chain 42161)
-- Liquidator (`0x764dfb...2d55ba`, chain 8453)
-- Liquidator (`0x764dfb...2d55ba`, chain 42161)
-- LPViewer (`0xcb85e1...7cffa8`, chain 1)
-- LPViewer (`0xcb85e1...7cffa8`, chain 8453)
-- PoolViewer (`0xe59c74...277af7`, chain 1)
-- PoolViewer (`0x5fbe21...31ae1b`, chain 8453)
-- PoolViewer (`0xcf2b6b...6350c8`, chain 42161)
-- PoolZapper (`0x993f60...73a9ba`, chain 1)
-- PoolZapper (`0xce0599...790ae1`, chain 8453)
-- PositionManagerQueries (`0xf6152b...b84aa6`, chain 8453)
-- PositionManagerQueries (`0xb771f1...1380aa`, chain 42161)
-- PriceDataQueries (`0x3b7261...3b98b0`, chain 8453)
-- PriceDataQueries (`0x7135ba...91ece1`, chain 42161)
+- BnGS (`0x95bd606c041663f7eb731288e91cd3ba64ec36bf`, chain 8453)
+- CPMMMath (`0xee6bdce7c4fdaa5fb614b819f560e8ecb124930c`, chain 1)
+- CPMMMath (`0xcf2b6bc8c0e0a1292db7f0ae89410670796350c8`, chain 8453)
+- DeltaSwapFactory (`0x5fbe219e88f6c6f214ce6f5b1fcaa0294f31ae1b`, chain 1)
+- DeltaSwapFactory (`0x9a9a171c69cc811dc6b59bb2f9990e34a22fc971`, chain 8453)
+- DeltaSwapFactory (`0xcb85e1222f715a81b8edaeb73b28182fa37cffa8`, chain 42161)
+- DeltaSwapRouter02 (`0xcf2b6bc8c0e0a1292db7f0ae89410670796350c8`, chain 1)
+- DeltaSwapRouter02 (`0x1b7655aa64b7bd54077de56b64a0f92bcba05b85`, chain 8453)
+- DeltaSwapRouter02 (`0x5fbe219e88f6c6f214ce6f5b1fcaa0294f31ae1b`, chain 42161)
+- ERC1967Proxy (`0xca45c178d8ec131b642b374f6206706f8f521016`, chain 1)
+- ERC1967Proxy (`0xf6152b6699c085f1063baa27a08d5f074ab84aa6`, chain 1)
+- ERC1967Proxy (`0x496b80ada6758c0a7cf9801b9ded7aea815f74a6`, chain 8453)
+- ERC1967Proxy (`0x4dfbd084a4db494a616114b2cdba225cc4d25f69`, chain 8453)
+- ERC1967Proxy (`0x7135ba051fcba0d3bde77add0601d8b69c91ece1`, chain 8453)
+- ERC1967Proxy (`0x3b72616376652cc82f17dd7a9b58f71cdb3b98b0`, chain 42161)
+- ERC1967Proxy (`0x4475c811f9ab32e207fb9e396d00172094d09e7c`, chain 42161)
+- ERC1967Proxy (`0x9b91328f04ed1183548bd6bdad24da40311e077c`, chain 42161)
+- EsGS (`0x25b0415aebe7c82fa1fb316b6de9435b7f406f55`, chain 8453)
+- EsGS (`0x92c5a56f1233f951f7381e085ad6a00bc01b67ea`, chain 42161)
+- GammaPoolFactory (`0xfd513630f697a9c1731f196185fb9eba6eaac20b`, chain 1)
+- GammaPoolFactory (`0xfd513630f697a9c1731f196185fb9eba6eaac20b`, chain 8453)
+- GammaPoolFactory (`0xfd513630f697a9c1731f196185fb9eba6eaac20b`, chain 42161)
+- GammaVaultFactory (`0xf55192dcd29bd26a9d65456b8324ab68f21aace4`, chain 8453)
+- GammaVaultFactory (`0x3e9955c6c6aa6af4f72cfaa7e9b7573f7ac25429`, chain 42161)
+- Liquidator (`0x764dfb496a8b2847a9136346a20888cfd62d55ba`, chain 8453)
+- Liquidator (`0x764dfb496a8b2847a9136346a20888cfd62d55ba`, chain 42161)
+- LPViewer (`0xcb85e1222f715a81b8edaeb73b28182fa37cffa8`, chain 1)
+- LPViewer (`0xcb85e1222f715a81b8edaeb73b28182fa37cffa8`, chain 8453)
+- PoolViewer (`0xe59c74cda7f534ab23cb1fdb5df0c796d0277af7`, chain 1)
+- PoolViewer (`0x5fbe219e88f6c6f214ce6f5b1fcaa0294f31ae1b`, chain 8453)
+- PoolViewer (`0xcf2b6bc8c0e0a1292db7f0ae89410670796350c8`, chain 42161)
+- PoolZapper (`0x993f60a74781c9d323ab8662a05d69d9b773a9ba`, chain 1)
+- PoolZapper (`0xce0599057232d3ea1e39de9d4cac063e10790ae1`, chain 8453)
+- PositionManagerQueries (`0xf6152b6699c085f1063baa27a08d5f074ab84aa6`, chain 8453)
+- PositionManagerQueries (`0xb771f128fd3902a788ef5ef883854a43041380aa`, chain 42161)
+- PriceDataQueries (`0x3b72616376652cc82f17dd7a9b58f71cdb3b98b0`, chain 8453)
+- PriceDataQueries (`0x7135ba051fcba0d3bde77add0601d8b69c91ece1`, chain 42161)
 
 ## Contract Surface Quality
 
@@ -133,43 +133,43 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BnGS | unknown | project_anchor | own_supporting | 0 | base | unit-386731 | `0x95bd60...ec36bf` | ⚠️ Unaudited |
-| CPMMMath | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386714 | `0xee6bdc...24930c` | ⚠️ Unaudited |
-| CPMMMath | unknown | project_anchor | own_supporting | 0 | base | unit-386735 | `0xcf2b6b...6350c8` | ⚠️ Unaudited |
-| DeltaSwapFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386709 | `0x5fbe21...31ae1b` | ⚠️ Unaudited |
-| DeltaSwapFactory | unknown | project_anchor | own_supporting | 0 | base | unit-386732 | `0x9a9a17...2fc971` | ⚠️ Unaudited |
-| DeltaSwapFactory | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-386722 | `0xcb85e1...7cffa8` | ⚠️ Unaudited |
-| DeltaSwapRouter02 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386712 | `0xcf2b6b...6350c8` | ⚠️ Unaudited |
-| DeltaSwapRouter02 | unknown | project_anchor | own_supporting | 0 | base | unit-386725 | `0x1b7655...a05b85` | ⚠️ Unaudited |
-| DeltaSwapRouter02 | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-386717 | `0x5fbe21...31ae1b` | ⚠️ Unaudited |
-| EsGS | unknown | project_anchor | own_supporting | 0 | base | unit-386726 | `0x25b041...406f55` | ⚠️ Unaudited |
-| EsGS | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-386720 | `0x92c5a5...1b67ea` | ⚠️ Unaudited |
-| GammaPoolFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386715 | `0xfd5136...aac20b` | ⚠️ Unaudited |
-| GammaPoolFactory | unknown | project_anchor | own_supporting | 0 | base | unit-386738 | `0xfd5136...aac20b` | ⚠️ Unaudited |
-| GammaPoolFactory | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-386724 | `0xfd5136...aac20b` | ⚠️ Unaudited |
-| GammaVaultFactory | unknown | project_anchor | own_supporting | 0 | base | unit-386736 | `0xf55192...1aace4` | ⚠️ Unaudited |
-| GammaVaultFactory | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-386716 | `0x3e9955...c25429` | ⚠️ Unaudited |
-| GammaVaultManager | unknown | project_anchor | own_supporting | 1 | base | unit-386746 | `0x4dfbd0...d25f69` | ⚠️ Unaudited |
-| GammaVaultManager | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-386741 | `0x4475c8...d09e7c` | ⚠️ Unaudited |
-| Liquidator | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386739 | `0xca45c1...521016` | ⚠️ Unaudited |
-| Liquidator | unknown | project_anchor | own_supporting | 0 | base | unit-386729 | `0x764dfb...2d55ba` | ⚠️ Unaudited |
-| Liquidator | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-386719 | `0x764dfb...2d55ba` | ⚠️ Unaudited |
-| LPViewer | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386711 | `0xcb85e1...7cffa8` | ⚠️ Unaudited |
-| LPViewer | unknown | project_anchor | own_supporting | 0 | base | unit-386733 | `0xcb85e1...7cffa8` | ⚠️ Unaudited |
-| PoolViewer | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386713 | `0xe59c74...277af7` | ⚠️ Unaudited |
-| PoolViewer | unknown | project_anchor | own_supporting | 0 | base | unit-386728 | `0x5fbe21...31ae1b` | ⚠️ Unaudited |
-| PoolViewer | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-386723 | `0xcf2b6b...6350c8` | ⚠️ Unaudited |
-| PoolZapper | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386710 | `0x993f60...73a9ba` | ⚠️ Unaudited |
-| PoolZapper | unknown | project_anchor | own_supporting | 0 | base | unit-386734 | `0xce0599...790ae1` | ⚠️ Unaudited |
-| PositionManagerExternalWithStaking | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386740 | `0xf6152b...b84aa6` | ⚠️ Unaudited |
-| PositionManagerExternalWithStaking | unknown | project_anchor | own_supporting | 1 | base | unit-386744 | `0x7135ba...91ece1` | ⚠️ Unaudited |
-| PositionManagerExternalWithStaking | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-386742 | `0x3b7261...3b98b0` | ⚠️ Unaudited |
-| PositionManagerQueries | unknown | project_anchor | own_supporting | 0 | base | unit-386737 | `0xf6152b...b84aa6` | ⚠️ Unaudited |
-| PositionManagerQueries | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-386721 | `0xb771f1...1380aa` | ⚠️ Unaudited |
-| PriceDataQueries | unknown | project_anchor | own_supporting | 0 | base | unit-386727 | `0x3b7261...3b98b0` | ⚠️ Unaudited |
-| PriceDataQueries | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-386718 | `0x7135ba...91ece1` | ⚠️ Unaudited |
-| StakingRouter | unknown | project_anchor | own_supporting | 1 | base | unit-386745 | `0x496b80...5f74a6` | ⚠️ Unaudited |
-| StakingRouter | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-386743 | `0x9b9132...1e077c` | ⚠️ Unaudited |
+| BnGS | unknown | project_anchor | own_supporting | 0 | base | unit-386731 | `0x95bd606c041663f7eb731288e91cd3ba64ec36bf` | ⚠️ Unaudited |
+| CPMMMath | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386714 | `0xee6bdce7c4fdaa5fb614b819f560e8ecb124930c` | ⚠️ Unaudited |
+| CPMMMath | unknown | project_anchor | own_supporting | 0 | base | unit-386735 | `0xcf2b6bc8c0e0a1292db7f0ae89410670796350c8` | ⚠️ Unaudited |
+| DeltaSwapFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386709 | `0x5fbe219e88f6c6f214ce6f5b1fcaa0294f31ae1b` | ⚠️ Unaudited |
+| DeltaSwapFactory | unknown | project_anchor | own_supporting | 0 | base | unit-386732 | `0x9a9a171c69cc811dc6b59bb2f9990e34a22fc971` | ⚠️ Unaudited |
+| DeltaSwapFactory | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-386722 | `0xcb85e1222f715a81b8edaeb73b28182fa37cffa8` | ⚠️ Unaudited |
+| DeltaSwapRouter02 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386712 | `0xcf2b6bc8c0e0a1292db7f0ae89410670796350c8` | ⚠️ Unaudited |
+| DeltaSwapRouter02 | unknown | project_anchor | own_supporting | 0 | base | unit-386725 | `0x1b7655aa64b7bd54077de56b64a0f92bcba05b85` | ⚠️ Unaudited |
+| DeltaSwapRouter02 | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-386717 | `0x5fbe219e88f6c6f214ce6f5b1fcaa0294f31ae1b` | ⚠️ Unaudited |
+| EsGS | unknown | project_anchor | own_supporting | 0 | base | unit-386726 | `0x25b0415aebe7c82fa1fb316b6de9435b7f406f55` | ⚠️ Unaudited |
+| EsGS | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-386720 | `0x92c5a56f1233f951f7381e085ad6a00bc01b67ea` | ⚠️ Unaudited |
+| GammaPoolFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386715 | `0xfd513630f697a9c1731f196185fb9eba6eaac20b` | ⚠️ Unaudited |
+| GammaPoolFactory | unknown | project_anchor | own_supporting | 0 | base | unit-386738 | `0xfd513630f697a9c1731f196185fb9eba6eaac20b` | ⚠️ Unaudited |
+| GammaPoolFactory | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-386724 | `0xfd513630f697a9c1731f196185fb9eba6eaac20b` | ⚠️ Unaudited |
+| GammaVaultFactory | unknown | project_anchor | own_supporting | 0 | base | unit-386736 | `0xf55192dcd29bd26a9d65456b8324ab68f21aace4` | ⚠️ Unaudited |
+| GammaVaultFactory | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-386716 | `0x3e9955c6c6aa6af4f72cfaa7e9b7573f7ac25429` | ⚠️ Unaudited |
+| GammaVaultManager | unknown | project_anchor | own_supporting | 1 | base | unit-386746 | `0x4dfbd084a4db494a616114b2cdba225cc4d25f69` | ⚠️ Unaudited |
+| GammaVaultManager | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-386741 | `0x4475c811f9ab32e207fb9e396d00172094d09e7c` | ⚠️ Unaudited |
+| Liquidator | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386739 | `0xca45c178d8ec131b642b374f6206706f8f521016` | ⚠️ Unaudited |
+| Liquidator | unknown | project_anchor | own_supporting | 0 | base | unit-386729 | `0x764dfb496a8b2847a9136346a20888cfd62d55ba` | ⚠️ Unaudited |
+| Liquidator | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-386719 | `0x764dfb496a8b2847a9136346a20888cfd62d55ba` | ⚠️ Unaudited |
+| LPViewer | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386711 | `0xcb85e1222f715a81b8edaeb73b28182fa37cffa8` | ⚠️ Unaudited |
+| LPViewer | unknown | project_anchor | own_supporting | 0 | base | unit-386733 | `0xcb85e1222f715a81b8edaeb73b28182fa37cffa8` | ⚠️ Unaudited |
+| PoolViewer | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386713 | `0xe59c74cda7f534ab23cb1fdb5df0c796d0277af7` | ⚠️ Unaudited |
+| PoolViewer | unknown | project_anchor | own_supporting | 0 | base | unit-386728 | `0x5fbe219e88f6c6f214ce6f5b1fcaa0294f31ae1b` | ⚠️ Unaudited |
+| PoolViewer | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-386723 | `0xcf2b6bc8c0e0a1292db7f0ae89410670796350c8` | ⚠️ Unaudited |
+| PoolZapper | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386710 | `0x993f60a74781c9d323ab8662a05d69d9b773a9ba` | ⚠️ Unaudited |
+| PoolZapper | unknown | project_anchor | own_supporting | 0 | base | unit-386734 | `0xce0599057232d3ea1e39de9d4cac063e10790ae1` | ⚠️ Unaudited |
+| PositionManagerExternalWithStaking | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386740 | `0xf6152b6699c085f1063baa27a08d5f074ab84aa6` | ⚠️ Unaudited |
+| PositionManagerExternalWithStaking | unknown | project_anchor | own_supporting | 1 | base | unit-386744 | `0x7135ba051fcba0d3bde77add0601d8b69c91ece1` | ⚠️ Unaudited |
+| PositionManagerExternalWithStaking | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-386742 | `0x3b72616376652cc82f17dd7a9b58f71cdb3b98b0` | ⚠️ Unaudited |
+| PositionManagerQueries | unknown | project_anchor | own_supporting | 0 | base | unit-386737 | `0xf6152b6699c085f1063baa27a08d5f074ab84aa6` | ⚠️ Unaudited |
+| PositionManagerQueries | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-386721 | `0xb771f128fd3902a788ef5ef883854a43041380aa` | ⚠️ Unaudited |
+| PriceDataQueries | unknown | project_anchor | own_supporting | 0 | base | unit-386727 | `0x3b72616376652cc82f17dd7a9b58f71cdb3b98b0` | ⚠️ Unaudited |
+| PriceDataQueries | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-386718 | `0x7135ba051fcba0d3bde77add0601d8b69c91ece1` | ⚠️ Unaudited |
+| StakingRouter | unknown | project_anchor | own_supporting | 1 | base | unit-386745 | `0x496b80ada6758c0a7cf9801b9ded7aea815f74a6` | ⚠️ Unaudited |
+| StakingRouter | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-386743 | `0x9b91328f04ed1183548bd6bdad24da40311e077c` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

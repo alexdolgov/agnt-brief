@@ -63,8 +63,8 @@ The protocol comprises 2 functional families. Its contracts share 7 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AkropolisToken | token | ethereum | n/a | [`0x8ab740...c853d7`](./contracts/ethereum-1/0x8ab7404063ec4dbcfd4598215992dc3f8ec853d7/) | ⚠️ Unaudited |
-| StakingPool | core_logic | ethereum | n/a | [`0x3501ec...9b35d0`](./contracts/ethereum-1/0x3501ec11d205fa249f2c42f5470e137b529b35d0/) | ⚠️ Unaudited |
+| AkropolisToken | token | ethereum | n/a | [`0x8ab7404063ec4dbcfd4598215992dc3f8ec853d7`](./contracts/ethereum-1/0x8ab7404063ec4dbcfd4598215992dc3f8ec853d7/) | ⚠️ Unaudited |
+| StakingPool | core_logic | ethereum | n/a | [`0x3501ec11d205fa249f2c42f5470e137b529b35d0`](./contracts/ethereum-1/0x3501ec11d205fa249f2c42f5470e137b529b35d0/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -84,10 +84,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x081542...a7b907` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x2d0956...d7cd18` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x6ea8a1...666bea` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x739c13...a87e1b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x0815425f6a333b92d49b088aea2290418fa7b907` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x2d0956c76bed91dabef10bbf21b41605f3d7cd18` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x6ea8a1cecb04e50d2eeb123e1969b65dd4666bea` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x739c1345c6aeaa9156cb937e99d3bedaafa87e1b` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -101,8 +101,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x8ab740...c853d7`](./contracts/ethereum-1/0x8ab7404063ec4dbcfd4598215992dc3f8ec853d7/) | AkropolisToken | token | $48,515.47 | Verified native implementation with $48,515.47 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x3501ec...9b35d0`](./contracts/ethereum-1/0x3501ec11d205fa249f2c42f5470e137b529b35d0/) | StakingPool | core_logic | $498.70 | Verified native implementation with $498.70 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8ab7404063ec4dbcfd4598215992dc3f8ec853d7`](./contracts/ethereum-1/0x8ab7404063ec4dbcfd4598215992dc3f8ec853d7/) | AkropolisToken | token | $48,515.47 | Verified native implementation with $48,515.47 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x3501ec11d205fa249f2c42f5470e137b529b35d0`](./contracts/ethereum-1/0x3501ec11d205fa249f2c42f5470e137b529b35d0/) | StakingPool | core_logic | $498.70 | Verified native implementation with $498.70 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

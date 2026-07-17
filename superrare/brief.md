@@ -60,8 +60,8 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ProxyAdmin | unknown | ethereum | n/a | [`0x714c85...8aedb5`](./contracts/ethereum-1/0x714c85f8de8632fac4042c06b95329b9e78aedb5/) | ⚠️ Unaudited |
-| SuperRareToken | unknown | ethereum | n/a | [`0x31acaa...04684f`](./contracts/ethereum-1/0x31acaaea0529894e7c3a5c70d3f9ee6d7804684f/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | ethereum | n/a | [`0x714c85f8de8632fac4042c06b95329b9e78aedb5`](./contracts/ethereum-1/0x714c85f8de8632fac4042c06b95329b9e78aedb5/) | ⚠️ Unaudited |
+| SuperRareToken | unknown | ethereum | n/a | [`0x31acaaea0529894e7c3a5c70d3f9ee6d7804684f`](./contracts/ethereum-1/0x31acaaea0529894e7c3a5c70d3f9ee6d7804684f/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -92,7 +92,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x31acaa...04684f`](./contracts/ethereum-1/0x31acaaea0529894e7c3a5c70d3f9ee6d7804684f/) | SuperRareToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x31acaaea0529894e7c3a5c70d3f9ee6d7804684f`](./contracts/ethereum-1/0x31acaaea0529894e7c3a5c70d3f9ee6d7804684f/) | SuperRareToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

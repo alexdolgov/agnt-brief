@@ -60,16 +60,16 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| HyperpiePair | unknown | hyperliquid | n/a | [`0xcf1088...b67a33`](./contracts/hyperliquid-999/0xcf10887fff956a6f5f13a561ee90550c50b67a33/) | ✅ Audited |
-| HyperpieRouter | unknown | hyperliquid | n/a | [`0xdfbaf8...cb2150`](./contracts/hyperliquid-999/0xdfbaf8c8d60fbddc906f95810ffc62e511cb2150/) | ✅ Audited |
-| MEMELaunchpad | unknown | hyperliquid | n/a | [`0x9246d2...a6168e`](./contracts/hyperliquid-999/0x9246d27ea8059529a615a4acf35351df0fa6168e/) | ✅ Audited |
-| mHYPE | unknown | hyperliquid | n/a | [`0xdabb04...3a9aa8`](./contracts/hyperliquid-999/0xdabb040c428436d41cecd0fb06bcfdbaad3a9aa8/) | ✅ Audited |
+| HyperpiePair | unknown | hyperliquid | n/a | [`0xcf10887fff956a6f5f13a561ee90550c50b67a33`](./contracts/hyperliquid-999/0xcf10887fff956a6f5f13a561ee90550c50b67a33/) | ✅ Audited |
+| HyperpieRouter | unknown | hyperliquid | n/a | [`0xdfbaf8c8d60fbddc906f95810ffc62e511cb2150`](./contracts/hyperliquid-999/0xdfbaf8c8d60fbddc906f95810ffc62e511cb2150/) | ✅ Audited |
+| MEMELaunchpad | unknown | hyperliquid | n/a | [`0x9246d27ea8059529a615a4acf35351df0fa6168e`](./contracts/hyperliquid-999/0x9246d27ea8059529a615a4acf35351df0fa6168e/) | ✅ Audited |
+| mHYPE | unknown | hyperliquid | n/a | [`0xdabb040c428436d41cecd0fb06bcfdbaad3a9aa8`](./contracts/hyperliquid-999/0xdabb040c428436d41cecd0fb06bcfdbaad3a9aa8/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| HyperpieFactory | unknown | hyperliquid | n/a | [`0xeaf403...6133fa`](./contracts/hyperliquid-999/0xeaf40318453a81993569b14b898aac31df6133fa/) | ⚠️ Unaudited |
+| HyperpieFactory | unknown | hyperliquid | n/a | [`0xeaf40318453a81993569b14b898aac31df6133fa`](./contracts/hyperliquid-999/0xeaf40318453a81993569b14b898aac31df6133fa/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -106,7 +106,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| hyperliquid | [`0xeaf403...6133fa`](./contracts/hyperliquid-999/0xeaf40318453a81993569b14b898aac31df6133fa/) | HyperpieFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0xeaf40318453a81993569b14b898aac31df6133fa`](./contracts/hyperliquid-999/0xeaf40318453a81993569b14b898aac31df6133fa/) | HyperpieFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

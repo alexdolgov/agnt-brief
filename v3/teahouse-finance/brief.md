@@ -56,8 +56,8 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- GnosisSafeProxy (`0xcafe74...6d4182`, chain 42161)
-- SafeL2 (`0x607a96...1fe8d7`, chain 534352)
+- GnosisSafeProxy (`0xcafe741343cf117b0ad3efba6288c0e7346d4182`, chain 42161)
+- SafeL2 (`0x607a96a2cc8e5747185c10c163a255cea11fe8d7`, chain 534352)
 
 ## Contract Surface Quality
 
@@ -103,8 +103,8 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| GnosisSafeL2 | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-393853 | `0xcafe74...6d4182` | ⚠️ Unaudited |
-| SafeL2 | unknown | project_anchor | own_supporting | 0 | scroll | unit-393852 | `0x607a96...1fe8d7` | ⚠️ Unaudited |
+| GnosisSafeL2 | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-393853 | `0xcafe741343cf117b0ad3efba6288c0e7346d4182` | ⚠️ Unaudited |
+| SafeL2 | unknown | project_anchor | own_supporting | 0 | scroll | unit-393852 | `0x607a96a2cc8e5747185c10c163a255cea11fe8d7` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

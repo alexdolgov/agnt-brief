@@ -52,16 +52,16 @@ The pinned logic-topography run contains 3 contract row(s) across arbitrum, base
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x6d44e3...7c6d0c`, chain 10)
-- UnnamedContract (`0x8e195d...597628`, chain 10)
-- UnnamedContract (`0x946a2c...d29d96`, chain 10)
-- UnnamedContract (`0x9b8d60...5a1343`, chain 10)
-- UnnamedContract (`0xb025ee...13f4f9`, chain 10)
-- UnnamedContract (`0xe478b5...a744b2`, chain 10)
-- UnnamedContract (`0xe4addf...b49823`, chain 10)
-- AaveV3Adapter (`0x9c69fc...41350b`, chain 10)
-- Comptroller (`0x06a31e...c9d6e3`, chain 10)
-- Dai (`0xda1000...000da1`, chain 10)
+- UnnamedContract (`0x6d44e3b49a6e85cc316ef19b423e84a63f7c6d0c`, chain 10)
+- UnnamedContract (`0x8e195d65b9932185fcc76db5144534e0f3597628`, chain 10)
+- UnnamedContract (`0x946a2c918f3d928b918c01d813644f27bcd29d96`, chain 10)
+- UnnamedContract (`0x9b8d609ecce72d6f71c026539370f7b5e55a1343`, chain 10)
+- UnnamedContract (`0xb025ee78b54b5348bd638fe4a6d77ec2f813f4f9`, chain 10)
+- UnnamedContract (`0xe478b5e7a423d7cdb224692d0a816ca146a744b2`, chain 10)
+- UnnamedContract (`0xe4addfdf5641eb4e15f60a81f63ced4884b49823`, chain 10)
+- AaveV3Adapter (`0x9c69fc4edcce8d3410ab59e9f9d9e65e5f41350b`, chain 10)
+- Comptroller (`0x06a31efa04453c5f9c0a711cdb96075308c9d6e3`, chain 10)
+- Dai (`0xda10009cbd5d07dd0cecc66161fc93d7c9000da1`, chain 10)
 
 ## Contract Surface Quality
 
@@ -105,49 +105,49 @@ The pinned logic-topography run contains 3 contract row(s) across arbitrum, base
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AaveV3Adapter | unknown | project_anchor | own_supporting | 1 | optimism | unit-395305 | `0x9c69fc...41350b` | ✅ Audited |
-| Comptroller | unknown | project_anchor | own_supporting | 1 | optimism | unit-395307 | `0x06a31e...c9d6e3` | ✅ Audited |
+| AaveV3Adapter | unknown | project_anchor | own_supporting | 1 | optimism | unit-395305 | `0x9c69fc4edcce8d3410ab59e9f9d9e65e5f41350b` | ✅ Audited |
+| Comptroller | unknown | project_anchor | own_supporting | 1 | optimism | unit-395307 | `0x06a31efa04453c5f9c0a711cdb96075308c9d6e3` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (36)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AaveAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xe8c77a...e4012d` | ⚠️ Unaudited |
-| ArbConnector | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x307ed8...99032a` | ⚠️ Unaudited |
-| ArbUnion | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x125e90...c4abc4` | ⚠️ Unaudited |
-| ArbUnionWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1fed52...f8f631` | ⚠️ Unaudited |
-| AssetManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x35abd1...948542` | ⚠️ Unaudited |
-| ClubMemberNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x1a0fe2...50cc87` | ⚠️ Unaudited |
-| ClubMemberNFTV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0x27be78...ab211b` | ⚠️ Unaudited |
-| CompoundAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x303cbd...b860d5` | ⚠️ Unaudited |
-| Dai | unknown | project_anchor | own_supporting | 0 | optimism | unit-395281 | `0xda1000...000da1` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | base | n/a | `0x46a48d...525e85` | ⚠️ Unaudited |
-| FixedInterestRateModel | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x051e25...ce99ea` | ⚠️ Unaudited |
-| MarketRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x1ddb9a...1ae6be` | ⚠️ Unaudited |
-| OpOwner | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x20473a...1b88e8` | ⚠️ Unaudited |
-| OpUNION | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2c613e...5abf12` | ⚠️ Unaudited |
-| PureTokenAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x62dd06...057b7d` | ⚠️ Unaudited |
-| Referral | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x50fe90...12e6da` | ⚠️ Unaudited |
-| RegisterHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x268366...1d9b49` | ⚠️ Unaudited |
-| RewardsManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x0bea69...a11894` | ⚠️ Unaudited |
-| SumOfTrust | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x754ae2...5a90a2` | ⚠️ Unaudited |
-| SwapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x02ca19...c70b08` | ⚠️ Unaudited |
-| TimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbbd332...3294d8` | ⚠️ Unaudited |
-| Treasury | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6dbde0...34b4b9` | ⚠️ Unaudited |
-| TreasuryVester | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x641dd6...549fe1` | ⚠️ Unaudited |
-| UDai | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x109b00...ae40ae` | ⚠️ Unaudited |
-| UErc20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x46a260...103e65` | ⚠️ Unaudited |
-| UnionClubPlugin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x1b1688...187004` | ⚠️ Unaudited |
-| UnionClubPluginV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x3b362f...792e18` | ⚠️ Unaudited |
-| UnionClubPluginV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x60659a...fae7e5` | ⚠️ Unaudited |
-| UnionClubPluginV3_5 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x180ae9...c8b6f1` | ⚠️ Unaudited |
-| UnionGovernor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x011e58...328884` | ⚠️ Unaudited |
-| UnionLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x97f890...768b19` | ⚠️ Unaudited |
-| UnionToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5dfe42...85535c` | ⚠️ Unaudited |
-| UserManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x49c910...31c195` | ⚠️ Unaudited |
-| UserManagerArb | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x011e58...328884` | ⚠️ Unaudited |
-| UserManagerOp | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x13caca...528690` | ⚠️ Unaudited |
-| VouchNote | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x4c52c9...f8aaba` | ⚠️ Unaudited |
+| AaveAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xe8c77a541c933aa1320aa2f89a61f91130e4012d` | ⚠️ Unaudited |
+| ArbConnector | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x307ed81138ca91637e432dbabac6e3a42699032a` | ⚠️ Unaudited |
+| ArbUnion | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x125e905185198edb3eeb6c8a5baf5b64adc4abc4` | ⚠️ Unaudited |
+| ArbUnionWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1fed524867348ecea0a4d9aeae989794dbf8f631` | ⚠️ Unaudited |
+| AssetManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x35abd14ad2058f99d551c5b8b7182f9663948542` | ⚠️ Unaudited |
+| ClubMemberNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x1a0fe2d0afed6d645f726d6a25c9f9a47050cc87` | ⚠️ Unaudited |
+| ClubMemberNFTV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0x27be7878ec75291b84e36f2d17f5b47f0dab211b` | ⚠️ Unaudited |
+| CompoundAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x303cbdadf370f6bba79651f680498e829cb860d5` | ⚠️ Unaudited |
+| Dai | unknown | project_anchor | own_supporting | 0 | optimism | unit-395281 | `0xda10009cbd5d07dd0cecc66161fc93d7c9000da1` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | base | n/a | `0x46a48d1e81f6002501251ad563a0e16655525e85` | ⚠️ Unaudited |
+| FixedInterestRateModel | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x051e2514e3fe8da88caa2951442a21042bce99ea` | ⚠️ Unaudited |
+| MarketRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x1ddb9a1f6bc0de1d05ebb0fda61a7398641ae6be` | ⚠️ Unaudited |
+| OpOwner | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x20473af81162b3e79f0333a2d8d64c88a71b88e8` | ⚠️ Unaudited |
+| OpUNION | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2c613ecf0966b84562d3a083227c753b4d5abf12` | ⚠️ Unaudited |
+| PureTokenAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x62dd06026f5f8e874eeff362b1280cd9a2057b7d` | ⚠️ Unaudited |
+| Referral | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x50fe90134c5c7baf7a84584655db093f4d12e6da` | ⚠️ Unaudited |
+| RegisterHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x2683666a3004c553b3a40ed13c32678ed11d9b49` | ⚠️ Unaudited |
+| RewardsManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x0bea69fac75fc8c4a5b648421b916d1ba3a11894` | ⚠️ Unaudited |
+| SumOfTrust | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x754ae2ec8127080c63694162941ea2be725a90a2` | ⚠️ Unaudited |
+| SwapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x02ca192c72fb21f5ff64954d897f138ef3c70b08` | ⚠️ Unaudited |
+| TimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbbd3321f377742c4b3fe458b270c2f271d3294d8` | ⚠️ Unaudited |
+| Treasury | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6dbde0e7e563e34a53b1130d6b779ec8ed34b4b9` | ⚠️ Unaudited |
+| TreasuryVester | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x641dd6258cb3e948121b10ee51594dc2a8549fe1` | ⚠️ Unaudited |
+| UDai | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x109b00a3473366f24c0d0103498d8d75d1ae40ae` | ⚠️ Unaudited |
+| UErc20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x46a260f40e6b2332ec204d82daca6b9031103e65` | ⚠️ Unaudited |
+| UnionClubPlugin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x1b16886c5264ad7459db566a432df14779187004` | ⚠️ Unaudited |
+| UnionClubPluginV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x3b362f0f5c7f2d65dffb8b098f769c45d1792e18` | ⚠️ Unaudited |
+| UnionClubPluginV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x60659aa7caeb9ddcd7ddf3fd902e8268fbfae7e5` | ⚠️ Unaudited |
+| UnionClubPluginV3_5 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x180ae93f80aae0acf162be09077064fa9cc8b6f1` | ⚠️ Unaudited |
+| UnionGovernor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x011e5846975c6463a8c6337eecf3cbf64e328884` | ⚠️ Unaudited |
+| UnionLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x97f8903177300addf7b92431de104ce610768b19` | ⚠️ Unaudited |
+| UnionToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5dfe42eea70a3e6f93ee54ed9c321af07a85535c` | ⚠️ Unaudited |
+| UserManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x49c910ba694789b58f53bff80633f90b8631c195` | ⚠️ Unaudited |
+| UserManagerArb | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x011e5846975c6463a8c6337eecf3cbf64e328884` | ⚠️ Unaudited |
+| UserManagerOp | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x13cacaadd4379f1984cd69b744ebe7dae8528690` | ⚠️ Unaudited |
+| VouchNote | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x4c52c9e49aa6a5029c0f94753c533dfebcf8aaba` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -167,21 +167,21 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x01cc03...3576ed` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x036cbd...3dcf7e` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x0d2513...a71886` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x311b84...71492a` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x4aa486...5cc8c4` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-395271 | `0x6d44e3...7c6d0c` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x84cee1...96edb2` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-395273 | `0x8e195d...597628` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-395275 | `0x946a2c...d29d96` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x95bb25...4521c0` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-395277 | `0x9b8d60...5a1343` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-395279 | `0xb025ee...13f4f9` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xc12404...9c4769` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-395283 | `0xe478b5...a744b2` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-395285 | `0xe4addf...b49823` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x01cc03de0742df77b934c3afa848ae2bb73576ed` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x036cbd53842c5426634e7929541ec2318f3dcf7e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x0d25131e098dfb65746ecc3c527865a7bba71886` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x311b84a6ca1196efd1cec7e4fa09d8c2c171492a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x4aa4868189e2a650b8423d3a36f6c044005cc8c4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-395271 | `0x6d44e3b49a6e85cc316ef19b423e84a63f7c6d0c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x84cee16a05c48268724f11512cb405097f96edb2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-395273 | `0x8e195d65b9932185fcc76db5144534e0f3597628` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-395275 | `0x946a2c918f3d928b918c01d813644f27bcd29d96` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x95bb25c0a11347c8de402904dce3be628a4521c0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-395277 | `0x9b8d609ecce72d6f71c026539370f7b5e55a1343` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-395279 | `0xb025ee78b54b5348bd638fe4a6d77ec2f813f4f9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xc124047253c87ef90af9f4efc12c281b479c4769` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-395283 | `0xe478b5e7a423d7cdb224692d0a816ca146a744b2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-395285 | `0xe4addfdf5641eb4e15f60a81f63ced4884b49823` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -217,64 +217,64 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | 2023.03.21 - Final - Union Finance Update Audit Report.pdf | IUDai | unmatched — not counted | — | listed in scope | no |
 | 2023.03.21 - Final - Union Finance Update Audit Report.pdf | IUnionToken | unmatched — not counted | — | listed in scope | no |
 | 2023.03.21 - Final - Union Finance Update Audit Report.pdf | Controller | unmatched — not counted | — | listed in scope | no |
-| 2023.03.21 - Final - Union Finance Update Audit Report.pdf | OpOwner | own contract | 0x946a2c… (selected) `0x946a2c...d29d96` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2023.03.21 - Final - Union Finance Update Audit Report.pdf | OpOwner | own contract | 0x946a2c… (selected) `0x946a2c918f3d928b918c01d813644f27bcd29d96` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2023.03.21 - Final - Union Finance Update Audit Report.pdf | UnionLens | unmatched — not counted | — | listed in scope | no |
 | 2023.03.21 - Final - Union Finance Update Audit Report.pdf | WadRayMath | unmatched — not counted | — | listed in scope | no |
-| 2023.03.21 - Final - Union Finance Update Audit Report.pdf | AaveV3Adapter | own proxy deployment | AaveV3Adapter (proxy) (selected) `0x9c69fc...41350b` — deployed 2023-04-25 07:07:15+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 2023.03.21 - Final - Union Finance Update Audit Report.pdf | AssetManager | own contract | 0xe4addf… (selected) `0xe4addf...b49823` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 2023.03.21 - Final - Union Finance Update Audit Report.pdf | PureTokenAdapter | own contract | 0x9b8d60… (selected) `0x9b8d60...5a1343` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2023.03.21 - Final - Union Finance Update Audit Report.pdf | AaveV3Adapter | own proxy deployment | AaveV3Adapter (proxy) (selected) `0x9c69fc4edcce8d3410ab59e9f9d9e65e5f41350b` — deployed 2023-04-25 07:07:15+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2023.03.21 - Final - Union Finance Update Audit Report.pdf | AssetManager | own contract | 0xe4addf… (selected) `0xe4addfdf5641eb4e15f60a81f63ced4884b49823` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2023.03.21 - Final - Union Finance Update Audit Report.pdf | PureTokenAdapter | own contract | 0x9b8d60… (selected) `0x9b8d609ecce72d6f71c026539370f7b5e55a1343` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2023.03.21 - Final - Union Finance Update Audit Report.pdf | IComptroller | unmatched — not counted | — | listed in scope | no |
 | 2023.03.21 - Final - Union Finance Update Audit Report.pdf | IInterestRateModel | unmatched — not counted | — | listed in scope | no |
 | 2023.03.21 - Final - Union Finance Update Audit Report.pdf | IMoneyMarketAdapter | unmatched — not counted | — | listed in scope | no |
 | 2023.03.21 - Final - Union Finance Update Audit Report.pdf | IUToken | unmatched — not counted | — | listed in scope | no |
 | 2023.03.21 - Final - Union Finance Update Audit Report.pdf | IUserManager | unmatched — not counted | — | listed in scope | no |
 | 2023.03.21 - Final - Union Finance Update Audit Report.pdf | FixedInterestRateModel | unmatched — not counted | — | listed in scope | no |
-| 2023.03.21 - Final - Union Finance Update Audit Report.pdf | MarketRegistry | own contract | 0x6d44e3… (selected) `0x6d44e3...7c6d0c` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 2023.03.21 - Final - Union Finance Update Audit Report.pdf | UDai | own contract | 0xe478b5… (selected) `0xe478b5...a744b2` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2023.03.21 - Final - Union Finance Update Audit Report.pdf | MarketRegistry | own contract | 0x6d44e3… (selected) `0x6d44e3b49a6e85cc316ef19b423e84a63f7c6d0c` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2023.03.21 - Final - Union Finance Update Audit Report.pdf | UDai | own contract | 0xe478b5… (selected) `0xe478b5e7a423d7cdb224692d0a816ca146a744b2` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2023.03.21 - Final - Union Finance Update Audit Report.pdf | UErc20 | unmatched — not counted | — | listed in scope | no |
 | 2023.03.21 - Final - Union Finance Update Audit Report.pdf | UToken | unmatched — not counted | — | listed in scope | no |
-| 2023.03.21 - Final - Union Finance Update Audit Report.pdf | Comptroller | own proxy deployment | Comptroller (proxy) (selected) `0x06a31e...c9d6e3` — deployed 2023-04-25 07:02:29+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2023.03.21 - Final - Union Finance Update Audit Report.pdf | Comptroller | own proxy deployment | Comptroller (proxy) (selected) `0x06a31efa04453c5f9c0a711cdb96075308c9d6e3` — deployed 2023-04-25 07:02:29+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2023.03.21 - Final - Union Finance Update Audit Report.pdf | OpConnector | unmatched — not counted | — | listed in scope | no |
 | 2023.03.21 - Final - Union Finance Update Audit Report.pdf | OpUNION | unmatched — not counted | — | listed in scope | no |
 | 2023.03.21 - Final - Union Finance Update Audit Report.pdf | Whitelistable | unmatched — not counted | — | listed in scope | no |
-| 2023.03.21 - Final - Union Finance Update Audit Report.pdf | UserManager | own contract | 0x8e195d… (selected) `0x8e195d...597628` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2023.03.21 - Final - Union Finance Update Audit Report.pdf | UserManager | own contract | 0x8e195d… (selected) `0x8e195d65b9932185fcc76db5144534e0f3597628` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2023.03.21 - Final - Union Finance Update Audit Report.pdf | UserManagerDAI | unmatched — not counted | — | listed in scope | no |
 | 2023.03.21 - Final - Union Finance Update Audit Report.pdf | UserManagerERC20 | unmatched — not counted | — | listed in scope | no |
 | 2023.03.21 - Final - Union Finance Update Audit Report.pdf | UserManagerOp | unmatched — not counted | — | listed in scope | no |
-| 2024.07.13 - Final - Union Finance Update 2 Audit Report.pdf | Comptroller | own proxy deployment | Comptroller (proxy) (selected) `0x06a31e...c9d6e3` — deployed 2023-04-25 07:02:29+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 2024.07.13 - Final - Union Finance Update 2 Audit Report.pdf | UserManager | own contract | 0x8e195d… (selected) `0x8e195d...597628` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2024.07.13 - Final - Union Finance Update 2 Audit Report.pdf | Comptroller | own proxy deployment | Comptroller (proxy) (selected) `0x06a31efa04453c5f9c0a711cdb96075308c9d6e3` — deployed 2023-04-25 07:02:29+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2024.07.13 - Final - Union Finance Update 2 Audit Report.pdf | UserManager | own contract | 0x8e195d… (selected) `0x8e195d65b9932185fcc76db5144534e0f3597628` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2024.07.13 - Final - Union Finance Update 2 Audit Report.pdf | VouchFaucet | unmatched — not counted | — | listed in scope and findings | no |
 | 2024.07.13 - Final - Union Finance Update 2 Audit Report.pdf | UErc20 | unmatched — not counted | — | listed in scope and findings | no |
 | 2024.07.13 - Final - Union Finance Update 2 Audit Report.pdf | UToken | unmatched — not counted | — | listed in scope and findings | no |
-| 2024.07.13 - Final - Union Finance Update 2 Audit Report.pdf | UDai | own contract | 0xe478b5… (selected) `0xe478b5...a744b2` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2024.07.13 - Final - Union Finance Update 2 Audit Report.pdf | UDai | own contract | 0xe478b5… (selected) `0xe478b5e7a423d7cdb224692d0a816ca146a744b2` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2024.07.13 - Final - Union Finance Update 2 Audit Report.pdf | ERC1155Voucher | unmatched — not counted | — | listed in scope and findings | no |
 | 2024.07.13 - Final - Union Finance Update 2 Audit Report.pdf | ScaledDecimalBase | unmatched — not counted | — | mentioned in finding M-5 | no |
-| 2023-02-union-judging (GitHub directory) | UserManager | own contract | 0x8e195d… (selected) `0x8e195d...597628` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2023-02-union-judging (GitHub directory) | UserManager | own contract | 0x8e195d… (selected) `0x8e195d65b9932185fcc76db5144534e0f3597628` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2023-02-union-judging (GitHub directory) | UToken | unmatched — not counted | — | mentioned in findings H-2, H-3, M-4, M-5 | no |
-| 2023-02-union-judging (GitHub directory) | Comptroller | own proxy deployment | Comptroller (proxy) (selected) `0x06a31e...c9d6e3` — deployed 2023-04-25 07:02:29+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 2023-02-union-judging (GitHub directory) | AssetManager | own contract | 0xe4addf… (selected) `0xe4addf...b49823` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 2024-06-union-finance-update-2-judging (GitHub directory) | Comptroller | own proxy deployment | Comptroller (proxy) (selected) `0x06a31e...c9d6e3` — deployed 2023-04-25 07:02:29+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 2024-06-union-finance-update-2-judging (GitHub directory) | UserManager | own contract | 0x8e195d… (selected) `0x8e195d...597628` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2023-02-union-judging (GitHub directory) | Comptroller | own proxy deployment | Comptroller (proxy) (selected) `0x06a31efa04453c5f9c0a711cdb96075308c9d6e3` — deployed 2023-04-25 07:02:29+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2023-02-union-judging (GitHub directory) | AssetManager | own contract | 0xe4addf… (selected) `0xe4addfdf5641eb4e15f60a81f63ced4884b49823` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2024-06-union-finance-update-2-judging (GitHub directory) | Comptroller | own proxy deployment | Comptroller (proxy) (selected) `0x06a31efa04453c5f9c0a711cdb96075308c9d6e3` — deployed 2023-04-25 07:02:29+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2024-06-union-finance-update-2-judging (GitHub directory) | UserManager | own contract | 0x8e195d… (selected) `0x8e195d65b9932185fcc76db5144534e0f3597628` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2024-06-union-finance-update-2-judging (GitHub directory) | VouchFaucet | unmatched — not counted | — | mentioned in findings H-2, M-1, M-3 | no |
 | 2024-06-union-finance-update-2-judging (GitHub directory) | UErc20 | unmatched — not counted | — | mentioned in finding H-3 | no |
 | 2024-06-union-finance-update-2-judging (GitHub directory) | UToken | unmatched — not counted | — | mentioned in findings H-3, M-4, M-5 | no |
-| 2024-06-union-finance-update-2-judging (GitHub directory) | UDai | own contract | 0xe478b5… (selected) `0xe478b5...a744b2` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2024-06-union-finance-update-2-judging (GitHub directory) | UDai | own contract | 0xe478b5… (selected) `0xe478b5e7a423d7cdb224692d0a816ca146a744b2` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2024-06-union-finance-update-2-judging (GitHub directory) | ERC1155Voucher | unmatched — not counted | — | mentioned in findings M-1, M-2 | no |
 | 2024-06-union-finance-update-2-judging (GitHub directory) | ScaledDecimalBase | unmatched — not counted | — | mentioned in finding M-5 | no |
-| Audit_Report.pdf | Comptroller | own proxy deployment | Comptroller (proxy) (selected) `0x06a31e...c9d6e3` — deployed 2023-04-25 07:02:29+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Audit_Report.pdf | UserManager | own contract | 0x8e195d… (selected) `0x8e195d...597628` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Audit_Report.pdf | Comptroller | own proxy deployment | Comptroller (proxy) (selected) `0x06a31efa04453c5f9c0a711cdb96075308c9d6e3` — deployed 2023-04-25 07:02:29+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Audit_Report.pdf | UserManager | own contract | 0x8e195d… (selected) `0x8e195d65b9932185fcc76db5144534e0f3597628` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Audit_Report.pdf | VouchFaucet | unmatched — not counted | — | listed in scope and findings | no |
 | Audit_Report.pdf | UErc20 | unmatched — not counted | — | listed in scope | no |
 | Audit_Report.pdf | UToken | unmatched — not counted | — | listed in scope | no |
-| Audit_Report.pdf | UDai | own contract | 0xe478b5… (selected) `0xe478b5...a744b2` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Audit_Report.pdf | UDai | own contract | 0xe478b5… (selected) `0xe478b5e7a423d7cdb224692d0a816ca146a744b2` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Audit_Report.pdf | ERC1155Voucher | unmatched — not counted | — | listed in scope and findings | no |
 | Audit_Report.pdf | ScaledDecimalBase | unmatched — not counted | — | mentioned in findings | no |
 | Audit_Report.pdf | Controller | unmatched — not counted | — | listed in scope | no |
 | Audit_Report.pdf | UnionLens | unmatched — not counted | — | listed in scope | no |
 | Audit_Report.pdf | WadRayMath | unmatched — not counted | — | listed in scope | no |
-| Audit_Report.pdf | AaveV3Adapter | own proxy deployment | AaveV3Adapter (proxy) (selected) `0x9c69fc...41350b` — deployed 2023-04-25 07:07:15+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Audit_Report.pdf | AssetManager | own contract | 0xe4addf… (selected) `0xe4addf...b49823` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Audit_Report.pdf | PureTokenAdapter | own contract | 0x9b8d60… (selected) `0x9b8d60...5a1343` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Audit_Report.pdf | AaveV3Adapter | own proxy deployment | AaveV3Adapter (proxy) (selected) `0x9c69fc4edcce8d3410ab59e9f9d9e65e5f41350b` — deployed 2023-04-25 07:07:15+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Audit_Report.pdf | AssetManager | own contract | 0xe4addf… (selected) `0xe4addfdf5641eb4e15f60a81f63ced4884b49823` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Audit_Report.pdf | PureTokenAdapter | own contract | 0x9b8d60… (selected) `0x9b8d609ecce72d6f71c026539370f7b5e55a1343` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Audit_Report.pdf | IAssetManager | unmatched — not counted | — | listed in scope | no |
 | Audit_Report.pdf | IComptroller | unmatched — not counted | — | listed in scope | no |
 | Audit_Report.pdf | IDai | unmatched — not counted | — | listed in scope | no |
@@ -288,10 +288,10 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Audit_Report.pdf | AMarket3 | unmatched — not counted | — | listed in scope | no |
 | Audit_Report.pdf | LendingPool3 | unmatched — not counted | — | listed in scope | no |
 | Audit_Report.pdf | FixedInterestRateModel | unmatched — not counted | — | listed in scope | no |
-| Audit_Report.pdf | MarketRegistry | own contract | 0x6d44e3… (selected) `0x6d44e3...7c6d0c` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Audit_Report.pdf | MarketRegistry | own contract | 0x6d44e3… (selected) `0x6d44e3b49a6e85cc316ef19b423e84a63f7c6d0c` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Audit_Report.pdf | UserManagerDAI | unmatched — not counted | — | listed in scope | no |
 | Audit_Report.pdf | UserManagerERC20 | unmatched — not counted | — | listed in scope | no |
-| Audit_Report.pdf | OpOwner | own contract | 0x946a2c… (selected) `0x946a2c...d29d96` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Audit_Report.pdf | OpOwner | own contract | 0x946a2c… (selected) `0x946a2c918f3d928b918c01d813644f27bcd29d96` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Audit_Report.pdf | OpConnector | unmatched — not counted | — | listed in scope | no |
 | Audit_Report.pdf | OpUNION | unmatched — not counted | — | listed in scope | no |
 | Audit_Report.pdf | Whitelistable | unmatched — not counted | — | listed in scope | no |
@@ -303,7 +303,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| optimism | `0xda1000...000da1` | Dai | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0xda10009cbd5d07dd0cecc66161fc93d7c9000da1` | Dai | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

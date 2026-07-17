@@ -60,9 +60,9 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| dCowVault | core_logic | bsc | n/a | [`0x0b28a5...ccefc0`](./contracts/bsc-56/0x0b28a55dbbd6c5ddd4d1d7157361e9d6d0ccefc0/) | ⚠️ Unaudited |
-| dDepAlphaVault | core_logic | bsc | n/a | [`0x024f05...1fb69d`](./contracts/bsc-56/0x024f05c70f203fb77f27b00422534cc33e1fb69d/) | ⚠️ Unaudited |
-| dDepVenusVault | core_logic | bsc | n/a | [`0x2e128e...88e1a6`](./contracts/bsc-56/0x2e128eb2ee787428307a7b246d02c1801788e1a6/) | ⚠️ Unaudited |
+| dCowVault | core_logic | bsc | n/a | [`0x0b28a55dbbd6c5ddd4d1d7157361e9d6d0ccefc0`](./contracts/bsc-56/0x0b28a55dbbd6c5ddd4d1d7157361e9d6d0ccefc0/) | ⚠️ Unaudited |
+| dDepAlphaVault | core_logic | bsc | n/a | [`0x024f05c70f203fb77f27b00422534cc33e1fb69d`](./contracts/bsc-56/0x024f05c70f203fb77f27b00422534cc33e1fb69d/) | ⚠️ Unaudited |
+| dDepVenusVault | core_logic | bsc | n/a | [`0x2e128eb2ee787428307a7b246d02c1801788e1a6`](./contracts/bsc-56/0x2e128eb2ee787428307a7b246d02c1801788e1a6/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -82,8 +82,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0x179e1f...95b7b2` | ❓ Unverified |
-| UnnamedContract | unknown | heco | n/a | `0x48c859...895c27` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x179e1f2a75ab37f297aa825e0b05187fa195b7b2` | ❓ Unverified |
+| UnnamedContract | unknown | heco | n/a | `0x48c859531254f25e57d1c1a8e030ef0b1c895c27` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -101,9 +101,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x0b28a5...ccefc0`](./contracts/bsc-56/0x0b28a55dbbd6c5ddd4d1d7157361e9d6d0ccefc0/) | dCowVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x024f05...1fb69d`](./contracts/bsc-56/0x024f05c70f203fb77f27b00422534cc33e1fb69d/) | dDepAlphaVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x2e128e...88e1a6`](./contracts/bsc-56/0x2e128eb2ee787428307a7b246d02c1801788e1a6/) | dDepVenusVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x0b28a55dbbd6c5ddd4d1d7157361e9d6d0ccefc0`](./contracts/bsc-56/0x0b28a55dbbd6c5ddd4d1d7157361e9d6d0ccefc0/) | dCowVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x024f05c70f203fb77f27b00422534cc33e1fb69d`](./contracts/bsc-56/0x024f05c70f203fb77f27b00422534cc33e1fb69d/) | dDepAlphaVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x2e128eb2ee787428307a7b246d02c1801788e1a6`](./contracts/bsc-56/0x2e128eb2ee787428307a7b246d02c1801788e1a6/) | dDepVenusVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

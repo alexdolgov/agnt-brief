@@ -62,9 +62,9 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ERC1967Proxy | unknown | ethereum | n/a | [`0x0ff7e2...001a33`](./contracts/ethereum-1/0x0ff7e21be837c2a952a2bbbf10da074fca001a33/) | ⚠️ Unaudited |
-| SimpleMerkleVesting | unknown | ethereum | n/a | [`0x09fda7...e3f4ce`](./contracts/ethereum-1/0x09fda7c05da37aebc00d7bed5d6518e62ae3f4ce/) | ⚠️ Unaudited |
-| Token | unknown | ethereum | n/a | [`0x534d1f...776a5e`](./contracts/ethereum-1/0x534d1f5e617e0f72a6b06a04aa599839af776a5e/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | ethereum | n/a | [`0x0ff7e21be837c2a952a2bbbf10da074fca001a33`](./contracts/ethereum-1/0x0ff7e21be837c2a952a2bbbf10da074fca001a33/) | ⚠️ Unaudited |
+| SimpleMerkleVesting | unknown | ethereum | n/a | [`0x09fda7c05da37aebc00d7bed5d6518e62ae3f4ce`](./contracts/ethereum-1/0x09fda7c05da37aebc00d7bed5d6518e62ae3f4ce/) | ⚠️ Unaudited |
+| Token | unknown | ethereum | n/a | [`0x534d1f5e617e0f72a6b06a04aa599839af776a5e`](./contracts/ethereum-1/0x534d1f5e617e0f72a6b06a04aa599839af776a5e/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -107,8 +107,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x09fda7...e3f4ce`](./contracts/ethereum-1/0x09fda7c05da37aebc00d7bed5d6518e62ae3f4ce/) | SimpleMerkleVesting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x534d1f...776a5e`](./contracts/ethereum-1/0x534d1f5e617e0f72a6b06a04aa599839af776a5e/) | Token | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x09fda7c05da37aebc00d7bed5d6518e62ae3f4ce`](./contracts/ethereum-1/0x09fda7c05da37aebc00d7bed5d6518e62ae3f4ce/) | SimpleMerkleVesting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x534d1f5e617e0f72a6b06a04aa599839af776a5e`](./contracts/ethereum-1/0x534d1f5e617e0f72a6b06a04aa599839af776a5e/) | Token | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

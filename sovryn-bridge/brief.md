@@ -60,9 +60,9 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AllowTokens | unknown | ethereum | n/a | 3 deployments: ethereum [`0x1486e2...f70fe0`](./contracts/ethereum-1/0x1486e225ee099f7ea491e32cd2a69e8264f70fe0/); ethereum `0x8df20c...0aa1be`; ethereum `0x9d772c...9789fd` | ✅ Audited |
-| Federation | unknown | ethereum | n/a | 2 deployments: ethereum [`0x2493b9...4cbd18`](./contracts/ethereum-1/0x2493b92b3b958c8d1e93899cae00bfc4854cbd18/); ethereum `0xa38e6a...c4df24` | ✅ Audited |
-| MultiSigWallet | governance | ethereum | n/a | [`0x062c74...3ccd2e`](./contracts/ethereum-1/0x062c74f9d27b1178bb76186c1756128ccb3ccd2e/) | ✅ Audited |
+| AllowTokens | unknown | ethereum | n/a | 3 deployments: ethereum [`0x1486e225ee099f7ea491e32cd2a69e8264f70fe0`](./contracts/ethereum-1/0x1486e225ee099f7ea491e32cd2a69e8264f70fe0/); ethereum `0x8df20c2c85bee0c3da250da96d892598c70aa1be`; ethereum `0x9d772ca9dd5b7025acc23ed4bb2da9819f9789fd` | ✅ Audited |
+| Federation | unknown | ethereum | n/a | 2 deployments: ethereum [`0x2493b92b3b958c8d1e93899cae00bfc4854cbd18`](./contracts/ethereum-1/0x2493b92b3b958c8d1e93899cae00bfc4854cbd18/); ethereum `0xa38e6a92495a58a05969846a21d5cbb41dc4df24` | ✅ Audited |
+| MultiSigWallet | governance | ethereum | n/a | [`0x062c74f9d27b1178bb76186c1756128ccb3ccd2e`](./contracts/ethereum-1/0x062c74f9d27b1178bb76186c1756128ccb3ccd2e/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 
@@ -86,48 +86,48 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x05b68e...d5327d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x09e3ba...86438e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x19d3c7...c0b0f1` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x1c9ede...699c8f` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x1d937d...a99914` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x1d9524...48fade` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x249ea3...744faf` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x29cdad...633b71` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x49eef2...ecf420` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x603e82...d24d5e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x657595...65bea9` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x67bb74...477880` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x72efb4...e0e0d8` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x74aa9b...d4d45f` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x752fa1...928537` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x8027e0...05a500` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x882619...f9b52f` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x8908c9...c8eba9` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x8be5c4...0dc148` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x97d761...9e37bc` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xa908bc...9ca92a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xad95d2...806453` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xaed21f...e3c391` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xb14b35...469379` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xb4ba8c...c79156` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xb6c313...0e69f0` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xb7405c...0a7e41` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xb8b037...4d8868` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc0b2a9...a4fa1b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc51579...148959` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc81a82...c16ed5` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xcf0ee3...c6971d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xd412ac...f09538` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xd6b220...ae8ec2` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xd913f2...be216c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xe0a825...6378d8` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xe1b1ad...836747` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xe8d817...42eb4e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xf29fd8...c7c374` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xf9a59a...68545c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xfcc895...e06196` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xfe4e2a...509d6b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x05b68e70168e876b2025f837bc8e0b2312d5327d` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x09e3ba4e69762a1ee02bf34a3353756c0086438e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x19d3c70ea390437ac520123260b5a915d9c0b0f1` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x1c9edea53a1d4681f42a21ee846b22095d699c8f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x1d937dbadbe6aa80b954d2aa1164f8ae9ca99914` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x1d952407478407a0f461c3341f735bdb3248fade` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x249ea34234f469a91f8fec130320cdb205744faf` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x29cdad148c715b853f64d0d917358b88c5633b71` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x49eef28c3fc0504ef5974a524e343cf26fecf420` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x603e8247012516b01c6279fffe2879c2fbd24d5e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x657595ae6082f451b11a0103b8126f5c9465bea9` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x67bb746ecc46eb3cf80b69191c18d0d098477880` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x72efb4b0932aea334b51c60046c8093f5fe0e0d8` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x74aa9b461cad174ca066fc80af2151c96bd4d45f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x752fa1171dd6f07ad818ea5e6dc2c9afda928537` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x8027e05761045704f8237ebdbb72bae56a05a500` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x882619af8aa0f1946d9f375e64994e1246f9b52f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x8908c967ffe8620eef74068ccddab0d9cfc8eba9` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x8be5c4268c5921446bb779d28e19fc8c440dc148` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x97d761d49a137e8bc140e5db95bc148c529e37bc` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xa908bc57fbf079729f10017580a6bdf31e9ca92a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xad95d2857f6a657b0b3ff538df028b0e2e806453` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xaed21f39d3df35dc6795b1e90a1f13151ee3c391` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb14b356ef1dcd94905b77f1827331c989f469379` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb4ba8c260e09926523d8ffdb3fd9194c3fc79156` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb6c313a427fa911a4c9a119e80feea0fe20e69f0` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb7405c2b015b476e9bfb1a7e46e1e78ec00a7e41` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb8b0370dfbb0c94add416001f50d90beac4d8868` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc0b2a9e31f69e4f0bc24584c678c582714a4fa1b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc51579e62354a6e07e3706cabe180b7c26148959` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc81a826b34bbe9bb7b951dfb0cbc130189c16ed5` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xcf0ee3652c83d8b7347e0ae083d50f3778c6971d` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd412acd34a832a09c80c8a4895ff46d733f09538` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd6b220491bf398fbe593b79844e8ba6866ae8ec2` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd913f2dde72f8565d05c3faeeab37e6bb4be216c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe0a8251162f820f81976e133cfaa9a0a536378d8` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe1b1ad78291dd6866a646a351ae0ab6228836747` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe8d817d2cc9185743076c405c905f7b24342eb4e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf29fd896a43287a2b6f1b260c8263d7372c7c374` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf9a59a649859a27d664c8bdb51fa53bcb268545c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xfcc8957fdd44499f0e223a26b66d6ef0d1e06196` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xfe4e2a5d646e4398b34ec5b24a340ddb26509d6b` | ❓ Unverified |
 
 ## Audit Inventory
 

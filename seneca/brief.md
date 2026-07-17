@@ -58,13 +58,13 @@ The protocol forms a single structural family (Core Logic) of 5 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| SenecaUSD | unknown | ethereum | n/a | [`0x922406...6edbd8`](./contracts/ethereum-1/0x922406eafc3cceb32b0256f287fb977c426edbd8/) | ✅ Audited |
+| SenecaUSD | unknown | ethereum | n/a | [`0x922406eafc3cceb32b0256f287fb977c426edbd8`](./contracts/ethereum-1/0x922406eafc3cceb32b0256f287fb977c426edbd8/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Chamber | unknown | ethereum | n/a | [`0xbc83f2...377c05`](./contracts/ethereum-1/0xbc83f2711d0749d7454e4a9d53d8594df0377c05/) | ⚠️ Unaudited |
+| Chamber | unknown | ethereum | n/a | [`0xbc83f2711d0749d7454e4a9d53d8594df0377c05`](./contracts/ethereum-1/0xbc83f2711d0749d7454e4a9d53d8594df0377c05/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -84,9 +84,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x0f0487...5752d8` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x9cae6d...14df15` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xad48dc...304c4b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x0f0487d919943c6946184d833f75e7a5b45752d8` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x9cae6d5a09e4860afcd1df144250dd02a014df15` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xad48dc72ff285b3f9c763e0c5146929194304c4b` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -100,7 +100,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xbc83f2...377c05`](./contracts/ethereum-1/0xbc83f2711d0749d7454e4a9d53d8594df0377c05/) | Chamber | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xbc83f2711d0749d7454e4a9d53d8594df0377c05`](./contracts/ethereum-1/0xbc83f2711d0749d7454e4a9d53d8594df0377c05/) | Chamber | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

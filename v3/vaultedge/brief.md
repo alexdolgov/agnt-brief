@@ -52,47 +52,47 @@ The pinned logic-topography run contains 39 contract row(s) across base, plasma.
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- ActivePool (`0x1d3583...c8c5b0`, chain 8453)
-- ActivePool (`0xf7b01e...8f337a`, chain 9745)
-- AdminContract (`0xaf1be6...1e9d9d`, chain 8453)
-- AdminContract (`0x43a7ba...ad829a`, chain 9745)
-- BorrowerOperations (`0xc96723...9901cd`, chain 8453)
-- BorrowerOperations (`0xaa2d3c...770829`, chain 9745)
-- CollSurplusPool (`0x659c04...b70a90`, chain 8453)
-- CollSurplusPool (`0x69b849...33d9c6`, chain 9745)
-- DebtToken (`0x0c6de2...fd8a92`, chain 8453)
-- DebtToken (`0x50dd3d...436553`, chain 9745)
-- DefaultPool (`0x335803...338b4e`, chain 8453)
-- DefaultPool (`0x76a3ff...f4a979`, chain 9745)
-- FlashArbExecutor (`0x506e5b...57401b`, chain 8453)
-- GasPool (`0xaf336f...2dd1d1`, chain 8453)
-- GasPool (`0x386d36...cc0838`, chain 9745)
-- mRT Oracle (`0x0dbf7c...4177bb`, chain 8453)
-- mRT Token (`0xa46246...24e5ec`, chain 8453)
-- mSRT Oracle (`0x13e32a...0f67e0`, chain 8453)
-- mSRT Token (`0xa9329e...785687`, chain 8453)
-- mUSD Oracle (`0xcf6d25...4d7b8f`, chain 8453)
-- mUSD Token (`0xc06636...a2e7c0`, chain 8453)
-- mvUSD Vault (`0x27fbc9...ce903b`, chain 8453)
-- PegStabilityModule (`0xb2d6c5...a3e04d`, chain 9745)
-- PegStabilityModuleWithStrategy (`0x514578...8602f6`, chain 8453)
-- PegToken (`0x0d7e1f...acdc83`, chain 9745)
-- PriceFeedV2 (`0x1be233...3a947b`, chain 8453)
-- PriceFeedV2 (`0x46abb1...6b6587`, chain 9745)
-- ProxyAdmin (`0x0dfebd...1ab146`, chain 8453)
-- ProxyAdmin (`0xe424f3...3331a0`, chain 9745)
-- ProxyAdmin Timelocked One Day (`0x66e5ad...68d4f8`, chain 8453)
-- ProxyAdmin Timelocked Three Day (`0x07fe8c...4bb437`, chain 8453)
-- SortedVessels (`0x063208...3048bb`, chain 8453)
-- SortedVessels (`0xda9e80...1fed89`, chain 9745)
-- StabilityPool (`0x09cb81...7cfc34`, chain 8453)
-- StabilityPool (`0xdeb916...da6f95`, chain 9745)
-- Timelock One Day (`0xffef0f...9e7109`, chain 8453)
-- Timelock Three Day (`0x64eb35...4d3e67`, chain 8453)
-- VesselManager (`0x9abf6a...683054`, chain 8453)
-- VesselManager (`0x5954d9...5f1e3a`, chain 9745)
-- VesselManagerOperations (`0xc11494...735c9c`, chain 8453)
-- VesselManagerOperations (`0x24ea2f...a9387a`, chain 9745)
+- ActivePool (`0x1d3583dee04085e0ac941b46ce8e2550d4c8c5b0`, chain 8453)
+- ActivePool (`0xf7b01eaeafa357eb7334b75a61b49a6dc78f337a`, chain 9745)
+- AdminContract (`0xaf1be613be291ebc4672bdc42173181e1d1e9d9d`, chain 8453)
+- AdminContract (`0x43a7ba8590fe4f128eb82a633c68929c52ad829a`, chain 9745)
+- BorrowerOperations (`0xc967233790f9f9a7234f96c8eeca9b449e9901cd`, chain 8453)
+- BorrowerOperations (`0xaa2d3cce277ee1e2f594724dadec8e656c770829`, chain 9745)
+- CollSurplusPool (`0x659c04117f3cbc052072c10fc31e4bea03b70a90`, chain 8453)
+- CollSurplusPool (`0x69b849e99d0e0bc72ac9ce89e4092a0f7633d9c6`, chain 9745)
+- DebtToken (`0x0c6de2baebed16248b794d582cc694c97cfd8a92`, chain 8453)
+- DebtToken (`0x50dd3d50379ca1e879376b0f112bb7a5b7436553`, chain 9745)
+- DefaultPool (`0x33580387fa399f8b384fb5621c66265230338b4e`, chain 8453)
+- DefaultPool (`0x76a3ff6f8f5279d2d936c36d5a9b5eabf5f4a979`, chain 9745)
+- FlashArbExecutor (`0x506e5b74d2c420f77f736e638769110eb257401b`, chain 8453)
+- GasPool (`0xaf336fc114a6e327df635e7bbb29daec542dd1d1`, chain 8453)
+- GasPool (`0x386d364a52fbd44d1ed09b5c0176a7ecb8cc0838`, chain 9745)
+- mRT Oracle (`0x0dbf7c87040f7aaf96a647fab5a49cab9c4177bb`, chain 8453)
+- mRT Token (`0xa46246a5ab18c0d312f6e6a479e80848c024e5ec`, chain 8453)
+- mSRT Oracle (`0x13e32ad756c6001e96a41693a16166865c0f67e0`, chain 8453)
+- mSRT Token (`0xa9329edc0cd5af68536a9ce55c5054a0cb785687`, chain 8453)
+- mUSD Oracle (`0xcf6d2594078f5e9bb57bc26c358f89a0ee4d7b8f`, chain 8453)
+- mUSD Token (`0xc06636be41fac559c67b717261e1acbe83a2e7c0`, chain 8453)
+- mvUSD Vault (`0x27fbc95d2a0af7ecc5692e9d6299b49491ce903b`, chain 8453)
+- PegStabilityModule (`0xb2d6c53f4abcc9e063564bb58acdffa154a3e04d`, chain 9745)
+- PegStabilityModuleWithStrategy (`0x514578a5a4711a3ed0920e68b5462b0d718602f6`, chain 8453)
+- PegToken (`0x0d7e1ffde7e9df996db632ec9935b31f5aacdc83`, chain 9745)
+- PriceFeedV2 (`0x1be23396974507f37fcb3eb8b1d635672f3a947b`, chain 8453)
+- PriceFeedV2 (`0x46abb1f6d958fedb0557af55e77076f6906b6587`, chain 9745)
+- ProxyAdmin (`0x0dfebd95ebea4e3824fabb4f60001ea1351ab146`, chain 8453)
+- ProxyAdmin (`0xe424f3d39bbb8a599eaa7f6ece273566693331a0`, chain 9745)
+- ProxyAdmin Timelocked One Day (`0x66e5adfcc4821edc64d4064d6c457d371168d4f8`, chain 8453)
+- ProxyAdmin Timelocked Three Day (`0x07fe8c2704c51bf460c3f48351419c76724bb437`, chain 8453)
+- SortedVessels (`0x0632081d274c7d7a32c6c661b449293a0f3048bb`, chain 8453)
+- SortedVessels (`0xda9e80b75807954ba4962e6a9bc54ca8681fed89`, chain 9745)
+- StabilityPool (`0x09cb815bce3922b2bd45576e07edb34fa67cfc34`, chain 8453)
+- StabilityPool (`0xdeb916d0e35eb87e463705b605eab921e4da6f95`, chain 9745)
+- Timelock One Day (`0xffef0f452fe6a6fdd5a8b65a7d000b9d309e7109`, chain 8453)
+- Timelock Three Day (`0x64eb35eff983181a323441e4e0dd29ebd54d3e67`, chain 8453)
+- VesselManager (`0x9abf6a80a1dbcb469c796e2983ce880421683054`, chain 8453)
+- VesselManager (`0x5954d911cc26eccd336b213ba72014796e5f1e3a`, chain 9745)
+- VesselManagerOperations (`0xc114942cce837543b8583619c61db3ca05735c9c`, chain 8453)
+- VesselManagerOperations (`0x24ea2fb47ded42f87bfcd5121bc2a7ea7ca9387a`, chain 9745)
 
 ## Contract Surface Quality
 
@@ -138,65 +138,65 @@ The pinned logic-topography run contains 39 contract row(s) across base, plasma.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ActivePool | unknown | project_anchor | own_supporting | 0 | base | unit-395545 | `0x1d3583...c8c5b0` | ⚠️ Unaudited |
-| ActivePool | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x8ceaba...3e2a78` | ⚠️ Unaudited |
-| ActivePool | unknown | project_anchor | own_supporting | 0 | plasma | unit-395580 | `0xf7b01e...8f337a` | ⚠️ Unaudited |
-| AdminContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2ad60d...19eff5` | ⚠️ Unaudited |
-| AdminContract | unknown | project_anchor | own_supporting | 0 | base | unit-395557 | `0xaf1be6...1e9d9d` | ⚠️ Unaudited |
-| AdminContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-395568 | `0x43a7ba...ad829a` | ⚠️ Unaudited |
-| BorrowerOperations | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xac3098...5587ea` | ⚠️ Unaudited |
-| BorrowerOperations | unknown | project_anchor | own_supporting | 0 | base | unit-395562 | `0xc96723...9901cd` | ⚠️ Unaudited |
-| BorrowerOperations | unknown | project_anchor | own_supporting | 0 | plasma | unit-395574 | `0xaa2d3c...770829` | ⚠️ Unaudited |
-| CollSurplusPool | unknown | project_anchor | own_supporting | 0 | base | unit-395552 | `0x659c04...b70a90` | ⚠️ Unaudited |
-| CollSurplusPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xc401d5...6f86bc` | ⚠️ Unaudited |
-| CollSurplusPool | unknown | project_anchor | own_supporting | 0 | plasma | unit-395572 | `0x69b849...33d9c6` | ⚠️ Unaudited |
-| DebtToken | unknown | project_anchor | own_supporting | 0 | base | unit-395540 | `0x0c6de2...fd8a92` | ⚠️ Unaudited |
-| DebtToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbfcd66...b68c26` | ⚠️ Unaudited |
-| DebtToken | unknown | project_anchor | own_supporting | 0 | plasma | unit-395570 | `0x50dd3d...436553` | ⚠️ Unaudited |
-| DefaultPool | unknown | project_anchor | own_supporting | 0 | base | unit-395547 | `0x335803...338b4e` | ⚠️ Unaudited |
-| DefaultPool | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x6673a7...460ff1` | ⚠️ Unaudited |
-| DefaultPool | unknown | project_anchor | own_supporting | 0 | plasma | unit-395573 | `0x76a3ff...f4a979` | ⚠️ Unaudited |
-| FeeCollector | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x384288...366143` | ⚠️ Unaudited |
-| FlashArbExecutor | unknown | project_anchor | own_supporting | 0 | base | unit-395549 | `0x506e5b...57401b` | ⚠️ Unaudited |
-| FlashArbExecutor_Morpho | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x38eff9...b3ee21` | ⚠️ Unaudited |
-| FlashArbRedemption_Morpho | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x9db37a...d42dcc` | ⚠️ Unaudited |
-| GasPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x110a56...50e697` | ⚠️ Unaudited |
-| GasPool | unknown | project_anchor | own_supporting | 0 | base | unit-395558 | `0xaf336f...2dd1d1` | ⚠️ Unaudited |
-| GasPool | unknown | project_anchor | own_supporting | 0 | plasma | unit-395567 | `0x386d36...cc0838` | ⚠️ Unaudited |
-| mRT Oracle | unknown | project_anchor | own_supporting | 0 | base | unit-395541 | `0x0dbf7c...4177bb` | ⚠️ Unaudited |
-| mRT Token | unknown | project_anchor | own_supporting | 0 | base | unit-395555 | `0xa46246...24e5ec` | ⚠️ Unaudited |
-| mSRT Oracle | unknown | project_anchor | own_supporting | 0 | base | unit-395543 | `0x13e32a...0f67e0` | ⚠️ Unaudited |
-| mSRT Token | unknown | project_anchor | own_supporting | 0 | base | unit-395556 | `0xa9329e...785687` | ⚠️ Unaudited |
-| mUSD Oracle | unknown | project_anchor | own_supporting | 0 | base | unit-395563 | `0xcf6d25...4d7b8f` | ⚠️ Unaudited |
-| mUSD Token | unknown | project_anchor | own_supporting | 0 | base | unit-395559 | `0xc06636...a2e7c0` | ⚠️ Unaudited |
-| mvUSD Vault | unknown | project_anchor | own_supporting | 0 | base | unit-395546 | `0x27fbc9...ce903b` | ⚠️ Unaudited |
-| PegStabilityModule | unknown | project_anchor | own_supporting | 0 | plasma | unit-395575 | `0xb2d6c5...a3e04d` | ⚠️ Unaudited |
-| PegStabilityModuleWithStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x422f31...a5e067` | ⚠️ Unaudited |
-| PegStabilityModuleWithStrategy | unknown | project_anchor | own_supporting | 0 | base | unit-395550 | `0x514578...8602f6` | ⚠️ Unaudited |
-| PegToken | unknown | project_anchor | own_supporting | 0 | plasma | unit-395565 | `0x0d7e1f...acdc83` | ⚠️ Unaudited |
-| PriceFeedV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x019ba6...c8c2f8` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | project_anchor | own_supporting | 0 | base | unit-395542 | `0x0dfebd...1ab146` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x3f24a0...1c0199` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | project_anchor | own_supporting | 0 | plasma | unit-395578 | `0xe424f3...3331a0` | ⚠️ Unaudited |
-| ProxyAdmin Timelocked One Day | unknown | project_anchor | own_supporting | 0 | base | unit-395553 | `0x66e5ad...68d4f8` | ⚠️ Unaudited |
-| ProxyAdmin Timelocked Three Day | unknown | project_anchor | own_supporting | 0 | base | unit-395538 | `0x07fe8c...4bb437` | ⚠️ Unaudited |
-| ProxyAdmin_TimelockedOneDay | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x05a991...3cb50d` | ⚠️ Unaudited |
-| ProxyAdmin_TimelockedThreeDay | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xcb9b3a...e48b8d` | ⚠️ Unaudited |
-| SortedVessels | unknown | project_anchor | own_supporting | 0 | base | unit-395537 | `0x063208...3048bb` | ⚠️ Unaudited |
-| SortedVessels | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x8a34f2...591d34` | ⚠️ Unaudited |
-| SortedVessels | unknown | project_anchor | own_supporting | 0 | plasma | unit-395576 | `0xda9e80...1fed89` | ⚠️ Unaudited |
-| StabilityPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0745cb...047ac8` | ⚠️ Unaudited |
-| StabilityPool | unknown | project_anchor | own_supporting | 0 | base | unit-395539 | `0x09cb81...7cfc34` | ⚠️ Unaudited |
-| StabilityPool | unknown | project_anchor | own_supporting | 0 | plasma | unit-395577 | `0xdeb916...da6f95` | ⚠️ Unaudited |
-| Timelock One Day | unknown | project_anchor | own_supporting | 0 | base | unit-395564 | `0xffef0f...9e7109` | ⚠️ Unaudited |
-| Timelock Three Day | unknown | project_anchor | own_supporting | 0 | base | unit-395551 | `0x64eb35...4d3e67` | ⚠️ Unaudited |
-| TimelockControllerEnumerable | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xa23daa...9af14d` | ⚠️ Unaudited |
-| VesselManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x14a936...4aca30` | ⚠️ Unaudited |
-| VesselManager | unknown | project_anchor | own_supporting | 0 | base | unit-395554 | `0x9abf6a...683054` | ⚠️ Unaudited |
-| VesselManager | unknown | project_anchor | own_supporting | 0 | plasma | unit-395571 | `0x5954d9...5f1e3a` | ⚠️ Unaudited |
-| VesselManagerOperations | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x1a9f91...3dbe78` | ⚠️ Unaudited |
-| VesselManagerOperations | unknown | project_anchor | own_supporting | 0 | base | unit-395560 | `0xc11494...735c9c` | ⚠️ Unaudited |
-| VesselManagerOperations | unknown | project_anchor | own_supporting | 0 | plasma | unit-395566 | `0x24ea2f...a9387a` | ⚠️ Unaudited |
+| ActivePool | unknown | project_anchor | own_supporting | 0 | base | unit-395545 | `0x1d3583dee04085e0ac941b46ce8e2550d4c8c5b0` | ⚠️ Unaudited |
+| ActivePool | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x8ceaba86d4ae89f582a52e020ecf7f1f2f3e2a78` | ⚠️ Unaudited |
+| ActivePool | unknown | project_anchor | own_supporting | 0 | plasma | unit-395580 | `0xf7b01eaeafa357eb7334b75a61b49a6dc78f337a` | ⚠️ Unaudited |
+| AdminContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2ad60d1d8bb39be30e06af25a90c66c9bd19eff5` | ⚠️ Unaudited |
+| AdminContract | unknown | project_anchor | own_supporting | 0 | base | unit-395557 | `0xaf1be613be291ebc4672bdc42173181e1d1e9d9d` | ⚠️ Unaudited |
+| AdminContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-395568 | `0x43a7ba8590fe4f128eb82a633c68929c52ad829a` | ⚠️ Unaudited |
+| BorrowerOperations | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xac30987d30cfba18f564e9040d23fe38315587ea` | ⚠️ Unaudited |
+| BorrowerOperations | unknown | project_anchor | own_supporting | 0 | base | unit-395562 | `0xc967233790f9f9a7234f96c8eeca9b449e9901cd` | ⚠️ Unaudited |
+| BorrowerOperations | unknown | project_anchor | own_supporting | 0 | plasma | unit-395574 | `0xaa2d3cce277ee1e2f594724dadec8e656c770829` | ⚠️ Unaudited |
+| CollSurplusPool | unknown | project_anchor | own_supporting | 0 | base | unit-395552 | `0x659c04117f3cbc052072c10fc31e4bea03b70a90` | ⚠️ Unaudited |
+| CollSurplusPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xc401d5b70ba613c57fa4316a86e74106616f86bc` | ⚠️ Unaudited |
+| CollSurplusPool | unknown | project_anchor | own_supporting | 0 | plasma | unit-395572 | `0x69b849e99d0e0bc72ac9ce89e4092a0f7633d9c6` | ⚠️ Unaudited |
+| DebtToken | unknown | project_anchor | own_supporting | 0 | base | unit-395540 | `0x0c6de2baebed16248b794d582cc694c97cfd8a92` | ⚠️ Unaudited |
+| DebtToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbfcd661be34c99920036f176876746b9f5b68c26` | ⚠️ Unaudited |
+| DebtToken | unknown | project_anchor | own_supporting | 0 | plasma | unit-395570 | `0x50dd3d50379ca1e879376b0f112bb7a5b7436553` | ⚠️ Unaudited |
+| DefaultPool | unknown | project_anchor | own_supporting | 0 | base | unit-395547 | `0x33580387fa399f8b384fb5621c66265230338b4e` | ⚠️ Unaudited |
+| DefaultPool | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x6673a757b4bd2005e6286a2b85e4313b37460ff1` | ⚠️ Unaudited |
+| DefaultPool | unknown | project_anchor | own_supporting | 0 | plasma | unit-395573 | `0x76a3ff6f8f5279d2d936c36d5a9b5eabf5f4a979` | ⚠️ Unaudited |
+| FeeCollector | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x3842888cf4ec94b73a7622dcc4ff8d84b8366143` | ⚠️ Unaudited |
+| FlashArbExecutor | unknown | project_anchor | own_supporting | 0 | base | unit-395549 | `0x506e5b74d2c420f77f736e638769110eb257401b` | ⚠️ Unaudited |
+| FlashArbExecutor_Morpho | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x38eff9ae273b8d71684927112037f1eeb1b3ee21` | ⚠️ Unaudited |
+| FlashArbRedemption_Morpho | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x9db37a53bbe5dcb221258122f307fc60a9d42dcc` | ⚠️ Unaudited |
+| GasPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x110a56e6fa0fd09a89b182b73735e9f61750e697` | ⚠️ Unaudited |
+| GasPool | unknown | project_anchor | own_supporting | 0 | base | unit-395558 | `0xaf336fc114a6e327df635e7bbb29daec542dd1d1` | ⚠️ Unaudited |
+| GasPool | unknown | project_anchor | own_supporting | 0 | plasma | unit-395567 | `0x386d364a52fbd44d1ed09b5c0176a7ecb8cc0838` | ⚠️ Unaudited |
+| mRT Oracle | unknown | project_anchor | own_supporting | 0 | base | unit-395541 | `0x0dbf7c87040f7aaf96a647fab5a49cab9c4177bb` | ⚠️ Unaudited |
+| mRT Token | unknown | project_anchor | own_supporting | 0 | base | unit-395555 | `0xa46246a5ab18c0d312f6e6a479e80848c024e5ec` | ⚠️ Unaudited |
+| mSRT Oracle | unknown | project_anchor | own_supporting | 0 | base | unit-395543 | `0x13e32ad756c6001e96a41693a16166865c0f67e0` | ⚠️ Unaudited |
+| mSRT Token | unknown | project_anchor | own_supporting | 0 | base | unit-395556 | `0xa9329edc0cd5af68536a9ce55c5054a0cb785687` | ⚠️ Unaudited |
+| mUSD Oracle | unknown | project_anchor | own_supporting | 0 | base | unit-395563 | `0xcf6d2594078f5e9bb57bc26c358f89a0ee4d7b8f` | ⚠️ Unaudited |
+| mUSD Token | unknown | project_anchor | own_supporting | 0 | base | unit-395559 | `0xc06636be41fac559c67b717261e1acbe83a2e7c0` | ⚠️ Unaudited |
+| mvUSD Vault | unknown | project_anchor | own_supporting | 0 | base | unit-395546 | `0x27fbc95d2a0af7ecc5692e9d6299b49491ce903b` | ⚠️ Unaudited |
+| PegStabilityModule | unknown | project_anchor | own_supporting | 0 | plasma | unit-395575 | `0xb2d6c53f4abcc9e063564bb58acdffa154a3e04d` | ⚠️ Unaudited |
+| PegStabilityModuleWithStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x422f315f82c28f577c663972daa2de6327a5e067` | ⚠️ Unaudited |
+| PegStabilityModuleWithStrategy | unknown | project_anchor | own_supporting | 0 | base | unit-395550 | `0x514578a5a4711a3ed0920e68b5462b0d718602f6` | ⚠️ Unaudited |
+| PegToken | unknown | project_anchor | own_supporting | 0 | plasma | unit-395565 | `0x0d7e1ffde7e9df996db632ec9935b31f5aacdc83` | ⚠️ Unaudited |
+| PriceFeedV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x019ba6c927d0fd791f7b52fceca83f0e1ec8c2f8` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | project_anchor | own_supporting | 0 | base | unit-395542 | `0x0dfebd95ebea4e3824fabb4f60001ea1351ab146` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x3f24a08af929ffc25f91355b660c9983991c0199` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | project_anchor | own_supporting | 0 | plasma | unit-395578 | `0xe424f3d39bbb8a599eaa7f6ece273566693331a0` | ⚠️ Unaudited |
+| ProxyAdmin Timelocked One Day | unknown | project_anchor | own_supporting | 0 | base | unit-395553 | `0x66e5adfcc4821edc64d4064d6c457d371168d4f8` | ⚠️ Unaudited |
+| ProxyAdmin Timelocked Three Day | unknown | project_anchor | own_supporting | 0 | base | unit-395538 | `0x07fe8c2704c51bf460c3f48351419c76724bb437` | ⚠️ Unaudited |
+| ProxyAdmin_TimelockedOneDay | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x05a991ea8352655f997b2811aa4eafa5133cb50d` | ⚠️ Unaudited |
+| ProxyAdmin_TimelockedThreeDay | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xcb9b3a0f114e07bee9cb91a4a1ff8d19a4e48b8d` | ⚠️ Unaudited |
+| SortedVessels | unknown | project_anchor | own_supporting | 0 | base | unit-395537 | `0x0632081d274c7d7a32c6c661b449293a0f3048bb` | ⚠️ Unaudited |
+| SortedVessels | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x8a34f260065594f574832360c7f92c65f0591d34` | ⚠️ Unaudited |
+| SortedVessels | unknown | project_anchor | own_supporting | 0 | plasma | unit-395576 | `0xda9e80b75807954ba4962e6a9bc54ca8681fed89` | ⚠️ Unaudited |
+| StabilityPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0745cb7882ff382d7524a9fba21642180d047ac8` | ⚠️ Unaudited |
+| StabilityPool | unknown | project_anchor | own_supporting | 0 | base | unit-395539 | `0x09cb815bce3922b2bd45576e07edb34fa67cfc34` | ⚠️ Unaudited |
+| StabilityPool | unknown | project_anchor | own_supporting | 0 | plasma | unit-395577 | `0xdeb916d0e35eb87e463705b605eab921e4da6f95` | ⚠️ Unaudited |
+| Timelock One Day | unknown | project_anchor | own_supporting | 0 | base | unit-395564 | `0xffef0f452fe6a6fdd5a8b65a7d000b9d309e7109` | ⚠️ Unaudited |
+| Timelock Three Day | unknown | project_anchor | own_supporting | 0 | base | unit-395551 | `0x64eb35eff983181a323441e4e0dd29ebd54d3e67` | ⚠️ Unaudited |
+| TimelockControllerEnumerable | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xa23daaed5e2c9955fdeee239723d132b899af14d` | ⚠️ Unaudited |
+| VesselManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x14a93618e09f5201cb7837b83b1f282e564aca30` | ⚠️ Unaudited |
+| VesselManager | unknown | project_anchor | own_supporting | 0 | base | unit-395554 | `0x9abf6a80a1dbcb469c796e2983ce880421683054` | ⚠️ Unaudited |
+| VesselManager | unknown | project_anchor | own_supporting | 0 | plasma | unit-395571 | `0x5954d911cc26eccd336b213ba72014796e5f1e3a` | ⚠️ Unaudited |
+| VesselManagerOperations | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x1a9f91cff313a1e88c8e2f407b664de4cb3dbe78` | ⚠️ Unaudited |
+| VesselManagerOperations | unknown | project_anchor | own_supporting | 0 | base | unit-395560 | `0xc114942cce837543b8583619c61db3ca05735c9c` | ⚠️ Unaudited |
+| VesselManagerOperations | unknown | project_anchor | own_supporting | 0 | plasma | unit-395566 | `0x24ea2fb47ded42f87bfcd5121bc2a7ea7ca9387a` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -216,11 +216,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| PriceFeedV2 | unknown | project_anchor | own_supporting | 0 | base | unit-395544 | `0x1be233...3a947b` | ❓ Unverified |
-| PriceFeedV2 | unknown | project_anchor | own_supporting | 0 | plasma | unit-395569 | `0x46abb1...6b6587` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-395548 | `0x339b88...a1b4ff` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-395561 | `0xc775ac...19fd4b` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | plasma | unit-395579 | `0xeecb14...01c23d` | ❓ Unverified |
+| PriceFeedV2 | unknown | project_anchor | own_supporting | 0 | base | unit-395544 | `0x1be23396974507f37fcb3eb8b1d635672f3a947b` | ❓ Unverified |
+| PriceFeedV2 | unknown | project_anchor | own_supporting | 0 | plasma | unit-395569 | `0x46abb1f6d958fedb0557af55e77076f6906b6587` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-395548 | `0x339b88498caae105f50a5261d87f987e01a1b4ff` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-395561 | `0xc775ac5440312237248f992883eddc2f8119fd4b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | plasma | unit-395579 | `0xeecb147d2434b2bae6be43100170e1b30b01c23d` | ❓ Unverified |
 
 ## Audit Inventory
 

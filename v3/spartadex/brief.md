@@ -89,17 +89,17 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Airdrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-167538 | `0x0de811...361626` | ⚠️ Unaudited |
-| PaymentReceiver | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-167542 | `0x933b0e...245cb7` | ⚠️ Unaudited |
-| Polis | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-167540 | `0x314494...471cb9` | ⚠️ Unaudited |
-| PolisManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-167544 | `0xebc1dd...6ff3de` | ⚠️ Unaudited |
-| PolisMinter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-167541 | `0x39fdd0...4fe17f` | ⚠️ Unaudited |
-| Sparta | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-167539 | `0x11f98c...5ce9a8` | ⚠️ Unaudited |
-| SpartaAccessControl | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-167537 | `0x01b364...075b22` | ⚠️ Unaudited |
-| SpartaDexFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | unit-167545 | `0x9e4fc4...ea5a9e` | ⚠️ Unaudited |
-| SpartaDexPair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | unit-167546 | `0xb64b15...cf370b` | ⚠️ Unaudited |
-| SpartaDexRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | unit-167547 | `0xea2f47...8d399a` | ⚠️ Unaudited |
-| StakedSparta | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-167543 | `0xdeab92...ecf01f` | ⚠️ Unaudited |
+| Airdrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-167538 | `0x0de811cfc8bbd855798a0da8f0fb893a20361626` | ⚠️ Unaudited |
+| PaymentReceiver | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-167542 | `0x933b0ea2048438c11d53dac32d283115d5245cb7` | ⚠️ Unaudited |
+| Polis | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-167540 | `0x31449423737538cde5f60c5052f122d599471cb9` | ⚠️ Unaudited |
+| PolisManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-167544 | `0xebc1dd1f6560fc1045d30c0d0ac610c3336ff3de` | ⚠️ Unaudited |
+| PolisMinter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-167541 | `0x39fdd07893b8867be7b8ff02fe9b557ddc4fe17f` | ⚠️ Unaudited |
+| Sparta | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-167539 | `0x11f98c7e42a367dab4f200d2fdc460fb445ce9a8` | ⚠️ Unaudited |
+| SpartaAccessControl | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-167537 | `0x01b3646adb846061411da058757b944049075b22` | ⚠️ Unaudited |
+| SpartaDexFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | unit-167545 | `0x9e4fc4a5a0769ba74088856c229c4a1db2ea5a9e` | ⚠️ Unaudited |
+| SpartaDexPair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | unit-167546 | `0xb64b15dfdfb9d3edacf9291b0e8a65fc52cf370b` | ⚠️ Unaudited |
+| SpartaDexRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | unit-167547 | `0xea2f47ac12e00e2fcc8f242561bc53bc288d399a` | ⚠️ Unaudited |
+| StakedSparta | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-167543 | `0xdeab92d6a3618f6d830c925d7ae8f1c87eecf01f` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

@@ -59,17 +59,17 @@ The protocol comprises 3 functional families. Its contracts share 2 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| LlamaPayFactory | unknown | metis | n/a | 10 deployments: ethereum `0xde1c04...f84c7f`; bsc `0xde1c04...f84c7f`; metis [`0x06bfb4...f92c38`](./contracts/metis-1088/0x06bfb4725c1ccfbfbb45cb59b0f278c3cdf92c38/); metis `0x0ebe05...9b411c`; metis `0x43634d...030600`; metis `0x4ddfc2...7567b7`; metis `0xcfb166...c937bc`; base `0x09c39b...3aea07`; arbitrum `0xde1c04...f84c7f`; berachain `0x09c39b...3aea07` | ✅ Audited |
+| LlamaPayFactory | unknown | metis | n/a | 10 deployments: ethereum `0xde1c04855c2828431ba637675b6929a684f84c7f`; bsc `0xde1c04855c2828431ba637675b6929a684f84c7f`; metis [`0x06bfb4725c1ccfbfbb45cb59b0f278c3cdf92c38`](./contracts/metis-1088/0x06bfb4725c1ccfbfbb45cb59b0f278c3cdf92c38/); metis `0x0ebe050c13ac5a7643616f2d9beb033f689b411c`; metis `0x43634d1c608f16fb0f4926c12b54124c93030600`; metis `0x4ddfc224e5da184dc458769491cb2f17e37567b7`; metis `0xcfb166f1c719376937886ffe10450e6778c937bc`; base `0x09c39b8311e4b7c678cbdad76556877ecd3aea07`; arbitrum `0xde1c04855c2828431ba637675b6929a684f84c7f`; berachain `0x09c39b8311e4b7c678cbdad76556877ecd3aea07` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| LlamaPayBot | unknown | avalanche | n/a | 3 deployments: ethereum `0xc5a4fe...074ab9`; bsc `0xc5a4fe...074ab9`; avalanche [`0x57547f...0353d7`](./contracts/avalanche-43114/0x57547f79d8344accab21dc0a9c9d186e240353d7/) | ⚠️ Unaudited |
-| Simple Vesting Escrow | operational_periphery | base | n/a | 3 deployments: base [`0x0d5e12...d62cce`](./contracts/base-8453/0x0d5e12e2bd630fc231d68f3cbf95ff5bb1d62cce/); base `0x2b3a5d...d15e49`; base `0x4c0f3d...6d4be5` | ⚠️ Unaudited |
-| TokenEscrow | operational_periphery | ethereum | n/a | 4 deployments: ethereum [`0x02266e...121c01`](./contracts/ethereum-1/0x02266e3b5ce26d62ea73ea7f2c542ebc24121c01/); optimism `0xb4e9d1...404779`; arbitrum `0x1564d7...528734`; avalanche `0x4c48f1...84fa0c` | ⚠️ Unaudited |
-| TokenEscrow | operational_periphery | ethereum | n/a | [`0x056e39...532b72`](./contracts/ethereum-1/0x056e39bdd2d35f4eb27478369bdade51e0532b72/) | ⚠️ Unaudited |
-| Vesting Escrow Factory | operational_periphery | berachain | n/a | 8 deployments: ethereum `0xcf6178...6ab347`; bsc `0x62e13b...cd4c10`; gnosis `0x62e13b...cd4c10`; polygon `0x62e13b...cd4c10`; sonic `0xb93427...10411a`; base `0x62e13b...cd4c10`; arbitrum `0x62e13b...cd4c10`; berachain [`0x4ace3e...2b84bd`](./contracts/berachain-80094/0x4ace3edd57eff1176a862e7b72db090ecf2b84bd/) | ⚠️ Unaudited |
+| LlamaPayBot | unknown | avalanche | n/a | 3 deployments: ethereum `0xc5a4fec44fbde08a7c9de6e07b60de60ac074ab9`; bsc `0xc5a4fec44fbde08a7c9de6e07b60de60ac074ab9`; avalanche [`0x57547f79d8344accab21dc0a9c9d186e240353d7`](./contracts/avalanche-43114/0x57547f79d8344accab21dc0a9c9d186e240353d7/) | ⚠️ Unaudited |
+| Simple Vesting Escrow | operational_periphery | base | n/a | 3 deployments: base [`0x0d5e12e2bd630fc231d68f3cbf95ff5bb1d62cce`](./contracts/base-8453/0x0d5e12e2bd630fc231d68f3cbf95ff5bb1d62cce/); base `0x2b3a5deb344d615bf0e9ba404cc9acbaecd15e49`; base `0x4c0f3d171bf15760a5779ecac073907c9b6d4be5` | ⚠️ Unaudited |
+| TokenEscrow | operational_periphery | ethereum | n/a | 4 deployments: ethereum [`0x02266e3b5ce26d62ea73ea7f2c542ebc24121c01`](./contracts/ethereum-1/0x02266e3b5ce26d62ea73ea7f2c542ebc24121c01/); optimism `0xb4e9d1f7b32937f04b856ec1ca39ac83e9404779`; arbitrum `0x1564d7bfa4bc921a748aedb3b71e578672528734`; avalanche `0x4c48f145e0c80d97bfbc983dd2cbebee5d84fa0c` | ⚠️ Unaudited |
+| TokenEscrow | operational_periphery | ethereum | n/a | [`0x056e39bdd2d35f4eb27478369bdade51e0532b72`](./contracts/ethereum-1/0x056e39bdd2d35f4eb27478369bdade51e0532b72/) | ⚠️ Unaudited |
+| Vesting Escrow Factory | operational_periphery | berachain | n/a | 8 deployments: ethereum `0xcf61782465ff973638143d6492b51a85986ab347`; bsc `0x62e13be78af77c86d38a027ae432f67d9ecd4c10`; gnosis `0x62e13be78af77c86d38a027ae432f67d9ecd4c10`; polygon `0x62e13be78af77c86d38a027ae432f67d9ecd4c10`; sonic `0xb93427b83573c8f27a08a909045c3e809610411a`; base `0x62e13be78af77c86d38a027ae432f67d9ecd4c10`; arbitrum `0x62e13be78af77c86d38a027ae432f67d9ecd4c10`; berachain [`0x4ace3edd57eff1176a862e7b72db090ecf2b84bd`](./contracts/berachain-80094/0x4ace3edd57eff1176a862e7b72db090ecf2b84bd/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -89,10 +89,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | cronos | n/a | 7 deployments: cronos `0x62e13b...cd4c10`; fantom `0x62e13b...cd4c10`; fantom `0xc5a4fe...074ab9`; fantom `0xd152f5...452150`; fantom `0xda33d4...5294d1`; fantom `0xde1c04...f84c7f`; zora `0x62e13b...cd4c10` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xb93427...10411a` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x4ace3e...2b84bd` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x62e13b...cd4c10` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | 7 deployments: cronos `0x62e13be78af77c86d38a027ae432f67d9ecd4c10`; fantom `0x62e13be78af77c86d38a027ae432f67d9ecd4c10`; fantom `0xc5a4fec44fbde08a7c9de6e07b60de60ac074ab9`; fantom `0xd152f549545093347a162dce210e7293f1452150`; fantom `0xda33d4b2753b3c2439ca52678e1a506e4c5294d1`; fantom `0xde1c04855c2828431ba637675b6929a684f84c7f`; zora `0x62e13be78af77c86d38a027ae432f67d9ecd4c10` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xb93427b83573c8f27a08a909045c3e809610411a` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x4ace3edd57eff1176a862e7b72db090ecf2b84bd` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x62e13be78af77c86d38a027ae432f67d9ecd4c10` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -106,11 +106,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| avalanche | [`0x57547f...0353d7`](./contracts/avalanche-43114/0x57547f79d8344accab21dc0a9c9d186e240353d7/) | LlamaPayBot | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x0d5e12...d62cce`](./contracts/base-8453/0x0d5e12e2bd630fc231d68f3cbf95ff5bb1d62cce/) | Simple Vesting Escrow | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x02266e...121c01`](./contracts/ethereum-1/0x02266e3b5ce26d62ea73ea7f2c542ebc24121c01/) | TokenEscrow | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x056e39...532b72`](./contracts/ethereum-1/0x056e39bdd2d35f4eb27478369bdade51e0532b72/) | TokenEscrow | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | [`0x4ace3e...2b84bd`](./contracts/berachain-80094/0x4ace3edd57eff1176a862e7b72db090ecf2b84bd/) | Vesting Escrow Factory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0x57547f79d8344accab21dc0a9c9d186e240353d7`](./contracts/avalanche-43114/0x57547f79d8344accab21dc0a9c9d186e240353d7/) | LlamaPayBot | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x0d5e12e2bd630fc231d68f3cbf95ff5bb1d62cce`](./contracts/base-8453/0x0d5e12e2bd630fc231d68f3cbf95ff5bb1d62cce/) | Simple Vesting Escrow | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x02266e3b5ce26d62ea73ea7f2c542ebc24121c01`](./contracts/ethereum-1/0x02266e3b5ce26d62ea73ea7f2c542ebc24121c01/) | TokenEscrow | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x056e39bdd2d35f4eb27478369bdade51e0532b72`](./contracts/ethereum-1/0x056e39bdd2d35f4eb27478369bdade51e0532b72/) | TokenEscrow | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0x4ace3edd57eff1176a862e7b72db090ecf2b84bd`](./contracts/berachain-80094/0x4ace3edd57eff1176a862e7b72db090ecf2b84bd/) | Vesting Escrow Factory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

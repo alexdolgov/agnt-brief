@@ -61,19 +61,19 @@ The protocol comprises 3 functional families. Its contracts share 2 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| DiamondCutFacet | unknown | base | n/a | [`0x05ba09...93d844`](./contracts/base-8453/0x05ba09e289dcf2f237d991390b47b66b0593d844/) | ⚠️ Unaudited |
-| DiamondLoupeFacet | unknown | base | n/a | [`0x061d04...6321ba`](./contracts/base-8453/0x061d043d135dd61fa561abfd9f81ee78446321ba/) | ⚠️ Unaudited |
-| DomaTreasury | unknown | base | n/a | [`0x1c397b...f16cbd`](./contracts/base-8453/0x1c397b5f402378bf5408deb5964bc7449bf16cbd/) | ⚠️ Unaudited |
-| ERC7786GatewaySource | unknown | base | n/a | [`0x5bb717...ae37d0`](./contracts/base-8453/0x5bb717ac4a69fcc7f2d432aeb0c70972d7ae37d0/) | ⚠️ Unaudited |
-| Marketplace | unknown | base | n/a | [`0x01471f...5f0714`](./contracts/base-8453/0x01471f7b972602d33b5430d9fc391d78f25f0714/) | ⚠️ Unaudited |
-| OwnershipFacet | unknown | base | n/a | [`0x0d2e6d...2fdd39`](./contracts/base-8453/0x0d2e6df1f5f85419c9e3ca13b0bec21cff2fdd39/) | ⚠️ Unaudited |
-| OwnershipToken | unknown | base | n/a | [`0x0ec30c...e38156`](./contracts/base-8453/0x0ec30c28dadde2bae8862160bc2151d852e38156/) | ⚠️ Unaudited |
-| Permit2 | unknown | ethereum | n/a | [`0x000000...c78ba3`](./contracts/ethereum-1/0x000000000022d473030f116ddee9f6b43ac78ba3/) | ⚠️ Unaudited |
-| ProxyDomaRecord | unknown | avalanche | n/a | [`0xd00000...20a3e2`](./contracts/avalanche-43114/0xd0000000000067cb44ae7b6ac3ab5764de20a3e2/) | ⚠️ Unaudited |
-| ProxyDomaRecordAdminFacet | unknown | base | n/a | [`0x11357f...52a468`](./contracts/base-8453/0x11357f8344e0608ff4f9e19fc630cf945d52a468/) | ⚠️ Unaudited |
-| ProxyDomaRecordCrossChainFacet | unknown | base | n/a | [`0x496c4b...1c124a`](./contracts/base-8453/0x496c4b575d3b4baef5f09da103b336aa581c124a/) | ⚠️ Unaudited |
-| ProxyDomaRecordUserFacet | unknown | base | n/a | [`0x30d053...c1ba3b`](./contracts/base-8453/0x30d053f8ca653644562ac64782c9051784c1ba3b/) | ⚠️ Unaudited |
-| ProxyDomaRecordViewFacet | unknown | base | n/a | [`0xd0c2a9...4dec76`](./contracts/base-8453/0xd0c2a9c302594e2a570a03d3e2b813b1274dec76/) | ⚠️ Unaudited |
+| DiamondCutFacet | unknown | base | n/a | [`0x05ba09e289dcf2f237d991390b47b66b0593d844`](./contracts/base-8453/0x05ba09e289dcf2f237d991390b47b66b0593d844/) | ⚠️ Unaudited |
+| DiamondLoupeFacet | unknown | base | n/a | [`0x061d043d135dd61fa561abfd9f81ee78446321ba`](./contracts/base-8453/0x061d043d135dd61fa561abfd9f81ee78446321ba/) | ⚠️ Unaudited |
+| DomaTreasury | unknown | base | n/a | [`0x1c397b5f402378bf5408deb5964bc7449bf16cbd`](./contracts/base-8453/0x1c397b5f402378bf5408deb5964bc7449bf16cbd/) | ⚠️ Unaudited |
+| ERC7786GatewaySource | unknown | base | n/a | [`0x5bb717ac4a69fcc7f2d432aeb0c70972d7ae37d0`](./contracts/base-8453/0x5bb717ac4a69fcc7f2d432aeb0c70972d7ae37d0/) | ⚠️ Unaudited |
+| Marketplace | unknown | base | n/a | [`0x01471f7b972602d33b5430d9fc391d78f25f0714`](./contracts/base-8453/0x01471f7b972602d33b5430d9fc391d78f25f0714/) | ⚠️ Unaudited |
+| OwnershipFacet | unknown | base | n/a | [`0x0d2e6df1f5f85419c9e3ca13b0bec21cff2fdd39`](./contracts/base-8453/0x0d2e6df1f5f85419c9e3ca13b0bec21cff2fdd39/) | ⚠️ Unaudited |
+| OwnershipToken | unknown | base | n/a | [`0x0ec30c28dadde2bae8862160bc2151d852e38156`](./contracts/base-8453/0x0ec30c28dadde2bae8862160bc2151d852e38156/) | ⚠️ Unaudited |
+| Permit2 | unknown | ethereum | n/a | [`0x000000000022d473030f116ddee9f6b43ac78ba3`](./contracts/ethereum-1/0x000000000022d473030f116ddee9f6b43ac78ba3/) | ⚠️ Unaudited |
+| ProxyDomaRecord | unknown | avalanche | n/a | [`0xd0000000000067cb44ae7b6ac3ab5764de20a3e2`](./contracts/avalanche-43114/0xd0000000000067cb44ae7b6ac3ab5764de20a3e2/) | ⚠️ Unaudited |
+| ProxyDomaRecordAdminFacet | unknown | base | n/a | [`0x11357f8344e0608ff4f9e19fc630cf945d52a468`](./contracts/base-8453/0x11357f8344e0608ff4f9e19fc630cf945d52a468/) | ⚠️ Unaudited |
+| ProxyDomaRecordCrossChainFacet | unknown | base | n/a | [`0x496c4b575d3b4baef5f09da103b336aa581c124a`](./contracts/base-8453/0x496c4b575d3b4baef5f09da103b336aa581c124a/) | ⚠️ Unaudited |
+| ProxyDomaRecordUserFacet | unknown | base | n/a | [`0x30d053f8ca653644562ac64782c9051784c1ba3b`](./contracts/base-8453/0x30d053f8ca653644562ac64782c9051784c1ba3b/) | ⚠️ Unaudited |
+| ProxyDomaRecordViewFacet | unknown | base | n/a | [`0xd0c2a9c302594e2a570a03d3e2b813b1274dec76`](./contracts/base-8453/0xd0c2a9c302594e2a570a03d3e2b813b1274dec76/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -104,18 +104,18 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x05ba09...93d844`](./contracts/base-8453/0x05ba09e289dcf2f237d991390b47b66b0593d844/) | DiamondCutFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x061d04...6321ba`](./contracts/base-8453/0x061d043d135dd61fa561abfd9f81ee78446321ba/) | DiamondLoupeFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x1c397b...f16cbd`](./contracts/base-8453/0x1c397b5f402378bf5408deb5964bc7449bf16cbd/) | DomaTreasury | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x5bb717...ae37d0`](./contracts/base-8453/0x5bb717ac4a69fcc7f2d432aeb0c70972d7ae37d0/) | ERC7786GatewaySource | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x01471f...5f0714`](./contracts/base-8453/0x01471f7b972602d33b5430d9fc391d78f25f0714/) | Marketplace | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x0d2e6d...2fdd39`](./contracts/base-8453/0x0d2e6df1f5f85419c9e3ca13b0bec21cff2fdd39/) | OwnershipFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x0ec30c...e38156`](./contracts/base-8453/0x0ec30c28dadde2bae8862160bc2151d852e38156/) | OwnershipToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0xd00000...20a3e2`](./contracts/avalanche-43114/0xd0000000000067cb44ae7b6ac3ab5764de20a3e2/) | ProxyDomaRecord | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x11357f...52a468`](./contracts/base-8453/0x11357f8344e0608ff4f9e19fc630cf945d52a468/) | ProxyDomaRecordAdminFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x496c4b...1c124a`](./contracts/base-8453/0x496c4b575d3b4baef5f09da103b336aa581c124a/) | ProxyDomaRecordCrossChainFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x30d053...c1ba3b`](./contracts/base-8453/0x30d053f8ca653644562ac64782c9051784c1ba3b/) | ProxyDomaRecordUserFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xd0c2a9...4dec76`](./contracts/base-8453/0xd0c2a9c302594e2a570a03d3e2b813b1274dec76/) | ProxyDomaRecordViewFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x05ba09e289dcf2f237d991390b47b66b0593d844`](./contracts/base-8453/0x05ba09e289dcf2f237d991390b47b66b0593d844/) | DiamondCutFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x061d043d135dd61fa561abfd9f81ee78446321ba`](./contracts/base-8453/0x061d043d135dd61fa561abfd9f81ee78446321ba/) | DiamondLoupeFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x1c397b5f402378bf5408deb5964bc7449bf16cbd`](./contracts/base-8453/0x1c397b5f402378bf5408deb5964bc7449bf16cbd/) | DomaTreasury | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x5bb717ac4a69fcc7f2d432aeb0c70972d7ae37d0`](./contracts/base-8453/0x5bb717ac4a69fcc7f2d432aeb0c70972d7ae37d0/) | ERC7786GatewaySource | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x01471f7b972602d33b5430d9fc391d78f25f0714`](./contracts/base-8453/0x01471f7b972602d33b5430d9fc391d78f25f0714/) | Marketplace | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x0d2e6df1f5f85419c9e3ca13b0bec21cff2fdd39`](./contracts/base-8453/0x0d2e6df1f5f85419c9e3ca13b0bec21cff2fdd39/) | OwnershipFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x0ec30c28dadde2bae8862160bc2151d852e38156`](./contracts/base-8453/0x0ec30c28dadde2bae8862160bc2151d852e38156/) | OwnershipToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0xd0000000000067cb44ae7b6ac3ab5764de20a3e2`](./contracts/avalanche-43114/0xd0000000000067cb44ae7b6ac3ab5764de20a3e2/) | ProxyDomaRecord | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x11357f8344e0608ff4f9e19fc630cf945d52a468`](./contracts/base-8453/0x11357f8344e0608ff4f9e19fc630cf945d52a468/) | ProxyDomaRecordAdminFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x496c4b575d3b4baef5f09da103b336aa581c124a`](./contracts/base-8453/0x496c4b575d3b4baef5f09da103b336aa581c124a/) | ProxyDomaRecordCrossChainFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x30d053f8ca653644562ac64782c9051784c1ba3b`](./contracts/base-8453/0x30d053f8ca653644562ac64782c9051784c1ba3b/) | ProxyDomaRecordUserFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xd0c2a9c302594e2a570a03d3e2b813b1274dec76`](./contracts/base-8453/0xd0c2a9c302594e2a570a03d3e2b813b1274dec76/) | ProxyDomaRecordViewFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -60,13 +60,13 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CofferManageErc20 | unknown | bsc | n/a | [`0x918b3a...92dabc`](./contracts/bsc-56/0x918b3aa73e2d42d96cf64cbdb16838985992dabc/) | ✅ Audited |
+| CofferManageErc20 | unknown | bsc | n/a | [`0x918b3aa73e2d42d96cf64cbdb16838985992dabc`](./contracts/bsc-56/0x918b3aa73e2d42d96cf64cbdb16838985992dabc/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CoUSD | unknown | bsc | n/a | [`0xc481a5...d8d981`](./contracts/bsc-56/0xc481a577e0fdf5db93f925e5ee2726ee57d8d981/) | ⚠️ Unaudited |
+| CoUSD | unknown | bsc | n/a | [`0xc481a577e0fdf5db93f925e5ee2726ee57d8d981`](./contracts/bsc-56/0xc481a577e0fdf5db93f925e5ee2726ee57d8d981/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -99,7 +99,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0xc481a5...d8d981`](./contracts/bsc-56/0xc481a577e0fdf5db93f925e5ee2726ee57d8d981/) | CoUSD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xc481a577e0fdf5db93f925e5ee2726ee57d8d981`](./contracts/bsc-56/0xc481a577e0fdf5db93f925e5ee2726ee57d8d981/) | CoUSD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

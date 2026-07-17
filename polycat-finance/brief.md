@@ -58,18 +58,18 @@ The protocol comprises 2 functional families. Contracts are linked by 2 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| MasterChef | unknown | polygon | n/a | [`0x18590c...dde46c`](./contracts/polygon-137/0x18590c1fa38a7e7357d40a6c2bbc910340dde46c/) | ✅ Audited |
+| MasterChef | unknown | polygon | n/a | [`0x18590c1fa38a7e7357d40a6c2bbc910340dde46c`](./contracts/polygon-137/0x18590c1fa38a7e7357d40a6c2bbc910340dde46c/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (6)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| FishToken | unknown | polygon | n/a | [`0x3a3df2...76572b`](./contracts/polygon-137/0x3a3df212b7aa91aa0402b9035b098891d276572b/) | ⚠️ Unaudited |
-| LiquidityLock | unknown | polygon | n/a | [`0x9cf8d7...a7b11d`](./contracts/polygon-137/0x9cf8d7c64e29045e3c6bf8e86874398dc6a7b11d/) | ⚠️ Unaudited |
-| Referral | unknown | polygon | n/a | [`0xb67ad6...56266d`](./contracts/polygon-137/0xb67ad6c2fe7dd6ba346706b833ccf4234256266d/) | ⚠️ Unaudited |
-| StrategyFish | unknown | polygon | n/a | [`0x520c34...c62df5`](./contracts/polygon-137/0x520c340d6c9d7efc7cf4806b6cf0ab9859c62df5/) | ⚠️ Unaudited |
-| Timelock | unknown | polygon | n/a | [`0xf5a824...684925`](./contracts/polygon-137/0xf5a824b077cc0aaf50cf83a9e82714b89b684925/) | ⚠️ Unaudited |
-| VaultChef | unknown | polygon | n/a | [`0xbda1f8...45a904`](./contracts/polygon-137/0xbda1f897e851c7ef22cd490d2cf2dace4645a904/) | ⚠️ Unaudited |
+| FishToken | unknown | polygon | n/a | [`0x3a3df212b7aa91aa0402b9035b098891d276572b`](./contracts/polygon-137/0x3a3df212b7aa91aa0402b9035b098891d276572b/) | ⚠️ Unaudited |
+| LiquidityLock | unknown | polygon | n/a | [`0x9cf8d7c64e29045e3c6bf8e86874398dc6a7b11d`](./contracts/polygon-137/0x9cf8d7c64e29045e3c6bf8e86874398dc6a7b11d/) | ⚠️ Unaudited |
+| Referral | unknown | polygon | n/a | [`0xb67ad6c2fe7dd6ba346706b833ccf4234256266d`](./contracts/polygon-137/0xb67ad6c2fe7dd6ba346706b833ccf4234256266d/) | ⚠️ Unaudited |
+| StrategyFish | unknown | polygon | n/a | [`0x520c340d6c9d7efc7cf4806b6cf0ab9859c62df5`](./contracts/polygon-137/0x520c340d6c9d7efc7cf4806b6cf0ab9859c62df5/) | ⚠️ Unaudited |
+| Timelock | unknown | polygon | n/a | [`0xf5a824b077cc0aaf50cf83a9e82714b89b684925`](./contracts/polygon-137/0xf5a824b077cc0aaf50cf83a9e82714b89b684925/) | ⚠️ Unaudited |
+| VaultChef | unknown | polygon | n/a | [`0xbda1f897e851c7ef22cd490d2cf2dace4645a904`](./contracts/polygon-137/0xbda1f897e851c7ef22cd490d2cf2dace4645a904/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -102,12 +102,12 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| polygon | [`0x3a3df2...76572b`](./contracts/polygon-137/0x3a3df212b7aa91aa0402b9035b098891d276572b/) | FishToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x9cf8d7...a7b11d`](./contracts/polygon-137/0x9cf8d7c64e29045e3c6bf8e86874398dc6a7b11d/) | LiquidityLock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0xb67ad6...56266d`](./contracts/polygon-137/0xb67ad6c2fe7dd6ba346706b833ccf4234256266d/) | Referral | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x520c34...c62df5`](./contracts/polygon-137/0x520c340d6c9d7efc7cf4806b6cf0ab9859c62df5/) | StrategyFish | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0xf5a824...684925`](./contracts/polygon-137/0xf5a824b077cc0aaf50cf83a9e82714b89b684925/) | Timelock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0xbda1f8...45a904`](./contracts/polygon-137/0xbda1f897e851c7ef22cd490d2cf2dace4645a904/) | VaultChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x3a3df212b7aa91aa0402b9035b098891d276572b`](./contracts/polygon-137/0x3a3df212b7aa91aa0402b9035b098891d276572b/) | FishToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x9cf8d7c64e29045e3c6bf8e86874398dc6a7b11d`](./contracts/polygon-137/0x9cf8d7c64e29045e3c6bf8e86874398dc6a7b11d/) | LiquidityLock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xb67ad6c2fe7dd6ba346706b833ccf4234256266d`](./contracts/polygon-137/0xb67ad6c2fe7dd6ba346706b833ccf4234256266d/) | Referral | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x520c340d6c9d7efc7cf4806b6cf0ab9859c62df5`](./contracts/polygon-137/0x520c340d6c9d7efc7cf4806b6cf0ab9859c62df5/) | StrategyFish | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xf5a824b077cc0aaf50cf83a9e82714b89b684925`](./contracts/polygon-137/0xf5a824b077cc0aaf50cf83a9e82714b89b684925/) | Timelock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xbda1f897e851c7ef22cd490d2cf2dace4645a904`](./contracts/polygon-137/0xbda1f897e851c7ef22cd490d2cf2dace4645a904/) | VaultChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

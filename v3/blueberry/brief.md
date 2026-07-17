@@ -90,12 +90,12 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BloomPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x225a72...3450e3` | ⚠️ Unaudited |
-| BlueberryToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x904f36...966a02` | ⚠️ Unaudited |
-| BPSFeed | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x51fd72...7924ad` | ⚠️ Unaudited |
-| GasChecker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd49845...dafc9b` | ⚠️ Unaudited |
-| MerkleWhitelist | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x30b4a5...efd5f4` | ⚠️ Unaudited |
-| SwapFacility | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x165401...11acd6` | ⚠️ Unaudited |
+| BloomPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x225a72121f077629a9049b78492a7b645a3450e3` | ⚠️ Unaudited |
+| BlueberryToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x904f36d74bed2ef2729eaa1c7a5b70dea2966a02` | ⚠️ Unaudited |
+| BPSFeed | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x51fd7269fd752c62e75e990dbbe73badf97924ad` | ⚠️ Unaudited |
+| GasChecker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd49845d0ca19a26055904d7ce0911a8e88dafc9b` | ⚠️ Unaudited |
+| MerkleWhitelist | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x30b4a5f5f98dbcad5a76db9328da48057cefd5f4` | ⚠️ Unaudited |
+| SwapFacility | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x16540107a5b4e17a5d65e071a3dc8f40e011acd6` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

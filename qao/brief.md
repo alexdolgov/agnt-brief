@@ -60,7 +60,7 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| QAOToken | unknown | ethereum | n/a | [`0x3402e1...f93953`](./contracts/ethereum-1/0x3402e15b3ea0f1aec2679c4be4c6d051cef93953/) | ✅ Audited |
+| QAOToken | unknown | ethereum | n/a | [`0x3402e15b3ea0f1aec2679c4be4c6d051cef93953`](./contracts/ethereum-1/0x3402e15b3ea0f1aec2679c4be4c6d051cef93953/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 
@@ -84,8 +84,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x053b75...196ad0` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc8ce32...04053b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x053b759c880b69075a52e4374efa08e6b5196ad0` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc8ce328baa09c0b1c7b8fbea27c8eb23c604053b` | ❓ Unverified |
 
 ## Audit Inventory
 

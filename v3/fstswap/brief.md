@@ -52,10 +52,10 @@ The pinned logic-topography run contains 4 contract row(s) across bsc. Structura
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- FIST token (`0xc9882d...70bc6a`, chain 56)
-- FST factory (`0x9a272d...066dce`, chain 56)
-- FST router (`0x1b6c9c...2abc2d`, chain 56)
-- Internal router (`0x870788...df0861`, chain 56)
+- FIST token (`0xc9882def23bc42d53895b8361d0b1edc7570bc6a`, chain 56)
+- FST factory (`0x9a272d734c5a0d7d84e0a892e891a553e8066dce`, chain 56)
+- FST router (`0x1b6c9c20693afde803b27f8782156c0f892abc2d`, chain 56)
+- Internal router (`0x870788c9f8ff7320b142d4edbe63e6d2ebdf0861`, chain 56)
 
 ## Contract Surface Quality
 
@@ -101,10 +101,10 @@ The pinned logic-topography run contains 4 contract row(s) across bsc. Structura
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| FIST token | unknown | project_anchor | own_supporting | 0 | bsc | unit-386602 | `0xc9882d...70bc6a` | ⚠️ Unaudited |
-| FST factory | unknown | project_anchor | own_supporting | 0 | bsc | unit-386600 | `0x9a272d...066dce` | ⚠️ Unaudited |
-| FST router | unknown | project_anchor | own_supporting | 0 | bsc | unit-386598 | `0x1b6c9c...2abc2d` | ⚠️ Unaudited |
-| Internal router | unknown | project_anchor | own_supporting | 0 | bsc | unit-386599 | `0x870788...df0861` | ⚠️ Unaudited |
+| FIST token | unknown | project_anchor | own_supporting | 0 | bsc | unit-386602 | `0xc9882def23bc42d53895b8361d0b1edc7570bc6a` | ⚠️ Unaudited |
+| FST factory | unknown | project_anchor | own_supporting | 0 | bsc | unit-386600 | `0x9a272d734c5a0d7d84e0a892e891a553e8066dce` | ⚠️ Unaudited |
+| FST router | unknown | project_anchor | own_supporting | 0 | bsc | unit-386598 | `0x1b6c9c20693afde803b27f8782156c0f892abc2d` | ⚠️ Unaudited |
+| Internal router | unknown | project_anchor | own_supporting | 0 | bsc | unit-386599 | `0x870788c9f8ff7320b142d4edbe63e6d2ebdf0861` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

@@ -58,17 +58,17 @@ The protocol comprises 2 functional families. Contracts are linked by 3 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AlitaSwapFactory | unknown | bsc | n/a | [`0xc7a506...ef05d9`](./contracts/bsc-56/0xc7a506ab3ac668eab6bf9ecf971433d6cfef05d9/) | ✅ Audited |
-| Incentive | unknown | bsc | n/a | [`0x28162c...a58815`](./contracts/bsc-56/0x28162cda1e767663f68b759af47801171aa58815/) | ✅ Audited |
+| AlitaSwapFactory | unknown | bsc | n/a | [`0xc7a506ab3ac668eab6bf9ecf971433d6cfef05d9`](./contracts/bsc-56/0xc7a506ab3ac668eab6bf9ecf971433d6cfef05d9/) | ✅ Audited |
+| Incentive | unknown | bsc | n/a | [`0x28162cda1e767663f68b759af47801171aa58815`](./contracts/bsc-56/0x28162cda1e767663f68b759af47801171aa58815/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (4)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AlitaRouter | unknown | bsc | n/a | [`0x730acc...e32db8`](./contracts/bsc-56/0x730acc3bbf2443f2eaeacfc7ac7b4d8dc9e32db8/) | ⚠️ Unaudited |
-| AliToken | unknown | bsc | n/a | [`0x557233...a5073c`](./contracts/bsc-56/0x557233e794d1a5fbcc6d26dca49147379ea5073c/) | ⚠️ Unaudited |
-| MasterChef | unknown | bsc | n/a | [`0x4f7b2b...a10694`](./contracts/bsc-56/0x4f7b2be2bc3c61009e9ae520ccfc830612a10694/) | ⚠️ Unaudited |
-| Staking | unknown | bsc | n/a | [`0xc057c6...f7f838`](./contracts/bsc-56/0xc057c6c2dfb25c9a613052dcea73e21b50f7f838/) | ⚠️ Unaudited |
+| AlitaRouter | unknown | bsc | n/a | [`0x730acc3bbf2443f2eaeacfc7ac7b4d8dc9e32db8`](./contracts/bsc-56/0x730acc3bbf2443f2eaeacfc7ac7b4d8dc9e32db8/) | ⚠️ Unaudited |
+| AliToken | unknown | bsc | n/a | [`0x557233e794d1a5fbcc6d26dca49147379ea5073c`](./contracts/bsc-56/0x557233e794d1a5fbcc6d26dca49147379ea5073c/) | ⚠️ Unaudited |
+| MasterChef | unknown | bsc | n/a | [`0x4f7b2be2bc3c61009e9ae520ccfc830612a10694`](./contracts/bsc-56/0x4f7b2be2bc3c61009e9ae520ccfc830612a10694/) | ⚠️ Unaudited |
+| Staking | unknown | bsc | n/a | [`0xc057c6c2dfb25c9a613052dcea73e21b50f7f838`](./contracts/bsc-56/0xc057c6c2dfb25c9a613052dcea73e21b50f7f838/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -100,10 +100,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x730acc...e32db8`](./contracts/bsc-56/0x730acc3bbf2443f2eaeacfc7ac7b4d8dc9e32db8/) | AlitaRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x557233...a5073c`](./contracts/bsc-56/0x557233e794d1a5fbcc6d26dca49147379ea5073c/) | AliToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x4f7b2b...a10694`](./contracts/bsc-56/0x4f7b2be2bc3c61009e9ae520ccfc830612a10694/) | MasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xc057c6...f7f838`](./contracts/bsc-56/0xc057c6c2dfb25c9a613052dcea73e21b50f7f838/) | Staking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x730acc3bbf2443f2eaeacfc7ac7b4d8dc9e32db8`](./contracts/bsc-56/0x730acc3bbf2443f2eaeacfc7ac7b4d8dc9e32db8/) | AlitaRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x557233e794d1a5fbcc6d26dca49147379ea5073c`](./contracts/bsc-56/0x557233e794d1a5fbcc6d26dca49147379ea5073c/) | AliToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x4f7b2be2bc3c61009e9ae520ccfc830612a10694`](./contracts/bsc-56/0x4f7b2be2bc3c61009e9ae520ccfc830612a10694/) | MasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xc057c6c2dfb25c9a613052dcea73e21b50f7f838`](./contracts/bsc-56/0xc057c6c2dfb25c9a613052dcea73e21b50f7f838/) | Staking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

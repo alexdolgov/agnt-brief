@@ -48,8 +48,8 @@ The pinned logic-topography run contains 11 contract row(s) across ethereum. Str
 
 ### Forked Contracts
 
-**MultiChainLayerZeroTellerWithMultiAssetSupport** (`0x9ff67b...a14fbc`, chain 1)
-Origin: nucleus (`0x97d0b9...3918b9`)
+**MultiChainLayerZeroTellerWithMultiAssetSupport** (`0x9ff67b826b34fee9bf4135962754a808c4a14fbc`, chain 1)
+Origin: nucleus (`0x97d0b97a9fa017f8ad2565a5c6aed5745f3918b9`)
 Containment: 100.0% - 19 functions inherited
 Centroid audit status: pending_validation
 
@@ -59,17 +59,17 @@ Removals (removed from original): none
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xcd721c...0ea8ba`, chain 1)
-- BoringVault (`0x170d84...c933a0`, chain 1)
-- BoringVault (`0x196ead...bd3dcc`, chain 1)
-- BoringVault (`0x19e099...3c0b32`, chain 1)
-- BoringVault (`0x52e4d8...07a0d1`, chain 1)
-- BoringVault (`0x722a85...1f883b`, chain 1)
-- BoringVault (`0x82c40e...c7cab4`, chain 1)
-- TellerWithMultiAssetSupport (`0x074364...182f0b`, chain 1)
-- TellerWithMultiAssetSupport (`0x08eb2e...8a1d53`, chain 1)
-- TellerWithMultiAssetSupport (`0x5d3fb4...1b54dd`, chain 1)
-- TellerWithMultiAssetSupport (`0x6ae187...52e0bf`, chain 1)
+- UnnamedContract (`0xcd721cd24811013c35ffd4baef63f07a600ea8ba`, chain 1)
+- BoringVault (`0x170d847a8320f3b6a77ee15b0cae430e3ec933a0`, chain 1)
+- BoringVault (`0x196ead472583bc1e9af7a05f860d9857e1bd3dcc`, chain 1)
+- BoringVault (`0x19e099b7aed41fa52718d780dda74678113c0b32`, chain 1)
+- BoringVault (`0x52e4d8989fa8b3e1c06696e7b16def5d7707a0d1`, chain 1)
+- BoringVault (`0x722a851b6798d65b80526562fc3a36e19b1f883b`, chain 1)
+- BoringVault (`0x82c40e07277ebb92935f79ce92268f80ddc7cab4`, chain 1)
+- TellerWithMultiAssetSupport (`0x0743647a607822781f9d0a639454e76289182f0b`, chain 1)
+- TellerWithMultiAssetSupport (`0x08eb2eccdf6ebd7aba601791f23ec5b5f68a1d53`, chain 1)
+- TellerWithMultiAssetSupport (`0x5d3fb47fe7f3f4ce8fe55518f7e4f7d6061b54dd`, chain 1)
+- TellerWithMultiAssetSupport (`0x6ae187eacf40ebd1e571a655db92a1f47452e0bf`, chain 1)
 
 ## Contract Surface Quality
 
@@ -113,29 +113,29 @@ Removals (removed from original): none
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| MultiChainLayerZeroTellerWithMultiAssetSupport | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-249910 | `0x9ff67b...a14fbc` | ✅ Audited |
+| MultiChainLayerZeroTellerWithMultiAssetSupport | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-249910 | `0x9ff67b826b34fee9bf4135962754a808c4a14fbc` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (17)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AccountantWithRateProviders | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x603583...7a04cb`; ethereum `0x8c1902...926dfd` | ⚠️ Unaudited |
-| BoringVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 16 deployments: ethereum `0x11113f...9ee94b`; ethereum `0x593ccc...6388db`; ethereum `0x5d82ac...8d47a2`; ethereum `0x64ab17...afb855`; ethereum `0x66e47e...4d831a`; ethereum `0x6c5874...f7fd76`; ethereum `0x9ed153...775f22`; ethereum `0x9faaea...e301ce`; ethereum `0x9fbc36...ffdc4c`; ethereum `0xa5f78b...ec066c`; ethereum `0xa8a3a5...a3eb48`; ethereum `0xb52b09...2aa8a9`; ethereum `0xbfc577...ed19de`; ethereum `0xd3bfd6...7b5641`; ethereum `0xdea736...a200e3`; ethereum `0xe72fe6...938cb9` | ⚠️ Unaudited |
-| BoringVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-249893 | `0x170d84...c933a0` | ⚠️ Unaudited |
-| BoringVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-249895 | `0x196ead...bd3dcc` | ⚠️ Unaudited |
-| BoringVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-249897 | `0x19e099...3c0b32` | ⚠️ Unaudited |
-| BoringVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-249899 | `0x52e4d8...07a0d1` | ⚠️ Unaudited |
-| BoringVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-249906 | `0x722a85...1f883b` | ⚠️ Unaudited |
-| BoringVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-249908 | `0x82c40e...c7cab4` | ⚠️ Unaudited |
-| EETH | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x35fa16...118ac2` | ⚠️ Unaudited |
-| MultiChainLayerZeroTellerWithMultiAssetSupport | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x5cce6c...06be88`; ethereum `0x97d0b9...3918b9`; ethereum `0xd567b6...63e851` | ⚠️ Unaudited |
-| TellerWithMultiAssetSupport | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-249889 | `0x074364...182f0b` | ⚠️ Unaudited |
-| TellerWithMultiAssetSupport | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-249891 | `0x08eb2e...8a1d53` | ⚠️ Unaudited |
-| TellerWithMultiAssetSupport | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-249902 | `0x5d3fb4...1b54dd` | ⚠️ Unaudited |
-| TellerWithMultiAssetSupport | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x685adb...160429` | ⚠️ Unaudited |
-| TellerWithMultiAssetSupport | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-249904 | `0x6ae187...52e0bf` | ⚠️ Unaudited |
-| WeETH | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xcd5fe2...59b7ee` | ⚠️ Unaudited |
-| WETH9 | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc02aaa...756cc2` | ⚠️ Unaudited |
+| AccountantWithRateProviders | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x6035832f65b0cf20064681505b73a6de307a04cb`; ethereum `0x8c1902a5996978f2628558dd93d309f7e3926dfd` | ⚠️ Unaudited |
+| BoringVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 16 deployments: ethereum `0x11113ff3a60c2450f4b22515cb760417259ee94b`; ethereum `0x593ccca4c4bf58b7526a4c164ceef4003c6388db`; ethereum `0x5d82ac302c64b229dc94f866fd10ec6ccf8d47a2`; ethereum `0x64ab176c545bb85eca75d53c3ffcb361deafb855`; ethereum `0x66e47e6957b85cf62564610b76dd206bb04d831a`; ethereum `0x6c587402dc88ef187670f744dfb9d6a09ff7fd76`; ethereum `0x9ed15383940cc380faef0a75edace507cc775f22`; ethereum `0x9faaea2cdd810b21594e54309dc847842ae301ce`; ethereum `0x9fbc367b9bb966a2a537989817a088afcaffdc4c`; ethereum `0xa5f78b2a0ab85429d2dfbf8b60abc70f4cec066c`; ethereum `0xa8a3a5013104e093245164ea56588dbe10a3eb48`; ethereum `0xb52b090837a035f93a84487e5a7d3719c32aa8a9`; ethereum `0xbfc5770631641719cd1cf809d8325b146aed19de`; ethereum `0xd3bfd6e6187444170a1674c494e55171587b5641`; ethereum `0xdea736937d464d288ec80138bcd1a2e109a200e3`; ethereum `0xe72fe64840f4ef80e3ec73a1c749491b5c938cb9` | ⚠️ Unaudited |
+| BoringVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-249893 | `0x170d847a8320f3b6a77ee15b0cae430e3ec933a0` | ⚠️ Unaudited |
+| BoringVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-249895 | `0x196ead472583bc1e9af7a05f860d9857e1bd3dcc` | ⚠️ Unaudited |
+| BoringVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-249897 | `0x19e099b7aed41fa52718d780dda74678113c0b32` | ⚠️ Unaudited |
+| BoringVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-249899 | `0x52e4d8989fa8b3e1c06696e7b16def5d7707a0d1` | ⚠️ Unaudited |
+| BoringVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-249906 | `0x722a851b6798d65b80526562fc3a36e19b1f883b` | ⚠️ Unaudited |
+| BoringVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-249908 | `0x82c40e07277ebb92935f79ce92268f80ddc7cab4` | ⚠️ Unaudited |
+| EETH | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x35fa164735182de50811e8e2e824cfb9b6118ac2` | ⚠️ Unaudited |
+| MultiChainLayerZeroTellerWithMultiAssetSupport | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x5cce6cb6b4b62c020f0cfcdb95fcdf6ca706be88`; ethereum `0x97d0b97a9fa017f8ad2565a5c6aed5745f3918b9`; ethereum `0xd567b6d8e9c95d8a29e60018156becabdc63e851` | ⚠️ Unaudited |
+| TellerWithMultiAssetSupport | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-249889 | `0x0743647a607822781f9d0a639454e76289182f0b` | ⚠️ Unaudited |
+| TellerWithMultiAssetSupport | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-249891 | `0x08eb2eccdf6ebd7aba601791f23ec5b5f68a1d53` | ⚠️ Unaudited |
+| TellerWithMultiAssetSupport | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-249902 | `0x5d3fb47fe7f3f4ce8fe55518f7e4f7d6061b54dd` | ⚠️ Unaudited |
+| TellerWithMultiAssetSupport | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x685adb4797fb38d4fc4a69750aa048b398160429` | ⚠️ Unaudited |
+| TellerWithMultiAssetSupport | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-249904 | `0x6ae187eacf40ebd1e571a655db92a1f47452e0bf` | ⚠️ Unaudited |
+| WeETH | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee` | ⚠️ Unaudited |
+| WETH9 | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -155,7 +155,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-249912 | `0xcd721c...0ea8ba` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-249912 | `0xcd721cd24811013c35ffd4baef63f07a600ea8ba` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -202,7 +202,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | 0xmacro-boring-vault-arctic-0.pdf | AtomicQueue | unmatched — not counted | — | listed in scope table | no |
 | 0xmacro-boring-vault-arctic-0.pdf | AtomicSolver | unmatched — not counted | — | listed in scope table | no |
 | 0xmacro-boring-vault-arctic-0.pdf | IAtomicSolver | unmatched — not counted | — | listed in scope table | no |
-| 0xmacro-boring-vault-arctic-0.pdf | BoringVault | ambiguous — not counted | BoringVault (alternative) `0x170d84...c933a0` — deployed 2025-01-15 09:21:11+03 — liveness: live (code_present_context)<br>BoringVault (alternative) `0x82c40e...c7cab4` — deployed 2025-01-15 10:16:59+03 — liveness: live (code_present_context)<br>BoringVault (alternative) `0x196ead...bd3dcc` — deployed 2024-09-30 22:53:11+03 — liveness: live (code_present_context)<br>BoringVault (alternative) `0x19e099...3c0b32` — deployed 2024-09-12 06:24:59+03 — liveness: live (code_present_context)<br>BoringVault (alternative) `0x722a85...1f883b` — deployed 2025-04-19 18:47:11+03 — liveness: live (code_present_context)<br>BoringVault (alternative) `0x52e4d8...07a0d1` — deployed 2024-08-09 21:44:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| 0xmacro-boring-vault-arctic-0.pdf | BoringVault | ambiguous — not counted | BoringVault (alternative) `0x170d847a8320f3b6a77ee15b0cae430e3ec933a0` — deployed 2025-01-15 09:21:11+03 — liveness: live (code_present_context)<br>BoringVault (alternative) `0x82c40e07277ebb92935f79ce92268f80ddc7cab4` — deployed 2025-01-15 10:16:59+03 — liveness: live (code_present_context)<br>BoringVault (alternative) `0x196ead472583bc1e9af7a05f860d9857e1bd3dcc` — deployed 2024-09-30 22:53:11+03 — liveness: live (code_present_context)<br>BoringVault (alternative) `0x19e099b7aed41fa52718d780dda74678113c0b32` — deployed 2024-09-12 06:24:59+03 — liveness: live (code_present_context)<br>BoringVault (alternative) `0x722a851b6798d65b80526562fc3a36e19b1f883b` — deployed 2025-04-19 18:47:11+03 — liveness: live (code_present_context)<br>BoringVault (alternative) `0x52e4d8989fa8b3e1c06696e7b16def5d7707a0d1` — deployed 2024-08-09 21:44:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | 0xmacro-boring-vault-arctic-0.pdf | BaseDecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
 | 0xmacro-boring-vault-arctic-0.pdf | EtherFiLiquidDecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
 | 0xmacro-boring-vault-arctic-0.pdf | LidoLiquidDecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
@@ -222,7 +222,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | 0xmacro-boring-vault-arctic-0.pdf | UniswapV3DecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
 | 0xmacro-boring-vault-arctic-0.pdf | AccountantWithRateProviders | unmatched — not counted | — | listed in scope table | no |
 | 0xmacro-boring-vault-arctic-0.pdf | ManagerWithMerkleVerification | unmatched — not counted | — | listed in scope table | no |
-| 0xmacro-boring-vault-arctic-0.pdf | TellerWithMultiAssetSupport | ambiguous — not counted | TellerWithMultiAssetSupport (alternative) `0x08eb2e...8a1d53` — deployed 2024-09-30 22:53:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x5d3fb4...1b54dd` — deployed 2025-01-15 10:17:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x074364...182f0b` — deployed 2025-01-15 09:21:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x6ae187...52e0bf` — deployed 2024-09-12 06:25:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| 0xmacro-boring-vault-arctic-0.pdf | TellerWithMultiAssetSupport | ambiguous — not counted | TellerWithMultiAssetSupport (alternative) `0x08eb2eccdf6ebd7aba601791f23ec5b5f68a1d53` — deployed 2024-09-30 22:53:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x5d3fb47fe7f3f4ce8fe55518f7e4f7d6061b54dd` — deployed 2025-01-15 10:17:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x0743647a607822781f9d0a639454e76289182f0b` — deployed 2025-01-15 09:21:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x6ae187eacf40ebd1e571a655db92a1f47452e0bf` — deployed 2024-09-12 06:25:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | 0xmacro-boring-vault-arctic-0.pdf | BoringVaultV0Lens | unmatched — not counted | — | listed in scope table | no |
 | 0xmacro-boring-vault-arctic-0.pdf | AggregationRouterV5 | unmatched — not counted | — | listed in scope table | no |
 | 0xmacro-boring-vault-arctic-0.pdf | BalancerVault | unmatched — not counted | — | listed in scope table | no |
@@ -253,7 +253,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | pashov-boring-vault.pdf | OAppAuthCore | unmatched — not counted | — | listed in scope | no |
 | pashov-boring-vault.pdf | OAppAuthReceiver | unmatched — not counted | — | listed in scope | no |
 | pashov-boring-vault.pdf | OAppAuthSender | unmatched — not counted | — | listed in scope | no |
-| pashov-boring-vault.pdf | TellerWithMultiAssetSupport | ambiguous — not counted | TellerWithMultiAssetSupport (alternative) `0x08eb2e...8a1d53` — deployed 2024-09-30 22:53:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x5d3fb4...1b54dd` — deployed 2025-01-15 10:17:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x074364...182f0b` — deployed 2025-01-15 09:21:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x6ae187...52e0bf` — deployed 2024-09-12 06:25:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| pashov-boring-vault.pdf | TellerWithMultiAssetSupport | ambiguous — not counted | TellerWithMultiAssetSupport (alternative) `0x08eb2eccdf6ebd7aba601791f23ec5b5f68a1d53` — deployed 2024-09-30 22:53:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x5d3fb47fe7f3f4ce8fe55518f7e4f7d6061b54dd` — deployed 2025-01-15 10:17:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x0743647a607822781f9d0a639454e76289182f0b` — deployed 2025-01-15 09:21:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x6ae187eacf40ebd1e571a655db92a1f47452e0bf` — deployed 2024-09-12 06:25:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | pashov-boring-vault.pdf | BoringVaultCrossChainDepositor | unmatched — not counted | — | listed in scope | no |
 | pashov-boring-vault.pdf | BoringVaultL2OFT | unmatched — not counted | — | listed in scope | no |
 | pashov-boring-vault.pdf | BoringVaultOFTAdapter | unmatched — not counted | — | listed in scope | no |
@@ -264,7 +264,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | pashov-hyperlane.pdf | MultiChainHyperlaneTellerWithMultiAssetSupport | unmatched — not counted | — | listed in scope section | no |
 | pashov-hyperlane.pdf | CrossChainTellerBase | unmatched — not counted | — | listed in scope section | no |
 | pashov-hyperlane.pdf | MultiChainTellerBase | unmatched — not counted | — | listed in scope section | no |
-| pashov-hyperlane.pdf | TellerWithMultiAssetSupport | ambiguous — not counted | TellerWithMultiAssetSupport (alternative) `0x08eb2e...8a1d53` — deployed 2024-09-30 22:53:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x5d3fb4...1b54dd` — deployed 2025-01-15 10:17:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x074364...182f0b` — deployed 2025-01-15 09:21:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x6ae187...52e0bf` — deployed 2024-09-12 06:25:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| pashov-hyperlane.pdf | TellerWithMultiAssetSupport | ambiguous — not counted | TellerWithMultiAssetSupport (alternative) `0x08eb2eccdf6ebd7aba601791f23ec5b5f68a1d53` — deployed 2024-09-30 22:53:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x5d3fb47fe7f3f4ce8fe55518f7e4f7d6061b54dd` — deployed 2025-01-15 10:17:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x0743647a607822781f9d0a639454e76289182f0b` — deployed 2025-01-15 09:21:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x6ae187eacf40ebd1e571a655db92a1f47452e0bf` — deployed 2024-09-12 06:25:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | pashov-hyperlane.pdf | AtomicQueueUCP | unmatched — not counted | — | listed in scope section | no |
 | pashov-one-to-one-queue.pdf | CommunityCodeDepositor | unmatched — not counted | — | listed in scope | no |
 | pashov-one-to-one-queue.pdf | DistributorCodeDepositor | unmatched — not counted | — | listed in scope | no |
@@ -276,12 +276,12 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | pashov-one-to-one-queue.pdf | VerboseAuth | unmatched — not counted | — | listed in scope | no |
 | pashov-one-to-one-queue.pdf | IAccessAuthorityHook | unmatched — not counted | — | listed in scope | no |
 | pashov-one-to-one-queue.pdf | IFeeModule | unmatched — not counted | — | listed in scope | no |
-| pashov-predicate-freeze-supply-cap.pdf | BoringVault | ambiguous — not counted | BoringVault (alternative) `0x170d84...c933a0` — deployed 2025-01-15 09:21:11+03 — liveness: live (code_present_context)<br>BoringVault (alternative) `0x82c40e...c7cab4` — deployed 2025-01-15 10:16:59+03 — liveness: live (code_present_context)<br>BoringVault (alternative) `0x196ead...bd3dcc` — deployed 2024-09-30 22:53:11+03 — liveness: live (code_present_context)<br>BoringVault (alternative) `0x19e099...3c0b32` — deployed 2024-09-12 06:24:59+03 — liveness: live (code_present_context)<br>BoringVault (alternative) `0x722a85...1f883b` — deployed 2025-04-19 18:47:11+03 — liveness: live (code_present_context)<br>BoringVault (alternative) `0x52e4d8...07a0d1` — deployed 2024-08-09 21:44:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| pashov-predicate-freeze-supply-cap.pdf | BoringVault | ambiguous — not counted | BoringVault (alternative) `0x170d847a8320f3b6a77ee15b0cae430e3ec933a0` — deployed 2025-01-15 09:21:11+03 — liveness: live (code_present_context)<br>BoringVault (alternative) `0x82c40e07277ebb92935f79ce92268f80ddc7cab4` — deployed 2025-01-15 10:16:59+03 — liveness: live (code_present_context)<br>BoringVault (alternative) `0x196ead472583bc1e9af7a05f860d9857e1bd3dcc` — deployed 2024-09-30 22:53:11+03 — liveness: live (code_present_context)<br>BoringVault (alternative) `0x19e099b7aed41fa52718d780dda74678113c0b32` — deployed 2024-09-12 06:24:59+03 — liveness: live (code_present_context)<br>BoringVault (alternative) `0x722a851b6798d65b80526562fc3a36e19b1f883b` — deployed 2025-04-19 18:47:11+03 — liveness: live (code_present_context)<br>BoringVault (alternative) `0x52e4d8989fa8b3e1c06696e7b16def5d7707a0d1` — deployed 2024-08-09 21:44:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | pashov-predicate-freeze-supply-cap.pdf | NucleusDecoderAndSanitizer | unmatched — not counted | — | listed in scope | no |
 | pashov-predicate-freeze-supply-cap.pdf | CrossChainTellerBase | unmatched — not counted | — | listed in scope | no |
 | pashov-predicate-freeze-supply-cap.pdf | MultiChainHyperlaneTellerWithMultiAssetSupport | unmatched — not counted | — | listed in scope | no |
-| pashov-predicate-freeze-supply-cap.pdf | MultiChainLayerZeroTellerWithMultiAssetSupport | own contract | MultiChainLayerZeroTellerWithMultiAssetSupport (selected) `0x9ff67b...a14fbc` — deployed 2025-04-19 18:47:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| pashov-predicate-freeze-supply-cap.pdf | TellerWithMultiAssetSupport | ambiguous — not counted | TellerWithMultiAssetSupport (alternative) `0x08eb2e...8a1d53` — deployed 2024-09-30 22:53:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x5d3fb4...1b54dd` — deployed 2025-01-15 10:17:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x074364...182f0b` — deployed 2025-01-15 09:21:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x6ae187...52e0bf` — deployed 2024-09-12 06:25:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| pashov-predicate-freeze-supply-cap.pdf | MultiChainLayerZeroTellerWithMultiAssetSupport | own contract | MultiChainLayerZeroTellerWithMultiAssetSupport (selected) `0x9ff67b826b34fee9bf4135962754a808c4a14fbc` — deployed 2025-04-19 18:47:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| pashov-predicate-freeze-supply-cap.pdf | TellerWithMultiAssetSupport | ambiguous — not counted | TellerWithMultiAssetSupport (alternative) `0x08eb2eccdf6ebd7aba601791f23ec5b5f68a1d53` — deployed 2024-09-30 22:53:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x5d3fb47fe7f3f4ce8fe55518f7e4f7d6061b54dd` — deployed 2025-01-15 10:17:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x0743647a607822781f9d0a639454e76289182f0b` — deployed 2025-01-15 09:21:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x6ae187eacf40ebd1e571a655db92a1f47452e0bf` — deployed 2024-09-12 06:25:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | pashov-predicate-freeze-supply-cap.pdf | TellerWithMultiAssetSupportPredicateProxy | unmatched — not counted | — | listed in scope | no |
 | pashov-predicate-freeze-supply-cap.pdf | AssetSpecificFeeModule | unmatched — not counted | — | listed in scope | no |
 | pashov-predicate-freeze-supply-cap.pdf | DexAggregatorWrapperWithPredicateProxy | unmatched — not counted | — | listed in scope | no |
@@ -292,14 +292,14 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | pashov-predicate-freeze-supply-cap.pdf | DecoderCustomTypes | unmatched — not counted | — | listed in scope | no |
 | pashov-predicate-freeze-supply-cap.pdf | IFallbackHook | unmatched — not counted | — | listed in scope | no |
 | pashov-withdraw-queue.pdf | WithdrawQueue | unmatched — not counted | — | listed in scope | no |
-| pashov-withdraw-queue.pdf | TellerWithMultiAssetSupport | ambiguous — not counted | TellerWithMultiAssetSupport (alternative) `0x08eb2e...8a1d53` — deployed 2024-09-30 22:53:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x5d3fb4...1b54dd` — deployed 2025-01-15 10:17:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x074364...182f0b` — deployed 2025-01-15 09:21:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x6ae187...52e0bf` — deployed 2024-09-12 06:25:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| pashov-withdraw-queue.pdf | TellerWithMultiAssetSupport | ambiguous — not counted | TellerWithMultiAssetSupport (alternative) `0x08eb2eccdf6ebd7aba601791f23ec5b5f68a1d53` — deployed 2024-09-30 22:53:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x5d3fb47fe7f3f4ce8fe55518f7e4f7d6061b54dd` — deployed 2025-01-15 10:17:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x0743647a607822781f9d0a639454e76289182f0b` — deployed 2025-01-15 09:21:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x6ae187eacf40ebd1e571a655db92a1f47452e0bf` — deployed 2024-09-12 06:25:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | pashov-withdraw-queue.pdf | CrossChainTellerBase | unmatched — not counted | — | listed in scope | no |
 | pashov-withdraw-queue.pdf | AccountantWithRateProviders | unmatched — not counted | — | listed in scope | no |
 | spearbit-boring-vault-arctic-0.pdf | UniswapV3DecoderAndSanitizer | unmatched — not counted | — | Listed in findings context and scope | no |
 | spearbit-boring-vault-arctic-0.pdf | DexAggregatorUManager | unmatched — not counted | — | Listed in findings context and scope | no |
 | spearbit-boring-vault-arctic-0.pdf | DexSwapperUManager | unmatched — not counted | — | Listed in findings context and scope | no |
-| spearbit-boring-vault-arctic-0.pdf | TellerWithMultiAssetSupport | ambiguous — not counted | TellerWithMultiAssetSupport (alternative) `0x08eb2e...8a1d53` — deployed 2024-09-30 22:53:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x5d3fb4...1b54dd` — deployed 2025-01-15 10:17:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x074364...182f0b` — deployed 2025-01-15 09:21:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x6ae187...52e0bf` — deployed 2024-09-12 06:25:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| spearbit-boring-vault-arctic-0.pdf | BoringVault | ambiguous — not counted | BoringVault (alternative) `0x170d84...c933a0` — deployed 2025-01-15 09:21:11+03 — liveness: live (code_present_context)<br>BoringVault (alternative) `0x82c40e...c7cab4` — deployed 2025-01-15 10:16:59+03 — liveness: live (code_present_context)<br>BoringVault (alternative) `0x196ead...bd3dcc` — deployed 2024-09-30 22:53:11+03 — liveness: live (code_present_context)<br>BoringVault (alternative) `0x19e099...3c0b32` — deployed 2024-09-12 06:24:59+03 — liveness: live (code_present_context)<br>BoringVault (alternative) `0x722a85...1f883b` — deployed 2025-04-19 18:47:11+03 — liveness: live (code_present_context)<br>BoringVault (alternative) `0x52e4d8...07a0d1` — deployed 2024-08-09 21:44:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| spearbit-boring-vault-arctic-0.pdf | TellerWithMultiAssetSupport | ambiguous — not counted | TellerWithMultiAssetSupport (alternative) `0x08eb2eccdf6ebd7aba601791f23ec5b5f68a1d53` — deployed 2024-09-30 22:53:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x5d3fb47fe7f3f4ce8fe55518f7e4f7d6061b54dd` — deployed 2025-01-15 10:17:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x0743647a607822781f9d0a639454e76289182f0b` — deployed 2025-01-15 09:21:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x6ae187eacf40ebd1e571a655db92a1f47452e0bf` — deployed 2024-09-12 06:25:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| spearbit-boring-vault-arctic-0.pdf | BoringVault | ambiguous — not counted | BoringVault (alternative) `0x170d847a8320f3b6a77ee15b0cae430e3ec933a0` — deployed 2025-01-15 09:21:11+03 — liveness: live (code_present_context)<br>BoringVault (alternative) `0x82c40e07277ebb92935f79ce92268f80ddc7cab4` — deployed 2025-01-15 10:16:59+03 — liveness: live (code_present_context)<br>BoringVault (alternative) `0x196ead472583bc1e9af7a05f860d9857e1bd3dcc` — deployed 2024-09-30 22:53:11+03 — liveness: live (code_present_context)<br>BoringVault (alternative) `0x19e099b7aed41fa52718d780dda74678113c0b32` — deployed 2024-09-12 06:24:59+03 — liveness: live (code_present_context)<br>BoringVault (alternative) `0x722a851b6798d65b80526562fc3a36e19b1f883b` — deployed 2025-04-19 18:47:11+03 — liveness: live (code_present_context)<br>BoringVault (alternative) `0x52e4d8989fa8b3e1c06696e7b16def5d7707a0d1` — deployed 2024-08-09 21:44:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | spearbit-boring-vault-arctic-0.pdf | ManagerWithMerkleVerification | unmatched — not counted | — | Listed in findings context and scope | no |
 | spearbit-boring-vault-arctic-0.pdf | AccountantWithRateProviders | unmatched — not counted | — | Listed in findings context and scope | no |
 | spearbit-boring-vault-arctic-0.pdf | CurveDecoderAndSanitizer | unmatched — not counted | — | Listed in findings context and scope | no |
@@ -313,7 +313,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | zenith-one-to-one-queue.pdf | Pausable | unmatched — not counted | — | listed in scope | no |
 | zenith-one-to-one-queue.pdf | VerboseAuth | unmatched — not counted | — | listed in scope | no |
 | zenith-withdraw-queue.pdf | WithdrawQueue | unmatched — not counted | — | listed in scope | no |
-| zenith-withdraw-queue.pdf | TellerWithMultiAssetSupport | ambiguous — not counted | TellerWithMultiAssetSupport (alternative) `0x08eb2e...8a1d53` — deployed 2024-09-30 22:53:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x5d3fb4...1b54dd` — deployed 2025-01-15 10:17:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x074364...182f0b` — deployed 2025-01-15 09:21:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x6ae187...52e0bf` — deployed 2024-09-12 06:25:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| zenith-withdraw-queue.pdf | TellerWithMultiAssetSupport | ambiguous — not counted | TellerWithMultiAssetSupport (alternative) `0x08eb2eccdf6ebd7aba601791f23ec5b5f68a1d53` — deployed 2024-09-30 22:53:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x5d3fb47fe7f3f4ce8fe55518f7e4f7d6061b54dd` — deployed 2025-01-15 10:17:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x0743647a607822781f9d0a639454e76289182f0b` — deployed 2025-01-15 09:21:47+03 — liveness: live (current_address_book_code)<br>TellerWithMultiAssetSupport (alternative) `0x6ae187eacf40ebd1e571a655db92a1f47452e0bf` — deployed 2024-09-12 06:25:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | zenith-withdraw-queue.pdf | CrossChainTellerBase | unmatched — not counted | — | listed in scope | no |
 | zenith-withdraw-queue.pdf | AccountantWithRateProviders | unmatched — not counted | — | listed in scope | no |
 | guardian-transit-station.pdf | TransitStation | unmatched — not counted | — | listed in scope table | no |
@@ -333,16 +333,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x170d84...c933a0` | BoringVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x196ead...bd3dcc` | BoringVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x19e099...3c0b32` | BoringVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x52e4d8...07a0d1` | BoringVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x722a85...1f883b` | BoringVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x82c40e...c7cab4` | BoringVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x074364...182f0b` | TellerWithMultiAssetSupport | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x08eb2e...8a1d53` | TellerWithMultiAssetSupport | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x5d3fb4...1b54dd` | TellerWithMultiAssetSupport | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x6ae187...52e0bf` | TellerWithMultiAssetSupport | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x170d847a8320f3b6a77ee15b0cae430e3ec933a0` | BoringVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x196ead472583bc1e9af7a05f860d9857e1bd3dcc` | BoringVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x19e099b7aed41fa52718d780dda74678113c0b32` | BoringVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x52e4d8989fa8b3e1c06696e7b16def5d7707a0d1` | BoringVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x722a851b6798d65b80526562fc3a36e19b1f883b` | BoringVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x82c40e07277ebb92935f79ce92268f80ddc7cab4` | BoringVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x0743647a607822781f9d0a639454e76289182f0b` | TellerWithMultiAssetSupport | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x08eb2eccdf6ebd7aba601791f23ec5b5f68a1d53` | TellerWithMultiAssetSupport | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x5d3fb47fe7f3f4ce8fe55518f7e4f7d6061b54dd` | TellerWithMultiAssetSupport | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x6ae187eacf40ebd1e571a655db92a1f47452e0bf` | TellerWithMultiAssetSupport | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

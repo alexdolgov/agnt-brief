@@ -48,8 +48,8 @@ The pinned logic-topography run contains 30 contract row(s) across base. Structu
 
 ### Forked Contracts
 
-**CLFactory** (`0x5e7bb1...06809a`, chain 8453)
-Origin: arrakis-finance (`0x5e7bb1...06809a`)
+**CLFactory** (`0x5e7bb104d84c7cb9b682aac2f3d509f5f406809a`, chain 8453)
+Origin: arrakis-finance (`0x5e7bb104d84c7cb9b682aac2f3d509f5f406809a`)
 Containment: 100.0% - 23 functions inherited
 Centroid audit status: pending_validation
 
@@ -57,8 +57,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**Minter** (`0xeb0183...a33fe5`, chain 8453)
-Origin: 40-acres (`0xeb0183...a33fe5`)
+**Minter** (`0xeb018363f0a9af8f91f06fee6613a751b2a33fe5`, chain 8453)
+Origin: 40-acres (`0xeb018363f0a9af8f91f06fee6613a751b2a33fe5`)
 Containment: 100.0% - 29 functions inherited
 Centroid audit status: pending_validation
 
@@ -66,8 +66,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**Router** (`0xcf77a3...874e43`, chain 8453)
-Origin: 40-acres (`0xcf77a3...874e43`)
+**Router** (`0xcf77a3ba9a5ca399b7c97c74d54e5b1beb874e43`, chain 8453)
+Origin: 40-acres (`0xcf77a3ba9a5ca399b7c97c74d54e5b1beb874e43`)
 Containment: 100.0% - 23 functions inherited
 Centroid audit status: pending_validation
 
@@ -75,8 +75,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**Voter** (`0x166135...c480a5`, chain 8453)
-Origin: arcadia-finance (`0x166135...c480a5`)
+**Voter** (`0x16613524e02ad97edfef371bc883f2f5d6c480a5`, chain 8453)
+Origin: arcadia-finance (`0x16613524e02ad97edfef371bc883f2f5d6c480a5`)
 Containment: 100.0% - 34 functions inherited
 Centroid audit status: pending_validation
 
@@ -84,8 +84,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**VotingEscrow** (`0xebf418...67e6b4`, chain 8453)
-Origin: iaero-protocol (`0xebf418...67e6b4`)
+**VotingEscrow** (`0xebf418fe2512e7e6bd9b87a8f0f294acdc67e6b4`, chain 8453)
+Origin: iaero-protocol (`0xebf418fe2512e7e6bd9b87a8f0f294acdc67e6b4`)
 Containment: 100.0% - 50 functions inherited
 Centroid audit status: pending_validation
 
@@ -95,30 +95,30 @@ Removals (removed from original): none
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- Aero (`0x940181...d98631`, chain 8453)
-- AirdropDistributor (`0xe4c69a...bc382f`, chain 8453)
-- BasePrices (`0xee7174...eff166`, chain 8453)
-- CustomUnstakedFeeModule (`0x0ad083...38ee68`, chain 8453)
-- Emergency Council (`0x99249b...5c013d`, chain 8453)
-- FactoryRegistry (`0x5c3f18...9e37c0`, chain 8453)
-- Forwarder (`0x15e627...a05dcc`, chain 8453)
-- GaugeFactory (`0x35f35c...5bbcb5`, chain 8453)
-- ManagedRewardsFactory (`0xfda1fb...d2bdc3`, chain 8453)
-- MixedRouteQuoterV1 (`0x0a5aa5...07d5c6`, chain 8453)
-- NonfungibleTokenPositionDescriptor (`0x01b0ca...d53c55`, chain 8453)
-- PoolFactory (`0x420dd3...ce40da`, chain 8453)
-- QuoterV2 (`0x254cf9...ae15b0`, chain 8453)
-- RewardsDistributor (`0x227f65...964c7d`, chain 8453)
-- Slipstream GaugeFactory (`0xd30677...05fb08`, chain 8453)
-- Slipstream GaugeImplementation (`0xf5601f...442d2d`, chain 8453)
-- Slipstream NonfungiblePositionManager (`0x827922...485b72`, chain 8453)
-- Slipstream PoolImplementation (`0xec8e53...315831`, chain 8453)
-- Slipstream SwapFeeModule (`0xf4171b...69af00`, chain 8453)
-- SugarHelper (`0x0ad09a...b6edd5`, chain 8453)
-- SwapRouter (`0xbe6d8f...6d18a5`, chain 8453)
-- UniversalRouter (`0x6cb442...00be3e`, chain 8453)
-- VeArtProxy (`0xe99924...54643e`, chain 8453)
-- VotingRewardsFactory (`0x45ca74...52b504`, chain 8453)
+- Aero (`0x940181a94a35a4569e4529a3cdfb74e38fd98631`, chain 8453)
+- AirdropDistributor (`0xe4c69af018b2ea9e575026c0472b6531a2bc382f`, chain 8453)
+- BasePrices (`0xee717411f6e44f9fee011835c8e6faac5deff166`, chain 8453)
+- CustomUnstakedFeeModule (`0x0ad08370c76ff426f534bb2affd9b5555338ee68`, chain 8453)
+- Emergency Council (`0x99249b10593fca1ae9dae6d4819f1a6dae5c013d`, chain 8453)
+- FactoryRegistry (`0x5c3f18f06cc09ca1910767a34a20f771039e37c0`, chain 8453)
+- Forwarder (`0x15e62707fca7352fbe35f51a8d6b0f8066a05dcc`, chain 8453)
+- GaugeFactory (`0x35f35ca5b132cadf2916bab57639128eac5bbcb5`, chain 8453)
+- ManagedRewardsFactory (`0xfda1fb5a2a5b23638c7017950506a36dcfd2bdc3`, chain 8453)
+- MixedRouteQuoterV1 (`0x0a5aa5d3a4d28014f967bf0f29eaa3ff9807d5c6`, chain 8453)
+- NonfungibleTokenPositionDescriptor (`0x01b0cacb9a8004e08d075c919b5df3b59fd53c55`, chain 8453)
+- PoolFactory (`0x420dd381b31aef6683db6b902084cb0ffece40da`, chain 8453)
+- QuoterV2 (`0x254cf9e1e6e233aa1ac962cb9b05b2cfeaae15b0`, chain 8453)
+- RewardsDistributor (`0x227f65131a261548b057215bb1d5ab2997964c7d`, chain 8453)
+- Slipstream GaugeFactory (`0xd30677bd8dd15132f251cb54cbda552d2a05fb08`, chain 8453)
+- Slipstream GaugeImplementation (`0xf5601f95708256a118ef5971820327f362442d2d`, chain 8453)
+- Slipstream NonfungiblePositionManager (`0x827922686190790b37229fd06084350e74485b72`, chain 8453)
+- Slipstream PoolImplementation (`0xec8e5342b19977b4ef8892e02d8daecfa1315831`, chain 8453)
+- Slipstream SwapFeeModule (`0xf4171b0953b52fa55462e4d76eca1845db69af00`, chain 8453)
+- SugarHelper (`0x0ad09a66af0154a84e86f761313d02d0abb6edd5`, chain 8453)
+- SwapRouter (`0xbe6d8f0d05cc4be24d5167a3ef062215be6d18a5`, chain 8453)
+- UniversalRouter (`0x6cb442acf35158d5eda88fe602221b67b400be3e`, chain 8453)
+- VeArtProxy (`0xe9992487b2ee03b7a91241695a58e0ef3654643e`, chain 8453)
+- VotingRewardsFactory (`0x45ca74858c579e717ee29a86042e0d53b252b504`, chain 8453)
 
 ## Contract Surface Quality
 
@@ -164,79 +164,79 @@ Removals (removed from original): none
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Aero | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-378536 | `0x940181...d98631` | ⚠️ Unaudited |
-| AirdropDistributor | unknown | project_anchor | own_supporting | 0 | base | unit-378549 | `0xe4c69a...bc382f` | ⚠️ Unaudited |
-| BalanceLogicLibrary | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x8e6341...53b648` | ⚠️ Unaudited |
-| BaseBridgeHelperModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x362dbd...655b26` | ⚠️ Unaudited |
-| BasePrices | unknown | project_anchor | own_supporting | 0 | base | unit-378558 | `0xee7174...eff166` | ⚠️ Unaudited |
-| BridgedBaseWOETHProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0xd87243...bbf839` | ⚠️ Unaudited |
-| BridgedWOETHStrategyProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x80c864...acf835` | ⚠️ Unaudited |
-| CCTPHookWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x6d04c7...f79670` | ⚠️ Unaudited |
-| ClaimBribesSafeModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x26179a...28e759` | ⚠️ Unaudited |
-| CLFactory | unknown | project_anchor | own_supporting | 0 | base | unit-378530 | `0x5e7bb1...06809a` | ⚠️ Unaudited |
-| CLGauge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x1296a1...6025b5` | ⚠️ Unaudited |
-| CLGaugeFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x3e703f...9b6fbc` | ⚠️ Unaudited |
-| CLPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x88e336...a0471f` | ⚠️ Unaudited |
-| Counter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x430d45...d75fb8` | ⚠️ Unaudited |
-| CrossChainRemoteStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x5f81a5...e7a92d` | ⚠️ Unaudited |
-| CustomSwapFeeModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2dd416...1ca9d1` | ⚠️ Unaudited |
-| CustomUnstakedFeeModule | unknown | project_anchor | own_supporting | 0 | base | unit-378511 | `0x0ad083...38ee68` | ⚠️ Unaudited |
-| DelegationLogicLibrary | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xd6e6d5...31d59f` | ⚠️ Unaudited |
-| DirectStakingBaseHandlerProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xdb282a...b4c1e3` | ⚠️ Unaudited |
-| DirectStakingHandlerL2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x851de5...37904b` | ⚠️ Unaudited |
-| Emergency Council | unknown | project_anchor | own_supporting | 0 | base | unit-378539 | `0x99249b...5c013d` | ⚠️ Unaudited |
-| FactoryRegistry | unknown | project_anchor | own_supporting | 0 | base | unit-378528 | `0x5c3f18...9e37c0` | ⚠️ Unaudited |
-| Forwarder | unknown | project_anchor | own_supporting | 0 | base | unit-378516 | `0x15e627...a05dcc` | ⚠️ Unaudited |
-| GaugeFactory | unknown | project_anchor | own_supporting | 0 | base | unit-378524 | `0x35f35c...5bbcb5` | ⚠️ Unaudited |
-| GnosisSafeProxy | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | base | unit-378571 | `0x834c0d...2fda52` | ⚠️ Unaudited |
-| ManagedRewardsFactory | unknown | project_anchor | own_supporting | 0 | base | unit-378565 | `0xfda1fb...d2bdc3` | ⚠️ Unaudited |
-| Minter | unknown | project_anchor | own_supporting | 0 | base | unit-378552 | `0xeb0183...a33fe5` | ⚠️ Unaudited |
-| MixedRouteQuoterV1 | unknown | project_anchor | own_supporting | 0 | base | unit-378509 | `0x0a5aa5...07d5c6` | ⚠️ Unaudited |
-| MixedRouteQuoterV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x495406...5b4f4f` | ⚠️ Unaudited |
-| NFTDescriptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0681d1...4ec818` | ⚠️ Unaudited |
-| NFTSVG | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x212665...f4dc52` | ⚠️ Unaudited |
-| NonfungiblePositionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0c3141...5bbde3` | ⚠️ Unaudited |
-| NonfungibleTokenPositionDescriptor | unknown | project_anchor | own_supporting | 0 | base | unit-378507 | `0x01b0ca...d53c55` | ⚠️ Unaudited |
-| OETH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x10b342...439989` | ⚠️ Unaudited |
-| OETHBase | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x1c62a3...b82be9` | ⚠️ Unaudited |
-| OETHBaseDripperProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x02f2c6...d7f8d6` | ⚠️ Unaudited |
-| OETHBaseHarvester | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xa50fd5...5ffad8` | ⚠️ Unaudited |
-| OETHBaseHarvesterProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x0cbeac...54c22e` | ⚠️ Unaudited |
-| OETHBaseOracleRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbc80da...97c75b` | ⚠️ Unaudited |
-| OETHBaseVaultAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xd50f7d...70d1a7` | ⚠️ Unaudited |
-| OETHBaseVaultCore | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x4a759f...6caaab` | ⚠️ Unaudited |
-| OETHBaseVaultProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x98a0cb...38cc93` | ⚠️ Unaudited |
-| OETHBaseZapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x3b56c0...4d2bc1` | ⚠️ Unaudited |
-| OETHbHydrexAMOProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xe6bebe...08d9c3` | ⚠️ Unaudited |
-| OETHbHydrexAMOStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xc5d369...4f38e0` | ⚠️ Unaudited |
-| OETHDripper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0030c7...e6b16a` | ⚠️ Unaudited |
-| OETHVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xe9f783...92fd66` | ⚠️ Unaudited |
-| OETHVaultValueChecker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x9d98cf...7bcf6a` | ⚠️ Unaudited |
-| OUSDVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xa96fd1...3820f9` | ⚠️ Unaudited |
-| PatchedManagedRewardsFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x3ab1a1...1be23d` | ⚠️ Unaudited |
-| PerlinNoise | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0b3a74...d9990e` | ⚠️ Unaudited |
-| PermissionedRebaseModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xf63398...9d4a37` | ⚠️ Unaudited |
-| PoolFactory | unknown | project_anchor | own_supporting | 1 | base | unit-378567 | `0x420dd3...ce40da` | ⚠️ Unaudited |
-| ProtocolGovernor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x94c012...33f410` | ⚠️ Unaudited |
-| QuoterV2 | unknown | project_anchor | own_supporting | 0 | base | unit-378522 | `0x254cf9...ae15b0` | ⚠️ Unaudited |
-| RewardsDistributor | unknown | project_anchor | own_supporting | 0 | base | unit-378520 | `0x227f65...964c7d` | ⚠️ Unaudited |
-| Router | unknown | project_anchor | own_supporting | 0 | base | unit-378545 | `0xcf77a3...874e43` | ⚠️ Unaudited |
-| Slipstream GaugeFactory | unknown | project_anchor | own_supporting | 0 | base | unit-378547 | `0xd30677...05fb08` | ⚠️ Unaudited |
-| Slipstream GaugeImplementation | unknown | project_anchor | own_supporting | 0 | base | unit-378562 | `0xf5601f...442d2d` | ⚠️ Unaudited |
-| Slipstream NonfungiblePositionManager | unknown | project_anchor | own_supporting | 0 | base | unit-378534 | `0x827922...485b72` | ⚠️ Unaudited |
-| Slipstream PoolImplementation | unknown | project_anchor | own_supporting | 0 | base | unit-378556 | `0xec8e53...315831` | ⚠️ Unaudited |
-| Slipstream SwapFeeModule | unknown | project_anchor | own_supporting | 0 | base | unit-378560 | `0xf4171b...69af00` | ⚠️ Unaudited |
-| SugarHelper | unknown | project_anchor | own_supporting | 0 | base | unit-378513 | `0x0ad09a...b6edd5` | ⚠️ Unaudited |
-| SwapRouter | unknown | project_anchor | own_supporting | 1 | base | unit-378569 | `0xbe6d8f...6d18a5` | ⚠️ Unaudited |
-| Timelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xf817cb...61464f` | ⚠️ Unaudited |
-| Trig | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x1d75c4...1a216f` | ⚠️ Unaudited |
-| UniversalRouter | unknown | project_anchor | own_supporting | 0 | base | unit-378532 | `0x6cb442...00be3e` | ⚠️ Unaudited |
-| VeArtProxy | unknown | project_anchor | own_supporting | 0 | base | unit-378550 | `0xe99924...54643e` | ⚠️ Unaudited |
-| Voter | unknown | project_anchor | own_supporting | 0 | base | unit-378518 | `0x166135...c480a5` | ⚠️ Unaudited |
-| VotingEscrow | unknown | project_anchor | own_supporting | 0 | base | unit-378554 | `0xebf418...67e6b4` | ⚠️ Unaudited |
-| VotingRewardsFactory | unknown | project_anchor | own_supporting | 0 | base | unit-378526 | `0x45ca74...52b504` | ⚠️ Unaudited |
-| WOETH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x9745a0...52d478` | ⚠️ Unaudited |
-| WOETHBase | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2e1826...583408` | ⚠️ Unaudited |
+| Aero | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-378536 | `0x940181a94a35a4569e4529a3cdfb74e38fd98631` | ⚠️ Unaudited |
+| AirdropDistributor | unknown | project_anchor | own_supporting | 0 | base | unit-378549 | `0xe4c69af018b2ea9e575026c0472b6531a2bc382f` | ⚠️ Unaudited |
+| BalanceLogicLibrary | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x8e634181dafb102213fad46b71ba1a4b6153b648` | ⚠️ Unaudited |
+| BaseBridgeHelperModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x362dbd4ff662b2e2b05b9cedc91da2dd2c655b26` | ⚠️ Unaudited |
+| BasePrices | unknown | project_anchor | own_supporting | 0 | base | unit-378558 | `0xee717411f6e44f9fee011835c8e6faac5deff166` | ⚠️ Unaudited |
+| BridgedBaseWOETHProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0xd8724322f44e5c58d7a815f542036fb17dbbf839` | ⚠️ Unaudited |
+| BridgedWOETHStrategyProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x80c864704dd06c3693ed5179190786ee38acf835` | ⚠️ Unaudited |
+| CCTPHookWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x6d04c71d805c158a3e786b3feed3a6b490f79670` | ⚠️ Unaudited |
+| ClaimBribesSafeModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x26179ada0f7cb714c11a8190e1f517988c28e759` | ⚠️ Unaudited |
+| CLFactory | unknown | project_anchor | own_supporting | 0 | base | unit-378530 | `0x5e7bb104d84c7cb9b682aac2f3d509f5f406809a` | ⚠️ Unaudited |
+| CLGauge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x1296a1b532e33f01091cf728706a94268c6025b5` | ⚠️ Unaudited |
+| CLGaugeFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x3e703fd2b6506e2abcce2c8b5633872a7d9b6fbc` | ⚠️ Unaudited |
+| CLPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x88e336956de7b74627fdfd548656b55501a0471f` | ⚠️ Unaudited |
+| Counter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x430d459700add442a501f4b3c70de7f9c3d75fb8` | ⚠️ Unaudited |
+| CrossChainRemoteStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x5f81a5a22375ebcc2075b162d23a5b16a1e7a92d` | ⚠️ Unaudited |
+| CustomSwapFeeModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2dd4162d4685657c06cd8f027cca3208311ca9d1` | ⚠️ Unaudited |
+| CustomUnstakedFeeModule | unknown | project_anchor | own_supporting | 0 | base | unit-378511 | `0x0ad08370c76ff426f534bb2affd9b5555338ee68` | ⚠️ Unaudited |
+| DelegationLogicLibrary | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xd6e6d57d0627aae127743c79bc795f836431d59f` | ⚠️ Unaudited |
+| DirectStakingBaseHandlerProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xdb282a4935fdab14a1b5ff14a4de75e100b4c1e3` | ⚠️ Unaudited |
+| DirectStakingHandlerL2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x851de5ea424557b52d1d6debe5bda12a7d37904b` | ⚠️ Unaudited |
+| Emergency Council | unknown | project_anchor | own_supporting | 0 | base | unit-378539 | `0x99249b10593fca1ae9dae6d4819f1a6dae5c013d` | ⚠️ Unaudited |
+| FactoryRegistry | unknown | project_anchor | own_supporting | 0 | base | unit-378528 | `0x5c3f18f06cc09ca1910767a34a20f771039e37c0` | ⚠️ Unaudited |
+| Forwarder | unknown | project_anchor | own_supporting | 0 | base | unit-378516 | `0x15e62707fca7352fbe35f51a8d6b0f8066a05dcc` | ⚠️ Unaudited |
+| GaugeFactory | unknown | project_anchor | own_supporting | 0 | base | unit-378524 | `0x35f35ca5b132cadf2916bab57639128eac5bbcb5` | ⚠️ Unaudited |
+| GnosisSafeProxy | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | base | unit-378571 | `0x834c0da026d5f933c2c18fa9f8ba7f1f792fda52` | ⚠️ Unaudited |
+| ManagedRewardsFactory | unknown | project_anchor | own_supporting | 0 | base | unit-378565 | `0xfda1fb5a2a5b23638c7017950506a36dcfd2bdc3` | ⚠️ Unaudited |
+| Minter | unknown | project_anchor | own_supporting | 0 | base | unit-378552 | `0xeb018363f0a9af8f91f06fee6613a751b2a33fe5` | ⚠️ Unaudited |
+| MixedRouteQuoterV1 | unknown | project_anchor | own_supporting | 0 | base | unit-378509 | `0x0a5aa5d3a4d28014f967bf0f29eaa3ff9807d5c6` | ⚠️ Unaudited |
+| MixedRouteQuoterV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x49540630a4d2ce67d54450d007d634f4c45b4f4f` | ⚠️ Unaudited |
+| NFTDescriptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0681d141da398e567a677f0eaf13c8815c4ec818` | ⚠️ Unaudited |
+| NFTSVG | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x212665aaea8da0a3b71a47a53b3100ef4cf4dc52` | ⚠️ Unaudited |
+| NonfungiblePositionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0c314190b0b78513fd908c3bfe3c83ef5f5bbde3` | ⚠️ Unaudited |
+| NonfungibleTokenPositionDescriptor | unknown | project_anchor | own_supporting | 0 | base | unit-378507 | `0x01b0cacb9a8004e08d075c919b5df3b59fd53c55` | ⚠️ Unaudited |
+| OETH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x10b342e0205fc20a0934d1a0f25e270520439989` | ⚠️ Unaudited |
+| OETHBase | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x1c62a3c2620f2fb7ba5d50c9da2dec214cb82be9` | ⚠️ Unaudited |
+| OETHBaseDripperProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x02f2c609950e90934ce99e58b4d7326ad0d7f8d6` | ⚠️ Unaudited |
+| OETHBaseHarvester | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xa50fd560af7433d00d231b397512f5df375ffad8` | ⚠️ Unaudited |
+| OETHBaseHarvesterProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x0cbeacf86232fc04050cd679d860516f7254c22e` | ⚠️ Unaudited |
+| OETHBaseOracleRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbc80da22601eae8720ed8ab117eb88c92b97c75b` | ⚠️ Unaudited |
+| OETHBaseVaultAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xd50f7d13632ccadcf24fb74676981099fe70d1a7` | ⚠️ Unaudited |
+| OETHBaseVaultCore | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x4a759f78b1a1995b57c9d3b40eb1cdc2b66caaab` | ⚠️ Unaudited |
+| OETHBaseVaultProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x98a0cbef61bd2d21435f433be4cd42b56b38cc93` | ⚠️ Unaudited |
+| OETHBaseZapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x3b56c09543d3068f8488ed34e6f383c3854d2bc1` | ⚠️ Unaudited |
+| OETHbHydrexAMOProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xe6bebe3072ff42a7c2a4a5a9864b30bc5608d9c3` | ⚠️ Unaudited |
+| OETHbHydrexAMOStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xc5d36960ffe43687ab1cb4f905b97f0a064f38e0` | ⚠️ Unaudited |
+| OETHDripper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0030c7dc6cb7f449e9566f273342c3370ee6b16a` | ⚠️ Unaudited |
+| OETHVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xe9f783e7d9fceb90988fdf89bbb2bc3e7092fd66` | ⚠️ Unaudited |
+| OETHVaultValueChecker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x9d98cf85b65fa1acef5e9aaa2300753adf7bcf6a` | ⚠️ Unaudited |
+| OUSDVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xa96fd141e92de60394103c7f9e045662913820f9` | ⚠️ Unaudited |
+| PatchedManagedRewardsFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x3ab1a16622bc5bdd1619d427fb1a6f73c71be23d` | ⚠️ Unaudited |
+| PerlinNoise | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0b3a7479694d678fb34ef737811cb31b9dd9990e` | ⚠️ Unaudited |
+| PermissionedRebaseModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xf633980a61e9f90a41d030676059dc201d9d4a37` | ⚠️ Unaudited |
+| PoolFactory | unknown | project_anchor | own_supporting | 1 | base | unit-378567 | `0x420dd381b31aef6683db6b902084cb0ffece40da` | ⚠️ Unaudited |
+| ProtocolGovernor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x94c012a23a8a65a6f40608da30534a46a433f410` | ⚠️ Unaudited |
+| QuoterV2 | unknown | project_anchor | own_supporting | 0 | base | unit-378522 | `0x254cf9e1e6e233aa1ac962cb9b05b2cfeaae15b0` | ⚠️ Unaudited |
+| RewardsDistributor | unknown | project_anchor | own_supporting | 0 | base | unit-378520 | `0x227f65131a261548b057215bb1d5ab2997964c7d` | ⚠️ Unaudited |
+| Router | unknown | project_anchor | own_supporting | 0 | base | unit-378545 | `0xcf77a3ba9a5ca399b7c97c74d54e5b1beb874e43` | ⚠️ Unaudited |
+| Slipstream GaugeFactory | unknown | project_anchor | own_supporting | 0 | base | unit-378547 | `0xd30677bd8dd15132f251cb54cbda552d2a05fb08` | ⚠️ Unaudited |
+| Slipstream GaugeImplementation | unknown | project_anchor | own_supporting | 0 | base | unit-378562 | `0xf5601f95708256a118ef5971820327f362442d2d` | ⚠️ Unaudited |
+| Slipstream NonfungiblePositionManager | unknown | project_anchor | own_supporting | 0 | base | unit-378534 | `0x827922686190790b37229fd06084350e74485b72` | ⚠️ Unaudited |
+| Slipstream PoolImplementation | unknown | project_anchor | own_supporting | 0 | base | unit-378556 | `0xec8e5342b19977b4ef8892e02d8daecfa1315831` | ⚠️ Unaudited |
+| Slipstream SwapFeeModule | unknown | project_anchor | own_supporting | 0 | base | unit-378560 | `0xf4171b0953b52fa55462e4d76eca1845db69af00` | ⚠️ Unaudited |
+| SugarHelper | unknown | project_anchor | own_supporting | 0 | base | unit-378513 | `0x0ad09a66af0154a84e86f761313d02d0abb6edd5` | ⚠️ Unaudited |
+| SwapRouter | unknown | project_anchor | own_supporting | 1 | base | unit-378569 | `0xbe6d8f0d05cc4be24d5167a3ef062215be6d18a5` | ⚠️ Unaudited |
+| Timelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xf817cb3092179083c48c014688d98b72fb61464f` | ⚠️ Unaudited |
+| Trig | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x1d75c4dda3d28b4f2ab634c439e495cf211a216f` | ⚠️ Unaudited |
+| UniversalRouter | unknown | project_anchor | own_supporting | 0 | base | unit-378532 | `0x6cb442acf35158d5eda88fe602221b67b400be3e` | ⚠️ Unaudited |
+| VeArtProxy | unknown | project_anchor | own_supporting | 0 | base | unit-378550 | `0xe9992487b2ee03b7a91241695a58e0ef3654643e` | ⚠️ Unaudited |
+| Voter | unknown | project_anchor | own_supporting | 0 | base | unit-378518 | `0x16613524e02ad97edfef371bc883f2f5d6c480a5` | ⚠️ Unaudited |
+| VotingEscrow | unknown | project_anchor | own_supporting | 0 | base | unit-378554 | `0xebf418fe2512e7e6bd9b87a8f0f294acdc67e6b4` | ⚠️ Unaudited |
+| VotingRewardsFactory | unknown | project_anchor | own_supporting | 0 | base | unit-378526 | `0x45ca74858c579e717ee29a86042e0d53b252b504` | ⚠️ Unaudited |
+| WOETH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x9745a051bd218d78eb6b5d0f53c685f6b052d478` | ⚠️ Unaudited |
+| WOETHBase | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2e1826c5a9d7fa49b1b6f54f9b6e47281a583408` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -256,7 +256,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-378543 | `0xbde0c7...49ea5a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-378543 | `0xbde0c70bdc242577c52dfad53389f82fd149ea5a` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -275,28 +275,28 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | `0xe4c69a...bc382f` | AirdropDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xee7174...eff166` | BasePrices | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x5e7bb1...06809a` | CLFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x0ad083...38ee68` | CustomUnstakedFeeModule | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x5c3f18...9e37c0` | FactoryRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x15e627...a05dcc` | Forwarder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x35f35c...5bbcb5` | GaugeFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xfda1fb...d2bdc3` | ManagedRewardsFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xeb0183...a33fe5` | Minter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x0a5aa5...07d5c6` | MixedRouteQuoterV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x01b0ca...d53c55` | NonfungibleTokenPositionDescriptor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x420dd3...ce40da` | PoolFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x254cf9...ae15b0` | QuoterV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x227f65...964c7d` | RewardsDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xcf77a3...874e43` | Router | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x0ad09a...b6edd5` | SugarHelper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xbe6d8f...6d18a5` | SwapRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x6cb442...00be3e` | UniversalRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xe99924...54643e` | VeArtProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x166135...c480a5` | Voter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xebf418...67e6b4` | VotingEscrow | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x45ca74...52b504` | VotingRewardsFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xe4c69af018b2ea9e575026c0472b6531a2bc382f` | AirdropDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xee717411f6e44f9fee011835c8e6faac5deff166` | BasePrices | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x5e7bb104d84c7cb9b682aac2f3d509f5f406809a` | CLFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x0ad08370c76ff426f534bb2affd9b5555338ee68` | CustomUnstakedFeeModule | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x5c3f18f06cc09ca1910767a34a20f771039e37c0` | FactoryRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x15e62707fca7352fbe35f51a8d6b0f8066a05dcc` | Forwarder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x35f35ca5b132cadf2916bab57639128eac5bbcb5` | GaugeFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xfda1fb5a2a5b23638c7017950506a36dcfd2bdc3` | ManagedRewardsFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xeb018363f0a9af8f91f06fee6613a751b2a33fe5` | Minter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x0a5aa5d3a4d28014f967bf0f29eaa3ff9807d5c6` | MixedRouteQuoterV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x01b0cacb9a8004e08d075c919b5df3b59fd53c55` | NonfungibleTokenPositionDescriptor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x420dd381b31aef6683db6b902084cb0ffece40da` | PoolFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x254cf9e1e6e233aa1ac962cb9b05b2cfeaae15b0` | QuoterV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x227f65131a261548b057215bb1d5ab2997964c7d` | RewardsDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xcf77a3ba9a5ca399b7c97c74d54e5b1beb874e43` | Router | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x0ad09a66af0154a84e86f761313d02d0abb6edd5` | SugarHelper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xbe6d8f0d05cc4be24d5167a3ef062215be6d18a5` | SwapRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x6cb442acf35158d5eda88fe602221b67b400be3e` | UniversalRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xe9992487b2ee03b7a91241695a58e0ef3654643e` | VeArtProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x16613524e02ad97edfef371bc883f2f5d6c480a5` | Voter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xebf418fe2512e7e6bd9b87a8f0f294acdc67e6b4` | VotingEscrow | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x45ca74858c579e717ee29a86042e0d53b252b504` | VotingRewardsFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

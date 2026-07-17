@@ -62,7 +62,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| OpiumToken | unknown | ethereum | n/a | [`0x888888...65ec11`](./contracts/ethereum-1/0x888888888889c00c67689029d7856aac1065ec11/) | ⚠️ Unaudited |
+| OpiumToken | unknown | ethereum | n/a | [`0x888888888889c00c67689029d7856aac1065ec11`](./contracts/ethereum-1/0x888888888889c00c67689029d7856aac1065ec11/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,7 +93,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x888888...65ec11`](./contracts/ethereum-1/0x888888888889c00c67689029d7856aac1065ec11/) | OpiumToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x888888888889c00c67689029d7856aac1065ec11`](./contracts/ethereum-1/0x888888888889c00c67689029d7856aac1065ec11/) | OpiumToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

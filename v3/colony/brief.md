@@ -52,11 +52,11 @@ The pinned logic-topography run contains 5 contract row(s) across avalanche. Str
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x62685d...82de5b`, chain 43114)
-- UnnamedContract (`0x6a74b8...e5eb82`, chain 43114)
-- ColonyGovernanceToken (`0xec3492...1793e6`, chain 43114)
-- ManagedIndex (`0x48f88a...48bef0`, chain 43114)
-- Vesting (`0xefac81...c2be20`, chain 43114)
+- UnnamedContract (`0x62685d3eaace96d6145d35f3b7540d35f482de5b`, chain 43114)
+- UnnamedContract (`0x6a74b8c452f36ad3a9a162d2710ba012c3e5eb82`, chain 43114)
+- ColonyGovernanceToken (`0xec3492a2508ddf4fdc0cd76f31f340b30d1793e6`, chain 43114)
+- ManagedIndex (`0x48f88a3fe843ccb0b5003e70b4192c1d7448bef0`, chain 43114)
+- Vesting (`0xefac81f709d314604a7daee9ca234da978c2be20`, chain 43114)
 
 ## Contract Surface Quality
 
@@ -100,40 +100,40 @@ The pinned logic-topography run contains 5 contract row(s) across avalanche. Str
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | avalanche | unit-381755 | `0x62685d...82de5b` | ✅ Audited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | avalanche | unit-381755 | `0x62685d3eaace96d6145d35f3b7540d35f482de5b` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (28)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AVAXHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x6101f7...a56d2e` | ⚠️ Unaudited |
-| ColonyGovernanceToken | unknown | project_anchor | own_supporting | 0 | avalanche | unit-381759 | `0xec3492...1793e6` | ⚠️ Unaudited |
-| DepositManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xf2e086...88224c` | ⚠️ Unaudited |
-| DirectDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x837d54...47ba53` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | avalanche | n/a | `0x358ca1...f11f28` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | avalanche | n/a | `0x3dad12...ba76bd` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | avalanche | n/a | `0x626068...019253` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | avalanche | n/a | `0x6d9f10...113113` | ⚠️ Unaudited |
-| IndexLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x3531ed...95f293` | ⚠️ Unaudited |
-| IndexNAV | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x167dae...6de348` | ⚠️ Unaudited |
-| IndexRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x6a676f...361270` | ⚠️ Unaudited |
-| IndexRouterV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x5cade1...f61153` | ⚠️ Unaudited |
-| ManagedIndex | unknown | project_anchor | own_supporting | 0 | avalanche | unit-381753 | `0x48f88a...48bef0` | ⚠️ Unaudited |
-| ManagedIndexFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x6d825c...546ca8` | ⚠️ Unaudited |
-| ManagedIndexReweightingLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x7f124c...2e2e6b` | ⚠️ Unaudited |
-| MerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x5463fb...95a9d0` | ⚠️ Unaudited |
-| OrdererAvax | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x22486d...be8c6d` | ⚠️ Unaudited |
-| OrderHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x24ddfc...c31221` | ⚠️ Unaudited |
-| OrderingExecutor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xe9b38d...dd5585` | ⚠️ Unaudited |
-| PhuturePriceOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x05ea07...c0a4ec` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xe4d695...4e3027` | ⚠️ Unaudited |
-| Staking | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-381754 | `0x5b0d74...1dc557` | ⚠️ Unaudited |
-| StakingV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xbd2890...410bbc` | ⚠️ Unaudited |
-| StakingV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x2b8c3c...43751c` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | avalanche | n/a | `0x0eb749...c52388` | ⚠️ Unaudited |
-| Vesting | unknown | project_anchor | own_supporting | 0 | avalanche | unit-381760 | `0xefac81...c2be20` | ⚠️ Unaudited |
-| vToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x9fee34...efaabf` | ⚠️ Unaudited |
-| vTokenFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x986cef...b120f8` | ⚠️ Unaudited |
+| AVAXHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x6101f79b6b29ffa43a30dab7188918e669a56d2e` | ⚠️ Unaudited |
+| ColonyGovernanceToken | unknown | project_anchor | own_supporting | 0 | avalanche | unit-381759 | `0xec3492a2508ddf4fdc0cd76f31f340b30d1793e6` | ⚠️ Unaudited |
+| DepositManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xf2e0869b9e96ed25a5eb7e551229f3e50388224c` | ⚠️ Unaudited |
+| DirectDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x837d54af002188045662cc3bff5b30e40247ba53` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | avalanche | n/a | `0x358ca1d984759c8ddb59a1ef74e76d615af11f28` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | avalanche | n/a | `0x3dad1208afec6eccda25169a5d16119ce2ba76bd` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | avalanche | n/a | `0x626068c6d37fa633fd746251eb5aa2aa8c019253` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | avalanche | n/a | `0x6d9f100ca14384262ca6afd8ef7cec265a113113` | ⚠️ Unaudited |
+| IndexLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x3531ed4cb9f8b68e0c706c92af5b8a50e095f293` | ⚠️ Unaudited |
+| IndexNAV | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x167daeaa53fb3f2b5719b19ad7397c0adb6de348` | ⚠️ Unaudited |
+| IndexRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x6a676ff024215942706071c84e086cd0af361270` | ⚠️ Unaudited |
+| IndexRouterV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x5cade1b94f263d0e0ad6e68c4f19532a55f61153` | ⚠️ Unaudited |
+| ManagedIndex | unknown | project_anchor | own_supporting | 0 | avalanche | unit-381753 | `0x48f88a3fe843ccb0b5003e70b4192c1d7448bef0` | ⚠️ Unaudited |
+| ManagedIndexFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x6d825ce7f220c6cc03fe156f28be6318e6546ca8` | ⚠️ Unaudited |
+| ManagedIndexReweightingLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x7f124cd28e775ae1fde2885c8fa6b2b8772e2e6b` | ⚠️ Unaudited |
+| MerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x5463fb623fe9806b78d8ebc41f4671200295a9d0` | ⚠️ Unaudited |
+| OrdererAvax | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x22486d98d59d810b89f2abd7bd2ca521b4be8c6d` | ⚠️ Unaudited |
+| OrderHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x24ddfc46d4cbbb269bc4c2baf81cf5649cc31221` | ⚠️ Unaudited |
+| OrderingExecutor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xe9b38d900445685cb7232259c95a96150fdd5585` | ⚠️ Unaudited |
+| PhuturePriceOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x05ea07036badcdef987f6b6a652f492a30c0a4ec` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xe4d695387e7cfc3dfd388f1cf8bd6eba7e4e3027` | ⚠️ Unaudited |
+| Staking | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-381754 | `0x5b0d74c78f2588b3c5c49857edb856cc731dc557` | ⚠️ Unaudited |
+| StakingV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xbd2890ce5a3df6c7e26b83e8da202c7d37410bbc` | ⚠️ Unaudited |
+| StakingV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x2b8c3c4d13142d7457dc80c92db4c62f3543751c` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | avalanche | n/a | `0x0eb749a42ca15d6ee8ad30e789586c09c2c52388` | ⚠️ Unaudited |
+| Vesting | unknown | project_anchor | own_supporting | 0 | avalanche | unit-381760 | `0xefac81f709d314604a7daee9ca234da978c2be20` | ⚠️ Unaudited |
+| vToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x9fee340b3754e0d1911d001ce8973fa91fefaabf` | ⚠️ Unaudited |
+| vTokenFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x986cefa4e8ba3ffec6ce3ef2449133072eb120f8` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -153,9 +153,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | periphery | project_anchor | own_supporting | 0 | avalanche | unit-381756 | `0x6a74b8...e5eb82` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-381757 | `0x7ccda6...615a8d` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-381758 | `0xae0f6d...3adbf2` | ❓ Unverified |
+| UnnamedContract | periphery | project_anchor | own_supporting | 0 | avalanche | unit-381756 | `0x6a74b8c452f36ad3a9a162d2710ba012c3e5eb82` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-381757 | `0x7ccda6e26dced1ba275c67cd20235790ed615a8d` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-381758 | `0xae0f6d1aa8704ba051e040aac2b156b5cd3adbf2` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -186,7 +186,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Manual Review | StakingDeposit | unmatched — not counted | — | listed in scope table | no |
 | Manual Review | TimedValuesStorage | unmatched — not counted | — | listed in scope table | no |
 | DL audit link | AntTokenV2 | unmatched — not counted | — | listed in scope table | no |
-| DL audit link | StakingV3 | own contract | 0x62685d… (selected) `0x62685d...82de5b` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| DL audit link | StakingV3 | own contract | 0x62685d… (selected) `0x62685d3eaace96d6145d35f3b7540d35f482de5b` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | DL audit link | KycManager | unmatched — not counted | — | listed in scope table | no |
 | DL audit link | FractalPrivilegedGroup | unmatched — not counted | — | listed in scope table | no |
 | DL audit link | PrivilegedGroupUpgradeable | unmatched — not counted | — | listed in scope table | no |
@@ -216,9 +216,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| avalanche | `0xec3492...1793e6` | ColonyGovernanceToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | `0x48f88a...48bef0` | ManagedIndex | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | `0xefac81...c2be20` | Vesting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | `0xec3492a2508ddf4fdc0cd76f31f340b30d1793e6` | ColonyGovernanceToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | `0x48f88a3fe843ccb0b5003e70b4192c1d7448bef0` | ManagedIndex | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | `0xefac81f709d314604a7daee9ca234da978c2be20` | Vesting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

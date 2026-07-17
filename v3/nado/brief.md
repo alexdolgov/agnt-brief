@@ -52,15 +52,15 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x0200c2...8470c1`, chain 57073)
-- UnnamedContract (`0x05ec92...65974e`, chain 57073)
-- UnnamedContract (`0x09fb49...5b9651`, chain 57073)
-- UnnamedContract (`0x687982...c9dff8`, chain 57073)
-- UnnamedContract (`0x8373c3...6994ab`, chain 57073)
-- UnnamedContract (`0x9acdc6...fecf17`, chain 57073)
-- UnnamedContract (`0xd21810...44c5fe`, chain 57073)
-- UnnamedContract (`0xf8599d...f96da1`, chain 57073)
-- UnnamedContract (`0xfcd947...0907fe`, chain 57073)
+- UnnamedContract (`0x0200c29006150606b650577bbe7b6248f58470c1`, chain 57073)
+- UnnamedContract (`0x05ec92d78ed421f3d3ada77ffde167106565974e`, chain 57073)
+- UnnamedContract (`0x09fb495aa7859635f755e827d64c4c9a2e5b9651`, chain 57073)
+- UnnamedContract (`0x68798229f88251b31d534733d6c4098318c9dff8`, chain 57073)
+- UnnamedContract (`0x8373c3aa04153abc0cfd28901c3c971a946994ab`, chain 57073)
+- UnnamedContract (`0x9acdc66459a323fbb6eb77c5aa96a30234fecf17`, chain 57073)
+- UnnamedContract (`0xd218103918c19d0a10cf35300e4cfafbd444c5fe`, chain 57073)
+- UnnamedContract (`0xf8599d58d1137fc56ecdd9c16ee139c8bdf96da1`, chain 57073)
+- UnnamedContract (`0xfcd94770b95fd9cc67143132bb172eb17a0907fe`, chain 57073)
 
 ## Contract Surface Quality
 
@@ -124,16 +124,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-389790 | `0x0200c2...8470c1` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-389792 | `0x05ec92...65974e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-389794 | `0x09fb49...5b9651` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-389809 | `0x687982...c9dff8` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ink | n/a | 2 deployments: ink `0x79cc76...cfeea8`; ink `0xf8963f...e1fc0c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-389813 | `0x8373c3...6994ab` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-389817 | `0x9acdc6...fecf17` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-389823 | `0xd21810...44c5fe` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-389825 | `0xf8599d...f96da1` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-389827 | `0xfcd947...0907fe` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-389790 | `0x0200c29006150606b650577bbe7b6248f58470c1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-389792 | `0x05ec92d78ed421f3d3ada77ffde167106565974e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-389794 | `0x09fb495aa7859635f755e827d64c4c9a2e5b9651` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-389809 | `0x68798229f88251b31d534733d6c4098318c9dff8` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ink | n/a | 2 deployments: ink `0x79cc76364b5fb263a25bd52930e3d9788fcfeea8`; ink `0xf8963f7860af7de9b94893edb9a3b5c155e1fc0c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-389813 | `0x8373c3aa04153abc0cfd28901c3c971a946994ab` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-389817 | `0x9acdc66459a323fbb6eb77c5aa96a30234fecf17` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-389823 | `0xd218103918c19d0a10cf35300e4cfafbd444c5fe` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-389825 | `0xf8599d58d1137fc56ecdd9c16ee139c8bdf96da1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-389827 | `0xfcd94770b95fd9cc67143132bb172eb17a0907fe` | ❓ Unverified |
 
 ## Audit Inventory
 

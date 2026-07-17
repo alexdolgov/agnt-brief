@@ -60,29 +60,29 @@ The protocol comprises 3 functional families. Its contracts share 10 common proj
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AccountableFixedTerm | unknown | ethereum | n/a | [`0x00e8fe...890e4c`](./contracts/ethereum-1/0x00e8fe8dc7e96dbc021b843ee8411f95c0890e4c/) | ✅ Audited |
-| AccountableOpenTerm | unknown | ethereum | n/a | [`0x616eca...2dd3b6`](./contracts/ethereum-1/0x616eca2310eb1a0bd620afbf916314f3702dd3b6/) | ✅ Audited |
-| AccountableYield | unknown | ethereum | n/a | [`0x1e05be...a689da`](./contracts/ethereum-1/0x1e05bedb3ea09a145bae551ec93b49385ba689da/) | ✅ Audited |
-| AsyncVaultFactory | unknown | ethereum | n/a | [`0x859a15...115dc4`](./contracts/ethereum-1/0x859a15b7c2b4fd0641424342130f2b073a115dc4/) | ✅ Audited |
-| AtomicBatcher | unknown | ethereum | n/a | [`0x35c717...c08777`](./contracts/ethereum-1/0x35c7171db2bd8164a36c3ae93ef9d4fb4cc08777/) | ✅ Audited |
-| DVNPublisherFactory | unknown | ethereum | n/a | [`0x0a2a9e...0d9f86`](./contracts/ethereum-1/0x0a2a9ecf70e6fec00a53d3ec000ac97f260d9f86/) | ✅ Audited |
-| DVNPublisherFactory | unknown | ethereum | n/a | [`0x24c27e...607c42`](./contracts/ethereum-1/0x24c27ea8965c70670857e9ec9f18e9eab7607c42/) | ✅ Audited |
-| EarlyExitOpenTerm | unknown | ethereum | n/a | [`0x66d6c3...8e819c`](./contracts/ethereum-1/0x66d6c3f32676a31f1b2e14f6bf6da9fc8d8e819c/) | ✅ Audited |
-| FeeManager | unknown | ethereum | n/a | [`0x0d2c8f...fc225b`](./contracts/ethereum-1/0x0d2c8f073c354e5b1306be1a31c36158bbfc225b/) | ✅ Audited |
-| FixedTermFactory | unknown | ethereum | n/a | [`0x2a7f22...1fc69a`](./contracts/ethereum-1/0x2a7f22f81a3d301b8f0eaf4f09a78558c91fc69a/) | ✅ Audited |
-| GlobalRegistry | unknown | ethereum | n/a | [`0x6436e1...c617af`](./contracts/ethereum-1/0x6436e1f2edc981b69a3b0f396924cec01dc617af/) | ✅ Audited |
-| OpenTermFactory | unknown | ethereum | n/a | [`0x4927ce...9ea181`](./contracts/ethereum-1/0x4927ce3402035b801a1beddc498b7fb2fe9ea181/) | ✅ Audited |
-| RewardsFactory | unknown | ethereum | n/a | [`0xa0ae7e...a031ef`](./contracts/ethereum-1/0xa0ae7ec6f93e55160f3f79840068549e8ca031ef/) | ✅ Audited |
-| YieldStrategyFactory | unknown | ethereum | n/a | [`0x9f1eb2...769518`](./contracts/ethereum-1/0x9f1eb2be7b6a7e611c270bbdb0a3358786769518/) | ✅ Audited |
+| AccountableFixedTerm | unknown | ethereum | n/a | [`0x00e8fe8dc7e96dbc021b843ee8411f95c0890e4c`](./contracts/ethereum-1/0x00e8fe8dc7e96dbc021b843ee8411f95c0890e4c/) | ✅ Audited |
+| AccountableOpenTerm | unknown | ethereum | n/a | [`0x616eca2310eb1a0bd620afbf916314f3702dd3b6`](./contracts/ethereum-1/0x616eca2310eb1a0bd620afbf916314f3702dd3b6/) | ✅ Audited |
+| AccountableYield | unknown | ethereum | n/a | [`0x1e05bedb3ea09a145bae551ec93b49385ba689da`](./contracts/ethereum-1/0x1e05bedb3ea09a145bae551ec93b49385ba689da/) | ✅ Audited |
+| AsyncVaultFactory | unknown | ethereum | n/a | [`0x859a15b7c2b4fd0641424342130f2b073a115dc4`](./contracts/ethereum-1/0x859a15b7c2b4fd0641424342130f2b073a115dc4/) | ✅ Audited |
+| AtomicBatcher | unknown | ethereum | n/a | [`0x35c7171db2bd8164a36c3ae93ef9d4fb4cc08777`](./contracts/ethereum-1/0x35c7171db2bd8164a36c3ae93ef9d4fb4cc08777/) | ✅ Audited |
+| DVNPublisherFactory | unknown | ethereum | n/a | [`0x0a2a9ecf70e6fec00a53d3ec000ac97f260d9f86`](./contracts/ethereum-1/0x0a2a9ecf70e6fec00a53d3ec000ac97f260d9f86/) | ✅ Audited |
+| DVNPublisherFactory | unknown | ethereum | n/a | [`0x24c27ea8965c70670857e9ec9f18e9eab7607c42`](./contracts/ethereum-1/0x24c27ea8965c70670857e9ec9f18e9eab7607c42/) | ✅ Audited |
+| EarlyExitOpenTerm | unknown | ethereum | n/a | [`0x66d6c3f32676a31f1b2e14f6bf6da9fc8d8e819c`](./contracts/ethereum-1/0x66d6c3f32676a31f1b2e14f6bf6da9fc8d8e819c/) | ✅ Audited |
+| FeeManager | unknown | ethereum | n/a | [`0x0d2c8f073c354e5b1306be1a31c36158bbfc225b`](./contracts/ethereum-1/0x0d2c8f073c354e5b1306be1a31c36158bbfc225b/) | ✅ Audited |
+| FixedTermFactory | unknown | ethereum | n/a | [`0x2a7f22f81a3d301b8f0eaf4f09a78558c91fc69a`](./contracts/ethereum-1/0x2a7f22f81a3d301b8f0eaf4f09a78558c91fc69a/) | ✅ Audited |
+| GlobalRegistry | unknown | ethereum | n/a | [`0x6436e1f2edc981b69a3b0f396924cec01dc617af`](./contracts/ethereum-1/0x6436e1f2edc981b69a3b0f396924cec01dc617af/) | ✅ Audited |
+| OpenTermFactory | unknown | ethereum | n/a | [`0x4927ce3402035b801a1beddc498b7fb2fe9ea181`](./contracts/ethereum-1/0x4927ce3402035b801a1beddc498b7fb2fe9ea181/) | ✅ Audited |
+| RewardsFactory | unknown | ethereum | n/a | [`0xa0ae7ec6f93e55160f3f79840068549e8ca031ef`](./contracts/ethereum-1/0xa0ae7ec6f93e55160f3f79840068549e8ca031ef/) | ✅ Audited |
+| YieldStrategyFactory | unknown | ethereum | n/a | [`0x9f1eb2be7b6a7e611c270bbdb0a3358786769518`](./contracts/ethereum-1/0x9f1eb2be7b6a7e611c270bbdb0a3358786769518/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (4)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| EarlyExitModule | unknown | ethereum | n/a | [`0xc778f3...e9b1f9`](./contracts/ethereum-1/0xc778f3a8bcdf9f8daee9d0e8508af83e90e9b1f9/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | ethereum | n/a | [`0x59b0b8...cc1725`](./contracts/ethereum-1/0x59b0b84371bb3261fad538c512efffc414cc1725/) | ⚠️ Unaudited |
-| HelloAccountable | unknown | ethereum | n/a | [`0x9e224e...d7b3b9`](./contracts/ethereum-1/0x9e224e411ee0d7f30d3643d2cc8bf05198d7b3b9/) | ⚠️ Unaudited |
-| HypernativePauseModule | unknown | ethereum | n/a | [`0x4e22a9...2dcc07`](./contracts/ethereum-1/0x4e22a922002494e0f016e96289e946b9f32dcc07/) | ⚠️ Unaudited |
+| EarlyExitModule | unknown | ethereum | n/a | [`0xc778f3a8bcdf9f8daee9d0e8508af83e90e9b1f9`](./contracts/ethereum-1/0xc778f3a8bcdf9f8daee9d0e8508af83e90e9b1f9/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | ethereum | n/a | [`0x59b0b84371bb3261fad538c512efffc414cc1725`](./contracts/ethereum-1/0x59b0b84371bb3261fad538c512efffc414cc1725/) | ⚠️ Unaudited |
+| HelloAccountable | unknown | ethereum | n/a | [`0x9e224e411ee0d7f30d3643d2cc8bf05198d7b3b9`](./contracts/ethereum-1/0x9e224e411ee0d7f30d3643d2cc8bf05198d7b3b9/) | ⚠️ Unaudited |
+| HypernativePauseModule | unknown | ethereum | n/a | [`0x4e22a922002494e0f016e96289e946b9f32dcc07`](./contracts/ethereum-1/0x4e22a922002494e0f016e96289e946b9f32dcc07/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -118,9 +118,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xc778f3...e9b1f9`](./contracts/ethereum-1/0xc778f3a8bcdf9f8daee9d0e8508af83e90e9b1f9/) | EarlyExitModule | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x9e224e...d7b3b9`](./contracts/ethereum-1/0x9e224e411ee0d7f30d3643d2cc8bf05198d7b3b9/) | HelloAccountable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x4e22a9...2dcc07`](./contracts/ethereum-1/0x4e22a922002494e0f016e96289e946b9f32dcc07/) | HypernativePauseModule | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc778f3a8bcdf9f8daee9d0e8508af83e90e9b1f9`](./contracts/ethereum-1/0xc778f3a8bcdf9f8daee9d0e8508af83e90e9b1f9/) | EarlyExitModule | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x9e224e411ee0d7f30d3643d2cc8bf05198d7b3b9`](./contracts/ethereum-1/0x9e224e411ee0d7f30d3643d2cc8bf05198d7b3b9/) | HelloAccountable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4e22a922002494e0f016e96289e946b9f32dcc07`](./contracts/ethereum-1/0x4e22a922002494e0f016e96289e946b9f32dcc07/) | HypernativePauseModule | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

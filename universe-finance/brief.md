@@ -60,7 +60,7 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UNTToken | unknown | ethereum | n/a | [`0xe4b593...88bad8`](./contracts/ethereum-1/0xe4b5936dce1820f84509c89cce0f28c87988bad8/) | ⚠️ Unaudited |
+| UNTToken | unknown | ethereum | n/a | [`0xe4b5936dce1820f84509c89cce0f28c87988bad8`](./contracts/ethereum-1/0xe4b5936dce1820f84509c89cce0f28c87988bad8/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -80,19 +80,19 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x139cfd...23901c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x208c89...cf22f3` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x28b15e...4ca85e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x41253e...e24956` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x607033...3d4df2` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x688036...e818c0` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x70d805...fec834` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xb76813...fd488c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xb7da56...eb1943` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc98e0b...3b5b09` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xddee5a...2eacff` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xde5988...55688d` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xe4b593...88bad8` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x139cfd6860d9cafebc225fe580b5d9220823901c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x208c89128a27b671adf86a2cfbfc549ec7cf22f3` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x28b15e041d2941c4e4b8ec1ef76a471ccc4ca85e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x41253e2711ab0996a5ae591e0b7ccaef4de24956` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x60703396632412c79d0a752ae805ba50593d4df2` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x688036f09ee42b1440343788347dc7c162e818c0` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x70d805501066027cbceffea0bdbdb0ec82fec834` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb76813018dc947645f675beadae864714afd488c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb7da5620ae8128890185ab0886545ffc92eb1943` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc98e0bb3e09e7b9f149bbb4309baf796a73b5b09` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xddee5ab8575192aa2915cdbf1264fb972b2eacff` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xde59881a9a6012f83196184dd1994cdac255688d` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xe4b5936dce1820f84509c89cce0f28c87988bad8` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -107,7 +107,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xe4b593...88bad8`](./contracts/ethereum-1/0xe4b5936dce1820f84509c89cce0f28c87988bad8/) | UNTToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe4b5936dce1820f84509c89cce0f28c87988bad8`](./contracts/ethereum-1/0xe4b5936dce1820f84509c89cce0f28c87988bad8/) | UNTToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

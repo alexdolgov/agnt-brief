@@ -89,16 +89,16 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BoringVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x699e04...976490`; ethereum `0x6bf340...1c3ddf` | ⚠️ Unaudited |
-| EVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x3b028b...73f228` | ⚠️ Unaudited |
-| EVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | berachain | n/a | `0xe932da...54c444` | ⚠️ Unaudited |
-| LendingVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x61a860...ae47d4` | ⚠️ Unaudited |
-| Vault | core_logic | non_address_book | non_address_book_inventory (excluded) | 4 | ethereum | n/a | 4 deployments: ethereum `0x7895a0...6f6396`; ethereum `0x7a12d4...37e428`; ethereum `0x936fac...d81bc7`; ethereum `0xce0b79...b574f3` | ⚠️ Unaudited |
-| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x097c94...602976`; base `0x71652d...9d82f2` | ⚠️ Unaudited |
-| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 3 | base | n/a | 4 deployments: base `0x166483...714228`; base `0x45b696...096d50`; base `0xb09f76...314f98`; base `0xfce206...e78f09` | ⚠️ Unaudited |
-| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | base | n/a | 3 deployments: base `0x652716...23ab20`; base `0xab4ac2...5c010c`; base `0xd51a05...471404` | ⚠️ Unaudited |
-| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 3 | base | n/a | 3 deployments: base `0x8092ca...6f88f0`; base `0xbc29b6...c8a6f2`; base `0xee6a60...c8b150` | ⚠️ Unaudited |
-| Vault0_2_1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x6a5ea3...8aa98a` | ⚠️ Unaudited |
+| BoringVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x699e04f98de2fc395a7dcbf36b48ec837a976490`; ethereum `0x6bf340db729d82af1f6443a0ea0d79647b1c3ddf` | ⚠️ Unaudited |
+| EVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x3b028b4b6c567ef5f8ca1144da4fbaa0d973f228` | ⚠️ Unaudited |
+| EVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | berachain | n/a | `0xe932da5a4d00536c224f8153f299cdcd8054c444` | ⚠️ Unaudited |
+| LendingVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x61a8606e04d350dfa1d1aaa68b37260746ae47d4` | ⚠️ Unaudited |
+| Vault | core_logic | non_address_book | non_address_book_inventory (excluded) | 4 | ethereum | n/a | 4 deployments: ethereum `0x7895a046b26cc07272b022a0c9bafc046e6f6396`; ethereum `0x7a12d4b719f5aa479ecd60defed909fb2a37e428`; ethereum `0x936facdf10c8c36294e7b9d28345255539d81bc7`; ethereum `0xce0b790ae0d8cf91e01f3fb69025e14569b574f3` | ⚠️ Unaudited |
+| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x097c94fbf0afa1b994af7ea13ecb5ab609602976`; base `0x71652d4898de9a7dd35e472a5fe4577ec69d82f2` | ⚠️ Unaudited |
+| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 3 | base | n/a | 4 deployments: base `0x16648324d68b86e341051767e749f9f074714228`; base `0x45b6969152a186bafc524048f36a160fac096d50`; base `0xb09f761cb13baca8ec087ac476647361b6314f98`; base `0xfce2064b4221c54651b21c868064a23695e78f09` | ⚠️ Unaudited |
+| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | base | n/a | 3 deployments: base `0x652716fad571f04d26a3c8ffd9e593f17123ab20`; base `0xab4ac28d10a4bc279ad073b1d74bfa0e385c010c`; base `0xd51a0523699c6f415ca6f9ebacb7e9d6c5471404` | ⚠️ Unaudited |
+| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 3 | base | n/a | 3 deployments: base `0x8092ca384d44260ea4feaf7457b629b8dc6f88f0`; base `0xbc29b6c682c447ddc3143b3d8ba781163fc8a6f2`; base `0xee6a60be216058afd7a0643795b4f1e197c8b150` | ⚠️ Unaudited |
+| Vault0_2_1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x6a5ea384e394083149ce39db29d5787a658aa98a` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

@@ -62,7 +62,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| NexoToken | unknown | ethereum | n/a | [`0xb62132...815206`](./contracts/ethereum-1/0xb62132e35a6c13ee1ee0f84dc5d40bad8d815206/) | ⚠️ Unaudited |
+| NexoToken | unknown | ethereum | n/a | [`0xb62132e35a6c13ee1ee0f84dc5d40bad8d815206`](./contracts/ethereum-1/0xb62132e35a6c13ee1ee0f84dc5d40bad8d815206/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,7 +93,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xb62132...815206`](./contracts/ethereum-1/0xb62132e35a6c13ee1ee0f84dc5d40bad8d815206/) | NexoToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb62132e35a6c13ee1ee0f84dc5d40bad8d815206`](./contracts/ethereum-1/0xb62132e35a6c13ee1ee0f84dc5d40bad8d815206/) | NexoToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

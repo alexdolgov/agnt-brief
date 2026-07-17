@@ -60,20 +60,20 @@ The protocol comprises 2 functional families. Contracts are linked by 14 cross-c
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| GIBXBar | unknown | bsc | n/a | [`0x63d275...608536`](./contracts/bsc-56/0x63d2756537ab0b10c1a3578b0755417e5f608536/) | ⚠️ Unaudited |
-| GIBXFactory | unknown | bsc | n/a | [`0x97bcd9...2066e8`](./contracts/bsc-56/0x97bcd9bb482144291d77ee53bfa99317a82066e8/) | ⚠️ Unaudited |
-| GIBXRouter | unknown | bsc | n/a | [`0x253fe2...e15aa5`](./contracts/bsc-56/0x253fe2c76728c98fc18bb52e9a0ba8522be15aa5/) | ⚠️ Unaudited |
-| GIBXSwapFee | unknown | bsc | n/a | [`0x10a55a...bf47d0`](./contracts/bsc-56/0x10a55ac513d202721be12eb40cd29b5b5dbf47d0/) | ⚠️ Unaudited |
-| GIBXToken | unknown | bsc | n/a | [`0x004eda...d7f620`](./contracts/bsc-56/0x004eda9c37660387e424872b0cf25323fdd7f620/) | ⚠️ Unaudited |
-| ILO | unknown | bsc | n/a | [`0x299cac...36005c`](./contracts/bsc-56/0x299cac915a93216c35b35786c70b7e523e36005c/) | ⚠️ Unaudited |
-| MasterChef | unknown | bsc | n/a | [`0x29e023...c95947`](./contracts/bsc-56/0x29e02337fba64d61239f1140389b371127c95947/) | ⚠️ Unaudited |
-| MasterChefTimelock | unknown | bsc | n/a | [`0x39f01e...49ed28`](./contracts/bsc-56/0x39f01e469c9a000b426e7196f9ff75f9ae49ed28/) | ⚠️ Unaudited |
-| Oracle | unknown | bsc | n/a | [`0x572138...556c2c`](./contracts/bsc-56/0x572138bbbbb851be13db130297b69c330e556c2c/) | ⚠️ Unaudited |
-| PoolChef | unknown | bsc | n/a | [`0x10ee03...6785df`](./contracts/bsc-56/0x10ee036c8dc47e74b063f56f750b5b22d76785df/) | ⚠️ Unaudited |
-| PoolChefTimelock | unknown | bsc | n/a | [`0x3d008d...9bb6c8`](./contracts/bsc-56/0x3d008d53e7061fdc4bfb256e6b868615dd9bb6c8/) | ⚠️ Unaudited |
-| PoolFactory | unknown | bsc | n/a | [`0x5d9f2c...f15465`](./contracts/bsc-56/0x5d9f2c265c57bb3d70636034f52f20f92ff15465/) | ⚠️ Unaudited |
-| SwapMining | unknown | bsc | n/a | [`0xc31a35...64ea1f`](./contracts/bsc-56/0xc31a355277228c1bf9a88599647faeaae664ea1f/) | ⚠️ Unaudited |
-| TokenLocker | unknown | bsc | n/a | [`0x26ce70...323b3c`](./contracts/bsc-56/0x26ce70a8404c390bdbb680a67c5b10a492323b3c/) | ⚠️ Unaudited |
+| GIBXBar | unknown | bsc | n/a | [`0x63d2756537ab0b10c1a3578b0755417e5f608536`](./contracts/bsc-56/0x63d2756537ab0b10c1a3578b0755417e5f608536/) | ⚠️ Unaudited |
+| GIBXFactory | unknown | bsc | n/a | [`0x97bcd9bb482144291d77ee53bfa99317a82066e8`](./contracts/bsc-56/0x97bcd9bb482144291d77ee53bfa99317a82066e8/) | ⚠️ Unaudited |
+| GIBXRouter | unknown | bsc | n/a | [`0x253fe2c76728c98fc18bb52e9a0ba8522be15aa5`](./contracts/bsc-56/0x253fe2c76728c98fc18bb52e9a0ba8522be15aa5/) | ⚠️ Unaudited |
+| GIBXSwapFee | unknown | bsc | n/a | [`0x10a55ac513d202721be12eb40cd29b5b5dbf47d0`](./contracts/bsc-56/0x10a55ac513d202721be12eb40cd29b5b5dbf47d0/) | ⚠️ Unaudited |
+| GIBXToken | unknown | bsc | n/a | [`0x004eda9c37660387e424872b0cf25323fdd7f620`](./contracts/bsc-56/0x004eda9c37660387e424872b0cf25323fdd7f620/) | ⚠️ Unaudited |
+| ILO | unknown | bsc | n/a | [`0x299cac915a93216c35b35786c70b7e523e36005c`](./contracts/bsc-56/0x299cac915a93216c35b35786c70b7e523e36005c/) | ⚠️ Unaudited |
+| MasterChef | unknown | bsc | n/a | [`0x29e02337fba64d61239f1140389b371127c95947`](./contracts/bsc-56/0x29e02337fba64d61239f1140389b371127c95947/) | ⚠️ Unaudited |
+| MasterChefTimelock | unknown | bsc | n/a | [`0x39f01e469c9a000b426e7196f9ff75f9ae49ed28`](./contracts/bsc-56/0x39f01e469c9a000b426e7196f9ff75f9ae49ed28/) | ⚠️ Unaudited |
+| Oracle | unknown | bsc | n/a | [`0x572138bbbbb851be13db130297b69c330e556c2c`](./contracts/bsc-56/0x572138bbbbb851be13db130297b69c330e556c2c/) | ⚠️ Unaudited |
+| PoolChef | unknown | bsc | n/a | [`0x10ee036c8dc47e74b063f56f750b5b22d76785df`](./contracts/bsc-56/0x10ee036c8dc47e74b063f56f750b5b22d76785df/) | ⚠️ Unaudited |
+| PoolChefTimelock | unknown | bsc | n/a | [`0x3d008d53e7061fdc4bfb256e6b868615dd9bb6c8`](./contracts/bsc-56/0x3d008d53e7061fdc4bfb256e6b868615dd9bb6c8/) | ⚠️ Unaudited |
+| PoolFactory | unknown | bsc | n/a | [`0x5d9f2c265c57bb3d70636034f52f20f92ff15465`](./contracts/bsc-56/0x5d9f2c265c57bb3d70636034f52f20f92ff15465/) | ⚠️ Unaudited |
+| SwapMining | unknown | bsc | n/a | [`0xc31a355277228c1bf9a88599647faeaae664ea1f`](./contracts/bsc-56/0xc31a355277228c1bf9a88599647faeaae664ea1f/) | ⚠️ Unaudited |
+| TokenLocker | unknown | bsc | n/a | [`0x26ce70a8404c390bdbb680a67c5b10a492323b3c`](./contracts/bsc-56/0x26ce70a8404c390bdbb680a67c5b10a492323b3c/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -105,20 +105,20 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x63d275...608536`](./contracts/bsc-56/0x63d2756537ab0b10c1a3578b0755417e5f608536/) | GIBXBar | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x97bcd9...2066e8`](./contracts/bsc-56/0x97bcd9bb482144291d77ee53bfa99317a82066e8/) | GIBXFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x253fe2...e15aa5`](./contracts/bsc-56/0x253fe2c76728c98fc18bb52e9a0ba8522be15aa5/) | GIBXRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x10a55a...bf47d0`](./contracts/bsc-56/0x10a55ac513d202721be12eb40cd29b5b5dbf47d0/) | GIBXSwapFee | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x004eda...d7f620`](./contracts/bsc-56/0x004eda9c37660387e424872b0cf25323fdd7f620/) | GIBXToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x299cac...36005c`](./contracts/bsc-56/0x299cac915a93216c35b35786c70b7e523e36005c/) | ILO | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x29e023...c95947`](./contracts/bsc-56/0x29e02337fba64d61239f1140389b371127c95947/) | MasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x39f01e...49ed28`](./contracts/bsc-56/0x39f01e469c9a000b426e7196f9ff75f9ae49ed28/) | MasterChefTimelock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x572138...556c2c`](./contracts/bsc-56/0x572138bbbbb851be13db130297b69c330e556c2c/) | Oracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x10ee03...6785df`](./contracts/bsc-56/0x10ee036c8dc47e74b063f56f750b5b22d76785df/) | PoolChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x3d008d...9bb6c8`](./contracts/bsc-56/0x3d008d53e7061fdc4bfb256e6b868615dd9bb6c8/) | PoolChefTimelock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x5d9f2c...f15465`](./contracts/bsc-56/0x5d9f2c265c57bb3d70636034f52f20f92ff15465/) | PoolFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xc31a35...64ea1f`](./contracts/bsc-56/0xc31a355277228c1bf9a88599647faeaae664ea1f/) | SwapMining | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x26ce70...323b3c`](./contracts/bsc-56/0x26ce70a8404c390bdbb680a67c5b10a492323b3c/) | TokenLocker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x63d2756537ab0b10c1a3578b0755417e5f608536`](./contracts/bsc-56/0x63d2756537ab0b10c1a3578b0755417e5f608536/) | GIBXBar | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x97bcd9bb482144291d77ee53bfa99317a82066e8`](./contracts/bsc-56/0x97bcd9bb482144291d77ee53bfa99317a82066e8/) | GIBXFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x253fe2c76728c98fc18bb52e9a0ba8522be15aa5`](./contracts/bsc-56/0x253fe2c76728c98fc18bb52e9a0ba8522be15aa5/) | GIBXRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x10a55ac513d202721be12eb40cd29b5b5dbf47d0`](./contracts/bsc-56/0x10a55ac513d202721be12eb40cd29b5b5dbf47d0/) | GIBXSwapFee | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x004eda9c37660387e424872b0cf25323fdd7f620`](./contracts/bsc-56/0x004eda9c37660387e424872b0cf25323fdd7f620/) | GIBXToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x299cac915a93216c35b35786c70b7e523e36005c`](./contracts/bsc-56/0x299cac915a93216c35b35786c70b7e523e36005c/) | ILO | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x29e02337fba64d61239f1140389b371127c95947`](./contracts/bsc-56/0x29e02337fba64d61239f1140389b371127c95947/) | MasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x39f01e469c9a000b426e7196f9ff75f9ae49ed28`](./contracts/bsc-56/0x39f01e469c9a000b426e7196f9ff75f9ae49ed28/) | MasterChefTimelock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x572138bbbbb851be13db130297b69c330e556c2c`](./contracts/bsc-56/0x572138bbbbb851be13db130297b69c330e556c2c/) | Oracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x10ee036c8dc47e74b063f56f750b5b22d76785df`](./contracts/bsc-56/0x10ee036c8dc47e74b063f56f750b5b22d76785df/) | PoolChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x3d008d53e7061fdc4bfb256e6b868615dd9bb6c8`](./contracts/bsc-56/0x3d008d53e7061fdc4bfb256e6b868615dd9bb6c8/) | PoolChefTimelock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x5d9f2c265c57bb3d70636034f52f20f92ff15465`](./contracts/bsc-56/0x5d9f2c265c57bb3d70636034f52f20f92ff15465/) | PoolFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xc31a355277228c1bf9a88599647faeaae664ea1f`](./contracts/bsc-56/0xc31a355277228c1bf9a88599647faeaae664ea1f/) | SwapMining | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x26ce70a8404c390bdbb680a67c5b10a492323b3c`](./contracts/bsc-56/0x26ce70a8404c390bdbb680a67c5b10a492323b3c/) | TokenLocker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

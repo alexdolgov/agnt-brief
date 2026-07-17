@@ -63,14 +63,14 @@ The protocol comprises 6 functional families. Its contracts share 2 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| bVault | core_logic | ethereum | n/a | 6 deployments: ethereum [`0x2c2327...568ea6`](./contracts/ethereum-1/0x2c23276107b45e64c8c59482f4a24f4f2e568ea6/); ethereum `0x378388...a35153`; ethereum `0x3fb6b0...15a2cc`; ethereum `0x750d30...7996d0`; ethereum `0x801690...85dc0e`; ethereum `0x8d9a39...ec6108` | ⚠️ Unaudited |
-| StrategyArpa | core_logic | ethereum | n/a | [`0xa3063c...63095e`](./contracts/ethereum-1/0xa3063cf3a934068cbe8f55212577a1ffbe63095e/) | ⚠️ Unaudited |
-| Bella | unknown | ethereum | n/a | [`0xa91ac6...a07e14`](./contracts/ethereum-1/0xa91ac63d040deb1b7a5e4d4134ad23eb0ba07e14/) | ⚠️ Unaudited |
-| MantaMintableERC20 | unknown | manta | n/a | 17 deployments: manta [`0x01d275...dbc02a`](./contracts/manta-169/0x01d27580c464d5b3b26f78bee12e684901dbc02a/); manta `0x078f71...90604b`; manta `0x091745...627442`; manta `0x0f52a5...3ccbb4`; manta `0x207d76...8a2181`; manta `0x4220e9...e8c8ff`; manta `0x6025f8...06cfb0`; manta `0x8d7090...ab566a`; manta `0x90e957...eb6917`; manta `0x916476...295f9a`; manta `0x975896...85eadd`; manta `0xab8653...fa5605`; manta `0xb01e11...7c5aa9`; manta `0xb385e5...88e1ce`; manta `0xbab1c5...59d154`; manta `0xd21237...0bc46d`; manta `0xe22e3d...7f0020` | ⚠️ Unaudited |
-| MantaMintableERC20WithBridgeFlag | operational_periphery | manta | n/a | [`0xbdad40...61fb07`](./contracts/manta-169/0xbdad407f77f44f7da6684b416b1951eca461fb07/) | ⚠️ Unaudited |
-| TokenPool | core_logic | ethereum | n/a | [`0xc93528...793d84`](./contracts/ethereum-1/0xc935285b0d88069305431dace0c3c01d7e793d84/) | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | ethereum | n/a | [`0x9f624b...980808`](./contracts/ethereum-1/0x9f624b25991b99d7b14d6740a9d581dd77980808/) | ⚠️ Unaudited |
-| WhiteList | unknown | ethereum | n/a | [`0x19f35c...8e493e`](./contracts/ethereum-1/0x19f35ce3c3875c120ab602386c8d6a59e88e493e/) | ⚠️ Unaudited |
+| bVault | core_logic | ethereum | n/a | 6 deployments: ethereum [`0x2c23276107b45e64c8c59482f4a24f4f2e568ea6`](./contracts/ethereum-1/0x2c23276107b45e64c8c59482f4a24f4f2e568ea6/); ethereum `0x378388aa69f3032fa46150221210c7fa70a35153`; ethereum `0x3fb6b07d77dace1ba6b5f6ab1d8668643d15a2cc`; ethereum `0x750d30a8259e63ed72a075f5b6630f08ce7996d0`; ethereum `0x8016907d54ed8bcf5da100c4d0eb434c0185dc0e`; ethereum `0x8d9a39706d3b66446a298f1ae735730257ec6108` | ⚠️ Unaudited |
+| StrategyArpa | core_logic | ethereum | n/a | [`0xa3063cf3a934068cbe8f55212577a1ffbe63095e`](./contracts/ethereum-1/0xa3063cf3a934068cbe8f55212577a1ffbe63095e/) | ⚠️ Unaudited |
+| Bella | unknown | ethereum | n/a | [`0xa91ac63d040deb1b7a5e4d4134ad23eb0ba07e14`](./contracts/ethereum-1/0xa91ac63d040deb1b7a5e4d4134ad23eb0ba07e14/) | ⚠️ Unaudited |
+| MantaMintableERC20 | unknown | manta | n/a | 17 deployments: manta [`0x01d27580c464d5b3b26f78bee12e684901dbc02a`](./contracts/manta-169/0x01d27580c464d5b3b26f78bee12e684901dbc02a/); manta `0x078f712f038a95beea94f036cadb49188a90604b`; manta `0x0917459e8ca2c01e49b1a83ae8acc6bd6f627442`; manta `0x0f52a51287f9b3894d73df05164d0ee2533ccbb4`; manta `0x207d76b287a566aba975700f103017fd568a2181`; manta `0x4220e94f507dc9e14169cfa0f2912463ace8c8ff`; manta `0x6025f893f192ccf4073665fc288ae5256e06cfb0`; manta `0x8d7090ddda057f48fdbbb2abcea22d1113ab566a`; manta `0x90e95735378a31bfad2dcd87128fbb80ffeb6917`; manta `0x91647632245cabf3d66121f86c387ae0ad295f9a`; manta `0x9758962a46ffbe3ae02dc5a850b0e5a3a985eadd`; manta `0xab8653fe4eaab3bcbab35ea84ecd600d5efa5605`; manta `0xb01e11b28a88ded4e5f467364455a757a47c5aa9`; manta `0xb385e52903c802b3bdca7c4d0c78460a8988e1ce`; manta `0xbab1c57ec0bb0ae81d948503e51d90166459d154`; manta `0xd212377f71f15a1b962c9265dc44fbceaf0bc46d`; manta `0xe22e3d44ea9fb0a87ea3f7a8f41d869c677f0020` | ⚠️ Unaudited |
+| MantaMintableERC20WithBridgeFlag | operational_periphery | manta | n/a | [`0xbdad407f77f44f7da6684b416b1951eca461fb07`](./contracts/manta-169/0xbdad407f77f44f7da6684b416b1951eca461fb07/) | ⚠️ Unaudited |
+| TokenPool | core_logic | ethereum | n/a | [`0xc935285b0d88069305431dace0c3c01d7e793d84`](./contracts/ethereum-1/0xc935285b0d88069305431dace0c3c01d7e793d84/) | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | ethereum | n/a | [`0x9f624b25991b99d7b14d6740a9d581dd77980808`](./contracts/ethereum-1/0x9f624b25991b99d7b14d6740a9d581dd77980808/) | ⚠️ Unaudited |
+| WhiteList | unknown | ethereum | n/a | [`0x19f35ce3c3875c120ab602386c8d6a59e88e493e`](./contracts/ethereum-1/0x19f35ce3c3875c120ab602386c8d6a59e88e493e/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -90,18 +90,18 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | manta | n/a | `0x2c9bfc...2d7c0f` | ❓ Unverified |
-| UnnamedContract | unknown | manta | n/a | `0x6731a6...dfde2a` | ❓ Unverified |
-| UnnamedContract | unknown | manta | n/a | `0x994be2...96f5a7` | ❓ Unverified |
-| UnnamedContract | unknown | manta | n/a | `0x9e98de...91ca35` | ❓ Unverified |
-| UnnamedContract | unknown | manta | n/a | `0xa91ac6...a07e14` | ❓ Unverified |
-| UnnamedContract | unknown | manta | n/a | `0xbe138a...966cc3` | ❓ Unverified |
-| UnnamedContract | unknown | manta | n/a | `0xbf2b95...23980c` | ❓ Unverified |
-| UnnamedContract | unknown | manta | n/a | `0xc865dd...8c1df9` | ❓ Unverified |
-| UnnamedContract | unknown | manta | n/a | `0xf0d110...edf61a` | ❓ Unverified |
-| UnnamedContract | unknown | zksync-era | n/a | `0xa91ac6...a07e14` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0x3bd7a1...b74d94` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0x9fb6ca...d2803c` | ❓ Unverified |
+| UnnamedContract | unknown | manta | n/a | `0x2c9bfca337bac7cbda3b80d1b2d10ed6482d7c0f` | ❓ Unverified |
+| UnnamedContract | unknown | manta | n/a | `0x6731a6a2586a0d555dcff7eb4d8fb7444bdfde2a` | ❓ Unverified |
+| UnnamedContract | unknown | manta | n/a | `0x994be2994471d5ef93c600cf78c2752c5e96f5a7` | ❓ Unverified |
+| UnnamedContract | unknown | manta | n/a | `0x9e98deac1a416c9ce3c892bd8eef586f1291ca35` | ❓ Unverified |
+| UnnamedContract | unknown | manta | n/a | `0xa91ac63d040deb1b7a5e4d4134ad23eb0ba07e14` | ❓ Unverified |
+| UnnamedContract | unknown | manta | n/a | `0xbe138ad5d41fdc392ae0b61b09421987c1966cc3` | ❓ Unverified |
+| UnnamedContract | unknown | manta | n/a | `0xbf2b951ae6af066a03dbfa52b1329704d923980c` | ❓ Unverified |
+| UnnamedContract | unknown | manta | n/a | `0xc865dd3421a6dd706688955fe727c802a98c1df9` | ❓ Unverified |
+| UnnamedContract | unknown | manta | n/a | `0xf0d1109e723cb06e400e2e57d0b6c7c32bedf61a` | ❓ Unverified |
+| UnnamedContract | unknown | zksync-era | n/a | `0xa91ac63d040deb1b7a5e4d4134ad23eb0ba07e14` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x3bd7a1d8c760d8be1bc57a3205cbffbadfb74d94` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x9fb6ca27d20e569e5c8fec359c9d33d468d2803c` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -115,13 +115,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x2c2327...568ea6`](./contracts/ethereum-1/0x2c23276107b45e64c8c59482f4a24f4f2e568ea6/) | bVault | core_logic | $269,135.76 | Verified native implementation with $269,135.76 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa3063c...63095e`](./contracts/ethereum-1/0xa3063cf3a934068cbe8f55212577a1ffbe63095e/) | StrategyArpa | core_logic | $3,487.71 | Verified native implementation with $3,487.71 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa91ac6...a07e14`](./contracts/ethereum-1/0xa91ac63d040deb1b7a5e4d4134ad23eb0ba07e14/) | Bella | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0x01d275...dbc02a`](./contracts/manta-169/0x01d27580c464d5b3b26f78bee12e684901dbc02a/) | MantaMintableERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0xbdad40...61fb07`](./contracts/manta-169/0xbdad407f77f44f7da6684b416b1951eca461fb07/) | MantaMintableERC20WithBridgeFlag | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc93528...793d84`](./contracts/ethereum-1/0xc935285b0d88069305431dace0c3c01d7e793d84/) | TokenPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x19f35c...8e493e`](./contracts/ethereum-1/0x19f35ce3c3875c120ab602386c8d6a59e88e493e/) | WhiteList | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x2c23276107b45e64c8c59482f4a24f4f2e568ea6`](./contracts/ethereum-1/0x2c23276107b45e64c8c59482f4a24f4f2e568ea6/) | bVault | core_logic | $269,135.76 | Verified native implementation with $269,135.76 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa3063cf3a934068cbe8f55212577a1ffbe63095e`](./contracts/ethereum-1/0xa3063cf3a934068cbe8f55212577a1ffbe63095e/) | StrategyArpa | core_logic | $3,487.71 | Verified native implementation with $3,487.71 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa91ac63d040deb1b7a5e4d4134ad23eb0ba07e14`](./contracts/ethereum-1/0xa91ac63d040deb1b7a5e4d4134ad23eb0ba07e14/) | Bella | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| manta | [`0x01d27580c464d5b3b26f78bee12e684901dbc02a`](./contracts/manta-169/0x01d27580c464d5b3b26f78bee12e684901dbc02a/) | MantaMintableERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| manta | [`0xbdad407f77f44f7da6684b416b1951eca461fb07`](./contracts/manta-169/0xbdad407f77f44f7da6684b416b1951eca461fb07/) | MantaMintableERC20WithBridgeFlag | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc935285b0d88069305431dace0c3c01d7e793d84`](./contracts/ethereum-1/0xc935285b0d88069305431dace0c3c01d7e793d84/) | TokenPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x19f35ce3c3875c120ab602386c8d6a59e88e493e`](./contracts/ethereum-1/0x19f35ce3c3875c120ab602386c8d6a59e88e493e/) | WhiteList | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

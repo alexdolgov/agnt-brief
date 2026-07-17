@@ -90,40 +90,40 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AaveV2StablecoinCellar | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-166296 | `0x7bad5d...34c0d5` | ⚠️ Unaudited |
-| AaveV3ATokenAdaptor | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | arbitrum | unit-166306 | `0x392b1e...f6e5a8` | ⚠️ Unaudited |
-| Cellar | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166276 | `0x05641a...f29652` | ⚠️ Unaudited |
-| CellarAdaptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166286 | `0x23a739...9bed38` | ⚠️ Unaudited |
-| CellarFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166278 | `0x09d158...3ad159` | ⚠️ Unaudited |
-| CellarInitializable | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166292 | `0x644d0f...5b4c24` | ⚠️ Unaudited |
-| CellarInitializableV2_1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166297 | `0x8d4b8f...aa8753` | ⚠️ Unaudited |
-| CellarInitializableV2_2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166274 | `0x0274a7...cdad36` | ⚠️ Unaudited |
-| CellarRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166282 | `0x15533b...cc4a58` | ⚠️ Unaudited |
-| CellarStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166275 | `0x0349b3...dd80d1` | ⚠️ Unaudited |
-| CellarWithOracleWithBalancerFlashLoans | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166279 | `0x0c190d...c7975c` | ⚠️ Unaudited |
-| CellarWithOracleWithBalancerFlashLoansWithMultiAssetDepositWithNativeSupport | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166284 | `0x19b8d8...fe597e` | ⚠️ Unaudited |
-| CellarWithShareLockPeriod | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166294 | `0x6c5104...208897` | ⚠️ Unaudited |
-| CosmosERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166300 | `0xa670d7...010fd1` | ⚠️ Unaudited |
-| CTokenAdaptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166287 | `0x26dba8...02f078` | ⚠️ Unaudited |
-| ERC20Adaptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166283 | `0x195e76...074693` | ⚠️ Unaudited |
-| ERC4626SharePriceOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166305 | `0xfc254a...dc71cc` | ⚠️ Unaudited |
-| EulerDebtTokenAdaptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166302 | `0xb079d4...eb1b38` | ⚠️ Unaudited |
-| EulerETokenAdaptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166290 | `0x4869a3...6cfb8d` | ⚠️ Unaudited |
-| FeesAndReserves | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166303 | `0xba7f27...987c84` | ⚠️ Unaudited |
-| FeesAndReservesAdaptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166293 | `0x647d26...5d8933` | ⚠️ Unaudited |
-| FTokenAdaptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166281 | `0x13c7da...50acb9` | ⚠️ Unaudited |
-| FTokenAdaptorV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166289 | `0x3bd96c...e1c5b0` | ⚠️ Unaudited |
-| MockERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166299 | `0xa5e3b2...966c2c` | ⚠️ Unaudited |
-| MockFTokenAdaptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166291 | `0x5d0282...538aa6` | ⚠️ Unaudited |
-| OneInchAdaptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166301 | `0xa99ae6...ece7de` | ⚠️ Unaudited |
-| PriceRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166273 | `0x01d2f9...a840a8` | ⚠️ Unaudited |
-| Registry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166288 | `0x2cbd27...050741` | ⚠️ Unaudited |
-| SwapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166277 | `0x070f43...032020` | ⚠️ Unaudited |
-| TimelockController | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-166298 | `0x97a23e...8d6aff` | ⚠️ Unaudited |
-| VestingSimple | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166295 | `0x797337...f9143a` | ⚠️ Unaudited |
-| VestingSimpleAdaptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166285 | `0x1eaa1a...faab60` | ⚠️ Unaudited |
-| WstEthExtension | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166304 | `0xd9fd7d...6a71c7` | ⚠️ Unaudited |
-| ZeroXAdaptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166280 | `0x1039a9...fe35ef` | ⚠️ Unaudited |
+| AaveV2StablecoinCellar | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-166296 | `0x7bad5df5e11151dc5ee1a648800057c5c934c0d5` | ⚠️ Unaudited |
+| AaveV3ATokenAdaptor | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | arbitrum | unit-166306 | `0x392b1e6905bb8449d26af701cdea6ff47bf6e5a8` | ⚠️ Unaudited |
+| Cellar | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166276 | `0x05641a27c82799aaf22b436f20a3110410f29652` | ⚠️ Unaudited |
+| CellarAdaptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166286 | `0x23a739cba6e29767082c26b3d9c421409d9bed38` | ⚠️ Unaudited |
+| CellarFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166278 | `0x09d158103a311471d8f2cb2a879a54735b3ad159` | ⚠️ Unaudited |
+| CellarInitializable | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166292 | `0x644d0f801521810530b60cc338931d835b5b4c24` | ⚠️ Unaudited |
+| CellarInitializableV2_1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166297 | `0x8d4b8f3576c988d0764ae61963366ca044aa8753` | ⚠️ Unaudited |
+| CellarInitializableV2_2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166274 | `0x0274a704a6d9129f90a62ddc6f6024b33ecdad36` | ⚠️ Unaudited |
+| CellarRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166282 | `0x15533ba95b85da500e1faa444871d4760ecc4a58` | ⚠️ Unaudited |
+| CellarStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166275 | `0x0349b3c56adb9e39b5d75fc1df52eee313dd80d1` | ⚠️ Unaudited |
+| CellarWithOracleWithBalancerFlashLoans | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166279 | `0x0c190ded9be5f512bd72827bdad4003e9cc7975c` | ⚠️ Unaudited |
+| CellarWithOracleWithBalancerFlashLoansWithMultiAssetDepositWithNativeSupport | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166284 | `0x19b8d8fc682fc56fbb42653f68c7d48dd3fe597e` | ⚠️ Unaudited |
+| CellarWithShareLockPeriod | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166294 | `0x6c51041a91c91c86f3f08a72cb4d3f67f1208897` | ⚠️ Unaudited |
+| CosmosERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166300 | `0xa670d7237398238de01267472c6f13e5b8010fd1` | ⚠️ Unaudited |
+| CTokenAdaptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166287 | `0x26dba82495f6189dde7648ae88bead46c402f078` | ⚠️ Unaudited |
+| ERC20Adaptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166283 | `0x195e769df61f201e2161f575302edb3ac7074693` | ⚠️ Unaudited |
+| ERC4626SharePriceOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166305 | `0xfc254a090af27a94d00677191955f7713fdc71cc` | ⚠️ Unaudited |
+| EulerDebtTokenAdaptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166302 | `0xb079d4ccf8557b0dd9ab829eedb62fa70feb1b38` | ⚠️ Unaudited |
+| EulerETokenAdaptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166290 | `0x4869a3c6642c824d9de238ebbe6e4424086cfb8d` | ⚠️ Unaudited |
+| FeesAndReserves | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166303 | `0xba7f27d2893a908cceb08bc9952eb1ba5a987c84` | ⚠️ Unaudited |
+| FeesAndReservesAdaptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166293 | `0x647d264d800a2461e594796af61a39b7735d8933` | ⚠️ Unaudited |
+| FTokenAdaptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166281 | `0x13c7da01977e6de1dfa8b135da34bd569650acb9` | ⚠️ Unaudited |
+| FTokenAdaptorV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166289 | `0x3bd96cb052d8e7162edc929b254c63596ae1c5b0` | ⚠️ Unaudited |
+| MockERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166299 | `0xa5e3b273ecbfe90a9abb8824974343d46a966c2c` | ⚠️ Unaudited |
+| MockFTokenAdaptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166291 | `0x5d02823c235048236a293f3d6c634bbb70538aa6` | ⚠️ Unaudited |
+| OneInchAdaptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166301 | `0xa99ae6a11db22ff50bb17ca24c49a2bad8ece7de` | ⚠️ Unaudited |
+| PriceRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166273 | `0x01d2f9353393a2e5854c87d816bc4d5965a840a8` | ⚠️ Unaudited |
+| Registry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166288 | `0x2cbd27e034fee53f79b607430da7771b22050741` | ⚠️ Unaudited |
+| SwapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166277 | `0x070f43e613b33ad3efc6b2928f3c01d58d032020` | ⚠️ Unaudited |
+| TimelockController | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-166298 | `0x97a23e208d9de5546c3dfac655cb88288c8d6aff` | ⚠️ Unaudited |
+| VestingSimple | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166295 | `0x797337de25b8a2649ca08a25b701dee2aef9143a` | ⚠️ Unaudited |
+| VestingSimpleAdaptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166285 | `0x1eaa1a100a460f46a2032f0402bc01fe89faab60` | ⚠️ Unaudited |
+| WstEthExtension | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166304 | `0xd9fd7dd08b3ffc53323db881661367e0d16a71c7` | ⚠️ Unaudited |
+| ZeroXAdaptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-166280 | `0x1039a9b61dff6a3fb8dbf4e924aa749e5cfe35ef` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

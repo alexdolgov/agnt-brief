@@ -59,9 +59,9 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BrightRiskToken | token | ethereum | n/a | [`0xa4b032...48fd04`](./contracts/ethereum-1/0xa4b032895bcb6b11ec7d21380f557919d448fd04/) | ✅ Audited |
-| BrightStaking | unknown | ethereum | n/a | [`0x1eb7c3...c6cf5a`](./contracts/ethereum-1/0x1eb7c3cbac942983b80b384a978946dcedc6cf5a/) | ✅ Audited |
-| BRIGHTToken | token | ethereum | n/a | [`0xbeab71...d3af55`](./contracts/ethereum-1/0xbeab712832112bd7664226db7cd025b153d3af55/) | ✅ Audited |
+| BrightRiskToken | token | ethereum | n/a | [`0xa4b032895bcb6b11ec7d21380f557919d448fd04`](./contracts/ethereum-1/0xa4b032895bcb6b11ec7d21380f557919d448fd04/) | ✅ Audited |
+| BrightStaking | unknown | ethereum | n/a | [`0x1eb7c3cbac942983b80b384a978946dcedc6cf5a`](./contracts/ethereum-1/0x1eb7c3cbac942983b80b384a978946dcedc6cf5a/) | ✅ Audited |
+| BRIGHTToken | token | ethereum | n/a | [`0xbeab712832112bd7664226db7cd025b153d3af55`](./contracts/ethereum-1/0xbeab712832112bd7664226db7cd025b153d3af55/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 

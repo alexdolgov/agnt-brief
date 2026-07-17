@@ -59,7 +59,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| TiziDollar | unknown | base | n/a | [`0x469bbd...2c27e6`](./contracts/base-8453/0x469bbd88eea8a2d9a5c6c82d9890cf60962c27e6/) | ✅ Audited |
+| TiziDollar | unknown | base | n/a | [`0x469bbd88eea8a2d9a5c6c82d9890cf60962c27e6`](./contracts/base-8453/0x469bbd88eea8a2d9a5c6c82d9890cf60962c27e6/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 

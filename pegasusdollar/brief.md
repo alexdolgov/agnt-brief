@@ -79,7 +79,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | cronos | n/a | 7 deployments: cronos `0x43713f...a44f6b`; cronos `0x7614a4...1e83cd`; cronos `0x8efbaa...e2aa3b`; cronos `0x97749c...ed7656`; cronos `0xb8df27...9f4878`; cronos `0xbbd465...2fe1c5`; cronos `0xdd403d...6240c6` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | 7 deployments: cronos `0x43713f13a350d104319126c13cd7402822a44f6b`; cronos `0x7614a4ceb3acdfcd4841d7bd76c30e7a401e83cd`; cronos `0x8efbaa6080412d7832025b03b9239d0be1e2aa3b`; cronos `0x97749c9b61f878a880dfe312d2594ae07aed7656`; cronos `0xb8df27c687c6af9afe845a2afad2d01e199f4878`; cronos `0xbbd4650eea85f9dbd83d6fb2a6e8b3d8f32fe1c5`; cronos `0xdd403db142a320261858840103b907c2486240c6` | ❓ Unverified |
 
 ## Audit Inventory
 

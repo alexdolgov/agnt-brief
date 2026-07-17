@@ -58,15 +58,15 @@ The protocol comprises 8 functional families. Its contracts share 4 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Asset | unknown | base | n/a | 5 deployments: base [`0x127fce...e49dec`](./contracts/base-8453/0x127fce29004451beb4e62869adac635353e49dec/); base `0x1dd576...3bec6d`; base `0x38c9d8...a7d731`; base `0x57d00d...968c39`; base `0x65c252...45d8a9` | ✅ Audited |
+| Asset | unknown | base | n/a | 5 deployments: base [`0x127fce29004451beb4e62869adac635353e49dec`](./contracts/base-8453/0x127fce29004451beb4e62869adac635353e49dec/); base `0x1dd5763e0014b2f8dee9413c88fe3c1f6d3bec6d`; base `0x38c9d84474fd89fe49e4f3a01408ba15a6a7d731`; base `0x57d00df5d2bb73e709f6cf0e7d84257dd6968c39`; base `0x65c2521bf6af79d53161eeacba58cd2d0045d8a9` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Token | token | base | n/a | [`0x1f23b7...aebad8`](./contracts/base-8453/0x1f23b787053802108fed5b67cf703f0778aebad8/) | ⚠️ Unaudited |
-| SkimmableAsset | unknown | base | n/a | 2 deployments: base [`0x2bcaa7...ec0a6a`](./contracts/base-8453/0x2bcaa79ab66af39a1d1d83749407845394ec0a6a/); base `0x2f4588...6ebff2` | ⚠️ Unaudited |
-| StakedDistributor | operational_periphery | base | n/a | 3 deployments: base [`0x62087a...5880c5`](./contracts/base-8453/0x62087a1ea1fab540e3da3c5ddd0c8721035880c5/); base `0xa5895b...344333`; base `0xb6d740...7f2832` | ⚠️ Unaudited |
+| Token | token | base | n/a | [`0x1f23b787053802108fed5b67cf703f0778aebad8`](./contracts/base-8453/0x1f23b787053802108fed5b67cf703f0778aebad8/) | ⚠️ Unaudited |
+| SkimmableAsset | unknown | base | n/a | 2 deployments: base [`0x2bcaa79ab66af39a1d1d83749407845394ec0a6a`](./contracts/base-8453/0x2bcaa79ab66af39a1d1d83749407845394ec0a6a/); base `0x2f458884e0015d1bb936b9a553baf9d5b96ebff2` | ⚠️ Unaudited |
+| StakedDistributor | operational_periphery | base | n/a | 3 deployments: base [`0x62087a1ea1fab540e3da3c5ddd0c8721035880c5`](./contracts/base-8453/0x62087a1ea1fab540e3da3c5ddd0c8721035880c5/); base `0xa5895b5ff267041b968aa82d37a141f08f344333`; base `0xb6d7406f2e4b2680ffcca3ad3c3fab5ee07f2832` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -86,12 +86,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | base | n/a | `0x0a6156...e48fb4` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x37917e...383eda` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x515829...521ba0` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x66a55a...8a82e0` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x6ba897...2ecaf2` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xb11f5e...8f9a9c` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x0a6156f86c3b1eccdf51a3217a2d359e3de48fb4` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x37917e5de1e5c4a616a895f296de8d8333383eda` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x515829865242ab88c3f4825289dedcc216521ba0` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x66a55ad2c419147315428998377cb351468a82e0` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x6ba897e91732c8d2f66b94f62515790e362ecaf2` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xb11f5e642ef4cf963e45a83e55a8fedcd58f9a9c` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -105,9 +105,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x1f23b7...aebad8`](./contracts/base-8453/0x1f23b787053802108fed5b67cf703f0778aebad8/) | Token | token | $49,223.00 | Verified native implementation with $49,223.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x2bcaa7...ec0a6a`](./contracts/base-8453/0x2bcaa79ab66af39a1d1d83749407845394ec0a6a/) | SkimmableAsset | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x62087a...5880c5`](./contracts/base-8453/0x62087a1ea1fab540e3da3c5ddd0c8721035880c5/) | StakedDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x1f23b787053802108fed5b67cf703f0778aebad8`](./contracts/base-8453/0x1f23b787053802108fed5b67cf703f0778aebad8/) | Token | token | $49,223.00 | Verified native implementation with $49,223.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x2bcaa79ab66af39a1d1d83749407845394ec0a6a`](./contracts/base-8453/0x2bcaa79ab66af39a1d1d83749407845394ec0a6a/) | SkimmableAsset | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x62087a1ea1fab540e3da3c5ddd0c8721035880c5`](./contracts/base-8453/0x62087a1ea1fab540e3da3c5ddd0c8721035880c5/) | StakedDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

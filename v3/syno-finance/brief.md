@@ -90,51 +90,51 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AggregatorV3SynonymPriceSource | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x3e0cbe...2f07f4` | ⚠️ Unaudited |
-| AssetRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x6510d7...087631` | ⚠️ Unaudited |
-| ChainedPriceSource | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0671fe...5eda58` | ⚠️ Unaudited |
-| CommonAccountingLogic | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-257823 | `0x6e0e8c...cf4d04` | ⚠️ Unaudited |
-| CommonAccountingLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x00187b...742c3a` | ⚠️ Unaudited |
-| CommonOptimisticFinalityLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x09f81d...4d9285` | ⚠️ Unaudited |
-| Hub | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0c01ce...858509` | ⚠️ Unaudited |
-| HubAccountingLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x1c59ad...492649` | ⚠️ Unaudited |
-| HubHelperViews | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0a4740...f3f0d2` | ⚠️ Unaudited |
-| HubOptimisticFinalityLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x09fc4a...c4ae12` | ⚠️ Unaudited |
-| HubPriceUtilities | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x01056a...1d56af` | ⚠️ Unaudited |
-| HubStorage | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x47e96f...f12f36` | ⚠️ Unaudited |
-| InterestLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x63f15c...f40f71` | ⚠️ Unaudited |
-| LiquidationCalculator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x76e766...4dbcf3` | ⚠️ Unaudited |
-| Liquidator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x1f578c...8f6aba` | ⚠️ Unaudited |
-| LiquidatorFlashLoan | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x1849cc...b1a3de` | ⚠️ Unaudited |
-| MigrationLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x08913a...4772dc` | ⚠️ Unaudited |
-| MoneyMarketSynoDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x0d5d40...a1eb1c` | ⚠️ Unaudited |
-| PiecewiseInterestRate | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x099c0e...cb202c` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x33dd40...d0e84b` | ⚠️ Unaudited |
-| PythSynonymPriceSource | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x48a7cb...9b82e0` | ⚠️ Unaudited |
-| rCT | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0xe29578...f02443` | ⚠️ Unaudited |
-| RewardAggregator | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x2f81d5...f3be61` | ⚠️ Unaudited |
-| RewardsDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x02dffe...3fa40d` | ⚠️ Unaudited |
-| Spoke | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2cb913...4d49c3` | ⚠️ Unaudited |
-| Spoke | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-257827 | `0xc2ed21...30a246` | ⚠️ Unaudited |
-| Spoke | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-257828 | `0xdb4b82...96887d` | ⚠️ Unaudited |
-| SpokeAccountingLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x09ad4b...19bf2a` | ⚠️ Unaudited |
-| SpokeOptimisticFinalityLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x350e13...35312d` | ⚠️ Unaudited |
-| SpokeOptimisticFinalityLogic | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-257829 | `0xe29578...f02443` | ⚠️ Unaudited |
-| sSYNO | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0db592...408bbc` | ⚠️ Unaudited |
-| SSynoSynoDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x047dee...673408` | ⚠️ Unaudited |
-| SYNO | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x14ca27...40075e` | ⚠️ Unaudited |
-| SynoBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x3008ba...d7a387` | ⚠️ Unaudited |
-| SynonymPriceOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x091fa3...76176e` | ⚠️ Unaudited |
-| TokenBridgeUtilities | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0ad785...7475fa` | ⚠️ Unaudited |
-| TokenConverter | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x67de83...0c2aaa` | ⚠️ Unaudited |
-| tSYNO | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0xc2ed21...30a246` | ⚠️ Unaudited |
-| TunnelMessageBuilder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x411ac3...d7f0c5` | ⚠️ Unaudited |
-| ValidationLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x03523d...3596df` | ⚠️ Unaudited |
-| vlSYNO | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x1380a5...69e44f` | ⚠️ Unaudited |
-| VlSynoSynoDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0d7720...66bd13` | ⚠️ Unaudited |
-| WormholeRelayer | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0xe291a3...aadf70` | ⚠️ Unaudited |
-| WormholeTunnel | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x03e4c6...766f90` | ⚠️ Unaudited |
-| WormholeTunnel | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-257818 | `0x54c767...a14599` | ⚠️ Unaudited |
+| AggregatorV3SynonymPriceSource | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x3e0cbe3860c54038efa91d80ce62ec82ca2f07f4` | ⚠️ Unaudited |
+| AssetRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x6510d7705df7ad4923b9699a1af4c72894087631` | ⚠️ Unaudited |
+| ChainedPriceSource | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0671fef91a8ee34c1b5eb5e98fa90063105eda58` | ⚠️ Unaudited |
+| CommonAccountingLogic | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-257823 | `0x6e0e8c78d7b894beff66ade8b27b089a53cf4d04` | ⚠️ Unaudited |
+| CommonAccountingLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x00187bac5bc1097c4e65b47da8978b3e1f742c3a` | ⚠️ Unaudited |
+| CommonOptimisticFinalityLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x09f81ddd95bb0689fa3f43c9128d01b7b54d9285` | ⚠️ Unaudited |
+| Hub | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0c01cecf2c8fa6cf6cdedfe2568fdbbf62858509` | ⚠️ Unaudited |
+| HubAccountingLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x1c59ad468dfac8528036c5a5b9c306ae13492649` | ⚠️ Unaudited |
+| HubHelperViews | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0a47405de652fce6b34d919e1bb06e5bfef3f0d2` | ⚠️ Unaudited |
+| HubOptimisticFinalityLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x09fc4a4856cf4fc41b4f39559f382f81d0c4ae12` | ⚠️ Unaudited |
+| HubPriceUtilities | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x01056ae89c53de4bbd6db29c0e9d9d08391d56af` | ⚠️ Unaudited |
+| HubStorage | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x47e96ffedb40b1b4f721d5f56d91cf3a54f12f36` | ⚠️ Unaudited |
+| InterestLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x63f15cbf4dc0f41d0d16a89abcbb01308ff40f71` | ⚠️ Unaudited |
+| LiquidationCalculator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x76e766336068b0f699d24002c368a4891a4dbcf3` | ⚠️ Unaudited |
+| Liquidator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x1f578c4bc4d4f43902f24feda90e430f778f6aba` | ⚠️ Unaudited |
+| LiquidatorFlashLoan | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x1849cc9ecfcaa09ba4279a283745c9f6a2b1a3de` | ⚠️ Unaudited |
+| MigrationLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x08913a7dedf488ab91a9dbbe2fc03020484772dc` | ⚠️ Unaudited |
+| MoneyMarketSynoDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x0d5d409afc67a2715f3e61968ff3b0e608a1eb1c` | ⚠️ Unaudited |
+| PiecewiseInterestRate | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x099c0e514129a94d26decba743ea293ebbcb202c` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x33dd4040ab48ffbf5b208909efe5ee301ed0e84b` | ⚠️ Unaudited |
+| PythSynonymPriceSource | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x48a7cbc91354333eb1c0d54c3d2f149f9d9b82e0` | ⚠️ Unaudited |
+| rCT | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0xe29578c5aef73b045d0baabee52b223d5cf02443` | ⚠️ Unaudited |
+| RewardAggregator | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x2f81d55a3f306c11a640bad7ee0f051eaaf3be61` | ⚠️ Unaudited |
+| RewardsDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x02dffe40fafa4dcd8867240610c88619d93fa40d` | ⚠️ Unaudited |
+| Spoke | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2cb91374624a5ec81ef205db379861b7154d49c3` | ⚠️ Unaudited |
+| Spoke | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-257827 | `0xc2ed21709d6d8d8ba24e9b1e8165604f6130a246` | ⚠️ Unaudited |
+| Spoke | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-257828 | `0xdb4b829d5596405023e7efbcfdb4ce156096887d` | ⚠️ Unaudited |
+| SpokeAccountingLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x09ad4b3bb2f0a24515391377a69b7fb2a919bf2a` | ⚠️ Unaudited |
+| SpokeOptimisticFinalityLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x350e13f38b0665f776545d83bc38d7ab1e35312d` | ⚠️ Unaudited |
+| SpokeOptimisticFinalityLogic | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-257829 | `0xe29578c5aef73b045d0baabee52b223d5cf02443` | ⚠️ Unaudited |
+| sSYNO | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0db592b2cc4b05cffa6224a4ee04c9d168408bbc` | ⚠️ Unaudited |
+| SSynoSynoDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x047deeb2fac901442a0e8535bb08f59390673408` | ⚠️ Unaudited |
+| SYNO | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x14ca27a509397323d2d6c2f84b7abc65f240075e` | ⚠️ Unaudited |
+| SynoBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x3008bae2e2e3d41d58710ff364d101d6dfd7a387` | ⚠️ Unaudited |
+| SynonymPriceOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x091fa3704f80f60cac654d15cf14e5c51a76176e` | ⚠️ Unaudited |
+| TokenBridgeUtilities | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0ad78518eef039d97fa6523c215bd7aded7475fa` | ⚠️ Unaudited |
+| TokenConverter | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x67de8310f082cc3e7fffdd4e13d39312860c2aaa` | ⚠️ Unaudited |
+| tSYNO | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0xc2ed21709d6d8d8ba24e9b1e8165604f6130a246` | ⚠️ Unaudited |
+| TunnelMessageBuilder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x411ac3fadf6f428efc40eabf5e85eba6ded7f0c5` | ⚠️ Unaudited |
+| ValidationLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x03523dcd92207880ff66ead9ee63c5000b3596df` | ⚠️ Unaudited |
+| vlSYNO | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x1380a59ce7adaf50d351f750a3fb4747a469e44f` | ⚠️ Unaudited |
+| VlSynoSynoDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0d77203f67aac70450239dcb58bb962adf66bd13` | ⚠️ Unaudited |
+| WormholeRelayer | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0xe291a3a0466d2aa189f6c773701fdf391daadf70` | ⚠️ Unaudited |
+| WormholeTunnel | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x03e4c6bc38264f993759c09678ebceb91c766f90` | ⚠️ Unaudited |
+| WormholeTunnel | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-257818 | `0x54c767a5198fdca089112026285f333c0fa14599` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -154,7 +154,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-257821 | `0x67de83...0c2aaa` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-257821 | `0x67de8310f082cc3e7fffdd4e13d39312860c2aaa` | ❓ Unverified |
 
 ## Audit Inventory
 

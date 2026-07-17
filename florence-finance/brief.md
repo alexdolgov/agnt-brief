@@ -57,35 +57,35 @@ The protocol comprises 3 functional families. Its contracts share 4 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| FlorenceFinanceMediciToken | unknown | ethereum | n/a | [`0x0c3fec...7c2a14`](./contracts/ethereum-1/0x0c3fec55589904256f65e584fd57cd2dba7c2a14/) | ✅ Audited |
-| FlorenceFinanceMediciTokenArbitrum | unknown | arbitrum | n/a | [`0x3269a3...b0d848`](./contracts/arbitrum-42161/0x3269a3c00ab86c753856fd135d97b87facb0d848/) | ✅ Audited |
-| FlorinToken | unknown | arbitrum | n/a | [`0x1626bc...f64a42`](./contracts/arbitrum-42161/0x1626bce314591fb105a82b44e0953ec182f64a42/) | ✅ Audited |
-| FlorinTokenArbitrum | unknown | arbitrum | n/a | [`0x25f1f0...6db2d9`](./contracts/arbitrum-42161/0x25f1f0435311e4033912b18607ab19ca4c6db2d9/) | ✅ Audited |
-| FlorinTreasury | unknown | arbitrum | n/a | [`0x547e9a...c69b26`](./contracts/arbitrum-42161/0x547e9aa53d5d2d5181e42896c696e02558c69b26/) | ✅ Audited |
-| LoanVault | unknown | ethereum | n/a | [`0x084b9e...6cf6cf`](./contracts/ethereum-1/0x084b9e9bcb64533b59a2c72a4d42f2408f6cf6cf/) | ✅ Audited |
+| FlorenceFinanceMediciToken | unknown | ethereum | n/a | [`0x0c3fec55589904256f65e584fd57cd2dba7c2a14`](./contracts/ethereum-1/0x0c3fec55589904256f65e584fd57cd2dba7c2a14/) | ✅ Audited |
+| FlorenceFinanceMediciTokenArbitrum | unknown | arbitrum | n/a | [`0x3269a3c00ab86c753856fd135d97b87facb0d848`](./contracts/arbitrum-42161/0x3269a3c00ab86c753856fd135d97b87facb0d848/) | ✅ Audited |
+| FlorinToken | unknown | arbitrum | n/a | [`0x1626bce314591fb105a82b44e0953ec182f64a42`](./contracts/arbitrum-42161/0x1626bce314591fb105a82b44e0953ec182f64a42/) | ✅ Audited |
+| FlorinTokenArbitrum | unknown | arbitrum | n/a | [`0x25f1f0435311e4033912b18607ab19ca4c6db2d9`](./contracts/arbitrum-42161/0x25f1f0435311e4033912b18607ab19ca4c6db2d9/) | ✅ Audited |
+| FlorinTreasury | unknown | arbitrum | n/a | [`0x547e9aa53d5d2d5181e42896c696e02558c69b26`](./contracts/arbitrum-42161/0x547e9aa53d5d2d5181e42896c696e02558c69b26/) | ✅ Audited |
+| LoanVault | unknown | ethereum | n/a | [`0x084b9e9bcb64533b59a2c72a4d42f2408f6cf6cf`](./contracts/ethereum-1/0x084b9e9bcb64533b59a2c72a4d42f2408f6cf6cf/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (18)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| EURSToken | unknown | ethereum | n/a | [`0xdb25f2...807ad8`](./contracts/ethereum-1/0xdb25f211ab05b1c97d595516f45794528a807ad8/) | ⚠️ Unaudited |
-| FFML2 | unknown | arbitrum | n/a | [`0x10e938...6fc03e`](./contracts/arbitrum-42161/0x10e938b39b24aaf6e8d3c9987ba32244186fc03e/) | ⚠️ Unaudited |
-| FlorinStaking | unknown | arbitrum | n/a | [`0x026ca4...30365a`](./contracts/arbitrum-42161/0x026ca46939373a3eab19ea3d3da0ac54af30365a/) | ⚠️ Unaudited |
-| Funding | unknown | ethereum | n/a | [`0x220ffa...0c565c`](./contracts/ethereum-1/0x220ffa53dcf7fb93770f164c6b156aea2d0c565c/) | ⚠️ Unaudited |
-| GHIToken | unknown | ethereum | n/a | [`0x4be1f1...2faf4a`](./contracts/ethereum-1/0x4be1f1026fb4280f1ab3c35e16a38fb13c2faf4a/) | ⚠️ Unaudited |
-| L1CustomGateway | unknown | ethereum | n/a | [`0x20c9d2...5354c0`](./contracts/ethereum-1/0x20c9d24edcf5cc943be6ec55cbe786abf05354c0/) | ⚠️ Unaudited |
-| L1ERC20Gateway | unknown | ethereum | n/a | [`0x553524...93a5db`](./contracts/ethereum-1/0x553524e576a0e92bec7cc24843c04bf51493a5db/) | ⚠️ Unaudited |
-| L1GatewayRouter | unknown | ethereum | n/a | [`0x72ce9c...7031ef`](./contracts/ethereum-1/0x72ce9c846789fdb6fc1f34ac4ad25dd9ef7031ef/) | ⚠️ Unaudited |
-| LendingPool | unknown | ethereum | n/a | [`0x0e2388...c1babc`](./contracts/ethereum-1/0x0e23889cfe7d54f15efcb5a465fb46191ec1babc/) | ⚠️ Unaudited |
-| LinearStaking | unknown | ethereum | n/a | [`0x8e8d5b...bf797d`](./contracts/ethereum-1/0x8e8d5b1888d55d12522677b298dd89f2b6bf797d/) | ⚠️ Unaudited |
-| LoanVaultRegistry | unknown | arbitrum | n/a | [`0x19a210...227ce3`](./contracts/arbitrum-42161/0x19a2106475b29f0ff5053ae026190ce7a9227ce3/) | ⚠️ Unaudited |
-| MediciToken | unknown | ethereum | n/a | [`0x96f509...56eafc`](./contracts/ethereum-1/0x96f5094998a20008839487369012bb4d3c56eafc/) | ⚠️ Unaudited |
-| PeriodStaking | unknown | ethereum | n/a | [`0x6935fd...41c9f8`](./contracts/ethereum-1/0x6935fd0ea533f0bd00313e21ba6cc00a3941c9f8/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | arbitrum | n/a | [`0x155705...64f5a6`](./contracts/arbitrum-42161/0x15570528d8ffc6b220014fd502137093cc64f5a6/) | ⚠️ Unaudited |
-| TokenDistributor | unknown | arbitrum | n/a | [`0xb6e19a...04a9f9`](./contracts/arbitrum-42161/0xb6e19aabf457740e0077eb112805b3abab04a9f9/) | ⚠️ Unaudited |
-| TokenVestingWallet | unknown | ethereum | n/a | [`0x024540...c8e777`](./contracts/ethereum-1/0x024540c8f5a194aa92b00ae238b95b673cc8e777/) | ⚠️ Unaudited |
-| UpgradeableBeacon | unknown | arbitrum | n/a | [`0x5411fa...dfec09`](./contracts/arbitrum-42161/0x5411fac563f98ab60c7720c70778209cebdfec09/) | ⚠️ Unaudited |
-| WhitelistManager | unknown | ethereum | n/a | [`0x9f2bad...85b4a3`](./contracts/ethereum-1/0x9f2bad43e738e90df6df80cc417d00e47d85b4a3/) | ⚠️ Unaudited |
+| EURSToken | unknown | ethereum | n/a | [`0xdb25f211ab05b1c97d595516f45794528a807ad8`](./contracts/ethereum-1/0xdb25f211ab05b1c97d595516f45794528a807ad8/) | ⚠️ Unaudited |
+| FFML2 | unknown | arbitrum | n/a | [`0x10e938b39b24aaf6e8d3c9987ba32244186fc03e`](./contracts/arbitrum-42161/0x10e938b39b24aaf6e8d3c9987ba32244186fc03e/) | ⚠️ Unaudited |
+| FlorinStaking | unknown | arbitrum | n/a | [`0x026ca46939373a3eab19ea3d3da0ac54af30365a`](./contracts/arbitrum-42161/0x026ca46939373a3eab19ea3d3da0ac54af30365a/) | ⚠️ Unaudited |
+| Funding | unknown | ethereum | n/a | [`0x220ffa53dcf7fb93770f164c6b156aea2d0c565c`](./contracts/ethereum-1/0x220ffa53dcf7fb93770f164c6b156aea2d0c565c/) | ⚠️ Unaudited |
+| GHIToken | unknown | ethereum | n/a | [`0x4be1f1026fb4280f1ab3c35e16a38fb13c2faf4a`](./contracts/ethereum-1/0x4be1f1026fb4280f1ab3c35e16a38fb13c2faf4a/) | ⚠️ Unaudited |
+| L1CustomGateway | unknown | ethereum | n/a | [`0x20c9d24edcf5cc943be6ec55cbe786abf05354c0`](./contracts/ethereum-1/0x20c9d24edcf5cc943be6ec55cbe786abf05354c0/) | ⚠️ Unaudited |
+| L1ERC20Gateway | unknown | ethereum | n/a | [`0x553524e576a0e92bec7cc24843c04bf51493a5db`](./contracts/ethereum-1/0x553524e576a0e92bec7cc24843c04bf51493a5db/) | ⚠️ Unaudited |
+| L1GatewayRouter | unknown | ethereum | n/a | [`0x72ce9c846789fdb6fc1f34ac4ad25dd9ef7031ef`](./contracts/ethereum-1/0x72ce9c846789fdb6fc1f34ac4ad25dd9ef7031ef/) | ⚠️ Unaudited |
+| LendingPool | unknown | ethereum | n/a | [`0x0e23889cfe7d54f15efcb5a465fb46191ec1babc`](./contracts/ethereum-1/0x0e23889cfe7d54f15efcb5a465fb46191ec1babc/) | ⚠️ Unaudited |
+| LinearStaking | unknown | ethereum | n/a | [`0x8e8d5b1888d55d12522677b298dd89f2b6bf797d`](./contracts/ethereum-1/0x8e8d5b1888d55d12522677b298dd89f2b6bf797d/) | ⚠️ Unaudited |
+| LoanVaultRegistry | unknown | arbitrum | n/a | [`0x19a2106475b29f0ff5053ae026190ce7a9227ce3`](./contracts/arbitrum-42161/0x19a2106475b29f0ff5053ae026190ce7a9227ce3/) | ⚠️ Unaudited |
+| MediciToken | unknown | ethereum | n/a | [`0x96f5094998a20008839487369012bb4d3c56eafc`](./contracts/ethereum-1/0x96f5094998a20008839487369012bb4d3c56eafc/) | ⚠️ Unaudited |
+| PeriodStaking | unknown | ethereum | n/a | [`0x6935fd0ea533f0bd00313e21ba6cc00a3941c9f8`](./contracts/ethereum-1/0x6935fd0ea533f0bd00313e21ba6cc00a3941c9f8/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | arbitrum | n/a | [`0x15570528d8ffc6b220014fd502137093cc64f5a6`](./contracts/arbitrum-42161/0x15570528d8ffc6b220014fd502137093cc64f5a6/) | ⚠️ Unaudited |
+| TokenDistributor | unknown | arbitrum | n/a | [`0xb6e19aabf457740e0077eb112805b3abab04a9f9`](./contracts/arbitrum-42161/0xb6e19aabf457740e0077eb112805b3abab04a9f9/) | ⚠️ Unaudited |
+| TokenVestingWallet | unknown | ethereum | n/a | [`0x024540c8f5a194aa92b00ae238b95b673cc8e777`](./contracts/ethereum-1/0x024540c8f5a194aa92b00ae238b95b673cc8e777/) | ⚠️ Unaudited |
+| UpgradeableBeacon | unknown | arbitrum | n/a | [`0x5411fac563f98ab60c7720c70778209cebdfec09`](./contracts/arbitrum-42161/0x5411fac563f98ab60c7720c70778209cebdfec09/) | ⚠️ Unaudited |
+| WhitelistManager | unknown | ethereum | n/a | [`0x9f2bad43e738e90df6df80cc417d00e47d85b4a3`](./contracts/ethereum-1/0x9f2bad43e738e90df6df80cc417d00e47d85b4a3/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -118,22 +118,22 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xdb25f2...807ad8`](./contracts/ethereum-1/0xdb25f211ab05b1c97d595516f45794528a807ad8/) | EURSToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x10e938...6fc03e`](./contracts/arbitrum-42161/0x10e938b39b24aaf6e8d3c9987ba32244186fc03e/) | FFML2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x026ca4...30365a`](./contracts/arbitrum-42161/0x026ca46939373a3eab19ea3d3da0ac54af30365a/) | FlorinStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x220ffa...0c565c`](./contracts/ethereum-1/0x220ffa53dcf7fb93770f164c6b156aea2d0c565c/) | Funding | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x4be1f1...2faf4a`](./contracts/ethereum-1/0x4be1f1026fb4280f1ab3c35e16a38fb13c2faf4a/) | GHIToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x20c9d2...5354c0`](./contracts/ethereum-1/0x20c9d24edcf5cc943be6ec55cbe786abf05354c0/) | L1CustomGateway | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x553524...93a5db`](./contracts/ethereum-1/0x553524e576a0e92bec7cc24843c04bf51493a5db/) | L1ERC20Gateway | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x72ce9c...7031ef`](./contracts/ethereum-1/0x72ce9c846789fdb6fc1f34ac4ad25dd9ef7031ef/) | L1GatewayRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0e2388...c1babc`](./contracts/ethereum-1/0x0e23889cfe7d54f15efcb5a465fb46191ec1babc/) | LendingPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x8e8d5b...bf797d`](./contracts/ethereum-1/0x8e8d5b1888d55d12522677b298dd89f2b6bf797d/) | LinearStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x19a210...227ce3`](./contracts/arbitrum-42161/0x19a2106475b29f0ff5053ae026190ce7a9227ce3/) | LoanVaultRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x96f509...56eafc`](./contracts/ethereum-1/0x96f5094998a20008839487369012bb4d3c56eafc/) | MediciToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6935fd...41c9f8`](./contracts/ethereum-1/0x6935fd0ea533f0bd00313e21ba6cc00a3941c9f8/) | PeriodStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xb6e19a...04a9f9`](./contracts/arbitrum-42161/0xb6e19aabf457740e0077eb112805b3abab04a9f9/) | TokenDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x024540...c8e777`](./contracts/ethereum-1/0x024540c8f5a194aa92b00ae238b95b673cc8e777/) | TokenVestingWallet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x9f2bad...85b4a3`](./contracts/ethereum-1/0x9f2bad43e738e90df6df80cc417d00e47d85b4a3/) | WhitelistManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xdb25f211ab05b1c97d595516f45794528a807ad8`](./contracts/ethereum-1/0xdb25f211ab05b1c97d595516f45794528a807ad8/) | EURSToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x10e938b39b24aaf6e8d3c9987ba32244186fc03e`](./contracts/arbitrum-42161/0x10e938b39b24aaf6e8d3c9987ba32244186fc03e/) | FFML2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x026ca46939373a3eab19ea3d3da0ac54af30365a`](./contracts/arbitrum-42161/0x026ca46939373a3eab19ea3d3da0ac54af30365a/) | FlorinStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x220ffa53dcf7fb93770f164c6b156aea2d0c565c`](./contracts/ethereum-1/0x220ffa53dcf7fb93770f164c6b156aea2d0c565c/) | Funding | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4be1f1026fb4280f1ab3c35e16a38fb13c2faf4a`](./contracts/ethereum-1/0x4be1f1026fb4280f1ab3c35e16a38fb13c2faf4a/) | GHIToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x20c9d24edcf5cc943be6ec55cbe786abf05354c0`](./contracts/ethereum-1/0x20c9d24edcf5cc943be6ec55cbe786abf05354c0/) | L1CustomGateway | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x553524e576a0e92bec7cc24843c04bf51493a5db`](./contracts/ethereum-1/0x553524e576a0e92bec7cc24843c04bf51493a5db/) | L1ERC20Gateway | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x72ce9c846789fdb6fc1f34ac4ad25dd9ef7031ef`](./contracts/ethereum-1/0x72ce9c846789fdb6fc1f34ac4ad25dd9ef7031ef/) | L1GatewayRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0e23889cfe7d54f15efcb5a465fb46191ec1babc`](./contracts/ethereum-1/0x0e23889cfe7d54f15efcb5a465fb46191ec1babc/) | LendingPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8e8d5b1888d55d12522677b298dd89f2b6bf797d`](./contracts/ethereum-1/0x8e8d5b1888d55d12522677b298dd89f2b6bf797d/) | LinearStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x19a2106475b29f0ff5053ae026190ce7a9227ce3`](./contracts/arbitrum-42161/0x19a2106475b29f0ff5053ae026190ce7a9227ce3/) | LoanVaultRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x96f5094998a20008839487369012bb4d3c56eafc`](./contracts/ethereum-1/0x96f5094998a20008839487369012bb4d3c56eafc/) | MediciToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6935fd0ea533f0bd00313e21ba6cc00a3941c9f8`](./contracts/ethereum-1/0x6935fd0ea533f0bd00313e21ba6cc00a3941c9f8/) | PeriodStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xb6e19aabf457740e0077eb112805b3abab04a9f9`](./contracts/arbitrum-42161/0xb6e19aabf457740e0077eb112805b3abab04a9f9/) | TokenDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x024540c8f5a194aa92b00ae238b95b673cc8e777`](./contracts/ethereum-1/0x024540c8f5a194aa92b00ae238b95b673cc8e777/) | TokenVestingWallet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x9f2bad43e738e90df6df80cc417d00e47d85b4a3`](./contracts/ethereum-1/0x9f2bad43e738e90df6df80cc417d00e47d85b4a3/) | WhitelistManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

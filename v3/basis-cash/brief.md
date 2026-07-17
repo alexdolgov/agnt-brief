@@ -52,19 +52,19 @@ The pinned logic-topography run contains 11 contract row(s) across ethereum. Str
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x88da51...4ee747`, chain 1)
-- UnnamedContract (`0xffd035...5d6118`, chain 1)
-- BACDAIPool (`0xebd126...02bde8`, chain 1)
-- BACSUSDPool (`0xdc42a2...93305c`, chain 1)
-- BACUSDCPool (`0x518821...429fd4`, chain 1)
-- BACUSDTPool (`0x2833bd...877e44`, chain 1)
-- BACyCRVPool (`0xc462d8...14c3bf`, chain 1)
-- Bond (`0xc36824...f5abc5`, chain 1)
-- Cash (`0x3449fc...03a69a`, chain 1)
-- DAIBACLPTokenSharePool (`0x067d4d...f9db0f`, chain 1)
-- DAIBASLPTokenSharePool (`0x9569d4...fb0d0a`, chain 1)
-- Share (`0xa7ed29...b63696`, chain 1)
-- Timelock (`0xd98bc1...5d0e6a`, chain 1)
+- UnnamedContract (`0x88da5151ab20387626520c8af8e29e3fc64ee747`, chain 1)
+- UnnamedContract (`0xffd035a605b20e8461b00018adc5413c4e5d6118`, chain 1)
+- BACDAIPool (`0xebd12620e29dc6c452db7b96e1f190f3ee02bde8`, chain 1)
+- BACSUSDPool (`0xdc42a21e38c3b8028b01a6b00d8dbc648f93305c`, chain 1)
+- BACUSDCPool (`0x51882184b7f9beed6db9c617846140da1d429fd4`, chain 1)
+- BACUSDTPool (`0x2833bdc5b31269d356bdf92d0fd8f3674e877e44`, chain 1)
+- BACyCRVPool (`0xc462d8ee54953e7d7bf276612b75387ea114c3bf`, chain 1)
+- Bond (`0xc36824905dff2eaaee7ecc09fcc63abc0af5abc5`, chain 1)
+- Cash (`0x3449fc1cd036255ba1eb19d65ff4ba2b8903a69a`, chain 1)
+- DAIBACLPTokenSharePool (`0x067d4d3ce63450e74f880f86b5b52ea3edf9db0f`, chain 1)
+- DAIBASLPTokenSharePool (`0x9569d4cd7ac5b010da5697e952efb1ec0efb0d0a`, chain 1)
+- Share (`0xa7ed29b253d8b4e3109ce07c80fc570f81b63696`, chain 1)
+- Timelock (`0xd98bc19ffc98e9009146524c8bd835f1bc5d0e6a`, chain 1)
 
 ## Contract Surface Quality
 
@@ -110,44 +110,44 @@ The pinned logic-topography run contains 11 contract row(s) across ethereum. Str
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BACDAIPool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380301 | `0xebd126...02bde8` | ⚠️ Unaudited |
-| BACPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7e7ae8...d6ed8c` | ⚠️ Unaudited |
-| BACSUSDPool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380300 | `0xdc42a2...93305c` | ⚠️ Unaudited |
-| BACUSDCPool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380292 | `0x518821...429fd4` | ⚠️ Unaudited |
-| BACUSDTPool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380290 | `0x2833bd...877e44` | ⚠️ Unaudited |
-| BACyCRVPool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380298 | `0xc462d8...14c3bf` | ⚠️ Unaudited |
-| BASPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5859ad...8120c0` | ⚠️ Unaudited |
-| BIP11 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa6f889...c115a2` | ⚠️ Unaudited |
-| Boardroom | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x27c20f...96fd4f` | ⚠️ Unaudited |
-| BoardroomV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xecf0dd...33e42a` | ⚠️ Unaudited |
-| Bond | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380297 | `0xc36824...f5abc5` | ⚠️ Unaudited |
-| Bondroom | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd9a904...efe109` | ⚠️ Unaudited |
-| Cash | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380291 | `0x3449fc...03a69a` | ⚠️ Unaudited |
-| ControlledAsset | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4c48fd...47d30c` | ⚠️ Unaudited |
-| DAIBACLPTokenSharePool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380289 | `0x067d4d...f9db0f` | ⚠️ Unaudited |
-| DAIBASLPTokenSharePool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380295 | `0x9569d4...fb0d0a` | ⚠️ Unaudited |
-| Distribution | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x818f83...402f2e` | ⚠️ Unaudited |
-| Feeder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x065894...8eb1b0` | ⚠️ Unaudited |
-| InitialCashDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x666c2a...54c0cd` | ⚠️ Unaudited |
-| InitialShareDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3c5323...e2f4bb` | ⚠️ Unaudited |
-| LinearThreshold | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcdbae6...120b11` | ⚠️ Unaudited |
-| MerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1b6043...ade677` | ⚠️ Unaudited |
-| Oracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1b3868...8ff7ed` | ⚠️ Unaudited |
-| PickleProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0cf4ac...912828` | ⚠️ Unaudited |
-| PoolMigrator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x66d7fa...30b7bb` | ⚠️ Unaudited |
-| PoolProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1fe765...b432c5` | ⚠️ Unaudited |
-| PoolStore | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x01592e...a00ae6` | ⚠️ Unaudited |
-| PoolWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2e3d21...41510c` | ⚠️ Unaudited |
-| Share | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380296 | `0xa7ed29...b63696` | ⚠️ Unaudited |
-| ShareV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x106538...875287` | ⚠️ Unaudited |
-| SigmoidThreshold | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa72872...07f7f3` | ⚠️ Unaudited |
-| SimpleERCFund | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7b075b...98fe22` | ⚠️ Unaudited |
-| Timelock | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380299 | `0xd98bc1...5d0e6a` | ⚠️ Unaudited |
-| TokenStore | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0440ae...25c87c` | ⚠️ Unaudited |
-| Treasury | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x02957a...c877f5` | ⚠️ Unaudited |
-| VoteProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6bddf1...eb729b` | ⚠️ Unaudited |
-| Vyper_contract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x06364f...d6c763` | ⚠️ Unaudited |
-| WeightFeeder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5800fc...816546` | ⚠️ Unaudited |
+| BACDAIPool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380301 | `0xebd12620e29dc6c452db7b96e1f190f3ee02bde8` | ⚠️ Unaudited |
+| BACPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7e7ae8923876955d6dcb7285c04065a1b9d6ed8c` | ⚠️ Unaudited |
+| BACSUSDPool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380300 | `0xdc42a21e38c3b8028b01a6b00d8dbc648f93305c` | ⚠️ Unaudited |
+| BACUSDCPool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380292 | `0x51882184b7f9beed6db9c617846140da1d429fd4` | ⚠️ Unaudited |
+| BACUSDTPool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380290 | `0x2833bdc5b31269d356bdf92d0fd8f3674e877e44` | ⚠️ Unaudited |
+| BACyCRVPool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380298 | `0xc462d8ee54953e7d7bf276612b75387ea114c3bf` | ⚠️ Unaudited |
+| BASPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5859adb05988946b9d08dce2e12ae29af58120c0` | ⚠️ Unaudited |
+| BIP11 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa6f889c3cedbdf6cb524813da0ee0ffaddc115a2` | ⚠️ Unaudited |
+| Boardroom | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x27c20f0b0ad78805084eeb8407291326e996fd4f` | ⚠️ Unaudited |
+| BoardroomV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xecf0dde35f6d895c065e7526348af1e79433e42a` | ⚠️ Unaudited |
+| Bond | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380297 | `0xc36824905dff2eaaee7ecc09fcc63abc0af5abc5` | ⚠️ Unaudited |
+| Bondroom | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd9a904a1320b5f0a1f742a9e431ded2a55efe109` | ⚠️ Unaudited |
+| Cash | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380291 | `0x3449fc1cd036255ba1eb19d65ff4ba2b8903a69a` | ⚠️ Unaudited |
+| ControlledAsset | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4c48fd8ed6f6a50bf03dbdefe7d74983f447d30c` | ⚠️ Unaudited |
+| DAIBACLPTokenSharePool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380289 | `0x067d4d3ce63450e74f880f86b5b52ea3edf9db0f` | ⚠️ Unaudited |
+| DAIBASLPTokenSharePool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380295 | `0x9569d4cd7ac5b010da5697e952efb1ec0efb0d0a` | ⚠️ Unaudited |
+| Distribution | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x818f83333244ba4bb72dab0b60b1901158402f2e` | ⚠️ Unaudited |
+| Feeder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x06589479a31f826410bbd6d43410e7ff2d8eb1b0` | ⚠️ Unaudited |
+| InitialCashDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x666c2a4625ef5f8cf66a24fbff9f22437754c0cd` | ⚠️ Unaudited |
+| InitialShareDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3c53230875877321023f757c33d2faf71de2f4bb` | ⚠️ Unaudited |
+| LinearThreshold | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcdbae6de88c7525369d6826ae1cdcab415120b11` | ⚠️ Unaudited |
+| MerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1b604349100a318e369b59a6d6c1b65a31ade677` | ⚠️ Unaudited |
+| Oracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1b3868247dfbc155fa59b30ec03e63b10a8ff7ed` | ⚠️ Unaudited |
+| PickleProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0cf4acf926a4d973e4a1775e4a82839988912828` | ⚠️ Unaudited |
+| PoolMigrator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x66d7fa132b5550205d4d6a6645b66283e330b7bb` | ⚠️ Unaudited |
+| PoolProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1fe7656fa41eea50b0ee8591fd6b405c94b432c5` | ⚠️ Unaudited |
+| PoolStore | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x01592e349258233a6f13685228060511eca00ae6` | ⚠️ Unaudited |
+| PoolWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2e3d21e2730b4e5d5ee7214d4723ea96d041510c` | ⚠️ Unaudited |
+| Share | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380296 | `0xa7ed29b253d8b4e3109ce07c80fc570f81b63696` | ⚠️ Unaudited |
+| ShareV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x106538cc16f938776c7c180186975bca23875287` | ⚠️ Unaudited |
+| SigmoidThreshold | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa728721394084ea78f10cebb192323f50407f7f3` | ⚠️ Unaudited |
+| SimpleERCFund | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7b075b3aa2f1143775101986b52e32da9d98fe22` | ⚠️ Unaudited |
+| Timelock | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380299 | `0xd98bc19ffc98e9009146524c8bd835f1bc5d0e6a` | ⚠️ Unaudited |
+| TokenStore | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0440ae12f329dbd7306b6d9edbb0e667c225c87c` | ⚠️ Unaudited |
+| Treasury | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x02957ae53173f58dc9989c4a09853f9528c877f5` | ⚠️ Unaudited |
+| VoteProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6bddf10f9956dcda89998c2e673f74a09deb729b` | ⚠️ Unaudited |
+| Vyper_contract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x06364f10b501e868329afbc005b3492902d6c763` | ⚠️ Unaudited |
+| WeightFeeder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5800fc35f004c1218b18a22940ee7e8be4816546` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -167,9 +167,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-380293 | `0x751d0e...bf75ca` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380294 | `0x88da51...4ee747` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380302 | `0xffd035...5d6118` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-380293 | `0x751d0ef5686a8a2a2bdeefec787c2abc27bf75ca` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380294 | `0x88da5151ab20387626520c8af8e29e3fc64ee747` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380302 | `0xffd035a605b20e8461b00018adc5413c4e5d6118` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -188,17 +188,17 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0xebd126...02bde8` | BACDAIPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xdc42a2...93305c` | BACSUSDPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x518821...429fd4` | BACUSDCPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x2833bd...877e44` | BACUSDTPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xc462d8...14c3bf` | BACyCRVPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xc36824...f5abc5` | Bond | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x3449fc...03a69a` | Cash | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x067d4d...f9db0f` | DAIBACLPTokenSharePool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x9569d4...fb0d0a` | DAIBASLPTokenSharePool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xa7ed29...b63696` | Share | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xd98bc1...5d0e6a` | Timelock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xebd12620e29dc6c452db7b96e1f190f3ee02bde8` | BACDAIPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xdc42a21e38c3b8028b01a6b00d8dbc648f93305c` | BACSUSDPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x51882184b7f9beed6db9c617846140da1d429fd4` | BACUSDCPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x2833bdc5b31269d356bdf92d0fd8f3674e877e44` | BACUSDTPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xc462d8ee54953e7d7bf276612b75387ea114c3bf` | BACyCRVPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xc36824905dff2eaaee7ecc09fcc63abc0af5abc5` | Bond | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x3449fc1cd036255ba1eb19d65ff4ba2b8903a69a` | Cash | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x067d4d3ce63450e74f880f86b5b52ea3edf9db0f` | DAIBACLPTokenSharePool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x9569d4cd7ac5b010da5697e952efb1ec0efb0d0a` | DAIBASLPTokenSharePool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xa7ed29b253d8b4e3109ce07c80fc570f81b63696` | Share | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xd98bc19ffc98e9009146524c8bd835f1bc5d0e6a` | Timelock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

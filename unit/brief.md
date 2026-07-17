@@ -61,12 +61,12 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ERC1967Proxy | unknown | hyperliquid | n/a | [`0x068f32...1c8a29`](./contracts/hyperliquid-999/0x068f321fa8fb9f0d135f290ef6a3e2813e1c8a29/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | [`0x27ec64...6f4452`](./contracts/hyperliquid-999/0x27ec642013bcb3d80ca3706599d3cda04f6f4452/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | [`0x3b4575...b2cedf`](./contracts/hyperliquid-999/0x3b4575e689ded21caad31d64c4df1f10f3b2cedf/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | [`0x9fdbda...993463`](./contracts/hyperliquid-999/0x9fdbda0a5e284c32744d2f17ee5c74b284993463/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | hyperliquid | n/a | [`0xbe6727...cf7907`](./contracts/hyperliquid-999/0xbe6727b535545c67d5caa73dea54865b92cf7907/) | ⚠️ Unaudited |
-| UnitPlasma | unknown | hyperliquid | n/a | [`0x11e10b...0798a1`](./contracts/hyperliquid-999/0x11e10b315363d43e46b04f139fc051164e0798a1/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | [`0x068f321fa8fb9f0d135f290ef6a3e2813e1c8a29`](./contracts/hyperliquid-999/0x068f321fa8fb9f0d135f290ef6a3e2813e1c8a29/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | [`0x27ec642013bcb3d80ca3706599d3cda04f6f4452`](./contracts/hyperliquid-999/0x27ec642013bcb3d80ca3706599d3cda04f6f4452/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | [`0x3b4575e689ded21caad31d64c4df1f10f3b2cedf`](./contracts/hyperliquid-999/0x3b4575e689ded21caad31d64c4df1f10f3b2cedf/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | [`0x9fdbda0a5e284c32744d2f17ee5c74b284993463`](./contracts/hyperliquid-999/0x9fdbda0a5e284c32744d2f17ee5c74b284993463/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | hyperliquid | n/a | [`0xbe6727b535545c67d5caa73dea54865b92cf7907`](./contracts/hyperliquid-999/0xbe6727b535545c67d5caa73dea54865b92cf7907/) | ⚠️ Unaudited |
+| UnitPlasma | unknown | hyperliquid | n/a | [`0x11e10b315363d43e46b04f139fc051164e0798a1`](./contracts/hyperliquid-999/0x11e10b315363d43e46b04f139fc051164e0798a1/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -97,7 +97,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| hyperliquid | [`0x11e10b...0798a1`](./contracts/hyperliquid-999/0x11e10b315363d43e46b04f139fc051164e0798a1/) | UnitPlasma | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x11e10b315363d43e46b04f139fc051164e0798a1`](./contracts/hyperliquid-999/0x11e10b315363d43e46b04f139fc051164e0798a1/) | UnitPlasma | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -56,7 +56,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x0fcfe3...8f9255`, chain 56)
+- UnnamedContract (`0x0fcfe33b46e5b21e5e96b722d4c85510198f9255`, chain 56)
 
 ## Contract Surface Quality
 
@@ -102,7 +102,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| PancakeV3Pool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x4700ac...f3649a` | ⚠️ Unaudited |
+| PancakeV3Pool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x4700ac98ee76e0d63598e2bfc24a2646fdf3649a` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -122,7 +122,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-388780 | `0x0fcfe3...8f9255` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-388780 | `0x0fcfe33b46e5b21e5e96b722d4c85510198f9255` | ❓ Unverified |
 
 ## Audit Inventory
 

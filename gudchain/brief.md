@@ -60,7 +60,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| GudPartnerPool | core_logic | ethereum | n/a | [`0xd7419a...baec83`](./contracts/ethereum-1/0xd7419a0c753378a86c3342ae0c1a4577b9baec83/) | ✅ Audited |
+| GudPartnerPool | core_logic | ethereum | n/a | [`0xd7419a0c753378a86c3342ae0c1a4577b9baec83`](./contracts/ethereum-1/0xd7419a0c753378a86c3342ae0c1a4577b9baec83/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 

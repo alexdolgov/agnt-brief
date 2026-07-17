@@ -59,20 +59,20 @@ The protocol comprises 5 functional families. Its contracts share 3 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| KUMAAccessController | governance | ethereum | n/a | 2 deployments: ethereum [`0x5fad6f...1163de`](./contracts/ethereum-1/0x5fad6f80312aee6f19784a7fc359f90d441163de/); linea `0xb9cee0...6a52ae` | ✅ Audited |
-| KUMABondToken | token | linea | n/a | 2 deployments: ethereum `0x74e9e8...b79a7b`; linea [`0x3d0a18...3a3a9a`](./contracts/linea-59144/0x3d0a18c6bddd2e03ddd0ea26ed2bb9c6f83a3a9a/) | ✅ Audited |
+| KUMAAccessController | governance | ethereum | n/a | 2 deployments: ethereum [`0x5fad6f80312aee6f19784a7fc359f90d441163de`](./contracts/ethereum-1/0x5fad6f80312aee6f19784a7fc359f90d441163de/); linea `0xb9cee0c302ef2844ef78f41800ce73c13b6a52ae` | ✅ Audited |
+| KUMABondToken | token | linea | n/a | 2 deployments: ethereum `0x74e9e8d1365358f0ec416e24f723e36181b79a7b`; linea [`0x3d0a18c6bddd2e03ddd0ea26ed2bb9c6f83a3a9a`](./contracts/linea-59144/0x3d0a18c6bddd2e03ddd0ea26ed2bb9c6f83a3a9a/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (7)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| FeeDistributor | operational_periphery | polygon | n/a | [`0x83d8ca...ca1227`](./contracts/polygon-137/0x83d8ca70144d55f74ad3c5eb3336b4163bca1227/) | ⚠️ Unaudited |
-| GnosisSafe | governance | ethereum | n/a | 2 deployments: ethereum [`0x33da84...e0d1bf`](./contracts/ethereum-1/0x33da84dd937779f3edaccf87e7ddcdc216e0d1bf/); ethereum `0xb55027...33f450` | ⚠️ Unaudited |
-| GnosisSafeL2 | governance | linea | n/a | 2 deployments: linea [`0x1151d6...642997`](./contracts/linea-59144/0x1151d63eb6154843d4b4898cf4c63af556642997/); linea `0x7cf34a...025432` | ⚠️ Unaudited |
-| GnosisSafeProxy | governance | mantle | n/a | [`0xfef638...3207b6`](./contracts/mantle-5000/0xfef638230495d1b36422f7475c2000d7cb3207b6/) | ⚠️ Unaudited |
-| PaUSD | unknown | polygon | n/a | [`0x8054d4...a7486b`](./contracts/polygon-137/0x8054d4d130c3a84852f379424bcac75673a7486b/) | ⚠️ Unaudited |
-| RateProvider | unknown | polygon | n/a | [`0x76d8b7...6628e2`](./contracts/polygon-137/0x76d8b79fb9afd4da89913458c90b6c09676628e2/) | ⚠️ Unaudited |
-| WrappedRebaseToken | token | linea | n/a | 2 deployments: ethereum `0xaf4ce7...e57e09`; linea [`0x2f0b43...d7297a`](./contracts/linea-59144/0x2f0b4300074afc01726262d4cc9c1d2619d7297a/) | ⚠️ Unaudited |
+| FeeDistributor | operational_periphery | polygon | n/a | [`0x83d8ca70144d55f74ad3c5eb3336b4163bca1227`](./contracts/polygon-137/0x83d8ca70144d55f74ad3c5eb3336b4163bca1227/) | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | n/a | 2 deployments: ethereum [`0x33da84dd937779f3edaccf87e7ddcdc216e0d1bf`](./contracts/ethereum-1/0x33da84dd937779f3edaccf87e7ddcdc216e0d1bf/); ethereum `0xb5502747aabdca21e832951b4caaf739da33f450` | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | linea | n/a | 2 deployments: linea [`0x1151d63eb6154843d4b4898cf4c63af556642997`](./contracts/linea-59144/0x1151d63eb6154843d4b4898cf4c63af556642997/); linea `0x7cf34ac2ceff942c697d9c070228454864025432` | ⚠️ Unaudited |
+| GnosisSafeProxy | governance | mantle | n/a | [`0xfef638230495d1b36422f7475c2000d7cb3207b6`](./contracts/mantle-5000/0xfef638230495d1b36422f7475c2000d7cb3207b6/) | ⚠️ Unaudited |
+| PaUSD | unknown | polygon | n/a | [`0x8054d4d130c3a84852f379424bcac75673a7486b`](./contracts/polygon-137/0x8054d4d130c3a84852f379424bcac75673a7486b/) | ⚠️ Unaudited |
+| RateProvider | unknown | polygon | n/a | [`0x76d8b79fb9afd4da89913458c90b6c09676628e2`](./contracts/polygon-137/0x76d8b79fb9afd4da89913458c90b6c09676628e2/) | ⚠️ Unaudited |
+| WrappedRebaseToken | token | linea | n/a | 2 deployments: ethereum `0xaf4ce7cd4f8891ecf1799878c3e9a35b8be57e09`; linea [`0x2f0b4300074afc01726262d4cc9c1d2619d7297a`](./contracts/linea-59144/0x2f0b4300074afc01726262d4cc9c1d2619d7297a/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -92,25 +92,25 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x7a467d...cb1981` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x8e8cdf...f74874` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc7d90b...dff07a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xd407db...6de867` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x15c05d...da2c5b` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x308466...c0ccdf` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x7e5660...734f76` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x9f1a2e...d5e05e` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xba75fc...68546b` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xc1e17d...dd6a82` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0x1a3445...7317a8` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0x274b30...2b0bce` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0x6a9742...d3f24a` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0x6f74f0...a8bbbd` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0x7d9573...1cecb0` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0x83f8eb...15af34` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0x888c2b...2826d1` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0xc3b9d4...34dc3e` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0xda8102...accfeb` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x7a467d59507979168c2185b2e036956670cb1981` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x8e8cdf12784f3974fac943f70ec31a012ef74874` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc7d90b56b40a0a59e277765e16e99a7602dff07a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd407dbee29d803164a5dc1193aece283376de867` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x15c05d10c9f66b5983e3f9b342751f6333da2c5b` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x308466012cf91c926f1d7f3887e84630dbc0ccdf` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x7e566027661211e33cebaedba21d3fdc95734f76` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x9f1a2e04f563837ddb49d51713be49b305d5e05e` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xba75fc937b0c5c18d084d28212fa36617368546b` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xc1e17d9e66f505355c9fb9a49e6c2dded1dd6a82` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0x1a344570a072612a08ddf92be590faa0097317a8` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0x274b3089a718ef7d8efb235578f0717e702b0bce` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0x6a9742626917fa15db6639cb6c9b8ba6d3d3f24a` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0x6f74f0a232da85afca8fd264a0e6e277dba8bbbd` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0x7d9573bc16b75960465e9b9dd8bd8220bc1cecb0` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0x83f8eb40f158cfb9f9c8b229584fe49fff15af34` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0x888c2bfd992852e2754dd3cd261bb5bedc2826d1` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0xc3b9d4a8f77ca47c329607051991f7859334dc3e` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0xda8102cb6fa68ad363e214515d0fb14fdeaccfeb` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -126,10 +126,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| polygon | [`0x83d8ca...ca1227`](./contracts/polygon-137/0x83d8ca70144d55f74ad3c5eb3336b4163bca1227/) | FeeDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x8054d4...a7486b`](./contracts/polygon-137/0x8054d4d130c3a84852f379424bcac75673a7486b/) | PaUSD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x76d8b7...6628e2`](./contracts/polygon-137/0x76d8b79fb9afd4da89913458c90b6c09676628e2/) | RateProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0x2f0b43...d7297a`](./contracts/linea-59144/0x2f0b4300074afc01726262d4cc9c1d2619d7297a/) | WrappedRebaseToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x83d8ca70144d55f74ad3c5eb3336b4163bca1227`](./contracts/polygon-137/0x83d8ca70144d55f74ad3c5eb3336b4163bca1227/) | FeeDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x8054d4d130c3a84852f379424bcac75673a7486b`](./contracts/polygon-137/0x8054d4d130c3a84852f379424bcac75673a7486b/) | PaUSD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x76d8b79fb9afd4da89913458c90b6c09676628e2`](./contracts/polygon-137/0x76d8b79fb9afd4da89913458c90b6c09676628e2/) | RateProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x2f0b4300074afc01726262d4cc9c1d2619d7297a`](./contracts/linea-59144/0x2f0b4300074afc01726262d4cc9c1d2619d7297a/) | WrappedRebaseToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

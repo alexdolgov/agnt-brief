@@ -63,25 +63,25 @@ The protocol comprises 5 functional families. Its contracts share 6 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| FunctionsAccessControl | governance | base | n/a | [`0x58722c...859cb7`](./contracts/base-8453/0x58722c4f1a8bca491dcf074ae3c6b519cc859cb7/) | ✅ Audited |
-| PriceOracle | operational_periphery | base | n/a | [`0x2756bf...6715eb`](./contracts/base-8453/0x2756bf902563b6e767a6e9ec20abfab3706715eb/) | ✅ Audited |
-| ZeUSD | unknown | ethereum | n/a | 2 deployments: ethereum [`0xb16eb1...389809`](./contracts/ethereum-1/0xb16eb11db006230d13fc0d9679e50a5a4d389809/); ethereum `0xf2552a...b8377d` | ✅ Audited |
-| ZeUSD_OFT | unknown | manta | n/a | [`0x7dc974...8ea761`](./contracts/manta-169/0x7dc9748da8e762e569f9269f48f69a1a9f8ea761/) | ✅ Audited |
+| FunctionsAccessControl | governance | base | n/a | [`0x58722c4f1a8bca491dcf074ae3c6b519cc859cb7`](./contracts/base-8453/0x58722c4f1a8bca491dcf074ae3c6b519cc859cb7/) | ✅ Audited |
+| PriceOracle | operational_periphery | base | n/a | [`0x2756bf902563b6e767a6e9ec20abfab3706715eb`](./contracts/base-8453/0x2756bf902563b6e767a6e9ec20abfab3706715eb/) | ✅ Audited |
+| ZeUSD | unknown | ethereum | n/a | 2 deployments: ethereum [`0xb16eb11db006230d13fc0d9679e50a5a4d389809`](./contracts/ethereum-1/0xb16eb11db006230d13fc0d9679e50a5a4d389809/); ethereum `0xf2552a508618b98463192e445def1ddb88b8377d` | ✅ Audited |
+| ZeUSD_OFT | unknown | manta | n/a | [`0x7dc9748da8e762e569f9269f48f69a1a9f8ea761`](./contracts/manta-169/0x7dc9748da8e762e569f9269f48f69a1a9f8ea761/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (10)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AccessManager | governance | ethereum | n/a | 5 deployments: ethereum [`0x062b76...99c672`](./contracts/ethereum-1/0x062b7697fd492270732295e5486e405a5999c672/); ethereum `0x600b26...420430`; ethereum `0x7e43e3...5c8d58`; ethereum `0x80099b...43ee02`; ethereum `0xc1ce24...a2be5f` | ⚠️ Unaudited |
-| ProxyAdmin | governance | base | n/a | [`0x5a9916...b79b84`](./contracts/base-8453/0x5a9916c8b89f4cc97b782d5138ea54a17eb79b84/) | ⚠️ Unaudited |
-| RedemptionVault | unknown | base | n/a | 2 deployments: base [`0x87e86d...e9b403`](./contracts/base-8453/0x87e86d6930f7e922e02cd92821fbaaf9d5e9b403/); base `0xe64403...454734` | ⚠️ Unaudited |
-| RedemptionVault | core_logic | base | n/a | [`0xbaa2de...81755e`](./contracts/base-8453/0xbaa2de224e2161cc95d1eb97fa4769a54c81755e/) | ⚠️ Unaudited |
-| UpgradeTimelock | governance | base | n/a | [`0xff0820...fd6856`](./contracts/base-8453/0xff082079c027f01d61045b8eceafab92ddfd6856/) | ⚠️ Unaudited |
-| ZeUSDRouterV2 | adapter | ethereum | n/a | 3 deployments: ethereum [`0x8154db...498551`](./contracts/ethereum-1/0x8154db5007d78dd2deb7d4d6940752feb5498551/); ethereum `0xac6e62...505bd8`; ethereum `0xf1fd73...681f5c` | ⚠️ Unaudited |
-| zOPAL | unknown | base | n/a | 2 deployments: base [`0x2e9705...557f24`](./contracts/base-8453/0x2e9705d95f1624fab9caaba775234571bd557f24/); base `0x79c89e...68bccb` | ⚠️ Unaudited |
-| zOPAL | unknown | base | n/a | 2 deployments: base [`0x83ca3d...1203e5`](./contracts/base-8453/0x83ca3db8d431b769b2260ff2ecd4fa15001203e5/); base `0xe60320...52a1d8` | ⚠️ Unaudited |
-| zOPALDepositVault | unknown | base | n/a | 2 deployments: base [`0x06ff0b...79a751`](./contracts/base-8453/0x06ff0ba6a53a42e20599eddb6bcae481b779a751/); base `0x6578fe...ffe850` | ⚠️ Unaudited |
-| ZothAccessControl | unknown | base | n/a | 2 deployments: base [`0x11e5c2...a9cbb1`](./contracts/base-8453/0x11e5c20a11e8b75bb2ae6f136dab1cbb1da9cbb1/); base `0x532587...fcfa14` | ⚠️ Unaudited |
+| AccessManager | governance | ethereum | n/a | 5 deployments: ethereum [`0x062b7697fd492270732295e5486e405a5999c672`](./contracts/ethereum-1/0x062b7697fd492270732295e5486e405a5999c672/); ethereum `0x600b26a360097294bd6af423b7a237bf8b420430`; ethereum `0x7e43e3e643e1087cfcd3929bdaf70141675c8d58`; ethereum `0x80099b3503c4c3df597bce153d901e151643ee02`; ethereum `0xc1ce245cdf41f33b880db1cd3be2fec1fea2be5f` | ⚠️ Unaudited |
+| ProxyAdmin | governance | base | n/a | [`0x5a9916c8b89f4cc97b782d5138ea54a17eb79b84`](./contracts/base-8453/0x5a9916c8b89f4cc97b782d5138ea54a17eb79b84/) | ⚠️ Unaudited |
+| RedemptionVault | unknown | base | n/a | 2 deployments: base [`0x87e86d6930f7e922e02cd92821fbaaf9d5e9b403`](./contracts/base-8453/0x87e86d6930f7e922e02cd92821fbaaf9d5e9b403/); base `0xe644034f52c816bc54d8ab8163390db2ae454734` | ⚠️ Unaudited |
+| RedemptionVault | core_logic | base | n/a | [`0xbaa2de224e2161cc95d1eb97fa4769a54c81755e`](./contracts/base-8453/0xbaa2de224e2161cc95d1eb97fa4769a54c81755e/) | ⚠️ Unaudited |
+| UpgradeTimelock | governance | base | n/a | [`0xff082079c027f01d61045b8eceafab92ddfd6856`](./contracts/base-8453/0xff082079c027f01d61045b8eceafab92ddfd6856/) | ⚠️ Unaudited |
+| ZeUSDRouterV2 | adapter | ethereum | n/a | 3 deployments: ethereum [`0x8154db5007d78dd2deb7d4d6940752feb5498551`](./contracts/ethereum-1/0x8154db5007d78dd2deb7d4d6940752feb5498551/); ethereum `0xac6e62717e8803cf119e591a0bf401d504505bd8`; ethereum `0xf1fd735f81e306743eff3850a39656d156681f5c` | ⚠️ Unaudited |
+| zOPAL | unknown | base | n/a | 2 deployments: base [`0x2e9705d95f1624fab9caaba775234571bd557f24`](./contracts/base-8453/0x2e9705d95f1624fab9caaba775234571bd557f24/); base `0x79c89e7bc0db947b4194ebf8b35e1e00ad68bccb` | ⚠️ Unaudited |
+| zOPAL | unknown | base | n/a | 2 deployments: base [`0x83ca3db8d431b769b2260ff2ecd4fa15001203e5`](./contracts/base-8453/0x83ca3db8d431b769b2260ff2ecd4fa15001203e5/); base `0xe603206d9d1869023b548d2f5daba3a07852a1d8` | ⚠️ Unaudited |
+| zOPALDepositVault | unknown | base | n/a | 2 deployments: base [`0x06ff0ba6a53a42e20599eddb6bcae481b779a751`](./contracts/base-8453/0x06ff0ba6a53a42e20599eddb6bcae481b779a751/); base `0x6578fe7a4a8c0b8c34fc8c85a8f99cc16affe850` | ⚠️ Unaudited |
+| ZothAccessControl | unknown | base | n/a | 2 deployments: base [`0x11e5c20a11e8b75bb2ae6f136dab1cbb1da9cbb1`](./contracts/base-8453/0x11e5c20a11e8b75bb2ae6f136dab1cbb1da9cbb1/); base `0x5325875510f29686553fc213494a6842aefcfa14` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -101,11 +101,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Proxy (impl: 0x6f4d7192e66feacf6e3f65cfeae3f69c49ef9b03) | proxy | avalanche | n/a | `0x7dc974...8ea761` | ❓ Unverified |
-| UnnamedContract | unknown | metis | n/a | `0x2d3d1a...e27a77` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x15925a...65683e` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x973bd2...7b2f04` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xb9dd43...a314c6` | ❓ Unverified |
+| Proxy (impl: 0x6f4d7192e66feacf6e3f65cfeae3f69c49ef9b03) | proxy | avalanche | n/a | `0x7dc9748da8e762e569f9269f48f69a1a9f8ea761` | ❓ Unverified |
+| UnnamedContract | unknown | metis | n/a | `0x2d3d1a6982840dd88bc2380fd557f8a9d5e27a77` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x15925a7571f5bd7ce67eeeddfaa31136e565683e` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x973bd2510d866b1f2494c97ca9fd9595037b2f04` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xb9dd4396f0f849508e96e656af1a10f83ea314c6` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -123,15 +123,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x062b76...99c672`](./contracts/ethereum-1/0x062b7697fd492270732295e5486e405a5999c672/) | AccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x87e86d...e9b403`](./contracts/base-8453/0x87e86d6930f7e922e02cd92821fbaaf9d5e9b403/) | RedemptionVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xbaa2de...81755e`](./contracts/base-8453/0xbaa2de224e2161cc95d1eb97fa4769a54c81755e/) | RedemptionVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xff0820...fd6856`](./contracts/base-8453/0xff082079c027f01d61045b8eceafab92ddfd6856/) | UpgradeTimelock | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x8154db...498551`](./contracts/ethereum-1/0x8154db5007d78dd2deb7d4d6940752feb5498551/) | ZeUSDRouterV2 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x2e9705...557f24`](./contracts/base-8453/0x2e9705d95f1624fab9caaba775234571bd557f24/) | zOPAL | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x83ca3d...1203e5`](./contracts/base-8453/0x83ca3db8d431b769b2260ff2ecd4fa15001203e5/) | zOPAL | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x06ff0b...79a751`](./contracts/base-8453/0x06ff0ba6a53a42e20599eddb6bcae481b779a751/) | zOPALDepositVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x11e5c2...a9cbb1`](./contracts/base-8453/0x11e5c20a11e8b75bb2ae6f136dab1cbb1da9cbb1/) | ZothAccessControl | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x062b7697fd492270732295e5486e405a5999c672`](./contracts/ethereum-1/0x062b7697fd492270732295e5486e405a5999c672/) | AccessManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x87e86d6930f7e922e02cd92821fbaaf9d5e9b403`](./contracts/base-8453/0x87e86d6930f7e922e02cd92821fbaaf9d5e9b403/) | RedemptionVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xbaa2de224e2161cc95d1eb97fa4769a54c81755e`](./contracts/base-8453/0xbaa2de224e2161cc95d1eb97fa4769a54c81755e/) | RedemptionVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xff082079c027f01d61045b8eceafab92ddfd6856`](./contracts/base-8453/0xff082079c027f01d61045b8eceafab92ddfd6856/) | UpgradeTimelock | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8154db5007d78dd2deb7d4d6940752feb5498551`](./contracts/ethereum-1/0x8154db5007d78dd2deb7d4d6940752feb5498551/) | ZeUSDRouterV2 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x2e9705d95f1624fab9caaba775234571bd557f24`](./contracts/base-8453/0x2e9705d95f1624fab9caaba775234571bd557f24/) | zOPAL | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x83ca3db8d431b769b2260ff2ecd4fa15001203e5`](./contracts/base-8453/0x83ca3db8d431b769b2260ff2ecd4fa15001203e5/) | zOPAL | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x06ff0ba6a53a42e20599eddb6bcae481b779a751`](./contracts/base-8453/0x06ff0ba6a53a42e20599eddb6bcae481b779a751/) | zOPALDepositVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x11e5c20a11e8b75bb2ae6f136dab1cbb1da9cbb1`](./contracts/base-8453/0x11e5c20a11e8b75bb2ae6f136dab1cbb1da9cbb1/) | ZothAccessControl | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

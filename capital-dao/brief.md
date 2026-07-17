@@ -59,12 +59,12 @@ The protocol comprises 2 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| MasterChef | unknown | ethereum | n/a | [`0x0a6bfa...5c97eb`](./contracts/ethereum-1/0x0a6bfa6aaaef29cbb6c9e25961cc01849b5c97eb/) | ⚠️ Unaudited |
-| StakingRewardVault | unknown | ethereum | n/a | [`0x475365...acb72b`](./contracts/ethereum-1/0x4753659d2e431304eff2a95a16bae4e768acb72b/) | ⚠️ Unaudited |
-| TokenCDS | unknown | ethereum | n/a | [`0x3c48ca...076e5e`](./contracts/ethereum-1/0x3c48ca59bf2699e51d4974d4b6d284ae52076e5e/) | ⚠️ Unaudited |
-| TokenCPDT | unknown | ethereum | n/a | [`0xb74c38...f1dd32`](./contracts/ethereum-1/0xb74c385cbf463aa5ba5686e06fa582852bf1dd32/) | ⚠️ Unaudited |
-| TokenLock | unknown | ethereum | n/a | [`0x04b870...7152ef`](./contracts/ethereum-1/0x04b870c7e3b1bb22171cb3ce0239bc12cf7152ef/) | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | ethereum | n/a | [`0x0be902...5c5bee`](./contracts/ethereum-1/0x0be902716176d66364f1c2ecf25829a6d95c5bee/) | ⚠️ Unaudited |
+| MasterChef | unknown | ethereum | n/a | [`0x0a6bfa6aaaef29cbb6c9e25961cc01849b5c97eb`](./contracts/ethereum-1/0x0a6bfa6aaaef29cbb6c9e25961cc01849b5c97eb/) | ⚠️ Unaudited |
+| StakingRewardVault | unknown | ethereum | n/a | [`0x4753659d2e431304eff2a95a16bae4e768acb72b`](./contracts/ethereum-1/0x4753659d2e431304eff2a95a16bae4e768acb72b/) | ⚠️ Unaudited |
+| TokenCDS | unknown | ethereum | n/a | [`0x3c48ca59bf2699e51d4974d4b6d284ae52076e5e`](./contracts/ethereum-1/0x3c48ca59bf2699e51d4974d4b6d284ae52076e5e/) | ⚠️ Unaudited |
+| TokenCPDT | unknown | ethereum | n/a | [`0xb74c385cbf463aa5ba5686e06fa582852bf1dd32`](./contracts/ethereum-1/0xb74c385cbf463aa5ba5686e06fa582852bf1dd32/) | ⚠️ Unaudited |
+| TokenLock | unknown | ethereum | n/a | [`0x04b870c7e3b1bb22171cb3ce0239bc12cf7152ef`](./contracts/ethereum-1/0x04b870c7e3b1bb22171cb3ce0239bc12cf7152ef/) | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | ethereum | n/a | [`0x0be902716176d66364f1c2ecf25829a6d95c5bee`](./contracts/ethereum-1/0x0be902716176d66364f1c2ecf25829a6d95c5bee/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,11 +95,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x0a6bfa...5c97eb`](./contracts/ethereum-1/0x0a6bfa6aaaef29cbb6c9e25961cc01849b5c97eb/) | MasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x475365...acb72b`](./contracts/ethereum-1/0x4753659d2e431304eff2a95a16bae4e768acb72b/) | StakingRewardVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x3c48ca...076e5e`](./contracts/ethereum-1/0x3c48ca59bf2699e51d4974d4b6d284ae52076e5e/) | TokenCDS | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xb74c38...f1dd32`](./contracts/ethereum-1/0xb74c385cbf463aa5ba5686e06fa582852bf1dd32/) | TokenCPDT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x04b870...7152ef`](./contracts/ethereum-1/0x04b870c7e3b1bb22171cb3ce0239bc12cf7152ef/) | TokenLock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0a6bfa6aaaef29cbb6c9e25961cc01849b5c97eb`](./contracts/ethereum-1/0x0a6bfa6aaaef29cbb6c9e25961cc01849b5c97eb/) | MasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4753659d2e431304eff2a95a16bae4e768acb72b`](./contracts/ethereum-1/0x4753659d2e431304eff2a95a16bae4e768acb72b/) | StakingRewardVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x3c48ca59bf2699e51d4974d4b6d284ae52076e5e`](./contracts/ethereum-1/0x3c48ca59bf2699e51d4974d4b6d284ae52076e5e/) | TokenCDS | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb74c385cbf463aa5ba5686e06fa582852bf1dd32`](./contracts/ethereum-1/0xb74c385cbf463aa5ba5686e06fa582852bf1dd32/) | TokenCPDT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x04b870c7e3b1bb22171cb3ce0239bc12cf7152ef`](./contracts/ethereum-1/0x04b870c7e3b1bb22171cb3ce0239bc12cf7152ef/) | TokenLock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

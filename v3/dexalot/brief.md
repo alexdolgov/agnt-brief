@@ -90,22 +90,22 @@ The pinned logic-topography run contains 9 contract row(s) across avalanche, ava
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| DexalotToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x093783...47bc69` | ⚠️ Unaudited |
-| Exchange | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | 2 deployments: avalanche `0x16863a...4c67e5`; avalanche `0x4dc10a...81a09a` | ⚠️ Unaudited |
-| Exchange | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-235254 | `0x807687...3d5885` | ⚠️ Unaudited |
-| MainnetRFQ | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2a371c...ceb2dd` | ⚠️ Unaudited |
-| OrderBooks | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | avalanche | unit-235259 | `0x3ece76...99669a` | ⚠️ Unaudited |
-| OrderBooks | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-235255 | `0x9cf797...a9170e` | ⚠️ Unaudited |
-| OrderBooks | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | 2 deployments: avalanche `0xcb1556...2c9d19`; avalanche `0xd95bcc...50584e` | ⚠️ Unaudited |
-| Portfolio | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | 2 deployments: avalanche `0x176e82...cb4ef2`; avalanche `0x43de3a...9cab1a` | ⚠️ Unaudited |
-| Portfolio | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | avalanche | unit-235258 | `0x6f8205...6b5c6e` | ⚠️ Unaudited |
-| Portfolio | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-235257 | `0xac0f30...0de0d4` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-235256 | `0x9faa0a...ae16f2` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xb34f9c...402644` | ⚠️ Unaudited |
-| TradePairs | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | 2 deployments: avalanche `0x16d8a7...097bdd`; avalanche `0x2c0e18...09df10` | ⚠️ Unaudited |
-| TradePairs | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-235253 | `0x625b7d...987ba1` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | proxy | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | avalanche | unit-235261 | `0x12e2b3...694323` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | avalanche | unit-235260 | `0x1d34b4...971e20` | ⚠️ Unaudited |
+| DexalotToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x093783055f9047c2bff99c4e414501f8a147bc69` | ⚠️ Unaudited |
+| Exchange | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | 2 deployments: avalanche `0x16863a1052362012352f07ff3cd23088414c67e5`; avalanche `0x4dc10a62a904bb7b2acd3b99596895ce0681a09a` | ⚠️ Unaudited |
+| Exchange | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-235254 | `0x80768783d18ad5c9de46d2cde398fb0c193d5885` | ⚠️ Unaudited |
+| MainnetRFQ | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2a371cd8e9ee8cfc3efbd7ef13ab40779eceb2dd` | ⚠️ Unaudited |
+| OrderBooks | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | avalanche | unit-235259 | `0x3ece76f7add934fb8a35c9c371c4d545e299669a` | ⚠️ Unaudited |
+| OrderBooks | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-235255 | `0x9cf797df135aa671e97d1b713cdaeea9fca9170e` | ⚠️ Unaudited |
+| OrderBooks | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | 2 deployments: avalanche `0xcb1556a61d047523bce9da9f79939faed62c9d19`; avalanche `0xd95bcc48579a759919201c8f48359d361c50584e` | ⚠️ Unaudited |
+| Portfolio | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | 2 deployments: avalanche `0x176e82bf0d30ec55ae3ef98e4be3922931cb4ef2`; avalanche `0x43de3a895626730c86120873952375e8269cab1a` | ⚠️ Unaudited |
+| Portfolio | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | avalanche | unit-235258 | `0x6f8205cf222dd4c6615991c7f604f366526b5c6e` | ⚠️ Unaudited |
+| Portfolio | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-235257 | `0xac0f301b3f7e1d48553535089bb2c201760de0d4` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-235256 | `0x9faa0a5dcbc0cbc81719ba6f0f1726a8baae16f2` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xb34f9c897edba026efc29a77c2f575e607402644` | ⚠️ Unaudited |
+| TradePairs | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | 2 deployments: avalanche `0x16d8a7e5300acaba43418a6e2c68e159c9097bdd`; avalanche `0x2c0e189edfb3572ac67063bad7def6739109df10` | ⚠️ Unaudited |
+| TradePairs | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-235253 | `0x625b7d76f69095907fc3b467c0c3be07d1987ba1` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | avalanche | unit-235261 | `0x12e2b3236d338651f7ee2222e9756b4222694323` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | avalanche | unit-235260 | `0x1d34b421a5ede3e300d3b8bcf3be5c6f45971e20` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -125,15 +125,15 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x4f605a...32a5fd` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x5a8d53...18737f` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x780380...a44f7c` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x7bc52a...a110f8` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x857f87...3a9ccd` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x96571c...e9d88e` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x983325...b3b0a7` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | n/a | `0xb94ca1...a2010c` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | n/a | `0xf66173...397f67` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x4f605a43571b3d392933a716db1599241732a5fd` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x5a8d5339a21932ebc340af74ee852e69d618737f` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x780380eb4787775b07dfa60fb11c2cdad6a44f7c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x7bc52a18bd45f72ba2ddfd1b5fa4c09936a110f8` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x857f871755390b4f1f70e679406549f08d3a9ccd` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x96571ca61e90f613c404d8a84151921e04e9d88e` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x983325dd4e4038de2eedf6750f85f9c5fcb3b0a7` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | n/a | `0xb94ca123e807f763deeeac4e9ce5f0b432a2010c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | n/a | `0xf661737c6ab555af9b48ce7ec1db10cc8f397f67` | ❓ Unverified |
 
 ## Audit Inventory
 

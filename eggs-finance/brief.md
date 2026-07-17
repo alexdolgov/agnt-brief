@@ -57,15 +57,15 @@ The protocol forms a single structural family (Core Logic) of 4 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| EGGS | unknown | sonic | n/a | [`0xf26ff7...f019bc`](./contracts/sonic-146/0xf26ff70573ddc8a90bd7865af8d7d70b8ff019bc/) | ✅ Audited |
+| EGGS | unknown | sonic | n/a | [`0xf26ff70573ddc8a90bd7865af8d7d70b8ff019bc`](./contracts/sonic-146/0xf26ff70573ddc8a90bd7865af8d7d70b8ff019bc/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| FeeDistributor | unknown | sonic | n/a | [`0x91f2dd...2d6f58`](./contracts/sonic-146/0x91f2dd4370759161b19e5299cace0b135f2d6f58/) | ⚠️ Unaudited |
-| FeeFix | unknown | sonic | n/a | [`0xec44aa...da0e8b`](./contracts/sonic-146/0xec44aa4fd30f0860f8f39ef4b7a2400785da0e8b/) | ⚠️ Unaudited |
-| FixOwnerEggs | unknown | sonic | n/a | [`0xfb8e17...52695a`](./contracts/sonic-146/0xfb8e178b8b606da5de7417f476472c695a52695a/) | ⚠️ Unaudited |
+| FeeDistributor | unknown | sonic | n/a | [`0x91f2dd4370759161b19e5299cace0b135f2d6f58`](./contracts/sonic-146/0x91f2dd4370759161b19e5299cace0b135f2d6f58/) | ⚠️ Unaudited |
+| FeeFix | unknown | sonic | n/a | [`0xec44aa4fd30f0860f8f39ef4b7a2400785da0e8b`](./contracts/sonic-146/0xec44aa4fd30f0860f8f39ef4b7a2400785da0e8b/) | ⚠️ Unaudited |
+| FixOwnerEggs | unknown | sonic | n/a | [`0xfb8e178b8b606da5de7417f476472c695a52695a`](./contracts/sonic-146/0xfb8e178b8b606da5de7417f476472c695a52695a/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -99,9 +99,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| sonic | [`0x91f2dd...2d6f58`](./contracts/sonic-146/0x91f2dd4370759161b19e5299cace0b135f2d6f58/) | FeeDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0xec44aa...da0e8b`](./contracts/sonic-146/0xec44aa4fd30f0860f8f39ef4b7a2400785da0e8b/) | FeeFix | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0xfb8e17...52695a`](./contracts/sonic-146/0xfb8e178b8b606da5de7417f476472c695a52695a/) | FixOwnerEggs | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x91f2dd4370759161b19e5299cace0b135f2d6f58`](./contracts/sonic-146/0x91f2dd4370759161b19e5299cace0b135f2d6f58/) | FeeDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0xec44aa4fd30f0860f8f39ef4b7a2400785da0e8b`](./contracts/sonic-146/0xec44aa4fd30f0860f8f39ef4b7a2400785da0e8b/) | FeeFix | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0xfb8e178b8b606da5de7417f476472c695a52695a`](./contracts/sonic-146/0xfb8e178b8b606da5de7417f476472c695a52695a/) | FixOwnerEggs | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

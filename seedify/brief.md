@@ -60,11 +60,11 @@ The protocol comprises 3 functional families. Its contracts share 9 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| IDOLocking | unknown | bsc | n/a | 24 deployments: ethereum `0x1d2227...360877`; ethereum `0x399c4a...83ac85`; ethereum `0x453bbf...892754`; ethereum `0x569399...be2c5c`; ethereum `0x80c4c6...2e81c3`; ethereum `0x844645...873d9a`; ethereum `0xbcc572...752fcf`; ethereum `0xc8c639...534e00`; bsc [`0x027fc3...d22a9e`](./contracts/bsc-56/0x027fc3a49383d0e7bd6b81ef6c7512afd7d22a9e/); bsc `0x5745b7...441576`; bsc `0x5b3849...e55273`; bsc `0x60b9f7...8dbfd4`; bsc `0x66b8c1...a6ad0b`; bsc `0x890047...98f776`; bsc `0x89aaab...384859`; bsc `0xb667c4...9fba69`; bsc `0xd01650...8ff47f`; bsc `0xf420f0...670054`; arbitrum `0x129973...bba4a0`; arbitrum `0x1d2227...360877`; arbitrum `0x4d40f0...cdd252`; arbitrum `0x9f07a4...114805`; arbitrum `0xaae435...47d6cd`; arbitrum `0xc30be1...43679a` | ⚠️ Unaudited |
-| InitializableERC20 | token | bsc | n/a | [`0x477bc8...045d12`](./contracts/bsc-56/0x477bc8d23c634c154061869478bce96be6045d12/) | ⚠️ Unaudited |
-| SFUND_OFTv1 | unknown | ethereum | n/a | 2 deployments: ethereum [`0x560363...32fa60`](./contracts/ethereum-1/0x560363bda52bc6a44ca6c8c9b4a5fadbda32fa60/); arbitrum [`0x560363...32fa60`](./contracts/arbitrum-42161/0x560363bda52bc6a44ca6c8c9b4a5fadbda32fa60/) | ⚠️ Unaudited |
-| SMD_v5 | unknown | bsc | n/a | 6 deployments: ethereum `0x925722...c4ab67`; ethereum `0xc5911e...db7537`; bsc [`0x1f1056...eb789e`](./contracts/bsc-56/0x1f10564bad9367cff4247a138ebba9a9aaeb789e/); bsc `0x71d058...a788c0`; arbitrum `0x86bc92...2fd99f`; arbitrum `0xd23223...b53565` | ⚠️ Unaudited |
-| Staking | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0xa63fd3...0c2f68`](./contracts/arbitrum-42161/0xa63fd3833e40bde451f85bdfbe63c6aa4f0c2f68/); arbitrum `0xe85239...2085eb` | ⚠️ Unaudited |
+| IDOLocking | unknown | bsc | n/a | 24 deployments: ethereum `0x1d22275d58a836f8307c306110deafe22e360877`; ethereum `0x399c4a6f640f5cf5575c4d04fec9d28df383ac85`; ethereum `0x453bbf5ad5011a89390a1e96042a19d5f4892754`; ethereum `0x569399bfca76e7664cec6510adc75f2811be2c5c`; ethereum `0x80c4c6bf51e29ab1c9933a2fbc0d4080f42e81c3`; ethereum `0x844645b2b1888b89b78dca1cef2b3ba8ad873d9a`; ethereum `0xbcc572d3f2f619b082794a96a848a23c2a752fcf`; ethereum `0xc8c639b0014a3570b3c66f6df7cc8b81fc534e00`; bsc [`0x027fc3a49383d0e7bd6b81ef6c7512afd7d22a9e`](./contracts/bsc-56/0x027fc3a49383d0e7bd6b81ef6c7512afd7d22a9e/); bsc `0x5745b7e077a76be7ba37208ff71d843347441576`; bsc `0x5b384955ac3460c996402bf03736624a33e55273`; bsc `0x60b9f788f4436f0b5c33785b3499b2ee1d8dbfd4`; bsc `0x66b8c1f8de0574e68366e8c4e47d0c8883a6ad0b`; bsc `0x8900475bf7ed42efcacf9ae8cfc24aa96098f776`; bsc `0x89aaab217272c89da91825d9effbe65ded384859`; bsc `0xb667c499b88ac66899e54e27ad830d423d9fba69`; bsc `0xd01650999bb5740f9bb41168401e9664b28ff47f`; bsc `0xf420f0951f0f50f50c741f6269a4816985670054`; arbitrum `0x1299732e3fbacafeefa9fd31f00de45ae7bba4a0`; arbitrum `0x1d22275d58a836f8307c306110deafe22e360877`; arbitrum `0x4d40f09feebb62505653f8ae9a0b58b58bcdd252`; arbitrum `0x9f07a4cf035f14c0160db2d7d94eb5a41f114805`; arbitrum `0xaae4355b30e18879a12e4e22283da901af47d6cd`; arbitrum `0xc30be140f8ada0fdb0c97377c98ddbe8b343679a` | ⚠️ Unaudited |
+| InitializableERC20 | token | bsc | n/a | [`0x477bc8d23c634c154061869478bce96be6045d12`](./contracts/bsc-56/0x477bc8d23c634c154061869478bce96be6045d12/) | ⚠️ Unaudited |
+| SFUND_OFTv1 | unknown | ethereum | n/a | 2 deployments: ethereum [`0x560363bda52bc6a44ca6c8c9b4a5fadbda32fa60`](./contracts/ethereum-1/0x560363bda52bc6a44ca6c8c9b4a5fadbda32fa60/); arbitrum [`0x560363bda52bc6a44ca6c8c9b4a5fadbda32fa60`](./contracts/arbitrum-42161/0x560363bda52bc6a44ca6c8c9b4a5fadbda32fa60/) | ⚠️ Unaudited |
+| SMD_v5 | unknown | bsc | n/a | 6 deployments: ethereum `0x92572249d487a99c0ed746ee36aaf22a66c4ab67`; ethereum `0xc5911e1ce2fbbb53a8f4bdd4ca49dc9448db7537`; bsc [`0x1f10564bad9367cff4247a138ebba9a9aaeb789e`](./contracts/bsc-56/0x1f10564bad9367cff4247a138ebba9a9aaeb789e/); bsc `0x71d058369d39a8488d8e9f5fd5b050610ca788c0`; arbitrum `0x86bc9293dadb3590c21071e17046854ee62fd99f`; arbitrum `0xd2322397d67026bb1e9bbbcbab30585d19b53565` | ⚠️ Unaudited |
+| Staking | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0xa63fd3833e40bde451f85bdfbe63c6aa4f0c2f68`](./contracts/arbitrum-42161/0xa63fd3833e40bde451f85bdfbe63c6aa4f0c2f68/); arbitrum `0xe8523954d12c4662ba74712e720e6046c42085eb` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -84,9 +84,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | arbitrum | n/a | `0x41484c...699838` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x5ede64...cd74a4` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x8482d2...4f872c` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x41484c0effb25e599a3529a9911b839744699838` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x5ede64cc5bb278777cdf5a67da721ac73dcd74a4` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x8482d2b7c27f7b9f7cf20a70a0fd349ff54f872c` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -100,11 +100,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x027fc3...d22a9e`](./contracts/bsc-56/0x027fc3a49383d0e7bd6b81ef6c7512afd7d22a9e/) | IDOLocking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x477bc8...045d12`](./contracts/bsc-56/0x477bc8d23c634c154061869478bce96be6045d12/) | InitializableERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x560363...32fa60`](./contracts/ethereum-1/0x560363bda52bc6a44ca6c8c9b4a5fadbda32fa60/) | SFUND_OFTv1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x1f1056...eb789e`](./contracts/bsc-56/0x1f10564bad9367cff4247a138ebba9a9aaeb789e/) | SMD_v5 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xa63fd3...0c2f68`](./contracts/arbitrum-42161/0xa63fd3833e40bde451f85bdfbe63c6aa4f0c2f68/) | Staking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x027fc3a49383d0e7bd6b81ef6c7512afd7d22a9e`](./contracts/bsc-56/0x027fc3a49383d0e7bd6b81ef6c7512afd7d22a9e/) | IDOLocking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x477bc8d23c634c154061869478bce96be6045d12`](./contracts/bsc-56/0x477bc8d23c634c154061869478bce96be6045d12/) | InitializableERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x560363bda52bc6a44ca6c8c9b4a5fadbda32fa60`](./contracts/ethereum-1/0x560363bda52bc6a44ca6c8c9b4a5fadbda32fa60/) | SFUND_OFTv1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x1f10564bad9367cff4247a138ebba9a9aaeb789e`](./contracts/bsc-56/0x1f10564bad9367cff4247a138ebba9a9aaeb789e/) | SMD_v5 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xa63fd3833e40bde451f85bdfbe63c6aa4f0c2f68`](./contracts/arbitrum-42161/0xa63fd3833e40bde451f85bdfbe63c6aa4f0c2f68/) | Staking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

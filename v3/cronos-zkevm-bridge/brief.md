@@ -52,16 +52,16 @@ The pinned logic-topography run contains 3 contract row(s) across cronos, ethere
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x2260fa...c2c599`, chain 1)
-- UnnamedContract (`0x3766eb...3c356d`, chain 1)
-- UnnamedContract (`0x5d8ba1...bad06e`, chain 1)
-- UnnamedContract (`0xa0b73e...34450b`, chain 1)
-- UnnamedContract (`0xa0b869...06eb48`, chain 1)
-- UnnamedContract (`0xd7f9f5...8cb2cb`, chain 1)
-- UnnamedContract (`0xfa5907...0f594a`, chain 1)
-- ERC1967Proxy (`0x28ff2e...1e44e2`, chain 1)
-- ERC1967Proxy (`0x76bf2d...dfc351`, chain 1)
-- ZkCroMintAndBridge (`0xe69a53...ab4e12`, chain 1)
+- UnnamedContract (`0x2260fac5e5542a773aa44fbcfedf7c193bc2c599`, chain 1)
+- UnnamedContract (`0x3766eb5f07dbc60d39a2059a9a29fd9b7d3c356d`, chain 1)
+- UnnamedContract (`0x5d8ba173dc6c3c90c8f7c04c9288bef5fdbad06e`, chain 1)
+- UnnamedContract (`0xa0b73e1ff0b80914ab6fe0444e65848c4c34450b`, chain 1)
+- UnnamedContract (`0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48`, chain 1)
+- UnnamedContract (`0xd7f9f54194c633f36ccd5f3da84ad4a1c38cb2cb`, chain 1)
+- UnnamedContract (`0xfa59075dfce274e028b58bddfcc3d709960f594a`, chain 1)
+- ERC1967Proxy (`0x28ff2e4dd1b58efeb0fc138602a28d5ae81e44e2`, chain 1)
+- ERC1967Proxy (`0x76bf2d1e6dfda645c0c17440b17eccc181dfc351`, chain 1)
+- ZkCroMintAndBridge (`0xe69a535730858fd8dc386b448972a9f801ab4e12`, chain 1)
 
 ## Contract Surface Quality
 
@@ -107,15 +107,15 @@ The pinned logic-topography run contains 3 contract row(s) across cronos, ethere
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BridgeMiddleware | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x248c73...a0b01e` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-234579 | `0x28ff2e...1e44e2` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-234580 | `0x76bf2d...dfc351` | ⚠️ Unaudited |
-| EthereumDeposit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe8dd48...32d2ac` | ⚠️ Unaudited |
-| YbEthBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd91629...bdf73f` | ⚠️ Unaudited |
-| YbEthNft | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x43df9d...86d2c5` | ⚠️ Unaudited |
-| YBUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd501a4...32b7ce` | ⚠️ Unaudited |
-| YBUSDBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x17daca...d014f8` | ⚠️ Unaudited |
-| ZkCroMintAndBridge | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234560 | `0xe69a53...ab4e12` | ⚠️ Unaudited |
+| BridgeMiddleware | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x248c731b155af4cae198af705fb803f087a0b01e` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-234579 | `0x28ff2e4dd1b58efeb0fc138602a28d5ae81e44e2` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-234580 | `0x76bf2d1e6dfda645c0c17440b17eccc181dfc351` | ⚠️ Unaudited |
+| EthereumDeposit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe8dd4838c47ebf87d8fdb63e7f6dd02c7432d2ac` | ⚠️ Unaudited |
+| YbEthBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd91629518a1ec964cfce27c2a939f689dcbdf73f` | ⚠️ Unaudited |
+| YbEthNft | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x43df9d854d3fcb882847b9a638cabd06fe86d2c5` | ⚠️ Unaudited |
+| YBUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd501a4d2141799f3228c40af972df622c632b7ce` | ⚠️ Unaudited |
+| YBUSDBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x17dacad8aa962963830136422e2eaa8d27d014f8` | ⚠️ Unaudited |
+| ZkCroMintAndBridge | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234560 | `0xe69a535730858fd8dc386b448972a9f801ab4e12` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -135,22 +135,22 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234545 | `0x2260fa...c2c599` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234547 | `0x3766eb...3c356d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234549 | `0x5d8ba1...bad06e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234552 | `0xa0b73e...34450b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234553 | `0xa0b869...06eb48` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234559 | `0xd7f9f5...8cb2cb` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234562 | `0xfa5907...0f594a` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-234565 | `0x35a54c...394c92` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-234566 | `0x3e8b2f...2d18ae` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-234567 | `0x49ce75...0e8204` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-234568 | `0x4f1ced...10118a` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-234569 | `0x68a9af...1eff08` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-234573 | `0xa3062a...98483a` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-234574 | `0xd2b686...5b1ec8` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-234575 | `0xd38766...f34453` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-234577 | `0xf3dfc5...22b545` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234545 | `0x2260fac5e5542a773aa44fbcfedf7c193bc2c599` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234547 | `0x3766eb5f07dbc60d39a2059a9a29fd9b7d3c356d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234549 | `0x5d8ba173dc6c3c90c8f7c04c9288bef5fdbad06e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234552 | `0xa0b73e1ff0b80914ab6fe0444e65848c4c34450b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234553 | `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234559 | `0xd7f9f54194c633f36ccd5f3da84ad4a1c38cb2cb` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-234562 | `0xfa59075dfce274e028b58bddfcc3d709960f594a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-234565 | `0x35a54c8c757806eb6820629bc82d90e056394c92` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-234566 | `0x3e8b2fe58675126ed30d0d12dea2a9bda72d18ae` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-234567 | `0x49ce7551514f3c2bf44b50442765bb112d0e8204` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-234568 | `0x4f1cedf1be03f2100206af843851c9b14210118a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-234569 | `0x68a9affe98aed0749351e63a9cf95969cb1eff08` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-234573 | `0xa3062ab8d613489d8ba5303123240f7e8e98483a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-234574 | `0xd2b6865fd9811d00121f6678a78dbc1cd95b1ec8` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-234575 | `0xd3876643180a79d0a56d0900c060528395f34453` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-234577 | `0xf3dfc52db4604cbd6eda747a70c82d7be122b545` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -169,7 +169,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0xe69a53...ab4e12` | ZkCroMintAndBridge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xe69a535730858fd8dc386b448972a9f801ab4e12` | ZkCroMintAndBridge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

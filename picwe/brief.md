@@ -61,11 +61,11 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| FiatTokenProxy | unknown | arbitrum | n/a | [`0xaf88d0...8e5831`](./contracts/arbitrum-42161/0xaf88d065e77c8cc2239327c5edb3a432268e5831/) | ⚠️ Unaudited |
-| FiatTokenV2_1 | unknown | arbitrum | n/a | [`0x0f4fb9...b6e04a`](./contracts/arbitrum-42161/0x0f4fb9474303d10905ab86aa8d5a65fe44b6e04a/) | ⚠️ Unaudited |
-| MasterMinter | unknown | arbitrum | n/a | [`0x8aff09...eeab36`](./contracts/arbitrum-42161/0x8aff09e2259cacbf4fc4e3e53f3bf799efeeab36/) | ⚠️ Unaudited |
-| PicWe_USD | unknown | base | n/a | [`0xdd73ea...d89d56`](./contracts/base-8453/0xdd73ea766b80417c0607a3f08e34a0c415d89d56/) | ⚠️ Unaudited |
-| WeUSDMintRedeem | unknown | base | n/a | [`0x5d54f1...3ef22c`](./contracts/base-8453/0x5d54f1092fd1750a3ab96972dc1867c5b23ef22c/) | ⚠️ Unaudited |
+| FiatTokenProxy | unknown | arbitrum | n/a | [`0xaf88d065e77c8cc2239327c5edb3a432268e5831`](./contracts/arbitrum-42161/0xaf88d065e77c8cc2239327c5edb3a432268e5831/) | ⚠️ Unaudited |
+| FiatTokenV2_1 | unknown | arbitrum | n/a | [`0x0f4fb9474303d10905ab86aa8d5a65fe44b6e04a`](./contracts/arbitrum-42161/0x0f4fb9474303d10905ab86aa8d5a65fe44b6e04a/) | ⚠️ Unaudited |
+| MasterMinter | unknown | arbitrum | n/a | [`0x8aff09e2259cacbf4fc4e3e53f3bf799efeeab36`](./contracts/arbitrum-42161/0x8aff09e2259cacbf4fc4e3e53f3bf799efeeab36/) | ⚠️ Unaudited |
+| PicWe_USD | unknown | base | n/a | [`0xdd73ea766b80417c0607a3f08e34a0c415d89d56`](./contracts/base-8453/0xdd73ea766b80417c0607a3f08e34a0c415d89d56/) | ⚠️ Unaudited |
+| WeUSDMintRedeem | unknown | base | n/a | [`0x5d54f1092fd1750a3ab96972dc1867c5b23ef22c`](./contracts/base-8453/0x5d54f1092fd1750a3ab96972dc1867c5b23ef22c/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -97,11 +97,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | [`0xaf88d0...8e5831`](./contracts/arbitrum-42161/0xaf88d065e77c8cc2239327c5edb3a432268e5831/) | FiatTokenProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x0f4fb9...b6e04a`](./contracts/arbitrum-42161/0x0f4fb9474303d10905ab86aa8d5a65fe44b6e04a/) | FiatTokenV2_1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x8aff09...eeab36`](./contracts/arbitrum-42161/0x8aff09e2259cacbf4fc4e3e53f3bf799efeeab36/) | MasterMinter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xdd73ea...d89d56`](./contracts/base-8453/0xdd73ea766b80417c0607a3f08e34a0c415d89d56/) | PicWe_USD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x5d54f1...3ef22c`](./contracts/base-8453/0x5d54f1092fd1750a3ab96972dc1867c5b23ef22c/) | WeUSDMintRedeem | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xaf88d065e77c8cc2239327c5edb3a432268e5831`](./contracts/arbitrum-42161/0xaf88d065e77c8cc2239327c5edb3a432268e5831/) | FiatTokenProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x0f4fb9474303d10905ab86aa8d5a65fe44b6e04a`](./contracts/arbitrum-42161/0x0f4fb9474303d10905ab86aa8d5a65fe44b6e04a/) | FiatTokenV2_1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x8aff09e2259cacbf4fc4e3e53f3bf799efeeab36`](./contracts/arbitrum-42161/0x8aff09e2259cacbf4fc4e3e53f3bf799efeeab36/) | MasterMinter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xdd73ea766b80417c0607a3f08e34a0c415d89d56`](./contracts/base-8453/0xdd73ea766b80417c0607a3f08e34a0c415d89d56/) | PicWe_USD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x5d54f1092fd1750a3ab96972dc1867c5b23ef22c`](./contracts/base-8453/0x5d54f1092fd1750a3ab96972dc1867c5b23ef22c/) | WeUSDMintRedeem | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

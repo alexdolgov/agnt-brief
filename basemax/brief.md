@@ -61,16 +61,16 @@ The protocol comprises 3 functional families. Its contracts share 4 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| OrderExecutor | unknown | base | n/a | 2 deployments: base [`0x83fdb1...bb4900`](./contracts/base-8453/0x83fdb159053b8d343900e72a358f9c778fbb4900/); base `0xd63c0f...416008` | ✅ Audited |
+| OrderExecutor | unknown | base | n/a | 2 deployments: base [`0x83fdb159053b8d343900e72a358f9c778fbb4900`](./contracts/base-8453/0x83fdb159053b8d343900e72a358f9c778fbb4900/); base `0xd63c0f3c9685cbdc7ebdc81e3c33154e70416008` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (4)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BLP | unknown | base | n/a | [`0x99e526...76183e`](./contracts/base-8453/0x99e526db61e1fe588acb27e17207105ace76183e/) | ⚠️ Unaudited |
-| BsmToken | token | base | n/a | [`0xc5dc1b...440883`](./contracts/base-8453/0xc5dc1b9413c47089641d811b6336c0f2fe440883/) | ⚠️ Unaudited |
-| esBSM | unknown | base | n/a | [`0x0e3445...5c99e2`](./contracts/base-8453/0x0e34454e8e0de27a37d45f5623636ee05d5c99e2/) | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | base | n/a | [`0xd2eb1d...c40a25`](./contracts/base-8453/0xd2eb1de935fe66501aece023b0437fa7b9c40a25/) | ⚠️ Unaudited |
+| BLP | unknown | base | n/a | [`0x99e526db61e1fe588acb27e17207105ace76183e`](./contracts/base-8453/0x99e526db61e1fe588acb27e17207105ace76183e/) | ⚠️ Unaudited |
+| BsmToken | token | base | n/a | [`0xc5dc1b9413c47089641d811b6336c0f2fe440883`](./contracts/base-8453/0xc5dc1b9413c47089641d811b6336c0f2fe440883/) | ⚠️ Unaudited |
+| esBSM | unknown | base | n/a | [`0x0e34454e8e0de27a37d45f5623636ee05d5c99e2`](./contracts/base-8453/0x0e34454e8e0de27a37d45f5623636ee05d5c99e2/) | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | base | n/a | [`0xd2eb1de935fe66501aece023b0437fa7b9c40a25`](./contracts/base-8453/0xd2eb1de935fe66501aece023b0437fa7b9c40a25/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -90,8 +90,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | base | n/a | `0x33c3a1...c57d5b` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x9d0c67...94b955` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x33c3a1acb2089312c83ce1b2a296d12755c57d5b` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x9d0c67e387014bcda5736ebb1760bfb3e194b955` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -105,9 +105,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x99e526...76183e`](./contracts/base-8453/0x99e526db61e1fe588acb27e17207105ace76183e/) | BLP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xc5dc1b...440883`](./contracts/base-8453/0xc5dc1b9413c47089641d811b6336c0f2fe440883/) | BsmToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x0e3445...5c99e2`](./contracts/base-8453/0x0e34454e8e0de27a37d45f5623636ee05d5c99e2/) | esBSM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x99e526db61e1fe588acb27e17207105ace76183e`](./contracts/base-8453/0x99e526db61e1fe588acb27e17207105ace76183e/) | BLP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xc5dc1b9413c47089641d811b6336c0f2fe440883`](./contracts/base-8453/0xc5dc1b9413c47089641d811b6336c0f2fe440883/) | BsmToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x0e34454e8e0de27a37d45f5623636ee05d5c99e2`](./contracts/base-8453/0x0e34454e8e0de27a37d45f5623636ee05d5c99e2/) | esBSM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

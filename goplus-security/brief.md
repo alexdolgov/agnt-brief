@@ -59,23 +59,23 @@ The protocol comprises 6 functional families. Its contracts share 16 common proj
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| GPS | unknown | base | n/a | [`0x0c1dc7...a0dca5`](./contracts/base-8453/0x0c1dc73159e30c4b06170f2593d3118968a0dca5/) | ✅ Audited |
+| GPS | unknown | base | n/a | [`0x0c1dc73159e30c4b06170f2593d3118968a0dca5`](./contracts/base-8453/0x0c1dc73159e30c4b06170f2593d3118968a0dca5/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (11)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| FiatTokenV2_2 | token | ethereum | n/a | [`0xa0b869...06eb48`](./contracts/ethereum-1/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/) | ⚠️ Unaudited |
-| GnosisSafeL2 | governance | bsc | n/a | [`0x34ebdd...23e34f`](./contracts/bsc-56/0x34ebddd30ccbd3f1e385b41bdadb30412323e34f/) | ⚠️ Unaudited |
-| LockFactory | registry | base | n/a | [`0x043f40...931a64`](./contracts/base-8453/0x043f4036202c54da27583a996a8c4b9471931a64/) | ⚠️ Unaudited |
-| RevenuePool | core_logic | bsc | n/a | [`0x648d7f...97706c`](./contracts/bsc-56/0x648d7f4ad39186949e37e9223a152435ab97706c/) | ⚠️ Unaudited |
-| SafeTokenFactory | registry | base | n/a | 2 deployments: base [`0x0d648e...579027`](./contracts/base-8453/0x0d648ed434f95f812e6a0e9b74825bad03579027/); arbitrum [`0x0d648e...579027`](./contracts/arbitrum-42161/0x0d648ed434f95f812e6a0e9b74825bad03579027/) | ⚠️ Unaudited |
-| StakingLock | unknown | bsc | n/a | [`0xeca8d7...ffee78`](./contracts/bsc-56/0xeca8d71c1f667f5c122b72af5f6e87b1dcffee78/) | ⚠️ Unaudited |
-| TokenLocker | token | ethereum | n/a | 4 deployments: ethereum [`0xf17a08...dec04b`](./contracts/ethereum-1/0xf17a08a7d41f53b24ad07eb322cbbda2ebdec04b/); bsc [`0xf17a08...dec04b`](./contracts/bsc-56/0xf17a08a7d41f53b24ad07eb322cbbda2ebdec04b/); base [`0xf17a08...dec04b`](./contracts/base-8453/0xf17a08a7d41f53b24ad07eb322cbbda2ebdec04b/); arbitrum [`0xf17a08...dec04b`](./contracts/arbitrum-42161/0xf17a08a7d41f53b24ad07eb322cbbda2ebdec04b/) | ⚠️ Unaudited |
-| TokenTemplate | token | arbitrum | n/a | [`0x24a9eb...bbfa0d`](./contracts/arbitrum-42161/0x24a9eb23de8e6f59bdb981b03e847f0f3abbfa0d/) | ⚠️ Unaudited |
-| UniV3LPLocker | unknown | ethereum | n/a | 4 deployments: ethereum [`0x25c9c4...a9bd52`](./contracts/ethereum-1/0x25c9c4b56e820e0dea438b145284f02d9ca9bd52/); bsc [`0x25c9c4...a9bd52`](./contracts/bsc-56/0x25c9c4b56e820e0dea438b145284f02d9ca9bd52/); base [`0x25c9c4...a9bd52`](./contracts/base-8453/0x25c9c4b56e820e0dea438b145284f02d9ca9bd52/); arbitrum [`0x25c9c4...a9bd52`](./contracts/arbitrum-42161/0x25c9c4b56e820e0dea438b145284f02d9ca9bd52/) | ⚠️ Unaudited |
-| UniV4LiquidityLocker | unknown | base | n/a | 3 deployments: ethereum `0x83eab3...53f7d7`; base [`0x4f26fa...95519e`](./contracts/base-8453/0x4f26fa33bce395d50671cbc8c7a5d3c55a95519e/); base `0xf5cdad...9fcca1` | ⚠️ Unaudited |
-| WETH9 | token | ethereum | n/a | [`0xc02aaa...756cc2`](./contracts/ethereum-1/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2/) | ⚠️ Unaudited |
+| FiatTokenV2_2 | token | ethereum | n/a | [`0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48`](./contracts/ethereum-1/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/) | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | bsc | n/a | [`0x34ebddd30ccbd3f1e385b41bdadb30412323e34f`](./contracts/bsc-56/0x34ebddd30ccbd3f1e385b41bdadb30412323e34f/) | ⚠️ Unaudited |
+| LockFactory | registry | base | n/a | [`0x043f4036202c54da27583a996a8c4b9471931a64`](./contracts/base-8453/0x043f4036202c54da27583a996a8c4b9471931a64/) | ⚠️ Unaudited |
+| RevenuePool | core_logic | bsc | n/a | [`0x648d7f4ad39186949e37e9223a152435ab97706c`](./contracts/bsc-56/0x648d7f4ad39186949e37e9223a152435ab97706c/) | ⚠️ Unaudited |
+| SafeTokenFactory | registry | base | n/a | 2 deployments: base [`0x0d648ed434f95f812e6a0e9b74825bad03579027`](./contracts/base-8453/0x0d648ed434f95f812e6a0e9b74825bad03579027/); arbitrum [`0x0d648ed434f95f812e6a0e9b74825bad03579027`](./contracts/arbitrum-42161/0x0d648ed434f95f812e6a0e9b74825bad03579027/) | ⚠️ Unaudited |
+| StakingLock | unknown | bsc | n/a | [`0xeca8d71c1f667f5c122b72af5f6e87b1dcffee78`](./contracts/bsc-56/0xeca8d71c1f667f5c122b72af5f6e87b1dcffee78/) | ⚠️ Unaudited |
+| TokenLocker | token | ethereum | n/a | 4 deployments: ethereum [`0xf17a08a7d41f53b24ad07eb322cbbda2ebdec04b`](./contracts/ethereum-1/0xf17a08a7d41f53b24ad07eb322cbbda2ebdec04b/); bsc [`0xf17a08a7d41f53b24ad07eb322cbbda2ebdec04b`](./contracts/bsc-56/0xf17a08a7d41f53b24ad07eb322cbbda2ebdec04b/); base [`0xf17a08a7d41f53b24ad07eb322cbbda2ebdec04b`](./contracts/base-8453/0xf17a08a7d41f53b24ad07eb322cbbda2ebdec04b/); arbitrum [`0xf17a08a7d41f53b24ad07eb322cbbda2ebdec04b`](./contracts/arbitrum-42161/0xf17a08a7d41f53b24ad07eb322cbbda2ebdec04b/) | ⚠️ Unaudited |
+| TokenTemplate | token | arbitrum | n/a | [`0x24a9eb23de8e6f59bdb981b03e847f0f3abbfa0d`](./contracts/arbitrum-42161/0x24a9eb23de8e6f59bdb981b03e847f0f3abbfa0d/) | ⚠️ Unaudited |
+| UniV3LPLocker | unknown | ethereum | n/a | 4 deployments: ethereum [`0x25c9c4b56e820e0dea438b145284f02d9ca9bd52`](./contracts/ethereum-1/0x25c9c4b56e820e0dea438b145284f02d9ca9bd52/); bsc [`0x25c9c4b56e820e0dea438b145284f02d9ca9bd52`](./contracts/bsc-56/0x25c9c4b56e820e0dea438b145284f02d9ca9bd52/); base [`0x25c9c4b56e820e0dea438b145284f02d9ca9bd52`](./contracts/base-8453/0x25c9c4b56e820e0dea438b145284f02d9ca9bd52/); arbitrum [`0x25c9c4b56e820e0dea438b145284f02d9ca9bd52`](./contracts/arbitrum-42161/0x25c9c4b56e820e0dea438b145284f02d9ca9bd52/) | ⚠️ Unaudited |
+| UniV4LiquidityLocker | unknown | base | n/a | 3 deployments: ethereum `0x83eab398539af72bf0f0f6a2aa5814d76a53f7d7`; base [`0x4f26fa33bce395d50671cbc8c7a5d3c55a95519e`](./contracts/base-8453/0x4f26fa33bce395d50671cbc8c7a5d3c55a95519e/); base `0xf5cdadd3cb89a69ab72da3cfd93c505c1b9fcca1` | ⚠️ Unaudited |
+| WETH9 | token | ethereum | n/a | [`0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2`](./contracts/ethereum-1/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,20 +95,20 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x29ec7b...cc3c62` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x9a4cd4...acfd6a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xefa940...6de484` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x03b957...c440ba` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x08aa22...22420c` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x0a6d51...0054ee` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x50727f...c24197` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x71fed2...75cffd` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x9594fc...9489fb` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xaf41fa...da9e29` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xb988ba...4db763` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xc0d55d...13660c` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xc75cd1...4ccb63` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xd9a671...11f156` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x29ec7b081ac6fa37d47e65c465d27ba6fdcc3c62` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x9a4cd44c1a55cfda565430dee9bfb54f2aacfd6a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xefa9409f6fd1f8baca0bb067773af0a9316de484` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x03b95716e39bc4b554fb25feb62ceeda59c440ba` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x08aa221235c6a811f842bf6219119591ee22420c` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x0a6d51e54e9b1918b72d8c02d6fad24dbc0054ee` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x50727f960148fe4f22a8fff844698b461ac24197` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x71fed2e47c3ce5122fbcd23cf272ee5e4175cffd` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x9594fc5cf4385ed250f9310845844756209489fb` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xaf41fa6e62c4eef52eeb1f49a08397db20da9e29` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xb988ba68ddd327bad7588b0bfc164f48f14db763` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xc0d55dbafce4b2d4aedb6c406452292bfb13660c` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xc75cd11ccc9459e9a740b177316b2d0cdb4ccb63` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xd9a67130e419a00c5d284b1c3b94b74b7011f156` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -123,16 +123,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xa0b869...06eb48`](./contracts/ethereum-1/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/) | FiatTokenV2_2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x043f40...931a64`](./contracts/base-8453/0x043f4036202c54da27583a996a8c4b9471931a64/) | LockFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x648d7f...97706c`](./contracts/bsc-56/0x648d7f4ad39186949e37e9223a152435ab97706c/) | RevenuePool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x0d648e...579027`](./contracts/base-8453/0x0d648ed434f95f812e6a0e9b74825bad03579027/) | SafeTokenFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xeca8d7...ffee78`](./contracts/bsc-56/0xeca8d71c1f667f5c122b72af5f6e87b1dcffee78/) | StakingLock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xf17a08...dec04b`](./contracts/ethereum-1/0xf17a08a7d41f53b24ad07eb322cbbda2ebdec04b/) | TokenLocker | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x24a9eb...bbfa0d`](./contracts/arbitrum-42161/0x24a9eb23de8e6f59bdb981b03e847f0f3abbfa0d/) | TokenTemplate | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x25c9c4...a9bd52`](./contracts/ethereum-1/0x25c9c4b56e820e0dea438b145284f02d9ca9bd52/) | UniV3LPLocker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x4f26fa...95519e`](./contracts/base-8453/0x4f26fa33bce395d50671cbc8c7a5d3c55a95519e/) | UniV4LiquidityLocker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc02aaa...756cc2`](./contracts/ethereum-1/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2/) | WETH9 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48`](./contracts/ethereum-1/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/) | FiatTokenV2_2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x043f4036202c54da27583a996a8c4b9471931a64`](./contracts/base-8453/0x043f4036202c54da27583a996a8c4b9471931a64/) | LockFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x648d7f4ad39186949e37e9223a152435ab97706c`](./contracts/bsc-56/0x648d7f4ad39186949e37e9223a152435ab97706c/) | RevenuePool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x0d648ed434f95f812e6a0e9b74825bad03579027`](./contracts/base-8453/0x0d648ed434f95f812e6a0e9b74825bad03579027/) | SafeTokenFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xeca8d71c1f667f5c122b72af5f6e87b1dcffee78`](./contracts/bsc-56/0xeca8d71c1f667f5c122b72af5f6e87b1dcffee78/) | StakingLock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xf17a08a7d41f53b24ad07eb322cbbda2ebdec04b`](./contracts/ethereum-1/0xf17a08a7d41f53b24ad07eb322cbbda2ebdec04b/) | TokenLocker | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x24a9eb23de8e6f59bdb981b03e847f0f3abbfa0d`](./contracts/arbitrum-42161/0x24a9eb23de8e6f59bdb981b03e847f0f3abbfa0d/) | TokenTemplate | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x25c9c4b56e820e0dea438b145284f02d9ca9bd52`](./contracts/ethereum-1/0x25c9c4b56e820e0dea438b145284f02d9ca9bd52/) | UniV3LPLocker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x4f26fa33bce395d50671cbc8c7a5d3c55a95519e`](./contracts/base-8453/0x4f26fa33bce395d50671cbc8c7a5d3c55a95519e/) | UniV4LiquidityLocker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2`](./contracts/ethereum-1/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2/) | WETH9 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

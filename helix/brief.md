@@ -61,15 +61,15 @@ The protocol comprises 2 functional families. Its contracts share 3 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| HelixAuthoriser | unknown | ethereum | n/a | [`0x3e3386...61fc49`](./contracts/ethereum-1/0x3e33865107d728336563c9a9d479173fcf61fc49/) | ⚠️ Unaudited |
-| HelixConfig | unknown | ethereum | n/a | [`0x8c83f9...a3dd4a`](./contracts/ethereum-1/0x8c83f98953f5035cbef60d2da964f8111fa3dd4a/) | ⚠️ Unaudited |
-| HelixDeal | unknown | ethereum | n/a | [`0xcef1ce...3e62c6`](./contracts/ethereum-1/0xcef1ce6b10886a8e7698f51bad265c35883e62c6/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | ethereum | n/a | [`0x7ce464...c64e3b`](./contracts/ethereum-1/0x7ce4646402d94f6006af0c7c54ce70fb7dc64e3b/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x1c2274...bab4dc`](./contracts/ethereum-1/0x1c227497dea66f59811db6ee3a3bcfe148bab4dc/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x274515...a4cc36`](./contracts/ethereum-1/0x274515b23b9c4dd616c88a6c5d715f5c88a4cc36/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x42012e...153b95`](./contracts/ethereum-1/0x42012e315c70af46585581803066243f95153b95/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x4512ab...5df999`](./contracts/ethereum-1/0x4512abc6384431d107d264dc2c8cfe1c475df999/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x67c3a8...79d740`](./contracts/ethereum-1/0x67c3a8ecd374b46d335105323f5888f70679d740/) | ⚠️ Unaudited |
+| HelixAuthoriser | unknown | ethereum | n/a | [`0x3e33865107d728336563c9a9d479173fcf61fc49`](./contracts/ethereum-1/0x3e33865107d728336563c9a9d479173fcf61fc49/) | ⚠️ Unaudited |
+| HelixConfig | unknown | ethereum | n/a | [`0x8c83f98953f5035cbef60d2da964f8111fa3dd4a`](./contracts/ethereum-1/0x8c83f98953f5035cbef60d2da964f8111fa3dd4a/) | ⚠️ Unaudited |
+| HelixDeal | unknown | ethereum | n/a | [`0xcef1ce6b10886a8e7698f51bad265c35883e62c6`](./contracts/ethereum-1/0xcef1ce6b10886a8e7698f51bad265c35883e62c6/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | ethereum | n/a | [`0x7ce4646402d94f6006af0c7c54ce70fb7dc64e3b`](./contracts/ethereum-1/0x7ce4646402d94f6006af0c7c54ce70fb7dc64e3b/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x1c227497dea66f59811db6ee3a3bcfe148bab4dc`](./contracts/ethereum-1/0x1c227497dea66f59811db6ee3a3bcfe148bab4dc/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x274515b23b9c4dd616c88a6c5d715f5c88a4cc36`](./contracts/ethereum-1/0x274515b23b9c4dd616c88a6c5d715f5c88a4cc36/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x42012e315c70af46585581803066243f95153b95`](./contracts/ethereum-1/0x42012e315c70af46585581803066243f95153b95/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x4512abc6384431d107d264dc2c8cfe1c475df999`](./contracts/ethereum-1/0x4512abc6384431d107d264dc2c8cfe1c475df999/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x67c3a8ecd374b46d335105323f5888f70679d740`](./contracts/ethereum-1/0x67c3a8ecd374b46d335105323f5888f70679d740/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -100,9 +100,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x3e3386...61fc49`](./contracts/ethereum-1/0x3e33865107d728336563c9a9d479173fcf61fc49/) | HelixAuthoriser | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x8c83f9...a3dd4a`](./contracts/ethereum-1/0x8c83f98953f5035cbef60d2da964f8111fa3dd4a/) | HelixConfig | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xcef1ce...3e62c6`](./contracts/ethereum-1/0xcef1ce6b10886a8e7698f51bad265c35883e62c6/) | HelixDeal | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x3e33865107d728336563c9a9d479173fcf61fc49`](./contracts/ethereum-1/0x3e33865107d728336563c9a9d479173fcf61fc49/) | HelixAuthoriser | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8c83f98953f5035cbef60d2da964f8111fa3dd4a`](./contracts/ethereum-1/0x8c83f98953f5035cbef60d2da964f8111fa3dd4a/) | HelixConfig | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xcef1ce6b10886a8e7698f51bad265c35883e62c6`](./contracts/ethereum-1/0xcef1ce6b10886a8e7698f51bad265c35883e62c6/) | HelixDeal | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

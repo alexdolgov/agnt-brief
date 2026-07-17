@@ -61,9 +61,9 @@ The protocol comprises 5 functional families. Contracts are linked by 2 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Bridge | operational_periphery | sonic | n/a | [`0x9ef762...c895b3`](./contracts/sonic-146/0x9ef7629f9b930168b76283add7120777b3c895b3/) | ⚠️ Unaudited |
-| MessageBus | operational_periphery | sonic | n/a | [`0xb5b371...925308`](./contracts/sonic-146/0xb5b371b75f9850ddd6ccb6c436db54972a925308/) | ⚠️ Unaudited |
-| UpdateManager | governance | sonic | n/a | [`0x1d3c99...176bb7`](./contracts/sonic-146/0x1d3c99da3cef5c26f02a86dc7d685efa40176bb7/) | ⚠️ Unaudited |
+| Bridge | operational_periphery | sonic | n/a | [`0x9ef7629f9b930168b76283add7120777b3c895b3`](./contracts/sonic-146/0x9ef7629f9b930168b76283add7120777b3c895b3/) | ⚠️ Unaudited |
+| MessageBus | operational_periphery | sonic | n/a | [`0xb5b371b75f9850ddd6ccb6c436db54972a925308`](./contracts/sonic-146/0xb5b371b75f9850ddd6ccb6c436db54972a925308/) | ⚠️ Unaudited |
+| UpdateManager | governance | sonic | n/a | [`0x1d3c99da3cef5c26f02a86dc7d685efa40176bb7`](./contracts/sonic-146/0x1d3c99da3cef5c26f02a86dc7d685efa40176bb7/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -96,9 +96,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| sonic | [`0x9ef762...c895b3`](./contracts/sonic-146/0x9ef7629f9b930168b76283add7120777b3c895b3/) | Bridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0xb5b371...925308`](./contracts/sonic-146/0xb5b371b75f9850ddd6ccb6c436db54972a925308/) | MessageBus | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0x1d3c99...176bb7`](./contracts/sonic-146/0x1d3c99da3cef5c26f02a86dc7d685efa40176bb7/) | UpdateManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x9ef7629f9b930168b76283add7120777b3c895b3`](./contracts/sonic-146/0x9ef7629f9b930168b76283add7120777b3c895b3/) | Bridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0xb5b371b75f9850ddd6ccb6c436db54972a925308`](./contracts/sonic-146/0xb5b371b75f9850ddd6ccb6c436db54972a925308/) | MessageBus | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x1d3c99da3cef5c26f02a86dc7d685efa40176bb7`](./contracts/sonic-146/0x1d3c99da3cef5c26f02a86dc7d685efa40176bb7/) | UpdateManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

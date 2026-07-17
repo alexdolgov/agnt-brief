@@ -61,18 +61,18 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| LegionAddressRegistry | unknown | ethereum | n/a | [`0x58ddd0...52aed7`](./contracts/ethereum-1/0x58ddd0816120cab3e646dd57b9722b016552aed7/) | ✅ Audited |
-| LegionPreLiquidSaleV1Factory | unknown | ethereum | n/a | [`0x6d1a5c...b5c4e7`](./contracts/ethereum-1/0x6d1a5c2c7f71c3a16a36a247f12ce8aedeb5c4e7/) | ✅ Audited |
+| LegionAddressRegistry | unknown | ethereum | n/a | [`0x58ddd0816120cab3e646dd57b9722b016552aed7`](./contracts/ethereum-1/0x58ddd0816120cab3e646dd57b9722b016552aed7/) | ✅ Audited |
+| LegionPreLiquidSaleV1Factory | unknown | ethereum | n/a | [`0x6d1a5c2c7f71c3a16a36a247f12ce8aedeb5c4e7`](./contracts/ethereum-1/0x6d1a5c2c7f71c3a16a36a247f12ce8aedeb5c4e7/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| DiamondHandsVault | unknown | ethereum | n/a | [`0x3548a8...60d514`](./contracts/ethereum-1/0x3548a8345a37f58f232f97eb050c937fb660d514/) | ⚠️ Unaudited |
-| LegionBouncer | unknown | ethereum | n/a | [`0x4a7aca...500533`](./contracts/ethereum-1/0x4a7aca57a685c9e893f60a716415e5e588500533/) | ⚠️ Unaudited |
-| LegionPreLiquidSaleV2Factory | unknown | ethereum | n/a | [`0x5acc2f...3efb24`](./contracts/ethereum-1/0x5acc2f2ac83e4615f85cfc9a5bc903355a3efb24/) | ⚠️ Unaudited |
-| LegionTokenDistributorFactory | unknown | ethereum | n/a | [`0xd009f5...a97f9d`](./contracts/ethereum-1/0xd009f57acece44e6e22ff481f2f325fea8a97f9d/) | ⚠️ Unaudited |
-| LegionVestingFactory | unknown | ethereum | n/a | [`0x7832d6...5e9e5f`](./contracts/ethereum-1/0x7832d6730aa93f6954ca158e392b21d0a95e9e5f/) | ⚠️ Unaudited |
+| DiamondHandsVault | unknown | ethereum | n/a | [`0x3548a8345a37f58f232f97eb050c937fb660d514`](./contracts/ethereum-1/0x3548a8345a37f58f232f97eb050c937fb660d514/) | ⚠️ Unaudited |
+| LegionBouncer | unknown | ethereum | n/a | [`0x4a7aca57a685c9e893f60a716415e5e588500533`](./contracts/ethereum-1/0x4a7aca57a685c9e893f60a716415e5e588500533/) | ⚠️ Unaudited |
+| LegionPreLiquidSaleV2Factory | unknown | ethereum | n/a | [`0x5acc2f2ac83e4615f85cfc9a5bc903355a3efb24`](./contracts/ethereum-1/0x5acc2f2ac83e4615f85cfc9a5bc903355a3efb24/) | ⚠️ Unaudited |
+| LegionTokenDistributorFactory | unknown | ethereum | n/a | [`0xd009f57acece44e6e22ff481f2f325fea8a97f9d`](./contracts/ethereum-1/0xd009f57acece44e6e22ff481f2f325fea8a97f9d/) | ⚠️ Unaudited |
+| LegionVestingFactory | unknown | ethereum | n/a | [`0x7832d6730aa93f6954ca158e392b21d0a95e9e5f`](./contracts/ethereum-1/0x7832d6730aa93f6954ca158e392b21d0a95e9e5f/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -108,11 +108,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x3548a8...60d514`](./contracts/ethereum-1/0x3548a8345a37f58f232f97eb050c937fb660d514/) | DiamondHandsVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x4a7aca...500533`](./contracts/ethereum-1/0x4a7aca57a685c9e893f60a716415e5e588500533/) | LegionBouncer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x5acc2f...3efb24`](./contracts/ethereum-1/0x5acc2f2ac83e4615f85cfc9a5bc903355a3efb24/) | LegionPreLiquidSaleV2Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xd009f5...a97f9d`](./contracts/ethereum-1/0xd009f57acece44e6e22ff481f2f325fea8a97f9d/) | LegionTokenDistributorFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x7832d6...5e9e5f`](./contracts/ethereum-1/0x7832d6730aa93f6954ca158e392b21d0a95e9e5f/) | LegionVestingFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x3548a8345a37f58f232f97eb050c937fb660d514`](./contracts/ethereum-1/0x3548a8345a37f58f232f97eb050c937fb660d514/) | DiamondHandsVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4a7aca57a685c9e893f60a716415e5e588500533`](./contracts/ethereum-1/0x4a7aca57a685c9e893f60a716415e5e588500533/) | LegionBouncer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5acc2f2ac83e4615f85cfc9a5bc903355a3efb24`](./contracts/ethereum-1/0x5acc2f2ac83e4615f85cfc9a5bc903355a3efb24/) | LegionPreLiquidSaleV2Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xd009f57acece44e6e22ff481f2f325fea8a97f9d`](./contracts/ethereum-1/0xd009f57acece44e6e22ff481f2f325fea8a97f9d/) | LegionTokenDistributorFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x7832d6730aa93f6954ca158e392b21d0a95e9e5f`](./contracts/ethereum-1/0x7832d6730aa93f6954ca158e392b21d0a95e9e5f/) | LegionVestingFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

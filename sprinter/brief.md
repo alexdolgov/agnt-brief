@@ -60,27 +60,27 @@ The protocol comprises 6 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CensoredTransferFromMulticall | periphery | base | n/a | [`0x7c472e...29b6bb`](./contracts/base-8453/0x7c472eba1945e970a23c903fc8812d469a29b6bb/) | ✅ Audited |
-| LiquidityPool | core_logic | optimism | n/a | 4 deployments: optimism [`0x0e1632...2810eb`](./contracts/optimism-10/0x0e16326e6921395eda2575740374e754b22810eb/); base [`0x0e1632...2810eb`](./contracts/base-8453/0x0e16326e6921395eda2575740374e754b22810eb/); base `0xb58bb9...e5c032`; arbitrum [`0x0e1632...2810eb`](./contracts/arbitrum-42161/0x0e16326e6921395eda2575740374e754b22810eb/) | ✅ Audited |
-| LiquidityPoolAave | core_logic | optimism | n/a | 4 deployments: optimism [`0x2022a5...5357b5`](./contracts/optimism-10/0x2022a5600f854cc3218e636239f4dfce9e5357b5/); base [`0x2022a5...5357b5`](./contracts/base-8453/0x2022a5600f854cc3218e636239f4dfce9e5357b5/); base `0x7c2552...c09f4b`; arbitrum [`0x2022a5...5357b5`](./contracts/arbitrum-42161/0x2022a5600f854cc3218e636239f4dfce9e5357b5/) | ✅ Audited |
-| Processor | unknown | ethereum | n/a | [`0xffdb38...16286d`](./contracts/ethereum-1/0xffdb380c79d9bf412a61d63060388d761d16286d/) | ✅ Audited |
-| Rebalancer | adapter | optimism | n/a | [`0xa85cf4...869888`](./contracts/optimism-10/0xa85cf46c150db2600b1d03e437bedd5513869888/) | ✅ Audited |
-| Rebalancer | adapter | base | n/a | [`0xa85cf4...869888`](./contracts/base-8453/0xa85cf46c150db2600b1d03e437bedd5513869888/) | ✅ Audited |
-| Rebalancer | adapter | arbitrum | n/a | [`0xa85cf4...869888`](./contracts/arbitrum-42161/0xa85cf46c150db2600b1d03e437bedd5513869888/) | ✅ Audited |
-| Repayer | unknown | optimism | n/a | [`0x36364a...439511`](./contracts/optimism-10/0x36364acc7b9c67692ca215af09a41cbd10439511/) | ✅ Audited |
-| Repayer | unknown | base | n/a | [`0x36364a...439511`](./contracts/base-8453/0x36364acc7b9c67692ca215af09a41cbd10439511/) | ✅ Audited |
-| Repayer | unknown | arbitrum | n/a | [`0x36364a...439511`](./contracts/arbitrum-42161/0x36364acc7b9c67692ca215af09a41cbd10439511/) | ✅ Audited |
-| SprinterLiquidityMining | unknown | base | n/a | [`0x479d15...313c21`](./contracts/base-8453/0x479d158959b59328e89f0fbf7dfebb198c313c21/) | ✅ Audited |
+| CensoredTransferFromMulticall | periphery | base | n/a | [`0x7c472eba1945e970a23c903fc8812d469a29b6bb`](./contracts/base-8453/0x7c472eba1945e970a23c903fc8812d469a29b6bb/) | ✅ Audited |
+| LiquidityPool | core_logic | optimism | n/a | 4 deployments: optimism [`0x0e16326e6921395eda2575740374e754b22810eb`](./contracts/optimism-10/0x0e16326e6921395eda2575740374e754b22810eb/); base [`0x0e16326e6921395eda2575740374e754b22810eb`](./contracts/base-8453/0x0e16326e6921395eda2575740374e754b22810eb/); base `0xb58bb9643884abbbad64fa7ebc874c5481e5c032`; arbitrum [`0x0e16326e6921395eda2575740374e754b22810eb`](./contracts/arbitrum-42161/0x0e16326e6921395eda2575740374e754b22810eb/) | ✅ Audited |
+| LiquidityPoolAave | core_logic | optimism | n/a | 4 deployments: optimism [`0x2022a5600f854cc3218e636239f4dfce9e5357b5`](./contracts/optimism-10/0x2022a5600f854cc3218e636239f4dfce9e5357b5/); base [`0x2022a5600f854cc3218e636239f4dfce9e5357b5`](./contracts/base-8453/0x2022a5600f854cc3218e636239f4dfce9e5357b5/); base `0x7c255279c098fdf6c3116d2becd9978002c09f4b`; arbitrum [`0x2022a5600f854cc3218e636239f4dfce9e5357b5`](./contracts/arbitrum-42161/0x2022a5600f854cc3218e636239f4dfce9e5357b5/) | ✅ Audited |
+| Processor | unknown | ethereum | n/a | [`0xffdb380c79d9bf412a61d63060388d761d16286d`](./contracts/ethereum-1/0xffdb380c79d9bf412a61d63060388d761d16286d/) | ✅ Audited |
+| Rebalancer | adapter | optimism | n/a | [`0xa85cf46c150db2600b1d03e437bedd5513869888`](./contracts/optimism-10/0xa85cf46c150db2600b1d03e437bedd5513869888/) | ✅ Audited |
+| Rebalancer | adapter | base | n/a | [`0xa85cf46c150db2600b1d03e437bedd5513869888`](./contracts/base-8453/0xa85cf46c150db2600b1d03e437bedd5513869888/) | ✅ Audited |
+| Rebalancer | adapter | arbitrum | n/a | [`0xa85cf46c150db2600b1d03e437bedd5513869888`](./contracts/arbitrum-42161/0xa85cf46c150db2600b1d03e437bedd5513869888/) | ✅ Audited |
+| Repayer | unknown | optimism | n/a | [`0x36364acc7b9c67692ca215af09a41cbd10439511`](./contracts/optimism-10/0x36364acc7b9c67692ca215af09a41cbd10439511/) | ✅ Audited |
+| Repayer | unknown | base | n/a | [`0x36364acc7b9c67692ca215af09a41cbd10439511`](./contracts/base-8453/0x36364acc7b9c67692ca215af09a41cbd10439511/) | ✅ Audited |
+| Repayer | unknown | arbitrum | n/a | [`0x36364acc7b9c67692ca215af09a41cbd10439511`](./contracts/arbitrum-42161/0x36364acc7b9c67692ca215af09a41cbd10439511/) | ✅ Audited |
+| SprinterLiquidityMining | unknown | base | n/a | [`0x479d158959b59328e89f0fbf7dfebb198c313c21`](./contracts/base-8453/0x479d158959b59328e89f0fbf7dfebb198c313c21/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| GnosisSafeProxy | governance | base | n/a | [`0x83b8d2...71c1d6`](./contracts/base-8453/0x83b8d2eada788943c3e80892f37f9c102271c1d6/) | ⚠️ Unaudited |
-| LiquidityPoolAaveLongTerm | core_logic | ethereum | n/a | [`0x52d0ee...257788`](./contracts/ethereum-1/0x52d0ee7a870824fc683ea19c714c7bd110257788/) | ⚠️ Unaudited |
-| LiquidityPoolStablecoin | core_logic | ethereum | n/a | [`0xa8d2c9...0a3672`](./contracts/ethereum-1/0xa8d2c9c9453e61e3ca961512403d388dee0a3672/) | ⚠️ Unaudited |
-| ProxyAdmin | governance | base | n/a | 3 deployments: base [`0x2b5d04...1664cb`](./contracts/base-8453/0x2b5d04ef6b3279bcda4b219b02faf627da1664cb/); base `0x818e81...ac5077`; base `0x998c73...91d47b` | ⚠️ Unaudited |
-| SafeProxy | unknown | base | n/a | [`0x4ea9e6...810636`](./contracts/base-8453/0x4ea9e682ba79bc403523c9e8d98a05eaf3810636/) | ⚠️ Unaudited |
+| GnosisSafeProxy | governance | base | n/a | [`0x83b8d2eada788943c3e80892f37f9c102271c1d6`](./contracts/base-8453/0x83b8d2eada788943c3e80892f37f9c102271c1d6/) | ⚠️ Unaudited |
+| LiquidityPoolAaveLongTerm | core_logic | ethereum | n/a | [`0x52d0ee7a870824fc683ea19c714c7bd110257788`](./contracts/ethereum-1/0x52d0ee7a870824fc683ea19c714c7bd110257788/) | ⚠️ Unaudited |
+| LiquidityPoolStablecoin | core_logic | ethereum | n/a | [`0xa8d2c9c9453e61e3ca961512403d388dee0a3672`](./contracts/ethereum-1/0xa8d2c9c9453e61e3ca961512403d388dee0a3672/) | ⚠️ Unaudited |
+| ProxyAdmin | governance | base | n/a | 3 deployments: base [`0x2b5d04ef6b3279bcda4b219b02faf627da1664cb`](./contracts/base-8453/0x2b5d04ef6b3279bcda4b219b02faf627da1664cb/); base `0x818e818ac77112034abf79506d53ba197cac5077`; base `0x998c7392b6dd28031fed052e5ff2bf38f291d47b` | ⚠️ Unaudited |
+| SafeProxy | unknown | base | n/a | [`0x4ea9e682ba79bc403523c9e8d98a05eaf3810636`](./contracts/base-8453/0x4ea9e682ba79bc403523c9e8d98a05eaf3810636/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -117,8 +117,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x52d0ee...257788`](./contracts/ethereum-1/0x52d0ee7a870824fc683ea19c714c7bd110257788/) | LiquidityPoolAaveLongTerm | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa8d2c9...0a3672`](./contracts/ethereum-1/0xa8d2c9c9453e61e3ca961512403d388dee0a3672/) | LiquidityPoolStablecoin | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x52d0ee7a870824fc683ea19c714c7bd110257788`](./contracts/ethereum-1/0x52d0ee7a870824fc683ea19c714c7bd110257788/) | LiquidityPoolAaveLongTerm | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa8d2c9c9453e61e3ca961512403d388dee0a3672`](./contracts/ethereum-1/0xa8d2c9c9453e61e3ca961512403d388dee0a3672/) | LiquidityPoolStablecoin | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

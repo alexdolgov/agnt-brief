@@ -66,33 +66,33 @@ Total inherited audits: 1. Inherited coverage reflects forked/shared code audite
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CamelotMaster | unknown | metis | n/a | [`0x438718...b8ba3d`](./contracts/metis-1088/0x438718e30b6395c4a0b5622490cc3dc9b1b8ba3d/) | ✅ Audited |
-| CamelotYakRouter | unknown | metis | n/a | [`0xf9a6d8...5975d2`](./contracts/metis-1088/0xf9a6d89dccb139e26da4b9df00796c980b5975d2/) | ✅ Audited |
-| DividendsV2 | unknown | metis | n/a | [`0x20b81a...07bd7c`](./contracts/metis-1088/0x20b81a68512d649d48aaae8bdb13b9142707bd7c/) | ✅ Audited |
-| NitroPoolFactory | unknown | metis | n/a | [`0x929cf4...b78989`](./contracts/metis-1088/0x929cf42e62fd2142a1b853bc6fd15d4765b78989/) | ✅ Audited |
-| XGrailToken | unknown | metis | n/a | [`0xce6504...347d0c`](./contracts/metis-1088/0xce65043bd6df95263f80a3185ff4b99b94347d0c/) | ✅ Audited |
+| CamelotMaster | unknown | metis | n/a | [`0x438718e30b6395c4a0b5622490cc3dc9b1b8ba3d`](./contracts/metis-1088/0x438718e30b6395c4a0b5622490cc3dc9b1b8ba3d/) | ✅ Audited |
+| CamelotYakRouter | unknown | metis | n/a | [`0xf9a6d89dccb139e26da4b9df00796c980b5975d2`](./contracts/metis-1088/0xf9a6d89dccb139e26da4b9df00796c980b5975d2/) | ✅ Audited |
+| DividendsV2 | unknown | metis | n/a | [`0x20b81a68512d649d48aaae8bdb13b9142707bd7c`](./contracts/metis-1088/0x20b81a68512d649d48aaae8bdb13b9142707bd7c/) | ✅ Audited |
+| NitroPoolFactory | unknown | metis | n/a | [`0x929cf42e62fd2142a1b853bc6fd15d4765b78989`](./contracts/metis-1088/0x929cf42e62fd2142a1b853bc6fd15d4765b78989/) | ✅ Audited |
+| XGrailToken | unknown | metis | n/a | [`0xce65043bd6df95263f80a3185ff4b99b94347d0c`](./contracts/metis-1088/0xce65043bd6df95263f80a3185ff4b99b94347d0c/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (17)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AlgebraPool | unknown | metis | n/a | [`0x6eeac9...185d94`](./contracts/metis-1088/0x6eeac91f1bd77e1ad9a25c12c6a9577b4c185d94/) | ⚠️ Unaudited |
-| AlgebraStaticQuoter | unknown | metis | n/a | [`0xa07430...df84ab`](./contracts/metis-1088/0xa07430772ec1ec032dc9dcb88fcaac5611df84ab/) | ⚠️ Unaudited |
-| CamelotRouter | unknown | metis | n/a | [`0x14679d...ef027c`](./contracts/metis-1088/0x14679d1da243b8c7d1a4c6d0523a2ce614ef027c/) | ⚠️ Unaudited |
-| ConvertablePUMPKIN | unknown | metis | n/a | [`0x9395dd...43c06f`](./contracts/metis-1088/0x9395dd0b6de5ee28f83b3fdfd03e4db72443c06f/) | ⚠️ Unaudited |
-| FairAuction | unknown | metis | n/a | [`0x07e94a...117f56`](./contracts/metis-1088/0x07e94ab61f8b3f59b6695ba66e0a5de367117f56/) | ⚠️ Unaudited |
-| GammaUniProxyHelper | unknown | metis | n/a | [`0xd882a7...5241a8`](./contracts/metis-1088/0xd882a7ad21a6432b806622ba5323716fba5241a8/) | ⚠️ Unaudited |
-| GrailTokenV2 | unknown | metis | n/a | [`0x7db501...1dadff`](./contracts/metis-1088/0x7db501b11e07564f24fec6ac4273a0f84f1dadff/) | ⚠️ Unaudited |
-| Launchpad | unknown | metis | n/a | [`0x320356...5970db`](./contracts/metis-1088/0x320356e697bc36414ebc46e5067b2a07195970db/) | ⚠️ Unaudited |
-| LimitOrder | unknown | metis | n/a | [`0x578bb6...7f22c2`](./contracts/metis-1088/0x578bb6acacf821005aca8b0d92c8ee1ada7f22c2/) | ⚠️ Unaudited |
-| Multicall | unknown | metis | n/a | [`0x243182...2cb45a`](./contracts/metis-1088/0x24318244b4ddc2bf93fd95925060bb92ac2cb45a/) | ⚠️ Unaudited |
-| NFTPoolFactory | unknown | metis | n/a | [`0x1e9ed0...09786d`](./contracts/metis-1088/0x1e9ed0c5fcd27f38db47cfa35036fa1db409786d/) | ⚠️ Unaudited |
-| NFTRewardClaimer | unknown | metis | n/a | [`0x2c8853...669c3f`](./contracts/metis-1088/0x2c88534bf4a2cbbfa91783510d76195e1e669c3f/) | ⚠️ Unaudited |
-| PositionHelper | unknown | metis | n/a | [`0xa76416...98b92f`](./contracts/metis-1088/0xa76416a93d0d32838857f1ef28bbfcb16c98b92f/) | ⚠️ Unaudited |
-| SteerProxyHelper | unknown | metis | n/a | [`0x6d28bb...94eb6f`](./contracts/metis-1088/0x6d28bb02948e1d1ec579a4f20b9437df6494eb6f/) | ⚠️ Unaudited |
-| Vesting | unknown | metis | n/a | [`0x1e6519...35edf0`](./contracts/metis-1088/0x1e651964df1d932f6b1f96497bc7e27a9c35edf0/) | ⚠️ Unaudited |
-| xMetisToken | unknown | metis | n/a | [`0xca042e...db4996`](./contracts/metis-1088/0xca042ea7e9aa901c85d5afa5247a79e935db4996/) | ⚠️ Unaudited |
-| YieldBooster | unknown | metis | n/a | [`0xa4defa...f7b121`](./contracts/metis-1088/0xa4defaf0904529a1ffe04cc8a1ef3bc7d7f7b121/) | ⚠️ Unaudited |
+| AlgebraPool | unknown | metis | n/a | [`0x6eeac91f1bd77e1ad9a25c12c6a9577b4c185d94`](./contracts/metis-1088/0x6eeac91f1bd77e1ad9a25c12c6a9577b4c185d94/) | ⚠️ Unaudited |
+| AlgebraStaticQuoter | unknown | metis | n/a | [`0xa07430772ec1ec032dc9dcb88fcaac5611df84ab`](./contracts/metis-1088/0xa07430772ec1ec032dc9dcb88fcaac5611df84ab/) | ⚠️ Unaudited |
+| CamelotRouter | unknown | metis | n/a | [`0x14679d1da243b8c7d1a4c6d0523a2ce614ef027c`](./contracts/metis-1088/0x14679d1da243b8c7d1a4c6d0523a2ce614ef027c/) | ⚠️ Unaudited |
+| ConvertablePUMPKIN | unknown | metis | n/a | [`0x9395dd0b6de5ee28f83b3fdfd03e4db72443c06f`](./contracts/metis-1088/0x9395dd0b6de5ee28f83b3fdfd03e4db72443c06f/) | ⚠️ Unaudited |
+| FairAuction | unknown | metis | n/a | [`0x07e94ab61f8b3f59b6695ba66e0a5de367117f56`](./contracts/metis-1088/0x07e94ab61f8b3f59b6695ba66e0a5de367117f56/) | ⚠️ Unaudited |
+| GammaUniProxyHelper | unknown | metis | n/a | [`0xd882a7ad21a6432b806622ba5323716fba5241a8`](./contracts/metis-1088/0xd882a7ad21a6432b806622ba5323716fba5241a8/) | ⚠️ Unaudited |
+| GrailTokenV2 | unknown | metis | n/a | [`0x7db501b11e07564f24fec6ac4273a0f84f1dadff`](./contracts/metis-1088/0x7db501b11e07564f24fec6ac4273a0f84f1dadff/) | ⚠️ Unaudited |
+| Launchpad | unknown | metis | n/a | [`0x320356e697bc36414ebc46e5067b2a07195970db`](./contracts/metis-1088/0x320356e697bc36414ebc46e5067b2a07195970db/) | ⚠️ Unaudited |
+| LimitOrder | unknown | metis | n/a | [`0x578bb6acacf821005aca8b0d92c8ee1ada7f22c2`](./contracts/metis-1088/0x578bb6acacf821005aca8b0d92c8ee1ada7f22c2/) | ⚠️ Unaudited |
+| Multicall | unknown | metis | n/a | [`0x24318244b4ddc2bf93fd95925060bb92ac2cb45a`](./contracts/metis-1088/0x24318244b4ddc2bf93fd95925060bb92ac2cb45a/) | ⚠️ Unaudited |
+| NFTPoolFactory | unknown | metis | n/a | [`0x1e9ed0c5fcd27f38db47cfa35036fa1db409786d`](./contracts/metis-1088/0x1e9ed0c5fcd27f38db47cfa35036fa1db409786d/) | ⚠️ Unaudited |
+| NFTRewardClaimer | unknown | metis | n/a | [`0x2c88534bf4a2cbbfa91783510d76195e1e669c3f`](./contracts/metis-1088/0x2c88534bf4a2cbbfa91783510d76195e1e669c3f/) | ⚠️ Unaudited |
+| PositionHelper | unknown | metis | n/a | [`0xa76416a93d0d32838857f1ef28bbfcb16c98b92f`](./contracts/metis-1088/0xa76416a93d0d32838857f1ef28bbfcb16c98b92f/) | ⚠️ Unaudited |
+| SteerProxyHelper | unknown | metis | n/a | [`0x6d28bb02948e1d1ec579a4f20b9437df6494eb6f`](./contracts/metis-1088/0x6d28bb02948e1d1ec579a4f20b9437df6494eb6f/) | ⚠️ Unaudited |
+| Vesting | unknown | metis | n/a | [`0x1e651964df1d932f6b1f96497bc7e27a9c35edf0`](./contracts/metis-1088/0x1e651964df1d932f6b1f96497bc7e27a9c35edf0/) | ⚠️ Unaudited |
+| xMetisToken | unknown | metis | n/a | [`0xca042ea7e9aa901c85d5afa5247a79e935db4996`](./contracts/metis-1088/0xca042ea7e9aa901c85d5afa5247a79e935db4996/) | ⚠️ Unaudited |
+| YieldBooster | unknown | metis | n/a | [`0xa4defaf0904529a1ffe04cc8a1ef3bc7d7f7b121`](./contracts/metis-1088/0xa4defaf0904529a1ffe04cc8a1ef3bc7d7f7b121/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -124,22 +124,22 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| metis | [`0x6eeac9...185d94`](./contracts/metis-1088/0x6eeac91f1bd77e1ad9a25c12c6a9577b4c185d94/) | AlgebraPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| metis | [`0xa07430...df84ab`](./contracts/metis-1088/0xa07430772ec1ec032dc9dcb88fcaac5611df84ab/) | AlgebraStaticQuoter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| metis | [`0x14679d...ef027c`](./contracts/metis-1088/0x14679d1da243b8c7d1a4c6d0523a2ce614ef027c/) | CamelotRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| metis | [`0x9395dd...43c06f`](./contracts/metis-1088/0x9395dd0b6de5ee28f83b3fdfd03e4db72443c06f/) | ConvertablePUMPKIN | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| metis | [`0x07e94a...117f56`](./contracts/metis-1088/0x07e94ab61f8b3f59b6695ba66e0a5de367117f56/) | FairAuction | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| metis | [`0xd882a7...5241a8`](./contracts/metis-1088/0xd882a7ad21a6432b806622ba5323716fba5241a8/) | GammaUniProxyHelper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| metis | [`0x7db501...1dadff`](./contracts/metis-1088/0x7db501b11e07564f24fec6ac4273a0f84f1dadff/) | GrailTokenV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| metis | [`0x320356...5970db`](./contracts/metis-1088/0x320356e697bc36414ebc46e5067b2a07195970db/) | Launchpad | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| metis | [`0x578bb6...7f22c2`](./contracts/metis-1088/0x578bb6acacf821005aca8b0d92c8ee1ada7f22c2/) | LimitOrder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| metis | [`0x1e9ed0...09786d`](./contracts/metis-1088/0x1e9ed0c5fcd27f38db47cfa35036fa1db409786d/) | NFTPoolFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| metis | [`0x2c8853...669c3f`](./contracts/metis-1088/0x2c88534bf4a2cbbfa91783510d76195e1e669c3f/) | NFTRewardClaimer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| metis | [`0xa76416...98b92f`](./contracts/metis-1088/0xa76416a93d0d32838857f1ef28bbfcb16c98b92f/) | PositionHelper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| metis | [`0x6d28bb...94eb6f`](./contracts/metis-1088/0x6d28bb02948e1d1ec579a4f20b9437df6494eb6f/) | SteerProxyHelper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| metis | [`0x1e6519...35edf0`](./contracts/metis-1088/0x1e651964df1d932f6b1f96497bc7e27a9c35edf0/) | Vesting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| metis | [`0xca042e...db4996`](./contracts/metis-1088/0xca042ea7e9aa901c85d5afa5247a79e935db4996/) | xMetisToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| metis | [`0xa4defa...f7b121`](./contracts/metis-1088/0xa4defaf0904529a1ffe04cc8a1ef3bc7d7f7b121/) | YieldBooster | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| metis | [`0x6eeac91f1bd77e1ad9a25c12c6a9577b4c185d94`](./contracts/metis-1088/0x6eeac91f1bd77e1ad9a25c12c6a9577b4c185d94/) | AlgebraPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| metis | [`0xa07430772ec1ec032dc9dcb88fcaac5611df84ab`](./contracts/metis-1088/0xa07430772ec1ec032dc9dcb88fcaac5611df84ab/) | AlgebraStaticQuoter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| metis | [`0x14679d1da243b8c7d1a4c6d0523a2ce614ef027c`](./contracts/metis-1088/0x14679d1da243b8c7d1a4c6d0523a2ce614ef027c/) | CamelotRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| metis | [`0x9395dd0b6de5ee28f83b3fdfd03e4db72443c06f`](./contracts/metis-1088/0x9395dd0b6de5ee28f83b3fdfd03e4db72443c06f/) | ConvertablePUMPKIN | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| metis | [`0x07e94ab61f8b3f59b6695ba66e0a5de367117f56`](./contracts/metis-1088/0x07e94ab61f8b3f59b6695ba66e0a5de367117f56/) | FairAuction | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| metis | [`0xd882a7ad21a6432b806622ba5323716fba5241a8`](./contracts/metis-1088/0xd882a7ad21a6432b806622ba5323716fba5241a8/) | GammaUniProxyHelper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| metis | [`0x7db501b11e07564f24fec6ac4273a0f84f1dadff`](./contracts/metis-1088/0x7db501b11e07564f24fec6ac4273a0f84f1dadff/) | GrailTokenV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| metis | [`0x320356e697bc36414ebc46e5067b2a07195970db`](./contracts/metis-1088/0x320356e697bc36414ebc46e5067b2a07195970db/) | Launchpad | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| metis | [`0x578bb6acacf821005aca8b0d92c8ee1ada7f22c2`](./contracts/metis-1088/0x578bb6acacf821005aca8b0d92c8ee1ada7f22c2/) | LimitOrder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| metis | [`0x1e9ed0c5fcd27f38db47cfa35036fa1db409786d`](./contracts/metis-1088/0x1e9ed0c5fcd27f38db47cfa35036fa1db409786d/) | NFTPoolFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| metis | [`0x2c88534bf4a2cbbfa91783510d76195e1e669c3f`](./contracts/metis-1088/0x2c88534bf4a2cbbfa91783510d76195e1e669c3f/) | NFTRewardClaimer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| metis | [`0xa76416a93d0d32838857f1ef28bbfcb16c98b92f`](./contracts/metis-1088/0xa76416a93d0d32838857f1ef28bbfcb16c98b92f/) | PositionHelper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| metis | [`0x6d28bb02948e1d1ec579a4f20b9437df6494eb6f`](./contracts/metis-1088/0x6d28bb02948e1d1ec579a4f20b9437df6494eb6f/) | SteerProxyHelper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| metis | [`0x1e651964df1d932f6b1f96497bc7e27a9c35edf0`](./contracts/metis-1088/0x1e651964df1d932f6b1f96497bc7e27a9c35edf0/) | Vesting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| metis | [`0xca042ea7e9aa901c85d5afa5247a79e935db4996`](./contracts/metis-1088/0xca042ea7e9aa901c85d5afa5247a79e935db4996/) | xMetisToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| metis | [`0xa4defaf0904529a1ffe04cc8a1ef3bc7d7f7b121`](./contracts/metis-1088/0xa4defaf0904529a1ffe04cc8a1ef3bc7d7f7b121/) | YieldBooster | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

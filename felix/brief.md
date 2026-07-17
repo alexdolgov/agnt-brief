@@ -62,9 +62,9 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ERC1967Proxy | unknown | ethereum | n/a | [`0x36f586...3c2ece`](./contracts/ethereum-1/0x36f586a30502ae3afb555b8aa4dcc05d233c2ece/) | ⚠️ Unaudited |
-| MetaMorphoV1_1 | unknown | hyperliquid | n/a | [`0x207cca...d2201c`](./contracts/hyperliquid-999/0x207ccae51ad2e1c240c4ab4c94b670d438d2201c/) | ⚠️ Unaudited |
-| MToken | unknown | ethereum | n/a | [`0x866a2b...36be1b`](./contracts/ethereum-1/0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | ethereum | n/a | [`0x36f586a30502ae3afb555b8aa4dcc05d233c2ece`](./contracts/ethereum-1/0x36f586a30502ae3afb555b8aa4dcc05d233c2ece/) | ⚠️ Unaudited |
+| MetaMorphoV1_1 | unknown | hyperliquid | n/a | [`0x207ccae51ad2e1c240c4ab4c94b670d438d2201c`](./contracts/hyperliquid-999/0x207ccae51ad2e1c240c4ab4c94b670d438d2201c/) | ⚠️ Unaudited |
+| MToken | unknown | ethereum | n/a | [`0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b`](./contracts/ethereum-1/0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -99,7 +99,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x866a2b...36be1b`](./contracts/ethereum-1/0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b/) | MToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b`](./contracts/ethereum-1/0x866a2bf4e572cbcf37d5071a7a58503bfb36be1b/) | MToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

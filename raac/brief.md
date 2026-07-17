@@ -60,30 +60,30 @@ The protocol comprises 3 functional families. Its contracts share 2 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BaseVRFv2Consumer | unknown | ethereum | n/a | [`0x9c359b...cccb36`](./contracts/ethereum-1/0x9c359b341470e17345a3ffd53fe9624c64cccb36/) | ✅ Audited |
-| ComplianceRegistry | unknown | ethereum | n/a | [`0x6e35c6...6fcd4b`](./contracts/ethereum-1/0x6e35c61a73ec5d1779038df78cbb8183f76fcd4b/) | ✅ Audited |
-| CrvUSDToUSDOracle | unknown | ethereum | n/a | [`0x716600...1bc7c7`](./contracts/ethereum-1/0x716600c66f8a9999353c8545cfcbcc14bf1bc7c7/) | ✅ Audited |
-| FractionalToken | unknown | ethereum | n/a | [`0x32d93b...8541d8`](./contracts/ethereum-1/0x32d93b015562cc8da0ef3ccbccc3f8e1da8541d8/) | ✅ Audited |
-| LeveragedToken | unknown | ethereum | n/a | [`0x616ff3...4f2baf`](./contracts/ethereum-1/0x616ff3a9031fa613241c407a4c414676304f2baf/) | ✅ Audited |
-| Market | unknown | ethereum | n/a | [`0x11b21a...beb10e`](./contracts/ethereum-1/0x11b21afa735e24683f0912d9f6f8a8bfabbeb10e/) | ✅ Audited |
-| PSMVault | unknown | ethereum | n/a | [`0x8819dc...c3393c`](./contracts/ethereum-1/0x8819dcd779e3a44052a40f117999063740c3393c/) | ✅ Audited |
-| RAACHousePriceOracle | unknown | ethereum | n/a | [`0x556553...b0179c`](./contracts/ethereum-1/0x556553877fc8e643a78f6925c465991d73b0179c/) | ✅ Audited |
-| RAACHousePrices | unknown | ethereum | n/a | [`0x1a97da...545a70`](./contracts/ethereum-1/0x1a97dad63f29974aa4a54d4e337c183ed1545a70/) | ✅ Audited |
-| RAACNFT | unknown | ethereum | n/a | [`0x993776...76eb9f`](./contracts/ethereum-1/0x993776c3f184d1ec6bdcf77e7aecedf48076eb9f/) | ✅ Audited |
-| RAACNFTVaultAdapterOracle | unknown | ethereum | n/a | [`0x61273a...e46649`](./contracts/ethereum-1/0x61273a2915e5ef5523438f85a7909c01bae46649/) | ✅ Audited |
-| RAACNFTVaultAdapterV2 | unknown | ethereum | n/a | [`0xb1b35c...aa1d34`](./contracts/ethereum-1/0xb1b35c62b99a450c474e9dad75fa121d3daa1d34/) | ✅ Audited |
-| RateProvider | unknown | ethereum | n/a | [`0x9a6b5b...5f5b21`](./contracts/ethereum-1/0x9a6b5bda2128e6341175c79e43cd2a7e0c5f5b21/) | ✅ Audited |
-| RWAIndexToken | unknown | ethereum | n/a | [`0xe6a60d...6e5ccf`](./contracts/ethereum-1/0xe6a60d2886b11256c24c128210159133096e5ccf/) | ✅ Audited |
-| RWAVault | unknown | ethereum | n/a | [`0x575ffb...3cc732`](./contracts/ethereum-1/0x575ffb62f712410a4eca56c2eb37596cec3cc732/) | ✅ Audited |
-| TokenBlender | unknown | ethereum | n/a | [`0x7a7f84...b8e56a`](./contracts/ethereum-1/0x7a7f847fb60b0000e24cce07298dc73df8b8e56a/) | ✅ Audited |
+| BaseVRFv2Consumer | unknown | ethereum | n/a | [`0x9c359b341470e17345a3ffd53fe9624c64cccb36`](./contracts/ethereum-1/0x9c359b341470e17345a3ffd53fe9624c64cccb36/) | ✅ Audited |
+| ComplianceRegistry | unknown | ethereum | n/a | [`0x6e35c61a73ec5d1779038df78cbb8183f76fcd4b`](./contracts/ethereum-1/0x6e35c61a73ec5d1779038df78cbb8183f76fcd4b/) | ✅ Audited |
+| CrvUSDToUSDOracle | unknown | ethereum | n/a | [`0x716600c66f8a9999353c8545cfcbcc14bf1bc7c7`](./contracts/ethereum-1/0x716600c66f8a9999353c8545cfcbcc14bf1bc7c7/) | ✅ Audited |
+| FractionalToken | unknown | ethereum | n/a | [`0x32d93b015562cc8da0ef3ccbccc3f8e1da8541d8`](./contracts/ethereum-1/0x32d93b015562cc8da0ef3ccbccc3f8e1da8541d8/) | ✅ Audited |
+| LeveragedToken | unknown | ethereum | n/a | [`0x616ff3a9031fa613241c407a4c414676304f2baf`](./contracts/ethereum-1/0x616ff3a9031fa613241c407a4c414676304f2baf/) | ✅ Audited |
+| Market | unknown | ethereum | n/a | [`0x11b21afa735e24683f0912d9f6f8a8bfabbeb10e`](./contracts/ethereum-1/0x11b21afa735e24683f0912d9f6f8a8bfabbeb10e/) | ✅ Audited |
+| PSMVault | unknown | ethereum | n/a | [`0x8819dcd779e3a44052a40f117999063740c3393c`](./contracts/ethereum-1/0x8819dcd779e3a44052a40f117999063740c3393c/) | ✅ Audited |
+| RAACHousePriceOracle | unknown | ethereum | n/a | [`0x556553877fc8e643a78f6925c465991d73b0179c`](./contracts/ethereum-1/0x556553877fc8e643a78f6925c465991d73b0179c/) | ✅ Audited |
+| RAACHousePrices | unknown | ethereum | n/a | [`0x1a97dad63f29974aa4a54d4e337c183ed1545a70`](./contracts/ethereum-1/0x1a97dad63f29974aa4a54d4e337c183ed1545a70/) | ✅ Audited |
+| RAACNFT | unknown | ethereum | n/a | [`0x993776c3f184d1ec6bdcf77e7aecedf48076eb9f`](./contracts/ethereum-1/0x993776c3f184d1ec6bdcf77e7aecedf48076eb9f/) | ✅ Audited |
+| RAACNFTVaultAdapterOracle | unknown | ethereum | n/a | [`0x61273a2915e5ef5523438f85a7909c01bae46649`](./contracts/ethereum-1/0x61273a2915e5ef5523438f85a7909c01bae46649/) | ✅ Audited |
+| RAACNFTVaultAdapterV2 | unknown | ethereum | n/a | [`0xb1b35c62b99a450c474e9dad75fa121d3daa1d34`](./contracts/ethereum-1/0xb1b35c62b99a450c474e9dad75fa121d3daa1d34/) | ✅ Audited |
+| RateProvider | unknown | ethereum | n/a | [`0x9a6b5bda2128e6341175c79e43cd2a7e0c5f5b21`](./contracts/ethereum-1/0x9a6b5bda2128e6341175c79e43cd2a7e0c5f5b21/) | ✅ Audited |
+| RWAIndexToken | unknown | ethereum | n/a | [`0xe6a60d2886b11256c24c128210159133096e5ccf`](./contracts/ethereum-1/0xe6a60d2886b11256c24c128210159133096e5ccf/) | ✅ Audited |
+| RWAVault | unknown | ethereum | n/a | [`0x575ffb62f712410a4eca56c2eb37596cec3cc732`](./contracts/ethereum-1/0x575ffb62f712410a4eca56c2eb37596cec3cc732/) | ✅ Audited |
+| TokenBlender | unknown | ethereum | n/a | [`0x7a7f847fb60b0000e24cce07298dc73df8b8e56a`](./contracts/ethereum-1/0x7a7f847fb60b0000e24cce07298dc73df8b8e56a/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ProxyAdmin | unknown | ethereum | n/a | [`0x89ab60...682ce2`](./contracts/ethereum-1/0x89ab60d8fcd674b2b0b308e7fa63ff84a2682ce2/) | ⚠️ Unaudited |
-| SUsds | unknown | ethereum | n/a | [`0x4e7991...9f61e0`](./contracts/ethereum-1/0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x51c434...e27342`](./contracts/ethereum-1/0x51c4348af0c6066a2fd31bd968bc0c039fe27342/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | ethereum | n/a | [`0x89ab60d8fcd674b2b0b308e7fa63ff84a2682ce2`](./contracts/ethereum-1/0x89ab60d8fcd674b2b0b308e7fa63ff84a2682ce2/) | ⚠️ Unaudited |
+| SUsds | unknown | ethereum | n/a | [`0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0`](./contracts/ethereum-1/0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x51c4348af0c6066a2fd31bd968bc0c039fe27342`](./contracts/ethereum-1/0x51c4348af0c6066a2fd31bd968bc0c039fe27342/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -125,7 +125,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x4e7991...9f61e0`](./contracts/ethereum-1/0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0/) | SUsds | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0`](./contracts/ethereum-1/0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0/) | SUsds | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

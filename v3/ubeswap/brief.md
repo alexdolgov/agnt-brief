@@ -52,26 +52,26 @@ The pinned logic-topography run contains 18 contract row(s) across celo. Structu
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x716733...de7a8a`, chain 42220)
-- UnnamedContract (`0x897387...6f8c8f`, chain 42220)
-- Create2Deployer (`0x4a27c0...5f6ee3`, chain 42220)
-- GnosisSafeProxy (`0x3cdb70...555167`, chain 42220)
-- QuoterV2 (`0xa8864a...cca56f`, chain 42220)
-- RomulusDelegate (`0xd355a0...55f928`, chain 42220)
-- Timelock (`0x936f5b...2fdaf6`, chain 42220)
-- UbeAdvisoryVesting (`0xf7d062...1f7d10`, chain 42220)
-- UbeEcosystemVesting (`0x3924c6...a6ae73`, chain 42220)
-- UbeMarketingVesting (`0xd733bc...0d0c5e`, chain 42220)
-- UbeMiningReserveVesting (`0xae4634...502968`, chain 42220)
-- UbeswapV3Farming (`0xa6e906...f51853`, chain 42220)
-- UbeTeamVesting (`0x74d498...6c8b5c`, chain 42220)
-- UbeToken (`0x71e26d...101490`, chain 42220)
-- UniswapInterfaceMulticall (`0x4d446f...49d63f`, chain 42220)
-- UniswapV2Factory (`0x62d5b8...c25fae`, chain 42220)
-- UniswapV2Router02 (`0xe3d8bd...f96121`, chain 42220)
-- UniswapV3Factory (`0x67fea5...f8aec4`, chain 42220)
-- UniversalRouter (`0x3c255d...7a7a0d`, chain 42220)
-- VotableStakingRewards (`0x388d61...5ff5c9`, chain 42220)
+- UnnamedContract (`0x7167338ea247cc20b7a559bf171a3dcdb5de7a8a`, chain 42220)
+- UnnamedContract (`0x897387c7b996485c3aaa85c94272cd6c506f8c8f`, chain 42220)
+- Create2Deployer (`0x4a27c059fd7e383854ea7de6be9c390a795f6ee3`, chain 42220)
+- GnosisSafeProxy (`0x3cdb7098842621c22721f8c576d49dc366555167`, chain 42220)
+- QuoterV2 (`0xa8864a18fab1ed233ce1921f329a6a92dbcca56f`, chain 42220)
+- RomulusDelegate (`0xd355a00220fba16b69cd8c4fbe16e02ca855f928`, chain 42220)
+- Timelock (`0x936f5b0164b08bf0e123cdf356118343342fdaf6`, chain 42220)
+- UbeAdvisoryVesting (`0xf7d06202b0779f9c314d67bad8538b3c661f7d10`, chain 42220)
+- UbeEcosystemVesting (`0x3924c6b0003135683b59bab63c2b4a5631a6ae73`, chain 42220)
+- UbeMarketingVesting (`0xd733bc0acd4583ffa0816d92ee7ef417370d0c5e`, chain 42220)
+- UbeMiningReserveVesting (`0xae4634be8c69ff602e6dd9a1e3c5cecca3502968`, chain 42220)
+- UbeswapV3Farming (`0xa6e9069cb055a425eb41d185b740b22ec8f51853`, chain 42220)
+- UbeTeamVesting (`0x74d4983a29044b68aadd2bdb86bc82cf8c6c8b5c`, chain 42220)
+- UbeToken (`0x71e26d0e519d14591b9de9a0fe9513a398101490`, chain 42220)
+- UniswapInterfaceMulticall (`0x4d446f092461a0bfdebc72abc831541ca949d63f`, chain 42220)
+- UniswapV2Factory (`0x62d5b84be28a183abb507e125b384122d2c25fae`, chain 42220)
+- UniswapV2Router02 (`0xe3d8bd6aed4f159bc8000a9cd47cffdb95f96121`, chain 42220)
+- UniswapV3Factory (`0x67fea58d5a5a4162ced847e13c2c81c73bf8aec4`, chain 42220)
+- UniversalRouter (`0x3c255ded9b25f0bfb4ef1d14234bd2514d7a7a0d`, chain 42220)
+- VotableStakingRewards (`0x388d611a57ac15dcc1b937f287e5e908ba5ff5c9`, chain 42220)
 
 ## Contract Surface Quality
 
@@ -117,33 +117,33 @@ The pinned logic-topography run contains 18 contract row(s) across celo. Structu
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Create2Deployer | unknown | project_anchor | own_supporting | 0 | celo | unit-395280 | `0x4a27c0...5f6ee3` | ⚠️ Unaudited |
-| GnosisSafeProxy | unknown | project_anchor | own_supporting | 0 | celo | unit-395278 | `0x3cdb70...555167` | ⚠️ Unaudited |
-| NonfungiblePositionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x5c7624...fdcd65` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x6bd919...70e694` | ⚠️ Unaudited |
-| QuoterV2 | unknown | project_anchor | own_supporting | 0 | celo | unit-395300 | `0xa8864a...cca56f` | ⚠️ Unaudited |
-| RomulusDelegate | unknown | project_anchor | own_supporting | 1 | celo | unit-395309 | `0xd355a0...55f928` | ⚠️ Unaudited |
-| StakingRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x534408...15b52c` | ⚠️ Unaudited |
-| StakingRewardsCapped | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x799a23...602a45` | ⚠️ Unaudited |
-| SwapRouter02 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x5cde4d...d8ee7a` | ⚠️ Unaudited |
-| TickLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x1d8c56...4265c4` | ⚠️ Unaudited |
-| Timelock | unknown | project_anchor | own_supporting | 0 | celo | unit-395296 | `0x936f5b...2fdaf6` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x6e2369...4ffe67` | ⚠️ Unaudited |
-| UbeAdvisoryVesting | unknown | project_anchor | own_supporting | 0 | celo | unit-395308 | `0xf7d062...1f7d10` | ⚠️ Unaudited |
-| UbeConvert | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x9dfc13...bb7a36` | ⚠️ Unaudited |
-| UbeEcosystemVesting | unknown | project_anchor | own_supporting | 0 | celo | unit-395274 | `0x3924c6...a6ae73` | ⚠️ Unaudited |
-| UbeMarketingVesting | unknown | project_anchor | own_supporting | 0 | celo | unit-395304 | `0xd733bc...0d0c5e` | ⚠️ Unaudited |
-| UbeMiningReserveVesting | unknown | project_anchor | own_supporting | 0 | celo | unit-395302 | `0xae4634...502968` | ⚠️ Unaudited |
-| UbeswapV3Farming | unknown | project_anchor | own_supporting | 0 | celo | unit-395298 | `0xa6e906...f51853` | ⚠️ Unaudited |
-| UbeTeamVesting | unknown | project_anchor | own_supporting | 0 | celo | unit-395292 | `0x74d498...6c8b5c` | ⚠️ Unaudited |
-| UbeToken | unknown | project_anchor | own_supporting | 0 | celo | unit-395290 | `0x71e26d...101490` | ⚠️ Unaudited |
-| UniswapInterfaceMulticall | unknown | project_anchor | own_supporting | 0 | celo | unit-395282 | `0x4d446f...49d63f` | ⚠️ Unaudited |
-| UniswapV2Factory | unknown | project_anchor | own_supporting | 0 | celo | unit-395284 | `0x62d5b8...c25fae` | ⚠️ Unaudited |
-| UniswapV2Router02 | unknown | project_anchor | own_supporting | 0 | celo | unit-395306 | `0xe3d8bd...f96121` | ⚠️ Unaudited |
-| UniswapV3Factory | unknown | project_anchor | own_supporting | 0 | celo | unit-395286 | `0x67fea5...f8aec4` | ⚠️ Unaudited |
-| UniversalRouter | unknown | project_anchor | own_supporting | 0 | celo | unit-395276 | `0x3c255d...7a7a0d` | ⚠️ Unaudited |
-| V3Migrator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x65415d...ebec66` | ⚠️ Unaudited |
-| VotableStakingRewards | unknown | project_anchor | own_supporting | 0 | celo | unit-395272 | `0x388d61...5ff5c9` | ⚠️ Unaudited |
+| Create2Deployer | unknown | project_anchor | own_supporting | 0 | celo | unit-395280 | `0x4a27c059fd7e383854ea7de6be9c390a795f6ee3` | ⚠️ Unaudited |
+| GnosisSafeProxy | unknown | project_anchor | own_supporting | 0 | celo | unit-395278 | `0x3cdb7098842621c22721f8c576d49dc366555167` | ⚠️ Unaudited |
+| NonfungiblePositionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x5c76245413c6c4cbe7a3fae395a8f7af06fdcd65` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x6bd9193bb82fdf663ec6aea0a3baf2ad0170e694` | ⚠️ Unaudited |
+| QuoterV2 | unknown | project_anchor | own_supporting | 0 | celo | unit-395300 | `0xa8864a18fab1ed233ce1921f329a6a92dbcca56f` | ⚠️ Unaudited |
+| RomulusDelegate | unknown | project_anchor | own_supporting | 1 | celo | unit-395309 | `0xd355a00220fba16b69cd8c4fbe16e02ca855f928` | ⚠️ Unaudited |
+| StakingRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x534408e91d755a0d898e1c508e987e8d0615b52c` | ⚠️ Unaudited |
+| StakingRewardsCapped | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x799a23da264a157db6f9c02be62f82ce8d602a45` | ⚠️ Unaudited |
+| SwapRouter02 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x5cde4d414f27e331b6738f783bc84c5507d8ee7a` | ⚠️ Unaudited |
+| TickLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x1d8c564cce485c2f053ef32652e4dba00d4265c4` | ⚠️ Unaudited |
+| Timelock | unknown | project_anchor | own_supporting | 0 | celo | unit-395296 | `0x936f5b0164b08bf0e123cdf356118343342fdaf6` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x6e23691e355703fde907aa97fe9acabb2e4ffe67` | ⚠️ Unaudited |
+| UbeAdvisoryVesting | unknown | project_anchor | own_supporting | 0 | celo | unit-395308 | `0xf7d06202b0779f9c314d67bad8538b3c661f7d10` | ⚠️ Unaudited |
+| UbeConvert | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x9dfc135e0984fe88acd45d68e62a73e98dbb7a36` | ⚠️ Unaudited |
+| UbeEcosystemVesting | unknown | project_anchor | own_supporting | 0 | celo | unit-395274 | `0x3924c6b0003135683b59bab63c2b4a5631a6ae73` | ⚠️ Unaudited |
+| UbeMarketingVesting | unknown | project_anchor | own_supporting | 0 | celo | unit-395304 | `0xd733bc0acd4583ffa0816d92ee7ef417370d0c5e` | ⚠️ Unaudited |
+| UbeMiningReserveVesting | unknown | project_anchor | own_supporting | 0 | celo | unit-395302 | `0xae4634be8c69ff602e6dd9a1e3c5cecca3502968` | ⚠️ Unaudited |
+| UbeswapV3Farming | unknown | project_anchor | own_supporting | 0 | celo | unit-395298 | `0xa6e9069cb055a425eb41d185b740b22ec8f51853` | ⚠️ Unaudited |
+| UbeTeamVesting | unknown | project_anchor | own_supporting | 0 | celo | unit-395292 | `0x74d4983a29044b68aadd2bdb86bc82cf8c6c8b5c` | ⚠️ Unaudited |
+| UbeToken | unknown | project_anchor | own_supporting | 0 | celo | unit-395290 | `0x71e26d0e519d14591b9de9a0fe9513a398101490` | ⚠️ Unaudited |
+| UniswapInterfaceMulticall | unknown | project_anchor | own_supporting | 0 | celo | unit-395282 | `0x4d446f092461a0bfdebc72abc831541ca949d63f` | ⚠️ Unaudited |
+| UniswapV2Factory | unknown | project_anchor | own_supporting | 0 | celo | unit-395284 | `0x62d5b84be28a183abb507e125b384122d2c25fae` | ⚠️ Unaudited |
+| UniswapV2Router02 | unknown | project_anchor | own_supporting | 0 | celo | unit-395306 | `0xe3d8bd6aed4f159bc8000a9cd47cffdb95f96121` | ⚠️ Unaudited |
+| UniswapV3Factory | unknown | project_anchor | own_supporting | 0 | celo | unit-395286 | `0x67fea58d5a5a4162ced847e13c2c81c73bf8aec4` | ⚠️ Unaudited |
+| UniversalRouter | unknown | project_anchor | own_supporting | 0 | celo | unit-395276 | `0x3c255ded9b25f0bfb4ef1d14234bd2514d7a7a0d` | ⚠️ Unaudited |
+| V3Migrator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x65415d0bde9249e185d433a08823fd7fa7ebec66` | ⚠️ Unaudited |
+| VotableStakingRewards | unknown | project_anchor | own_supporting | 0 | celo | unit-395272 | `0x388d611a57ac15dcc1b937f287e5e908ba5ff5c9` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -163,8 +163,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-395288 | `0x716733...de7a8a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-395294 | `0x897387...6f8c8f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-395288 | `0x7167338ea247cc20b7a559bf171a3dcdb5de7a8a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-395294 | `0x897387c7b996485c3aaa85c94272cd6c506f8c8f` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -183,18 +183,18 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| celo | `0xa8864a...cca56f` | QuoterV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | `0xd355a0...55f928` | RomulusDelegate | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | `0x936f5b...2fdaf6` | Timelock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | `0xf7d062...1f7d10` | UbeAdvisoryVesting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | `0x3924c6...a6ae73` | UbeEcosystemVesting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | `0xd733bc...0d0c5e` | UbeMarketingVesting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | `0xae4634...502968` | UbeMiningReserveVesting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | `0xa6e906...f51853` | UbeswapV3Farming | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | `0x74d498...6c8b5c` | UbeTeamVesting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | `0x71e26d...101490` | UbeToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | `0x3c255d...7a7a0d` | UniversalRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | `0x388d61...5ff5c9` | VotableStakingRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | `0xa8864a18fab1ed233ce1921f329a6a92dbcca56f` | QuoterV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | `0xd355a00220fba16b69cd8c4fbe16e02ca855f928` | RomulusDelegate | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | `0x936f5b0164b08bf0e123cdf356118343342fdaf6` | Timelock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | `0xf7d06202b0779f9c314d67bad8538b3c661f7d10` | UbeAdvisoryVesting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | `0x3924c6b0003135683b59bab63c2b4a5631a6ae73` | UbeEcosystemVesting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | `0xd733bc0acd4583ffa0816d92ee7ef417370d0c5e` | UbeMarketingVesting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | `0xae4634be8c69ff602e6dd9a1e3c5cecca3502968` | UbeMiningReserveVesting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | `0xa6e9069cb055a425eb41d185b740b22ec8f51853` | UbeswapV3Farming | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | `0x74d4983a29044b68aadd2bdb86bc82cf8c6c8b5c` | UbeTeamVesting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | `0x71e26d0e519d14591b9de9a0fe9513a398101490` | UbeToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | `0x3c255ded9b25f0bfb4ef1d14234bd2514d7a7a0d` | UniversalRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | `0x388d611a57ac15dcc1b937f287e5e908ba5ff5c9` | VotableStakingRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -58,18 +58,18 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| GBTFactory | unknown | arbitrum | n/a | [`0x040f6b...f24d93`](./contracts/arbitrum-42161/0x040f6b1b3d80c470daf2e28237b332e22bf24d93/) | ✅ Audited |
-| GNFTFactory | unknown | arbitrum | n/a | [`0x07b4aa...014e9a`](./contracts/arbitrum-42161/0x07b4aa89f1ca11175dd1cd0898d8fa5a53014e9a/) | ✅ Audited |
-| GumBallFactory | unknown | arbitrum | n/a | [`0x039dda...ada011`](./contracts/arbitrum-42161/0x039dda37bed29cd05a02c31f5961056f60ada011/) | ✅ Audited |
-| XGBTFactory | unknown | arbitrum | n/a | [`0x00df73...c4ff3a`](./contracts/arbitrum-42161/0x00df73be2643e2f57cb81ceb5ca11837c3c4ff3a/) | ✅ Audited |
+| GBTFactory | unknown | arbitrum | n/a | [`0x040f6b1b3d80c470daf2e28237b332e22bf24d93`](./contracts/arbitrum-42161/0x040f6b1b3d80c470daf2e28237b332e22bf24d93/) | ✅ Audited |
+| GNFTFactory | unknown | arbitrum | n/a | [`0x07b4aa89f1ca11175dd1cd0898d8fa5a53014e9a`](./contracts/arbitrum-42161/0x07b4aa89f1ca11175dd1cd0898d8fa5a53014e9a/) | ✅ Audited |
+| GumBallFactory | unknown | arbitrum | n/a | [`0x039dda37bed29cd05a02c31f5961056f60ada011`](./contracts/arbitrum-42161/0x039dda37bed29cd05a02c31f5961056f60ada011/) | ✅ Audited |
+| XGBTFactory | unknown | arbitrum | n/a | [`0x00df73be2643e2f57cb81ceb5ca11837c3c4ff3a`](./contracts/arbitrum-42161/0x00df73be2643e2f57cb81ceb5ca11837c3c4ff3a/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CollectionContract | unknown | arbitrum | n/a | [`0x0031de...18894b`](./contracts/arbitrum-42161/0x0031def3a612141ed025a3233366df86b518894b/) | ⚠️ Unaudited |
-| Multicall | unknown | arbitrum | n/a | [`0x09dc9d...097c1c`](./contracts/arbitrum-42161/0x09dc9d209964417018fc302038eaf5ef30097c1c/) | ⚠️ Unaudited |
-| Zapper | unknown | arbitrum | n/a | [`0x19c921...ee9ca1`](./contracts/arbitrum-42161/0x19c921e19fb2ebb479dfccc80eb33745c9ee9ca1/) | ⚠️ Unaudited |
+| CollectionContract | unknown | arbitrum | n/a | [`0x0031def3a612141ed025a3233366df86b518894b`](./contracts/arbitrum-42161/0x0031def3a612141ed025a3233366df86b518894b/) | ⚠️ Unaudited |
+| Multicall | unknown | arbitrum | n/a | [`0x09dc9d209964417018fc302038eaf5ef30097c1c`](./contracts/arbitrum-42161/0x09dc9d209964417018fc302038eaf5ef30097c1c/) | ⚠️ Unaudited |
+| Zapper | unknown | arbitrum | n/a | [`0x19c921e19fb2ebb479dfccc80eb33745c9ee9ca1`](./contracts/arbitrum-42161/0x19c921e19fb2ebb479dfccc80eb33745c9ee9ca1/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -101,8 +101,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | [`0x0031de...18894b`](./contracts/arbitrum-42161/0x0031def3a612141ed025a3233366df86b518894b/) | CollectionContract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x19c921...ee9ca1`](./contracts/arbitrum-42161/0x19c921e19fb2ebb479dfccc80eb33745c9ee9ca1/) | Zapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x0031def3a612141ed025a3233366df86b518894b`](./contracts/arbitrum-42161/0x0031def3a612141ed025a3233366df86b518894b/) | CollectionContract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x19c921e19fb2ebb479dfccc80eb33745c9ee9ca1`](./contracts/arbitrum-42161/0x19c921e19fb2ebb479dfccc80eb33745c9ee9ca1/) | Zapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

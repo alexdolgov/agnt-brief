@@ -59,20 +59,20 @@ The protocol comprises 4 functional families. Its contracts share 6 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BondController | unknown | ethereum | n/a | [`0x84d7a3...19cc04`](./contracts/ethereum-1/0x84d7a34f3efbe552b2855d158b10c3970b19cc04/) | ✅ Audited |
-| BondFactory | unknown | ethereum | n/a | 2 deployments: ethereum [`0x019fa3...b04ac0`](./contracts/ethereum-1/0x019fa32d71bb96922695c6cdea33774fdeb04ac0/); ethereum `0x17550f...91fd54` | ✅ Audited |
-| ButtonToken | unknown | base | n/a | 5 deployments: ethereum `0x97040a...f4eac5`; ethereum `0x9af5c1...010fb3`; ethereum `0xab4691...53e9f9`; base [`0x23aafb...daca85`](./contracts/base-8453/0x23aafbcd479d14ca802bd39d70a03c7384daca85/); base `0x5f9348...ed4cc1` | ✅ Audited |
-| Tranche | unknown | ethereum | n/a | [`0x367874...6af137`](./contracts/ethereum-1/0x36787412f5ddc051c95c313138b8ae4e396af137/) | ✅ Audited |
+| BondController | unknown | ethereum | n/a | [`0x84d7a34f3efbe552b2855d158b10c3970b19cc04`](./contracts/ethereum-1/0x84d7a34f3efbe552b2855d158b10c3970b19cc04/) | ✅ Audited |
+| BondFactory | unknown | ethereum | n/a | 2 deployments: ethereum [`0x019fa32d71bb96922695c6cdea33774fdeb04ac0`](./contracts/ethereum-1/0x019fa32d71bb96922695c6cdea33774fdeb04ac0/); ethereum `0x17550f48c61915a67f216a083ced89e04d91fd54` | ✅ Audited |
+| ButtonToken | unknown | base | n/a | 5 deployments: ethereum `0x97040ab746803e7645779d2383da216e8ef4eac5`; ethereum `0x9af5c1fa62d0dedb7be3c68939a4b2d96d010fb3`; ethereum `0xab4691ad011adb810610e9610a74be77c553e9f9`; base [`0x23aafbcd479d14ca802bd39d70a03c7384daca85`](./contracts/base-8453/0x23aafbcd479d14ca802bd39d70a03c7384daca85/); base `0x5f9348a845f0fe74bcc343c2cde11b65f1ed4cc1` | ✅ Audited |
+| Tranche | unknown | ethereum | n/a | [`0x36787412f5ddc051c95c313138b8ae4e396af137`](./contracts/ethereum-1/0x36787412f5ddc051c95c313138b8ae4e396af137/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| GenericButtonswapRouter | adapter | base | n/a | 2 deployments: ethereum `0xf4a25f...657071`; base [`0xa6c9d0...ed2e2f`](./contracts/base-8453/0xa6c9d0cb8fff7a47db726ab8b31206dd69ed2e2f/) | ⚠️ Unaudited |
-| MarzResources | unknown | ethereum | n/a | 2 deployments: ethereum [`0x7532e3...1be5cb`](./contracts/ethereum-1/0x7532e3e303e721b81f8a2492344e8b15f11be5cb/); ethereum `0xc4a0a5...ae4d45` | ⚠️ Unaudited |
-| MarzResources | unknown | ethereum | n/a | 2 deployments: ethereum [`0x75376c...50b3fa`](./contracts/ethereum-1/0x75376c8b1afc6a6d7cd18617cf2ada431d50b3fa/); ethereum `0xf77648...22fd30` | ⚠️ Unaudited |
-| Plot | unknown | ethereum | n/a | 2 deployments: ethereum [`0x6795ee...18519a`](./contracts/ethereum-1/0x6795eef1ac76ee5dbb1e9eb219e72171ad18519a/); ethereum `0xd0ba8b...d3142b` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | ethereum | n/a | [`0xdb4229...d99652`](./contracts/ethereum-1/0xdb422932496bc97aa626ae9f8efaf1344cd99652/) | ⚠️ Unaudited |
+| GenericButtonswapRouter | adapter | base | n/a | 2 deployments: ethereum `0xf4a25f7d15fa822e060f64d0eb83bf7200657071`; base [`0xa6c9d0cb8fff7a47db726ab8b31206dd69ed2e2f`](./contracts/base-8453/0xa6c9d0cb8fff7a47db726ab8b31206dd69ed2e2f/) | ⚠️ Unaudited |
+| MarzResources | unknown | ethereum | n/a | 2 deployments: ethereum [`0x7532e3e303e721b81f8a2492344e8b15f11be5cb`](./contracts/ethereum-1/0x7532e3e303e721b81f8a2492344e8b15f11be5cb/); ethereum `0xc4a0a55a949012b8b52611f4e78cd9e924ae4d45` | ⚠️ Unaudited |
+| MarzResources | unknown | ethereum | n/a | 2 deployments: ethereum [`0x75376c8b1afc6a6d7cd18617cf2ada431d50b3fa`](./contracts/ethereum-1/0x75376c8b1afc6a6d7cd18617cf2ada431d50b3fa/); ethereum `0xf7764821280afc17e010a149346e1fbb7822fd30` | ⚠️ Unaudited |
+| Plot | unknown | ethereum | n/a | 2 deployments: ethereum [`0x6795eef1ac76ee5dbb1e9eb219e72171ad18519a`](./contracts/ethereum-1/0x6795eef1ac76ee5dbb1e9eb219e72171ad18519a/); ethereum `0xd0ba8b19b0f5e25c11ed233302e75794c9d3142b` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | ethereum | n/a | [`0xdb422932496bc97aa626ae9f8efaf1344cd99652`](./contracts/ethereum-1/0xdb422932496bc97aa626ae9f8efaf1344cd99652/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -92,10 +92,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x626e7d...6d5cce` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x83f639...508798` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xa94fd1...571a84` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xe8a48c...771cd4` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x626e7dfaa0b8cd68c4f6831d7f27601a6f6d5cce` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x83f6392aab030043420d184a025e0cd63f508798` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xa94fd1efdecaac484601a4537efbdb016a571a84` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe8a48c1a4f0584c4d3013c2707e0f3b61e771cd4` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -109,10 +109,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0xa6c9d0...ed2e2f`](./contracts/base-8453/0xa6c9d0cb8fff7a47db726ab8b31206dd69ed2e2f/) | GenericButtonswapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x7532e3...1be5cb`](./contracts/ethereum-1/0x7532e3e303e721b81f8a2492344e8b15f11be5cb/) | MarzResources | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x75376c...50b3fa`](./contracts/ethereum-1/0x75376c8b1afc6a6d7cd18617cf2ada431d50b3fa/) | MarzResources | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6795ee...18519a`](./contracts/ethereum-1/0x6795eef1ac76ee5dbb1e9eb219e72171ad18519a/) | Plot | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xa6c9d0cb8fff7a47db726ab8b31206dd69ed2e2f`](./contracts/base-8453/0xa6c9d0cb8fff7a47db726ab8b31206dd69ed2e2f/) | GenericButtonswapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x7532e3e303e721b81f8a2492344e8b15f11be5cb`](./contracts/ethereum-1/0x7532e3e303e721b81f8a2492344e8b15f11be5cb/) | MarzResources | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x75376c8b1afc6a6d7cd18617cf2ada431d50b3fa`](./contracts/ethereum-1/0x75376c8b1afc6a6d7cd18617cf2ada431d50b3fa/) | MarzResources | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6795eef1ac76ee5dbb1e9eb219e72171ad18519a`](./contracts/ethereum-1/0x6795eef1ac76ee5dbb1e9eb219e72171ad18519a/) | Plot | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -61,8 +61,8 @@ The protocol comprises 3 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BoringVault | core_logic | plasma | n/a | [`0x1cf1c7...c53d77`](./contracts/plasma-9745/0x1cf1c71440ebd9cc998ce0b1b25ccef275c53d77/) | ⚠️ Unaudited |
-| ProxyAdmin | governance | plasma | n/a | 2 deployments: plasma [`0x322483...773772`](./contracts/plasma-9745/0x3224831b5f45c616f8accba907798c6236773772/); plasma `0x5be536...47d8b2` | ⚠️ Unaudited |
+| BoringVault | core_logic | plasma | n/a | [`0x1cf1c71440ebd9cc998ce0b1b25ccef275c53d77`](./contracts/plasma-9745/0x1cf1c71440ebd9cc998ce0b1b25ccef275c53d77/) | ⚠️ Unaudited |
+| ProxyAdmin | governance | plasma | n/a | 2 deployments: plasma [`0x3224831b5f45c616f8accba907798c6236773772`](./contracts/plasma-9745/0x3224831b5f45c616f8accba907798c6236773772/); plasma `0x5be536efb28c8efbd2da6894996f5df88347d8b2` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -82,8 +82,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | plasma | n/a | `0x42529d...e11acc` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | n/a | `0x779ded...713736` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0x42529da25d82ba7810d7f51d614915b8c7e11acc` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0x779ded0c9e1022225f8e0630b35a9b54be713736` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -96,7 +96,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| plasma | [`0x1cf1c7...c53d77`](./contracts/plasma-9745/0x1cf1c71440ebd9cc998ce0b1b25ccef275c53d77/) | BoringVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| plasma | [`0x1cf1c71440ebd9cc998ce0b1b25ccef275c53d77`](./contracts/plasma-9745/0x1cf1c71440ebd9cc998ce0b1b25ccef275c53d77/) | BoringVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

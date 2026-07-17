@@ -60,7 +60,7 @@ The protocol forms a single structural family (O3 Swap) of 1 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| O3 | unknown | ethereum | n/a | 9 deployments: ethereum [`0xee9801...777d28`](./contracts/ethereum-1/0xee9801669c6138e84bd50deb500827b776777d28/); optimism [`0xee9801...777d28`](./contracts/optimism-10/0xee9801669c6138e84bd50deb500827b776777d28/); bsc [`0xee9801...777d28`](./contracts/bsc-56/0xee9801669c6138e84bd50deb500827b776777d28/); gnosis [`0xee9801...777d28`](./contracts/gnosis-100/0xee9801669c6138e84bd50deb500827b776777d28/); polygon [`0xee9801...777d28`](./contracts/polygon-137/0xee9801669c6138e84bd50deb500827b776777d28/); metis [`0xee9801...777d28`](./contracts/metis-1088/0xee9801669c6138e84bd50deb500827b776777d28/); arbitrum [`0xee9801...777d28`](./contracts/arbitrum-42161/0xee9801669c6138e84bd50deb500827b776777d28/); celo [`0xee9801...777d28`](./contracts/celo-42220/0xee9801669c6138e84bd50deb500827b776777d28/); avalanche [`0xee9801...777d28`](./contracts/avalanche-43114/0xee9801669c6138e84bd50deb500827b776777d28/) | ⚠️ Unaudited |
+| O3 | unknown | ethereum | n/a | 9 deployments: ethereum [`0xee9801669c6138e84bd50deb500827b776777d28`](./contracts/ethereum-1/0xee9801669c6138e84bd50deb500827b776777d28/); optimism [`0xee9801669c6138e84bd50deb500827b776777d28`](./contracts/optimism-10/0xee9801669c6138e84bd50deb500827b776777d28/); bsc [`0xee9801669c6138e84bd50deb500827b776777d28`](./contracts/bsc-56/0xee9801669c6138e84bd50deb500827b776777d28/); gnosis [`0xee9801669c6138e84bd50deb500827b776777d28`](./contracts/gnosis-100/0xee9801669c6138e84bd50deb500827b776777d28/); polygon [`0xee9801669c6138e84bd50deb500827b776777d28`](./contracts/polygon-137/0xee9801669c6138e84bd50deb500827b776777d28/); metis [`0xee9801669c6138e84bd50deb500827b776777d28`](./contracts/metis-1088/0xee9801669c6138e84bd50deb500827b776777d28/); arbitrum [`0xee9801669c6138e84bd50deb500827b776777d28`](./contracts/arbitrum-42161/0xee9801669c6138e84bd50deb500827b776777d28/); celo [`0xee9801669c6138e84bd50deb500827b776777d28`](./contracts/celo-42220/0xee9801669c6138e84bd50deb500827b776777d28/); avalanche [`0xee9801669c6138e84bd50deb500827b776777d28`](./contracts/avalanche-43114/0xee9801669c6138e84bd50deb500827b776777d28/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -80,9 +80,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x16a852...b75896` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x510d05...ded609` | ❓ Unverified |
-| UnnamedContract | unknown | fantom | n/a | `0xee9801...777d28` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x16a852a9593db9b392eb77a1b6c9d99c2fb75896` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x510d056a63a2f9284179f2d39b8fde7eb8ded609` | ❓ Unverified |
+| UnnamedContract | unknown | fantom | n/a | `0xee9801669c6138e84bd50deb500827b776777d28` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -96,7 +96,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xee9801...777d28`](./contracts/ethereum-1/0xee9801669c6138e84bd50deb500827b776777d28/) | O3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xee9801669c6138e84bd50deb500827b776777d28`](./contracts/ethereum-1/0xee9801669c6138e84bd50deb500827b776777d28/) | O3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -60,13 +60,13 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| MaseerOne | unknown | ethereum | n/a | [`0x01995a...b8350b`](./contracts/ethereum-1/0x01995a697752266d8e748738aaa3f06464b8350b/) | ✅ Audited |
+| MaseerOne | unknown | ethereum | n/a | [`0x01995a697752266d8e748738aaa3f06464b8350b`](./contracts/ethereum-1/0x01995a697752266d8e748738aaa3f06464b8350b/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Safe | unknown | ethereum | n/a | [`0xb56f41...133f66`](./contracts/ethereum-1/0xb56f413dbce352cfd71f221029cfc84580133f66/) | ⚠️ Unaudited |
+| Safe | unknown | ethereum | n/a | [`0xb56f413dbce352cfd71f221029cfc84580133f66`](./contracts/ethereum-1/0xb56f413dbce352cfd71f221029cfc84580133f66/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

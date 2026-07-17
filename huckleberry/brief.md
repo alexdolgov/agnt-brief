@@ -61,12 +61,12 @@ The protocol comprises 4 functional families. Its contracts share 2 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| FINN | unknown | moonriver | n/a | [`0x9a92b5...35a756`](./contracts/moonriver-1285/0x9a92b5ebf1f6f6f7d93696fcd44e5cf75035a756/) | ⚠️ Unaudited |
-| FinnBar | unknown | moonriver | n/a | [`0x37619c...c9210b`](./contracts/moonriver-1285/0x37619cc85325afea778830e184cb60a3abc9210b/) | ⚠️ Unaudited |
-| HuckleberryFarm | unknown | moonriver | n/a | [`0x1f4b76...e343e6`](./contracts/moonriver-1285/0x1f4b7660b6adc3943b5038e3426b33c1c0e343e6/) | ⚠️ Unaudited |
-| MappingTokenV2 | token | moonriver | n/a | [`0x900f1e...802667`](./contracts/moonriver-1285/0x900f1ec5819fa087d368877cd03b265bf1802667/) | ⚠️ Unaudited |
-| TomVault | core_logic | moonriver | n/a | [`0xd90a92...c00fe7`](./contracts/moonriver-1285/0xd90a92bd23b30dc3a69403e00651ff6d08c00fe7/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | proxy | moonriver | n/a | [`0xe31a0d...7c994f`](./contracts/moonriver-1285/0xe31a0da5e59df4c82c60d2dd14be64e7ec7c994f/) | ⚠️ Unaudited |
+| FINN | unknown | moonriver | n/a | [`0x9a92b5ebf1f6f6f7d93696fcd44e5cf75035a756`](./contracts/moonriver-1285/0x9a92b5ebf1f6f6f7d93696fcd44e5cf75035a756/) | ⚠️ Unaudited |
+| FinnBar | unknown | moonriver | n/a | [`0x37619cc85325afea778830e184cb60a3abc9210b`](./contracts/moonriver-1285/0x37619cc85325afea778830e184cb60a3abc9210b/) | ⚠️ Unaudited |
+| HuckleberryFarm | unknown | moonriver | n/a | [`0x1f4b7660b6adc3943b5038e3426b33c1c0e343e6`](./contracts/moonriver-1285/0x1f4b7660b6adc3943b5038e3426b33c1c0e343e6/) | ⚠️ Unaudited |
+| MappingTokenV2 | token | moonriver | n/a | [`0x900f1ec5819fa087d368877cd03b265bf1802667`](./contracts/moonriver-1285/0x900f1ec5819fa087d368877cd03b265bf1802667/) | ⚠️ Unaudited |
+| TomVault | core_logic | moonriver | n/a | [`0xd90a92bd23b30dc3a69403e00651ff6d08c00fe7`](./contracts/moonriver-1285/0xd90a92bd23b30dc3a69403e00651ff6d08c00fe7/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | moonriver | n/a | [`0xe31a0da5e59df4c82c60d2dd14be64e7ec7c994f`](./contracts/moonriver-1285/0xe31a0da5e59df4c82c60d2dd14be64e7ec7c994f/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -86,26 +86,26 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | moonriver | n/a | `0x151368...395a24` | ❓ Unverified |
-| UnnamedContract | unknown | moonriver | n/a | `0x1d10b1...575161` | ❓ Unverified |
-| UnnamedContract | unknown | moonriver | n/a | `0x28c376...68a67c` | ❓ Unverified |
-| UnnamedContract | unknown | moonriver | n/a | `0x421cda...032ec0` | ❓ Unverified |
-| UnnamedContract | unknown | moonriver | n/a | `0x425880...a9e263` | ❓ Unverified |
-| UnnamedContract | unknown | moonriver | n/a | `0x47cf33...59af2b` | ❓ Unverified |
-| UnnamedContract | unknown | moonriver | n/a | `0x487b37...3821df` | ❓ Unverified |
-| UnnamedContract | unknown | moonriver | n/a | `0x49c692...4e1d89` | ❓ Unverified |
-| UnnamedContract | unknown | moonriver | n/a | `0x4daa4b...775db3` | ❓ Unverified |
-| UnnamedContract | unknown | moonriver | n/a | `0x6b8c38...42f037` | ❓ Unverified |
-| UnnamedContract | unknown | moonriver | n/a | `0x7dc84f...fd7531` | ❓ Unverified |
-| UnnamedContract | unknown | moonriver | n/a | `0x8b99c8...6bdecc` | ❓ Unverified |
-| UnnamedContract | unknown | moonriver | n/a | `0xa472a6...bd9ab1` | ❓ Unverified |
-| UnnamedContract | unknown | moonriver | n/a | `0xb0f14a...91345b` | ❓ Unverified |
-| UnnamedContract | unknown | moonriver | n/a | `0xc16525...e396b8` | ❓ Unverified |
-| UnnamedContract | unknown | moonriver | n/a | `0xc35f7e...862837` | ❓ Unverified |
-| UnnamedContract | unknown | moonriver | n/a | `0xc3ee1e...9aa2c8` | ❓ Unverified |
-| UnnamedContract | unknown | moonriver | n/a | `0xd35bd6...a903b1` | ❓ Unverified |
-| UnnamedContract | unknown | moonriver | n/a | `0xf23cd7...d20e1f` | ❓ Unverified |
-| UnnamedContract | unknown | moonriver | n/a | `0xfe2704...76ed9b` | ❓ Unverified |
+| UnnamedContract | unknown | moonriver | n/a | `0x15136884232f0fe97ee93422e3b7761dca395a24` | ❓ Unverified |
+| UnnamedContract | unknown | moonriver | n/a | `0x1d10b1af299cc786384cefdedcee1410f6575161` | ❓ Unverified |
+| UnnamedContract | unknown | moonriver | n/a | `0x28c376b1b19930061707855a7d27a1876168a67c` | ❓ Unverified |
+| UnnamedContract | unknown | moonriver | n/a | `0x421cda7ef70157f34975ae610baf403d33032ec0` | ❓ Unverified |
+| UnnamedContract | unknown | moonriver | n/a | `0x42588054a46a074daf2adeec97cd419749a9e263` | ❓ Unverified |
+| UnnamedContract | unknown | moonriver | n/a | `0x47cf338d572ec2d96ec4dfacc0dd7d89c159af2b` | ❓ Unverified |
+| UnnamedContract | unknown | moonriver | n/a | `0x487b37a8dc1945db399d6ec18df8df00343821df` | ❓ Unverified |
+| UnnamedContract | unknown | moonriver | n/a | `0x49c692bedd59784cc36cc78dcab58dd33a4e1d89` | ❓ Unverified |
+| UnnamedContract | unknown | moonriver | n/a | `0x4daa4b7e01b62828494c5890ed270991ea775db3` | ❓ Unverified |
+| UnnamedContract | unknown | moonriver | n/a | `0x6b8c38c0f5d8a756c019e9b2c7d8ea1cf842f037` | ❓ Unverified |
+| UnnamedContract | unknown | moonriver | n/a | `0x7dc84f4ab00efe72211c4de36fc6638d27fd7531` | ❓ Unverified |
+| UnnamedContract | unknown | moonriver | n/a | `0x8b99c84cfc2041b398f3eb6477491744ec6bdecc` | ❓ Unverified |
+| UnnamedContract | unknown | moonriver | n/a | `0xa472a6e8823f68f372c765be57c1d08905bd9ab1` | ❓ Unverified |
+| UnnamedContract | unknown | moonriver | n/a | `0xb0f14a46fb0f3c74d0f1429ad4cb150a0191345b` | ❓ Unverified |
+| UnnamedContract | unknown | moonriver | n/a | `0xc16525fedbdd0299e0ddf1b08f035e94abe396b8` | ❓ Unverified |
+| UnnamedContract | unknown | moonriver | n/a | `0xc35f7ed5e3f5d335f07c84edd138b3be12862837` | ❓ Unverified |
+| UnnamedContract | unknown | moonriver | n/a | `0xc3ee1ec04581908a01827b36a79d36feb79aa2c8` | ❓ Unverified |
+| UnnamedContract | unknown | moonriver | n/a | `0xd35bd63b916f0646e0f767c81afa5ae199a903b1` | ❓ Unverified |
+| UnnamedContract | unknown | moonriver | n/a | `0xf23cd70ff12291a07e4a725006f5e362cdd20e1f` | ❓ Unverified |
+| UnnamedContract | unknown | moonriver | n/a | `0xfe2704098fbf1cc12d6ad29192a100eb3776ed9b` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -119,11 +119,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| moonriver | [`0x9a92b5...35a756`](./contracts/moonriver-1285/0x9a92b5ebf1f6f6f7d93696fcd44e5cf75035a756/) | FINN | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| moonriver | [`0x37619c...c9210b`](./contracts/moonriver-1285/0x37619cc85325afea778830e184cb60a3abc9210b/) | FinnBar | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| moonriver | [`0x1f4b76...e343e6`](./contracts/moonriver-1285/0x1f4b7660b6adc3943b5038e3426b33c1c0e343e6/) | HuckleberryFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| moonriver | [`0x900f1e...802667`](./contracts/moonriver-1285/0x900f1ec5819fa087d368877cd03b265bf1802667/) | MappingTokenV2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| moonriver | [`0xd90a92...c00fe7`](./contracts/moonriver-1285/0xd90a92bd23b30dc3a69403e00651ff6d08c00fe7/) | TomVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | [`0x9a92b5ebf1f6f6f7d93696fcd44e5cf75035a756`](./contracts/moonriver-1285/0x9a92b5ebf1f6f6f7d93696fcd44e5cf75035a756/) | FINN | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | [`0x37619cc85325afea778830e184cb60a3abc9210b`](./contracts/moonriver-1285/0x37619cc85325afea778830e184cb60a3abc9210b/) | FinnBar | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | [`0x1f4b7660b6adc3943b5038e3426b33c1c0e343e6`](./contracts/moonriver-1285/0x1f4b7660b6adc3943b5038e3426b33c1c0e343e6/) | HuckleberryFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | [`0x900f1ec5819fa087d368877cd03b265bf1802667`](./contracts/moonriver-1285/0x900f1ec5819fa087d368877cd03b265bf1802667/) | MappingTokenV2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | [`0xd90a92bd23b30dc3a69403e00651ff6d08c00fe7`](./contracts/moonriver-1285/0xd90a92bd23b30dc3a69403e00651ff6d08c00fe7/) | TomVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

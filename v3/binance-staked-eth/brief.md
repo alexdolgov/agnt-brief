@@ -52,8 +52,8 @@ The pinned logic-topography run contains 2 contract row(s) across bsc, ethereum.
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xa2e335...27e2e1`, chain 1)
-- UnnamedContract (`0xa2e335...27e2e1`, chain 56)
+- UnnamedContract (`0xa2e3356610840701bdf5611a53974510ae27e2e1`, chain 1)
+- UnnamedContract (`0xa2e3356610840701bdf5611a53974510ae27e2e1`, chain 56)
 
 ## Contract Surface Quality
 
@@ -99,8 +99,8 @@ The pinned logic-topography run contains 2 contract row(s) across bsc, ethereum.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-380583 | `0xa2e335...27e2e1` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | bsc | unit-380584 | `0xa2e335...27e2e1` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-380583 | `0xa2e3356610840701bdf5611a53974510ae27e2e1` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | bsc | unit-380584 | `0xa2e3356610840701bdf5611a53974510ae27e2e1` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

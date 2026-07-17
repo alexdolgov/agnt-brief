@@ -59,17 +59,17 @@ The protocol comprises 3 functional families. Contracts are linked by 1 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| HcSwapAvaxRouter | unknown | avalanche | n/a | 2 deployments: avalanche [`0x010d46...c67c72`](./contracts/avalanche-43114/0x010d464fe46aba2fb468a4bb251248d669c67c72/); avalanche `0xb6559d...ea0609` | ✅ Audited |
+| HcSwapAvaxRouter | unknown | avalanche | n/a | 2 deployments: avalanche [`0x010d464fe46aba2fb468a4bb251248d669c67c72`](./contracts/avalanche-43114/0x010d464fe46aba2fb468a4bb251248d669c67c72/); avalanche `0xb6559dd3cbec057078fbd9477e676a24ccea0609` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AvaxPool | core_logic | avalanche | n/a | [`0x1c9f36...696b24`](./contracts/avalanche-43114/0x1c9f36fe608190d1fe99e001b596c31871696b24/) | ⚠️ Unaudited |
-| HctBar | unknown | avalanche | n/a | [`0x75b797...a01140`](./contracts/avalanche-43114/0x75b797a0ed87f77bb546f3a3556f18fc35a01140/) | ⚠️ Unaudited |
-| HctToken | token | avalanche | n/a | [`0x45c136...10fdbd`](./contracts/avalanche-43114/0x45c13620b55c35a5f539d26e88247011eb10fdbd/) | ⚠️ Unaudited |
-| StakingRewards | unknown | avalanche | n/a | [`0xe4ae2e...22a350`](./contracts/avalanche-43114/0xe4ae2e8648b8e84c4a487a559b04e884b822a350/) | ⚠️ Unaudited |
-| WETH9 | unknown | avalanche | n/a | [`0xc3aeaf...55a6a0`](./contracts/avalanche-43114/0xc3aeaf43b688f2e5081124d270a9dbdca655a6a0/) | ⚠️ Unaudited |
+| AvaxPool | core_logic | avalanche | n/a | [`0x1c9f36fe608190d1fe99e001b596c31871696b24`](./contracts/avalanche-43114/0x1c9f36fe608190d1fe99e001b596c31871696b24/) | ⚠️ Unaudited |
+| HctBar | unknown | avalanche | n/a | [`0x75b797a0ed87f77bb546f3a3556f18fc35a01140`](./contracts/avalanche-43114/0x75b797a0ed87f77bb546f3a3556f18fc35a01140/) | ⚠️ Unaudited |
+| HctToken | token | avalanche | n/a | [`0x45c13620b55c35a5f539d26e88247011eb10fdbd`](./contracts/avalanche-43114/0x45c13620b55c35a5f539d26e88247011eb10fdbd/) | ⚠️ Unaudited |
+| StakingRewards | unknown | avalanche | n/a | [`0xe4ae2e8648b8e84c4a487a559b04e884b822a350`](./contracts/avalanche-43114/0xe4ae2e8648b8e84c4a487a559b04e884b822a350/) | ⚠️ Unaudited |
+| WETH9 | unknown | avalanche | n/a | [`0xc3aeaf43b688f2e5081124d270a9dbdca655a6a0`](./contracts/avalanche-43114/0xc3aeaf43b688f2e5081124d270a9dbdca655a6a0/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -89,22 +89,22 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Proxy (impl: 0xabfb6277242046ba6941a233cdd784133b677623) | unknown | avalanche | n/a | 2 deployments: avalanche `0x1cbf06...43f13e`; avalanche `0xabfb62...677623` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x0b6d1c...14e9a9` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x3ce2fc...1bc032` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x5dd813...ccfaee` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x667f20...4394b9` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x75b09f...2d2558` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xa2b7aa...640b2e` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xa4569e...a7fbe8` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xab58f3...13341e` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xac7270...35d7c6` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xb4ce5b...e00cd2` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xc9740e...ccc5ff` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xd10ef9...b9702e` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xe81d3f...c7e43f` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xf7d12e...a447e7` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xfa4db3...a0b957` | ❓ Unverified |
+| Proxy (impl: 0xabfb6277242046ba6941a233cdd784133b677623) | unknown | avalanche | n/a | 2 deployments: avalanche `0x1cbf069068011b114c699702485bb10b9b43f13e`; avalanche `0xabfb6277242046ba6941a233cdd784133b677623` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x0b6d1c3e60722123718faf13bfc48270bd14e9a9` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x3ce2fcec09879af073b53bef5f4d04327a1bc032` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x5dd813bce00141ba02f7c943111d1cfd0cccfaee` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x667f20179d7cd0ed5c58ad3fb9b2d564b74394b9` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x75b09f7ba3a2f24501a3c707f3ba7c7e342d2558` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xa2b7aadf03853217446ab8230b6a6c42ff640b2e` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xa4569e78193f38c6c23dfd20dd358b91e0a7fbe8` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xab58f3d04bd0497a55f57062bbfaeb958b13341e` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xac727063a093b014c263fbbb8c67126f9535d7c6` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xb4ce5bbc932e69100094e4479bea1eb549e00cd2` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xc9740e445693e6b7ae5471ecbe1b4a941cccc5ff` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xd10ef9f65635461204d073455d4bf6e720b9702e` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xe81d3f95c887ce9a89198312774d4274eec7e43f` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xf7d12ea4fda47759d2138066a9abde6af3a447e7` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xfa4db312df43fbb629e010a5e9630ef8baa0b957` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -118,11 +118,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| avalanche | [`0x1c9f36...696b24`](./contracts/avalanche-43114/0x1c9f36fe608190d1fe99e001b596c31871696b24/) | AvaxPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x75b797...a01140`](./contracts/avalanche-43114/0x75b797a0ed87f77bb546f3a3556f18fc35a01140/) | HctBar | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x45c136...10fdbd`](./contracts/avalanche-43114/0x45c13620b55c35a5f539d26e88247011eb10fdbd/) | HctToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0xe4ae2e...22a350`](./contracts/avalanche-43114/0xe4ae2e8648b8e84c4a487a559b04e884b822a350/) | StakingRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0xc3aeaf...55a6a0`](./contracts/avalanche-43114/0xc3aeaf43b688f2e5081124d270a9dbdca655a6a0/) | WETH9 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0x1c9f36fe608190d1fe99e001b596c31871696b24`](./contracts/avalanche-43114/0x1c9f36fe608190d1fe99e001b596c31871696b24/) | AvaxPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0x75b797a0ed87f77bb546f3a3556f18fc35a01140`](./contracts/avalanche-43114/0x75b797a0ed87f77bb546f3a3556f18fc35a01140/) | HctBar | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0x45c13620b55c35a5f539d26e88247011eb10fdbd`](./contracts/avalanche-43114/0x45c13620b55c35a5f539d26e88247011eb10fdbd/) | HctToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0xe4ae2e8648b8e84c4a487a559b04e884b822a350`](./contracts/avalanche-43114/0xe4ae2e8648b8e84c4a487a559b04e884b822a350/) | StakingRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0xc3aeaf43b688f2e5081124d270a9dbdca655a6a0`](./contracts/avalanche-43114/0xc3aeaf43b688f2e5081124d270a9dbdca655a6a0/) | WETH9 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

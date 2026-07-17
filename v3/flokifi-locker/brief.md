@@ -52,13 +52,13 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xf5d492...670a86`, chain 1)
-- UnnamedContract (`0xfbec99...159c76`, chain 10)
-- UnnamedContract (`0xe33ee2...26b4d4`, chain 56)
-- UnnamedContract (`0x764150...72062d`, chain 137)
-- UnnamedContract (`0x6817b1...ec3df1`, chain 250)
-- UnnamedContract (`0xc9ddec...d636ef`, chain 42161)
-- UnnamedContract (`0x9cdac5...8da644`, chain 43114)
+- UnnamedContract (`0xf5d492ffbec47db69333a6812bec227b6f670a86`, chain 1)
+- UnnamedContract (`0xfbec9991f2ef1e5cc3a408e2555c00958b159c76`, chain 10)
+- UnnamedContract (`0xe33ee27a75c31511e7b91fb05e1091daa626b4d4`, chain 56)
+- UnnamedContract (`0x76415004e851de4f7da7aad3f066e5cd6572062d`, chain 137)
+- UnnamedContract (`0x6817b11b7292120818213f627cc6ed330fec3df1`, chain 250)
+- UnnamedContract (`0xc9ddec022bf430d61e356677edddaa5696d636ef`, chain 42161)
+- UnnamedContract (`0x9cdac53df578d3bda98fe41fc2cd6ceeb28da644`, chain 43114)
 
 ## Contract Surface Quality
 
@@ -104,25 +104,25 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ConstantMultiplier | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb254cc...b90721` | ⚠️ Unaudited |
-| DynamicTaxHandler | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x834f96...62b67b` | ⚠️ Unaudited |
-| ExponentialTaxHandler | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa4ffcc...d87dbe` | ⚠️ Unaudited |
-| FLOKI | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x43f11c...cd066d` | ⚠️ Unaudited |
-| FlokiInuNFTReward | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x064f95...cd6307` | ⚠️ Unaudited |
-| FlokiInuNFTRewardPickUp | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1b231f...e5db16` | ⚠️ Unaudited |
-| FlokiInuNFTRubyRewardPickUp | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1b8234...2dc741` | ⚠️ Unaudited |
-| FlokiRewardToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf7756d...fc099c` | ⚠️ Unaudited |
-| FlokiStakingPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb8d247...f4ee43` | ⚠️ Unaudited |
-| Flokitar | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x23051f...8c83b9` | ⚠️ Unaudited |
-| GemstoneNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x039894...55ec00` | ⚠️ Unaudited |
-| PenaltyFee | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x476129...21e30d` | ⚠️ Unaudited |
-| SpecialTaxHandler | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4b4cf7...81baf0` | ⚠️ Unaudited |
-| StaticTaxHandler | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x12e39c...2df74c` | ⚠️ Unaudited |
-| StaticTaxHandlerWithMaximum | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x162e54...033bf7` | ⚠️ Unaudited |
-| T1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4507ce...e2b528` | ⚠️ Unaudited |
-| TreasuryHandlerAlpha | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x35e6e4...024c24` | ⚠️ Unaudited |
-| ZeroTaxHandler | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4491c4...19bd56` | ⚠️ Unaudited |
-| ZeroTreasuryHandler | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2bd06f...28b0e2` | ⚠️ Unaudited |
+| ConstantMultiplier | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb254cc6c1d178c2de8182cede6113a986bb90721` | ⚠️ Unaudited |
+| DynamicTaxHandler | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x834f96fd4fe9147a2a647d957fbbe67fec62b67b` | ⚠️ Unaudited |
+| ExponentialTaxHandler | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa4ffccd34a129a2554db737b518b269b81d87dbe` | ⚠️ Unaudited |
+| FLOKI | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x43f11c02439e2736800433b4594994bd43cd066d` | ⚠️ Unaudited |
+| FlokiInuNFTReward | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x064f9547a78bd5ba35a7aeb2221de69b86cd6307` | ⚠️ Unaudited |
+| FlokiInuNFTRewardPickUp | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1b231f8e6f16ea0b5ca0d2f39eb595bec3e5db16` | ⚠️ Unaudited |
+| FlokiInuNFTRubyRewardPickUp | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1b823442253556b4cb8d2586d8dc0fc01c2dc741` | ⚠️ Unaudited |
+| FlokiRewardToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf7756db83625e78d693ca90749e2d0869dfc099c` | ⚠️ Unaudited |
+| FlokiStakingPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb8d2471e35ee033db509e0456c8efc4135f4ee43` | ⚠️ Unaudited |
+| Flokitar | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x23051fe0eb93fabe7b314fd56a95f395058c83b9` | ⚠️ Unaudited |
+| GemstoneNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0398947346144d39e1983c3d9a63248a2655ec00` | ⚠️ Unaudited |
+| PenaltyFee | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4761295cb20bbf40952b3239bdc4fcd14021e30d` | ⚠️ Unaudited |
+| SpecialTaxHandler | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4b4cf7c7e189da2eddcfbf4430ca5ca9ce81baf0` | ⚠️ Unaudited |
+| StaticTaxHandler | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x12e39cd22501eec967663b9b58946d02da2df74c` | ⚠️ Unaudited |
+| StaticTaxHandlerWithMaximum | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x162e54eb85dd85c3f1d27918d3fa950af1033bf7` | ⚠️ Unaudited |
+| T1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4507cef57c46789ef8d1a19ea45f4216bae2b528` | ⚠️ Unaudited |
+| TreasuryHandlerAlpha | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x35e6e44f97e3a112dbabf9eb47d6f84224024c24` | ⚠️ Unaudited |
+| ZeroTaxHandler | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4491c4c1d1bf636057eab66cd986da08f619bd56` | ⚠️ Unaudited |
+| ZeroTreasuryHandler | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2bd06f15bcb6ff028befc4a4dd21ed0f1028b0e2` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -142,13 +142,13 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240028 | `0xf5d492...670a86` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-240029 | `0xfbec99...159c76` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-240034 | `0xe33ee2...26b4d4` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-240030 | `0x764150...72062d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-240031 | `0x6817b1...ec3df1` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-240032 | `0xc9ddec...d636ef` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-240033 | `0x9cdac5...8da644` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240028 | `0xf5d492ffbec47db69333a6812bec227b6f670a86` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-240029 | `0xfbec9991f2ef1e5cc3a408e2555c00958b159c76` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-240034 | `0xe33ee27a75c31511e7b91fb05e1091daa626b4d4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-240030 | `0x76415004e851de4f7da7aad3f066e5cd6572062d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-240031 | `0x6817b11b7292120818213f627cc6ed330fec3df1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-240032 | `0xc9ddec022bf430d61e356677edddaa5696d636ef` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-240033 | `0x9cdac53df578d3bda98fe41fc2cd6ceeb28da644` | ❓ Unverified |
 
 ## Audit Inventory
 

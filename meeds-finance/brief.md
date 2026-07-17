@@ -61,10 +61,10 @@ The protocol comprises 3 functional families. Its contracts share 2 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| MeedsToken | token | ethereum | n/a | [`0x8503a7...0547b7`](./contracts/ethereum-1/0x8503a7b00b4b52692cc6c14e5b96f142e30547b7/) | ⚠️ Unaudited |
-| TokenFactory | registry | ethereum | n/a | [`0x1b37d0...386050`](./contracts/ethereum-1/0x1b37d04759ad542640cc44ff849a373040386050/) | ⚠️ Unaudited |
-| UniswapV3Pool | core_logic | polygon | n/a | 6 deployments: ethereum `0xc82b1c...12b3d1`; ethereum `0xfa127d...f9989e`; optimism `0xe13330...369b17`; polygon [`0x4e7d4e...b02a69`](./contracts/polygon-137/0x4e7d4e5fd3e4a68adcbeacaa3748b9c67bb02a69/); base `0xada40f...51dd55`; arbitrum `0xc76979...7225a1` | ⚠️ Unaudited |
-| XMeedsNFTRewarding | token | ethereum | n/a | [`0x44d6d6...e1bcd4`](./contracts/ethereum-1/0x44d6d6ab50401dd846336e9c706a492f06e1bcd4/) | ⚠️ Unaudited |
+| MeedsToken | token | ethereum | n/a | [`0x8503a7b00b4b52692cc6c14e5b96f142e30547b7`](./contracts/ethereum-1/0x8503a7b00b4b52692cc6c14e5b96f142e30547b7/) | ⚠️ Unaudited |
+| TokenFactory | registry | ethereum | n/a | [`0x1b37d04759ad542640cc44ff849a373040386050`](./contracts/ethereum-1/0x1b37d04759ad542640cc44ff849a373040386050/) | ⚠️ Unaudited |
+| UniswapV3Pool | core_logic | polygon | n/a | 6 deployments: ethereum `0xc82b1c50609217075d28aa22f11a80450212b3d1`; ethereum `0xfa127d9a1154610eedbab7323b64363089f9989e`; optimism `0xe133306fc90133e33a8c322e8c81f06ec2369b17`; polygon [`0x4e7d4e5fd3e4a68adcbeacaa3748b9c67bb02a69`](./contracts/polygon-137/0x4e7d4e5fd3e4a68adcbeacaa3748b9c67bb02a69/); base `0xada40f483dd44e9e6e126a2db59379d45551dd55`; arbitrum `0xc76979618841ab656bb834b4fe812319677225a1` | ⚠️ Unaudited |
+| XMeedsNFTRewarding | token | ethereum | n/a | [`0x44d6d6ab50401dd846336e9c706a492f06e1bcd4`](./contracts/ethereum-1/0x44d6d6ab50401dd846336e9c706a492f06e1bcd4/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,9 +95,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x8503a7...0547b7`](./contracts/ethereum-1/0x8503a7b00b4b52692cc6c14e5b96f142e30547b7/) | MeedsToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1b37d0...386050`](./contracts/ethereum-1/0x1b37d04759ad542640cc44ff849a373040386050/) | TokenFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x44d6d6...e1bcd4`](./contracts/ethereum-1/0x44d6d6ab50401dd846336e9c706a492f06e1bcd4/) | XMeedsNFTRewarding | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8503a7b00b4b52692cc6c14e5b96f142e30547b7`](./contracts/ethereum-1/0x8503a7b00b4b52692cc6c14e5b96f142e30547b7/) | MeedsToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1b37d04759ad542640cc44ff849a373040386050`](./contracts/ethereum-1/0x1b37d04759ad542640cc44ff849a373040386050/) | TokenFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x44d6d6ab50401dd846336e9c706a492f06e1bcd4`](./contracts/ethereum-1/0x44d6d6ab50401dd846336e9c706a492f06e1bcd4/) | XMeedsNFTRewarding | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

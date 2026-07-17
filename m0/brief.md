@@ -72,44 +72,44 @@ The protocol comprises 2 functional families. Its contracts share 26 common proj
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| DistributionVault | unknown | ethereum | n/a | [`0xd7298f...caa34f`](./contracts/ethereum-1/0xd7298f620b0f752cf41bd818a16c756d9dcaa34f/) | ✅ Audited |
-| EmergencyGovernor | unknown | ethereum | n/a | [`0x886d40...cdf90a`](./contracts/ethereum-1/0x886d405949f709bc3f4451491bdd07ff51cdf90a/) | ✅ Audited |
-| ExecutorEntryPoint | unknown | arbitrum | n/a | [`0x4db060...fda979`](./contracts/arbitrum-42161/0x4db06053edb413899454bad5bf25213b22fda979/) | ✅ Audited |
-| HyperlaneBridge | unknown | ethereum | n/a | [`0x51dce1...4b0dc3`](./contracts/ethereum-1/0x51dce104e5ba88fabc19a2c519f955bb834b0dc3/) | ✅ Audited |
-| HyperlaneBridgeAdapter | unknown | plasma | n/a | [`0x01ffa0...403b6d`](./contracts/plasma-9745/0x01ffa0003a21f14e039d249af4f4d770f8403b6d/) | ✅ Audited |
-| JMIExtension | unknown | plasma | n/a | [`0xf2414b...973a27`](./contracts/plasma-9745/0xf2414b88c565b53fbb3923c96bdf826333973a27/) | ✅ Audited |
-| LayerZeroBridgeAdapter | unknown | ethereum | n/a | [`0x77ef4e...bb4b4d`](./contracts/ethereum-1/0x77ef4e9d37524069f81890c537a5c5d390bb4b4d/) | ✅ Audited |
-| Migrator | unknown | bsc | n/a | [`0x1051ad...fd1029`](./contracts/bsc-56/0x1051adbfd1e9981d08d3d64c221878b2befd1029/) | ✅ Audited |
-| MinterGateway | unknown | ethereum | n/a | [`0xf7f963...19f04e`](./contracts/ethereum-1/0xf7f9638cb444d65e5a40bf5ff98ebe4ff319f04e/) | ✅ Audited |
-| MToken | unknown | bsc | n/a | [`0x23a62a...234bc8`](./contracts/bsc-56/0x23a62a85fa6d6bfa78ae2924060c051e28234bc8/) | ✅ Audited |
-| MUSD | unknown | bsc | n/a | [`0x23d816...53ee79`](./contracts/bsc-56/0x23d8162e084aa33d8ef6fcc0ab33f4028a53ee79/) | ✅ Audited |
-| Portal | unknown | arbitrum | n/a | [`0x23ca66...bba468`](./contracts/arbitrum-42161/0x23ca665c8a73292fc7ac2cc4493d2ce883bba468/) | ✅ Audited |
-| PowerToken | unknown | ethereum | n/a | [`0x5983b8...4c5b03`](./contracts/ethereum-1/0x5983b89fa184f14917013b9c3062afd9434c5b03/) | ✅ Audited |
-| Proxy | unknown | ethereum | n/a | [`0x437cc3...98b291`](./contracts/ethereum-1/0x437cc33344a0b27a429f795ff6b469c72698b291/) | ✅ Audited |
-| Registrar | unknown | ethereum | n/a | [`0x119fbe...81ae2c`](./contracts/ethereum-1/0x119fbeedd4f4f4298fb59b720d5654442b81ae2c/) | ✅ Audited |
-| SpokePortal | unknown | linea | n/a | [`0x01ffa0...403b6d`](./contracts/linea-59144/0x01ffa0003a21f14e039d249af4f4d770f8403b6d/) | ✅ Audited |
-| StandardGovernor | unknown | ethereum | n/a | [`0xb024ac...1da016`](./contracts/ethereum-1/0xb024ac5a7c6bc92fbacc8c3387e628a07e1da016/) | ✅ Audited |
-| SwapFacility | unknown | optimism | n/a | [`0x07dd9e...8cd146`](./contracts/optimism-10/0x07dd9e3b00002f9cb178670159d4e6fe0d8cd146/) | ✅ Audited |
-| UniswapV3SwapAdapter | unknown | ethereum | n/a | [`0x023bd2...bc4f4b`](./contracts/ethereum-1/0x023bd2f0a95373c55fc8d1c5f8e60cc3b9bc4f4b/) | ✅ Audited |
-| USDZ | unknown | arbitrum | n/a | [`0xd87c75...ff1bda`](./contracts/arbitrum-42161/0xd87c75a92db19fe334fe7812890f893449ff1bda/) | ✅ Audited |
-| ZeroGovernor | unknown | ethereum | n/a | [`0xa0dafa...8b80fe`](./contracts/ethereum-1/0xa0dafaeea4a1d44534e1b9227e19cae6358b80fe/) | ✅ Audited |
-| ZeroToken | unknown | ethereum | n/a | [`0x988567...0492be`](./contracts/ethereum-1/0x988567fe094570cce1ffda29d1f2d842b70492be/) | ✅ Audited |
+| DistributionVault | unknown | ethereum | n/a | [`0xd7298f620b0f752cf41bd818a16c756d9dcaa34f`](./contracts/ethereum-1/0xd7298f620b0f752cf41bd818a16c756d9dcaa34f/) | ✅ Audited |
+| EmergencyGovernor | unknown | ethereum | n/a | [`0x886d405949f709bc3f4451491bdd07ff51cdf90a`](./contracts/ethereum-1/0x886d405949f709bc3f4451491bdd07ff51cdf90a/) | ✅ Audited |
+| ExecutorEntryPoint | unknown | arbitrum | n/a | [`0x4db06053edb413899454bad5bf25213b22fda979`](./contracts/arbitrum-42161/0x4db06053edb413899454bad5bf25213b22fda979/) | ✅ Audited |
+| HyperlaneBridge | unknown | ethereum | n/a | [`0x51dce104e5ba88fabc19a2c519f955bb834b0dc3`](./contracts/ethereum-1/0x51dce104e5ba88fabc19a2c519f955bb834b0dc3/) | ✅ Audited |
+| HyperlaneBridgeAdapter | unknown | plasma | n/a | [`0x01ffa0003a21f14e039d249af4f4d770f8403b6d`](./contracts/plasma-9745/0x01ffa0003a21f14e039d249af4f4d770f8403b6d/) | ✅ Audited |
+| JMIExtension | unknown | plasma | n/a | [`0xf2414b88c565b53fbb3923c96bdf826333973a27`](./contracts/plasma-9745/0xf2414b88c565b53fbb3923c96bdf826333973a27/) | ✅ Audited |
+| LayerZeroBridgeAdapter | unknown | ethereum | n/a | [`0x77ef4e9d37524069f81890c537a5c5d390bb4b4d`](./contracts/ethereum-1/0x77ef4e9d37524069f81890c537a5c5d390bb4b4d/) | ✅ Audited |
+| Migrator | unknown | bsc | n/a | [`0x1051adbfd1e9981d08d3d64c221878b2befd1029`](./contracts/bsc-56/0x1051adbfd1e9981d08d3d64c221878b2befd1029/) | ✅ Audited |
+| MinterGateway | unknown | ethereum | n/a | [`0xf7f9638cb444d65e5a40bf5ff98ebe4ff319f04e`](./contracts/ethereum-1/0xf7f9638cb444d65e5a40bf5ff98ebe4ff319f04e/) | ✅ Audited |
+| MToken | unknown | bsc | n/a | [`0x23a62a85fa6d6bfa78ae2924060c051e28234bc8`](./contracts/bsc-56/0x23a62a85fa6d6bfa78ae2924060c051e28234bc8/) | ✅ Audited |
+| MUSD | unknown | bsc | n/a | [`0x23d8162e084aa33d8ef6fcc0ab33f4028a53ee79`](./contracts/bsc-56/0x23d8162e084aa33d8ef6fcc0ab33f4028a53ee79/) | ✅ Audited |
+| Portal | unknown | arbitrum | n/a | [`0x23ca665c8a73292fc7ac2cc4493d2ce883bba468`](./contracts/arbitrum-42161/0x23ca665c8a73292fc7ac2cc4493d2ce883bba468/) | ✅ Audited |
+| PowerToken | unknown | ethereum | n/a | [`0x5983b89fa184f14917013b9c3062afd9434c5b03`](./contracts/ethereum-1/0x5983b89fa184f14917013b9c3062afd9434c5b03/) | ✅ Audited |
+| Proxy | unknown | ethereum | n/a | [`0x437cc33344a0b27a429f795ff6b469c72698b291`](./contracts/ethereum-1/0x437cc33344a0b27a429f795ff6b469c72698b291/) | ✅ Audited |
+| Registrar | unknown | ethereum | n/a | [`0x119fbeedd4f4f4298fb59b720d5654442b81ae2c`](./contracts/ethereum-1/0x119fbeedd4f4f4298fb59b720d5654442b81ae2c/) | ✅ Audited |
+| SpokePortal | unknown | linea | n/a | [`0x01ffa0003a21f14e039d249af4f4d770f8403b6d`](./contracts/linea-59144/0x01ffa0003a21f14e039d249af4f4d770f8403b6d/) | ✅ Audited |
+| StandardGovernor | unknown | ethereum | n/a | [`0xb024ac5a7c6bc92fbacc8c3387e628a07e1da016`](./contracts/ethereum-1/0xb024ac5a7c6bc92fbacc8c3387e628a07e1da016/) | ✅ Audited |
+| SwapFacility | unknown | optimism | n/a | [`0x07dd9e3b00002f9cb178670159d4e6fe0d8cd146`](./contracts/optimism-10/0x07dd9e3b00002f9cb178670159d4e6fe0d8cd146/) | ✅ Audited |
+| UniswapV3SwapAdapter | unknown | ethereum | n/a | [`0x023bd2f0a95373c55fc8d1c5f8e60cc3b9bc4f4b`](./contracts/ethereum-1/0x023bd2f0a95373c55fc8d1c5f8e60cc3b9bc4f4b/) | ✅ Audited |
+| USDZ | unknown | arbitrum | n/a | [`0xd87c75a92db19fe334fe7812890f893449ff1bda`](./contracts/arbitrum-42161/0xd87c75a92db19fe334fe7812890f893449ff1bda/) | ✅ Audited |
+| ZeroGovernor | unknown | ethereum | n/a | [`0xa0dafaeea4a1d44534e1b9227e19cae6358b80fe`](./contracts/ethereum-1/0xa0dafaeea4a1d44534e1b9227e19cae6358b80fe/) | ✅ Audited |
+| ZeroToken | unknown | ethereum | n/a | [`0x988567fe094570cce1ffda29d1f2d842b70492be`](./contracts/ethereum-1/0x988567fe094570cce1ffda29d1f2d842b70492be/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (11)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ERC1967Proxy | unknown | ethereum | n/a | [`0x36f586...3c2ece`](./contracts/ethereum-1/0x36f586a30502ae3afb555b8aa4dcc05d233c2ece/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | ethereum | n/a | [`0xacffec...9d4fdd`](./contracts/ethereum-1/0xacffec28c4eee21c889a4e6c0704c540ed9d4fdd/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | optimism | n/a | [`0x3349e4...8a4dde`](./contracts/optimism-10/0x3349e443068f76666789c4f76f00d9c4f38a4dde/) | ⚠️ Unaudited |
-| ExtensionBeacon | unknown | arbitrum | n/a | [`0xb82328...79a931`](./contracts/arbitrum-42161/0xb823280379f3e057ccae4ba5f6f772528979a931/) | ⚠️ Unaudited |
-| MultiMint | unknown | arbitrum | n/a | [`0x4ffbc3...4033ef`](./contracts/arbitrum-42161/0x4ffbc316cf29e8eb39cbf819cfd3d5f5b34033ef/) | ⚠️ Unaudited |
-| PYUSDX | unknown | arbitrum | n/a | [`0x8dfb7c...71c5e0`](./contracts/arbitrum-42161/0x8dfb7c8ce5e67ace965520b134b4aca8fd71c5e0/) | ⚠️ Unaudited |
-| SpokePortalV1StorageCleaner | unknown | base | n/a | [`0x593ffa...ea7bae`](./contracts/base-8453/0x593ffa1ad180c3c872628761697c5288fdea7bae/) | ⚠️ Unaudited |
-| TimelockController | unknown | bsc | n/a | [`0x3e98f1...2cd52a`](./contracts/bsc-56/0x3e98f104dcec706d087cc58db1e92ba7fc2cd52a/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x25c8af...a09c2a`](./contracts/ethereum-1/0x25c8affc5a63d8e047c12918c0438aba5aa09c2a/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x693cc3...cd9499`](./contracts/ethereum-1/0x693cc3305342b02ac1549b509a704ff944cd9499/) | ⚠️ Unaudited |
-| YieldToOne | unknown | arbitrum | n/a | [`0xc560c9...678803`](./contracts/arbitrum-42161/0xc560c9b8ed6d589ee676d279f2649a236c678803/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | ethereum | n/a | [`0x36f586a30502ae3afb555b8aa4dcc05d233c2ece`](./contracts/ethereum-1/0x36f586a30502ae3afb555b8aa4dcc05d233c2ece/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | ethereum | n/a | [`0xacffec28c4eee21c889a4e6c0704c540ed9d4fdd`](./contracts/ethereum-1/0xacffec28c4eee21c889a4e6c0704c540ed9d4fdd/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | optimism | n/a | [`0x3349e443068f76666789c4f76f00d9c4f38a4dde`](./contracts/optimism-10/0x3349e443068f76666789c4f76f00d9c4f38a4dde/) | ⚠️ Unaudited |
+| ExtensionBeacon | unknown | arbitrum | n/a | [`0xb823280379f3e057ccae4ba5f6f772528979a931`](./contracts/arbitrum-42161/0xb823280379f3e057ccae4ba5f6f772528979a931/) | ⚠️ Unaudited |
+| MultiMint | unknown | arbitrum | n/a | [`0x4ffbc316cf29e8eb39cbf819cfd3d5f5b34033ef`](./contracts/arbitrum-42161/0x4ffbc316cf29e8eb39cbf819cfd3d5f5b34033ef/) | ⚠️ Unaudited |
+| PYUSDX | unknown | arbitrum | n/a | [`0x8dfb7c8ce5e67ace965520b134b4aca8fd71c5e0`](./contracts/arbitrum-42161/0x8dfb7c8ce5e67ace965520b134b4aca8fd71c5e0/) | ⚠️ Unaudited |
+| SpokePortalV1StorageCleaner | unknown | base | n/a | [`0x593ffa1ad180c3c872628761697c5288fdea7bae`](./contracts/base-8453/0x593ffa1ad180c3c872628761697c5288fdea7bae/) | ⚠️ Unaudited |
+| TimelockController | unknown | bsc | n/a | [`0x3e98f104dcec706d087cc58db1e92ba7fc2cd52a`](./contracts/bsc-56/0x3e98f104dcec706d087cc58db1e92ba7fc2cd52a/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x25c8affc5a63d8e047c12918c0438aba5aa09c2a`](./contracts/ethereum-1/0x25c8affc5a63d8e047c12918c0438aba5aa09c2a/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x693cc3305342b02ac1549b509a704ff944cd9499`](./contracts/ethereum-1/0x693cc3305342b02ac1549b509a704ff944cd9499/) | ⚠️ Unaudited |
+| YieldToOne | unknown | arbitrum | n/a | [`0xc560c9b8ed6d589ee676d279f2649a236c678803`](./contracts/arbitrum-42161/0xc560c9b8ed6d589ee676d279f2649a236c678803/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -192,11 +192,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | [`0xb82328...79a931`](./contracts/arbitrum-42161/0xb823280379f3e057ccae4ba5f6f772528979a931/) | ExtensionBeacon | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x4ffbc3...4033ef`](./contracts/arbitrum-42161/0x4ffbc316cf29e8eb39cbf819cfd3d5f5b34033ef/) | MultiMint | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x8dfb7c...71c5e0`](./contracts/arbitrum-42161/0x8dfb7c8ce5e67ace965520b134b4aca8fd71c5e0/) | PYUSDX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x593ffa...ea7bae`](./contracts/base-8453/0x593ffa1ad180c3c872628761697c5288fdea7bae/) | SpokePortalV1StorageCleaner | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xc560c9...678803`](./contracts/arbitrum-42161/0xc560c9b8ed6d589ee676d279f2649a236c678803/) | YieldToOne | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xb823280379f3e057ccae4ba5f6f772528979a931`](./contracts/arbitrum-42161/0xb823280379f3e057ccae4ba5f6f772528979a931/) | ExtensionBeacon | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x4ffbc316cf29e8eb39cbf819cfd3d5f5b34033ef`](./contracts/arbitrum-42161/0x4ffbc316cf29e8eb39cbf819cfd3d5f5b34033ef/) | MultiMint | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x8dfb7c8ce5e67ace965520b134b4aca8fd71c5e0`](./contracts/arbitrum-42161/0x8dfb7c8ce5e67ace965520b134b4aca8fd71c5e0/) | PYUSDX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x593ffa1ad180c3c872628761697c5288fdea7bae`](./contracts/base-8453/0x593ffa1ad180c3c872628761697c5288fdea7bae/) | SpokePortalV1StorageCleaner | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xc560c9b8ed6d589ee676d279f2649a236c678803`](./contracts/arbitrum-42161/0xc560c9b8ed6d589ee676d279f2649a236c678803/) | YieldToOne | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

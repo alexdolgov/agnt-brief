@@ -89,16 +89,16 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| EV | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x43b280...fce74c` | ⚠️ Unaudited |
-| EV | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0xe7e7e7...c1e7e7` | ⚠️ Unaudited |
-| NttManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x4d54c9...04d03a`; arbitrum `0xf432b2...f435cd` | ⚠️ Unaudited |
-| UniPoolFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0xa88216...06b6a7` | ⚠️ Unaudited |
-| UniPoolPair | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0xfa896e...fe8f56` | ⚠️ Unaudited |
-| UniPoolRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xb15e7a...ff7628` | ⚠️ Unaudited |
-| UniPoolVault | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0xabd8dc...917b91` | ⚠️ Unaudited |
-| UpgradeableBeacon | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | arbitrum | n/a | `0x4e04f0...a5e5b4` | ⚠️ Unaudited |
-| WormholeTransceiver | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x1ea94d...9d63b5` | ⚠️ Unaudited |
-| WormholeTransceiver | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x3d0f80...a945f6` | ⚠️ Unaudited |
+| EV | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x43b280297a7f1dcc27f44f06cbedffa8b5fce74c` | ⚠️ Unaudited |
+| EV | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0xe7e7e741c23a4767831a56a8c99f522c5ac1e7e7` | ⚠️ Unaudited |
+| NttManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x4d54c928d802eee6632177b6c146fc3e9b04d03a`; arbitrum `0xf432b2564cc0e233482a1f2af0eda4832cf435cd` | ⚠️ Unaudited |
+| UniPoolFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0xa88216e6cf409a25c719234c4817628ae406b6a7` | ⚠️ Unaudited |
+| UniPoolPair | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0xfa896ef9659ea0dcf42c751e2b1f78f626fe8f56` | ⚠️ Unaudited |
+| UniPoolRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xb15e7a89e71b8468c23eb330f837caf0f2ff7628` | ⚠️ Unaudited |
+| UniPoolVault | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0xabd8dc06559634e59f6698c33a5e65e90e917b91` | ⚠️ Unaudited |
+| UpgradeableBeacon | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | arbitrum | n/a | `0x4e04f0fcc6c153cc7ff21b8e49aa53053ba5e5b4` | ⚠️ Unaudited |
+| WormholeTransceiver | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x1ea94dfaaabfa1ac4dcc672cc27fca6bc59d63b5` | ⚠️ Unaudited |
+| WormholeTransceiver | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x3d0f808e717943f7aa53c6285a33a2dfa2a945f6` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -118,10 +118,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x4e3ca9...e8acb5` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x6a53ed...c98003` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x99af3f...7cd682` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xc26494...4fca44` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x4e3ca901719c84cf86f4328d3d930b471de8acb5` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x6a53ed05b0c3514d4789cb0ed79c17092dc98003` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x99af3f509009b7266d251bc4292612b7e77cd682` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xc264944e9e7073f8f98fef7338cda973914fca44` | ❓ Unverified |
 
 ## Audit Inventory
 

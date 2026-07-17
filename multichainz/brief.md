@@ -57,23 +57,23 @@ The protocol comprises 3 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| MtzPool | unknown | arbitrum | n/a | [`0x0a01b0...59d6c7`](./contracts/arbitrum-42161/0x0a01b006c471032b3ec816ede297c05c4459d6c7/) | ✅ Audited |
+| MtzPool | unknown | arbitrum | n/a | [`0x0a01b006c471032b3ec816ede297c05c4459d6c7`](./contracts/arbitrum-42161/0x0a01b006c471032b3ec816ede297c05c4459d6c7/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (11)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ChainzMerkleDistributor | unknown | base | n/a | [`0x1154ec...3c5d2b`](./contracts/base-8453/0x1154ec49474e22d0f3d0ca3e863aadd1bc3c5d2b/) | ⚠️ Unaudited |
-| ChainzPointsDistributor | unknown | base | n/a | [`0x41ab36...4cbf4f`](./contracts/base-8453/0x41ab36b0825e6045ee1a8a4a8d009127634cbf4f/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | base | n/a | [`0x8d0d48...15bd6c`](./contracts/base-8453/0x8d0d4891842566dc0016741b98c1155dee15bd6c/) | ⚠️ Unaudited |
-| LendRouter | unknown | base | n/a | [`0x52410b...ed658a`](./contracts/base-8453/0x52410b7ba13cefa3d0bd2e8bac687c00a2ed658a/) | ⚠️ Unaudited |
-| MtzPriceOracle | unknown | base | n/a | [`0x30d96e...2726f8`](./contracts/base-8453/0x30d96e0c312098c8a40db596b95326ba8e2726f8/) | ⚠️ Unaudited |
-| MtzStorkOracle | unknown | base | n/a | [`0x0ef756...7d0a8e`](./contracts/base-8453/0x0ef756281445ea439a10b6597a699ce1e37d0a8e/) | ⚠️ Unaudited |
-| MtzV3Oracle | unknown | base | n/a | [`0x4aefc0...f4e101`](./contracts/base-8453/0x4aefc0145b802bc81fa82eb3fc858f20b7f4e101/) | ⚠️ Unaudited |
-| PoolToken | unknown | base | n/a | [`0x8bd47b...2c7808`](./contracts/base-8453/0x8bd47bc14f38840820d1dc7ed5eb57b85d2c7808/) | ⚠️ Unaudited |
-| StakeRouter | unknown | base | n/a | [`0x6088b0...be75c3`](./contracts/base-8453/0x6088b0312c286d793a422760221384c4d6be75c3/) | ⚠️ Unaudited |
-| SwyptPool | unknown | base | n/a | [`0x10a6d4...8f6591`](./contracts/base-8453/0x10a6d497a9a2afeeb3da9ce8f367e85b668f6591/) | ⚠️ Unaudited |
-| Vault | unknown | base | n/a | [`0x247958...796dd5`](./contracts/base-8453/0x2479589036676a4678b0cc3b4b01fef77b796dd5/) | ⚠️ Unaudited |
+| ChainzMerkleDistributor | unknown | base | n/a | [`0x1154ec49474e22d0f3d0ca3e863aadd1bc3c5d2b`](./contracts/base-8453/0x1154ec49474e22d0f3d0ca3e863aadd1bc3c5d2b/) | ⚠️ Unaudited |
+| ChainzPointsDistributor | unknown | base | n/a | [`0x41ab36b0825e6045ee1a8a4a8d009127634cbf4f`](./contracts/base-8453/0x41ab36b0825e6045ee1a8a4a8d009127634cbf4f/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | base | n/a | [`0x8d0d4891842566dc0016741b98c1155dee15bd6c`](./contracts/base-8453/0x8d0d4891842566dc0016741b98c1155dee15bd6c/) | ⚠️ Unaudited |
+| LendRouter | unknown | base | n/a | [`0x52410b7ba13cefa3d0bd2e8bac687c00a2ed658a`](./contracts/base-8453/0x52410b7ba13cefa3d0bd2e8bac687c00a2ed658a/) | ⚠️ Unaudited |
+| MtzPriceOracle | unknown | base | n/a | [`0x30d96e0c312098c8a40db596b95326ba8e2726f8`](./contracts/base-8453/0x30d96e0c312098c8a40db596b95326ba8e2726f8/) | ⚠️ Unaudited |
+| MtzStorkOracle | unknown | base | n/a | [`0x0ef756281445ea439a10b6597a699ce1e37d0a8e`](./contracts/base-8453/0x0ef756281445ea439a10b6597a699ce1e37d0a8e/) | ⚠️ Unaudited |
+| MtzV3Oracle | unknown | base | n/a | [`0x4aefc0145b802bc81fa82eb3fc858f20b7f4e101`](./contracts/base-8453/0x4aefc0145b802bc81fa82eb3fc858f20b7f4e101/) | ⚠️ Unaudited |
+| PoolToken | unknown | base | n/a | [`0x8bd47bc14f38840820d1dc7ed5eb57b85d2c7808`](./contracts/base-8453/0x8bd47bc14f38840820d1dc7ed5eb57b85d2c7808/) | ⚠️ Unaudited |
+| StakeRouter | unknown | base | n/a | [`0x6088b0312c286d793a422760221384c4d6be75c3`](./contracts/base-8453/0x6088b0312c286d793a422760221384c4d6be75c3/) | ⚠️ Unaudited |
+| SwyptPool | unknown | base | n/a | [`0x10a6d497a9a2afeeb3da9ce8f367e85b668f6591`](./contracts/base-8453/0x10a6d497a9a2afeeb3da9ce8f367e85b668f6591/) | ⚠️ Unaudited |
+| Vault | unknown | base | n/a | [`0x2479589036676a4678b0cc3b4b01fef77b796dd5`](./contracts/base-8453/0x2479589036676a4678b0cc3b4b01fef77b796dd5/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -105,16 +105,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x1154ec...3c5d2b`](./contracts/base-8453/0x1154ec49474e22d0f3d0ca3e863aadd1bc3c5d2b/) | ChainzMerkleDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x41ab36...4cbf4f`](./contracts/base-8453/0x41ab36b0825e6045ee1a8a4a8d009127634cbf4f/) | ChainzPointsDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x52410b...ed658a`](./contracts/base-8453/0x52410b7ba13cefa3d0bd2e8bac687c00a2ed658a/) | LendRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x30d96e...2726f8`](./contracts/base-8453/0x30d96e0c312098c8a40db596b95326ba8e2726f8/) | MtzPriceOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x0ef756...7d0a8e`](./contracts/base-8453/0x0ef756281445ea439a10b6597a699ce1e37d0a8e/) | MtzStorkOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x4aefc0...f4e101`](./contracts/base-8453/0x4aefc0145b802bc81fa82eb3fc858f20b7f4e101/) | MtzV3Oracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x8bd47b...2c7808`](./contracts/base-8453/0x8bd47bc14f38840820d1dc7ed5eb57b85d2c7808/) | PoolToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x6088b0...be75c3`](./contracts/base-8453/0x6088b0312c286d793a422760221384c4d6be75c3/) | StakeRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x10a6d4...8f6591`](./contracts/base-8453/0x10a6d497a9a2afeeb3da9ce8f367e85b668f6591/) | SwyptPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x247958...796dd5`](./contracts/base-8453/0x2479589036676a4678b0cc3b4b01fef77b796dd5/) | Vault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x1154ec49474e22d0f3d0ca3e863aadd1bc3c5d2b`](./contracts/base-8453/0x1154ec49474e22d0f3d0ca3e863aadd1bc3c5d2b/) | ChainzMerkleDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x41ab36b0825e6045ee1a8a4a8d009127634cbf4f`](./contracts/base-8453/0x41ab36b0825e6045ee1a8a4a8d009127634cbf4f/) | ChainzPointsDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x52410b7ba13cefa3d0bd2e8bac687c00a2ed658a`](./contracts/base-8453/0x52410b7ba13cefa3d0bd2e8bac687c00a2ed658a/) | LendRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x30d96e0c312098c8a40db596b95326ba8e2726f8`](./contracts/base-8453/0x30d96e0c312098c8a40db596b95326ba8e2726f8/) | MtzPriceOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x0ef756281445ea439a10b6597a699ce1e37d0a8e`](./contracts/base-8453/0x0ef756281445ea439a10b6597a699ce1e37d0a8e/) | MtzStorkOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x4aefc0145b802bc81fa82eb3fc858f20b7f4e101`](./contracts/base-8453/0x4aefc0145b802bc81fa82eb3fc858f20b7f4e101/) | MtzV3Oracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x8bd47bc14f38840820d1dc7ed5eb57b85d2c7808`](./contracts/base-8453/0x8bd47bc14f38840820d1dc7ed5eb57b85d2c7808/) | PoolToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x6088b0312c286d793a422760221384c4d6be75c3`](./contracts/base-8453/0x6088b0312c286d793a422760221384c4d6be75c3/) | StakeRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x10a6d497a9a2afeeb3da9ce8f367e85b668f6591`](./contracts/base-8453/0x10a6d497a9a2afeeb3da9ce8f367e85b668f6591/) | SwyptPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x2479589036676a4678b0cc3b4b01fef77b796dd5`](./contracts/base-8453/0x2479589036676a4678b0cc3b4b01fef77b796dd5/) | Vault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -62,8 +62,8 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Safe | unknown | ethereum | n/a | [`0xa9c99a...ebeb1e`](./contracts/ethereum-1/0xa9c99a9f70ccf9fcd23fc05f1ebdc76040ebeb1e/) | ⚠️ Unaudited |
-| SafeProxy | unknown | bsc | n/a | 2 deployments: bsc [`0xa9c99a...ebeb1e`](./contracts/bsc-56/0xa9c99a9f70ccf9fcd23fc05f1ebdc76040ebeb1e/); arbitrum [`0xa9c99a...ebeb1e`](./contracts/arbitrum-42161/0xa9c99a9f70ccf9fcd23fc05f1ebdc76040ebeb1e/) | ⚠️ Unaudited |
+| Safe | unknown | ethereum | n/a | [`0xa9c99a9f70ccf9fcd23fc05f1ebdc76040ebeb1e`](./contracts/ethereum-1/0xa9c99a9f70ccf9fcd23fc05f1ebdc76040ebeb1e/) | ⚠️ Unaudited |
+| SafeProxy | unknown | bsc | n/a | 2 deployments: bsc [`0xa9c99a9f70ccf9fcd23fc05f1ebdc76040ebeb1e`](./contracts/bsc-56/0xa9c99a9f70ccf9fcd23fc05f1ebdc76040ebeb1e/); arbitrum [`0xa9c99a9f70ccf9fcd23fc05f1ebdc76040ebeb1e`](./contracts/arbitrum-42161/0xa9c99a9f70ccf9fcd23fc05f1ebdc76040ebeb1e/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

@@ -59,15 +59,15 @@ The protocol comprises 2 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| JetStakingV1 | unknown | aurora | n/a | [`0x852f13...790934`](./contracts/aurora-1313161554/0x852f139dd31d2cdc669470880700037cb3790934/) | ✅ Audited |
-| Treasury | unknown | aurora | n/a | [`0x4c101a...ed827a`](./contracts/aurora-1313161554/0x4c101a39ca2d3095db2507dadde736b8e6ed827a/) | ✅ Audited |
+| JetStakingV1 | unknown | aurora | n/a | [`0x852f139dd31d2cdc669470880700037cb3790934`](./contracts/aurora-1313161554/0x852f139dd31d2cdc669470880700037cb3790934/) | ✅ Audited |
+| Treasury | unknown | aurora | n/a | [`0x4c101a39ca2d3095db2507dadde736b8e6ed827a`](./contracts/aurora-1313161554/0x4c101a39ca2d3095db2507dadde736b8e6ed827a/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ERC1967Proxy | unknown | aurora | n/a | [`0x05702b...41e48e`](./contracts/aurora-1313161554/0x05702b754bdd27015a18faf2009d8781f641e48e/) | ⚠️ Unaudited |
-| EvmErc20 | unknown | aurora | n/a | [`0x18921f...1617bc`](./contracts/aurora-1313161554/0x18921f1e257038e538ba24d49fa6495c8b1617bc/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | aurora | n/a | [`0x05702b754bdd27015a18faf2009d8781f641e48e`](./contracts/aurora-1313161554/0x05702b754bdd27015a18faf2009d8781f641e48e/) | ⚠️ Unaudited |
+| EvmErc20 | unknown | aurora | n/a | [`0x18921f1e257038e538ba24d49fa6495c8b1617bc`](./contracts/aurora-1313161554/0x18921f1e257038e538ba24d49fa6495c8b1617bc/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -113,7 +113,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| aurora | [`0x18921f...1617bc`](./contracts/aurora-1313161554/0x18921f1e257038e538ba24d49fa6495c8b1617bc/) | EvmErc20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| aurora | [`0x18921f1e257038e538ba24d49fa6495c8b1617bc`](./contracts/aurora-1313161554/0x18921f1e257038e538ba24d49fa6495c8b1617bc/) | EvmErc20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -89,7 +89,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| CosmosERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-174479 | `0xc0a4df...eeddac` | ⚠️ Unaudited |
+| CosmosERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-174479 | `0xc0a4df35568f116c370e6a6a6022ceb908eeddac` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

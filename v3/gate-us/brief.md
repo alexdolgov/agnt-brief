@@ -108,11 +108,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0xfc89c0...0bdec3` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | chain-200 | n/a | 5 deployments: cronos `0xfc89c0...0bdec3`; chain-200 `0x1699db...6affbd`; chain-200 `0x67c30f...086ccb`; chain-200 `0xe74ac0...a10230`; kaia `0xfc89c0...0bdec3` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xfc89c0...0bdec3` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0xfc89c0...0bdec3` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | scroll | n/a | `0xfc89c0...0bdec3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0xfc89c020774524c9d03bd5de48fec149b10bdec3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | chain-200 | n/a | 5 deployments: cronos `0xfc89c020774524c9d03bd5de48fec149b10bdec3`; chain-200 `0x1699db45dc502a0395038265fcbc4fa05d6affbd`; chain-200 `0x67c30f439d7734f393c2f4a587b198b8f4086ccb`; chain-200 `0xe74ac03a2d34a9cece0a6547b1758c7a8fa10230`; kaia `0xfc89c020774524c9d03bd5de48fec149b10bdec3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xfc89c020774524c9d03bd5de48fec149b10bdec3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0xfc89c020774524c9d03bd5de48fec149b10bdec3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | scroll | n/a | `0xfc89c020774524c9d03bd5de48fec149b10bdec3` | ❓ Unverified |
 
 ## Audit Inventory
 

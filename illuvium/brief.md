@@ -61,16 +61,16 @@ The protocol comprises 6 functional families. Its contracts share 2 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| EscrowedIlluvium2 | operational_periphery | ethereum | n/a | [`0x7e77dc...f1b068`](./contracts/ethereum-1/0x7e77dcb127f99ece88230a64db8d595f31f1b068/) | ⚠️ Unaudited |
-| IlluviumCorePool | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x25121e...4e2a36`](./contracts/ethereum-1/0x25121eddf746c884dde4619b573a7b10714e2a36/); ethereum `0x8b4d84...843f72` | ⚠️ Unaudited |
-| IlluviumERC20 | token | ethereum | n/a | [`0x767fe9...d7ca0e`](./contracts/ethereum-1/0x767fe9edc9e0df98e07454847909b5e959d7ca0e/) | ⚠️ Unaudited |
-| IlluviumIDOCollection | unknown | ethereum | n/a | [`0x4222b2...161e52`](./contracts/ethereum-1/0x4222b2a98daa443c6a0a761300d7d6bfd9161e52/) | ⚠️ Unaudited |
-| IlluviumNFT | unknown | ethereum | n/a | 2 deployments: ethereum [`0x384aa0...af9fdf`](./contracts/ethereum-1/0x384aa03d8b7cc6a818e7cb7a037ba0cd81af9fdf/); ethereum `0xb90161...cbf8b9` | ⚠️ Unaudited |
-| ILVPool | unknown | ethereum | n/a | 2 deployments: ethereum [`0x7f5f85...34291d`](./contracts/ethereum-1/0x7f5f854ffb6b7701540a00c69c4ab2de2b34291d/); ethereum `0xdb0a2a...f20cb3` | ⚠️ Unaudited |
-| PoolFactory | unknown | ethereum | n/a | 2 deployments: ethereum [`0x53aff3...56d6e1`](./contracts/ethereum-1/0x53aff3b5059a48e4ee37e63c03e3ad563756d6e1/); ethereum `0x9dca38...94597c` | ⚠️ Unaudited |
-| SushiLPPool | unknown | ethereum | n/a | [`0xe98477...571cc2`](./contracts/ethereum-1/0xe98477bdc16126bb0877c6e3882e3edd72571cc2/) | ⚠️ Unaudited |
-| UniswapV2Router02 | adapter | ethereum | n/a | [`0xd9e1ce...378b9f`](./contracts/ethereum-1/0xd9e1ce17f2641f24ae83637ab66a2cca9c378b9f/) | ⚠️ Unaudited |
-| Vesting | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0x6bd281...57adc6`](./contracts/ethereum-1/0x6bd2814426f9a6abaa427d2ad3fc898d2a57adc6/); ethereum `0xc01e7d...08bfdb` | ⚠️ Unaudited |
+| EscrowedIlluvium2 | operational_periphery | ethereum | n/a | [`0x7e77dcb127f99ece88230a64db8d595f31f1b068`](./contracts/ethereum-1/0x7e77dcb127f99ece88230a64db8d595f31f1b068/) | ⚠️ Unaudited |
+| IlluviumCorePool | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x25121eddf746c884dde4619b573a7b10714e2a36`](./contracts/ethereum-1/0x25121eddf746c884dde4619b573a7b10714e2a36/); ethereum `0x8b4d8443a0229349a9892d4f7cbe89ef5f843f72` | ⚠️ Unaudited |
+| IlluviumERC20 | token | ethereum | n/a | [`0x767fe9edc9e0df98e07454847909b5e959d7ca0e`](./contracts/ethereum-1/0x767fe9edc9e0df98e07454847909b5e959d7ca0e/) | ⚠️ Unaudited |
+| IlluviumIDOCollection | unknown | ethereum | n/a | [`0x4222b2a98daa443c6a0a761300d7d6bfd9161e52`](./contracts/ethereum-1/0x4222b2a98daa443c6a0a761300d7d6bfd9161e52/) | ⚠️ Unaudited |
+| IlluviumNFT | unknown | ethereum | n/a | 2 deployments: ethereum [`0x384aa03d8b7cc6a818e7cb7a037ba0cd81af9fdf`](./contracts/ethereum-1/0x384aa03d8b7cc6a818e7cb7a037ba0cd81af9fdf/); ethereum `0xb901614d588ef8db45045ffbb2145e1c36cbf8b9` | ⚠️ Unaudited |
+| ILVPool | unknown | ethereum | n/a | 2 deployments: ethereum [`0x7f5f854ffb6b7701540a00c69c4ab2de2b34291d`](./contracts/ethereum-1/0x7f5f854ffb6b7701540a00c69c4ab2de2b34291d/); ethereum `0xdb0a2a38f30a3f43fbfae98c85b132702df20cb3` | ⚠️ Unaudited |
+| PoolFactory | unknown | ethereum | n/a | 2 deployments: ethereum [`0x53aff3b5059a48e4ee37e63c03e3ad563756d6e1`](./contracts/ethereum-1/0x53aff3b5059a48e4ee37e63c03e3ad563756d6e1/); ethereum `0x9dca38d109c6c69790fb70bcfdeaf27c4394597c` | ⚠️ Unaudited |
+| SushiLPPool | unknown | ethereum | n/a | [`0xe98477bdc16126bb0877c6e3882e3edd72571cc2`](./contracts/ethereum-1/0xe98477bdc16126bb0877c6e3882e3edd72571cc2/) | ⚠️ Unaudited |
+| UniswapV2Router02 | adapter | ethereum | n/a | [`0xd9e1ce17f2641f24ae83637ab66a2cca9c378b9f`](./contracts/ethereum-1/0xd9e1ce17f2641f24ae83637ab66a2cca9c378b9f/) | ⚠️ Unaudited |
+| Vesting | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0x6bd2814426f9a6abaa427d2ad3fc898d2a57adc6`](./contracts/ethereum-1/0x6bd2814426f9a6abaa427d2ad3fc898d2a57adc6/); ethereum `0xc01e7dcc6cca1af57a5099f1dcab90084408bfdb` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -90,8 +90,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x088823...cae7b8` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xa305cd...a3dc70` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x088823fa2c0ceb120198d9e1006bf2596bcae7b8` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xa305cd856e06905a5543dff5dc0c3ad0a9a3dc70` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -105,14 +105,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x7e77dc...f1b068`](./contracts/ethereum-1/0x7e77dcb127f99ece88230a64db8d595f31f1b068/) | EscrowedIlluvium2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x25121e...4e2a36`](./contracts/ethereum-1/0x25121eddf746c884dde4619b573a7b10714e2a36/) | IlluviumCorePool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x767fe9...d7ca0e`](./contracts/ethereum-1/0x767fe9edc9e0df98e07454847909b5e959d7ca0e/) | IlluviumERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x4222b2...161e52`](./contracts/ethereum-1/0x4222b2a98daa443c6a0a761300d7d6bfd9161e52/) | IlluviumIDOCollection | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x384aa0...af9fdf`](./contracts/ethereum-1/0x384aa03d8b7cc6a818e7cb7a037ba0cd81af9fdf/) | IlluviumNFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x7f5f85...34291d`](./contracts/ethereum-1/0x7f5f854ffb6b7701540a00c69c4ab2de2b34291d/) | ILVPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x53aff3...56d6e1`](./contracts/ethereum-1/0x53aff3b5059a48e4ee37e63c03e3ad563756d6e1/) | PoolFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6bd281...57adc6`](./contracts/ethereum-1/0x6bd2814426f9a6abaa427d2ad3fc898d2a57adc6/) | Vesting | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x7e77dcb127f99ece88230a64db8d595f31f1b068`](./contracts/ethereum-1/0x7e77dcb127f99ece88230a64db8d595f31f1b068/) | EscrowedIlluvium2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x25121eddf746c884dde4619b573a7b10714e2a36`](./contracts/ethereum-1/0x25121eddf746c884dde4619b573a7b10714e2a36/) | IlluviumCorePool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x767fe9edc9e0df98e07454847909b5e959d7ca0e`](./contracts/ethereum-1/0x767fe9edc9e0df98e07454847909b5e959d7ca0e/) | IlluviumERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4222b2a98daa443c6a0a761300d7d6bfd9161e52`](./contracts/ethereum-1/0x4222b2a98daa443c6a0a761300d7d6bfd9161e52/) | IlluviumIDOCollection | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x384aa03d8b7cc6a818e7cb7a037ba0cd81af9fdf`](./contracts/ethereum-1/0x384aa03d8b7cc6a818e7cb7a037ba0cd81af9fdf/) | IlluviumNFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x7f5f854ffb6b7701540a00c69c4ab2de2b34291d`](./contracts/ethereum-1/0x7f5f854ffb6b7701540a00c69c4ab2de2b34291d/) | ILVPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x53aff3b5059a48e4ee37e63c03e3ad563756d6e1`](./contracts/ethereum-1/0x53aff3b5059a48e4ee37e63c03e3ad563756d6e1/) | PoolFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6bd2814426f9a6abaa427d2ad3fc898d2a57adc6`](./contracts/ethereum-1/0x6bd2814426f9a6abaa427d2ad3fc898d2a57adc6/) | Vesting | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

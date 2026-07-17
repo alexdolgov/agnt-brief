@@ -57,7 +57,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- ERC20Proxy (`0x056fd4...b6d5cd`, chain 1)
+- ERC20Proxy (`0x056fd409e1d7a124bd7017459dfea2f387b6d5cd`, chain 1)
 
 ## Contract Surface Quality
 
@@ -103,7 +103,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ERC20Proxy | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386747 | `0x056fd4...b6d5cd` | ⚠️ Unaudited |
+| ERC20Proxy | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386747 | `0x056fd409e1d7a124bd7017459dfea2f387b6d5cd` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

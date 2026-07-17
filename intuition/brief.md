@@ -60,20 +60,20 @@ The protocol comprises 6 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BaseEmissionsController | operational_periphery | base | n/a | [`0x7745bd...b60667`](./contracts/base-8453/0x7745bdee668501e5eef7e9605c746f9cdfb60667/) | ✅ Audited |
-| BaseEmissionsController | operational_periphery | base | n/a | [`0xb2ade5...191232`](./contracts/base-8453/0xb2ade5cb220f9edd121a623526c720a819191232/) | ✅ Audited |
-| Trust | unknown | base | n/a | [`0x6cd905...c6d8a3`](./contracts/base-8453/0x6cd905df2ed214b22e0d48ff17cd4200c1c6d8a3/) | ✅ Audited |
+| BaseEmissionsController | operational_periphery | base | n/a | [`0x7745bdee668501e5eef7e9605c746f9cdfb60667`](./contracts/base-8453/0x7745bdee668501e5eef7e9605c746f9cdfb60667/) | ✅ Audited |
+| BaseEmissionsController | operational_periphery | base | n/a | [`0xb2ade5cb220f9edd121a623526c720a819191232`](./contracts/base-8453/0xb2ade5cb220f9edd121a623526c720a819191232/) | ✅ Audited |
+| Trust | unknown | base | n/a | [`0x6cd905df2ed214b22e0d48ff17cd4200c1c6d8a3`](./contracts/base-8453/0x6cd905df2ed214b22e0d48ff17cd4200c1c6d8a3/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (6)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| EntryPoint | unknown | base | n/a | [`0x433708...5ff108`](./contracts/base-8453/0x4337084d9e255ff0702461cf8895ce9e3b5ff108/) | ⚠️ Unaudited |
-| HubBridge | operational_periphery | base | n/a | 3 deployments: base [`0x2cc310...e039d7`](./contracts/base-8453/0x2cc310fed2493c61a7fc68519d646845ece039d7/); base `0xdeab88...0578e7`; base `0xfdae6a...1952a1` | ⚠️ Unaudited |
-| IntuitionEthClaim | unknown | base | n/a | [`0x81cfb0...4bf672`](./contracts/base-8453/0x81cfb09cb44f7184ad934c09f82000701a4bf672/) | ⚠️ Unaudited |
-| Multicall3 | periphery | base | n/a | [`0xca11bd...76ca11`](./contracts/base-8453/0xca11bde05977b3631167028862be2a173976ca11/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | base | n/a | [`0x857552...683e8e`](./contracts/base-8453/0x857552ab95e6cc389b977d5fef971dede8683e8e/) | ⚠️ Unaudited |
-| TimelockController | governance | base | n/a | [`0x1e442b...df9157`](./contracts/base-8453/0x1e442bbb08c98100b18fa830a88e8a57b5df9157/) | ⚠️ Unaudited |
+| EntryPoint | unknown | base | n/a | [`0x4337084d9e255ff0702461cf8895ce9e3b5ff108`](./contracts/base-8453/0x4337084d9e255ff0702461cf8895ce9e3b5ff108/) | ⚠️ Unaudited |
+| HubBridge | operational_periphery | base | n/a | 3 deployments: base [`0x2cc310fed2493c61a7fc68519d646845ece039d7`](./contracts/base-8453/0x2cc310fed2493c61a7fc68519d646845ece039d7/); base `0xdeab8819f5aa7732f533f53b9e29d2334d0578e7`; base `0xfdae6ae4ca946746cb7470570bbc95c71e1952a1` | ⚠️ Unaudited |
+| IntuitionEthClaim | unknown | base | n/a | [`0x81cfb09cb44f7184ad934c09f82000701a4bf672`](./contracts/base-8453/0x81cfb09cb44f7184ad934c09f82000701a4bf672/) | ⚠️ Unaudited |
+| Multicall3 | periphery | base | n/a | [`0xca11bde05977b3631167028862be2a173976ca11`](./contracts/base-8453/0xca11bde05977b3631167028862be2a173976ca11/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | base | n/a | [`0x857552ab95e6cc389b977d5fef971dede8683e8e`](./contracts/base-8453/0x857552ab95e6cc389b977d5fef971dede8683e8e/) | ⚠️ Unaudited |
+| TimelockController | governance | base | n/a | [`0x1e442bbb08c98100b18fa830a88e8a57b5df9157`](./contracts/base-8453/0x1e442bbb08c98100b18fa830a88e8a57b5df9157/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,7 +93,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | base | n/a | `0x914d7f...5643d7` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x914d7fec6aac8cd542e72bca78b30650d45643d7` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -111,9 +111,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x433708...5ff108`](./contracts/base-8453/0x4337084d9e255ff0702461cf8895ce9e3b5ff108/) | EntryPoint | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x2cc310...e039d7`](./contracts/base-8453/0x2cc310fed2493c61a7fc68519d646845ece039d7/) | HubBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x81cfb0...4bf672`](./contracts/base-8453/0x81cfb09cb44f7184ad934c09f82000701a4bf672/) | IntuitionEthClaim | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x4337084d9e255ff0702461cf8895ce9e3b5ff108`](./contracts/base-8453/0x4337084d9e255ff0702461cf8895ce9e3b5ff108/) | EntryPoint | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x2cc310fed2493c61a7fc68519d646845ece039d7`](./contracts/base-8453/0x2cc310fed2493c61a7fc68519d646845ece039d7/) | HubBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x81cfb09cb44f7184ad934c09f82000701a4bf672`](./contracts/base-8453/0x81cfb09cb44f7184ad934c09f82000701a4bf672/) | IntuitionEthClaim | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

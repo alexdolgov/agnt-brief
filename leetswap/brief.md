@@ -61,16 +61,16 @@ The protocol comprises 2 functional families. Contracts are linked by 1 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BurningBrian | unknown | base | n/a | [`0x7cc740...565325`](./contracts/base-8453/0x7cc74075d60c059468e267bef5d454d032565325/) | ⚠️ Unaudited |
-| LeetChefV1 | unknown | base | n/a | [`0x3a5e79...a3628c`](./contracts/base-8453/0x3a5e791405526efadf1432bac8d114b77da3628c/) | ⚠️ Unaudited |
-| LeetSwapV2Factory | unknown | base | n/a | [`0x169c06...75bb19`](./contracts/base-8453/0x169c06b4cfb09bfd73a81e6f2bb1eb514d75bb19/) | ⚠️ Unaudited |
-| LeetSwapV2Router01 | unknown | linea | n/a | [`0x169c06...75bb19`](./contracts/linea-59144/0x169c06b4cfb09bfd73a81e6f2bb1eb514d75bb19/) | ⚠️ Unaudited |
-| LeetToken | unknown | base | n/a | [`0x0963a1...6a1c4b`](./contracts/base-8453/0x0963a1abaf36ca88c21032b82e479353126a1c4b/) | ⚠️ Unaudited |
-| LineaDoge | unknown | linea | n/a | [`0x3278e5...942f87`](./contracts/linea-59144/0x3278e54da0242a941e94b5eba2f2f2b200942f87/) | ⚠️ Unaudited |
-| Multicall3 | unknown | base | n/a | [`0x10b7de...bbfac9`](./contracts/base-8453/0x10b7de073b514f54e27b71cd267cce4379bbfac9/) | ⚠️ Unaudited |
-| UniswapV2Factory | unknown | opbnb | n/a | [`0xa2899c...6cf59c`](./contracts/opbnb-204/0xa2899c776baaf9925d432f83c950d5054a6cf59c/) | ⚠️ Unaudited |
-| UniswapV2Router02 | unknown | base | n/a | [`0xd3ea3b...a5d737`](./contracts/base-8453/0xd3ea3bc1f5a3f881bd6ce9761cba5a0833a5d737/) | ⚠️ Unaudited |
-| VestingWallet | unknown | base | n/a | [`0x211638...898bfc`](./contracts/base-8453/0x211638ab040cf78ada5331b233745e4fdc898bfc/) | ⚠️ Unaudited |
+| BurningBrian | unknown | base | n/a | [`0x7cc74075d60c059468e267bef5d454d032565325`](./contracts/base-8453/0x7cc74075d60c059468e267bef5d454d032565325/) | ⚠️ Unaudited |
+| LeetChefV1 | unknown | base | n/a | [`0x3a5e791405526efadf1432bac8d114b77da3628c`](./contracts/base-8453/0x3a5e791405526efadf1432bac8d114b77da3628c/) | ⚠️ Unaudited |
+| LeetSwapV2Factory | unknown | base | n/a | [`0x169c06b4cfb09bfd73a81e6f2bb1eb514d75bb19`](./contracts/base-8453/0x169c06b4cfb09bfd73a81e6f2bb1eb514d75bb19/) | ⚠️ Unaudited |
+| LeetSwapV2Router01 | unknown | linea | n/a | [`0x169c06b4cfb09bfd73a81e6f2bb1eb514d75bb19`](./contracts/linea-59144/0x169c06b4cfb09bfd73a81e6f2bb1eb514d75bb19/) | ⚠️ Unaudited |
+| LeetToken | unknown | base | n/a | [`0x0963a1abaf36ca88c21032b82e479353126a1c4b`](./contracts/base-8453/0x0963a1abaf36ca88c21032b82e479353126a1c4b/) | ⚠️ Unaudited |
+| LineaDoge | unknown | linea | n/a | [`0x3278e54da0242a941e94b5eba2f2f2b200942f87`](./contracts/linea-59144/0x3278e54da0242a941e94b5eba2f2f2b200942f87/) | ⚠️ Unaudited |
+| Multicall3 | unknown | base | n/a | [`0x10b7de073b514f54e27b71cd267cce4379bbfac9`](./contracts/base-8453/0x10b7de073b514f54e27b71cd267cce4379bbfac9/) | ⚠️ Unaudited |
+| UniswapV2Factory | unknown | opbnb | n/a | [`0xa2899c776baaf9925d432f83c950d5054a6cf59c`](./contracts/opbnb-204/0xa2899c776baaf9925d432f83c950d5054a6cf59c/) | ⚠️ Unaudited |
+| UniswapV2Router02 | unknown | base | n/a | [`0xd3ea3bc1f5a3f881bd6ce9761cba5a0833a5d737`](./contracts/base-8453/0xd3ea3bc1f5a3f881bd6ce9761cba5a0833a5d737/) | ⚠️ Unaudited |
+| VestingWallet | unknown | base | n/a | [`0x211638ab040cf78ada5331b233745e4fdc898bfc`](./contracts/base-8453/0x211638ab040cf78ada5331b233745e4fdc898bfc/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -101,13 +101,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x7cc740...565325`](./contracts/base-8453/0x7cc74075d60c059468e267bef5d454d032565325/) | BurningBrian | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x3a5e79...a3628c`](./contracts/base-8453/0x3a5e791405526efadf1432bac8d114b77da3628c/) | LeetChefV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x169c06...75bb19`](./contracts/base-8453/0x169c06b4cfb09bfd73a81e6f2bb1eb514d75bb19/) | LeetSwapV2Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0x169c06...75bb19`](./contracts/linea-59144/0x169c06b4cfb09bfd73a81e6f2bb1eb514d75bb19/) | LeetSwapV2Router01 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x0963a1...6a1c4b`](./contracts/base-8453/0x0963a1abaf36ca88c21032b82e479353126a1c4b/) | LeetToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0x3278e5...942f87`](./contracts/linea-59144/0x3278e54da0242a941e94b5eba2f2f2b200942f87/) | LineaDoge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x211638...898bfc`](./contracts/base-8453/0x211638ab040cf78ada5331b233745e4fdc898bfc/) | VestingWallet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x7cc74075d60c059468e267bef5d454d032565325`](./contracts/base-8453/0x7cc74075d60c059468e267bef5d454d032565325/) | BurningBrian | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x3a5e791405526efadf1432bac8d114b77da3628c`](./contracts/base-8453/0x3a5e791405526efadf1432bac8d114b77da3628c/) | LeetChefV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x169c06b4cfb09bfd73a81e6f2bb1eb514d75bb19`](./contracts/base-8453/0x169c06b4cfb09bfd73a81e6f2bb1eb514d75bb19/) | LeetSwapV2Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x169c06b4cfb09bfd73a81e6f2bb1eb514d75bb19`](./contracts/linea-59144/0x169c06b4cfb09bfd73a81e6f2bb1eb514d75bb19/) | LeetSwapV2Router01 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x0963a1abaf36ca88c21032b82e479353126a1c4b`](./contracts/base-8453/0x0963a1abaf36ca88c21032b82e479353126a1c4b/) | LeetToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x3278e54da0242a941e94b5eba2f2f2b200942f87`](./contracts/linea-59144/0x3278e54da0242a941e94b5eba2f2f2b200942f87/) | LineaDoge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x211638ab040cf78ada5331b233745e4fdc898bfc`](./contracts/base-8453/0x211638ab040cf78ada5331b233745e4fdc898bfc/) | VestingWallet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

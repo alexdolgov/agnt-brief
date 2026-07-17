@@ -62,7 +62,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| PrintrProxy | unknown | mantle | n/a | [`0xb77726...243172`](./contracts/mantle-5000/0xb77726291b125515d0a7affeea2b04f2ff243172/) | ⚠️ Unaudited |
+| PrintrProxy | unknown | mantle | n/a | [`0xb77726291b125515d0a7affeea2b04f2ff243172`](./contracts/mantle-5000/0xb77726291b125515d0a7affeea2b04f2ff243172/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -96,7 +96,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| mantle | [`0xb77726...243172`](./contracts/mantle-5000/0xb77726291b125515d0a7affeea2b04f2ff243172/) | PrintrProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| mantle | [`0xb77726291b125515d0a7affeea2b04f2ff243172`](./contracts/mantle-5000/0xb77726291b125515d0a7affeea2b04f2ff243172/) | PrintrProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

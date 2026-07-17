@@ -52,17 +52,17 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum, ethe
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x4763f9...355945`, chain 10)
-- UnnamedContract (`0x54f23d...6a6d2b`, chain 10)
-- UnnamedContract (`0x636938...8749a1`, chain 10)
-- UnnamedContract (`0x7df250...ce22bc`, chain 10)
-- UnnamedContract (`0x7f5c76...c31607`, chain 10)
-- UnnamedContract (`0x0fa85c...b971c1`, chain 42161)
-- UnnamedContract (`0x21863c...62ce43`, chain 42161)
-- UnnamedContract (`0x62b86b...8891e2`, chain 42161)
-- UnnamedContract (`0x968c97...ade9f9`, chain 42161)
-- UnnamedContract (`0xff970a...db5cc8`, chain 42161)
-- InsureToken (`0xd83ae0...24393e`, chain 1)
+- UnnamedContract (`0x4763f9720603342aad40056db65883bd55355945`, chain 10)
+- UnnamedContract (`0x54f23d2fdc1e17d349b1eb14d869fa4ded6a6d2b`, chain 10)
+- UnnamedContract (`0x636938b5ff717f525c696f8961b9a1aec38749a1`, chain 10)
+- UnnamedContract (`0x7df2501c62b56f8dd5f1644bfc4300a517ce22bc`, chain 10)
+- UnnamedContract (`0x7f5c764cbc14f9669b88837ca1490cca17c31607`, chain 10)
+- UnnamedContract (`0x0fa85c39c96a9172ccca7f84ce68e08a2bb971c1`, chain 42161)
+- UnnamedContract (`0x21863cc84c4abbdf65b0d0eaea4ce3520262ce43`, chain 42161)
+- UnnamedContract (`0x62b86b6274dfa4cc16bed9995e302a56d18891e2`, chain 42161)
+- UnnamedContract (`0x968c9718f420d5d4275c610c5c217598a6ade9f9`, chain 42161)
+- UnnamedContract (`0xff970a61a04b1ca14834a43f5de4533ebddb5cc8`, chain 42161)
+- InsureToken (`0xd83ae04c9ed29d6d3e6bf720c71bc7beb424393e`, chain 1)
 
 ## Contract Surface Quality
 
@@ -106,43 +106,43 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum, ethe
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| InsureToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387487 | `0xd83ae0...24393e` | ✅ Audited |
+| InsureToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387487 | `0xd83ae04c9ed29d6d3e6bf720c71bc7beb424393e` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (31)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BondingPremium | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2d5477...eb30e4` | ⚠️ Unaudited |
-| CDSTemplate | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x734afd...be0cf4` | ⚠️ Unaudited |
-| DefiRound | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd0df5a...7c9c87` | ⚠️ Unaudited |
-| DegenesisAirdrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6fac0a...dbd829` | ⚠️ Unaudited |
-| Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x01e691...0d0f6b` | ⚠️ Unaudited |
-| FlatPremiumV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xdb9b97...db989c` | ⚠️ Unaudited |
-| GaugeController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x297ea2...1ddd04` | ⚠️ Unaudited |
-| IndexTemplate | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x007497...50c816` | ⚠️ Unaudited |
-| InsureDepositor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xa12ab7...d19e29` | ⚠️ Unaudited |
-| LiquidityGauge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x00e505...ddbb8c` | ⚠️ Unaudited |
-| MarketTemplate | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x0fab21...a25dcb` | ⚠️ Unaudited |
-| MerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x734563...344160` | ⚠️ Unaudited |
-| Minter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x76e8b8...debdc0` | ⚠️ Unaudited |
-| Ownership | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x4810fa...6c3db3` | ⚠️ Unaudited |
-| Parameters | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x335869...0ee511` | ⚠️ Unaudited |
-| ParametersV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xf29571...85d0e6` | ⚠️ Unaudited |
-| PolicyUnlocker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x757ffd...7d31ed` | ⚠️ Unaudited |
-| PoolProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf4d046...3ba350` | ⚠️ Unaudited |
-| PoolTemplate | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x190da1...11e8f8` | ⚠️ Unaudited |
-| PremiumModelV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x05c123...07c08b` | ⚠️ Unaudited |
-| Referral | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x2ce353...b2d8ac` | ⚠️ Unaudited |
-| Registry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x046c23...7c20b2` | ⚠️ Unaudited |
-| ReportingToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x190da1...11e8f8` | ⚠️ Unaudited |
-| ReserveTemplate | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x238963...3d9863` | ⚠️ Unaudited |
-| RewardsDistributorDelegator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x358536...eaa1b1` | ⚠️ Unaudited |
-| SmartWalletChecker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd39e28...9f8390` | ⚠️ Unaudited |
-| TestnetAirdrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x98e579...e8aeeb` | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0x1b459a...2af1ca` | ⚠️ Unaudited |
-| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x009b60...a4ed6a` | ⚠️ Unaudited |
-| VestingEscrow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8f8998...80e47f` | ⚠️ Unaudited |
-| VotingEscrow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3dc07e...05916b` | ⚠️ Unaudited |
+| BondingPremium | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2d54777d59f1ae50d0ebab0eddb3098ee1eb30e4` | ⚠️ Unaudited |
+| CDSTemplate | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x734afd33dfb5100ee91efe690526dffdedbe0cf4` | ⚠️ Unaudited |
+| DefiRound | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd0df5a352d74a746754c592a6277c9060a7c9c87` | ⚠️ Unaudited |
+| DegenesisAirdrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6fac0aad21ef729550727c1ffcb9a9c74edbd829` | ⚠️ Unaudited |
+| Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x01e6916ccfe3630364b4538d0f8c1c22e20d0f6b` | ⚠️ Unaudited |
+| FlatPremiumV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xdb9b9797319e9458d4d3b6eaa86c4f15eddb989c` | ⚠️ Unaudited |
+| GaugeController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x297ea2afce594149cd31a9b11adbae82fa1ddd04` | ⚠️ Unaudited |
+| IndexTemplate | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x0074976043140a371aead31189c2be459950c816` | ⚠️ Unaudited |
+| InsureDepositor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xa12ab76a82d118e33682acb242180b4cc0d19e29` | ⚠️ Unaudited |
+| LiquidityGauge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x00e505bc71b2cbe55915bd017bcd790440ddbb8c` | ⚠️ Unaudited |
+| MarketTemplate | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x0fab21585447dee7bd2aef21406e5f19b5a25dcb` | ⚠️ Unaudited |
+| MerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x73456339407d29d787e71e4b198490ca08344160` | ⚠️ Unaudited |
+| Minter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x76e8b82ea3450fa598e5e164c7e28af172debdc0` | ⚠️ Unaudited |
+| Ownership | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x4810fa5942a322c7bd30519ed3ebe732066c3db3` | ⚠️ Unaudited |
+| Parameters | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x335869ce5132152c27d50c8b5ce43bbccc0ee511` | ⚠️ Unaudited |
+| ParametersV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xf29571145b421f660775fa3deb16d9ff6085d0e6` | ⚠️ Unaudited |
+| PolicyUnlocker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x757ffd29ff8f10b0053a0bad313a8de2847d31ed` | ⚠️ Unaudited |
+| PoolProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf4d046d8fac6dc37b5eafadd34407b19de3ba350` | ⚠️ Unaudited |
+| PoolTemplate | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x190da1b9fa124bd872e9166ba3c7dd656a11e8f8` | ⚠️ Unaudited |
+| PremiumModelV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x05c1238aab0c1d2393f6487fe85338b99307c08b` | ⚠️ Unaudited |
+| Referral | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x2ce353ea9a341f67e7c4a5f391d93123afb2d8ac` | ⚠️ Unaudited |
+| Registry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x046c233fd48b020f7e5085c991ffa91eb67c20b2` | ⚠️ Unaudited |
+| ReportingToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x190da1b9fa124bd872e9166ba3c7dd656a11e8f8` | ⚠️ Unaudited |
+| ReserveTemplate | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x23896335f2fd8735988472066405a668df3d9863` | ⚠️ Unaudited |
+| RewardsDistributorDelegator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x35853654bc1d85991ac19923f5476f9d3feaa1b1` | ⚠️ Unaudited |
+| SmartWalletChecker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd39e280a9f0b74ef04d5c7a81dbe757e589f8390` | ⚠️ Unaudited |
+| TestnetAirdrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x98e5790f343b83e850c20fb2d100b28de5e8aeeb` | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0x1b459aec393d604ae6468ae3f7d7422efa2af1ca` | ⚠️ Unaudited |
+| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x009b60138c4bd382114de86ccf3b523bc5a4ed6a` | ⚠️ Unaudited |
+| VestingEscrow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8f8998e511935218aa340f41c4d005d2a080e47f` | ⚠️ Unaudited |
+| VotingEscrow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3dc07e60ecb3d064d20c386217ceef8e3905916b` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -162,16 +162,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-387488 | `0x4763f9...355945` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-387489 | `0x54f23d...6a6d2b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-387490 | `0x636938...8749a1` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-387491 | `0x7df250...ce22bc` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-387492 | `0x7f5c76...c31607` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-387493 | `0x0fa85c...b971c1` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-387494 | `0x21863c...62ce43` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-387495 | `0x62b86b...8891e2` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-387496 | `0x968c97...ade9f9` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-387497 | `0xff970a...db5cc8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-387488 | `0x4763f9720603342aad40056db65883bd55355945` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-387489 | `0x54f23d2fdc1e17d349b1eb14d869fa4ded6a6d2b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-387490 | `0x636938b5ff717f525c696f8961b9a1aec38749a1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-387491 | `0x7df2501c62b56f8dd5f1644bfc4300a517ce22bc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-387492 | `0x7f5c764cbc14f9669b88837ca1490cca17c31607` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-387493 | `0x0fa85c39c96a9172ccca7f84ce68e08a2bb971c1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-387494 | `0x21863cc84c4abbdf65b0d0eaea4ce3520262ce43` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-387495 | `0x62b86b6274dfa4cc16bed9995e302a56d18891e2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-387496 | `0x968c9718f420d5d4275c610c5c217598a6ade9f9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-387497 | `0xff970a61a04b1ca14834a43f5de4533ebddb5cc8` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -194,7 +194,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | DL audit link | PoolTemplate | unmatched — not counted | — | Target in findings PVE-001, PVE-005 | no |
 | DL audit link | IndexTemplate | unmatched — not counted | — | Target in finding PVE-002 | no |
 | DL audit link | Vault | unmatched — not counted | — | Target in findings PVE-003, PVE-004 | no |
-| DL audit link | InsureToken | own contract | InsureToken (selected) `0xd83ae0...24393e` — deployed 2022-02-22 05:43:10+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| DL audit link | InsureToken | own contract | InsureToken (selected) `0xd83ae04c9ed29d6d3e6bf720c71bc7beb424393e` — deployed 2022-02-22 05:43:10+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | DL audit link | VestingEscrow | unmatched — not counted | — | Target in finding PVE-008 | no |
 | DL audit link | VotingEscrow | unmatched — not counted | — | Target in finding PVE-009 | no |
 | DL audit link | LiquidityGauge | unmatched — not counted | — | Mentioned in finding PVE-008 as containing similar issue | no |

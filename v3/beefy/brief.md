@@ -57,8 +57,8 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum, ethe
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x44e314...ff940a`, chain 250)
-- UnnamedContract (`0xfae44b...fabdc6`, chain 250)
+- UnnamedContract (`0x44e314190d9e4ce6d4c0903459204f8e21ff940a`, chain 250)
+- UnnamedContract (`0xfae44b30f6f9bbd44e6b7687471dd73d71fabdc6`, chain 250)
 
 ## Contract Surface Quality
 
@@ -105,10 +105,10 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum, ethe
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BeefyVaultV7 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0c0846...edb409` | ⚠️ Unaudited |
-| BIFI | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb1f1ee...73b1f1` | ⚠️ Unaudited |
-| CLR | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x11ae2b...37fe6c` | ⚠️ Unaudited |
-| DelegateRegistry | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-229101 | `0x469788...015446` | ⚠️ Unaudited |
+| BeefyVaultV7 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0c0846c5d8194bc327669763ac6af9b788edb409` | ⚠️ Unaudited |
+| BIFI | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb1f1ee126e9c96231cc3d3fad7c08b4cf873b1f1` | ⚠️ Unaudited |
+| CLR | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x11ae2b89175792f57d320a020eaea879e837fe6c` | ⚠️ Unaudited |
+| DelegateRegistry | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-229101 | `0x469788fe6e9e9681c6ebf3bf78e7fd26fc015446` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -128,9 +128,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | gnosis | unit-229103 | `0x469788...015446` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-229104 | `0x44e314...ff940a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-229105 | `0xfae44b...fabdc6` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | gnosis | unit-229103 | `0x469788fe6e9e9681c6ebf3bf78e7fd26fc015446` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-229104 | `0x44e314190d9e4ce6d4c0903459204f8e21ff940a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-229105 | `0xfae44b30f6f9bbd44e6b7687471dd73d71fabdc6` | ❓ Unverified |
 
 ## Audit Inventory
 

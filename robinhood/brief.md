@@ -62,9 +62,9 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| HONG | unknown | ethereum | n/a | [`0x9fa8fa...2ce0a9`](./contracts/ethereum-1/0x9fa8fa61a10ff892e4ebceb7f4e0fc684c2ce0a9/) | ⚠️ Unaudited |
-| token | unknown | ethereum | n/a | [`0x4a4576...3998b9`](./contracts/ethereum-1/0x4a4576e39dd49334b33df8c3626b9426723998b9/) | ⚠️ Unaudited |
-| Wallet | unknown | ethereum | n/a | [`0xb79ab5...812d31`](./contracts/ethereum-1/0xb79ab5993cef2e0b714a66f3eda73b55de812d31/) | ⚠️ Unaudited |
+| HONG | unknown | ethereum | n/a | [`0x9fa8fa61a10ff892e4ebceb7f4e0fc684c2ce0a9`](./contracts/ethereum-1/0x9fa8fa61a10ff892e4ebceb7f4e0fc684c2ce0a9/) | ⚠️ Unaudited |
+| token | unknown | ethereum | n/a | [`0x4a4576e39dd49334b33df8c3626b9426723998b9`](./contracts/ethereum-1/0x4a4576e39dd49334b33df8c3626b9426723998b9/) | ⚠️ Unaudited |
+| Wallet | unknown | ethereum | n/a | [`0xb79ab5993cef2e0b714a66f3eda73b55de812d31`](./contracts/ethereum-1/0xb79ab5993cef2e0b714a66f3eda73b55de812d31/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,9 +95,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x9fa8fa...2ce0a9`](./contracts/ethereum-1/0x9fa8fa61a10ff892e4ebceb7f4e0fc684c2ce0a9/) | HONG | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x4a4576...3998b9`](./contracts/ethereum-1/0x4a4576e39dd49334b33df8c3626b9426723998b9/) | token | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xb79ab5...812d31`](./contracts/ethereum-1/0xb79ab5993cef2e0b714a66f3eda73b55de812d31/) | Wallet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x9fa8fa61a10ff892e4ebceb7f4e0fc684c2ce0a9`](./contracts/ethereum-1/0x9fa8fa61a10ff892e4ebceb7f4e0fc684c2ce0a9/) | HONG | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4a4576e39dd49334b33df8c3626b9426723998b9`](./contracts/ethereum-1/0x4a4576e39dd49334b33df8c3626b9426723998b9/) | token | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb79ab5993cef2e0b714a66f3eda73b55de812d31`](./contracts/ethereum-1/0xb79ab5993cef2e0b714a66f3eda73b55de812d31/) | Wallet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -54,11 +54,11 @@ The pinned logic-topography run contains 4 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xa0b869...06eb48`, chain 1)
-- SafeProxy (`0x4687e4...1d74d8`, chain 1)
-- SafeProxy (`0xb83a77...559e5e`, chain 1)
-- VaultV2 (`0x5dc53a...71ff2b`, chain 1)
-- VaultV2 (`0xa2eaad...7d68cd`, chain 1)
+- UnnamedContract (`0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48`, chain 1)
+- SafeProxy (`0x4687e45bb5518a995913a24bb2816fe2031d74d8`, chain 1)
+- SafeProxy (`0xb83a77677c51aaf6c45b0b64199eae6938559e5e`, chain 1)
+- VaultV2 (`0x5dc53a23adc9f2bed98de6f59f7f309a7c71ff2b`, chain 1)
+- VaultV2 (`0xa2eaad0d586cf9fd73bb2c09cf6a7e3e187d68cd`, chain 1)
 
 ## Contract Surface Quality
 
@@ -105,13 +105,13 @@ The pinned logic-topography run contains 4 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| VaultV2 | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-379558 | 2 deployments: ethereum `0x5dc53a...71ff2b`; ethereum `0xa2eaad...7d68cd` | ⚠️ Unaudited |
-| Morpho | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbbbbbb...eeffcb` | ⚠️ Unaudited |
-| MorphoMarketV1AdapterV2Factory | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x32bb1c...61ccc1` | ⚠️ Unaudited |
-| MorphoVaultV1AdapterFactory | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd1b8e2...f63394` | ⚠️ Unaudited |
-| RegistryList | registry | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3696c5...d9364e` | ⚠️ Unaudited |
-| Safe | unknown | project_anchor | own_supporting | 2 | ethereum | unit-379561 (2 proxies) | 2 deployments: ethereum `0x4687e4...1d74d8`; ethereum `0xb83a77...559e5e` | ⚠️ Unaudited |
-| VaultV2Factory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa1d94f...6c0405` | ⚠️ Unaudited |
+| VaultV2 | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-379558 | 2 deployments: ethereum `0x5dc53a23adc9f2bed98de6f59f7f309a7c71ff2b`; ethereum `0xa2eaad0d586cf9fd73bb2c09cf6a7e3e187d68cd` | ⚠️ Unaudited |
+| Morpho | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb` | ⚠️ Unaudited |
+| MorphoMarketV1AdapterV2Factory | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x32bb1c0d48d8b1b3363e86eeb9a0300bad61ccc1` | ⚠️ Unaudited |
+| MorphoVaultV1AdapterFactory | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd1b8e2dee25c2b89dcd2f98448a7ce87d6f63394` | ⚠️ Unaudited |
+| RegistryList | registry | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3696c5eae4a7ffd04ea163564571e9cd8ed9364e` | ⚠️ Unaudited |
+| Safe | unknown | project_anchor | own_supporting | 2 | ethereum | unit-379561 (2 proxies) | 2 deployments: ethereum `0x4687e45bb5518a995913a24bb2816fe2031d74d8`; ethereum `0xb83a77677c51aaf6c45b0b64199eae6938559e5e` | ⚠️ Unaudited |
+| VaultV2Factory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa1d94f746defa1928926b84fb2596c06926c0405` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -131,7 +131,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379559 | `0xa0b869...06eb48` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379559 | `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -150,7 +150,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x5dc53a...71ff2b` | VaultV2 | core_logic | $56,389,000.80 | Verified native implementation with $56,389,000.80 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x5dc53a23adc9f2bed98de6f59f7f309a7c71ff2b` | VaultV2 | core_logic | $56,389,000.80 | Verified native implementation with $56,389,000.80 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

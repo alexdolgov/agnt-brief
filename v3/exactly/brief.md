@@ -52,66 +52,66 @@ The pinned logic-topography run contains 3 contract row(s) across base, ethereum
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x1586c0...809409`, chain 1)
-- UnnamedContract (`0x163538...4198ff`, chain 1)
-- UnnamedContract (`0x29babf...a10258`, chain 1)
-- UnnamedContract (`0x310a26...3efe01`, chain 1)
-- UnnamedContract (`0x3843c4...2a29e1`, chain 1)
-- UnnamedContract (`0x3c6bd2...ae2b54`, chain 1)
-- UnnamedContract (`0x3fd0a9...b39afc`, chain 1)
-- UnnamedContract (`0x660e2f...f6f928`, chain 1)
-- UnnamedContract (`0x810221...ad9392`, chain 1)
-- UnnamedContract (`0x8644c0...729435`, chain 1)
-- UnnamedContract (`0x86f6d8...694bf9`, chain 1)
-- UnnamedContract (`0x884988...b6056c`, chain 1)
-- UnnamedContract (`0x92024c...8eb58b`, chain 1)
-- UnnamedContract (`0x9c36ff...1577c6`, chain 1)
-- UnnamedContract (`0xa6b60f...713825`, chain 1)
-- UnnamedContract (`0xaeb62e...6f027e`, chain 1)
-- UnnamedContract (`0xc4d450...61c7ef`, chain 1)
-- UnnamedContract (`0xe296e3...3cee83`, chain 1)
-- UnnamedContract (`0xe94e00...412567`, chain 1)
-- UnnamedContract (`0xf05385...d60c90`, chain 1)
-- UnnamedContract (`0xf880bb...d09ac0`, chain 1)
-- UnnamedContract (`0xf972f7...c94e72`, chain 1)
-- UnnamedContract (`0x057e3e...594d04`, chain 10)
-- UnnamedContract (`0x0b9d4a...06bc7a`, chain 10)
-- UnnamedContract (`0x1a4fc2...142d4d`, chain 10)
-- UnnamedContract (`0x225561...7809d9`, chain 10)
-- UnnamedContract (`0x22ab31...36533f`, chain 10)
-- UnnamedContract (`0x2d550e...51e280`, chain 10)
-- UnnamedContract (`0x3f55a3...243c46`, chain 10)
-- UnnamedContract (`0x3fdf2b...08bcda`, chain 10)
-- UnnamedContract (`0x448ddd...4d120c`, chain 10)
-- UnnamedContract (`0x6926b4...f3a8bb`, chain 10)
-- UnnamedContract (`0x6ccec8...5e96b2`, chain 10)
-- UnnamedContract (`0x6f748f...f3b322`, chain 10)
-- UnnamedContract (`0x6fc143...9f8024`, chain 10)
-- UnnamedContract (`0x8130c8...ff09ed`, chain 10)
-- UnnamedContract (`0x87581e...a9c53e`, chain 10)
-- UnnamedContract (`0x8b6049...0c1b96`, chain 10)
-- UnnamedContract (`0xa430a4...56cedb`, chain 10)
-- UnnamedContract (`0xb4610b...a4a2aa`, chain 10)
-- UnnamedContract (`0xbea586...3fbc18`, chain 10)
-- UnnamedContract (`0xcc54de...b2ba01`, chain 10)
-- UnnamedContract (`0xceed2b...be752b`, chain 10)
-- UnnamedContract (`0xd75947...8c1bc1`, chain 10)
-- UnnamedContract (`0xe8cf7c...8aa018`, chain 10)
-- UnnamedContract (`0x03859f...0d4489`, chain 8453)
-- UnnamedContract (`0x0aeb0b...4a597c`, chain 8453)
-- UnnamedContract (`0x1dcf89...dd0f75`, chain 8453)
-- UnnamedContract (`0x50b818...10873a`, chain 8453)
-- UnnamedContract (`0x52ee52...c3a0c4`, chain 8453)
-- UnnamedContract (`0x61edac...692e4b`, chain 8453)
-- UnnamedContract (`0x79e30d...65b107`, chain 8453)
-- UnnamedContract (`0x81c9a7...694873`, chain 8453)
-- UnnamedContract (`0x85c21f...0aaf4f`, chain 8453)
-- UnnamedContract (`0x8c2f35...d873e4`, chain 8453)
-- UnnamedContract (`0xb4b6d4...ed0b77`, chain 8453)
-- UnnamedContract (`0xbd1ba7...b2e031`, chain 8453)
-- InterestRateModel (`0x406e73...4e35a4`, chain 8453)
-- InterestRateModel (`0xe963cd...7453b7`, chain 8453)
-- InterestRateModel (`0xf9b612...6380f2`, chain 8453)
+- UnnamedContract (`0x1586c0aea22b2a7a943d7af5a097bdab3f809409`, chain 1)
+- UnnamedContract (`0x163538e22f4d38c1eb21b79939f3d2ee274198ff`, chain 1)
+- UnnamedContract (`0x29babff3eba7b517a75109ea8fd6d1eab4a10258`, chain 1)
+- UnnamedContract (`0x310a2694521f75c7b2b64b5937c16ce65c3efe01`, chain 1)
+- UnnamedContract (`0x3843c41da1d7909c86fad51c47b9a97cf62a29e1`, chain 1)
+- UnnamedContract (`0x3c6bd2ffb9cb007e469cdd7b08d79102b5ae2b54`, chain 1)
+- UnnamedContract (`0x3fd0a9afae344000c53e5862b350a17775b39afc`, chain 1)
+- UnnamedContract (`0x660e2fc185a9ffe722af253329ceaad4c9f6f928`, chain 1)
+- UnnamedContract (`0x810221fc9ec7d0ee775983ade221d302e4ad9392`, chain 1)
+- UnnamedContract (`0x8644c0fded361d1920e068ba4b09996e26729435`, chain 1)
+- UnnamedContract (`0x86f6d8b717d49527db3126f31bdd3b0047694bf9`, chain 1)
+- UnnamedContract (`0x884988e0bfb0d6a18f664329acd0402b2fb6056c`, chain 1)
+- UnnamedContract (`0x92024c4bda9da602b711b9abb610d072018eb58b`, chain 1)
+- UnnamedContract (`0x9c36ff0412ab4c03606eb1fefb8cac177b1577c6`, chain 1)
+- UnnamedContract (`0xa6b60fb117809b05263c126691c707fb19713825`, chain 1)
+- UnnamedContract (`0xaeb62e6f27bc103702e7bc879ae98bcea56f027e`, chain 1)
+- UnnamedContract (`0xc4d4500326981eacd020e20a81b1c479c161c7ef`, chain 1)
+- UnnamedContract (`0xe296e3ae5e1db00f1b9710e6ad885215873cee83`, chain 1)
+- UnnamedContract (`0xe94e0068ea2b8ed9490d29bb534d1ba996412567`, chain 1)
+- UnnamedContract (`0xf05385bc0b38e941f65d3031e1695bfbf8d60c90`, chain 1)
+- UnnamedContract (`0xf880bb912b652a594abac1a9d79c968754d09ac0`, chain 1)
+- UnnamedContract (`0xf972f71332af1b7967ad21921b8ef4de84c94e72`, chain 1)
+- UnnamedContract (`0x057e3efca6f9e7094584b176f3e69a4f4b594d04`, chain 10)
+- UnnamedContract (`0x0b9d4ab484f95090074008ae59db1fab6606bc7a`, chain 10)
+- UnnamedContract (`0x1a4fc2a7a5f17dc0806d1f324b2bc76c9d142d4d`, chain 10)
+- UnnamedContract (`0x225561cfa7ff5a44756ca184c3554882667809d9`, chain 10)
+- UnnamedContract (`0x22ab31cd55130435b5efbf9224b6a9d5ec36533f`, chain 10)
+- UnnamedContract (`0x2d550e003fde3e3114b1bbd03a25f2498c51e280`, chain 10)
+- UnnamedContract (`0x3f55a319d2fd003f87a96c1c3484121936243c46`, chain 10)
+- UnnamedContract (`0x3fdf2b9474c6c01ccfe7ab2c44855a6ee008bcda`, chain 10)
+- UnnamedContract (`0x448dddb964de96b5ad183777f5e420384e4d120c`, chain 10)
+- UnnamedContract (`0x6926b434cce9b5b7966ae1bfeef6d0a7dcf3a8bb`, chain 10)
+- UnnamedContract (`0x6ccec84e6e3879c6430745ea3d40c968c75e96b2`, chain 10)
+- UnnamedContract (`0x6f748fd65d7c71949ba6641b3248c4c191f3b322`, chain 10)
+- UnnamedContract (`0x6fc143c9e6b9dcbc4023cc1f7d87eedb419f8024`, chain 10)
+- UnnamedContract (`0x8130c8b5625dd68b5c7eead3a4cae2921dff09ed`, chain 10)
+- UnnamedContract (`0x87581e1540ae45056c0ed59530c783a6e0a9c53e`, chain 10)
+- UnnamedContract (`0x8b60497274ff470786a0b5636379aad8580c1b96`, chain 10)
+- UnnamedContract (`0xa430a427bd00210506589906a71b54d6c256cedb`, chain 10)
+- UnnamedContract (`0xb4610b34ca99fa8c48844faa667fae1686a4a2aa`, chain 10)
+- UnnamedContract (`0xbea586a167853adddef12818f264f1f9823fbc18`, chain 10)
+- UnnamedContract (`0xcc54de39c45000b01074e4970ca0af9d3eb2ba01`, chain 10)
+- UnnamedContract (`0xceed2bfe740f02db6094ebe89ff93b1031be752b`, chain 10)
+- UnnamedContract (`0xd759479b3a07fab64edb668d702293079e8c1bc1`, chain 10)
+- UnnamedContract (`0xe8cf7c80518cb3b6e4b5eb6d45cf13e7038aa018`, chain 10)
+- UnnamedContract (`0x03859fa7549449a7dde7663e5c06a38c5b0d4489`, chain 8453)
+- UnnamedContract (`0x0aeb0bcb919858c0a4dcec3eed879985034a597c`, chain 8453)
+- UnnamedContract (`0x1dcf89dfa88363ef33d49dd591b1ee5e84dd0f75`, chain 8453)
+- UnnamedContract (`0x50b8186fe470e125b3a7c3f3d6b0f7fa7310873a`, chain 8453)
+- UnnamedContract (`0x52ee5238e5676598551c8d2bbccb62c72fc3a0c4`, chain 8453)
+- UnnamedContract (`0x61edacb54aa8a689013682529df8914c87692e4b`, chain 8453)
+- UnnamedContract (`0x79e30d4d61224dce20f2d84f99edb2452565b107`, chain 8453)
+- UnnamedContract (`0x81c9a7b55a4df39a9b7b5f781ec0e53539694873`, chain 8453)
+- UnnamedContract (`0x85c21fa8aee39891e115e2b28c3db2de5b0aaf4f`, chain 8453)
+- UnnamedContract (`0x8c2f35c8076bcb5d4b696bae11aca0ac0dd873e4`, chain 8453)
+- UnnamedContract (`0xb4b6d4e969001dccc6bf50c4f4bd394fb4ed0b77`, chain 8453)
+- UnnamedContract (`0xbd1ba78a3976cab420a9203e6ef14d18c2b2e031`, chain 8453)
+- InterestRateModel (`0x406e73c6eb2308e0557c031354c4a6f3374e35a4`, chain 8453)
+- InterestRateModel (`0xe963cdf1ec0bb86f009d764d6ee3feb6697453b7`, chain 8453)
+- InterestRateModel (`0xf9b612ffe3fab24e74026d2b5d13cbcead6380f2`, chain 8453)
 
 ## Contract Surface Quality
 
@@ -158,26 +158,26 @@ The pinned logic-topography run contains 3 contract row(s) across base, ethereum
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| DeadAllower | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x136d84...0cc9da` | ⚠️ Unaudited |
-| EXA | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 2 deployments: optimism `0x0810a8...d4c076`; optimism `0x3c3a02...ed3442` | ⚠️ Unaudited |
-| ExaAccountFactory | registry | non_address_book | non_address_book_inventory (excluded) | 4 | ethereum | n/a | 4 deployments: ethereum `0x3427a5...79616e`; ethereum `0x6e1b5a...ed297b`; ethereum `0x8d493a...702163`; ethereum `0xcbeaaf...5a9668` | ⚠️ Unaudited |
-| ExaAccountFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 2 deployments: optimism `0x3427a5...79616e`; optimism `0xcbeaaf...5a9668` | ⚠️ Unaudited |
-| ExaAccountFactory | registry | non_address_book | non_address_book_inventory (excluded) | 4 | base | n/a | 4 deployments: base `0x3427a5...79616e`; base `0x6e1b5a...ed297b`; base `0x8d493a...702163`; base `0xcbeaaf...5a9668` | ⚠️ Unaudited |
-| ExaPlugin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0aa352...860469` | ⚠️ Unaudited |
-| ExaPreviewer | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x48ccc0...e70727` | ⚠️ Unaudited |
-| FlashLoanAdapter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xd2b94b...69bde2` | ⚠️ Unaudited |
-| GnosisSafe | governance | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x7a6582...e843aa` | ⚠️ Unaudited |
-| GnosisSafeL2 | governance | non_address_book | standard_proxy_or_library (excluded) | 1 | optimism | n/a | `0xc0d6bc...9286d3` | ⚠️ Unaudited |
-| InterestRateModel | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x163538...4198ff` | ⚠️ Unaudited |
-| InterestRateModel | operational_periphery | project_anchor | own_supporting | 0 | base | unit-385236 | `0x406e73...4e35a4` | ⚠️ Unaudited |
-| InterestRateModel | operational_periphery | project_anchor | own_supporting | 0 | base | unit-385246 | `0xe963cd...7453b7` | ⚠️ Unaudited |
-| InterestRateModel | operational_periphery | project_anchor | own_supporting | 0 | base | unit-385247 | `0xf9b612...6380f2` | ⚠️ Unaudited |
-| IssuerChecker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x9adcf1...0ff6bd` | ⚠️ Unaudited |
-| ProposalManager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb92e0a...8c648f` | ⚠️ Unaudited |
-| ProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xfba759...4b941a` | ⚠️ Unaudited |
-| Refunder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: optimism `0xd5f8c9...fdd228`; base `0xaec84e...a782df` | ⚠️ Unaudited |
-| TimelockController | governance | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 2 deployments: optimism `0x92024c...8eb58b`; base `0x92024c...8eb58b` | ⚠️ Unaudited |
-| WebauthnOwnerPlugin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbd9c70...7a1583` | ⚠️ Unaudited |
+| DeadAllower | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x136d84968d65ffdfef32a4fe07660adbf60cc9da` | ⚠️ Unaudited |
+| EXA | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 2 deployments: optimism `0x0810a8c5a2365943300523f4f947ae1546d4c076`; optimism `0x3c3a02b4e7576ed584e71a29d311084d44ed3442` | ⚠️ Unaudited |
+| ExaAccountFactory | registry | non_address_book | non_address_book_inventory (excluded) | 4 | ethereum | n/a | 4 deployments: ethereum `0x3427a595ed6e05cc2d8115e28bad151cb879616e`; ethereum `0x6e1b5a67add32e8dc034c23b8022b54821ed297b`; ethereum `0x8d493af799162ac3f273e8918b2842447f702163`; ethereum `0xcbeaaf42cc39c17e84cbefe85160995b515a9668` | ⚠️ Unaudited |
+| ExaAccountFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 2 deployments: optimism `0x3427a595ed6e05cc2d8115e28bad151cb879616e`; optimism `0xcbeaaf42cc39c17e84cbefe85160995b515a9668` | ⚠️ Unaudited |
+| ExaAccountFactory | registry | non_address_book | non_address_book_inventory (excluded) | 4 | base | n/a | 4 deployments: base `0x3427a595ed6e05cc2d8115e28bad151cb879616e`; base `0x6e1b5a67add32e8dc034c23b8022b54821ed297b`; base `0x8d493af799162ac3f273e8918b2842447f702163`; base `0xcbeaaf42cc39c17e84cbefe85160995b515a9668` | ⚠️ Unaudited |
+| ExaPlugin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0aa3529ae5fdbceb69cf8ab2b9e2d3af85860469` | ⚠️ Unaudited |
+| ExaPreviewer | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x48ccc04dda3a904eaea3f94150310669b5e70727` | ⚠️ Unaudited |
+| FlashLoanAdapter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xd2b94b457d17bfe14f0a850299f924d2f269bde2` | ⚠️ Unaudited |
+| GnosisSafe | governance | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x7a65824d74b0c20730b6ee4929abcc41cbe843aa` | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | non_address_book | standard_proxy_or_library (excluded) | 1 | optimism | n/a | `0xc0d6bc5d052d1e74523ad79dd5a954276c9286d3` | ⚠️ Unaudited |
+| InterestRateModel | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x163538e22f4d38c1eb21b79939f3d2ee274198ff` | ⚠️ Unaudited |
+| InterestRateModel | operational_periphery | project_anchor | own_supporting | 0 | base | unit-385236 | `0x406e73c6eb2308e0557c031354c4a6f3374e35a4` | ⚠️ Unaudited |
+| InterestRateModel | operational_periphery | project_anchor | own_supporting | 0 | base | unit-385246 | `0xe963cdf1ec0bb86f009d764d6ee3feb6697453b7` | ⚠️ Unaudited |
+| InterestRateModel | operational_periphery | project_anchor | own_supporting | 0 | base | unit-385247 | `0xf9b612ffe3fab24e74026d2b5d13cbcead6380f2` | ⚠️ Unaudited |
+| IssuerChecker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x9adcf1d79423f478aea60fb233f1fdf56d0ff6bd` | ⚠️ Unaudited |
+| ProposalManager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb92e0a6e56d60aed6b99c21350d9de56ca8c648f` | ⚠️ Unaudited |
+| ProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xfba759bcd1a99a7724c5068feddb4f5b844b941a` | ⚠️ Unaudited |
+| Refunder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: optimism `0xd5f8c9d87b7691449dec453d041d9054e0fdd228`; base `0xaec84eac74981ab22905919cb282b78c7ca782df` | ⚠️ Unaudited |
+| TimelockController | governance | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 2 deployments: optimism `0x92024c4bda9da602b711b9abb610d072018eb58b`; base `0x92024c4bda9da602b711b9abb610d072018eb58b` | ⚠️ Unaudited |
+| WebauthnOwnerPlugin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbd9c70db872fdd9029ee5fa2a0ea30eabf7a1583` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -197,119 +197,119 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x04ba04...a735d3` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0d337f...3e95c1` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385164 | `0x1586c0...809409` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385165 | `0x163538...4198ff` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x179c07...8e592e` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x205625...974de0` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x22ba6b...352c43` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385166 | `0x29babf...a10258` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2a8740...12e78b` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2db2d7...c31cc0` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385167 | `0x310a26...3efe01` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385168 | `0x3843c4...2a29e1` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3a2807...b7c7d6` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385169 | `0x3c6bd2...ae2b54` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385170 | `0x3fd0a9...b39afc` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4a8c77...3c3bb9` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4d8975...a9680d` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x54b3f1...634c38` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385171 | `0x660e2f...f6f928` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x72795c...46c2da` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x734e2a...dc6116` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7a722e...7c160e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385172 | `0x810221...ad9392` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385173 | `0x8644c0...729435` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385174 | `0x86f6d8...694bf9` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385175 | `0x884988...b6056c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385176 | `0x92024c...8eb58b` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x979f31...e9886f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385177 | `0x9c36ff...1577c6` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa5df45...6a55da` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385178 | `0xa6b60f...713825` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xaad51e...9b347e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385179 | `0xaeb62e...6f027e` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xaefcdb...9ec60e` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb5fa37...e32c6c` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb957a4...319fab` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385180 | `0xc4d450...61c7ef` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcc3f41...3a371e` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcf830a...ecb452` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd588e1...199976` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd6e103...794d4c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385181 | `0xe296e3...3cee83` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385182 | `0xe94e00...412567` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385183 | `0xf05385...d60c90` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385184 | `0xf880bb...d09ac0` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385185 | `0xf972f7...c94e72` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385209 | `0x04ba04...a735d3` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385210 | `0x0d337f...3e95c1` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385211 | `0x179c07...8e592e` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385212 | `0x205625...974de0` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385213 | `0x22ba6b...352c43` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385214 | `0x2a8740...12e78b` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385215 | `0x2db2d7...c31cc0` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385216 | `0x3a2807...b7c7d6` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385217 | `0x4a8c77...3c3bb9` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385218 | `0x4d8975...a9680d` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385219 | `0x54b3f1...634c38` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385220 | `0x72795c...46c2da` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385221 | `0x734e2a...dc6116` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385222 | `0x7a722e...7c160e` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385223 | `0x979f31...e9886f` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385224 | `0xa5df45...6a55da` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385225 | `0xaad51e...9b347e` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385226 | `0xaefcdb...9ec60e` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385227 | `0xb5fa37...e32c6c` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385228 | `0xb957a4...319fab` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385229 | `0xcc3f41...3a371e` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385230 | `0xcf830a...ecb452` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385231 | `0xd588e1...199976` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385232 | `0xd6e103...794d4c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385186 | `0x057e3e...594d04` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385187 | `0x0b9d4a...06bc7a` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x0dbd48...cf83b2` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385188 | `0x1a4fc2...142d4d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385189 | `0x225561...7809d9` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385190 | `0x22ab31...36533f` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x29babf...a10258` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385191 | `0x2d550e...51e280` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385192 | `0x3f55a3...243c46` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385193 | `0x3fdf2b...08bcda` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385194 | `0x448ddd...4d120c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385195 | `0x6926b4...f3a8bb` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385196 | `0x6ccec8...5e96b2` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385197 | `0x6f748f...f3b322` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385198 | `0x6fc143...9f8024` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385199 | `0x8130c8...ff09ed` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x81c9a7...694873` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385200 | `0x87581e...a9c53e` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x884988...b6056c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385201 | `0x8b6049...0c1b96` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385202 | `0xa430a4...56cedb` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xaeb62e...6f027e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385203 | `0xb4610b...a4a2aa` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xbd1ba7...b2e031` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385204 | `0xbea586...3fbc18` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xc4d450...61c7ef` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385205 | `0xcc54de...b2ba01` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385206 | `0xceed2b...be752b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385207 | `0xd75947...8c1bc1` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385208 | `0xe8cf7c...8aa018` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xf05385...d60c90` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-385233 | `0x03859f...0d4489` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-385234 | `0x0aeb0b...4a597c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-385235 | `0x1dcf89...dd0f75` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-385237 | `0x50b818...10873a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-385238 | `0x52ee52...c3a0c4` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-385239 | `0x61edac...692e4b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-385240 | `0x79e30d...65b107` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-385241 | `0x81c9a7...694873` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-385242 | `0x85c21f...0aaf4f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-385243 | `0x8c2f35...d873e4` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-385244 | `0xb4b6d4...ed0b77` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-385245 | `0xbd1ba7...b2e031` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x04ba04737c435d9c2b8d93eef579b42201a735d3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0d337f4d28abd8f542ed1cf0d5d45e32db3e95c1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385164 | `0x1586c0aea22b2a7a943d7af5a097bdab3f809409` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385165 | `0x163538e22f4d38c1eb21b79939f3d2ee274198ff` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x179c07e1bc481b221c1fe9cb9e0af5918e8e592e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2056256190ed2f7e72f54cad73fdb37610974de0` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x22ba6b356303ad14b3da2e1e268dadcb07352c43` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385166 | `0x29babff3eba7b517a75109ea8fd6d1eab4a10258` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2a8740e29ff6ce3b4c0745382be5bedbce12e78b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2db2d7b015d97ca600fc70b28d8dc8d20cc31cc0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385167 | `0x310a2694521f75c7b2b64b5937c16ce65c3efe01` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385168 | `0x3843c41da1d7909c86fad51c47b9a97cf62a29e1` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3a2807d02a49b122927a34424a8aba5df0b7c7d6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385169 | `0x3c6bd2ffb9cb007e469cdd7b08d79102b5ae2b54` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385170 | `0x3fd0a9afae344000c53e5862b350a17775b39afc` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4a8c77802753d6715dfa8568e3498bc0bc3c3bb9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4d897583ea1f121826569059681a04e490a9680d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x54b3f1d30a79636aa77a656d30bfe441f2634c38` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385171 | `0x660e2fc185a9ffe722af253329ceaad4c9f6f928` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x72795c6f67783bb35c23164a0b54f9de0f46c2da` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x734e2abad752193b5cd9bc3894dda4e4a9dc6116` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7a722eee3c4e3d5156090d10017c7ce9a77c160e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385172 | `0x810221fc9ec7d0ee775983ade221d302e4ad9392` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385173 | `0x8644c0fded361d1920e068ba4b09996e26729435` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385174 | `0x86f6d8b717d49527db3126f31bdd3b0047694bf9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385175 | `0x884988e0bfb0d6a18f664329acd0402b2fb6056c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385176 | `0x92024c4bda9da602b711b9abb610d072018eb58b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x979f31bd9c0e7e8178c7328672fd5dbc03e9886f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385177 | `0x9c36ff0412ab4c03606eb1fefb8cac177b1577c6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa5df45a240eebe3745062c616688a2aafa6a55da` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385178 | `0xa6b60fb117809b05263c126691c707fb19713825` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xaad51eaea66cad89d2d2a2e9389cb1ba919b347e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385179 | `0xaeb62e6f27bc103702e7bc879ae98bcea56f027e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xaefcdbd18eabe4d6bd769d6ad649a18a9b9ec60e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb5fa37e4fdebcebae31a68cd673201a2c1e32c6c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb957a4aa46f859b14c745b8356c28b8361319fab` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385180 | `0xc4d4500326981eacd020e20a81b1c479c161c7ef` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcc3f41204a1324dd91f1dbfc46208535293a371e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcf830a26cb28e499d5e7346eb668821933ecb452` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd588e11b7089300fbf08b4222b906ed53c199976` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd6e103a328b78514c1c76ece2cc922bf80794d4c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385181 | `0xe296e3ae5e1db00f1b9710e6ad885215873cee83` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385182 | `0xe94e0068ea2b8ed9490d29bb534d1ba996412567` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385183 | `0xf05385bc0b38e941f65d3031e1695bfbf8d60c90` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385184 | `0xf880bb912b652a594abac1a9d79c968754d09ac0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385185 | `0xf972f71332af1b7967ad21921b8ef4de84c94e72` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385209 | `0x04ba04737c435d9c2b8d93eef579b42201a735d3` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385210 | `0x0d337f4d28abd8f542ed1cf0d5d45e32db3e95c1` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385211 | `0x179c07e1bc481b221c1fe9cb9e0af5918e8e592e` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385212 | `0x2056256190ed2f7e72f54cad73fdb37610974de0` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385213 | `0x22ba6b356303ad14b3da2e1e268dadcb07352c43` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385214 | `0x2a8740e29ff6ce3b4c0745382be5bedbce12e78b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385215 | `0x2db2d7b015d97ca600fc70b28d8dc8d20cc31cc0` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385216 | `0x3a2807d02a49b122927a34424a8aba5df0b7c7d6` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385217 | `0x4a8c77802753d6715dfa8568e3498bc0bc3c3bb9` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385218 | `0x4d897583ea1f121826569059681a04e490a9680d` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385219 | `0x54b3f1d30a79636aa77a656d30bfe441f2634c38` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385220 | `0x72795c6f67783bb35c23164a0b54f9de0f46c2da` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385221 | `0x734e2abad752193b5cd9bc3894dda4e4a9dc6116` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385222 | `0x7a722eee3c4e3d5156090d10017c7ce9a77c160e` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385223 | `0x979f31bd9c0e7e8178c7328672fd5dbc03e9886f` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385224 | `0xa5df45a240eebe3745062c616688a2aafa6a55da` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385225 | `0xaad51eaea66cad89d2d2a2e9389cb1ba919b347e` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385226 | `0xaefcdbd18eabe4d6bd769d6ad649a18a9b9ec60e` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385227 | `0xb5fa37e4fdebcebae31a68cd673201a2c1e32c6c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385228 | `0xb957a4aa46f859b14c745b8356c28b8361319fab` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385229 | `0xcc3f41204a1324dd91f1dbfc46208535293a371e` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385230 | `0xcf830a26cb28e499d5e7346eb668821933ecb452` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385231 | `0xd588e11b7089300fbf08b4222b906ed53c199976` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385232 | `0xd6e103a328b78514c1c76ece2cc922bf80794d4c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385186 | `0x057e3efca6f9e7094584b176f3e69a4f4b594d04` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385187 | `0x0b9d4ab484f95090074008ae59db1fab6606bc7a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x0dbd485f80136bdeb4b1d69d294d6793b6cf83b2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385188 | `0x1a4fc2a7a5f17dc0806d1f324b2bc76c9d142d4d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385189 | `0x225561cfa7ff5a44756ca184c3554882667809d9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385190 | `0x22ab31cd55130435b5efbf9224b6a9d5ec36533f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x29babff3eba7b517a75109ea8fd6d1eab4a10258` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385191 | `0x2d550e003fde3e3114b1bbd03a25f2498c51e280` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385192 | `0x3f55a319d2fd003f87a96c1c3484121936243c46` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385193 | `0x3fdf2b9474c6c01ccfe7ab2c44855a6ee008bcda` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385194 | `0x448dddb964de96b5ad183777f5e420384e4d120c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385195 | `0x6926b434cce9b5b7966ae1bfeef6d0a7dcf3a8bb` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385196 | `0x6ccec84e6e3879c6430745ea3d40c968c75e96b2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385197 | `0x6f748fd65d7c71949ba6641b3248c4c191f3b322` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385198 | `0x6fc143c9e6b9dcbc4023cc1f7d87eedb419f8024` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385199 | `0x8130c8b5625dd68b5c7eead3a4cae2921dff09ed` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x81c9a7b55a4df39a9b7b5f781ec0e53539694873` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385200 | `0x87581e1540ae45056c0ed59530c783a6e0a9c53e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x884988e0bfb0d6a18f664329acd0402b2fb6056c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385201 | `0x8b60497274ff470786a0b5636379aad8580c1b96` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385202 | `0xa430a427bd00210506589906a71b54d6c256cedb` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xaeb62e6f27bc103702e7bc879ae98bcea56f027e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385203 | `0xb4610b34ca99fa8c48844faa667fae1686a4a2aa` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xbd1ba78a3976cab420a9203e6ef14d18c2b2e031` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385204 | `0xbea586a167853adddef12818f264f1f9823fbc18` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xc4d4500326981eacd020e20a81b1c479c161c7ef` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385205 | `0xcc54de39c45000b01074e4970ca0af9d3eb2ba01` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385206 | `0xceed2bfe740f02db6094ebe89ff93b1031be752b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385207 | `0xd759479b3a07fab64edb668d702293079e8c1bc1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385208 | `0xe8cf7c80518cb3b6e4b5eb6d45cf13e7038aa018` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xf05385bc0b38e941f65d3031e1695bfbf8d60c90` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-385233 | `0x03859fa7549449a7dde7663e5c06a38c5b0d4489` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-385234 | `0x0aeb0bcb919858c0a4dcec3eed879985034a597c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-385235 | `0x1dcf89dfa88363ef33d49dd591b1ee5e84dd0f75` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-385237 | `0x50b8186fe470e125b3a7c3f3d6b0f7fa7310873a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-385238 | `0x52ee5238e5676598551c8d2bbccb62c72fc3a0c4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-385239 | `0x61edacb54aa8a689013682529df8914c87692e4b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-385240 | `0x79e30d4d61224dce20f2d84f99edb2452565b107` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-385241 | `0x81c9a7b55a4df39a9b7b5f781ec0e53539694873` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-385242 | `0x85c21fa8aee39891e115e2b28c3db2de5b0aaf4f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-385243 | `0x8c2f35c8076bcb5d4b696bae11aca0ac0dd873e4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-385244 | `0xb4b6d4e969001dccc6bf50c4f4bd394fb4ed0b77` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-385245 | `0xbd1ba78a3976cab420a9203e6ef14d18c2b2e031` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -393,26 +393,26 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| ABDK 1st audit (Oct-22).pdf | Auditor | ambiguous — not counted | 0x0aeb0b… (alternative) `0x0aeb0b...4a597c` — liveness: live (current_address_book_code)<br>0x310a26… (alternative) `0x310a26...3efe01` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| ABDK 1st audit (Oct-22).pdf | Auditor | ambiguous — not counted | 0x0aeb0b… (alternative) `0x0aeb0bcb919858c0a4dcec3eed879985034a597c` — liveness: live (current_address_book_code)<br>0x310a26… (alternative) `0x310a2694521f75c7b2b64b5937c16ce65c3efe01` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | ABDK 1st audit (Oct-22).pdf | ExactlyOracle | unmatched — not counted | — | listed in scope | no |
-| ABDK 1st audit (Oct-22).pdf | InterestRateModel | ambiguous — not counted | InterestRateModel (alternative) `0x406e73...4e35a4` — deployed 2025-11-13 22:08:51+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xf9b612...6380f2` — deployed 2025-11-13 22:09:47+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xe963cd...7453b7` — deployed 2025-11-13 22:10:45+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| ABDK 1st audit (Oct-22).pdf | MarketETHRouter | ambiguous — not counted | 0x85c21f… (alternative) `0x85c21f...0aaf4f` — liveness: live (current_address_book_code)<br>0x29babf… (alternative) `0x29babf...a10258` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| ABDK 1st audit (Oct-22).pdf | InterestRateModel | ambiguous — not counted | InterestRateModel (alternative) `0x406e73c6eb2308e0557c031354c4a6f3374e35a4` — deployed 2025-11-13 22:08:51+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xf9b612ffe3fab24e74026d2b5d13cbcead6380f2` — deployed 2025-11-13 22:09:47+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xe963cdf1ec0bb86f009d764d6ee3feb6697453b7` — deployed 2025-11-13 22:10:45+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| ABDK 1st audit (Oct-22).pdf | MarketETHRouter | ambiguous — not counted | 0x85c21f… (alternative) `0x85c21fa8aee39891e115e2b28c3db2de5b0aaf4f` — liveness: live (current_address_book_code)<br>0x29babf… (alternative) `0x29babff3eba7b517a75109ea8fd6d1eab4a10258` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | ABDK 1st audit (Oct-22).pdf | Market | unmatched — not counted | — | listed in scope | no |
 | ABDK 1st audit (Oct-22).pdf | FixedLib | unmatched — not counted | — | listed in scope | no |
-| ABDK 2nd audit (May-23).pdf | Auditor | ambiguous — not counted | 0x0aeb0b… (alternative) `0x0aeb0b...4a597c` — liveness: live (current_address_book_code)<br>0x310a26… (alternative) `0x310a26...3efe01` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| ABDK 2nd audit (May-23).pdf | InterestRateModel | ambiguous — not counted | InterestRateModel (alternative) `0x406e73...4e35a4` — deployed 2025-11-13 22:08:51+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xf9b612...6380f2` — deployed 2025-11-13 22:09:47+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xe963cd...7453b7` — deployed 2025-11-13 22:10:45+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| ABDK 2nd audit (May-23).pdf | Auditor | ambiguous — not counted | 0x0aeb0b… (alternative) `0x0aeb0bcb919858c0a4dcec3eed879985034a597c` — liveness: live (current_address_book_code)<br>0x310a26… (alternative) `0x310a2694521f75c7b2b64b5937c16ce65c3efe01` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| ABDK 2nd audit (May-23).pdf | InterestRateModel | ambiguous — not counted | InterestRateModel (alternative) `0x406e73c6eb2308e0557c031354c4a6f3374e35a4` — deployed 2025-11-13 22:08:51+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xf9b612ffe3fab24e74026d2b5d13cbcead6380f2` — deployed 2025-11-13 22:09:47+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xe963cdf1ec0bb86f009d764d6ee3feb6697453b7` — deployed 2025-11-13 22:10:45+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | ABDK 2nd audit (May-23).pdf | Market | unmatched — not counted | — | listed in scope | no |
 | ABDK 2nd audit (May-23).pdf | PriceFeedDouble | unmatched — not counted | — | listed in scope | no |
 | ABDK 2nd audit (May-23).pdf | RewardsController | unmatched — not counted | — | listed in scope | no |
 | ABDK EXA token cross-chain (Mar-26).pdf | EXA | unmatched — not counted | — | — | no |
-| ABDK EscrowedEXA (Sep-23).pdf | EscrowedEXA | own contract | 0xbea586… (selected) `0xbea586...3fbc18` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ABDK EscrowedEXA (Sep-23).pdf | EscrowedEXA | own contract | 0xbea586… (selected) `0xbea586a167853adddef12818f264f1f9823fbc18` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ABDK EscrowedEXA (Sep-23).pdf | Swapper | unmatched — not counted | — | listed in scope | no |
 | ABDK Installments Router and New Market Roles (Apr-24).pdf | Market | unmatched — not counted | — | listed in scope | no |
 | ABDK Installments Router and New Market Roles (Apr-24).pdf | InstallmentsRouter | unmatched — not counted | — | listed in scope | no |
-| ABDK Interest Rate Model v2 (Feb-24).pdf | Auditor | ambiguous — not counted | 0x0aeb0b… (alternative) `0x0aeb0b...4a597c` — liveness: live (current_address_book_code)<br>0x310a26… (alternative) `0x310a26...3efe01` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| ABDK Interest Rate Model v2 (Feb-24).pdf | InterestRateModel | ambiguous — not counted | InterestRateModel (alternative) `0x406e73...4e35a4` — deployed 2025-11-13 22:08:51+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xf9b612...6380f2` — deployed 2025-11-13 22:09:47+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xe963cd...7453b7` — deployed 2025-11-13 22:10:45+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| ABDK Interest Rate Model v2 (Feb-24).pdf | Auditor | ambiguous — not counted | 0x0aeb0b… (alternative) `0x0aeb0bcb919858c0a4dcec3eed879985034a597c` — liveness: live (current_address_book_code)<br>0x310a26… (alternative) `0x310a2694521f75c7b2b64b5937c16ce65c3efe01` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| ABDK Interest Rate Model v2 (Feb-24).pdf | InterestRateModel | ambiguous — not counted | InterestRateModel (alternative) `0x406e73c6eb2308e0557c031354c4a6f3374e35a4` — deployed 2025-11-13 22:08:51+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xf9b612ffe3fab24e74026d2b5d13cbcead6380f2` — deployed 2025-11-13 22:09:47+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xe963cdf1ec0bb86f009d764d6ee3feb6697453b7` — deployed 2025-11-13 22:10:45+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | ABDK Interest Rate Model v2 (Feb-24).pdf | Market | unmatched — not counted | — | listed in scope | no |
-| ABDK Interest Rate Model v2 (Feb-24).pdf | MarketETHRouter | ambiguous — not counted | 0x85c21f… (alternative) `0x85c21f...0aaf4f` — liveness: live (current_address_book_code)<br>0x29babf… (alternative) `0x29babf...a10258` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| ABDK Interest Rate Model v2 (Feb-24).pdf | MarketETHRouter | ambiguous — not counted | 0x85c21f… (alternative) `0x85c21fa8aee39891e115e2b28c3db2de5b0aaf4f` — liveness: live (current_address_book_code)<br>0x29babf… (alternative) `0x29babff3eba7b517a75109ea8fd6d1eab4a10258` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | ABDK Interest Rate Model v2 (Feb-24).pdf | PriceFeedDouble | unmatched — not counted | — | listed in scope | no |
 | ABDK Interest Rate Model v2 (Feb-24).pdf | PriceFeedPool | unmatched — not counted | — | listed in scope | no |
 | ABDK Interest Rate Model v2 (Feb-24).pdf | PriceFeedWrapper | unmatched — not counted | — | listed in scope | no |
@@ -420,10 +420,10 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | ABDK Interest Rate Model v2 (Feb-24).pdf | FixedLib | unmatched — not counted | — | listed in scope | no |
 | ABDK Interest Rate Model v2 (Feb-24).pdf | EXA | unmatched — not counted | — | listed in scope | no |
 | ABDK Interest Rate Model v2 (Feb-24).pdf | Airdrop | unmatched — not counted | — | listed in scope | no |
-| ABDK Interest Rate Model v2 (Mar-24).pdf | Auditor | ambiguous — not counted | 0x0aeb0b… (alternative) `0x0aeb0b...4a597c` — liveness: live (current_address_book_code)<br>0x310a26… (alternative) `0x310a26...3efe01` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| ABDK Interest Rate Model v2 (Mar-24).pdf | InterestRateModel | ambiguous — not counted | InterestRateModel (alternative) `0x406e73...4e35a4` — deployed 2025-11-13 22:08:51+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xf9b612...6380f2` — deployed 2025-11-13 22:09:47+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xe963cd...7453b7` — deployed 2025-11-13 22:10:45+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| ABDK Interest Rate Model v2 (Mar-24).pdf | Auditor | ambiguous — not counted | 0x0aeb0b… (alternative) `0x0aeb0bcb919858c0a4dcec3eed879985034a597c` — liveness: live (current_address_book_code)<br>0x310a26… (alternative) `0x310a2694521f75c7b2b64b5937c16ce65c3efe01` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| ABDK Interest Rate Model v2 (Mar-24).pdf | InterestRateModel | ambiguous — not counted | InterestRateModel (alternative) `0x406e73c6eb2308e0557c031354c4a6f3374e35a4` — deployed 2025-11-13 22:08:51+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xf9b612ffe3fab24e74026d2b5d13cbcead6380f2` — deployed 2025-11-13 22:09:47+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xe963cdf1ec0bb86f009d764d6ee3feb6697453b7` — deployed 2025-11-13 22:10:45+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | ABDK Interest Rate Model v2 (Mar-24).pdf | Market | unmatched — not counted | — | listed in scope | no |
-| ABDK Interest Rate Model v2 (Mar-24).pdf | MarketETHRouter | ambiguous — not counted | 0x85c21f… (alternative) `0x85c21f...0aaf4f` — liveness: live (current_address_book_code)<br>0x29babf… (alternative) `0x29babf...a10258` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| ABDK Interest Rate Model v2 (Mar-24).pdf | MarketETHRouter | ambiguous — not counted | 0x85c21f… (alternative) `0x85c21fa8aee39891e115e2b28c3db2de5b0aaf4f` — liveness: live (current_address_book_code)<br>0x29babf… (alternative) `0x29babff3eba7b517a75109ea8fd6d1eab4a10258` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | ABDK Interest Rate Model v2 (Mar-24).pdf | PriceFeedDouble | unmatched — not counted | — | listed in scope | no |
 | ABDK Interest Rate Model v2 (Mar-24).pdf | PriceFeedPool | unmatched — not counted | — | listed in scope | no |
 | ABDK Interest Rate Model v2 (Mar-24).pdf | PriceFeedWrapper | unmatched — not counted | — | listed in scope | no |
@@ -432,9 +432,9 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | ABDK Interest Rate Model v2 (Mar-24).pdf | EXA | unmatched — not counted | — | listed in scope | no |
 | ABDK Interest Rate Model v2 (Mar-24).pdf | Airdrop | unmatched — not counted | — | listed in scope | no |
 | ABDK PeripheralContracts 1st audit (Sep-23).pdf | Airdrop | unmatched — not counted | — | listed in scope | no |
-| ABDK PeripheralContracts 1st audit (Sep-23).pdf | DebtManager | ambiguous — not counted | 0x057e3e… (alternative) `0x057e3e...594d04` — liveness: live (current_address_book_code)<br>0xf880bb… (alternative) `0xf880bb...d09ac0` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| ABDK PeripheralContracts 1st audit (Sep-23).pdf | DebtManager | ambiguous — not counted | 0x057e3e… (alternative) `0x057e3efca6f9e7094584b176f3e69a4f4b594d04` — liveness: live (current_address_book_code)<br>0xf880bb… (alternative) `0xf880bb912b652a594abac1a9d79c968754d09ac0` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | ABDK PeripheralContracts 1st audit (Sep-23).pdf | EXA | unmatched — not counted | — | listed in scope | no |
-| ABDK Protocol Update (Oct-25).pdf | Auditor | ambiguous — not counted | 0x0aeb0b… (alternative) `0x0aeb0b...4a597c` — liveness: live (current_address_book_code)<br>0x310a26… (alternative) `0x310a26...3efe01` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| ABDK Protocol Update (Oct-25).pdf | Auditor | ambiguous — not counted | 0x0aeb0b… (alternative) `0x0aeb0bcb919858c0a4dcec3eed879985034a597c` — liveness: live (current_address_book_code)<br>0x310a26… (alternative) `0x310a2694521f75c7b2b64b5937c16ce65c3efe01` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | ABDK Protocol Update (Oct-25).pdf | Market | unmatched — not counted | — | listed in scope section | no |
 | ABDK Protocol Update (Oct-25).pdf | MarketBase | unmatched — not counted | — | listed in scope section | no |
 | ABDK Protocol Update (Oct-25).pdf | MarketExtension | unmatched — not counted | — | listed in scope section | no |
@@ -451,12 +451,12 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Chainsafe 1st audit (May-22).pdf | FixedLenderETHRouter | unmatched — not counted | — | mentioned in line-by-line review | no |
 | Chainsafe 1st audit (May-22).pdf | PoolAccounting | unmatched — not counted | — | mentioned in line-by-line review | no |
 | Chainsafe 1st audit (May-22).pdf | TSUtils | unmatched — not counted | — | mentioned in line-by-line review | no |
-| Chainsafe 1st audit (May-22).pdf | Auditor | ambiguous — not counted | 0x0aeb0b… (alternative) `0x0aeb0b...4a597c` — liveness: live (current_address_book_code)<br>0x310a26… (alternative) `0x310a26...3efe01` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| Chainsafe 1st audit (May-22).pdf | InterestRateModel | ambiguous — not counted | InterestRateModel (alternative) `0x406e73...4e35a4` — deployed 2025-11-13 22:08:51+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xf9b612...6380f2` — deployed 2025-11-13 22:09:47+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xe963cd...7453b7` — deployed 2025-11-13 22:10:45+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Chainsafe 1st audit (May-22).pdf | Auditor | ambiguous — not counted | 0x0aeb0b… (alternative) `0x0aeb0bcb919858c0a4dcec3eed879985034a597c` — liveness: live (current_address_book_code)<br>0x310a26… (alternative) `0x310a2694521f75c7b2b64b5937c16ce65c3efe01` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Chainsafe 1st audit (May-22).pdf | InterestRateModel | ambiguous — not counted | InterestRateModel (alternative) `0x406e73c6eb2308e0557c031354c4a6f3374e35a4` — deployed 2025-11-13 22:08:51+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xf9b612ffe3fab24e74026d2b5d13cbcead6380f2` — deployed 2025-11-13 22:09:47+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xe963cdf1ec0bb86f009d764d6ee3feb6697453b7` — deployed 2025-11-13 22:10:45+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | Chainsafe 1st audit (May-22).pdf | Previewer | unmatched — not counted | — | mentioned as out of scope but part of codebase | no |
 | Chainsafe 2nd audit (Oct-22).pdf | Market | unmatched — not counted | — | listed in scope as one of 7 contracts including parent contracts and interfaces | no |
-| Chainsafe 2nd audit (Oct-22).pdf | Auditor | ambiguous — not counted | 0x0aeb0b… (alternative) `0x0aeb0b...4a597c` — liveness: live (current_address_book_code)<br>0x310a26… (alternative) `0x310a26...3efe01` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| Chainsafe 2nd audit (Oct-22).pdf | MarketETHRouter | ambiguous — not counted | 0x85c21f… (alternative) `0x85c21f...0aaf4f` — liveness: live (current_address_book_code)<br>0x29babf… (alternative) `0x29babf...a10258` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Chainsafe 2nd audit (Oct-22).pdf | Auditor | ambiguous — not counted | 0x0aeb0b… (alternative) `0x0aeb0bcb919858c0a4dcec3eed879985034a597c` — liveness: live (current_address_book_code)<br>0x310a26… (alternative) `0x310a2694521f75c7b2b64b5937c16ce65c3efe01` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Chainsafe 2nd audit (Oct-22).pdf | MarketETHRouter | ambiguous — not counted | 0x85c21f… (alternative) `0x85c21fa8aee39891e115e2b28c3db2de5b0aaf4f` — liveness: live (current_address_book_code)<br>0x29babf… (alternative) `0x29babff3eba7b517a75109ea8fd6d1eab4a10258` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | Chainsafe 2nd audit (Oct-22).pdf | FixedLib | unmatched — not counted | — | mentioned in findings as a library in scope | no |
 | Chainsafe Interest Rate Model v2 (Mar-24).pdf | Market | unmatched — not counted | — | listed in scope as contracts/Market.sol | no |
 | Chainsafe Interest Rate Model v2 Diff (Mar-24).pdf | Market | unmatched — not counted | — | listed in scope as contracts/Market.sol | no |
@@ -464,7 +464,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Chainsafe Staking Contract (Aug-24).pdf | StakedEXA | unmatched — not counted | — | listed in scope and line-by-line review | no |
 | Chainsafe Staking Contract (Aug-24).pdf | RewardsController | unmatched — not counted | — | listed in scope | no |
 | Chainsafe Staking Contract (Aug-24).pdf | Pauser | unmatched — not counted | — | listed in scope | no |
-| Coinspect 1st audit (Nov-21).pdf | InterestRateModel | ambiguous — not counted | InterestRateModel (alternative) `0x406e73...4e35a4` — deployed 2025-11-13 22:08:51+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xf9b612...6380f2` — deployed 2025-11-13 22:09:47+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xe963cd...7453b7` — deployed 2025-11-13 22:10:45+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Coinspect 1st audit (Nov-21).pdf | InterestRateModel | ambiguous — not counted | InterestRateModel (alternative) `0x406e73c6eb2308e0557c031354c4a6f3374e35a4` — deployed 2025-11-13 22:08:51+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xf9b612ffe3fab24e74026d2b5d13cbcead6380f2` — deployed 2025-11-13 22:09:47+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xe963cdf1ec0bb86f009d764d6ee3feb6697453b7` — deployed 2025-11-13 22:10:45+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | Coinspect 1st audit (Nov-21).pdf | MockedChainlinkFeedRegistry | unmatched — not counted | — | listed in scope | no |
 | Coinspect 1st audit (Nov-21).pdf | ETokenHarness | unmatched — not counted | — | listed in scope | no |
 | Coinspect 1st audit (Nov-21).pdf | AuditorHarness | unmatched — not counted | — | listed in scope | no |
@@ -488,8 +488,8 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Coinspect 1st audit (Nov-21).pdf | DecimalMath | unmatched — not counted | — | listed in scope | no |
 | Coinspect 1st audit (Nov-21).pdf | Errors | unmatched — not counted | — | listed in scope | no |
 | Coinspect 1st audit (Nov-21).pdf | ExactlyOracle | unmatched — not counted | — | listed in scope | no |
-| Coinspect 1st audit (Nov-21).pdf | Auditor | ambiguous — not counted | 0x0aeb0b… (alternative) `0x0aeb0b...4a597c` — liveness: live (current_address_book_code)<br>0x310a26… (alternative) `0x310a26...3efe01` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| Coinspect 2nd audit (May-22).pdf | InterestRateModel | ambiguous — not counted | InterestRateModel (alternative) `0x406e73...4e35a4` — deployed 2025-11-13 22:08:51+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xf9b612...6380f2` — deployed 2025-11-13 22:09:47+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xe963cd...7453b7` — deployed 2025-11-13 22:10:45+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Coinspect 1st audit (Nov-21).pdf | Auditor | ambiguous — not counted | 0x0aeb0b… (alternative) `0x0aeb0bcb919858c0a4dcec3eed879985034a597c` — liveness: live (current_address_book_code)<br>0x310a26… (alternative) `0x310a2694521f75c7b2b64b5937c16ce65c3efe01` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Coinspect 2nd audit (May-22).pdf | InterestRateModel | ambiguous — not counted | InterestRateModel (alternative) `0x406e73c6eb2308e0557c031354c4a6f3374e35a4` — deployed 2025-11-13 22:08:51+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xf9b612ffe3fab24e74026d2b5d13cbcead6380f2` — deployed 2025-11-13 22:09:47+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xe963cdf1ec0bb86f009d764d6ee3feb6697453b7` — deployed 2025-11-13 22:10:45+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | Coinspect 2nd audit (May-22).pdf | FixedLenderETHRouter | unmatched — not counted | — | listed in scope with sha256 hash | no |
 | Coinspect 2nd audit (May-22).pdf | FixedLender | unmatched — not counted | — | listed in scope with sha256 hash | no |
 | Coinspect 2nd audit (May-22).pdf | IAuditor | unmatched — not counted | — | listed in scope with sha256 hash | no |
@@ -499,28 +499,28 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Coinspect 2nd audit (May-22).pdf | PoolLib | unmatched — not counted | — | listed in scope with sha256 hash | no |
 | Coinspect 2nd audit (May-22).pdf | TSUtils | unmatched — not counted | — | listed in scope with sha256 hash | no |
 | Coinspect 2nd audit (May-22).pdf | ExactlyOracle | unmatched — not counted | — | listed in scope with sha256 hash | no |
-| Coinspect 2nd audit (May-22).pdf | Auditor | ambiguous — not counted | 0x0aeb0b… (alternative) `0x0aeb0b...4a597c` — liveness: live (current_address_book_code)<br>0x310a26… (alternative) `0x310a26...3efe01` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| Coinspect 3rd audit (Oct-22).pdf | InterestRateModel | ambiguous — not counted | InterestRateModel (alternative) `0x406e73...4e35a4` — deployed 2025-11-13 22:08:51+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xf9b612...6380f2` — deployed 2025-11-13 22:09:47+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xe963cd...7453b7` — deployed 2025-11-13 22:10:45+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| Coinspect 3rd audit (Oct-22).pdf | MarketETHRouter | ambiguous — not counted | 0x85c21f… (alternative) `0x85c21f...0aaf4f` — liveness: live (current_address_book_code)<br>0x29babf… (alternative) `0x29babf...a10258` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Coinspect 2nd audit (May-22).pdf | Auditor | ambiguous — not counted | 0x0aeb0b… (alternative) `0x0aeb0bcb919858c0a4dcec3eed879985034a597c` — liveness: live (current_address_book_code)<br>0x310a26… (alternative) `0x310a2694521f75c7b2b64b5937c16ce65c3efe01` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Coinspect 3rd audit (Oct-22).pdf | InterestRateModel | ambiguous — not counted | InterestRateModel (alternative) `0x406e73c6eb2308e0557c031354c4a6f3374e35a4` — deployed 2025-11-13 22:08:51+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xf9b612ffe3fab24e74026d2b5d13cbcead6380f2` — deployed 2025-11-13 22:09:47+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xe963cdf1ec0bb86f009d764d6ee3feb6697453b7` — deployed 2025-11-13 22:10:45+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Coinspect 3rd audit (Oct-22).pdf | MarketETHRouter | ambiguous — not counted | 0x85c21f… (alternative) `0x85c21fa8aee39891e115e2b28c3db2de5b0aaf4f` — liveness: live (current_address_book_code)<br>0x29babf… (alternative) `0x29babff3eba7b517a75109ea8fd6d1eab4a10258` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | Coinspect 3rd audit (Oct-22).pdf | Previewer | unmatched — not counted | — | listed in scope with sha256 hash | no |
 | Coinspect 3rd audit (Oct-22).pdf | Market | unmatched — not counted | — | listed in scope with sha256 hash | no |
 | Coinspect 3rd audit (Oct-22).pdf | FixedLib | unmatched — not counted | — | listed in scope with sha256 hash | no |
 | Coinspect 3rd audit (Oct-22).pdf | import | unmatched — not counted | — | listed in scope with sha256 hash | no |
 | Coinspect 3rd audit (Oct-22).pdf | ExactlyOracle | unmatched — not counted | — | listed in scope with sha256 hash | no |
-| Coinspect 3rd audit (Oct-22).pdf | Auditor | ambiguous — not counted | 0x0aeb0b… (alternative) `0x0aeb0b...4a597c` — liveness: live (current_address_book_code)<br>0x310a26… (alternative) `0x310a26...3efe01` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| Coinspect 4th audit (Oct-22).pdf | Auditor | ambiguous — not counted | 0x0aeb0b… (alternative) `0x0aeb0b...4a597c` — liveness: live (current_address_book_code)<br>0x310a26… (alternative) `0x310a26...3efe01` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Coinspect 3rd audit (Oct-22).pdf | Auditor | ambiguous — not counted | 0x0aeb0b… (alternative) `0x0aeb0bcb919858c0a4dcec3eed879985034a597c` — liveness: live (current_address_book_code)<br>0x310a26… (alternative) `0x310a2694521f75c7b2b64b5937c16ce65c3efe01` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Coinspect 4th audit (Oct-22).pdf | Auditor | ambiguous — not counted | 0x0aeb0b… (alternative) `0x0aeb0bcb919858c0a4dcec3eed879985034a597c` — liveness: live (current_address_book_code)<br>0x310a26… (alternative) `0x310a2694521f75c7b2b64b5937c16ce65c3efe01` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | Coinspect 4th audit (Oct-22).pdf | PriceFeedWrapper | unmatched — not counted | — | mentioned in findings EXA-37 | no |
 | Coinspect 4th audit (Oct-22).pdf | MockStETH | unmatched — not counted | — | mentioned in finding EXA-39 | no |
-| Coinspect 5th audit (Mar-23).pdf | InterestRateModel | ambiguous — not counted | InterestRateModel (alternative) `0x406e73...4e35a4` — deployed 2025-11-13 22:08:51+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xf9b612...6380f2` — deployed 2025-11-13 22:09:47+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xe963cd...7453b7` — deployed 2025-11-13 22:10:45+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Coinspect 5th audit (Mar-23).pdf | InterestRateModel | ambiguous — not counted | InterestRateModel (alternative) `0x406e73c6eb2308e0557c031354c4a6f3374e35a4` — deployed 2025-11-13 22:08:51+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xf9b612ffe3fab24e74026d2b5d13cbcead6380f2` — deployed 2025-11-13 22:09:47+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xe963cdf1ec0bb86f009d764d6ee3feb6697453b7` — deployed 2025-11-13 22:10:45+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | Coinspect 5th audit (Mar-23).pdf | Market | unmatched — not counted | — | listed in scope as audited file | no |
 | Coinspect RewardsController 1st audit (Jan-23).pdf | RewardsController | unmatched — not counted | — | listed in scope section with sha256 hash | no |
 | Coinspect RewardsController 2nd audit (Feb-23).pdf | RewardsController | unmatched — not counted | — | Scope section states: 'The audit was done in two stages. Both phases dealt specifically with the file RewardsController.sol' | no |
 | Coinspect RewardsController 3rd audit (Mar-23).pdf | RewardsController | unmatched — not counted | — | listed in scope as the contract being audited | no |
 | Hashlock Installments Router and New Market Roles (Apr-24).pdf | Market | unmatched — not counted | — | listed in scope table | no |
 | Hashlock Installments Router and New Market Roles (Apr-24).pdf | InstallmentsRouter | unmatched — not counted | — | listed in scope table | no |
-| Hashlock Interest Rate Model v2 (Mar-24).pdf | InterestRateModel | ambiguous — not counted | InterestRateModel (alternative) `0x406e73...4e35a4` — deployed 2025-11-13 22:08:51+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xf9b612...6380f2` — deployed 2025-11-13 22:09:47+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xe963cd...7453b7` — deployed 2025-11-13 22:10:45+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Hashlock Interest Rate Model v2 (Mar-24).pdf | InterestRateModel | ambiguous — not counted | InterestRateModel (alternative) `0x406e73c6eb2308e0557c031354c4a6f3374e35a4` — deployed 2025-11-13 22:08:51+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xf9b612ffe3fab24e74026d2b5d13cbcead6380f2` — deployed 2025-11-13 22:09:47+03 — liveness: live (current_address_book_code)<br>InterestRateModel (alternative) `0xe963cdf1ec0bb86f009d764d6ee3feb6697453b7` — deployed 2025-11-13 22:10:45+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | Hashlock Interest Rate Model v2 (Mar-24).pdf | Market | unmatched — not counted | — | listed in scope | no |
-| OpenZeppelin EscrowedEXA (Oct-23).pdf | EscrowedExa | own contract | 0xbea586… (selected) `0xbea586...3fbc18` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| OpenZeppelin EscrowedEXA (Oct-23).pdf | EscrowedExa | own contract | 0xbea586… (selected) `0xbea586a167853adddef12818f264f1f9823fbc18` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Quantstamp Exa App Plugin (Mar-25).pdf | ExaAccountFactory | unmatched — not counted | — | — | no |
 | Quantstamp Exa App Plugin (Mar-25).pdf | ExaPlugin | unmatched — not counted | — | — | no |
 | Quantstamp Exa App Plugin (Mar-25).pdf | IExaAccount | unmatched — not counted | — | — | no |
@@ -536,7 +536,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Quantstamp Exa App WebAuthn Plugin (Jul-24).pdf | WebauthnOwnerPlugin | unmatched — not counted | — | — | no |
 | Sherlock Staking Contract (Aug-24).pdf | StakedEXA | unmatched — not counted | — | mentioned in scope and findings | no |
 | Sherlock Staking Contract (Aug-24).pdf | Market | unmatched — not counted | — | mentioned in scope and findings | no |
-| Sherlock Staking Contract (Aug-24).pdf | Auditor | ambiguous — not counted | 0x0aeb0b… (alternative) `0x0aeb0b...4a597c` — liveness: live (current_address_book_code)<br>0x310a26… (alternative) `0x310a26...3efe01` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Sherlock Staking Contract (Aug-24).pdf | Auditor | ambiguous — not counted | 0x0aeb0b… (alternative) `0x0aeb0bcb919858c0a4dcec3eed879985034a597c` — liveness: live (current_address_book_code)<br>0x310a26… (alternative) `0x310a2694521f75c7b2b64b5937c16ce65c3efe01` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | 2024-06-10-quantstamp.pdf | IWebauthnOwnerPlugin | unmatched — not counted | — | — | no |
 | 2024-06-10-quantstamp.pdf | OwnersLib | unmatched — not counted | — | — | no |
 | 2024-06-10-quantstamp.pdf | WebauthnModularAccountFactory | unmatched — not counted | — | — | no |
@@ -548,9 +548,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | `0x406e73...4e35a4` | InterestRateModel | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xe963cd...7453b7` | InterestRateModel | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xf9b612...6380f2` | InterestRateModel | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x406e73c6eb2308e0557c031354c4a6f3374e35a4` | InterestRateModel | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xe963cdf1ec0bb86f009d764d6ee3feb6697453b7` | InterestRateModel | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xf9b612ffe3fab24e74026d2b5d13cbcead6380f2` | InterestRateModel | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

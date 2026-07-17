@@ -59,19 +59,19 @@ The protocol comprises 2 functional families. Its contracts share 3 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AlpacaCore | unknown | ethereum | n/a | [`0xc7e5e9...3e5f27`](./contracts/ethereum-1/0xc7e5e9434f4a71e6db978bd65b4d61d3593e5f27/) | ⚠️ Unaudited |
-| AlpacaFarm | unknown | ethereum | n/a | [`0x217a7d...a15d97`](./contracts/ethereum-1/0x217a7d0ac6573b0f013e12f92b6d5b250fa15d97/) | ⚠️ Unaudited |
-| AlpacaPresaleV2 | unknown | ethereum | n/a | [`0x051192...95c1a9`](./contracts/ethereum-1/0x0511926471cdcf840c8145c1fbcbb0a8c495c1a9/) | ⚠️ Unaudited |
-| AlpacaRecycleBox | unknown | ethereum | n/a | [`0xe179b0...1d5687`](./contracts/ethereum-1/0xe179b0d51a88915bb35b86c072081452d91d5687/) | ⚠️ Unaudited |
-| AlpacaSquad | unknown | ethereum | n/a | [`0xe23a77...81605f`](./contracts/ethereum-1/0xe23a7741a5e9500f7a1de4b246d1f7f29f81605f/) | ⚠️ Unaudited |
-| AlpacaWearable | unknown | ethereum | n/a | [`0xdf003a...127ad2`](./contracts/ethereum-1/0xdf003a97fa6b3a14bd8c2ed4c331a9187e127ad2/) | ⚠️ Unaudited |
-| AlpaFireChamber | unknown | ethereum | n/a | [`0x741cee...33344a`](./contracts/ethereum-1/0x741cee6e4bd99df866ab0dd0d0c0b5ed7033344a/) | ⚠️ Unaudited |
-| AlpaReward | unknown | ethereum | n/a | [`0xdb48ec...ceb98d`](./contracts/ethereum-1/0xdb48ec20fcce2cc730f3b3bceafa456e54ceb98d/) | ⚠️ Unaudited |
-| AlpaSupplier | unknown | ethereum | n/a | [`0x14285e...cf5cd7`](./contracts/ethereum-1/0x14285e0c66379c0af1b1e8e9092f67a66ccf5cd7/) | ⚠️ Unaudited |
-| AlpaToken | unknown | ethereum | n/a | [`0x7ca440...17514a`](./contracts/ethereum-1/0x7ca4408137eb639570f8e647d9bd7b7e8717514a/) | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | ethereum | n/a | [`0x441f9e...f91eca`](./contracts/ethereum-1/0x441f9e2c89a343cefb390a8954b3b562f8f91eca/) | ⚠️ Unaudited |
-| WoolReward | unknown | ethereum | n/a | [`0x232f03...218ff0`](./contracts/ethereum-1/0x232f030747008d3ba5d51526f5966d8985218ff0/) | ⚠️ Unaudited |
-| WoolToken | unknown | ethereum | n/a | [`0x0fc998...a17f13`](./contracts/ethereum-1/0x0fc998c903dbcbe1d0826521b3a44dd23ba17f13/) | ⚠️ Unaudited |
+| AlpacaCore | unknown | ethereum | n/a | [`0xc7e5e9434f4a71e6db978bd65b4d61d3593e5f27`](./contracts/ethereum-1/0xc7e5e9434f4a71e6db978bd65b4d61d3593e5f27/) | ⚠️ Unaudited |
+| AlpacaFarm | unknown | ethereum | n/a | [`0x217a7d0ac6573b0f013e12f92b6d5b250fa15d97`](./contracts/ethereum-1/0x217a7d0ac6573b0f013e12f92b6d5b250fa15d97/) | ⚠️ Unaudited |
+| AlpacaPresaleV2 | unknown | ethereum | n/a | [`0x0511926471cdcf840c8145c1fbcbb0a8c495c1a9`](./contracts/ethereum-1/0x0511926471cdcf840c8145c1fbcbb0a8c495c1a9/) | ⚠️ Unaudited |
+| AlpacaRecycleBox | unknown | ethereum | n/a | [`0xe179b0d51a88915bb35b86c072081452d91d5687`](./contracts/ethereum-1/0xe179b0d51a88915bb35b86c072081452d91d5687/) | ⚠️ Unaudited |
+| AlpacaSquad | unknown | ethereum | n/a | [`0xe23a7741a5e9500f7a1de4b246d1f7f29f81605f`](./contracts/ethereum-1/0xe23a7741a5e9500f7a1de4b246d1f7f29f81605f/) | ⚠️ Unaudited |
+| AlpacaWearable | unknown | ethereum | n/a | [`0xdf003a97fa6b3a14bd8c2ed4c331a9187e127ad2`](./contracts/ethereum-1/0xdf003a97fa6b3a14bd8c2ed4c331a9187e127ad2/) | ⚠️ Unaudited |
+| AlpaFireChamber | unknown | ethereum | n/a | [`0x741cee6e4bd99df866ab0dd0d0c0b5ed7033344a`](./contracts/ethereum-1/0x741cee6e4bd99df866ab0dd0d0c0b5ed7033344a/) | ⚠️ Unaudited |
+| AlpaReward | unknown | ethereum | n/a | [`0xdb48ec20fcce2cc730f3b3bceafa456e54ceb98d`](./contracts/ethereum-1/0xdb48ec20fcce2cc730f3b3bceafa456e54ceb98d/) | ⚠️ Unaudited |
+| AlpaSupplier | unknown | ethereum | n/a | [`0x14285e0c66379c0af1b1e8e9092f67a66ccf5cd7`](./contracts/ethereum-1/0x14285e0c66379c0af1b1e8e9092f67a66ccf5cd7/) | ⚠️ Unaudited |
+| AlpaToken | unknown | ethereum | n/a | [`0x7ca4408137eb639570f8e647d9bd7b7e8717514a`](./contracts/ethereum-1/0x7ca4408137eb639570f8e647d9bd7b7e8717514a/) | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | ethereum | n/a | [`0x441f9e2c89a343cefb390a8954b3b562f8f91eca`](./contracts/ethereum-1/0x441f9e2c89a343cefb390a8954b3b562f8f91eca/) | ⚠️ Unaudited |
+| WoolReward | unknown | ethereum | n/a | [`0x232f030747008d3ba5d51526f5966d8985218ff0`](./contracts/ethereum-1/0x232f030747008d3ba5d51526f5966d8985218ff0/) | ⚠️ Unaudited |
+| WoolToken | unknown | ethereum | n/a | [`0x0fc998c903dbcbe1d0826521b3a44dd23ba17f13`](./contracts/ethereum-1/0x0fc998c903dbcbe1d0826521b3a44dd23ba17f13/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -102,18 +102,18 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xc7e5e9...3e5f27`](./contracts/ethereum-1/0xc7e5e9434f4a71e6db978bd65b4d61d3593e5f27/) | AlpacaCore | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x217a7d...a15d97`](./contracts/ethereum-1/0x217a7d0ac6573b0f013e12f92b6d5b250fa15d97/) | AlpacaFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x051192...95c1a9`](./contracts/ethereum-1/0x0511926471cdcf840c8145c1fbcbb0a8c495c1a9/) | AlpacaPresaleV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xe179b0...1d5687`](./contracts/ethereum-1/0xe179b0d51a88915bb35b86c072081452d91d5687/) | AlpacaRecycleBox | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xe23a77...81605f`](./contracts/ethereum-1/0xe23a7741a5e9500f7a1de4b246d1f7f29f81605f/) | AlpacaSquad | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xdf003a...127ad2`](./contracts/ethereum-1/0xdf003a97fa6b3a14bd8c2ed4c331a9187e127ad2/) | AlpacaWearable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x741cee...33344a`](./contracts/ethereum-1/0x741cee6e4bd99df866ab0dd0d0c0b5ed7033344a/) | AlpaFireChamber | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xdb48ec...ceb98d`](./contracts/ethereum-1/0xdb48ec20fcce2cc730f3b3bceafa456e54ceb98d/) | AlpaReward | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x14285e...cf5cd7`](./contracts/ethereum-1/0x14285e0c66379c0af1b1e8e9092f67a66ccf5cd7/) | AlpaSupplier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x7ca440...17514a`](./contracts/ethereum-1/0x7ca4408137eb639570f8e647d9bd7b7e8717514a/) | AlpaToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x232f03...218ff0`](./contracts/ethereum-1/0x232f030747008d3ba5d51526f5966d8985218ff0/) | WoolReward | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0fc998...a17f13`](./contracts/ethereum-1/0x0fc998c903dbcbe1d0826521b3a44dd23ba17f13/) | WoolToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc7e5e9434f4a71e6db978bd65b4d61d3593e5f27`](./contracts/ethereum-1/0xc7e5e9434f4a71e6db978bd65b4d61d3593e5f27/) | AlpacaCore | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x217a7d0ac6573b0f013e12f92b6d5b250fa15d97`](./contracts/ethereum-1/0x217a7d0ac6573b0f013e12f92b6d5b250fa15d97/) | AlpacaFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0511926471cdcf840c8145c1fbcbb0a8c495c1a9`](./contracts/ethereum-1/0x0511926471cdcf840c8145c1fbcbb0a8c495c1a9/) | AlpacaPresaleV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe179b0d51a88915bb35b86c072081452d91d5687`](./contracts/ethereum-1/0xe179b0d51a88915bb35b86c072081452d91d5687/) | AlpacaRecycleBox | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe23a7741a5e9500f7a1de4b246d1f7f29f81605f`](./contracts/ethereum-1/0xe23a7741a5e9500f7a1de4b246d1f7f29f81605f/) | AlpacaSquad | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xdf003a97fa6b3a14bd8c2ed4c331a9187e127ad2`](./contracts/ethereum-1/0xdf003a97fa6b3a14bd8c2ed4c331a9187e127ad2/) | AlpacaWearable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x741cee6e4bd99df866ab0dd0d0c0b5ed7033344a`](./contracts/ethereum-1/0x741cee6e4bd99df866ab0dd0d0c0b5ed7033344a/) | AlpaFireChamber | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xdb48ec20fcce2cc730f3b3bceafa456e54ceb98d`](./contracts/ethereum-1/0xdb48ec20fcce2cc730f3b3bceafa456e54ceb98d/) | AlpaReward | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x14285e0c66379c0af1b1e8e9092f67a66ccf5cd7`](./contracts/ethereum-1/0x14285e0c66379c0af1b1e8e9092f67a66ccf5cd7/) | AlpaSupplier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x7ca4408137eb639570f8e647d9bd7b7e8717514a`](./contracts/ethereum-1/0x7ca4408137eb639570f8e647d9bd7b7e8717514a/) | AlpaToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x232f030747008d3ba5d51526f5966d8985218ff0`](./contracts/ethereum-1/0x232f030747008d3ba5d51526f5966d8985218ff0/) | WoolReward | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0fc998c903dbcbe1d0826521b3a44dd23ba17f13`](./contracts/ethereum-1/0x0fc998c903dbcbe1d0826521b3a44dd23ba17f13/) | WoolToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

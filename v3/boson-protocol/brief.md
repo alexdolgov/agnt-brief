@@ -52,11 +52,11 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum, base
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x647fe0...10d616`, chain 10)
-- UnnamedContract (`0x9b3b07...7a43c9`, chain 137)
-- UnnamedContract (`0x219260...5f3c97`, chain 8453)
-- UnnamedContract (`0x54b334...9ba000`, chain 42161)
-- BosonToken (`0xc477d0...090de9`, chain 1)
+- UnnamedContract (`0x647fe0cca3df596ba414c8c600d441bb3d10d616`, chain 10)
+- UnnamedContract (`0x9b3b0703d392321ad24338ff1f846650437a43c9`, chain 137)
+- UnnamedContract (`0x2192607c3cba9ec3d490206d10d831e68e5f3c97`, chain 8453)
+- UnnamedContract (`0x54b334d68cf5382fee7fbbe496fcf1e76d9ba000`, chain 42161)
+- BosonToken (`0xc477d038d5420c6a9e0b031712f61c5120090de9`, chain 1)
 
 ## Contract Surface Quality
 
@@ -102,35 +102,35 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum, base
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AccessController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x9c8676...8afd40` | ⚠️ Unaudited |
-| AccountHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x4ba93f...4dbb06` | ⚠️ Unaudited |
-| AgentHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x8fa52a...c0d49c` | ⚠️ Unaudited |
-| BosonClientBeacon | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xfbe4ca...7ae5cc` | ⚠️ Unaudited |
-| BosonPriceDiscovery | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xd8c3b2...43aabd` | ⚠️ Unaudited |
-| BosonToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381411 | `0xc477d0...090de9` | ⚠️ Unaudited |
-| BosonVoucher | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xbee924...386869` | ⚠️ Unaudited |
-| BundleHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x588665...242610` | ⚠️ Unaudited |
-| BuyerHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x4aa238...cb30c9` | ⚠️ Unaudited |
-| ConfigHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x7e9152...623fbe` | ⚠️ Unaudited |
-| DiamondCutFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x3ce6a4...d068e9` | ⚠️ Unaudited |
-| DiamondLoupeFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xba596e...61382c` | ⚠️ Unaudited |
-| DisputeHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x625223...8362ff` | ⚠️ Unaudited |
-| DisputeResolverHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x8a7f02...347359` | ⚠️ Unaudited |
-| ERC165Facet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xb5e1d2...e6b294` | ⚠️ Unaudited |
-| ExchangeHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x4fa60c...6fce66` | ⚠️ Unaudited |
-| FundsHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x520751...57fa90` | ⚠️ Unaudited |
-| GroupHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x85a52d...f83008` | ⚠️ Unaudited |
-| MetaTransactionsHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xab9c0f...640b50` | ⚠️ Unaudited |
-| OfferHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x5fd6b1...6c1011` | ⚠️ Unaudited |
-| OrchestrationHandlerFacet1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x794df5...0583e3` | ⚠️ Unaudited |
-| OrchestrationHandlerFacet2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xa0d187...9ec397` | ⚠️ Unaudited |
-| PauseHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x5f7d1a...d51c5b` | ⚠️ Unaudited |
-| PriceDiscoveryHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x25ed04...9cf72c` | ⚠️ Unaudited |
-| ProtocolDiamond | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x59a4c1...e18cb5` | ⚠️ Unaudited |
-| ProtocolInitializationHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xd624d2...7e471c` | ⚠️ Unaudited |
-| SellerHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xe282ff...b69d83` | ⚠️ Unaudited |
-| SequentialCommitHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x208e11...484f69` | ⚠️ Unaudited |
-| TwinHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xe45a58...f1ae61` | ⚠️ Unaudited |
+| AccessController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x9c867632dfe6b70d83dfe7865cf8510c168afd40` | ⚠️ Unaudited |
+| AccountHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x4ba93f34b174ed520eb8ac472c35defe524dbb06` | ⚠️ Unaudited |
+| AgentHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x8fa52a7d571146657157ba1e2d15f55796c0d49c` | ⚠️ Unaudited |
+| BosonClientBeacon | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xfbe4ca60e612e46809ad181466d178aa697ae5cc` | ⚠️ Unaudited |
+| BosonPriceDiscovery | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xd8c3b2232b3d597156148f757bb2bd665843aabd` | ⚠️ Unaudited |
+| BosonToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381411 | `0xc477d038d5420c6a9e0b031712f61c5120090de9` | ⚠️ Unaudited |
+| BosonVoucher | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xbee92440ab699611e03b81fca3f1107602386869` | ⚠️ Unaudited |
+| BundleHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x588665499ecc0cc9b6924275359f1d279a242610` | ⚠️ Unaudited |
+| BuyerHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x4aa238ef21737e138c4f7d4d722f55680ccb30c9` | ⚠️ Unaudited |
+| ConfigHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x7e91527ed433761acd674d6acda1afd6b0623fbe` | ⚠️ Unaudited |
+| DiamondCutFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x3ce6a434dad2ace6c8dbec6dc007d6a8fad068e9` | ⚠️ Unaudited |
+| DiamondLoupeFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xba596ee5c051faf6b263d457835e65a26661382c` | ⚠️ Unaudited |
+| DisputeHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x6252236d213a80a67c85a48ec48d38245c8362ff` | ⚠️ Unaudited |
+| DisputeResolverHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x8a7f0260ed956f8a51193672f26d9b9a31347359` | ⚠️ Unaudited |
+| ERC165Facet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xb5e1d2c4cc71d44a601efc94fe68c9202ce6b294` | ⚠️ Unaudited |
+| ExchangeHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x4fa60c62147c3732baa7e9abba8d7017dd6fce66` | ⚠️ Unaudited |
+| FundsHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x52075179452377da8264e3525f71c9099257fa90` | ⚠️ Unaudited |
+| GroupHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x85a52d353027e28739f57a212324ccd05ef83008` | ⚠️ Unaudited |
+| MetaTransactionsHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xab9c0f0eba44f9e1b383aa5dee83e06316640b50` | ⚠️ Unaudited |
+| OfferHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x5fd6b187e800bafa53bdee18619a8e828a6c1011` | ⚠️ Unaudited |
+| OrchestrationHandlerFacet1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x794df5a4d6276c06035f68c3d906afb9e00583e3` | ⚠️ Unaudited |
+| OrchestrationHandlerFacet2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xa0d1872bfa6031a94ad2339a81bf9c99719ec397` | ⚠️ Unaudited |
+| PauseHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x5f7d1a252ea613fb5b4bdf45a68d4bad9ad51c5b` | ⚠️ Unaudited |
+| PriceDiscoveryHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x25ed04c326a89b67c66fa8aafc8827770a9cf72c` | ⚠️ Unaudited |
+| ProtocolDiamond | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x59a4c19b55193d5a2ead0065c54af4d516e18cb5` | ⚠️ Unaudited |
+| ProtocolInitializationHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xd624d257ff6e435fdf9a05ba21ab270fdb7e471c` | ⚠️ Unaudited |
+| SellerHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xe282ff84bd704504057eaf78ac34e4a991b69d83` | ⚠️ Unaudited |
+| SequentialCommitHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x208e1180211959c9caf9305ff725aa5625484f69` | ⚠️ Unaudited |
+| TwinHandlerFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xe45a5828c39d14fb854526426c70547c9df1ae61` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -150,10 +150,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-381412 | `0x647fe0...10d616` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-381413 | `0x9b3b07...7a43c9` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-381415 | `0x219260...5f3c97` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381414 | `0x54b334...9ba000` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-381412 | `0x647fe0cca3df596ba414c8c600d441bb3d10d616` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-381413 | `0x9b3b0703d392321ad24338ff1f846650437a43c9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-381415 | `0x2192607c3cba9ec3d490206d10d831e68e5f3c97` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381414 | `0x54b334d68cf5382fee7fbbe496fcf1e76d9ba000` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -179,7 +179,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0xc477d0...090de9` | BosonToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xc477d038d5420c6a9e0b031712f61c5120090de9` | BosonToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -54,21 +54,21 @@ The pinned logic-topography run contains 10 contract row(s) across blast, canto,
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xaab174...3f6194`, chain 81457)
-- UnnamedContract (`0xd83ef4...7e0362`, chain 81457)
-- UnnamedContract (`0x62223e...0d6ddf`, chain 534352)
-- UnnamedContract (`0x70b161...e9dc4f`, chain 534352)
-- UnnamedContract (`0xc2c301...2f3ae3`, chain 534352)
-- UnnamedContract (`0xed5535...b4c4e4`, chain 534352)
-- CrocSwapDex (`0xaaaaaa...1fb958`, chain 81457)
-- CrocSwapDex (`0xaaaaaa...a74106`, chain 534352)
-- CrocSwapRouter (`0xfb5f26...5fd1fc`, chain 534352)
-- TimelockAccepts (`0x19d005...2dee94`, chain 81457)
-- UnnamedContract (`0x79cf6e...7ef6e9`, chain 1923)
-- UnnamedContract (`0x983a06...eb1038`, chain 1923)
-- UnnamedContract (`0xaaaaaa...3bf24d`, chain 1923)
-- UnnamedContract (`0xaab174...3f6194`, chain 1923)
-- UnnamedContract (`0xd83ef4...7e0362`, chain 1923)
+- UnnamedContract (`0xaab17419f062bb28cdbe82f9fc05e7c47c3f6194`, chain 81457)
+- UnnamedContract (`0xd83ef4d0e968a96329ac297bbf049cddac7e0362`, chain 81457)
+- UnnamedContract (`0x62223e90605845cf5cc6dae6e0de4cda130d6ddf`, chain 534352)
+- UnnamedContract (`0x70b161f2f0a18bd1865021f25f9e895021e9dc4f`, chain 534352)
+- UnnamedContract (`0xc2c301759b5e0c385a38e678014868a33e2f3ae3`, chain 534352)
+- UnnamedContract (`0xed5535c6237f72bd9b4fdeaa3b6d8d9998b4c4e4`, chain 534352)
+- CrocSwapDex (`0xaaaaaaaaffe404ee9433eef0094b6382d81fb958`, chain 81457)
+- CrocSwapDex (`0xaaaaaaaacb71bf2c8cae522ea5fa455571a74106`, chain 534352)
+- CrocSwapRouter (`0xfb5f26851e03449a0403ca945ebb4201415fd1fc`, chain 534352)
+- TimelockAccepts (`0x19d005f3d4a9c5b0211457339dda9822dc2dee94`, chain 81457)
+- UnnamedContract (`0x79cf6e6af136b04c145f330509ad547b0d7ef6e9`, chain 1923)
+- UnnamedContract (`0x983a06261ae018fefa16e1e95c7fda13a2eb1038`, chain 1923)
+- UnnamedContract (`0xaaaaaaaa82812f0a1f274016514ba2ca933bf24d`, chain 1923)
+- UnnamedContract (`0xaab17419f062bb28cdbe82f9fc05e7c47c3f6194`, chain 1923)
+- UnnamedContract (`0xd83ef4d0e968a96329ac297bbf049cddac7e0362`, chain 1923)
 
 ## Contract Surface Quality
 
@@ -115,23 +115,23 @@ The pinned logic-topography run contains 10 contract row(s) across blast, canto,
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ColdPath | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 2 deployments: blast `0x70b161...e9dc4f`; blast `0x852c3a...0e9915` | ⚠️ Unaudited |
-| CrocImpact | unknown | project_anchor | own_supporting | 0 | blast | unit-226614 | `0x6a699a...5efdb9` | ⚠️ Unaudited |
-| CrocPolicy | unknown | project_anchor | own_supporting | 0 | blast | unit-226613 | `0x503e3d...8c162c` | ⚠️ Unaudited |
-| CrocQuery | unknown | project_anchor | own_supporting | 0 | blast | unit-226615 | `0xa3bd3b...36a8a7` | ⚠️ Unaudited |
-| CrocSwapDex | unknown | project_anchor | own_supporting | 0 | scroll | unit-226608 | `0xaaaaaa...a74106` | ⚠️ Unaudited |
-| CrocSwapRouter | adapter | project_anchor | own_supporting | 0 | scroll | unit-226611 | `0xfb5f26...5fd1fc` | ⚠️ Unaudited |
-| GnosisSafeL2 | governance | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | blast | unit-226620 | `0xc73c8c...1e36ed` | ⚠️ Unaudited |
-| HotProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x6050cf...d5bb86` | ⚠️ Unaudited |
-| HotProxy | unknown | project_anchor | own_supporting | 1 | blast | unit-226621 | 2 deployments: blast `0x79cf6e...7ef6e9`; blast `0xaaaaaa...1fb958` | ⚠️ Unaudited |
-| KnockoutFlagPath | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 2 deployments: blast `0xd54874...1dcdc1`; blast `0xe3150c...fe0bfe` | ⚠️ Unaudited |
-| KnockoutLiqPath | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 2 deployments: blast `0x67231c...6a53aa`; blast `0x6e2625...03132f` | ⚠️ Unaudited |
-| LongPath | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 2 deployments: blast `0x07ec4a...65cfdd`; blast `0x646929...d93fa9` | ⚠️ Unaudited |
-| MicroPaths | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 2 deployments: blast `0x8296b2...1d1534`; blast `0xc58f7a...220066` | ⚠️ Unaudited |
-| TimelockAccepts | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | blast | unit-226612 | `0x19d005...2dee94` | ⚠️ Unaudited |
-| TimelockAccepts | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x786fbc...71eb8f` | ⚠️ Unaudited |
-| WarmPath | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-226619 | `0xaaaaaa...34f688` | ⚠️ Unaudited |
-| WarmPath | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 2 deployments: blast `0x62223e...0d6ddf`; blast `0x99f213...796ca5` | ⚠️ Unaudited |
+| ColdPath | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 2 deployments: blast `0x70b161f2f0a18bd1865021f25f9e895021e9dc4f`; blast `0x852c3a00162efdbce7e5bee4dfe065116d0e9915` | ⚠️ Unaudited |
+| CrocImpact | unknown | project_anchor | own_supporting | 0 | blast | unit-226614 | `0x6a699ab45adce02891e6115b81dfb46caa5efdb9` | ⚠️ Unaudited |
+| CrocPolicy | unknown | project_anchor | own_supporting | 0 | blast | unit-226613 | `0x503e3dfddd22d1c4a9787d2dac8643afc58c162c` | ⚠️ Unaudited |
+| CrocQuery | unknown | project_anchor | own_supporting | 0 | blast | unit-226615 | `0xa3bd3be19012de72190c885fb270beb93e36a8a7` | ⚠️ Unaudited |
+| CrocSwapDex | unknown | project_anchor | own_supporting | 0 | scroll | unit-226608 | `0xaaaaaaaacb71bf2c8cae522ea5fa455571a74106` | ⚠️ Unaudited |
+| CrocSwapRouter | adapter | project_anchor | own_supporting | 0 | scroll | unit-226611 | `0xfb5f26851e03449a0403ca945ebb4201415fd1fc` | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | blast | unit-226620 | `0xc73c8c60ea7d7f4338f9a8542927f4f1471e36ed` | ⚠️ Unaudited |
+| HotProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x6050cf4b9125c81dbccb5d662131d4de04d5bb86` | ⚠️ Unaudited |
+| HotProxy | unknown | project_anchor | own_supporting | 1 | blast | unit-226621 | 2 deployments: blast `0x79cf6e6af136b04c145f330509ad547b0d7ef6e9`; blast `0xaaaaaaaaffe404ee9433eef0094b6382d81fb958` | ⚠️ Unaudited |
+| KnockoutFlagPath | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 2 deployments: blast `0xd54874d2a5715d9d4ccd32e1c6151ac8d51dcdc1`; blast `0xe3150c65446dc05505ac33b51d742e9458fe0bfe` | ⚠️ Unaudited |
+| KnockoutLiqPath | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 2 deployments: blast `0x67231c7db63e5d7378596aadd6ba69345e6a53aa`; blast `0x6e26253238becf5e7099cbe2e74cbf378d03132f` | ⚠️ Unaudited |
+| LongPath | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 2 deployments: blast `0x07ec4ad8478d667e5cad4e4601879cd5ae65cfdd`; blast `0x646929453e753565467f330110850885ead93fa9` | ⚠️ Unaudited |
+| MicroPaths | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 2 deployments: blast `0x8296b24386b85471af51ee4bfe6166df1f1d1534`; blast `0xc58f7a96a3a8e82da0747a6e1411c3a531220066` | ⚠️ Unaudited |
+| TimelockAccepts | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | blast | unit-226612 | `0x19d005f3d4a9c5b0211457339dda9822dc2dee94` | ⚠️ Unaudited |
+| TimelockAccepts | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x786fbc62e881ba3d933058148514278d2071eb8f` | ⚠️ Unaudited |
+| WarmPath | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-226619 | `0xaaaaaaaaa24eeeb8d57d431224f73832bc34f688` | ⚠️ Unaudited |
+| WarmPath | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 2 deployments: blast `0x62223e90605845cf5cc6dae6e0de4cda130d6ddf`; blast `0x99f213608941b6116e8f1fab1908ddb33d796ca5` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -151,28 +151,28 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-226592 | `0x0b6cd0...0b68a3` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-226593 | `0x3e3edd...94c0d0` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-226594 | `0x41114a...38cb7b` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-226595 | `0x533e16...278035` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-226596 | `0x7237c1...4962b7` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-226597 | `0x9facdc...503a6e` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-226598 | `0xa3e58b...2efed2` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-226599 | `0xca0092...7b6b56` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-226600 | `0xdbd8d5...62dac3` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | swellchain | unit-226601 | `0x79cf6e...7ef6e9` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | swellchain | unit-226602 | `0x983a06...eb1038` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | swellchain | unit-226603 | `0xaaaaaa...3bf24d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | swellchain | unit-226604 | `0xaab174...3f6194` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | swellchain | unit-226605 | `0xd83ef4...7e0362` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | canto | n/a | 2 deployments: swellchain `0xaaaaaa...237d85`; canto `0x9290c8...793618` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x754eef...928285` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-226616 | `0xaab174...3f6194` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-226618 | `0xd83ef4...7e0362` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-226606 | `0x62223e...0d6ddf` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-226607 | `0x70b161...e9dc4f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-226609 | `0xc2c301...2f3ae3` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-226610 | `0xed5535...b4c4e4` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-226592 | `0x0b6cd0ecb176cb39ad99b3a0e4294167a80b68a3` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-226593 | `0x3e3edd3ed7621891e574e5d7f47b1f30a994c0d0` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-226594 | `0x41114a13230625a2735faa7183e528ed2538cb7b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-226595 | `0x533e164ded63f4c55e83e1f409bdf2bac5278035` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-226596 | `0x7237c120fca2081f1a36ab933b065389174962b7` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-226597 | `0x9facdcfb3b58d85d0440af292d64480ad2503a6e` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-226598 | `0xa3e58b0cb05447398358b6c59e4b2465342efed2` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-226599 | `0xca00926b6190c2c59336e73f02569c356d7b6b56` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-226600 | `0xdbd8d583a18c99e7f5191351e6e739af8e62dac3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | swellchain | unit-226601 | `0x79cf6e6af136b04c145f330509ad547b0d7ef6e9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | swellchain | unit-226602 | `0x983a06261ae018fefa16e1e95c7fda13a2eb1038` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | swellchain | unit-226603 | `0xaaaaaaaa82812f0a1f274016514ba2ca933bf24d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | swellchain | unit-226604 | `0xaab17419f062bb28cdbe82f9fc05e7c47c3f6194` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | swellchain | unit-226605 | `0xd83ef4d0e968a96329ac297bbf049cddac7e0362` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | canto | n/a | 2 deployments: swellchain `0xaaaaaaaa81a99d2a05ee428ec7a1d8a3c2237d85`; canto `0x9290c893ce949fe13ef3355660d07de0fb793618` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x754eef5862082607184e7a3ab08cea76ef928285` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-226616 | `0xaab17419f062bb28cdbe82f9fc05e7c47c3f6194` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-226618 | `0xd83ef4d0e968a96329ac297bbf049cddac7e0362` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-226606 | `0x62223e90605845cf5cc6dae6e0de4cda130d6ddf` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-226607 | `0x70b161f2f0a18bd1865021f25f9e895021e9dc4f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-226609 | `0xc2c301759b5e0c385a38e678014868a33e2f3ae3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-226610 | `0xed5535c6237f72bd9b4fdeaa3b6d8d9998b4c4e4` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -198,7 +198,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 |---|---|---|---|---|---|
 | QuantstampV1.pdf | MultiPath | unmatched — not counted | — | listed in findings | no |
 | QuantstampV1.pdf | WarmPath | unmatched — not counted | — | listed in findings | no |
-| QuantstampV1.pdf | CrocSwapDex | ambiguous — not counted | CrocSwapDex (proxy) (alternative) `0xaaaaaa...1fb958` — deployed 2024-02-29 05:42:09+03 — liveness: live (code_present_context)<br>UnnamedContract (alternative) `0xaaaaaa...3bf24d` — liveness: live (current_address_book_code)<br>CrocSwapDex (alternative) `0xaaaaaa...a74106` — deployed 2023-10-24 19:12:36+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| QuantstampV1.pdf | CrocSwapDex | ambiguous — not counted | CrocSwapDex (proxy) (alternative) `0xaaaaaaaaffe404ee9433eef0094b6382d81fb958` — deployed 2024-02-29 05:42:09+03 — liveness: live (code_present_context)<br>UnnamedContract (alternative) `0xaaaaaaaa82812f0a1f274016514ba2ca933bf24d` — liveness: live (current_address_book_code)<br>CrocSwapDex (alternative) `0xaaaaaaaacb71bf2c8cae522ea5fa455571a74106` — deployed 2023-10-24 19:12:36+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | QuantstampV1.pdf | AgentMask | unmatched — not counted | — | listed in findings | no |
 | QuantstampV1.pdf | ColdPath | unmatched — not counted | — | listed in findings | no |
 | QuantstampV1.pdf | PoolRegistry | unmatched — not counted | — | listed in findings | no |
@@ -209,7 +209,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | QuantstampV1.pdf | LiquidityMath | unmatched — not counted | — | listed in findings | no |
 | QuantstampV1.pdf | DepositDesk | unmatched — not counted | — | listed in findings | no |
 | QuantstampV1.pdf | SettleLayer | unmatched — not counted | — | listed in findings | no |
-| QuantstampV1.pdf | CrocPolicy | ambiguous — not counted | 0x70b161… (alternative) `0x70b161...e9dc4f` — liveness: live (current_address_book_code)<br>UnnamedContract (alternative) `0x79cf6e...7ef6e9` — liveness: live (current_address_book_code)<br>CrocPolicy (alternative) `0x503e3d...8c162c` — deployed 2024-02-29 05:43:01+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| QuantstampV1.pdf | CrocPolicy | ambiguous — not counted | 0x70b161… (alternative) `0x70b161f2f0a18bd1865021f25f9e895021e9dc4f` — liveness: live (current_address_book_code)<br>UnnamedContract (alternative) `0x79cf6e6af136b04c145f330509ad547b0d7ef6e9` — liveness: live (current_address_book_code)<br>CrocPolicy (alternative) `0x503e3dfddd22d1c4a9787d2dac8643afc58c162c` — deployed 2024-02-29 05:43:01+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | QuantstampV1.pdf | FixedPoint | unmatched — not counted | — | listed in findings | no |
 | QuantstampV1.pdf | HotPath | unmatched — not counted | — | listed in findings | no |
 | QuantstampV1.pdf | LongPath | unmatched — not counted | — | listed in findings | no |
@@ -246,13 +246,13 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | QuantstampV1.pdf | ProtocolAccount | unmatched — not counted | — | listed in findings | no |
 | QuantstampV1.pdf | CrocEvents | unmatched — not counted | — | listed in findings | no |
 | QuantstampV1.pdf | CrocLpErc20 | unmatched — not counted | — | listed in findings | no |
-| QuantstampV1.pdf | CrocQuery | ambiguous — not counted | 0x62223e… (alternative) `0x62223e...0d6ddf` — liveness: live (current_address_book_code)<br>UnnamedContract (alternative) `0xaab174...3f6194` — liveness: live (current_address_book_code)<br>CrocQuery (alternative) `0xa3bd3b...36a8a7` — deployed 2024-02-29 05:45:29+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| QuantstampV1.pdf | CrocQuery | ambiguous — not counted | 0x62223e… (alternative) `0x62223e90605845cf5cc6dae6e0de4cda130d6ddf` — liveness: live (current_address_book_code)<br>UnnamedContract (alternative) `0xaab17419f062bb28cdbe82f9fc05e7c47c3f6194` — liveness: live (current_address_book_code)<br>CrocQuery (alternative) `0xa3bd3be19012de72190c885fb270beb93e36a8a7` — deployed 2024-02-29 05:45:29+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | QuantstampV1.pdf | ICrocLpConduit | unmatched — not counted | — | listed in findings | no |
 | QuantstampV1.pdf | ICrocMinion | unmatched — not counted | — | listed in findings | no |
 | QuantstampV1.pdf | ICrocPermitOracle | unmatched — not counted | — | listed in findings | no |
 | QuantstampV1.pdf | ICrocVirtualToken | unmatched — not counted | — | listed in findings | no |
 | QuantstampV1.pdf | Directives | unmatched — not counted | — | listed in findings | no |
-| QuantstampV2.pdf | CrocSwapDex | ambiguous — not counted | CrocSwapDex (proxy) (alternative) `0xaaaaaa...1fb958` — deployed 2024-02-29 05:42:09+03 — liveness: live (code_present_context)<br>UnnamedContract (alternative) `0xaaaaaa...3bf24d` — liveness: live (current_address_book_code)<br>CrocSwapDex (alternative) `0xaaaaaa...a74106` — deployed 2023-10-24 19:12:36+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| QuantstampV2.pdf | CrocSwapDex | ambiguous — not counted | CrocSwapDex (proxy) (alternative) `0xaaaaaaaaffe404ee9433eef0094b6382d81fb958` — deployed 2024-02-29 05:42:09+03 — liveness: live (code_present_context)<br>UnnamedContract (alternative) `0xaaaaaaaa82812f0a1f274016514ba2ca933bf24d` — liveness: live (current_address_book_code)<br>CrocSwapDex (alternative) `0xaaaaaaaacb71bf2c8cae522ea5fa455571a74106` — deployed 2023-10-24 19:12:36+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | QuantstampV2.pdf | CrocEvents | unmatched — not counted | — | listed in scope | no |
 | QuantstampV2.pdf | ICrocLpConduit | unmatched — not counted | — | listed in scope | no |
 | QuantstampV2.pdf | ICrocMinion | unmatched — not counted | — | listed in scope | no |
@@ -268,9 +268,9 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | QuantstampV2.pdf | HotPath | unmatched — not counted | — | listed in scope | no |
 | QuantstampV2.pdf | ColdPath | unmatched — not counted | — | listed in scope | no |
 | QuantstampV2.pdf | MicroPaths | unmatched — not counted | — | listed in scope | no |
-| QuantstampV2.pdf | CrocPolicy | ambiguous — not counted | 0x70b161… (alternative) `0x70b161...e9dc4f` — liveness: live (current_address_book_code)<br>UnnamedContract (alternative) `0x79cf6e...7ef6e9` — liveness: live (current_address_book_code)<br>CrocPolicy (alternative) `0x503e3d...8c162c` — deployed 2024-02-29 05:43:01+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| QuantstampV2.pdf | CrocQuery | ambiguous — not counted | 0x62223e… (alternative) `0x62223e...0d6ddf` — liveness: live (current_address_book_code)<br>UnnamedContract (alternative) `0xaab174...3f6194` — liveness: live (current_address_book_code)<br>CrocQuery (alternative) `0xa3bd3b...36a8a7` — deployed 2024-02-29 05:45:29+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| QuantstampV2.pdf | CrocImpact | ambiguous — not counted | CrocImpact (alternative) `0x6a699a...5efdb9` — deployed 2024-02-29 05:45:37+03 — liveness: live (current_address_book_code)<br>UnnamedContract (alternative) `0xd83ef4...7e0362` — liveness: live (current_address_book_code)<br>0xc2c301… (alternative) `0xc2c301...2f3ae3` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| QuantstampV2.pdf | CrocPolicy | ambiguous — not counted | 0x70b161… (alternative) `0x70b161f2f0a18bd1865021f25f9e895021e9dc4f` — liveness: live (current_address_book_code)<br>UnnamedContract (alternative) `0x79cf6e6af136b04c145f330509ad547b0d7ef6e9` — liveness: live (current_address_book_code)<br>CrocPolicy (alternative) `0x503e3dfddd22d1c4a9787d2dac8643afc58c162c` — deployed 2024-02-29 05:43:01+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| QuantstampV2.pdf | CrocQuery | ambiguous — not counted | 0x62223e… (alternative) `0x62223e90605845cf5cc6dae6e0de4cda130d6ddf` — liveness: live (current_address_book_code)<br>UnnamedContract (alternative) `0xaab17419f062bb28cdbe82f9fc05e7c47c3f6194` — liveness: live (current_address_book_code)<br>CrocQuery (alternative) `0xa3bd3be19012de72190c885fb270beb93e36a8a7` — deployed 2024-02-29 05:45:29+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| QuantstampV2.pdf | CrocImpact | ambiguous — not counted | CrocImpact (alternative) `0x6a699ab45adce02891e6115b81dfb46caa5efdb9` — deployed 2024-02-29 05:45:37+03 — liveness: live (current_address_book_code)<br>UnnamedContract (alternative) `0xd83ef4d0e968a96329ac297bbf049cddac7e0362` — liveness: live (current_address_book_code)<br>0xc2c301… (alternative) `0xc2c301759b5e0c385a38e678014868a33e2f3ae3` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | QuantstampV2.pdf | CrocLpErc20 | unmatched — not counted | — | listed in scope | no |
 | QuantstampV2.pdf | KnockoutLiq | unmatched — not counted | — | listed in scope | no |
 | QuantstampV2.pdf | LiquidityMath | unmatched — not counted | — | listed in scope | no |
@@ -317,12 +317,12 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| blast | `0x6a699a...5efdb9` | CrocImpact | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | `0x503e3d...8c162c` | CrocPolicy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | `0xa3bd3b...36a8a7` | CrocQuery | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| scroll | `0xaaaaaa...a74106` | CrocSwapDex | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| scroll | `0xfb5f26...5fd1fc` | CrocSwapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | `0x79cf6e...7ef6e9` | HotProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | `0x6a699ab45adce02891e6115b81dfb46caa5efdb9` | CrocImpact | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | `0x503e3dfddd22d1c4a9787d2dac8643afc58c162c` | CrocPolicy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | `0xa3bd3be19012de72190c885fb270beb93e36a8a7` | CrocQuery | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| scroll | `0xaaaaaaaacb71bf2c8cae522ea5fa455571a74106` | CrocSwapDex | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| scroll | `0xfb5f26851e03449a0403ca945ebb4201415fd1fc` | CrocSwapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | `0x79cf6e6af136b04c145f330509ad547b0d7ef6e9` | HotProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -57,8 +57,8 @@ The pinned logic-topography run contains 1 contract row(s) across bsc. Structura
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xaf5dd8...4f5812`, chain 56)
-- InterchainToken (`0x2f3e41...668d6b`, chain 56)
+- UnnamedContract (`0xaf5dd88328d73916231a9e6a64bf0029354f5812`, chain 56)
+- InterchainToken (`0x2f3e415f56ba07b444bc68ed037377de1a668d6b`, chain 56)
 
 ## Contract Surface Quality
 
@@ -104,7 +104,7 @@ The pinned logic-topography run contains 1 contract row(s) across bsc. Structura
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| InterchainToken | unknown | project_anchor | own_supporting | 0 | bsc | unit-239855 | `0x2f3e41...668d6b` | ⚠️ Unaudited |
+| InterchainToken | unknown | project_anchor | own_supporting | 0 | bsc | unit-239855 | `0x2f3e415f56ba07b444bc68ed037377de1a668d6b` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -124,7 +124,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-239856 | `0xaf5dd8...4f5812` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-239856 | `0xaf5dd88328d73916231a9e6a64bf0029354f5812` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -200,7 +200,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | `0x2f3e41...668d6b` | InterchainToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x2f3e415f56ba07b444bc68ed037377de1a668d6b` | InterchainToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

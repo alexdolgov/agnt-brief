@@ -59,15 +59,15 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| KodiakToken | token | berachain | n/a | [`0xc0d1ac...7e21df`](./contracts/berachain-80094/0xc0d1ac00a30fa4e30e44afc7313d6312c87e21df/) | ✅ Audited |
-| XKodiakToken | token | berachain | n/a | [`0x040ea7...c04677`](./contracts/berachain-80094/0x040ea7d4b559357425407fdfc3c774c5dfc04677/) | ✅ Audited |
+| KodiakToken | token | berachain | n/a | [`0xc0d1ac00a30fa4e30e44afc7313d6312c87e21df`](./contracts/berachain-80094/0xc0d1ac00a30fa4e30e44afc7313d6312c87e21df/) | ✅ Audited |
+| XKodiakToken | token | berachain | n/a | [`0x040ea7d4b559357425407fdfc3c774c5dfc04677`](./contracts/berachain-80094/0x040ea7d4b559357425407fdfc3c774c5dfc04677/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| KodiakRewards | unknown | berachain | n/a | [`0xbc3dfe...eaf6af`](./contracts/berachain-80094/0xbc3dfe5ee6bce8b301a3661b3528a5c605eaf6af/) | ⚠️ Unaudited |
-| TokenMigrator | token | berachain | n/a | [`0x88eb43...de8210`](./contracts/berachain-80094/0x88eb43086eddf189856af7b00a09259598de8210/) | ⚠️ Unaudited |
+| KodiakRewards | unknown | berachain | n/a | [`0xbc3dfe5ee6bce8b301a3661b3528a5c605eaf6af`](./contracts/berachain-80094/0xbc3dfe5ee6bce8b301a3661b3528a5c605eaf6af/) | ⚠️ Unaudited |
+| TokenMigrator | token | berachain | n/a | [`0x88eb43086eddf189856af7b00a09259598de8210`](./contracts/berachain-80094/0x88eb43086eddf189856af7b00a09259598de8210/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -105,8 +105,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| berachain | [`0xbc3dfe...eaf6af`](./contracts/berachain-80094/0xbc3dfe5ee6bce8b301a3661b3528a5c605eaf6af/) | KodiakRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | [`0x88eb43...de8210`](./contracts/berachain-80094/0x88eb43086eddf189856af7b00a09259598de8210/) | TokenMigrator | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0xbc3dfe5ee6bce8b301a3661b3528a5c605eaf6af`](./contracts/berachain-80094/0xbc3dfe5ee6bce8b301a3661b3528a5c605eaf6af/) | KodiakRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0x88eb43086eddf189856af7b00a09259598de8210`](./contracts/berachain-80094/0x88eb43086eddf189856af7b00a09259598de8210/) | TokenMigrator | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -52,10 +52,10 @@ The pinned logic-topography run contains 3 contract row(s) across arbitrum, base
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xa593a9...539ff2`, chain 8453)
-- LiquidityPool (`0xb58bb9...e5c032`, chain 8453)
-- LiquidityPoolAave (`0x7c2552...c09f4b`, chain 8453)
-- SprinterLiquidityMining (`0x479d15...313c21`, chain 8453)
+- UnnamedContract (`0xa593a9bbbc65be342ff610a01e96da2eb8539ff2`, chain 8453)
+- LiquidityPool (`0xb58bb9643884abbbad64fa7ebc874c5481e5c032`, chain 8453)
+- LiquidityPoolAave (`0x7c255279c098fdf6c3116d2becd9978002c09f4b`, chain 8453)
+- SprinterLiquidityMining (`0x479d158959b59328e89f0fbf7dfebb198c313c21`, chain 8453)
 
 ## Contract Surface Quality
 
@@ -100,29 +100,29 @@ The pinned logic-topography run contains 3 contract row(s) across arbitrum, base
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| LiquidityPool | core_logic | project_anchor | own_supporting | 0 | base | unit-256654 | `0xb58bb9...e5c032` | ✅ Audited |
-| LiquidityPoolAave | core_logic | project_anchor | own_supporting | 0 | base | unit-256650 | `0x7c2552...c09f4b` | ✅ Audited |
-| SprinterLiquidityMining | unknown | project_anchor | own_supporting | 0 | base | unit-256648 | `0x479d15...313c21` | ✅ Audited |
+| LiquidityPool | core_logic | project_anchor | own_supporting | 0 | base | unit-256654 | `0xb58bb9643884abbbad64fa7ebc874c5481e5c032` | ✅ Audited |
+| LiquidityPoolAave | core_logic | project_anchor | own_supporting | 0 | base | unit-256650 | `0x7c255279c098fdf6c3116d2becd9978002c09f4b` | ✅ Audited |
+| SprinterLiquidityMining | unknown | project_anchor | own_supporting | 0 | base | unit-256648 | `0x479d158959b59328e89f0fbf7dfebb198c313c21` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (15)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| CensoredTransferFromMulticall | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x7c472e...29b6bb` | ⚠️ Unaudited |
-| GnosisSafeProxy | governance | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x83b8d2...71c1d6` | ⚠️ Unaudited |
-| LiquidityPool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 3 deployments: optimism `0x0e1632...2810eb`; base `0x0e1632...2810eb`; arbitrum `0x0e1632...2810eb` | ⚠️ Unaudited |
-| LiquidityPoolAave | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 3 deployments: optimism `0x2022a5...5357b5`; base `0x2022a5...5357b5`; arbitrum `0x2022a5...5357b5` | ⚠️ Unaudited |
-| LiquidityPoolAaveLongTerm | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x52d0ee...257788` | ⚠️ Unaudited |
-| LiquidityPoolStablecoin | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa8d2c9...0a3672` | ⚠️ Unaudited |
-| Processor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xffdb38...16286d` | ⚠️ Unaudited |
-| ProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: base `0x2b5d04...1664cb`; base `0x818e81...ac5077`; base `0x998c73...91d47b` | ⚠️ Unaudited |
-| Rebalancer | adapter | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0xa85cf4...869888` | ⚠️ Unaudited |
-| Rebalancer | adapter | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0xa85cf4...869888` | ⚠️ Unaudited |
-| Rebalancer | adapter | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0xa85cf4...869888` | ⚠️ Unaudited |
-| Repayer | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0x36364a...439511` | ⚠️ Unaudited |
-| Repayer | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x36364a...439511` | ⚠️ Unaudited |
-| Repayer | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x36364a...439511` | ⚠️ Unaudited |
-| SafeProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x4ea9e6...810636` | ⚠️ Unaudited |
+| CensoredTransferFromMulticall | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x7c472eba1945e970a23c903fc8812d469a29b6bb` | ⚠️ Unaudited |
+| GnosisSafeProxy | governance | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x83b8d2eada788943c3e80892f37f9c102271c1d6` | ⚠️ Unaudited |
+| LiquidityPool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 3 deployments: optimism `0x0e16326e6921395eda2575740374e754b22810eb`; base `0x0e16326e6921395eda2575740374e754b22810eb`; arbitrum `0x0e16326e6921395eda2575740374e754b22810eb` | ⚠️ Unaudited |
+| LiquidityPoolAave | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 3 deployments: optimism `0x2022a5600f854cc3218e636239f4dfce9e5357b5`; base `0x2022a5600f854cc3218e636239f4dfce9e5357b5`; arbitrum `0x2022a5600f854cc3218e636239f4dfce9e5357b5` | ⚠️ Unaudited |
+| LiquidityPoolAaveLongTerm | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x52d0ee7a870824fc683ea19c714c7bd110257788` | ⚠️ Unaudited |
+| LiquidityPoolStablecoin | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa8d2c9c9453e61e3ca961512403d388dee0a3672` | ⚠️ Unaudited |
+| Processor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xffdb380c79d9bf412a61d63060388d761d16286d` | ⚠️ Unaudited |
+| ProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: base `0x2b5d04ef6b3279bcda4b219b02faf627da1664cb`; base `0x818e818ac77112034abf79506d53ba197cac5077`; base `0x998c7392b6dd28031fed052e5ff2bf38f291d47b` | ⚠️ Unaudited |
+| Rebalancer | adapter | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0xa85cf46c150db2600b1d03e437bedd5513869888` | ⚠️ Unaudited |
+| Rebalancer | adapter | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0xa85cf46c150db2600b1d03e437bedd5513869888` | ⚠️ Unaudited |
+| Rebalancer | adapter | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0xa85cf46c150db2600b1d03e437bedd5513869888` | ⚠️ Unaudited |
+| Repayer | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0x36364acc7b9c67692ca215af09a41cbd10439511` | ⚠️ Unaudited |
+| Repayer | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x36364acc7b9c67692ca215af09a41cbd10439511` | ⚠️ Unaudited |
+| Repayer | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x36364acc7b9c67692ca215af09a41cbd10439511` | ⚠️ Unaudited |
+| SafeProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x4ea9e682ba79bc403523c9e8d98a05eaf3810636` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -142,7 +142,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-256651 | `0xa593a9...539ff2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-256651 | `0xa593a9bbbc65be342ff610a01e96da2eb8539ff2` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -209,16 +209,16 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | VAR_Sygma_labs_Sprinter_liquidity_250212-final.pdf | LiquidityMining | unmatched — not counted | — | — | no |
 | VAR_Sygma_labs_Sprinter_liquidity_250212-final.pdf | ManagedToken | unmatched — not counted | — | — | no |
 | VAR_Sygma_labs_Sprinter_liquidity_250212-final.pdf | Rebalancer | unmatched — not counted | — | — | no |
-| VAR_Sygma_labs_Sprinter_liquidity_250212-final.pdf | SprinterLiquidityMining | own contract | SprinterLiquidityMining (selected) `0x479d15...313c21` — deployed 2025-03-27 14:56:03+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| VAR_Sygma_labs_Sprinter_liquidity_pool_250304-final.pdf | LiquidityPool | own contract | LiquidityPool (selected) `0xb58bb9...e5c032` — deployed 2025-03-21 18:32:49+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| VAR_Sygma_labs_Sprinter_liquidity_pool_250304-final.pdf | LiquidityPoolAave | own contract | LiquidityPoolAave (selected) `0x7c2552...c09f4b` — deployed 2025-03-21 18:32:39+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| VAR_Sygma_labs_Sprinter_liquidity_250212-final.pdf | SprinterLiquidityMining | own contract | SprinterLiquidityMining (selected) `0x479d158959b59328e89f0fbf7dfebb198c313c21` — deployed 2025-03-27 14:56:03+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| VAR_Sygma_labs_Sprinter_liquidity_pool_250304-final.pdf | LiquidityPool | own contract | LiquidityPool (selected) `0xb58bb9643884abbbad64fa7ebc874c5481e5c032` — deployed 2025-03-21 18:32:49+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| VAR_Sygma_labs_Sprinter_liquidity_pool_250304-final.pdf | LiquidityPoolAave | own contract | LiquidityPoolAave (selected) `0x7c255279c098fdf6c3116d2becd9978002c09f4b` — deployed 2025-03-21 18:32:39+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | VAR_Sygma_labs_Sprinter_liquidity_pool_250304-final.pdf | Rebalancer | unmatched — not counted | — | — | no |
 | cantina_sprinter_may2025.pdf | CCTPAdapter | unmatched — not counted | — | — | no |
 | cantina_sprinter_may2025.pdf | CensoredTransferFromMulticall | unmatched — not counted | — | — | no |
 | cantina_sprinter_may2025.pdf | LiquidityHub | unmatched — not counted | — | — | no |
 | cantina_sprinter_may2025.pdf | ManagedToken | unmatched — not counted | — | — | no |
 | cantina_sprinter_may2025.pdf | Repayer | unmatched — not counted | — | — | no |
-| cantina_sprinter_may2025.pdf | SprinterLiquidityMining | own contract | SprinterLiquidityMining (selected) `0x479d15...313c21` — deployed 2025-03-27 14:56:03+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| cantina_sprinter_may2025.pdf | SprinterLiquidityMining | own contract | SprinterLiquidityMining (selected) `0x479d158959b59328e89f0fbf7dfebb198c313c21` — deployed 2025-03-27 14:56:03+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 
 ## Coverage Gaps
 

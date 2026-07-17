@@ -63,7 +63,7 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| WeightedParimutuelMarkets | unknown | bsc | n/a | [`0xab1fb9...cc3b40`](./contracts/bsc-56/0xab1fb9b0efa9235aff385639611cb1bbbbcc3b40/) | ✅ Audited |
+| WeightedParimutuelMarkets | unknown | bsc | n/a | [`0xab1fb9b0efa9235aff385639611cb1bbbbcc3b40`](./contracts/bsc-56/0xab1fb9b0efa9235aff385639611cb1bbbbcc3b40/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 
@@ -87,7 +87,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0x503560...c6c119` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x5035608222e1c226781caa22fe40d0db6cc6c119` | ❓ Unverified |
 
 ## Audit Inventory
 

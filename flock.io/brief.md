@@ -59,28 +59,28 @@ The protocol comprises 4 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| FlockConfig | unknown | base | n/a | 3 deployments: base [`0x64e545...1e4997`](./contracts/base-8453/0x64e5450bbddea04199fbbf1ca5c22a10701e4997/); base `0x769cec...a2148a`; base `0xf79584...8fb833` | ✅ Audited |
-| FlockPoolManagerUpgradeable | unknown | base | n/a | 2 deployments: base [`0x1a15d5...d48af6`](./contracts/base-8453/0x1a15d5bf8cdb6b1241903806e844fb72ebd48af6/); base `0x2d2f27...20dd65` | ✅ Audited |
-| FlockPoolManagerV2Upgradeable | unknown | base | n/a | 2 deployments: base [`0x25c2d9...1f5137`](./contracts/base-8453/0x25c2d9619b1548b0c8ddc3e5ceffe64b951f5137/); base `0x5c4155...7a1502` | ✅ Audited |
-| FlockStakeInfoUpgradeable | unknown | base | n/a | 2 deployments: base [`0x2886fd...d17883`](./contracts/base-8453/0x2886fd3861b09d6d7b3d7cf25c8ea2999ad17883/); base `0x8a83ef...6a400a` | ✅ Audited |
-| FlockStakeInfoV2Upgradeable | unknown | base | n/a | 2 deployments: base [`0x1b964b...9f1f98`](./contracts/base-8453/0x1b964b3df82238b404afd7db1c10b9c0c29f1f98/); base `0xa799ec...f5bf63` | ✅ Audited |
-| FlockTaskManagerUpgradeable | unknown | base | n/a | 3 deployments: base [`0x05e42e...8b737a`](./contracts/base-8453/0x05e42e03996379cd0b6290cc2767a1bdd78b737a/); base `0xac24d8...7d8fe4`; base `0xe8e31e...980d6c` | ✅ Audited |
-| FlockTaskManagerUpgradeable | unknown | base | n/a | 2 deployments: base [`0x5813de...99aaa0`](./contracts/base-8453/0x5813dee58523ea082ee80162527efeed7799aaa0/); base `0xc4d8cf...31846a` | ✅ Audited |
-| FlockTaskManagerV2Upgradeable | governance | base | n/a | [`0x29d4ec...e69fed`](./contracts/base-8453/0x29d4ecea4b1fcac239bf4b4dc3b42829c2e69fed/) | ✅ Audited |
-| FlockTaskManagerV2Upgradeable | governance | base | n/a | 2 deployments: base [`0x360406...466a3d`](./contracts/base-8453/0x36040670d539d13420f9d1caf605fa2901466a3d/); base `0x8884e9...5acdad` | ✅ Audited |
-| FlockTokenUpgradeable | unknown | base | n/a | 3 deployments: base [`0x22754d...45f784`](./contracts/base-8453/0x22754dad1b54ce707997afce9a78a3413045f784/); base `0x5ab3d4...a7b691`; base `0x81e741...3ad626` | ✅ Audited |
-| gmFlockExchangeUpgradeable | unknown | base | n/a | 2 deployments: base [`0x9e0acc...def83f`](./contracts/base-8453/0x9e0acc78662b9193f9eff711af460406e9def83f/); base `0xe1fa45...fc6123` | ✅ Audited |
-| gmFlockUpgradeable | unknown | base | n/a | 2 deployments: base [`0x781dd2...5cad24`](./contracts/base-8453/0x781dd21d8430e4e267af5713e01332742f5cad24/); base `0x7fe6d7...0c816c` | ✅ Audited |
+| FlockConfig | unknown | base | n/a | 3 deployments: base [`0x64e5450bbddea04199fbbf1ca5c22a10701e4997`](./contracts/base-8453/0x64e5450bbddea04199fbbf1ca5c22a10701e4997/); base `0x769ceca23323c4409f1782a282e5e0cd26a2148a`; base `0xf79584e389996c7189eee7fd322e4d65408fb833` | ✅ Audited |
+| FlockPoolManagerUpgradeable | unknown | base | n/a | 2 deployments: base [`0x1a15d5bf8cdb6b1241903806e844fb72ebd48af6`](./contracts/base-8453/0x1a15d5bf8cdb6b1241903806e844fb72ebd48af6/); base `0x2d2f27589b2ac6d792fc111549c7e4547c20dd65` | ✅ Audited |
+| FlockPoolManagerV2Upgradeable | unknown | base | n/a | 2 deployments: base [`0x25c2d9619b1548b0c8ddc3e5ceffe64b951f5137`](./contracts/base-8453/0x25c2d9619b1548b0c8ddc3e5ceffe64b951f5137/); base `0x5c415570e4a9c49e64ea640180f91161b47a1502` | ✅ Audited |
+| FlockStakeInfoUpgradeable | unknown | base | n/a | 2 deployments: base [`0x2886fd3861b09d6d7b3d7cf25c8ea2999ad17883`](./contracts/base-8453/0x2886fd3861b09d6d7b3d7cf25c8ea2999ad17883/); base `0x8a83efd9436ebf4fa4a8ad2b1751f5feb56a400a` | ✅ Audited |
+| FlockStakeInfoV2Upgradeable | unknown | base | n/a | 2 deployments: base [`0x1b964b3df82238b404afd7db1c10b9c0c29f1f98`](./contracts/base-8453/0x1b964b3df82238b404afd7db1c10b9c0c29f1f98/); base `0xa799ece98ca2c52eeb5837f0faffb12883f5bf63` | ✅ Audited |
+| FlockTaskManagerUpgradeable | unknown | base | n/a | 3 deployments: base [`0x05e42e03996379cd0b6290cc2767a1bdd78b737a`](./contracts/base-8453/0x05e42e03996379cd0b6290cc2767a1bdd78b737a/); base `0xac24d8a23e0306c1ee689f33359db2889e7d8fe4`; base `0xe8e31e34ee55ffc815222fe883b5137be1980d6c` | ✅ Audited |
+| FlockTaskManagerUpgradeable | unknown | base | n/a | 2 deployments: base [`0x5813dee58523ea082ee80162527efeed7799aaa0`](./contracts/base-8453/0x5813dee58523ea082ee80162527efeed7799aaa0/); base `0xc4d8cf5f0f994330676bef1fb4612b04e531846a` | ✅ Audited |
+| FlockTaskManagerV2Upgradeable | governance | base | n/a | [`0x29d4ecea4b1fcac239bf4b4dc3b42829c2e69fed`](./contracts/base-8453/0x29d4ecea4b1fcac239bf4b4dc3b42829c2e69fed/) | ✅ Audited |
+| FlockTaskManagerV2Upgradeable | governance | base | n/a | 2 deployments: base [`0x36040670d539d13420f9d1caf605fa2901466a3d`](./contracts/base-8453/0x36040670d539d13420f9d1caf605fa2901466a3d/); base `0x8884e9571debc8c5069b29fbdd4ee0702e5acdad` | ✅ Audited |
+| FlockTokenUpgradeable | unknown | base | n/a | 3 deployments: base [`0x22754dad1b54ce707997afce9a78a3413045f784`](./contracts/base-8453/0x22754dad1b54ce707997afce9a78a3413045f784/); base `0x5ab3d4c385b400f3abb49e80de2faf6a88a7b691`; base `0x81e741f9a342604af36b00365c1add26163ad626` | ✅ Audited |
+| gmFlockExchangeUpgradeable | unknown | base | n/a | 2 deployments: base [`0x9e0acc78662b9193f9eff711af460406e9def83f`](./contracts/base-8453/0x9e0acc78662b9193f9eff711af460406e9def83f/); base `0xe1fa4592b7a35ff6cef65fdec5e13a1f48fc6123` | ✅ Audited |
+| gmFlockUpgradeable | unknown | base | n/a | 2 deployments: base [`0x781dd21d8430e4e267af5713e01332742f5cad24`](./contracts/base-8453/0x781dd21d8430e4e267af5713e01332742f5cad24/); base `0x7fe6d76a5e9dae35590f720679ccd10cfb0c816c` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| FlockAirDrop | unknown | base | n/a | 2 deployments: base [`0x05379b...e93d66`](./contracts/base-8453/0x05379b6dc36d264f535d35c7d9bbd50115e93d66/); base `0x7c3eac...988daf` | ⚠️ Unaudited |
-| FlockRewardPool | unknown | base | n/a | 2 deployments: base [`0x86dbb3...1343a8`](./contracts/base-8453/0x86dbb37cd9cb039e5a55562d7e716d08161343a8/); base `0xde02bb...8682b5` | ⚠️ Unaudited |
-| LinearVestingRewards | unknown | base | n/a | 2 deployments: base [`0x34e11c...dfb5b5`](./contracts/base-8453/0x34e11cf7a9d3de34b7ecf6602c23edfd98dfb5b5/); base `0xf36088...752b53` | ⚠️ Unaudited |
-| ModelTokenLaunchUpgradeable | token | base | n/a | [`0x6f39fe...97f0b1`](./contracts/base-8453/0x6f39fe20f19103a215bcc444a64f78ae7797f0b1/) | ⚠️ Unaudited |
-| ProxyAdmin | governance | base | n/a | [`0xb6523d...7e9f06`](./contracts/base-8453/0xb6523d5d33d29a7e6573330310e3f0e6157e9f06/) | ⚠️ Unaudited |
+| FlockAirDrop | unknown | base | n/a | 2 deployments: base [`0x05379b6dc36d264f535d35c7d9bbd50115e93d66`](./contracts/base-8453/0x05379b6dc36d264f535d35c7d9bbd50115e93d66/); base `0x7c3eac01749cb3eecc5726bf00b8f43ffd988daf` | ⚠️ Unaudited |
+| FlockRewardPool | unknown | base | n/a | 2 deployments: base [`0x86dbb37cd9cb039e5a55562d7e716d08161343a8`](./contracts/base-8453/0x86dbb37cd9cb039e5a55562d7e716d08161343a8/); base `0xde02bb6d2a4702407c103363324bbb36f88682b5` | ⚠️ Unaudited |
+| LinearVestingRewards | unknown | base | n/a | 2 deployments: base [`0x34e11cf7a9d3de34b7ecf6602c23edfd98dfb5b5`](./contracts/base-8453/0x34e11cf7a9d3de34b7ecf6602c23edfd98dfb5b5/); base `0xf360886bb80eb1efc413c4e89566e6c59d752b53` | ⚠️ Unaudited |
+| ModelTokenLaunchUpgradeable | token | base | n/a | [`0x6f39fe20f19103a215bcc444a64f78ae7797f0b1`](./contracts/base-8453/0x6f39fe20f19103a215bcc444a64f78ae7797f0b1/) | ⚠️ Unaudited |
+| ProxyAdmin | governance | base | n/a | [`0xb6523d5d33d29a7e6573330310e3f0e6157e9f06`](./contracts/base-8453/0xb6523d5d33d29a7e6573330310e3f0e6157e9f06/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -100,7 +100,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | base | n/a | `0x7bf579...5e195e` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x7bf57986e7df6c19bb1222a8d09d693cba5e195e` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -118,10 +118,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x05379b...e93d66`](./contracts/base-8453/0x05379b6dc36d264f535d35c7d9bbd50115e93d66/) | FlockAirDrop | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x86dbb3...1343a8`](./contracts/base-8453/0x86dbb37cd9cb039e5a55562d7e716d08161343a8/) | FlockRewardPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x34e11c...dfb5b5`](./contracts/base-8453/0x34e11cf7a9d3de34b7ecf6602c23edfd98dfb5b5/) | LinearVestingRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x6f39fe...97f0b1`](./contracts/base-8453/0x6f39fe20f19103a215bcc444a64f78ae7797f0b1/) | ModelTokenLaunchUpgradeable | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x05379b6dc36d264f535d35c7d9bbd50115e93d66`](./contracts/base-8453/0x05379b6dc36d264f535d35c7d9bbd50115e93d66/) | FlockAirDrop | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x86dbb37cd9cb039e5a55562d7e716d08161343a8`](./contracts/base-8453/0x86dbb37cd9cb039e5a55562d7e716d08161343a8/) | FlockRewardPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x34e11cf7a9d3de34b7ecf6602c23edfd98dfb5b5`](./contracts/base-8453/0x34e11cf7a9d3de34b7ecf6602c23edfd98dfb5b5/) | LinearVestingRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x6f39fe20f19103a215bcc444a64f78ae7797f0b1`](./contracts/base-8453/0x6f39fe20f19103a215bcc444a64f78ae7797f0b1/) | ModelTokenLaunchUpgradeable | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

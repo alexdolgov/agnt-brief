@@ -62,7 +62,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CombinedRateProvider | unknown | ethereum | n/a | [`0x716f0c...df445e`](./contracts/ethereum-1/0x716f0c5453099690b54e7b72d9491a72b8df445e/) | ⚠️ Unaudited |
+| CombinedRateProvider | unknown | ethereum | n/a | [`0x716f0c5453099690b54e7b72d9491a72b8df445e`](./contracts/ethereum-1/0x716f0c5453099690b54e7b72d9491a72b8df445e/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,7 +95,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x716f0c...df445e`](./contracts/ethereum-1/0x716f0c5453099690b54e7b72d9491a72b8df445e/) | CombinedRateProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x716f0c5453099690b54e7b72d9491a72b8df445e`](./contracts/ethereum-1/0x716f0c5453099690b54e7b72d9491a72b8df445e/) | CombinedRateProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

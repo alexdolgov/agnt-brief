@@ -61,8 +61,8 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Multicall3 | periphery | bsc | n/a | [`0xca11bd...76ca11`](./contracts/bsc-56/0xca11bde05977b3631167028862be2a173976ca11/) | ⚠️ Unaudited |
-| OptimizedTransparentUpgradeableProxy | proxy | bsc | n/a | [`0xea9dfe...95f48b`](./contracts/bsc-56/0xea9dfe485a700229068d9419488103f6ee95f48b/) | ⚠️ Unaudited |
+| Multicall3 | periphery | bsc | n/a | [`0xca11bde05977b3631167028862be2a173976ca11`](./contracts/bsc-56/0xca11bde05977b3631167028862be2a173976ca11/) | ⚠️ Unaudited |
+| OptimizedTransparentUpgradeableProxy | proxy | bsc | n/a | [`0xea9dfe485a700229068d9419488103f6ee95f48b`](./contracts/bsc-56/0xea9dfe485a700229068d9419488103f6ee95f48b/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,7 +93,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0xea9dfe...95f48b`](./contracts/bsc-56/0xea9dfe485a700229068d9419488103f6ee95f48b/) | OptimizedTransparentUpgradeableProxy | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xea9dfe485a700229068d9419488103f6ee95f48b`](./contracts/bsc-56/0xea9dfe485a700229068d9419488103f6ee95f48b/) | OptimizedTransparentUpgradeableProxy | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

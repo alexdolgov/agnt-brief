@@ -61,12 +61,12 @@ The protocol forms a single structural family (Core Logic) of 6 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| EthPrime | unknown | ethereum | n/a | [`0xe40e15...316a2d`](./contracts/ethereum-1/0xe40e1531a4b56fb65571ad2ca43dc0048a316a2d/) | ⚠️ Unaudited |
-| Goo | unknown | ethereum | n/a | [`0xa170fb...21a5f6`](./contracts/ethereum-1/0xa170fb6f3e0f127f1f592a656eadff3dc421a5f6/) | ⚠️ Unaudited |
-| LiquidityVault | unknown | ethereum | n/a | [`0xc73bb8...934513`](./contracts/ethereum-1/0xc73bb871dbf66958242deba79e4db19bc2934513/) | ⚠️ Unaudited |
-| PowerLock | unknown | ethereum | n/a | [`0xae7b53...c018b4`](./contracts/ethereum-1/0xae7b530be880457523eb46d8ec6484e067c018b4/) | ⚠️ Unaudited |
-| ProofOfEtherDelta | unknown | ethereum | n/a | [`0xc5765b...a933c1`](./contracts/ethereum-1/0xc5765b90766da9debad0b9122521c27e1ea933c1/) | ⚠️ Unaudited |
-| UniPower | unknown | ethereum | n/a | [`0xf2f9a7...cce509`](./contracts/ethereum-1/0xf2f9a7e93f845b3ce154efbeb64fb9346fcce509/) | ⚠️ Unaudited |
+| EthPrime | unknown | ethereum | n/a | [`0xe40e1531a4b56fb65571ad2ca43dc0048a316a2d`](./contracts/ethereum-1/0xe40e1531a4b56fb65571ad2ca43dc0048a316a2d/) | ⚠️ Unaudited |
+| Goo | unknown | ethereum | n/a | [`0xa170fb6f3e0f127f1f592a656eadff3dc421a5f6`](./contracts/ethereum-1/0xa170fb6f3e0f127f1f592a656eadff3dc421a5f6/) | ⚠️ Unaudited |
+| LiquidityVault | unknown | ethereum | n/a | [`0xc73bb871dbf66958242deba79e4db19bc2934513`](./contracts/ethereum-1/0xc73bb871dbf66958242deba79e4db19bc2934513/) | ⚠️ Unaudited |
+| PowerLock | unknown | ethereum | n/a | [`0xae7b530be880457523eb46d8ec6484e067c018b4`](./contracts/ethereum-1/0xae7b530be880457523eb46d8ec6484e067c018b4/) | ⚠️ Unaudited |
+| ProofOfEtherDelta | unknown | ethereum | n/a | [`0xc5765b90766da9debad0b9122521c27e1ea933c1`](./contracts/ethereum-1/0xc5765b90766da9debad0b9122521c27e1ea933c1/) | ⚠️ Unaudited |
+| UniPower | unknown | ethereum | n/a | [`0xf2f9a7e93f845b3ce154efbeb64fb9346fcce509`](./contracts/ethereum-1/0xf2f9a7e93f845b3ce154efbeb64fb9346fcce509/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -97,12 +97,12 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xe40e15...316a2d`](./contracts/ethereum-1/0xe40e1531a4b56fb65571ad2ca43dc0048a316a2d/) | EthPrime | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa170fb...21a5f6`](./contracts/ethereum-1/0xa170fb6f3e0f127f1f592a656eadff3dc421a5f6/) | Goo | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc73bb8...934513`](./contracts/ethereum-1/0xc73bb871dbf66958242deba79e4db19bc2934513/) | LiquidityVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xae7b53...c018b4`](./contracts/ethereum-1/0xae7b530be880457523eb46d8ec6484e067c018b4/) | PowerLock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc5765b...a933c1`](./contracts/ethereum-1/0xc5765b90766da9debad0b9122521c27e1ea933c1/) | ProofOfEtherDelta | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xf2f9a7...cce509`](./contracts/ethereum-1/0xf2f9a7e93f845b3ce154efbeb64fb9346fcce509/) | UniPower | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe40e1531a4b56fb65571ad2ca43dc0048a316a2d`](./contracts/ethereum-1/0xe40e1531a4b56fb65571ad2ca43dc0048a316a2d/) | EthPrime | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa170fb6f3e0f127f1f592a656eadff3dc421a5f6`](./contracts/ethereum-1/0xa170fb6f3e0f127f1f592a656eadff3dc421a5f6/) | Goo | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc73bb871dbf66958242deba79e4db19bc2934513`](./contracts/ethereum-1/0xc73bb871dbf66958242deba79e4db19bc2934513/) | LiquidityVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xae7b530be880457523eb46d8ec6484e067c018b4`](./contracts/ethereum-1/0xae7b530be880457523eb46d8ec6484e067c018b4/) | PowerLock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc5765b90766da9debad0b9122521c27e1ea933c1`](./contracts/ethereum-1/0xc5765b90766da9debad0b9122521c27e1ea933c1/) | ProofOfEtherDelta | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xf2f9a7e93f845b3ce154efbeb64fb9346fcce509`](./contracts/ethereum-1/0xf2f9a7e93f845b3ce154efbeb64fb9346fcce509/) | UniPower | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -61,21 +61,21 @@ The protocol comprises 3 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| EdgeToken | unknown | ethereum | n/a | [`0x9406dd...ab3161`](./contracts/ethereum-1/0x9406dd76452c172b3cc77092b42398e87dab3161/) | ✅ Audited |
-| MultiSigPoolV5WithPermit | unknown | ethereum | n/a | [`0x166b53...ae0eb6`](./contracts/ethereum-1/0x166b5369f043474412408c8aba0d084e9cae0eb6/) | ✅ Audited |
-| SpotVault | unknown | ethereum | n/a | [`0x238e0e...841487`](./contracts/ethereum-1/0x238e0edeb0e217fecd9e1ca98efa1219fc841487/) | ✅ Audited |
-| StarkPerpetual | unknown | ethereum | n/a | [`0xfaae29...7d83dd`](./contracts/ethereum-1/0xfaae2946e846133af314d1df13684c89fa7d83dd/) | ✅ Audited |
+| EdgeToken | unknown | ethereum | n/a | [`0x9406dd76452c172b3cc77092b42398e87dab3161`](./contracts/ethereum-1/0x9406dd76452c172b3cc77092b42398e87dab3161/) | ✅ Audited |
+| MultiSigPoolV5WithPermit | unknown | ethereum | n/a | [`0x166b5369f043474412408c8aba0d084e9cae0eb6`](./contracts/ethereum-1/0x166b5369f043474412408c8aba0d084e9cae0eb6/) | ✅ Audited |
+| SpotVault | unknown | ethereum | n/a | [`0x238e0edeb0e217fecd9e1ca98efa1219fc841487`](./contracts/ethereum-1/0x238e0edeb0e217fecd9e1ca98efa1219fc841487/) | ✅ Audited |
+| StarkPerpetual | unknown | ethereum | n/a | [`0xfaae2946e846133af314d1df13684c89fa7d83dd`](./contracts/ethereum-1/0xfaae2946e846133af314d1df13684c89fa7d83dd/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (6)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ERC1967Proxy | unknown | ethereum | n/a | [`0xce3066...23d551`](./contracts/ethereum-1/0xce306644d20ab523636f2121952fc6222623d551/) | ⚠️ Unaudited |
-| FinalizableCommittee | unknown | ethereum | n/a | [`0x23bf3d...3c946e`](./contracts/ethereum-1/0x23bf3dcc14680162b7f5355aabb56d31823c946e/) | ⚠️ Unaudited |
-| FinalizableGpsFactAdapter | unknown | ethereum | n/a | [`0x4abbc1...5e8562`](./contracts/ethereum-1/0x4abbc1826389ac0feaa49e70c30a041b665e8562/) | ⚠️ Unaudited |
-| InitializableImmutableAdminUpgradeabilityProxy | unknown | ethereum | n/a | [`0x238789...d4086a`](./contracts/ethereum-1/0x23878914efe38d27c4d67ab83ed1b93a74d4086a/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | [`0x107695...e211bb`](./contracts/arbitrum-42161/0x107695630130919cb040b095b9b20511d6e211bb/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | [`0x6f4836...c198d0`](./contracts/arbitrum-42161/0x6f4836afd5e21edcee9b838c5a4125829ec198d0/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | ethereum | n/a | [`0xce306644d20ab523636f2121952fc6222623d551`](./contracts/ethereum-1/0xce306644d20ab523636f2121952fc6222623d551/) | ⚠️ Unaudited |
+| FinalizableCommittee | unknown | ethereum | n/a | [`0x23bf3dcc14680162b7f5355aabb56d31823c946e`](./contracts/ethereum-1/0x23bf3dcc14680162b7f5355aabb56d31823c946e/) | ⚠️ Unaudited |
+| FinalizableGpsFactAdapter | unknown | ethereum | n/a | [`0x4abbc1826389ac0feaa49e70c30a041b665e8562`](./contracts/ethereum-1/0x4abbc1826389ac0feaa49e70c30a041b665e8562/) | ⚠️ Unaudited |
+| InitializableImmutableAdminUpgradeabilityProxy | unknown | ethereum | n/a | [`0x23878914efe38d27c4d67ab83ed1b93a74d4086a`](./contracts/ethereum-1/0x23878914efe38d27c4d67ab83ed1b93a74d4086a/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | [`0x107695630130919cb040b095b9b20511d6e211bb`](./contracts/arbitrum-42161/0x107695630130919cb040b095b9b20511d6e211bb/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | arbitrum | n/a | [`0x6f4836afd5e21edcee9b838c5a4125829ec198d0`](./contracts/arbitrum-42161/0x6f4836afd5e21edcee9b838c5a4125829ec198d0/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -113,8 +113,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x23bf3d...3c946e`](./contracts/ethereum-1/0x23bf3dcc14680162b7f5355aabb56d31823c946e/) | FinalizableCommittee | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x4abbc1...5e8562`](./contracts/ethereum-1/0x4abbc1826389ac0feaa49e70c30a041b665e8562/) | FinalizableGpsFactAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x23bf3dcc14680162b7f5355aabb56d31823c946e`](./contracts/ethereum-1/0x23bf3dcc14680162b7f5355aabb56d31823c946e/) | FinalizableCommittee | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4abbc1826389ac0feaa49e70c30a041b665e8562`](./contracts/ethereum-1/0x4abbc1826389ac0feaa49e70c30a041b665e8562/) | FinalizableGpsFactAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

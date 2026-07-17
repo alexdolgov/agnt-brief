@@ -59,22 +59,22 @@ The protocol comprises 3 functional families. Contracts are linked by 1 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AmplificationUtils | unknown | avalanche | n/a | [`0x0220ba...e9b72b`](./contracts/avalanche-43114/0x0220ba3dcecf50fa376cce84d1d9ecc0bee9b72b/) | ✅ Audited |
-| ERC20InterfaceUpgradable | unknown | avalanche | n/a | [`0x08b201...fa4142`](./contracts/avalanche-43114/0x08b201c31201e1b75ad6c18a8d70492259fa4142/) | ✅ Audited |
-| LPToken | unknown | avalanche | n/a | [`0x71b0cd...0dbe8c`](./contracts/avalanche-43114/0x71b0cd5c4db483ae8a09df0f83f69bac400dbe8c/) | ✅ Audited |
-| StakeUtils | unknown | avalanche | n/a | [`0x1ea723...692332`](./contracts/avalanche-43114/0x1ea72390e12cbe0da8304ab19b6e521a31692332/) | ✅ Audited |
-| Swap | unknown | avalanche | n/a | [`0x577a73...355f09`](./contracts/avalanche-43114/0x577a73075f35a0a013afc651126f714284355f09/) | ✅ Audited |
-| SwapUtils | unknown | avalanche | n/a | [`0x29be47...702c09`](./contracts/avalanche-43114/0x29be4798db7eb77d20ed35ad642da852ae702c09/) | ✅ Audited |
+| AmplificationUtils | unknown | avalanche | n/a | [`0x0220ba3dcecf50fa376cce84d1d9ecc0bee9b72b`](./contracts/avalanche-43114/0x0220ba3dcecf50fa376cce84d1d9ecc0bee9b72b/) | ✅ Audited |
+| ERC20InterfaceUpgradable | unknown | avalanche | n/a | [`0x08b201c31201e1b75ad6c18a8d70492259fa4142`](./contracts/avalanche-43114/0x08b201c31201e1b75ad6c18a8d70492259fa4142/) | ✅ Audited |
+| LPToken | unknown | avalanche | n/a | [`0x71b0cd5c4db483ae8a09df0f83f69bac400dbe8c`](./contracts/avalanche-43114/0x71b0cd5c4db483ae8a09df0f83f69bac400dbe8c/) | ✅ Audited |
+| StakeUtils | unknown | avalanche | n/a | [`0x1ea72390e12cbe0da8304ab19b6e521a31692332`](./contracts/avalanche-43114/0x1ea72390e12cbe0da8304ab19b6e521a31692332/) | ✅ Audited |
+| Swap | unknown | avalanche | n/a | [`0x577a73075f35a0a013afc651126f714284355f09`](./contracts/avalanche-43114/0x577a73075f35a0a013afc651126f714284355f09/) | ✅ Audited |
+| SwapUtils | unknown | avalanche | n/a | [`0x29be4798db7eb77d20ed35ad642da852ae702c09`](./contracts/avalanche-43114/0x29be4798db7eb77d20ed35ad642da852ae702c09/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| DataStoreUtils | unknown | avalanche | n/a | [`0xb25a42...fdc570`](./contracts/avalanche-43114/0xb25a4298f51d6028b50df845c3cbf49f4cfdc570/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | avalanche | n/a | [`0x115fe1...a07e63`](./contracts/avalanche-43114/0x115fe12263515047d2f87f1a04870f33afa07e63/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | avalanche | n/a | [`0x4948d8...2284fa`](./contracts/avalanche-43114/0x4948d893b6c71fc1736789b8fef90907ef2284fa/) | ⚠️ Unaudited |
-| gAVAX | unknown | avalanche | n/a | [`0x1cfbdc...27b24b`](./contracts/avalanche-43114/0x1cfbdc5468f7d10d136c3d92317d50294127b24b/) | ⚠️ Unaudited |
-| GeodeUtils | unknown | avalanche | n/a | [`0x76e42b...59fa5b`](./contracts/avalanche-43114/0x76e42b4c138e03f4e1719ca5cd1fec13e459fa5b/) | ⚠️ Unaudited |
+| DataStoreUtils | unknown | avalanche | n/a | [`0xb25a4298f51d6028b50df845c3cbf49f4cfdc570`](./contracts/avalanche-43114/0xb25a4298f51d6028b50df845c3cbf49f4cfdc570/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | avalanche | n/a | [`0x115fe12263515047d2f87f1a04870f33afa07e63`](./contracts/avalanche-43114/0x115fe12263515047d2f87f1a04870f33afa07e63/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | avalanche | n/a | [`0x4948d893b6c71fc1736789b8fef90907ef2284fa`](./contracts/avalanche-43114/0x4948d893b6c71fc1736789b8fef90907ef2284fa/) | ⚠️ Unaudited |
+| gAVAX | unknown | avalanche | n/a | [`0x1cfbdc5468f7d10d136c3d92317d50294127b24b`](./contracts/avalanche-43114/0x1cfbdc5468f7d10d136c3d92317d50294127b24b/) | ⚠️ Unaudited |
+| GeodeUtils | unknown | avalanche | n/a | [`0x76e42b4c138e03f4e1719ca5cd1fec13e459fa5b`](./contracts/avalanche-43114/0x76e42b4c138e03f4e1719ca5cd1fec13e459fa5b/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -111,9 +111,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| avalanche | [`0xb25a42...fdc570`](./contracts/avalanche-43114/0xb25a4298f51d6028b50df845c3cbf49f4cfdc570/) | DataStoreUtils | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x1cfbdc...27b24b`](./contracts/avalanche-43114/0x1cfbdc5468f7d10d136c3d92317d50294127b24b/) | gAVAX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x76e42b...59fa5b`](./contracts/avalanche-43114/0x76e42b4c138e03f4e1719ca5cd1fec13e459fa5b/) | GeodeUtils | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0xb25a4298f51d6028b50df845c3cbf49f4cfdc570`](./contracts/avalanche-43114/0xb25a4298f51d6028b50df845c3cbf49f4cfdc570/) | DataStoreUtils | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0x1cfbdc5468f7d10d136c3d92317d50294127b24b`](./contracts/avalanche-43114/0x1cfbdc5468f7d10d136c3d92317d50294127b24b/) | gAVAX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0x76e42b4c138e03f4e1719ca5cd1fec13e459fa5b`](./contracts/avalanche-43114/0x76e42b4c138e03f4e1719ca5cd1fec13e459fa5b/) | GeodeUtils | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

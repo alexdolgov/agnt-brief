@@ -52,17 +52,17 @@ The pinned logic-topography run contains 11 contract row(s) across ethereum. Str
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- FiatTokenProxy (`0x1abaea...1bc33c`, chain 1)
-- FiatTokenProxy (`0xa0b869...06eb48`, chain 1)
-- LinkToken (`0x514910...f986ca`, chain 1)
-- OctToken (`0xf5cfbc...68c6dc`, chain 1)
-- PepeToken (`0x698250...311933`, chain 1)
-- TetherToken (`0xdac17f...831ec7`, chain 1)
-- TokenMintERC20Token (`0x95ad61...64c4ce`, chain 1)
-- TransparentUpgradeableProxy (`0x687496...782f38`, chain 1)
-- Uni (`0x1f9840...01f984`, chain 1)
-- WBTC (`0x2260fa...c2c599`, chain 1)
-- WstETH (`0x7f39c5...5e2ca0`, chain 1)
+- FiatTokenProxy (`0x1abaea1f7c830bd89acc67ec4af516284b1bc33c`, chain 1)
+- FiatTokenProxy (`0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48`, chain 1)
+- LinkToken (`0x514910771af9ca656af840dff83e8264ecf986ca`, chain 1)
+- OctToken (`0xf5cfbc74057c610c8ef151a439252680ac68c6dc`, chain 1)
+- PepeToken (`0x6982508145454ce325ddbe47a25d4ec3d2311933`, chain 1)
+- TetherToken (`0xdac17f958d2ee523a2206206994597c13d831ec7`, chain 1)
+- TokenMintERC20Token (`0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce`, chain 1)
+- TransparentUpgradeableProxy (`0x68749665ff8d2d112fa859aa293f07a622782f38`, chain 1)
+- Uni (`0x1f9840a85d5af5bf1d1762f925bdaddc4201f984`, chain 1)
+- WBTC (`0x2260fac5e5542a773aa44fbcfedf7c193bc2c599`, chain 1)
+- WstETH (`0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0`, chain 1)
 
 ## Contract Surface Quality
 
@@ -108,16 +108,16 @@ The pinned logic-topography run contains 11 contract row(s) across ethereum. Str
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| FiatTokenV2_2 | unknown | project_anchor | own_supporting | 2 | ethereum | unit-381684 (2 proxies) | 2 deployments: ethereum `0x1abaea...1bc33c`; ethereum `0xa0b869...06eb48` | ⚠️ Unaudited |
-| LinkToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381676 | `0x514910...f986ca` | ⚠️ Unaudited |
-| OctToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381683 | `0xf5cfbc...68c6dc` | ⚠️ Unaudited |
-| PepeToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381678 | `0x698250...311933` | ⚠️ Unaudited |
-| TetherToken | unknown | project_anchor | own_supporting | 1 | ethereum | unit-381685 | `0x687496...782f38` | ⚠️ Unaudited |
-| TetherToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381682 | `0xdac17f...831ec7` | ⚠️ Unaudited |
-| TokenMintERC20Token | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381681 | `0x95ad61...64c4ce` | ⚠️ Unaudited |
-| Uni | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381674 | `0x1f9840...01f984` | ⚠️ Unaudited |
-| WBTC | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381675 | `0x2260fa...c2c599` | ⚠️ Unaudited |
-| WstETH | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381680 | `0x7f39c5...5e2ca0` | ⚠️ Unaudited |
+| FiatTokenV2_2 | unknown | project_anchor | own_supporting | 2 | ethereum | unit-381684 (2 proxies) | 2 deployments: ethereum `0x1abaea1f7c830bd89acc67ec4af516284b1bc33c`; ethereum `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48` | ⚠️ Unaudited |
+| LinkToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381676 | `0x514910771af9ca656af840dff83e8264ecf986ca` | ⚠️ Unaudited |
+| OctToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381683 | `0xf5cfbc74057c610c8ef151a439252680ac68c6dc` | ⚠️ Unaudited |
+| PepeToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381678 | `0x6982508145454ce325ddbe47a25d4ec3d2311933` | ⚠️ Unaudited |
+| TetherToken | unknown | project_anchor | own_supporting | 1 | ethereum | unit-381685 | `0x68749665ff8d2d112fa859aa293f07a622782f38` | ⚠️ Unaudited |
+| TetherToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381682 | `0xdac17f958d2ee523a2206206994597c13d831ec7` | ⚠️ Unaudited |
+| TokenMintERC20Token | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381681 | `0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce` | ⚠️ Unaudited |
+| Uni | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381674 | `0x1f9840a85d5af5bf1d1762f925bdaddc4201f984` | ⚠️ Unaudited |
+| WBTC | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381675 | `0x2260fac5e5542a773aa44fbcfedf7c193bc2c599` | ⚠️ Unaudited |
+| WstETH | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381680 | `0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -137,7 +137,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb25ea1...9a9b80` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb25ea1d493b49a1ded42ac5b1208cc618f9a9b80` | ❓ Unverified |
 
 ## Audit Inventory
 

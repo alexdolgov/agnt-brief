@@ -60,22 +60,22 @@ The protocol comprises 5 functional families. Its contracts share 12 common proj
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CompatibilityFallbackHandler | unknown | ethereum | n/a | [`0x3efcbb...be77f4`](./contracts/ethereum-1/0x3efcbb83a4a7afcb4f68d501e2c2203a38be77f4/) | ✅ Audited |
-| CreateCall | unknown | ethereum | n/a | [`0x2ef5ec...da90b4`](./contracts/ethereum-1/0x2ef5ecfbea521449e4de05edb1ce63b75eda90b4/) | ✅ Audited |
-| GnosisSafe | governance | ethereum | n/a | [`0x8cf60b...0bd1d1`](./contracts/ethereum-1/0x8cf60b289f8d31f737049b590b5e4285ff0bd1d1/) | ✅ Audited |
-| MultiSend | unknown | ethereum | n/a | 2 deployments: ethereum [`0x218543...7d7eb7`](./contracts/ethereum-1/0x218543288004cd07832472d464648173c77d7eb7/); ethereum `0xa238cb...7e7761` | ✅ Audited |
-| MultiSendCallOnly | unknown | ethereum | n/a | [`0x9641d7...8102e2`](./contracts/ethereum-1/0x9641d764fc13c8b624c04430c7356c1c7c8102e2/) | ✅ Audited |
-| Safe | unknown | ethereum | n/a | 2 deployments: ethereum [`0x41675c...c7461a`](./contracts/ethereum-1/0x41675c099f32341bf84bfc5382af534df5c7461a/); ethereum `0xff51a5...2ca44b` | ✅ Audited |
-| Safe4337Module | unknown | ethereum | n/a | [`0x75cf11...d5c226`](./contracts/ethereum-1/0x75cf11467937ce3f2f357ce24ffc3dbf8fd5c226/) | ✅ Audited |
-| SafeL2 | unknown | ethereum | n/a | [`0x29fcb4...00c762`](./contracts/ethereum-1/0x29fcb43b46531bca003ddc8fcb67ffe91900c762/) | ✅ Audited |
-| SafeProxyFactory | registry | ethereum | n/a | 2 deployments: ethereum [`0x14f298...165e7b`](./contracts/ethereum-1/0x14f2982d601c9458f93bd70b218933a6f8165e7b/); ethereum `0x4e1dcf...20ec67` | ✅ Audited |
-| SignMessageLib | unknown | ethereum | n/a | [`0xd53cd0...8012c9`](./contracts/ethereum-1/0xd53cd0ab83d845ac265be939c57f53ad838012c9/) | ✅ Audited |
+| CompatibilityFallbackHandler | unknown | ethereum | n/a | [`0x3efcbb83a4a7afcb4f68d501e2c2203a38be77f4`](./contracts/ethereum-1/0x3efcbb83a4a7afcb4f68d501e2c2203a38be77f4/) | ✅ Audited |
+| CreateCall | unknown | ethereum | n/a | [`0x2ef5ecfbea521449e4de05edb1ce63b75eda90b4`](./contracts/ethereum-1/0x2ef5ecfbea521449e4de05edb1ce63b75eda90b4/) | ✅ Audited |
+| GnosisSafe | governance | ethereum | n/a | [`0x8cf60b289f8d31f737049b590b5e4285ff0bd1d1`](./contracts/ethereum-1/0x8cf60b289f8d31f737049b590b5e4285ff0bd1d1/) | ✅ Audited |
+| MultiSend | unknown | ethereum | n/a | 2 deployments: ethereum [`0x218543288004cd07832472d464648173c77d7eb7`](./contracts/ethereum-1/0x218543288004cd07832472d464648173c77d7eb7/); ethereum `0xa238cbeb142c10ef7ad8442c6d1f9e89e07e7761` | ✅ Audited |
+| MultiSendCallOnly | unknown | ethereum | n/a | [`0x9641d764fc13c8b624c04430c7356c1c7c8102e2`](./contracts/ethereum-1/0x9641d764fc13c8b624c04430c7356c1c7c8102e2/) | ✅ Audited |
+| Safe | unknown | ethereum | n/a | 2 deployments: ethereum [`0x41675c099f32341bf84bfc5382af534df5c7461a`](./contracts/ethereum-1/0x41675c099f32341bf84bfc5382af534df5c7461a/); ethereum `0xff51a5898e281db6dfc7855790607438df2ca44b` | ✅ Audited |
+| Safe4337Module | unknown | ethereum | n/a | [`0x75cf11467937ce3f2f357ce24ffc3dbf8fd5c226`](./contracts/ethereum-1/0x75cf11467937ce3f2f357ce24ffc3dbf8fd5c226/) | ✅ Audited |
+| SafeL2 | unknown | ethereum | n/a | [`0x29fcb43b46531bca003ddc8fcb67ffe91900c762`](./contracts/ethereum-1/0x29fcb43b46531bca003ddc8fcb67ffe91900c762/) | ✅ Audited |
+| SafeProxyFactory | registry | ethereum | n/a | 2 deployments: ethereum [`0x14f2982d601c9458f93bd70b218933a6f8165e7b`](./contracts/ethereum-1/0x14f2982d601c9458f93bd70b218933a6f8165e7b/); ethereum `0x4e1dcf7ad4e460cfd30791ccc4f9c8a4f820ec67` | ✅ Audited |
+| SignMessageLib | unknown | ethereum | n/a | [`0xd53cd0ab83d845ac265be939c57f53ad838012c9`](./contracts/ethereum-1/0xd53cd0ab83d845ac265be939c57f53ad838012c9/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| VestingPool | operational_periphery | ethereum | n/a | [`0x96b71e...1ea4ff`](./contracts/ethereum-1/0x96b71e2551915d98d22c448b040a3bc4801ea4ff/) | ⚠️ Unaudited |
+| VestingPool | operational_periphery | ethereum | n/a | [`0x96b71e2551915d98d22c448b040a3bc4801ea4ff`](./contracts/ethereum-1/0x96b71e2551915d98d22c448b040a3bc4801ea4ff/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,7 +95,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0xa581c4...0b4037` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xa581c4a4db7175302464ff3c06380bc3270b4037` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -126,7 +126,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x96b71e...1ea4ff`](./contracts/ethereum-1/0x96b71e2551915d98d22c448b040a3bc4801ea4ff/) | VestingPool | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x96b71e2551915d98d22c448b040a3bc4801ea4ff`](./contracts/ethereum-1/0x96b71e2551915d98d22c448b040a3bc4801ea4ff/) | VestingPool | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

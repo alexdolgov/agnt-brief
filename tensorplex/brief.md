@@ -61,9 +61,9 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BridgeWrapper | operational_periphery | ethereum | n/a | [`0xecaec5...b03b1c`](./contracts/ethereum-1/0xecaec5e1cfaa7a7f0c5a097dcbdf9140f3b03b1c/) | ⚠️ Unaudited |
-| ConsensusBridge | operational_periphery | ethereum | n/a | [`0x353876...8b17d5`](./contracts/ethereum-1/0x3538767654f6a2d2f3330a601b6b0a390b8b17d5/) | ⚠️ Unaudited |
-| GnosisSafe | governance | ethereum | n/a | [`0xfb47f5...6d68f3`](./contracts/ethereum-1/0xfb47f57c064a0032ee66f98566dedce2aa6d68f3/) | ⚠️ Unaudited |
+| BridgeWrapper | operational_periphery | ethereum | n/a | [`0xecaec5e1cfaa7a7f0c5a097dcbdf9140f3b03b1c`](./contracts/ethereum-1/0xecaec5e1cfaa7a7f0c5a097dcbdf9140f3b03b1c/) | ⚠️ Unaudited |
+| ConsensusBridge | operational_periphery | ethereum | n/a | [`0x3538767654f6a2d2f3330a601b6b0a390b8b17d5`](./contracts/ethereum-1/0x3538767654f6a2d2f3330a601b6b0a390b8b17d5/) | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | n/a | [`0xfb47f57c064a0032ee66f98566dedce2aa6d68f3`](./contracts/ethereum-1/0xfb47f57c064a0032ee66f98566dedce2aa6d68f3/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,8 +95,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xecaec5...b03b1c`](./contracts/ethereum-1/0xecaec5e1cfaa7a7f0c5a097dcbdf9140f3b03b1c/) | BridgeWrapper | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x353876...8b17d5`](./contracts/ethereum-1/0x3538767654f6a2d2f3330a601b6b0a390b8b17d5/) | ConsensusBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xecaec5e1cfaa7a7f0c5a097dcbdf9140f3b03b1c`](./contracts/ethereum-1/0xecaec5e1cfaa7a7f0c5a097dcbdf9140f3b03b1c/) | BridgeWrapper | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x3538767654f6a2d2f3330a601b6b0a390b8b17d5`](./contracts/ethereum-1/0x3538767654f6a2d2f3330a601b6b0a390b8b17d5/) | ConsensusBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -60,23 +60,23 @@ The protocol comprises 5 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| IdolMain | unknown | ethereum | n/a | [`0x439cac...d17094`](./contracts/ethereum-1/0x439cac149b935ae1d726569800972e1669d17094/) | ✅ Audited |
-| IdolMarketplace | unknown | ethereum | n/a | 4 deployments: ethereum [`0x0dd5a3...ea29e7`](./contracts/ethereum-1/0x0dd5a35fe4cd65fe7928c7b923902b43d6ea29e7/); ethereum `0x4a0ced...b76652`; ethereum `0x4ce4f4...db3bbf`; ethereum `0x523fbd...2df5e6` | ✅ Audited |
-| IdolMintContract | unknown | ethereum | n/a | [`0x7b4b02...3cdc5e`](./contracts/ethereum-1/0x7b4b02372d8e54c1c0454d97f01d85ef203cdc5e/) | ✅ Audited |
-| VirtueToken | token | ethereum | n/a | [`0x9416ba...86b863`](./contracts/ethereum-1/0x9416ba76e88d873050a06e5956a3ebf10386b863/) | ✅ Audited |
+| IdolMain | unknown | ethereum | n/a | [`0x439cac149b935ae1d726569800972e1669d17094`](./contracts/ethereum-1/0x439cac149b935ae1d726569800972e1669d17094/) | ✅ Audited |
+| IdolMarketplace | unknown | ethereum | n/a | 4 deployments: ethereum [`0x0dd5a35fe4cd65fe7928c7b923902b43d6ea29e7`](./contracts/ethereum-1/0x0dd5a35fe4cd65fe7928c7b923902b43d6ea29e7/); ethereum `0x4a0cedd8abf9fc5a0187cf9faa0a2466bab76652`; ethereum `0x4ce4f4c4891876ffc0670bd9a25fcc4597db3bbf`; ethereum `0x523fbd08ead56490dbbfa008ef582e7a272df5e6` | ✅ Audited |
+| IdolMintContract | unknown | ethereum | n/a | [`0x7b4b02372d8e54c1c0454d97f01d85ef203cdc5e`](./contracts/ethereum-1/0x7b4b02372d8e54c1c0454d97f01d85ef203cdc5e/) | ✅ Audited |
+| VirtueToken | token | ethereum | n/a | [`0x9416ba76e88d873050a06e5956a3ebf10386b863`](./contracts/ethereum-1/0x9416ba76e88d873050a06e5956a3ebf10386b863/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (8)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| IdolGoldlist | unknown | ethereum | n/a | [`0x6dc988...986aa5`](./contracts/ethereum-1/0x6dc9886f694ba078f617c53d6330e001f6986aa5/) | ⚠️ Unaudited |
-| Lido | unknown | ethereum | n/a | [`0xae7ab9...d7fe84`](./contracts/ethereum-1/0xae7ab96520de3a18e5e111b5eaab095312d7fe84/) | ⚠️ Unaudited |
-| MarketplaceRefundContract | unknown | ethereum | n/a | [`0x87d2ed...8b8c8b`](./contracts/ethereum-1/0x87d2edba911c7e2e13580af897ba77e47e8b8c8b/) | ⚠️ Unaudited |
-| OfferingRefundContract | unknown | ethereum | n/a | [`0x2e94c0...78e8ad`](./contracts/ethereum-1/0x2e94c074d7360dccf0d7b2891d867b734978e8ad/) | ⚠️ Unaudited |
-| VirtueEthRewards | unknown | ethereum | n/a | [`0xc73b93...9b7baf`](./contracts/ethereum-1/0xc73b93885f10c5eaf8cb126495bbd14d3b9b7baf/) | ⚠️ Unaudited |
-| VirtueZapperContract | adapter | ethereum | n/a | [`0x42455b...daa635`](./contracts/ethereum-1/0x42455baefaaaa545c1cf501329d21acec1daa635/) | ⚠️ Unaudited |
-| VirtuousHourAirdrop | operational_periphery | ethereum | n/a | [`0x5fc37a...263f76`](./contracts/ethereum-1/0x5fc37a6ae6dd977bebbeb2831ead35bfb7263f76/) | ⚠️ Unaudited |
-| Vyper_contract | unknown | ethereum | n/a | [`0xdc2431...f67022`](./contracts/ethereum-1/0xdc24316b9ae028f1497c275eb9192a3ea0f67022/) | ⚠️ Unaudited |
+| IdolGoldlist | unknown | ethereum | n/a | [`0x6dc9886f694ba078f617c53d6330e001f6986aa5`](./contracts/ethereum-1/0x6dc9886f694ba078f617c53d6330e001f6986aa5/) | ⚠️ Unaudited |
+| Lido | unknown | ethereum | n/a | [`0xae7ab96520de3a18e5e111b5eaab095312d7fe84`](./contracts/ethereum-1/0xae7ab96520de3a18e5e111b5eaab095312d7fe84/) | ⚠️ Unaudited |
+| MarketplaceRefundContract | unknown | ethereum | n/a | [`0x87d2edba911c7e2e13580af897ba77e47e8b8c8b`](./contracts/ethereum-1/0x87d2edba911c7e2e13580af897ba77e47e8b8c8b/) | ⚠️ Unaudited |
+| OfferingRefundContract | unknown | ethereum | n/a | [`0x2e94c074d7360dccf0d7b2891d867b734978e8ad`](./contracts/ethereum-1/0x2e94c074d7360dccf0d7b2891d867b734978e8ad/) | ⚠️ Unaudited |
+| VirtueEthRewards | unknown | ethereum | n/a | [`0xc73b93885f10c5eaf8cb126495bbd14d3b9b7baf`](./contracts/ethereum-1/0xc73b93885f10c5eaf8cb126495bbd14d3b9b7baf/) | ⚠️ Unaudited |
+| VirtueZapperContract | adapter | ethereum | n/a | [`0x42455baefaaaa545c1cf501329d21acec1daa635`](./contracts/ethereum-1/0x42455baefaaaa545c1cf501329d21acec1daa635/) | ⚠️ Unaudited |
+| VirtuousHourAirdrop | operational_periphery | ethereum | n/a | [`0x5fc37a6ae6dd977bebbeb2831ead35bfb7263f76`](./contracts/ethereum-1/0x5fc37a6ae6dd977bebbeb2831ead35bfb7263f76/) | ⚠️ Unaudited |
+| Vyper_contract | unknown | ethereum | n/a | [`0xdc24316b9ae028f1497c275eb9192a3ea0f67022`](./contracts/ethereum-1/0xdc24316b9ae028f1497c275eb9192a3ea0f67022/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -96,10 +96,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x17d7e5...9b4eaa` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x734324...a7c677` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x815c5d...a7741e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xd272d2...47be2c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x17d7e56c3744006bc214bf11db4953d5cf9b4eaa` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x7343241a210b4c13bc6d805612d2e61d4aa7c677` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x815c5d8fd4c029d611de4344582cee38ffa7741e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd272d2c89c4e7309e24799c3e030987bbd47be2c` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -114,13 +114,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x6dc988...986aa5`](./contracts/ethereum-1/0x6dc9886f694ba078f617c53d6330e001f6986aa5/) | IdolGoldlist | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x87d2ed...8b8c8b`](./contracts/ethereum-1/0x87d2edba911c7e2e13580af897ba77e47e8b8c8b/) | MarketplaceRefundContract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2e94c0...78e8ad`](./contracts/ethereum-1/0x2e94c074d7360dccf0d7b2891d867b734978e8ad/) | OfferingRefundContract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc73b93...9b7baf`](./contracts/ethereum-1/0xc73b93885f10c5eaf8cb126495bbd14d3b9b7baf/) | VirtueEthRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x42455b...daa635`](./contracts/ethereum-1/0x42455baefaaaa545c1cf501329d21acec1daa635/) | VirtueZapperContract | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x5fc37a...263f76`](./contracts/ethereum-1/0x5fc37a6ae6dd977bebbeb2831ead35bfb7263f76/) | VirtuousHourAirdrop | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xdc2431...f67022`](./contracts/ethereum-1/0xdc24316b9ae028f1497c275eb9192a3ea0f67022/) | Vyper_contract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6dc9886f694ba078f617c53d6330e001f6986aa5`](./contracts/ethereum-1/0x6dc9886f694ba078f617c53d6330e001f6986aa5/) | IdolGoldlist | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x87d2edba911c7e2e13580af897ba77e47e8b8c8b`](./contracts/ethereum-1/0x87d2edba911c7e2e13580af897ba77e47e8b8c8b/) | MarketplaceRefundContract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x2e94c074d7360dccf0d7b2891d867b734978e8ad`](./contracts/ethereum-1/0x2e94c074d7360dccf0d7b2891d867b734978e8ad/) | OfferingRefundContract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc73b93885f10c5eaf8cb126495bbd14d3b9b7baf`](./contracts/ethereum-1/0xc73b93885f10c5eaf8cb126495bbd14d3b9b7baf/) | VirtueEthRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x42455baefaaaa545c1cf501329d21acec1daa635`](./contracts/ethereum-1/0x42455baefaaaa545c1cf501329d21acec1daa635/) | VirtueZapperContract | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5fc37a6ae6dd977bebbeb2831ead35bfb7263f76`](./contracts/ethereum-1/0x5fc37a6ae6dd977bebbeb2831ead35bfb7263f76/) | VirtuousHourAirdrop | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xdc24316b9ae028f1497c275eb9192a3ea0f67022`](./contracts/ethereum-1/0xdc24316b9ae028f1497c275eb9192a3ea0f67022/) | Vyper_contract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

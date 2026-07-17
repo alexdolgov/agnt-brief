@@ -59,7 +59,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| TradingVault | core_logic | scroll | n/a | [`0xa79e00...ef6e3d`](./contracts/scroll-534352/0xa79e00e68549e91e5f0c27048f453b3d87ef6e3d/) | ✅ Audited |
+| TradingVault | core_logic | scroll | n/a | [`0xa79e00e68549e91e5f0c27048f453b3d87ef6e3d`](./contracts/scroll-534352/0xa79e00e68549e91e5f0c27048f453b3d87ef6e3d/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 

@@ -52,11 +52,11 @@ The pinned logic-topography run contains 5 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- BLUSDToken (`0xb9d7dd...3f79c3`, chain 1)
-- BondNFT (`0xa83848...4029ee`, chain 1)
-- ChickenBondManager (`0x57619f...e37137`, chain 1)
-- Vyper_contract (`0x74ed5d...7b901c`, chain 1)
-- Vyper_contract (`0xda0dd1...9c2db4`, chain 1)
+- BLUSDToken (`0xb9d7dddca9a4ac480991865efef82e01273f79c3`, chain 1)
+- BondNFT (`0xa8384862219188a8f03c144953cf21fc124029ee`, chain 1)
+- ChickenBondManager (`0x57619fe9c539f890b19c61812226f9703ce37137`, chain 1)
+- Vyper_contract (`0x74ed5d42203806c8cdcf2f04ca5f60dc777b901c`, chain 1)
+- Vyper_contract (`0xda0dd1798be66e17d5ab1dc476302b56689c2db4`, chain 1)
 
 ## Contract Surface Quality
 
@@ -101,18 +101,18 @@ The pinned logic-topography run contains 5 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BLUSDToken | token | project_anchor | own_supporting | 0 | ethereum | unit-245800 | `0xb9d7dd...3f79c3` | ✅ Audited |
-| BondNFT | token | project_anchor | own_supporting | 0 | ethereum | unit-245799 | `0xa83848...4029ee` | ✅ Audited |
-| ChickenBondManager | governance | project_anchor | own_supporting | 0 | ethereum | unit-245797 | `0x57619f...e37137` | ✅ Audited |
+| BLUSDToken | token | project_anchor | own_supporting | 0 | ethereum | unit-245800 | `0xb9d7dddca9a4ac480991865efef82e01273f79c3` | ✅ Audited |
+| BondNFT | token | project_anchor | own_supporting | 0 | ethereum | unit-245799 | `0xa8384862219188a8f03c144953cf21fc124029ee` | ✅ Audited |
+| ChickenBondManager | governance | project_anchor | own_supporting | 0 | ethereum | unit-245797 | `0x57619fe9c539f890b19c61812226f9703ce37137` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (4)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| GnosisSafe | governance | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xfeb4ac...faff52` | ⚠️ Unaudited |
-| Vyper_contract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x5fa5b6...3c56a6`; ethereum `0xbebc44...2ff1c7`; ethereum `0xed279f...23f0ca` | ⚠️ Unaudited |
-| Vyper_contract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-245798 | `0x74ed5d...7b901c` | ⚠️ Unaudited |
-| Vyper_contract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-245801 | `0xda0dd1...9c2db4` | ⚠️ Unaudited |
+| GnosisSafe | governance | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xfeb4acf3df3cdea7399794d0869ef76a6efaff52` | ⚠️ Unaudited |
+| Vyper_contract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x5fa5b62c8af877cb37031e0a3b2f34a78e3c56a6`; ethereum `0xbebc44782c7db0a1a60cb6fe97d0b483032ff1c7`; ethereum `0xed279fdd11ca84beef15af5d39bb4d4bee23f0ca` | ⚠️ Unaudited |
+| Vyper_contract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-245798 | `0x74ed5d42203806c8cdcf2f04ca5f60dc777b901c` | ⚠️ Unaudited |
+| Vyper_contract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-245801 | `0xda0dd1798be66e17d5ab1dc476302b56689c2db4` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -166,10 +166,10 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | B.Protocol - Chicken Bonds Audit.pdf | GemSeller | unmatched — not counted | — | listed in scope | no |
 | B.Protocol - Chicken Bonds Audit.pdf | GemSellerController | unmatched — not counted | — | listed in scope | no |
 | B.Protocol - Chicken Bonds Audit.pdf | UniV3Twap | unmatched — not counted | — | listed in scope | no |
-| Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | BLUSDToken | own contract | BLUSDToken (selected) `0xb9d7dd...3f79c3` — deployed 2022-10-04 13:02:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | BLUSDToken | own contract | BLUSDToken (selected) `0xb9d7dddca9a4ac480991865efef82e01273f79c3` — deployed 2022-10-04 13:02:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | BaseMath | unmatched — not counted | — | — | no |
-| Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | BondNFT | own contract | BondNFT (selected) `0xa83848...4029ee` — deployed 2022-10-04 13:03:11+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | ChickenBondManager | own contract | ChickenBondManager (selected) `0x57619f...e37137` — deployed 2022-10-04 13:04:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | BondNFT | own contract | BondNFT (selected) `0xa8384862219188a8f03c144953cf21fc124029ee` — deployed 2022-10-04 13:03:11+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | ChickenBondManager | own contract | ChickenBondManager (selected) `0x57619fe9c539f890b19c61812226f9703ce37137` — deployed 2022-10-04 13:04:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | ChickenBondOperationsScript | unmatched — not counted | — | — | no |
 | Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | ChickenMath | unmatched — not counted | — | — | no |
 | Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | IBLUSDToken | unmatched — not counted | — | — | no |
@@ -188,10 +188,10 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | MockYearnVault | unmatched — not counted | — | — | no |
 | Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | StrategyAPI | unmatched — not counted | — | — | no |
 | Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | console | unmatched — not counted | — | — | no |
-| Coinspect - Smart Contract Audit - Liquity ChickenBonds 2nd v220803.pdf | BLUSDToken | own contract | BLUSDToken (selected) `0xb9d7dd...3f79c3` — deployed 2022-10-04 13:02:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 2nd v220803.pdf | BLUSDToken | own contract | BLUSDToken (selected) `0xb9d7dddca9a4ac480991865efef82e01273f79c3` — deployed 2022-10-04 13:02:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Coinspect - Smart Contract Audit - Liquity ChickenBonds 2nd v220803.pdf | BaseMath | unmatched — not counted | — | — | no |
-| Coinspect - Smart Contract Audit - Liquity ChickenBonds 2nd v220803.pdf | BondNFT | own contract | BondNFT (selected) `0xa83848...4029ee` — deployed 2022-10-04 13:03:11+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Coinspect - Smart Contract Audit - Liquity ChickenBonds 2nd v220803.pdf | ChickenBondManager | own contract | ChickenBondManager (selected) `0x57619f...e37137` — deployed 2022-10-04 13:04:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 2nd v220803.pdf | BondNFT | own contract | BondNFT (selected) `0xa8384862219188a8f03c144953cf21fc124029ee` — deployed 2022-10-04 13:03:11+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 2nd v220803.pdf | ChickenBondManager | own contract | ChickenBondManager (selected) `0x57619fe9c539f890b19c61812226f9703ce37137` — deployed 2022-10-04 13:04:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Coinspect - Smart Contract Audit - Liquity ChickenBonds 2nd v220803.pdf | ChickenBondOperationsScript | unmatched — not counted | — | — | no |
 | Coinspect - Smart Contract Audit - Liquity ChickenBonds 2nd v220803.pdf | ChickenMath | unmatched — not counted | — | — | no |
 | Coinspect - Smart Contract Audit - Liquity ChickenBonds 2nd v220803.pdf | IBAMM | unmatched — not counted | — | — | no |
@@ -205,10 +205,10 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Coinspect - Smart Contract Audit - Liquity ChickenBonds 2nd v220803.pdf | IYearnRegistry | unmatched — not counted | — | — | no |
 | Coinspect - Smart Contract Audit - Liquity ChickenBonds 2nd v220803.pdf | IYearnVault | unmatched — not counted | — | — | no |
 | Coinspect - Smart Contract Audit - Liquity ChickenBonds 2nd v220803.pdf | StrategyAPI | unmatched — not counted | — | — | no |
-| Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | BLUSDToken | own contract | BLUSDToken (selected) `0xb9d7dd...3f79c3` — deployed 2022-10-04 13:02:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | BLUSDToken | own contract | BLUSDToken (selected) `0xb9d7dddca9a4ac480991865efef82e01273f79c3` — deployed 2022-10-04 13:02:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | BaseMath | unmatched — not counted | — | — | no |
-| Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | BondNFT | own contract | BondNFT (selected) `0xa83848...4029ee` — deployed 2022-10-04 13:03:11+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | ChickenBondManager | own contract | ChickenBondManager (selected) `0x57619f...e37137` — deployed 2022-10-04 13:04:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | BondNFT | own contract | BondNFT (selected) `0xa8384862219188a8f03c144953cf21fc124029ee` — deployed 2022-10-04 13:03:11+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | ChickenBondManager | own contract | ChickenBondManager (selected) `0x57619fe9c539f890b19c61812226f9703ce37137` — deployed 2022-10-04 13:04:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | ChickenBondOperationsScript | unmatched — not counted | — | — | no |
 | Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | ChickenMath | unmatched — not counted | — | — | no |
 | Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | EggTraitWeights | unmatched — not counted | — | — | no |
@@ -230,18 +230,18 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | SimpleEggArtwork | unmatched — not counted | — | — | no |
 | Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | StrategyAPI | unmatched — not counted | — | — | no |
 | Coinspect - Smart Contract Audit - Liquity ChickenBonds 4th v221021.pdf | BLUSDLPZAP | unmatched — not counted | — | — | no |
-| Coinspect - Smart Contract Audit - Liquity ChickenBonds 4th v221021.pdf | BondNFT | own contract | BondNFT (selected) `0xa83848...4029ee` — deployed 2022-10-04 13:03:11+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Coinspect - Smart Contract Audit - Liquity ChickenBonds 4th v221021.pdf | ChickenBondManager | own contract | ChickenBondManager (selected) `0x57619f...e37137` — deployed 2022-10-04 13:04:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 4th v221021.pdf | BondNFT | own contract | BondNFT (selected) `0xa8384862219188a8f03c144953cf21fc124029ee` — deployed 2022-10-04 13:03:11+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 4th v221021.pdf | ChickenBondManager | own contract | ChickenBondManager (selected) `0x57619fe9c539f890b19c61812226f9703ce37137` — deployed 2022-10-04 13:04:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Coinspect - Smart Contract Audit - Liquity ChickenBonds 4th v221021.pdf | ChickenInArtwork | unmatched — not counted | — | — | no |
-| Dedaub_Chicken Bonds Audit.pdf | BLUSDToken | own contract | BLUSDToken (selected) `0xb9d7dd...3f79c3` — deployed 2022-10-04 13:02:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Dedaub_Chicken Bonds Audit.pdf | BLUSDToken | own contract | BLUSDToken (selected) `0xb9d7dddca9a4ac480991865efef82e01273f79c3` — deployed 2022-10-04 13:02:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Dedaub_Chicken Bonds Audit.pdf | BaseMath | unmatched — not counted | — | — | no |
-| Dedaub_Chicken Bonds Audit.pdf | BondNFT | own contract | BondNFT (selected) `0xa83848...4029ee` — deployed 2022-10-04 13:03:11+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Dedaub_Chicken Bonds Audit.pdf | ChickenBondManager | own contract | ChickenBondManager (selected) `0x57619f...e37137` — deployed 2022-10-04 13:04:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Dedaub_Chicken Bonds Audit.pdf | BondNFT | own contract | BondNFT (selected) `0xa8384862219188a8f03c144953cf21fc124029ee` — deployed 2022-10-04 13:03:11+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Dedaub_Chicken Bonds Audit.pdf | ChickenBondManager | own contract | ChickenBondManager (selected) `0x57619fe9c539f890b19c61812226f9703ce37137` — deployed 2022-10-04 13:04:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Dedaub_Chicken Bonds Audit.pdf | ChickenMath | unmatched — not counted | — | — | no |
-| Dedaub_Chicken Bonds Delta Audit (NFT additions).pdf | BLUSDToken | own contract | BLUSDToken (selected) `0xb9d7dd...3f79c3` — deployed 2022-10-04 13:02:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Dedaub_Chicken Bonds Delta Audit (NFT additions).pdf | BLUSDToken | own contract | BLUSDToken (selected) `0xb9d7dddca9a4ac480991865efef82e01273f79c3` — deployed 2022-10-04 13:02:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Dedaub_Chicken Bonds Delta Audit (NFT additions).pdf | BaseMath | unmatched — not counted | — | — | no |
-| Dedaub_Chicken Bonds Delta Audit (NFT additions).pdf | BondNFT | own contract | BondNFT (selected) `0xa83848...4029ee` — deployed 2022-10-04 13:03:11+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Dedaub_Chicken Bonds Delta Audit (NFT additions).pdf | ChickenBondManager | own contract | ChickenBondManager (selected) `0x57619f...e37137` — deployed 2022-10-04 13:04:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Dedaub_Chicken Bonds Delta Audit (NFT additions).pdf | BondNFT | own contract | BondNFT (selected) `0xa8384862219188a8f03c144953cf21fc124029ee` — deployed 2022-10-04 13:03:11+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Dedaub_Chicken Bonds Delta Audit (NFT additions).pdf | ChickenBondManager | own contract | ChickenBondManager (selected) `0x57619fe9c539f890b19c61812226f9703ce37137` — deployed 2022-10-04 13:04:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Dedaub_Chicken Bonds Delta Audit (NFT additions).pdf | ChickenMath | unmatched — not counted | — | — | no |
 | Dedaub_Chicken Bonds Delta Audit (NFT additions).pdf | GenerativeEggArtwork | unmatched — not counted | — | — | no |
 | Dedaub_Chicken Bonds Delta Audit (NFT additions).pdf | SimpleEggArtwork | unmatched — not counted | — | — | no |
@@ -252,8 +252,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x74ed5d...7b901c` | Vyper_contract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xda0dd1...9c2db4` | Vyper_contract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x74ed5d42203806c8cdcf2f04ca5f60dc777b901c` | Vyper_contract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xda0dd1798be66e17d5ab1dc476302b56689c2db4` | Vyper_contract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

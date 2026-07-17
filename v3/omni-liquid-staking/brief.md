@@ -89,11 +89,11 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| MoonbeamSlpx | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | unit-157998 | `0x0e13c5...e0a29d` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | unit-157996 | `0x051713...7ccb58` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | unit-157999 | `0x20ae8a...5f74a1` | ⚠️ Unaudited |
-| XC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | unit-157995 | `0xffffff...899abf` | ⚠️ Unaudited |
-| XcmOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | unit-157997 | `0x0b8e6d...0399b1` | ⚠️ Unaudited |
+| MoonbeamSlpx | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | unit-157998 | `0x0e13c5327914929b62a1809f62ad044c4be0a29d` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | unit-157996 | `0x051713fd66845a13bf23baca008c5c22c27ccb58` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | unit-157999 | `0x20ae8a2aa8ccb2a096a8b3510c5c15854a5f74a1` | ⚠️ Unaudited |
+| XC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | unit-157995 | `0xffffffff15e1b7e3df971dd813bc394deb899abf` | ⚠️ Unaudited |
+| XcmOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | unit-157997 | `0x0b8e6d7974b4f8e23ac520e786b4cb5f120399b1` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

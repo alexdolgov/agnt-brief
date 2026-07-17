@@ -60,17 +60,17 @@ The protocol comprises 5 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| MarginlyFactory | registry | ethereum | n/a | 3 deployments: ethereum [`0x0721f6...b1d4a5`](./contracts/ethereum-1/0x0721f616a6e2d4d7a47eed87d268bf0454b1d4a5/); ethereum `0xc1ac50...dd9fe2`; ethereum `0xf8d88a...fd7070` | ✅ Audited |
-| MarginlyPool | core_logic | arbitrum | n/a | 7 deployments: ethereum `0x34ad00...753b7f`; ethereum `0x96244d...11eecb`; arbitrum [`0x0f750f...876d94`](./contracts/arbitrum-42161/0x0f750fbb044037254b5843c6b4a715aa12876d94/); arbitrum `0x53c08a...e93b93`; arbitrum `0x5ceb22...4bce70`; arbitrum `0x87e711...d43b86`; blast `0xb312d6...35b3e5` | ✅ Audited |
-| MarginlyRouter | unknown | ethereum | n/a | 3 deployments: ethereum [`0x47394f...80cd63`](./contracts/ethereum-1/0x47394fa722af686fd9263465c7120f012680cd63/); ethereum `0x6ec485...c33f31`; ethereum `0xcf3306...1223b4` | ✅ Audited |
-| PythOracle | unknown | ethereum | n/a | [`0x7988ac...230fa0`](./contracts/ethereum-1/0x7988ac69133c5d5e4970476f8d6fcab994230fa0/) | ✅ Audited |
+| MarginlyFactory | registry | ethereum | n/a | 3 deployments: ethereum [`0x0721f616a6e2d4d7a47eed87d268bf0454b1d4a5`](./contracts/ethereum-1/0x0721f616a6e2d4d7a47eed87d268bf0454b1d4a5/); ethereum `0xc1ac50d46783387f4236a8364435b5cceadd9fe2`; ethereum `0xf8d88a292b0afa85e5cf0d1195d0d3728cfd7070` | ✅ Audited |
+| MarginlyPool | core_logic | arbitrum | n/a | 7 deployments: ethereum `0x34ad008303b2c48668a1d567306cc84f2e753b7f`; ethereum `0x96244d564d5f2661c9a7b653e857246a8311eecb`; arbitrum [`0x0f750fbb044037254b5843c6b4a715aa12876d94`](./contracts/arbitrum-42161/0x0f750fbb044037254b5843c6b4a715aa12876d94/); arbitrum `0x53c08a5e2b7bc973d3d5aee60373969e30e93b93`; arbitrum `0x5ceb22fe09c7259b9dceef243615f180664bce70`; arbitrum `0x87e711bcb9ed1f2f6dec8fcc74cd2e0613d43b86`; blast `0xb312d61915c878938fce09d13dd3006c6835b3e5` | ✅ Audited |
+| MarginlyRouter | unknown | ethereum | n/a | 3 deployments: ethereum [`0x47394fa722af686fd9263465c7120f012680cd63`](./contracts/ethereum-1/0x47394fa722af686fd9263465c7120f012680cd63/); ethereum `0x6ec48569a33e9465c5325ff205afa81209c33f31`; ethereum `0xcf33069db942ddcc2f42917f552157249d1223b4` | ✅ Audited |
+| PythOracle | unknown | ethereum | n/a | [`0x7988ac69133c5d5e4970476f8d6fcab994230fa0`](./contracts/ethereum-1/0x7988ac69133c5d5e4970476f8d6fcab994230fa0/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| TimelockController | unknown | ethereum | n/a | 2 deployments: ethereum [`0x54da69...d052ef`](./contracts/ethereum-1/0x54da69e2c91a1886fd9c36f0e7f16f015cd052ef/); ethereum `0x63de6d...1244c5` | ⚠️ Unaudited |
-| TimelockWhitelist | governance | ethereum | n/a | [`0x8cdaf2...7b8aa5`](./contracts/ethereum-1/0x8cdaf202ebe2f38488074dcfca08c0b0cb7b8aa5/) | ⚠️ Unaudited |
+| TimelockController | unknown | ethereum | n/a | 2 deployments: ethereum [`0x54da69e2c91a1886fd9c36f0e7f16f015cd052ef`](./contracts/ethereum-1/0x54da69e2c91a1886fd9c36f0e7f16f015cd052ef/); ethereum `0x63de6d2ec4289339569250dc000b658c7f1244c5` | ⚠️ Unaudited |
+| TimelockWhitelist | governance | ethereum | n/a | [`0x8cdaf202ebe2f38488074dcfca08c0b0cb7b8aa5`](./contracts/ethereum-1/0x8cdaf202ebe2f38488074dcfca08c0b0cb7b8aa5/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -90,9 +90,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x9ffd55...d67316` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xcddba9...e19958` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xd8ac17...d06d3f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x9ffd55a972369283d4b8527b6953d38bb8d67316` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xcddba9e308a71375fce9abbebace15dbece19958` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd8ac17f34e6973ede78c884709c49b8b5fd06d3f` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -109,7 +109,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x8cdaf2...7b8aa5`](./contracts/ethereum-1/0x8cdaf202ebe2f38488074dcfca08c0b0cb7b8aa5/) | TimelockWhitelist | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8cdaf202ebe2f38488074dcfca08c0b0cb7b8aa5`](./contracts/ethereum-1/0x8cdaf202ebe2f38488074dcfca08c0b0cb7b8aa5/) | TimelockWhitelist | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

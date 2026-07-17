@@ -59,17 +59,17 @@ The protocol comprises 5 functional families. Its contracts share 7 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| JumpRateModelV4 | unknown | linea | n/a | 3 deployments: linea [`0x23b9cb...780cb7`](./contracts/linea-59144/0x23b9cb6f49100c54fa2a13ba0f85832b38780cb7/); linea `0x62c31a...5c02d0`; linea `0x85a58a...93ea19` | ✅ Audited |
-| RewardDistributor | unknown | linea | n/a | 2 deployments: linea [`0x052932...8b7ca5`](./contracts/linea-59144/0x052932456a8fd199cd33be91312638a35c8b7ca5/); linea `0x3b9b93...013d40` | ✅ Audited |
+| JumpRateModelV4 | unknown | linea | n/a | 3 deployments: linea [`0x23b9cb6f49100c54fa2a13ba0f85832b38780cb7`](./contracts/linea-59144/0x23b9cb6f49100c54fa2a13ba0f85832b38780cb7/); linea `0x62c31a75334e566aa049ab24a2ff13ac3a5c02d0`; linea `0x85a58adc34401e0792037d0e512f7e9b0b93ea19` | ✅ Audited |
+| RewardDistributor | unknown | linea | n/a | 2 deployments: linea [`0x052932456a8fd199cd33be91312638a35c8b7ca5`](./contracts/linea-59144/0x052932456a8fd199cd33be91312638a35c8b7ca5/); linea `0x3b9b9364bf69761d308145371c38d9b558013d40` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (4)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| GnosisSafeL2 | governance | linea | n/a | [`0xe3cda0...aee9ee`](./contracts/linea-59144/0xe3cda0a0896b70f0ebc6a1848096529aa7aee9ee/) | ⚠️ Unaudited |
-| Mendi | unknown | linea | n/a | [`0x43e880...44065f`](./contracts/linea-59144/0x43e8809ea748eff3204ee01f08872f063e44065f/) | ⚠️ Unaudited |
-| MendiLoyaltyPoint | unknown | linea | n/a | 2 deployments: linea [`0x688ff5...26dea1`](./contracts/linea-59144/0x688ff5acedd3295ae4b60cc613a9a3fa5326dea1/); linea `0xea5747...b7eb52` | ⚠️ Unaudited |
-| OwnedDistributor | operational_periphery | linea | n/a | 3 deployments: linea [`0x5df210...2bc434`](./contracts/linea-59144/0x5df2107a5b5e7b0b19dd7ded7470e8d9792bc434/); linea `0x5f9668...c38d61`; linea `0x716f2d...1053f5` | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | linea | n/a | [`0xe3cda0a0896b70f0ebc6a1848096529aa7aee9ee`](./contracts/linea-59144/0xe3cda0a0896b70f0ebc6a1848096529aa7aee9ee/) | ⚠️ Unaudited |
+| Mendi | unknown | linea | n/a | [`0x43e8809ea748eff3204ee01f08872f063e44065f`](./contracts/linea-59144/0x43e8809ea748eff3204ee01f08872f063e44065f/) | ⚠️ Unaudited |
+| MendiLoyaltyPoint | unknown | linea | n/a | 2 deployments: linea [`0x688ff5acedd3295ae4b60cc613a9a3fa5326dea1`](./contracts/linea-59144/0x688ff5acedd3295ae4b60cc613a9a3fa5326dea1/); linea `0xea57474c20c4bb3f0fea4a5d2996c1e636b7eb52` | ⚠️ Unaudited |
+| OwnedDistributor | operational_periphery | linea | n/a | 3 deployments: linea [`0x5df2107a5b5e7b0b19dd7ded7470e8d9792bc434`](./contracts/linea-59144/0x5df2107a5b5e7b0b19dd7ded7470e8d9792bc434/); linea `0x5f9668b84c469b6c2791b1e77ca2fac832c38d61`; linea `0x716f2de8a4de036ffe2b806a2948060a6f1053f5` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -89,17 +89,17 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | linea | n/a | `0x23c603...34b2b1` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0x2b2b78...1699c6` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0x7fab16...532492` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0x8208dd...9d242d` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0x87f99c...a99788` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0xacf19d...871e5f` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0xaef45c...596835` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0xb1c144...cf1fe1` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0xb20b9a...8ba9a5` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0xc21b80...b18173` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0xf40175...edc271` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0x23c6035ebc88e35f3846d3b9f494a9996334b2b1` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0x2b2b780f9fefb65d8e60ff986e04be062f1699c6` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0x7fab165a9f9c02dbced3c319936f2b19f3532492` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0x8208dd4e40c97469091e2af4862659e2f59d242d` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0x87f99ccb9bb8c12c0c5ca8b100610e3ba9a99788` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0xacf19d5eeb42baf7e7089380e8a3867f3c871e5f` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0xaef45cedf76ca61df495646c25b1a2015a596835` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0xb1c144bfe8eeb509c4d5dcf598f0af3626cf1fe1` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0xb20b9a1ec924320f2c7d21f532b2b8d1ce8ba9a5` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0xc21b8077262d68f4d7cdea25a6654dee8ab18173` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0xf40175e87baee76ec774ce860ccb0b382fedc271` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -118,9 +118,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| linea | [`0x43e880...44065f`](./contracts/linea-59144/0x43e8809ea748eff3204ee01f08872f063e44065f/) | Mendi | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0x688ff5...26dea1`](./contracts/linea-59144/0x688ff5acedd3295ae4b60cc613a9a3fa5326dea1/) | MendiLoyaltyPoint | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0x5df210...2bc434`](./contracts/linea-59144/0x5df2107a5b5e7b0b19dd7ded7470e8d9792bc434/) | OwnedDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x43e8809ea748eff3204ee01f08872f063e44065f`](./contracts/linea-59144/0x43e8809ea748eff3204ee01f08872f063e44065f/) | Mendi | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x688ff5acedd3295ae4b60cc613a9a3fa5326dea1`](./contracts/linea-59144/0x688ff5acedd3295ae4b60cc613a9a3fa5326dea1/) | MendiLoyaltyPoint | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x5df2107a5b5e7b0b19dd7ded7470e8d9792bc434`](./contracts/linea-59144/0x5df2107a5b5e7b0b19dd7ded7470e8d9792bc434/) | OwnedDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

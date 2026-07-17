@@ -52,14 +52,14 @@ The pinned logic-topography run contains 28 contract row(s) across celo, ethereu
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x751c08...a45119`, chain 42220)
-- UnnamedContract (`0xad2f9f...767d4d`, chain 42220)
-- AdminUpgradeabilityProxy (`0xfd0991...d80d3e`, chain 1)
-- BridgeToken (`0x9995cc...c931ed`, chain 42220)
-- ERC20Reserve (`0xb27132...063073`, chain 1)
-- IncentiveVestingReserve (`0xcb16e2...273c6b`, chain 1)
-- StakingRewards (`0xbfa274...a72684`, chain 42220)
-- UniswapV2Pair (`0x62cfa2...85ddb7`, chain 42220)
+- UnnamedContract (`0x751c0834599c49e2e857ca9f1cdf929e6fa45119`, chain 42220)
+- UnnamedContract (`0xad2f9f4cd2ae4f2dd2841eb1ea7e162fb4767d4d`, chain 42220)
+- AdminUpgradeabilityProxy (`0xfd09911130e6930bf87f2b0554c44f400bd80d3e`, chain 1)
+- BridgeToken (`0x9995cc8f20db5896943afc8ee0ba463259c931ed`, chain 42220)
+- ERC20Reserve (`0xb27132625173f813085e438ee19c011867063073`, chain 1)
+- IncentiveVestingReserve (`0xcb16e29d0b667bad7266e5d0cd59b711b6273c6b`, chain 1)
+- StakingRewards (`0xbfa2748a60976cd18b835c75c6a20328e9a72684`, chain 42220)
+- UniswapV2Pair (`0x62cfa295864cff683cde9b47d4bacc77b885ddb7`, chain 42220)
 
 ## Contract Surface Quality
 
@@ -103,100 +103,100 @@ The pinned logic-topography run contains 28 contract row(s) across celo, ethereu
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ERC20NFTBond | unknown | project_anchor | own_supporting | 1 | celo | unit-239583 | `0x0f497a...378ff0` | ✅ Audited |
-| StakedETHIX | unknown | project_anchor | own_supporting | 1 | celo | unit-239585 | 2 deployments: celo `0xc564e1...cad638`; celo `0xcb16e2...273c6b` | ✅ Audited |
-| StakingRewards | unknown | project_anchor | own_supporting | 0 | celo | unit-239575 | `0xbfa274...a72684` | ✅ Audited |
+| ERC20NFTBond | unknown | project_anchor | own_supporting | 1 | celo | unit-239583 | `0x0f497a790429685a3cfd43b841865ee185378ff0` | ✅ Audited |
+| StakedETHIX | unknown | project_anchor | own_supporting | 1 | celo | unit-239585 | 2 deployments: celo `0xc564e19eca51df927f43f04a3beaaa414fcad638`; celo `0xcb16e29d0b667bad7266e5d0cd59b711b6273c6b` | ✅ Audited |
+| StakingRewards | unknown | project_anchor | own_supporting | 0 | celo | unit-239575 | `0xbfa2748a60976cd18b835c75c6a20328e9a72684` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (86)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AccessManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xd63956...84d361`; ethereum `0xeb69c1...9179ad` | ⚠️ Unaudited |
-| AccessManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x25e7b7...148d22`; celo `0x7670ea...212ec8` | ⚠️ Unaudited |
-| AMBFlashbotHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xeb4c5a...7005a5` | ⚠️ Unaudited |
-| BPool | core_logic | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-239566 | `0xb93aa4...db19f1` | ⚠️ Unaudited |
-| BridgeValidators | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x4f386c...34ed56`; ethereum `0x727485...81e8e6` | ⚠️ Unaudited |
-| BridgeValidators | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6943a2...7ad65a` | ⚠️ Unaudited |
-| BridgeValidators | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x7169e5...391f89`; ethereum `0xf0b456...131ea9` | ⚠️ Unaudited |
-| BridgeValidators | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xd83893...24d218`; ethereum `0xed84a6...9d4064` | ⚠️ Unaudited |
-| BridgeValidators | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xe3316d...26b543`; ethereum `0xeb6e09...76c36d` | ⚠️ Unaudited |
-| ChinosUlti | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 3 deployments: celo `0x6f58a1...c0775e`; celo `0xb04bda...43e9fa`; celo `0xbf83fc...3ad51e` | ⚠️ Unaudited |
-| CompensationSystemManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x25e7b7...148d22`; ethereum `0xb26f8f...beb99f` | ⚠️ Unaudited |
-| CreditLine | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 6 deployments: celo `0x059c8a...35b488`; celo `0x1f6e60...5e03b9`; celo `0x223051...8d4be9`; celo `0x36523a...d5dd5e`; celo `0x95deb3...8e8285`; celo `0xf417e8...7bd076` | ⚠️ Unaudited |
-| CreditLine | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | celo | n/a | 3 deployments: celo `0x08e066...2ea21b`; celo `0x1d4e90...92fc7d`; celo `0xdb5d3a...03acdd` | ⚠️ Unaudited |
-| CrowdEquityVestingReserve | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x2bf3d1...7ef4ef` | ⚠️ Unaudited |
-| ERC1155BridgeToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf714c3...a17908` | ⚠️ Unaudited |
-| ERC20NFTBond | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 27 deployments: ethereum `0x011042...e0f9d6`; ethereum `0x194cb1...8d7338`; ethereum `0x262569...aa9030`; ethereum `0x36d45e...a7313c`; ethereum `0x573325...7122e2`; ethereum `0x696d74...5679de`; ethereum `0x733e9c...97e49d`; ethereum `0x8eb87a...69cfa6`; ethereum `0xa258ee...51a589`; ethereum `0xa97f2f...80eed9`; ethereum `0xd41e96...9d357e`; ethereum `0xd5277d...61d8a5`; ethereum `0xe84686...cf22b1`; ethereum `0xf3839c...bd46b6`; celo `0x05a71c...a096d3`; celo `0x062eba...b35bdd`; celo `0x1a3417...7967c4`; celo `0x350d1a...8be0ad`; celo `0x3ca21f...944ae4`; celo `0x4426f8...130e3e`; celo `0x485851...7725f0`; celo `0x7cf02b...2f2bca`; celo `0x89cea1...9478f5`; celo `0xa16281...4b8fd0`; celo `0xb3369f...b26de9`; celo `0xbc449d...d9da27`; celo `0xc918ed...a35c93` | ⚠️ Unaudited |
-| ERC20NFTBond | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x213206...c554d9`; ethereum `0x92be91...7730d2` | ⚠️ Unaudited |
-| ERC20NFTBond | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x99a6cd...dc0705`; celo `0xe0eb2d...111cbc` | ⚠️ Unaudited |
-| ERC20NFTBond | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | celo | unit-239576 | `0xd27e31...9b7620` | ⚠️ Unaudited |
-| ERC20NFTBond | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0xd8c315...b62c9b` | ⚠️ Unaudited |
-| ERC20Reserve | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-239561 | `0x1ecc7e...04a5c5` | ⚠️ Unaudited |
-| ERC20Reserve | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-239565 | `0xb27132...063073` | ⚠️ Unaudited |
-| ERC20Reserve | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-239567 | `0xb97ef2...6e3518` | ⚠️ Unaudited |
-| ERC20Reserve | token | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 2 deployments: celo `0xa14b1d...3e1567`; celo `0xa9a824...b28530` | ⚠️ Unaudited |
-| ERC721BridgeToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x7259b1...c24dfb`; ethereum `0x8b9e7c...4dd21d` | ⚠️ Unaudited |
-| EternalStorageProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x01db9f...ddb5cf` | ⚠️ Unaudited |
-| EthixToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdc0c39...c898b5` | ⚠️ Unaudited |
-| EthixToken | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-239578 | `0xfd0991...d80d3e` | ⚠️ Unaudited |
-| ForeignAMB | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x07955b...a594e2`; ethereum `0x5f1e78...a924be` | ⚠️ Unaudited |
-| ForeignAMB | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | ethereum | n/a | 3 deployments: ethereum `0x2140ec...2c8671`; ethereum `0x54c6df...c98ed7`; ethereum `0x5a91b3...bd2b7e` | ⚠️ Unaudited |
-| ForeignAMB | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x2946f6...37461e`; ethereum `0xceb06e...6f65a5` | ⚠️ Unaudited |
-| ForeignAMB | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x4c36d2...9ce64e` | ⚠️ Unaudited |
-| ForeignAMB | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0x82b67a...7ac6ab`; ethereum `0x872796...a5c943`; ethereum `0xa5ac7d...7aa2a1`; ethereum `0xe804fe...2f4b16` | ⚠️ Unaudited |
-| ForeignAMBErc20ToNative | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x218056...d9ff9f`; ethereum `0xf6edfa...fd54ed` | ⚠️ Unaudited |
-| ForeignAMBErc677ToErc677 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x41a4ee...01133e`; ethereum `0xaa60a7...c49faf` | ⚠️ Unaudited |
-| ForeignAMBErc677ToErc677 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x6ea6c6...630c2f`; ethereum `0xd92500...2ea7a7` | ⚠️ Unaudited |
-| ForeignAMBErc677ToErc677 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x71f12d...99db8d`; ethereum `0x7c14be...778e24` | ⚠️ Unaudited |
-| ForeignAMBNativeToErc20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0xb11c0c...ec2540`; ethereum `0xe877fb...deb866` | ⚠️ Unaudited |
-| ForeignBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x46d811...60256d` | ⚠️ Unaudited |
-| ForeignBridgeErcToNative | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0x75df5a...a0bb59`; ethereum `0x7e7669...9228c2`; ethereum `0x83c2e0...0fde8b`; ethereum `0xd40355...92c2cd` | ⚠️ Unaudited |
-| ForeignFeeManagerAMBNativeToErc20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1f96a4...223bda` | ⚠️ Unaudited |
-| ForeignMultiAMBErc20ToErc677 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 6 deployments: ethereum `0x280f04...d22ca9`; ethereum `0x2dca02...38c961`; ethereum `0x4b8618...eb8dbe`; ethereum `0x5275e7...0b85ae`; ethereum `0x7bff37...0cc40e`; ethereum `0xb0a18f...9c2e94` | ⚠️ Unaudited |
-| ForeignNFTOmnibridge | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x1762d3...c148f0`; ethereum `0x6c8d0a...73c480` | ⚠️ Unaudited |
-| ForeignNFTOmnibridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x51af99...179726`; ethereum `0x564785...daf036`; ethereum `0x89d321...cc1dc8`; ethereum `0xba7bc1...ca85c5`; ethereum `0xd116e8...9f9e3a` | ⚠️ Unaudited |
-| ForeignOmnibridge | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x543fb4...bfb9d5`; ethereum `0x69c707...32cd03` | ⚠️ Unaudited |
-| ForeignOmnibridge | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-239581 | 2 deployments: ethereum `0x88ad09...655671`; ethereum `0x8eb3b7...48e347` | ⚠️ Unaudited |
-| ForeignOmnibridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x94447a...bf98c3` | ⚠️ Unaudited |
-| HomeAMBErc677ToErc677 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xa8cbad...78a846`; ethereum `0xe7228b...262dcd` | ⚠️ Unaudited |
-| IncentiveVestingReserve | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-239564 | `0x6f58a1...c0775e` | ⚠️ Unaudited |
-| IncentiveVestingReserve | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-239568 | `0xbf83fc...3ad51e` | ⚠️ Unaudited |
-| IncentiveVestingReserve | unknown | project_anchor | own_supporting | 0 | ethereum | unit-239569 | `0xcb16e2...273c6b` | ⚠️ Unaudited |
-| IncentiveVestingReserve | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd5bab2...559793` | ⚠️ Unaudited |
-| InvestorsVestingReserve | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 6 deployments: ethereum `0x08214e...bc86fa`; ethereum `0x34d3c9...216705`; ethereum `0xde629e...870cf5`; celo `0x2c67c2...098858`; celo `0x635775...4beac7`; celo `0xa9383c...de8f20` | ⚠️ Unaudited |
-| MembershipBond | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 5 deployments: celo `0x302e47...4463bb`; celo `0x4bf4a8...452260`; celo `0x6e0262...53d029`; celo `0xceeb15...a78059`; celo `0xda70b3...228614` | ⚠️ Unaudited |
-| MembershipBond | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x890341...3f3d1f`; celo `0x9dd572...70bbd3` | ⚠️ Unaudited |
-| MerkleTreeVestingReserve | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-239562 | `0x2f36b4...9b0afd` | ⚠️ Unaudited |
-| MultiTokenReserve | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 4 deployments: celo `0x49bc61...1fe9de`; celo `0x70c85e...92651f`; celo `0x7d7c28...6cbb8d`; celo `0x851029...3c5b62` | ⚠️ Unaudited |
-| OriginatorStaking | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-239560 | `0x1e70f4...082c8b` | ⚠️ Unaudited |
-| OriginatorStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 3 | ethereum | n/a | 3 deployments: ethereum `0x2f19bd...2de481`; ethereum `0xa7e499...fa44b8`; ethereum `0xe03244...d9784e` | ⚠️ Unaudited |
-| OriginatorStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x338833...cbc7ac`; ethereum `0x3ef3ee...852440`; ethereum `0xa1cf21...444444`; ethereum `0xacb56e...135c70`; celo `0x9b755b...62098b` | ⚠️ Unaudited |
-| OriginatorStaking | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 2 | ethereum | unit-239577 (2 proxies) | 2 deployments: ethereum `0x3b61cd...04d0e3`; ethereum `0x7435c0...1dd955` | ⚠️ Unaudited |
-| OriginatorStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 8 | celo | n/a | 9 deployments: celo `0x0306f7...9043a8`; celo `0x18843e...ab9693`; celo `0x2ffa2c...06389a`; celo `0x519599...acf899`; celo `0x6ed247...5000f7`; celo `0x7d413d...3d2fa1`; celo `0x8181d3...582c7c`; celo `0xcc0d68...a9eef7`; celo `0xe33c7d...74073a` | ⚠️ Unaudited |
-| OriginatorStakingFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x12f46a...548b2b`; celo `0x57094e...2e5947` | ⚠️ Unaudited |
-| OriginatorStakingFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xaf9ad3...172314`; ethereum `0xf18248...659d17` | ⚠️ Unaudited |
-| OriginatorStakingFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0xe03244...d9784e`; celo `0xe1d776...5b153f` | ⚠️ Unaudited |
-| OriginatorStakingWithLP | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x51246a...ef1f55`; celo `0xdd2ca0...fbf8fa` | ⚠️ Unaudited |
-| OriginatorStakingWithLP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x59921f...713525` | ⚠️ Unaudited |
-| OriginatorStakingWithLPFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x3a3079...d6dca3`; celo `0xa9f740...494883` | ⚠️ Unaudited |
-| OriginatorStakingWithLPFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x5ccf42...30e7d7` | ⚠️ Unaudited |
-| PermittableToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x7c24d0...b254b3`; ethereum `0xe1ca72...aba03d`; ethereum `0xf886bf...245e00` | ⚠️ Unaudited |
-| PermittableToken | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | gnosis | unit-239582 | `0xec3f3e...3fbb19` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x0e0f44...e66029`; ethereum `0x5787b9...3627b6`; celo `0x75a6a0...5aab60` | ⚠️ Unaudited |
-| StakedBETHIX | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x713782...5bc004`; ethereum `0xcfd8ee...54fd8e` | ⚠️ Unaudited |
-| StakedETHIX | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-239580 | 2 deployments: ethereum `0x5b2bbb...39cc2d`; ethereum `0x7d8767...ca93c2` | ⚠️ Unaudited |
-| StakedETHIX | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 2 deployments: ethereum `0x55231a...4c4090`; celo `0x1905ec...fd407c` | ⚠️ Unaudited |
-| StakedUETHIX | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-239579 | 2 deployments: ethereum `0x3f4b71...4dd673`; ethereum `0x89cea1...9478f5` | ⚠️ Unaudited |
-| TeamVestingReserve | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-239563 | `0x48c5bf...73517b` | ⚠️ Unaudited |
-| TeamVestingReserve | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x82e336...6211ae` | ⚠️ Unaudited |
-| TokenFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x3efa9b...72502e`; ethereum `0x71d5ba...8f0424` | ⚠️ Unaudited |
-| TokenImplementation | token | project_anchor | own_supporting | 1 | celo | unit-239584 | `0x9995cc...c931ed` | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb14b94...06b458` | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | gnosis | unit-239571 | `0xe5bc36...3577eb` | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | project_anchor | own_supporting | 0 | celo | unit-239572 | `0x62cfa2...85ddb7` | ⚠️ Unaudited |
-| UniswapV3Pool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x342072...955a5d` | ⚠️ Unaudited |
-| WETHOmnibridgeRouter | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa6439c...c9038a` | ⚠️ Unaudited |
-| XDaiForeignBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xeee4f8...6d0473` | ⚠️ Unaudited |
+| AccessManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xd63956610babe22576103e28c96ec61f0e84d361`; ethereum `0xeb69c10e59c1a8638ca0bcf8c7e6e2fa2e9179ad` | ⚠️ Unaudited |
+| AccessManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x25e7b7149e1067d0664f7646f33b17bc79148d22`; celo `0x7670ea8a307fce474c90a1b699fea4d116212ec8` | ⚠️ Unaudited |
+| AMBFlashbotHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xeb4c5ab9b36437f969888be99af42fc9087005a5` | ⚠️ Unaudited |
+| BPool | core_logic | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-239566 | `0xb93aa4cdeef1293303f628e16dd06ddd42db19f1` | ⚠️ Unaudited |
+| BridgeValidators | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x4f386c4dae45a94619aee4852d92780fbd34ed56`; ethereum `0x72748535e7fdbf564d0ac4cd18c3ebd96f81e8e6` | ⚠️ Unaudited |
+| BridgeValidators | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6943a218d58135793f1fe619414ed476c37ad65a` | ⚠️ Unaudited |
+| BridgeValidators | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x7169e52d3d221a22b78e5a5edb87651651391f89`; ethereum `0xf0b456250dc9990662a6f25808cc74a6d1131ea9` | ⚠️ Unaudited |
+| BridgeValidators | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xd83893f31aa1b6b9d97c9c70d3492fe38d24d218`; ethereum `0xed84a648b3c51432ad0fd1c2cd2c45677e9d4064` | ⚠️ Unaudited |
+| BridgeValidators | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xe3316d623bcdcbd878df25903a791aef1c26b543`; ethereum `0xeb6e0994d1184bac66615ad4035b022b3676c36d` | ⚠️ Unaudited |
+| ChinosUlti | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 3 deployments: celo `0x6f58a18b4fcb513fca971f11f42252d68dc0775e`; celo `0xb04bda735f38d65b7498e6ef8b729e7f0943e9fa`; celo `0xbf83fc8f572c19aa9601a5ca26e6be036d3ad51e` | ⚠️ Unaudited |
+| CompensationSystemManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x25e7b7149e1067d0664f7646f33b17bc79148d22`; ethereum `0xb26f8fbfcd1e0e7acb07f965a29281885bbeb99f` | ⚠️ Unaudited |
+| CreditLine | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 6 deployments: celo `0x059c8a9bd3ea305fb8c9215c1ee47dfdf835b488`; celo `0x1f6e6088892118a8d646583ac18635e4485e03b9`; celo `0x2230512e84ff61b83c0a943757bdcff45e8d4be9`; celo `0x36523a22c8f4b09e2871f7083024f4e2cad5dd5e`; celo `0x95deb34b1a752eea10207f388d155eff6b8e8285`; celo `0xf417e8ab3cd149426c5613cd0fd3715f007bd076` | ⚠️ Unaudited |
+| CreditLine | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | celo | n/a | 3 deployments: celo `0x08e06685da497fddb15a5fd2fab85daa712ea21b`; celo `0x1d4e909c63fa8941c8e0a057322a70a1ec92fc7d`; celo `0xdb5d3abf19014308a67420344021ceee6003acdd` | ⚠️ Unaudited |
+| CrowdEquityVestingReserve | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x2bf3d179201be13fff7d10b95e7cfb44357ef4ef` | ⚠️ Unaudited |
+| ERC1155BridgeToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf714c3aa632ece07eeba241803b26f806ea17908` | ⚠️ Unaudited |
+| ERC20NFTBond | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 27 deployments: ethereum `0x0110425d2f26595d21969085fe4f784064e0f9d6`; ethereum `0x194cb16f78502e7b73ea9124fccaeeb5a88d7338`; ethereum `0x262569d715d5a99e64c568bc817d6a8e3caa9030`; ethereum `0x36d45e5b7077f87d16020f827b414249f6a7313c`; ethereum `0x573325183ce715798352bde15b642349dd7122e2`; ethereum `0x696d743b42563eaa4fe3ae159775aeb3065679de`; ethereum `0x733e9c7465a492078cc976edd420133db397e49d`; ethereum `0x8eb87aadb4ae1cff62197a658c1ac9df6269cfa6`; ethereum `0xa258eed87f7662a13d6440271c4988259051a589`; ethereum `0xa97f2ff6892ae9fb27b727ffabe14feb7580eed9`; ethereum `0xd41e96cb0d1ebfa1ae7e897fc0966fb5579d357e`; ethereum `0xd5277ddd680f2d8de53af6ca0de99ecbec61d8a5`; ethereum `0xe84686d5fd555c36783762cb2c40ee882acf22b1`; ethereum `0xf3839cd0db5dcce378fd25f4443d569eadbd46b6`; celo `0x05a71c76766302936a615e3f48ae5449f2a096d3`; celo `0x062ebacc1b774a5ca38ae302dd138d2571b35bdd`; celo `0x1a3417446e153fa8ce7338a23e10fd1a087967c4`; celo `0x350d1a9007f53ebe264ecf6627655595998be0ad`; celo `0x3ca21ff76087bc07c7083b30d66db05753944ae4`; celo `0x4426f8d8db79a448a0c9545bf2262523e2130e3e`; celo `0x4858512aa44da566b23caa954db2e6ecc57725f0`; celo `0x7cf02b2e0201443bb93d9a6b60b35694642f2bca`; celo `0x89cea15f68950df830dfe3630d635a9ed79478f5`; celo `0xa16281424247629afaaeb05c8418845f1e4b8fd0`; celo `0xb3369f9443d2978758dac7c5faffbb8797b26de9`; celo `0xbc449db65f46790949dc4416aa35567c69d9da27`; celo `0xc918ed6d45ae9bdbe1cec42a8a32f2e036a35c93` | ⚠️ Unaudited |
+| ERC20NFTBond | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x21320683556bb718c8909080489f598120c554d9`; ethereum `0x92be919fbf4f966e349595c1e1f87421f67730d2` | ⚠️ Unaudited |
+| ERC20NFTBond | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x99a6cdfdcbec9a05b539e680df78d8d10fdc0705`; celo `0xe0eb2d27ff30d21b8cd6441306a74c807f111cbc` | ⚠️ Unaudited |
+| ERC20NFTBond | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | celo | unit-239576 | `0xd27e312f4852b00dac9fe5dc582c0221849b7620` | ⚠️ Unaudited |
+| ERC20NFTBond | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0xd8c31585639f044b32107e877518f30efeb62c9b` | ⚠️ Unaudited |
+| ERC20Reserve | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-239561 | `0x1ecc7e3b26dcaee4d63536fe50ea37787a04a5c5` | ⚠️ Unaudited |
+| ERC20Reserve | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-239565 | `0xb27132625173f813085e438ee19c011867063073` | ⚠️ Unaudited |
+| ERC20Reserve | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-239567 | `0xb97ef216006d72128576d662cffed2b4406e3518` | ⚠️ Unaudited |
+| ERC20Reserve | token | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 2 deployments: celo `0xa14b1d7e28c4f9518eb7757ddee35a18423e1567`; celo `0xa9a824bd0470d0d00938105986ebfbfa71b28530` | ⚠️ Unaudited |
+| ERC721BridgeToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x7259b1612b464c65205b7dcdc5ba9fd7aec24dfb`; ethereum `0x8b9e7c13f98291fe90b38e020bcb046f4a4dd21d` | ⚠️ Unaudited |
+| EternalStorageProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x01db9f9a32d4d11d82882bf705e01c39e0ddb5cf` | ⚠️ Unaudited |
+| EthixToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdc0c39780a6f3165f61fb27f3d47668033c898b5` | ⚠️ Unaudited |
+| EthixToken | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-239578 | `0xfd09911130e6930bf87f2b0554c44f400bd80d3e` | ⚠️ Unaudited |
+| ForeignAMB | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x07955be2967b655cf52751fce7ccc8c61ea594e2`; ethereum `0x5f1e78f12025d8d05920134f4a64ddbddaa924be` | ⚠️ Unaudited |
+| ForeignAMB | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | ethereum | n/a | 3 deployments: ethereum `0x2140ecdc45c89ca112523637824513bae72c8671`; ethereum `0x54c6dfbb807be694841a0f1b84cbc49d8fc98ed7`; ethereum `0x5a91b345244d3a285b30287b4c63c154ecbd2b7e` | ⚠️ Unaudited |
+| ForeignAMB | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x2946f6d458f8cf8723a1d9e95043831d3937461e`; ethereum `0xceb06ecea3f588cb60e39bd4db7869013c6f65a5` | ⚠️ Unaudited |
+| ForeignAMB | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x4c36d2919e407f0cc2ee3c993ccf8ac26d9ce64e` | ⚠️ Unaudited |
+| ForeignAMB | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0x82b67a43b69914e611710c62e629dabb2f7ac6ab`; ethereum `0x872796bf7fe754754d2bee2c66d7de9b04a5c943`; ethereum `0xa5ac7d6fdb51a1ffea31c4107b3f3e2e537aa2a1`; ethereum `0xe804fe5fb14b02aba636f37fb6e1c7a08b2f4b16` | ⚠️ Unaudited |
+| ForeignAMBErc20ToNative | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x2180560e79d68f8e3adbd38f3b81bb9b48d9ff9f`; ethereum `0xf6edfa16926f30b0520099028a145f4e06fd54ed` | ⚠️ Unaudited |
+| ForeignAMBErc677ToErc677 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x41a4ee2855a7dc328524babb07d7f505b201133e`; ethereum `0xaa60a7d801230a26193194210e3f758dc8c49faf` | ⚠️ Unaudited |
+| ForeignAMBErc677ToErc677 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x6ea6c65e14661c0bcab5bc862fe5e7d3b5630c2f`; ethereum `0xd925002f88279776deb4907ba7f8dc173e2ea7a7` | ⚠️ Unaudited |
+| ForeignAMBErc677ToErc677 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x71f12d03e1711cb96e11e1a5c12da7466699db8d`; ethereum `0x7c14be235e385854ffb40c33bbe1f59c98778e24` | ⚠️ Unaudited |
+| ForeignAMBNativeToErc20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0xb11c0c3ce15a998fe403b36f2606c3be78ec2540`; ethereum `0xe877fb7e5347111504a1fc4ffa727c5d9adeb866` | ⚠️ Unaudited |
+| ForeignBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x46d811fa0a435ea9bce8cae11ebf9fbd0a60256d` | ⚠️ Unaudited |
+| ForeignBridgeErcToNative | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0x75df5af045d91108662d8080fd1fefad6aa0bb59`; ethereum `0x7e7669bdff02f2ee75b68b91fb81c2b38f9228c2`; ethereum `0x83c2e0e3b5328e599a3cba95d97090fa7d0fde8b`; ethereum `0xd40355b17643bc26554c9a9bbc95b5cabd92c2cd` | ⚠️ Unaudited |
+| ForeignFeeManagerAMBNativeToErc20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1f96a42cdfe3c3e90d1b58561d8731de63223bda` | ⚠️ Unaudited |
+| ForeignMultiAMBErc20ToErc677 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 6 deployments: ethereum `0x280f04a988513610584057bf3fde1f56f4d22ca9`; ethereum `0x2dca02c93988d3ae2451c588610c62671d38c961`; ethereum `0x4b86181abcaefc008b561e27c0aee64bb5eb8dbe`; ethereum `0x5275e7264ab0bb75d970e7442de0aadd0c0b85ae`; ethereum `0x7bff37bda2318125c6b895d4f2b50bcd9e0cc40e`; ethereum `0xb0a18f960221c6d56871c29e5dd7b838e79c2e94` | ⚠️ Unaudited |
+| ForeignNFTOmnibridge | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x1762d3e9d7ae6bc7a2a70c25a4aca69391c148f0`; ethereum `0x6c8d0afddbd29a0954feeb73904923fc8f73c480` | ⚠️ Unaudited |
+| ForeignNFTOmnibridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x51af994bd8d586e81f8f48d68a47e16c4a179726`; ethereum `0x56478532d0d6451e87dcc32fe9701cc6c7daf036`; ethereum `0x89d321fc71abcd71045e7686c450d06e26cc1dc8`; ethereum `0xba7bc1adf0c9a252922760075e607f510cca85c5`; ethereum `0xd116e81265f4aa1db8e4851feef7061afd9f9e3a` | ⚠️ Unaudited |
+| ForeignOmnibridge | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x543fb43e829cceec32b623dfed83ef3622bfb9d5`; ethereum `0x69c707d975e8d883920003cc357e556a4732cd03` | ⚠️ Unaudited |
+| ForeignOmnibridge | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-239581 | 2 deployments: ethereum `0x88ad09518695c6c3712ac10a214be5109a655671`; ethereum `0x8eb3b7d8498a6716904577b2579e1c313d48e347` | ⚠️ Unaudited |
+| ForeignOmnibridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x94447a6f0e6be5a4df198882ffd285a763bf98c3` | ⚠️ Unaudited |
+| HomeAMBErc677ToErc677 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xa8cbad2ff217cb9c32ca8d3903e2a2b65578a846`; ethereum `0xe7228b4ebad37ba031a8b63473727f991e262dcd` | ⚠️ Unaudited |
+| IncentiveVestingReserve | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-239564 | `0x6f58a18b4fcb513fca971f11f42252d68dc0775e` | ⚠️ Unaudited |
+| IncentiveVestingReserve | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-239568 | `0xbf83fc8f572c19aa9601a5ca26e6be036d3ad51e` | ⚠️ Unaudited |
+| IncentiveVestingReserve | unknown | project_anchor | own_supporting | 0 | ethereum | unit-239569 | `0xcb16e29d0b667bad7266e5d0cd59b711b6273c6b` | ⚠️ Unaudited |
+| IncentiveVestingReserve | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd5bab213153778b7852082eb1babdb6715559793` | ⚠️ Unaudited |
+| InvestorsVestingReserve | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 6 deployments: ethereum `0x08214eb1d6c53cbf35c72fb27cd2ee3252bc86fa`; ethereum `0x34d3c9daa6fd96872c08d848612ff05f8b216705`; ethereum `0xde629ec5423f560b914de73a927067a408870cf5`; celo `0x2c67c2e8e29aa4b638f99e07e53989fead098858`; celo `0x63577522f8fbc3adc023f787d207f43fa54beac7`; celo `0xa9383c8e895aa6d9b49404cbbc7b73b1c1de8f20` | ⚠️ Unaudited |
+| MembershipBond | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 5 deployments: celo `0x302e471ae434c50c1fe931a4a0fe0d84074463bb`; celo `0x4bf4a824c81b48e58488ce3d3236249115452260`; celo `0x6e02627254e888122dbc2f3cc0c87bf0fb53d029`; celo `0xceeb155946b64a89119c738b02c95ff41ca78059`; celo `0xda70b3433c7c61c37adba1993369218d0b228614` | ⚠️ Unaudited |
+| MembershipBond | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x8903412ac24281421f1d94fe27de56c0433f3d1f`; celo `0x9dd5723fb591549625cddea8f267f1f5c370bbd3` | ⚠️ Unaudited |
+| MerkleTreeVestingReserve | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-239562 | `0x2f36b4843129647d840911eaea49db16649b0afd` | ⚠️ Unaudited |
+| MultiTokenReserve | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 4 deployments: celo `0x49bc61a91f5a3a2d74d04583a23758f15e1fe9de`; celo `0x70c85e77ae595fa22adc2a892e4175984c92651f`; celo `0x7d7c28155dc586bcac2521a454c9cebb9d6cbb8d`; celo `0x8510294a4d1e27cce09259c448233207a83c5b62` | ⚠️ Unaudited |
+| OriginatorStaking | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-239560 | `0x1e70f45e5e773b7db7358991c9d5fb06ca082c8b` | ⚠️ Unaudited |
+| OriginatorStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 3 | ethereum | n/a | 3 deployments: ethereum `0x2f19bd0a8b9e10fd921ff18eb8689c491e2de481`; ethereum `0xa7e49990baec5900e589c8571bf6a60c8bfa44b8`; ethereum `0xe0324499ede832bd11fa37efefa46077d7d9784e` | ⚠️ Unaudited |
+| OriginatorStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x338833be596a94e8245e94e2e5d95f213ecbc7ac`; ethereum `0x3ef3eefa7236d1a33febb5450adc466c3c852440`; ethereum `0xa1cf210fdc4001ab706f2df8efef26975d444444`; ethereum `0xacb56e5485f1f9ed4131f5e837980457f8135c70`; celo `0x9b755bd649afe485623ca12549c9e5334262098b` | ⚠️ Unaudited |
+| OriginatorStaking | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 2 | ethereum | unit-239577 (2 proxies) | 2 deployments: ethereum `0x3b61cd481be3ba62a9a544c49d6c09fcb804d0e3`; ethereum `0x7435c0232a69270d19f8e4010571175c3f1dd955` | ⚠️ Unaudited |
+| OriginatorStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 8 | celo | n/a | 9 deployments: celo `0x0306f70d3e69e30f49d28cb0ed33fd9d439043a8`; celo `0x18843ec5c23a290e1c866fad9acafb6160ab9693`; celo `0x2ffa2c9678c75a7e1324c3fb67ac28676306389a`; celo `0x5195997a5ce4ff6436af64b229a77d8a06acf899`; celo `0x6ed2471b09a0a3b35c7e5c977e8a4e00ea5000f7`; celo `0x7d413d46adae770dff0e478f566b5539853d2fa1`; celo `0x8181d3b933228c3e70496d11f057610e78582c7c`; celo `0xcc0d68b5e9c0e92e8d7426fb585052442ea9eef7`; celo `0xe33c7d39f6721ef0fc8ffc59c8e2f313e774073a` | ⚠️ Unaudited |
+| OriginatorStakingFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x12f46a371e70bd19900790ac4895371386548b2b`; celo `0x57094e2ffecc0b561400171986dea361e52e5947` | ⚠️ Unaudited |
+| OriginatorStakingFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xaf9ad360163e614ab98ab258a35514f41d172314`; ethereum `0xf182484c32d8f3e035c2878d7aa842d08e659d17` | ⚠️ Unaudited |
+| OriginatorStakingFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0xe0324499ede832bd11fa37efefa46077d7d9784e`; celo `0xe1d7760366b5b15f52d8e78ad7b95527925b153f` | ⚠️ Unaudited |
+| OriginatorStakingWithLP | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x51246ae0ba74696a66f0dc9e5f214d1c48ef1f55`; celo `0xdd2ca064ce2b5e45b70c60d319d9131936fbf8fa` | ⚠️ Unaudited |
+| OriginatorStakingWithLP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x59921ff5cd63d3fd712f48ad3d2c2574bf713525` | ⚠️ Unaudited |
+| OriginatorStakingWithLPFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x3a3079f84c474487be83a615b248ba9353d6dca3`; celo `0xa9f74072a4ef35e56ae3cb1a81906949cc494883` | ⚠️ Unaudited |
+| OriginatorStakingWithLPFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x5ccf42faf6235c666e8e22694a5e4eee4130e7d7` | ⚠️ Unaudited |
+| PermittableToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x7c24d0061b484b267f286aa2dce891220db254b3`; ethereum `0xe1ca72ff3434b131765c62cbcbc26060f7aba03d`; ethereum `0xf886bfeacc24202967d053075fa9658cf1245e00` | ⚠️ Unaudited |
+| PermittableToken | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | gnosis | unit-239582 | `0xec3f3e6d7907acda3a7431abd230196cda3fbb19` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x0e0f447be0058ba019a59dbffc24563d8fe66029`; ethereum `0x5787b96a595fe7d4f730089607c025efa83627b6`; celo `0x75a6a00c6bbaba9e9c61f69a7f037a3fed5aab60` | ⚠️ Unaudited |
+| StakedBETHIX | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x713782bed530adcf28604b04980ee8d5fd5bc004`; ethereum `0xcfd8eee23a6ef73fe4f2c08b30e128f05f54fd8e` | ⚠️ Unaudited |
+| StakedETHIX | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-239580 | 2 deployments: ethereum `0x5b2bbbe7dfd83aa1f1cd0c498690e6ecc939cc2d`; ethereum `0x7d8767df201055876321f3e1b3dcb42b0cca93c2` | ⚠️ Unaudited |
+| StakedETHIX | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 2 deployments: ethereum `0x55231ac3a67f04551c39ea8f6d3322342d4c4090`; celo `0x1905ec0769775179a9b2e042ce0fd59e27fd407c` | ⚠️ Unaudited |
+| StakedUETHIX | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-239579 | 2 deployments: ethereum `0x3f4b71f7b81d9829008504b8bfa09d215c4dd673`; ethereum `0x89cea15f68950df830dfe3630d635a9ed79478f5` | ⚠️ Unaudited |
+| TeamVestingReserve | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-239563 | `0x48c5bf17fafbf7a41436d46503599f96c173517b` | ⚠️ Unaudited |
+| TeamVestingReserve | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x82e336301248834611b6885cc602c9e91d6211ae` | ⚠️ Unaudited |
+| TokenFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x3efa9b4b936d8dcb4887ba147c8192f8f872502e`; ethereum `0x71d5ba4e37de72415f685490b684538aae8f0424` | ⚠️ Unaudited |
+| TokenImplementation | token | project_anchor | own_supporting | 1 | celo | unit-239584 | `0x9995cc8f20db5896943afc8ee0ba463259c931ed` | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb14b9464b52f502b0edf51ba3a529bc63706b458` | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | gnosis | unit-239571 | `0xe5bc36119ffe40541eb61949e13607bce23577eb` | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | project_anchor | own_supporting | 0 | celo | unit-239572 | `0x62cfa295864cff683cde9b47d4bacc77b885ddb7` | ⚠️ Unaudited |
+| UniswapV3Pool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x3420720e561f3082f1e514a4545f0f2e0c955a5d` | ⚠️ Unaudited |
+| WETHOmnibridgeRouter | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa6439ca0fcba1d0f80df0be6a17220fed9c9038a` | ⚠️ Unaudited |
+| XDaiForeignBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xeee4f8db4410bebd74a76cb711d096c5e66d0473` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -216,21 +216,21 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | gnosis | unit-239570 | `0x2b8d7a...f2acd1` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x0e1c2d...23f821` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x21cc49...0ea81c` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x2dfbe4...e1cc9f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-239573 | `0x751c08...a45119` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x78ccd8...5e2fae` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x7e7457...b3b2e7` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x84b1d6...8cec25` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xa317c3...119945` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-239574 | `0xad2f9f...767d4d` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xc684b1...79d605` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xd582df...e24bf2` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xd9aea7...7aab2c` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xe5b70b...0b1052` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xe70330...eb5b5a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | gnosis | unit-239570 | `0x2b8d7a0ed5e642f6441862d353c60c8f8ff2acd1` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x0e1c2da9184274d7a9efed715cd71a51d323f821` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x21cc49ce7adfbccf09b0097631cbd004140ea81c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x2dfbe4c7313dec4ecb8c853d924dfcc79be1cc9f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-239573 | `0x751c0834599c49e2e857ca9f1cdf929e6fa45119` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x78ccd81805167e0ed01915432dfcd45ecb5e2fae` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x7e7457225934bb6d35a252969e2764ae17b3b2e7` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x84b1d65a3b79b48da6b8a11081dd2869568cec25` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xa317c306edb1b61638ebe941ffb8be04f4119945` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-239574 | `0xad2f9f4cd2ae4f2dd2841eb1ea7e162fb4767d4d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xc684b104809077c6e3f7d9fa916a4f9a3379d605` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xd582df88d7dc8f8aaa084ee5a15121504de24bf2` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xd9aea73730c524056ef559e2b87ec8f5667aab2c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xe5b70bd972c395c810e8d4f06504280f660b1052` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xe7033046ffc9787c9c2a1e42c9d4cca18aeb5b5a` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -274,12 +274,12 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Red4Sec-EthicHub - Smart Contract Audit Report_v3.pdf | NativeReserve | unmatched — not counted | — | listed in scope | no |
 | Red4Sec-EthicHub - Smart Contract Audit Report_v3.pdf | PresaleVestingReserve | unmatched — not counted | — | listed in scope | no |
 | Red4Sec-EthicHub - Smart Contract Audit Report_v3.pdf | StakedBETHIX | unmatched — not counted | — | listed in scope | no |
-| Red4Sec-EthicHub - Smart Contract Audit Report_v3.pdf | StakedETHIX | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xcb16e2...273c6b` — deployed 2022-07-12 17:58:36+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Red4Sec-EthicHub - Smart Contract Audit Report_v3.pdf | StakedETHIX | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xcb16e29d0b667bad7266e5d0cd59b711b6273c6b` — deployed 2022-07-12 17:58:36+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Red4Sec-EthicHub - Smart Contract Audit Report_v3.pdf | StakedToken | unmatched — not counted | — | listed in scope | no |
-| Red4Sec-EthicHub - Smart Contract Audit Report_v3.pdf | StakingRewards | own contract | StakingRewards (selected) `0xbfa274...a72684` — deployed 2022-07-29 21:13:21+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Red4Sec-EthicHub - Smart Contract Audit Report_v3.pdf | StakingRewards | own contract | StakingRewards (selected) `0xbfa2748a60976cd18b835c75c6a20328e9a72684` — deployed 2022-07-29 21:13:21+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Red4Sec-EthicHub - Smart Contract Audit Report_v3.pdf | TeamVestingReserve | unmatched — not counted | — | listed in scope | no |
 | Red4Sec-EthicHub - Smart Contract Audit Report_v3.pdf | VestingReserve | unmatched — not counted | — | listed in scope | no |
-| EthicHub - Smart Contract Audit Report Final.pdf | ERC20NFTBond | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x0f497a...378ff0` — deployed 2022-07-05 18:14:26+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| EthicHub - Smart Contract Audit Report Final.pdf | ERC20NFTBond | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x0f497a790429685a3cfd43b841865ee185378ff0` — deployed 2022-07-05 18:14:26+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | EthicHub - Smart Contract Audit Report Final.pdf | NativeNFTBond | unmatched — not counted | — | listed in scope and findings | no |
 | EthicHub - Smart Contract Audit Report Final.pdf | CollateralizedBondGranter | unmatched — not counted | — | listed in scope and findings | no |
 | EthicHub - Smart Contract Audit Report Final.pdf | InterestParameters | unmatched — not counted | — | listed in scope and findings | no |
@@ -296,8 +296,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0xcb16e2...273c6b` | IncentiveVestingReserve | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| celo | `0x9995cc...c931ed` | TokenImplementation | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xcb16e29d0b667bad7266e5d0cd59b711b6273c6b` | IncentiveVestingReserve | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | `0x9995cc8f20db5896943afc8ee0ba463259c931ed` | TokenImplementation | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

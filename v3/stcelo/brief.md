@@ -52,9 +52,9 @@ The pinned logic-topography run contains 8 contract row(s) across celo. Structur
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- Manager (`0x78b405...46f38e`, chain 42220)
-- RebasedStakedCelo (`0x58fc55...14713c`, chain 42220)
-- StakedCelo (`0x6e17cf...783b67`, chain 42220)
+- Manager (`0x78b405d3a6af7a1f17b74fcea51934f4ee46f38e`, chain 42220)
+- RebasedStakedCelo (`0x58fc5556dfb1a1b23e32b395f6522aa86c14713c`, chain 42220)
+- StakedCelo (`0x6e17cf4e1a21125d0ce9a1ce4a284ad7bf783b67`, chain 42220)
 
 ## Contract Surface Quality
 
@@ -99,96 +99,96 @@ The pinned logic-topography run contains 8 contract row(s) across celo. Structur
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | celo | unit-393196 | 2 deployments: celo `0x0239b9...cf9398`; celo `0x78b405...46f38e` | ✅ Audited |
-| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | celo | unit-393197 | 2 deployments: celo `0x4aad04...54c432`; celo `0xc2fd56...33e3d0` | ✅ Audited |
-| StakedCelo | unknown | project_anchor | own_supporting | 1 | celo | unit-393195 | 2 deployments: celo `0x6e17cf...783b67`; celo `0xc66858...fdfc24` | ✅ Audited |
+| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | celo | unit-393196 | 2 deployments: celo `0x0239b96d10a434a56cc9e09383077a0490cf9398`; celo `0x78b405d3a6af7a1f17b74fcea51934f4ee46f38e` | ✅ Audited |
+| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | celo | unit-393197 | 2 deployments: celo `0x4aad04d41fd7fd495503731c5a2579e19054c432`; celo `0xc2fd564028536df9fe87de36bbab6ae26b33e3d0` | ✅ Audited |
+| StakedCelo | unknown | project_anchor | own_supporting | 1 | celo | unit-393195 | 2 deployments: celo `0x6e17cf4e1a21125d0ce9a1ce4a284ad7bf783b67`; celo `0xc668583dcbdc9ae6fa3ce46462758188adfdfc24` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (82)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Account | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 7 deployments: celo `0x075507...fb4a53`; celo `0x0a0b72...9f3ade`; celo `0x13d01f...a419c9`; celo `0x4c8eed...44a1bc`; celo `0x5b4a33...f341a5`; celo `0x6a519c...3c577c`; celo `0x95b8f3...6ba914` | ⚠️ Unaudited |
-| Account | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x1edec9...5d654a`; celo `0xb82dd2...f0bc81` | ⚠️ Unaudited |
-| Account | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x250c1b...f380d2`; celo `0x694ab8...003cfb` | ⚠️ Unaudited |
-| Account | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x2e1193...af278c`; celo `0xc66760...79face` | ⚠️ Unaudited |
-| Account | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x6bbd91...ae298d`; celo `0xad3df8...18d52e` | ⚠️ Unaudited |
-| Accounts | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0x7d2168...d0aab7` | ⚠️ Unaudited |
-| Attestations | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0xdc5538...d88d20` | ⚠️ Unaudited |
-| BlockchainParameters | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0x6e10a8...9d5bfa` | ⚠️ Unaudited |
-| DefaultStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x2f9ba7...539e2d`; celo `0xd1825d...78c317` | ⚠️ Unaudited |
-| DefaultStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x523122...466f09`; celo `0xaf37a8...1d33f5` | ⚠️ Unaudited |
-| DefaultStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 4 deployments: celo `0x5bd084...8eed3d`; celo `0x820f7a...71184d`; celo `0xd718b6...5f5745`; celo `0xf0b67a...22f7ff` | ⚠️ Unaudited |
-| DoubleSigningSlasher | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0x50c100...6772ec` | ⚠️ Unaudited |
-| Election | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0x8d6677...5a7ff6` | ⚠️ Unaudited |
-| EpochRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0x07f007...28d8b7` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x3a3ed7...0ea088`; celo `0xd54bc0...684a09` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x8bd8a8...d01c89`; celo `0xf676df...3c3839` | ⚠️ Unaudited |
-| Escrow | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0xf4fa51...e7ada5` | ⚠️ Unaudited |
-| Exchange | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0x673163...c66275` | ⚠️ Unaudited |
-| FeeCurrencyWhitelist | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0xbb024e...381b3c` | ⚠️ Unaudited |
-| FeeCurrencyWhitelist | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xc301ef...aabc83` | ⚠️ Unaudited |
-| FixidityLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xd9ce42...72284d` | ⚠️ Unaudited |
-| Freezer | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x47a472...f4ff5a`; celo `0xa79cdb...6649e6` | ⚠️ Unaudited |
-| GasPriceMinimum | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0xdfca3a...270ecc` | ⚠️ Unaudited |
-| GoldToken | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0x471ece...78a438` | ⚠️ Unaudited |
-| Governance | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0xd533ca...3b7972` | ⚠️ Unaudited |
-| GovernanceSlasher | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x68f04a...5294d5` | ⚠️ Unaudited |
-| GovernanceSlasher | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0xf2a347...f43f3c` | ⚠️ Unaudited |
-| GroupHealth | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x004377...f476eb`; celo `0xf8bf1b...beb878` | ⚠️ Unaudited |
-| GroupHealth | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x073bb3...0985d9`; celo `0x140b36...cecdcf` | ⚠️ Unaudited |
-| GroupHealth | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x193df9...d556ad`; celo `0x9c6c01...c4cc57` | ⚠️ Unaudited |
-| GroupHealth | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x205f4c...bc64e1`; celo `0xbc7c8e...43051c` | ⚠️ Unaudited |
-| GroupHealth | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x2f5979...1a2f18`; celo `0xf6bccb...a94220` | ⚠️ Unaudited |
-| GroupHealth | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 2 deployments: celo `0x4443a4...6ac578`; celo `0x6f4606...09ff3e` | ⚠️ Unaudited |
-| LockedGold | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0x6cc083...03349e` | ⚠️ Unaudited |
-| Manager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 7 deployments: celo `0x08a212...5e770d`; celo `0x2cb8b2...00e9af`; celo `0x2f05b8...31ba0b`; celo `0xb6316a...3bd394`; celo `0xe923a9...fda387`; celo `0xf6aeb1...e13657`; celo `0xfea79f...c69625` | ⚠️ Unaudited |
-| Manager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x18f51d...4f3fcf`; celo `0xb3ac6d...d10774` | ⚠️ Unaudited |
-| Manager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x25b7f3...bb807f`; celo `0xacd0ad...40cb43` | ⚠️ Unaudited |
-| Manager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x43e55a...46fb58`; celo `0xa7ec4a...a6eb74` | ⚠️ Unaudited |
-| Manager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x443579...de5af7`; celo `0x548fab...837329` | ⚠️ Unaudited |
-| Manager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x534a0b...91648b`; celo `0x70b1bd...c72e62` | ⚠️ Unaudited |
-| Manager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x954bc8...c5e5af`; celo `0xc9cd08...c6c674` | ⚠️ Unaudited |
-| Manager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0xa60fcf...7c70f5`; celo `0xe12f7e...dd0312` | ⚠️ Unaudited |
-| Migrations | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xe8882d...faf4b7` | ⚠️ Unaudited |
-| MultiSig | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x13f1f8...75c27e`; celo `0x8652ce...ae782a` | ⚠️ Unaudited |
-| MultiSig | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 5 deployments: celo `0x1bb789...27af07`; celo `0xb05860...906732`; celo `0xb78ab3...7aecf1`; celo `0xda3eb1...eb2aa8`; celo `0xf38592...128d39` | ⚠️ Unaudited |
-| MultiSig | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x2d952d...124cd0`; celo `0x55e953...b36128` | ⚠️ Unaudited |
-| MultiSig | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x2e37af...e9e4df`; celo `0x846b04...d6013f` | ⚠️ Unaudited |
-| MultiSig | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x41822d...e933d3`; celo `0xb5795c...158fad` | ⚠️ Unaudited |
-| MultiSig | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x5aa1c6...e8f2e3`; celo `0xfb197e...b374ee` | ⚠️ Unaudited |
-| MultiSig | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x78b50b...220cca`; celo `0x85a9aa...64f3f3` | ⚠️ Unaudited |
-| MultiSig | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x78daa2...d40179`; celo `0x8bd50c...33f818` | ⚠️ Unaudited |
-| MultiSig | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x88d1ae...d48c24`; celo `0xe57f6f...07c0c4` | ⚠️ Unaudited |
-| MultiSig | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x98c93e...14dc67`; celo `0xaab51f...d47145` | ⚠️ Unaudited |
-| Proposals | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xd4b9fd...79cbc4` | ⚠️ Unaudited |
-| Random | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0x22a4aa...c93dfe` | ⚠️ Unaudited |
-| RebasedStakedCelo | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x0251c3...6cc806`; celo `0x6b8bb0...2352aa` | ⚠️ Unaudited |
-| RebasedStakedCelo | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x52bb50...a195c0`; celo `0x97b5ee...5b795c` | ⚠️ Unaudited |
-| RebasedStakedCelo | unknown | project_anchor | own_supporting | 1 | celo | unit-393194 | 2 deployments: celo `0x58fc55...14713c`; celo `0xdc5762...1f44cf` | ⚠️ Unaudited |
-| RebasedStakedCelo | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 5 deployments: celo `0x737bce...3b2fdf`; celo `0x80ef43...8f5ac4`; celo `0x8c89e7...67c594`; celo `0xad3317...4eba11`; celo `0xdfc2da...45a67c` | ⚠️ Unaudited |
-| Registry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x203fdf...74cb66` | ⚠️ Unaudited |
-| Reserve | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0x9380fa...ed4eb9` | ⚠️ Unaudited |
-| ReserveSpenderMultiSigProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x554fca...4d2a19` | ⚠️ Unaudited |
-| Signatures | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x926a9e...792b7d` | ⚠️ Unaudited |
-| SortedOracles | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0xefb849...7b7b33` | ⚠️ Unaudited |
-| SpecificGroupStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x003a4c...0f54aa`; celo `0xf1c4a8...21a947` | ⚠️ Unaudited |
-| SpecificGroupStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 3 deployments: celo `0x01a767...c8b926`; celo `0x52a1d5...34a1f0`; celo `0x54c819...32999a` | ⚠️ Unaudited |
-| SpecificGroupStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x365e62...a58d23`; celo `0xb88af6...937871` | ⚠️ Unaudited |
-| SpecificGroupStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x777446...fed190`; celo `0xee0ba5...2055a5` | ⚠️ Unaudited |
-| SpecificGroupStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x9dd19a...2cc4e8`; celo `0xe11359...a71c2f` | ⚠️ Unaudited |
-| StableTokenV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0x765de8...b1282a` | ⚠️ Unaudited |
-| StakedCelo | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x085a0d...7f21ca`; celo `0x95cc0c...1c4e49` | ⚠️ Unaudited |
-| StakedCelo | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x0b2f88...65f75b`; celo `0x922333...794692` | ⚠️ Unaudited |
-| StakedCelo | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 5 deployments: celo `0x1b4b48...32c73d`; celo `0x4387a0...4c6429`; celo `0x44c2fe...f0271f`; celo `0xa97be8...8babcb`; celo `0xafddbc...734a1d` | ⚠️ Unaudited |
-| StakedCelo | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x2c2e2b...4edc3a`; celo `0x809b7e...632426` | ⚠️ Unaudited |
-| StakedCelo | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x912285...3ddcfc`; celo `0xb59b1c...2c4b61` | ⚠️ Unaudited |
-| TransferWhitelist | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xb49e4d...178bcf` | ⚠️ Unaudited |
-| Validators | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0xaeb865...4d0c58` | ⚠️ Unaudited |
-| Vote | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x3c6e90...fcce0f`; celo `0x9760e0...e7a3d3` | ⚠️ Unaudited |
-| Vote | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x54496e...3f83bd`; celo `0xda30d1...b9ab8e` | ⚠️ Unaudited |
-| Vote | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x655f0a...3c70fc`; celo `0xfdffa5...66a28f` | ⚠️ Unaudited |
-| Vote | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x681db4...f6cc3e`; celo `0xcc3120...0237b8` | ⚠️ Unaudited |
-| Vote | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xbb4e49...2e65bf` | ⚠️ Unaudited |
+| Account | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 7 deployments: celo `0x07550767a1604af3e504749e284792ff30fb4a53`; celo `0x0a0b728d00f0e3a3d8c6849e76dc98b1d39f3ade`; celo `0x13d01fc33da51b1b63bb3bbe2af2ae91b5a419c9`; celo `0x4c8eedd889dcc3e7fd15b909d040d1d4e444a1bc`; celo `0x5b4a33bec1d5bd90f450139cf8d9073566f341a5`; celo `0x6a519cd5ffa127dd20406ab4d8b11e91f13c577c`; celo `0x95b8f3068ae248b062574a1d977c4503dd6ba914` | ⚠️ Unaudited |
+| Account | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x1edec9c43660ad99040daac4c7451255805d654a`; celo `0xb82dd2d0dd04bf689992cf9006ba2201b8f0bc81` | ⚠️ Unaudited |
+| Account | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x250c1b903e0a293807d09a6c9f65a35e5ef380d2`; celo `0x694ab80a18c0c0e72e4219c397f23cc99f003cfb` | ⚠️ Unaudited |
+| Account | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x2e1193a4219c5539f8bd5fd1c6e765158caf278c`; celo `0xc667602b4067a759908cd747706f55c77779face` | ⚠️ Unaudited |
+| Account | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x6bbd91b458b5f687e1090966925867b956ae298d`; celo `0xad3df8fc103fd3d91d963dc719d059df2918d52e` | ⚠️ Unaudited |
+| Accounts | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0x7d21685c17607338b313a7174bab6620bad0aab7` | ⚠️ Unaudited |
+| Attestations | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0xdc553892cdeeed9f575aa0fba099e5847fd88d20` | ⚠️ Unaudited |
+| BlockchainParameters | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0x6e10a8864c65434a721d82e424d727326f9d5bfa` | ⚠️ Unaudited |
+| DefaultStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x2f9ba7121ea67436aa7910080b4b68efee539e2d`; celo `0xd1825d874cb920b3a0545aa73f02116a5678c317` | ⚠️ Unaudited |
+| DefaultStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x5231221d0e45768d6e0315ca2e9eccc1ef466f09`; celo `0xaf37a82d47035ef6d42a6e5588c1e5970b1d33f5` | ⚠️ Unaudited |
+| DefaultStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 4 deployments: celo `0x5bd084845f8ce18384d361bf8f4742ead18eed3d`; celo `0x820f7aac0eb929aab930eb0c5d8e286a6671184d`; celo `0xd718b64bc1facbd0087d827c0a3ea144445f5745`; celo `0xf0b67ab98dd5725565cf96496b5eda455622f7ff` | ⚠️ Unaudited |
+| DoubleSigningSlasher | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0x50c100bacde7e2b546371eb0be1eaccf0a6772ec` | ⚠️ Unaudited |
+| Election | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0x8d6677192144292870907e3fa8a5527fe55a7ff6` | ⚠️ Unaudited |
+| EpochRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0x07f007d389883622ef8d4d347b3f78007f28d8b7` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x3a3ed74b1cc543d5eb323f70ac2f19977a0ea088`; celo `0xd54bc0ab3b363a0e34767581daab4a9db1684a09` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x8bd8a8055b4c64753047721f9abd2a82bdd01c89`; celo `0xf676df6eb86cca235e2ee67245d2d7ac0f3c3839` | ⚠️ Unaudited |
+| Escrow | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0xf4fa51472ca8d72af678975d9f8795a504e7ada5` | ⚠️ Unaudited |
+| Exchange | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0x67316300f17f063085ca8bca4bd3f7a5a3c66275` | ⚠️ Unaudited |
+| FeeCurrencyWhitelist | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0xbb024e9cdcb2f9e34d893630d19611b8a5381b3c` | ⚠️ Unaudited |
+| FeeCurrencyWhitelist | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xc301efebae9c517ea81f87d2cf2ff0a87caabc83` | ⚠️ Unaudited |
+| FixidityLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xd9ce4209888cfdfeb7c3d6e2ca34eeb06272284d` | ⚠️ Unaudited |
+| Freezer | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x47a472f45057a9d79d62c6427367016409f4ff5a`; celo `0xa79cdb272799175a118a4ce49cecbf3ec86649e6` | ⚠️ Unaudited |
+| GasPriceMinimum | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0xdfca3a8d7699d8bafe656823ad60c17cb8270ecc` | ⚠️ Unaudited |
+| GoldToken | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0x471ece3750da237f93b8e339c536989b8978a438` | ⚠️ Unaudited |
+| Governance | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0xd533ca259b330c7a88f74e000a3faea2d63b7972` | ⚠️ Unaudited |
+| GovernanceSlasher | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x68f04ab73b93f5175207296528454999475294d5` | ⚠️ Unaudited |
+| GovernanceSlasher | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0xf2a347f184b0fef572c7cbd2c392359eccf43f3c` | ⚠️ Unaudited |
+| GroupHealth | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x004377e7c1c68b97c2e00943b426ba172ff476eb`; celo `0xf8bf1b688a975f12f61f877dd146f03ec8beb878` | ⚠️ Unaudited |
+| GroupHealth | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x073bb388eeea656e056c8750494cd0bc460985d9`; celo `0x140b36ffc554d174fbf1b436c50d5409bdcecdcf` | ⚠️ Unaudited |
+| GroupHealth | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x193df9d86435e2ef4c75467d0d38c2cf00d556ad`; celo `0x9c6c01488dc9c38dd2dc1a6bd7b6b66c70c4cc57` | ⚠️ Unaudited |
+| GroupHealth | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x205f4cb670fdbcbda1c14d81fdacd7092bbc64e1`; celo `0xbc7c8e2065e7dd573eaa189d932b09c50343051c` | ⚠️ Unaudited |
+| GroupHealth | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x2f59796ae74ed01fcf6fbcf79ec7013a571a2f18`; celo `0xf6bccbba274e16822271315fdd724c7aafa94220` | ⚠️ Unaudited |
+| GroupHealth | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 2 deployments: celo `0x4443a491f63fd212fd9932c1e27fe60f586ac578`; celo `0x6f46060c2f760eaba09d972efa74ed6aae09ff3e` | ⚠️ Unaudited |
+| LockedGold | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0x6cc083aed9e3ebe302a6336dbc7c921c9f03349e` | ⚠️ Unaudited |
+| Manager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 7 deployments: celo `0x08a2121c9c143b9b06ffa27269d25af96c5e770d`; celo `0x2cb8b2e0915629c8999e739932f6a6642600e9af`; celo `0x2f05b88e89b44e4b57b4ba652cadfa414f31ba0b`; celo `0xb6316a0241afe66914b56b6242b989ad1e3bd394`; celo `0xe923a9ee94e006bc0763d3a62d3dcf167cfda387`; celo `0xf6aeb1050d9e8151d4a0a5e7144f819f01e13657`; celo `0xfea79f2563ffd79f8ef2af190b9bbd75fcc69625` | ⚠️ Unaudited |
+| Manager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x18f51d47f7cdc9feb8f67cf95d856565584f3fcf`; celo `0xb3ac6d1c1289ce211cc8197b2e3d1ef446d10774` | ⚠️ Unaudited |
+| Manager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x25b7f372d51e785826fb294f9458892af5bb807f`; celo `0xacd0ad376c5426abf0f81353c227d7512340cb43` | ⚠️ Unaudited |
+| Manager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x43e55a252d22c01d114ad325fc0a62877346fb58`; celo `0xa7ec4a31ac7f5cec4340bc39d04244a1cba6eb74` | ⚠️ Unaudited |
+| Manager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x443579fcb9518529d358e0a10e9de42e92de5af7`; celo `0x548fab1b071dbe542617294ec73d478134837329` | ⚠️ Unaudited |
+| Manager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x534a0b843817679928625063219324902291648b`; celo `0x70b1bde39a387444f5790ec8052ff244e7c72e62` | ⚠️ Unaudited |
+| Manager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x954bc8b6afe0e7109ec61b204be01d4bf8c5e5af`; celo `0xc9cd085d12e12274ad099b5ece5a744203c6c674` | ⚠️ Unaudited |
+| Manager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0xa60fcf6fd40cadca90359bc94ca21bf3b97c70f5`; celo `0xe12f7e5c2300b7f79fd8ff7e44b10e66e4dd0312` | ⚠️ Unaudited |
+| Migrations | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xe8882d0f80bd82a618251093124f56fdd8faf4b7` | ⚠️ Unaudited |
+| MultiSig | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x13f1f8706710069bc55b71e320a3fb2d3775c27e`; celo `0x8652ceb3e0edc477f4d0750f2fd5c1e0acae782a` | ⚠️ Unaudited |
+| MultiSig | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 5 deployments: celo `0x1bb7897a1b023a74d3a439476c52495a2927af07`; celo `0xb05860dd77620793d549fa0dec4989a54e906732`; celo `0xb78ab3f89c97c0291b747c3ba8814b5aa47aecf1`; celo `0xda3eb100c32cd9387a834f9b9fee340300eb2aa8`; celo `0xf385924febb37f96c0a1d609f3c40d71d7128d39` | ⚠️ Unaudited |
+| MultiSig | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x2d952d7a21fbce9d52e62973303908e8fc124cd0`; celo `0x55e953bffe423ed7950a392db01f5cdda2b36128` | ⚠️ Unaudited |
+| MultiSig | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x2e37af02023644a1203d9c3daf96ecd635e9e4df`; celo `0x846b04993f65ea397838568d83b4b956f2d6013f` | ⚠️ Unaudited |
+| MultiSig | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x41822d8a191fcfb1cfca5f7048818acd8ee933d3`; celo `0xb5795ccf25d01617a55592508d3982bc5a158fad` | ⚠️ Unaudited |
+| MultiSig | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x5aa1c651b864b42c6c6acd1e8a4ee807e4e8f2e3`; celo `0xfb197ea7d72f106a107ddd4d50ba0439d3b374ee` | ⚠️ Unaudited |
+| MultiSig | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x78b50bd80ecbd9f44b616d89b835ed8982220cca`; celo `0x85a9aa5067dff9745fc32d741cb144bd8c64f3f3` | ⚠️ Unaudited |
+| MultiSig | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x78daa21fce4d30e74ff745da3204764a0ad40179`; celo `0x8bd50c8df89840ca8e78c32a730076397933f818` | ⚠️ Unaudited |
+| MultiSig | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x88d1ae61a25c73e2adffd7b3b58477f42cd48c24`; celo `0xe57f6f8620fce79c723ed9da69f7e3dd7c07c0c4` | ⚠️ Unaudited |
+| MultiSig | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x98c93ee03873c472d267a6844a4d5ccab714dc67`; celo `0xaab51fc8143d943d74885413064d707fe2d47145` | ⚠️ Unaudited |
+| Proposals | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xd4b9fd4f900fdbb58ce284f82730653f9379cbc4` | ⚠️ Unaudited |
+| Random | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0x22a4aaf42a50bfa7238182460e32f15859c93dfe` | ⚠️ Unaudited |
+| RebasedStakedCelo | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x0251c3224f15e875fe6fbca04c0f9117366cc806`; celo `0x6b8bb0aca4bde7e844dfa6f6bc90ad0a3d2352aa` | ⚠️ Unaudited |
+| RebasedStakedCelo | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x52bb5091b2e2319300b4db33b63d715c89a195c0`; celo `0x97b5ee93630ac26b581b1c4add966af8f95b795c` | ⚠️ Unaudited |
+| RebasedStakedCelo | unknown | project_anchor | own_supporting | 1 | celo | unit-393194 | 2 deployments: celo `0x58fc5556dfb1a1b23e32b395f6522aa86c14713c`; celo `0xdc5762753043327d74e0a538199c1488fc1f44cf` | ⚠️ Unaudited |
+| RebasedStakedCelo | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 5 deployments: celo `0x737bce423d87b8bccb9e2b3b483082a5fd3b2fdf`; celo `0x80ef43888b64e4bd60b0e8e28e99716e418f5ac4`; celo `0x8c89e7ceb22300c43c9118f317d33e9be767c594`; celo `0xad3317aecdbc6a92271d9d43c0d157c6404eba11`; celo `0xdfc2daf5ff1bc48ec4518436a015da416745a67c` | ⚠️ Unaudited |
+| Registry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x203fdf86a00999107df531fa00b4ba81d674cb66` | ⚠️ Unaudited |
+| Reserve | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0x9380fa34fd9e4fd14c06305fd7b6199089ed4eb9` | ⚠️ Unaudited |
+| ReserveSpenderMultiSigProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x554fca0f7c465cd2f8c305a10bf907a2034d2a19` | ⚠️ Unaudited |
+| Signatures | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x926a9e7c1a9cb608b6f3068f3ca3811dde792b7d` | ⚠️ Unaudited |
+| SortedOracles | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0xefb84935239dacdecf7c5ba76d8de40b077b7b33` | ⚠️ Unaudited |
+| SpecificGroupStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x003a4c7fda849eeda551f5c995729335d70f54aa`; celo `0xf1c4a8d18229d4dcffa2a5f90d5053a1fd21a947` | ⚠️ Unaudited |
+| SpecificGroupStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 3 deployments: celo `0x01a767b740ea021731f0dcbb3992d3c1d0c8b926`; celo `0x52a1d5d90450567bce39fbe3fcabb9a6be34a1f0`; celo `0x54c819e39fde40aa8fcf1244589ec5aebf32999a` | ⚠️ Unaudited |
+| SpecificGroupStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x365e623c568f0e8ee6aa93a5ac42fda9daa58d23`; celo `0xb88af6eac9cd146d8b03b66708ef76bebd937871` | ⚠️ Unaudited |
+| SpecificGroupStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x77744692a673ef93370e996aec1dd04d10fed190`; celo `0xee0ba5940b51eb8c7f8ec7f97e8ca87d082055a5` | ⚠️ Unaudited |
+| SpecificGroupStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x9dd19aa3c4ef6ebd253baf98cb27ea7c792cc4e8`; celo `0xe11359c9cf7256d6791fe0cc7e80379094a71c2f` | ⚠️ Unaudited |
+| StableTokenV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0x765de816845861e75a25fca122bb6898b8b1282a` | ⚠️ Unaudited |
+| StakedCelo | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x085a0d7612f35a94bd72e9ce2ff8bc86727f21ca`; celo `0x95cc0c75015059dd659db9b528101c5ba91c4e49` | ⚠️ Unaudited |
+| StakedCelo | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x0b2f88ce833ecfc84a006a4c6db7ea23d565f75b`; celo `0x922333bdcb665e91eef9508de56ab2a3c2794692` | ⚠️ Unaudited |
+| StakedCelo | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 5 deployments: celo `0x1b4b48453e3a64eb55d1d30f0f7fa9e2fe32c73d`; celo `0x4387a066e282673f459feeeda3087d29ca4c6429`; celo `0x44c2fe995417b528a861e5428dae7358d5f0271f`; celo `0xa97be82bee72a809fe4b3ad158535879028babcb`; celo `0xafddbc2ce90c66a055e91ccca7bbd08909734a1d` | ⚠️ Unaudited |
+| StakedCelo | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x2c2e2bb4ce3264fc2f70161ba72340b9ee4edc3a`; celo `0x809b7ebabb2e4e1e4d1104b3b361b898ae632426` | ⚠️ Unaudited |
+| StakedCelo | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x9122855efe96f0f53eda66602ebea000733ddcfc`; celo `0xb59b1c36e4466f19c84dd2aeccace718b32c4b61` | ⚠️ Unaudited |
+| TransferWhitelist | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xb49e4d6f0b7f8d0440f75697e6c8b37e09178bcf` | ⚠️ Unaudited |
+| Validators | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | `0xaeb865bca93ddc8f47b8e29f40c5399ce34d0c58` | ⚠️ Unaudited |
+| Vote | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x3c6e9000c449d15e584bc1ab98e9aa14a5fcce0f`; celo `0x9760e0ad8ad961dc95a98a8dcdba71870ae7a3d3` | ⚠️ Unaudited |
+| Vote | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x54496eb9b1ec14bf718b5de11f269b23063f83bd`; celo `0xda30d1f96c17fe7919fc12ea672915c2e0b9ab8e` | ⚠️ Unaudited |
+| Vote | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x655f0ac07c850412e6499670fdb9cef54c3c70fc`; celo `0xfdffa56d70a458777ad1f34e0c5c6ef5de66a28f` | ⚠️ Unaudited |
+| Vote | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | celo | n/a | 2 deployments: celo `0x681db4da2d4d71181657d0c05c1d7e8030f6cc3e`; celo `0xcc31206ac415be3396f2df2040495b4dda0237b8` | ⚠️ Unaudited |
+| Vote | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xbb4e49d75045803ab76ae8eee2916f0c712e65bf` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -208,51 +208,51 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x0198db...b2632c` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x03f696...2887b8` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x094ee2...520d67` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x09b17f...a31cce` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x0cc6e1...ac6a77` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x12364a...2fba57` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x1690e2...de7df5` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x1cf4f9...43ec90` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x1f0e8b...d32cea` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x204ba4...34c9d4` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x48b505...65f187` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x4cf604...ad825f` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x4e843a...4678b0` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x585e1e...3a26c6` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x59f4ec...7a4b68` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x61257e...5c3fd5` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x63af25...b3e40a` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x672b7d...daf224` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x6c5d14...c5a11d` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x6c611a...8b1287` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x715868...3333cc` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x799c0c...db47b3` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x7c68b5...264969` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x8897ec...a27f57` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x8b3842...ed37e1` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x8dd4f8...b13582` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x969d7b...ead654` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x9a642a...7bee9b` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xa6dacd...debbfc` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xaa933b...189352` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xacf9d7...045d15` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xb325a8...c26245` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xb42d0c...210a22` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xba53ef...0b38e5` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xbd42ad...721bf7` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xc053ca...407207` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xc21090...011e19` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xc35269...07cd30` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xc54e26...48986b` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xd2a7fb...265865` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xd3188f...6f4c69` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xd3a6f3...726702` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xefe50f...d2c80f` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xf9de2d...51c3ed` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xfe6803...7d64ed` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x0198db9696aac48c5edaa7b8a0b0d5d20eb2632c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x03f69652876d45acf168acd7cbece9aaf52887b8` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x094ee251965823285fd35d70175225cf5f520d67` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x09b17f887721035c2d73b0628c4bdb5666a31cce` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x0cc6e134abd23d826d72c1cb9331d1af66ac6a77` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x12364a15f52b822f12dd858faeedc49f472fba57` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x1690e229c37219f0a10e102232de5e2591de7df5` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x1cf4f97705f812a18830d5be60b8cdfc3543ec90` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x1f0e8b1f8d39c1bf81311b4bd86337f15bd32cea` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x204ba494de6a50a116ecd340556be8a15734c9d4` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x48b505f1c5b7300de070da9c85324272fc65f187` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x4cf604c6251c87d0c83e17f88397dec67ead825f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x4e843ad7e0dcd656bdfe4d3649285e01724678b0` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x585e1e617dbebdc7b13cf2ec8d11ea85fa3a26c6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x59f4ece373e26b39f389887c26b399497d7a4b68` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x61257eaf53497829636383f6c4ac467d575c3fd5` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x63af253c645ca35a4a2b35aab30c611abeb3e40a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x672b7ddaf201e5c1a71e5843848035dbccdaf224` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x6c5d141990146bd3d11c877b0dd608167fc5a11d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x6c611aa922e9cfc40500e849d780f0e5708b1287` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x7158689eb1a161f38f5227f5e2a8eef65a3333cc` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x799c0cefd290bbb7f1bdc1a1dbfdc2f875db47b3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x7c68b5647fb5624cb1f83209a5d828111f264969` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x8897ecd44b98a220dbc1a19e668796b123a27f57` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x8b3842da1304eae0894286021e26cb8283ed37e1` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x8dd4f800851db9dc219fdfaeb82f8d69e2b13582` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x969d7b57c869fec5163318753aa27cc896ead654` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x9a642a8a77635b5df73eacf8ba389dcbb87bee9b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xa6dacd16c9a7d823b7e2701ea0226e20c7debbfc` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xaa933baf03cfc55b8e4e0d7de479bcc12f189352` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xacf9d7ee602195a87cc4e86cf00186361a045d15` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xb325a8e12344953e8b8b1afbf1d5580d36c26245` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xb42d0c1fa3f714055054c2001d09556761210a22` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xba53ef24579b1b505f823ac6be85e7ae3b0b38e5` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xbd42adbe4904c50827287536635c042f70721bf7` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xc053ca07fb7003fd9594154afc1a15573e407207` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xc21090ac772a0aeb28472073c976d89dab011e19` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xc35269b01c873cfd441b35090a83e6aeb307cd30` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xc54e26ca615884ae5e6f67d75aeb3bb17648986b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xd2a7fbc114a135c671e63fdde540d4a471265865` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xd3188fefca5b9f385caedc0bad67960a3f6f4c69` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xd3a6f30326301e864c5fa5a4a7f61026fc726702` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xefe50f83ba23240a85c39aff429b31e556d2c80f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xf9de2da9bf81dfab66d09db1b7d71cf11851c3ed` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xfe6803022191b40256a0c6571e23a6f49b7d64ed` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -279,13 +279,13 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Celo Audit Competition Summary Report_Nov24.pdf | EpochManager | unmatched — not counted | — | — | no |
 | Celo Audit Competition Summary Report_Nov24.pdf | LockedGold | unmatched — not counted | — | — | no |
 | Celo-staking-audit-mar24(Public).pdf | Vote | unmatched — not counted | — | listed in scope and findings | no |
-| Celo-staking-audit-mar24(Public).pdf | Account | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x4aad04...54c432` — deployed 2022-07-01 20:26:09+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Celo-staking-audit-mar24(Public).pdf | Account | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x4aad04d41fd7fd495503731c5a2579e19054c432` — deployed 2022-07-01 20:26:09+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Celo-staking-audit-mar24(Public).pdf | SpecificGroupStrategy | unmatched — not counted | — | listed in findings | no |
-| FTI_audit_stCELO.pdf | Account | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x4aad04...54c432` — deployed 2022-07-01 20:26:09+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| FTI_audit_stCELO.pdf | Account | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x4aad04d41fd7fd495503731c5a2579e19054c432` — deployed 2022-07-01 20:26:09+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | FTI_audit_stCELO.pdf | Managed | unmatched — not counted | — | — | no |
-| FTI_audit_stCELO.pdf | Manager | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x0239b9...cf9398` — deployed 2022-07-01 20:24:44+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| FTI_audit_stCELO.pdf | Manager | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x0239b96d10a434a56cc9e09383077a0490cf9398` — deployed 2022-07-01 20:24:44+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | FTI_audit_stCELO.pdf | RebasedCelo | unmatched — not counted | — | — | no |
-| FTI_audit_stCELO.pdf | StakedCelo | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xc66858...fdfc24` — deployed 2022-07-01 20:26:19+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| FTI_audit_stCELO.pdf | StakedCelo | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xc668583dcbdc9ae6fa3ce46462758188adfdfc24` — deployed 2022-07-01 20:26:19+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 
 ## Coverage Gaps
 
@@ -293,7 +293,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| celo | `0x58fc55...14713c` | RebasedStakedCelo | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | `0x58fc5556dfb1a1b23e32b395f6522aa86c14713c` | RebasedStakedCelo | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

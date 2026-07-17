@@ -57,7 +57,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xfd4255...dac296`, chain 1)
+- UnnamedContract (`0xfd4255f16378306ca83e37015df01a1700dac296`, chain 1)
 
 ## Contract Surface Quality
 
@@ -103,31 +103,31 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AutomatedFeeForwarder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x46bc87...97c6e5` | ⚠️ Unaudited |
-| FeeForwarder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x2d4498...a8e41d` | ⚠️ Unaudited |
-| HATAirdrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x323193...6ca233` | ⚠️ Unaudited |
-| HATAirdropFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xf4153b...5db128` | ⚠️ Unaudited |
-| HATClaimsManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2866b4...2c2101` | ⚠️ Unaudited |
-| HATGovernanceArbitrator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x1065a9...0f6015` | ⚠️ Unaudited |
-| HATHackersNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x028a7c...66256e` | ⚠️ Unaudited |
-| HATPaymentSplitter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x199c58...9a3852` | ⚠️ Unaudited |
-| HATPaymentSplitterFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x028a7c...66256e` | ⚠️ Unaudited |
-| HATTimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x07368f...9c3a4c` | ⚠️ Unaudited |
-| HATToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x042613...e5c5dc` | ⚠️ Unaudited |
-| HATTokenArbitrumBridgeL1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x76c4ec...000049` | ⚠️ Unaudited |
-| HATTokenArbitrumBridgeL2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x02b82d...75df4f` | ⚠️ Unaudited |
-| HATTokenLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x2866b4...2c2101` | ⚠️ Unaudited |
-| HATVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x028a7c...66256e` | ⚠️ Unaudited |
-| HATVaults | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x571f39...327c4d` | ⚠️ Unaudited |
-| HATVaultsNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x225a2a...bbc401` | ⚠️ Unaudited |
-| HATVaultsRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x0aa146...54b908` | ⚠️ Unaudited |
-| HATVaultsV2Data | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x07368f...9c3a4c` | ⚠️ Unaudited |
-| MessageDispatcher | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x145b55...c538de` | ⚠️ Unaudited |
-| PaymentSplitter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x769016...490371` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0x773d3e...8c77df` | ⚠️ Unaudited |
-| RewardController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0c8eb8...16057f` | ⚠️ Unaudited |
-| TokenLockFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0aa146...54b908` | ⚠️ Unaudited |
-| TokenLockFactoryHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x006b68...89d2e1` | ⚠️ Unaudited |
+| AutomatedFeeForwarder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x46bc877a4edc28bfef7dce78500b7970ed97c6e5` | ⚠️ Unaudited |
+| FeeForwarder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x2d4498e2387135a3ed1078d1037a306218a8e41d` | ⚠️ Unaudited |
+| HATAirdrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x323193b77cda1da3bb4a79f5148e9ed20f6ca233` | ⚠️ Unaudited |
+| HATAirdropFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xf4153be482582e4cd542e2214745a5d3ce5db128` | ⚠️ Unaudited |
+| HATClaimsManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2866b46e9a5c993fd8ad6c5e6eb54641632c2101` | ⚠️ Unaudited |
+| HATGovernanceArbitrator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x1065a9e3ac47f2624293727f4b8319a0a10f6015` | ⚠️ Unaudited |
+| HATHackersNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x028a7c6873dfa8357c9dcf9c9d76ef2abb66256e` | ⚠️ Unaudited |
+| HATPaymentSplitter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x199c5835b31a32401bdee9691cfcff1e379a3852` | ⚠️ Unaudited |
+| HATPaymentSplitterFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x028a7c6873dfa8357c9dcf9c9d76ef2abb66256e` | ⚠️ Unaudited |
+| HATTimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x07368f6a959ef3096230a258dd0af692699c3a4c` | ⚠️ Unaudited |
+| HATToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x042613dadf333766c9815a97e08282ee90e5c5dc` | ⚠️ Unaudited |
+| HATTokenArbitrumBridgeL1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x76c4ec0068923da13ee11527d6cf9b7521000049` | ⚠️ Unaudited |
+| HATTokenArbitrumBridgeL2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x02b82d08ef5315b6206d1e946509b6bea175df4f` | ⚠️ Unaudited |
+| HATTokenLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x2866b46e9a5c993fd8ad6c5e6eb54641632c2101` | ⚠️ Unaudited |
+| HATVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x028a7c6873dfa8357c9dcf9c9d76ef2abb66256e` | ⚠️ Unaudited |
+| HATVaults | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x571f39d351513146248acafa9d0509319a327c4d` | ⚠️ Unaudited |
+| HATVaultsNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x225a2a0dea1357c808b4eb8bc423507dd4bbc401` | ⚠️ Unaudited |
+| HATVaultsRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x0aa1464db005857db8fc3e0470d306fb9e54b908` | ⚠️ Unaudited |
+| HATVaultsV2Data | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x07368f6a959ef3096230a258dd0af692699c3a4c` | ⚠️ Unaudited |
+| MessageDispatcher | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x145b550ac44c3d052e9200937dfab0b163c538de` | ⚠️ Unaudited |
+| PaymentSplitter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7690166442e81b473d6eb413e865aa6379490371` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0x773d3ee9c9ba0c85e52ed7bdd960498f668c77df` | ⚠️ Unaudited |
+| RewardController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0c8eb8475f764e1e5a5a8027ff1fee8adb16057f` | ⚠️ Unaudited |
+| TokenLockFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0aa1464db005857db8fc3e0470d306fb9e54b908` | ⚠️ Unaudited |
+| TokenLockFactoryHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x006b6863370150a0e53a06335a53a9a2bb89d2e1` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -147,7 +147,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-241752 | `0xfd4255...dac296` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-241752 | `0xfd4255f16378306ca83e37015df01a1700dac296` | ❓ Unverified |
 
 ## Audit Inventory
 

@@ -56,7 +56,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xc3abc4...131c38`, chain 42161)
+- UnnamedContract (`0xc3abc47863524ced8daf3ef98d74dd881e131c38`, chain 42161)
 
 ## Contract Surface Quality
 
@@ -102,10 +102,10 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Multicall2 | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | n/a | `0xc5cfad...39b023` | ⚠️ Unaudited |
-| Multicall2Arbitrum | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x5b5cfe...003858` | ⚠️ Unaudited |
-| UtilityToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x1dd6b5...24636c` | ⚠️ Unaudited |
-| Vyper_contract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0100fb...44f5c9` | ⚠️ Unaudited |
+| Multicall2 | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | n/a | `0xc5cfada84e902ad92dd40194f0883ad49639b023` | ⚠️ Unaudited |
+| Multicall2Arbitrum | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x5b5cfe992adac0c9d48e05854b2d91c73a003858` | ⚠️ Unaudited |
+| UtilityToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x1dd6b5f9281c6b4f043c02a83a46c2772024636c` | ⚠️ Unaudited |
+| Vyper_contract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0100fbf414071977b19fc38e6fc7c32fe444f5c9` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -125,7 +125,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388612 | `0xc3abc4...131c38` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-388612 | `0xc3abc47863524ced8daf3ef98d74dd881e131c38` | ❓ Unverified |
 
 ## Audit Inventory
 

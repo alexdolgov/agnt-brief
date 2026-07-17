@@ -60,23 +60,23 @@ The protocol comprises 4 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| FlashNFT | token | ethereum | n/a | 2 deployments: ethereum [`0x3b0908...cdf73f`](./contracts/ethereum-1/0x3b090839c26fe3b2bdfa2f4cd7f3ab001ccdf73f/); arbitrum `0xe15314...d41996` | ✅ Audited |
-| FlashProtocol | unknown | ethereum | n/a | 2 deployments: ethereum [`0x78b2d6...1ec2b9`](./contracts/ethereum-1/0x78b2d65dd1d3d9fb2972d7ef467261ca101ec2b9/); arbitrum [`0x78b2d6...1ec2b9`](./contracts/arbitrum-42161/0x78b2d65dd1d3d9fb2972d7ef467261ca101ec2b9/) | ✅ Audited |
-| FlashToken | token | ethereum | n/a | [`0xb1f1f4...58f2f8`](./contracts/ethereum-1/0xb1f1f47061a7be15c69f378cb3f69423bd58f2f8/) | ✅ Audited |
+| FlashNFT | token | ethereum | n/a | 2 deployments: ethereum [`0x3b090839c26fe3b2bdfa2f4cd7f3ab001ccdf73f`](./contracts/ethereum-1/0x3b090839c26fe3b2bdfa2f4cd7f3ab001ccdf73f/); arbitrum `0xe15314691e916087028a6bf4b8bd1ced1fd41996` | ✅ Audited |
+| FlashProtocol | unknown | ethereum | n/a | 2 deployments: ethereum [`0x78b2d65dd1d3d9fb2972d7ef467261ca101ec2b9`](./contracts/ethereum-1/0x78b2d65dd1d3d9fb2972d7ef467261ca101ec2b9/); arbitrum [`0x78b2d65dd1d3d9fb2972d7ef467261ca101ec2b9`](./contracts/arbitrum-42161/0x78b2d65dd1d3d9fb2972d7ef467261ca101ec2b9/) | ✅ Audited |
+| FlashToken | token | ethereum | n/a | [`0xb1f1f47061a7be15c69f378cb3f69423bd58f2f8`](./contracts/ethereum-1/0xb1f1f47061a7be15c69f378cb3f69423bd58f2f8/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (9)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| FlashGLPStrategy | core_logic | arbitrum | n/a | [`0x907a74...2df573`](./contracts/arbitrum-42161/0x907a749631ad4149df1d49ee2fd40517b12df573/) | ⚠️ Unaudited |
-| FlashProtocolProxyV2 | unknown | arbitrum | n/a | 2 deployments: ethereum `0xb6db29...806e6d`; arbitrum [`0x949711...3ae193`](./contracts/arbitrum-42161/0x9497116d258924621c60384f53afab29cb3ae193/) | ⚠️ Unaudited |
-| FTokenAccumulatorV3 | token | arbitrum | n/a | 3 deployments: ethereum `0xefd1d1...65b160`; optimism `0xcb1205...609bfd`; arbitrum [`0x08719d...b50a77`](./contracts/arbitrum-42161/0x08719dcab4684603aab851f8bc2d26ab98b50a77/) | ⚠️ Unaudited |
-| L2StandardERC20 | token | optimism | n/a | [`0x86bea6...cdd335`](./contracts/optimism-10/0x86bea60374f220de9769b2fef2db725bc1cdd335/) | ⚠️ Unaudited |
-| LiquidStake | unknown | ethereum | n/a | 2 deployments: ethereum [`0x21d929...0b7684`](./contracts/ethereum-1/0x21d929770398df5146346390d2973bf3f30b7684/); arbitrum `0x7cd981...345e23` | ⚠️ Unaudited |
-| MessageDB | unknown | ethereum | n/a | [`0xb2f7f0...9b929d`](./contracts/ethereum-1/0xb2f7f05e204796df9bbed12d6d1be687089b929d/) | ⚠️ Unaudited |
-| StandardArbERC20 | token | arbitrum | n/a | [`0xc62853...5795bd`](./contracts/arbitrum-42161/0xc628534100180582e43271448098cb2c185795bd/) | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | ethereum | n/a | [`0xb1c33d...62a698`](./contracts/ethereum-1/0xb1c33de7a914f4d9ba293a055822cbc6e662a698/) | ⚠️ Unaudited |
-| xFlash | unknown | ethereum | n/a | [`0x082aeb...c59dd1`](./contracts/ethereum-1/0x082aeb8d095b4ea1ad935035ef1239928ac59dd1/) | ⚠️ Unaudited |
+| FlashGLPStrategy | core_logic | arbitrum | n/a | [`0x907a749631ad4149df1d49ee2fd40517b12df573`](./contracts/arbitrum-42161/0x907a749631ad4149df1d49ee2fd40517b12df573/) | ⚠️ Unaudited |
+| FlashProtocolProxyV2 | unknown | arbitrum | n/a | 2 deployments: ethereum `0xb6db29351c57dbd678e914fbba0d400df2806e6d`; arbitrum [`0x9497116d258924621c60384f53afab29cb3ae193`](./contracts/arbitrum-42161/0x9497116d258924621c60384f53afab29cb3ae193/) | ⚠️ Unaudited |
+| FTokenAccumulatorV3 | token | arbitrum | n/a | 3 deployments: ethereum `0xefd1d1eb731bf69f400023c009da79d58765b160`; optimism `0xcb1205ac28693beda01e0b66e9b4d06231609bfd`; arbitrum [`0x08719dcab4684603aab851f8bc2d26ab98b50a77`](./contracts/arbitrum-42161/0x08719dcab4684603aab851f8bc2d26ab98b50a77/) | ⚠️ Unaudited |
+| L2StandardERC20 | token | optimism | n/a | [`0x86bea60374f220de9769b2fef2db725bc1cdd335`](./contracts/optimism-10/0x86bea60374f220de9769b2fef2db725bc1cdd335/) | ⚠️ Unaudited |
+| LiquidStake | unknown | ethereum | n/a | 2 deployments: ethereum [`0x21d929770398df5146346390d2973bf3f30b7684`](./contracts/ethereum-1/0x21d929770398df5146346390d2973bf3f30b7684/); arbitrum `0x7cd98120d44964ccb670f26dc5e3fde23f345e23` | ⚠️ Unaudited |
+| MessageDB | unknown | ethereum | n/a | [`0xb2f7f05e204796df9bbed12d6d1be687089b929d`](./contracts/ethereum-1/0xb2f7f05e204796df9bbed12d6d1be687089b929d/) | ⚠️ Unaudited |
+| StandardArbERC20 | token | arbitrum | n/a | [`0xc628534100180582e43271448098cb2c185795bd`](./contracts/arbitrum-42161/0xc628534100180582e43271448098cb2c185795bd/) | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | ethereum | n/a | [`0xb1c33de7a914f4d9ba293a055822cbc6e662a698`](./contracts/ethereum-1/0xb1c33de7a914f4d9ba293a055822cbc6e662a698/) | ⚠️ Unaudited |
+| xFlash | unknown | ethereum | n/a | [`0x082aeb8d095b4ea1ad935035ef1239928ac59dd1`](./contracts/ethereum-1/0x082aeb8d095b4ea1ad935035ef1239928ac59dd1/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -96,9 +96,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | optimism | n/a | `0x720fac...598f47` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x3b0908...cdf73f` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x9d791e...5307dc` | ❓ Unverified |
+| UnnamedContract | unknown | optimism | n/a | `0x720face4d24018cbe1d68b1df64a730890598f47` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x3b090839c26fe3b2bdfa2f4cd7f3ab001ccdf73f` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x9d791ed4bf553c7d14ebe778b207a6594b5307dc` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -114,14 +114,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | [`0x907a74...2df573`](./contracts/arbitrum-42161/0x907a749631ad4149df1d49ee2fd40517b12df573/) | FlashGLPStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x949711...3ae193`](./contracts/arbitrum-42161/0x9497116d258924621c60384f53afab29cb3ae193/) | FlashProtocolProxyV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x08719d...b50a77`](./contracts/arbitrum-42161/0x08719dcab4684603aab851f8bc2d26ab98b50a77/) | FTokenAccumulatorV3 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x86bea6...cdd335`](./contracts/optimism-10/0x86bea60374f220de9769b2fef2db725bc1cdd335/) | L2StandardERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x21d929...0b7684`](./contracts/ethereum-1/0x21d929770398df5146346390d2973bf3f30b7684/) | LiquidStake | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xb2f7f0...9b929d`](./contracts/ethereum-1/0xb2f7f05e204796df9bbed12d6d1be687089b929d/) | MessageDB | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xc62853...5795bd`](./contracts/arbitrum-42161/0xc628534100180582e43271448098cb2c185795bd/) | StandardArbERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x082aeb...c59dd1`](./contracts/ethereum-1/0x082aeb8d095b4ea1ad935035ef1239928ac59dd1/) | xFlash | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x907a749631ad4149df1d49ee2fd40517b12df573`](./contracts/arbitrum-42161/0x907a749631ad4149df1d49ee2fd40517b12df573/) | FlashGLPStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x9497116d258924621c60384f53afab29cb3ae193`](./contracts/arbitrum-42161/0x9497116d258924621c60384f53afab29cb3ae193/) | FlashProtocolProxyV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x08719dcab4684603aab851f8bc2d26ab98b50a77`](./contracts/arbitrum-42161/0x08719dcab4684603aab851f8bc2d26ab98b50a77/) | FTokenAccumulatorV3 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | [`0x86bea60374f220de9769b2fef2db725bc1cdd335`](./contracts/optimism-10/0x86bea60374f220de9769b2fef2db725bc1cdd335/) | L2StandardERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x21d929770398df5146346390d2973bf3f30b7684`](./contracts/ethereum-1/0x21d929770398df5146346390d2973bf3f30b7684/) | LiquidStake | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb2f7f05e204796df9bbed12d6d1be687089b929d`](./contracts/ethereum-1/0xb2f7f05e204796df9bbed12d6d1be687089b929d/) | MessageDB | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xc628534100180582e43271448098cb2c185795bd`](./contracts/arbitrum-42161/0xc628534100180582e43271448098cb2c185795bd/) | StandardArbERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x082aeb8d095b4ea1ad935035ef1239928ac59dd1`](./contracts/ethereum-1/0x082aeb8d095b4ea1ad935035ef1239928ac59dd1/) | xFlash | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

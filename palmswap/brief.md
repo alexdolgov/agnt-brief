@@ -61,7 +61,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| PalmToken | token | bsc | n/a | [`0x297453...3aae38`](./contracts/bsc-56/0x29745314b4d294b7c77cdb411b8aaa95923aae38/) | ⚠️ Unaudited |
+| PalmToken | token | bsc | n/a | [`0x29745314b4d294b7c77cdb411b8aaa95923aae38`](./contracts/bsc-56/0x29745314b4d294b7c77cdb411b8aaa95923aae38/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,7 +93,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x297453...3aae38`](./contracts/bsc-56/0x29745314b4d294b7c77cdb411b8aaa95923aae38/) | PalmToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x29745314b4d294b7c77cdb411b8aaa95923aae38`](./contracts/bsc-56/0x29745314b4d294b7c77cdb411b8aaa95923aae38/) | PalmToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -52,17 +52,17 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x481aee...4b0b59`, chain 1)
-- UnnamedContract (`0x50ed39...5edfe8`, chain 1)
-- UnnamedContract (`0xa4ca04...f43f67`, chain 1)
-- UnnamedContract (`0xaeb0c0...f65ddf`, chain 1)
-- UnnamedContract (`0xba0e6b...23ecc3`, chain 1)
-- UnnamedContract (`0xc20c2e...41fc18`, chain 1)
-- UnnamedContract (`0xca0c6b...87d866`, chain 1)
-- UnnamedContract (`0xd57d30...c169ee`, chain 1)
-- UnnamedContract (`0xde8a1c...508fe1`, chain 1)
-- UnnamedContract (`0xf3d20d...90f130`, chain 1)
-- ERC1967Proxy (`0x9ba9d8...b5cd7e`, chain 1)
+- UnnamedContract (`0x481aeeb9bdfe08f050d22f0b352356691c4b0b59`, chain 1)
+- UnnamedContract (`0x50ed39b58f66338b84e67e6ff9a2bf00725edfe8`, chain 1)
+- UnnamedContract (`0xa4ca04d02bfdc3a2df56b9b6994520e69df43f67`, chain 1)
+- UnnamedContract (`0xaeb0c00d0125a8a788956ade4f4f12ead9f65ddf`, chain 1)
+- UnnamedContract (`0xba0e6bf94580d49b5aaaa54279198d424b23ecc3`, chain 1)
+- UnnamedContract (`0xc20c2ea5fc5f26200f3339512f336c2ece41fc18`, chain 1)
+- UnnamedContract (`0xca0c6b264f0f9958ec186eb2eaa208966187d866`, chain 1)
+- UnnamedContract (`0xd57d30d06969e5a98516e9f8d009c6f39ec169ee`, chain 1)
+- UnnamedContract (`0xde8a1c2d142bc8f3bf3181a2e301a37471508fe1`, chain 1)
+- UnnamedContract (`0xf3d20db1d16a4d0ad2f280a5e594ff3c7790f130`, chain 1)
+- ERC1967Proxy (`0x9ba9d8781ac7ce5adb8b8ec48aab521d0db5cd7e`, chain 1)
 
 ## Contract Surface Quality
 
@@ -108,9 +108,9 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| MoorToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfc280b...75c594` | ⚠️ Unaudited |
-| Rig | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2c4505...6d100c` | ⚠️ Unaudited |
-| Rig | unknown | project_anchor | own_supporting | 1 | ethereum | unit-240515 | `0x9ba9d8...b5cd7e` | ⚠️ Unaudited |
+| MoorToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfc280b8e8c2e574b99d63e29c75872737575c594` | ⚠️ Unaudited |
+| Rig | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2c4505e8cfdf91045d2d8e4247d7b11e776d100c` | ⚠️ Unaudited |
+| Rig | unknown | project_anchor | own_supporting | 1 | ethereum | unit-240515 | `0x9ba9d8781ac7ce5adb8b8ec48aab521d0db5cd7e` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -130,16 +130,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240499 | `0x481aee...4b0b59` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240500 | `0x50ed39...5edfe8` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240504 | `0xa4ca04...f43f67` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240505 | `0xaeb0c0...f65ddf` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240506 | `0xba0e6b...23ecc3` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240507 | `0xc20c2e...41fc18` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240508 | `0xca0c6b...87d866` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240510 | `0xd57d30...c169ee` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240512 | `0xde8a1c...508fe1` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240514 | `0xf3d20d...90f130` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240499 | `0x481aeeb9bdfe08f050d22f0b352356691c4b0b59` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240500 | `0x50ed39b58f66338b84e67e6ff9a2bf00725edfe8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240504 | `0xa4ca04d02bfdc3a2df56b9b6994520e69df43f67` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240505 | `0xaeb0c00d0125a8a788956ade4f4f12ead9f65ddf` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240506 | `0xba0e6bf94580d49b5aaaa54279198d424b23ecc3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240507 | `0xc20c2ea5fc5f26200f3339512f336c2ece41fc18` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240508 | `0xca0c6b264f0f9958ec186eb2eaa208966187d866` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240510 | `0xd57d30d06969e5a98516e9f8d009c6f39ec169ee` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240512 | `0xde8a1c2d142bc8f3bf3181a2e301a37471508fe1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240514 | `0xf3d20db1d16a4d0ad2f280a5e594ff3c7790f130` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -240,7 +240,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x9ba9d8...b5cd7e` | Rig | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x9ba9d8781ac7ce5adb8b8ec48aab521d0db5cd7e` | Rig | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

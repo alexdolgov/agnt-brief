@@ -52,23 +52,23 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x03c5f7...b7e008`, chain 250)
-- UnnamedContract (`0x0713b9...f66b08`, chain 250)
-- UnnamedContract (`0x297fdd...a1fe57`, chain 250)
-- UnnamedContract (`0x30d254...a265c1`, chain 250)
-- UnnamedContract (`0x43a790...c38777`, chain 250)
-- UnnamedContract (`0x471022...3d0704`, chain 250)
-- UnnamedContract (`0x49c93a...0e82f8`, chain 250)
-- UnnamedContract (`0x4cf8e5...ecaa82`, chain 250)
-- UnnamedContract (`0x6c793c...1f9c9b`, chain 250)
-- UnnamedContract (`0x7fb9a7...10effc`, chain 250)
-- UnnamedContract (`0x9fad24...10d068`, chain 250)
-- UnnamedContract (`0xb7c10e...2b6aa8`, chain 250)
-- UnnamedContract (`0xc466e3...d10fd3`, chain 250)
-- UnnamedContract (`0xe40b7f...e020b5`, chain 250)
-- UnnamedContract (`0xf3b061...42a8c3`, chain 250)
-- UnnamedContract (`0xfcef13...fd6eea`, chain 250)
-- UnnamedContract (`0xd8321a...e0814d`, chain 250)
+- UnnamedContract (`0x03c5f70748e0a0122c07a2f194e04b7d0fb7e008`, chain 250)
+- UnnamedContract (`0x0713b9c9872442954ea50a862376ed3a93f66b08`, chain 250)
+- UnnamedContract (`0x297fddc5c33ef988dd03bd13e162ae084ea1fe57`, chain 250)
+- UnnamedContract (`0x30d254948f533baf0409bbcd5c5ebdb835a265c1`, chain 250)
+- UnnamedContract (`0x43a7904c8185bf2f40bb1d60e7b41e1952c38777`, chain 250)
+- UnnamedContract (`0x47102245fea0f8d35a6b28e54505e9ffd83d0704`, chain 250)
+- UnnamedContract (`0x49c93a95dbcc9a6a4d8f77e59c038ce5020e82f8`, chain 250)
+- UnnamedContract (`0x4cf8e50a5ac16731fa2d8d9591e195a285ecaa82`, chain 250)
+- UnnamedContract (`0x6c793c628fe2b480c5e6fb7957dda4b9291f9c9b`, chain 250)
+- UnnamedContract (`0x7fb9a7cbc6689c1c79e37bf8f852ada44b10effc`, chain 250)
+- UnnamedContract (`0x9fad24f572045c7869117160a571b2e50b10d068`, chain 250)
+- UnnamedContract (`0xb7c10e5089d3fd281f51998543510675a52b6aa8`, chain 250)
+- UnnamedContract (`0xc466e3fee82c6bdc2e17f2eaf2c6f1e91ad10fd3`, chain 250)
+- UnnamedContract (`0xe40b7fa6f5f7fb0dc7d56f433814227aaae020b5`, chain 250)
+- UnnamedContract (`0xf3b0611e2e4d2cd6ab4bb3e01ade211c3f42a8c3`, chain 250)
+- UnnamedContract (`0xfcef135eb981cdd798a2c0cfd4149ef534fd6eea`, chain 250)
+- UnnamedContract (`0xd8321aa83fb0a4ecd6348d4577431310a6e0814d`, chain 250)
 
 ## Contract Surface Quality
 
@@ -132,23 +132,23 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386842 | `0x03c5f7...b7e008` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386843 | `0x0713b9...f66b08` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386844 | `0x297fdd...a1fe57` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386845 | `0x30d254...a265c1` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386846 | `0x43a790...c38777` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386847 | `0x471022...3d0704` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386848 | `0x49c93a...0e82f8` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386849 | `0x4cf8e5...ecaa82` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386850 | `0x6c793c...1f9c9b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386851 | `0x7fb9a7...10effc` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386852 | `0x9fad24...10d068` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386853 | `0xb7c10e...2b6aa8` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386854 | `0xc466e3...d10fd3` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386855 | `0xd8321a...e0814d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386856 | `0xe40b7f...e020b5` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386857 | `0xf3b061...42a8c3` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386858 | `0xfcef13...fd6eea` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386842 | `0x03c5f70748e0a0122c07a2f194e04b7d0fb7e008` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386843 | `0x0713b9c9872442954ea50a862376ed3a93f66b08` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386844 | `0x297fddc5c33ef988dd03bd13e162ae084ea1fe57` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386845 | `0x30d254948f533baf0409bbcd5c5ebdb835a265c1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386846 | `0x43a7904c8185bf2f40bb1d60e7b41e1952c38777` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386847 | `0x47102245fea0f8d35a6b28e54505e9ffd83d0704` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386848 | `0x49c93a95dbcc9a6a4d8f77e59c038ce5020e82f8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386849 | `0x4cf8e50a5ac16731fa2d8d9591e195a285ecaa82` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386850 | `0x6c793c628fe2b480c5e6fb7957dda4b9291f9c9b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386851 | `0x7fb9a7cbc6689c1c79e37bf8f852ada44b10effc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386852 | `0x9fad24f572045c7869117160a571b2e50b10d068` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386853 | `0xb7c10e5089d3fd281f51998543510675a52b6aa8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386854 | `0xc466e3fee82c6bdc2e17f2eaf2c6f1e91ad10fd3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386855 | `0xd8321aa83fb0a4ecd6348d4577431310a6e0814d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386856 | `0xe40b7fa6f5f7fb0dc7d56f433814227aaae020b5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386857 | `0xf3b0611e2e4d2cd6ab4bb3e01ade211c3f42a8c3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386858 | `0xfcef135eb981cdd798a2c0cfd4149ef534fd6eea` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -182,7 +182,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | sourcehat.com/audits/GeistProtocol | StableDebtToken | unmatched — not counted | — | listed in scope table | no |
 | sourcehat.com/audits/GeistProtocol | VariableDebtToken | unmatched — not counted | — | listed in scope table | no |
 | sourcehat.com/audits/GeistProtocol | ChefIncentivesController | unmatched — not counted | — | listed in scope table | no |
-| sourcehat.com/audits/GeistProtocol | GeistToken | own contract | UnnamedContract (selected) `0xd8321a...e0814d` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| sourcehat.com/audits/GeistProtocol | GeistToken | own contract | UnnamedContract (selected) `0xd8321aa83fb0a4ecd6348d4577431310a6e0814d` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | sourcehat.com/audits/GeistProtocol | TokenVesting | unmatched — not counted | — | listed in scope table | no |
 | sourcehat.com/audits/GeistProtocol | MultiFeeDistribution | unmatched — not counted | — | listed in scope table | no |
 | sourcehat.com/audits/GeistProtocol | MasterChef | unmatched — not counted | — | listed in scope table | no |

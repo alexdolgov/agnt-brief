@@ -61,27 +61,27 @@ The protocol comprises 3 functional families. Its contracts share 4 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Bonding | unknown | ethereum | n/a | [`0xc3d0d5...7d6b9c`](./contracts/ethereum-1/0xc3d0d54aff5209118aed32253cc8ec5f417d6b9c/) | ✅ Audited |
-| CNCLockerV3 | unknown | ethereum | n/a | [`0x8b318d...5b2c93`](./contracts/ethereum-1/0x8b318d1d27ee1e4329d88f0c1e9bc3a1025b2c93/) | ✅ Audited |
-| CNCToken | token | ethereum | n/a | [`0x9ae380...0f5cfc`](./contracts/ethereum-1/0x9ae380f0272e2162340a5bb646c354271c0f5cfc/) | ✅ Audited |
-| ConicPool | core_logic | ethereum | n/a | 4 deployments: ethereum [`0x72c23c...263140`](./contracts/ethereum-1/0x72c23c94f68669c7b6a5b6e8c87aa9b70c263140/); ethereum `0x80a360...a64316`; ethereum `0x89dc3e...591988`; ethereum `0xb083ad...b6df77` | ✅ Audited |
-| LpToken | token | ethereum | n/a | [`0x9961bd...564a8c`](./contracts/ethereum-1/0x9961bdbe8b7091e584c2bf9d0a160c583f564a8c/) | ✅ Audited |
+| Bonding | unknown | ethereum | n/a | [`0xc3d0d54aff5209118aed32253cc8ec5f417d6b9c`](./contracts/ethereum-1/0xc3d0d54aff5209118aed32253cc8ec5f417d6b9c/) | ✅ Audited |
+| CNCLockerV3 | unknown | ethereum | n/a | [`0x8b318d1d27ee1e4329d88f0c1e9bc3a1025b2c93`](./contracts/ethereum-1/0x8b318d1d27ee1e4329d88f0c1e9bc3a1025b2c93/) | ✅ Audited |
+| CNCToken | token | ethereum | n/a | [`0x9ae380f0272e2162340a5bb646c354271c0f5cfc`](./contracts/ethereum-1/0x9ae380f0272e2162340a5bb646c354271c0f5cfc/) | ✅ Audited |
+| ConicPool | core_logic | ethereum | n/a | 4 deployments: ethereum [`0x72c23c94f68669c7b6a5b6e8c87aa9b70c263140`](./contracts/ethereum-1/0x72c23c94f68669c7b6a5b6e8c87aa9b70c263140/); ethereum `0x80a3604977270b7ef2e637f9eb78ce1c3fa64316`; ethereum `0x89dc3e9d493512f6cfb923e15369ebfdde591988`; ethereum `0xb083ad0933fadf12761450a4fd45775b9fb6df77` | ✅ Audited |
+| LpToken | token | ethereum | n/a | [`0x9961bdbe8b7091e584c2bf9d0a160c583f564a8c`](./contracts/ethereum-1/0x9961bdbe8b7091e584c2bf9d0a160c583f564a8c/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (11)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BondingHelper | unknown | ethereum | n/a | [`0x447528...6a6c07`](./contracts/ethereum-1/0x447528a9f8423a68819b2da43e157205e26a6c07/) | ⚠️ Unaudited |
-| ConicEthPool | unknown | ethereum | n/a | [`0x336707...6f3543`](./contracts/ethereum-1/0x3367070ed152e2b715eef48d157685cf496f3543/) | ⚠️ Unaudited |
-| Controller | unknown | ethereum | n/a | 2 deployments: ethereum [`0x013a3d...9b587e`](./contracts/ethereum-1/0x013a3da6591d3427f164862793ab4e388f9b587e/); ethereum `0x2790ec...f57eae` | ⚠️ Unaudited |
-| ConvexHandlerV3 | unknown | ethereum | unit-13 (3 proxies) | 3 deployments: ethereum [`0x07b577...9175a5`](./contracts/ethereum-1/0x07b577f10d4e00f3018542d08a87f255a49175a5/); ethereum `0x369cbc...5b971f`; ethereum `0xbb787d...9691e9` | ⚠️ Unaudited |
-| CurveHandler | unknown | ethereum | unit-14 (2 proxies) | 2 deployments: ethereum [`0x402933...f07f94`](./contracts/ethereum-1/0x40293380f5292bb13905608b35a936c332f07f94/); ethereum `0xabb735...23eae9` | ⚠️ Unaudited |
-| GenericOracleV2 | unknown | ethereum | n/a | [`0x286ef8...a344b0`](./contracts/ethereum-1/0x286ef89cd2da6728fd2cb3e1d1c5766bcea344b0/) | ⚠️ Unaudited |
-| InflationManager | unknown | ethereum | n/a | [`0xf4a364...88fd7b`](./contracts/ethereum-1/0xf4a364d6b513158dc880d0e8da6ae65b9688fd7b/) | ⚠️ Unaudited |
-| InflationRedirectionPool | unknown | ethereum | n/a | 2 deployments: ethereum [`0xb65271...4562c2`](./contracts/ethereum-1/0xb652710eab40b6ed32d6c32053fc37ef234562c2/); ethereum `0xdfc4e0...cec02f` | ⚠️ Unaudited |
-| LpTokenStaker | unknown | ethereum | n/a | [`0xec0374...99ca3d`](./contracts/ethereum-1/0xec037423a61b634bfc490dcc215236349999ca3d/) | ⚠️ Unaudited |
-| RewardManager | unknown | ethereum | n/a | 5 deployments: ethereum [`0x15c606...119532`](./contracts/ethereum-1/0x15c606c60afcfaa8e57777d947c40e9204119532/); ethereum `0x3213ee...1cd255`; ethereum `0x49f3d1...1df7bb`; ethereum `0x71e182...d1c558`; ethereum `0xbf65fa...60f9ad` | ⚠️ Unaudited |
-| RewardManagerV2 | unknown | ethereum | n/a | 2 deployments: ethereum [`0x39f15f...66ff02`](./contracts/ethereum-1/0x39f15f704c1f4678f7e6359a58a196228266ff02/); ethereum `0xf59e74...8690b3` | ⚠️ Unaudited |
+| BondingHelper | unknown | ethereum | n/a | [`0x447528a9f8423a68819b2da43e157205e26a6c07`](./contracts/ethereum-1/0x447528a9f8423a68819b2da43e157205e26a6c07/) | ⚠️ Unaudited |
+| ConicEthPool | unknown | ethereum | n/a | [`0x3367070ed152e2b715eef48d157685cf496f3543`](./contracts/ethereum-1/0x3367070ed152e2b715eef48d157685cf496f3543/) | ⚠️ Unaudited |
+| Controller | unknown | ethereum | n/a | 2 deployments: ethereum [`0x013a3da6591d3427f164862793ab4e388f9b587e`](./contracts/ethereum-1/0x013a3da6591d3427f164862793ab4e388f9b587e/); ethereum `0x2790ec478f150a98f5d96755601a26403df57eae` | ⚠️ Unaudited |
+| ConvexHandlerV3 | unknown | ethereum | unit-13 (3 proxies) | 3 deployments: ethereum [`0x07b577f10d4e00f3018542d08a87f255a49175a5`](./contracts/ethereum-1/0x07b577f10d4e00f3018542d08a87f255a49175a5/); ethereum `0x369cbc5c6f139b1132d3b91b87241b37fc5b971f`; ethereum `0xbb787d6243a8d450659e09ea6fd82f1c859691e9` | ⚠️ Unaudited |
+| CurveHandler | unknown | ethereum | unit-14 (2 proxies) | 2 deployments: ethereum [`0x40293380f5292bb13905608b35a936c332f07f94`](./contracts/ethereum-1/0x40293380f5292bb13905608b35a936c332f07f94/); ethereum `0xabb735648a076d570aff2a61d8d141099823eae9` | ⚠️ Unaudited |
+| GenericOracleV2 | unknown | ethereum | n/a | [`0x286ef89cd2da6728fd2cb3e1d1c5766bcea344b0`](./contracts/ethereum-1/0x286ef89cd2da6728fd2cb3e1d1c5766bcea344b0/) | ⚠️ Unaudited |
+| InflationManager | unknown | ethereum | n/a | [`0xf4a364d6b513158dc880d0e8da6ae65b9688fd7b`](./contracts/ethereum-1/0xf4a364d6b513158dc880d0e8da6ae65b9688fd7b/) | ⚠️ Unaudited |
+| InflationRedirectionPool | unknown | ethereum | n/a | 2 deployments: ethereum [`0xb652710eab40b6ed32d6c32053fc37ef234562c2`](./contracts/ethereum-1/0xb652710eab40b6ed32d6c32053fc37ef234562c2/); ethereum `0xdfc4e09275731898bd1872307447589783cec02f` | ⚠️ Unaudited |
+| LpTokenStaker | unknown | ethereum | n/a | [`0xec037423a61b634bfc490dcc215236349999ca3d`](./contracts/ethereum-1/0xec037423a61b634bfc490dcc215236349999ca3d/) | ⚠️ Unaudited |
+| RewardManager | unknown | ethereum | n/a | 5 deployments: ethereum [`0x15c606c60afcfaa8e57777d947c40e9204119532`](./contracts/ethereum-1/0x15c606c60afcfaa8e57777d947c40e9204119532/); ethereum `0x3213eea62d349c39da3989509a0ec5c05b1cd255`; ethereum `0x49f3d1256e109c48613279b5db7085c6ac1df7bb`; ethereum `0x71e1829c1f45e8a02931a4721719b8cd2fd1c558`; ethereum `0xbf65fadd5335380a7d5aa01f1676af22ee60f9ad` | ⚠️ Unaudited |
+| RewardManagerV2 | unknown | ethereum | n/a | 2 deployments: ethereum [`0x39f15f704c1f4678f7e6359a58a196228266ff02`](./contracts/ethereum-1/0x39f15f704c1f4678f7e6359a58a196228266ff02/); ethereum `0xf59e74fd4a073520ef8190f11d32d923018690b3` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -115,15 +115,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x447528...6a6c07`](./contracts/ethereum-1/0x447528a9f8423a68819b2da43e157205e26a6c07/) | BondingHelper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x336707...6f3543`](./contracts/ethereum-1/0x3367070ed152e2b715eef48d157685cf496f3543/) | ConicEthPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x013a3d...9b587e`](./contracts/ethereum-1/0x013a3da6591d3427f164862793ab4e388f9b587e/) | Controller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x286ef8...a344b0`](./contracts/ethereum-1/0x286ef89cd2da6728fd2cb3e1d1c5766bcea344b0/) | GenericOracleV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xf4a364...88fd7b`](./contracts/ethereum-1/0xf4a364d6b513158dc880d0e8da6ae65b9688fd7b/) | InflationManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xb65271...4562c2`](./contracts/ethereum-1/0xb652710eab40b6ed32d6c32053fc37ef234562c2/) | InflationRedirectionPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xec0374...99ca3d`](./contracts/ethereum-1/0xec037423a61b634bfc490dcc215236349999ca3d/) | LpTokenStaker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x15c606...119532`](./contracts/ethereum-1/0x15c606c60afcfaa8e57777d947c40e9204119532/) | RewardManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x39f15f...66ff02`](./contracts/ethereum-1/0x39f15f704c1f4678f7e6359a58a196228266ff02/) | RewardManagerV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x447528a9f8423a68819b2da43e157205e26a6c07`](./contracts/ethereum-1/0x447528a9f8423a68819b2da43e157205e26a6c07/) | BondingHelper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x3367070ed152e2b715eef48d157685cf496f3543`](./contracts/ethereum-1/0x3367070ed152e2b715eef48d157685cf496f3543/) | ConicEthPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x013a3da6591d3427f164862793ab4e388f9b587e`](./contracts/ethereum-1/0x013a3da6591d3427f164862793ab4e388f9b587e/) | Controller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x286ef89cd2da6728fd2cb3e1d1c5766bcea344b0`](./contracts/ethereum-1/0x286ef89cd2da6728fd2cb3e1d1c5766bcea344b0/) | GenericOracleV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xf4a364d6b513158dc880d0e8da6ae65b9688fd7b`](./contracts/ethereum-1/0xf4a364d6b513158dc880d0e8da6ae65b9688fd7b/) | InflationManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb652710eab40b6ed32d6c32053fc37ef234562c2`](./contracts/ethereum-1/0xb652710eab40b6ed32d6c32053fc37ef234562c2/) | InflationRedirectionPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xec037423a61b634bfc490dcc215236349999ca3d`](./contracts/ethereum-1/0xec037423a61b634bfc490dcc215236349999ca3d/) | LpTokenStaker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x15c606c60afcfaa8e57777d947c40e9204119532`](./contracts/ethereum-1/0x15c606c60afcfaa8e57777d947c40e9204119532/) | RewardManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x39f15f704c1f4678f7e6359a58a196228266ff02`](./contracts/ethereum-1/0x39f15f704c1f4678f7e6359a58a196228266ff02/) | RewardManagerV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -62,20 +62,20 @@ The protocol comprises 3 functional families. Its contracts share 3 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BorrowerPools | unknown | polygon | n/a | 2 deployments: polygon [`0x8d3da2...bace7c`](./contracts/polygon-137/0x8d3da26f8301dea18197e4c3146d8cde3ebace7c/); polygon `0xbc13e1...f10b1f` | ✅ Audited |
-| BorrowerPools | unknown | polygon | n/a | [`0xa5a520...85d2b3`](./contracts/polygon-137/0xa5a52023d313339969ca819cd066abc72685d2b3/) | ✅ Audited |
-| PoolLogic | unknown | polygon | n/a | [`0xd2b855...4ed5fd`](./contracts/polygon-137/0xd2b8552104cf999e0eead79800f0ff08cd4ed5fd/) | ✅ Audited |
+| BorrowerPools | unknown | polygon | n/a | 2 deployments: polygon [`0x8d3da26f8301dea18197e4c3146d8cde3ebace7c`](./contracts/polygon-137/0x8d3da26f8301dea18197e4c3146d8cde3ebace7c/); polygon `0xbc13e1b5da083b10622ff5b52c9cfa1912f10b1f` | ✅ Audited |
+| BorrowerPools | unknown | polygon | n/a | [`0xa5a52023d313339969ca819cd066abc72685d2b3`](./contracts/polygon-137/0xa5a52023d313339969ca819cd066abc72685d2b3/) | ✅ Audited |
+| PoolLogic | unknown | polygon | n/a | [`0xd2b8552104cf999e0eead79800f0ff08cd4ed5fd`](./contracts/polygon-137/0xd2b8552104cf999e0eead79800f0ff08cd4ed5fd/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (6)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AToken | token | polygon | n/a | [`0x1a13f4...998b7f`](./contracts/polygon-137/0x1a13f4ca1d028320a707d99520abfefca3998b7f/) | ⚠️ Unaudited |
-| AToken | token | polygon | n/a | [`0x60d55f...885cec`](./contracts/polygon-137/0x60d55f02a771d515e077c9c2403a1ef324885cec/) | ⚠️ Unaudited |
-| TokenPolygonUpgradeableNameable | token | polygon | n/a | [`0xe0b52e...057db4`](./contracts/polygon-137/0xe0b52e49357fd4daf2c15e02058dce6bc0057db4/) | ⚠️ Unaudited |
-| AtlendisLockdrop | unknown | polygon | n/a | 2 deployments: polygon [`0x4d5fa3...deab3b`](./contracts/polygon-137/0x4d5fa31a68f51ec53ea036cd4cc4cb8645deab3b/); polygon `0xbe7e43...37e84e` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | polygon | n/a | [`0xbfca29...bae6d6`](./contracts/polygon-137/0xbfca293e17e067e8abdca30a5d35addd0cbae6d6/) | ⚠️ Unaudited |
-| TokenPolygonUpgradeable | unknown | polygon | n/a | 2 deployments: polygon [`0x7660b2...3caa24`](./contracts/polygon-137/0x7660b2b53f6e9ecebebfade61fdeb1f3703caa24/); polygon `0x900f71...60ebf1` | ⚠️ Unaudited |
+| AToken | token | polygon | n/a | [`0x1a13f4ca1d028320a707d99520abfefca3998b7f`](./contracts/polygon-137/0x1a13f4ca1d028320a707d99520abfefca3998b7f/) | ⚠️ Unaudited |
+| AToken | token | polygon | n/a | [`0x60d55f02a771d515e077c9c2403a1ef324885cec`](./contracts/polygon-137/0x60d55f02a771d515e077c9c2403a1ef324885cec/) | ⚠️ Unaudited |
+| TokenPolygonUpgradeableNameable | token | polygon | n/a | [`0xe0b52e49357fd4daf2c15e02058dce6bc0057db4`](./contracts/polygon-137/0xe0b52e49357fd4daf2c15e02058dce6bc0057db4/) | ⚠️ Unaudited |
+| AtlendisLockdrop | unknown | polygon | n/a | 2 deployments: polygon [`0x4d5fa31a68f51ec53ea036cd4cc4cb8645deab3b`](./contracts/polygon-137/0x4d5fa31a68f51ec53ea036cd4cc4cb8645deab3b/); polygon `0xbe7e43ee354992ebc356f3f8de1093e76237e84e` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | polygon | n/a | [`0xbfca293e17e067e8abdca30a5d35addd0cbae6d6`](./contracts/polygon-137/0xbfca293e17e067e8abdca30a5d35addd0cbae6d6/) | ⚠️ Unaudited |
+| TokenPolygonUpgradeable | unknown | polygon | n/a | 2 deployments: polygon [`0x7660b2b53f6e9ecebebfade61fdeb1f3703caa24`](./contracts/polygon-137/0x7660b2b53f6e9ecebebfade61fdeb1f3703caa24/); polygon `0x900f717ea076e1e7a484ad9dd2db81ceec60ebf1` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,37 +95,37 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | polygon | n/a | `0x035c63...3467d3` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x115f10...200e6d` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x1bbf39...84bfe0` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x2031b5...6af622` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x21c5b9...e8d101` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x3be05b...2e6355` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x3cb1f4...904de0` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x43cc9f...d8a6b2` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x5a4ab9...b71e2f` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x5fbf0c...1fdb5f` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x644325...059deb` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x69a942...62ac67` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x8ab395...bfd59c` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x97fef6...b958dc` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x9da848...30aedc` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xa4c0ef...744748` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xa91a5b...37a1c5` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xa9e2c0...f4806e` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xadae72...8701e4` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xaeb763...4ddf47` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xb40436...9575d5` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xb74aae...741a22` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xbe49b4...61cc4b` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xc18c30...b30bc6` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xc3e63b...298315` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xc9dcf6...228fb3` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xccc1a8...855d06` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xcd1601...80ed94` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xd14f97...f71253` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xdcfb15...7f1bc8` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xe8a484...b37a1c` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x035c6390618dde768239ca90534564816e3467d3` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x115f10cef93521501fdf08b31c1e88a339200e6d` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x1bbf39b5ebd2cafa8cdab9d21dd49838c984bfe0` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x2031b531122afbfa342afd6b975061f9ea6af622` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x21c5b92e1ccdbbc13175469cd15d80f6c7e8d101` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x3be05b1d5223d282309e0652cb9bb58d5d2e6355` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x3cb1f4c28fca310c3809adda3a21551bf2904de0` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x43cc9f4ebf18c9d4573b1ffd22450e62bed8a6b2` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x5a4ab9c1b391f1981a8481e40c983deafab71e2f` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x5fbf0c645b2dfcb5fd102c2beb15f366891fdb5f` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x6443257c7e68baf40a6537b1a7c2a43052059deb` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x69a942b80a62fb84c0efe917dd33e8e8c462ac67` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x8ab3958517e9857facd1db911493b17b73bfd59c` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x97fef6f1baebe911956d6ff22d23931e45b958dc` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x9da8487ec38ad3b9b5c4d88b82f69a087330aedc` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xa4c0ef2855b36148c1ac42fca9d2634459744748` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xa91a5b57bb2107ef1f20452bfb4cdb495c37a1c5` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xa9e2c0082f1b94762ee3c1724ab63841d1f4806e` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xadae7202290188f54d2ff3f7c01e20188a8701e4` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xaeb7631018f30e6b7bac6e205390934b654ddf47` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xb404363f7b7a3dd19e845482d218b626a59575d5` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xb74aaecd7cdd4512f51e4208c0d87c55cc741a22` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xbe49b492dff3612186611ff444c72438e961cc4b` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xc18c30d4acba06ef11836e43f47502e9b0b30bc6` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xc3e63b31f79ca01ca3600e3a2155f40e27298315` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xc9dcf64f6c181b50e9124146ee7e754679228fb3` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xccc1a8f9176e126cc667397439142f7c4f855d06` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xcd1601c32be4f82ec7a11011e7e0265aad80ed94` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xd14f97d2f4508cfd8e70e72ef4d0a05f8ff71253` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xdcfb15e5102bcf93abc7202232f680e7317f1bc8` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xe8a484389e28588bdcb8acd7b445e5008fb37a1c` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -140,8 +140,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| polygon | [`0x4d5fa3...deab3b`](./contracts/polygon-137/0x4d5fa31a68f51ec53ea036cd4cc4cb8645deab3b/) | AtlendisLockdrop | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x7660b2...3caa24`](./contracts/polygon-137/0x7660b2b53f6e9ecebebfade61fdeb1f3703caa24/) | TokenPolygonUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x4d5fa31a68f51ec53ea036cd4cc4cb8645deab3b`](./contracts/polygon-137/0x4d5fa31a68f51ec53ea036cd4cc4cb8645deab3b/) | AtlendisLockdrop | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x7660b2b53f6e9ecebebfade61fdeb1f3703caa24`](./contracts/polygon-137/0x7660b2b53f6e9ecebebfade61fdeb1f3703caa24/) | TokenPolygonUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

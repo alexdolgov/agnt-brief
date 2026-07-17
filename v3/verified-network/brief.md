@@ -52,32 +52,32 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x033229...2b5621`, chain 1)
-- UnnamedContract (`0x1b95d4...23772e`, chain 1)
-- UnnamedContract (`0x80f3ef...d25b84`, chain 1)
-- UnnamedContract (`0xba1222...6bf2c8`, chain 1)
-- UnnamedContract (`0xbd5a01...b6f67d`, chain 1)
-- UnnamedContract (`0xd5f976...8cf5ce`, chain 1)
-- UnnamedContract (`0xee261e...fc955e`, chain 1)
-- UnnamedContract (`0x009b5b...80089a`, chain 137)
-- UnnamedContract (`0x1f8e0f...9e2f3e`, chain 137)
-- UnnamedContract (`0x2e6f17...b1769a`, chain 137)
-- UnnamedContract (`0x775979...26974f`, chain 137)
-- UnnamedContract (`0x8965fc...b1bee6`, chain 137)
-- UnnamedContract (`0x9322e3...3a57ab`, chain 137)
-- UnnamedContract (`0x96de74...af98ec`, chain 137)
-- UnnamedContract (`0xaafde4...fa88ea`, chain 137)
-- UnnamedContract (`0xae16e0...3cf474`, chain 137)
-- UnnamedContract (`0xc7de87...ecce24`, chain 137)
-- UnnamedContract (`0xde63bc...c50c79`, chain 137)
-- UnnamedContract (`0xe6af6f...af8594`, chain 137)
-- UnnamedContract (`0x5e6dc0...03345d`, chain 8453)
-- UnnamedContract (`0x73465b...d56bbe`, chain 8453)
-- UnnamedContract (`0xcb7282...bbc71c`, chain 8453)
-- UnnamedContract (`0xfd2ef4...8572c6`, chain 8453)
-- UnnamedContract (`0x385c84...69f021`, chain 42161)
-- UnnamedContract (`0x9e3171...4fb85d`, chain 42161)
-- UnnamedContract (`0xd234d2...910b0b`, chain 42161)
+- UnnamedContract (`0x0332299005d0331d6623db3b7afc5478222b5621`, chain 1)
+- UnnamedContract (`0x1b95d408de85e07d0de5d5b545202e32a023772e`, chain 1)
+- UnnamedContract (`0x80f3efa6abd34ad123e5064c4f42c4ac84d25b84`, chain 1)
+- UnnamedContract (`0xba12222222228d8ba445958a75a0704d566bf2c8`, chain 1)
+- UnnamedContract (`0xbd5a0178c276d1553eb388ada03f6cb79eb6f67d`, chain 1)
+- UnnamedContract (`0xd5f976f6c2339203a72b87b5bfb9b22d278cf5ce`, chain 1)
+- UnnamedContract (`0xee261ef7b60d0ebbc682dfaa8d8b87ff65fc955e`, chain 1)
+- UnnamedContract (`0x009b5bad3c3b8e58f71321e149b22f2ae080089a`, chain 137)
+- UnnamedContract (`0x1f8e0fef42231529ec80750c4e3e1fee829e2f3e`, chain 137)
+- UnnamedContract (`0x2e6f17df38b4686d17c6ec63ef3ee8f926b1769a`, chain 137)
+- UnnamedContract (`0x775979123ad2e6da3074bb38116430feae26974f`, chain 137)
+- UnnamedContract (`0x8965fc965ffc410e14a211a344eb08993cb1bee6`, chain 137)
+- UnnamedContract (`0x9322e3002403c6f13d567d85ff72ec69733a57ab`, chain 137)
+- UnnamedContract (`0x96de7417058dff11d570011ea100e6f0b6af98ec`, chain 137)
+- UnnamedContract (`0xaafde4ab7119d705a66e2338826f502b68fa88ea`, chain 137)
+- UnnamedContract (`0xae16e00380450617e7d96bdee3c242a8a83cf474`, chain 137)
+- UnnamedContract (`0xc7de872452d18d442f2527d1371894f68decce24`, chain 137)
+- UnnamedContract (`0xde63bca2d746f4a9d4d7b6e88b943dcc90c50c79`, chain 137)
+- UnnamedContract (`0xe6af6f4d0dd2c4d6f46cdf02be016d7352af8594`, chain 137)
+- UnnamedContract (`0x5e6dc0d84e9b66b9814637394345f4975903345d`, chain 8453)
+- UnnamedContract (`0x73465be532aa390728d3bb75d0b16f936cd56bbe`, chain 8453)
+- UnnamedContract (`0xcb7282b16e381aa6a63b429170455cedafbbc71c`, chain 8453)
+- UnnamedContract (`0xfd2ef4b1c0aa3cd9a52264a23d244c21ba8572c6`, chain 8453)
+- UnnamedContract (`0x385c84e3012bb0221fcf2d666b854baa0969f021`, chain 42161)
+- UnnamedContract (`0x9e3171ed30c27ffe694b5b44e99c1ccefe4fb85d`, chain 42161)
+- UnnamedContract (`0xd234d2433a877465cbdf6b478bfc027db7910b0b`, chain 42161)
 
 ## Contract Surface Quality
 
@@ -141,74 +141,74 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-260932 | `0x033229...2b5621` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-260934 | `0x0d062a...15c77a` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-260939 | `0x1af601...aaa929` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-260940 | `0x1b95d4...23772e` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-260943 | `0x2f8cf8...1abecb` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-260960 | `0x80f3ef...d25b84` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-260975 | `0xba1222...6bf2c8` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-260976 | `0xbd5a01...b6f67d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-260983 | `0xd5f976...8cf5ce` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-260990 | `0xee261e...fc955e` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-260991 | `0xeeddb5...815884` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-261025 | `0x009b5b...80089a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-261030 | `0x1f8e0f...9e2f3e` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | polygon | unit-261033 | `0x2c5718...7bc2d1` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | polygon | unit-261035 | `0x2d76fe...5af55b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-261036 | `0x2e6f17...b1769a` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | polygon | unit-261040 | `0x5b8bc9...2262c5` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-261041 | `0x775979...26974f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-261043 | `0x8965fc...b1bee6` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-261045 | `0x9322e3...3a57ab` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | polygon | unit-261046 | `0x937d8b...998914` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-261047 | `0x96de74...af98ec` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-261048 | `0xaafde4...fa88ea` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | polygon | unit-261049 | `0xab2687...7c630e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-261050 | `0xae16e0...3cf474` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-261051 | `0xc7de87...ecce24` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-261052 | `0xde63bc...c50c79` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-261053 | `0xe6af6f...af8594` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | polygon | unit-261054 | `0xf0bba0...e4cdaa` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | polygon | unit-261056 | `0xfa674a...04b312` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-261078 | `0x14a6cd...7f1afc` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-261087 | `0x5bf960...2b240a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-261088 | `0x5e6dc0...03345d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-261091 | `0x73465b...d56bbe` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-261092 | `0x960670...21f996` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-261095 | `0xcb7282...bbc71c` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-261096 | `0xcec02c...581706` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-261099 | `0xfd2ef4...8572c6` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-261060 | `0x385c84...69f021` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-261066 | `0x9e3171...4fb85d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-261069 | `0xd234d2...910b0b` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-260998 | `0x1de161...f24470` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-260999 | `0x20346e...6511c9` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261000 | `0x2fd96f...b274dc` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261001 | `0x39b4b9...d6e024` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261002 | `0x43d084...7765dd` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261003 | `0x451914...35d62b` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261004 | `0x47b02d...a41da9` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261005 | `0x4b3cbd...53da73` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261006 | `0x50b79e...a07ef4` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261007 | `0x594dc4...a99e7f` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | sepolia | unit-261008 | `0x5a9ea8...fbf0e4` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261009 | `0x70fdb4...946944` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | sepolia | unit-261010 | `0x8c5026...769fce` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261011 | `0xa6220c...2b2ff4` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261012 | `0xaf06af...b99256` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261013 | `0xb1ae3f...35392c` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261014 | `0xc52bfc...d27696` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | sepolia | unit-261015 | `0xc54f56...ebcd47` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261016 | `0xcabf37...cdefa8` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261017 | `0xda13bc...27bbd5` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261018 | `0xdaac49...9ff95d` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261019 | `0xde28de...e47245` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261020 | `0xe2b16c...041873` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261021 | `0xe51802...361cb1` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | sepolia | unit-261022 | `0xec9cee...b73359` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261023 | `0xee1dd4...2c540a` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261024 | `0xf413ea...d95f1d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-260932 | `0x0332299005d0331d6623db3b7afc5478222b5621` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-260934 | `0x0d062a0064b762ed8aee7de9e79b532e6215c77a` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-260939 | `0x1af6015fbc9e20ad48eeac363249b8b0b4aaa929` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-260940 | `0x1b95d408de85e07d0de5d5b545202e32a023772e` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-260943 | `0x2f8cf8f87a200f7803975c4e5496ac2f471abecb` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-260960 | `0x80f3efa6abd34ad123e5064c4f42c4ac84d25b84` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-260975 | `0xba12222222228d8ba445958a75a0704d566bf2c8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-260976 | `0xbd5a0178c276d1553eb388ada03f6cb79eb6f67d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-260983 | `0xd5f976f6c2339203a72b87b5bfb9b22d278cf5ce` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-260990 | `0xee261ef7b60d0ebbc682dfaa8d8b87ff65fc955e` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-260991 | `0xeeddb589f8ea16f1bcfa1f54f9a20389ee815884` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-261025 | `0x009b5bad3c3b8e58f71321e149b22f2ae080089a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-261030 | `0x1f8e0fef42231529ec80750c4e3e1fee829e2f3e` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | polygon | unit-261033 | `0x2c5718206b37b8744784ce44f374de13dd7bc2d1` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | polygon | unit-261035 | `0x2d76fe6ddc229a482edeb6e86d12c733a05af55b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-261036 | `0x2e6f17df38b4686d17c6ec63ef3ee8f926b1769a` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | polygon | unit-261040 | `0x5b8bc9986a44c1814603ba7c66c5e2ec332262c5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-261041 | `0x775979123ad2e6da3074bb38116430feae26974f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-261043 | `0x8965fc965ffc410e14a211a344eb08993cb1bee6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-261045 | `0x9322e3002403c6f13d567d85ff72ec69733a57ab` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | polygon | unit-261046 | `0x937d8b7a5b36e3573f4b909d742a1afc46998914` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-261047 | `0x96de7417058dff11d570011ea100e6f0b6af98ec` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-261048 | `0xaafde4ab7119d705a66e2338826f502b68fa88ea` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | polygon | unit-261049 | `0xab26871f689241758f42627d812e2a3eda7c630e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-261050 | `0xae16e00380450617e7d96bdee3c242a8a83cf474` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-261051 | `0xc7de872452d18d442f2527d1371894f68decce24` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-261052 | `0xde63bca2d746f4a9d4d7b6e88b943dcc90c50c79` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-261053 | `0xe6af6f4d0dd2c4d6f46cdf02be016d7352af8594` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | polygon | unit-261054 | `0xf0bba007515ff51c9310225106512b921de4cdaa` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | polygon | unit-261056 | `0xfa674a58063bafd52ce5981db137b01c2504b312` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-261078 | `0x14a6cdf98b542bfc4a815a96c584bfde5f7f1afc` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-261087 | `0x5bf960c22456116ff77be323baf2d6767d2b240a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-261088 | `0x5e6dc0d84e9b66b9814637394345f4975903345d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-261091 | `0x73465be532aa390728d3bb75d0b16f936cd56bbe` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-261092 | `0x9606706e98d18ee243f44cece8540f002721f996` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-261095 | `0xcb7282b16e381aa6a63b429170455cedafbbc71c` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-261096 | `0xcec02cb2e1c40fec8d70289827be24658a581706` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-261099 | `0xfd2ef4b1c0aa3cd9a52264a23d244c21ba8572c6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-261060 | `0x385c84e3012bb0221fcf2d666b854baa0969f021` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-261066 | `0x9e3171ed30c27ffe694b5b44e99c1ccefe4fb85d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-261069 | `0xd234d2433a877465cbdf6b478bfc027db7910b0b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-260998 | `0x1de161d44665f028c38216fa1d2bbbdac6f24470` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-260999 | `0x20346e44d8600ad5e2cad81e9c2c559b0c6511c9` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261000 | `0x2fd96f538ffdd0e0cd32f6628547a9ae9fb274dc` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261001 | `0x39b4b94ee7fc9571723dacba14531eac5fd6e024` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261002 | `0x43d084ba68c9f202f98dfa87ae9b9106067765dd` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261003 | `0x4519148cc4030c2e3573f1f886ed4071fa35d62b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261004 | `0x47b02df02788023ea2c72f719ef0c59cc5a41da9` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261005 | `0x4b3cbdb8fbe5fcddf796cd42d3749f8acd53da73` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261006 | `0x50b79e3f18490ec2aa97344ee7502cf4cba07ef4` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261007 | `0x594dc49a7c2b4b0f279247239cb6f1d943a99e7f` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | sepolia | unit-261008 | `0x5a9ea86ec84575010403b757a54cfdc223fbf0e4` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261009 | `0x70fdb4ca69b4ddc2cdb7d2cc843c17374e946944` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | sepolia | unit-261010 | `0x8c5026ef10861adbdbbbc540401de4d453769fce` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261011 | `0xa6220cdbe81a8ba3bf4eb8b2648a7557cd2b2ff4` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261012 | `0xaf06af6c26a4386efde3ac805829659988b99256` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261013 | `0xb1ae3fc5b16d3736bf0db20606fb9a10b435392c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261014 | `0xc52bfce4d5021914dab43f3fa2db45471ad27696` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | sepolia | unit-261015 | `0xc54f5625cb1eb75a5055d213f9bbff2464ebcd47` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261016 | `0xcabf376555dcfc83e304a51e89cda83d90cdefa8` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261017 | `0xda13bc71fee08ffd523f10458b0e2c2d8427bbd5` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261018 | `0xdaac4948e4a9c441229e09d07e4b7d0c2e9ff95d` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261019 | `0xde28de5d2e1a53997f97f0e64ea13f3710e47245` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261020 | `0xe2b16c9d8cf0f7a05ebbad2f47caee42c3041873` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261021 | `0xe51802a0e508033c51f99397bbefdf87dc361cb1` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | sepolia | unit-261022 | `0xec9ceed31c3f77b0607f03767d677374e8b73359` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261023 | `0xee1dd4a2cbfbee9268c0da9a9a709d06412c540a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-261024 | `0xf413eabf339d8a88df8bfb6ebf7092372cd95f1d` | ❓ Unverified |
 
 ## Audit Inventory
 

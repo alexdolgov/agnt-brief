@@ -48,8 +48,8 @@ The pinned logic-topography run contains 5 contract row(s) across sonic. Structu
 
 ### Forked Contracts
 
-**LBFactory** (`0x39d966...d6ee43`, chain 146)
-Origin: lynx (`0x39d966...d6ee43`)
+**LBFactory** (`0x39d966c1bafe7d3f1f53da4845805e15f7d6ee43`, chain 146)
+Origin: lynx (`0x39d966c1bafe7d3f1f53da4845805e15f7d6ee43`)
 Containment: 100.0% - 28 functions inherited
 Centroid audit status: pending_validation
 
@@ -59,13 +59,13 @@ Removals (removed from original): none
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x56eaa8...383149`, chain 146)
-- UnnamedContract (`0x67803f...7cba48`, chain 146)
-- UnnamedContract (`0xed0673...7cb6a2`, chain 146)
-- Factory (`0x157030...170ad0`, chain 146)
-- Metro (`0x71e995...1f7321`, chain 146)
-- MetroGem (`0x8a3b1c...f350db`, chain 146)
-- Router (`0x95a7e4...a49fa3`, chain 146)
+- UnnamedContract (`0x56eaa884f29620fd6914827aaae9ee6a5c383149`, chain 146)
+- UnnamedContract (`0x67803fe6d76409640efdc9b7abcd2c6c2e7cba48`, chain 146)
+- UnnamedContract (`0xed06734629e22277d395d8eb8b67cc75c27cb6a2`, chain 146)
+- Factory (`0x1570300e9cfec66c9fb0c8bc14366c86eb170ad0`, chain 146)
+- Metro (`0x71e99522ead5e21cf57f1f542dc4ad2e841f7321`, chain 146)
+- MetroGem (`0x8a3b1cd8d0decf649262e56ece6b339e59f350db`, chain 146)
+- Router (`0x95a7e403d7cf20f675ff9273d66e94d35ba49fa3`, chain 146)
 
 ## Contract Surface Quality
 
@@ -111,40 +111,40 @@ Removals (removed from original): none
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ArcadeMemecoin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x577fde...64341d` | ⚠️ Unaudited |
-| BribeRewarder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x161a72...b7f8a7` | ⚠️ Unaudited |
-| DummyERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xe0143c...f78eb9` | ⚠️ Unaudited |
-| Factory | unknown | project_anchor | own_supporting | 0 | sonic | unit-247507 | `0x157030...170ad0` | ⚠️ Unaudited |
-| FarmLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x5657ab...03809b` | ⚠️ Unaudited |
-| FarmZapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xa3db21...3c6cd3` | ⚠️ Unaudited |
-| LBFactory | unknown | project_anchor | own_supporting | 0 | sonic | unit-247508 | `0x39d966...d6ee43` | ⚠️ Unaudited |
-| LBHooksExtraRewarder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x0a82b2...d89e26` | ⚠️ Unaudited |
-| LBHooksLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x087495...70e1a1` | ⚠️ Unaudited |
-| LBHooksManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x4962db...27f7ac` | ⚠️ Unaudited |
-| LBHooksMCRewarder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x78ceff...203388` | ⚠️ Unaudited |
-| LBHooksSimpleRewarder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x068812...531cb6` | ⚠️ Unaudited |
-| LBPair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xce7f2a...d416e4` | ⚠️ Unaudited |
-| LBQuoter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x5277be...c6cc49` | ⚠️ Unaudited |
-| LBRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x596eeb...ffb881` | ⚠️ Unaudited |
-| LiquidityHelperContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x4f95b0...774b20` | ⚠️ Unaudited |
-| MasterChefRewarder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x501c47...fdefd8` | ⚠️ Unaudited |
-| Metro | unknown | project_anchor | own_supporting | 0 | sonic | unit-247511 | `0x71e995...1f7321` | ⚠️ Unaudited |
-| MetroFairLaunch | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x1f18af...9b6609` | ⚠️ Unaudited |
-| MetroGem | unknown | project_anchor | own_supporting | 0 | sonic | unit-247512 | `0x8a3b1c...f350db` | ⚠️ Unaudited |
-| MetroGem2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x1ae89c...e37a5e` | ⚠️ Unaudited |
-| MetroStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xb7b785...8ceb8b` | ⚠️ Unaudited |
-| MetroStaking2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x197e72...f3b254` | ⚠️ Unaudited |
-| OracleRewardVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x19d815...49a387` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x4541cd...8046dc` | ⚠️ Unaudited |
-| ProxyAdmin2Step | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x35de16...73cfee` | ⚠️ Unaudited |
-| PythAggregatorAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x31b803...742ab0` | ⚠️ Unaudited |
-| RewarderFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x6122dc...8bdaf4` | ⚠️ Unaudited |
-| Router | unknown | project_anchor | own_supporting | 0 | sonic | unit-247513 | `0x95a7e4...a49fa3` | ⚠️ Unaudited |
-| Strategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x181713...c85e80` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy2Step | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | `0x03a989...891fda` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy2Step | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | `0x0444a9...c955ed` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy2Step | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | `0x116507...837d6f` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy2Step | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | `0x1a5ded...6e03da` | ⚠️ Unaudited |
+| ArcadeMemecoin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x577fde1619ae2e1e0a0893e1208ddf2d1864341d` | ⚠️ Unaudited |
+| BribeRewarder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x161a72027d83da46329ed64a4edfd0b717b7f8a7` | ⚠️ Unaudited |
+| DummyERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xe0143ca6e6a0fb1a6ecae8faf94191a664f78eb9` | ⚠️ Unaudited |
+| Factory | unknown | project_anchor | own_supporting | 0 | sonic | unit-247507 | `0x1570300e9cfec66c9fb0c8bc14366c86eb170ad0` | ⚠️ Unaudited |
+| FarmLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x5657ab61ea91bcc22ccaae7168a621488003809b` | ⚠️ Unaudited |
+| FarmZapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xa3db21cd2ee9c27f636bee29670669ef6c3c6cd3` | ⚠️ Unaudited |
+| LBFactory | unknown | project_anchor | own_supporting | 0 | sonic | unit-247508 | `0x39d966c1bafe7d3f1f53da4845805e15f7d6ee43` | ⚠️ Unaudited |
+| LBHooksExtraRewarder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x0a82b2611811d410f1b5e44221d4b1f545d89e26` | ⚠️ Unaudited |
+| LBHooksLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x087495d1e9bb380a17783247ac260a124070e1a1` | ⚠️ Unaudited |
+| LBHooksManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x4962db3230075a3413251e22af3dd0761427f7ac` | ⚠️ Unaudited |
+| LBHooksMCRewarder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x78ceffce6bd2093830fcfa9fb44a9fe858203388` | ⚠️ Unaudited |
+| LBHooksSimpleRewarder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x068812c0633752207e3b39ce5cf623ebea531cb6` | ⚠️ Unaudited |
+| LBPair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xce7f2a4f207ba9932c8935650a30fa5b53d416e4` | ⚠️ Unaudited |
+| LBQuoter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x5277be3b93da960c7e92c50be58424e008c6cc49` | ⚠️ Unaudited |
+| LBRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x596eeb70a441d70511a64a2ea114beb5a8ffb881` | ⚠️ Unaudited |
+| LiquidityHelperContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x4f95b0dac14ddbfa22c7c7f475cf819018774b20` | ⚠️ Unaudited |
+| MasterChefRewarder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x501c4779c86add2a21115e4b8844bb31b6fdefd8` | ⚠️ Unaudited |
+| Metro | unknown | project_anchor | own_supporting | 0 | sonic | unit-247511 | `0x71e99522ead5e21cf57f1f542dc4ad2e841f7321` | ⚠️ Unaudited |
+| MetroFairLaunch | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x1f18af7f1287a8a2a23a6ac71da2729e3a9b6609` | ⚠️ Unaudited |
+| MetroGem | unknown | project_anchor | own_supporting | 0 | sonic | unit-247512 | `0x8a3b1cd8d0decf649262e56ece6b339e59f350db` | ⚠️ Unaudited |
+| MetroGem2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x1ae89cc21e1cf2d1e95ba5ebd5b3b1cf89e37a5e` | ⚠️ Unaudited |
+| MetroStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xb7b785b01ed09f2c59a42994c1f8675e428ceb8b` | ⚠️ Unaudited |
+| MetroStaking2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x197e72f8b1c9c9e46337bf0a4cce5d6bc0f3b254` | ⚠️ Unaudited |
+| OracleRewardVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x19d815667267d46254574e62647c2f500449a387` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x4541cda311ab72420743d03f8f45b42c858046dc` | ⚠️ Unaudited |
+| ProxyAdmin2Step | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x35de168492b6b22cffe53c12f46fbfaed173cfee` | ⚠️ Unaudited |
+| PythAggregatorAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x31b803a540b064f13e427138f8b04004ec742ab0` | ⚠️ Unaudited |
+| RewarderFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x6122dcd13f0cb1157cf9e58d5787c2c46e8bdaf4` | ⚠️ Unaudited |
+| Router | unknown | project_anchor | own_supporting | 0 | sonic | unit-247513 | `0x95a7e403d7cf20f675ff9273d66e94d35ba49fa3` | ⚠️ Unaudited |
+| Strategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x1817134ad98b72a42ab68cc485fb123afac85e80` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy2Step | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | `0x03a9896a464c515d13f2679df337bf95bc891fda` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy2Step | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | `0x0444a986e90521130db7021c91f9f947d3c955ed` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy2Step | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | `0x11650735f402bbf28e877a750a6e40d5db837d6f` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy2Step | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | `0x1a5ded6adcfc64acede86151b1f142088c6e03da` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -164,9 +164,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-247509 | `0x56eaa8...383149` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-247510 | `0x67803f...7cba48` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-247514 | `0xed0673...7cb6a2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-247509 | `0x56eaa884f29620fd6914827aaae9ee6a5c383149` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-247510 | `0x67803fe6d76409640efdc9b7abcd2c6c2e7cba48` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-247514 | `0xed06734629e22277d395d8eb8b67cc75c27cb6a2` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -192,11 +192,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| sonic | `0x157030...170ad0` | Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | `0x39d966...d6ee43` | LBFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | `0x71e995...1f7321` | Metro | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | `0x8a3b1c...f350db` | MetroGem | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | `0x95a7e4...a49fa3` | Router | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0x1570300e9cfec66c9fb0c8bc14366c86eb170ad0` | Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0x39d966c1bafe7d3f1f53da4845805e15f7d6ee43` | LBFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0x71e99522ead5e21cf57f1f542dc4ad2e841f7321` | Metro | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0x8a3b1cd8d0decf649262e56ece6b339e59f350db` | MetroGem | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0x95a7e403d7cf20f675ff9273d66e94d35ba49fa3` | Router | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

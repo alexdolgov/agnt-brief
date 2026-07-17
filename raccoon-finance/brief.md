@@ -58,7 +58,7 @@ The protocol comprises 3 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| RACToken | token | base | n/a | [`0x1299aa...0b7450`](./contracts/base-8453/0x1299aa83eca28d799349e9946d38c84d310b7450/) | ✅ Audited |
+| RACToken | token | base | n/a | [`0x1299aa83eca28d799349e9946d38c84d310b7450`](./contracts/base-8453/0x1299aa83eca28d799349e9946d38c84d310b7450/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 
@@ -82,15 +82,15 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | base | n/a | `0x0267f1...95c91a` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x47889a...72cff8` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x548d3b...48314f` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x730703...bf6b0b` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x89a458...2adbe1` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xa8dd30...784850` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xbf5edf...31f258` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xd96ed6...f45500` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xeaefde...bb7449` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x0267f15b9c10bd48c9ec214e02f822466895c91a` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x47889a8d8b9637b91a556807d615b1fe7c72cff8` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x548d3b6f47d5cc87d5ce66ef3add0a03df48314f` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x730703262d9e78b51cae6fd44545a88c23bf6b0b` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x89a4588900486469f2a3c5b15b6cf2f9bb2adbe1` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xa8dd30e91fe6bf2b8da2c16842d47b73a5784850` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xbf5edfb18276259535e905fcbf1c9c3c9f31f258` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xd96ed6def9a14090a8c7721ab65f014feef45500` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xeaefde2be5cb3984a043ae0b76dd9f35aebb7449` | ❓ Unverified |
 
 ## Audit Inventory
 

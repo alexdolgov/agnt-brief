@@ -90,7 +90,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| GateChainToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe66747...454759` | ⚠️ Unaudited |
+| GateChainToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe66747a101bff2dba3697199dcce5b743b454759` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

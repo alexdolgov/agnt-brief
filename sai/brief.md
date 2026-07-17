@@ -61,11 +61,11 @@ The protocol forms a single structural family (Core Logic) of 5 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ConfluxOFT | unknown | ethereum | n/a | [`0xc16977...ff63c9`](./contracts/ethereum-1/0xc16977205c53cd854136031bd2128f75d6ff63c9/) | ⚠️ Unaudited |
-| CreditMessagingMintableBurnable | unknown | ethereum | n/a | [`0x807026...cf07aa`](./contracts/ethereum-1/0x807026a12e1a782426b538b98ca358a914cf07aa/) | ⚠️ Unaudited |
-| FeeLibV1 | unknown | ethereum | n/a | [`0x0829f3...60970b`](./contracts/ethereum-1/0x0829f361a05d993d5ceb035ca6df3446b060970b/) | ⚠️ Unaudited |
-| FiatTokenProxy | unknown | ethereum | n/a | [`0x5b32c9...a6ddf5`](./contracts/ethereum-1/0x5b32c997211621d55a89cc5abaf1cc21f3a6ddf5/) | ⚠️ Unaudited |
-| MultiCallUtils | unknown | ethereum | n/a | [`0x9895d8...7c32cb`](./contracts/ethereum-1/0x9895d81bb462a195b4922ed7de0e3acd007c32cb/) | ⚠️ Unaudited |
+| ConfluxOFT | unknown | ethereum | n/a | [`0xc16977205c53cd854136031bd2128f75d6ff63c9`](./contracts/ethereum-1/0xc16977205c53cd854136031bd2128f75d6ff63c9/) | ⚠️ Unaudited |
+| CreditMessagingMintableBurnable | unknown | ethereum | n/a | [`0x807026a12e1a782426b538b98ca358a914cf07aa`](./contracts/ethereum-1/0x807026a12e1a782426b538b98ca358a914cf07aa/) | ⚠️ Unaudited |
+| FeeLibV1 | unknown | ethereum | n/a | [`0x0829f361a05d993d5ceb035ca6df3446b060970b`](./contracts/ethereum-1/0x0829f361a05d993d5ceb035ca6df3446b060970b/) | ⚠️ Unaudited |
+| FiatTokenProxy | unknown | ethereum | n/a | [`0x5b32c997211621d55a89cc5abaf1cc21f3a6ddf5`](./contracts/ethereum-1/0x5b32c997211621d55a89cc5abaf1cc21f3a6ddf5/) | ⚠️ Unaudited |
+| MultiCallUtils | unknown | ethereum | n/a | [`0x9895d81bb462a195b4922ed7de0e3acd007c32cb`](./contracts/ethereum-1/0x9895d81bb462a195b4922ed7de0e3acd007c32cb/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -96,11 +96,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xc16977...ff63c9`](./contracts/ethereum-1/0xc16977205c53cd854136031bd2128f75d6ff63c9/) | ConfluxOFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x807026...cf07aa`](./contracts/ethereum-1/0x807026a12e1a782426b538b98ca358a914cf07aa/) | CreditMessagingMintableBurnable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0829f3...60970b`](./contracts/ethereum-1/0x0829f361a05d993d5ceb035ca6df3446b060970b/) | FeeLibV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x5b32c9...a6ddf5`](./contracts/ethereum-1/0x5b32c997211621d55a89cc5abaf1cc21f3a6ddf5/) | FiatTokenProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x9895d8...7c32cb`](./contracts/ethereum-1/0x9895d81bb462a195b4922ed7de0e3acd007c32cb/) | MultiCallUtils | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc16977205c53cd854136031bd2128f75d6ff63c9`](./contracts/ethereum-1/0xc16977205c53cd854136031bd2128f75d6ff63c9/) | ConfluxOFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x807026a12e1a782426b538b98ca358a914cf07aa`](./contracts/ethereum-1/0x807026a12e1a782426b538b98ca358a914cf07aa/) | CreditMessagingMintableBurnable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0829f361a05d993d5ceb035ca6df3446b060970b`](./contracts/ethereum-1/0x0829f361a05d993d5ceb035ca6df3446b060970b/) | FeeLibV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5b32c997211621d55a89cc5abaf1cc21f3a6ddf5`](./contracts/ethereum-1/0x5b32c997211621d55a89cc5abaf1cc21f3a6ddf5/) | FiatTokenProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x9895d81bb462a195b4922ed7de0e3acd007c32cb`](./contracts/ethereum-1/0x9895d81bb462a195b4922ed7de0e3acd007c32cb/) | MultiCallUtils | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

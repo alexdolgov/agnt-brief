@@ -59,33 +59,33 @@ The protocol comprises 3 functional families. Its contracts share 5 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Vault | unknown | polygon | n/a | [`0x356fe5...8a3723`](./contracts/polygon-137/0x356fe56801fdb5bb44f63023f4ac3e26588a3723/) | ✅ Audited |
+| Vault | unknown | polygon | n/a | [`0x356fe56801fdb5bb44f63023f4ac3e26588a3723`](./contracts/polygon-137/0x356fe56801fdb5bb44f63023f4ac3e26588a3723/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (21)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ChildERC1155 | unknown | polygon | n/a | [`0xd841b4...95e039`](./contracts/polygon-137/0xd841b4a74867a4e92c1627c8f99a717d0795e039/) | ⚠️ Unaudited |
-| ChildERC721 | unknown | polygon | n/a | [`0x0119fd...d06dd5`](./contracts/polygon-137/0x0119fd9592d7acea88c9b0d04b794a82bed06dd5/) | ⚠️ Unaudited |
-| ChildMintableERC1155 | unknown | polygon | n/a | [`0xbda641...3fdbb6`](./contracts/polygon-137/0xbda6415502b0ddab9eda1d09f4f16286273fdbb6/) | ⚠️ Unaudited |
-| ChildMintableERC20 | unknown | polygon | n/a | [`0x07280d...3952ea`](./contracts/polygon-137/0x07280d3143311b012ad268a74f2aa791713952ea/) | ⚠️ Unaudited |
-| DfynChest | unknown | polygon | n/a | [`0x5cf9d1...d45fc0`](./contracts/polygon-137/0x5cf9d1f77c9b044e1d2d0dcc0cfda7423fd45fc0/) | ⚠️ Unaudited |
-| DFYNFactory | unknown | arbitrum | n/a | [`0xd9820a...3d64f5`](./contracts/arbitrum-42161/0xd9820a17053d6314b20642e465a84bf01a3d64f5/) | ⚠️ Unaudited |
-| DfynPricePrediction | unknown | polygon | n/a | [`0x150b4f...cc29e7`](./contracts/polygon-137/0x150b4fd25c7c0c65301e86b599822f2feecc29e7/) | ⚠️ Unaudited |
-| DFYNRouter02 | unknown | arbitrum | n/a | [`0x4c28f4...dce1fa`](./contracts/arbitrum-42161/0x4c28f48448720e9000907bc2611f73022fdce1fa/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | polygon | n/a | [`0x01df11...ee4cf7`](./contracts/polygon-137/0x01df11ef6822b88e5913625e7e66696c01ee4cf7/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | polygon | n/a | [`0x26fbd7...9fdc3f`](./contracts/polygon-137/0x26fbd7d74e969d878033984995336b56449fdc3f/) | ⚠️ Unaudited |
-| HelloWorld | unknown | polygon | n/a | [`0x04de5e...7d1f98`](./contracts/polygon-137/0x04de5e721ae1ecc1d637d29c2562c9700d7d1f98/) | ⚠️ Unaudited |
-| RewardVault | unknown | polygon | n/a | [`0x6ac606...44c4ac`](./contracts/polygon-137/0x6ac606389982ae6d2f82f817c46eacf54244c4ac/) | ⚠️ Unaudited |
-| StakingRewards | unknown | polygon | n/a | [`0x03428d...431cca`](./contracts/polygon-137/0x03428da1a46beb305db74c55d4ec192907431cca/) | ⚠️ Unaudited |
-| StakingRewardsFactory | unknown | polygon | n/a | [`0x038be8...eae967`](./contracts/polygon-137/0x038be886326340844c4e9d0098af006876eae967/) | ⚠️ Unaudited |
-| Transfer | unknown | polygon | n/a | [`0xfa38b8...e50698`](./contracts/polygon-137/0xfa38b8632153b2d083a94590e577298c0ae50698/) | ⚠️ Unaudited |
-| UChildERC20 | unknown | polygon | n/a | [`0x002e97...5d8dbb`](./contracts/polygon-137/0x002e97b041e42697def62afab53c99c1dd5d8dbb/) | ⚠️ Unaudited |
-| UChildERC20Proxy | unknown | polygon | n/a | [`0x000de6...6ec08c`](./contracts/polygon-137/0x000de668684839f97d4845f32a43e913366ec08c/) | ⚠️ Unaudited |
-| UniswapV2Factory | unknown | arbitrum | n/a | [`0xa10207...c57429`](./contracts/arbitrum-42161/0xa102072a4c07f06ec3b4900fdc4c7b80b6c57429/) | ⚠️ Unaudited |
-| UniswapV2Router02 | unknown | polygon | n/a | [`0xa10207...c57429`](./contracts/polygon-137/0xa102072a4c07f06ec3b4900fdc4c7b80b6c57429/) | ⚠️ Unaudited |
-| WETH9 | unknown | polygon | n/a | [`0x4c28f4...dce1fa`](./contracts/polygon-137/0x4c28f48448720e9000907bc2611f73022fdce1fa/) | ⚠️ Unaudited |
-| XERC20 | unknown | polygon | n/a | [`0x48856f...95f723`](./contracts/polygon-137/0x48856f48fb4eafab8646de0b0b48bace1f95f723/) | ⚠️ Unaudited |
+| ChildERC1155 | unknown | polygon | n/a | [`0xd841b4a74867a4e92c1627c8f99a717d0795e039`](./contracts/polygon-137/0xd841b4a74867a4e92c1627c8f99a717d0795e039/) | ⚠️ Unaudited |
+| ChildERC721 | unknown | polygon | n/a | [`0x0119fd9592d7acea88c9b0d04b794a82bed06dd5`](./contracts/polygon-137/0x0119fd9592d7acea88c9b0d04b794a82bed06dd5/) | ⚠️ Unaudited |
+| ChildMintableERC1155 | unknown | polygon | n/a | [`0xbda6415502b0ddab9eda1d09f4f16286273fdbb6`](./contracts/polygon-137/0xbda6415502b0ddab9eda1d09f4f16286273fdbb6/) | ⚠️ Unaudited |
+| ChildMintableERC20 | unknown | polygon | n/a | [`0x07280d3143311b012ad268a74f2aa791713952ea`](./contracts/polygon-137/0x07280d3143311b012ad268a74f2aa791713952ea/) | ⚠️ Unaudited |
+| DfynChest | unknown | polygon | n/a | [`0x5cf9d1f77c9b044e1d2d0dcc0cfda7423fd45fc0`](./contracts/polygon-137/0x5cf9d1f77c9b044e1d2d0dcc0cfda7423fd45fc0/) | ⚠️ Unaudited |
+| DFYNFactory | unknown | arbitrum | n/a | [`0xd9820a17053d6314b20642e465a84bf01a3d64f5`](./contracts/arbitrum-42161/0xd9820a17053d6314b20642e465a84bf01a3d64f5/) | ⚠️ Unaudited |
+| DfynPricePrediction | unknown | polygon | n/a | [`0x150b4fd25c7c0c65301e86b599822f2feecc29e7`](./contracts/polygon-137/0x150b4fd25c7c0c65301e86b599822f2feecc29e7/) | ⚠️ Unaudited |
+| DFYNRouter02 | unknown | arbitrum | n/a | [`0x4c28f48448720e9000907bc2611f73022fdce1fa`](./contracts/arbitrum-42161/0x4c28f48448720e9000907bc2611f73022fdce1fa/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | polygon | n/a | [`0x01df11ef6822b88e5913625e7e66696c01ee4cf7`](./contracts/polygon-137/0x01df11ef6822b88e5913625e7e66696c01ee4cf7/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | polygon | n/a | [`0x26fbd7d74e969d878033984995336b56449fdc3f`](./contracts/polygon-137/0x26fbd7d74e969d878033984995336b56449fdc3f/) | ⚠️ Unaudited |
+| HelloWorld | unknown | polygon | n/a | [`0x04de5e721ae1ecc1d637d29c2562c9700d7d1f98`](./contracts/polygon-137/0x04de5e721ae1ecc1d637d29c2562c9700d7d1f98/) | ⚠️ Unaudited |
+| RewardVault | unknown | polygon | n/a | [`0x6ac606389982ae6d2f82f817c46eacf54244c4ac`](./contracts/polygon-137/0x6ac606389982ae6d2f82f817c46eacf54244c4ac/) | ⚠️ Unaudited |
+| StakingRewards | unknown | polygon | n/a | [`0x03428da1a46beb305db74c55d4ec192907431cca`](./contracts/polygon-137/0x03428da1a46beb305db74c55d4ec192907431cca/) | ⚠️ Unaudited |
+| StakingRewardsFactory | unknown | polygon | n/a | [`0x038be886326340844c4e9d0098af006876eae967`](./contracts/polygon-137/0x038be886326340844c4e9d0098af006876eae967/) | ⚠️ Unaudited |
+| Transfer | unknown | polygon | n/a | [`0xfa38b8632153b2d083a94590e577298c0ae50698`](./contracts/polygon-137/0xfa38b8632153b2d083a94590e577298c0ae50698/) | ⚠️ Unaudited |
+| UChildERC20 | unknown | polygon | n/a | [`0x002e97b041e42697def62afab53c99c1dd5d8dbb`](./contracts/polygon-137/0x002e97b041e42697def62afab53c99c1dd5d8dbb/) | ⚠️ Unaudited |
+| UChildERC20Proxy | unknown | polygon | n/a | [`0x000de668684839f97d4845f32a43e913366ec08c`](./contracts/polygon-137/0x000de668684839f97d4845f32a43e913366ec08c/) | ⚠️ Unaudited |
+| UniswapV2Factory | unknown | arbitrum | n/a | [`0xa102072a4c07f06ec3b4900fdc4c7b80b6c57429`](./contracts/arbitrum-42161/0xa102072a4c07f06ec3b4900fdc4c7b80b6c57429/) | ⚠️ Unaudited |
+| UniswapV2Router02 | unknown | polygon | n/a | [`0xa102072a4c07f06ec3b4900fdc4c7b80b6c57429`](./contracts/polygon-137/0xa102072a4c07f06ec3b4900fdc4c7b80b6c57429/) | ⚠️ Unaudited |
+| WETH9 | unknown | polygon | n/a | [`0x4c28f48448720e9000907bc2611f73022fdce1fa`](./contracts/polygon-137/0x4c28f48448720e9000907bc2611f73022fdce1fa/) | ⚠️ Unaudited |
+| XERC20 | unknown | polygon | n/a | [`0x48856f48fb4eafab8646de0b0b48bace1f95f723`](./contracts/polygon-137/0x48856f48fb4eafab8646de0b0b48bace1f95f723/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -120,23 +120,23 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| polygon | [`0xd841b4...95e039`](./contracts/polygon-137/0xd841b4a74867a4e92c1627c8f99a717d0795e039/) | ChildERC1155 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x0119fd...d06dd5`](./contracts/polygon-137/0x0119fd9592d7acea88c9b0d04b794a82bed06dd5/) | ChildERC721 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0xbda641...3fdbb6`](./contracts/polygon-137/0xbda6415502b0ddab9eda1d09f4f16286273fdbb6/) | ChildMintableERC1155 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x07280d...3952ea`](./contracts/polygon-137/0x07280d3143311b012ad268a74f2aa791713952ea/) | ChildMintableERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x5cf9d1...d45fc0`](./contracts/polygon-137/0x5cf9d1f77c9b044e1d2d0dcc0cfda7423fd45fc0/) | DfynChest | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xd9820a...3d64f5`](./contracts/arbitrum-42161/0xd9820a17053d6314b20642e465a84bf01a3d64f5/) | DFYNFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x150b4f...cc29e7`](./contracts/polygon-137/0x150b4fd25c7c0c65301e86b599822f2feecc29e7/) | DfynPricePrediction | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x4c28f4...dce1fa`](./contracts/arbitrum-42161/0x4c28f48448720e9000907bc2611f73022fdce1fa/) | DFYNRouter02 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x04de5e...7d1f98`](./contracts/polygon-137/0x04de5e721ae1ecc1d637d29c2562c9700d7d1f98/) | HelloWorld | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x6ac606...44c4ac`](./contracts/polygon-137/0x6ac606389982ae6d2f82f817c46eacf54244c4ac/) | RewardVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x03428d...431cca`](./contracts/polygon-137/0x03428da1a46beb305db74c55d4ec192907431cca/) | StakingRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x038be8...eae967`](./contracts/polygon-137/0x038be886326340844c4e9d0098af006876eae967/) | StakingRewardsFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0xfa38b8...e50698`](./contracts/polygon-137/0xfa38b8632153b2d083a94590e577298c0ae50698/) | Transfer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x002e97...5d8dbb`](./contracts/polygon-137/0x002e97b041e42697def62afab53c99c1dd5d8dbb/) | UChildERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x000de6...6ec08c`](./contracts/polygon-137/0x000de668684839f97d4845f32a43e913366ec08c/) | UChildERC20Proxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x4c28f4...dce1fa`](./contracts/polygon-137/0x4c28f48448720e9000907bc2611f73022fdce1fa/) | WETH9 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x48856f...95f723`](./contracts/polygon-137/0x48856f48fb4eafab8646de0b0b48bace1f95f723/) | XERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xd841b4a74867a4e92c1627c8f99a717d0795e039`](./contracts/polygon-137/0xd841b4a74867a4e92c1627c8f99a717d0795e039/) | ChildERC1155 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x0119fd9592d7acea88c9b0d04b794a82bed06dd5`](./contracts/polygon-137/0x0119fd9592d7acea88c9b0d04b794a82bed06dd5/) | ChildERC721 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xbda6415502b0ddab9eda1d09f4f16286273fdbb6`](./contracts/polygon-137/0xbda6415502b0ddab9eda1d09f4f16286273fdbb6/) | ChildMintableERC1155 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x07280d3143311b012ad268a74f2aa791713952ea`](./contracts/polygon-137/0x07280d3143311b012ad268a74f2aa791713952ea/) | ChildMintableERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x5cf9d1f77c9b044e1d2d0dcc0cfda7423fd45fc0`](./contracts/polygon-137/0x5cf9d1f77c9b044e1d2d0dcc0cfda7423fd45fc0/) | DfynChest | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xd9820a17053d6314b20642e465a84bf01a3d64f5`](./contracts/arbitrum-42161/0xd9820a17053d6314b20642e465a84bf01a3d64f5/) | DFYNFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x150b4fd25c7c0c65301e86b599822f2feecc29e7`](./contracts/polygon-137/0x150b4fd25c7c0c65301e86b599822f2feecc29e7/) | DfynPricePrediction | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x4c28f48448720e9000907bc2611f73022fdce1fa`](./contracts/arbitrum-42161/0x4c28f48448720e9000907bc2611f73022fdce1fa/) | DFYNRouter02 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x04de5e721ae1ecc1d637d29c2562c9700d7d1f98`](./contracts/polygon-137/0x04de5e721ae1ecc1d637d29c2562c9700d7d1f98/) | HelloWorld | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x6ac606389982ae6d2f82f817c46eacf54244c4ac`](./contracts/polygon-137/0x6ac606389982ae6d2f82f817c46eacf54244c4ac/) | RewardVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x03428da1a46beb305db74c55d4ec192907431cca`](./contracts/polygon-137/0x03428da1a46beb305db74c55d4ec192907431cca/) | StakingRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x038be886326340844c4e9d0098af006876eae967`](./contracts/polygon-137/0x038be886326340844c4e9d0098af006876eae967/) | StakingRewardsFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xfa38b8632153b2d083a94590e577298c0ae50698`](./contracts/polygon-137/0xfa38b8632153b2d083a94590e577298c0ae50698/) | Transfer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x002e97b041e42697def62afab53c99c1dd5d8dbb`](./contracts/polygon-137/0x002e97b041e42697def62afab53c99c1dd5d8dbb/) | UChildERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x000de668684839f97d4845f32a43e913366ec08c`](./contracts/polygon-137/0x000de668684839f97d4845f32a43e913366ec08c/) | UChildERC20Proxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x4c28f48448720e9000907bc2611f73022fdce1fa`](./contracts/polygon-137/0x4c28f48448720e9000907bc2611f73022fdce1fa/) | WETH9 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x48856f48fb4eafab8646de0b0b48bace1f95f723`](./contracts/polygon-137/0x48856f48fb4eafab8646de0b0b48bace1f95f723/) | XERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

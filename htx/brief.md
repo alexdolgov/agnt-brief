@@ -61,11 +61,11 @@ The protocol comprises 2 functional families. Its contracts share 2 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Bridge | unknown | ethereum | n/a | [`0xa92902...1e490c`](./contracts/ethereum-1/0xa929022c9107643515f5c777ce9a910f0d1e490c/) | ⚠️ Unaudited |
-| BridgeLogic | unknown | ethereum | n/a | [`0x9a91ab...f129b8`](./contracts/ethereum-1/0x9a91ab68ebffd2e527d8144f54e9fe8250f129b8/) | ⚠️ Unaudited |
-| BridgeStorage | unknown | ethereum | n/a | [`0x47343b...d0ae2f`](./contracts/ethereum-1/0x47343b0046908c1607cbb4cef5764296fcd0ae2f/) | ⚠️ Unaudited |
-| GnosisSafeProxy | unknown | polygon | n/a | [`0x2177c7...688726`](./contracts/polygon-137/0x2177c77a1f3c4900de7668662706633db4688726/) | ⚠️ Unaudited |
-| GnosisSafeProxy | unknown | avalanche | n/a | [`0x8b6a35...4a44d5`](./contracts/avalanche-43114/0x8b6a3587676719a4fecbb24b503a3634c44a44d5/) | ⚠️ Unaudited |
+| Bridge | unknown | ethereum | n/a | [`0xa929022c9107643515f5c777ce9a910f0d1e490c`](./contracts/ethereum-1/0xa929022c9107643515f5c777ce9a910f0d1e490c/) | ⚠️ Unaudited |
+| BridgeLogic | unknown | ethereum | n/a | [`0x9a91ab68ebffd2e527d8144f54e9fe8250f129b8`](./contracts/ethereum-1/0x9a91ab68ebffd2e527d8144f54e9fe8250f129b8/) | ⚠️ Unaudited |
+| BridgeStorage | unknown | ethereum | n/a | [`0x47343b0046908c1607cbb4cef5764296fcd0ae2f`](./contracts/ethereum-1/0x47343b0046908c1607cbb4cef5764296fcd0ae2f/) | ⚠️ Unaudited |
+| GnosisSafeProxy | unknown | polygon | n/a | [`0x2177c77a1f3c4900de7668662706633db4688726`](./contracts/polygon-137/0x2177c77a1f3c4900de7668662706633db4688726/) | ⚠️ Unaudited |
+| GnosisSafeProxy | unknown | avalanche | n/a | [`0x8b6a3587676719a4fecbb24b503a3634c44a44d5`](./contracts/avalanche-43114/0x8b6a3587676719a4fecbb24b503a3634c44a44d5/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -96,9 +96,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xa92902...1e490c`](./contracts/ethereum-1/0xa929022c9107643515f5c777ce9a910f0d1e490c/) | Bridge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x9a91ab...f129b8`](./contracts/ethereum-1/0x9a91ab68ebffd2e527d8144f54e9fe8250f129b8/) | BridgeLogic | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x47343b...d0ae2f`](./contracts/ethereum-1/0x47343b0046908c1607cbb4cef5764296fcd0ae2f/) | BridgeStorage | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa929022c9107643515f5c777ce9a910f0d1e490c`](./contracts/ethereum-1/0xa929022c9107643515f5c777ce9a910f0d1e490c/) | Bridge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x9a91ab68ebffd2e527d8144f54e9fe8250f129b8`](./contracts/ethereum-1/0x9a91ab68ebffd2e527d8144f54e9fe8250f129b8/) | BridgeLogic | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x47343b0046908c1607cbb4cef5764296fcd0ae2f`](./contracts/ethereum-1/0x47343b0046908c1607cbb4cef5764296fcd0ae2f/) | BridgeStorage | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -52,15 +52,15 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x0497dd...0b1aca`, chain 1)
-- UnnamedContract (`0x0971cb...6fbedf`, chain 1)
-- UnnamedContract (`0x1898f1...6201f7`, chain 1)
-- UnnamedContract (`0x4f85cb...ae438b`, chain 1)
-- UnnamedContract (`0xa3deaa...e53518`, chain 1)
-- UnnamedContract (`0xa3eb7a...205a24`, chain 1)
-- UnnamedContract (`0xde5d4a...a6ed88`, chain 1)
-- UnnamedContract (`0x623f27...79d9df`, chain 56)
-- UnnamedContract (`0xcdfb58...c7fb15`, chain 200901)
+- UnnamedContract (`0x0497dd14524dd59bcd76da7dc977a0f6120b1aca`, chain 1)
+- UnnamedContract (`0x0971cb672b4ef3e19284aa64717afb154a6fbedf`, chain 1)
+- UnnamedContract (`0x1898f16583152a6af129e3df14f0c955ca6201f7`, chain 1)
+- UnnamedContract (`0x4f85cbfdefbdb3fa96fcf1e38b0ee68db9ae438b`, chain 1)
+- UnnamedContract (`0xa3deaa934a4cc648a45d8269a012894315e53518`, chain 1)
+- UnnamedContract (`0xa3eb7a9e57fca4e40b79e394ed5eb37fed205a24`, chain 1)
+- UnnamedContract (`0xde5d4ab42251ba9af6f247cf07c9a4793fa6ed88`, chain 1)
+- UnnamedContract (`0x623f2774d9f27b59bc6b954544487532ce79d9df`, chain 56)
+- UnnamedContract (`0xcdfb58c8c859cb3f62ebe9cf2767f9e036c7fb15`, chain 200901)
 
 ## Contract Surface Quality
 
@@ -106,11 +106,11 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Bfbtc | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x128eb2...d55f1b` | ⚠️ Unaudited |
-| BfbtcOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x3f8c84...ab5f5b` | ⚠️ Unaudited |
-| BitFiStablecoinManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb69865...d21f06` | ⚠️ Unaudited |
-| BitFiStablecoinZap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x140b55...4b66cb` | ⚠️ Unaudited |
-| StakedBitFiStablecoin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x688745...a871c5` | ⚠️ Unaudited |
+| Bfbtc | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x128eb2baca6ac5416bed268d41c202fc41d55f1b` | ⚠️ Unaudited |
+| BfbtcOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x3f8c84fe47486156b81e74f08c4d9be3c3ab5f5b` | ⚠️ Unaudited |
+| BitFiStablecoinManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb69865f8fa4bfc67ab4ad233e36ac593a5d21f06` | ⚠️ Unaudited |
+| BitFiStablecoinZap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x140b5517df7e33878eb0a494d6882cfac54b66cb` | ⚠️ Unaudited |
+| StakedBitFiStablecoin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x688745d56f93924dbda1c2caa613adcbcea871c5` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -130,16 +130,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380600 | `0x0497dd...0b1aca` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380602 | `0x0971cb...6fbedf` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380603 | `0x1898f1...6201f7` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380604 | `0x4f85cb...ae438b` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | ethereum | unit-380605 | `0x550657...941bbe` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380606 | `0xa3deaa...e53518` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380607 | `0xa3eb7a...205a24` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380609 | `0xde5d4a...a6ed88` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-380612 | `0x623f27...79d9df` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bitlayer | unit-380611 | `0xcdfb58...c7fb15` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380600 | `0x0497dd14524dd59bcd76da7dc977a0f6120b1aca` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380602 | `0x0971cb672b4ef3e19284aa64717afb154a6fbedf` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380603 | `0x1898f16583152a6af129e3df14f0c955ca6201f7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380604 | `0x4f85cbfdefbdb3fa96fcf1e38b0ee68db9ae438b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | ethereum | unit-380605 | `0x5506570fd527c06902b51e33535943c9dc941bbe` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380606 | `0xa3deaa934a4cc648a45d8269a012894315e53518` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380607 | `0xa3eb7a9e57fca4e40b79e394ed5eb37fed205a24` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380609 | `0xde5d4ab42251ba9af6f247cf07c9a4793fa6ed88` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-380612 | `0x623f2774d9f27b59bc6b954544487532ce79d9df` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bitlayer | unit-380611 | `0xcdfb58c8c859cb3f62ebe9cf2767f9e036c7fb15` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -167,13 +167,13 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| Audit Report | bfBTC | ambiguous — not counted | 0x623f27… (alternative) `0x623f27...79d9df` — liveness: live (current_address_book_code)<br>0xcdfb58… (alternative) `0xcdfb58...c7fb15` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Audit Report | bfBTC | ambiguous — not counted | 0x623f27… (alternative) `0x623f2774d9f27b59bc6b954544487532ce79d9df` — liveness: live (current_address_book_code)<br>0xcdfb58… (alternative) `0xcdfb58c8c859cb3f62ebe9cf2767f9e036c7fb15` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | Audit Report | bfUSD | unmatched — not counted | — | mentioned in audit report title for BitFi USD (bfUSD) | no |
 | bitfi-slowmist-audit.pdf | BfbtcBitlayer | unmatched — not counted | — | listed in scope and findings | no |
-| bitfi-slowmist-audit.pdf | Bfbtc | ambiguous — not counted | 0x623f27… (alternative) `0x623f27...79d9df` — liveness: live (current_address_book_code)<br>0xcdfb58… (alternative) `0xcdfb58...c7fb15` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| bitfi-slowmist-audit.pdf | Bfbtc | ambiguous — not counted | 0x623f27… (alternative) `0x623f2774d9f27b59bc6b954544487532ce79d9df` — liveness: live (current_address_book_code)<br>0xcdfb58… (alternative) `0xcdfb58c8c859cb3f62ebe9cf2767f9e036c7fb15` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | bitfi-slowmist-audit.pdf | BfbtcProxy | unmatched — not counted | — | listed in scope and findings | no |
 | See the report on SlowMist's GitHub | BfbtcBitlayer | unmatched — not counted | — | listed in scope and findings | no |
-| See the report on SlowMist's GitHub | Bfbtc | ambiguous — not counted | 0x623f27… (alternative) `0x623f27...79d9df` — liveness: live (current_address_book_code)<br>0xcdfb58… (alternative) `0xcdfb58...c7fb15` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| See the report on SlowMist's GitHub | Bfbtc | ambiguous — not counted | 0x623f27… (alternative) `0x623f2774d9f27b59bc6b954544487532ce79d9df` — liveness: live (current_address_book_code)<br>0xcdfb58… (alternative) `0xcdfb58c8c859cb3f62ebe9cf2767f9e036c7fb15` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | See the report on SlowMist's GitHub | BfbtcProxy | unmatched — not counted | — | listed in visibility description | no |
 | Download the bfUSD audit report (PDF) | BfusdMerkleStash | unmatched — not counted | — | listed in scope | no |
 | Download the bfUSD audit report (PDF) | BitFiStablecoin | unmatched — not counted | — | listed in scope | no |

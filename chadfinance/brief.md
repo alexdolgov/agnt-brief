@@ -59,14 +59,14 @@ The protocol comprises 4 functional families. Its contracts share 6 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Conjurer | unknown | bsc | n/a | [`0x3204d4...346ee4`](./contracts/bsc-56/0x3204d41f2f9773076594f93705072da1a5346ee4/) | ✅ Audited |
-| Oracle | unknown | bsc | n/a | [`0x94bd0f...081071`](./contracts/bsc-56/0x94bd0f3e591adf234f82b55acf8e37beb7081071/) | ✅ Audited |
+| Conjurer | unknown | bsc | n/a | [`0x3204d41f2f9773076594f93705072da1a5346ee4`](./contracts/bsc-56/0x3204d41f2f9773076594f93705072da1a5346ee4/) | ✅ Audited |
+| Oracle | unknown | bsc | n/a | [`0x94bd0f3e591adf234f82b55acf8e37beb7081071`](./contracts/bsc-56/0x94bd0f3e591adf234f82b55acf8e37beb7081071/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| SwapRouter | adapter | bsc | n/a | [`0xa8eea1...a1affd`](./contracts/bsc-56/0xa8eea1eae8f7483f7ad0555783a18f730da1affd/) | ⚠️ Unaudited |
+| SwapRouter | adapter | bsc | n/a | [`0xa8eea1eae8f7483f7ad0555783a18f730da1affd`](./contracts/bsc-56/0xa8eea1eae8f7483f7ad0555783a18f730da1affd/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -86,7 +86,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0x26c6e5...1c2fc9` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x26c6e529487a19e4098c8803612de4877e1c2fc9` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -100,7 +100,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0xa8eea1...a1affd`](./contracts/bsc-56/0xa8eea1eae8f7483f7ad0555783a18f730da1affd/) | SwapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xa8eea1eae8f7483f7ad0555783a18f730da1affd`](./contracts/bsc-56/0xa8eea1eae8f7483f7ad0555783a18f730da1affd/) | SwapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

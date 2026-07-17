@@ -62,7 +62,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| B2Token | unknown | bsc | n/a | [`0x783c3f...6ee2a2`](./contracts/bsc-56/0x783c3f003f172c6ac5ac700218a357d2d66ee2a2/) | ⚠️ Unaudited |
+| B2Token | unknown | bsc | n/a | [`0x783c3f003f172c6ac5ac700218a357d2d66ee2a2`](./contracts/bsc-56/0x783c3f003f172c6ac5ac700218a357d2d66ee2a2/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,7 +95,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x783c3f...6ee2a2`](./contracts/bsc-56/0x783c3f003f172c6ac5ac700218a357d2d66ee2a2/) | B2Token | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x783c3f003f172c6ac5ac700218a357d2d66ee2a2`](./contracts/bsc-56/0x783c3f003f172c6ac5ac700218a357d2d66ee2a2/) | B2Token | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

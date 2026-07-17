@@ -57,8 +57,8 @@ The pinned logic-topography run contains 2 contract row(s) across arbitrum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- EP19 property token (`0x4291d1...454c59`, chain 42161)
-- EPDUBAI3 property token (`0x88db0e...0ab9b5`, chain 42161)
+- EP19 property token (`0x4291d1a78a5866ac335f700c339318f41d454c59`, chain 42161)
+- EPDUBAI3 property token (`0x88db0e4040487b0500f2085049d3dfcbcd0ab9b5`, chain 42161)
 
 ## Contract Surface Quality
 
@@ -104,8 +104,8 @@ The pinned logic-topography run contains 2 contract row(s) across arbitrum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| EP19 property token | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-384836 | `0x4291d1...454c59` | ⚠️ Unaudited |
-| EPDUBAI3 property token | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-384837 | `0x88db0e...0ab9b5` | ⚠️ Unaudited |
+| EP19 property token | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-384836 | `0x4291d1a78a5866ac335f700c339318f41d454c59` | ⚠️ Unaudited |
+| EPDUBAI3 property token | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-384837 | `0x88db0e4040487b0500f2085049d3dfcbcd0ab9b5` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

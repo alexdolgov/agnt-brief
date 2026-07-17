@@ -59,19 +59,19 @@ The protocol comprises 2 functional families. Contracts are linked by 1 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BSCswapPair | unknown | bsc | n/a | [`0x57108b...88b0ea`](./contracts/bsc-56/0x57108ba5a6ce93da2e5503f531ca9bfd1288b0ea/) | ✅ Audited |
-| BSCswapRouter | unknown | bsc | n/a | [`0xbd67d1...c788b2`](./contracts/bsc-56/0xbd67d157502a23309db761c41965600c2ec788b2/) | ✅ Audited |
+| BSCswapPair | unknown | bsc | n/a | [`0x57108ba5a6ce93da2e5503f531ca9bfd1288b0ea`](./contracts/bsc-56/0x57108ba5a6ce93da2e5503f531ca9bfd1288b0ea/) | ✅ Audited |
+| BSCswapRouter | unknown | bsc | n/a | [`0xbd67d157502a23309db761c41965600c2ec788b2`](./contracts/bsc-56/0xbd67d157502a23309db761c41965600c2ec788b2/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (6)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| JulProtocolV3_BSC | unknown | bsc | n/a | [`0x4edfbd...a08037`](./contracts/bsc-56/0x4edfbdcc6b7bc3596f625137be4f211ea5a08037/) | ⚠️ Unaudited |
-| JulSwap | unknown | bsc | n/a | [`0x5a41f6...6577ea`](./contracts/bsc-56/0x5a41f637c3f7553dba6ddc2d3ca92641096577ea/) | ⚠️ Unaudited |
-| JulSwapCrossChainNode | unknown | polygon | n/a | [`0x16a7b3...a8a864`](./contracts/polygon-137/0x16a7b34353de766ae3e1a8ad0d6a415b4da8a864/) | ⚠️ Unaudited |
-| MultiCall | unknown | avalanche | n/a | [`0x0e6dd9...d7d83e`](./contracts/avalanche-43114/0x0e6dd9603f4bc56296ee3b9ab33122fecbd7d83e/) | ⚠️ Unaudited |
-| OptimizedTransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x16a7b3...a8a864`](./contracts/ethereum-1/0x16a7b34353de766ae3e1a8ad0d6a415b4da8a864/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | polygon | n/a | [`0x5dffc9...95a63c`](./contracts/polygon-137/0x5dffc99f807963954c83cc3dff9de610ad95a63c/) | ⚠️ Unaudited |
+| JulProtocolV3_BSC | unknown | bsc | n/a | [`0x4edfbdcc6b7bc3596f625137be4f211ea5a08037`](./contracts/bsc-56/0x4edfbdcc6b7bc3596f625137be4f211ea5a08037/) | ⚠️ Unaudited |
+| JulSwap | unknown | bsc | n/a | [`0x5a41f637c3f7553dba6ddc2d3ca92641096577ea`](./contracts/bsc-56/0x5a41f637c3f7553dba6ddc2d3ca92641096577ea/) | ⚠️ Unaudited |
+| JulSwapCrossChainNode | unknown | polygon | n/a | [`0x16a7b34353de766ae3e1a8ad0d6a415b4da8a864`](./contracts/polygon-137/0x16a7b34353de766ae3e1a8ad0d6a415b4da8a864/) | ⚠️ Unaudited |
+| MultiCall | unknown | avalanche | n/a | [`0x0e6dd9603f4bc56296ee3b9ab33122fecbd7d83e`](./contracts/avalanche-43114/0x0e6dd9603f4bc56296ee3b9ab33122fecbd7d83e/) | ⚠️ Unaudited |
+| OptimizedTransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x16a7b34353de766ae3e1a8ad0d6a415b4da8a864`](./contracts/ethereum-1/0x16a7b34353de766ae3e1a8ad0d6a415b4da8a864/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | polygon | n/a | [`0x5dffc99f807963954c83cc3dff9de610ad95a63c`](./contracts/polygon-137/0x5dffc99f807963954c83cc3dff9de610ad95a63c/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -106,10 +106,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x4edfbd...a08037`](./contracts/bsc-56/0x4edfbdcc6b7bc3596f625137be4f211ea5a08037/) | JulProtocolV3_BSC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x5a41f6...6577ea`](./contracts/bsc-56/0x5a41f637c3f7553dba6ddc2d3ca92641096577ea/) | JulSwap | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x16a7b3...a8a864`](./contracts/polygon-137/0x16a7b34353de766ae3e1a8ad0d6a415b4da8a864/) | JulSwapCrossChainNode | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x16a7b3...a8a864`](./contracts/ethereum-1/0x16a7b34353de766ae3e1a8ad0d6a415b4da8a864/) | OptimizedTransparentUpgradeableProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x4edfbdcc6b7bc3596f625137be4f211ea5a08037`](./contracts/bsc-56/0x4edfbdcc6b7bc3596f625137be4f211ea5a08037/) | JulProtocolV3_BSC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x5a41f637c3f7553dba6ddc2d3ca92641096577ea`](./contracts/bsc-56/0x5a41f637c3f7553dba6ddc2d3ca92641096577ea/) | JulSwap | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x16a7b34353de766ae3e1a8ad0d6a415b4da8a864`](./contracts/polygon-137/0x16a7b34353de766ae3e1a8ad0d6a415b4da8a864/) | JulSwapCrossChainNode | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x16a7b34353de766ae3e1a8ad0d6a415b4da8a864`](./contracts/ethereum-1/0x16a7b34353de766ae3e1a8ad0d6a415b4da8a864/) | OptimizedTransparentUpgradeableProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

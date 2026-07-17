@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- Bridge2 (`0xcde3f9...c24565`, chain 42161)
+- Bridge2 (`0xcde3f99bcb4c91e19124e41730489eaefec24565`, chain 42161)
 
 ## Contract Surface Quality
 
@@ -103,7 +103,7 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Bridge2 | operational_periphery | project_anchor | own_supporting | 0 | arbitrum | unit-266972 | `0xcde3f9...c24565` | ⚠️ Unaudited |
+| Bridge2 | operational_periphery | project_anchor | own_supporting | 0 | arbitrum | unit-266972 | `0xcde3f99bcb4c91e19124e41730489eaefec24565` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -140,7 +140,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | `0xcde3f9...c24565` | Bridge2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0xcde3f99bcb4c91e19124e41730489eaefec24565` | Bridge2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

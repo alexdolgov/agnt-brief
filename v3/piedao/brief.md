@@ -52,11 +52,11 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x220f25...992b97`, chain 1)
-- UnnamedContract (`0x831433...43762f`, chain 1)
-- UnnamedContract (`0xb3c2b0...d837bc`, chain 1)
-- UnnamedContract (`0xb9a4bc...8ff88e`, chain 1)
-- UnnamedContract (`0xd7db1a...d09757`, chain 56)
+- UnnamedContract (`0x220f25c2105a65425913fe0cf38e7699e3992b97`, chain 1)
+- UnnamedContract (`0x8314337d2b13e1a61eadf0fd1686b2134d43762f`, chain 1)
+- UnnamedContract (`0xb3c2b0056627cc1dc148d8fc29f5abdf4dd837bc`, chain 1)
+- UnnamedContract (`0xb9a4bca06f14a982fcd14907d31dfacadc8ff88e`, chain 1)
+- UnnamedContract (`0xd7db1ae8193a12d0ee5e1cf53d7bcf0f20d09757`, chain 56)
 
 ## Contract Surface Quality
 
@@ -102,14 +102,14 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BasketMigrator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x42bb98...fad146` | ⚠️ Unaudited |
-| ERC20NonTransferableRewardsOwned | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4fb1af...28a321` | ⚠️ Unaudited |
-| LendingManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x52fbda...f54a66` | ⚠️ Unaudited |
-| MerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xbab795...afa456` | ⚠️ Unaudited |
-| MiniMeToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xad32a8...737b2d` | ⚠️ Unaudited |
-| RewardEscrow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfcf1ab...c11a9f` | ⚠️ Unaudited |
-| SharesTimeLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x046b9c...928f01` | ⚠️ Unaudited |
-| wLSPair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x037efb...eb4128` | ⚠️ Unaudited |
+| BasketMigrator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x42bb983670349c0a95e271121f2c236036fad146` | ⚠️ Unaudited |
+| ERC20NonTransferableRewardsOwned | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4fb1afbb9de791e59222c385d87653e67728a321` | ⚠️ Unaudited |
+| LendingManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x52fbda94cff098c1c89725cedb40e65276f54a66` | ⚠️ Unaudited |
+| MerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xbab795479bff02c6ef52a10a54a95a42a1afa456` | ⚠️ Unaudited |
+| MiniMeToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xad32a8e6220741182940c5abf610bde99e737b2d` | ⚠️ Unaudited |
+| RewardEscrow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfcf1abc45a264d1172af928ff04d3413bbc11a9f` | ⚠️ Unaudited |
+| SharesTimeLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x046b9c3a8a02a802fba7e61054b79e28e0928f01` | ⚠️ Unaudited |
+| wLSPair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x037efbc87ba34816ebe3326cf189910f82eb4128` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -129,11 +129,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251248 | `0x220f25...992b97` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251249 | `0x831433...43762f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251250 | `0xb3c2b0...d837bc` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251251 | `0xb9a4bc...8ff88e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-251252 | `0xd7db1a...d09757` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251248 | `0x220f25c2105a65425913fe0cf38e7699e3992b97` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251249 | `0x8314337d2b13e1a61eadf0fd1686b2134d43762f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251250 | `0xb3c2b0056627cc1dc148d8fc29f5abdf4dd837bc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251251 | `0xb9a4bca06f14a982fcd14907d31dfacadc8ff88e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-251252 | `0xd7db1ae8193a12d0ee5e1cf53d7bcf0f20d09757` | ❓ Unverified |
 
 ## Audit Inventory
 

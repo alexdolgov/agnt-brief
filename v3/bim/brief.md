@@ -52,15 +52,15 @@ The pinned logic-topography run contains 1 contract row(s) across base, polygon.
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x115a40...3da38c`, chain 137)
-- UnnamedContract (`0x224bc1...aa5861`, chain 137)
-- UnnamedContract (`0x374c3c...0f4368`, chain 137)
-- UnnamedContract (`0x414195...e73067`, chain 137)
-- UnnamedContract (`0x6ce8c0...ae163d`, chain 137)
-- UnnamedContract (`0xb07232...9c5f6d`, chain 137)
-- UnnamedContract (`0xe78649...187482`, chain 137)
-- UnnamedContract (`0xf6ed5c...71fbc8`, chain 137)
-- BIM (`0x555fff...2e8379`, chain 8453)
+- UnnamedContract (`0x115a40e5f42a9369797643a65220411c533da38c`, chain 137)
+- UnnamedContract (`0x224bc163953c0ed9e3ac638c216ec79512aa5861`, chain 137)
+- UnnamedContract (`0x374c3c70c1b702914fce4b371460cb60960f4368`, chain 137)
+- UnnamedContract (`0x41419527a96066601f17b704659873bd3ae73067`, chain 137)
+- UnnamedContract (`0x6ce8c05aacb514061de16146ac0b7d4bbeae163d`, chain 137)
+- UnnamedContract (`0xb07232ddd2fe3c3572ed129099eca12b779c5f6d`, chain 137)
+- UnnamedContract (`0xe78649874bcdb7a9d1666e665f340723a0187482`, chain 137)
+- UnnamedContract (`0xf6ed5c4bb724947e5d5dd5957260893ac871fbc8`, chain 137)
+- BIM (`0x555fff48549c1a25a723bd8e7ed10870d82e8379`, chain 8453)
 
 ## Contract Surface Quality
 
@@ -104,22 +104,22 @@ The pinned logic-topography run contains 1 contract row(s) across base, polygon.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BIM | unknown | project_anchor | own_supporting | 0 | base | unit-380593 | `0x555fff...2e8379` | ✅ Audited |
+| BIM | unknown | project_anchor | own_supporting | 0 | base | unit-380593 | `0x555fff48549c1a25a723bd8e7ed10870d82e8379` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (10)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BimOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x62ff2b...da76d2` | ⚠️ Unaudited |
-| BimSwapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb32a52...e067ef` | ⚠️ Unaudited |
-| BimVaultV7 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xee9550...31304b` | ⚠️ Unaudited |
-| BimZapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xa8c850...42a856` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xccf8a7...a36263` | ⚠️ Unaudited |
-| StrategyFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x3f44a3...560948` | ⚠️ Unaudited |
-| StrategyVelodromeFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x19fd67...4a6216` | ⚠️ Unaudited |
-| StrategyVelodromeGaugeV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xdba417...cffe3f` | ⚠️ Unaudited |
-| TimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x20ee7c...84163b` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | base | n/a | `0x270b04...a9dd29` | ⚠️ Unaudited |
+| BimOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x62ff2b90a14c2e312c8b1c4c08f61af710da76d2` | ⚠️ Unaudited |
+| BimSwapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb32a5263eb60c56610bb44b566f6d44b6ae067ef` | ⚠️ Unaudited |
+| BimVaultV7 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xee95508e0f52dbea2aaa507462735a3de731304b` | ⚠️ Unaudited |
+| BimZapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xa8c8504bf1dc659d93ca5a05dc77d7104142a856` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xccf8a786c25b3b4a0ed498bfcb670cc3e8a36263` | ⚠️ Unaudited |
+| StrategyFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x3f44a33091f5b18a5ea411f927c6106f5d560948` | ⚠️ Unaudited |
+| StrategyVelodromeFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x19fd67135a6c101d1a72f4ed315f2f546a4a6216` | ⚠️ Unaudited |
+| StrategyVelodromeGaugeV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xdba417c3a34c03ef2b360a9a2d5dc70bfccffe3f` | ⚠️ Unaudited |
+| TimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x20ee7cc55345db9296d32b4a86bb72939284163b` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | base | n/a | `0x270b04518596851d67de4074845f37dcdea9dd29` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -139,14 +139,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-380585 | `0x115a40...3da38c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-380586 | `0x224bc1...aa5861` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-380587 | `0x374c3c...0f4368` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-380588 | `0x414195...e73067` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-380589 | `0x6ce8c0...ae163d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-380590 | `0xb07232...9c5f6d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-380591 | `0xe78649...187482` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-380592 | `0xf6ed5c...71fbc8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-380585 | `0x115a40e5f42a9369797643a65220411c533da38c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-380586 | `0x224bc163953c0ed9e3ac638c216ec79512aa5861` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-380587 | `0x374c3c70c1b702914fce4b371460cb60960f4368` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-380588 | `0x41419527a96066601f17b704659873bd3ae73067` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-380589 | `0x6ce8c05aacb514061de16146ac0b7d4bbeae163d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-380590 | `0xb07232ddd2fe3c3572ed129099eca12b779c5f6d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-380591 | `0xe78649874bcdb7a9d1666e665f340723a0187482` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-380592 | `0xf6ed5c4bb724947e5d5dd5957260893ac871fbc8` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -204,7 +204,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| <mark style="color:orange;">Cyberscope</mark> | BIM | own contract | BIM (selected) `0x555fff...2e8379` — deployed 2025-03-13 19:10:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| <mark style="color:orange;">Cyberscope</mark> | BIM | own contract | BIM (selected) `0x555fff48549c1a25a723bd8e7ed10870d82e8379` — deployed 2025-03-13 19:10:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | <mark style="color:orange;">Cyberscope</mark> | ERC20 | unmatched — not counted | — | listed in audited files | no |
 | <mark style="color:orange;">Cyberscope</mark> | IERC20 | unmatched — not counted | — | listed in audited files | no |
 | <mark style="color:orange;">Cyberscope</mark> | ERC20Burnable | unmatched — not counted | — | listed in audited files | no |

@@ -89,27 +89,27 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AToken | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-172909 | `0x12b540...a566e9` | ⚠️ Unaudited |
-| Burner | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-172902 | `0xd15a67...9046d3` | ⚠️ Unaudited |
-| DepositSecurityModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-172898 | `0xc77f87...3cfc09` | ⚠️ Unaudited |
-| DummyEmptyContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-172881 | `0x6f6541...beda31` | ⚠️ Unaudited |
-| EIP712StETH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-172888 | `0x8f73e4...3228b7` | ⚠️ Unaudited |
-| HashConsensus | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-172883 | `0x7fadb6...df355a` | ⚠️ Unaudited |
-| InitializableImmutableAdminUpgradeabilityProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-172915 | `0x0b925e...9e9371` | ⚠️ Unaudited |
-| LegacyOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-172892 | `0xa29b81...2d7e0e` | ⚠️ Unaudited |
-| NodeOperatorsRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-172886 | `0x853893...b6d8ed` | ⚠️ Unaudited |
-| OracleDaemonConfig | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-172896 | `0xbf05a9...c23b09` | ⚠️ Unaudited |
-| OracleReportSanityChecker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-172890 | `0x9305c1...f0f1cc` | ⚠️ Unaudited |
-| OssifiableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-172913 | `0x0de4ea...bf5c6e` | ⚠️ Unaudited |
-| OssifiableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-172907 | `0x852ded...503cee` | ⚠️ Unaudited |
-| OssifiableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-172919 | `0x889edc...12f9b1` | ⚠️ Unaudited |
-| ShapellaUpgradeTemplate | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-172894 | `0xa818ff...cd600a` | ⚠️ Unaudited |
-| StakingRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-172903 | `0xd8784e...0fb6df` | ⚠️ Unaudited |
-| TokenizedVault | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-172921 | `0x0f5409...e31c8f` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-172905 | `0xdbc81b...56fe8d` | ⚠️ Unaudited |
-| VariableDebtToken | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-172911 | `0x2e7576...6ae70d` | ⚠️ Unaudited |
-| VariableDebtTokenInstance | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-172917 | `0x015396...465145` | ⚠️ Unaudited |
-| WithdrawalVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-172900 | `0xcc52f1...7f69fd` | ⚠️ Unaudited |
+| AToken | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-172909 | `0x12b54025c112aa61face2cdb7118740875a566e9` | ⚠️ Unaudited |
+| Burner | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-172902 | `0xd15a672319cf0352560ee76d9e89eab0889046d3` | ⚠️ Unaudited |
+| DepositSecurityModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-172898 | `0xc77f8768774e1c9244beed705c4354f2113cfc09` | ⚠️ Unaudited |
+| DummyEmptyContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-172881 | `0x6f6541c2203196feedd14cd2c09550da1cbeda31` | ⚠️ Unaudited |
+| EIP712StETH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-172888 | `0x8f73e4c2a6d852bb4ab2a45e6a9cf5715b3228b7` | ⚠️ Unaudited |
+| HashConsensus | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-172883 | `0x7fadb6358950c5faa66cb5eb8ee5147de3df355a` | ⚠️ Unaudited |
+| InitializableImmutableAdminUpgradeabilityProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-172915 | `0x0b925ed163218f6662a35e0f0371ac234f9e9371` | ⚠️ Unaudited |
+| LegacyOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-172892 | `0xa29b819654ce6224a222bb5f586920105e2d7e0e` | ⚠️ Unaudited |
+| NodeOperatorsRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-172886 | `0x8538930c385c0438a357d2c25cb3ead95ab6d8ed` | ⚠️ Unaudited |
+| OracleDaemonConfig | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-172896 | `0xbf05a929c3d7885a6aead833a992da6e5ac23b09` | ⚠️ Unaudited |
+| OracleReportSanityChecker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-172890 | `0x9305c1dbfe22c12c66339184c0025d7006f0f1cc` | ⚠️ Unaudited |
+| OssifiableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-172913 | `0x0de4ea0184c2ad0baca7183356aea5b8d5bf5c6e` | ⚠️ Unaudited |
+| OssifiableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-172907 | `0x852ded011285fe67063a08005c71a85690503cee` | ⚠️ Unaudited |
+| OssifiableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-172919 | `0x889edc2edab5f40e902b864ad4d7ade8e412f9b1` | ⚠️ Unaudited |
+| ShapellaUpgradeTemplate | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-172894 | `0xa818ff9ec93122bf9401ab4340c42de638cd600a` | ⚠️ Unaudited |
+| StakingRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-172903 | `0xd8784e748f59ba711fb5643191ec3fadd50fb6df` | ⚠️ Unaudited |
+| TokenizedVault | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-172921 | `0x0f54097295e97ce61736bb9a0a1066cdf3e31c8f` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-172905 | `0xdbc81b33a23375a90c8ba4039d5738cb6f56fe8d` | ⚠️ Unaudited |
+| VariableDebtToken | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-172911 | `0x2e7576042566f8d6990e07a1b61ad1efd86ae70d` | ⚠️ Unaudited |
+| VariableDebtTokenInstance | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-172917 | `0x015396e1f286289ae23a762088e863b3ec465145` | ⚠️ Unaudited |
+| WithdrawalVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-172900 | `0xcc52f17756c04bba7e377716d7062fc36d7f69fd` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

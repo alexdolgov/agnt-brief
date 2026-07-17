@@ -59,17 +59,17 @@ The protocol comprises 5 functional families. Contracts are linked by 15 cross-c
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| RankFactory | registry | bsc | n/a | 10 deployments: bsc [`0x1563c9...447227`](./contracts/bsc-56/0x1563c9837f9b71ba6f69342276deda6158447227/); bsc `0x185f8b...31c82e`; bsc `0x276ee9...a17eb8`; bsc `0x6e9d30...286a3f`; bsc `0x7cd6ea...e7dc19`; bsc `0x8e9fc0...a90601`; bsc `0x95defc...b573f3`; bsc `0xab5389...40e452`; bsc `0xcbabba...b5a679`; bsc `0xf86ada...5b70db` | ✅ Audited |
-| RankToken | token | bsc | n/a | [`0x978ab3...cbf952`](./contracts/bsc-56/0x978ab3d5a5c39bcbb2a15f2ad324187dd7cbf952/) | ✅ Audited |
+| RankFactory | registry | bsc | n/a | 10 deployments: bsc [`0x1563c9837f9b71ba6f69342276deda6158447227`](./contracts/bsc-56/0x1563c9837f9b71ba6f69342276deda6158447227/); bsc `0x185f8bc81fc95bcdb8ebd8a7c4429a461931c82e`; bsc `0x276ee92c144a7fbe0931813cc7bb30d388a17eb8`; bsc `0x6e9d30690e433503d3db7001610f60290a286a3f`; bsc `0x7cd6ead7e0834ae8bc393ba4c933bb9e80e7dc19`; bsc `0x8e9fc089c7ef09cd1c8bfc7ffdf5fa00e1a90601`; bsc `0x95defc7388038fe97512f355686f060fa2b573f3`; bsc `0xab5389b054b763f9d86be0381bd6c7385e40e452`; bsc `0xcbabba2af00eb3c0f4ae98d14ffeb07587b5a679`; bsc `0xf86ada1552817637ec843a4c5eb915fc125b70db` | ✅ Audited |
+| RankToken | token | bsc | n/a | [`0x978ab3d5a5c39bcbb2a15f2ad324187dd7cbf952`](./contracts/bsc-56/0x978ab3d5a5c39bcbb2a15f2ad324187dd7cbf952/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (4)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| FullRangeConvertorV2 | adapter | bsc | n/a | [`0xf8ec48...c51066`](./contracts/bsc-56/0xf8ec48e0022f4b59f120579dba3b472580c51066/) | ⚠️ Unaudited |
-| RankStrategy | unknown | bsc | n/a | [`0xf9b185...1aaffd`](./contracts/bsc-56/0xf9b1859266b21dfc02c8bd31e11103f97a1aaffd/) | ⚠️ Unaudited |
-| StakingPool | core_logic | bsc | n/a | [`0xd6a07b...cd1074`](./contracts/bsc-56/0xd6a07b8065f9e8386a9a5bba6a754a10a9cd1074/) | ⚠️ Unaudited |
-| UNCX_LiquidityLocker_UniV3 | unknown | bsc | n/a | [`0xfe88da...bf1557`](./contracts/bsc-56/0xfe88dab083964c56429baa01f37ec2265abf1557/) | ⚠️ Unaudited |
+| FullRangeConvertorV2 | adapter | bsc | n/a | [`0xf8ec48e0022f4b59f120579dba3b472580c51066`](./contracts/bsc-56/0xf8ec48e0022f4b59f120579dba3b472580c51066/) | ⚠️ Unaudited |
+| RankStrategy | unknown | bsc | n/a | [`0xf9b1859266b21dfc02c8bd31e11103f97a1aaffd`](./contracts/bsc-56/0xf9b1859266b21dfc02c8bd31e11103f97a1aaffd/) | ⚠️ Unaudited |
+| StakingPool | core_logic | bsc | n/a | [`0xd6a07b8065f9e8386a9a5bba6a754a10a9cd1074`](./contracts/bsc-56/0xd6a07b8065f9e8386a9a5bba6a754a10a9cd1074/) | ⚠️ Unaudited |
+| UNCX_LiquidityLocker_UniV3 | unknown | bsc | n/a | [`0xfe88dab083964c56429baa01f37ec2265abf1557`](./contracts/bsc-56/0xfe88dab083964c56429baa01f37ec2265abf1557/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -89,12 +89,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0x3d413f...ad7a36` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x582c5a...31a3b0` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xcb8b00...fb62ec` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xd041c5...e441c2` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xd2b1c1...bb53f0` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xe0c497...200ec3` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x3d413f87dc653fe98f8913d7925a4882b9ad7a36` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x582c5ae03f55a3eb5e79f8d3e2cf9712c331a3b0` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xcb8b00d4018ad6031e28a44bf74616014bfb62ec` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xd041c5d24491dff050f40fab5d485530ebe441c2` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xd2b1c19dc746331829918fe3517a40935ebb53f0` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xe0c497ea0264f939d1d795a7a521faeca1200ec3` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -109,10 +109,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0xf8ec48...c51066`](./contracts/bsc-56/0xf8ec48e0022f4b59f120579dba3b472580c51066/) | FullRangeConvertorV2 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xf9b185...1aaffd`](./contracts/bsc-56/0xf9b1859266b21dfc02c8bd31e11103f97a1aaffd/) | RankStrategy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xd6a07b...cd1074`](./contracts/bsc-56/0xd6a07b8065f9e8386a9a5bba6a754a10a9cd1074/) | StakingPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xfe88da...bf1557`](./contracts/bsc-56/0xfe88dab083964c56429baa01f37ec2265abf1557/) | UNCX_LiquidityLocker_UniV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xf8ec48e0022f4b59f120579dba3b472580c51066`](./contracts/bsc-56/0xf8ec48e0022f4b59f120579dba3b472580c51066/) | FullRangeConvertorV2 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xf9b1859266b21dfc02c8bd31e11103f97a1aaffd`](./contracts/bsc-56/0xf9b1859266b21dfc02c8bd31e11103f97a1aaffd/) | RankStrategy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xd6a07b8065f9e8386a9a5bba6a754a10a9cd1074`](./contracts/bsc-56/0xd6a07b8065f9e8386a9a5bba6a754a10a9cd1074/) | StakingPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xfe88dab083964c56429baa01f37ec2265abf1557`](./contracts/bsc-56/0xfe88dab083964c56429baa01f37ec2265abf1557/) | UNCX_LiquidityLocker_UniV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

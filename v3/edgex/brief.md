@@ -52,14 +52,14 @@ The pinned logic-topography run contains 4 contract row(s) across arbitrum, base
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- CCTP Vault Relayer (`0x449ab3...d1ed0a`, chain 3343)
-- EDGE token proxy (`0xb0076d...f2a241`, chain 1)
-- Edge Vault (`0x4b1e12...923717`, chain 3343)
-- EdgeToken (`0x9406dd...ab3161`, chain 1)
-- edgeX Spot Claim Contract (`0x7f861a...463cb2`, chain 1)
-- Perpetual Vault (`0x48fc02...a557b5`, chain 3343)
-- Spot Vault (`0x87e11a...d78e53`, chain 3343)
-- V2 Perpetual contract (`0xeeb3fb...68fac8`, chain 3343)
+- CCTP Vault Relayer (`0x449ab3b7aac57c2695e359f422365c726ed1ed0a`, chain 3343)
+- EDGE token proxy (`0xb0076de78dc50581770bba1d211ddc0ad4f2a241`, chain 1)
+- Edge Vault (`0x4b1e12fbee329d462efcae43e3fe52110c923717`, chain 3343)
+- EdgeToken (`0x9406dd76452c172b3cc77092b42398e87dab3161`, chain 1)
+- edgeX Spot Claim Contract (`0x7f861a7db997b4f6e5ef9954a3b5d5b29c463cb2`, chain 1)
+- Perpetual Vault (`0x48fc02c5bd34af7086a5c70d4c59d18d10a557b5`, chain 3343)
+- Spot Vault (`0x87e11a60e6fdde29d86ce446ae06ddbc19d78e53`, chain 3343)
+- V2 Perpetual contract (`0xeeb3fb05cca17745cbdf193a9b16537efb68fac8`, chain 3343)
 
 ## Contract Surface Quality
 
@@ -103,23 +103,23 @@ The pinned logic-topography run contains 4 contract row(s) across arbitrum, base
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| EdgeToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-384231 | `0x9406dd...ab3161` | ✅ Audited |
+| EdgeToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-384231 | `0x9406dd76452c172b3cc77092b42398e87dab3161` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (11)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| EDGE token proxy | unknown | project_anchor | own_supporting | 0 | ethereum | unit-384234 | `0xb0076d...f2a241` | ⚠️ Unaudited |
-| edgeX Spot Claim Contract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-384229 | `0x7f861a...463cb2` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xce3066...23d551` | ⚠️ Unaudited |
-| FinalizableCommittee | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x23bf3d...3c946e` | ⚠️ Unaudited |
-| FinalizableGpsFactAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4abbc1...5e8562` | ⚠️ Unaudited |
-| InitializableImmutableAdminUpgradeabilityProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x238789...d4086a` | ⚠️ Unaudited |
-| MultiSigPoolV5WithPermit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x166b53...ae0eb6` | ⚠️ Unaudited |
-| SpotVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x238e0e...841487` | ⚠️ Unaudited |
-| StarkPerpetual | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-384265 | 2 deployments: ethereum `0x8c43c9...abd35d`; ethereum `0xfaae29...7d83dd` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | arbitrum | n/a | `0x107695...e211bb` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | arbitrum | n/a | `0x6f4836...c198d0` | ⚠️ Unaudited |
+| EDGE token proxy | unknown | project_anchor | own_supporting | 0 | ethereum | unit-384234 | `0xb0076de78dc50581770bba1d211ddc0ad4f2a241` | ⚠️ Unaudited |
+| edgeX Spot Claim Contract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-384229 | `0x7f861a7db997b4f6e5ef9954a3b5d5b29c463cb2` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xce306644d20ab523636f2121952fc6222623d551` | ⚠️ Unaudited |
+| FinalizableCommittee | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x23bf3dcc14680162b7f5355aabb56d31823c946e` | ⚠️ Unaudited |
+| FinalizableGpsFactAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4abbc1826389ac0feaa49e70c30a041b665e8562` | ⚠️ Unaudited |
+| InitializableImmutableAdminUpgradeabilityProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x23878914efe38d27c4d67ab83ed1b93a74d4086a` | ⚠️ Unaudited |
+| MultiSigPoolV5WithPermit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x166b5369f043474412408c8aba0d084e9cae0eb6` | ⚠️ Unaudited |
+| SpotVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x238e0edeb0e217fecd9e1ca98efa1219fc841487` | ⚠️ Unaudited |
+| StarkPerpetual | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-384265 | 2 deployments: ethereum `0x8c43c9bec15d82d153c52518030e0a9590abd35d`; ethereum `0xfaae2946e846133af314d1df13684c89fa7d83dd` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | arbitrum | n/a | `0x107695630130919cb040b095b9b20511d6e211bb` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | arbitrum | n/a | `0x6f4836afd5e21edcee9b838c5a4125829ec198d0` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -139,43 +139,43 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| CCTP Vault Relayer | unknown | project_anchor | own_supporting | 0 | edge | unit-384247 | `0x449ab3...d1ed0a` | ❓ Unverified |
-| Edge Vault | unknown | project_anchor | own_supporting | 0 | edge | unit-384249 | `0x4b1e12...923717` | ❓ Unverified |
-| Perpetual Vault | unknown | project_anchor | own_supporting | 0 | edge | unit-384248 | `0x48fc02...a557b5` | ❓ Unverified |
-| Spot Vault | unknown | project_anchor | own_supporting | 0 | edge | unit-384252 | `0x87e11a...d78e53` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384224 | `0x12f237...5dffad` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384225 | `0x221e7f...f10048` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-384226 | `0x28b5a0...68cf5d` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384227 | `0x5cbe2d...29cc3c` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384228 | `0x6973b6...8a0698` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-384230 | `0x81d40f...464b64` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-384232 | `0xa0b869...06eb48` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384233 | `0xa13cc6...ec89a9` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384235 | `0xb3118e...9d16e0` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384236 | `0xb40022...d39d9f` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384237 | `0xbe9a12...70d27a` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384238 | `0xc0a1a1...432cc5` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384239 | `0xf0da8b...a09d1d` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-384240 | `0x0b2c63...97ff85` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-384241 | `0x28b5a0...68cf5d` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-384242 | `0x81d40f...464b64` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-384261 | `0x3eedb0...92116d` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | polygon | unit-384243 | `0x28b5a0...68cf5d` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | polygon | unit-384244 | `0x3c499c...5c3359` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | polygon | unit-384245 | `0x81d40f...464b64` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | polygon | unit-384246 | `0xad8255...8b77b8` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | edge | unit-384250 | `0x5b6138...9198ee` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | edge | unit-384253 | `0x98706a...e2ca5c` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | edge | unit-384254 | `0x98d291...6ad74c` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-384262 | `0x28b5a0...68cf5d` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-384263 | `0x81d40f...464b64` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-384264 | `0x833589...a02913` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | unit-384256 | `0x28b5a0...68cf5d` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-384257 | `0x81144d...ed0cb2` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | unit-384258 | `0x81d40f...464b64` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | unit-384259 | `0xaf88d0...8e5831` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-384260 | `0xceeed8...332e41` | ❓ Unverified |
-| V2 Perpetual contract | unknown | project_anchor | own_supporting | 0 | edge | unit-384255 | `0xeeb3fb...68fac8` | ❓ Unverified |
+| CCTP Vault Relayer | unknown | project_anchor | own_supporting | 0 | edge | unit-384247 | `0x449ab3b7aac57c2695e359f422365c726ed1ed0a` | ❓ Unverified |
+| Edge Vault | unknown | project_anchor | own_supporting | 0 | edge | unit-384249 | `0x4b1e12fbee329d462efcae43e3fe52110c923717` | ❓ Unverified |
+| Perpetual Vault | unknown | project_anchor | own_supporting | 0 | edge | unit-384248 | `0x48fc02c5bd34af7086a5c70d4c59d18d10a557b5` | ❓ Unverified |
+| Spot Vault | unknown | project_anchor | own_supporting | 0 | edge | unit-384252 | `0x87e11a60e6fdde29d86ce446ae06ddbc19d78e53` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384224 | `0x12f2375dc85aaf8b76e8c9411855915ca25dffad` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384225 | `0x221e7fca09589ab2d7dc552ee72acf1a2ff10048` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-384226 | `0x28b5a0e9c621a5badaa536219b3a228c8168cf5d` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384227 | `0x5cbe2dda520e744c87a080b01394f57f7d29cc3c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384228 | `0x6973b640a1d6a1f57640db4084c6c4b45c8a0698` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-384230 | `0x81d40f21f12a8f0e3252bccb954d722d4c464b64` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-384232 | `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384233 | `0xa13cc6db0a4eca6a9c099e0d12c7369b9fec89a9` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384235 | `0xb3118e9a5b68413f85a2fe66a36237362f9d16e0` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384236 | `0xb40022e0d472412abbd67b89df106c2f26d39d9f` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384237 | `0xbe9a129909ebcb954bc065536d2bfafbd170d27a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384238 | `0xc0a1a1e4af873e9a37a0cac37f3ab81152432cc5` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384239 | `0xf0da8b0071270e25ce7e63276f1f0ad2d5a09d1d` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-384240 | `0x0b2c639c533813f4aa9d7837caf62653d097ff85` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-384241 | `0x28b5a0e9c621a5badaa536219b3a228c8168cf5d` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-384242 | `0x81d40f21f12a8f0e3252bccb954d722d4c464b64` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-384261 | `0x3eedb0d9c95263778a62081f2a62fc77a392116d` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | polygon | unit-384243 | `0x28b5a0e9c621a5badaa536219b3a228c8168cf5d` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | polygon | unit-384244 | `0x3c499c542cef5e3811e1192ce70d8cc03d5c3359` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | polygon | unit-384245 | `0x81d40f21f12a8f0e3252bccb954d722d4c464b64` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | polygon | unit-384246 | `0xad825544c91964a8d209f97fa360a7db718b77b8` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | edge | unit-384250 | `0x5b61381fc9e58e70efc13a4a97516997019198ee` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | edge | unit-384253 | `0x98706a006bc632df31cadfcbd43f38887ce2ca5c` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | edge | unit-384254 | `0x98d2919b9a214e6fa5384ac81e6864ba686ad74c` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-384262 | `0x28b5a0e9c621a5badaa536219b3a228c8168cf5d` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-384263 | `0x81d40f21f12a8f0e3252bccb954d722d4c464b64` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-384264 | `0x833589fcd6edb6e08f4c7c32d4f71b54bda02913` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | unit-384256 | `0x28b5a0e9c621a5badaa536219b3a228c8168cf5d` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-384257 | `0x81144d6e7084928830f9694a201e8c1ce6ed0cb2` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | unit-384258 | `0x81d40f21f12a8f0e3252bccb954d722d4c464b64` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | unit-384259 | `0xaf88d065e77c8cc2239327c5edb3a432268e5831` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-384260 | `0xceeed84620e5eb9ab1d6dfc316867d2cda332e41` | ❓ Unverified |
+| V2 Perpetual contract | unknown | project_anchor | own_supporting | 0 | edge | unit-384255 | `0xeeb3fb05cca17745cbdf193a9b16537efb68fac8` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -263,7 +263,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | report-halborn-edgex-v2.pdf | TransactionProcessor | unmatched — not counted | — | listed in scope | no |
 | report-rigsec-edgex-v1.pdf | MultiSigPoolV5WithPermit | unmatched — not counted | — | mentioned in findings as the contract containing the functions deposit, depositWithPermit, withdrawETH, withdrawErc20, withdrawERC20Mpc, factTransferErc20 | no |
 | report-slowmist-edgedistributor.pdf | EdgeDistributor | unmatched — not counted | — | listed in scope and code overview | no |
-| report-slowmist-edgetoken.pdf | EdgeToken | own contract | EdgeToken (selected) `0x9406dd...ab3161` — deployed 2026-02-19 08:30:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| report-slowmist-edgetoken.pdf | EdgeToken | own contract | EdgeToken (selected) `0x9406dd76452c172b3cc77092b42398e87dab3161` — deployed 2026-02-19 08:30:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | report-slowmist-edgex-v1.pdf | MultiSigPoolV5WithPermit | unmatched — not counted | — | listed in scope and findings | no |
 | report-slowmist-edgex-v1.pdf | StarkPerpetual | unmatched — not counted | — | mentioned in project overview and visibility description | no |
 | report-slowmist-edgex-v1.pdf | Proxy | unmatched — not counted | — | listed in visibility description and finding N5 | no |

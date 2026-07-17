@@ -62,7 +62,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| SHDToken | token | ethereum | n/a | [`0x5845cd...db060f`](./contracts/ethereum-1/0x5845cd0205b5d43af695412a79cf7c1aeddb060f/) | ⚠️ Unaudited |
+| SHDToken | token | ethereum | n/a | [`0x5845cd0205b5d43af695412a79cf7c1aeddb060f`](./contracts/ethereum-1/0x5845cd0205b5d43af695412a79cf7c1aeddb060f/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -94,7 +94,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x5845cd...db060f`](./contracts/ethereum-1/0x5845cd0205b5d43af695412a79cf7c1aeddb060f/) | SHDToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5845cd0205b5d43af695412a79cf7c1aeddb060f`](./contracts/ethereum-1/0x5845cd0205b5d43af695412a79cf7c1aeddb060f/) | SHDToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

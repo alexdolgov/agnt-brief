@@ -59,13 +59,13 @@ The protocol forms a single structural family (Core Logic) of 2 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| VaultRelayer | core_logic | sei | n/a | [`0xe077a0...f8dafb`](./contracts/sei-1329/0xe077a0eda893f0f9cbd37a5942dece86f4f8dafb/) | ✅ Audited |
+| VaultRelayer | core_logic | sei | n/a | [`0xe077a0eda893f0f9cbd37a5942dece86f4f8dafb`](./contracts/sei-1329/0xe077a0eda893f0f9cbd37a5942dece86f4f8dafb/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Permit2 | unknown | sei | n/a | [`0xb95257...cee578`](./contracts/sei-1329/0xb952578f3520ee8ea45b7914994dcf4702cee578/) | ⚠️ Unaudited |
+| Permit2 | unknown | sei | n/a | [`0xb952578f3520ee8ea45b7914994dcf4702cee578`](./contracts/sei-1329/0xb952578f3520ee8ea45b7914994dcf4702cee578/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

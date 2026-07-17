@@ -59,32 +59,32 @@ The protocol comprises 3 functional families. Its contracts share 2 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CSSVToken | unknown | ethereum | n/a | [`0xe018d3...960546`](./contracts/ethereum-1/0xe018d31f120a637828f46afd6c64ec099d960546/) | ✅ Audited |
-| SSVClusters | unknown | ethereum | n/a | [`0x3611d3...2832b4`](./contracts/ethereum-1/0x3611d36a7c052211d6f3b1a39326ad38a02832b4/) | ✅ Audited |
-| SSVDAO | unknown | ethereum | n/a | [`0x6240ee...ccd511`](./contracts/ethereum-1/0x6240ee8c276f17b9672eb2efea3472e13dccd511/) | ✅ Audited |
-| SSVNetwork | unknown | ethereum | n/a | [`0x050e94...9d1750`](./contracts/ethereum-1/0x050e94a68440531f3e89e93c33f349270e9d1750/) | ✅ Audited |
-| SSVNetworkSSVStakingUpgrade | unknown | ethereum | n/a | [`0x5220e9...873e9e`](./contracts/ethereum-1/0x5220e9b259ef934c23baefe4dc98d0ab6e873e9e/) | ✅ Audited |
-| SSVNetworkUpgradeValidatorsPerOperator | unknown | ethereum | n/a | [`0x32cd25...2e988c`](./contracts/ethereum-1/0x32cd259417da4af4c506accbef7758fb352e988c/) | ✅ Audited |
-| SSVNetworkViews | unknown | ethereum | n/a | [`0x052e5f...708a94`](./contracts/ethereum-1/0x052e5f6bd9db71c08db38377596875cec5708a94/) | ✅ Audited |
-| SSVOperators | unknown | ethereum | n/a | [`0x338554...ce6060`](./contracts/ethereum-1/0x338554a41b6a2ec9325157c01666ad8b0ace6060/) | ✅ Audited |
-| SSVOperatorsWhitelist | unknown | ethereum | n/a | [`0xcb7dde...f3227d`](./contracts/ethereum-1/0xcb7dde81e068cd7f8f5dd8bfa34639eb97f3227d/) | ✅ Audited |
-| SSVStaking | unknown | ethereum | n/a | [`0x1b844e...1c7034`](./contracts/ethereum-1/0x1b844e7abb9779f551ddccb5f0f34a54ec1c7034/) | ✅ Audited |
-| SSVToken | unknown | ethereum | n/a | [`0x584d44...d41f1c`](./contracts/ethereum-1/0x584d44d3e36f3690a4170dad0238df5441d41f1c/) | ✅ Audited |
-| SSVValidators | unknown | ethereum | n/a | [`0x9122fd...5e7499`](./contracts/ethereum-1/0x9122fded65ed6b562243efdc9e55ff0bef5e7499/) | ✅ Audited |
-| SSVViews | unknown | ethereum | n/a | [`0x055051...642c45`](./contracts/ethereum-1/0x055051fa508eeda80c38de34ca936aba59642c45/) | ✅ Audited |
+| CSSVToken | unknown | ethereum | n/a | [`0xe018d31f120a637828f46afd6c64ec099d960546`](./contracts/ethereum-1/0xe018d31f120a637828f46afd6c64ec099d960546/) | ✅ Audited |
+| SSVClusters | unknown | ethereum | n/a | [`0x3611d36a7c052211d6f3b1a39326ad38a02832b4`](./contracts/ethereum-1/0x3611d36a7c052211d6f3b1a39326ad38a02832b4/) | ✅ Audited |
+| SSVDAO | unknown | ethereum | n/a | [`0x6240ee8c276f17b9672eb2efea3472e13dccd511`](./contracts/ethereum-1/0x6240ee8c276f17b9672eb2efea3472e13dccd511/) | ✅ Audited |
+| SSVNetwork | unknown | ethereum | n/a | [`0x050e94a68440531f3e89e93c33f349270e9d1750`](./contracts/ethereum-1/0x050e94a68440531f3e89e93c33f349270e9d1750/) | ✅ Audited |
+| SSVNetworkSSVStakingUpgrade | unknown | ethereum | n/a | [`0x5220e9b259ef934c23baefe4dc98d0ab6e873e9e`](./contracts/ethereum-1/0x5220e9b259ef934c23baefe4dc98d0ab6e873e9e/) | ✅ Audited |
+| SSVNetworkUpgradeValidatorsPerOperator | unknown | ethereum | n/a | [`0x32cd259417da4af4c506accbef7758fb352e988c`](./contracts/ethereum-1/0x32cd259417da4af4c506accbef7758fb352e988c/) | ✅ Audited |
+| SSVNetworkViews | unknown | ethereum | n/a | [`0x052e5f6bd9db71c08db38377596875cec5708a94`](./contracts/ethereum-1/0x052e5f6bd9db71c08db38377596875cec5708a94/) | ✅ Audited |
+| SSVOperators | unknown | ethereum | n/a | [`0x338554a41b6a2ec9325157c01666ad8b0ace6060`](./contracts/ethereum-1/0x338554a41b6a2ec9325157c01666ad8b0ace6060/) | ✅ Audited |
+| SSVOperatorsWhitelist | unknown | ethereum | n/a | [`0xcb7dde81e068cd7f8f5dd8bfa34639eb97f3227d`](./contracts/ethereum-1/0xcb7dde81e068cd7f8f5dd8bfa34639eb97f3227d/) | ✅ Audited |
+| SSVStaking | unknown | ethereum | n/a | [`0x1b844e7abb9779f551ddccb5f0f34a54ec1c7034`](./contracts/ethereum-1/0x1b844e7abb9779f551ddccb5f0f34a54ec1c7034/) | ✅ Audited |
+| SSVToken | unknown | ethereum | n/a | [`0x584d44d3e36f3690a4170dad0238df5441d41f1c`](./contracts/ethereum-1/0x584d44d3e36f3690a4170dad0238df5441d41f1c/) | ✅ Audited |
+| SSVValidators | unknown | ethereum | n/a | [`0x9122fded65ed6b562243efdc9e55ff0bef5e7499`](./contracts/ethereum-1/0x9122fded65ed6b562243efdc9e55ff0bef5e7499/) | ✅ Audited |
+| SSVViews | unknown | ethereum | n/a | [`0x055051fa508eeda80c38de34ca936aba59642c45`](./contracts/ethereum-1/0x055051fa508eeda80c38de34ca936aba59642c45/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (8)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CumulativeMerkleDrop | unknown | ethereum | n/a | [`0x13006e...7be7cf`](./contracts/ethereum-1/0x13006e447608bb62383d1d59bb11a93e957be7cf/) | ⚠️ Unaudited |
-| DepositContract | unknown | ethereum | n/a | [`0x000000...7705fa`](./contracts/ethereum-1/0x00000000219ab540356cbb839cbe05303d7705fa/) | ⚠️ Unaudited |
-| DEX | unknown | ethereum | n/a | [`0x77511a...5db8b1`](./contracts/ethereum-1/0x77511aa462c73c28016084477e5c7dfc315db8b1/) | ⚠️ Unaudited |
-| DEXV2 | unknown | ethereum | n/a | [`0x2bf73a...ba735e`](./contracts/ethereum-1/0x2bf73a478cc6a7ba4e6758a3a52abdc8cdba735e/) | ⚠️ Unaudited |
-| GnosisSafe | unknown | ethereum | n/a | [`0xb35096...b2e6b6`](./contracts/ethereum-1/0xb35096b074fdb9bbac63e3adae0bbde512b2e6b6/) | ⚠️ Unaudited |
-| MerkleDistributor | unknown | ethereum | n/a | [`0xe16e6b...5e95a6`](./contracts/ethereum-1/0xe16e6bddf4a1683c029ddc7aecb567a6095e95a6/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | ethereum | n/a | [`0xaf8a99...950bed`](./contracts/ethereum-1/0xaf8a99140871538ac7a6883890c83892af950bed/) | ⚠️ Unaudited |
-| TokenVestingController | unknown | ethereum | n/a | [`0x051cd7...93e4a5`](./contracts/ethereum-1/0x051cd7c00d37d54a9eaacbb0ef17ab790d93e4a5/) | ⚠️ Unaudited |
+| CumulativeMerkleDrop | unknown | ethereum | n/a | [`0x13006e447608bb62383d1d59bb11a93e957be7cf`](./contracts/ethereum-1/0x13006e447608bb62383d1d59bb11a93e957be7cf/) | ⚠️ Unaudited |
+| DepositContract | unknown | ethereum | n/a | [`0x00000000219ab540356cbb839cbe05303d7705fa`](./contracts/ethereum-1/0x00000000219ab540356cbb839cbe05303d7705fa/) | ⚠️ Unaudited |
+| DEX | unknown | ethereum | n/a | [`0x77511aa462c73c28016084477e5c7dfc315db8b1`](./contracts/ethereum-1/0x77511aa462c73c28016084477e5c7dfc315db8b1/) | ⚠️ Unaudited |
+| DEXV2 | unknown | ethereum | n/a | [`0x2bf73a478cc6a7ba4e6758a3a52abdc8cdba735e`](./contracts/ethereum-1/0x2bf73a478cc6a7ba4e6758a3a52abdc8cdba735e/) | ⚠️ Unaudited |
+| GnosisSafe | unknown | ethereum | n/a | [`0xb35096b074fdb9bbac63e3adae0bbde512b2e6b6`](./contracts/ethereum-1/0xb35096b074fdb9bbac63e3adae0bbde512b2e6b6/) | ⚠️ Unaudited |
+| MerkleDistributor | unknown | ethereum | n/a | [`0xe16e6bddf4a1683c029ddc7aecb567a6095e95a6`](./contracts/ethereum-1/0xe16e6bddf4a1683c029ddc7aecb567a6095e95a6/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | ethereum | n/a | [`0xaf8a99140871538ac7a6883890c83892af950bed`](./contracts/ethereum-1/0xaf8a99140871538ac7a6883890c83892af950bed/) | ⚠️ Unaudited |
+| TokenVestingController | unknown | ethereum | n/a | [`0x051cd7c00d37d54a9eaacbb0ef17ab790d93e4a5`](./contracts/ethereum-1/0x051cd7c00d37d54a9eaacbb0ef17ab790d93e4a5/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -129,12 +129,12 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x13006e...7be7cf`](./contracts/ethereum-1/0x13006e447608bb62383d1d59bb11a93e957be7cf/) | CumulativeMerkleDrop | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x000000...7705fa`](./contracts/ethereum-1/0x00000000219ab540356cbb839cbe05303d7705fa/) | DepositContract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x77511a...5db8b1`](./contracts/ethereum-1/0x77511aa462c73c28016084477e5c7dfc315db8b1/) | DEX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2bf73a...ba735e`](./contracts/ethereum-1/0x2bf73a478cc6a7ba4e6758a3a52abdc8cdba735e/) | DEXV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xe16e6b...5e95a6`](./contracts/ethereum-1/0xe16e6bddf4a1683c029ddc7aecb567a6095e95a6/) | MerkleDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x051cd7...93e4a5`](./contracts/ethereum-1/0x051cd7c00d37d54a9eaacbb0ef17ab790d93e4a5/) | TokenVestingController | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x13006e447608bb62383d1d59bb11a93e957be7cf`](./contracts/ethereum-1/0x13006e447608bb62383d1d59bb11a93e957be7cf/) | CumulativeMerkleDrop | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x00000000219ab540356cbb839cbe05303d7705fa`](./contracts/ethereum-1/0x00000000219ab540356cbb839cbe05303d7705fa/) | DepositContract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x77511aa462c73c28016084477e5c7dfc315db8b1`](./contracts/ethereum-1/0x77511aa462c73c28016084477e5c7dfc315db8b1/) | DEX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x2bf73a478cc6a7ba4e6758a3a52abdc8cdba735e`](./contracts/ethereum-1/0x2bf73a478cc6a7ba4e6758a3a52abdc8cdba735e/) | DEXV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe16e6bddf4a1683c029ddc7aecb567a6095e95a6`](./contracts/ethereum-1/0xe16e6bddf4a1683c029ddc7aecb567a6095e95a6/) | MerkleDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x051cd7c00d37d54a9eaacbb0ef17ab790d93e4a5`](./contracts/ethereum-1/0x051cd7c00d37d54a9eaacbb0ef17ab790d93e4a5/) | TokenVestingController | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

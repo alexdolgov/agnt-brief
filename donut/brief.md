@@ -60,7 +60,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Donut | unknown | base | n/a | [`0xae4a37...e0169c`](./contracts/base-8453/0xae4a37d554c6d6f3e398546d8566b25052e0169c/) | ⚠️ Unaudited |
+| Donut | unknown | base | n/a | [`0xae4a37d554c6d6f3e398546d8566b25052e0169c`](./contracts/base-8453/0xae4a37d554c6d6f3e398546d8566b25052e0169c/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -91,7 +91,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0xae4a37...e0169c`](./contracts/base-8453/0xae4a37d554c6d6f3e398546d8566b25052e0169c/) | Donut | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xae4a37d554c6d6f3e398546d8566b25052e0169c`](./contracts/base-8453/0xae4a37d554c6d6f3e398546d8566b25052e0169c/) | Donut | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

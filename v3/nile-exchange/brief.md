@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across linea. Structu
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- EmissionsToken (`0xaaaac8...f54dc8`, chain 59144)
+- EmissionsToken (`0xaaaac83751090c6ea42379626435f805ddf54dc8`, chain 59144)
 
 ## Contract Surface Quality
 
@@ -103,7 +103,7 @@ The pinned logic-topography run contains 1 contract row(s) across linea. Structu
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| EmissionsToken | unknown | project_anchor | own_supporting | 0 | linea | unit-266956 | `0xaaaac8...f54dc8` | ⚠️ Unaudited |
+| EmissionsToken | unknown | project_anchor | own_supporting | 0 | linea | unit-266956 | `0xaaaac83751090c6ea42379626435f805ddf54dc8` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -140,7 +140,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| linea | `0xaaaac8...f54dc8` | EmissionsToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | `0xaaaac83751090c6ea42379626435f805ddf54dc8` | EmissionsToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -77,65 +77,65 @@ The protocol comprises 2 functional families. Its contracts share 7 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AaveEcosystemReserveV2 | unknown | ethereum | n/a | [`0x25f222...286491`](./contracts/ethereum-1/0x25f2226b597e8f9514b3f68f00f494cf4f286491/) | ✅ Audited |
-| AaveGenesisExecutor | unknown | ethereum | n/a | [`0x797ae6...686b53`](./contracts/ethereum-1/0x797ae69562588dd893567ba22dfcf8e842686b53/) | ✅ Audited |
-| AaveMigrationCollector | unknown | avalanche | n/a | [`0x467b92...ba8a36`](./contracts/avalanche-43114/0x467b92af281d14cb6809913ad016a607b5ba8a36/) | ✅ Audited |
-| AaveOracle | unknown | polygon | n/a | [`0x0229f7...db6f2d`](./contracts/polygon-137/0x0229f777b0fab107f9591a41d5f02e4e98db6f2d/) | ✅ Audited |
-| AaveProtocolDataProvider | unknown | ethereum | n/a | [`0x057835...78fc6d`](./contracts/ethereum-1/0x057835ad21a177dbdd3090bb1cae03eacf78fc6d/) | ✅ Audited |
-| AaveToken | unknown | ethereum | n/a | [`0x9c0435...74c8ba`](./contracts/ethereum-1/0x9c0435779f5e52cec404d957c9baa6f7d674c8ba/) | ✅ Audited |
-| AaveTokenV3 | unknown | ethereum | n/a | [`0x7fc665...2ddae9`](./contracts/ethereum-1/0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9/) | ✅ Audited |
-| AToken | unknown | avalanche | n/a | [`0x0e6442...262112`](./contracts/avalanche-43114/0x0e6442d92365c65bfa24088bbe4fe83998262112/) | ✅ Audited |
-| ConfigurableRightsPool | unknown | ethereum | n/a | 2 deployments: ethereum [`0x41a086...f84f84`](./contracts/ethereum-1/0x41a08648c3766f9f9d85598ff102a08f4ef84f84/); ethereum `0xadc74a...a73782` | ✅ Audited |
-| DefaultReserveInterestRateStrategy | unknown | avalanche | n/a | [`0x161c64...112a99`](./contracts/avalanche-43114/0x161c6460dead6241041cd629cbacd4a699112a99/) | ✅ Audited |
-| DelegationAwareAToken | unknown | ethereum | n/a | [`0x93b8cd...0ff126`](./contracts/ethereum-1/0x93b8cdac045c47d3eb4ef1ab02e0fcee850ff126/) | ✅ Audited |
-| GenericLogic | unknown | ethereum | n/a | [`0xe648ab...3c0c20`](./contracts/ethereum-1/0xe648ab660954fa4637a50802a1703ead843c0c20/) | ✅ Audited |
-| GhoToken | unknown | ethereum | n/a | [`0x40d16f...ae6c2f`](./contracts/ethereum-1/0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f/) | ✅ Audited |
-| InitializableAdminUpgradeabilityProxy | unknown | ethereum | n/a | [`0x1012cf...c17e25`](./contracts/ethereum-1/0x1012cff81a1582ddd0616517efb97d02c5c17e25/) | ✅ Audited |
-| LendingPool | unknown | avalanche | n/a | [`0x01ae7d...91f342`](./contracts/avalanche-43114/0x01ae7dda024ea9712344d9332c94d3168a91f342/) | ✅ Audited |
-| LendingPoolAddressesProvider | unknown | avalanche | n/a | [`0x5b7d5f...88bbac`](./contracts/avalanche-43114/0x5b7d5f59e3defbe12a9f31a5ba6247d6b788bbac/) | ✅ Audited |
-| LendingPoolAddressesProviderRegistry | unknown | avalanche | n/a | [`0x06f311...b0feb0`](./contracts/avalanche-43114/0x06f311395ba08ffb9e5b31b666f318e417b0feb0/) | ✅ Audited |
-| LendingPoolCollateralManager | unknown | avalanche | n/a | [`0x105c55...42c4e3`](./contracts/avalanche-43114/0x105c557444ed2f5ed34ee9548a0529e8c142c4e3/) | ✅ Audited |
-| LendingPoolConfigurator | unknown | ethereum | n/a | [`0x3a95ee...4d7521`](./contracts/ethereum-1/0x3a95ee42f080ff7289c8b4a14eb483a8644d7521/) | ✅ Audited |
-| LendingRateOracle | unknown | polygon | n/a | [`0x17f73a...960dfb`](./contracts/polygon-137/0x17f73aead876cc4059089ff815eda37052960dfb/) | ✅ Audited |
-| LendToAaveMigrator | unknown | ethereum | n/a | [`0x317625...291de4`](./contracts/ethereum-1/0x317625234562b1526ea2fac4030ea499c5291de4/) | ✅ Audited |
-| ParaSwapLiquiditySwapAdapter | unknown | avalanche | n/a | [`0xf7fc20...dd327f`](./contracts/avalanche-43114/0xf7fc20d9d1d8dfe55f5f2c3180272a5747dd327f/) | ✅ Audited |
-| ReserveLogic | unknown | ethereum | n/a | [`0x2f892d...615b39`](./contracts/ethereum-1/0x2f892d0905dd20e79595fabdeae9c45234615b39/) | ✅ Audited |
-| StableDebtToken | unknown | avalanche | n/a | [`0x6ff122...d6dfc6`](./contracts/avalanche-43114/0x6ff122fc51825eebeb8640592a30e1818ed6dfc6/) | ✅ Audited |
-| StakedAaveV3 | unknown | ethereum | n/a | [`0x4da27a...e870f5`](./contracts/ethereum-1/0x4da27a545c0c5b758a6ba100e3a049001de870f5/) | ✅ Audited |
-| StakedTokenV2 | unknown | ethereum | n/a | 2 deployments: ethereum [`0x1438f4...f09e67`](./contracts/ethereum-1/0x1438f4f4e8ffd2d08f373af7fc84be0164f09e67/); ethereum `0x523ea3...7789c6` | ✅ Audited |
-| StakedTokenV3 | unknown | ethereum | n/a | [`0xa11169...95fb47`](./contracts/ethereum-1/0xa1116930326d21fb917d5a27f1e9943a9595fb47/) | ✅ Audited |
-| UiPoolDataProvider | unknown | avalanche | n/a | [`0x51c4ec...41d36d`](./contracts/avalanche-43114/0x51c4ec68ebdbe196394c4e10bc73fc132941d36d/) | ✅ Audited |
-| ValidationLogic | unknown | ethereum | n/a | [`0x1967a3...126110`](./contracts/ethereum-1/0x1967a31c31d4344f7a4f158bcf72838a25126110/) | ✅ Audited |
-| VariableDebtToken | unknown | ethereum | n/a | [`0x1104c2...221c63`](./contracts/ethereum-1/0x1104c2f267861aad82a3bad48ec4bf78ef221c63/) | ✅ Audited |
-| WalletBalanceProvider | unknown | polygon | n/a | [`0x34aa03...63d43e`](./contracts/polygon-137/0x34aa032bc416cf2cdc45c0c8f065b1f19463d43e/) | ✅ Audited |
-| WETHGateway | unknown | avalanche | n/a | [`0x8a47f7...1d27c8`](./contracts/avalanche-43114/0x8a47f74d1ee0e2edeb4f3a7e64ef3bd8e11d27c8/) | ✅ Audited |
+| AaveEcosystemReserveV2 | unknown | ethereum | n/a | [`0x25f2226b597e8f9514b3f68f00f494cf4f286491`](./contracts/ethereum-1/0x25f2226b597e8f9514b3f68f00f494cf4f286491/) | ✅ Audited |
+| AaveGenesisExecutor | unknown | ethereum | n/a | [`0x797ae69562588dd893567ba22dfcf8e842686b53`](./contracts/ethereum-1/0x797ae69562588dd893567ba22dfcf8e842686b53/) | ✅ Audited |
+| AaveMigrationCollector | unknown | avalanche | n/a | [`0x467b92af281d14cb6809913ad016a607b5ba8a36`](./contracts/avalanche-43114/0x467b92af281d14cb6809913ad016a607b5ba8a36/) | ✅ Audited |
+| AaveOracle | unknown | polygon | n/a | [`0x0229f777b0fab107f9591a41d5f02e4e98db6f2d`](./contracts/polygon-137/0x0229f777b0fab107f9591a41d5f02e4e98db6f2d/) | ✅ Audited |
+| AaveProtocolDataProvider | unknown | ethereum | n/a | [`0x057835ad21a177dbdd3090bb1cae03eacf78fc6d`](./contracts/ethereum-1/0x057835ad21a177dbdd3090bb1cae03eacf78fc6d/) | ✅ Audited |
+| AaveToken | unknown | ethereum | n/a | [`0x9c0435779f5e52cec404d957c9baa6f7d674c8ba`](./contracts/ethereum-1/0x9c0435779f5e52cec404d957c9baa6f7d674c8ba/) | ✅ Audited |
+| AaveTokenV3 | unknown | ethereum | n/a | [`0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9`](./contracts/ethereum-1/0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9/) | ✅ Audited |
+| AToken | unknown | avalanche | n/a | [`0x0e6442d92365c65bfa24088bbe4fe83998262112`](./contracts/avalanche-43114/0x0e6442d92365c65bfa24088bbe4fe83998262112/) | ✅ Audited |
+| ConfigurableRightsPool | unknown | ethereum | n/a | 2 deployments: ethereum [`0x41a08648c3766f9f9d85598ff102a08f4ef84f84`](./contracts/ethereum-1/0x41a08648c3766f9f9d85598ff102a08f4ef84f84/); ethereum `0xadc74a134082ea85105258407159fbb428a73782` | ✅ Audited |
+| DefaultReserveInterestRateStrategy | unknown | avalanche | n/a | [`0x161c6460dead6241041cd629cbacd4a699112a99`](./contracts/avalanche-43114/0x161c6460dead6241041cd629cbacd4a699112a99/) | ✅ Audited |
+| DelegationAwareAToken | unknown | ethereum | n/a | [`0x93b8cdac045c47d3eb4ef1ab02e0fcee850ff126`](./contracts/ethereum-1/0x93b8cdac045c47d3eb4ef1ab02e0fcee850ff126/) | ✅ Audited |
+| GenericLogic | unknown | ethereum | n/a | [`0xe648ab660954fa4637a50802a1703ead843c0c20`](./contracts/ethereum-1/0xe648ab660954fa4637a50802a1703ead843c0c20/) | ✅ Audited |
+| GhoToken | unknown | ethereum | n/a | [`0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f`](./contracts/ethereum-1/0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f/) | ✅ Audited |
+| InitializableAdminUpgradeabilityProxy | unknown | ethereum | n/a | [`0x1012cff81a1582ddd0616517efb97d02c5c17e25`](./contracts/ethereum-1/0x1012cff81a1582ddd0616517efb97d02c5c17e25/) | ✅ Audited |
+| LendingPool | unknown | avalanche | n/a | [`0x01ae7dda024ea9712344d9332c94d3168a91f342`](./contracts/avalanche-43114/0x01ae7dda024ea9712344d9332c94d3168a91f342/) | ✅ Audited |
+| LendingPoolAddressesProvider | unknown | avalanche | n/a | [`0x5b7d5f59e3defbe12a9f31a5ba6247d6b788bbac`](./contracts/avalanche-43114/0x5b7d5f59e3defbe12a9f31a5ba6247d6b788bbac/) | ✅ Audited |
+| LendingPoolAddressesProviderRegistry | unknown | avalanche | n/a | [`0x06f311395ba08ffb9e5b31b666f318e417b0feb0`](./contracts/avalanche-43114/0x06f311395ba08ffb9e5b31b666f318e417b0feb0/) | ✅ Audited |
+| LendingPoolCollateralManager | unknown | avalanche | n/a | [`0x105c557444ed2f5ed34ee9548a0529e8c142c4e3`](./contracts/avalanche-43114/0x105c557444ed2f5ed34ee9548a0529e8c142c4e3/) | ✅ Audited |
+| LendingPoolConfigurator | unknown | ethereum | n/a | [`0x3a95ee42f080ff7289c8b4a14eb483a8644d7521`](./contracts/ethereum-1/0x3a95ee42f080ff7289c8b4a14eb483a8644d7521/) | ✅ Audited |
+| LendingRateOracle | unknown | polygon | n/a | [`0x17f73aead876cc4059089ff815eda37052960dfb`](./contracts/polygon-137/0x17f73aead876cc4059089ff815eda37052960dfb/) | ✅ Audited |
+| LendToAaveMigrator | unknown | ethereum | n/a | [`0x317625234562b1526ea2fac4030ea499c5291de4`](./contracts/ethereum-1/0x317625234562b1526ea2fac4030ea499c5291de4/) | ✅ Audited |
+| ParaSwapLiquiditySwapAdapter | unknown | avalanche | n/a | [`0xf7fc20d9d1d8dfe55f5f2c3180272a5747dd327f`](./contracts/avalanche-43114/0xf7fc20d9d1d8dfe55f5f2c3180272a5747dd327f/) | ✅ Audited |
+| ReserveLogic | unknown | ethereum | n/a | [`0x2f892d0905dd20e79595fabdeae9c45234615b39`](./contracts/ethereum-1/0x2f892d0905dd20e79595fabdeae9c45234615b39/) | ✅ Audited |
+| StableDebtToken | unknown | avalanche | n/a | [`0x6ff122fc51825eebeb8640592a30e1818ed6dfc6`](./contracts/avalanche-43114/0x6ff122fc51825eebeb8640592a30e1818ed6dfc6/) | ✅ Audited |
+| StakedAaveV3 | unknown | ethereum | n/a | [`0x4da27a545c0c5b758a6ba100e3a049001de870f5`](./contracts/ethereum-1/0x4da27a545c0c5b758a6ba100e3a049001de870f5/) | ✅ Audited |
+| StakedTokenV2 | unknown | ethereum | n/a | 2 deployments: ethereum [`0x1438f4f4e8ffd2d08f373af7fc84be0164f09e67`](./contracts/ethereum-1/0x1438f4f4e8ffd2d08f373af7fc84be0164f09e67/); ethereum `0x523ea3adcf6ca0917bdeee39d95b82e6eb7789c6` | ✅ Audited |
+| StakedTokenV3 | unknown | ethereum | n/a | [`0xa1116930326d21fb917d5a27f1e9943a9595fb47`](./contracts/ethereum-1/0xa1116930326d21fb917d5a27f1e9943a9595fb47/) | ✅ Audited |
+| UiPoolDataProvider | unknown | avalanche | n/a | [`0x51c4ec68ebdbe196394c4e10bc73fc132941d36d`](./contracts/avalanche-43114/0x51c4ec68ebdbe196394c4e10bc73fc132941d36d/) | ✅ Audited |
+| ValidationLogic | unknown | ethereum | n/a | [`0x1967a31c31d4344f7a4f158bcf72838a25126110`](./contracts/ethereum-1/0x1967a31c31d4344f7a4f158bcf72838a25126110/) | ✅ Audited |
+| VariableDebtToken | unknown | ethereum | n/a | [`0x1104c2f267861aad82a3bad48ec4bf78ef221c63`](./contracts/ethereum-1/0x1104c2f267861aad82a3bad48ec4bf78ef221c63/) | ✅ Audited |
+| WalletBalanceProvider | unknown | polygon | n/a | [`0x34aa032bc416cf2cdc45c0c8f065b1f19463d43e`](./contracts/polygon-137/0x34aa032bc416cf2cdc45c0c8f065b1f19463d43e/) | ✅ Audited |
+| WETHGateway | unknown | avalanche | n/a | [`0x8a47f74d1ee0e2edeb4f3a7e64ef3bd8e11d27c8`](./contracts/avalanche-43114/0x8a47f74d1ee0e2edeb4f3a7e64ef3bd8e11d27c8/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (22)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AaveCollector | unknown | avalanche | n/a | [`0xfc9f44...0a091c`](./contracts/avalanche-43114/0xfc9f4403d28d338f3a2814df9febf7e7f20a091c/) | ⚠️ Unaudited |
-| AaveGenesisProposalPayload | unknown | ethereum | n/a | [`0x36ec8f...a62e94`](./contracts/ethereum-1/0x36ec8f61d077909b2166f78c488f2525bca62e94/) | ⚠️ Unaudited |
-| AaveIncentivesVault | unknown | ethereum | n/a | [`0x238fcb...d6f76d`](./contracts/ethereum-1/0x238fcb066a2e4662078836237a62b59664d6f76d/) | ⚠️ Unaudited |
-| AavePropositionPower | unknown | ethereum | n/a | [`0x72bbcf...746631`](./contracts/ethereum-1/0x72bbcfc20d355fc3e8ac4ce8fcaf63874f746631/) | ⚠️ Unaudited |
-| AaveProtoGovernance | unknown | ethereum | n/a | [`0xda8ad4...168a9d`](./contracts/ethereum-1/0xda8ad436e1dfe962091d86a341e957c6a5168a9d/) | ⚠️ Unaudited |
-| AaveVoteStrategyToken | unknown | ethereum | n/a | [`0xa5e83c...e3a391`](./contracts/ethereum-1/0xa5e83c1a6e56f27f7764e5c5d99a9b8786e3a391/) | ⚠️ Unaudited |
-| AIP9 | unknown | ethereum | n/a | [`0xd08e12...50709b`](./contracts/ethereum-1/0xd08e12367a7d68caa8ff080d3a56b2dc6650709b/) | ⚠️ Unaudited |
-| AssetListingProposalGenericExecutor | unknown | ethereum | n/a | [`0x62121b...549d97`](./contracts/ethereum-1/0x62121b60a826b496f05bdd45dfe40c51fb549d97/) | ⚠️ Unaudited |
-| AssetVotingWeightProvider | unknown | ethereum | n/a | [`0x5ac493...5574aa`](./contracts/ethereum-1/0x5ac493b8c2cef1f02f117b9ba2797e7da95574aa/) | ⚠️ Unaudited |
-| ATokensAndRatesHelper | unknown | avalanche | n/a | [`0x286393...4c42fa`](./contracts/avalanche-43114/0x286393ea182c9a20a8fedbe6f18533cbf14c42fa/) | ⚠️ Unaudited |
-| ChainlinkSourcesRegistry | unknown | avalanche | n/a | [`0x195bd5...f68669`](./contracts/avalanche-43114/0x195bd5faf93e0a04a8c00c680911d6e249f68669/) | ⚠️ Unaudited |
-| CRPFactory | unknown | ethereum | n/a | [`0x1156c3...52f10c`](./contracts/ethereum-1/0x1156c30b08dbf16281c803eae0d52eee7652f10c/) | ⚠️ Unaudited |
-| GovernanceParamsProvider | unknown | ethereum | n/a | [`0xf3b2c2...443a06`](./contracts/ethereum-1/0xf3b2c28c7245c49ea5e6c6db98026f180b443a06/) | ⚠️ Unaudited |
-| HubInstance | unknown | ethereum | n/a | [`0x06002e...1e536a`](./contracts/ethereum-1/0x06002e9c4412cb7814a791ea3666d905871e536a/) | ⚠️ Unaudited |
-| LendingPoolCore | unknown | ethereum | n/a | [`0x3dfd23...a076d3`](./contracts/ethereum-1/0x3dfd23a6c5e8bbcfc9581d2e864a68feb6a076d3/) | ⚠️ Unaudited |
-| LendVoteStrategyToken | unknown | ethereum | n/a | [`0x0671ca...b3ffdf`](./contracts/ethereum-1/0x0671ca7e039af2cf2d2c5e7f1aa261ae78b3ffdf/) | ⚠️ Unaudited |
-| OracleAnchor | unknown | ethereum | n/a | [`0x594543...d28261`](./contracts/ethereum-1/0x59454304baefa37f299ffe6237e5467223d28261/) | ⚠️ Unaudited |
-| PendlePrincipalToken | unknown | ethereum | n/a | [`0x3de0ff...f80f49`](./contracts/ethereum-1/0x3de0ff76e8b528c092d47b9dac775931cef80f49/) | ⚠️ Unaudited |
-| StableAndVariableTokensHelper | unknown | avalanche | n/a | [`0x06c9d0...6478b2`](./contracts/avalanche-43114/0x06c9d00cd51656791e2c2b435bee9dc1576478b2/) | ⚠️ Unaudited |
-| StakedAave | unknown | ethereum | n/a | [`0x481484...0d03a1`](./contracts/ethereum-1/0x481484ee9be4819842268487aeeb1f43810d03a1/) | ⚠️ Unaudited |
-| StakeUIHelper | unknown | ethereum | n/a | [`0x06abcc...76ae68`](./contracts/ethereum-1/0x06abcc3b98b7310f50197f0f9cec6cf6e176ae68/) | ⚠️ Unaudited |
-| UiPoolDataProviderV2V3 | unknown | avalanche | n/a | [`0xa7da24...3c9182`](./contracts/avalanche-43114/0xa7da242e099136a71ff975b8d78b79aa543c9182/) | ⚠️ Unaudited |
+| AaveCollector | unknown | avalanche | n/a | [`0xfc9f4403d28d338f3a2814df9febf7e7f20a091c`](./contracts/avalanche-43114/0xfc9f4403d28d338f3a2814df9febf7e7f20a091c/) | ⚠️ Unaudited |
+| AaveGenesisProposalPayload | unknown | ethereum | n/a | [`0x36ec8f61d077909b2166f78c488f2525bca62e94`](./contracts/ethereum-1/0x36ec8f61d077909b2166f78c488f2525bca62e94/) | ⚠️ Unaudited |
+| AaveIncentivesVault | unknown | ethereum | n/a | [`0x238fcb066a2e4662078836237a62b59664d6f76d`](./contracts/ethereum-1/0x238fcb066a2e4662078836237a62b59664d6f76d/) | ⚠️ Unaudited |
+| AavePropositionPower | unknown | ethereum | n/a | [`0x72bbcfc20d355fc3e8ac4ce8fcaf63874f746631`](./contracts/ethereum-1/0x72bbcfc20d355fc3e8ac4ce8fcaf63874f746631/) | ⚠️ Unaudited |
+| AaveProtoGovernance | unknown | ethereum | n/a | [`0xda8ad436e1dfe962091d86a341e957c6a5168a9d`](./contracts/ethereum-1/0xda8ad436e1dfe962091d86a341e957c6a5168a9d/) | ⚠️ Unaudited |
+| AaveVoteStrategyToken | unknown | ethereum | n/a | [`0xa5e83c1a6e56f27f7764e5c5d99a9b8786e3a391`](./contracts/ethereum-1/0xa5e83c1a6e56f27f7764e5c5d99a9b8786e3a391/) | ⚠️ Unaudited |
+| AIP9 | unknown | ethereum | n/a | [`0xd08e12367a7d68caa8ff080d3a56b2dc6650709b`](./contracts/ethereum-1/0xd08e12367a7d68caa8ff080d3a56b2dc6650709b/) | ⚠️ Unaudited |
+| AssetListingProposalGenericExecutor | unknown | ethereum | n/a | [`0x62121b60a826b496f05bdd45dfe40c51fb549d97`](./contracts/ethereum-1/0x62121b60a826b496f05bdd45dfe40c51fb549d97/) | ⚠️ Unaudited |
+| AssetVotingWeightProvider | unknown | ethereum | n/a | [`0x5ac493b8c2cef1f02f117b9ba2797e7da95574aa`](./contracts/ethereum-1/0x5ac493b8c2cef1f02f117b9ba2797e7da95574aa/) | ⚠️ Unaudited |
+| ATokensAndRatesHelper | unknown | avalanche | n/a | [`0x286393ea182c9a20a8fedbe6f18533cbf14c42fa`](./contracts/avalanche-43114/0x286393ea182c9a20a8fedbe6f18533cbf14c42fa/) | ⚠️ Unaudited |
+| ChainlinkSourcesRegistry | unknown | avalanche | n/a | [`0x195bd5faf93e0a04a8c00c680911d6e249f68669`](./contracts/avalanche-43114/0x195bd5faf93e0a04a8c00c680911d6e249f68669/) | ⚠️ Unaudited |
+| CRPFactory | unknown | ethereum | n/a | [`0x1156c30b08dbf16281c803eae0d52eee7652f10c`](./contracts/ethereum-1/0x1156c30b08dbf16281c803eae0d52eee7652f10c/) | ⚠️ Unaudited |
+| GovernanceParamsProvider | unknown | ethereum | n/a | [`0xf3b2c28c7245c49ea5e6c6db98026f180b443a06`](./contracts/ethereum-1/0xf3b2c28c7245c49ea5e6c6db98026f180b443a06/) | ⚠️ Unaudited |
+| HubInstance | unknown | ethereum | n/a | [`0x06002e9c4412cb7814a791ea3666d905871e536a`](./contracts/ethereum-1/0x06002e9c4412cb7814a791ea3666d905871e536a/) | ⚠️ Unaudited |
+| LendingPoolCore | unknown | ethereum | n/a | [`0x3dfd23a6c5e8bbcfc9581d2e864a68feb6a076d3`](./contracts/ethereum-1/0x3dfd23a6c5e8bbcfc9581d2e864a68feb6a076d3/) | ⚠️ Unaudited |
+| LendVoteStrategyToken | unknown | ethereum | n/a | [`0x0671ca7e039af2cf2d2c5e7f1aa261ae78b3ffdf`](./contracts/ethereum-1/0x0671ca7e039af2cf2d2c5e7f1aa261ae78b3ffdf/) | ⚠️ Unaudited |
+| OracleAnchor | unknown | ethereum | n/a | [`0x59454304baefa37f299ffe6237e5467223d28261`](./contracts/ethereum-1/0x59454304baefa37f299ffe6237e5467223d28261/) | ⚠️ Unaudited |
+| PendlePrincipalToken | unknown | ethereum | n/a | [`0x3de0ff76e8b528c092d47b9dac775931cef80f49`](./contracts/ethereum-1/0x3de0ff76e8b528c092d47b9dac775931cef80f49/) | ⚠️ Unaudited |
+| StableAndVariableTokensHelper | unknown | avalanche | n/a | [`0x06c9d00cd51656791e2c2b435bee9dc1576478b2`](./contracts/avalanche-43114/0x06c9d00cd51656791e2c2b435bee9dc1576478b2/) | ⚠️ Unaudited |
+| StakedAave | unknown | ethereum | n/a | [`0x481484ee9be4819842268487aeeb1f43810d03a1`](./contracts/ethereum-1/0x481484ee9be4819842268487aeeb1f43810d03a1/) | ⚠️ Unaudited |
+| StakeUIHelper | unknown | ethereum | n/a | [`0x06abcc3b98b7310f50197f0f9cec6cf6e176ae68`](./contracts/ethereum-1/0x06abcc3b98b7310f50197f0f9cec6cf6e176ae68/) | ⚠️ Unaudited |
+| UiPoolDataProviderV2V3 | unknown | avalanche | n/a | [`0xa7da242e099136a71ff975b8d78b79aa543c9182`](./contracts/avalanche-43114/0xa7da242e099136a71ff975b8d78b79aa543c9182/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -155,118 +155,118 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x0b7551...54fef7` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x1050e9...cc08e9` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x123fba...206fdf` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x24abfa...61f4ee` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x52d306...bcd413` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x7adedf...462f29` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x8e8dad...cff922` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x97f450...c296cb` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x987115...3a3186` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xb53c1a...15c8c5` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xbb94a5...b61d6b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xbd4765...d5ec7c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc6845a...425baf` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xdaa50a...aec09d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xdcd334...c73488` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xdce33d...3251f5` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xdd6f15...5baf0c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xe03520...683fa5` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xe47590...5a8ffe` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xe58575...ccc6ec` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xe775a3...f24473` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xeae736...4ab790` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xf20870...04aa7c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xf5543c...9cbbd5` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xf952a8...f643d8` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x1d22ae...345f24` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x3ac4e9...da9c19` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x3cb4ca...43c54d` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x553b64...ad12f9` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x6a8730...726ac7` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x6aced1...c32a4d` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x716fa3...460e04` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x72a053...b5735e` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x7551b5...71d46d` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x77b6b5...48a428` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x8c330d...8a86c3` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x993903...3fb47e` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xa39599...dc555b` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xae9b3e...9290b4` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xbe889f...6fe355` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xbeadf4...a7dc97` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xcc7df1...56a9b5` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xcdac94...e88f44` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xd05e3e...684744` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xd10e8a...d23505` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xe7a516...6b9f33` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xf70a4d...ad9492` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x0a2380...6a77d1` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x119798...d647bf` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x16dea0...e505c9` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x1f127e...538e10` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x25a33e...10bdc2` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x2db63c...22a7aa` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x2de4f0...1ff468` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x35639e...658e3e` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x35fc00...2c393b` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x4235e2...1265c2` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x4ac959...ac8842` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x4ce202...be5914` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x565621...5dbd30` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x5c1c25...93f5eb` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x5cba34...38ceeb` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x6118d4...53e1d6` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x62894d...7381d4` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x64140f...7c5775` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x65285e...945451` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x671791...e6c7b3` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x6724e9...9c2647` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x67f92f...60ff9d` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x6a2120...571b68` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x72a7d2...cb252f` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x73e489...e01fc6` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x7d9d97...7cb901` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x8874c9...097170` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x88926b...44c468` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x88be7e...788cef` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x896768...82aa4c` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x8a0277...103123` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x8a7430...32c625` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x9924d6...97d9fb` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x9d528a...1b094b` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x9dacde...4e431d` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x9e544d...c1a8fc` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xa9c1bb...768771` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xaec3eb...2804e8` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xb0bdcc...d80f63` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xb407e1...3bbed3` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xb5752d...d2fb33` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xb6a860...2a318f` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xbf2305...e114f5` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xc34254...9c7c80` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xc70f5f...e678e6` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xc7938a...6b8fcf` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xc9a7cd...803fd0` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xd196da...5c24e0` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xd2fcb9...f3471e` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xd5050b...9855cb` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xd85218...1aeb41` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xd96b68...569d30` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xd9f1e5...3a0186` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xdc336c...0ceb89` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xe42d0d...240124` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xeddb6c...c176a2` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xefa021...ff59c3` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xefa02e...596d14` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xf2a5ba...1dbf01` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xf33a9e...694bd2` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xf51f46...7d12c5` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xf9cf52...acff97` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xfadd20...58019e` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xfaf795...e810a1` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xfdd7bc...83ddd7` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x0b7551718f8c0588be67e7417439fa6f8954fef7` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x1050e96df2c5f8c3e77e9fafc0cf9c6785cc08e9` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x123fba7a76b29547df94dc59933332b751206fdf` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x24abfac8dd8f270d752837fdfe3b3c735361f4ee` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x52d306e36e3b6b02c153d0266ff0f85d18bcd413` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x7adedfc785afe04dbb72a10f6e497993bf462f29` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x8e8dad5409e0263a51c0ab5055da66be28cff922` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x97f450725216ec055dd5dd77e6f73f0d8bc296cb` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x987115c38fd9fd2aa2c6f1718451d167c13a3186` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb53c1a33016b2dc2ff3653530bff1848a515c8c5` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xbb94a575935772d7d8ba78cd33caa64d4fb61d6b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xbd4765210d4167ce2a5b87280d9e8ee316d5ec7c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc6845a5c768bf8d7681249f8927877efda425baf` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xdaa50a0e3bacfc0036f40eb21ee3d96afaaec09d` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xdcd33426ba191383f1c9b431a342498fdac73488` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xdce33de861d200d8da88c751dc00c18eda3251f5` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xdd6f15b39ca5147ae9b5e6046645d55b0e5baf0c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe03520ac9457e852b6af0cc143ea13527f683fa5` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe4759007a1e6014dd92ebb33a293e0dfe85a8ffe` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe58575ba47a348e3c2f9b7ec3eccfbb189ccc6ec` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe775a3a0a1cdc50bd48d5f47c442a0a4f5f24473` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xeae736e5d6560169f9285c62492f8a89fb4ab790` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf2087047d61563078e8f253c3289a7012904aa7c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf5543cdd5f551635e13ebe07e47d01d0fc9cbbd5` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf952a84e6dcf9d036da45b548c318c7a15f643d8` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x1d22ae684f479d3da97ca19ffb03e6349d345f24` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x3ac4e9aa29940770aec38fe853a4bbabb2da9c19` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x3cb4ca3c9dc0e02d252098eebb3871ac7a43c54d` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x553b64567de5392f6b189f6ac89581342dad12f9` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x6a8730f54b8c69ab096c43ff217ca0a350726ac7` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x6aced14510ecd3bb36d13fa93d445e0d53c32a4d` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x716fa3aed25c4ee790c67b8626c2a6ae50460e04` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x72a053fa208eaafa53adb1a1ea6b4b2175b5735e` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x7551b5d2763519d4e37e8b81929d336de671d46d` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x77b6b5fd560e64a5b5300651d833f35c6948a428` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x8c330d79a42fe56653e8a83a4eb1fee4a78a86c3` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x993903ec2287a90004fd805d12141462923fb47e` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xa39599424642d9fd35e475ef802eddf798dc555b` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xae9b3eb616ed753dce96c75b6ae30a60ff9290b4` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xbe889f70c89f36eb34680b26162fd84ffd6fe355` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xbeadf48d62acc944a06eeae0a9054a90e5a7dc97` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xcc7df14a5de0145ce3438cbf29df1ca84e56a9b5` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xcdac94de1cf4e8e25b6c61df6481c344c5e88f44` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xd05e3e715d945b59290df0ae8ef85c1bdb684744` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xd10e8a63ec6cfc6fe74b369d29d2765944d23505` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xe7a516f340a3f794a3b2fd0f74a7242b326b9f33` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xf70a4d422e772926852ba9044026f169e6ad9492` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x0a2380bf96104315ff624148af68af03706a77d1` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x11979886a6dbae27d7a72c49fcf3f23240d647bf` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x16dea0fcbca21e848714b2e96f26ddf6bce505c9` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x1f127e40c05f0f2f03187f539342f7e057538e10` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x25a33e7e4391e203d391b8a237ded53fb310bdc2` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x2db63ca358ab41264a5359bf77175d488a22a7aa` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x2de4f0192f9a9be442cea81ce24dd9a6981ff468` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x35639e90cdd8835d065750b36cf4a26418658e3e` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x35fc00154e75d1329201e17c054b57e9422c393b` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x4235e22d9c3f28dcda82b58276cb6370b01265c2` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x4ac9592678b80689b465ef326cc8128479ac8842` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x4ce2024e585c60562b0abd7a943c0bb243be5914` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x5656214a3e62ed2ab854de63bb2d8820a35dbd30` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x5c1c25f5c0a22791ccac4b3d317bc8163493f5eb` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x5cba3400079b9799bb59a111dcb51fa7a738ceeb` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x6118d4af4a20da24dae885f858d34531dc53e1d6` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x62894d402858380c1117db94a19365b8717381d4` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x64140fe5726d90aa4f2bd2462522b21e3a7c5775` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x65285e9dfab318f57051ab2b139cccf232945451` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x6717916e5b5582585ad6c2ffd228abdab1e6c7b3` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x6724e923e4bb58fcdf7cee7a5e7bbb47b99c2647` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x67f92f2a32f54c0248d511f5af8a4d3c8d60ff9d` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x6a2120f2b54cf0af35ee72abfcfd157180571b68` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x72a7d2da31ece540daef31fd8b4b8b0ccacb252f` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x73e4898a1bfa9f710b6a6ab516403a6299e01fc6` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x7d9d970cae574912221d25107a6728f0d17cb901` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x8874c9d211ca25f0488068e365398ee8da097170` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x88926b9ffc40f5b77b16ec7090d04a560b44c468` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x88be7ec36719fadabde4307ec61eab6fda788cef` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x896768e4e8c08c6f7b54f25aa9ba5cb30282aa4c` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x8a0277f75b79f4884cc4397c0b0029906b103123` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x8a743090e9759e758d15a4cfd18408fb6332c625` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x9924d69d84f35e1ec39199472a633ae49997d9fb` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x9d528a9f65c22c1779a4025f6efd130edf1b094b` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x9dacde1034474904c2463eda506397e8f34e431d` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x9e544dc760a5064181fd3001626bda84f4c1a8fc` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xa9c1bb836752a2dfb3694ca084d8ffbb07768771` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xaec3eb64d9e074c8138f46a43393af1d6e2804e8` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xb0bdccde9d9126f377d0ad67c9d60914a9d80f63` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xb407e1dd1e4d5d7968af10db44a2746a9a3bbed3` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xb5752d43d96c7f9663ec1e077edd1cc791d2fb33` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xb6a86025f0fe1862b372cb0ca18ce3ede02a318f` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xbf230598b44ebb4aa55a2d49d9c38e8269e114f5` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xc34254642b504484465f38cb1cc396d45a9c7c80` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xc70f5fe7d445ad57983064057f8eebf03ce678e6` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xc7938af7ec68c3d5ac3a396e28661b3e366b8fcf` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xc9a7cd1d30878a32633c4cf2da9fdd67f8803fd0` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xd196da3312385a9a021a0281c1ceab35c65c24e0` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xd2fcb92506ce32be6340720c514f82593ff3471e` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xd5050be4cb94f830799fc852cd44d1b9439855cb` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xd85218339abc56d4e16464e2f34a2589561aeb41` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xd96b68638bdbb625a49f5bac0dc3b66764569d30` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xd9f1e5f70b14b8fd577df84be7d75afb8a3a0186` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xdc336cd4769f4cc7e9d726da53e6d3fc710ceb89` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xe42d0dc2cd1d96b88321371bb31bfb0085240124` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xeddb6c52f9d3033dafb718ecbf6e507abbc176a2` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xefa0217761c28092b1ae20d180a5dee6b0ff59c3` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xefa02eab4670e2c6905ae8aa8b72accad5596d14` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xf2a5ba923acbf7d088885346cd761cbbe41dbf01` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xf33a9ee47e516befa637d2acad314eb1cd694bd2` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xf51f46efe8efa7bb6aa8cdfb1d2efb8eb27d12c5` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xf9cf527417b2ece903667303b7bd0f68b0acff97` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xfadd20d7fa82ddbf85097e53dfffb2f19e58019e` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xfaf795a22a2970e755f6f9df63b5a20439e810a1` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xfdd7bccca4785517eac49fd0dc73bfd5ec83ddd7` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -411,26 +411,26 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| avalanche | [`0xfc9f44...0a091c`](./contracts/avalanche-43114/0xfc9f4403d28d338f3a2814df9febf7e7f20a091c/) | AaveCollector | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x36ec8f...a62e94`](./contracts/ethereum-1/0x36ec8f61d077909b2166f78c488f2525bca62e94/) | AaveGenesisProposalPayload | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x238fcb...d6f76d`](./contracts/ethereum-1/0x238fcb066a2e4662078836237a62b59664d6f76d/) | AaveIncentivesVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x72bbcf...746631`](./contracts/ethereum-1/0x72bbcfc20d355fc3e8ac4ce8fcaf63874f746631/) | AavePropositionPower | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xda8ad4...168a9d`](./contracts/ethereum-1/0xda8ad436e1dfe962091d86a341e957c6a5168a9d/) | AaveProtoGovernance | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa5e83c...e3a391`](./contracts/ethereum-1/0xa5e83c1a6e56f27f7764e5c5d99a9b8786e3a391/) | AaveVoteStrategyToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xd08e12...50709b`](./contracts/ethereum-1/0xd08e12367a7d68caa8ff080d3a56b2dc6650709b/) | AIP9 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x62121b...549d97`](./contracts/ethereum-1/0x62121b60a826b496f05bdd45dfe40c51fb549d97/) | AssetListingProposalGenericExecutor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x5ac493...5574aa`](./contracts/ethereum-1/0x5ac493b8c2cef1f02f117b9ba2797e7da95574aa/) | AssetVotingWeightProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x286393...4c42fa`](./contracts/avalanche-43114/0x286393ea182c9a20a8fedbe6f18533cbf14c42fa/) | ATokensAndRatesHelper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1156c3...52f10c`](./contracts/ethereum-1/0x1156c30b08dbf16281c803eae0d52eee7652f10c/) | CRPFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xf3b2c2...443a06`](./contracts/ethereum-1/0xf3b2c28c7245c49ea5e6c6db98026f180b443a06/) | GovernanceParamsProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x06002e...1e536a`](./contracts/ethereum-1/0x06002e9c4412cb7814a791ea3666d905871e536a/) | HubInstance | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x3dfd23...a076d3`](./contracts/ethereum-1/0x3dfd23a6c5e8bbcfc9581d2e864a68feb6a076d3/) | LendingPoolCore | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0671ca...b3ffdf`](./contracts/ethereum-1/0x0671ca7e039af2cf2d2c5e7f1aa261ae78b3ffdf/) | LendVoteStrategyToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x594543...d28261`](./contracts/ethereum-1/0x59454304baefa37f299ffe6237e5467223d28261/) | OracleAnchor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x06c9d0...6478b2`](./contracts/avalanche-43114/0x06c9d00cd51656791e2c2b435bee9dc1576478b2/) | StableAndVariableTokensHelper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x481484...0d03a1`](./contracts/ethereum-1/0x481484ee9be4819842268487aeeb1f43810d03a1/) | StakedAave | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x06abcc...76ae68`](./contracts/ethereum-1/0x06abcc3b98b7310f50197f0f9cec6cf6e176ae68/) | StakeUIHelper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0xa7da24...3c9182`](./contracts/avalanche-43114/0xa7da242e099136a71ff975b8d78b79aa543c9182/) | UiPoolDataProviderV2V3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0xfc9f4403d28d338f3a2814df9febf7e7f20a091c`](./contracts/avalanche-43114/0xfc9f4403d28d338f3a2814df9febf7e7f20a091c/) | AaveCollector | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x36ec8f61d077909b2166f78c488f2525bca62e94`](./contracts/ethereum-1/0x36ec8f61d077909b2166f78c488f2525bca62e94/) | AaveGenesisProposalPayload | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x238fcb066a2e4662078836237a62b59664d6f76d`](./contracts/ethereum-1/0x238fcb066a2e4662078836237a62b59664d6f76d/) | AaveIncentivesVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x72bbcfc20d355fc3e8ac4ce8fcaf63874f746631`](./contracts/ethereum-1/0x72bbcfc20d355fc3e8ac4ce8fcaf63874f746631/) | AavePropositionPower | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xda8ad436e1dfe962091d86a341e957c6a5168a9d`](./contracts/ethereum-1/0xda8ad436e1dfe962091d86a341e957c6a5168a9d/) | AaveProtoGovernance | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa5e83c1a6e56f27f7764e5c5d99a9b8786e3a391`](./contracts/ethereum-1/0xa5e83c1a6e56f27f7764e5c5d99a9b8786e3a391/) | AaveVoteStrategyToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xd08e12367a7d68caa8ff080d3a56b2dc6650709b`](./contracts/ethereum-1/0xd08e12367a7d68caa8ff080d3a56b2dc6650709b/) | AIP9 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x62121b60a826b496f05bdd45dfe40c51fb549d97`](./contracts/ethereum-1/0x62121b60a826b496f05bdd45dfe40c51fb549d97/) | AssetListingProposalGenericExecutor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5ac493b8c2cef1f02f117b9ba2797e7da95574aa`](./contracts/ethereum-1/0x5ac493b8c2cef1f02f117b9ba2797e7da95574aa/) | AssetVotingWeightProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0x286393ea182c9a20a8fedbe6f18533cbf14c42fa`](./contracts/avalanche-43114/0x286393ea182c9a20a8fedbe6f18533cbf14c42fa/) | ATokensAndRatesHelper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1156c30b08dbf16281c803eae0d52eee7652f10c`](./contracts/ethereum-1/0x1156c30b08dbf16281c803eae0d52eee7652f10c/) | CRPFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xf3b2c28c7245c49ea5e6c6db98026f180b443a06`](./contracts/ethereum-1/0xf3b2c28c7245c49ea5e6c6db98026f180b443a06/) | GovernanceParamsProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x06002e9c4412cb7814a791ea3666d905871e536a`](./contracts/ethereum-1/0x06002e9c4412cb7814a791ea3666d905871e536a/) | HubInstance | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x3dfd23a6c5e8bbcfc9581d2e864a68feb6a076d3`](./contracts/ethereum-1/0x3dfd23a6c5e8bbcfc9581d2e864a68feb6a076d3/) | LendingPoolCore | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0671ca7e039af2cf2d2c5e7f1aa261ae78b3ffdf`](./contracts/ethereum-1/0x0671ca7e039af2cf2d2c5e7f1aa261ae78b3ffdf/) | LendVoteStrategyToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x59454304baefa37f299ffe6237e5467223d28261`](./contracts/ethereum-1/0x59454304baefa37f299ffe6237e5467223d28261/) | OracleAnchor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0x06c9d00cd51656791e2c2b435bee9dc1576478b2`](./contracts/avalanche-43114/0x06c9d00cd51656791e2c2b435bee9dc1576478b2/) | StableAndVariableTokensHelper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x481484ee9be4819842268487aeeb1f43810d03a1`](./contracts/ethereum-1/0x481484ee9be4819842268487aeeb1f43810d03a1/) | StakedAave | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x06abcc3b98b7310f50197f0f9cec6cf6e176ae68`](./contracts/ethereum-1/0x06abcc3b98b7310f50197f0f9cec6cf6e176ae68/) | StakeUIHelper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0xa7da242e099136a71ff975b8d78b79aa543c9182`](./contracts/avalanche-43114/0xa7da242e099136a71ff975b8d78b79aa543c9182/) | UiPoolDataProviderV2V3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

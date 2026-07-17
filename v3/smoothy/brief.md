@@ -57,8 +57,8 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xa13c1a...8e4079`, chain 1)
-- UnnamedContract (`0xe5859f...ac6e91`, chain 1)
+- UnnamedContract (`0xa13c1a5fdfbbe60a71a2c1822de97000ec8e4079`, chain 1)
+- UnnamedContract (`0xe5859f4efc09027a9b718781dcb2c6910cac6e91`, chain 1)
 
 ## Contract Surface Quality
 
@@ -104,12 +104,12 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| MerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3ff708...0359f9` | ⚠️ Unaudited |
-| MerkleVestor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x4b5c2f...d04286` | ⚠️ Unaudited |
-| SmoothyMasterV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x77e6d3...1f06c2` | ⚠️ Unaudited |
-| SMTYToken | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xbf776e...003283` | ⚠️ Unaudited |
-| UpgradeableOwnableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x59c5ef...a8b9d3` | ⚠️ Unaudited |
-| VotingEscrow | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x59c5ef...a8b9d3` | ⚠️ Unaudited |
+| MerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3ff708bc7707fb63184ea8d3fcc78355de0359f9` | ⚠️ Unaudited |
+| MerkleVestor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x4b5c2f31f068ed79e3ae8a7e8ff9207807d04286` | ⚠️ Unaudited |
+| SmoothyMasterV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x77e6d30246aad90ed1a12e38ebc6188d5a1f06c2` | ⚠️ Unaudited |
+| SMTYToken | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xbf776e4fca664d791c4ee3a71e2722990e003283` | ⚠️ Unaudited |
+| UpgradeableOwnableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x59c5ef73636cc6f01526923e5e9894d5fda8b9d3` | ⚠️ Unaudited |
+| VotingEscrow | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x59c5ef73636cc6f01526923e5e9894d5fda8b9d3` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -129,8 +129,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392582 | `0xa13c1a...8e4079` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392583 | `0xe5859f...ac6e91` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392582 | `0xa13c1a5fdfbbe60a71a2c1822de97000ec8e4079` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392583 | `0xe5859f4efc09027a9b718781dcb2c6910cac6e91` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -153,7 +153,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
 | PeckShield-Audit-Report-Smoothy-v1.0.pdf | SmoothyV1 | unmatched — not counted | — | Listed as target in findings (e.g., PVE-001, PVE-002) and described as the main contract audited. | no |
-| Smart Contract Security Audit Report - SmoothyV1.pdf | Root | own contract | 0xe5859f… (selected) `0xe5859f...ac6e91` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Smart Contract Security Audit Report - SmoothyV1.pdf | Root | own contract | 0xe5859f… (selected) `0xe5859f4efc09027a9b718781dcb2c6910cac6e91` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Smart Contract Security Audit Report - SmoothyV1.pdf | SmoothyV1 | unmatched — not counted | — | listed in scope and main contract address table | no |
 | Smart Contract Security Audit Report - SmoothyV1.pdf | SMTYToken | unmatched — not counted | — | listed in scope and main contract address table (not yet deployed) | no |
 | Smart Contract Security Audit Report - SmoothyV1.pdf | SmoothyMasterRoot | unmatched — not counted | — | listed in scope and main contract address table (not yet deployed) | no |

@@ -57,9 +57,9 @@ The pinned logic-topography run contains 3 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- evaETH (`0xdbecd0...207e4c`, chain 1)
-- evaUSDC (`0x741bd1...290f58`, chain 1)
-- evaUSDT (`0x501ebf...16b8b8`, chain 1)
+- evaETH (`0xdbecd077c1c2fefdcb75f547d1b5a73bf8207e4c`, chain 1)
+- evaUSDC (`0x741bd193b6b40f8703d2e116fd1965421f290f58`, chain 1)
+- evaUSDT (`0x501ebf66d76a96d4fb26ccead42957653e16b8b8`, chain 1)
 
 ## Contract Surface Quality
 
@@ -105,9 +105,9 @@ The pinned logic-topography run contains 3 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| evaETH | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385044 | `0xdbecd0...207e4c` | ⚠️ Unaudited |
-| evaUSDC | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385043 | `0x741bd1...290f58` | ⚠️ Unaudited |
-| evaUSDT | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385042 | `0x501ebf...16b8b8` | ⚠️ Unaudited |
+| evaETH | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385044 | `0xdbecd077c1c2fefdcb75f547d1b5a73bf8207e4c` | ⚠️ Unaudited |
+| evaUSDC | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385043 | `0x741bd193b6b40f8703d2e116fd1965421f290f58` | ⚠️ Unaudited |
+| evaUSDT | unknown | project_anchor | own_supporting | 0 | ethereum | unit-385042 | `0x501ebf66d76a96d4fb26ccead42957653e16b8b8` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

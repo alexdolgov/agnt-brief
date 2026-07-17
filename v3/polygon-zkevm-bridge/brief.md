@@ -90,30 +90,30 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AggchainECDSAMultisig | governance | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x519e42...130987` | ⚠️ Unaudited |
-| AgglayerGER | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x580bda...ce3cfb` | ⚠️ Unaudited |
-| AgglayerManager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x5132a1...1b7ab2` | ⚠️ Unaudited |
-| BridgeLib | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3622fc...a68ab3` | ⚠️ Unaudited |
-| DappnodeSmoothingPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5cc9f1...e9a584` | ⚠️ Unaudited |
-| FflonkVerifier | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 6 deployments: ethereum `0x0775e1...3edf81`; ethereum `0x1c3a3d...c1ebd8`; ethereum `0x21f65d...b5a3d6`; ethereum `0x4aabba...8ec7be`; ethereum `0x4f9a0e...38e6e9`; ethereum `0x5f4115...f5cbd5` | ⚠️ Unaudited |
-| GnosisSafe | governance | non_address_book | standard_proxy_or_library (excluded) | 2 | ethereum | n/a | 2 deployments: ethereum `0x242dae...413e21`; ethereum `0xf694c9...fce904` | ⚠️ Unaudited |
-| L1Escrow | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x4a27ac...2edb98` | ⚠️ Unaudited |
-| L1Escrow | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x70e70e...d755eb`; ethereum `0xa4e676...de14e6` | ⚠️ Unaudited |
-| PolygonDataCommittee | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x9ccd20...1ee0b0`; ethereum `0xf4e876...02e456` | ⚠️ Unaudited |
-| PolygonRollupManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3b82da...82053b` | ⚠️ Unaudited |
-| PolygonValidiumEtrog | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9cf80f...73ac30` | ⚠️ Unaudited |
-| PolygonValidiumStorageMigration | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x10d296...c6bd4c` | ⚠️ Unaudited |
-| PolygonZkEVM | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe262ea...03efef` | ⚠️ Unaudited |
-| PolygonZkEVMBridgeV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0feb85...9bdb65` | ⚠️ Unaudited |
-| PolygonZkEVMEtrog | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2650a9...c46f71` | ⚠️ Unaudited |
-| PolygonZkEVMExistentEtrog | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x79bcb8...67cde0` | ⚠️ Unaudited |
-| PolygonZkEVMGlobalExitRoot | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbc1ea5...9b6bc3` | ⚠️ Unaudited |
-| PolygonZkEVMGlobalExitRootV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2e38cd...d85077` | ⚠️ Unaudited |
-| PolygonZkEVMTimelock | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xef1462...7ca4ef` | ⚠️ Unaudited |
-| PolygonZkEVMUpgraded | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x301442...d9ef7f`; ethereum `0xb15859...53b923` | ⚠️ Unaudited |
-| ProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x0f9973...7bcc4a`; ethereum `0x1963d7...b3d50d` | ⚠️ Unaudited |
-| SP1Verifier | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0459d5...84c459` | ⚠️ Unaudited |
-| WstETHBridgeL1 | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xf0cde1...582c01` | ⚠️ Unaudited |
+| AggchainECDSAMultisig | governance | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x519e42c24163192dca44cd3fbdcebf6be9130987` | ⚠️ Unaudited |
+| AgglayerGER | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x580bda1e7a0cfae92fa7f6c20a3794f169ce3cfb` | ⚠️ Unaudited |
+| AgglayerManager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x5132a183e9f3cb7c848b0aac5ae0c4f0491b7ab2` | ⚠️ Unaudited |
+| BridgeLib | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3622fcf450ca40a340b7492ae5f60e7c7ea68ab3` | ⚠️ Unaudited |
+| DappnodeSmoothingPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5cc9f1fcb464423f81027dc6dd39edf751e9a584` | ⚠️ Unaudited |
+| FflonkVerifier | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 6 deployments: ethereum `0x0775e11309d75aa6b0967917fb0213c5673edf81`; ethereum `0x1c3a3da552b8662cd69538356b1e7c2e9cc1ebd8`; ethereum `0x21f65deadb3b85082ba99766f323bea90eb5a3d6`; ethereum `0x4aabba26ea9e7a7fbd052d17a167e6ae3f8ec7be`; ethereum `0x4f9a0e7fd2bf6067db6994cf12e4495df938e6e9`; ethereum `0x5f411584e02964a028e3123c833c352cd2f5cbd5` | ⚠️ Unaudited |
+| GnosisSafe | governance | non_address_book | standard_proxy_or_library (excluded) | 2 | ethereum | n/a | 2 deployments: ethereum `0x242dae44f5d8fb54b198d03a94da45b5a4413e21`; ethereum `0xf694c9e3a34f5fa48b6f3a0ff186c1c6c4fce904` | ⚠️ Unaudited |
+| L1Escrow | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x4a27ac91c5cd3768f140ecabde3fc2b2d92edb98` | ⚠️ Unaudited |
+| L1Escrow | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x70e70e58ed7b1cec0d8ef7464072ed8a52d755eb`; ethereum `0xa4e6762eaaf259da74696f46faaf79ba9dde14e6` | ⚠️ Unaudited |
+| PolygonDataCommittee | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x9ccd205052c732ac1df2cf7bf8aacc0e371ee0b0`; ethereum `0xf4e87685e323818e0ae35dcdfc3b65106002e456` | ⚠️ Unaudited |
+| PolygonRollupManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3b82da772c825283d85d5d6717a77c6ff582053b` | ⚠️ Unaudited |
+| PolygonValidiumEtrog | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9cf80f7eb1c76ec5ae7a88b417e373449b73ac30` | ⚠️ Unaudited |
+| PolygonValidiumStorageMigration | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x10d296e8add0535be71639e5d1d1c30ae1c6bd4c` | ⚠️ Unaudited |
+| PolygonZkEVM | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe262ea2782e2e8dbfe354048c3b5d6de9603efef` | ⚠️ Unaudited |
+| PolygonZkEVMBridgeV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0feb850b183c57534b56b7d56520133c8f9bdb65` | ⚠️ Unaudited |
+| PolygonZkEVMEtrog | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2650a9a4fc64f63f573ef0f405064ef54bc46f71` | ⚠️ Unaudited |
+| PolygonZkEVMExistentEtrog | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x79bcb82b35a335cd8a8ec433b304a0c91f67cde0` | ⚠️ Unaudited |
+| PolygonZkEVMGlobalExitRoot | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbc1ea504fc54d078514efcca1f6860b5219b6bc3` | ⚠️ Unaudited |
+| PolygonZkEVMGlobalExitRootV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2e38cd55163137483e30580cb468c2dff1d85077` | ⚠️ Unaudited |
+| PolygonZkEVMTimelock | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xef1462451c30ea7ad8555386226059fe837ca4ef` | ⚠️ Unaudited |
+| PolygonZkEVMUpgraded | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x301442aa888701c8b86727d42f3c55fb0dd9ef7f`; ethereum `0xb1585916487acedd99952086f2950763d253b923` | ⚠️ Unaudited |
+| ProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x0f99738b2fc14d77308337f3e2596b63ae7bcc4a`; ethereum `0x1963d7b78e75a5edff9e5376e7a07a935fb3d50d` | ⚠️ Unaudited |
+| SP1Verifier | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0459d576a6223feea177fb3df53c9c77bf84c459` | ⚠️ Unaudited |
+| WstETHBridgeL1 | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xf0cde1e7f0fad79771cd526b1eb0a12f69582c01` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -133,7 +133,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon | n/a | `0x000000...000000` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | polygon | n/a | `0x0000000000000000000000000000000000000000` | ❓ Unverified |
 
 ## Audit Inventory
 

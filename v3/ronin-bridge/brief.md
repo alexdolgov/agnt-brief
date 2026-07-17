@@ -90,9 +90,9 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Router | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x80226f...146f7d` | ⚠️ Unaudited |
-| TokenAdminRegistry | registry | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb22764...c05cb6` | ⚠️ Unaudited |
-| TokenPoolFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x17d8a4...28876e` | ⚠️ Unaudited |
+| Router | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x80226fc0ee2b096224eeac085bb9a8cba1146f7d` | ⚠️ Unaudited |
+| TokenAdminRegistry | registry | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb22764f98dd05c789929716d677382df22c05cb6` | ⚠️ Unaudited |
+| TokenPoolFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x17d8a409fe2cef2d3808bcb61f14abeffc28876e` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -112,8 +112,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-162861 | `0x2d7b76...9261a1` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4e59b4...b4956c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-162861 | `0x2d7b763d4a86dd105d8878f31993c7995e9261a1` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4e59b44847b379578588920ca78fbf26c0b4956c` | ❓ Unverified |
 
 ## Audit Inventory
 

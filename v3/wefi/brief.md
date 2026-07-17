@@ -57,7 +57,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xc7f272...62478b`, chain 137)
+- UnnamedContract (`0xc7f2720aafc991abbad66651e28a40711262478b`, chain 137)
 
 ## Contract Surface Quality
 
@@ -103,8 +103,8 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| VotingEscrow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xc1704c...3aa650` | ⚠️ Unaudited |
-| WeFi | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xffa188...7b6a52` | ⚠️ Unaudited |
+| VotingEscrow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xc1704c99278c3e5a91afb117301ea61b003aa650` | ⚠️ Unaudited |
+| WeFi | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xffa188493c15dfaf2c206c97d8633377847b6a52` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -124,8 +124,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x03ad1b...f6ce50` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-396611 | `0xc7f272...62478b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x03ad1bcc7499d49b66c33c9bd5ac9050d2f6ce50` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-396611 | `0xc7f2720aafc991abbad66651e28a40711262478b` | ❓ Unverified |
 
 ## Audit Inventory
 

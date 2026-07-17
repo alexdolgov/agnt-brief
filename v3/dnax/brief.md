@@ -89,8 +89,8 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Multicall3 | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xca11bd...76ca11` | ⚠️ Unaudited |
-| OptimizedTransparentUpgradeableProxy | proxy | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0xea9dfe...95f48b` | ⚠️ Unaudited |
+| Multicall3 | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xca11bde05977b3631167028862be2a173976ca11` | ⚠️ Unaudited |
+| OptimizedTransparentUpgradeableProxy | proxy | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0xea9dfe485a700229068d9419488103f6ee95f48b` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

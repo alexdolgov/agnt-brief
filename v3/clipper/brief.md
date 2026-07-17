@@ -52,22 +52,22 @@ The pinned logic-topography run contains 17 contract row(s) across arbitrum, bas
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x6e3fb8...0c2449`, chain 1)
-- UnnamedContract (`0xac2b3f...cc74cb`, chain 10)
-- UnnamedContract (`0x8e44d3...15a7ad`, chain 137)
-- UnnamedContract (`0xae00af...4acb57`, chain 1101)
-- UnnamedContract (`0xb32d85...41247c`, chain 8453)
-- UnnamedContract (`0x769728...f590c5`, chain 42161)
-- ClipperApproximateCaravelExchange (`0x655edc...ee4b77`, chain 1)
-- ClipperPackedVerifiedExchange (`0x5130f6...20ed40`, chain 10)
-- ClipperProtocolDeposit (`0x84f462...9ae1b9`, chain 1)
-- ClipperVerifiedExchange (`0x6bfce6...3ae3b8`, chain 137)
-- ClonableBeaconProxy (`0xb52bd6...ab6cf7`, chain 42161)
-- FxERC20 (`0xd1a718...57a85e`, chain 137)
-- OptimismSailToken (`0x7a1263...262c5e`, chain 10)
-- SailToken (`0xd8f146...7415b7`, chain 1)
-- SplitFeeFarm (`0xd04544...27436e`, chain 1)
-- veSAIL (`0x26fe2f...166ff5`, chain 1)
+- UnnamedContract (`0x6e3fb8a019e78785e80cea1d413bc3ab650c2449`, chain 1)
+- UnnamedContract (`0xac2b3f9a13e7273639bcdca55742391cdacc74cb`, chain 10)
+- UnnamedContract (`0x8e44d33d980e9e6f23370600173b22ca1815a7ad`, chain 137)
+- UnnamedContract (`0xae00af61be6861ee956c8e56bf22144d024acb57`, chain 1101)
+- UnnamedContract (`0xb32d856cad3d2ef07c94867a800035e37241247c`, chain 8453)
+- UnnamedContract (`0x769728b5298445ba2828c0f3f5384227fbf590c5`, chain 42161)
+- ClipperApproximateCaravelExchange (`0x655edce464cc797526600a462a8154650eee4b77`, chain 1)
+- ClipperPackedVerifiedExchange (`0x5130f6ce257b8f9bf7fac0a0b519bd588120ed40`, chain 10)
+- ClipperProtocolDeposit (`0x84f4625c3e92b368e403cb002a9bf9bc7a9ae1b9`, chain 1)
+- ClipperVerifiedExchange (`0x6bfce69d1df30fd2b2c8e478edec9daa643ae3b8`, chain 137)
+- ClonableBeaconProxy (`0xb52bd62ee0cf462fa9ccbda4bf27fe84d9ab6cf7`, chain 42161)
+- FxERC20 (`0xd1a718f77ab5d22e3955050658d7f65ae857a85e`, chain 137)
+- OptimismSailToken (`0x7a1263ec3bf0a19e25c553b8a2c312e903262c5e`, chain 10)
+- SailToken (`0xd8f1460044925d2d5c723c7054cd9247027415b7`, chain 1)
+- SplitFeeFarm (`0xd0454428ecd868a9ac615125fcbdb5da9027436e`, chain 1)
+- veSAIL (`0x26fe2f89a1fef1bc90b8a89d8ad18a1891166ff5`, chain 1)
 
 ## Contract Surface Quality
 
@@ -113,41 +113,41 @@ The pinned logic-topography run contains 17 contract row(s) across arbitrum, bas
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BlacklistAndTimeFilter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb38ae5...6c2ea2` | ⚠️ Unaudited |
-| ClipperApproximateCaravelExchange | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381719 | `0x655edc...ee4b77` | ⚠️ Unaudited |
-| ClipperCaravelExchange | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-381722 | `0xcc1253...9218a7` | ⚠️ Unaudited |
-| ClipperCove | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x08f7e9...7d4be8` | ⚠️ Unaudited |
-| ClipperDirectExchange | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | polygon | unit-381736 | `0xd01e35...de8eed` | ⚠️ Unaudited |
-| ClipperExchangeInterface | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-381718 | `0x2e9c6d...155bc9` | ⚠️ Unaudited |
-| ClipperExecutor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3f7c9c...68b738` | ⚠️ Unaudited |
-| ClipperFarmingHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x08b4b3...e7f3f8` | ⚠️ Unaudited |
-| ClipperPackedExchange | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | optimism | unit-381730 | `0xdbd4ff...2db7db` | ⚠️ Unaudited |
-| ClipperPackedVerifiedExchange | unknown | project_anchor | own_supporting | 1 | optimism | unit-381741 | `0x5130f6...20ed40` | ⚠️ Unaudited |
-| ClipperPermitRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x41c536...c1f834` | ⚠️ Unaudited |
-| ClipperPool | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-381726 | `0xe82906...6a99d9` | ⚠️ Unaudited |
-| ClipperProtocolDeposit | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381721 | `0x84f462...9ae1b9` | ⚠️ Unaudited |
-| ClipperResolver | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x235d3a...88551f` | ⚠️ Unaudited |
-| ClipperRouter | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-381727 | `0xf0f455...09de47` | ⚠️ Unaudited |
-| ClipperTransferHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x12bb16...3195d7` | ⚠️ Unaudited |
-| ClipperVerifiedCaravelExchange | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-381725 | `0xe7b0ce...9d216c` | ⚠️ Unaudited |
-| ClipperVerifiedExchange | unknown | project_anchor | own_supporting | 0 | polygon | unit-381734 | `0x6bfce6...3ae3b8` | ⚠️ Unaudited |
-| ClonableBeaconProxy | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381739 | `0xb52bd6...ab6cf7` | ⚠️ Unaudited |
-| CollectionContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdb83e7...7a6e41` | ⚠️ Unaudited |
-| FxERC20 | unknown | project_anchor | own_supporting | 0 | polygon | unit-381737 | `0xd1a718...57a85e` | ⚠️ Unaudited |
-| LinearVestingVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3c7840...dfed3c` | ⚠️ Unaudited |
-| Longship | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x840e96...8ff003` | ⚠️ Unaudited |
-| LongshipFrontendUtils | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x21995c...0e30ca` | ⚠️ Unaudited |
-| LongshipParent | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x35242f...4bcd60` | ⚠️ Unaudited |
-| LPTransfer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x4c16dd...9bb08a` | ⚠️ Unaudited |
-| MainnetLPTransferFromOldClipper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x205e8c...edd3bb` | ⚠️ Unaudited |
-| OptimismSailToken | unknown | project_anchor | own_supporting | 0 | optimism | unit-381728 | `0x7a1263...262c5e` | ⚠️ Unaudited |
-| OwnedCollectionContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5041f1...cefcd8` | ⚠️ Unaudited |
-| PublicCollectionContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x238cc1...063c22` | ⚠️ Unaudited |
-| SailToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381724 | `0xd8f146...7415b7` | ⚠️ Unaudited |
-| SplitFeeFarm | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381723 | `0xd04544...27436e` | ⚠️ Unaudited |
-| veSAIL | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381717 | `0x26fe2f...166ff5` | ⚠️ Unaudited |
-| VestingMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x1ffbf1...f46488` | ⚠️ Unaudited |
-| WrappedEthRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x137f48...f6e69c` | ⚠️ Unaudited |
+| BlacklistAndTimeFilter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb38ae58d7c8ce6c5bf8e57ddb6f43968d46c2ea2` | ⚠️ Unaudited |
+| ClipperApproximateCaravelExchange | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381719 | `0x655edce464cc797526600a462a8154650eee4b77` | ⚠️ Unaudited |
+| ClipperCaravelExchange | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-381722 | `0xcc12532e95c2a6a4c53af153b9b739a3cc9218a7` | ⚠️ Unaudited |
+| ClipperCove | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x08f7e9458a341db71d2abbe32e2b5a2c727d4be8` | ⚠️ Unaudited |
+| ClipperDirectExchange | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | polygon | unit-381736 | `0xd01e3549160c62acabc4d0eb89f67aafa3de8eed` | ⚠️ Unaudited |
+| ClipperExchangeInterface | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-381718 | `0x2e9c6dcdca22a5952a88c4b18edb5b54c5155bc9` | ⚠️ Unaudited |
+| ClipperExecutor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3f7c9c7d9e69d0cfbfd6f009cc59ae341f68b738` | ⚠️ Unaudited |
+| ClipperFarmingHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x08b4b3be5bfab1be319599ce8e41c3da7fe7f3f8` | ⚠️ Unaudited |
+| ClipperPackedExchange | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | optimism | unit-381730 | `0xdbd4ffc32b34f630dd8ac18d37162ec8462db7db` | ⚠️ Unaudited |
+| ClipperPackedVerifiedExchange | unknown | project_anchor | own_supporting | 1 | optimism | unit-381741 | `0x5130f6ce257b8f9bf7fac0a0b519bd588120ed40` | ⚠️ Unaudited |
+| ClipperPermitRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x41c5362adf3a2cf6815454f7633172e7f6c1f834` | ⚠️ Unaudited |
+| ClipperPool | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-381726 | `0xe82906b6b1b04f631d126c974af57a3a7b6a99d9` | ⚠️ Unaudited |
+| ClipperProtocolDeposit | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381721 | `0x84f4625c3e92b368e403cb002a9bf9bc7a9ae1b9` | ⚠️ Unaudited |
+| ClipperResolver | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x235d3afac42f5e5ff346cb6c19af13194988551f` | ⚠️ Unaudited |
+| ClipperRouter | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-381727 | `0xf0f455e8b8f4f96ae5109493c5d3ea5e2c09de47` | ⚠️ Unaudited |
+| ClipperTransferHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x12bb166f997146d3d33645146eedbc4a923195d7` | ⚠️ Unaudited |
+| ClipperVerifiedCaravelExchange | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-381725 | `0xe7b0ce0526fbe3969035a145c9e9691d4d9d216c` | ⚠️ Unaudited |
+| ClipperVerifiedExchange | unknown | project_anchor | own_supporting | 0 | polygon | unit-381734 | `0x6bfce69d1df30fd2b2c8e478edec9daa643ae3b8` | ⚠️ Unaudited |
+| ClonableBeaconProxy | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381739 | `0xb52bd62ee0cf462fa9ccbda4bf27fe84d9ab6cf7` | ⚠️ Unaudited |
+| CollectionContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdb83e7f92d919f8475f5a520bbe0d509327a6e41` | ⚠️ Unaudited |
+| FxERC20 | unknown | project_anchor | own_supporting | 0 | polygon | unit-381737 | `0xd1a718f77ab5d22e3955050658d7f65ae857a85e` | ⚠️ Unaudited |
+| LinearVestingVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3c7840e80beb3642043273cf7bf01944a8dfed3c` | ⚠️ Unaudited |
+| Longship | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x840e960c9c0989929160361b73ff9acd9b8ff003` | ⚠️ Unaudited |
+| LongshipFrontendUtils | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x21995cb3c92c99de3876517c6fabe32d830e30ca` | ⚠️ Unaudited |
+| LongshipParent | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x35242f4a0067ff0e992e7a262c29dfd8874bcd60` | ⚠️ Unaudited |
+| LPTransfer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x4c16dd6e9b402ea4fb5be647be2f49e3d59bb08a` | ⚠️ Unaudited |
+| MainnetLPTransferFromOldClipper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x205e8c5b8b9ab41e934ebf394aa319ccbdedd3bb` | ⚠️ Unaudited |
+| OptimismSailToken | unknown | project_anchor | own_supporting | 0 | optimism | unit-381728 | `0x7a1263ec3bf0a19e25c553b8a2c312e903262c5e` | ⚠️ Unaudited |
+| OwnedCollectionContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5041f1ae02feb3580c4424d4417d202845cefcd8` | ⚠️ Unaudited |
+| PublicCollectionContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x238cc13495b30d0b8f2df3d646af443c17063c22` | ⚠️ Unaudited |
+| SailToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381724 | `0xd8f1460044925d2d5c723c7054cd9247027415b7` | ⚠️ Unaudited |
+| SplitFeeFarm | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381723 | `0xd0454428ecd868a9ac615125fcbdb5da9027436e` | ⚠️ Unaudited |
+| veSAIL | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381717 | `0x26fe2f89a1fef1bc90b8a89d8ad18a1891166ff5` | ⚠️ Unaudited |
+| VestingMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x1ffbf1160764aa96b016d9124646e8c78cf46488` | ⚠️ Unaudited |
+| WrappedEthRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x137f48d01459944fefc1f637feeafe49c0f6e69c` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -167,17 +167,17 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381720 | `0x6e3fb8...0c2449` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xae00af...4acb57` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-381729 | `0xac2b3f...cc74cb` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-381735 | `0x8e44d3...15a7ad` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xe38c90...498c13` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon-zkevm | unit-381731 | `0xae00af...4acb57` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | polygon-zkevm | unit-381732 | `0xe38c90...498c13` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonbeam | unit-381733 | `0xe90d41...5be933` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x769728...f590c5` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-381740 | `0xb32d85...41247c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381738 | `0x769728...f590c5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381720 | `0x6e3fb8a019e78785e80cea1d413bc3ab650c2449` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xae00af61be6861ee956c8e56bf22144d024acb57` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-381729 | `0xac2b3f9a13e7273639bcdca55742391cdacc74cb` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-381735 | `0x8e44d33d980e9e6f23370600173b22ca1815a7ad` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xe38c90a0233f18749fb74e595c4de871e5498c13` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon-zkevm | unit-381731 | `0xae00af61be6861ee956c8e56bf22144d024acb57` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | polygon-zkevm | unit-381732 | `0xe38c90a0233f18749fb74e595c4de871e5498c13` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonbeam | unit-381733 | `0xe90d415af331237ae18a882ec21870f1965be933` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x769728b5298445ba2828c0f3f5384227fbf590c5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-381740 | `0xb32d856cad3d2ef07c94867a800035e37241247c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381738 | `0x769728b5298445ba2828c0f3f5384227fbf590c5` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -235,16 +235,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x655edc...ee4b77` | ClipperApproximateCaravelExchange | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | `0x5130f6...20ed40` | ClipperPackedVerifiedExchange | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x84f462...9ae1b9` | ClipperProtocolDeposit | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | `0x6bfce6...3ae3b8` | ClipperVerifiedExchange | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | `0xb52bd6...ab6cf7` | ClonableBeaconProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | `0xd1a718...57a85e` | FxERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | `0x7a1263...262c5e` | OptimismSailToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xd8f146...7415b7` | SailToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xd04544...27436e` | SplitFeeFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x26fe2f...166ff5` | veSAIL | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x655edce464cc797526600a462a8154650eee4b77` | ClipperApproximateCaravelExchange | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x5130f6ce257b8f9bf7fac0a0b519bd588120ed40` | ClipperPackedVerifiedExchange | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x84f4625c3e92b368e403cb002a9bf9bc7a9ae1b9` | ClipperProtocolDeposit | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0x6bfce69d1df30fd2b2c8e478edec9daa643ae3b8` | ClipperVerifiedExchange | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0xb52bd62ee0cf462fa9ccbda4bf27fe84d9ab6cf7` | ClonableBeaconProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0xd1a718f77ab5d22e3955050658d7f65ae857a85e` | FxERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x7a1263ec3bf0a19e25c553b8a2c312e903262c5e` | OptimismSailToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xd8f1460044925d2d5c723c7054cd9247027415b7` | SailToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xd0454428ecd868a9ac615125fcbdb5da9027436e` | SplitFeeFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x26fe2f89a1fef1bc90b8a89d8ad18a1891166ff5` | veSAIL | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -90,10 +90,10 @@ The pinned logic-topography run contains 2 contract row(s) across bsc, ethereum,
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| GnosisSafe | governance | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-231745 | `0x2818e5...5932ca` | ⚠️ Unaudited |
-| Safe | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-231744 | `0xc48c74...69d996` | ⚠️ Unaudited |
-| SafeL2 | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0x8e7b54...91684d` | ⚠️ Unaudited |
-| SafeProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 3 deployments: bsc `0xc48c74...69d996`; polygon `0x8e7b54...91684d`; polygon `0xc48c74...69d996` | ⚠️ Unaudited |
+| GnosisSafe | governance | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-231745 | `0x2818e54e0489274f61f33f163504074bee5932ca` | ⚠️ Unaudited |
+| Safe | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-231744 | `0xc48c74c4eda47f915e8580391ec2f386f769d996` | ⚠️ Unaudited |
+| SafeL2 | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0x8e7b542d93901560583c0c22d156ecca5191684d` | ⚠️ Unaudited |
+| SafeProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 3 deployments: bsc `0xc48c74c4eda47f915e8580391ec2f386f769d996`; polygon `0x8e7b542d93901560583c0c22d156ecca5191684d`; polygon `0xc48c74c4eda47f915e8580391ec2f386f769d996` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

@@ -60,19 +60,19 @@ The protocol forms a single structural family (Core Logic) of 8 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Apollo | unknown | bsc | n/a | [`0x1b4aec...9d0a15`](./contracts/bsc-56/0x1b4aec66ef4f942da16845d22ce2656d759d0a15/) | ✅ Audited |
-| DefinixFactory | unknown | bsc | n/a | [`0x43ebb0...f92d19`](./contracts/bsc-56/0x43ebb0cb9bd53a3ed928dd662095ace1cef92d19/) | ✅ Audited |
-| DefinixRouter | unknown | bsc | n/a | [`0x151030...e826ad`](./contracts/bsc-56/0x151030a9fa62fbb202eee50bd4a4057ab9e826ad/) | ✅ Audited |
-| FinixToken | unknown | bsc | n/a | [`0x0f02b1...c4e30d`](./contracts/bsc-56/0x0f02b1f5af54e04fb6dd6550f009ac2429c4e30d/) | ✅ Audited |
-| FlameKeeper | unknown | bsc | n/a | [`0xfaaa40...99853f`](./contracts/bsc-56/0xfaaa404735f33cdab5eae2fddfd375b92399853f/) | ✅ Audited |
-| Herodotus | unknown | bsc | n/a | [`0x6b51e8...3b105a`](./contracts/bsc-56/0x6b51e8fdc32ead0b837deb334fcb79e24f3b105a/) | ✅ Audited |
+| Apollo | unknown | bsc | n/a | [`0x1b4aec66ef4f942da16845d22ce2656d759d0a15`](./contracts/bsc-56/0x1b4aec66ef4f942da16845d22ce2656d759d0a15/) | ✅ Audited |
+| DefinixFactory | unknown | bsc | n/a | [`0x43ebb0cb9bd53a3ed928dd662095ace1cef92d19`](./contracts/bsc-56/0x43ebb0cb9bd53a3ed928dd662095ace1cef92d19/) | ✅ Audited |
+| DefinixRouter | unknown | bsc | n/a | [`0x151030a9fa62fbb202eee50bd4a4057ab9e826ad`](./contracts/bsc-56/0x151030a9fa62fbb202eee50bd4a4057ab9e826ad/) | ✅ Audited |
+| FinixToken | unknown | bsc | n/a | [`0x0f02b1f5af54e04fb6dd6550f009ac2429c4e30d`](./contracts/bsc-56/0x0f02b1f5af54e04fb6dd6550f009ac2429c4e30d/) | ✅ Audited |
+| FlameKeeper | unknown | bsc | n/a | [`0xfaaa404735f33cdab5eae2fddfd375b92399853f`](./contracts/bsc-56/0xfaaa404735f33cdab5eae2fddfd375b92399853f/) | ✅ Audited |
+| Herodotus | unknown | bsc | n/a | [`0x6b51e8fdc32ead0b837deb334fcb79e24f3b105a`](./contracts/bsc-56/0x6b51e8fdc32ead0b837deb334fcb79e24f3b105a/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| SIXToken | unknown | bsc | n/a | [`0x070a98...3489fe`](./contracts/bsc-56/0x070a9867ea49ce7afc4505817204860e823489fe/) | ⚠️ Unaudited |
-| TimelockController | unknown | bsc | n/a | [`0x967bef...04cbfe`](./contracts/bsc-56/0x967bef27c509fa0772c10d59f47236a2d304cbfe/) | ⚠️ Unaudited |
+| SIXToken | unknown | bsc | n/a | [`0x070a9867ea49ce7afc4505817204860e823489fe`](./contracts/bsc-56/0x070a9867ea49ce7afc4505817204860e823489fe/) | ⚠️ Unaudited |
+| TimelockController | unknown | bsc | n/a | [`0x967bef27c509fa0772c10d59f47236a2d304cbfe`](./contracts/bsc-56/0x967bef27c509fa0772c10d59f47236a2d304cbfe/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -109,7 +109,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x070a98...3489fe`](./contracts/bsc-56/0x070a9867ea49ce7afc4505817204860e823489fe/) | SIXToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x070a9867ea49ce7afc4505817204860e823489fe`](./contracts/bsc-56/0x070a9867ea49ce7afc4505817204860e823489fe/) | SIXToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

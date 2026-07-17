@@ -60,15 +60,15 @@ The protocol comprises 3 functional families. Contracts are linked by 1 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| StakedPDT | token | base | n/a | [`0x51e025...29aa3e`](./contracts/base-8453/0x51e025cb3ee0b99a84f7fb80994198281e29aa3e/) | ✅ Audited |
+| StakedPDT | token | base | n/a | [`0x51e025cb3ee0b99a84f7fb80994198281e29aa3e`](./contracts/base-8453/0x51e025cb3ee0b99a84f7fb80994198281e29aa3e/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| GnosisSafeL2 | governance | ethereum | n/a | [`0x11117f...5bf9c9`](./contracts/ethereum-1/0x11117fa34c8f660b9b804b85ebe891d0c05bf9c9/) | ⚠️ Unaudited |
-| PDTOFT | unknown | base | n/a | [`0xeff2a4...61e07e`](./contracts/base-8453/0xeff2a458e464b07088bdb441c21a42ab4b61e07e/) | ⚠️ Unaudited |
-| PDTStaking | unknown | ethereum | n/a | [`0xe09c8a...2549d6`](./contracts/ethereum-1/0xe09c8a88982a85c5b76b1756ec6172d4ad2549d6/) | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | ethereum | n/a | [`0x11117fa34c8f660b9b804b85ebe891d0c05bf9c9`](./contracts/ethereum-1/0x11117fa34c8f660b9b804b85ebe891d0c05bf9c9/) | ⚠️ Unaudited |
+| PDTOFT | unknown | base | n/a | [`0xeff2a458e464b07088bdb441c21a42ab4b61e07e`](./contracts/base-8453/0xeff2a458e464b07088bdb441c21a42ab4b61e07e/) | ⚠️ Unaudited |
+| PDTStaking | unknown | ethereum | n/a | [`0xe09c8a88982a85c5b76b1756ec6172d4ad2549d6`](./contracts/ethereum-1/0xe09c8a88982a85c5b76b1756ec6172d4ad2549d6/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -107,8 +107,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0xeff2a4...61e07e`](./contracts/base-8453/0xeff2a458e464b07088bdb441c21a42ab4b61e07e/) | PDTOFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xe09c8a...2549d6`](./contracts/ethereum-1/0xe09c8a88982a85c5b76b1756ec6172d4ad2549d6/) | PDTStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xeff2a458e464b07088bdb441c21a42ab4b61e07e`](./contracts/base-8453/0xeff2a458e464b07088bdb441c21a42ab4b61e07e/) | PDTOFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe09c8a88982a85c5b76b1756ec6172d4ad2549d6`](./contracts/ethereum-1/0xe09c8a88982a85c5b76b1756ec6172d4ad2549d6/) | PDTStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

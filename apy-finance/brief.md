@@ -59,16 +59,16 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| APYGovernanceToken | unknown | ethereum | n/a | [`0x561af1...240b62`](./contracts/ethereum-1/0x561af1ec26491a89e3907fb11eed479843240b62/) | ✅ Audited |
-| APYPoolToken | unknown | ethereum | n/a | [`0x21347b...4bce75`](./contracts/ethereum-1/0x21347bf816051ffa9a6456536fcdd2cea44bce75/) | ✅ Audited |
-| PoolTokenV3 | unknown | ethereum | n/a | [`0x75ce0e...2a8970`](./contracts/ethereum-1/0x75ce0e501e2e6776fcaaa514f394a88a772a8970/) | ✅ Audited |
-| ProxyAdmin | unknown | ethereum | n/a | [`0x3dea1f...e973d9`](./contracts/ethereum-1/0x3dea1f053ab24b0c5b0c663b1c07b6b702e973d9/) | ✅ Audited |
+| APYGovernanceToken | unknown | ethereum | n/a | [`0x561af1ec26491a89e3907fb11eed479843240b62`](./contracts/ethereum-1/0x561af1ec26491a89e3907fb11eed479843240b62/) | ✅ Audited |
+| APYPoolToken | unknown | ethereum | n/a | [`0x21347bf816051ffa9a6456536fcdd2cea44bce75`](./contracts/ethereum-1/0x21347bf816051ffa9a6456536fcdd2cea44bce75/) | ✅ Audited |
+| PoolTokenV3 | unknown | ethereum | n/a | [`0x75ce0e501e2e6776fcaaa514f394a88a772a8970`](./contracts/ethereum-1/0x75ce0e501e2e6776fcaaa514f394a88a772a8970/) | ✅ Audited |
+| ProxyAdmin | unknown | ethereum | n/a | [`0x3dea1f053ab24b0c5b0c663b1c07b6b702e973d9`](./contracts/ethereum-1/0x3dea1f053ab24b0c5b0c663b1c07b6b702e973d9/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| GovernanceTokenV2 | unknown | ethereum | n/a | [`0x95a449...446611`](./contracts/ethereum-1/0x95a4492f028aa1fd432ea71146b433e7b4446611/) | ⚠️ Unaudited |
+| GovernanceTokenV2 | unknown | ethereum | n/a | [`0x95a4492f028aa1fd432ea71146b433e7b4446611`](./contracts/ethereum-1/0x95a4492f028aa1fd432ea71146b433e7b4446611/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -102,7 +102,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x95a449...446611`](./contracts/ethereum-1/0x95a4492f028aa1fd432ea71146b433e7b4446611/) | GovernanceTokenV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x95a4492f028aa1fd432ea71146b433e7b4446611`](./contracts/ethereum-1/0x95a4492f028aa1fd432ea71146b433e7b4446611/) | GovernanceTokenV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

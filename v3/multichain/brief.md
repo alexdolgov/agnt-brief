@@ -52,11 +52,11 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x0a992d...738f81`, chain 1)
-- UnnamedContract (`0x8efd01...604374`, chain 1)
-- UnnamedContract (`0xbd3fa8...af3155`, chain 1)
-- UnnamedContract (`0x6b2553...de6982`, chain 43114)
-- UnnamedContract (`0x818635...c29880`, chain 43114)
+- UnnamedContract (`0x0a992d191deec32afe36203ad87d7d289a738f81`, chain 1)
+- UnnamedContract (`0x8efd012977dd5c97e959b9e48c04ee5fcd604374`, chain 1)
+- UnnamedContract (`0xbd3fa81b58ba92a82136038b25adec7066af3155`, chain 1)
+- UnnamedContract (`0x6b25532e1060ce10cc3b0a99e5683b91bfde6982`, chain 43114)
+- UnnamedContract (`0x8186359af5f57fbb40c6b14a588d2a59c0c29880`, chain 43114)
 
 ## Contract Surface Quality
 
@@ -102,16 +102,16 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AnyCallProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x37414a...490a89`; ethereum `0xd50ab2...6d4e90` | ⚠️ Unaudited |
-| AnyswapV4Router | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x6b7a87...e71522`; ethereum `0x765277...b39c61` | ⚠️ Unaudited |
-| AnyswapV5ERC20 | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9fb9a3...8764e3` | ⚠️ Unaudited |
-| AnyswapV6ERC20 | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0615db...6748b1` | ⚠️ Unaudited |
-| AnyswapV6Router | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xba8da9...910705` | ⚠️ Unaudited |
-| MultichainToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x65ef70...492df4` | ⚠️ Unaudited |
-| MultiDao | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x172280...90d558` | ⚠️ Unaudited |
-| Reward | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x44529a...ad7db6` | ⚠️ Unaudited |
-| SwapTokens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xaed047...b2ec60` | ⚠️ Unaudited |
-| ve | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbba411...48ceba` | ⚠️ Unaudited |
+| AnyCallProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x37414a8662bc1d25be3ee51fb27c2686e2490a89`; ethereum `0xd50ab2485e20103fbd0a7e8c09230bfbef6d4e90` | ⚠️ Unaudited |
+| AnyswapV4Router | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x6b7a87899490ece95443e979ca9485cbe7e71522`; ethereum `0x765277eebeca2e31912c9946eae1021199b39c61` | ⚠️ Unaudited |
+| AnyswapV5ERC20 | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9fb9a33956351cf4fa040f65a13b835a3c8764e3` | ⚠️ Unaudited |
+| AnyswapV6ERC20 | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0615dbba33fe61a31c7ed131bda6655ed76748b1` | ⚠️ Unaudited |
+| AnyswapV6Router | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xba8da9dcf11b50b03fd5284f164ef5cdef910705` | ⚠️ Unaudited |
+| MultichainToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x65ef703f5594d2573eb71aaf55bc0cb548492df4` | ⚠️ Unaudited |
+| MultiDao | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1722800c0f1bfdf916ef948ef7790a861e90d558` | ⚠️ Unaudited |
+| Reward | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x44529a37a43bab8af2336698e31f2e4585ad7db6` | ⚠️ Unaudited |
+| SwapTokens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xaed0472b498548b1354925d222b832b99bb2ec60` | ⚠️ Unaudited |
+| ve | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbba4115ecb1f811061ecb5a8dc8fcdee2748ceba` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -131,11 +131,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389575 | `0x0a992d...738f81` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389577 | `0x8efd01...604374` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389579 | `0xbd3fa8...af3155` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-389582 | `0x6b2553...de6982` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-389583 | `0x818635...c29880` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389575 | `0x0a992d191deec32afe36203ad87d7d289a738f81` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389577 | `0x8efd012977dd5c97e959b9e48c04ee5fcd604374` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389579 | `0xbd3fa81b58ba92a82136038b25adec7066af3155` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-389582 | `0x6b25532e1060ce10cc3b0a99e5683b91bfde6982` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-389583 | `0x8186359af5f57fbb40c6b14a588d2a59c0c29880` | ❓ Unverified |
 
 ## Audit Inventory
 

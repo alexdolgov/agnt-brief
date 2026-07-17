@@ -52,13 +52,13 @@ The pinned logic-topography run contains 6 contract row(s) across scroll. Struct
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x2d012e...df5a55`, chain 534352)
-- ERC1967Proxy (`0x3b005f...a4cf03`, chain 534352)
-- ERC1967Proxy (`0x9f3d4b...0e4c35`, chain 534352)
-- ERC1967Proxy (`0xcb14bc...c7f922`, chain 534352)
-- ERC1967Proxy (`0xd16909...f0d300`, chain 534352)
-- MetaMorphoV1_1 (`0xd39df2...e8a8ad`, chain 534352)
-- SafeProxy (`0xd09e95...848f65`, chain 534352)
+- UnnamedContract (`0x2d012edbadc37edc2bc62791b666f9193fdf5a55`, chain 534352)
+- ERC1967Proxy (`0x3b005fefc63ca7c8d25ee21fba3787229ba4cf03`, chain 534352)
+- ERC1967Proxy (`0x9f3d4b0c9e930ca3957ecd3dedb7417f8e0e4c35`, chain 534352)
+- ERC1967Proxy (`0xcb14bcdf6cd483665d10dfd6f87d908996c7f922`, chain 534352)
+- ERC1967Proxy (`0xd16909ecc9c71d481ee3b2cb1968c0dadcf0d300`, chain 534352)
+- MetaMorphoV1_1 (`0xd39df22a3cd1c91b22d5e748cc62b03ed3e8a8ad`, chain 534352)
+- SafeProxy (`0xd09e956353fc641792a0f1a7d748773358848f65`, chain 534352)
 
 ## Contract Surface Quality
 
@@ -104,12 +104,12 @@ The pinned logic-topography run contains 6 contract row(s) across scroll. Struct
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ERC1967Proxy | proxy | project_anchor | own_supporting | 0 | scroll | unit-395582 | `0x3b005f...a4cf03` | ⚠️ Unaudited |
-| ERC1967Proxy | proxy | project_anchor | own_supporting | 0 | scroll | unit-395583 | `0x9f3d4b...0e4c35` | ⚠️ Unaudited |
-| ERC1967Proxy | proxy | project_anchor | own_supporting | 0 | scroll | unit-395584 | `0xcb14bc...c7f922` | ⚠️ Unaudited |
-| ERC1967Proxy | proxy | project_anchor | own_supporting | 0 | scroll | unit-395586 | `0xd16909...f0d300` | ⚠️ Unaudited |
-| MetaMorphoV1_1 | unknown | project_anchor | own_supporting | 0 | scroll | unit-395587 | `0xd39df2...e8a8ad` | ⚠️ Unaudited |
-| SafeProxy | unknown | project_anchor | own_supporting | 0 | scroll | unit-395585 | `0xd09e95...848f65` | ⚠️ Unaudited |
+| ERC1967Proxy | proxy | project_anchor | own_supporting | 0 | scroll | unit-395582 | `0x3b005fefc63ca7c8d25ee21fba3787229ba4cf03` | ⚠️ Unaudited |
+| ERC1967Proxy | proxy | project_anchor | own_supporting | 0 | scroll | unit-395583 | `0x9f3d4b0c9e930ca3957ecd3dedb7417f8e0e4c35` | ⚠️ Unaudited |
+| ERC1967Proxy | proxy | project_anchor | own_supporting | 0 | scroll | unit-395584 | `0xcb14bcdf6cd483665d10dfd6f87d908996c7f922` | ⚠️ Unaudited |
+| ERC1967Proxy | proxy | project_anchor | own_supporting | 0 | scroll | unit-395586 | `0xd16909ecc9c71d481ee3b2cb1968c0dadcf0d300` | ⚠️ Unaudited |
+| MetaMorphoV1_1 | unknown | project_anchor | own_supporting | 0 | scroll | unit-395587 | `0xd39df22a3cd1c91b22d5e748cc62b03ed3e8a8ad` | ⚠️ Unaudited |
+| SafeProxy | unknown | project_anchor | own_supporting | 0 | scroll | unit-395585 | `0xd09e956353fc641792a0f1a7d748773358848f65` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -129,7 +129,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-395581 | `0x2d012e...df5a55` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-395581 | `0x2d012edbadc37edc2bc62791b666f9193fdf5a55` | ❓ Unverified |
 
 ## Audit Inventory
 

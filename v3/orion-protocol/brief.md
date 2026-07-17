@@ -51,10 +51,10 @@ The pinned logic-topography run contains 4 contract row(s) across bsc, ethereum,
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x0258f4...c4434a`, chain 1)
-- UnnamedContract (`0xe4ca1f...4eaa8e`, chain 56)
-- UnnamedContract (`0xd2cdcb...b576d9`, chain 137)
-- UnnamedContract (`0xd2cdcb...b576d9`, chain 250)
+- UnnamedContract (`0x0258f474786ddfd37abce6df6bbb1dd5dfc4434a`, chain 1)
+- UnnamedContract (`0xe4ca1f75eca6214393fce1c1b316c237664eaa8e`, chain 56)
+- UnnamedContract (`0xd2cdcb6bdee6f78de7988a6a60d13f6ef0b576d9`, chain 137)
+- UnnamedContract (`0xd2cdcb6bdee6f78de7988a6a60d13f6ef0b576d9`, chain 250)
 
 ## Contract Surface Quality
 
@@ -100,10 +100,10 @@ The pinned logic-topography run contains 4 contract row(s) across bsc, ethereum,
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | token | project_anchor | own_supporting | 0 | ethereum | unit-390460 | `0x0258f4...c4434a` | ⚠️ Unaudited |
-| UnnamedContract | token | project_anchor | own_supporting | 0 | bsc | unit-390463 | `0xe4ca1f...4eaa8e` | ⚠️ Unaudited |
-| UnnamedContract | token | project_anchor | own_supporting | 0 | polygon | unit-390461 | `0xd2cdcb...b576d9` | ⚠️ Unaudited |
-| UnnamedContract | token | project_anchor | own_supporting | 0 | fantom | unit-390462 | `0xd2cdcb...b576d9` | ⚠️ Unaudited |
+| UnnamedContract | token | project_anchor | own_supporting | 0 | ethereum | unit-390460 | `0x0258f474786ddfd37abce6df6bbb1dd5dfc4434a` | ⚠️ Unaudited |
+| UnnamedContract | token | project_anchor | own_supporting | 0 | bsc | unit-390463 | `0xe4ca1f75eca6214393fce1c1b316c237664eaa8e` | ⚠️ Unaudited |
+| UnnamedContract | token | project_anchor | own_supporting | 0 | polygon | unit-390461 | `0xd2cdcb6bdee6f78de7988a6a60d13f6ef0b576d9` | ⚠️ Unaudited |
+| UnnamedContract | token | project_anchor | own_supporting | 0 | fantom | unit-390462 | `0xd2cdcb6bdee6f78de7988a6a60d13f6ef0b576d9` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

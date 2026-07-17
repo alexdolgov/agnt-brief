@@ -90,7 +90,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| EtherealPreDepositVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x90d2af...74cc8f` | ⚠️ Unaudited |
+| EtherealPreDepositVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x90d2af7d622ca3141efa4d8f1f24d86e5974cc8f` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

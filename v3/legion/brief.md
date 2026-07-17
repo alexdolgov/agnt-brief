@@ -52,14 +52,14 @@ The pinned logic-topography run contains 4 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x076ff2...741add`, chain 1)
-- UnnamedContract (`0x3cd9e6...1777ef`, chain 1)
-- UnnamedContract (`0x423781...9aee06`, chain 1)
-- UnnamedContract (`0x9b7ed9...d53ce9`, chain 1)
-- LegionAddressRegistry (`0x58ddd0...52aed7`, chain 1)
-- LegionBouncer (`0x4a7aca...500533`, chain 1)
-- LegionPreLiquidSaleV1Factory (`0x6d1a5c...b5c4e7`, chain 1)
-- LegionVestingFactory (`0x7832d6...5e9e5f`, chain 1)
+- UnnamedContract (`0x076ff291ea6783c17d8ac3459e1fd9da37741add`, chain 1)
+- UnnamedContract (`0x3cd9e6a79446d8331101252f6ca8d943ac1777ef`, chain 1)
+- UnnamedContract (`0x423781817e3998659ae3a012357e1b958e9aee06`, chain 1)
+- UnnamedContract (`0x9b7ed9757e0e97e11427377fed3bb46f92d53ce9`, chain 1)
+- LegionAddressRegistry (`0x58ddd0816120cab3e646dd57b9722b016552aed7`, chain 1)
+- LegionBouncer (`0x4a7aca57a685c9e893f60a716415e5e588500533`, chain 1)
+- LegionPreLiquidSaleV1Factory (`0x6d1a5c2c7f71c3a16a36a247f12ce8aedeb5c4e7`, chain 1)
+- LegionVestingFactory (`0x7832d6730aa93f6954ca158e392b21d0a95e9e5f`, chain 1)
 
 ## Contract Surface Quality
 
@@ -104,18 +104,18 @@ The pinned logic-topography run contains 4 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| LegionAddressRegistry | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388475 | `0x58ddd0...52aed7` | ✅ Audited |
+| LegionAddressRegistry | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388475 | `0x58ddd0816120cab3e646dd57b9722b016552aed7` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (6)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| DiamondHandsVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3548a8...60d514` | ⚠️ Unaudited |
-| LegionBouncer | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388474 | `0x4a7aca...500533` | ⚠️ Unaudited |
-| LegionPreLiquidSaleV1Factory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388476 | `0x6d1a5c...b5c4e7` | ⚠️ Unaudited |
-| LegionPreLiquidSaleV2Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5acc2f...3efb24` | ⚠️ Unaudited |
-| LegionTokenDistributorFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd009f5...a97f9d` | ⚠️ Unaudited |
-| LegionVestingFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388477 | `0x7832d6...5e9e5f` | ⚠️ Unaudited |
+| DiamondHandsVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3548a8345a37f58f232f97eb050c937fb660d514` | ⚠️ Unaudited |
+| LegionBouncer | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388474 | `0x4a7aca57a685c9e893f60a716415e5e588500533` | ⚠️ Unaudited |
+| LegionPreLiquidSaleV1Factory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388476 | `0x6d1a5c2c7f71c3a16a36a247f12ce8aedeb5c4e7` | ⚠️ Unaudited |
+| LegionPreLiquidSaleV2Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5acc2f2ac83e4615f85cfc9a5bc903355a3efb24` | ⚠️ Unaudited |
+| LegionTokenDistributorFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd009f57acece44e6e22ff481f2f325fea8a97f9d` | ⚠️ Unaudited |
+| LegionVestingFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388477 | `0x7832d6730aa93f6954ca158e392b21d0a95e9e5f` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -135,10 +135,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388471 | `0x076ff2...741add` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388472 | `0x3cd9e6...1777ef` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388473 | `0x423781...9aee06` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388478 | `0x9b7ed9...d53ce9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388471 | `0x076ff291ea6783c17d8ac3459e1fd9da37741add` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388472 | `0x3cd9e6a79446d8331101252f6ca8d943ac1777ef` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388473 | `0x423781817e3998659ae3a012357e1b958e9aee06` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388478 | `0x9b7ed9757e0e97e11427377fed3bb46f92d53ce9` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -170,7 +170,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Code4rena - Legion EVM Audit.pdf | LegionBaseSale | unmatched — not counted | — | mentioned in findings context | no |
 | Code4rena - Legion EVM Audit.pdf | LegionPreLiquidSale | unmatched — not counted | — | mentioned in findings context | no |
 | Code4rena - Legion EVM Audit.pdf | LegionSealedBidAuction | unmatched — not counted | — | mentioned in findings context | no |
-| Code4rena - Legion EVM Audit.pdf | LegionAddressRegistry | own contract | LegionAddressRegistry (selected) `0x58ddd0...52aed7` — deployed 2025-03-10 13:49:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Code4rena - Legion EVM Audit.pdf | LegionAddressRegistry | own contract | LegionAddressRegistry (selected) `0x58ddd0816120cab3e646dd57b9722b016552aed7` — deployed 2025-03-10 13:49:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Code4rena - Legion EVM Audit.pdf | ILegionFixedPriceSale | unmatched — not counted | — | mentioned in findings context | no |
 | Code4rena - Legion EVM Audit.pdf | ECIES | unmatched — not counted | — | mentioned in findings context | no |
 | Legion - Zenith Audit Report.pdf | LegionPreLiquidSaleV1 | unmatched — not counted | — | listed in scope table | no |
@@ -194,7 +194,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Legion_Report1_Final.pdf | LegionSealedBidAuction | unmatched — not counted | — | listed in scope table and mentioned as target | no |
 | Legion_Report1_Final.pdf | MockBidToken | unmatched — not counted | — | listed in scope table and mentioned as target | no |
 | Legion_Report1_Final.pdf | AskToken | unmatched — not counted | — | listed in scope table and mentioned as target | no |
-| legion_smart_contracts_-_summary_report_1.1.pdf | LegionAddressRegistry | own contract | LegionAddressRegistry (selected) `0x58ddd0...52aed7` — deployed 2025-03-10 13:49:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| legion_smart_contracts_-_summary_report_1.1.pdf | LegionAddressRegistry | own contract | LegionAddressRegistry (selected) `0x58ddd0816120cab3e646dd57b9722b016552aed7` — deployed 2025-03-10 13:49:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | legion_smart_contracts_-_summary_report_1.1.pdf | LegionKYCRegistry | unmatched — not counted | — | Listed in scope section | no |
 | legion_smart_contracts_-_summary_report_1.1.pdf | LegionSealedBidAuction | unmatched — not counted | — | Listed in scope section | no |
 | legion_smart_contracts_-_summary_report_1.1.pdf | LegionFixedPriceSale | unmatched — not counted | — | Listed in scope section | no |
@@ -209,9 +209,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x4a7aca...500533` | LegionBouncer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x6d1a5c...b5c4e7` | LegionPreLiquidSaleV1Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x7832d6...5e9e5f` | LegionVestingFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x4a7aca57a685c9e893f60a716415e5e588500533` | LegionBouncer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x6d1a5c2c7f71c3a16a36a247f12ce8aedeb5c4e7` | LegionPreLiquidSaleV1Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x7832d6730aa93f6954ca158e392b21d0a95e9e5f` | LegionVestingFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

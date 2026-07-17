@@ -52,10 +52,10 @@ The pinned logic-topography run contains 2 contract row(s) across bsc, ethereum,
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x005fe0...e7c1c1`, chain 1)
-- UnnamedContract (`0xe5c659...53105a`, chain 56)
-- BTCMT (`0x410a56...f09567`, chain 56)
-- StakingOwn (`0x78ae30...5ebcfb`, chain 56)
+- UnnamedContract (`0x005fe03e5d3a3390f7ec43d95adf08be4ee7c1c1`, chain 1)
+- UnnamedContract (`0xe5c6596a6c8e252ae323191a4374b7098353105a`, chain 56)
+- BTCMT (`0x410a56541bd912f9b60943fcb344f1e3d6f09567`, chain 56)
+- StakingOwn (`0x78ae303182fca96a4629a78ee13235e6525ebcfb`, chain 56)
 
 ## Contract Surface Quality
 
@@ -100,15 +100,15 @@ The pinned logic-topography run contains 2 contract row(s) across bsc, ethereum,
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BTCMT | unknown | project_anchor | own_supporting | 0 | bsc | unit-247592 | `0x410a56...f09567` | ✅ Audited |
+| BTCMT | unknown | project_anchor | own_supporting | 0 | bsc | unit-247592 | `0x410a56541bd912f9b60943fcb344f1e3d6f09567` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BTCMTSale | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2b775b...741827` | ⚠️ Unaudited |
-| Staking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe742fc...5a7e12` | ⚠️ Unaudited |
-| StakingOwn | unknown | project_anchor | own_supporting | 0 | bsc | unit-247593 | `0x78ae30...5ebcfb` | ⚠️ Unaudited |
+| BTCMTSale | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2b775b778f84b10877a41b78d6724634c7741827` | ⚠️ Unaudited |
+| Staking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe742fce58484ff7be7835d95e350c23ce55a7e12` | ⚠️ Unaudited |
+| StakingOwn | unknown | project_anchor | own_supporting | 0 | bsc | unit-247593 | `0x78ae303182fca96a4629a78ee13235e6525ebcfb` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -128,9 +128,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-247591 | `0x005fe0...e7c1c1` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-247594 | `0xe5c659...53105a` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | heco | n/a | 3 deployments: heco `0x410a56...f09567`; heco `0x78ae30...5ebcfb`; heco `0xe742fc...5a7e12` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-247591 | `0x005fe03e5d3a3390f7ec43d95adf08be4ee7c1c1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-247594 | `0xe5c6596a6c8e252ae323191a4374b7098353105a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | heco | n/a | 3 deployments: heco `0x410a56541bd912f9b60943fcb344f1e3d6f09567`; heco `0x78ae303182fca96a4629a78ee13235e6525ebcfb`; heco `0xe742fce58484ff7be7835d95e350c23ce55a7e12` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -152,9 +152,9 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| MintoAuditReport.pdf | BTCMT | own contract | BTCMT (selected) `0x410a56...f09567` — deployed 2022-05-17 16:23:20+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| MintoAuditReport.pdf | BTCMT | own contract | BTCMT (selected) `0x410a56541bd912f9b60943fcb344f1e3d6f09567` — deployed 2022-05-17 16:23:20+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | MintoAuditReport.pdf | Staking | unmatched — not counted | — | — | no |
-| ingreso.php | BTCMT | own contract | BTCMT (selected) `0x410a56...f09567` — deployed 2022-05-17 16:23:20+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ingreso.php | BTCMT | own contract | BTCMT (selected) `0x410a56541bd912f9b60943fcb344f1e3d6f09567` — deployed 2022-05-17 16:23:20+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ingreso.php | Staking | unmatched — not counted | — | Staking - https://hecoinfo.com/address/0x9Cad4215FD0fc460B042eC86AbDe0130aA77069E#readContract | no |
 
 ## Coverage Gaps
@@ -163,7 +163,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | `0x78ae30...5ebcfb` | StakingOwn | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x78ae303182fca96a4629a78ee13235e6525ebcfb` | StakingOwn | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

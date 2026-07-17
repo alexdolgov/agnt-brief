@@ -57,9 +57,9 @@ The pinned logic-topography run contains 1 contract row(s) across base, ethereum
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x7ddb80...a644ae`, chain 1)
-- UnnamedContract (`0x6a34df...0165f3`, chain 8453)
-- AfiOracle (`0x32f232...a1a582`, chain 1)
+- UnnamedContract (`0x7ddb808b451890cd6bddcb06b3c80bf355a644ae`, chain 1)
+- UnnamedContract (`0x6a34df39c0d66332f957ecacf84da1faf30165f3`, chain 8453)
+- AfiOracle (`0x32f232423829296f035e2cfcdc426911d4a1a582`, chain 1)
 
 ## Contract Surface Quality
 
@@ -105,14 +105,14 @@ The pinned logic-topography run contains 1 contract row(s) across base, ethereum
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AfiOracle | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378646 | `0x32f232...a1a582` | ⚠️ Unaudited |
-| afiRwaVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x10b3e8...ec1b24` | ⚠️ Unaudited |
-| afiToken | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x0b4c65...b40fd1` | ⚠️ Unaudited |
-| afiVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xd0ec96...c24454` | ⚠️ Unaudited |
-| Manager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x38750a...ec7839` | ⚠️ Unaudited |
-| Network | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1457c0...b64b93` | ⚠️ Unaudited |
-| Oracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0bb632...946ae4` | ⚠️ Unaudited |
-| Yield | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x90e937...b377fb` | ⚠️ Unaudited |
+| AfiOracle | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378646 | `0x32f232423829296f035e2cfcdc426911d4a1a582` | ⚠️ Unaudited |
+| afiRwaVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x10b3e8015b4bbf3a5ec359314ddafe399fec1b24` | ⚠️ Unaudited |
+| afiToken | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x0b4c655bc989baafe728f8270ff988a7c2b40fd1` | ⚠️ Unaudited |
+| afiVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xd0ec961a8dc94bc6791184456b6b210408c24454` | ⚠️ Unaudited |
+| Manager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x38750a3fd3ca0c2fad4ebdd5588ef81164ec7839` | ⚠️ Unaudited |
+| Network | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1457c085a609dc3997d99525d4764ccbacb64b93` | ⚠️ Unaudited |
+| Oracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0bb632c59b13b7254e86ac72aa18241806946ae4` | ⚠️ Unaudited |
+| Yield | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x90e9378e8e73a195580baedb6b27caf8ffb377fb` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -132,8 +132,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378647 | `0x7ddb80...a644ae` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-378648 | `0x6a34df...0165f3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378647 | `0x7ddb808b451890cd6bddcb06b3c80bf355a644ae` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-378648 | `0x6a34df39c0d66332f957ecacf84da1faf30165f3` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -176,7 +176,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x32f232...a1a582` | AfiOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x32f232423829296f035e2cfcdc426911d4a1a582` | AfiOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

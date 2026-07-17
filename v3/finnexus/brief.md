@@ -89,7 +89,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| FnxToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-139832 | `0xad2f67...80b496` | ⚠️ Unaudited |
+| FnxToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-139832 | `0xad2f6762e2cb2bf6412522b194648fe33f80b496` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

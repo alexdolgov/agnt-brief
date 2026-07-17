@@ -61,7 +61,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BuffaloToken | token | bsc | n/a | [`0x10a49f...e77ea5`](./contracts/bsc-56/0x10a49f1fc8c604ea7f1c49bcc6ab2a8e58e77ea5/) | ⚠️ Unaudited |
+| BuffaloToken | token | bsc | n/a | [`0x10a49f1fc8c604ea7f1c49bcc6ab2a8e58e77ea5`](./contracts/bsc-56/0x10a49f1fc8c604ea7f1c49bcc6ab2a8e58e77ea5/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,7 +93,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x10a49f...e77ea5`](./contracts/bsc-56/0x10a49f1fc8c604ea7f1c49bcc6ab2a8e58e77ea5/) | BuffaloToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x10a49f1fc8c604ea7f1c49bcc6ab2a8e58e77ea5`](./contracts/bsc-56/0x10a49f1fc8c604ea7f1c49bcc6ab2a8e58e77ea5/) | BuffaloToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

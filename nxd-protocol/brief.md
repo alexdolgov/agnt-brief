@@ -62,7 +62,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UniswapV2Pair | unknown | ethereum | n/a | [`0x98134c...2c13ac`](./contracts/ethereum-1/0x98134cde70ff7280bb4b9f4eba2154009f2c13ac/) | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | ethereum | n/a | [`0x98134cde70ff7280bb4b9f4eba2154009f2c13ac`](./contracts/ethereum-1/0x98134cde70ff7280bb4b9f4eba2154009f2c13ac/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

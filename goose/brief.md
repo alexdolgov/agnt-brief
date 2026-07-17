@@ -60,11 +60,11 @@ The protocol comprises 3 functional families. Contracts are linked by 4 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| DataStorage | unknown | arbitrum | n/a | [`0x7da1ea...448ef3`](./contracts/arbitrum-42161/0x7da1ea975cfa94c230fe527b9d36a62a77448ef3/) | ⚠️ Unaudited |
-| LRTVault | core_logic | ethereum | n/a | [`0x234c01...4f6299`](./contracts/ethereum-1/0x234c013dccb6af642fcb7060a91c9c71504f6299/) | ⚠️ Unaudited |
-| Safe | unknown | ethereum | n/a | [`0x509b38...d695e0`](./contracts/ethereum-1/0x509b38c5f884067e2128c4fc89d1489813d695e0/) | ⚠️ Unaudited |
-| USDVault | core_logic | arbitrum | n/a | 2 deployments: ethereum `0xe8a01d...e7e9fb`; arbitrum [`0x0874f9...232899`](./contracts/arbitrum-42161/0x0874f961178879cdbde3500544c49f864f232899/) | ⚠️ Unaudited |
-| VaultFactory | registry | arbitrum | n/a | [`0xa988bf...ae6e3f`](./contracts/arbitrum-42161/0xa988bfe90492d701069702321e319628c9ae6e3f/) | ⚠️ Unaudited |
+| DataStorage | unknown | arbitrum | n/a | [`0x7da1ea975cfa94c230fe527b9d36a62a77448ef3`](./contracts/arbitrum-42161/0x7da1ea975cfa94c230fe527b9d36a62a77448ef3/) | ⚠️ Unaudited |
+| LRTVault | core_logic | ethereum | n/a | [`0x234c013dccb6af642fcb7060a91c9c71504f6299`](./contracts/ethereum-1/0x234c013dccb6af642fcb7060a91c9c71504f6299/) | ⚠️ Unaudited |
+| Safe | unknown | ethereum | n/a | [`0x509b38c5f884067e2128c4fc89d1489813d695e0`](./contracts/ethereum-1/0x509b38c5f884067e2128c4fc89d1489813d695e0/) | ⚠️ Unaudited |
+| USDVault | core_logic | arbitrum | n/a | 2 deployments: ethereum `0xe8a01d8dac4af19ec7a22cf87f3d141ce6e7e9fb`; arbitrum [`0x0874f961178879cdbde3500544c49f864f232899`](./contracts/arbitrum-42161/0x0874f961178879cdbde3500544c49f864f232899/) | ⚠️ Unaudited |
+| VaultFactory | registry | arbitrum | n/a | [`0xa988bfe90492d701069702321e319628c9ae6e3f`](./contracts/arbitrum-42161/0xa988bfe90492d701069702321e319628c9ae6e3f/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -84,13 +84,13 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | opbnb | n/a | `0x2618d3...a5230d` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x7da1ea...448ef3` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x857ab0...0c2d3b` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0xa988bf...ae6e3f` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0xbaa11f...97a6bb` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0xc5db81...8563b9` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0xe4bf4e...6ec8d3` | ❓ Unverified |
+| UnnamedContract | unknown | opbnb | n/a | `0x2618d3ab61ae9c7f8082e37c7e6aa14cf1a5230d` | ❓ Unverified |
+| UnnamedContract | unknown | opbnb | n/a | `0x7da1ea975cfa94c230fe527b9d36a62a77448ef3` | ❓ Unverified |
+| UnnamedContract | unknown | opbnb | n/a | `0x857ab0b4f236f7dd7e5ac5f96c0bbebf230c2d3b` | ❓ Unverified |
+| UnnamedContract | unknown | opbnb | n/a | `0xa988bfe90492d701069702321e319628c9ae6e3f` | ❓ Unverified |
+| UnnamedContract | unknown | opbnb | n/a | `0xbaa11f119d3209a506ffb5911f1812bfca97a6bb` | ❓ Unverified |
+| UnnamedContract | unknown | opbnb | n/a | `0xc5db819a2473961857f24c2bedf508def28563b9` | ❓ Unverified |
+| UnnamedContract | unknown | opbnb | n/a | `0xe4bf4e9be7004f081583952f34ed51efa66ec8d3` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -104,10 +104,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | [`0x7da1ea...448ef3`](./contracts/arbitrum-42161/0x7da1ea975cfa94c230fe527b9d36a62a77448ef3/) | DataStorage | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x234c01...4f6299`](./contracts/ethereum-1/0x234c013dccb6af642fcb7060a91c9c71504f6299/) | LRTVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x0874f9...232899`](./contracts/arbitrum-42161/0x0874f961178879cdbde3500544c49f864f232899/) | USDVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xa988bf...ae6e3f`](./contracts/arbitrum-42161/0xa988bfe90492d701069702321e319628c9ae6e3f/) | VaultFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x7da1ea975cfa94c230fe527b9d36a62a77448ef3`](./contracts/arbitrum-42161/0x7da1ea975cfa94c230fe527b9d36a62a77448ef3/) | DataStorage | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x234c013dccb6af642fcb7060a91c9c71504f6299`](./contracts/ethereum-1/0x234c013dccb6af642fcb7060a91c9c71504f6299/) | LRTVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x0874f961178879cdbde3500544c49f864f232899`](./contracts/arbitrum-42161/0x0874f961178879cdbde3500544c49f864f232899/) | USDVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xa988bfe90492d701069702321e319628c9ae6e3f`](./contracts/arbitrum-42161/0xa988bfe90492d701069702321e319628c9ae6e3f/) | VaultFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

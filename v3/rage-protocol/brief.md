@@ -57,9 +57,9 @@ The pinned logic-topography run contains 3 contract row(s) across base. Structur
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- Rage (`0xc0df50...79ea15`, chain 8453)
-- RageBuyingProtocol (`0xff70cd...b6da4c`, chain 8453)
-- RageChaosEngine (`0x4c15f7...2813fe`, chain 8453)
+- Rage (`0xc0df50143ea93aec63e38a6ed4e92b378079ea15`, chain 8453)
+- RageBuyingProtocol (`0xff70cd1e1931372f869c936582a7f42e49b6da4c`, chain 8453)
+- RageChaosEngine (`0x4c15f778ab59f25d5dfd2dd508236a25ed2813fe`, chain 8453)
 
 ## Contract Surface Quality
 
@@ -103,33 +103,33 @@ The pinned logic-topography run contains 3 contract row(s) across base. Structur
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Rage | unknown | project_anchor | own_supporting | 0 | base | unit-391264 | `0xc0df50...79ea15` | ✅ Audited |
-| RageBuyingProtocol | unknown | project_anchor | own_supporting | 0 | base | unit-391266 | `0xff70cd...b6da4c` | ✅ Audited |
-| RageChaosEngine | unknown | project_anchor | own_supporting | 0 | base | unit-391262 | `0x4c15f7...2813fe` | ✅ Audited |
+| Rage | unknown | project_anchor | own_supporting | 0 | base | unit-391264 | `0xc0df50143ea93aec63e38a6ed4e92b378079ea15` | ✅ Audited |
+| RageBuyingProtocol | unknown | project_anchor | own_supporting | 0 | base | unit-391266 | `0xff70cd1e1931372f869c936582a7f42e49b6da4c` | ✅ Audited |
+| RageChaosEngine | unknown | project_anchor | own_supporting | 0 | base | unit-391262 | `0x4c15f778ab59f25d5dfd2dd508236a25ed2813fe` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (19)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Circle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x5babfc...dec402` | ⚠️ Unaudited |
-| CircleTemple | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xe77b94...1fb987` | ⚠️ Unaudited |
-| Hestia | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbc7755...6259d8` | ⚠️ Unaudited |
-| HestiaChaosEngine | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x4e5524...1887b8` | ⚠️ Unaudited |
-| HestiaMine | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xc10aa7...61ddc3` | ⚠️ Unaudited |
-| RageCalculation | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb8ed15...c75ae1` | ⚠️ Unaudited |
-| RageDepot | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x33e11f...da40de`; base `0xa87008...84c82c` | ⚠️ Unaudited |
-| RageOptionNft | token | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xe29a22...421178` | ⚠️ Unaudited |
-| RageOracle | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x9b8a45...42874c` | ⚠️ Unaudited |
-| RageOtc | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 6 deployments: base `0x022118...d12b6c`; base `0x43a3a8...90c224`; base `0x4d9593...9441e4`; base `0xaee9b9...6ecbe1`; base `0xc95e30...8ad6a1`; base `0xdcb26d...a8be85` | ⚠️ Unaudited |
-| RagePresale | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x96cd71...4db3ac` | ⚠️ Unaudited |
-| RageSwapper | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x03fee5...750c44` | ⚠️ Unaudited |
-| RageTreasury | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x94e29a...adae30` | ⚠️ Unaudited |
-| Urm | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xf0e334...997837` | ⚠️ Unaudited |
-| UrmFlankingTower | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x8a0f28...c3e62c`; base `0xf25898...be6657` | ⚠️ Unaudited |
-| UrmFortress | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x5e06b7...0f1fc3` | ⚠️ Unaudited |
-| UrmOracle | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xa51e78...2e45a1` | ⚠️ Unaudited |
-| UrmSwapper | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x52c540...cde13c` | ⚠️ Unaudited |
-| UrmSwapperRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x3cb81b...d0ee31` | ⚠️ Unaudited |
+| Circle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x5babfc2f240bc5de90eb7e19d789412db1dec402` | ⚠️ Unaudited |
+| CircleTemple | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xe77b94b2a3ab82d4bba7ae2e05b6176dd91fb987` | ⚠️ Unaudited |
+| Hestia | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbc7755a153e852cf76cccddb4c2e7c368f6259d8` | ⚠️ Unaudited |
+| HestiaChaosEngine | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x4e5524e08fee52cef973380fdbea8909361887b8` | ⚠️ Unaudited |
+| HestiaMine | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xc10aa720dfde56be6fb37f91189a64215a61ddc3` | ⚠️ Unaudited |
+| RageCalculation | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb8ed155ab154b2dbadcc07b814cc52e92dc75ae1` | ⚠️ Unaudited |
+| RageDepot | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x33e11fd175435188b0b750eb966fd6b195da40de`; base `0xa87008e732cfd9003c6bfba84369c2778284c82c` | ⚠️ Unaudited |
+| RageOptionNft | token | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xe29a221ac6e69927161c3dfcc663f75119421178` | ⚠️ Unaudited |
+| RageOracle | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x9b8a45c4a0fbd44158480d9b4b41e0bdca42874c` | ⚠️ Unaudited |
+| RageOtc | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 6 deployments: base `0x022118088fb1484a728a23d60b1866c5f1d12b6c`; base `0x43a3a8d71da54f0ec9d75417945d494add90c224`; base `0x4d95932b66eca32f8527303aee75a565969441e4`; base `0xaee9b9591bb05ccc708482f9725b85d0156ecbe1`; base `0xc95e30eaacfbbfe71211b33ea1a4c0157e8ad6a1`; base `0xdcb26dd3fc28f24fe97539dca230e23feca8be85` | ⚠️ Unaudited |
+| RagePresale | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x96cd711dd6ba5d14b98402fa58648d68d64db3ac` | ⚠️ Unaudited |
+| RageSwapper | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x03fee5ba01d5b71c7f7689490826ba75a2750c44` | ⚠️ Unaudited |
+| RageTreasury | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x94e29af27dc811406e1f5ded721e42e160adae30` | ⚠️ Unaudited |
+| Urm | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xf0e3349f00972475a5d16721796091aa3b997837` | ⚠️ Unaudited |
+| UrmFlankingTower | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x8a0f28fadaf826491a64fea300ffb14b15c3e62c`; base `0xf258981a818d49580278e183e5f8ff8069be6657` | ⚠️ Unaudited |
+| UrmFortress | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x5e06b7117d47210a5fdc54d08a9dd8d8bf0f1fc3` | ⚠️ Unaudited |
+| UrmOracle | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xa51e78a5b3380516f9cf2c910641703d5c2e45a1` | ⚠️ Unaudited |
+| UrmSwapper | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x52c540f4d8d16f7f6d625b9e08317a1ef2cde13c` | ⚠️ Unaudited |
+| UrmSwapperRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x3cb81b027bdcd4c653f13a94622f2f578ad0ee31` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -149,7 +149,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| WeightedIndex | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 2 | base | n/a | 2 deployments: base `0x55a81d...56f6c0`; base `0xf760fd...2470ff` | ❓ Unverified |
+| WeightedIndex | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 2 | base | n/a | 2 deployments: base `0x55a81da2a319dd60fb028c53cb4419493b56f6c0`; base `0xf760fd8feb1f5e3bf3651e2e4f227285a82470ff` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -169,9 +169,9 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| audit.pdf | Rage | own contract | Rage (selected) `0xc0df50...79ea15` — deployed 2025-10-24 19:58:39+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| audit.pdf | RageBuyingProtocol | own contract | RageBuyingProtocol (selected) `0xff70cd...b6da4c` — deployed 2025-10-24 20:56:25+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| audit.pdf | RageChaosEngine | own contract | RageChaosEngine (selected) `0x4c15f7...2813fe` — deployed 2025-10-24 20:56:09+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| audit.pdf | Rage | own contract | Rage (selected) `0xc0df50143ea93aec63e38a6ed4e92b378079ea15` — deployed 2025-10-24 19:58:39+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| audit.pdf | RageBuyingProtocol | own contract | RageBuyingProtocol (selected) `0xff70cd1e1931372f869c936582a7f42e49b6da4c` — deployed 2025-10-24 20:56:25+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| audit.pdf | RageChaosEngine | own contract | RageChaosEngine (selected) `0x4c15f778ab59f25d5dfd2dd508236a25ed2813fe` — deployed 2025-10-24 20:56:09+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | audit.pdf | RageOptionNft | unmatched — not counted | — | — | no |
 | audit.pdf | RageOracle | unmatched — not counted | — | — | no |
 | audit.pdf | RageSwapper | unmatched — not counted | — | — | no |

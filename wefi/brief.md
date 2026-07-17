@@ -62,7 +62,7 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| WeFi | unknown | polygon | n/a | [`0xffa188...7b6a52`](./contracts/polygon-137/0xffa188493c15dfaf2c206c97d8633377847b6a52/) | ⚠️ Unaudited |
+| WeFi | unknown | polygon | n/a | [`0xffa188493c15dfaf2c206c97d8633377847b6a52`](./contracts/polygon-137/0xffa188493c15dfaf2c206c97d8633377847b6a52/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -82,7 +82,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | polygon | n/a | `0x03ad1b...f6ce50` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x03ad1bcc7499d49b66c33c9bd5ac9050d2f6ce50` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -98,7 +98,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| polygon | [`0xffa188...7b6a52`](./contracts/polygon-137/0xffa188493c15dfaf2c206c97d8633377847b6a52/) | WeFi | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xffa188493c15dfaf2c206c97d8633377847b6a52`](./contracts/polygon-137/0xffa188493c15dfaf2c206c97d8633377847b6a52/) | WeFi | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -57,7 +57,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x73d7c8...45d1b4`, chain 1)
+- UnnamedContract (`0x73d7c860998ca3c01ce8c808f5577d94d545d1b4`, chain 1)
 
 ## Contract Surface Quality
 
@@ -103,16 +103,16 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| GnosisSafeProxy | unknown | external_dependency_or_infra | standard_proxy_or_library (excluded) | 1 | polygon | n/a | `0x9546a2...cb3ddd` | ⚠️ Unaudited |
-| IxsGovernanceToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf65dd1...b1f20c` | ⚠️ Unaudited |
-| IxsSale | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x4f4c18...6fefb6` | ⚠️ Unaudited |
-| IxsToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x41d8eb...1a9680` | ⚠️ Unaudited |
-| IxsTokenAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x83f081...748a39` | ⚠️ Unaudited |
-| Presale | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x98dc0b...7749e7` | ⚠️ Unaudited |
-| SimpleBatch | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x11ba4f...6baf87` | ⚠️ Unaudited |
-| TitaniumTech | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x52a296...02b76f` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | external_dependency_or_infra | standard_proxy_or_library (excluded) | 1 | base | n/a | `0x32714d...558bb9` | ⚠️ Unaudited |
-| WrappedToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x1ba17c...43a1b8` | ⚠️ Unaudited |
+| GnosisSafeProxy | unknown | external_dependency_or_infra | standard_proxy_or_library (excluded) | 1 | polygon | n/a | `0x9546a22c244497b6fb5338e4ff7c74c5accb3ddd` | ⚠️ Unaudited |
+| IxsGovernanceToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf65dd1b5de5655b56ae8beae49bb2bcb95b1f20c` | ⚠️ Unaudited |
+| IxsSale | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x4f4c185dee9f069bc0f6a5d51ad39f33fb6fefb6` | ⚠️ Unaudited |
+| IxsToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x41d8eb8b8d69c28a3879e93cbb3c4c6b8d1a9680` | ⚠️ Unaudited |
+| IxsTokenAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x83f08144e7383a81b0efeb87e421cf0da2748a39` | ⚠️ Unaudited |
+| Presale | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x98dc0b47ba9338d10b46ef419ef3589b9b7749e7` | ⚠️ Unaudited |
+| SimpleBatch | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x11ba4ff86ba4a0d7cbf3f80f0200e043936baf87` | ⚠️ Unaudited |
+| TitaniumTech | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x52a29640447db7bae033b349006607829b02b76f` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | external_dependency_or_infra | standard_proxy_or_library (excluded) | 1 | base | n/a | `0x32714df9ee6ae513e04902c803e34eef7b558bb9` | ⚠️ Unaudited |
+| WrappedToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x1ba17c639bdaecd8dc4aac37df062d17ee43a1b8` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -132,7 +132,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-243214 | `0x73d7c8...45d1b4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-243214 | `0x73d7c860998ca3c01ce8c808f5577d94d545d1b4` | ❓ Unverified |
 
 ## Audit Inventory
 

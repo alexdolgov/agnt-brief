@@ -52,25 +52,25 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x24781b...31dccf`, chain 1)
-- UnnamedContract (`0x883f82...a40841`, chain 1)
-- UnnamedContract (`0xd43106...3f0438`, chain 1)
-- CopperPriceConsumer (`0x081bf0...cd9ab6`, chain 1)
-- DepositLib (`0x4f1f46...6705e5`, chain 1)
-- DepositViewLib (`0xc70e33...d89886`, chain 1)
-- PermitLib (`0xa965f3...f2f668`, chain 1)
-- RedeemViewLib (`0x8c1d1a...723dc6`, chain 1)
-- SwapLib (`0x39a761...4da5f6`, chain 1)
-- TransparentUpgradeableProxy (`0x1ead41...b3b4b5`, chain 1)
-- TransparentUpgradeableProxy (`0x40a861...a9275f`, chain 1)
-- TransparentUpgradeableProxy (`0x7f6af0...b77193`, chain 1)
-- TransparentUpgradeableProxy (`0x847352...a480ab`, chain 1)
-- TransparentUpgradeableProxy (`0x8e4014...c082d8`, chain 1)
-- TransparentUpgradeableProxy (`0x9cd1ad...cb344a`, chain 1)
-- TransparentUpgradeableProxy (`0xa5ce80...b91989`, chain 1)
-- TransparentUpgradeableProxy (`0xa808f4...0b5711`, chain 1)
-- TransparentUpgradeableProxy (`0xd02696...44a964`, chain 1)
-- TransparentUpgradeableProxy (`0xf60d14...ce236d`, chain 1)
+- UnnamedContract (`0x24781bed8b72527f9d7c5faa1ff0af192831dccf`, chain 1)
+- UnnamedContract (`0x883f821360507b3ab7712e363c48416fb3a40841`, chain 1)
+- UnnamedContract (`0xd43106e4e7261dffdbb439642f3ebb40ef3f0438`, chain 1)
+- CopperPriceConsumer (`0x081bf0914c2a8fdfe876ab36558e3db191cd9ab6`, chain 1)
+- DepositLib (`0x4f1f468d71459875a7844e302e6c55b4356705e5`, chain 1)
+- DepositViewLib (`0xc70e33c2a7851a7b35122275662aa47486d89886`, chain 1)
+- PermitLib (`0xa965f365382f8c706287b6ae22bff047b5f2f668`, chain 1)
+- RedeemViewLib (`0x8c1d1a4e5d66a2d85bff31a6681e82b5c8723dc6`, chain 1)
+- SwapLib (`0x39a761bbda0276bf9e712bed2538795d5b4da5f6`, chain 1)
+- TransparentUpgradeableProxy (`0x1ead418bab993c893a3c4c2343a140cfd9b3b4b5`, chain 1)
+- TransparentUpgradeableProxy (`0x40a8611580f4f896ccee2b949635f442e8a9275f`, chain 1)
+- TransparentUpgradeableProxy (`0x7f6af03c161383ae6b4557bb52d9d74f4eb77193`, chain 1)
+- TransparentUpgradeableProxy (`0x84735270ae4f8fe9ae15652f676ecb524ea480ab`, chain 1)
+- TransparentUpgradeableProxy (`0x8e4014fd3f97b7a15a3b291067a58a0e81c082d8`, chain 1)
+- TransparentUpgradeableProxy (`0x9cd1adab995407a9b452af6b49ffa85583cb344a`, chain 1)
+- TransparentUpgradeableProxy (`0xa5ce803d61f694e35b3889392c82b5b9b2b91989`, chain 1)
+- TransparentUpgradeableProxy (`0xa808f48e4b4124d639560a54d7d833ec3f0b5711`, chain 1)
+- TransparentUpgradeableProxy (`0xd0269617fda8a1db9b91cf6939e14799c444a964`, chain 1)
+- TransparentUpgradeableProxy (`0xf60d1494c59462521ffb30d4b4f212f236ce236d`, chain 1)
 
 ## Contract Surface Quality
 
@@ -116,22 +116,22 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| CommissionTransfer | unknown | project_anchor | own_supporting | 1 | ethereum | unit-378703 | `0x9cd1ad...cb344a` | ⚠️ Unaudited |
-| CopperPriceConsumer | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378686 | `0x081bf0...cd9ab6` | ⚠️ Unaudited |
-| CUPToken | unknown | project_anchor | own_supporting | 1 | ethereum | unit-378695 | `0x7f6af0...b77193` | ⚠️ Unaudited |
-| DepositLib | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378689 | `0x4f1f46...6705e5` | ⚠️ Unaudited |
-| DepositViewLib | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378693 | `0xc70e33...d89886` | ⚠️ Unaudited |
-| EpochManager | unknown | project_anchor | own_supporting | 1 | ethereum | unit-378701 | `0x40a861...a9275f` | ⚠️ Unaudited |
-| HostAdapter | unknown | project_anchor | own_supporting | 1 | ethereum | unit-378696 | `0xd02696...44a964` | ⚠️ Unaudited |
-| PermitLib | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378692 | `0xa965f3...f2f668` | ⚠️ Unaudited |
-| RedeemEngine | unknown | project_anchor | own_supporting | 1 | ethereum | unit-378700 | `0x1ead41...b3b4b5` | ⚠️ Unaudited |
-| RedeemViewLib | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378691 | `0x8c1d1a...723dc6` | ⚠️ Unaudited |
-| SettlementEngine | unknown | project_anchor | own_supporting | 1 | ethereum | unit-378704 | `0xa5ce80...b91989` | ⚠️ Unaudited |
-| SwapLib | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378688 | `0x39a761...4da5f6` | ⚠️ Unaudited |
-| xCUP | unknown | project_anchor | own_supporting | 1 | ethereum | unit-378698 | `0x847352...a480ab` | ⚠️ Unaudited |
-| XCUPOraclePool | unknown | project_anchor | own_supporting | 1 | ethereum | unit-378699 | `0x8e4014...c082d8` | ⚠️ Unaudited |
-| XCUPZapRouter | unknown | project_anchor | own_supporting | 1 | ethereum | unit-378702 | `0xf60d14...ce236d` | ⚠️ Unaudited |
-| Zapper | unknown | project_anchor | own_supporting | 1 | ethereum | unit-378697 | `0xa808f4...0b5711` | ⚠️ Unaudited |
+| CommissionTransfer | unknown | project_anchor | own_supporting | 1 | ethereum | unit-378703 | `0x9cd1adab995407a9b452af6b49ffa85583cb344a` | ⚠️ Unaudited |
+| CopperPriceConsumer | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378686 | `0x081bf0914c2a8fdfe876ab36558e3db191cd9ab6` | ⚠️ Unaudited |
+| CUPToken | unknown | project_anchor | own_supporting | 1 | ethereum | unit-378695 | `0x7f6af03c161383ae6b4557bb52d9d74f4eb77193` | ⚠️ Unaudited |
+| DepositLib | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378689 | `0x4f1f468d71459875a7844e302e6c55b4356705e5` | ⚠️ Unaudited |
+| DepositViewLib | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378693 | `0xc70e33c2a7851a7b35122275662aa47486d89886` | ⚠️ Unaudited |
+| EpochManager | unknown | project_anchor | own_supporting | 1 | ethereum | unit-378701 | `0x40a8611580f4f896ccee2b949635f442e8a9275f` | ⚠️ Unaudited |
+| HostAdapter | unknown | project_anchor | own_supporting | 1 | ethereum | unit-378696 | `0xd0269617fda8a1db9b91cf6939e14799c444a964` | ⚠️ Unaudited |
+| PermitLib | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378692 | `0xa965f365382f8c706287b6ae22bff047b5f2f668` | ⚠️ Unaudited |
+| RedeemEngine | unknown | project_anchor | own_supporting | 1 | ethereum | unit-378700 | `0x1ead418bab993c893a3c4c2343a140cfd9b3b4b5` | ⚠️ Unaudited |
+| RedeemViewLib | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378691 | `0x8c1d1a4e5d66a2d85bff31a6681e82b5c8723dc6` | ⚠️ Unaudited |
+| SettlementEngine | unknown | project_anchor | own_supporting | 1 | ethereum | unit-378704 | `0xa5ce803d61f694e35b3889392c82b5b9b2b91989` | ⚠️ Unaudited |
+| SwapLib | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378688 | `0x39a761bbda0276bf9e712bed2538795d5b4da5f6` | ⚠️ Unaudited |
+| xCUP | unknown | project_anchor | own_supporting | 1 | ethereum | unit-378698 | `0x84735270ae4f8fe9ae15652f676ecb524ea480ab` | ⚠️ Unaudited |
+| XCUPOraclePool | unknown | project_anchor | own_supporting | 1 | ethereum | unit-378699 | `0x8e4014fd3f97b7a15a3b291067a58a0e81c082d8` | ⚠️ Unaudited |
+| XCUPZapRouter | unknown | project_anchor | own_supporting | 1 | ethereum | unit-378702 | `0xf60d1494c59462521ffb30d4b4f212f236ce236d` | ⚠️ Unaudited |
+| Zapper | unknown | project_anchor | own_supporting | 1 | ethereum | unit-378697 | `0xa808f48e4b4124d639560a54d7d833ec3f0b5711` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -151,9 +151,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378687 | `0x24781b...31dccf` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378690 | `0x883f82...a40841` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378694 | `0xd43106...3f0438` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378687 | `0x24781bed8b72527f9d7c5faa1ff0af192831dccf` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378690 | `0x883f821360507b3ab7712e363c48416fb3a40841` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378694 | `0xd43106e4e7261dffdbb439642f3ebb40ef3f0438` | ❓ Unverified |
 
 ## Audit Inventory
 

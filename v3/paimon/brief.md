@@ -52,12 +52,12 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- ERC1967Proxy (`0x05353d...ac1631`, chain 56)
-- ERC1967Proxy (`0x48e9a6...b8184a`, chain 56)
-- ERC1967Proxy (`0x6dc9a4...602646`, chain 56)
-- ERC1967Proxy (`0x748560...2b5017`, chain 56)
-- ERC1967Proxy (`0x8505c3...4edad9`, chain 56)
-- ERC1967Proxy (`0xea088a...e0e231`, chain 56)
+- ERC1967Proxy (`0x05353dabf163fb2fec87f9e0f00f94eae4ac1631`, chain 56)
+- ERC1967Proxy (`0x48e9a6846d9722599621af8a6af0f23b0db8184a`, chain 56)
+- ERC1967Proxy (`0x6dc9a487bf8fd047e41ab336003ae6e4fe602646`, chain 56)
+- ERC1967Proxy (`0x748560eaccd4c01fc29b3b5b72d3b8c85b2b5017`, chain 56)
+- ERC1967Proxy (`0x8505c32631034a7ce8800239c08547e0434edad9`, chain 56)
+- ERC1967Proxy (`0xea088af719f3238982823fa5ee1c1facb2e0e231`, chain 56)
 
 ## Contract Surface Quality
 
@@ -101,17 +101,17 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| PPT | unknown | project_anchor | own_supporting | 1 | bsc | unit-390509 | `0x8505c3...4edad9` | ✅ Audited |
+| PPT | unknown | project_anchor | own_supporting | 1 | bsc | unit-390509 | `0x8505c32631034a7ce8800239c08547e0434edad9` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| EIP3643Token | unknown | project_anchor | own_supporting | 1 | bsc | unit-390508 | `0x6dc9a4...602646` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | project_anchor | own_supporting | 0 | bsc | unit-390504 | `0x48e9a6...b8184a` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | project_anchor | own_supporting | 0 | bsc | unit-390505 | `0x748560...2b5017` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | bsc | unit-390510 | `0xea088a...e0e231` | ⚠️ Unaudited |
-| ShadowERC20 | unknown | project_anchor | own_supporting | 1 | bsc | unit-390507 | `0x05353d...ac1631` | ⚠️ Unaudited |
+| EIP3643Token | unknown | project_anchor | own_supporting | 1 | bsc | unit-390508 | `0x6dc9a487bf8fd047e41ab336003ae6e4fe602646` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | project_anchor | own_supporting | 0 | bsc | unit-390504 | `0x48e9a6846d9722599621af8a6af0f23b0db8184a` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | project_anchor | own_supporting | 0 | bsc | unit-390505 | `0x748560eaccd4c01fc29b3b5b72d3b8c85b2b5017` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | bsc | unit-390510 | `0xea088af719f3238982823fa5ee1c1facb2e0e231` | ⚠️ Unaudited |
+| ShadowERC20 | unknown | project_anchor | own_supporting | 1 | bsc | unit-390507 | `0x05353dabf163fb2fec87f9e0f00f94eae4ac1631` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -150,7 +150,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
 | audit-report-2026-01.pdf | AssetController | unmatched — not counted | — | listed in scope | no |
-| audit-report-2026-01.pdf | PPT | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x8505c3...4edad9` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| audit-report-2026-01.pdf | PPT | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x8505c32631034a7ce8800239c08547e0434edad9` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | audit-report-2026-01.pdf | PPTTypes | unmatched — not counted | — | listed in scope | no |
 | audit-report-2026-01.pdf | RedemptionManager | unmatched — not counted | — | listed in scope | no |
 | audit-report-2026-01.pdf | RedemptionVoucher | unmatched — not counted | — | listed in scope | no |

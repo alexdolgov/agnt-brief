@@ -90,9 +90,9 @@ The pinned logic-topography run contains 5 contract row(s) across bsc, ethereum.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| GnosisSafe | governance | external_dependency_or_infra | third_party_dependency (excluded) | 1 | ethereum | unit-244777 | `0xa7c23c...536284` | ⚠️ Unaudited |
-| GnosisSafeL2 | governance | external_dependency_or_infra | third_party_dependency (excluded) | 1 | bsc | unit-244778 | `0x247ee5...4f086c` | ⚠️ Unaudited |
-| Safe | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 3 | ethereum | unit-244776 (3 proxies) | 3 deployments: ethereum `0x0070fb...74be13`; ethereum `0x9c9c67...569c56`; ethereum `0xd7b73e...51fbfb` | ⚠️ Unaudited |
+| GnosisSafe | governance | external_dependency_or_infra | third_party_dependency (excluded) | 1 | ethereum | unit-244777 | `0xa7c23c824fa730065ab9367947cc139687536284` | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | external_dependency_or_infra | third_party_dependency (excluded) | 1 | bsc | unit-244778 | `0x247ee531ea21f7b182dcfe5ef3ee6abedb4f086c` | ⚠️ Unaudited |
+| Safe | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 3 | ethereum | unit-244776 (3 proxies) | 3 deployments: ethereum `0x0070fb0677edb8b6e61ce6f5976c32e99d74be13`; ethereum `0x9c9c67578d746595c0e331e13f9b378326569c56`; ethereum `0xd7b73e4f5f373ef11bb4a22f7e8d2b4db051fbfb` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

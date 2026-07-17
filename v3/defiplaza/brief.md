@@ -57,7 +57,7 @@ The pinned logic-topography run contains 2 contract row(s) across ethereum. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- DFPgov (`0x2f5743...1b8e6d`, chain 1)
+- DFPgov (`0x2f57430a6ceda85a67121757785877b4a71b8e6d`, chain 1)
 
 ## Contract Surface Quality
 
@@ -101,20 +101,20 @@ The pinned logic-topography run contains 2 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| DeFiPlaza | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383705 | `0xe68c1d...514110` | ✅ Audited |
+| DeFiPlaza | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383705 | `0xe68c1d72340aeefe5be76eda63ae2f4bc7514110` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (8)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Airdrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xaa00bc...e004b6` | ⚠️ Unaudited |
-| BlackHole | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x56bba6...6281dd` | ⚠️ Unaudited |
-| DeFiPlaza | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x134fc6...8e36c2`; ethereum `0x2cb761...4b2496` | ⚠️ Unaudited |
-| DFPgov | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383704 | `0x2f5743...1b8e6d` | ⚠️ Unaudited |
-| DFPgov | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc9444d...c69316` | ⚠️ Unaudited |
-| ManualBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9a9ed0...2d3151` | ⚠️ Unaudited |
-| StablePlaza | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x3a2b8c...b7e694`; ethereum `0x874b5d...c6d83e` | ⚠️ Unaudited |
-| Timelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x266ca8...e79845`; ethereum `0x50ae4c...fce4b3`; ethereum `0xb16e4c...3f0311` | ⚠️ Unaudited |
+| Airdrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xaa00bc9a91079a9579b66e61baf83228f5e004b6` | ⚠️ Unaudited |
+| BlackHole | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x56bba67f78605dd5a42ceae8ec172d058e6281dd` | ⚠️ Unaudited |
+| DeFiPlaza | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x134fc6beb54e710e30b21e52fb86ffed0c8e36c2`; ethereum `0x2cb76169746e21d502db1d64aca1d5f8c04b2496` | ⚠️ Unaudited |
+| DFPgov | unknown | project_anchor | own_supporting | 0 | ethereum | unit-383704 | `0x2f57430a6ceda85a67121757785877b4a71b8e6d` | ⚠️ Unaudited |
+| DFPgov | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc9444d31a580d35a951f77b36f0de073dac69316` | ⚠️ Unaudited |
+| ManualBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9a9ed06781797ec41dcbbff9c555974a7a2d3151` | ⚠️ Unaudited |
+| StablePlaza | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x3a2b8cc91af8bf45f3ec61e779ee1c2ba6b7e694`; ethereum `0x874b5d6476f214e37f042cfc555c07fe99c6d83e` | ⚠️ Unaudited |
+| Timelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x266ca88c616ff9d55dfffa7d133cf2b097e79845`; ethereum `0x50ae4c9de691bcab929a7aaff702a98ab9fce4b3`; ethereum `0xb16e4c40576cd3fae4e1d182179d2811613f0311` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -134,21 +134,21 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x107fee...573f85` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x18ad2c...b7441c` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x271999...cd6b32` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3f48a8...968e9d` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420d69...56af5d` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x633216...2fd9e1` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x644816...96d2a9` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x678eb8...362b05` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x76443d...ce798c` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xad8075...a2b784` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb2cf53...98d0bd` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd08fed...53cf15` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdb95a0...10d4c3` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe23d09...1598ab` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfd30b0...0ad760` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x107feef31fc26bb63e7954272a999ecf37573f85` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x18ad2cbbb052b5f300e5632d907e619537b7441c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x27199999da84864d9b8bce9f3fb95fcf91cd6b32` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3f48a86ba5dd93762dab852dc183b5bde3968e9d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420d6938b5631904c5329d6a1fc099c2d456af5d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x633216a995ee62160ebd62f7ac1d0b89852fd9e1` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x644816d7b2af72540e3daeded0a0349dbe96d2a9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x678eb80e115ad6c7c076ac50bad5b72da8362b05` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x76443d1429b6394050c9a68a0a4bb82cc2ce798c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xad80755719d3bfd88d64d88a667673e4b8a2b784` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb2cf53390298a8ab0a3fa54bed2071146c98d0bd` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd08fedd6ba1a1ad289a1a8503de45d9aef53cf15` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdb95a0b49472779c5a762a4b0c6b726a0910d4c3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe23d093a19438a33e8fb13b3256712c8821598ab` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfd30b0d8420132c766e49f600b52c958940ad760` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -174,7 +174,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| DeFi Plaza Security Analysis by Pessimistic.pdf | DeFiPlaza | own contract | DeFiPlaza (selected) `0xe68c1d...514110` — deployed 2021-10-03 16:55:06+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| DeFi Plaza Security Analysis by Pessimistic.pdf | DeFiPlaza | own contract | DeFiPlaza (selected) `0xe68c1d72340aeefe5be76eda63ae2f4bc7514110` — deployed 2021-10-03 16:55:06+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | DeFi Plaza Security Analysis by Pessimistic.pdf | DFPgovernance | unmatched — not counted | — | listed in scope | no |
 | StablePlaza Security Analysis by Pessimistic.pdf | StablePlaza | unmatched — not counted | — | mentioned throughout the report as the main contract | no |
 | DefiPlaza Radix Security Analysis by Pessimistic.pdf | pair | unmatched — not counted | — | listed in scope | no |
@@ -192,7 +192,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x2f5743...1b8e6d` | DFPgov | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x2f57430a6ceda85a67121757785877b4a71b8e6d` | DFPgov | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

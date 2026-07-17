@@ -60,9 +60,9 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BRISE | unknown | bsc | n/a | [`0x1cca0c...d7e0f0`](./contracts/bsc-56/0x1cca0cc45613f512957c709aa2640e29dfd7e0f0/) | ⚠️ Unaudited |
-| BRISEDividendTracker | unknown | bsc | n/a | [`0x414c39...322350`](./contracts/bsc-56/0x414c39465e5042ddc1b6fa7b6bdf2753dd322350/) | ⚠️ Unaudited |
-| IterableMapping | unknown | bsc | n/a | [`0x080ecf...88aafb`](./contracts/bsc-56/0x080ecf5fd5ba049bfa59953d4d021f565a88aafb/) | ⚠️ Unaudited |
+| BRISE | unknown | bsc | n/a | [`0x1cca0cc45613f512957c709aa2640e29dfd7e0f0`](./contracts/bsc-56/0x1cca0cc45613f512957c709aa2640e29dfd7e0f0/) | ⚠️ Unaudited |
+| BRISEDividendTracker | unknown | bsc | n/a | [`0x414c39465e5042ddc1b6fa7b6bdf2753dd322350`](./contracts/bsc-56/0x414c39465e5042ddc1b6fa7b6bdf2753dd322350/) | ⚠️ Unaudited |
+| IterableMapping | unknown | bsc | n/a | [`0x080ecf5fd5ba049bfa59953d4d021f565a88aafb`](./contracts/bsc-56/0x080ecf5fd5ba049bfa59953d4d021f565a88aafb/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,9 +93,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x1cca0c...d7e0f0`](./contracts/bsc-56/0x1cca0cc45613f512957c709aa2640e29dfd7e0f0/) | BRISE | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x414c39...322350`](./contracts/bsc-56/0x414c39465e5042ddc1b6fa7b6bdf2753dd322350/) | BRISEDividendTracker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x080ecf...88aafb`](./contracts/bsc-56/0x080ecf5fd5ba049bfa59953d4d021f565a88aafb/) | IterableMapping | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x1cca0cc45613f512957c709aa2640e29dfd7e0f0`](./contracts/bsc-56/0x1cca0cc45613f512957c709aa2640e29dfd7e0f0/) | BRISE | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x414c39465e5042ddc1b6fa7b6bdf2753dd322350`](./contracts/bsc-56/0x414c39465e5042ddc1b6fa7b6bdf2753dd322350/) | BRISEDividendTracker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x080ecf5fd5ba049bfa59953d4d021f565a88aafb`](./contracts/bsc-56/0x080ecf5fd5ba049bfa59953d4d021f565a88aafb/) | IterableMapping | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

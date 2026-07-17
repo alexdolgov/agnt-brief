@@ -57,7 +57,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- WeightedPool (`0x53f786...e90a46`, chain 80094)
+- WeightedPool (`0x53f786662ff5fbec135f913ab93c6b3366e90a46`, chain 80094)
 
 ## Contract Surface Quality
 
@@ -103,7 +103,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| WeightedPool | unknown | project_anchor | own_supporting | 0 | berachain | unit-387805 | `0x53f786...e90a46` | ⚠️ Unaudited |
+| WeightedPool | unknown | project_anchor | own_supporting | 0 | berachain | unit-387805 | `0x53f786662ff5fbec135f913ab93c6b3366e90a46` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -123,7 +123,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-80084 | unit-387804 | `0xd43709...7bf6a9` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-80084 | unit-387804 | `0xd437095a7ac009dd61036c693d9d77a6b97bf6a9` | ❓ Unverified |
 
 ## Audit Inventory
 

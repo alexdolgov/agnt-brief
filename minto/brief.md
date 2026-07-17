@@ -59,14 +59,14 @@ The protocol forms a single structural family (Core Logic) of 4 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BTCMT | unknown | bsc | n/a | [`0x410a56...f09567`](./contracts/bsc-56/0x410a56541bd912f9b60943fcb344f1e3d6f09567/) | ✅ Audited |
+| BTCMT | unknown | bsc | n/a | [`0x410a56541bd912f9b60943fcb344f1e3d6f09567`](./contracts/bsc-56/0x410a56541bd912f9b60943fcb344f1e3d6f09567/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Staking | unknown | bsc | n/a | [`0xe742fc...5a7e12`](./contracts/bsc-56/0xe742fce58484ff7be7835d95e350c23ce55a7e12/) | ⚠️ Unaudited |
-| StakingOwn | unknown | bsc | n/a | [`0x78ae30...5ebcfb`](./contracts/bsc-56/0x78ae303182fca96a4629a78ee13235e6525ebcfb/) | ⚠️ Unaudited |
+| Staking | unknown | bsc | n/a | [`0xe742fce58484ff7be7835d95e350c23ce55a7e12`](./contracts/bsc-56/0xe742fce58484ff7be7835d95e350c23ce55a7e12/) | ⚠️ Unaudited |
+| StakingOwn | unknown | bsc | n/a | [`0x78ae303182fca96a4629a78ee13235e6525ebcfb`](./contracts/bsc-56/0x78ae303182fca96a4629a78ee13235e6525ebcfb/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -86,7 +86,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | heco | n/a | 3 deployments: heco `0x410a56...f09567`; heco `0x78ae30...5ebcfb`; heco `0xe742fc...5a7e12` | ❓ Unverified |
+| UnnamedContract | unknown | heco | n/a | 3 deployments: heco `0x410a56541bd912f9b60943fcb344f1e3d6f09567`; heco `0x78ae303182fca96a4629a78ee13235e6525ebcfb`; heco `0xe742fce58484ff7be7835d95e350c23ce55a7e12` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -101,8 +101,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0xe742fc...5a7e12`](./contracts/bsc-56/0xe742fce58484ff7be7835d95e350c23ce55a7e12/) | Staking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x78ae30...5ebcfb`](./contracts/bsc-56/0x78ae303182fca96a4629a78ee13235e6525ebcfb/) | StakingOwn | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xe742fce58484ff7be7835d95e350c23ce55a7e12`](./contracts/bsc-56/0xe742fce58484ff7be7835d95e350c23ce55a7e12/) | Staking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x78ae303182fca96a4629a78ee13235e6525ebcfb`](./contracts/bsc-56/0x78ae303182fca96a4629a78ee13235e6525ebcfb/) | StakingOwn | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

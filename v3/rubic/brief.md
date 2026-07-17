@@ -52,11 +52,11 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- ClonableBeaconProxy (`0x10aaed...4465e0`, chain 42161)
-- RubicStaking (`0x333ce7...1e3333`, chain 42161)
-- RubicStaking (`0xd7e630...d883d2`, chain 42161)
-- RubicStaking (`0xef1db8...dead9b`, chain 42161)
-- RubicToken (`0x3330bf...c33333`, chain 1)
+- ClonableBeaconProxy (`0x10aaed289a7b1b0155bf4b86c862f297e84465e0`, chain 42161)
+- RubicStaking (`0x333ce751b413ca71725d7cdef3cf50c8351e3333`, chain 42161)
+- RubicStaking (`0xd7e630e9c60585e606c3d196d01193b606d883d2`, chain 42161)
+- RubicStaking (`0xef1db8c05589cacb58148f13845b8695d7dead9b`, chain 42161)
+- RubicToken (`0x3330bfb7332ca23cd071631837dc289b09c33333`, chain 1)
 
 ## Contract Surface Quality
 
@@ -102,11 +102,11 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| RubicStaking | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-391753 | `0x333ce7...1e3333` | ⚠️ Unaudited |
-| RubicStaking | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-391754 | `0xd7e630...d883d2` | ⚠️ Unaudited |
-| RubicStaking | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-391755 | `0xef1db8...dead9b` | ⚠️ Unaudited |
-| RubicToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391748 | `0x3330bf...c33333` | ⚠️ Unaudited |
-| StandardArbERC20 | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-391757 | `0x10aaed...4465e0` | ⚠️ Unaudited |
+| RubicStaking | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-391753 | `0x333ce751b413ca71725d7cdef3cf50c8351e3333` | ⚠️ Unaudited |
+| RubicStaking | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-391754 | `0xd7e630e9c60585e606c3d196d01193b606d883d2` | ⚠️ Unaudited |
+| RubicStaking | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-391755 | `0xef1db8c05589cacb58148f13845b8695d7dead9b` | ⚠️ Unaudited |
+| RubicToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391748 | `0x3330bfb7332ca23cd071631837dc289b09c33333` | ⚠️ Unaudited |
+| StandardArbERC20 | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-391757 | `0x10aaed289a7b1b0155bf4b86c862f297e84465e0` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -126,12 +126,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-391749 | `0x333573...4a3333` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-391750 | `0x6aa981...afe8d3` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | zksync-era | unit-391751 | `0x8e70e5...a405ce` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | zksync-era | unit-391752 | `0xa63c02...4e851d` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | kava | n/a | 4 deployments: kava `0x3333b1...370333`; kava `0x8d9ae5...7fd9f5`; kava `0x8e3bcc...16e08a`; kava `0xa96cdb...69cf5d` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | linea | unit-391756 | `0xaf1479...aedba1` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-391749 | `0x3335733c454805df6a77f825f266e136fb4a3333` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-391750 | `0x6aa981bff95edfea36bdae98c26b274ffcafe8d3` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | zksync-era | unit-391751 | `0x8e70e517057e7380587ea6990dae81cb1ba405ce` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | zksync-era | unit-391752 | `0xa63c029612ddad00a269383ab016d1e7c14e851d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | kava | n/a | 4 deployments: kava `0x3333b155fa21a972d179921718792f1036370333`; kava `0x8d9ae5a2ecc16a66740a53cc9080cce29a7fd9f5`; kava `0x8e3bcc334657560253b83f08331d85267316e08a`; kava `0xa96cdb86332b105065ca99432916e631e469cf5d` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | linea | unit-391756 | `0xaf14797ccf963b1e3d028a9d51853ace16aedba1` | ❓ Unverified |
 
 ## Audit Inventory
 

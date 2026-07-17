@@ -63,23 +63,23 @@ The protocol comprises 4 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CollateralVault | core_logic | ethereum | n/a | [`0x5d2725...1d675f`](./contracts/ethereum-1/0x5d2725fde4d7aa3388da4519ac0449cc031d675f/) | ✅ Audited |
-| Anvil | unknown | ethereum | n/a | 2 deployments: ethereum [`0x2ca924...d01bfc`](./contracts/ethereum-1/0x2ca9242c1810029efed539f1c60d68b63ad01bfc/); ethereum `0xaeeaa5...5b5597` | ✅ Audited |
-| AnvilGovernorDelegate | governance | ethereum | n/a | 2 deployments: ethereum [`0x00e83d...4874c9`](./contracts/ethereum-1/0x00e83d0698faf01bd080a4dd2927e6ab7c4874c9/); ethereum `0x123641...b49f49` | ✅ Audited |
-| AnvilGovernorDelegate | governance | ethereum | n/a | 8 deployments: ethereum [`0x081fe8...aed8d9`](./contracts/ethereum-1/0x081fe8bf28e07232d25b58811c4cad2ebdaed8d9/); ethereum `0x09c7ec...bc200f`; ethereum `0x33148e...2a3ba1`; ethereum `0x65eed5...99f602`; ethereum `0xa57365...f2b5e4`; ethereum `0xbb1470...187aa0`; ethereum `0xfd883f...4c5b8f`; ethereum `0xfe1118...42a361` | ✅ Audited |
-| LetterOfCredit | unknown | ethereum | n/a | [`0x14db9a...7c4808`](./contracts/ethereum-1/0x14db9a91933ad9433e1a0db04d08e5d9ef7c4808/) | ✅ Audited |
-| LetterOfCredit | unknown | ethereum | n/a | 2 deployments: ethereum [`0x1a3251...f42961`](./contracts/ethereum-1/0x1a3251d83b4ed97d8e1d8451613d7dd9b4f42961/); ethereum `0x750ab7...59d5ad` | ✅ Audited |
-| PythPriceOracle | unknown | ethereum | n/a | [`0xc6f340...56ee05`](./contracts/ethereum-1/0xc6f3405c861fa0dca04ec4ba59bc189d1d56ee05/) | ✅ Audited |
+| CollateralVault | core_logic | ethereum | n/a | [`0x5d2725fde4d7aa3388da4519ac0449cc031d675f`](./contracts/ethereum-1/0x5d2725fde4d7aa3388da4519ac0449cc031d675f/) | ✅ Audited |
+| Anvil | unknown | ethereum | n/a | 2 deployments: ethereum [`0x2ca9242c1810029efed539f1c60d68b63ad01bfc`](./contracts/ethereum-1/0x2ca9242c1810029efed539f1c60d68b63ad01bfc/); ethereum `0xaeeaa594e7dc112d67b8547fe9767a02c15b5597` | ✅ Audited |
+| AnvilGovernorDelegate | governance | ethereum | n/a | 2 deployments: ethereum [`0x00e83d0698faf01bd080a4dd2927e6ab7c4874c9`](./contracts/ethereum-1/0x00e83d0698faf01bd080a4dd2927e6ab7c4874c9/); ethereum `0x123641b8a2063217a96ef88bf608931a43b49f49` | ✅ Audited |
+| AnvilGovernorDelegate | governance | ethereum | n/a | 8 deployments: ethereum [`0x081fe8bf28e07232d25b58811c4cad2ebdaed8d9`](./contracts/ethereum-1/0x081fe8bf28e07232d25b58811c4cad2ebdaed8d9/); ethereum `0x09c7ec11c51e61997274c5c445c9f4ccf6bc200f`; ethereum `0x33148ea4cc49fc351a2a9fa729f75134cd2a3ba1`; ethereum `0x65eed5a31d70d5eb0398dbe8e805ffeb6199f602`; ethereum `0xa57365263ff137c9e93818c0f04425b66ff2b5e4`; ethereum `0xbb1470b2a2dcce0cb91ac91d9d0a3ceec9187aa0`; ethereum `0xfd883f549ee20eb69067102fd93a0687744c5b8f`; ethereum `0xfe1118ce38818ea3c167929eacb6310cdc42a361` | ✅ Audited |
+| LetterOfCredit | unknown | ethereum | n/a | [`0x14db9a91933ad9433e1a0db04d08e5d9ef7c4808`](./contracts/ethereum-1/0x14db9a91933ad9433e1a0db04d08e5d9ef7c4808/) | ✅ Audited |
+| LetterOfCredit | unknown | ethereum | n/a | 2 deployments: ethereum [`0x1a3251d83b4ed97d8e1d8451613d7dd9b4f42961`](./contracts/ethereum-1/0x1a3251d83b4ed97d8e1d8451613d7dd9b4f42961/); ethereum `0x750ab78b4fe51292d1f0053845aace3ea959d5ad` | ✅ Audited |
+| PythPriceOracle | unknown | ethereum | n/a | [`0xc6f3405c861fa0dca04ec4ba59bc189d1d56ee05`](./contracts/ethereum-1/0xc6f3405c861fa0dca04ec4ba59bc189d1d56ee05/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Claim | unknown | ethereum | n/a | [`0xefd194...7e29ac`](./contracts/ethereum-1/0xefd194d4ff955e8958d132319f31d2ab9f7e29ac/) | ⚠️ Unaudited |
-| PassThroughLiquidator | operational_periphery | ethereum | n/a | [`0x9ae1ca...1342b8`](./contracts/ethereum-1/0x9ae1caa5ce6fa330fce98315159bcd433b1342b8/) | ⚠️ Unaudited |
-| Permit2PassThroughLiquidator | operational_periphery | ethereum | n/a | [`0x8aa57e...e2eb4c`](./contracts/ethereum-1/0x8aa57e442e4562c80fddad1b71adf0ba75e2eb4c/) | ⚠️ Unaudited |
-| ProxyAdmin | governance | ethereum | n/a | [`0x12225b...6e341d`](./contracts/ethereum-1/0x12225bb169b38ef8849dd4f5cc466ae5996e341d/) | ⚠️ Unaudited |
-| Reward | unknown | ethereum | n/a | [`0xc6a06f...da22da`](./contracts/ethereum-1/0xc6a06f2d000b8cfdd392c4d6ab715a9ff1da22da/) | ⚠️ Unaudited |
+| Claim | unknown | ethereum | n/a | [`0xefd194d4ff955e8958d132319f31d2ab9f7e29ac`](./contracts/ethereum-1/0xefd194d4ff955e8958d132319f31d2ab9f7e29ac/) | ⚠️ Unaudited |
+| PassThroughLiquidator | operational_periphery | ethereum | n/a | [`0x9ae1caa5ce6fa330fce98315159bcd433b1342b8`](./contracts/ethereum-1/0x9ae1caa5ce6fa330fce98315159bcd433b1342b8/) | ⚠️ Unaudited |
+| Permit2PassThroughLiquidator | operational_periphery | ethereum | n/a | [`0x8aa57e442e4562c80fddad1b71adf0ba75e2eb4c`](./contracts/ethereum-1/0x8aa57e442e4562c80fddad1b71adf0ba75e2eb4c/) | ⚠️ Unaudited |
+| ProxyAdmin | governance | ethereum | n/a | [`0x12225bb169b38ef8849dd4f5cc466ae5996e341d`](./contracts/ethereum-1/0x12225bb169b38ef8849dd4f5cc466ae5996e341d/) | ⚠️ Unaudited |
+| Reward | unknown | ethereum | n/a | [`0xc6a06f2d000b8cfdd392c4d6ab715a9ff1da22da`](./contracts/ethereum-1/0xc6a06f2d000b8cfdd392c4d6ab715a9ff1da22da/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -114,9 +114,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xefd194...7e29ac`](./contracts/ethereum-1/0xefd194d4ff955e8958d132319f31d2ab9f7e29ac/) | Claim | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x9ae1ca...1342b8`](./contracts/ethereum-1/0x9ae1caa5ce6fa330fce98315159bcd433b1342b8/) | PassThroughLiquidator | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc6a06f...da22da`](./contracts/ethereum-1/0xc6a06f2d000b8cfdd392c4d6ab715a9ff1da22da/) | Reward | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xefd194d4ff955e8958d132319f31d2ab9f7e29ac`](./contracts/ethereum-1/0xefd194d4ff955e8958d132319f31d2ab9f7e29ac/) | Claim | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x9ae1caa5ce6fa330fce98315159bcd433b1342b8`](./contracts/ethereum-1/0x9ae1caa5ce6fa330fce98315159bcd433b1342b8/) | PassThroughLiquidator | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc6a06f2d000b8cfdd392c4d6ab715a9ff1da22da`](./contracts/ethereum-1/0xc6a06f2d000b8cfdd392c4d6ab715a9ff1da22da/) | Reward | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

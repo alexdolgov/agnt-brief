@@ -51,12 +51,12 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- Dai (`0x6b1754...271d0f`, chain 1)
-- DaiJoin (`0x9759a6...391a28`, chain 1)
-- GemJoin (`0x2f0b23...6b042a`, chain 1)
-- GemJoin (`0x3d0b19...1772ca`, chain 1)
-- Spotter (`0x65c79f...d434a3`, chain 1)
-- Vat (`0x35d1b3...a0492b`, chain 1)
+- Dai (`0x6b175474e89094c44da98b954eedeac495271d0f`, chain 1)
+- DaiJoin (`0x9759a6ac90977b93b58547b4a71c78317f391a28`, chain 1)
+- GemJoin (`0x2f0b23f53734252bda2277357e97e1517d6b042a`, chain 1)
+- GemJoin (`0x3d0b1912b66114d4096f48a8cee3a56c231772ca`, chain 1)
+- Spotter (`0x65c79fcb50ca1594b025960e539ed7a9a6d434a3`, chain 1)
+- Vat (`0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b`, chain 1)
 
 ## Contract Surface Quality
 
@@ -102,12 +102,12 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Dai | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388778 | `0x6b1754...271d0f` | ⚠️ Unaudited |
-| DaiJoin | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388779 | `0x9759a6...391a28` | ⚠️ Unaudited |
-| GemJoin | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388774 | `0x2f0b23...6b042a` | ⚠️ Unaudited |
-| GemJoin | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388776 | `0x3d0b19...1772ca` | ⚠️ Unaudited |
-| Spotter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388777 | `0x65c79f...d434a3` | ⚠️ Unaudited |
-| Vat | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388775 | `0x35d1b3...a0492b` | ⚠️ Unaudited |
+| Dai | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388778 | `0x6b175474e89094c44da98b954eedeac495271d0f` | ⚠️ Unaudited |
+| DaiJoin | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388779 | `0x9759a6ac90977b93b58547b4a71c78317f391a28` | ⚠️ Unaudited |
+| GemJoin | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388774 | `0x2f0b23f53734252bda2277357e97e1517d6b042a` | ⚠️ Unaudited |
+| GemJoin | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388776 | `0x3d0b1912b66114d4096f48a8cee3a56c231772ca` | ⚠️ Unaudited |
+| Spotter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388777 | `0x65c79fcb50ca1594b025960e539ed7a9a6d434a3` | ⚠️ Unaudited |
+| Vat | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388775 | `0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

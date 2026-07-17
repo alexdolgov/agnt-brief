@@ -60,23 +60,23 @@ The protocol comprises 4 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Lon | unknown | ethereum | n/a | [`0x000000...71c952`](./contracts/ethereum-1/0x0000000000095413afc295d19edeb1ad7b71c952/) | ✅ Audited |
-| PMM | unknown | ethereum | n/a | [`0x8d9011...5913c6`](./contracts/ethereum-1/0x8d90113a1e286a5ab3e496fbd1853f265e5913c6/) | ✅ Audited |
-| RewardDistributor | operational_periphery | ethereum | n/a | [`0xbf1c2c...02ab07`](./contracts/ethereum-1/0xbf1c2c17cc77e7dec3466b96f46f93c09f02ab07/) | ✅ Audited |
-| StakingRewards | unknown | ethereum | n/a | 4 deployments: ethereum [`0x74379c...a278e4`](./contracts/ethereum-1/0x74379cec6a2c9fde0537e9d9346222a724a278e4/); ethereum `0x929cf6...21bc6a`; ethereum `0xb6bc1a...8fabfd`; ethereum `0xc34831...2d69f4` | ✅ Audited |
-| UserProxy | unknown | ethereum | n/a | [`0x03f34b...d59659`](./contracts/ethereum-1/0x03f34be1bf910116595db1b11e9d1b2ca5d59659/) | ✅ Audited |
+| Lon | unknown | ethereum | n/a | [`0x0000000000095413afc295d19edeb1ad7b71c952`](./contracts/ethereum-1/0x0000000000095413afc295d19edeb1ad7b71c952/) | ✅ Audited |
+| PMM | unknown | ethereum | n/a | [`0x8d90113a1e286a5ab3e496fbd1853f265e5913c6`](./contracts/ethereum-1/0x8d90113a1e286a5ab3e496fbd1853f265e5913c6/) | ✅ Audited |
+| RewardDistributor | operational_periphery | ethereum | n/a | [`0xbf1c2c17cc77e7dec3466b96f46f93c09f02ab07`](./contracts/ethereum-1/0xbf1c2c17cc77e7dec3466b96f46f93c09f02ab07/) | ✅ Audited |
+| StakingRewards | unknown | ethereum | n/a | 4 deployments: ethereum [`0x74379cec6a2c9fde0537e9d9346222a724a278e4`](./contracts/ethereum-1/0x74379cec6a2c9fde0537e9d9346222a724a278e4/); ethereum `0x929cf614c917944dd278bc2134714eaa4121bc6a`; ethereum `0xb6bc1a713e4b11fa31480d31c825dcfd7e8fabfd`; ethereum `0xc348314f74b043ff79396e14116b6f19122d69f4` | ✅ Audited |
+| UserProxy | unknown | ethereum | n/a | [`0x03f34be1bf910116595db1b11e9d1b2ca5d59659`](./contracts/ethereum-1/0x03f34be1bf910116595db1b11e9d1b2ca5d59659/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (7)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AMMWrapperWithPath | unknown | ethereum | n/a | [`0x4a1434...c3650d`](./contracts/ethereum-1/0x4a14347083b80e5216ca31350a2d21702ac3650d/) | ⚠️ Unaudited |
-| DelayedMultiSig | governance | ethereum | n/a | [`0x9afc22...874465`](./contracts/ethereum-1/0x9afc226dc049b99342ad6774eeb08bfa2f874465/) | ⚠️ Unaudited |
-| GnosisSafe | governance | ethereum | n/a | [`0x3557bd...c20a46`](./contracts/ethereum-1/0x3557bd3d422300198719710cc3f00194e1c20a46/) | ⚠️ Unaudited |
-| GnosisSafeL2 | governance | arbitrum | n/a | [`0xbf03bc...0af355`](./contracts/arbitrum-42161/0xbf03bcb67333610b7f90df58c7e435691b0af355/) | ⚠️ Unaudited |
-| MerkleRedeem | operational_periphery | ethereum | n/a | [`0x000000...9023db`](./contracts/ethereum-1/0x0000000006a0403952389b70d8ee4e45479023db/) | ⚠️ Unaudited |
-| MiningTreasury | operational_periphery | ethereum | n/a | [`0x292a69...1045e4`](./contracts/ethereum-1/0x292a6921efc261070a0d5c96911c102cbf1045e4/) | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | ethereum | n/a | 2 deployments: ethereum [`0x55d31f...233c2f`](./contracts/ethereum-1/0x55d31f68975e446a40a2d02ffa4b0e1bfb233c2f/); ethereum `0x7924a8...54f31f` | ⚠️ Unaudited |
+| AMMWrapperWithPath | unknown | ethereum | n/a | [`0x4a14347083b80e5216ca31350a2d21702ac3650d`](./contracts/ethereum-1/0x4a14347083b80e5216ca31350a2d21702ac3650d/) | ⚠️ Unaudited |
+| DelayedMultiSig | governance | ethereum | n/a | [`0x9afc226dc049b99342ad6774eeb08bfa2f874465`](./contracts/ethereum-1/0x9afc226dc049b99342ad6774eeb08bfa2f874465/) | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | n/a | [`0x3557bd3d422300198719710cc3f00194e1c20a46`](./contracts/ethereum-1/0x3557bd3d422300198719710cc3f00194e1c20a46/) | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | arbitrum | n/a | [`0xbf03bcb67333610b7f90df58c7e435691b0af355`](./contracts/arbitrum-42161/0xbf03bcb67333610b7f90df58c7e435691b0af355/) | ⚠️ Unaudited |
+| MerkleRedeem | operational_periphery | ethereum | n/a | [`0x0000000006a0403952389b70d8ee4e45479023db`](./contracts/ethereum-1/0x0000000006a0403952389b70d8ee4e45479023db/) | ⚠️ Unaudited |
+| MiningTreasury | operational_periphery | ethereum | n/a | [`0x292a6921efc261070a0d5c96911c102cbf1045e4`](./contracts/ethereum-1/0x292a6921efc261070a0d5c96911c102cbf1045e4/) | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | ethereum | n/a | 2 deployments: ethereum [`0x55d31f68975e446a40a2d02ffa4b0e1bfb233c2f`](./contracts/ethereum-1/0x55d31f68975e446a40a2d02ffa4b0e1bfb233c2f/); ethereum `0x7924a818013f39cf800f5589ff1f1f0def54f31f` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -116,10 +116,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x4a1434...c3650d`](./contracts/ethereum-1/0x4a14347083b80e5216ca31350a2d21702ac3650d/) | AMMWrapperWithPath | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x9afc22...874465`](./contracts/ethereum-1/0x9afc226dc049b99342ad6774eeb08bfa2f874465/) | DelayedMultiSig | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x000000...9023db`](./contracts/ethereum-1/0x0000000006a0403952389b70d8ee4e45479023db/) | MerkleRedeem | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x292a69...1045e4`](./contracts/ethereum-1/0x292a6921efc261070a0d5c96911c102cbf1045e4/) | MiningTreasury | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4a14347083b80e5216ca31350a2d21702ac3650d`](./contracts/ethereum-1/0x4a14347083b80e5216ca31350a2d21702ac3650d/) | AMMWrapperWithPath | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x9afc226dc049b99342ad6774eeb08bfa2f874465`](./contracts/ethereum-1/0x9afc226dc049b99342ad6774eeb08bfa2f874465/) | DelayedMultiSig | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0000000006a0403952389b70d8ee4e45479023db`](./contracts/ethereum-1/0x0000000006a0403952389b70d8ee4e45479023db/) | MerkleRedeem | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x292a6921efc261070a0d5c96911c102cbf1045e4`](./contracts/ethereum-1/0x292a6921efc261070a0d5c96911c102cbf1045e4/) | MiningTreasury | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

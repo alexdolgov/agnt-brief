@@ -61,16 +61,16 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BKSToken | unknown | ethereum | n/a | [`0x121ca6...3fdf7c`](./contracts/ethereum-1/0x121ca6a8079179678aef599d63449c6a9f3fdf7c/) | ⚠️ Unaudited |
-| BMRToken | unknown | ethereum | n/a | [`0xc6df04...8b0e92`](./contracts/ethereum-1/0xc6df049c9471730e20a90f621db4df2b168b0e92/) | ⚠️ Unaudited |
-| ContractChecker | unknown | ethereum | n/a | [`0xde858e...8b8e2d`](./contracts/ethereum-1/0xde858e297969f9981e65ae3c73e65f87ad8b8e2d/) | ⚠️ Unaudited |
-| ERC20TokenFactory | unknown | ethereum | n/a | [`0xb9b688...82a763`](./contracts/ethereum-1/0xb9b6885d0af9914d432871dcbeb20daa8282a763/) | ⚠️ Unaudited |
-| EWSToken | unknown | ethereum | n/a | [`0xf77373...c42f90`](./contracts/ethereum-1/0xf7737361b538841a7157cafe5e932b27eac42f90/) | ⚠️ Unaudited |
-| KTToken | unknown | ethereum | n/a | [`0x335a76...46e617`](./contracts/ethereum-1/0x335a763df5bbcabd501303a9d8201cba0746e617/) | ⚠️ Unaudited |
-| KWToken | unknown | ethereum | n/a | [`0x270d32...0ebbe9`](./contracts/ethereum-1/0x270d32dc8b6ac374ffef0da958a16fe48e0ebbe9/) | ⚠️ Unaudited |
-| RSPToken | unknown | ethereum | n/a | [`0xfc79e5...b6fed3`](./contracts/ethereum-1/0xfc79e5ecbfb64cb292c71267731d4ef8f9b6fed3/) | ⚠️ Unaudited |
-| TPToken | unknown | ethereum | n/a | [`0x416172...a9fae1`](./contracts/ethereum-1/0x4161725d019690a3e0de50f6be67b07a86a9fae1/) | ⚠️ Unaudited |
-| UWSToken | unknown | ethereum | n/a | [`0xe96959...fded05`](./contracts/ethereum-1/0xe96959522effd18da0238fbbe1bc97aff2fded05/) | ⚠️ Unaudited |
+| BKSToken | unknown | ethereum | n/a | [`0x121ca6a8079179678aef599d63449c6a9f3fdf7c`](./contracts/ethereum-1/0x121ca6a8079179678aef599d63449c6a9f3fdf7c/) | ⚠️ Unaudited |
+| BMRToken | unknown | ethereum | n/a | [`0xc6df049c9471730e20a90f621db4df2b168b0e92`](./contracts/ethereum-1/0xc6df049c9471730e20a90f621db4df2b168b0e92/) | ⚠️ Unaudited |
+| ContractChecker | unknown | ethereum | n/a | [`0xde858e297969f9981e65ae3c73e65f87ad8b8e2d`](./contracts/ethereum-1/0xde858e297969f9981e65ae3c73e65f87ad8b8e2d/) | ⚠️ Unaudited |
+| ERC20TokenFactory | unknown | ethereum | n/a | [`0xb9b6885d0af9914d432871dcbeb20daa8282a763`](./contracts/ethereum-1/0xb9b6885d0af9914d432871dcbeb20daa8282a763/) | ⚠️ Unaudited |
+| EWSToken | unknown | ethereum | n/a | [`0xf7737361b538841a7157cafe5e932b27eac42f90`](./contracts/ethereum-1/0xf7737361b538841a7157cafe5e932b27eac42f90/) | ⚠️ Unaudited |
+| KTToken | unknown | ethereum | n/a | [`0x335a763df5bbcabd501303a9d8201cba0746e617`](./contracts/ethereum-1/0x335a763df5bbcabd501303a9d8201cba0746e617/) | ⚠️ Unaudited |
+| KWToken | unknown | ethereum | n/a | [`0x270d32dc8b6ac374ffef0da958a16fe48e0ebbe9`](./contracts/ethereum-1/0x270d32dc8b6ac374ffef0da958a16fe48e0ebbe9/) | ⚠️ Unaudited |
+| RSPToken | unknown | ethereum | n/a | [`0xfc79e5ecbfb64cb292c71267731d4ef8f9b6fed3`](./contracts/ethereum-1/0xfc79e5ecbfb64cb292c71267731d4ef8f9b6fed3/) | ⚠️ Unaudited |
+| TPToken | unknown | ethereum | n/a | [`0x4161725d019690a3e0de50f6be67b07a86a9fae1`](./contracts/ethereum-1/0x4161725d019690a3e0de50f6be67b07a86a9fae1/) | ⚠️ Unaudited |
+| UWSToken | unknown | ethereum | n/a | [`0xe96959522effd18da0238fbbe1bc97aff2fded05`](./contracts/ethereum-1/0xe96959522effd18da0238fbbe1bc97aff2fded05/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -101,16 +101,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x121ca6...3fdf7c`](./contracts/ethereum-1/0x121ca6a8079179678aef599d63449c6a9f3fdf7c/) | BKSToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc6df04...8b0e92`](./contracts/ethereum-1/0xc6df049c9471730e20a90f621db4df2b168b0e92/) | BMRToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xde858e...8b8e2d`](./contracts/ethereum-1/0xde858e297969f9981e65ae3c73e65f87ad8b8e2d/) | ContractChecker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xb9b688...82a763`](./contracts/ethereum-1/0xb9b6885d0af9914d432871dcbeb20daa8282a763/) | ERC20TokenFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xf77373...c42f90`](./contracts/ethereum-1/0xf7737361b538841a7157cafe5e932b27eac42f90/) | EWSToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x335a76...46e617`](./contracts/ethereum-1/0x335a763df5bbcabd501303a9d8201cba0746e617/) | KTToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x270d32...0ebbe9`](./contracts/ethereum-1/0x270d32dc8b6ac374ffef0da958a16fe48e0ebbe9/) | KWToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xfc79e5...b6fed3`](./contracts/ethereum-1/0xfc79e5ecbfb64cb292c71267731d4ef8f9b6fed3/) | RSPToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x416172...a9fae1`](./contracts/ethereum-1/0x4161725d019690a3e0de50f6be67b07a86a9fae1/) | TPToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xe96959...fded05`](./contracts/ethereum-1/0xe96959522effd18da0238fbbe1bc97aff2fded05/) | UWSToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x121ca6a8079179678aef599d63449c6a9f3fdf7c`](./contracts/ethereum-1/0x121ca6a8079179678aef599d63449c6a9f3fdf7c/) | BKSToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc6df049c9471730e20a90f621db4df2b168b0e92`](./contracts/ethereum-1/0xc6df049c9471730e20a90f621db4df2b168b0e92/) | BMRToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xde858e297969f9981e65ae3c73e65f87ad8b8e2d`](./contracts/ethereum-1/0xde858e297969f9981e65ae3c73e65f87ad8b8e2d/) | ContractChecker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb9b6885d0af9914d432871dcbeb20daa8282a763`](./contracts/ethereum-1/0xb9b6885d0af9914d432871dcbeb20daa8282a763/) | ERC20TokenFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xf7737361b538841a7157cafe5e932b27eac42f90`](./contracts/ethereum-1/0xf7737361b538841a7157cafe5e932b27eac42f90/) | EWSToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x335a763df5bbcabd501303a9d8201cba0746e617`](./contracts/ethereum-1/0x335a763df5bbcabd501303a9d8201cba0746e617/) | KTToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x270d32dc8b6ac374ffef0da958a16fe48e0ebbe9`](./contracts/ethereum-1/0x270d32dc8b6ac374ffef0da958a16fe48e0ebbe9/) | KWToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xfc79e5ecbfb64cb292c71267731d4ef8f9b6fed3`](./contracts/ethereum-1/0xfc79e5ecbfb64cb292c71267731d4ef8f9b6fed3/) | RSPToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4161725d019690a3e0de50f6be67b07a86a9fae1`](./contracts/ethereum-1/0x4161725d019690a3e0de50f6be67b07a86a9fae1/) | TPToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe96959522effd18da0238fbbe1bc97aff2fded05`](./contracts/ethereum-1/0xe96959522effd18da0238fbbe1bc97aff2fded05/) | UWSToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

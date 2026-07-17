@@ -52,18 +52,18 @@ The pinned logic-topography run contains 11 contract row(s) across base. Structu
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xca3860...4c2d70`, chain 8453)
-- CashappReclaimVerifier (`0x76d33a...dd3703`, chain 8453)
-- MercadoPagoReclaimVerifier (`0xf2ac5b...6c33a3`, chain 8453)
-- MonzoReclaimVerifier (`0x0de464...36a2e0`, chain 8453)
-- NullifierRegistry (`0x27b4a4...17137f`, chain 8453)
-- PaypalReclaimVerifier (`0x03d17e...1c5dea`, chain 8453)
-- RevolutReclaimVerifier (`0xaa5a1b...9a41ab`, chain 8453)
-- VenmoReclaimVerifier (`0x9a733b...b99df5`, chain 8453)
-- WiseReclaimVerifier (`0xff0149...d9a9ca`, chain 8453)
-- ZelleBaseVerifier (`0x1783f0...613ad5`, chain 8453)
-- ZelleBoAReclaimVerifier (`0x73640a...3ea579`, chain 8453)
-- ZelleCitiReclaimVerifier (`0xe9b654...df66d6`, chain 8453)
+- UnnamedContract (`0xca38607d85e8f6294dc10728669605e6664c2d70`, chain 8453)
+- CashappReclaimVerifier (`0x76d33a33068d86016b806df02376ddbb23dd3703`, chain 8453)
+- MercadoPagoReclaimVerifier (`0xf2ac5be14f32cbe6a613cff8931d95460d6c33a3`, chain 8453)
+- MonzoReclaimVerifier (`0x0de46433bd251027f73ed8f28e01ef05da36a2e0`, chain 8453)
+- NullifierRegistry (`0x27b4a4542af8eefb7ebf574a562c5d4daa17137f`, chain 8453)
+- PaypalReclaimVerifier (`0x03d17e9371c858072e171276979f6b44571c5dea`, chain 8453)
+- RevolutReclaimVerifier (`0xaa5a1b62b01781e789c900d616300717cd9a41ab`, chain 8453)
+- VenmoReclaimVerifier (`0x9a733b55a875d0db4915c6b36350b24f8ab99df5`, chain 8453)
+- WiseReclaimVerifier (`0xff0149799631d7a5bde2e7ea9b306c42b3d9a9ca`, chain 8453)
+- ZelleBaseVerifier (`0x1783f040783c0827fb64d128ece548d9b3613ad5`, chain 8453)
+- ZelleBoAReclaimVerifier (`0x73640aed9d3110c04bc7b13540648a5adb3ea579`, chain 8453)
+- ZelleCitiReclaimVerifier (`0xe9b654ee19473e77b71c2c328a31e79252df66d6`, chain 8453)
 
 ## Contract Surface Quality
 
@@ -109,35 +109,35 @@ The pinned logic-topography run contains 11 contract row(s) across base. Structu
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AcrossBridgeHook | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x72c10b...63b9f0` | ⚠️ Unaudited |
-| AcrossBridgeHookV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xccc916...c7f7cf` | ⚠️ Unaudited |
-| CashappReclaimVerifier | unknown | project_anchor | own_supporting | 0 | base | unit-390703 | `0x76d33a...dd3703` | ⚠️ Unaudited |
-| ChainlinkOracleAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x53881a...c3b2f1` | ⚠️ Unaudited |
-| Escrow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2f121c...888888` | ⚠️ Unaudited |
-| EscrowRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xed0e84...2f5b21` | ⚠️ Unaudited |
-| EscrowV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x777777...6300ef` | ⚠️ Unaudited |
-| MercadoPagoReclaimVerifier | unknown | project_anchor | own_supporting | 0 | base | unit-390708 | `0xf2ac5b...6c33a3` | ⚠️ Unaudited |
-| MonzoReclaimVerifier | unknown | project_anchor | own_supporting | 0 | base | unit-390699 | `0x0de464...36a2e0` | ⚠️ Unaudited |
-| NullifierRegistry | unknown | project_anchor | own_supporting | 0 | base | unit-390701 | `0x27b4a4...17137f` | ⚠️ Unaudited |
-| Orchestrator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x888888...1810d0` | ⚠️ Unaudited |
-| OrchestratorRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbe9fed...3382a9` | ⚠️ Unaudited |
-| OrchestratorV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x888888...c3b888` | ⚠️ Unaudited |
-| PaymentVerifierRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2b82d2...8beb1e` | ⚠️ Unaudited |
-| PaypalReclaimVerifier | unknown | project_anchor | own_supporting | 0 | base | unit-390698 | `0x03d17e...1c5dea` | ⚠️ Unaudited |
-| PostIntentHookRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x9b128e...ecade9` | ⚠️ Unaudited |
-| ProtocolViewer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x30b03d...146606` | ⚠️ Unaudited |
-| RateManagerV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xeed7db...3535f3` | ⚠️ Unaudited |
-| RelayerRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xeba979...180083` | ⚠️ Unaudited |
-| RevolutReclaimVerifier | unknown | project_anchor | own_supporting | 0 | base | unit-390705 | `0xaa5a1b...9a41ab` | ⚠️ Unaudited |
-| SignatureGatingPreIntentHook | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x62d410...5c2e1f` | ⚠️ Unaudited |
-| SimpleAttestationVerifier | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xcba819...153f79` | ⚠️ Unaudited |
-| UnifiedPaymentVerifier | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x16b3e4...4ab163` | ⚠️ Unaudited |
-| VenmoReclaimVerifier | unknown | project_anchor | own_supporting | 0 | base | unit-390704 | `0x9a733b...b99df5` | ⚠️ Unaudited |
-| WhitelistPreIntentHook | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xd79336...6353ea` | ⚠️ Unaudited |
-| WiseReclaimVerifier | unknown | project_anchor | own_supporting | 0 | base | unit-390709 | `0xff0149...d9a9ca` | ⚠️ Unaudited |
-| ZelleBaseVerifier | unknown | project_anchor | own_supporting | 0 | base | unit-390700 | `0x1783f0...613ad5` | ⚠️ Unaudited |
-| ZelleBoAReclaimVerifier | unknown | project_anchor | own_supporting | 0 | base | unit-390702 | `0x73640a...3ea579` | ⚠️ Unaudited |
-| ZelleCitiReclaimVerifier | unknown | project_anchor | own_supporting | 0 | base | unit-390707 | `0xe9b654...df66d6` | ⚠️ Unaudited |
+| AcrossBridgeHook | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x72c10b838cf46649691949c285e0b468b363b9f0` | ⚠️ Unaudited |
+| AcrossBridgeHookV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xccc9163451de31a625d48e417e0fd1a329c7f7cf` | ⚠️ Unaudited |
+| CashappReclaimVerifier | unknown | project_anchor | own_supporting | 0 | base | unit-390703 | `0x76d33a33068d86016b806df02376ddbb23dd3703` | ⚠️ Unaudited |
+| ChainlinkOracleAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x53881a928abd61c095e5f30b63bc554872c3b2f1` | ⚠️ Unaudited |
+| Escrow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2f121cddca6d652f35e8b3e560f9760898888888` | ⚠️ Unaudited |
+| EscrowRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xed0e847b101abc96e796260ac358e12baa2f5b21` | ⚠️ Unaudited |
+| EscrowV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x777777779d229cdf3110e9de47943791c26300ef` | ⚠️ Unaudited |
+| MercadoPagoReclaimVerifier | unknown | project_anchor | own_supporting | 0 | base | unit-390708 | `0xf2ac5be14f32cbe6a613cff8931d95460d6c33a3` | ⚠️ Unaudited |
+| MonzoReclaimVerifier | unknown | project_anchor | own_supporting | 0 | base | unit-390699 | `0x0de46433bd251027f73ed8f28e01ef05da36a2e0` | ⚠️ Unaudited |
+| NullifierRegistry | unknown | project_anchor | own_supporting | 0 | base | unit-390701 | `0x27b4a4542af8eefb7ebf574a562c5d4daa17137f` | ⚠️ Unaudited |
+| Orchestrator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x88888883ed048ff0a415271b28b2f52d431810d0` | ⚠️ Unaudited |
+| OrchestratorRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbe9fed15ed7a4b915c03efcecb9662739c3382a9` | ⚠️ Unaudited |
+| OrchestratorV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x888888359e981b5225ca48fbcdceff702fc3b888` | ⚠️ Unaudited |
+| PaymentVerifierRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2b82d24437ff66fb173eabdfd67ee2aceb8beb1e` | ⚠️ Unaudited |
+| PaypalReclaimVerifier | unknown | project_anchor | own_supporting | 0 | base | unit-390698 | `0x03d17e9371c858072e171276979f6b44571c5dea` | ⚠️ Unaudited |
+| PostIntentHookRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x9b128ebad4d874199a2dc57e93186796c5ecade9` | ⚠️ Unaudited |
+| ProtocolViewer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x30b03de22328074fbe8447c425ae988797146606` | ⚠️ Unaudited |
+| RateManagerV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xeed7db23e724ac4590d6db6f78fda6db203535f3` | ⚠️ Unaudited |
+| RelayerRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xeba979889a9c97382a92472ff3703786ff180083` | ⚠️ Unaudited |
+| RevolutReclaimVerifier | unknown | project_anchor | own_supporting | 0 | base | unit-390705 | `0xaa5a1b62b01781e789c900d616300717cd9a41ab` | ⚠️ Unaudited |
+| SignatureGatingPreIntentHook | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x62d410a3d6fc766dd2192be2a67a5fc79c5c2e1f` | ⚠️ Unaudited |
+| SimpleAttestationVerifier | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xcba8190079c1ae9756d21991e0aaf9657f153f79` | ⚠️ Unaudited |
+| UnifiedPaymentVerifier | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x16b3e4a3ca36d3a4bca281767f15c7adef4ab163` | ⚠️ Unaudited |
+| VenmoReclaimVerifier | unknown | project_anchor | own_supporting | 0 | base | unit-390704 | `0x9a733b55a875d0db4915c6b36350b24f8ab99df5` | ⚠️ Unaudited |
+| WhitelistPreIntentHook | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xd793369b11357cdd076a9c631f6c44ff8e6353ea` | ⚠️ Unaudited |
+| WiseReclaimVerifier | unknown | project_anchor | own_supporting | 0 | base | unit-390709 | `0xff0149799631d7a5bde2e7ea9b306c42b3d9a9ca` | ⚠️ Unaudited |
+| ZelleBaseVerifier | unknown | project_anchor | own_supporting | 0 | base | unit-390700 | `0x1783f040783c0827fb64d128ece548d9b3613ad5` | ⚠️ Unaudited |
+| ZelleBoAReclaimVerifier | unknown | project_anchor | own_supporting | 0 | base | unit-390702 | `0x73640aed9d3110c04bc7b13540648a5adb3ea579` | ⚠️ Unaudited |
+| ZelleCitiReclaimVerifier | unknown | project_anchor | own_supporting | 0 | base | unit-390707 | `0xe9b654ee19473e77b71c2c328a31e79252df66d6` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -157,7 +157,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-390706 | `0xca3860...4c2d70` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-390706 | `0xca38607d85e8f6294dc10728669605e6664c2d70` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -176,17 +176,17 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | `0x76d33a...dd3703` | CashappReclaimVerifier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xf2ac5b...6c33a3` | MercadoPagoReclaimVerifier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x0de464...36a2e0` | MonzoReclaimVerifier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x27b4a4...17137f` | NullifierRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x03d17e...1c5dea` | PaypalReclaimVerifier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xaa5a1b...9a41ab` | RevolutReclaimVerifier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x9a733b...b99df5` | VenmoReclaimVerifier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xff0149...d9a9ca` | WiseReclaimVerifier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x1783f0...613ad5` | ZelleBaseVerifier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x73640a...3ea579` | ZelleBoAReclaimVerifier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xe9b654...df66d6` | ZelleCitiReclaimVerifier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x76d33a33068d86016b806df02376ddbb23dd3703` | CashappReclaimVerifier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xf2ac5be14f32cbe6a613cff8931d95460d6c33a3` | MercadoPagoReclaimVerifier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x0de46433bd251027f73ed8f28e01ef05da36a2e0` | MonzoReclaimVerifier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x27b4a4542af8eefb7ebf574a562c5d4daa17137f` | NullifierRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x03d17e9371c858072e171276979f6b44571c5dea` | PaypalReclaimVerifier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xaa5a1b62b01781e789c900d616300717cd9a41ab` | RevolutReclaimVerifier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x9a733b55a875d0db4915c6b36350b24f8ab99df5` | VenmoReclaimVerifier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xff0149799631d7a5bde2e7ea9b306c42b3d9a9ca` | WiseReclaimVerifier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x1783f040783c0827fb64d128ece548d9b3613ad5` | ZelleBaseVerifier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x73640aed9d3110c04bc7b13540648a5adb3ea579` | ZelleBoAReclaimVerifier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xe9b654ee19473e77b71c2c328a31e79252df66d6` | ZelleCitiReclaimVerifier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

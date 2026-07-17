@@ -52,17 +52,17 @@ The pinned logic-topography run contains 10 contract row(s) across blast. Struct
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x14ed42...880b4b`, chain 81457)
-- UnnamedContract (`0x552414...191ced`, chain 81457)
-- UnnamedContract (`0x67fb1a...bda10e`, chain 81457)
-- UnnamedContract (`0x8f0968...f2211b`, chain 81457)
-- UnnamedContract (`0xffeca8...5875b8`, chain 81457)
-- KalaxMultiRewardV2Farm (`0x528e67...3c712e`, chain 81457)
-- Token (`0x2f67f5...7e606d`, chain 81457)
-- TransparentUpgradeableProxy (`0xe63153...aef5a1`, chain 81457)
-- TransparentUpgradeableProxy (`0xfe8994...9142a5`, chain 81457)
-- veKALA token (`0x1aa622...fee02e`, chain 81457)
-- xKALA token (`0x1f4f17...9f934a`, chain 81457)
+- UnnamedContract (`0x14ed42c74108cd77e52870470dddda6e5d880b4b`, chain 81457)
+- UnnamedContract (`0x552414fdf2d3ebe59b120ae67bfba6ec43191ced`, chain 81457)
+- UnnamedContract (`0x67fb1a853d8612d2862c66dad242490253bda10e`, chain 81457)
+- UnnamedContract (`0x8f0968b1c21e7c94067e64b3687490f88ff2211b`, chain 81457)
+- UnnamedContract (`0xffeca8a7071520bd22ed7837c2f95d60a95875b8`, chain 81457)
+- KalaxMultiRewardV2Farm (`0x528e67af2e4343dfaf7b63101db7b4a04b3c712e`, chain 81457)
+- Token (`0x2f67f59b3629bf24962290db9ede0cd4127e606d`, chain 81457)
+- TransparentUpgradeableProxy (`0xe63153c3360aca0f4e7ca7a1fc61c2215faef5a1`, chain 81457)
+- TransparentUpgradeableProxy (`0xfe899401a1d86cc1113020fb40878c76239142a5`, chain 81457)
+- veKALA token (`0x1aa6226f7100835aaafdff7f79ba6ffd12fee02e`, chain 81457)
+- xKALA token (`0x1f4f171676f8cb3b1c3fd38867b3b160679f934a`, chain 81457)
 
 ## Contract Surface Quality
 
@@ -108,18 +108,18 @@ The pinned logic-topography run contains 10 contract row(s) across blast. Struct
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| KalaxMultiRewardV2Farm | unknown | project_anchor | own_supporting | 3 | blast | unit-388086 (3 proxies) | 4 deployments: blast `0x1cb8f6...6c9115`; blast `0x528e67...3c712e`; blast `0xe63153...aef5a1`; blast `0xfe8994...9142a5` | ⚠️ Unaudited |
-| Token | token | project_anchor | own_supporting | 0 | blast | unit-388083 | `0x2f67f5...7e606d` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | blast | n/a | 2 deployments: blast `0x0676e7...8b3598`; blast `0xb99aed...8980ed` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 6 | blast | n/a | 7 deployments: blast `0x14421b...4ace1a`; blast `0x31dd65...244adb`; blast `0x32066b...9a1b56`; blast `0x87a894...147a44`; blast `0x8d171d...1bfae1`; blast `0xbdf9ad...ed644f`; blast `0xd834c6...6467fc` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | blast | unit-388085 | 2 deployments: blast `0x14ed42...880b4b`; blast `0x8ab2a0...59f536` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | blast | n/a | 3 deployments: blast `0x2bb41a...7cb513`; blast `0x4fbd0d...2a3166`; blast `0x9a8c08...2c6134` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 4 | blast | n/a | 5 deployments: blast `0x3b4733...22304a`; blast `0x87228e...9b0a05`; blast `0x8ac156...721e4a`; blast `0xa0fc27...191985`; blast `0xed3897...5a9f4f` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | blast | n/a | 3 deployments: blast `0x41ed90...d87059`; blast `0x98ae4a...b4340a`; blast `0xa6bb88...ee638c` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | blast | unit-388087 | 2 deployments: blast `0x4c0013...4ae2db`; blast `0x552414...191ced` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | blast | unit-388088 | 2 deployments: blast `0x67fb1a...bda10e`; blast `0x70591e...da132d` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | blast | unit-388090 | 2 deployments: blast `0x7e0eae...de4d57`; blast `0xffeca8...5875b8` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | blast | unit-388089 | 2 deployments: blast `0x8273d9...9cdc80`; blast `0x8f0968...f2211b` | ⚠️ Unaudited |
+| KalaxMultiRewardV2Farm | unknown | project_anchor | own_supporting | 3 | blast | unit-388086 (3 proxies) | 4 deployments: blast `0x1cb8f6cecf7c8fbb9863417f8371cb2a076c9115`; blast `0x528e67af2e4343dfaf7b63101db7b4a04b3c712e`; blast `0xe63153c3360aca0f4e7ca7a1fc61c2215faef5a1`; blast `0xfe899401a1d86cc1113020fb40878c76239142a5` | ⚠️ Unaudited |
+| Token | token | project_anchor | own_supporting | 0 | blast | unit-388083 | `0x2f67f59b3629bf24962290db9ede0cd4127e606d` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | blast | n/a | 2 deployments: blast `0x0676e706cbed7263753ba948a1a4a3a2948b3598`; blast `0xb99aedd16714a7393768273f9abff4c4f48980ed` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 6 | blast | n/a | 7 deployments: blast `0x14421b2f062c1e7a66d52e10a9c8a67e974ace1a`; blast `0x31dd65f845592199d5949ef1ce15d10891244adb`; blast `0x32066b17b14f65e9caa2e72bdca91683959a1b56`; blast `0x87a8943d8000a90511b47c891ff6a073d3147a44`; blast `0x8d171dd9b989350df7e3259a172501d1f41bfae1`; blast `0xbdf9adebf2bbad4971f412c608a5ae8b10ed644f`; blast `0xd834c6ab94af589034011ac921c5ef40f76467fc` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | blast | unit-388085 | 2 deployments: blast `0x14ed42c74108cd77e52870470dddda6e5d880b4b`; blast `0x8ab2a060cdab77ed73f49116a55d3e437759f536` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | blast | n/a | 3 deployments: blast `0x2bb41a5b807b7c4f8054587d7294beb8777cb513`; blast `0x4fbd0d19ff17756612c5993293ad1c7ab22a3166`; blast `0x9a8c0857ccd4da52eb18020fc62bf9d8992c6134` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 4 | blast | n/a | 5 deployments: blast `0x3b47335b2946f3282d74bc75ba864b64e922304a`; blast `0x87228e4511cd1a3d1331a2d8e3f86411069b0a05`; blast `0x8ac1562aa49d80c177136cbbc79b7d2425721e4a`; blast `0xa0fc272440ac7584cd9c19f769200bf9d2191985`; blast `0xed38977a8980d4571563c58fde25e8dcfa5a9f4f` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | blast | n/a | 3 deployments: blast `0x41ed907e4b304291680ded38e62dd50ab3d87059`; blast `0x98ae4a9ab5a8129de9680c11a8f7a55252b4340a`; blast `0xa6bb888ea83780ee1096094dd9cc930c25ee638c` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | blast | unit-388087 | 2 deployments: blast `0x4c001391c88dfc9b5aed53dd752ce9ad5d4ae2db`; blast `0x552414fdf2d3ebe59b120ae67bfba6ec43191ced` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | blast | unit-388088 | 2 deployments: blast `0x67fb1a853d8612d2862c66dad242490253bda10e`; blast `0x70591e02a6ab22c665517c5a73aca9a33bda132d` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | blast | unit-388090 | 2 deployments: blast `0x7e0eae5c2354c5a178fedfbfb1ad66561cde4d57`; blast `0xffeca8a7071520bd22ed7837c2f95d60a95875b8` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | blast | unit-388089 | 2 deployments: blast `0x8273d96954c5cfb35aa6372e66f0ceede69cdc80`; blast `0x8f0968b1c21e7c94067e64b3687490f88ff2211b` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -139,10 +139,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x6bf073...07cf86` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | blast | unit-388084 | `0xd3f350...a98213` | ❓ Unverified |
-| veKALA token | unknown | project_anchor | own_supporting | 0 | blast | unit-388081 | `0x1aa622...fee02e` | ❓ Unverified |
-| xKALA token | unknown | project_anchor | own_supporting | 0 | blast | unit-388082 | `0x1f4f17...9f934a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x6bf073f969ca60a6f0e97b0ec07806080807cf86` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | blast | unit-388084 | `0xd3f350cd7c25200ecb6a52716abd445d0ea98213` | ❓ Unverified |
+| veKALA token | unknown | project_anchor | own_supporting | 0 | blast | unit-388081 | `0x1aa6226f7100835aaafdff7f79ba6ffd12fee02e` | ❓ Unverified |
+| xKALA token | unknown | project_anchor | own_supporting | 0 | blast | unit-388082 | `0x1f4f171676f8cb3b1c3fd38867b3b160679f934a` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -168,8 +168,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| blast | `0x1cb8f6...6c9115` | KalaxMultiRewardV2Farm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | `0x2f67f5...7e606d` | Token | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | `0x1cb8f6cecf7c8fbb9863417f8371cb2a076c9115` | KalaxMultiRewardV2Farm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | `0x2f67f59b3629bf24962290db9ede0cd4127e606d` | Token | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

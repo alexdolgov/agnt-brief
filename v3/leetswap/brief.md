@@ -52,17 +52,17 @@ The pinned logic-topography run contains 2 contract row(s) across base, canto, l
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xe65068...356090`, chain 169)
-- UnnamedContract (`0xb3a737...3e6fc4`, chain 204)
-- UnnamedContract (`0xf2f41f...c7509f`, chain 204)
-- UnnamedContract (`0x7be3b0...a7ea8e`, chain 1101)
-- UnnamedContract (`0x1bb9cf...ee2c96`, chain 7700)
-- UnnamedContract (`0xd46378...69dcd8`, chain 7700)
-- UnnamedContract (`0xfbc0fc...274e6c`, chain 7700)
-- UnnamedContract (`0x987a75...75d8aa`, chain 8453)
-- UnnamedContract (`0xff98dc...16076e`, chain 59144)
-- UniswapV2Factory (`0xa2899c...6cf59c`, chain 204)
-- UniswapV2Router02 (`0xd3ea3b...a5d737`, chain 8453)
+- UnnamedContract (`0xe650686a3b474c01fbb5ad3b07ecc44093356090`, chain 169)
+- UnnamedContract (`0xb3a737c3940287abbfd831086f0f24868d3e6fc4`, chain 204)
+- UnnamedContract (`0xf2f41fe10d53e15ba34e410987eb0f986ec7509f`, chain 204)
+- UnnamedContract (`0x7be3b0658c30de4896f89d26f79d6d64dda7ea8e`, chain 1101)
+- UnnamedContract (`0x1bb9cf4e63cd2dab8741c334f525350ab2ee2c96`, chain 7700)
+- UnnamedContract (`0xd463786e7d54fc570a92982157e15130e469dcd8`, chain 7700)
+- UnnamedContract (`0xfbc0fc368bc57e6c203cf7fd823fc10c6d274e6c`, chain 7700)
+- UnnamedContract (`0x987a758b221eabd262cae4fbb4d75c579275d8aa`, chain 8453)
+- UnnamedContract (`0xff98dcf88d1ae42c7ebb835133ab57481d16076e`, chain 59144)
+- UniswapV2Factory (`0xa2899c776baaf9925d432f83c950d5054a6cf59c`, chain 204)
+- UniswapV2Router02 (`0xd3ea3bc1f5a3f881bd6ce9761cba5a0833a5d737`, chain 8453)
 
 ## Contract Surface Quality
 
@@ -108,16 +108,16 @@ The pinned logic-topography run contains 2 contract row(s) across base, canto, l
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BurningBrian | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x7cc740...565325` | ⚠️ Unaudited |
-| LeetChefV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x3a5e79...a3628c` | ⚠️ Unaudited |
-| LeetSwapV2Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x169c06...75bb19` | ⚠️ Unaudited |
-| LeetSwapV2Router01 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x169c06...75bb19` | ⚠️ Unaudited |
-| LeetToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0963a1...6a1c4b` | ⚠️ Unaudited |
-| LineaDoge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x3278e5...942f87` | ⚠️ Unaudited |
-| Multicall3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x10b7de...bbfac9` | ⚠️ Unaudited |
-| UniswapV2Factory | unknown | project_anchor | own_supporting | 0 | opbnb | unit-244767 | `0xa2899c...6cf59c` | ⚠️ Unaudited |
-| UniswapV2Router02 | unknown | project_anchor | own_supporting | 0 | base | unit-244775 | `0xd3ea3b...a5d737` | ⚠️ Unaudited |
-| VestingWallet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x211638...898bfc` | ⚠️ Unaudited |
+| BurningBrian | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x7cc74075d60c059468e267bef5d454d032565325` | ⚠️ Unaudited |
+| LeetChefV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x3a5e791405526efadf1432bac8d114b77da3628c` | ⚠️ Unaudited |
+| LeetSwapV2Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x169c06b4cfb09bfd73a81e6f2bb1eb514d75bb19` | ⚠️ Unaudited |
+| LeetSwapV2Router01 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x169c06b4cfb09bfd73a81e6f2bb1eb514d75bb19` | ⚠️ Unaudited |
+| LeetToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0963a1abaf36ca88c21032b82e479353126a1c4b` | ⚠️ Unaudited |
+| LineaDoge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x3278e54da0242a941e94b5eba2f2f2b200942f87` | ⚠️ Unaudited |
+| Multicall3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x10b7de073b514f54e27b71cd267cce4379bbfac9` | ⚠️ Unaudited |
+| UniswapV2Factory | unknown | project_anchor | own_supporting | 0 | opbnb | unit-244767 | `0xa2899c776baaf9925d432f83c950d5054a6cf59c` | ⚠️ Unaudited |
+| UniswapV2Router02 | unknown | project_anchor | own_supporting | 0 | base | unit-244775 | `0xd3ea3bc1f5a3f881bd6ce9761cba5a0833a5d737` | ⚠️ Unaudited |
+| VestingWallet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x211638ab040cf78ada5331b233745e4fdc898bfc` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -137,15 +137,15 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-244766 | `0xe65068...356090` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | opbnb | unit-244768 | `0xb3a737...3e6fc4` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | opbnb | unit-244769 | `0xf2f41f...c7509f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon-zkevm | unit-244765 | `0x7be3b0...a7ea8e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | canto | unit-244771 | `0x1bb9cf...ee2c96` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | canto | unit-244772 | `0xd46378...69dcd8` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | canto | unit-244773 | `0xfbc0fc...274e6c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-244774 | `0x987a75...75d8aa` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-244770 | `0xff98dc...16076e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-244766 | `0xe650686a3b474c01fbb5ad3b07ecc44093356090` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | opbnb | unit-244768 | `0xb3a737c3940287abbfd831086f0f24868d3e6fc4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | opbnb | unit-244769 | `0xf2f41fe10d53e15ba34e410987eb0f986ec7509f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon-zkevm | unit-244765 | `0x7be3b0658c30de4896f89d26f79d6d64dda7ea8e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | canto | unit-244771 | `0x1bb9cf4e63cd2dab8741c334f525350ab2ee2c96` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | canto | unit-244772 | `0xd463786e7d54fc570a92982157e15130e469dcd8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | canto | unit-244773 | `0xfbc0fc368bc57e6c203cf7fd823fc10c6d274e6c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-244774 | `0x987a758b221eabd262cae4fbb4d75c579275d8aa` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-244770 | `0xff98dcf88d1ae42c7ebb835133ab57481d16076e` | ❓ Unverified |
 
 ## Audit Inventory
 

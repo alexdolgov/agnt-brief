@@ -57,7 +57,7 @@ The pinned logic-topography run contains 1 contract row(s) across base, ethereum
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- StakedPDT (`0x51e025...29aa3e`, chain 8453)
+- StakedPDT (`0x51e025cb3ee0b99a84f7fb80994198281e29aa3e`, chain 8453)
 
 ## Contract Surface Quality
 
@@ -102,16 +102,16 @@ The pinned logic-topography run contains 1 contract row(s) across base, ethereum
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| StakedPDT | token | project_anchor | own_supporting | 0 | base | unit-390689 | `0x51e025...29aa3e` | ✅ Audited |
+| StakedPDT | token | project_anchor | own_supporting | 0 | base | unit-390689 | `0x51e025cb3ee0b99a84f7fb80994198281e29aa3e` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (4)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ERC20AutoStakeRewarder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xf3d415...d2eaa4` | ⚠️ Unaudited |
-| GnosisSafeL2 | governance | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x11117f...5bf9c9` | ⚠️ Unaudited |
-| PDTOFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xeff2a4...61e07e` | ⚠️ Unaudited |
-| PDTStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe09c8a...2549d6` | ⚠️ Unaudited |
+| ERC20AutoStakeRewarder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xf3d415c0245d984d269e5f2424799fa038d2eaa4` | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x11117fa34c8f660b9b804b85ebe891d0c05bf9c9` | ⚠️ Unaudited |
+| PDTOFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xeff2a458e464b07088bdb441c21a42ab4b61e07e` | ⚠️ Unaudited |
+| PDTStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe09c8a88982a85c5b76b1756ec6172d4ad2549d6` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -165,10 +165,10 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 |---|---|---|---|---|---|
 | PDT Staking V2 - Zellic Audit Report.pdf | IForkedPDTStakingV2 | unmatched — not counted | — | — | no |
 | PDT Staking V2 - Zellic Audit Report.pdf | IStakedPDT | unmatched — not counted | — | — | no |
-| PDT Staking V2 - Zellic Audit Report.pdf | StakedPDT | own contract | StakedPDT (selected) `0x51e025...29aa3e` — deployed 2024-08-22 05:12:41+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| PDT Staking V2 - Zellic Audit Report.pdf | StakedPDT | own contract | StakedPDT (selected) `0x51e025cb3ee0b99a84f7fb80994198281e29aa3e` — deployed 2024-08-22 05:12:41+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ParagonsDAO-Smart-Contract-Audit-Report-Final-Report-V1.pdf | IForkedPDTStakingV2.sol | unmatched — not counted | — | — | no |
 | ParagonsDAO-Smart-Contract-Audit-Report-Final-Report-V1.pdf | IStakedPDT.sol | unmatched — not counted | — | — | no |
-| ParagonsDAO-Smart-Contract-Audit-Report-Final-Report-V1.pdf | StakedPDT.sol | own contract | StakedPDT (selected) `0x51e025...29aa3e` — deployed 2024-08-22 05:12:41+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ParagonsDAO-Smart-Contract-Audit-Report-Final-Report-V1.pdf | StakedPDT.sol | own contract | StakedPDT (selected) `0x51e025cb3ee0b99a84f7fb80994198281e29aa3e` — deployed 2024-08-22 05:12:41+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | drive.google.com/file/d/1-SgDmCutMhxyTuZDwOOLPn4b8Fb4YyQ5/view | PDTOFT | unmatched — not counted | — | listed in scope table | no |
 | drive.google.com/file/d/1-SgDmCutMhxyTuZDwOOLPn4b8Fb4YyQ5/view | PDTOFTAdapter | unmatched — not counted | — | listed in scope table | no |
 

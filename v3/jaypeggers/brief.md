@@ -90,14 +90,14 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| JAY | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-243297 | `0xda7c08...61ca6e` | ⚠️ Unaudited |
-| JayDerivFeeSplitter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0b4e01...73a08f` | ⚠️ Unaudited |
-| JayDerivLiquidityStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf70c26...a7226d` | ⚠️ Unaudited |
-| JayERC20Deriv | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xca9f96...0f0d9b` | ⚠️ Unaudited |
-| JayFeeSplitter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4826b4...cbcae9` | ⚠️ Unaudited |
-| JayLiquidityStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x112e9f...c6e130` | ⚠️ Unaudited |
-| JayMart | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x130f00...b3fe0a` | ⚠️ Unaudited |
-| TheSplitoooor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xede8e7...628320` | ⚠️ Unaudited |
+| JAY | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-243297 | `0xda7c0810ce6f8329786160bb3d1734cf6661ca6e` | ⚠️ Unaudited |
+| JayDerivFeeSplitter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0b4e01ab9938e554f4d02b579c3474b3b673a08f` | ⚠️ Unaudited |
+| JayDerivLiquidityStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf70c2657c4135c2ce81977c32f7bc1e012a7226d` | ⚠️ Unaudited |
+| JayERC20Deriv | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xca9f9671765f8d1a7e19ae2639e01fff730f0d9b` | ⚠️ Unaudited |
+| JayFeeSplitter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4826b4de107623e0a42e85c2649caef736cbcae9` | ⚠️ Unaudited |
+| JayLiquidityStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x112e9fdad728adfbb1ce407a9cfa9339e1c6e130` | ⚠️ Unaudited |
+| JayMart | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x130f0002b4cf5e67adf4c7147ac80abee7b3fe0a` | ⚠️ Unaudited |
+| TheSplitoooor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xede8e7d9659ae7fa69de57daf1f75d6729628320` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

@@ -66,17 +66,17 @@ Total inherited audits: 8. Inherited coverage reflects forked/shared code audite
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AaveProtocolDataProvider | unknown | hyperliquid | n/a | [`0x022f16...56e244`](./contracts/hyperliquid-999/0x022f164ddba35a994ad0f001705e9c187156e244/) | ✅ Audited |
+| AaveProtocolDataProvider | unknown | hyperliquid | n/a | [`0x022f164ddba35a994ad0f001705e9c187156e244`](./contracts/hyperliquid-999/0x022f164ddba35a994ad0f001705e9c187156e244/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ACLManagerEnumerable | unknown | hyperliquid | n/a | [`0x5b3e93...a12b39`](./contracts/hyperliquid-999/0x5b3e93e64a9bf2e529e184fd910485aae2a12b39/) | ⚠️ Unaudited |
-| AToken | unknown | hyperliquid | n/a | [`0x3ec571...e3a96c`](./contracts/hyperliquid-999/0x3ec5714eae0f52824ddd4eb853a260d6e3e3a96c/) | ⚠️ Unaudited |
-| PoolAddressesProvider | unknown | hyperliquid | n/a | [`0x23c279...0f6a34`](./contracts/hyperliquid-999/0x23c2797ce39bc6925933dca0447798cd850f6a34/) | ⚠️ Unaudited |
-| VariableDebtToken | unknown | hyperliquid | n/a | [`0x76fb5b...2afe54`](./contracts/hyperliquid-999/0x76fb5b73d63f6c170f1500402c802588e92afe54/) | ⚠️ Unaudited |
-| WrappedTokenGatewayV3 | unknown | hyperliquid | n/a | [`0x22d5be...0a6a48`](./contracts/hyperliquid-999/0x22d5be95e3c1f0c0309e75d5ec6f792ad90a6a48/) | ⚠️ Unaudited |
+| ACLManagerEnumerable | unknown | hyperliquid | n/a | [`0x5b3e93e64a9bf2e529e184fd910485aae2a12b39`](./contracts/hyperliquid-999/0x5b3e93e64a9bf2e529e184fd910485aae2a12b39/) | ⚠️ Unaudited |
+| AToken | unknown | hyperliquid | n/a | [`0x3ec5714eae0f52824ddd4eb853a260d6e3e3a96c`](./contracts/hyperliquid-999/0x3ec5714eae0f52824ddd4eb853a260d6e3e3a96c/) | ⚠️ Unaudited |
+| PoolAddressesProvider | unknown | hyperliquid | n/a | [`0x23c2797ce39bc6925933dca0447798cd850f6a34`](./contracts/hyperliquid-999/0x23c2797ce39bc6925933dca0447798cd850f6a34/) | ⚠️ Unaudited |
+| VariableDebtToken | unknown | hyperliquid | n/a | [`0x76fb5b73d63f6c170f1500402c802588e92afe54`](./contracts/hyperliquid-999/0x76fb5b73d63f6c170f1500402c802588e92afe54/) | ⚠️ Unaudited |
+| WrappedTokenGatewayV3 | unknown | hyperliquid | n/a | [`0x22d5be95e3c1f0c0309e75d5ec6f792ad90a6a48`](./contracts/hyperliquid-999/0x22d5be95e3c1f0c0309e75d5ec6f792ad90a6a48/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -115,11 +115,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| hyperliquid | [`0x5b3e93...a12b39`](./contracts/hyperliquid-999/0x5b3e93e64a9bf2e529e184fd910485aae2a12b39/) | ACLManagerEnumerable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x3ec571...e3a96c`](./contracts/hyperliquid-999/0x3ec5714eae0f52824ddd4eb853a260d6e3e3a96c/) | AToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x23c279...0f6a34`](./contracts/hyperliquid-999/0x23c2797ce39bc6925933dca0447798cd850f6a34/) | PoolAddressesProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x76fb5b...2afe54`](./contracts/hyperliquid-999/0x76fb5b73d63f6c170f1500402c802588e92afe54/) | VariableDebtToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x22d5be...0a6a48`](./contracts/hyperliquid-999/0x22d5be95e3c1f0c0309e75d5ec6f792ad90a6a48/) | WrappedTokenGatewayV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x5b3e93e64a9bf2e529e184fd910485aae2a12b39`](./contracts/hyperliquid-999/0x5b3e93e64a9bf2e529e184fd910485aae2a12b39/) | ACLManagerEnumerable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x3ec5714eae0f52824ddd4eb853a260d6e3e3a96c`](./contracts/hyperliquid-999/0x3ec5714eae0f52824ddd4eb853a260d6e3e3a96c/) | AToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x23c2797ce39bc6925933dca0447798cd850f6a34`](./contracts/hyperliquid-999/0x23c2797ce39bc6925933dca0447798cd850f6a34/) | PoolAddressesProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x76fb5b73d63f6c170f1500402c802588e92afe54`](./contracts/hyperliquid-999/0x76fb5b73d63f6c170f1500402c802588e92afe54/) | VariableDebtToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x22d5be95e3c1f0c0309e75d5ec6f792ad90a6a48`](./contracts/hyperliquid-999/0x22d5be95e3c1f0c0309e75d5ec6f792ad90a6a48/) | WrappedTokenGatewayV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

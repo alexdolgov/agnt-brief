@@ -61,13 +61,13 @@ The protocol comprises 3 functional families. Contracts are linked by 2 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| EmptyContract | unknown | ethereum | n/a | [`0xd7e240...4f8a27`](./contracts/ethereum-1/0xd7e240bde89eae9166a126a7fb7a68ebe64f8a27/) | ⚠️ Unaudited |
-| PauserRegistry | unknown | ethereum | n/a | [`0x52537f...a98bf1`](./contracts/ethereum-1/0x52537f1a015ab9785dd48a9e553f593157a98bf1/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | ethereum | n/a | [`0x0584f8...d61390`](./contracts/ethereum-1/0x0584f8a92af95e9e441142f9e2f0b5999bd61390/) | ⚠️ Unaudited |
-| Slasher | unknown | ethereum | n/a | [`0x13066c...4f37b4`](./contracts/ethereum-1/0x13066c68dc4f5e8e10a75adf6dd53e87904f37b4/) | ⚠️ Unaudited |
-| StrategyBaseTVLLimits | unknown | ethereum | n/a | [`0x13c5f3...5eac5c`](./contracts/ethereum-1/0x13c5f34471a14bc466d4ed1e6c7a840fa45eac5c/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x00b67e...681bc1`](./contracts/ethereum-1/0x00b67e4805138325ce871d5e27dc15f994681bc1/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x230b44...1e1f66`](./contracts/ethereum-1/0x230b442c0802fe83daf3d2656aadfd16ca1e1f66/) | ⚠️ Unaudited |
+| EmptyContract | unknown | ethereum | n/a | [`0xd7e240bde89eae9166a126a7fb7a68ebe64f8a27`](./contracts/ethereum-1/0xd7e240bde89eae9166a126a7fb7a68ebe64f8a27/) | ⚠️ Unaudited |
+| PauserRegistry | unknown | ethereum | n/a | [`0x52537f1a015ab9785dd48a9e553f593157a98bf1`](./contracts/ethereum-1/0x52537f1a015ab9785dd48a9e553f593157a98bf1/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | ethereum | n/a | [`0x0584f8a92af95e9e441142f9e2f0b5999bd61390`](./contracts/ethereum-1/0x0584f8a92af95e9e441142f9e2f0b5999bd61390/) | ⚠️ Unaudited |
+| Slasher | unknown | ethereum | n/a | [`0x13066c68dc4f5e8e10a75adf6dd53e87904f37b4`](./contracts/ethereum-1/0x13066c68dc4f5e8e10a75adf6dd53e87904f37b4/) | ⚠️ Unaudited |
+| StrategyBaseTVLLimits | unknown | ethereum | n/a | [`0x13c5f34471a14bc466d4ed1e6c7a840fa45eac5c`](./contracts/ethereum-1/0x13c5f34471a14bc466d4ed1e6c7a840fa45eac5c/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x00b67e4805138325ce871d5e27dc15f994681bc1`](./contracts/ethereum-1/0x00b67e4805138325ce871d5e27dc15f994681bc1/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x230b442c0802fe83daf3d2656aadfd16ca1e1f66`](./contracts/ethereum-1/0x230b442c0802fe83daf3d2656aadfd16ca1e1f66/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -99,10 +99,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xd7e240...4f8a27`](./contracts/ethereum-1/0xd7e240bde89eae9166a126a7fb7a68ebe64f8a27/) | EmptyContract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x52537f...a98bf1`](./contracts/ethereum-1/0x52537f1a015ab9785dd48a9e553f593157a98bf1/) | PauserRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x13066c...4f37b4`](./contracts/ethereum-1/0x13066c68dc4f5e8e10a75adf6dd53e87904f37b4/) | Slasher | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x13c5f3...5eac5c`](./contracts/ethereum-1/0x13c5f34471a14bc466d4ed1e6c7a840fa45eac5c/) | StrategyBaseTVLLimits | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xd7e240bde89eae9166a126a7fb7a68ebe64f8a27`](./contracts/ethereum-1/0xd7e240bde89eae9166a126a7fb7a68ebe64f8a27/) | EmptyContract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x52537f1a015ab9785dd48a9e553f593157a98bf1`](./contracts/ethereum-1/0x52537f1a015ab9785dd48a9e553f593157a98bf1/) | PauserRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x13066c68dc4f5e8e10a75adf6dd53e87904f37b4`](./contracts/ethereum-1/0x13066c68dc4f5e8e10a75adf6dd53e87904f37b4/) | Slasher | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x13c5f34471a14bc466d4ed1e6c7a840fa45eac5c`](./contracts/ethereum-1/0x13c5f34471a14bc466d4ed1e6c7a840fa45eac5c/) | StrategyBaseTVLLimits | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

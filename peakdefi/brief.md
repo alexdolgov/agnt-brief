@@ -60,10 +60,10 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| PEAKDEFI_V1 | unknown | ethereum | n/a | [`0x5b103d...403a45`](./contracts/ethereum-1/0x5b103d2125d83d2521815f62304b67b2c2403a45/) | ⚠️ Unaudited |
-| PEAKDEFI_V2 | unknown | ethereum | n/a | [`0x630d98...eaad78`](./contracts/ethereum-1/0x630d98424efe0ea27fb1b3ab7741907dffeaad78/) | ⚠️ Unaudited |
-| Timelock | unknown | ethereum | n/a | [`0x5c254f...78729d`](./contracts/ethereum-1/0x5c254fd411db8d8a696b94a46508df7ce578729d/) | ⚠️ Unaudited |
-| Vesting | unknown | ethereum | n/a | [`0xa44557...a66a2b`](./contracts/ethereum-1/0xa445570a6a156c4a5e564b0d4075c3cc02a66a2b/) | ⚠️ Unaudited |
+| PEAKDEFI_V1 | unknown | ethereum | n/a | [`0x5b103d2125d83d2521815f62304b67b2c2403a45`](./contracts/ethereum-1/0x5b103d2125d83d2521815f62304b67b2c2403a45/) | ⚠️ Unaudited |
+| PEAKDEFI_V2 | unknown | ethereum | n/a | [`0x630d98424efe0ea27fb1b3ab7741907dffeaad78`](./contracts/ethereum-1/0x630d98424efe0ea27fb1b3ab7741907dffeaad78/) | ⚠️ Unaudited |
+| Timelock | unknown | ethereum | n/a | [`0x5c254fd411db8d8a696b94a46508df7ce578729d`](./contracts/ethereum-1/0x5c254fd411db8d8a696b94a46508df7ce578729d/) | ⚠️ Unaudited |
+| Vesting | unknown | ethereum | n/a | [`0xa445570a6a156c4a5e564b0d4075c3cc02a66a2b`](./contracts/ethereum-1/0xa445570a6a156c4a5e564b0d4075c3cc02a66a2b/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -94,10 +94,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x5b103d...403a45`](./contracts/ethereum-1/0x5b103d2125d83d2521815f62304b67b2c2403a45/) | PEAKDEFI_V1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x630d98...eaad78`](./contracts/ethereum-1/0x630d98424efe0ea27fb1b3ab7741907dffeaad78/) | PEAKDEFI_V2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x5c254f...78729d`](./contracts/ethereum-1/0x5c254fd411db8d8a696b94a46508df7ce578729d/) | Timelock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa44557...a66a2b`](./contracts/ethereum-1/0xa445570a6a156c4a5e564b0d4075c3cc02a66a2b/) | Vesting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5b103d2125d83d2521815f62304b67b2c2403a45`](./contracts/ethereum-1/0x5b103d2125d83d2521815f62304b67b2c2403a45/) | PEAKDEFI_V1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x630d98424efe0ea27fb1b3ab7741907dffeaad78`](./contracts/ethereum-1/0x630d98424efe0ea27fb1b3ab7741907dffeaad78/) | PEAKDEFI_V2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5c254fd411db8d8a696b94a46508df7ce578729d`](./contracts/ethereum-1/0x5c254fd411db8d8a696b94a46508df7ce578729d/) | Timelock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa445570a6a156c4a5e564b0d4075c3cc02a66a2b`](./contracts/ethereum-1/0xa445570a6a156c4a5e564b0d4075c3cc02a66a2b/) | Vesting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

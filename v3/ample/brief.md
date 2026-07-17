@@ -52,23 +52,23 @@ The pinned logic-topography run contains 5 contract row(s) across arbitrum, base
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- AmpleEarn (`0xe89d32...2048ef`, chain 143)
-- AmpleEarn (`0x00a7ab...755809`, chain 999)
-- AmpleEarn (`0x1688ae...f39c0f`, chain 8453)
-- AmpleEarn (`0xd1be1f...9bcfcb`, chain 42161)
-- AmpleEarn (`0xe5092a...3d04e8`, chain 747474)
-- AmpleEarnCrossChainRouter (`0xc90862...fbe463`, chain 143)
-- AmpleEarnCrossChainRouter (`0xc90862...fbe463`, chain 999)
-- AmpleEarnCrossChainRouter (`0xf13265...deb0c5`, chain 8453)
-- AmpleEarnCrossChainRouter (`0xcab6a4...686d36`, chain 42161)
-- AmpleEarnCrossChainRouter (`0x7beb22...392e65`, chain 747474)
-- AmpleEarnFactory (`0x988146...72b185`, chain 143)
-- AmpleEarnFactory (`0x305ecd...e19b61`, chain 999)
-- AmpleEarnFactory (`0x62b304...9dca67`, chain 8453)
-- AmpleEarnFactory (`0x988146...72b185`, chain 42161)
-- AmpleEarnFactory (`0x988146...72b185`, chain 747474)
-- AmpleEarnScheduler (`0x107a6e...adaeb8`, chain 8453)
-- AmpleEarnScheduler (`0xabbcb3...c84b4c`, chain 42161)
+- AmpleEarn (`0xe89d322b5822d828b8252d3087be8486cc2048ef`, chain 143)
+- AmpleEarn (`0x00a7ab758367da6a3909b75bd30ccc68e8755809`, chain 999)
+- AmpleEarn (`0x1688aeb3ec7b23a22e2418fdf5bccc67ecf39c0f`, chain 8453)
+- AmpleEarn (`0xd1be1f98991cf69355e468ad15b6d0b6429bcfcb`, chain 42161)
+- AmpleEarn (`0xe5092ab6b8b0c37b1bec12c606614706063d04e8`, chain 747474)
+- AmpleEarnCrossChainRouter (`0xc9086278b317d6316151945d720ce7b602fbe463`, chain 143)
+- AmpleEarnCrossChainRouter (`0xc9086278b317d6316151945d720ce7b602fbe463`, chain 999)
+- AmpleEarnCrossChainRouter (`0xf132654d677034c804cfb6432d27526088deb0c5`, chain 8453)
+- AmpleEarnCrossChainRouter (`0xcab6a41090e274efe7fe64cf0ec906f413686d36`, chain 42161)
+- AmpleEarnCrossChainRouter (`0x7beb2204fd629bf686ce85c640a5bcd66b392e65`, chain 747474)
+- AmpleEarnFactory (`0x9881464ade08eaea838d1ba06073a0c8f972b185`, chain 143)
+- AmpleEarnFactory (`0x305ecdbfc6d40fdb6eedd046879ccae3f3e19b61`, chain 999)
+- AmpleEarnFactory (`0x62b304519ee30e205621920454c2802fb99dca67`, chain 8453)
+- AmpleEarnFactory (`0x9881464ade08eaea838d1ba06073a0c8f972b185`, chain 42161)
+- AmpleEarnFactory (`0x9881464ade08eaea838d1ba06073a0c8f972b185`, chain 747474)
+- AmpleEarnScheduler (`0x107a6ee9e75b19a7fc8a7b5a30719b39d9adaeb8`, chain 8453)
+- AmpleEarnScheduler (`0xabbcb343b1b0ea8f760e9f322bc2f4fb47c84b4c`, chain 42161)
 
 ## Contract Surface Quality
 
@@ -114,23 +114,23 @@ The pinned logic-topography run contains 5 contract row(s) across arbitrum, base
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AmpleEarn | unknown | project_anchor | own_supporting | 0 | monad | unit-379024 | `0xe89d32...2048ef` | ⚠️ Unaudited |
-| AmpleEarn | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-379036 | `0x00a7ab...755809` | ⚠️ Unaudited |
-| AmpleEarn | unknown | project_anchor | own_supporting | 0 | base | unit-379033 | `0x1688ae...f39c0f` | ⚠️ Unaudited |
-| AmpleEarn | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-379028 | `0xd1be1f...9bcfcb` | ⚠️ Unaudited |
-| AmpleEarn | unknown | project_anchor | own_supporting | 0 | katana | unit-379031 | `0xe5092a...3d04e8` | ⚠️ Unaudited |
-| AmpleEarnCrossChainRouter | unknown | project_anchor | own_supporting | 0 | monad | unit-379023 | `0xc90862...fbe463` | ⚠️ Unaudited |
-| AmpleEarnCrossChainRouter | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-379038 | `0xc90862...fbe463` | ⚠️ Unaudited |
-| AmpleEarnCrossChainRouter | unknown | project_anchor | own_supporting | 0 | base | unit-379035 | `0xf13265...deb0c5` | ⚠️ Unaudited |
-| AmpleEarnCrossChainRouter | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-379027 | `0xcab6a4...686d36` | ⚠️ Unaudited |
-| AmpleEarnCrossChainRouter | unknown | project_anchor | own_supporting | 0 | katana | unit-379029 | `0x7beb22...392e65` | ⚠️ Unaudited |
-| AmpleEarnFactory | unknown | project_anchor | own_supporting | 0 | monad | unit-379022 | `0x988146...72b185` | ⚠️ Unaudited |
-| AmpleEarnFactory | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-379037 | `0x305ecd...e19b61` | ⚠️ Unaudited |
-| AmpleEarnFactory | unknown | project_anchor | own_supporting | 0 | base | unit-379034 | `0x62b304...9dca67` | ⚠️ Unaudited |
-| AmpleEarnFactory | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-379025 | `0x988146...72b185` | ⚠️ Unaudited |
-| AmpleEarnFactory | unknown | project_anchor | own_supporting | 0 | katana | unit-379030 | `0x988146...72b185` | ⚠️ Unaudited |
-| AmpleEarnScheduler | unknown | project_anchor | own_supporting | 0 | base | unit-379032 | `0x107a6e...adaeb8` | ⚠️ Unaudited |
-| AmpleEarnScheduler | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-379026 | `0xabbcb3...c84b4c` | ⚠️ Unaudited |
+| AmpleEarn | unknown | project_anchor | own_supporting | 0 | monad | unit-379024 | `0xe89d322b5822d828b8252d3087be8486cc2048ef` | ⚠️ Unaudited |
+| AmpleEarn | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-379036 | `0x00a7ab758367da6a3909b75bd30ccc68e8755809` | ⚠️ Unaudited |
+| AmpleEarn | unknown | project_anchor | own_supporting | 0 | base | unit-379033 | `0x1688aeb3ec7b23a22e2418fdf5bccc67ecf39c0f` | ⚠️ Unaudited |
+| AmpleEarn | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-379028 | `0xd1be1f98991cf69355e468ad15b6d0b6429bcfcb` | ⚠️ Unaudited |
+| AmpleEarn | unknown | project_anchor | own_supporting | 0 | katana | unit-379031 | `0xe5092ab6b8b0c37b1bec12c606614706063d04e8` | ⚠️ Unaudited |
+| AmpleEarnCrossChainRouter | unknown | project_anchor | own_supporting | 0 | monad | unit-379023 | `0xc9086278b317d6316151945d720ce7b602fbe463` | ⚠️ Unaudited |
+| AmpleEarnCrossChainRouter | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-379038 | `0xc9086278b317d6316151945d720ce7b602fbe463` | ⚠️ Unaudited |
+| AmpleEarnCrossChainRouter | unknown | project_anchor | own_supporting | 0 | base | unit-379035 | `0xf132654d677034c804cfb6432d27526088deb0c5` | ⚠️ Unaudited |
+| AmpleEarnCrossChainRouter | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-379027 | `0xcab6a41090e274efe7fe64cf0ec906f413686d36` | ⚠️ Unaudited |
+| AmpleEarnCrossChainRouter | unknown | project_anchor | own_supporting | 0 | katana | unit-379029 | `0x7beb2204fd629bf686ce85c640a5bcd66b392e65` | ⚠️ Unaudited |
+| AmpleEarnFactory | unknown | project_anchor | own_supporting | 0 | monad | unit-379022 | `0x9881464ade08eaea838d1ba06073a0c8f972b185` | ⚠️ Unaudited |
+| AmpleEarnFactory | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-379037 | `0x305ecdbfc6d40fdb6eedd046879ccae3f3e19b61` | ⚠️ Unaudited |
+| AmpleEarnFactory | unknown | project_anchor | own_supporting | 0 | base | unit-379034 | `0x62b304519ee30e205621920454c2802fb99dca67` | ⚠️ Unaudited |
+| AmpleEarnFactory | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-379025 | `0x9881464ade08eaea838d1ba06073a0c8f972b185` | ⚠️ Unaudited |
+| AmpleEarnFactory | unknown | project_anchor | own_supporting | 0 | katana | unit-379030 | `0x9881464ade08eaea838d1ba06073a0c8f972b185` | ⚠️ Unaudited |
+| AmpleEarnScheduler | unknown | project_anchor | own_supporting | 0 | base | unit-379032 | `0x107a6ee9e75b19a7fc8a7b5a30719b39d9adaeb8` | ⚠️ Unaudited |
+| AmpleEarnScheduler | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-379026 | `0xabbcb343b1b0ea8f760e9f322bc2f4fb47c84b4c` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

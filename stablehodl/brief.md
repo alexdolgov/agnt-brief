@@ -62,8 +62,8 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ERC1967Proxy | unknown | ethereum | n/a | [`0x109d30...a47544`](./contracts/ethereum-1/0x109d3042a3c682f94107b3818e93b3ade2a47544/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | bsc | n/a | [`0x10057f...d66777`](./contracts/bsc-56/0x10057f7d9897414d1c84c886e16566dce8d66777/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | ethereum | n/a | [`0x109d3042a3c682f94107b3818e93b3ade2a47544`](./contracts/ethereum-1/0x109d3042a3c682f94107b3818e93b3ade2a47544/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | bsc | n/a | [`0x10057f7d9897414d1c84c886e16566dce8d66777`](./contracts/bsc-56/0x10057f7d9897414d1c84c886e16566dce8d66777/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

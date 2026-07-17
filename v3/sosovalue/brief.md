@@ -52,11 +52,11 @@ The pinned logic-topography run contains 11 contract row(s) across base, ethereu
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- AssetFeeManager (`0x996c93...d546ba`, chain 8453)
-- AssetIssuer (`0xdc74d8...a1ad1d`, chain 8453)
-- AssetLocking (`0xb7729a...beafc8`, chain 8453)
-- Swap (`0x640cb7...8bb5e0`, chain 8453)
-- USSI (`0xa62307...2ca91b`, chain 8453)
+- AssetFeeManager (`0x996c93827ab4c55b1044add903d2bdb0dcd546ba`, chain 8453)
+- AssetIssuer (`0xdc74d8c5d9a900fdf8a6d03ad419b236c9a1ad1d`, chain 8453)
+- AssetLocking (`0xb7729ab6a36b416aad3902c4ff5404bb73beafc8`, chain 8453)
+- Swap (`0x640cb7201810bc920835a598248c4fe4898bb5e0`, chain 8453)
+- USSI (`0xa62307106f891135154b0d63eaef8bd40f2ca91b`, chain 8453)
 
 ## Contract Surface Quality
 
@@ -101,39 +101,39 @@ The pinned logic-topography run contains 11 contract row(s) across base, ethereu
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AssetFactory | unknown | project_anchor | own_supporting | 1 | base | unit-256304 | 2 deployments: base `0xb04eb6...c50b0d`; base `0xceb07a...1e19b7` | ✅ Audited |
-| AssetFeeManager | unknown | project_anchor | own_supporting | 0 | base | unit-256299 | `0x996c93...d546ba` | ✅ Audited |
-| AssetIssuer | unknown | project_anchor | own_supporting | 0 | base | unit-256300 | `0xdc74d8...a1ad1d` | ✅ Audited |
-| AssetLocking | unknown | project_anchor | own_supporting | 1 | base | unit-256303 | 2 deployments: base `0x935a4b...839383`; base `0xb7729a...beafc8` | ✅ Audited |
-| StakeFactory | unknown | project_anchor | own_supporting | 1 | base | unit-256301 | 2 deployments: base `0x3f5c8f...488a6c`; base `0x585834...4e35c1` | ✅ Audited |
-| Swap | unknown | project_anchor | own_supporting | 0 | base | unit-256298 | `0x640cb7...8bb5e0` | ✅ Audited |
-| USSI | unknown | project_anchor | own_supporting | 1 | base | unit-256302 | 2 deployments: base `0x3a46ed...d2ed18`; base `0xa62307...2ca91b` | ✅ Audited |
+| AssetFactory | unknown | project_anchor | own_supporting | 1 | base | unit-256304 | 2 deployments: base `0xb04eb6b64137d1673d46731c8f84718092c50b0d`; base `0xceb07a43477158d5f6d9a2d9bbeb58d40a1e19b7` | ✅ Audited |
+| AssetFeeManager | unknown | project_anchor | own_supporting | 0 | base | unit-256299 | `0x996c93827ab4c55b1044add903d2bdb0dcd546ba` | ✅ Audited |
+| AssetIssuer | unknown | project_anchor | own_supporting | 0 | base | unit-256300 | `0xdc74d8c5d9a900fdf8a6d03ad419b236c9a1ad1d` | ✅ Audited |
+| AssetLocking | unknown | project_anchor | own_supporting | 1 | base | unit-256303 | 2 deployments: base `0x935a4b1f6f3e891a226b2522ac22d45ce5839383`; base `0xb7729ab6a36b416aad3902c4ff5404bb73beafc8` | ✅ Audited |
+| StakeFactory | unknown | project_anchor | own_supporting | 1 | base | unit-256301 | 2 deployments: base `0x3f5c8f6cee7bd4b86a46f911aa290c1bac488a6c`; base `0x585834242bb31427b1dc7486dd4bde7c724e35c1` | ✅ Audited |
+| Swap | unknown | project_anchor | own_supporting | 0 | base | unit-256298 | `0x640cb7201810bc920835a598248c4fe4898bb5e0` | ✅ Audited |
+| USSI | unknown | project_anchor | own_supporting | 1 | base | unit-256302 | 2 deployments: base `0x3a46ed8fceb6ef1ada2e4600a522ae7e24d2ed18`; base `0xa62307106f891135154b0d63eaef8bd40f2ca91b` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (21)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AssetFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xc568b4...11c176` | ⚠️ Unaudited |
-| AssetFeeManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x2e4693...cf07a9`; base `0x7693d7...4b7c02` | ⚠️ Unaudited |
-| AssetFeeManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xd616b9...b4a1d2` | ⚠️ Unaudited |
-| AssetIssuer | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x0306ac...a6b66e`; base `0xe66c68...a6367e` | ⚠️ Unaudited |
-| AssetIssuer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xff574f...7e5600` | ⚠️ Unaudited |
-| AssetRebalancer | adapter | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x84663e...95ab15` | ⚠️ Unaudited |
-| AssetToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x63a152...5c443a` | ⚠️ Unaudited |
-| ChristmasAirdrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 5 deployments: base `0x3f82ea...58ee6e`; base `0x5a4baf...6d2823`; base `0xac1998...e01e9a`; base `0xd3f0a1...76fa11`; base `0xf8a453...e841df` | ⚠️ Unaudited |
-| FourSevenAirdrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 4 deployments: base `0x0ec7b7...6296d1`; base `0x6ef3c8...e82f1c`; base `0xb8fcda...21acbb`; base `0xe3f382...5fa592` | ⚠️ Unaudited |
-| FourSevenAirdropV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x028492...80d5ea`; base `0x4190e0...8a3d4e` | ⚠️ Unaudited |
-| FourSevenAirdropV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x45fb9e...66599f`; base `0xab4ac8...5b6817` | ⚠️ Unaudited |
-| FourSevenAirdropV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x4e9246...580156`; base `0x5217ed...7cf233` | ⚠️ Unaudited |
-| SoDexTokenBridge | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xcc7322...02185b` | ⚠️ Unaudited |
-| SoSoValueEpoch1Airdrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbfe59c...f133c5` | ⚠️ Unaudited |
-| SoSoValueEpoch2Airdrop | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x40fb04...cabf9c` | ⚠️ Unaudited |
-| StakeToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x36142f...9cb675`; base `0x815583...8fa0b4` | ⚠️ Unaudited |
-| StakeToken | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | base | n/a | 3 deployments: base `0x49aeb9...d7a95b`; base `0x7f811e...135524`; base `0xce89ac...73db90` | ⚠️ Unaudited |
-| Swap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x008055...2fcd5f` | ⚠️ Unaudited |
-| Swap | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0xae9f64...40a43b`; base `0xf909bf...3db08b` | ⚠️ Unaudited |
-| TetherToken | token | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x687496...782f38` | ⚠️ Unaudited |
-| USSI | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x1396e2...15454f` | ⚠️ Unaudited |
+| AssetFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xc568b41968b3e707b306d298e5e7be50a311c176` | ⚠️ Unaudited |
+| AssetFeeManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x2e469365030f068ecb1176a0d5600ba470cf07a9`; base `0x7693d73ac9fcf57be7791092dafcdcc7324b7c02` | ⚠️ Unaudited |
+| AssetFeeManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xd616b94f50ed117236aeaed72ebe73f474b4a1d2` | ⚠️ Unaudited |
+| AssetIssuer | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x0306aceb4c20ff33480d90038f8b375cc6a6b66e`; base `0xe66c68010a9dc4dac7a8ab2c524e4bae37a6367e` | ⚠️ Unaudited |
+| AssetIssuer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xff574f9cdf7340a25269ff606cb215855e7e5600` | ⚠️ Unaudited |
+| AssetRebalancer | adapter | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x84663e30973d552ac357fd04f3ac6ebbd495ab15` | ⚠️ Unaudited |
+| AssetToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x63a152dbfc479d82e04794ebc7fddb62505c443a` | ⚠️ Unaudited |
+| ChristmasAirdrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 5 deployments: base `0x3f82ea4e3dad785d518f02c65eac2dd5cc58ee6e`; base `0x5a4baf95c03f197bcd071a70ee6e8adb176d2823`; base `0xac1998e293de971b234af7849ffbe96791e01e9a`; base `0xd3f0a16afbce156203a40a3c96aff1e0e176fa11`; base `0xf8a4530b2dbff2bffc39b7511249228d80e841df` | ⚠️ Unaudited |
+| FourSevenAirdrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 4 deployments: base `0x0ec7b72a546851e8a9a66fbfda761cf7da6296d1`; base `0x6ef3c884ac0ff45a8e2275f52787471d46e82f1c`; base `0xb8fcda0e114d70d4457f19d063dd59400c21acbb`; base `0xe3f3829e7a831d595d4a9cac56333efef35fa592` | ⚠️ Unaudited |
+| FourSevenAirdropV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x028492d62d09ae57f8b017be746cb02e6380d5ea`; base `0x4190e02240f16be4cc03c7151deedd23c08a3d4e` | ⚠️ Unaudited |
+| FourSevenAirdropV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x45fb9e352dacbcd95a7cc29c45b52e8c7c66599f`; base `0xab4ac877170bcfc671b73375e6fcd2f4915b6817` | ⚠️ Unaudited |
+| FourSevenAirdropV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x4e9246fee84582dc41213af4842cf13fcf580156`; base `0x5217ed58973c4d570d0b1d4dd2e94928fb7cf233` | ⚠️ Unaudited |
+| SoDexTokenBridge | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xcc7322a2f9f82251da51584b1a89915dbc02185b` | ⚠️ Unaudited |
+| SoSoValueEpoch1Airdrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbfe59c8e842c4564558c558f8428a65609f133c5` | ⚠️ Unaudited |
+| SoSoValueEpoch2Airdrop | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x40fb04bbf5124ea4b25fc18a839524a725cabf9c` | ⚠️ Unaudited |
+| StakeToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x36142f5596f41f292549b58052fcfd99489cb675`; base `0x815583cd3c09e2b666bb87256ae533d6af8fa0b4` | ⚠️ Unaudited |
+| StakeToken | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | base | n/a | 3 deployments: base `0x49aeb994425177c0a7c5d22a529f949132d7a95b`; base `0x7f811e881693af12d84976d59ff3fb0eaf135524`; base `0xce89ac7fd59808106b4e346175bcb8d8b273db90` | ⚠️ Unaudited |
+| Swap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x008055f9450be15d1314f64e6ef04b7a802fcd5f` | ⚠️ Unaudited |
+| Swap | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0xae9f646e42dec86abe64b88235894bf68240a43b`; base `0xf909bfa750721501b4f8433588fae5ce303db08b` | ⚠️ Unaudited |
+| TetherToken | token | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x68749665ff8d2d112fa859aa293f07a622782f38` | ⚠️ Unaudited |
+| USSI | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x1396e2ab215a88201cbcc75396b9bcaa0315454f` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -176,32 +176,32 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
 | blocksec_sosovaluelabs_ssi_v1.0-signed.pdf | AssetController | unmatched — not counted | — | — | no |
-| blocksec_sosovaluelabs_ssi_v1.0-signed.pdf | AssetFactory | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xb04eb6...c50b0d` — deployed 2024-12-18 13:21:31+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| blocksec_sosovaluelabs_ssi_v1.0-signed.pdf | AssetFeeManager | own contract | AssetFeeManager (selected) `0x996c93...d546ba` — deployed 2024-12-18 13:21:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| blocksec_sosovaluelabs_ssi_v1.0-signed.pdf | AssetIssuer | own contract | AssetIssuer (selected) `0xdc74d8...a1ad1d` — deployed 2024-12-18 13:21:31+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| blocksec_sosovaluelabs_ssi_v1.0-signed.pdf | AssetLocking | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x935a4b...839383` — deployed 2024-12-18 13:21:45+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| blocksec_sosovaluelabs_ssi_v1.0-signed.pdf | AssetFactory | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xb04eb6b64137d1673d46731c8f84718092c50b0d` — deployed 2024-12-18 13:21:31+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| blocksec_sosovaluelabs_ssi_v1.0-signed.pdf | AssetFeeManager | own contract | AssetFeeManager (selected) `0x996c93827ab4c55b1044add903d2bdb0dcd546ba` — deployed 2024-12-18 13:21:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| blocksec_sosovaluelabs_ssi_v1.0-signed.pdf | AssetIssuer | own contract | AssetIssuer (selected) `0xdc74d8c5d9a900fdf8a6d03ad419b236c9a1ad1d` — deployed 2024-12-18 13:21:31+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| blocksec_sosovaluelabs_ssi_v1.0-signed.pdf | AssetLocking | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x935a4b1f6f3e891a226b2522ac22d45ce5839383` — deployed 2024-12-18 13:21:45+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | blocksec_sosovaluelabs_ssi_v1.0-signed.pdf | AssetRebalancer | unmatched — not counted | — | — | no |
 | blocksec_sosovaluelabs_ssi_v1.0-signed.pdf | AssetToken | unmatched — not counted | — | — | no |
-| blocksec_sosovaluelabs_ssi_v1.0-signed.pdf | StakeFactory | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x585834...4e35c1` — deployed 2024-12-18 13:21:45+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| blocksec_sosovaluelabs_ssi_v1.0-signed.pdf | StakeFactory | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x585834242bb31427b1dc7486dd4bde7c724e35c1` — deployed 2024-12-18 13:21:45+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | blocksec_sosovaluelabs_ssi_v1.0-signed.pdf | StakeToken | unmatched — not counted | — | — | no |
-| blocksec_sosovaluelabs_ssi_v1.0-signed.pdf | Swap | own contract | Swap (selected) `0x640cb7...8bb5e0` — deployed 2024-12-18 13:21:31+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| blocksec_sosovaluelabs_ssi_v1.0-signed.pdf | USSI | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x3a46ed...d2ed18` — deployed 2024-12-18 13:21:45+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| blocksec_sosovaluelabs_ssi_v1.0-signed.pdf | Swap | own contract | Swap (selected) `0x640cb7201810bc920835a598248c4fe4898bb5e0` — deployed 2024-12-18 13:21:31+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| blocksec_sosovaluelabs_ssi_v1.0-signed.pdf | USSI | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x3a46ed8fceb6ef1ada2e4600a522ae7e24d2ed18` — deployed 2024-12-18 13:21:45+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | SSI Protocol - SlowMist Audit Report.pdf | AssetController | unmatched — not counted | — | — | no |
-| SSI Protocol - SlowMist Audit Report.pdf | AssetFactory | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xb04eb6...c50b0d` — deployed 2024-12-18 13:21:31+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| SSI Protocol - SlowMist Audit Report.pdf | AssetFeeManager | own contract | AssetFeeManager (selected) `0x996c93...d546ba` — deployed 2024-12-18 13:21:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| SSI Protocol - SlowMist Audit Report.pdf | AssetIssuer | own contract | AssetIssuer (selected) `0xdc74d8...a1ad1d` — deployed 2024-12-18 13:21:31+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| SSI Protocol - SlowMist Audit Report.pdf | AssetFactory | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xb04eb6b64137d1673d46731c8f84718092c50b0d` — deployed 2024-12-18 13:21:31+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| SSI Protocol - SlowMist Audit Report.pdf | AssetFeeManager | own contract | AssetFeeManager (selected) `0x996c93827ab4c55b1044add903d2bdb0dcd546ba` — deployed 2024-12-18 13:21:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| SSI Protocol - SlowMist Audit Report.pdf | AssetIssuer | own contract | AssetIssuer (selected) `0xdc74d8c5d9a900fdf8a6d03ad419b236c9a1ad1d` — deployed 2024-12-18 13:21:31+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | SSI Protocol - SlowMist Audit Report.pdf | AssetRebalancer | unmatched — not counted | — | — | no |
 | SSI Protocol - SlowMist Audit Report.pdf | AssetToken | unmatched — not counted | — | — | no |
-| SSI Protocol - SlowMist Audit Report.pdf | Swap | own contract | Swap (selected) `0x640cb7...8bb5e0` — deployed 2024-12-18 13:21:31+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| SSI Protocol Phase2 - SlowMist Audit Report.pdf | AssetFactory | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xb04eb6...c50b0d` — deployed 2024-12-18 13:21:31+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| SSI Protocol Phase2 - SlowMist Audit Report.pdf | AssetFeeManager | own contract | AssetFeeManager (selected) `0x996c93...d546ba` — deployed 2024-12-18 13:21:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| SSI Protocol Phase2 - SlowMist Audit Report.pdf | AssetIssuer | own contract | AssetIssuer (selected) `0xdc74d8...a1ad1d` — deployed 2024-12-18 13:21:31+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| SSI Protocol Phase2 - SlowMist Audit Report.pdf | AssetLocking | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x935a4b...839383` — deployed 2024-12-18 13:21:45+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| SSI Protocol - SlowMist Audit Report.pdf | Swap | own contract | Swap (selected) `0x640cb7201810bc920835a598248c4fe4898bb5e0` — deployed 2024-12-18 13:21:31+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| SSI Protocol Phase2 - SlowMist Audit Report.pdf | AssetFactory | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xb04eb6b64137d1673d46731c8f84718092c50b0d` — deployed 2024-12-18 13:21:31+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| SSI Protocol Phase2 - SlowMist Audit Report.pdf | AssetFeeManager | own contract | AssetFeeManager (selected) `0x996c93827ab4c55b1044add903d2bdb0dcd546ba` — deployed 2024-12-18 13:21:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| SSI Protocol Phase2 - SlowMist Audit Report.pdf | AssetIssuer | own contract | AssetIssuer (selected) `0xdc74d8c5d9a900fdf8a6d03ad419b236c9a1ad1d` — deployed 2024-12-18 13:21:31+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| SSI Protocol Phase2 - SlowMist Audit Report.pdf | AssetLocking | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x935a4b1f6f3e891a226b2522ac22d45ce5839383` — deployed 2024-12-18 13:21:45+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | SSI Protocol Phase2 - SlowMist Audit Report.pdf | AssetRebalancer | unmatched — not counted | — | — | no |
-| SSI Protocol Phase2 - SlowMist Audit Report.pdf | StakeFactory | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x585834...4e35c1` — deployed 2024-12-18 13:21:45+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| SSI Protocol Phase2 - SlowMist Audit Report.pdf | StakeFactory | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x585834242bb31427b1dc7486dd4bde7c724e35c1` — deployed 2024-12-18 13:21:45+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | SSI Protocol Phase2 - SlowMist Audit Report.pdf | StakeToken | unmatched — not counted | — | — | no |
-| SSI Protocol Phase2 - SlowMist Audit Report.pdf | Swap | own contract | Swap (selected) `0x640cb7...8bb5e0` — deployed 2024-12-18 13:21:31+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| SSI Protocol Phase2 - SlowMist Audit Report.pdf | USSI | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x3a46ed...d2ed18` — deployed 2024-12-18 13:21:45+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| SSI Protocol Phase2 - SlowMist Audit Report.pdf | Swap | own contract | Swap (selected) `0x640cb7201810bc920835a598248c4fe4898bb5e0` — deployed 2024-12-18 13:21:31+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| SSI Protocol Phase2 - SlowMist Audit Report.pdf | USSI | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x3a46ed8fceb6ef1ada2e4600a522ae7e24d2ed18` — deployed 2024-12-18 13:21:45+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 
 ## Coverage Gaps
 

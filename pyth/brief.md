@@ -59,26 +59,26 @@ The protocol comprises 3 functional families. Its contracts share 3 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| EntropyUpgradable | unknown | optimism | n/a | [`0x040283...540519`](./contracts/optimism-10/0x0402833a00e734821f74fa4bbded2f1759540519/) | ✅ Audited |
-| ExecutorUpgradable | unknown | optimism | n/a | [`0x5f3c61...b848fb`](./contracts/optimism-10/0x5f3c61944ceb01b3eaef861251fb1e0f14b848fb/) | ✅ Audited |
-| PythUpgradable | unknown | polygon | n/a | [`0x14715d...da76fc`](./contracts/polygon-137/0x14715d91e31d690a31ecc542eea613ff9dda76fc/) | ✅ Audited |
-| ReceiverImplementation | unknown | mode | n/a | [`0x66e9cb...01d0f7`](./contracts/mode-34443/0x66e9cba5529824a03b5bc9931d9c63637101d0f7/) | ✅ Audited |
+| EntropyUpgradable | unknown | optimism | n/a | [`0x0402833a00e734821f74fa4bbded2f1759540519`](./contracts/optimism-10/0x0402833a00e734821f74fa4bbded2f1759540519/) | ✅ Audited |
+| ExecutorUpgradable | unknown | optimism | n/a | [`0x5f3c61944ceb01b3eaef861251fb1e0f14b848fb`](./contracts/optimism-10/0x5f3c61944ceb01b3eaef861251fb1e0f14b848fb/) | ✅ Audited |
+| PythUpgradable | unknown | polygon | n/a | [`0x14715d91e31d690a31ecc542eea613ff9dda76fc`](./contracts/polygon-137/0x14715d91e31d690a31ecc542eea613ff9dda76fc/) | ✅ Audited |
+| ReceiverImplementation | unknown | mode | n/a | [`0x66e9cba5529824a03b5bc9931d9c63637101d0f7`](./contracts/mode-34443/0x66e9cba5529824a03b5bc9931d9c63637101d0f7/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (11)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BridgeToken | unknown | avalanche | n/a | [`0x8a0691...889b42`](./contracts/avalanche-43114/0x8a0691e602b7a5fcc51a27e4a08376de50889b42/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | optimism | n/a | [`0x05d4ed...50e480`](./contracts/optimism-10/0x05d4ed5f126ac23b6fb8e4ffd4c2c28b6050e480/) | ⚠️ Unaudited |
-| ExpressRelayUpgradable | unknown | mode | n/a | [`0x246540...26f92c`](./contracts/mode-34443/0x24654078a8e043e8985d962a5100cdfa2026f92c/) | ⚠️ Unaudited |
-| MantaMintableERC20 | unknown | manta | n/a | [`0x01d275...dbc02a`](./contracts/manta-169/0x01d27580c464d5b3b26f78bee12e684901dbc02a/) | ⚠️ Unaudited |
-| MulticallAdapter | unknown | mode | n/a | [`0x9fcdca...f29f37`](./contracts/mode-34443/0x9fcdcab0a147e799fa866594b2c4c20f4ef29f37/) | ⚠️ Unaudited |
-| OpenfortUpgradeableProxy | unknown | ethereum | n/a | [`0x237b7a...5a58f3`](./contracts/ethereum-1/0x237b7aff1af5d9f311f830234792d429355a58f3/) | ⚠️ Unaudited |
-| OpportunityAdapterFactory | unknown | mode | n/a | [`0x59f78d...05602f`](./contracts/mode-34443/0x59f78de21a0b05d96ae00c547ba951a3b905602f/) | ⚠️ Unaudited |
-| OpportunityProvider | unknown | mode | n/a | [`0x621330...c53cca`](./contracts/mode-34443/0x621330d0ecd449a06b72f41c1a93626ccec53cca/) | ⚠️ Unaudited |
-| PythAggregatorV3 | unknown | hyperliquid | n/a | [`0x47a1e9...13b784`](./contracts/hyperliquid-999/0x47a1e9f11b7e2f6554861f450a5764c93913b784/) | ⚠️ Unaudited |
-| TokenBridge | unknown | mode | n/a | [`0x8250f4...b1487a`](./contracts/mode-34443/0x8250f4af4b972684f7b336503e2d6dfedeb1487a/) | ⚠️ Unaudited |
-| TokenImplementation | unknown | base | n/a | [`0x4c5d8a...705e98`](./contracts/base-8453/0x4c5d8a75f3762c1561d96f177694f67378705e98/) | ⚠️ Unaudited |
+| BridgeToken | unknown | avalanche | n/a | [`0x8a0691e602b7a5fcc51a27e4a08376de50889b42`](./contracts/avalanche-43114/0x8a0691e602b7a5fcc51a27e4a08376de50889b42/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | optimism | n/a | [`0x05d4ed5f126ac23b6fb8e4ffd4c2c28b6050e480`](./contracts/optimism-10/0x05d4ed5f126ac23b6fb8e4ffd4c2c28b6050e480/) | ⚠️ Unaudited |
+| ExpressRelayUpgradable | unknown | mode | n/a | [`0x24654078a8e043e8985d962a5100cdfa2026f92c`](./contracts/mode-34443/0x24654078a8e043e8985d962a5100cdfa2026f92c/) | ⚠️ Unaudited |
+| MantaMintableERC20 | unknown | manta | n/a | [`0x01d27580c464d5b3b26f78bee12e684901dbc02a`](./contracts/manta-169/0x01d27580c464d5b3b26f78bee12e684901dbc02a/) | ⚠️ Unaudited |
+| MulticallAdapter | unknown | mode | n/a | [`0x9fcdcab0a147e799fa866594b2c4c20f4ef29f37`](./contracts/mode-34443/0x9fcdcab0a147e799fa866594b2c4c20f4ef29f37/) | ⚠️ Unaudited |
+| OpenfortUpgradeableProxy | unknown | ethereum | n/a | [`0x237b7aff1af5d9f311f830234792d429355a58f3`](./contracts/ethereum-1/0x237b7aff1af5d9f311f830234792d429355a58f3/) | ⚠️ Unaudited |
+| OpportunityAdapterFactory | unknown | mode | n/a | [`0x59f78de21a0b05d96ae00c547ba951a3b905602f`](./contracts/mode-34443/0x59f78de21a0b05d96ae00c547ba951a3b905602f/) | ⚠️ Unaudited |
+| OpportunityProvider | unknown | mode | n/a | [`0x621330d0ecd449a06b72f41c1a93626ccec53cca`](./contracts/mode-34443/0x621330d0ecd449a06b72f41c1a93626ccec53cca/) | ⚠️ Unaudited |
+| PythAggregatorV3 | unknown | hyperliquid | n/a | [`0x47a1e9f11b7e2f6554861f450a5764c93913b784`](./contracts/hyperliquid-999/0x47a1e9f11b7e2f6554861f450a5764c93913b784/) | ⚠️ Unaudited |
+| TokenBridge | unknown | mode | n/a | [`0x8250f4af4b972684f7b336503e2d6dfedeb1487a`](./contracts/mode-34443/0x8250f4af4b972684f7b336503e2d6dfedeb1487a/) | ⚠️ Unaudited |
+| TokenImplementation | unknown | base | n/a | [`0x4c5d8a75f3762c1561d96f177694f67378705e98`](./contracts/base-8453/0x4c5d8a75f3762c1561d96f177694f67378705e98/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -134,16 +134,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| avalanche | [`0x8a0691...889b42`](./contracts/avalanche-43114/0x8a0691e602b7a5fcc51a27e4a08376de50889b42/) | BridgeToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| mode | [`0x246540...26f92c`](./contracts/mode-34443/0x24654078a8e043e8985d962a5100cdfa2026f92c/) | ExpressRelayUpgradable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0x01d275...dbc02a`](./contracts/manta-169/0x01d27580c464d5b3b26f78bee12e684901dbc02a/) | MantaMintableERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| mode | [`0x9fcdca...f29f37`](./contracts/mode-34443/0x9fcdcab0a147e799fa866594b2c4c20f4ef29f37/) | MulticallAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x237b7a...5a58f3`](./contracts/ethereum-1/0x237b7aff1af5d9f311f830234792d429355a58f3/) | OpenfortUpgradeableProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| mode | [`0x59f78d...05602f`](./contracts/mode-34443/0x59f78de21a0b05d96ae00c547ba951a3b905602f/) | OpportunityAdapterFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| mode | [`0x621330...c53cca`](./contracts/mode-34443/0x621330d0ecd449a06b72f41c1a93626ccec53cca/) | OpportunityProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x47a1e9...13b784`](./contracts/hyperliquid-999/0x47a1e9f11b7e2f6554861f450a5764c93913b784/) | PythAggregatorV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| mode | [`0x8250f4...b1487a`](./contracts/mode-34443/0x8250f4af4b972684f7b336503e2d6dfedeb1487a/) | TokenBridge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x4c5d8a...705e98`](./contracts/base-8453/0x4c5d8a75f3762c1561d96f177694f67378705e98/) | TokenImplementation | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0x8a0691e602b7a5fcc51a27e4a08376de50889b42`](./contracts/avalanche-43114/0x8a0691e602b7a5fcc51a27e4a08376de50889b42/) | BridgeToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| mode | [`0x24654078a8e043e8985d962a5100cdfa2026f92c`](./contracts/mode-34443/0x24654078a8e043e8985d962a5100cdfa2026f92c/) | ExpressRelayUpgradable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| manta | [`0x01d27580c464d5b3b26f78bee12e684901dbc02a`](./contracts/manta-169/0x01d27580c464d5b3b26f78bee12e684901dbc02a/) | MantaMintableERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| mode | [`0x9fcdcab0a147e799fa866594b2c4c20f4ef29f37`](./contracts/mode-34443/0x9fcdcab0a147e799fa866594b2c4c20f4ef29f37/) | MulticallAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x237b7aff1af5d9f311f830234792d429355a58f3`](./contracts/ethereum-1/0x237b7aff1af5d9f311f830234792d429355a58f3/) | OpenfortUpgradeableProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| mode | [`0x59f78de21a0b05d96ae00c547ba951a3b905602f`](./contracts/mode-34443/0x59f78de21a0b05d96ae00c547ba951a3b905602f/) | OpportunityAdapterFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| mode | [`0x621330d0ecd449a06b72f41c1a93626ccec53cca`](./contracts/mode-34443/0x621330d0ecd449a06b72f41c1a93626ccec53cca/) | OpportunityProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x47a1e9f11b7e2f6554861f450a5764c93913b784`](./contracts/hyperliquid-999/0x47a1e9f11b7e2f6554861f450a5764c93913b784/) | PythAggregatorV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| mode | [`0x8250f4af4b972684f7b336503e2d6dfedeb1487a`](./contracts/mode-34443/0x8250f4af4b972684f7b336503e2d6dfedeb1487a/) | TokenBridge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x4c5d8a75f3762c1561d96f177694f67378705e98`](./contracts/base-8453/0x4c5d8a75f3762c1561d96f177694f67378705e98/) | TokenImplementation | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

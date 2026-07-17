@@ -90,12 +90,12 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| InfinityNFTPeriphery | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x916122...20aaec`; linea `0xb360a2...97a3c3` | ⚠️ Unaudited |
-| UsdPlusTokenV3 | token | non_address_book | non_address_book_inventory (excluded) | 2 | linea | n/a | 2 deployments: linea `0x1e1f50...3b7f13`; linea `0xb79dd0...de4376` | ⚠️ Unaudited |
-| XfaiINFT | token | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 3 deployments: linea `0xa155f1...c5239a`; linea `0xca4cec...edc7f8`; linea `0xf85cf3...b235fe` | ⚠️ Unaudited |
-| XfaiLibrary | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x0db4a7...34c540`; linea `0x59eaeb...50d315` | ⚠️ Unaudited |
-| XfaiV0Core | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x8d58ee...8bc01a`; linea `0xb7d108...06c06e` | ⚠️ Unaudited |
-| XfaiV0Periphery03 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x2205eb...afd5a4`; linea `0x4e4a59...2c2f0d` | ⚠️ Unaudited |
+| InfinityNFTPeriphery | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x91612287fd53bedd253a89e3d9813423ea20aaec`; linea `0xb360a2e9ea74ca5fc0abb46fb4cc29867297a3c3` | ⚠️ Unaudited |
+| UsdPlusTokenV3 | token | non_address_book | non_address_book_inventory (excluded) | 2 | linea | n/a | 2 deployments: linea `0x1e1f509963a6d33e169d9497b11c7dbfe73b7f13`; linea `0xb79dd08ea68a908a97220c76d19a6aa9cbde4376` | ⚠️ Unaudited |
+| XfaiINFT | token | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 3 deployments: linea `0xa155f12d3be29bf20b615e1e7f066ae9e3c5239a`; linea `0xca4ceca8750bf92373bab5448d75433372edc7f8`; linea `0xf85cf376ac0dc4c756e5ce7a538cd8a0b3b235fe` | ⚠️ Unaudited |
+| XfaiLibrary | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x0db4a7a61762a42e56a31b0b844464d56934c540`; linea `0x59eaeb942af4b7025481e3ef46265c5dad50d315` | ⚠️ Unaudited |
+| XfaiV0Core | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x8d58ee2d23f7920ea32e534aad8d6753c88bc01a`; linea `0xb7d1080d6cfa8f7a6aa6ee1dc4e21a2c4906c06e` | ⚠️ Unaudited |
+| XfaiV0Periphery03 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x2205ebb740c7c98ed52cf7f0fc302eb8a4afd5a4`; linea `0x4e4a59f2a122f9b442ec39981758aa77db2c2f0d` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -115,18 +115,18 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x2504ab...a45f0f` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x7dea1f...b89501` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x84e88a...b58fd8` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x9a8aeb...2a77f8` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xa5136e...3eca26` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xabbe92...a0883f` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xabc372...690996` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xb694ce...a49a4e` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xb77022...77b8f8` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xd538be...b0ef33` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xd58bcb...b0c421` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xed0508...fcf5b2` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x2504ab8260217ca6c72132237086274f60a45f0f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x7dea1f358def15eafab3466b906eb6872fb89501` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x84e88a4dc58d6e518b1f9f8c3d8a03f43eb58fd8` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x9a8aeb02b90b67e23469bb01ecab86f3512a77f8` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xa5136ead459f0e61c99cec70fe8f5c24cf3eca26` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xabbe925cf6913a5af177fb735dd817b02da0883f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xabc372a7182951c6282217f2f670f51ed4690996` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xb694ce4c96fb60db5ad8b25dff567c59f7a49a4e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xb7702244270de655ea53d5e7bacc7a38c477b8f8` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xd538be6e9026c13d130c9e17d509e69c8bb0ef33` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xd58bcb63b33d5f6984da687de2e5b8c61bb0c421` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xed050813a98fcd658ee7a490b2b5925e04fcf5b2` | ❓ Unverified |
 
 ## Audit Inventory
 

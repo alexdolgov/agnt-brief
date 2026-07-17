@@ -57,14 +57,14 @@ The protocol comprises 2 functional families. Its contracts share 3 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BatchPlanner | unknown | base | n/a | [`0x3466eb...65c646`](./contracts/base-8453/0x3466eb008edd8d5052446293d1a7d212cb65c646/) | ✅ Audited |
-| ClaimCampaigns | unknown | base | n/a | [`0x1e9ffa...55cf94`](./contracts/base-8453/0x1e9ffaa25d5f8206c697c92bcdee9fa16455cf94/) | ✅ Audited |
-| TokenLockupPlans | unknown | base | n/a | [`0x1961a2...752486`](./contracts/base-8453/0x1961a23409ca59eedca6a99c97e4087dad752486/) | ✅ Audited |
-| TokenLockupPlans_Bound | unknown | base | n/a | [`0x040a92...7b4319`](./contracts/base-8453/0x040a92f07b65e6c2c10fffaf91ddc50f3d7b4319/) | ✅ Audited |
-| TokenVestingPlans | unknown | base | n/a | [`0x2cde99...48f00c`](./contracts/base-8453/0x2cde9919e81b20b4b33dd562a48a84b54c48f00c/) | ✅ Audited |
-| VotingTokenLockupPlans | unknown | base | n/a | [`0x73cd86...a3ec3d`](./contracts/base-8453/0x73cd8626b3cd47b009e68380720cfe6679a3ec3d/) | ✅ Audited |
-| VotingTokenLockupPlans_Bound | unknown | mode | n/a | [`0x38e74a...a5272f`](./contracts/mode-34443/0x38e74a3da3bd27dd581d5948ba19f0f684a5272f/) | ✅ Audited |
-| VotingTokenVestingPlans | unknown | base | n/a | [`0x1b03d7...af2f00`](./contracts/base-8453/0x1b03d75094884714973f22867359de4b81af2f00/) | ✅ Audited |
+| BatchPlanner | unknown | base | n/a | [`0x3466eb008edd8d5052446293d1a7d212cb65c646`](./contracts/base-8453/0x3466eb008edd8d5052446293d1a7d212cb65c646/) | ✅ Audited |
+| ClaimCampaigns | unknown | base | n/a | [`0x1e9ffaa25d5f8206c697c92bcdee9fa16455cf94`](./contracts/base-8453/0x1e9ffaa25d5f8206c697c92bcdee9fa16455cf94/) | ✅ Audited |
+| TokenLockupPlans | unknown | base | n/a | [`0x1961a23409ca59eedca6a99c97e4087dad752486`](./contracts/base-8453/0x1961a23409ca59eedca6a99c97e4087dad752486/) | ✅ Audited |
+| TokenLockupPlans_Bound | unknown | base | n/a | [`0x040a92f07b65e6c2c10fffaf91ddc50f3d7b4319`](./contracts/base-8453/0x040a92f07b65e6c2c10fffaf91ddc50f3d7b4319/) | ✅ Audited |
+| TokenVestingPlans | unknown | base | n/a | [`0x2cde9919e81b20b4b33dd562a48a84b54c48f00c`](./contracts/base-8453/0x2cde9919e81b20b4b33dd562a48a84b54c48f00c/) | ✅ Audited |
+| VotingTokenLockupPlans | unknown | base | n/a | [`0x73cd8626b3cd47b009e68380720cfe6679a3ec3d`](./contracts/base-8453/0x73cd8626b3cd47b009e68380720cfe6679a3ec3d/) | ✅ Audited |
+| VotingTokenLockupPlans_Bound | unknown | mode | n/a | [`0x38e74a3da3bd27dd581d5948ba19f0f684a5272f`](./contracts/mode-34443/0x38e74a3da3bd27dd581d5948ba19f0f684a5272f/) | ✅ Audited |
+| VotingTokenVestingPlans | unknown | base | n/a | [`0x1b03d75094884714973f22867359de4b81af2f00`](./contracts/base-8453/0x1b03d75094884714973f22867359de4b81af2f00/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 

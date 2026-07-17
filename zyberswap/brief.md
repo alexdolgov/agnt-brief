@@ -59,19 +59,19 @@ The protocol comprises 4 functional families. Contracts are linked by 4 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ZyberChef | unknown | arbitrum | n/a | [`0x9ba666...2fbddd`](./contracts/arbitrum-42161/0x9ba666165867e916ee7ed3a3ae6c19415c2fbddd/) | ✅ Audited |
-| ZyberRouter | adapter | arbitrum | n/a | [`0x16e71b...ad32ad`](./contracts/arbitrum-42161/0x16e71b13fe6079b4312063f7e81f76d165ad32ad/) | ✅ Audited |
-| ZyberToken | token | arbitrum | n/a | [`0x3b475f...a2724c`](./contracts/arbitrum-42161/0x3b475f6f2f41853706afc9fa6a6b8c5df1a2724c/) | ✅ Audited |
+| ZyberChef | unknown | arbitrum | n/a | [`0x9ba666165867e916ee7ed3a3ae6c19415c2fbddd`](./contracts/arbitrum-42161/0x9ba666165867e916ee7ed3a3ae6c19415c2fbddd/) | ✅ Audited |
+| ZyberRouter | adapter | arbitrum | n/a | [`0x16e71b13fe6079b4312063f7e81f76d165ad32ad`](./contracts/arbitrum-42161/0x16e71b13fe6079b4312063f7e81f76d165ad32ad/) | ✅ Audited |
+| ZyberToken | token | arbitrum | n/a | [`0x3b475f6f2f41853706afc9fa6a6b8c5df1a2724c`](./contracts/arbitrum-42161/0x3b475f6f2f41853706afc9fa6a6b8c5df1a2724c/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ProfitShare | unknown | arbitrum | n/a | [`0xc35294...b3e586`](./contracts/arbitrum-42161/0xc352940f6cadd1b38d60c353e44402258fb3e586/) | ⚠️ Unaudited |
-| sZyberToken | token | arbitrum | n/a | [`0x3b7172...1e119f`](./contracts/arbitrum-42161/0x3b71729510cbea2f23a1b9fd6b9db002271e119f/) | ⚠️ Unaudited |
-| V3Fees | unknown | arbitrum | n/a | [`0xfe6d3b...8b89cd`](./contracts/arbitrum-42161/0xfe6d3b431c852fff066a748237e9ae963c8b89cd/) | ⚠️ Unaudited |
-| ZyberEarn | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0xc0c272...189b4d`](./contracts/arbitrum-42161/0xc0c272c980bf81eeb5dbbf9ba1ca1f66a7189b4d/); arbitrum `0xeff77e...110c3b` | ⚠️ Unaudited |
-| ZyberVault | core_logic | arbitrum | n/a | [`0x9cb8ed...6ce12a`](./contracts/arbitrum-42161/0x9cb8ed8102b6c65d8cae931394352d7a676ce12a/) | ⚠️ Unaudited |
+| ProfitShare | unknown | arbitrum | n/a | [`0xc352940f6cadd1b38d60c353e44402258fb3e586`](./contracts/arbitrum-42161/0xc352940f6cadd1b38d60c353e44402258fb3e586/) | ⚠️ Unaudited |
+| sZyberToken | token | arbitrum | n/a | [`0x3b71729510cbea2f23a1b9fd6b9db002271e119f`](./contracts/arbitrum-42161/0x3b71729510cbea2f23a1b9fd6b9db002271e119f/) | ⚠️ Unaudited |
+| V3Fees | unknown | arbitrum | n/a | [`0xfe6d3b431c852fff066a748237e9ae963c8b89cd`](./contracts/arbitrum-42161/0xfe6d3b431c852fff066a748237e9ae963c8b89cd/) | ⚠️ Unaudited |
+| ZyberEarn | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0xc0c272c980bf81eeb5dbbf9ba1ca1f66a7189b4d`](./contracts/arbitrum-42161/0xc0c272c980bf81eeb5dbbf9ba1ca1f66a7189b4d/); arbitrum `0xeff77e179f6abb49a5bf0ec25c920b495e110c3b` | ⚠️ Unaudited |
+| ZyberVault | core_logic | arbitrum | n/a | [`0x9cb8ed8102b6c65d8cae931394352d7a676ce12a`](./contracts/arbitrum-42161/0x9cb8ed8102b6c65d8cae931394352d7a676ce12a/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -91,37 +91,37 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | arbitrum | n/a | `0x039a31...6b5f88` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x0d09a0...a5575c` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x13927c...64607b` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x15cb8e...c7e560` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x19b2a1...fc52ce` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x31c5b4...0dc23d` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x37f3ef...3123c5` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x3892c8...d216d1` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x3ae87d...1788f0` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x466b5b...91a3b4` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x5539b5...7d8d88` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x65eb77...de6c8b` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x722ef2...e736d8` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x72d01e...a4b872` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x7cdad2...6f3fa3` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x835100...9ea730` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x97c79e...0b371f` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x998465...2f6b56` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x9f9804...37d787` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xa79cb9...419269` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xa9f66f...134359` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xb502f1...1bec82` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xba86c3...105474` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xcc72ab...3628be` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xcc7729...eacef5` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xce7b1d...9b2fc7` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xe4a866...f3ce60` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xebc9f4...637d59` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xed4c32...05a9c1` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xf34d68...b3d7e7` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xfe9272...5005a5` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x039a31b938ff35af8bd776e0e319ad068f6b5f88` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x0d09a0dbd59f02c2f0e45b04b0d8021c42a5575c` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x13927ceb9f63980e52a768788c16b3ba2d64607b` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x15cb8e177dd03a97faf56efab653c7b4ffc7e560` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x19b2a1a462a33c859eb91121f710a01e0dfc52ce` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x31c5b48457db7c255b424915a776ec3e5d0dc23d` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x37f3efe815ba4b65def108669c9d1bda153123c5` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x3892c88651c3de2848c343de7e5f19e9ced216d1` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x3ae87d0a5fc06afe55e34e3f96546a75891788f0` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x466b5bc5260ec200171d6e0df5733fa86091a3b4` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x5539b54370b92de97bf6e2153d69635b977d8d88` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x65eb774097913735a0e9c05403ed5dd011de6c8b` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x722ef2fe7c24b4b989212f7e70e12a086de736d8` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x72d01e4fa5d2988beb65f7f1d5f04c5030a4b872` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x7cdad2abdbdd655e64dc4dccaf92b057576f3fa3` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x835100ef5e932e30f75f84ae45d324791e9ea730` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x97c79ebc3cd6d86473afd57e42866b19900b371f` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x9984656ddb11bc34931a79f71aa18826912f6b56` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x9f98040c5a1fa70e8b92de71601cd29a7137d787` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xa79cb9dd0af7895db6c6b78d348141ed83419269` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xa9f66f335a40d6e09a2ab304180f29bd3d134359` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xb502f124a4e268b1c9365fbb9c29d6d6ac1bec82` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xba86c3816e60683769f5e9b4e117065ea6105474` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xcc72ab830268cd8eae2896d9d5df83dc123628be` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xcc7729b91f8706e4c7a767e6b2e47e42f1eacef5` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xce7b1d1ffe480094d6bb872acb33770bb69b2fc7` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xe4a8666053719ec8a8551f7db254916e74f3ce60` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xebc9f429314d2408f903f999a62403d4cb637d59` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xed4c3279a82c12339a197a4344cedaadd505a9c1` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xf34d683654d318c08d4e8313f6fbad721eb3d7e7` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xfe9272a2e98be023e7df2ed3fb54243fa65005a5` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -135,11 +135,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | [`0xc35294...b3e586`](./contracts/arbitrum-42161/0xc352940f6cadd1b38d60c353e44402258fb3e586/) | ProfitShare | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x3b7172...1e119f`](./contracts/arbitrum-42161/0x3b71729510cbea2f23a1b9fd6b9db002271e119f/) | sZyberToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xfe6d3b...8b89cd`](./contracts/arbitrum-42161/0xfe6d3b431c852fff066a748237e9ae963c8b89cd/) | V3Fees | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xc0c272...189b4d`](./contracts/arbitrum-42161/0xc0c272c980bf81eeb5dbbf9ba1ca1f66a7189b4d/) | ZyberEarn | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x9cb8ed...6ce12a`](./contracts/arbitrum-42161/0x9cb8ed8102b6c65d8cae931394352d7a676ce12a/) | ZyberVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xc352940f6cadd1b38d60c353e44402258fb3e586`](./contracts/arbitrum-42161/0xc352940f6cadd1b38d60c353e44402258fb3e586/) | ProfitShare | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x3b71729510cbea2f23a1b9fd6b9db002271e119f`](./contracts/arbitrum-42161/0x3b71729510cbea2f23a1b9fd6b9db002271e119f/) | sZyberToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xfe6d3b431c852fff066a748237e9ae963c8b89cd`](./contracts/arbitrum-42161/0xfe6d3b431c852fff066a748237e9ae963c8b89cd/) | V3Fees | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xc0c272c980bf81eeb5dbbf9ba1ca1f66a7189b4d`](./contracts/arbitrum-42161/0xc0c272c980bf81eeb5dbbf9ba1ca1f66a7189b4d/) | ZyberEarn | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x9cb8ed8102b6c65d8cae931394352d7a676ce12a`](./contracts/arbitrum-42161/0x9cb8ed8102b6c65d8cae931394352d7a676ce12a/) | ZyberVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

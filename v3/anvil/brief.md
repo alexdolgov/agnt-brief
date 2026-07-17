@@ -54,16 +54,16 @@ The pinned logic-topography run contains 16 contract row(s) across ethereum. Str
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x24573b...70e27e`, chain 1)
-- UnnamedContract (`0x716321...b14589`, chain 1)
-- Anvil (`0xaeeaa5...5b5597`, chain 1)
-- AnvilTimelock (`0x4eeb7c...2cad21`, chain 1)
-- CollateralVault (`0x5d2725...1d675f`, chain 1)
-- PassThroughLiquidator (`0x9ae1ca...1342b8`, chain 1)
-- Permit2PassThroughLiquidator (`0x8aa57e...e2eb4c`, chain 1)
-- ProxyAdmin (`0x12225b...6e341d`, chain 1)
-- TimeBasedCollateralPool (`0xcc437a...4cf29f`, chain 1)
-- UpgradeableBeacon (`0x1f00d6...9c9e14`, chain 1)
+- UnnamedContract (`0x24573b112456d3a96c97fb460b436e8ca870e27e`, chain 1)
+- UnnamedContract (`0x716321565e1eaba200789e14ad92c9da40b14589`, chain 1)
+- Anvil (`0xaeeaa594e7dc112d67b8547fe9767a02c15b5597`, chain 1)
+- AnvilTimelock (`0x4eeb7c5bb75fc0dbea4826bf568fd577f62cad21`, chain 1)
+- CollateralVault (`0x5d2725fde4d7aa3388da4519ac0449cc031d675f`, chain 1)
+- PassThroughLiquidator (`0x9ae1caa5ce6fa330fce98315159bcd433b1342b8`, chain 1)
+- Permit2PassThroughLiquidator (`0x8aa57e442e4562c80fddad1b71adf0ba75e2eb4c`, chain 1)
+- ProxyAdmin (`0x12225bb169b38ef8849dd4f5cc466ae5996e341d`, chain 1)
+- TimeBasedCollateralPool (`0xcc437a7bb14f07de09b0f4438df007c8f64cf29f`, chain 1)
+- UpgradeableBeacon (`0x1f00d6f7c18a8edf4f8bb4ead8a898abdd9c9e14`, chain 1)
 
 ## Contract Surface Quality
 
@@ -109,27 +109,27 @@ The pinned logic-topography run contains 16 contract row(s) across ethereum. Str
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| CollateralVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-379042 | `0x5d2725...1d675f` | ✅ Audited |
-| Anvil | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379040 | `0x2ca924...d01bfc` | ✅ Audited |
-| Anvil | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379046 | `0xaeeaa5...5b5597` | ✅ Audited |
-| AnvilGovernorDelegate | governance | project_anchor | own_core | 1 | ethereum | unit-379051 | 9 deployments: ethereum `0x00e83d...4874c9`; ethereum `0x081fe8...aed8d9`; ethereum `0x09c7ec...bc200f`; ethereum `0x123641...b49f49`; ethereum `0x33148e...2a3ba1`; ethereum `0x65eed5...99f602`; ethereum `0xa57365...f2b5e4`; ethereum `0xbb1470...187aa0`; ethereum `0xfd883f...4c5b8f` | ✅ Audited |
-| AnvilTimelock | governance | project_anchor | own_supporting | 0 | ethereum | unit-379041 | `0x4eeb7c...2cad21` | ✅ Audited |
-| LetterOfCredit | unknown | project_anchor | own_supporting | 1 | ethereum | unit-379052 | 2 deployments: ethereum `0x14db9a...7c4808`; ethereum `0x24573b...70e27e` | ✅ Audited |
-| PythPriceOracle | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379048 | `0xc6f340...56ee05` | ✅ Audited |
+| CollateralVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-379042 | `0x5d2725fde4d7aa3388da4519ac0449cc031d675f` | ✅ Audited |
+| Anvil | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379040 | `0x2ca9242c1810029efed539f1c60d68b63ad01bfc` | ✅ Audited |
+| Anvil | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379046 | `0xaeeaa594e7dc112d67b8547fe9767a02c15b5597` | ✅ Audited |
+| AnvilGovernorDelegate | governance | project_anchor | own_core | 1 | ethereum | unit-379051 | 9 deployments: ethereum `0x00e83d0698faf01bd080a4dd2927e6ab7c4874c9`; ethereum `0x081fe8bf28e07232d25b58811c4cad2ebdaed8d9`; ethereum `0x09c7ec11c51e61997274c5c445c9f4ccf6bc200f`; ethereum `0x123641b8a2063217a96ef88bf608931a43b49f49`; ethereum `0x33148ea4cc49fc351a2a9fa729f75134cd2a3ba1`; ethereum `0x65eed5a31d70d5eb0398dbe8e805ffeb6199f602`; ethereum `0xa57365263ff137c9e93818c0f04425b66ff2b5e4`; ethereum `0xbb1470b2a2dcce0cb91ac91d9d0a3ceec9187aa0`; ethereum `0xfd883f549ee20eb69067102fd93a0687744c5b8f` | ✅ Audited |
+| AnvilTimelock | governance | project_anchor | own_supporting | 0 | ethereum | unit-379041 | `0x4eeb7c5bb75fc0dbea4826bf568fd577f62cad21` | ✅ Audited |
+| LetterOfCredit | unknown | project_anchor | own_supporting | 1 | ethereum | unit-379052 | 2 deployments: ethereum `0x14db9a91933ad9433e1a0db04d08e5d9ef7c4808`; ethereum `0x24573b112456d3a96c97fb460b436e8ca870e27e` | ✅ Audited |
+| PythPriceOracle | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379048 | `0xc6f3405c861fa0dca04ec4ba59bc189d1d56ee05` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (9)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AnvilGovernorDelegate | governance | project_anchor | own_supporting | 0 | ethereum | unit-379050 | `0xfe1118...42a361` | ⚠️ Unaudited |
-| Claim | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-379049 | `0xefd194...7e29ac` | ⚠️ Unaudited |
-| LetterOfCredit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x1a3251...f42961`; ethereum `0x750ab7...59d5ad` | ⚠️ Unaudited |
-| PassThroughLiquidator | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-379045 | `0x9ae1ca...1342b8` | ⚠️ Unaudited |
-| Permit2PassThroughLiquidator | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-379044 | `0x8aa57e...e2eb4c` | ⚠️ Unaudited |
-| ProxyAdmin | governance | project_anchor | own_supporting | 0 | ethereum | unit-379039 | `0x12225b...6e341d` | ⚠️ Unaudited |
-| Reward | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-379047 | `0xc6a06f...da22da` | ⚠️ Unaudited |
-| TimeBasedCollateralPool | unknown | project_anchor | own_supporting | 1 | ethereum | unit-379053 | 2 deployments: ethereum `0x1f00d6...9c9e14`; ethereum `0xcc437a...4cf29f` | ⚠️ Unaudited |
-| TimeBasedCollateralPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd042c2...db3e5a` | ⚠️ Unaudited |
+| AnvilGovernorDelegate | governance | project_anchor | own_supporting | 0 | ethereum | unit-379050 | `0xfe1118ce38818ea3c167929eacb6310cdc42a361` | ⚠️ Unaudited |
+| Claim | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-379049 | `0xefd194d4ff955e8958d132319f31d2ab9f7e29ac` | ⚠️ Unaudited |
+| LetterOfCredit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x1a3251d83b4ed97d8e1d8451613d7dd9b4f42961`; ethereum `0x750ab78b4fe51292d1f0053845aace3ea959d5ad` | ⚠️ Unaudited |
+| PassThroughLiquidator | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-379045 | `0x9ae1caa5ce6fa330fce98315159bcd433b1342b8` | ⚠️ Unaudited |
+| Permit2PassThroughLiquidator | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-379044 | `0x8aa57e442e4562c80fddad1b71adf0ba75e2eb4c` | ⚠️ Unaudited |
+| ProxyAdmin | governance | project_anchor | own_supporting | 0 | ethereum | unit-379039 | `0x12225bb169b38ef8849dd4f5cc466ae5996e341d` | ⚠️ Unaudited |
+| Reward | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-379047 | `0xc6a06f2d000b8cfdd392c4d6ab715a9ff1da22da` | ⚠️ Unaudited |
+| TimeBasedCollateralPool | unknown | project_anchor | own_supporting | 1 | ethereum | unit-379053 | 2 deployments: ethereum `0x1f00d6f7c18a8edf4f8bb4ead8a898abdd9c9e14`; ethereum `0xcc437a7bb14f07de09b0f4438df007c8f64cf29f` | ⚠️ Unaudited |
+| TimeBasedCollateralPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd042c267758eddf34b481e1f539d637e41db3e5a` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -149,7 +149,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379043 | `0x716321...b14589` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379043 | `0x716321565e1eaba200789e14ad92c9da40b14589` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -175,16 +175,16 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| www.openzeppelin.com/news/anvil-protocol-diff-audit | Anvil | own contract | Anvil (selected) `0xaeeaa5...5b5597` — deployed 2025-10-03 01:52:35+03 — liveness: live (current_address_book_code)<br>Anvil (alternative) `0x2ca924...d01bfc` — deployed 2024-06-04 00:43:11+03 — liveness: live (current_address_book_code) | deployment-date disambiguation: 2025-10-03 was 2d from audit; next candidate 484d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| www.openzeppelin.com/news/anvil-protocol-diff-audit | AnvilGovernorDelegate | ambiguous — not counted | AnvilGovernorDelegate (alternative) `0xfe1118...42a361` — deployed 2024-06-04 00:40:47+03 — liveness: live (current_address_book_code)<br>AnvilGovernorDelegator (proxy) (alternative) `0x00e83d...4874c9` — deployed 2024-06-04 01:01:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| www.openzeppelin.com/news/anvil-protocol-audit | CollateralVault | own contract | CollateralVault (selected) `0x5d2725...1d675f` — deployed 2024-08-19 17:39:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| www.openzeppelin.com/news/anvil-protocol-diff-audit | Anvil | own contract | Anvil (selected) `0xaeeaa594e7dc112d67b8547fe9767a02c15b5597` — deployed 2025-10-03 01:52:35+03 — liveness: live (current_address_book_code)<br>Anvil (alternative) `0x2ca9242c1810029efed539f1c60d68b63ad01bfc` — deployed 2024-06-04 00:43:11+03 — liveness: live (current_address_book_code) | deployment-date disambiguation: 2025-10-03 was 2d from audit; next candidate 484d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| www.openzeppelin.com/news/anvil-protocol-diff-audit | AnvilGovernorDelegate | ambiguous — not counted | AnvilGovernorDelegate (alternative) `0xfe1118ce38818ea3c167929eacb6310cdc42a361` — deployed 2024-06-04 00:40:47+03 — liveness: live (current_address_book_code)<br>AnvilGovernorDelegator (proxy) (alternative) `0x00e83d0698faf01bd080a4dd2927e6ab7c4874c9` — deployed 2024-06-04 01:01:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| www.openzeppelin.com/news/anvil-protocol-audit | CollateralVault | own contract | CollateralVault (selected) `0x5d2725fde4d7aa3388da4519ac0449cc031d675f` — deployed 2024-08-19 17:39:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | www.openzeppelin.com/news/anvil-protocol-audit | Pricing | unmatched — not counted | — | listed in scope | no |
-| www.openzeppelin.com/news/anvil-protocol-audit | TimeBasedCollateralPool | ambiguous — not counted | TimeBasedCollateralPool (alternative) `0xcc437a...4cf29f` — deployed 2024-11-25 18:41:59+03 — liveness: live (current_address_book_code)<br>UpgradeableBeacon (proxy) (alternative) `0x1f00d6...9c9e14` — deployed 2024-08-19 17:40:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| www.openzeppelin.com/news/anvil-protocol-audit | Anvil | own contract | Anvil (alternative) `0xaeeaa5...5b5597` — deployed 2025-10-03 01:52:35+03 — liveness: live (current_address_book_code)<br>Anvil (selected) `0x2ca924...d01bfc` — deployed 2024-06-04 00:43:11+03 — liveness: live (current_address_book_code) | deployment-date disambiguation: 2024-06-04 was 129d from audit; next candidate 357d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| www.openzeppelin.com/news/anvil-protocol-audit | TimeBasedCollateralPool | ambiguous — not counted | TimeBasedCollateralPool (alternative) `0xcc437a7bb14f07de09b0f4438df007c8f64cf29f` — deployed 2024-11-25 18:41:59+03 — liveness: live (current_address_book_code)<br>UpgradeableBeacon (proxy) (alternative) `0x1f00d6f7c18a8edf4f8bb4ead8a898abdd9c9e14` — deployed 2024-08-19 17:40:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| www.openzeppelin.com/news/anvil-protocol-audit | Anvil | own contract | Anvil (alternative) `0xaeeaa594e7dc112d67b8547fe9767a02c15b5597` — deployed 2025-10-03 01:52:35+03 — liveness: live (current_address_book_code)<br>Anvil (selected) `0x2ca9242c1810029efed539f1c60d68b63ad01bfc` — deployed 2024-06-04 00:43:11+03 — liveness: live (current_address_book_code) | deployment-date disambiguation: 2024-06-04 was 129d from audit; next candidate 357d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | www.openzeppelin.com/news/anvil-protocol-audit | AnvilERC20Votes | unmatched — not counted | — | listed in scope | no |
-| www.openzeppelin.com/news/anvil-protocol-audit | AnvilGovernorDelegate | ambiguous — not counted | AnvilGovernorDelegate (alternative) `0xfe1118...42a361` — deployed 2024-06-04 00:40:47+03 — liveness: live (current_address_book_code)<br>AnvilGovernorDelegator (proxy) (alternative) `0x00e83d...4874c9` — deployed 2024-06-04 01:01:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| www.openzeppelin.com/news/anvil-protocol-audit | AnvilGovernorDelegator | own proxy deployment | AnvilGovernorDelegator (proxy) (selected) `0x00e83d...4874c9` — deployed 2024-06-04 01:01:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| www.openzeppelin.com/news/anvil-protocol-audit | AnvilTimelock | own contract | AnvilTimelock (selected) `0x4eeb7c...2cad21` — deployed 2024-06-04 01:00:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| www.openzeppelin.com/news/anvil-protocol-audit | AnvilGovernorDelegate | ambiguous — not counted | AnvilGovernorDelegate (alternative) `0xfe1118ce38818ea3c167929eacb6310cdc42a361` — deployed 2024-06-04 00:40:47+03 — liveness: live (current_address_book_code)<br>AnvilGovernorDelegator (proxy) (alternative) `0x00e83d0698faf01bd080a4dd2927e6ab7c4874c9` — deployed 2024-06-04 01:01:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| www.openzeppelin.com/news/anvil-protocol-audit | AnvilGovernorDelegator | own proxy deployment | AnvilGovernorDelegator (proxy) (selected) `0x00e83d0698faf01bd080a4dd2927e6ab7c4874c9` — deployed 2024-06-04 01:01:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| www.openzeppelin.com/news/anvil-protocol-audit | AnvilTimelock | own contract | AnvilTimelock (selected) `0x4eeb7c5bb75fc0dbea4826bf568fd577f62cad21` — deployed 2024-06-04 01:00:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | www.openzeppelin.com/news/anvil-protocol-audit | AnvilVotes | unmatched — not counted | — | listed in scope | no |
 | www.openzeppelin.com/news/anvil-protocol-audit | Claim | unmatched — not counted | — | listed in scope | no |
 | www.openzeppelin.com/news/anvil-protocol-audit | IClaimable | unmatched — not counted | — | listed in scope | no |
@@ -193,13 +193,13 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | www.openzeppelin.com/news/anvil-protocol-audit | ICollateralPool | unmatched — not counted | — | listed in scope | no |
 | www.openzeppelin.com/news/anvil-protocol-audit | ITimeBasedCollateralPool | unmatched — not counted | — | listed in scope | no |
 | 2023-12-acronym-foundation-securityreview.pdf | Collateral | unmatched — not counted | — | listed in scope and detailed findings | no |
-| 2023-12-acronym-foundation-securityreview.pdf | LetterOfCredit | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x14db9a...7c4808` — deployed 2024-11-25 18:41:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2023-12-acronym-foundation-securityreview.pdf | LetterOfCredit | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x14db9a91933ad9433e1a0db04d08e5d9ef7c4808` — deployed 2024-11-25 18:41:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2023-12-acronym-foundation-securityreview.pdf | Pricing | unmatched — not counted | — | referenced in findings as a library | no |
-| 2023-12-acronym-foundation-securityreview.pdf | PythPriceOracle | own contract | PythPriceOracle (selected) `0xc6f340...56ee05` — deployed 2024-08-19 17:39:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2023-12-acronym-foundation-securityreview.pdf | PythPriceOracle | own contract | PythPriceOracle (selected) `0xc6f3405c861fa0dca04ec4ba59bc189d1d56ee05` — deployed 2024-08-19 17:39:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | www.openzeppelin.com/news/anvil-audit | Collateral | unmatched — not counted | — | listed in scope | no |
-| www.openzeppelin.com/news/anvil-audit | LetterOfCredit | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x14db9a...7c4808` — deployed 2024-11-25 18:41:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| www.openzeppelin.com/news/anvil-audit | LetterOfCredit | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x14db9a91933ad9433e1a0db04d08e5d9ef7c4808` — deployed 2024-11-25 18:41:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | www.openzeppelin.com/news/anvil-audit | Pricing | unmatched — not counted | — | listed in scope | no |
-| www.openzeppelin.com/news/anvil-audit | PythPriceOracle | own contract | PythPriceOracle (selected) `0xc6f340...56ee05` — deployed 2024-08-19 17:39:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| www.openzeppelin.com/news/anvil-audit | PythPriceOracle | own contract | PythPriceOracle (selected) `0xc6f3405c861fa0dca04ec4ba59bc189d1d56ee05` — deployed 2024-08-19 17:39:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | www.openzeppelin.com/news/anvil-audit | ICollateral | unmatched — not counted | — | listed in scope | no |
 | www.openzeppelin.com/news/anvil-audit | ICollateralDepositTarget | unmatched — not counted | — | listed in scope | no |
 | www.openzeppelin.com/news/anvil-audit | ILiquidatable | unmatched — not counted | — | listed in scope | no |
@@ -212,9 +212,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0xfe1118...42a361` | AnvilGovernorDelegate | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x9ae1ca...1342b8` | PassThroughLiquidator | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x1f00d6...9c9e14` | TimeBasedCollateralPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xfe1118ce38818ea3c167929eacb6310cdc42a361` | AnvilGovernorDelegate | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x9ae1caa5ce6fa330fce98315159bcd433b1342b8` | PassThroughLiquidator | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x1f00d6f7c18a8edf4f8bb4ead8a898abdd9c9e14` | TimeBasedCollateralPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -52,22 +52,22 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xb0bcbe...b985d6`, chain 5000)
-- UnnamedContract (`0xbe592e...17568f`, chain 5000)
-- AgniFactory (`0x25780d...3b2035`, chain 5000)
-- AgniPoolDeployer (`0xe9827b...ea4d03`, chain 5000)
-- MixedRouteQuoterV1 (`0xcdbd1c...12befc`, chain 5000)
-- Multicall3 (`0x05f310...cf7b3c`, chain 5000)
-- NFTDescriptor (`0x70153a...22477a`, chain 5000)
-- NonfungiblePositionManager (`0x218bf5...02d637`, chain 5000)
-- OutputCodeHash (`0x5cfa0f...5df724`, chain 5000)
-- Quoter (`0x9488c0...a60177`, chain 5000)
-- QuoterV2 (`0xc4aadc...23c0cb`, chain 5000)
-- SmartRouter (`0xb52b1f...bc169f`, chain 5000)
-- SwapRouter (`0x319b69...c88421`, chain 5000)
-- TickLens (`0xecdba6...a7bf67`, chain 5000)
-- TransparentUpgradeableProxy (`0xcb814b...ad5764`, chain 5000)
-- WMANTLE (`0x78c1b0...7f4cb8`, chain 5000)
+- UnnamedContract (`0xb0bcbe0d2b197b7a8fb7e66d6a0dd6a91cb985d6`, chain 5000)
+- UnnamedContract (`0xbe592efcf174b3e0e4208dc8c1658822d017568f`, chain 5000)
+- AgniFactory (`0x25780dc8fc3cfbd75f33bfdab65e969b603b2035`, chain 5000)
+- AgniPoolDeployer (`0xe9827b4ebeb9ae41fc57efdddd79edddc2ea4d03`, chain 5000)
+- MixedRouteQuoterV1 (`0xcdbd1c6cfc89af8a518e23b0c71996b90a12befc`, chain 5000)
+- Multicall3 (`0x05f3105fc9fc531712b2570f1c6e11dd4bcf7b3c`, chain 5000)
+- NFTDescriptor (`0x70153a35c3005385b45c47cdcfc7197c1a22477a`, chain 5000)
+- NonfungiblePositionManager (`0x218bf598d1453383e2f4aa7b14ffb9bfb102d637`, chain 5000)
+- OutputCodeHash (`0x5cfa0f1c4067c90a50b973e5f98cd265de5df724`, chain 5000)
+- Quoter (`0x9488c05a7b75a6fefdcae4f11a33467bcba60177`, chain 5000)
+- QuoterV2 (`0xc4aadc921e1cdb66c5300bc158a313292923c0cb`, chain 5000)
+- SmartRouter (`0xb52b1f5e08c04a8c33f4c7363fa2de23b9bc169f`, chain 5000)
+- SwapRouter (`0x319b69888b0d11cec22caa5034e25fffbdc88421`, chain 5000)
+- TickLens (`0xecdba665aa209247cd334d0d037b913528a7bf67`, chain 5000)
+- TransparentUpgradeableProxy (`0xcb814b767d41b4bd94da6abb860d25b607ad5764`, chain 5000)
+- WMANTLE (`0x78c1b0c915c4faa5fffa6cabf0219da63d7f4cb8`, chain 5000)
 
 ## Contract Surface Quality
 
@@ -113,20 +113,20 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AgniFactory | unknown | project_anchor | own_supporting | 0 | mantle | unit-378710 | `0x25780d...3b2035` | ⚠️ Unaudited |
-| AgniPoolDeployer | unknown | project_anchor | own_supporting | 0 | mantle | unit-378721 | `0xe9827b...ea4d03` | ⚠️ Unaudited |
-| MixedRouteQuoterV1 | unknown | project_anchor | own_supporting | 0 | mantle | unit-378720 | `0xcdbd1c...12befc` | ⚠️ Unaudited |
-| Multicall3 | unknown | project_anchor | own_supporting | 0 | mantle | unit-378709 | `0x05f310...cf7b3c` | ⚠️ Unaudited |
-| NFTDescriptor | unknown | project_anchor | own_supporting | 0 | mantle | unit-378713 | `0x70153a...22477a` | ⚠️ Unaudited |
-| NonfungiblePositionManager | unknown | project_anchor | own_supporting | 1 | mantle | unit-378723 | `0x218bf5...02d637` | ⚠️ Unaudited |
-| NonfungibleTokenPositionDescriptorOffChain | unknown | project_anchor | own_supporting | 1 | mantle | unit-378724 | `0xcb814b...ad5764` | ⚠️ Unaudited |
-| OutputCodeHash | unknown | project_anchor | own_supporting | 0 | mantle | unit-378712 | `0x5cfa0f...5df724` | ⚠️ Unaudited |
-| Quoter | unknown | project_anchor | own_supporting | 0 | mantle | unit-378715 | `0x9488c0...a60177` | ⚠️ Unaudited |
-| QuoterV2 | unknown | project_anchor | own_supporting | 0 | mantle | unit-378719 | `0xc4aadc...23c0cb` | ⚠️ Unaudited |
-| SmartRouter | unknown | project_anchor | own_supporting | 0 | mantle | unit-378717 | `0xb52b1f...bc169f` | ⚠️ Unaudited |
-| SwapRouter | unknown | project_anchor | own_supporting | 0 | mantle | unit-378711 | `0x319b69...c88421` | ⚠️ Unaudited |
-| TickLens | unknown | project_anchor | own_supporting | 0 | mantle | unit-378722 | `0xecdba6...a7bf67` | ⚠️ Unaudited |
-| WMANTLE | unknown | project_anchor | own_supporting | 0 | mantle | unit-378714 | `0x78c1b0...7f4cb8` | ⚠️ Unaudited |
+| AgniFactory | unknown | project_anchor | own_supporting | 0 | mantle | unit-378710 | `0x25780dc8fc3cfbd75f33bfdab65e969b603b2035` | ⚠️ Unaudited |
+| AgniPoolDeployer | unknown | project_anchor | own_supporting | 0 | mantle | unit-378721 | `0xe9827b4ebeb9ae41fc57efdddd79edddc2ea4d03` | ⚠️ Unaudited |
+| MixedRouteQuoterV1 | unknown | project_anchor | own_supporting | 0 | mantle | unit-378720 | `0xcdbd1c6cfc89af8a518e23b0c71996b90a12befc` | ⚠️ Unaudited |
+| Multicall3 | unknown | project_anchor | own_supporting | 0 | mantle | unit-378709 | `0x05f3105fc9fc531712b2570f1c6e11dd4bcf7b3c` | ⚠️ Unaudited |
+| NFTDescriptor | unknown | project_anchor | own_supporting | 0 | mantle | unit-378713 | `0x70153a35c3005385b45c47cdcfc7197c1a22477a` | ⚠️ Unaudited |
+| NonfungiblePositionManager | unknown | project_anchor | own_supporting | 1 | mantle | unit-378723 | `0x218bf598d1453383e2f4aa7b14ffb9bfb102d637` | ⚠️ Unaudited |
+| NonfungibleTokenPositionDescriptorOffChain | unknown | project_anchor | own_supporting | 1 | mantle | unit-378724 | `0xcb814b767d41b4bd94da6abb860d25b607ad5764` | ⚠️ Unaudited |
+| OutputCodeHash | unknown | project_anchor | own_supporting | 0 | mantle | unit-378712 | `0x5cfa0f1c4067c90a50b973e5f98cd265de5df724` | ⚠️ Unaudited |
+| Quoter | unknown | project_anchor | own_supporting | 0 | mantle | unit-378715 | `0x9488c05a7b75a6fefdcae4f11a33467bcba60177` | ⚠️ Unaudited |
+| QuoterV2 | unknown | project_anchor | own_supporting | 0 | mantle | unit-378719 | `0xc4aadc921e1cdb66c5300bc158a313292923c0cb` | ⚠️ Unaudited |
+| SmartRouter | unknown | project_anchor | own_supporting | 0 | mantle | unit-378717 | `0xb52b1f5e08c04a8c33f4c7363fa2de23b9bc169f` | ⚠️ Unaudited |
+| SwapRouter | unknown | project_anchor | own_supporting | 0 | mantle | unit-378711 | `0x319b69888b0d11cec22caa5034e25fffbdc88421` | ⚠️ Unaudited |
+| TickLens | unknown | project_anchor | own_supporting | 0 | mantle | unit-378722 | `0xecdba665aa209247cd334d0d037b913528a7bf67` | ⚠️ Unaudited |
+| WMANTLE | unknown | project_anchor | own_supporting | 0 | mantle | unit-378714 | `0x78c1b0c915c4faa5fffa6cabf0219da63d7f4cb8` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -146,8 +146,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | mantle | unit-378716 | `0xb0bcbe...b985d6` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | mantle | unit-378718 | `0xbe592e...17568f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | mantle | unit-378716 | `0xb0bcbe0d2b197b7a8fb7e66d6a0dd6a91cb985d6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | mantle | unit-378718 | `0xbe592efcf174b3e0e4208dc8c1658822d017568f` | ❓ Unverified |
 
 ## Audit Inventory
 

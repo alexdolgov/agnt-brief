@@ -57,8 +57,8 @@ The pinned logic-topography run contains 7 contract row(s) across optimism. Stru
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- GovernanceToken (`0x420000...000042`, chain 10)
-- WETH9 (`0x420000...000006`, chain 10)
+- GovernanceToken (`0x4200000000000000000000000000000000000042`, chain 10)
+- WETH9 (`0x4200000000000000000000000000000000000006`, chain 10)
 
 ## Contract Surface Quality
 
@@ -104,60 +104,60 @@ The pinned logic-topography run contains 7 contract row(s) across optimism. Stru
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AccountingEngine | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xa49007...65bd10` | ⚠️ Unaudited |
-| AccountingJob | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xc256c3...729ef0` | ⚠️ Unaudited |
-| BasicActions | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xd36b1b...da7bb0` | ⚠️ Unaudited |
-| BeefyVeloVaultRelayerFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 2 deployments: optimism `0x02fe16...fdaabf`; optimism `0x6cbfa1...df67fd` | ⚠️ Unaudited |
-| CoinJoin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x30ce72...7c6ea3` | ⚠️ Unaudited |
-| CollateralAuctionHouseFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x81c5c2...94b427` | ⚠️ Unaudited |
-| CollateralBidActions | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xbfac17...fc694d` | ⚠️ Unaudited |
-| CollateralJoinFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xfe7987...536143` | ⚠️ Unaudited |
-| DebtAuctionHouse | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x7cde0d...f617b3` | ⚠️ Unaudited |
-| DebtBidActions | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xfc55b8...9f8117` | ⚠️ Unaudited |
-| DelayedOracleFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x41a600...97b3bb` | ⚠️ Unaudited |
-| DenominatedOracleFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xc3a003...67fd35` | ⚠️ Unaudited |
-| GlobalSettlement | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x75880a...864218` | ⚠️ Unaudited |
-| GlobalSettlementActions | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xa0a788...845fa1` | ⚠️ Unaudited |
-| GovernanceToken | token | project_anchor | own_supporting | 0 | optimism | unit-266873 | `0x420000...000042` | ⚠️ Unaudited |
-| HaiDelegatee | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x2c6c63...aa2b63` | ⚠️ Unaudited |
-| HaiGovernor | governance | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xe807f3...a23777` | ⚠️ Unaudited |
-| HaiProxyFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xbafbcd...e03a27` | ⚠️ Unaudited |
-| HaiSafeManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xb0ff82...5106c3` | ⚠️ Unaudited |
-| HardcodedOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x8c212b...be0d39` | ⚠️ Unaudited |
-| HypERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | 2 deployments: optimism `0xbdf4a4...1f1152`; optimism `0xfdf059...aba0b1` | ⚠️ Unaudited |
-| LiquidationEngine | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x8be588...891b56` | ⚠️ Unaudited |
-| LiquidationJob | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x5ef157...1b3638` | ⚠️ Unaudited |
-| OracleJob | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xf4f182...f9fc22` | ⚠️ Unaudited |
-| OracleRelayer | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x627040...fdb3a6` | ⚠️ Unaudited |
-| PessimisticVeloSingleOracle | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 5 deployments: optimism `0x2d442a...e26585`; optimism `0x557c24...a19e6c`; optimism `0x898e74...d1c91a`; optimism `0x8cb126...9d7bcb`; optimism `0xdfeb54...ff5448` | ⚠️ Unaudited |
-| PIDController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x6f9aec...72f609` | ⚠️ Unaudited |
-| PIDRateSetter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x1f76f2...434d2f` | ⚠️ Unaudited |
-| Pool | core_logic | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-266875 | `0xbded65...ea6b86` | ⚠️ Unaudited |
-| Pool | core_logic | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-266876 | `0xf4638d...447238` | ⚠️ Unaudited |
-| PostSettlementSurplusAuctionHouse | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x1fa281...956d66` | ⚠️ Unaudited |
-| PostSettlementSurplusBidActions | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x48c341...463640` | ⚠️ Unaudited |
-| ProtocolToken | token | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-266877 | `0xf467c7...1e1404` | ⚠️ Unaudited |
-| ProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x1a3cbf...c66091` | ⚠️ Unaudited |
-| ProxyERC20 | token | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-266874 | `0x8c6f28...1ec8d9` | ⚠️ Unaudited |
-| PythAggregatorV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 4 deployments: optimism `0x629b03...3c0958`; optimism `0xcabaac...a25224`; optimism `0xdaa95c...0d94d7`; optimism `0xefa456...9ecb75` | ⚠️ Unaudited |
-| RewardDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xfed2eb...ac3d4d` | ⚠️ Unaudited |
-| RewardedActions | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xb688d7...81cde7` | ⚠️ Unaudited |
-| RewardPoolFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xa6dcda...81b7ea` | ⚠️ Unaudited |
-| SAFEEngine | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x9ff826...75a700` | ⚠️ Unaudited |
-| SettlementSurplusAuctioneer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x7edad0...3afe43` | ⚠️ Unaudited |
-| StabilityFeeTreasury | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xe9e54c...3c4f6f` | ⚠️ Unaudited |
-| StakingManager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 3 deployments: optimism `0x1250f2...e6bc90`; optimism `0x13531b...fcd1d9`; optimism `0x70bf15...279e93` | ⚠️ Unaudited |
-| StakingToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 3 deployments: optimism `0xaa46f6...62be0a`; optimism `0xcb7e5b...d1980f`; optimism `0xf632d7...881fc3` | ⚠️ Unaudited |
-| SurplusAuctionHouse | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x096125...1778e9` | ⚠️ Unaudited |
-| SurplusBidActions | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x632229...925cec` | ⚠️ Unaudited |
-| SystemCoin | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-266871 | `0x10398a...10dc71` | ⚠️ Unaudited |
-| TaxCollector | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x62b82c...1973c3` | ⚠️ Unaudited |
-| TokenDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xcb9654...cc9e02` | ⚠️ Unaudited |
-| TrustedRelayerIsm | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x5efe30...91d505` | ⚠️ Unaudited |
-| UniV3RelayerFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xb6a352...3948c1` | ⚠️ Unaudited |
-| WETH9 | token | project_anchor | own_supporting | 0 | optimism | unit-266872 | `0x420000...000006` | ⚠️ Unaudited |
-| WrappedToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x70f371...b1bb6a` | ⚠️ Unaudited |
-| WrappedTokenV2 | token | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x20a7ea...b5ddd6` | ⚠️ Unaudited |
+| AccountingEngine | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xa4900795ebffadc12790f05f7c4ac42cd765bd10` | ⚠️ Unaudited |
+| AccountingJob | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xc256c3aa404ab74ce050bcf8a05256b6a1729ef0` | ⚠️ Unaudited |
+| BasicActions | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xd36b1bd5445374ceb7fe4148a719584234da7bb0` | ⚠️ Unaudited |
+| BeefyVeloVaultRelayerFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 2 deployments: optimism `0x02fe16beec67c31e242a87832f7b92d557fdaabf`; optimism `0x6cbfa178142829bb84cd2567f64737c43edf67fd` | ⚠️ Unaudited |
+| CoinJoin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x30ce72230a47a0967b7e52a1bae0178dbd7c6ea3` | ⚠️ Unaudited |
+| CollateralAuctionHouseFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x81c5c2da8c1a74c6077b03ad69ca04b74b94b427` | ⚠️ Unaudited |
+| CollateralBidActions | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xbfac170711dfe2043f47b34f118e9fcda8fc694d` | ⚠️ Unaudited |
+| CollateralJoinFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xfe7987b1ee45a8d592b15e8e924d50bfc8536143` | ⚠️ Unaudited |
+| DebtAuctionHouse | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x7cde0d7296725afb80ea091eca8d06a377f617b3` | ⚠️ Unaudited |
+| DebtBidActions | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xfc55b886a2619bd8645549f7cb672872479f8117` | ⚠️ Unaudited |
+| DelayedOracleFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x41a600e03eaa8d208b9230a219e0c4594897b3bb` | ⚠️ Unaudited |
+| DenominatedOracleFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xc3a0035bcd3fcbb84a4874b19f7170bfe167fd35` | ⚠️ Unaudited |
+| GlobalSettlement | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x75880aca7230462a630ad65ad5444cb1e1864218` | ⚠️ Unaudited |
+| GlobalSettlementActions | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xa0a78899cd5c093f563ef22e86b68bbc44845fa1` | ⚠️ Unaudited |
+| GovernanceToken | token | project_anchor | own_supporting | 0 | optimism | unit-266873 | `0x4200000000000000000000000000000000000042` | ⚠️ Unaudited |
+| HaiDelegatee | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x2c6c638b93ba5a11dbd419305f14749fc8aa2b63` | ⚠️ Unaudited |
+| HaiGovernor | governance | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xe807f3282f3391d237ba8b9becb0d8ea3ba23777` | ⚠️ Unaudited |
+| HaiProxyFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xbafbcdbfbb1569722253ed4d491d2fb3b5e03a27` | ⚠️ Unaudited |
+| HaiSafeManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xb0ff82d8322f6fa9c28ec46ef0a5c343e95106c3` | ⚠️ Unaudited |
+| HardcodedOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x8c212bcae328669c8b045d467cb78b88e0be0d39` | ⚠️ Unaudited |
+| HypERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | 2 deployments: optimism `0xbdf4a4cc124d9a83a5774574fcbe45dc5d1f1152`; optimism `0xfdf059e1c104a7ca3191b916e6f513c160aba0b1` | ⚠️ Unaudited |
+| LiquidationEngine | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x8be588895be9b75f9a9daee185e0c2ad89891b56` | ⚠️ Unaudited |
+| LiquidationJob | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x5ef15750b5672cd6217e4e184cead440cb1b3638` | ⚠️ Unaudited |
+| OracleJob | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xf4f18205d8d46638489865e42c0a71a3d4f9fc22` | ⚠️ Unaudited |
+| OracleRelayer | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x6270403b908505f02da05be5c1956abb59fdb3a6` | ⚠️ Unaudited |
+| PessimisticVeloSingleOracle | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 5 deployments: optimism `0x2d442a71e7dc14068168a7e0680abcc043e26585`; optimism `0x557c249ee1b982397ae0fcf3da94665fb2a19e6c`; optimism `0x898e7451615d1139ef963c4f42de8d21c5d1c91a`; optimism `0x8cb1264aaaed03c086d43d2bcf9e355faa9d7bcb`; optimism `0xdfeb54652fd19c02c74e1827e049c812f2ff5448` | ⚠️ Unaudited |
+| PIDController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x6f9aec3c0df4df7a0da66453a38b8c767972f609` | ⚠️ Unaudited |
+| PIDRateSetter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x1f76f20c9d9075dc160d0e47cd214df0b7434d2f` | ⚠️ Unaudited |
+| Pool | core_logic | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-266875 | `0xbded651c03e2bc332aa49c1ffca391eaa3ea6b86` | ⚠️ Unaudited |
+| Pool | core_logic | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-266876 | `0xf4638dc488f9c826dc40250515592e678e447238` | ⚠️ Unaudited |
+| PostSettlementSurplusAuctionHouse | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x1fa281ea8d0e9db78beaa1f5b1a452058f956d66` | ⚠️ Unaudited |
+| PostSettlementSurplusBidActions | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x48c3416097529944946d08486f10185f18463640` | ⚠️ Unaudited |
+| ProtocolToken | token | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-266877 | `0xf467c7d5a4a9c4687ffc7986ac6ad5a4c81e1404` | ⚠️ Unaudited |
+| ProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x1a3cbf11da1b799c521a655a258c45c852c66091` | ⚠️ Unaudited |
+| ProxyERC20 | token | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-266874 | `0x8c6f28f2f1a3c87f0f938b96d27520d9751ec8d9` | ⚠️ Unaudited |
+| PythAggregatorV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 4 deployments: optimism `0x629b03d018efd7871e5a72c929d88e29d03c0958`; optimism `0xcabaac238ab70888bcc13ff93fe31d8614a25224`; optimism `0xdaa95c72330a7ef1390874677323b2a13e0d94d7`; optimism `0xefa456c58b306674ca0eafb642735df4e79ecb75` | ⚠️ Unaudited |
+| RewardDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xfed2eb6325432f0bf7110dce2ccc5ff811ac3d4d` | ⚠️ Unaudited |
+| RewardedActions | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xb688d73b58e5004341f855f3e71177316281cde7` | ⚠️ Unaudited |
+| RewardPoolFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xa6dcda89deaca9e18e3e747b2101d6dad781b7ea` | ⚠️ Unaudited |
+| SAFEEngine | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x9ff826860689483181c5fac9628fd2f70275a700` | ⚠️ Unaudited |
+| SettlementSurplusAuctioneer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x7edad06b56bbec6a1c5dd95b8d00aebc803afe43` | ⚠️ Unaudited |
+| StabilityFeeTreasury | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xe9e54c55d41d6622933f9f736e0c55484b3c4f6f` | ⚠️ Unaudited |
+| StakingManager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 3 deployments: optimism `0x1250f2326f04ac61ee5aed92fef74bcac6e6bc90`; optimism `0x13531b3039533860576e01798df29b6a14fcd1d9`; optimism `0x70bf153870e405097eeec57d0b800fe7ee279e93` | ⚠️ Unaudited |
+| StakingToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 3 deployments: optimism `0xaa46f6e234d52cc8c3b387a44584a9fb1a62be0a`; optimism `0xcb7e5bb21b714991bdc6b07be36cb897cdd1980f`; optimism `0xf632d72378d887e337c52ff57fcd454f78881fc3` | ⚠️ Unaudited |
+| SurplusAuctionHouse | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x096125fa7e2181dba78136782365a39c3a1778e9` | ⚠️ Unaudited |
+| SurplusBidActions | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x632229a0a849bde3a1f1200cf23118b33a925cec` | ⚠️ Unaudited |
+| SystemCoin | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-266871 | `0x10398abc267496e49106b07dd6be13364d10dc71` | ⚠️ Unaudited |
+| TaxCollector | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x62b82cce08f8f2d808348409e9418c65eb1973c3` | ⚠️ Unaudited |
+| TokenDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xcb96543b9f3657be103ba6371aaed8a711cc9e02` | ⚠️ Unaudited |
+| TrustedRelayerIsm | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x5efe302058757c630df21608548f24545291d505` | ⚠️ Unaudited |
+| UniV3RelayerFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xb6a352636588d833d2795e67eaafdc5b6f3948c1` | ⚠️ Unaudited |
+| WETH9 | token | project_anchor | own_supporting | 0 | optimism | unit-266872 | `0x4200000000000000000000000000000000000006` | ⚠️ Unaudited |
+| WrappedToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x70f3713512089736661f928b291d1443c8b1bb6a` | ⚠️ Unaudited |
+| WrappedTokenV2 | token | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x20a7eaf4a922df50b312ef61aea8b6e1deb5ddd6` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -177,42 +177,42 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x0078fb...9a36a4` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x0ef96c...3b7a39` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x146b02...c150ec` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x15f0ad...78324a` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x1be428...1c3469` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x1c48bb...d2ee02` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x226e60...dd6a0b` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x2729b1...ba59f4` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x2d57b9...d506f6` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x3975ff...ac5980` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x3baf7c...17ed94` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x3ccc00...55d6ab` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x3e2d4b...8fb7ba` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x47c6ae...6bbb2f` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x4fcd90...dcb1ad` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x50d758...bf2859` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x524fe1...2abcc6` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x5c9842...8a44db` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x635362...8055fc` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x6c797b...a0c200` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x7c4407...687a81` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x7ddb1b...1fa66f` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x805a26...217d47` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x90de1e...8d7741` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xaacc03...33bd21` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xb72ff1...438c3a` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xb97a5f...5a77e5` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xbb2d45...1069a5` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xbd68d4...8bc50b` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xc16cac...acad9e` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xc19975...f56ea3` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xc64d0c...1fc53b` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xd84852...747b2e` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xe15146...1462af` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xe1d169...7b80ce` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xfc4fd0...12ea56` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x0078fb65304e9e047925b25a84f302e9709a36a4` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x0ef96c66767942ed561e4c028905d683943b7a39` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x146b020399769339509c98b7b353d19130c150ec` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x15f0ad2faca0fb11462109a781a38d35d778324a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x1be428e1265d28194b44ac28d5728a1cf81c3469` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x1c48bbb32d7a5c799842d5dcfb13c1e95ed2ee02` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x226e60c2513c4db44e21a4b783e0010b45dd6a0b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x2729b135f37ef272c14e1688b4fe9bf368ba59f4` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x2d57b9205957484839d830a38d7d7e1bd6d506f6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x3975ff822af38552fac62a975d4d4e0ea5ac5980` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x3baf7cb0af84007230295f7528baa0f1cb17ed94` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x3ccc004e68886b75f27ae3f715ef02e0ce55d6ab` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x3e2d4b6652198aa914c5365192b54b5a808fb7ba` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x47c6ae06686d35dd7656be6af3091fcd626bbb2f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x4fcd90ee6a041c631b6b93a52b4d94e0cedcb1ad` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x50d758e014c972e73166ea87a6a7d96868bf2859` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x524fe171e80173c15381bb50034033da282abcc6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x5c9842e9fcef99b19e6ec086f32c2809108a44db` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x6353621ed493108d104c65ab98f550fb758055fc` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x6c797b98b9245470e16a86dbd2f666a421a0c200` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x7c44077bca5bdeb5b4123b3f25510053f7687a81` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x7ddb1bcedf6b3c615768d130588ed0fd471fa66f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x805a26c46ebf8b6815d8b81e1c488eae4c217d47` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x90de1e1d3961a30046563fe774b3d998b58d7741` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xaacc036c505370918e4a89567a636d561833bd21` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xb72ff173e0b022d36604673378d450c52f438c3a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xb97a5f055285244bf11252178fb1053f035a77e5` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xbb2d454b459581e2b5f4860dd2762c5c3c1069a5` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xbd68d4fc30ee2a071f85186b5240c80bce8bc50b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xc16cacc473a3e7c9483e3cb39a39fa4f88acad9e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xc199756dd05f99831c11ac668b5c4a44a3f56ea3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xc64d0cb32be0c7e84720162ec97fd5c3201fc53b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xd8485245e56f56b53e0c4af4c7d7c81c76747b2e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xe1514605cfd551e5c501d2538b327429881462af` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xe1d1692a4e8a6014725efb38e775b2425c7b80ce` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xfc4fd07b8cba6b008952656a3d16a25da012ea56` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -415,8 +415,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| optimism | `0x420000...000042` | GovernanceToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | `0x420000...000006` | WETH9 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x4200000000000000000000000000000000000042` | GovernanceToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x4200000000000000000000000000000000000006` | WETH9 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

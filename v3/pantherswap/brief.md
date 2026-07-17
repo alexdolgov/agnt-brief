@@ -52,15 +52,15 @@ The pinned logic-topography run contains 1 contract row(s) across bsc. Structura
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x751a58...fa985b`, chain 56)
-- UnnamedContract (`0x86dfd9...9b00f3`, chain 56)
-- UnnamedContract (`0x9287f5...3fb71a`, chain 56)
-- UnnamedContract (`0x937ced...730e1c`, chain 56)
-- UnnamedContract (`0xbe0005...d76e38`, chain 56)
-- UnnamedContract (`0xc058b0...34a836`, chain 56)
-- UnnamedContract (`0xc24ad5...92a49b`, chain 56)
-- UnnamedContract (`0xecc11a...3c8685`, chain 56)
-- PantherToken (`0x1f546a...7276b7`, chain 56)
+- UnnamedContract (`0x751a58ceb152b68e8a4564de7731f9be21fa985b`, chain 56)
+- UnnamedContract (`0x86dfd9e1d68f769d4473feefafab545aa49b00f3`, chain 56)
+- UnnamedContract (`0x9287f5ad55d7ee8eae90b865718eb9a7cf3fb71a`, chain 56)
+- UnnamedContract (`0x937ced19daa8a057e7f4062e93ea4aedad730e1c`, chain 56)
+- UnnamedContract (`0xbe000549930417774e30535472c5e389a2d76e38`, chain 56)
+- UnnamedContract (`0xc058b0a4689884633479f1d142ae53bff734a836`, chain 56)
+- UnnamedContract (`0xc24ad5197daefd97df28c70acbdf17d9ff92a49b`, chain 56)
+- UnnamedContract (`0xecc11a78490866e0073ebc4a4dcb6f75673c8685`, chain 56)
+- PantherToken (`0x1f546ad641b56b86fd9dceac473d1c7a357276b7`, chain 56)
 
 ## Contract Surface Quality
 
@@ -106,17 +106,17 @@ The pinned logic-topography run contains 1 contract row(s) across bsc. Structura
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| IPOByProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0x395012...fe68a9` | ⚠️ Unaudited |
-| Lottery | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x6f3b6c...a3a3fa` | ⚠️ Unaudited |
-| LotteryNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x983c4f...ab886f` | ⚠️ Unaudited |
-| MasterChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x058451...97bbd4` | ⚠️ Unaudited |
-| PantherFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x670f55...b9fc31` | ⚠️ Unaudited |
-| PantherJungleFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x6f2c87...ab4a40` | ⚠️ Unaudited |
-| PantherLocker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x78cdda...95604b` | ⚠️ Unaudited |
-| PantherReferral | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xbb6883...60fe34` | ⚠️ Unaudited |
-| PantherRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x24f7c3...a1b7ec` | ⚠️ Unaudited |
-| PantherToken | unknown | project_anchor | own_supporting | 0 | bsc | unit-390666 | `0x1f546a...7276b7` | ⚠️ Unaudited |
-| Timelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe6a8f0...a56daa` | ⚠️ Unaudited |
+| IPOByProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0x3950124730a3b013e402dd2bf49e8665cdfe68a9` | ⚠️ Unaudited |
+| Lottery | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x6f3b6cf47bae56473cb7129a9e1cbda8cba3a3fa` | ⚠️ Unaudited |
+| LotteryNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x983c4fb762e6136a609431d4a93187c6f6ab886f` | ⚠️ Unaudited |
+| MasterChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x058451c62b96c594ad984370eda8b6fd7197bbd4` | ⚠️ Unaudited |
+| PantherFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x670f55c6284c629c23bae99f585e3f17e8b9fc31` | ⚠️ Unaudited |
+| PantherJungleFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x6f2c870f0c131d90c9336f08334bb68586ab4a40` | ⚠️ Unaudited |
+| PantherLocker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x78cddaa1a917a177cb2624bd750a0c428f95604b` | ⚠️ Unaudited |
+| PantherReferral | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xbb688307a13e5abbd99ee4d6229272a17d60fe34` | ⚠️ Unaudited |
+| PantherRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x24f7c33ae5f77e2a9eceed7ea858b4ca2fa1b7ec` | ⚠️ Unaudited |
+| PantherToken | unknown | project_anchor | own_supporting | 0 | bsc | unit-390666 | `0x1f546ad641b56b86fd9dceac473d1c7a357276b7` | ⚠️ Unaudited |
+| Timelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe6a8f0269d6af307a908ecd3938f470db7a56daa` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -136,14 +136,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-390667 | `0x751a58...fa985b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-390668 | `0x86dfd9...9b00f3` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-390669 | `0x9287f5...3fb71a` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-390670 | `0x937ced...730e1c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-390671 | `0xbe0005...d76e38` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-390672 | `0xc058b0...34a836` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-390673 | `0xc24ad5...92a49b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-390674 | `0xecc11a...3c8685` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-390667 | `0x751a58ceb152b68e8a4564de7731f9be21fa985b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-390668 | `0x86dfd9e1d68f769d4473feefafab545aa49b00f3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-390669 | `0x9287f5ad55d7ee8eae90b865718eb9a7cf3fb71a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-390670 | `0x937ced19daa8a057e7f4062e93ea4aedad730e1c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-390671 | `0xbe000549930417774e30535472c5e389a2d76e38` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-390672 | `0xc058b0a4689884633479f1d142ae53bff734a836` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-390673 | `0xc24ad5197daefd97df28c70acbdf17d9ff92a49b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-390674 | `0xecc11a78490866e0073ebc4a4dcb6f75673c8685` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -169,7 +169,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | `0x1f546a...7276b7` | PantherToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x1f546ad641b56b86fd9dceac473d1c7a357276b7` | PantherToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

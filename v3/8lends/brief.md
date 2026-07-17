@@ -56,8 +56,8 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- ERC1967Proxy (`0xd48f1d...78d705`, chain 8453)
-- Token (`0x55f9c8...379d4c`, chain 8453)
+- ERC1967Proxy (`0xd48f1d3eec18d8b71ddf1575bae160030878d705`, chain 8453)
+- Token (`0x55f9c8992fc4abce5aca585bf8f18284a2379d4c`, chain 8453)
 
 ## Contract Surface Quality
 
@@ -103,8 +103,8 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | base | unit-378396 | `0xd48f1d...78d705` | ⚠️ Unaudited |
-| Token | unknown | project_anchor | own_supporting | 0 | base | unit-378394 | `0x55f9c8...379d4c` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | project_anchor | own_supporting | 1 | base | unit-378396 | `0xd48f1d3eec18d8b71ddf1575bae160030878d705` | ⚠️ Unaudited |
+| Token | unknown | project_anchor | own_supporting | 0 | base | unit-378394 | `0x55f9c8992fc4abce5aca585bf8f18284a2379d4c` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

@@ -57,9 +57,9 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x4693b6...f43137`, chain 56)
-- UnnamedContract (`0xbb4cdb...bc095c`, chain 56)
-- UnnamedContract (`0xc9a0f6...af3c47`, chain 56)
+- UnnamedContract (`0x4693b62e5fc9c0a45f89d62e6300a03c85f43137`, chain 56)
+- UnnamedContract (`0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c`, chain 56)
+- UnnamedContract (`0xc9a0f685f39d05d835c369036251ee3aeaaf3c47`, chain 56)
 
 ## Contract Surface Quality
 
@@ -105,10 +105,10 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BridgeAssist | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x1d09d3...e65909` | ⚠️ Unaudited |
-| CoinToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc74867...02e8de` | ⚠️ Unaudited |
-| TimelockController | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | bsc | n/a | `0x860e6c...c47d54` | ⚠️ Unaudited |
-| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x58ecef...75af33` | ⚠️ Unaudited |
+| BridgeAssist | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x1d09d3458cc150016f0fd7b079af41e17ce65909` | ⚠️ Unaudited |
+| CoinToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc748673057861a797275cd8a068abb95a902e8de` | ⚠️ Unaudited |
+| TimelockController | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | bsc | n/a | `0x860e6cc13381988631c6eb4ad391294a2fc47d54` | ⚠️ Unaudited |
+| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x58ecef26335af7b04a998105a6603b0dc475af33` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -128,10 +128,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x000000...000000` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-380081 | `0x4693b6...f43137` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-380082 | `0xbb4cdb...bc095c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-380083 | `0xc9a0f6...af3c47` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x0000000000000000000000000000000000000000` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-380081 | `0x4693b62e5fc9c0a45f89d62e6300a03c85f43137` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-380082 | `0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-380083 | `0xc9a0f685f39d05d835c369036251ee3aeaaf3c47` | ❓ Unverified |
 
 ## Audit Inventory
 

@@ -55,7 +55,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- OUSD (`0x1ae95d...18f805`, chain 1)
+- OUSD (`0x1ae95dd4eeae7ed03da79856c2d44ffa3318f805`, chain 1)
 
 ## Contract Surface Quality
 
@@ -101,7 +101,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| OUSD | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390443 | `0x1ae95d...18f805` | ⚠️ Unaudited |
+| OUSD | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390443 | `0x1ae95dd4eeae7ed03da79856c2d44ffa3318f805` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

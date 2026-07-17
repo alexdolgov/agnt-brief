@@ -60,10 +60,10 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| IdleCDO | unknown | ethereum | n/a | [`0xc4574c...6c5e61`](./contracts/ethereum-1/0xc4574c60a455655864ab80fa7638561a756c5e61/) | ⚠️ Unaudited |
-| IdleCDOOptimism | unknown | optimism | n/a | [`0x877112...10e528`](./contracts/optimism-10/0x8771128e9e386dc8e4663118bb11ea3de910e528/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | ethereum | n/a | [`0x34ca1e...c3e03e`](./contracts/ethereum-1/0x34ca1eb15b86f70dbac2631c1d4bb6aa9bc3e03e/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x00233c...85d10f`](./contracts/ethereum-1/0x00233ca2d687d962edc95a9ebc03b2aade85d10f/) | ⚠️ Unaudited |
+| IdleCDO | unknown | ethereum | n/a | [`0xc4574c60a455655864ab80fa7638561a756c5e61`](./contracts/ethereum-1/0xc4574c60a455655864ab80fa7638561a756c5e61/) | ⚠️ Unaudited |
+| IdleCDOOptimism | unknown | optimism | n/a | [`0x8771128e9e386dc8e4663118bb11ea3de910e528`](./contracts/optimism-10/0x8771128e9e386dc8e4663118bb11ea3de910e528/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | ethereum | n/a | [`0x34ca1eb15b86f70dbac2631c1d4bb6aa9bc3e03e`](./contracts/ethereum-1/0x34ca1eb15b86f70dbac2631c1d4bb6aa9bc3e03e/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x00233ca2d687d962edc95a9ebc03b2aade85d10f`](./contracts/ethereum-1/0x00233ca2d687d962edc95a9ebc03b2aade85d10f/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -94,8 +94,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xc4574c...6c5e61`](./contracts/ethereum-1/0xc4574c60a455655864ab80fa7638561a756c5e61/) | IdleCDO | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x877112...10e528`](./contracts/optimism-10/0x8771128e9e386dc8e4663118bb11ea3de910e528/) | IdleCDOOptimism | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc4574c60a455655864ab80fa7638561a756c5e61`](./contracts/ethereum-1/0xc4574c60a455655864ab80fa7638561a756c5e61/) | IdleCDO | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | [`0x8771128e9e386dc8e4663118bb11ea3de910e528`](./contracts/optimism-10/0x8771128e9e386dc8e4663118bb11ea3de910e528/) | IdleCDOOptimism | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

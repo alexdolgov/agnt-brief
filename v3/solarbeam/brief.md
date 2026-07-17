@@ -52,14 +52,14 @@ The pinned logic-topography run contains 5 contract row(s) across moonriver. Str
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x7e6e03...645679`, chain 1285)
-- UnnamedContract (`0xaa30ef...12045f`, chain 1285)
-- UnnamedContract (`0xb256c5...7bf007`, chain 1285)
-- Forwarder (`0x0d0b48...830460`, chain 1285)
-- Multicall2 (`0x43d002...4e68ae`, chain 1285)
-- SolarBeamToken (`0x6bd193...a4334b`, chain 1285)
-- SolarDistributorV2 (`0x032986...30904f`, chain 1285)
-- SolarFactory (`0x049581...5a1b68`, chain 1285)
+- UnnamedContract (`0x7e6e03822d0077f3c417d33caeac900fc2645679`, chain 1285)
+- UnnamedContract (`0xaa30ef758139ae4a7f798112902bf6d65612045f`, chain 1285)
+- UnnamedContract (`0xb256c57aa0778a184d26d3b7c033db950c7bf007`, chain 1285)
+- Forwarder (`0x0d0b4862f5ffa3a47d04ddf0351356d20c830460`, chain 1285)
+- Multicall2 (`0x43d002a2b468f048028ea9c2d3ed4705a94e68ae`, chain 1285)
+- SolarBeamToken (`0x6bd193ee6d2104f14f94e2ca6efefae561a4334b`, chain 1285)
+- SolarDistributorV2 (`0x0329867a8c457e9f75e25b0685011291cd30904f`, chain 1285)
+- SolarFactory (`0x049581aeb6fe262727f290165c29bdab065a1b68`, chain 1285)
 
 ## Contract Surface Quality
 
@@ -105,28 +105,28 @@ The pinned logic-topography run contains 5 contract row(s) across moonriver. Str
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AnyswapV5ERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x639a64...c62c5c` | ⚠️ Unaudited |
-| CommonEclipse | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x022bcb...db0b08` | ⚠️ Unaudited |
-| ComplexRewarderPerSecV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x0d66e6...ee8212` | ⚠️ Unaudited |
-| ComplexRewarderPerSecV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x0f1322...dc35da` | ⚠️ Unaudited |
-| ComplexRewarderPerSecV4 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x10449f...a0ef58` | ⚠️ Unaudited |
-| Forwarder | unknown | project_anchor | own_supporting | 0 | moonriver | unit-392679 | `0x0d0b48...830460` | ⚠️ Unaudited |
-| GasSwap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x44b288...295700` | ⚠️ Unaudited |
-| MoonLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x0134eb...e39eb3` | ⚠️ Unaudited |
-| Multicall2 | unknown | project_anchor | own_supporting | 0 | moonriver | unit-392680 | `0x43d002...4e68ae` | ⚠️ Unaudited |
-| setText | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x9bde9e...2582db` | ⚠️ Unaudited |
-| SolarBeamToken | unknown | project_anchor | own_supporting | 0 | moonriver | unit-392681 | `0x6bd193...a4334b` | ⚠️ Unaudited |
-| SolarDistributorV2 | unknown | project_anchor | own_supporting | 0 | moonriver | unit-392677 | `0x032986...30904f` | ⚠️ Unaudited |
-| SolarFactory | unknown | project_anchor | own_supporting | 0 | moonriver | unit-392678 | `0x049581...5a1b68` | ⚠️ Unaudited |
-| SolarPair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x2cc54b...7a3ad7` | ⚠️ Unaudited |
-| SolarRouterAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x39019d...2a62c7` | ⚠️ Unaudited |
-| SolarVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x783d5e...c3a0b1` | ⚠️ Unaudited |
-| SwapCalculator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x124d2b...97a410` | ⚠️ Unaudited |
-| SwapFlashLoan | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x0a4980...f31f0b` | ⚠️ Unaudited |
-| SwapUtils | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x501602...23938b` | ⚠️ Unaudited |
-| TokenFarm | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x7124c3...b84039` | ⚠️ Unaudited |
-| VestedSolarBeamToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x769064...fb5066` | ⚠️ Unaudited |
-| WETH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x98878b...032b8a` | ⚠️ Unaudited |
+| AnyswapV5ERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x639a647fbe20b6c8ac19e48e2de44ea792c62c5c` | ⚠️ Unaudited |
+| CommonEclipse | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x022bcb66662bb3854b6f16babd4c13bfa3db0b08` | ⚠️ Unaudited |
+| ComplexRewarderPerSecV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x0d66e60d31c8f2a0dcc4fb2d06d5e8e326ee8212` | ⚠️ Unaudited |
+| ComplexRewarderPerSecV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x0f132276b72add2c0ade8ac60e53997086dc35da` | ⚠️ Unaudited |
+| ComplexRewarderPerSecV4 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x10449fc8bc5659a96c75af43198ec6ca63a0ef58` | ⚠️ Unaudited |
+| Forwarder | unknown | project_anchor | own_supporting | 0 | moonriver | unit-392679 | `0x0d0b4862f5ffa3a47d04ddf0351356d20c830460` | ⚠️ Unaudited |
+| GasSwap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x44b288a8258d3bda04ccdb5d06c72a4dcd295700` | ⚠️ Unaudited |
+| MoonLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x0134eb236b47186021a50d25a51365ac77e39eb3` | ⚠️ Unaudited |
+| Multicall2 | unknown | project_anchor | own_supporting | 0 | moonriver | unit-392680 | `0x43d002a2b468f048028ea9c2d3ed4705a94e68ae` | ⚠️ Unaudited |
+| setText | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x9bde9edcf175f3b084b1246ab869bc4d3d2582db` | ⚠️ Unaudited |
+| SolarBeamToken | unknown | project_anchor | own_supporting | 0 | moonriver | unit-392681 | `0x6bd193ee6d2104f14f94e2ca6efefae561a4334b` | ⚠️ Unaudited |
+| SolarDistributorV2 | unknown | project_anchor | own_supporting | 0 | moonriver | unit-392677 | `0x0329867a8c457e9f75e25b0685011291cd30904f` | ⚠️ Unaudited |
+| SolarFactory | unknown | project_anchor | own_supporting | 0 | moonriver | unit-392678 | `0x049581aeb6fe262727f290165c29bdab065a1b68` | ⚠️ Unaudited |
+| SolarPair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x2cc54b4a3878e36e1c754871438113c1117a3ad7` | ⚠️ Unaudited |
+| SolarRouterAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x39019dd93c539643246c38c1aa0d20439d2a62c7` | ⚠️ Unaudited |
+| SolarVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x783d5eb06ce15b43b0635035bae9a73750c3a0b1` | ⚠️ Unaudited |
+| SwapCalculator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x124d2b0b4119dd3c0fa884dd66ce49b44197a410` | ⚠️ Unaudited |
+| SwapFlashLoan | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x0a498032174320c79e61c5cd6687b3a50df31f0b` | ⚠️ Unaudited |
+| SwapUtils | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x50160284393296cc0d75f7db4c3d1d2fda23938b` | ⚠️ Unaudited |
+| TokenFarm | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x7124c3e7a1bbdaa61a111944884694a5a5b84039` | ⚠️ Unaudited |
+| VestedSolarBeamToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x76906411d07815491a5e577022757ad941fb5066` | ⚠️ Unaudited |
+| WETH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x98878b06940ae243284ca214f92bb71a2b032b8a` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -146,9 +146,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonriver | unit-392682 | `0x7e6e03...645679` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonriver | unit-392683 | `0xaa30ef...12045f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonriver | unit-392684 | `0xb256c5...7bf007` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonriver | unit-392682 | `0x7e6e03822d0077f3c417d33caeac900fc2645679` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonriver | unit-392683 | `0xaa30ef758139ae4a7f798112902bf6d65612045f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonriver | unit-392684 | `0xb256c57aa0778a184d26d3b7c033db950c7bf007` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -183,10 +183,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| moonriver | `0x0d0b48...830460` | Forwarder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| moonriver | `0x6bd193...a4334b` | SolarBeamToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| moonriver | `0x032986...30904f` | SolarDistributorV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| moonriver | `0x049581...5a1b68` | SolarFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | `0x0d0b4862f5ffa3a47d04ddf0351356d20c830460` | Forwarder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | `0x6bd193ee6d2104f14f94e2ca6efefae561a4334b` | SolarBeamToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | `0x0329867a8c457e9f75e25b0685011291cd30904f` | SolarDistributorV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | `0x049581aeb6fe262727f290165c29bdab065a1b68` | SolarFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

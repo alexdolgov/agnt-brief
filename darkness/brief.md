@@ -79,7 +79,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | cronos | n/a | 14 deployments: cronos `0x1ecaf6...f68217`; cronos `0x63df75...d7a6c5`; cronos `0x6582c7...cda47a`; cronos `0x83b2ac...2c48b5`; cronos `0x8c183c...40bbe8`; cronos `0x92631e...1af1ca`; cronos `0x9d3bbb...d9c81c`; cronos `0xa4aa24...ee45a3`; cronos `0xa93248...32074e`; cronos `0xbfaab2...dcba2d`; cronos `0xd9deba...b124e6`; cronos `0xe72724...e5f0c8`; cronos `0xf2001b...5f677d`; cronos `0xfa202a...8f0e9a` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | 14 deployments: cronos `0x1ecaf6a3551e5822f142c9689d8f36a9b5f68217`; cronos `0x63df75d039f7d7a8ee4a9276d6a9fe7990d7a6c5`; cronos `0x6582c738660bf0701f05b04dce3c4e5fcfcda47a`; cronos `0x83b2ac8642ae46fc2823bc959ffeb3c1742c48b5`; cronos `0x8c183c81a5ae3e7a46ecaac17c4bf27a6a40bbe8`; cronos `0x92631e0e84ff01853ef1bb88fc9c9f7d1e1af1ca`; cronos `0x9d3bbb0e988d9fb2d55d07fe471be2266ad9c81c`; cronos `0xa4aa24b8e855052071df60e174219e6c8fee45a3`; cronos `0xa93248c548ac26152f3b4f201c9101f4e032074e`; cronos `0xbfaab211c3ea99a2db682fbc1d9a999861dcba2d`; cronos `0xd9debaab797cb92c257b2988aafa92c728b124e6`; cronos `0xe727240728c1a5f95437b8b50afdd0ea4ae5f0c8`; cronos `0xf2001b145b43032aaf5ee2884e456ccd805f677d`; cronos `0xfa202a63234a7089eddbfeee83c378ba248f0e9a` | ❓ Unverified |
 
 ## Audit Inventory
 

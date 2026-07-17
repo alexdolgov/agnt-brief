@@ -89,9 +89,9 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ATT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-141073 | `0x091741...2a8539` | ⚠️ Unaudited |
-| primaryRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-141074 | `0x3aee85...4472ff` | ⚠️ Unaudited |
-| routerGater | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-141075 | `0x636148...36bdaa` | ⚠️ Unaudited |
+| ATT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-141073 | `0x09174155993edf40cd5b288d1a73a9cd152a8539` | ⚠️ Unaudited |
+| primaryRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-141074 | `0x3aee85207a82768eba24f6f29067af1ab94472ff` | ⚠️ Unaudited |
+| routerGater | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-141075 | `0x636148772698e6e28c3cf24ab8200fe6bc36bdaa` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

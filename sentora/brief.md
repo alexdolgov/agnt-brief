@@ -62,9 +62,9 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BoringVault | unknown | ethereum | n/a | [`0x13cc1b...ed7c51`](./contracts/ethereum-1/0x13cc1b39cb259ba10cd174eae42012e698ed7c51/) | ⚠️ Unaudited |
-| PositionManager | unknown | ethereum | n/a | [`0x778ac5...9f7995`](./contracts/ethereum-1/0x778ac5d0ee062502fadaa2d300a51de0869f7995/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x3cc0d3...032167`](./contracts/ethereum-1/0x3cc0d33b1aeac3d23ea89214b3ac5b4607032167/) | ⚠️ Unaudited |
+| BoringVault | unknown | ethereum | n/a | [`0x13cc1b39cb259ba10cd174eae42012e698ed7c51`](./contracts/ethereum-1/0x13cc1b39cb259ba10cd174eae42012e698ed7c51/) | ⚠️ Unaudited |
+| PositionManager | unknown | ethereum | n/a | [`0x778ac5d0ee062502fadaa2d300a51de0869f7995`](./contracts/ethereum-1/0x778ac5d0ee062502fadaa2d300a51de0869f7995/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x3cc0d33b1aeac3d23ea89214b3ac5b4607032167`](./contracts/ethereum-1/0x3cc0d33b1aeac3d23ea89214b3ac5b4607032167/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -97,8 +97,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x13cc1b...ed7c51`](./contracts/ethereum-1/0x13cc1b39cb259ba10cd174eae42012e698ed7c51/) | BoringVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x778ac5...9f7995`](./contracts/ethereum-1/0x778ac5d0ee062502fadaa2d300a51de0869f7995/) | PositionManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x13cc1b39cb259ba10cd174eae42012e698ed7c51`](./contracts/ethereum-1/0x13cc1b39cb259ba10cd174eae42012e698ed7c51/) | BoringVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x778ac5d0ee062502fadaa2d300a51de0869f7995`](./contracts/ethereum-1/0x778ac5d0ee062502fadaa2d300a51de0869f7995/) | PositionManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -60,13 +60,13 @@ The protocol comprises 2 functional families. Its contracts share 2 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| LockSend | unknown | ethereum | n/a | [`0x019779...eeac38`](./contracts/ethereum-1/0x01977983a85804f17835f5ea8232bbd9fbeeac38/) | ✅ Audited |
-| OneSwapBuyback | unknown | ethereum | n/a | [`0x28a359...8a5f33`](./contracts/ethereum-1/0x28a359cb732bfb74e77d282ace88e43db28a5f33/) | ✅ Audited |
-| OneSwapFactory | unknown | ethereum | n/a | [`0x5ed3c9...54c8c4`](./contracts/ethereum-1/0x5ed3c9089ed0355bc77cf439dc2ed28c4054c8c4/) | ✅ Audited |
-| OneSwapGov | unknown | ethereum | n/a | [`0xf08255...c57c4f`](./contracts/ethereum-1/0xf0825577c259aa94728310875368f905afc57c4f/) | ✅ Audited |
-| OneSwapPair | unknown | ethereum | n/a | [`0x4e3e08...4a9446`](./contracts/ethereum-1/0x4e3e0852d664b671222384d654d789b2434a9446/) | ✅ Audited |
-| OneSwapRouter | unknown | bsc | n/a | [`0x5ed3c9...54c8c4`](./contracts/bsc-56/0x5ed3c9089ed0355bc77cf439dc2ed28c4054c8c4/) | ✅ Audited |
-| OneSwapToken | unknown | ethereum | n/a | [`0x0b342c...04d5a4`](./contracts/ethereum-1/0x0b342c51d1592c41068d5d4b4da4a68c0a04d5a4/) | ✅ Audited |
+| LockSend | unknown | ethereum | n/a | [`0x01977983a85804f17835f5ea8232bbd9fbeeac38`](./contracts/ethereum-1/0x01977983a85804f17835f5ea8232bbd9fbeeac38/) | ✅ Audited |
+| OneSwapBuyback | unknown | ethereum | n/a | [`0x28a359cb732bfb74e77d282ace88e43db28a5f33`](./contracts/ethereum-1/0x28a359cb732bfb74e77d282ace88e43db28a5f33/) | ✅ Audited |
+| OneSwapFactory | unknown | ethereum | n/a | [`0x5ed3c9089ed0355bc77cf439dc2ed28c4054c8c4`](./contracts/ethereum-1/0x5ed3c9089ed0355bc77cf439dc2ed28c4054c8c4/) | ✅ Audited |
+| OneSwapGov | unknown | ethereum | n/a | [`0xf0825577c259aa94728310875368f905afc57c4f`](./contracts/ethereum-1/0xf0825577c259aa94728310875368f905afc57c4f/) | ✅ Audited |
+| OneSwapPair | unknown | ethereum | n/a | [`0x4e3e0852d664b671222384d654d789b2434a9446`](./contracts/ethereum-1/0x4e3e0852d664b671222384d654d789b2434a9446/) | ✅ Audited |
+| OneSwapRouter | unknown | bsc | n/a | [`0x5ed3c9089ed0355bc77cf439dc2ed28c4054c8c4`](./contracts/bsc-56/0x5ed3c9089ed0355bc77cf439dc2ed28c4054c8c4/) | ✅ Audited |
+| OneSwapToken | unknown | ethereum | n/a | [`0x0b342c51d1592c41068d5d4b4da4a68c0a04d5a4`](./contracts/ethereum-1/0x0b342c51d1592c41068d5d4b4da4a68c0a04d5a4/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 

@@ -61,11 +61,11 @@ The protocol comprises 2 functional families. Its contracts share 1 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BeaconProxy | unknown | hyperliquid | n/a | [`0x079bd4...482f4b`](./contracts/hyperliquid-999/0x079bd41cb6e110446a00280403fbee133a482f4b/) | ⚠️ Unaudited |
-| BeaconProxy | unknown | hyperliquid | n/a | [`0x09b4cd...113895`](./contracts/hyperliquid-999/0x09b4cda849037d1717e91d201ee416bf1c113895/) | ⚠️ Unaudited |
-| DefaultOracle | unknown | hyperliquid | n/a | [`0x055462...3747a3`](./contracts/hyperliquid-999/0x055462ff8c7a37d60c5344fca6bb7b80db3747a3/) | ⚠️ Unaudited |
-| RewardShareTracker | unknown | hyperliquid | n/a | [`0x01ad7c...0080d5`](./contracts/hyperliquid-999/0x01ad7c427459f48e76b3dc48e08aa59c990080d5/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | [`0x000000...42c2d6`](./contracts/hyperliquid-999/0x000000000000780555bd0bca3791f89f9542c2d6/) | ⚠️ Unaudited |
+| BeaconProxy | unknown | hyperliquid | n/a | [`0x079bd41cb6e110446a00280403fbee133a482f4b`](./contracts/hyperliquid-999/0x079bd41cb6e110446a00280403fbee133a482f4b/) | ⚠️ Unaudited |
+| BeaconProxy | unknown | hyperliquid | n/a | [`0x09b4cda849037d1717e91d201ee416bf1c113895`](./contracts/hyperliquid-999/0x09b4cda849037d1717e91d201ee416bf1c113895/) | ⚠️ Unaudited |
+| DefaultOracle | unknown | hyperliquid | n/a | [`0x055462ff8c7a37d60c5344fca6bb7b80db3747a3`](./contracts/hyperliquid-999/0x055462ff8c7a37d60c5344fca6bb7b80db3747a3/) | ⚠️ Unaudited |
+| RewardShareTracker | unknown | hyperliquid | n/a | [`0x01ad7c427459f48e76b3dc48e08aa59c990080d5`](./contracts/hyperliquid-999/0x01ad7c427459f48e76b3dc48e08aa59c990080d5/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | [`0x000000000000780555bd0bca3791f89f9542c2d6`](./contracts/hyperliquid-999/0x000000000000780555bd0bca3791f89f9542c2d6/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -108,8 +108,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| hyperliquid | [`0x055462...3747a3`](./contracts/hyperliquid-999/0x055462ff8c7a37d60c5344fca6bb7b80db3747a3/) | DefaultOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x01ad7c...0080d5`](./contracts/hyperliquid-999/0x01ad7c427459f48e76b3dc48e08aa59c990080d5/) | RewardShareTracker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x055462ff8c7a37d60c5344fca6bb7b80db3747a3`](./contracts/hyperliquid-999/0x055462ff8c7a37d60c5344fca6bb7b80db3747a3/) | DefaultOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x01ad7c427459f48e76b3dc48e08aa59c990080d5`](./contracts/hyperliquid-999/0x01ad7c427459f48e76b3dc48e08aa59c990080d5/) | RewardShareTracker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

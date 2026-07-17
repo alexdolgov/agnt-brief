@@ -90,18 +90,18 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AethirWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x1ecb43...33a13c`; ethereum `0x3f69bb...3f7fee` | ⚠️ Unaudited |
-| Bridgehub | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x303a46...eb5213` | ⚠️ Unaudited |
-| ChainAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe1eea4...ac2ad3` | ⚠️ Unaudited |
-| ChainAssetHandler | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xdd5cb8...b61076` | ⚠️ Unaudited |
-| DiamondProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x05ede6...7241e3` | ⚠️ Unaudited |
-| L1NativeTokenVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xbed1eb...1111f6` | ⚠️ Unaudited |
-| L1Nullifier | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xd7f9f5...8cb2cb` | ⚠️ Unaudited |
-| LensRewardV2 | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdf4aa3...8124ff` | ⚠️ Unaudited |
-| Safe | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xe4644b...f052d1` | ⚠️ Unaudited |
-| SmartWalletChecker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb91eb8...41bed4` | ⚠️ Unaudited |
-| StAethir | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc96aa6...19e59c` | ⚠️ Unaudited |
-| VeAethir | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1b49f5...1b7490` | ⚠️ Unaudited |
+| AethirWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x1ecb43e02d6573119eaf0e6509a4725b8633a13c`; ethereum `0x3f69bb14860f7f3348ac8a5f0d445322143f7fee` | ⚠️ Unaudited |
+| Bridgehub | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x303a465b659cbb0ab36ee643ea362c509eeb5213` | ⚠️ Unaudited |
+| ChainAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe1eea4d6443b19d373fe99de838b930ef0ac2ad3` | ⚠️ Unaudited |
+| ChainAssetHandler | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xdd5cb8b9037357b4cd37391a073798f8aab61076` | ⚠️ Unaudited |
+| DiamondProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x05ede6ad1f39b7a16c949d5c33a0658c9c7241e3` | ⚠️ Unaudited |
+| L1NativeTokenVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xbed1eb542f9a5aa6419ff3deb921a372681111f6` | ⚠️ Unaudited |
+| L1Nullifier | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xd7f9f54194c633f36ccd5f3da84ad4a1c38cb2cb` | ⚠️ Unaudited |
+| LensRewardV2 | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdf4aa37a2927deb886f3dc3d070c55b5088124ff` | ⚠️ Unaudited |
+| Safe | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xe4644b6d106a18062344c0a853666bc0b8f052d1` | ⚠️ Unaudited |
+| SmartWalletChecker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb91eb8907c34147b1ab58dc663a3594bb241bed4` | ⚠️ Unaudited |
+| StAethir | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc96aa65f31e41b4ca6924b86d93e25686019e59c` | ⚠️ Unaudited |
+| VeAethir | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1b49f587feca530a7bf7cf2bd3fbda780e1b7490` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

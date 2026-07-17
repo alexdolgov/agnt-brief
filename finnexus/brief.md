@@ -61,7 +61,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| FnxToken | unknown | ethereum | n/a | [`0xad2f67...80b496`](./contracts/ethereum-1/0xad2f6762e2cb2bf6412522b194648fe33f80b496/) | ⚠️ Unaudited |
+| FnxToken | unknown | ethereum | n/a | [`0xad2f6762e2cb2bf6412522b194648fe33f80b496`](./contracts/ethereum-1/0xad2f6762e2cb2bf6412522b194648fe33f80b496/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -92,7 +92,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xad2f67...80b496`](./contracts/ethereum-1/0xad2f6762e2cb2bf6412522b194648fe33f80b496/) | FnxToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xad2f6762e2cb2bf6412522b194648fe33f80b496`](./contracts/ethereum-1/0xad2f6762e2cb2bf6412522b194648fe33f80b496/) | FnxToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

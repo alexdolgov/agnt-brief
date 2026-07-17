@@ -61,10 +61,10 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ERC1967Proxy | unknown | bsc | n/a | [`0x175ce6...69c9cc`](./contracts/bsc-56/0x175ce6204bfda2a509c7e9c786b74407f569c9cc/) | ⚠️ Unaudited |
-| GnosisSafe | unknown | ethereum | n/a | [`0x9fa3e9...4d26ba`](./contracts/ethereum-1/0x9fa3e93531c85d61fd76e80020d4565b134d26ba/) | ⚠️ Unaudited |
-| GnosisSafeProxyFactory | unknown | ethereum | n/a | [`0x689fab...317ccf`](./contracts/ethereum-1/0x689fab0352b442f9d3cce68afbb348fcfa317ccf/) | ⚠️ Unaudited |
-| Vault | unknown | arbitrum | n/a | [`0x17a303...cfc4a8`](./contracts/arbitrum-42161/0x17a30350771d02409046a683b18fe1c13ccfc4a8/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | bsc | n/a | [`0x175ce6204bfda2a509c7e9c786b74407f569c9cc`](./contracts/bsc-56/0x175ce6204bfda2a509c7e9c786b74407f569c9cc/) | ⚠️ Unaudited |
+| GnosisSafe | unknown | ethereum | n/a | [`0x9fa3e93531c85d61fd76e80020d4565b134d26ba`](./contracts/ethereum-1/0x9fa3e93531c85d61fd76e80020d4565b134d26ba/) | ⚠️ Unaudited |
+| GnosisSafeProxyFactory | unknown | ethereum | n/a | [`0x689fab0352b442f9d3cce68afbb348fcfa317ccf`](./contracts/ethereum-1/0x689fab0352b442f9d3cce68afbb348fcfa317ccf/) | ⚠️ Unaudited |
+| Vault | unknown | arbitrum | n/a | [`0x17a30350771d02409046a683b18fe1c13ccfc4a8`](./contracts/arbitrum-42161/0x17a30350771d02409046a683b18fe1c13ccfc4a8/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,8 +95,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x689fab...317ccf`](./contracts/ethereum-1/0x689fab0352b442f9d3cce68afbb348fcfa317ccf/) | GnosisSafeProxyFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x17a303...cfc4a8`](./contracts/arbitrum-42161/0x17a30350771d02409046a683b18fe1c13ccfc4a8/) | Vault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x689fab0352b442f9d3cce68afbb348fcfa317ccf`](./contracts/ethereum-1/0x689fab0352b442f9d3cce68afbb348fcfa317ccf/) | GnosisSafeProxyFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x17a30350771d02409046a683b18fe1c13ccfc4a8`](./contracts/arbitrum-42161/0x17a30350771d02409046a683b18fe1c13ccfc4a8/) | Vault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

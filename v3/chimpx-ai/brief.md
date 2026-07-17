@@ -56,7 +56,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x6b6cda...993bd6`, chain 56)
+- UnnamedContract (`0x6b6cda85042b07afcb40823ce832144337993bd6`, chain 56)
 
 ## Contract Surface Quality
 
@@ -102,11 +102,11 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Authorizer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x7adcda...64a1a1` | ⚠️ Unaudited |
-| ComposableStablePoolFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x55813e...773524` | ⚠️ Unaudited |
-| ProtocolFeePercentagesProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xd69300...57e5c9` | ⚠️ Unaudited |
-| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x286381...729695` | ⚠️ Unaudited |
-| WeightedPoolFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x0a5064...e14b30` | ⚠️ Unaudited |
+| Authorizer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x7adcda7bbe51376b190814d76a423de6df64a1a1` | ⚠️ Unaudited |
+| ComposableStablePoolFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x55813edb4b83a3286bb69c826cb81bf8c7773524` | ⚠️ Unaudited |
+| ProtocolFeePercentagesProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xd69300d71133cedba6b317d16a67aa794d57e5c9` | ⚠️ Unaudited |
+| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x286381aedd20e51f642fe4a200b5cb2fe3729695` | ⚠️ Unaudited |
+| WeightedPoolFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x0a5064b28df6d028b8e04299ddb972d03be14b30` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -126,7 +126,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-381686 | `0x6b6cda...993bd6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-381686 | `0x6b6cda85042b07afcb40823ce832144337993bd6` | ❓ Unverified |
 
 ## Audit Inventory
 

@@ -58,18 +58,18 @@ The protocol comprises 3 functional families. Its contracts share 4 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CErc20Delegate | unknown | ethereum | n/a | 5 deployments: ethereum [`0x276d2b...cb00de`](./contracts/ethereum-1/0x276d2b35b4204e8c3a5c2b9031ca63e72acb00de/); ethereum `0x6365b2...e43298`; ethereum `0x79ffb8...b8831c`; ethereum `0x8ad447...1bf310`; ethereum `0xc5fa52...5b31c6` | ✅ Audited |
-| Comptroller | unknown | ethereum | n/a | [`0x177528...a26803`](./contracts/ethereum-1/0x1775286cbe9db126a95abf52c58a3214fca26803/) | ✅ Audited |
-| Comptroller | unknown | ethereum | n/a | [`0x79645e...9fd838`](./contracts/ethereum-1/0x79645effe4dc7df2ecf52e267d56c98d239fd838/) | ✅ Audited |
-| CpTonDelegate | unknown | ethereum | n/a | 2 deployments: ethereum [`0xc1e048...79267e`](./contracts/ethereum-1/0xc1e048433bdf7ab1d544d878d963e2041779267e/); ethereum `0xd307d7...a55002` | ✅ Audited |
-| JumpRateModelV2 | unknown | ethereum | n/a | 5 deployments: ethereum [`0x542050...971444`](./contracts/ethereum-1/0x542050f1e2d616ae3c7dfa799f5ee8df44971444/); ethereum `0x9fb0d4...3ecf77`; ethereum `0xa15b8f...5f6291`; ethereum `0xb71243...8417ed`; ethereum `0xd07037...260488` | ✅ Audited |
-| TonpoundPriceOracle | unknown | ethereum | n/a | [`0x7c4290...f745da`](./contracts/ethereum-1/0x7c42901db0e06786266ac86a5929ec9e9ef745da/) | ✅ Audited |
+| CErc20Delegate | unknown | ethereum | n/a | 5 deployments: ethereum [`0x276d2b35b4204e8c3a5c2b9031ca63e72acb00de`](./contracts/ethereum-1/0x276d2b35b4204e8c3a5c2b9031ca63e72acb00de/); ethereum `0x6365b24999105afd1bc44ddd43718b2407e43298`; ethereum `0x79ffb8bc98af5c55cf3d54d64f0e3a24ffb8831c`; ethereum `0x8ad4475d330926cc4387d3d1b0c80688e71bf310`; ethereum `0xc5fa52aa356203ae375d0a98d7423c350b5b31c6` | ✅ Audited |
+| Comptroller | unknown | ethereum | n/a | [`0x1775286cbe9db126a95abf52c58a3214fca26803`](./contracts/ethereum-1/0x1775286cbe9db126a95abf52c58a3214fca26803/) | ✅ Audited |
+| Comptroller | unknown | ethereum | n/a | [`0x79645effe4dc7df2ecf52e267d56c98d239fd838`](./contracts/ethereum-1/0x79645effe4dc7df2ecf52e267d56c98d239fd838/) | ✅ Audited |
+| CpTonDelegate | unknown | ethereum | n/a | 2 deployments: ethereum [`0xc1e048433bdf7ab1d544d878d963e2041779267e`](./contracts/ethereum-1/0xc1e048433bdf7ab1d544d878d963e2041779267e/); ethereum `0xd307d71b53964bd3e2e2e9429c04b7c7f8a55002` | ✅ Audited |
+| JumpRateModelV2 | unknown | ethereum | n/a | 5 deployments: ethereum [`0x542050f1e2d616ae3c7dfa799f5ee8df44971444`](./contracts/ethereum-1/0x542050f1e2d616ae3c7dfa799f5ee8df44971444/); ethereum `0x9fb0d469e0fa14dcf9ac2a90b0c0fb67573ecf77`; ethereum `0xa15b8f702e5907901fc1df2433f90f523e5f6291`; ethereum `0xb7124367a16430f2dbb5f057c67987cbbc8417ed`; ethereum `0xd070377e269d35bc28a7e4fd35f88e6f45260488` | ✅ Audited |
+| TonpoundPriceOracle | unknown | ethereum | n/a | [`0x7c42901db0e06786266ac86a5929ec9e9ef745da`](./contracts/ethereum-1/0x7c42901db0e06786266ac86a5929ec9e9ef745da/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| TPI | unknown | ethereum | n/a | [`0x5cb172...9f2797`](./contracts/ethereum-1/0x5cb17273bfe227bd791ceee31c9d5db6289f2797/) | ⚠️ Unaudited |
+| TPI | unknown | ethereum | n/a | [`0x5cb17273bfe227bd791ceee31c9d5db6289f2797`](./contracts/ethereum-1/0x5cb17273bfe227bd791ceee31c9d5db6289f2797/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -89,8 +89,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x1eb4aa...0a998a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x79ef18...2b4491` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x1eb4aa28024f009e781706c4eb08cfe7090a998a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x79ef1848fdce88ddfbe9fca6b92de919ae2b4491` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -104,7 +104,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x5cb172...9f2797`](./contracts/ethereum-1/0x5cb17273bfe227bd791ceee31c9d5db6289f2797/) | TPI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5cb17273bfe227bd791ceee31c9d5db6289f2797`](./contracts/ethereum-1/0x5cb17273bfe227bd791ceee31c9d5db6289f2797/) | TPI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

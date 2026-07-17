@@ -60,7 +60,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| SuterusuToken | unknown | ethereum | n/a | [`0xaa2ce7...315db4`](./contracts/ethereum-1/0xaa2ce7ae64066175e0b90497ce7d9c190c315db4/) | ⚠️ Unaudited |
+| SuterusuToken | unknown | ethereum | n/a | [`0xaa2ce7ae64066175e0b90497ce7d9c190c315db4`](./contracts/ethereum-1/0xaa2ce7ae64066175e0b90497ce7d9c190c315db4/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -91,7 +91,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xaa2ce7...315db4`](./contracts/ethereum-1/0xaa2ce7ae64066175e0b90497ce7d9c190c315db4/) | SuterusuToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xaa2ce7ae64066175e0b90497ce7d9c190c315db4`](./contracts/ethereum-1/0xaa2ce7ae64066175e0b90497ce7d9c190c315db4/) | SuterusuToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

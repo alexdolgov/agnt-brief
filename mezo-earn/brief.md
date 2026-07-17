@@ -73,14 +73,14 @@ Total inherited audits: 16. Inherited coverage reflects forked/shared code audit
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Portal | unknown | ethereum | n/a | [`0xab13b8...5b8a39`](./contracts/ethereum-1/0xab13b8eecf5aa2460841d75da5d5d861fd5b8a39/) | ✅ Audited |
+| Portal | unknown | ethereum | n/a | [`0xab13b8eecf5aa2460841d75da5d5d861fd5b8a39`](./contracts/ethereum-1/0xab13b8eecf5aa2460841d75da5d5d861fd5b8a39/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| MezoAllocator | operational_periphery | ethereum | n/a | [`0xb90fda...e20122`](./contracts/ethereum-1/0xb90fdad3dfd180458d62cc6acedc983d78e20122/) | ⚠️ Unaudited |
-| ProxyAdmin | governance | ethereum | n/a | [`0x260ca2...681734`](./contracts/ethereum-1/0x260ca2abef5d38181e2562f00fa92ad1dc681734/) | ⚠️ Unaudited |
+| MezoAllocator | operational_periphery | ethereum | n/a | [`0xb90fdad3dfd180458d62cc6acedc983d78e20122`](./contracts/ethereum-1/0xb90fdad3dfd180458d62cc6acedc983d78e20122/) | ⚠️ Unaudited |
+| ProxyAdmin | governance | ethereum | n/a | [`0x260ca2abef5d38181e2562f00fa92ad1dc681734`](./contracts/ethereum-1/0x260ca2abef5d38181e2562f00fa92ad1dc681734/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -127,7 +127,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xb90fda...e20122`](./contracts/ethereum-1/0xb90fdad3dfd180458d62cc6acedc983d78e20122/) | MezoAllocator | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb90fdad3dfd180458d62cc6acedc983d78e20122`](./contracts/ethereum-1/0xb90fdad3dfd180458d62cc6acedc983d78e20122/) | MezoAllocator | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

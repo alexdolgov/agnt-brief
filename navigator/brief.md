@@ -61,18 +61,18 @@ The protocol forms a single structural family (Core Logic) of 12 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| EIP173Proxy | unknown | sonic | n/a | [`0x7b9e96...71ce4f`](./contracts/sonic-146/0x7b9e962dd8aed0db9a1d8a2d7a962ad8b871ce4f/) | ⚠️ Unaudited |
-| FastPriceEvents | unknown | arbitrum | n/a | [`0xf75d3c...f4221e`](./contracts/arbitrum-42161/0xf75d3c6f20fb65cc0b8f84687e5cbac3d7f4221e/) | ⚠️ Unaudited |
-| GLP | unknown | arbitrum | n/a | [`0x41cd8c...045eb6`](./contracts/arbitrum-42161/0x41cd8cafc24a771031b9eb9c57cfc94d86045eb6/) | ⚠️ Unaudited |
-| GlpManager | unknown | arbitrum | n/a | [`0x65dcb3...177780`](./contracts/arbitrum-42161/0x65dcb38637b526305be55f14b24a4ab2bd177780/) | ⚠️ Unaudited |
-| MintableBaseToken | unknown | arbitrum | n/a | [`0x2d270f...8a7493`](./contracts/arbitrum-42161/0x2d270f66fee6ac9e27ff6551af5a8cfb5c8a7493/) | ⚠️ Unaudited |
-| NAVI | unknown | sonic | n/a | [`0x6881b8...3682f3`](./contracts/sonic-146/0x6881b80ea7c858e4aeef63893e18a8a36f3682f3/) | ⚠️ Unaudited |
-| PositionRouter | unknown | arbitrum | n/a | [`0x3b2732...a6faf5`](./contracts/arbitrum-42161/0x3b2732c1e5a248bbdd0315e9e8845c64f5a6faf5/) | ⚠️ Unaudited |
-| PriceFeedTimelock | unknown | arbitrum | n/a | [`0xb2a477...ef9ecd`](./contracts/arbitrum-42161/0xb2a477c6ba5e96f6decbced836cb7d3d32ef9ecd/) | ⚠️ Unaudited |
-| RewardTracker | unknown | sonic | n/a | [`0xef8770...6b3dc4`](./contracts/sonic-146/0xef8770e9506a8d1aae3d599327a39cf14b6b3dc4/) | ⚠️ Unaudited |
-| Router | unknown | arbitrum | n/a | [`0x01e9b3...50f320`](./contracts/arbitrum-42161/0x01e9b35785ef3f7ef2677c371442976bd550f320/) | ⚠️ Unaudited |
-| Vault | unknown | arbitrum | n/a | [`0x304951...5b3d5b`](./contracts/arbitrum-42161/0x304951d7172bcada54ccac1e4674862b3d5b3d5b/) | ⚠️ Unaudited |
-| VaultPriceFeed | unknown | arbitrum | n/a | [`0x7b9e96...71ce4f`](./contracts/arbitrum-42161/0x7b9e962dd8aed0db9a1d8a2d7a962ad8b871ce4f/) | ⚠️ Unaudited |
+| EIP173Proxy | unknown | sonic | n/a | [`0x7b9e962dd8aed0db9a1d8a2d7a962ad8b871ce4f`](./contracts/sonic-146/0x7b9e962dd8aed0db9a1d8a2d7a962ad8b871ce4f/) | ⚠️ Unaudited |
+| FastPriceEvents | unknown | arbitrum | n/a | [`0xf75d3c6f20fb65cc0b8f84687e5cbac3d7f4221e`](./contracts/arbitrum-42161/0xf75d3c6f20fb65cc0b8f84687e5cbac3d7f4221e/) | ⚠️ Unaudited |
+| GLP | unknown | arbitrum | n/a | [`0x41cd8cafc24a771031b9eb9c57cfc94d86045eb6`](./contracts/arbitrum-42161/0x41cd8cafc24a771031b9eb9c57cfc94d86045eb6/) | ⚠️ Unaudited |
+| GlpManager | unknown | arbitrum | n/a | [`0x65dcb38637b526305be55f14b24a4ab2bd177780`](./contracts/arbitrum-42161/0x65dcb38637b526305be55f14b24a4ab2bd177780/) | ⚠️ Unaudited |
+| MintableBaseToken | unknown | arbitrum | n/a | [`0x2d270f66fee6ac9e27ff6551af5a8cfb5c8a7493`](./contracts/arbitrum-42161/0x2d270f66fee6ac9e27ff6551af5a8cfb5c8a7493/) | ⚠️ Unaudited |
+| NAVI | unknown | sonic | n/a | [`0x6881b80ea7c858e4aeef63893e18a8a36f3682f3`](./contracts/sonic-146/0x6881b80ea7c858e4aeef63893e18a8a36f3682f3/) | ⚠️ Unaudited |
+| PositionRouter | unknown | arbitrum | n/a | [`0x3b2732c1e5a248bbdd0315e9e8845c64f5a6faf5`](./contracts/arbitrum-42161/0x3b2732c1e5a248bbdd0315e9e8845c64f5a6faf5/) | ⚠️ Unaudited |
+| PriceFeedTimelock | unknown | arbitrum | n/a | [`0xb2a477c6ba5e96f6decbced836cb7d3d32ef9ecd`](./contracts/arbitrum-42161/0xb2a477c6ba5e96f6decbced836cb7d3d32ef9ecd/) | ⚠️ Unaudited |
+| RewardTracker | unknown | sonic | n/a | [`0xef8770e9506a8d1aae3d599327a39cf14b6b3dc4`](./contracts/sonic-146/0xef8770e9506a8d1aae3d599327a39cf14b6b3dc4/) | ⚠️ Unaudited |
+| Router | unknown | arbitrum | n/a | [`0x01e9b35785ef3f7ef2677c371442976bd550f320`](./contracts/arbitrum-42161/0x01e9b35785ef3f7ef2677c371442976bd550f320/) | ⚠️ Unaudited |
+| Vault | unknown | arbitrum | n/a | [`0x304951d7172bcada54ccac1e4674862b3d5b3d5b`](./contracts/arbitrum-42161/0x304951d7172bcada54ccac1e4674862b3d5b3d5b/) | ⚠️ Unaudited |
+| VaultPriceFeed | unknown | arbitrum | n/a | [`0x7b9e962dd8aed0db9a1d8a2d7a962ad8b871ce4f`](./contracts/arbitrum-42161/0x7b9e962dd8aed0db9a1d8a2d7a962ad8b871ce4f/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -103,18 +103,18 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| sonic | [`0x7b9e96...71ce4f`](./contracts/sonic-146/0x7b9e962dd8aed0db9a1d8a2d7a962ad8b871ce4f/) | EIP173Proxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xf75d3c...f4221e`](./contracts/arbitrum-42161/0xf75d3c6f20fb65cc0b8f84687e5cbac3d7f4221e/) | FastPriceEvents | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x41cd8c...045eb6`](./contracts/arbitrum-42161/0x41cd8cafc24a771031b9eb9c57cfc94d86045eb6/) | GLP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x65dcb3...177780`](./contracts/arbitrum-42161/0x65dcb38637b526305be55f14b24a4ab2bd177780/) | GlpManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x2d270f...8a7493`](./contracts/arbitrum-42161/0x2d270f66fee6ac9e27ff6551af5a8cfb5c8a7493/) | MintableBaseToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0x6881b8...3682f3`](./contracts/sonic-146/0x6881b80ea7c858e4aeef63893e18a8a36f3682f3/) | NAVI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x3b2732...a6faf5`](./contracts/arbitrum-42161/0x3b2732c1e5a248bbdd0315e9e8845c64f5a6faf5/) | PositionRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0xb2a477...ef9ecd`](./contracts/arbitrum-42161/0xb2a477c6ba5e96f6decbced836cb7d3d32ef9ecd/) | PriceFeedTimelock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0xef8770...6b3dc4`](./contracts/sonic-146/0xef8770e9506a8d1aae3d599327a39cf14b6b3dc4/) | RewardTracker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x01e9b3...50f320`](./contracts/arbitrum-42161/0x01e9b35785ef3f7ef2677c371442976bd550f320/) | Router | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x304951...5b3d5b`](./contracts/arbitrum-42161/0x304951d7172bcada54ccac1e4674862b3d5b3d5b/) | Vault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x7b9e96...71ce4f`](./contracts/arbitrum-42161/0x7b9e962dd8aed0db9a1d8a2d7a962ad8b871ce4f/) | VaultPriceFeed | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x7b9e962dd8aed0db9a1d8a2d7a962ad8b871ce4f`](./contracts/sonic-146/0x7b9e962dd8aed0db9a1d8a2d7a962ad8b871ce4f/) | EIP173Proxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xf75d3c6f20fb65cc0b8f84687e5cbac3d7f4221e`](./contracts/arbitrum-42161/0xf75d3c6f20fb65cc0b8f84687e5cbac3d7f4221e/) | FastPriceEvents | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x41cd8cafc24a771031b9eb9c57cfc94d86045eb6`](./contracts/arbitrum-42161/0x41cd8cafc24a771031b9eb9c57cfc94d86045eb6/) | GLP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x65dcb38637b526305be55f14b24a4ab2bd177780`](./contracts/arbitrum-42161/0x65dcb38637b526305be55f14b24a4ab2bd177780/) | GlpManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x2d270f66fee6ac9e27ff6551af5a8cfb5c8a7493`](./contracts/arbitrum-42161/0x2d270f66fee6ac9e27ff6551af5a8cfb5c8a7493/) | MintableBaseToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x6881b80ea7c858e4aeef63893e18a8a36f3682f3`](./contracts/sonic-146/0x6881b80ea7c858e4aeef63893e18a8a36f3682f3/) | NAVI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x3b2732c1e5a248bbdd0315e9e8845c64f5a6faf5`](./contracts/arbitrum-42161/0x3b2732c1e5a248bbdd0315e9e8845c64f5a6faf5/) | PositionRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xb2a477c6ba5e96f6decbced836cb7d3d32ef9ecd`](./contracts/arbitrum-42161/0xb2a477c6ba5e96f6decbced836cb7d3d32ef9ecd/) | PriceFeedTimelock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0xef8770e9506a8d1aae3d599327a39cf14b6b3dc4`](./contracts/sonic-146/0xef8770e9506a8d1aae3d599327a39cf14b6b3dc4/) | RewardTracker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x01e9b35785ef3f7ef2677c371442976bd550f320`](./contracts/arbitrum-42161/0x01e9b35785ef3f7ef2677c371442976bd550f320/) | Router | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x304951d7172bcada54ccac1e4674862b3d5b3d5b`](./contracts/arbitrum-42161/0x304951d7172bcada54ccac1e4674862b3d5b3d5b/) | Vault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x7b9e962dd8aed0db9a1d8a2d7a962ad8b871ce4f`](./contracts/arbitrum-42161/0x7b9e962dd8aed0db9a1d8a2d7a962ad8b871ce4f/) | VaultPriceFeed | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

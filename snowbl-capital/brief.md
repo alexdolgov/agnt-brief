@@ -62,9 +62,9 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| GnosisSafeProxy | unknown | ethereum | n/a | [`0x140ff2...72885b`](./contracts/ethereum-1/0x140ff23687e81ac1c80d5cdb7cc59370c872885b/) | ⚠️ Unaudited |
-| SafeProxy | unknown | base | n/a | [`0xa199f7...7852a6`](./contracts/base-8453/0xa199f766c46759356588ef91209aff4f8c7852a6/) | ⚠️ Unaudited |
-| SnowblVault | unknown | base | n/a | [`0x21731f...77b72d`](./contracts/base-8453/0x21731f4d4250247e2a2922dfc81164017377b72d/) | ⚠️ Unaudited |
+| GnosisSafeProxy | unknown | ethereum | n/a | [`0x140ff23687e81ac1c80d5cdb7cc59370c872885b`](./contracts/ethereum-1/0x140ff23687e81ac1c80d5cdb7cc59370c872885b/) | ⚠️ Unaudited |
+| SafeProxy | unknown | base | n/a | [`0xa199f766c46759356588ef91209aff4f8c7852a6`](./contracts/base-8453/0xa199f766c46759356588ef91209aff4f8c7852a6/) | ⚠️ Unaudited |
+| SnowblVault | unknown | base | n/a | [`0x21731f4d4250247e2a2922dfc81164017377b72d`](./contracts/base-8453/0x21731f4d4250247e2a2922dfc81164017377b72d/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,7 +95,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x21731f...77b72d`](./contracts/base-8453/0x21731f4d4250247e2a2922dfc81164017377b72d/) | SnowblVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x21731f4d4250247e2a2922dfc81164017377b72d`](./contracts/base-8453/0x21731f4d4250247e2a2922dfc81164017377b72d/) | SnowblVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

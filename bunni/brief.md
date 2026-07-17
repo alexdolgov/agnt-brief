@@ -61,35 +61,35 @@ The protocol comprises 2 functional families. Its contracts share 4 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BunniHook | unknown | ethereum | n/a | [`0x000052...791888`](./contracts/ethereum-1/0x000052423c1db6b7ff8641b85a7eefc7b2791888/) | ✅ Audited |
-| BunniHub | unknown | ethereum | n/a | [`0x000000...b765f1`](./contracts/ethereum-1/0x000000000049c7bcbca294e63567b4d21eb765f1/) | ✅ Audited |
-| BunniQuoter | unknown | ethereum | n/a | [`0x000000...b7a767`](./contracts/ethereum-1/0x00000000217dd3feb84e447fa4abe3a97db7a767/) | ✅ Audited |
-| BunniZone | unknown | ethereum | n/a | [`0x000000...0a14ea`](./contracts/ethereum-1/0x00000000ff3ba1257149f69cd0d22263dd0a14ea/) | ✅ Audited |
-| BuyTheDipGeometricDistribution | unknown | ethereum | n/a | [`0x000000...636936`](./contracts/ethereum-1/0x000000003691653855719a5722eb10f6d9636936/) | ✅ Audited |
-| CarpetedDoubleGeometricDistribution | unknown | ethereum | n/a | [`0x000000...429e0d`](./contracts/ethereum-1/0x000000000b757686c9596cada54fa28f8c429e0d/) | ✅ Audited |
-| CarpetedGeometricDistribution | unknown | ethereum | n/a | [`0x000000...7aa1f6`](./contracts/ethereum-1/0x000000007ca9919151b275fabea64a4f557aa1f6/) | ✅ Audited |
-| DoubleGeometricDistribution | unknown | ethereum | n/a | [`0x000000...151edb`](./contracts/ethereum-1/0x000000004a3e16323618d0e43e93b4dd64151edb/) | ✅ Audited |
-| GeometricDistribution | unknown | ethereum | n/a | [`0x000000...9d2069`](./contracts/ethereum-1/0x000000002a6e7022d123eab81ba9fa19aa9d2069/) | ✅ Audited |
-| OracleUniGeoDistribution | unknown | ethereum | n/a | [`0x000000...f0c33c`](./contracts/ethereum-1/0x00000000b5cd5d1e09a5c1fb166d26d1cef0c33c/) | ✅ Audited |
-| UniformDistribution | unknown | ethereum | n/a | [`0x000000...0b8760`](./contracts/ethereum-1/0x00000000d5248262c18c5a8c706b2a3e740b8760/) | ✅ Audited |
+| BunniHook | unknown | ethereum | n/a | [`0x000052423c1db6b7ff8641b85a7eefc7b2791888`](./contracts/ethereum-1/0x000052423c1db6b7ff8641b85a7eefc7b2791888/) | ✅ Audited |
+| BunniHub | unknown | ethereum | n/a | [`0x000000000049c7bcbca294e63567b4d21eb765f1`](./contracts/ethereum-1/0x000000000049c7bcbca294e63567b4d21eb765f1/) | ✅ Audited |
+| BunniQuoter | unknown | ethereum | n/a | [`0x00000000217dd3feb84e447fa4abe3a97db7a767`](./contracts/ethereum-1/0x00000000217dd3feb84e447fa4abe3a97db7a767/) | ✅ Audited |
+| BunniZone | unknown | ethereum | n/a | [`0x00000000ff3ba1257149f69cd0d22263dd0a14ea`](./contracts/ethereum-1/0x00000000ff3ba1257149f69cd0d22263dd0a14ea/) | ✅ Audited |
+| BuyTheDipGeometricDistribution | unknown | ethereum | n/a | [`0x000000003691653855719a5722eb10f6d9636936`](./contracts/ethereum-1/0x000000003691653855719a5722eb10f6d9636936/) | ✅ Audited |
+| CarpetedDoubleGeometricDistribution | unknown | ethereum | n/a | [`0x000000000b757686c9596cada54fa28f8c429e0d`](./contracts/ethereum-1/0x000000000b757686c9596cada54fa28f8c429e0d/) | ✅ Audited |
+| CarpetedGeometricDistribution | unknown | ethereum | n/a | [`0x000000007ca9919151b275fabea64a4f557aa1f6`](./contracts/ethereum-1/0x000000007ca9919151b275fabea64a4f557aa1f6/) | ✅ Audited |
+| DoubleGeometricDistribution | unknown | ethereum | n/a | [`0x000000004a3e16323618d0e43e93b4dd64151edb`](./contracts/ethereum-1/0x000000004a3e16323618d0e43e93b4dd64151edb/) | ✅ Audited |
+| GeometricDistribution | unknown | ethereum | n/a | [`0x000000002a6e7022d123eab81ba9fa19aa9d2069`](./contracts/ethereum-1/0x000000002a6e7022d123eab81ba9fa19aa9d2069/) | ✅ Audited |
+| OracleUniGeoDistribution | unknown | ethereum | n/a | [`0x00000000b5cd5d1e09a5c1fb166d26d1cef0c33c`](./contracts/ethereum-1/0x00000000b5cd5d1e09a5c1fb166d26d1cef0c33c/) | ✅ Audited |
+| UniformDistribution | unknown | ethereum | n/a | [`0x00000000d5248262c18c5a8c706b2a3e740b8760`](./contracts/ethereum-1/0x00000000d5248262c18c5a8c706b2a3e740b8760/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (13)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BUNNI | unknown | ethereum | n/a | [`0x000000...1345b3`](./contracts/ethereum-1/0x000000c396558ffbab5ea628f39658bdf61345b3/) | ⚠️ Unaudited |
-| BunniHookOracle | unknown | ethereum | n/a | [`0x000000...c45ba9`](./contracts/ethereum-1/0x0000001cc485ca6d3c966fbcba7dba6302c45ba9/) | ⚠️ Unaudited |
-| BunniLens | unknown | ethereum | n/a | [`0xb73f30...fbfd19`](./contracts/ethereum-1/0xb73f303472c4fd4ff3b9f59ce0f9b13e47fbfd19/) | ⚠️ Unaudited |
-| BunniZapIn | unknown | ethereum | n/a | [`0x000000...8adb93`](./contracts/ethereum-1/0x0000000000dfe4c0014a4fb7fc63bb174b8adb93/) | ⚠️ Unaudited |
-| FeeDistributor | unknown | ethereum | n/a | [`0x000000...4b70e8`](./contracts/ethereum-1/0x000000dd5e3922232566fdac8cb8bf4e7e4b70e8/) | ⚠️ Unaudited |
-| L2BUNNI | unknown | base | n/a | [`0x000000...1345b3`](./contracts/base-8453/0x000000c396558ffbab5ea628f39658bdf61345b3/) | ⚠️ Unaudited |
-| MasterBunni | unknown | ethereum | n/a | [`0x000000...9e78b0`](./contracts/ethereum-1/0x0000009856ebf1b73b431fb59f2a2f200e9e78b0/) | ⚠️ Unaudited |
-| OptionsToken | unknown | ethereum | n/a | [`0x000000...7d0d59`](./contracts/ethereum-1/0x000000dc51b82dc9c14c2c034341c912907d0d59/) | ⚠️ Unaudited |
-| PermissionedBunniZone | unknown | bsc | n/a | [`0x000000...90d0b0`](./contracts/bsc-56/0x0000000d2ae8907a686d988eeda193a90d90d0b0/) | ⚠️ Unaudited |
-| TimelessToken | unknown | ethereum | n/a | [`0xfd0205...b4c341`](./contracts/ethereum-1/0xfd0205066521550d7d7ab19da8f72bb004b4c341/) | ⚠️ Unaudited |
-| TokenMigrator | unknown | ethereum | n/a | [`0x000000...7ad811`](./contracts/ethereum-1/0x000000c2552ac621a551170d95b5ae6cb97ad811/) | ⚠️ Unaudited |
-| VeAirdrop | unknown | ethereum | n/a | [`0x000000...5375f0`](./contracts/ethereum-1/0x0000005f3a0733345412b510b63fc2d3ca5375f0/) | ⚠️ Unaudited |
-| Voting Escrow | unknown | ethereum | n/a | [`0x000000...a1bf77`](./contracts/ethereum-1/0x00000042877f4a1cc0693383ebdac7c0e0a1bf77/) | ⚠️ Unaudited |
+| BUNNI | unknown | ethereum | n/a | [`0x000000c396558ffbab5ea628f39658bdf61345b3`](./contracts/ethereum-1/0x000000c396558ffbab5ea628f39658bdf61345b3/) | ⚠️ Unaudited |
+| BunniHookOracle | unknown | ethereum | n/a | [`0x0000001cc485ca6d3c966fbcba7dba6302c45ba9`](./contracts/ethereum-1/0x0000001cc485ca6d3c966fbcba7dba6302c45ba9/) | ⚠️ Unaudited |
+| BunniLens | unknown | ethereum | n/a | [`0xb73f303472c4fd4ff3b9f59ce0f9b13e47fbfd19`](./contracts/ethereum-1/0xb73f303472c4fd4ff3b9f59ce0f9b13e47fbfd19/) | ⚠️ Unaudited |
+| BunniZapIn | unknown | ethereum | n/a | [`0x0000000000dfe4c0014a4fb7fc63bb174b8adb93`](./contracts/ethereum-1/0x0000000000dfe4c0014a4fb7fc63bb174b8adb93/) | ⚠️ Unaudited |
+| FeeDistributor | unknown | ethereum | n/a | [`0x000000dd5e3922232566fdac8cb8bf4e7e4b70e8`](./contracts/ethereum-1/0x000000dd5e3922232566fdac8cb8bf4e7e4b70e8/) | ⚠️ Unaudited |
+| L2BUNNI | unknown | base | n/a | [`0x000000c396558ffbab5ea628f39658bdf61345b3`](./contracts/base-8453/0x000000c396558ffbab5ea628f39658bdf61345b3/) | ⚠️ Unaudited |
+| MasterBunni | unknown | ethereum | n/a | [`0x0000009856ebf1b73b431fb59f2a2f200e9e78b0`](./contracts/ethereum-1/0x0000009856ebf1b73b431fb59f2a2f200e9e78b0/) | ⚠️ Unaudited |
+| OptionsToken | unknown | ethereum | n/a | [`0x000000dc51b82dc9c14c2c034341c912907d0d59`](./contracts/ethereum-1/0x000000dc51b82dc9c14c2c034341c912907d0d59/) | ⚠️ Unaudited |
+| PermissionedBunniZone | unknown | bsc | n/a | [`0x0000000d2ae8907a686d988eeda193a90d90d0b0`](./contracts/bsc-56/0x0000000d2ae8907a686d988eeda193a90d90d0b0/) | ⚠️ Unaudited |
+| TimelessToken | unknown | ethereum | n/a | [`0xfd0205066521550d7d7ab19da8f72bb004b4c341`](./contracts/ethereum-1/0xfd0205066521550d7d7ab19da8f72bb004b4c341/) | ⚠️ Unaudited |
+| TokenMigrator | unknown | ethereum | n/a | [`0x000000c2552ac621a551170d95b5ae6cb97ad811`](./contracts/ethereum-1/0x000000c2552ac621a551170d95b5ae6cb97ad811/) | ⚠️ Unaudited |
+| VeAirdrop | unknown | ethereum | n/a | [`0x0000005f3a0733345412b510b63fc2d3ca5375f0`](./contracts/ethereum-1/0x0000005f3a0733345412b510b63fc2d3ca5375f0/) | ⚠️ Unaudited |
+| Voting Escrow | unknown | ethereum | n/a | [`0x00000042877f4a1cc0693383ebdac7c0e0a1bf77`](./contracts/ethereum-1/0x00000042877f4a1cc0693383ebdac7c0e0a1bf77/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -127,19 +127,19 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x000000...1345b3`](./contracts/ethereum-1/0x000000c396558ffbab5ea628f39658bdf61345b3/) | BUNNI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x000000...c45ba9`](./contracts/ethereum-1/0x0000001cc485ca6d3c966fbcba7dba6302c45ba9/) | BunniHookOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xb73f30...fbfd19`](./contracts/ethereum-1/0xb73f303472c4fd4ff3b9f59ce0f9b13e47fbfd19/) | BunniLens | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x000000...8adb93`](./contracts/ethereum-1/0x0000000000dfe4c0014a4fb7fc63bb174b8adb93/) | BunniZapIn | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x000000...4b70e8`](./contracts/ethereum-1/0x000000dd5e3922232566fdac8cb8bf4e7e4b70e8/) | FeeDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x000000...1345b3`](./contracts/base-8453/0x000000c396558ffbab5ea628f39658bdf61345b3/) | L2BUNNI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x000000...9e78b0`](./contracts/ethereum-1/0x0000009856ebf1b73b431fb59f2a2f200e9e78b0/) | MasterBunni | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x000000...7d0d59`](./contracts/ethereum-1/0x000000dc51b82dc9c14c2c034341c912907d0d59/) | OptionsToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x000000...90d0b0`](./contracts/bsc-56/0x0000000d2ae8907a686d988eeda193a90d90d0b0/) | PermissionedBunniZone | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xfd0205...b4c341`](./contracts/ethereum-1/0xfd0205066521550d7d7ab19da8f72bb004b4c341/) | TimelessToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x000000...7ad811`](./contracts/ethereum-1/0x000000c2552ac621a551170d95b5ae6cb97ad811/) | TokenMigrator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x000000...5375f0`](./contracts/ethereum-1/0x0000005f3a0733345412b510b63fc2d3ca5375f0/) | VeAirdrop | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x000000...a1bf77`](./contracts/ethereum-1/0x00000042877f4a1cc0693383ebdac7c0e0a1bf77/) | Voting Escrow | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x000000c396558ffbab5ea628f39658bdf61345b3`](./contracts/ethereum-1/0x000000c396558ffbab5ea628f39658bdf61345b3/) | BUNNI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0000001cc485ca6d3c966fbcba7dba6302c45ba9`](./contracts/ethereum-1/0x0000001cc485ca6d3c966fbcba7dba6302c45ba9/) | BunniHookOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb73f303472c4fd4ff3b9f59ce0f9b13e47fbfd19`](./contracts/ethereum-1/0xb73f303472c4fd4ff3b9f59ce0f9b13e47fbfd19/) | BunniLens | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0000000000dfe4c0014a4fb7fc63bb174b8adb93`](./contracts/ethereum-1/0x0000000000dfe4c0014a4fb7fc63bb174b8adb93/) | BunniZapIn | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x000000dd5e3922232566fdac8cb8bf4e7e4b70e8`](./contracts/ethereum-1/0x000000dd5e3922232566fdac8cb8bf4e7e4b70e8/) | FeeDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x000000c396558ffbab5ea628f39658bdf61345b3`](./contracts/base-8453/0x000000c396558ffbab5ea628f39658bdf61345b3/) | L2BUNNI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0000009856ebf1b73b431fb59f2a2f200e9e78b0`](./contracts/ethereum-1/0x0000009856ebf1b73b431fb59f2a2f200e9e78b0/) | MasterBunni | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x000000dc51b82dc9c14c2c034341c912907d0d59`](./contracts/ethereum-1/0x000000dc51b82dc9c14c2c034341c912907d0d59/) | OptionsToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x0000000d2ae8907a686d988eeda193a90d90d0b0`](./contracts/bsc-56/0x0000000d2ae8907a686d988eeda193a90d90d0b0/) | PermissionedBunniZone | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xfd0205066521550d7d7ab19da8f72bb004b4c341`](./contracts/ethereum-1/0xfd0205066521550d7d7ab19da8f72bb004b4c341/) | TimelessToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x000000c2552ac621a551170d95b5ae6cb97ad811`](./contracts/ethereum-1/0x000000c2552ac621a551170d95b5ae6cb97ad811/) | TokenMigrator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0000005f3a0733345412b510b63fc2d3ca5375f0`](./contracts/ethereum-1/0x0000005f3a0733345412b510b63fc2d3ca5375f0/) | VeAirdrop | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x00000042877f4a1cc0693383ebdac7c0e0a1bf77`](./contracts/ethereum-1/0x00000042877f4a1cc0693383ebdac7c0e0a1bf77/) | Voting Escrow | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

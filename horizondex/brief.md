@@ -61,27 +61,27 @@ The protocol comprises 7 functional families. Its contracts share 13 common proj
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AntiSnipAttackPositionManager | governance | base | n/a | [`0xb3cc48...d84555`](./contracts/base-8453/0xb3cc484a60bc300719aaefbd158a4e8e59d84555/) | ✅ Audited |
-| AntiSnipAttackPositionManager | governance | linea | n/a | [`0x438670...60dbf4`](./contracts/linea-59144/0x438670d41d5118003b2f42cc0466fbadd760dbf4/) | ✅ Audited |
-| Factory | registry | linea | n/a | [`0x9fe607...6cb2c5`](./contracts/linea-59144/0x9fe607e5dcd0ea318dbb4d8a7b04fa553d6cb2c5/) | ✅ Audited |
-| PrivateSaleOverflow | unknown | linea | n/a | [`0x81f76e...0371cd`](./contracts/linea-59144/0x81f76e9af21379cfa1bdfe7f5786c710300371cd/) | ✅ Audited |
-| PublicSaleOverflow | unknown | linea | n/a | [`0xba0869...2e0402`](./contracts/linea-59144/0xba0869c4253c2be7f6b2cc3fb3081317532e0402/) | ✅ Audited |
-| Router | adapter | base | n/a | [`0x99aec5...363827`](./contracts/base-8453/0x99aec509174cbf06f8f7e15ddeeb7bcc32363827/) | ✅ Audited |
-| Router | adapter | linea | n/a | [`0x272e15...f926bb`](./contracts/linea-59144/0x272e156df8da513c69cb41cc7a99185d53f926bb/) | ✅ Audited |
+| AntiSnipAttackPositionManager | governance | base | n/a | [`0xb3cc484a60bc300719aaefbd158a4e8e59d84555`](./contracts/base-8453/0xb3cc484a60bc300719aaefbd158a4e8e59d84555/) | ✅ Audited |
+| AntiSnipAttackPositionManager | governance | linea | n/a | [`0x438670d41d5118003b2f42cc0466fbadd760dbf4`](./contracts/linea-59144/0x438670d41d5118003b2f42cc0466fbadd760dbf4/) | ✅ Audited |
+| Factory | registry | linea | n/a | [`0x9fe607e5dcd0ea318dbb4d8a7b04fa553d6cb2c5`](./contracts/linea-59144/0x9fe607e5dcd0ea318dbb4d8a7b04fa553d6cb2c5/) | ✅ Audited |
+| PrivateSaleOverflow | unknown | linea | n/a | [`0x81f76e9af21379cfa1bdfe7f5786c710300371cd`](./contracts/linea-59144/0x81f76e9af21379cfa1bdfe7f5786c710300371cd/) | ✅ Audited |
+| PublicSaleOverflow | unknown | linea | n/a | [`0xba0869c4253c2be7f6b2cc3fb3081317532e0402`](./contracts/linea-59144/0xba0869c4253c2be7f6b2cc3fb3081317532e0402/) | ✅ Audited |
+| Router | adapter | base | n/a | [`0x99aec509174cbf06f8f7e15ddeeb7bcc32363827`](./contracts/base-8453/0x99aec509174cbf06f8f7e15ddeeb7bcc32363827/) | ✅ Audited |
+| Router | adapter | linea | n/a | [`0x272e156df8da513c69cb41cc7a99185d53f926bb`](./contracts/linea-59144/0x272e156df8da513c69cb41cc7a99185d53f926bb/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (9)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Horizon | unknown | linea | n/a | [`0x0b1a02...8a3ac1`](./contracts/linea-59144/0x0b1a02a7309dfbfad1cd4adc096582c87e8a3ac1/) | ⚠️ Unaudited |
-| LockedEpoch1HZN | unknown | linea | n/a | [`0x75d3aa...420a79`](./contracts/linea-59144/0x75d3aa57f7181bf4136438cc9cdddd86fd420a79/) | ⚠️ Unaudited |
-| NonfungiblePositionManager | governance | linea | n/a | [`0x649d0b...3d6d5b`](./contracts/linea-59144/0x649d0b066e2e68fb0497ad6128cd0edb903d6d5b/) | ⚠️ Unaudited |
-| PoolOracle | unknown | base | n/a | 2 deployments: base [`0x272e15...f926bb`](./contracts/base-8453/0x272e156df8da513c69cb41cc7a99185d53f926bb/); base `0x9fe607...6cb2c5` | ⚠️ Unaudited |
-| PoolOracle | unknown | linea | n/a | 2 deployments: linea [`0x79756d...94d93a`](./contracts/linea-59144/0x79756d90a882a1621ec35723849dac785694d93a/); linea `0xa749ad...708335` | ⚠️ Unaudited |
-| SwapRouter | adapter | linea | n/a | [`0xc3454b...fc7a11`](./contracts/linea-59144/0xc3454bcb7164a83549022ffea307352d4afc7a11/) | ⚠️ Unaudited |
-| TokenPositionDescriptor | unknown | base | n/a | 2 deployments: base [`0x438670...60dbf4`](./contracts/base-8453/0x438670d41d5118003b2f42cc0466fbadd760dbf4/); base `0xc67c90...8a8aeb` | ⚠️ Unaudited |
-| TokenPositionDescriptor | unknown | linea | n/a | 2 deployments: linea [`0x94ddde...c30d73`](./contracts/linea-59144/0x94ddde405a00180891ed79dc1147f0d841c30d73/); linea `0x99aec5...363827` | ⚠️ Unaudited |
-| UsdPlusTokenV3 | token | linea | n/a | 2 deployments: linea [`0x1e1f50...3b7f13`](./contracts/linea-59144/0x1e1f509963a6d33e169d9497b11c7dbfe73b7f13/); linea `0xb79dd0...de4376` | ⚠️ Unaudited |
+| Horizon | unknown | linea | n/a | [`0x0b1a02a7309dfbfad1cd4adc096582c87e8a3ac1`](./contracts/linea-59144/0x0b1a02a7309dfbfad1cd4adc096582c87e8a3ac1/) | ⚠️ Unaudited |
+| LockedEpoch1HZN | unknown | linea | n/a | [`0x75d3aa57f7181bf4136438cc9cdddd86fd420a79`](./contracts/linea-59144/0x75d3aa57f7181bf4136438cc9cdddd86fd420a79/) | ⚠️ Unaudited |
+| NonfungiblePositionManager | governance | linea | n/a | [`0x649d0b066e2e68fb0497ad6128cd0edb903d6d5b`](./contracts/linea-59144/0x649d0b066e2e68fb0497ad6128cd0edb903d6d5b/) | ⚠️ Unaudited |
+| PoolOracle | unknown | base | n/a | 2 deployments: base [`0x272e156df8da513c69cb41cc7a99185d53f926bb`](./contracts/base-8453/0x272e156df8da513c69cb41cc7a99185d53f926bb/); base `0x9fe607e5dcd0ea318dbb4d8a7b04fa553d6cb2c5` | ⚠️ Unaudited |
+| PoolOracle | unknown | linea | n/a | 2 deployments: linea [`0x79756d90a882a1621ec35723849dac785694d93a`](./contracts/linea-59144/0x79756d90a882a1621ec35723849dac785694d93a/); linea `0xa749ad81913cdc19881ebeb64631df72be708335` | ⚠️ Unaudited |
+| SwapRouter | adapter | linea | n/a | [`0xc3454bcb7164a83549022ffea307352d4afc7a11`](./contracts/linea-59144/0xc3454bcb7164a83549022ffea307352d4afc7a11/) | ⚠️ Unaudited |
+| TokenPositionDescriptor | unknown | base | n/a | 2 deployments: base [`0x438670d41d5118003b2f42cc0466fbadd760dbf4`](./contracts/base-8453/0x438670d41d5118003b2f42cc0466fbadd760dbf4/); base `0xc67c9038020dbd5d0669f90ae62cb934eb8a8aeb` | ⚠️ Unaudited |
+| TokenPositionDescriptor | unknown | linea | n/a | 2 deployments: linea [`0x94ddde405a00180891ed79dc1147f0d841c30d73`](./contracts/linea-59144/0x94ddde405a00180891ed79dc1147f0d841c30d73/); linea `0x99aec509174cbf06f8f7e15ddeeb7bcc32363827` | ⚠️ Unaudited |
+| UsdPlusTokenV3 | token | linea | n/a | 2 deployments: linea [`0x1e1f509963a6d33e169d9497b11c7dbfe73b7f13`](./contracts/linea-59144/0x1e1f509963a6d33e169d9497b11c7dbfe73b7f13/); linea `0xb79dd08ea68a908a97220c76d19a6aa9cbde4376` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -101,22 +101,22 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Proxy (impl: 0xa57c15e2ac3ee73cbc6f8c20634e8e909bfc4a32) | unknown | linea | n/a | 2 deployments: linea `0x079f12...56261a`; linea `0xa57c15...fc4a32` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0x1b41c3...244f58` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0x22ccb8...042511` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0x2e1cba...f79a39` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0x5797a5...2af732` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0x58abb3...90b03a` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0x6dfec8...14122d` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0xa171b8...455583` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0xa17dc9...d1ba3b` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0xb3cc48...d84555` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0xba504e...2900e9` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0xcea306...fd73b3` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0xe8f6f0...d428c4` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0xef3406...7ef06b` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0xf1df26...972b9f` | ❓ Unverified |
-| UnnamedContract | unknown | linea | n/a | `0xf7b48f...97f51b` | ❓ Unverified |
+| Proxy (impl: 0xa57c15e2ac3ee73cbc6f8c20634e8e909bfc4a32) | unknown | linea | n/a | 2 deployments: linea `0x079f127a3374c03c9642bb912cf93c5a8656261a`; linea `0xa57c15e2ac3ee73cbc6f8c20634e8e909bfc4a32` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0x1b41c3c79d343dfaf50c966c9ac24165b7244f58` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0x22ccb8baa52066d2c04cc497e0455db84b042511` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0x2e1cba4a9f6e69d27e65046fc93b873b05f79a39` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0x5797a5f6a48ac5241582361db532c1c6012af732` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0x58abb34a21c28cf188f68a27477ee2c46590b03a` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0x6dfec8f16f723226452bebbdda719d562414122d` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0xa171b85d6e246ddf7a0a90a0ec2ed10515455583` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0xa17dc9904dc37971c9d27b503c70a68b33d1ba3b` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0xb3cc484a60bc300719aaefbd158a4e8e59d84555` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0xba504ed13e6acd716ec765758d3e553b1a2900e9` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0xcea30697bb2f13274471da958ca35442f4fd73b3` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0xe8f6f02b0b938009a2c4ba9c765d3adbbbd428c4` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0xef34063a4856e0699108ba10ae92a9d2737ef06b` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0xf1df26c4147f60b6c69c542cb3f9f12cf9972b9f` | ❓ Unverified |
+| UnnamedContract | unknown | linea | n/a | `0xf7b48f136c7d060f5fc6f020f06418c53097f51b` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -138,15 +138,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| linea | [`0x0b1a02...8a3ac1`](./contracts/linea-59144/0x0b1a02a7309dfbfad1cd4adc096582c87e8a3ac1/) | Horizon | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0x75d3aa...420a79`](./contracts/linea-59144/0x75d3aa57f7181bf4136438cc9cdddd86fd420a79/) | LockedEpoch1HZN | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0x649d0b...3d6d5b`](./contracts/linea-59144/0x649d0b066e2e68fb0497ad6128cd0edb903d6d5b/) | NonfungiblePositionManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x272e15...f926bb`](./contracts/base-8453/0x272e156df8da513c69cb41cc7a99185d53f926bb/) | PoolOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0x79756d...94d93a`](./contracts/linea-59144/0x79756d90a882a1621ec35723849dac785694d93a/) | PoolOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0xc3454b...fc7a11`](./contracts/linea-59144/0xc3454bcb7164a83549022ffea307352d4afc7a11/) | SwapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x438670...60dbf4`](./contracts/base-8453/0x438670d41d5118003b2f42cc0466fbadd760dbf4/) | TokenPositionDescriptor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0x94ddde...c30d73`](./contracts/linea-59144/0x94ddde405a00180891ed79dc1147f0d841c30d73/) | TokenPositionDescriptor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| linea | [`0x1e1f50...3b7f13`](./contracts/linea-59144/0x1e1f509963a6d33e169d9497b11c7dbfe73b7f13/) | UsdPlusTokenV3 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x0b1a02a7309dfbfad1cd4adc096582c87e8a3ac1`](./contracts/linea-59144/0x0b1a02a7309dfbfad1cd4adc096582c87e8a3ac1/) | Horizon | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x75d3aa57f7181bf4136438cc9cdddd86fd420a79`](./contracts/linea-59144/0x75d3aa57f7181bf4136438cc9cdddd86fd420a79/) | LockedEpoch1HZN | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x649d0b066e2e68fb0497ad6128cd0edb903d6d5b`](./contracts/linea-59144/0x649d0b066e2e68fb0497ad6128cd0edb903d6d5b/) | NonfungiblePositionManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x272e156df8da513c69cb41cc7a99185d53f926bb`](./contracts/base-8453/0x272e156df8da513c69cb41cc7a99185d53f926bb/) | PoolOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x79756d90a882a1621ec35723849dac785694d93a`](./contracts/linea-59144/0x79756d90a882a1621ec35723849dac785694d93a/) | PoolOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0xc3454bcb7164a83549022ffea307352d4afc7a11`](./contracts/linea-59144/0xc3454bcb7164a83549022ffea307352d4afc7a11/) | SwapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x438670d41d5118003b2f42cc0466fbadd760dbf4`](./contracts/base-8453/0x438670d41d5118003b2f42cc0466fbadd760dbf4/) | TokenPositionDescriptor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x94ddde405a00180891ed79dc1147f0d841c30d73`](./contracts/linea-59144/0x94ddde405a00180891ed79dc1147f0d841c30d73/) | TokenPositionDescriptor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | [`0x1e1f509963a6d33e169d9497b11c7dbfe73b7f13`](./contracts/linea-59144/0x1e1f509963a6d33e169d9497b11c7dbfe73b7f13/) | UsdPlusTokenV3 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

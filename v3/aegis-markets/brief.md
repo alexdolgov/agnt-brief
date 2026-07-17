@@ -54,16 +54,16 @@ The pinned logic-topography run contains 10 contract row(s) across base, unichai
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- DynamicFeeManager (`0xd7deab...bb8d98`, chain 130)
-- DynamicFeeManager (`0xe67686...18a028`, chain 130)
-- FullRangeLiquidityManager (`0xa7b3e2...4352a3`, chain 130)
-- FullRangeLiquidityManager (`0xa7ce35...458a2c`, chain 130)
-- PoolPolicyManager (`0xaaf29f...97cdda`, chain 130)
-- PoolPolicyManager (`0xe072d3...ec0ee7`, chain 130)
-- Spot (`0x88c9ff...1cdacc`, chain 130)
-- Spot (`0xa0b0d2...af10cc`, chain 130)
-- TruncGeoOracleMulti (`0x22e086...8facb5`, chain 130)
-- TruncGeoOracleMulti (`0xbe4f23...be6abf`, chain 130)
+- DynamicFeeManager (`0xd7deabab9ecd3bcb3b89ab0ce2c84c8565bb8d98`, chain 130)
+- DynamicFeeManager (`0xe6768629156d4b713e266b87502fbeccc218a028`, chain 130)
+- FullRangeLiquidityManager (`0xa7b3e2306a0b46dbde3b533c4e2c3be6a24352a3`, chain 130)
+- FullRangeLiquidityManager (`0xa7ce35e886e58926ad0c149f4cc558e27d458a2c`, chain 130)
+- PoolPolicyManager (`0xaaf29f2c9516062dc43c4465ef6d43ce8397cdda`, chain 130)
+- PoolPolicyManager (`0xe072d3c7567d4b326ddde0f77062e6758aec0ee7`, chain 130)
+- Spot (`0x88c9ff9fc0b22cca42265d3f1d1c2c39e41cdacc`, chain 130)
+- Spot (`0xa0b0d2d00fd544d8e0887f1a3cedd6e24baf10cc`, chain 130)
+- TruncGeoOracleMulti (`0x22e086c085fbda3214db238f8a930d22228facb5`, chain 130)
+- TruncGeoOracleMulti (`0xbe4f23b9488300c532a5d9d8d11b0b8163be6abf`, chain 130)
 
 ## Contract Surface Quality
 
@@ -108,37 +108,37 @@ The pinned logic-topography run contains 10 contract row(s) across base, unichai
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| DynamicFeeManager | governance | project_anchor | own_supporting | 0 | unichain | unit-378645 | `0xe67686...18a028` | ✅ Audited |
-| FullRangeLiquidityManager | unknown | project_anchor | own_supporting | 0 | unichain | unit-378640 | `0xa7ce35...458a2c` | ✅ Audited |
-| PoolPolicyManager | core_logic | project_anchor | own_supporting | 0 | unichain | unit-378641 | `0xaaf29f...97cdda` | ✅ Audited |
-| Spot | unknown | project_anchor | own_supporting | 0 | unichain | unit-378638 | `0xa0b0d2...af10cc` | ✅ Audited |
-| TruncGeoOracleMulti | operational_periphery | project_anchor | own_supporting | 0 | unichain | unit-378636 | `0x22e086...8facb5` | ✅ Audited |
+| DynamicFeeManager | governance | project_anchor | own_supporting | 0 | unichain | unit-378645 | `0xe6768629156d4b713e266b87502fbeccc218a028` | ✅ Audited |
+| FullRangeLiquidityManager | unknown | project_anchor | own_supporting | 0 | unichain | unit-378640 | `0xa7ce35e886e58926ad0c149f4cc558e27d458a2c` | ✅ Audited |
+| PoolPolicyManager | core_logic | project_anchor | own_supporting | 0 | unichain | unit-378641 | `0xaaf29f2c9516062dc43c4465ef6d43ce8397cdda` | ✅ Audited |
+| Spot | unknown | project_anchor | own_supporting | 0 | unichain | unit-378638 | `0xa0b0d2d00fd544d8e0887f1a3cedd6e24baf10cc` | ✅ Audited |
+| TruncGeoOracleMulti | operational_periphery | project_anchor | own_supporting | 0 | unichain | unit-378636 | `0x22e086c085fbda3214db238f8a930d22228facb5` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (21)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| PoolManager | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | 2 deployments: unichain `0x1f9840...000004`; base `0x498581...652b2b` | ⚠️ Unaudited |
-| AegisNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0xdb3a3d...8e718d` | ⚠️ Unaudited |
-| DynamicFeeManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | 2 deployments: unichain `0x16b40c...94d958`; unichain `0x4a6770...a9429c` | ⚠️ Unaudited |
-| DynamicFeeManager | governance | project_anchor | own_supporting | 0 | unichain | unit-378643 | `0xd7deab...bb8d98` | ⚠️ Unaudited |
-| FullRangeLiquidityManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0x6da0c0...0fe365` | ⚠️ Unaudited |
-| FullRangeLiquidityManager | governance | project_anchor | own_supporting | 0 | unichain | unit-378639 | `0xa7b3e2...4352a3` | ⚠️ Unaudited |
-| PoolInitAndBindRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0xb3b7bc...fea779` | ⚠️ Unaudited |
-| PoolPolicyManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | 2 deployments: unichain `0x87cb5a...7e3e06`; unichain `0xa16eb8...7d3006` | ⚠️ Unaudited |
-| PoolPolicyManager | core_logic | project_anchor | own_supporting | 0 | unichain | unit-378644 | `0xe072d3...ec0ee7` | ⚠️ Unaudited |
-| PositionManager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | unichain | n/a | `0x4529a0...2617bf` | ⚠️ Unaudited |
-| PositionManager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x7c5f5a...429bdc` | ⚠️ Unaudited |
-| PreCcaBonusClaim | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | 2 deployments: unichain `0x37fcae...5f9332`; unichain `0xbead51...3c670d` | ⚠️ Unaudited |
-| RewardCenter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0xee8e37...62c0c3` | ⚠️ Unaudited |
-| SponsorAccount | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0x8f9fa5...f02c86` | ⚠️ Unaudited |
-| SponsorCenter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0x94e431...30b310` | ⚠️ Unaudited |
-| Spot | unknown | project_anchor | own_supporting | 0 | unichain | unit-378637 | `0x88c9ff...1cdacc` | ⚠️ Unaudited |
-| Spot | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x88c9ff...1cdacc` | ⚠️ Unaudited |
-| TestToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0xf9a8f8...fae04a` | ⚠️ Unaudited |
-| Timelock | governance | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | 5 deployments: unichain `0x5a09c0...d9d13f`; unichain `0x825b15...23c40e`; unichain `0x96573d...f6f3eb`; unichain `0xc754bc...52d245`; unichain `0xf0e74f...510603` | ⚠️ Unaudited |
-| TruncGeoOracleMulti | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | 2 deployments: unichain `0x23ff89...0984ba`; unichain `0x269956...be054a` | ⚠️ Unaudited |
-| TruncGeoOracleMulti | operational_periphery | project_anchor | own_supporting | 0 | unichain | unit-378642 | `0xbe4f23...be6abf` | ⚠️ Unaudited |
+| PoolManager | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | 2 deployments: unichain `0x1f98400000000000000000000000000000000004`; base `0x498581ff718922c3f8e6a244956af099b2652b2b` | ⚠️ Unaudited |
+| AegisNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0xdb3a3d5a32d78b19da8417aeb1cda5e2778e718d` | ⚠️ Unaudited |
+| DynamicFeeManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | 2 deployments: unichain `0x16b40ca9b9366aba4cfdb3d6827491b66994d958`; unichain `0x4a6770f83059d0ee4ea1bdaaf0d3849deaa9429c` | ⚠️ Unaudited |
+| DynamicFeeManager | governance | project_anchor | own_supporting | 0 | unichain | unit-378643 | `0xd7deabab9ecd3bcb3b89ab0ce2c84c8565bb8d98` | ⚠️ Unaudited |
+| FullRangeLiquidityManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0x6da0c0a6153f3c161d7fb260b5f040d5530fe365` | ⚠️ Unaudited |
+| FullRangeLiquidityManager | governance | project_anchor | own_supporting | 0 | unichain | unit-378639 | `0xa7b3e2306a0b46dbde3b533c4e2c3be6a24352a3` | ⚠️ Unaudited |
+| PoolInitAndBindRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0xb3b7bc07597d20535e3850d34ec4363f8bfea779` | ⚠️ Unaudited |
+| PoolPolicyManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | 2 deployments: unichain `0x87cb5af674b546ec73e462221e8cb5e5ff7e3e06`; unichain `0xa16eb8f1e03696ca0b4acb0085918e2ed77d3006` | ⚠️ Unaudited |
+| PoolPolicyManager | core_logic | project_anchor | own_supporting | 0 | unichain | unit-378644 | `0xe072d3c7567d4b326ddde0f77062e6758aec0ee7` | ⚠️ Unaudited |
+| PositionManager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | unichain | n/a | `0x4529a01c7a0410167c5740c487a8de60232617bf` | ⚠️ Unaudited |
+| PositionManager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x7c5f5a4bbd8fd63184577525326123b519429bdc` | ⚠️ Unaudited |
+| PreCcaBonusClaim | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | 2 deployments: unichain `0x37fcaead6f62bdead5cb2c17f2528fb4965f9332`; unichain `0xbead51ca64fbb18bdfc17dc4bd46ad04473c670d` | ⚠️ Unaudited |
+| RewardCenter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0xee8e373c05a6876d43a8a054a47b16345662c0c3` | ⚠️ Unaudited |
+| SponsorAccount | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0x8f9fa5ef0697276c56f51ec3b20da18b5cf02c86` | ⚠️ Unaudited |
+| SponsorCenter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0x94e43144067e93f778d29406110b2a6a8730b310` | ⚠️ Unaudited |
+| Spot | unknown | project_anchor | own_supporting | 0 | unichain | unit-378637 | `0x88c9ff9fc0b22cca42265d3f1d1c2c39e41cdacc` | ⚠️ Unaudited |
+| Spot | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x88c9ff9fc0b22cca42265d3f1d1c2c39e41cdacc` | ⚠️ Unaudited |
+| TestToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0xf9a8f837337118960d78e2d0de8dbe17acfae04a` | ⚠️ Unaudited |
+| Timelock | governance | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | 5 deployments: unichain `0x5a09c037eab964ce925ee88ab1facf8af6d9d13f`; unichain `0x825b158857d283deb3f0c6a5c52d79a65323c40e`; unichain `0x96573d7f83628d80ce2ff7cabe13e09afcf6f3eb`; unichain `0xc754bc22e9c3cbf899baf37e5e97bf42ff52d245`; unichain `0xf0e74f35a5c7e1b6a35877afe8ac2ace0c510603` | ⚠️ Unaudited |
+| TruncGeoOracleMulti | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | 2 deployments: unichain `0x23ff89455d190e2cff95a65d2ae01d3f170984ba`; unichain `0x2699565b992723113794679b02eff025bebe054a` | ⚠️ Unaudited |
+| TruncGeoOracleMulti | operational_periphery | project_anchor | own_supporting | 0 | unichain | unit-378642 | `0xbe4f23b9488300c532a5d9d8d11b0b8163be6abf` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -158,10 +158,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0x508bc0...ee7dc2` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0x53e02d...de6544` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0x9c66d0...223ad4` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xa0b0d2...af10cc` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0x508bc0586244a8641da341769f67d76dfcee7dc2` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0x53e02d0351823dad1898675fc018d657a4de6544` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0x9c66d0e50679f4997d3657be76e8e982d0223ad4` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xa0b0d2d00fd544d8e0887f1a3cedd6e24baf10cc` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -183,18 +183,18 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| drive.google.com/file/d/1vUWENoQsiQxDuex0WU6mZtwJVmE50Ddc/view | FullRangeLiquidityManager | own contract | FullRangeLiquidityManager (alternative) `0xa7b3e2...4352a3` — deployed 2025-10-21 20:39:17+03 — liveness: live (code_present_context)<br>FullRangeLiquidityManager (selected) `0xa7ce35...458a2c` — deployed 2025-06-08 19:12:32+03 — liveness: live (code_present_context) | deployment-date disambiguation: 2025-06-08 was 2d from audit; next candidate 137d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| drive.google.com/file/d/1vUWENoQsiQxDuex0WU6mZtwJVmE50Ddc/view | Spot | own contract | Spot (alternative) `0x88c9ff...1cdacc` — deployed 2025-10-21 20:39:17+03 — liveness: live (current_address_book_code)<br>Spot (selected) `0xa0b0d2...af10cc` — deployed 2025-06-08 19:12:32+03 — liveness: live (code_present_context) | deployment-date disambiguation: 2025-06-08 was 2d from audit; next candidate 137d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| drive.google.com/file/d/1vUWENoQsiQxDuex0WU6mZtwJVmE50Ddc/view | PoolPolicyManager | own contract | PoolPolicyManager (selected) `0xaaf29f...97cdda` — deployed 2025-06-08 19:12:32+03 — liveness: live (code_present_context)<br>PoolPolicyManager (alternative) `0xe072d3...ec0ee7` — deployed 2025-10-21 20:39:16+03 — liveness: live (code_present_context) | deployment-date disambiguation: 2025-06-08 was 2d from audit; next candidate 137d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| drive.google.com/file/d/1vUWENoQsiQxDuex0WU6mZtwJVmE50Ddc/view | DynamicFeeManager | own contract | DynamicFeeManager (alternative) `0xd7deab...bb8d98` — deployed 2025-10-21 20:39:16+03 — liveness: live (code_present_context)<br>DynamicFeeManager (selected) `0xe67686...18a028` — deployed 2025-06-08 19:12:32+03 — liveness: live (code_present_context) | deployment-date disambiguation: 2025-06-08 was 2d from audit; next candidate 137d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| drive.google.com/file/d/1vUWENoQsiQxDuex0WU6mZtwJVmE50Ddc/view | TruncGeoOracleMulti | own contract | TruncGeoOracleMulti (selected) `0x22e086...8facb5` — deployed 2025-06-08 19:12:32+03 — liveness: live (current_address_book_code)<br>TruncGeoOracleMulti (alternative) `0xbe4f23...be6abf` — deployed 2025-10-21 20:39:16+03 — liveness: live (code_present_context) | deployment-date disambiguation: 2025-06-08 was 2d from audit; next candidate 137d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| drive.google.com/file/d/1vUWENoQsiQxDuex0WU6mZtwJVmE50Ddc/view | FullRangeLiquidityManager | own contract | FullRangeLiquidityManager (alternative) `0xa7b3e2306a0b46dbde3b533c4e2c3be6a24352a3` — deployed 2025-10-21 20:39:17+03 — liveness: live (code_present_context)<br>FullRangeLiquidityManager (selected) `0xa7ce35e886e58926ad0c149f4cc558e27d458a2c` — deployed 2025-06-08 19:12:32+03 — liveness: live (code_present_context) | deployment-date disambiguation: 2025-06-08 was 2d from audit; next candidate 137d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| drive.google.com/file/d/1vUWENoQsiQxDuex0WU6mZtwJVmE50Ddc/view | Spot | own contract | Spot (alternative) `0x88c9ff9fc0b22cca42265d3f1d1c2c39e41cdacc` — deployed 2025-10-21 20:39:17+03 — liveness: live (current_address_book_code)<br>Spot (selected) `0xa0b0d2d00fd544d8e0887f1a3cedd6e24baf10cc` — deployed 2025-06-08 19:12:32+03 — liveness: live (code_present_context) | deployment-date disambiguation: 2025-06-08 was 2d from audit; next candidate 137d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| drive.google.com/file/d/1vUWENoQsiQxDuex0WU6mZtwJVmE50Ddc/view | PoolPolicyManager | own contract | PoolPolicyManager (selected) `0xaaf29f2c9516062dc43c4465ef6d43ce8397cdda` — deployed 2025-06-08 19:12:32+03 — liveness: live (code_present_context)<br>PoolPolicyManager (alternative) `0xe072d3c7567d4b326ddde0f77062e6758aec0ee7` — deployed 2025-10-21 20:39:16+03 — liveness: live (code_present_context) | deployment-date disambiguation: 2025-06-08 was 2d from audit; next candidate 137d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| drive.google.com/file/d/1vUWENoQsiQxDuex0WU6mZtwJVmE50Ddc/view | DynamicFeeManager | own contract | DynamicFeeManager (alternative) `0xd7deabab9ecd3bcb3b89ab0ce2c84c8565bb8d98` — deployed 2025-10-21 20:39:16+03 — liveness: live (code_present_context)<br>DynamicFeeManager (selected) `0xe6768629156d4b713e266b87502fbeccc218a028` — deployed 2025-06-08 19:12:32+03 — liveness: live (code_present_context) | deployment-date disambiguation: 2025-06-08 was 2d from audit; next candidate 137d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| drive.google.com/file/d/1vUWENoQsiQxDuex0WU6mZtwJVmE50Ddc/view | TruncGeoOracleMulti | own contract | TruncGeoOracleMulti (selected) `0x22e086c085fbda3214db238f8a930d22228facb5` — deployed 2025-06-08 19:12:32+03 — liveness: live (current_address_book_code)<br>TruncGeoOracleMulti (alternative) `0xbe4f23b9488300c532a5d9d8d11b0b8163be6abf` — deployed 2025-10-21 20:39:16+03 — liveness: live (code_present_context) | deployment-date disambiguation: 2025-06-08 was 2d from audit; next candidate 137d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | drive.google.com/file/d/1vUWENoQsiQxDuex0WU6mZtwJVmE50Ddc/view | TruncGeoOracle | unmatched — not counted | — | Mentioned in findings 3.2.5, 3.3.2 | no |
 | drive.google.com/file/d/1Lzfe49__CXGmBffFLmQ8-v7M6kSUfN8l/view | AegisEngine | unmatched — not counted | — | listed in scope and targets | no |
 | drive.google.com/file/d/1Lzfe49__CXGmBffFLmQ8-v7M6kSUfN8l/view | AegisRouterV1 | unmatched — not counted | — | listed in scope and targets | no |
 | drive.google.com/file/d/1Lzfe49__CXGmBffFLmQ8-v7M6kSUfN8l/view | AegisHook | unmatched — not counted | — | listed in scope and targets | no |
 | drive.google.com/file/d/1Lzfe49__CXGmBffFLmQ8-v7M6kSUfN8l/view | LimitOrderManager | unmatched — not counted | — | listed in scope and targets | no |
 | drive.google.com/file/d/1Lzfe49__CXGmBffFLmQ8-v7M6kSUfN8l/view | OracleManager | unmatched — not counted | — | listed in scope and targets | no |
-| drive.google.com/file/d/1Lzfe49__CXGmBffFLmQ8-v7M6kSUfN8l/view | DynamicFeeManager | ambiguous — not counted | DynamicFeeManager (alternative) `0xd7deab...bb8d98` — deployed 2025-10-21 20:39:16+03 — liveness: live (code_present_context)<br>DynamicFeeManager (alternative) `0xe67686...18a028` — deployed 2025-06-08 19:12:32+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| drive.google.com/file/d/1Lzfe49__CXGmBffFLmQ8-v7M6kSUfN8l/view | DynamicFeeManager | ambiguous — not counted | DynamicFeeManager (alternative) `0xd7deabab9ecd3bcb3b89ab0ce2c84c8565bb8d98` — deployed 2025-10-21 20:39:16+03 — liveness: live (code_present_context)<br>DynamicFeeManager (alternative) `0xe6768629156d4b713e266b87502fbeccc218a028` — deployed 2025-06-08 19:12:32+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | drive.google.com/file/d/1Lzfe49__CXGmBffFLmQ8-v7M6kSUfN8l/view | VaultRegistry | unmatched — not counted | — | listed in scope and targets | no |
 | drive.google.com/file/d/1Lzfe49__CXGmBffFLmQ8-v7M6kSUfN8l/view | CollateralFloorMath | unmatched — not counted | — | mentioned in detailed findings | no |
 | drive.google.com/file/d/1Lzfe49__CXGmBffFLmQ8-v7M6kSUfN8l/view | TickSetCodec | unmatched — not counted | — | mentioned in detailed findings | no |
@@ -210,11 +210,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| unichain | `0xd7deab...bb8d98` | DynamicFeeManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| unichain | `0xa7b3e2...4352a3` | FullRangeLiquidityManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| unichain | `0xe072d3...ec0ee7` | PoolPolicyManager | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| unichain | `0x88c9ff...1cdacc` | Spot | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| unichain | `0xbe4f23...be6abf` | TruncGeoOracleMulti | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| unichain | `0xd7deabab9ecd3bcb3b89ab0ce2c84c8565bb8d98` | DynamicFeeManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| unichain | `0xa7b3e2306a0b46dbde3b533c4e2c3be6a24352a3` | FullRangeLiquidityManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| unichain | `0xe072d3c7567d4b326ddde0f77062e6758aec0ee7` | PoolPolicyManager | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| unichain | `0x88c9ff9fc0b22cca42265d3f1d1c2c39e41cdacc` | Spot | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| unichain | `0xbe4f23b9488300c532a5d9d8d11b0b8163be6abf` | TruncGeoOracleMulti | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

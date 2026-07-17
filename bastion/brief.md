@@ -62,7 +62,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| EvmErc20 | unknown | aurora | n/a | [`0x9f1f93...5ccef0`](./contracts/aurora-1313161554/0x9f1f933c660a1dc856f0e0fe058435879c5ccef0/) | ⚠️ Unaudited |
+| EvmErc20 | unknown | aurora | n/a | [`0x9f1f933c660a1dc856f0e0fe058435879c5ccef0`](./contracts/aurora-1313161554/0x9f1f933c660a1dc856f0e0fe058435879c5ccef0/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,7 +95,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| aurora | [`0x9f1f93...5ccef0`](./contracts/aurora-1313161554/0x9f1f933c660a1dc856f0e0fe058435879c5ccef0/) | EvmErc20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| aurora | [`0x9f1f933c660a1dc856f0e0fe058435879c5ccef0`](./contracts/aurora-1313161554/0x9f1f933c660a1dc856f0e0fe058435879c5ccef0/) | EvmErc20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

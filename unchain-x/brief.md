@@ -59,23 +59,23 @@ The protocol comprises 8 functional families. Its contracts share 8 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UNXToken | token | bsc | n/a | [`0x4f0572...bdea6f`](./contracts/bsc-56/0x4f0572ca0bf96f5ae17b7062d97cea3f35bdea6f/) | ✅ Audited |
+| UNXToken | token | bsc | n/a | [`0x4f0572ca0bf96f5ae17b7062d97cea3f35bdea6f`](./contracts/bsc-56/0x4f0572ca0bf96f5ae17b7062d97cea3f35bdea6f/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (11)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| GenesisX | unknown | bsc | n/a | [`0xba2d44...60ecc6`](./contracts/bsc-56/0xba2d44ebf3a6a2543c7825e94f673bde0960ecc6/) | ⚠️ Unaudited |
-| HalvingProtocol | unknown | bsc | n/a | [`0xa6820d...c05db8`](./contracts/bsc-56/0xa6820deaeb44c70bf42dbe0b561d399297c05db8/) | ⚠️ Unaudited |
-| LaunchpadStakingV2 | unknown | bsc | n/a | 5 deployments: bsc [`0x057d5b...0fa015`](./contracts/bsc-56/0x057d5bf977ce40a7c1c63b1b58609120350fa015/); bsc `0x0ea8f9...ce0550`; bsc `0x8d2f48...0ae245`; bsc `0xd7d98c...1a1240`; bsc `0xf28961...f911e8` | ⚠️ Unaudited |
-| NonfungiblePositionManager | governance | bsc | n/a | [`0x854ec7...2703de`](./contracts/bsc-56/0x854ec70b78933fab3f95e5bc95d7af72b62703de/) | ⚠️ Unaudited |
-| QuoterV2 | periphery | bsc | n/a | [`0x03dd4e...0811f5`](./contracts/bsc-56/0x03dd4ebe7120d05d7cf75cbdf7a5f375e40811f5/) | ⚠️ Unaudited |
-| SwapRouter | adapter | bsc | n/a | [`0xc9d96c...061f7f`](./contracts/bsc-56/0xc9d96c797fb1ae135d56ccb96eae7f70be061f7f/) | ⚠️ Unaudited |
-| UNXFaucet | unknown | bsc | n/a | [`0xdc0b82...28a879`](./contracts/bsc-56/0xdc0b82969e27d7d44be0bcf8a3839ad7eb28a879/) | ⚠️ Unaudited |
-| UNXwapV3Factory | registry | bsc | n/a | [`0x82fa7b...d8d40c`](./contracts/bsc-56/0x82fa7b2ce2a76c7888a9d3b0a81e0b2ecfd8d40c/) | ⚠️ Unaudited |
-| UNXwapV3LmFactory | registry | bsc | n/a | [`0xb4339c...832aed`](./contracts/bsc-56/0xb4339c24f4705bf3e3049ebcfb2ba2ae43832aed/) | ⚠️ Unaudited |
-| UNXwapV3Manager | governance | bsc | n/a | [`0xb50024...a38d18`](./contracts/bsc-56/0xb50024ccb6fdeeb7a1bfb186184936a78ea38d18/) | ⚠️ Unaudited |
-| XPlosion | unknown | bsc | n/a | [`0x9e309f...88d650`](./contracts/bsc-56/0x9e309f126882f467f28b67d5cc6b746a4988d650/) | ⚠️ Unaudited |
+| GenesisX | unknown | bsc | n/a | [`0xba2d44ebf3a6a2543c7825e94f673bde0960ecc6`](./contracts/bsc-56/0xba2d44ebf3a6a2543c7825e94f673bde0960ecc6/) | ⚠️ Unaudited |
+| HalvingProtocol | unknown | bsc | n/a | [`0xa6820deaeb44c70bf42dbe0b561d399297c05db8`](./contracts/bsc-56/0xa6820deaeb44c70bf42dbe0b561d399297c05db8/) | ⚠️ Unaudited |
+| LaunchpadStakingV2 | unknown | bsc | n/a | 5 deployments: bsc [`0x057d5bf977ce40a7c1c63b1b58609120350fa015`](./contracts/bsc-56/0x057d5bf977ce40a7c1c63b1b58609120350fa015/); bsc `0x0ea8f9b3eff635c7e5791bff899055e4f3ce0550`; bsc `0x8d2f485bffc182278c7ca49f1629d5d5420ae245`; bsc `0xd7d98c9cf0a3b0b09e5b2848b9250101f21a1240`; bsc `0xf28961b972163fad8f220a9df86014e74df911e8` | ⚠️ Unaudited |
+| NonfungiblePositionManager | governance | bsc | n/a | [`0x854ec70b78933fab3f95e5bc95d7af72b62703de`](./contracts/bsc-56/0x854ec70b78933fab3f95e5bc95d7af72b62703de/) | ⚠️ Unaudited |
+| QuoterV2 | periphery | bsc | n/a | [`0x03dd4ebe7120d05d7cf75cbdf7a5f375e40811f5`](./contracts/bsc-56/0x03dd4ebe7120d05d7cf75cbdf7a5f375e40811f5/) | ⚠️ Unaudited |
+| SwapRouter | adapter | bsc | n/a | [`0xc9d96c797fb1ae135d56ccb96eae7f70be061f7f`](./contracts/bsc-56/0xc9d96c797fb1ae135d56ccb96eae7f70be061f7f/) | ⚠️ Unaudited |
+| UNXFaucet | unknown | bsc | n/a | [`0xdc0b82969e27d7d44be0bcf8a3839ad7eb28a879`](./contracts/bsc-56/0xdc0b82969e27d7d44be0bcf8a3839ad7eb28a879/) | ⚠️ Unaudited |
+| UNXwapV3Factory | registry | bsc | n/a | [`0x82fa7b2ce2a76c7888a9d3b0a81e0b2ecfd8d40c`](./contracts/bsc-56/0x82fa7b2ce2a76c7888a9d3b0a81e0b2ecfd8d40c/) | ⚠️ Unaudited |
+| UNXwapV3LmFactory | registry | bsc | n/a | [`0xb4339c24f4705bf3e3049ebcfb2ba2ae43832aed`](./contracts/bsc-56/0xb4339c24f4705bf3e3049ebcfb2ba2ae43832aed/) | ⚠️ Unaudited |
+| UNXwapV3Manager | governance | bsc | n/a | [`0xb50024ccb6fdeeb7a1bfb186184936a78ea38d18`](./contracts/bsc-56/0xb50024ccb6fdeeb7a1bfb186184936a78ea38d18/) | ⚠️ Unaudited |
+| XPlosion | unknown | bsc | n/a | [`0x9e309f126882f467f28b67d5cc6b746a4988d650`](./contracts/bsc-56/0x9e309f126882f467f28b67d5cc6b746a4988d650/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,30 +95,30 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0x011d89...c3ce8f` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x0371a8...d77481` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x04e395...d93edf` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x25f544...ce78e5` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x267625...d0a263` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x2cd479...47041b` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x39ad71...f71671` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x3ff22e...500e9c` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x46c18f...d4fe8a` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x47059c...53c56a` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x5c403a...b82bc4` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x621f23...a11f65` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x649f0b...0b034b` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x64ad55...c27f96` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x94b1b8...f655ad` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x95b09e...13e7d4` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xa060db...466689` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xafb510...b56753` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xb55590...1b9c8f` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xbc696b...e304de` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xcc0073...6e6c17` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xd4c5ec...31a7e6` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xdf8a07...342889` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xe31f7f...8ae354` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x011d89e71371cfddf0712465940e31ea4ac3ce8f` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x0371a823887c8c5d7713379b62b4dc4bd0d77481` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x04e395e78e64d862181c7091c6c2d6cfced93edf` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x25f544b99df79f224abbda470ee0dfb9ffce78e5` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x267625e06d0cba36912a14e59ce8df4391d0a263` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x2cd4792eaa206c012f4b8a4fee95ffd48f47041b` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x39ad718691f33208506b13b9ffb51200a6f71671` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x3ff22e8c65ed30449967158570ee85715a500e9c` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x46c18ffef3b1447af565ba138f6c7d00dbd4fe8a` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x47059c93c0925405672bffb6e1c1f9083253c56a` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x5c403a71395b7e4c83e201e284189b4f0fb82bc4` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x621f2311f8ebea74e35b124e6db770873ba11f65` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x649f0b5a0bd9401b1e7cc35faaa6ccf4a50b034b` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x64ad55c44f17c7e75de4fb16e5bce6db0ac27f96` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x94b1b8bb81a80601f109d9bb3190c535f4f655ad` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x95b09e1a1875c410364731029957902daa13e7d4` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xa060dbb24147462ae78cfb8f3a60a57469466689` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xafb510a9ea216702de4ff813361c632ea3b56753` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xb55590eed0d4b01e374009f5003cab63721b9c8f` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xbc696bae93eba891c6ee33602b5f15f2a9e304de` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xcc0073b49df2efdd6290379c83b60fd3146e6c17` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xd4c5ec9faaaa03b128fbc20b9c0a18145e31a7e6` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xdf8a076072ae3def389b10d3b7804e961a342889` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xe31f7fad3ea26ae126dedea6b91d3a50d08ae354` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -133,17 +133,17 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0xba2d44...60ecc6`](./contracts/bsc-56/0xba2d44ebf3a6a2543c7825e94f673bde0960ecc6/) | GenesisX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xa6820d...c05db8`](./contracts/bsc-56/0xa6820deaeb44c70bf42dbe0b561d399297c05db8/) | HalvingProtocol | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x057d5b...0fa015`](./contracts/bsc-56/0x057d5bf977ce40a7c1c63b1b58609120350fa015/) | LaunchpadStakingV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x854ec7...2703de`](./contracts/bsc-56/0x854ec70b78933fab3f95e5bc95d7af72b62703de/) | NonfungiblePositionManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x03dd4e...0811f5`](./contracts/bsc-56/0x03dd4ebe7120d05d7cf75cbdf7a5f375e40811f5/) | QuoterV2 | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xc9d96c...061f7f`](./contracts/bsc-56/0xc9d96c797fb1ae135d56ccb96eae7f70be061f7f/) | SwapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xdc0b82...28a879`](./contracts/bsc-56/0xdc0b82969e27d7d44be0bcf8a3839ad7eb28a879/) | UNXFaucet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x82fa7b...d8d40c`](./contracts/bsc-56/0x82fa7b2ce2a76c7888a9d3b0a81e0b2ecfd8d40c/) | UNXwapV3Factory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xb4339c...832aed`](./contracts/bsc-56/0xb4339c24f4705bf3e3049ebcfb2ba2ae43832aed/) | UNXwapV3LmFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xb50024...a38d18`](./contracts/bsc-56/0xb50024ccb6fdeeb7a1bfb186184936a78ea38d18/) | UNXwapV3Manager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x9e309f...88d650`](./contracts/bsc-56/0x9e309f126882f467f28b67d5cc6b746a4988d650/) | XPlosion | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xba2d44ebf3a6a2543c7825e94f673bde0960ecc6`](./contracts/bsc-56/0xba2d44ebf3a6a2543c7825e94f673bde0960ecc6/) | GenesisX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xa6820deaeb44c70bf42dbe0b561d399297c05db8`](./contracts/bsc-56/0xa6820deaeb44c70bf42dbe0b561d399297c05db8/) | HalvingProtocol | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x057d5bf977ce40a7c1c63b1b58609120350fa015`](./contracts/bsc-56/0x057d5bf977ce40a7c1c63b1b58609120350fa015/) | LaunchpadStakingV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x854ec70b78933fab3f95e5bc95d7af72b62703de`](./contracts/bsc-56/0x854ec70b78933fab3f95e5bc95d7af72b62703de/) | NonfungiblePositionManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x03dd4ebe7120d05d7cf75cbdf7a5f375e40811f5`](./contracts/bsc-56/0x03dd4ebe7120d05d7cf75cbdf7a5f375e40811f5/) | QuoterV2 | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xc9d96c797fb1ae135d56ccb96eae7f70be061f7f`](./contracts/bsc-56/0xc9d96c797fb1ae135d56ccb96eae7f70be061f7f/) | SwapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xdc0b82969e27d7d44be0bcf8a3839ad7eb28a879`](./contracts/bsc-56/0xdc0b82969e27d7d44be0bcf8a3839ad7eb28a879/) | UNXFaucet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x82fa7b2ce2a76c7888a9d3b0a81e0b2ecfd8d40c`](./contracts/bsc-56/0x82fa7b2ce2a76c7888a9d3b0a81e0b2ecfd8d40c/) | UNXwapV3Factory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xb4339c24f4705bf3e3049ebcfb2ba2ae43832aed`](./contracts/bsc-56/0xb4339c24f4705bf3e3049ebcfb2ba2ae43832aed/) | UNXwapV3LmFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xb50024ccb6fdeeb7a1bfb186184936a78ea38d18`](./contracts/bsc-56/0xb50024ccb6fdeeb7a1bfb186184936a78ea38d18/) | UNXwapV3Manager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x9e309f126882f467f28b67d5cc6b746a4988d650`](./contracts/bsc-56/0x9e309f126882f467f28b67d5cc6b746a4988d650/) | XPlosion | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

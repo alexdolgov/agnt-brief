@@ -61,10 +61,10 @@ The protocol forms a single structural family (Core Logic) of 3 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Multicall2 | unknown | arbitrum | n/a | [`0xc5cfad...39b023`](./contracts/arbitrum-42161/0xc5cfada84e902ad92dd40194f0883ad49639b023/) | ⚠️ Unaudited |
-| Multicall2Arbitrum | unknown | arbitrum | n/a | [`0x5b5cfe...003858`](./contracts/arbitrum-42161/0x5b5cfe992adac0c9d48e05854b2d91c73a003858/) | ⚠️ Unaudited |
-| UtilityToken | unknown | arbitrum | n/a | [`0x1dd6b5...24636c`](./contracts/arbitrum-42161/0x1dd6b5f9281c6b4f043c02a83a46c2772024636c/) | ⚠️ Unaudited |
-| Vyper_contract | unknown | arbitrum | n/a | [`0x0100fb...44f5c9`](./contracts/arbitrum-42161/0x0100fbf414071977b19fc38e6fc7c32fe444f5c9/) | ⚠️ Unaudited |
+| Multicall2 | unknown | arbitrum | n/a | [`0xc5cfada84e902ad92dd40194f0883ad49639b023`](./contracts/arbitrum-42161/0xc5cfada84e902ad92dd40194f0883ad49639b023/) | ⚠️ Unaudited |
+| Multicall2Arbitrum | unknown | arbitrum | n/a | [`0x5b5cfe992adac0c9d48e05854b2d91c73a003858`](./contracts/arbitrum-42161/0x5b5cfe992adac0c9d48e05854b2d91c73a003858/) | ⚠️ Unaudited |
+| UtilityToken | unknown | arbitrum | n/a | [`0x1dd6b5f9281c6b4f043c02a83a46c2772024636c`](./contracts/arbitrum-42161/0x1dd6b5f9281c6b4f043c02a83a46c2772024636c/) | ⚠️ Unaudited |
+| Vyper_contract | unknown | arbitrum | n/a | [`0x0100fbf414071977b19fc38e6fc7c32fe444f5c9`](./contracts/arbitrum-42161/0x0100fbf414071977b19fc38e6fc7c32fe444f5c9/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -96,9 +96,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | [`0x5b5cfe...003858`](./contracts/arbitrum-42161/0x5b5cfe992adac0c9d48e05854b2d91c73a003858/) | Multicall2Arbitrum | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x1dd6b5...24636c`](./contracts/arbitrum-42161/0x1dd6b5f9281c6b4f043c02a83a46c2772024636c/) | UtilityToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x0100fb...44f5c9`](./contracts/arbitrum-42161/0x0100fbf414071977b19fc38e6fc7c32fe444f5c9/) | Vyper_contract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x5b5cfe992adac0c9d48e05854b2d91c73a003858`](./contracts/arbitrum-42161/0x5b5cfe992adac0c9d48e05854b2d91c73a003858/) | Multicall2Arbitrum | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x1dd6b5f9281c6b4f043c02a83a46c2772024636c`](./contracts/arbitrum-42161/0x1dd6b5f9281c6b4f043c02a83a46c2772024636c/) | UtilityToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x0100fbf414071977b19fc38e6fc7c32fe444f5c9`](./contracts/arbitrum-42161/0x0100fbf414071977b19fc38e6fc7c32fe444f5c9/) | Vyper_contract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

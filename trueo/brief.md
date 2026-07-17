@@ -72,40 +72,40 @@ Total inherited audits: 16. Inherited coverage reflects forked/shared code audit
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| PoolManager | core_logic | base | n/a | [`0x498581...652b2b`](./contracts/base-8453/0x498581ff718922c3f8e6a244956af099b2652b2b/) | ✅ Audited |
-| PositionManager | governance | base | n/a | [`0x7c5f5a...429bdc`](./contracts/base-8453/0x7c5f5a4bbd8fd63184577525326123b519429bdc/) | ✅ Audited |
+| PoolManager | core_logic | base | n/a | [`0x498581ff718922c3f8e6a244956af099b2652b2b`](./contracts/base-8453/0x498581ff718922c3f8e6a244956af099b2652b2b/) | ✅ Audited |
+| PositionManager | governance | base | n/a | [`0x7c5f5a4bbd8fd63184577525326123b519429bdc`](./contracts/base-8453/0x7c5f5a4bbd8fd63184577525326123b519429bdc/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (27)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| FeeCollector | unknown | base | n/a | [`0x39339e...755d9d`](./contracts/base-8453/0x39339e149c2d916aa899bf73d2debb15f4755d9d/) | ⚠️ Unaudited |
-| NonfungiblePositionManager | governance | base | n/a | [`0x03a520...ed34f1`](./contracts/base-8453/0x03a520b32c04bf3beef7beb72e919cf822ed34f1/) | ⚠️ Unaudited |
-| OracleBonds | operational_periphery | base | n/a | 2 deployments: base [`0x118c2d...13f63e`](./contracts/base-8453/0x118c2d8bec04696a2f13124213bac72d0e13f63e/); base `0x388993...91a9c0` | ⚠️ Unaudited |
-| OracleCouncil | operational_periphery | base | n/a | 2 deployments: base [`0x87bc36...7992ab`](./contracts/base-8453/0x87bc36ead32d5219e9cddf9f92d2077ca27992ab/); base `0xb8e809...81c450` | ⚠️ Unaudited |
-| OrderManager | governance | base | n/a | [`0x8e5e63...5e3da7`](./contracts/base-8453/0x8e5e63f69bf7ef2a24f5247c2bfc3946b95e3da7/) | ⚠️ Unaudited |
-| Permit2 | unknown | base | n/a | [`0x000000...c78ba3`](./contracts/base-8453/0x000000000022d473030f116ddee9f6b43ac78ba3/) | ⚠️ Unaudited |
-| StakingRewards | unknown | base | n/a | 2 deployments: base [`0x1a4062...c035ed`](./contracts/base-8453/0x1a40621c54330940b081f925aa027458a4c035ed/); base `0x688f5b...8af014` | ⚠️ Unaudited |
-| SwapRouter02 | adapter | base | n/a | [`0x262666...41e481`](./contracts/base-8453/0x2626664c2603336e57b271c5c0b26f421741e481/) | ⚠️ Unaudited |
-| SweepStrategy | core_logic | base | n/a | [`0xeb3151...fab215`](./contracts/base-8453/0xeb3151902c63af869977f0ba6baaec476ffab215/) | ⚠️ Unaudited |
-| TimelockController | governance | base | n/a | 2 deployments: base [`0x896371...f6fd04`](./contracts/base-8453/0x8963712bc91ae8c64d96293ed9a1157344f6fd04/); base `0xc0a7e6...c4959a` | ⚠️ Unaudited |
-| TrueToken | token | base | n/a | [`0x21cfcf...6eb7ab`](./contracts/base-8453/0x21cfcfc3d8f98fc728f48341d10ad8283f6eb7ab/) | ⚠️ Unaudited |
-| TruthAttesterSBT | unknown | base | n/a | [`0x43a2ee...c97bc4`](./contracts/base-8453/0x43a2ee74d28612c0a9ef90884bb47cf445c97bc4/) | ⚠️ Unaudited |
-| TruthMarket | unknown | base | n/a | 2 deployments: base [`0xb7b53c...eef3d1`](./contracts/base-8453/0xb7b53c6b219a29afd8f2ebbed1ea2b8867eef3d1/); base `0xd51191...7720e2` | ⚠️ Unaudited |
-| TruthMarketHook | unknown | base | n/a | [`0x1cfead...1740c4`](./contracts/base-8453/0x1cfead8e66cebc5e51093dfd247ad34f841740c4/) | ⚠️ Unaudited |
-| TruthMarketLPManager | governance | base | n/a | 3 deployments: base [`0x05ef8b...6398fb`](./contracts/base-8453/0x05ef8b05398a8479739658e47428076d456398fb/); base `0x68ff20...06d4b9`; base `0xa0be61...c79f89` | ⚠️ Unaudited |
-| TruthMarketManager | governance | base | n/a | 4 deployments: base [`0x21d652...bbe7b5`](./contracts/base-8453/0x21d652af137bfb34d16a4103f3b75e1e4fbbe7b5/); base `0x7bdae0...275999`; base `0x83eaed...eeae2d`; base `0x8ddf40...d6dbe6` | ⚠️ Unaudited |
-| TruthMarketSwapValidator | unknown | base | n/a | [`0x55e26c...74dd38`](./contracts/base-8453/0x55e26cf92b924c069db4d8da7b0b36154374dd38/) | ⚠️ Unaudited |
-| TruthMarketV2 | unknown | base | n/a | 3 deployments: base [`0x2ca897...3e3409`](./contracts/base-8453/0x2ca897f98f6a45729968f0057f1fbf88db3e3409/); base `0x74ffbb...15b58c`; base `0x8e40e1...aa43da` | ⚠️ Unaudited |
-| TruthMarketV2Launcher | unknown | base | n/a | [`0x7bb366...156b73`](./contracts/base-8453/0x7bb366c772869be102cccf69cce11af9c5156b73/) | ⚠️ Unaudited |
-| TruthMarketV2LPManager | governance | base | n/a | 2 deployments: base [`0x1a6008...833443`](./contracts/base-8453/0x1a6008a93cad0dd562ac071107b23ed4b9833443/); base `0x42db46...2bb04c` | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | base | n/a | [`0x1fae24...352d77`](./contracts/base-8453/0x1fae246b1b2d0ce47126bbb109850da355352d77/) | ⚠️ Unaudited |
-| UniswapV3Factory | registry | base | n/a | [`0x33128a...f6fdfd`](./contracts/base-8453/0x33128a8fc17869897dce68ed026d694621f6fdfd/) | ⚠️ Unaudited |
-| UniswapV3Staker | core_logic | base | n/a | [`0x42be4d...25c3c1`](./contracts/base-8453/0x42be4d6527829fefa1493e1fb9f3676d2425c3c1/) | ⚠️ Unaudited |
-| UniversalRouter | adapter | base | n/a | [`0x6ff569...299b43`](./contracts/base-8453/0x6ff5693b99212da76ad316178a184ab56d299b43/) | ⚠️ Unaudited |
-| V3SwapStrategy | core_logic | base | n/a | [`0x339619...fb3b65`](./contracts/base-8453/0x33961932a59d43d80b260eb866056fbe0afb3b65/) | ⚠️ Unaudited |
-| V4SwapStrategy | core_logic | base | n/a | [`0x3f3da9...f7927e`](./contracts/base-8453/0x3f3da9e841fbcb5abb2a097cbb922e3ef7f7927e/) | ⚠️ Unaudited |
-| Yearn V3 Vault | core_logic | base | n/a | [`0xb13cf1...1def4b`](./contracts/base-8453/0xb13cf163d916917d9cd6e836905ca5f12a1def4b/) | ⚠️ Unaudited |
+| FeeCollector | unknown | base | n/a | [`0x39339e149c2d916aa899bf73d2debb15f4755d9d`](./contracts/base-8453/0x39339e149c2d916aa899bf73d2debb15f4755d9d/) | ⚠️ Unaudited |
+| NonfungiblePositionManager | governance | base | n/a | [`0x03a520b32c04bf3beef7beb72e919cf822ed34f1`](./contracts/base-8453/0x03a520b32c04bf3beef7beb72e919cf822ed34f1/) | ⚠️ Unaudited |
+| OracleBonds | operational_periphery | base | n/a | 2 deployments: base [`0x118c2d8bec04696a2f13124213bac72d0e13f63e`](./contracts/base-8453/0x118c2d8bec04696a2f13124213bac72d0e13f63e/); base `0x3889938446859e5dc9091ab0aee0225eac91a9c0` | ⚠️ Unaudited |
+| OracleCouncil | operational_periphery | base | n/a | 2 deployments: base [`0x87bc36ead32d5219e9cddf9f92d2077ca27992ab`](./contracts/base-8453/0x87bc36ead32d5219e9cddf9f92d2077ca27992ab/); base `0xb8e8098bc5434f75b75601a90e52aabb3c81c450` | ⚠️ Unaudited |
+| OrderManager | governance | base | n/a | [`0x8e5e63f69bf7ef2a24f5247c2bfc3946b95e3da7`](./contracts/base-8453/0x8e5e63f69bf7ef2a24f5247c2bfc3946b95e3da7/) | ⚠️ Unaudited |
+| Permit2 | unknown | base | n/a | [`0x000000000022d473030f116ddee9f6b43ac78ba3`](./contracts/base-8453/0x000000000022d473030f116ddee9f6b43ac78ba3/) | ⚠️ Unaudited |
+| StakingRewards | unknown | base | n/a | 2 deployments: base [`0x1a40621c54330940b081f925aa027458a4c035ed`](./contracts/base-8453/0x1a40621c54330940b081f925aa027458a4c035ed/); base `0x688f5b490edb7f466a89a6db4fb30829558af014` | ⚠️ Unaudited |
+| SwapRouter02 | adapter | base | n/a | [`0x2626664c2603336e57b271c5c0b26f421741e481`](./contracts/base-8453/0x2626664c2603336e57b271c5c0b26f421741e481/) | ⚠️ Unaudited |
+| SweepStrategy | core_logic | base | n/a | [`0xeb3151902c63af869977f0ba6baaec476ffab215`](./contracts/base-8453/0xeb3151902c63af869977f0ba6baaec476ffab215/) | ⚠️ Unaudited |
+| TimelockController | governance | base | n/a | 2 deployments: base [`0x8963712bc91ae8c64d96293ed9a1157344f6fd04`](./contracts/base-8453/0x8963712bc91ae8c64d96293ed9a1157344f6fd04/); base `0xc0a7e697a16d3d4a0736d406da5f8a9dc7c4959a` | ⚠️ Unaudited |
+| TrueToken | token | base | n/a | [`0x21cfcfc3d8f98fc728f48341d10ad8283f6eb7ab`](./contracts/base-8453/0x21cfcfc3d8f98fc728f48341d10ad8283f6eb7ab/) | ⚠️ Unaudited |
+| TruthAttesterSBT | unknown | base | n/a | [`0x43a2ee74d28612c0a9ef90884bb47cf445c97bc4`](./contracts/base-8453/0x43a2ee74d28612c0a9ef90884bb47cf445c97bc4/) | ⚠️ Unaudited |
+| TruthMarket | unknown | base | n/a | 2 deployments: base [`0xb7b53c6b219a29afd8f2ebbed1ea2b8867eef3d1`](./contracts/base-8453/0xb7b53c6b219a29afd8f2ebbed1ea2b8867eef3d1/); base `0xd511918d3ab9813005ee44f76da3bbf1bc7720e2` | ⚠️ Unaudited |
+| TruthMarketHook | unknown | base | n/a | [`0x1cfead8e66cebc5e51093dfd247ad34f841740c4`](./contracts/base-8453/0x1cfead8e66cebc5e51093dfd247ad34f841740c4/) | ⚠️ Unaudited |
+| TruthMarketLPManager | governance | base | n/a | 3 deployments: base [`0x05ef8b05398a8479739658e47428076d456398fb`](./contracts/base-8453/0x05ef8b05398a8479739658e47428076d456398fb/); base `0x68ff207ab11c6b57b5eaf558838c9ea2bc06d4b9`; base `0xa0be614a5423ed76fddca142d6df3b4c8fc79f89` | ⚠️ Unaudited |
+| TruthMarketManager | governance | base | n/a | 4 deployments: base [`0x21d652af137bfb34d16a4103f3b75e1e4fbbe7b5`](./contracts/base-8453/0x21d652af137bfb34d16a4103f3b75e1e4fbbe7b5/); base `0x7bdae0709f2ecd07e176822b79206b0b67275999`; base `0x83eaed0f3122d9fe02dd4c574b94bc57c9eeae2d`; base `0x8ddf40edfb8325b4e1bdc17ac20e610718d6dbe6` | ⚠️ Unaudited |
+| TruthMarketSwapValidator | unknown | base | n/a | [`0x55e26cf92b924c069db4d8da7b0b36154374dd38`](./contracts/base-8453/0x55e26cf92b924c069db4d8da7b0b36154374dd38/) | ⚠️ Unaudited |
+| TruthMarketV2 | unknown | base | n/a | 3 deployments: base [`0x2ca897f98f6a45729968f0057f1fbf88db3e3409`](./contracts/base-8453/0x2ca897f98f6a45729968f0057f1fbf88db3e3409/); base `0x74ffbbe9e2d4895a2ea75ae1803a39c71715b58c`; base `0x8e40e16ebb1612b7592bac4f1c2df2ec68aa43da` | ⚠️ Unaudited |
+| TruthMarketV2Launcher | unknown | base | n/a | [`0x7bb366c772869be102cccf69cce11af9c5156b73`](./contracts/base-8453/0x7bb366c772869be102cccf69cce11af9c5156b73/) | ⚠️ Unaudited |
+| TruthMarketV2LPManager | governance | base | n/a | 2 deployments: base [`0x1a6008a93cad0dd562ac071107b23ed4b9833443`](./contracts/base-8453/0x1a6008a93cad0dd562ac071107b23ed4b9833443/); base `0x42db467b42f45128372a1be43d452819a82bb04c` | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | base | n/a | [`0x1fae246b1b2d0ce47126bbb109850da355352d77`](./contracts/base-8453/0x1fae246b1b2d0ce47126bbb109850da355352d77/) | ⚠️ Unaudited |
+| UniswapV3Factory | registry | base | n/a | [`0x33128a8fc17869897dce68ed026d694621f6fdfd`](./contracts/base-8453/0x33128a8fc17869897dce68ed026d694621f6fdfd/) | ⚠️ Unaudited |
+| UniswapV3Staker | core_logic | base | n/a | [`0x42be4d6527829fefa1493e1fb9f3676d2425c3c1`](./contracts/base-8453/0x42be4d6527829fefa1493e1fb9f3676d2425c3c1/) | ⚠️ Unaudited |
+| UniversalRouter | adapter | base | n/a | [`0x6ff5693b99212da76ad316178a184ab56d299b43`](./contracts/base-8453/0x6ff5693b99212da76ad316178a184ab56d299b43/) | ⚠️ Unaudited |
+| V3SwapStrategy | core_logic | base | n/a | [`0x33961932a59d43d80b260eb866056fbe0afb3b65`](./contracts/base-8453/0x33961932a59d43d80b260eb866056fbe0afb3b65/) | ⚠️ Unaudited |
+| V4SwapStrategy | core_logic | base | n/a | [`0x3f3da9e841fbcb5abb2a097cbb922e3ef7f7927e`](./contracts/base-8453/0x3f3da9e841fbcb5abb2a097cbb922e3ef7f7927e/) | ⚠️ Unaudited |
+| Yearn V3 Vault | core_logic | base | n/a | [`0xb13cf163d916917d9cd6e836905ca5f12a1def4b`](./contracts/base-8453/0xb13cf163d916917d9cd6e836905ca5f12a1def4b/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -125,7 +125,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | base | n/a | `0x3334d8...621fa9` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x3334d83e224af5ef9c2e7dda7c7c98efd9621fa9` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -154,27 +154,27 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x39339e...755d9d`](./contracts/base-8453/0x39339e149c2d916aa899bf73d2debb15f4755d9d/) | FeeCollector | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x03a520...ed34f1`](./contracts/base-8453/0x03a520b32c04bf3beef7beb72e919cf822ed34f1/) | NonfungiblePositionManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x118c2d...13f63e`](./contracts/base-8453/0x118c2d8bec04696a2f13124213bac72d0e13f63e/) | OracleBonds | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x87bc36...7992ab`](./contracts/base-8453/0x87bc36ead32d5219e9cddf9f92d2077ca27992ab/) | OracleCouncil | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x8e5e63...5e3da7`](./contracts/base-8453/0x8e5e63f69bf7ef2a24f5247c2bfc3946b95e3da7/) | OrderManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x1a4062...c035ed`](./contracts/base-8453/0x1a40621c54330940b081f925aa027458a4c035ed/) | StakingRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x262666...41e481`](./contracts/base-8453/0x2626664c2603336e57b271c5c0b26f421741e481/) | SwapRouter02 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xeb3151...fab215`](./contracts/base-8453/0xeb3151902c63af869977f0ba6baaec476ffab215/) | SweepStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x21cfcf...6eb7ab`](./contracts/base-8453/0x21cfcfc3d8f98fc728f48341d10ad8283f6eb7ab/) | TrueToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x43a2ee...c97bc4`](./contracts/base-8453/0x43a2ee74d28612c0a9ef90884bb47cf445c97bc4/) | TruthAttesterSBT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xb7b53c...eef3d1`](./contracts/base-8453/0xb7b53c6b219a29afd8f2ebbed1ea2b8867eef3d1/) | TruthMarket | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x1cfead...1740c4`](./contracts/base-8453/0x1cfead8e66cebc5e51093dfd247ad34f841740c4/) | TruthMarketHook | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x05ef8b...6398fb`](./contracts/base-8453/0x05ef8b05398a8479739658e47428076d456398fb/) | TruthMarketLPManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x21d652...bbe7b5`](./contracts/base-8453/0x21d652af137bfb34d16a4103f3b75e1e4fbbe7b5/) | TruthMarketManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x55e26c...74dd38`](./contracts/base-8453/0x55e26cf92b924c069db4d8da7b0b36154374dd38/) | TruthMarketSwapValidator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x2ca897...3e3409`](./contracts/base-8453/0x2ca897f98f6a45729968f0057f1fbf88db3e3409/) | TruthMarketV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x7bb366...156b73`](./contracts/base-8453/0x7bb366c772869be102cccf69cce11af9c5156b73/) | TruthMarketV2Launcher | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x1a6008...833443`](./contracts/base-8453/0x1a6008a93cad0dd562ac071107b23ed4b9833443/) | TruthMarketV2LPManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x6ff569...299b43`](./contracts/base-8453/0x6ff5693b99212da76ad316178a184ab56d299b43/) | UniversalRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x339619...fb3b65`](./contracts/base-8453/0x33961932a59d43d80b260eb866056fbe0afb3b65/) | V3SwapStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x3f3da9...f7927e`](./contracts/base-8453/0x3f3da9e841fbcb5abb2a097cbb922e3ef7f7927e/) | V4SwapStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x39339e149c2d916aa899bf73d2debb15f4755d9d`](./contracts/base-8453/0x39339e149c2d916aa899bf73d2debb15f4755d9d/) | FeeCollector | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x03a520b32c04bf3beef7beb72e919cf822ed34f1`](./contracts/base-8453/0x03a520b32c04bf3beef7beb72e919cf822ed34f1/) | NonfungiblePositionManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x118c2d8bec04696a2f13124213bac72d0e13f63e`](./contracts/base-8453/0x118c2d8bec04696a2f13124213bac72d0e13f63e/) | OracleBonds | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x87bc36ead32d5219e9cddf9f92d2077ca27992ab`](./contracts/base-8453/0x87bc36ead32d5219e9cddf9f92d2077ca27992ab/) | OracleCouncil | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x8e5e63f69bf7ef2a24f5247c2bfc3946b95e3da7`](./contracts/base-8453/0x8e5e63f69bf7ef2a24f5247c2bfc3946b95e3da7/) | OrderManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x1a40621c54330940b081f925aa027458a4c035ed`](./contracts/base-8453/0x1a40621c54330940b081f925aa027458a4c035ed/) | StakingRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x2626664c2603336e57b271c5c0b26f421741e481`](./contracts/base-8453/0x2626664c2603336e57b271c5c0b26f421741e481/) | SwapRouter02 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xeb3151902c63af869977f0ba6baaec476ffab215`](./contracts/base-8453/0xeb3151902c63af869977f0ba6baaec476ffab215/) | SweepStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x21cfcfc3d8f98fc728f48341d10ad8283f6eb7ab`](./contracts/base-8453/0x21cfcfc3d8f98fc728f48341d10ad8283f6eb7ab/) | TrueToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x43a2ee74d28612c0a9ef90884bb47cf445c97bc4`](./contracts/base-8453/0x43a2ee74d28612c0a9ef90884bb47cf445c97bc4/) | TruthAttesterSBT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xb7b53c6b219a29afd8f2ebbed1ea2b8867eef3d1`](./contracts/base-8453/0xb7b53c6b219a29afd8f2ebbed1ea2b8867eef3d1/) | TruthMarket | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x1cfead8e66cebc5e51093dfd247ad34f841740c4`](./contracts/base-8453/0x1cfead8e66cebc5e51093dfd247ad34f841740c4/) | TruthMarketHook | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x05ef8b05398a8479739658e47428076d456398fb`](./contracts/base-8453/0x05ef8b05398a8479739658e47428076d456398fb/) | TruthMarketLPManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x21d652af137bfb34d16a4103f3b75e1e4fbbe7b5`](./contracts/base-8453/0x21d652af137bfb34d16a4103f3b75e1e4fbbe7b5/) | TruthMarketManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x55e26cf92b924c069db4d8da7b0b36154374dd38`](./contracts/base-8453/0x55e26cf92b924c069db4d8da7b0b36154374dd38/) | TruthMarketSwapValidator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x2ca897f98f6a45729968f0057f1fbf88db3e3409`](./contracts/base-8453/0x2ca897f98f6a45729968f0057f1fbf88db3e3409/) | TruthMarketV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x7bb366c772869be102cccf69cce11af9c5156b73`](./contracts/base-8453/0x7bb366c772869be102cccf69cce11af9c5156b73/) | TruthMarketV2Launcher | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x1a6008a93cad0dd562ac071107b23ed4b9833443`](./contracts/base-8453/0x1a6008a93cad0dd562ac071107b23ed4b9833443/) | TruthMarketV2LPManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x6ff5693b99212da76ad316178a184ab56d299b43`](./contracts/base-8453/0x6ff5693b99212da76ad316178a184ab56d299b43/) | UniversalRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x33961932a59d43d80b260eb866056fbe0afb3b65`](./contracts/base-8453/0x33961932a59d43d80b260eb866056fbe0afb3b65/) | V3SwapStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x3f3da9e841fbcb5abb2a097cbb922e3ef7f7927e`](./contracts/base-8453/0x3f3da9e841fbcb5abb2a097cbb922e3ef7f7927e/) | V4SwapStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -59,13 +59,13 @@ The protocol comprises 3 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BoringVault | core_logic | plasma | n/a | [`0xd1074e...73a000`](./contracts/plasma-9745/0xd1074e0ae85610ddba0147e29ebe0d8e5873a000/) | ✅ Audited |
+| BoringVault | core_logic | plasma | n/a | [`0xd1074e0ae85610ddba0147e29ebe0d8e5873a000`](./contracts/plasma-9745/0xd1074e0ae85610ddba0147e29ebe0d8e5873a000/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ProxyAdmin | governance | plasma | n/a | 2 deployments: plasma [`0x322483...773772`](./contracts/plasma-9745/0x3224831b5f45c616f8accba907798c6236773772/); plasma `0x5be536...47d8b2` | ⚠️ Unaudited |
+| ProxyAdmin | governance | plasma | n/a | 2 deployments: plasma [`0x3224831b5f45c616f8accba907798c6236773772`](./contracts/plasma-9745/0x3224831b5f45c616f8accba907798c6236773772/); plasma `0x5be536efb28c8efbd2da6894996f5df88347d8b2` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -85,7 +85,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | plasma | n/a | `0x779ded...713736` | ❓ Unverified |
+| UnnamedContract | unknown | plasma | n/a | `0x779ded0c9e1022225f8e0630b35a9b54be713736` | ❓ Unverified |
 
 ## Audit Inventory
 

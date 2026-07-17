@@ -58,14 +58,14 @@ The protocol comprises 3 functional families. Contracts are linked by 1 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| MasterChef | unknown | bsc | n/a | 3 deployments: bsc [`0x09a852...7783f9`](./contracts/bsc-56/0x09a8521fc838d795555113fcb5b8fc8c267783f9/); bsc `0x47000c...ed4c5c`; bsc `0xe93fc7...4f0cb8` | ✅ Audited |
+| MasterChef | unknown | bsc | n/a | 3 deployments: bsc [`0x09a8521fc838d795555113fcb5b8fc8c267783f9`](./contracts/bsc-56/0x09a8521fc838d795555113fcb5b8fc8c267783f9/); bsc `0x47000caee05fa7900e7203c361571fd217ed4c5c`; bsc `0xe93fc7e6103ef86f3329635b8197d462b74f0cb8` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| OniRouter02 | adapter | bsc | n/a | [`0x974a89...22dfa2`](./contracts/bsc-56/0x974a8959c52f6109c59d0a6d63d4ea4cc522dfa2/) | ⚠️ Unaudited |
-| OniToken | token | bsc | n/a | [`0x6c77bb...d2fd2a`](./contracts/bsc-56/0x6c77bb19c69d66bea9e3cdaea108a76ea8d2fd2a/) | ⚠️ Unaudited |
+| OniRouter02 | adapter | bsc | n/a | [`0x974a8959c52f6109c59d0a6d63d4ea4cc522dfa2`](./contracts/bsc-56/0x974a8959c52f6109c59d0a6d63d4ea4cc522dfa2/) | ⚠️ Unaudited |
+| OniToken | token | bsc | n/a | [`0x6c77bb19c69d66bea9e3cdaea108a76ea8d2fd2a`](./contracts/bsc-56/0x6c77bb19c69d66bea9e3cdaea108a76ea8d2fd2a/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -85,7 +85,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0xffe480...519584` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xffe480077fb3f5dfb96ffea1843459c72b519584` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -99,8 +99,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x974a89...22dfa2`](./contracts/bsc-56/0x974a8959c52f6109c59d0a6d63d4ea4cc522dfa2/) | OniRouter02 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x6c77bb...d2fd2a`](./contracts/bsc-56/0x6c77bb19c69d66bea9e3cdaea108a76ea8d2fd2a/) | OniToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x974a8959c52f6109c59d0a6d63d4ea4cc522dfa2`](./contracts/bsc-56/0x974a8959c52f6109c59d0a6d63d4ea4cc522dfa2/) | OniRouter02 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x6c77bb19c69d66bea9e3cdaea108a76ea8d2fd2a`](./contracts/bsc-56/0x6c77bb19c69d66bea9e3cdaea108a76ea8d2fd2a/) | OniToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

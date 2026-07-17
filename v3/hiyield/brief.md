@@ -56,9 +56,9 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0xaf5baa...cfeac2`, chain 1)
-- UnnamedContract (`0x847550...307b3e`, chain 43114)
-- UnnamedContract (`0xce6050...59e660`, chain 43114)
+- UnnamedContract (`0xaf5baa225765b2ef3eb446aeab87e02dfbcfeac2`, chain 1)
+- UnnamedContract (`0x8475509d391e6ee5a8b7133221ce17019d307b3e`, chain 43114)
+- UnnamedContract (`0xce6050625fe3f79bbfc4d236abaabe51ab59e660`, chain 43114)
 
 ## Contract Surface Quality
 
@@ -122,10 +122,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Proxy (impl: 0xd75f7a123d556509258f594a2915ed8014763eaf) | unknown | project_anchor | own_supporting | 1 | avalanche | unit-387253 | `0xce6050...59e660` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387250 | `0xaf5baa...cfeac2` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | canto | n/a | `0x0e4289...4c3f72` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387252 | `0x847550...307b3e` | ❓ Unverified |
+| Proxy (impl: 0xd75f7a123d556509258f594a2915ed8014763eaf) | unknown | project_anchor | own_supporting | 1 | avalanche | unit-387253 | `0xce6050625fe3f79bbfc4d236abaabe51ab59e660` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387250 | `0xaf5baa225765b2ef3eb446aeab87e02dfbcfeac2` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | canto | n/a | `0x0e4289a95207ca653b60b0eb0b5848f29f4c3f72` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-387252 | `0x8475509d391e6ee5a8b7133221ce17019d307b3e` | ❓ Unverified |
 
 ## Audit Inventory
 

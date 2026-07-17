@@ -52,23 +52,23 @@ The pinned logic-topography run contains 8 contract row(s) across arbitrum, arbi
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x0cb736...7bdc83`, chain 42161)
-- UnnamedContract (`0x2eab95...a57887`, chain 42161)
-- UnnamedContract (`0x3402d8...9c8d19`, chain 42161)
-- UnnamedContract (`0x3917c7...c3059c`, chain 42161)
-- UnnamedContract (`0x4f9d36...2afc47`, chain 42161)
-- UnnamedContract (`0x689617...a7427e`, chain 42161)
-- UnnamedContract (`0x81f6f6...db8daa`, chain 42161)
-- UnnamedContract (`0x96c7dc...e21888`, chain 42161)
-- UnnamedContract (`0xa16f40...640f75`, chain 42161)
-- UnnamedContract (`0xa2db39...dff7ea`, chain 42161)
-- UnnamedContract (`0xc32a9f...77f7e0`, chain 42161)
-- UnnamedContract (`0xe043eb...75f470`, chain 42161)
-- FractionalizerFactory (`0x4093ee...89eed4`, chain 42161)
-- LiquidityPoolProxy (`0x069964...88de1c`, chain 42161)
-- Ocean (`0x96b4f4...d5fb7a`, chain 42161)
-- Shell (`0x8dcaec...38145a`, chain 1)
-- StandardArbERC20 (`0xe47ba5...d0317d`, chain 42161)
+- UnnamedContract (`0x0cb736ea2ad425221c368407caafdd323b7bdc83`, chain 42161)
+- UnnamedContract (`0x2eab95a938d1fabb1b62132bdb0c5a2405a57887`, chain 42161)
+- UnnamedContract (`0x3402d87df0817b2a96b210b8873d33dd979c8d19`, chain 42161)
+- UnnamedContract (`0x3917c74fdec42071e29461c849bceb81cbc3059c`, chain 42161)
+- UnnamedContract (`0x4f9d367636d5d2056f848803c11872fdbc2afc47`, chain 42161)
+- UnnamedContract (`0x6896177ee52659f22a87b180e8fcb2c850a7427e`, chain 42161)
+- UnnamedContract (`0x81f6f6664e8ece1e81bc9097084373c1dddb8daa`, chain 42161)
+- UnnamedContract (`0x96c7dc9d473e621a1e3968cb862803eaede21888`, chain 42161)
+- UnnamedContract (`0xa16f40437213020a167c230e4667ff8f13640f75`, chain 42161)
+- UnnamedContract (`0xa2db39e781a5eee0eaa625dace6f097c17dff7ea`, chain 42161)
+- UnnamedContract (`0xc32a9fc5665affce85cf043472f718029577f7e0`, chain 42161)
+- UnnamedContract (`0xe043eb17cc12c3fd4f5eac765d0f1b965975f470`, chain 42161)
+- FractionalizerFactory (`0x4093ee6cc764e11ce95451f47ddee9d6cc89eed4`, chain 42161)
+- LiquidityPoolProxy (`0x0699645f2fd448398272ae07f82eee8d0388de1c`, chain 42161)
+- Ocean (`0x96b4f4e401ccd70ec850c1cf8b405ad58fd5fb7a`, chain 42161)
+- Shell (`0x8dcaec45365e5ada5676073a07b418c2f538145a`, chain 1)
+- StandardArbERC20 (`0xe47ba52f326806559c1dec7ddd997f6957d0317d`, chain 42161)
 
 ## Contract Surface Quality
 
@@ -113,29 +113,29 @@ The pinned logic-topography run contains 8 contract row(s) across arbitrum, arbi
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| LiquidityPoolProxy | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-254715 | `0x069964...88de1c` | ✅ Audited |
-| Ocean | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-254725 | `0x96b4f4...d5fb7a` | ✅ Audited |
+| LiquidityPoolProxy | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-254715 | `0x0699645f2fd448398272ae07f82eee8d0388de1c` | ✅ Audited |
+| Ocean | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-254725 | `0x96b4f4e401ccd70ec850c1cf8b405ad58fd5fb7a` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (16)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BalancerAdapter | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | unit-254730 | `0xa8cb45...415b4a` | ⚠️ Unaudited |
-| ComposableStablePool | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | unit-254727 | `0x9791d5...c790cb` | ⚠️ Unaudited |
-| CrabDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xcf1766...558792` | ⚠️ Unaudited |
-| Curve2PoolAdapter | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | unit-254714 | `0x02b4ab...0742e4` | ⚠️ Unaudited |
-| CustomShellVesting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xf70395...f18c79` | ⚠️ Unaudited |
-| FractionalizerFactory | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-254720 | `0x4093ee...89eed4` | ⚠️ Unaudited |
-| Multicall2 | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | n/a | `0xc5cfad...39b023` | ⚠️ Unaudited |
-| Multicall2Arbitrum | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x5b5cfe...003858` | ⚠️ Unaudited |
-| Quoter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x8d073a...c6ce77` | ⚠️ Unaudited |
-| SeedPoem | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0a440f...f23276` | ⚠️ Unaudited |
-| Shell | unknown | project_anchor | own_supporting | 0 | ethereum | unit-254713 | `0x8dcaec...38145a` | ⚠️ Unaudited |
-| ShellDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x4818c2...3c011d` | ⚠️ Unaudited |
-| ShellVesting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x53b86e...62f887` | ⚠️ Unaudited |
-| StandardArbERC20 | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-254740 | `0xe47ba5...d0317d` | ⚠️ Unaudited |
-| VestingFractionalizer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xaff1f1...f11817` | ⚠️ Unaudited |
-| Vyper_contract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0100fb...44f5c9` | ⚠️ Unaudited |
+| BalancerAdapter | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | unit-254730 | `0xa8cb454449143912159e066760c1cf3b92415b4a` | ⚠️ Unaudited |
+| ComposableStablePool | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | unit-254727 | `0x9791d590788598535278552eecd4b211bfc790cb` | ⚠️ Unaudited |
+| CrabDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xcf17664006851a27d5bd93d497f30853ac558792` | ⚠️ Unaudited |
+| Curve2PoolAdapter | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | unit-254714 | `0x02b4ab3b517371d0bd71d325dbe7dfc0320742e4` | ⚠️ Unaudited |
+| CustomShellVesting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xf70395c5e2ff522ca56aa210c46138dc3bf18c79` | ⚠️ Unaudited |
+| FractionalizerFactory | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-254720 | `0x4093ee6cc764e11ce95451f47ddee9d6cc89eed4` | ⚠️ Unaudited |
+| Multicall2 | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | n/a | `0xc5cfada84e902ad92dd40194f0883ad49639b023` | ⚠️ Unaudited |
+| Multicall2Arbitrum | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x5b5cfe992adac0c9d48e05854b2d91c73a003858` | ⚠️ Unaudited |
+| Quoter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x8d073a51a9b074940622e42c5f3c4d08c2c6ce77` | ⚠️ Unaudited |
+| SeedPoem | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0a440f7b5414dfa7f5ea94a01a21b8fc36f23276` | ⚠️ Unaudited |
+| Shell | unknown | project_anchor | own_supporting | 0 | ethereum | unit-254713 | `0x8dcaec45365e5ada5676073a07b418c2f538145a` | ⚠️ Unaudited |
+| ShellDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x4818c257384704b153c60b0ec7bae0c23b3c011d` | ⚠️ Unaudited |
+| ShellVesting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x53b86e1c9cbfdc8f784082c1b4a5cf845d62f887` | ⚠️ Unaudited |
+| StandardArbERC20 | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-254740 | `0xe47ba52f326806559c1dec7ddd997f6957d0317d` | ⚠️ Unaudited |
+| VestingFractionalizer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xaff1f19340eb5456a55c76938f74bb1d23f11817` | ⚠️ Unaudited |
+| Vyper_contract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0100fbf414071977b19fc38e6fc7c32fe444f5c9` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -155,28 +155,28 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-254716 | `0x0cb736...7bdc83` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-254717 | `0x2eab95...a57887` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-254718 | `0x3402d8...9c8d19` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-254719 | `0x3917c7...c3059c` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-254721 | `0x4f9d36...2afc47` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-254722 | `0x689617...a7427e` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | unit-254723 | `0x7f9012...39f353` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x8178f0...7e71c4` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-254724 | `0x81f6f6...db8daa` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x8e5ae7...f93949` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-254726 | `0x96c7dc...e21888` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-254728 | `0xa16f40...640f75` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-254729 | `0xa2db39...dff7ea` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-254731 | `0xc32a9f...77f7e0` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | arbitrum | unit-254732 | `0xc32eb3...fe3584` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-254733 | `0xe043eb...75f470` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | arbitrum-sepolia | unit-254734 | `0x1c7882...e1ad29` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | arbitrum-sepolia | unit-254735 | `0xcf1766...558792` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | arbitrum-sepolia | unit-254736 | `0xe290a8...3842f7` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | arbitrum-sepolia | unit-254737 | `0xe5eb94...b3229d` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | arbitrum-sepolia | unit-254738 | `0xe6401f...f743fa` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | arbitrum-sepolia | unit-254739 | `0xeae5b5...91d703` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-254716 | `0x0cb736ea2ad425221c368407caafdd323b7bdc83` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-254717 | `0x2eab95a938d1fabb1b62132bdb0c5a2405a57887` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-254718 | `0x3402d87df0817b2a96b210b8873d33dd979c8d19` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-254719 | `0x3917c74fdec42071e29461c849bceb81cbc3059c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-254721 | `0x4f9d367636d5d2056f848803c11872fdbc2afc47` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-254722 | `0x6896177ee52659f22a87b180e8fcb2c850a7427e` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | unit-254723 | `0x7f90122bf0700f9e7e1f688fe926940e8839f353` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x8178f0844f08543a0bd4956d892ef462bd7e71c4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-254724 | `0x81f6f6664e8ece1e81bc9097084373c1dddb8daa` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x8e5ae75cd39c95f9074eb62be179b779e5f93949` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-254726 | `0x96c7dc9d473e621a1e3968cb862803eaede21888` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-254728 | `0xa16f40437213020a167c230e4667ff8f13640f75` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-254729 | `0xa2db39e781a5eee0eaa625dace6f097c17dff7ea` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-254731 | `0xc32a9fc5665affce85cf043472f718029577f7e0` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | arbitrum | unit-254732 | `0xc32eb36f886f638fffd836df44c124074cfe3584` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-254733 | `0xe043eb17cc12c3fd4f5eac765d0f1b965975f470` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | arbitrum-sepolia | unit-254734 | `0x1c78820be30c6013f5eac98b3ddfbb3431e1ad29` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | arbitrum-sepolia | unit-254735 | `0xcf17664006851a27d5bd93d497f30853ac558792` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | arbitrum-sepolia | unit-254736 | `0xe290a897504313b46a1198bd9b25b58e503842f7` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | arbitrum-sepolia | unit-254737 | `0xe5eb94ceadeb1a87656b7fb57cf22d01c1b3229d` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | arbitrum-sepolia | unit-254738 | `0xe6401f6f9e6391eee7ad5a2527ef730070f743fa` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | arbitrum-sepolia | unit-254739 | `0xeae5b59499a461887fbf2bf47887e4e4cb91d703` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -212,16 +212,16 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| ShellProtocolv2.pdf | Ocean | own contract | Ocean (selected) `0x96b4f4...d5fb7a` — deployed 2024-01-09 10:52:33+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ShellProtocolv2.pdf | Ocean | own contract | Ocean (selected) `0x96b4f4e401ccd70ec850c1cf8b405ad58fd5fb7a` — deployed 2024-01-09 10:52:33+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ShellProtocolv2.pdf | OceanERC1155 | unmatched — not counted | — | listed in Project Coverage section | no |
 | ShellProtocolv2.pdf | Interactions | unmatched — not counted | — | listed in Project Coverage section | no |
 | ShellProtocolv2.pdf | BalanceDelta | unmatched — not counted | — | listed in Project Coverage section | no |
 | ShellProtocolv2.pdf | Proteus | unmatched — not counted | — | listed in Project Coverage section and findings | no |
 | ShellProtocolv2.pdf | ProteusLogic | unmatched — not counted | — | listed in Project Coverage section and findings | no |
-| ShellProtocolv2.pdf | LiquidityPoolProxy | own contract | LiquidityPoolProxy (selected) `0x069964...88de1c` — deployed 2023-04-28 02:36:10+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ShellProtocolv2.pdf | LiquidityPoolProxy | own contract | LiquidityPoolProxy (selected) `0x0699645f2fd448398272ae07f82eee8d0388de1c` — deployed 2023-04-28 02:36:10+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ShellProtocolv2.pdf | LiquidityPool | unmatched — not counted | — | listed in Project Coverage section and findings | no |
 | code4rena.com/reports/2023-08-shell | EvolvingProteus | unmatched — not counted | — | listed in scope as the only smart contract | no |
-| code4rena.com/reports/2023-11-shellprotocol | Ocean | own contract | Ocean (selected) `0x96b4f4...d5fb7a` — deployed 2024-01-09 10:52:33+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| code4rena.com/reports/2023-11-shellprotocol | Ocean | own contract | Ocean (selected) `0x96b4f4e401ccd70ec850c1cf8b405ad58fd5fb7a` — deployed 2024-01-09 10:52:33+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | code4rena.com/reports/2023-11-shellprotocol | OceanAdapter | unmatched — not counted | — | listed in scope | no |
 | code4rena.com/reports/2023-11-shellprotocol | Curve2PoolAdapter | unmatched — not counted | — | listed in scope | no |
 | code4rena.com/reports/2023-11-shellprotocol | CurveTricryptoAdapter | unmatched — not counted | — | listed in scope | no |
@@ -291,7 +291,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | can be found here | LoihiViews | unmatched — not counted | — | main source file in analysis 7f8a2fa5 | no |
 | can be found here | LoihiRoot | unmatched — not counted | — | imported and referenced in multiple analyses | no |
 | can be found here | DSMath | unmatched — not counted | — | referenced in findings for multiple analyses | no |
-| Automated Findings report | Ocean | own contract | Ocean (selected) `0x96b4f4...d5fb7a` — deployed 2024-01-09 10:52:33+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Automated Findings report | Ocean | own contract | Ocean (selected) `0x96b4f4e401ccd70ec850c1cf8b405ad58fd5fb7a` — deployed 2024-01-09 10:52:33+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Automated Findings report | OceanAdapter | unmatched — not counted | — | listed in scope | no |
 | Automated Findings report | Curve2PoolAdapter | unmatched — not counted | — | listed in scope | no |
 | Automated Findings report | CurveTricryptoAdapter | unmatched — not counted | — | listed in scope | no |
@@ -302,9 +302,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | `0x4093ee...89eed4` | FractionalizerFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x8dcaec...38145a` | Shell | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | `0xe47ba5...d0317d` | StandardArbERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0x4093ee6cc764e11ce95451f47ddee9d6cc89eed4` | FractionalizerFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x8dcaec45365e5ada5676073a07b418c2f538145a` | Shell | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0xe47ba52f326806559c1dec7ddd997f6957d0317d` | StandardArbERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -48,8 +48,8 @@ The pinned logic-topography run contains 18 contract row(s) across arbitrum, eth
 
 ### Forked Contracts
 
-**DssProxyActions** (`0x92a4bb...0ce7c8`, chain 1)
-Origin: usdd (`0x777684...6bcb25`)
+**DssProxyActions** (`0x92a4bb65fbe7a4b516f52a0e7550982f650ce7c8`, chain 1)
+Origin: usdd (`0x777684f6425d095e9166f5f694f50e48a16bcb25`)
 Containment: 73.7% - 28 functions inherited
 Centroid audit status: pending_validation
 
@@ -71,23 +71,23 @@ Removals (removed from original):
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- BurnMintTokenPool (`0x7f49a3...00aa63`, chain 1)
-- Clipper (`0x62b7a3...7378f4`, chain 1)
-- Cure (`0x9ea54e...b2c914`, chain 1)
-- Dog (`0x15a36d...711ddd`, chain 1)
-- DSProxyFactory (`0xe23c0d...cbe312`, chain 1)
-- DssCdpManager (`0x97a762...572e47`, chain 1)
-- DssProxyActionsEnd (`0x41c09d...c36969`, chain 1)
-- End (`0x026782...834bf5`, chain 1)
-- GemJoin5 (`0x3c9567...8011fd`, chain 1)
-- GetCdps (`0x2fcc0d...c9b412`, chain 1)
-- Jug (`0x66654c...0d886e`, chain 1)
-- OSM (`0x89fbae...65993a`, chain 1)
-- PriceFeedAdapter (`0x82f579...f8b1cd`, chain 1)
-- ProxyRegistry (`0xafd44c...1f30d3`, chain 1)
-- Safe (`0x194ebc...f53b99`, chain 1)
-- Spotter (`0xf3aee7...34e2a2`, chain 1)
-- StairstepExponentialDecrease (`0xfeb42f...260de5`, chain 1)
+- BurnMintTokenPool (`0x7f49a388c6884c0d1706f7774e9a5575d100aa63`, chain 1)
+- Clipper (`0x62b7a353928142a18c07026a33f8089d1c7378f4`, chain 1)
+- Cure (`0x9ea54efa0d82b2afdf2c9f3a407622dc83b2c914`, chain 1)
+- Dog (`0x15a36d5caf263160c2a49dde6429c045fb711ddd`, chain 1)
+- DSProxyFactory (`0xe23c0d47cdcb3df144c529648651d5c8f3cbe312`, chain 1)
+- DssCdpManager (`0x97a762d03a511754151dd046ee83599162572e47`, chain 1)
+- DssProxyActionsEnd (`0x41c09d97e10ddb1adbc202d6fc3aa18547c36969`, chain 1)
+- End (`0x026782f431bfc233c67128af42a4e9de7f834bf5`, chain 1)
+- GemJoin5 (`0x3c9567c3b9c20e72858cd5714209ea7d7a8011fd`, chain 1)
+- GetCdps (`0x2fcc0d9972f489ec42804a00ba2029e7f6c9b412`, chain 1)
+- Jug (`0x66654ccf7c4492fd3cfa01a7ec5b5ac28f0d886e`, chain 1)
+- OSM (`0x89fbae0302b8790d55fa36e6ab09ac93f865993a`, chain 1)
+- PriceFeedAdapter (`0x82f5790bd1c96790e4c3a3ebc8142bd4d6f8b1cd`, chain 1)
+- ProxyRegistry (`0xafd44c3e4bb4757527d1d58706023daf2f1f30d3`, chain 1)
+- Safe (`0x194ebc1b9b382ef0e6998caace59af843cf53b99`, chain 1)
+- Spotter (`0xf3aee748355bb07cbe702b4ff8dbe6118b34e2a2`, chain 1)
+- StairstepExponentialDecrease (`0xfeb42fb58e790dd5f38d936df45b4bdd29260de5`, chain 1)
 
 ## Contract Surface Quality
 
@@ -133,31 +133,31 @@ Removals (removed from original):
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BurnMintTokenPool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248418 | `0x7f49a3...00aa63` | ⚠️ Unaudited |
-| Clipper | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248416 | `0x62b7a3...7378f4` | ⚠️ Unaudited |
-| Cure | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248423 | `0x9ea54e...b2c914` | ⚠️ Unaudited |
-| Dog | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248412 | `0x15a36d...711ddd` | ⚠️ Unaudited |
-| DSProxyFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248425 | `0xe23c0d...cbe312` | ⚠️ Unaudited |
-| DssCdpManager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248422 | `0x97a762...572e47` | ⚠️ Unaudited |
-| DssProxyActions | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248421 | `0x92a4bb...0ce7c8` | ⚠️ Unaudited |
-| DssProxyActionsEnd | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248415 | `0x41c09d...c36969` | ⚠️ Unaudited |
-| End | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248411 | `0x026782...834bf5` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | arbitrum | n/a | `0xa39986...3fd0f4` | ⚠️ Unaudited |
-| GemJoin5 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248414 | `0x3c9567...8011fd` | ⚠️ Unaudited |
-| GetCdps | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248413 | `0x2fcc0d...c9b412` | ⚠️ Unaudited |
-| HelperConfig | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7dfaf9...0815d7` | ⚠️ Unaudited |
-| Jug | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248417 | `0x66654c...0d886e` | ⚠️ Unaudited |
-| MULT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x468bba...54cd5c` | ⚠️ Unaudited |
-| OSM | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248420 | `0x89fbae...65993a` | ⚠️ Unaudited |
-| PriceFeedAdapter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248419 | `0x82f579...f8b1cd` | ⚠️ Unaudited |
-| ProxyRegistry | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248424 | `0xafd44c...1f30d3` | ⚠️ Unaudited |
-| rwaUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x362135...3d3e13` | ⚠️ Unaudited |
-| rwaUSDJoin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa2e7b4...5d2f5e` | ⚠️ Unaudited |
-| Safe | unknown | project_anchor | own_supporting | 1 | ethereum | unit-248428 | `0x194ebc...f53b99` | ⚠️ Unaudited |
-| Spotter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248426 | `0xf3aee7...34e2a2` | ⚠️ Unaudited |
-| StairstepExponentialDecrease | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248427 | `0xfeb42f...260de5` | ⚠️ Unaudited |
-| Vat | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xab79bf...50d2be` | ⚠️ Unaudited |
-| Vow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x524e24...38916d` | ⚠️ Unaudited |
+| BurnMintTokenPool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248418 | `0x7f49a388c6884c0d1706f7774e9a5575d100aa63` | ⚠️ Unaudited |
+| Clipper | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248416 | `0x62b7a353928142a18c07026a33f8089d1c7378f4` | ⚠️ Unaudited |
+| Cure | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248423 | `0x9ea54efa0d82b2afdf2c9f3a407622dc83b2c914` | ⚠️ Unaudited |
+| Dog | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248412 | `0x15a36d5caf263160c2a49dde6429c045fb711ddd` | ⚠️ Unaudited |
+| DSProxyFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248425 | `0xe23c0d47cdcb3df144c529648651d5c8f3cbe312` | ⚠️ Unaudited |
+| DssCdpManager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248422 | `0x97a762d03a511754151dd046ee83599162572e47` | ⚠️ Unaudited |
+| DssProxyActions | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248421 | `0x92a4bb65fbe7a4b516f52a0e7550982f650ce7c8` | ⚠️ Unaudited |
+| DssProxyActionsEnd | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248415 | `0x41c09d97e10ddb1adbc202d6fc3aa18547c36969` | ⚠️ Unaudited |
+| End | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248411 | `0x026782f431bfc233c67128af42a4e9de7f834bf5` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | arbitrum | n/a | `0xa39986f96b80d04e8d7aeaaf47175f47c23fd0f4` | ⚠️ Unaudited |
+| GemJoin5 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248414 | `0x3c9567c3b9c20e72858cd5714209ea7d7a8011fd` | ⚠️ Unaudited |
+| GetCdps | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248413 | `0x2fcc0d9972f489ec42804a00ba2029e7f6c9b412` | ⚠️ Unaudited |
+| HelperConfig | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7dfaf914041a571448d9f638d50a3ba32a0815d7` | ⚠️ Unaudited |
+| Jug | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248417 | `0x66654ccf7c4492fd3cfa01a7ec5b5ac28f0d886e` | ⚠️ Unaudited |
+| MULT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x468bbabaef852c134b584382c0fef83f2954cd5c` | ⚠️ Unaudited |
+| OSM | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248420 | `0x89fbae0302b8790d55fa36e6ab09ac93f865993a` | ⚠️ Unaudited |
+| PriceFeedAdapter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248419 | `0x82f5790bd1c96790e4c3a3ebc8142bd4d6f8b1cd` | ⚠️ Unaudited |
+| ProxyRegistry | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248424 | `0xafd44c3e4bb4757527d1d58706023daf2f1f30d3` | ⚠️ Unaudited |
+| rwaUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3621351d3f44a3a5e9ac1a3f3e9ca045313d3e13` | ⚠️ Unaudited |
+| rwaUSDJoin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa2e7b4a4823bf1c9a7cc9b0a63e82aa9845d2f5e` | ⚠️ Unaudited |
+| Safe | unknown | project_anchor | own_supporting | 1 | ethereum | unit-248428 | `0x194ebc1b9b382ef0e6998caace59af843cf53b99` | ⚠️ Unaudited |
+| Spotter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248426 | `0xf3aee748355bb07cbe702b4ff8dbe6118b34e2a2` | ⚠️ Unaudited |
+| StairstepExponentialDecrease | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248427 | `0xfeb42fb58e790dd5f38d936df45b4bdd29260de5` | ⚠️ Unaudited |
+| Vat | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xab79bf795ba5de1eae989d0d46950ab47e50d2be` | ⚠️ Unaudited |
+| Vow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x524e2461234672643fd59310bd95ffe41538916d` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -288,23 +288,23 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x7f49a3...00aa63` | BurnMintTokenPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x62b7a3...7378f4` | Clipper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x9ea54e...b2c914` | Cure | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x15a36d...711ddd` | Dog | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xe23c0d...cbe312` | DSProxyFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x97a762...572e47` | DssCdpManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x92a4bb...0ce7c8` | DssProxyActions | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x41c09d...c36969` | DssProxyActionsEnd | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x026782...834bf5` | End | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x3c9567...8011fd` | GemJoin5 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x2fcc0d...c9b412` | GetCdps | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x66654c...0d886e` | Jug | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x89fbae...65993a` | OSM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x82f579...f8b1cd` | PriceFeedAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xafd44c...1f30d3` | ProxyRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xf3aee7...34e2a2` | Spotter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xfeb42f...260de5` | StairstepExponentialDecrease | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x7f49a388c6884c0d1706f7774e9a5575d100aa63` | BurnMintTokenPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x62b7a353928142a18c07026a33f8089d1c7378f4` | Clipper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x9ea54efa0d82b2afdf2c9f3a407622dc83b2c914` | Cure | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x15a36d5caf263160c2a49dde6429c045fb711ddd` | Dog | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xe23c0d47cdcb3df144c529648651d5c8f3cbe312` | DSProxyFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x97a762d03a511754151dd046ee83599162572e47` | DssCdpManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x92a4bb65fbe7a4b516f52a0e7550982f650ce7c8` | DssProxyActions | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x41c09d97e10ddb1adbc202d6fc3aa18547c36969` | DssProxyActionsEnd | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x026782f431bfc233c67128af42a4e9de7f834bf5` | End | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x3c9567c3b9c20e72858cd5714209ea7d7a8011fd` | GemJoin5 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x2fcc0d9972f489ec42804a00ba2029e7f6c9b412` | GetCdps | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x66654ccf7c4492fd3cfa01a7ec5b5ac28f0d886e` | Jug | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x89fbae0302b8790d55fa36e6ab09ac93f865993a` | OSM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x82f5790bd1c96790e4c3a3ebc8142bd4d6f8b1cd` | PriceFeedAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xafd44c3e4bb4757527d1d58706023daf2f1f30d3` | ProxyRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xf3aee748355bb07cbe702b4ff8dbe6118b34e2a2` | Spotter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xfeb42fb58e790dd5f38d936df45b4bdd29260de5` | StairstepExponentialDecrease | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

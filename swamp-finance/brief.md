@@ -60,8 +60,8 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| NativeFarm | unknown | bsc | n/a | [`0x33adbf...afdee3`](./contracts/bsc-56/0x33adbf5f1ec364a4ea3a5ca8f310b597b8afdee3/) | ⚠️ Unaudited |
-| SWAMP | unknown | bsc | n/a | [`0xc5a49b...f9765d`](./contracts/bsc-56/0xc5a49b4cbe004b6fd55b30ba1de6ac360ff9765d/) | ⚠️ Unaudited |
+| NativeFarm | unknown | bsc | n/a | [`0x33adbf5f1ec364a4ea3a5ca8f310b597b8afdee3`](./contracts/bsc-56/0x33adbf5f1ec364a4ea3a5ca8f310b597b8afdee3/) | ⚠️ Unaudited |
+| SWAMP | unknown | bsc | n/a | [`0xc5a49b4cbe004b6fd55b30ba1de6ac360ff9765d`](./contracts/bsc-56/0xc5a49b4cbe004b6fd55b30ba1de6ac360ff9765d/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -81,10 +81,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0x0eb82e...ed93d6` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x3cc084...111abd` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x42cf50...311894` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x8f7f7f...ad9ece` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x0eb82e9dd503452e47a95539320a411e2ced93d6` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x3cc0842ff8c2738276a0aec4d3d54c3791111abd` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x42cf504aa845ca9f038029eb359c8bfa09311894` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x8f7f7f6f37882799f674a5eeeb14c16404ad9ece` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -98,8 +98,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x33adbf...afdee3`](./contracts/bsc-56/0x33adbf5f1ec364a4ea3a5ca8f310b597b8afdee3/) | NativeFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xc5a49b...f9765d`](./contracts/bsc-56/0xc5a49b4cbe004b6fd55b30ba1de6ac360ff9765d/) | SWAMP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x33adbf5f1ec364a4ea3a5ca8f310b597b8afdee3`](./contracts/bsc-56/0x33adbf5f1ec364a4ea3a5ca8f310b597b8afdee3/) | NativeFarm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xc5a49b4cbe004b6fd55b30ba1de6ac360ff9765d`](./contracts/bsc-56/0xc5a49b4cbe004b6fd55b30ba1de6ac360ff9765d/) | SWAMP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

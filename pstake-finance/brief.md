@@ -61,23 +61,23 @@ The protocol comprises 2 functional families. Contracts are linked by 3 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AddressStore | unknown | bsc | n/a | [`0x4a6b31...fec121`](./contracts/bsc-56/0x4a6b3127a1d295878d8790f6ece0776f65fec121/) | ✅ Audited |
-| pStake | unknown | ethereum | n/a | [`0xfb5c68...f77006`](./contracts/ethereum-1/0xfb5c6815ca3ac72ce9f5006869ae67f18bf77006/) | ✅ Audited |
-| StakedBNBToken | unknown | bsc | n/a | [`0xc2e9d0...e4fb16`](./contracts/bsc-56/0xc2e9d07f66a89c44062459a47a0d2dc038e4fb16/) | ✅ Audited |
-| StakePool | unknown | bsc | n/a | [`0x17cdf9...d528ee`](./contracts/bsc-56/0x17cdf9913230d5f9a2b7a0f5b0df286581d528ee/) | ✅ Audited |
-| UndelegationHolder | unknown | bsc | n/a | [`0x3c0fc5...5dc298`](./contracts/bsc-56/0x3c0fc52c7de41363c14a63ea09ba4202d15dc298/) | ✅ Audited |
+| AddressStore | unknown | bsc | n/a | [`0x4a6b3127a1d295878d8790f6ece0776f65fec121`](./contracts/bsc-56/0x4a6b3127a1d295878d8790f6ece0776f65fec121/) | ✅ Audited |
+| pStake | unknown | ethereum | n/a | [`0xfb5c6815ca3ac72ce9f5006869ae67f18bf77006`](./contracts/ethereum-1/0xfb5c6815ca3ac72ce9f5006869ae67f18bf77006/) | ✅ Audited |
+| StakedBNBToken | unknown | bsc | n/a | [`0xc2e9d07f66a89c44062459a47a0d2dc038e4fb16`](./contracts/bsc-56/0xc2e9d07f66a89c44062459a47a0d2dc038e4fb16/) | ✅ Audited |
+| StakePool | unknown | bsc | n/a | [`0x17cdf9913230d5f9a2b7a0f5b0df286581d528ee`](./contracts/bsc-56/0x17cdf9913230d5f9a2b7a0f5b0df286581d528ee/) | ✅ Audited |
+| UndelegationHolder | unknown | bsc | n/a | [`0x3c0fc52c7de41363c14a63ea09ba4202d15dc298`](./contracts/bsc-56/0x3c0fc52c7de41363c14a63ea09ba4202d15dc298/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (7)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BlastOLE | unknown | blast | n/a | [`0xcbf7b4...03b5ae`](./contracts/blast-81457/0xcbf7b47e9da345812e3bd732e3ee369a7203b5ae/) | ⚠️ Unaudited |
-| MintSwapCanonicalToken | unknown | bsc | n/a | [`0x4c882e...8a7c0c`](./contracts/bsc-56/0x4c882ec256823ee773b25b414d36f92ef58a7c0c/) | ⚠️ Unaudited |
-| OptimismMintableERC20 | unknown | optimism | n/a | [`0x023550...4c04cd`](./contracts/optimism-10/0x023550adde4fa2f90d63a41d9282bee0294c04cd/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | bsc | n/a | [`0x457ccd...94d370`](./contracts/bsc-56/0x457ccda8d92172bb0a692a9167ca82673694d370/) | ⚠️ Unaudited |
-| TimelockedAdmin | unknown | bsc | n/a | [`0x0b3b41...ca647a`](./contracts/bsc-56/0x0b3b4150bd4ee2a532eeaa0e6be86cfd27ca647a/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | bsc | n/a | [`0x2fc80e...fc69bf`](./contracts/bsc-56/0x2fc80e731c40ec6590783bb11eede9dd43fc69bf/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | bsc | n/a | [`0x3a29f1...83c558`](./contracts/bsc-56/0x3a29f1de4d069745db7184089e657e4c8d83c558/) | ⚠️ Unaudited |
+| BlastOLE | unknown | blast | n/a | [`0xcbf7b47e9da345812e3bd732e3ee369a7203b5ae`](./contracts/blast-81457/0xcbf7b47e9da345812e3bd732e3ee369a7203b5ae/) | ⚠️ Unaudited |
+| MintSwapCanonicalToken | unknown | bsc | n/a | [`0x4c882ec256823ee773b25b414d36f92ef58a7c0c`](./contracts/bsc-56/0x4c882ec256823ee773b25b414d36f92ef58a7c0c/) | ⚠️ Unaudited |
+| OptimismMintableERC20 | unknown | optimism | n/a | [`0x023550adde4fa2f90d63a41d9282bee0294c04cd`](./contracts/optimism-10/0x023550adde4fa2f90d63a41d9282bee0294c04cd/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | bsc | n/a | [`0x457ccda8d92172bb0a692a9167ca82673694d370`](./contracts/bsc-56/0x457ccda8d92172bb0a692a9167ca82673694d370/) | ⚠️ Unaudited |
+| TimelockedAdmin | unknown | bsc | n/a | [`0x0b3b4150bd4ee2a532eeaa0e6be86cfd27ca647a`](./contracts/bsc-56/0x0b3b4150bd4ee2a532eeaa0e6be86cfd27ca647a/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | bsc | n/a | [`0x2fc80e731c40ec6590783bb11eede9dd43fc69bf`](./contracts/bsc-56/0x2fc80e731c40ec6590783bb11eede9dd43fc69bf/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | bsc | n/a | [`0x3a29f1de4d069745db7184089e657e4c8d83c558`](./contracts/bsc-56/0x3a29f1de4d069745db7184089e657e4c8d83c558/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -128,9 +128,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x4c882e...8a7c0c`](./contracts/bsc-56/0x4c882ec256823ee773b25b414d36f92ef58a7c0c/) | MintSwapCanonicalToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x023550...4c04cd`](./contracts/optimism-10/0x023550adde4fa2f90d63a41d9282bee0294c04cd/) | OptimismMintableERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x0b3b41...ca647a`](./contracts/bsc-56/0x0b3b4150bd4ee2a532eeaa0e6be86cfd27ca647a/) | TimelockedAdmin | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x4c882ec256823ee773b25b414d36f92ef58a7c0c`](./contracts/bsc-56/0x4c882ec256823ee773b25b414d36f92ef58a7c0c/) | MintSwapCanonicalToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | [`0x023550adde4fa2f90d63a41d9282bee0294c04cd`](./contracts/optimism-10/0x023550adde4fa2f90d63a41d9282bee0294c04cd/) | OptimismMintableERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x0b3b4150bd4ee2a532eeaa0e6be86cfd27ca647a`](./contracts/bsc-56/0x0b3b4150bd4ee2a532eeaa0e6be86cfd27ca647a/) | TimelockedAdmin | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

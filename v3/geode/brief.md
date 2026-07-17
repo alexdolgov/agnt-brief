@@ -90,17 +90,17 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AmplificationUtils | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x0220ba...e9b72b` | ⚠️ Unaudited |
-| DataStoreUtils | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xb25a42...fdc570` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | avalanche | n/a | `0x115fe1...a07e63` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | avalanche | n/a | `0x4948d8...2284fa` | ⚠️ Unaudited |
-| ERC20InterfaceUpgradable | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x08b201...fa4142` | ⚠️ Unaudited |
-| gAVAX | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x1cfbdc...27b24b` | ⚠️ Unaudited |
-| GeodeUtils | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x76e42b...59fa5b` | ⚠️ Unaudited |
-| LPToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x71b0cd...0dbe8c` | ⚠️ Unaudited |
-| StakeUtils | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x1ea723...692332` | ⚠️ Unaudited |
-| Swap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x577a73...355f09` | ⚠️ Unaudited |
-| SwapUtils | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x29be47...702c09` | ⚠️ Unaudited |
+| AmplificationUtils | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x0220ba3dcecf50fa376cce84d1d9ecc0bee9b72b` | ⚠️ Unaudited |
+| DataStoreUtils | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xb25a4298f51d6028b50df845c3cbf49f4cfdc570` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | avalanche | n/a | `0x115fe12263515047d2f87f1a04870f33afa07e63` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | avalanche | n/a | `0x4948d893b6c71fc1736789b8fef90907ef2284fa` | ⚠️ Unaudited |
+| ERC20InterfaceUpgradable | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x08b201c31201e1b75ad6c18a8d70492259fa4142` | ⚠️ Unaudited |
+| gAVAX | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x1cfbdc5468f7d10d136c3d92317d50294127b24b` | ⚠️ Unaudited |
+| GeodeUtils | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x76e42b4c138e03f4e1719ca5cd1fec13e459fa5b` | ⚠️ Unaudited |
+| LPToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x71b0cd5c4db483ae8a09df0f83f69bac400dbe8c` | ⚠️ Unaudited |
+| StakeUtils | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x1ea72390e12cbe0da8304ab19b6e521a31692332` | ⚠️ Unaudited |
+| Swap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x577a73075f35a0a013afc651126f714284355f09` | ⚠️ Unaudited |
+| SwapUtils | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x29be4798db7eb77d20ed35ad642da852ae702c09` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -120,8 +120,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-240960 | `0xb0334f...407083` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xb0334f...407083` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-240960 | `0xb0334f08dec465ec180f1af04c6d7d3737407083` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xb0334f08dec465ec180f1af04c6d7d3737407083` | ❓ Unverified |
 
 ## Audit Inventory
 

@@ -62,7 +62,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AILayerToken | token | bsc | n/a | [`0x66e3da...442244`](./contracts/bsc-56/0x66e3daa0c86e0ad56302d36af0e7c1ba24442244/) | ⚠️ Unaudited |
+| AILayerToken | token | bsc | n/a | [`0x66e3daa0c86e0ad56302d36af0e7c1ba24442244`](./contracts/bsc-56/0x66e3daa0c86e0ad56302d36af0e7c1ba24442244/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -94,7 +94,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x66e3da...442244`](./contracts/bsc-56/0x66e3daa0c86e0ad56302d36af0e7c1ba24442244/) | AILayerToken | token | $204,070.00 | Verified native implementation with $204,070.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x66e3daa0c86e0ad56302d36af0e7c1ba24442244`](./contracts/bsc-56/0x66e3daa0c86e0ad56302d36af0e7c1ba24442244/) | AILayerToken | token | $204,070.00 | Verified native implementation with $204,070.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

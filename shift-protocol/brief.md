@@ -59,16 +59,16 @@ The protocol comprises 3 functional families. Its contracts share 6 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ShiftAccessControl | governance | base | n/a | 4 deployments: base [`0x092b55...d3132e`](./contracts/base-8453/0x092b558d933f069c7145c0ef4ad4c966e5d3132e/); base `0x35305e...a61ce6`; base `0x3ccc08...dc2773`; base `0x52dc22...326b56` | ✅ Audited |
-| ShiftTvlFeed | unknown | base | n/a | 4 deployments: base [`0x505171...9e6285`](./contracts/base-8453/0x5051713489d8128f8fd7c96362616fe5e29e6285/); base `0x619681...40f19b`; base `0x8a04ac...b9f110`; base `0xdbe599...ff67d3` | ✅ Audited |
-| ShiftVault | core_logic | base | n/a | 7 deployments: base [`0x4ce3ec...1aa2e1`](./contracts/base-8453/0x4ce3ec1b7b4ffb33a0b70c64a0560a3f341aa2e1/); base `0x89d63c...8a36b0`; base `0x8d8d46...872327`; base `0xaf69bf...ed1e0e`; arbitrum `0x6d7c89...7ae3c2`; arbitrum `0x7174f0...0a10bd`; arbitrum `0x956bdd...cb6964` | ✅ Audited |
+| ShiftAccessControl | governance | base | n/a | 4 deployments: base [`0x092b558d933f069c7145c0ef4ad4c966e5d3132e`](./contracts/base-8453/0x092b558d933f069c7145c0ef4ad4c966e5d3132e/); base `0x35305e45b933975a0f20a41dd20c526ae0a61ce6`; base `0x3ccc08bb7c973744027ebf78a914ab795fdc2773`; base `0x52dc2295e6f36f305485e3288f5c0746e1326b56` | ✅ Audited |
+| ShiftTvlFeed | unknown | base | n/a | 4 deployments: base [`0x5051713489d8128f8fd7c96362616fe5e29e6285`](./contracts/base-8453/0x5051713489d8128f8fd7c96362616fe5e29e6285/); base `0x6196810be8e6a1d0fb0ec10c789966c88340f19b`; base `0x8a04acbfb954ac1e3fa7c87b8cc2ceee4db9f110`; base `0xdbe599c184cc13d82f956fa5adaa1b18c0ff67d3` | ✅ Audited |
+| ShiftVault | core_logic | base | n/a | 7 deployments: base [`0x4ce3ec1b7b4ffb33a0b70c64a0560a3f341aa2e1`](./contracts/base-8453/0x4ce3ec1b7b4ffb33a0b70c64a0560a3f341aa2e1/); base `0x89d63c8331d0fb75b94e27fc981598093c8a36b0`; base `0x8d8d4643f6b3ff6f953aae428306ad91fe872327`; base `0xaf69bf9ea9e0166498c0502af5b5945980ed1e0e`; arbitrum `0x6d7c897cd8b402690c07e7263c9f59b3777ae3c2`; arbitrum `0x7174f0bd02664bebdb6aa79a99faf949570a10bd`; arbitrum `0x956bdd9c18b786b082fd50c52722d254f0cb6964` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ShiftMonoData | unknown | base | n/a | [`0x5457ea...bea196`](./contracts/base-8453/0x5457ead979d04598d6d16eff13b60d15bebea196/) | ⚠️ Unaudited |
-| SupplyValidator | unknown | base | n/a | [`0x446a68...5f97be`](./contracts/base-8453/0x446a687552d337804f9efd63656beef09f5f97be/) | ⚠️ Unaudited |
+| ShiftMonoData | unknown | base | n/a | [`0x5457ead979d04598d6d16eff13b60d15bebea196`](./contracts/base-8453/0x5457ead979d04598d6d16eff13b60d15bebea196/) | ⚠️ Unaudited |
+| SupplyValidator | unknown | base | n/a | [`0x446a687552d337804f9efd63656beef09f5f97be`](./contracts/base-8453/0x446a687552d337804f9efd63656beef09f5f97be/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -100,8 +100,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x5457ea...bea196`](./contracts/base-8453/0x5457ead979d04598d6d16eff13b60d15bebea196/) | ShiftMonoData | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x446a68...5f97be`](./contracts/base-8453/0x446a687552d337804f9efd63656beef09f5f97be/) | SupplyValidator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x5457ead979d04598d6d16eff13b60d15bebea196`](./contracts/base-8453/0x5457ead979d04598d6d16eff13b60d15bebea196/) | ShiftMonoData | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x446a687552d337804f9efd63656beef09f5f97be`](./contracts/base-8453/0x446a687552d337804f9efd63656beef09f5f97be/) | SupplyValidator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

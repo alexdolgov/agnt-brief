@@ -52,18 +52,18 @@ The pinned logic-topography run contains 13 contract row(s) across arbitrum, bas
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x3b0aaf...dc1862`, chain 1)
-- UnnamedContract (`0x71e4f9...2a3a87`, chain 1)
-- UnnamedContract (`0x8be346...a7b3b9`, chain 1)
-- UnnamedContract (`0x9d39a5...7a3497`, chain 1)
-- UnnamedContract (`0xe34902...1b62d3`, chain 1)
-- ENA (`0x57e114...1e6061`, chain 1)
-- EthenaLPStaking (`0x8707f2...cfc512`, chain 1)
-- EthenaMinting (`0x2cc440...f8afc3`, chain 1)
-- GnosisSafe (`0x2b5ab5...5dd4d5`, chain 1)
-- MellowVaultCompat (`0xc65433...c47bd8`, chain 1)
-- StakingRewardsDistributor (`0xf2fa33...c6b439`, chain 1)
-- USDe (`0x4c9edd...1e68b3`, chain 1)
+- UnnamedContract (`0x3b0aaf6e6fcd4a7ceef8c92c32dfea9e64dc1862`, chain 1)
+- UnnamedContract (`0x71e4f98e8f20c88112489de3dded4489802a3a87`, chain 1)
+- UnnamedContract (`0x8be3460a480c80728a8c4d7a5d5303c85ba7b3b9`, chain 1)
+- UnnamedContract (`0x9d39a5de30e57443bff2a8307a4256c8797a3497`, chain 1)
+- UnnamedContract (`0xe3490297a08d6fc8da46edb7b6142e4f461b62d3`, chain 1)
+- ENA (`0x57e114b691db790c35207b2e685d4a43181e6061`, chain 1)
+- EthenaLPStaking (`0x8707f238936c12c309bfc2b9959c35828acfc512`, chain 1)
+- EthenaMinting (`0x2cc440b721d2cafd6d64908d6d8c4acc57f8afc3`, chain 1)
+- GnosisSafe (`0x2b5ab59163a6e93b4486f6055d33ca4a115dd4d5`, chain 1)
+- MellowVaultCompat (`0xc65433845ecd16688eda196497fa9130d6c47bd8`, chain 1)
+- StakingRewardsDistributor (`0xf2fa332bd83149c66b09b45670bce64746c6b439`, chain 1)
+- USDe (`0x4c9edd5852cd905f086c759e8383e09bff1e68b3`, chain 1)
 
 ## Contract Surface Quality
 
@@ -115,37 +115,37 @@ The pinned logic-topography run contains 13 contract row(s) across arbitrum, bas
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ENA | unknown | project_anchor | own_supporting | 0 | ethereum | unit-239319 | `0x57e114...1e6061` | ✅ Audited |
-| EthenaLPStaking | unknown | project_anchor | own_supporting | 0 | ethereum | unit-239323 | `0x8707f2...cfc512` | ✅ Audited |
-| EthenaMinting | unknown | project_anchor | own_supporting | 0 | ethereum | unit-239315 | `0x2cc440...f8afc3` | ✅ Audited |
-| USDe | unknown | project_anchor | own_supporting | 0 | ethereum | unit-239318 | `0x4c9edd...1e68b3` | ✅ Audited |
+| ENA | unknown | project_anchor | own_supporting | 0 | ethereum | unit-239319 | `0x57e114b691db790c35207b2e685d4a43181e6061` | ✅ Audited |
+| EthenaLPStaking | unknown | project_anchor | own_supporting | 0 | ethereum | unit-239323 | `0x8707f238936c12c309bfc2b9959c35828acfc512` | ✅ Audited |
+| EthenaMinting | unknown | project_anchor | own_supporting | 0 | ethereum | unit-239315 | `0x2cc440b721d2cafd6d64908d6d8c4acc57f8afc3` | ✅ Audited |
+| USDe | unknown | project_anchor | own_supporting | 0 | ethereum | unit-239318 | `0x4c9edd5852cd905f086c759e8383e09bff1e68b3` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (22)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ENAOFTAdapter | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-239320 | `0x58538e...9c0133` | ⚠️ Unaudited |
-| EthenaTimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7deee3...0175ae` | ⚠️ Unaudited |
-| EthenaWallet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcd1b8d...33a02e` | ⚠️ Unaudited |
-| GnosisSafe | unknown | project_anchor | own_supporting | 1 | ethereum | unit-239352 | `0x2b5ab5...5dd4d5` | ⚠️ Unaudited |
-| GnosisSafeProxy | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | mantle | unit-239353 | `0x799a2c...a060bb` | ⚠️ Unaudited |
-| GnosisSafeProxy | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | berachain | unit-239348 | `0x093d3f...b09364` | ⚠️ Unaudited |
-| Groth16Verifier | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8a526f...005234` | ⚠️ Unaudited |
-| MellowVaultCompat | unknown | project_anchor | own_supporting | 1 | ethereum | unit-239351 | `0xc65433...c47bd8` | ⚠️ Unaudited |
-| MockToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe90ec1...58d16b` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3c405f...9acd68` | ⚠️ Unaudited |
-| StakedENA | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7fd57b...e1018b` | ⚠️ Unaudited |
-| StakedUSDeOFTAdapter | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-239314 | `0x211cc4...5fe5d2` | ⚠️ Unaudited |
-| StakedUSDeV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6bf967...bac41d` | ⚠️ Unaudited |
-| StakingRewardsDistributor | unknown | project_anchor | own_supporting | 0 | ethereum | unit-239327 | `0xf2fa33...c6b439` | ⚠️ Unaudited |
-| TestnetERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xabb158...3cbea7` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x0795ab...aa28c3` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xc13919...18ac1c` | ⚠️ Unaudited |
-| UniswapV3Pool | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-239317 | `0x435664...2f1e47` | ⚠️ Unaudited |
-| USDeOFTAdapter | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-239321 | `0x5d3a1f...52ef34` | ⚠️ Unaudited |
-| USDtb | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xea8a76...39e475` | ⚠️ Unaudited |
-| USDtbMinting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa3ddbf...48416a` | ⚠️ Unaudited |
-| VaultRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x231fa7...331c3c` | ⚠️ Unaudited |
+| ENAOFTAdapter | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-239320 | `0x58538e6a46e07434d7e7375bc268d3cb839c0133` | ⚠️ Unaudited |
+| EthenaTimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7deee377b91fd419c8ff2257197ae457fe0175ae` | ⚠️ Unaudited |
+| EthenaWallet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcd1b8dc7813bb89e179c400e0b1d16cedf33a02e` | ⚠️ Unaudited |
+| GnosisSafe | unknown | project_anchor | own_supporting | 1 | ethereum | unit-239352 | `0x2b5ab59163a6e93b4486f6055d33ca4a115dd4d5` | ⚠️ Unaudited |
+| GnosisSafeProxy | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | mantle | unit-239353 | `0x799a2cd46cbc7fb53949072257e6331054a060bb` | ⚠️ Unaudited |
+| GnosisSafeProxy | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | berachain | unit-239348 | `0x093d3f4785149a3d2600cb10d63afa14f9b09364` | ⚠️ Unaudited |
+| Groth16Verifier | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8a526f919c391105ef251ddede15067027005234` | ⚠️ Unaudited |
+| MellowVaultCompat | unknown | project_anchor | own_supporting | 1 | ethereum | unit-239351 | `0xc65433845ecd16688eda196497fa9130d6c47bd8` | ⚠️ Unaudited |
+| MockToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe90ec12369fbbcbcdaaa320da59134281458d16b` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3c405f68d5c6ece868e5646cac926679839acd68` | ⚠️ Unaudited |
+| StakedENA | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7fd57b46ae1a7b14f6940508381877ee03e1018b` | ⚠️ Unaudited |
+| StakedUSDeOFTAdapter | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-239314 | `0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2` | ⚠️ Unaudited |
+| StakedUSDeV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6bf967288ffef9420b142fb97ccf236584bac41d` | ⚠️ Unaudited |
+| StakingRewardsDistributor | unknown | project_anchor | own_supporting | 0 | ethereum | unit-239327 | `0xf2fa332bd83149c66b09b45670bce64746c6b439` | ⚠️ Unaudited |
+| TestnetERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xabb15848b98d3ef7ad20a69127b003c7613cbea7` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x0795ab0dc75497a2c3f6345f2de0feef0eaa28c3` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xc139190f447e929f090edeb554d95abb8b18ac1c` | ⚠️ Unaudited |
+| UniswapV3Pool | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-239317 | `0x435664008f38b0650fbc1c9fc971d0a3bc2f1e47` | ⚠️ Unaudited |
+| USDeOFTAdapter | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-239321 | `0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34` | ⚠️ Unaudited |
+| USDtb | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xea8a763b5b1f9c9c7aea64f33947448d9e39e475` | ⚠️ Unaudited |
+| USDtbMinting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa3ddbf92077b850e29c4805df0a2459ae048416a` | ⚠️ Unaudited |
+| VaultRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x231fa76fd55284082ec5aba51272b9ff68331c3c` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -165,28 +165,28 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-239316 | `0x3b0aaf...dc1862` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-239322 | `0x71e4f9...2a3a87` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-239324 | `0x8be346...a7b3b9` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-239325 | `0x9d39a5...7a3497` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-239326 | `0xe34902...1b62d3` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | optimism | unit-239329 | `0xc66bbb...c160bd` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | manta-pacific | unit-239331 | `0xa408fd...2299ea` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | zksync-era | unit-239333 | `0x39fe7a...b3db0d` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | zksync-era | unit-239334 | `0x686b31...4cc25f` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | zksync-era | unit-239335 | `0xa026e9...2c609a` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | zksync-era | unit-239336 | `0xad17da...e36da8` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | metis | unit-239330 | `0x795db3...fc94e0` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | kava | unit-239332 | `0x10e921...9733b6` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-239350 | `0xbc89d1...dbf293` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | mode | unit-239337 | `0x273ced...07b2ea` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-239338 | `0x211cc4...5fe5d2` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-239339 | `0x58538e...9c0133` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-239340 | `0x5d3a1f...52ef34` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-239341 | `0xc96473...3c406d` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | linea | unit-239347 | `0xe1b9b4...ab9192` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | blast | unit-239349 | `0x689272...6cc9e3` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | scroll | unit-239346 | `0xafafc5...b8ffd6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-239316 | `0x3b0aaf6e6fcd4a7ceef8c92c32dfea9e64dc1862` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-239322 | `0x71e4f98e8f20c88112489de3dded4489802a3a87` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-239324 | `0x8be3460a480c80728a8c4d7a5d5303c85ba7b3b9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-239325 | `0x9d39a5de30e57443bff2a8307a4256c8797a3497` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-239326 | `0xe3490297a08d6fc8da46edb7b6142e4f461b62d3` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | optimism | unit-239329 | `0xc66bbbf821f2cfb3a85683acf0326eac92c160bd` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | manta-pacific | unit-239331 | `0xa408fd6724341b27f2e348faf9eccec04a2299ea` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | zksync-era | unit-239333 | `0x39fe7a0dacce31bd90418e3e659fb0b5f0b3db0d` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | zksync-era | unit-239334 | `0x686b311f82b407f0be842652a98e5619f64cc25f` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | zksync-era | unit-239335 | `0xa026e9a5e54e16349d7b594449f32901e02c609a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | zksync-era | unit-239336 | `0xad17da2f6ac76746ef261e835c50b2651ce36da8` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | metis | unit-239330 | `0x795db361ed5727f3f27dccde15b7d0d975fc94e0` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | kava | unit-239332 | `0x10e9219dd188d0f3af30824469dc874a539733b6` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-239350 | `0xbc89d10eb486b6591583f218acb9545087dbf293` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | mode | unit-239337 | `0x273ced5b9da8f5ba6e40c82c126898cb5307b2ea` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-239338 | `0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-239339 | `0x58538e6a46e07434d7e7375bc268d3cb839c0133` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-239340 | `0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-239341 | `0xc9647361742eb964965b461c44bdf5c4bc3c406d` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | linea | unit-239347 | `0xe1b9b4c7d664126bf4b6724deb59eb5f8aab9192` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | blast | unit-239349 | `0x689272b1d2b2f37a0b3fe1f5af0420c64f6cc9e3` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | scroll | unit-239346 | `0xafafc5d0df6830052988c76dd8d0dfa7f5b8ffd6` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -243,33 +243,33 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Ethena x Zellic - Audit Report | AstEth | unmatched — not counted | — | Threat Model section 5.1 Module: AstEth.sol | no |
 | Ethena x Zellic - Audit Report | EUSDAToken | unmatched — not counted | — | Threat Model section 5.2 Module: EUSDAToken.sol | no |
 | Ethena x Zellic - Audit Report | EUSDVariableDebtToken | unmatched — not counted | — | Threat Model section 5.3 Module: EUSDVariableDebtToken.sol | no |
-| Ethena x Zellic - Audit Report | EthenaMinting | own contract | EthenaMinting (selected) `0x2cc440...f8afc3` — deployed 2023-11-14 19:46:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Ethena x Zellic - Audit Report | EthenaMinting | own contract | EthenaMinting (selected) `0x2cc440b721d2cafd6d64908d6d8c4acc57f8afc3` — deployed 2023-11-14 19:46:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Ethena x Zellic - Audit Report | EthenaStaking | unmatched — not counted | — | Scope section lists EthenaStaking; Threat Model section 5.5 | no |
 | Ethena x Zellic - Audit Report | StEthVariableDebtToken | unmatched — not counted | — | Threat Model section 5.6 Module: StEthVariableDebtToken.sol | no |
-| Ethena x Quantstamp - Audit Report | EthenaMinting | own contract | EthenaMinting (selected) `0x2cc440...f8afc3` — deployed 2023-11-14 19:46:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Ethena x Quantstamp - Audit Report | USDe | own contract | USDe (selected) `0x4c9edd...1e68b3` — deployed 2023-11-14 19:32:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Ethena x Quantstamp - Audit Report | EthenaMinting | own contract | EthenaMinting (selected) `0x2cc440b721d2cafd6d64908d6d8c4acc57f8afc3` — deployed 2023-11-14 19:46:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Ethena x Quantstamp - Audit Report | USDe | own contract | USDe (selected) `0x4c9edd5852cd905f086c759e8383e09bff1e68b3` — deployed 2023-11-14 19:32:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Ethena x Quantstamp - Audit Report | StakedUSDe | unmatched — not counted | — | listed in scope | no |
 | Ethena x Quantstamp - Audit Report | StakedUSDeV2 | unmatched — not counted | — | mentioned in findings | no |
 | Ethena x Quantstamp - Audit Report | USDeSilo | unmatched — not counted | — | mentioned in findings | no |
 | Ethena x Quantstamp - Audit Report | SingleAdminAccessControl | unmatched — not counted | — | mentioned in code coverage | no |
 | Spearbit x Ethena - Audit Report | StakedUSDe | unmatched — not counted | — | mentioned in findings context | no |
 | Spearbit x Ethena - Audit Report | StakedUSDeV2 | unmatched — not counted | — | mentioned in findings context | no |
-| Spearbit x Ethena - Audit Report | EthenaMinting | own contract | EthenaMinting (selected) `0x2cc440...f8afc3` — deployed 2023-11-14 19:46:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Spearbit x Ethena - Audit Report | USDe | own contract | USDe (selected) `0x4c9edd...1e68b3` — deployed 2023-11-14 19:32:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Spearbit x Ethena - Audit Report | EthenaMinting | own contract | EthenaMinting (selected) `0x2cc440b721d2cafd6d64908d6d8c4acc57f8afc3` — deployed 2023-11-14 19:46:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Spearbit x Ethena - Audit Report | USDe | own contract | USDe (selected) `0x4c9edd5852cd905f086c759e8383e09bff1e68b3` — deployed 2023-11-14 19:32:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Spearbit x Ethena - Audit Report | USDeSilo | unmatched — not counted | — | mentioned in findings context | no |
 | Spearbit x Ethena - Audit Report | IStakedUSDeCooldown | unmatched — not counted | — | mentioned in findings context | no |
 | Spearbit x Ethena - Audit Report | IEthenaMintingEvents | unmatched — not counted | — | mentioned in findings context | no |
 | Spearbit x Ethena - Audit Report | IStakedUSDe | unmatched — not counted | — | mentioned in findings context | no |
 | Spearbit x Ethena - Audit Report | IEthenaMinting | unmatched — not counted | — | mentioned in findings context | no |
 | Spearbit x Ethena - Audit Report | IUSDe | unmatched — not counted | — | mentioned in findings context | no |
-| Ethena x Pashov - Audit Report | EthenaMinting | own contract | EthenaMinting (selected) `0x2cc440...f8afc3` — deployed 2023-11-14 19:46:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Ethena x Pashov - Audit Report | USDe | own contract | USDe (selected) `0x4c9edd...1e68b3` — deployed 2023-11-14 19:32:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Ethena x Pashov - Audit Report | EthenaMinting | own contract | EthenaMinting (selected) `0x2cc440b721d2cafd6d64908d6d8c4acc57f8afc3` — deployed 2023-11-14 19:46:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Ethena x Pashov - Audit Report | USDe | own contract | USDe (selected) `0x4c9edd5852cd905f086c759e8383e09bff1e68b3` — deployed 2023-11-14 19:32:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Ethena x Pashov - Audit Report | StakedUSDe | unmatched — not counted | — | listed in scope | no |
 | Ethena x Pashov - Audit Report | StakedUSDeV2 | unmatched — not counted | — | listed in scope | no |
 | Ethena x Pashov - Audit Report | SingleAdminAccessControl | unmatched — not counted | — | listed in scope | no |
-| Ethena-security-review (1).pdf | EthenaLPStaking | own contract | EthenaLPStaking (selected) `0x8707f2...cfc512` — deployed 2024-01-09 20:26:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Ethena-security-review (1).pdf | ENA | own contract | ENA (selected) `0x57e114...1e6061` — deployed 2024-03-06 00:29:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| v2-audit.pdf | EthenaMinting | own contract | EthenaMinting (selected) `0x2cc440...f8afc3` — deployed 2023-11-14 19:46:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Ethena-security-review (1).pdf | EthenaLPStaking | own contract | EthenaLPStaking (selected) `0x8707f238936c12c309bfc2b9959c35828acfc512` — deployed 2024-01-09 20:26:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Ethena-security-review (1).pdf | ENA | own contract | ENA (selected) `0x57e114b691db790c35207b2e685d4a43181e6061` — deployed 2024-03-06 00:29:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| v2-audit.pdf | EthenaMinting | own contract | EthenaMinting (selected) `0x2cc440b721d2cafd6d64908d6d8c4acc57f8afc3` — deployed 2023-11-14 19:46:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | v2-audit.pdf | SingleAdminAccessControl | unmatched — not counted | — | listed in scope section | no |
 | Ethena x Pashov - SENA Audit Report.pdf | StakedENA | unmatched — not counted | — | listed in scope section | no |
 | Ethena x Pashov - SENA Audit Report.pdf | DeployStakedENA | unmatched — not counted | — | listed in scope section | no |
@@ -291,20 +291,20 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Ethena x Pashov - USTB.pdf | SingleAdminAccesscontrolUpgradeable | unmatched — not counted | — | listed in scope | no |
 | Ethena x Pashov - USTB.pdf | UStb | unmatched — not counted | — | listed in scope | no |
 | Ethena x Pashov - USTB.pdf | UStbMinting | unmatched — not counted | — | listed in scope | no |
-| View report | USDe | own contract | USDe (selected) `0x4c9edd...1e68b3` — deployed 2023-11-14 19:32:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| View report | EthenaMinting | own contract | EthenaMinting (selected) `0x2cc440...f8afc3` — deployed 2023-11-14 19:46:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| View report | USDe | own contract | USDe (selected) `0x4c9edd5852cd905f086c759e8383e09bff1e68b3` — deployed 2023-11-14 19:32:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| View report | EthenaMinting | own contract | EthenaMinting (selected) `0x2cc440b721d2cafd6d64908d6d8c4acc57f8afc3` — deployed 2023-11-14 19:46:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | View report | StakedUSDe | unmatched — not counted | — | listed in scope | no |
 | View report | StakedUSDeV2 | unmatched — not counted | — | listed in scope | no |
 | View report | USDeSilo | unmatched — not counted | — | listed in scope | no |
 | View report | SingleAdminAccessControl | unmatched — not counted | — | mentioned in analysis | no |
-| 4naly3er-report.md | EthenaMinting | own contract | EthenaMinting (selected) `0x2cc440...f8afc3` — deployed 2023-11-14 19:46:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 4naly3er-report.md | EthenaMinting | own contract | EthenaMinting (selected) `0x2cc440b721d2cafd6d64908d6d8c4acc57f8afc3` — deployed 2023-11-14 19:46:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 4naly3er-report.md | SingleAdminAccessControl | unmatched — not counted | — | listed in scope | no |
 | 4naly3er-report.md | StakedUSDe | unmatched — not counted | — | listed in scope | no |
 | 4naly3er-report.md | StakedUSDeV2 | unmatched — not counted | — | listed in scope | no |
-| 4naly3er-report.md | USDe | own contract | USDe (selected) `0x4c9edd...1e68b3` — deployed 2023-11-14 19:32:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 4naly3er-report.md | USDe | own contract | USDe (selected) `0x4c9edd5852cd905f086c759e8383e09bff1e68b3` — deployed 2023-11-14 19:32:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 4naly3er-report.md | USDeSilo | unmatched — not counted | — | listed in scope | no |
-| bot-report.md | USDe | own contract | USDe (selected) `0x4c9edd...1e68b3` — deployed 2023-11-14 19:32:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| bot-report.md | EthenaMinting | own contract | EthenaMinting (selected) `0x2cc440...f8afc3` — deployed 2023-11-14 19:46:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| bot-report.md | USDe | own contract | USDe (selected) `0x4c9edd5852cd905f086c759e8383e09bff1e68b3` — deployed 2023-11-14 19:32:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| bot-report.md | EthenaMinting | own contract | EthenaMinting (selected) `0x2cc440b721d2cafd6d64908d6d8c4acc57f8afc3` — deployed 2023-11-14 19:46:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | bot-report.md | StakedUSDe | unmatched — not counted | — | listed in findings | no |
 | bot-report.md | StakedUSDeV2 | unmatched — not counted | — | listed in findings | no |
 | bot-report.md | USDeSilo | unmatched — not counted | — | listed in findings | no |
@@ -317,8 +317,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0xc65433...c47bd8` | MellowVaultCompat | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xf2fa33...c6b439` | StakingRewardsDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xc65433845ecd16688eda196497fa9130d6c47bd8` | MellowVaultCompat | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xf2fa332bd83149c66b09b45670bce64746c6b439` | StakingRewardsDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

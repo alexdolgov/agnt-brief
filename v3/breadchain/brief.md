@@ -52,11 +52,11 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x680b58...e90865`, chain 100)
-- CurveStableSwapNG (`0xf3d8f3...eac6b4`, chain 100)
-- EIP173ProxyWithReceive (`0xa555d5...1a5ee3`, chain 100)
-- SavingsXDaiAdapter (`0xd499b5...591a94`, chain 100)
-- TransparentUpgradeableProxy (`0xee95a6...69024b`, chain 100)
+- UnnamedContract (`0x680b581605dc0a6902735a80de35cb0ef6e90865`, chain 100)
+- CurveStableSwapNG (`0xf3d8f3de71657d342db60dd714c8a2ae37eac6b4`, chain 100)
+- EIP173ProxyWithReceive (`0xa555d5344f6fb6c65da19e403cb4c1ec4a1a5ee3`, chain 100)
+- SavingsXDaiAdapter (`0xd499b51fcfc66bd31248ef4b28d656d67e591a94`, chain 100)
+- TransparentUpgradeableProxy (`0xee95a62b749d8a2520e0128d9b3aca241269024b`, chain 100)
 
 ## Contract Surface Quality
 
@@ -102,10 +102,10 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Bread | unknown | project_anchor | own_supporting | 1 | gnosis | unit-381518 | `0xa555d5...1a5ee3` | ⚠️ Unaudited |
-| CurveStableSwapNG | unknown | project_anchor | own_supporting | 0 | gnosis | unit-381515 | `0xf3d8f3...eac6b4` | ⚠️ Unaudited |
-| SavingsXDaiAdapter | unknown | project_anchor | own_supporting | 0 | gnosis | unit-381514 | `0xd499b5...591a94` | ⚠️ Unaudited |
-| YieldDistributor | unknown | project_anchor | own_supporting | 1 | gnosis | unit-381517 | `0xee95a6...69024b` | ⚠️ Unaudited |
+| Bread | unknown | project_anchor | own_supporting | 1 | gnosis | unit-381518 | `0xa555d5344f6fb6c65da19e403cb4c1ec4a1a5ee3` | ⚠️ Unaudited |
+| CurveStableSwapNG | unknown | project_anchor | own_supporting | 0 | gnosis | unit-381515 | `0xf3d8f3de71657d342db60dd714c8a2ae37eac6b4` | ⚠️ Unaudited |
+| SavingsXDaiAdapter | unknown | project_anchor | own_supporting | 0 | gnosis | unit-381514 | `0xd499b51fcfc66bd31248ef4b28d656d67e591a94` | ⚠️ Unaudited |
+| YieldDistributor | unknown | project_anchor | own_supporting | 1 | gnosis | unit-381517 | `0xee95a62b749d8a2520e0128d9b3aca241269024b` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -125,8 +125,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ButteredBread | unknown | project_anchor | own_supporting | 1 | gnosis | unit-381519 | `0x680b58...e90865` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-381516 | `0x689666...4c1646` | ❓ Unverified |
+| ButteredBread | unknown | project_anchor | own_supporting | 1 | gnosis | unit-381519 | `0x680b581605dc0a6902735a80de35cb0ef6e90865` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-381516 | `0x689666145b8e80f705b87f4e4190820d9a4c1646` | ❓ Unverified |
 
 ## Audit Inventory
 

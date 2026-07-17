@@ -59,13 +59,13 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| F3 | unknown | bsc | n/a | [`0x9e57e8...00e167`](./contracts/bsc-56/0x9e57e83ad79ac5312ba82940ba037ed30600e167/) | ✅ Audited |
+| F3 | unknown | bsc | n/a | [`0x9e57e83ad79ac5312ba82940ba037ed30600e167`](./contracts/bsc-56/0x9e57e83ad79ac5312ba82940ba037ed30600e167/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Friend3V1 | unknown | bsc | n/a | [`0x1e7097...b3bd5d`](./contracts/bsc-56/0x1e70972ec6c8a3fae3ac34c9f3818ec46eb3bd5d/) | ⚠️ Unaudited |
+| Friend3V1 | unknown | bsc | n/a | [`0x1e70972ec6c8a3fae3ac34c9f3818ec46eb3bd5d`](./contracts/bsc-56/0x1e70972ec6c8a3fae3ac34c9f3818ec46eb3bd5d/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -85,8 +85,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | opbnb | n/a | `0x2c5bf6...6b29f0` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x55f904...a0ca3b` | ❓ Unverified |
+| UnnamedContract | unknown | opbnb | n/a | `0x2c5bf6f0953ffcde678a35ab7d6caebc8b6b29f0` | ❓ Unverified |
+| UnnamedContract | unknown | opbnb | n/a | `0x55f9045f1d33928bd978efa42ae77e0d3ba0ca3b` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -103,7 +103,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x1e7097...b3bd5d`](./contracts/bsc-56/0x1e70972ec6c8a3fae3ac34c9f3818ec46eb3bd5d/) | Friend3V1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x1e70972ec6c8a3fae3ac34c9f3818ec46eb3bd5d`](./contracts/bsc-56/0x1e70972ec6c8a3fae3ac34c9f3818ec46eb3bd5d/) | Friend3V1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

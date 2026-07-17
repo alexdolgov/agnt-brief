@@ -48,8 +48,8 @@ The pinned logic-topography run contains 29 contract row(s) across blast, bsc. S
 
 ### Forked Contracts
 
-**CTFExchange** (`0x6beb5a...decfa5`, chain 56)
-Origin: limitless-exchange (`0x46e607...48891d`)
+**CTFExchange** (`0x6beb5a40c032afc305961162d8204cda16decfa5`, chain 56)
+Origin: limitless-exchange (`0x46e607d3f4a8494b0ab9b304d1463e2f4848891d`)
 Containment: 100.0% - 35 functions inherited
 Centroid audit status: pending_validation
 
@@ -57,8 +57,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**CTFExchange** (`0x8bc070...94b689`, chain 56)
-Origin: limitless-exchange (`0x46e607...48891d`)
+**CTFExchange** (`0x8bc070bedab741406f4b1eb65a72bee27894b689`, chain 56)
+Origin: limitless-exchange (`0x46e607d3f4a8494b0ab9b304d1463e2f4848891d`)
 Containment: 100.0% - 35 functions inherited
 Centroid audit status: pending_validation
 
@@ -66,8 +66,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**NegRiskAdapter** (`0xc3cf7c...7f1a6e`, chain 56)
-Origin: predict-fun (`0x41dce1...0b2a40`)
+**NegRiskAdapter** (`0xc3cf7c252f65e0d8d88537df96569ae94a7f1a6e`, chain 56)
+Origin: predict-fun (`0x41dce1a4b8fb5e6327701750af6231b7cd0b2a40`)
 Containment: 100.0% - 27 functions inherited
 Centroid audit status: pending_validation
 
@@ -75,8 +75,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**NegRiskCtfExchange** (`0x365fb8...d8d58a`, chain 56)
-Origin: limitless-exchange (`0x46e607...48891d`)
+**NegRiskCtfExchange** (`0x365fb81bd4a24d6303cd2f19c349de6894d8d58a`, chain 56)
+Origin: limitless-exchange (`0x46e607d3f4a8494b0ab9b304d1463e2f4848891d`)
 Containment: 100.0% - 35 functions inherited
 Centroid audit status: pending_validation
 
@@ -84,8 +84,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**NegRiskCtfExchange** (`0x8a289d...81b41d`, chain 56)
-Origin: limitless-exchange (`0x46e607...48891d`)
+**NegRiskCtfExchange** (`0x8a289d458f5a134ba40015085a8f50ffb681b41d`, chain 56)
+Origin: limitless-exchange (`0x46e607d3f4a8494b0ab9b304d1463e2f4848891d`)
 Containment: 100.0% - 35 functions inherited
 Centroid audit status: pending_validation
 
@@ -93,8 +93,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**UmaCompatibleCtfAdapter** (`0x242e1b...22613d`, chain 56)
-Origin: predict-fun (`0x7c7818...54df64`)
+**UmaCompatibleCtfAdapter** (`0x242e1ba24f6fc524bfb410062ca5689a9622613d`, chain 56)
+Origin: predict-fun (`0x7c7818b14628842708a9ddb99a21d13c5354df64`)
 Containment: 100.0% - 19 functions inherited
 Centroid audit status: pending_validation
 
@@ -102,8 +102,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**UmaCompatibleCtfAdapter** (`0x26b366...df8172`, chain 56)
-Origin: predict-fun (`0x7c7818...54df64`)
+**UmaCompatibleCtfAdapter** (`0x26b366ab634c43bda6d784fdce34f24a37df8172`, chain 56)
+Origin: predict-fun (`0x7c7818b14628842708a9ddb99a21d13c5354df64`)
 Containment: 100.0% - 19 functions inherited
 Centroid audit status: pending_validation
 
@@ -111,8 +111,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**UmaCompatibleCtfAdapter** (`0x947cc0...53d7b4`, chain 56)
-Origin: predict-fun (`0x7c7818...54df64`)
+**UmaCompatibleCtfAdapter** (`0x947cc06d38d3cb0a2bb5adfb668b99b4ff53d7b4`, chain 56)
+Origin: predict-fun (`0x7c7818b14628842708a9ddb99a21d13c5354df64`)
 Containment: 100.0% - 19 functions inherited
 Centroid audit status: pending_validation
 
@@ -120,8 +120,8 @@ Additions (unaudited): none
 
 Removals (removed from original): none
 
-**UmaCompatibleCtfAdapter** (`0xf61198...17902f`, chain 56)
-Origin: predict-fun (`0x7c7818...54df64`)
+**UmaCompatibleCtfAdapter** (`0xf61198a64c2e4cad8ccaf218f3f2ecefb017902f`, chain 56)
+Origin: predict-fun (`0x7c7818b14628842708a9ddb99a21d13c5354df64`)
 Containment: 100.0% - 19 functions inherited
 Centroid audit status: pending_validation
 
@@ -131,26 +131,26 @@ Removals (removed from original): none
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- ConditionalTokens (`0x22da18...c9d244`, chain 56)
-- ConditionalTokens (`0xf64b0b...19a07f`, chain 56)
-- ConditionalTokensFeesHandler (`0xb4d9f1...645f6e`, chain 56)
-- ConditionalTokensFeesHandler (`0xd63206...e64030`, chain 56)
-- FeeModuleV2 (`0xf1f8f5...fa9783`, chain 56)
-- FeeModuleV2 (`0xfbc225...7ba34f`, chain 56)
-- NegRiskFeeModuleV2 (`0xd172f3...da6057`, chain 56)
-- NegRiskFeeModuleV2 (`0xf2311c...b3132f`, chain 56)
-- NegRiskOperator (`0x56020f...6ecffd`, chain 56)
-- NegRiskOperator (`0xbb7250...e3e175`, chain 56)
-- RegisterTokenHelper (`0x89f92c...fd8e5e`, chain 56)
-- RegisterTokenHelper (`0xa48c26...9c2089`, chain 56)
-- RewardDistributor (`0x14e3cb...d436ae`, chain 56)
-- UmaCompatibleOptimisticOracle (`0x76f42e...ec2531`, chain 56)
-- Vault (`0x09f683...7410c5`, chain 56)
-- WrappedCollateral (`0x66239b...cd39e7`, chain 56)
-- YieldBearingConditionalTokens (`0x9400f8...eb1d9f`, chain 56)
-- YieldBearingNegRiskAdapter (`0x41dce1...0b2a40`, chain 56)
-- YieldBearingWrappedCollateral (`0xcfb9be...3334d9`, chain 56)
-- ZeroDevWithdrawalHelper (`0xf4aa30...a77b00`, chain 56)
+- ConditionalTokens (`0x22da1810b194ca018378464a58f6ac2b10c9d244`, chain 56)
+- ConditionalTokens (`0xf64b0b318aaf83bd9071110af24d24445719a07f`, chain 56)
+- ConditionalTokensFeesHandler (`0xb4d9f13738a50e88e0ade2eccc89254ef1645f6e`, chain 56)
+- ConditionalTokensFeesHandler (`0xd63206243192f1af3d6fc4442db4e3cf25e64030`, chain 56)
+- FeeModuleV2 (`0xf1f8f5c641f20c48526269ef7dff19172efa9783`, chain 56)
+- FeeModuleV2 (`0xfbc2259abb3f01c019ece1d0200ee673bb7ba34f`, chain 56)
+- NegRiskFeeModuleV2 (`0xd172f3fbabe763ee8e52d8b32421574236da6057`, chain 56)
+- NegRiskFeeModuleV2 (`0xf2311c668aaa8dec48d5da577d3018eb94b3132f`, chain 56)
+- NegRiskOperator (`0x56020f5024641d577cb54032af70a23a986ecffd`, chain 56)
+- NegRiskOperator (`0xbb7250101e0e3611d7e136ffe73bc24b98e3e175`, chain 56)
+- RegisterTokenHelper (`0x89f92c3c27f18080af1361024c6a892144fd8e5e`, chain 56)
+- RegisterTokenHelper (`0xa48c26abd9024a5cc5a869bbd97a6a3d6b9c2089`, chain 56)
+- RewardDistributor (`0x14e3cb02f48818a8fef6bc257059767ca9d436ae`, chain 56)
+- UmaCompatibleOptimisticOracle (`0x76f42e5520e62ad88f8fe583cbb4bff27eec2531`, chain 56)
+- Vault (`0x09f683d8a144c4ac296d770f839098c3377410c5`, chain 56)
+- WrappedCollateral (`0x66239b70133773a72a0d589e5564e88a50cd39e7`, chain 56)
+- YieldBearingConditionalTokens (`0x9400f8ad57e9e0f352345935d6d3175975eb1d9f`, chain 56)
+- YieldBearingNegRiskAdapter (`0x41dce1a4b8fb5e6327701750af6231b7cd0b2a40`, chain 56)
+- YieldBearingWrappedCollateral (`0xcfb9bef5f7b748ac72311f057f3a888bc73334d9`, chain 56)
+- ZeroDevWithdrawalHelper (`0xf4aa30b537882eca7e69defb68d6f631cda77b00`, chain 56)
 
 ## Contract Surface Quality
 
@@ -196,53 +196,53 @@ Removals (removed from original): none
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| NegRiskAdapter | adapter | project_anchor | own_supporting | 0 | bsc | unit-391170 | `0xc3cf7c...7f1a6e` | ✅ Audited |
-| UmaCompatibleOptimisticOracle | operational_periphery | project_anchor | own_supporting | 0 | bsc | unit-391161 | `0x76f42e...ec2531` | ✅ Audited |
-| YieldBearingConditionalTokens | token | project_anchor | own_supporting | 0 | bsc | unit-391165 | `0x9400f8...eb1d9f` | ✅ Audited |
-| YieldBearingNegRiskAdapter | adapter | project_anchor | own_supporting | 0 | bsc | unit-391157 | `0x41dce1...0b2a40` | ✅ Audited |
-| YieldBearingWrappedCollateral | unknown | project_anchor | own_supporting | 0 | bsc | unit-391171 | `0xcfb9be...3334d9` | ✅ Audited |
+| NegRiskAdapter | adapter | project_anchor | own_supporting | 0 | bsc | unit-391170 | `0xc3cf7c252f65e0d8d88537df96569ae94a7f1a6e` | ✅ Audited |
+| UmaCompatibleOptimisticOracle | operational_periphery | project_anchor | own_supporting | 0 | bsc | unit-391161 | `0x76f42e5520e62ad88f8fe583cbb4bff27eec2531` | ✅ Audited |
+| YieldBearingConditionalTokens | token | project_anchor | own_supporting | 0 | bsc | unit-391165 | `0x9400f8ad57e9e0f352345935d6d3175975eb1d9f` | ✅ Audited |
+| YieldBearingNegRiskAdapter | adapter | project_anchor | own_supporting | 0 | bsc | unit-391157 | `0x41dce1a4b8fb5e6327701750af6231b7cd0b2a40` | ✅ Audited |
+| YieldBearingWrappedCollateral | unknown | project_anchor | own_supporting | 0 | bsc | unit-391171 | `0xcfb9bef5f7b748ac72311f057f3a888bc73334d9` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (37)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AddressFinder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xc31bb9...b6f24a` | ⚠️ Unaudited |
-| AdminAdapter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x69e6be...868c4a` | ⚠️ Unaudited |
-| ConditionalTokens | token | project_anchor | own_supporting | 0 | bsc | unit-391153 | `0x22da18...c9d244` | ⚠️ Unaudited |
-| ConditionalTokens | token | project_anchor | own_supporting | 0 | bsc | unit-391178 | `0xf64b0b...19a07f` | ⚠️ Unaudited |
-| ConditionalTokensFeesHandler | token | project_anchor | own_supporting | 0 | bsc | unit-391168 | `0xb4d9f1...645f6e` | ⚠️ Unaudited |
-| ConditionalTokensFeesHandler | token | project_anchor | own_supporting | 0 | bsc | unit-391173 | `0xd63206...e64030` | ⚠️ Unaudited |
-| ConditionalTokensFeesHandlerV2 | token | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 5 deployments: bsc `0x13ba3d...81d8fa`; bsc `0x2d4370...24093e`; bsc `0x57f12f...883ab2`; bsc `0x7bd1a1...252b84`; bsc `0xd573f4...2b5f3b` | ⚠️ Unaudited |
-| CTFAutoRedemptionHelper | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0x6422e0...f235e3`; bsc `0xfca64d...47cbec` | ⚠️ Unaudited |
-| CTFExchange | unknown | project_anchor | own_supporting | 0 | bsc | unit-391160 | `0x6beb5a...decfa5` | ⚠️ Unaudited |
-| CTFExchange | unknown | project_anchor | own_supporting | 0 | bsc | unit-391164 | `0x8bc070...94b689` | ⚠️ Unaudited |
-| FeeModuleV2 | unknown | project_anchor | own_supporting | 0 | bsc | unit-391174 | `0xf1f8f5...fa9783` | ⚠️ Unaudited |
-| FeeModuleV2 | unknown | project_anchor | own_supporting | 0 | bsc | unit-391179 | `0xfbc225...7ba34f` | ⚠️ Unaudited |
-| FeeModuleV2Adapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc63467...49a7b6` | ⚠️ Unaudited |
-| FeeModuleV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0xdcffeb...4891a1`; bsc `0xf291a6...f0a279` | ⚠️ Unaudited |
-| NegRiskCtfExchange | unknown | project_anchor | own_supporting | 0 | bsc | unit-391156 | `0x365fb8...d8d58a` | ⚠️ Unaudited |
-| NegRiskCtfExchange | unknown | project_anchor | own_supporting | 0 | bsc | unit-391163 | `0x8a289d...81b41d` | ⚠️ Unaudited |
-| NegRiskFeeModuleV2 | unknown | project_anchor | own_supporting | 0 | bsc | unit-391172 | `0xd172f3...da6057` | ⚠️ Unaudited |
-| NegRiskFeeModuleV2 | unknown | project_anchor | own_supporting | 0 | bsc | unit-391175 | `0xf2311c...b3132f` | ⚠️ Unaudited |
-| NegRiskFeeModuleV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0x098994...a5fd63`; bsc `0x765636...73768e` | ⚠️ Unaudited |
-| NegRiskOperator | unknown | project_anchor | own_supporting | 0 | bsc | unit-391158 | `0x56020f...6ecffd` | ⚠️ Unaudited |
-| NegRiskOperator | unknown | project_anchor | own_supporting | 0 | bsc | unit-391169 | `0xbb7250...e3e175` | ⚠️ Unaudited |
-| RegisterTokenHelper | token | project_anchor | own_supporting | 0 | bsc | unit-391162 | `0x89f92c...fd8e5e` | ⚠️ Unaudited |
-| RegisterTokenHelper | token | project_anchor | own_supporting | 0 | bsc | unit-391167 | `0xa48c26...9c2089` | ⚠️ Unaudited |
-| RegisterTokenHelper | token | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x54dc9c...4cb63a` | ⚠️ Unaudited |
-| RewardDistributor | operational_periphery | project_anchor | own_supporting | 0 | bsc | unit-391152 | `0x14e3cb...d436ae` | ⚠️ Unaudited |
-| RewardDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0x54870a...f77a3c`; blast `0xfebfe1...dba20d` | ⚠️ Unaudited |
-| ThreePoAdapter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe82ae4...06f28c` | ⚠️ Unaudited |
-| UmaCompatibleCtfAdapter | adapter | project_anchor | own_supporting | 0 | bsc | unit-391154 | `0x242e1b...22613d` | ⚠️ Unaudited |
-| UmaCompatibleCtfAdapter | adapter | project_anchor | own_supporting | 0 | bsc | unit-391155 | `0x26b366...df8172` | ⚠️ Unaudited |
-| UmaCompatibleCtfAdapter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 4 deployments: bsc `0x2c8635...6a0388`; bsc `0x7c7818...54df64`; bsc `0xb51797...4641cf`; bsc `0xe338e6...e3eb27` | ⚠️ Unaudited |
-| UmaCompatibleCtfAdapter | adapter | project_anchor | own_supporting | 0 | bsc | unit-391166 | `0x947cc0...53d7b4` | ⚠️ Unaudited |
-| UmaCompatibleCtfAdapter | adapter | project_anchor | own_supporting | 0 | bsc | unit-391177 | `0xf61198...17902f` | ⚠️ Unaudited |
-| Vault | core_logic | project_anchor | own_supporting | 0 | bsc | unit-391151 | `0x09f683...7410c5` | ⚠️ Unaudited |
-| Vault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xfcba72...c8de7a` | ⚠️ Unaudited |
-| WrappedCollateral | unknown | project_anchor | own_supporting | 0 | bsc | unit-391159 | `0x66239b...cd39e7` | ⚠️ Unaudited |
-| ZeroDevWithdrawalHelper | operational_periphery | project_anchor | own_supporting | 0 | bsc | unit-391176 | `0xf4aa30...a77b00` | ⚠️ Unaudited |
-| ZeroDevWithdrawalHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 3 deployments: blast `0x834b7e...8600de`; blast `0xc45343...bde7fd`; blast `0xd25366...e71d37` | ⚠️ Unaudited |
+| AddressFinder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xc31bb90ee75706911faf6b831699026e5eb6f24a` | ⚠️ Unaudited |
+| AdminAdapter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x69e6bef6c94ee41e09db3e828eb9560e34868c4a` | ⚠️ Unaudited |
+| ConditionalTokens | token | project_anchor | own_supporting | 0 | bsc | unit-391153 | `0x22da1810b194ca018378464a58f6ac2b10c9d244` | ⚠️ Unaudited |
+| ConditionalTokens | token | project_anchor | own_supporting | 0 | bsc | unit-391178 | `0xf64b0b318aaf83bd9071110af24d24445719a07f` | ⚠️ Unaudited |
+| ConditionalTokensFeesHandler | token | project_anchor | own_supporting | 0 | bsc | unit-391168 | `0xb4d9f13738a50e88e0ade2eccc89254ef1645f6e` | ⚠️ Unaudited |
+| ConditionalTokensFeesHandler | token | project_anchor | own_supporting | 0 | bsc | unit-391173 | `0xd63206243192f1af3d6fc4442db4e3cf25e64030` | ⚠️ Unaudited |
+| ConditionalTokensFeesHandlerV2 | token | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 5 deployments: bsc `0x13ba3d9f7da3f8ae955df4f01f01d7218f81d8fa`; bsc `0x2d4370431b5cd3d2ee4ab11f66369b8ed424093e`; bsc `0x57f12f4b39a16e13994f9bd95246a32c85883ab2`; bsc `0x7bd1a130c2206071121c0f1ef9666d4584252b84`; bsc `0xd573f448d1b5fa0f12a7ddc8c1208eb4b92b5f3b` | ⚠️ Unaudited |
+| CTFAutoRedemptionHelper | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0x6422e0ad3deb7de5c3bdb5c9b517bceb72f235e3`; bsc `0xfca64d34859b120c36426d41f941e708ea47cbec` | ⚠️ Unaudited |
+| CTFExchange | unknown | project_anchor | own_supporting | 0 | bsc | unit-391160 | `0x6beb5a40c032afc305961162d8204cda16decfa5` | ⚠️ Unaudited |
+| CTFExchange | unknown | project_anchor | own_supporting | 0 | bsc | unit-391164 | `0x8bc070bedab741406f4b1eb65a72bee27894b689` | ⚠️ Unaudited |
+| FeeModuleV2 | unknown | project_anchor | own_supporting | 0 | bsc | unit-391174 | `0xf1f8f5c641f20c48526269ef7dff19172efa9783` | ⚠️ Unaudited |
+| FeeModuleV2 | unknown | project_anchor | own_supporting | 0 | bsc | unit-391179 | `0xfbc2259abb3f01c019ece1d0200ee673bb7ba34f` | ⚠️ Unaudited |
+| FeeModuleV2Adapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc6346768b256b1c3f4a6c521b5f466f9a849a7b6` | ⚠️ Unaudited |
+| FeeModuleV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0xdcffeb0c30263888a48485a664ec9563a54891a1`; bsc `0xf291a67165d751a2e7b4da4f0a012449eef0a279` | ⚠️ Unaudited |
+| NegRiskCtfExchange | unknown | project_anchor | own_supporting | 0 | bsc | unit-391156 | `0x365fb81bd4a24d6303cd2f19c349de6894d8d58a` | ⚠️ Unaudited |
+| NegRiskCtfExchange | unknown | project_anchor | own_supporting | 0 | bsc | unit-391163 | `0x8a289d458f5a134ba40015085a8f50ffb681b41d` | ⚠️ Unaudited |
+| NegRiskFeeModuleV2 | unknown | project_anchor | own_supporting | 0 | bsc | unit-391172 | `0xd172f3fbabe763ee8e52d8b32421574236da6057` | ⚠️ Unaudited |
+| NegRiskFeeModuleV2 | unknown | project_anchor | own_supporting | 0 | bsc | unit-391175 | `0xf2311c668aaa8dec48d5da577d3018eb94b3132f` | ⚠️ Unaudited |
+| NegRiskFeeModuleV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0x0989942f8e5b778e804858a0cc791b4469a5fd63`; bsc `0x7656365013faa8b6d6d2ec4368977921c273768e` | ⚠️ Unaudited |
+| NegRiskOperator | unknown | project_anchor | own_supporting | 0 | bsc | unit-391158 | `0x56020f5024641d577cb54032af70a23a986ecffd` | ⚠️ Unaudited |
+| NegRiskOperator | unknown | project_anchor | own_supporting | 0 | bsc | unit-391169 | `0xbb7250101e0e3611d7e136ffe73bc24b98e3e175` | ⚠️ Unaudited |
+| RegisterTokenHelper | token | project_anchor | own_supporting | 0 | bsc | unit-391162 | `0x89f92c3c27f18080af1361024c6a892144fd8e5e` | ⚠️ Unaudited |
+| RegisterTokenHelper | token | project_anchor | own_supporting | 0 | bsc | unit-391167 | `0xa48c26abd9024a5cc5a869bbd97a6a3d6b9c2089` | ⚠️ Unaudited |
+| RegisterTokenHelper | token | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x54dc9c76d024c136698db2cad66dd1517d4cb63a` | ⚠️ Unaudited |
+| RewardDistributor | operational_periphery | project_anchor | own_supporting | 0 | bsc | unit-391152 | `0x14e3cb02f48818a8fef6bc257059767ca9d436ae` | ⚠️ Unaudited |
+| RewardDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0x54870aa3697b5756f5f1102b68e2b71968f77a3c`; blast `0xfebfe111423bf02ae8090265d4446458afdba20d` | ⚠️ Unaudited |
+| ThreePoAdapter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe82ae4c6678f4d967eadac93ac323fa72806f28c` | ⚠️ Unaudited |
+| UmaCompatibleCtfAdapter | adapter | project_anchor | own_supporting | 0 | bsc | unit-391154 | `0x242e1ba24f6fc524bfb410062ca5689a9622613d` | ⚠️ Unaudited |
+| UmaCompatibleCtfAdapter | adapter | project_anchor | own_supporting | 0 | bsc | unit-391155 | `0x26b366ab634c43bda6d784fdce34f24a37df8172` | ⚠️ Unaudited |
+| UmaCompatibleCtfAdapter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 4 deployments: bsc `0x2c8635a581d216896305abc60b7de902506a0388`; bsc `0x7c7818b14628842708a9ddb99a21d13c5354df64`; bsc `0xb51797462b6aed2104b9d6c89aab925ca14641cf`; bsc `0xe338e653c42c5ce60ece7210cb32a2b2b0e3eb27` | ⚠️ Unaudited |
+| UmaCompatibleCtfAdapter | adapter | project_anchor | own_supporting | 0 | bsc | unit-391166 | `0x947cc06d38d3cb0a2bb5adfb668b99b4ff53d7b4` | ⚠️ Unaudited |
+| UmaCompatibleCtfAdapter | adapter | project_anchor | own_supporting | 0 | bsc | unit-391177 | `0xf61198a64c2e4cad8ccaf218f3f2ecefb017902f` | ⚠️ Unaudited |
+| Vault | core_logic | project_anchor | own_supporting | 0 | bsc | unit-391151 | `0x09f683d8a144c4ac296d770f839098c3377410c5` | ⚠️ Unaudited |
+| Vault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xfcba720e183cf3f4029143c17faf9747dbc8de7a` | ⚠️ Unaudited |
+| WrappedCollateral | unknown | project_anchor | own_supporting | 0 | bsc | unit-391159 | `0x66239b70133773a72a0d589e5564e88a50cd39e7` | ⚠️ Unaudited |
+| ZeroDevWithdrawalHelper | operational_periphery | project_anchor | own_supporting | 0 | bsc | unit-391176 | `0xf4aa30b537882eca7e69defb68d6f631cda77b00` | ⚠️ Unaudited |
+| ZeroDevWithdrawalHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 3 deployments: blast `0x834b7ec39082bb51d2c46197b71bc926178600de`; blast `0xc45343f2e66c9b4140ddebf47352c81728bde7fd`; blast `0xd2536605c6cba9562856fc937db410db39e71d37` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -262,21 +262,21 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x011297...221181` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x036b7f...b5dc10` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x23364c...7219ff` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3f253a...cae74c` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x479e6e...aff3a5` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x502c53...e9634c` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x6bc913...53820a` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x84f569...0f924e` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xa757f5...71b971` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xb1ac4e...3e84aa` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc3fe54...89a97d` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xd018f6...3cfff5` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xd06d15...ff3e85` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xeea370...6c2236` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xf543b7...9060f3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x011297cba6cbe2cb1b2b6f2f65fa28096a221181` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x036b7f1bd61c156fd3139bca180fbcde7bb5dc10` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x23364cf4ed748d6933710cb8f2818d66527219ff` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3f253adc148fecf643cb30cf29b458058fcae74c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x479e6ec5524c08e5bf49e58a943da7bf83aff3a5` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x502c531ae40a04b6d11726cf7246a10afde9634c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x6bc913a02845e71abc4c84c14c17665af453820a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x84f569035394cf81d845e9b7acd34f5a1b0f924e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xa757f5c6df4e0547114f03fe688f561a4071b971` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xb1ac4e5c594f8f564309b098bcc104c1cb3e84aa` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc3fe548ea3f14200386acab6a43824dcf889a97d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xd018f6d5f17a56366e2f5db577e49695ee3cfff5` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xd06d150ed732cef84c92279377164a9900ff3e85` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xeea370e0fe6c3f719504fb8699d8089c996c2236` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xf543b7c256766ec898d12bda71a2ee86cf9060f3` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -312,52 +312,52 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| spaces/uBy5cIxCH65sso6lWCM8/uploads/CoqlfwzTGHqUhtq54JZL/2025.11.26 - Final - Predict.fun Collaborative Audit Report 1764175259.pdf | ConditionalTokens | ambiguous — not counted | ConditionalTokens (alternative) `0x22da18...c9d244` — deployed 2025-11-24 21:22:18+03 — liveness: live (code_present_context)<br>ConditionalTokens (alternative) `0xf64b0b...19a07f` — deployed 2025-11-21 14:03:46+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| spaces/uBy5cIxCH65sso6lWCM8/uploads/CoqlfwzTGHqUhtq54JZL/2025.11.26 - Final - Predict.fun Collaborative Audit Report 1764175259.pdf | ConditionalTokens | ambiguous — not counted | ConditionalTokens (alternative) `0x22da1810b194ca018378464a58f6ac2b10c9d244` — deployed 2025-11-24 21:22:18+03 — liveness: live (code_present_context)<br>ConditionalTokens (alternative) `0xf64b0b318aaf83bd9071110af24d24445719a07f` — deployed 2025-11-21 14:03:46+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | spaces/uBy5cIxCH65sso6lWCM8/uploads/CoqlfwzTGHqUhtq54JZL/2025.11.26 - Final - Predict.fun Collaborative Audit Report 1764175259.pdf | CTHelpers | unmatched — not counted | — | listed in scope | no |
 | spaces/uBy5cIxCH65sso6lWCM8/uploads/CoqlfwzTGHqUhtq54JZL/2025.11.26 - Final - Predict.fun Collaborative Audit Report 1764175259.pdf | WhitelistedERC1155 | unmatched — not counted | — | listed in scope | no |
 | spaces/uBy5cIxCH65sso6lWCM8/uploads/CoqlfwzTGHqUhtq54JZL/2025.11.26 - Final - Predict.fun Collaborative Audit Report 1764175259.pdf | Helpers | unmatched — not counted | — | listed in scope | no |
 | spaces/uBy5cIxCH65sso6lWCM8/uploads/CoqlfwzTGHqUhtq54JZL/2025.11.26 - Final - Predict.fun Collaborative Audit Report 1764175259.pdf | NegRiskIdLib | unmatched — not counted | — | listed in scope | no |
 | spaces/uBy5cIxCH65sso6lWCM8/uploads/CoqlfwzTGHqUhtq54JZL/2025.11.26 - Final - Predict.fun Collaborative Audit Report 1764175259.pdf | MarketDataManager | unmatched — not counted | — | listed in scope | no |
 | spaces/uBy5cIxCH65sso6lWCM8/uploads/CoqlfwzTGHqUhtq54JZL/2025.11.26 - Final - Predict.fun Collaborative Audit Report 1764175259.pdf | MarketData | unmatched — not counted | — | listed in scope | no |
-| spaces/uBy5cIxCH65sso6lWCM8/uploads/CoqlfwzTGHqUhtq54JZL/2025.11.26 - Final - Predict.fun Collaborative Audit Report 1764175259.pdf | YieldBearingNegRiskAdapter | own contract | YieldBearingNegRiskAdapter (selected) `0x41dce1...0b2a40` — deployed 2025-11-21 14:03:46+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/uBy5cIxCH65sso6lWCM8/uploads/CoqlfwzTGHqUhtq54JZL/2025.11.26 - Final - Predict.fun Collaborative Audit Report 1764175259.pdf | YieldBearingNegRiskAdapter | own contract | YieldBearingNegRiskAdapter (selected) `0x41dce1a4b8fb5e6327701750af6231b7cd0b2a40` — deployed 2025-11-21 14:03:46+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/uBy5cIxCH65sso6lWCM8/uploads/CoqlfwzTGHqUhtq54JZL/2025.11.26 - Final - Predict.fun Collaborative Audit Report 1764175259.pdf | Lockable | unmatched — not counted | — | listed in scope | no |
 | spaces/uBy5cIxCH65sso6lWCM8/uploads/CoqlfwzTGHqUhtq54JZL/2025.11.26 - Final - Predict.fun Collaborative Audit Report 1764175259.pdf | Constants | unmatched — not counted | — | listed in scope | no |
 | spaces/uBy5cIxCH65sso6lWCM8/uploads/CoqlfwzTGHqUhtq54JZL/2025.11.26 - Final - Predict.fun Collaborative Audit Report 1764175259.pdf | OptimisticOracleV2Interface | unmatched — not counted | — | listed in scope | no |
-| spaces/uBy5cIxCH65sso6lWCM8/uploads/CoqlfwzTGHqUhtq54JZL/2025.11.26 - Final - Predict.fun Collaborative Audit Report 1764175259.pdf | UmaCompatibleOptimisticOracle | own contract | UmaCompatibleOptimisticOracle (selected) `0x76f42e...ec2531` — deployed 2025-11-21 13:43:39+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/uBy5cIxCH65sso6lWCM8/uploads/CoqlfwzTGHqUhtq54JZL/2025.11.26 - Final - Predict.fun Collaborative Audit Report 1764175259.pdf | UmaCompatibleOptimisticOracle | own contract | UmaCompatibleOptimisticOracle (selected) `0x76f42e5520e62ad88f8fe583cbb4bff27eec2531` — deployed 2025-11-21 13:43:39+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/uBy5cIxCH65sso6lWCM8/uploads/CoqlfwzTGHqUhtq54JZL/2025.11.26 - Final - Predict.fun Collaborative Audit Report 1764175259.pdf | IBulletinBoard | unmatched — not counted | — | listed in scope | no |
 | spaces/uBy5cIxCH65sso6lWCM8/uploads/CoqlfwzTGHqUhtq54JZL/2025.11.26 - Final - Predict.fun Collaborative Audit Report 1764175259.pdf | IOptimisticOracleV2 | unmatched — not counted | — | listed in scope | no |
 | spaces/uBy5cIxCH65sso6lWCM8/uploads/CoqlfwzTGHqUhtq54JZL/2025.11.26 - Final - Predict.fun Collaborative Audit Report 1764175259.pdf | IUmaCtfAdapter | unmatched — not counted | — | listed in scope | no |
 | spaces/uBy5cIxCH65sso6lWCM8/uploads/CoqlfwzTGHqUhtq54JZL/2025.11.26 - Final - Predict.fun Collaborative Audit Report 1764175259.pdf | AncillaryDataLib | unmatched — not counted | — | listed in scope | no |
 | spaces/uBy5cIxCH65sso6lWCM8/uploads/CoqlfwzTGHqUhtq54JZL/2025.11.26 - Final - Predict.fun Collaborative Audit Report 1764175259.pdf | PayoutHelperLib | unmatched — not counted | — | listed in scope | no |
-| spaces/uBy5cIxCH65sso6lWCM8/uploads/CoqlfwzTGHqUhtq54JZL/2025.11.26 - Final - Predict.fun Collaborative Audit Report 1764175259.pdf | UmaCompatibleCtfAdapter | ambiguous — not counted | UmaCompatibleCtfAdapter (alternative) `0x242e1b...22613d` — deployed 2025-11-24 21:22:19+03 — liveness: live (current_address_book_code)<br>UmaCompatibleCtfAdapter (alternative) `0x947cc0...53d7b4` — deployed 2025-11-21 14:03:46+03 — liveness: live (current_address_book_code)<br>UmaCompatibleCtfAdapter (alternative) `0x26b366...df8172` — deployed 2025-11-21 14:03:46+03 — liveness: live (current_address_book_code)<br>UmaCompatibleCtfAdapter (alternative) `0xf61198...17902f` — deployed 2025-11-24 21:22:19+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| spaces/uBy5cIxCH65sso6lWCM8/uploads/CoqlfwzTGHqUhtq54JZL/2025.11.26 - Final - Predict.fun Collaborative Audit Report 1764175259.pdf | UmaCompatibleCtfAdapter | ambiguous — not counted | UmaCompatibleCtfAdapter (alternative) `0x242e1ba24f6fc524bfb410062ca5689a9622613d` — deployed 2025-11-24 21:22:19+03 — liveness: live (current_address_book_code)<br>UmaCompatibleCtfAdapter (alternative) `0x947cc06d38d3cb0a2bb5adfb668b99b4ff53d7b4` — deployed 2025-11-21 14:03:46+03 — liveness: live (current_address_book_code)<br>UmaCompatibleCtfAdapter (alternative) `0x26b366ab634c43bda6d784fdce34f24a37df8172` — deployed 2025-11-21 14:03:46+03 — liveness: live (current_address_book_code)<br>UmaCompatibleCtfAdapter (alternative) `0xf61198a64c2e4cad8ccaf218f3f2ecefb017902f` — deployed 2025-11-24 21:22:19+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | spaces/uBy5cIxCH65sso6lWCM8/uploads/CoqlfwzTGHqUhtq54JZL/2025.11.26 - Final - Predict.fun Collaborative Audit Report 1764175259.pdf | Venus | unmatched — not counted | — | listed in scope | no |
-| spaces/uBy5cIxCH65sso6lWCM8/uploads/CoqlfwzTGHqUhtq54JZL/2025.11.26 - Final - Predict.fun Collaborative Audit Report 1764175259.pdf | YieldBearingConditionalTokens | own contract | YieldBearingConditionalTokens (selected) `0x9400f8...eb1d9f` — deployed 2025-11-21 14:03:46+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| spaces/uBy5cIxCH65sso6lWCM8/uploads/CoqlfwzTGHqUhtq54JZL/2025.11.26 - Final - Predict.fun Collaborative Audit Report 1764175259.pdf | YieldBearingWrappedCollateral | own contract | YieldBearingWrappedCollateral (selected) `0xcfb9be...3334d9` — deployed 2025-11-21 14:03:46+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| spaces/uBy5cIxCH65sso6lWCM8/uploads/CoqlfwzTGHqUhtq54JZL/2025.11.26 - Final - Predict.fun Collaborative Audit Report 1764175259.pdf | NegRiskOperator | ambiguous — not counted | NegRiskOperator (alternative) `0xbb7250...e3e175` — deployed 2025-11-21 14:03:46+03 — liveness: live (code_present_context)<br>NegRiskOperator (alternative) `0x56020f...6ecffd` — deployed 2025-11-24 21:22:19+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| spaces/uBy5cIxCH65sso6lWCM8/uploads/CoqlfwzTGHqUhtq54JZL/2025.11.26 - Final - Predict.fun Collaborative Audit Report 1764175259.pdf | NegRiskAdapter | own contract | NegRiskAdapter (selected) `0xc3cf7c...7f1a6e` — deployed 2025-11-24 21:22:19+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/uBy5cIxCH65sso6lWCM8/uploads/CoqlfwzTGHqUhtq54JZL/2025.11.26 - Final - Predict.fun Collaborative Audit Report 1764175259.pdf | YieldBearingConditionalTokens | own contract | YieldBearingConditionalTokens (selected) `0x9400f8ad57e9e0f352345935d6d3175975eb1d9f` — deployed 2025-11-21 14:03:46+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/uBy5cIxCH65sso6lWCM8/uploads/CoqlfwzTGHqUhtq54JZL/2025.11.26 - Final - Predict.fun Collaborative Audit Report 1764175259.pdf | YieldBearingWrappedCollateral | own contract | YieldBearingWrappedCollateral (selected) `0xcfb9bef5f7b748ac72311f057f3a888bc73334d9` — deployed 2025-11-21 14:03:46+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/uBy5cIxCH65sso6lWCM8/uploads/CoqlfwzTGHqUhtq54JZL/2025.11.26 - Final - Predict.fun Collaborative Audit Report 1764175259.pdf | NegRiskOperator | ambiguous — not counted | NegRiskOperator (alternative) `0xbb7250101e0e3611d7e136ffe73bc24b98e3e175` — deployed 2025-11-21 14:03:46+03 — liveness: live (code_present_context)<br>NegRiskOperator (alternative) `0x56020f5024641d577cb54032af70a23a986ecffd` — deployed 2025-11-24 21:22:19+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| spaces/uBy5cIxCH65sso6lWCM8/uploads/CoqlfwzTGHqUhtq54JZL/2025.11.26 - Final - Predict.fun Collaborative Audit Report 1764175259.pdf | NegRiskAdapter | own contract | NegRiskAdapter (selected) `0xc3cf7c252f65e0d8d88537df96569ae94a7f1a6e` — deployed 2025-11-24 21:22:19+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/uBy5cIxCH65sso6lWCM8/uploads/53ekOJh0m9sN791a76vm/TenArmor_Predict_Dot_Fun_Audit_Report_final.pdf | Trading | unmatched — not counted | — | mentioned in L-1 finding | no |
 | spaces/uBy5cIxCH65sso6lWCM8/uploads/53ekOJh0m9sN791a76vm/TenArmor_Predict_Dot_Fun_Audit_Report_final.pdf | CalculatorHelper | unmatched — not counted | — | mentioned in L-2 finding | no |
-| spaces/uBy5cIxCH65sso6lWCM8/uploads/53ekOJh0m9sN791a76vm/TenArmor_Predict_Dot_Fun_Audit_Report_final.pdf | UmaCompatibleCtfAdapter | ambiguous — not counted | UmaCompatibleCtfAdapter (alternative) `0x242e1b...22613d` — deployed 2025-11-24 21:22:19+03 — liveness: live (current_address_book_code)<br>UmaCompatibleCtfAdapter (alternative) `0x947cc0...53d7b4` — deployed 2025-11-21 14:03:46+03 — liveness: live (current_address_book_code)<br>UmaCompatibleCtfAdapter (alternative) `0x26b366...df8172` — deployed 2025-11-21 14:03:46+03 — liveness: live (current_address_book_code)<br>UmaCompatibleCtfAdapter (alternative) `0xf61198...17902f` — deployed 2025-11-24 21:22:19+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| spaces/uBy5cIxCH65sso6lWCM8/uploads/53ekOJh0m9sN791a76vm/TenArmor_Predict_Dot_Fun_Audit_Report_final.pdf | UmaCompatibleCtfAdapter | ambiguous — not counted | UmaCompatibleCtfAdapter (alternative) `0x242e1ba24f6fc524bfb410062ca5689a9622613d` — deployed 2025-11-24 21:22:19+03 — liveness: live (current_address_book_code)<br>UmaCompatibleCtfAdapter (alternative) `0x947cc06d38d3cb0a2bb5adfb668b99b4ff53d7b4` — deployed 2025-11-21 14:03:46+03 — liveness: live (current_address_book_code)<br>UmaCompatibleCtfAdapter (alternative) `0x26b366ab634c43bda6d784fdce34f24a37df8172` — deployed 2025-11-21 14:03:46+03 — liveness: live (current_address_book_code)<br>UmaCompatibleCtfAdapter (alternative) `0xf61198a64c2e4cad8ccaf218f3f2ecefb017902f` — deployed 2025-11-24 21:22:19+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | spaces/uBy5cIxCH65sso6lWCM8/uploads/53ekOJh0m9sN791a76vm/TenArmor_Predict_Dot_Fun_Audit_Report_final.pdf | MarketDataLib | unmatched — not counted | — | mentioned in L-4 finding | no |
 | spaces/uBy5cIxCH65sso6lWCM8/uploads/53ekOJh0m9sN791a76vm/TenArmor_Predict_Dot_Fun_Audit_Report_final.pdf | MarketStateManager | unmatched — not counted | — | mentioned in L-4 finding | no |
 | spaces/uBy5cIxCH65sso6lWCM8/uploads/53ekOJh0m9sN791a76vm/TenArmor_Predict_Dot_Fun_Audit_Report_final.pdf | MarketDataManager | unmatched — not counted | — | mentioned in L-4 finding | no |
 | spaces/uBy5cIxCH65sso6lWCM8/uploads/53ekOJh0m9sN791a76vm/TenArmor_Predict_Dot_Fun_Audit_Report_final.pdf | Venus | unmatched — not counted | — | mentioned in L-5 and L-6 findings | no |
-| spaces/uBy5cIxCH65sso6lWCM8/uploads/53ekOJh0m9sN791a76vm/TenArmor_Predict_Dot_Fun_Audit_Report_final.pdf | YieldBearingWrappedCollateral | own contract | YieldBearingWrappedCollateral (selected) `0xcfb9be...3334d9` — deployed 2025-11-21 14:03:46+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| spaces/uBy5cIxCH65sso6lWCM8/uploads/53ekOJh0m9sN791a76vm/TenArmor_Predict_Dot_Fun_Audit_Report_final.pdf | ConditionalTokens | ambiguous — not counted | ConditionalTokens (alternative) `0x22da18...c9d244` — deployed 2025-11-24 21:22:18+03 — liveness: live (code_present_context)<br>ConditionalTokens (alternative) `0xf64b0b...19a07f` — deployed 2025-11-21 14:03:46+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| spaces/uBy5cIxCH65sso6lWCM8/uploads/53ekOJh0m9sN791a76vm/TenArmor_Predict_Dot_Fun_Audit_Report_final.pdf | YieldBearingConditionalTokens | own contract | YieldBearingConditionalTokens (selected) `0x9400f8...eb1d9f` — deployed 2025-11-21 14:03:46+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/uBy5cIxCH65sso6lWCM8/uploads/53ekOJh0m9sN791a76vm/TenArmor_Predict_Dot_Fun_Audit_Report_final.pdf | YieldBearingWrappedCollateral | own contract | YieldBearingWrappedCollateral (selected) `0xcfb9bef5f7b748ac72311f057f3a888bc73334d9` — deployed 2025-11-21 14:03:46+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/uBy5cIxCH65sso6lWCM8/uploads/53ekOJh0m9sN791a76vm/TenArmor_Predict_Dot_Fun_Audit_Report_final.pdf | ConditionalTokens | ambiguous — not counted | ConditionalTokens (alternative) `0x22da1810b194ca018378464a58f6ac2b10c9d244` — deployed 2025-11-24 21:22:18+03 — liveness: live (code_present_context)<br>ConditionalTokens (alternative) `0xf64b0b318aaf83bd9071110af24d24445719a07f` — deployed 2025-11-21 14:03:46+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| spaces/uBy5cIxCH65sso6lWCM8/uploads/53ekOJh0m9sN791a76vm/TenArmor_Predict_Dot_Fun_Audit_Report_final.pdf | YieldBearingConditionalTokens | own contract | YieldBearingConditionalTokens (selected) `0x9400f8ad57e9e0f352345935d6d3175975eb1d9f` — deployed 2025-11-21 14:03:46+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/uBy5cIxCH65sso6lWCM8/uploads/53ekOJh0m9sN791a76vm/TenArmor_Predict_Dot_Fun_Audit_Report_final.pdf | Assets | unmatched — not counted | — | mentioned in I-3 finding | no |
 | spaces/uBy5cIxCH65sso6lWCM8/uploads/53ekOJh0m9sN791a76vm/TenArmor_Predict_Dot_Fun_Audit_Report_final.pdf | UmaCtfAdapter | unmatched — not counted | — | mentioned in I-3 finding | no |
-| spaces/uBy5cIxCH65sso6lWCM8/uploads/53ekOJh0m9sN791a76vm/TenArmor_Predict_Dot_Fun_Audit_Report_final.pdf | FeeModuleV2 | ambiguous — not counted | FeeModuleV2 (alternative) `0xfbc225...7ba34f` — deployed 2025-11-21 14:03:46+03 — liveness: live (code_present_context)<br>FeeModuleV2 (alternative) `0xf1f8f5...fa9783` — deployed 2025-11-24 21:22:19+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| spaces/uBy5cIxCH65sso6lWCM8/uploads/53ekOJh0m9sN791a76vm/TenArmor_Predict_Dot_Fun_Audit_Report_final.pdf | NegRiskFeeModuleV2 | ambiguous — not counted | NegRiskFeeModuleV2 (alternative) `0xd172f3...da6057` — deployed 2025-11-21 14:03:46+03 — liveness: live (code_present_context)<br>NegRiskFeeModuleV2 (alternative) `0xf2311c...b3132f` — deployed 2025-11-24 21:22:19+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| spaces/uBy5cIxCH65sso6lWCM8/uploads/53ekOJh0m9sN791a76vm/TenArmor_Predict_Dot_Fun_Audit_Report_final.pdf | NegRiskOperator | ambiguous — not counted | NegRiskOperator (alternative) `0xbb7250...e3e175` — deployed 2025-11-21 14:03:46+03 — liveness: live (code_present_context)<br>NegRiskOperator (alternative) `0x56020f...6ecffd` — deployed 2025-11-24 21:22:19+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| spaces/uBy5cIxCH65sso6lWCM8/uploads/53ekOJh0m9sN791a76vm/TenArmor_Predict_Dot_Fun_Audit_Report_final.pdf | ConditionalTokensFeesHandler | ambiguous — not counted | ConditionalTokensFeesHandler (alternative) `0xd63206...e64030` — deployed 2025-11-24 21:22:19+03 — liveness: live (current_address_book_code)<br>ConditionalTokensFeesHandler (alternative) `0xb4d9f1...645f6e` — deployed 2025-11-21 14:03:46+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| spaces/uBy5cIxCH65sso6lWCM8/uploads/53ekOJh0m9sN791a76vm/TenArmor_Predict_Dot_Fun_Audit_Report_final.pdf | FeeModuleV2 | ambiguous — not counted | FeeModuleV2 (alternative) `0xfbc2259abb3f01c019ece1d0200ee673bb7ba34f` — deployed 2025-11-21 14:03:46+03 — liveness: live (code_present_context)<br>FeeModuleV2 (alternative) `0xf1f8f5c641f20c48526269ef7dff19172efa9783` — deployed 2025-11-24 21:22:19+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| spaces/uBy5cIxCH65sso6lWCM8/uploads/53ekOJh0m9sN791a76vm/TenArmor_Predict_Dot_Fun_Audit_Report_final.pdf | NegRiskFeeModuleV2 | ambiguous — not counted | NegRiskFeeModuleV2 (alternative) `0xd172f3fbabe763ee8e52d8b32421574236da6057` — deployed 2025-11-21 14:03:46+03 — liveness: live (code_present_context)<br>NegRiskFeeModuleV2 (alternative) `0xf2311c668aaa8dec48d5da577d3018eb94b3132f` — deployed 2025-11-24 21:22:19+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| spaces/uBy5cIxCH65sso6lWCM8/uploads/53ekOJh0m9sN791a76vm/TenArmor_Predict_Dot_Fun_Audit_Report_final.pdf | NegRiskOperator | ambiguous — not counted | NegRiskOperator (alternative) `0xbb7250101e0e3611d7e136ffe73bc24b98e3e175` — deployed 2025-11-21 14:03:46+03 — liveness: live (code_present_context)<br>NegRiskOperator (alternative) `0x56020f5024641d577cb54032af70a23a986ecffd` — deployed 2025-11-24 21:22:19+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| spaces/uBy5cIxCH65sso6lWCM8/uploads/53ekOJh0m9sN791a76vm/TenArmor_Predict_Dot_Fun_Audit_Report_final.pdf | ConditionalTokensFeesHandler | ambiguous — not counted | ConditionalTokensFeesHandler (alternative) `0xd63206243192f1af3d6fc4442db4e3cf25e64030` — deployed 2025-11-24 21:22:19+03 — liveness: live (current_address_book_code)<br>ConditionalTokensFeesHandler (alternative) `0xb4d9f13738a50e88e0ade2eccc89254ef1645f6e` — deployed 2025-11-21 14:03:46+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | spaces/uBy5cIxCH65sso6lWCM8/uploads/53ekOJh0m9sN791a76vm/TenArmor_Predict_Dot_Fun_Audit_Report_final.pdf | FeeModule | unmatched — not counted | — | mentioned in I-4 finding | no |
 | spaces/uBy5cIxCH65sso6lWCM8/uploads/35xaz4ieEz1xwjcC9Rzy/2026-02-18-cyfrin-predict-fun-v2.0.pdf | CTHelpers | unmatched — not counted | — | listed in Audit Scope section | no |
 | spaces/uBy5cIxCH65sso6lWCM8/uploads/35xaz4ieEz1xwjcC9Rzy/2026-02-18-cyfrin-predict-fun-v2.0.pdf | WhitelistedERC1155 | unmatched — not counted | — | listed in Audit Scope section | no |
 | spaces/uBy5cIxCH65sso6lWCM8/uploads/35xaz4ieEz1xwjcC9Rzy/2026-02-18-cyfrin-predict-fun-v2.0.pdf | Venus | unmatched — not counted | — | listed in Audit Scope section | no |
-| spaces/uBy5cIxCH65sso6lWCM8/uploads/35xaz4ieEz1xwjcC9Rzy/2026-02-18-cyfrin-predict-fun-v2.0.pdf | YieldBearingConditionalTokens | own contract | YieldBearingConditionalTokens (selected) `0x9400f8...eb1d9f` — deployed 2025-11-21 14:03:46+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| spaces/uBy5cIxCH65sso6lWCM8/uploads/35xaz4ieEz1xwjcC9Rzy/2026-02-18-cyfrin-predict-fun-v2.0.pdf | YieldBearingWrappedCollateral | own contract | YieldBearingWrappedCollateral (selected) `0xcfb9be...3334d9` — deployed 2025-11-21 14:03:46+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| spaces/uBy5cIxCH65sso6lWCM8/uploads/I1DXLS1LjI8TvRaNnDAK/2026-02-06-cyfrin-formal-verification-report-predict-fun.pdf | YieldBearingConditionalTokens | own contract | YieldBearingConditionalTokens (selected) `0x9400f8...eb1d9f` — deployed 2025-11-21 14:03:46+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/uBy5cIxCH65sso6lWCM8/uploads/35xaz4ieEz1xwjcC9Rzy/2026-02-18-cyfrin-predict-fun-v2.0.pdf | YieldBearingConditionalTokens | own contract | YieldBearingConditionalTokens (selected) `0x9400f8ad57e9e0f352345935d6d3175975eb1d9f` — deployed 2025-11-21 14:03:46+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/uBy5cIxCH65sso6lWCM8/uploads/35xaz4ieEz1xwjcC9Rzy/2026-02-18-cyfrin-predict-fun-v2.0.pdf | YieldBearingWrappedCollateral | own contract | YieldBearingWrappedCollateral (selected) `0xcfb9bef5f7b748ac72311f057f3a888bc73334d9` — deployed 2025-11-21 14:03:46+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/uBy5cIxCH65sso6lWCM8/uploads/I1DXLS1LjI8TvRaNnDAK/2026-02-06-cyfrin-formal-verification-report-predict-fun.pdf | YieldBearingConditionalTokens | own contract | YieldBearingConditionalTokens (selected) `0x9400f8ad57e9e0f352345935d6d3175975eb1d9f` — deployed 2025-11-21 14:03:46+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/uBy5cIxCH65sso6lWCM8/uploads/I1DXLS1LjI8TvRaNnDAK/2026-02-06-cyfrin-formal-verification-report-predict-fun.pdf | WhitelistedERC1155 | unmatched — not counted | — | Inherited by YieldBearingConditionalTokens; described as 'transfer-controlled ERC-1155' and part of verification scope. | no |
 | spaces/uBy5cIxCH65sso6lWCM8/uploads/I1DXLS1LjI8TvRaNnDAK/2026-02-06-cyfrin-formal-verification-report-predict-fun.pdf | Venus | unmatched — not counted | — | Inherited by YieldBearingConditionalTokens; described as 'yield management via vTokens' and part of verification scope. | no |
 | 2026-04-25-cyfrin-predict-cre-integration-v2.1.pdf | ChainlinkAdapter | unmatched — not counted | — | listed in scope | no |
@@ -366,11 +366,11 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | 2026-02-18-cyfrin-predict-fun-v2.0.pdf | CTHelpers | unmatched — not counted | — | — | no |
 | 2026-02-18-cyfrin-predict-fun-v2.0.pdf | Venus | unmatched — not counted | — | — | no |
 | 2026-02-18-cyfrin-predict-fun-v2.0.pdf | WhitelistedERC1155 | unmatched — not counted | — | — | no |
-| 2026-02-18-cyfrin-predict-fun-v2.0.pdf | YieldBearingConditionalTokens | own contract | YieldBearingConditionalTokens (selected) `0x9400f8...eb1d9f` — deployed 2025-11-21 14:03:46+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 2026-02-18-cyfrin-predict-fun-v2.0.pdf | YieldBearingWrappedCollateral | own contract | YieldBearingWrappedCollateral (selected) `0xcfb9be...3334d9` — deployed 2025-11-21 14:03:46+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2026-02-18-cyfrin-predict-fun-v2.0.pdf | YieldBearingConditionalTokens | own contract | YieldBearingConditionalTokens (selected) `0x9400f8ad57e9e0f352345935d6d3175975eb1d9f` — deployed 2025-11-21 14:03:46+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2026-02-18-cyfrin-predict-fun-v2.0.pdf | YieldBearingWrappedCollateral | own contract | YieldBearingWrappedCollateral (selected) `0xcfb9bef5f7b748ac72311f057f3a888bc73334d9` — deployed 2025-11-21 14:03:46+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2026-01-27-cyfrin-predict-dot-fun-FV-v2.0.pdf | Venus | unmatched — not counted | — | — | no |
 | 2026-01-27-cyfrin-predict-dot-fun-FV-v2.0.pdf | WhitelistedERC1155 | unmatched — not counted | — | — | no |
-| 2026-01-27-cyfrin-predict-dot-fun-FV-v2.0.pdf | YieldBearingConditionalTokens | own contract | YieldBearingConditionalTokens (selected) `0x9400f8...eb1d9f` — deployed 2025-11-21 14:03:46+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2026-01-27-cyfrin-predict-dot-fun-FV-v2.0.pdf | YieldBearingConditionalTokens | own contract | YieldBearingConditionalTokens (selected) `0x9400f8ad57e9e0f352345935d6d3175975eb1d9f` — deployed 2025-11-21 14:03:46+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2026-02-18-cyfrin-predict-fun-v2.0.md | Venus | unmatched — not counted | — | mentioned in findings as audited contract | no |
 | 2026-02-18-cyfrin-predict-fun-v2.0.md | WhitelistedERC1155 | unmatched — not counted | — | mentioned in findings as audited contract | no |
 | 2026-02-18-cyfrin-predict-fun-v2.0.md | CTHelpers | unmatched — not counted | — | mentioned in findings as audited contract | no |
@@ -387,30 +387,30 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | `0x22da18...c9d244` | ConditionalTokens | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0xf64b0b...19a07f` | ConditionalTokens | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0xb4d9f1...645f6e` | ConditionalTokensFeesHandler | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0xd63206...e64030` | ConditionalTokensFeesHandler | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x6beb5a...decfa5` | CTFExchange | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x8bc070...94b689` | CTFExchange | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0xf1f8f5...fa9783` | FeeModuleV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0xfbc225...7ba34f` | FeeModuleV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x365fb8...d8d58a` | NegRiskCtfExchange | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x8a289d...81b41d` | NegRiskCtfExchange | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0xd172f3...da6057` | NegRiskFeeModuleV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0xf2311c...b3132f` | NegRiskFeeModuleV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x56020f...6ecffd` | NegRiskOperator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0xbb7250...e3e175` | NegRiskOperator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x89f92c...fd8e5e` | RegisterTokenHelper | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0xa48c26...9c2089` | RegisterTokenHelper | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x14e3cb...d436ae` | RewardDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x242e1b...22613d` | UmaCompatibleCtfAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x26b366...df8172` | UmaCompatibleCtfAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x947cc0...53d7b4` | UmaCompatibleCtfAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0xf61198...17902f` | UmaCompatibleCtfAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x09f683...7410c5` | Vault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x66239b...cd39e7` | WrappedCollateral | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0xf4aa30...a77b00` | ZeroDevWithdrawalHelper | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x22da1810b194ca018378464a58f6ac2b10c9d244` | ConditionalTokens | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xf64b0b318aaf83bd9071110af24d24445719a07f` | ConditionalTokens | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xb4d9f13738a50e88e0ade2eccc89254ef1645f6e` | ConditionalTokensFeesHandler | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xd63206243192f1af3d6fc4442db4e3cf25e64030` | ConditionalTokensFeesHandler | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x6beb5a40c032afc305961162d8204cda16decfa5` | CTFExchange | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x8bc070bedab741406f4b1eb65a72bee27894b689` | CTFExchange | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xf1f8f5c641f20c48526269ef7dff19172efa9783` | FeeModuleV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xfbc2259abb3f01c019ece1d0200ee673bb7ba34f` | FeeModuleV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x365fb81bd4a24d6303cd2f19c349de6894d8d58a` | NegRiskCtfExchange | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x8a289d458f5a134ba40015085a8f50ffb681b41d` | NegRiskCtfExchange | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xd172f3fbabe763ee8e52d8b32421574236da6057` | NegRiskFeeModuleV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xf2311c668aaa8dec48d5da577d3018eb94b3132f` | NegRiskFeeModuleV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x56020f5024641d577cb54032af70a23a986ecffd` | NegRiskOperator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xbb7250101e0e3611d7e136ffe73bc24b98e3e175` | NegRiskOperator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x89f92c3c27f18080af1361024c6a892144fd8e5e` | RegisterTokenHelper | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xa48c26abd9024a5cc5a869bbd97a6a3d6b9c2089` | RegisterTokenHelper | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x14e3cb02f48818a8fef6bc257059767ca9d436ae` | RewardDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x242e1ba24f6fc524bfb410062ca5689a9622613d` | UmaCompatibleCtfAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x26b366ab634c43bda6d784fdce34f24a37df8172` | UmaCompatibleCtfAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x947cc06d38d3cb0a2bb5adfb668b99b4ff53d7b4` | UmaCompatibleCtfAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xf61198a64c2e4cad8ccaf218f3f2ecefb017902f` | UmaCompatibleCtfAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x09f683d8a144c4ac296d770f839098c3377410c5` | Vault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x66239b70133773a72a0d589e5564e88a50cd39e7` | WrappedCollateral | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xf4aa30b537882eca7e69defb68d6f631cda77b00` | ZeroDevWithdrawalHelper | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

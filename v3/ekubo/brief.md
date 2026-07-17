@@ -57,8 +57,8 @@ The pinned logic-topography run contains 8 contract row(s) across ethereum, sepo
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- EkuboToken (`0x04c46e...317d0f`, chain 1)
-- StarknetOwnerProxy (`0x1e0ef4...a6e9cc`, chain 1)
+- EkuboToken (`0x04c46e830bb56ce22735d5d8fc9cb90309317d0f`, chain 1)
+- StarknetOwnerProxy (`0x1e0ef4162e42c9bf820c307218c4e41ccca6e9cc`, chain 1)
 
 ## Contract Surface Quality
 
@@ -102,20 +102,20 @@ The pinned logic-topography run contains 8 contract row(s) across ethereum, sepo
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| StarknetOwnerProxy | unknown | project_anchor | own_supporting | 0 | ethereum | unit-384180 | `0x1e0ef4...a6e9cc` | ✅ Audited |
+| StarknetOwnerProxy | unknown | project_anchor | own_supporting | 0 | ethereum | unit-384180 | `0x1e0ef4162e42c9bf820c307218c4e41ccca6e9cc` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (8)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Core | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x000000...1bd701` | ⚠️ Unaudited |
-| Core | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384193 | `0xe0e0e0...57d444` | ⚠️ Unaudited |
-| EkuboToken | token | project_anchor | own_supporting | 0 | ethereum | unit-384178 | `0x04c46e...317d0f` | ⚠️ Unaudited |
-| MEVResistRouter | adapter | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384179 | `0x0c95ea...44aeab` | ⚠️ Unaudited |
-| Positions | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384190 | `0xa37cc3...b63e17` | ⚠️ Unaudited |
-| Router | adapter | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384189 | `0x999585...dff931` | ⚠️ Unaudited |
-| TokenWrapperFactory | registry | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384183 | `0x2b8d80...0ab120` | ⚠️ Unaudited |
-| TokenWrapperPeriphery | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384182 | `0x2992e4...89f5d6` | ⚠️ Unaudited |
+| Core | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x00000000000014aa86c5d3c41765bb24e11bd701` | ⚠️ Unaudited |
+| Core | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384193 | `0xe0e0e08a6a4b9dc7bd67bcb7aade5cf48157d444` | ⚠️ Unaudited |
+| EkuboToken | token | project_anchor | own_supporting | 0 | ethereum | unit-384178 | `0x04c46e830bb56ce22735d5d8fc9cb90309317d0f` | ⚠️ Unaudited |
+| MEVResistRouter | adapter | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384179 | `0x0c95ea31e4501b3b879cae2232087e478d44aeab` | ⚠️ Unaudited |
+| Positions | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384190 | `0xa37cc341634afd9e0919d334606e676dbab63e17` | ⚠️ Unaudited |
+| Router | adapter | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384189 | `0x9995855c00494d039ab6792f18e368e530dff931` | ⚠️ Unaudited |
+| TokenWrapperFactory | registry | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384183 | `0x2b8d80d891c1e20aca70ff8a85714aa1900ab120` | ⚠️ Unaudited |
+| TokenWrapperPeriphery | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384182 | `0x2992e49d73cc97fbc69c5498f332984c9a89f5d6` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -135,28 +135,28 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384181 | `0x208bb0...b7c285` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x36e3fd...e110a5` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384184 | `0x514d5d...60ada6` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384185 | `0x51d02a...42527c` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384186 | `0x553a2e...54c091` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384187 | `0x5a9093...8205be` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x618c25...7621d1` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384188 | `0x91cb8a...9b408c` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384191 | `0xae1430...67c18a` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384192 | `0xd4279c...2b54ec` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-384194 | `0x0c95ea...44aeab` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-384195 | `0x2992e4...89f5d6` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-384196 | `0x2b8d80...0ab120` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-384197 | `0x36e3fd...e110a5` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-384198 | `0x514d5d...60ada6` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-384199 | `0x553a2e...54c091` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-384200 | `0x618c25...7621d1` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-384201 | `0x999585...dff931` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-384202 | `0xa37cc3...b63e17` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-384203 | `0xae1430...67c18a` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-384204 | `0xd4279c...2b54ec` | ❓ Unverified |
-| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-384205 | `0xe0e0e0...57d444` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384181 | `0x208bb00c6b142351e4a431f6dd323691ebb7c285` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x36e3fdc259a4a8b0775d25b3f9396e0ea6e110a5` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384184 | `0x514d5de68852628af2f1236f780866989660ada6` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384185 | `0x51d02a5948496a67827242eabc5725531342527c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384186 | `0x553a2efc570c9e104942cec6ac1c18118e54c091` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384187 | `0x5a9093673cdc9f7cae8b0d177797040b758205be` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x618c25b11a5e9b5ad60b04bb64fcbdfbad7621d1` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384188 | `0x91cb8a896caf5e60b1f7c4818730543f849b408c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384191 | `0xae1430e3e089794beacba260657fcd0f0967c18a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384192 | `0xd4279c050da1f5c5b2830558c7a08e57e12b54ec` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-384194 | `0x0c95ea31e4501b3b879cae2232087e478d44aeab` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-384195 | `0x2992e49d73cc97fbc69c5498f332984c9a89f5d6` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-384196 | `0x2b8d80d891c1e20aca70ff8a85714aa1900ab120` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-384197 | `0x36e3fdc259a4a8b0775d25b3f9396e0ea6e110a5` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-384198 | `0x514d5de68852628af2f1236f780866989660ada6` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-384199 | `0x553a2efc570c9e104942cec6ac1c18118e54c091` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-384200 | `0x618c25b11a5e9b5ad60b04bb64fcbdfbad7621d1` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-384201 | `0x9995855c00494d039ab6792f18e368e530dff931` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-384202 | `0xa37cc341634afd9e0919d334606e676dbab63e17` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-384203 | `0xae1430e3e089794beacba260657fcd0f0967c18a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-384204 | `0xd4279c050da1f5c5b2830558c7a08e57e12b54ec` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-384205 | `0xe0e0e08a6a4b9dc7bd67bcb7aade5cf48157d444` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -206,7 +206,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| Ekubo_Governance_L1_Proxy.pdf | StarknetOwnerProxy | own contract | StarknetOwnerProxy (selected) `0x1e0ef4...a6e9cc` — deployed 2025-01-24 05:36:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Ekubo_Governance_L1_Proxy.pdf | StarknetOwnerProxy | own contract | StarknetOwnerProxy (selected) `0x1e0ef4162e42c9bf820c307218c4e41ccca6e9cc` — deployed 2025-01-24 05:36:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Code4rena x Ekubo audit report 2025-11.pdf | BaseOrdersTest | unmatched — not counted | — | — | no |
 | Code4rena x Ekubo audit report 2025-11.pdf | BasePositions | unmatched — not counted | — | — | no |
 | Code4rena x Ekubo audit report 2025-11.pdf | BaseTWAMMTest | unmatched — not counted | — | — | no |
@@ -404,7 +404,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x04c46e...317d0f` | EkuboToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x04c46e830bb56ce22735d5d8fc9cb90309317d0f` | EkuboToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

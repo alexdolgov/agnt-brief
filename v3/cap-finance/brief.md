@@ -52,22 +52,22 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum, ethe
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x43044f...673142`, chain 1)
-- UnnamedContract (`0x07b0b0...b35dc6`, chain 42161)
-- UnnamedContract (`0x10f2f3...391029`, chain 42161)
-- UnnamedContract (`0x1e91f6...ae30e5`, chain 42161)
-- UnnamedContract (`0x291633...14cb5f`, chain 42161)
-- UnnamedContract (`0x5abff8...620119`, chain 42161)
-- UnnamedContract (`0x919033...fe7795`, chain 42161)
-- UnnamedContract (`0x958cc9...fbecf2`, chain 42161)
-- UnnamedContract (`0x996da2...9c01d4`, chain 42161)
-- UnnamedContract (`0xb224f2...cdddf8`, chain 42161)
-- UnnamedContract (`0xbed329...d75bdb`, chain 42161)
-- UnnamedContract (`0xc8cdd2...81c67d`, chain 42161)
-- UnnamedContract (`0xcaec65...76b2ec`, chain 42161)
-- UnnamedContract (`0xceffac...f75c38`, chain 42161)
-- UnnamedContract (`0xe0ccd4...52a54e`, chain 42161)
-- StandardArbERC20 (`0x031d35...46737b`, chain 42161)
+- UnnamedContract (`0x43044f861ec040db59a7e324c40507addb673142`, chain 1)
+- UnnamedContract (`0x07b0b00b9008798055071dde6f2d343782b35dc6`, chain 42161)
+- UnnamedContract (`0x10f2f3b550d98b6e51461a83ad3fe27123391029`, chain 42161)
+- UnnamedContract (`0x1e91f67a5aa0137ad86eebad64e2c2a1b6ae30e5`, chain 42161)
+- UnnamedContract (`0x29163356bbaf0a3bfee9ba5a52a5c6463114cb5f`, chain 42161)
+- UnnamedContract (`0x5abff8f8d5b13253dcab1e427fdb3305ca620119`, chain 42161)
+- UnnamedContract (`0x9190338f23be9024a9f9628e44cd169926fe7795`, chain 42161)
+- UnnamedContract (`0x958cc92297e6f087f41a86125ba8e121f0fbecf2`, chain 42161)
+- UnnamedContract (`0x996da299fb8247dbc2ef45299b62b897d89c01d4`, chain 42161)
+- UnnamedContract (`0xb224f2689bc0afc5b6721a0807d07017d8cdddf8`, chain 42161)
+- UnnamedContract (`0xbed32937d8a5d1421241f52809908f1a17d75bdb`, chain 42161)
+- UnnamedContract (`0xc8cdd2ea6a5149ced1f2d225d16a775ee081c67d`, chain 42161)
+- UnnamedContract (`0xcaec650502f15c1a6bff1c2288fc8f819776b2ec`, chain 42161)
+- UnnamedContract (`0xceffac2522b837012b576770b6f5dd75a3f75c38`, chain 42161)
+- UnnamedContract (`0xe0ccd451bb57851c1b2172c07d8b4a7c6952a54e`, chain 42161)
+- StandardArbERC20 (`0x031d35296154279dc1984dcd93e392b1f946737b`, chain 42161)
 
 ## Contract Surface Quality
 
@@ -113,7 +113,7 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum, ethe
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| StandardArbERC20 | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-381612 | `0x031d35...46737b` | ⚠️ Unaudited |
+| StandardArbERC20 | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-381612 | `0x031d35296154279dc1984dcd93e392b1f946737b` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -133,23 +133,23 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381595 | `0x43044f...673142` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381596 | `0x07b0b0...b35dc6` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381597 | `0x10f2f3...391029` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381598 | `0x1e91f6...ae30e5` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | unit-381599 | `0x283c41...e56aac` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381600 | `0x291633...14cb5f` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381601 | `0x5abff8...620119` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381602 | `0x919033...fe7795` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381603 | `0x958cc9...fbecf2` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381604 | `0x996da2...9c01d4` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381605 | `0xb224f2...cdddf8` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381606 | `0xbed329...d75bdb` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381607 | `0xc8cdd2...81c67d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381608 | `0xcaec65...76b2ec` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381609 | `0xceffac...f75c38` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381610 | `0xe0ccd4...52a54e` | ❓ Unverified |
-| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | unit-381611 | `0xe195a1...80f8f2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381595 | `0x43044f861ec040db59a7e324c40507addb673142` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381596 | `0x07b0b00b9008798055071dde6f2d343782b35dc6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381597 | `0x10f2f3b550d98b6e51461a83ad3fe27123391029` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381598 | `0x1e91f67a5aa0137ad86eebad64e2c2a1b6ae30e5` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | unit-381599 | `0x283c41b726634fbd6b72aa22741b202db7e56aac` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381600 | `0x29163356bbaf0a3bfee9ba5a52a5c6463114cb5f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381601 | `0x5abff8f8d5b13253dcab1e427fdb3305ca620119` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381602 | `0x9190338f23be9024a9f9628e44cd169926fe7795` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381603 | `0x958cc92297e6f087f41a86125ba8e121f0fbecf2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381604 | `0x996da299fb8247dbc2ef45299b62b897d89c01d4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381605 | `0xb224f2689bc0afc5b6721a0807d07017d8cdddf8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381606 | `0xbed32937d8a5d1421241f52809908f1a17d75bdb` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381607 | `0xc8cdd2ea6a5149ced1f2d225d16a775ee081c67d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381608 | `0xcaec650502f15c1a6bff1c2288fc8f819776b2ec` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381609 | `0xceffac2522b837012b576770b6f5dd75a3f75c38` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381610 | `0xe0ccd451bb57851c1b2172c07d8b4a7c6952a54e` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | unit-381611 | `0xe195a15533c01c8cd6b28f09066842486f80f8f2` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -168,7 +168,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | `0x031d35...46737b` | StandardArbERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0x031d35296154279dc1984dcd93e392b1f946737b` | StandardArbERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

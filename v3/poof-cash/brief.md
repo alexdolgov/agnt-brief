@@ -90,7 +90,7 @@ The pinned logic-topography run contains 1 contract row(s) across celo. Structur
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| POOF | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | celo | unit-251745 | `0x00400f...05c762` | ⚠️ Unaudited |
+| POOF | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | celo | unit-251745 | `0x00400fcbf0816bebb94654259de7273f4a05c762` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

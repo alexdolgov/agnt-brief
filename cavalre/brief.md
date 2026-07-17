@@ -59,7 +59,7 @@ The protocol forms a single structural family (Core Logic) of 2 contract(s).
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Pool | unknown | avalanche | n/a | 12 deployments: avalanche [`0x1c7e70...0e5cf9`](./contracts/avalanche-43114/0x1c7e70f5b6031a3b39279d24f7c8b2e7da0e5cf9/); avalanche `0x370142...46f08e`; avalanche `0x5f1e8e...1f48ea`; avalanche `0x6a3bcb...982702`; avalanche `0x6c96c8...226832`; avalanche `0x744150...7237dd`; avalanche `0x84db13...0f6d2b`; avalanche `0x974141...dc2963`; avalanche `0xe0612a...74eb04`; avalanche `0xe2cd9e...d9fec4`; avalanche `0xea1d38...3d66f3`; avalanche `0xede429...90e706` | ✅ Audited |
+| Pool | unknown | avalanche | n/a | 12 deployments: avalanche [`0x1c7e70f5b6031a3b39279d24f7c8b2e7da0e5cf9`](./contracts/avalanche-43114/0x1c7e70f5b6031a3b39279d24f7c8b2e7da0e5cf9/); avalanche `0x370142573cc83b0a90657c472ccf7d717c46f08e`; avalanche `0x5f1e8ed8468232bab71eda9f4598bda3161f48ea`; avalanche `0x6a3bcb98a03bf38775cdae70719f0600b6982702`; avalanche `0x6c96c8876668d02f136aec4bb5f3aa0df5226832`; avalanche `0x7441508a758353558df82de3d6efe23d737237dd`; avalanche `0x84db13e578deee365ab28f11a74b576ea20f6d2b`; avalanche `0x9741411d4379e0c359e45fcb3fbc8e1442dc2963`; avalanche `0xe0612acd9e95af153f393d6b2d06f9f82d74eb04`; avalanche `0xe2cd9e8f6b489445199d0655bac076d945d9fec4`; avalanche `0xea1d38713c126a289978793db9a7a16f693d66f3`; avalanche `0xede42958846e44d1f2b2254bdd6b1236b190e706` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 
@@ -83,24 +83,24 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | avalanche | n/a | `0x01ab0e...d6e463` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x031f87...8add02` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x0d8fb1...d448d0` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x10620b...9f31e3` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x112f41...0d0c2f` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x2d0f5e...b3d60d` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x32ba3e...9ea72a` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x36b01f...4c3aab` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x47d046...bacecb` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x4d39f7...fbb09d` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x5f1cd0...bc9417` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x6097fa...ce70ae` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x80d75d...4bc326` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x90cdc6...5e5a2a` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x972564...079e52` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xb25aa4...25daf9` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xc7cb89...b92575` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xfc5a16...dd3e5a` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x01ab0e485d1f4fd47630500f1fafcbf5a4d6e463` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x031f870c65b439435003839a2fb7c0a8d48add02` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x0d8fb116403f1039046cd0c37b2c67a460d448d0` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x10620b44604bbeaabbef1e2758061752599f31e3` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x112f41baa5ccb59a7da351dd6a2a31b5ea0d0c2f` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x2d0f5edaa038d6c78bb84e2ea9bf41a047b3d60d` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x32ba3e68d6aa6c12ed647d621831af1a729ea72a` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x36b01ffc971fa0ac8a656ca017f64835b64c3aab` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x47d046526d0c0739d38e2f1ed62d646ed7bacecb` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x4d39f7168ad38ace05b0e0ac55828ea1fdfbb09d` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x5f1cd03b94244403c0e7f5e1f0fce8ec76bc9417` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x6097fa836432fae372692949b7c7c00809ce70ae` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x80d75dddce270184e891e98b5d9650deff4bc326` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x90cdc6ae916be7616397550faa982a50c45e5a2a` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x972564404366874fe68ccdfd778e04e329079e52` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xb25aa4fb0370c0e3c5549d3d3dc9a3257025daf9` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xc7cb89f89c05462407755c549bf0a615fcb92575` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xfc5a16c2d8c707b48def0bfa489eb5fa79dd3e5a` | ❓ Unverified |
 
 ## Audit Inventory
 

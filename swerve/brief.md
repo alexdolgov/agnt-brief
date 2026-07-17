@@ -58,14 +58,14 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Vyper_contract | unknown | ethereum | n/a | [`0x329239...f9f88d`](./contracts/ethereum-1/0x329239599afb305da0a2ec69c58f8a6697f9f88d/) | ✅ Audited |
+| Vyper_contract | unknown | ethereum | n/a | [`0x329239599afb305da0a2ec69c58f8a6697f9f88d`](./contracts/ethereum-1/0x329239599afb305da0a2ec69c58f8a6697f9f88d/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Vyper_contract | unknown | ethereum | n/a | 4 deployments: ethereum [`0x2c988c...f67974`](./contracts/ethereum-1/0x2c988c3974ad7e604e276ae0294a7228def67974/); ethereum `0x77c6e4...83a059`; ethereum `0xb4d0c9...6b4bfa`; ethereum `0xb8baa0...cbd433` | ⚠️ Unaudited |
-| YPoolDelegator | unknown | ethereum | n/a | [`0xe9f8ca...a602b1`](./contracts/ethereum-1/0xe9f8ca518756911ba8ca01bcb571e12ce8a602b1/) | ⚠️ Unaudited |
+| Vyper_contract | unknown | ethereum | n/a | 4 deployments: ethereum [`0x2c988c3974ad7e604e276ae0294a7228def67974`](./contracts/ethereum-1/0x2c988c3974ad7e604e276ae0294a7228def67974/); ethereum `0x77c6e4a580c0dce4e5c7a17d0bc077188a83a059`; ethereum `0xb4d0c929cd3a1fbdc6d57e7d3315cf0c4d6b4bfa`; ethereum `0xb8baa0e4287890a5f79863ab62b7f175cecbd433` | ⚠️ Unaudited |
+| YPoolDelegator | unknown | ethereum | n/a | [`0xe9f8ca518756911ba8ca01bcb571e12ce8a602b1`](./contracts/ethereum-1/0xe9f8ca518756911ba8ca01bcb571e12ce8a602b1/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -85,9 +85,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x7e12d7...5f49b4` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xba08a5...fb9979` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc1aaeb...6af74e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x7e12d719563b4c8d6ef4b3465bdbfce0a45f49b4` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xba08a5dd30dfc2af10b5e954b25831708efb9979` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc1aaebbd5d6464cbe62ffa7e0156a7ba826af74e` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -101,8 +101,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x2c988c...f67974`](./contracts/ethereum-1/0x2c988c3974ad7e604e276ae0294a7228def67974/) | Vyper_contract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xe9f8ca...a602b1`](./contracts/ethereum-1/0xe9f8ca518756911ba8ca01bcb571e12ce8a602b1/) | YPoolDelegator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x2c988c3974ad7e604e276ae0294a7228def67974`](./contracts/ethereum-1/0x2c988c3974ad7e604e276ae0294a7228def67974/) | Vyper_contract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe9f8ca518756911ba8ca01bcb571e12ce8a602b1`](./contracts/ethereum-1/0xe9f8ca518756911ba8ca01bcb571e12ce8a602b1/) | YPoolDelegator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -62,8 +62,8 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Bank | unknown | ethereum | n/a | 7 deployments: ethereum [`0x184eb0...42f6b9`](./contracts/ethereum-1/0x184eb0c0e7ee0787caeb427648626aff9342f6b9/); ethereum `0x57174a...8be718`; ethereum `0x6eca34...3b0db1`; ethereum `0xa6d416...8561b7`; ethereum `0xadb85b...79ed85`; ethereum `0xb0182c...7f15c4`; ethereum `0xd12a27...fdb143` | ⚠️ Unaudited |
-| OmnichainOpen | unknown | bsc | n/a | [`0xa227cc...739447`](./contracts/bsc-56/0xa227cc36938f0c9e09ce0e64dfab226cad739447/) | ⚠️ Unaudited |
+| Bank | unknown | ethereum | n/a | 7 deployments: ethereum [`0x184eb0c0e7ee0787caeb427648626aff9342f6b9`](./contracts/ethereum-1/0x184eb0c0e7ee0787caeb427648626aff9342f6b9/); ethereum `0x57174a11293cffc0177e9f8c8aa9622bac8be718`; ethereum `0x6eca348dce347d8dac2ce7e044df3d6d4f3b0db1`; ethereum `0xa6d41660b0fcac100df2128a22ad730d958561b7`; ethereum `0xadb85bdf08e492e9b62b0d0f705113d1e379ed85`; ethereum `0xb0182c6014c12764ebf42ab670fbce09a77f15c4`; ethereum `0xd12a277f2f0f66d187f6ceaf32654bbbeffdb143` | ⚠️ Unaudited |
+| OmnichainOpen | unknown | bsc | n/a | [`0xa227cc36938f0c9e09ce0e64dfab226cad739447`](./contracts/bsc-56/0xa227cc36938f0c9e09ce0e64dfab226cad739447/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,8 +95,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x184eb0...42f6b9`](./contracts/ethereum-1/0x184eb0c0e7ee0787caeb427648626aff9342f6b9/) | Bank | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xa227cc...739447`](./contracts/bsc-56/0xa227cc36938f0c9e09ce0e64dfab226cad739447/) | OmnichainOpen | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x184eb0c0e7ee0787caeb427648626aff9342f6b9`](./contracts/ethereum-1/0x184eb0c0e7ee0787caeb427648626aff9342f6b9/) | Bank | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xa227cc36938f0c9e09ce0e64dfab226cad739447`](./contracts/bsc-56/0xa227cc36938f0c9e09ce0e64dfab226cad739447/) | OmnichainOpen | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

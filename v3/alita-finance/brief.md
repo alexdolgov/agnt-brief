@@ -90,12 +90,12 @@ The pinned logic-topography run contains 5 contract row(s) across bsc. Structura
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AlitaRouter | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-226181 | `0x730acc...e32db8` | ⚠️ Unaudited |
-| AlitaSwapFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-226182 | `0xc7a506...ef05d9` | ⚠️ Unaudited |
-| AliToken | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | bsc | unit-226180 | `0x557233...a5073c` | ⚠️ Unaudited |
-| Incentive | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-226178 | `0x28162c...a58815` | ⚠️ Unaudited |
-| MasterChef | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-226179 | `0x4f7b2b...a10694` | ⚠️ Unaudited |
-| Staking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc057c6...f7f838` | ⚠️ Unaudited |
+| AlitaRouter | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-226181 | `0x730acc3bbf2443f2eaeacfc7ac7b4d8dc9e32db8` | ⚠️ Unaudited |
+| AlitaSwapFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-226182 | `0xc7a506ab3ac668eab6bf9ecf971433d6cfef05d9` | ⚠️ Unaudited |
+| AliToken | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | bsc | unit-226180 | `0x557233e794d1a5fbcc6d26dca49147379ea5073c` | ⚠️ Unaudited |
+| Incentive | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-226178 | `0x28162cda1e767663f68b759af47801171aa58815` | ⚠️ Unaudited |
+| MasterChef | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-226179 | `0x4f7b2be2bc3c61009e9ae520ccfc830612a10694` | ⚠️ Unaudited |
+| Staking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc057c6c2dfb25c9a613052dcea73e21b50f7f838` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -115,7 +115,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0xe0d3c6...708e70` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0xe0d3c699e8d5a32e9e360caea4a222698d708e70` | ❓ Unverified |
 
 ## Audit Inventory
 

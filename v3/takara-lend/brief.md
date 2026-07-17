@@ -52,23 +52,23 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- Comptroller (`0x56a171...b8d9bd`, chain 1329)
-- JumpRateModel (`0x52196f...06a26b`, chain 1329)
-- JumpRateModel (`0x692d0b...ff196b`, chain 1329)
-- JumpRateModel (`0xa282a2...8d88fe`, chain 1329)
-- JumpRateModel (`0xc6c068...291aa2`, chain 1329)
-- JumpRateModel (`0xed908a...709e1e`, chain 1329)
-- MarketState (`0x323917...e2af40`, chain 1329)
-- MultiRewardDistributor (`0x059798...d9dc82`, chain 1329)
-- ProxyAdmin (`0x8df126...a60288`, chain 1329)
-- TErc20Delegator (`0x92e514...e8b3d6`, chain 1329)
-- TErc20Delegator (`0xa26b9b...52c4e2`, chain 1329)
-- TErc20Delegator (`0xc3c9e3...b86e87`, chain 1329)
-- TErc20Delegator (`0xc68351...bd7479`, chain 1329)
-- TErc20Delegator (`0xda642a...200429`, chain 1329)
-- TransparentUpgradeableProxy (`0x68a92b...f9bc11`, chain 1329)
-- TransparentUpgradeableProxy (`0xd6a275...cc0447`, chain 1329)
-- Unitroller (`0x71034b...d8caee`, chain 1329)
+- Comptroller (`0x56a171acb1bba46d4fdf21afbe89377574b8d9bd`, chain 1329)
+- JumpRateModel (`0x52196ff255aa200552b5d24d56a725b0e206a26b`, chain 1329)
+- JumpRateModel (`0x692d0bf5112b221ab14c5dc8c2159ddd87ff196b`, chain 1329)
+- JumpRateModel (`0xa282a20b9bab553d434faec7d473c08b2e8d88fe`, chain 1329)
+- JumpRateModel (`0xc6c06859d6caef79a6e750ebc43dd2df63291aa2`, chain 1329)
+- JumpRateModel (`0xed908ab644212969249bc7b167e3a2df30709e1e`, chain 1329)
+- MarketState (`0x323917a279b209754b32ab57a817c64ecfe2af40`, chain 1329)
+- MultiRewardDistributor (`0x059798f39461e17047b6d2ad6aae4d3a0dd9dc82`, chain 1329)
+- ProxyAdmin (`0x8df1265bfb778ffd08341c63e7c67367c0a60288`, chain 1329)
+- TErc20Delegator (`0x92e51466482146e71b692ced2265284968e8b3d6`, chain 1329)
+- TErc20Delegator (`0xa26b9bfe606d29f16b5aecf30f9233934452c4e2`, chain 1329)
+- TErc20Delegator (`0xc3c9e322f4aae352ace79d0e62ade3563fb86e87`, chain 1329)
+- TErc20Delegator (`0xc68351b9b3638a6f4a3ae100bd251e227bbd7479`, chain 1329)
+- TErc20Delegator (`0xda642a7821e91ed285262fead162e5fd17200429`, chain 1329)
+- TransparentUpgradeableProxy (`0x68a92be349d48766128c0ae893fc391859f9bc11`, chain 1329)
+- TransparentUpgradeableProxy (`0xd6a275072dcec8a319c0c7178951a0cf9dcc0447`, chain 1329)
+- Unitroller (`0x71034bf5ec0fad7aee81a213403c8892f3d8caee`, chain 1329)
 
 ## Contract Surface Quality
 
@@ -114,19 +114,19 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| CompositeOracle | unknown | project_anchor | own_supporting | 1 | sei | unit-393848 | `0xd6a275...cc0447` | ⚠️ Unaudited |
-| Comptroller | unknown | project_anchor | own_supporting | 0 | sei | unit-393840 | `0x56a171...b8d9bd` | ⚠️ Unaudited |
-| ComptrollerV2 | unknown | project_anchor | own_supporting | 1 | sei | unit-393850 | `0x71034b...d8caee` | ⚠️ Unaudited |
-| JumpRateModel | unknown | project_anchor | own_supporting | 0 | sei | unit-393839 | `0x52196f...06a26b` | ⚠️ Unaudited |
-| JumpRateModel | unknown | project_anchor | own_supporting | 0 | sei | unit-393841 | `0x692d0b...ff196b` | ⚠️ Unaudited |
-| JumpRateModel | unknown | project_anchor | own_supporting | 0 | sei | unit-393844 | `0xa282a2...8d88fe` | ⚠️ Unaudited |
-| JumpRateModel | unknown | project_anchor | own_supporting | 0 | sei | unit-393845 | `0xc6c068...291aa2` | ⚠️ Unaudited |
-| JumpRateModel | unknown | project_anchor | own_supporting | 0 | sei | unit-393846 | `0xed908a...709e1e` | ⚠️ Unaudited |
-| MarketState | unknown | project_anchor | own_supporting | 0 | sei | unit-393838 | `0x323917...e2af40` | ⚠️ Unaudited |
-| MultiRewardDistributor | unknown | project_anchor | own_supporting | 1 | sei | unit-393847 | 2 deployments: sei `0x059798...d9dc82`; sei `0x68a92b...f9bc11` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | project_anchor | own_supporting | 0 | sei | unit-393842 | `0x8df126...a60288` | ⚠️ Unaudited |
-| TErc20Delegate | unknown | project_anchor | own_supporting | 4 | sei | unit-393849 (4 proxies) | 4 deployments: sei `0xa26b9b...52c4e2`; sei `0xc3c9e3...b86e87`; sei `0xc68351...bd7479`; sei `0xda642a...200429` | ⚠️ Unaudited |
-| TErc20Delegator | unknown | project_anchor | own_supporting | 0 | sei | unit-393843 | `0x92e514...e8b3d6` | ⚠️ Unaudited |
+| CompositeOracle | unknown | project_anchor | own_supporting | 1 | sei | unit-393848 | `0xd6a275072dcec8a319c0c7178951a0cf9dcc0447` | ⚠️ Unaudited |
+| Comptroller | unknown | project_anchor | own_supporting | 0 | sei | unit-393840 | `0x56a171acb1bba46d4fdf21afbe89377574b8d9bd` | ⚠️ Unaudited |
+| ComptrollerV2 | unknown | project_anchor | own_supporting | 1 | sei | unit-393850 | `0x71034bf5ec0fad7aee81a213403c8892f3d8caee` | ⚠️ Unaudited |
+| JumpRateModel | unknown | project_anchor | own_supporting | 0 | sei | unit-393839 | `0x52196ff255aa200552b5d24d56a725b0e206a26b` | ⚠️ Unaudited |
+| JumpRateModel | unknown | project_anchor | own_supporting | 0 | sei | unit-393841 | `0x692d0bf5112b221ab14c5dc8c2159ddd87ff196b` | ⚠️ Unaudited |
+| JumpRateModel | unknown | project_anchor | own_supporting | 0 | sei | unit-393844 | `0xa282a20b9bab553d434faec7d473c08b2e8d88fe` | ⚠️ Unaudited |
+| JumpRateModel | unknown | project_anchor | own_supporting | 0 | sei | unit-393845 | `0xc6c06859d6caef79a6e750ebc43dd2df63291aa2` | ⚠️ Unaudited |
+| JumpRateModel | unknown | project_anchor | own_supporting | 0 | sei | unit-393846 | `0xed908ab644212969249bc7b167e3a2df30709e1e` | ⚠️ Unaudited |
+| MarketState | unknown | project_anchor | own_supporting | 0 | sei | unit-393838 | `0x323917a279b209754b32ab57a817c64ecfe2af40` | ⚠️ Unaudited |
+| MultiRewardDistributor | unknown | project_anchor | own_supporting | 1 | sei | unit-393847 | 2 deployments: sei `0x059798f39461e17047b6d2ad6aae4d3a0dd9dc82`; sei `0x68a92be349d48766128c0ae893fc391859f9bc11` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | project_anchor | own_supporting | 0 | sei | unit-393842 | `0x8df1265bfb778ffd08341c63e7c67367c0a60288` | ⚠️ Unaudited |
+| TErc20Delegate | unknown | project_anchor | own_supporting | 4 | sei | unit-393849 (4 proxies) | 4 deployments: sei `0xa26b9bfe606d29f16b5aecf30f9233934452c4e2`; sei `0xc3c9e322f4aae352ace79d0e62ade3563fb86e87`; sei `0xc68351b9b3638a6f4a3ae100bd251e227bbd7479`; sei `0xda642a7821e91ed285262fead162e5fd17200429` | ⚠️ Unaudited |
+| TErc20Delegator | unknown | project_anchor | own_supporting | 0 | sei | unit-393843 | `0x92e51466482146e71b692ced2265284968e8b3d6` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

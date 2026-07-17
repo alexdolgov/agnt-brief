@@ -62,7 +62,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| DEXVaultV1 | unknown | bsc | n/a | 2 deployments: bsc [`0x6302e7...86cc92`](./contracts/bsc-56/0x6302e7948736baf985804f0dc6132baf6d86cc92/); bsc `0x8259f6...534ca6` | ⚠️ Unaudited |
+| DEXVaultV1 | unknown | bsc | n/a | 2 deployments: bsc [`0x6302e7948736baf985804f0dc6132baf6d86cc92`](./contracts/bsc-56/0x6302e7948736baf985804f0dc6132baf6d86cc92/); bsc `0x8259f6010a030bcd54335503ba91bba70a534ca6` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -94,7 +94,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x6302e7...86cc92`](./contracts/bsc-56/0x6302e7948736baf985804f0dc6132baf6d86cc92/) | DEXVaultV1 | unknown | $900,203.31 | Verified native implementation with $900,203.31 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x6302e7948736baf985804f0dc6132baf6d86cc92`](./contracts/bsc-56/0x6302e7948736baf985804f0dc6132baf6d86cc92/) | DEXVaultV1 | unknown | $900,203.31 | Verified native implementation with $900,203.31 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

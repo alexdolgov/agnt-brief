@@ -66,49 +66,49 @@ The protocol comprises 2 functional families. Its contracts share 24 common proj
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Overseer | unknown | hyperliquid | n/a | [`0xac43e7...c9f831`](./contracts/hyperliquid-999/0xac43e7a1467bf6a4db24bf1f121fb59be6c9f831/) | ✅ Audited |
-| ProtocolFactory | unknown | arbitrum | n/a | [`0x0557c4...297a09`](./contracts/arbitrum-42161/0x0557c48a558ade9a8f0f6b64ee648284af297a09/) | ✅ Audited |
-| SovereignPool | unknown | hyperliquid | n/a | [`0x5365b6...413b7d`](./contracts/hyperliquid-999/0x5365b6ef09253c7abc0a9286ec578a9f4b413b7d/) | ✅ Audited |
-| SovereignPoolFactory | unknown | arbitrum | n/a | [`0x4e789b...441bc4`](./contracts/arbitrum-42161/0x4e789beaef3523fa49fa1e1efcac413f71441bc4/) | ✅ Audited |
-| StakeAccountManager | unknown | hyperliquid | n/a | [`0x44a22b...a293c2`](./contracts/hyperliquid-999/0x44a22b0c71efb3bd7546d246ff66e83844a293c2/) | ✅ Audited |
-| StakingModuleExternalAccount | unknown | hyperliquid | n/a | [`0x409112...9d25b1`](./contracts/hyperliquid-999/0x40911282501795fc20da3ebcd9d92726a99d25b1/) | ✅ Audited |
-| STEXAMM | unknown | hyperliquid | n/a | [`0x38257b...a47242`](./contracts/hyperliquid-999/0x38257bbec97bbfd605d8c9770e66cfa0e7a47242/) | ✅ Audited |
-| STEXRatioSwapFeeModule | unknown | hyperliquid | n/a | [`0x69317c...6956d9`](./contracts/hyperliquid-999/0x69317cecf77fb5dc68abe5c7aafb283de46956d9/) | ✅ Audited |
-| stHYPE | unknown | hyperliquid | n/a | [`0xe71caf...49e057`](./contracts/hyperliquid-999/0xe71caf5c1fe56d8897c7b604295d23968049e057/) | ✅ Audited |
-| stHYPEWithdrawalModule | unknown | hyperliquid | n/a | [`0x1da0ea...c8ab15`](./contracts/hyperliquid-999/0x1da0ea7f6464d715b0da6922aeb45c382cc8ab15/) | ✅ Audited |
-| ValantisSwapRouter | unknown | arbitrum | n/a | [`0x021b6a...da97eb`](./contracts/arbitrum-42161/0x021b6a81fef43bb86ef46e211008e54765da97eb/) | ✅ Audited |
-| ValidlyFactory | unknown | arbitrum | n/a | [`0x101635...80f9f2`](./contracts/arbitrum-42161/0x101635d1ace278063e651692dce17b528680f9f2/) | ✅ Audited |
-| wstHYPE | unknown | hyperliquid | n/a | [`0x104324...57aaf7`](./contracts/hyperliquid-999/0x104324863cfb2220756c60384efa9bb67a57aaf7/) | ✅ Audited |
+| Overseer | unknown | hyperliquid | n/a | [`0xac43e7a1467bf6a4db24bf1f121fb59be6c9f831`](./contracts/hyperliquid-999/0xac43e7a1467bf6a4db24bf1f121fb59be6c9f831/) | ✅ Audited |
+| ProtocolFactory | unknown | arbitrum | n/a | [`0x0557c48a558ade9a8f0f6b64ee648284af297a09`](./contracts/arbitrum-42161/0x0557c48a558ade9a8f0f6b64ee648284af297a09/) | ✅ Audited |
+| SovereignPool | unknown | hyperliquid | n/a | [`0x5365b6ef09253c7abc0a9286ec578a9f4b413b7d`](./contracts/hyperliquid-999/0x5365b6ef09253c7abc0a9286ec578a9f4b413b7d/) | ✅ Audited |
+| SovereignPoolFactory | unknown | arbitrum | n/a | [`0x4e789beaef3523fa49fa1e1efcac413f71441bc4`](./contracts/arbitrum-42161/0x4e789beaef3523fa49fa1e1efcac413f71441bc4/) | ✅ Audited |
+| StakeAccountManager | unknown | hyperliquid | n/a | [`0x44a22b0c71efb3bd7546d246ff66e83844a293c2`](./contracts/hyperliquid-999/0x44a22b0c71efb3bd7546d246ff66e83844a293c2/) | ✅ Audited |
+| StakingModuleExternalAccount | unknown | hyperliquid | n/a | [`0x40911282501795fc20da3ebcd9d92726a99d25b1`](./contracts/hyperliquid-999/0x40911282501795fc20da3ebcd9d92726a99d25b1/) | ✅ Audited |
+| STEXAMM | unknown | hyperliquid | n/a | [`0x38257bbec97bbfd605d8c9770e66cfa0e7a47242`](./contracts/hyperliquid-999/0x38257bbec97bbfd605d8c9770e66cfa0e7a47242/) | ✅ Audited |
+| STEXRatioSwapFeeModule | unknown | hyperliquid | n/a | [`0x69317cecf77fb5dc68abe5c7aafb283de46956d9`](./contracts/hyperliquid-999/0x69317cecf77fb5dc68abe5c7aafb283de46956d9/) | ✅ Audited |
+| stHYPE | unknown | hyperliquid | n/a | [`0xe71caf5c1fe56d8897c7b604295d23968049e057`](./contracts/hyperliquid-999/0xe71caf5c1fe56d8897c7b604295d23968049e057/) | ✅ Audited |
+| stHYPEWithdrawalModule | unknown | hyperliquid | n/a | [`0x1da0ea7f6464d715b0da6922aeb45c382cc8ab15`](./contracts/hyperliquid-999/0x1da0ea7f6464d715b0da6922aeb45c382cc8ab15/) | ✅ Audited |
+| ValantisSwapRouter | unknown | arbitrum | n/a | [`0x021b6a81fef43bb86ef46e211008e54765da97eb`](./contracts/arbitrum-42161/0x021b6a81fef43bb86ef46e211008e54765da97eb/) | ✅ Audited |
+| ValidlyFactory | unknown | arbitrum | n/a | [`0x101635d1ace278063e651692dce17b528680f9f2`](./contracts/arbitrum-42161/0x101635d1ace278063e651692dce17b528680f9f2/) | ✅ Audited |
+| wstHYPE | unknown | hyperliquid | n/a | [`0x104324863cfb2220756c60384efa9bb67a57aaf7`](./contracts/hyperliquid-999/0x104324863cfb2220756c60384efa9bb67a57aaf7/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (25)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AccountFactory | unknown | hyperliquid | n/a | [`0x07ec2d...11c3b0`](./contracts/hyperliquid-999/0x07ec2df59852eadaaaa830be0aa1ff3cb011c3b0/) | ⚠️ Unaudited |
-| Agent | unknown | hyperliquid | n/a | [`0x0e3e92...590698`](./contracts/hyperliquid-999/0x0e3e92403858f80c02b53d7e8f5dbd8892590698/) | ⚠️ Unaudited |
-| BootstrapHandoffManager | unknown | hyperliquid | n/a | [`0x00da5e...87575f`](./contracts/hyperliquid-999/0x00da5e6ee624729937ef76767198e20a2e87575f/) | ⚠️ Unaudited |
-| DepositWrapper | unknown | hyperliquid | n/a | [`0x644195...e75a98`](./contracts/hyperliquid-999/0x644195021278674bd8f7574e17018d32d8e75a98/) | ⚠️ Unaudited |
-| FiatToken | unknown | ethereum | n/a | [`0x8cbde2...77a91a`](./contracts/ethereum-1/0x8cbde23b1416cac07a52591bba744c744d77a91a/) | ⚠️ Unaudited |
-| FiatTokenProxy | unknown | ethereum | n/a | [`0xa0b869...06eb48`](./contracts/ethereum-1/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/) | ⚠️ Unaudited |
-| FiatTokenUtil | unknown | ethereum | n/a | [`0x6315aa...0355a6`](./contracts/ethereum-1/0x6315aa908c50376d1028412c028aa0629f0355a6/) | ⚠️ Unaudited |
-| FiatTokenV1 | unknown | ethereum | n/a | [`0x088247...57fe56`](./contracts/ethereum-1/0x0882477e7895bdc5cea7cb1552ed914ab157fe56/) | ⚠️ Unaudited |
-| FiatTokenV2 | unknown | ethereum | n/a | [`0xb7277a...3778a2`](./contracts/ethereum-1/0xb7277a6e95992041568d9391d09d0122023778a2/) | ⚠️ Unaudited |
-| FiatTokenV2_1 | unknown | ethereum | n/a | [`0xa2327a...4cbdcf`](./contracts/ethereum-1/0xa2327a938febf5fec13bacfb16ae10ecbc4cbdcf/) | ⚠️ Unaudited |
-| GaslessSwapEntrypoint | unknown | arbitrum | n/a | [`0x133f6b...8fad13`](./contracts/arbitrum-42161/0x133f6beb2a2914fcdf7721c0c7b05771da8fad13/) | ⚠️ Unaudited |
-| HOT | unknown | ethereum | n/a | [`0x326999...62132a`](./contracts/ethereum-1/0x3269994964dfe4aa5f8dd0c99ed40e881562132a/) | ⚠️ Unaudited |
-| HyperCoreSubAccountFactory | unknown | hyperliquid | n/a | [`0x23d572...fb8662`](./contracts/hyperliquid-999/0x23d57281db1a74c7f8b920c6e44c44d006fb8662/) | ⚠️ Unaudited |
-| MasterMinter | unknown | ethereum | n/a | [`0x566c11...674335`](./contracts/ethereum-1/0x566c11b5c2201b69c9269fe924e4395873674335/) | ⚠️ Unaudited |
-| MiniMeTokenFactory | unknown | ethereum | n/a | [`0x003ea7...f15505`](./contracts/ethereum-1/0x003ea7f54b6dcf6cee86986edc18143a35f15505/) | ⚠️ Unaudited |
-| NEC | unknown | ethereum | n/a | [`0xcc80c0...b97a5e`](./contracts/ethereum-1/0xcc80c051057b774cd75067dc48f8987c4eb97a5e/) | ⚠️ Unaudited |
-| NectarController | unknown | ethereum | n/a | [`0x8d5a41...05d98d`](./contracts/ethereum-1/0x8d5a41e85f4ce2433beef476305d307b9205d98d/) | ⚠️ Unaudited |
-| ReserveMath | unknown | ethereum | n/a | [`0xcc5e67...4e057e`](./contracts/ethereum-1/0xcc5e67887272b039670c14b39c4959d8c74e057e/) | ⚠️ Unaudited |
-| StakeAccountManagerReader | unknown | hyperliquid | n/a | [`0xdf1bc5...3dc19b`](./contracts/hyperliquid-999/0xdf1bc585e3ce9cb18bf52852dafd6aefeb3dc19b/) | ⚠️ Unaudited |
-| STEXLens | unknown | hyperliquid | n/a | [`0x68675d...f24ed0`](./contracts/hyperliquid-999/0x68675dc8406252b6950128f6504a5e287ef24ed0/) | ⚠️ Unaudited |
-| TetherToken | unknown | ethereum | n/a | [`0x0e98db...fdba1b`](./contracts/ethereum-1/0x0e98db51010dd1ade14dd3fb164e218805fdba1b/) | ⚠️ Unaudited |
-| TimelockController | unknown | hyperliquid | n/a | [`0xc5ded4...7e23d2`](./contracts/hyperliquid-999/0xc5ded4f7f53919c714059a17d31371ae847e23d2/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | [`0x3d8884...8c9c06`](./contracts/hyperliquid-999/0x3d88847a4d6f92164056eec7d6e052c8a18c9c06/) | ⚠️ Unaudited |
-| WithdrawalModuleManager | unknown | hyperliquid | n/a | [`0x80c7f8...5d02e2`](./contracts/hyperliquid-999/0x80c7f89398160fcd9e74519f63f437459e5d02e2/) | ⚠️ Unaudited |
-| WrapperLockEth | unknown | ethereum | n/a | [`0x991f0e...f3690e`](./contracts/ethereum-1/0x991f0e5c5775ca9dd02e30e67f545c36cff3690e/) | ⚠️ Unaudited |
+| AccountFactory | unknown | hyperliquid | n/a | [`0x07ec2df59852eadaaaa830be0aa1ff3cb011c3b0`](./contracts/hyperliquid-999/0x07ec2df59852eadaaaa830be0aa1ff3cb011c3b0/) | ⚠️ Unaudited |
+| Agent | unknown | hyperliquid | n/a | [`0x0e3e92403858f80c02b53d7e8f5dbd8892590698`](./contracts/hyperliquid-999/0x0e3e92403858f80c02b53d7e8f5dbd8892590698/) | ⚠️ Unaudited |
+| BootstrapHandoffManager | unknown | hyperliquid | n/a | [`0x00da5e6ee624729937ef76767198e20a2e87575f`](./contracts/hyperliquid-999/0x00da5e6ee624729937ef76767198e20a2e87575f/) | ⚠️ Unaudited |
+| DepositWrapper | unknown | hyperliquid | n/a | [`0x644195021278674bd8f7574e17018d32d8e75a98`](./contracts/hyperliquid-999/0x644195021278674bd8f7574e17018d32d8e75a98/) | ⚠️ Unaudited |
+| FiatToken | unknown | ethereum | n/a | [`0x8cbde23b1416cac07a52591bba744c744d77a91a`](./contracts/ethereum-1/0x8cbde23b1416cac07a52591bba744c744d77a91a/) | ⚠️ Unaudited |
+| FiatTokenProxy | unknown | ethereum | n/a | [`0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48`](./contracts/ethereum-1/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/) | ⚠️ Unaudited |
+| FiatTokenUtil | unknown | ethereum | n/a | [`0x6315aa908c50376d1028412c028aa0629f0355a6`](./contracts/ethereum-1/0x6315aa908c50376d1028412c028aa0629f0355a6/) | ⚠️ Unaudited |
+| FiatTokenV1 | unknown | ethereum | n/a | [`0x0882477e7895bdc5cea7cb1552ed914ab157fe56`](./contracts/ethereum-1/0x0882477e7895bdc5cea7cb1552ed914ab157fe56/) | ⚠️ Unaudited |
+| FiatTokenV2 | unknown | ethereum | n/a | [`0xb7277a6e95992041568d9391d09d0122023778a2`](./contracts/ethereum-1/0xb7277a6e95992041568d9391d09d0122023778a2/) | ⚠️ Unaudited |
+| FiatTokenV2_1 | unknown | ethereum | n/a | [`0xa2327a938febf5fec13bacfb16ae10ecbc4cbdcf`](./contracts/ethereum-1/0xa2327a938febf5fec13bacfb16ae10ecbc4cbdcf/) | ⚠️ Unaudited |
+| GaslessSwapEntrypoint | unknown | arbitrum | n/a | [`0x133f6beb2a2914fcdf7721c0c7b05771da8fad13`](./contracts/arbitrum-42161/0x133f6beb2a2914fcdf7721c0c7b05771da8fad13/) | ⚠️ Unaudited |
+| HOT | unknown | ethereum | n/a | [`0x3269994964dfe4aa5f8dd0c99ed40e881562132a`](./contracts/ethereum-1/0x3269994964dfe4aa5f8dd0c99ed40e881562132a/) | ⚠️ Unaudited |
+| HyperCoreSubAccountFactory | unknown | hyperliquid | n/a | [`0x23d57281db1a74c7f8b920c6e44c44d006fb8662`](./contracts/hyperliquid-999/0x23d57281db1a74c7f8b920c6e44c44d006fb8662/) | ⚠️ Unaudited |
+| MasterMinter | unknown | ethereum | n/a | [`0x566c11b5c2201b69c9269fe924e4395873674335`](./contracts/ethereum-1/0x566c11b5c2201b69c9269fe924e4395873674335/) | ⚠️ Unaudited |
+| MiniMeTokenFactory | unknown | ethereum | n/a | [`0x003ea7f54b6dcf6cee86986edc18143a35f15505`](./contracts/ethereum-1/0x003ea7f54b6dcf6cee86986edc18143a35f15505/) | ⚠️ Unaudited |
+| NEC | unknown | ethereum | n/a | [`0xcc80c051057b774cd75067dc48f8987c4eb97a5e`](./contracts/ethereum-1/0xcc80c051057b774cd75067dc48f8987c4eb97a5e/) | ⚠️ Unaudited |
+| NectarController | unknown | ethereum | n/a | [`0x8d5a41e85f4ce2433beef476305d307b9205d98d`](./contracts/ethereum-1/0x8d5a41e85f4ce2433beef476305d307b9205d98d/) | ⚠️ Unaudited |
+| ReserveMath | unknown | ethereum | n/a | [`0xcc5e67887272b039670c14b39c4959d8c74e057e`](./contracts/ethereum-1/0xcc5e67887272b039670c14b39c4959d8c74e057e/) | ⚠️ Unaudited |
+| StakeAccountManagerReader | unknown | hyperliquid | n/a | [`0xdf1bc585e3ce9cb18bf52852dafd6aefeb3dc19b`](./contracts/hyperliquid-999/0xdf1bc585e3ce9cb18bf52852dafd6aefeb3dc19b/) | ⚠️ Unaudited |
+| STEXLens | unknown | hyperliquid | n/a | [`0x68675dc8406252b6950128f6504a5e287ef24ed0`](./contracts/hyperliquid-999/0x68675dc8406252b6950128f6504a5e287ef24ed0/) | ⚠️ Unaudited |
+| TetherToken | unknown | ethereum | n/a | [`0x0e98db51010dd1ade14dd3fb164e218805fdba1b`](./contracts/ethereum-1/0x0e98db51010dd1ade14dd3fb164e218805fdba1b/) | ⚠️ Unaudited |
+| TimelockController | unknown | hyperliquid | n/a | [`0xc5ded4f7f53919c714059a17d31371ae847e23d2`](./contracts/hyperliquid-999/0xc5ded4f7f53919c714059a17d31371ae847e23d2/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | hyperliquid | n/a | [`0x3d88847a4d6f92164056eec7d6e052c8a18c9c06`](./contracts/hyperliquid-999/0x3d88847a4d6f92164056eec7d6e052c8a18c9c06/) | ⚠️ Unaudited |
+| WithdrawalModuleManager | unknown | hyperliquid | n/a | [`0x80c7f89398160fcd9e74519f63f437459e5d02e2`](./contracts/hyperliquid-999/0x80c7f89398160fcd9e74519f63f437459e5d02e2/) | ⚠️ Unaudited |
+| WrapperLockEth | unknown | ethereum | n/a | [`0x991f0e5c5775ca9dd02e30e67f545c36cff3690e`](./contracts/ethereum-1/0x991f0e5c5775ca9dd02e30e67f545c36cff3690e/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -161,29 +161,29 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| hyperliquid | [`0x07ec2d...11c3b0`](./contracts/hyperliquid-999/0x07ec2df59852eadaaaa830be0aa1ff3cb011c3b0/) | AccountFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x0e3e92...590698`](./contracts/hyperliquid-999/0x0e3e92403858f80c02b53d7e8f5dbd8892590698/) | Agent | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x00da5e...87575f`](./contracts/hyperliquid-999/0x00da5e6ee624729937ef76767198e20a2e87575f/) | BootstrapHandoffManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x644195...e75a98`](./contracts/hyperliquid-999/0x644195021278674bd8f7574e17018d32d8e75a98/) | DepositWrapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x8cbde2...77a91a`](./contracts/ethereum-1/0x8cbde23b1416cac07a52591bba744c744d77a91a/) | FiatToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa0b869...06eb48`](./contracts/ethereum-1/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/) | FiatTokenProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6315aa...0355a6`](./contracts/ethereum-1/0x6315aa908c50376d1028412c028aa0629f0355a6/) | FiatTokenUtil | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x088247...57fe56`](./contracts/ethereum-1/0x0882477e7895bdc5cea7cb1552ed914ab157fe56/) | FiatTokenV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xb7277a...3778a2`](./contracts/ethereum-1/0xb7277a6e95992041568d9391d09d0122023778a2/) | FiatTokenV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa2327a...4cbdcf`](./contracts/ethereum-1/0xa2327a938febf5fec13bacfb16ae10ecbc4cbdcf/) | FiatTokenV2_1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x133f6b...8fad13`](./contracts/arbitrum-42161/0x133f6beb2a2914fcdf7721c0c7b05771da8fad13/) | GaslessSwapEntrypoint | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x326999...62132a`](./contracts/ethereum-1/0x3269994964dfe4aa5f8dd0c99ed40e881562132a/) | HOT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x23d572...fb8662`](./contracts/hyperliquid-999/0x23d57281db1a74c7f8b920c6e44c44d006fb8662/) | HyperCoreSubAccountFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x566c11...674335`](./contracts/ethereum-1/0x566c11b5c2201b69c9269fe924e4395873674335/) | MasterMinter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x003ea7...f15505`](./contracts/ethereum-1/0x003ea7f54b6dcf6cee86986edc18143a35f15505/) | MiniMeTokenFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xcc80c0...b97a5e`](./contracts/ethereum-1/0xcc80c051057b774cd75067dc48f8987c4eb97a5e/) | NEC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x8d5a41...05d98d`](./contracts/ethereum-1/0x8d5a41e85f4ce2433beef476305d307b9205d98d/) | NectarController | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xcc5e67...4e057e`](./contracts/ethereum-1/0xcc5e67887272b039670c14b39c4959d8c74e057e/) | ReserveMath | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0xdf1bc5...3dc19b`](./contracts/hyperliquid-999/0xdf1bc585e3ce9cb18bf52852dafd6aefeb3dc19b/) | StakeAccountManagerReader | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x68675d...f24ed0`](./contracts/hyperliquid-999/0x68675dc8406252b6950128f6504a5e287ef24ed0/) | STEXLens | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0e98db...fdba1b`](./contracts/ethereum-1/0x0e98db51010dd1ade14dd3fb164e218805fdba1b/) | TetherToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x80c7f8...5d02e2`](./contracts/hyperliquid-999/0x80c7f89398160fcd9e74519f63f437459e5d02e2/) | WithdrawalModuleManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x991f0e...f3690e`](./contracts/ethereum-1/0x991f0e5c5775ca9dd02e30e67f545c36cff3690e/) | WrapperLockEth | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x07ec2df59852eadaaaa830be0aa1ff3cb011c3b0`](./contracts/hyperliquid-999/0x07ec2df59852eadaaaa830be0aa1ff3cb011c3b0/) | AccountFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x0e3e92403858f80c02b53d7e8f5dbd8892590698`](./contracts/hyperliquid-999/0x0e3e92403858f80c02b53d7e8f5dbd8892590698/) | Agent | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x00da5e6ee624729937ef76767198e20a2e87575f`](./contracts/hyperliquid-999/0x00da5e6ee624729937ef76767198e20a2e87575f/) | BootstrapHandoffManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x644195021278674bd8f7574e17018d32d8e75a98`](./contracts/hyperliquid-999/0x644195021278674bd8f7574e17018d32d8e75a98/) | DepositWrapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8cbde23b1416cac07a52591bba744c744d77a91a`](./contracts/ethereum-1/0x8cbde23b1416cac07a52591bba744c744d77a91a/) | FiatToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48`](./contracts/ethereum-1/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/) | FiatTokenProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6315aa908c50376d1028412c028aa0629f0355a6`](./contracts/ethereum-1/0x6315aa908c50376d1028412c028aa0629f0355a6/) | FiatTokenUtil | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0882477e7895bdc5cea7cb1552ed914ab157fe56`](./contracts/ethereum-1/0x0882477e7895bdc5cea7cb1552ed914ab157fe56/) | FiatTokenV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb7277a6e95992041568d9391d09d0122023778a2`](./contracts/ethereum-1/0xb7277a6e95992041568d9391d09d0122023778a2/) | FiatTokenV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa2327a938febf5fec13bacfb16ae10ecbc4cbdcf`](./contracts/ethereum-1/0xa2327a938febf5fec13bacfb16ae10ecbc4cbdcf/) | FiatTokenV2_1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x133f6beb2a2914fcdf7721c0c7b05771da8fad13`](./contracts/arbitrum-42161/0x133f6beb2a2914fcdf7721c0c7b05771da8fad13/) | GaslessSwapEntrypoint | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x3269994964dfe4aa5f8dd0c99ed40e881562132a`](./contracts/ethereum-1/0x3269994964dfe4aa5f8dd0c99ed40e881562132a/) | HOT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x23d57281db1a74c7f8b920c6e44c44d006fb8662`](./contracts/hyperliquid-999/0x23d57281db1a74c7f8b920c6e44c44d006fb8662/) | HyperCoreSubAccountFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x566c11b5c2201b69c9269fe924e4395873674335`](./contracts/ethereum-1/0x566c11b5c2201b69c9269fe924e4395873674335/) | MasterMinter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x003ea7f54b6dcf6cee86986edc18143a35f15505`](./contracts/ethereum-1/0x003ea7f54b6dcf6cee86986edc18143a35f15505/) | MiniMeTokenFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xcc80c051057b774cd75067dc48f8987c4eb97a5e`](./contracts/ethereum-1/0xcc80c051057b774cd75067dc48f8987c4eb97a5e/) | NEC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8d5a41e85f4ce2433beef476305d307b9205d98d`](./contracts/ethereum-1/0x8d5a41e85f4ce2433beef476305d307b9205d98d/) | NectarController | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xcc5e67887272b039670c14b39c4959d8c74e057e`](./contracts/ethereum-1/0xcc5e67887272b039670c14b39c4959d8c74e057e/) | ReserveMath | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0xdf1bc585e3ce9cb18bf52852dafd6aefeb3dc19b`](./contracts/hyperliquid-999/0xdf1bc585e3ce9cb18bf52852dafd6aefeb3dc19b/) | StakeAccountManagerReader | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x68675dc8406252b6950128f6504a5e287ef24ed0`](./contracts/hyperliquid-999/0x68675dc8406252b6950128f6504a5e287ef24ed0/) | STEXLens | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0e98db51010dd1ade14dd3fb164e218805fdba1b`](./contracts/ethereum-1/0x0e98db51010dd1ade14dd3fb164e218805fdba1b/) | TetherToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x80c7f89398160fcd9e74519f63f437459e5d02e2`](./contracts/hyperliquid-999/0x80c7f89398160fcd9e74519f63f437459e5d02e2/) | WithdrawalModuleManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x991f0e5c5775ca9dd02e30e67f545c36cff3690e`](./contracts/ethereum-1/0x991f0e5c5775ca9dd02e30e67f545c36cff3690e/) | WrapperLockEth | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

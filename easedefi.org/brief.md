@@ -62,7 +62,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| GvToken | token | ethereum | n/a | [`0xea5ede...ae1550`](./contracts/ethereum-1/0xea5edef1edb2f47b9637c029a6ac3b80a7ae1550/) | ⚠️ Unaudited |
+| GvToken | token | ethereum | n/a | [`0xea5edef1edb2f47b9637c029a6ac3b80a7ae1550`](./contracts/ethereum-1/0xea5edef1edb2f47b9637c029a6ac3b80a7ae1550/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -94,7 +94,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xea5ede...ae1550`](./contracts/ethereum-1/0xea5edef1edb2f47b9637c029a6ac3b80a7ae1550/) | GvToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xea5edef1edb2f47b9637c029a6ac3b80a7ae1550`](./contracts/ethereum-1/0xea5edef1edb2f47b9637c029a6ac3b80a7ae1550/) | GvToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

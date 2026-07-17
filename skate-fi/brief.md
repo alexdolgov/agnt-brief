@@ -61,16 +61,16 @@ The protocol comprises 4 functional families. Its contracts share 2 common proje
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| RangeProtocolFactory | registry | manta | n/a | [`0x52b29c...2fc9c7`](./contracts/manta-169/0x52b29c6154ad0f5c02416b8cb1ceb76e082fc9c7/) | ✅ Audited |
-| RangeProtocolVault | unknown | ethereum | n/a | 5 deployments: ethereum [`0x5ee485...7a43d8`](./contracts/ethereum-1/0x5ee485c06a9c6bf499ee5fc1b5e16a9a607a43d8/); ethereum `0x890463...47a046`; ethereum `0xb25071...440c11`; manta `0xe9c45a...f7cc70`; mantle `0xfd1bfd...400fa8` | ✅ Audited |
-| VaultLib | unknown | ethereum | n/a | 6 deployments: ethereum [`0x5c584a...9437fb`](./contracts/ethereum-1/0x5c584afadb09d02467da79ea777fa0cae49437fb/); ethereum `0x90ce97...909cc9`; ethereum `0xb0f6b8...754c19`; manta `0x62fd62...5a8f33`; manta `0x873fd4...e55b5b`; mantle `0xe621d0...893e55` | ✅ Audited |
+| RangeProtocolFactory | registry | manta | n/a | [`0x52b29c6154ad0f5c02416b8cb1ceb76e082fc9c7`](./contracts/manta-169/0x52b29c6154ad0f5c02416b8cb1ceb76e082fc9c7/) | ✅ Audited |
+| RangeProtocolVault | unknown | ethereum | n/a | 5 deployments: ethereum [`0x5ee485c06a9c6bf499ee5fc1b5e16a9a607a43d8`](./contracts/ethereum-1/0x5ee485c06a9c6bf499ee5fc1b5e16a9a607a43d8/); ethereum `0x89046305c73f2d9444bc62cde041d2e92747a046`; ethereum `0xb25071dcdffb946230fe2ffceb589adace440c11`; manta `0xe9c45a2446699954847521890b27dd9b24f7cc70`; mantle `0xfd1bfd323332002403a299ea061305251b400fa8` | ✅ Audited |
+| VaultLib | unknown | ethereum | n/a | 6 deployments: ethereum [`0x5c584afadb09d02467da79ea777fa0cae49437fb`](./contracts/ethereum-1/0x5c584afadb09d02467da79ea777fa0cae49437fb/); ethereum `0x90ce9788d0e5a1ff01d4d2d34b6b69038e909cc9`; ethereum `0xb0f6b84ee516005a475fbc335c949edd17754c19`; manta `0x62fd6208a1a6f0b06e1e2788efb4ee74bf5a8f33`; manta `0x873fd467a2a7e4e0a71ad3c45966a84797e55b5b`; mantle `0xe621d00cb578bcac68896e55d60a20317c893e55` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| StakingRewards | unknown | mantle | n/a | 2 deployments: ethereum `0xd45d44...9a96ed`; mantle [`0x1a181b...c7311f`](./contracts/mantle-5000/0x1a181b7acbc3aaf1c174c3fafb10d4e5f2c7311f/) | ⚠️ Unaudited |
-| TimelockController | governance | ethereum | n/a | [`0x21e080...90e07f`](./contracts/ethereum-1/0x21e0803103d3cf8ab0755a02e9e4f55a5590e07f/) | ⚠️ Unaudited |
+| StakingRewards | unknown | mantle | n/a | 2 deployments: ethereum `0xd45d4479237a77b301a8da1f69238aeef79a96ed`; mantle [`0x1a181b7acbc3aaf1c174c3fafb10d4e5f2c7311f`](./contracts/mantle-5000/0x1a181b7acbc3aaf1c174c3fafb10d4e5f2c7311f/) | ⚠️ Unaudited |
+| TimelockController | governance | ethereum | n/a | [`0x21e0803103d3cf8ab0755a02e9e4f55a5590e07f`](./contracts/ethereum-1/0x21e0803103d3cf8ab0755a02e9e4f55a5590e07f/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -90,8 +90,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x249c2a...3ab070` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0x4f1288...e654ff` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x249c2a212208bc0f11480456ee090d04603ab070` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x4f1288650b3bd800a00ccd20d18b3b8914e654ff` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -108,7 +108,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| mantle | [`0x1a181b...c7311f`](./contracts/mantle-5000/0x1a181b7acbc3aaf1c174c3fafb10d4e5f2c7311f/) | StakingRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| mantle | [`0x1a181b7acbc3aaf1c174c3fafb10d4e5f2c7311f`](./contracts/mantle-5000/0x1a181b7acbc3aaf1c174c3fafb10d4e5f2c7311f/) | StakingRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

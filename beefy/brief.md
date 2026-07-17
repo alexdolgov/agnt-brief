@@ -61,15 +61,15 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BIFI | unknown | ethereum | n/a | [`0xb1f1ee...73b1f1`](./contracts/ethereum-1/0xb1f1ee126e9c96231cc3d3fad7c08b4cf873b1f1/) | ✅ Audited |
+| BIFI | unknown | ethereum | n/a | [`0xb1f1ee126e9c96231cc3d3fad7c08b4cf873b1f1`](./contracts/ethereum-1/0xb1f1ee126e9c96231cc3d3fad7c08b4cf873b1f1/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BeefyVaultV7 | unknown | arbitrum | n/a | [`0x0c0846...edb409`](./contracts/arbitrum-42161/0x0c0846c5d8194bc327669763ac6af9b788edb409/) | ⚠️ Unaudited |
-| CLR | unknown | ethereum | n/a | [`0x11ae2b...37fe6c`](./contracts/ethereum-1/0x11ae2b89175792f57d320a020eaea879e837fe6c/) | ⚠️ Unaudited |
-| DelegateRegistry | unknown | ethereum | n/a | [`0x469788...015446`](./contracts/ethereum-1/0x469788fe6e9e9681c6ebf3bf78e7fd26fc015446/) | ⚠️ Unaudited |
+| BeefyVaultV7 | unknown | arbitrum | n/a | [`0x0c0846c5d8194bc327669763ac6af9b788edb409`](./contracts/arbitrum-42161/0x0c0846c5d8194bc327669763ac6af9b788edb409/) | ⚠️ Unaudited |
+| CLR | unknown | ethereum | n/a | [`0x11ae2b89175792f57d320a020eaea879e837fe6c`](./contracts/ethereum-1/0x11ae2b89175792f57d320a020eaea879e837fe6c/) | ⚠️ Unaudited |
+| DelegateRegistry | unknown | ethereum | n/a | [`0x469788fe6e9e9681c6ebf3bf78e7fd26fc015446`](./contracts/ethereum-1/0x469788fe6e9e9681c6ebf3bf78e7fd26fc015446/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -118,9 +118,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | [`0x0c0846...edb409`](./contracts/arbitrum-42161/0x0c0846c5d8194bc327669763ac6af9b788edb409/) | BeefyVaultV7 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x11ae2b...37fe6c`](./contracts/ethereum-1/0x11ae2b89175792f57d320a020eaea879e837fe6c/) | CLR | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x469788...015446`](./contracts/ethereum-1/0x469788fe6e9e9681c6ebf3bf78e7fd26fc015446/) | DelegateRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x0c0846c5d8194bc327669763ac6af9b788edb409`](./contracts/arbitrum-42161/0x0c0846c5d8194bc327669763ac6af9b788edb409/) | BeefyVaultV7 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x11ae2b89175792f57d320a020eaea879e837fe6c`](./contracts/ethereum-1/0x11ae2b89175792f57d320a020eaea879e837fe6c/) | CLR | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x469788fe6e9e9681c6ebf3bf78e7fd26fc015446`](./contracts/ethereum-1/0x469788fe6e9e9681c6ebf3bf78e7fd26fc015446/) | DelegateRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

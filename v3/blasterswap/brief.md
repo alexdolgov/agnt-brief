@@ -54,22 +54,22 @@ The pinned logic-topography run contains 16 contract row(s) across blast. Struct
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x0fd12a...db8d15`, chain 81457)
-- UnnamedContract (`0x1a8027...e89d78`, chain 81457)
-- UnnamedContract (`0x1c63c0...ae009b`, chain 81457)
-- UnnamedContract (`0x1e60c4...0e7966`, chain 81457)
-- UnnamedContract (`0x302883...e382a1`, chain 81457)
-- UnnamedContract (`0x35cffd...bd61a2`, chain 81457)
-- UnnamedContract (`0x6d4290...7659e7`, chain 81457)
-- UnnamedContract (`0x779e43...e96a50`, chain 81457)
-- UnnamedContract (`0x9083eb...7a9e34`, chain 81457)
-- UnnamedContract (`0x9201ae...19a414`, chain 81457)
-- UnnamedContract (`0x9c3840...a979c9`, chain 81457)
-- UnnamedContract (`0x9cc159...709ffd`, chain 81457)
-- UnnamedContract (`0xc460a8...76fdda`, chain 81457)
-- UnnamedContract (`0xc972fa...133e60`, chain 81457)
-- UnnamedContract (`0xd9c031...c412ac`, chain 81457)
-- UnnamedContract (`0xf8b1ee...fda05d`, chain 81457)
+- UnnamedContract (`0x0fd12ae5687df54a93f2b771ade406acc2db8d15`, chain 81457)
+- UnnamedContract (`0x1a8027625c830aac43ad82a3f7cd6d5fdce89d78`, chain 81457)
+- UnnamedContract (`0x1c63c0839108ec7b9f3f7b76c45a4a6745ae009b`, chain 81457)
+- UnnamedContract (`0x1e60c4113c86231ef4b5b0b1cbf689f1b30e7966`, chain 81457)
+- UnnamedContract (`0x30288305850e276f7328c4c3b536a9eacee382a1`, chain 81457)
+- UnnamedContract (`0x35cffd490fa1f20c7fadb669067e4cf289bd61a2`, chain 81457)
+- UnnamedContract (`0x6d42901a36af931fbc37f18999f0f3ae467659e7`, chain 81457)
+- UnnamedContract (`0x779e43fc329eab070eca168e366a383e5be96a50`, chain 81457)
+- UnnamedContract (`0x9083eb4437c00de47d139cc44d7fb3db537a9e34`, chain 81457)
+- UnnamedContract (`0x9201ae24816d1c981319f79b8122652fd519a414`, chain 81457)
+- UnnamedContract (`0x9c3840d572373b86d1383c56b1bb850f17a979c9`, chain 81457)
+- UnnamedContract (`0x9cc1599d4378ea41d444642d18aa9be44f709ffd`, chain 81457)
+- UnnamedContract (`0xc460a8a091d6bbacd8490601ffe0b2cd1f76fdda`, chain 81457)
+- UnnamedContract (`0xc972fae6b524e8a6e0af21875675bf58a3133e60`, chain 81457)
+- UnnamedContract (`0xd9c03134c8096768aa36b5d9688be288bcc412ac`, chain 81457)
+- UnnamedContract (`0xf8b1ee004c9b133064011bc6cc50fc6648fda05d`, chain 81457)
 
 ## Contract Surface Quality
 
@@ -116,27 +116,27 @@ The pinned logic-topography run contains 16 contract row(s) across blast. Struct
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Vault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 3 deployments: blast `0x013249...a84260`; blast `0x0464a3...6f6e3f`; blast `0xc52fb7...58c91d` | ⚠️ Unaudited |
-| Andy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 2 deployments: blast `0x0ecd76...e9d505`; blast `0xd43d8a...752cf8` | ⚠️ Unaudited |
-| Pacmoon | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 2 deployments: blast `0x5ffd9e...a29c06`; blast `0xde32f9...76c830` | ⚠️ Unaudited |
-| PacmoonAirdrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 2 deployments: blast `0x02ca0e...ae4af4`; blast `0x38834c...20638a` | ⚠️ Unaudited |
-| PacmoonAirdrop2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x937237...85f24d` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | blast | unit-380673 | `0x0fd12a...db8d15` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | blast | unit-380674 | `0x1a8027...e89d78` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | blast | unit-380675 | `0x1c63c0...ae009b` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | blast | unit-380676 | `0x1e60c4...0e7966` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | blast | unit-380677 | `0x302883...e382a1` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | blast | unit-380678 | `0x35cffd...bd61a2` | ⚠️ Unaudited |
-| UnnamedContract | periphery | project_anchor | own_supporting | 0 | blast | unit-380680 | `0x6d4290...7659e7` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | blast | unit-380681 | `0x779e43...e96a50` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | blast | unit-380682 | `0x9083eb...7a9e34` | ⚠️ Unaudited |
-| UnnamedContract | periphery | project_anchor | own_supporting | 0 | blast | unit-380683 | `0x9201ae...19a414` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | blast | unit-380684 | `0x9c3840...a979c9` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | blast | unit-380685 | `0x9cc159...709ffd` | ⚠️ Unaudited |
-| UnnamedContract | token | project_anchor | own_supporting | 0 | blast | unit-380686 | `0xc460a8...76fdda` | ⚠️ Unaudited |
-| UnnamedContract | periphery | project_anchor | own_supporting | 0 | blast | unit-380687 | `0xc972fa...133e60` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | blast | unit-380689 | `0xd9c031...c412ac` | ⚠️ Unaudited |
-| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | blast | unit-380690 | `0xf8b1ee...fda05d` | ⚠️ Unaudited |
+| Vault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 3 deployments: blast `0x013249266842e078999088807033d80531a84260`; blast `0x0464a36becf9967111d2dcab57caf4a2376f6e3f`; blast `0xc52fb7e613e401a0195c2fdb369618580d58c91d` | ⚠️ Unaudited |
+| Andy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 2 deployments: blast `0x0ecd76c73caf3ef7995cb236366f71fae2e9d505`; blast `0xd43d8adac6a4c7d9aeece7c3151fca8f23752cf8` | ⚠️ Unaudited |
+| Pacmoon | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 2 deployments: blast `0x5ffd9ebd27f2fcab044c0f0a26a45cb62fa29c06`; blast `0xde32f9d8472e4faaae17f85b631c2fe04376c830` | ⚠️ Unaudited |
+| PacmoonAirdrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 2 deployments: blast `0x02ca0e7cfcf2daa79227765c934c81e178ae4af4`; blast `0x38834c50d271b8b755493f9845b9f9b64920638a` | ⚠️ Unaudited |
+| PacmoonAirdrop2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x937237c6cef410395825fd431a702be7f785f24d` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | blast | unit-380673 | `0x0fd12ae5687df54a93f2b771ade406acc2db8d15` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | blast | unit-380674 | `0x1a8027625c830aac43ad82a3f7cd6d5fdce89d78` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | blast | unit-380675 | `0x1c63c0839108ec7b9f3f7b76c45a4a6745ae009b` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | blast | unit-380676 | `0x1e60c4113c86231ef4b5b0b1cbf689f1b30e7966` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | blast | unit-380677 | `0x30288305850e276f7328c4c3b536a9eacee382a1` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | blast | unit-380678 | `0x35cffd490fa1f20c7fadb669067e4cf289bd61a2` | ⚠️ Unaudited |
+| UnnamedContract | periphery | project_anchor | own_supporting | 0 | blast | unit-380680 | `0x6d42901a36af931fbc37f18999f0f3ae467659e7` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | blast | unit-380681 | `0x779e43fc329eab070eca168e366a383e5be96a50` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | blast | unit-380682 | `0x9083eb4437c00de47d139cc44d7fb3db537a9e34` | ⚠️ Unaudited |
+| UnnamedContract | periphery | project_anchor | own_supporting | 0 | blast | unit-380683 | `0x9201ae24816d1c981319f79b8122652fd519a414` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | blast | unit-380684 | `0x9c3840d572373b86d1383c56b1bb850f17a979c9` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | blast | unit-380685 | `0x9cc1599d4378ea41d444642d18aa9be44f709ffd` | ⚠️ Unaudited |
+| UnnamedContract | token | project_anchor | own_supporting | 0 | blast | unit-380686 | `0xc460a8a091d6bbacd8490601ffe0b2cd1f76fdda` | ⚠️ Unaudited |
+| UnnamedContract | periphery | project_anchor | own_supporting | 0 | blast | unit-380687 | `0xc972fae6b524e8a6e0af21875675bf58a3133e60` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | blast | unit-380689 | `0xd9c03134c8096768aa36b5d9688be288bcc412ac` | ⚠️ Unaudited |
+| UnnamedContract | core_logic | project_anchor | own_supporting | 0 | blast | unit-380690 | `0xf8b1ee004c9b133064011bc6cc50fc6648fda05d` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -156,8 +156,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | blast | unit-380679 | `0x3b5d3f...713add` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x44fa62...23ea6a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | blast | unit-380679 | `0x3b5d3f610cc3505f4701e9fb7d0f0c93b7713add` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x44fa628241794c0cce502593ab4ef0834b23ea6a` | ❓ Unverified |
 
 ## Audit Inventory
 

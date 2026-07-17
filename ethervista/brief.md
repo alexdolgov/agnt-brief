@@ -61,21 +61,21 @@ The protocol comprises 3 functional families. Contracts are linked by 9 cross-co
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| EtherFunFactory | unknown | ethereum | n/a | [`0x149bd5...1549e6`](./contracts/ethereum-1/0x149bd5c2fc1ea9241e4e90548eb5c8cc3d1549e6/) | ⚠️ Unaudited |
-| EtherfunSale | unknown | ethereum | n/a | [`0x759245...d99515`](./contracts/ethereum-1/0x75924504b696f3d29fefd01b2bde7ae21ed99515/) | ⚠️ Unaudited |
-| EtherfunSaleDeployer | unknown | ethereum | n/a | [`0x28be3d...573c7b`](./contracts/ethereum-1/0x28be3d3ea9deb58f492c76d2cb4cb4ab3c573c7b/) | ⚠️ Unaudited |
-| Ethervista | unknown | ethereum | n/a | [`0x06577f...389899`](./contracts/ethereum-1/0x06577fa758057f343dafe18a45231db075389899/) | ⚠️ Unaudited |
-| EtherVistaFactory | unknown | ethereum | n/a | [`0x76f095...ac828a`](./contracts/ethereum-1/0x76f0951a56bf3a9f1c7906f3dbc71e7888ac828a/) | ⚠️ Unaudited |
-| EtherVistaRouter | unknown | ethereum | n/a | [`0x07fff0...f3e80b`](./contracts/ethereum-1/0x07fff0025556dac7a1e96fc64abda54ee7f3e80b/) | ⚠️ Unaudited |
-| EulerFactory | unknown | ethereum | n/a | [`0xa90134...356f59`](./contracts/ethereum-1/0xa90134a35008c234f0fdb2ede6064ade4f356f59/) | ⚠️ Unaudited |
-| HARDLOCK | unknown | ethereum | n/a | [`0xf6b510...8a9c78`](./contracts/ethereum-1/0xf6b510928ab880507246cd6946b7f061eb8a9c78/) | ⚠️ Unaudited |
-| HARDSTAKE | unknown | ethereum | n/a | [`0x597919...e89265`](./contracts/ethereum-1/0x5979190de1962a6b1e25b104c49a26995ee89265/) | ⚠️ Unaudited |
-| OREBIT20Deployer | unknown | ethereum | n/a | [`0x8c6623...c76cce`](./contracts/ethereum-1/0x8c662347d94f1983ddd00c90120f05dc8fc76cce/) | ⚠️ Unaudited |
-| safeTokenFactory | unknown | ethereum | n/a | [`0x1a97a0...9cf5d0`](./contracts/ethereum-1/0x1a97a037a120db530ddce8370e24ead0fe9cf5d0/) | ⚠️ Unaudited |
-| SOGWReceiver | unknown | ethereum | n/a | [`0xeec2d1...d68d5a`](./contracts/ethereum-1/0xeec2d148be96020d276dde0bb8a23e1838d68d5a/) | ⚠️ Unaudited |
-| standard20Deployer | unknown | ethereum | n/a | [`0x054cef...f13e7f`](./contracts/ethereum-1/0x054cef04c2a16468cbda2bf7f1affc0ca9f13e7f/) | ⚠️ Unaudited |
-| swog20Deployer | unknown | ethereum | n/a | [`0x2b7ce3...18938f`](./contracts/ethereum-1/0x2b7ce3421df9595079ab60e8e5dbb6727318938f/) | ⚠️ Unaudited |
-| vista20Deployer | unknown | ethereum | n/a | [`0x05dc31...830dbf`](./contracts/ethereum-1/0x05dc314ea2029c7dceee9e3ee7b28058b4830dbf/) | ⚠️ Unaudited |
+| EtherFunFactory | unknown | ethereum | n/a | [`0x149bd5c2fc1ea9241e4e90548eb5c8cc3d1549e6`](./contracts/ethereum-1/0x149bd5c2fc1ea9241e4e90548eb5c8cc3d1549e6/) | ⚠️ Unaudited |
+| EtherfunSale | unknown | ethereum | n/a | [`0x75924504b696f3d29fefd01b2bde7ae21ed99515`](./contracts/ethereum-1/0x75924504b696f3d29fefd01b2bde7ae21ed99515/) | ⚠️ Unaudited |
+| EtherfunSaleDeployer | unknown | ethereum | n/a | [`0x28be3d3ea9deb58f492c76d2cb4cb4ab3c573c7b`](./contracts/ethereum-1/0x28be3d3ea9deb58f492c76d2cb4cb4ab3c573c7b/) | ⚠️ Unaudited |
+| Ethervista | unknown | ethereum | n/a | [`0x06577fa758057f343dafe18a45231db075389899`](./contracts/ethereum-1/0x06577fa758057f343dafe18a45231db075389899/) | ⚠️ Unaudited |
+| EtherVistaFactory | unknown | ethereum | n/a | [`0x76f0951a56bf3a9f1c7906f3dbc71e7888ac828a`](./contracts/ethereum-1/0x76f0951a56bf3a9f1c7906f3dbc71e7888ac828a/) | ⚠️ Unaudited |
+| EtherVistaRouter | unknown | ethereum | n/a | [`0x07fff0025556dac7a1e96fc64abda54ee7f3e80b`](./contracts/ethereum-1/0x07fff0025556dac7a1e96fc64abda54ee7f3e80b/) | ⚠️ Unaudited |
+| EulerFactory | unknown | ethereum | n/a | [`0xa90134a35008c234f0fdb2ede6064ade4f356f59`](./contracts/ethereum-1/0xa90134a35008c234f0fdb2ede6064ade4f356f59/) | ⚠️ Unaudited |
+| HARDLOCK | unknown | ethereum | n/a | [`0xf6b510928ab880507246cd6946b7f061eb8a9c78`](./contracts/ethereum-1/0xf6b510928ab880507246cd6946b7f061eb8a9c78/) | ⚠️ Unaudited |
+| HARDSTAKE | unknown | ethereum | n/a | [`0x5979190de1962a6b1e25b104c49a26995ee89265`](./contracts/ethereum-1/0x5979190de1962a6b1e25b104c49a26995ee89265/) | ⚠️ Unaudited |
+| OREBIT20Deployer | unknown | ethereum | n/a | [`0x8c662347d94f1983ddd00c90120f05dc8fc76cce`](./contracts/ethereum-1/0x8c662347d94f1983ddd00c90120f05dc8fc76cce/) | ⚠️ Unaudited |
+| safeTokenFactory | unknown | ethereum | n/a | [`0x1a97a037a120db530ddce8370e24ead0fe9cf5d0`](./contracts/ethereum-1/0x1a97a037a120db530ddce8370e24ead0fe9cf5d0/) | ⚠️ Unaudited |
+| SOGWReceiver | unknown | ethereum | n/a | [`0xeec2d148be96020d276dde0bb8a23e1838d68d5a`](./contracts/ethereum-1/0xeec2d148be96020d276dde0bb8a23e1838d68d5a/) | ⚠️ Unaudited |
+| standard20Deployer | unknown | ethereum | n/a | [`0x054cef04c2a16468cbda2bf7f1affc0ca9f13e7f`](./contracts/ethereum-1/0x054cef04c2a16468cbda2bf7f1affc0ca9f13e7f/) | ⚠️ Unaudited |
+| swog20Deployer | unknown | ethereum | n/a | [`0x2b7ce3421df9595079ab60e8e5dbb6727318938f`](./contracts/ethereum-1/0x2b7ce3421df9595079ab60e8e5dbb6727318938f/) | ⚠️ Unaudited |
+| vista20Deployer | unknown | ethereum | n/a | [`0x05dc314ea2029c7dceee9e3ee7b28058b4830dbf`](./contracts/ethereum-1/0x05dc314ea2029c7dceee9e3ee7b28058b4830dbf/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -106,21 +106,21 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x149bd5...1549e6`](./contracts/ethereum-1/0x149bd5c2fc1ea9241e4e90548eb5c8cc3d1549e6/) | EtherFunFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x759245...d99515`](./contracts/ethereum-1/0x75924504b696f3d29fefd01b2bde7ae21ed99515/) | EtherfunSale | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x28be3d...573c7b`](./contracts/ethereum-1/0x28be3d3ea9deb58f492c76d2cb4cb4ab3c573c7b/) | EtherfunSaleDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x06577f...389899`](./contracts/ethereum-1/0x06577fa758057f343dafe18a45231db075389899/) | Ethervista | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x76f095...ac828a`](./contracts/ethereum-1/0x76f0951a56bf3a9f1c7906f3dbc71e7888ac828a/) | EtherVistaFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x07fff0...f3e80b`](./contracts/ethereum-1/0x07fff0025556dac7a1e96fc64abda54ee7f3e80b/) | EtherVistaRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa90134...356f59`](./contracts/ethereum-1/0xa90134a35008c234f0fdb2ede6064ade4f356f59/) | EulerFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xf6b510...8a9c78`](./contracts/ethereum-1/0xf6b510928ab880507246cd6946b7f061eb8a9c78/) | HARDLOCK | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x597919...e89265`](./contracts/ethereum-1/0x5979190de1962a6b1e25b104c49a26995ee89265/) | HARDSTAKE | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x8c6623...c76cce`](./contracts/ethereum-1/0x8c662347d94f1983ddd00c90120f05dc8fc76cce/) | OREBIT20Deployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1a97a0...9cf5d0`](./contracts/ethereum-1/0x1a97a037a120db530ddce8370e24ead0fe9cf5d0/) | safeTokenFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xeec2d1...d68d5a`](./contracts/ethereum-1/0xeec2d148be96020d276dde0bb8a23e1838d68d5a/) | SOGWReceiver | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x054cef...f13e7f`](./contracts/ethereum-1/0x054cef04c2a16468cbda2bf7f1affc0ca9f13e7f/) | standard20Deployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2b7ce3...18938f`](./contracts/ethereum-1/0x2b7ce3421df9595079ab60e8e5dbb6727318938f/) | swog20Deployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x05dc31...830dbf`](./contracts/ethereum-1/0x05dc314ea2029c7dceee9e3ee7b28058b4830dbf/) | vista20Deployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x149bd5c2fc1ea9241e4e90548eb5c8cc3d1549e6`](./contracts/ethereum-1/0x149bd5c2fc1ea9241e4e90548eb5c8cc3d1549e6/) | EtherFunFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x75924504b696f3d29fefd01b2bde7ae21ed99515`](./contracts/ethereum-1/0x75924504b696f3d29fefd01b2bde7ae21ed99515/) | EtherfunSale | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x28be3d3ea9deb58f492c76d2cb4cb4ab3c573c7b`](./contracts/ethereum-1/0x28be3d3ea9deb58f492c76d2cb4cb4ab3c573c7b/) | EtherfunSaleDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x06577fa758057f343dafe18a45231db075389899`](./contracts/ethereum-1/0x06577fa758057f343dafe18a45231db075389899/) | Ethervista | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x76f0951a56bf3a9f1c7906f3dbc71e7888ac828a`](./contracts/ethereum-1/0x76f0951a56bf3a9f1c7906f3dbc71e7888ac828a/) | EtherVistaFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x07fff0025556dac7a1e96fc64abda54ee7f3e80b`](./contracts/ethereum-1/0x07fff0025556dac7a1e96fc64abda54ee7f3e80b/) | EtherVistaRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa90134a35008c234f0fdb2ede6064ade4f356f59`](./contracts/ethereum-1/0xa90134a35008c234f0fdb2ede6064ade4f356f59/) | EulerFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xf6b510928ab880507246cd6946b7f061eb8a9c78`](./contracts/ethereum-1/0xf6b510928ab880507246cd6946b7f061eb8a9c78/) | HARDLOCK | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5979190de1962a6b1e25b104c49a26995ee89265`](./contracts/ethereum-1/0x5979190de1962a6b1e25b104c49a26995ee89265/) | HARDSTAKE | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8c662347d94f1983ddd00c90120f05dc8fc76cce`](./contracts/ethereum-1/0x8c662347d94f1983ddd00c90120f05dc8fc76cce/) | OREBIT20Deployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1a97a037a120db530ddce8370e24ead0fe9cf5d0`](./contracts/ethereum-1/0x1a97a037a120db530ddce8370e24ead0fe9cf5d0/) | safeTokenFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xeec2d148be96020d276dde0bb8a23e1838d68d5a`](./contracts/ethereum-1/0xeec2d148be96020d276dde0bb8a23e1838d68d5a/) | SOGWReceiver | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x054cef04c2a16468cbda2bf7f1affc0ca9f13e7f`](./contracts/ethereum-1/0x054cef04c2a16468cbda2bf7f1affc0ca9f13e7f/) | standard20Deployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x2b7ce3421df9595079ab60e8e5dbb6727318938f`](./contracts/ethereum-1/0x2b7ce3421df9595079ab60e8e5dbb6727318938f/) | swog20Deployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x05dc314ea2029c7dceee9e3ee7b28058b4830dbf`](./contracts/ethereum-1/0x05dc314ea2029c7dceee9e3ee7b28058b4830dbf/) | vista20Deployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

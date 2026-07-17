@@ -56,7 +56,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- FiatTokenProxy (`0xa0b869...06eb48`, chain 1)
+- FiatTokenProxy (`0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48`, chain 1)
 
 ## Contract Surface Quality
 
@@ -102,7 +102,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| FiatTokenV2_2 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-385163 | `0xa0b869...06eb48` | ⚠️ Unaudited |
+| FiatTokenV2_2 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-385163 | `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

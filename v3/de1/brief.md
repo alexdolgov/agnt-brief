@@ -52,39 +52,39 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x6352a5...304e64`, chain 25)
-- UnnamedContract (`0x6352a5...304e64`, chain 130)
-- UnnamedContract (`0x6352a5...304e64`, chain 204)
-- UnnamedContract (`0x6352a5...304e64`, chain 250)
-- UnnamedContract (`0x36a1ac...673230`, chain 324)
-- UnnamedContract (`0x6dd434...85b97b`, chain 1101)
-- UnnamedContract (`0x6352a5...304e64`, chain 1923)
-- UnnamedContract (`0x6352a5...304e64`, chain 2222)
-- UnnamedContract (`0x6352a5...304e64`, chain 5000)
-- UnnamedContract (`0x6352a5...304e64`, chain 9745)
-- UnnamedContract (`0x6352a5...304e64`, chain 42220)
-- UnnamedContract (`0x6352a5...304e64`, chain 1666600000)
-- OpenOceanExchangeProxy (`0x6352a5...304e64`, chain 1)
-- OpenOceanExchangeProxy (`0x6352a5...304e64`, chain 10)
-- OpenOceanExchangeProxy (`0x6352a5...304e64`, chain 56)
-- OpenOceanExchangeProxy (`0x6352a5...304e64`, chain 100)
-- OpenOceanExchangeProxy (`0x6352a5...304e64`, chain 137)
-- OpenOceanExchangeProxy (`0x6352a5...304e64`, chain 143)
-- OpenOceanExchangeProxy (`0x6352a5...304e64`, chain 146)
-- OpenOceanExchangeProxy (`0x6352a5...304e64`, chain 169)
-- OpenOceanExchangeProxy (`0x6352a5...304e64`, chain 999)
-- OpenOceanExchangeProxy (`0x6352a5...304e64`, chain 1088)
-- OpenOceanExchangeProxy (`0x6352a5...304e64`, chain 1285)
-- OpenOceanExchangeProxy (`0x6352a5...304e64`, chain 1329)
-- OpenOceanExchangeProxy (`0x6352a5...304e64`, chain 8453)
-- OpenOceanExchangeProxy (`0x6352a5...304e64`, chain 34443)
-- OpenOceanExchangeProxy (`0x6352a5...304e64`, chain 42161)
-- OpenOceanExchangeProxy (`0x6352a5...304e64`, chain 43114)
-- OpenOceanExchangeProxy (`0x6352a5...304e64`, chain 59144)
-- OpenOceanExchangeProxy (`0x6352a5...304e64`, chain 80094)
-- OpenOceanExchangeProxy (`0x6352a5...304e64`, chain 81457)
-- OpenOceanExchangeProxy (`0x6352a5...304e64`, chain 534352)
-- OpenOceanExchangeProxy (`0x6352a5...304e64`, chain 1313161554)
+- UnnamedContract (`0x6352a56caadc4f1e25cd6c75970fa768a3304e64`, chain 25)
+- UnnamedContract (`0x6352a56caadc4f1e25cd6c75970fa768a3304e64`, chain 130)
+- UnnamedContract (`0x6352a56caadc4f1e25cd6c75970fa768a3304e64`, chain 204)
+- UnnamedContract (`0x6352a56caadc4f1e25cd6c75970fa768a3304e64`, chain 250)
+- UnnamedContract (`0x36a1acbbcafca2468b85011ddd16e7cb4d673230`, chain 324)
+- UnnamedContract (`0x6dd434082eab5cd134b33719ec1ff05fe985b97b`, chain 1101)
+- UnnamedContract (`0x6352a56caadc4f1e25cd6c75970fa768a3304e64`, chain 1923)
+- UnnamedContract (`0x6352a56caadc4f1e25cd6c75970fa768a3304e64`, chain 2222)
+- UnnamedContract (`0x6352a56caadc4f1e25cd6c75970fa768a3304e64`, chain 5000)
+- UnnamedContract (`0x6352a56caadc4f1e25cd6c75970fa768a3304e64`, chain 9745)
+- UnnamedContract (`0x6352a56caadc4f1e25cd6c75970fa768a3304e64`, chain 42220)
+- UnnamedContract (`0x6352a56caadc4f1e25cd6c75970fa768a3304e64`, chain 1666600000)
+- OpenOceanExchangeProxy (`0x6352a56caadc4f1e25cd6c75970fa768a3304e64`, chain 1)
+- OpenOceanExchangeProxy (`0x6352a56caadc4f1e25cd6c75970fa768a3304e64`, chain 10)
+- OpenOceanExchangeProxy (`0x6352a56caadc4f1e25cd6c75970fa768a3304e64`, chain 56)
+- OpenOceanExchangeProxy (`0x6352a56caadc4f1e25cd6c75970fa768a3304e64`, chain 100)
+- OpenOceanExchangeProxy (`0x6352a56caadc4f1e25cd6c75970fa768a3304e64`, chain 137)
+- OpenOceanExchangeProxy (`0x6352a56caadc4f1e25cd6c75970fa768a3304e64`, chain 143)
+- OpenOceanExchangeProxy (`0x6352a56caadc4f1e25cd6c75970fa768a3304e64`, chain 146)
+- OpenOceanExchangeProxy (`0x6352a56caadc4f1e25cd6c75970fa768a3304e64`, chain 169)
+- OpenOceanExchangeProxy (`0x6352a56caadc4f1e25cd6c75970fa768a3304e64`, chain 999)
+- OpenOceanExchangeProxy (`0x6352a56caadc4f1e25cd6c75970fa768a3304e64`, chain 1088)
+- OpenOceanExchangeProxy (`0x6352a56caadc4f1e25cd6c75970fa768a3304e64`, chain 1285)
+- OpenOceanExchangeProxy (`0x6352a56caadc4f1e25cd6c75970fa768a3304e64`, chain 1329)
+- OpenOceanExchangeProxy (`0x6352a56caadc4f1e25cd6c75970fa768a3304e64`, chain 8453)
+- OpenOceanExchangeProxy (`0x6352a56caadc4f1e25cd6c75970fa768a3304e64`, chain 34443)
+- OpenOceanExchangeProxy (`0x6352a56caadc4f1e25cd6c75970fa768a3304e64`, chain 42161)
+- OpenOceanExchangeProxy (`0x6352a56caadc4f1e25cd6c75970fa768a3304e64`, chain 43114)
+- OpenOceanExchangeProxy (`0x6352a56caadc4f1e25cd6c75970fa768a3304e64`, chain 59144)
+- OpenOceanExchangeProxy (`0x6352a56caadc4f1e25cd6c75970fa768a3304e64`, chain 80094)
+- OpenOceanExchangeProxy (`0x6352a56caadc4f1e25cd6c75970fa768a3304e64`, chain 81457)
+- OpenOceanExchangeProxy (`0x6352a56caadc4f1e25cd6c75970fa768a3304e64`, chain 534352)
+- OpenOceanExchangeProxy (`0x6352a56caadc4f1e25cd6c75970fa768a3304e64`, chain 1313161554)
 
 ## Contract Surface Quality
 
@@ -130,27 +130,27 @@ The activated project remains an explicit cohort member with an empty normalized
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| OpenOceanExchange | unknown | project_anchor | own_supporting | 1 | ethereum | unit-384009 | `0x6352a5...304e64` | ⚠️ Unaudited |
-| OpenOceanExchange | unknown | project_anchor | own_supporting | 1 | optimism | unit-384010 | `0x6352a5...304e64` | ⚠️ Unaudited |
-| OpenOceanExchange | unknown | project_anchor | own_supporting | 1 | bsc | unit-384023 | `0x6352a5...304e64` | ⚠️ Unaudited |
-| OpenOceanExchange | unknown | project_anchor | own_supporting | 1 | gnosis | unit-384011 | `0x6352a5...304e64` | ⚠️ Unaudited |
-| OpenOceanExchange | unknown | project_anchor | own_supporting | 1 | monad | unit-384016 | `0x6352a5...304e64` | ⚠️ Unaudited |
-| OpenOceanExchange | unknown | project_anchor | own_supporting | 1 | sonic | unit-384017 | `0x6352a5...304e64` | ⚠️ Unaudited |
-| OpenOceanExchange | unknown | project_anchor | own_supporting | 1 | hyperliquid | unit-384029 | `0x6352a5...304e64` | ⚠️ Unaudited |
-| OpenOceanExchange | unknown | project_anchor | own_supporting | 1 | moonriver | unit-384012 | `0x6352a5...304e64` | ⚠️ Unaudited |
-| OpenOceanExchange | unknown | project_anchor | own_supporting | 1 | sei | unit-384014 | `0x6352a5...304e64` | ⚠️ Unaudited |
-| OpenOceanExchange | unknown | project_anchor | own_supporting | 1 | base | unit-384027 | `0x6352a5...304e64` | ⚠️ Unaudited |
-| OpenOceanExchange | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-384019 | `0x6352a5...304e64` | ⚠️ Unaudited |
-| OpenOceanExchange | unknown | project_anchor | own_supporting | 1 | linea | unit-384024 | `0x6352a5...304e64` | ⚠️ Unaudited |
-| OpenOceanExchange | unknown | project_anchor | own_supporting | 1 | berachain | unit-384025 | `0x6352a5...304e64` | ⚠️ Unaudited |
-| OpenOceanExchange | unknown | project_anchor | own_supporting | 1 | blast | unit-384026 | `0x6352a5...304e64` | ⚠️ Unaudited |
-| OpenOceanExchangeProxy | unknown | project_anchor | own_supporting | 1 | polygon | unit-384015 | `0x6352a5...304e64` | ⚠️ Unaudited |
-| OpenOceanExchangeProxy | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-384001 | `0x6352a5...304e64` | ⚠️ Unaudited |
-| OpenOceanExchangeProxy | unknown | project_anchor | own_supporting | 0 | metis | unit-383997 | `0x6352a5...304e64` | ⚠️ Unaudited |
-| OpenOceanExchangeProxy | unknown | project_anchor | own_supporting | 0 | mode | unit-384007 | `0x6352a5...304e64` | ⚠️ Unaudited |
-| OpenOceanExchangeProxy | unknown | project_anchor | own_supporting | 1 | avalanche | unit-384021 | `0x6352a5...304e64` | ⚠️ Unaudited |
-| OpenOceanExchangeProxy | unknown | project_anchor | own_supporting | 0 | scroll | unit-384008 | `0x6352a5...304e64` | ⚠️ Unaudited |
-| OpenOceanExchangeProxy | unknown | project_anchor | own_supporting | 0 | aurora | unit-383999 | `0x6352a5...304e64` | ⚠️ Unaudited |
+| OpenOceanExchange | unknown | project_anchor | own_supporting | 1 | ethereum | unit-384009 | `0x6352a56caadc4f1e25cd6c75970fa768a3304e64` | ⚠️ Unaudited |
+| OpenOceanExchange | unknown | project_anchor | own_supporting | 1 | optimism | unit-384010 | `0x6352a56caadc4f1e25cd6c75970fa768a3304e64` | ⚠️ Unaudited |
+| OpenOceanExchange | unknown | project_anchor | own_supporting | 1 | bsc | unit-384023 | `0x6352a56caadc4f1e25cd6c75970fa768a3304e64` | ⚠️ Unaudited |
+| OpenOceanExchange | unknown | project_anchor | own_supporting | 1 | gnosis | unit-384011 | `0x6352a56caadc4f1e25cd6c75970fa768a3304e64` | ⚠️ Unaudited |
+| OpenOceanExchange | unknown | project_anchor | own_supporting | 1 | monad | unit-384016 | `0x6352a56caadc4f1e25cd6c75970fa768a3304e64` | ⚠️ Unaudited |
+| OpenOceanExchange | unknown | project_anchor | own_supporting | 1 | sonic | unit-384017 | `0x6352a56caadc4f1e25cd6c75970fa768a3304e64` | ⚠️ Unaudited |
+| OpenOceanExchange | unknown | project_anchor | own_supporting | 1 | hyperliquid | unit-384029 | `0x6352a56caadc4f1e25cd6c75970fa768a3304e64` | ⚠️ Unaudited |
+| OpenOceanExchange | unknown | project_anchor | own_supporting | 1 | moonriver | unit-384012 | `0x6352a56caadc4f1e25cd6c75970fa768a3304e64` | ⚠️ Unaudited |
+| OpenOceanExchange | unknown | project_anchor | own_supporting | 1 | sei | unit-384014 | `0x6352a56caadc4f1e25cd6c75970fa768a3304e64` | ⚠️ Unaudited |
+| OpenOceanExchange | unknown | project_anchor | own_supporting | 1 | base | unit-384027 | `0x6352a56caadc4f1e25cd6c75970fa768a3304e64` | ⚠️ Unaudited |
+| OpenOceanExchange | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-384019 | `0x6352a56caadc4f1e25cd6c75970fa768a3304e64` | ⚠️ Unaudited |
+| OpenOceanExchange | unknown | project_anchor | own_supporting | 1 | linea | unit-384024 | `0x6352a56caadc4f1e25cd6c75970fa768a3304e64` | ⚠️ Unaudited |
+| OpenOceanExchange | unknown | project_anchor | own_supporting | 1 | berachain | unit-384025 | `0x6352a56caadc4f1e25cd6c75970fa768a3304e64` | ⚠️ Unaudited |
+| OpenOceanExchange | unknown | project_anchor | own_supporting | 1 | blast | unit-384026 | `0x6352a56caadc4f1e25cd6c75970fa768a3304e64` | ⚠️ Unaudited |
+| OpenOceanExchangeProxy | unknown | project_anchor | own_supporting | 1 | polygon | unit-384015 | `0x6352a56caadc4f1e25cd6c75970fa768a3304e64` | ⚠️ Unaudited |
+| OpenOceanExchangeProxy | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-384001 | `0x6352a56caadc4f1e25cd6c75970fa768a3304e64` | ⚠️ Unaudited |
+| OpenOceanExchangeProxy | unknown | project_anchor | own_supporting | 0 | metis | unit-383997 | `0x6352a56caadc4f1e25cd6c75970fa768a3304e64` | ⚠️ Unaudited |
+| OpenOceanExchangeProxy | unknown | project_anchor | own_supporting | 0 | mode | unit-384007 | `0x6352a56caadc4f1e25cd6c75970fa768a3304e64` | ⚠️ Unaudited |
+| OpenOceanExchangeProxy | unknown | project_anchor | own_supporting | 1 | avalanche | unit-384021 | `0x6352a56caadc4f1e25cd6c75970fa768a3304e64` | ⚠️ Unaudited |
+| OpenOceanExchangeProxy | unknown | project_anchor | own_supporting | 0 | scroll | unit-384008 | `0x6352a56caadc4f1e25cd6c75970fa768a3304e64` | ⚠️ Unaudited |
+| OpenOceanExchangeProxy | unknown | project_anchor | own_supporting | 0 | aurora | unit-383999 | `0x6352a56caadc4f1e25cd6c75970fa768a3304e64` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -170,18 +170,18 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| OpenOceanExchange | unknown | project_anchor | own_supporting | 1 | unichain | unit-384013 | `0x6352a5...304e64` | ❓ Unverified |
-| OpenOceanExchange | unknown | project_anchor | own_supporting | 1 | celo | unit-384020 | `0x6352a5...304e64` | ❓ Unverified |
-| Proxy (impl: 0xed85325119ccfc6acb16fa931bac6378b76e4615) | unknown | project_anchor | own_supporting | 1 | opbnb | unit-384018 | `0x6352a5...304e64` | ❓ Unverified |
-| Proxy (impl: 0xed85325119ccfc6acb16fa931bac6378b76e4615) | unknown | project_anchor | own_supporting | 1 | mantle | unit-384022 | `0x6352a5...304e64` | ❓ Unverified |
-| Proxy (impl: 0xed85325119ccfc6acb16fa931bac6378b76e4615) | unknown | project_anchor | own_supporting | 1 | plasma | unit-384028 | `0x6352a5...304e64` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-384004 | `0x6352a5...304e64` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-384005 | `0x6352a5...304e64` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-384006 | `0x36a1ac...673230` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon-zkevm | unit-383998 | `0x6dd434...85b97b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | swellchain | unit-384002 | `0x6352a5...304e64` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | kava | unit-384003 | `0x6352a5...304e64` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | harmony | unit-384000 | `0x6352a5...304e64` | ❓ Unverified |
+| OpenOceanExchange | unknown | project_anchor | own_supporting | 1 | unichain | unit-384013 | `0x6352a56caadc4f1e25cd6c75970fa768a3304e64` | ❓ Unverified |
+| OpenOceanExchange | unknown | project_anchor | own_supporting | 1 | celo | unit-384020 | `0x6352a56caadc4f1e25cd6c75970fa768a3304e64` | ❓ Unverified |
+| Proxy (impl: 0xed85325119ccfc6acb16fa931bac6378b76e4615) | unknown | project_anchor | own_supporting | 1 | opbnb | unit-384018 | `0x6352a56caadc4f1e25cd6c75970fa768a3304e64` | ❓ Unverified |
+| Proxy (impl: 0xed85325119ccfc6acb16fa931bac6378b76e4615) | unknown | project_anchor | own_supporting | 1 | mantle | unit-384022 | `0x6352a56caadc4f1e25cd6c75970fa768a3304e64` | ❓ Unverified |
+| Proxy (impl: 0xed85325119ccfc6acb16fa931bac6378b76e4615) | unknown | project_anchor | own_supporting | 1 | plasma | unit-384028 | `0x6352a56caadc4f1e25cd6c75970fa768a3304e64` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-384004 | `0x6352a56caadc4f1e25cd6c75970fa768a3304e64` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-384005 | `0x6352a56caadc4f1e25cd6c75970fa768a3304e64` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-384006 | `0x36a1acbbcafca2468b85011ddd16e7cb4d673230` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon-zkevm | unit-383998 | `0x6dd434082eab5cd134b33719ec1ff05fe985b97b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | swellchain | unit-384002 | `0x6352a56caadc4f1e25cd6c75970fa768a3304e64` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | kava | unit-384003 | `0x6352a56caadc4f1e25cd6c75970fa768a3304e64` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | harmony | unit-384000 | `0x6352a56caadc4f1e25cd6c75970fa768a3304e64` | ❓ Unverified |
 
 ## Audit Inventory
 

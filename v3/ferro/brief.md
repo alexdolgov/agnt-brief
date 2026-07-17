@@ -52,22 +52,22 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ### Original Contracts (no fork detected - full audit scope)
 
-- UnnamedContract (`0x1578c5...185afa`, chain 25)
-- UnnamedContract (`0x1dd980...cebf53`, chain 25)
-- UnnamedContract (`0x260481...f41929`, chain 25)
-- UnnamedContract (`0x5fa941...ebdf96`, chain 25)
-- UnnamedContract (`0x6a4173...aa104b`, chain 25)
-- UnnamedContract (`0x6b82ea...5fdd88`, chain 25)
-- UnnamedContract (`0x719237...c31bde`, chain 25)
-- UnnamedContract (`0x74171b...55992d`, chain 25)
-- UnnamedContract (`0xa26a01...34f72e`, chain 25)
-- UnnamedContract (`0xa34c0f...2b32d6`, chain 25)
-- UnnamedContract (`0xab50fb...3029d0`, chain 25)
-- UnnamedContract (`0xb5c745...e67b86`, chain 25)
-- UnnamedContract (`0xc73b40...66dd85`, chain 25)
-- UnnamedContract (`0xcf3e15...64c92e`, chain 25)
-- UnnamedContract (`0xd05a67...fc2c03`, chain 25)
-- UnnamedContract (`0xe8d136...5da5cd`, chain 25)
+- UnnamedContract (`0x1578c5cf4f8f6064deb167d1eead15df43185afa`, chain 25)
+- UnnamedContract (`0x1dd98049269e56809886ba39563477908ccebf53`, chain 25)
+- UnnamedContract (`0x260481ad807c95ea30aceab5d01afe0a76f41929`, chain 25)
+- UnnamedContract (`0x5fa9412c2563c0b13cd9f96f0bd1a971f8ebdf96`, chain 25)
+- UnnamedContract (`0x6a41732eadbe15e9c9fca2cff1299c6321aa104b`, chain 25)
+- UnnamedContract (`0x6b82eace10f782487b61c616b623a78c965fdd88`, chain 25)
+- UnnamedContract (`0x71923713685770d04d69d103008aaffeebc31bde`, chain 25)
+- UnnamedContract (`0x74171b2facd27b9577c7d409bfc05b308255992d`, chain 25)
+- UnnamedContract (`0xa26a0105c269b6ddaae8b343c9fd789a9034f72e`, chain 25)
+- UnnamedContract (`0xa34c0fe36541fb085677c36b4ff0ccf5fa2b32d6`, chain 25)
+- UnnamedContract (`0xab50fb1117778f293cc33ac044b5579fb03029d0`, chain 25)
+- UnnamedContract (`0xb5c745f15a31ea431360a71c75490cdcbae67b86`, chain 25)
+- UnnamedContract (`0xc73b40a6a57cc8203462397f64527fd46766dd85`, chain 25)
+- UnnamedContract (`0xcf3e157e2491f7d739f8923f6ceaa4656e64c92e`, chain 25)
+- UnnamedContract (`0xd05a67bb1e9684e8ddd19d0bb6a713b4befc2c03`, chain 25)
+- UnnamedContract (`0xe8d13664a42b338f009812fa5a75199a865da5cd`, chain 25)
 
 ## Contract Surface Quality
 
@@ -131,23 +131,23 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-239833 | `0x1578c5...185afa` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-239834 | `0x1dd980...cebf53` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-239835 | `0x260481...f41929` | ❓ Unverified |
-| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | cronos | n/a | 5 deployments: cronos `0x39bc1e...66c782`; cronos `0x9fae23...7c08a6`; cronos `0xac974e...85750d`; cronos `0xd42e07...edea78`; cronos `0xf2001b...5f677d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-239836 | `0x5fa941...ebdf96` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-239837 | `0x6a4173...aa104b` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-239838 | `0x6b82ea...5fdd88` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-239839 | `0x719237...c31bde` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-239840 | `0x74171b...55992d` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-239841 | `0xa26a01...34f72e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-239842 | `0xa34c0f...2b32d6` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-239843 | `0xab50fb...3029d0` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-239844 | `0xb5c745...e67b86` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-239845 | `0xc73b40...66dd85` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-239846 | `0xcf3e15...64c92e` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-239847 | `0xd05a67...fc2c03` | ❓ Unverified |
-| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-239848 | `0xe8d136...5da5cd` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-239833 | `0x1578c5cf4f8f6064deb167d1eead15df43185afa` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-239834 | `0x1dd98049269e56809886ba39563477908ccebf53` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-239835 | `0x260481ad807c95ea30aceab5d01afe0a76f41929` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | cronos | n/a | 5 deployments: cronos `0x39bc1e38c842c60775ce37566d03b41a7a66c782`; cronos `0x9fae23a2700feecd5b93e43fdbc03c76aa7c08a6`; cronos `0xac974ee7fc5d083112c809ccb3fce4a4f385750d`; cronos `0xd42e078cea2be8d03cd9dfecc1f0d28915edea78`; cronos `0xf2001b145b43032aaf5ee2884e456ccd805f677d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-239836 | `0x5fa9412c2563c0b13cd9f96f0bd1a971f8ebdf96` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-239837 | `0x6a41732eadbe15e9c9fca2cff1299c6321aa104b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-239838 | `0x6b82eace10f782487b61c616b623a78c965fdd88` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-239839 | `0x71923713685770d04d69d103008aaffeebc31bde` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-239840 | `0x74171b2facd27b9577c7d409bfc05b308255992d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-239841 | `0xa26a0105c269b6ddaae8b343c9fd789a9034f72e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-239842 | `0xa34c0fe36541fb085677c36b4ff0ccf5fa2b32d6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-239843 | `0xab50fb1117778f293cc33ac044b5579fb03029d0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-239844 | `0xb5c745f15a31ea431360a71c75490cdcbae67b86` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-239845 | `0xc73b40a6a57cc8203462397f64527fd46766dd85` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-239846 | `0xcf3e157e2491f7d739f8923f6ceaa4656e64c92e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-239847 | `0xd05a67bb1e9684e8ddd19d0bb6a713b4befc2c03` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | cronos | unit-239848 | `0xe8d13664a42b338f009812fa5a75199a865da5cd` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -173,12 +173,12 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| blocksec_ferro_security_audit_report.pdf | FerroMaker | own contract | UnnamedContract (selected) `0xa26a01...34f72e` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| blocksec_ferro_security_audit_report.pdf | FerroMaker | own contract | UnnamedContract (selected) `0xa26a0105c269b6ddaae8b343c9fd789a9034f72e` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | blocksec_ferro_security_audit_report.pdf | StableSwapBurner | unmatched — not counted | — | listed in scope table | no |
 | blocksec_ferro_security_audit_report.pdf | USDCBurner | unmatched — not counted | — | listed in scope table | no |
-| blocksec_ferro_security_audit_report.pdf | FerroFarm | own contract | UnnamedContract (selected) `0xab50fb...3029d0` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| blocksec_ferro_security_audit_report.pdf | FerroFarm | own contract | UnnamedContract (selected) `0xab50fb1117778f293cc33ac044b5579fb03029d0` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | blocksec_ferro_security_audit_report.pdf | FerroBoostDepositToken | unmatched — not counted | — | listed in scope table | no |
-| blocksec_ferro_security_audit_report.pdf | FerroBoost | own contract | UnnamedContract (selected) `0xcf3e15...64c92e` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| blocksec_ferro_security_audit_report.pdf | FerroBoost | own contract | UnnamedContract (selected) `0xcf3e157e2491f7d739f8923f6ceaa4656e64c92e` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | blocksec_ferro_security_audit_report.pdf | FerroToken | unmatched — not counted | — | listed in scope table | no |
 | blocksec_ferro_security_audit_report.pdf | FerroVesting | unmatched — not counted | — | listed in scope table | no |
 | blocksec_ferro_security_audit_report.pdf | FerroBar | unmatched — not counted | — | listed in scope table | no |

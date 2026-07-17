@@ -62,7 +62,7 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ORBToken | token | moonbeam | n/a | [`0x4eeaa1...a3c3d7`](./contracts/moonbeam-1284/0x4eeaa1fd27c50c64e77272bcdde68c28f0a3c3d7/) | ⚠️ Unaudited |
+| ORBToken | token | moonbeam | n/a | [`0x4eeaa1fd27c50c64e77272bcdde68c28f0a3c3d7`](./contracts/moonbeam-1284/0x4eeaa1fd27c50c64e77272bcdde68c28f0a3c3d7/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -82,8 +82,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | moonbeam | n/a | `0x6d954e...2c9e58` | ❓ Unverified |
-| UnnamedContract | unknown | moonbeam | n/a | `0x996878...c8719c` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x6d954ee9a06c6fea6fc53bfb971a1489de2c9e58` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x9968788811688d037392c0de5e270d13a0c8719c` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -98,7 +98,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| moonbeam | [`0x4eeaa1...a3c3d7`](./contracts/moonbeam-1284/0x4eeaa1fd27c50c64e77272bcdde68c28f0a3c3d7/) | ORBToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonbeam | [`0x4eeaa1fd27c50c64e77272bcdde68c28f0a3c3d7`](./contracts/moonbeam-1284/0x4eeaa1fd27c50c64e77272bcdde68c28f0a3c3d7/) | ORBToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

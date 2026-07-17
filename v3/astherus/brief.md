@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
 
 ## Project Overview
 
 - Project: Aster Bridge (`astherus`)
 - Website: [https://www.asterdex.com](https://www.asterdex.com)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
+- Generated: 2026-07-17T12:00:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
+- Chains: arbitrum, bsc, ethereum
+- Contract surface: 13 unique implementations (13 raw deployments)
 - Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -56,16 +56,16 @@ The activated project remains an explicit cohort member with an empty normalized
 
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
-- Address-book implementation classification: 0 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Address-book implementation classification: 0 own, 13 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
 - Outside the address book: 0 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
 - Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
 - All block-explorer-verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
+- Unverified implementations: 13
+- Unique implementations: 13
+- Raw deployments: 13
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -100,11 +100,25 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (13)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x604dd02d620633ae427888d41bfd15e38483736e` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x128463a60784c4d3f46c23af3f65ed859ba87974` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x184b72289c0992bdf96751354680985a7c4825d6` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x1a81a28482edd40ff1689cb3d857c3dadf11d502` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x2f31ab8950c50080e77999fa456372f276952fd8` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x5a110fc00474038f6c02e89c707d638602ea44b5` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x77734e70b6e88b4d82fe632a168edf6e700912b6` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x8a3c77e6c6a488d26cd44f403b95e44675f46e6a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x917af46b3c3c6e1bb7286b9f59637fb7c65851fb` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x9817f4c9f968a553ff6caef1a2ef6cf1386f16f7` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0xc271fc70dd9e678ac1ab632f797894fe4be2c345` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0xdb57a53c428a9fafcbfeffb6dd80d0f427543695` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | n/a | `0x9e36cb86a159d479ced94fa05036f235ac40e1d5` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -130,7 +144,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 13 |
 
 ## Scope Matching Notes
 

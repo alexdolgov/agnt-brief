@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
 
 ## Project Overview
 
 - Project: CVI Finance (`cvi-finance`)
 - Website: [https://cvi.finance/](https://cvi.finance/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
+- Generated: 2026-07-17T12:00:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, ethereum, polygon
-- Contract surface: 108 unique implementations (150 raw deployments)
+- Contract surface: 117 unique implementations (159 raw deployments)
 - Coverage basis: 0/4 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $129,169.94
 - On-chain TVL (included contracts): n/a
@@ -70,16 +70,16 @@ The pinned logic-topography run contains 5 contract row(s) across arbitrum, ethe
 
 - Coverage of address-book-owned deployed-live implementations: 0/4 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
-- Address-book implementation classification: 4 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Address-book implementation classification: 4 own, 9 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
 - Outside the address book: 104 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 16
-- Confirmed-live implementations: 4 of 108 unique; 104 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 4 of 117 unique; 113 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 0/47
 - Verified + Unaudited implementations: 47
 - Verified by bytecode match: 0
-- Unverified implementations: 61
-- Unique implementations: 108
-- Raw deployments: 150
+- Unverified implementations: 70
+- Unique implementations: 117
+- Raw deployments: 159
 - Audits discovered: 4 (4 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -162,7 +162,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (61)
+### ❓ Unverified (70)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -229,6 +229,15 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xe3480ef62b16a49fce109aaafaaf0bc6053aa6f6` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xea7b8dc5615e049417c80c795ea652556971c423` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xeafad6a78e925e20ea63c49008ec1ce4d2160e37` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | n/a | `0x0f2962c9188d7852a8bdeb288ab95e5a575c641f` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | n/a | `0x31cd9fa35f0a1f6bddebe5a6ad5f46b2f0f24e4b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | n/a | `0x3ce3886cb8fe17940fbabfbf727e32f38e2b991c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | n/a | `0x4e20637dc4497afda5a5e1c7812e75cb14fe2375` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | n/a | `0xc73d2191a1dd0a99b377272899a5569ed83f8cd8` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | n/a | `0xcef38d86c40522a2b58d82b658c194a9eb340091` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | n/a | `0xd5f468e5769bfca313646070c18a267da42d9f4e` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | n/a | `0xda8d0386e91b2334b23c043978383a91728a68eb` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | n/a | `0xede0ce8cdc65bcf6422f3afb9d7cdb3e59c09658` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -399,7 +408,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 35 |
 | upstream | 1 |
 | standard_library | 8 |
-| needs_review | 64 |
+| needs_review | 73 |
 
 ## Scope Matching Notes
 

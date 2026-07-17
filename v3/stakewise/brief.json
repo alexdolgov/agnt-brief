@@ -1,7 +1,7 @@
 {
   "schema_version": "3.0",
   "project_key": "stakewise",
-  "generated_at": "2026-07-15T18:30:00.000Z",
+  "generated_at": "2026-07-17T12:00:00.000Z",
   "authority": {
     "activation_id": "scope-prod-20260715-v1",
     "production_closure_sha256": "38a124a34bf27378c85726318ca5f9408641faecd45c04ee5b82ad07a65cbc83",
@@ -13,7 +13,7 @@
     "liveness_closure_sha256": "e1855078572b4a5868cbe2ff93c7ad47c89e29b1b8209e48161f110e31790ddd",
     "fork_detection_run_id": "fork-structural-canonical-production-20260712",
     "deployer_decision_run_id": "deployer-candidate-production-20260712",
-    "export_input_receipt_sha256": "e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd",
+    "export_input_receipt_sha256": "12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7",
     "canonical_network_policy": "offline_cache_only"
   },
   "production_state": {
@@ -32,23 +32,23 @@
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 49,
-    "total_addresses": 50,
-    "unique_implementations": 49,
+    "total_contracts": 103,
+    "total_addresses": 104,
+    "unique_implementations": 103,
     "address_book_own_implementations": 0,
-    "address_book_context_implementations": 8,
+    "address_book_context_implementations": 62,
     "address_book_unclassified_implementations": 0,
     "non_address_book_implementations": 41,
     "third_party_or_infra_implementations": 0,
     "standard_proxy_or_library_implementations": 0,
     "address_book_proxy_deployments": 6,
-    "total_deployments": 50,
+    "total_deployments": 104,
     "audited_contracts": 0,
     "unaudited_contracts": 49,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 49,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 54,
     "owned_contracts_verified_audited": 0,
     "owned_contracts_verified_unaudited": 0,
     "owned_contracts_verified_by_bytecode": 0,
@@ -362,7 +362,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -692,7 +692,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -1670,7 +1670,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -1730,7 +1730,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -1790,7 +1790,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -1904,7 +1904,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -2018,7 +2018,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -2642,6 +2642,3354 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x033e5bae5bdc459cbb7d388b41a9d62020be810f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x033e5bae5bdc459cbb7d388b41a9d62020be810f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x154628ac72533aad39abdcae2055dced0b4eef4d",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x154628ac72533aad39abdcae2055dced0b4eef4d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1831834dc4bf88b9d9183015e1285b105ec2fdc9",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1831834dc4bf88b9d9183015e1285b105ec2fdc9",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1e86e620567bb877f5ed13607a1a7b7dbcb6be66",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1e86e620567bb877f5ed13607a1a7b7dbcb6be66",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x20bc832ca081b91433ff6c17f85701b6e92486c5",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x20bc832ca081b91433ff6c17f85701b6e92486c5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x39c6eef5f955bcc280966504bc5c82f2394fa368",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x39c6eef5f955bcc280966504bc5c82f2394fa368",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x3cc1bde89640e0d32b2d2d66d3098d9bc11b17ee",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x3cc1bde89640e0d32b2d2d66d3098d9bc11b17ee",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x48319f97e5da1233c21c48b80097c0fb7a20ff86",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x48319f97e5da1233c21c48b80097c0fb7a20ff86",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4c958642f1cd735f13aed02a4fb015153eddf8fd",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x4c958642f1cd735f13aed02a4fb015153eddf8fd",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4e3de90882b3d10d067b8954909d4a4b0bb390d0",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x4e3de90882b3d10d067b8954909d4a4b0bb390d0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4fef9d741011476750a243ac70b9789a63dd47df",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x4fef9d741011476750a243ac70b9789a63dd47df",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x508e82b5119ccfb923c387d62d2ae7b56df79906",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x508e82b5119ccfb923c387d62d2ae7b56df79906",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5674848102d29d0652f03acdc548c342eca13592",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5674848102d29d0652f03acdc548c342eca13592",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x608d8ca6916b96edf63dd429e62fe1366ae6f3b5",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x608d8ca6916b96edf63dd429e62fe1366ae6f3b5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6b5815467da09daa7dc83db21c9239d98bb487b5",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6b5815467da09daa7dc83db21c9239d98bb487b5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x76d90928645065b4d4212ee62ce1ba8f90718f14",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x76d90928645065b4d4212ee62ce1ba8f90718f14",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x7a8cbbf690084e43de778173cfacf7313c9122dd",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x7a8cbbf690084e43de778173cfacf7313c9122dd",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x97795da27138bd8d79204d37f3a2e80fa4d30488",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x97795da27138bd8d79204d37f3a2e80fa4d30488",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa23f7c8d25f4503ca4ced84d9cc2428e8745933c",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa23f7c8d25f4503ca4ced84d9cc2428e8745933c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa9dc250df4ee9273d09cfa455da41fb1cac78d34",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa9dc250df4ee9273d09cfa455da41fb1cac78d34",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xac0f906e433d58fa868f936e8a43230473652885",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xac0f906e433d58fa868f936e8a43230473652885",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc43a7b16a7a167c0318390cba16787c11e9e1fd0",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc43a7b16a7a167c0318390cba16787c11e9e1fd0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xd12df8543e0522ccbf12d231e822b7264c634775",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd12df8543e0522ccbf12d231e822b7264c634775",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xe01351f866c118fbd04d222f9262a470f1d44d90",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe01351f866c118fbd04d222f9262a470f1d44d90",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xe14fa9bbdb7813025309f71ddc0fa8faae1b9141",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe14fa9bbdb7813025309f71ddc0fa8faae1b9141",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xf1c9acdc66974dfb6decb12aa385b9cd01190e38",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf1c9acdc66974dfb6decb12aa385b9cd01190e38",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0x033e5bae5bdc459cbb7d388b41a9d62020be810f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x033e5bae5bdc459cbb7d388b41a9d62020be810f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0x1831834dc4bf88b9d9183015e1285b105ec2fdc9",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x1831834dc4bf88b9d9183015e1285b105ec2fdc9",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0x28f325dd287a5984b754d34cfca38af3a8429e71",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x28f325dd287a5984b754d34cfca38af3a8429e71",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0x30db0d10d3774e78f8cb214b9e8b72d4b402488a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x30db0d10d3774e78f8cb214b9e8b72d4b402488a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0x37bf0883c27365cffcd0c4202918df930989891f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x37bf0883c27365cffcd0c4202918df930989891f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0x39c6eef5f955bcc280966504bc5c82f2394fa368",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x39c6eef5f955bcc280966504bc5c82f2394fa368",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0x4b4406ed8659d03423490d8b62a1639206da0a7a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x4b4406ed8659d03423490d8b62a1639206da0a7a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0x4c958642f1cd735f13aed02a4fb015153eddf8fd",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x4c958642f1cd735f13aed02a4fb015153eddf8fd",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0x58e16621b5c0786d6667d2d54e28a20940269e16",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x58e16621b5c0786d6667d2d54e28a20940269e16",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0x5dd9e7e355509bd5d29018d0af4927251d82ab9e",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x5dd9e7e355509bd5d29018d0af4927251d82ab9e",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0x608d8ca6916b96edf63dd429e62fe1366ae6f3b5",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x608d8ca6916b96edf63dd429e62fe1366ae6f3b5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0x60b2053d7f2a0bba70fe6cdd88fb47b579b9179a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x60b2053d7f2a0bba70fe6cdd88fb47b579b9179a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0x6ac78efae880282396a335ca2f79863a1e6831d4",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x6ac78efae880282396a335ca2f79863a1e6831d4",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0x75e6f7640137c128c91de4ee62f6f30b542e5f1b",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x75e6f7640137c128c91de4ee62f6f30b542e5f1b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0x7a8cbbf690084e43de778173cfacf7313c9122dd",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x7a8cbbf690084e43de778173cfacf7313c9122dd",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0x7d014b3c6ee446563d4e0cb6fbd8c3d0419867cb",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x7d014b3c6ee446563d4e0cb6fbd8c3d0419867cb",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0x80353898b72417ac5701a9809a9ef63f691bde86",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x80353898b72417ac5701a9809a9ef63f691bde86",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0x97795da27138bd8d79204d37f3a2e80fa4d30488",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x97795da27138bd8d79204d37f3a2e80fa4d30488",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0x9b1b13afa6a57e54c03ad0428a4766c39707d272",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x9b1b13afa6a57e54c03ad0428a4766c39707d272",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0xa23f7c8d25f4503ca4ced84d9cc2428e8745933c",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0xa23f7c8d25f4503ca4ced84d9cc2428e8745933c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0xb790391ee99b9193ebb80022bf127d24bac586c4",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0xb790391ee99b9193ebb80022bf127d24bac586c4",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0xcac0e3e35d3ba271cd2aabe688ac9db1898c26aa",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0xcac0e3e35d3ba271cd2aabe688ac9db1898c26aa",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0xd12df8543e0522ccbf12d231e822b7264c634775",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0xd12df8543e0522ccbf12d231e822b7264c634775",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0xd6672fbe1d28877db598dc0ac2559a15745fc3ec",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0xd6672fbe1d28877db598dc0ac2559a15745fc3ec",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0xe84183effbcc76d022cccc31b95eaa332bb5bb11",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0xe84183effbcc76d022cccc31b95eaa332bb5bb11",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0xf490c80aae5f2616d3e3bda2483e30c4cb21d1a0",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0xf490c80aae5f2616d3e3bda2483e30c4cb21d1a0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0xfbceefdbb0ca25a4043b35ef49c2810425243710",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0xfbceefdbb0ca25a4043b35ef49c2810425243710",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0xfc9b67b6034f6b306ea9bd8ec1baf3efa2490394",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0xfc9b67b6034f6b306ea9bd8ec1baf3efa2490394",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:01:43.331+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0xa34e1010e2b76abdf7399e6c88147d0fafe28e90",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
@@ -2741,7 +6089,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -8867,7 +12215,7 @@
     "native": 46,
     "upstream": 0,
     "standard_library": 3,
-    "needs_review": 0
+    "needs_review": 54
   },
   "scope_matching_notes": {
     "match_method_counts": {},
@@ -9052,5 +12400,6 @@
     }
   },
   "active_bug_bounty": null,
+  "non_evm_deployments": null,
   "out_of_scope": null
 }

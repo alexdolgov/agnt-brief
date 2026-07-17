@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
 
 ## Project Overview
 
 - Project: WisdomTree (`wisdomtree`)
 - Website: [https://www.wisdomtreeprime.com/](https://www.wisdomtreeprime.com/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
+- Generated: 2026-07-17T12:00:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, base, ethereum, optimism
-- Contract surface: 17 unique implementations (35 raw deployments)
+- Contract surface: 34 unique implementations (52 raw deployments)
 - Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $728,449,142.72
 - On-chain TVL (included contracts): n/a
@@ -58,16 +58,16 @@ The pinned logic-topography run contains 34 contract row(s) across arbitrum, bas
 
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
-- Address-book implementation classification: 0 own, 16 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Address-book implementation classification: 0 own, 33 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
 - Outside the address book: 1 discovered implementations shown in the inventory but excluded from coverage (14 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 22
 - Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
 - All block-explorer-verified implementations audited (incl. non-live): 0/17
 - Verified + Unaudited implementations: 17
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 17
-- Raw deployments: 35
+- Unverified implementations: 17
+- Unique implementations: 34
+- Raw deployments: 52
 - Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -120,11 +120,29 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (17)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x1a17f2bdb023e516f1b32b121f332fa931802a9f` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x1fecf3d9d4fee7f2c02917a66028a48c6706c179` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x2ecad4280b7720ba4f3830b47ab8ef2da4763f04` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x3340e2c0ddcc4a035737bc1f5445c7d0fa6cbf5c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x4d682cbd74a67b1ffe97a2bb78475a16efe23e8a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x518fb6afefea9bb0a5135014d8032edee4a8b1ec` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x873d589f38abbcdd1fca27261aba2f1aa0661d44` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x92ff03a4bc4b3763a17a2ecfcf2a6c1544f7c6ca` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x98f865bd2e5a3e289b8cca54f24a7eeb2bba56ce` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x9e5621b5da05435f9931e5ccd01c3c24476155a7` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xa14669a76b12f94d6ad09304ad15905e900a6e25` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xa4964a2fe606f1d445e36006bcb7f7faee580042` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xa58b23027cdeb442854bb8063164d1fd48f37707` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xabfb6d2535885f2f3cfb896825d3b99c47578ac6` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xd97421fce28c6a8c534b7530e23d413399762b98` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xe7d2e561b8e3b1a0125f45da596706110f8953be` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xfb20015fb2047320a0f1c209f35c6432147770e8` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -245,7 +263,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 3 |
 | upstream | 0 |
 | standard_library | 2 |
-| needs_review | 12 |
+| needs_review | 29 |
 
 ## Scope Matching Notes
 

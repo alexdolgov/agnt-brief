@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
 
 ## Project Overview
 
 - Project: Charm Finance (`charm-finance`)
 - Website: [https://www.charm.fi/](https://www.charm.fi/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
+- Generated: 2026-07-17T12:00:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, base, berachain, blast, boba, ethereum, linea, optimism, polygon, scroll
-- Contract surface: 26 unique implementations (55 raw deployments)
+- Contract surface: 32 unique implementations (61 raw deployments)
 - Coverage basis: 1/2 confirmed own live verified implementations (50.0%); conservative 50.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $2,272,199.00
 - On-chain TVL (included contracts): n/a
@@ -31,7 +31,7 @@ This brief describes the observed EVM deployment and audit surface for Charm Fin
 
 ### Architecture
 
-The pinned logic-topography run contains 2 contract row(s) across arbitrum, base, berachain, boba, ethereum, polygon. Structural roles: 2 supporting. 2 row(s) use upgradeable patterns.
+The pinned logic-topography run contains 2 contract row(s) across arbitrum, base, berachain, boba, ethereum, optimism, polygon. Structural roles: 2 supporting. 2 row(s) use upgradeable patterns.
 
 ## Logic Topography
 
@@ -68,16 +68,16 @@ The pinned logic-topography run contains 2 contract row(s) across arbitrum, base
 
 - Coverage of address-book-owned deployed-live implementations: 1/2 (50.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
-- Address-book implementation classification: 3 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Address-book implementation classification: 3 own, 6 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
 - Outside the address book: 23 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Confirmed-live implementations: 3 of 26 unique; 23 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 3 of 32 unique; 29 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 1/19
 - Verified + Unaudited implementations: 18
 - Verified by bytecode match: 0
-- Unverified implementations: 7
-- Unique implementations: 26
-- Raw deployments: 55
+- Unverified implementations: 13
+- Unique implementations: 32
+- Raw deployments: 61
 - Audits discovered: 6 (6 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - Active bug bounty: Immunefi ([program](https://immunefi.com/bug-bounty/charm/information))
@@ -136,18 +136,24 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (7)
+### ❓ Unverified (13)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x2c84547f7076c4d834f14c5b2ff627f1913291e4` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbed8a8152dd2dbf52275f0f44d42250436fe1319` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd4b4568615cb365bca926910ebc30ea2161067cf` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | optimism | n/a | `0xe317894eb7ddfa7fd07b62c7c7b11fcef39966df` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | polygon | n/a | `0x9c308ab82286bfb212ec202bb2455958cf62bcbb` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xbed8a8152dd2dbf52275f0f44d42250436fe1319` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | boba | n/a | `0x0830b4b7f82094105c3beaebec1842c8b5568bf8` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | boba | unit-231847 | `0xfaf1af4dc761dba157227a3c06cec9a7486d8a07` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | n/a | `0x424cdd9021af88a86c76b245e24583f9a71e32a1` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbed8a8152dd2dbf52275f0f44d42250436fe1319` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xbed8a8152dd2dbf52275f0f44d42250436fe1319` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | n/a | `0xde2ce984cd624f159b545a8577af562c9fec108d` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xfcc5d3b0ba012905e149acab826d452e29780d3b` | ❓ Unverified |
 
 ## Audit Inventory
@@ -209,7 +215,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 19 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 7 |
+| needs_review | 13 |
 
 ## Scope Matching Notes
 

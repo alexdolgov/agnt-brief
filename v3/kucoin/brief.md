@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
 
 ## Project Overview
 
 - Project: KuCoin (`kucoin`)
 - Website: [https://www.kucoin.com](https://www.kucoin.com)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
+- Generated: 2026-07-17T12:00:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, avalanche, base, bsc, ethereum, kava, optimism, polygon
-- Contract surface: 4 unique implementations (4 raw deployments)
+- Contract surface: 5 unique implementations (5 raw deployments)
 - Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $2,329,463,509.59
 - On-chain TVL (included contracts): n/a
@@ -57,16 +57,16 @@ The activated project remains an explicit cohort member with an empty normalized
 
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
-- Address-book implementation classification: 0 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Address-book implementation classification: 0 own, 1 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
 - Outside the address book: 4 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 2
 - Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
 - All block-explorer-verified implementations audited (incl. non-live): 0/4
 - Verified + Unaudited implementations: 4
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 4
-- Raw deployments: 4
+- Unverified implementations: 1
+- Unique implementations: 5
+- Raw deployments: 5
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -106,11 +106,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xb8e6d31e7b212b2b7250ee9c26c56cebbfbe6b23` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -136,7 +138,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 2 |
 | upstream | 0 |
 | standard_library | 2 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

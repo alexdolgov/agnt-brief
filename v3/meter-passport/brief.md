@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
 
 ## Project Overview
 
 - Project: Meter Passport (`meter-passport`)
 - Website: [https://passport.meter.io](https://passport.meter.io)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
+- Generated: 2026-07-17T12:00:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: avalanche, bsc, ethereum, moonbeam, moonriver, polygon
-- Contract surface: 86 unique implementations (86 raw deployments)
+- Contract surface: 88 unique implementations (88 raw deployments)
 - Coverage basis: 0/2 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $773,200.60
 - On-chain TVL (included contracts): n/a
@@ -72,16 +72,16 @@ The pinned logic-topography run contains 2 contract row(s) across bsc, ethereum,
 
 - Coverage of address-book-owned deployed-live implementations: 0/2 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
-- Address-book implementation classification: 2 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Address-book implementation classification: 2 own, 2 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
 - Outside the address book: 84 discovered implementations shown in the inventory but excluded from coverage (6 third-party/infra; 2 standard proxy/library)
 - Proxy deployments represented within implementation groups: 6
-- Confirmed-live implementations: 2 of 86 unique; 84 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 2 of 88 unique; 86 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 0/86
 - Verified + Unaudited implementations: 86
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 86
-- Raw deployments: 86
+- Unverified implementations: 2
+- Unique implementations: 88
+- Raw deployments: 88
 - Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -203,11 +203,14 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x837f68d11cd15e8ab10dd5f3f210516f2cf2bcfb` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xa023e6f6b4862ea38cbe45e377abd908abab2f82` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -332,7 +335,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 78 |
 | upstream | 1 |
 | standard_library | 7 |
-| needs_review | 0 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 

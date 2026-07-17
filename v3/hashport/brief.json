@@ -1,7 +1,7 @@
 {
   "schema_version": "3.0",
   "project_key": "hashport",
-  "generated_at": "2026-07-15T18:30:00.000Z",
+  "generated_at": "2026-07-17T12:00:00.000Z",
   "authority": {
     "activation_id": "scope-prod-20260715-v1",
     "production_closure_sha256": "38a124a34bf27378c85726318ca5f9408641faecd45c04ee5b82ad07a65cbc83",
@@ -13,7 +13,7 @@
     "liveness_closure_sha256": "e1855078572b4a5868cbe2ff93c7ad47c89e29b1b8209e48161f110e31790ddd",
     "fork_detection_run_id": "fork-structural-canonical-production-20260712",
     "deployer_decision_run_id": "deployer-candidate-production-20260712",
-    "export_input_receipt_sha256": "e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd",
+    "export_input_receipt_sha256": "12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7",
     "canonical_network_policy": "offline_cache_only"
   },
   "production_state": {
@@ -35,23 +35,23 @@
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 84,
-    "total_addresses": 300,
-    "unique_implementations": 84,
+    "total_contracts": 94,
+    "total_addresses": 310,
+    "unique_implementations": 94,
     "address_book_own_implementations": 0,
-    "address_book_context_implementations": 60,
+    "address_book_context_implementations": 70,
     "address_book_unclassified_implementations": 0,
     "non_address_book_implementations": 24,
     "third_party_or_infra_implementations": 0,
     "standard_proxy_or_library_implementations": 0,
     "address_book_proxy_deployments": 5,
-    "total_deployments": 300,
+    "total_deployments": 310,
     "audited_contracts": 0,
     "unaudited_contracts": 74,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 74,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 10,
+    "contracts_unverified": 20,
     "owned_contracts_verified_audited": 0,
     "owned_contracts_verified_unaudited": 0,
     "owned_contracts_verified_by_bytecode": 0,
@@ -212,7 +212,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -272,7 +272,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -332,7 +332,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -392,7 +392,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -581,7 +581,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -641,7 +641,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -701,7 +701,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -761,7 +761,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -821,7 +821,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -881,7 +881,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -941,7 +941,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -1130,7 +1130,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -1190,7 +1190,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -1250,7 +1250,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -1310,7 +1310,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -1370,7 +1370,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -1430,7 +1430,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -1664,7 +1664,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -1724,7 +1724,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -1784,7 +1784,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -1844,7 +1844,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -1904,7 +1904,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -1964,7 +1964,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -2168,7 +2168,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -2228,7 +2228,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -2288,7 +2288,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -2348,7 +2348,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -2537,7 +2537,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -2597,7 +2597,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -2657,7 +2657,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -2717,7 +2717,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -2777,7 +2777,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -2837,7 +2837,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -2981,7 +2981,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -3041,7 +3041,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -3101,7 +3101,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -3161,7 +3161,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -3350,7 +3350,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -3410,7 +3410,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -3470,7 +3470,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -3530,7 +3530,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -3590,7 +3590,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -3650,7 +3650,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -3710,7 +3710,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -3770,7 +3770,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -3914,7 +3914,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -3974,7 +3974,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -4034,7 +4034,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -4094,7 +4094,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -4154,7 +4154,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -4214,7 +4214,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -4358,7 +4358,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -4418,7 +4418,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -4478,7 +4478,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "audit_scope",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -4682,7 +4682,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -4742,7 +4742,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -4817,7 +4817,10 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": [
+          "audit_scope",
+          "deployer_expansion"
+        ],
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -4892,7 +4895,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -4967,7 +4970,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "deployer_expansion",
         "address_book_inventory_classes": [],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
@@ -5558,6 +5561,130 @@
     {
       "chain_id": 250,
       "chain_name": "fantom",
+      "address": "0x20dadec88383cfd3f2ba754b5f2e934037f2c4ff",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 250,
+          "chain_name": "fantom",
+          "address": "0x20dadec88383cfd3f2ba754b5f2e934037f2c4ff",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:53:58.314+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 250,
+      "chain_name": "fantom",
+      "address": "0x2d35326f296c1a444a16bf99db88e609a636759d",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 250,
+          "chain_name": "fantom",
+          "address": "0x2d35326f296c1a444a16bf99db88e609a636759d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:53:58.314+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 250,
+      "chain_name": "fantom",
       "address": "0x475b21ade54b9494d8201e0330ca7994081f4e0f",
       "deployment_unit": "unit-241782",
       "deployment_unit_proxy_count": 0,
@@ -5603,8 +5730,504 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "audit_scope",
         "address_book_inventory_classes": [],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 250,
+      "chain_name": "fantom",
+      "address": "0x4d6139f106757f436fbf4be0a62319cfd8a86b2e",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 250,
+          "chain_name": "fantom",
+          "address": "0x4d6139f106757f436fbf4be0a62319cfd8a86b2e",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:53:58.314+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 250,
+      "chain_name": "fantom",
+      "address": "0x54dcd9b9ea3302a91f8e973fa002213b812138cd",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 250,
+          "chain_name": "fantom",
+          "address": "0x54dcd9b9ea3302a91f8e973fa002213b812138cd",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:53:58.314+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 250,
+      "chain_name": "fantom",
+      "address": "0x61612dcce62ba9ab5f5a9a732cc31fdf0311a569",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 250,
+          "chain_name": "fantom",
+          "address": "0x61612dcce62ba9ab5f5a9a732cc31fdf0311a569",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:53:58.314+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 250,
+      "chain_name": "fantom",
+      "address": "0x6c7220cf12d74fb5f6b3ed637f4f9f886f5fb929",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 250,
+          "chain_name": "fantom",
+          "address": "0x6c7220cf12d74fb5f6b3ed637f4f9f886f5fb929",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:53:58.314+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 250,
+      "chain_name": "fantom",
+      "address": "0x9f6b7a4eda06ef574874129a648b1d325f72c27b",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 250,
+          "chain_name": "fantom",
+          "address": "0x9f6b7a4eda06ef574874129a648b1d325f72c27b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:53:58.314+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 250,
+      "chain_name": "fantom",
+      "address": "0xb42693ac16ef574ef1819e9f8d52fe3035808dc7",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 250,
+          "chain_name": "fantom",
+          "address": "0xb42693ac16ef574ef1819e9f8d52fe3035808dc7",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:53:58.314+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 250,
+      "chain_name": "fantom",
+      "address": "0xe54e93002c4d0e9a04d2ebd306e85f4483f569ae",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 250,
+          "chain_name": "fantom",
+          "address": "0xe54e93002c4d0e9a04d2ebd306e85f4483f569ae",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:53:58.314+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 250,
+      "chain_name": "fantom",
+      "address": "0xfd26f14f6e9b50613d58016240dccb5953a705b4",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 250,
+          "chain_name": "fantom",
+          "address": "0xfd26f14f6e9b50613d58016240dccb5953a705b4",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:53:58.314+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "normalized_liveness_authority",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
         "scope_match_exclusion_reasons": [
           "retained_scope_excluded_inventory"
         ],
@@ -9617,7 +10240,7 @@
     "native": 74,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 10
+    "needs_review": 20
   },
   "scope_matching_notes": {
     "match_method_counts": {},
@@ -9679,5 +10302,6 @@
     }
   },
   "active_bug_bounty": null,
+  "non_evm_deployments": null,
   "out_of_scope": null
 }

@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
 
 ## Project Overview
 
 - Project: ApeSwap AMM (`apeswap`)
 - Website: [https://www.ape.bond/](https://www.ape.bond/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
+- Generated: 2026-07-17T12:00:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: bsc
-- Contract surface: 8 unique implementations (8 raw deployments)
+- Contract surface: 9 unique implementations (9 raw deployments)
 - Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -72,16 +72,16 @@ The activated project remains an explicit cohort member with an empty normalized
 
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
-- Address-book implementation classification: 8 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Address-book implementation classification: 8 own, 1 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
 - Outside the address book: 0 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Confirmed-live implementations: 8 of 8 unique; 0 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 8 of 9 unique; 1 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 8
-- Unique implementations: 8
-- Raw deployments: 8
+- Unverified implementations: 9
+- Unique implementations: 9
+- Raw deployments: 9
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -116,13 +116,14 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (8)
+### ❓ Unverified (9)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-226819 | `0x302f1120ada3f40aed3f6410fad75e8428576a1f` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x34294afabcbaffc616ac6614f6d2e17260b78bed` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-226821 | `0x3eb85d568214ae04c2873880fa715a5c8105dd17` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-226823 | `0x8146d7887c2e7ce7ad0c1950e17676c632b5a71a` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-226825 | `0x872c7bee4c034ceba697de18f794e91f10062e2e` | ❓ Unverified |
@@ -155,7 +156,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 8 |
+| needs_review | 9 |
 
 ## Scope Matching Notes
 

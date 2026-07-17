@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
 
 ## Project Overview
 
 - Project: Meeds Finance (`meeds-finance`)
 - Website: [https://www.meeds.io/](https://www.meeds.io/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
+- Generated: 2026-07-17T12:00:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, base, ethereum, optimism, polygon
-- Contract surface: 18 unique implementations (20 raw deployments)
+- Contract surface: 25 unique implementations (27 raw deployments)
 - Coverage basis: 0/9 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,271,759.10
 - On-chain TVL (included contracts): n/a
@@ -78,16 +78,16 @@ The pinned logic-topography run contains 9 contract row(s) across arbitrum, base
 
 - Coverage of address-book-owned deployed-live implementations: 0/9 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
-- Address-book implementation classification: 13 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Address-book implementation classification: 13 own, 7 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
 - Outside the address book: 5 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 2
-- Confirmed-live implementations: 13 of 18 unique; 5 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 13 of 25 unique; 12 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 0/14
 - Verified + Unaudited implementations: 14
 - Verified by bytecode match: 0
-- Unverified implementations: 4
-- Unique implementations: 18
-- Raw deployments: 20
+- Unverified implementations: 11
+- Unique implementations: 25
+- Raw deployments: 27
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -137,14 +137,21 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (4)
+### ❓ Unverified (11)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x70cad5d439591ea7f496b69dcb22521685015853` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x769cf241f79cfcfa5693f4a1adf6c7ebdd43e3c6` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x8f4660498e79c771f93316f09da98e1ebf94c576` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xba5e4d55ca96bf25c35fc65d9251355dcd120655` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-246315 | `0xdd462e9399624dfcf73018793bd50a7ef47940b9` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | polygon | n/a | `0x29d31ad013dc276d0ffcf74e15e315f14dbe5858` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-246318 | `0x6aca77cf3bab0c4e8210a09b57b07854a995289a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | polygon | n/a | `0x6e026d747bac14209e437261ec32a2c6f8347b34` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | polygon | n/a | `0xdbc382c0142c54bc9b7d1bd21ee1b87b320e6198` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-246322 | `0xd9df947d2a8f9c28c37af7cb7c526022fb14efa2` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-246320 | `0xe4db3652ac7f88c5712717fd774676bf4aa56769` | ❓ Unverified |
 
@@ -176,7 +183,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 8 |
 | upstream | 6 |
 | standard_library | 0 |
-| needs_review | 4 |
+| needs_review | 11 |
 
 ## Scope Matching Notes
 

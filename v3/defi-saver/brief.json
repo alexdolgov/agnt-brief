@@ -1,7 +1,7 @@
 {
   "schema_version": "3.0",
   "project_key": "defi-saver",
-  "generated_at": "2026-07-17T18:30:00.000Z",
+  "generated_at": "2026-07-17T12:00:00.000Z",
   "authority": {
     "activation_id": "scope-prod-20260715-v1",
     "production_closure_sha256": "38a124a34bf27378c85726318ca5f9408641faecd45c04ee5b82ad07a65cbc83",
@@ -13,7 +13,7 @@
     "liveness_closure_sha256": "e1855078572b4a5868cbe2ff93c7ad47c89e29b1b8209e48161f110e31790ddd",
     "fork_detection_run_id": "fork-structural-canonical-production-20260712",
     "deployer_decision_run_id": "deployer-candidate-production-20260712",
-    "export_input_receipt_sha256": "fecd3a631f1cf55e8263e235e6e8a1dbaef8880d568c45fb6dbfa1b62c26682a",
+    "export_input_receipt_sha256": "12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7",
     "canonical_network_policy": "offline_cache_only"
   },
   "production_state": {

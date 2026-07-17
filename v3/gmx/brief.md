@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
 
 ## Project Overview
 
 - Project: GMX (`gmx`)
 - Website: [https://gmx.io](https://gmx.io)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
+- Generated: 2026-07-17T12:00:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: arbitrum, avalanche
-- Contract surface: 219 unique implementations (219 raw deployments)
+- Chains: arbitrum, arbitrum-sepolia, avalanche, avalanche-fuji
+- Contract surface: 274 unique implementations (274 raw deployments)
 - Coverage basis: 10/10 confirmed own live verified implementations (100.0%); conservative 90.9% with 1 needs-review implementation(s)
 - DeFi Llama TVL: $238,547,261.00
 - On-chain TVL (included contracts): n/a
@@ -31,7 +31,7 @@ This brief describes the observed EVM deployment and audit surface for GMX. It i
 
 ### Architecture
 
-The pinned logic-topography run contains 19 contract row(s) across arbitrum, avalanche. Structural roles: 18 core, 1 supporting. No upgradeable pattern was identified in these rows.
+The pinned logic-topography run contains 19 contract row(s) across arbitrum, arbitrum-sepolia, avalanche, avalanche-fuji. Structural roles: 18 core, 1 supporting. No upgradeable pattern was identified in these rows.
 
 ## Logic Topography
 
@@ -49,7 +49,7 @@ The pinned logic-topography run contains 19 contract row(s) across arbitrum, ava
 ### Forked Contracts
 
 **DataStore** (`0x2f0b22339414aded7d5f06f9d604c7ff5b2fe3f6`, chain 43114)
-Origin: mcdex (`0x46ffa915d87bf915c2d01ac7d4c1c5338fa5acec`)
+Origin: mcdex (`0x46ffa9...a5acec`)
 Containment: 100.0% - 57 functions inherited
 Centroid audit status: pending_validation
 
@@ -93,16 +93,16 @@ Removals (removed from original): none
 
 - Coverage of address-book-owned deployed-live implementations: 10/10 (100.0%)
 - Coverage assessment: partial (medium confidence) — Coverage is calculated only over confirmed own address-book implementations; review inventory is reported separately and included in the conservative percentage where live and verified.
-- Address-book implementation classification: 21 own, 30 exact-address-book context/dependencies excluded, 1 exact-address-book entries needing review
+- Address-book implementation classification: 21 own, 85 exact-address-book context/dependencies excluded, 1 exact-address-book entries needing review
 - Outside the address book: 167 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 1
-- Confirmed-live implementations: 22 of 219 unique; 197 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 22 of 274 unique; 252 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 10/186
 - Verified + Unaudited implementations: 176
 - Verified by bytecode match: 0
-- Unverified implementations: 33
-- Unique implementations: 219
-- Raw deployments: 219
+- Unverified implementations: 88
+- Unique implementations: 274
+- Raw deployments: 274
 - Audits discovered: 39 (39 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 30
 - Active bug bounty: Immunefi ([program](https://immunefi.com/bug-bounty/gmx/information))
@@ -332,7 +332,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (33)
+### ❓ Unverified (88)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -359,6 +359,34 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | arbitrum | unit-241287 | `0xe6fab3f0c7199b0d34d7fbe83394fc0e0d06e99d` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-241289 | `0xec0e4a27a9fbfc64e4915c254b961260df28054c` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | arbitrum | unit-241290 | `0xfc5a1a6eb076a2c7ad06ed22c90d7e710e35ad0a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x0a458c96ac0b2a130da4bdf1aadd4cb7be036d11` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x0f0c78405a4e6dafc188d539d61c69d74f42f9db` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x12383b2ab771471003185a83cf983c98a826bd4e` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x19a8085537078e7847a332a76abadd5b02b1e736` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x257d0ea0b040e2cd1d456fb4c66d7814102ad346` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x25d23e8e655727f2687cc808bb9589525a6f599b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x2964d242233036c8bdc1adc795bb4dea6fb929f2` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x4092cc8e8dc0893f93f35f5998585a6109d91a46` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x5e7d61e4c52123adf651961e4833acc349b61491` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x63725e32b05324042fe78c34be3e72497c91e1e0` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x6b6595389a0196f882c0f66cb1f401f1d24afedc` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x74d49b6a630bf519bdb6e4efc4354c420418a6a2` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x76f93b5240df811a3fc32bedd58daa5784e46c96` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x89810f23585fdcfaffb1712e5b76d9b0f722e1d6` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x8bef3f7f3b2d8b8490cf30b42c728293d1c2a9ef` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x966d1f5c54a714c6443205f0ec49eef81f10fdfd` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x96b2004d52d30b21385e6757b1eebd1565864f6a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche-fuji | n/a | `0xa2c59bf9999915c2df87998739c2e3efa9c856f4` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche-fuji | n/a | `0xae7c79ed2807fe544f5757890ca8afb9d553f17c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche-fuji | n/a | `0xb525036363bc44695d36fd56bcb86cef39cd444a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche-fuji | n/a | `0xc120bd6756171691fc2e2d5ee876ae79526412c1` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche-fuji | n/a | `0xc67d98ac5803afd776958622ceee332a0b2cabb9` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche-fuji | n/a | `0xd5ee3ecaf5754ce5ff74847d0caf094ebb12ed5e` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche-fuji | n/a | `0xd96eb278505ef101b3a1328636dfb2f215bb6ba5` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche-fuji | n/a | `0xdeac9ea3c72c102f2a9654b8e1a14ef86cdd3146` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche-fuji | n/a | `0xe80fea80ca767a105a65d67bfa970ecf1b4e9127` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche-fuji | n/a | `0xea1bfb4ea9a412dccd63454abc127431ebb0f0d4` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche-fuji | n/a | `0xf82cc6eb57f8ff86bc5c5e90b8ba83dbbfb517ee` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | avalanche | unit-241292 | `0x091ed806490cc58fd514441499e58984ccce0630` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | avalanche | unit-241294 | `0x4296e307f108b2f583ff2f7b7270ee7831574ae5` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | avalanche | unit-241295 | `0x4d268a7d4c16ceb5a606c173bd974984343fea13` | ❓ Unverified |
@@ -371,6 +399,33 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | avalanche | unit-241303 | `0xccfe3e576f8145403d3ce8f3c2f6519dae40683b` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | avalanche | unit-241304 | `0xd152c7f25db7f4b95b7658323c5f33d176818ee4` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | avalanche | unit-241305 | `0xfff6d276bc37c61a23f06410dce4a400f66420f8` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-sepolia | n/a | `0x000f692690f6c39660afb878d277f038fb3a8ec6` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-sepolia | n/a | `0x039ddee97368eb6ed20ce921de7ad37a92a1a566` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-sepolia | n/a | `0x0dc4e24c63c24fe898dda574c962ba7fbb146964` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-sepolia | n/a | `0x1934838e3d85416a6cf5bf7a5e619f12be01c4b2` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-sepolia | n/a | `0x1b8ac606de71686fd2a1aedecb6e0efba28909a2` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-sepolia | n/a | `0x21b044bb4a2ba667723aa3d15ba7b4bcc628084d` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-sepolia | n/a | `0x268fa5c1dafeefd5e7bc31cf517c780cb36e7a84` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-sepolia | n/a | `0x40bd50de0977c68ecb958ed4a065e14e1091ce64` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-sepolia | n/a | `0x433e3c47885b929aece4149e3c835e565a20d95c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-sepolia | n/a | `0x4750376b9378294138cf7b7d69a2d243f4940f71` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-sepolia | n/a | `0x674c5cda9fa404b14d3834d54d7ef258b91ba4a8` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-sepolia | n/a | `0x6b6f9b7b9a6b69942dae74fb95e694ec277117af` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-sepolia | n/a | `0x6d8437132784cddf0cca3da249ef49f92947eee4` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-sepolia | n/a | `0x72f13a44c8ba16a678cad549f17bc9e06d2b8bd2` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-sepolia | n/a | `0x7601c9dbbdcf1f5ed1e7adba4efd9f2cada037a5` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-sepolia | n/a | `0x809ea82c394beb993c2b6b0d73b8fd07ab92de5a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-sepolia | n/a | `0x8722df9218ba7d7ee06ae48e990ef38b76750111` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-sepolia | n/a | `0x9b7d08ab020d9c180e4bac370fb545317124cf22` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-sepolia | n/a | `0xa973c2692c1556e1a3d478e745e9a75624aedc73` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-sepolia | n/a | `0xb1854c5cfb3d25be6198972d5c3aea0592e933a4` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-sepolia | n/a | `0xc72ea16031bd6731de2812074ceca8028b8493b9` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-sepolia | n/a | `0xcf45a7e8bb46738f454ec6766631e5612da90836` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-sepolia | n/a | `0xcf4c2c4c53157bcc01a596e3788fff69cbbcd201` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-sepolia | n/a | `0xd84793ae65842ffac5c20ab8eabd699ea1fc79f3` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-sepolia | n/a | `0xdd0228e2806a348209f777c82c90515f9da1b790` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-sepolia | n/a | `0xe2169693147df45edc84b759488aa0e34fd9f939` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-sepolia | n/a | `0xed50b2a1ef0c35daaf08da6486971180237909c3` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -1467,7 +1522,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 178 |
 | upstream | 7 |
 | standard_library | 1 |
-| needs_review | 33 |
+| needs_review | 88 |
 
 ## Scope Matching Notes
 

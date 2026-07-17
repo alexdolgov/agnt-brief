@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
 
 ## Project Overview
 
 - Project: Paxos (`paxos`)
 - Website: [https://www.paxos.com/](https://www.paxos.com/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
+- Generated: 2026-07-17T12:00:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, ethereum, ink, x-layer
-- Contract surface: 9 unique implementations (9 raw deployments)
+- Contract surface: 10 unique implementations (10 raw deployments)
 - Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - DeFi Llama TVL: $1,812,141,203.00
 - On-chain TVL (included contracts): n/a
@@ -73,16 +73,16 @@ The activated project remains an explicit cohort member with an empty normalized
 
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
-- Address-book implementation classification: 8 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Address-book implementation classification: 8 own, 1 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
 - Outside the address book: 1 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 1 standard proxy/library)
 - Proxy deployments represented within implementation groups: 1
-- Confirmed-live implementations: 8 of 9 unique; 1 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 8 of 10 unique; 2 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 0/1
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
-- Unverified implementations: 8
-- Unique implementations: 9
-- Raw deployments: 9
+- Unverified implementations: 9
+- Unique implementations: 10
+- Raw deployments: 10
 - Audits discovered: 7 (7 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -119,12 +119,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (8)
+### ❓ Unverified (9)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x6f475642a6e85809b1c36fa62763669b1b48dd5b` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251148 | `0x9a7164112029b81c07636ab7b59fa813e0883bbf` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251149 | `0xe343167631d89b6ffc58b88d6b7fb0228795491d` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | x-layer | unit-251150 | `0x046ca5a59d53448bf63e0bee1d552c84ad8beb70` | ❓ Unverified |
@@ -245,7 +246,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 1 |
-| needs_review | 8 |
+| needs_review | 9 |
 
 ## Scope Matching Notes
 

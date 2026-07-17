@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
 
 ## Project Overview
 
 - Project: Piku Finance (`piku-finance`)
 - Website: [https://piku.co/](https://piku.co/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
+- Generated: 2026-07-17T12:00:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
-- Contract surface: 6 unique implementations (6 raw deployments)
+- Contract surface: 11 unique implementations (11 raw deployments)
 - Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - DeFi Llama TVL: $8,681,859.31
 - On-chain TVL (included contracts): n/a
@@ -71,16 +71,16 @@ The activated project remains an explicit cohort member with an empty normalized
 
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
-- Address-book implementation classification: 6 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Address-book implementation classification: 6 own, 5 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
 - Outside the address book: 0 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Confirmed-live implementations: 6 of 6 unique; 0 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 6 of 11 unique; 5 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 6
-- Unique implementations: 6
-- Raw deployments: 6
+- Unverified implementations: 11
+- Unique implementations: 11
+- Raw deployments: 11
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -115,18 +115,23 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (6)
+### ❓ Unverified (11)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251281 | `0x098697ba3fee4ea76294c5d6a466a4e3b3e95fe6` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x153bd1abe60104bd46aa05a27fa12d1346d64a57` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251282 | `0x2bf11d2e04bc40daa95c24b8b90ec4f5c57dd326` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251283 | `0x2e4039e8e31475d65dc00293c366fdbfbbc02dc3` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x3ffaa9ce7cfa5688277b97bf6a8c22249404d129` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251284 | `0x5da17ca137f1128d4be7ce574bc61f3ac4839df8` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x6354b7dd06050da44a21d680436838a08e7dcec4` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251285 | `0x827ce7e8e35861d9ac7fe002755767b695a5594a` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251286 | `0x99351baed3d8ab544ccb08af96a105910fda71e7` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xacd577ccc29e88a2b7aaa15026533abd91fdd6be` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xf5145335540c4116956c0936b7db08d1a862a2d9` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -152,7 +157,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 6 |
+| needs_review | 11 |
 
 ## Scope Matching Notes
 

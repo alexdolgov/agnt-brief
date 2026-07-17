@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
 
 ## Project Overview
 
 - Project: Sherlock (`sherlock`)
 - Website: [https://sherlock.xyz](https://sherlock.xyz)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
+- Generated: 2026-07-17T12:00:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
-- Contract surface: 30 unique implementations (30 raw deployments)
+- Contract surface: 34 unique implementations (34 raw deployments)
 - Coverage basis: 3/5 confirmed own live verified implementations (60.0%); conservative 60.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $504,842.96
 - On-chain TVL (included contracts): n/a
@@ -70,16 +70,16 @@ The pinned logic-topography run contains 5 contract row(s) across ethereum. Stru
 
 - Coverage of address-book-owned deployed-live implementations: 3/5 (60.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
-- Address-book implementation classification: 5 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Address-book implementation classification: 5 own, 4 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
 - Outside the address book: 25 discovered implementations shown in the inventory but excluded from coverage (1 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Confirmed-live implementations: 5 of 30 unique; 25 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 5 of 34 unique; 29 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 3/30
 - Verified + Unaudited implementations: 27
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 30
-- Raw deployments: 30
+- Unverified implementations: 4
+- Unique implementations: 34
+- Raw deployments: 34
 - Audits discovered: 4 (4 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): n/a
@@ -149,11 +149,16 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (4)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x46d2a90153cd8f09464ca3a5605b6bbec9c2ff01` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x50b0845db1fb4c1b3a3786dc288b330c269e3993` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x731751e3c0b67014b560f98b26601a5587f954b0` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -217,7 +222,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 29 |
 | upstream | 0 |
 | standard_library | 1 |
-| needs_review | 0 |
+| needs_review | 4 |
 
 ## Scope Matching Notes
 

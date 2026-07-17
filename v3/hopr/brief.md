@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
 
 ## Project Overview
 
 - Project: HOPR (`hopr`)
 - Website: [https://hoprnet.org](https://hoprnet.org)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
+- Generated: 2026-07-17T12:00:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: chain-31337, gnosis
-- Contract surface: 118 unique implementations (265 raw deployments)
+- Chains: chain-31337, ethereum, gnosis
+- Contract surface: 119 unique implementations (266 raw deployments)
 - Coverage basis: 0/24 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $862,408.19
 - On-chain TVL (included contracts): n/a
@@ -31,7 +31,7 @@ This brief describes the observed EVM deployment and audit surface for HOPR. It 
 
 ### Architecture
 
-The pinned logic-topography run contains 26 contract row(s) across chain-31337, gnosis. Structural roles: 18 supporting, 4 core, 4 unclassified. 1 row(s) use upgradeable patterns.
+The pinned logic-topography run contains 26 contract row(s) across chain-31337, ethereum, gnosis. Structural roles: 18 supporting, 4 core, 4 unclassified. 1 row(s) use upgradeable patterns.
 
 ## Logic Topography
 
@@ -93,16 +93,16 @@ The pinned logic-topography run contains 26 contract row(s) across chain-31337, 
 
 - Coverage of address-book-owned deployed-live implementations: 0/24 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
-- Address-book implementation classification: 26 own, 10 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Address-book implementation classification: 26 own, 11 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
 - Outside the address book: 82 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 3
-- Confirmed-live implementations: 26 of 118 unique; 92 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 26 of 119 unique; 93 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 0/48
 - Verified + Unaudited implementations: 48
 - Verified by bytecode match: 0
-- Unverified implementations: 70
-- Unique implementations: 118
-- Raw deployments: 265
+- Unverified implementations: 71
+- Unique implementations: 119
+- Raw deployments: 266
 - Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -186,12 +186,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (70)
+### ❓ Unverified (71)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xd4fdec44db9d44b8f2b6d529620f9c0c7066a2c1` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x03a13cfd79009b56b7d62c68fc3b8fbb3b2b0752` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x15b362617891169f7e448d88322d572f205e3c78` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x2f3243adc9805f6dd3e01c9e9ed31675a5b16902` | ❓ Unverified |
@@ -324,7 +325,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 47 |
 | upstream | 1 |
 | standard_library | 0 |
-| needs_review | 70 |
+| needs_review | 71 |
 
 ## Scope Matching Notes
 

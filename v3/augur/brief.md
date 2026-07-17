@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
 
 ## Project Overview
 
 - Project: Augur (`augur`)
 - Website: [https://augur.net/](https://augur.net/)
 - Lifecycle: active (Tier 0, 90.5% below peak)
-- Generated: 2026-07-15T18:30:00.000Z
+- Generated: 2026-07-17T12:00:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
-- Contract surface: 135 unique implementations (145 raw deployments)
+- Contract surface: 141 unique implementations (151 raw deployments)
 - Coverage basis: 9/23 confirmed own live verified implementations (39.1%); conservative 39.1% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,260,713.35
 - On-chain TVL (included contracts): $4,454,398.26
@@ -94,16 +94,16 @@ The pinned logic-topography run contains 23 contract row(s) across ethereum. Str
 
 - Coverage of address-book-owned deployed-live implementations: 9/23 (39.1%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
-- Address-book implementation classification: 29 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Address-book implementation classification: 29 own, 6 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
 - Outside the address book: 106 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 4
-- Confirmed-live implementations: 29 of 135 unique; 106 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 29 of 141 unique; 112 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 9/80
 - Verified + Unaudited implementations: 71
 - Verified by bytecode match: 0
-- Unverified implementations: 55
-- Unique implementations: 135
-- Raw deployments: 145
+- Unverified implementations: 61
+- Unique implementations: 141
+- Raw deployments: 151
 - Audits discovered: 7 (7 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 4
 - ASD (verified + unaudited TVL): n/a
@@ -224,7 +224,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (55)
+### ❓ Unverified (61)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -234,6 +234,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x06eb3bb92121774753b58c735d989843a9eaacb9` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x08d1708b659b2d5ffb4c08b7bdabafedcdb0b0b8` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x16c0e70d497de975c930d44cef04f48ca80c14cb` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x1985365e9f78359a9b6ad760e32412f4a445e862` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1c36b06fc0d9354a96cf155b861b141ed10c3312` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-227344 | `0x1dd864ed6f291b31c86aaf228db387cd60a20e18` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1e8229e00ddcb78f5b4fd9b1aa6175dd89c5fcaf` | ❓ Unverified |
@@ -255,6 +256,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x60f7f337fbc4af02ba7560a847ff3a6f2f117ed7` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x65d13619e4495665da113c1612b5bf0bcae4193d` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6a3b7c553d47c08651641ef00cb3befae97bf415` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x6b175474e89094c44da98b954eedeac495271d0f` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6bc8cf67434cd449ba13a50ca7af22044c11eb37` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6cb9a1e39a88623705e6b30ac3824140ff2d6751` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x71995a3fc0236ed4d5d8ee04a23b727aea39caac` | ❓ Unverified |
@@ -265,6 +267,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9c09063005d4dc794bb06fa128b8757a9ccb62dd` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9ea309d4f96d6433c75a6b9c5a596cf19a87edb8` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa00703843435fbd75d907beb6ff5be30f8ecc5aa` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa3ac9844514b96bb502627ca9dceb57c4be289e3` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xac8ba65b222edc67d8681403346680b69e9dda9e` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xaef4d02a22053f5b9d55e2af0a45393e6f1b606e` | ❓ Unverified |
@@ -273,14 +276,17 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbcc9946143534e28c3bad116cea0f81b9b208799` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbf1e3a8405906904b3692446e0fb4e309628a9fe` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbfe7b0afadcf420a32cb78a5ab9de40469deb8be` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-227366 | `0xc2930a5eb22e8d8812934d59508fe940e9f91c4e` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc7612135356ba8f75dbf517b55d88a91977492dc` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xccc2431a7335f21d9268ba62f0b32b0f2efc463f` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcd53c634e93fa1214d028acaaf6a12912ba26a2f` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcf0c58607e518d89d25083bccafe1576bd43c175` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xd2486ed7fdb3f2325d95e4e648f2c92aa2948ff5` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-227368 | `0xd2a04e60a4b7f6077ac2a87a8cfd81722b75b9cf` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd5ac4d66bc75e64f9ef5d687f6557988b53b080e` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd69769fa07c710c7b5b4c7f7f9189dbfd325976d` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xdac17f958d2ee523a2206206994597c13d831ec7` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe35e720202f5313775831d62b09dbe3f113aa1db` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe97ea901d034ba2e018155264f77c417ce7717f9` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xeead9cf3d52492a30b262c4e985b1d3adb87b834` | ❓ Unverified |
@@ -504,7 +510,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 77 |
 | upstream | 3 |
 | standard_library | 0 |
-| needs_review | 55 |
+| needs_review | 61 |
 
 ## Scope Matching Notes
 

@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
 
 ## Project Overview
 
 - Project: RealT (`realt`)
 - Website: [https://realt.co](https://realt.co)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
+- Generated: 2026-07-17T12:00:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum, gnosis, polygon
-- Contract surface: 12 unique implementations (12 raw deployments)
+- Contract surface: 17 unique implementations (17 raw deployments)
 - Coverage basis: 0/1 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $217,294,265.00
 - On-chain TVL (included contracts): n/a
@@ -75,16 +75,16 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum, gnos
 
 - Coverage of address-book-owned deployed-live implementations: 0/1 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
-- Address-book implementation classification: 10 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Address-book implementation classification: 10 own, 5 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
 - Outside the address book: 2 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 1 standard proxy/library)
 - Proxy deployments represented within implementation groups: 2
-- Confirmed-live implementations: 10 of 12 unique; 2 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 10 of 17 unique; 7 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 0/3
 - Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
-- Unverified implementations: 9
-- Unique implementations: 12
-- Raw deployments: 12
+- Unverified implementations: 14
+- Unique implementations: 17
+- Raw deployments: 17
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -123,15 +123,20 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (9)
+### ❓ Unverified (14)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x18eca1ab1998e7ce5e9435321e0ce91c9250591f` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x22338c37dcec0bb3eac4fc283811384d2d63c13b` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-252555 | `0x24d9783b185c93b8d9835c00fb3c8c2ae4e0cdcc` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-252556 | `0x80226fc0ee2b096224eeac085bb9a8cba1146f7d` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-252557 | `0xa17698199466e71bafc31f226db341b7840701e7` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xc759aa7f9dd9720a1502c104dae4f9852bb17c14` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xd3a817253c81a82712fdd48b37ed4947c4aabb8b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xe81b963b792c0df2e8b2a7f0ccf6fcec774e91a4` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-252558 | `0x4aad6071085df840abd9baf1697d5d5992bdadce` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-252559 | `0xb98ca8cbb6f95a8f0e2b0d988e52bdb0ea1e6d04` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-252560 | `0xf998fd1e25d009d6c4dbd078349077d1cf9c1c77` | ❓ Unverified |
@@ -165,7 +170,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 1 |
 | upstream | 0 |
 | standard_library | 2 |
-| needs_review | 9 |
+| needs_review | 14 |
 
 ## Scope Matching Notes
 

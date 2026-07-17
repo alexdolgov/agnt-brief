@@ -9,14 +9,14 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `fecd3a631f1cf55e8263e235e6e8a1dbaef8880d568c45fb6dbfa1b62c26682a`
+- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
 
 ## Project Overview
 
 - Project: Yelay V3 (`spool-protocol`)
 - Website: [https://www.yelay.io/](https://www.yelay.io/)
 - Lifecycle: unknown
-- Generated: 2026-07-17T18:30:00.000Z
+- Generated: 2026-07-17T12:00:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, ethereum, sepolia
 - Contract surface: 270 unique implementations (270 raw deployments)

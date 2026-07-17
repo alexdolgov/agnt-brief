@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
 
 ## Project Overview
 
 - Project: Jones DAO (`jones-dao`)
 - Website: [https://jonesdao.io](https://jonesdao.io)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
+- Generated: 2026-07-17T12:00:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, base, blast, ethereum
-- Contract surface: 1007 unique implementations (1013 raw deployments)
+- Contract surface: 1012 unique implementations (1018 raw deployments)
 - Coverage basis: 0/1 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,295,839.46
 - On-chain TVL (included contracts): n/a
@@ -68,16 +68,16 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum, base
 
 - Coverage of address-book-owned deployed-live implementations: 0/1 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
-- Address-book implementation classification: 3 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Address-book implementation classification: 3 own, 5 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
 - Outside the address book: 1004 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 1 standard proxy/library)
 - Proxy deployments represented within implementation groups: 7
-- Confirmed-live implementations: 3 of 1007 unique; 1004 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 3 of 1012 unique; 1009 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 0/46
 - Verified + Unaudited implementations: 46
 - Verified by bytecode match: 0
-- Unverified implementations: 961
-- Unique implementations: 1007
-- Raw deployments: 1013
+- Unverified implementations: 966
+- Unique implementations: 1012
+- Raw deployments: 1018
 - Audits discovered: 6 (6 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -159,7 +159,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (961)
+### ❓ Unverified (966)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -1117,13 +1117,18 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xfca313e2be55957ac628a6193a60d38adc2da64e` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xfe351e85eb6b4292088dc28b66e9e92ab62fb663` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-243366 | `0x1c99b4425d753d58ec6d777fb13d25feb0bb5eb0` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | blast | n/a | `0x1e7d8ea2019f5a93a1fc6cac90c859bcb079205a` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x29e9c7c9b5b5aeec24e7b3ea370c587ad167d2a8` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x4f19585be9fdd90060bd38f30213c10d7dbd9588` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | blast | n/a | `0x5f7c7740cda9f6fdfe07444b18e1032700d6fdd2` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x629101eb0f98f7497b0c0854c6ec867111c655de` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x6e722306b75bb174bed276ac1f2e4662fcac0e88` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x8a1c4e945823f05002038f54e2ce407ed7e1a46f` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x987492c6d2e82a2888febaea705d7eba1f4f14f0` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xa074bc5dc9b29aa422cd63d12b52d444ad77aaa8` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | blast | n/a | `0xa7b37103743123f218a3601c809b62251278202d` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | blast | n/a | `0xdf00be4366cc602a92d244bdd70b6f50bc08bfed` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | blast | n/a | `0xee54a491b2b4f5c8b3ea308d3a6b8a8594e4f538` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xf537fb9a99b58104b898f692bbc363c3e949ac94` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xf741d0144229839209cc01e81a87ac195d309586` | ❓ Unverified |
 
@@ -1231,7 +1236,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 43 |
 | upstream | 0 |
 | standard_library | 3 |
-| needs_review | 961 |
+| needs_review | 966 |
 
 ## Scope Matching Notes
 

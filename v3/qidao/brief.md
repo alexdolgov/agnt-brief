@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
 
 ## Project Overview
 
 - Project: QiDao (`qidao`)
 - Website: [https://app.mai.finance](https://app.mai.finance)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
+- Generated: 2026-07-17T12:00:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, avalanche, base, bsc, cronos, ethereum, fantom, fraxtal, gnosis, harmony, kava, linea, mantle, metis, moonbeam, moonriver, optimism, polygon, polygon-zkevm, zksync-era
-- Contract surface: 1555 unique implementations (3199 raw deployments)
+- Contract surface: 1573 unique implementations (3217 raw deployments)
 - Coverage basis: 0/127 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $2,439,860.55
 - On-chain TVL (included contracts): n/a
@@ -49,7 +49,7 @@ The pinned logic-topography run contains 135 contract row(s) across arbitrum, av
 ### Forked Contracts
 
 **QiStablecoin** (`0xa3fa99a148fa48d14ed51d610c367c61876997f1`, chain 137)
-Origin: allbridge (`0xa3fa99a148fa48d14ed51d610c367c61876997f1`)
+Origin: allbridge (`0xa3fa99...6997f1`)
 Containment: 100.0% - 20 functions inherited
 Centroid audit status: pending_validation
 
@@ -58,7 +58,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **stableQiVault** (`0x4ce4c542d96ce1872fea4fa3fbb2e7ae31862bad`, chain 1)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 100.0% - 45 functions inherited
 Centroid audit status: pending_validation
 
@@ -67,7 +67,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **stableQiVault** (`0x5773e8953cf60f495eb3c2db45dd753b5c4b7473`, chain 1)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 100.0% - 45 functions inherited
 Centroid audit status: pending_validation
 
@@ -76,7 +76,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **stableQiVault** (`0x60d133c666919b54a3254e0d3f14332cb783b733`, chain 1)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 97.8% - 44 functions inherited
 Centroid audit status: pending_validation
 
@@ -86,7 +86,7 @@ Removals (removed from original):
 - setCustomURI(bool)
 
 **stableQiVault** (`0x82e90eb7034c1df646bd06afb9e67281aab5ed28`, chain 1)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 97.8% - 44 functions inherited
 Centroid audit status: pending_validation
 
@@ -96,7 +96,7 @@ Removals (removed from original):
 - setCustomURI(bool)
 
 **stableQiVault** (`0x8c45969ad19d297c9b85763e90d0344c6e2ac9d1`, chain 1)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 97.8% - 44 functions inherited
 Centroid audit status: pending_validation
 
@@ -106,7 +106,7 @@ Removals (removed from original):
 - setCustomURI(bool)
 
 **stableQiVault** (`0x98eb27e5f24fb83b7d129d789665b08c258b4ccf`, chain 1)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 97.8% - 44 functions inherited
 Centroid audit status: pending_validation
 
@@ -116,7 +116,7 @@ Removals (removed from original):
 - setCustomURI(bool)
 
 **stableQiVault** (`0xca3eb45fb186ed4e75b9b22a514ff1d4abadd123`, chain 1)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 100.0% - 45 functions inherited
 Centroid audit status: pending_validation
 
@@ -125,7 +125,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **stableQiVault** (`0xcc61ee649a95f2e2f0830838681f839bdb7cb823`, chain 1)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 97.8% - 44 functions inherited
 Centroid audit status: pending_validation
 
@@ -135,7 +135,7 @@ Removals (removed from original):
 - setCustomURI(bool)
 
 **stableQiVault** (`0xecbd32bd581e241739be1763dfe7a8ffcc844ae1`, chain 1)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 97.8% - 44 functions inherited
 Centroid audit status: pending_validation
 
@@ -145,7 +145,7 @@ Removals (removed from original):
 - setCustomURI(bool)
 
 **stableQiVault** (`0x7198ff382b5798dab7dc72a23c1fec9dc091893b`, chain 10)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 97.8% - 44 functions inherited
 Centroid audit status: pending_validation
 
@@ -155,7 +155,7 @@ Removals (removed from original):
 - setCustomURI(bool)
 
 **stableQiVault** (`0xf9ce2522027bd40d3b1aee4abe969831fe3beaf5`, chain 10)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 97.8% - 44 functions inherited
 Centroid audit status: pending_validation
 
@@ -165,7 +165,7 @@ Removals (removed from original):
 - setCustomURI(bool)
 
 **stableQiVault** (`0x79afad49e968e7bea7a23933e294a94e33e60158`, chain 100)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 100.0% - 45 functions inherited
 Centroid audit status: pending_validation
 
@@ -174,7 +174,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **stableQiVault** (`0x11826d20b6a16a22450978642404da95b4640123`, chain 137)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 97.8% - 44 functions inherited
 Centroid audit status: pending_validation
 
@@ -184,7 +184,7 @@ Removals (removed from original):
 - setCustomURI(bool)
 
 **stableQiVault** (`0x169d47043cc0c94c39fa327941c56cb0344dc508`, chain 137)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 100.0% - 45 functions inherited
 Centroid audit status: pending_validation
 
@@ -193,7 +193,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **stableQiVault** (`0x3bcbac61456c9c9582132d1493a00e318ea9c122`, chain 137)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 100.0% - 45 functions inherited
 Centroid audit status: pending_validation
 
@@ -202,7 +202,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **stableQiVault** (`0x7d75f83f0abe2ece0b9daf41cceddf38cb66146b`, chain 137)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 97.8% - 44 functions inherited
 Centroid audit status: pending_validation
 
@@ -212,7 +212,7 @@ Removals (removed from original):
 - setCustomURI(bool)
 
 **stableQiVault** (`0x9a05b116b56304f5f4b3f1d5da4641bffffae6ab`, chain 137)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 100.0% - 45 functions inherited
 Centroid audit status: pending_validation
 
@@ -221,7 +221,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **stableQiVault** (`0xa3b0a659f2147d77a443f70d96b3cc95e7a26390`, chain 137)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 97.8% - 44 functions inherited
 Centroid audit status: pending_validation
 
@@ -231,7 +231,7 @@ Removals (removed from original):
 - setCustomURI(bool)
 
 **stableQiVault** (`0xaa19d0e397c964a35e6e80262c692dbfc9c23451`, chain 137)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 97.8% - 44 functions inherited
 Centroid audit status: pending_validation
 
@@ -241,7 +241,7 @@ Removals (removed from original):
 - setCustomURI(bool)
 
 **stableQiVault** (`0xb1f28350539b06d5a35d016908eef0424bd13c4b`, chain 137)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 100.0% - 45 functions inherited
 Centroid audit status: pending_validation
 
@@ -250,7 +250,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **stableQiVault** (`0xb5b31e6a13ae856bc30b3c76b16edad9f432b54f`, chain 137)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 100.0% - 45 functions inherited
 Centroid audit status: pending_validation
 
@@ -259,7 +259,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **stableQiVault** (`0xf1104493ec315af2cb52f0c19605443334928d38`, chain 137)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 100.0% - 45 functions inherited
 Centroid audit status: pending_validation
 
@@ -268,7 +268,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **stableQiVault** (`0xbf1aea8670d2528e08334083616dd9c5f3b087ae`, chain 252)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 100.0% - 45 functions inherited
 Centroid audit status: pending_validation
 
@@ -277,7 +277,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **stableQiVault** (`0x10dcbee8afa39a847707e16aea5eb34c6b01aba9`, chain 1088)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 97.8% - 44 functions inherited
 Centroid audit status: pending_validation
 
@@ -287,7 +287,7 @@ Removals (removed from original):
 - setCustomURI(bool)
 
 **stableQiVault** (`0x19cb63ccbfac2f28b1fd79923f6adfc096e6ebb4`, chain 1088)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 100.0% - 45 functions inherited
 Centroid audit status: pending_validation
 
@@ -296,7 +296,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **stableQiVault** (`0x5a03716bd1f338d7849f5c9581ad5015ce0020b0`, chain 1088)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 97.8% - 44 functions inherited
 Centroid audit status: pending_validation
 
@@ -306,7 +306,7 @@ Removals (removed from original):
 - setCustomURI(bool)
 
 **stableQiVault** (`0x20658fdabd4c79f1b3666e5bccaef78b5059b109`, chain 8453)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 100.0% - 45 functions inherited
 Centroid audit status: pending_validation
 
@@ -315,7 +315,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **stableQiVault** (`0x491e3a7cda79af2bba5de48c58445644821d14de`, chain 8453)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 100.0% - 45 functions inherited
 Centroid audit status: pending_validation
 
@@ -324,7 +324,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **stableQiVault** (`0x654a31ba7d714cfcab19b17d0066171c1a292349`, chain 8453)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 100.0% - 45 functions inherited
 Centroid audit status: pending_validation
 
@@ -333,7 +333,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **stableQiVault** (`0x7333fd58d8d73a8e5fc1a16c8037ada4f580fa2b`, chain 8453)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 100.0% - 45 functions inherited
 Centroid audit status: pending_validation
 
@@ -342,7 +342,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **stableQiVault** (`0x806c0287f0e7124567c35d9a2a20b79c94179313`, chain 8453)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 100.0% - 45 functions inherited
 Centroid audit status: pending_validation
 
@@ -351,7 +351,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **stableQiVault** (`0x8d6cebd76f18e1558d4db88138e2defb3909fad6`, chain 8453)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 100.0% - 45 functions inherited
 Centroid audit status: pending_validation
 
@@ -360,7 +360,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **stableQiVault** (`0x950eceee9e7d7366a24fc9d2ed4c0c37d17a0fa9`, chain 42161)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 100.0% - 45 functions inherited
 Centroid audit status: pending_validation
 
@@ -369,7 +369,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **stableQiVault** (`0xa864956ff961ce62c266a8563b46577d3573372e`, chain 42161)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 100.0% - 45 functions inherited
 Centroid audit status: pending_validation
 
@@ -378,7 +378,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **stableQiVault** (`0xd371281896f2f5f7a2c65f49d23a2b6ecfd594f3`, chain 42161)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 100.0% - 45 functions inherited
 Centroid audit status: pending_validation
 
@@ -387,7 +387,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **stableQiVault** (`0xe47ca047cb7e6a9ade9405ca68077d63424f34ec`, chain 42161)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 100.0% - 45 functions inherited
 Centroid audit status: pending_validation
 
@@ -396,7 +396,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **stableQiVault** (`0x7f9dd991e8fd0cbb52cb8eb35dd35c474a9a7a70`, chain 59144)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 100.0% - 45 functions inherited
 Centroid audit status: pending_validation
 
@@ -405,7 +405,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **stableQiVault** (`0x8ab01c5ee3422099156ab151eecb83c095626599`, chain 59144)
-Origin: zerolend (`0x8ab01c5ee3422099156ab151eecb83c095626599`)
+Origin: zerolend (`0x8ab01c...626599`)
 Containment: 100.0% - 45 functions inherited
 Centroid audit status: pending_validation
 
@@ -588,16 +588,16 @@ Removals (removed from original): none
 
 - Coverage of address-book-owned deployed-live implementations: 0/127 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
-- Address-book implementation classification: 191 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Address-book implementation classification: 191 own, 18 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
 - Outside the address book: 1364 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 12
-- Confirmed-live implementations: 191 of 1555 unique; 1364 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 191 of 1573 unique; 1382 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 0/183
 - Verified + Unaudited implementations: 183
 - Verified by bytecode match: 0
-- Unverified implementations: 1372
-- Unique implementations: 1555
-- Raw deployments: 3199
+- Unverified implementations: 1390
+- Unique implementations: 1573
+- Raw deployments: 3217
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -816,7 +816,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (1372)
+### ❓ Unverified (1390)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -834,6 +834,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x283bcea12ac20fb9d48bdfad1fa856dd2922ce23` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2e95f69bcc3d3602c0628487651dbe4171788e6e` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-252595 | `0x3c82a9514327a93928108e9f00d89877f4beb6e3` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x3feacf904b152b1880bde8bf04ac9eb636fee4d8` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x471223c9b8bdc903736970759e1f42b30c02f5c6` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4ccf170d68dd4e55a3b104f91f9c7709beb8a0ed` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x53371f87ad6d20a0dbfb37f04a35f4d14065c342` | ❓ Unverified |
@@ -952,9 +953,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x19cb63ccbfac2f28b1fd79923f6adfc096e6ebb4` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x201b11c9a61fec1234ac7133f4749dbc83b3130a` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x4d4872fe2d6b8a6297e77510ffee4ee7c4b274bc` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | gnosis | n/a | `0x4f5af8bc14812fe5e4c7253ebf5335481e3a9e80` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x5a03716bd1f338d7849f5c9581ad5015ce0020b0` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-252631 | `0x87a1b336872b710f38c3d99d23624653b2f75088` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x92249429d2bec4bc8c8e5a873dcaaf7d3c918a4c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | gnosis | n/a | `0x9250ef6a6b3b9910ee6ce73bfa83cdcb3e5f989a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | gnosis | n/a | `0x981447aa21ed8bba120d12fdcd03f6b1207accfa` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0xab91c51b55f7dd7b34f2fd7217506fd5b632b2b9` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-252632 | `0xae09281c842ebfdb2e606f32bd5048183652b4d8` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0xdf42c06caf4f3ab68a5d603f9bd7f8bb070c991d` | ❓ Unverified |
@@ -1026,6 +1030,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x16f362dedc0c5e144ff10e15f57c1532d5dd1c35` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x1735ef0c3503d7c0f4bc2a293be2f1288ee58cdf` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x1788bfbe43377a262652276b078b5c961f04f45a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | polygon | n/a | `0x178f1c95c85fe7221c7a6a3d6f12b7da3253eeae` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x1798302f4e6234825255bd2ceeb7368d123beebf` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x179b21766825c8d538decc24e6bc3e3714d84a66` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x17e5a35591ffcb9b493bb5b1c789d659fb91b381` | ❓ Unverified |
@@ -1042,6 +1047,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x1a850d36d53b0b9de2fbb6aa7fed097b99a4e059` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x1c337cf175906911426b7b00834822d9cde31882` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x1c40aa231f1276c88159a30ef897c17544d50cf6` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | polygon | n/a | `0x1d8a6b7941ef1349c1b5e378783cd56b001ecfbc` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x1e4a758dfd81e1c6ecc05d81658253f9169908d6` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x1e8e71ade76619aae13ca3989f5bace2794906dd` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x1eb8e0143d04a867244f88df0408f6110ccdd247` | ❓ Unverified |
@@ -1498,6 +1504,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xc55fadaaeb966cf604a38b28580ac6f11d9b5914` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xc5cdaf505fe1cab017997707ba3c5215dd68887d` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xc5d8e6708177677eaa0fed48576ec593d8d34d6d` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | polygon | n/a | `0xc63c477465a792537d291adb32ed15c0095e106b` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xc69d9fa7d554907b4057141646a8e9817a8785df` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xc6aaff79466840cef5457efb32092eca87aa863b` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xc6edc2dec0596cae7f7a53377c0b6eec25ac5127` | ❓ Unverified |
@@ -1607,6 +1614,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xf05511dbc3afd8e9877713a540dfa51a76673483` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xf05f0e8760ce9a32df05549309ebef7ddb2190fe` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xf0638deac8889e04bcf96e5789d6c521902a86d6` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | polygon | n/a | `0xf0f5f7c21d181b7a1f9aa36ed46db3e620eda385` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xf14eba0d4609f2f80cf3b4cb0ef623209d8dc733` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xf22e10dc8c80f9d9c68d30f88f5d02199eec75af` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xf28e311c7aa0a961187469aabdad8540e9cd09e3` | ❓ Unverified |
@@ -1697,10 +1705,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0x10dcbee8afa39a847707e16aea5eb34c6b01aba9` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0x32d4d3e637cb3857793dff0ca6c2eb40c3ea2877` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0x4fc050d75dba5bf2d6ebd3667ffec731a45b1f35` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | moonbeam | n/a | `0x75c7b52899b435ea81e118b429481b0ecbc0104d` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0x7f9dd991e8fd0cbb52cb8eb35dd35c474a9a7a70` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0x80762c8b0dbf57324dcbeb867d59c4fc6ffdd960` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0x87a1b336872b710f38c3d99d23624653b2f75088` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0x8ab01c5ee3422099156ab151eecb83c095626599` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | moonbeam | n/a | `0xa79a51f70456047b29f674f593469d656eb9acc7` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0xadb54b62e7453e92618d5cc0d91da7e1c7859a76` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0xbd7aac363e8414086172040f471a0c6d43b406b8` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0xd371281896f2f5f7a2c65f49d23a2b6ecfd594f3` | ❓ Unverified |
@@ -1733,6 +1743,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0xf5c2b1b92456fe1b1208c63d8ea040d464f74a72` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | kava | unit-252707 | `0xb84df10966a5d7e1ab46d9276f55d57bd336afc7` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | kava | unit-252708 | `0xe43d58b8e376650440ff8b249226b1d8c95c3a83` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | mantle | n/a | `0x306558d079e260bfe32e8c6641688ef77dd024af` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x016e7de71b4e137e19ae39c3c2564e7c1fd0bf0f` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x020df65835113dcd8b6635bd999bcd13c88a2f71` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x02870adefd0e458bab32cb19fb5c0064b445d69a` | ❓ Unverified |
@@ -1796,6 +1807,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xdbea8a906f5561f57c71a52c4c3c21c7d9a27e87` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xdce97dad5335aecbfa7410ee87cea9f6411a632f` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xdd8eab7d0b12df6fafad27e14fea446e40b4d98e` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | n/a | `0xe816f03e31a75cabe64861064a6219ebe62c613d` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xe82671d20d0552a02fdf2c1c760c4b81dd788806` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xe98187c5fc8d38aeba2298791610ba33c60dc032` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xe98f48d60d42bbe4629373f6b332d66805253b4c` | ❓ Unverified |
@@ -2075,6 +2087,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x34a4033ce4da155f40d0015fe5bb405bc9a326a3` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x34df8ebdb63222038ac27fa2a0123856b8518eb9` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x5a03716bd1f338d7849f5c9581ad5015ce0020b0` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | n/a | `0x6c56271c688f16f50974ea0b79d80936af374ae1` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | n/a | `0xdd2730d4a2dfd43c8012838cfcce373ffc6a5595` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | n/a | `0xf32e759d5f1c63ed62042497d3a50f044ee0982b` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x043efb90e4fa1e3700778e48eaca4f99b91e0285` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x04b4d976bbde36e40cf8a0f5be1625871c55e47b` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x0757488f2e3cfd0dd24167b047c0dd22eae1dbf0` | ❓ Unverified |
@@ -2098,6 +2113,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x32762161ed1867ac55d5e16a65b105f0b365d245` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x3923b7bd38cf30435e764eca46957a65c9115129` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x3c3d0c15d3a2361a89476a2043b75e87489907e2` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | n/a | `0x3cf6a36876bdecadeab420aff93171439abf9ca2` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x3d8887d331d8f5822911646b039a3583c467af78` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x3f23e4c77a4ce555a5975c5929d9548ef4dac3aa` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x3f4f523acf811e713e7c34852b24e927d773a9e5` | ❓ Unverified |
@@ -2115,6 +2131,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x52a4691e510d03d3c21f33fad7faba39857444df` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x559b7bfc48a5274754b08819f75c5f27af53d53b` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x56563ab1740539983ff4d487ea3a3e47e23a19f9` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | n/a | `0x579de28071ebdc6d7384fa8a223747202b0c6817` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x58ed27e035cb186ba397a36053331de5dfef1f70` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x5ab6215ab8344c28b899efde93bee47b124200fb` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x5dfbf7c7dffb2b95d6eaa84474d24f04e2db59cb` | ❓ Unverified |
@@ -2179,6 +2196,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xf3b001d64c656e30a62fbaaca003b1336b4ce12a` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xf73f6a07d2b14ab01fb55bf9602616a231857db3` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xf8ac186555cbd5104c0e8c5bacf8bb779a3869f5` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | n/a | `0xff9dd10e052ab9323d59990bb00d778ae94cf2cf` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x0930665cb598e8868a9492e66453bb0ca18cf411` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x3027dd326fad0de29e97203cdc2233466cdb742c` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x60d133c666919b54a3254e0d3f14332cb783b733` | ❓ Unverified |
@@ -2338,7 +2356,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 167 |
 | upstream | 2 |
 | standard_library | 14 |
-| needs_review | 1372 |
+| needs_review | 1390 |
 
 ## Scope Matching Notes
 

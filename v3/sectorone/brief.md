@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
 
 ## Project Overview
 
 - Project: SectorOne (`sectorone`)
 - Website: [https://sectorone.xyz](https://sectorone.xyz)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
+- Generated: 2026-07-17T12:00:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: base, ethereum
-- Contract surface: 39 unique implementations (39 raw deployments)
+- Chains: base, ethereum, megaeth
+- Contract surface: 52 unique implementations (52 raw deployments)
 - Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $286,558.00
 - On-chain TVL (included contracts): n/a
@@ -36,7 +36,7 @@ This brief describes the observed EVM deployment and audit surface for SectorOne
 
 ### Architecture
 
-The pinned logic-topography run contains 5 contract row(s) across base, ethereum. Structural roles: 5 core. No upgradeable pattern was identified in these rows.
+The pinned logic-topography run contains 5 contract row(s) across base, ethereum, megaeth. Structural roles: 5 core. No upgradeable pattern was identified in these rows.
 
 ## Logic Topography
 
@@ -58,16 +58,16 @@ The pinned logic-topography run contains 5 contract row(s) across base, ethereum
 
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
-- Address-book implementation classification: 0 own, 24 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Address-book implementation classification: 0 own, 37 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
 - Outside the address book: 15 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 1 standard proxy/library)
 - Proxy deployments represented within implementation groups: 6
 - Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
 - All block-explorer-verified implementations audited (incl. non-live): 0/38
 - Verified + Unaudited implementations: 38
 - Verified by bytecode match: 0
-- Unverified implementations: 1
-- Unique implementations: 39
-- Raw deployments: 39
+- Unverified implementations: 14
+- Unique implementations: 52
+- Raw deployments: 52
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -141,13 +141,26 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (1)
+### ❓ Unverified (14)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-254386 | `0xf5e5eae03c5ccde623a19117c8b7f788c8812667` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | megaeth | n/a | `0x304baeb300dd71cd76f771343e74612c2237a320` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | megaeth | n/a | `0x3b35a0438b36e045d848c84949734e0f9e130355` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | megaeth | n/a | `0x3c510cbce8effad5dc9868647afd063688d85472` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | megaeth | n/a | `0x41c1624de6f461d2e2719cd76bd1fa8a5c36008c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | megaeth | n/a | `0x423cea630052f7715d782b079c57dc08784e1845` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | megaeth | n/a | `0x6814e09796664be213361bc8b30535d647492202` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | megaeth | n/a | `0x71238df08c3901d8e19f46ef9cb373b8229d7b58` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | megaeth | n/a | `0x771b228b641a30d5846ce638a20cadea153b13c8` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | megaeth | n/a | `0x8ca1937056f1a8612a7c6513926336927ab6915c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | megaeth | n/a | `0x958e7d2edaee6a0ccf928a40c386b655a7008243` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | megaeth | n/a | `0xc715c99789f2a37750ac917fca782c9e903d1434` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | megaeth | n/a | `0xdef5b8b7f467b3451393daf36afb1ad3ced42d5b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | megaeth | n/a | `0xfc3c8ad928a5b8bd6008d71ec1d64f17cd5bf04a` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -173,7 +186,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 17 |
 | upstream | 0 |
 | standard_library | 2 |
-| needs_review | 20 |
+| needs_review | 33 |
 
 ## Scope Matching Notes
 

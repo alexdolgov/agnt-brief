@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
 
 ## Project Overview
 
 - Project: Jarvis Network (`jarvis-network`)
 - Website: [https://jarvis.money/](https://jarvis.money/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
+- Generated: 2026-07-17T12:00:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, avalanche, base, bsc, ethereum, gnosis, optimism, polygon
-- Contract surface: 112 unique implementations (112 raw deployments)
+- Contract surface: 117 unique implementations (117 raw deployments)
 - Coverage basis: 1/2 confirmed own live verified implementations (50.0%); conservative 50.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $266,458.34
 - On-chain TVL (included contracts): n/a
@@ -113,16 +113,16 @@ The pinned logic-topography run contains 2 contract row(s) across arbitrum, aval
 
 - Coverage of address-book-owned deployed-live implementations: 1/2 (50.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
-- Address-book implementation classification: 48 own, 6 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Address-book implementation classification: 48 own, 11 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
 - Outside the address book: 58 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Confirmed-live implementations: 48 of 112 unique; 64 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 48 of 117 unique; 69 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 1/60
 - Verified + Unaudited implementations: 59
 - Verified by bytecode match: 0
-- Unverified implementations: 52
-- Unique implementations: 112
-- Raw deployments: 112
+- Unverified implementations: 57
+- Unique implementations: 117
+- Raw deployments: 117
 - Audits discovered: 6 (6 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -221,7 +221,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (52)
+### ❓ Unverified (57)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -238,6 +238,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-243308 | `0x06440a2da257233790b5355322dad82c10f0389a` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-243309 | `0x162ed91cb79066b4fe7993c920e2e04f67cf768e` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-243310 | `0x166e4b3ec3f81f32f0863b9cd63621181d6bfed5` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | polygon | n/a | `0x2051c21d4b5a62817c4f4455a1b23ec4f06c9ea8` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-243311 | `0x25e9f976f5020f6bf2d417b231e5f414b7700e31` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-243312 | `0x30e97dc680ee97ff65b5188d34fb4ea20b38d710` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-243313 | `0x36572797cc569a74731e0738ef56e3b8ce3f309c` | ❓ Unverified |
@@ -258,8 +259,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-243328 | `0xbe813590e1b191120f5df3343368f8a2f579514c` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-243329 | `0xc8442072cf1e131506eac7df33ea8910e1d5cfdd` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-243330 | `0xe292178333fc7424211795895865adac05baf3be` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | n/a | `0x1e2de5e3f7e8383e61ad06fe17a6de955ac1921c` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-243345 | `0x2884c238e0a97fdc7aceff81c9b34d679ff6a2e8` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-243346 | `0x336b62902e442477d5bac5e39093b10771aaa27a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | n/a | `0x49bc51d8c140b7f64577ba01f5604014450645eb` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-243347 | `0x67aefc812ec0a83a327c05d6e7913c35b48bfb94` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-243348 | `0x73ad0f49345467025fcda33cadcfd6fb6cc5ad07` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-243349 | `0x777b2839832982b35213063d850848369390ee16` | ❓ Unverified |
@@ -273,7 +276,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-243333 | `0x288ad9a30c92ad369c839f3f781d63afe79a1c5b` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-243334 | `0x2c7941a0fe9c52223b229747322af16160161c98` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | arbitrum | unit-243335 | `0x6aa395f06986ea4efe0a4630c7865c1eb08d5e7e` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | n/a | `0x906b6f2dee9f9decdf80020732dbf98f59f70f5b` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-243336 | `0x987eb35684b75d24fbe7a35af607a3414782bca0` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | n/a | `0xb9192d5f9967e83d3349c63692fafb21a3391a06` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-243337 | `0xbc2486e4a23af33536b2ea6605b8d86817dd21c7` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-243338 | `0xc87c638c0e1cbca2e37ac256b6065af0fac3b672` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-243339 | `0xd3dfa821d57cfae5da5acb7188f378e95200f74b` | ❓ Unverified |
@@ -372,7 +377,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 60 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 52 |
+| needs_review | 57 |
 
 ## Scope Matching Notes
 

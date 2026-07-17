@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
 
 ## Project Overview
 
 - Project: xDAI Stake Bridge (`xdai-stake-bridge`)
 - Website: [https://www.gnosis.io/](https://www.gnosis.io/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
+- Generated: 2026-07-17T12:00:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum, gnosis, goerli, sepolia
-- Contract surface: 21 unique implementations (21 raw deployments)
+- Contract surface: 25 unique implementations (25 raw deployments)
 - Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - DeFi Llama TVL: $238,595,826.49
 - On-chain TVL (included contracts): n/a
@@ -76,16 +76,16 @@ The activated project remains an explicit cohort member with an empty normalized
 
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
-- Address-book implementation classification: 11 own, 7 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Address-book implementation classification: 11 own, 11 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
 - Outside the address book: 3 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Confirmed-live implementations: 11 of 21 unique; 10 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 11 of 25 unique; 14 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 0/3
 - Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
-- Unverified implementations: 18
-- Unique implementations: 21
-- Raw deployments: 21
+- Unverified implementations: 22
+- Unique implementations: 25
+- Raw deployments: 25
 - Audits discovered: 18 (18 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -124,7 +124,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (18)
+### ❓ Unverified (22)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -139,10 +139,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-262216 | `0x11fe4b6ae13d2a6055c8d9cf65c55bac32b5d844` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-262217 | `0x3ea1a9f92a99bc8e820541e7bed5d1f2419ffe59` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-262218 | `0xd8134205b0328f5676aaefb3b2a0dc15f4029d8c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | gnosis | n/a | `0x481c034c6d9441db23ea48de68bcae812c5d39ba` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-262206 | `0x5c183c8a49aba6e31049997a56d75600e27ff8c9` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-262207 | `0x670daeaf0f1a5e336090504c68179670b5059088` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | gnosis | n/a | `0x7301cfa0e1756b71869e93d4e4dca5c7d0eb0aa6` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-262208 | `0xaf204776c7245bf4147c2612bf6e5972ee483701` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | gnosis | n/a | `0xb289f0e6fbdff8eee340498a56e1787b303f1b6d` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-262209 | `0xd499b51fcfc66bd31248ef4b28d656d67e591a94` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | gnosis | n/a | `0xe30269bc61e677cd60ad163a221e464b7022fbf5` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-262210 | `0xe91d153e0b41518a2ce8dd3d7944fa863463a97d` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-262211 | `0x138190e157d7604b8f89637aa10508abd4c673b2` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-262212 | `0x180ff98e734415ecd35fac3d32940e1b45fad0a2` | ❓ Unverified |
@@ -495,7 +499,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 3 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 18 |
+| needs_review | 22 |
 
 ## Scope Matching Notes
 

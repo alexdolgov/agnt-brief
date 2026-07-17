@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
 
 ## Project Overview
 
 - Project: Moola Market (`moola-market`)
 - Website: [https://moola.market](https://moola.market)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
+- Generated: 2026-07-17T12:00:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: celo
-- Contract surface: 59 unique implementations (98 raw deployments)
+- Contract surface: 63 unique implementations (102 raw deployments)
 - Coverage basis: 6/15 confirmed own live verified implementations (40.0%); conservative 40.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,139,898.66
 - On-chain TVL (included contracts): n/a
@@ -80,16 +80,16 @@ The pinned logic-topography run contains 15 contract row(s) across celo. Structu
 
 - Coverage of address-book-owned deployed-live implementations: 6/15 (40.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
-- Address-book implementation classification: 20 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Address-book implementation classification: 20 own, 4 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
 - Outside the address book: 39 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Confirmed-live implementations: 20 of 59 unique; 39 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 20 of 63 unique; 43 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 6/40
 - Verified + Unaudited implementations: 34
 - Verified by bytecode match: 0
-- Unverified implementations: 19
-- Unique implementations: 59
-- Raw deployments: 98
+- Unverified implementations: 23
+- Unique implementations: 63
+- Raw deployments: 102
 - Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): n/a
@@ -169,7 +169,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (19)
+### ❓ Unverified (23)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -181,6 +181,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x3abdfb1b91b25c58f80ef6df88d6d6043ea2e104` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x3c06fb2f5ab65b0e35f91073d88afe2b017d04b8` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x3dc0fcd3aa6ca66a434086180e2604b9a9cfe781` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | celo | n/a | `0x43d067ed784d9dd2ffeda73775e2cc4c560103a1` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | celo | n/a | `0x568547688121aa69bdeb8aeb662c321c5d7b98d0` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x5e160ad1fd536e613d49787d25e2d6d06a00e72a` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x71b7eccab9b239a33ba428b096a8c33011a5353c` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x7e7d2f9ef635ec83df06838ea4dc8053055a9f29` | ❓ Unverified |
@@ -188,6 +190,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-247953 | `0x866fb3a7fb11d0defe3d0828417b5b948d36bac7` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x8b47a13c675f936493ebaf6a7422e8539ca18933` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-247955 | `0x923182024d0fa5dee59e3c3db5e2eed23728d3c3` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | celo | n/a | `0x928f63a83217e427a84504950206834cbda4aa65` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | celo | n/a | `0x970b12522ca9b4054807a2c5b736149a5be6f670` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xa4659c76ee0567242ce09f906bab7c83e92c0e3f` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xb65b6a6a6f78e4daabf259c756567ae346699687` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xc794105e26ae955829be2f10d76eb13630d0b454` | ❓ Unverified |
@@ -346,7 +350,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 40 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 19 |
+| needs_review | 23 |
 
 ## Scope Matching Notes
 

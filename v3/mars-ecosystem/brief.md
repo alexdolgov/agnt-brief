@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
 
 ## Project Overview
 
 - Project: Mars Ecosystem (`mars-ecosystem`)
 - Website: [https://marsecosystem.com/home](https://marsecosystem.com/home)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
+- Generated: 2026-07-17T12:00:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: bsc
-- Contract surface: 15 unique implementations (16 raw deployments)
+- Contract surface: 22 unique implementations (23 raw deployments)
 - Coverage basis: 0/10 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $233,545.47
 - On-chain TVL (included contracts): n/a
@@ -76,16 +76,16 @@ The pinned logic-topography run contains 11 contract row(s) across bsc. Structur
 
 - Coverage of address-book-owned deployed-live implementations: 0/10 (0.0%)
 - Coverage assessment: partial (medium confidence) — Coverage is calculated only over confirmed own address-book implementations; review inventory is reported separately and included in the conservative percentage where live and verified.
-- Address-book implementation classification: 11 own, 0 exact-address-book context/dependencies excluded, 1 exact-address-book entries needing review
+- Address-book implementation classification: 11 own, 7 exact-address-book context/dependencies excluded, 1 exact-address-book entries needing review
 - Outside the address book: 3 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Confirmed-live implementations: 11 of 15 unique; 4 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 11 of 22 unique; 11 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 0/14
 - Verified + Unaudited implementations: 14
 - Verified by bytecode match: 0
-- Unverified implementations: 1
-- Unique implementations: 15
-- Raw deployments: 16
+- Unverified implementations: 8
+- Unique implementations: 22
+- Raw deployments: 23
 - Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - Active bug bounty: Immunefi ([program](https://immunefi.com/bug-bounty/marsecosystem/information))
@@ -136,12 +136,19 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (1)
+### ❓ Unverified (8)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x22d8d50454203bd5a41b49ef515891f1ad9f3e53` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x29f4fd982ee7aee8fd1f1da76585bf99e7d4740d` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x3a003e18124cfff65c14cb111893aff4e89b3814` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x4639d936f0a716f234ead073362c5cb272cc4b70` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x56b91ebaeb450ce27a3c4a41d9bf16162dd63ea2` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0xa53b575f9ec7126ba7b43c8c3171fe4685f2f8b0` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0xb7881f5142245531c3fb938a37b5d2489efd2c01` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-246066 | `0xde03ed82e611e9ee6fe52d50bb40fdc00d89ba6b` | ❓ Unverified |
 
 ## Audit Inventory
@@ -190,7 +197,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 14 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 1 |
+| needs_review | 8 |
 
 ## Scope Matching Notes
 

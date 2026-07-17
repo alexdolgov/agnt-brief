@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
 
 ## Project Overview
 
 - Project: ether.fi Stake (`ether-fi`)
 - Website: [https://www.ether.fi/refer/04bb2542](https://www.ether.fi/refer/04bb2542)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
+- Generated: 2026-07-17T12:00:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, avalanche, base, berachain, blast, bsc, ethereum, hyperliquid, ink, katana, linea, mode, monad, optimism, scroll, sonic, swellchain, unichain, zksync-era
-- Contract surface: 112 unique implementations (112 raw deployments)
+- Contract surface: 114 unique implementations (114 raw deployments)
 - Coverage basis: 0/106 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -173,16 +173,16 @@ The pinned logic-topography run contains 6 contract row(s) across arbitrum, aval
 
 - Coverage of address-book-owned deployed-live implementations: 0/106 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
-- Address-book implementation classification: 109 own, 3 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Address-book implementation classification: 109 own, 5 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
 - Outside the address book: 0 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 62
-- Confirmed-live implementations: 109 of 112 unique; 3 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 109 of 114 unique; 5 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 0/106
 - Verified + Unaudited implementations: 106
 - Verified by bytecode match: 0
-- Unverified implementations: 6
-- Unique implementations: 112
-- Raw deployments: 112
+- Unverified implementations: 8
+- Unique implementations: 114
+- Raw deployments: 114
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -324,12 +324,14 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (6)
+### ❓ Unverified (8)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x0ef8fa4760db8f5cd4d993f3e3416f30f942d705` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x57aaf0004c716388b21795431cd7d5f9d3bb6a41` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-385057 | `0x6599861e55abd28b91dd9d86a826ec0cc8d72c2c` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-385058 | `0x7623e9dc0da6ff821ddb9ebaba794054e078f8c4` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-385060 | `0x7b5ae07e2af1c861bcc4736d23f5f66a61e0ca5e` | ❓ Unverified |
@@ -361,7 +363,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 112 |
+| needs_review | 114 |
 
 ## Scope Matching Notes
 

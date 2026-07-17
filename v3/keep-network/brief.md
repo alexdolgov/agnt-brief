@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
 
 ## Project Overview
 
 - Project: KEEP Network (`keep-network`)
 - Website: [https://app.threshold.network/](https://app.threshold.network/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
+- Generated: 2026-07-17T12:00:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: arbitrum, base, ethereum, optimism, polygon
-- Contract surface: 497 unique implementations (999 raw deployments)
+- Chains: arbitrum, arbitrum-sepolia, base, base-sepolia, ethereum, optimism, optimism-sepolia, polygon
+- Contract surface: 503 unique implementations (1005 raw deployments)
 - Coverage basis: 4/25 confirmed own live verified implementations (16.0%); conservative 16.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $982,073.51
 - On-chain TVL (included contracts): n/a
@@ -31,7 +31,7 @@ This brief describes the observed EVM deployment and audit surface for KEEP Netw
 
 ### Architecture
 
-The pinned logic-topography run contains 25 contract row(s) across arbitrum, base, ethereum, optimism, polygon. Structural roles: 11 infra, 8 supporting, 6 core. 16 row(s) use upgradeable patterns.
+The pinned logic-topography run contains 25 contract row(s) across arbitrum, arbitrum-sepolia, base, base-sepolia, ethereum, optimism, optimism-sepolia, polygon. Structural roles: 11 infra, 8 supporting, 6 core. 16 row(s) use upgradeable patterns.
 
 ## Logic Topography
 
@@ -107,16 +107,16 @@ The pinned logic-topography run contains 25 contract row(s) across arbitrum, bas
 
 - Coverage of address-book-owned deployed-live implementations: 4/25 (16.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
-- Address-book implementation classification: 39 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Address-book implementation classification: 39 own, 6 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
 - Outside the address book: 458 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 1 standard proxy/library)
 - Proxy deployments represented within implementation groups: 18
-- Confirmed-live implementations: 39 of 497 unique; 458 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 39 of 503 unique; 464 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 4/111
 - Verified + Unaudited implementations: 107
 - Verified by bytecode match: 0
-- Unverified implementations: 386
-- Unique implementations: 497
-- Raw deployments: 999
+- Unverified implementations: 392
+- Unique implementations: 503
+- Raw deployments: 1005
 - Audits discovered: 18 (18 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 6
 - ASD (verified + unaudited TVL): n/a
@@ -270,7 +270,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (386)
+### ❓ Unverified (392)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -662,6 +662,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-244010 | `0x1c8d7b744b474c080faadd5bf9ad965be4258f9e` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x68c0dc48de00ea86d958474d90d8a4ab807214a4` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x75a6e4a7c8faa162192fad6c1f7a6d48992c619a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base-sepolia | n/a | `0xdebd9aa9bc4845c7cd2d9a997f82a2daea540bd5` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-sepolia | n/a | `0xb2fec598a9374078bb639f3d70555fc4389b7a78` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-sepolia | n/a | `0xb8f31a249bcb45267d06b9e51252c4793b917cd0` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-sepolia | n/a | `0xc3d46e0266d95215589de639cc4e93b79f88fc6c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | optimism-sepolia | n/a | `0x5fb63d9e076a314023f2d1ab5dbfd7045c281eba` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | optimism-sepolia | n/a | `0x9a82be743f0120fa24893b1631b6b2817fd94b1d` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -858,7 +864,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 107 |
 | upstream | 0 |
 | standard_library | 4 |
-| needs_review | 386 |
+| needs_review | 392 |
 
 ## Scope Matching Notes
 

@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
 
 ## Project Overview
 
 - Project: Multipli.fi (`multipli.fi`)
 - Website: [https://app.multipli.fi](https://app.multipli.fi)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
+- Generated: 2026-07-17T12:00:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: arbitrum, avalanche, base, bsc, ethereum
-- Contract surface: 25 unique implementations (25 raw deployments)
+- Chains: arbitrum, avalanche, base, bsc, ethereum, ink
+- Contract surface: 31 unique implementations (31 raw deployments)
 - Coverage basis: 0/18 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $55,122,019.27
 - On-chain TVL (included contracts): n/a
@@ -31,7 +31,7 @@ This brief describes the observed EVM deployment and audit surface for Multipli.
 
 ### Architecture
 
-The pinned logic-topography run contains 18 contract row(s) across arbitrum, ethereum. Structural roles: 14 core, 4 supporting. No upgradeable pattern was identified in these rows.
+The pinned logic-topography run contains 18 contract row(s) across arbitrum, ethereum, ink. Structural roles: 14 core, 4 supporting. No upgradeable pattern was identified in these rows.
 
 ## Logic Topography
 
@@ -49,7 +49,7 @@ The pinned logic-topography run contains 18 contract row(s) across arbitrum, eth
 ### Forked Contracts
 
 **DssProxyActions** (`0x92a4bb65fbe7a4b516f52a0e7550982f650ce7c8`, chain 1)
-Origin: usdd (`0x777684f6425d095e9166f5f694f50e48a16bcb25`)
+Origin: usdd (`0x777684...6bcb25`)
 Containment: 73.7% - 28 functions inherited
 Centroid audit status: pending_validation
 
@@ -101,16 +101,16 @@ Removals (removed from original):
 
 - Coverage of address-book-owned deployed-live implementations: 0/18 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
-- Address-book implementation classification: 18 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Address-book implementation classification: 18 own, 6 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
 - Outside the address book: 7 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 1 standard proxy/library)
 - Proxy deployments represented within implementation groups: 2
-- Confirmed-live implementations: 18 of 25 unique; 7 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 18 of 31 unique; 13 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 0/25
 - Verified + Unaudited implementations: 25
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 25
-- Raw deployments: 25
+- Unverified implementations: 6
+- Unique implementations: 31
+- Raw deployments: 31
 - Audits discovered: 9 (9 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -171,11 +171,18 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (6)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x7815e8e9bcef8708a799ee3802586298e5afa611` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x8fcd23142047a3073ed332a0ed07d1e8d2bd5177` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xa596e0888b3e1d12f3ee174128c0d9990027ba08` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xbc22e8c15bc476ef4fd0124c5a03b23607e30d2c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ink | n/a | `0x2a66bb2da3ad1c854e79307f64b862decd860d4c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ink | n/a | `0xd74fb32112b1ef5b4c428fead8da8d85a0019009` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -313,7 +320,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 23 |
 | upstream | 0 |
 | standard_library | 2 |
-| needs_review | 0 |
+| needs_review | 6 |
 
 ## Scope Matching Notes
 

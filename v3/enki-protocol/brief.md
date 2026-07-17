@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
 
 ## Project Overview
 
 - Project: ENKI Protocol (`enki-protocol`)
 - Website: [https://www.enkixyz.com/mint](https://www.enkixyz.com/mint)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
+- Generated: 2026-07-17T12:00:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum, metis
-- Contract surface: 20 unique implementations (20 raw deployments)
+- Contract surface: 22 unique implementations (22 raw deployments)
 - Coverage basis: 0/3 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $235,206.27
 - On-chain TVL (included contracts): n/a
@@ -72,16 +72,16 @@ The pinned logic-topography run contains 3 contract row(s) across ethereum, meti
 
 - Coverage of address-book-owned deployed-live implementations: 0/3 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
-- Address-book implementation classification: 7 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Address-book implementation classification: 7 own, 2 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
 - Outside the address book: 13 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Confirmed-live implementations: 7 of 20 unique; 13 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 7 of 22 unique; 15 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 0/14
 - Verified + Unaudited implementations: 14
 - Verified by bytecode match: 0
-- Unverified implementations: 6
-- Unique implementations: 20
-- Raw deployments: 20
+- Unverified implementations: 8
+- Unique implementations: 22
+- Raw deployments: 22
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -131,12 +131,14 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (6)
+### ❓ Unverified (8)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xeed9de312f438692570b103b580a59bea80aad65` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xf1a376a969532337912d9e3d9b16ef9650cd610d` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | metis | unit-237209 | `0x28254967e34db48eb548ec078288cd69b5f63ea5` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | metis | unit-237210 | `0x79f3522a1b56f22a6549e42f9cfa92ef5feb81e8` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | metis | unit-237211 | `0x810ef8aa1326fb1c5ce57cd79d549cf9b2cc32af` | ❓ Unverified |
@@ -178,7 +180,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 12 |
 | upstream | 0 |
 | standard_library | 2 |
-| needs_review | 6 |
+| needs_review | 8 |
 
 ## Scope Matching Notes
 

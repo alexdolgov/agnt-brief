@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
 
 ## Project Overview
 
 - Project: Antfarm finance (`antfarm-finance`)
 - Website: [https://antfarm.finance](https://antfarm.finance)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
+- Generated: 2026-07-17T12:00:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, avalanche, ethereum, polygon, polygon-zkevm
-- Contract surface: 21 unique implementations (21 raw deployments)
+- Contract surface: 22 unique implementations (22 raw deployments)
 - Coverage basis: 0/8 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $217,707.92
 - On-chain TVL (included contracts): n/a
@@ -82,16 +82,16 @@ The pinned logic-topography run contains 9 contract row(s) across arbitrum, aval
 
 - Coverage of address-book-owned deployed-live implementations: 0/8 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
-- Address-book implementation classification: 17 own, 2 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Address-book implementation classification: 17 own, 3 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
 - Outside the address book: 2 discovered implementations shown in the inventory but excluded from coverage (2 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 1
-- Confirmed-live implementations: 17 of 21 unique; 4 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 17 of 22 unique; 5 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 0/11
 - Verified + Unaudited implementations: 11
 - Verified by bytecode match: 0
-- Unverified implementations: 10
-- Unique implementations: 21
-- Raw deployments: 21
+- Unverified implementations: 11
+- Unique implementations: 22
+- Raw deployments: 22
 - Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -138,7 +138,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (10)
+### ❓ Unverified (11)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -150,6 +150,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226718 | `0x9ff19be8fa1f8cf8a017051daa5dfb491ac2ccee` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226719 | `0xd63123527551f037faac74bf5fda5b71569cf5af` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226721 | `0xe48aee124f9933661d4dd3eb265fa9e153e32cbe` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | polygon | n/a | `0x8af94528fbe3c4c148523e7aad48bcebcc0a71d7` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-226726 | `0x8af94528fbe3c4c148523e7aad48bcebcc0a71d7` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-226727 | `0xd999fb911d899842820fa96f2b7cdce71a4f0fd5` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-226728 | `0xdc0bd72cdef330786bf6f331a6aca539c0bb4eab` | ❓ Unverified |
@@ -197,7 +198,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 11 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 10 |
+| needs_review | 11 |
 
 ## Scope Matching Notes
 

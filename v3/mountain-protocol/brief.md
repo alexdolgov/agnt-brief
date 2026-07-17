@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
 
 ## Project Overview
 
 - Project: Mountain Protocol (`mountain-protocol`)
 - Website: [https://mountainprotocol.com](https://mountainprotocol.com)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
+- Generated: 2026-07-17T12:00:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, avalanche, base, celo, ethereum, optimism, polygon, zksync-era
-- Contract surface: 17 unique implementations (17 raw deployments)
+- Contract surface: 18 unique implementations (18 raw deployments)
 - Coverage basis: 0/5 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,400,998.21
 - On-chain TVL (included contracts): n/a
@@ -81,16 +81,16 @@ The pinned logic-topography run contains 5 contract row(s) across arbitrum, aval
 
 - Coverage of address-book-owned deployed-live implementations: 0/5 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
-- Address-book implementation classification: 16 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Address-book implementation classification: 16 own, 1 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
 - Outside the address book: 1 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 5
-- Confirmed-live implementations: 16 of 17 unique; 1 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 16 of 18 unique; 2 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 0/5
 - Verified + Unaudited implementations: 5
 - Verified by bytecode match: 0
-- Unverified implementations: 12
-- Unique implementations: 17
-- Raw deployments: 17
+- Unverified implementations: 13
+- Unique implementations: 18
+- Raw deployments: 18
 - Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -131,12 +131,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (12)
+### ❓ Unverified (13)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x313d5b7efdcd84e8a52d425282b03860e9354d74` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248380 | `0x57f5e098cad7a3d1eed53991d4d66c45c9af7812` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-248381 | `0x57f5e098cad7a3d1eed53991d4d66c45c9af7812` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-248382 | `0x57f5e098cad7a3d1eed53991d4d66c45c9af7812` | ❓ Unverified |
@@ -192,7 +193,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 5 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 12 |
+| needs_review | 13 |
 
 ## Scope Matching Notes
 

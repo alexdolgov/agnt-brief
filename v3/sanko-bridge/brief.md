@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
 
 ## Project Overview
 
 - Project: Sanko Bridge (`sanko-bridge`)
 - Website: [https://sanko.xyz/](https://sanko.xyz/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
+- Generated: 2026-07-17T12:00:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: arbitrum
-- Contract surface: 120 unique implementations (120 raw deployments)
+- Chains: arbitrum, arbitrum-sepolia, chain-1337, chain-421613
+- Contract surface: 128 unique implementations (128 raw deployments)
 - Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $1,699,974.85
 - On-chain TVL (included contracts): n/a
@@ -57,16 +57,16 @@ The activated project remains an explicit cohort member with an empty normalized
 
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
-- Address-book implementation classification: 0 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Address-book implementation classification: 0 own, 8 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
 - Outside the address book: 120 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
 - Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
 - All block-explorer-verified implementations audited (incl. non-live): 0/2
 - Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
-- Unverified implementations: 118
-- Unique implementations: 120
-- Raw deployments: 120
+- Unverified implementations: 126
+- Unique implementations: 128
+- Raw deployments: 128
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -104,12 +104,15 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (118)
+### ❓ Unverified (126)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | chain-1337 | n/a | `0x3df948c956e14175f43670407d5796b95bb219d8` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | chain-1337 | n/a | `0x65a59d67da8e710ef9a01eca37f83f84aedec416` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | chain-1337 | n/a | `0xe7362d0787b51d8c72d504803e5b1d6dcda89540` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-163821 | `0x0484a87b144745a2e5b7c359552119b6ea2917a9` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-163822 | `0x096760f208390250649e3e8763348e783aef5562` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-163823 | `0x09e9222e96e7b4ae2a407b98d48e330053351eee` | ❓ Unverified |
@@ -228,6 +231,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-163938 | `0xf9f2e89c8347bd96742cc07095dee490e64301d6` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-163939 | `0xfb209827c58283535b744575e11953dcc4bead88` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-163940 | `0xff4a24b22f94979e9ba5f3eb35838aa814bad6f1` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | chain-421613 | n/a | `0x6bebc4925716945d46f0ec336d5c2564f419682c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | chain-421613 | n/a | `0xaf4159a80b6cc41ed517db1c453d1ef5c2e4db72` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-sepolia | n/a | `0x2e53e790dda89a22e3c6ee330ac059c05d62bea6` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-sepolia | n/a | `0x8bbf7d278069b1a7337d607906f31e7fac0d9cb7` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-sepolia | n/a | `0xa9f2c89715a571f22be2421d310978cc8b6bdc2f` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -253,7 +261,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 2 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 118 |
+| needs_review | 126 |
 
 ## Scope Matching Notes
 

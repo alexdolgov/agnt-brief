@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
 
 ## Project Overview
 
 - Project: Trevee Earn (`trevee-earn`)
 - Website: [https://rings.money/](https://rings.money/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
+- Generated: 2026-07-17T12:00:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, ethereum, optimism, plasma, polygon, sonic
-- Contract surface: 114 unique implementations (187 raw deployments)
+- Contract surface: 120 unique implementations (193 raw deployments)
 - Coverage basis: 0/40 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $962,180.56
 - On-chain TVL (included contracts): n/a
@@ -49,7 +49,7 @@ The pinned logic-topography run contains 49 contract row(s) across arbitrum, eth
 ### Forked Contracts
 
 **LayerZeroTeller** (`0x31a5a9f60dc3d62fa5168352caf0ee05aa18f5b8`, chain 1)
-Origin: veda (`0x31a5a9f60dc3d62fa5168352caf0ee05aa18f5b8`)
+Origin: veda (`0x31a5a9...18f5b8`)
 Containment: 100.0% - 27 functions inherited
 Centroid audit status: pending_validation
 
@@ -58,7 +58,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **TellerWithMultiAssetSupport** (`0x49acebf8f0f79e1ecb0fd47d684dadec81cc6562`, chain 146)
-Origin: trevee-earn (`0x5e39021ae7d3f6267dc7995bb5dd15669060dae0`)
+Origin: trevee-earn (`0x5e3902...60dae0`)
 Containment: 100.0% - 16 functions inherited
 Centroid audit status: pending_validation
 
@@ -67,7 +67,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **TellerWithMultiAssetSupport** (`0x5e39021ae7d3f6267dc7995bb5dd15669060dae0`, chain 146)
-Origin: veda (`0x31a5a9f60dc3d62fa5168352caf0ee05aa18f5b8`)
+Origin: veda (`0x31a5a9...18f5b8`)
 Containment: 59.3% - 16 functions inherited
 Centroid audit status: pending_validation
 
@@ -87,7 +87,7 @@ Removals (removed from original):
 - stopMessagesToChain(uint32)
 
 **TellerWithMultiAssetSupport** (`0x825254012306bb410b550631895fe58ddce1f4a9`, chain 146)
-Origin: trevee-earn (`0x5e39021ae7d3f6267dc7995bb5dd15669060dae0`)
+Origin: trevee-earn (`0x5e3902...60dae0`)
 Containment: 100.0% - 16 functions inherited
 Centroid audit status: pending_validation
 
@@ -96,7 +96,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **VotingEscrow** (`0x0966cae7338518961c2d35493d3eb481a75bb86b`, chain 146)
-Origin: stable-jack (`0x1ec2b9a77a7226acd457954820197f89b3e3a578`)
+Origin: stable-jack (`0x1ec2b9...e3a578`)
 Containment: 100.0% - 21 functions inherited
 Centroid audit status: pending_validation
 
@@ -105,7 +105,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **VotingEscrow** (`0x1ec2b9a77a7226acd457954820197f89b3e3a578`, chain 146)
-Origin: stable-jack (`0x1ec2b9a77a7226acd457954820197f89b3e3a578`)
+Origin: stable-jack (`0x1ec2b9...e3a578`)
 Containment: 100.0% - 21 functions inherited
 Centroid audit status: pending_validation
 
@@ -114,7 +114,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **VotingEscrow** (`0x7585d9c32db1528ceae4770fd1d01b888f5afa9e`, chain 146)
-Origin: stable-jack (`0x1ec2b9a77a7226acd457954820197f89b3e3a578`)
+Origin: stable-jack (`0x1ec2b9...e3a578`)
 Containment: 100.0% - 21 functions inherited
 Centroid audit status: pending_validation
 
@@ -202,16 +202,16 @@ Removals (removed from original): none
 
 - Coverage of address-book-owned deployed-live implementations: 0/40 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
-- Address-book implementation classification: 66 own, 4 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Address-book implementation classification: 66 own, 10 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
 - Outside the address book: 44 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 47
-- Confirmed-live implementations: 66 of 114 unique; 48 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 66 of 120 unique; 54 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 0/81
 - Verified + Unaudited implementations: 81
 - Verified by bytecode match: 0
-- Unverified implementations: 33
-- Unique implementations: 114
-- Raw deployments: 187
+- Unverified implementations: 39
+- Unique implementations: 120
+- Raw deployments: 193
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -328,7 +328,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (33)
+### ❓ Unverified (39)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -351,9 +351,15 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-259418 | `0x3682518b529e4404fb05250f9ad590c3218e5f9f` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-259421 | `0xa6ed52eb3e39891ce5029817cdb5eac97a2834b3` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-259422 | `0xe0be968a0d6bba03720dfdb2f3d4b3ed0083b4c7` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sonic | n/a | `0x0337ca0a9e62560f1c3934a885b42c5b3a8ed680` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sonic | n/a | `0x4772ca88a5bfa9d196472b208566fee948d272b3` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-259431 | `0x488000e6a0cfc32dcb3f37115e759af50f55b48b` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x8f1b9c1fd67136d525e14d96efb3887a33f16250` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sonic | n/a | `0xa04a36614e4c1eb8cc0137d6d34eaac963167828` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-259442 | `0xace7defe3b94554f0704d8d00f69f273a0cff079` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sonic | n/a | `0xb031dedb0689059855f45b479bd29c0f964ec97b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sonic | n/a | `0xc20824bed473525ba640f6c2ae5d89469636ddcb` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sonic | n/a | `0xd672bce6332e42b9185a83a7818f231e0444917d` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0xc199215cd8704738e4ece4c04821546c8f95fb16` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-259450 | `0x04c70abaa9d3eb14f090094edc72d5581dc65a22` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-259451 | `0x089154a7e4c562d5998ab3d7ca57b504a8912482` | ❓ Unverified |
@@ -429,7 +435,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 73 |
 | upstream | 7 |
 | standard_library | 1 |
-| needs_review | 33 |
+| needs_review | 39 |
 
 ## Scope Matching Notes
 

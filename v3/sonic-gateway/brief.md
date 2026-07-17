@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
 
 ## Project Overview
 
 - Project: Sonic Gateway (`sonic-gateway`)
 - Website: [https://gateway.soniclabs.com/ethereum/sonic/s](https://gateway.soniclabs.com/ethereum/sonic/s)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
+- Generated: 2026-07-17T12:00:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum, sonic
-- Contract surface: 4 unique implementations (4 raw deployments)
+- Contract surface: 20 unique implementations (20 raw deployments)
 - Coverage basis: 0/3 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $35,594,379.80
 - On-chain TVL (included contracts): n/a
@@ -69,16 +69,16 @@ The pinned logic-topography run contains 3 contract row(s) across sonic. Structu
 
 - Coverage of address-book-owned deployed-live implementations: 0/3 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
-- Address-book implementation classification: 4 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Address-book implementation classification: 4 own, 16 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
 - Outside the address book: 0 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 2
-- Confirmed-live implementations: 4 of 4 unique; 0 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 4 of 20 unique; 16 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 0/3
 - Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
-- Unverified implementations: 1
-- Unique implementations: 4
-- Raw deployments: 4
+- Unverified implementations: 17
+- Unique implementations: 20
+- Raw deployments: 20
 - Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -117,12 +117,28 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (1)
+### ❓ Unverified (17)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sonic | n/a | `0x039e2fb66102314ce7b64ce5ce3e5183bc94ad38` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sonic | n/a | `0x0b3fe0c10c050270a9bc34271987989b6cf2107c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sonic | n/a | `0x1071405a4736535c545580064039a235827ee6d4` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sonic | n/a | `0x12727d4169a42a9b5e3ecb11a6d2c95553d3f447` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sonic | n/a | `0x134e4c207ad5a13549de1ebf8d43c1f49b00ba94` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sonic | n/a | `0x29219dd400f2bf60e5a23d13be72b486d4038894` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sonic | n/a | `0x3561607590e28e0848ba3b67074c676d6d1c9953` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sonic | n/a | `0x391071fe567d609e4af9d32de726d4c33679c7e2` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sonic | n/a | `0x50c42deacd8fc9773493ed674b675be577f2634b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sonic | n/a | `0x6047828dc181963ba44974801ff68e538da5eaf9` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sonic | n/a | `0x836664b0c0cb29b7877bccf94159cc996528f2c3` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sonic | n/a | `0xca11bde05977b3631167028862be2a173976ca11` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sonic | n/a | `0xd2f1e904daf7446686f8057b7dfeb068c75d29a9` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sonic | n/a | `0xe34e6851a4a3763e1d27aa7ac5980d2d33c2d315` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sonic | n/a | `0xe715cba7b5ccb33790cebff1436809d36cb17e57` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sonic | n/a | `0xfc00face00000000000000000000000000000000` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-255285 | `0xff4cd89f549432c312c497628748d4d76ac180f6` | ❓ Unverified |
 
 ## Audit Inventory
@@ -181,7 +197,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 3 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 1 |
+| needs_review | 17 |
 
 ## Scope Matching Notes
 

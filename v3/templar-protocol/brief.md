@@ -9,21 +9,80 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `fecd3a631f1cf55e8263e235e6e8a1dbaef8880d568c45fb6dbfa1b62c26682a`
 
 ## Project Overview
 
 - Project: Templar Protocol (`templar-protocol`)
 - Website: [https://www.templarfi.org/](https://www.templarfi.org/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
+- Generated: 2026-07-17T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: ethereum
+- Chains: near
 - Contract surface: 0 unique implementations (0 raw deployments)
 - Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $34,455,506.79
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
+
+## Deployment Inventory (near-mainnet)
+
+The market and helper inventory is the complete final-state result of list_deployments on v1.tmplr.near at the recorded block. The registry and LST oracle adapter are listed separately by the official deployment documentation.
+
+- Source: [official deployment documentation](https://github.com/Templar-Protocol/contracts/blob/dev/docs/src/deployments.md) at commit `a8a30530d78e60dcf59beff52df1506239a909f8`
+- Registry snapshot: block 207385596 (`AEyQzpUA5C2KueodRqypAe7QT4S9Uw8o9a7XjVokrpKx`), observed 2026-07-17T18:19:22Z
+- Completeness: `complete_registry_snapshot_plus_documented_infrastructure`
+
+| Component | Kind | Network | Account ID | Evidence |
+|---|---|---|---|---|
+| Registry | registry | near-mainnet | [`v1.tmplr.near`](https://nearblocks.io/address/v1.tmplr.near) | official deployment documentation |
+| LST Oracle Adapter | oracle adapter | near-mainnet | [`lst.oracle.tmplr.near`](https://nearblocks.io/address/lst.oracle.tmplr.near) | official deployment documentation |
+| Market | market | near-mainnet | [`ibtc-usdc.v1.tmplr.near`](https://nearblocks.io/address/ibtc-usdc.v1.tmplr.near) | onchain registry |
+| Market | market | near-mainnet | [`stnear-usdc.v1.tmplr.near`](https://nearblocks.io/address/stnear-usdc.v1.tmplr.near) | onchain registry |
+| Market | market | near-mainnet | [`ibtc-iethusdc.v1.tmplr.near`](https://nearblocks.io/address/ibtc-iethusdc.v1.tmplr.near) | onchain registry |
+| Market | market | near-mainnet | [`iethwbtc-iethusdc.v1.tmplr.near`](https://nearblocks.io/address/iethwbtc-iethusdc.v1.tmplr.near) | onchain registry |
+| Market | market | near-mainnet | [`ibtc-usdc-1.v1.tmplr.near`](https://nearblocks.io/address/ibtc-usdc-1.v1.tmplr.near) | onchain registry |
+| Market | market | near-mainnet | [`stnear-usdc-1.v1.tmplr.near`](https://nearblocks.io/address/stnear-usdc-1.v1.tmplr.near) | onchain registry |
+| Market | market | near-mainnet | [`ixlm-ixlmusdc.v1.tmplr.near`](https://nearblocks.io/address/ixlm-ixlmusdc.v1.tmplr.near) | onchain registry |
+| Market | market | near-mainnet | [`liqtest-ixlm-ixlmusdc.v1.tmplr.near`](https://nearblocks.io/address/liqtest-ixlm-ixlmusdc.v1.tmplr.near) | onchain registry |
+| Market | market | near-mainnet | [`liqtest-ixlm-ixlmusdc-1.v1.tmplr.near`](https://nearblocks.io/address/liqtest-ixlm-ixlmusdc-1.v1.tmplr.near) | onchain registry |
+| Market | market | near-mainnet | [`izec-isolusdc.v1.tmplr.near`](https://nearblocks.io/address/izec-isolusdc.v1.tmplr.near) | onchain registry |
+| Market | market | near-mainnet | [`ibtc-iethusdc-1.v1.tmplr.near`](https://nearblocks.io/address/ibtc-iethusdc-1.v1.tmplr.near) | onchain registry |
+| Market | market | near-mainnet | [`ixlm-ixlmpyusd.v1.tmplr.near`](https://nearblocks.io/address/ixlm-ixlmpyusd.v1.tmplr.near) | onchain registry |
+| Market | market | near-mainnet | [`ixlmdejaaa-ixlmusdc.v1.tmplr.near`](https://nearblocks.io/address/ixlmdejaaa-ixlmusdc.v1.tmplr.near) | onchain registry |
+| Market | market | near-mainnet | [`ixlmdejtrsy-ixlmusdc.v1.tmplr.near`](https://nearblocks.io/address/ixlmdejtrsy-ixlmusdc.v1.tmplr.near) | onchain registry |
+| Market | market | near-mainnet | [`ixlmsolvbtc-ixlmusdc.v1.tmplr.near`](https://nearblocks.io/address/ixlmsolvbtc-ixlmusdc.v1.tmplr.near) | onchain registry |
+| Proxy Oracle | oracle adapter | near-mainnet | [`proxy-oracle-ixlmcetes-ixlmusdc.v1.tmplr.near`](https://nearblocks.io/address/proxy-oracle-ixlmcetes-ixlmusdc.v1.tmplr.near) | onchain registry |
+| RedStone Adapter | oracle adapter | near-mainnet | [`redstone-adapter.v1.tmplr.near`](https://nearblocks.io/address/redstone-adapter.v1.tmplr.near) | onchain registry |
+| Proxy Oracle | oracle adapter | near-mainnet | [`proxy-oracle-ixlmustry-ixlmusdc.v1.tmplr.near`](https://nearblocks.io/address/proxy-oracle-ixlmustry-ixlmusdc.v1.tmplr.near) | onchain registry |
+| Market | market | near-mainnet | [`ixlmcetes-ixlmusdc.v1.tmplr.near`](https://nearblocks.io/address/ixlmcetes-ixlmusdc.v1.tmplr.near) | onchain registry |
+| Market | market | near-mainnet | [`ixlmustry-ixlmusdc.v1.tmplr.near`](https://nearblocks.io/address/ixlmustry-ixlmusdc.v1.tmplr.near) | onchain registry |
+| Proxy Oracle | oracle adapter | near-mainnet | [`proxy-oracle-iada-ixlmusdc.v1.tmplr.near`](https://nearblocks.io/address/proxy-oracle-iada-ixlmusdc.v1.tmplr.near) | onchain registry |
+| Market | market | near-mainnet | [`iada-ixlmusdc.v1.tmplr.near`](https://nearblocks.io/address/iada-ixlmusdc.v1.tmplr.near) | onchain registry |
+| Proxy Oracle | oracle adapter | near-mainnet | [`proxy-oracle-ibtc-ixlmusdc.v1.tmplr.near`](https://nearblocks.io/address/proxy-oracle-ibtc-ixlmusdc.v1.tmplr.near) | onchain registry |
+| Market | market | near-mainnet | [`ibtc-ixlmusdc.v1.tmplr.near`](https://nearblocks.io/address/ibtc-ixlmusdc.v1.tmplr.near) | onchain registry |
+| Proxy Oracle | oracle adapter | near-mainnet | [`proxy-oracle-idoge-ixlmusdc.v1.tmplr.near`](https://nearblocks.io/address/proxy-oracle-idoge-ixlmusdc.v1.tmplr.near) | onchain registry |
+| Market | market | near-mainnet | [`idoge-ixlmusdc.v1.tmplr.near`](https://nearblocks.io/address/idoge-ixlmusdc.v1.tmplr.near) | onchain registry |
+| Proxy Oracle | oracle adapter | near-mainnet | [`proxy-oracle-iltc-ixlmusdc.v1.tmplr.near`](https://nearblocks.io/address/proxy-oracle-iltc-ixlmusdc.v1.tmplr.near) | onchain registry |
+| Market | market | near-mainnet | [`iltc-ixlmusdc.v1.tmplr.near`](https://nearblocks.io/address/iltc-ixlmusdc.v1.tmplr.near) | onchain registry |
+| Proxy Oracle | oracle adapter | near-mainnet | [`proxy-oracle-ixrp-ixlmusdc.v1.tmplr.near`](https://nearblocks.io/address/proxy-oracle-ixrp-ixlmusdc.v1.tmplr.near) | onchain registry |
+| Market | market | near-mainnet | [`ixrp-ixlmusdc.v1.tmplr.near`](https://nearblocks.io/address/ixrp-ixlmusdc.v1.tmplr.near) | onchain registry |
+| Proxy Oracle | oracle adapter | near-mainnet | [`proxy-oracle-izec-ixlmusdc.v1.tmplr.near`](https://nearblocks.io/address/proxy-oracle-izec-ixlmusdc.v1.tmplr.near) | onchain registry |
+| Market | market | near-mainnet | [`izec-ixlmusdc.v1.tmplr.near`](https://nearblocks.io/address/izec-ixlmusdc.v1.tmplr.near) | onchain registry |
+| Proxy Oracle | oracle adapter | near-mainnet | [`proxy-oracle-linear-usdt.v1.tmplr.near`](https://nearblocks.io/address/proxy-oracle-linear-usdt.v1.tmplr.near) | onchain registry |
+| Market | market | near-mainnet | [`linear-usdt.v1.tmplr.near`](https://nearblocks.io/address/linear-usdt.v1.tmplr.near) | onchain registry |
+| Proxy Oracle | oracle adapter | near-mainnet | [`proxy-oracle-stnear-usdt.v1.tmplr.near`](https://nearblocks.io/address/proxy-oracle-stnear-usdt.v1.tmplr.near) | onchain registry |
+| Market | market | near-mainnet | [`stnear-usdt.v1.tmplr.near`](https://nearblocks.io/address/stnear-usdt.v1.tmplr.near) | onchain registry |
+| Proxy Oracle | oracle adapter | near-mainnet | [`proxy-oracle-iethhemibtc-iethusdc.v1.tmplr.near`](https://nearblocks.io/address/proxy-oracle-iethhemibtc-iethusdc.v1.tmplr.near) | onchain registry |
+| Market | market | near-mainnet | [`iethhemibtc-iethusdc.v1.tmplr.near`](https://nearblocks.io/address/iethhemibtc-iethusdc.v1.tmplr.near) | onchain registry |
+| Pyth Lazer Adapter | oracle adapter | near-mainnet | [`pyth-lazer.v1.tmplr.near`](https://nearblocks.io/address/pyth-lazer.v1.tmplr.near) | onchain registry |
+| Proxy Oracle Governance | oracle governance | near-mainnet | [`proxy-gov-iethwbtc-ixlmusdc.v1.tmplr.near`](https://nearblocks.io/address/proxy-gov-iethwbtc-ixlmusdc.v1.tmplr.near) | onchain registry |
+| Proxy Oracle | oracle adapter | near-mainnet | [`proxy-oracle-iethwbtc-ixlmusdc.v1.tmplr.near`](https://nearblocks.io/address/proxy-oracle-iethwbtc-ixlmusdc.v1.tmplr.near) | onchain registry |
+| Market | market | near-mainnet | [`iethwbtc-ixlmusdc.v1.tmplr.near`](https://nearblocks.io/address/iethwbtc-ixlmusdc.v1.tmplr.near) | onchain registry |
+| Proxy Oracle Governance | oracle governance | near-mainnet | [`proxy-gov-ixlm-ixlmusdc-1.v1.tmplr.near`](https://nearblocks.io/address/proxy-gov-ixlm-ixlmusdc-1.v1.tmplr.near) | onchain registry |
+| Proxy Oracle | oracle adapter | near-mainnet | [`proxy-oracle-ixlm-ixlmusdc-1.v1.tmplr.near`](https://nearblocks.io/address/proxy-oracle-ixlm-ixlmusdc-1.v1.tmplr.near) | onchain registry |
+| Market | market | near-mainnet | [`ixlm-ixlmusdc-1.v1.tmplr.near`](https://nearblocks.io/address/ixlm-ixlmusdc-1.v1.tmplr.near) | onchain registry |
+| Proxy Oracle Governance | oracle governance | near-mainnet | [`proxy-gov-iltc-ixlmusdc.v1.tmplr.near`](https://nearblocks.io/address/proxy-gov-iltc-ixlmusdc.v1.tmplr.near) | onchain registry |
 
 ## ⚠️ Limited Contract Surface
 

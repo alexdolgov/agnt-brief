@@ -1,7 +1,7 @@
 {
   "schema_version": "3.0",
   "project_key": "templar-protocol",
-  "generated_at": "2026-07-15T18:30:00.000Z",
+  "generated_at": "2026-07-17T18:30:00.000Z",
   "authority": {
     "activation_id": "scope-prod-20260715-v1",
     "production_closure_sha256": "38a124a34bf27378c85726318ca5f9408641faecd45c04ee5b82ad07a65cbc83",
@@ -13,7 +13,7 @@
     "liveness_closure_sha256": "e1855078572b4a5868cbe2ff93c7ad47c89e29b1b8209e48161f110e31790ddd",
     "fork_detection_run_id": "fork-structural-canonical-production-20260712",
     "deployer_decision_run_id": "deployer-candidate-production-20260712",
-    "export_input_receipt_sha256": "e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd",
+    "export_input_receipt_sha256": "fecd3a631f1cf55e8263e235e6e8a1dbaef8880d568c45fb6dbfa1b62c26682a",
     "canonical_network_policy": "offline_cache_only"
   },
   "production_state": {
@@ -65,7 +65,7 @@
     "asd_usd": null,
     "website_url": "https://www.templarfi.org/",
     "chains": [
-      "ethereum"
+      "near"
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
@@ -666,5 +666,307 @@
     }
   },
   "active_bug_bounty": null,
+  "non_evm_deployments": {
+    "native_chain": "near",
+    "network": "near-mainnet",
+    "source_url": "https://github.com/Templar-Protocol/contracts/blob/dev/docs/src/deployments.md",
+    "source_commit": "a8a30530d78e60dcf59beff52df1506239a909f8",
+    "registry_account": "v1.tmplr.near",
+    "registry_observed_at": "2026-07-17T18:19:22Z",
+    "registry_block_height": 207385596,
+    "registry_block_hash": "AEyQzpUA5C2KueodRqypAe7QT4S9Uw8o9a7XjVokrpKx",
+    "completeness": "complete_registry_snapshot_plus_documented_infrastructure",
+    "note": "The market and helper inventory is the complete final-state result of list_deployments on v1.tmplr.near at the recorded block. The registry and LST oracle adapter are listed separately by the official deployment documentation.",
+    "deployments": [
+      {
+        "account_id": "v1.tmplr.near",
+        "component": "Registry",
+        "kind": "registry",
+        "evidence": "official_deployment_documentation"
+      },
+      {
+        "account_id": "lst.oracle.tmplr.near",
+        "component": "LST Oracle Adapter",
+        "kind": "oracle_adapter",
+        "evidence": "official_deployment_documentation"
+      },
+      {
+        "account_id": "ibtc-usdc.v1.tmplr.near",
+        "component": "Market",
+        "kind": "market",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "stnear-usdc.v1.tmplr.near",
+        "component": "Market",
+        "kind": "market",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "ibtc-iethusdc.v1.tmplr.near",
+        "component": "Market",
+        "kind": "market",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "iethwbtc-iethusdc.v1.tmplr.near",
+        "component": "Market",
+        "kind": "market",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "ibtc-usdc-1.v1.tmplr.near",
+        "component": "Market",
+        "kind": "market",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "stnear-usdc-1.v1.tmplr.near",
+        "component": "Market",
+        "kind": "market",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "ixlm-ixlmusdc.v1.tmplr.near",
+        "component": "Market",
+        "kind": "market",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "liqtest-ixlm-ixlmusdc.v1.tmplr.near",
+        "component": "Market",
+        "kind": "market",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "liqtest-ixlm-ixlmusdc-1.v1.tmplr.near",
+        "component": "Market",
+        "kind": "market",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "izec-isolusdc.v1.tmplr.near",
+        "component": "Market",
+        "kind": "market",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "ibtc-iethusdc-1.v1.tmplr.near",
+        "component": "Market",
+        "kind": "market",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "ixlm-ixlmpyusd.v1.tmplr.near",
+        "component": "Market",
+        "kind": "market",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "ixlmdejaaa-ixlmusdc.v1.tmplr.near",
+        "component": "Market",
+        "kind": "market",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "ixlmdejtrsy-ixlmusdc.v1.tmplr.near",
+        "component": "Market",
+        "kind": "market",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "ixlmsolvbtc-ixlmusdc.v1.tmplr.near",
+        "component": "Market",
+        "kind": "market",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "proxy-oracle-ixlmcetes-ixlmusdc.v1.tmplr.near",
+        "component": "Proxy Oracle",
+        "kind": "oracle_adapter",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "redstone-adapter.v1.tmplr.near",
+        "component": "RedStone Adapter",
+        "kind": "oracle_adapter",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "proxy-oracle-ixlmustry-ixlmusdc.v1.tmplr.near",
+        "component": "Proxy Oracle",
+        "kind": "oracle_adapter",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "ixlmcetes-ixlmusdc.v1.tmplr.near",
+        "component": "Market",
+        "kind": "market",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "ixlmustry-ixlmusdc.v1.tmplr.near",
+        "component": "Market",
+        "kind": "market",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "proxy-oracle-iada-ixlmusdc.v1.tmplr.near",
+        "component": "Proxy Oracle",
+        "kind": "oracle_adapter",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "iada-ixlmusdc.v1.tmplr.near",
+        "component": "Market",
+        "kind": "market",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "proxy-oracle-ibtc-ixlmusdc.v1.tmplr.near",
+        "component": "Proxy Oracle",
+        "kind": "oracle_adapter",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "ibtc-ixlmusdc.v1.tmplr.near",
+        "component": "Market",
+        "kind": "market",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "proxy-oracle-idoge-ixlmusdc.v1.tmplr.near",
+        "component": "Proxy Oracle",
+        "kind": "oracle_adapter",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "idoge-ixlmusdc.v1.tmplr.near",
+        "component": "Market",
+        "kind": "market",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "proxy-oracle-iltc-ixlmusdc.v1.tmplr.near",
+        "component": "Proxy Oracle",
+        "kind": "oracle_adapter",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "iltc-ixlmusdc.v1.tmplr.near",
+        "component": "Market",
+        "kind": "market",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "proxy-oracle-ixrp-ixlmusdc.v1.tmplr.near",
+        "component": "Proxy Oracle",
+        "kind": "oracle_adapter",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "ixrp-ixlmusdc.v1.tmplr.near",
+        "component": "Market",
+        "kind": "market",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "proxy-oracle-izec-ixlmusdc.v1.tmplr.near",
+        "component": "Proxy Oracle",
+        "kind": "oracle_adapter",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "izec-ixlmusdc.v1.tmplr.near",
+        "component": "Market",
+        "kind": "market",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "proxy-oracle-linear-usdt.v1.tmplr.near",
+        "component": "Proxy Oracle",
+        "kind": "oracle_adapter",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "linear-usdt.v1.tmplr.near",
+        "component": "Market",
+        "kind": "market",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "proxy-oracle-stnear-usdt.v1.tmplr.near",
+        "component": "Proxy Oracle",
+        "kind": "oracle_adapter",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "stnear-usdt.v1.tmplr.near",
+        "component": "Market",
+        "kind": "market",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "proxy-oracle-iethhemibtc-iethusdc.v1.tmplr.near",
+        "component": "Proxy Oracle",
+        "kind": "oracle_adapter",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "iethhemibtc-iethusdc.v1.tmplr.near",
+        "component": "Market",
+        "kind": "market",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "pyth-lazer.v1.tmplr.near",
+        "component": "Pyth Lazer Adapter",
+        "kind": "oracle_adapter",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "proxy-gov-iethwbtc-ixlmusdc.v1.tmplr.near",
+        "component": "Proxy Oracle Governance",
+        "kind": "oracle_governance",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "proxy-oracle-iethwbtc-ixlmusdc.v1.tmplr.near",
+        "component": "Proxy Oracle",
+        "kind": "oracle_adapter",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "iethwbtc-ixlmusdc.v1.tmplr.near",
+        "component": "Market",
+        "kind": "market",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "proxy-gov-ixlm-ixlmusdc-1.v1.tmplr.near",
+        "component": "Proxy Oracle Governance",
+        "kind": "oracle_governance",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "proxy-oracle-ixlm-ixlmusdc-1.v1.tmplr.near",
+        "component": "Proxy Oracle",
+        "kind": "oracle_adapter",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "ixlm-ixlmusdc-1.v1.tmplr.near",
+        "component": "Market",
+        "kind": "market",
+        "evidence": "onchain_registry"
+      },
+      {
+        "account_id": "proxy-gov-iltc-ixlmusdc.v1.tmplr.near",
+        "component": "Proxy Oracle Governance",
+        "kind": "oracle_governance",
+        "evidence": "onchain_registry"
+      }
+    ]
+  },
   "out_of_scope": null
 }

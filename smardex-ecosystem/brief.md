@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `badfb69ca75b1f24c1a11ab95b6fafb44eb35f63eed2bc554b58d06f531dd5bd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: SMARDEX Ecosystem (`smardex-ecosystem`)
 - Website: [https://smardex.io](https://smardex.io)
 - Lifecycle: unknown
-- Generated: 2026-07-24T07:45:00.000Z
-- Pipeline run: brief-priority-deployer-expansion-20260724-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: arbitrum, base, bsc, ethereum, polygon
 - Contract surface: 58 unique implementations (107 raw deployments)
 - Coverage basis: 6/9 confirmed own live verified implementations (66.7%); conservative 66.7% with 0 needs-review implementation(s)

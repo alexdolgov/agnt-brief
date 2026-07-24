@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `badfb69ca75b1f24c1a11ab95b6fafb44eb35f63eed2bc554b58d06f531dd5bd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
 
@@ -18,8 +18,8 @@
 - Project: Avalaunch (`avalaunch`)
 - Website: [https://avalaunch.app](https://avalaunch.app)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-07-24T07:45:00.000Z
-- Pipeline run: brief-priority-deployer-expansion-20260724-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: avalanche
 - Contract surface: 41 unique implementations (149 raw deployments)
 - Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.

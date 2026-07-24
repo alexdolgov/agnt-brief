@@ -1,8 +1,34 @@
 {
-  "schema_version": "2.0",
+  "schema_version": "3.0",
   "project_key": "bitu-protocol",
-  "generated_at": "2026-07-04T14:53:07.525Z",
-  "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-0293",
+  "generated_at": "2026-07-24T14:10:00.000Z",
+  "authority": {
+    "activation_id": "scope-prod-20260715-v1",
+    "production_closure_sha256": "38a124a34bf27378c85726318ca5f9408641faecd45c04ee5b82ad07a65cbc83",
+    "match_closure_sha256": "8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6",
+    "review_closure_sha256": "ba1f6f291d2f91f0993306e7ee30a8c54c9b49bfb0a4757f9de2abd218c8fd1d",
+    "topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+    "topography_closure_sha256": "a8c3fc7d9dc82143989157bb6855fbb7c23dddc63b6ddb6cd2d84d8d4aa4eca2",
+    "liveness_stage_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+    "liveness_closure_sha256": "e1855078572b4a5868cbe2ff93c7ad47c89e29b1b8209e48161f110e31790ddd",
+    "fork_detection_run_id": "fork-structural-canonical-production-20260712",
+    "deployer_decision_run_id": "deployer-candidate-production-20260712",
+    "export_input_receipt_sha256": "e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92",
+    "canonical_network_policy": "offline_cache_only"
+  },
+  "production_state": {
+    "state_kind": "published_scope",
+    "cohort_ordinal": 85,
+    "raw_selected_contract_rows": 6,
+    "selected_audits": 2,
+    "eligible_audit_results": 2,
+    "matched_audit_results": 2,
+    "no_match_audit_results": 0
+  },
+  "missing_evidence": {
+    "audit_dates": []
+  },
+  "pipeline_run_id": "brief-deployer-expansion-all-20260724-v1",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "bitu-protocol",
@@ -22,16 +48,27 @@
     "drop_from_peak_pct": 44.13322334769543
   },
   "summary": {
-    "total_contracts": 3,
-    "total_addresses": 3,
-    "unique_implementations": 3,
-    "total_deployments": 3,
-    "audited_contracts": 2,
-    "unaudited_contracts": 1,
-    "contracts_verified_audited": 2,
-    "contracts_verified_unaudited": 1,
+    "total_contracts": 5,
+    "total_addresses": 5,
+    "unique_implementations": 5,
+    "address_book_own_implementations": 3,
+    "address_book_context_implementations": 0,
+    "address_book_unclassified_implementations": 0,
+    "non_address_book_implementations": 2,
+    "third_party_or_infra_implementations": 0,
+    "standard_proxy_or_library_implementations": 0,
+    "address_book_proxy_deployments": 0,
+    "total_deployments": 5,
+    "audited_contracts": 3,
+    "unaudited_contracts": 2,
+    "contracts_verified_audited": 3,
+    "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
+    "owned_contracts_verified_audited": 3,
+    "owned_contracts_verified_unaudited": 0,
+    "owned_contracts_verified_by_bytecode": 0,
+    "owned_contracts_unverified": 0,
     "coverage_pct": 100,
     "total_audits": 2,
     "direct_audits": 2,
@@ -59,30 +96,136 @@
       "unknown": 0
     },
     "live_implementations": 3,
-    "live_verified_implementations": 2,
-    "live_audited_implementations": 2,
-    "live_verified_third_party_excluded": 1,
+    "live_verified_implementations": 3,
+    "live_audited_implementations": 3,
+    "coverage_basis": "address_book_owned_live_verified_implementations",
+    "live_verified_own_confirmed": 3,
+    "live_audited_own_confirmed": 3,
+    "live_verified_needs_review": 0,
+    "live_verified_excluded_standard": 0,
+    "live_verified_excluded_third_party": 0,
+    "live_verified_excluded_inventory_pollution": 0,
+    "coverage_confidence": "high",
+    "coverage_assessment_status": "assessed",
+    "coverage_assessment_note": "Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.",
+    "liveness_assessment_status": "complete",
+    "liveness_eligible_contracts": 3,
+    "liveness_assessed_contracts": 3,
+    "liveness_unresolved_contracts": 0,
+    "liveness_run_ids": [
+      "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1"
+    ],
+    "scope_analysis_pending_audits": 0,
+    "coverage_pct_conservative": 100,
+    "live_verified_third_party_excluded": 0,
     "deploy_coverage_basis_breakdown": {
       "code_matched": 0,
       "diverged": 0,
-      "match_unverified": 2
+      "match_unverified": 3
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 3 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": 2,
-    "total_contracts_indexed": 5,
+    "project_purpose": "This brief describes the observed EVM deployment and audit surface for BitU Protocol. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.",
+    "relationship_narrative": "The pinned logic-topography run contains 3 contract row(s) across bsc. Structural roles: 3 core. No upgradeable pattern was identified in these rows.",
+    "product_family_count": 1,
+    "total_contracts_indexed": 3,
     "live_contracts": 3,
-    "inactive_contracts": 2,
+    "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 0,
-    "live_deployment_units": 0,
+    "deployment_units": 3,
+    "live_deployment_units": 3,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
+  },
+  "logic_topography": {
+    "run_id": "logic-topography-normalized-candidate-20260715-v1",
+    "content_rows": 3,
+    "structural_roles": {
+      "core": 3
+    },
+    "contract_kinds": {
+      "contract": 3
+    },
+    "standards": {
+      "erc20": 2,
+      "erc20permit": 2,
+      "erc4626": 1,
+      "erc165": 2,
+      "accesscontrol": 2,
+      "ownable": 1,
+      "ownable2step": 1
+    },
+    "frameworks": {
+      "openzeppelin": 3
+    },
+    "upgradeable_contracts": 0
+  },
+  "deployer_expansion_inventory": {
+    "source": "project_contracts.discovery_source=deployer_expansion",
+    "decision_run_id": "deployer-candidate-production-20260712",
+    "total_contracts": 2,
+    "live_contracts": 1,
+    "unknown_liveness_contracts": 1,
+    "source_verified_contracts": 2,
+    "currently_scope_matched_contracts": 1,
+    "classification_counts": {
+      "currently_scope_matched": 1,
+      "candidate_auto_own": 0,
+      "candidate_review": 0,
+      "candidate_hard_block": 0,
+      "contamination_review": 0,
+      "third_party_or_infra": 0,
+      "exact_address_book_overlap": 0,
+      "source_verified_unclassified": 1,
+      "unverified_unclassified": 0
+    },
+    "contracts": [
+      {
+        "chain_id": 56,
+        "chain_name": "bsc",
+        "address": "0x61183a27ab5fdacc4d46f5af9eb9e6a93afd76d4",
+        "name": "BitUStaking",
+        "role": "unknown",
+        "liveness": "live",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0x8f74491aad723acb95f4c2eb5d0d50fd8b11a835",
+        "deploy_date": "2024-05-25 10:04:29+03",
+        "contamination_flag": "cleared",
+        "has_exact_address_book_entry": true,
+        "address_book_inventory_class": "project_anchor",
+        "scope_inventory_class": "project_anchor",
+        "classification": "currently_scope_matched",
+        "classification_reason": "Selected by the activated scope authority; retained unchanged in current scope output.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 56,
+        "chain_name": "bsc",
+        "address": "0xf8a0bf9cf54bb92f17374d9e9a321e6a111a51bd",
+        "name": "BEP20LINK",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0x970609ba2c160a1b491b90867681918bdc9773af",
+        "deploy_date": "2020-09-04 09:32:16+03",
+        "contamination_flag": "cleared",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "source_verified_unclassified",
+        "classification_reason": "Source is verified, but no stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      }
+    ]
   },
   "surface_sufficiency": {
     "unique_implementations": 3,
@@ -93,7 +236,86 @@
     "entries": [],
     "inherited_audit_count": 0
   },
+  "fork_analysis": {
+    "summary": {
+      "total_contracts": 3,
+      "forked": 0,
+      "original": 3
+    },
+    "forked_contracts": [],
+    "original_contracts": [
+      {
+        "contract_address": "0x654a32542a84bea7d2c2c1a1ed1aaaf26888e6bd",
+        "chain_id": 56,
+        "etherscan_name": "BITU"
+      },
+      {
+        "contract_address": "0xa581b5b3d007dab450943749e29a677a0d116f18",
+        "chain_id": 56,
+        "etherscan_name": "BitUMinting"
+      },
+      {
+        "contract_address": "0x61183a27ab5fdacc4d46f5af9eb9e6a93afd76d4",
+        "chain_id": 56,
+        "etherscan_name": "BitUStaking"
+      }
+    ]
+  },
   "contracts": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xf8a0bf9cf54bb92f17374d9e9a321e6a111a51bd",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "BEP20LINK",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BEP20LINK",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xf8a0bf9cf54bb92f17374d9e9a321e6a111a51bd",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": null,
+          "operational_liveness_run_id": null,
+          "operational_liveness_observed_at": null
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "none",
+      "address_book_inventory_class": "non_address_book",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "non_address_book_inventory",
+      "surface_confidence": 0.72,
+      "surface_exclusion_reason": "Discovered project contract is not present at an exact chain/address key in the protocol address book; excluded from scope matching and coverage.",
+      "surface_evidence": {
+        "source": "exact_protocol_address_book_membership",
+        "has_exact_address_book_entry": false
+      },
+      "effective_deploy_date": "2020-09-04 09:32:16+03",
+      "deploy_coverage_basis": null
+    },
     {
       "chain_id": 56,
       "chain_name": "bsc",
@@ -119,7 +341,11 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": null,
+          "operational_liveness_run_id": null,
+          "operational_liveness_observed_at": null
         }
       ],
       "audits_covering": [],
@@ -128,8 +354,19 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null,
-      "is_live": true,
+      "is_live": false,
       "is_own_surface": false,
+      "address_book_membership": "none",
+      "address_book_inventory_class": "non_address_book",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "non_address_book_inventory",
+      "surface_confidence": 0.72,
+      "surface_exclusion_reason": "Discovered project contract is not present at an exact chain/address key in the protocol address book; excluded from scope matching and coverage.",
+      "surface_evidence": {
+        "source": "exact_protocol_address_book_membership",
+        "has_exact_address_book_entry": false
+      },
       "effective_deploy_date": "2020-09-04 09:30:28+03",
       "deploy_coverage_basis": null
     },
@@ -137,8 +374,8 @@
       "chain_id": 56,
       "chain_name": "bsc",
       "address": "0x654a32542a84bea7d2c2c1a1ed1aaaf26888e6bd",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
+      "deployment_unit": "unit-380627",
+      "deployment_unit_proxy_count": 0,
       "name": "BITU",
       "role": "unknown",
       "origin_kind": "native",
@@ -153,12 +390,16 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0x654a32542a84bea7d2c2c1a1ed1aaaf26888e6bd",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
+          "deployment_unit": "unit-380627",
+          "deployment_unit_proxy_count": 0,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": true,
+          "operational_liveness": "live",
+          "operational_liveness_evidence_kind": "current_address_book_code",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:52:55.938+00"
         }
       ],
       "audits_covering": [
@@ -172,6 +413,14 @@
       "contamination_flag": null,
       "is_live": true,
       "is_own_surface": true,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "project_anchor",
+      "address_book_coverage_eligible": true,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "own_supporting",
+      "surface_confidence": null,
+      "surface_exclusion_reason": null,
+      "surface_evidence": null,
       "effective_deploy_date": "2024-05-25 09:36:22+03",
       "deploy_coverage_basis": "match_unverified"
     },
@@ -179,8 +428,8 @@
       "chain_id": 56,
       "chain_name": "bsc",
       "address": "0xa581b5b3d007dab450943749e29a677a0d116f18",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
+      "deployment_unit": "unit-380628",
+      "deployment_unit_proxy_count": 0,
       "name": "BitUMinting",
       "role": "unknown",
       "origin_kind": "native",
@@ -195,12 +444,16 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0xa581b5b3d007dab450943749e29a677a0d116f18",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
+          "deployment_unit": "unit-380628",
+          "deployment_unit_proxy_count": 0,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": true,
+          "operational_liveness": "live",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:52:55.938+00"
         }
       ],
       "audits_covering": [
@@ -214,7 +467,69 @@
       "contamination_flag": null,
       "is_live": true,
       "is_own_surface": true,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "project_anchor",
+      "address_book_coverage_eligible": true,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "own_supporting",
+      "surface_confidence": null,
+      "surface_exclusion_reason": null,
+      "surface_evidence": null,
       "effective_deploy_date": "2024-05-25 10:00:44+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x61183a27ab5fdacc4d46f5af9eb9e6a93afd76d4",
+      "deployment_unit": "unit-380626",
+      "deployment_unit_proxy_count": 0,
+      "name": "BitUStaking",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BitUStaking",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x61183a27ab5fdacc4d46f5af9eb9e6a93afd76d4",
+          "deployment_unit": "unit-380626",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true,
+          "operational_liveness": "live",
+          "operational_liveness_evidence_kind": "current_address_book_code",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:52:55.938+00"
+        }
+      ],
+      "audits_covering": [
+        "audit-11487",
+        "audit-11488"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "project_anchor",
+      "address_book_coverage_eligible": true,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "own_supporting",
+      "surface_confidence": null,
+      "surface_exclusion_reason": null,
+      "surface_evidence": null,
+      "effective_deploy_date": "2024-05-25 10:04:29+03",
       "deploy_coverage_basis": "match_unverified"
     }
   ],
@@ -235,13 +550,236 @@
       "inheritance_mode": null,
       "inheritance_scope": [],
       "scope_match": null,
-      "scope_format": "contract_name",
-      "extracted_names": [],
-      "matched_contracts": 2,
+      "scope_format": "n/a",
+      "extracted_names": [
+        "BITU",
+        "BITUVault",
+        "BitUMinting",
+        "BitUStaking",
+        "IBITU",
+        "IStakedBITUCooldown",
+        "SingleAdminAccessControl",
+        "StakedBITU"
+      ],
+      "matched_contracts": 3,
       "scope_note": null,
       "extraction_confidence": null,
       "scope_section_found": null,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "scope_analysis_status": "available",
+      "scope_result_status": "matched",
+      "scope_result_reason": null,
+      "scope_result_review": null,
+      "scope_analysis_summary": {
+        "extracted_references": 8,
+        "matched_own": 3,
+        "matched_own_proxies": 0,
+        "matched_own_live": 3,
+        "matched_own_inactive": 0,
+        "matched_own_uninitialized": 0,
+        "matched_own_liveness_unknown": 0,
+        "matched_third_party_or_infra": 0,
+        "matched_excluded_inventory": 0,
+        "matched_unclassified_address_book": 0,
+        "ambiguous": 0,
+        "unmatched": 5,
+        "accepted_scope_rows": 3
+      },
+      "scope_analysis": [
+        {
+          "extracted_name": "BITU",
+          "normalized_name": "bitu",
+          "file_path": null,
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": null,
+          "disposition": "matched_own",
+          "match_basis": "unique_name",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 1,
+          "candidates": [
+            {
+              "chain_id": 56,
+              "address": "0x654a32542a84bea7d2c2c1a1ed1aaaf26888e6bd",
+              "name": "BITU",
+              "is_proxy": false,
+              "membership": "typed_address_book",
+              "inventory_class": "project_anchor",
+              "scope_match_eligible": true,
+              "coverage_denominator_eligible": true,
+              "brief_section": "own_surface",
+              "reason": "normalized_full_corpus:project_anchor:matcher_anchor",
+              "exclusion_reasons": [],
+              "source_urls": [
+                "https://docs.bitu.io/bitu/project-design/key-addresses"
+              ],
+              "deploy_date": "2024-05-25 09:36:22+03",
+              "product_line": null,
+              "address_book_label": null,
+              "address_book_section": null,
+              "operational_liveness": "live",
+              "operational_liveness_evidence_kind": "current_address_book_code",
+              "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+              "operational_liveness_snapshot_status": "complete",
+              "operational_liveness_observed_at": "2026-07-15 06:52:55.938+00",
+              "selected": true
+            }
+          ]
+        },
+        {
+          "extracted_name": "BITUVault",
+          "normalized_name": "bituvault",
+          "file_path": null,
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": null,
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "BitUMinting",
+          "normalized_name": "bituminting",
+          "file_path": null,
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": null,
+          "disposition": "matched_own",
+          "match_basis": "unique_name",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 1,
+          "candidates": [
+            {
+              "chain_id": 56,
+              "address": "0xa581b5b3d007dab450943749e29a677a0d116f18",
+              "name": "BitUMinting",
+              "is_proxy": false,
+              "membership": "typed_address_book",
+              "inventory_class": "project_anchor",
+              "scope_match_eligible": true,
+              "coverage_denominator_eligible": true,
+              "brief_section": "own_surface",
+              "reason": "normalized_full_corpus:project_anchor:matcher_anchor",
+              "exclusion_reasons": [],
+              "source_urls": [
+                "https://docs.bitu.io/bitu/project-design/key-addresses"
+              ],
+              "deploy_date": "2024-05-25 10:00:44+03",
+              "product_line": null,
+              "address_book_label": null,
+              "address_book_section": null,
+              "operational_liveness": "live",
+              "operational_liveness_evidence_kind": "code_present_context",
+              "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+              "operational_liveness_snapshot_status": "complete",
+              "operational_liveness_observed_at": "2026-07-15 06:52:55.938+00",
+              "selected": true
+            }
+          ]
+        },
+        {
+          "extracted_name": "BitUStaking",
+          "normalized_name": "bitustaking",
+          "file_path": null,
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": null,
+          "disposition": "matched_own",
+          "match_basis": "unique_name",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 1,
+          "candidates": [
+            {
+              "chain_id": 56,
+              "address": "0x61183a27ab5fdacc4d46f5af9eb9e6a93afd76d4",
+              "name": "BitUStaking",
+              "is_proxy": false,
+              "membership": "typed_address_book",
+              "inventory_class": "project_anchor",
+              "scope_match_eligible": true,
+              "coverage_denominator_eligible": true,
+              "brief_section": "own_surface",
+              "reason": "normalized_full_corpus:project_anchor:matcher_anchor",
+              "exclusion_reasons": [],
+              "source_urls": [
+                "https://docs.bitu.io/bitu/project-design/key-addresses"
+              ],
+              "deploy_date": "2024-05-25 10:04:29+03",
+              "product_line": null,
+              "address_book_label": null,
+              "address_book_section": null,
+              "operational_liveness": "live",
+              "operational_liveness_evidence_kind": "current_address_book_code",
+              "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+              "operational_liveness_snapshot_status": "complete",
+              "operational_liveness_observed_at": "2026-07-15 06:52:55.938+00",
+              "selected": true
+            }
+          ]
+        },
+        {
+          "extracted_name": "IBITU",
+          "normalized_name": "ibitu",
+          "file_path": null,
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": null,
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "IStakedBITUCooldown",
+          "normalized_name": "istakedbitucooldown",
+          "file_path": null,
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": null,
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "SingleAdminAccessControl",
+          "normalized_name": "singleadminaccesscontrol",
+          "file_path": null,
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": null,
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "StakedBITU",
+          "normalized_name": "stakedbitu",
+          "file_path": null,
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": null,
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        }
+      ]
     },
     {
       "audit_id": 11488,
@@ -259,47 +797,273 @@
       "inheritance_mode": null,
       "inheritance_scope": [],
       "scope_match": null,
-      "scope_format": "contract_name",
-      "extracted_names": [],
-      "matched_contracts": 2,
+      "scope_format": "n/a",
+      "extracted_names": [
+        "BITU.sol",
+        "BITUVault.sol",
+        "BitUMinting.sol",
+        "BitUStaking.sol",
+        "SingleAdminAccessControl.sol",
+        "StakedBITU.sol"
+      ],
+      "matched_contracts": 3,
       "scope_note": null,
       "extraction_confidence": null,
       "scope_section_found": null,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "scope_analysis_status": "available",
+      "scope_result_status": "matched",
+      "scope_result_reason": null,
+      "scope_result_review": null,
+      "scope_analysis_summary": {
+        "extracted_references": 6,
+        "matched_own": 3,
+        "matched_own_proxies": 0,
+        "matched_own_live": 3,
+        "matched_own_inactive": 0,
+        "matched_own_uninitialized": 0,
+        "matched_own_liveness_unknown": 0,
+        "matched_third_party_or_infra": 0,
+        "matched_excluded_inventory": 0,
+        "matched_unclassified_address_book": 0,
+        "ambiguous": 0,
+        "unmatched": 3,
+        "accepted_scope_rows": 3
+      },
+      "scope_analysis": [
+        {
+          "extracted_name": "BITU.sol",
+          "normalized_name": "bitu.sol",
+          "file_path": null,
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": null,
+          "disposition": "matched_own",
+          "match_basis": "unique_name",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 1,
+          "candidates": [
+            {
+              "chain_id": 56,
+              "address": "0x654a32542a84bea7d2c2c1a1ed1aaaf26888e6bd",
+              "name": "BITU",
+              "is_proxy": false,
+              "membership": "typed_address_book",
+              "inventory_class": "project_anchor",
+              "scope_match_eligible": true,
+              "coverage_denominator_eligible": true,
+              "brief_section": "own_surface",
+              "reason": "normalized_full_corpus:project_anchor:matcher_anchor",
+              "exclusion_reasons": [],
+              "source_urls": [
+                "https://docs.bitu.io/bitu/project-design/key-addresses"
+              ],
+              "deploy_date": "2024-05-25 09:36:22+03",
+              "product_line": null,
+              "address_book_label": null,
+              "address_book_section": null,
+              "operational_liveness": "live",
+              "operational_liveness_evidence_kind": "current_address_book_code",
+              "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+              "operational_liveness_snapshot_status": "complete",
+              "operational_liveness_observed_at": "2026-07-15 06:52:55.938+00",
+              "selected": true
+            }
+          ]
+        },
+        {
+          "extracted_name": "BITUVault.sol",
+          "normalized_name": "bituvault.sol",
+          "file_path": null,
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": null,
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "BitUMinting.sol",
+          "normalized_name": "bituminting.sol",
+          "file_path": null,
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": null,
+          "disposition": "matched_own",
+          "match_basis": "unique_name",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 1,
+          "candidates": [
+            {
+              "chain_id": 56,
+              "address": "0xa581b5b3d007dab450943749e29a677a0d116f18",
+              "name": "BitUMinting",
+              "is_proxy": false,
+              "membership": "typed_address_book",
+              "inventory_class": "project_anchor",
+              "scope_match_eligible": true,
+              "coverage_denominator_eligible": true,
+              "brief_section": "own_surface",
+              "reason": "normalized_full_corpus:project_anchor:matcher_anchor",
+              "exclusion_reasons": [],
+              "source_urls": [
+                "https://docs.bitu.io/bitu/project-design/key-addresses"
+              ],
+              "deploy_date": "2024-05-25 10:00:44+03",
+              "product_line": null,
+              "address_book_label": null,
+              "address_book_section": null,
+              "operational_liveness": "live",
+              "operational_liveness_evidence_kind": "code_present_context",
+              "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+              "operational_liveness_snapshot_status": "complete",
+              "operational_liveness_observed_at": "2026-07-15 06:52:55.938+00",
+              "selected": true
+            }
+          ]
+        },
+        {
+          "extracted_name": "BitUStaking.sol",
+          "normalized_name": "bitustaking.sol",
+          "file_path": null,
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": null,
+          "disposition": "matched_own",
+          "match_basis": "unique_name",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 1,
+          "candidates": [
+            {
+              "chain_id": 56,
+              "address": "0x61183a27ab5fdacc4d46f5af9eb9e6a93afd76d4",
+              "name": "BitUStaking",
+              "is_proxy": false,
+              "membership": "typed_address_book",
+              "inventory_class": "project_anchor",
+              "scope_match_eligible": true,
+              "coverage_denominator_eligible": true,
+              "brief_section": "own_surface",
+              "reason": "normalized_full_corpus:project_anchor:matcher_anchor",
+              "exclusion_reasons": [],
+              "source_urls": [
+                "https://docs.bitu.io/bitu/project-design/key-addresses"
+              ],
+              "deploy_date": "2024-05-25 10:04:29+03",
+              "product_line": null,
+              "address_book_label": null,
+              "address_book_section": null,
+              "operational_liveness": "live",
+              "operational_liveness_evidence_kind": "current_address_book_code",
+              "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+              "operational_liveness_snapshot_status": "complete",
+              "operational_liveness_observed_at": "2026-07-15 06:52:55.938+00",
+              "selected": true
+            }
+          ]
+        },
+        {
+          "extracted_name": "SingleAdminAccessControl.sol",
+          "normalized_name": "singleadminaccesscontrol.sol",
+          "file_path": null,
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": null,
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "StakedBITU.sol",
+          "normalized_name": "stakedbitu.sol",
+          "file_path": null,
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": null,
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        }
+      ]
     }
   ],
   "auditor_coverage": [
     {
       "auditor": "SlowMist",
       "tier": 1,
-      "contracts_covered": 2,
-      "coverage_pct": 66.7,
+      "contracts_covered": 3,
+      "coverage_pct": 60,
       "latest_audit": "2024-04"
     },
     {
       "auditor": "unknown",
       "tier": 2,
-      "contracts_covered": 2,
-      "coverage_pct": 66.7,
+      "contracts_covered": 3,
+      "coverage_pct": 60,
       "latest_audit": "2024-05"
     }
   ],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 2,
+    "native": 4,
     "upstream": 1,
     "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "contract_name": 4
+      "unique_name": 6
     },
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [],
-    "inherited_remapped_matches": []
+    "audit_scope_outcomes": [
+      {
+        "audit_id": 11487,
+        "report_name": "spaces/j4FiwL05RDG9vbiK6wKb/uploads/5zJ9iSaosjkSWbY1Alkz/SlowMist Audit Report - BitU527.pdf",
+        "status": "matched",
+        "reason": null,
+        "operator_review": null
+      },
+      {
+        "audit_id": 11488,
+        "report_name": "spaces/j4FiwL05RDG9vbiK6wKb/uploads/x0qHqp82jMYKIQkLrwRp/BitU_audit_report_2024-05-27.pdf",
+        "status": "matched",
+        "reason": null,
+        "operator_review": null
+      }
+    ],
+    "inherited_remapped_matches": [],
+    "analysis_disposition_counts": {
+      "extracted_references": 14,
+      "matched_own": 6,
+      "matched_own_proxies": 0,
+      "matched_own_live": 6,
+      "matched_own_inactive": 0,
+      "matched_own_uninitialized": 0,
+      "matched_own_liveness_unknown": 0,
+      "matched_third_party_or_infra": 0,
+      "matched_excluded_inventory": 0,
+      "matched_unclassified_address_book": 0,
+      "ambiguous": 0,
+      "unmatched": 8,
+      "accepted_scope_rows": 6
+    }
   },
-  "active_bug_bounty": null
+  "active_bug_bounty": null,
+  "non_evm_deployments": null,
+  "out_of_scope": null
 }

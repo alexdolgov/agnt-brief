@@ -1,9 +1,0 @@
-// SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.22;
-
-interface IPegStabilityModule {
-    /// @notice Redeem the underlying to a recipient for stablecoin
-    /// @param to Receiver address
-    /// @param amount Underlying amount
-    function redeem(address to, uint256 amount) external;
-}

@@ -1,7 +1,7 @@
 {
   "schema_version": "3.0",
   "project_key": "trust-wallet",
-  "generated_at": "2026-07-24T07:45:00.000Z",
+  "generated_at": "2026-07-24T14:10:00.000Z",
   "authority": {
     "activation_id": "scope-prod-20260715-v1",
     "production_closure_sha256": "38a124a34bf27378c85726318ca5f9408641faecd45c04ee5b82ad07a65cbc83",
@@ -13,7 +13,7 @@
     "liveness_closure_sha256": "e1855078572b4a5868cbe2ff93c7ad47c89e29b1b8209e48161f110e31790ddd",
     "fork_detection_run_id": "fork-structural-canonical-production-20260712",
     "deployer_decision_run_id": "deployer-candidate-production-20260712",
-    "export_input_receipt_sha256": "badfb69ca75b1f24c1a11ab95b6fafb44eb35f63eed2bc554b58d06f531dd5bd",
+    "export_input_receipt_sha256": "e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92",
     "canonical_network_policy": "offline_cache_only"
   },
   "production_state": {
@@ -28,7 +28,7 @@
   "missing_evidence": {
     "audit_dates": []
   },
-  "pipeline_run_id": "brief-priority-deployer-expansion-20260724-v1",
+  "pipeline_run_id": "brief-deployer-expansion-all-20260724-v1",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {

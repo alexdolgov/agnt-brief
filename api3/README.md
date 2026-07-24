@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `badfb69ca75b1f24c1a11ab95b6fafb44eb35f63eed2bc554b58d06f531dd5bd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Api3 (`api3`)
 - Website: [https://api3.org/](https://api3.org/)
 - Lifecycle: active (Tier 0, 16.4% below peak)
-- Generated: 2026-07-24T07:45:00.000Z
-- Pipeline run: brief-priority-deployer-expansion-20260724-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: apechain, apechain-curtis, arbitrum, arbitrum-sepolia, avalanche, avalanche-fuji, base, base-sepolia, bob, bsc, bsc-testnet, chain-10200, chain-1114, chain-1439, chain-1946, chain-202601, chain-2221, chain-3441006, chain-4, chain-46630, chain-48898, chain-50312, chain-534351, chain-808813, chain-919, chain-998, core, ethereum, fraxtal, gnosis, hoodi, hyperliquid, injective-evm, katana, katana-bokuto, kava, linea, manta-pacific, mantle, mantle-sepolia, mode, moonbase-alpha, moonbeam, optimism, optimism-sepolia, polygon, polygon-amoy, robinhood, ronin, scroll, sei, sei-testnet, sepolia, somnia, soneium, sonic, sonic-testnet, taiko, taiko-hoodi, unichain, unichain-sepolia, world, world-sepolia, zircuit
 - Contract surface: 568 unique implementations (570 raw deployments)
 - Coverage basis: 0/6 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)

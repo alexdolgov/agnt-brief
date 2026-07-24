@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `badfb69ca75b1f24c1a11ab95b6fafb44eb35f63eed2bc554b58d06f531dd5bd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ⚠️ Lifecycle status: DECLINING - TVL dropped 40.4% over 90 days
 
@@ -18,8 +18,8 @@
 - Project: BOB Bridge (`bob-bridge`)
 - Website: [https://www.gobob.xyz](https://www.gobob.xyz)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-07-24T07:45:00.000Z
-- Pipeline run: brief-priority-deployer-expansion-20260724-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: ethereum, linea, sepolia
 - Contract surface: 140 unique implementations (176 raw deployments)
 - Coverage basis: 0/24 confirmed own live verified implementations (0.0%); conservative 0.0% with 1 needs-review implementation(s)

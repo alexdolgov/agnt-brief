@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -154,13 +154,14 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 3
 - Source-verified contracts: 3
 - Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: candidate review=2, source verified unclassified=1
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| candidate review | MainstreetMinter<br>`0x1d08df027d12fd9c3441cf1829f1b47420044fae` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xe0f9d2797082797bb7361c6e26b42d68c9da5c56` |
-| candidate review | StakedmsUSD<br>`0x42ced7dce66df68a6828f74ea73612fb511471a7` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xe0f9d2797082797bb7361c6e26b42d68c9da5c56` |
-| source verified unclassified | CustodianManager<br>`0x7d4ad0e1161a7407dac817629bceb2e6d7125eab` | retained_scope_excluded_inventory | unknown | unknown | verified | n/a | `0xe0f9d2797082797bb7361c6e26b42d68c9da5c56` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| ethereum | candidate review | MainstreetMinter<br>`0x1d08df027d12fd9c3441cf1829f1b47420044fae` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xe0f9d2797082797bb7361c6e26b42d68c9da5c56` |
+| ethereum | candidate review | StakedmsUSD<br>`0x42ced7dce66df68a6828f74ea73612fb511471a7` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xe0f9d2797082797bb7361c6e26b42d68c9da5c56` |
+| ethereum | source verified unclassified | CustodianManager<br>`0x7d4ad0e1161a7407dac817629bceb2e6d7125eab` | retained_scope_excluded_inventory | unknown | unknown | verified | n/a | `0xe0f9d2797082797bb7361c6e26b42d68c9da5c56` |
 
 ## Audit Inventory
 

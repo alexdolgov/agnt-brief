@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -128,19 +128,20 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 9
 - Source-verified contracts: 9
 - Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: contamination review=4, source verified unclassified=5
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| contamination review | EternalStorageProxy<br>`0x1715a3e4a142d8b698131108995174f37aeba10d` | non_address_book | unknown | unknown | verified | n/a | `0x30e22ab6e6b576e6a9c5dd73191237a9a5c72539` |
-| contamination review | EternalStorageProxy<br>`0x2fa878ab3f87cc1c9737fc071108f904c0b0c95d` | non_address_book | unknown | unknown | verified | n/a | `0x30e22ab6e6b576e6a9c5dd73191237a9a5c72539` |
-| contamination review | EternalStorageProxy<br>`0xd0764fae29e0a6a96ff685f71cfc685456d5636c` | non_address_book | unknown | unknown | verified | n/a | `0x30e22ab6e6b576e6a9c5dd73191237a9a5c72539` |
-| contamination review | TokenFactory<br>`0x98bf93ebf5c380c0e6ae8e192a7e2ae08edacc02` | non_address_book | unknown | unknown | verified | n/a | `0x30e22ab6e6b576e6a9c5dd73191237a9a5c72539` |
-| source verified unclassified | BridgeValidators<br>`0x95b303987a60c71504d99aa1b13b4da07b0790ab` | non_address_book | unknown | unknown | verified | n/a | `0x30e22ab6e6b576e6a9c5dd73191237a9a5c72539` |
-| source verified unclassified | EternalStorageProxy<br>`0xe20e337db2a00b1c37139c873b92a0aad3f468bf` | non_address_book | unknown | unknown | verified | n/a | `0x30e22ab6e6b576e6a9c5dd73191237a9a5c72539` |
-| source verified unclassified | ForeignAMB<br>`0xe98699957d3504acd57fff861e4b77b57eb02467` | non_address_book | unknown | unknown | verified | n/a | `0x30e22ab6e6b576e6a9c5dd73191237a9a5c72539` |
-| source verified unclassified | ForeignOmnibridge<br>`0xb7df1e00ae030e966e635ede273625240546b873` | non_address_book | unknown | unknown | verified | n/a | `0x30e22ab6e6b576e6a9c5dd73191237a9a5c72539` |
-| source verified unclassified | ForeignOmnibridge<br>`0xb825fd1e322061aac2ac8b3cde4ce18b93fae276` | non_address_book | unknown | unknown | verified | n/a | `0x30e22ab6e6b576e6a9c5dd73191237a9a5c72539` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| ethereum | contamination review | EternalStorageProxy<br>`0x1715a3e4a142d8b698131108995174f37aeba10d` | non_address_book | unknown | unknown | verified | n/a | `0x30e22ab6e6b576e6a9c5dd73191237a9a5c72539` |
+| ethereum | contamination review | EternalStorageProxy<br>`0x2fa878ab3f87cc1c9737fc071108f904c0b0c95d` | non_address_book | unknown | unknown | verified | n/a | `0x30e22ab6e6b576e6a9c5dd73191237a9a5c72539` |
+| ethereum | contamination review | EternalStorageProxy<br>`0xd0764fae29e0a6a96ff685f71cfc685456d5636c` | non_address_book | unknown | unknown | verified | n/a | `0x30e22ab6e6b576e6a9c5dd73191237a9a5c72539` |
+| ethereum | contamination review | TokenFactory<br>`0x98bf93ebf5c380c0e6ae8e192a7e2ae08edacc02` | non_address_book | unknown | unknown | verified | n/a | `0x30e22ab6e6b576e6a9c5dd73191237a9a5c72539` |
+| ethereum | source verified unclassified | BridgeValidators<br>`0x95b303987a60c71504d99aa1b13b4da07b0790ab` | non_address_book | unknown | unknown | verified | n/a | `0x30e22ab6e6b576e6a9c5dd73191237a9a5c72539` |
+| ethereum | source verified unclassified | EternalStorageProxy<br>`0xe20e337db2a00b1c37139c873b92a0aad3f468bf` | non_address_book | unknown | unknown | verified | n/a | `0x30e22ab6e6b576e6a9c5dd73191237a9a5c72539` |
+| ethereum | source verified unclassified | ForeignAMB<br>`0xe98699957d3504acd57fff861e4b77b57eb02467` | non_address_book | unknown | unknown | verified | n/a | `0x30e22ab6e6b576e6a9c5dd73191237a9a5c72539` |
+| ethereum | source verified unclassified | ForeignOmnibridge<br>`0xb7df1e00ae030e966e635ede273625240546b873` | non_address_book | unknown | unknown | verified | n/a | `0x30e22ab6e6b576e6a9c5dd73191237a9a5c72539` |
+| ethereum | source verified unclassified | ForeignOmnibridge<br>`0xb825fd1e322061aac2ac8b3cde4ce18b93fae276` | non_address_book | unknown | unknown | verified | n/a | `0x30e22ab6e6b576e6a9c5dd73191237a9a5c72539` |
 
 ## Audit Inventory
 

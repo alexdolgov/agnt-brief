@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -145,13 +145,14 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 3
 - Source-verified contracts: 1
 - Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: source verified unclassified=1, unverified unclassified=2
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| source verified unclassified | BTCMTSale<br>`0x2b775b778f84b10877a41b78d6724634c7741827` | non_address_book | unknown | unknown | verified | n/a | `0x9441d425e7f90494dbe56535c6ee44737c3e0cb3` |
-| unverified unclassified | UnnamedContract<br>`0x572b0666e801f3ba80d4a66d7f10460658b1e746` | non_address_book | unknown | unknown | unverified | n/a | `0x207f7c91847fb243eb0a064f19b25e505389a8d8` |
-| unverified unclassified | UnnamedContract<br>`0xb64ea148a6b9975ad335e56a688b4a11b508976c` | non_address_book | unknown | unknown | unverified | n/a | `0x207f7c91847fb243eb0a064f19b25e505389a8d8` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| bsc | unverified unclassified | UnnamedContract<br>`0x572b0666e801f3ba80d4a66d7f10460658b1e746` | non_address_book | unknown | unknown | unverified | n/a | `0x207f7c91847fb243eb0a064f19b25e505389a8d8` |
+| bsc | unverified unclassified | UnnamedContract<br>`0xb64ea148a6b9975ad335e56a688b4a11b508976c` | non_address_book | unknown | unknown | unverified | n/a | `0x207f7c91847fb243eb0a064f19b25e505389a8d8` |
+| bsc | source verified unclassified | BTCMTSale<br>`0x2b775b778f84b10877a41b78d6724634c7741827` | non_address_book | unknown | unknown | verified | n/a | `0x9441d425e7f90494dbe56535c6ee44737c3e0cb3` |
 
 ## Audit Inventory
 

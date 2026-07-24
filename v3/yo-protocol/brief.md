@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -215,21 +215,22 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 7
 - Source-verified contracts: 8
 - Currently scope-matched contracts retained as-is: 1
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: currently scope matched=1, candidate review=2, source verified unclassified=5, unverified unclassified=3
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| currently scope matched | TransparentUpgradeableProxy<br>`0x56c3119dc3b1a75763c87d5b0a2c55e489502232` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x0e7c357813a1646f7ceed2e295fb058f21ce9295` |
-| candidate review | TransparentUpgradeableProxy<br>`0xb9a7da9e90d3b428083bae04b860faa6325b721e` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x45cbc3cbfb5b384d8e57eb833888d84e935e6bb8` |
-| candidate review | TransparentUpgradeableProxy<br>`0xf1eee0957267b1a474323ff9cff7719e964969fa` | external_dependency_or_infra | unknown | unknown | verified | review: no_fresh_structural_match | `0x0e7c357813a1646f7ceed2e295fb058f21ce9295` |
-| source verified unclassified | yoUSDT<br>`0x0a09e980cae64d8840fd9c92f165aba4bfdf9716` | retained_scope_excluded_inventory | unknown | live | verified | n/a | `0x45cbc3cbfb5b384d8e57eb833888d84e935e6bb8` |
-| source verified unclassified | Escrow<br>`0xc5da2b9174234f34c5857295776f5ea1fe70ebca` | non_address_book | unknown | unknown | verified | n/a | `0xd9c452e307a9521bae23cb9e83ba71be057207ae` |
-| source verified unclassified | YoGateway<br>`0xc33660b771db437e15e9234cc424e750376f903e` | retained_scope_excluded_inventory | unknown | unknown | verified | n/a | `0x0e7c357813a1646f7ceed2e295fb058f21ce9295` |
-| source verified unclassified | YoRegistry<br>`0x542d29b2b69f83fa65eec2f3c782968c43bc8ae8` | retained_scope_excluded_inventory | unknown | live | verified | n/a | `0x0e7c357813a1646f7ceed2e295fb058f21ce9295` |
-| source verified unclassified | YoVault_V2<br>`0x7e715d9731ee8c29e0bde2e852891e9fbef262bb` | non_address_book | unknown | unknown | verified | n/a | `0x5641d005b8f541bdfddbfacdc910f2ad5e0c3c21` |
-| unverified unclassified | UnnamedContract<br>`0x0cf9a84bb9e916229f3037dc079ef418b97bb0cf` | non_address_book | unknown | unknown | unverified | n/a | `0x0e7c357813a1646f7ceed2e295fb058f21ce9295` |
-| unverified unclassified | UnnamedContract<br>`0x542d29b2b69f83fa65eec2f3c782968c43bc8ae8` | non_address_book | unknown | unknown | unverified | n/a | `0x0e7c357813a1646f7ceed2e295fb058f21ce9295` |
-| unverified unclassified | UnnamedContract<br>`0xecd62a8bbd3503710765a53218c480127b3c816e` | non_address_book | unknown | unknown | unverified | n/a | `0x0e7c357813a1646f7ceed2e295fb058f21ce9295` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| arbitrum | source verified unclassified | YoVault_V2<br>`0x7e715d9731ee8c29e0bde2e852891e9fbef262bb` | non_address_book | unknown | unknown | verified | n/a | `0x5641d005b8f541bdfddbfacdc910f2ad5e0c3c21` |
+| base | currently scope matched | TransparentUpgradeableProxy<br>`0x56c3119dc3b1a75763c87d5b0a2c55e489502232` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x0e7c357813a1646f7ceed2e295fb058f21ce9295` |
+| base | candidate review | TransparentUpgradeableProxy<br>`0xf1eee0957267b1a474323ff9cff7719e964969fa` | external_dependency_or_infra | unknown | unknown | verified | review: no_fresh_structural_match | `0x0e7c357813a1646f7ceed2e295fb058f21ce9295` |
+| base | source verified unclassified | YoGateway<br>`0xc33660b771db437e15e9234cc424e750376f903e` | retained_scope_excluded_inventory | unknown | unknown | verified | n/a | `0x0e7c357813a1646f7ceed2e295fb058f21ce9295` |
+| base | source verified unclassified | YoRegistry<br>`0x542d29b2b69f83fa65eec2f3c782968c43bc8ae8` | retained_scope_excluded_inventory | unknown | live | verified | n/a | `0x0e7c357813a1646f7ceed2e295fb058f21ce9295` |
+| base | source verified unclassified | Escrow<br>`0xc5da2b9174234f34c5857295776f5ea1fe70ebca` | non_address_book | unknown | unknown | verified | n/a | `0xd9c452e307a9521bae23cb9e83ba71be057207ae` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0x0cf9a84bb9e916229f3037dc079ef418b97bb0cf` | non_address_book | unknown | unknown | unverified | n/a | `0x0e7c357813a1646f7ceed2e295fb058f21ce9295` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0x542d29b2b69f83fa65eec2f3c782968c43bc8ae8` | non_address_book | unknown | unknown | unverified | n/a | `0x0e7c357813a1646f7ceed2e295fb058f21ce9295` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0xecd62a8bbd3503710765a53218c480127b3c816e` | non_address_book | unknown | unknown | unverified | n/a | `0x0e7c357813a1646f7ceed2e295fb058f21ce9295` |
+| ethereum | candidate review | TransparentUpgradeableProxy<br>`0xb9a7da9e90d3b428083bae04b860faa6325b721e` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x45cbc3cbfb5b384d8e57eb833888d84e935e6bb8` |
+| ethereum | source verified unclassified | yoUSDT<br>`0x0a09e980cae64d8840fd9c92f165aba4bfdf9716` | retained_scope_excluded_inventory | unknown | live | verified | n/a | `0x45cbc3cbfb5b384d8e57eb833888d84e935e6bb8` |
 
 ## Audit Inventory
 

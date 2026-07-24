@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -156,15 +156,16 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 5
 - Source-verified contracts: 5
 - Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: source verified unclassified=5
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| source verified unclassified | XGLDExchangeRate<br>`0x7bbe7fdcd6bdffd7f767a9531b6210b87b3e46e7` | non_address_book | unknown | unknown | verified | n/a | `0x0c5401dff49665829ba0151a62b7ae3321f50b36` |
-| source verified unclassified | XGLDMinting<br>`0x2a9e3ea72575e05337a7703c8fad65a82a5b5865` | non_address_book | unknown | unknown | verified | n/a | `0x0c5401dff49665829ba0151a62b7ae3321f50b36` |
-| source verified unclassified | XGLDRateUpdaterWrapper<br>`0x0e20582d0b490039020bc0a6e9d7bd7963c63bdd` | non_address_book | unknown | unknown | verified | n/a | `0x0c5401dff49665829ba0151a62b7ae3321f50b36` |
-| source verified unclassified | XGLDRedeemer<br>`0x2ac5abd45fea3d72afc1c68500ba4a677153003c` | non_address_book | unknown | unknown | verified | n/a | `0x0c5401dff49665829ba0151a62b7ae3321f50b36` |
-| source verified unclassified | XGLDTimelockController<br>`0x99997b18733ff4a9d8e0b9c7d9dec59625f87228` | non_address_book | unknown | unknown | verified | n/a | `0x0c5401dff49665829ba0151a62b7ae3321f50b36` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| bsc | source verified unclassified | XGLDExchangeRate<br>`0x7bbe7fdcd6bdffd7f767a9531b6210b87b3e46e7` | non_address_book | unknown | unknown | verified | n/a | `0x0c5401dff49665829ba0151a62b7ae3321f50b36` |
+| bsc | source verified unclassified | XGLDMinting<br>`0x2a9e3ea72575e05337a7703c8fad65a82a5b5865` | non_address_book | unknown | unknown | verified | n/a | `0x0c5401dff49665829ba0151a62b7ae3321f50b36` |
+| bsc | source verified unclassified | XGLDRateUpdaterWrapper<br>`0x0e20582d0b490039020bc0a6e9d7bd7963c63bdd` | non_address_book | unknown | unknown | verified | n/a | `0x0c5401dff49665829ba0151a62b7ae3321f50b36` |
+| bsc | source verified unclassified | XGLDRedeemer<br>`0x2ac5abd45fea3d72afc1c68500ba4a677153003c` | non_address_book | unknown | unknown | verified | n/a | `0x0c5401dff49665829ba0151a62b7ae3321f50b36` |
+| bsc | source verified unclassified | XGLDTimelockController<br>`0x99997b18733ff4a9d8e0b9c7d9dec59625f87228` | non_address_book | unknown | unknown | verified | n/a | `0x0c5401dff49665829ba0151a62b7ae3321f50b36` |
 
 ## Audit Inventory
 

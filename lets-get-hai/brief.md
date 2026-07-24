@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -228,48 +228,49 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 38
 - Source-verified contracts: 35
 - Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: candidate review=1, contamination review=20, source verified unclassified=14, unverified unclassified=3
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| candidate review | TransparentUpgradeableProxy<br>`0xbdf4a4cc124d9a83a5774574fcbe45dc5d1f1152` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| contamination review | BasicActions<br>`0xd36b1bd5445374ceb7fe4148a719584234da7bb0` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| contamination review | BeefyVeloVaultRelayerFactory<br>`0x02fe16beec67c31e242a87832f7b92d557fdaabf` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| contamination review | CollateralBidActions<br>`0xbfac170711dfe2043f47b34f118e9fcda8fc694d` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| contamination review | CollateralJoinFactory<br>`0xfe7987b1ee45a8d592b15e8e924d50bfc8536143` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| contamination review | DebtBidActions<br>`0xfc55b886a2619bd8645549f7cb672872479f8117` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| contamination review | DelayedOracleFactory<br>`0x41a600e03eaa8d208b9230a219e0c4594897b3bb` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| contamination review | DenominatedOracleFactory<br>`0xc3a0035bcd3fcbb84a4874b19f7170bfe167fd35` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| contamination review | GlobalSettlementActions<br>`0xa0a78899cd5c093f563ef22e86b68bbc44845fa1` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| contamination review | HaiSafeManager<br>`0xb0ff82d8322f6fa9c28ec46ef0a5c343e95106c3` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| contamination review | HardcodedOracle<br>`0x8c212bcae328669c8b045d467cb78b88e0be0d39` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| contamination review | LiquidationJob<br>`0x5ef15750b5672cd6217e4e184cead440cb1b3638` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| contamination review | PIDController<br>`0x6f9aec3c0df4df7a0da66453a38b8c767972f609` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| contamination review | PIDRateSetter<br>`0x1f76f20c9d9075dc160d0e47cd214df0b7434d2f` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| contamination review | PostSettlementSurplusBidActions<br>`0x48c3416097529944946d08486f10185f18463640` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| contamination review | RewardedActions<br>`0xb688d73b58e5004341f855f3e71177316281cde7` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| contamination review | RewardPoolFactory<br>`0xa6dcda89deaca9e18e3e747b2101d6dad781b7ea` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| contamination review | SurplusBidActions<br>`0x632229a0a849bde3a1f1200cf23118b33a925cec` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| contamination review | TokenDistributor<br>`0xcb96543b9f3657be103ba6371aaed8a711cc9e02` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| contamination review | TrustedRelayerIsm<br>`0x5efe302058757c630df21608548f24545291d505` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| contamination review | UniV3RelayerFactory<br>`0xb6a352636588d833d2795e67eaafdc5b6f3948c1` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| source verified unclassified | BeefyVeloVaultRelayerFactory<br>`0x6cbfa178142829bb84cd2567f64737c43edf67fd` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| source verified unclassified | CollateralAuctionHouseFactory<br>`0x81c5c2da8c1a74c6077b03ad69ca04b74b94b427` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| source verified unclassified | DebtAuctionHouse<br>`0x7cde0d7296725afb80ea091eca8d06a377f617b3` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| source verified unclassified | GlobalSettlement<br>`0x75880aca7230462a630ad65ad5444cb1e1864218` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| source verified unclassified | HaiDelegatee<br>`0x2c6c638b93ba5a11dbd419305f14749fc8aa2b63` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| source verified unclassified | HypERC20<br>`0xfdf059e1c104a7ca3191b916e6f513c160aba0b1` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| source verified unclassified | PostSettlementSurplusAuctionHouse<br>`0x1fa281ea8d0e9db78beaa1f5b1a452058f956d66` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| source verified unclassified | PythAggregatorV3<br>`0x629b03d018efd7871e5a72c929d88e29d03c0958` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| source verified unclassified | PythAggregatorV3<br>`0xcabaac238ab70888bcc13ff93fe31d8614a25224` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| source verified unclassified | PythAggregatorV3<br>`0xdaa95c72330a7ef1390874677323b2a13e0d94d7` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| source verified unclassified | PythAggregatorV3<br>`0xefa456c58b306674ca0eafb642735df4e79ecb75` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| source verified unclassified | SettlementSurplusAuctioneer<br>`0x7edad06b56bbec6a1c5dd95b8d00aebc803afe43` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| source verified unclassified | StabilityFeeTreasury<br>`0xe9e54c55d41d6622933f9f736e0c55484b3c4f6f` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| source verified unclassified | SurplusAuctionHouse<br>`0x096125fa7e2181dba78136782365a39c3a1778e9` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| unverified unclassified | UnnamedContract<br>`0x202d13f39dd71711339fdc2d951eac4d0582d711` | non_address_book | unknown | unknown | unverified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| unverified unclassified | UnnamedContract<br>`0x4384004b516ea4665823b7931c7a17fb88e420cb` | non_address_book | unknown | unknown | unverified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
-| unverified unclassified | UnnamedContract<br>`0x61ad81f20e71051067977eb18a69ce9e98b064bc` | non_address_book | unknown | unknown | unverified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| optimism | candidate review | TransparentUpgradeableProxy<br>`0xbdf4a4cc124d9a83a5774574fcbe45dc5d1f1152` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | contamination review | BasicActions<br>`0xd36b1bd5445374ceb7fe4148a719584234da7bb0` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | contamination review | BeefyVeloVaultRelayerFactory<br>`0x02fe16beec67c31e242a87832f7b92d557fdaabf` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | contamination review | CollateralBidActions<br>`0xbfac170711dfe2043f47b34f118e9fcda8fc694d` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | contamination review | CollateralJoinFactory<br>`0xfe7987b1ee45a8d592b15e8e924d50bfc8536143` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | contamination review | DebtBidActions<br>`0xfc55b886a2619bd8645549f7cb672872479f8117` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | contamination review | DelayedOracleFactory<br>`0x41a600e03eaa8d208b9230a219e0c4594897b3bb` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | contamination review | DenominatedOracleFactory<br>`0xc3a0035bcd3fcbb84a4874b19f7170bfe167fd35` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | contamination review | GlobalSettlementActions<br>`0xa0a78899cd5c093f563ef22e86b68bbc44845fa1` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | contamination review | HaiSafeManager<br>`0xb0ff82d8322f6fa9c28ec46ef0a5c343e95106c3` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | contamination review | HardcodedOracle<br>`0x8c212bcae328669c8b045d467cb78b88e0be0d39` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | contamination review | LiquidationJob<br>`0x5ef15750b5672cd6217e4e184cead440cb1b3638` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | contamination review | PIDController<br>`0x6f9aec3c0df4df7a0da66453a38b8c767972f609` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | contamination review | PIDRateSetter<br>`0x1f76f20c9d9075dc160d0e47cd214df0b7434d2f` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | contamination review | PostSettlementSurplusBidActions<br>`0x48c3416097529944946d08486f10185f18463640` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | contamination review | RewardedActions<br>`0xb688d73b58e5004341f855f3e71177316281cde7` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | contamination review | RewardPoolFactory<br>`0xa6dcda89deaca9e18e3e747b2101d6dad781b7ea` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | contamination review | SurplusBidActions<br>`0x632229a0a849bde3a1f1200cf23118b33a925cec` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | contamination review | TokenDistributor<br>`0xcb96543b9f3657be103ba6371aaed8a711cc9e02` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | contamination review | TrustedRelayerIsm<br>`0x5efe302058757c630df21608548f24545291d505` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | contamination review | UniV3RelayerFactory<br>`0xb6a352636588d833d2795e67eaafdc5b6f3948c1` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | source verified unclassified | BeefyVeloVaultRelayerFactory<br>`0x6cbfa178142829bb84cd2567f64737c43edf67fd` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | source verified unclassified | CollateralAuctionHouseFactory<br>`0x81c5c2da8c1a74c6077b03ad69ca04b74b94b427` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | source verified unclassified | DebtAuctionHouse<br>`0x7cde0d7296725afb80ea091eca8d06a377f617b3` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | source verified unclassified | GlobalSettlement<br>`0x75880aca7230462a630ad65ad5444cb1e1864218` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | source verified unclassified | HaiDelegatee<br>`0x2c6c638b93ba5a11dbd419305f14749fc8aa2b63` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | source verified unclassified | HypERC20<br>`0xfdf059e1c104a7ca3191b916e6f513c160aba0b1` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | source verified unclassified | PostSettlementSurplusAuctionHouse<br>`0x1fa281ea8d0e9db78beaa1f5b1a452058f956d66` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | source verified unclassified | PythAggregatorV3<br>`0x629b03d018efd7871e5a72c929d88e29d03c0958` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | source verified unclassified | PythAggregatorV3<br>`0xcabaac238ab70888bcc13ff93fe31d8614a25224` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | source verified unclassified | PythAggregatorV3<br>`0xdaa95c72330a7ef1390874677323b2a13e0d94d7` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | source verified unclassified | PythAggregatorV3<br>`0xefa456c58b306674ca0eafb642735df4e79ecb75` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | source verified unclassified | SettlementSurplusAuctioneer<br>`0x7edad06b56bbec6a1c5dd95b8d00aebc803afe43` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | source verified unclassified | StabilityFeeTreasury<br>`0xe9e54c55d41d6622933f9f736e0c55484b3c4f6f` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | source verified unclassified | SurplusAuctionHouse<br>`0x096125fa7e2181dba78136782365a39c3a1778e9` | non_address_book | unknown | unknown | verified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | unverified unclassified | UnnamedContract<br>`0x202d13f39dd71711339fdc2d951eac4d0582d711` | non_address_book | unknown | unknown | unverified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | unverified unclassified | UnnamedContract<br>`0x4384004b516ea4665823b7931c7a17fb88e420cb` | non_address_book | unknown | unknown | unverified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
+| optimism | unverified unclassified | UnnamedContract<br>`0x61ad81f20e71051067977eb18a69ce9e98b064bc` | non_address_book | unknown | unknown | unverified | n/a | `0xbd8ec4cb226ebae228f8829e2ec23070b09165d3` |
 
 ## Audit Inventory
 

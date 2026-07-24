@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ⚠️ Lifecycle status: DECLINING - TVL dropped 22.8% over 90 days
 
@@ -170,15 +170,16 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 5
 - Source-verified contracts: 4
 - Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: source verified unclassified=4, unverified unclassified=1
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| source verified unclassified | Pacmoon<br>`0xde32f9d8472e4faaae17f85b631c2fe04376c830` | non_address_book | unknown | unknown | verified | n/a | `0x1381af4ead4b30b6660403fd88868e57df8c4177` |
-| source verified unclassified | PacmoonAirdrop<br>`0x02ca0e7cfcf2daa79227765c934c81e178ae4af4` | non_address_book | unknown | unknown | verified | n/a | `0x1381af4ead4b30b6660403fd88868e57df8c4177` |
-| source verified unclassified | PacmoonAirdrop<br>`0x38834c50d271b8b755493f9845b9f9b64920638a` | non_address_book | unknown | unknown | verified | n/a | `0x1381af4ead4b30b6660403fd88868e57df8c4177` |
-| source verified unclassified | PacmoonAirdrop2<br>`0x937237c6cef410395825fd431a702be7f785f24d` | non_address_book | unknown | unknown | verified | n/a | `0x1381af4ead4b30b6660403fd88868e57df8c4177` |
-| unverified unclassified | UnnamedContract<br>`0x44fa628241794c0cce502593ab4ef0834b23ea6a` | non_address_book | unknown | unknown | unverified | n/a | `0x9dfde2f071c5a96706ffa04bf676e08b3bb1d013` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| blast | source verified unclassified | Pacmoon<br>`0xde32f9d8472e4faaae17f85b631c2fe04376c830` | non_address_book | unknown | unknown | verified | n/a | `0x1381af4ead4b30b6660403fd88868e57df8c4177` |
+| blast | source verified unclassified | PacmoonAirdrop<br>`0x02ca0e7cfcf2daa79227765c934c81e178ae4af4` | non_address_book | unknown | unknown | verified | n/a | `0x1381af4ead4b30b6660403fd88868e57df8c4177` |
+| blast | source verified unclassified | PacmoonAirdrop<br>`0x38834c50d271b8b755493f9845b9f9b64920638a` | non_address_book | unknown | unknown | verified | n/a | `0x1381af4ead4b30b6660403fd88868e57df8c4177` |
+| blast | source verified unclassified | PacmoonAirdrop2<br>`0x937237c6cef410395825fd431a702be7f785f24d` | non_address_book | unknown | unknown | verified | n/a | `0x1381af4ead4b30b6660403fd88868e57df8c4177` |
+| blast | unverified unclassified | UnnamedContract<br>`0x44fa628241794c0cce502593ab4ef0834b23ea6a` | non_address_book | unknown | unknown | unverified | n/a | `0x9dfde2f071c5a96706ffa04bf676e08b3bb1d013` |
 
 ## Audit Inventory
 

@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -150,14 +150,15 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 4
 - Source-verified contracts: 4
 - Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: contamination review=4
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| contamination review | HVOriginsNFT<br>`0xffec065c2e8535b8c9e25b2be98f5adfd676d6a2` | non_address_book | unknown | unknown | verified | n/a | `0xbd395a6b355957aa1c25fd12c561cdb2e4c836b6` |
-| contamination review | MasterbrewsNFT<br>`0xfa94fe77e914af84186ba9317819e1ae0bfbd6d2` | non_address_book | unknown | unknown | verified | n/a | `0xbd395a6b355957aa1c25fd12c561cdb2e4c836b6` |
-| contamination review | WhelpsHighbornNFT<br>`0x2d4a5b93a734f411f91237d66a10d82f65104d3a` | non_address_book | unknown | unknown | verified | n/a | `0xbd395a6b355957aa1c25fd12c561cdb2e4c836b6` |
-| contamination review | WhelpsNFT<br>`0x8ce5b9b1b22be31689d43c408ba6938568e88a42` | non_address_book | unknown | unknown | verified | n/a | `0xbd395a6b355957aa1c25fd12c561cdb2e4c836b6` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| base | contamination review | HVOriginsNFT<br>`0xffec065c2e8535b8c9e25b2be98f5adfd676d6a2` | non_address_book | unknown | unknown | verified | n/a | `0xbd395a6b355957aa1c25fd12c561cdb2e4c836b6` |
+| base | contamination review | MasterbrewsNFT<br>`0xfa94fe77e914af84186ba9317819e1ae0bfbd6d2` | non_address_book | unknown | unknown | verified | n/a | `0xbd395a6b355957aa1c25fd12c561cdb2e4c836b6` |
+| base | contamination review | WhelpsHighbornNFT<br>`0x2d4a5b93a734f411f91237d66a10d82f65104d3a` | non_address_book | unknown | unknown | verified | n/a | `0xbd395a6b355957aa1c25fd12c561cdb2e4c836b6` |
+| base | contamination review | WhelpsNFT<br>`0x8ce5b9b1b22be31689d43c408ba6938568e88a42` | non_address_book | unknown | unknown | verified | n/a | `0xbd395a6b355957aa1c25fd12c561cdb2e4c836b6` |
 
 ## Audit Inventory
 

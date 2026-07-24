@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -198,16 +198,17 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 4
 - Source-verified contracts: 4
 - Currently scope-matched contracts retained as-is: 1
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: currently scope matched=1, candidate review=2, source verified unclassified=1, unverified unclassified=2
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| currently scope matched | TransparentUpgradeableProxy<br>`0x098697ba3fee4ea76294c5d6a466a4e3b3e95fe6` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xb8eaa4f956c6324435f4088cae9cda974c358508` |
-| candidate review | TransparentUpgradeableProxy<br>`0x54c398b3dff91759119f83965cfc2cd1c4f7bc75` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x98fa74aeb7c9e941500fbbe9e7950c179b76a52b` |
-| candidate review | TransparentUpgradeableProxy<br>`0x77d2bc95ab51b75960ec3a01e112460ea7bafb20` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x98fa74aeb7c9e941500fbbe9e7950c179b76a52b` |
-| source verified unclassified | ERC20IssuanceUpgradeable_Blacklist_v1<br>`0x9e40b6be5affc984f36cf118c778f0a83be20370` | retained_scope_excluded_inventory | unknown | live | verified | n/a | `0xb8eaa4f956c6324435f4088cae9cda974c358508` |
-| unverified unclassified | UnnamedContract<br>`0x62486153bf344eb109606765afc005d77fa68124` | non_address_book | unknown | unknown | unverified | n/a | `0x98fa74aeb7c9e941500fbbe9e7950c179b76a52b` |
-| unverified unclassified | UnnamedContract<br>`0xbe0ac71249b6b8ae6071117677b3b4cbdcfd42b7` | non_address_book | unknown | unknown | unverified | n/a | `0x98fa74aeb7c9e941500fbbe9e7950c179b76a52b` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| ethereum | candidate review | TransparentUpgradeableProxy<br>`0x54c398b3dff91759119f83965cfc2cd1c4f7bc75` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x98fa74aeb7c9e941500fbbe9e7950c179b76a52b` |
+| ethereum | candidate review | TransparentUpgradeableProxy<br>`0x77d2bc95ab51b75960ec3a01e112460ea7bafb20` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x98fa74aeb7c9e941500fbbe9e7950c179b76a52b` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0x62486153bf344eb109606765afc005d77fa68124` | non_address_book | unknown | unknown | unverified | n/a | `0x98fa74aeb7c9e941500fbbe9e7950c179b76a52b` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0xbe0ac71249b6b8ae6071117677b3b4cbdcfd42b7` | non_address_book | unknown | unknown | unverified | n/a | `0x98fa74aeb7c9e941500fbbe9e7950c179b76a52b` |
+| ethereum | currently scope matched | TransparentUpgradeableProxy<br>`0x098697ba3fee4ea76294c5d6a466a4e3b3e95fe6` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xb8eaa4f956c6324435f4088cae9cda974c358508` |
+| ethereum | source verified unclassified | ERC20IssuanceUpgradeable_Blacklist_v1<br>`0x9e40b6be5affc984f36cf118c778f0a83be20370` | retained_scope_excluded_inventory | unknown | live | verified | n/a | `0xb8eaa4f956c6324435f4088cae9cda974c358508` |
 
 ## Audit Inventory
 

@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -293,18 +293,19 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 6
 - Source-verified contracts: 8
 - Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: candidate review=6, source verified unclassified=2
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| candidate review | RewardsNativeToken<br>`0x3d03302456d9d9f1a6760898e4d25128425d6d32` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xad1251198815fa263f52bdf15d172bfe1b98de37` |
-| candidate review | RewardsNativeToken<br>`0x430e1e8324b0a271aa0164cecb8b5f86d1d1d077` | retained_scope_excluded_inventory | unknown | live | verified | review: no_fresh_structural_match | `0xad1251198815fa263f52bdf15d172bfe1b98de37` |
-| candidate review | TransparentUpgradeableProxy<br>`0x0f388c7c6201014ad836400e9e2ebd211bdbcb00` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xad1251198815fa263f52bdf15d172bfe1b98de37` |
-| candidate review | TransparentUpgradeableProxy<br>`0x119c46aea0ce94603719c2dd4077a5716b16b68c` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xad1251198815fa263f52bdf15d172bfe1b98de37` |
-| candidate review | TransparentUpgradeableProxy<br>`0xff5d885e58ba4845ace17a3124d4e8a7639efdd4` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xad1251198815fa263f52bdf15d172bfe1b98de37` |
-| candidate review | VaultTokenized<br>`0xce634fa642d482be2f60d1bed91414aae6e2f8ed` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xad1251198815fa263f52bdf15d172bfe1b98de37` |
-| source verified unclassified | LSTWrapper<br>`0x017d60fbf9e82ebf77860500e052287280eef453` | non_address_book | unknown | unknown | verified | n/a | `0xad1251198815fa263f52bdf15d172bfe1b98de37` |
-| source verified unclassified | LSTWrapper<br>`0xa1c16af728c7e897ddbdc15ea34b34c222438c7e` | non_address_book | unknown | unknown | verified | n/a | `0xad1251198815fa263f52bdf15d172bfe1b98de37` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| avalanche | candidate review | RewardsNativeToken<br>`0x3d03302456d9d9f1a6760898e4d25128425d6d32` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xad1251198815fa263f52bdf15d172bfe1b98de37` |
+| avalanche | candidate review | RewardsNativeToken<br>`0x430e1e8324b0a271aa0164cecb8b5f86d1d1d077` | retained_scope_excluded_inventory | unknown | live | verified | review: no_fresh_structural_match | `0xad1251198815fa263f52bdf15d172bfe1b98de37` |
+| avalanche | candidate review | TransparentUpgradeableProxy<br>`0x0f388c7c6201014ad836400e9e2ebd211bdbcb00` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xad1251198815fa263f52bdf15d172bfe1b98de37` |
+| avalanche | candidate review | TransparentUpgradeableProxy<br>`0x119c46aea0ce94603719c2dd4077a5716b16b68c` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xad1251198815fa263f52bdf15d172bfe1b98de37` |
+| avalanche | candidate review | TransparentUpgradeableProxy<br>`0xff5d885e58ba4845ace17a3124d4e8a7639efdd4` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xad1251198815fa263f52bdf15d172bfe1b98de37` |
+| avalanche | candidate review | VaultTokenized<br>`0xce634fa642d482be2f60d1bed91414aae6e2f8ed` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xad1251198815fa263f52bdf15d172bfe1b98de37` |
+| avalanche | source verified unclassified | LSTWrapper<br>`0x017d60fbf9e82ebf77860500e052287280eef453` | non_address_book | unknown | unknown | verified | n/a | `0xad1251198815fa263f52bdf15d172bfe1b98de37` |
+| avalanche | source verified unclassified | LSTWrapper<br>`0xa1c16af728c7e897ddbdc15ea34b34c222438c7e` | non_address_book | unknown | unknown | verified | n/a | `0xad1251198815fa263f52bdf15d172bfe1b98de37` |
 
 ## Audit Inventory
 

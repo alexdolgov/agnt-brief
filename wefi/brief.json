@@ -13,7 +13,7 @@
     "liveness_closure_sha256": "e1855078572b4a5868cbe2ff93c7ad47c89e29b1b8209e48161f110e31790ddd",
     "fork_detection_run_id": "fork-structural-canonical-production-20260712",
     "deployer_decision_run_id": "deployer-candidate-production-20260712",
-    "export_input_receipt_sha256": "e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92",
+    "export_input_receipt_sha256": "f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374",
     "canonical_network_policy": "offline_cache_only"
   },
   "production_state": {
@@ -155,27 +155,6 @@
       "unverified_unclassified": 40
     },
     "contracts": [
-      {
-        "chain_id": 137,
-        "chain_name": "polygon",
-        "address": "0xc1704c99278c3e5a91afb117301ea61b003aa650",
-        "name": "VotingEscrow",
-        "role": "unknown",
-        "liveness": "unknown",
-        "source_verified": true,
-        "is_proxy": false,
-        "implementation_address": null,
-        "deployer_address": "0xdd561195aa0f719de3735568c3cd46d8836c6b35",
-        "deploy_date": "2023-12-27 13:05:49+03",
-        "contamination_flag": "cleared",
-        "has_exact_address_book_entry": false,
-        "address_book_inventory_class": null,
-        "scope_inventory_class": "non_address_book",
-        "classification": "source_verified_unclassified",
-        "classification_reason": "Source is verified, but no stronger deployer/address-book classification is available.",
-        "deployer_decision": null,
-        "deployer_decision_reason": null
-      },
       {
         "chain_id": 137,
         "chain_name": "polygon",
@@ -1013,6 +992,27 @@
         "scope_inventory_class": "non_address_book",
         "classification": "unverified_unclassified",
         "classification_reason": "No stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 137,
+        "chain_name": "polygon",
+        "address": "0xc1704c99278c3e5a91afb117301ea61b003aa650",
+        "name": "VotingEscrow",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xdd561195aa0f719de3735568c3cd46d8836c6b35",
+        "deploy_date": "2023-12-27 13:05:49+03",
+        "contamination_flag": "cleared",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "source_verified_unclassified",
+        "classification_reason": "Source is verified, but no stronger deployer/address-book classification is available.",
         "deployer_decision": null,
         "deployer_decision_reason": null
       }

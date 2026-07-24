@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -140,12 +140,13 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 2
 - Source-verified contracts: 1
 - Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: source verified unclassified=1, unverified unclassified=1
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| source verified unclassified | EthStakingCrowdsale<br>`0x384365838b002f60544ece69153d685c8f5306e5` | non_address_book | unknown | unknown | verified | n/a | `0x5b26058f8d1cdf8df372097069fb9e4ba338a083` |
-| unverified unclassified | UnnamedContract<br>`0x0261f240f3dc9d045561a687885da07cd3d5ca25` | non_address_book | unknown | unknown | unverified | n/a | `0x87f6a5c2365c4b3bed843f284bd7c983ca4faec2` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| ethereum | source verified unclassified | EthStakingCrowdsale<br>`0x384365838b002f60544ece69153d685c8f5306e5` | non_address_book | unknown | unknown | verified | n/a | `0x5b26058f8d1cdf8df372097069fb9e4ba338a083` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0x0261f240f3dc9d045561a687885da07cd3d5ca25` | non_address_book | unknown | unknown | unverified | n/a | `0x87f6a5c2365c4b3bed843f284bd7c983ca4faec2` |
 
 ## Audit Inventory
 

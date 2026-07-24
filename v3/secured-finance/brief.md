@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -264,13 +264,14 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 3
 - Source-verified contracts: 3
 - Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: candidate review=1, source verified unclassified=2
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| candidate review | LendingMarketController<br>`0x60ccbf7e864df8c7223216baca4149a8190e5fc7` | non_address_book | unknown | unknown | verified | review: missing_independent_ownership_evidence | `0x4f122d7fce7971e38801af5d96fcd4ed83efd654` |
-| source verified unclassified | BeaconProxyController<br>`0x93dabbe49c0b296397909ac75489ef2cc91cf632` | non_address_book | unknown | unknown | verified | n/a | `0x4f122d7fce7971e38801af5d96fcd4ed83efd654` |
-| source verified unclassified | CurrencyController<br>`0xd024f3d33f9dbd131ffe2eff2a920e9a7f62a18b` | non_address_book | unknown | unknown | verified | n/a | `0x4f122d7fce7971e38801af5d96fcd4ed83efd654` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| ethereum | candidate review | LendingMarketController<br>`0x60ccbf7e864df8c7223216baca4149a8190e5fc7` | non_address_book | unknown | unknown | verified | review: missing_independent_ownership_evidence | `0x4f122d7fce7971e38801af5d96fcd4ed83efd654` |
+| ethereum | source verified unclassified | BeaconProxyController<br>`0x93dabbe49c0b296397909ac75489ef2cc91cf632` | non_address_book | unknown | unknown | verified | n/a | `0x4f122d7fce7971e38801af5d96fcd4ed83efd654` |
+| ethereum | source verified unclassified | CurrencyController<br>`0xd024f3d33f9dbd131ffe2eff2a920e9a7f62a18b` | non_address_book | unknown | unknown | verified | n/a | `0x4f122d7fce7971e38801af5d96fcd4ed83efd654` |
 
 ## Audit Inventory
 

@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -155,18 +155,19 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 8
 - Source-verified contracts: 8
 - Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: source verified unclassified=8
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| source verified unclassified | AllocatorStrategyAprOracle<br>`0x84d1aec938d4b9f492c50a1b5218e77195899471` | non_address_book | unknown | unknown | verified | n/a | `0x000005281a2b04a182085d37cc9e6dd552795caa` |
-| source verified unclassified | Price Oracle<br>`0x1356d2fa7cbb108cc6671bb61777cb4cef383990` | non_address_book | unknown | unknown | verified | n/a | `0x000005281a2b04a182085d37cc9e6dd552795caa` |
-| source verified unclassified | Price Oracle<br>`0x38cae071526c57f95bbbb41eb12661fbf749a15a` | non_address_book | unknown | unknown | verified | n/a | `0x000005281a2b04a182085d37cc9e6dd552795caa` |
-| source verified unclassified | Price Oracle<br>`0xe8eb473cb2aed7893f34e91a6f63c45532a7a18d` | non_address_book | unknown | unknown | verified | n/a | `0x000005281a2b04a182085d37cc9e6dd552795caa` |
-| source verified unclassified | Price Oracle<br>`0xf58f5c5b8bf903e70b8a96e04e5f6d000662e4c3` | non_address_book | unknown | unknown | verified | n/a | `0x000005281a2b04a182085d37cc9e6dd552795caa` |
-| source verified unclassified | USDC Dutch Taker<br>`0x83cf6efbbf7fb7b53c271f4bb00d8469dcc63e7b` | non_address_book | unknown | unknown | verified | n/a | `0x000005281a2b04a182085d37cc9e6dd552795caa` |
-| source verified unclassified | USDC Dutch Taker<br>`0xd8ce6ed969266e529779b6d6c35aefbd5dad68ec` | non_address_book | unknown | unknown | verified | n/a | `0x000005281a2b04a182085d37cc9e6dd552795caa` |
-| source verified unclassified | USDCToUSDS<br>`0xfb4f83c3923eab7b6254cd2399c206109970f95e` | non_address_book | unknown | unknown | verified | n/a | `0x000005281a2b04a182085d37cc9e6dd552795caa` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| ethereum | source verified unclassified | AllocatorStrategyAprOracle<br>`0x84d1aec938d4b9f492c50a1b5218e77195899471` | non_address_book | unknown | unknown | verified | n/a | `0x000005281a2b04a182085d37cc9e6dd552795caa` |
+| ethereum | source verified unclassified | Price Oracle<br>`0x1356d2fa7cbb108cc6671bb61777cb4cef383990` | non_address_book | unknown | unknown | verified | n/a | `0x000005281a2b04a182085d37cc9e6dd552795caa` |
+| ethereum | source verified unclassified | Price Oracle<br>`0x38cae071526c57f95bbbb41eb12661fbf749a15a` | non_address_book | unknown | unknown | verified | n/a | `0x000005281a2b04a182085d37cc9e6dd552795caa` |
+| ethereum | source verified unclassified | Price Oracle<br>`0xe8eb473cb2aed7893f34e91a6f63c45532a7a18d` | non_address_book | unknown | unknown | verified | n/a | `0x000005281a2b04a182085d37cc9e6dd552795caa` |
+| ethereum | source verified unclassified | Price Oracle<br>`0xf58f5c5b8bf903e70b8a96e04e5f6d000662e4c3` | non_address_book | unknown | unknown | verified | n/a | `0x000005281a2b04a182085d37cc9e6dd552795caa` |
+| ethereum | source verified unclassified | USDC Dutch Taker<br>`0x83cf6efbbf7fb7b53c271f4bb00d8469dcc63e7b` | non_address_book | unknown | unknown | verified | n/a | `0x000005281a2b04a182085d37cc9e6dd552795caa` |
+| ethereum | source verified unclassified | USDC Dutch Taker<br>`0xd8ce6ed969266e529779b6d6c35aefbd5dad68ec` | non_address_book | unknown | unknown | verified | n/a | `0x000005281a2b04a182085d37cc9e6dd552795caa` |
+| ethereum | source verified unclassified | USDCToUSDS<br>`0xfb4f83c3923eab7b6254cd2399c206109970f95e` | non_address_book | unknown | unknown | verified | n/a | `0x000005281a2b04a182085d37cc9e6dd552795caa` |
 
 ## Audit Inventory
 

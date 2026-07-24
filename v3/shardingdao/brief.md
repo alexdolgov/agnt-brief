@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -135,31 +135,32 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 21
 - Source-verified contracts: 21
 - Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: contamination review=4, source verified unclassified=17
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| contamination review | BuyoutProposals<br>`0x01da4a4a0ed7757e95848112dbb9f005b55653f2` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
-| contamination review | MarketRegulator<br>`0xdddf6b2c719d04f5f87230dd02c12ea062799b29` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
-| contamination review | ShardsMarketDelegator<br>`0x13a246e429ff8e7cf7d371133b511e601bfeb824` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
-| contamination review | TokenBarDelegator<br>`0x5953eb2e1790b9a0cba6f02cc20026a688e19b16` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
-| source verified unclassified | BuyoutProposalsDelegator<br>`0xdf83c19a6958ce28b1cb9e1751ed05b060505cfd` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
-| source verified unclassified | CrossChain<br>`0xfdaa41ba4f1d712a8777ef7ca104c308ce76fb26` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
-| source verified unclassified | CrossChainDelegator<br>`0xb661ef22dd089063d48efce2cf8e19917797bbfb` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
-| source verified unclassified | MarketingMiningDelegate<br>`0xab2cc3ab140e7596c5de18d1269ac39c53bd0db0` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
-| source verified unclassified | MarketingMiningDelegator<br>`0x0feccb11c5b61b3922c511d0f002c0b72d770dce` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
-| source verified unclassified | MerkleDistributor<br>`0xff31e3921f5bef7dcea1b01c9f7ed1153beddfdd` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
-| source verified unclassified | ShardingDAOMiningDelegate<br>`0x5cb8a52bb5191be839bbdb69bd0b24b8cbb72540` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
-| source verified unclassified | ShardingDAOMiningDelegate<br>`0x73aaf8f86fea9750273d7ff650cedbb7ae98a947` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
-| source verified unclassified | ShardingDAOMiningDelegate<br>`0x84ef19700519571d139a3815df75356b9745278c` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
-| source verified unclassified | ShardingDAOMiningDelegate<br>`0xbae5d387f2142617b15b8fe70e45743059b5672e` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
-| source verified unclassified | ShardingDAOMiningDelegator<br>`0x627af3b7bb61cb5e96a1f31277eb387defe737a1` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
-| source verified unclassified | ShardsFactory<br>`0xc1a0129499b5633ba0dcad1f24289fd3bfcf8d9f` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
-| source verified unclassified | ShardsMarketDelegateV0<br>`0xe7714925d9d3fff268f2d5caa512d983d6758c20` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
-| source verified unclassified | SHDVote<br>`0xec78795492cfb5dee4a54a38efb512c9095ec540` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
-| source verified unclassified | Timelock<br>`0xaeb5bcdb55e6abc2450595df27f993b82f375756` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
-| source verified unclassified | Timelock<br>`0xc8d11b6dc98bccd1308b65ec8c9bd54113016b0b` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
-| source verified unclassified | TokenBarDelegate<br>`0xea1e9fef904103f39c4f7c2a1f81e665711be078` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| ethereum | contamination review | BuyoutProposals<br>`0x01da4a4a0ed7757e95848112dbb9f005b55653f2` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
+| ethereum | contamination review | MarketRegulator<br>`0xdddf6b2c719d04f5f87230dd02c12ea062799b29` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
+| ethereum | contamination review | ShardsMarketDelegator<br>`0x13a246e429ff8e7cf7d371133b511e601bfeb824` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
+| ethereum | contamination review | TokenBarDelegator<br>`0x5953eb2e1790b9a0cba6f02cc20026a688e19b16` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
+| ethereum | source verified unclassified | BuyoutProposalsDelegator<br>`0xdf83c19a6958ce28b1cb9e1751ed05b060505cfd` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
+| ethereum | source verified unclassified | CrossChain<br>`0xfdaa41ba4f1d712a8777ef7ca104c308ce76fb26` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
+| ethereum | source verified unclassified | CrossChainDelegator<br>`0xb661ef22dd089063d48efce2cf8e19917797bbfb` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
+| ethereum | source verified unclassified | MarketingMiningDelegate<br>`0xab2cc3ab140e7596c5de18d1269ac39c53bd0db0` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
+| ethereum | source verified unclassified | MarketingMiningDelegator<br>`0x0feccb11c5b61b3922c511d0f002c0b72d770dce` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
+| ethereum | source verified unclassified | MerkleDistributor<br>`0xff31e3921f5bef7dcea1b01c9f7ed1153beddfdd` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
+| ethereum | source verified unclassified | ShardingDAOMiningDelegate<br>`0x5cb8a52bb5191be839bbdb69bd0b24b8cbb72540` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
+| ethereum | source verified unclassified | ShardingDAOMiningDelegate<br>`0x73aaf8f86fea9750273d7ff650cedbb7ae98a947` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
+| ethereum | source verified unclassified | ShardingDAOMiningDelegate<br>`0x84ef19700519571d139a3815df75356b9745278c` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
+| ethereum | source verified unclassified | ShardingDAOMiningDelegate<br>`0xbae5d387f2142617b15b8fe70e45743059b5672e` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
+| ethereum | source verified unclassified | ShardingDAOMiningDelegator<br>`0x627af3b7bb61cb5e96a1f31277eb387defe737a1` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
+| ethereum | source verified unclassified | ShardsFactory<br>`0xc1a0129499b5633ba0dcad1f24289fd3bfcf8d9f` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
+| ethereum | source verified unclassified | ShardsMarketDelegateV0<br>`0xe7714925d9d3fff268f2d5caa512d983d6758c20` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
+| ethereum | source verified unclassified | SHDVote<br>`0xec78795492cfb5dee4a54a38efb512c9095ec540` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
+| ethereum | source verified unclassified | Timelock<br>`0xaeb5bcdb55e6abc2450595df27f993b82f375756` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
+| ethereum | source verified unclassified | Timelock<br>`0xc8d11b6dc98bccd1308b65ec8c9bd54113016b0b` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
+| ethereum | source verified unclassified | TokenBarDelegate<br>`0xea1e9fef904103f39c4f7c2a1f81e665711be078` | non_address_book | unknown | unknown | verified | n/a | `0x9522368481c84250fd4b2a4ea03fb875024d9956` |
 
 ## Audit Inventory
 

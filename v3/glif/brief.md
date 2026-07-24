@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -128,18 +128,19 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 8
 - Source-verified contracts: 8
 - Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: candidate review=3, source verified unclassified=5
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| candidate review | Periphery<br>`0x6e7c449df74d3bf55bec96587017273bb3d39488` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xcfb4975b03aec4d81a62693d65aaf315e8f49e02` |
-| candidate review | PeripheryV3<br>`0x5922866c7258bc5a74a03276e9a86d37167019f9` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xcfb4975b03aec4d81a62693d65aaf315e8f49e02` |
-| candidate review | PeripheryV3<br>`0xadf046abce361f30354286f14ff88a610562d11c` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xcfb4975b03aec4d81a62693d65aaf315e8f49e02` |
-| source verified unclassified | ERC1967Proxy<br>`0x2223eff8c8acaac86cca206a10e707b2e9830bd8` | non_address_book | unknown | unknown | verified | n/a | `0xcfb4975b03aec4d81a62693d65aaf315e8f49e02` |
-| source verified unclassified | ERC1967Proxy<br>`0x3a24cff2f5c9af8e77775418a115214e171112b8` | non_address_book | unknown | unknown | verified | n/a | `0xcfb4975b03aec4d81a62693d65aaf315e8f49e02` |
-| source verified unclassified | ERC1967Proxy<br>`0xaed7c2ed7bb84396afcb55ff72c8f8e87ffb68f3` | non_address_book | unknown | unknown | verified | n/a | `0xcfb4975b03aec4d81a62693d65aaf315e8f49e02` |
-| source verified unclassified | ERC1967Proxy<br>`0xdbe31f5be9b68c61f0a8f0adcd29b0ec826e520f` | non_address_book | unknown | unknown | verified | n/a | `0xcfb4975b03aec4d81a62693d65aaf315e8f49e02` |
-| source verified unclassified | PoolV2<br>`0x530a0cdd4e5f24a5be77587146a05056c35edceb` | non_address_book | unknown | unknown | verified | n/a | `0xcfb4975b03aec4d81a62693d65aaf315e8f49e02` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| base | candidate review | Periphery<br>`0x6e7c449df74d3bf55bec96587017273bb3d39488` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xcfb4975b03aec4d81a62693d65aaf315e8f49e02` |
+| base | candidate review | PeripheryV3<br>`0x5922866c7258bc5a74a03276e9a86d37167019f9` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xcfb4975b03aec4d81a62693d65aaf315e8f49e02` |
+| base | candidate review | PeripheryV3<br>`0xadf046abce361f30354286f14ff88a610562d11c` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xcfb4975b03aec4d81a62693d65aaf315e8f49e02` |
+| base | source verified unclassified | ERC1967Proxy<br>`0x2223eff8c8acaac86cca206a10e707b2e9830bd8` | non_address_book | unknown | unknown | verified | n/a | `0xcfb4975b03aec4d81a62693d65aaf315e8f49e02` |
+| base | source verified unclassified | ERC1967Proxy<br>`0x3a24cff2f5c9af8e77775418a115214e171112b8` | non_address_book | unknown | unknown | verified | n/a | `0xcfb4975b03aec4d81a62693d65aaf315e8f49e02` |
+| base | source verified unclassified | ERC1967Proxy<br>`0xaed7c2ed7bb84396afcb55ff72c8f8e87ffb68f3` | non_address_book | unknown | unknown | verified | n/a | `0xcfb4975b03aec4d81a62693d65aaf315e8f49e02` |
+| base | source verified unclassified | ERC1967Proxy<br>`0xdbe31f5be9b68c61f0a8f0adcd29b0ec826e520f` | non_address_book | unknown | unknown | verified | n/a | `0xcfb4975b03aec4d81a62693d65aaf315e8f49e02` |
+| base | source verified unclassified | PoolV2<br>`0x530a0cdd4e5f24a5be77587146a05056c35edceb` | non_address_book | unknown | unknown | verified | n/a | `0xcfb4975b03aec4d81a62693d65aaf315e8f49e02` |
 
 ## Audit Inventory
 

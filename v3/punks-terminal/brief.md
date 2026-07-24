@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -145,15 +145,16 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 5
 - Source-verified contracts: 4
 - Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: contamination review=2, source verified unclassified=2, unverified unclassified=1
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| contamination review | Autoglyphs<br>`0xd4e4078ca3495de5b1d4db434bebc5a986197782` | non_address_book | unknown | unknown | verified | n/a | `0xc352b534e8b987e036a93539fd6897f53488e56a` |
-| contamination review | CryptopunksData<br>`0x16f5a35647d6f03d5d3da7b35409d65ba03af3b2` | non_address_book | unknown | unknown | verified | n/a | `0xc352b534e8b987e036a93539fd6897f53488e56a` |
-| source verified unclassified | CryptoPunks<br>`0x6ba6f2207e343923ba692e5cae646fb0f566db8d` | non_address_book | unknown | unknown | verified | n/a | `0xc352b534e8b987e036a93539fd6897f53488e56a` |
-| source verified unclassified | Meebits<br>`0x7bd29408f11d2bfc23c34f18275bbf23bb716bc7` | non_address_book | unknown | unknown | verified | n/a | `0xc352b534e8b987e036a93539fd6897f53488e56a` |
-| unverified unclassified | UnnamedContract<br>`0xc8a98626f4b26282147daeae20a695df1dfd27aa` | non_address_book | unknown | unknown | unverified | n/a | `0x3c63d087ad7de996221c57fe4e55dfcee182ae27` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| ethereum | unverified unclassified | UnnamedContract<br>`0xc8a98626f4b26282147daeae20a695df1dfd27aa` | non_address_book | unknown | unknown | unverified | n/a | `0x3c63d087ad7de996221c57fe4e55dfcee182ae27` |
+| ethereum | contamination review | Autoglyphs<br>`0xd4e4078ca3495de5b1d4db434bebc5a986197782` | non_address_book | unknown | unknown | verified | n/a | `0xc352b534e8b987e036a93539fd6897f53488e56a` |
+| ethereum | contamination review | CryptopunksData<br>`0x16f5a35647d6f03d5d3da7b35409d65ba03af3b2` | non_address_book | unknown | unknown | verified | n/a | `0xc352b534e8b987e036a93539fd6897f53488e56a` |
+| ethereum | source verified unclassified | CryptoPunks<br>`0x6ba6f2207e343923ba692e5cae646fb0f566db8d` | non_address_book | unknown | unknown | verified | n/a | `0xc352b534e8b987e036a93539fd6897f53488e56a` |
+| ethereum | source verified unclassified | Meebits<br>`0x7bd29408f11d2bfc23c34f18275bbf23bb716bc7` | non_address_book | unknown | unknown | verified | n/a | `0xc352b534e8b987e036a93539fd6897f53488e56a` |
 
 ## Audit Inventory
 

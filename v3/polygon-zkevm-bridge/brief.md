@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -146,32 +146,33 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 22
 - Source-verified contracts: 22
 - Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: candidate review=13, contamination review=2, source verified unclassified=7
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| candidate review | PolygonDataCommittee<br>`0xf4e87685e323818e0ae35dcdfc3b65106002e456` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x0f8352ca7c57731382cb7e1b80d2603e31e056f4` |
-| candidate review | PolygonRollupManager<br>`0x3b82da772c825283d85d5d6717a77c6ff582053b` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x0f8352ca7c57731382cb7e1b80d2603e31e056f4` |
-| candidate review | PolygonValidiumEtrog<br>`0x9cf80f7eb1c76ec5ae7a88b417e373449b73ac30` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x0f8352ca7c57731382cb7e1b80d2603e31e056f4` |
-| candidate review | PolygonValidiumStorageMigration<br>`0x10d296e8add0535be71639e5d1d1c30ae1c6bd4c` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x0f8352ca7c57731382cb7e1b80d2603e31e056f4` |
-| candidate review | PolygonZkEVM<br>`0xe262ea2782e2e8dbfe354048c3b5d6de9603efef` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7c280c055cbf830f77d6da3a6363e961e0b91c7d` |
-| candidate review | PolygonZkEVMBridgeV2<br>`0x0feb850b183c57534b56b7d56520133c8f9bdb65` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x0f8352ca7c57731382cb7e1b80d2603e31e056f4` |
-| candidate review | PolygonZkEVMEtrog<br>`0x2650a9a4fc64f63f573ef0f405064ef54bc46f71` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x0f8352ca7c57731382cb7e1b80d2603e31e056f4` |
-| candidate review | PolygonZkEVMExistentEtrog<br>`0x79bcb82b35a335cd8a8ec433b304a0c91f67cde0` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x0f8352ca7c57731382cb7e1b80d2603e31e056f4` |
-| candidate review | PolygonZkEVMUpgraded<br>`0x301442aa888701c8b86727d42f3c55fb0dd9ef7f` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7c280c055cbf830f77d6da3a6363e961e0b91c7d` |
-| candidate review | PolygonZkEVMUpgraded<br>`0xb1585916487acedd99952086f2950763d253b923` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x0f8352ca7c57731382cb7e1b80d2603e31e056f4` |
-| candidate review | ProxyAdmin<br>`0x1963d7b78e75a5edff9e5376e7a07a935fb3d50d` | non_address_book | unknown | unknown | verified | review: missing_fingerprint | `0x0f8352ca7c57731382cb7e1b80d2603e31e056f4` |
-| candidate review | TransparentUpgradeableProxy<br>`0x580bda1e7a0cfae92fa7f6c20a3794f169ce3cfb` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7c280c055cbf830f77d6da3a6363e961e0b91c7d` |
-| candidate review | TransparentUpgradeableProxy<br>`0x9ccd205052c732ac1df2cf7bf8aacc0e371ee0b0` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x0f8352ca7c57731382cb7e1b80d2603e31e056f4` |
-| contamination review | FflonkVerifier<br>`0x0775e11309d75aa6b0967917fb0213c5673edf81` | non_address_book | unknown | unknown | verified | n/a | `0x0f8352ca7c57731382cb7e1b80d2603e31e056f4` |
-| contamination review | FflonkVerifier<br>`0x21f65deadb3b85082ba99766f323bea90eb5a3d6` | non_address_book | unknown | unknown | verified | n/a | `0x7c280c055cbf830f77d6da3a6363e961e0b91c7d` |
-| source verified unclassified | DappnodeSmoothingPool<br>`0x5cc9f1fcb464423f81027dc6dd39edf751e9a584` | non_address_book | unknown | unknown | verified | n/a | `0x0f8352ca7c57731382cb7e1b80d2603e31e056f4` |
-| source verified unclassified | FflonkVerifier<br>`0x1c3a3da552b8662cd69538356b1e7c2e9cc1ebd8` | non_address_book | unknown | unknown | verified | n/a | `0x0f8352ca7c57731382cb7e1b80d2603e31e056f4` |
-| source verified unclassified | FflonkVerifier<br>`0x4aabba26ea9e7a7fbd052d17a167e6ae3f8ec7be` | non_address_book | unknown | unknown | verified | n/a | `0x0f8352ca7c57731382cb7e1b80d2603e31e056f4` |
-| source verified unclassified | FflonkVerifier<br>`0x5f411584e02964a028e3123c833c352cd2f5cbd5` | non_address_book | unknown | unknown | verified | n/a | `0x0f8352ca7c57731382cb7e1b80d2603e31e056f4` |
-| source verified unclassified | L1Escrow<br>`0xa4e6762eaaf259da74696f46faaf79ba9dde14e6` | non_address_book | unknown | unknown | verified | n/a | `0x528ce6792fc825115e6537c2e3b3af53f385d927` |
-| source verified unclassified | PolygonZkEVMGlobalExitRoot<br>`0xbc1ea504fc54d078514efcca1f6860b5219b6bc3` | non_address_book | unknown | unknown | verified | n/a | `0x7c280c055cbf830f77d6da3a6363e961e0b91c7d` |
-| source verified unclassified | PolygonZkEVMGlobalExitRootV2<br>`0x2e38cd55163137483e30580cb468c2dff1d85077` | non_address_book | unknown | unknown | verified | n/a | `0x0f8352ca7c57731382cb7e1b80d2603e31e056f4` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| ethereum | candidate review | PolygonDataCommittee<br>`0xf4e87685e323818e0ae35dcdfc3b65106002e456` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x0f8352ca7c57731382cb7e1b80d2603e31e056f4` |
+| ethereum | candidate review | PolygonRollupManager<br>`0x3b82da772c825283d85d5d6717a77c6ff582053b` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x0f8352ca7c57731382cb7e1b80d2603e31e056f4` |
+| ethereum | candidate review | PolygonValidiumEtrog<br>`0x9cf80f7eb1c76ec5ae7a88b417e373449b73ac30` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x0f8352ca7c57731382cb7e1b80d2603e31e056f4` |
+| ethereum | candidate review | PolygonValidiumStorageMigration<br>`0x10d296e8add0535be71639e5d1d1c30ae1c6bd4c` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x0f8352ca7c57731382cb7e1b80d2603e31e056f4` |
+| ethereum | candidate review | PolygonZkEVMBridgeV2<br>`0x0feb850b183c57534b56b7d56520133c8f9bdb65` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x0f8352ca7c57731382cb7e1b80d2603e31e056f4` |
+| ethereum | candidate review | PolygonZkEVMEtrog<br>`0x2650a9a4fc64f63f573ef0f405064ef54bc46f71` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x0f8352ca7c57731382cb7e1b80d2603e31e056f4` |
+| ethereum | candidate review | PolygonZkEVMExistentEtrog<br>`0x79bcb82b35a335cd8a8ec433b304a0c91f67cde0` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x0f8352ca7c57731382cb7e1b80d2603e31e056f4` |
+| ethereum | candidate review | PolygonZkEVMUpgraded<br>`0xb1585916487acedd99952086f2950763d253b923` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x0f8352ca7c57731382cb7e1b80d2603e31e056f4` |
+| ethereum | candidate review | ProxyAdmin<br>`0x1963d7b78e75a5edff9e5376e7a07a935fb3d50d` | non_address_book | unknown | unknown | verified | review: missing_fingerprint | `0x0f8352ca7c57731382cb7e1b80d2603e31e056f4` |
+| ethereum | candidate review | TransparentUpgradeableProxy<br>`0x9ccd205052c732ac1df2cf7bf8aacc0e371ee0b0` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x0f8352ca7c57731382cb7e1b80d2603e31e056f4` |
+| ethereum | contamination review | FflonkVerifier<br>`0x0775e11309d75aa6b0967917fb0213c5673edf81` | non_address_book | unknown | unknown | verified | n/a | `0x0f8352ca7c57731382cb7e1b80d2603e31e056f4` |
+| ethereum | source verified unclassified | DappnodeSmoothingPool<br>`0x5cc9f1fcb464423f81027dc6dd39edf751e9a584` | non_address_book | unknown | unknown | verified | n/a | `0x0f8352ca7c57731382cb7e1b80d2603e31e056f4` |
+| ethereum | source verified unclassified | FflonkVerifier<br>`0x1c3a3da552b8662cd69538356b1e7c2e9cc1ebd8` | non_address_book | unknown | unknown | verified | n/a | `0x0f8352ca7c57731382cb7e1b80d2603e31e056f4` |
+| ethereum | source verified unclassified | FflonkVerifier<br>`0x4aabba26ea9e7a7fbd052d17a167e6ae3f8ec7be` | non_address_book | unknown | unknown | verified | n/a | `0x0f8352ca7c57731382cb7e1b80d2603e31e056f4` |
+| ethereum | source verified unclassified | FflonkVerifier<br>`0x5f411584e02964a028e3123c833c352cd2f5cbd5` | non_address_book | unknown | unknown | verified | n/a | `0x0f8352ca7c57731382cb7e1b80d2603e31e056f4` |
+| ethereum | source verified unclassified | PolygonZkEVMGlobalExitRootV2<br>`0x2e38cd55163137483e30580cb468c2dff1d85077` | non_address_book | unknown | unknown | verified | n/a | `0x0f8352ca7c57731382cb7e1b80d2603e31e056f4` |
+| ethereum | source verified unclassified | L1Escrow<br>`0xa4e6762eaaf259da74696f46faaf79ba9dde14e6` | non_address_book | unknown | unknown | verified | n/a | `0x528ce6792fc825115e6537c2e3b3af53f385d927` |
+| ethereum | candidate review | PolygonZkEVM<br>`0xe262ea2782e2e8dbfe354048c3b5d6de9603efef` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7c280c055cbf830f77d6da3a6363e961e0b91c7d` |
+| ethereum | candidate review | PolygonZkEVMUpgraded<br>`0x301442aa888701c8b86727d42f3c55fb0dd9ef7f` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7c280c055cbf830f77d6da3a6363e961e0b91c7d` |
+| ethereum | candidate review | TransparentUpgradeableProxy<br>`0x580bda1e7a0cfae92fa7f6c20a3794f169ce3cfb` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7c280c055cbf830f77d6da3a6363e961e0b91c7d` |
+| ethereum | contamination review | FflonkVerifier<br>`0x21f65deadb3b85082ba99766f323bea90eb5a3d6` | non_address_book | unknown | unknown | verified | n/a | `0x7c280c055cbf830f77d6da3a6363e961e0b91c7d` |
+| ethereum | source verified unclassified | PolygonZkEVMGlobalExitRoot<br>`0xbc1ea504fc54d078514efcca1f6860b5219b6bc3` | non_address_book | unknown | unknown | verified | n/a | `0x7c280c055cbf830f77d6da3a6363e961e0b91c7d` |
 
 ## Audit Inventory
 

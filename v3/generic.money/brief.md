@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -172,21 +172,22 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 4
 - Source-verified contracts: 10
 - Currently scope-matched contracts retained as-is: 1
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: currently scope matched=1, candidate review=5, exact address book overlap=2, source verified unclassified=2, unverified unclassified=1
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| currently scope matched | TransparentUpgradeableProxy<br>`0x0503f2c5a1a4b72450c6cfa790f2097cf5cb6a01` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xe4964b24ccb6022a394d77c0d0d8de98db48966f` |
-| candidate review | ERC1967Proxy<br>`0x12dc0362553b3cd5141da3bebab0c7e51d1bd5b9` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xe4964b24ccb6022a394d77c0d0d8de98db48966f` |
-| candidate review | TransparentUpgradeableProxy<br>`0x3a64d23313e1beaaba25ec13149bd8d514c973ae` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xe4964b24ccb6022a394d77c0d0d8de98db48966f` |
-| candidate review | TransparentUpgradeableProxy<br>`0x6a7af858c40d9fcea728da11e836bdd410bc998b` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xe4964b24ccb6022a394d77c0d0d8de98db48966f` |
-| candidate review | TransparentUpgradeableProxy<br>`0xbcfafefeef2d4c2fe3f7e23cfa22b5f05a42b738` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xe4964b24ccb6022a394d77c0d0d8de98db48966f` |
-| candidate review | TransparentUpgradeableProxy<br>`0xece811d35f79c4868a2b911e55d9aa0821399edf` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xe4964b24ccb6022a394d77c0d0d8de98db48966f` |
-| exact address book overlap | Controller<br>`0xf056d4f903e53432873bfd0da32f9d6fcb92825c` | project_anchor | unknown | live | verified | n/a | `0xe4964b24ccb6022a394d77c0d0d8de98db48966f` |
-| exact address book overlap | GenericUSD<br>`0xac8c1aeb584765db16ac3e08d4736cfce198589b` | project_anchor | unknown | live | verified | n/a | `0xe4964b24ccb6022a394d77c0d0d8de98db48966f` |
-| source verified unclassified | BridgeCoordinatorL1<br>`0xcecf6e42f9aa38cb50dc6a0c3f279cd457d056b9` | retained_scope_excluded_inventory | unknown | live | verified | n/a | `0xe4964b24ccb6022a394d77c0d0d8de98db48966f` |
-| source verified unclassified | GenericUSD<br>`0x933e1a38386d96a8e418d3d93b7f376e5bfeacc0` | retained_scope_excluded_inventory | unknown | live | verified | n/a | `0xe4964b24ccb6022a394d77c0d0d8de98db48966f` |
-| unverified unclassified | UnnamedContract<br>`0x17a8b3637377a2eb934ff65e5c2ec511b1383562` | non_address_book | unknown | unknown | unverified | n/a | `0xe4964b24ccb6022a394d77c0d0d8de98db48966f` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| ethereum | currently scope matched | TransparentUpgradeableProxy<br>`0x0503f2c5a1a4b72450c6cfa790f2097cf5cb6a01` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xe4964b24ccb6022a394d77c0d0d8de98db48966f` |
+| ethereum | candidate review | ERC1967Proxy<br>`0x12dc0362553b3cd5141da3bebab0c7e51d1bd5b9` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xe4964b24ccb6022a394d77c0d0d8de98db48966f` |
+| ethereum | candidate review | TransparentUpgradeableProxy<br>`0x3a64d23313e1beaaba25ec13149bd8d514c973ae` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xe4964b24ccb6022a394d77c0d0d8de98db48966f` |
+| ethereum | candidate review | TransparentUpgradeableProxy<br>`0x6a7af858c40d9fcea728da11e836bdd410bc998b` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xe4964b24ccb6022a394d77c0d0d8de98db48966f` |
+| ethereum | candidate review | TransparentUpgradeableProxy<br>`0xbcfafefeef2d4c2fe3f7e23cfa22b5f05a42b738` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xe4964b24ccb6022a394d77c0d0d8de98db48966f` |
+| ethereum | candidate review | TransparentUpgradeableProxy<br>`0xece811d35f79c4868a2b911e55d9aa0821399edf` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xe4964b24ccb6022a394d77c0d0d8de98db48966f` |
+| ethereum | exact address book overlap | Controller<br>`0xf056d4f903e53432873bfd0da32f9d6fcb92825c` | project_anchor | unknown | live | verified | n/a | `0xe4964b24ccb6022a394d77c0d0d8de98db48966f` |
+| ethereum | exact address book overlap | GenericUSD<br>`0xac8c1aeb584765db16ac3e08d4736cfce198589b` | project_anchor | unknown | live | verified | n/a | `0xe4964b24ccb6022a394d77c0d0d8de98db48966f` |
+| ethereum | source verified unclassified | BridgeCoordinatorL1<br>`0xcecf6e42f9aa38cb50dc6a0c3f279cd457d056b9` | retained_scope_excluded_inventory | unknown | live | verified | n/a | `0xe4964b24ccb6022a394d77c0d0d8de98db48966f` |
+| ethereum | source verified unclassified | GenericUSD<br>`0x933e1a38386d96a8e418d3d93b7f376e5bfeacc0` | retained_scope_excluded_inventory | unknown | live | verified | n/a | `0xe4964b24ccb6022a394d77c0d0d8de98db48966f` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0x17a8b3637377a2eb934ff65e5c2ec511b1383562` | non_address_book | unknown | unknown | unverified | n/a | `0xe4964b24ccb6022a394d77c0d0d8de98db48966f` |
 
 ## Audit Inventory
 

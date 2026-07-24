@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -138,13 +138,14 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 3
 - Source-verified contracts: 3
 - Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: candidate review=3
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| candidate review | Dividends<br>`0x790e115a36c158908716934082cce8fc194df7e4` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x48281155da9c91bbe4d4b6ce9b3baa6c621390bc` |
-| candidate review | RestrictedSwap<br>`0x97af8f20ad2e7c5cae81682180011ffb16d33576` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x48281155da9c91bbe4d4b6ce9b3baa6c621390bc` |
-| candidate review | TransferRules<br>`0xfb23108ebefcb2079a98aa7b2480307f47cb81e7` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x48281155da9c91bbe4d4b6ce9b3baa6c621390bc` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| avalanche | candidate review | Dividends<br>`0x790e115a36c158908716934082cce8fc194df7e4` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x48281155da9c91bbe4d4b6ce9b3baa6c621390bc` |
+| avalanche | candidate review | RestrictedSwap<br>`0x97af8f20ad2e7c5cae81682180011ffb16d33576` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x48281155da9c91bbe4d4b6ce9b3baa6c621390bc` |
+| avalanche | candidate review | TransferRules<br>`0xfb23108ebefcb2079a98aa7b2480307f47cb81e7` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x48281155da9c91bbe4d4b6ce9b3baa6c621390bc` |
 
 ## Audit Inventory
 

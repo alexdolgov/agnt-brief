@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -289,16 +289,17 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 6
 - Source-verified contracts: 6
 - Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: candidate review=1, contamination review=1, source verified unclassified=4
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| candidate review | ConditionalTokensFeesHandlerV2<br>`0x7bd1a130c2206071121c0f1ef9666d4584252b84` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x898d6a4d2a441cd7cd8b153913c771ca4ffddde9` |
-| contamination review | ZeroDevWithdrawalHelper<br>`0x834b7ec39082bb51d2c46197b71bc926178600de` | non_address_book | unknown | unknown | verified | n/a | `0x24fad705b80d84a5e5cfebd772a16dedc7b48fc2` |
-| source verified unclassified | FeeModuleV2Adapter<br>`0xc6346768b256b1c3f4a6c521b5f466f9a849a7b6` | non_address_book | unknown | unknown | verified | n/a | `0x898d6a4d2a441cd7cd8b153913c771ca4ffddde9` |
-| source verified unclassified | AddressFinder<br>`0xc31bb90ee75706911faf6b831699026e5eb6f24a` | non_address_book | unknown | unknown | verified | n/a | `0x24fad705b80d84a5e5cfebd772a16dedc7b48fc2` |
-| source verified unclassified | ZeroDevWithdrawalHelper<br>`0xc45343f2e66c9b4140ddebf47352c81728bde7fd` | non_address_book | unknown | unknown | verified | n/a | `0x24fad705b80d84a5e5cfebd772a16dedc7b48fc2` |
-| source verified unclassified | ZeroDevWithdrawalHelper<br>`0xd2536605c6cba9562856fc937db410db39e71d37` | non_address_book | unknown | unknown | verified | n/a | `0x24fad705b80d84a5e5cfebd772a16dedc7b48fc2` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| blast | contamination review | ZeroDevWithdrawalHelper<br>`0x834b7ec39082bb51d2c46197b71bc926178600de` | non_address_book | unknown | unknown | verified | n/a | `0x24fad705b80d84a5e5cfebd772a16dedc7b48fc2` |
+| blast | source verified unclassified | AddressFinder<br>`0xc31bb90ee75706911faf6b831699026e5eb6f24a` | non_address_book | unknown | unknown | verified | n/a | `0x24fad705b80d84a5e5cfebd772a16dedc7b48fc2` |
+| blast | source verified unclassified | ZeroDevWithdrawalHelper<br>`0xc45343f2e66c9b4140ddebf47352c81728bde7fd` | non_address_book | unknown | unknown | verified | n/a | `0x24fad705b80d84a5e5cfebd772a16dedc7b48fc2` |
+| blast | source verified unclassified | ZeroDevWithdrawalHelper<br>`0xd2536605c6cba9562856fc937db410db39e71d37` | non_address_book | unknown | unknown | verified | n/a | `0x24fad705b80d84a5e5cfebd772a16dedc7b48fc2` |
+| bsc | candidate review | ConditionalTokensFeesHandlerV2<br>`0x7bd1a130c2206071121c0f1ef9666d4584252b84` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x898d6a4d2a441cd7cd8b153913c771ca4ffddde9` |
+| bsc | source verified unclassified | FeeModuleV2Adapter<br>`0xc6346768b256b1c3f4a6c521b5f466f9a849a7b6` | non_address_book | unknown | unknown | verified | n/a | `0x898d6a4d2a441cd7cd8b153913c771ca4ffddde9` |
 
 ## Audit Inventory
 

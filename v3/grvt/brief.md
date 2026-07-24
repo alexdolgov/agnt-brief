@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -166,23 +166,24 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 13
 - Source-verified contracts: 13
 - Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: candidate review=7, contamination review=1, source verified unclassified=5
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| candidate review | GRVTBridgeProxy<br>`0xf7b67bddb74b5ed3de49e1a6da4d1d7460f00780` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x6efb5abafd23c1317906666b9df8514aab704871` |
-| candidate review | GRVTL1TreasuryVault<br>`0x11f6ee88e10f3ac0c1560b5fd43300f6dda4ef2e` | retained_scope_excluded_inventory | unknown | unknown | verified | review: no_fresh_structural_match | `0x340d75f15bf97af6ae518d746063c591bb5368f0` |
-| candidate review | TransparentUpgradeableProxy<br>`0x17cbac7631063d8a79ddb5c3fc7c2336f0161915` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x340d75f15bf97af6ae518d746063c591bb5368f0` |
-| candidate review | TransparentUpgradeableProxy<br>`0x1ff873538e62ba19cd36ce97e48f6fc84d07a5e4` | retained_scope_excluded_inventory | unknown | unknown | verified | review: no_fresh_structural_match | `0x340d75f15bf97af6ae518d746063c591bb5368f0` |
-| candidate review | TransparentUpgradeableProxy<br>`0x3cd52b238ac856600b22756133eeb31ecb25109a` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x6efb5abafd23c1317906666b9df8514aab704871` |
-| candidate review | TransparentUpgradeableProxy<br>`0xab3b124052f0389d1cbed221d912026ac995bb95` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x6efb5abafd23c1317906666b9df8514aab704871` |
-| candidate review | TransparentUpgradeableProxy<br>`0xc95fedb8bdc763e4ef093d14e8196afafbb48f45` | retained_scope_excluded_inventory | unknown | unknown | verified | review: no_fresh_structural_match | `0x340d75f15bf97af6ae518d746063c591bb5368f0` |
-| contamination review | WithdrawalFinalizer<br>`0xc107ebafde048a6769aef78528f6779592421249` | non_address_book | unknown | unknown | verified | n/a | `0x6efb5abafd23c1317906666b9df8514aab704871` |
-| source verified unclassified | ChainAdmin<br>`0x51a561962bcdd03644233562e7e7afa134be7c95` | non_address_book | unknown | unknown | verified | n/a | `0x6efb5abafd23c1317906666b9df8514aab704871` |
-| source verified unclassified | Governance<br>`0xe81d64195072e4d09639b31abb257d0096fea9d1` | non_address_book | unknown | unknown | verified | n/a | `0x6efb5abafd23c1317906666b9df8514aab704871` |
-| source verified unclassified | GRVTBaseToken<br>`0x633040f0ae46f2e9759c33cc552cda73c52d3af8` | non_address_book | unknown | unknown | verified | n/a | `0x6efb5abafd23c1317906666b9df8514aab704871` |
-| source verified unclassified | GRVTTransactionFilterer<br>`0x8319fede99061c6723c86d366a903e8fa3a0f541` | non_address_book | unknown | unknown | verified | n/a | `0x6efb5abafd23c1317906666b9df8514aab704871` |
-| source verified unclassified | NativeBridgeGateway<br>`0xf1d59a0d1ec7c0b66b9e04bcae0130302b3c599c` | non_address_book | unknown | unknown | verified | n/a | `0x340d75f15bf97af6ae518d746063c591bb5368f0` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| ethereum | candidate review | GRVTL1TreasuryVault<br>`0x11f6ee88e10f3ac0c1560b5fd43300f6dda4ef2e` | retained_scope_excluded_inventory | unknown | unknown | verified | review: no_fresh_structural_match | `0x340d75f15bf97af6ae518d746063c591bb5368f0` |
+| ethereum | candidate review | TransparentUpgradeableProxy<br>`0x17cbac7631063d8a79ddb5c3fc7c2336f0161915` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x340d75f15bf97af6ae518d746063c591bb5368f0` |
+| ethereum | candidate review | TransparentUpgradeableProxy<br>`0x1ff873538e62ba19cd36ce97e48f6fc84d07a5e4` | retained_scope_excluded_inventory | unknown | unknown | verified | review: no_fresh_structural_match | `0x340d75f15bf97af6ae518d746063c591bb5368f0` |
+| ethereum | candidate review | TransparentUpgradeableProxy<br>`0xc95fedb8bdc763e4ef093d14e8196afafbb48f45` | retained_scope_excluded_inventory | unknown | unknown | verified | review: no_fresh_structural_match | `0x340d75f15bf97af6ae518d746063c591bb5368f0` |
+| ethereum | source verified unclassified | NativeBridgeGateway<br>`0xf1d59a0d1ec7c0b66b9e04bcae0130302b3c599c` | non_address_book | unknown | unknown | verified | n/a | `0x340d75f15bf97af6ae518d746063c591bb5368f0` |
+| ethereum | candidate review | GRVTBridgeProxy<br>`0xf7b67bddb74b5ed3de49e1a6da4d1d7460f00780` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x6efb5abafd23c1317906666b9df8514aab704871` |
+| ethereum | candidate review | TransparentUpgradeableProxy<br>`0x3cd52b238ac856600b22756133eeb31ecb25109a` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x6efb5abafd23c1317906666b9df8514aab704871` |
+| ethereum | candidate review | TransparentUpgradeableProxy<br>`0xab3b124052f0389d1cbed221d912026ac995bb95` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x6efb5abafd23c1317906666b9df8514aab704871` |
+| ethereum | contamination review | WithdrawalFinalizer<br>`0xc107ebafde048a6769aef78528f6779592421249` | non_address_book | unknown | unknown | verified | n/a | `0x6efb5abafd23c1317906666b9df8514aab704871` |
+| ethereum | source verified unclassified | ChainAdmin<br>`0x51a561962bcdd03644233562e7e7afa134be7c95` | non_address_book | unknown | unknown | verified | n/a | `0x6efb5abafd23c1317906666b9df8514aab704871` |
+| ethereum | source verified unclassified | Governance<br>`0xe81d64195072e4d09639b31abb257d0096fea9d1` | non_address_book | unknown | unknown | verified | n/a | `0x6efb5abafd23c1317906666b9df8514aab704871` |
+| ethereum | source verified unclassified | GRVTBaseToken<br>`0x633040f0ae46f2e9759c33cc552cda73c52d3af8` | non_address_book | unknown | unknown | verified | n/a | `0x6efb5abafd23c1317906666b9df8514aab704871` |
+| ethereum | source verified unclassified | GRVTTransactionFilterer<br>`0x8319fede99061c6723c86d366a903e8fa3a0f541` | non_address_book | unknown | unknown | verified | n/a | `0x6efb5abafd23c1317906666b9df8514aab704871` |
 
 ## Audit Inventory
 

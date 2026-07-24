@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -175,24 +175,25 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 3
 - Source-verified contracts: 11
 - Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: candidate review=11, unverified unclassified=3
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| candidate review | AddressManager<br>`0xcee78437ae9e15cee9c78e63757e0153c0fd7479` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xee1af3f99af8c5b93512fbe2a3f0dd5568ce087f` |
-| candidate review | Proxy<br>`0x02987e7294379b9dda99d593b0c94c68266222d1` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xee1af3f99af8c5b93512fbe2a3f0dd5568ce087f` |
-| candidate review | Proxy<br>`0x125664bef08177ca43f6f301e63118b1e4ccde09` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xee1af3f99af8c5b93512fbe2a3f0dd5568ce087f` |
-| candidate review | Proxy<br>`0x319322906beadf69df5d4607169c63d692b1adc1` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xee1af3f99af8c5b93512fbe2a3f0dd5568ce087f` |
-| candidate review | Proxy<br>`0x575aecd84083f93877291901907698f7db0bd8b0` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xee1af3f99af8c5b93512fbe2a3f0dd5568ce087f` |
-| candidate review | Proxy<br>`0x6ef8c69cfe4635d866e3e02732068022c06e724d` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xee1af3f99af8c5b93512fbe2a3f0dd5568ce087f` |
-| candidate review | Proxy<br>`0xa77995e10b0a833cdd4fa414c26e869f7aa32ddd` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xee1af3f99af8c5b93512fbe2a3f0dd5568ce087f` |
-| candidate review | Proxy<br>`0xe9d3e49b0636016c5fe9eaa2347948d0ba9f15af` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xee1af3f99af8c5b93512fbe2a3f0dd5568ce087f` |
-| candidate review | Proxy<br>`0xfec7865dac5139886585f03146ff61d9b31c2d57` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xee1af3f99af8c5b93512fbe2a3f0dd5568ce087f` |
-| candidate review | ProxyAdmin<br>`0x11b190ae661c6d6884dfee48e215691e0ddb842e` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xee1af3f99af8c5b93512fbe2a3f0dd5568ce087f` |
-| candidate review | ResolvedDelegateProxy<br>`0x2b18602877181c3cb72c687e2a771e123a3788e3` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xee1af3f99af8c5b93512fbe2a3f0dd5568ce087f` |
-| unverified unclassified | UnnamedContract<br>`0x5aec6db5fc9490120f209a313ebb8d15c91b1604` | non_address_book | unknown | unknown | unverified | n/a | `0x64337bc28d3236e4a5f2fbdd697f8ce8879621d5` |
-| unverified unclassified | UnnamedContract<br>`0x84e2fdb4f1017e70b0ace39b63953fc11e96467c` | non_address_book | unknown | unknown | unverified | n/a | `0xee1af3f99af8c5b93512fbe2a3f0dd5568ce087f` |
-| unverified unclassified | UnnamedContract<br>`0xcb7c7725484f85427c9a846f8e8dbebe15df294a` | non_address_book | unknown | unknown | unverified | n/a | `0xee1af3f99af8c5b93512fbe2a3f0dd5568ce087f` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| ethereum | unverified unclassified | UnnamedContract<br>`0x5aec6db5fc9490120f209a313ebb8d15c91b1604` | non_address_book | unknown | unknown | unverified | n/a | `0x64337bc28d3236e4a5f2fbdd697f8ce8879621d5` |
+| ethereum | candidate review | AddressManager<br>`0xcee78437ae9e15cee9c78e63757e0153c0fd7479` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xee1af3f99af8c5b93512fbe2a3f0dd5568ce087f` |
+| ethereum | candidate review | Proxy<br>`0x02987e7294379b9dda99d593b0c94c68266222d1` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xee1af3f99af8c5b93512fbe2a3f0dd5568ce087f` |
+| ethereum | candidate review | Proxy<br>`0x125664bef08177ca43f6f301e63118b1e4ccde09` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xee1af3f99af8c5b93512fbe2a3f0dd5568ce087f` |
+| ethereum | candidate review | Proxy<br>`0x319322906beadf69df5d4607169c63d692b1adc1` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xee1af3f99af8c5b93512fbe2a3f0dd5568ce087f` |
+| ethereum | candidate review | Proxy<br>`0x575aecd84083f93877291901907698f7db0bd8b0` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xee1af3f99af8c5b93512fbe2a3f0dd5568ce087f` |
+| ethereum | candidate review | Proxy<br>`0x6ef8c69cfe4635d866e3e02732068022c06e724d` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xee1af3f99af8c5b93512fbe2a3f0dd5568ce087f` |
+| ethereum | candidate review | Proxy<br>`0xa77995e10b0a833cdd4fa414c26e869f7aa32ddd` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xee1af3f99af8c5b93512fbe2a3f0dd5568ce087f` |
+| ethereum | candidate review | Proxy<br>`0xe9d3e49b0636016c5fe9eaa2347948d0ba9f15af` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xee1af3f99af8c5b93512fbe2a3f0dd5568ce087f` |
+| ethereum | candidate review | Proxy<br>`0xfec7865dac5139886585f03146ff61d9b31c2d57` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xee1af3f99af8c5b93512fbe2a3f0dd5568ce087f` |
+| ethereum | candidate review | ProxyAdmin<br>`0x11b190ae661c6d6884dfee48e215691e0ddb842e` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xee1af3f99af8c5b93512fbe2a3f0dd5568ce087f` |
+| ethereum | candidate review | ResolvedDelegateProxy<br>`0x2b18602877181c3cb72c687e2a771e123a3788e3` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xee1af3f99af8c5b93512fbe2a3f0dd5568ce087f` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0x84e2fdb4f1017e70b0ace39b63953fc11e96467c` | non_address_book | unknown | unknown | unverified | n/a | `0xee1af3f99af8c5b93512fbe2a3f0dd5568ce087f` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0xcb7c7725484f85427c9a846f8e8dbebe15df294a` | non_address_book | unknown | unknown | unverified | n/a | `0xee1af3f99af8c5b93512fbe2a3f0dd5568ce087f` |
 
 ## Audit Inventory
 

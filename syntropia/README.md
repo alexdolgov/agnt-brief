@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -128,19 +128,20 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 9
 - Source-verified contracts: 8
 - Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: candidate review=3, source verified unclassified=5, unverified unclassified=1
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| candidate review | OptinProxyFactory<br>`0x245d1c095a0ffa6f1af0f7df81818defc9cfc69d` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x3570556e41920579650d3b5789804cd75c7c5998` |
-| candidate review | Vault_v0_5_0<br>`0x23fbda54849e8904154c8f8436a59b95b1d397cb` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x3570556e41920579650d3b5789804cd75c7c5998` |
-| candidate review | Vault_v0_5_0<br>`0xc1d5f01a6491b97b94f3670aed4becb897293cf8` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x3570556e41920579650d3b5789804cd75c7c5998` |
-| source verified unclassified | ProtocolRegistry<br>`0x6fc0f2320483fa03fbfdf626ddbae2cc4b112b51` | non_address_book | unknown | unknown | verified | n/a | `0x3570556e41920579650d3b5789804cd75c7c5998` |
-| source verified unclassified | ProtocolRegistry<br>`0x8def66acf9c53e99611a9ea167d0d5019c3826b3` | non_address_book | unknown | unknown | verified | n/a | `0x3570556e41920579650d3b5789804cd75c7c5998` |
-| source verified unclassified | ProtocolRegistry<br>`0xc81dd51239119db80d5a6e1b7347f3c3bc8674d9` | non_address_book | unknown | unknown | verified | n/a | `0x3570556e41920579650d3b5789804cd75c7c5998` |
-| source verified unclassified | PTOraclePriceAdapterFactory<br>`0x70efd899dd4934e25b6042d0a06412e4ea001d05` | non_address_book | unknown | unknown | verified | n/a | `0x3570556e41920579650d3b5789804cd75c7c5998` |
-| source verified unclassified | Vault<br>`0xe50554ec802375c9c3f9c087a8a7bb8c26d3dedf` | non_address_book | unknown | unknown | verified | n/a | `0x3570556e41920579650d3b5789804cd75c7c5998` |
-| unverified unclassified | UnnamedContract<br>`0xf42bde02ebd0861a9c27c9ec4b193fdffe01e5a6` | non_address_book | unknown | unknown | unverified | n/a | `0x3570556e41920579650d3b5789804cd75c7c5998` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| ethereum | candidate review | OptinProxyFactory<br>`0x245d1c095a0ffa6f1af0f7df81818defc9cfc69d` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x3570556e41920579650d3b5789804cd75c7c5998` |
+| ethereum | candidate review | Vault_v0_5_0<br>`0x23fbda54849e8904154c8f8436a59b95b1d397cb` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x3570556e41920579650d3b5789804cd75c7c5998` |
+| ethereum | candidate review | Vault_v0_5_0<br>`0xc1d5f01a6491b97b94f3670aed4becb897293cf8` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x3570556e41920579650d3b5789804cd75c7c5998` |
+| ethereum | source verified unclassified | ProtocolRegistry<br>`0x6fc0f2320483fa03fbfdf626ddbae2cc4b112b51` | non_address_book | unknown | unknown | verified | n/a | `0x3570556e41920579650d3b5789804cd75c7c5998` |
+| ethereum | source verified unclassified | ProtocolRegistry<br>`0x8def66acf9c53e99611a9ea167d0d5019c3826b3` | non_address_book | unknown | unknown | verified | n/a | `0x3570556e41920579650d3b5789804cd75c7c5998` |
+| ethereum | source verified unclassified | ProtocolRegistry<br>`0xc81dd51239119db80d5a6e1b7347f3c3bc8674d9` | non_address_book | unknown | unknown | verified | n/a | `0x3570556e41920579650d3b5789804cd75c7c5998` |
+| ethereum | source verified unclassified | PTOraclePriceAdapterFactory<br>`0x70efd899dd4934e25b6042d0a06412e4ea001d05` | non_address_book | unknown | unknown | verified | n/a | `0x3570556e41920579650d3b5789804cd75c7c5998` |
+| ethereum | source verified unclassified | Vault<br>`0xe50554ec802375c9c3f9c087a8a7bb8c26d3dedf` | non_address_book | unknown | unknown | verified | n/a | `0x3570556e41920579650d3b5789804cd75c7c5998` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0xf42bde02ebd0861a9c27c9ec4b193fdffe01e5a6` | non_address_book | unknown | unknown | unverified | n/a | `0x3570556e41920579650d3b5789804cd75c7c5998` |
 
 ## Audit Inventory
 

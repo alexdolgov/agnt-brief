@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -131,13 +131,14 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 3
 - Source-verified contracts: 0
 - Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: unverified unclassified=3
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| unverified unclassified | UnnamedContract<br>`0x457c27257ad7e9f96dce01e57d6f25b8212720b4` | non_address_book | unknown | unknown | unverified | n/a | `0x4fbd42c99b7fa6134d860f31be296097f4945d6f` |
-| unverified unclassified | UnnamedContract<br>`0x8ed5fabddb6f899f7facf461587f4dad065aaae7` | non_address_book | unknown | unknown | unverified | n/a | `0x4fbd42c99b7fa6134d860f31be296097f4945d6f` |
-| unverified unclassified | UnnamedContract<br>`0xd5c4a01e213e659e82316dab553954ef428dca4c` | non_address_book | unknown | unknown | unverified | n/a | `0x4fbd42c99b7fa6134d860f31be296097f4945d6f` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| bsc | unverified unclassified | UnnamedContract<br>`0x457c27257ad7e9f96dce01e57d6f25b8212720b4` | non_address_book | unknown | unknown | unverified | n/a | `0x4fbd42c99b7fa6134d860f31be296097f4945d6f` |
+| bsc | unverified unclassified | UnnamedContract<br>`0x8ed5fabddb6f899f7facf461587f4dad065aaae7` | non_address_book | unknown | unknown | unverified | n/a | `0x4fbd42c99b7fa6134d860f31be296097f4945d6f` |
+| bsc | unverified unclassified | UnnamedContract<br>`0xd5c4a01e213e659e82316dab553954ef428dca4c` | non_address_book | unknown | unknown | unverified | n/a | `0x4fbd42c99b7fa6134d860f31be296097f4945d6f` |
 
 ## Audit Inventory
 

@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -144,12 +144,13 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 1
 - Source-verified contracts: 2
 - Currently scope-matched contracts retained as-is: 1
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: currently scope matched=1, source verified unclassified=1
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| currently scope matched | BitUStaking<br>`0x61183a27ab5fdacc4d46f5af9eb9e6a93afd76d4` | project_anchor | unknown | live | verified | n/a | `0x8f74491aad723acb95f4c2eb5d0d50fd8b11a835` |
-| source verified unclassified | BEP20LINK<br>`0xf8a0bf9cf54bb92f17374d9e9a321e6a111a51bd` | non_address_book | unknown | unknown | verified | n/a | `0x970609ba2c160a1b491b90867681918bdc9773af` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| bsc | currently scope matched | BitUStaking<br>`0x61183a27ab5fdacc4d46f5af9eb9e6a93afd76d4` | project_anchor | unknown | live | verified | n/a | `0x8f74491aad723acb95f4c2eb5d0d50fd8b11a835` |
+| bsc | source verified unclassified | BEP20LINK<br>`0xf8a0bf9cf54bb92f17374d9e9a321e6a111a51bd` | non_address_book | unknown | unknown | verified | n/a | `0x970609ba2c160a1b491b90867681918bdc9773af` |
 
 ## Audit Inventory
 

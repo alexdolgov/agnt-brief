@@ -13,7 +13,7 @@
     "liveness_closure_sha256": "e1855078572b4a5868cbe2ff93c7ad47c89e29b1b8209e48161f110e31790ddd",
     "fork_detection_run_id": "fork-structural-canonical-production-20260712",
     "deployer_decision_run_id": "deployer-candidate-production-20260712",
-    "export_input_receipt_sha256": "e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92",
+    "export_input_receipt_sha256": "f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374",
     "canonical_network_policy": "offline_cache_only"
   },
   "production_state": {

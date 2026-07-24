@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ⚠️ Lifecycle status: UNKNOWN - TVL dropped 38.7% over 90 days
 
@@ -201,19 +201,20 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 0
 - Source-verified contracts: 9
 - Currently scope-matched contracts retained as-is: 4
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: currently scope matched=4, candidate review=5
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| currently scope matched | TransparentUpgradeableProxy<br>`0x42a5f91586ddf041a6084494b0b375cda34d55e9` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x2b56435ed740c555573fb5ce60840e1e74a7cdc4` |
-| currently scope matched | TransparentUpgradeableProxy<br>`0xd72b0c95398058345842499975171368d49659bb` | project_anchor | operational_periphery | live | verified | review: no_fresh_structural_match | `0x2b56435ed740c555573fb5ce60840e1e74a7cdc4` |
-| currently scope matched | TransparentUpgradeableProxy<br>`0xe5f48d3d31baf15dff89fb394f10a5362711c777` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x2b56435ed740c555573fb5ce60840e1e74a7cdc4` |
-| currently scope matched | TransparentUpgradeableProxy<br>`0xe7b8c14ca8fb4f226c0a3e45e636b84809bb5d06` | project_anchor | operational_periphery | live | verified | review: no_fresh_structural_match | `0x2b56435ed740c555573fb5ce60840e1e74a7cdc4` |
-| candidate review | acreBTC<br>`0x74b5e703bc31fc70b4ba50e7807f9dad013e338c` | retained_scope_excluded_inventory | unknown | live | verified | review: no_fresh_structural_match | `0x2b56435ed740c555573fb5ce60840e1e74a7cdc4` |
-| candidate review | BitcoinDepositorV2<br>`0x7b90c10c4a5848eb687b7315456da886faca2b77` | retained_scope_excluded_inventory | unknown | live | verified | review: no_fresh_structural_match | `0x2b56435ed740c555573fb5ce60840e1e74a7cdc4` |
-| candidate review | BitcoinRedeemerV2<br>`0x8abe54daac2b36608fa9398b548d476ac78bda5d` | retained_scope_excluded_inventory | unknown | live | verified | review: no_fresh_structural_match | `0x2b56435ed740c555573fb5ce60840e1e74a7cdc4` |
-| candidate review | MidasAllocator<br>`0x8d23399cc87f2f83dc46d303326c634e4d7065b2` | retained_scope_excluded_inventory | operational_periphery | live | verified | review: no_fresh_structural_match | `0x2b56435ed740c555573fb5ce60840e1e74a7cdc4` |
-| candidate review | WithdrawalQueue<br>`0x9bc7249416ecffb75250afff374bb4b93fb031d6` | retained_scope_excluded_inventory | operational_periphery | live | verified | review: no_fresh_structural_match | `0x2b56435ed740c555573fb5ce60840e1e74a7cdc4` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| ethereum | currently scope matched | TransparentUpgradeableProxy<br>`0x42a5f91586ddf041a6084494b0b375cda34d55e9` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x2b56435ed740c555573fb5ce60840e1e74a7cdc4` |
+| ethereum | currently scope matched | TransparentUpgradeableProxy<br>`0xd72b0c95398058345842499975171368d49659bb` | project_anchor | operational_periphery | live | verified | review: no_fresh_structural_match | `0x2b56435ed740c555573fb5ce60840e1e74a7cdc4` |
+| ethereum | currently scope matched | TransparentUpgradeableProxy<br>`0xe5f48d3d31baf15dff89fb394f10a5362711c777` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x2b56435ed740c555573fb5ce60840e1e74a7cdc4` |
+| ethereum | currently scope matched | TransparentUpgradeableProxy<br>`0xe7b8c14ca8fb4f226c0a3e45e636b84809bb5d06` | project_anchor | operational_periphery | live | verified | review: no_fresh_structural_match | `0x2b56435ed740c555573fb5ce60840e1e74a7cdc4` |
+| ethereum | candidate review | acreBTC<br>`0x74b5e703bc31fc70b4ba50e7807f9dad013e338c` | retained_scope_excluded_inventory | unknown | live | verified | review: no_fresh_structural_match | `0x2b56435ed740c555573fb5ce60840e1e74a7cdc4` |
+| ethereum | candidate review | BitcoinDepositorV2<br>`0x7b90c10c4a5848eb687b7315456da886faca2b77` | retained_scope_excluded_inventory | unknown | live | verified | review: no_fresh_structural_match | `0x2b56435ed740c555573fb5ce60840e1e74a7cdc4` |
+| ethereum | candidate review | BitcoinRedeemerV2<br>`0x8abe54daac2b36608fa9398b548d476ac78bda5d` | retained_scope_excluded_inventory | unknown | live | verified | review: no_fresh_structural_match | `0x2b56435ed740c555573fb5ce60840e1e74a7cdc4` |
+| ethereum | candidate review | MidasAllocator<br>`0x8d23399cc87f2f83dc46d303326c634e4d7065b2` | retained_scope_excluded_inventory | operational_periphery | live | verified | review: no_fresh_structural_match | `0x2b56435ed740c555573fb5ce60840e1e74a7cdc4` |
+| ethereum | candidate review | WithdrawalQueue<br>`0x9bc7249416ecffb75250afff374bb4b93fb031d6` | retained_scope_excluded_inventory | operational_periphery | live | verified | review: no_fresh_structural_match | `0x2b56435ed740c555573fb5ce60840e1e74a7cdc4` |
 
 ## Audit Inventory
 

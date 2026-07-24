@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -153,16 +153,17 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 4
 - Source-verified contracts: 6
 - Currently scope-matched contracts retained as-is: 2
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: currently scope matched=2, candidate review=4
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| currently scope matched | ARTVault<br>`0x79d28c0b71dd6b0d58d50810a8da2aedefaff6ef` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xf1bf0757d9ee7c23732d8f89ba20151eaa34ac51` |
-| currently scope matched | GFToken<br>`0x6db461da03b8ad06319ff2af985e1c8dfcc004e0` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xf1bf0757d9ee7c23732d8f89ba20151eaa34ac51` |
-| candidate review | ARTVault<br>`0xaa8cd8244843bf3e34dc5a978c29854f6c234643` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xf1bf0757d9ee7c23732d8f89ba20151eaa34ac51` |
-| candidate review | GFToken<br>`0xbad7118c5b445d44dee72e186d594d315ac7792b` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xf1bf0757d9ee7c23732d8f89ba20151eaa34ac51` |
-| candidate review | GFToken<br>`0xdb399e1d142d82dfcb8a583a4f904dc733551dcc` | non_address_book | unknown | unknown | verified | review: missing_fingerprint | `0xf1bf0757d9ee7c23732d8f89ba20151eaa34ac51` |
-| candidate review | GFToken<br>`0xdb3fb41167dd5318af04da5aae43e56d6ddd77a3` | non_address_book | unknown | unknown | verified | review: missing_fingerprint | `0xf1bf0757d9ee7c23732d8f89ba20151eaa34ac51` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| bsc | currently scope matched | ARTVault<br>`0x79d28c0b71dd6b0d58d50810a8da2aedefaff6ef` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xf1bf0757d9ee7c23732d8f89ba20151eaa34ac51` |
+| bsc | currently scope matched | GFToken<br>`0x6db461da03b8ad06319ff2af985e1c8dfcc004e0` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xf1bf0757d9ee7c23732d8f89ba20151eaa34ac51` |
+| bsc | candidate review | ARTVault<br>`0xaa8cd8244843bf3e34dc5a978c29854f6c234643` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xf1bf0757d9ee7c23732d8f89ba20151eaa34ac51` |
+| bsc | candidate review | GFToken<br>`0xbad7118c5b445d44dee72e186d594d315ac7792b` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xf1bf0757d9ee7c23732d8f89ba20151eaa34ac51` |
+| bsc | candidate review | GFToken<br>`0xdb399e1d142d82dfcb8a583a4f904dc733551dcc` | non_address_book | unknown | unknown | verified | review: missing_fingerprint | `0xf1bf0757d9ee7c23732d8f89ba20151eaa34ac51` |
+| bsc | candidate review | GFToken<br>`0xdb3fb41167dd5318af04da5aae43e56d6ddd77a3` | non_address_book | unknown | unknown | verified | review: missing_fingerprint | `0xf1bf0757d9ee7c23732d8f89ba20151eaa34ac51` |
 
 ## Audit Inventory
 

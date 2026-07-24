@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ⚠️ Lifecycle status: UNKNOWN - TVL dropped 38.2% over 90 days
 
@@ -143,14 +143,15 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 4
 - Source-verified contracts: 2
 - Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: candidate review=1, source verified unclassified=1, unverified unclassified=2
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| candidate review | ApeCoinStakedVoting<br>`0x0187ae64e905b4fe7dd1568a5642fbef05e96e71` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x33f32d80556f76c88f5206fb5bb69ab91d944e49` |
-| source verified unclassified | StETHVault<br>`0xc8a12b1db09ec5a43919906d94fa7eeaef1131d1` | non_address_book | unknown | unknown | verified | n/a | `0xa42095bb1c45c51ecd6535f1130eec65dbe04484` |
-| unverified unclassified | UnnamedContract<br>`0x27e800528bf4f0b1a8831c85763d20a26047b84d` | non_address_book | unknown | unknown | unverified | n/a | `0xa420b688fad7f076f7475cead5cc047235f554d4` |
-| unverified unclassified | UnnamedContract<br>`0x5b61c1c63206052b852c24b36d23abe35dac196c` | non_address_book | unknown | unknown | unverified | n/a | `0xa42095bb1c45c51ecd6535f1130eec65dbe04484` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| ethereum | candidate review | ApeCoinStakedVoting<br>`0x0187ae64e905b4fe7dd1568a5642fbef05e96e71` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x33f32d80556f76c88f5206fb5bb69ab91d944e49` |
+| ethereum | source verified unclassified | StETHVault<br>`0xc8a12b1db09ec5a43919906d94fa7eeaef1131d1` | non_address_book | unknown | unknown | verified | n/a | `0xa42095bb1c45c51ecd6535f1130eec65dbe04484` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0x5b61c1c63206052b852c24b36d23abe35dac196c` | non_address_book | unknown | unknown | unverified | n/a | `0xa42095bb1c45c51ecd6535f1130eec65dbe04484` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0x27e800528bf4f0b1a8831c85763d20a26047b84d` | non_address_book | unknown | unknown | unverified | n/a | `0xa420b688fad7f076f7475cead5cc047235f554d4` |
 
 ## Audit Inventory
 

@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -405,16 +405,17 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 4
 - Source-verified contracts: 4
 - Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: candidate review=1, contamination review=2, source verified unclassified=1, unverified unclassified=2
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| candidate review | RETHPriceFeed<br>`0x34f1e9c7dcc279ec70d3c4488eb2d80fba8b7b2b` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x83cfa33a2ee969f8add9a2acdcdc0d7e556e5ed0` |
-| contamination review | AddressesRegistry<br>`0x20f7c9ad66983f6523a0881d0f82406541417526` | project_anchor | unknown | live | verified | n/a | `0x83cfa33a2ee969f8add9a2acdcdc0d7e556e5ed0` |
-| contamination review | VotiumInitiative<br>`0x69efec83296c711db4a403b1ee281e87f99590d6` | non_address_book | unknown | unknown | verified | n/a | `0x83cfa33a2ee969f8add9a2acdcdc0d7e556e5ed0` |
-| source verified unclassified | VotiumInitiative<br>`0xb5d64a1afe7eadcc79b99bdfb932d406aae66aaa` | non_address_book | unknown | unknown | verified | n/a | `0x83cfa33a2ee969f8add9a2acdcdc0d7e556e5ed0` |
-| unverified unclassified | UnnamedContract<br>`0x2ebef24da09489218ba2becb01867f6daaedcd4b` | non_address_book | unknown | unknown | unverified | n/a | `0xa850535d3628cd4dfeb528dc85cfa93051ff2984` |
-| unverified unclassified | UnnamedContract<br>`0x4c517d4e2c851ca76d7ec94b805269df0f2201de` | non_address_book | unknown | unknown | unverified | n/a | `0xa850535d3628cd4dfeb528dc85cfa93051ff2984` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| ethereum | candidate review | RETHPriceFeed<br>`0x34f1e9c7dcc279ec70d3c4488eb2d80fba8b7b2b` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x83cfa33a2ee969f8add9a2acdcdc0d7e556e5ed0` |
+| ethereum | contamination review | AddressesRegistry<br>`0x20f7c9ad66983f6523a0881d0f82406541417526` | project_anchor | unknown | live | verified | n/a | `0x83cfa33a2ee969f8add9a2acdcdc0d7e556e5ed0` |
+| ethereum | contamination review | VotiumInitiative<br>`0x69efec83296c711db4a403b1ee281e87f99590d6` | non_address_book | unknown | unknown | verified | n/a | `0x83cfa33a2ee969f8add9a2acdcdc0d7e556e5ed0` |
+| ethereum | source verified unclassified | VotiumInitiative<br>`0xb5d64a1afe7eadcc79b99bdfb932d406aae66aaa` | non_address_book | unknown | unknown | verified | n/a | `0x83cfa33a2ee969f8add9a2acdcdc0d7e556e5ed0` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0x2ebef24da09489218ba2becb01867f6daaedcd4b` | non_address_book | unknown | unknown | unverified | n/a | `0xa850535d3628cd4dfeb528dc85cfa93051ff2984` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0x4c517d4e2c851ca76d7ec94b805269df0f2201de` | non_address_book | unknown | unknown | unverified | n/a | `0xa850535d3628cd4dfeb528dc85cfa93051ff2984` |
 
 ## Audit Inventory
 

@@ -13,7 +13,7 @@
     "liveness_closure_sha256": "e1855078572b4a5868cbe2ff93c7ad47c89e29b1b8209e48161f110e31790ddd",
     "fork_detection_run_id": "fork-structural-canonical-production-20260712",
     "deployer_decision_run_id": "deployer-candidate-production-20260712",
-    "export_input_receipt_sha256": "e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92",
+    "export_input_receipt_sha256": "f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374",
     "canonical_network_policy": "offline_cache_only"
   },
   "production_state": {
@@ -163,27 +163,6 @@
       {
         "chain_id": 42161,
         "chain_name": "arbitrum",
-        "address": "0x25118290e6a5f4139381d072181157035864099d",
-        "name": "ERC1967Proxy",
-        "role": "unknown",
-        "liveness": "unknown",
-        "source_verified": true,
-        "is_proxy": true,
-        "implementation_address": "0x47716e35f0fa48301aedc77778f794e0ed2c3f0b",
-        "deployer_address": "0xbd80a63799176d0922ce251072a00b8c75ecc331",
-        "deploy_date": "2025-08-26 16:50:01+03",
-        "contamination_flag": "review",
-        "has_exact_address_book_entry": false,
-        "address_book_inventory_class": null,
-        "scope_inventory_class": "non_address_book",
-        "classification": "candidate_review",
-        "classification_reason": "no_fresh_structural_match",
-        "deployer_decision": "review",
-        "deployer_decision_reason": "no_fresh_structural_match"
-      },
-      {
-        "chain_id": 42161,
-        "chain_name": "arbitrum",
         "address": "0x8e4fd92a32036201ad38b4ccf37ebda72e6ad086",
         "name": "ERC1967Proxy",
         "role": "unknown",
@@ -222,6 +201,27 @@
         "classification_reason": "Source is verified, but no stronger deployer/address-book classification is available.",
         "deployer_decision": null,
         "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 42161,
+        "chain_name": "arbitrum",
+        "address": "0x25118290e6a5f4139381d072181157035864099d",
+        "name": "ERC1967Proxy",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": true,
+        "implementation_address": "0x47716e35f0fa48301aedc77778f794e0ed2c3f0b",
+        "deployer_address": "0xbd80a63799176d0922ce251072a00b8c75ecc331",
+        "deploy_date": "2025-08-26 16:50:01+03",
+        "contamination_flag": "review",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "candidate_review",
+        "classification_reason": "no_fresh_structural_match",
+        "deployer_decision": "review",
+        "deployer_decision_reason": "no_fresh_structural_match"
       }
     ]
   },

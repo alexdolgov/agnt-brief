@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -162,24 +162,25 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 14
 - Source-verified contracts: 12
 - Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: candidate review=5, source verified unclassified=7, unverified unclassified=2
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| candidate review | DistributionCreator<br>`0x99fe8557a8f322525262720c52b7d57c56924012` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
-| candidate review | DistributionCreator<br>`0xc42b7a34cb37ee450cc8059b10d839e4753229d5` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
-| candidate review | Distributor<br>`0x04a7d169c5b14d2e29a3ba8b5071dda5e365c199` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
-| candidate review | Distributor<br>`0x44e3d3bba34e16a67c633daf86114284fc628819` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
-| candidate review | Distributor<br>`0xa0e088fb02a8d5a71d337b88b7629b0413f53de4` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
-| source verified unclassified | AgTokenSideChainMultiBridgeNameable<br>`0xe9169817edbfe5fcf629ed8b3c2a34e2a50ec84c` | non_address_book | unknown | unknown | verified | n/a | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
-| source verified unclassified | ERC1967Proxy<br>`0x1c6f6e2b226d99af2c34d875a03e055492914442` | non_address_book | unknown | unknown | verified | n/a | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
-| source verified unclassified | RadiantMerklTokenWrapper<br>`0x954ec713a3915b504a6f288563e5218f597e1895` | non_address_book | unknown | unknown | verified | n/a | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
-| source verified unclassified | RadiantMerklTokenWrapper<br>`0xc3ef7ed4f97450ae8da2473068375788bdeb5c5c` | non_address_book | unknown | unknown | verified | n/a | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
-| source verified unclassified | RadiantMerklTokenWrapper<br>`0xe04db2ba949a9e65b4bf52b11a0f9f221cf5fd21` | non_address_book | unknown | unknown | verified | n/a | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
-| source verified unclassified | SavingsNameable<br>`0xb5ecaa1a867feccd6d87604bc16a2b6b53d706bf` | non_address_book | unknown | unknown | verified | n/a | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
-| source verified unclassified | TokenLocker<br>`0x63dc02bb25e7bf7eaa0e42e71d785a388acd740b` | non_address_book | unknown | unknown | verified | n/a | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
-| unverified unclassified | UnnamedContract<br>`0x22b0ac22d5d58f05873e470bca5db7ceb5c47f5e` | non_address_book | unknown | unknown | unverified | n/a | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
-| unverified unclassified | UnnamedContract<br>`0x6b7af22279fd4bd1377f5bccfc239d638303c936` | non_address_book | unknown | unknown | unverified | n/a | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| bsc | candidate review | DistributionCreator<br>`0x99fe8557a8f322525262720c52b7d57c56924012` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
+| bsc | candidate review | DistributionCreator<br>`0xc42b7a34cb37ee450cc8059b10d839e4753229d5` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
+| bsc | candidate review | Distributor<br>`0x04a7d169c5b14d2e29a3ba8b5071dda5e365c199` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
+| bsc | candidate review | Distributor<br>`0x44e3d3bba34e16a67c633daf86114284fc628819` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
+| bsc | candidate review | Distributor<br>`0xa0e088fb02a8d5a71d337b88b7629b0413f53de4` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
+| bsc | source verified unclassified | AgTokenSideChainMultiBridgeNameable<br>`0xe9169817edbfe5fcf629ed8b3c2a34e2a50ec84c` | non_address_book | unknown | unknown | verified | n/a | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
+| bsc | source verified unclassified | ERC1967Proxy<br>`0x1c6f6e2b226d99af2c34d875a03e055492914442` | non_address_book | unknown | unknown | verified | n/a | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
+| bsc | source verified unclassified | RadiantMerklTokenWrapper<br>`0x954ec713a3915b504a6f288563e5218f597e1895` | non_address_book | unknown | unknown | verified | n/a | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
+| bsc | source verified unclassified | RadiantMerklTokenWrapper<br>`0xc3ef7ed4f97450ae8da2473068375788bdeb5c5c` | non_address_book | unknown | unknown | verified | n/a | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
+| bsc | source verified unclassified | RadiantMerklTokenWrapper<br>`0xe04db2ba949a9e65b4bf52b11a0f9f221cf5fd21` | non_address_book | unknown | unknown | verified | n/a | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
+| bsc | source verified unclassified | SavingsNameable<br>`0xb5ecaa1a867feccd6d87604bc16a2b6b53d706bf` | non_address_book | unknown | unknown | verified | n/a | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
+| bsc | source verified unclassified | TokenLocker<br>`0x63dc02bb25e7bf7eaa0e42e71d785a388acd740b` | non_address_book | unknown | unknown | verified | n/a | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
+| bsc | unverified unclassified | UnnamedContract<br>`0x22b0ac22d5d58f05873e470bca5db7ceb5c47f5e` | non_address_book | unknown | unknown | unverified | n/a | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
+| bsc | unverified unclassified | UnnamedContract<br>`0x6b7af22279fd4bd1377f5bccfc239d638303c936` | non_address_book | unknown | unknown | unverified | n/a | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
 
 ## Audit Inventory
 

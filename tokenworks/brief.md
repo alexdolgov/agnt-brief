@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -206,27 +206,28 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 17
 - Source-verified contracts: 6
 - Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: candidate review=1, contamination review=3, source verified unclassified=2, unverified unclassified=11
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| candidate review | FundingWorksFactory<br>`0xa4cde76aaca6148ea52715cdd3f460f7fe091783` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x019817ad02a31b990433542097be29d97613e8cb` |
-| contamination review | Autoglyphs<br>`0xd4e4078ca3495de5b1d4db434bebc5a986197782` | non_address_book | unknown | unknown | verified | n/a | `0xc352b534e8b987e036a93539fd6897f53488e56a` |
-| contamination review | CryptopunksData<br>`0x16f5a35647d6f03d5d3da7b35409d65ba03af3b2` | non_address_book | unknown | unknown | verified | n/a | `0xc352b534e8b987e036a93539fd6897f53488e56a` |
-| contamination review | V4Quoter<br>`0x1a382acdabb6ec137cbd65f40d84c5e55aa65a15` | non_address_book | unknown | unknown | verified | n/a | `0x019817ad02a31b990433542097be29d97613e8cb` |
-| source verified unclassified | CryptoPunks<br>`0x6ba6f2207e343923ba692e5cae646fb0f566db8d` | non_address_book | unknown | unknown | verified | n/a | `0xc352b534e8b987e036a93539fd6897f53488e56a` |
-| source verified unclassified | Meebits<br>`0x7bd29408f11d2bfc23c34f18275bbf23bb716bc7` | non_address_book | unknown | unknown | verified | n/a | `0xc352b534e8b987e036a93539fd6897f53488e56a` |
-| unverified unclassified | UnnamedContract<br>`0x1c175b9f0e8c73ed3e677e1cbb1b5a2dd4373bfe` | non_address_book | unknown | unknown | unverified | n/a | `0x019817ad02a31b990433542097be29d97613e8cb` |
-| unverified unclassified | UnnamedContract<br>`0x3dc29c310c1c987b338321f4d8150a3228f8af53` | non_address_book | unknown | unknown | unverified | n/a | `0x019817ad02a31b990433542097be29d97613e8cb` |
-| unverified unclassified | UnnamedContract<br>`0x3f59f76f8249347a90d80f874dee2ac87797c6ce` | non_address_book | unknown | unknown | unverified | n/a | `0x019817ad02a31b990433542097be29d97613e8cb` |
-| unverified unclassified | UnnamedContract<br>`0x47883e389bb6be3650b0c0935b300b50a95fc072` | non_address_book | unknown | unknown | unverified | n/a | `0x019817ad02a31b990433542097be29d97613e8cb` |
-| unverified unclassified | UnnamedContract<br>`0x6596170e4cf89c7b390637e97531fd0ac28a6322` | non_address_book | unknown | unknown | unverified | n/a | `0x019817ad02a31b990433542097be29d97613e8cb` |
-| unverified unclassified | UnnamedContract<br>`0x6a1a1c0cfb3d3c538e13d36d608a5bcaa992fc78` | non_address_book | unknown | unknown | unverified | n/a | `0x019817ad02a31b990433542097be29d97613e8cb` |
-| unverified unclassified | UnnamedContract<br>`0x854352b275cf6a0dffcf2983c986fbe9345e17c3` | non_address_book | unknown | unknown | unverified | n/a | `0x019817ad02a31b990433542097be29d97613e8cb` |
-| unverified unclassified | UnnamedContract<br>`0xa084c33fb7a467307452898b8d58165ebd2e5d9f` | non_address_book | unknown | unknown | unverified | n/a | `0x019817ad02a31b990433542097be29d97613e8cb` |
-| unverified unclassified | UnnamedContract<br>`0xa0df17b5ac76ababa36e1450e2cbcd18a620c845` | non_address_book | unknown | unknown | unverified | n/a | `0x019817ad02a31b990433542097be29d97613e8cb` |
-| unverified unclassified | UnnamedContract<br>`0xb276f62db0ce8ca2ca5bc522695be604521eac1c` | non_address_book | unknown | unknown | unverified | n/a | `0x019817ad02a31b990433542097be29d97613e8cb` |
-| unverified unclassified | UnnamedContract<br>`0xd4085d38855f17edf0b1ccbfad7b3846fb305655` | non_address_book | unknown | unknown | unverified | n/a | `0x019817ad02a31b990433542097be29d97613e8cb` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| ethereum | candidate review | FundingWorksFactory<br>`0xa4cde76aaca6148ea52715cdd3f460f7fe091783` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x019817ad02a31b990433542097be29d97613e8cb` |
+| ethereum | contamination review | V4Quoter<br>`0x1a382acdabb6ec137cbd65f40d84c5e55aa65a15` | non_address_book | unknown | unknown | verified | n/a | `0x019817ad02a31b990433542097be29d97613e8cb` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0x1c175b9f0e8c73ed3e677e1cbb1b5a2dd4373bfe` | non_address_book | unknown | unknown | unverified | n/a | `0x019817ad02a31b990433542097be29d97613e8cb` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0x3dc29c310c1c987b338321f4d8150a3228f8af53` | non_address_book | unknown | unknown | unverified | n/a | `0x019817ad02a31b990433542097be29d97613e8cb` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0x3f59f76f8249347a90d80f874dee2ac87797c6ce` | non_address_book | unknown | unknown | unverified | n/a | `0x019817ad02a31b990433542097be29d97613e8cb` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0x47883e389bb6be3650b0c0935b300b50a95fc072` | non_address_book | unknown | unknown | unverified | n/a | `0x019817ad02a31b990433542097be29d97613e8cb` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0x6596170e4cf89c7b390637e97531fd0ac28a6322` | non_address_book | unknown | unknown | unverified | n/a | `0x019817ad02a31b990433542097be29d97613e8cb` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0x6a1a1c0cfb3d3c538e13d36d608a5bcaa992fc78` | non_address_book | unknown | unknown | unverified | n/a | `0x019817ad02a31b990433542097be29d97613e8cb` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0x854352b275cf6a0dffcf2983c986fbe9345e17c3` | non_address_book | unknown | unknown | unverified | n/a | `0x019817ad02a31b990433542097be29d97613e8cb` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0xa084c33fb7a467307452898b8d58165ebd2e5d9f` | non_address_book | unknown | unknown | unverified | n/a | `0x019817ad02a31b990433542097be29d97613e8cb` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0xa0df17b5ac76ababa36e1450e2cbcd18a620c845` | non_address_book | unknown | unknown | unverified | n/a | `0x019817ad02a31b990433542097be29d97613e8cb` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0xb276f62db0ce8ca2ca5bc522695be604521eac1c` | non_address_book | unknown | unknown | unverified | n/a | `0x019817ad02a31b990433542097be29d97613e8cb` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0xd4085d38855f17edf0b1ccbfad7b3846fb305655` | non_address_book | unknown | unknown | unverified | n/a | `0x019817ad02a31b990433542097be29d97613e8cb` |
+| ethereum | contamination review | Autoglyphs<br>`0xd4e4078ca3495de5b1d4db434bebc5a986197782` | non_address_book | unknown | unknown | verified | n/a | `0xc352b534e8b987e036a93539fd6897f53488e56a` |
+| ethereum | contamination review | CryptopunksData<br>`0x16f5a35647d6f03d5d3da7b35409d65ba03af3b2` | non_address_book | unknown | unknown | verified | n/a | `0xc352b534e8b987e036a93539fd6897f53488e56a` |
+| ethereum | source verified unclassified | CryptoPunks<br>`0x6ba6f2207e343923ba692e5cae646fb0f566db8d` | non_address_book | unknown | unknown | verified | n/a | `0xc352b534e8b987e036a93539fd6897f53488e56a` |
+| ethereum | source verified unclassified | Meebits<br>`0x7bd29408f11d2bfc23c34f18275bbf23bb716bc7` | non_address_book | unknown | unknown | verified | n/a | `0xc352b534e8b987e036a93539fd6897f53488e56a` |
 
 ## Audit Inventory
 

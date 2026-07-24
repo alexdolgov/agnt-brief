@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -269,25 +269,26 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 13
 - Source-verified contracts: 15
 - Currently scope-matched contracts retained as-is: 1
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: currently scope matched=1, candidate review=6, contamination review=3, source verified unclassified=5
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| currently scope matched | AeraStrategy<br>`0x8041ba598f0e656ebe80c67289efb42c09e86ae3` | project_anchor | unknown | live | verified | n/a | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
-| candidate review | RoleManager<br>`0x1bb44f9d91b4276621550aeea5d2d96279975bf3` | non_address_book | unknown | unknown | verified | review: missing_independent_ownership_evidence | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
-| candidate review | RoleManager<br>`0x8413e65374fca711af5eaddcf7191461a1f4d6af` | non_address_book | unknown | unknown | verified | review: missing_independent_ownership_evidence | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
-| candidate review | RoleManager<br>`0xd905418c46d8141dd80ba065e694abd4dfd5b4a1` | non_address_book | unknown | unknown | verified | review: missing_independent_ownership_evidence | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
-| candidate review | TransparentUpgradeableProxy<br>`0x2a6a2beebf6d65e03246087a41812db1c5c0caf8` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
-| candidate review | TransparentUpgradeableProxy<br>`0x69dda92dd42040c1290a7870b9fc1dc05e41836a` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
-| candidate review | TransparentUpgradeableProxy<br>`0x9e07af58c4c8893b0509e5d6d0ab8c92083fdae7` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
-| contamination review | AeraStrategy<br>`0x473f0adec308dc82440665d9fc7d5e26ebcf0e05` | project_anchor | unknown | live | verified | n/a | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
-| contamination review | OracleAdapter<br>`0xa419026809e2d13bc73dee13992e7873ab605981` | non_address_book | unknown | unknown | verified | n/a | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
-| contamination review | OssifiableProxy<br>`0xecf3376512edaca4fbb63d2c67d12a0397d24121` | non_address_book | unknown | unknown | verified | n/a | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
-| source verified unclassified | DelayedWithdraw<br>`0xec6de7031ce1a284d13b551ef8c4c04b6fdf773c` | non_address_book | unknown | unknown | verified | n/a | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
-| source verified unclassified | L1ERC20TokenBridge<br>`0x7e97935fbdf2a27ea35c4fdddacf5acd685e65a2` | non_address_book | unknown | unknown | verified | n/a | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
-| source verified unclassified | OFTAdapterSwETH<br>`0x2c1b3426e557d6756d8a8859a0779373236f94e2` | non_address_book | unknown | unknown | verified | n/a | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
-| source verified unclassified | RolesAuthority<br>`0x2db7583852c700549b710fd79dd1b54af2efa4dd` | non_address_book | unknown | unknown | verified | n/a | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
-| source verified unclassified | RSwellOFTAdapter<br>`0x428cda6c1994b926f75a4830d5baedee9db2ac58` | non_address_book | unknown | unknown | verified | n/a | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| ethereum | currently scope matched | AeraStrategy<br>`0x8041ba598f0e656ebe80c67289efb42c09e86ae3` | project_anchor | unknown | live | verified | n/a | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
+| ethereum | candidate review | RoleManager<br>`0x1bb44f9d91b4276621550aeea5d2d96279975bf3` | non_address_book | unknown | unknown | verified | review: missing_independent_ownership_evidence | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
+| ethereum | candidate review | RoleManager<br>`0x8413e65374fca711af5eaddcf7191461a1f4d6af` | non_address_book | unknown | unknown | verified | review: missing_independent_ownership_evidence | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
+| ethereum | candidate review | RoleManager<br>`0xd905418c46d8141dd80ba065e694abd4dfd5b4a1` | non_address_book | unknown | unknown | verified | review: missing_independent_ownership_evidence | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
+| ethereum | candidate review | TransparentUpgradeableProxy<br>`0x2a6a2beebf6d65e03246087a41812db1c5c0caf8` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
+| ethereum | candidate review | TransparentUpgradeableProxy<br>`0x69dda92dd42040c1290a7870b9fc1dc05e41836a` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
+| ethereum | candidate review | TransparentUpgradeableProxy<br>`0x9e07af58c4c8893b0509e5d6d0ab8c92083fdae7` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
+| ethereum | contamination review | AeraStrategy<br>`0x473f0adec308dc82440665d9fc7d5e26ebcf0e05` | project_anchor | unknown | live | verified | n/a | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
+| ethereum | contamination review | OracleAdapter<br>`0xa419026809e2d13bc73dee13992e7873ab605981` | non_address_book | unknown | unknown | verified | n/a | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
+| ethereum | contamination review | OssifiableProxy<br>`0xecf3376512edaca4fbb63d2c67d12a0397d24121` | non_address_book | unknown | unknown | verified | n/a | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
+| ethereum | source verified unclassified | DelayedWithdraw<br>`0xec6de7031ce1a284d13b551ef8c4c04b6fdf773c` | non_address_book | unknown | unknown | verified | n/a | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
+| ethereum | source verified unclassified | L1ERC20TokenBridge<br>`0x7e97935fbdf2a27ea35c4fdddacf5acd685e65a2` | non_address_book | unknown | unknown | verified | n/a | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
+| ethereum | source verified unclassified | OFTAdapterSwETH<br>`0x2c1b3426e557d6756d8a8859a0779373236f94e2` | non_address_book | unknown | unknown | verified | n/a | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
+| ethereum | source verified unclassified | RolesAuthority<br>`0x2db7583852c700549b710fd79dd1b54af2efa4dd` | non_address_book | unknown | unknown | verified | n/a | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
+| ethereum | source verified unclassified | RSwellOFTAdapter<br>`0x428cda6c1994b926f75a4830d5baedee9db2ac58` | non_address_book | unknown | unknown | verified | n/a | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
 
 ## Audit Inventory
 

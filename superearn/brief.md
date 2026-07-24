@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -332,28 +332,29 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 6
 - Source-verified contracts: 16
 - Currently scope-matched contracts retained as-is: 5
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: currently scope matched=5, candidate review=7, source verified unclassified=4, unverified unclassified=2
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| currently scope matched | TransparentUpgradeableProxy<br>`0x40fb0f9084828adbc3dcd71840ea545bf243cd0f` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
-| currently scope matched | TransparentUpgradeableProxy<br>`0x4afd6ad5b924cd29513d1fb9b66728c4c5a1bd3e` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
-| currently scope matched | TransparentUpgradeableProxy<br>`0x57b71db8c039ad34b28c289272efa09b5a870c20` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
-| currently scope matched | TransparentUpgradeableProxy<br>`0x91caae299305a8133f295a59f4f22005d16eb65d` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
-| currently scope matched | TransparentUpgradeableProxy<br>`0xc090e88bdaa823b7c1dd8d9e24cbacb0f35f2675` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
-| candidate review | AssetPriceConverter<br>`0x46ee97692856dcaeeb7ce598f78b8eade7a18e2d` | retained_scope_excluded_inventory | unknown | live | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
-| candidate review | SuperEarnRouter<br>`0xd50d11d1d1267c78240e2cf452d0707c46591a0d` | retained_scope_excluded_inventory | unknown | live | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
-| candidate review | TransparentUpgradeableProxy<br>`0x733e7585b9545d5856c79da04a4378fc8a498879` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
-| candidate review | TransparentUpgradeableProxy<br>`0x8e53cdaa89381c203a074fb3388f65936358f200` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
-| candidate review | TransparentUpgradeableProxy<br>`0xd8acff2e2b8b1cf052aca4ba331743f73c569e68` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
-| candidate review | TransparentUpgradeableProxy<br>`0xf313102f42210accc7b17b33482d1eccd9e9f622` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
-| candidate review | UniversalSwapRouter<br>`0x8f19e66b4ba81faae964232baa2bdc8118385822` | retained_scope_excluded_inventory | unknown | live | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
-| source verified unclassified | BridgeAccountant<br>`0x0f4841b8b3796f406fa44b17d89465657533732c` | retained_scope_excluded_inventory | unknown | unknown | verified | n/a | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
-| source verified unclassified | CooldownVault<br>`0xa8c0c468f90cc920cea6cb4ab965f7ca7fab53bc` | retained_scope_excluded_inventory | unknown | live | verified | n/a | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
-| source verified unclassified | CrosschainAdapter<br>`0x6172c5b4e42c13b41f82a8b58f08848f9d781bf2` | retained_scope_excluded_inventory | unknown | live | verified | n/a | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
-| source verified unclassified | SuperEarnMessageAgent<br>`0x37887c5b3c9c9d8cd2113aba6078f125cfa135a9` | retained_scope_excluded_inventory | unknown | unknown | verified | n/a | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
-| unverified unclassified | UnnamedContract<br>`0xd1a10da860fa9f23da6bf6ea2583c6f9158ed8cc` | non_address_book | unknown | unknown | unverified | n/a | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
-| unverified unclassified | UnnamedContract<br>`0xde597fb7ee1de45ffe80881a4ce2259f67cbd610` | non_address_book | unknown | unknown | unverified | n/a | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| ethereum | currently scope matched | TransparentUpgradeableProxy<br>`0x40fb0f9084828adbc3dcd71840ea545bf243cd0f` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| ethereum | currently scope matched | TransparentUpgradeableProxy<br>`0x4afd6ad5b924cd29513d1fb9b66728c4c5a1bd3e` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| ethereum | currently scope matched | TransparentUpgradeableProxy<br>`0x57b71db8c039ad34b28c289272efa09b5a870c20` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| ethereum | currently scope matched | TransparentUpgradeableProxy<br>`0x91caae299305a8133f295a59f4f22005d16eb65d` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| ethereum | currently scope matched | TransparentUpgradeableProxy<br>`0xc090e88bdaa823b7c1dd8d9e24cbacb0f35f2675` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| ethereum | candidate review | AssetPriceConverter<br>`0x46ee97692856dcaeeb7ce598f78b8eade7a18e2d` | retained_scope_excluded_inventory | unknown | live | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| ethereum | candidate review | SuperEarnRouter<br>`0xd50d11d1d1267c78240e2cf452d0707c46591a0d` | retained_scope_excluded_inventory | unknown | live | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| ethereum | candidate review | TransparentUpgradeableProxy<br>`0x733e7585b9545d5856c79da04a4378fc8a498879` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| ethereum | candidate review | TransparentUpgradeableProxy<br>`0x8e53cdaa89381c203a074fb3388f65936358f200` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| ethereum | candidate review | TransparentUpgradeableProxy<br>`0xd8acff2e2b8b1cf052aca4ba331743f73c569e68` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| ethereum | candidate review | TransparentUpgradeableProxy<br>`0xf313102f42210accc7b17b33482d1eccd9e9f622` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| ethereum | candidate review | UniversalSwapRouter<br>`0x8f19e66b4ba81faae964232baa2bdc8118385822` | retained_scope_excluded_inventory | unknown | live | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| ethereum | source verified unclassified | BridgeAccountant<br>`0x0f4841b8b3796f406fa44b17d89465657533732c` | retained_scope_excluded_inventory | unknown | unknown | verified | n/a | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| ethereum | source verified unclassified | CooldownVault<br>`0xa8c0c468f90cc920cea6cb4ab965f7ca7fab53bc` | retained_scope_excluded_inventory | unknown | live | verified | n/a | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| ethereum | source verified unclassified | CrosschainAdapter<br>`0x6172c5b4e42c13b41f82a8b58f08848f9d781bf2` | retained_scope_excluded_inventory | unknown | live | verified | n/a | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| ethereum | source verified unclassified | SuperEarnMessageAgent<br>`0x37887c5b3c9c9d8cd2113aba6078f125cfa135a9` | retained_scope_excluded_inventory | unknown | unknown | verified | n/a | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0xd1a10da860fa9f23da6bf6ea2583c6f9158ed8cc` | non_address_book | unknown | unknown | unverified | n/a | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0xde597fb7ee1de45ffe80881a4ce2259f67cbd610` | non_address_book | unknown | unknown | unverified | n/a | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
 
 ## Audit Inventory
 

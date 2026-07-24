@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -173,48 +173,49 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 30
 - Source-verified contracts: 36
 - Currently scope-matched contracts retained as-is: 3
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: currently scope matched=3, candidate review=20, contamination review=7, exact address book overlap=1, source verified unclassified=5, unverified unclassified=2
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| currently scope matched | GovernanceModule<br>`0xc6f50903a058f3807111619bd4b24ca64b8239e1` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
-| currently scope matched | OracleModule<br>`0x05198327206123e89c24abd9a482316449bd2aee` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x1593eb12e0763531674a66304a01d185d5c4c7ef` |
-| currently scope matched | TaxModule<br>`0xf6bcf96f5bace0241303ee0819e2e009a7f1eb40` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x1593eb12e0763531674a66304a01d185d5c4c7ef` |
-| candidate review | ERC1967Proxy<br>`0x8a462e6a0051d006e33152fbeadfb9a14198de30` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
-| candidate review | Fyde<br>`0xdde736837c7c275a952a52ee11face88adde6711` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
-| candidate review | OracleModule<br>`0x9b122361e8708be33b785e44fce4d6ca86ab6c5a` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
-| candidate review | OracleModule<br>`0xa44adf41a308a1d63786e6abaed9ac64f24234ca` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
-| candidate review | OracleModule<br>`0xd7cb5e50775d8583e8edb8993619227af81bcdf6` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x1593eb12e0763531674a66304a01d185d5c4c7ef` |
-| candidate review | OracleModule<br>`0xde0d6b162d7751fa09453debfd4df96a72a6f83d` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x1593eb12e0763531674a66304a01d185d5c4c7ef` |
-| candidate review | OracleModule<br>`0xe8e40fd4ddab26b44b1fb2d6d73833cb0a33b736` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
-| candidate review | PooledDepositEscrow<br>`0x9da7923224ed433c8f1047eb8eca80cce98debfc` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
-| candidate review | PooledDepositEscrow<br>`0xcdeb119b9b312434322fe8e5b75a93b35f362abf` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
-| candidate review | PooledDepositEscrow<br>`0xddc55e390841021b0e99179322f66d3a17e070e1` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
-| candidate review | Relayer<br>`0x94194de310b99d3c8a5b8c0768cfce7aef81d9be` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
-| candidate review | RewardsDistributor<br>`0x19d9d821f6a2ed80a0a9ae06e5b12edbdd5adf6a` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x1593eb12e0763531674a66304a01d185d5c4c7ef` |
-| candidate review | RewardsDistributor<br>`0xce1414ae7040ba65611533df0c23db0bacd15d90` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x1593eb12e0763531674a66304a01d185d5c4c7ef` |
-| candidate review | RewardsDistributor<br>`0xd346b2454e7f957fe779efcca6af4d54f1e8b3dc` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
-| candidate review | sTRSY<br>`0x16f483d7a46d8d74eb176cf43687dc9dc5f55460` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x1593eb12e0763531674a66304a01d185d5c4c7ef` |
-| candidate review | TaxModule<br>`0x35afe52bddedbc9bbe53af119568264da00a70d3` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
-| candidate review | TaxModule<br>`0x9edd8ea842be2284b755e78c43245cd2ecf53322` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x1593eb12e0763531674a66304a01d185d5c4c7ef` |
-| candidate review | UserProxy<br>`0x68bb55f0bc0b9a37cd4afb5ec4794fc61651c5a7` | retained_scope_excluded_inventory | unknown | live | verified | review: no_fresh_structural_match | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
-| candidate review | YieldManager<br>`0xb615a7e4d1ed426470ac2df14f3153fa2dccc3ba` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x1593eb12e0763531674a66304a01d185d5c4c7ef` |
-| candidate review | YieldManager<br>`0xc1bbad6d9eb5092b896158af62375dabedc7f8cc` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x1593eb12e0763531674a66304a01d185d5c4c7ef` |
-| contamination review | DCAVault<br>`0xb5432d8ab42ba82e1aab329e7ca730334f4091a8` | non_address_book | unknown | unknown | verified | n/a | `0x1593eb12e0763531674a66304a01d185d5c4c7ef` |
-| contamination review | DepositEscrow<br>`0x63ec950633eb85797477166084ad0a7121910470` | non_address_book | unknown | unknown | verified | n/a | `0x1593eb12e0763531674a66304a01d185d5c4c7ef` |
-| contamination review | FeeDistributor<br>`0x41b911286e63c508345ba581d75928ece4a0f543` | non_address_book | unknown | unknown | verified | n/a | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
-| contamination review | PooledDepositEscrow<br>`0x647741808e7c57ae06edbfbc81e4a22c4808219c` | non_address_book | unknown | unknown | verified | n/a | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
-| contamination review | RewardDistributor<br>`0x99628825156746fbabc2819d202ee30ecb3c71a6` | non_address_book | unknown | unknown | verified | n/a | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
-| contamination review | StakingETH<br>`0x38abe896c350f9dedef4f676071bdd69893aabda` | non_address_book | unknown | unknown | verified | n/a | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
-| contamination review | YieldStrategy<br>`0x53be800570860c7fbeb438cacabd1de8fabf9efb` | non_address_book | unknown | unknown | verified | n/a | `0x1593eb12e0763531674a66304a01d185d5c4c7ef` |
-| exact address book overlap | YieldStrategy<br>`0xa11d02c5ac034786deb0a7ad1dfcfacc0e6de055` | project_anchor | unknown | live | verified | n/a | `0x1593eb12e0763531674a66304a01d185d5c4c7ef` |
-| source verified unclassified | FydeToken<br>`0xa736cd2b05f3e343027a05330595606b8a6b0cd8` | non_address_book | unknown | unknown | verified | n/a | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
-| source verified unclassified | StakingETH<br>`0x3f69f62e25441cf72e362508f4d6711d53b05341` | non_address_book | unknown | unknown | verified | n/a | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
-| source verified unclassified | StakingETH<br>`0xb01cc1446b50b1175063356c150bede798c4c7bc` | non_address_book | unknown | unknown | verified | n/a | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
-| source verified unclassified | VoteEscrow<br>`0x9b369202ff147b54ea7092bc94425c781094dbde` | non_address_book | unknown | unknown | verified | n/a | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
-| source verified unclassified | YieldStrategy<br>`0x569871ae260d85c5981374bba2b2353a3e1cf59c` | retained_scope_excluded_inventory | unknown | live | verified | n/a | `0x1593eb12e0763531674a66304a01d185d5c4c7ef` |
-| unverified unclassified | UnnamedContract<br>`0x9fd02fa9641fa2d2d5acd9e1c9b6b3343d1d6fa6` | non_address_book | unknown | unknown | unverified | n/a | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
-| unverified unclassified | UnnamedContract<br>`0xb2bf5935f16ea7352888bff2ed8eb935b3eab295` | non_address_book | unknown | unknown | unverified | n/a | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| ethereum | currently scope matched | OracleModule<br>`0x05198327206123e89c24abd9a482316449bd2aee` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x1593eb12e0763531674a66304a01d185d5c4c7ef` |
+| ethereum | currently scope matched | TaxModule<br>`0xf6bcf96f5bace0241303ee0819e2e009a7f1eb40` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x1593eb12e0763531674a66304a01d185d5c4c7ef` |
+| ethereum | candidate review | OracleModule<br>`0xd7cb5e50775d8583e8edb8993619227af81bcdf6` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x1593eb12e0763531674a66304a01d185d5c4c7ef` |
+| ethereum | candidate review | OracleModule<br>`0xde0d6b162d7751fa09453debfd4df96a72a6f83d` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x1593eb12e0763531674a66304a01d185d5c4c7ef` |
+| ethereum | candidate review | RewardsDistributor<br>`0x19d9d821f6a2ed80a0a9ae06e5b12edbdd5adf6a` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x1593eb12e0763531674a66304a01d185d5c4c7ef` |
+| ethereum | candidate review | RewardsDistributor<br>`0xce1414ae7040ba65611533df0c23db0bacd15d90` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x1593eb12e0763531674a66304a01d185d5c4c7ef` |
+| ethereum | candidate review | sTRSY<br>`0x16f483d7a46d8d74eb176cf43687dc9dc5f55460` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x1593eb12e0763531674a66304a01d185d5c4c7ef` |
+| ethereum | candidate review | TaxModule<br>`0x9edd8ea842be2284b755e78c43245cd2ecf53322` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x1593eb12e0763531674a66304a01d185d5c4c7ef` |
+| ethereum | candidate review | YieldManager<br>`0xb615a7e4d1ed426470ac2df14f3153fa2dccc3ba` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x1593eb12e0763531674a66304a01d185d5c4c7ef` |
+| ethereum | candidate review | YieldManager<br>`0xc1bbad6d9eb5092b896158af62375dabedc7f8cc` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x1593eb12e0763531674a66304a01d185d5c4c7ef` |
+| ethereum | contamination review | DCAVault<br>`0xb5432d8ab42ba82e1aab329e7ca730334f4091a8` | non_address_book | unknown | unknown | verified | n/a | `0x1593eb12e0763531674a66304a01d185d5c4c7ef` |
+| ethereum | contamination review | DepositEscrow<br>`0x63ec950633eb85797477166084ad0a7121910470` | non_address_book | unknown | unknown | verified | n/a | `0x1593eb12e0763531674a66304a01d185d5c4c7ef` |
+| ethereum | contamination review | YieldStrategy<br>`0x53be800570860c7fbeb438cacabd1de8fabf9efb` | non_address_book | unknown | unknown | verified | n/a | `0x1593eb12e0763531674a66304a01d185d5c4c7ef` |
+| ethereum | exact address book overlap | YieldStrategy<br>`0xa11d02c5ac034786deb0a7ad1dfcfacc0e6de055` | project_anchor | unknown | live | verified | n/a | `0x1593eb12e0763531674a66304a01d185d5c4c7ef` |
+| ethereum | source verified unclassified | YieldStrategy<br>`0x569871ae260d85c5981374bba2b2353a3e1cf59c` | retained_scope_excluded_inventory | unknown | live | verified | n/a | `0x1593eb12e0763531674a66304a01d185d5c4c7ef` |
+| ethereum | currently scope matched | GovernanceModule<br>`0xc6f50903a058f3807111619bd4b24ca64b8239e1` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
+| ethereum | candidate review | ERC1967Proxy<br>`0x8a462e6a0051d006e33152fbeadfb9a14198de30` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
+| ethereum | candidate review | Fyde<br>`0xdde736837c7c275a952a52ee11face88adde6711` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
+| ethereum | candidate review | OracleModule<br>`0x9b122361e8708be33b785e44fce4d6ca86ab6c5a` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
+| ethereum | candidate review | OracleModule<br>`0xa44adf41a308a1d63786e6abaed9ac64f24234ca` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
+| ethereum | candidate review | OracleModule<br>`0xe8e40fd4ddab26b44b1fb2d6d73833cb0a33b736` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
+| ethereum | candidate review | PooledDepositEscrow<br>`0x9da7923224ed433c8f1047eb8eca80cce98debfc` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
+| ethereum | candidate review | PooledDepositEscrow<br>`0xcdeb119b9b312434322fe8e5b75a93b35f362abf` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
+| ethereum | candidate review | PooledDepositEscrow<br>`0xddc55e390841021b0e99179322f66d3a17e070e1` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
+| ethereum | candidate review | Relayer<br>`0x94194de310b99d3c8a5b8c0768cfce7aef81d9be` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
+| ethereum | candidate review | RewardsDistributor<br>`0xd346b2454e7f957fe779efcca6af4d54f1e8b3dc` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
+| ethereum | candidate review | TaxModule<br>`0x35afe52bddedbc9bbe53af119568264da00a70d3` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
+| ethereum | candidate review | UserProxy<br>`0x68bb55f0bc0b9a37cd4afb5ec4794fc61651c5a7` | retained_scope_excluded_inventory | unknown | live | verified | review: no_fresh_structural_match | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
+| ethereum | contamination review | FeeDistributor<br>`0x41b911286e63c508345ba581d75928ece4a0f543` | non_address_book | unknown | unknown | verified | n/a | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
+| ethereum | contamination review | PooledDepositEscrow<br>`0x647741808e7c57ae06edbfbc81e4a22c4808219c` | non_address_book | unknown | unknown | verified | n/a | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
+| ethereum | contamination review | RewardDistributor<br>`0x99628825156746fbabc2819d202ee30ecb3c71a6` | non_address_book | unknown | unknown | verified | n/a | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
+| ethereum | contamination review | StakingETH<br>`0x38abe896c350f9dedef4f676071bdd69893aabda` | non_address_book | unknown | unknown | verified | n/a | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
+| ethereum | source verified unclassified | FydeToken<br>`0xa736cd2b05f3e343027a05330595606b8a6b0cd8` | non_address_book | unknown | unknown | verified | n/a | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
+| ethereum | source verified unclassified | StakingETH<br>`0x3f69f62e25441cf72e362508f4d6711d53b05341` | non_address_book | unknown | unknown | verified | n/a | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
+| ethereum | source verified unclassified | StakingETH<br>`0xb01cc1446b50b1175063356c150bede798c4c7bc` | non_address_book | unknown | unknown | verified | n/a | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
+| ethereum | source verified unclassified | VoteEscrow<br>`0x9b369202ff147b54ea7092bc94425c781094dbde` | non_address_book | unknown | unknown | verified | n/a | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0x9fd02fa9641fa2d2d5acd9e1c9b6b3343d1d6fa6` | non_address_book | unknown | unknown | unverified | n/a | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0xb2bf5935f16ea7352888bff2ed8eb935b3eab295` | non_address_book | unknown | unknown | unverified | n/a | `0x2dda45bc3bc7e00a4a10cad1d4b1dbd2a7c6d4a9` |
 
 ## Audit Inventory
 

@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -148,23 +148,24 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 13
 - Source-verified contracts: 10
 - Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: candidate review=1, contamination review=2, third party or infra=2, exact address book overlap=3, source verified unclassified=2, unverified unclassified=3
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| candidate review | YPoolDelegator<br>`0xe9f8ca518756911ba8ca01bcb571e12ce8a602b1` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xa6df4fcb1ca559155a678e9aff5de3f210c0ff84` |
-| contamination review | APYOracle<br>`0xaa8d5f6a7747c2c6c4149e1a06eb1bfb847d6de2` | external_dependency_or_infra | unknown | unknown | verified | n/a | `0xa6df4fcb1ca559155a678e9aff5de3f210c0ff84` |
-| contamination review | YPoolDelegator<br>`0x853c87822a4e756fb47b2c402db4ff09df0c2780` | non_address_book | unknown | unknown | verified | n/a | `0xa6df4fcb1ca559155a678e9aff5de3f210c0ff84` |
-| third party or infra | Vyper_contract<br>`0xe5e7ddadd563018b0e692c1524b60b754fbd7f02` | external_dependency_or_infra | unknown | unknown | verified | n/a | `0xa6df4fcb1ca559155a678e9aff5de3f210c0ff84` |
-| third party or infra | ZapDelegator<br>`0xa746c67eb7915fa832a4c2076d403d4b68085431` | external_dependency_or_infra | unknown | unknown | verified | n/a | `0xa6df4fcb1ca559155a678e9aff5de3f210c0ff84` |
-| exact address book overlap | Timelock<br>`0xb902a1ddab091b63721987ccc6a8a99d7c22bbdf` | retained_scope_excluded_inventory | unknown | unknown | verified | n/a | `0xa6df4fcb1ca559155a678e9aff5de3f210c0ff84` |
-| exact address book overlap | Vyper_contract<br>`0x0c4d90ca69104b4cb937fb21c8533c29554ae32c` | retained_scope_excluded_inventory | unknown | unknown | verified | n/a | `0xa6df4fcb1ca559155a678e9aff5de3f210c0ff84` |
-| exact address book overlap | Vyper_contract<br>`0x2638d2680ab4914126ee05b9c5ee95bac311a95e` | retained_scope_excluded_inventory | unknown | unknown | verified | n/a | `0xa6df4fcb1ca559155a678e9aff5de3f210c0ff84` |
-| source verified unclassified | Vyper_contract<br>`0xc716ea18ee7f3e9c33fdb2fb5a1816d1fc2c9e3d` | non_address_book | unknown | unknown | verified | n/a | `0xa6df4fcb1ca559155a678e9aff5de3f210c0ff84` |
-| source verified unclassified | ZapDelegator<br>`0x3871ddd4171cb4e28b407e47a483d1058f32c92f` | non_address_book | unknown | unknown | verified | n/a | `0xa6df4fcb1ca559155a678e9aff5de3f210c0ff84` |
-| unverified unclassified | UnnamedContract<br>`0x7e12d719563b4c8d6ef4b3465bdbfce0a45f49b4` | non_address_book | unknown | unknown | unverified | n/a | `0xa6df4fcb1ca559155a678e9aff5de3f210c0ff84` |
-| unverified unclassified | UnnamedContract<br>`0xba08a5dd30dfc2af10b5e954b25831708efb9979` | non_address_book | unknown | unknown | unverified | n/a | `0xa6df4fcb1ca559155a678e9aff5de3f210c0ff84` |
-| unverified unclassified | UnnamedContract<br>`0xc1aaebbd5d6464cbe62ffa7e0156a7ba826af74e` | non_address_book | unknown | unknown | unverified | n/a | `0xa6df4fcb1ca559155a678e9aff5de3f210c0ff84` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| ethereum | candidate review | YPoolDelegator<br>`0xe9f8ca518756911ba8ca01bcb571e12ce8a602b1` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xa6df4fcb1ca559155a678e9aff5de3f210c0ff84` |
+| ethereum | contamination review | APYOracle<br>`0xaa8d5f6a7747c2c6c4149e1a06eb1bfb847d6de2` | external_dependency_or_infra | unknown | unknown | verified | n/a | `0xa6df4fcb1ca559155a678e9aff5de3f210c0ff84` |
+| ethereum | contamination review | YPoolDelegator<br>`0x853c87822a4e756fb47b2c402db4ff09df0c2780` | non_address_book | unknown | unknown | verified | n/a | `0xa6df4fcb1ca559155a678e9aff5de3f210c0ff84` |
+| ethereum | third party or infra | Vyper_contract<br>`0xe5e7ddadd563018b0e692c1524b60b754fbd7f02` | external_dependency_or_infra | unknown | unknown | verified | n/a | `0xa6df4fcb1ca559155a678e9aff5de3f210c0ff84` |
+| ethereum | third party or infra | ZapDelegator<br>`0xa746c67eb7915fa832a4c2076d403d4b68085431` | external_dependency_or_infra | unknown | unknown | verified | n/a | `0xa6df4fcb1ca559155a678e9aff5de3f210c0ff84` |
+| ethereum | exact address book overlap | Timelock<br>`0xb902a1ddab091b63721987ccc6a8a99d7c22bbdf` | retained_scope_excluded_inventory | unknown | unknown | verified | n/a | `0xa6df4fcb1ca559155a678e9aff5de3f210c0ff84` |
+| ethereum | exact address book overlap | Vyper_contract<br>`0x0c4d90ca69104b4cb937fb21c8533c29554ae32c` | retained_scope_excluded_inventory | unknown | unknown | verified | n/a | `0xa6df4fcb1ca559155a678e9aff5de3f210c0ff84` |
+| ethereum | exact address book overlap | Vyper_contract<br>`0x2638d2680ab4914126ee05b9c5ee95bac311a95e` | retained_scope_excluded_inventory | unknown | unknown | verified | n/a | `0xa6df4fcb1ca559155a678e9aff5de3f210c0ff84` |
+| ethereum | source verified unclassified | Vyper_contract<br>`0xc716ea18ee7f3e9c33fdb2fb5a1816d1fc2c9e3d` | non_address_book | unknown | unknown | verified | n/a | `0xa6df4fcb1ca559155a678e9aff5de3f210c0ff84` |
+| ethereum | source verified unclassified | ZapDelegator<br>`0x3871ddd4171cb4e28b407e47a483d1058f32c92f` | non_address_book | unknown | unknown | verified | n/a | `0xa6df4fcb1ca559155a678e9aff5de3f210c0ff84` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0x7e12d719563b4c8d6ef4b3465bdbfce0a45f49b4` | non_address_book | unknown | unknown | unverified | n/a | `0xa6df4fcb1ca559155a678e9aff5de3f210c0ff84` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0xba08a5dd30dfc2af10b5e954b25831708efb9979` | non_address_book | unknown | unknown | unverified | n/a | `0xa6df4fcb1ca559155a678e9aff5de3f210c0ff84` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0xc1aaebbd5d6464cbe62ffa7e0156a7ba826af74e` | non_address_book | unknown | unknown | unverified | n/a | `0xa6df4fcb1ca559155a678e9aff5de3f210c0ff84` |
 
 ## Audit Inventory
 

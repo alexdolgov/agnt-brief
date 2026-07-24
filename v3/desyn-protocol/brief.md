@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -143,20 +143,21 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 10
 - Source-verified contracts: 9
 - Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: candidate review=9, unverified unclassified=1
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| candidate review | DesynChainlinkOracle<br>`0x2d25bd8027586fc2503eb22d928107c94d59841e` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7de2e3b30de9aeaf5bdcf99aa1a2601dad6b2fbb` |
-| candidate review | DesynSafeMath<br>`0xf9fe7428b5ea2ce69d4627ff5fdea782067c84d8` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7de2e3b30de9aeaf5bdcf99aa1a2601dad6b2fbb` |
-| candidate review | Factory<br>`0x09dfee598d5217da799bead56206bec0fdb0d17b` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7de2e3b30de9aeaf5bdcf99aa1a2601dad6b2fbb` |
-| candidate review | Oracle<br>`0x867a8c12301217a588fafd7bbc1267d0e0250647` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7de2e3b30de9aeaf5bdcf99aa1a2601dad6b2fbb` |
-| candidate review | RebalanceAdapter<br>`0xe7dfa1607f286e37f86915b791282ccdd2535952` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7de2e3b30de9aeaf5bdcf99aa1a2601dad6b2fbb` |
-| candidate review | RightsManager<br>`0xc07b41f521ab9510a54212c315240e448621be15` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7de2e3b30de9aeaf5bdcf99aa1a2601dad6b2fbb` |
-| candidate review | SmartPoolManager<br>`0xcaf8af5217e16551acc00fff671c6caeff3626e6` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7de2e3b30de9aeaf5bdcf99aa1a2601dad6b2fbb` |
-| candidate review | UserVault<br>`0x833e81b279959f216331589dd9cec4388cf18387` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7de2e3b30de9aeaf5bdcf99aa1a2601dad6b2fbb` |
-| candidate review | Vault<br>`0xe3b43dc43f2ab7102006e46074151c427de06794` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7de2e3b30de9aeaf5bdcf99aa1a2601dad6b2fbb` |
-| unverified unclassified | UnnamedContract<br>`0x0c4d317b85c2676a3c1d4181f2536ac418240a9a` | non_address_book | unknown | unknown | unverified | n/a | `0x7de2e3b30de9aeaf5bdcf99aa1a2601dad6b2fbb` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| mode | candidate review | DesynChainlinkOracle<br>`0x2d25bd8027586fc2503eb22d928107c94d59841e` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7de2e3b30de9aeaf5bdcf99aa1a2601dad6b2fbb` |
+| mode | candidate review | DesynSafeMath<br>`0xf9fe7428b5ea2ce69d4627ff5fdea782067c84d8` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7de2e3b30de9aeaf5bdcf99aa1a2601dad6b2fbb` |
+| mode | candidate review | Factory<br>`0x09dfee598d5217da799bead56206bec0fdb0d17b` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7de2e3b30de9aeaf5bdcf99aa1a2601dad6b2fbb` |
+| mode | candidate review | Oracle<br>`0x867a8c12301217a588fafd7bbc1267d0e0250647` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7de2e3b30de9aeaf5bdcf99aa1a2601dad6b2fbb` |
+| mode | candidate review | RebalanceAdapter<br>`0xe7dfa1607f286e37f86915b791282ccdd2535952` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7de2e3b30de9aeaf5bdcf99aa1a2601dad6b2fbb` |
+| mode | candidate review | RightsManager<br>`0xc07b41f521ab9510a54212c315240e448621be15` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7de2e3b30de9aeaf5bdcf99aa1a2601dad6b2fbb` |
+| mode | candidate review | SmartPoolManager<br>`0xcaf8af5217e16551acc00fff671c6caeff3626e6` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7de2e3b30de9aeaf5bdcf99aa1a2601dad6b2fbb` |
+| mode | candidate review | UserVault<br>`0x833e81b279959f216331589dd9cec4388cf18387` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7de2e3b30de9aeaf5bdcf99aa1a2601dad6b2fbb` |
+| mode | candidate review | Vault<br>`0xe3b43dc43f2ab7102006e46074151c427de06794` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7de2e3b30de9aeaf5bdcf99aa1a2601dad6b2fbb` |
+| mode | unverified unclassified | UnnamedContract<br>`0x0c4d317b85c2676a3c1d4181f2536ac418240a9a` | non_address_book | unknown | unknown | unverified | n/a | `0x7de2e3b30de9aeaf5bdcf99aa1a2601dad6b2fbb` |
 
 ## Audit Inventory
 

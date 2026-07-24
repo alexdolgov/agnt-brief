@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -166,17 +166,18 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 6
 - Source-verified contracts: 7
 - Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: exact address book overlap=1, source verified unclassified=6
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| exact address book overlap | Vyper_contract<br>`0x440701ca5817b5847438da2ec2ca3b9fdbf37dfa` | project_anchor | unknown | live | verified | n/a | `0x0d55f99d20cd4fc7eb36fb78f7d8a42c48826493` |
-| source verified unclassified | Deed<br>`0x0143b71443650aa8efa76bd82f35c22ebd558090` | non_address_book | unknown | unknown | verified | n/a | `0x0d55f99d20cd4fc7eb36fb78f7d8a42c48826493` |
-| source verified unclassified | DeedRenting<br>`0x0af49e83e36256158c654ef549849d80f51fd76c` | non_address_book | unknown | unknown | verified | n/a | `0x0d55f99d20cd4fc7eb36fb78f7d8a42c48826493` |
-| source verified unclassified | DeedTenantProvisioning<br>`0x45595f6f9b699d8becab00c6fe295147c4e84681` | non_address_book | unknown | unknown | verified | n/a | `0x0d55f99d20cd4fc7eb36fb78f7d8a42c48826493` |
-| source verified unclassified | DeedTenantProvisioning<br>`0x887a70ec5d9a76b086e040fabc877b506ae4b9d0` | non_address_book | unknown | unknown | verified | n/a | `0x0d55f99d20cd4fc7eb36fb78f7d8a42c48826493` |
-| source verified unclassified | DeedTenantProvisioningProxy<br>`0x49c0cf46c0eb6fdf05a4e8c1fe344d510422e1f0` | non_address_book | unknown | unknown | verified | n/a | `0x0d55f99d20cd4fc7eb36fb78f7d8a42c48826493` |
-| source verified unclassified | DeedTenantRentingProxy<br>`0x427aa8f31013960e0e5e73977c1918e15d693baa` | non_address_book | unknown | unknown | verified | n/a | `0x0d55f99d20cd4fc7eb36fb78f7d8a42c48826493` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| ethereum | exact address book overlap | Vyper_contract<br>`0x440701ca5817b5847438da2ec2ca3b9fdbf37dfa` | project_anchor | unknown | live | verified | n/a | `0x0d55f99d20cd4fc7eb36fb78f7d8a42c48826493` |
+| ethereum | source verified unclassified | Deed<br>`0x0143b71443650aa8efa76bd82f35c22ebd558090` | non_address_book | unknown | unknown | verified | n/a | `0x0d55f99d20cd4fc7eb36fb78f7d8a42c48826493` |
+| ethereum | source verified unclassified | DeedRenting<br>`0x0af49e83e36256158c654ef549849d80f51fd76c` | non_address_book | unknown | unknown | verified | n/a | `0x0d55f99d20cd4fc7eb36fb78f7d8a42c48826493` |
+| ethereum | source verified unclassified | DeedTenantProvisioning<br>`0x45595f6f9b699d8becab00c6fe295147c4e84681` | non_address_book | unknown | unknown | verified | n/a | `0x0d55f99d20cd4fc7eb36fb78f7d8a42c48826493` |
+| ethereum | source verified unclassified | DeedTenantProvisioning<br>`0x887a70ec5d9a76b086e040fabc877b506ae4b9d0` | non_address_book | unknown | unknown | verified | n/a | `0x0d55f99d20cd4fc7eb36fb78f7d8a42c48826493` |
+| ethereum | source verified unclassified | DeedTenantProvisioningProxy<br>`0x49c0cf46c0eb6fdf05a4e8c1fe344d510422e1f0` | non_address_book | unknown | unknown | verified | n/a | `0x0d55f99d20cd4fc7eb36fb78f7d8a42c48826493` |
+| ethereum | source verified unclassified | DeedTenantRentingProxy<br>`0x427aa8f31013960e0e5e73977c1918e15d693baa` | non_address_book | unknown | unknown | verified | n/a | `0x0d55f99d20cd4fc7eb36fb78f7d8a42c48826493` |
 
 ## Audit Inventory
 

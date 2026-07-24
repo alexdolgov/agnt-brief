@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -174,38 +174,39 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 6
 - Source-verified contracts: 26
 - Currently scope-matched contracts retained as-is: 10
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: currently scope matched=10, candidate review=6, contamination review=6, exact address book overlap=4, unverified unclassified=2
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| currently scope matched | BorrowerOperations<br>`0xa49bec2146fbeea7314cdbe0fd222419b0c0602f` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
-| currently scope matched | CommunityIssuance<br>`0x7fd517b06b898f1a6081e0891265516f83dc9c9e` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
-| currently scope matched | OracleRateCalculation<br>`0x76dcd40843c1de96839bf83790257a36011e6632` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
-| currently scope matched | PriceFeed<br>`0xa5220fd82c098b7f1c711e2f1c1d599ccfbcdcb3` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
-| currently scope matched | SableRewarder<br>`0x23d253f1ab38a1ec8c05103232b4efafb6a1bdeb` | project_anchor | unknown | live | verified | n/a | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
-| currently scope matched | StabilityPool<br>`0x598913568093ab9f3d549236eb98388271073f18` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
-| currently scope matched | SystemState<br>`0x698ad77e62679c8e6acfafea03547c38fc5ec0ad` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
-| currently scope matched | TimeLock<br>`0x638675b7c2e056917567571307c6f6a7d69a258a` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
-| currently scope matched | TroveHelper<br>`0xd1bf4d208028cbfe65c6b4d68c12e68f5f3d80f8` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
-| currently scope matched | TroveManager<br>`0xec035081376ce975ba9eaf28dfec7c7a4c483b85` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
-| candidate review | ActivePool<br>`0x0ccb12c9fb1e1252e60d29ac5c4fdc0640edd72c` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
-| candidate review | CollSurplusPool<br>`0xbe40060aef1a2acb4425823c82978f976fd93cd0` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
-| candidate review | DefaultPool<br>`0x654ed83ab231550001fc1d2281b78fcd84121088` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
-| candidate review | GasPool<br>`0xe9bc9adbdf67343b5a66d73cf2e521bb3f088d01` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
-| candidate review | MultiTroveGetter<br>`0x97c984497b81fa38baaf684e7afd2685052804e9` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
-| candidate review | SortedTroves<br>`0x97c131c309a04bfa1aae82856d64b696b89dc87c` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
-| contamination review | HintHelpers<br>`0x08e260d3e5ea4fb09ffa264dd4129593fd5405e8` | project_anchor | unknown | live | verified | n/a | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
-| contamination review | LPPoolTVLChecker<br>`0xc8ffef524f7154eb13b9f9993e9826cf92dc77af` | non_address_book | unknown | unknown | verified | n/a | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
-| contamination review | RewardsChecker<br>`0xf7518065729c5a7e5a5b3ce11939f7fdd50b58f4` | non_address_book | unknown | unknown | verified | n/a | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
-| contamination review | SableRedemption<br>`0x41fa545df5caee0c9618f487e0cb6d6fb16a0483` | non_address_book | unknown | unknown | verified | n/a | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
-| contamination review | StakedLPTVLChecker<br>`0xb45fc002ccf1bed4add10e0e95d40d7d7af63331` | non_address_book | unknown | unknown | verified | n/a | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
-| contamination review | VestingWallet<br>`0x38c948f27c3f50a1c3b3857b28a6dd1e6cbd2ed0` | project_anchor | unknown | live | verified | n/a | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
-| exact address book overlap | VestingWallet<br>`0x781285cf9c4d767f8ecdd6f48ce26958487872b7` | project_anchor | unknown | live | verified | n/a | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
-| exact address book overlap | VestingWallet<br>`0xb46e915cf6c6cfcaab3ac606c56d24ce4273c480` | project_anchor | unknown | live | verified | n/a | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
-| exact address book overlap | VestingWallet<br>`0xd853418ca8239bb8352a9b9095cfbe7e0970f6dd` | project_anchor | unknown | live | verified | n/a | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
-| exact address book overlap | VestingWallet<br>`0xfef652b9862f8cce28f2bcb4340d9d67e4bb1fcb` | project_anchor | unknown | live | verified | n/a | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
-| unverified unclassified | UnnamedContract<br>`0x43a1460610643e28e1e1a0a246647277596d652a` | non_address_book | unknown | unknown | unverified | n/a | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
-| unverified unclassified | UnnamedContract<br>`0x4663338379942e3a868bc4776e0d694ede10696f` | non_address_book | unknown | unknown | unverified | n/a | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| bsc | currently scope matched | BorrowerOperations<br>`0xa49bec2146fbeea7314cdbe0fd222419b0c0602f` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
+| bsc | currently scope matched | CommunityIssuance<br>`0x7fd517b06b898f1a6081e0891265516f83dc9c9e` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
+| bsc | currently scope matched | OracleRateCalculation<br>`0x76dcd40843c1de96839bf83790257a36011e6632` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
+| bsc | currently scope matched | PriceFeed<br>`0xa5220fd82c098b7f1c711e2f1c1d599ccfbcdcb3` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
+| bsc | currently scope matched | SableRewarder<br>`0x23d253f1ab38a1ec8c05103232b4efafb6a1bdeb` | project_anchor | unknown | live | verified | n/a | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
+| bsc | currently scope matched | StabilityPool<br>`0x598913568093ab9f3d549236eb98388271073f18` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
+| bsc | currently scope matched | SystemState<br>`0x698ad77e62679c8e6acfafea03547c38fc5ec0ad` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
+| bsc | currently scope matched | TimeLock<br>`0x638675b7c2e056917567571307c6f6a7d69a258a` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
+| bsc | currently scope matched | TroveHelper<br>`0xd1bf4d208028cbfe65c6b4d68c12e68f5f3d80f8` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
+| bsc | currently scope matched | TroveManager<br>`0xec035081376ce975ba9eaf28dfec7c7a4c483b85` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
+| bsc | candidate review | ActivePool<br>`0x0ccb12c9fb1e1252e60d29ac5c4fdc0640edd72c` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
+| bsc | candidate review | CollSurplusPool<br>`0xbe40060aef1a2acb4425823c82978f976fd93cd0` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
+| bsc | candidate review | DefaultPool<br>`0x654ed83ab231550001fc1d2281b78fcd84121088` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
+| bsc | candidate review | GasPool<br>`0xe9bc9adbdf67343b5a66d73cf2e521bb3f088d01` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
+| bsc | candidate review | MultiTroveGetter<br>`0x97c984497b81fa38baaf684e7afd2685052804e9` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
+| bsc | candidate review | SortedTroves<br>`0x97c131c309a04bfa1aae82856d64b696b89dc87c` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
+| bsc | contamination review | HintHelpers<br>`0x08e260d3e5ea4fb09ffa264dd4129593fd5405e8` | project_anchor | unknown | live | verified | n/a | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
+| bsc | contamination review | LPPoolTVLChecker<br>`0xc8ffef524f7154eb13b9f9993e9826cf92dc77af` | non_address_book | unknown | unknown | verified | n/a | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
+| bsc | contamination review | RewardsChecker<br>`0xf7518065729c5a7e5a5b3ce11939f7fdd50b58f4` | non_address_book | unknown | unknown | verified | n/a | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
+| bsc | contamination review | SableRedemption<br>`0x41fa545df5caee0c9618f487e0cb6d6fb16a0483` | non_address_book | unknown | unknown | verified | n/a | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
+| bsc | contamination review | StakedLPTVLChecker<br>`0xb45fc002ccf1bed4add10e0e95d40d7d7af63331` | non_address_book | unknown | unknown | verified | n/a | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
+| bsc | contamination review | VestingWallet<br>`0x38c948f27c3f50a1c3b3857b28a6dd1e6cbd2ed0` | project_anchor | unknown | live | verified | n/a | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
+| bsc | exact address book overlap | VestingWallet<br>`0x781285cf9c4d767f8ecdd6f48ce26958487872b7` | project_anchor | unknown | live | verified | n/a | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
+| bsc | exact address book overlap | VestingWallet<br>`0xb46e915cf6c6cfcaab3ac606c56d24ce4273c480` | project_anchor | unknown | live | verified | n/a | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
+| bsc | exact address book overlap | VestingWallet<br>`0xd853418ca8239bb8352a9b9095cfbe7e0970f6dd` | project_anchor | unknown | live | verified | n/a | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
+| bsc | exact address book overlap | VestingWallet<br>`0xfef652b9862f8cce28f2bcb4340d9d67e4bb1fcb` | project_anchor | unknown | live | verified | n/a | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
+| bsc | unverified unclassified | UnnamedContract<br>`0x43a1460610643e28e1e1a0a246647277596d652a` | non_address_book | unknown | unknown | unverified | n/a | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
+| bsc | unverified unclassified | UnnamedContract<br>`0x4663338379942e3a868bc4776e0d694ede10696f` | non_address_book | unknown | unknown | unverified | n/a | `0x812ed55fefc21ef2834c02e42f5b371480c6c636` |
 
 ## Audit Inventory
 

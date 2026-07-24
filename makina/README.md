@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
@@ -233,19 +233,20 @@ These rows are additive inventory from `project_contracts.discovery_source=deplo
 - Unknown liveness contracts: 9
 - Source-verified contracts: 6
 - Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
 - Classification counts: candidate review=3, source verified unclassified=3, unverified unclassified=3
 
-| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
-|---|---|---|---|---|---|---|---|
-| candidate review | AsyncRedeemerFee<br>`0xa6e1a23c70c9b05325ae2363af14e44bfc211739` | non_address_book | unknown | unknown | verified | review: missing_independent_ownership_evidence | `0x700c7d7d9358f30fa17f4a6b73611d2bcbdb5da2` |
-| candidate review | MachineShareOracleFactory<br>`0xc00365aac228461d3ba4ac0f4cdcea4a4cbbc776` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x700c7d7d9358f30fa17f4a6b73611d2bcbdb5da2` |
-| candidate review | TransparentUpgradeableProxy<br>`0x3f762cbb8919dcef405078500f325baedd0140ce` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x700c7d7d9358f30fa17f4a6b73611d2bcbdb5da2` |
-| source verified unclassified | MachineShareOracle<br>`0x65692f3156dd9fa14f2899258a81b8c8f6d36de6` | non_address_book | unknown | unknown | verified | n/a | `0x700c7d7d9358f30fa17f4a6b73611d2bcbdb5da2` |
-| source verified unclassified | UpgradeableBeacon<br>`0x61275759bfc5dd5ff96d9ae53056290adc677c5a` | non_address_book | unknown | unknown | verified | n/a | `0x700c7d7d9358f30fa17f4a6b73611d2bcbdb5da2` |
-| source verified unclassified | UpgradeableBeacon<br>`0xa4e22ea0039db637cf8381f8815c6e2ce24a30a1` | non_address_book | unknown | unknown | verified | n/a | `0x700c7d7d9358f30fa17f4a6b73611d2bcbdb5da2` |
-| unverified unclassified | UnnamedContract<br>`0x3e8640574aa764763291ed733672d3a105107ac5` | non_address_book | unknown | unknown | unverified | n/a | `0x8b41783ad99fcbeb8d575fa7a7b5a04fa0b8d80b` |
-| unverified unclassified | UnnamedContract<br>`0xca06411bd7a7296d7dbdd0050dfc846e95febeb7` | non_address_book | unknown | unknown | unverified | n/a | `0x8b41783ad99fcbeb8d575fa7a7b5a04fa0b8d80b` |
-| unverified unclassified | UnnamedContract<br>`0xe5a5f138005e19a3e6d0fe68b039397eeef2322b` | non_address_book | unknown | unknown | unverified | n/a | `0x8b41783ad99fcbeb8d575fa7a7b5a04fa0b8d80b` |
+| Chain | Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|---|
+| ethereum | candidate review | AsyncRedeemerFee<br>`0xa6e1a23c70c9b05325ae2363af14e44bfc211739` | non_address_book | unknown | unknown | verified | review: missing_independent_ownership_evidence | `0x700c7d7d9358f30fa17f4a6b73611d2bcbdb5da2` |
+| ethereum | candidate review | MachineShareOracleFactory<br>`0xc00365aac228461d3ba4ac0f4cdcea4a4cbbc776` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x700c7d7d9358f30fa17f4a6b73611d2bcbdb5da2` |
+| ethereum | candidate review | TransparentUpgradeableProxy<br>`0x3f762cbb8919dcef405078500f325baedd0140ce` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x700c7d7d9358f30fa17f4a6b73611d2bcbdb5da2` |
+| ethereum | source verified unclassified | MachineShareOracle<br>`0x65692f3156dd9fa14f2899258a81b8c8f6d36de6` | non_address_book | unknown | unknown | verified | n/a | `0x700c7d7d9358f30fa17f4a6b73611d2bcbdb5da2` |
+| ethereum | source verified unclassified | UpgradeableBeacon<br>`0x61275759bfc5dd5ff96d9ae53056290adc677c5a` | non_address_book | unknown | unknown | verified | n/a | `0x700c7d7d9358f30fa17f4a6b73611d2bcbdb5da2` |
+| ethereum | source verified unclassified | UpgradeableBeacon<br>`0xa4e22ea0039db637cf8381f8815c6e2ce24a30a1` | non_address_book | unknown | unknown | verified | n/a | `0x700c7d7d9358f30fa17f4a6b73611d2bcbdb5da2` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0x3e8640574aa764763291ed733672d3a105107ac5` | non_address_book | unknown | unknown | unverified | n/a | `0x8b41783ad99fcbeb8d575fa7a7b5a04fa0b8d80b` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0xca06411bd7a7296d7dbdd0050dfc846e95febeb7` | non_address_book | unknown | unknown | unverified | n/a | `0x8b41783ad99fcbeb8d575fa7a7b5a04fa0b8d80b` |
+| ethereum | unverified unclassified | UnnamedContract<br>`0xe5a5f138005e19a3e6d0fe68b039397eeef2322b` | non_address_book | unknown | unknown | unverified | n/a | `0x8b41783ad99fcbeb8d575fa7a7b5a04fa0b8d80b` |
 
 ## Audit Inventory
 

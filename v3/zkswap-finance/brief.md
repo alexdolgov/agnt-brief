@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: zkSwap Finance (`zkswap-finance`)
 - Website: [https://zkswap.finance](https://zkswap.finance)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: sonic, zksync-era
 - Contract surface: 114 unique implementations (136 raw deployments)
 - Coverage basis: 10/17 confirmed own live verified implementations (58.8%); conservative 58.8% with 0 needs-review implementation(s)
@@ -306,6 +306,55 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263963 | `0xffd6f258a53a4295dbf5be90e6a7f58aef2d38f7` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263964 | `0xffdef45585b57e294487c72f01043d5dee3f069f` | ❓ Unverified |
 
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 33
+- Live contracts: 8
+- Unknown liveness contracts: 25
+- Source-verified contracts: 30
+- Currently scope-matched contracts retained as-is: 6
+- Classification counts: currently scope matched=6, contamination review=4, exact address book overlap=1, source verified unclassified=20, unverified unclassified=2
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| currently scope matched | QuoterV2<br>`0x3a59bfe426f81726c31280aaeae1125f50ca1caa` | project_anchor | unknown | live | verified | n/a | `0x4bc9b68c77a9cd6071a21c6d9d4ae7f2ee921960` |
+| currently scope matched | TickLens<br>`0x7834387b0f48c0a2bf9c8fab696e2ab2587ca5ac` | project_anchor | unknown | live | verified | n/a | `0x4bc9b68c77a9cd6071a21c6d9d4ae7f2ee921960` |
+| currently scope matched | TransparentUpgradeableProxy<br>`0xf5fb98fce5ee81b4e2c5ac1829b12259f32ae0d5` | project_anchor | unknown | live | verified | n/a | `0x4bc9b68c77a9cd6071a21c6d9d4ae7f2ee921960` |
+| currently scope matched | ZFFactory<br>`0xce98a0e578b639aa90ee96ed5ba8e5a4022de529` | project_anchor | unknown | live | verified | n/a | `0x4bc9b68c77a9cd6071a21c6d9d4ae7f2ee921960` |
+| currently scope matched | ZFV3Factory<br>`0x6d977fcc945261b80d128a5a91cbf9a9148032a4` | project_anchor | unknown | live | verified | n/a | `0x4bc9b68c77a9cd6071a21c6d9d4ae7f2ee921960` |
+| currently scope matched | ZFV3PoolDeployer<br>`0x0ff16867bcac3c5fdc2dc73558e3f8e2ed89eea2` | project_anchor | unknown | live | verified | n/a | `0x4bc9b68c77a9cd6071a21c6d9d4ae7f2ee921960` |
+| contamination review | MixedRouteQuoterV1<br>`0x8708a634a06ae3bb44c26cb97dcce8556fe02962` | non_address_book | unknown | unknown | verified | n/a | `0x4bc9b68c77a9cd6071a21c6d9d4ae7f2ee921960` |
+| contamination review | NonfungibleTokenPositionDescriptor<br>`0x49685fbdb0ebd013d1c157dfb0c7cdafc3835af5` | retained_scope_excluded_inventory | unknown | live | verified | n/a | `0x4bc9b68c77a9cd6071a21c6d9d4ae7f2ee921960` |
+| contamination review | ZFStableSwapThreePoolInfo<br>`0x734711633ef2c9a2386be0ea1c010b06fb3b94aa` | non_address_book | unknown | unknown | verified | n/a | `0x4bc9b68c77a9cd6071a21c6d9d4ae7f2ee921960` |
+| contamination review | ZFStableSwapTwoPoolInfo<br>`0x9829e43951319848e0a78540ff1de77ac20a7f6c` | non_address_book | unknown | unknown | verified | n/a | `0x4bc9b68c77a9cd6071a21c6d9d4ae7f2ee921960` |
+| exact address book overlap | UnnamedContract<br>`0x3ec4879991d51338d2a2d037f4dad439570cf971` | project_anchor | unknown | live | unverified | n/a | `0x4bc9b68c77a9cd6071a21c6d9d4ae7f2ee921960` |
+| source verified unclassified | LongOFT<br>`0xbdd352f339e27e07089039ba80029f9135f6146f` | non_address_book | unknown | unknown | verified | n/a | `0x4bc9b68c77a9cd6071a21c6d9d4ae7f2ee921960` |
+| source verified unclassified | LongOFT<br>`0xfe57143bf436f0e3b4c0bf224d478316a81ecd49` | non_address_book | unknown | unknown | verified | n/a | `0x4bc9b68c77a9cd6071a21c6d9d4ae7f2ee921960` |
+| source verified unclassified | Multicall3<br>`0x3be99db246c81df2bd8dc0d708e03f64e1a84917` | non_address_book | unknown | unknown | verified | n/a | `0x4bc9b68c77a9cd6071a21c6d9d4ae7f2ee921960` |
+| source verified unclassified | NFTDescriptor<br>`0xcf7ff4717d5e1468c82aa69dba8dacb18ed5b585` | non_address_book | unknown | unknown | verified | n/a | `0x4bc9b68c77a9cd6071a21c6d9d4ae7f2ee921960` |
+| source verified unclassified | NonfungibleTokenPositionDescriptor<br>`0xf82343c8b777badb0921ee4c4f7581c968687b6b` | non_address_book | unknown | unknown | verified | n/a | `0x4bc9b68c77a9cd6071a21c6d9d4ae7f2ee921960` |
+| source verified unclassified | ProxyAdmin<br>`0x486d7c009b78310528aca11574ec816d2fdef71b` | non_address_book | unknown | unknown | verified | n/a | `0x4bc9b68c77a9cd6071a21c6d9d4ae7f2ee921960` |
+| source verified unclassified | TransparentUpgradeableProxy<br>`0x646a2679d293c338b31483fddb2eff3c3745b377` | non_address_book | unknown | unknown | verified | n/a | `0x4bc9b68c77a9cd6071a21c6d9d4ae7f2ee921960` |
+| source verified unclassified | UnsupportedProtocol<br>`0x0c5310fe4e4534c53574889028cf0b07d770db17` | non_address_book | unknown | unknown | verified | n/a | `0x4bc9b68c77a9cd6071a21c6d9d4ae7f2ee921960` |
+| source verified unclassified | ZFOFT<br>`0x3ebf331e045128d05ec374e90dd6448d4400997f` | non_address_book | unknown | unknown | verified | n/a | `0x4bc9b68c77a9cd6071a21c6d9d4ae7f2ee921960` |
+| source verified unclassified | ZFOFT<br>`0x513ac02371110353758783e395fc056380ffddd2` | non_address_book | unknown | unknown | verified | n/a | `0x4bc9b68c77a9cd6071a21c6d9d4ae7f2ee921960` |
+| source verified unclassified | ZFOFT<br>`0x6066069ba7fb45fbce18342e68fbcb2b4e108e1c` | non_address_book | unknown | unknown | verified | n/a | `0x4bc9b68c77a9cd6071a21c6d9d4ae7f2ee921960` |
+| source verified unclassified | ZFOFT<br>`0x61e09bad074261004d906decfeaa47f1762e84ec` | non_address_book | unknown | unknown | verified | n/a | `0x4bc9b68c77a9cd6071a21c6d9d4ae7f2ee921960` |
+| source verified unclassified | ZFOFT<br>`0x7a2f54267702136498c5d8713992ee14450f42d7` | non_address_book | unknown | unknown | verified | n/a | `0x4bc9b68c77a9cd6071a21c6d9d4ae7f2ee921960` |
+| source verified unclassified | ZFOFT<br>`0xaeff85a3a5ac7d0ed840c3393d5c916cabc78838` | non_address_book | unknown | unknown | verified | n/a | `0x4bc9b68c77a9cd6071a21c6d9d4ae7f2ee921960` |
+| source verified unclassified | ZFOFT<br>`0xf8850ee55f2ee1f5eb9a39478e73466339ccf360` | non_address_book | unknown | unknown | verified | n/a | `0x4bc9b68c77a9cd6071a21c6d9d4ae7f2ee921960` |
+| source verified unclassified | ZFRouter<br>`0xf5cf2b71b8b368c84c4c4903af453e790d392285` | non_address_book | unknown | unknown | verified | n/a | `0x4bc9b68c77a9cd6071a21c6d9d4ae7f2ee921960` |
+| source verified unclassified | ZFStableSwapFactory<br>`0x447fd2fab1985bb80b477cf186f216fc72b90c50` | non_address_book | unknown | unknown | verified | n/a | `0x4bc9b68c77a9cd6071a21c6d9d4ae7f2ee921960` |
+| source verified unclassified | ZFStableSwapLPFactory<br>`0x5271d6f66d4d881421fc2b1c48d4f99a9ba1d04c` | non_address_book | unknown | unknown | verified | n/a | `0x4bc9b68c77a9cd6071a21c6d9d4ae7f2ee921960` |
+| source verified unclassified | ZFStableSwapThreePoolDeployer<br>`0xc19a303f856847e60aeddfc5b773017110b06e37` | non_address_book | unknown | unknown | verified | n/a | `0x4bc9b68c77a9cd6071a21c6d9d4ae7f2ee921960` |
+| source verified unclassified | ZFStableSwapTwoPoolDeployer<br>`0xf43fc445204174ea98cf45b21504463d32c28189` | non_address_book | unknown | unknown | verified | n/a | `0x4bc9b68c77a9cd6071a21c6d9d4ae7f2ee921960` |
+| unverified unclassified | UnnamedContract<br>`0x45728a3d03ff67cc0c8546f4290affb7c94f877a` | non_address_book | unknown | unknown | unverified | n/a | `0x4bc9b68c77a9cd6071a21c6d9d4ae7f2ee921960` |
+| unverified unclassified | UnnamedContract<br>`0xced35925a87990e3b06a63ff4dae82e159ceda27` | non_address_book | unknown | unknown | unverified | n/a | `0x4bc9b68c77a9cd6071a21c6d9d4ae7f2ee921960` |
+
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
@@ -406,7 +455,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | GovernanceStaking.pdf | ZFGovernanceStaking | own contract | ZFGovernanceStaking (selected) `0xcb3d626005e3e209fe7fbf661a9cbe4874c35087` — deployed 2025-07-21 05:59:08+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | GovernanceStaking.pdf | ZFToken | unmatched — not counted | — | — | no |
 | audit.pdf | ZFToken | unmatched — not counted | — | listed in scope source files | no |
-| 1_[VitalBlock]_Zkswap_Finance_Audit_Report.pdf | ZFFactory | own contract | 0x3a76e3… (selected) `0x3a76e377ed58c8731f9df3a36155942438744ce3` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 1_[VitalBlock]_Zkswap_Finance_Audit_Report.pdf | ZFFactory | own contract | 0x3a76e3… (selected) `0x3a76e377ed58c8731f9df3a36155942438744ce3` — deployed 2023-05-23 14:53:48+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 1_[VitalBlock]_Zkswap_Finance_Audit_Report.pdf | ZFRouter | own contract | ZFRouter (selected) `0x18381c0f738146fb694de18d1106bde2be040fa4` — deployed 2023-05-23 14:55:36+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2_MythX_DEX_Full_Report.pdf | ZFFactory | own contract | ZFFactory (selected) `0xce98a0e578b639aa90ee96ed5ba8e5a4022de529` — deployed 2025-04-09 06:57:50+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2_MythX_DEX_Full_Report.pdf | ZFRouter | own contract | ZFRouter (alternative) `0xcd219ae923b5f20cb36ad316a129d8f9015d1822` — deployed 2025-04-09 07:36:33+03 — liveness: live (current_address_book_code)<br>ZFRouter (selected) `0x18381c0f738146fb694de18d1106bde2be040fa4` — deployed 2023-05-23 14:55:36+03 — liveness: live (current_address_book_code) | deployment-date disambiguation: 2023-05-23 was 27d from audit; next candidate 660d; normalized_full_corpus:project_anchor:matcher_anchor | yes |

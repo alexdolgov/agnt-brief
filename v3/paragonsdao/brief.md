@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: ParagonsDAO (`paragonsdao`)
 - Website: [https://app.paragonsdao.com](https://app.paragonsdao.com)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: base, ethereum
 - Contract surface: 5 unique implementations (5 raw deployments)
 - Coverage basis: 1/1 confirmed own live verified implementations (100.0%); conservative 100.0% with 0 needs-review implementation(s)
@@ -130,6 +130,23 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 - None
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 1
+- Live contracts: 0
+- Unknown liveness contracts: 1
+- Source-verified contracts: 1
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: source verified unclassified=1
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| source verified unclassified | ERC20AutoStakeRewarder<br>`0xf3d415c0245d984d269e5f2424799fa038d2eaa4` | non_address_book | unknown | unknown | verified | n/a | `0xde6789416001db6f295e47d5c58b9e17de70ce65` |
 
 ## Audit Inventory
 

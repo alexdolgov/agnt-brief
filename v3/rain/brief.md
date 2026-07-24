@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Rain (`rain`)
 - Website: [https://www.rain.one/](https://www.rain.one/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: arbitrum
 - Contract surface: 36 unique implementations (134 raw deployments)
 - Coverage basis: 0/1 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
@@ -158,6 +158,25 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---:|---|---|---|---|
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-391274 | `0x05b1fd504583b81bd14c368d59e8c3e354b6c1dc` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-391276 | `0xd4900ca167228365806fba4cb21f7eae8b6d96be` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 3
+- Live contracts: 0
+- Unknown liveness contracts: 3
+- Source-verified contracts: 3
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: candidate review=2, source verified unclassified=1
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| candidate review | ERC1967Proxy<br>`0x25118290e6a5f4139381d072181157035864099d` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xbd80a63799176d0922ce251072a00b8c75ecc331` |
+| candidate review | ERC1967Proxy<br>`0x8e4fd92a32036201ad38b4ccf37ebda72e6ad086` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x1b506e02cbeb49010b482f95f8144d00d98446e9` |
+| source verified unclassified | RandomNumberService<br>`0xdc85fca5915abc1e621ffaac3ab3e812bc50e224` | non_address_book | unknown | unknown | verified | n/a | `0x1b506e02cbeb49010b482f95f8144d00d98446e9` |
 
 ## Audit Inventory
 

@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: SuperEarn (`superearn`)
 - Website: [https://superearn.io/](https://superearn.io/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: ethereum, kaia
 - Contract surface: 152 unique implementations (191 raw deployments)
 - Coverage basis: 10/32 confirmed own live verified implementations (31.3%); conservative 31.3% with 0 needs-review implementation(s)
@@ -320,6 +320,40 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | kaia | unit-393390 | `0xc090e88bdaa823b7c1dd8d9e24cbacb0f35f2675` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | kaia | unit-393391 | `0xd8acff2e2b8b1cf052aca4ba331743f73c569e68` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | kaia | unit-393392 | `0xea8e1872adce77efbe5d6fe37b5c257cc86ec786` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 18
+- Live contracts: 12
+- Unknown liveness contracts: 6
+- Source-verified contracts: 16
+- Currently scope-matched contracts retained as-is: 5
+- Classification counts: currently scope matched=5, candidate review=7, source verified unclassified=4, unverified unclassified=2
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| currently scope matched | TransparentUpgradeableProxy<br>`0x40fb0f9084828adbc3dcd71840ea545bf243cd0f` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| currently scope matched | TransparentUpgradeableProxy<br>`0x4afd6ad5b924cd29513d1fb9b66728c4c5a1bd3e` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| currently scope matched | TransparentUpgradeableProxy<br>`0x57b71db8c039ad34b28c289272efa09b5a870c20` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| currently scope matched | TransparentUpgradeableProxy<br>`0x91caae299305a8133f295a59f4f22005d16eb65d` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| currently scope matched | TransparentUpgradeableProxy<br>`0xc090e88bdaa823b7c1dd8d9e24cbacb0f35f2675` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| candidate review | AssetPriceConverter<br>`0x46ee97692856dcaeeb7ce598f78b8eade7a18e2d` | retained_scope_excluded_inventory | unknown | live | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| candidate review | SuperEarnRouter<br>`0xd50d11d1d1267c78240e2cf452d0707c46591a0d` | retained_scope_excluded_inventory | unknown | live | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| candidate review | TransparentUpgradeableProxy<br>`0x733e7585b9545d5856c79da04a4378fc8a498879` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| candidate review | TransparentUpgradeableProxy<br>`0x8e53cdaa89381c203a074fb3388f65936358f200` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| candidate review | TransparentUpgradeableProxy<br>`0xd8acff2e2b8b1cf052aca4ba331743f73c569e68` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| candidate review | TransparentUpgradeableProxy<br>`0xf313102f42210accc7b17b33482d1eccd9e9f622` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| candidate review | UniversalSwapRouter<br>`0x8f19e66b4ba81faae964232baa2bdc8118385822` | retained_scope_excluded_inventory | unknown | live | verified | review: no_fresh_structural_match | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| source verified unclassified | BridgeAccountant<br>`0x0f4841b8b3796f406fa44b17d89465657533732c` | retained_scope_excluded_inventory | unknown | unknown | verified | n/a | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| source verified unclassified | CooldownVault<br>`0xa8c0c468f90cc920cea6cb4ab965f7ca7fab53bc` | retained_scope_excluded_inventory | unknown | live | verified | n/a | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| source verified unclassified | CrosschainAdapter<br>`0x6172c5b4e42c13b41f82a8b58f08848f9d781bf2` | retained_scope_excluded_inventory | unknown | live | verified | n/a | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| source verified unclassified | SuperEarnMessageAgent<br>`0x37887c5b3c9c9d8cd2113aba6078f125cfa135a9` | retained_scope_excluded_inventory | unknown | unknown | verified | n/a | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| unverified unclassified | UnnamedContract<br>`0xd1a10da860fa9f23da6bf6ea2583c6f9158ed8cc` | non_address_book | unknown | unknown | unverified | n/a | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
+| unverified unclassified | UnnamedContract<br>`0xde597fb7ee1de45ffe80881a4ce2259f67cbd610` | non_address_book | unknown | unknown | unverified | n/a | `0x95572bb567a3200ff432be6e048f2f50601182dd` |
 
 ## Audit Inventory
 

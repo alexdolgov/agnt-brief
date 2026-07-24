@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Bridgers (`bridgers`)
 - Website: [https://bridgers.ai/](https://bridgers.ai/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: arbitrum, avalanche, base, berachain, blast, bsc, celo, ethereum, fantom, linea, mantle, opbnb, optimism, polygon, sonic, zksync-era
 - Contract surface: 17 unique implementations (22 raw deployments)
 - Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
@@ -126,6 +126,26 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xdf113ccac3566bcf7aaa195c754e8be9e07d91c0` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xf1c930a6c26c2672e98a4170bb8148c9eadedc96` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xd1088d3376c2384d469d1c0d55d503695e1be3e6` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 4
+- Live contracts: 0
+- Unknown liveness contracts: 4
+- Source-verified contracts: 0
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: unverified unclassified=4
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| unverified unclassified | UnnamedContract<br>`0x62cd78991049e261266c208f011b23007bb97720` | non_address_book | unknown | unknown | unverified | n/a | `0x2bcf482eacaad6353eb6a7fb5d2265981c2c460f` |
+| unverified unclassified | UnnamedContract<br>`0xd825f47eecb6ea992c97d226bdc789ce2b244f60` | non_address_book | unknown | unknown | unverified | n/a | `0x2bcf482eacaad6353eb6a7fb5d2265981c2c460f` |
+| unverified unclassified | UnnamedContract<br>`0xdf113ccac3566bcf7aaa195c754e8be9e07d91c0` | non_address_book | unknown | unknown | unverified | n/a | `0x2bcf482eacaad6353eb6a7fb5d2265981c2c460f` |
+| unverified unclassified | UnnamedContract<br>`0xf1c930a6c26c2672e98a4170bb8148c9eadedc96` | non_address_book | unknown | unknown | unverified | n/a | `0x2bcf482eacaad6353eb6a7fb5d2265981c2c460f` |
 
 ## Audit Inventory
 

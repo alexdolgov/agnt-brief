@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: StandX (`standx`)
 - Website: [https://standx.com/referral?code=defillama](https://standx.com/referral?code=defillama)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: bsc
 - Contract surface: 21 unique implementations (30 raw deployments)
 - Coverage basis: 2/5 confirmed own live verified implementations (40.0%); conservative 40.0% with 0 needs-review implementation(s)
@@ -149,6 +149,37 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xcb5f1543f076181a290d49ca9bc8b838e5066874` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe17f50caf270e46b0217bb966765b3d3f239074f` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xfb558c0ff96f333e9b77cd9e995d95396c5ac10f` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 15
+- Live contracts: 6
+- Unknown liveness contracts: 9
+- Source-verified contracts: 12
+- Currently scope-matched contracts retained as-is: 2
+- Classification counts: currently scope matched=2, candidate review=4, exact address book overlap=2, source verified unclassified=4, unverified unclassified=3
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| currently scope matched | ERC1967Proxy<br>`0x2c02f575cdd0cc87de89ae6a493b05a5ed95065a` | project_anchor | unknown | live | verified | n/a | `0x649b82c8de192e92f8dc9c88f63038016ce56310` |
+| currently scope matched | ERC1967Proxy<br>`0xaf44a1e76f56ee12adbb7ba8acd3cbd474888122` | project_anchor | unknown | live | verified | n/a | `0x649b82c8de192e92f8dc9c88f63038016ce56310` |
+| candidate review | Gateway<br>`0x22d957163d6a075cf05474ccd2633c27c134deda` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x649b82c8de192e92f8dc9c88f63038016ce56310` |
+| candidate review | Gateway<br>`0x54b1cc926d4dd26cbad0d15758b87c333a29f23e` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x649b82c8de192e92f8dc9c88f63038016ce56310` |
+| candidate review | Settler<br>`0x23fd9dfb3f5772034ed677aeb15f048da53a04ed` | retained_scope_excluded_inventory | unknown | unknown | verified | review: no_fresh_structural_match | `0x649b82c8de192e92f8dc9c88f63038016ce56310` |
+| candidate review | StandDUSD<br>`0x2e8749ea4b3324376fa740f63abba2993d1ffdb2` | retained_scope_excluded_inventory | unknown | unknown | verified | review: no_fresh_structural_match | `0x649b82c8de192e92f8dc9c88f63038016ce56310` |
+| exact address book overlap | ERC1967Proxy<br>`0x00b4f9b510893505acefb10ec91cbc972185088e` | project_anchor | unknown | live | verified | n/a | `0x649b82c8de192e92f8dc9c88f63038016ce56310` |
+| exact address book overlap | ERC1967Proxy<br>`0x90bb5bdc6acd166237640c8707a694f1fc3aab84` | project_anchor | unknown | live | verified | n/a | `0x649b82c8de192e92f8dc9c88f63038016ce56310` |
+| source verified unclassified | BlockTrade<br>`0x40dbdeb84f762320e87101fc687af26c9c1c8d10` | non_address_book | unknown | unknown | verified | n/a | `0x649b82c8de192e92f8dc9c88f63038016ce56310` |
+| source verified unclassified | BlockTrade<br>`0x975dff8652bfcab6bd8493ecc65f8b8692fc53bb` | non_address_book | unknown | unknown | verified | n/a | `0x649b82c8de192e92f8dc9c88f63038016ce56310` |
+| source verified unclassified | BlockTrade<br>`0xf32a1918d894b5d5c4ce02c9e68fe3419bec9fbc` | non_address_book | unknown | unknown | verified | n/a | `0x649b82c8de192e92f8dc9c88f63038016ce56310` |
+| source verified unclassified | ERC1967Proxy<br>`0x6af876defd094dcdcb77f6349a580b91d26e8c60` | non_address_book | unknown | unknown | verified | n/a | `0x649b82c8de192e92f8dc9c88f63038016ce56310` |
+| unverified unclassified | UnnamedContract<br>`0xb69f4f80ec472ff9fe86933ac739329f8f72dc3b` | retained_scope_excluded_inventory | unknown | live | unverified | n/a | `0x649b82c8de192e92f8dc9c88f63038016ce56310` |
+| unverified unclassified | UnnamedContract<br>`0xe202fb00309c7e2322ca4cde977bc56f51a14f1c` | retained_scope_excluded_inventory | unknown | live | unverified | n/a | `0x649b82c8de192e92f8dc9c88f63038016ce56310` |
+| unverified unclassified | UnnamedContract<br>`0xfb558c0ff96f333e9b77cd9e995d95396c5ac10f` | non_address_book | unknown | unknown | unverified | n/a | `0x649b82c8de192e92f8dc9c88f63038016ce56310` |
 
 ## Audit Inventory
 

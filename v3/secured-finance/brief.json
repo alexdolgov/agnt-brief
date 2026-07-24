@@ -1,7 +1,7 @@
 {
   "schema_version": "3.0",
   "project_key": "secured-finance",
-  "generated_at": "2026-07-15T18:30:00.000Z",
+  "generated_at": "2026-07-24T14:10:00.000Z",
   "authority": {
     "activation_id": "scope-prod-20260715-v1",
     "production_closure_sha256": "38a124a34bf27378c85726318ca5f9408641faecd45c04ee5b82ad07a65cbc83",
@@ -13,7 +13,7 @@
     "liveness_closure_sha256": "e1855078572b4a5868cbe2ff93c7ad47c89e29b1b8209e48161f110e31790ddd",
     "fork_detection_run_id": "fork-structural-canonical-production-20260712",
     "deployer_decision_run_id": "deployer-candidate-production-20260712",
-    "export_input_receipt_sha256": "e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd",
+    "export_input_receipt_sha256": "e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92",
     "canonical_network_policy": "offline_cache_only"
   },
   "production_state": {
@@ -28,7 +28,7 @@
   "missing_evidence": {
     "audit_dates": []
   },
-  "pipeline_run_id": "brief-generation-scope-prod-20260715-v1",
+  "pipeline_run_id": "brief-deployer-expansion-all-20260724-v1",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -152,6 +152,91 @@
       "chainlink": 3
     },
     "upgradeable_contracts": 7
+  },
+  "deployer_expansion_inventory": {
+    "source": "project_contracts.discovery_source=deployer_expansion",
+    "decision_run_id": "deployer-candidate-production-20260712",
+    "total_contracts": 3,
+    "live_contracts": 0,
+    "unknown_liveness_contracts": 3,
+    "source_verified_contracts": 3,
+    "currently_scope_matched_contracts": 0,
+    "classification_counts": {
+      "currently_scope_matched": 0,
+      "candidate_auto_own": 0,
+      "candidate_review": 1,
+      "candidate_hard_block": 0,
+      "contamination_review": 0,
+      "third_party_or_infra": 0,
+      "exact_address_book_overlap": 0,
+      "source_verified_unclassified": 2,
+      "unverified_unclassified": 0
+    },
+    "contracts": [
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x60ccbf7e864df8c7223216baca4149a8190e5fc7",
+        "name": "LendingMarketController",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0x4f122d7fce7971e38801af5d96fcd4ed83efd654",
+        "deploy_date": "2026-05-19 04:41:59+03",
+        "contamination_flag": "review",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "candidate_review",
+        "classification_reason": "missing_independent_ownership_evidence",
+        "deployer_decision": "review",
+        "deployer_decision_reason": "missing_independent_ownership_evidence"
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x93dabbe49c0b296397909ac75489ef2cc91cf632",
+        "name": "BeaconProxyController",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0x4f122d7fce7971e38801af5d96fcd4ed83efd654",
+        "deploy_date": "2026-02-10 04:42:47+03",
+        "contamination_flag": "cleared",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "source_verified_unclassified",
+        "classification_reason": "Source is verified, but no stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0xd024f3d33f9dbd131ffe2eff2a920e9a7f62a18b",
+        "name": "CurrencyController",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0x4f122d7fce7971e38801af5d96fcd4ed83efd654",
+        "deploy_date": "2024-03-28 05:17:35+03",
+        "contamination_flag": "cleared",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "source_verified_unclassified",
+        "classification_reason": "Source is verified, but no stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      }
+    ]
   },
   "surface_sufficiency": {
     "unique_implementations": 9,
@@ -4458,7 +4543,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2023-12-14 03:46:59+03",
       "deploy_coverage_basis": "match_unverified"
     },
     {
@@ -4782,7 +4867,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2023-12-14 03:46:59+03",
       "deploy_coverage_basis": "match_unverified"
     },
     {
@@ -5592,7 +5677,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2023-12-14 03:46:59+03",
       "deploy_coverage_basis": "match_unverified"
     },
     {
@@ -8915,7 +9000,7 @@
               "source_urls": [
                 "https://docs.secured.finance/fixed-rate-lending/deployed-contracts.md"
               ],
-              "deploy_date": null,
+              "deploy_date": "2023-12-14 03:46:59+03",
               "product_line": "Contract Addresses",
               "address_book_label": null,
               "address_book_section": null,
@@ -9011,7 +9096,7 @@
               "source_urls": [
                 "https://docs.secured.finance/fixed-rate-lending/deployed-contracts.md"
               ],
-              "deploy_date": null,
+              "deploy_date": "2023-12-14 03:46:59+03",
               "product_line": "Contract Addresses",
               "address_book_label": null,
               "address_book_section": null,
@@ -9148,7 +9233,7 @@
               "source_urls": [
                 "https://docs.secured.finance/fixed-rate-lending/deployed-contracts.md"
               ],
-              "deploy_date": null,
+              "deploy_date": "2023-12-14 03:46:59+03",
               "product_line": "Contract Addresses",
               "address_book_label": null,
               "address_book_section": null,
@@ -10222,7 +10307,7 @@
               "source_urls": [
                 "https://docs.secured.finance/fixed-rate-lending/deployed-contracts.md"
               ],
-              "deploy_date": null,
+              "deploy_date": "2023-12-14 03:46:59+03",
               "product_line": "Contract Addresses",
               "address_book_label": null,
               "address_book_section": null,
@@ -10263,7 +10348,7 @@
               "source_urls": [
                 "https://docs.secured.finance/fixed-rate-lending/deployed-contracts.md"
               ],
-              "deploy_date": null,
+              "deploy_date": "2023-12-14 03:46:59+03",
               "product_line": "Contract Addresses",
               "address_book_label": null,
               "address_book_section": null,
@@ -10387,7 +10472,7 @@
               "source_urls": [
                 "https://docs.secured.finance/fixed-rate-lending/deployed-contracts.md"
               ],
-              "deploy_date": null,
+              "deploy_date": "2023-12-14 03:46:59+03",
               "product_line": "Contract Addresses",
               "address_book_label": null,
               "address_book_section": null,
@@ -10605,5 +10690,6 @@
     }
   },
   "active_bug_bounty": null,
+  "non_evm_deployments": null,
   "out_of_scope": null
 }

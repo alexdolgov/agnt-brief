@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ⚠️ Lifecycle status: DECLINING - TVL dropped 65.8% over 90 days
 
@@ -18,8 +18,8 @@
 - Project: Aegis Markets (`aegis-markets`)
 - Website: [https://aegis.markets/](https://aegis.markets/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: base, unichain
 - Contract surface: 30 unique implementations (39 raw deployments)
 - Coverage basis: 5/10 confirmed own live verified implementations (50.0%); conservative 50.0% with 0 needs-review implementation(s)
@@ -162,6 +162,32 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0x53e02d0351823dad1898675fc018d657a4de6544` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0x9c66d0e50679f4997d3657be76e8e982d0223ad4` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xa0b0d2d00fd544d8e0887f1a3cedd6e24baf10cc` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 10
+- Live contracts: 1
+- Unknown liveness contracts: 9
+- Source-verified contracts: 9
+- Currently scope-matched contracts retained as-is: 1
+- Classification counts: currently scope matched=1, candidate review=7, source verified unclassified=1, unverified unclassified=1
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| currently scope matched | FullRangeLiquidityManager<br>`0xa7ce35e886e58926ad0c149f4cc558e27d458a2c` | project_anchor | unknown | live | verified | automatic_own: fresh_structural_and_independent_ownership_match | `0x36b89a2be57541e9e1f0b44cb085e573192f1514` |
+| candidate review | DynamicFeeManager<br>`0x16b40ca9b9366aba4cfdb3d6827491b66994d958` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x36b89a2be57541e9e1f0b44cb085e573192f1514` |
+| candidate review | DynamicFeeManager<br>`0x4a6770f83059d0ee4ea1bdaaf0d3849deaa9429c` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x36b89a2be57541e9e1f0b44cb085e573192f1514` |
+| candidate review | FullRangeLiquidityManager<br>`0x6da0c0a6153f3c161d7fb260b5f040d5530fe365` | non_address_book | unknown | unknown | verified | review: missing_independent_ownership_evidence | `0x36b89a2be57541e9e1f0b44cb085e573192f1514` |
+| candidate review | PoolPolicyManager<br>`0x87cb5af674b546ec73e462221e8cb5e5ff7e3e06` | non_address_book | unknown | unknown | verified | review: missing_independent_ownership_evidence | `0x36b89a2be57541e9e1f0b44cb085e573192f1514` |
+| candidate review | TestToken<br>`0xf9a8f837337118960d78e2d0de8dbe17acfae04a` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xaf678e141bc53c821f4e87c90468ee7f2f6a680d` |
+| candidate review | TruncGeoOracleMulti<br>`0x23ff89455d190e2cff95a65d2ae01d3f170984ba` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x36b89a2be57541e9e1f0b44cb085e573192f1514` |
+| candidate review | TruncGeoOracleMulti<br>`0x2699565b992723113794679b02eff025bebe054a` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x36b89a2be57541e9e1f0b44cb085e573192f1514` |
+| source verified unclassified | AegisNFT<br>`0xdb3a3d5a32d78b19da8417aeb1cda5e2778e718d` | non_address_book | unknown | unknown | verified | n/a | `0xaf678e141bc53c821f4e87c90468ee7f2f6a680d` |
+| unverified unclassified | UnnamedContract<br>`0x53e02d0351823dad1898675fc018d657a4de6544` | non_address_book | unknown | unknown | unverified | n/a | `0x36b89a2be57541e9e1f0b44cb085e573192f1514` |
 
 ## Audit Inventory
 

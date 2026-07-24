@@ -1,7 +1,7 @@
 {
   "schema_version": "3.0",
   "project_key": "bitu-protocol",
-  "generated_at": "2026-07-15T18:30:00.000Z",
+  "generated_at": "2026-07-24T14:10:00.000Z",
   "authority": {
     "activation_id": "scope-prod-20260715-v1",
     "production_closure_sha256": "38a124a34bf27378c85726318ca5f9408641faecd45c04ee5b82ad07a65cbc83",
@@ -13,7 +13,7 @@
     "liveness_closure_sha256": "e1855078572b4a5868cbe2ff93c7ad47c89e29b1b8209e48161f110e31790ddd",
     "fork_detection_run_id": "fork-structural-canonical-production-20260712",
     "deployer_decision_run_id": "deployer-candidate-production-20260712",
-    "export_input_receipt_sha256": "e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd",
+    "export_input_receipt_sha256": "e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92",
     "canonical_network_policy": "offline_cache_only"
   },
   "production_state": {
@@ -28,7 +28,7 @@
   "missing_evidence": {
     "audit_dates": []
   },
-  "pipeline_run_id": "brief-generation-scope-prod-20260715-v1",
+  "pipeline_run_id": "brief-deployer-expansion-all-20260724-v1",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "bitu-protocol",
@@ -162,6 +162,70 @@
       "openzeppelin": 3
     },
     "upgradeable_contracts": 0
+  },
+  "deployer_expansion_inventory": {
+    "source": "project_contracts.discovery_source=deployer_expansion",
+    "decision_run_id": "deployer-candidate-production-20260712",
+    "total_contracts": 2,
+    "live_contracts": 1,
+    "unknown_liveness_contracts": 1,
+    "source_verified_contracts": 2,
+    "currently_scope_matched_contracts": 1,
+    "classification_counts": {
+      "currently_scope_matched": 1,
+      "candidate_auto_own": 0,
+      "candidate_review": 0,
+      "candidate_hard_block": 0,
+      "contamination_review": 0,
+      "third_party_or_infra": 0,
+      "exact_address_book_overlap": 0,
+      "source_verified_unclassified": 1,
+      "unverified_unclassified": 0
+    },
+    "contracts": [
+      {
+        "chain_id": 56,
+        "chain_name": "bsc",
+        "address": "0x61183a27ab5fdacc4d46f5af9eb9e6a93afd76d4",
+        "name": "BitUStaking",
+        "role": "unknown",
+        "liveness": "live",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0x8f74491aad723acb95f4c2eb5d0d50fd8b11a835",
+        "deploy_date": "2024-05-25 10:04:29+03",
+        "contamination_flag": "cleared",
+        "has_exact_address_book_entry": true,
+        "address_book_inventory_class": "project_anchor",
+        "scope_inventory_class": "project_anchor",
+        "classification": "currently_scope_matched",
+        "classification_reason": "Selected by the activated scope authority; retained unchanged in current scope output.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 56,
+        "chain_name": "bsc",
+        "address": "0xf8a0bf9cf54bb92f17374d9e9a321e6a111a51bd",
+        "name": "BEP20LINK",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0x970609ba2c160a1b491b90867681918bdc9773af",
+        "deploy_date": "2020-09-04 09:32:16+03",
+        "contamination_flag": "cleared",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "source_verified_unclassified",
+        "classification_reason": "Source is verified, but no stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      }
+    ]
   },
   "surface_sufficiency": {
     "unique_implementations": 3,
@@ -1000,5 +1064,6 @@
     }
   },
   "active_bug_bounty": null,
+  "non_evm_deployments": null,
   "out_of_scope": null
 }

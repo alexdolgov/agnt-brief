@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Polkastarter (`polkastarter`)
 - Website: [https://polkastarter.com/#upcoming-projects](https://polkastarter.com/#upcoming-projects)
 - Lifecycle: unknown
-- Generated: 2026-07-17T12:00:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: bsc, ethereum
 - Contract surface: 9 unique implementations (11 raw deployments)
 - Coverage basis: 1/2 confirmed own live verified implementations (50.0%); conservative 50.0% with 0 needs-review implementation(s)
@@ -136,6 +136,28 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x00000000000c2e074ec69a0dfb2997ba6c7d2e1e` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-251548 | `0x7e624fa0e1c4abfd309cc15719b7e2580887f570` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc24a365a870821eb83fd216c9596edd89479d8d7` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 6
+- Live contracts: 0
+- Unknown liveness contracts: 6
+- Source-verified contracts: 5
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: contamination review=1, source verified unclassified=4, unverified unclassified=1
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| contamination review | PolkastarterDistributionContract<br>`0xa8ff9e209e70ccbde820b75c51ece964ee165e04` | non_address_book | unknown | unknown | verified | n/a | `0x529c5a5152ae3b2f24bb7800441f9d630e85de61` |
+| source verified unclassified | DUMMY<br>`0x9e53a348dadff7e6ad8cd24d115544fc41502a6e` | non_address_book | unknown | unknown | verified | n/a | `0xb748910bf3926dc2ee18ddb7c8b279ee9331955c` |
+| source verified unclassified | RandomSeed<br>`0x4c6fa38c9f6c19a640a673c7ea45b1e89101c5e7` | non_address_book | unknown | unknown | verified | n/a | `0xb748910bf3926dc2ee18ddb7c8b279ee9331955c` |
+| source verified unclassified | RandomSeed<br>`0x4e1a49b194c3b1eb43b98f1b0fef091d0e069234` | non_address_book | unknown | unknown | verified | n/a | `0xb748910bf3926dc2ee18ddb7c8b279ee9331955c` |
+| source verified unclassified | RandomSeed<br>`0xddfe278c54b6ee6b7d6f76866de3b732c52f2be3` | non_address_book | unknown | unknown | verified | n/a | `0xb748910bf3926dc2ee18ddb7c8b279ee9331955c` |
+| unverified unclassified | UnnamedContract<br>`0xc24a365a870821eb83fd216c9596edd89479d8d7` | non_address_book | unknown | unknown | unverified | n/a | `0xb748910bf3926dc2ee18ddb7c8b279ee9331955c` |
 
 ## Audit Inventory
 

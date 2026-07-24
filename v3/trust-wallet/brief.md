@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Trust Wallet (`trust-wallet`)
 - Website: [https://trustwallet.com/](https://trustwallet.com/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: bsc, ethereum
-- Contract surface: 24 unique implementations (35 raw deployments)
+- Contract surface: 25 unique implementations (36 raw deployments)
 - Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - DeFi Llama TVL: $28,902,678.00
 - On-chain TVL (included contracts): n/a
@@ -75,15 +75,15 @@ The activated project remains an explicit cohort member with an empty normalized
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
 - Address-book implementation classification: 9 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 15 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 16 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 1
-- Confirmed-live implementations: 9 of 24 unique; 15 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 9 of 25 unique; 16 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 0/13
 - Verified + Unaudited implementations: 13
 - Verified by bytecode match: 0
-- Unverified implementations: 11
-- Unique implementations: 24
-- Raw deployments: 35
+- Unverified implementations: 12
+- Unique implementations: 25
+- Raw deployments: 36
 - Audits discovered: 10 (10 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): n/a
@@ -132,7 +132,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (11)
+### ❓ Unverified (12)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -148,7 +148,38 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394365 | `0xee1af8e967ec04c84711842796a5e714d2fd33e6` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394367 | `0xfde53272dcd7938d16e031a6989753c321728332` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x22b0ac22d5d58f05873e470bca5db7ceb5c47f5e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x6b7af22279fd4bd1377f5bccfc239d638303c936` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe0e2a29b69e6600e37000d1bdbccbe523f0a32e3` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 14
+- Live contracts: 0
+- Unknown liveness contracts: 14
+- Source-verified contracts: 12
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: candidate review=5, source verified unclassified=7, unverified unclassified=2
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| candidate review | DistributionCreator<br>`0x99fe8557a8f322525262720c52b7d57c56924012` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
+| candidate review | DistributionCreator<br>`0xc42b7a34cb37ee450cc8059b10d839e4753229d5` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
+| candidate review | Distributor<br>`0x04a7d169c5b14d2e29a3ba8b5071dda5e365c199` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
+| candidate review | Distributor<br>`0x44e3d3bba34e16a67c633daf86114284fc628819` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
+| candidate review | Distributor<br>`0xa0e088fb02a8d5a71d337b88b7629b0413f53de4` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
+| source verified unclassified | AgTokenSideChainMultiBridgeNameable<br>`0xe9169817edbfe5fcf629ed8b3c2a34e2a50ec84c` | non_address_book | unknown | unknown | verified | n/a | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
+| source verified unclassified | ERC1967Proxy<br>`0x1c6f6e2b226d99af2c34d875a03e055492914442` | non_address_book | unknown | unknown | verified | n/a | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
+| source verified unclassified | RadiantMerklTokenWrapper<br>`0x954ec713a3915b504a6f288563e5218f597e1895` | non_address_book | unknown | unknown | verified | n/a | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
+| source verified unclassified | RadiantMerklTokenWrapper<br>`0xc3ef7ed4f97450ae8da2473068375788bdeb5c5c` | non_address_book | unknown | unknown | verified | n/a | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
+| source verified unclassified | RadiantMerklTokenWrapper<br>`0xe04db2ba949a9e65b4bf52b11a0f9f221cf5fd21` | non_address_book | unknown | unknown | verified | n/a | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
+| source verified unclassified | SavingsNameable<br>`0xb5ecaa1a867feccd6d87604bc16a2b6b53d706bf` | non_address_book | unknown | unknown | verified | n/a | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
+| source verified unclassified | TokenLocker<br>`0x63dc02bb25e7bf7eaa0e42e71d785a388acd740b` | non_address_book | unknown | unknown | verified | n/a | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
+| unverified unclassified | UnnamedContract<br>`0x22b0ac22d5d58f05873e470bca5db7ceb5c47f5e` | non_address_book | unknown | unknown | unverified | n/a | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
+| unverified unclassified | UnnamedContract<br>`0x6b7af22279fd4bd1377f5bccfc239d638303c936` | non_address_book | unknown | unknown | unverified | n/a | `0xa9ddd91249dfdd450e81e1c56ab60e1a62651701` |
 
 ## Audit Inventory
 
@@ -190,12 +221,12 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Kudelski_Trust_Wallet_Audit_efeddfb567.pdf | starknet-curve | unmatched — not counted | — | listed in scope table | no |
 | Kudelski_Trust_Wallet_Audit_efeddfb567.pdf | starknet-ff | unmatched — not counted | — | listed in scope table | no |
 | Kudelski_Trust_Wallet_Audit_efeddfb567.pdf | key_pairs.rs | unmatched — not counted | — | listed in scope table | no |
-| Certik_Trustwallet_barz_Audit_ec38067a76.pdf | DiamondCutFacet | own contract | 0x0b9504… (selected) `0x0b9504140771c3688ff041917192277d2f52e1e0` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Certik_Trustwallet_barz_Audit_ec38067a76.pdf | DiamondCutFacet | own contract | 0x0b9504… (selected) `0x0b9504140771c3688ff041917192277d2f52e1e0` — deployed 2024-03-26 10:29:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | LibDiamond | unmatched — not counted | — | listed in scope table | no |
-| Certik_Trustwallet_barz_Audit_ec38067a76.pdf | DiamondLoupeFacet | own contract | 0xce36b8… (selected) `0xce36b85d12d81cd619c745c7717f3396e184ac7c` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Certik_Trustwallet_barz_Audit_ec38067a76.pdf | DiamondLoupeFacet | own contract | 0xce36b8… (selected) `0xce36b85d12d81cd619c745c7717f3396e184ac7c` — deployed 2024-03-26 10:29:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | Secp256k1VerificationFacet | unmatched — not counted | — | listed in scope table | no |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | LibSecp256r1 | unmatched — not counted | — | listed in scope table | no |
-| Certik_Trustwallet_barz_Audit_ec38067a76.pdf | AccountFacet | own contract | 0xfde532… (selected) `0xfde53272dcd7938d16e031a6989753c321728332` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Certik_Trustwallet_barz_Audit_ec38067a76.pdf | AccountFacet | own contract | 0xfde532… (selected) `0xfde53272dcd7938d16e031a6989753c321728332` — deployed 2024-03-26 10:29:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | AccountRecoveryFacet | unmatched — not counted | — | listed in scope table | no |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | GuardianFacet | unmatched — not counted | — | listed in scope table | no |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | LockFacet | unmatched — not counted | — | listed in scope table | no |
@@ -213,14 +244,14 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | ISignatureMigrationFacet | unmatched — not counted | — | listed in scope table | no |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | IVerificationFacet | unmatched — not counted | — | listed in scope table | no |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | Base64 | unmatched — not counted | — | listed in scope table | no |
-| Certik_Trustwallet_barz_Audit_ec38067a76.pdf | Secp256r1VerificationFacet | own contract | 0xee1af8… (selected) `0xee1af8e967ec04c84711842796a5e714d2fd33e6` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Certik_Trustwallet_barz_Audit_ec38067a76.pdf | Secp256r1VerificationFacet | own contract | 0xee1af8… (selected) `0xee1af8e967ec04c84711842796a5e714d2fd33e6` — deployed 2024-03-26 10:29:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | Modifiers | unmatched — not counted | — | listed in scope table | no |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | IFacetRegistry | unmatched — not counted | — | listed in scope table | no |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | IGuardianStorage | unmatched — not counted | — | listed in scope table | no |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | ISecurityManager | unmatched — not counted | — | listed in scope table | no |
-| Certik_Trustwallet_barz_Audit_ec38067a76.pdf | FacetRegistry | own contract | 0xafcb70… (selected) `0xafcb70e6e9514e2a15b23a01d2a9b9f7a34f2c33` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Certik_Trustwallet_barz_Audit_ec38067a76.pdf | FacetRegistry | own contract | 0xafcb70… (selected) `0xafcb70e6e9514e2a15b23a01d2a9b9f7a34f2c33` — deployed 2024-03-26 10:25:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | RemoteStorage | unmatched — not counted | — | listed in scope table | no |
-| Certik_Trustwallet_barz_Audit_ec38067a76.pdf | SecurityManager | own contract | 0xcbe266… (selected) `0xcbe266adbfd7cb32988128e7f37b7c8b3c5521a8` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Certik_Trustwallet_barz_Audit_ec38067a76.pdf | SecurityManager | own contract | 0xcbe266… (selected) `0xcbe266adbfd7cb32988128e7f37b7c8b3c5521a8` — deployed 2024-03-26 10:25:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | WhitelistStorage | unmatched — not counted | — | listed in scope table | no |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | IERC1155 | unmatched — not counted | — | listed in scope table | no |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | IERC20 | unmatched — not counted | — | listed in scope table | no |
@@ -235,29 +266,29 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | WhitelistRestriction | unmatched — not counted | — | listed in scope table | no |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | DiamondInit | unmatched — not counted | — | listed in scope table | no |
 | Certik_Trustwallet_barz_Audit_ec38067a76.pdf | Barz | unmatched — not counted | — | listed in scope table | no |
-| Certik_Trustwallet_barz_Audit_ec38067a76.pdf | BarzFactory | own contract | 0x729c31… (selected) `0x729c310186a57833f622630a16d13f710b83272a` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Certik_Trustwallet_barz_Audit_ec38067a76.pdf | TokenReceiverFacet | own contract | 0x3143e1… (selected) `0x3143e1c0af0cdc153423863923cf4e3818e34daa` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Halborn_Trustwallet_barz_Audit_1ef8a1f069.pdf | AccountFacet | own contract | 0xfde532… (selected) `0xfde53272dcd7938d16e031a6989753c321728332` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Certik_Trustwallet_barz_Audit_ec38067a76.pdf | BarzFactory | own contract | 0x729c31… (selected) `0x729c310186a57833f622630a16d13f710b83272a` — deployed 2024-03-26 10:32:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Certik_Trustwallet_barz_Audit_ec38067a76.pdf | TokenReceiverFacet | own contract | 0x3143e1… (selected) `0x3143e1c0af0cdc153423863923cf4e3818e34daa` — deployed 2024-03-26 10:29:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Halborn_Trustwallet_barz_Audit_1ef8a1f069.pdf | AccountFacet | own contract | 0xfde532… (selected) `0xfde53272dcd7938d16e031a6989753c321728332` — deployed 2024-03-26 10:29:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Halborn_Trustwallet_barz_Audit_1ef8a1f069.pdf | AccountRecoveryFacet | unmatched — not counted | — | listed in scope | no |
 | Halborn_Trustwallet_barz_Audit_1ef8a1f069.pdf | GuardianFacet | unmatched — not counted | — | listed in scope | no |
 | Halborn_Trustwallet_barz_Audit_1ef8a1f069.pdf | LockFacet | unmatched — not counted | — | listed in scope | no |
 | Halborn_Trustwallet_barz_Audit_1ef8a1f069.pdf | RestrictionsFacet | unmatched — not counted | — | listed in scope | no |
 | Halborn_Trustwallet_barz_Audit_1ef8a1f069.pdf | SignatureMigrationFacet | unmatched — not counted | — | listed in scope | no |
 | Halborn_Trustwallet_barz_Audit_1ef8a1f069.pdf | Barz | unmatched — not counted | — | listed in scope | no |
-| Halborn_Trustwallet_barz_Audit_1ef8a1f069.pdf | BarzFactory | own contract | 0x729c31… (selected) `0x729c310186a57833f622630a16d13f710b83272a` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Halborn_Trustwallet_barz_Audit_1ef8a1f069.pdf | BarzFactory | own contract | 0x729c31… (selected) `0x729c310186a57833f622630a16d13f710b83272a` — deployed 2024-03-26 10:32:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Halborn_Trustwallet_barz_Audit_1ef8a1f069.pdf | LibAppStorage | unmatched — not counted | — | listed in scope | no |
 | Halborn_Trustwallet_barz_Audit_1ef8a1f069.pdf | LibDiamond | unmatched — not counted | — | listed in scope | no |
 | Halborn_Trustwallet_barz_Audit_1ef8a1f069.pdf | LibFacetStorage | unmatched — not counted | — | listed in scope | no |
 | Halborn_Trustwallet_barz_Audit_1ef8a1f069.pdf | LibRecoverSpender | unmatched — not counted | — | listed in scope | no |
-| Halborn_Trustwallet_barz_Audit_1ef8a1f069.pdf | TokenReceiverFacet | own contract | 0x3143e1… (selected) `0x3143e1c0af0cdc153423863923cf4e3818e34daa` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Halborn_Trustwallet_barz_Audit_1ef8a1f069.pdf | TokenReceiverFacet | own contract | 0x3143e1… (selected) `0x3143e1c0af0cdc153423863923cf4e3818e34daa` — deployed 2024-03-26 10:29:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Trust_Wallet_Amber_Halborn_Executive_Summary_af658170eb.pdf | AmberGateway | unmatched — not counted | — | listed in scope | no |
 | Trust_Wallet_Amber_Halborn_Executive_Summary_af658170eb.pdf | StargateReceiver | unmatched — not counted | — | listed in scope | no |
 | Trust_Wallet_Amber_Halborn_Executive_Summary_af658170eb.pdf | LibDiamond | unmatched — not counted | — | listed in scope | no |
 | Trust_Wallet_Amber_Halborn_Executive_Summary_af658170eb.pdf | Core | unmatched — not counted | — | listed in scope | no |
 | Trust_Wallet_Amber_Halborn_Executive_Summary_af658170eb.pdf | ReentrancyGuardian | unmatched — not counted | — | listed in scope | no |
 | Trust_Wallet_Amber_Halborn_Executive_Summary_af658170eb.pdf | AssetManagerFacet | unmatched — not counted | — | listed in scope | no |
-| Trust_Wallet_Amber_Halborn_Executive_Summary_af658170eb.pdf | DiamondCutFacet | own contract | 0x0b9504… (selected) `0x0b9504140771c3688ff041917192277d2f52e1e0` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Trust_Wallet_Amber_Halborn_Executive_Summary_af658170eb.pdf | DiamondLoupeFacet | own contract | 0xce36b8… (selected) `0xce36b85d12d81cd619c745c7717f3396e184ac7c` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Trust_Wallet_Amber_Halborn_Executive_Summary_af658170eb.pdf | DiamondCutFacet | own contract | 0x0b9504… (selected) `0x0b9504140771c3688ff041917192277d2f52e1e0` — deployed 2024-03-26 10:29:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Trust_Wallet_Amber_Halborn_Executive_Summary_af658170eb.pdf | DiamondLoupeFacet | own contract | 0xce36b8… (selected) `0xce36b85d12d81cd619c745c7717f3396e184ac7c` — deployed 2024-03-26 10:29:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Trust_Wallet_Amber_Halborn_Executive_Summary_af658170eb.pdf | OwnershipFacet | unmatched — not counted | — | listed in scope | no |
 | Trust_Wallet_Amber_Halborn_Executive_Summary_af658170eb.pdf | BaseDex | unmatched — not counted | — | listed in scope | no |
 | Trust_Wallet_Amber_Halborn_Executive_Summary_af658170eb.pdf | KyberSwapFacet | unmatched — not counted | — | listed in scope | no |
@@ -293,7 +324,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 12 |
 | upstream | 0 |
 | standard_library | 1 |
-| needs_review | 11 |
+| needs_review | 12 |
 
 ## Scope Matching Notes
 

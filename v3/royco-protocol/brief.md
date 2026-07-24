@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Royco Protocol (`royco-protocol`)
 - Website: [https://www.royco.org](https://www.royco.org)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: arbitrum, avalanche, base, berachain, ethereum, hyperliquid, sonic
 - Contract surface: 23 unique implementations (42 raw deployments)
 - Coverage basis: 3/5 confirmed own live verified implementations (60.0%); conservative 60.0% with 0 needs-review implementation(s)
@@ -149,6 +149,25 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0x40a1c08084671e9a799b73853e82308225309dc0` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0x595ee728f3b8f5e937f6a21fe20f929dd8e301fc` | ❓ Unverified |
 
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 3
+- Live contracts: 0
+- Unknown liveness contracts: 3
+- Source-verified contracts: 3
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: candidate review=2, source verified unclassified=1
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| candidate review | ConcretePredepositVaultImpl<br>`0xb1119e9ba782c04c96fa0fe9ce89448650903d8d` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xe86055afa2714dcd416594bc2db9b8fa69d70a47` |
+| candidate review | TransparentUpgradeableProxy<br>`0xb03c43ab9599d5ad44561317689d147887ea8f04` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xe86055afa2714dcd416594bc2db9b8fa69d70a47` |
+| source verified unclassified | WhitelistUserDepositHook<br>`0x5c4952751cf5c9d4ea3ad84f3407c56ba2342f13` | non_address_book | unknown | unknown | verified | n/a | `0xe86055afa2714dcd416594bc2db9b8fa69d70a47` |
+
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
@@ -188,7 +207,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | hexens.io/audit-reports/royco-risk-tranching-protocol-update-mar-2026 | RoycoVaultTranche | unmatched — not counted | — | finding ROYCO3-3 | no |
 | hexens.io/audit-reports/royco-risk-tranching-protocol-update-mar-2026 | AdaptiveCurveYDM_V1 | unmatched — not counted | — | finding ROYCO3-9 | no |
 | hexens.io/audit-reports/royco-risk-tranching-protocol-update-mar-2026 | AdaptiveCurveYDM_V2 | unmatched — not counted | — | finding ROYCO3-9 | no |
-| hexens.io/audit-reports/royco-entry-point-contract-update-apr-2026 | RoycoEntryPoint | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x63da1229be88fb4d20210147954a1a3e05f2581b` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| hexens.io/audit-reports/royco-entry-point-contract-update-apr-2026 | RoycoEntryPoint | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x63da1229be88fb4d20210147954a1a3e05f2581b` — deployed 2026-04-27 23:17:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | hexens.io/audit-reports/royco-entry-point-contract-update-apr-2026 | MaplePoolV2_ST_JT_ExitSharePriceToChainlinkOracle_Kernel | unmatched — not counted | — | Finding ROYCO4-2 path | no |
 | hexens.io/audit-reports/royco-entry-point-contract-update-apr-2026 | Identical_ERC20_ST_JT_ChainlinkToAdminOracle_SoulBoundTrancheShares_Kernel | unmatched — not counted | — | Finding ROYCO4-4 path | no |
 | hexens.io/audit-reports/royco-entry-point-contract-update-apr-2026 | RoycoKernel | unmatched — not counted | — | Finding ROYCO4-11 path | no |

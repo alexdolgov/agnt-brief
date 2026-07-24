@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Orbiter One (`orbiter-one`)
 - Website: [https://orbiter.one](https://orbiter.one)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: moonbeam
 - Contract surface: 18 unique implementations (18 raw deployments)
 - Coverage basis: 1/14 confirmed own live verified implementations (7.1%); conservative 7.1% with 0 needs-review implementation(s)
@@ -152,6 +152,25 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | core_logic | project_anchor | own_supporting | 0 | moonbeam | unit-390444 | `0x0aca5cb726c4e86045f6fbb673eaaca854b11698` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0x6d954ee9a06c6fea6fc53bfb971a1489de2c9e58` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0x9968788811688d037392c0de5e270d13a0c8719c` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 3
+- Live contracts: 1
+- Unknown liveness contracts: 2
+- Source-verified contracts: 1
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: exact address book overlap=1, unverified unclassified=2
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| exact address book overlap | OrbitLottery<br>`0xaa0c247e385f2995fb0d88921470bfb450729a13` | project_anchor | unknown | live | verified | n/a | `0x8be6ccecb1cfc49be3efbcdb40f2a4c9b6255d4d` |
+| unverified unclassified | UnnamedContract<br>`0x6d954ee9a06c6fea6fc53bfb971a1489de2c9e58` | non_address_book | unknown | unknown | unverified | n/a | `0x8be6ccecb1cfc49be3efbcdb40f2a4c9b6255d4d` |
+| unverified unclassified | UnnamedContract<br>`0x9968788811688d037392c0de5e270d13a0c8719c` | non_address_book | unknown | unknown | unverified | n/a | `0x8be6ccecb1cfc49be3efbcdb40f2a4c9b6255d4d` |
 
 ## Audit Inventory
 

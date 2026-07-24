@@ -1,7 +1,7 @@
 {
   "schema_version": "3.0",
   "project_key": "tangent-finance",
-  "generated_at": "2026-07-15T18:30:00.000Z",
+  "generated_at": "2026-07-24T14:10:00.000Z",
   "authority": {
     "activation_id": "scope-prod-20260715-v1",
     "production_closure_sha256": "38a124a34bf27378c85726318ca5f9408641faecd45c04ee5b82ad07a65cbc83",
@@ -13,7 +13,7 @@
     "liveness_closure_sha256": "e1855078572b4a5868cbe2ff93c7ad47c89e29b1b8209e48161f110e31790ddd",
     "fork_detection_run_id": "fork-structural-canonical-production-20260712",
     "deployer_decision_run_id": "deployer-candidate-production-20260712",
-    "export_input_receipt_sha256": "e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd",
+    "export_input_receipt_sha256": "e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92",
     "canonical_network_policy": "offline_cache_only"
   },
   "production_state": {
@@ -30,27 +30,27 @@
       21135
     ]
   },
-  "pipeline_run_id": "brief-generation-scope-prod-20260715-v1",
+  "pipeline_run_id": "brief-deployer-expansion-all-20260724-v1",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 77,
-    "total_addresses": 77,
-    "unique_implementations": 77,
+    "total_contracts": 93,
+    "total_addresses": 93,
+    "unique_implementations": 93,
     "address_book_own_implementations": 1,
     "address_book_context_implementations": 15,
     "address_book_unclassified_implementations": 0,
-    "non_address_book_implementations": 61,
+    "non_address_book_implementations": 77,
     "third_party_or_infra_implementations": 33,
     "standard_proxy_or_library_implementations": 1,
     "address_book_proxy_deployments": 2,
-    "total_deployments": 77,
+    "total_deployments": 93,
     "audited_contracts": 1,
     "unaudited_contracts": 31,
     "contracts_verified_audited": 1,
     "contracts_verified_unaudited": 31,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 45,
+    "contracts_unverified": 61,
     "owned_contracts_verified_audited": 1,
     "owned_contracts_verified_unaudited": 0,
     "owned_contracts_verified_by_bytecode": 0,
@@ -142,6 +142,364 @@
       "chainlink": 1
     },
     "upgradeable_contracts": 0
+  },
+  "deployer_expansion_inventory": {
+    "source": "project_contracts.discovery_source=deployer_expansion",
+    "decision_run_id": "deployer-candidate-production-20260712",
+    "total_contracts": 16,
+    "live_contracts": 0,
+    "unknown_liveness_contracts": 16,
+    "source_verified_contracts": 0,
+    "currently_scope_matched_contracts": 0,
+    "classification_counts": {
+      "currently_scope_matched": 0,
+      "candidate_auto_own": 0,
+      "candidate_review": 0,
+      "candidate_hard_block": 0,
+      "contamination_review": 0,
+      "third_party_or_infra": 0,
+      "exact_address_book_overlap": 0,
+      "source_verified_unclassified": 0,
+      "unverified_unclassified": 16
+    },
+    "contracts": [
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x1abb39263bcc17c9c3af4c7b51bc2c6dc225c80f",
+        "name": "UnnamedContract",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": false,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xe08c2512f87cf63fb7d2325edd08aec7920ac2f6",
+        "deploy_date": "2026-07-21 13:34:35+03",
+        "contamination_flag": null,
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "unverified_unclassified",
+        "classification_reason": "No stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x2903b611f3a0bc488d1ac1580bef7d2c9fa79cfd",
+        "name": "UnnamedContract",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": false,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xe08c2512f87cf63fb7d2325edd08aec7920ac2f6",
+        "deploy_date": "2026-02-25 19:58:35+03",
+        "contamination_flag": null,
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "unverified_unclassified",
+        "classification_reason": "No stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x51c88d507e0df0d54daae6fea5b037ae39f4f76d",
+        "name": "UnnamedContract",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": false,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xe08c2512f87cf63fb7d2325edd08aec7920ac2f6",
+        "deploy_date": "2026-02-27 21:09:11+03",
+        "contamination_flag": null,
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "unverified_unclassified",
+        "classification_reason": "No stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x66d7753f2e72a5d64cee1d7ec4e1af2110f8185a",
+        "name": "UnnamedContract",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": false,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xe08c2512f87cf63fb7d2325edd08aec7920ac2f6",
+        "deploy_date": "2026-07-10 16:23:35+03",
+        "contamination_flag": null,
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "unverified_unclassified",
+        "classification_reason": "No stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x673d049150e583a28bbe16e8fdf141f3e8072bed",
+        "name": "UnnamedContract",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": false,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xe08c2512f87cf63fb7d2325edd08aec7920ac2f6",
+        "deploy_date": "2026-02-12 20:19:23+03",
+        "contamination_flag": null,
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "unverified_unclassified",
+        "classification_reason": "No stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x6a672127eb6fc55515d5a39ffb6e1224965322a1",
+        "name": "UnnamedContract",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": false,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xe08c2512f87cf63fb7d2325edd08aec7920ac2f6",
+        "deploy_date": "2026-05-20 16:56:23+03",
+        "contamination_flag": null,
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "unverified_unclassified",
+        "classification_reason": "No stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x9f162292bc39f194a3ca87e39700293bd9aa710a",
+        "name": "UnnamedContract",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": false,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xe08c2512f87cf63fb7d2325edd08aec7920ac2f6",
+        "deploy_date": "2026-05-21 16:55:35+03",
+        "contamination_flag": null,
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "unverified_unclassified",
+        "classification_reason": "No stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0xa876374f38aaab2246ef871fb066541b732de410",
+        "name": "UnnamedContract",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": false,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xe08c2512f87cf63fb7d2325edd08aec7920ac2f6",
+        "deploy_date": "2026-06-09 16:03:35+03",
+        "contamination_flag": null,
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "unverified_unclassified",
+        "classification_reason": "No stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0xb53b1e50643ba89e1be280d6e04186f90b698a81",
+        "name": "UnnamedContract",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": false,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xe08c2512f87cf63fb7d2325edd08aec7920ac2f6",
+        "deploy_date": "2026-07-21 12:51:35+03",
+        "contamination_flag": null,
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "unverified_unclassified",
+        "classification_reason": "No stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0xb91fea3834417d9dfe581262b20e86f5bdfec9fa",
+        "name": "UnnamedContract",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": false,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xe08c2512f87cf63fb7d2325edd08aec7920ac2f6",
+        "deploy_date": "2026-02-27 21:04:35+03",
+        "contamination_flag": null,
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "unverified_unclassified",
+        "classification_reason": "No stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0xca30e7aacfd7c4d16d0d460e188d38150c123d01",
+        "name": "UnnamedContract",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": false,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xe08c2512f87cf63fb7d2325edd08aec7920ac2f6",
+        "deploy_date": "2026-07-21 13:41:23+03",
+        "contamination_flag": null,
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "unverified_unclassified",
+        "classification_reason": "No stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0xcad9adfc5f9570926601aa3b2e91baf4c60d492f",
+        "name": "UnnamedContract",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": false,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xe08c2512f87cf63fb7d2325edd08aec7920ac2f6",
+        "deploy_date": "2026-02-12 20:22:11+03",
+        "contamination_flag": null,
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "unverified_unclassified",
+        "classification_reason": "No stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0xcaf6096ef4f27122a0b92ca753f9940a1c001daa",
+        "name": "UnnamedContract",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": false,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xe08c2512f87cf63fb7d2325edd08aec7920ac2f6",
+        "deploy_date": "2026-05-20 16:33:23+03",
+        "contamination_flag": null,
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "unverified_unclassified",
+        "classification_reason": "No stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0xcd691e2f2dfbeb79074dcaa19174ee2e6d710822",
+        "name": "UnnamedContract",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": false,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xe08c2512f87cf63fb7d2325edd08aec7920ac2f6",
+        "deploy_date": "2026-05-06 14:23:11+03",
+        "contamination_flag": null,
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "unverified_unclassified",
+        "classification_reason": "No stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0xd990182f55002ea664c6670a4af77c3bf24c682a",
+        "name": "UnnamedContract",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": false,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xe08c2512f87cf63fb7d2325edd08aec7920ac2f6",
+        "deploy_date": "2026-06-09 16:02:35+03",
+        "contamination_flag": null,
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "unverified_unclassified",
+        "classification_reason": "No stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0xddb637645349d0579fa627f3f583e52f53b7d600",
+        "name": "UnnamedContract",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": false,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xe08c2512f87cf63fb7d2325edd08aec7920ac2f6",
+        "deploy_date": "2026-07-10 15:45:47+03",
+        "contamination_flag": null,
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "unverified_unclassified",
+        "classification_reason": "No stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      }
+    ]
   },
   "surface_sufficiency": {
     "unique_implementations": 1,
@@ -1738,6 +2096,60 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x1abb39263bcc17c9c3af4c7b51bc2c6dc225c80f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1abb39263bcc17c9c3af4c7b51bc2c6dc225c80f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": null,
+          "operational_liveness_run_id": null,
+          "operational_liveness_observed_at": null
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "none",
+      "address_book_inventory_class": "non_address_book",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "non_address_book_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Discovered project contract is not present at an exact chain/address key in the protocol address book; excluded from scope matching and coverage.",
+      "surface_evidence": {
+        "source": "exact_protocol_address_book_membership",
+        "has_exact_address_book_entry": false
+      },
+      "effective_deploy_date": "2026-07-21 13:34:35+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x25605c9981bcdf2457791daf84514bacd15b6775",
       "deployment_unit": "unit-258123",
       "deployment_unit_proxy_count": 0,
@@ -1786,7 +2198,61 @@
         "source": "project_contracts.provenance_hint",
         "provenance_hint": "third_party_infra"
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-20 18:01:59+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x2903b611f3a0bc488d1ac1580bef7d2c9fa79cfd",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x2903b611f3a0bc488d1ac1580bef7d2c9fa79cfd",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": null,
+          "operational_liveness_run_id": null,
+          "operational_liveness_observed_at": null
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "none",
+      "address_book_inventory_class": "non_address_book",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "non_address_book_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Discovered project contract is not present at an exact chain/address key in the protocol address book; excluded from scope matching and coverage.",
+      "surface_evidence": {
+        "source": "exact_protocol_address_book_membership",
+        "has_exact_address_book_entry": false
+      },
+      "effective_deploy_date": "2026-02-25 19:58:35+03",
       "deploy_coverage_basis": null
     },
     {
@@ -1840,7 +2306,7 @@
         "source": "project_contracts.provenance_hint",
         "provenance_hint": "third_party_infra"
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-20 16:58:11+03",
       "deploy_coverage_basis": null
     },
     {
@@ -1894,7 +2360,7 @@
         "source": "project_contracts.provenance_hint",
         "provenance_hint": "third_party_infra"
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-21 16:54:23+03",
       "deploy_coverage_basis": null
     },
     {
@@ -1948,7 +2414,7 @@
         "source": "project_contracts.provenance_hint",
         "provenance_hint": "third_party_infra"
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-21 16:52:35+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2002,7 +2468,7 @@
         "source": "project_contracts.provenance_hint",
         "provenance_hint": "third_party_infra"
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-21 16:26:11+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2056,7 +2522,61 @@
         "source": "project_contracts.provenance_hint",
         "provenance_hint": "third_party_infra"
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-20 18:02:47+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x51c88d507e0df0d54daae6fea5b037ae39f4f76d",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x51c88d507e0df0d54daae6fea5b037ae39f4f76d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": null,
+          "operational_liveness_run_id": null,
+          "operational_liveness_observed_at": null
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "none",
+      "address_book_inventory_class": "non_address_book",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "non_address_book_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Discovered project contract is not present at an exact chain/address key in the protocol address book; excluded from scope matching and coverage.",
+      "surface_evidence": {
+        "source": "exact_protocol_address_book_membership",
+        "has_exact_address_book_entry": false
+      },
+      "effective_deploy_date": "2026-02-27 21:09:11+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2110,7 +2630,7 @@
         "source": "exact_protocol_address_book_membership",
         "has_exact_address_book_entry": false
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-02-12 17:38:23+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2164,7 +2684,7 @@
         "source": "exact_protocol_address_book_membership",
         "has_exact_address_book_entry": false
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-21 21:10:47+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2218,7 +2738,7 @@
         "source": "exact_protocol_address_book_membership",
         "has_exact_address_book_entry": false
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-21 21:05:59+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2272,7 +2792,7 @@
         "source": "project_contracts.provenance_hint",
         "provenance_hint": "third_party_infra"
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-21 16:49:23+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2326,7 +2846,7 @@
         "source": "project_contracts.provenance_hint",
         "provenance_hint": "third_party_infra"
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-20 17:56:11+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2380,7 +2900,7 @@
         "source": "project_contracts.provenance_hint",
         "provenance_hint": "third_party_infra"
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-20 18:07:11+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2434,7 +2954,169 @@
         "source": "project_contracts.provenance_hint",
         "provenance_hint": "third_party_infra"
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-20 17:11:23+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x66d7753f2e72a5d64cee1d7ec4e1af2110f8185a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x66d7753f2e72a5d64cee1d7ec4e1af2110f8185a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": null,
+          "operational_liveness_run_id": null,
+          "operational_liveness_observed_at": null
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "none",
+      "address_book_inventory_class": "non_address_book",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "non_address_book_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Discovered project contract is not present at an exact chain/address key in the protocol address book; excluded from scope matching and coverage.",
+      "surface_evidence": {
+        "source": "exact_protocol_address_book_membership",
+        "has_exact_address_book_entry": false
+      },
+      "effective_deploy_date": "2026-07-10 16:23:35+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x673d049150e583a28bbe16e8fdf141f3e8072bed",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x673d049150e583a28bbe16e8fdf141f3e8072bed",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": null,
+          "operational_liveness_run_id": null,
+          "operational_liveness_observed_at": null
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "none",
+      "address_book_inventory_class": "non_address_book",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "non_address_book_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Discovered project contract is not present at an exact chain/address key in the protocol address book; excluded from scope matching and coverage.",
+      "surface_evidence": {
+        "source": "exact_protocol_address_book_membership",
+        "has_exact_address_book_entry": false
+      },
+      "effective_deploy_date": "2026-02-12 20:19:23+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6a672127eb6fc55515d5a39ffb6e1224965322a1",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6a672127eb6fc55515d5a39ffb6e1224965322a1",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": null,
+          "operational_liveness_run_id": null,
+          "operational_liveness_observed_at": null
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "none",
+      "address_book_inventory_class": "non_address_book",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "non_address_book_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Discovered project contract is not present at an exact chain/address key in the protocol address book; excluded from scope matching and coverage.",
+      "surface_evidence": {
+        "source": "exact_protocol_address_book_membership",
+        "has_exact_address_book_entry": false
+      },
+      "effective_deploy_date": "2026-05-20 16:56:23+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2488,7 +3170,7 @@
         "source": "project_contracts.provenance_hint",
         "provenance_hint": "third_party_infra"
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-20 17:19:23+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2542,7 +3224,7 @@
         "source": "project_contracts.provenance_hint",
         "provenance_hint": "third_party_infra"
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-21 15:26:11+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2596,7 +3278,7 @@
         "source": "project_contracts.provenance_hint",
         "provenance_hint": "third_party_infra"
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-21 15:20:23+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2650,7 +3332,7 @@
         "source": "project_contracts.provenance_hint",
         "provenance_hint": "third_party_infra"
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-20 17:40:47+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2704,7 +3386,61 @@
         "source": "project_contracts.provenance_hint",
         "provenance_hint": "third_party_infra"
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-21 14:52:59+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x9f162292bc39f194a3ca87e39700293bd9aa710a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9f162292bc39f194a3ca87e39700293bd9aa710a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": null,
+          "operational_liveness_run_id": null,
+          "operational_liveness_observed_at": null
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "none",
+      "address_book_inventory_class": "non_address_book",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "non_address_book_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Discovered project contract is not present at an exact chain/address key in the protocol address book; excluded from scope matching and coverage.",
+      "surface_evidence": {
+        "source": "exact_protocol_address_book_membership",
+        "has_exact_address_book_entry": false
+      },
+      "effective_deploy_date": "2026-05-21 16:55:35+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2758,7 +3494,7 @@
         "source": "project_contracts.provenance_hint",
         "provenance_hint": "third_party_infra"
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-20 17:57:23+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2812,7 +3548,7 @@
         "source": "project_contracts.provenance_hint",
         "provenance_hint": "third_party_infra"
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-03-03 21:16:35+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2866,7 +3602,7 @@
         "source": "exact_protocol_address_book_membership",
         "has_exact_address_book_entry": false
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-21 21:10:47+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2920,7 +3656,7 @@
         "source": "exact_protocol_address_book_membership",
         "has_exact_address_book_entry": false
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-21 21:10:47+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2974,7 +3710,61 @@
         "source": "exact_protocol_address_book_membership",
         "has_exact_address_book_entry": false
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-02-25 21:02:35+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa876374f38aaab2246ef871fb066541b732de410",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa876374f38aaab2246ef871fb066541b732de410",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": null,
+          "operational_liveness_run_id": null,
+          "operational_liveness_observed_at": null
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "none",
+      "address_book_inventory_class": "non_address_book",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "non_address_book_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Discovered project contract is not present at an exact chain/address key in the protocol address book; excluded from scope matching and coverage.",
+      "surface_evidence": {
+        "source": "exact_protocol_address_book_membership",
+        "has_exact_address_book_entry": false
+      },
+      "effective_deploy_date": "2026-06-09 16:03:35+03",
       "deploy_coverage_basis": null
     },
     {
@@ -3028,7 +3818,7 @@
         "source": "project_contracts.provenance_hint",
         "provenance_hint": "third_party_infra"
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-21 15:21:23+03",
       "deploy_coverage_basis": null
     },
     {
@@ -3082,7 +3872,61 @@
         "source": "exact_protocol_address_book_membership",
         "has_exact_address_book_entry": false
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-21 21:04:47+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb53b1e50643ba89e1be280d6e04186f90b698a81",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb53b1e50643ba89e1be280d6e04186f90b698a81",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": null,
+          "operational_liveness_run_id": null,
+          "operational_liveness_observed_at": null
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "none",
+      "address_book_inventory_class": "non_address_book",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "non_address_book_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Discovered project contract is not present at an exact chain/address key in the protocol address book; excluded from scope matching and coverage.",
+      "surface_evidence": {
+        "source": "exact_protocol_address_book_membership",
+        "has_exact_address_book_entry": false
+      },
+      "effective_deploy_date": "2026-07-21 12:51:35+03",
       "deploy_coverage_basis": null
     },
     {
@@ -3136,7 +3980,61 @@
         "source": "project_contracts.provenance_hint",
         "provenance_hint": "third_party_infra"
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-21 16:40:35+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb91fea3834417d9dfe581262b20e86f5bdfec9fa",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb91fea3834417d9dfe581262b20e86f5bdfec9fa",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": null,
+          "operational_liveness_run_id": null,
+          "operational_liveness_observed_at": null
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "none",
+      "address_book_inventory_class": "non_address_book",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "non_address_book_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Discovered project contract is not present at an exact chain/address key in the protocol address book; excluded from scope matching and coverage.",
+      "surface_evidence": {
+        "source": "exact_protocol_address_book_membership",
+        "has_exact_address_book_entry": false
+      },
+      "effective_deploy_date": "2026-02-27 21:04:35+03",
       "deploy_coverage_basis": null
     },
     {
@@ -3190,7 +4088,7 @@
         "source": "exact_protocol_address_book_membership",
         "has_exact_address_book_entry": false
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-02-25 20:57:47+03",
       "deploy_coverage_basis": null
     },
     {
@@ -3244,7 +4142,7 @@
         "source": "exact_protocol_address_book_membership",
         "has_exact_address_book_entry": false
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-21 20:49:11+03",
       "deploy_coverage_basis": null
     },
     {
@@ -3298,7 +4196,7 @@
         "source": "project_contracts.provenance_hint",
         "provenance_hint": "third_party_infra"
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-20 17:51:47+03",
       "deploy_coverage_basis": null
     },
     {
@@ -3352,7 +4250,169 @@
         "source": "exact_protocol_address_book_membership",
         "has_exact_address_book_entry": false
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-21 20:58:35+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xca30e7aacfd7c4d16d0d460e188d38150c123d01",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xca30e7aacfd7c4d16d0d460e188d38150c123d01",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": null,
+          "operational_liveness_run_id": null,
+          "operational_liveness_observed_at": null
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "none",
+      "address_book_inventory_class": "non_address_book",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "non_address_book_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Discovered project contract is not present at an exact chain/address key in the protocol address book; excluded from scope matching and coverage.",
+      "surface_evidence": {
+        "source": "exact_protocol_address_book_membership",
+        "has_exact_address_book_entry": false
+      },
+      "effective_deploy_date": "2026-07-21 13:41:23+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xcad9adfc5f9570926601aa3b2e91baf4c60d492f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xcad9adfc5f9570926601aa3b2e91baf4c60d492f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": null,
+          "operational_liveness_run_id": null,
+          "operational_liveness_observed_at": null
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "none",
+      "address_book_inventory_class": "non_address_book",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "non_address_book_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Discovered project contract is not present at an exact chain/address key in the protocol address book; excluded from scope matching and coverage.",
+      "surface_evidence": {
+        "source": "exact_protocol_address_book_membership",
+        "has_exact_address_book_entry": false
+      },
+      "effective_deploy_date": "2026-02-12 20:22:11+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xcaf6096ef4f27122a0b92ca753f9940a1c001daa",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xcaf6096ef4f27122a0b92ca753f9940a1c001daa",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": null,
+          "operational_liveness_run_id": null,
+          "operational_liveness_observed_at": null
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "none",
+      "address_book_inventory_class": "non_address_book",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "non_address_book_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Discovered project contract is not present at an exact chain/address key in the protocol address book; excluded from scope matching and coverage.",
+      "surface_evidence": {
+        "source": "exact_protocol_address_book_membership",
+        "has_exact_address_book_entry": false
+      },
+      "effective_deploy_date": "2026-05-20 16:33:23+03",
       "deploy_coverage_basis": null
     },
     {
@@ -3406,7 +4466,61 @@
         "source": "project_contracts.provenance_hint",
         "provenance_hint": "third_party_infra"
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-06 14:24:23+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xcd691e2f2dfbeb79074dcaa19174ee2e6d710822",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xcd691e2f2dfbeb79074dcaa19174ee2e6d710822",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": null,
+          "operational_liveness_run_id": null,
+          "operational_liveness_observed_at": null
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "none",
+      "address_book_inventory_class": "non_address_book",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "non_address_book_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Discovered project contract is not present at an exact chain/address key in the protocol address book; excluded from scope matching and coverage.",
+      "surface_evidence": {
+        "source": "exact_protocol_address_book_membership",
+        "has_exact_address_book_entry": false
+      },
+      "effective_deploy_date": "2026-05-06 14:23:11+03",
       "deploy_coverage_basis": null
     },
     {
@@ -3460,7 +4574,7 @@
         "source": "project_contracts.provenance_hint",
         "provenance_hint": "third_party_infra"
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-06 14:24:47+03",
       "deploy_coverage_basis": null
     },
     {
@@ -3514,7 +4628,7 @@
         "source": "project_contracts.provenance_hint",
         "provenance_hint": "third_party_infra"
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-21 16:24:35+03",
       "deploy_coverage_basis": null
     },
     {
@@ -3568,7 +4682,7 @@
         "source": "exact_protocol_address_book_membership",
         "has_exact_address_book_entry": false
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-21 20:55:23+03",
       "deploy_coverage_basis": null
     },
     {
@@ -3622,7 +4736,7 @@
         "source": "exact_protocol_address_book_membership",
         "has_exact_address_book_entry": false
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-21 21:01:11+03",
       "deploy_coverage_basis": null
     },
     {
@@ -3676,7 +4790,61 @@
         "source": "exact_protocol_address_book_membership",
         "has_exact_address_book_entry": false
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-02-25 21:01:35+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xd990182f55002ea664c6670a4af77c3bf24c682a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd990182f55002ea664c6670a4af77c3bf24c682a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": null,
+          "operational_liveness_run_id": null,
+          "operational_liveness_observed_at": null
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "none",
+      "address_book_inventory_class": "non_address_book",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "non_address_book_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Discovered project contract is not present at an exact chain/address key in the protocol address book; excluded from scope matching and coverage.",
+      "surface_evidence": {
+        "source": "exact_protocol_address_book_membership",
+        "has_exact_address_book_entry": false
+      },
+      "effective_deploy_date": "2026-06-09 16:02:35+03",
       "deploy_coverage_basis": null
     },
     {
@@ -3730,7 +4898,61 @@
         "source": "project_contracts.provenance_hint",
         "provenance_hint": "third_party_infra"
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-21 16:48:35+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xddb637645349d0579fa627f3f583e52f53b7d600",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xddb637645349d0579fa627f3f583e52f53b7d600",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": null,
+          "operational_liveness_run_id": null,
+          "operational_liveness_observed_at": null
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "none",
+      "address_book_inventory_class": "non_address_book",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "non_address_book_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Discovered project contract is not present at an exact chain/address key in the protocol address book; excluded from scope matching and coverage.",
+      "surface_evidence": {
+        "source": "exact_protocol_address_book_membership",
+        "has_exact_address_book_entry": false
+      },
+      "effective_deploy_date": "2026-07-10 15:45:47+03",
       "deploy_coverage_basis": null
     },
     {
@@ -3838,7 +5060,7 @@
         "source": "project_contracts.provenance_hint",
         "provenance_hint": "third_party_infra"
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-03-03 21:12:47+03",
       "deploy_coverage_basis": null
     },
     {
@@ -3892,7 +5114,7 @@
         "source": "project_contracts.provenance_hint",
         "provenance_hint": "third_party_infra"
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-20 17:54:35+03",
       "deploy_coverage_basis": null
     },
     {
@@ -3946,7 +5168,7 @@
         "source": "project_contracts.provenance_hint",
         "provenance_hint": "third_party_infra"
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-21 16:50:35+03",
       "deploy_coverage_basis": null
     },
     {
@@ -4000,7 +5222,7 @@
         "source": "project_contracts.provenance_hint",
         "provenance_hint": "third_party_infra"
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-21 16:27:11+03",
       "deploy_coverage_basis": null
     },
     {
@@ -4054,7 +5276,7 @@
         "source": "project_contracts.provenance_hint",
         "provenance_hint": "third_party_infra"
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-05-21 16:53:23+03",
       "deploy_coverage_basis": null
     },
     {
@@ -4108,7 +5330,7 @@
         "source": "exact_protocol_address_book_membership",
         "has_exact_address_book_entry": false
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-02-25 20:19:23+03",
       "deploy_coverage_basis": null
     },
     {
@@ -4162,7 +5384,7 @@
         "source": "project_contracts.provenance_hint",
         "provenance_hint": "third_party_infra"
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2026-03-03 21:22:23+03",
       "deploy_coverage_basis": null
     },
     {
@@ -5905,7 +7127,7 @@
     "native": 27,
     "upstream": 4,
     "standard_library": 1,
-    "needs_review": 45
+    "needs_review": 61
   },
   "scope_matching_notes": {
     "match_method_counts": {
@@ -5982,5 +7204,6 @@
     }
   },
   "active_bug_bounty": null,
+  "non_evm_deployments": null,
   "out_of_scope": null
 }

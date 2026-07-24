@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Pepu Bridge (`pepu-bridge`)
 - Website: [https://pepubridge.com/](https://pepubridge.com/)
 - Lifecycle: unknown
-- Generated: 2026-07-17T12:00:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: ethereum
-- Contract surface: 14 unique implementations (14 raw deployments)
+- Contract surface: 15 unique implementations (16 raw deployments)
 - Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $330,801.00
 - On-chain TVL (included contracts): n/a
@@ -59,15 +59,15 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - Address-book implementation classification: 0 own, 4 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 10 discovered implementations shown in the inventory but excluded from coverage (1 third-party/infra; 1 standard proxy/library)
+- Outside the address book: 11 discovered implementations shown in the inventory but excluded from coverage (2 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 1
 - Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
 - All block-explorer-verified implementations audited (incl. non-live): 0/5
 - Verified + Unaudited implementations: 5
 - Verified by bytecode match: 0
-- Unverified implementations: 9
-- Unique implementations: 14
-- Raw deployments: 14
+- Unverified implementations: 10
+- Unique implementations: 15
+- Raw deployments: 16
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -94,7 +94,7 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 | PresaleNewClaimsV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc5fd40e4daf9ff211ff99b0be59b7260bcbb0c61` | ⚠️ Unaudited |
 | ProxyAdmin | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0x092dd6c876c78a8e7478b35417f98d964b9b5319` | ⚠️ Unaudited |
 | Token | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-251239 | `0x93aa0ccd1e5628d3a841c4dbdf602d9eb04085d6` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | external_dependency_or_infra | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xe77864e6368103da3e0c3f86781456af1a10ee3a` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x61dca26684e98d818150ced2f681cac08b766ad2`; ethereum `0xe77864e6368103da3e0c3f86781456af1a10ee3a` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -108,12 +108,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (9)
+### ❓ Unverified (10)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x03e2ea0fbc39240f1867f5d7475fd6b6561950aa` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0aeae1a2a6f24284aa676b1e93f44adc1a712850` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5d9bd342cd880ea2697800622455e78887e4b22f` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48` | ❓ Unverified |
@@ -123,6 +124,24 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd3643255ea784c75a5325cc5a4a549c7cd62e499` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xdac17f958d2ee523a2206206994597c13d831ec7` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe92df19f4e0fd067fe3b788cf03ffd06cd9be4a7` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 2
+- Live contracts: 0
+- Unknown liveness contracts: 2
+- Source-verified contracts: 0
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: unverified unclassified=2
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| unverified unclassified | UnnamedContract<br>`0x03e2ea0fbc39240f1867f5d7475fd6b6561950aa` | non_address_book | unknown | unknown | unverified | n/a | `0x08621813a1b33bc58a97f9d3cc819dbbdde8d572` |
+| unverified unclassified | UnnamedContract<br>`0x61dca26684e98d818150ced2f681cac08b766ad2` | non_address_book | unknown | unknown | unverified | n/a | `0x08621813a1b33bc58a97f9d3cc819dbbdde8d572` |
 
 ## Audit Inventory
 
@@ -147,8 +166,8 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 3 |
 | upstream | 0 |
-| standard_library | 2 |
-| needs_review | 9 |
+| standard_library | 1 |
+| needs_review | 11 |
 
 ## Scope Matching Notes
 

@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Depth (`depth`)
 - Website: [https://www.depthsoul.com/](https://www.depthsoul.com/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: abstract, bsc, heco
 - Contract surface: 16 unique implementations (31 raw deployments)
 - Coverage basis: 0/4 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
@@ -136,6 +136,43 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | heco | n/a | `0x48c859531254f25e57d1c1a8e030ef0b1c895c27` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | abstract | unit-384151 | `0x31aa824a1bbb60d0e1789268ba521b68c6e7757a` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | abstract | unit-384153 | `0x4221a226e6c6a3afb8312722d146e04e55f88969` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 21
+- Live contracts: 0
+- Unknown liveness contracts: 21
+- Source-verified contracts: 20
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: source verified unclassified=20, unverified unclassified=1
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| source verified unclassified | BDepMining<br>`0x65256c5125bc5c802bac37dc37769fc7e041f11a` | non_address_book | unknown | unknown | verified | n/a | `0x3f7f7904976a56facf493c96868efaf4d7fba543` |
+| source verified unclassified | BDepMining<br>`0x8b89fa9b1cb1aaad496f597964f1c83fed7217cf` | non_address_book | unknown | unknown | verified | n/a | `0x3f7f7904976a56facf493c96868efaf4d7fba543` |
+| source verified unclassified | BDepMining<br>`0xb4329919f74d841e4a552b6cb0487b5c451e11db` | non_address_book | unknown | unknown | verified | n/a | `0x3f7f7904976a56facf493c96868efaf4d7fba543` |
+| source verified unclassified | BDepMining<br>`0xbb1edaa1c11b18f2122e8268b71d670556ef6c5f` | non_address_book | unknown | unknown | verified | n/a | `0x3f7f7904976a56facf493c96868efaf4d7fba543` |
+| source verified unclassified | BDepToken<br>`0x16f99577b259b069a2d1d166e70d349b11b1d325` | non_address_book | unknown | unknown | verified | n/a | `0x3f7f7904976a56facf493c96868efaf4d7fba543` |
+| source verified unclassified | BDepToken<br>`0x185e734a600165d8501a7a35add07ef13ede24c3` | non_address_book | unknown | unknown | verified | n/a | `0x3f7f7904976a56facf493c96868efaf4d7fba543` |
+| source verified unclassified | dCowVault<br>`0x9f4198c4a73c103bc9b1c34d1f680d4e43d901af` | non_address_book | unknown | unknown | verified | n/a | `0x3f7f7904976a56facf493c96868efaf4d7fba543` |
+| source verified unclassified | dCowVault<br>`0xcd8ef3e3a7b25741ce5b8c728f582cf748b60b1a` | non_address_book | unknown | unknown | verified | n/a | `0x3f7f7904976a56facf493c96868efaf4d7fba543` |
+| source verified unclassified | dDepAlphaVault<br>`0xaf996b5e33007ed5eb33eaae817ad8e1310ccebc` | non_address_book | unknown | unknown | verified | n/a | `0x3f7f7904976a56facf493c96868efaf4d7fba543` |
+| source verified unclassified | dDepAlphaVault<br>`0xcb08da2339d562b66b314d2bbfb580cb87ffbd76` | non_address_book | unknown | unknown | verified | n/a | `0x3f7f7904976a56facf493c96868efaf4d7fba543` |
+| source verified unclassified | dDepVenusVault<br>`0x3253041f27416c975ffb0100b08734187f82c8a2` | non_address_book | unknown | unknown | verified | n/a | `0x3f7f7904976a56facf493c96868efaf4d7fba543` |
+| source verified unclassified | FundingManager<br>`0x0c5770a0c98a8488e0f23d6e63142d6c2a50ffef` | non_address_book | unknown | unknown | verified | n/a | `0x3f7f7904976a56facf493c96868efaf4d7fba543` |
+| source verified unclassified | FundingManager<br>`0x810c7945895a63d63f79e0c0c95bb9f773689c17` | non_address_book | unknown | unknown | verified | n/a | `0x3f7f7904976a56facf493c96868efaf4d7fba543` |
+| source verified unclassified | FundingManager<br>`0xb9902fe39e95ff1d724672393c220e927568e7f4` | non_address_book | unknown | unknown | verified | n/a | `0x3f7f7904976a56facf493c96868efaf4d7fba543` |
+| source verified unclassified | reduceToken<br>`0x77677168f8759ef464d53e5d8a7752a51a6d4183` | non_address_book | unknown | unknown | verified | n/a | `0x3f7f7904976a56facf493c96868efaf4d7fba543` |
+| source verified unclassified | Vyper_contract<br>`0x40eded89bb6c94bdb2ededbfb194b2e29c1fcc9a` | non_address_book | unknown | unknown | verified | n/a | `0x3f7f7904976a56facf493c96868efaf4d7fba543` |
+| source verified unclassified | Vyper_contract<br>`0xc57220b65dd9200562aa73b850c06be7bd632b57` | non_address_book | unknown | unknown | verified | n/a | `0x3f7f7904976a56facf493c96868efaf4d7fba543` |
+| source verified unclassified | Vyper_contract<br>`0xc63b2a40ff8180023534b676647a9915f9962b5a` | non_address_book | unknown | unknown | verified | n/a | `0x3f7f7904976a56facf493c96868efaf4d7fba543` |
+| source verified unclassified | Vyper_contract<br>`0xf89f86ed7c8eca694ba85e94a9b89ee1583f107f` | non_address_book | unknown | unknown | verified | n/a | `0x3f7f7904976a56facf493c96868efaf4d7fba543` |
+| source verified unclassified | Vyper_contract<br>`0xfb42eaf5e623e83013d5aa33033966a62ff51670` | non_address_book | unknown | unknown | verified | n/a | `0x3f7f7904976a56facf493c96868efaf4d7fba543` |
+| unverified unclassified | UnnamedContract<br>`0x179e1f2a75ab37f297aa825e0b05187fa195b7b2` | non_address_book | unknown | unknown | unverified | n/a | `0x3f7f7904976a56facf493c96868efaf4d7fba543` |
 
 ## Audit Inventory
 

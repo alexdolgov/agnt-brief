@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: NetSwap (`netswap`)
 - Website: [https://netswap.io/#/home](https://netswap.io/#/home)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: metis
 - Contract surface: 64 unique implementations (101 raw deployments)
 - Coverage basis: 5/22 confirmed own live verified implementations (22.7%); conservative 22.7% with 0 needs-review implementation(s)
@@ -207,6 +207,28 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xf39ce31b138d4fbac6a826105bcd8c31b7b7c865` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xf720bab026696da11eb6a184984bbcb2c52694d3` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xf8cafa257658131bf781fd2e48c916ed690267ef` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 6
+- Live contracts: 0
+- Unknown liveness contracts: 6
+- Source-verified contracts: 6
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: candidate review=6
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| candidate review | BaseOracle<br>`0xba34fc26ad8353b1f7e396b6129354bd1ee339c4` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x9c003fdcb0815c1cf4b3bd45220ee891bbbede97` |
+| candidate review | Bricked<br>`0x1b3da69c93cb57e620a1cb6fd94d8421af14df3b` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x9c003fdcb0815c1cf4b3bd45220ee891bbbede97` |
+| candidate review | ERC20Mock<br>`0xe7491fd7ba7eb13c2346d55c4b32cb64d1c08be1` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x71b89104bbee1c518071fd4d804f9ebba337be51` |
+| candidate review | L2StandardTokenFactory<br>`0x4f2185589c43ab8e0ff91e6bba9921414ede8eae` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x855e37b6068a44bdab574c86c1817a374623225e` |
+| candidate review | LPOracle<br>`0xdf4b248464ce2cda6f1a68aa2bff4b610f496076` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x9c003fdcb0815c1cf4b3bd45220ee891bbbede97` |
+| candidate review | TestERC20<br>`0xd6ceaed7621defe5ed564cc5700d4cdb25a2de4d` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x9c003fdcb0815c1cf4b3bd45220ee891bbbede97` |
 
 ## Audit Inventory
 

@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Smilee Finance (`smilee-finance`)
 - Website: [https://smilee.finance/](https://smilee.finance/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: arbitrum, berachain
-- Contract surface: 207 unique implementations (231 raw deployments)
+- Contract surface: 220 unique implementations (244 raw deployments)
 - Coverage basis: 5/23 confirmed own live verified implementations (21.7%); conservative 21.7% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $932,956.00
 - On-chain TVL (included contracts): n/a
@@ -93,15 +93,15 @@ The pinned logic-topography run contains 23 contract row(s) across arbitrum, ber
 - Coverage of address-book-owned deployed-live implementations: 5/23 (21.7%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 27 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 180 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 193 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 3
-- Confirmed-live implementations: 27 of 207 unique; 180 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 27 of 220 unique; 193 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 5/41
 - Verified + Unaudited implementations: 36
 - Verified by bytecode match: 0
-- Unverified implementations: 166
-- Unique implementations: 207
-- Raw deployments: 231
+- Unverified implementations: 179
+- Unique implementations: 220
+- Raw deployments: 244
 - Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): n/a
@@ -181,7 +181,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (166)
+### ❓ Unverified (179)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -350,9 +350,51 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xfedaa8313df19c7caf0d622d6adc14cbeb5bd117` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xff12b3111324fda98b6bec137cdde82ace9e54df` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xffd8f9cee877127c7ae86b35a354f296ce61ef53` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x18bd80612f13ba06828463479eae7dc8a033eae9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x2a6ac8c42df6ab8f8faa787cc3c6b9459c8fb164` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x35201b565eac26f464d092709342603fb6239a48` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x373e7efb5683898f19545bc53cc976f116b6b048` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-392608 | `0x3f7755117f1fec1981aefb01887240dbf5f2ebce` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x51f01a1ba5cb7fee5fbe682466b0c97923a07058` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x7e7404a1d23742136931b72032b72ce941c51104` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x7ec3ae57a5dec6e5199aa7117eb361c7af104ea7` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x8a34dbc95f8e63b7200ef379e23ae254a8d555ee` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x9a2a2e8f0c8ea001a1f699a3df012e8da55bfb4a` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-392609 | `0xb76ae8789148559a28d70c783fc802553225693f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xb8a5815dd887eb0b48e5dde5aa55d3c7046f57a4` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xbf3a38be380cf9df2ee88b99a95ce0388d437e3a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xeb9c6a3563bbd1919adade452b51c1816f9d9038` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xeed784244200fd9b471c5d156d601a5bf8fce470` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | berachain | unit-392611 | `0xf2133a7140b928a4dc0e52dafabc454a81df88f2` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 13
+- Live contracts: 0
+- Unknown liveness contracts: 13
+- Source-verified contracts: 0
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: unverified unclassified=13
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| unverified unclassified | UnnamedContract<br>`0x18bd80612f13ba06828463479eae7dc8a033eae9` | non_address_book | unknown | unknown | unverified | n/a | `0x2d6a4d5cac28e6eafb4a2d5720c40fe979fb4507` |
+| unverified unclassified | UnnamedContract<br>`0x2a6ac8c42df6ab8f8faa787cc3c6b9459c8fb164` | non_address_book | unknown | unknown | unverified | n/a | `0x2d6a4d5cac28e6eafb4a2d5720c40fe979fb4507` |
+| unverified unclassified | UnnamedContract<br>`0x35201b565eac26f464d092709342603fb6239a48` | non_address_book | unknown | unknown | unverified | n/a | `0x2d6a4d5cac28e6eafb4a2d5720c40fe979fb4507` |
+| unverified unclassified | UnnamedContract<br>`0x373e7efb5683898f19545bc53cc976f116b6b048` | non_address_book | unknown | unknown | unverified | n/a | `0x2d6a4d5cac28e6eafb4a2d5720c40fe979fb4507` |
+| unverified unclassified | UnnamedContract<br>`0x51f01a1ba5cb7fee5fbe682466b0c97923a07058` | non_address_book | unknown | unknown | unverified | n/a | `0x2d6a4d5cac28e6eafb4a2d5720c40fe979fb4507` |
+| unverified unclassified | UnnamedContract<br>`0x7e7404a1d23742136931b72032b72ce941c51104` | non_address_book | unknown | unknown | unverified | n/a | `0x2d6a4d5cac28e6eafb4a2d5720c40fe979fb4507` |
+| unverified unclassified | UnnamedContract<br>`0x7ec3ae57a5dec6e5199aa7117eb361c7af104ea7` | non_address_book | unknown | unknown | unverified | n/a | `0x2d6a4d5cac28e6eafb4a2d5720c40fe979fb4507` |
+| unverified unclassified | UnnamedContract<br>`0x8a34dbc95f8e63b7200ef379e23ae254a8d555ee` | non_address_book | unknown | unknown | unverified | n/a | `0x2d6a4d5cac28e6eafb4a2d5720c40fe979fb4507` |
+| unverified unclassified | UnnamedContract<br>`0x9a2a2e8f0c8ea001a1f699a3df012e8da55bfb4a` | non_address_book | unknown | unknown | unverified | n/a | `0x2d6a4d5cac28e6eafb4a2d5720c40fe979fb4507` |
+| unverified unclassified | UnnamedContract<br>`0xb8a5815dd887eb0b48e5dde5aa55d3c7046f57a4` | non_address_book | unknown | unknown | unverified | n/a | `0x2d6a4d5cac28e6eafb4a2d5720c40fe979fb4507` |
+| unverified unclassified | UnnamedContract<br>`0xbf3a38be380cf9df2ee88b99a95ce0388d437e3a` | non_address_book | unknown | unknown | unverified | n/a | `0x2d6a4d5cac28e6eafb4a2d5720c40fe979fb4507` |
+| unverified unclassified | UnnamedContract<br>`0xeb9c6a3563bbd1919adade452b51c1816f9d9038` | non_address_book | unknown | unknown | unverified | n/a | `0x2d6a4d5cac28e6eafb4a2d5720c40fe979fb4507` |
+| unverified unclassified | UnnamedContract<br>`0xeed784244200fd9b471c5d156d601a5bf8fce470` | non_address_book | unknown | unknown | unverified | n/a | `0x2d6a4d5cac28e6eafb4a2d5720c40fe979fb4507` |
 
 ## Audit Inventory
 
@@ -379,14 +421,14 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | spaces/v9vHQJ1GDpGEgkvoUQUx/uploads/K3W9Hj6sr2y8j6Zdkgub/Guardefy_Audit_gBERA_SmileeFinance.pdf | BeraContractsLocator | unmatched — not counted | — | listed in scope | no |
 | spaces/v9vHQJ1GDpGEgkvoUQUx/uploads/K3W9Hj6sr2y8j6Zdkgub/Guardefy_Audit_gBERA_SmileeFinance.pdf | Deployer | unmatched — not counted | — | listed in scope | no |
 | spaces/v9vHQJ1GDpGEgkvoUQUx/uploads/K3W9Hj6sr2y8j6Zdkgub/Guardefy_Audit_gBERA_SmileeFinance.pdf | gBera | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x3b3dd22625128ff1548110f9b7bc702f540668e2` — deployed 2025-02-09 03:31:53+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| spaces/v9vHQJ1GDpGEgkvoUQUx/uploads/K3W9Hj6sr2y8j6Zdkgub/Guardefy_Audit_gBERA_SmileeFinance.pdf | GBeraAssetManager | own contract | 0x3f7755… (selected) `0x3f7755117f1fec1981aefb01887240dbf5f2ebce` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| spaces/v9vHQJ1GDpGEgkvoUQUx/uploads/K3W9Hj6sr2y8j6Zdkgub/Guardefy_Audit_gBERA_SmileeFinance.pdf | NodeFeeReceiver | own contract | 0xf2133a… (selected) `0xf2133a7140b928a4dc0e52dafabc454a81df88f2` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/v9vHQJ1GDpGEgkvoUQUx/uploads/K3W9Hj6sr2y8j6Zdkgub/Guardefy_Audit_gBERA_SmileeFinance.pdf | GBeraAssetManager | own contract | 0x3f7755… (selected) `0x3f7755117f1fec1981aefb01887240dbf5f2ebce` — deployed 2025-02-09 03:31:53+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/v9vHQJ1GDpGEgkvoUQUx/uploads/K3W9Hj6sr2y8j6Zdkgub/Guardefy_Audit_gBERA_SmileeFinance.pdf | NodeFeeReceiver | own contract | 0xf2133a… (selected) `0xf2133a7140b928a4dc0e52dafabc454a81df88f2` — deployed 2025-02-09 03:31:53+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/v9vHQJ1GDpGEgkvoUQUx/uploads/K3W9Hj6sr2y8j6Zdkgub/Guardefy_Audit_gBERA_SmileeFinance.pdf | NodeRegistry | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x5dbffcde23ab53f128c1c82796d0f971d0102137` — deployed 2025-02-09 03:31:53+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/v9vHQJ1GDpGEgkvoUQUx/uploads/K3W9Hj6sr2y8j6Zdkgub/Guardefy_Audit_gBERA_SmileeFinance.pdf | NodeWithdrawalVault | own contract | NodeWithdrawalVault (selected) `0x333bd3beb65f965eea04999ba3c0349a596e9ffe` — deployed 2025-02-09 03:31:53+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/v9vHQJ1GDpGEgkvoUQUx/uploads/K3W9Hj6sr2y8j6Zdkgub/Guardefy_Audit_gBERA_SmileeFinance.pdf | wgBera | own contract | WGBera (selected) `0xd77552d3849ab4d8c3b189a9582d0ba4c1f4f912` — deployed 2025-02-09 03:31:53+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/v9vHQJ1GDpGEgkvoUQUx/uploads/K3W9Hj6sr2y8j6Zdkgub/Guardefy_Audit_gBERA_SmileeFinance.pdf | WithdrawalQueue | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xab70753ab7b5b244a2f0de32208c0e7531f0c4f1` — deployed 2025-02-09 03:31:53+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| spaces/v9vHQJ1GDpGEgkvoUQUx/uploads/yKq7K1kTTAd57CnP2ask/Cantina_Audit_gBERA_SmileeFinance.pdf | GBeraAssetManager | own contract | 0x3f7755… (selected) `0x3f7755117f1fec1981aefb01887240dbf5f2ebce` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| spaces/v9vHQJ1GDpGEgkvoUQUx/uploads/yKq7K1kTTAd57CnP2ask/Cantina_Audit_gBERA_SmileeFinance.pdf | NodeFeeReceiver | own contract | 0xf2133a… (selected) `0xf2133a7140b928a4dc0e52dafabc454a81df88f2` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/v9vHQJ1GDpGEgkvoUQUx/uploads/yKq7K1kTTAd57CnP2ask/Cantina_Audit_gBERA_SmileeFinance.pdf | GBeraAssetManager | own contract | 0x3f7755… (selected) `0x3f7755117f1fec1981aefb01887240dbf5f2ebce` — deployed 2025-02-09 03:31:53+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/v9vHQJ1GDpGEgkvoUQUx/uploads/yKq7K1kTTAd57CnP2ask/Cantina_Audit_gBERA_SmileeFinance.pdf | NodeFeeReceiver | own contract | 0xf2133a… (selected) `0xf2133a7140b928a4dc0e52dafabc454a81df88f2` — deployed 2025-02-09 03:31:53+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/v9vHQJ1GDpGEgkvoUQUx/uploads/yKq7K1kTTAd57CnP2ask/Cantina_Audit_gBERA_SmileeFinance.pdf | NodeRegistry | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x5dbffcde23ab53f128c1c82796d0f971d0102137` — deployed 2025-02-09 03:31:53+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/v9vHQJ1GDpGEgkvoUQUx/uploads/yKq7K1kTTAd57CnP2ask/Cantina_Audit_gBERA_SmileeFinance.pdf | NodeWithdrawalVault | own contract | NodeWithdrawalVault (selected) `0x333bd3beb65f965eea04999ba3c0349a596e9ffe` — deployed 2025-02-09 03:31:53+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/v9vHQJ1GDpGEgkvoUQUx/uploads/yKq7K1kTTAd57CnP2ask/Cantina_Audit_gBERA_SmileeFinance.pdf | WgBera | own contract | WGBera (selected) `0xd77552d3849ab4d8c3b189a9582d0ba4c1f4f912` — deployed 2025-02-09 03:31:53+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
@@ -394,8 +436,8 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | spaces/v9vHQJ1GDpGEgkvoUQUx/uploads/yKq7K1kTTAd57CnP2ask/Cantina_Audit_gBERA_SmileeFinance.pdf | gBera | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x3b3dd22625128ff1548110f9b7bc702f540668e2` — deployed 2025-02-09 03:31:53+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/v9vHQJ1GDpGEgkvoUQUx/uploads/yKq7K1kTTAd57CnP2ask/Cantina_Audit_gBERA_SmileeFinance.pdf | wgBera | own contract | WGBera (selected) `0xd77552d3849ab4d8c3b189a9582d0ba4c1f4f912` — deployed 2025-02-09 03:31:53+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spaces/v9vHQJ1GDpGEgkvoUQUx/uploads/vhApBDZa65vO2FueUH9y/Guardefy_Audit_gBERA Update_Smilee Finance.pdf | GBera | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x3b3dd22625128ff1548110f9b7bc702f540668e2` — deployed 2025-02-09 03:31:53+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| spaces/v9vHQJ1GDpGEgkvoUQUx/uploads/vhApBDZa65vO2FueUH9y/Guardefy_Audit_gBERA Update_Smilee Finance.pdf | GBeraAssetManager | own contract | 0x3f7755… (selected) `0x3f7755117f1fec1981aefb01887240dbf5f2ebce` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| spaces/v9vHQJ1GDpGEgkvoUQUx/uploads/vhApBDZa65vO2FueUH9y/Guardefy_Audit_gBERA Update_Smilee Finance.pdf | NodeFeeReceiver | own contract | 0xf2133a… (selected) `0xf2133a7140b928a4dc0e52dafabc454a81df88f2` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/v9vHQJ1GDpGEgkvoUQUx/uploads/vhApBDZa65vO2FueUH9y/Guardefy_Audit_gBERA Update_Smilee Finance.pdf | GBeraAssetManager | own contract | 0x3f7755… (selected) `0x3f7755117f1fec1981aefb01887240dbf5f2ebce` — deployed 2025-02-09 03:31:53+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spaces/v9vHQJ1GDpGEgkvoUQUx/uploads/vhApBDZa65vO2FueUH9y/Guardefy_Audit_gBERA Update_Smilee Finance.pdf | NodeFeeReceiver | own contract | 0xf2133a… (selected) `0xf2133a7140b928a4dc0e52dafabc454a81df88f2` — deployed 2025-02-09 03:31:53+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 
 ## Coverage Gaps
 
@@ -428,7 +470,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 40 |
 | upstream | 1 |
 | standard_library | 0 |
-| needs_review | 166 |
+| needs_review | 179 |
 
 ## Scope Matching Notes
 

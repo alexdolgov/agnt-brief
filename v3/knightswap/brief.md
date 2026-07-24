@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: KnightSwap (`knightswap`)
 - Website: [https://knightswap.financial](https://knightswap.financial)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: bsc, fantom
 - Contract surface: 23 unique implementations (35 raw deployments)
 - Coverage basis: 0/4 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
@@ -143,6 +143,49 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xcc84b344f36f2c77431cbb20c175d19a52f61620` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xff16d3aac139079ce9d6ebd56a93c5e3805ad8c1` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fantom | n/a | `0x7d82f56ea0820a9d42b01c3c28f1997721732218` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 27
+- Live contracts: 0
+- Unknown liveness contracts: 27
+- Source-verified contracts: 23
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: contamination review=4, source verified unclassified=19, unverified unclassified=4
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| contamination review | Astroshot<br>`0x8b1e9a0f782d9e8fb964fcb3133ea1f2bac119df` | non_address_book | unknown | unknown | verified | n/a | `0x6ef78432f6ba7121d2891560c70a8d7c2dedfbf6` |
+| contamination review | IWO<br>`0x1bbee6b4cb56e7cc005e93e1ae4c57be2aa55dc6` | non_address_book | unknown | unknown | verified | n/a | `0x6ef78432f6ba7121d2891560c70a8d7c2dedfbf6` |
+| contamination review | Wizshot<br>`0x551c61db482289994e7d426fc4db6493918bb81d` | non_address_book | unknown | unknown | verified | n/a | `0x6ef78432f6ba7121d2891560c70a8d7c2dedfbf6` |
+| contamination review | Wizshot2<br>`0x7d82f56ea0820a9d42b01c3c28f1997721732218` | non_address_book | unknown | unknown | verified | n/a | `0x6ef78432f6ba7121d2891560c70a8d7c2dedfbf6` |
+| source verified unclassified | Astroshot<br>`0xf219e74dbfe267e367aa7e5f00615d2676eea5b2` | non_address_book | unknown | unknown | verified | n/a | `0x6ef78432f6ba7121d2891560c70a8d7c2dedfbf6` |
+| source verified unclassified | BIGFOOT<br>`0x1326be0d18a9d3110501661decdb850aa6b210be` | non_address_book | unknown | unknown | verified | n/a | `0x6ef78432f6ba7121d2891560c70a8d7c2dedfbf6` |
+| source verified unclassified | Fantomnomics<br>`0xb56b90f623107a4047fdc4c237279f360dcd0cf8` | non_address_book | unknown | unknown | verified | n/a | `0x6ef78432f6ba7121d2891560c70a8d7c2dedfbf6` |
+| source verified unclassified | IterableMapping<br>`0x56876361f53c78ab3ca3b7f33d88a8bf2ce7900b` | non_address_book | unknown | unknown | verified | n/a | `0x6ef78432f6ba7121d2891560c70a8d7c2dedfbf6` |
+| source verified unclassified | IterableMapping<br>`0x8f3063be7c99f430d11fc0ef065638f35a28a9fd` | non_address_book | unknown | unknown | verified | n/a | `0x6ef78432f6ba7121d2891560c70a8d7c2dedfbf6` |
+| source verified unclassified | IWO<br>`0x29c8d8a01bad3ba8ce33fde4a1ac0ae93ec42d2f` | non_address_book | unknown | unknown | verified | n/a | `0x6ef78432f6ba7121d2891560c70a8d7c2dedfbf6` |
+| source verified unclassified | IWO<br>`0x4bb4e621b69dec94a2dfd78f37e06723989ea997` | non_address_book | unknown | unknown | verified | n/a | `0x6ef78432f6ba7121d2891560c70a8d7c2dedfbf6` |
+| source verified unclassified | IWO<br>`0x597111f001bfaaff92fcf4efcb9f63668ab7c94b` | non_address_book | unknown | unknown | verified | n/a | `0x6ef78432f6ba7121d2891560c70a8d7c2dedfbf6` |
+| source verified unclassified | IWO<br>`0x935c822aa2db55a068ebbae01849b5e342e0880a` | non_address_book | unknown | unknown | verified | n/a | `0x6ef78432f6ba7121d2891560c70a8d7c2dedfbf6` |
+| source verified unclassified | IWO<br>`0x97936313a5c37f2c6c55f541c0e1837552890899` | non_address_book | unknown | unknown | verified | n/a | `0x6ef78432f6ba7121d2891560c70a8d7c2dedfbf6` |
+| source verified unclassified | KnightToken<br>`0x30ee6741da7a447a2addd1db594f4af8dbc066bd` | non_address_book | unknown | unknown | verified | n/a | `0x6ef78432f6ba7121d2891560c70a8d7c2dedfbf6` |
+| source verified unclassified | MasterChef<br>`0x246e3e02bd1fe4a82ef6e8a2c276ae01c59165a6` | non_address_book | unknown | unknown | verified | n/a | `0x6ef78432f6ba7121d2891560c70a8d7c2dedfbf6` |
+| source verified unclassified | MasterChef<br>`0x6622154437586f1562c23d4641bd95efdb1a1cec` | non_address_book | unknown | unknown | verified | n/a | `0x6ef78432f6ba7121d2891560c70a8d7c2dedfbf6` |
+| source verified unclassified | MasterChef<br>`0xa379f53003cbaa3d1d3a88e9a7b069a44b596863` | non_address_book | unknown | unknown | verified | n/a | `0x6ef78432f6ba7121d2891560c70a8d7c2dedfbf6` |
+| source verified unclassified | SmartChefFactory<br>`0x300206b75df4b8bd32c2317727fdae0273fa56ff` | non_address_book | unknown | unknown | verified | n/a | `0x6ef78432f6ba7121d2891560c70a8d7c2dedfbf6` |
+| source verified unclassified | Spartans<br>`0xbcfe392e778dbb59dcad624f10f7fa8c4a910b1e` | non_address_book | unknown | unknown | verified | n/a | `0x6ef78432f6ba7121d2891560c70a8d7c2dedfbf6` |
+| source verified unclassified | Spartans<br>`0xd27fae23775993af58f84408b611f4ff9afd864c` | non_address_book | unknown | unknown | verified | n/a | `0x6ef78432f6ba7121d2891560c70a8d7c2dedfbf6` |
+| source verified unclassified | TOKEN2NFT<br>`0x63a6c517cdbb674d42931cc716236249e3bced67` | non_address_book | unknown | unknown | verified | n/a | `0x6ef78432f6ba7121d2891560c70a8d7c2dedfbf6` |
+| source verified unclassified | Wizshot<br>`0xa1cffafab3adf425ccc3708818cf0e5ed7ceee64` | non_address_book | unknown | unknown | verified | n/a | `0x6ef78432f6ba7121d2891560c70a8d7c2dedfbf6` |
+| unverified unclassified | UnnamedContract<br>`0x1ea8fbd271d56db3d4e5e09c93365d0aa79d02b9` | non_address_book | unknown | unknown | unverified | n/a | `0x6ef78432f6ba7121d2891560c70a8d7c2dedfbf6` |
+| unverified unclassified | UnnamedContract<br>`0x77e6d5352d3de6aec92d3ab4b25f159cd98b3f27` | non_address_book | unknown | unknown | unverified | n/a | `0x6ef78432f6ba7121d2891560c70a8d7c2dedfbf6` |
+| unverified unclassified | UnnamedContract<br>`0xcaeb6e7d0d973c75cfe3e57b7ba546931dad8262` | non_address_book | unknown | unknown | unverified | n/a | `0x6ef78432f6ba7121d2891560c70a8d7c2dedfbf6` |
+| unverified unclassified | UnnamedContract<br>`0xcc84b344f36f2c77431cbb20c175d19a52f61620` | non_address_book | unknown | unknown | unverified | n/a | `0x6ef78432f6ba7121d2891560c70a8d7c2dedfbf6` |
 
 ## Audit Inventory
 

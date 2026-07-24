@@ -1,7 +1,7 @@
 {
   "schema_version": "3.0",
   "project_key": "turboflow",
-  "generated_at": "2026-07-15T18:30:00.000Z",
+  "generated_at": "2026-07-24T14:10:00.000Z",
   "authority": {
     "activation_id": "scope-prod-20260715-v1",
     "production_closure_sha256": "38a124a34bf27378c85726318ca5f9408641faecd45c04ee5b82ad07a65cbc83",
@@ -13,7 +13,7 @@
     "liveness_closure_sha256": "e1855078572b4a5868cbe2ff93c7ad47c89e29b1b8209e48161f110e31790ddd",
     "fork_detection_run_id": "fork-structural-canonical-production-20260712",
     "deployer_decision_run_id": "deployer-candidate-production-20260712",
-    "export_input_receipt_sha256": "e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd",
+    "export_input_receipt_sha256": "e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92",
     "canonical_network_policy": "offline_cache_only"
   },
   "production_state": {
@@ -28,7 +28,7 @@
   "missing_evidence": {
     "audit_dates": []
   },
-  "pipeline_run_id": "brief-generation-scope-prod-20260715-v1",
+  "pipeline_run_id": "brief-deployer-expansion-all-20260724-v1",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -128,6 +128,70 @@
     "standards": {},
     "frameworks": {},
     "upgradeable_contracts": 0
+  },
+  "deployer_expansion_inventory": {
+    "source": "project_contracts.discovery_source=deployer_expansion",
+    "decision_run_id": "deployer-candidate-production-20260712",
+    "total_contracts": 2,
+    "live_contracts": 0,
+    "unknown_liveness_contracts": 2,
+    "source_verified_contracts": 1,
+    "currently_scope_matched_contracts": 0,
+    "classification_counts": {
+      "currently_scope_matched": 0,
+      "candidate_auto_own": 0,
+      "candidate_review": 1,
+      "candidate_hard_block": 0,
+      "contamination_review": 0,
+      "third_party_or_infra": 0,
+      "exact_address_book_overlap": 0,
+      "source_verified_unclassified": 0,
+      "unverified_unclassified": 1
+    },
+    "contracts": [
+      {
+        "chain_id": 56,
+        "chain_name": "bsc",
+        "address": "0x145cd0d5c3dd0ef1405dcf1b4d2bce7c611625db",
+        "name": "TransparentUpgradeableProxy",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": true,
+        "implementation_address": "0xa8fa31388d7d9a02450a943f486bbea3b4b60bc1",
+        "deployer_address": "0x63c8ff996c5ce222c1a7c3f26298de6b85ff46a5",
+        "deploy_date": "2025-09-26 11:51:07+03",
+        "contamination_flag": "review",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "candidate_review",
+        "classification_reason": "no_fresh_structural_match",
+        "deployer_decision": "review",
+        "deployer_decision_reason": "no_fresh_structural_match"
+      },
+      {
+        "chain_id": 56,
+        "chain_name": "bsc",
+        "address": "0xa8fa31388d7d9a02450a943f486bbea3b4b60bc1",
+        "name": "UnnamedContract",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": false,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0x63c8ff996c5ce222c1a7c3f26298de6b85ff46a5",
+        "deploy_date": "2025-09-26 11:50:55+03",
+        "contamination_flag": "cleared",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "unverified_unclassified",
+        "classification_reason": "No stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      }
+    ]
   },
   "surface_sufficiency": {
     "unique_implementations": 0,
@@ -374,5 +438,6 @@
     }
   },
   "active_bug_bounty": null,
+  "non_evm_deployments": null,
   "out_of_scope": null
 }

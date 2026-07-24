@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Everything (`everything`)
 - Website: [https://everything.inc/](https://everything.inc/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: arbitrum, base, bsc, ethereum
 - Contract surface: 14 unique implementations (15 raw deployments)
 - Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
@@ -122,6 +122,30 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x6a53ed05b0c3514d4789cb0ed79c17092dc98003` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x99af3f509009b7266d251bc4292612b7e77cd682` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xc264944e9e7073f8f98fef7338cda973914fca44` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 8
+- Live contracts: 0
+- Unknown liveness contracts: 8
+- Source-verified contracts: 7
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: source verified unclassified=7, unverified unclassified=1
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| source verified unclassified | ERC1967Proxy<br>`0xa88216e6cf409a25c719234c4817628ae406b6a7` | non_address_book | unknown | unknown | verified | n/a | `0x1d13a5aefd4d3a0f466c0058526d8bf11d88502a` |
+| source verified unclassified | ERC1967Proxy<br>`0xabd8dc06559634e59f6698c33a5e65e90e917b91` | non_address_book | unknown | unknown | verified | n/a | `0x1d13a5aefd4d3a0f466c0058526d8bf11d88502a` |
+| source verified unclassified | ERC1967Proxy<br>`0xe7e7e741c23a4767831a56a8c99f522c5ac1e7e7` | non_address_book | unknown | unknown | verified | n/a | `0x9897a4554402757011f6c78f4a5916007f1847f8` |
+| source verified unclassified | ERC1967Proxy<br>`0xf432b2564cc0e233482a1f2af0eda4832cf435cd` | non_address_book | unknown | unknown | verified | n/a | `0x9897a4554402757011f6c78f4a5916007f1847f8` |
+| source verified unclassified | EV<br>`0x43b280297a7f1dcc27f44f06cbedffa8b5fce74c` | non_address_book | unknown | unknown | verified | n/a | `0x9897a4554402757011f6c78f4a5916007f1847f8` |
+| source verified unclassified | NttManager<br>`0x4d54c928d802eee6632177b6c146fc3e9b04d03a` | non_address_book | unknown | unknown | verified | n/a | `0x9897a4554402757011f6c78f4a5916007f1847f8` |
+| source verified unclassified | UpgradeableBeacon<br>`0x4e04f0fcc6c153cc7ff21b8e49aa53053ba5e5b4` | non_address_book | unknown | unknown | verified | n/a | `0x1d13a5aefd4d3a0f466c0058526d8bf11d88502a` |
+| unverified unclassified | UnnamedContract<br>`0x4e3ca901719c84cf86f4328d3d930b471de8acb5` | non_address_book | unknown | unknown | unverified | n/a | `0x1d13a5aefd4d3a0f466c0058526d8bf11d88502a` |
 
 ## Audit Inventory
 

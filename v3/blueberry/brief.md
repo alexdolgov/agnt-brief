@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Blueberry (`blueberry`)
 - Website: [https://app.blueberry.garden](https://app.blueberry.garden)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: ethereum
-- Contract surface: 6 unique implementations (6 raw deployments)
+- Contract surface: 12 unique implementations (12 raw deployments)
 - Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $257,415.82
 - On-chain TVL (included contracts): n/a
@@ -59,15 +59,15 @@ The activated project remains an explicit cohort member with an empty normalized
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - Address-book implementation classification: 0 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 6 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 12 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
 - Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
 - All block-explorer-verified implementations audited (incl. non-live): 0/6
 - Verified + Unaudited implementations: 6
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 6
-- Raw deployments: 6
+- Unverified implementations: 6
+- Unique implementations: 12
+- Raw deployments: 12
 - Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -109,11 +109,40 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (6)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3260bcc3edd366296c682932f0d7569b85bd41e8` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x47fd7bb0579537585f6533d23f85c8aa457f5162` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4d47c6e6315178ec28c61a9c73cecec651b1d837` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4e1006f22fc2cb47e94e67a18f7f5fcbe5486666` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x64b15427bcb4b5a89cb8d289ff4f3117bd6ac9af` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfc4b589d90354013ee84ad0c1849e9f48cbcf9b3` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 6
+- Live contracts: 0
+- Unknown liveness contracts: 6
+- Source-verified contracts: 0
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: unverified unclassified=6
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| unverified unclassified | UnnamedContract<br>`0x3260bcc3edd366296c682932f0d7569b85bd41e8` | non_address_book | unknown | unknown | unverified | n/a | `0x3031303bb07c35d489cd4b7e6ccd6fb16ea2b3a1` |
+| unverified unclassified | UnnamedContract<br>`0x47fd7bb0579537585f6533d23f85c8aa457f5162` | non_address_book | unknown | unknown | unverified | n/a | `0x3031303bb07c35d489cd4b7e6ccd6fb16ea2b3a1` |
+| unverified unclassified | UnnamedContract<br>`0x4d47c6e6315178ec28c61a9c73cecec651b1d837` | non_address_book | unknown | unknown | unverified | n/a | `0x3031303bb07c35d489cd4b7e6ccd6fb16ea2b3a1` |
+| unverified unclassified | UnnamedContract<br>`0x4e1006f22fc2cb47e94e67a18f7f5fcbe5486666` | non_address_book | unknown | unknown | unverified | n/a | `0x3031303bb07c35d489cd4b7e6ccd6fb16ea2b3a1` |
+| unverified unclassified | UnnamedContract<br>`0x64b15427bcb4b5a89cb8d289ff4f3117bd6ac9af` | non_address_book | unknown | unknown | unverified | n/a | `0x3031303bb07c35d489cd4b7e6ccd6fb16ea2b3a1` |
+| unverified unclassified | UnnamedContract<br>`0xfc4b589d90354013ee84ad0c1849e9f48cbcf9b3` | non_address_book | unknown | unknown | unverified | n/a | `0x3031303bb07c35d489cd4b7e6ccd6fb16ea2b3a1` |
 
 ## Audit Inventory
 
@@ -163,7 +192,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 6 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 6 |
 
 ## Scope Matching Notes
 

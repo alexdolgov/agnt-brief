@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
 
@@ -18,8 +18,8 @@
 - Project: Ambire Wallet (`ambire-wallet`)
 - Website: [https://www.ambire.com](https://www.ambire.com)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: ethereum, optimism, scroll
 - Contract surface: 24 unique implementations (25 raw deployments)
 - Coverage basis: not assessable — No confirmed own live-verified denominator is available.
@@ -156,6 +156,30 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf2dd37a4ccc9641b22eb47c7fa6e2e02c14b110b` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-378995 | `0x420000000000000000000000000000000000000f` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-378996 | `0x5300000000000000000000000000000000000002` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 8
+- Live contracts: 0
+- Unknown liveness contracts: 8
+- Source-verified contracts: 1
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: source verified unclassified=1, unverified unclassified=7
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| source verified unclassified | StakingPool<br>`0x4d3348aa74ba11a2722ea9adec6bc10e92fe3d58` | non_address_book | unknown | unknown | verified | n/a | `0x2f83c84d36cb8139e4e5d55248d6255c508aaced` |
+| unverified unclassified | UnnamedContract<br>`0x0604f2b0dc1d8eac3b7b15fa74fcab7d2bceaee7` | non_address_book | unknown | unknown | unverified | n/a | `0x2f83c84d36cb8139e4e5d55248d6255c508aaced` |
+| unverified unclassified | UnnamedContract<br>`0x0e3c4f37994d0a0188d3f82b046fe42d5ff4bf3f` | non_address_book | unknown | unknown | unverified | n/a | `0x2f83c84d36cb8139e4e5d55248d6255c508aaced` |
+| unverified unclassified | UnnamedContract<br>`0x1955db3abe37faf6c1e063b7d42e0b2124f6440b` | non_address_book | unknown | unknown | unverified | n/a | `0x2f83c84d36cb8139e4e5d55248d6255c508aaced` |
+| unverified unclassified | UnnamedContract<br>`0x1bba61ba1f728e11bf2212a60bd4c0e70bb1b2dc` | non_address_book | unknown | unknown | unverified | n/a | `0x2f83c84d36cb8139e4e5d55248d6255c508aaced` |
+| unverified unclassified | UnnamedContract<br>`0x1f6a778972ed514d59277df44e50b8beb81c8dcc` | non_address_book | unknown | unknown | unverified | n/a | `0x2f83c84d36cb8139e4e5d55248d6255c508aaced` |
+| unverified unclassified | UnnamedContract<br>`0xde0ed71c49a5c9482cf8b8de222537adbf7b9159` | non_address_book | unknown | unknown | unverified | n/a | `0x2f83c84d36cb8139e4e5d55248d6255c508aaced` |
+| unverified unclassified | UnnamedContract<br>`0xf2dd37a4ccc9641b22eb47c7fa6e2e02c14b110b` | non_address_book | unknown | unknown | unverified | n/a | `0x2f83c84d36cb8139e4e5d55248d6255c508aaced` |
 
 ## Audit Inventory
 

@@ -1,7 +1,7 @@
 {
   "schema_version": "3.0",
   "project_key": "bob-bridge",
-  "generated_at": "2026-07-15T18:30:00.000Z",
+  "generated_at": "2026-07-24T14:10:00.000Z",
   "authority": {
     "activation_id": "scope-prod-20260715-v1",
     "production_closure_sha256": "38a124a34bf27378c85726318ca5f9408641faecd45c04ee5b82ad07a65cbc83",
@@ -13,7 +13,7 @@
     "liveness_closure_sha256": "e1855078572b4a5868cbe2ff93c7ad47c89e29b1b8209e48161f110e31790ddd",
     "fork_detection_run_id": "fork-structural-canonical-production-20260712",
     "deployer_decision_run_id": "deployer-candidate-production-20260712",
-    "export_input_receipt_sha256": "e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd",
+    "export_input_receipt_sha256": "e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92",
     "canonical_network_policy": "offline_cache_only"
   },
   "production_state": {
@@ -28,7 +28,7 @@
   "missing_evidence": {
     "audit_dates": []
   },
-  "pipeline_run_id": "brief-generation-scope-prod-20260715-v1",
+  "pipeline_run_id": "brief-deployer-expansion-all-20260724-v1",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "bob-bridge",
@@ -58,23 +58,23 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 129,
-    "total_addresses": 165,
-    "unique_implementations": 129,
+    "total_contracts": 140,
+    "total_addresses": 176,
+    "unique_implementations": 140,
     "address_book_own_implementations": 29,
     "address_book_context_implementations": 29,
     "address_book_unclassified_implementations": 1,
-    "non_address_book_implementations": 70,
+    "non_address_book_implementations": 81,
     "third_party_or_infra_implementations": 0,
     "standard_proxy_or_library_implementations": 1,
     "address_book_proxy_deployments": 18,
-    "total_deployments": 165,
+    "total_deployments": 176,
     "audited_contracts": 0,
     "unaudited_contracts": 56,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 56,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 73,
+    "contracts_unverified": 84,
     "owned_contracts_verified_audited": 0,
     "owned_contracts_verified_unaudited": 24,
     "owned_contracts_verified_by_bytecode": 0,
@@ -176,6 +176,952 @@
       "solady": 1
     },
     "upgradeable_contracts": 6
+  },
+  "deployer_expansion_inventory": {
+    "source": "project_contracts.discovery_source=deployer_expansion",
+    "decision_run_id": "deployer-candidate-production-20260712",
+    "total_contracts": 44,
+    "live_contracts": 8,
+    "unknown_liveness_contracts": 36,
+    "source_verified_contracts": 33,
+    "currently_scope_matched_contracts": 0,
+    "classification_counts": {
+      "currently_scope_matched": 0,
+      "candidate_auto_own": 0,
+      "candidate_review": 18,
+      "candidate_hard_block": 0,
+      "contamination_review": 0,
+      "third_party_or_infra": 0,
+      "exact_address_book_overlap": 0,
+      "source_verified_unclassified": 15,
+      "unverified_unclassified": 11
+    },
+    "contracts": [
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0xf2dc77c697e892542cc53336178a78bb313dfdc7",
+        "name": "AddressManager",
+        "role": "unknown",
+        "liveness": "live",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0x43ea7cc3fc5c47de680bd25d3716ba08dcfea0b2",
+        "deploy_date": "2024-04-11 22:00:23+03",
+        "contamination_flag": "review",
+        "has_exact_address_book_entry": true,
+        "address_book_inventory_class": "project_anchor",
+        "scope_inventory_class": "project_anchor",
+        "classification": "candidate_review",
+        "classification_reason": "no_fresh_structural_match",
+        "deployer_decision": "review",
+        "deployer_decision_reason": "no_fresh_structural_match"
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x237853621998a33fa5b9b820592f4c6f4c158c12",
+        "name": "L1CrossDomainMessenger",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0x43ea7cc3fc5c47de680bd25d3716ba08dcfea0b2",
+        "deploy_date": "2024-04-11 22:02:59+03",
+        "contamination_flag": "review",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "retained_scope_excluded_inventory",
+        "classification": "candidate_review",
+        "classification_reason": "no_fresh_structural_match",
+        "deployer_decision": "review",
+        "deployer_decision_reason": "no_fresh_structural_match"
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0xa67fc05d295d2be6bc4cbfad4f880c1c58734212",
+        "name": "L1ERC721Bridge",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0x43ea7cc3fc5c47de680bd25d3716ba08dcfea0b2",
+        "deploy_date": "2024-04-11 22:04:23+03",
+        "contamination_flag": "review",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "candidate_review",
+        "classification_reason": "no_fresh_structural_match",
+        "deployer_decision": "review",
+        "deployer_decision_reason": "no_fresh_structural_match"
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x59191bd38eba4a642c9fec308dc188731b229822",
+        "name": "L2OutputOracle",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0x43ea7cc3fc5c47de680bd25d3716ba08dcfea0b2",
+        "deploy_date": "2024-04-11 22:03:23+03",
+        "contamination_flag": "review",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "candidate_review",
+        "classification_reason": "no_fresh_structural_match",
+        "deployer_decision": "review",
+        "deployer_decision_reason": "no_fresh_structural_match"
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x994e3b01d130944a3e67bfd3b8fc73069b959fec",
+        "name": "OptimismPortal",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0x43ea7cc3fc5c47de680bd25d3716ba08dcfea0b2",
+        "deploy_date": "2024-04-11 22:02:47+03",
+        "contamination_flag": "review",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "candidate_review",
+        "classification_reason": "no_fresh_structural_match",
+        "deployer_decision": "review",
+        "deployer_decision_reason": "no_fresh_structural_match"
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x3c877699263119022cdaa251058c1bac8fc43287",
+        "name": "OptimismPortal2",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0x0a1c5e42e423fab63746d375b84d3fe4caf9b513",
+        "deploy_date": "2026-03-11 12:14:47+03",
+        "contamination_flag": "review",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "retained_scope_excluded_inventory",
+        "classification": "candidate_review",
+        "classification_reason": "no_fresh_structural_match",
+        "deployer_decision": "review",
+        "deployer_decision_reason": "no_fresh_structural_match"
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x0dd8ed2f044fde13be5d28d51b29e87e22bd97d2",
+        "name": "Proxy",
+        "role": "unknown",
+        "liveness": "live",
+        "source_verified": true,
+        "is_proxy": true,
+        "implementation_address": "0x37e15e4d6dffa9e5e320ee1ec036922e563cb76c",
+        "deployer_address": "0x0a1c5e42e423fab63746d375b84d3fe4caf9b513",
+        "deploy_date": "2025-07-16 19:21:23+03",
+        "contamination_flag": "review",
+        "has_exact_address_book_entry": true,
+        "address_book_inventory_class": "project_anchor",
+        "scope_inventory_class": "project_anchor",
+        "classification": "candidate_review",
+        "classification_reason": "no_fresh_structural_match",
+        "deployer_decision": "review",
+        "deployer_decision_reason": "no_fresh_structural_match"
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x554ffc3fe0ae9487f58cec547e91ba337cc5e667",
+        "name": "Proxy",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": true,
+        "implementation_address": "0x4da82a327773965b8d4d85fa3db8249b387458e7",
+        "deployer_address": "0x0a1c5e42e423fab63746d375b84d3fe4caf9b513",
+        "deploy_date": "2025-07-16 19:18:59+03",
+        "contamination_flag": "review",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "candidate_review",
+        "classification_reason": "no_fresh_structural_match",
+        "deployer_decision": "review",
+        "deployer_decision_reason": "no_fresh_structural_match"
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x5557408ab14013ce9dbb300de0d87d386bb09cb6",
+        "name": "Proxy",
+        "role": "unknown",
+        "liveness": "live",
+        "source_verified": true,
+        "is_proxy": true,
+        "implementation_address": "0x8ee6fb13c6c9a7e401531168e196fbf8b05ceabb",
+        "deployer_address": "0x43ea7cc3fc5c47de680bd25d3716ba08dcfea0b2",
+        "deploy_date": "2024-04-11 22:02:23+03",
+        "contamination_flag": "review",
+        "has_exact_address_book_entry": true,
+        "address_book_inventory_class": "project_anchor",
+        "scope_inventory_class": "project_anchor",
+        "classification": "candidate_review",
+        "classification_reason": "no_fresh_structural_match",
+        "deployer_decision": "review",
+        "deployer_decision_reason": "no_fresh_structural_match"
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x5ff93263d5181b2a826f8c51d54bc0da2d20d50a",
+        "name": "Proxy",
+        "role": "unknown",
+        "liveness": "live",
+        "source_verified": true,
+        "is_proxy": true,
+        "implementation_address": "0x74f1ac50eb0be98853805d381c884f5f9abdecf9",
+        "deployer_address": "0x43ea7cc3fc5c47de680bd25d3716ba08dcfea0b2",
+        "deploy_date": "2024-04-11 22:02:35+03",
+        "contamination_flag": "review",
+        "has_exact_address_book_entry": true,
+        "address_book_inventory_class": "project_anchor",
+        "scope_inventory_class": "project_anchor",
+        "classification": "candidate_review",
+        "classification_reason": "no_fresh_structural_match",
+        "deployer_decision": "review",
+        "deployer_decision_reason": "no_fresh_structural_match"
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x6b49976a7340d0a3c00d1bebe0e36e2367d89c7c",
+        "name": "Proxy",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": true,
+        "implementation_address": "0x7fc721acc2183c292737c5a28ea1b30d19f1cf29",
+        "deployer_address": "0x0a1c5e42e423fab63746d375b84d3fe4caf9b513",
+        "deploy_date": "2026-05-29 07:05:59+03",
+        "contamination_flag": "review",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "candidate_review",
+        "classification_reason": "no_fresh_structural_match",
+        "deployer_decision": "review",
+        "deployer_decision_reason": "no_fresh_structural_match"
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x87692b8741ba36e2d7f7942c418829a305b3eff2",
+        "name": "Proxy",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": true,
+        "implementation_address": "0x37e15e4d6dffa9e5e320ee1ec036922e563cb76c",
+        "deployer_address": "0x0a1c5e42e423fab63746d375b84d3fe4caf9b513",
+        "deploy_date": "2025-06-25 14:06:59+03",
+        "contamination_flag": "review",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "candidate_review",
+        "classification_reason": "no_fresh_structural_match",
+        "deployer_decision": "review",
+        "deployer_decision_reason": "no_fresh_structural_match"
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x8adee124447435fe03e3cd24df3f4cae32e65a3e",
+        "name": "Proxy",
+        "role": "unknown",
+        "liveness": "live",
+        "source_verified": true,
+        "is_proxy": true,
+        "implementation_address": "0x3c877699263119022cdaa251058c1bac8fc43287",
+        "deployer_address": "0x43ea7cc3fc5c47de680bd25d3716ba08dcfea0b2",
+        "deploy_date": "2024-04-11 22:00:59+03",
+        "contamination_flag": "review",
+        "has_exact_address_book_entry": true,
+        "address_book_inventory_class": "project_anchor",
+        "scope_inventory_class": "project_anchor",
+        "classification": "candidate_review",
+        "classification_reason": "no_fresh_structural_match",
+        "deployer_decision": "review",
+        "deployer_decision_reason": "no_fresh_structural_match"
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0xa23bf38299bbcbaa01b9ea8a1d3412d9f405b97d",
+        "name": "Proxy",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": true,
+        "implementation_address": "0xf59da245d3d69e5432afd05008e8d332c1bfab4e",
+        "deployer_address": "0x0a1c5e42e423fab63746d375b84d3fe4caf9b513",
+        "deploy_date": "2026-05-04 15:38:11+03",
+        "contamination_flag": "review",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "candidate_review",
+        "classification_reason": "no_fresh_structural_match",
+        "deployer_decision": "review",
+        "deployer_decision_reason": "no_fresh_structural_match"
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0xacb886b75d76d1c8d9248cfddfa09b70c71c5393",
+        "name": "Proxy",
+        "role": "unknown",
+        "liveness": "live",
+        "source_verified": true,
+        "is_proxy": true,
+        "implementation_address": "0x2fa28989fc559836e9d66dff3010c7f7f41c65ed",
+        "deployer_address": "0x43ea7cc3fc5c47de680bd25d3716ba08dcfea0b2",
+        "deploy_date": "2024-04-11 22:01:35+03",
+        "contamination_flag": "review",
+        "has_exact_address_book_entry": true,
+        "address_book_inventory_class": "project_anchor",
+        "scope_inventory_class": "project_anchor",
+        "classification": "candidate_review",
+        "classification_reason": "no_fresh_structural_match",
+        "deployer_decision": "review",
+        "deployer_decision_reason": "no_fresh_structural_match"
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x0d9f416260598313be6fdf6b010f2fbc34957cd0",
+        "name": "ProxyAdmin",
+        "role": "unknown",
+        "liveness": "live",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0x43ea7cc3fc5c47de680bd25d3716ba08dcfea0b2",
+        "deploy_date": "2024-04-11 22:00:35+03",
+        "contamination_flag": "review",
+        "has_exact_address_book_entry": true,
+        "address_book_inventory_class": "project_anchor",
+        "scope_inventory_class": "project_anchor",
+        "classification": "candidate_review",
+        "classification_reason": "no_fresh_structural_match",
+        "deployer_decision": "review",
+        "deployer_decision_reason": "no_fresh_structural_match"
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0xe3d981643b806fb8030cdb677d6e60892e547eda",
+        "name": "ResolvedDelegateProxy",
+        "role": "unknown",
+        "liveness": "live",
+        "source_verified": true,
+        "is_proxy": true,
+        "implementation_address": "0x237853621998a33fa5b9b820592f4c6f4c158c12",
+        "deployer_address": "0x43ea7cc3fc5c47de680bd25d3716ba08dcfea0b2",
+        "deploy_date": "2024-04-11 22:01:59+03",
+        "contamination_flag": "review",
+        "has_exact_address_book_entry": true,
+        "address_book_inventory_class": "project_anchor",
+        "scope_inventory_class": "project_anchor",
+        "classification": "candidate_review",
+        "classification_reason": "no_fresh_structural_match",
+        "deployer_decision": "review",
+        "deployer_decision_reason": "no_fresh_structural_match"
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0xaa0a1efd35d6578ea6b5704dbc2c40b36a55b590",
+        "name": "SystemConfig",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0x43ea7cc3fc5c47de680bd25d3716ba08dcfea0b2",
+        "deploy_date": "2024-04-11 22:03:59+03",
+        "contamination_flag": "review",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "candidate_review",
+        "classification_reason": "no_fresh_structural_match",
+        "deployer_decision": "review",
+        "deployer_decision_reason": "no_fresh_structural_match"
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x52b5fb4b0f6572b8c44d0251cc224513ac5eb7e7",
+        "name": "BobToken",
+        "role": "token",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0x3c30d693b23f77d55e14b8e0cfb6c00075ff93ab",
+        "deploy_date": "2025-03-14 15:57:23+03",
+        "contamination_flag": "cleared",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "source_verified_unclassified",
+        "classification_reason": "Source is verified, but no stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x7fc721acc2183c292737c5a28ea1b30d19f1cf29",
+        "name": "KailuaVerifier",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0x0a1c5e42e423fab63746d375b84d3fe4caf9b513",
+        "deploy_date": "2026-05-29 07:05:47+03",
+        "contamination_flag": "cleared",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "source_verified_unclassified",
+        "classification_reason": "Source is verified, but no stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0xc9934db60031add319d008f8d643e3b723f28e43",
+        "name": "KailuaVerifier",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0x0a1c5e42e423fab63746d375b84d3fe4caf9b513",
+        "deploy_date": "2026-06-24 19:33:23+03",
+        "contamination_flag": "cleared",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "source_verified_unclassified",
+        "classification_reason": "Source is verified, but no stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0xdd26da83b27987a7040cae31f2e35d9bd6f5de59",
+        "name": "KailuaVerifier",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0x0a1c5e42e423fab63746d375b84d3fe4caf9b513",
+        "deploy_date": "2026-06-24 15:51:11+03",
+        "contamination_flag": "cleared",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "source_verified_unclassified",
+        "classification_reason": "Source is verified, but no stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0xf59da245d3d69e5432afd05008e8d332c1bfab4e",
+        "name": "KailuaVerifier",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0x0a1c5e42e423fab63746d375b84d3fe4caf9b513",
+        "deploy_date": "2026-05-04 15:38:11+03",
+        "contamination_flag": "cleared",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "source_verified_unclassified",
+        "classification_reason": "Source is verified, but no stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0xeeafa156a5dd3811ee0d9f91db57a77ea53a8d31",
+        "name": "L1StandardBridge",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0x43ea7cc3fc5c47de680bd25d3716ba08dcfea0b2",
+        "deploy_date": "2024-04-11 22:04:11+03",
+        "contamination_flag": "cleared",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "source_verified_unclassified",
+        "classification_reason": "Source is verified, but no stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x0640c9377a4fac00225097eacbb0295f4d5fbd76",
+        "name": "OptimismMintableERC20Factory",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0x43ea7cc3fc5c47de680bd25d3716ba08dcfea0b2",
+        "deploy_date": "2024-04-11 22:03:47+03",
+        "contamination_flag": "cleared",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "source_verified_unclassified",
+        "classification_reason": "Source is verified, but no stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x5a99469f18a5863d3258e577892589386dfd965e",
+        "name": "RiscZeroGroth16Verifier",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xc450a7c66f97202605c1b46ed0735dbe49c8f4fb",
+        "deploy_date": "2024-08-21 20:17:23+03",
+        "contamination_flag": "cleared",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "source_verified_unclassified",
+        "classification_reason": "Source is verified, but no stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x94a4684d6f7085c19138bd4f9f3295fa9943c622",
+        "name": "RiscZeroGroth16Verifier",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xc450a7c66f97202605c1b46ed0735dbe49c8f4fb",
+        "deploy_date": "2024-08-29 23:28:35+03",
+        "contamination_flag": "cleared",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "source_verified_unclassified",
+        "classification_reason": "Source is verified, but no stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0xf70abab028eb6f4100a24b203e113d94e87de93c",
+        "name": "RiscZeroGroth16Verifier",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xc450a7c66f97202605c1b46ed0735dbe49c8f4fb",
+        "deploy_date": "2024-06-13 03:10:47+03",
+        "contamination_flag": "cleared",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "source_verified_unclassified",
+        "classification_reason": "Source is verified, but no stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x08aed6c108e500540a9544bef7a8b8a05e056e87",
+        "name": "RiscZeroVerifierEmergencyStop",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xc450a7c66f97202605c1b46ed0735dbe49c8f4fb",
+        "deploy_date": "2024-08-29 23:28:47+03",
+        "contamination_flag": "cleared",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "source_verified_unclassified",
+        "classification_reason": "Source is verified, but no stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x44c220f0598345195ce99ad6a57adffcb9ea33e7",
+        "name": "RiscZeroVerifierEmergencyStop",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xc450a7c66f97202605c1b46ed0735dbe49c8f4fb",
+        "deploy_date": "2024-06-13 03:10:59+03",
+        "contamination_flag": "cleared",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "source_verified_unclassified",
+        "classification_reason": "Source is verified, but no stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0xb839ea7bba8e6bb2893ca5252f3f3c13323d74f7",
+        "name": "RiscZeroVerifierEmergencyStop",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xc450a7c66f97202605c1b46ed0735dbe49c8f4fb",
+        "deploy_date": "2024-08-21 20:17:35+03",
+        "contamination_flag": "cleared",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "source_verified_unclassified",
+        "classification_reason": "Source is verified, but no stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x0b144e07a0826182b6b59788c34b32bfa86fb711",
+        "name": "TimelockController",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xc450a7c66f97202605c1b46ed0735dbe49c8f4fb",
+        "deploy_date": "2024-06-13 03:09:23+03",
+        "contamination_flag": "cleared",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "source_verified_unclassified",
+        "classification_reason": "Source is verified, but no stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0xdc986a09728f76110ff666ee7b20d99086501d15",
+        "name": "TimelockController",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xc450a7c66f97202605c1b46ed0735dbe49c8f4fb",
+        "deploy_date": "2024-06-13 02:55:11+03",
+        "contamination_flag": "cleared",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "source_verified_unclassified",
+        "classification_reason": "Source is verified, but no stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 11155111,
+        "chain_name": "sepolia",
+        "address": "0x47fd71e0b4dd5253a97210b4c902dec687b250cf",
+        "name": "UnnamedContract",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": false,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xae4f9cf448f2179a62126463529e32bae95dcae4",
+        "deploy_date": "2024-07-30 18:16:36+03",
+        "contamination_flag": null,
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "unverified_unclassified",
+        "classification_reason": "No stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 11155111,
+        "chain_name": "sepolia",
+        "address": "0x6982e35c878cd2b5af8dcf06f33c4efb01d6f482",
+        "name": "UnnamedContract",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": false,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0x72af66a4ff8bc96a1175bc729a938ea35f274e53",
+        "deploy_date": "2025-05-20 03:32:24+03",
+        "contamination_flag": null,
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "unverified_unclassified",
+        "classification_reason": "No stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 11155111,
+        "chain_name": "sepolia",
+        "address": "0x69c0d1659703dd666ec8fb17788aed4acc05ed3f",
+        "name": "UnnamedContract",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": false,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xae4f9cf448f2179a62126463529e32bae95dcae4",
+        "deploy_date": "2024-07-30 18:15:24+03",
+        "contamination_flag": null,
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "unverified_unclassified",
+        "classification_reason": "No stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 11155111,
+        "chain_name": "sepolia",
+        "address": "0x6a0208d45c378346619c8967570bb5e2fad16e89",
+        "name": "UnnamedContract",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": false,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xae4f9cf448f2179a62126463529e32bae95dcae4",
+        "deploy_date": "2024-07-30 18:15:24+03",
+        "contamination_flag": null,
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "unverified_unclassified",
+        "classification_reason": "No stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 11155111,
+        "chain_name": "sepolia",
+        "address": "0x70bb7eb25471f1c4ead5051578fca85058948a76",
+        "name": "UnnamedContract",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": false,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xae4f9cf448f2179a62126463529e32bae95dcae4",
+        "deploy_date": "2024-07-30 18:15:24+03",
+        "contamination_flag": null,
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "unverified_unclassified",
+        "classification_reason": "No stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 11155111,
+        "chain_name": "sepolia",
+        "address": "0x856ea788977bc771e8ca87471baec507a0f54771",
+        "name": "UnnamedContract",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": false,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0x72af66a4ff8bc96a1175bc729a938ea35f274e53",
+        "deploy_date": "2025-05-20 03:32:24+03",
+        "contamination_flag": null,
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "unverified_unclassified",
+        "classification_reason": "No stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 11155111,
+        "chain_name": "sepolia",
+        "address": "0xcabf38d8eadde0bc6c91655242afb4da92a63fce",
+        "name": "UnnamedContract",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": false,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0x72af66a4ff8bc96a1175bc729a938ea35f274e53",
+        "deploy_date": "2025-05-20 03:32:24+03",
+        "contamination_flag": null,
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "unverified_unclassified",
+        "classification_reason": "No stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 11155111,
+        "chain_name": "sepolia",
+        "address": "0xd1cbbc06213b7e14e99adfffef1c249e6f9537e0",
+        "name": "UnnamedContract",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": false,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xae4f9cf448f2179a62126463529e32bae95dcae4",
+        "deploy_date": "2024-07-30 18:15:24+03",
+        "contamination_flag": null,
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "unverified_unclassified",
+        "classification_reason": "No stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 11155111,
+        "chain_name": "sepolia",
+        "address": "0xd87d72eb3aa50264ea593f0b6860c988e0778aff",
+        "name": "UnnamedContract",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": false,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xae4f9cf448f2179a62126463529e32bae95dcae4",
+        "deploy_date": "2024-07-30 18:15:24+03",
+        "contamination_flag": null,
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "unverified_unclassified",
+        "classification_reason": "No stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 11155111,
+        "chain_name": "sepolia",
+        "address": "0xdb86292e09de84edf2f942bc223864f32ff4c417",
+        "name": "UnnamedContract",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": false,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xae4f9cf448f2179a62126463529e32bae95dcae4",
+        "deploy_date": "2024-07-30 18:15:24+03",
+        "contamination_flag": null,
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "unverified_unclassified",
+        "classification_reason": "No stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 11155111,
+        "chain_name": "sepolia",
+        "address": "0xea7eacae0e2fefc7c134c2c0f6b7bc47bc271a24",
+        "name": "UnnamedContract",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": false,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xae4f9cf448f2179a62126463529e32bae95dcae4",
+        "deploy_date": "2024-07-30 18:16:36+03",
+        "contamination_flag": null,
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "unverified_unclassified",
+        "classification_reason": "No stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      }
+    ]
   },
   "surface_sufficiency": {
     "unique_implementations": 29,
@@ -2935,7 +3881,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": "2025-07-16 19:21:23+03",
+      "effective_deploy_date": "2025-02-28 20:10:35+03",
       "deploy_coverage_basis": null
     },
     {
@@ -4178,7 +5124,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-07-16 20:13:23+03",
       "deploy_coverage_basis": null
     },
     {
@@ -5147,7 +6093,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-02-28 20:10:35+03",
       "deploy_coverage_basis": null
     },
     {
@@ -5306,7 +6252,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-02-28 20:10:35+03",
       "deploy_coverage_basis": null
     },
     {
@@ -5627,7 +6573,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-02-28 20:10:47+03",
       "deploy_coverage_basis": null
     },
     {
@@ -6110,7 +7056,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-07-17 17:18:35+03",
       "deploy_coverage_basis": null
     },
     {
@@ -6269,7 +7215,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory; testnet_scope.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [
           "retained_scope_excluded_inventory"
         ],
@@ -6281,7 +7227,7 @@
           "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
         ]
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-03-05 22:52:36+03",
       "deploy_coverage_basis": null
     },
     {
@@ -6332,7 +7278,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory; testnet_scope.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [
           "retained_scope_excluded_inventory"
         ],
@@ -6344,7 +7290,7 @@
           "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
         ]
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-06-26 16:29:36+03",
       "deploy_coverage_basis": null
     },
     {
@@ -6395,7 +7341,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory; testnet_scope.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [
           "retained_scope_excluded_inventory"
         ],
@@ -6407,7 +7353,7 @@
           "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
         ]
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-06-02 22:42:00+03",
       "deploy_coverage_basis": null
     },
     {
@@ -6458,7 +7404,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory; testnet_scope.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [
           "retained_scope_excluded_inventory"
         ],
@@ -6470,7 +7416,7 @@
           "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
         ]
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-03-07 19:58:12+03",
       "deploy_coverage_basis": null
     },
     {
@@ -6521,7 +7467,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory; testnet_scope.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [
           "retained_scope_excluded_inventory"
         ],
@@ -6533,7 +7479,7 @@
           "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
         ]
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-01-28 19:37:36+03",
       "deploy_coverage_basis": null
     },
     {
@@ -6584,7 +7530,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory; testnet_scope.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [
           "retained_scope_excluded_inventory"
         ],
@@ -6596,7 +7542,7 @@
           "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
         ]
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-07-30 18:15:24+03",
       "deploy_coverage_basis": null
     },
     {
@@ -6647,7 +7593,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory; testnet_scope.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [
           "retained_scope_excluded_inventory"
         ],
@@ -6659,7 +7605,7 @@
           "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
         ]
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-06-03 02:15:24+03",
       "deploy_coverage_basis": null
     },
     {
@@ -6710,7 +7656,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory; testnet_scope.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [
           "retained_scope_excluded_inventory"
         ],
@@ -6722,7 +7668,61 @@
           "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
         ]
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-06-02 22:42:00+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 11155111,
+      "chain_name": "sepolia",
+      "address": "0x47fd71e0b4dd5253a97210b4c902dec687b250cf",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 11155111,
+          "chain_name": "sepolia",
+          "address": "0x47fd71e0b4dd5253a97210b4c902dec687b250cf",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": null,
+          "operational_liveness_run_id": null,
+          "operational_liveness_observed_at": null
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "none",
+      "address_book_inventory_class": "non_address_book",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "non_address_book_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Discovered project contract is not present at an exact chain/address key in the protocol address book; excluded from scope matching and coverage.",
+      "surface_evidence": {
+        "source": "exact_protocol_address_book_membership",
+        "has_exact_address_book_entry": false
+      },
+      "effective_deploy_date": "2024-07-30 18:16:36+03",
       "deploy_coverage_basis": null
     },
     {
@@ -6773,7 +7773,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory; testnet_scope.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [
           "retained_scope_excluded_inventory"
         ],
@@ -6785,7 +7785,7 @@
           "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
         ]
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-01-28 19:37:36+03",
       "deploy_coverage_basis": null
     },
     {
@@ -6836,7 +7836,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory; testnet_scope.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [
           "retained_scope_excluded_inventory"
         ],
@@ -6848,7 +7848,7 @@
           "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
         ]
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-01-28 19:37:36+03",
       "deploy_coverage_basis": null
     },
     {
@@ -6899,7 +7899,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory; testnet_scope.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [
           "retained_scope_excluded_inventory"
         ],
@@ -6911,7 +7911,7 @@
           "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
         ]
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-01-28 19:37:36+03",
       "deploy_coverage_basis": null
     },
     {
@@ -6962,7 +7962,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory; testnet_scope.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [
           "retained_scope_excluded_inventory"
         ],
@@ -6974,7 +7974,7 @@
           "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
         ]
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-06-26 16:34:24+03",
       "deploy_coverage_basis": null
     },
     {
@@ -7025,7 +8025,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory; testnet_scope.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [
           "retained_scope_excluded_inventory"
         ],
@@ -7037,7 +8037,7 @@
           "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
         ]
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-07-30 18:15:24+03",
       "deploy_coverage_basis": null
     },
     {
@@ -7088,7 +8088,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory; testnet_scope.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [
           "retained_scope_excluded_inventory"
         ],
@@ -7100,7 +8100,169 @@
           "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
         ]
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-03-05 22:52:36+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 11155111,
+      "chain_name": "sepolia",
+      "address": "0x6982e35c878cd2b5af8dcf06f33c4efb01d6f482",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 11155111,
+          "chain_name": "sepolia",
+          "address": "0x6982e35c878cd2b5af8dcf06f33c4efb01d6f482",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": null,
+          "operational_liveness_run_id": null,
+          "operational_liveness_observed_at": null
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "none",
+      "address_book_inventory_class": "non_address_book",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "non_address_book_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Discovered project contract is not present at an exact chain/address key in the protocol address book; excluded from scope matching and coverage.",
+      "surface_evidence": {
+        "source": "exact_protocol_address_book_membership",
+        "has_exact_address_book_entry": false
+      },
+      "effective_deploy_date": "2025-05-20 03:32:24+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 11155111,
+      "chain_name": "sepolia",
+      "address": "0x69c0d1659703dd666ec8fb17788aed4acc05ed3f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 11155111,
+          "chain_name": "sepolia",
+          "address": "0x69c0d1659703dd666ec8fb17788aed4acc05ed3f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": null,
+          "operational_liveness_run_id": null,
+          "operational_liveness_observed_at": null
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "none",
+      "address_book_inventory_class": "non_address_book",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "non_address_book_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Discovered project contract is not present at an exact chain/address key in the protocol address book; excluded from scope matching and coverage.",
+      "surface_evidence": {
+        "source": "exact_protocol_address_book_membership",
+        "has_exact_address_book_entry": false
+      },
+      "effective_deploy_date": "2024-07-30 18:15:24+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 11155111,
+      "chain_name": "sepolia",
+      "address": "0x6a0208d45c378346619c8967570bb5e2fad16e89",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 11155111,
+          "chain_name": "sepolia",
+          "address": "0x6a0208d45c378346619c8967570bb5e2fad16e89",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": null,
+          "operational_liveness_run_id": null,
+          "operational_liveness_observed_at": null
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "none",
+      "address_book_inventory_class": "non_address_book",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "non_address_book_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Discovered project contract is not present at an exact chain/address key in the protocol address book; excluded from scope matching and coverage.",
+      "surface_evidence": {
+        "source": "exact_protocol_address_book_membership",
+        "has_exact_address_book_entry": false
+      },
+      "effective_deploy_date": "2024-07-30 18:15:24+03",
       "deploy_coverage_basis": null
     },
     {
@@ -7151,7 +8313,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory; testnet_scope.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [
           "retained_scope_excluded_inventory"
         ],
@@ -7163,7 +8325,61 @@
           "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
         ]
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-06-05 21:36:36+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 11155111,
+      "chain_name": "sepolia",
+      "address": "0x70bb7eb25471f1c4ead5051578fca85058948a76",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 11155111,
+          "chain_name": "sepolia",
+          "address": "0x70bb7eb25471f1c4ead5051578fca85058948a76",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": null,
+          "operational_liveness_run_id": null,
+          "operational_liveness_observed_at": null
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "none",
+      "address_book_inventory_class": "non_address_book",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "non_address_book_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Discovered project contract is not present at an exact chain/address key in the protocol address book; excluded from scope matching and coverage.",
+      "surface_evidence": {
+        "source": "exact_protocol_address_book_membership",
+        "has_exact_address_book_entry": false
+      },
+      "effective_deploy_date": "2024-07-30 18:15:24+03",
       "deploy_coverage_basis": null
     },
     {
@@ -7214,7 +8430,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory; testnet_scope.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [
           "retained_scope_excluded_inventory"
         ],
@@ -7226,7 +8442,7 @@
           "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
         ]
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-07-30 18:15:24+03",
       "deploy_coverage_basis": null
     },
     {
@@ -7277,7 +8493,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory; testnet_scope.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [
           "retained_scope_excluded_inventory"
         ],
@@ -7289,7 +8505,7 @@
           "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
         ]
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-06-20 20:57:12+03",
       "deploy_coverage_basis": null
     },
     {
@@ -7340,7 +8556,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory; testnet_scope.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [
           "retained_scope_excluded_inventory"
         ],
@@ -7352,7 +8568,7 @@
           "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
         ]
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-07-30 18:15:24+03",
       "deploy_coverage_basis": null
     },
     {
@@ -7403,7 +8619,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory; testnet_scope.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [
           "retained_scope_excluded_inventory"
         ],
@@ -7415,7 +8631,7 @@
           "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
         ]
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-06-20 20:56:24+03",
       "deploy_coverage_basis": null
     },
     {
@@ -7466,7 +8682,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory; testnet_scope.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [
           "retained_scope_excluded_inventory"
         ],
@@ -7478,7 +8694,7 @@
           "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
         ]
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-03-05 22:52:36+03",
       "deploy_coverage_basis": null
     },
     {
@@ -7529,7 +8745,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory; testnet_scope.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [
           "retained_scope_excluded_inventory"
         ],
@@ -7541,7 +8757,61 @@
           "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
         ]
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-02-26 00:09:12+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 11155111,
+      "chain_name": "sepolia",
+      "address": "0x856ea788977bc771e8ca87471baec507a0f54771",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 11155111,
+          "chain_name": "sepolia",
+          "address": "0x856ea788977bc771e8ca87471baec507a0f54771",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": null,
+          "operational_liveness_run_id": null,
+          "operational_liveness_observed_at": null
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "none",
+      "address_book_inventory_class": "non_address_book",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "non_address_book_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Discovered project contract is not present at an exact chain/address key in the protocol address book; excluded from scope matching and coverage.",
+      "surface_evidence": {
+        "source": "exact_protocol_address_book_membership",
+        "has_exact_address_book_entry": false
+      },
+      "effective_deploy_date": "2025-05-20 03:32:24+03",
       "deploy_coverage_basis": null
     },
     {
@@ -7592,7 +8862,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory; testnet_scope.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [
           "retained_scope_excluded_inventory"
         ],
@@ -7604,7 +8874,7 @@
           "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
         ]
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-07-30 18:15:24+03",
       "deploy_coverage_basis": null
     },
     {
@@ -7655,7 +8925,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory; testnet_scope.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [
           "retained_scope_excluded_inventory"
         ],
@@ -7667,7 +8937,7 @@
           "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
         ]
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-06-05 21:36:36+03",
       "deploy_coverage_basis": null
     },
     {
@@ -7718,7 +8988,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory; testnet_scope.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [
           "retained_scope_excluded_inventory"
         ],
@@ -7730,7 +9000,7 @@
           "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
         ]
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-07-30 18:15:24+03",
       "deploy_coverage_basis": null
     },
     {
@@ -7781,7 +9051,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory; testnet_scope.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [
           "retained_scope_excluded_inventory"
         ],
@@ -7793,7 +9063,7 @@
           "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
         ]
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-07-30 18:15:24+03",
       "deploy_coverage_basis": null
     },
     {
@@ -7844,7 +9114,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory; testnet_scope.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [
           "retained_scope_excluded_inventory"
         ],
@@ -7856,7 +9126,7 @@
           "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
         ]
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-07-30 18:15:24+03",
       "deploy_coverage_basis": null
     },
     {
@@ -7907,7 +9177,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory; testnet_scope.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [
           "retained_scope_excluded_inventory"
         ],
@@ -7919,7 +9189,277 @@
           "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
         ]
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-06-05 21:45:48+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 11155111,
+      "chain_name": "sepolia",
+      "address": "0xcabf38d8eadde0bc6c91655242afb4da92a63fce",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 11155111,
+          "chain_name": "sepolia",
+          "address": "0xcabf38d8eadde0bc6c91655242afb4da92a63fce",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": null,
+          "operational_liveness_run_id": null,
+          "operational_liveness_observed_at": null
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "none",
+      "address_book_inventory_class": "non_address_book",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "non_address_book_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Discovered project contract is not present at an exact chain/address key in the protocol address book; excluded from scope matching and coverage.",
+      "surface_evidence": {
+        "source": "exact_protocol_address_book_membership",
+        "has_exact_address_book_entry": false
+      },
+      "effective_deploy_date": "2025-05-20 03:32:24+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 11155111,
+      "chain_name": "sepolia",
+      "address": "0xd1cbbc06213b7e14e99adfffef1c249e6f9537e0",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 11155111,
+          "chain_name": "sepolia",
+          "address": "0xd1cbbc06213b7e14e99adfffef1c249e6f9537e0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": null,
+          "operational_liveness_run_id": null,
+          "operational_liveness_observed_at": null
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "none",
+      "address_book_inventory_class": "non_address_book",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "non_address_book_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Discovered project contract is not present at an exact chain/address key in the protocol address book; excluded from scope matching and coverage.",
+      "surface_evidence": {
+        "source": "exact_protocol_address_book_membership",
+        "has_exact_address_book_entry": false
+      },
+      "effective_deploy_date": "2024-07-30 18:15:24+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 11155111,
+      "chain_name": "sepolia",
+      "address": "0xd87d72eb3aa50264ea593f0b6860c988e0778aff",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 11155111,
+          "chain_name": "sepolia",
+          "address": "0xd87d72eb3aa50264ea593f0b6860c988e0778aff",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": null,
+          "operational_liveness_run_id": null,
+          "operational_liveness_observed_at": null
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "none",
+      "address_book_inventory_class": "non_address_book",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "non_address_book_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Discovered project contract is not present at an exact chain/address key in the protocol address book; excluded from scope matching and coverage.",
+      "surface_evidence": {
+        "source": "exact_protocol_address_book_membership",
+        "has_exact_address_book_entry": false
+      },
+      "effective_deploy_date": "2024-07-30 18:15:24+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 11155111,
+      "chain_name": "sepolia",
+      "address": "0xdb86292e09de84edf2f942bc223864f32ff4c417",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 11155111,
+          "chain_name": "sepolia",
+          "address": "0xdb86292e09de84edf2f942bc223864f32ff4c417",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": null,
+          "operational_liveness_run_id": null,
+          "operational_liveness_observed_at": null
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "none",
+      "address_book_inventory_class": "non_address_book",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "non_address_book_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Discovered project contract is not present at an exact chain/address key in the protocol address book; excluded from scope matching and coverage.",
+      "surface_evidence": {
+        "source": "exact_protocol_address_book_membership",
+        "has_exact_address_book_entry": false
+      },
+      "effective_deploy_date": "2024-07-30 18:15:24+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 11155111,
+      "chain_name": "sepolia",
+      "address": "0xea7eacae0e2fefc7c134c2c0f6b7bc47bc271a24",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 11155111,
+          "chain_name": "sepolia",
+          "address": "0xea7eacae0e2fefc7c134c2c0f6b7bc47bc271a24",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": null,
+          "operational_liveness_run_id": null,
+          "operational_liveness_observed_at": null
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "none",
+      "address_book_inventory_class": "non_address_book",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "non_address_book_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Discovered project contract is not present at an exact chain/address key in the protocol address book; excluded from scope matching and coverage.",
+      "surface_evidence": {
+        "source": "exact_protocol_address_book_membership",
+        "has_exact_address_book_entry": false
+      },
+      "effective_deploy_date": "2024-07-30 18:16:36+03",
       "deploy_coverage_basis": null
     },
     {
@@ -7970,7 +9510,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory; testnet_scope.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [
           "retained_scope_excluded_inventory"
         ],
@@ -7982,7 +9522,7 @@
           "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
         ]
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-06-02 22:42:00+03",
       "deploy_coverage_basis": null
     },
     {
@@ -8033,7 +9573,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory; testnet_scope.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [
           "retained_scope_excluded_inventory"
         ],
@@ -8045,7 +9585,7 @@
           "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
         ]
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-06-05 21:36:36+03",
       "deploy_coverage_basis": null
     }
   ],
@@ -9297,7 +10837,7 @@
     "native": 31,
     "upstream": 14,
     "standard_library": 8,
-    "needs_review": 76
+    "needs_review": 87
   },
   "scope_matching_notes": {
     "match_method_counts": {},
@@ -9427,5 +10967,6 @@
     }
   },
   "active_bug_bounty": null,
+  "non_evm_deployments": null,
   "out_of_scope": null
 }

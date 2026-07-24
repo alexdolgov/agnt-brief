@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Suzaku (`suzaku`)
 - Website: [https://www.suzaku.network/](https://www.suzaku.network/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: avalanche
 - Contract surface: 67 unique implementations (106 raw deployments)
 - Coverage basis: 1/24 confirmed own live verified implementations (4.2%); conservative 4.2% with 0 needs-review implementation(s)
@@ -56,7 +56,7 @@ Total inherited audits: 2. Inherited coverage reflects forked/shared code audite
 ### Forked Contracts
 
 **DefaultCollateral** (`0x0cec099933f0da490dff91724b02e2203faaf9af`, chain 43114)
-Origin: mantle-restaking (`0x475d3eb031d250070b63fa145f0fcfc5d97c304a`)
+Origin: mantle-restaking (`0x475d3e...7c304a`)
 Containment: 100.0% - 17 functions inherited
 Centroid audit status: pending_validation
 
@@ -65,7 +65,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **DefaultCollateral** (`0x1d8bd363922465246a91b7699e7b32babf5fef62`, chain 43114)
-Origin: mantle-restaking (`0x475d3eb031d250070b63fa145f0fcfc5d97c304a`)
+Origin: mantle-restaking (`0x475d3e...7c304a`)
 Containment: 100.0% - 17 functions inherited
 Centroid audit status: pending_validation
 
@@ -74,7 +74,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **DefaultCollateral** (`0x203e9101e09dc87ce391542e705a07522d19df0d`, chain 43114)
-Origin: mantle-restaking (`0x475d3eb031d250070b63fa145f0fcfc5d97c304a`)
+Origin: mantle-restaking (`0x475d3e...7c304a`)
 Containment: 100.0% - 17 functions inherited
 Centroid audit status: pending_validation
 
@@ -83,7 +83,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **DefaultCollateral** (`0x51111e1f63d3341573882c0ed844e0876efd634d`, chain 43114)
-Origin: mantle-restaking (`0x475d3eb031d250070b63fa145f0fcfc5d97c304a`)
+Origin: mantle-restaking (`0x475d3e...7c304a`)
 Containment: 100.0% - 17 functions inherited
 Centroid audit status: pending_validation
 
@@ -92,7 +92,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **DefaultCollateral** (`0x8f1dea444380a2ddc5e6669f508d235401caee5f`, chain 43114)
-Origin: mantle-restaking (`0x475d3eb031d250070b63fa145f0fcfc5d97c304a`)
+Origin: mantle-restaking (`0x475d3e...7c304a`)
 Containment: 100.0% - 17 functions inherited
 Centroid audit status: pending_validation
 
@@ -101,7 +101,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **DefaultCollateral** (`0xa53e127bfd9c4d0310858d9d5fcdf1d2617d4c41`, chain 43114)
-Origin: mantle-restaking (`0x475d3eb031d250070b63fa145f0fcfc5d97c304a`)
+Origin: mantle-restaking (`0x475d3e...7c304a`)
 Containment: 100.0% - 17 functions inherited
 Centroid audit status: pending_validation
 
@@ -110,7 +110,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **DefaultCollateral** (`0xc96d4958f69db878190ec661ede04657458dce5a`, chain 43114)
-Origin: mantle-restaking (`0x475d3eb031d250070b63fa145f0fcfc5d97c304a`)
+Origin: mantle-restaking (`0x475d3e...7c304a`)
 Containment: 100.0% - 17 functions inherited
 Centroid audit status: pending_validation
 
@@ -119,7 +119,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **DefaultCollateral** (`0xe3c983013b8c5830d866f550a28fd7ed4393d5b7`, chain 43114)
-Origin: mantle-restaking (`0x475d3eb031d250070b63fa145f0fcfc5d97c304a`)
+Origin: mantle-restaking (`0x475d3e...7c304a`)
 Containment: 100.0% - 17 functions inherited
 Centroid audit status: pending_validation
 
@@ -281,6 +281,30 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xf385b2e215efc30b1c2b06a1167879fe22f69574` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xf8a6b2958692ab050517cc1d4337416485e3453b` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xfe9f3a8f004964d7ea843ee725ad972f0fca0cc9` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 8
+- Live contracts: 2
+- Unknown liveness contracts: 6
+- Source-verified contracts: 8
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: candidate review=6, source verified unclassified=2
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| candidate review | RewardsNativeToken<br>`0x3d03302456d9d9f1a6760898e4d25128425d6d32` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xad1251198815fa263f52bdf15d172bfe1b98de37` |
+| candidate review | RewardsNativeToken<br>`0x430e1e8324b0a271aa0164cecb8b5f86d1d1d077` | retained_scope_excluded_inventory | unknown | live | verified | review: no_fresh_structural_match | `0xad1251198815fa263f52bdf15d172bfe1b98de37` |
+| candidate review | TransparentUpgradeableProxy<br>`0x0f388c7c6201014ad836400e9e2ebd211bdbcb00` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xad1251198815fa263f52bdf15d172bfe1b98de37` |
+| candidate review | TransparentUpgradeableProxy<br>`0x119c46aea0ce94603719c2dd4077a5716b16b68c` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xad1251198815fa263f52bdf15d172bfe1b98de37` |
+| candidate review | TransparentUpgradeableProxy<br>`0xff5d885e58ba4845ace17a3124d4e8a7639efdd4` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xad1251198815fa263f52bdf15d172bfe1b98de37` |
+| candidate review | VaultTokenized<br>`0xce634fa642d482be2f60d1bed91414aae6e2f8ed` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xad1251198815fa263f52bdf15d172bfe1b98de37` |
+| source verified unclassified | LSTWrapper<br>`0x017d60fbf9e82ebf77860500e052287280eef453` | non_address_book | unknown | unknown | verified | n/a | `0xad1251198815fa263f52bdf15d172bfe1b98de37` |
+| source verified unclassified | LSTWrapper<br>`0xa1c16af728c7e897ddbdc15ea34b34c222438c7e` | non_address_book | unknown | unknown | verified | n/a | `0xad1251198815fa263f52bdf15d172bfe1b98de37` |
 
 ## Audit Inventory
 

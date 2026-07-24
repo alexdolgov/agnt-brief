@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Secured Finance (`secured-finance`)
 - Website: [https://secured.finance/](https://secured.finance/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: arbitrum, avalanche, ethereum, polygon-zkevm
 - Contract surface: 121 unique implementations (221 raw deployments)
 - Coverage basis: 4/6 confirmed own live verified implementations (66.7%); conservative 66.7% with 0 needs-review implementation(s)
@@ -253,6 +253,25 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfc882e0ba57d8e2a7d917f1fd8d248d3c6652cd0` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon-zkevm | n/a | 4 deployments: polygon-zkevm `0x0896ac8b9e2dc3545392ff65061e5a8a3ed68824`; polygon-zkevm `0x7dca6b6bf30cd28ade83e86e21e82e3f852bf2dc`; polygon-zkevm `0x9e1254292195f241fa2df1aa51af23796627a74b`; polygon-zkevm `0xb74749b2213916b1da3b869e41c7c57f1db69393` | ❓ Unverified |
 
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 3
+- Live contracts: 0
+- Unknown liveness contracts: 3
+- Source-verified contracts: 3
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: candidate review=1, source verified unclassified=2
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| candidate review | LendingMarketController<br>`0x60ccbf7e864df8c7223216baca4149a8190e5fc7` | non_address_book | unknown | unknown | verified | review: missing_independent_ownership_evidence | `0x4f122d7fce7971e38801af5d96fcd4ed83efd654` |
+| source verified unclassified | BeaconProxyController<br>`0x93dabbe49c0b296397909ac75489ef2cc91cf632` | non_address_book | unknown | unknown | verified | n/a | `0x4f122d7fce7971e38801af5d96fcd4ed83efd654` |
+| source verified unclassified | CurrencyController<br>`0xd024f3d33f9dbd131ffe2eff2a920e9a7f62a18b` | non_address_book | unknown | unknown | verified | n/a | `0x4f122d7fce7971e38801af5d96fcd4ed83efd654` |
+
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
@@ -304,14 +323,14 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | 2025-08-Hexens.pdf | BorrowerOperations | unmatched — not counted | — | mentioned in findings | no |
 | 2025-08-Hexens.pdf | ActivePool | unmatched — not counted | — | mentioned in findings | no |
 | 2025-08-Hexens.pdf | SortedTroves | unmatched — not counted | — | mentioned in findings | no |
-| 2023-11-Quantstamp.pdf | BeaconProxyController | own contract | 0x581e46… (selected) `0x581e463841bd2b30285929448e1a93d74708719f` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2023-11-Quantstamp.pdf | BeaconProxyController | own contract | 0x581e46… (selected) `0x581e463841bd2b30285929448e1a93d74708719f` — deployed 2023-12-14 03:46:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2023-11-Quantstamp.pdf | FutureValueVault | unmatched — not counted | — | listed in scope | no |
 | 2023-11-Quantstamp.pdf | GenesisValueVault | own proxy deployment | UpgradeabilityProxy (proxy) (selected) `0xa2700d5fedb13b86bba3228008c7a0d464a07f2b` — deployed 2023-12-14 03:46:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 2023-11-Quantstamp.pdf | CurrencyController | own contract | 0x7dca6b… (selected) `0x7dca6b6bf30cd28ade83e86e21e82e3f852bf2dc` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2023-11-Quantstamp.pdf | CurrencyController | own contract | 0x7dca6b… (selected) `0x7dca6b6bf30cd28ade83e86e21e82e3f852bf2dc` — deployed 2023-12-14 03:46:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2023-11-Quantstamp.pdf | TokenVault | own proxy deployment | UpgradeabilityProxy (proxy) (selected) `0xb74749b2213916b1da3b869e41c7c57f1db69393` — deployed 2023-12-14 03:46:59+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2023-11-Quantstamp.pdf | AddressResolver | unmatched — not counted | — | listed in scope | no |
 | 2023-11-Quantstamp.pdf | ReserveFund | own proxy deployment | UpgradeabilityProxy (proxy) (selected) `0xd2683e22331b9a6e9f38350d829dbeb64ad2778e` — deployed 2023-12-14 03:46:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 2023-11-Quantstamp.pdf | LendingMarketController | own contract | 0x35e9d8… (selected) `0x35e9d8e0223a75e51a67aa731127c91ea0779fe2` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2023-11-Quantstamp.pdf | LendingMarketController | own contract | 0x35e9d8… (selected) `0x35e9d8e0223a75e51a67aa731127c91ea0779fe2` — deployed 2023-12-14 03:46:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2023-11-Quantstamp.pdf | ProxyController | own contract | ProxyController (selected) `0x1634d2104b48299da7d927c4582ea7ba67020ebb` — deployed 2023-12-14 03:43:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2023-11-Quantstamp.pdf | LendingMarket | unmatched — not counted | — | listed in scope | no |
 | 2023-11-Quantstamp.pdf | INativeToken | unmatched — not counted | — | listed in scope | no |
@@ -374,13 +393,13 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | 2023-11-Quantstamp.pdf | TransferHelperStorage | unmatched — not counted | — | listed in scope | no |
 | 2023-11-Quantstamp.pdf | MixinAddressResolverStorage | unmatched — not counted | — | listed in scope | no |
 | 2024-03-Quantstamp.pdf | AddressResolver | unmatched — not counted | — | — | no |
-| 2024-03-Quantstamp.pdf | BeaconProxyController | own contract | 0x581e46… (selected) `0x581e463841bd2b30285929448e1a93d74708719f` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| 2024-03-Quantstamp.pdf | CurrencyController | own contract | 0x7dca6b… (selected) `0x7dca6b6bf30cd28ade83e86e21e82e3f852bf2dc` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2024-03-Quantstamp.pdf | BeaconProxyController | own contract | 0x581e46… (selected) `0x581e463841bd2b30285929448e1a93d74708719f` — deployed 2023-12-14 03:46:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2024-03-Quantstamp.pdf | CurrencyController | own contract | 0x7dca6b… (selected) `0x7dca6b6bf30cd28ade83e86e21e82e3f852bf2dc` — deployed 2023-12-14 03:46:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2024-03-Quantstamp.pdf | FundManagementLogic | unmatched — not counted | — | — | no |
 | 2024-03-Quantstamp.pdf | FutureValueVault | unmatched — not counted | — | — | no |
 | 2024-03-Quantstamp.pdf | GenesisValueVault | own proxy deployment | UpgradeabilityProxy (proxy) (selected) `0xa2700d5fedb13b86bba3228008c7a0d464a07f2b` — deployed 2023-12-14 03:46:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2024-03-Quantstamp.pdf | LendingMarket | unmatched — not counted | — | — | no |
-| 2024-03-Quantstamp.pdf | LendingMarketController | own contract | 0x35e9d8… (selected) `0x35e9d8e0223a75e51a67aa731127c91ea0779fe2` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 2024-03-Quantstamp.pdf | LendingMarketController | own contract | 0x35e9d8… (selected) `0x35e9d8e0223a75e51a67aa731127c91ea0779fe2` — deployed 2023-12-14 03:46:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 2024-03-Quantstamp.pdf | LendingMarketOperationLogic | unmatched — not counted | — | — | no |
 | 2024-03-Quantstamp.pdf | LendingMarketUserLogic | unmatched — not counted | — | — | no |
 | 2024-03-Quantstamp.pdf | MixinLiquidationConfiguration | unmatched — not counted | — | — | no |

@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Muffin (`muffin`)
 - Website: [https://muffin.fi/](https://muffin.fi/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: ethereum, goerli
-- Contract surface: 13 unique implementations (13 raw deployments)
+- Contract surface: 16 unique implementations (16 raw deployments)
 - Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - DeFi Llama TVL: $106,215.90
 - On-chain TVL (included contracts): n/a
@@ -73,15 +73,15 @@ The activated project remains an explicit cohort member with an empty normalized
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
 - Address-book implementation classification: 2 own, 4 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 7 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 10 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Confirmed-live implementations: 2 of 13 unique; 11 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 2 of 16 unique; 14 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 0/4
 - Verified + Unaudited implementations: 4
 - Verified by bytecode match: 0
-- Unverified implementations: 9
-- Unique implementations: 13
-- Raw deployments: 13
+- Unverified implementations: 12
+- Unique implementations: 16
+- Raw deployments: 16
 - Audits discovered: 4 (4 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 4
 - ASD (verified + unaudited TVL): n/a
@@ -121,21 +121,43 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (9)
+### ❓ Unverified (12)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x07ab6d25b5ccaef15e6f07c044d193b9b0d37f47` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1c1525548b13c591e4383b8fa8ce18ff139931da` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x42789c4d6c5cc9334fef4da662a57d78771ce9e5` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5e090c58e71b86b94fb544b0143363c3414d0579` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389473 | `0x6690384822aff0b65fe0c21a809f187f5c3fcdd8` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc385ee24dd6a99af06baa01729e6ee9434deadfe` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389474 | `0xded07e2da859714f69d93f9794344606ed67907e` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xed6165a870f48ea4244d6d2cdf4e19737c9b1e2d` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | ethereum | unit-389475 | `0xf3defa1cd3c0ee826f32cff252c7d6c79f07f68b` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-389476 | `0x1a55404cf1e3666bb612b78c8f18af730997ca96` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-389477 | `0x95186358c4f2f64ae33264494e4a7c6cd5dd80dd` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-389478 | `0xa06c455d19704e4871c547211504e17e2199308d` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 3
+- Live contracts: 0
+- Unknown liveness contracts: 3
+- Source-verified contracts: 0
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: unverified unclassified=3
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| unverified unclassified | UnnamedContract<br>`0x07ab6d25b5ccaef15e6f07c044d193b9b0d37f47` | non_address_book | unknown | unknown | unverified | n/a | `0x551b33b3e07ea3092f2865f01806c8207b38a8ab` |
+| unverified unclassified | UnnamedContract<br>`0x1c1525548b13c591e4383b8fa8ce18ff139931da` | non_address_book | unknown | unknown | unverified | n/a | `0x551b33b3e07ea3092f2865f01806c8207b38a8ab` |
+| unverified unclassified | UnnamedContract<br>`0xc385ee24dd6a99af06baa01729e6ee9434deadfe` | non_address_book | unknown | unknown | unverified | n/a | `0x551b33b3e07ea3092f2865f01806c8207b38a8ab` |
 
 ## Audit Inventory
 
@@ -190,7 +212,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | ABDK (Core contracts) | TickMaps | unmatched — not counted | — | listed in scope | no |
 | ABDK (Core contracts) | Ticks | unmatched — not counted | — | listed in scope | no |
 | ABDK (Core contracts) | Tiers | unmatched — not counted | — | listed in scope | no |
-| ABDK (Core contracts) | MuffinHub | own contract | 0x669038… (selected) `0x6690384822aff0b65fe0c21a809f187f5c3fcdd8` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ABDK (Core contracts) | MuffinHub | own contract | 0x669038… (selected) `0x6690384822aff0b65fe0c21a809f187f5c3fcdd8` — deployed 2022-09-02 17:35:22+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ABDK (Core contracts) | MuffinHubBase | unmatched — not counted | — | listed in scope | no |
 | ABDK (Core contracts) | MuffinHubPositions | unmatched — not counted | — | listed in scope | no |
 | ABDK (Periphery contracts) | ERC721 | unmatched — not counted | — | listed in scope | no |
@@ -198,12 +220,12 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | ABDK (Periphery contracts) | ManagerBase | unmatched — not counted | — | listed in scope | no |
 | ABDK (Periphery contracts) | Multicall | unmatched — not counted | — | listed in scope | no |
 | ABDK (Periphery contracts) | SelfPermit | unmatched — not counted | — | listed in scope | no |
-| ABDK (Periphery contracts) | Manager | own contract | 0xded07e… (selected) `0xded07e2da859714f69d93f9794344606ed67907e` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ABDK (Periphery contracts) | Manager | own contract | 0xded07e… (selected) `0xded07e2da859714f69d93f9794344606ed67907e` — deployed 2022-09-02 17:36:17+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | ABDK (Periphery contracts) | PositionManager | unmatched — not counted | — | listed in scope | no |
 | ABDK (Periphery contracts) | SwapManager | unmatched — not counted | — | listed in scope | no |
 | Dedaub (Core + periphery contracts) | MuffinHubBase | unmatched — not counted | — | listed in scope | no |
 | Dedaub (Core + periphery contracts) | MuffinHubPositions | unmatched — not counted | — | listed in scope | no |
-| Dedaub (Core + periphery contracts) | MuffinHub | own contract | 0x669038… (selected) `0x6690384822aff0b65fe0c21a809f187f5c3fcdd8` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Dedaub (Core + periphery contracts) | MuffinHub | own contract | 0x669038… (selected) `0x6690384822aff0b65fe0c21a809f187f5c3fcdd8` — deployed 2022-09-02 17:35:22+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Dedaub (Core + periphery contracts) | Constants | unmatched — not counted | — | listed in scope | no |
 | Dedaub (Core + periphery contracts) | Pools | unmatched — not counted | — | listed in scope | no |
 | Dedaub (Core + periphery contracts) | Positions | unmatched — not counted | — | listed in scope | no |
@@ -211,7 +233,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Dedaub (Core + periphery contracts) | TickMaps | unmatched — not counted | — | listed in scope | no |
 | Dedaub (Core + periphery contracts) | Ticks | unmatched — not counted | — | listed in scope | no |
 | Dedaub (Core + periphery contracts) | Tiers | unmatched — not counted | — | listed in scope | no |
-| Dedaub (Core + periphery contracts) | Manager | own contract | 0xded07e… (selected) `0xded07e2da859714f69d93f9794344606ed67907e` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Dedaub (Core + periphery contracts) | Manager | own contract | 0xded07e… (selected) `0xded07e2da859714f69d93f9794344606ed67907e` — deployed 2022-09-02 17:36:17+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Dedaub (Core + periphery contracts) | EMAMath | unmatched — not counted | — | listed in scope | no |
 | Dedaub (Core + periphery contracts) | FullMath | unmatched — not counted | — | listed in scope | no |
 | Dedaub (Core + periphery contracts) | Math | unmatched — not counted | — | listed in scope | no |
@@ -228,7 +250,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Dedaub (Core + periphery contracts) | SelfPermit | unmatched — not counted | — | listed in scope | no |
 | Dedaub (Core + periphery contracts) | SwapManager | unmatched — not counted | — | listed in scope | no |
 | PeckShield (Core + periphery contracts) | MuffinHubPositions | unmatched — not counted | — | mentioned in finding PVE-004 target | no |
-| PeckShield (Core + periphery contracts) | MuffinHub | own contract | 0x669038… (selected) `0x6690384822aff0b65fe0c21a809f187f5c3fcdd8` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| PeckShield (Core + periphery contracts) | MuffinHub | own contract | 0x669038… (selected) `0x6690384822aff0b65fe0c21a809f187f5c3fcdd8` — deployed 2022-09-02 17:35:22+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | PeckShield (Core + periphery contracts) | Pools | unmatched — not counted | — | mentioned in findings PVE-001, PVE-003, PVE-005 targets | no |
 | PeckShield (Core + periphery contracts) | ERC721Extended | unmatched — not counted | — | mentioned in finding PVE-002 target | no |
 
@@ -245,7 +267,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 4 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 9 |
+| needs_review | 12 |
 
 ## Scope Matching Notes
 

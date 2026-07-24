@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ⚠️ Lifecycle status: DEAD - TVL dropped 59.5% over 90 days
 
@@ -18,10 +18,10 @@
 - Project: Arcade.xyz (`arcade.xyz`)
 - Website: [https://www.arcade.xyz](https://www.arcade.xyz)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: ethereum, goerli, sepolia
-- Contract surface: 141 unique implementations (213 raw deployments)
+- Contract surface: 153 unique implementations (225 raw deployments)
 - Coverage basis: 7/20 confirmed own live verified implementations (35.0%); conservative 35.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $4,748,668.10
 - On-chain TVL (included contracts): $164,450.65
@@ -96,15 +96,15 @@ The pinned logic-topography run contains 22 contract row(s) across ethereum, goe
 - Coverage of address-book-owned deployed-live implementations: 7/20 (35.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 27 own, 56 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 58 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 70 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 10
-- Confirmed-live implementations: 27 of 141 unique; 114 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 27 of 153 unique; 126 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 7/61
 - Verified + Unaudited implementations: 54
 - Verified by bytecode match: 0
-- Unverified implementations: 80
-- Unique implementations: 141
-- Raw deployments: 213
+- Unverified implementations: 92
+- Unique implementations: 153
+- Raw deployments: 225
 - Audits discovered: 10 (10 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 6
 - ASD (verified + unaudited TVL): n/a
@@ -207,7 +207,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (80)
+### ❓ Unverified (92)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -220,6 +220,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379260 | `0x1f563cdd688ad47b75e474fde74e87c643d129b7` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x24c55ec2b20b72f30bcde3e24aaedb8af24b030b` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379262 | `0x24ec19f05fc4a29d49617e1221ce7dc8a1ed5a3d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x26dcdc1a4cf5b5a3876ec98cd5ca030465c601b7` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x27ed938ff4d532332c2701866d7869edcb39d7e4` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2ea7e9d91bdc7dc1ca0135d6f485bd731799bf56` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x35eb4dbc2436ddc6bc3ed94a397ac32bba99968a` | ❓ Unverified |
@@ -230,13 +231,17 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6d8a475ca76626168d9e0e59360ad74d2313a958` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7c866452ef99f82e900dd3d35f0ad1f1e3e10b11` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379270 | `0x945aff9253c840401166c3d24ff78180fe0a05df` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x98d332078bbf57e0f46539fa930c93f95e063fbc` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379271 | `0x9b458e2b9c0cd34a62a26b846f45eb829aebc96e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xac442678408b7591588bc7437f0a00106b5186c9` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb61517330cc03210e83bc2e98bc648eeb15ddc6d` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc06f3ec8601dc3e8116edd05d5a1721dc2d7250e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc14e61ceb80b52ad48d3122046b904e05a5dacc9` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc3b2705a875305bc6b67ef000fc08183e48f7eb1` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379277 | `0xd96e4d03420aa33a3fe91f57d03d8ef69de1e863` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe1a6dadfafa203a8e086428d91c302568dda5dd5` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf72516d0d038ec8c0ef0fe8f7f4eead8ee1c31e2` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfc2b8d5c60c8e8bbf8d6dc685f03193472e39587` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-379306 | `0x0028badf5d154dae44f874ac58ffcd3fa56d9586` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-379307 | `0x055357612455c53718a8d79f9f710c0648efe137` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-379308 | `0x0888774c51841a994899ecf67e65dc30d707376a` | ❓ Unverified |
@@ -281,18 +286,182 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-379347 | `0xff130c83706281dff47c509bc729e797bf0e2f08` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-379348 | `0xffae061d1e2d416bc3b8320145277052dba68923` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-379279 | `0x055357612455c53718a8d79f9f710c0648efe137` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x065a0fb8a09482318898e47cd092df310c1c6e1a` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-379280 | `0x0888774c51841a994899ecf67e65dc30d707376a` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-379281 | `0x0a5ecac03acb40206abbb8e7238aaf491375923c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x14c61bce30882ef9658c43891adb30c14e367328` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-379282 | `0x23ce21be3ebd1c86325100460d58d14a1d143e8d` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-379284 | `0x3a54241cb7801bdea625565aacb0e873e79c0649` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-379285 | `0x42de174663dc5f339aee2d58744a622f88da8c09` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x4c6327629d8aeb1bea2fd0aafee1867a3ade69df` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-379292 | `0x7bb0a098bca96200fbe19ee54ddbdd52d86df423` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-379294 | `0x8a12bb999100846b9e56aba4906762353c416952` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x9d4cdab126793aa53847e029b9f6d5d89ca761a8` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-379296 | `0xaef48370a5f37cfb760ce44e6cbf986c4deff389` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xbf05e0d47cdf6bdcc351f2f72c49cd38a1a815db` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xcb7c7b5769ae10e048359752ff4274bc7db1819c` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-379299 | `0xd624d1879429a606f54f48b08b56126c3fe70049` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-379302 | `0xdeabbbe620edf275f06e75e8fab18183389d606f` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-379303 | `0xe4a1917ebe8fd2cafd79799c82adaa7e81ac6d47` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xf4fd45dd0047ddbb1e6b8c13d4696828d2531525` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-379305 | `0xfe046149bc8830d989a007e81a9d7f8a3b575f36` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 141
+- Live contracts: 18
+- Unknown liveness contracts: 123
+- Source-verified contracts: 112
+- Currently scope-matched contracts retained as-is: 7
+- Classification counts: currently scope matched=7, candidate review=29, exact address book overlap=9, source verified unclassified=67, unverified unclassified=29
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| currently scope matched | ArcadeItemsVerifier<br>`0xabfd9d9e4157695db5812eee279d923a4f948df0` | project_anchor | periphery | live | verified | review: no_fresh_structural_match | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| currently scope matched | AssetVault<br>`0xd898456e39a461b102ce4626aac191582c38acb6` | project_anchor | core_logic | live | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| currently scope matched | CallWhitelist<br>`0xb4496f9798cebd003c5d5a956b5b8f3933178c82` | project_anchor | unknown | live | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| currently scope matched | CallWhitelistApprovals<br>`0xb4515a8e5616005f7138d9eb25b581362d9fdb95` | project_anchor | unknown | live | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| currently scope matched | FeeController<br>`0x41e538817c3311ed032653bee5487a113f8cff9f` | project_anchor | governance | live | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| currently scope matched | FlashRollover<br>`0x24611fad669350ca869fbed4b62877d1a409da12` | project_anchor | unknown | live | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| currently scope matched | PunksVerifier<br>`0x16d99ec34aa91162d71c84bcbe7a7ead5908b8e2` | project_anchor | periphery | live | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| candidate review | ArcadeItemsVerifier<br>`0xc39c5d2fc523f26b5a83ab6c0c802c6e80a4df1d` | non_address_book | periphery | unknown | verified | review: no_fresh_structural_match | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| candidate review | ERC1967Proxy<br>`0x3f80d1a3fdfadc4eec9cd7f7ab2039d544032d43` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| candidate review | ERC1967Proxy<br>`0x4845b43b8f84653dab594fe7a12e9697b9408a9a` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| candidate review | ERC1967Proxy<br>`0x4c52ca29388a8a854095fd2beb83191d68dc840b` | project_anchor | governance | live | verified | review: no_fresh_structural_match | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| candidate review | ERC1967Proxy<br>`0x567ccb050e793235574f1261c24ea2304436c117` | non_address_book | governance | unknown | verified | review: no_fresh_structural_match | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| candidate review | ERC1967Proxy<br>`0x8334812a584b5f7cb7f794484e07692e1748de7c` | non_address_book | registry | unknown | verified | review: no_fresh_structural_match | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| candidate review | ERC1967Proxy<br>`0x86eb882404bfee5847b5067f70da498ec8efdb03` | non_address_book | registry | unknown | verified | review: no_fresh_structural_match | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| candidate review | LoanCore<br>`0x3a50c25f11cb96a30bfcba4dc0c44da1907dd935` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| candidate review | LoanCore<br>`0x3bbd0b701755130f14ebb81c8581e1be55eb6b15` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| candidate review | LoanCore<br>`0x606e4a441290314aeaf494194467fd2bb844064a` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| candidate review | LoanCore<br>`0x7691ee8febd406968d46f9de96cb8cc18fc8b325` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| candidate review | LoanCore<br>`0xcb98358dcecbd4aa884b4453a0734a9980654047` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| candidate review | LoanCore<br>`0xecbaac1ad75d9444b621d309b0f9c045455d78f5` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| candidate review | LoanCore<br>`0xf7950d9e686247916c319bc175fffaf4fe6df89d` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| candidate review | PromissoryNote<br>`0x1123710f81cb573ab22dd6de90de17692f8ee8b0` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| candidate review | PromissoryNote<br>`0x349a026a43ffa8e2ab4c4e59fcaa93f87bd8ddee` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| candidate review | PromissoryNote<br>`0x430d820fe598e2ab872d4e95bb971cbc761ed280` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| candidate review | PromissoryNote<br>`0x562803b258cc1b5ecc1398443940e6ff15f649d2` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| candidate review | PromissoryNote<br>`0x5783d0698a053762bcc9ee0b403b26448dbb0414` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| candidate review | PromissoryNote<br>`0x6397141fad44502bad00e0ccbe80a910ec9bbc87` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| candidate review | PromissoryNote<br>`0x8d366662b3dae8037cb50d099986d699f1ab8e15` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| candidate review | PromissoryNote<br>`0xa5f4b242bb44ba742f08dbaf3b154cda7e172ac0` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| candidate review | PromissoryNote<br>`0xa75b02c9b55d7854a727e67fc662e932d50ee4c4` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| candidate review | PromissoryNote<br>`0xd45ce8173262655c1acba3b376b1a77e4d7cdc7f` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| candidate review | V2ToV3Rollover<br>`0x0bc05fc8ebfb362592f9703a33fc8c3953ea0ed4` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| candidate review | V2ToV3Rollover<br>`0x1f59f83c3962481e8d490c9d65484202e4a3f9db` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| candidate review | V2ToV3Rollover<br>`0xdb0655752a3cd23b8fd360af596e71ee924c5253` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| candidate review | V2ToV3RolloverWithItems<br>`0x3c77269ca7f4ac42b6f0bfc10d9f44406351d396` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| candidate review | V2ToV3RolloverWithItems<br>`0xac33e4abf40293452422283730ed54a6af139e7b` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| exact address book overlap | AssetVault<br>`0x833835fe565008fa66fff31156b78a1fd710bcb5` | project_anchor | core_logic | live | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| exact address book overlap | FlashRolloverStakingVaultUpgrade<br>`0x094db3031258d6204a4cfc99415eb66f9a01a8c6` | project_anchor | core_logic | live | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| exact address book overlap | FlashRolloverV1toV2<br>`0x07352ed030c6fd8d12f8258d2df6f99cba533dc9` | project_anchor | unknown | live | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| exact address book overlap | RepaymentController<br>`0xb39dab85fa05c381767ff992ccde4c94619993d4` | project_anchor | governance | live | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| exact address book overlap | VaultDepositRouter<br>`0x4b95640d56f81fc851f952793f4e5485e352bed2` | project_anchor | adapter | live | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| exact address book overlap | VaultDepositRouter<br>`0xfdda20a20cb4249e73e3356f468ddfdfb61483f6` | project_anchor | adapter | live | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| exact address book overlap | VaultFactory<br>`0x21b346622e607fcc936a320d3ab8224fb36b3c0c` | project_anchor | registry | live | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| exact address book overlap | VaultFactory<br>`0x371e4f7698760caac721989e5f1af72b7d6c596f` | project_anchor | registry | live | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| exact address book overlap | VaultInventoryReporter<br>`0x3a0f9a98714ed4a36cd5ebc07f364f39c88c2e8a` | project_anchor | core_logic | live | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | AirdropSeason1<br>`0x7de71bc6694ca827e043b18102caf01518c0b54d` | non_address_book | operational_periphery | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | ArcadeAirdrop<br>`0x21fc22c02a298488e7d60a3b4fb974bc4ed75fd1` | non_address_book | operational_periphery | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | ArcadeAirdrop<br>`0x910a1accd978377baab783329af1dbb028d9892b` | non_address_book | operational_periphery | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | ArcadeCoreVoting<br>`0x2b6f11b2a783c928799c4e561da89cd06894a279` | non_address_book | unknown | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | ArcadeGSCVault<br>`0xfd2d1c8809a271e892046a23185423a52a149f62` | non_address_book | core_logic | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | ArcadeParadice<br>`0x4bad2399f43a827ba3434cdd9b3ad1b5bac52244` | non_address_book | unknown | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | ArcadeTokenDistributor<br>`0xd99121bd49c333be024ab28f7792d6e81170d187` | non_address_book | operational_periphery | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | ArcadeTreasury<br>`0xac2b57b372e198f09d4bf5f445ca1228771c12c5` | non_address_book | operational_periphery | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | ArtBlocksVerifier<br>`0x4501c338203ad2510c7c71a6ce26d70a70fb809d` | non_address_book | periphery | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | ArtBlocksVerifier<br>`0x6eeeed5d103c9230ba155ea9a9d6438dfcf3ae1a` | non_address_book | periphery | unknown | verified | n/a | `0x0a606524006a48c4d93662aa935aec203cac98c1` |
+| source verified unclassified | AssetVault<br>`0x584503250fc246ce459e117195a64cf96544f027` | non_address_book | core_logic | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | AssetVault<br>`0x6079f3beffd5660ba3eadebb923550b5ad88de5d` | non_address_book | core_logic | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | AssetVault<br>`0x796c486a2215da68f4f5a752923659444889f4bd` | non_address_book | core_logic | unknown | verified | n/a | `0x0a606524006a48c4d93662aa935aec203cac98c1` |
+| source verified unclassified | AssetVault<br>`0x9988d4918d85a814149225642175a4f7e5992fd9` | non_address_book | core_logic | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | AssetVault<br>`0xb56a5ccad374c0d7fb4820322cc336fec5d1424a` | non_address_book | core_logic | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | AssetWrapper<br>`0x5cb803c31e8f4f895a3ab19d8218646dc63e9dc2` | non_address_book | unknown | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | BadgeDescriptor<br>`0xfdac5cd4b03aacbb8b24ba54c6a95f244fad13cc` | non_address_book | periphery | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | BalanceQuery<br>`0xc7730a89b50779e28b9f06f805874bf28ae419c9` | non_address_book | unknown | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | CallWhitelist<br>`0x0e8ea5e5415b30dc1873df03ae9f7beecf74805f` | non_address_book | unknown | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | CallWhitelist<br>`0x1f2dfcfea1c2a7190225635b05075f00ecdd8eaa` | non_address_book | unknown | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | CallWhitelist<br>`0x2a62005db1c5ae759552e28981d1bb55af2c690f` | non_address_book | unknown | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | CallWhitelist<br>`0x5e87d274dd30c621fd2f12391d9f3725709f0597` | non_address_book | unknown | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | CallWhitelist<br>`0xf5399cfa412ea2f817b973ae0ae043ba82f9df5b` | non_address_book | unknown | unknown | verified | n/a | `0x0a606524006a48c4d93662aa935aec203cac98c1` |
+| source verified unclassified | CallWhitelistAllExtensions<br>`0x133570b0fd9e39611e29d3e47201ff8fe21707a1` | non_address_book | adapter | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | CallWhitelistAllExtensions<br>`0x28992ca7ba49a83f3bc391e9312730de78bf51ca` | non_address_book | adapter | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | CallWhitelistAllExtensions<br>`0xc185afaa3ff6decf908263802a831b18df1c62a3` | non_address_book | adapter | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | CallWhitelistAllExtensions<br>`0xc58ed1772f8c165d0c61ff114a9c552a013f17c4` | non_address_book | adapter | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | CollectionWideOfferVerifier<br>`0x1b6e58aae43bfd2a435aa348f3328f3137dda544` | non_address_book | periphery | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | FeeController<br>`0x0facdc440d496798e095f87e50a8ed3a5680d133` | non_address_book | governance | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | FeeController<br>`0x4cccc5c5ef1d8c4a6ad6765a36651ef523e42e75` | non_address_book | governance | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | FeeController<br>`0x78ff43ea7ddbca2bf8f00cbd3d7d53e3192eda7b` | non_address_book | governance | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | FeeController<br>`0xe6e2337a95e195dd5f744340bc1bf485ca67b753` | non_address_book | governance | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | FeeController<br>`0xf764442856eb3fe68a0828e07246a4b395e800fa` | non_address_book | governance | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | FlashRolloverV1toV2<br>`0x677eae7f60266608ed2d1f9a75021102a5e69c1b` | non_address_book | unknown | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | LP1Migration<br>`0xa78f3ec4a858341fc9cae5672f7381e4e74e657b` | non_address_book | operational_periphery | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | LP1Migration<br>`0xd4bd6295e0581f97191dda1562ba6de7a40ec5b9` | non_address_book | operational_periphery | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | LP1MigrationWithItems<br>`0x466e3e08deb46f7ba9ce269d2e0858347b359759` | non_address_book | operational_periphery | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | LP1MigrationWithItems<br>`0xad8e69f2a97541d1e3524d08a89d3dcbefa0adad` | non_address_book | operational_periphery | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | NFTBoostVault<br>`0xbe951d1b791c6878eec5d9129adeb72a28d59e68` | non_address_book | core_logic | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | OriginationController<br>`0x2df5c801f2f082287241c8cb7f3d517c3cba2620` | non_address_book | governance | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | OriginationController<br>`0x5fa8e713a058b2eef293ef0317e629ba88e9b88c` | non_address_book | governance | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | OriginationController<br>`0x7c2a27485b69f490945943464541236a025161f6` | non_address_book | governance | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | OriginationController<br>`0xb80f8861c050477acdf3a24f70240f04c16ecc51` | non_address_book | governance | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | ReflectiveURIDescriptor<br>`0x7fa888a801fc7b7e5e847239e58dd4e2dc621fd5` | non_address_book | periphery | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | RepaymentController<br>`0x251440b8cbcc973a8e7f0b7814ec3ecc6bcfcbc9` | non_address_book | governance | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | RepaymentController<br>`0x9217487e2b750fd6f4c5795b9bf488591ddf43a0` | non_address_book | governance | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | RepaymentController<br>`0x9ece636e942bcb67f9e0b7b6c51a56570ef6f38d` | non_address_book | governance | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | RepaymentController<br>`0xd7b4586b4ed87e2b98ad2df37a6c949c5ab1b1db` | non_address_book | governance | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | RepaymentController<br>`0xf6c8ee885dab34025ca275e269f8ec4bd85ad7fb` | non_address_book | governance | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | ReputationBadge<br>`0x3a5a551b41bbe3d3a61ffd8280f6569f6715612a` | non_address_book | unknown | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | StaticURIDescriptor<br>`0x2055f71ef369d26db683da0b8f8c62469bdafc75` | non_address_book | periphery | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | StaticURIDescriptor<br>`0x5a49a36f8fa1c2cd38ade89159f3992cf35727e8` | non_address_book | periphery | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | StaticURIDescriptor<br>`0x81a86c874e7c3f618145c9e4c6ccf7ec192c065e` | non_address_book | periphery | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | StaticURIDescriptor<br>`0x957896415bddae8aee2a231e3f912eb87fb998c3` | non_address_book | periphery | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | StaticURIDescriptor<br>`0x9a07c4382149608a183ea45241bae2cd5fc2e77e` | non_address_book | periphery | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | StaticURIDescriptor<br>`0xa3e495088c2481fe76f28b16357654fce13cc5e9` | non_address_book | periphery | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | StaticURIDescriptor<br>`0xad8a07804389842758d215abad7c722b6ba79f22` | non_address_book | periphery | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | StaticURIDescriptor<br>`0xe237f018d2f6c719107ac38903c81f4791372dfb` | non_address_book | periphery | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | StaticURIDescriptor<br>`0xe3ce55da7e779be80fa705fd75b00128afd81a94` | non_address_book | periphery | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | StaticURIDescriptor<br>`0xfde563e83fa013e3eeccf0e357c6c6759784cfcc` | non_address_book | periphery | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | Timelock<br>`0x47511465c397875deab7cf8f008d7922d041ff01` | non_address_book | governance | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | Timelock<br>`0xf3e9cdfa736f363a95a8ca62bdf69bbca4c5a973` | non_address_book | governance | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | VaultFactory<br>`0x38e01bae236e727ef3dafd914a1ba03df7dacdf6` | non_address_book | registry | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | VaultFactory<br>`0x4cf03ba5332bbfee54db0701f15b480c39bc54b1` | non_address_book | registry | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | VaultFactory<br>`0x4e6a527c7ffcfbe2fa16d14bf9c96d8fcec4ab7c` | non_address_book | registry | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | VaultFactory<br>`0x7d43e6c1f25dbd5d235236ae564df45bfed767b5` | non_address_book | registry | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| source verified unclassified | VaultInventoryReporter<br>`0x144b1535a3ff4007aad8921419ee2e02cfdb8e1d` | non_address_book | core_logic | unknown | verified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| unverified unclassified | UnnamedContract<br>`0x01f8ce6d77691807831abf88be8e525141350aee` | non_address_book | unknown | unknown | unverified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| unverified unclassified | UnnamedContract<br>`0x0ac4742c05a8f61a382e428a0adbcf378bd0d5e8` | non_address_book | unknown | unknown | unverified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| unverified unclassified | UnnamedContract<br>`0x199150b87ca83f8672e092baacb6fecba7e7dd0a` | non_address_book | unknown | unknown | unverified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| unverified unclassified | UnnamedContract<br>`0x24c55ec2b20b72f30bcde3e24aaedb8af24b030b` | non_address_book | unknown | unknown | unverified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| unverified unclassified | UnnamedContract<br>`0x26dcdc1a4cf5b5a3876ec98cd5ca030465c601b7` | non_address_book | unknown | unknown | unverified | n/a | `0x0370a10714f5528bf7db525e087086f59f5fc7e3` |
+| unverified unclassified | UnnamedContract<br>`0x27ed938ff4d532332c2701866d7869edcb39d7e4` | non_address_book | unknown | unknown | unverified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| unverified unclassified | UnnamedContract<br>`0x2ea7e9d91bdc7dc1ca0135d6f485bd731799bf56` | non_address_book | unknown | unknown | unverified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| unverified unclassified | UnnamedContract<br>`0x35eb4dbc2436ddc6bc3ed94a397ac32bba99968a` | non_address_book | unknown | unknown | unverified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| unverified unclassified | UnnamedContract<br>`0x384582c4d2f4ee74a5bad88d1ab699160ba3ceaf` | non_address_book | unknown | unknown | unverified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| unverified unclassified | UnnamedContract<br>`0x39375ef4d5a9a5df5562f82eedcf9b7ae8dcb4d1` | non_address_book | unknown | unknown | unverified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| unverified unclassified | UnnamedContract<br>`0x541ebfd631ceee05c11ff2f348c53d1adbb5dbbe` | non_address_book | unknown | unknown | unverified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| unverified unclassified | UnnamedContract<br>`0x6d8a475ca76626168d9e0e59360ad74d2313a958` | non_address_book | unknown | unknown | unverified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| unverified unclassified | UnnamedContract<br>`0x7c866452ef99f82e900dd3d35f0ad1f1e3e10b11` | non_address_book | unknown | unknown | unverified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| unverified unclassified | UnnamedContract<br>`0x98d332078bbf57e0f46539fa930c93f95e063fbc` | non_address_book | unknown | unknown | unverified | n/a | `0x0370a10714f5528bf7db525e087086f59f5fc7e3` |
+| unverified unclassified | UnnamedContract<br>`0xac442678408b7591588bc7437f0a00106b5186c9` | non_address_book | unknown | unknown | unverified | n/a | `0x0370a10714f5528bf7db525e087086f59f5fc7e3` |
+| unverified unclassified | UnnamedContract<br>`0xb61517330cc03210e83bc2e98bc648eeb15ddc6d` | non_address_book | unknown | unknown | unverified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| unverified unclassified | UnnamedContract<br>`0xc06f3ec8601dc3e8116edd05d5a1721dc2d7250e` | non_address_book | unknown | unknown | unverified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| unverified unclassified | UnnamedContract<br>`0xc14e61ceb80b52ad48d3122046b904e05a5dacc9` | non_address_book | unknown | unknown | unverified | n/a | `0x0370a10714f5528bf7db525e087086f59f5fc7e3` |
+| unverified unclassified | UnnamedContract<br>`0xc3b2705a875305bc6b67ef000fc08183e48f7eb1` | non_address_book | unknown | unknown | unverified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| unverified unclassified | UnnamedContract<br>`0xe1a6dadfafa203a8e086428d91c302568dda5dd5` | non_address_book | unknown | unknown | unverified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| unverified unclassified | UnnamedContract<br>`0xf72516d0d038ec8c0ef0fe8f7f4eead8ee1c31e2` | non_address_book | unknown | unknown | unverified | n/a | `0x02c845ac4bac48a6cd1e1c88a84195b7d5805b82` |
+| unverified unclassified | UnnamedContract<br>`0xfc2b8d5c60c8e8bbf8d6dc685f03193472e39587` | non_address_book | unknown | unknown | unverified | n/a | `0x0370a10714f5528bf7db525e087086f59f5fc7e3` |
+| unverified unclassified | UnnamedContract<br>`0x065a0fb8a09482318898e47cd092df310c1c6e1a` | non_address_book | unknown | unknown | unverified | n/a | `0x9b419fd36837558d8a3197a28a5e580ace44f64f` |
+| unverified unclassified | UnnamedContract<br>`0x14c61bce30882ef9658c43891adb30c14e367328` | non_address_book | unknown | unknown | unverified | n/a | `0x9b419fd36837558d8a3197a28a5e580ace44f64f` |
+| unverified unclassified | UnnamedContract<br>`0x4c6327629d8aeb1bea2fd0aafee1867a3ade69df` | non_address_book | unknown | unknown | unverified | n/a | `0x9b419fd36837558d8a3197a28a5e580ace44f64f` |
+| unverified unclassified | UnnamedContract<br>`0x9d4cdab126793aa53847e029b9f6d5d89ca761a8` | non_address_book | unknown | unknown | unverified | n/a | `0x9b419fd36837558d8a3197a28a5e580ace44f64f` |
+| unverified unclassified | UnnamedContract<br>`0xbf05e0d47cdf6bdcc351f2f72c49cd38a1a815db` | non_address_book | unknown | unknown | unverified | n/a | `0x9b419fd36837558d8a3197a28a5e580ace44f64f` |
+| unverified unclassified | UnnamedContract<br>`0xcb7c7b5769ae10e048359752ff4274bc7db1819c` | non_address_book | unknown | unknown | unverified | n/a | `0x9b419fd36837558d8a3197a28a5e580ace44f64f` |
+| unverified unclassified | UnnamedContract<br>`0xf4fd45dd0047ddbb1e6b8c13d4696828d2531525` | non_address_book | unknown | unknown | unverified | n/a | `0x9b419fd36837558d8a3197a28a5e580ace44f64f` |
 
 ## Audit Inventory
 
@@ -330,27 +499,27 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| V1_Lending_LeastAuthority_2021-08.pdf | LoanCore | ambiguous — not counted | 0x59e57f… (alternative) `0x59e57f9a313a2eb1c7357ecc331ddca14209f403` — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x81b2f8fc75bab64a6b144aa6d2faa127b4fa7fd9` — deployed 2022-06-28 21:28:13+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| V1_Lending_LeastAuthority_2021-08.pdf | OriginationController | ambiguous — not counted | 0x0585a6… (alternative) `0x0585a675029c68a6af41ba1350bc8172d6172320` — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x4c52ca29388a8a854095fd2beb83191d68dc840b` — deployed 2022-06-28 21:30:10+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| V1_Lending_LeastAuthority_2021-08.pdf | LoanCore | ambiguous — not counted | 0x59e57f… (alternative) `0x59e57f9a313a2eb1c7357ecc331ddca14209f403` — deployed 2021-08-31 00:34:45+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x81b2f8fc75bab64a6b144aa6d2faa127b4fa7fd9` — deployed 2022-06-28 21:28:13+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| V1_Lending_LeastAuthority_2021-08.pdf | OriginationController | ambiguous — not counted | 0x0585a6… (alternative) `0x0585a675029c68a6af41ba1350bc8172d6172320` — deployed 2021-08-31 01:15:49+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x4c52ca29388a8a854095fd2beb83191d68dc840b` — deployed 2022-06-28 21:30:10+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | V1_Lending_LeastAuthority_2021-08.pdf | ERC721Permit | unmatched — not counted | — | Mentioned in System Design section as examined. | no |
 | V1_Lending_LeastAuthority_2021-08.pdf | IPromissoryNote | unmatched — not counted | — | Mentioned in Suggestion 3 as a file with less comprehensive documentation. | no |
-| V1_Lending_Macro_2022-04.pdf | AssetWrapper | own contract | 0x1f563c… (selected) `0x1f563cdd688ad47b75e474fde74e87c643d129b7` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| V1_Lending_Macro_2022-04.pdf | AssetWrapper | own contract | 0x1f563c… (selected) `0x1f563cdd688ad47b75e474fde74e87c643d129b7` — deployed 2021-07-17 00:05:49+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | V1_Lending_Macro_2022-04.pdf | FeeController | own contract | FeeController (selected) `0x41e538817c3311ed032653bee5487a113f8cff9f` — deployed 2022-06-28 21:26:21+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| V1_Lending_Macro_2022-04.pdf | LoanCore | ambiguous — not counted | 0x59e57f… (alternative) `0x59e57f9a313a2eb1c7357ecc331ddca14209f403` — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x81b2f8fc75bab64a6b144aa6d2faa127b4fa7fd9` — deployed 2022-06-28 21:28:13+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| V1_Lending_Macro_2022-04.pdf | LoanCore | ambiguous — not counted | 0x59e57f… (alternative) `0x59e57f9a313a2eb1c7357ecc331ddca14209f403` — deployed 2021-08-31 00:34:45+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x81b2f8fc75bab64a6b144aa6d2faa127b4fa7fd9` — deployed 2022-06-28 21:28:13+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | V1_Lending_Macro_2022-04.pdf | FlashRollover | own contract | FlashRollover (selected) `0x24611fad669350ca869fbed4b62877d1a409da12` — deployed 2021-11-24 11:41:55+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| V1_Lending_Macro_2022-04.pdf | OriginationController | ambiguous — not counted | 0x0585a6… (alternative) `0x0585a675029c68a6af41ba1350bc8172d6172320` — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x4c52ca29388a8a854095fd2beb83191d68dc840b` — deployed 2022-06-28 21:30:10+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| V1_Lending_Macro_2022-04.pdf | RepaymentController | ambiguous — not counted | 0x945aff… (alternative) `0x945aff9253c840401166c3d24ff78180fe0a05df` — liveness: live (current_address_book_code)<br>RepaymentController (alternative) `0xb39dab85fa05c381767ff992ccde4c94619993d4` — deployed 2022-06-28 21:28:43+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| V1_Lending_Macro_2022-04.pdf | OriginationController | ambiguous — not counted | 0x0585a6… (alternative) `0x0585a675029c68a6af41ba1350bc8172d6172320` — deployed 2021-08-31 01:15:49+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x4c52ca29388a8a854095fd2beb83191d68dc840b` — deployed 2022-06-28 21:30:10+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| V1_Lending_Macro_2022-04.pdf | RepaymentController | ambiguous — not counted | 0x945aff… (alternative) `0x945aff9253c840401166c3d24ff78180fe0a05df` — deployed 2021-08-31 01:12:25+03 — liveness: live (current_address_book_code)<br>RepaymentController (alternative) `0xb39dab85fa05c381767ff992ccde4c94619993d4` — deployed 2022-06-28 21:28:43+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | V1_Lending_Macro_2022-04.pdf | PromissoryNote | ambiguous — not counted | PromissoryNote (alternative) `0x349a026a43ffa8e2ab4c4e59fcaa93f87bd8ddee` — deployed 2022-06-28 21:27:23+03 — liveness: live (current_address_book_code)<br>PromissoryNote (alternative) `0x337104a4f06260ff327d6734c555a0f5d8f863aa` — deployed 2022-06-28 21:26:57+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| V1_Lending_Macro_2022-04.pdf | PunkRouter | own contract | 0x24ec19… (selected) `0x24ec19f05fc4a29d49617e1221ce7dc8a1ed5a3d` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| V2_Lending_Quantstamp_2022_06.pdf | OriginationController | ambiguous — not counted | 0x0585a6… (alternative) `0x0585a675029c68a6af41ba1350bc8172d6172320` — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x4c52ca29388a8a854095fd2beb83191d68dc840b` — deployed 2022-06-28 21:30:10+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| V2_Lending_Quantstamp_2022_06.pdf | LoanCore | ambiguous — not counted | 0x59e57f… (alternative) `0x59e57f9a313a2eb1c7357ecc331ddca14209f403` — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x81b2f8fc75bab64a6b144aa6d2faa127b4fa7fd9` — deployed 2022-06-28 21:28:13+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| V1_Lending_Macro_2022-04.pdf | PunkRouter | own contract | 0x24ec19… (selected) `0x24ec19f05fc4a29d49617e1221ce7dc8a1ed5a3d` — deployed 2021-08-31 01:17:09+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| V2_Lending_Quantstamp_2022_06.pdf | OriginationController | ambiguous — not counted | 0x0585a6… (alternative) `0x0585a675029c68a6af41ba1350bc8172d6172320` — deployed 2021-08-31 01:15:49+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x4c52ca29388a8a854095fd2beb83191d68dc840b` — deployed 2022-06-28 21:30:10+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| V2_Lending_Quantstamp_2022_06.pdf | LoanCore | ambiguous — not counted | 0x59e57f… (alternative) `0x59e57f9a313a2eb1c7357ecc331ddca14209f403` — deployed 2021-08-31 00:34:45+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x81b2f8fc75bab64a6b144aa6d2faa127b4fa7fd9` — deployed 2022-06-28 21:28:13+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | V2_Lending_Quantstamp_2022_06.pdf | FeeController | own contract | FeeController (selected) `0x41e538817c3311ed032653bee5487a113f8cff9f` — deployed 2022-06-28 21:26:21+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| V2_Lending_Quantstamp_2022_06.pdf | RepaymentController | ambiguous — not counted | 0x945aff… (alternative) `0x945aff9253c840401166c3d24ff78180fe0a05df` — liveness: live (current_address_book_code)<br>RepaymentController (alternative) `0xb39dab85fa05c381767ff992ccde4c94619993d4` — deployed 2022-06-28 21:28:43+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| V2_Lending_Quantstamp_2022_06.pdf | RepaymentController | ambiguous — not counted | 0x945aff… (alternative) `0x945aff9253c840401166c3d24ff78180fe0a05df` — deployed 2021-08-31 01:12:25+03 — liveness: live (current_address_book_code)<br>RepaymentController (alternative) `0xb39dab85fa05c381767ff992ccde4c94619993d4` — deployed 2022-06-28 21:28:43+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | V2_Lending_Quantstamp_2022_06.pdf | ERC721Permit | unmatched — not counted | — | listed in scope table | no |
 | V2_Lending_Quantstamp_2022_06.pdf | ERC721PermitUpgradeable | unmatched — not counted | — | listed in scope table | no |
 | V2_Lending_Quantstamp_2022_06.pdf | PromissoryNote | ambiguous — not counted | PromissoryNote (alternative) `0x349a026a43ffa8e2ab4c4e59fcaa93f87bd8ddee` — deployed 2022-06-28 21:27:23+03 — liveness: live (current_address_book_code)<br>PromissoryNote (alternative) `0x337104a4f06260ff327d6734c555a0f5d8f863aa` — deployed 2022-06-28 21:26:57+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | V2_Lending_Quantstamp_2022_06.pdf | InstallmentsCalc | unmatched — not counted | — | listed in scope table | no |
-| V2_Lending_Quantstamp_2022_06.pdf | PunkRouter | own contract | 0x24ec19… (selected) `0x24ec19f05fc4a29d49617e1221ce7dc8a1ed5a3d` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| V2_Lending_Quantstamp_2022_06.pdf | PunkRouter | own contract | 0x24ec19… (selected) `0x24ec19f05fc4a29d49617e1221ce7dc8a1ed5a3d` — deployed 2021-08-31 01:17:09+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | V2_Lending_Quantstamp_2022_06.pdf | ICallWhitelist | unmatched — not counted | — | listed in scope table | no |
 | V2_Lending_Quantstamp_2022_06.pdf | IFeeController | unmatched — not counted | — | listed in scope table | no |
 | V2_Lending_Quantstamp_2022_06.pdf | IERC721Permit | unmatched — not counted | — | listed in scope table | no |
@@ -395,10 +564,10 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | V2_Lending_Roku_2022_06.pdf | AssetVault | own contract | AssetVault (alternative) `0x833835fe565008fa66fff31156b78a1fd710bcb5` — deployed 2022-12-07 00:17:23+03 — liveness: live (current_address_book_code)<br>AssetVault (selected) `0xd898456e39a461b102ce4626aac191582c38acb6` — deployed 2022-06-28 21:25:34+03 — liveness: live (current_address_book_code) | deployment-date disambiguation: 2022-06-28 was 26d from audit; next candidate 188d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | V2_Lending_Roku_2022_06.pdf | CallWhitelist | own contract | CallWhitelist (selected) `0xb4496f9798cebd003c5d5a956b5b8f3933178c82` — deployed 2022-06-28 21:24:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | V2_Lending_Roku_2022_06.pdf | FeeCollector | unmatched — not counted | — | mentioned in L-2 | no |
-| V2_Lending_Roku_2022_06.pdf | LoanCore | ambiguous — not counted | 0x59e57f… (alternative) `0x59e57f9a313a2eb1c7357ecc331ddca14209f403` — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x81b2f8fc75bab64a6b144aa6d2faa127b4fa7fd9` — deployed 2022-06-28 21:28:13+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| V2_Lending_Roku_2022_06.pdf | OriginationController | ambiguous — not counted | 0x0585a6… (alternative) `0x0585a675029c68a6af41ba1350bc8172d6172320` — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x4c52ca29388a8a854095fd2beb83191d68dc840b` — deployed 2022-06-28 21:30:10+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| V2_Lending_Roku_2022_06.pdf | PunkRouter | own contract | 0x24ec19… (selected) `0x24ec19f05fc4a29d49617e1221ce7dc8a1ed5a3d` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| V2_Lending_Roku_2022_06.pdf | RepaymentController | ambiguous — not counted | 0x945aff… (alternative) `0x945aff9253c840401166c3d24ff78180fe0a05df` — liveness: live (current_address_book_code)<br>RepaymentController (alternative) `0xb39dab85fa05c381767ff992ccde4c94619993d4` — deployed 2022-06-28 21:28:43+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| V2_Lending_Roku_2022_06.pdf | LoanCore | ambiguous — not counted | 0x59e57f… (alternative) `0x59e57f9a313a2eb1c7357ecc331ddca14209f403` — deployed 2021-08-31 00:34:45+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x81b2f8fc75bab64a6b144aa6d2faa127b4fa7fd9` — deployed 2022-06-28 21:28:13+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| V2_Lending_Roku_2022_06.pdf | OriginationController | ambiguous — not counted | 0x0585a6… (alternative) `0x0585a675029c68a6af41ba1350bc8172d6172320` — deployed 2021-08-31 01:15:49+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x4c52ca29388a8a854095fd2beb83191d68dc840b` — deployed 2022-06-28 21:30:10+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| V2_Lending_Roku_2022_06.pdf | PunkRouter | own contract | 0x24ec19… (selected) `0x24ec19f05fc4a29d49617e1221ce7dc8a1ed5a3d` — deployed 2021-08-31 01:17:09+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| V2_Lending_Roku_2022_06.pdf | RepaymentController | ambiguous — not counted | 0x945aff… (alternative) `0x945aff9253c840401166c3d24ff78180fe0a05df` — deployed 2021-08-31 01:12:25+03 — liveness: live (current_address_book_code)<br>RepaymentController (alternative) `0xb39dab85fa05c381767ff992ccde4c94619993d4` — deployed 2022-06-28 21:28:43+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | V2_Lending_Roku_2022_06.pdf | VaultFactory | ambiguous — not counted | ERC1967Proxy (proxy) (alternative) `0x666faa632e5f7ba20a7fce36596a6736f87133be` — deployed 2022-12-07 00:18:11+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x6e9b4c2f6bd57b7b924d29b5dcfca1273ecc94a2` — deployed 2022-06-28 21:26:05+03 — liveness: live (code_present_context)<br>VaultFactory (alternative) `0x21b346622e607fcc936a320d3ab8224fb36b3c0c` — deployed 2022-06-28 21:25:55+03 — liveness: live (proxy_unit_reachable)<br>VaultFactory (alternative) `0x371e4f7698760caac721989e5f1af72b7d6c596f` — deployed 2022-12-07 00:17:59+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | V3_Lending_Omniscia_2023-08.pdf | AssetVault | ambiguous — not counted | AssetVault (alternative) `0x833835fe565008fa66fff31156b78a1fd710bcb5` — deployed 2022-12-07 00:17:23+03 — liveness: live (current_address_book_code)<br>AssetVault (alternative) `0xd898456e39a461b102ce4626aac191582c38acb6` — deployed 2022-06-28 21:25:34+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | V3_Lending_Omniscia_2023-08.pdf | ArtBlocksVerifier | unmatched — not counted | — | listed in scope | no |
@@ -415,19 +584,19 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | V3_Lending_Omniscia_2023-08.pdf | FeeController | own contract | FeeController (selected) `0x41e538817c3311ed032653bee5487a113f8cff9f` — deployed 2022-06-28 21:26:21+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | V3_Lending_Omniscia_2023-08.pdf | InterestCalculator | unmatched — not counted | — | listed in scope | no |
 | V3_Lending_Omniscia_2023-08.pdf | Lending | unmatched — not counted | — | listed in scope | no |
-| V3_Lending_Omniscia_2023-08.pdf | LoanCore | ambiguous — not counted | 0x59e57f… (alternative) `0x59e57f9a313a2eb1c7357ecc331ddca14209f403` — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x81b2f8fc75bab64a6b144aa6d2faa127b4fa7fd9` — deployed 2022-06-28 21:28:13+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| V3_Lending_Omniscia_2023-08.pdf | LoanCore | ambiguous — not counted | 0x59e57f… (alternative) `0x59e57f9a313a2eb1c7357ecc331ddca14209f403` — deployed 2021-08-31 00:34:45+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x81b2f8fc75bab64a6b144aa6d2faa127b4fa7fd9` — deployed 2022-06-28 21:28:13+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | V3_Lending_Omniscia_2023-08.pdf | LoanLibrary | unmatched — not counted | — | listed in scope | no |
 | V3_Lending_Omniscia_2023-08.pdf | OwnableERC721 | unmatched — not counted | — | listed in scope | no |
-| V3_Lending_Omniscia_2023-08.pdf | OriginationController | ambiguous — not counted | 0x0585a6… (alternative) `0x0585a675029c68a6af41ba1350bc8172d6172320` — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x4c52ca29388a8a854095fd2beb83191d68dc840b` — deployed 2022-06-28 21:30:10+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| V3_Lending_Omniscia_2023-08.pdf | OriginationController | ambiguous — not counted | 0x0585a6… (alternative) `0x0585a675029c68a6af41ba1350bc8172d6172320` — deployed 2021-08-31 01:15:49+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x4c52ca29388a8a854095fd2beb83191d68dc840b` — deployed 2022-06-28 21:30:10+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | V3_Lending_Omniscia_2023-08.pdf | PunksVerifier | own contract | PunksVerifier (selected) `0x16d99ec34aa91162d71c84bcbe7a7ead5908b8e2` — deployed 2022-08-02 20:44:58+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | V3_Lending_Omniscia_2023-08.pdf | PromissoryNote | ambiguous — not counted | PromissoryNote (alternative) `0x349a026a43ffa8e2ab4c4e59fcaa93f87bd8ddee` — deployed 2022-06-28 21:27:23+03 — liveness: live (current_address_book_code)<br>PromissoryNote (alternative) `0x337104a4f06260ff327d6734c555a0f5d8f863aa` — deployed 2022-06-28 21:26:57+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| V3_Lending_Omniscia_2023-08.pdf | RepaymentController | ambiguous — not counted | 0x945aff… (alternative) `0x945aff9253c840401166c3d24ff78180fe0a05df` — liveness: live (current_address_book_code)<br>RepaymentController (alternative) `0xb39dab85fa05c381767ff992ccde4c94619993d4` — deployed 2022-06-28 21:28:43+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| V3_Lending_Omniscia_2023-08.pdf | RepaymentController | ambiguous — not counted | 0x945aff… (alternative) `0x945aff9253c840401166c3d24ff78180fe0a05df` — deployed 2021-08-31 01:12:25+03 — liveness: live (current_address_book_code)<br>RepaymentController (alternative) `0xb39dab85fa05c381767ff992ccde4c94619993d4` — deployed 2022-06-28 21:28:43+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | V3_Lending_Omniscia_2023-08.pdf | UnvaultedItemsVerifier | unmatched — not counted | — | listed in scope | no |
 | V3_Lending_Omniscia_2023-08.pdf | Vault | unmatched — not counted | — | listed in scope | no |
 | V3_Lending_Omniscia_2023-08.pdf | VaultFactory | ambiguous — not counted | ERC1967Proxy (proxy) (alternative) `0x666faa632e5f7ba20a7fce36596a6736f87133be` — deployed 2022-12-07 00:18:11+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x6e9b4c2f6bd57b7b924d29b5dcfca1273ecc94a2` — deployed 2022-06-28 21:26:05+03 — liveness: live (code_present_context)<br>VaultFactory (alternative) `0x21b346622e607fcc936a320d3ab8224fb36b3c0c` — deployed 2022-06-28 21:25:55+03 — liveness: live (proxy_unit_reachable)<br>VaultFactory (alternative) `0x371e4f7698760caac721989e5f1af72b7d6c596f` — deployed 2022-12-07 00:17:59+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| V3_Lending_TrailOfBits_2023-07.pdf | LoanCore | ambiguous — not counted | 0x59e57f… (alternative) `0x59e57f9a313a2eb1c7357ecc331ddca14209f403` — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x81b2f8fc75bab64a6b144aa6d2faa127b4fa7fd9` — deployed 2022-06-28 21:28:13+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| V3_Lending_TrailOfBits_2023-07.pdf | OriginationController | ambiguous — not counted | 0x0585a6… (alternative) `0x0585a675029c68a6af41ba1350bc8172d6172320` — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x4c52ca29388a8a854095fd2beb83191d68dc840b` — deployed 2022-06-28 21:30:10+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| V3_Lending_TrailOfBits_2023-07.pdf | RepaymentController | ambiguous — not counted | 0x945aff… (alternative) `0x945aff9253c840401166c3d24ff78180fe0a05df` — liveness: live (current_address_book_code)<br>RepaymentController (alternative) `0xb39dab85fa05c381767ff992ccde4c94619993d4` — deployed 2022-06-28 21:28:43+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| V3_Lending_TrailOfBits_2023-07.pdf | LoanCore | ambiguous — not counted | 0x59e57f… (alternative) `0x59e57f9a313a2eb1c7357ecc331ddca14209f403` — deployed 2021-08-31 00:34:45+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x81b2f8fc75bab64a6b144aa6d2faa127b4fa7fd9` — deployed 2022-06-28 21:28:13+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| V3_Lending_TrailOfBits_2023-07.pdf | OriginationController | ambiguous — not counted | 0x0585a6… (alternative) `0x0585a675029c68a6af41ba1350bc8172d6172320` — deployed 2021-08-31 01:15:49+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x4c52ca29388a8a854095fd2beb83191d68dc840b` — deployed 2022-06-28 21:30:10+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| V3_Lending_TrailOfBits_2023-07.pdf | RepaymentController | ambiguous — not counted | 0x945aff… (alternative) `0x945aff9253c840401166c3d24ff78180fe0a05df` — deployed 2021-08-31 01:12:25+03 — liveness: live (current_address_book_code)<br>RepaymentController (alternative) `0xb39dab85fa05c381767ff992ccde4c94619993d4` — deployed 2022-06-28 21:28:43+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | V3_Lending_TrailOfBits_2023-07.pdf | FeeController | own contract | FeeController (selected) `0x41e538817c3311ed032653bee5487a113f8cff9f` — deployed 2022-06-28 21:26:21+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | V3_Lending_TrailOfBits_2023-07.pdf | PromissoryNote | ambiguous — not counted | PromissoryNote (alternative) `0x349a026a43ffa8e2ab4c4e59fcaa93f87bd8ddee` — deployed 2022-06-28 21:27:23+03 — liveness: live (current_address_book_code)<br>PromissoryNote (alternative) `0x337104a4f06260ff327d6734c555a0f5d8f863aa` — deployed 2022-06-28 21:26:57+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | V3_Lending_TrailOfBits_2023-07.pdf | VaultFactory | ambiguous — not counted | ERC1967Proxy (proxy) (alternative) `0x666faa632e5f7ba20a7fce36596a6736f87133be` — deployed 2022-12-07 00:18:11+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x6e9b4c2f6bd57b7b924d29b5dcfca1273ecc94a2` — deployed 2022-06-28 21:26:05+03 — liveness: live (code_present_context)<br>VaultFactory (alternative) `0x21b346622e607fcc936a320d3ab8224fb36b3c0c` — deployed 2022-06-28 21:25:55+03 — liveness: live (proxy_unit_reachable)<br>VaultFactory (alternative) `0x371e4f7698760caac721989e5f1af72b7d6c596f` — deployed 2022-12-07 00:17:59+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | no |
@@ -446,12 +615,12 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | V3_Rollovers_Omniscia_2023-08.pdf | V2ToV3RolloverBase | unmatched — not counted | — | listed in scope table | no |
 | V3_Rollovers_Omniscia_2023-08.pdf | V2ToV3RolloverWithItems | unmatched — not counted | — | listed in scope table | no |
 | V4_Lending_Renascence_2024_02.pdf | OriginationControllerMigrate | unmatched — not counted | — | listed in scope and findings | no |
-| V4_Lending_Renascence_2024_02.pdf | LoanCore | ambiguous — not counted | 0x59e57f… (alternative) `0x59e57f9a313a2eb1c7357ecc331ddca14209f403` — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x81b2f8fc75bab64a6b144aa6d2faa127b4fa7fd9` — deployed 2022-06-28 21:28:13+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| V4_Lending_Renascence_2024_02.pdf | LoanCore | ambiguous — not counted | 0x59e57f… (alternative) `0x59e57f9a313a2eb1c7357ecc331ddca14209f403` — deployed 2021-08-31 00:34:45+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x81b2f8fc75bab64a6b144aa6d2faa127b4fa7fd9` — deployed 2022-06-28 21:28:13+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | V4_Lending_Renascence_2024_02.pdf | RefinanceController | unmatched — not counted | — | listed in scope and findings | no |
 | V4_Lending_Renascence_2024_02.pdf | InterestCalculator | unmatched — not counted | — | listed in scope and findings | no |
-| V4_Lending_Renascence_2024_02.pdf | RepaymentController | ambiguous — not counted | 0x945aff… (alternative) `0x945aff9253c840401166c3d24ff78180fe0a05df` — liveness: live (current_address_book_code)<br>RepaymentController (alternative) `0xb39dab85fa05c381767ff992ccde4c94619993d4` — deployed 2022-06-28 21:28:43+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| V4_Lending_Renascence_2024_02.pdf | RepaymentController | ambiguous — not counted | 0x945aff… (alternative) `0x945aff9253c840401166c3d24ff78180fe0a05df` — deployed 2021-08-31 01:12:25+03 — liveness: live (current_address_book_code)<br>RepaymentController (alternative) `0xb39dab85fa05c381767ff992ccde4c94619993d4` — deployed 2022-06-28 21:28:43+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | V4_Lending_Renascence_2024_02.pdf | OriginationCalculator | unmatched — not counted | — | listed in scope and findings | no |
-| V4_Lending_Renascence_2024_02.pdf | OriginationController | ambiguous — not counted | 0x0585a6… (alternative) `0x0585a675029c68a6af41ba1350bc8172d6172320` — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x4c52ca29388a8a854095fd2beb83191d68dc840b` — deployed 2022-06-28 21:30:10+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| V4_Lending_Renascence_2024_02.pdf | OriginationController | ambiguous — not counted | 0x0585a6… (alternative) `0x0585a675029c68a6af41ba1350bc8172d6172320` — deployed 2021-08-31 01:15:49+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x4c52ca29388a8a854095fd2beb83191d68dc840b` — deployed 2022-06-28 21:30:10+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | V4_Lending_Renascence_2024_02.pdf | OriginationConfiguration | unmatched — not counted | — | listed in scope and findings | no |
 | V4_Lending_Renascence_2024_02.pdf | OriginationLibrary | unmatched — not counted | — | listed in scope and findings | no |
 | V4_Lending_Renascence_2024_02.pdf | FeeController | own contract | FeeController (selected) `0x41e538817c3311ed032653bee5487a113f8cff9f` — deployed 2022-06-28 21:26:21+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
@@ -513,7 +682,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 70 |
 | upstream | 2 |
 | standard_library | 4 |
-| needs_review | 65 |
+| needs_review | 77 |
 
 ## Scope Matching Notes
 

@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Veno Finance (`veno-finance`)
 - Website: [https://veno.finance/](https://veno.finance/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: cronos, ethereum, zksync-era
 - Contract surface: 32 unique implementations (39 raw deployments)
 - Coverage basis: not assessable — No confirmed own live-verified denominator is available.
@@ -168,6 +168,35 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-260925 | `0xe75a17b4f5c4f844688d5670b684515d7c785e63` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-260926 | `0xe7895ed01a1a6aacf1c2e955af14e7cf612e7f9d` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-260928 | `0xfea4195be610c4dd1b25a97a1c1402333c404936` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 13
+- Live contracts: 0
+- Unknown liveness contracts: 13
+- Source-verified contracts: 12
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: candidate review=4, source verified unclassified=8, unverified unclassified=1
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| candidate review | ERC1967Proxy<br>`0x28ff2e4dd1b58efeb0fc138602a28d5ae81e44e2` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x65b5cfaad25c39063a248684da546cab1cc46cf5` |
+| candidate review | ERC1967Proxy<br>`0x76bf2d1e6dfda645c0c17440b17eccc181dfc351` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x65b5cfaad25c39063a248684da546cab1cc46cf5` |
+| candidate review | ERC1967Proxy<br>`0x8f6b0512e63a644631694178b83419fecd90762d` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x65b5cfaad25c39063a248684da546cab1cc46cf5` |
+| candidate review | ERC1967Proxy<br>`0xfa59075dfce274e028b58bddfcc3d709960f594a` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x65b5cfaad25c39063a248684da546cab1cc46cf5` |
+| source verified unclassified | BridgeMiddleware<br>`0x3766eb5f07dbc60d39a2059a9a29fd9b7d3c356d` | non_address_book | unknown | unknown | verified | n/a | `0x65b5cfaad25c39063a248684da546cab1cc46cf5` |
+| source verified unclassified | EthereumDeposit<br>`0xe8dd4838c47ebf87d8fdb63e7f6dd02c7432d2ac` | non_address_book | unknown | unknown | verified | n/a | `0x65b5cfaad25c39063a248684da546cab1cc46cf5` |
+| source verified unclassified | YbEth<br>`0xc0c23f557e0e9cc324e2817f26fffcca4952d6a2` | non_address_book | unknown | unknown | verified | n/a | `0x65b5cfaad25c39063a248684da546cab1cc46cf5` |
+| source verified unclassified | YbEthBridge<br>`0xded4dd6e03a7caa6278ee453be2c26363f50643d` | non_address_book | unknown | unknown | verified | n/a | `0x65b5cfaad25c39063a248684da546cab1cc46cf5` |
+| source verified unclassified | YbEthNft<br>`0x43df9d854d3fcb882847b9a638cabd06fe86d2c5` | non_address_book | unknown | unknown | verified | n/a | `0x65b5cfaad25c39063a248684da546cab1cc46cf5` |
+| source verified unclassified | YBUSD<br>`0xd501a4d2141799f3228c40af972df622c632b7ce` | non_address_book | unknown | unknown | verified | n/a | `0x65b5cfaad25c39063a248684da546cab1cc46cf5` |
+| source verified unclassified | YBUSDBridge<br>`0x17dacad8aa962963830136422e2eaa8d27d014f8` | non_address_book | unknown | unknown | verified | n/a | `0x65b5cfaad25c39063a248684da546cab1cc46cf5` |
+| source verified unclassified | ZkCro<br>`0x34b35bed5aced7c4472de906912acb3e4c4616a5` | non_address_book | unknown | unknown | verified | n/a | `0x65b5cfaad25c39063a248684da546cab1cc46cf5` |
+| unverified unclassified | UnnamedContract<br>`0x3fa18f870818b85002dd627617a7eda332d0daa2` | non_address_book | unknown | unknown | unverified | n/a | `0x65b5cfaad25c39063a248684da546cab1cc46cf5` |
 
 ## Audit Inventory
 

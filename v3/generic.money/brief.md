@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Generic.Money (`generic.money`)
 - Website: [https://www.generic.money/](https://www.generic.money/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: ethereum
 - Contract surface: 22 unique implementations (26 raw deployments)
 - Coverage basis: 6/14 confirmed own live verified implementations (42.9%); conservative 42.9% with 0 needs-review implementation(s)
@@ -49,7 +49,7 @@ The pinned logic-topography run contains 17 contract row(s) across ethereum. Str
 ### Forked Contracts
 
 **AggregationRouterV6** (`0x111111125421ca6dc452d289314280a0f8842a65`, chain 1)
-Origin: 1inch (`0x111111125421ca6dc452d289314280a0f8842a65`)
+Origin: 1inch (`0x111111...842a65`)
 Containment: 100.0% - 45 functions inherited
 Centroid audit status: pending_validation
 
@@ -160,6 +160,33 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 - None
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 11
+- Live contracts: 7
+- Unknown liveness contracts: 4
+- Source-verified contracts: 10
+- Currently scope-matched contracts retained as-is: 1
+- Classification counts: currently scope matched=1, candidate review=5, exact address book overlap=2, source verified unclassified=2, unverified unclassified=1
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| currently scope matched | TransparentUpgradeableProxy<br>`0x0503f2c5a1a4b72450c6cfa790f2097cf5cb6a01` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xe4964b24ccb6022a394d77c0d0d8de98db48966f` |
+| candidate review | ERC1967Proxy<br>`0x12dc0362553b3cd5141da3bebab0c7e51d1bd5b9` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xe4964b24ccb6022a394d77c0d0d8de98db48966f` |
+| candidate review | TransparentUpgradeableProxy<br>`0x3a64d23313e1beaaba25ec13149bd8d514c973ae` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xe4964b24ccb6022a394d77c0d0d8de98db48966f` |
+| candidate review | TransparentUpgradeableProxy<br>`0x6a7af858c40d9fcea728da11e836bdd410bc998b` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xe4964b24ccb6022a394d77c0d0d8de98db48966f` |
+| candidate review | TransparentUpgradeableProxy<br>`0xbcfafefeef2d4c2fe3f7e23cfa22b5f05a42b738` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xe4964b24ccb6022a394d77c0d0d8de98db48966f` |
+| candidate review | TransparentUpgradeableProxy<br>`0xece811d35f79c4868a2b911e55d9aa0821399edf` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xe4964b24ccb6022a394d77c0d0d8de98db48966f` |
+| exact address book overlap | Controller<br>`0xf056d4f903e53432873bfd0da32f9d6fcb92825c` | project_anchor | unknown | live | verified | n/a | `0xe4964b24ccb6022a394d77c0d0d8de98db48966f` |
+| exact address book overlap | GenericUSD<br>`0xac8c1aeb584765db16ac3e08d4736cfce198589b` | project_anchor | unknown | live | verified | n/a | `0xe4964b24ccb6022a394d77c0d0d8de98db48966f` |
+| source verified unclassified | BridgeCoordinatorL1<br>`0xcecf6e42f9aa38cb50dc6a0c3f279cd457d056b9` | retained_scope_excluded_inventory | unknown | live | verified | n/a | `0xe4964b24ccb6022a394d77c0d0d8de98db48966f` |
+| source verified unclassified | GenericUSD<br>`0x933e1a38386d96a8e418d3d93b7f376e5bfeacc0` | retained_scope_excluded_inventory | unknown | live | verified | n/a | `0xe4964b24ccb6022a394d77c0d0d8de98db48966f` |
+| unverified unclassified | UnnamedContract<br>`0x17a8b3637377a2eb934ff65e5c2ec511b1383562` | non_address_book | unknown | unknown | unverified | n/a | `0xe4964b24ccb6022a394d77c0d0d8de98db48966f` |
 
 ## Audit Inventory
 

@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: foxify (`foxify`)
 - Website: [https://www.foxify.trade/](https://www.foxify.trade/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: arbitrum, sonic
 - Contract surface: 8 unique implementations (11 raw deployments)
 - Coverage basis: 0/1 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
@@ -130,6 +130,30 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---:|---|---|---|---|
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x91fb98c2ff10b0378890e07dc4a6496624a9287f` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xc23ce59e5ac45d96fc41db3e133ee3232c0b2779` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 8
+- Live contracts: 0
+- Unknown liveness contracts: 8
+- Source-verified contracts: 6
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: source verified unclassified=6, unverified unclassified=2
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| source verified unclassified | SFOX<br>`0x8725bc25a94bcec8ef1f47bb8e9c22e343f97d8e` | non_address_book | unknown | unknown | verified | n/a | `0x890e99ce89baeacb03df24789c52bef5f3dc6fc2` |
+| source verified unclassified | TransparentUpgradeableProxy<br>`0x62e15748e3a28082efd8f51b1a7b56eb0b004808` | non_address_book | unknown | unknown | verified | n/a | `0x890e99ce89baeacb03df24789c52bef5f3dc6fc2` |
+| source verified unclassified | TransparentUpgradeableProxy<br>`0xc24d387e68ece6c26e6f551e119af4e18f33a54f` | non_address_book | unknown | unknown | verified | n/a | `0x890e99ce89baeacb03df24789c52bef5f3dc6fc2` |
+| source verified unclassified | TransparentUpgradeableProxy<br>`0xc64ca64f35e919c6b469be16f4f0ea24a621c322` | non_address_book | unknown | unknown | verified | n/a | `0x890e99ce89baeacb03df24789c52bef5f3dc6fc2` |
+| source verified unclassified | Vault<br>`0xca2dfb842f0c5158bb57296a243813e37058850d` | non_address_book | unknown | unknown | verified | n/a | `0x890e99ce89baeacb03df24789c52bef5f3dc6fc2` |
+| source verified unclassified | Vault<br>`0xf9eb7e3dc07e9cbabc462db13d73da931b07e0db` | non_address_book | unknown | unknown | verified | n/a | `0x890e99ce89baeacb03df24789c52bef5f3dc6fc2` |
+| unverified unclassified | UnnamedContract<br>`0x91fb98c2ff10b0378890e07dc4a6496624a9287f` | non_address_book | unknown | unknown | unverified | n/a | `0x8507d7c673219760d0c5300d86484590e69c5bcc` |
+| unverified unclassified | UnnamedContract<br>`0xc23ce59e5ac45d96fc41db3e133ee3232c0b2779` | non_address_book | unknown | unknown | unverified | n/a | `0x8507d7c673219760d0c5300d86484590e69c5bcc` |
 
 ## Audit Inventory
 

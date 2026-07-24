@@ -1,7 +1,7 @@
 {
   "schema_version": "3.0",
   "project_key": "swell",
-  "generated_at": "2026-07-15T18:30:00.000Z",
+  "generated_at": "2026-07-24T14:10:00.000Z",
   "authority": {
     "activation_id": "scope-prod-20260715-v1",
     "production_closure_sha256": "38a124a34bf27378c85726318ca5f9408641faecd45c04ee5b82ad07a65cbc83",
@@ -13,7 +13,7 @@
     "liveness_closure_sha256": "e1855078572b4a5868cbe2ff93c7ad47c89e29b1b8209e48161f110e31790ddd",
     "fork_detection_run_id": "fork-structural-canonical-production-20260712",
     "deployer_decision_run_id": "deployer-candidate-production-20260712",
-    "export_input_receipt_sha256": "e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd",
+    "export_input_receipt_sha256": "e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92",
     "canonical_network_policy": "offline_cache_only"
   },
   "production_state": {
@@ -28,7 +28,7 @@
   "missing_evidence": {
     "audit_dates": []
   },
-  "pipeline_run_id": "brief-generation-scope-prod-20260715-v1",
+  "pipeline_run_id": "brief-deployer-expansion-all-20260724-v1",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -151,6 +151,343 @@
       "openzeppelin-upgradeable": 6
     },
     "upgradeable_contracts": 6
+  },
+  "deployer_expansion_inventory": {
+    "source": "project_contracts.discovery_source=deployer_expansion",
+    "decision_run_id": "deployer-candidate-production-20260712",
+    "total_contracts": 15,
+    "live_contracts": 2,
+    "unknown_liveness_contracts": 13,
+    "source_verified_contracts": 15,
+    "currently_scope_matched_contracts": 1,
+    "classification_counts": {
+      "currently_scope_matched": 1,
+      "candidate_auto_own": 0,
+      "candidate_review": 6,
+      "candidate_hard_block": 0,
+      "contamination_review": 3,
+      "third_party_or_infra": 0,
+      "exact_address_book_overlap": 0,
+      "source_verified_unclassified": 5,
+      "unverified_unclassified": 0
+    },
+    "contracts": [
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x8041ba598f0e656ebe80c67289efb42c09e86ae3",
+        "name": "AeraStrategy",
+        "role": "unknown",
+        "liveness": "live",
+        "source_verified": true,
+        "is_proxy": true,
+        "implementation_address": "0x975304c676eb3dc86cd336138328e107a95eaa50",
+        "deployer_address": "0xaf994551f4f940224825f54f810ed5439651e5f9",
+        "deploy_date": "2024-08-13 02:44:35+03",
+        "contamination_flag": "suspect",
+        "has_exact_address_book_entry": true,
+        "address_book_inventory_class": "project_anchor",
+        "scope_inventory_class": "project_anchor",
+        "classification": "currently_scope_matched",
+        "classification_reason": "Selected by the activated scope authority; retained unchanged in current scope output.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x1bb44f9d91b4276621550aeea5d2d96279975bf3",
+        "name": "RoleManager",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xaf994551f4f940224825f54f810ed5439651e5f9",
+        "deploy_date": "2024-08-13 01:35:11+03",
+        "contamination_flag": "review",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "candidate_review",
+        "classification_reason": "missing_independent_ownership_evidence",
+        "deployer_decision": "review",
+        "deployer_decision_reason": "missing_independent_ownership_evidence"
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x8413e65374fca711af5eaddcf7191461a1f4d6af",
+        "name": "RoleManager",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xaf994551f4f940224825f54f810ed5439651e5f9",
+        "deploy_date": "2024-08-14 16:29:23+03",
+        "contamination_flag": "review",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "candidate_review",
+        "classification_reason": "missing_independent_ownership_evidence",
+        "deployer_decision": "review",
+        "deployer_decision_reason": "missing_independent_ownership_evidence"
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0xd905418c46d8141dd80ba065e694abd4dfd5b4a1",
+        "name": "RoleManager",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xaf994551f4f940224825f54f810ed5439651e5f9",
+        "deploy_date": "2024-08-13 18:49:59+03",
+        "contamination_flag": "review",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "candidate_review",
+        "classification_reason": "missing_independent_ownership_evidence",
+        "deployer_decision": "review",
+        "deployer_decision_reason": "missing_independent_ownership_evidence"
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x2a6a2beebf6d65e03246087a41812db1c5c0caf8",
+        "name": "TransparentUpgradeableProxy",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": true,
+        "implementation_address": "0xd684c1ad18a302bc56069d91a177d69966c41eda",
+        "deployer_address": "0xaf994551f4f940224825f54f810ed5439651e5f9",
+        "deploy_date": "2025-01-20 09:34:47+03",
+        "contamination_flag": "review",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "candidate_review",
+        "classification_reason": "no_fresh_structural_match",
+        "deployer_decision": "review",
+        "deployer_decision_reason": "no_fresh_structural_match"
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x69dda92dd42040c1290a7870b9fc1dc05e41836a",
+        "name": "TransparentUpgradeableProxy",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": true,
+        "implementation_address": "0xd684c1ad18a302bc56069d91a177d69966c41eda",
+        "deployer_address": "0xaf994551f4f940224825f54f810ed5439651e5f9",
+        "deploy_date": "2025-01-20 11:29:47+03",
+        "contamination_flag": "review",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "candidate_review",
+        "classification_reason": "no_fresh_structural_match",
+        "deployer_decision": "review",
+        "deployer_decision_reason": "no_fresh_structural_match"
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x9e07af58c4c8893b0509e5d6d0ab8c92083fdae7",
+        "name": "TransparentUpgradeableProxy",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": true,
+        "implementation_address": "0xd684c1ad18a302bc56069d91a177d69966c41eda",
+        "deployer_address": "0xaf994551f4f940224825f54f810ed5439651e5f9",
+        "deploy_date": "2025-01-20 11:38:47+03",
+        "contamination_flag": "review",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "candidate_review",
+        "classification_reason": "no_fresh_structural_match",
+        "deployer_decision": "review",
+        "deployer_decision_reason": "no_fresh_structural_match"
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x473f0adec308dc82440665d9fc7d5e26ebcf0e05",
+        "name": "AeraStrategy",
+        "role": "unknown",
+        "liveness": "live",
+        "source_verified": true,
+        "is_proxy": true,
+        "implementation_address": "0xbb51273d6c746910c7c06fe718f30c936170fed0",
+        "deployer_address": "0xaf994551f4f940224825f54f810ed5439651e5f9",
+        "deploy_date": "2024-09-20 10:38:59+03",
+        "contamination_flag": "suspect",
+        "has_exact_address_book_entry": true,
+        "address_book_inventory_class": "project_anchor",
+        "scope_inventory_class": "project_anchor",
+        "classification": "contamination_review",
+        "classification_reason": "Project contract contamination flag is suspect.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0xa419026809e2d13bc73dee13992e7873ab605981",
+        "name": "OracleAdapter",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xaf994551f4f940224825f54f810ed5439651e5f9",
+        "deploy_date": "2024-09-19 00:49:11+03",
+        "contamination_flag": "suspect",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "contamination_review",
+        "classification_reason": "Project contract contamination flag is suspect.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0xecf3376512edaca4fbb63d2c67d12a0397d24121",
+        "name": "OssifiableProxy",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": true,
+        "implementation_address": "0x7e97935fbdf2a27ea35c4fdddacf5acd685e65a2",
+        "deployer_address": "0xaf994551f4f940224825f54f810ed5439651e5f9",
+        "deploy_date": "2024-12-13 18:09:35+03",
+        "contamination_flag": "suspect",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "contamination_review",
+        "classification_reason": "Project contract contamination flag is suspect.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0xec6de7031ce1a284d13b551ef8c4c04b6fdf773c",
+        "name": "DelayedWithdraw",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xaf994551f4f940224825f54f810ed5439651e5f9",
+        "deploy_date": "2024-10-31 12:13:11+03",
+        "contamination_flag": "cleared",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "source_verified_unclassified",
+        "classification_reason": "Source is verified, but no stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x7e97935fbdf2a27ea35c4fdddacf5acd685e65a2",
+        "name": "L1ERC20TokenBridge",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xaf994551f4f940224825f54f810ed5439651e5f9",
+        "deploy_date": "2024-12-13 18:09:11+03",
+        "contamination_flag": "cleared",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "source_verified_unclassified",
+        "classification_reason": "Source is verified, but no stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x2c1b3426e557d6756d8a8859a0779373236f94e2",
+        "name": "OFTAdapterSwETH",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xaf994551f4f940224825f54f810ed5439651e5f9",
+        "deploy_date": "2024-12-17 19:47:59+03",
+        "contamination_flag": "cleared",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "source_verified_unclassified",
+        "classification_reason": "Source is verified, but no stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x2db7583852c700549b710fd79dd1b54af2efa4dd",
+        "name": "RolesAuthority",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xaf994551f4f940224825f54f810ed5439651e5f9",
+        "deploy_date": "2024-10-31 12:12:23+03",
+        "contamination_flag": "cleared",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "source_verified_unclassified",
+        "classification_reason": "Source is verified, but no stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      },
+      {
+        "chain_id": 1,
+        "chain_name": "ethereum",
+        "address": "0x428cda6c1994b926f75a4830d5baedee9db2ac58",
+        "name": "RSwellOFTAdapter",
+        "role": "unknown",
+        "liveness": "unknown",
+        "source_verified": true,
+        "is_proxy": false,
+        "implementation_address": null,
+        "deployer_address": "0xaf994551f4f940224825f54f810ed5439651e5f9",
+        "deploy_date": "2024-12-10 14:28:59+03",
+        "contamination_flag": "cleared",
+        "has_exact_address_book_entry": false,
+        "address_book_inventory_class": null,
+        "scope_inventory_class": "non_address_book",
+        "classification": "source_verified_unclassified",
+        "classification_reason": "Source is verified, but no stronger deployer/address-book classification is available.",
+        "deployer_decision": null,
+        "deployer_decision_reason": null
+      }
+    ]
   },
   "surface_sufficiency": {
     "unique_implementations": 29,
@@ -531,7 +868,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "audit_scope",
         "address_book_inventory_classes": [
           "project_anchor"
         ],
@@ -593,7 +930,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "audit_scope",
         "address_book_inventory_classes": [
           "project_anchor"
         ],
@@ -655,7 +992,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "audit_scope",
         "address_book_inventory_classes": [
           "project_anchor"
         ],
@@ -717,7 +1054,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "audit_scope",
         "address_book_inventory_classes": [
           "project_anchor"
         ],
@@ -1223,7 +1560,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "audit_scope",
         "address_book_inventory_classes": [
           "project_anchor"
         ],
@@ -1285,7 +1622,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "audit_scope",
         "address_book_inventory_classes": [
           "project_anchor"
         ],
@@ -2030,7 +2367,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "audit_scope",
         "address_book_inventory_classes": [
           "project_anchor"
         ],
@@ -2795,7 +3132,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "audit_scope",
         "address_book_inventory_classes": [
           "project_anchor"
         ],
@@ -2857,7 +3194,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "audit_scope",
         "address_book_inventory_classes": [
           "project_anchor"
         ],
@@ -2988,7 +3325,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": "2024-08-13 02:44:35+03",
+      "effective_deploy_date": "2024-08-13 01:39:35+03",
       "deploy_coverage_basis": "match_unverified"
     },
     {
@@ -3039,7 +3376,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [
           "project_anchor"
         ],
@@ -3050,7 +3387,7 @@
           "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
         ]
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-11-01 04:44:11+03",
       "deploy_coverage_basis": null
     },
     {
@@ -3101,7 +3438,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-01-26 06:41:23+03",
       "deploy_coverage_basis": null
     },
     {
@@ -8737,5 +9074,6 @@
     }
   },
   "active_bug_bounty": null,
+  "non_evm_deployments": null,
   "out_of_scope": null
 }

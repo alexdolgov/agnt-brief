@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Rubic (`rubic`)
 - Website: [https://app.rubic.exchange/](https://app.rubic.exchange/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: arbitrum, bsc, ethereum, kava, linea, zksync-era
-- Contract surface: 11 unique implementations (14 raw deployments)
+- Contract surface: 12 unique implementations (15 raw deployments)
 - Coverage basis: 0/5 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $127,060.51
 - On-chain TVL (included contracts): n/a
@@ -71,15 +71,15 @@ The activated project remains an explicit cohort member with an empty normalized
 - Coverage of address-book-owned deployed-live implementations: 0/5 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 5 own, 5 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 1 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 2 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 1
-- Confirmed-live implementations: 5 of 11 unique; 6 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 5 of 12 unique; 7 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 0/5
 - Verified + Unaudited implementations: 5
 - Verified by bytecode match: 0
-- Unverified implementations: 6
-- Unique implementations: 11
-- Raw deployments: 14
+- Unverified implementations: 7
+- Unique implementations: 12
+- Raw deployments: 15
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -120,7 +120,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (6)
+### ❓ Unverified (7)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -128,10 +128,28 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---:|---|---|---|---|
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-391749 | `0x3335733c454805df6a77f825f266e136fb4a3333` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-391750 | `0x6aa981bff95edfea36bdae98c26b274ffcafe8d3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | zksync-era | n/a | `0x0afb1c409c9193a51b1c2ad1f3f8c08e7028c0ab` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | zksync-era | unit-391751 | `0x8e70e517057e7380587ea6990dae81cb1ba405ce` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | zksync-era | unit-391752 | `0xa63c029612ddad00a269383ab016d1e7c14e851d` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | kava | n/a | 4 deployments: kava `0x3333b155fa21a972d179921718792f1036370333`; kava `0x8d9ae5a2ecc16a66740a53cc9080cce29a7fd9f5`; kava `0x8e3bcc334657560253b83f08331d85267316e08a`; kava `0xa96cdb86332b105065ca99432916e631e469cf5d` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | linea | unit-391756 | `0xaf14797ccf963b1e3d028a9d51853ace16aedba1` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 1
+- Live contracts: 0
+- Unknown liveness contracts: 1
+- Source-verified contracts: 0
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: unverified unclassified=1
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| unverified unclassified | UnnamedContract<br>`0x0afb1c409c9193a51b1c2ad1f3f8c08e7028c0ab` | non_address_book | unknown | unknown | unverified | n/a | `0x00009cc27c811a3e0fdd2fd737afcc721b67ee8e` |
 
 ## Audit Inventory
 
@@ -167,7 +185,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 11 |
+| needs_review | 12 |
 
 ## Scope Matching Notes
 

@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: LayerZero (`layerzero`)
 - Website: [https://layerzero.network/](https://layerzero.network/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: arbitrum, avalanche, base, berachain, blast, bsc, canto, celo, ethereum, fantom, fraxtal, gnosis, harmony, ink, kaia, kava, linea, manta-pacific, mantle, metis, mode, moonriver, opbnb, optimism, plasma, polygon, scroll, sei, sonic, swellchain, unichain, zksync-era
-- Contract surface: 10 unique implementations (10 raw deployments)
+- Contract surface: 17 unique implementations (17 raw deployments)
 - Coverage basis: 0/1 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $7,318,061,686.00
 - On-chain TVL (included contracts): n/a
@@ -74,15 +74,15 @@ The pinned logic-topography run contains 1 contract row(s) across arbitrum, base
 - Coverage of address-book-owned deployed-live implementations: 0/1 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 8 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 2 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 9 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Confirmed-live implementations: 8 of 10 unique; 2 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 8 of 17 unique; 9 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 0/3
 - Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
-- Unverified implementations: 7
-- Unique implementations: 10
-- Raw deployments: 10
+- Unverified implementations: 14
+- Unique implementations: 17
+- Raw deployments: 17
 - Audits discovered: 94 (94 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -121,7 +121,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (7)
+### ❓ Unverified (14)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -129,11 +129,41 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---:|---|---|---|---|
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-244536 | `0x72faebf58a62e33c044c37d8d973a961633ea294` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-244537 | `0xacddac6c77318b615f7f6fb9bb67c6833e9c05f1` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbf36f639bfc156c95476367a3c8ddba0ceae94b0` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf9f40b3754bb739fc053ab2f30b7d4cdf953fec3` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-244538 | `0x5528cf58feb8fbfce94f43b33240fffb1312bde3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x8e60b7b64b63cd56b18ebcecadcb79b04919286e` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-244539 | `0xfbea79d13e6f795a0e1e4b99090f1165a01c7b03` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-244542 | `0x7e07a9148e9149e430c6412b79a675028595ff1f` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-244543 | `0x8eca03175fd5ac62fb6f4ecbb9a95d13dcdcb4f8` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xeb1d02315b641b71b3d8e6488e5175250dba5667` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x5528cf58feb8fbfce94f43b33240fffb1312bde3` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-244541 | `0x8e60b7b64b63cd56b18ebcecadcb79b04919286e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xacddac6c77318b615f7f6fb9bb67c6833e9c05f1` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xbf36f639bfc156c95476367a3c8ddba0ceae94b0` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 7
+- Live contracts: 0
+- Unknown liveness contracts: 7
+- Source-verified contracts: 0
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: unverified unclassified=7
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| unverified unclassified | UnnamedContract<br>`0xbf36f639bfc156c95476367a3c8ddba0ceae94b0` | non_address_book | unknown | unknown | unverified | n/a | `0x4aa1925e0f1f9cf5ca6079ed09e7dd9ef03ac84c` |
+| unverified unclassified | UnnamedContract<br>`0xf9f40b3754bb739fc053ab2f30b7d4cdf953fec3` | non_address_book | unknown | unknown | unverified | n/a | `0x4aa1925e0f1f9cf5ca6079ed09e7dd9ef03ac84c` |
+| unverified unclassified | UnnamedContract<br>`0x8e60b7b64b63cd56b18ebcecadcb79b04919286e` | non_address_book | unknown | unknown | unverified | n/a | `0x4aa1925e0f1f9cf5ca6079ed09e7dd9ef03ac84c` |
+| unverified unclassified | UnnamedContract<br>`0xeb1d02315b641b71b3d8e6488e5175250dba5667` | non_address_book | unknown | unknown | unverified | n/a | `0x4aa1925e0f1f9cf5ca6079ed09e7dd9ef03ac84c` |
+| unverified unclassified | UnnamedContract<br>`0x5528cf58feb8fbfce94f43b33240fffb1312bde3` | non_address_book | unknown | unknown | unverified | n/a | `0x4aa1925e0f1f9cf5ca6079ed09e7dd9ef03ac84c` |
+| unverified unclassified | UnnamedContract<br>`0xacddac6c77318b615f7f6fb9bb67c6833e9c05f1` | non_address_book | unknown | unknown | unverified | n/a | `0x4aa1925e0f1f9cf5ca6079ed09e7dd9ef03ac84c` |
+| unverified unclassified | UnnamedContract<br>`0xbf36f639bfc156c95476367a3c8ddba0ceae94b0` | non_address_book | unknown | unknown | unverified | n/a | `0x4aa1925e0f1f9cf5ca6079ed09e7dd9ef03ac84c` |
 
 ## Audit Inventory
 
@@ -999,11 +1029,11 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | LZ-HyperLiquid-Fee-Activation_Paladin_13-Nov-2025.pdf | IPreFundedFeeAbstraction | unmatched — not counted | — | listed in Contracts Assessed section | no |
 | LZ-Multicall_OtterSec_Dec-30th-2025.pdf | LZMulticall | unmatched — not counted | — | Scope section: 'LZMulticall Account abstraction contract that enables gasless transactions through EIP-712 signatures and multicall functionality.' | no |
 | LZ-Multicall_Paladin_Jan-16th-2026.pdf | LZMultiCall | unmatched — not counted | — | listed in Contracts Assessed section | no |
-| LZ-Multicall_Paladin_Jan-16th-2026.pdf | TransferDelegate | ambiguous — not counted | 0xfbea79… (alternative) `0xfbea79d13e6f795a0e1e4b99090f1165a01c7b03` — liveness: live (current_address_book_code)<br>0x8eca03… (alternative) `0x8eca03175fd5ac62fb6f4ecbb9a95d13dcdcb4f8` — liveness: live (current_address_book_code)<br>0x72faeb… (alternative) `0x72faebf58a62e33c044c37d8d973a961633ea294` — liveness: live (current_address_book_code)<br>TransferDelegate (alternative) `0x60fccb9b58d5e806ca5cb8bfce721c2274609de4` — deployed 2026-01-22 22:40:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| LZ-Multicall_Paladin_Jan-16th-2026.pdf | TransferDelegate | ambiguous — not counted | 0xfbea79… (alternative) `0xfbea79d13e6f795a0e1e4b99090f1165a01c7b03` — deployed 2026-01-22 22:41:15+03 — liveness: live (current_address_book_code)<br>0x8eca03… (alternative) `0x8eca03175fd5ac62fb6f4ecbb9a95d13dcdcb4f8` — deployed 2026-01-22 22:40:39+03 — liveness: live (current_address_book_code)<br>0x72faeb… (alternative) `0x72faebf58a62e33c044c37d8d973a961633ea294` — deployed 2026-01-22 22:40:59+03 — liveness: live (current_address_book_code)<br>TransferDelegate (alternative) `0x60fccb9b58d5e806ca5cb8bfce721c2274609de4` — deployed 2026-01-22 22:40:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | LZ-Multicall_UNH-IOL_Jan-13th-2026.pdf | ILZMultiCall | unmatched — not counted | — | listed in scope | no |
 | LZ-Multicall_UNH-IOL_Jan-13th-2026.pdf | ITransferDelegate | unmatched — not counted | — | listed in scope | no |
 | LZ-Multicall_UNH-IOL_Jan-13th-2026.pdf | LZMultiCall | unmatched — not counted | — | listed in scope | no |
-| LZ-Multicall_UNH-IOL_Jan-13th-2026.pdf | TransferDelegate | ambiguous — not counted | 0xfbea79… (alternative) `0xfbea79d13e6f795a0e1e4b99090f1165a01c7b03` — liveness: live (current_address_book_code)<br>0x8eca03… (alternative) `0x8eca03175fd5ac62fb6f4ecbb9a95d13dcdcb4f8` — liveness: live (current_address_book_code)<br>0x72faeb… (alternative) `0x72faebf58a62e33c044c37d8d973a961633ea294` — liveness: live (current_address_book_code)<br>TransferDelegate (alternative) `0x60fccb9b58d5e806ca5cb8bfce721c2274609de4` — deployed 2026-01-22 22:40:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| LZ-Multicall_UNH-IOL_Jan-13th-2026.pdf | TransferDelegate | ambiguous — not counted | 0xfbea79… (alternative) `0xfbea79d13e6f795a0e1e4b99090f1165a01c7b03` — deployed 2026-01-22 22:41:15+03 — liveness: live (current_address_book_code)<br>0x8eca03… (alternative) `0x8eca03175fd5ac62fb6f4ecbb9a95d13dcdcb4f8` — deployed 2026-01-22 22:40:39+03 — liveness: live (current_address_book_code)<br>0x72faeb… (alternative) `0x72faebf58a62e33c044c37d8d973a961633ea294` — deployed 2026-01-22 22:40:59+03 — liveness: live (current_address_book_code)<br>TransferDelegate (alternative) `0x60fccb9b58d5e806ca5cb8bfce721c2274609de4` — deployed 2026-01-22 22:40:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | LZ-OApp&OFT_Zellic_Sep-23-2025.pdf | OApp | unmatched — not counted | — | Scope section lists 'LayerZero OApp & OFT Contracts' as target; report discusses OApp and OFT as the audited contracts. | no |
 | LZ-OApp&OFT_Zellic_Sep-23-2025.pdf | OFT | unmatched — not counted | — | Scope section lists 'LayerZero OApp & OFT Contracts' as target; report discusses OApp and OFT as the audited contracts. | no |
 | OApp&OFT-Zellic-12JUN2024.pdf | OApp | unmatched — not counted | — | listed in scope | no |
@@ -1102,7 +1132,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 3 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 7 |
+| needs_review | 14 |
 
 ## Scope Matching Notes
 

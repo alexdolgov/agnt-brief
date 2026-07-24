@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Lien (`lien`)
 - Website: [https://lien.finance/](https://lien.finance/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: ethereum
-- Contract surface: 14 unique implementations (14 raw deployments)
+- Contract surface: 28 unique implementations (28 raw deployments)
 - Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $132,464.21
 - On-chain TVL (included contracts): n/a
@@ -58,15 +58,15 @@ The activated project remains an explicit cohort member with an empty normalized
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - Address-book implementation classification: 0 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 14 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 28 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
 - Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
 - All block-explorer-verified implementations audited (incl. non-live): 0/14
 - Verified + Unaudited implementations: 14
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 14
-- Raw deployments: 14
+- Unverified implementations: 14
+- Unique implementations: 28
+- Raw deployments: 28
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -116,11 +116,56 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (14)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0541302b14b923c3c5f6e1377a4181790b3e6076` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x23604be26047cf57ef37e5b3a4f5c6f5c5c057b1` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2e823df11e1b031469d4927de04d0f050a64d696` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x32e85c00caf25f8217315d711e026f4dbaa45e31` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4600fa6bbb6561d2e27f43ffcb6fbe9715a262a0` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6a248d3cc5ec909a38960382a649cf98a80d881a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7783759eb985e88927c2a100636a0596351efd86` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8f4b79a7567de997da10f66e340b00a80177e66c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9c5d55418586d1ad5aed77978631d952e6e589d5` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9efc7e873a21705d8696a243ef58d360f077b52a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbd0c1a873bb3553a674afa935c941836c35ef5bf` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdfcb98f28f80b6f9daaa4e44eb0e689f26675135` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe1202b0732a04b33c6c37ae853f1929ca3221915` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xeff3d60b57165f19922effbd6227fb8a2f27714e` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 14
+- Live contracts: 0
+- Unknown liveness contracts: 14
+- Source-verified contracts: 0
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: unverified unclassified=14
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| unverified unclassified | UnnamedContract<br>`0x0541302b14b923c3c5f6e1377a4181790b3e6076` | non_address_book | unknown | unknown | unverified | n/a | `0x8cb13a8271efa096b407ec8a20aa14c01e74c427` |
+| unverified unclassified | UnnamedContract<br>`0x23604be26047cf57ef37e5b3a4f5c6f5c5c057b1` | non_address_book | unknown | unknown | unverified | n/a | `0x8cb13a8271efa096b407ec8a20aa14c01e74c427` |
+| unverified unclassified | UnnamedContract<br>`0x2e823df11e1b031469d4927de04d0f050a64d696` | non_address_book | unknown | unknown | unverified | n/a | `0x8cb13a8271efa096b407ec8a20aa14c01e74c427` |
+| unverified unclassified | UnnamedContract<br>`0x32e85c00caf25f8217315d711e026f4dbaa45e31` | non_address_book | unknown | unknown | unverified | n/a | `0x8cb13a8271efa096b407ec8a20aa14c01e74c427` |
+| unverified unclassified | UnnamedContract<br>`0x4600fa6bbb6561d2e27f43ffcb6fbe9715a262a0` | non_address_book | unknown | unknown | unverified | n/a | `0x8cb13a8271efa096b407ec8a20aa14c01e74c427` |
+| unverified unclassified | UnnamedContract<br>`0x6a248d3cc5ec909a38960382a649cf98a80d881a` | non_address_book | unknown | unknown | unverified | n/a | `0x8cb13a8271efa096b407ec8a20aa14c01e74c427` |
+| unverified unclassified | UnnamedContract<br>`0x7783759eb985e88927c2a100636a0596351efd86` | non_address_book | unknown | unknown | unverified | n/a | `0x8cb13a8271efa096b407ec8a20aa14c01e74c427` |
+| unverified unclassified | UnnamedContract<br>`0x8f4b79a7567de997da10f66e340b00a80177e66c` | non_address_book | unknown | unknown | unverified | n/a | `0x8cb13a8271efa096b407ec8a20aa14c01e74c427` |
+| unverified unclassified | UnnamedContract<br>`0x9c5d55418586d1ad5aed77978631d952e6e589d5` | non_address_book | unknown | unknown | unverified | n/a | `0x8cb13a8271efa096b407ec8a20aa14c01e74c427` |
+| unverified unclassified | UnnamedContract<br>`0x9efc7e873a21705d8696a243ef58d360f077b52a` | non_address_book | unknown | unknown | unverified | n/a | `0x8cb13a8271efa096b407ec8a20aa14c01e74c427` |
+| unverified unclassified | UnnamedContract<br>`0xbd0c1a873bb3553a674afa935c941836c35ef5bf` | non_address_book | unknown | unknown | unverified | n/a | `0x8cb13a8271efa096b407ec8a20aa14c01e74c427` |
+| unverified unclassified | UnnamedContract<br>`0xdfcb98f28f80b6f9daaa4e44eb0e689f26675135` | non_address_book | unknown | unknown | unverified | n/a | `0x8cb13a8271efa096b407ec8a20aa14c01e74c427` |
+| unverified unclassified | UnnamedContract<br>`0xe1202b0732a04b33c6c37ae853f1929ca3221915` | non_address_book | unknown | unknown | unverified | n/a | `0x8cb13a8271efa096b407ec8a20aa14c01e74c427` |
+| unverified unclassified | UnnamedContract<br>`0xeff3d60b57165f19922effbd6227fb8a2f27714e` | non_address_book | unknown | unknown | unverified | n/a | `0x8cb13a8271efa096b407ec8a20aa14c01e74c427` |
 
 ## Audit Inventory
 
@@ -146,7 +191,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 14 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 14 |
 
 ## Scope Matching Notes
 

@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Liquis (`liquis`)
 - Website: [https://liquis.app/](https://liquis.app/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: ethereum
 - Contract surface: 27 unique implementations (34 raw deployments)
 - Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
@@ -135,6 +135,49 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 - None
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 27
+- Live contracts: 0
+- Unknown liveness contracts: 27
+- Source-verified contracts: 27
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: candidate review=6, contamination review=12, source verified unclassified=9
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| candidate review | BoosterOwner<br>`0x948a608ff2198a4546abdbfadf43039a99c0a6cb` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xa35e14f9d731ddb1994b5590574b32a838646ccf` |
+| candidate review | LiquisViewHelpers<br>`0xd58dd6def2d0e8e16ffc537c7f269719e19b9fe4` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xa35e14f9d731ddb1994b5590574b32a838646ccf` |
+| candidate review | LitDepositorHelper<br>`0x4512c81c2a88ea83539b535988cbe2f454d373b5` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xa35e14f9d731ddb1994b5590574b32a838646ccf` |
+| candidate review | LitDepositorHelper<br>`0x97a2585ddb121db8e9a3b6575e302f9c610af08c` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xa35e14f9d731ddb1994b5590574b32a838646ccf` |
+| candidate review | PoolManager<br>`0x61e69c64e8cdf804cf3e0be287969d272939ccb5` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xa35e14f9d731ddb1994b5590574b32a838646ccf` |
+| candidate review | RewardFactory<br>`0x368dda6c8cce7283f4ee2577b8cbe454f40f9a48` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xa35e14f9d731ddb1994b5590574b32a838646ccf` |
+| contamination review | Booster<br>`0x631e58246a88c3957763e1469cb52f93bc1ddcf2` | non_address_book | unknown | unknown | verified | n/a | `0xa35e14f9d731ddb1994b5590574b32a838646ccf` |
+| contamination review | CrvDepositor<br>`0xb96bce10480d2a8eb2995ee4f04a70d48997856a` | non_address_book | unknown | unknown | verified | n/a | `0xa35e14f9d731ddb1994b5590574b32a838646ccf` |
+| contamination review | EthInvestor<br>`0x81a663c4bdd4b5cb395e4025e464049470dd2b48` | non_address_book | unknown | unknown | verified | n/a | `0xa35e14f9d731ddb1994b5590574b32a838646ccf` |
+| contamination review | ExtraRewardStashV3<br>`0x441745aec50db58a5bde1fef916d84771235aaf2` | non_address_book | unknown | unknown | verified | n/a | `0xa35e14f9d731ddb1994b5590574b32a838646ccf` |
+| contamination review | FlashOptionsExerciser<br>`0x036c4567db47cd840de37e7e8658b0bb3ae95d40` | non_address_book | unknown | unknown | verified | n/a | `0xa35e14f9d731ddb1994b5590574b32a838646ccf` |
+| contamination review | LiqVestedEscrow<br>`0x2f48cb0da01ba75e321c870fa77f19f285c69693` | non_address_book | unknown | unknown | verified | n/a | `0xa35e14f9d731ddb1994b5590574b32a838646ccf` |
+| contamination review | PooledOptionsExerciser<br>`0x57956b5ec3e7592f8785a96ba25763a6f2a042f0` | non_address_book | unknown | unknown | verified | n/a | `0xa35e14f9d731ddb1994b5590574b32a838646ccf` |
+| contamination review | PoolManagerProxy<br>`0x4335aa6fc488c474b02bf5302a7295740f4c0b0d` | non_address_book | unknown | unknown | verified | n/a | `0xa35e14f9d731ddb1994b5590574b32a838646ccf` |
+| contamination review | PrelaunchRewardsPool<br>`0x5c988c4e1f3cf1ca871a54af3a1dcb5fef2612fc` | non_address_book | unknown | unknown | verified | n/a | `0xa35e14f9d731ddb1994b5590574b32a838646ccf` |
+| contamination review | ProxyFactory<br>`0xfa6c12e26c632b8aab52ce2bacaeb288f88f2f52` | non_address_book | unknown | unknown | verified | n/a | `0xa35e14f9d731ddb1994b5590574b32a838646ccf` |
+| contamination review | StashFactoryV2<br>`0xba6909be1df994cc158abda432db7fc25343ce2d` | non_address_book | unknown | unknown | verified | n/a | `0xa35e14f9d731ddb1994b5590574b32a838646ccf` |
+| contamination review | TokenFactory<br>`0xe9c04b9a73a7c63b91de4051bc761bc3062072b6` | non_address_book | unknown | unknown | verified | n/a | `0xa35e14f9d731ddb1994b5590574b32a838646ccf` |
+| source verified unclassified | cvxCrvToken<br>`0x03c6f0ca0363652398abfb08d154f114e61c4ad8` | non_address_book | unknown | unknown | verified | n/a | `0xa35e14f9d731ddb1994b5590574b32a838646ccf` |
+| source verified unclassified | LiqMinter<br>`0x2e8617079e97ac78fce7a2a2ec7c4a84492b805e` | non_address_book | unknown | unknown | verified | n/a | `0xa35e14f9d731ddb1994b5590574b32a838646ccf` |
+| source verified unclassified | LiqVestedEscrow<br>`0x4c715f7ce87f4c09c438edabf357657623031f70` | non_address_book | unknown | unknown | verified | n/a | `0xa35e14f9d731ddb1994b5590574b32a838646ccf` |
+| source verified unclassified | LiqVestedEscrow<br>`0x545210fac9ce6c9104fbfbf2ed429cc222234670` | non_address_book | unknown | unknown | verified | n/a | `0xa35e14f9d731ddb1994b5590574b32a838646ccf` |
+| source verified unclassified | LiqVestedEscrow<br>`0x5ecaed31db3e1a20529b503de75b917e44f7617e` | non_address_book | unknown | unknown | verified | n/a | `0xa35e14f9d731ddb1994b5590574b32a838646ccf` |
+| source verified unclassified | LiqVestedEscrow<br>`0x9bc6dcc2497f1feb7bc7d68ce658c2984c646172` | non_address_book | unknown | unknown | verified | n/a | `0xa35e14f9d731ddb1994b5590574b32a838646ccf` |
+| source verified unclassified | LiqVestedEscrow<br>`0xae566f666617f7c788cc47ac51ccc3e43ae5cf9d` | non_address_book | unknown | unknown | verified | n/a | `0xa35e14f9d731ddb1994b5590574b32a838646ccf` |
+| source verified unclassified | LiqVestedEscrow<br>`0xf97964749b52c55d64e971571e1370b2618b718f` | non_address_book | unknown | unknown | verified | n/a | `0xa35e14f9d731ddb1994b5590574b32a838646ccf` |
+| source verified unclassified | VoterProxy<br>`0x37aeb332d6e57112f1bfe36923a7ee670ee9278b` | non_address_book | unknown | unknown | verified | n/a | `0xa35e14f9d731ddb1994b5590574b32a838646ccf` |
 
 ## Audit Inventory
 

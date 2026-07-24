@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Predict Fun (`predict-fun`)
 - Website: [https://predict.fun](https://predict.fun)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: blast, bsc
 - Contract surface: 57 unique implementations (70 raw deployments)
 - Coverage basis: 5/29 confirmed own live verified implementations (17.2%); conservative 17.2% with 0 needs-review implementation(s)
@@ -49,7 +49,7 @@ The pinned logic-topography run contains 29 contract row(s) across blast, bsc. S
 ### Forked Contracts
 
 **CTFExchange** (`0x6beb5a40c032afc305961162d8204cda16decfa5`, chain 56)
-Origin: limitless-exchange (`0x46e607d3f4a8494b0ab9b304d1463e2f4848891d`)
+Origin: limitless-exchange (`0x46e607...48891d`)
 Containment: 100.0% - 35 functions inherited
 Centroid audit status: pending_validation
 
@@ -58,7 +58,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **CTFExchange** (`0x8bc070bedab741406f4b1eb65a72bee27894b689`, chain 56)
-Origin: limitless-exchange (`0x46e607d3f4a8494b0ab9b304d1463e2f4848891d`)
+Origin: limitless-exchange (`0x46e607...48891d`)
 Containment: 100.0% - 35 functions inherited
 Centroid audit status: pending_validation
 
@@ -67,7 +67,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **NegRiskAdapter** (`0xc3cf7c252f65e0d8d88537df96569ae94a7f1a6e`, chain 56)
-Origin: predict-fun (`0x41dce1a4b8fb5e6327701750af6231b7cd0b2a40`)
+Origin: predict-fun (`0x41dce1...0b2a40`)
 Containment: 100.0% - 27 functions inherited
 Centroid audit status: pending_validation
 
@@ -76,7 +76,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **NegRiskCtfExchange** (`0x365fb81bd4a24d6303cd2f19c349de6894d8d58a`, chain 56)
-Origin: limitless-exchange (`0x46e607d3f4a8494b0ab9b304d1463e2f4848891d`)
+Origin: limitless-exchange (`0x46e607...48891d`)
 Containment: 100.0% - 35 functions inherited
 Centroid audit status: pending_validation
 
@@ -85,7 +85,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **NegRiskCtfExchange** (`0x8a289d458f5a134ba40015085a8f50ffb681b41d`, chain 56)
-Origin: limitless-exchange (`0x46e607d3f4a8494b0ab9b304d1463e2f4848891d`)
+Origin: limitless-exchange (`0x46e607...48891d`)
 Containment: 100.0% - 35 functions inherited
 Centroid audit status: pending_validation
 
@@ -94,7 +94,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **UmaCompatibleCtfAdapter** (`0x242e1ba24f6fc524bfb410062ca5689a9622613d`, chain 56)
-Origin: predict-fun (`0x7c7818b14628842708a9ddb99a21d13c5354df64`)
+Origin: predict-fun (`0x7c7818...54df64`)
 Containment: 100.0% - 19 functions inherited
 Centroid audit status: pending_validation
 
@@ -103,7 +103,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **UmaCompatibleCtfAdapter** (`0x26b366ab634c43bda6d784fdce34f24a37df8172`, chain 56)
-Origin: predict-fun (`0x7c7818b14628842708a9ddb99a21d13c5354df64`)
+Origin: predict-fun (`0x7c7818...54df64`)
 Containment: 100.0% - 19 functions inherited
 Centroid audit status: pending_validation
 
@@ -112,7 +112,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **UmaCompatibleCtfAdapter** (`0x947cc06d38d3cb0a2bb5adfb668b99b4ff53d7b4`, chain 56)
-Origin: predict-fun (`0x7c7818b14628842708a9ddb99a21d13c5354df64`)
+Origin: predict-fun (`0x7c7818...54df64`)
 Containment: 100.0% - 19 functions inherited
 Centroid audit status: pending_validation
 
@@ -121,7 +121,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **UmaCompatibleCtfAdapter** (`0xf61198a64c2e4cad8ccaf218f3f2ecefb017902f`, chain 56)
-Origin: predict-fun (`0x7c7818b14628842708a9ddb99a21d13c5354df64`)
+Origin: predict-fun (`0x7c7818...54df64`)
 Containment: 100.0% - 19 functions inherited
 Centroid audit status: pending_validation
 
@@ -277,6 +277,28 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xd06d150ed732cef84c92279377164a9900ff3e85` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xeea370e0fe6c3f719504fb8699d8089c996c2236` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xf543b7c256766ec898d12bda71a2ee86cf9060f3` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 6
+- Live contracts: 0
+- Unknown liveness contracts: 6
+- Source-verified contracts: 6
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: candidate review=1, contamination review=1, source verified unclassified=4
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| candidate review | ConditionalTokensFeesHandlerV2<br>`0x7bd1a130c2206071121c0f1ef9666d4584252b84` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x898d6a4d2a441cd7cd8b153913c771ca4ffddde9` |
+| contamination review | ZeroDevWithdrawalHelper<br>`0x834b7ec39082bb51d2c46197b71bc926178600de` | non_address_book | unknown | unknown | verified | n/a | `0x24fad705b80d84a5e5cfebd772a16dedc7b48fc2` |
+| source verified unclassified | FeeModuleV2Adapter<br>`0xc6346768b256b1c3f4a6c521b5f466f9a849a7b6` | non_address_book | unknown | unknown | verified | n/a | `0x898d6a4d2a441cd7cd8b153913c771ca4ffddde9` |
+| source verified unclassified | AddressFinder<br>`0xc31bb90ee75706911faf6b831699026e5eb6f24a` | non_address_book | unknown | unknown | verified | n/a | `0x24fad705b80d84a5e5cfebd772a16dedc7b48fc2` |
+| source verified unclassified | ZeroDevWithdrawalHelper<br>`0xc45343f2e66c9b4140ddebf47352c81728bde7fd` | non_address_book | unknown | unknown | verified | n/a | `0x24fad705b80d84a5e5cfebd772a16dedc7b48fc2` |
+| source verified unclassified | ZeroDevWithdrawalHelper<br>`0xd2536605c6cba9562856fc937db410db39e71d37` | non_address_book | unknown | unknown | verified | n/a | `0x24fad705b80d84a5e5cfebd772a16dedc7b48fc2` |
 
 ## Audit Inventory
 

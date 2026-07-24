@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: CANA Holdings California Carbon Credits (`cana-holdings-california-carbon-credits`)
 - Website: [https://maseer.finance/](https://maseer.finance/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: ethereum
-- Contract surface: 22 unique implementations (22 raw deployments)
+- Contract surface: 26 unique implementations (26 raw deployments)
 - Coverage basis: 0/1 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $889,686.69
 - On-chain TVL (included contracts): n/a
@@ -87,15 +87,15 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 - Coverage of address-book-owned deployed-live implementations: 0/1 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 21 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 1 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 1 standard proxy/library)
+- Outside the address book: 5 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 1 standard proxy/library)
 - Proxy deployments represented within implementation groups: 1
-- Confirmed-live implementations: 21 of 22 unique; 1 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 21 of 26 unique; 5 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 0/2
 - Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
-- Unverified implementations: 20
-- Unique implementations: 22
-- Raw deployments: 22
+- Unverified implementations: 24
+- Unique implementations: 26
+- Raw deployments: 26
 - Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -133,7 +133,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (20)
+### ❓ Unverified (24)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -145,20 +145,44 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381536 | `0x12c8091a719125bf08875635c3ed738510c56141` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381537 | `0x192575eeb42644a8014eb545c69f5125e2437a56` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381538 | `0x1c571c63d256cdc225bffdc1d6602f3554f027ae` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x21734507fdca48a3b4e8c496280b63a37d3bd0c8` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381539 | `0x2848d47ae98bc9d862caab91c1f236cef112dccf` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381540 | `0x3a0de7a4678ca9341a63ffe78041385eda65b128` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381541 | `0x3bb8ebb11816e1c20c3db57e2e7e5b421b159255` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381542 | `0x44bfeb1110ba6091034dbaab450ef1e7469ff072` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381543 | `0x456e0074853cd23a3cdea3a1bb85575ed9b1a718` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4f93a2e29b0aa75875ab922d780b6dc59b415b6a` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381544 | `0x53d076226cfcc9f2d18af7e69dca138145013677` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381545 | `0x57c3571f10767e49c9d7b60feb6c67804783b7ae` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381546 | `0x635dbb7841c27c74b6bdbf1bed548aae2c6c9d77` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381547 | `0x6a79dce61a12aa4b75449e0b03746260765d07df` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381548 | `0x78fa7018cc9c48ad732e49a491032ef47018d5fd` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381549 | `0x794cf5948444b14105587455ebe96caace036d52` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9b409f87aeaadbe912632b1e4de855b6afcc71ee` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381550 | `0xa8f5be8457d6ed5c659647fa8d107c3f2086626a` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381551 | `0xb59cb4d3075a8ce5013c78e8bd7ada3fd1300f7f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbe402d34f31133b1dc00277f24f8ce2d975cbe23` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381553 | `0xe7c5c484a61cc93a638f67906a9900d94b40fda7` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 4
+- Live contracts: 0
+- Unknown liveness contracts: 4
+- Source-verified contracts: 0
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: unverified unclassified=4
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| unverified unclassified | UnnamedContract<br>`0x21734507fdca48a3b4e8c496280b63a37d3bd0c8` | non_address_book | unknown | unknown | unverified | n/a | `0xdeed2376ad1d9cc54e0cca449b1d7a96939120f9` |
+| unverified unclassified | UnnamedContract<br>`0x4f93a2e29b0aa75875ab922d780b6dc59b415b6a` | non_address_book | unknown | unknown | unverified | n/a | `0xdeed2376ad1d9cc54e0cca449b1d7a96939120f9` |
+| unverified unclassified | UnnamedContract<br>`0x9b409f87aeaadbe912632b1e4de855b6afcc71ee` | non_address_book | unknown | unknown | unverified | n/a | `0xdeed2376ad1d9cc54e0cca449b1d7a96939120f9` |
+| unverified unclassified | UnnamedContract<br>`0xbe402d34f31133b1dc00277f24f8ce2d975cbe23` | non_address_book | unknown | unknown | unverified | n/a | `0xdeed2376ad1d9cc54e0cca449b1d7a96939120f9` |
 
 ## Audit Inventory
 
@@ -181,10 +205,10 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
 | Prototech Labs - Maseer Security Report.pdf | MaseerGate | unmatched — not counted | — | Listed in scope and findings reference MaseerGate.sol | no |
-| Prototech Labs - Maseer Security Report.pdf | MaseerOne | ambiguous — not counted | 0x57c357… (alternative) `0x57c3571f10767e49c9d7b60feb6c67804783b7ae` — liveness: live (current_address_book_code)<br>MaseerOne (alternative) `0x01995a697752266d8e748738aaa3f06464b8350b` — deployed 2025-06-20 22:48:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Prototech Labs - Maseer Security Report.pdf | MaseerOne | ambiguous — not counted | 0x57c357… (alternative) `0x57c3571f10767e49c9d7b60feb6c67804783b7ae` — deployed 2026-04-11 01:24:23+03 — liveness: live (current_address_book_code)<br>MaseerOne (alternative) `0x01995a697752266d8e748738aaa3f06464b8350b` — deployed 2025-06-20 22:48:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | Prototech Labs - Maseer Security Report.pdf | MaseerPrice | unmatched — not counted | — | Listed in scope and findings reference MaseerPrice.sol | no |
 | Prototech Labs - Maseer Security Report.pdf | MaseerToken | unmatched — not counted | — | Listed in scope and findings reference MaseerToken.sol | no |
-| Prototech Labs - Maseer Security Report.pdf | MaseerPrecommit | own contract | 0x0f6f65… (selected) `0x0f6f65fd822d3713c20e146ff66e4d83b050c31d` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Prototech Labs - Maseer Security Report.pdf | MaseerPrecommit | own contract | 0x0f6f65… (selected) `0x0f6f65fd822d3713c20e146ff66e4d83b050c31d` — deployed 2025-06-20 22:49:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Prototech Labs - Maseer Security Report.pdf | MaseerConduit | unmatched — not counted | — | Listed in scope and findings reference MaseerConduit.sol | no |
 | Prototech Labs - Maseer Security Report.pdf | MaseerGuard | unmatched — not counted | — | Listed in scope and findings reference MaseerGuard.sol | no |
 | Prototech Labs - Maseer Security Report.pdf | MaseerTreasury | unmatched — not counted | — | Listed in scope as upgradeable contract | no |
@@ -205,7 +229,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 1 |
 | upstream | 0 |
 | standard_library | 1 |
-| needs_review | 20 |
+| needs_review | 24 |
 
 ## Scope Matching Notes
 

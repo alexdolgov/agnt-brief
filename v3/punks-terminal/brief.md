@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Punks Terminal (`punks-terminal`)
 - Website: [https://punks.lightyear.build/stash](https://punks.lightyear.build/stash)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: ethereum
-- Contract surface: 10 unique implementations (17 raw deployments)
+- Contract surface: 11 unique implementations (18 raw deployments)
 - Coverage basis: 0/1 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,331,494.45
 - On-chain TVL (included contracts): n/a
@@ -72,15 +72,15 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 - Coverage of address-book-owned deployed-live implementations: 0/1 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 1 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 9 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 10 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Confirmed-live implementations: 1 of 10 unique; 9 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 1 of 11 unique; 10 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 0/10
 - Verified + Unaudited implementations: 10
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 10
-- Raw deployments: 17
+- Unverified implementations: 1
+- Unique implementations: 11
+- Raw deployments: 18
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -126,11 +126,34 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc8a98626f4b26282147daeae20a695df1dfd27aa` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 5
+- Live contracts: 0
+- Unknown liveness contracts: 5
+- Source-verified contracts: 4
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: contamination review=2, source verified unclassified=2, unverified unclassified=1
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| contamination review | Autoglyphs<br>`0xd4e4078ca3495de5b1d4db434bebc5a986197782` | non_address_book | unknown | unknown | verified | n/a | `0xc352b534e8b987e036a93539fd6897f53488e56a` |
+| contamination review | CryptopunksData<br>`0x16f5a35647d6f03d5d3da7b35409d65ba03af3b2` | non_address_book | unknown | unknown | verified | n/a | `0xc352b534e8b987e036a93539fd6897f53488e56a` |
+| source verified unclassified | CryptoPunks<br>`0x6ba6f2207e343923ba692e5cae646fb0f566db8d` | non_address_book | unknown | unknown | verified | n/a | `0xc352b534e8b987e036a93539fd6897f53488e56a` |
+| source verified unclassified | Meebits<br>`0x7bd29408f11d2bfc23c34f18275bbf23bb716bc7` | non_address_book | unknown | unknown | verified | n/a | `0xc352b534e8b987e036a93539fd6897f53488e56a` |
+| unverified unclassified | UnnamedContract<br>`0xc8a98626f4b26282147daeae20a695df1dfd27aa` | non_address_book | unknown | unknown | unverified | n/a | `0x3c63d087ad7de996221c57fe4e55dfcee182ae27` |
 
 ## Audit Inventory
 
@@ -158,7 +181,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 10 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

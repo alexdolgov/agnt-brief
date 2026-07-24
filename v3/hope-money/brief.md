@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: HOPE Money (`hope-money`)
 - Website: [https://docs.hope.money/](https://docs.hope.money/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: ethereum
 - Contract surface: 27 unique implementations (40 raw deployments)
 - Coverage basis: 3/3 confirmed own live verified implementations (100.0%); conservative 100.0% with 0 needs-review implementation(s)
@@ -151,6 +151,52 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 - None
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 30
+- Live contracts: 4
+- Unknown liveness contracts: 26
+- Source-verified contracts: 30
+- Currently scope-matched contracts retained as-is: 2
+- Classification counts: currently scope matched=2, candidate review=19, contamination review=1, source verified unclassified=8
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| currently scope matched | TransparentUpgradeableProxy<br>`0x9ed1439d328647bdb148c20316ea024c719a735b` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x09143c00318a6e9adc16837c00aa93f9c7e1ca24` |
+| currently scope matched | TransparentUpgradeableProxy<br>`0xc353bf07405304aeab75f4c2fac7e88d6a68f98e` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x09143c00318a6e9adc16837c00aa93f9c7e1ca24` |
+| candidate review | ApprovedTokenManager<br>`0x2ca1f5e429d423701052222e598e036016173c78` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x09143c00318a6e9adc16837c00aa93f9c7e1ca24` |
+| candidate review | BurnerManager<br>`0x0d80a72c9f98e5b1c7fb3e3dc4d58aeca5966066` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x09143c00318a6e9adc16837c00aa93f9c7e1ca24` |
+| candidate review | FeeDistributor<br>`0x60498d57c18737f0a37e43f9bc20a3ce937285bb` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x09143c00318a6e9adc16837c00aa93f9c7e1ca24` |
+| candidate review | GaugeController<br>`0xa8b2706b45eb95e5d14f8c29a3c5cf0cd5b4dd7e` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x09143c00318a6e9adc16837c00aa93f9c7e1ca24` |
+| candidate review | GaugeFeeDistributor<br>`0xdedd17f3f3d6af647b94b77fa0d97983003c48ed` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x09143c00318a6e9adc16837c00aa93f9c7e1ca24` |
+| candidate review | HOPE<br>`0x8f9bd4f6b88c46657aab889f1150b0521203c61e` | retained_scope_excluded_inventory | unknown | live | verified | review: no_fresh_structural_match | `0x09143c00318a6e9adc16837c00aa93f9c7e1ca24` |
+| candidate review | HopeSwapBurner<br>`0xd32864ff55aa1ceabace9d3e57bb113461acea42` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x09143c00318a6e9adc16837c00aa93f9c7e1ca24` |
+| candidate review | LT<br>`0xd708e5620f5769f65d018a3c97d63abfeb8ed019` | retained_scope_excluded_inventory | unknown | live | verified | review: no_fresh_structural_match | `0x09143c00318a6e9adc16837c00aa93f9c7e1ca24` |
+| candidate review | PoolGauge<br>`0x3f954d5db340578773218388d8327035db7908aa` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x09143c00318a6e9adc16837c00aa93f9c7e1ca24` |
+| candidate review | ProxyAdmin<br>`0xcc0f986021010d4a3345cca903bf5487aea3bd39` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x09143c00318a6e9adc16837c00aa93f9c7e1ca24` |
+| candidate review | SwapFeeToVault<br>`0xda9c43a13a82b0d0292cf38e18fa71a0a9f42f23` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x09143c00318a6e9adc16837c00aa93f9c7e1ca24` |
+| candidate review | TransparentUpgradeableProxy<br>`0x045087cbb64b35a31845b6e720c17f443ea20a91` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x09143c00318a6e9adc16837c00aa93f9c7e1ca24` |
+| candidate review | TransparentUpgradeableProxy<br>`0x6a120782dc421ef28f148ee1fee8a09bc59d82c3` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x09143c00318a6e9adc16837c00aa93f9c7e1ca24` |
+| candidate review | TransparentUpgradeableProxy<br>`0x77b3cfcd79f8030fac267da519a1d8e4f6ee5f29` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x09143c00318a6e9adc16837c00aa93f9c7e1ca24` |
+| candidate review | TransparentUpgradeableProxy<br>`0x99040c96bb8d931c29b2a9b91dcfcd36162bb697` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x09143c00318a6e9adc16837c00aa93f9c7e1ca24` |
+| candidate review | TransparentUpgradeableProxy<br>`0xe0530d1261802eb32908b72574f9a6362c898a84` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x09143c00318a6e9adc16837c00aa93f9c7e1ca24` |
+| candidate review | TransparentUpgradeableProxy<br>`0xe4a14f5a293274ee3fae3958895a22e6fc848e84` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x09143c00318a6e9adc16837c00aa93f9c7e1ca24` |
+| candidate review | UnderlyingBurner<br>`0xd61fd63a466dee970eea49ef109283a57acadc97` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x09143c00318a6e9adc16837c00aa93f9c7e1ca24` |
+| candidate review | VotingEscrow<br>`0xe909f37f3003fa37aad83c1baf2a98e5a7b67400` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x09143c00318a6e9adc16837c00aa93f9c7e1ca24` |
+| contamination review | Minter<br>`0x94afb2c17af24cfacf19f364628f459dfab2688f` | non_address_book | unknown | unknown | verified | n/a | `0x09143c00318a6e9adc16837c00aa93f9c7e1ca24` |
+| source verified unclassified | GaugeFactory<br>`0x71b38e6af260a725c42d0c5325836ad3dbe2bdb1` | non_address_book | unknown | unknown | verified | n/a | `0x09143c00318a6e9adc16837c00aa93f9c7e1ca24` |
+| source verified unclassified | HopeSwapBurnerBridge<br>`0x37060608acf9dcdbb5c1f8d0a37c24171b91e149` | non_address_book | unknown | unknown | verified | n/a | `0x09143c00318a6e9adc16837c00aa93f9c7e1ca24` |
+| source verified unclassified | HopeSwapBurnerBridge<br>`0xfda6a3367212a7a93bf1fdc2c0564823008e3026` | non_address_book | unknown | unknown | verified | n/a | `0x09143c00318a6e9adc16837c00aa93f9c7e1ca24` |
+| source verified unclassified | LightTeamVault<br>`0xdd42df1350c4c0b17eef521d6136015424e54513` | non_address_book | unknown | unknown | verified | n/a | `0x09143c00318a6e9adc16837c00aa93f9c7e1ca24` |
+| source verified unclassified | LightTeamVaultManager<br>`0xedb47d8e8d07c93b7c5e202308d13dbec8b3c0bc` | non_address_book | unknown | unknown | verified | n/a | `0x09143c00318a6e9adc16837c00aa93f9c7e1ca24` |
+| source verified unclassified | Permit2<br>`0xc53c83d26151dbcffa349fae20b6155299e87a35` | non_address_book | unknown | unknown | verified | n/a | `0x09143c00318a6e9adc16837c00aa93f9c7e1ca24` |
+| source verified unclassified | RestrictedList<br>`0x9e63ff8003c33d264be368729ea525d8f5881edd` | non_address_book | unknown | unknown | verified | n/a | `0x09143c00318a6e9adc16837c00aa93f9c7e1ca24` |
+| source verified unclassified | SmartWalletWhitelist<br>`0x377a83e5cf25d96c0c21dcd0a3c75ccd638700cb` | non_address_book | unknown | unknown | verified | n/a | `0x09143c00318a6e9adc16837c00aa93f9c7e1ca24` |
 
 ## Audit Inventory
 

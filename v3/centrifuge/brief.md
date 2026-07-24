@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Centrifuge (`centrifuge`)
 - Website: [https://centrifuge.io/](https://centrifuge.io/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: arbitrum, avalanche, base, bsc, ethereum, hyperliquid, monad, optimism, pharos
 - Contract surface: 258 unique implementations (520 raw deployments)
 - Coverage basis: 0/134 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
@@ -49,7 +49,7 @@ The pinned logic-topography run contains 318 contract row(s) across arbitrum, av
 ### Forked Contracts
 
 **AsyncVault** (`0x18ab9fc0b2e4fef9e0e03c8ec63ba287a3238257`, chain 1)
-Origin: 3f (`0x4880799ee5200fc58da299e965df644fbf46780b`)
+Origin: 3f (`0x488079...46780b`)
 Containment: 100.0% - 41 functions inherited
 Centroid audit status: pending_validation
 
@@ -58,7 +58,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **AsyncVault** (`0x1ad3644a0834e7c9ed4aec2660b0ee2ea18a1f36`, chain 1)
-Origin: 3f (`0x4880799ee5200fc58da299e965df644fbf46780b`)
+Origin: 3f (`0x488079...46780b`)
 Containment: 100.0% - 41 functions inherited
 Centroid audit status: pending_validation
 
@@ -67,7 +67,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **AsyncVault** (`0x381f4f3b43c30b78c1f7777553236e57bb8ae9ff`, chain 1)
-Origin: 3f (`0x4880799ee5200fc58da299e965df644fbf46780b`)
+Origin: 3f (`0x488079...46780b`)
 Containment: 100.0% - 41 functions inherited
 Centroid audit status: pending_validation
 
@@ -76,7 +76,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **AsyncVault** (`0x4865bc9701fbd1207a7b50e2af442c7daf154c9c`, chain 1)
-Origin: 3f (`0x4880799ee5200fc58da299e965df644fbf46780b`)
+Origin: 3f (`0x488079...46780b`)
 Containment: 100.0% - 41 functions inherited
 Centroid audit status: pending_validation
 
@@ -85,7 +85,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **AsyncVault** (`0x4880799ee5200fc58da299e965df644fbf46780b`, chain 1)
-Origin: 3f (`0x4880799ee5200fc58da299e965df644fbf46780b`)
+Origin: 3f (`0x488079...46780b`)
 Containment: 100.0% - 41 functions inherited
 Centroid audit status: pending_validation
 
@@ -94,7 +94,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **AsyncVault** (`0x559907981ed375b2d7eea6108273d181216a10cc`, chain 1)
-Origin: 3f (`0x4880799ee5200fc58da299e965df644fbf46780b`)
+Origin: 3f (`0x488079...46780b`)
 Containment: 100.0% - 41 functions inherited
 Centroid audit status: pending_validation
 
@@ -103,7 +103,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **AsyncVault** (`0x74a739ea1dc67c5a0179ebad665d1d3c4b80b712`, chain 1)
-Origin: 3f (`0x4880799ee5200fc58da299e965df644fbf46780b`)
+Origin: 3f (`0x488079...46780b`)
 Containment: 100.0% - 41 functions inherited
 Centroid audit status: pending_validation
 
@@ -112,7 +112,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **AsyncVault** (`0xfe6920eb6c421f1179ca8c8d4170530cdbdfd77a`, chain 1)
-Origin: 3f (`0x4880799ee5200fc58da299e965df644fbf46780b`)
+Origin: 3f (`0x488079...46780b`)
 Containment: 100.0% - 41 functions inherited
 Centroid audit status: pending_validation
 
@@ -121,7 +121,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **AsyncVault** (`0x5aa84705a2cb2054ed303565336f188e6bffbaf5`, chain 56)
-Origin: 3f (`0x4880799ee5200fc58da299e965df644fbf46780b`)
+Origin: 3f (`0x488079...46780b`)
 Containment: 100.0% - 41 functions inherited
 Centroid audit status: pending_validation
 
@@ -130,7 +130,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **AsyncVault** (`0x6e6b8498415083a4386be83dd59edd4366402ffa`, chain 56)
-Origin: 3f (`0x4880799ee5200fc58da299e965df644fbf46780b`)
+Origin: 3f (`0x488079...46780b`)
 Containment: 100.0% - 41 functions inherited
 Centroid audit status: pending_validation
 
@@ -139,7 +139,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **AsyncVault** (`0x9effaa5614c689fa12892379e097b3acad239961`, chain 56)
-Origin: 3f (`0x4880799ee5200fc58da299e965df644fbf46780b`)
+Origin: 3f (`0x488079...46780b`)
 Containment: 100.0% - 41 functions inherited
 Centroid audit status: pending_validation
 
@@ -148,7 +148,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **AsyncVault** (`0xcbafe61d84c6fb88252a6adf1c9cb0b9d029cb99`, chain 56)
-Origin: 3f (`0x4880799ee5200fc58da299e965df644fbf46780b`)
+Origin: 3f (`0x488079...46780b`)
 Containment: 100.0% - 41 functions inherited
 Centroid audit status: pending_validation
 
@@ -157,7 +157,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **AsyncVault** (`0x096dc8ce2fb630b2728c9a088a04b13bbbb5b4f4`, chain 8453)
-Origin: 3f (`0x4880799ee5200fc58da299e965df644fbf46780b`)
+Origin: 3f (`0x488079...46780b`)
 Containment: 100.0% - 41 functions inherited
 Centroid audit status: pending_validation
 
@@ -166,7 +166,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **AsyncVault** (`0x2aef271f00a9d1b0da8065d396f4e601dbd0ef0b`, chain 8453)
-Origin: 3f (`0x4880799ee5200fc58da299e965df644fbf46780b`)
+Origin: 3f (`0x488079...46780b`)
 Containment: 100.0% - 41 functions inherited
 Centroid audit status: pending_validation
 
@@ -175,7 +175,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **AsyncVault** (`0x2da40f061536c2f3a8f95f23a5f4c133d07d393a`, chain 8453)
-Origin: 3f (`0x4880799ee5200fc58da299e965df644fbf46780b`)
+Origin: 3f (`0x488079...46780b`)
 Containment: 100.0% - 41 functions inherited
 Centroid audit status: pending_validation
 
@@ -184,7 +184,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **AsyncVault** (`0x9183dbe074a61cebf82525c907458cabb984f9da`, chain 8453)
-Origin: 3f (`0x4880799ee5200fc58da299e965df644fbf46780b`)
+Origin: 3f (`0x488079...46780b`)
 Containment: 100.0% - 41 functions inherited
 Centroid audit status: pending_validation
 
@@ -193,7 +193,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **AsyncVault** (`0x99e9092bae6d4394e54034ecb1e45441678323b9`, chain 8453)
-Origin: 3f (`0x4880799ee5200fc58da299e965df644fbf46780b`)
+Origin: 3f (`0x488079...46780b`)
 Containment: 100.0% - 41 functions inherited
 Centroid audit status: pending_validation
 
@@ -202,7 +202,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **AsyncVault** (`0x04ffdbd63626942d5cabf12120805465b7a17547`, chain 42161)
-Origin: 3f (`0x4880799ee5200fc58da299e965df644fbf46780b`)
+Origin: 3f (`0x488079...46780b`)
 Containment: 100.0% - 41 functions inherited
 Centroid audit status: pending_validation
 
@@ -211,7 +211,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **AsyncVault** (`0xe897e7f16e8f4ed568a62955b17744bcb3207d6e`, chain 42161)
-Origin: 3f (`0x4880799ee5200fc58da299e965df644fbf46780b`)
+Origin: 3f (`0x488079...46780b`)
 Containment: 100.0% - 41 functions inherited
 Centroid audit status: pending_validation
 
@@ -220,7 +220,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **AsyncVault** (`0x498b6394b778a75ed9b0148e379778070b4621d2`, chain 43114)
-Origin: 3f (`0x4880799ee5200fc58da299e965df644fbf46780b`)
+Origin: 3f (`0x488079...46780b`)
 Containment: 100.0% - 41 functions inherited
 Centroid audit status: pending_validation
 
@@ -229,7 +229,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **AsyncVault** (`0x5b9b6070c517be849ad79fc49d95e02084826f77`, chain 43114)
-Origin: 3f (`0x4880799ee5200fc58da299e965df644fbf46780b`)
+Origin: 3f (`0x488079...46780b`)
 Containment: 100.0% - 41 functions inherited
 Centroid audit status: pending_validation
 
@@ -238,7 +238,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **SyncDepositVault** (`0x67fda49952cd0b059d019e51b58e742f9592bb8f`, chain 10)
-Origin: 3f (`0x4880799ee5200fc58da299e965df644fbf46780b`)
+Origin: 3f (`0x488079...46780b`)
 Containment: 70.7% - 29 functions inherited
 Centroid audit status: pending_validation
 
@@ -975,6 +975,108 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xfd3791491999fb58f002eb2fa16e30290806d0da` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-232454 | `0x1121f4e21ed8b9bc1bb9a2952cdd8639ac897784` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-232462 | `0xfe6920eb6c421f1179ca8c8d4170530cdbdfd77a` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 86
+- Live contracts: 0
+- Unknown liveness contracts: 86
+- Source-verified contracts: 81
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: candidate review=34, contamination review=10, source verified unclassified=37, unverified unclassified=5
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| candidate review | DelayedAdmin<br>`0x2559998026796ca6fd057f3aa66f2d6ecded9028` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| candidate review | ERC7540VaultFactory<br>`0x6f9dba3d3a3ab083bca60ef82784cf12a6ec24b8` | non_address_book | registry | unknown | verified | review: no_fresh_structural_match | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| candidate review | ERC7540VaultFactory<br>`0x7f192f34499ddb2be06c4754cff2a21c4b056994` | non_address_book | registry | unknown | verified | review: no_fresh_structural_match | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| candidate review | ERC7540VaultFactory<br>`0xed590de3b8affb2f10bafdcd643595b1b61e47c2` | non_address_book | registry | unknown | verified | review: no_fresh_structural_match | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| candidate review | Guardian<br>`0x09ab10a9c3e6eac1d18270a2322b6113f4c7f5e8` | non_address_book | governance | unknown | verified | review: no_fresh_structural_match | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| candidate review | LiquidityPoolFactory<br>`0x77f48b2c942e6f3ac2232568d560e423c441386a` | non_address_book | registry | unknown | verified | review: no_fresh_structural_match | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| candidate review | LiquidityPoolFactory<br>`0x7f93edb11d5dc23f04c4e9382aa0d3f31e95bf2c` | non_address_book | registry | unknown | verified | review: no_fresh_structural_match | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| candidate review | LiquidityPoolFactory<br>`0x8273e36eecf7a8604bedee68fc24af121b64f165` | non_address_book | registry | unknown | verified | review: no_fresh_structural_match | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| candidate review | PauseAdmin<br>`0xce86472007ea37a5d0208f8c1559a37530c8067c` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| candidate review | PoolManager<br>`0x78e9e622a57f70f1e0ec652a4931e4e278e58142` | non_address_book | core_logic | unknown | verified | review: no_fresh_structural_match | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| candidate review | RestrictionManagerFactory<br>`0xf4d7f6919ef0b495a2551f7299324961f29ae7ac` | non_address_book | registry | unknown | verified | review: no_fresh_structural_match | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| candidate review | DelayedAdmin<br>`0x2559998026796ca6fd057f3aa66f2d6ecded9028` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| candidate review | ERC20<br>`0x9abb034e34e72e72de6e95b4b6069ce1c3370166` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| candidate review | ERC20<br>`0xf949df73c002bf694b1b6f69c623fdef2f1e68c1` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| candidate review | ERC7540VaultFactory<br>`0x6215b227c64262f7487e7881fba39a68fbf5ab35` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| candidate review | ERC7540VaultFactory<br>`0xcad01f5a7ee9ba09a1afdb9dcaa58ce024e4462c` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| candidate review | ERC7540VaultFactory<br>`0xe79f06573d6af1b66166a926483ba00924285d20` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| candidate review | Guardian<br>`0x427a1ce127b1775e4cbd4f58ad468b9f832ea7e9` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| candidate review | Guardian<br>`0xa0e3a5709995ef9900ab0f7fa070567fe89d9e18` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| candidate review | LiquidityPoolFactory<br>`0x77f48b2c942e6f3ac2232568d560e423c441386a` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| candidate review | PauseAdmin<br>`0xce86472007ea37a5d0208f8c1559a37530c8067c` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| candidate review | PoolManager<br>`0x7829e5ca4286df66e9f58160544097db517a3b8c` | non_address_book | unknown | unknown | verified | review: missing_independent_ownership_evidence | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| candidate review | PoolManager<br>`0x78e9e622a57f70f1e0ec652a4931e4e278e58142` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| candidate review | RestrictionManagerFactory<br>`0xf4d7f6919ef0b495a2551f7299324961f29ae7ac` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| candidate review | TrancheTokenFactory<br>`0x2712fe754119eab4499495494919f97b2df18dca` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| candidate review | DelayedAdmin<br>`0xfe364bedef1707dd4f2df358da2c1908824cc4ac` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| candidate review | ERC7540VaultFactory<br>`0x32043a41f4be198c4f6590312f7a7b91624cab57` | non_address_book | registry | unknown | verified | review: no_fresh_structural_match | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| candidate review | ERC7540VaultFactory<br>`0x6f9dba3d3a3ab083bca60ef82784cf12a6ec24b8` | non_address_book | registry | unknown | verified | review: no_fresh_structural_match | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| candidate review | ERC7540VaultFactory<br>`0xaffc66ed2964d80b2568e8e1b8c0e25449325fc7` | non_address_book | registry | unknown | verified | review: no_fresh_structural_match | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| candidate review | Guardian<br>`0x09ab10a9c3e6eac1d18270a2322b6113f4c7f5e8` | non_address_book | governance | unknown | verified | review: no_fresh_structural_match | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| candidate review | LiquidityPoolFactory<br>`0x77f48b2c942e6f3ac2232568d560e423c441386a` | non_address_book | registry | unknown | verified | review: no_fresh_structural_match | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| candidate review | PauseAdmin<br>`0x634f036fe66579e901c7ba34e33df422e37a0037` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| candidate review | PoolManager<br>`0x8841717f4a0552505375a478e25b18ea35976067` | non_address_book | core_logic | unknown | verified | review: no_fresh_structural_match | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| candidate review | RestrictionManagerFactory<br>`0xf4d7f6919ef0b495a2551f7299324961f29ae7ac` | non_address_book | registry | unknown | verified | review: no_fresh_structural_match | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| contamination review | GasService<br>`0x3c9c09c4cfda9d2c35142aaea706e9fc9ea28f27` | non_address_book | unknown | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| contamination review | InvestmentManager<br>`0x1bfa7ec3e9d564e540801085283fcf39dc103164` | non_address_book | operational_periphery | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| contamination review | RelinkV2Eth<br>`0x5a110bc4fdd01b193fdadddd38231dd098274a06` | non_address_book | token | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| contamination review | Spell<br>`0x464d301854ac5082a356ee5814e57168fa1e44e0` | non_address_book | unknown | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| contamination review | SpellEthereum<br>`0x200116c55b4a97f59da94ca8dd6e91337ebe0420` | non_address_book | unknown | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| contamination review | UserEscrow<br>`0x9fc3a3bcedc1cab14efc1b7ef45dfbdd3d17c9d7` | non_address_book | operational_periphery | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| contamination review | GasService<br>`0x09ab10a9c3e6eac1d18270a2322b6113f4c7f5e8` | non_address_book | unknown | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| contamination review | SpellBase<br>`0x4035fc21ffe4091a5dae280f6d9b79677f07f4fa` | non_address_book | unknown | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| contamination review | VaultOracle<br>`0xdf515ba34594b47dcfc809b82550b7aff03a30d8` | non_address_book | unknown | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| contamination review | SpellArbitrum<br>`0x9f0828789bd7c0c6ad779056db47db706c32f22f` | non_address_book | unknown | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | CentrifugeRouter<br>`0x2f445ba946044c5f508a63eeaf7eab673c69a1f4` | non_address_book | adapter | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | CentrifugeRouter<br>`0x32043a41f4be198c4f6590312f7a7b91624cab57` | non_address_book | adapter | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | Gateway<br>`0x634f036fe66579e901c7ba34e33df422e37a0037` | non_address_book | unknown | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | Gateway<br>`0x7829e5ca4286df66e9f58160544097db517a3b8c` | non_address_book | unknown | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | InvestmentManager<br>`0x427a1ce127b1775e4cbd4f58ad468b9f832ea7e9` | non_address_book | operational_periphery | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | InvestmentManager<br>`0xbbf0ab988691db1892adaf7f0ef560ca4c6dd73a` | non_address_book | operational_periphery | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | InvestmentManager<br>`0xe79f06573d6af1b66166a926483ba00924285d20` | non_address_book | operational_periphery | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | Messages<br>`0xaf9f6ac63c057eb7f59b6fae2c3d447191b58ea5` | non_address_book | unknown | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | Spell<br>`0x48c134d859adfc87753f6882b3a9d2b0081963fd` | non_address_book | unknown | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | Spell<br>`0x7b2004f6028c35ef69ba84bd055074c18bab602f` | non_address_book | unknown | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | Spell<br>`0xa3ce97352c1469884eef3547ec9362329fe78cf0` | non_address_book | unknown | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | Spell<br>`0xcfbd142ec8f00bbf5f1aa22f66abf2eb476948a7` | non_address_book | unknown | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | SpellEthereum<br>`0xf35501e7fc4a076e744dbafa883ced74ccf5009d` | non_address_book | unknown | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | CentrifugeRouter<br>`0x54836e16ab6ba542a1eea2e64e05b3eb6a2fca7b` | non_address_book | unknown | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | CentrifugeRouter<br>`0xf35501e7fc4a076e744dbafa883ced74ccf5009d` | non_address_book | unknown | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | GasService<br>`0x32043a41f4be198c4f6590312f7a7b91624cab57` | non_address_book | unknown | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | Gateway<br>`0x3423d288f2c04eb072ebb973f8c8b9b73caa4361` | non_address_book | unknown | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | Gateway<br>`0x634f036fe66579e901c7ba34e33df422e37a0037` | non_address_book | unknown | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | Gateway<br>`0xbbaf0e2be11e90b92ea0929e7bda28f5bdb22d29` | non_address_book | unknown | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | InvestmentManager<br>`0x36b87b860857e6a6d4c2d24be11dc9b230f00f03` | non_address_book | unknown | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | InvestmentManager<br>`0x3c9c09c4cfda9d2c35142aaea706e9fc9ea28f27` | non_address_book | unknown | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | InvestmentManager<br>`0xbbf0ab988691db1892adaf7f0ef560ca4c6dd73a` | non_address_book | unknown | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | InvestmentManager<br>`0xc437514fd99d46505757bca95261430a57f752d4` | non_address_book | unknown | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | Messages<br>`0xaf9f6ac63c057eb7f59b6fae2c3d447191b58ea5` | non_address_book | unknown | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | SpellBase<br>`0x4a9731c94627591b9f4fa77fd54bc0f1fb8ce880` | non_address_book | unknown | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | UserEscrow<br>`0x9fc3a3bcedc1cab14efc1b7ef45dfbdd3d17c9d7` | non_address_book | unknown | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | CentrifugeRouter<br>`0x2f445ba946044c5f508a63eeaf7eab673c69a1f4` | non_address_book | adapter | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | CentrifugeRouter<br>`0xa3ce97352c1469884eef3547ec9362329fe78cf0` | non_address_book | adapter | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | GasService<br>`0x3c9c09c4cfda9d2c35142aaea706e9fc9ea28f27` | non_address_book | unknown | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | Gateway<br>`0x7829e5ca4286df66e9f58160544097db517a3b8c` | non_address_book | unknown | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | InvestmentManager<br>`0x6b8d011ecab5e84aac2686eb103b33977c52fd64` | non_address_book | operational_periphery | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | InvestmentManager<br>`0x7f192f34499ddb2be06c4754cff2a21c4b056994` | non_address_book | operational_periphery | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | InvestmentManager<br>`0xa85cb660d5dc25b6d9e5fd291ad5e5034b1aaed7` | non_address_book | operational_periphery | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | InvestmentManager<br>`0xe79f06573d6af1b66166a926483ba00924285d20` | non_address_book | operational_periphery | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | Messages<br>`0x811f7bd79d9cf392f6a60c8e8f570c96769d92c3` | non_address_book | unknown | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | SpellEthereum<br>`0x36b87b860857e6a6d4c2d24be11dc9b230f00f03` | non_address_book | unknown | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| source verified unclassified | UserEscrow<br>`0x9fc3a3bcedc1cab14efc1b7ef45dfbdd3d17c9d7` | non_address_book | operational_periphery | unknown | verified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| unverified unclassified | UnnamedContract<br>`0x2712fe754119eab4499495494919f97b2df18dca` | non_address_book | unknown | unknown | unverified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| unverified unclassified | UnnamedContract<br>`0xb31234b73fece49fc88576d7d187919ab114595d` | non_address_book | unknown | unknown | unverified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| unverified unclassified | UnnamedContract<br>`0x78e9e622a57f70f1e0ec652a4931e4e278e58142` | non_address_book | unknown | unknown | unverified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| unverified unclassified | UnnamedContract<br>`0xaf9f6ac63c057eb7f59b6fae2c3d447191b58ea5` | non_address_book | unknown | unknown | unverified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
+| unverified unclassified | UnnamedContract<br>`0xfd3791491999fb58f002eb2fa16e30290806d0da` | non_address_book | unknown | unknown | unverified | n/a | `0x7270b20603fbb3df0921381670fbd62b9991ada4` |
 
 ## Audit Inventory
 

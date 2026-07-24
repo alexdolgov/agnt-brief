@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Tulipa Capital (`tulipa-capital`)
 - Website: [https://www.tulipa.capital](https://www.tulipa.capital)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: avalanche, base, berachain, bsc, ethereum
 - Contract surface: 10 unique implementations (22 raw deployments)
 - Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
@@ -117,6 +117,34 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 - None
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 12
+- Live contracts: 0
+- Unknown liveness contracts: 12
+- Source-verified contracts: 12
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: source verified unclassified=12
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| source verified unclassified | BeaconProxy<br>`0x8092ca384d44260ea4feaf7457b629b8dc6f88f0` | non_address_book | unknown | unknown | verified | n/a | `0x8846189a4e46997dd30fd9e8be48c1fa1b846920` |
+| source verified unclassified | BeaconProxy<br>`0xab4ac28d10a4bc279ad073b1d74bfa0e385c010c` | non_address_book | unknown | unknown | verified | n/a | `0x8846189a4e46997dd30fd9e8be48c1fa1b846920` |
+| source verified unclassified | BeaconProxy<br>`0xb09f761cb13baca8ec087ac476647361b6314f98` | non_address_book | unknown | unknown | verified | n/a | `0x8846189a4e46997dd30fd9e8be48c1fa1b846920` |
+| source verified unclassified | BeaconProxy<br>`0xbc29b6c682c447ddc3143b3d8ba781163fc8a6f2` | non_address_book | unknown | unknown | verified | n/a | `0x8846189a4e46997dd30fd9e8be48c1fa1b846920` |
+| source verified unclassified | BeaconProxy<br>`0xfce2064b4221c54651b21c868064a23695e78f09` | non_address_book | unknown | unknown | verified | n/a | `0x8846189a4e46997dd30fd9e8be48c1fa1b846920` |
+| source verified unclassified | UpgradeableBeacon<br>`0x16648324d68b86e341051767e749f9f074714228` | non_address_book | unknown | unknown | verified | n/a | `0x8846189a4e46997dd30fd9e8be48c1fa1b846920` |
+| source verified unclassified | UpgradeableBeacon<br>`0x652716fad571f04d26a3c8ffd9e593f17123ab20` | non_address_book | unknown | unknown | verified | n/a | `0x8846189a4e46997dd30fd9e8be48c1fa1b846920` |
+| source verified unclassified | Vault<br>`0x097c94fbf0afa1b994af7ea13ecb5ab609602976` | non_address_book | unknown | unknown | verified | n/a | `0x8846189a4e46997dd30fd9e8be48c1fa1b846920` |
+| source verified unclassified | Vault<br>`0x45b6969152a186bafc524048f36a160fac096d50` | non_address_book | unknown | unknown | verified | n/a | `0x8846189a4e46997dd30fd9e8be48c1fa1b846920` |
+| source verified unclassified | Vault<br>`0x71652d4898de9a7dd35e472a5fe4577ec69d82f2` | non_address_book | unknown | unknown | verified | n/a | `0x8846189a4e46997dd30fd9e8be48c1fa1b846920` |
+| source verified unclassified | Vault<br>`0xd51a0523699c6f415ca6f9ebacb7e9d6c5471404` | non_address_book | unknown | unknown | verified | n/a | `0x8846189a4e46997dd30fd9e8be48c1fa1b846920` |
+| source verified unclassified | Vault0_2_1<br>`0x6a5ea384e394083149ce39db29d5787a658aa98a` | non_address_book | unknown | unknown | verified | n/a | `0x8846189a4e46997dd30fd9e8be48c1fa1b846920` |
 
 ## Audit Inventory
 

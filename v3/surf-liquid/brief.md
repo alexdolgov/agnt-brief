@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Surf Liquid (`surf-liquid`)
 - Website: [https://surfliquid.com/](https://surfliquid.com/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: arbitrum, base, ethereum, polygon
-- Contract surface: 6 unique implementations (6 raw deployments)
+- Contract surface: 6 unique implementations (8 raw deployments)
 - Coverage basis: 0/1 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $246,098.07
 - On-chain TVL (included contracts): n/a
@@ -80,7 +80,7 @@ The pinned logic-topography run contains 1 contract row(s) across base, ethereum
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 6
-- Raw deployments: 6
+- Raw deployments: 8
 - Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -107,8 +107,8 @@ The pinned logic-topography run contains 1 contract row(s) across base, ethereum
 | BridgeLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xab71119e39d1d51b8dc0d0b72ab5e31539cce284` | ⚠️ Unaudited |
 | BundlerLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x84be6e2916c614c183b9b603073187bbbd24c99b` | ⚠️ Unaudited |
 | DirectDepositLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8888db40e2732a66610c52e74f525258344b9178` | ⚠️ Unaudited |
-| UserVaultFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x8fa50dea8db10987d7d22ac092001c3613c18779` | ⚠️ Unaudited |
-| VaultRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x98a0def9c959ec934df02141291303819369f271` | ⚠️ Unaudited |
+| UserVaultFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x8fa50dea8db10987d7d22ac092001c3613c18779`; ethereum `0x990d4056646240f82808e525dd645896a541b654` | ⚠️ Unaudited |
+| VaultRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x98a0def9c959ec934df02141291303819369f271`; ethereum `0xb5d34ae5b2d5a08494185f06a3e991cc7b260206` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -127,6 +127,24 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 - None
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 2
+- Live contracts: 0
+- Unknown liveness contracts: 2
+- Source-verified contracts: 0
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: unverified unclassified=2
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| unverified unclassified | UnnamedContract<br>`0x990d4056646240f82808e525dd645896a541b654` | non_address_book | unknown | unknown | unverified | n/a | `0xf5ae9affc314bd2c235a33660756b19ad859996c` |
+| unverified unclassified | UnnamedContract<br>`0xb5d34ae5b2d5a08494185f06a3e991cc7b260206` | non_address_book | unknown | unknown | unverified | n/a | `0xf5ae9affc314bd2c235a33660756b19ad859996c` |
 
 ## Audit Inventory
 

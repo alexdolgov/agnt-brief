@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Liquity (`liquity`)
 - Website: [https://www.liquity.org/](https://www.liquity.org/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: arbitrum, avalanche, base, berachain, ethereum, hyperliquid, optimism, scroll, sonic, swellchain
-- Contract surface: 100 unique implementations (119 raw deployments)
+- Contract surface: 102 unique implementations (121 raw deployments)
 - Coverage basis: 5/65 confirmed own live verified implementations (7.7%); conservative 7.7% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $204,759,211.00
 - On-chain TVL (included contracts): n/a
@@ -49,7 +49,7 @@ The pinned logic-topography run contains 65 contract row(s) across arbitrum, ava
 ### Forked Contracts
 
 **ActivePool** (`0x531a8f99c70d6a56a7cee02d6b4281650d7919a0`, chain 1)
-Origin: liquity (`0xeb5a8c825582965f1d84606e078620a84ab16afe`)
+Origin: liquity (`0xeb5a8c...b16afe`)
 Containment: 100.0% - 26 functions inherited
 Centroid audit status: pending_validation
 
@@ -58,7 +58,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **ActivePool** (`0x9074d72cc82dad1e13e454755aa8f144c479532f`, chain 1)
-Origin: liquity (`0xeb5a8c825582965f1d84606e078620a84ab16afe`)
+Origin: liquity (`0xeb5a8c...b16afe`)
 Containment: 100.0% - 26 functions inherited
 Centroid audit status: pending_validation
 
@@ -67,7 +67,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **AddressesRegistry** (`0x6106046f031a22713697e04c08b330ddaf3e8789`, chain 1)
-Origin: liquity (`0x8d733f7ea7c23cbea7c613b6ebd845d46d3aac54`)
+Origin: liquity (`0x8d733f...3aac54`)
 Containment: 100.0% - 23 functions inherited
 Centroid audit status: pending_validation
 
@@ -76,7 +76,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **BorrowerOperations** (`0xa741a32f9dcfe6adba088fd0f97e90742d7d5da3`, chain 1)
-Origin: liquity (`0x372abd1810eaf23cb9d941bbe7596dfb2c46bc65`)
+Origin: liquity (`0x372abd...46bc65`)
 Containment: 100.0% - 40 functions inherited
 Centroid audit status: pending_validation
 
@@ -85,7 +85,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **BorrowerOperations** (`0xe8119fc02953b27a1b48d2573855738485a17329`, chain 1)
-Origin: liquity (`0x372abd1810eaf23cb9d941bbe7596dfb2c46bc65`)
+Origin: liquity (`0x372abd...46bc65`)
 Containment: 100.0% - 40 functions inherited
 Centroid audit status: pending_validation
 
@@ -94,7 +94,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **GasCompZapper** (`0xbe8b230dcd12e246f5edc5c103cc98be68ab636f`, chain 1)
-Origin: liquity (`0xbd69d3e0ea967d146e925b7572b765c8e9c4127d`)
+Origin: liquity (`0xbd69d3...c4127d`)
 Containment: 100.0% - 21 functions inherited
 Centroid audit status: pending_validation
 
@@ -103,7 +103,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **LeverageLSTZapper** (`0x75036b1d6de5665c60f5c33bb4a64e8e123211a2`, chain 1)
-Origin: liquity (`0xe85230de04147c4ea363b21cdb801c1c19df0a56`)
+Origin: liquity (`0xe85230...df0a56`)
 Containment: 100.0% - 28 functions inherited
 Centroid audit status: pending_validation
 
@@ -112,7 +112,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **SortedTroves** (`0x14d8d8011df2b396ed2bbc4959bb73250324f386`, chain 1)
-Origin: liquity (`0xa25269e41bd072513849f2e64ad221e84f3063f4`)
+Origin: liquity (`0xa25269...3063f4`)
 Containment: 100.0% - 22 functions inherited
 Centroid audit status: pending_validation
 
@@ -121,7 +121,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **SortedTroves** (`0x84eb85a8c25049255614f0536bea8f31682e86f1`, chain 1)
-Origin: liquity (`0xa25269e41bd072513849f2e64ad221e84f3063f4`)
+Origin: liquity (`0xa25269...3063f4`)
 Containment: 100.0% - 22 functions inherited
 Centroid audit status: pending_validation
 
@@ -130,7 +130,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **StabilityPool** (`0x9502b7c397e9aa22fe9db7ef7daf21cd2aebe56b`, chain 1)
-Origin: liquity (`0x5721cbbd64fc7ae3ef44a0a3f9a790a9264cf9bf`)
+Origin: liquity (`0x5721cb...4cf9bf`)
 Containment: 100.0% - 25 functions inherited
 Centroid audit status: pending_validation
 
@@ -139,7 +139,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **StabilityPool** (`0xd442e41019b7f5c4dd78f50dc03726c446148695`, chain 1)
-Origin: liquity (`0x5721cbbd64fc7ae3ef44a0a3f9a790a9264cf9bf`)
+Origin: liquity (`0x5721cb...4cf9bf`)
 Containment: 100.0% - 25 functions inherited
 Centroid audit status: pending_validation
 
@@ -148,7 +148,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **TroveManager** (`0xa2895d6a3bf110561dfe4b71ca539d84e1928b22`, chain 1)
-Origin: liquity (`0x7bcb64b2c9206a5b699ed43363f6f98d4776cf5a`)
+Origin: liquity (`0x7bcb64...76cf5a`)
 Containment: 100.0% - 36 functions inherited
 Centroid audit status: pending_validation
 
@@ -157,7 +157,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **TroveManager** (`0xb2b2abeb5c357a234363ff5d180912d319e3e19e`, chain 1)
-Origin: liquity (`0x7bcb64b2c9206a5b699ed43363f6f98d4776cf5a`)
+Origin: liquity (`0x7bcb64...76cf5a`)
 Containment: 100.0% - 36 functions inherited
 Centroid audit status: pending_validation
 
@@ -236,15 +236,15 @@ Removals (removed from original): none
 - Coverage of address-book-owned deployed-live implementations: 5/65 (7.7%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 70 own, 1 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 29 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 31 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 1
-- Confirmed-live implementations: 70 of 100 unique; 30 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 70 of 102 unique; 32 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 5/87
 - Verified + Unaudited implementations: 82
 - Verified by bytecode match: 0
-- Unverified implementations: 13
-- Unique implementations: 100
-- Raw deployments: 119
+- Unverified implementations: 15
+- Unique implementations: 102
+- Raw deployments: 121
 - Audits discovered: 6 (6 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): n/a
@@ -372,7 +372,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (13)
+### ❓ Unverified (15)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -380,7 +380,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---:|---|---|---|---|
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x0000000000000000000000000000000000000000` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388517 | `0x0c76eae597afa2aa163a8c845f7e7e870256ac7e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2ebef24da09489218ba2becb01867f6daaedcd4b` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388521 | `0x2f60bab0072abec7058017f48d7256ec288c8686` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4c517d4e2c851ca76d7ec94b805269df0f2201de` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5cca549ca706c39d68156e5e0a72ccbc95f563d0` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x884acfa4593a6fdba0a9373007e48ea9af881c42` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf4a3fe99227f6060e4c1c62b557eee050b6483e4` | ❓ Unverified |
@@ -391,6 +393,28 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0xe9f1f1a93d1c0538bb119cd7df605c65f60baaec` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | swellchain | unit-388578 | `0x1a17b22d762c8cf2ca0f07e2b3c32e7481bb0d8c` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-388580 | `0x03569cc076654f82679c4ba2124d64774781b01d` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 6
+- Live contracts: 2
+- Unknown liveness contracts: 4
+- Source-verified contracts: 4
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: candidate review=1, contamination review=2, source verified unclassified=1, unverified unclassified=2
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| candidate review | RETHPriceFeed<br>`0x34f1e9c7dcc279ec70d3c4488eb2d80fba8b7b2b` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x83cfa33a2ee969f8add9a2acdcdc0d7e556e5ed0` |
+| contamination review | AddressesRegistry<br>`0x20f7c9ad66983f6523a0881d0f82406541417526` | project_anchor | unknown | live | verified | n/a | `0x83cfa33a2ee969f8add9a2acdcdc0d7e556e5ed0` |
+| contamination review | VotiumInitiative<br>`0x69efec83296c711db4a403b1ee281e87f99590d6` | non_address_book | unknown | unknown | verified | n/a | `0x83cfa33a2ee969f8add9a2acdcdc0d7e556e5ed0` |
+| source verified unclassified | VotiumInitiative<br>`0xb5d64a1afe7eadcc79b99bdfb932d406aae66aaa` | non_address_book | unknown | unknown | verified | n/a | `0x83cfa33a2ee969f8add9a2acdcdc0d7e556e5ed0` |
+| unverified unclassified | UnnamedContract<br>`0x2ebef24da09489218ba2becb01867f6daaedcd4b` | non_address_book | unknown | unknown | unverified | n/a | `0xa850535d3628cd4dfeb528dc85cfa93051ff2984` |
+| unverified unclassified | UnnamedContract<br>`0x4c517d4e2c851ca76d7ec94b805269df0f2201de` | non_address_book | unknown | unknown | unverified | n/a | `0xa850535d3628cd4dfeb528dc85cfa93051ff2984` |
 
 ## Audit Inventory
 
@@ -626,7 +650,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 82 |
 | upstream | 4 |
 | standard_library | 1 |
-| needs_review | 13 |
+| needs_review | 15 |
 
 ## Scope Matching Notes
 

@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Unichain Bridge (`unichain-bridge`)
 - Website: [https://www.unichain.org](https://www.unichain.org)
 - Lifecycle: unknown
-- Generated: 2026-07-17T12:00:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: ethereum, sepolia, unichain
-- Contract surface: 100 unique implementations (110 raw deployments)
+- Contract surface: 219 unique implementations (229 raw deployments)
 - Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $2,187,994.07
 - On-chain TVL (included contracts): n/a
@@ -59,15 +59,15 @@ The pinned logic-topography run contains 12 contract row(s) across ethereum, sep
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - Address-book implementation classification: 0 own, 68 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 32 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 4 standard proxy/library)
+- Outside the address book: 151 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 4 standard proxy/library)
 - Proxy deployments represented within implementation groups: 37
 - Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
 - All block-explorer-verified implementations audited (incl. non-live): 0/44
 - Verified + Unaudited implementations: 44
 - Verified by bytecode match: 0
-- Unverified implementations: 56
-- Unique implementations: 100
-- Raw deployments: 110
+- Unverified implementations: 175
+- Unique implementations: 219
+- Raw deployments: 229
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -147,7 +147,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (56)
+### ❓ Unverified (175)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -196,19 +196,301 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | unichain | n/a | `0xc3eacf0612346366db554c991d7858716db09f58` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | unichain | n/a | `0xd5d76fa166ab8d8ad4c9f61aaa81457b66cbe443` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | unichain | n/a | `0xef740bf23acae26f6492b10de645d6b98dc8eaf3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x03197bb07d1c3e2b4ef0ce9c5202cce6a009fa39` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x039711c1e4e9b22b4b7d739aa3afc4fbcedd1e3e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x05befd01fcc0a272ebe8b72c0cabb17a8513b798` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x0d83dab629f0e0f9d36c0cbc89b69a489f0751bd` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x0e039cf11d5558bce6e73664710097726493f105` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x103f7758fb2bed3292b366324f2e00f2f5ebe04e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x10ba4aa447bf27665bd0bd1e71dfede3295ca051` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x1402c464418dbd43717e278cda8a421b3f97404f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x14db7a45480bf50e2edd6c838890bc188f801661` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x18f649fa7beb7fbb948f0d4a18ab8aad2edc899f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x1950b0cb41784900bd6534906a1966390f60992a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x1bf3d91f41c2fae8da011194600b5722aff4eec9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x23399e324002c12f83cfe78adaccbfdcbff3adda` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x2913ddf55975c8a5908c898fb4d079a0884f05a4` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x2a82958845ddc647ce1d45f44a7038d6a2d363ac` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x2a9b205b08753052c121e6f9c7e4e6bf64e4d93c` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x2bf403e5353a7a082ef6bb3ae2be3b866d8d3ea4` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x2bf85a48e76ba5be475b4bca1c362da5f58c8c60` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x2c56d4146f14bf41aaf16b0ac646e12565b02dd3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x2f446ed1ae9405a82e48dc29797e888fc88fe89d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x30159d5658c9ef0de3415681e6ae6a286f0f0f02` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x322447f5bfa62f54a3a5ca1a77b1d4ce89fde30e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x324b37d835f99470ee60d328186965db47f6534e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x3303622d1710a919d776672a24a4fde968744b86` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x3523d98992a9c86283b7ebf72c598eee92d50b20` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x352bfd654a0698bdb5bf3ac0131b89f21ec7f82d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x3b7cbfca2748f28dff822e4b3c6526548af8a5a9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x3e0408c19cf89ce3d18dda4bda71ac605e54fbb7` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x3e490a77aebd53888f81f586612565b87b096c67` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x3ece79a99af1c63bb166b8385a77d192426d766a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x42b0d330f2b4213a6658d84aaa2fe3d24ffb850e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x44753c9162e58695302a598e64566f971aa4f6d6` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x448a37330a60494e666f6dd60ad48d930aeba381` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x449003c870b2f37eed9db01b2599dffdf0504030` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x4696b5e042755103fe558738bcd1ecee7a45ebfe` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x46d7210acab8c42f53866d06f320adb21ce8caff` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x49af13438152095c3ec7820cd57558404442d6e5` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x4a67cb29af51cedf70fc326e8c14b6ab01e7566c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x4cf110d1bd1387f8c0d7757de5e592ce0d0bc9b5` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x4e46b71d285ef388c29951fd71c0db12256ea254` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x50fe3978ec04d6803ce3ca30075046287c6f2948` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x52878a9ad02d5aaba22a735a017eecc485a3d0b6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x53732808e2a242efee9e1d33e06eb8d2864653cd` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x54010374029ae7370ab39fecc30e4af148e798e2` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x5743d86457f75a829838d9f4dce206196c1fb40d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x5c0e76db39f2c0279823718e65bdf236a4a1e94e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x5f33716fa747537100723325a99d155ed261b38b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x5f4cb4fe3f35d26be8487c8bf169c62f3993104f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x64ff329a096e2eb75c5a8dafba1ed7f0755e09ef` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x66c4ed7dafd8df4ad1e22e98568d56b80f70a690` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x67444705347186019e2f353c5c5cd776323fe357` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x6b3dc4d2318af361d9be6a84addfdf99d9b1f76d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x6c67dbd9d017efd998c6e51ccfb0590eb5b9d05e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x7019136b218ff39d20daf2c77987197e7b2d5c03` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x750f4ed83be8108694195ca24241fb71fed94285` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x766a1b930cbc5cdcbb92f8feca0a406156d13a81` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x7692fa89eb7027dd4e0606e0b0aeccac7c27e14a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x7806f28ae1fb8114d2164f26f42e157ec97de9c0` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x7c9a5556e300a12ecc956e0c2d91db288ec35604` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x7e4cc299aaa66baddea6e70ab502354683d89f97` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x7e51734fdb8eb85268d46a3658486e037ade724f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x80b349b9f26ef82e1e5114434a2078d9ebab6d42` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x8298e32e9d911c673fa91d82f103fa183b660191` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x849292f3bb4f87356f183232fbdae5bd4aa5d277` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x8b23b6ac0f430219ef65a197980d204fcb490b03` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x8d8a20ccbeae2bf13f4e7e97970a979097858758` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x90545d8e3faf85c74ab6c4078e8aae8c11e1566d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x90a9ecf0f894c3e197c708dddb011783e7ad3ba9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x91de55fe38619dd11b7ca7120c4de3d3dfc95a48` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x950f183a880cbd050511d47cc3138dd57294a2a5` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x9a40bccb33dc5200fa058eb0f4fbb836918cf1fe` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x9bb3794a3243d983419124f5880858f2c08b857d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0x9c4d2ca4a70ce0161057d92136db971d2fc863bd` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xa40c37473e6ceaadce5d98e92cf3724e3c057537` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xa71f3b2607e83d56f3aa44588ba19cc35a3190f2` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xa943bbe9e50107df0547d22a7f89b5c2e95ddbfe` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xa96d682cd73ffaf73c28fd0d3393c86e31e21cb3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xaa47be1a32646fb58a5ac505a146d1a1b17d8e8e` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0xad0a6f4f1503048c34d90df845c37c876407355a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xad289f50c46d363e687ddf204cd786c21675aa1c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xad39ffad7017885fd1260c3224bcd26c54e60ffc` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xae3a1a2b600147643a259bce31bdbb3d82ef686d` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0xaee94b9ab7752d3f7704bde212c0c6a0b701571d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xafb37731944e003f61e9506749305757fb72be4d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xb3779a1f9f075fa8b8ac2a9b9a89991b083e5823` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xb3fc9e7d7aa96c5d3d1a325c8a10661dbb64b743` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xb44bf2684073398e9d17374916ef24b45377f9f7` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xb92c6ac51e9b2ed50d8ba14d8c83cca88ba8930e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xba1425b2d48a732e3fadc99cde1b0647403571dc` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xbbcd15c3b70e65c692c2f8b9e05310af4f924c77` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xbd2dcc00cfd8806703b5b17635cf249355f38c8b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xbd86ef77145fe75433cfb662416102eee6a55040` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xc06e82969c81ca6907107dd770a79a6883cf5064` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xc29edca97d04170c52cb3a83c4d3bcc80cb9adae` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xc3aa33d126e36b9331c9e171ed2c5c2d101e76bd` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xc6f8efcee11652cf86eee05f0b51566209a3d34f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xcc226c023f2b4a35231d8e7f4e6202873751a6ee` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xce4d233d5e03644b531a807475c7bf25181ce7a7` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xceb83618b3b335ec11e2b8c6edae73686a678c4f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xcfa1f89fcf74e2e3b494b636345d2ea1073ff489` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xd0c90c9b5f0e0c736a62982422c8dac530089e12` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xd22859dd87ea47ce8549153a14bbc13c110c2dd2` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xd38d37a1144a26f71f5b38a3815c97c202014d8d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xd41989667deab0bb926ce84916b71cbc12810d48` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xd56fd9f7ef538b0e0336dbdf183601e48033c3c9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xd666f4a3bf187b623ddd41bff44d077a4fb17c43` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xd8847f3edd551578848b91617823464a06776525` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xdbf18388ddad1e65c4e5de8de038e5d74a00140e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xdc9be7a8c23f5e0cf92639103bc60f0201851fc7` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xdf5a8fe735748f704bf4891ee9be7b5b5d850804` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0xdf7977c3005730329a160637e8cb9f1675a4d9be` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xe161943c157fd3e09fa83b3fd943bd675113822c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xe2dfc0251e3ee918458d5dde391a3ede0299b546` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xe307b109bb4fb8bdc5b77c14d216f4f55093ecc4` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xe444dcc7c113c50cc11cf0e9807c1f0e60321f6a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xe5cb876b5d2ee804949c0cbee3eb57a07c79287c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xe5fc562069a361747305cd49c523fad318e59166` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0xe7e23eba32a6fd2ac79dd5ec72fe7f6217b41bdc` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xe810a06d3a076bd4f2fb4c271ec9e21f12423c96` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xe988c95ec28403a5393ecf0437e96075b589a398` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0xea58fca6849d79ead1f26608855c2d6407d54ce2` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xeaef3c3f4ca187a29845f9c391ccce3f27d4baa6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xee0ce4029ac13d3e5ac77a8c96b15940ce70ea2e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xee1eed220abde0cfbe367839923bd130b5a9a6dc` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0xef1295ed471dfec101691b946fb6b4654e88f98a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xef6af6fac366bfb518cb6014694ba7ddf4ed5e3c` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0xeff73e5aa3b9aec32c659aa3e00444d20a84394b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xf0e13c830b94ea6b47708f7f9e02c0c9f0165ecf` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xf55629eefeae5a985916812424d3bb0649cf9582` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xf782f43e5b5301dc50ed700a1eddc93b1cc76a26` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sepolia | n/a | `0xf82ec77fa37f1f5d3bff2486d9f1497212789c7c` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0xf971f1b0d80eb769577135b490b913825bfcf00b` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 147
+- Live contracts: 0
+- Unknown liveness contracts: 147
+- Source-verified contracts: 28
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: candidate review=26, contamination review=1, source verified unclassified=1, unverified unclassified=119
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| candidate review | AddressManager<br>`0x7e2e1fe92d67f0199708056a22c34d1331b8def6` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xfff2f7417be1a4e2ad1f26f538ad6f67d0fe11f2` |
+| candidate review | AddressManager<br>`0x8098f676033a377b9defe302e9fe6877cd63d575` | retained_scope_excluded_inventory | unknown | unknown | verified | review: no_fresh_structural_match | `0xfff2f7417be1a4e2ad1f26f538ad6f67d0fe11f2` |
+| candidate review | AddressManager<br>`0xc9fd0ff9a7aca948fe21cc515e169795179fce07` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xfff2f7417be1a4e2ad1f26f538ad6f67d0fe11f2` |
+| candidate review | L1ChugSplashProxy<br>`0x9e7569992f417cad770b8114d2df4078f0b98eb5` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xfff2f7417be1a4e2ad1f26f538ad6f67d0fe11f2` |
+| candidate review | PermissionedDisputeGame<br>`0xa35f3d6b5c1ab1de36fe830fc4288fd585685772` | non_address_book | unknown | unknown | verified | review: missing_independent_ownership_evidence | `0xfff2f7417be1a4e2ad1f26f538ad6f67d0fe11f2` |
+| candidate review | PermissionedDisputeGame<br>`0xb2872ec9e7074d5838d9a27ae06c53dba8669e8d` | non_address_book | unknown | unknown | verified | review: missing_independent_ownership_evidence | `0xfff2f7417be1a4e2ad1f26f538ad6f67d0fe11f2` |
+| candidate review | Proxy<br>`0x1f5ef8626a313a32d314664f6d42431f92f2d6c1` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xfff2f7417be1a4e2ad1f26f538ad6f67d0fe11f2` |
+| candidate review | Proxy<br>`0x3080177e8503b63aa97f15caba69099d7668f339` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xfff2f7417be1a4e2ad1f26f538ad6f67d0fe11f2` |
+| candidate review | Proxy<br>`0x318a642db9e24a85318b8bf18efd5287ba38643b` | retained_scope_excluded_inventory | unknown | unknown | verified | review: no_fresh_structural_match | `0xfff2f7417be1a4e2ad1f26f538ad6f67d0fe11f2` |
+| candidate review | Proxy<br>`0x40152233ec04c4c9894ab804f7a932ee8dd76e48` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xfff2f7417be1a4e2ad1f26f538ad6f67d0fe11f2` |
+| candidate review | Proxy<br>`0x4755de7b3ea590d76eb15e1217456e948075826f` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xfff2f7417be1a4e2ad1f26f538ad6f67d0fe11f2` |
+| candidate review | Proxy<br>`0x7d8ea656d7417229f420b0c87f6428baa8499d70` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xfff2f7417be1a4e2ad1f26f538ad6f67d0fe11f2` |
+| candidate review | Proxy<br>`0x86a380b7ce4f036cf7e1a4fb1dd1ed9349989be9` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xfff2f7417be1a4e2ad1f26f538ad6f67d0fe11f2` |
+| candidate review | Proxy<br>`0x86b30e3263250c9f947cdb711a2c16cda81d9adf` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xfff2f7417be1a4e2ad1f26f538ad6f67d0fe11f2` |
+| candidate review | Proxy<br>`0x92ac36624399fa4bacf32bdc0f4f0d50cb04230d` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xfff2f7417be1a4e2ad1f26f538ad6f67d0fe11f2` |
+| candidate review | Proxy<br>`0x98742ec6718b49c32aee6daccf5245980fa5d286` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xfff2f7417be1a4e2ad1f26f538ad6f67d0fe11f2` |
+| candidate review | Proxy<br>`0xa2b597eaeacb6f627e088cbead319e934ed5edad` | retained_scope_excluded_inventory | unknown | unknown | verified | review: no_fresh_structural_match | `0xfff2f7417be1a4e2ad1f26f538ad6f67d0fe11f2` |
+| candidate review | Proxy<br>`0xc407398d063f942febbcc6f80a156b47f3f1bda6` | retained_scope_excluded_inventory | unknown | unknown | verified | review: no_fresh_structural_match | `0xfff2f7417be1a4e2ad1f26f538ad6f67d0fe11f2` |
+| candidate review | Proxy<br>`0xc49b2df077ef27847d8ade07fbf734a1fe9a9da2` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xfff2f7417be1a4e2ad1f26f538ad6f67d0fe11f2` |
+| candidate review | Proxy<br>`0xd04d0d87e0bd4d2e50286760a3ef323fea6849cf` | retained_scope_excluded_inventory | unknown | unknown | verified | review: no_fresh_structural_match | `0xfff2f7417be1a4e2ad1f26f538ad6f67d0fe11f2` |
+| candidate review | Proxy<br>`0xd3a31c6de8f346e5b456fbc3e4b5eabb3a2b3963` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xfff2f7417be1a4e2ad1f26f538ad6f67d0fe11f2` |
+| candidate review | ProxyAdmin<br>`0x3b73fa8d82f511a3cae17b5a26e4e1a2d5e2f2a4` | retained_scope_excluded_inventory | unknown | unknown | verified | review: no_fresh_structural_match | `0xfff2f7417be1a4e2ad1f26f538ad6f67d0fe11f2` |
+| candidate review | ProxyAdmin<br>`0x48ff88f3e71c05217f6572b735e1cb5f2a80fa9d` | non_address_book | unknown | unknown | verified | review: missing_fingerprint | `0xfff2f7417be1a4e2ad1f26f538ad6f67d0fe11f2` |
+| candidate review | ProxyAdmin<br>`0xb1b8a68841220fa442048f9c2f976315478ab3b9` | non_address_book | unknown | unknown | verified | review: missing_fingerprint | `0xfff2f7417be1a4e2ad1f26f538ad6f67d0fe11f2` |
+| candidate review | ResolvedDelegateProxy<br>`0x374454d6c756c8b594ff9aa799ad8dbfd93f2124` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xfff2f7417be1a4e2ad1f26f538ad6f67d0fe11f2` |
+| candidate review | ResolvedDelegateProxy<br>`0x9a3d64e386c18cb1d6d5179a9596a4b5736e98a6` | retained_scope_excluded_inventory | unknown | unknown | verified | review: no_fresh_structural_match | `0xfff2f7417be1a4e2ad1f26f538ad6f67d0fe11f2` |
+| contamination review | Challenger1of2<br>`0x35d539d303b1baf30ec59b81044fad70bc4efcd1` | non_address_book | unknown | unknown | verified | n/a | `0xfff2f7417be1a4e2ad1f26f538ad6f67d0fe11f2` |
+| source verified unclassified | OpStackTokenRatePusher<br>`0x3f9600439ad97fc6f55c2ac7c118f8fd0595eb74` | non_address_book | unknown | unknown | verified | n/a | `0xfb276cbd830b69103588b651ca78dd6ac4ee665e` |
+| unverified unclassified | UnnamedContract<br>`0x03197bb07d1c3e2b4ef0ce9c5202cce6a009fa39` | non_address_book | unknown | unknown | unverified | n/a | `0xd84d51c3400b1b232ebc0ce0883c10348a54cceb` |
+| unverified unclassified | UnnamedContract<br>`0x039711c1e4e9b22b4b7d739aa3afc4fbcedd1e3e` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x05befd01fcc0a272ebe8b72c0cabb17a8513b798` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x0e039cf11d5558bce6e73664710097726493f105` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x103f7758fb2bed3292b366324f2e00f2f5ebe04e` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x10ba4aa447bf27665bd0bd1e71dfede3295ca051` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x1402c464418dbd43717e278cda8a421b3f97404f` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x14db7a45480bf50e2edd6c838890bc188f801661` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x18f649fa7beb7fbb948f0d4a18ab8aad2edc899f` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x1950b0cb41784900bd6534906a1966390f60992a` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x1bf3d91f41c2fae8da011194600b5722aff4eec9` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x23399e324002c12f83cfe78adaccbfdcbff3adda` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x2913ddf55975c8a5908c898fb4d079a0884f05a4` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x2a82958845ddc647ce1d45f44a7038d6a2d363ac` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x2a9b205b08753052c121e6f9c7e4e6bf64e4d93c` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x2bf85a48e76ba5be475b4bca1c362da5f58c8c60` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x2c56d4146f14bf41aaf16b0ac646e12565b02dd3` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x2f446ed1ae9405a82e48dc29797e888fc88fe89d` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x30159d5658c9ef0de3415681e6ae6a286f0f0f02` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x322447f5bfa62f54a3a5ca1a77b1d4ce89fde30e` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x324b37d835f99470ee60d328186965db47f6534e` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x3303622d1710a919d776672a24a4fde968744b86` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x3523d98992a9c86283b7ebf72c598eee92d50b20` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x352bfd654a0698bdb5bf3ac0131b89f21ec7f82d` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x3b7cbfca2748f28dff822e4b3c6526548af8a5a9` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x3e0408c19cf89ce3d18dda4bda71ac605e54fbb7` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x3e490a77aebd53888f81f586612565b87b096c67` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x3ece79a99af1c63bb166b8385a77d192426d766a` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x42b0d330f2b4213a6658d84aaa2fe3d24ffb850e` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x44753c9162e58695302a598e64566f971aa4f6d6` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x449003c870b2f37eed9db01b2599dffdf0504030` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x46d7210acab8c42f53866d06f320adb21ce8caff` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x49af13438152095c3ec7820cd57558404442d6e5` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x4a67cb29af51cedf70fc326e8c14b6ab01e7566c` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x4cf110d1bd1387f8c0d7757de5e592ce0d0bc9b5` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x4e46b71d285ef388c29951fd71c0db12256ea254` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x50fe3978ec04d6803ce3ca30075046287c6f2948` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x52878a9ad02d5aaba22a735a017eecc485a3d0b6` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x53732808e2a242efee9e1d33e06eb8d2864653cd` | non_address_book | unknown | unknown | unverified | n/a | `0xd84d51c3400b1b232ebc0ce0883c10348a54cceb` |
+| unverified unclassified | UnnamedContract<br>`0x54010374029ae7370ab39fecc30e4af148e798e2` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x5743d86457f75a829838d9f4dce206196c1fb40d` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x5c0e76db39f2c0279823718e65bdf236a4a1e94e` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x5f33716fa747537100723325a99d155ed261b38b` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x5f4cb4fe3f35d26be8487c8bf169c62f3993104f` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x64ff329a096e2eb75c5a8dafba1ed7f0755e09ef` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x66c4ed7dafd8df4ad1e22e98568d56b80f70a690` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x67444705347186019e2f353c5c5cd776323fe357` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x6b3dc4d2318af361d9be6a84addfdf99d9b1f76d` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x6c67dbd9d017efd998c6e51ccfb0590eb5b9d05e` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x7019136b218ff39d20daf2c77987197e7b2d5c03` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x750f4ed83be8108694195ca24241fb71fed94285` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x766a1b930cbc5cdcbb92f8feca0a406156d13a81` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x7692fa89eb7027dd4e0606e0b0aeccac7c27e14a` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x7806f28ae1fb8114d2164f26f42e157ec97de9c0` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x7c9a5556e300a12ecc956e0c2d91db288ec35604` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x7e4cc299aaa66baddea6e70ab502354683d89f97` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x7e51734fdb8eb85268d46a3658486e037ade724f` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x80b349b9f26ef82e1e5114434a2078d9ebab6d42` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x8298e32e9d911c673fa91d82f103fa183b660191` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x849292f3bb4f87356f183232fbdae5bd4aa5d277` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x8b23b6ac0f430219ef65a197980d204fcb490b03` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x90545d8e3faf85c74ab6c4078e8aae8c11e1566d` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x90a9ecf0f894c3e197c708dddb011783e7ad3ba9` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x91de55fe38619dd11b7ca7120c4de3d3dfc95a48` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x950f183a880cbd050511d47cc3138dd57294a2a5` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x9a40bccb33dc5200fa058eb0f4fbb836918cf1fe` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x9bb3794a3243d983419124f5880858f2c08b857d` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0x9c4d2ca4a70ce0161057d92136db971d2fc863bd` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xa40c37473e6ceaadce5d98e92cf3724e3c057537` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xa71f3b2607e83d56f3aa44588ba19cc35a3190f2` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xa943bbe9e50107df0547d22a7f89b5c2e95ddbfe` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xa96d682cd73ffaf73c28fd0d3393c86e31e21cb3` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xaa47be1a32646fb58a5ac505a146d1a1b17d8e8e` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xad289f50c46d363e687ddf204cd786c21675aa1c` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xad39ffad7017885fd1260c3224bcd26c54e60ffc` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xae3a1a2b600147643a259bce31bdbb3d82ef686d` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xafb37731944e003f61e9506749305757fb72be4d` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xb3779a1f9f075fa8b8ac2a9b9a89991b083e5823` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xb3fc9e7d7aa96c5d3d1a325c8a10661dbb64b743` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xb44bf2684073398e9d17374916ef24b45377f9f7` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xb92c6ac51e9b2ed50d8ba14d8c83cca88ba8930e` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xba1425b2d48a732e3fadc99cde1b0647403571dc` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xbbcd15c3b70e65c692c2f8b9e05310af4f924c77` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xbd2dcc00cfd8806703b5b17635cf249355f38c8b` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xbd86ef77145fe75433cfb662416102eee6a55040` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xc06e82969c81ca6907107dd770a79a6883cf5064` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xc29edca97d04170c52cb3a83c4d3bcc80cb9adae` | non_address_book | unknown | unknown | unverified | n/a | `0xd84d51c3400b1b232ebc0ce0883c10348a54cceb` |
+| unverified unclassified | UnnamedContract<br>`0xc3aa33d126e36b9331c9e171ed2c5c2d101e76bd` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xc6f8efcee11652cf86eee05f0b51566209a3d34f` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xcc226c023f2b4a35231d8e7f4e6202873751a6ee` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xce4d233d5e03644b531a807475c7bf25181ce7a7` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xceb83618b3b335ec11e2b8c6edae73686a678c4f` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xcfa1f89fcf74e2e3b494b636345d2ea1073ff489` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xd0c90c9b5f0e0c736a62982422c8dac530089e12` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xd22859dd87ea47ce8549153a14bbc13c110c2dd2` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xd38d37a1144a26f71f5b38a3815c97c202014d8d` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xd41989667deab0bb926ce84916b71cbc12810d48` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xd56fd9f7ef538b0e0336dbdf183601e48033c3c9` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xd666f4a3bf187b623ddd41bff44d077a4fb17c43` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xd8847f3edd551578848b91617823464a06776525` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xdbf18388ddad1e65c4e5de8de038e5d74a00140e` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xdc9be7a8c23f5e0cf92639103bc60f0201851fc7` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xdf5a8fe735748f704bf4891ee9be7b5b5d850804` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xe161943c157fd3e09fa83b3fd943bd675113822c` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xe2dfc0251e3ee918458d5dde391a3ede0299b546` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xe307b109bb4fb8bdc5b77c14d216f4f55093ecc4` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xe444dcc7c113c50cc11cf0e9807c1f0e60321f6a` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xe5cb876b5d2ee804949c0cbee3eb57a07c79287c` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xe5fc562069a361747305cd49c523fad318e59166` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xe810a06d3a076bd4f2fb4c271ec9e21f12423c96` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xe988c95ec28403a5393ecf0437e96075b589a398` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xeaef3c3f4ca187a29845f9c391ccce3f27d4baa6` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xee0ce4029ac13d3e5ac77a8c96b15940ce70ea2e` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xee1eed220abde0cfbe367839923bd130b5a9a6dc` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xef6af6fac366bfb518cb6014694ba7ddf4ed5e3c` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xf0e13c830b94ea6b47708f7f9e02c0c9f0165ecf` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xf55629eefeae5a985916812424d3bb0649cf9582` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xf782f43e5b5301dc50ed700a1eddc93b1cc76a26` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
+| unverified unclassified | UnnamedContract<br>`0xf82ec77fa37f1f5d3bff2486d9f1497212789c7c` | non_address_book | unknown | unknown | unverified | n/a | `0xa4393cd576d3b4216f6602284a00f78570df76f8` |
 
 ## Audit Inventory
 
@@ -234,7 +516,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 37 |
 | upstream | 0 |
 | standard_library | 7 |
-| needs_review | 56 |
+| needs_review | 175 |
 
 ## Scope Matching Notes
 

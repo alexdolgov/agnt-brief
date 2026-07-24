@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Swell (`swell`)
 - Website: [https://www.swellnetwork.io/](https://www.swellnetwork.io/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: ethereum, swellchain
 - Contract surface: 52 unique implementations (61 raw deployments)
 - Coverage basis: 13/28 confirmed own live verified implementations (46.4%); conservative 46.4% with 0 needs-review implementation(s)
@@ -49,7 +49,7 @@ The pinned logic-topography run contains 37 contract row(s) across ethereum. Str
 ### Forked Contracts
 
 **Accountant** (`0x15a94d49fac6e23e17c1366c999117a1de8ba7b6`, chain 1)
-Origin: yearn (`0x1f399808fe52d0e960cab84b6b54d5707ab27c8a`)
+Origin: yearn (`0x1f3998...b27c8a`)
 Containment: 100.0% - 17 functions inherited
 Centroid audit status: pending_validation
 
@@ -58,7 +58,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **Accountant** (`0x48dacb0b938aa6d5752ca2ea23cd8593fafb3825`, chain 1)
-Origin: yearn (`0x1f399808fe52d0e960cab84b6b54d5707ab27c8a`)
+Origin: yearn (`0x1f3998...b27c8a`)
 Containment: 100.0% - 17 functions inherited
 Centroid audit status: pending_validation
 
@@ -67,7 +67,7 @@ Additions (unaudited): none
 Removals (removed from original): none
 
 **DelayedWithdraw** (`0x805c6d95c9e707332215f42cb89f93752ffa55b8`, chain 1)
-Origin: mantle-restaking (`0x12be34be067ebd201f6eaf78a861d90b2a66b113`)
+Origin: mantle-restaking (`0x12be34...66b113`)
 Containment: 88.2% - 15 functions inherited
 Centroid audit status: pending_validation
 
@@ -80,7 +80,7 @@ Removals (removed from original):
 - withdrawNonBoringToken(ERC20,uint256)
 
 **Registry** (`0x88b96f11ab91d282b4200b73fe401f6fc388603a`, chain 1)
-Origin: yearn (`0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038`)
+Origin: yearn (`0xd40ecf...45b038`)
 Containment: 89.5% - 17 functions inherited
 Centroid audit status: pending_validation
 
@@ -91,7 +91,7 @@ Removals (removed from original):
 - setLegacyRegistry(address)
 
 **Registry** (`0xe5fcbde076f36bb076170758f8e3aec7412c5f91`, chain 1)
-Origin: yearn (`0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038`)
+Origin: yearn (`0xd40ecf...45b038`)
 Containment: 89.5% - 17 functions inherited
 Centroid audit status: pending_validation
 
@@ -102,7 +102,7 @@ Removals (removed from original):
 - setLegacyRegistry(address)
 
 **RoleManager** (`0xa1a3257813ed45d91e9c45e03c66fcdd54b4e7c1`, chain 1)
-Origin: lido (`0x1bb44f9d91b4276621550aeea5d2d96279975bf3`)
+Origin: lido (`0x1bb44f...975bf3`)
 Containment: 100.0% - 37 functions inherited
 Centroid audit status: pending_validation
 
@@ -257,6 +257,37 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---:|---|---|---|---|
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-393548 | `0x05fae28773ab9dafd5c8997acee5099fa0d1f219` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-393601 | `0xaae0b305b3f1edde7b11b680d4fa9252f7a1c524` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 15
+- Live contracts: 2
+- Unknown liveness contracts: 13
+- Source-verified contracts: 15
+- Currently scope-matched contracts retained as-is: 1
+- Classification counts: currently scope matched=1, candidate review=6, contamination review=3, source verified unclassified=5
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| currently scope matched | AeraStrategy<br>`0x8041ba598f0e656ebe80c67289efb42c09e86ae3` | project_anchor | unknown | live | verified | n/a | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
+| candidate review | RoleManager<br>`0x1bb44f9d91b4276621550aeea5d2d96279975bf3` | non_address_book | unknown | unknown | verified | review: missing_independent_ownership_evidence | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
+| candidate review | RoleManager<br>`0x8413e65374fca711af5eaddcf7191461a1f4d6af` | non_address_book | unknown | unknown | verified | review: missing_independent_ownership_evidence | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
+| candidate review | RoleManager<br>`0xd905418c46d8141dd80ba065e694abd4dfd5b4a1` | non_address_book | unknown | unknown | verified | review: missing_independent_ownership_evidence | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
+| candidate review | TransparentUpgradeableProxy<br>`0x2a6a2beebf6d65e03246087a41812db1c5c0caf8` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
+| candidate review | TransparentUpgradeableProxy<br>`0x69dda92dd42040c1290a7870b9fc1dc05e41836a` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
+| candidate review | TransparentUpgradeableProxy<br>`0x9e07af58c4c8893b0509e5d6d0ab8c92083fdae7` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
+| contamination review | AeraStrategy<br>`0x473f0adec308dc82440665d9fc7d5e26ebcf0e05` | project_anchor | unknown | live | verified | n/a | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
+| contamination review | OracleAdapter<br>`0xa419026809e2d13bc73dee13992e7873ab605981` | non_address_book | unknown | unknown | verified | n/a | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
+| contamination review | OssifiableProxy<br>`0xecf3376512edaca4fbb63d2c67d12a0397d24121` | non_address_book | unknown | unknown | verified | n/a | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
+| source verified unclassified | DelayedWithdraw<br>`0xec6de7031ce1a284d13b551ef8c4c04b6fdf773c` | non_address_book | unknown | unknown | verified | n/a | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
+| source verified unclassified | L1ERC20TokenBridge<br>`0x7e97935fbdf2a27ea35c4fdddacf5acd685e65a2` | non_address_book | unknown | unknown | verified | n/a | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
+| source verified unclassified | OFTAdapterSwETH<br>`0x2c1b3426e557d6756d8a8859a0779373236f94e2` | non_address_book | unknown | unknown | verified | n/a | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
+| source verified unclassified | RolesAuthority<br>`0x2db7583852c700549b710fd79dd1b54af2efa4dd` | non_address_book | unknown | unknown | verified | n/a | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
+| source verified unclassified | RSwellOFTAdapter<br>`0x428cda6c1994b926f75a4830d5baedee9db2ac58` | non_address_book | unknown | unknown | verified | n/a | `0xaf994551f4f940224825f54f810ed5439651e5f9` |
 
 ## Audit Inventory
 

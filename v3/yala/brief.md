@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Yala (`yala`)
 - Website: [https://www.yala.org](https://www.yala.org)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: ethereum
 - Contract surface: 30 unique implementations (31 raw deployments)
 - Coverage basis: 0/2 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
@@ -148,6 +148,33 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb977a8f701a97ae215a59b39a28bbaa1b09e2d33` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbf4c0b944ce46546d47315254fecbb991264239f` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xef2352f5b2bc5e9293483c2b53258928587867d6` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 11
+- Live contracts: 0
+- Unknown liveness contracts: 11
+- Source-verified contracts: 6
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: contamination review=3, source verified unclassified=3, unverified unclassified=5
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| contamination review | Factory<br>`0xca61a7be20d361b21c0ad7fa61e241c56202e66c` | non_address_book | unknown | unknown | verified | n/a | `0xc4a59122cd5e140ccc881327f62dcc2b1dc1451b` |
+| contamination review | PriceFeed<br>`0xf6fe5413361d8fa7df08c50a9211167ecd4f7b6e` | non_address_book | unknown | unknown | verified | n/a | `0xc4a59122cd5e140ccc881327f62dcc2b1dc1451b` |
+| contamination review | YalaCore<br>`0xd5eeaf2eeb9e1c7b88acfad3f41401925fc20c8b` | non_address_book | unknown | unknown | verified | n/a | `0xc4a59122cd5e140ccc881327f62dcc2b1dc1451b` |
+| source verified unclassified | GasPool<br>`0x306698f58c0670ea2be3d325e61582ae61268784` | non_address_book | unknown | unknown | verified | n/a | `0xc4a59122cd5e140ccc881327f62dcc2b1dc1451b` |
+| source verified unclassified | PSM<br>`0x4171e25e35fa13e98fb970d919b055c1866e6a12` | non_address_book | unknown | unknown | verified | n/a | `0xc4a59122cd5e140ccc881327f62dcc2b1dc1451b` |
+| source verified unclassified | TroveManager<br>`0xdcd922cba657b7c07fd114bf6734069bd66622f2` | non_address_book | unknown | unknown | verified | n/a | `0xc4a59122cd5e140ccc881327f62dcc2b1dc1451b` |
+| unverified unclassified | UnnamedContract<br>`0x0d2ebf9df0bd3627868bf5e7b1efba1ff8e95978` | non_address_book | unknown | unknown | unverified | n/a | `0xc4a59122cd5e140ccc881327f62dcc2b1dc1451b` |
+| unverified unclassified | UnnamedContract<br>`0x356123c7a8a120852b7cfd63ab012ca51c511950` | non_address_book | unknown | unknown | unverified | n/a | `0xc4a59122cd5e140ccc881327f62dcc2b1dc1451b` |
+| unverified unclassified | UnnamedContract<br>`0x599d9c155d0e79e9d8ef6e02db4e17a931807e8f` | non_address_book | unknown | unknown | unverified | n/a | `0xc4a59122cd5e140ccc881327f62dcc2b1dc1451b` |
+| unverified unclassified | UnnamedContract<br>`0x80010dfa9f4a5465ac5766943babae3e0f326e18` | non_address_book | unknown | unknown | unverified | n/a | `0xc4a59122cd5e140ccc881327f62dcc2b1dc1451b` |
+| unverified unclassified | UnnamedContract<br>`0xa96a92e0c640b5049fe871ad998823f10c9a9a4a` | non_address_book | unknown | unknown | unverified | n/a | `0xc4a59122cd5e140ccc881327f62dcc2b1dc1451b` |
 
 ## Audit Inventory
 

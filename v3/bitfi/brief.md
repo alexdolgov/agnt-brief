@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: BitFi (`bitfi`)
 - Website: [https://bitfi.org](https://bitfi.org)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: ailayer, base, bitlayer, bsc, ethereum
-- Contract surface: 15 unique implementations (15 raw deployments)
+- Contract surface: 26 unique implementations (27 raw deployments)
 - Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - DeFi Llama TVL: $264,654,912.00
 - On-chain TVL (included contracts): n/a
@@ -75,15 +75,15 @@ The activated project remains an explicit cohort member with an empty normalized
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
 - Address-book implementation classification: 9 own, 1 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 5 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 16 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 1
-- Confirmed-live implementations: 9 of 15 unique; 6 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 9 of 26 unique; 17 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 0/5
 - Verified + Unaudited implementations: 5
 - Verified by bytecode match: 0
-- Unverified implementations: 10
-- Unique implementations: 15
-- Raw deployments: 15
+- Unverified implementations: 21
+- Unique implementations: 26
+- Raw deployments: 27
 - Audits discovered: 5 (5 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -107,7 +107,7 @@ The activated project remains an explicit cohort member with an empty normalized
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | Bfbtc | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x128eb2baca6ac5416bed268d41c202fc41d55f1b` | ⚠️ Unaudited |
-| BfbtcOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x3f8c84fe47486156b81e74f08c4d9be3c3ab5f5b` | ⚠️ Unaudited |
+| BfbtcOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x3f8c84fe47486156b81e74f08c4d9be3c3ab5f5b`; base `0xa8e3684e4df9b7feb16a9146e6cc541eb513b3b8` | ⚠️ Unaudited |
 | BitFiStablecoinManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb69865f8fa4bfc67ab4ad233e36ac593a5d21f06` | ⚠️ Unaudited |
 | BitFiStablecoinZap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x140b5517df7e33878eb0a494d6882cfac54b66cb` | ⚠️ Unaudited |
 | StakedBitFiStablecoin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x688745d56f93924dbda1c2caa613adcbcea871c5` | ⚠️ Unaudited |
@@ -124,7 +124,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (10)
+### ❓ Unverified (21)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -132,14 +132,53 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---:|---|---|---|---|
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380600 | `0x0497dd14524dd59bcd76da7dc977a0f6120b1aca` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380602 | `0x0971cb672b4ef3e19284aa64717afb154a6fbedf` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x128eb2baca6ac5416bed268d41c202fc41d55f1b` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380603 | `0x1898f16583152a6af129e3df14f0c955ca6201f7` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3bbd33135621ce0d2faa023adec2faf5a7458a92` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4ca67a794051e036eefb5aa4b34fe2bd836069f0` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380604 | `0x4f85cbfdefbdb3fa96fcf1e38b0ee68db9ae438b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5363949018262d778a6ff7b4a16c82b4e5c78395` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | ethereum | unit-380605 | `0x5506570fd527c06902b51e33535943c9dc941bbe` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5f339e8811941271e9037a5d899766e3f5a7ff47` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x623f2774d9f27b59bc6b954544487532ce79d9df` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380606 | `0xa3deaa934a4cc648a45d8269a012894315e53518` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380607 | `0xa3eb7a9e57fca4e40b79e394ed5eb37fed205a24` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcdfb58c8c859cb3f62ebe9cf2767f9e036c7fb15` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd32224533b63ddeb63409010fe6c841350951734` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380609 | `0xde5d4ab42251ba9af6f247cf07c9a4793fa6ed88` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-380612 | `0x623f2774d9f27b59bc6b954544487532ce79d9df` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x9b974faa2987a16a39a4bb731cb2a191d31c54dd` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x128eb2baca6ac5416bed268d41c202fc41d55f1b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x623f2774d9f27b59bc6b954544487532ce79d9df` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | bitlayer | unit-380611 | `0xcdfb58c8c859cb3f62ebe9cf2767f9e036c7fb15` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 12
+- Live contracts: 0
+- Unknown liveness contracts: 12
+- Source-verified contracts: 0
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: unverified unclassified=12
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| unverified unclassified | UnnamedContract<br>`0x128eb2baca6ac5416bed268d41c202fc41d55f1b` | non_address_book | unknown | unknown | unverified | n/a | `0xd931401b37c3a368505e7ae6de700f2b0ad14ac6` |
+| unverified unclassified | UnnamedContract<br>`0x3bbd33135621ce0d2faa023adec2faf5a7458a92` | non_address_book | unknown | unknown | unverified | n/a | `0xd931401b37c3a368505e7ae6de700f2b0ad14ac6` |
+| unverified unclassified | UnnamedContract<br>`0x4ca67a794051e036eefb5aa4b34fe2bd836069f0` | non_address_book | unknown | unknown | unverified | n/a | `0xd931401b37c3a368505e7ae6de700f2b0ad14ac6` |
+| unverified unclassified | UnnamedContract<br>`0x5363949018262d778a6ff7b4a16c82b4e5c78395` | non_address_book | unknown | unknown | unverified | n/a | `0xd931401b37c3a368505e7ae6de700f2b0ad14ac6` |
+| unverified unclassified | UnnamedContract<br>`0x5f339e8811941271e9037a5d899766e3f5a7ff47` | non_address_book | unknown | unknown | unverified | n/a | `0xd931401b37c3a368505e7ae6de700f2b0ad14ac6` |
+| unverified unclassified | UnnamedContract<br>`0x623f2774d9f27b59bc6b954544487532ce79d9df` | non_address_book | unknown | unknown | unverified | n/a | `0xd931401b37c3a368505e7ae6de700f2b0ad14ac6` |
+| unverified unclassified | UnnamedContract<br>`0xcdfb58c8c859cb3f62ebe9cf2767f9e036c7fb15` | non_address_book | unknown | unknown | unverified | n/a | `0xd931401b37c3a368505e7ae6de700f2b0ad14ac6` |
+| unverified unclassified | UnnamedContract<br>`0xd32224533b63ddeb63409010fe6c841350951734` | non_address_book | unknown | unknown | unverified | n/a | `0xd931401b37c3a368505e7ae6de700f2b0ad14ac6` |
+| unverified unclassified | UnnamedContract<br>`0x9b974faa2987a16a39a4bb731cb2a191d31c54dd` | non_address_book | unknown | unknown | unverified | n/a | `0xd931401b37c3a368505e7ae6de700f2b0ad14ac6` |
+| unverified unclassified | UnnamedContract<br>`0x128eb2baca6ac5416bed268d41c202fc41d55f1b` | non_address_book | unknown | unknown | unverified | n/a | `0xd931401b37c3a368505e7ae6de700f2b0ad14ac6` |
+| unverified unclassified | UnnamedContract<br>`0x623f2774d9f27b59bc6b954544487532ce79d9df` | non_address_book | unknown | unknown | unverified | n/a | `0xd931401b37c3a368505e7ae6de700f2b0ad14ac6` |
+| unverified unclassified | UnnamedContract<br>`0xa8e3684e4df9b7feb16a9146e6cc541eb513b3b8` | non_address_book | unknown | unknown | unverified | n/a | `0xd931401b37c3a368505e7ae6de700f2b0ad14ac6` |
 
 ## Audit Inventory
 
@@ -167,13 +206,13 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| Audit Report | bfBTC | ambiguous — not counted | 0x623f27… (alternative) `0x623f2774d9f27b59bc6b954544487532ce79d9df` — liveness: live (current_address_book_code)<br>0xcdfb58… (alternative) `0xcdfb58c8c859cb3f62ebe9cf2767f9e036c7fb15` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Audit Report | bfBTC | ambiguous — not counted | 0x623f27… (alternative) `0x623f2774d9f27b59bc6b954544487532ce79d9df` — deployed 2024-12-26 13:28:32+03 — liveness: live (current_address_book_code)<br>0xcdfb58… (alternative) `0xcdfb58c8c859cb3f62ebe9cf2767f9e036c7fb15` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | Audit Report | bfUSD | unmatched — not counted | — | mentioned in audit report title for BitFi USD (bfUSD) | no |
 | bitfi-slowmist-audit.pdf | BfbtcBitlayer | unmatched — not counted | — | listed in scope and findings | no |
-| bitfi-slowmist-audit.pdf | Bfbtc | ambiguous — not counted | 0x623f27… (alternative) `0x623f2774d9f27b59bc6b954544487532ce79d9df` — liveness: live (current_address_book_code)<br>0xcdfb58… (alternative) `0xcdfb58c8c859cb3f62ebe9cf2767f9e036c7fb15` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| bitfi-slowmist-audit.pdf | Bfbtc | ambiguous — not counted | 0x623f27… (alternative) `0x623f2774d9f27b59bc6b954544487532ce79d9df` — deployed 2024-12-26 13:28:32+03 — liveness: live (current_address_book_code)<br>0xcdfb58… (alternative) `0xcdfb58c8c859cb3f62ebe9cf2767f9e036c7fb15` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | bitfi-slowmist-audit.pdf | BfbtcProxy | unmatched — not counted | — | listed in scope and findings | no |
 | See the report on SlowMist's GitHub | BfbtcBitlayer | unmatched — not counted | — | listed in scope and findings | no |
-| See the report on SlowMist's GitHub | Bfbtc | ambiguous — not counted | 0x623f27… (alternative) `0x623f2774d9f27b59bc6b954544487532ce79d9df` — liveness: live (current_address_book_code)<br>0xcdfb58… (alternative) `0xcdfb58c8c859cb3f62ebe9cf2767f9e036c7fb15` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| See the report on SlowMist's GitHub | Bfbtc | ambiguous — not counted | 0x623f27… (alternative) `0x623f2774d9f27b59bc6b954544487532ce79d9df` — deployed 2024-12-26 13:28:32+03 — liveness: live (current_address_book_code)<br>0xcdfb58… (alternative) `0xcdfb58c8c859cb3f62ebe9cf2767f9e036c7fb15` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | See the report on SlowMist's GitHub | BfbtcProxy | unmatched — not counted | — | listed in visibility description | no |
 | Download the bfUSD audit report (PDF) | BfusdMerkleStash | unmatched — not counted | — | listed in scope | no |
 | Download the bfUSD audit report (PDF) | BitFiStablecoin | unmatched — not counted | — | listed in scope | no |
@@ -211,7 +250,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 5 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 10 |
+| needs_review | 21 |
 
 ## Scope Matching Notes
 

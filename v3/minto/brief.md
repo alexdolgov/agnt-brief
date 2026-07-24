@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Minto (`minto`)
 - Website: [https://minto.finance](https://minto.finance)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: bsc, ethereum, heco
-- Contract surface: 7 unique implementations (9 raw deployments)
+- Contract surface: 9 unique implementations (11 raw deployments)
 - Coverage basis: 1/2 confirmed own live verified implementations (50.0%); conservative 50.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $3,799,069.36
 - On-chain TVL (included contracts): n/a
@@ -70,15 +70,15 @@ The pinned logic-topography run contains 2 contract row(s) across bsc, ethereum,
 - Coverage of address-book-owned deployed-live implementations: 1/2 (50.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 4 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 3 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 5 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Confirmed-live implementations: 4 of 7 unique; 3 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 4 of 9 unique; 5 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 1/4
 - Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
-- Unverified implementations: 3
-- Unique implementations: 7
-- Raw deployments: 9
+- Unverified implementations: 5
+- Unique implementations: 9
+- Raw deployments: 11
 - Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): n/a
@@ -122,15 +122,36 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (3)
+### ❓ Unverified (5)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-247591 | `0x005fe03e5d3a3390f7ec43d95adf08be4ee7c1c1` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x572b0666e801f3ba80d4a66d7f10460658b1e746` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xb64ea148a6b9975ad335e56a688b4a11b508976c` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-247594 | `0xe5c6596a6c8e252ae323191a4374b7098353105a` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | heco | n/a | 3 deployments: heco `0x410a56541bd912f9b60943fcb344f1e3d6f09567`; heco `0x78ae303182fca96a4629a78ee13235e6525ebcfb`; heco `0xe742fce58484ff7be7835d95e350c23ce55a7e12` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 3
+- Live contracts: 0
+- Unknown liveness contracts: 3
+- Source-verified contracts: 1
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: source verified unclassified=1, unverified unclassified=2
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| source verified unclassified | BTCMTSale<br>`0x2b775b778f84b10877a41b78d6724634c7741827` | non_address_book | unknown | unknown | verified | n/a | `0x9441d425e7f90494dbe56535c6ee44737c3e0cb3` |
+| unverified unclassified | UnnamedContract<br>`0x572b0666e801f3ba80d4a66d7f10460658b1e746` | non_address_book | unknown | unknown | unverified | n/a | `0x207f7c91847fb243eb0a064f19b25e505389a8d8` |
+| unverified unclassified | UnnamedContract<br>`0xb64ea148a6b9975ad335e56a688b4a11b508976c` | non_address_book | unknown | unknown | unverified | n/a | `0x207f7c91847fb243eb0a064f19b25e505389a8d8` |
 
 ## Audit Inventory
 
@@ -172,7 +193,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 4 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 3 |
+| needs_review | 5 |
 
 ## Scope Matching Notes
 

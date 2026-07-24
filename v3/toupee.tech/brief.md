@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: toupee.tech (`toupee.tech`)
 - Website: [https://www.toupee.tech](https://www.toupee.tech)
 - Lifecycle: unknown
-- Generated: 2026-07-17T12:00:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: base
 - Contract surface: 52 unique implementations (53 raw deployments)
 - Coverage basis: 7/21 confirmed own live verified implementations (33.3%); conservative 33.3% with 0 needs-review implementation(s)
@@ -189,6 +189,40 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | n/a | `0xdb55de47f1cb51d84442255d9eccc54559e2509f` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | n/a | `0xf139c95e7e959ad1535c80ea7e021891891f7b6a` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | n/a | `0xf1f00aa00d6ed2e5190449f2ff3bcb72c8fdec6b` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 18
+- Live contracts: 15
+- Unknown liveness contracts: 3
+- Source-verified contracts: 14
+- Currently scope-matched contracts retained as-is: 3
+- Classification counts: currently scope matched=3, contamination review=6, exact address book overlap=7, source verified unclassified=2
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| currently scope matched | BribeFactory<br>`0x9714412e8838337e60c8f7b4c2bc49247964c0fd` | project_anchor | unknown | live | verified | n/a | `0x317d250c6a3d66835fb9f798647b63e40b6c844a` |
+| currently scope matched | GaugeFactory<br>`0xe23e1a116090a0829b7ab536a3af463a5a36a5a5` | project_anchor | unknown | live | verified | n/a | `0x317d250c6a3d66835fb9f798647b63e40b6c844a` |
+| currently scope matched | Minter<br>`0xf49222fccba2c149b3ff3ae9d3a30edb1f162576` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x317d250c6a3d66835fb9f798647b63e40b6c844a` |
+| contamination review | AeroGaugePluginFactory<br>`0x9fc66381ea664f6aea4bd516091ebbe1d27ff6ed` | project_anchor | unknown | live | verified | n/a | `0x317d250c6a3d66835fb9f798647b63e40b6c844a` |
+| contamination review | AeroPairPluginFactory<br>`0xeac05094887c6548f3054fc121c57844c2eb0448` | project_anchor | unknown | live | verified | n/a | `0x317d250c6a3d66835fb9f798647b63e40b6c844a` |
+| contamination review | Controller<br>`0x1eeb34b653d396cdc60a9c434c09e1803dd4904e` | project_anchor | unknown | live | verified | n/a | `0x317d250c6a3d66835fb9f798647b63e40b6c844a` |
+| contamination review | MerkleClaim<br>`0x5d82183db96e55a5f2caee691728584cd4a037e1` | project_anchor | unknown | live | verified | n/a | `0x317d250c6a3d66835fb9f798647b63e40b6c844a` |
+| contamination review | Multicall<br>`0x3bb30ca0bf95d6a2fc8ad9087bac92711bf0947e` | non_address_book | unknown | unknown | verified | n/a | `0x317d250c6a3d66835fb9f798647b63e40b6c844a` |
+| contamination review | ScaleGaugePluginFactory<br>`0xece72a27bbd6e667672ac226a26eaf3e2f71e22e` | project_anchor | unknown | live | verified | n/a | `0x317d250c6a3d66835fb9f798647b63e40b6c844a` |
+| exact address book overlap | Multicall<br>`0xda81a398787f57810f1225db3a6dc12635aae82f` | project_anchor | unknown | live | verified | n/a | `0x317d250c6a3d66835fb9f798647b63e40b6c844a` |
+| exact address book overlap | TOKENGovernor<br>`0x46e77d8349ba8ae9137b89196a61ffee2c8c64b4` | project_anchor | unknown | live | verified | n/a | `0x317d250c6a3d66835fb9f798647b63e40b6c844a` |
+| exact address book overlap | UnnamedContract<br>`0x1441cba5a9df12f157c362ca0c8eed50c2b07d27` | project_anchor | unknown | live | unverified | n/a | `0x317d250c6a3d66835fb9f798647b63e40b6c844a` |
+| exact address book overlap | UnnamedContract<br>`0x56df157dec576cc2596257fb17115a7ea0329e01` | project_anchor | unknown | live | unverified | n/a | `0x317d250c6a3d66835fb9f798647b63e40b6c844a` |
+| exact address book overlap | UnnamedContract<br>`0x5ed50fbb15d047b2b6bc0e6fade25a3b1eee106d` | project_anchor | unknown | live | unverified | n/a | `0x317d250c6a3d66835fb9f798647b63e40b6c844a` |
+| exact address book overlap | UnnamedContract<br>`0xd54b64a096b785d19cff3f19061509230736590c` | project_anchor | unknown | live | unverified | n/a | `0x317d250c6a3d66835fb9f798647b63e40b6c844a` |
+| exact address book overlap | VelociGaugePluginFactory<br>`0xc40215fedcc1475b5d767c4ebc7085501ffc8abf` | project_anchor | unknown | live | verified | n/a | `0x317d250c6a3d66835fb9f798647b63e40b6c844a` |
+| source verified unclassified | Multicall<br>`0x752de9d1b6f8796d214d2a24a6f6f55ee9facc71` | non_address_book | unknown | unknown | verified | n/a | `0x317d250c6a3d66835fb9f798647b63e40b6c844a` |
+| source verified unclassified | VelociGrapheneGaugePluginFactory<br>`0xed8b18cdef8a70227e01395c2571d72867ef23a3` | non_address_book | unknown | unknown | verified | n/a | `0x317d250c6a3d66835fb9f798647b63e40b6c844a` |
 
 ## Audit Inventory
 

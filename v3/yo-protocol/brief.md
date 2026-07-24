@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: YO Protocol (`yo-protocol`)
 - Website: [https://app.yo.xyz](https://app.yo.xyz)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: arbitrum, base, ethereum, hyperliquid, monad, x-layer
-- Contract surface: 44 unique implementations (64 raw deployments)
+- Contract surface: 47 unique implementations (67 raw deployments)
 - Coverage basis: 3/15 confirmed own live verified implementations (20.0%); conservative 20.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $34,621,789.07
 - On-chain TVL (included contracts): n/a
@@ -98,15 +98,15 @@ The pinned logic-topography run contains 24 contract row(s) across arbitrum, bas
 - Coverage of address-book-owned deployed-live implementations: 3/15 (20.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 27 own, 4 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 13 discovered implementations shown in the inventory but excluded from coverage (4 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 16 discovered implementations shown in the inventory but excluded from coverage (4 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 22
-- Confirmed-live implementations: 27 of 44 unique; 17 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 27 of 47 unique; 20 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 3/26
 - Verified + Unaudited implementations: 23
 - Verified by bytecode match: 0
-- Unverified implementations: 18
-- Unique implementations: 44
-- Raw deployments: 64
+- Unverified implementations: 21
+- Unique implementations: 47
+- Raw deployments: 67
 - Audits discovered: 18 (18 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 9
 - ASD (verified + unaudited TVL): n/a
@@ -176,15 +176,17 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (18)
+### ❓ Unverified (21)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0cf9a84bb9e916229f3037dc079ef418b97bb0cf` | ❓ Unverified |
 | UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-263626 | `0x206ff3f58f57d00c48af6010de6dc26f913efd64` | ❓ Unverified |
 | UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-263627 | `0x2800fc940a9b3bcb2cde3c70797b21296becbf07` | ❓ Unverified |
 | UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-263630 | `0x4409446b49e24861697d566e5c6d68c0d8f3c50f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x542d29b2b69f83fa65eec2f3c782968c43bc8ae8` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x56c3119dc3b1a75763c87d5b0a2c55e489502232` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5dd8bfa6c5c68d05d25ef6143e05c11e26c4cdb7` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-263635 | `0x7bad596c26e175384bd9985cb97c6c3f7e158b6f` | ❓ Unverified |
@@ -194,12 +196,40 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-263642 | `0xb4b3f5c964a360bbd7201f72a55d0c48b8ad7021` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-263644 | `0xcb9737bdd076251744704cc37ce961e8417fdd7f` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-263645 | `0xcff9d39441eb668c7fffa752ad1ea47930bb8a76` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xecd62a8bbd3503710765a53218c480127b3c816e` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf1eee0957267b1a474323ff9cff7719e964969fa` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-263647 | `0xf837334c5c48f16a8a73affb09859bb7fdb467e0` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-263648 | `0x2bcb71309554a5dc31932cb3d5a547cd8cc5ed26` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | x-layer | unit-263649 | `0x779ded0c9e1022225f8e0630b35a9b54be713736` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-263652 | `0x946fd049c47beff53a32588c67df6a5a16b805f0` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-263651 | `0x5dd8bfa6c5c68d05d25ef6143e05c11e26c4cdb7` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 11
+- Live contracts: 4
+- Unknown liveness contracts: 7
+- Source-verified contracts: 8
+- Currently scope-matched contracts retained as-is: 1
+- Classification counts: currently scope matched=1, candidate review=2, source verified unclassified=5, unverified unclassified=3
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| currently scope matched | TransparentUpgradeableProxy<br>`0x56c3119dc3b1a75763c87d5b0a2c55e489502232` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x0e7c357813a1646f7ceed2e295fb058f21ce9295` |
+| candidate review | TransparentUpgradeableProxy<br>`0xb9a7da9e90d3b428083bae04b860faa6325b721e` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x45cbc3cbfb5b384d8e57eb833888d84e935e6bb8` |
+| candidate review | TransparentUpgradeableProxy<br>`0xf1eee0957267b1a474323ff9cff7719e964969fa` | external_dependency_or_infra | unknown | unknown | verified | review: no_fresh_structural_match | `0x0e7c357813a1646f7ceed2e295fb058f21ce9295` |
+| source verified unclassified | yoUSDT<br>`0x0a09e980cae64d8840fd9c92f165aba4bfdf9716` | retained_scope_excluded_inventory | unknown | live | verified | n/a | `0x45cbc3cbfb5b384d8e57eb833888d84e935e6bb8` |
+| source verified unclassified | Escrow<br>`0xc5da2b9174234f34c5857295776f5ea1fe70ebca` | non_address_book | unknown | unknown | verified | n/a | `0xd9c452e307a9521bae23cb9e83ba71be057207ae` |
+| source verified unclassified | YoGateway<br>`0xc33660b771db437e15e9234cc424e750376f903e` | retained_scope_excluded_inventory | unknown | unknown | verified | n/a | `0x0e7c357813a1646f7ceed2e295fb058f21ce9295` |
+| source verified unclassified | YoRegistry<br>`0x542d29b2b69f83fa65eec2f3c782968c43bc8ae8` | retained_scope_excluded_inventory | unknown | live | verified | n/a | `0x0e7c357813a1646f7ceed2e295fb058f21ce9295` |
+| source verified unclassified | YoVault_V2<br>`0x7e715d9731ee8c29e0bde2e852891e9fbef262bb` | non_address_book | unknown | unknown | verified | n/a | `0x5641d005b8f541bdfddbfacdc910f2ad5e0c3c21` |
+| unverified unclassified | UnnamedContract<br>`0x0cf9a84bb9e916229f3037dc079ef418b97bb0cf` | non_address_book | unknown | unknown | unverified | n/a | `0x0e7c357813a1646f7ceed2e295fb058f21ce9295` |
+| unverified unclassified | UnnamedContract<br>`0x542d29b2b69f83fa65eec2f3c782968c43bc8ae8` | non_address_book | unknown | unknown | unverified | n/a | `0x0e7c357813a1646f7ceed2e295fb058f21ce9295` |
+| unverified unclassified | UnnamedContract<br>`0xecd62a8bbd3503710765a53218c480127b3c816e` | non_address_book | unknown | unknown | unverified | n/a | `0x0e7c357813a1646f7ceed2e295fb058f21ce9295` |
 
 ## Audit Inventory
 
@@ -304,18 +334,18 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | yo_contracts_v2_cantina.pdf | YoAdapterBase | unmatched — not counted | — | listed in scope | no |
 | yo_contracts_v2_cantina.pdf | YoERC4626Adapter | unmatched — not counted | — | listed in scope | no |
 | yo_contracts_v2_cantina.pdf | YoIPORAdapter | unmatched — not counted | — | listed in scope | no |
-| yo_contracts_v2_cantina.pdf | YoLidoAdapter | own contract | 0xf83733… (selected) `0xf837334c5c48f16a8a73affb09859bb7fdb467e0` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| yo_contracts_v2_cantina.pdf | YoMorphoAdapter | ambiguous — not counted | 0x93a3a3… (alternative) `0x93a3a3325de6ab429523d144b41a032e7d7456ab` — liveness: live (current_address_book_code)<br>0x2bcb71… (alternative) `0x2bcb71309554a5dc31932cb3d5a547cd8cc5ed26` — liveness: live (current_address_book_code)<br>0x946fd0… (alternative) `0x946fd049c47beff53a32588c67df6a5a16b805f0` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| yo_contracts_v2_cantina.pdf | YoSwapAdapter | own contract | 0xa425d3… (selected) `0xa425d3c9a1c048be1183d8e396406bda813b4826` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| yo_contracts_v2_cantina.pdf | YoLidoAdapter | own contract | 0xf83733… (selected) `0xf837334c5c48f16a8a73affb09859bb7fdb467e0` — deployed 2026-06-01 15:23:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| yo_contracts_v2_cantina.pdf | YoMorphoAdapter | ambiguous — not counted | 0x93a3a3… (alternative) `0x93a3a3325de6ab429523d144b41a032e7d7456ab` — deployed 2026-06-01 15:23:35+03 — liveness: live (current_address_book_code)<br>0x2bcb71… (alternative) `0x2bcb71309554a5dc31932cb3d5a547cd8cc5ed26` — deployed 2026-06-11 13:39:16+03 — liveness: live (current_address_book_code)<br>0x946fd0… (alternative) `0x946fd049c47beff53a32588c67df6a5a16b805f0` — deployed 2026-06-08 22:25:00+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| yo_contracts_v2_cantina.pdf | YoSwapAdapter | own contract | 0xa425d3… (selected) `0xa425d3c9a1c048be1183d8e396406bda813b4826` — deployed 2026-06-02 09:29:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | yo_contracts_v2_cantina.pdf | YoUSDTAdapter | unmatched — not counted | — | listed in scope | no |
 | yo_contracts_v2_cantina.pdf | AuthUpgradeable | unmatched — not counted | — | listed in scope | no |
 | yo_contracts_v2_cantina.pdf | Compatible | unmatched — not counted | — | listed in scope | no |
 | yo_contracts_v2_cantina.pdf | Errors | unmatched — not counted | — | listed in scope | no |
 | yo_contracts_v2_cantina.pdf | YoChainlinkOracle | unmatched — not counted | — | listed in scope | no |
-| yo_contracts_v2_cantina.pdf | YoApprovalRegistry | own contract | 0xb4b3f5… (selected) `0xb4b3f5c964a360bbd7201f72a55d0c48b8ad7021` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| yo_contracts_v2_cantina.pdf | YoERC4626VaultRegistry | own contract | 0x7bad59… (selected) `0x7bad596c26e175384bd9985cb97c6c3f7e158b6f` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| yo_contracts_v2_cantina.pdf | YoMorphoMarketRegistry | own contract | 0xcb9737… (selected) `0xcb9737bdd076251744704cc37ce961e8417fdd7f` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| yo_contracts_v2_cantina.pdf | YoSwapPairRegistry | own contract | 0xcff9d3… (selected) `0xcff9d39441eb668c7fffa752ad1ea47930bb8a76` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| yo_contracts_v2_cantina.pdf | YoApprovalRegistry | own contract | 0xb4b3f5… (selected) `0xb4b3f5c964a360bbd7201f72a55d0c48b8ad7021` — deployed 2026-06-01 15:22:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| yo_contracts_v2_cantina.pdf | YoERC4626VaultRegistry | own contract | 0x7bad59… (selected) `0x7bad596c26e175384bd9985cb97c6c3f7e158b6f` — deployed 2026-06-01 15:23:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| yo_contracts_v2_cantina.pdf | YoMorphoMarketRegistry | own contract | 0xcb9737… (selected) `0xcb9737bdd076251744704cc37ce961e8417fdd7f` — deployed 2026-06-01 15:22:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| yo_contracts_v2_cantina.pdf | YoSwapPairRegistry | own contract | 0xcff9d3… (selected) `0xcff9d39441eb668c7fffa752ad1ea47930bb8a76` — deployed 2026-06-01 15:23:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | yo_contracts_v2_rereview_cantina.pdf | YoVault | unmatched — not counted | — | listed in scope section 2.1.1 | no |
 | yo_contracts_v2_rereview_cantina.pdf | YoChainlinkOracle | unmatched — not counted | — | listed in scope section 2.1.1 | no |
 | yo_contracts_v2_rereview_cantina.pdf | YoAdapterBase | unmatched — not counted | — | listed in scope section 2.1.1 | no |
@@ -323,16 +353,16 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | yo_contracts_v2_rereview_cantina.pdf | YoFxSaveAdapter | unmatched — not counted | — | listed in scope section 2.1.1 | no |
 | yo_contracts_v2_rereview_cantina.pdf | YoFxSaveRedeemer | unmatched — not counted | — | listed in scope section 2.1.1 | no |
 | yo_contracts_v2_rereview_cantina.pdf | YoIPORAdapter | unmatched — not counted | — | listed in scope section 2.1.1 | no |
-| yo_contracts_v2_rereview_cantina.pdf | YoLidoAdapter | own contract | 0xf83733… (selected) `0xf837334c5c48f16a8a73affb09859bb7fdb467e0` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| yo_contracts_v2_rereview_cantina.pdf | YoMorphoAdapter | ambiguous — not counted | 0x93a3a3… (alternative) `0x93a3a3325de6ab429523d144b41a032e7d7456ab` — liveness: live (current_address_book_code)<br>0x2bcb71… (alternative) `0x2bcb71309554a5dc31932cb3d5a547cd8cc5ed26` — liveness: live (current_address_book_code)<br>0x946fd0… (alternative) `0x946fd049c47beff53a32588c67df6a5a16b805f0` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| yo_contracts_v2_rereview_cantina.pdf | YoSwapAdapter | own contract | 0xa425d3… (selected) `0xa425d3c9a1c048be1183d8e396406bda813b4826` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| yo_contracts_v2_rereview_cantina.pdf | YoLidoAdapter | own contract | 0xf83733… (selected) `0xf837334c5c48f16a8a73affb09859bb7fdb467e0` — deployed 2026-06-01 15:23:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| yo_contracts_v2_rereview_cantina.pdf | YoMorphoAdapter | ambiguous — not counted | 0x93a3a3… (alternative) `0x93a3a3325de6ab429523d144b41a032e7d7456ab` — deployed 2026-06-01 15:23:35+03 — liveness: live (current_address_book_code)<br>0x2bcb71… (alternative) `0x2bcb71309554a5dc31932cb3d5a547cd8cc5ed26` — deployed 2026-06-11 13:39:16+03 — liveness: live (current_address_book_code)<br>0x946fd0… (alternative) `0x946fd049c47beff53a32588c67df6a5a16b805f0` — deployed 2026-06-08 22:25:00+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| yo_contracts_v2_rereview_cantina.pdf | YoSwapAdapter | own contract | 0xa425d3… (selected) `0xa425d3c9a1c048be1183d8e396406bda813b4826` — deployed 2026-06-02 09:29:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | yo_contracts_v2_rereview_cantina.pdf | YoUSDTAdapter | unmatched — not counted | — | listed in scope section 2.1.1 | no |
 | yo_contracts_v2_rereview_cantina.pdf | YoGateway | unmatched — not counted | — | referenced in findings (e.g., 4.2.4) | no |
 | yo_contracts_v2_rereview_cantina.pdf | YoOracle | own contract | YoOracle (selected) `0x6e879d0ccc85085a709ebf5539224f53d0d396b0` — deployed 2025-12-01 12:04:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| yo_contracts_v2_rereview_cantina.pdf | YoApprovalRegistry | own contract | 0xb4b3f5… (selected) `0xb4b3f5c964a360bbd7201f72a55d0c48b8ad7021` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| yo_contracts_v2_rereview_cantina.pdf | YoERC4626VaultRegistry | own contract | 0x7bad59… (selected) `0x7bad596c26e175384bd9985cb97c6c3f7e158b6f` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| yo_contracts_v2_rereview_cantina.pdf | YoMorphoMarketRegistry | own contract | 0xcb9737… (selected) `0xcb9737bdd076251744704cc37ce961e8417fdd7f` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| yo_contracts_v2_rereview_cantina.pdf | YoSwapPairRegistry | own contract | 0xcff9d3… (selected) `0xcff9d39441eb668c7fffa752ad1ea47930bb8a76` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| yo_contracts_v2_rereview_cantina.pdf | YoApprovalRegistry | own contract | 0xb4b3f5… (selected) `0xb4b3f5c964a360bbd7201f72a55d0c48b8ad7021` — deployed 2026-06-01 15:22:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| yo_contracts_v2_rereview_cantina.pdf | YoERC4626VaultRegistry | own contract | 0x7bad59… (selected) `0x7bad596c26e175384bd9985cb97c6c3f7e158b6f` — deployed 2026-06-01 15:23:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| yo_contracts_v2_rereview_cantina.pdf | YoMorphoMarketRegistry | own contract | 0xcb9737… (selected) `0xcb9737bdd076251744704cc37ce961e8417fdd7f` — deployed 2026-06-01 15:22:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| yo_contracts_v2_rereview_cantina.pdf | YoSwapPairRegistry | own contract | 0xcff9d3… (selected) `0xcff9d39441eb668c7fffa752ad1ea47930bb8a76` — deployed 2026-06-01 15:23:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | yo_contracts_v2_rereview_cantina.pdf | YoRegistry | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x56c3119dc3b1a75763c87d5b0a2c55e489502232` — deployed 2025-08-18 15:53:51+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | yo_contracts_v2_rereview_cantina.pdf | AuthUpgradeable | unmatched — not counted | — | referenced in trust assumptions | no |
 
@@ -361,7 +391,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 23 |
 | upstream | 0 |
 | standard_library | 3 |
-| needs_review | 18 |
+| needs_review | 21 |
 
 ## Scope Matching Notes
 

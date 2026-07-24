@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: BitU Protocol (`bitu-protocol`)
 - Website: [https://www.bitu.io](https://www.bitu.io)
 - Lifecycle: active (Tier 0, 44.1% below peak)
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: bsc
 - Contract surface: 5 unique implementations (5 raw deployments)
 - Coverage basis: 3/3 confirmed own live verified implementations (100.0%); conservative 100.0% with 0 needs-review implementation(s)
@@ -132,6 +132,24 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 - None
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 2
+- Live contracts: 1
+- Unknown liveness contracts: 1
+- Source-verified contracts: 2
+- Currently scope-matched contracts retained as-is: 1
+- Classification counts: currently scope matched=1, source verified unclassified=1
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| currently scope matched | BitUStaking<br>`0x61183a27ab5fdacc4d46f5af9eb9e6a93afd76d4` | project_anchor | unknown | live | verified | n/a | `0x8f74491aad723acb95f4c2eb5d0d50fd8b11a835` |
+| source verified unclassified | BEP20LINK<br>`0xf8a0bf9cf54bb92f17374d9e9a321e6a111a51bd` | non_address_book | unknown | unknown | verified | n/a | `0x970609ba2c160a1b491b90867681918bdc9773af` |
 
 ## Audit Inventory
 

@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Privacy Cash (`privacy-cash`)
 - Website: [https://privacycash.org/](https://privacycash.org/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: base, ethereum
 - Contract surface: 15 unique implementations (25 raw deployments)
 - Coverage basis: 0/4 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
@@ -139,6 +139,33 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-251952 | `0x833589fcd6edb6e08f4c7c32d4f71b54bda02913` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbb0c7f576b7bdaa8f2a119cb295076acd0c9013f` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xf48b36221e4be8b385617fb24a0842068524e9ac` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 11
+- Live contracts: 8
+- Unknown liveness contracts: 3
+- Source-verified contracts: 11
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: candidate review=6, exact address book overlap=4, source verified unclassified=1
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| candidate review | ERCPool<br>`0x803db1b37e3bb94d65e42f3dc886614587583958` | retained_scope_excluded_inventory | unknown | live | verified | review: no_fresh_structural_match | `0x9f1d0c72a50088172220990474f97a63854949cf` |
+| candidate review | EtherPool<br>`0xec5266c9e44631e1ba22fd6377c38130c1f3b738` | retained_scope_excluded_inventory | unknown | live | verified | review: no_fresh_structural_match | `0x9f1d0c72a50088172220990474f97a63854949cf` |
+| candidate review | Verifier2<br>`0xfee24cf58d2f74fa9b01d715e342d8462ac832a1` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x9f1d0c72a50088172220990474f97a63854949cf` |
+| candidate review | ERCPool<br>`0x6b5365cf6118bceabe41b5acff0b20e8f4447c9a` | retained_scope_excluded_inventory | unknown | live | verified | review: no_fresh_structural_match | `0x9f1d0c72a50088172220990474f97a63854949cf` |
+| candidate review | EtherPool<br>`0xa9cefead8d2f343b2c8c561e903378ede899ecdd` | retained_scope_excluded_inventory | unknown | live | verified | review: no_fresh_structural_match | `0x9f1d0c72a50088172220990474f97a63854949cf` |
+| candidate review | EtherPool<br>`0xfee24cf58d2f74fa9b01d715e342d8462ac832a1` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x9f1d0c72a50088172220990474f97a63854949cf` |
+| exact address book overlap | ERC1967Proxy<br>`0x77a10ae3e513c2d73d73eb52212c6918c8830dd0` | project_anchor | unknown | live | verified | n/a | `0x9f1d0c72a50088172220990474f97a63854949cf` |
+| exact address book overlap | ERC1967Proxy<br>`0xc88f4df2b6eddd6b6bdf95a0177f50c90fa7527f` | project_anchor | unknown | live | verified | n/a | `0x9f1d0c72a50088172220990474f97a63854949cf` |
+| exact address book overlap | ERC1967Proxy<br>`0x7f673790c08ddf27c0aa6fa9526ccc8daab081ec` | project_anchor | unknown | live | verified | n/a | `0x9f1d0c72a50088172220990474f97a63854949cf` |
+| exact address book overlap | ERC1967Proxy<br>`0xe91dd4ab03909f5ceb87f42b4308b222995a905b` | project_anchor | unknown | live | verified | n/a | `0x9f1d0c72a50088172220990474f97a63854949cf` |
+| source verified unclassified | ERC1967Proxy<br>`0xbcffce41652093264d0807e2e834aff255982c98` | non_address_book | unknown | unknown | verified | n/a | `0x9f1d0c72a50088172220990474f97a63854949cf` |
 
 ## Audit Inventory
 

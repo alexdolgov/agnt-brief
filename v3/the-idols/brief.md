@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: The Idols (`the-idols`)
 - Website: [https://www.theidols.io](https://www.theidols.io)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: ethereum
 - Contract surface: 20 unique implementations (22 raw deployments)
 - Coverage basis: 3/5 confirmed own live verified implementations (60.0%); conservative 60.0% with 0 needs-review implementation(s)
@@ -144,6 +144,36 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7343241a210b4c13bc6d805612d2e61d4aa7c677` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x815c5d8fd4c029d611de4344582cee38ffa7741e` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd272d2c89c4e7309e24799c3e030987bbd47be2c` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 14
+- Live contracts: 2
+- Unknown liveness contracts: 12
+- Source-verified contracts: 10
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: candidate auto own=3, candidate review=4, exact address book overlap=1, source verified unclassified=2, unverified unclassified=4
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| candidate auto own | IdolMarketplace<br>`0x4a0cedd8abf9fc5a0187cf9faa0a2466bab76652` | non_address_book | unknown | unknown | verified | automatic_own: fresh_structural_and_independent_ownership_match | `0x1a898355c4939e1e4b15330d4da1fc028a8dad66` |
+| candidate auto own | IdolMarketplace<br>`0x4ce4f4c4891876ffc0670bd9a25fcc4597db3bbf` | non_address_book | unknown | unknown | verified | automatic_own: fresh_structural_and_independent_ownership_match | `0x1a898355c4939e1e4b15330d4da1fc028a8dad66` |
+| candidate auto own | IdolMarketplace<br>`0x523fbd08ead56490dbbfa008ef582e7a272df5e6` | non_address_book | unknown | unknown | verified | automatic_own: fresh_structural_and_independent_ownership_match | `0x1a898355c4939e1e4b15330d4da1fc028a8dad66` |
+| candidate review | IdolMintContract<br>`0x7b4b02372d8e54c1c0454d97f01d85ef203cdc5e` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x1a898355c4939e1e4b15330d4da1fc028a8dad66` |
+| candidate review | MarketplaceRefundContract<br>`0x87d2edba911c7e2e13580af897ba77e47e8b8c8b` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x1a898355c4939e1e4b15330d4da1fc028a8dad66` |
+| candidate review | OfferingRefundContract<br>`0x2e94c074d7360dccf0d7b2891d867b734978e8ad` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x1a898355c4939e1e4b15330d4da1fc028a8dad66` |
+| candidate review | VirtueEthRewards<br>`0xc73b93885f10c5eaf8cb126495bbd14d3b9b7baf` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x1a898355c4939e1e4b15330d4da1fc028a8dad66` |
+| exact address book overlap | RewardsCollector<br>`0x7d624c34e475a2eca893d0c118527b6e2061256a` | project_anchor | unknown | live | verified | n/a | `0x1a898355c4939e1e4b15330d4da1fc028a8dad66` |
+| source verified unclassified | EthClaimContract<br>`0x6e88861a1ff98f713753b9506638c7c49269f19a` | non_address_book | unknown | unknown | verified | n/a | `0x1a898355c4939e1e4b15330d4da1fc028a8dad66` |
+| source verified unclassified | VirtueClaimContract<br>`0x5a5e20e29d000762bf33e29c0a2091d78f1cd6c4` | non_address_book | unknown | unknown | verified | n/a | `0x1a898355c4939e1e4b15330d4da1fc028a8dad66` |
+| unverified unclassified | UnnamedContract<br>`0x17d7e56c3744006bc214bf11db4953d5cf9b4eaa` | non_address_book | unknown | unknown | unverified | n/a | `0x1a898355c4939e1e4b15330d4da1fc028a8dad66` |
+| unverified unclassified | UnnamedContract<br>`0x7343241a210b4c13bc6d805612d2e61d4aa7c677` | non_address_book | unknown | unknown | unverified | n/a | `0x1a898355c4939e1e4b15330d4da1fc028a8dad66` |
+| unverified unclassified | UnnamedContract<br>`0x815c5d8fd4c029d611de4344582cee38ffa7741e` | non_address_book | unknown | unknown | unverified | n/a | `0x1a898355c4939e1e4b15330d4da1fc028a8dad66` |
+| unverified unclassified | UnnamedContract<br>`0xd272d2c89c4e7309e24799c3e030987bbd47be2c` | non_address_book | unknown | unknown | unverified | n/a | `0x1a898355c4939e1e4b15330d4da1fc028a8dad66` |
 
 ## Audit Inventory
 

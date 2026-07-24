@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Frankencoin (`frankencoin`)
 - Website: [https://frankencoin.com](https://frankencoin.com)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: ethereum
 - Contract surface: 47 unique implementations (69 raw deployments)
 - Coverage basis: 1/1 confirmed own live verified implementations (100.0%); conservative 100.0% with 0 needs-review implementation(s)
@@ -54,7 +54,7 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 ### Forked Contracts
 
 **Frankencoin** (`0xb58e61c3098d85632df34eecfb899a1ed80921cb`, chain 1)
-Origin: decentralized-euro (`0xb58e61c3098d85632df34eecfb899a1ed80921cb`)
+Origin: decentralized-euro (`0xb58e61...0921cb`)
 Containment: 100.0% - 16 functions inherited
 Centroid audit status: pending_validation
 
@@ -181,6 +181,71 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdac17f958d2ee523a2206206994597c13d831ec7` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe3c0dc8a04d6797aec30e30d686d7adefca026e5` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xecaea1bc7a4a5a4228dd55c244329f7468db11da` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 49
+- Live contracts: 0
+- Unknown liveness contracts: 49
+- Source-verified contracts: 45
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: candidate review=15, contamination review=4, source verified unclassified=26, unverified unclassified=4
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| candidate review | Autobidder<br>`0x761ebe1a53d65dcd629965cd89c2d5218250a168` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x8525ede9a3f231ff3b88f4ae40f5371626c3f227` |
+| candidate review | Autobidder<br>`0x79507527b2b48fbe0df98d70d0102a054e17b39a` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x8525ede9a3f231ff3b88f4ae40f5371626c3f227` |
+| candidate review | BurnMintTokenPool<br>`0x9359cd75549dae00cdd8d22297bc9b13fbbe4b79` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xb16f9a646201af698a21bd0d3afda0518a86d2a7` |
+| candidate review | FPSWrapper<br>`0x54e55618ce94738689914036b98fac8b10e0fa16` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x9aada0f3dbf8390ba0b5f22ff0b5aa814554bbcc` |
+| candidate review | Frankencoin<br>`0x422d17ccc1442501d039595ffcaaa71b4686bf4e` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x58f13e67e465d302a733285488f868e917d99629` |
+| candidate review | Frankencoin<br>`0x7a787023f6e18f979b143c79885323a24709b0d8` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x58f13e67e465d302a733285488f868e917d99629` |
+| candidate review | MintingHub<br>`0x0e5dfe570e5637f7b6b43f515b30dd08fbfcb9ea` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x58f13e67e465d302a733285488f868e917d99629` |
+| candidate review | MintingHub<br>`0x4539b08a1f2f9efc8c3f66876eb8d8c1920a4e7a` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x58f13e67e465d302a733285488f868e917d99629` |
+| candidate review | PositionFactory<br>`0x0cde500e6940931ed190ded77bb48640c9486392` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x58f13e67e465d302a733285488f868e917d99629` |
+| candidate review | PositionFactory<br>`0x63cf7c82460c5d84d10be2219d80f746d8706b7e` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x58f13e67e465d302a733285488f868e917d99629` |
+| candidate review | PositionFactory<br>`0x728310feaca72dc46cd5bf7d739556d5668472ba` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x14a401702bdd9cf803ce8cb38c5f8723008fbd03` |
+| candidate review | PositionFactory<br>`0xcfa9b55ed2b0d97ac4f04f168b6670dd1bbe2080` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x58f13e67e465d302a733285488f868e917d99629` |
+| candidate review | StablecoinBridge<br>`0x4125cd1f826099a4dead6b7746f7f28b30d8402b` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x58f13e67e465d302a733285488f868e917d99629` |
+| candidate review | StablecoinBridge<br>`0x7bbe8f18040af0032f4c2435e7a76db6f1e346df` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x58f13e67e465d302a733285488f868e917d99629` |
+| candidate review | StablecoinBridge<br>`0x8d8b5d8bd3fb93327747148edd036265be0fa020` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x58f13e67e465d302a733285488f868e917d99629` |
+| contamination review | AuthorizationProcessor<br>`0x3874161854d0d5f13b4de2cb5061d9cff547466e` | non_address_book | unknown | unknown | verified | n/a | `0x0170f42f224b99ccbbee673093589c5f9691dd06` |
+| contamination review | FlashloanFrankencoin<br>`0x3d60dbd18b930b1710b76b88461e33dcadec96a1` | non_address_book | unknown | unknown | verified | n/a | `0x0170f42f224b99ccbbee673093589c5f9691dd06` |
+| contamination review | RewardRouterV0<br>`0xfa6d71ed122a7b3b494116317c2ac3b4e5269339` | non_address_book | unknown | unknown | verified | n/a | `0x0170f42f224b99ccbbee673093589c5f9691dd06` |
+| contamination review | VaultAdapterRecoverV1<br>`0x397fb4a34757ac180c0841b26131f25040e2e50b` | non_address_book | unknown | unknown | verified | n/a | `0x0170f42f224b99ccbbee673093589c5f9691dd06` |
+| source verified unclassified | AuthorizePositionV2<br>`0x64335c4fea9108c07e72609c7f97be6f505f3032` | non_address_book | unknown | unknown | verified | n/a | `0x0170f42f224b99ccbbee673093589c5f9691dd06` |
+| source verified unclassified | AuthorizePositionV2<br>`0xc2fe1047ac94b490eeea26db39bef64671efd930` | non_address_book | unknown | unknown | verified | n/a | `0x0170f42f224b99ccbbee673093589c5f9691dd06` |
+| source verified unclassified | AuthorizePositionV2<br>`0xe5487b933e7b27555523afe7d3a2afaf843e33be` | non_address_book | unknown | unknown | verified | n/a | `0x0170f42f224b99ccbbee673093589c5f9691dd06` |
+| source verified unclassified | Autobidder<br>`0xa05bfd161ed9b9e7bacd5c03635cb8073e72c4c4` | non_address_book | unknown | unknown | verified | n/a | `0x8525ede9a3f231ff3b88f4ae40f5371626c3f227` |
+| source verified unclassified | BridgeAccounting<br>`0x88fd2ecd0b9250f203e99e80eb78b0c32b8adb16` | non_address_book | unknown | unknown | verified | n/a | `0xb16f9a646201af698a21bd0d3afda0518a86d2a7` |
+| source verified unclassified | IFALCSUSDFProxyPriceAdapter<br>`0x50fae3c51a00a46bc2bbceb7390c28caa6794a1c` | non_address_book | unknown | unknown | verified | n/a | `0x0170f42f224b99ccbbee673093589c5f9691dd06` |
+| source verified unclassified | IFALCUSDCProxyPriceAdapter<br>`0x8ef854f54df588785e5d16ede9785760d760f52e` | non_address_book | unknown | unknown | verified | n/a | `0x0170f42f224b99ccbbee673093589c5f9691dd06` |
+| source verified unclassified | IFALCUSDCProxyPriceAdapter<br>`0x998d0c734bae49b8757157c7fe3847e2e416f8fd` | non_address_book | unknown | unknown | verified | n/a | `0x0170f42f224b99ccbbee673093589c5f9691dd06` |
+| source verified unclassified | LeverageRealUnit<br>`0xaf285ce08541908ba3e2b449656f4763a37eda8c` | non_address_book | unknown | unknown | verified | n/a | `0x0170f42f224b99ccbbee673093589c5f9691dd06` |
+| source verified unclassified | MockFlashloanRecipient<br>`0x83aec9c352c9095d19821b0e2272d691860005b8` | non_address_book | unknown | unknown | verified | n/a | `0x0170f42f224b99ccbbee673093589c5f9691dd06` |
+| source verified unclassified | PositionV2Streamer<br>`0x38426f0d45f1a6af367be9daa1ebc272879976d5` | non_address_book | unknown | unknown | verified | n/a | `0x0170f42f224b99ccbbee673093589c5f9691dd06` |
+| source verified unclassified | ReferenceTransfer<br>`0x46eadde3d63612251a2fc962973caa0f0bd80437` | non_address_book | unknown | unknown | verified | n/a | `0x0170f42f224b99ccbbee673093589c5f9691dd06` |
+| source verified unclassified | ReferenceTransfer<br>`0x6a9ffb6727dfd8811b7e67a578e2e576f779ab7e` | non_address_book | unknown | unknown | verified | n/a | `0x0170f42f224b99ccbbee673093589c5f9691dd06` |
+| source verified unclassified | RewardsV1<br>`0x1209e42096a0183c14fd26b6faf5707461b78283` | non_address_book | unknown | unknown | verified | n/a | `0x0170f42f224b99ccbbee673093589c5f9691dd06` |
+| source verified unclassified | RollerPositionV2<br>`0x77350f85c1570393be6fda586cf978608ba72786` | non_address_book | unknown | unknown | verified | n/a | `0x0170f42f224b99ccbbee673093589c5f9691dd06` |
+| source verified unclassified | SavingsToken<br>`0x00e632728d5ab91fe8319760ffdd2d7362e28139` | non_address_book | unknown | unknown | verified | n/a | `0x0170f42f224b99ccbbee673093589c5f9691dd06` |
+| source verified unclassified | SavingsVaultZCHF<br>`0x637f00cab9665cb07d91bfb9c6f3fa8fabfef8bc` | non_address_book | unknown | unknown | verified | n/a | `0x0170f42f224b99ccbbee673093589c5f9691dd06` |
+| source verified unclassified | SUSDFUSDFProxyPriceAdapter<br>`0xbabad428f76d05cba8a3e81035c41579cb610bef` | non_address_book | unknown | unknown | verified | n/a | `0x0170f42f224b99ccbbee673093589c5f9691dd06` |
+| source verified unclassified | SyStUSDStrategyPriceProvider<br>`0x45f3898dacb80b9adeac54269e1aa32547deeca6` | non_address_book | unknown | unknown | verified | n/a | `0x0170f42f224b99ccbbee673093589c5f9691dd06` |
+| source verified unclassified | SZCHFZCHFProxyPriceAdapter<br>`0xd4bbb9cadae5d31d083456827e2dfd94eae7b971` | non_address_book | unknown | unknown | verified | n/a | `0x0170f42f224b99ccbbee673093589c5f9691dd06` |
+| source verified unclassified | VaultAdapterRecoverV1<br>`0x5febefd5aecfefb3352c5edd49d634b1456c4bd7` | non_address_book | unknown | unknown | verified | n/a | `0x0170f42f224b99ccbbee673093589c5f9691dd06` |
+| source verified unclassified | VaultAdapterRecoverV1<br>`0x8f36bbee57acb4857cb97898020b529969fdf221` | non_address_book | unknown | unknown | verified | n/a | `0x0170f42f224b99ccbbee673093589c5f9691dd06` |
+| source verified unclassified | VaultDeployer<br>`0x745211a1e1a58b2b11b932855b30d411c31e25d5` | non_address_book | unknown | unknown | verified | n/a | `0x0170f42f224b99ccbbee673093589c5f9691dd06` |
+| source verified unclassified | XCVXUSDPriceAdapter<br>`0x19a5d0bb1200948adbb6c991494e7292dd8628cb` | non_address_book | unknown | unknown | verified | n/a | `0x0170f42f224b99ccbbee673093589c5f9691dd06` |
+| source verified unclassified | XETHUSDPriceAdapter<br>`0x6165946250dd04740ab1409217e95a4f38374fe9` | non_address_book | unknown | unknown | verified | n/a | `0x0170f42f224b99ccbbee673093589c5f9691dd06` |
+| source verified unclassified | XETHUSDPriceAdapter<br>`0x8c158972bead1819c804559e4e664a3d875202fb` | non_address_book | unknown | unknown | verified | n/a | `0x0170f42f224b99ccbbee673093589c5f9691dd06` |
+| unverified unclassified | UnnamedContract<br>`0x56d22ed3dcef5b4fe0f3d3c3baae61d9e8074615` | non_address_book | unknown | unknown | unverified | n/a | `0x0170f42f224b99ccbbee673093589c5f9691dd06` |
+| unverified unclassified | UnnamedContract<br>`0xb2ca8b8eb931430abc01233e01b5dfd320ebed57` | non_address_book | unknown | unknown | unverified | n/a | `0x0170f42f224b99ccbbee673093589c5f9691dd06` |
+| unverified unclassified | UnnamedContract<br>`0xe3c0dc8a04d6797aec30e30d686d7adefca026e5` | non_address_book | unknown | unknown | unverified | n/a | `0x0170f42f224b99ccbbee673093589c5f9691dd06` |
+| unverified unclassified | UnnamedContract<br>`0xecaea1bc7a4a5a4228dd55c244329f7468db11da` | non_address_book | unknown | unknown | unverified | n/a | `0x0170f42f224b99ccbbee673093589c5f9691dd06` |
 
 ## Audit Inventory
 

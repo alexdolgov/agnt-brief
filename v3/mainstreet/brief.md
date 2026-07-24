@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Mainstreet (`mainstreet`)
 - Website: [https://mainstreet.finance/](https://mainstreet.finance/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: ethereum
 - Contract surface: 14 unique implementations (18 raw deployments)
 - Coverage basis: 3/6 confirmed own live verified implementations (50.0%); conservative 50.0% with 0 needs-review implementation(s)
@@ -143,6 +143,25 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388739 | `0x4ba01f22827018b4772cd326c7627fb4956a7c00` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388746 | `0xb72db4e3bdf013b6386e3e17a5a999230a9a7f98` | ❓ Unverified |
 
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 3
+- Live contracts: 0
+- Unknown liveness contracts: 3
+- Source-verified contracts: 3
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: candidate review=2, source verified unclassified=1
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| candidate review | MainstreetMinter<br>`0x1d08df027d12fd9c3441cf1829f1b47420044fae` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xe0f9d2797082797bb7361c6e26b42d68c9da5c56` |
+| candidate review | StakedmsUSD<br>`0x42ced7dce66df68a6828f74ea73612fb511471a7` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xe0f9d2797082797bb7361c6e26b42d68c9da5c56` |
+| source verified unclassified | CustodianManager<br>`0x7d4ad0e1161a7407dac817629bceb2e6d7125eab` | retained_scope_excluded_inventory | unknown | unknown | verified | n/a | `0xe0f9d2797082797bb7361c6e26b42d68c9da5c56` |
+
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
@@ -163,7 +182,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 |---|---|---|---|---|---|
 | Mainstreet_v2_Audit_Report_by_WatchPug.pdf | MainstreetMinter | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x70c0c12fbb3acfff8e48abf027436971cf2ade14` — deployed 2025-12-04 22:49:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Mainstreet_v2_Audit_Report_by_WatchPug.pdf | StakedmsUSD | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x890a5122aa1da30fec4286de7904ff808f0bd74a` — deployed 2025-12-04 22:02:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Mainstreet_v2_Audit_Report_by_WatchPug.pdf | msUSDV2 | own contract | 0x4ba01f… (selected) `0x4ba01f22827018b4772cd326c7627fb4956a7c00` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Mainstreet_v2_Audit_Report_by_WatchPug.pdf | msUSDV2 | own contract | 0x4ba01f… (selected) `0x4ba01f22827018b4772cd326c7627fb4956a7c00` — deployed 2025-12-04 21:29:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Mainstreet_v2_Audit_Report_by_WatchPug.pdf | msUSDV2Satellite | unmatched — not counted | — | Listed in scope and finding WP-I7 references this contract. | no |
 | Mainstreet_v2_Audit_Report_by_WatchPug.pdf | StaticPriceOracle | unmatched — not counted | — | Listed in scope and finding WP-N8 references this contract. | no |
 | Mainstreet_v2_Audit_Report_by_WatchPug.pdf | msUSDSilo | own contract | msUSDSilo (selected) `0x6f188821283923953121f35d74e69a5e73ea6871` — deployed 2025-12-04 22:49:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |

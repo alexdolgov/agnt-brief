@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Brickken (`brickken`)
 - Website: [https://www.brickken.com](https://www.brickken.com)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: avalanche, base, bsc, ethereum, polygon
 - Contract surface: 36 unique implementations (101 raw deployments)
 - Coverage basis: 0/2 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
@@ -161,6 +161,117 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381506 | `0xfc209eeba3d744aa741cc5c2a73ebf9c977b5f82` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xa7a06bfd2edca7bb19cab99b4335cc2f559dd5a3` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xdecbcba39a5defcfaebbaec076a66d6721e06f5a` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 95
+- Live contracts: 3
+- Unknown liveness contracts: 92
+- Source-verified contracts: 85
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: candidate review=27, contamination review=2, exact address book overlap=2, source verified unclassified=55, unverified unclassified=9
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| candidate review | ERC1967Proxy<br>`0xee046214759b58bb0eb10d760448e2783de8a546` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| candidate review | PriceAndSwapManager<br>`0x36fb65754b70982d1aa0d5cedefd8bc614af8fd6` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| candidate review | STOEscrowManagedUpgradeable<br>`0x4459432f1626cc4de0e0a004e74ff282ae9c4a6f` | non_address_book | unknown | unknown | verified | review: missing_independent_ownership_evidence | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| candidate review | STOEscrowManagedUpgradeable<br>`0x513f0b5f188d33d6b0efbba0b5f07f37cb7cbdeb` | non_address_book | unknown | unknown | verified | review: missing_independent_ownership_evidence | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| candidate review | STOEscrowManagedUpgradeable<br>`0xa6df4685bb512ddf8707ce6966e596a1dbf523d8` | non_address_book | unknown | unknown | verified | review: missing_independent_ownership_evidence | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| candidate review | STOEscrowManagedUpgradeable<br>`0xb7526069485e760612294b23240eecde2bb6b3ee` | non_address_book | unknown | unknown | verified | review: missing_independent_ownership_evidence | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| candidate review | STOFactoryManagedUpgradeable<br>`0xbb0b08a9bf9b31185c5b925b1e32baf2d29e1b69` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| candidate review | STOFactoryManagedUpgradeable<br>`0xccda54c76724edaf4591373f29d18648518bbd88` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| candidate review | STOFactoryManagedUpgradeable<br>`0xf48a4248c1dcd17dc2afd9eddaf9f6687983f0fa` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| candidate review | UpgradeableBeaconEscrow<br>`0xe2f8f2910d923e660a4a526f7c08ef3ddd7a713d` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| candidate review | UpgradeableBeaconToken<br>`0x643630f8bd8fc10c4b72669ff899d64ecbe3af54` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| candidate review | PriceAndSwapManager<br>`0xd84620b75d0e7183491dc5188e14db89fdbd19b0` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| candidate review | STOEscrowManagedUpgradeable<br>`0x27576e72f8cd047e4de23c683acfbf8576476f14` | non_address_book | unknown | unknown | verified | review: missing_independent_ownership_evidence | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| candidate review | STOEscrowManagedUpgradeable<br>`0x409a37fa3636519380624cfb437e48ccaa9d86f7` | non_address_book | unknown | unknown | verified | review: missing_independent_ownership_evidence | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| candidate review | STOFactoryManagedUpgradeable<br>`0x26840ff7cb44ea734c68616714e3a5692d1d40ff` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| candidate review | STOFactoryManagedUpgradeable<br>`0xd515ca5b14330ed1f25f8f9bc7fd8b08050a0634` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| candidate review | UpgradeableBeaconEscrow<br>`0xd1ba506b8c0af146d528ab02a6ab5f4ebf76ea5c` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| candidate review | UpgradeableBeaconToken<br>`0xff362452d0969f61d8a7fe1ea70a7caa534aeb07` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| candidate review | PriceAndSwapManager<br>`0xff362452d0969f61d8a7fe1ea70a7caa534aeb07` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| candidate review | STOEscrowManagedUpgradeable<br>`0x2c82a5eac210667e807b409d9e92cf607f2aca94` | non_address_book | unknown | unknown | verified | review: missing_independent_ownership_evidence | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| candidate review | STOEscrowManagedUpgradeable<br>`0x409a37fa3636519380624cfb437e48ccaa9d86f7` | non_address_book | unknown | unknown | verified | review: missing_independent_ownership_evidence | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| candidate review | STOEscrowManagedUpgradeable<br>`0x6d04327079a19297180004891051de7ac5685e89` | non_address_book | unknown | unknown | verified | review: missing_independent_ownership_evidence | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| candidate review | STOFactoryManagedUpgradeable<br>`0x816e88407c5edaa8b471b78f72bc3ec695984607` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| candidate review | STOFactoryManagedUpgradeable<br>`0xbc2074b87828c30e1ac6285da672602ffdd3f074` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| candidate review | STOFactoryManagedUpgradeable<br>`0xe1961920e5e47dde355492ca56af6ee511703fe2` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| candidate review | UpgradeableBeaconEscrow<br>`0xd1ba506b8c0af146d528ab02a6ab5f4ebf76ea5c` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| candidate review | UpgradeableBeaconToken<br>`0x478dff0e27ca0f8e4d6cd5dd586b9f8d28158477` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| contamination review | MerkleAirdrop<br>`0xcc0f1564deb8dc85aa410813e06775c7f08dff20` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| contamination review | VestingWallet<br>`0x00f56834493ed61eb3f4f08b3d01abb8c4fb6735` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| exact address book overlap | Brickken<br>`0x0a638f07acc6969abf392bb009f216d22adea36d` | project_anchor | unknown | live | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| exact address book overlap | PerpetualStakingV4<br>`0x8f523d7e1acbbc6d0e3ca19b7d8c1981b346ceb8` | project_anchor | unknown | live | unverified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | Escrow<br>`0x95954c10ff5319ec1fdcc352d22e74066399a6f7` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | Migrator<br>`0x3d51655203787f1cd6aba27d022fc6b5873fe9d1` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | NegativeCarbonBalance<br>`0x44b751a65312702312d741ce01a86f764cec90a8` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | OwnedTimelockWallet<br>`0x6ac5a1789468487da7050a0b926f7afd371228d7` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | OwnedTimelockWallet<br>`0xbc718a5787e27d713d8523b726a75cfbb2dd8afe` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | P2PHandler<br>`0x64fdd96dc513e01327f3f307de9e1fd66df3ed45` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | PerpetualStaking<br>`0x31c64c80396a7416abcc09be17af370772d4726f` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | PerpetualStaking<br>`0x37d9b478c161313d61111bb5cfe65620d4740083` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | PerpetualStaking<br>`0x935621d2b2ef45a91415d18e414dd88975b85ad0` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | PerpetualStaking<br>`0xa79596109ab63b264385bc31e793c65d7de3cbe8` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | PerpetualStaking<br>`0xc1bb5d0d82e987faca788c2f387460c55aef32c0` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | PerpetualStakingV4<br>`0x482b09786c7eb62ef8eee311c3e17a7ac3d91143` | retained_scope_excluded_inventory | unknown | live | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | Staking<br>`0xdf66aa19d631365dff24134884e197792b11ef7b` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | STOFactory<br>`0x217418172c4c13220ac87285517001fa198e690d` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | STOFactory<br>`0x37758952d46349a9692c7dea6280e902b1384065` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | STOFactory<br>`0x67e71d61f88c6b097ffb60f914c0422d48cf951c` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | STOFactory<br>`0x8ad2bcf07ff1d52ea3a28a9b6a534628b570ade0` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | STOTokenManagedUpgradeable<br>`0x46ff5d33a12f3c34e24a4dd4da590da166c3ebac` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | STOTokenManagedUpgradeable<br>`0x5dc006a13c0f2cb4ea104b3b6ea1d1514a09618a` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | STOTokenManagedUpgradeable<br>`0xd4ddc16834099e8e43c4b0c5a67f580a137419d7` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | VestingWallet<br>`0x04016a55a97830e8ffe592c96833bd4ae95845c1` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | VestingWallet<br>`0x1d6fa14de7c072811ecf8ee3af756d38fc928c82` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | VestingWallet<br>`0x24df0f6ddda93c1cd90118d735f02b305c3bb013` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | VestingWallet<br>`0x2b80216c45900dbb74cf197bf952828e2b4fa7bd` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | VestingWallet<br>`0x48f33af935645cd7f27d7cf65a366bee515d9bae` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | VestingWallet<br>`0x5e431ba8d7b61f3d812a9f20eb170d64cd248cd2` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | VestingWallet<br>`0x61794595f4014e8b92488af83a9bd703167bcf97` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | VestingWallet<br>`0x6260f35e28b6f58be7035a49c9a6eecc9b0e3db6` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | VestingWallet<br>`0x6a5b55b571604748068f49dfc7f71feb2a6ad143` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | VestingWallet<br>`0x6d04327079a19297180004891051de7ac5685e89` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | VestingWallet<br>`0x775ef82569f239b5d267bd5fd86731a26792763c` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | VestingWallet<br>`0x8343814f9913b311d7afc06c02fa7b8c7269c074` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | VestingWallet<br>`0x916c14f08b0b02aba16dbbdfbe5af5e37b3b69a1` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | VestingWallet<br>`0xa5cc0119d80a2284843049d4b1f97abaaf9e0a1c` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | VestingWallet<br>`0xab1eb447fd635843201a6240516864b4d7e9e597` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | VestingWallet<br>`0xaf923125ab3b3bf8360990d7317664cb0c6214f6` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | VestingWallet<br>`0xb81b6ab76b84f9e207df3cb6695b2556bb18f37c` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | VestingWallet<br>`0xb8a0e9773fa3d63cadb8957f052d20cacc90e8bf` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | VestingWallet<br>`0xbd3ae91c2c3fde0188a1d517181773198eacccbe` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | VestingWallet<br>`0xcce3f7589b33b4413347c20a201347dec09720c3` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | VestingWallet<br>`0xcd26bc3d7138ae6c8420eba668d4b92244c8fd04` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | VestingWallet<br>`0xcdda2b27b1762f075e437d7e831d7a74f1ca183d` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | VestingWallet<br>`0xde22d957c055959a91646962a4019193836c8a76` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | VestingWallet<br>`0xe44af4fef642fe6888b838a0a72d8f0a2d74b04e` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | VestingWallet<br>`0xef46cfd3bf441060121dceb457363546af11e84b` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | VestingWallet<br>`0xf9b60ac7e4f8f4e43cbc84b902e7b514e0f2095f` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | WBKNVault<br>`0xfa8dbf6791371abcd675979e9894e448d84e359e` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | WBKNVault<br>`0xfe867cb4ecde197d9801924806d48f2e45c90877` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | ERC1967Proxy<br>`0x1bb57e2abf2822c01ccaebccbc9d16c7fd0c1956` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | STOTokenManagedUpgradeable<br>`0x5e4e3a4ca61c1f8b3cd4bb560a0040270ad13666` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | STOTokenManagedUpgradeable<br>`0xb409eb0e7695fa8c72452857cac888371103ab3e` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | ERC1967Proxy<br>`0x278d7bdc2451b0fa4087a68ce084a86cb91d4d83` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | STOTokenManagedUpgradeable<br>`0x8bedc6dabef2d289db22ace495f9bd300001ad48` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | STOTokenManagedUpgradeable<br>`0xb409eb0e7695fa8c72452857cac888371103ab3e` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| source verified unclassified | STOTokenManagedUpgradeable<br>`0xbd3d7e8dba0e406a66fa68608564387da83b38aa` | non_address_book | unknown | unknown | verified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| unverified unclassified | UnnamedContract<br>`0x21b78b5dbbadafec9690002bbf9b66b1175384f4` | non_address_book | unknown | unknown | unverified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| unverified unclassified | UnnamedContract<br>`0x52292de889c4f00ab9e38f578f4c30711d99238d` | non_address_book | unknown | unknown | unverified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| unverified unclassified | UnnamedContract<br>`0x75509ce41a846e4af4426e77716c7b1b81f62482` | non_address_book | unknown | unknown | unverified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| unverified unclassified | UnnamedContract<br>`0x7b823ec09d8a772391501055374f7dc0c4ad1915` | non_address_book | unknown | unknown | unverified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| unverified unclassified | UnnamedContract<br>`0xe851c34fb3ebd25c5bbb7425013f16636aefba18` | non_address_book | unknown | unknown | unverified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| unverified unclassified | UnnamedContract<br>`0xf4f74dba118aa076ecae9c42167ce5647f2e7713` | non_address_book | unknown | unknown | unverified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| unverified unclassified | WBKNVault<br>`0xcaefc11571955a244070638d42356ff398309c73` | non_address_book | unknown | unknown | unverified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| unverified unclassified | UnnamedContract<br>`0xa7a06bfd2edca7bb19cab99b4335cc2f559dd5a3` | non_address_book | unknown | unknown | unverified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
+| unverified unclassified | UnnamedContract<br>`0xdecbcba39a5defcfaebbaec076a66d6721e06f5a` | non_address_book | unknown | unknown | unverified | n/a | `0x4413140cc8ceb93e80c0cd438ae6321d4e6ac84d` |
 
 ## Audit Inventory
 

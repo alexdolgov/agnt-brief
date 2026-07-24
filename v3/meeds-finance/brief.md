@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Meeds Finance (`meeds-finance`)
 - Website: [https://www.meeds.io/](https://www.meeds.io/)
 - Lifecycle: unknown
-- Generated: 2026-07-17T12:00:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: arbitrum, base, ethereum, optimism, polygon
 - Contract surface: 25 unique implementations (27 raw deployments)
 - Coverage basis: 0/9 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
@@ -154,6 +154,29 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | polygon | n/a | `0xdbc382c0142c54bc9b7d1bd21ee1b87b320e6198` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-246322 | `0xd9df947d2a8f9c28c37af7cb7c526022fb14efa2` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-246320 | `0xe4db3652ac7f88c5712717fd774676bf4aa56769` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 7
+- Live contracts: 1
+- Unknown liveness contracts: 6
+- Source-verified contracts: 7
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: exact address book overlap=1, source verified unclassified=6
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| exact address book overlap | Vyper_contract<br>`0x440701ca5817b5847438da2ec2ca3b9fdbf37dfa` | project_anchor | unknown | live | verified | n/a | `0x0d55f99d20cd4fc7eb36fb78f7d8a42c48826493` |
+| source verified unclassified | Deed<br>`0x0143b71443650aa8efa76bd82f35c22ebd558090` | non_address_book | unknown | unknown | verified | n/a | `0x0d55f99d20cd4fc7eb36fb78f7d8a42c48826493` |
+| source verified unclassified | DeedRenting<br>`0x0af49e83e36256158c654ef549849d80f51fd76c` | non_address_book | unknown | unknown | verified | n/a | `0x0d55f99d20cd4fc7eb36fb78f7d8a42c48826493` |
+| source verified unclassified | DeedTenantProvisioning<br>`0x45595f6f9b699d8becab00c6fe295147c4e84681` | non_address_book | unknown | unknown | verified | n/a | `0x0d55f99d20cd4fc7eb36fb78f7d8a42c48826493` |
+| source verified unclassified | DeedTenantProvisioning<br>`0x887a70ec5d9a76b086e040fabc877b506ae4b9d0` | non_address_book | unknown | unknown | verified | n/a | `0x0d55f99d20cd4fc7eb36fb78f7d8a42c48826493` |
+| source verified unclassified | DeedTenantProvisioningProxy<br>`0x49c0cf46c0eb6fdf05a4e8c1fe344d510422e1f0` | non_address_book | unknown | unknown | verified | n/a | `0x0d55f99d20cd4fc7eb36fb78f7d8a42c48826493` |
+| source verified unclassified | DeedTenantRentingProxy<br>`0x427aa8f31013960e0e5e73977c1918e15d693baa` | non_address_book | unknown | unknown | verified | n/a | `0x0d55f99d20cd4fc7eb36fb78f7d8a42c48826493` |
 
 ## Audit Inventory
 

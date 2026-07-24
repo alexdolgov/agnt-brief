@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ⚠️ Lifecycle status: UNKNOWN - TVL dropped 43.7% over 90 days
 
@@ -18,8 +18,8 @@
 - Project: Accumulated Finance (`accumulated-finance`)
 - Website: [https://accumulated.finance](https://accumulated.finance)
 - Lifecycle: unknown (Tier 0, 84.2% below peak)
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: arbitrum, bsc, ethereum, manta-pacific, sei
 - Contract surface: 49 unique implementations (59 raw deployments)
 - Coverage basis: 0/6 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
@@ -175,6 +175,43 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0xed57966f1566de1a90042d07403021ea52ad4724` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x3557371afed82dd683de278924bd0e1a790a3c49` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x4781f0c82dc3ab55d79bd3956689d1b65fbd23ad` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 21
+- Live contracts: 0
+- Unknown liveness contracts: 21
+- Source-verified contracts: 16
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: candidate review=6, source verified unclassified=10, unverified unclassified=5
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| candidate review | AccumulateBridge<br>`0xba050938970c8eaeda3e970b571a6fe463db7d0e` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x5e95454f33f9c88c9a967531cd48192deb2fd4fd` |
+| candidate review | ACMELiquidStaking<br>`0xcf1a40eff1a4d4c56dc4042a1ae93013d13c3217` | non_address_book | core_logic | unknown | verified | review: no_fresh_structural_match | `0x5503e1185c486c327b999b094b151474c1b9bb1f` |
+| candidate review | rstETHMinter<br>`0x76cefc49c460cd37d9653feaffcffc6ade7dad3a` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x5503e1185c486c327b999b094b151474c1b9bb1f` |
+| candidate review | AccumulateBridge<br>`0xba050938970c8eaeda3e970b571a6fe463db7d0e` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x5e95454f33f9c88c9a967531cd48192deb2fd4fd` |
+| candidate review | ACMELiquidStaking<br>`0xcf1a40eff1a4d4c56dc4042a1ae93013d13c3217` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x5503e1185c486c327b999b094b151474c1b9bb1f` |
+| candidate review | ERC20MinterRedeem<br>`0x050ae6734f7eab5fd3f10bba937a009de5ced081` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x5503e1185c486c327b999b094b151474c1b9bb1f` |
+| source verified unclassified | StakingRewards<br>`0xe194d30afdbae89b3118b8b7bc7b331cc3333b88` | non_address_book | unknown | unknown | verified | n/a | `0x5503e1185c486c327b999b094b151474c1b9bb1f` |
+| source verified unclassified | stZETAMinterERC20<br>`0x0a2fe6291e5dc0a38fd5b1c961f3b23a955138c0` | non_address_book | token | unknown | verified | n/a | `0x5503e1185c486c327b999b094b151474c1b9bb1f` |
+| source verified unclassified | wrstETH<br>`0x36329065407eb354709454baf693070f931b84dc` | non_address_book | unknown | unknown | verified | n/a | `0x5503e1185c486c327b999b094b151474c1b9bb1f` |
+| source verified unclassified | wstZETA<br>`0x4742ba1631d01ed681baf7db180cea5ec626884d` | non_address_book | unknown | unknown | verified | n/a | `0x5503e1185c486c327b999b094b151474c1b9bb1f` |
+| source verified unclassified | stZETAMinterERC20<br>`0xeed543b40c7fe37b330824dfc8800a4f9caaf0ff` | non_address_book | unknown | unknown | verified | n/a | `0x5503e1185c486c327b999b094b151474c1b9bb1f` |
+| source verified unclassified | wstZETA<br>`0xfdb7d8c703c1b6aaac21a9b063110b76dca127ea` | non_address_book | unknown | unknown | verified | n/a | `0x5503e1185c486c327b999b094b151474c1b9bb1f` |
+| source verified unclassified | StakingRewards<br>`0x8f0ecda9679ad16e30be3d83d183c482821f5325` | non_address_book | unknown | unknown | verified | n/a | `0x5503e1185c486c327b999b094b151474c1b9bb1f` |
+| source verified unclassified | stARB<br>`0xedd7083eb44e8cc4e734e57e0032451a04bae625` | non_address_book | unknown | unknown | verified | n/a | `0x5503e1185c486c327b999b094b151474c1b9bb1f` |
+| source verified unclassified | stARBMinter<br>`0xaa3d5398f0258b766f1bb7025f252dc57cabbb86` | non_address_book | unknown | unknown | verified | n/a | `0x5503e1185c486c327b999b094b151474c1b9bb1f` |
+| source verified unclassified | wstARB<br>`0x02175c12d20665f162384344bda8e24ea5820071` | non_address_book | unknown | unknown | verified | n/a | `0x5503e1185c486c327b999b094b151474c1b9bb1f` |
+| unverified unclassified | UnnamedContract<br>`0x1c1347c92e093bdfe500e4d43f3c4c0829f8e49c` | non_address_book | unknown | unknown | unverified | n/a | `0x5503e1185c486c327b999b094b151474c1b9bb1f` |
+| unverified unclassified | UnnamedContract<br>`0xb5408ed89fdd3a6dad70a250d4493e3ca7cb5769` | non_address_book | unknown | unknown | unverified | n/a | `0x5503e1185c486c327b999b094b151474c1b9bb1f` |
+| unverified unclassified | UnnamedContract<br>`0xcf1a40eff1a4d4c56dc4042a1ae93013d13c3217` | non_address_book | unknown | unknown | unverified | n/a | `0x5503e1185c486c327b999b094b151474c1b9bb1f` |
+| unverified unclassified | UnnamedContract<br>`0xd702d7ce5d07c1c54828321789ed33e797e06f81` | non_address_book | unknown | unknown | unverified | n/a | `0x5503e1185c486c327b999b094b151474c1b9bb1f` |
+| unverified unclassified | UnnamedContract<br>`0x4781f0c82dc3ab55d79bd3956689d1b65fbd23ad` | non_address_book | unknown | unknown | unverified | n/a | `0x5503e1185c486c327b999b094b151474c1b9bb1f` |
 
 ## Audit Inventory
 

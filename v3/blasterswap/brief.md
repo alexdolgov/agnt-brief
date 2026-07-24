@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ⚠️ Lifecycle status: DECLINING - TVL dropped 22.8% over 90 days
 
@@ -18,8 +18,8 @@
 - Project: Blasterswap (`blasterswap`)
 - Website: [https://blasterswap.com/](https://blasterswap.com/)
 - Lifecycle: declining (Tier 0, 98.4% below peak)
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: blast
 - Contract surface: 23 unique implementations (28 raw deployments)
 - Coverage basis: 0/16 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
@@ -158,6 +158,27 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---:|---|---|---|---|
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | blast | unit-380679 | `0x3b5d3f610cc3505f4701e9fb7d0f0c93b7713add` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x44fa628241794c0cce502593ab4ef0834b23ea6a` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 5
+- Live contracts: 0
+- Unknown liveness contracts: 5
+- Source-verified contracts: 4
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: source verified unclassified=4, unverified unclassified=1
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| source verified unclassified | Pacmoon<br>`0xde32f9d8472e4faaae17f85b631c2fe04376c830` | non_address_book | unknown | unknown | verified | n/a | `0x1381af4ead4b30b6660403fd88868e57df8c4177` |
+| source verified unclassified | PacmoonAirdrop<br>`0x02ca0e7cfcf2daa79227765c934c81e178ae4af4` | non_address_book | unknown | unknown | verified | n/a | `0x1381af4ead4b30b6660403fd88868e57df8c4177` |
+| source verified unclassified | PacmoonAirdrop<br>`0x38834c50d271b8b755493f9845b9f9b64920638a` | non_address_book | unknown | unknown | verified | n/a | `0x1381af4ead4b30b6660403fd88868e57df8c4177` |
+| source verified unclassified | PacmoonAirdrop2<br>`0x937237c6cef410395825fd431a702be7f785f24d` | non_address_book | unknown | unknown | verified | n/a | `0x1381af4ead4b30b6660403fd88868e57df8c4177` |
+| unverified unclassified | UnnamedContract<br>`0x44fa628241794c0cce502593ab4ef0834b23ea6a` | non_address_book | unknown | unknown | unverified | n/a | `0x9dfde2f071c5a96706ffa04bf676e08b3bb1d013` |
 
 ## Audit Inventory
 

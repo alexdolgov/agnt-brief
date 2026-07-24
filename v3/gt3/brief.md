@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: GT3 (`gt3`)
 - Website: [https://dapp.gt3.finance/](https://dapp.gt3.finance/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: polygon
-- Contract surface: 15 unique implementations (15 raw deployments)
+- Contract surface: 16 unique implementations (17 raw deployments)
 - Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $667,421.13
 - On-chain TVL (included contracts): n/a
@@ -58,15 +58,15 @@ The activated project remains an explicit cohort member with an empty normalized
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - Address-book implementation classification: 0 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 15 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 16 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 1
 - Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
 - All block-explorer-verified implementations audited (incl. non-live): 0/15
 - Verified + Unaudited implementations: 15
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 15
-- Raw deployments: 15
+- Unverified implementations: 1
+- Unique implementations: 16
+- Raw deployments: 17
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -90,7 +90,7 @@ The activated project remains an explicit cohort member with an empty normalized
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | Deployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x887c599a51e3af7b103a4d7d1f74cc03169453e6` | ⚠️ Unaudited |
-| GT3 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | polygon | n/a | `0x06737d16ad9c1e41aa44fee2a952b26723b20673` | ⚠️ Unaudited |
+| GT3 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | polygon | n/a | 2 deployments: polygon `0x06737d16ad9c1e41aa44fee2a952b26723b20673`; polygon `0x9ba5144a9af48636107893e4fbec6d88d14289e3` | ⚠️ Unaudited |
 | GT3Bribe | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x0c1559907b333f4368af0d3bb4b7fa838b8815f0` | ⚠️ Unaudited |
 | GT3BribeFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xa4b64cad3899d8b92e97690b0146e3c0239671e0` | ⚠️ Unaudited |
 | GT3Gauge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x78426512c9058f40510eee552e1395f4e65ed4ed` | ⚠️ Unaudited |
@@ -117,11 +117,31 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xc24566c1dd9f16bb4763c46b1fabc9c3faae24fb` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 2
+- Live contracts: 0
+- Unknown liveness contracts: 2
+- Source-verified contracts: 0
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: unverified unclassified=2
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| unverified unclassified | UnnamedContract<br>`0x9ba5144a9af48636107893e4fbec6d88d14289e3` | non_address_book | unknown | unknown | unverified | n/a | `0xb990d69d7a139ca45be6c307c31992d1ac5296dd` |
+| unverified unclassified | UnnamedContract<br>`0xc24566c1dd9f16bb4763c46b1fabc9c3faae24fb` | non_address_book | unknown | unknown | unverified | n/a | `0xb990d69d7a139ca45be6c307c31992d1ac5296dd` |
 
 ## Audit Inventory
 
@@ -147,7 +167,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 15 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

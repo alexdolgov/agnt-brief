@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Polynomial Protocol (`polynomial-protocol`)
 - Website: [https://www.polynomial.fi](https://www.polynomial.fi)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: ethereum, optimism
 - Contract surface: 15 unique implementations (16 raw deployments)
 - Coverage basis: 0/1 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
@@ -124,6 +124,37 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 - None
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 15
+- Live contracts: 1
+- Unknown liveness contracts: 14
+- Source-verified contracts: 15
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: candidate review=8, contamination review=4, source verified unclassified=3
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| candidate review | AddressManager<br>`0x287bba8116f2fc5a642bfd6027ebf5ad6522655c` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x0ccbfb59ad4e76bcc00105a38d9fdf1434e07e0d` |
+| candidate review | L1ChugSplashProxy<br>`0x3be64bf2b9c2de637067c7aab6bae5edf9feba55` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x0ccbfb59ad4e76bcc00105a38d9fdf1434e07e0d` |
+| candidate review | Proxy<br>`0x034cbb620d1e0e4c2e29845229beac57083b04ec` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x0ccbfb59ad4e76bcc00105a38d9fdf1434e07e0d` |
+| candidate review | Proxy<br>`0x58b51fb9feed00dd846f91d265eba3cdd855a413` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x0ccbfb59ad4e76bcc00105a38d9fdf1434e07e0d` |
+| candidate review | Proxy<br>`0x994233366c8e11da5c525ab903c04e7afb2915bd` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x0ccbfb59ad4e76bcc00105a38d9fdf1434e07e0d` |
+| candidate review | Proxy<br>`0xd5890bbafafdce942597757385e55174569e8d1a` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x0ccbfb59ad4e76bcc00105a38d9fdf1434e07e0d` |
+| candidate review | ProxyAdmin<br>`0x3c68b1d45f4faa4f028c3dc8910fa3247c7f0a1f` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x0ccbfb59ad4e76bcc00105a38d9fdf1434e07e0d` |
+| candidate review | ResolvedDelegateProxy<br>`0x36725a5e0040deb7c697d46c0e24390702b202e0` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x0ccbfb59ad4e76bcc00105a38d9fdf1434e07e0d` |
+| contamination review | L1ERC721Bridge<br>`0x8d703a1ee5925d783aabafe2fc551a1cc62bc5f7` | non_address_book | unknown | unknown | verified | n/a | `0x0ccbfb59ad4e76bcc00105a38d9fdf1434e07e0d` |
+| contamination review | L1StandardBridge<br>`0x082aad9468e3a4b430ba7851a36367d6b471f9b8` | non_address_book | unknown | unknown | verified | n/a | `0x0ccbfb59ad4e76bcc00105a38d9fdf1434e07e0d` |
+| contamination review | L2OutputOracle<br>`0xc2341b9265f7bda95dc5c04ccb6a9801da7cbf75` | non_address_book | unknown | unknown | verified | n/a | `0x0ccbfb59ad4e76bcc00105a38d9fdf1434e07e0d` |
+| contamination review | OptimismPortal<br>`0xcd0a8dc59685af52cb706d73ab455fca18edc1d5` | non_address_book | unknown | unknown | verified | n/a | `0x0ccbfb59ad4e76bcc00105a38d9fdf1434e07e0d` |
+| source verified unclassified | L1CrossDomainMessenger<br>`0xec097d3f3319f2a23aa82ee2e28d30fdcbe0d753` | non_address_book | unknown | unknown | verified | n/a | `0x0ccbfb59ad4e76bcc00105a38d9fdf1434e07e0d` |
+| source verified unclassified | OptimismMintableERC20Factory<br>`0xcfb1b01c002ab32859dac851e7928b405df8ade4` | non_address_book | unknown | unknown | verified | n/a | `0x0ccbfb59ad4e76bcc00105a38d9fdf1434e07e0d` |
+| source verified unclassified | SystemConfig<br>`0x69762714c496f76756d7aebf8b4225f458cdf853` | non_address_book | unknown | unknown | verified | n/a | `0x0ccbfb59ad4e76bcc00105a38d9fdf1434e07e0d` |
 
 ## Audit Inventory
 

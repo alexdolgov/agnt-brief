@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Symbiotic (`symbiotic`)
 - Website: [https://symbiotic.fi](https://symbiotic.fi)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: ethereum
-- Contract surface: 54 unique implementations (54 raw deployments)
+- Contract surface: 66 unique implementations (67 raw deployments)
 - Coverage basis: 2/2 confirmed own live verified implementations (100.0%); conservative 100.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $289,893,290.31
 - On-chain TVL (included contracts): n/a
@@ -76,15 +76,15 @@ The pinned logic-topography run contains 2 contract row(s) across ethereum. Stru
 - Coverage of address-book-owned deployed-live implementations: 2/2 (100.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 10 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 44 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 1 standard proxy/library)
+- Outside the address book: 56 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 1
-- Confirmed-live implementations: 10 of 54 unique; 44 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 10 of 66 unique; 56 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 2/46
 - Verified + Unaudited implementations: 44
 - Verified by bytecode match: 0
-- Unverified implementations: 8
-- Unique implementations: 54
-- Raw deployments: 54
+- Unverified implementations: 20
+- Unique implementations: 66
+- Raw deployments: 67
 - Audits discovered: 24 (24 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 5
 - ASD (verified + unaudited TVL): n/a
@@ -149,7 +149,7 @@ The pinned logic-topography run contains 2 contract row(s) across ethereum. Stru
 | SlasherFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x685c2ed7d59814d2a597409058ee7a92f21e48fd` | ⚠️ Unaudited |
 | SlasherHints | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x234148646d8c1762c793fd04385afad94998a4c7` | ⚠️ Unaudited |
 | swETH_Burner | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1aca33ae8f57e2cdadd0375875ae12fb08c54529` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xa13e65ca0fefa52ccb9615108ff400ef4806866b` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xa13e65ca0fefa52ccb9615108ff400ef4806866b`; ethereum `0xa73501536b35def71c3b68273f6faff83c01630f` | ⚠️ Unaudited |
 | Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdd649adab2e67cadc2ec29d75abe73f3df08065c` | ⚠️ Unaudited |
 | VaultConfigurator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x29300b1d3150b4e2b12fe80be72f365e200441ec` | ⚠️ Unaudited |
 | VaultHints | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xeaddc9f93a7d7b845084a30da09400f0170fc9bc` | ⚠️ Unaudited |
@@ -171,20 +171,61 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (8)
+### ❓ Unverified (20)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x15f3b9c31a6c88baf7c04f1ca4ae5396a0bb7464` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-393628 | `0x161954842b7ea47cbd050cab4875daa4d6599476` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x41069a712facc421fe194caa59667456863a780e` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-393629 | `0x58f61759d858eafd8f58e4926e251701f6495dbf` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x59d626745aa64ce802397dd4744287b0b80a1e25` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x649527d74a660a7e4b3ee0abc332ddd44c1feb0a` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-393630 | `0x6f80fd397120164e44d23b9334910c8de41ce4ce` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-393631 | `0x70bc72b19a554436459a2c6a9e88892aed18685b` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-393632 | `0x788823c9579a049d986eb76718bc758c0998594a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7f7d3f4e80113e86daa0d1e3f0e8fa1c2ed94b00` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x85fe1589dcf6d4ff207c5fe21fd2e93a94d15f95` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-393633 | `0x9983edcd02f57b8b94bd8de9d18e614dfb964d6d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa74f3107c29d514084ba37bc0e7650cc55fc39e4` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb361894bc06cbba7ea8098bf0e32eb1906a5f891` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-393635 | `0xb5eff01403c0dd3ada1010919791d6eb82f6a84c` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-393637 | `0xe1986078e2a2ce0f8609410b33fca1c1cbccbb4e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe7b6dafe6e5e3d6f7fa3ed7624633e4518b1bc54` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfe3cea768c36ad3d294b7f5d419192a6fbfa4874` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfe8cfc5dbb9c77a32a5eb77c17f0317593f2c133` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfeb871581c2ab2e1eee6f7ddc7e6246cfa087a23` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 13
+- Live contracts: 0
+- Unknown liveness contracts: 13
+- Source-verified contracts: 0
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: unverified unclassified=13
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| unverified unclassified | UnnamedContract<br>`0x15f3b9c31a6c88baf7c04f1ca4ae5396a0bb7464` | non_address_book | unknown | unknown | unverified | n/a | `0x9abc5492c462b855156cd3adc593ae6b3fda0702` |
+| unverified unclassified | UnnamedContract<br>`0x41069a712facc421fe194caa59667456863a780e` | non_address_book | unknown | unknown | unverified | n/a | `0x9abc5492c462b855156cd3adc593ae6b3fda0702` |
+| unverified unclassified | UnnamedContract<br>`0x59d626745aa64ce802397dd4744287b0b80a1e25` | non_address_book | unknown | unknown | unverified | n/a | `0x9abc5492c462b855156cd3adc593ae6b3fda0702` |
+| unverified unclassified | UnnamedContract<br>`0x649527d74a660a7e4b3ee0abc332ddd44c1feb0a` | non_address_book | unknown | unknown | unverified | n/a | `0x9abc5492c462b855156cd3adc593ae6b3fda0702` |
+| unverified unclassified | UnnamedContract<br>`0x7f7d3f4e80113e86daa0d1e3f0e8fa1c2ed94b00` | non_address_book | unknown | unknown | unverified | n/a | `0x9abc5492c462b855156cd3adc593ae6b3fda0702` |
+| unverified unclassified | UnnamedContract<br>`0x85fe1589dcf6d4ff207c5fe21fd2e93a94d15f95` | non_address_book | unknown | unknown | unverified | n/a | `0x9abc5492c462b855156cd3adc593ae6b3fda0702` |
+| unverified unclassified | UnnamedContract<br>`0xa73501536b35def71c3b68273f6faff83c01630f` | non_address_book | unknown | unknown | unverified | n/a | `0x9abc5492c462b855156cd3adc593ae6b3fda0702` |
+| unverified unclassified | UnnamedContract<br>`0xa74f3107c29d514084ba37bc0e7650cc55fc39e4` | non_address_book | unknown | unknown | unverified | n/a | `0x9abc5492c462b855156cd3adc593ae6b3fda0702` |
+| unverified unclassified | UnnamedContract<br>`0xb361894bc06cbba7ea8098bf0e32eb1906a5f891` | non_address_book | unknown | unknown | unverified | n/a | `0x9abc5492c462b855156cd3adc593ae6b3fda0702` |
+| unverified unclassified | UnnamedContract<br>`0xe7b6dafe6e5e3d6f7fa3ed7624633e4518b1bc54` | non_address_book | unknown | unknown | unverified | n/a | `0x9abc5492c462b855156cd3adc593ae6b3fda0702` |
+| unverified unclassified | UnnamedContract<br>`0xfe3cea768c36ad3d294b7f5d419192a6fbfa4874` | non_address_book | unknown | unknown | unverified | n/a | `0x9abc5492c462b855156cd3adc593ae6b3fda0702` |
+| unverified unclassified | UnnamedContract<br>`0xfe8cfc5dbb9c77a32a5eb77c17f0317593f2c133` | non_address_book | unknown | unknown | unverified | n/a | `0x9abc5492c462b855156cd3adc593ae6b3fda0702` |
+| unverified unclassified | UnnamedContract<br>`0xfeb871581c2ab2e1eee6f7ddc7e6246cfa087a23` | non_address_book | unknown | unknown | unverified | n/a | `0x9abc5492c462b855156cd3adc593ae6b3fda0702` |
 
 ## Audit Inventory
 
@@ -260,10 +301,10 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Statemind_DefaultCollateral.pdf | Permit2Lib | unmatched — not counted | — | listed in scope | no |
 | Download Bailsec Rewards V2 report | VaultV2 | unmatched — not counted | — | listed in scope and described in detection section | no |
 | Download Bailsec Rewards V2 report | WithdrawalQueue | unmatched — not counted | — | listed in scope and described in detection section | no |
-| Download Bailsec Rewards V2 report | WithdrawalQueueFactory | own contract | 0x6f80fd… (selected) `0x6f80fd397120164e44d23b9334910c8de41ce4ce` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Download Bailsec Rewards V2 report | WithdrawalQueueFactory | own contract | 0x6f80fd… (selected) `0x6f80fd397120164e44d23b9334910c8de41ce4ce` — deployed 2026-06-29 13:30:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Download Bailsec Rewards V2 report | UniversalDelegator | unmatched — not counted | — | listed in scope and described in detection section | no |
-| Download Bailsec Rewards V2 report | AdapterRegistry | own contract | 0x788823… (selected) `0x788823c9579a049d986eb76718bc758c0998594a` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Download Bailsec Rewards V2 report | ProtocolFeeRegistry | own contract | 0x9983ed… (selected) `0x9983edcd02f57b8b94bd8de9d18e614dfb964d6d` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Download Bailsec Rewards V2 report | AdapterRegistry | own contract | 0x788823… (selected) `0x788823c9579a049d986eb76718bc758c0998594a` — deployed 2026-06-29 13:29:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Download Bailsec Rewards V2 report | ProtocolFeeRegistry | own contract | 0x9983ed… (selected) `0x9983edcd02f57b8b94bd8de9d18e614dfb964d6d` — deployed 2026-06-29 13:29:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Download Bailsec Rewards V2 report | AdapterFactory | unmatched — not counted | — | listed in scope and described in detection section | no |
 | Download Bailsec Rewards V2 report | Adapter | unmatched — not counted | — | listed in scope and described in detection section | no |
 | Download Bailsec Rewards V2 report | AppAdapter | unmatched — not counted | — | listed in scope and described in detection section | no |
@@ -278,10 +319,10 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | Download Statemind Core V2 audit report | RestakingAppAdapter | unmatched — not counted | — | listed in scope | no |
 | Download Statemind Core V2 audit report | VaultV2 | unmatched — not counted | — | listed in scope | no |
 | Download Statemind Core V2 audit report | WithdrawalQueue | unmatched — not counted | — | listed in scope | no |
-| Download Statemind Core V2 audit report | WithdrawalQueueFactory | own contract | 0x6f80fd… (selected) `0x6f80fd397120164e44d23b9334910c8de41ce4ce` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Download Statemind Core V2 audit report | WithdrawalQueueFactory | own contract | 0x6f80fd… (selected) `0x6f80fd397120164e44d23b9334910c8de41ce4ce` — deployed 2026-06-29 13:30:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Download Statemind Core V2 audit report | UniversalDelegator | unmatched — not counted | — | listed in scope | no |
-| Download Statemind Core V2 audit report | AdapterRegistry | own contract | 0x788823… (selected) `0x788823c9579a049d986eb76718bc758c0998594a` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
-| Download Statemind Core V2 audit report | ProtocolFeeRegistry | own contract | 0x9983ed… (selected) `0x9983edcd02f57b8b94bd8de9d18e614dfb964d6d` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Download Statemind Core V2 audit report | AdapterRegistry | own contract | 0x788823… (selected) `0x788823c9579a049d986eb76718bc758c0998594a` — deployed 2026-06-29 13:29:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Download Statemind Core V2 audit report | ProtocolFeeRegistry | own contract | 0x9983ed… (selected) `0x9983edcd02f57b8b94bd8de9d18e614dfb964d6d` — deployed 2026-06-29 13:29:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | Download Statemind Core V2 audit report | AdapterFactory | unmatched — not counted | — | listed in scope | no |
 | Download Statemind Core V2 audit report | Adapter | unmatched — not counted | — | listed in scope | no |
 | Download Statemind Core V2 audit report | AppAdapter | unmatched — not counted | — | listed in scope | no |
@@ -689,7 +730,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 45 |
 | upstream | 0 |
 | standard_library | 1 |
-| needs_review | 8 |
+| needs_review | 20 |
 
 ## Scope Matching Notes
 

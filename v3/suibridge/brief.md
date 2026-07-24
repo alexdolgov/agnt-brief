@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: SuiBridge (`suibridge`)
 - Website: [https://bridge.sui.io](https://bridge.sui.io)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: ethereum
 - Contract surface: 6 unique implementations (10 raw deployments)
 - Coverage basis: 1/1 confirmed own live verified implementations (100.0%); conservative 100.0% with 0 needs-review implementation(s)
@@ -131,6 +131,30 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-393288 | `0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 8
+- Live contracts: 2
+- Unknown liveness contracts: 6
+- Source-verified contracts: 8
+- Currently scope-matched contracts retained as-is: 1
+- Classification counts: currently scope matched=1, candidate review=7
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| currently scope matched | ERC1967Proxy<br>`0xda3bd1fe1973470312db04551b65f401bc8a92fd` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xca8d0b47f9a671adaadcfdde9a6f6acc0917839b` |
+| candidate review | BridgeCommittee<br>`0xa470ca92126bd6b6f6e98f3010c7e384f223b63b` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xca8d0b47f9a671adaadcfdde9a6f6acc0917839b` |
+| candidate review | BridgeConfig<br>`0xb083c462fa5b04899d87204a4566b3db90fec50c` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xca8d0b47f9a671adaadcfdde9a6f6acc0917839b` |
+| candidate review | BridgeLimiter<br>`0xd754e54261e300ff9653567f03f74bfdef887340` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xca8d0b47f9a671adaadcfdde9a6f6acc0917839b` |
+| candidate review | ERC1967Proxy<br>`0x12183b0796bbc4678999100e8c6c5715d5736767` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xca8d0b47f9a671adaadcfdde9a6f6acc0917839b` |
+| candidate review | ERC1967Proxy<br>`0x72d34fe82c71bf8120647518e5128e53106a1540` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xca8d0b47f9a671adaadcfdde9a6f6acc0917839b` |
+| candidate review | ERC1967Proxy<br>`0xee2d52477a7c1a7be0b0347dbe7e3b15185b416f` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0xca8d0b47f9a671adaadcfdde9a6f6acc0917839b` |
+| candidate review | SuiBridge<br>`0xa60f29201aeae592d9ab95747ae1cf425dbb036c` | retained_scope_excluded_inventory | unknown | live | verified | review: no_fresh_structural_match | `0xca8d0b47f9a671adaadcfdde9a6f6acc0917839b` |
 
 ## Audit Inventory
 

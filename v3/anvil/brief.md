@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ⚠️ Lifecycle status: DECLINING - TVL dropped 61.5% over 90 days
 
@@ -18,8 +18,8 @@
 - Project: Anvil (`anvil`)
 - Website: [https://anvil.xyz/](https://anvil.xyz/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: ethereum
 - Contract surface: 17 unique implementations (28 raw deployments)
 - Coverage basis: 7/12 confirmed own live verified implementations (58.3%); conservative 58.3% with 0 needs-review implementation(s)
@@ -150,6 +150,41 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379043 | `0x716321565e1eaba200789e14ad92c9da40b14589` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 19
+- Live contracts: 9
+- Unknown liveness contracts: 10
+- Source-verified contracts: 19
+- Currently scope-matched contracts retained as-is: 5
+- Classification counts: currently scope matched=5, candidate review=11, exact address book overlap=2, source verified unclassified=1
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| currently scope matched | Anvil<br>`0x2ca9242c1810029efed539f1c60d68b63ad01bfc` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0xa4f4508525f4b9011f8a9c50e901c280c4f01c9d` |
+| currently scope matched | AnvilGovernorDelegator<br>`0x00e83d0698faf01bd080a4dd2927e6ab7c4874c9` | project_anchor | governance | live | verified | review: no_fresh_structural_match | `0xa4f4508525f4b9011f8a9c50e901c280c4f01c9d` |
+| currently scope matched | AnvilTimelock<br>`0x4eeb7c5bb75fc0dbea4826bf568fd577f62cad21` | project_anchor | governance | live | verified | n/a | `0xa4f4508525f4b9011f8a9c50e901c280c4f01c9d` |
+| currently scope matched | PythPriceOracle<br>`0xc6f3405c861fa0dca04ec4ba59bc189d1d56ee05` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x554f15665931d61d5c66f235247deffd3bb7d851` |
+| currently scope matched | TransparentUpgradeableProxy<br>`0x14db9a91933ad9433e1a0db04d08e5d9ef7c4808` | project_anchor | unknown | live | verified | review: no_fresh_structural_match | `0x554f15665931d61d5c66f235247deffd3bb7d851` |
+| candidate review | AnvilGovernorDelegate<br>`0x081fe8bf28e07232d25b58811c4cad2ebdaed8d9` | non_address_book | governance | unknown | verified | review: no_fresh_structural_match | `0xa4f4508525f4b9011f8a9c50e901c280c4f01c9d` |
+| candidate review | AnvilGovernorDelegate<br>`0x09c7ec11c51e61997274c5c445c9f4ccf6bc200f` | non_address_book | governance | unknown | verified | review: no_fresh_structural_match | `0xa4f4508525f4b9011f8a9c50e901c280c4f01c9d` |
+| candidate review | AnvilGovernorDelegate<br>`0x123641b8a2063217a96ef88bf608931a43b49f49` | retained_scope_excluded_inventory | governance | live | verified | review: no_fresh_structural_match | `0xa4f4508525f4b9011f8a9c50e901c280c4f01c9d` |
+| candidate review | AnvilGovernorDelegate<br>`0x33148ea4cc49fc351a2a9fa729f75134cd2a3ba1` | non_address_book | governance | unknown | verified | review: no_fresh_structural_match | `0xa4f4508525f4b9011f8a9c50e901c280c4f01c9d` |
+| candidate review | AnvilGovernorDelegate<br>`0x65eed5a31d70d5eb0398dbe8e805ffeb6199f602` | non_address_book | governance | unknown | verified | review: no_fresh_structural_match | `0xa4f4508525f4b9011f8a9c50e901c280c4f01c9d` |
+| candidate review | AnvilGovernorDelegate<br>`0xa57365263ff137c9e93818c0f04425b66ff2b5e4` | non_address_book | governance | unknown | verified | review: no_fresh_structural_match | `0xa4f4508525f4b9011f8a9c50e901c280c4f01c9d` |
+| candidate review | AnvilGovernorDelegate<br>`0xbb1470b2a2dcce0cb91ac91d9d0a3ceec9187aa0` | non_address_book | governance | unknown | verified | review: no_fresh_structural_match | `0xa4f4508525f4b9011f8a9c50e901c280c4f01c9d` |
+| candidate review | AnvilGovernorDelegate<br>`0xfd883f549ee20eb69067102fd93a0687744c5b8f` | non_address_book | governance | unknown | verified | review: no_fresh_structural_match | `0xa4f4508525f4b9011f8a9c50e901c280c4f01c9d` |
+| candidate review | AnvilGovernorDelegate<br>`0xfe1118ce38818ea3c167929eacb6310cdc42a361` | project_anchor | governance | live | verified | review: no_fresh_structural_match | `0xa4f4508525f4b9011f8a9c50e901c280c4f01c9d` |
+| candidate review | LetterOfCredit<br>`0x1a3251d83b4ed97d8e1d8451613d7dd9b4f42961` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x554f15665931d61d5c66f235247deffd3bb7d851` |
+| candidate review | LetterOfCredit<br>`0x750ab78b4fe51292d1f0053845aace3ea959d5ad` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x554f15665931d61d5c66f235247deffd3bb7d851` |
+| exact address book overlap | TimeBasedCollateralPool<br>`0xcc437a7bb14f07de09b0f4438df007c8f64cf29f` | project_anchor | unknown | live | verified | n/a | `0x554f15665931d61d5c66f235247deffd3bb7d851` |
+| exact address book overlap | UpgradeableBeacon<br>`0x1f00d6f7c18a8edf4f8bb4ead8a898abdd9c9e14` | project_anchor | unknown | live | verified | n/a | `0x554f15665931d61d5c66f235247deffd3bb7d851` |
+| source verified unclassified | TimeBasedCollateralPool<br>`0xd042c267758eddf34b481e1f539d637e41db3e5a` | non_address_book | unknown | unknown | verified | n/a | `0x554f15665931d61d5c66f235247deffd3bb7d851` |
 
 ## Audit Inventory
 

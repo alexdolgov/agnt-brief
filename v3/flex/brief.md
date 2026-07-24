@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Flex (`flex`)
 - Website: [https://flexmeow.com/](https://flexmeow.com/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: ethereum
 - Contract surface: 19 unique implementations (26 raw deployments)
 - Coverage basis: 1/3 confirmed own live verified implementations (33.3%); conservative 33.3% with 0 needs-review implementation(s)
@@ -143,6 +143,30 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---:|---|---|---|---|
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386056 | `0x4e8341c77c94cce982ab96d92bb28d69f4638290` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386059 | `0x687b82da9753c9db280d4d9abd7bcac022ef3b67` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 8
+- Live contracts: 0
+- Unknown liveness contracts: 8
+- Source-verified contracts: 8
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: source verified unclassified=8
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| source verified unclassified | AllocatorStrategyAprOracle<br>`0x84d1aec938d4b9f492c50a1b5218e77195899471` | non_address_book | unknown | unknown | verified | n/a | `0x000005281a2b04a182085d37cc9e6dd552795caa` |
+| source verified unclassified | Price Oracle<br>`0x1356d2fa7cbb108cc6671bb61777cb4cef383990` | non_address_book | unknown | unknown | verified | n/a | `0x000005281a2b04a182085d37cc9e6dd552795caa` |
+| source verified unclassified | Price Oracle<br>`0x38cae071526c57f95bbbb41eb12661fbf749a15a` | non_address_book | unknown | unknown | verified | n/a | `0x000005281a2b04a182085d37cc9e6dd552795caa` |
+| source verified unclassified | Price Oracle<br>`0xe8eb473cb2aed7893f34e91a6f63c45532a7a18d` | non_address_book | unknown | unknown | verified | n/a | `0x000005281a2b04a182085d37cc9e6dd552795caa` |
+| source verified unclassified | Price Oracle<br>`0xf58f5c5b8bf903e70b8a96e04e5f6d000662e4c3` | non_address_book | unknown | unknown | verified | n/a | `0x000005281a2b04a182085d37cc9e6dd552795caa` |
+| source verified unclassified | USDC Dutch Taker<br>`0x83cf6efbbf7fb7b53c271f4bb00d8469dcc63e7b` | non_address_book | unknown | unknown | verified | n/a | `0x000005281a2b04a182085d37cc9e6dd552795caa` |
+| source verified unclassified | USDC Dutch Taker<br>`0xd8ce6ed969266e529779b6d6c35aefbd5dad68ec` | non_address_book | unknown | unknown | verified | n/a | `0x000005281a2b04a182085d37cc9e6dd552795caa` |
+| source verified unclassified | USDCToUSDS<br>`0xfb4f83c3923eab7b6254cd2399c206109970f95e` | non_address_book | unknown | unknown | verified | n/a | `0x000005281a2b04a182085d37cc9e6dd552795caa` |
 
 ## Audit Inventory
 

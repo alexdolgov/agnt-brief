@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Turtle Club (`turtle-club`)
 - Website: [https://app.turtle.xyz/](https://app.turtle.xyz/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: avalanche, bsc, ethereum, linea
-- Contract surface: 765 unique implementations (2075 raw deployments)
+- Contract surface: 766 unique implementations (2076 raw deployments)
 - Coverage basis: 0/11 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $850,321.87
 - On-chain TVL (included contracts): n/a
@@ -49,7 +49,7 @@ The pinned logic-topography run contains 17 contract row(s) across avalanche, bs
 ### Forked Contracts
 
 **TurtleGovernor** (`0x6651604ae67dd1ffe66c645545bf61270f5a97e3`, chain 1)
-Origin: turtle-club (`0xa11885ea9a43ce8dee07218e34e6b266762cd3f4`)
+Origin: turtle-club (`0xa11885...2cd3f4`)
 Containment: 100.0% - 29 functions inherited
 Centroid audit status: pending_validation
 
@@ -89,15 +89,15 @@ Removals (removed from original): none
 - Coverage of address-book-owned deployed-live implementations: 0/11 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 11 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 754 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 3 standard proxy/library)
+- Outside the address book: 755 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 3 standard proxy/library)
 - Proxy deployments represented within implementation groups: 243
-- Confirmed-live implementations: 11 of 765 unique; 754 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 11 of 766 unique; 755 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 0/662
 - Verified + Unaudited implementations: 662
 - Verified by bytecode match: 0
-- Unverified implementations: 103
-- Unique implementations: 765
-- Raw deployments: 2075
+- Unverified implementations: 104
+- Unique implementations: 766
+- Raw deployments: 2076
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -795,7 +795,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (103)
+### ❓ Unverified (104)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -900,10 +900,29 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x5bfdea6d9f07fb5922e19a4f40b148902d467ea5` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x5fb5d0d5476b1ada0d299e2b8e507848caee2666` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x7cdf0d944d05aa13ae140a5e880d499808fffb98` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xa14505f315143e16b999b3aca083d306b85b803e` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xc1e38f40c614cf8404067c7f76210fa1df4df212` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xc6d0867cdb97d1d48576333ddd7fb1a5461468dc` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xc9fbf1e865eeababe92d47ddb11d580f37ce4e00` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x6e22a62e683da5146c982749c9242f6ee5fce86e` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 2
+- Live contracts: 0
+- Unknown liveness contracts: 2
+- Source-verified contracts: 0
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: unverified unclassified=2
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| unverified unclassified | UnnamedContract<br>`0x19ad40bc0d0fde19e9f9199e709ebfcc051ee0c8` | non_address_book | unknown | unknown | unverified | n/a | `0x11e498526785284c061dadf75d9febf434bdee44` |
+| unverified unclassified | UnnamedContract<br>`0xa14505f315143e16b999b3aca083d306b85b803e` | non_address_book | unknown | unknown | unverified | n/a | `0xf5c149acb200f5bc8fc5e51df4a7def38d64cfb2` |
 
 ## Audit Inventory
 
@@ -951,7 +970,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 629 |
 | upstream | 20 |
 | standard_library | 9 |
-| needs_review | 107 |
+| needs_review | 108 |
 
 ## Scope Matching Notes
 

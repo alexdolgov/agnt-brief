@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Grvt (`grvt`)
 - Website: [https://grvt.io/](https://grvt.io/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: chain-326, chain-327, ethereum, grvt-exchange
 - Contract surface: 31 unique implementations (36 raw deployments)
 - Coverage basis: 1/3 confirmed own live verified implementations (33.3%); conservative 33.3% with 0 needs-review implementation(s)
@@ -154,6 +154,35 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | chain-326 | unit-387133 | `0x9faca433bc7723e056f7e88bbb464c7b0d894e93` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | chain-327 | unit-387135 | `0x45ce10dd2014ad01027b745bf34eb12840bda881` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | chain-327 | unit-387137 | `0xd53767fc3b7cc71d22bdecf6c9c8c6207cff11c9` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 13
+- Live contracts: 0
+- Unknown liveness contracts: 13
+- Source-verified contracts: 13
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: candidate review=7, contamination review=1, source verified unclassified=5
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| candidate review | GRVTBridgeProxy<br>`0xf7b67bddb74b5ed3de49e1a6da4d1d7460f00780` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x6efb5abafd23c1317906666b9df8514aab704871` |
+| candidate review | GRVTL1TreasuryVault<br>`0x11f6ee88e10f3ac0c1560b5fd43300f6dda4ef2e` | retained_scope_excluded_inventory | unknown | unknown | verified | review: no_fresh_structural_match | `0x340d75f15bf97af6ae518d746063c591bb5368f0` |
+| candidate review | TransparentUpgradeableProxy<br>`0x17cbac7631063d8a79ddb5c3fc7c2336f0161915` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x340d75f15bf97af6ae518d746063c591bb5368f0` |
+| candidate review | TransparentUpgradeableProxy<br>`0x1ff873538e62ba19cd36ce97e48f6fc84d07a5e4` | retained_scope_excluded_inventory | unknown | unknown | verified | review: no_fresh_structural_match | `0x340d75f15bf97af6ae518d746063c591bb5368f0` |
+| candidate review | TransparentUpgradeableProxy<br>`0x3cd52b238ac856600b22756133eeb31ecb25109a` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x6efb5abafd23c1317906666b9df8514aab704871` |
+| candidate review | TransparentUpgradeableProxy<br>`0xab3b124052f0389d1cbed221d912026ac995bb95` | non_address_book | unknown | unknown | verified | review: no_fresh_structural_match | `0x6efb5abafd23c1317906666b9df8514aab704871` |
+| candidate review | TransparentUpgradeableProxy<br>`0xc95fedb8bdc763e4ef093d14e8196afafbb48f45` | retained_scope_excluded_inventory | unknown | unknown | verified | review: no_fresh_structural_match | `0x340d75f15bf97af6ae518d746063c591bb5368f0` |
+| contamination review | WithdrawalFinalizer<br>`0xc107ebafde048a6769aef78528f6779592421249` | non_address_book | unknown | unknown | verified | n/a | `0x6efb5abafd23c1317906666b9df8514aab704871` |
+| source verified unclassified | ChainAdmin<br>`0x51a561962bcdd03644233562e7e7afa134be7c95` | non_address_book | unknown | unknown | verified | n/a | `0x6efb5abafd23c1317906666b9df8514aab704871` |
+| source verified unclassified | Governance<br>`0xe81d64195072e4d09639b31abb257d0096fea9d1` | non_address_book | unknown | unknown | verified | n/a | `0x6efb5abafd23c1317906666b9df8514aab704871` |
+| source verified unclassified | GRVTBaseToken<br>`0x633040f0ae46f2e9759c33cc552cda73c52d3af8` | non_address_book | unknown | unknown | verified | n/a | `0x6efb5abafd23c1317906666b9df8514aab704871` |
+| source verified unclassified | GRVTTransactionFilterer<br>`0x8319fede99061c6723c86d366a903e8fa3a0f541` | non_address_book | unknown | unknown | verified | n/a | `0x6efb5abafd23c1317906666b9df8514aab704871` |
+| source verified unclassified | NativeBridgeGateway<br>`0xf1d59a0d1ec7c0b66b9e04bcae0130302b3c599c` | non_address_book | unknown | unknown | verified | n/a | `0x340d75f15bf97af6ae518d746063c591bb5368f0` |
 
 ## Audit Inventory
 

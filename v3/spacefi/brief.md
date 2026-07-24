@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: SpaceFi (`spacefi`)
 - Website: [https://spacefi.io](https://spacefi.io)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: scroll, zksync-era
-- Contract surface: 30 unique implementations (30 raw deployments)
+- Contract surface: 33 unique implementations (33 raw deployments)
 - Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - DeFi Llama TVL: $826,938.00
 - On-chain TVL (included contracts): n/a
@@ -89,15 +89,15 @@ The activated project remains an explicit cohort member with an empty normalized
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
 - Address-book implementation classification: 23 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 7 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 10 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Confirmed-live implementations: 23 of 30 unique; 7 retained implementation(s) lack confirmed-live status
+- Confirmed-live implementations: 23 of 33 unique; 10 retained implementation(s) lack confirmed-live status
 - All block-explorer-verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 30
-- Unique implementations: 30
-- Raw deployments: 30
+- Unverified implementations: 33
+- Unique implementations: 33
+- Raw deployments: 33
 - Audits discovered: 5 (5 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -132,7 +132,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (30)
+### ❓ Unverified (33)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -168,6 +168,28 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-392916 | `0xf25fd31c869ce1238b4e30e3c8745bfe570e40e1` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | scroll | n/a | `0x18b71386418a9fca5ae7165e31c385a5130011b6` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | scroll | n/a | `0x6cc370ed99f1c11e7ac439f845d0ba6aed55cf50` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | scroll | n/a | `0x738be769a3f9c2887d657d25c734b0d16fbf9459` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | scroll | n/a | `0x7740c579c844a21a4df8e18c39a1c6eebf7e9051` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | scroll | n/a | `0x7c69709b8ac34058990066d32c08637f667eb3de` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 3
+- Live contracts: 0
+- Unknown liveness contracts: 3
+- Source-verified contracts: 0
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: unverified unclassified=3
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| unverified unclassified | UnnamedContract<br>`0x738be769a3f9c2887d657d25c734b0d16fbf9459` | non_address_book | unknown | unknown | unverified | n/a | `0x58c407cfd20b67a46f3ce28f5f7160c9ee435e23` |
+| unverified unclassified | UnnamedContract<br>`0x7740c579c844a21a4df8e18c39a1c6eebf7e9051` | non_address_book | unknown | unknown | unverified | n/a | `0x58c407cfd20b67a46f3ce28f5f7160c9ee435e23` |
+| unverified unclassified | UnnamedContract<br>`0x7c69709b8ac34058990066d32c08637f667eb3de` | non_address_book | unknown | unknown | unverified | n/a | `0x58c407cfd20b67a46f3ce28f5f7160c9ee435e23` |
 
 ## Audit Inventory
 
@@ -217,7 +239,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 30 |
+| needs_review | 33 |
 
 ## Scope Matching Notes
 

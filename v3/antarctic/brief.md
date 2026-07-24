@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `e40c73181a386361babecc6895e0f6c5587548f92814db09f88491f8b4a38d92`
 
 ## Project Overview
 
 - Project: Antarctic (`antarctic`)
 - Website: [https://www.antarctic.exchange/](https://www.antarctic.exchange/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: arbitrum
 - Contract surface: 13 unique implementations (16 raw deployments)
 - Coverage basis: 1/3 confirmed own live verified implementations (33.3%); conservative 33.3% with 0 needs-review implementation(s)
@@ -135,6 +135,28 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x734ec6a0791a1b84a9208faae6187ed81d3597b8` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xf5ce8705f91184ce0d7009baaa959f16c62132fc` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xfb323b42c1058c6e2e9c185c05862df47513bd68` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 6
+- Live contracts: 0
+- Unknown liveness contracts: 6
+- Source-verified contracts: 2
+- Currently scope-matched contracts retained as-is: 0
+- Classification counts: source verified unclassified=2, unverified unclassified=4
+
+| Classification | Contract | Address-Book Class | Role | Liveness | Source | Decision | Deployer |
+|---|---|---|---|---|---|---|---|
+| source verified unclassified | AhlpStaker<br>`0x237455b466c896a646d72a1c23e579638c175600` | non_address_book | core_logic | unknown | verified | n/a | `0x63730113bd32b7f9a34157bf8b70f066b3d4d2c6` |
+| source verified unclassified | AmlpStaker<br>`0x88ff0b40a93166251c7b319bedbf6f41f2d52038` | non_address_book | core_logic | unknown | verified | n/a | `0x63730113bd32b7f9a34157bf8b70f066b3d4d2c6` |
+| unverified unclassified | UnnamedContract<br>`0x169dac7128a6b26a3de082304a001295b330378d` | non_address_book | unknown | unknown | unverified | n/a | `0x2ccf820f04b3fb53ef47e2fdd5920014e038bd9a` |
+| unverified unclassified | UnnamedContract<br>`0x734ec6a0791a1b84a9208faae6187ed81d3597b8` | non_address_book | unknown | unknown | unverified | n/a | `0x2ccf820f04b3fb53ef47e2fdd5920014e038bd9a` |
+| unverified unclassified | UnnamedContract<br>`0xf5ce8705f91184ce0d7009baaa959f16c62132fc` | non_address_book | unknown | unknown | unverified | n/a | `0x63730113bd32b7f9a34157bf8b70f066b3d4d2c6` |
+| unverified unclassified | UnnamedContract<br>`0xfb323b42c1058c6e2e9c185c05862df47513bd68` | non_address_book | unknown | unknown | unverified | n/a | `0x63730113bd32b7f9a34157bf8b70f066b3d4d2c6` |
 
 ## Audit Inventory
 

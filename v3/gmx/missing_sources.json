@@ -7,37 +7,43 @@
       "chain_id": 42161,
       "chain": "arbitrum",
       "address": "0x3d6ba4a91ffde7c519379f8dca5fe58b7125c294",
-      "canonical_source_address": null
+      "canonical_source_address": null,
+      "reason": "verified_onchain_no_cached_source_bundle"
     },
     {
       "chain_id": 42161,
       "chain": "arbitrum",
       "address": "0x5bb6dcb09010069228b2aa766fae513ef7923472",
-      "canonical_source_address": null
+      "canonical_source_address": null,
+      "reason": "verified_onchain_no_cached_source_bundle"
     },
     {
       "chain_id": 42161,
       "chain": "arbitrum",
       "address": "0x839b6e19e54a5862da61974a01675a5f6cc5c8b4",
-      "canonical_source_address": null
+      "canonical_source_address": null,
+      "reason": "verified_onchain_no_cached_source_bundle"
     },
     {
       "chain_id": 42161,
       "chain": "arbitrum",
       "address": "0xad712e1667bc8aaa6c4ea5f47dcd487ddd96bc35",
-      "canonical_source_address": null
+      "canonical_source_address": null,
+      "reason": "verified_onchain_no_cached_source_bundle"
     },
     {
       "chain_id": 42161,
       "chain": "arbitrum",
       "address": "0xbad04ddcc5cc284a86493afa75d2beb970c72216",
-      "canonical_source_address": null
+      "canonical_source_address": null,
+      "reason": "verified_onchain_no_cached_source_bundle"
     },
     {
       "chain_id": 42161,
       "chain": "arbitrum",
       "address": "0xec0e4a27a9fbfc64e4915c254b961260df28054c",
-      "canonical_source_address": null
+      "canonical_source_address": null,
+      "reason": "verified_onchain_no_cached_source_bundle"
     }
   ]
 }

@@ -7,13 +7,15 @@
       "chain_id": 81457,
       "chain": "blast",
       "address": "0x14ed42c74108cd77e52870470dddda6e5d880b4b",
-      "canonical_source_address": null
+      "canonical_source_address": null,
+      "reason": "verified_onchain_no_cached_source_bundle"
     },
     {
       "chain_id": 81457,
       "chain": "blast",
       "address": "0x67fb1a853d8612d2862c66dad242490253bda10e",
-      "canonical_source_address": null
+      "canonical_source_address": null,
+      "reason": "verified_onchain_no_cached_source_bundle"
     }
   ]
 }

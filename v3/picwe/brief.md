@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
 - Project: PICWE (`picwe`)
 - Website: [https://www.picwe.org/en](https://www.picwe.org/en)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: arbitrum, base, bsc, hashkey
 - Contract surface: 13 unique implementations (13 raw deployments)
 - Coverage basis: 0/1 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
@@ -138,6 +138,22 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-251570 | `0x5d54f1092fd1750a3ab96972dc1867c5b23ef22c` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-251571 | `0xdd73ea766b80417c0607a3f08e34a0c415d89d56` | ❓ Unverified |
 
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 0
+- Live contracts: 0
+- Unknown liveness contracts: 0
+- Source-verified contracts: 0
+- Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
+- Classification counts: none
+
+- None
+
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
@@ -158,7 +174,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 |---|---|---|---|---|---|
 | drive.google.com/file/d/12APmNFf_dy2HBnDof_u0mM03_5vKSPWN/view | IMainContract | unmatched — not counted | — | listed in scope table | no |
 | drive.google.com/file/d/12APmNFf_dy2HBnDof_u0mM03_5vKSPWN/view | IPicweUSD | unmatched — not counted | — | listed in scope table | no |
-| drive.google.com/file/d/12APmNFf_dy2HBnDof_u0mM03_5vKSPWN/view | weusd | ambiguous — not counted | 0xdd73ea… (alternative) `0xdd73ea766b80417c0607a3f08e34a0c415d89d56` — liveness: live (current_address_book_code)<br>0xdd73ea… (alternative) `0xdd73ea766b80417c0607a3f08e34a0c415d89d56` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| drive.google.com/file/d/12APmNFf_dy2HBnDof_u0mM03_5vKSPWN/view | weusd | ambiguous — not counted | 0xdd73ea… (alternative) `0xdd73ea766b80417c0607a3f08e34a0c415d89d56` — liveness: live (current_address_book_code)<br>0xdd73ea… (alternative) `0xdd73ea766b80417c0607a3f08e34a0c415d89d56` — deployed 2025-06-26 06:18:13+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | drive.google.com/file/d/12APmNFf_dy2HBnDof_u0mM03_5vKSPWN/view | manageusd | unmatched — not counted | — | listed in scope table | no |
 | drive.google.com/file/d/12APmNFf_dy2HBnDof_u0mM03_5vKSPWN/view | IClientStructsEvents | unmatched — not counted | — | listed in scope table | no |
 | drive.google.com/file/d/12APmNFf_dy2HBnDof_u0mM03_5vKSPWN/view | client | unmatched — not counted | — | listed in scope table | no |

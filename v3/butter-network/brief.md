@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
 - Project: Butter Network (`butter-network`)
 - Website: [https://www.butterswap.io/swap](https://www.butterswap.io/swap)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: ailayer, arbitrum, avalanche, base, blast, bsc, ethereum, kaia, linea, mantle, merlin, optimism, polygon, scroll, unichain, x-layer, zksync-era
 - Contract surface: 71 unique implementations (74 raw deployments)
 - Coverage basis: 0/42 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
@@ -246,6 +246,22 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | kaia | unit-381892 | `0xff031cc2563988bc4afa29e2cd7bcc2d389900a5` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-381866 | `0xff031cc2563988bc4afa29e2cd7bcc2d389900a5` | ❓ Unverified |
 
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 0
+- Live contracts: 0
+- Unknown liveness contracts: 0
+- Source-verified contracts: 0
+- Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
+- Classification counts: none
+
+- None
+
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
@@ -282,7 +298,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | ButterSwap.pdf | Router | unmatched — not counted | — | listed in audit scope table | no |
 | ButterSwap.pdf | FeeReceiver | unmatched — not counted | — | listed in audit scope table | no |
 | ButterSwap.pdf | ButterRouterV2 | unmatched — not counted | — | listed in audit scope table | no |
-| ButterSwap.pdf | SwapAdapter | ambiguous — not counted | SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| ButterSwap.pdf | SwapAdapter | ambiguous — not counted | SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — deployed 2024-07-11 11:56:06+03 — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — deployed 2024-07-11 11:57:13+03 — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — deployed 2024-07-11 11:58:25+03 — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — deployed 2024-07-11 11:23:40+03 — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — deployed 2025-11-26 06:26:12+03 — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — deployed 2024-07-11 11:59:22+03 — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — deployed 2024-07-11 11:58:18+03 — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — deployed 2024-07-11 11:57:11+03 — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — deployed 2024-07-11 11:56:21+03 — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — deployed 2024-07-12 10:56:11+03 — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — deployed 2025-10-14 10:32:23+03 — liveness: live (current_address_book_code)<br>SwapAdapter (alternative) `0xaa301070448385cfaac5913a67b16c4392944a8f` — deployed 2024-07-11 11:28:06+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 | Butter Network TON.pdf | ton_router | unmatched — not counted | — | listed in scope table with SHA256 checksum | no |
 
 ## Coverage Gaps

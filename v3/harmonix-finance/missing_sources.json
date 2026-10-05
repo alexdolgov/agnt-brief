@@ -7,7 +7,8 @@
       "chain_id": 42161,
       "chain": "arbitrum",
       "address": "0x8899910a8c47e177c574454e8249f5e9dcfdf773",
-      "canonical_source_address": null
+      "canonical_source_address": null,
+      "reason": "verified_onchain_no_cached_source_bundle"
     }
   ]
 }

@@ -7,13 +7,15 @@
       "chain_id": 10,
       "chain": "optimism",
       "address": "0x16fbb33001d74e4fb6d1423189a74f89da058788",
-      "canonical_source_address": null
+      "canonical_source_address": null,
+      "reason": "verified_onchain_no_cached_source_bundle"
     },
     {
       "chain_id": 10,
       "chain": "optimism",
       "address": "0xb124a847306f695e3ad44bd62a6356e75683212e",
-      "canonical_source_address": null
+      "canonical_source_address": null,
+      "reason": "verified_onchain_no_cached_source_bundle"
     }
   ]
 }

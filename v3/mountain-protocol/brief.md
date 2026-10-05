@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
 - Project: Mountain Protocol (`mountain-protocol`)
 - Website: [https://mountainprotocol.com](https://mountainprotocol.com)
 - Lifecycle: unknown
-- Generated: 2026-07-17T12:00:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: arbitrum, avalanche, base, celo, ethereum, optimism, polygon, zksync-era
 - Contract surface: 18 unique implementations (18 raw deployments)
 - Coverage basis: 0/5 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
@@ -151,6 +151,22 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-248388 | `0x57f5e098cad7a3d1eed53991d4d66c45c9af7812` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-248389 | `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` | ❓ Unverified |
 
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 0
+- Live contracts: 0
+- Unknown liveness contracts: 0
+- Source-verified contracts: 0
+- Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
+- Classification counts: none
+
+- None
+
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
@@ -171,8 +187,8 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| OpenZeppelin Mountain Protocol USDM - Audit Report Jun 2023.pdf | USDM | ambiguous — not counted | ERC1967Proxy (proxy) (alternative) `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` — deployed 2023-08-25 20:35:11+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` — deployed 2023-11-17 17:52:57+03 — liveness: live (current_address_book_code)<br>0x59d935… (alternative) `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` — deployed 2023-11-17 03:34:09+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` — deployed 2023-11-17 04:59:59+03 — liveness: live (current_address_book_code)<br>0x59d935… (alternative) `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` — deployed 2023-11-17 17:51:13+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
-| OpenZeppelin Mountain Protocol wUSDM - Audit Report Oct 2023.pdf | wUSDM | ambiguous — not counted | 0x57f5e0… (alternative) `0x57f5e098cad7a3d1eed53991d4d66c45c9af7812` — liveness: live (current_address_book_code)<br>0x57f5e0… (alternative) `0x57f5e098cad7a3d1eed53991d4d66c45c9af7812` — liveness: live (current_address_book_code)<br>0x57f5e0… (alternative) `0x57f5e098cad7a3d1eed53991d4d66c45c9af7812` — liveness: live (current_address_book_code)<br>0x57f5e0… (alternative) `0x57f5e098cad7a3d1eed53991d4d66c45c9af7812` — liveness: live (current_address_book_code)<br>0x57f5e0… (alternative) `0x57f5e098cad7a3d1eed53991d4d66c45c9af7812` — liveness: live (current_address_book_code)<br>0x57f5e0… (alternative) `0x57f5e098cad7a3d1eed53991d4d66c45c9af7812` — liveness: live (current_address_book_code)<br>0x57f5e0… (alternative) `0x57f5e098cad7a3d1eed53991d4d66c45c9af7812` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| OpenZeppelin Mountain Protocol USDM - Audit Report Jun 2023.pdf | USDM | ambiguous — not counted | ERC1967Proxy (proxy) (alternative) `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` — deployed 2023-08-25 20:35:11+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` — deployed 2023-11-17 17:52:57+03 — liveness: live (current_address_book_code)<br>0x59d935… (alternative) `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` — deployed 2024-12-05 22:57:03+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` — deployed 2023-11-17 03:34:09+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` — deployed 2023-11-17 04:59:59+03 — liveness: live (current_address_book_code)<br>0x59d935… (alternative) `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` — deployed 2024-12-05 22:57:21+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x59d9356e565ab3a36dd77763fc0d87feaf85508c` — deployed 2023-11-17 17:51:13+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| OpenZeppelin Mountain Protocol wUSDM - Audit Report Oct 2023.pdf | wUSDM | ambiguous — not counted | 0x57f5e0… (alternative) `0x57f5e098cad7a3d1eed53991d4d66c45c9af7812` — deployed 2023-10-06 22:57:59+03 — liveness: live (current_address_book_code)<br>0x57f5e0… (alternative) `0x57f5e098cad7a3d1eed53991d4d66c45c9af7812` — deployed 2025-01-23 22:23:48+03 — liveness: live (current_address_book_code)<br>0x57f5e0… (alternative) `0x57f5e098cad7a3d1eed53991d4d66c45c9af7812` — deployed 2024-03-29 14:30:43+03 — liveness: live (current_address_book_code)<br>0x57f5e0… (alternative) `0x57f5e098cad7a3d1eed53991d4d66c45c9af7812` — deployed 2023-12-15 00:10:53+03 — liveness: live (current_address_book_code)<br>0x57f5e0… (alternative) `0x57f5e098cad7a3d1eed53991d4d66c45c9af7812` — deployed 2024-03-27 04:45:33+03 — liveness: live (current_address_book_code)<br>0x57f5e0… (alternative) `0x57f5e098cad7a3d1eed53991d4d66c45c9af7812` — deployed 2024-03-29 14:29:21+03 — liveness: live (current_address_book_code)<br>0x57f5e0… (alternative) `0x57f5e098cad7a3d1eed53991d4d66c45c9af7812` — deployed 2024-12-06 01:38:51+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
 
 ## Coverage Gaps
 

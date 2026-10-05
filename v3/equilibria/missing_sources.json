@@ -7,13 +7,15 @@
       "chain_id": 9745,
       "chain": "chain-9745",
       "address": "0x02c033574b6ca02ddae8e0b4070d551149d981e4",
-      "canonical_source_address": null
+      "canonical_source_address": null,
+      "reason": "verified_onchain_no_cached_source_bundle"
     },
     {
       "chain_id": 9745,
       "chain": "chain-9745",
       "address": "0xad29951cda3dcd0e570e65a6ee34aa455c53421c",
-      "canonical_source_address": null
+      "canonical_source_address": null,
+      "reason": "verified_onchain_no_cached_source_bundle"
     }
   ]
 }

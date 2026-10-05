@@ -7,31 +7,36 @@
       "chain_id": 43114,
       "chain": "avalanche",
       "address": "0x22bafb9c882a8ba7ee5559186540bcd8dba1d073",
-      "canonical_source_address": "0x514d0ac9bfaf631ac7b303564ba1c822bc52f365"
+      "canonical_source_address": "0x514d0ac9bfaf631ac7b303564ba1c822bc52f365",
+      "reason": "verified_onchain_no_cached_source_bundle"
     },
     {
       "chain_id": 43114,
       "chain": "avalanche",
       "address": "0x27ce13ed07c367258e0e65eb932dffcb84f62b7e",
-      "canonical_source_address": null
+      "canonical_source_address": null,
+      "reason": "verified_onchain_no_cached_source_bundle"
     },
     {
       "chain_id": 43114,
       "chain": "avalanche",
       "address": "0x3ccef51d2e4042b1d01b41e2115a6eae8c7e805a",
-      "canonical_source_address": null
+      "canonical_source_address": null,
+      "reason": "verified_onchain_no_cached_source_bundle"
     },
     {
       "chain_id": 43114,
       "chain": "avalanche",
       "address": "0x52950ffee4ae5c6206d598a639647df27f8f7bd2",
-      "canonical_source_address": null
+      "canonical_source_address": null,
+      "reason": "verified_onchain_no_cached_source_bundle"
     },
     {
       "chain_id": 43114,
       "chain": "avalanche",
       "address": "0x697d7c12853a59429b62ab4d310975335dba2c68",
-      "canonical_source_address": null
+      "canonical_source_address": null,
+      "reason": "verified_onchain_no_cached_source_bundle"
     }
   ]
 }

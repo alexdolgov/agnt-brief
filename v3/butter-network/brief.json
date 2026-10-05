@@ -1,7 +1,7 @@
 {
   "schema_version": "3.0",
   "project_key": "butter-network",
-  "generated_at": "2026-07-15T18:30:00.000Z",
+  "generated_at": "2026-07-24T14:10:00.000Z",
   "authority": {
     "activation_id": "scope-prod-20260715-v1",
     "production_closure_sha256": "38a124a34bf27378c85726318ca5f9408641faecd45c04ee5b82ad07a65cbc83",
@@ -13,7 +13,7 @@
     "liveness_closure_sha256": "e1855078572b4a5868cbe2ff93c7ad47c89e29b1b8209e48161f110e31790ddd",
     "fork_detection_run_id": "fork-structural-canonical-production-20260712",
     "deployer_decision_run_id": "deployer-candidate-production-20260712",
-    "export_input_receipt_sha256": "e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd",
+    "export_input_receipt_sha256": "f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374",
     "canonical_network_policy": "offline_cache_only"
   },
   "production_state": {
@@ -28,7 +28,7 @@
   "missing_evidence": {
     "audit_dates": []
   },
-  "pipeline_run_id": "brief-generation-scope-prod-20260715-v1",
+  "pipeline_run_id": "brief-deployer-expansion-all-20260724-v1",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -146,6 +146,27 @@
     "standards": {},
     "frameworks": {},
     "upgradeable_contracts": 0
+  },
+  "deployer_expansion_inventory": {
+    "source": "project_contracts.discovery_source=deployer_expansion",
+    "decision_run_id": "deployer-candidate-production-20260712",
+    "total_contracts": 0,
+    "live_contracts": 0,
+    "unknown_liveness_contracts": 0,
+    "source_verified_contracts": 0,
+    "currently_scope_matched_contracts": 0,
+    "classification_counts": {
+      "currently_scope_matched": 0,
+      "candidate_auto_own": 0,
+      "candidate_review": 0,
+      "candidate_hard_block": 0,
+      "contamination_review": 0,
+      "third_party_or_infra": 0,
+      "exact_address_book_overlap": 0,
+      "source_verified_unclassified": 0,
+      "unverified_unclassified": 0
+    },
+    "contracts": []
   },
   "surface_sufficiency": {
     "unique_implementations": 58,
@@ -883,7 +904,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-07-26 07:35:59+03",
       "deploy_coverage_basis": null
     },
     {
@@ -934,7 +955,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-07-25 17:12:09+03",
       "deploy_coverage_basis": null
     },
     {
@@ -985,7 +1006,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-07-25 15:56:24+03",
       "deploy_coverage_basis": null
     },
     {
@@ -1036,7 +1057,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-07-25 15:56:13+03",
       "deploy_coverage_basis": null
     },
     {
@@ -1087,7 +1108,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-07-26 07:37:56+03",
       "deploy_coverage_basis": null
     },
     {
@@ -1138,7 +1159,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-07-25 16:01:55+03",
       "deploy_coverage_basis": null
     },
     {
@@ -1189,7 +1210,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-07-25 17:11:53+03",
       "deploy_coverage_basis": null
     },
     {
@@ -1240,7 +1261,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-07-26 07:36:39+03",
       "deploy_coverage_basis": null
     },
     {
@@ -1291,7 +1312,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-07-25 17:12:15+03",
       "deploy_coverage_basis": null
     },
     {
@@ -1342,7 +1363,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-07-26 07:37:20+03",
       "deploy_coverage_basis": null
     },
     {
@@ -1393,7 +1414,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-08-28 12:16:11+03",
       "deploy_coverage_basis": null
     },
     {
@@ -1444,7 +1465,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-08-26 05:31:23+03",
       "deploy_coverage_basis": null
     },
     {
@@ -1495,7 +1516,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-08-25 12:56:27+03",
       "deploy_coverage_basis": null
     },
     {
@@ -1546,7 +1567,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-10-14 11:22:21+03",
       "deploy_coverage_basis": null
     },
     {
@@ -1597,7 +1618,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-08-25 12:23:59+03",
       "deploy_coverage_basis": null
     },
     {
@@ -1648,7 +1669,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-08-26 05:42:59+03",
       "deploy_coverage_basis": null
     },
     {
@@ -1699,7 +1720,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-08-26 05:49:24+03",
       "deploy_coverage_basis": null
     },
     {
@@ -1750,7 +1771,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-11-26 09:47:46+03",
       "deploy_coverage_basis": null
     },
     {
@@ -1801,7 +1822,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-08-25 15:20:03+03",
       "deploy_coverage_basis": null
     },
     {
@@ -1906,7 +1927,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-01-11 08:26:11+03",
       "deploy_coverage_basis": null
     },
     {
@@ -1957,7 +1978,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-01-10 12:41:51+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2008,7 +2029,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-01-10 12:14:19+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2059,7 +2080,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-10-14 11:14:29+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2110,7 +2131,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-01-10 12:10:23+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2161,7 +2182,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-01-10 08:37:14+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2212,7 +2233,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-01-10 12:39:13+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2263,7 +2284,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-01-10 12:46:15+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2314,7 +2335,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-11-26 09:44:37+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2365,7 +2386,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-01-10 08:35:45+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2416,7 +2437,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-01-10 12:37:15+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2467,7 +2488,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-07-12 10:56:11+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2518,7 +2539,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-07-11 11:56:21+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2569,7 +2590,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-07-11 11:28:06+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2620,7 +2641,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-10-14 10:32:23+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2671,7 +2692,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-07-11 11:23:40+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2722,7 +2743,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-07-11 11:59:22+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2773,7 +2794,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-07-11 11:57:11+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2824,7 +2845,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-07-11 11:56:06+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2875,7 +2896,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-11-26 06:26:12+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2926,7 +2947,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-07-11 11:58:18+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2977,7 +2998,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-07-11 11:57:13+03",
       "deploy_coverage_basis": null
     },
     {
@@ -3028,7 +3049,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-07-11 11:58:25+03",
       "deploy_coverage_basis": null
     },
     {
@@ -3232,7 +3253,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [
           "project_anchor"
         ],
@@ -3243,7 +3264,7 @@
           "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
         ]
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-04-19 14:31:16+03",
       "deploy_coverage_basis": null
     },
     {
@@ -3345,7 +3366,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [
           "project_anchor"
         ],
@@ -3356,7 +3377,7 @@
           "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
         ]
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-04-25 12:24:35+03",
       "deploy_coverage_basis": null
     },
     {
@@ -3407,7 +3428,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-07-11 12:02:05+03",
       "deploy_coverage_basis": null
     },
     {
@@ -3917,7 +3938,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
       "surface_evidence": {
-        "source": "project_contracts.discovery_evidence",
+        "source": "protocol_docs",
         "address_book_inventory_classes": [
           "project_anchor"
         ],
@@ -3928,7 +3949,7 @@
           "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
         ]
       },
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-05-10 11:37:22+03",
       "deploy_coverage_basis": null
     },
     {
@@ -4183,7 +4204,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-01-10 12:48:07+03",
       "deploy_coverage_basis": null
     }
   ],
@@ -4517,7 +4538,7 @@
               "source_urls": [
                 "https://docs.butternetwork.io/butter-swap-integration/deployed-contracts-v3.0.md"
               ],
-              "deploy_date": null,
+              "deploy_date": "2024-07-11 11:56:06+03",
               "product_line": "Ethereum (1)",
               "address_book_label": null,
               "address_book_section": null,
@@ -4543,7 +4564,7 @@
               "source_urls": [
                 "https://docs.butternetwork.io/butter-swap-integration/deployed-contracts-v3.0.md"
               ],
-              "deploy_date": null,
+              "deploy_date": "2024-07-11 11:57:13+03",
               "product_line": "Ethereum (1)",
               "address_book_label": null,
               "address_book_section": null,
@@ -4569,7 +4590,7 @@
               "source_urls": [
                 "https://docs.butternetwork.io/butter-swap-integration/deployed-contracts-v3.0.md"
               ],
-              "deploy_date": null,
+              "deploy_date": "2024-07-11 11:58:25+03",
               "product_line": "Ethereum (1)",
               "address_book_label": null,
               "address_book_section": null,
@@ -4595,7 +4616,7 @@
               "source_urls": [
                 "https://docs.butternetwork.io/butter-swap-integration/deployed-contracts-v3.0.md"
               ],
-              "deploy_date": null,
+              "deploy_date": "2024-07-11 11:23:40+03",
               "product_line": "Ethereum (1)",
               "address_book_label": null,
               "address_book_section": null,
@@ -4621,7 +4642,7 @@
               "source_urls": [
                 "https://docs.butternetwork.io/butter-swap-integration/deployed-contracts-v3.0.md"
               ],
-              "deploy_date": null,
+              "deploy_date": "2025-11-26 06:26:12+03",
               "product_line": "Ethereum (1)",
               "address_book_label": null,
               "address_book_section": null,
@@ -4647,7 +4668,7 @@
               "source_urls": [
                 "https://docs.butternetwork.io/butter-swap-integration/deployed-contracts-v3.0.md"
               ],
-              "deploy_date": null,
+              "deploy_date": "2024-07-11 11:59:22+03",
               "product_line": "Ethereum (1)",
               "address_book_label": null,
               "address_book_section": null,
@@ -4673,7 +4694,7 @@
               "source_urls": [
                 "https://docs.butternetwork.io/butter-swap-integration/deployed-contracts-v3.0.md"
               ],
-              "deploy_date": null,
+              "deploy_date": "2024-07-11 11:58:18+03",
               "product_line": "Ethereum (1)",
               "address_book_label": null,
               "address_book_section": null,
@@ -4699,7 +4720,7 @@
               "source_urls": [
                 "https://docs.butternetwork.io/butter-swap-integration/deployed-contracts-v3.0.md"
               ],
-              "deploy_date": null,
+              "deploy_date": "2024-07-11 11:57:11+03",
               "product_line": "Ethereum (1)",
               "address_book_label": null,
               "address_book_section": null,
@@ -4725,7 +4746,7 @@
               "source_urls": [
                 "https://docs.butternetwork.io/butter-swap-integration/deployed-contracts-v3.0.md"
               ],
-              "deploy_date": null,
+              "deploy_date": "2024-07-11 11:56:21+03",
               "product_line": "Ethereum (1)",
               "address_book_label": null,
               "address_book_section": null,
@@ -4751,7 +4772,7 @@
               "source_urls": [
                 "https://docs.butternetwork.io/butter-swap-integration/deployed-contracts-v3.0.md"
               ],
-              "deploy_date": null,
+              "deploy_date": "2024-07-12 10:56:11+03",
               "product_line": "Ethereum (1)",
               "address_book_label": null,
               "address_book_section": null,
@@ -4777,7 +4798,7 @@
               "source_urls": [
                 "https://docs.butternetwork.io/butter-swap-integration/deployed-contracts-v3.0.md"
               ],
-              "deploy_date": null,
+              "deploy_date": "2025-10-14 10:32:23+03",
               "product_line": "Ethereum (1)",
               "address_book_label": null,
               "address_book_section": null,
@@ -4803,7 +4824,7 @@
               "source_urls": [
                 "https://docs.butternetwork.io/butter-swap-integration/deployed-contracts-v3.0.md"
               ],
-              "deploy_date": null,
+              "deploy_date": "2024-07-11 11:28:06+03",
               "product_line": "Ethereum (1)",
               "address_book_label": null,
               "address_book_section": null,
@@ -4950,5 +4971,6 @@
     }
   },
   "active_bug_bounty": null,
+  "non_evm_deployments": null,
   "out_of_scope": null
 }

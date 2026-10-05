@@ -1,5 +1,7 @@
 # agnt-brief — Audit Intelligence Briefs
 
+> **Legacy root-level index.** For the canonical 1,359-project publication, use the [v3 index](./v3/INDEX.md). The entries below are an older v2 snapshot with a different project set.
+
 | Project | TVL | Coverage | ASD | Lifecycle | Audits | Contracts | Updated |
 |---|---|---|---|---|---|---|---|
 | [0vix](./0vix/) | $0.0 | 0.0% | ? | unknown | 2 | 0 | 2026-07-03 |

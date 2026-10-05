@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
 - Project: Geist Finance (`geist-finance`)
 - Website: [https://geist.finance/](https://geist.finance/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: fantom
 - Contract surface: 17 unique implementations (17 raw deployments)
 - Coverage basis: not assessable — No confirmed own live-verified denominator is available.
@@ -149,6 +149,22 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386856 | `0xe40b7fa6f5f7fb0dc7d56f433814227aaae020b5` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386857 | `0xf3b0611e2e4d2cd6ab4bb3e01ade211c3f42a8c3` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-386858 | `0xfcef135eb981cdd798a2c0cfd4149ef534fd6eea` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 0
+- Live contracts: 0
+- Unknown liveness contracts: 0
+- Source-verified contracts: 0
+- Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
+- Classification counts: none
+
+- None
 
 ## Audit Inventory
 

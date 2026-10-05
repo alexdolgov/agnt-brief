@@ -7,19 +7,22 @@
       "chain_id": 291,
       "chain": "chain-291",
       "address": "0x14a6342a8c1ef9856898f510fcce377e46668f33",
-      "canonical_source_address": null
+      "canonical_source_address": null,
+      "reason": "verified_onchain_no_cached_source_bundle"
     },
     {
       "chain_id": 291,
       "chain": "chain-291",
       "address": "0x7cc5b6433eb33164c88f6512f56c566cfc3420bf",
-      "canonical_source_address": null
+      "canonical_source_address": null,
+      "reason": "verified_onchain_no_cached_source_bundle"
     },
     {
       "chain_id": 291,
       "chain": "chain-291",
       "address": "0xa0a07a78c7d31e6f8698f48fc9219f9a3030f38c",
-      "canonical_source_address": null
+      "canonical_source_address": null,
+      "reason": "verified_onchain_no_cached_source_bundle"
     }
   ]
 }

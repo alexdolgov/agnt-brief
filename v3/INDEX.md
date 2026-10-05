@@ -3,6 +3,7 @@
 Every canonical project has `brief.json`/`brief.md`. Projects with verified sources also have a
 `DEPLOYMENTS.md` address map and one standalone Foundry package per unique source bundle under `src/<Component>/`.
 Publication is not gated by audit availability: verified contract packages are published even when a project has no audits.
+`source unavailable` means an expected verified deployment has no cached source bundle; `brief only` means no source package was exported.
 
 | Project | Audits | Publication | Cached source deployments | Coverage | Foundry packages | Deployments |
 |---|---:|---|---:|---:|---:|---:|
@@ -424,7 +425,7 @@ Publication is not gated by audit availability: verified contract packages are p
 | [fastex](fastex/) | none | brief only | n/a | n/a | 0 | 0 |
 | [feather](feather/) | none | contracts published | 13/13 (100.0%) | n/a | 8 | 13 |
 | [felix](felix/) | 4 | contracts published | 45/45 (100.0%) | 0.0% | 4 | 45 |
-| [ferro](ferro/) | 4 | brief only | 0/3 (0.0%) | n/a | 0 | 0 |
+| [ferro](ferro/) | 4 | source unavailable | 0/3 (0.0%) | n/a | 0 | 0 |
 | [filet-finance](filet-finance/) | 1 | contracts published | 1/1 (100.0%) | n/a | 1 | 1 |
 | [filliquid](filliquid/) | 4 | contracts published | 1/1 (100.0%) | 0.0% | 1 | 1 |
 | [finnexus](finnexus/) | none | contracts published | 1/1 (100.0%) | n/a | 1 | 1 |
@@ -475,7 +476,7 @@ Publication is not gated by audit availability: verified contract packages are p
 | [gate-us](gate-us/) | 1 | brief only | n/a | n/a | 0 | 0 |
 | [gauntlet](gauntlet/) | 5 | contracts published | 103/103 (100.0%) | 40.0% | 103 | 103 |
 | [gearbox](gearbox/) | 38 | contracts published | 508/508 (100.0%) | n/a | 106 | 508 |
-| [geist-finance](geist-finance/) | 2 | brief only | 0/1 (0.0%) | n/a | 0 | 0 |
+| [geist-finance](geist-finance/) | 2 | source unavailable | 0/1 (0.0%) | n/a | 0 | 0 |
 | [gemini](gemini/) | 1 | contracts published | 1/1 (100.0%) | 0.0% | 1 | 1 |
 | [gemswap](gemswap/) | none | brief only | n/a | n/a | 0 | 0 |
 | [generic.money](generic.money/) | 1 | contracts published | 20/20 (100.0%) | 42.9% | 14 | 20 |

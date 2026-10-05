@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ⚠️ Lifecycle status: DECLINING - TVL dropped 88.8% over 90 days
 
@@ -18,8 +18,8 @@
 - Project: Arch (`arch`)
 - Website: [https://www.arch.finance](https://www.arch.finance)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: ethereum, polygon
 - Contract surface: 22 unique implementations (29 raw deployments)
 - Coverage basis: 1/18 confirmed own live verified implementations (5.6%); conservative 5.6% with 0 needs-review implementation(s)
@@ -51,7 +51,7 @@ The pinned logic-topography run contains 21 contract row(s) across ethereum, pol
 ### Forked Contracts
 
 **SetToken** (`0x0d20e86abab680c038ac8bbdc1446585e67f8951`, chain 1)
-Origin: beta-finance (`0x1494ca1f11d487c2bbe4543e90080aeba4ba3c2b`)
+Origin: beta-finance (`0x1494ca...ba3c2b`)
 Containment: 100.0% - 28 functions inherited
 Centroid audit status: pending_validation
 
@@ -171,6 +171,22 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x0d20e86abab680c038ac8bbdc1446585e67f8951` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x4e39ceae6e771605ddd7d1121f3320f7a2319318` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xe8e8486228753e01dbc222da262aa706bd67e601` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 0
+- Live contracts: 0
+- Unknown liveness contracts: 0
+- Source-verified contracts: 0
+- Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
+- Classification counts: none
+
+- None
 
 ## Audit Inventory
 

@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
 - Project: Travessia Credit (`travessia-credit`)
 - Website: [https://www.travessiacredit.com/](https://www.travessiacredit.com/)
 - Lifecycle: unknown
-- Generated: 2026-07-17T12:00:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: ethereum
 - Contract surface: 15 unique implementations (15 raw deployments)
 - Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
@@ -122,6 +122,22 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xe4ee0fe4b09021fcdf76b165aa1e8eaf7d447c35` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xf84a37545e313e8177d80039158ed478c7dc9079` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xfdcd086a3eeffe334579be6da64a55b20ed30b53` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 0
+- Live contracts: 0
+- Unknown liveness contracts: 0
+- Source-verified contracts: 0
+- Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
+- Classification counts: none
+
+- None
 
 ## Audit Inventory
 

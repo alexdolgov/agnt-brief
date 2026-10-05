@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
 - Project: Capybara Exchange (`capybara-exchange`)
 - Website: [https://www.capybara.exchange](https://www.capybara.exchange)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: kaia
 - Contract surface: 1 unique implementations (1 raw deployments)
 - Coverage basis: not assessable — No confirmed own live-verified denominator is available.
@@ -122,6 +122,22 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | kaia | unit-231608 | `0x3ca30c862769b5de7987d2e2db4c1a72800a1da1` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 0
+- Live contracts: 0
+- Unknown liveness contracts: 0
+- Source-verified contracts: 0
+- Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
+- Classification counts: none
+
+- None
 
 ## Audit Inventory
 

@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
 - Project: ReactorFusion (`reactorfusion`)
 - Website: [https://app.reactorfusion.xyz/](https://app.reactorfusion.xyz/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: zksync-era
 - Contract surface: 15 unique implementations (15 raw deployments)
 - Coverage basis: not assessable — No confirmed own live-verified denominator is available.
@@ -145,6 +145,22 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-391403 | `0xc5db68f30d21cbe0c9eac7be5ea83468d69297e6` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-391405 | `0xf3caf0be62a0e6ff6569004af55f57a0b9440434` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-391406 | `0xf5430284e7418891e3a0477d7598a3aa861d5c1d` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 0
+- Live contracts: 0
+- Unknown liveness contracts: 0
+- Source-verified contracts: 0
+- Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
+- Classification counts: none
+
+- None
 
 ## Audit Inventory
 

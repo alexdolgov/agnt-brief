@@ -7,7 +7,8 @@
       "chain_id": 8217,
       "chain": "chain-8217",
       "address": "0x650a4c074a58b18fbeed48ae766e58a382d9e5f5",
-      "canonical_source_address": null
+      "canonical_source_address": null,
+      "reason": "verified_onchain_no_cached_source_bundle"
     }
   ]
 }

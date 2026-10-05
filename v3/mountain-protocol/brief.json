@@ -1,7 +1,7 @@
 {
   "schema_version": "3.0",
   "project_key": "mountain-protocol",
-  "generated_at": "2026-07-17T12:00:00.000Z",
+  "generated_at": "2026-07-24T14:10:00.000Z",
   "authority": {
     "activation_id": "scope-prod-20260715-v1",
     "production_closure_sha256": "38a124a34bf27378c85726318ca5f9408641faecd45c04ee5b82ad07a65cbc83",
@@ -13,7 +13,7 @@
     "liveness_closure_sha256": "e1855078572b4a5868cbe2ff93c7ad47c89e29b1b8209e48161f110e31790ddd",
     "fork_detection_run_id": "fork-structural-canonical-production-20260712",
     "deployer_decision_run_id": "deployer-candidate-production-20260712",
-    "export_input_receipt_sha256": "12555af2097191e60e7a3dc0743058c9046ed87a105382bdae663a49f79103f7",
+    "export_input_receipt_sha256": "f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374",
     "canonical_network_policy": "offline_cache_only"
   },
   "production_state": {
@@ -28,7 +28,7 @@
   "missing_evidence": {
     "audit_dates": []
   },
-  "pipeline_run_id": "brief-generation-scope-prod-20260715-v1",
+  "pipeline_run_id": "brief-deployer-expansion-all-20260724-v1",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -145,6 +145,27 @@
       "openzeppelin": 5
     },
     "upgradeable_contracts": 5
+  },
+  "deployer_expansion_inventory": {
+    "source": "project_contracts.discovery_source=deployer_expansion",
+    "decision_run_id": "deployer-candidate-production-20260712",
+    "total_contracts": 0,
+    "live_contracts": 0,
+    "unknown_liveness_contracts": 0,
+    "source_verified_contracts": 0,
+    "currently_scope_matched_contracts": 0,
+    "classification_counts": {
+      "currently_scope_matched": 0,
+      "candidate_auto_own": 0,
+      "candidate_review": 0,
+      "candidate_hard_block": 0,
+      "contamination_review": 0,
+      "third_party_or_infra": 0,
+      "exact_address_book_overlap": 0,
+      "source_verified_unclassified": 0,
+      "unverified_unclassified": 0
+    },
+    "contracts": []
   },
   "surface_sufficiency": {
     "unique_implementations": 16,
@@ -356,7 +377,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2023-10-06 22:57:59+03",
       "deploy_coverage_basis": null
     },
     {
@@ -407,7 +428,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-03-29 14:29:21+03",
       "deploy_coverage_basis": null
     },
     {
@@ -458,7 +479,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2023-12-15 00:10:53+03",
       "deploy_coverage_basis": null
     },
     {
@@ -563,7 +584,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-10-15 05:01:54+03",
       "deploy_coverage_basis": null
     },
     {
@@ -614,7 +635,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-11-01 04:24:27+03",
       "deploy_coverage_basis": null
     },
     {
@@ -665,7 +686,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-03-29 14:30:43+03",
       "deploy_coverage_basis": null
     },
     {
@@ -716,7 +737,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-03-27 04:45:33+03",
       "deploy_coverage_basis": null
     },
     {
@@ -767,7 +788,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-12-06 01:38:51+03",
       "deploy_coverage_basis": null
     },
     {
@@ -818,7 +839,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-12-05 22:57:21+03",
       "deploy_coverage_basis": null
     },
     {
@@ -869,7 +890,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2025-01-23 22:23:48+03",
       "deploy_coverage_basis": null
     },
     {
@@ -920,7 +941,7 @@
       "surface_confidence": null,
       "surface_exclusion_reason": null,
       "surface_evidence": null,
-      "effective_deploy_date": null,
+      "effective_deploy_date": "2024-12-05 22:57:03+03",
       "deploy_coverage_basis": null
     },
     {
@@ -1305,7 +1326,7 @@
               "source_urls": [
                 "https://docs.mountainprotocol.com/reference/usdm-token"
               ],
-              "deploy_date": null,
+              "deploy_date": "2024-12-05 22:57:03+03",
               "product_line": "USDM Token",
               "address_book_label": null,
               "address_book_section": null,
@@ -1383,7 +1404,7 @@
               "source_urls": [
                 "https://docs.mountainprotocol.com/reference/usdm-token"
               ],
-              "deploy_date": null,
+              "deploy_date": "2024-12-05 22:57:21+03",
               "product_line": "USDM Token",
               "address_book_label": null,
               "address_book_section": null,
@@ -1497,7 +1518,7 @@
               "source_urls": [
                 "https://docs.mountainprotocol.com/reference/usdm-token"
               ],
-              "deploy_date": null,
+              "deploy_date": "2023-10-06 22:57:59+03",
               "product_line": "Resources",
               "address_book_label": null,
               "address_book_section": null,
@@ -1523,7 +1544,7 @@
               "source_urls": [
                 "https://docs.mountainprotocol.com/reference/usdm-token"
               ],
-              "deploy_date": null,
+              "deploy_date": "2025-01-23 22:23:48+03",
               "product_line": "Resources",
               "address_book_label": null,
               "address_book_section": null,
@@ -1549,7 +1570,7 @@
               "source_urls": [
                 "https://docs.mountainprotocol.com/reference/usdm-token"
               ],
-              "deploy_date": null,
+              "deploy_date": "2024-03-29 14:30:43+03",
               "product_line": "Resources",
               "address_book_label": null,
               "address_book_section": null,
@@ -1575,7 +1596,7 @@
               "source_urls": [
                 "https://docs.mountainprotocol.com/reference/usdm-token"
               ],
-              "deploy_date": null,
+              "deploy_date": "2023-12-15 00:10:53+03",
               "product_line": "Resources",
               "address_book_label": null,
               "address_book_section": null,
@@ -1601,7 +1622,7 @@
               "source_urls": [
                 "https://docs.mountainprotocol.com/reference/usdm-token"
               ],
-              "deploy_date": null,
+              "deploy_date": "2024-03-27 04:45:33+03",
               "product_line": "Resources",
               "address_book_label": null,
               "address_book_section": null,
@@ -1627,7 +1648,7 @@
               "source_urls": [
                 "https://docs.mountainprotocol.com/reference/usdm-token"
               ],
-              "deploy_date": null,
+              "deploy_date": "2024-03-29 14:29:21+03",
               "product_line": "Resources",
               "address_book_label": null,
               "address_book_section": null,
@@ -1653,7 +1674,7 @@
               "source_urls": [
                 "https://docs.mountainprotocol.com/reference/usdm-token"
               ],
-              "deploy_date": null,
+              "deploy_date": "2024-12-06 01:38:51+03",
               "product_line": "Resources",
               "address_book_label": null,
               "address_book_section": null,

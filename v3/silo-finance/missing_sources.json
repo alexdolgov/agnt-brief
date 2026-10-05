@@ -7,7 +7,8 @@
       "chain_id": 43114,
       "chain": "avalanche",
       "address": "0x01c6dc3bd8b175a9494f00b6d224b14edc67cd34",
-      "canonical_source_address": "0x0094c5d6b460a2efff23420db097921bcc2b2a2c"
+      "canonical_source_address": "0x0094c5d6b460a2efff23420db097921bcc2b2a2c",
+      "reason": "verified_onchain_no_cached_source_bundle"
     }
   ]
 }

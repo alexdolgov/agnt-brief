@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
 - Project: Snowbl Capital (`snowbl-capital`)
 - Website: [https://snowbl.capital](https://snowbl.capital)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: base, ethereum
 - Contract surface: 10 unique implementations (10 raw deployments)
 - Coverage basis: 0/1 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
@@ -134,6 +134,22 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x7bee0ff0feb49f7141cbc369c8fcbea2d5a73dc8` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x80c7d57e72b38ec56250497bca76d48a89cd854f` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-255152 | `0xd61bfc9ca1d0d2b03a3dd74e2ab81df8e5f606e8` | ❓ Unverified |
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 0
+- Live contracts: 0
+- Unknown liveness contracts: 0
+- Source-verified contracts: 0
+- Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
+- Classification counts: none
+
+- None
 
 ## Audit Inventory
 

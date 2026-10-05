@@ -7,7 +7,8 @@
       "chain_id": 250,
       "chain": "fantom",
       "address": "0xd8321aa83fb0a4ecd6348d4577431310a6e0814d",
-      "canonical_source_address": null
+      "canonical_source_address": null,
+      "reason": "verified_onchain_no_cached_source_bundle"
     }
   ]
 }

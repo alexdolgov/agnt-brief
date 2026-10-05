@@ -7,13 +7,15 @@
       "chain_id": 1,
       "chain": "ethereum",
       "address": "0xafcb70e6e9514e2a15b23a01d2a9b9f7a34f2c33",
-      "canonical_source_address": null
+      "canonical_source_address": null,
+      "reason": "verified_onchain_no_cached_source_bundle"
     },
     {
       "chain_id": 1,
       "chain": "ethereum",
       "address": "0xcbe266adbfd7cb32988128e7f37b7c8b3c5521a8",
-      "canonical_source_address": null
+      "canonical_source_address": null,
+      "reason": "verified_onchain_no_cached_source_bundle"
     }
   ]
 }

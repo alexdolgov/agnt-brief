@@ -7,7 +7,8 @@
       "chain_id": 56,
       "chain": "bsc",
       "address": "0x295f68795e21f8c8b03038317b507124c13d2741",
-      "canonical_source_address": null
+      "canonical_source_address": null,
+      "reason": "verified_onchain_no_cached_source_bundle"
     }
   ]
 }

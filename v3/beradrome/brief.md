@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ⚠️ Lifecycle status: DECLINING - TVL dropped 42.6% over 90 days
 
@@ -18,8 +18,8 @@
 - Project: Beradrome (`beradrome`)
 - Website: [https://www.beradrome.com](https://www.beradrome.com)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: berachain
 - Contract surface: 11 unique implementations (13 raw deployments)
 - Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
@@ -38,7 +38,7 @@ This brief describes the observed EVM deployment and audit surface for Beradrome
 
 ### Architecture
 
-The pinned logic-topography run contains 3 contract row(s) across berachain. Structural roles: 3 supporting. No upgradeable pattern was identified in these rows.
+The pinned logic-topography run contains 3 contract row(s) across berachain, ethereum. Structural roles: 3 supporting. No upgradeable pattern was identified in these rows.
 
 ## Logic Topography
 
@@ -120,6 +120,22 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 ### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
+
+- None
+
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 0
+- Live contracts: 0
+- Unknown liveness contracts: 0
+- Source-verified contracts: 0
+- Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
+- Classification counts: none
 
 - None
 

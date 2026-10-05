@@ -7,7 +7,8 @@
       "chain_id": 999,
       "chain": "chain-999",
       "address": "0x578858dd49292ecc818f1a88f95fc079b8663fe0",
-      "canonical_source_address": null
+      "canonical_source_address": null,
+      "reason": "verified_onchain_no_cached_source_bundle"
     }
   ]
 }

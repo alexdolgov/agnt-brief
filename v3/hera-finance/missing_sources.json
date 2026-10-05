@@ -7,7 +7,8 @@
       "chain_id": 1088,
       "chain": "chain-1088",
       "address": "0x852d1fdd3982d8e21145845af74db7ae37d1f383",
-      "canonical_source_address": null
+      "canonical_source_address": null,
+      "reason": "verified_onchain_no_cached_source_bundle"
     }
   ]
 }

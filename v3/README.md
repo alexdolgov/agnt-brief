@@ -27,4 +27,6 @@ Cache-only, deduplicated source packages paired with the receipt-bound project b
 - Standalone Foundry packages: 39667
 - Deployments: 63725
 - Missing cached source bundles: 76
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
+- Brief snapshot: `2026-07-24T14:10:00.000Z`
+- Source export snapshot: `2026-07-15T18:30:00.000Z`

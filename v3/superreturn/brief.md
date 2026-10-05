@@ -9,15 +9,15 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+- Export-input receipt: `f59b0c07e38ecec2d34eb2896e4262470519ed280e5a0a28b0f46fc69c79a374`
 
 ## Project Overview
 
 - Project: SuperReturn (`superreturn`)
 - Website: [https://www.superreturn.ai/](https://www.superreturn.ai/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:30:00.000Z
-- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Generated: 2026-07-24T14:10:00.000Z
+- Pipeline run: brief-deployer-expansion-all-20260724-v1
 - Chains: arbitrum, ethereum
 - Contract surface: 5 unique implementations (5 raw deployments)
 - Coverage basis: 1/3 confirmed own live verified implementations (33.3%); conservative 33.3% with 0 needs-review implementation(s)
@@ -134,6 +134,22 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 - None
 
+## Deployer Expansion Inventory
+
+These rows are additive inventory from `project_contracts.discovery_source=deployer_expansion`; they do not change scope matching, coverage, or logic topography in this brief.
+
+- Source: `project_contracts.discovery_source=deployer_expansion`
+- Decision run: `deployer-candidate-production-20260712`
+- Total contracts: 0
+- Live contracts: 0
+- Unknown liveness contracts: 0
+- Source-verified contracts: 0
+- Currently scope-matched contracts retained as-is: 0
+- Contract rows sorted by chain, deployer, classification, contract name, then address.
+- Classification counts: none
+
+- None
+
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
@@ -158,7 +174,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 
 | Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
 |---|---|---|---|---|---|
-| 0xmacro.com/library/audits/superReturn-1 | BoringVault | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x15f3ee2f609fbae0bc48e3a071d66dd917c682eb` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 0xmacro.com/library/audits/superReturn-1 | BoringVault | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x15f3ee2f609fbae0bc48e3a071d66dd917c682eb` — deployed 2025-06-07 10:55:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 0xmacro.com/library/audits/superReturn-1 | BoringVaultSCVersion | unmatched — not counted | — | listed in scope table with SHA256 hash | no |
 | 0xmacro.com/library/audits/superReturn-1 | MorphoDecoderAndSanitizer | unmatched — not counted | — | listed in scope table with SHA256 hash | no |
 | 0xmacro.com/library/audits/superReturn-1 | OpenEdenDecoderAndSanitizer | unmatched — not counted | — | listed in scope table with SHA256 hash | no |
@@ -170,7 +186,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | 0xmacro-boring-vault-arctic-0.pdf | AtomicQueue | unmatched — not counted | — | listed in scope table | no |
 | 0xmacro-boring-vault-arctic-0.pdf | AtomicSolver | unmatched — not counted | — | listed in scope table | no |
 | 0xmacro-boring-vault-arctic-0.pdf | IAtomicSolver | unmatched — not counted | — | listed in scope table | no |
-| 0xmacro-boring-vault-arctic-0.pdf | BoringVault | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x15f3ee2f609fbae0bc48e3a071d66dd917c682eb` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| 0xmacro-boring-vault-arctic-0.pdf | BoringVault | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x15f3ee2f609fbae0bc48e3a071d66dd917c682eb` — deployed 2025-06-07 10:55:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | 0xmacro-boring-vault-arctic-0.pdf | BaseDecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
 | 0xmacro-boring-vault-arctic-0.pdf | EtherFiLiquidDecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
 | 0xmacro-boring-vault-arctic-0.pdf | LidoLiquidDecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
@@ -219,7 +235,7 @@ Only unambiguous, explicitly eligible project-anchor matches count as coverage. 
 | spearbit-boring-vault-arctic-0.pdf | DexAggregatorUManager | unmatched — not counted | — | mentioned in finding 3.1.2 context | no |
 | spearbit-boring-vault-arctic-0.pdf | DexSwapperUManager | unmatched — not counted | — | mentioned in finding 3.1.2 context | no |
 | spearbit-boring-vault-arctic-0.pdf | TellerWithMultiAssetSupport | unmatched — not counted | — | mentioned in finding 3.1.4 context | no |
-| spearbit-boring-vault-arctic-0.pdf | BoringVault | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x15f3ee2f609fbae0bc48e3a071d66dd917c682eb` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| spearbit-boring-vault-arctic-0.pdf | BoringVault | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x15f3ee2f609fbae0bc48e3a071d66dd917c682eb` — deployed 2025-06-07 10:55:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 | spearbit-boring-vault-arctic-0.pdf | AccountantWithRateProviders | unmatched — not counted | — | mentioned in finding 3.2.4 context | no |
 | spearbit-boring-vault-arctic-0.pdf | ManagerWithMerkleVerification | unmatched — not counted | — | mentioned in finding 3.2.2 context | no |
 | spearbit-boring-vault-arctic-0.pdf | MorphoBlueDecoderAndSanitizer | unmatched — not counted | — | mentioned in finding 3.2.1 context | no |

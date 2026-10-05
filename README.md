@@ -2,12 +2,18 @@
 
 Machine-readable and human-readable audit coverage briefs for DeFi protocols, produced by [meta-audit](https://github.com/alexdolgov/meta-audit).
 
-Each project directory contains:
+## Current publication
+
+Use the [v3 project index](./v3/INDEX.md) and [v3 layout guide](./v3/README.md). Every v3 project has `brief.json` and `brief.md`; projects with publishable verified source also have packages under `src/`, and unavailable source is listed in `missing_sources.json`. The brief snapshot is dated **2026-07-24** and the source export snapshot is dated **2026-07-15**. These are historical snapshots, not live October 2026 data.
+
+## Legacy root-level output
+
+The project folders and directory table below are an older v2 publication. They cover a different project set and should not be combined with v3 data. Root-level project directories contain:
 - `brief.json` — machine-readable: full contract surface, audits, coverage, TVL
 - `brief.md` — human-readable: overview, narrative, tables with links
-- `contracts/` — verified source code organized by chain, with per-contract READMEs
+- `contracts/` — older per-address source export, present for some projects only
 
-## Project Directory
+## Legacy Project Directory
 
 | Project | TVL (DL) | Chains | Implementations | Verified | Coverage | Tier 1 | Audits | Freshness | Status | ASD |
 |---|---:|---|---:|---|---:|---|---:|---|---|---:|

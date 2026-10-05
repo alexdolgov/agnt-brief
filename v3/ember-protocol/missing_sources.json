@@ -7,7 +7,8 @@
       "chain_id": 1,
       "chain": "ethereum",
       "address": "0x44a900eec48d6e4f9c72936c3356233ad687bf77",
-      "canonical_source_address": null
+      "canonical_source_address": null,
+      "reason": "verified_onchain_no_cached_source_bundle"
     }
   ]
 }
